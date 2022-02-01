@@ -38,7 +38,7 @@ Represents information about a particular service provided by a [bookingBusiness
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the create Customer API. |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|

@@ -37,7 +37,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |id|String| The ID of the **bookingAppointment**. Read-only.|
 |isLocationOnline|Boolean|If `true`, indicates that the appointment will be held online. Default value is `false`.|
 |joinWebUrl|String|The URL of the online meeting for the appointment.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment. If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the create Customer API. |
 |optOutOfCustomerEmail|Boolean|If `true` indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
