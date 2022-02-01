@@ -110,10 +110,10 @@ Content-type: application/json
 
 {
   "id": "contosohr",
+  "ingestedItemsCount": Int64,
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "state": "ready",
-  "ingestedItemsCount": 181000,
   "configuration": {
     "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"

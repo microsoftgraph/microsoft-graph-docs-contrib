@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and the requested **
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 [!INCLUDE [sample-code](../includes/snippets/go/get-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
-
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->
@@ -106,7 +102,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "itemsRemaining": 700000
+  "itemsRemaining": Int64
 }
 ```
 

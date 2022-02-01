@@ -53,13 +53,6 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
-### connectionQuota values
-
-|Member
-|:--------------
-| int64
-| unknownFutureValue
-
 ### externalGroupMemberType values
 
 | Member
