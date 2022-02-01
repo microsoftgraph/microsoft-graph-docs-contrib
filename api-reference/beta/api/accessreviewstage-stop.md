@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStage: stop"
-description: "Stop an inProgress accessReviewStage."
+description: "Stop an access review stage that's in progress."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop an inProgress [accessReviewStage](../resources/accessReviewStage.md). After the access review stage stops, the stage status will be `Completed` and the reviewers can no longer give input. If there are subsequent stages that depend on the completed stage, the next stage will be created. 
+Stop an [access review stage](../resources/accessReviewStage.md) that is `inProgress`. After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input. If there are subsequent stages that depend on the completed stage, the next stage will be created. 
 
- The [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md) objects will always reflect the last decision recorded across all stages at that given time, regardless of the status of the stages.
+ The [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
