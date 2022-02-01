@@ -36,6 +36,12 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
+If maximumAttedeesCount of the service is greater than 1:
+
+- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md).
+
+- Pass valid customer IDs while creating or updating the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object.
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |customerEmailAddress|String|The SMTP address of the [bookingCustomer](../resources/bookingcustomer.md) who is booking the appointment.|
@@ -55,12 +61,7 @@ In the request body, supply the values for relevant fields that should be update
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment. Required.|
 |isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
-|maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required. > [!IMPORTANT]
-> If maximumAttedeesCount of the service is greater than 1:
-
-- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the create Customer API.
-
-- Pass valid customer IDs while creating or updating the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object. |
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in the appointment. Required. |
 |optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](../resources/bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
