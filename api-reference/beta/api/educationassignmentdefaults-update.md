@@ -117,4 +117,6 @@ Content-Type: application/json
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
+## See also
 
+* [Build notificationChannelUrl property value using the Microsoft Graph API](/graph/education-build-notificationchannelurl)

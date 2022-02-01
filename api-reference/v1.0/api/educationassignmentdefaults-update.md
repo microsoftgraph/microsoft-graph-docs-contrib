@@ -119,3 +119,6 @@ Content-Type: application/json
 }
 ```
 
+## See also
+
+* [Build notificationChannelUrl property value using the Microsoft Graph API](/graph/education-build-notificationchannelurl)
