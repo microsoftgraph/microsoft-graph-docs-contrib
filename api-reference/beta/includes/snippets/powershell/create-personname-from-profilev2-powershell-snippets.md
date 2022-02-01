@@ -15,6 +15,7 @@ $params = @{
 	Maiden = $null
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileName -UserId $userId -BodyParameter $params
 
 ```
