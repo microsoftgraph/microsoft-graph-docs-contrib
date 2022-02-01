@@ -140,6 +140,11 @@ Content-type: application/json
         ],
         "signInAudience": "AzureADandPersonalMicrosoftAccount",
         "tags": [],
+        "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+        },
         "addIns": [],
         "api": {
             "resourceSpecificApplicationPermissions": []
