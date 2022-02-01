@@ -1,13 +1,13 @@
 ---
-title: "protectAdhocAction resource type"
-description: "Informs the application that ad hoc protection should be applied."
+title: "protectAdhocAction resource type (deprecated)"
+description: "Informs the application that ad hoc protection should be applied. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# protectAdhocAction resource type
+# protectAdhocAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

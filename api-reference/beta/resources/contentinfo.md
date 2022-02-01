@@ -1,13 +1,13 @@
 ---
-title: "contentInfo resource type"
-description: "Represents the current state of some information that is to be labeled."
+title: "contentInfo resource type (deprecated)"
+description: "Represents the current state of some information that is to be labeled. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# contentInfo resource type
+# contentInfo resource type (deprecated)
 
 Namespace: microsoft.graph
 

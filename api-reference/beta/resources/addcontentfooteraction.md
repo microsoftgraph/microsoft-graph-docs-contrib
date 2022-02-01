@@ -1,13 +1,13 @@
 ---
-title: "addContentFooterAction resource type"
-description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable."
+title: "addContentFooterAction resource type (deprecated)"
+description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# addContentFooterAction resource type
+# addContentFooterAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

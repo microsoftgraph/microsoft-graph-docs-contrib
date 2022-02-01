@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informs the application to apply Do Not Forward protection. **protectionDoNotForwardAction** may be returned by [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply [Do Not Forward protection](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). The consuming application must use a client library to apply protection via Azure Information Protection.
+Informs the application to apply Do Not Forward protection. **protectionDoNotForwardAction** may be returned by [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply [Do Not Forward protection](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). The consuming application must use a client library to apply protection via Azure Information Protection.
 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).

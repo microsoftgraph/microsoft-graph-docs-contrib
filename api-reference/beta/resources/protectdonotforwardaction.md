@@ -1,13 +1,13 @@
 ---
-title: "protectDoNotForwardAction resource type"
-description: "Informs the application to apply Do Not Forward protection."
+title: "protectDoNotForwardAction resource type (deprecated)"
+description: "Informs the application to apply Do Not Forward protection. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# protectDoNotForwardAction resource type
+# protectDoNotForwardAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

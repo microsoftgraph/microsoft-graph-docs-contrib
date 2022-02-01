@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that a justification is required for the specified operation. The [evaluateApplication](../api/security-sensitivitylabel-informationprotection-evaluateapplication.md), [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/security-informationprotection-sensitivitylabel-evaluateRemoval.md) APIs may return **justifyAction**. Justification is provided via [labelingOptions](../resources/security-labelingoptions.md). The previous call should be repeated, but with the **downgradeJustification** property of **labelingOptions** set with a justification message, provided via user input or application logic.
+Indicates that a justification is required for the specified operation. The [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateapplication.md), [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md), or [evaluateRemoval](../api/security-informationprotection-sensitivitylabel-evaluateremoval.md) APIs may return **justifyAction**. Justification is provided via [labelingOptions](../resources/security-labelingoptions.md). The previous call should be repeated, but with the **downgradeJustification** property of **labelingOptions** set with a justification message, provided via user input or application logic.
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 

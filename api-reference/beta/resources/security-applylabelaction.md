@@ -19,16 +19,16 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 
 ## Properties
 
-| Property                    | Type                                                                                                                    | Description                                                                                         |
-| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
-| actions                     | [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection | The collection of actions that should be implemented by the caller.                                                                          |
-| actionSource                | actionSource                                                                                                            | The possible values are: `manual`, `automatic`, `recommended`, `default`. |
+| Property                    | Type                                                                                                                    | Description                                                                                                                                   |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| actions                     | [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection | The collection of actions that should be implemented by the caller.                                                                           |
+| actionSource                | actionSource                                                                                                            | The possible values are: `manual`, `automatic`, `recommended`, `default`.                                                                     |
 | responsibleSensitiveTypeIds | Guid collection                                                                                                         | If the label was the result of an automatic classification, supply the list of sensitive info type GUIDs that resulted in the returned label. |
 
 ## Relationships
 
-| Relationship     | Type                                                          | Description               |
-| :--------------- | :------------------------------------------------------------ | :------------------------ |
+| Relationship     | Type                                                          | Description                                                           |
+| :--------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------- |
 | sensitivityLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that corresponds to the set of actions returned by the API. |
 
 ## JSON representation

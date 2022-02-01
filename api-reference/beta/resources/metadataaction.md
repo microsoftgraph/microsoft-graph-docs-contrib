@@ -1,13 +1,13 @@
 ---
-title: "metadataAction resource type"
-description: "Represents the metadata to be written or removed from a file."
+title: "metadataAction resource type (deprecated)"
+description: "Represents the metadata to be written or removed from a file. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# metadataAction resource type
+# metadataAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

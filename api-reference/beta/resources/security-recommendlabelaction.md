@@ -1,9 +1,9 @@
 ---
 title: "recommendLabelAction resource type"
-description: "Describes the "
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types."
+author: "tommoser"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,22 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types. The [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md) may return a **recommendLabelAction** if the Microsoft Information Protection labeling policy is set to **recommend** and label rather than enforce a label. The user or appliation may choose to ignore or accept the recommendation. 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|actions|[microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection|**TODO: Add Description**|
-|actionSource|actionSource|**TODO: Add Description**.The possible values are: `manual`, `automatic`, `recommended`, `default`.|
-|responsibleSensitiveTypeIds|Guid collection|**TODO: Add Description**|
+
+| Property                    | Type                                                                                                                    | Description                                                                      |
+| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
+| actionSource                | String                                                                                                                  | Possible values are: `manual`, `automatic`, `recommended`, `default`.            |
+| actions                     | [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Actions to take if the label is accepted by the user.                            |
+| responsibleSensitiveTypeIds | Guid collection                                                                                                         | The sensitive information type GUIDs that caused the recommendation to be given. |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|sensitivityLabel|[sensitivityLabel](../resources/security-sensitivitylabel.md)|**TODO: Add Description**|
+
+| Relationship     | Type                                                          | Description                          |
+| :--------------- | :------------------------------------------------------------ | :----------------------------------- |
+| sensitivityLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that is being recommended. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

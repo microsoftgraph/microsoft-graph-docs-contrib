@@ -1,13 +1,13 @@
 ---
-title: "protectByTemplateAction resource type"
-description: "Informs the application that an Azure Information Protection protection template should be applied."
+title: "protectByTemplateAction resource type (deprecated)"
+description: "Informs the application that an Azure Information Protection protection template should be applied. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# protectByTemplateAction resource type
+# protectByTemplateAction resource type (deprecated)
 
 Namespace: microsoft.graph
 
