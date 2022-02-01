@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Build notificationChannelUrl property value using the Microsoft Graph API
 
-This article describes how to use the education API in Microsoft Graph to build the `notificationChannelUrl` property for an [educationAssignment](/graph/api/resources/educationassignment).
+This article describes how to use the education API in Microsoft Graph to build the `notificationChannelUrl` string property for an [educationAssignment](/graph/api/resources/educationassignment).
 
 This property is used to specify the default Teams channel to which notifications will be sent. Default value is null.
 
@@ -19,17 +19,17 @@ Before you can build the property, you must have identified the team for the cur
 
 **Team**
 
-![Identifying team](./images/notificationchannel-team.png)
+![Click on Teams option from the left panel and select the desired team](./images/notificationchannel-team.png)
 
 **Channel**
 
-![Identifying channel](./images/notificationchannel-channel.png)
+![Select your channel from the Channels section](./images/notificationchannel-channel.png)
 
 ## notificationChannelUrl property
 
 The following steps describe how to build the property value.
 
-### Step 1 - Get teamd id
+### Step 1 - Get the team id based on your team name
 Make a GET request with the team name.
 
 #### Request example
@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-### Step 2 - Get channel id
+### Step 2 - Get the channel id based on channel name and team id
 Make a GET request with the teamId obtained in previous step and the channel name.
 
 #### Request example
@@ -108,7 +108,11 @@ Content-type: application/json
 ```
 
 ### Step 3 - Construct the value for the notificationChannelUrl property
-Build the value for the **notificationChannelUrl** property using the following format: `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}`. Replace the `{team-id}` and `{channel-id}` placeholders with the values described in the following table.
+Build the value for the **notificationChannelUrl** property using the following format: 
+
+> `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}` 
+
+Replace the `{team-id}` and `{channel-id}` placeholders with the values described in the following table.
 
 | Placeholder | Description | Example |
 |:--|:--|:--|
