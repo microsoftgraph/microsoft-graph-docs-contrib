@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the **contentLabel** object that defines MIP metadata on an object. **contentLabel** is returned by the [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md) API resolve to the **sensitivityLabel** that is currently applied to a file.
+Describes the **contentLabel** object that defines MIP metadata on an object. **contentLabel** is returned by the [extractContentLabel](../api/security-informationprotection-sensitivitylabel-extractcontentlabel.md) API resolve to the **sensitivityLabel** that is currently applied to a file.
 
 ## Properties
 | Property         | Type           | Description                                                                                                                                                                 |

@@ -1,13 +1,13 @@
 ---
-title: "informationProtectionAction resource type"
-description: "Describes the abtract informationProtectionAction entity."
+title: "informationProtectionAction resource type (deprecated)"
+description: "Describes the abtract informationProtectionAction entity. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# informationProtectionAction resource type
+# informationProtectionAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

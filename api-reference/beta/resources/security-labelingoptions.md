@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the labeling options that can be provided to the evaluation APIs. **labelingOptions** must be passed in to the [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) API to specify details about the label that is to be applied. 
+Represents the labeling options that can be provided to the evaluation APIs. **labelingOptions** must be passed in to the [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateapplication.md) API to specify details about the label that is to be applied. 
 
 ## Properties
 | Property               | Type                                                         | Description                                                                                                                   |

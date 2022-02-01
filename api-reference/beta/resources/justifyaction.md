@@ -1,13 +1,13 @@
 ---
-title: "justifyAction resource type"
-description: "Indicates that a justification is required for the specified operation."
+title: "justifyAction resource type (deprecated)"
+description: "Indicates that a justification is required for the specified operation. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# justifyAction resource type
+# justifyAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

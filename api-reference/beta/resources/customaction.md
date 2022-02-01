@@ -1,13 +1,13 @@
 ---
-title: "customAction resource type"
-description: "Represents any custom actions that a label may provide, if configured by the administrator."
+title: "customAction resource type (deprecated)"
+description: "Represents any custom actions that a label may provide, if configured by the administrator. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# customAction resource type
+# customAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

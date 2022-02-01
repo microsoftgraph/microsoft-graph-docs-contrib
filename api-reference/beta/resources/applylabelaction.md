@@ -1,13 +1,13 @@
 ---
 title: "applyLabelAction resource type"
-description: "Represents a set of actions that should be taken to apply or update a label."
+description: "Represents a set of actions that should be taken to apply or update a label. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# applyLabelAction resource type
+# applyLabelAction resource type (deprecated)
 
 Namespace: microsoft.graph
 

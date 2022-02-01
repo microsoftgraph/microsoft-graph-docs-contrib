@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current state of some information that is to be labeled. **contentInfo** is passed in to the [evaluateRemoval](../api/security-sensitivitylabel-evaluateRemoval.md), [evaluateApplication](../api/security-sensitivitylabel-evaluateApplication.md), and [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateClassificationResults.md) APIs to describe to the API the current state of the information. This **contentInfo** detail drives the results on what metadata, content marking, and protection should be added or removed when the label is applied, updated, or removed.
+Represents the current state of some information that is to be labeled. **contentInfo** is passed in to the [evaluateRemoval](../api/security-informationprotection-sensitivitylabel-evaluateRemoval.md), [evaluateApplication](../api/security-informationprotection-sensitivitylabel-evaluateApplication.md), and [evaluateClassificationResults](../api/security-informationprotection-sensitivitylabel-evaluateClassificationResults.md) APIs to describe to the API the current state of the information. This **contentInfo** detail drives the results on what metadata, content marking, and protection should be added or removed when the label is applied, updated, or removed.
 
 ## Properties
 | Property      | Type                                                                                      | Description                                                                                                                     |

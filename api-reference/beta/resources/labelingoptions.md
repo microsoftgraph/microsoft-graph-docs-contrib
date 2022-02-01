@@ -1,13 +1,13 @@
 ---
-title: "labelingOptions resource type"
-description: "Represents the labeling options that can be provided to the evaluation APIs."
+title: "labelingOptions resource type  (deprecated)"
+description: "Represents the labeling options that can be provided to the evaluation APIs.  (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# labelingOptions resource type
+# labelingOptions resource type  (deprecated)
 
 Namespace: microsoft.graph
 

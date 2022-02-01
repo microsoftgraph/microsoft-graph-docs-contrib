@@ -1,13 +1,13 @@
 ---
-title: "downgradeJustification resource type"
-description: "Represents user input on why downgrade was performed."
+title: "downgradeJustification resource type (deprecated)"
+description: "Represents user input on why downgrade was performed. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# downgradeJustification resource type
+# downgradeJustification resource type (deprecated)
 
 Namespace: microsoft.graph
 

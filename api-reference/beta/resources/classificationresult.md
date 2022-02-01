@@ -1,13 +1,13 @@
 ---
-title: "classificationResult resource type"
-description: "Represents the result of a classification request."
+title: "classificationResult resource type (deprecated)"
+description: "Represents the result of a classification request. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# classificationResult resource type
+# classificationResult resource type (deprecated)
 
 Namespace: microsoft.graph
 
