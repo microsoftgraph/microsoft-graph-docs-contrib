@@ -15,9 +15,6 @@ Namespace: microsoft.graph.recordsManagement
 
 **TODO: Add Description**
 
-
-Inherits from [entity](../resources/recordsmanagement-entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -26,8 +23,8 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 |[Get retentionLabel](../api/recordsmanagement-retentionlabel-get.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
 |[Update retentionLabel](../api/recordsmanagement-retentionlabel-update.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
 |[Delete retentionLabel](../api/recordsmanagement-retentionlabel-delete.md)|None|Deletes a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
-|[List retentionEventType](../api/recordsmanagement-retentionlabel-list-eventtype.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
-|[Add retentionEventType](../api/recordsmanagement-retentionlabel-post-eventtype.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
+|[List retentionEventType](../api/recordsmanagement-retentioneventtype-list.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
+|[Add retentionEventType](../api/recordsmanagement-recordsmanagementroot-post-eventtypes.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
 
 ## Properties
 |Property|Type|Description|

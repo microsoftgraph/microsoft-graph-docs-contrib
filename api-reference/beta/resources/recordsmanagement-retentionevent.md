@@ -16,8 +16,6 @@ Namespace: microsoft.graph.recordsManagement
  When configuring a retention label, the retention period can be based on when a specific type of event occurs. For content with a label that has event-triggered retention period, 'retentionEvent' resource type is useful. To learn more about it, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
-Inherits from [entity](../resources/recordsmanagement-entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,7 +23,8 @@ Inherits from [entity](../resources/recordsmanagement-entity.md).
 |[Create retentionEvent](../api/recordsmanagement-recordsmanagementroot-post-events.md)|[microsoft.graph.recordsManagement.retentionEvent](../resources/recordsmanagement-retentionevent.md)|Create a new [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.|
 |[Get retentionEvent](../api/recordsmanagement-retentionevent-get.md)|[microsoft.graph.recordsManagement.retentionEvent](../resources/recordsmanagement-retentionevent.md)|Read the properties and relationships of a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.|
 |[Delete retentionEvent](../api/recordsmanagement-retentionevent-delete.md)|None|Deletes a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.|
-|[List labels](../api/recordsmanagement-retentionevent-list-labels.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md) collection|Get the retentionLabel resources from the labels navigation property.|
+|
+
 
 ## Properties
 |Property|Type|Description|

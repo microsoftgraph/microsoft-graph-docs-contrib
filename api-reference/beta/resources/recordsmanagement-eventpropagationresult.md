@@ -18,7 +18,7 @@ Namespace: microsoft.graph.recordsManagement
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|error|[microsoft.graph.recordsManagement.publicError](../resources/recordsmanagement-synchronization-publicerror.md)|The error if the status is not successful.|
+|error|[microsoft.graph.recordsManagement.publicError](/graph/api/resources/publicerror)|The error if the status is not successful.|
 |status|eventPropagationStatus|The Status of the distribution. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
 
 ## Relationships
