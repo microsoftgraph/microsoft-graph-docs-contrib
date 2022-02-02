@@ -7,8 +7,8 @@
           "ApiChange": "Property",
           "ChangedApiName": "provisioningStatus",
           "ChangeType": "Addition",
-          "Description": "Added **ErrorStatus** to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
-          "Target": "provisioningStatus"
+          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
+          "Target": "servicePlanInfo"
         }
       ],
       "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
@@ -25,8 +25,8 @@
           "ApiChange": "Property",
           "ChangedApiName": "provisioningStatus",
           "ChangeType": "Addition",
-          "Description": "Added **ErrorStatus** to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-beta) resource.",
-          "Target": "provisioningStatus"
+          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-beta) resource.",
+          "Target": "servicePlanInfo"
         }
       ],
       "Id": "b5198730-2bcb-4253-a18c-bf7d5b494386",
