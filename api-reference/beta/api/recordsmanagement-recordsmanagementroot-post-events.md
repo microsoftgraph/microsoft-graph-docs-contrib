@@ -109,6 +109,7 @@ Content-length: 594
   "@odata.type": "microsoft.graph.recordsManagement.retentionEvent"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -140,4 +141,3 @@ Content-Type: application/json
   "lastStatusUpdateTime": "String (timestamp)"
 }
 ```
-

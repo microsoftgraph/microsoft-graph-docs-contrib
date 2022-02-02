@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "list_retentionevent"
@@ -69,6 +70,7 @@ GET https://graph.microsoft.com/beta/compliance/recordsManagement/events
   "@odata.type": "Collection(microsoft.graph.recordsManagement.retentionEvent)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -104,4 +106,3 @@ Content-Type: application/json
   ]
 }
 ```
-
