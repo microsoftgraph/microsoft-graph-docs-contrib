@@ -7,7 +7,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "customPasswordAddition",
           "ChangeType": "Addition",
-          "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/graph/api/resources/passwordcredentialconfiguration?view=graph-rest-beta) enum to passwordCredentialConfiguration",
+          "Description": "Added the `customPasswordAddition` member to the **appCredentialRestrictionType** enumeration. Use this new restriction for the [application authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta) to restrict all new custom (non-Azure AD generated) password secrets on applications or service principals.",
           "Target": "appCredentialRestrictionType"
         }
       ],
