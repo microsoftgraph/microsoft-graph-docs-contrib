@@ -56,7 +56,7 @@ The application authentication methods policy API offers the following restricti
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
 >
-> Applying customPasswordAddition restriction will block any legacy PowerShell modules that add a client generated password secret on to applications or service principals. This restriction does not block Azure AD generated application or service principal password secrets.
+> Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
 
 ### Single vs multi-tenant apps
 
