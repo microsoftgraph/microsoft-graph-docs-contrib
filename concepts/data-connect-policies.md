@@ -24,7 +24,7 @@ When you select any of the policies during Azure marketplace publishing, the pol
 
 ## Billing for Microsoft Graph Data Connect
 
-The bill will be associated with the Azure Subscription of the Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects you are accessing. For more information on billing, please visit our [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
+The bill will be associated with the Azure Subscription of the Azure Data Factory you are using. The price in this new billing model is based on the number of Microsoft Graph objects you are accessing. For more information about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
 
 Directory objects that will not be charged are:
 
