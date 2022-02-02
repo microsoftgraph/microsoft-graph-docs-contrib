@@ -1,13 +1,13 @@
 ---
-title: "keyValuePair resource type"
+title: "security.keyValuePair resource type"
 description: "Key value pair for Information Protection sensitivity labels."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# keyValuePair resource type
+# security.keyValuePair resource type
 
 Namespace: microsoft.graph.security
 
