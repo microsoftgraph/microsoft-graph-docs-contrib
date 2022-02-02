@@ -132,7 +132,7 @@ Content-Type: application/json
             "accessReviewId": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
             "reviewedDateTime": "2021-05-03T19:28:25.02Z",
             "decision": "Approve",
-            "justification": "Kathleen still needs access to the Marketing group as she works in the Marketing organization.",
+            "justification": "Christie still needs access to the Marketing group as she works in the Marketing organization.",
             "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Deny",
@@ -152,14 +152,14 @@ Content-Type: application/json
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "1800bb2c-955d-4205-8471-3a6c3116435d",
-                "userDisplayName": "guest example",
-                "userPrincipalName": "guest@guest.com"
+                "userDisplayName": "Christie Cline",
+                "userPrincipalName": "ChristieC@contoso.com"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
-                "displayName": "guest example",
-                "userPrincipalName": "guest@contoso.com"
+                "displayName": "Christie Cline",
+                "userPrincipalName": "ChristieC@contoso.com"
             }
         }
     ]
@@ -201,7 +201,7 @@ Content-Type: application/json
             "accessReviewId": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
             "reviewedDateTime": "2021-05-03T19:28:25.02Z",
             "decision": "Approve",
-            "justification": "Kathleen still needs access to the Marketing group as she works in the Marketing organization.",
+            "justification": "Christie still needs access to the Marketing group as she works in the Marketing organization.",
             "appliedDateTime": null,
             "applyResult": "New",
             "recommendation": "Deny",
@@ -221,14 +221,14 @@ Content-Type: application/json
             "target": {
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "1800bb2c-955d-4205-8471-3a6c3116435d",
-                "userDisplayName": "guest example",
-                "userPrincipalName": "guest@guest.com"
+                "userDisplayName": "Christie Cline",
+                "userPrincipalName": "ChristieC@contoso.com"
             },
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "1800bb2c-955d-4205-8471-3a6c3116435d",
-                "displayName": "guest example",
-                "userPrincipalName": "guest@contoso.com"
+                "displayName": "Christie Cline",
+                "userPrincipalName": "ChristieC@contoso.com"
             }
         }
     ]
