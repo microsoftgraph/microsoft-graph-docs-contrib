@@ -18,13 +18,16 @@ Informs the application that ad hoc protection should be applied. The **protectA
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 
 ## Properties
+
 |Property|Type|Description|
 None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
