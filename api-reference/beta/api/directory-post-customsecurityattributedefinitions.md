@@ -231,9 +231,7 @@ The following example adds a new custom security attribute definition with a lis
 + Attribute set: `Engineering`
 + Attribute: `Project`
 + Attribute data type: Collection of Strings
-+ Predefined value: `Alpine`
-+ Predefined value: `Baker`
-+ Predefined value: `Cascade`
++ Predefined values: `Alpine`, `Baker`, `Cascade`
 
 #### Request
 
