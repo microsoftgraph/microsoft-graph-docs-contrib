@@ -69,6 +69,7 @@ GET https://graph.microsoft.com/beta/compliance/recordsManagement/eventTypes
   "@odata.type": "Collection(microsoft.graph.recordsManagement.retentionEventType)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,4 +93,3 @@ Content-Type: application/json
   ]
 }
 ```
-

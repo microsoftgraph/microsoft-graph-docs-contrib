@@ -60,6 +60,9 @@ If successful, this method returns a `200 OK` response code and an updated [rete
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_retentioneventtype"
@@ -88,6 +91,7 @@ Content-length: 208
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -107,4 +111,3 @@ Content-Type: application/json
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
