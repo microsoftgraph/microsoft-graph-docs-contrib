@@ -123,7 +123,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update the predefined values for a custom security attribute
 
-The following example updates an existing predefined value and adds a new predefined value for a custom security attribute definition.
+The following example updates the status of an existing predefined value and adds a new predefined value for a custom security attribute definition.
 
 + Attribute set: `Engineering`
 + Attribute: `Project`
@@ -132,9 +132,7 @@ The following example updates an existing predefined value and adds a new predef
 + New predefined value: `Skagit`
 
 > [!NOTE]
-> For this request, you must add the following to the header:<br/>
-> Key: odata-version<br/>
-> Value: 4.01
+> For this request, you must add the **OData-Version** header and assign it the value `4.01`.
 
 #### Request
 
@@ -143,9 +141,10 @@ The following example updates an existing predefined value and adds a new predef
   "name": "update_customsecurityattributedefinition_allowedvalues"
 }
 -->
-``` http
+``` msgraph-interactive
 PATCH https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project
 Content-Type: application/json
+OData-Version: 4.01
 
 {
     "allowedValues@delta": [
