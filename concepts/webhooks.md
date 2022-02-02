@@ -44,6 +44,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chatMessage][]
 - Teams [conversationMember][]
 - Teams [presence][]
+- Teams [onlineMeeting][]
 - Teams [team][]
 - [todoTask][] (preview)
 - [user][]
@@ -52,7 +53,7 @@ You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, `/communications/onlinemeeting`
 
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
@@ -325,6 +326,7 @@ The following table lists the latency to expect between an event happening in th
 |[group][] | Less than 2 minutes | 15 minutes |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
+|[onlineMeeting][] | Unknown | Unknown |
 |[presence][] | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
@@ -363,3 +365,4 @@ The following table lists the latency to expect between an event happening in th
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting
