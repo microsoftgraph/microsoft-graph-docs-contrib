@@ -14,6 +14,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserEventAttachment -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

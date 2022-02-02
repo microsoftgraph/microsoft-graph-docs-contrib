@@ -10,6 +10,7 @@ $params = @{
 	Address = "Innocenty.Popov@adventureworks.com"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileEmail -UserId $userId -BodyParameter $params
 
 ```
