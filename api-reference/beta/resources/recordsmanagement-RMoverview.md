@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph Records Management API"
 description: "The Microsoft 365 subject rights request API provides functionality for organizations to automate repetitive tasks and integrate with their existing subject rights request tools to build repeatable workflows that can help meet industry regulations."
 ms.localizationpriority: medium
-author: "sseth-msft"
+author: sseth-msft
 ms.prod: "compliance"
 doc_type: conceptualPageType
 ---
