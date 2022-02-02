@@ -2,7 +2,7 @@
 title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -20,7 +20,8 @@ Represents the type of conditions that govern when the policy applies.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Required. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
+|clientApplications|[conditionalAccessClientApplications](../resources/conditionalaccessclientapplications.md)|Client applications (service principals and workload identities) included in and excluded from the policy. Either **users** or **clientApplications** is required. |
 |clientAppTypes|conditionalAccessClientApp collection| Client application types included in the policy. Possible values are: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Required.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. |
 |devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
@@ -60,6 +61,7 @@ The following is a JSON representation of the resource.
 {
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
+  "clientApplications": {"@odata.type": "microsoft.graph.conditionalAccessClientApplications"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
   "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},

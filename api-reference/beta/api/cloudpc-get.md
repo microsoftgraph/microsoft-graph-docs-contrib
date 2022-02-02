@@ -56,18 +56,22 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ## Examples
 
-### Request
+### Example 1: Get the default properties of a Cloud PC
+
+#### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpc"
+  "name": "get_cloudpc_default_properties"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-csharp-snippets.md)]
@@ -89,16 +93,21 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpc-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-### Response
+#### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_cloudpc",
+  "name": "get_cloudpc_default_properties",
   "@odata.type": "microsoft.graph.cloudPC"
 }
 -->
@@ -109,6 +118,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPC",
+    "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
     "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
     "displayName": "Demo-0",
     "imageDisplayName": "Windows-10 19h1-evd",
@@ -119,6 +129,7 @@ Content-Type: application/json
     "onPremisesConnectionName": "on-Premises connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
+    "servicePlanType": "enterprise",
     "status": "failed",
     "statusDetails": {
     "@odata.type": "microsoft.graph.cloudPcStatusDetails",
@@ -135,5 +146,58 @@ Content-Type: application/json
     "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
     "lastModifiedDateTime": "2020-11-03T18:14:34Z",
     "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
+}
+```
+
+### Example 2: Get the selected properties of a Cloud PC
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc_selected_properties"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc_selected_properties",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
+    "displayName": "Demo-0",
+    "imageDisplayName": "Windows-10 19h1-evd",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z",
+    "lastLoginResult": {
+        "time": "2021-06-23T09:28:32.8260335Z"
+    },
+    "lastRemoteActionResult": {
+      "actionName": "Reboot",
+      "actionState": "done",
+      "startDateTime": "2021-06-23T09:28:32.8260335Z",
+      "lastUpdatedDateTime": "2021-06-23T09:28:32.8260338Z",
+      "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
+      "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
+      "statusDetails": null
+    }
 }
 ```

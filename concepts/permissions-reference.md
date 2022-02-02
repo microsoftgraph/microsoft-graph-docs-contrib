@@ -2092,6 +2092,22 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
 
+## Teams device management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices on behalf of the signed-in user.	| Yes | No |
+| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices on behalf of the signed-in user. 	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices, without a signed-in user.	| Yes | No |
+| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices, without a signed-in user. | Yes | No |
+
 ## Team member permissions 
 
 #### Delegated permissions
@@ -2174,8 +2190,16 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Read and write tags in any team in Microsoft Teams, without a signed-in user.	| Yes | No |
-| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Read tags in any team in Microsoft Teams, without a signed-in user. | Yes | No |
+| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams, on behalf of the signed-in user.	| Yes | No |
+| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
+| _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
+
 
 ## Terms of use permissions
 

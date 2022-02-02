@@ -26,6 +26,7 @@ Extensible Authentication Protocol (EAP) configuration types.
 |eapTtls|21|EAP-Tunneled Transport Layer Security (EAP-TTLS).|
 |peap|25|Protected Extensible Authentication Protocol (PEAP).|
 |eapFast|43|EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).|
+|teap|55|Tunnel Extensible Authentication Protocol (TEAP).|
 
 
 

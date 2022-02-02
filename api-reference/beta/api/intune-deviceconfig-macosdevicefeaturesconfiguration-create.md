@@ -115,7 +115,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6256
+Content-length: 6089
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -243,16 +243,12 @@ Content-length: 6256
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
     "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
     "preferredKDCs": [
       "Preferred KDCs value"
     ],
@@ -311,7 +307,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6428
+Content-Length: 6261
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -442,16 +438,12 @@ Content-Length: 6428
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
-    "usernameLableCustom": "Username Lable Custom value",
     "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
-    "singleSignOnExtensionPreferredKDCs": [
-      "Single Sign On Extension Preferred KDCs value"
-    ],
     "preferredKDCs": [
       "Preferred KDCs value"
     ],

@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750
 [!INCLUDE [sample-code](../includes/snippets/go/get-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-phoneauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-owners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-owners-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
