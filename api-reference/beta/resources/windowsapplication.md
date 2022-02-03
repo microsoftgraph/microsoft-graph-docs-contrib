@@ -19,8 +19,8 @@ Represents settings for apps running Microsoft Windows and published in the Micr
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| packageSid | String | The package security identifier that Microsoft has assigned the application. Optional. |
-| redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. Only available for applications that support the `PersonalMicrosoftAccount` **signInAudience**. Required. |
+| packageSid | String | The package security identifier that Microsoft has assigned the application. Optional. Read-only. |
+| redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. Only available for applications that support the `PersonalMicrosoftAccount` **signInAudience**. |
 
 ## JSON representation
 Here is a JSON representation of the resource.
