@@ -3,7 +3,7 @@ title: "Create granularAdminOperation"
 description: "Create a new granularAdminOperation object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

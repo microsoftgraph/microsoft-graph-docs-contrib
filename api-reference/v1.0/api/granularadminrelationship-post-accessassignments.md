@@ -3,7 +3,7 @@ title: "Create granularAdminAccessAssignment"
 description: "Create a new granularAdminAccessAssignment object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

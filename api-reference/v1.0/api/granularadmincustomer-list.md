@@ -3,7 +3,7 @@ title: "List granularAdminCustomers"
 description: "Get a list of the granularAdminCustomer objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

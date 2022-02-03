@@ -3,7 +3,7 @@ title: "Delete tenantRelationship"
 description: "Deletes a tenantRelationship object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "List granularAdminCustomers"
 description: "Get the granularAdminCustomer resources from the granularAdminCustomers navigation property."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

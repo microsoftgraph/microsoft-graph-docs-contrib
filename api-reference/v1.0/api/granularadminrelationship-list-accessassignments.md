@@ -3,7 +3,7 @@ title: "List accessAssignments"
 description: "Get the granularAdminAccessAssignment resources from the accessAssignments navigation property."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

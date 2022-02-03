@@ -3,7 +3,7 @@ title: "Delete granularAdminRelationshipRequest"
 description: "Deletes a granularAdminRelationshipRequest object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

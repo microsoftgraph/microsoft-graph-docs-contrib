@@ -3,7 +3,7 @@ title: "Update granularAdminRelationshipRequest"
 description: "Update the properties of a granularAdminRelationshipRequest object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

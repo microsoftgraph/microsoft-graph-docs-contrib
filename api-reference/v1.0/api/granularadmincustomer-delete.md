@@ -3,7 +3,7 @@ title: "Delete granularAdminCustomer"
 description: "Deletes a granularAdminCustomer object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

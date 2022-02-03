@@ -3,7 +3,7 @@ title: "Create granularAdminRelationship"
 description: "Create a new granularAdminRelationship object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

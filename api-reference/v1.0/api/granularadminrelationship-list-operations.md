@@ -3,7 +3,7 @@ title: "List operations"
 description: "Get the granularAdminOperation resources from the operations navigation property."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

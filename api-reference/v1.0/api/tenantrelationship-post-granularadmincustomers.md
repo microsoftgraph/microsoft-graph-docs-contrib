@@ -3,7 +3,7 @@ title: "Create granularAdminCustomer"
 description: "Create a new granularAdminCustomer object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

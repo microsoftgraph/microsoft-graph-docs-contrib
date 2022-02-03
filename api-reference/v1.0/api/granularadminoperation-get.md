@@ -3,7 +3,7 @@ title: "Get granularAdminOperation"
 description: "Read the properties and relationships of a granularAdminOperation object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

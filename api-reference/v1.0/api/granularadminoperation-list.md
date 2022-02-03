@@ -3,7 +3,7 @@ title: "List granularAdminOperations"
 description: "Get a list of the granularAdminOperation objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

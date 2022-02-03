@@ -3,7 +3,7 @@ title: "List requests"
 description: "Get the granularAdminRelationshipRequest resources from the requests navigation property."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

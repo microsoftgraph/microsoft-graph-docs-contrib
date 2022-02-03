@@ -3,7 +3,7 @@ title: "Update granularAdminCustomer"
 description: "Update the properties of a granularAdminCustomer object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

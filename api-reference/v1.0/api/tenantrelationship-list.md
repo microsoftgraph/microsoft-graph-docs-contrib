@@ -3,7 +3,7 @@ title: "List tenantRelationships"
 description: "Get a list of the tenantRelationship objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: apiPageType
 ---
 

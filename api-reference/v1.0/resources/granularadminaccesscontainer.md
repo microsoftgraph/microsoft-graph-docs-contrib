@@ -3,7 +3,7 @@ title: "granularAdminAccessContainer resource type"
 description: "**TODO: Add Description**"
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: ""gdap""
+ms.prod: "gdap"
 doc_type: resourcePageType
 ---
 
