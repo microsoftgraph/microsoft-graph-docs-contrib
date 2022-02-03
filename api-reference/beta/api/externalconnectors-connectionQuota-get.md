@@ -35,7 +35,7 @@ GET /external/connections/{id}/quota
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) such like `$search`, `$select`, and `$top` help customize the response.
+This method supports all [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
