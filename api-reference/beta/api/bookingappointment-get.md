@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_bookingappointment"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingappointment-csharp-snippets.md)]
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingappointment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -91,7 +95,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/appointments/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/appointments/$entity",
     "id": "AAMkADKnAAA=",
     "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
     "isLocationOnline": true,
@@ -193,7 +197,51 @@ Content-type: application/json
     "invoiceDate": {
         "dateTime": "2018-05-06T12:30:00.0000000Z",
         "timeZone": "UTC"
-    }
+    },
+    "maximumAttendeesCount": 5,
+    "filledAttendeesCount": 1,
+    "customers": [
+        {
+            "@odata.type": "#microsoft.graph.bookingCustomerInformation",
+            "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+            "name": "Jordan Miller",
+            "emailAddress": "jordanm@contoso.com",
+            "phone": "213-555-0199",
+            "notes": null,
+            "location": 
+            {
+                "displayName": "Customer",
+                "locationEmailAddress": null,
+                "locationUri": "",
+                "locationType": null,
+                "uniqueId": null,
+                "uniqueIdType": null,
+                "address": 
+                {
+                    "type": "home",
+                    "postOfficeBox": "",
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "countryOrRegion": "",
+                    "postalCode": ""
+                },
+                "coordinates": null
+            },
+            "timeZone": "America/Chicago",
+            "customQuestionAnswers": [
+                {
+                    "questionId": "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+                    "question": "What is your age",
+                    "answerInputType": "text",
+                    "answerOptions": [],
+                    "isRequired": true,
+                    "answer": "25",
+                    "selectedOptions":[]
+                }
+            ]
+        }
+    ]
 }
 ```
 

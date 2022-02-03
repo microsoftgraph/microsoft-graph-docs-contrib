@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -481,3 +481,11 @@ The preceding limits apply to the following resources:
 | <!-- fake header--> |
 |--|
 | <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+### Service Communications service limits
+The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
+
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 240 requests per 60 seconds |
+|Any | 800 requests per hour |

@@ -136,7 +136,7 @@ If you still need to configure Azure AD Graph permissions for your applications,
 + Use the Azure portal to find the APIs your organization uses
 + Update the application manifest on the Azure portal
 + Use the [application](/graph/api/resources/application) API in Microsoft Graph to update the [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) object
-+ Use the [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell
++ Use the [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK
 
 For examples using the listed workarounds, see [Use Microsoft Graph to configure required Azure AD Graph permissions for an app registration](migrate-azure-ad-graph-configure-permissions.md)
 
