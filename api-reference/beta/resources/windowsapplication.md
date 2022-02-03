@@ -1,6 +1,6 @@
 ---
 title: "windowsApplication resource type"
-description: "Specifies settings for a Windows application."
+description: "Represents settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
