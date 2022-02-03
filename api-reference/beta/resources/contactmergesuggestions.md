@@ -1,6 +1,6 @@
 ---
 title: "contactMergeSuggestions resource type"
-description: "Represents a user privacy settings to merge duplicate-contacts suggestions. The user may have the option to enable / disable the feature from privacy settings."
+description: "Represents the status of the duplicate contact merge suggestions feature."
 author: "jagadeesh-vadivel"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user privacy settings to merge duplicate-contacts suggestions. The user may have the option to enable / disable the feature from privacy settings.
+Represents the status of the duplicate contact merge suggestions feature. Users have the option to enable or disable the duplicate contact merge suggestions feature in their privacy settings.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/contactmergesuggestions-get.md)|[contactMergeSuggestions](contactmergesuggestions.md)|Read the properties of a **contactMergeSuggestions** setting.|
-|[Update](../api/contactmergesuggestions-update.md)|NA |Update the properties of a **contactMergeSuggestions** setting.|
+|[Get](../api/contactmergesuggestions-get.md)|[contactMergeSuggestions](contactmergesuggestions.md)|Read the properties of a **contactMergeSuggestions** object.|
+|[Update](../api/contactmergesuggestions-update.md)|None |Update the properties of a **contactMergeSuggestions** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|`true` if duplicate contact merge suggestions feature is enabled for user; `false` if duplicate contact merge suggestions feature is disabled. Default is `true`.|
+|isEnabled|Boolean|`true` if the duplicate contact merge suggestions feature is enabled for the user; `false` if the feature is disabled. Default value is `true`.|
 
 ## Relationships
 None.
