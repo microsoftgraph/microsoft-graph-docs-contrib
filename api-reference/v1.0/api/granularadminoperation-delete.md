@@ -1,9 +1,9 @@
 ---
 title: "Delete granularAdminOperation"
 description: "Deletes a granularAdminOperation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: ""gdap""
 doc_type: apiPageType
 ---
 
