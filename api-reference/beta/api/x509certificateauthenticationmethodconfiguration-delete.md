@@ -1,18 +1,18 @@
 ---
-title: "Disable x509CertificateAuthenticationMethodConfiguration"
-description: "Disable a x509CertificateAuthenticationMethodConfiguration object and restores all the other properties to their default settings"
+title: "Delete x509CertificateAuthenticationMethodConfiguration"
+description: "Delete a x509CertificateAuthenticationMethodConfiguration object and restores all the other properties to their default settings"
 author: "charlenezheng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Disable x509CertificateAuthenticationMethodConfiguration
+# Delete x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable and restore the [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object to its default configuration.
+Restore the [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) object to its default configuration.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
