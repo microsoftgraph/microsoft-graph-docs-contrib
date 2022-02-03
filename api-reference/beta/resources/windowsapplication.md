@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies settings for a Windows application.
+Represents settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store.
 
 ## Properties
 
