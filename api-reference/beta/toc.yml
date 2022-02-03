@@ -10597,16 +10597,16 @@ items:
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
-        - name: Get assignment settings
+        - name: Get
           href: api/educationassignmentsettings-get.md
-        - name: Update assignment settings
+        - name: Update
           href: api/educationassignmentsettings-update.md
       - name: Assignment defaults
         href: resources/educationassignmentdefaults.md
         items:
-        - name: Get assignment defaults
+        - name: Get
           href: api/educationassignmentdefaults-get.md
-        - name: Update assignment defaults
+        - name: Update
           href: api/educationassignmentdefaults-update.md
       - name: Category
         href: resources/educationcategory.md
@@ -10622,13 +10622,13 @@ items:
       - name: Rubric
         href: resources/educationrubric.md
         items:
-        - name: Create rubric
+        - name: Create
           href: api/educationuser-post-rubrics.md
-        - name: Get rubric
+        - name: Get
           href: api/educationrubric-get.md
-        - name: Update rubric
+        - name: Update
           href: api/educationrubric-update.md
-        - name: Delete rubric
+        - name: Delete
           href: api/educationrubric-delete.md
       - name: Submission
         href: resources/educationsubmission.md
@@ -10695,12 +10695,12 @@ items:
       - name: Synchronization profile status
         href: resources/educationsynchronizationprofilestatus.md
         items:
-        - name: Get sync status
+        - name: Get
           href: api/educationsynchronizationprofilestatus-get.md
       - name: Synchronization errors
         href: resources/educationsynchronizationerror.md
         items:
-        - name: Get sync errors
+        - name: Get
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:
