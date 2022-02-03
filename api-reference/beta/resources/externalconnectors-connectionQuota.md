@@ -1,6 +1,6 @@
 ---
 title: "connectionQuota resource type"
-description: "Represents the [connection](externalconnectors-externalconnection.md) quota that contains calculated information about the quota utilization of an external connection."
+description: "Represents the connection quota that contains calculated information about the quota utilization of an external connection."
 author: "josmoran"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -10,13 +10,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-The [connection](externalconnectors-externalconnection.md) quota contains calculated information on the connection's quota utilization. It returns the allowed number of items that you can ingest into a connection by considering items ingested for the connection against the tenant-level quota for Microsoft Graph connectors.
+The [connection](externalconnectors-externalconnection.md) quota that contains calculated information about the quota utilization of an external connection. It returns the allowed number of items that you can ingest into a connection by considering items ingested for the connection against the tenant-level quota for Microsoft Graph connectors.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get connectionQuota](../api/externalconnectors-connectionQuota-get.md) |[connectionQuota](../resources/externalconnectors-connectionQuota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
+| [Get connectionQuota](../api/externalconnectors-connectionquota-get.md) |[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
 
 ## Properties
 
@@ -41,6 +41,6 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "itemsRemaining": Int64
+  "itemsRemaining": "Int64"
 }
 ```

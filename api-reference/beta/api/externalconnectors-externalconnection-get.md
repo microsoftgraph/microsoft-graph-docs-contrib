@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested **[externalConnection](../resources/externalconnectors-externalconnection.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
 ## Examples
 
@@ -57,9 +57,6 @@ If successful, this method returns a `200 OK` response code and the requested **
 
 The following is an example of the request.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connection"
@@ -68,30 +65,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/connections/contosohr
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connection-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-connection-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->
@@ -110,7 +83,7 @@ Content-type: application/json
 
 {
   "id": "contosohr",
-  "ingestedItemsCount": Int64,
+  "ingestedItemsCount": 700000,
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "state": "ready",
