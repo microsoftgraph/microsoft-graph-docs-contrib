@@ -15,14 +15,14 @@
           "ApiChange": "Property",
           "ChangedApiName": "windows",
           "ChangeType": "Addition",
-          "Description": "Added the **windows** property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Description": "Added the **windows** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
           "Target": "application"
         }
       ],
       "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-31T19:36:55.0123959Z",
+      "CreatedDateTime": "2022-02-03T00:00:00.0123959Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
