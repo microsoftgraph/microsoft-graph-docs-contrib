@@ -204,9 +204,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
-| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 18,000 per 5 minutes |
+| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -241,6 +241,10 @@ The following table lists base request costs. Any requests not listed have a bas
 | PATCH | Any identity path not listed in the table | 1 | 1 |
 | PUT | Any identity path not listed in the table | 1 | 1 |
 | DELETE | Any identity path not listed in the table | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> The cost of POST, PATCH, and DELETE operations on the `applications` request path depends on the **signInAudience** type. For apps where the **signInAudience** is `AzureADMyOrg` or `AzureADMultipleOrgs`, the cost is 70,000 requests per 5 minutes; while for apps where the **signInAudience** is `AzureADandPersonalMicrosoftAccount` or `PersonalMicrosoftAccount`, the cost is 60 requests per minute.
 
 Other factors that affect a request cost:
 
