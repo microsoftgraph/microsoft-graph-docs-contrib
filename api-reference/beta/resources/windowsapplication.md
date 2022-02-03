@@ -4,7 +4,7 @@ description: "Specifies settings for a Windows application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "arcrowe"
+author: "aricrowe57"
 ---
 
 # webApplication resource type
