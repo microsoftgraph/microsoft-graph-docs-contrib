@@ -23,7 +23,7 @@
 					"ApiChange": "Resource",
 					"ChangedApiName": "peopleInsights",
 					"ChangeType": "Addition",
-					"Description": "Added the **peopleInsights** relationship to the[organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
+					"Description": "Added the **peopleInsights** relationship to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource.",
 					"Target": "organizationSettings"
 				}
 			],
@@ -55,24 +55,24 @@
 				{
 					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
 					"ApiChange": "Method",
-					"ChangedApiName": "contactMergeSuggestions",
+					"ChangedApiName": "GET",
 					"ChangeType": "Addition",
-					"Description": "Added the **GET** operation to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Description": "Added the [GET](https://docs.microsoft.com/en-us/graph/api/contactmergesuggestions-get?view=graph-rest-beta) method to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
 					"Target": "contactMergeSuggestions"
 				},
 				{
 					"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
 					"ApiChange": "Method",
-					"ChangedApiName": "contactMergeSuggestions",
+					"ChangedApiName": "PATCH",
 					"ChangeType": "Addition",
-					"Description": "Added the **PATCH** operation to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
+					"Description": "Added the [Update](https://docs.microsoft.com/en-us/graph/api/contactmergesuggestions-update?view=graph-rest-beta) method to the [contactMergeSuggestions](https://docs.microsoft.com/en-us/graph/api/resources/contactMergeSuggestions?view=graph-rest-beta) resource.",
 					"Target": "contactMergeSuggestions"
 				}
 			],
 			"Id": "fbc4def0-6d2a-11ec-ae3f-e486bb3b9c86",
 			"Cloud": "prd",
 			"Version": "beta",
-			"CreatedDateTime": "2022-01-04T06:53:12.168Z",
+			"CreatedDateTime": "2022-02-02T06:53:12.168Z",
 			"WorkloadArea": "People and workplace intelligence",
 			"SubArea": "People"
 		}
