@@ -1,36 +1,36 @@
 ---
-title: "Build notificationChannelUrl"
-description: "Learn how to build the notificationChannelUrl property value for assignments"
+title: "Build notificationChannelUrl for an education assignment"
+description: "How to build the notificationChannelUrl property value for assignments"
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Build notificationChannelUrl property value using the Microsoft Graph API
+# Build notificationChannelUrl for an education assignment using the Microsoft Graph API
 
 This article describes how to use the education API in Microsoft Graph to build the `notificationChannelUrl` string property for an [educationAssignment](/graph/api/resources/educationassignment).
 
-This property is used to specify the default Teams channel to which notifications will be sent. Default value is null.
+This property is used to specify the default Teams channel to send notifications about the **assignment**. Default value is null.
 
 ## Prerequisites
 
-Before you can build the property, you must have identified the team for the current **assignment** and the channel name.
+Before building the property, identify the corresponding team for the **assignment** and the name of the channel.
 
-**Team**
+### Pre-requisite 1: Identify the team
 
-![Click on Teams option from the left panel and select the desired team](./images/notificationchannel-team.png)
+![In the left vertical menu in Microsoft Teams, click on Teams option and select the desired team](./images/notificationchannel-team.png)
 
-**Channel**
+### Pre-requisite 2: Identify the channel
 
-![Select your channel from the Channels section](./images/notificationchannel-channel.png)
+![Once you have selected the team, select the appropiate channel from the Channels section](./images/notificationchannel-channel.png)
 
-## Steps to build the notificationChannelUrl property value
+## Build the notificationChannelUrl property value
 
 The following steps describe how to build the property value.
 
 ### Step 1 - Get the team id based on your team name
-Make a GET request with the team name.
+To find the team id, make a GET request with the team name. If you already have the team id, skip this step.
 
 #### Request example
 The following example shows the request.
@@ -73,7 +73,7 @@ Content-type: application/json
 ```
 
 ### Step 2 - Get the channel id based on channel name and team id
-Make a GET request with the teamId obtained in previous step and the channel name.
+Make a GET request with the teamId obtained in previous step and the channel name. Skip this step if you already have the channel id.
 
 #### Request example
 The following example shows the request.
@@ -125,13 +125,13 @@ The following example shows a **notificationChannelUrl** based on this format.
 https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2
 ```
 
-### Step 4 - Consume the notificationChannelUrl property
+### Step 4 - Assign the value to the notificationChannelUrl property for the assignment
 
-You have now successfully built the url, you can consume it in any of the following calls.
+You have now successfully built the url, it's time to assign the value to the property.
 
-### Example 1: Update an educationAssignment
+#### Example 1: Update an educationAssignment
 
-### Request
+##### Request
 The following is an example of the request.
 
 ```http
@@ -144,7 +144,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+##### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -207,9 +207,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Update educationAssignmentDefaults
+#### Example 2: Update educationAssignmentDefaults
 
-#### Request
+##### Request
 
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
@@ -221,7 +221,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+##### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
