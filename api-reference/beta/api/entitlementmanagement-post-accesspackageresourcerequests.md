@@ -474,6 +474,60 @@ Content-type: application/json
 }
 ```
 
+### Example 6: Create an accessPackageResourceRequest for adding an application
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests6"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceRequests
+Content-type: application/json
+
+{
+  "catalogId": "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
+  "requestType": "AdminAdd",
+  "justification": "",
+  "accessPackageResource": {
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
+      "resourceType": "Application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "originSystem": "AadApplication",
+      "attributes": []
+  }
+}
+
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "f0e632ed-afd2-41d3-8d6e-ccefda457e5e",
+  "requestType": "AdminAdd",
+  "requestState": "Delivered",
+  "requestStatus": "Fulfilled"
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
