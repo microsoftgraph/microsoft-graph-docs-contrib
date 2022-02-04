@@ -127,7 +127,7 @@ https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/chan
 
 ### Step 4 - Assign the value to the notificationChannelUrl property for the assignment
 
-You have now successfully built the url, it's time to assign the value to the property.
+You have now successfully built the url, it's time to assign the value to the property. You can perform this operation by updating either the **educationAssignment** or **educationAssignmentDefaults** resources.
 
 #### Example 1: Update an educationAssignment
 
