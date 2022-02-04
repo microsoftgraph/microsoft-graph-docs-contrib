@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An access package resource attribute is the definition of a property that is required by an application.  This structure is included in an [accessPackageResource](../resources/accesspackageresource.md) of a catalog, for an application whose roles are included in an access package in that catalog.  When a user requests the access package, they must supply the value of the attribute, which, if the request is approved, is then written on the user's directory object.  The application can then subsequently [read the attribute of the user](user-get.md).
+An access package resource attribute is the definition of a property that a user is required to have to be able to access an application.  This structure is included in an [accessPackageResource](../resources/accesspackageresource.md) of a catalog, for an application whose roles are included in an access package in that catalog.  When a user requests the access package, they must supply the value of the attribute, which, if the request is approved, is then written on the user's directory object.  The application can then subsequently [read the attribute of the user](../api/user-get.md).
+
+If the **attributeDestination** is [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md), then the attribute indicated by **attributeName** must be a writable property of the [user](user.md).
+ 
+If the **attributeSource** of the attribute is an [accessPackageResourceAttributeQuestion](accesspackageresourceattributequestion.md), then the requestor's supplied value is stored as-provided on the user's directory entry, and made available to the application and other graph clients.
 
 ## Properties
 |Property|Type|Description|
