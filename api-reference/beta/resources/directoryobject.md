@@ -25,11 +25,12 @@ This resource supports:
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Read the properties  of a directory object.|
 |[Delete](../api/directoryobject-delete.md) | None |Delete a directory object. |
-|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
-|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, or directory object is a member. The check is transitive.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all groups that the user, group, service principal, organizational contact, device, or directory object is a member of. The check is transitive.|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive. |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validate a Microsoft 365 group's display name or mail nickname complies with naming policies. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validate a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 |delta|[directoryObject](directoryObject.md) collection| Get incremental changes for directory objects, for example, [users](../api/user-delta.md), [groups](../api/group-delta.md), [applications](../api/application-delta.md), and [service principals](../api/serviceprincipal-delta.md). Each derived type supports filtering by the **id**. For more information on delta queries, see the [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).|
 
 ## Properties
@@ -40,7 +41,7 @@ This resource supports:
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -60,7 +61,6 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

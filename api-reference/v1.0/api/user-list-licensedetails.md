@@ -41,9 +41,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [licenseDetails](../resources/licensedetails.md) objects in the response body.
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -70,9 +70,17 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-licensedetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-licensedetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-licensedetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -83,7 +91,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 389
 
 {
   "value": [

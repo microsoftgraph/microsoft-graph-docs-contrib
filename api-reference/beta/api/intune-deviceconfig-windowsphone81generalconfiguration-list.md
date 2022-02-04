@@ -2,7 +2,7 @@
 title: "List windowsPhone81GeneralConfigurations"
 description: "List properties and relationships of the windowsPhone81GeneralConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -139,6 +139,7 @@ Content-Length: 2807
   ]
 }
 ```
+
 
 
 

@@ -10,11 +10,11 @@ doc_type: apiPageType
 # Get organizationalBranding
 Namespace: microsoft.graph
 
-Retrieve the default organizational branding object, if the **Accept-Language** header is not specified. If no organizational branding object has been created, this method returns a `404 Not Found` error.
+Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`. If no default organizational branding object exists, this method returns a `404 Not Found` error.
 
-If the **Accept-Language** header is specified, this method retrieves the branding for the specified locale.
+If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
 
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) method. The **id** for the default localization can be `0` or `default`.
+This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ This method supports only the `$select` OData query parameter to help customize 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Accept-Language|A valid ISO 639-1 locale. Optional.|
+|Accept-Language|A valid ISO 639-1 locale. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -69,6 +69,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
+Accept-Language: 0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-csharp-snippets.md)]
@@ -84,6 +85,14 @@ GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be6
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -138,6 +147,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: 0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-error-csharp-snippets.md)]
@@ -153,6 +163,14 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-error-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-error-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,7 +190,7 @@ HTTP/1.1 404 Not Found
 
 ### Example 3: Get organizational branding for the French locale
 
-In the following example, the **Accept-Language** header is used specify the localization branding to retrieve.
+In the following example, the **Accept-Language** header is used specify to retrieve the `fr-FR` localization branding.
 
 #### Request
 
@@ -204,6 +222,14 @@ Accept-Language: fr-FR
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-locale-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-locale-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-locale-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -225,8 +251,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr",
-    "id": "fr",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr-FR",
+    "id": "fr-FR",
     "backgroundColor": "#FFFF33",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
@@ -239,7 +265,7 @@ Content-Type: application/json
 
 ### Example 4: Get the bannerLogo for the default locale
 
-The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
+The following example returns the **bannerLogo** object for the default locale. To retrieve Stream object types for example, **bannerLogo**, use the [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). You may specify the value of **id** as `default` or `0` in the request URL. If the property is not set, the request returns an empty response.
 
 #### Request
 
@@ -271,9 +297,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### Example 5: Get the bannerLogo for the fr-FR locale
+### Example 5: Get the bannerLogo for the default locale when it is not set
 
-The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo is not set.
+The following example returns the **bannerLogo** object which hadn't been set for the default locale.
 
 #### Request
 

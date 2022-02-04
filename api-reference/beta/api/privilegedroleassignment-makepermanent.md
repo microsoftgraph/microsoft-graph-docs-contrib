@@ -4,7 +4,7 @@ description: "Make the role assignment permanent."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "shauliu1"
+author: "carolinetempleton"
 ---
 
 # privilegedRoleAssignment: makePermanent
@@ -66,7 +66,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makePermanent
 Content-type: application/json
-Content-length: 110
 
 {
   "reason": "reason-value",
@@ -90,6 +89,14 @@ Content-length: 110
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignment-makepermanent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/privilegedroleassignment-makepermanent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedroleassignment-makepermanent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,7 +110,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

@@ -38,9 +38,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account)     | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application                            | Team.Create, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+
+> **Note**: Permissions marked with ** are deprecated and should not be used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -105,6 +107,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/clone-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32943
+Content-Length: 32950
 
 {
   "value": {
@@ -531,7 +531,7 @@ Content-Length: 32943
     "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
     "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
     "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-    "localSecurityOptionsSmartCardRemovalBehavior": "noAction",
+    "localSecurityOptionsSmartCardRemovalBehavior": "lockWorkstation",
     "defenderSecurityCenterDisableAppBrowserUI": true,
     "defenderSecurityCenterDisableFamilyUI": true,
     "defenderSecurityCenterDisableHealthUI": true,
@@ -814,6 +814,7 @@ Content-Length: 32943
   }
 }
 ```
+
 
 
 

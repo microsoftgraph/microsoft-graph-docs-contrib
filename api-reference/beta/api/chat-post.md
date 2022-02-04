@@ -1,7 +1,7 @@
 ---
 title: "Create chat"
 description: "Create a new chat object."
-author: "bhartono"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Chat.Create, Chat.ReadWrite|
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Not supported. |
+|Application | Chat.Create |
 
 ## HTTP request
 
@@ -109,6 +109,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-oneonone-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -187,6 +195,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -268,6 +284,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-with-installed-apps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-with-installed-apps-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-oneonone-with-installed-apps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -286,6 +310,88 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 ```
 
 The async operation is initiated, and the response contains a Location header which includes a link to the to the [teamsAsyncOperation](../resources/teamsasyncoperation.md). The link can be used to get the operation status and details. For details, see [Get operation on chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+
+### Example 4: Create a one-on-one chat using user principal name
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "oneOnOne",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+    }
+  ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-chat-oneonone-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-chat-oneonone-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2020-12-04T23:10:28.51Z",
+    "lastUpdatedDateTime": "2020-12-04T23:10:28.51Z",
+    "chatType": "oneOnOne",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3A82fe7758-5bb3-4f0d-a43f-e555fd399c6f_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+}
+```
 
 ## See also
 - [Get teamsAsyncOperation](teamsasyncoperation-get.md)

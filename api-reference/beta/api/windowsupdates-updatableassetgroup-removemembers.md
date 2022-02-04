@@ -1,7 +1,7 @@
 ---
 title: "updatableAssetGroup: removeMembers"
 description: "Remove members from an updatableAssetGroup."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -91,6 +91,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableassetgroup-removemembers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-removemembers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-removemembers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

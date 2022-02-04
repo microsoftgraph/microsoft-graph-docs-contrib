@@ -32,8 +32,8 @@ Depending on the resource you're deleting the extension from and the permission 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## HTTP request
 
@@ -52,8 +52,8 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Note:** The above syntax shows some common ways to identify a resource instance, in order to delete an extension from it. 
@@ -103,6 +103,14 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-opentypeextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

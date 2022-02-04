@@ -117,6 +117,14 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/java/get-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -131,7 +139,6 @@ Here is an example of the response. Because no `Prefer: outlook.body-content-typ
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1928
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
@@ -239,6 +246,14 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/java/get-event-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-in-text-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-in-text-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -254,7 +269,6 @@ Here is an example of the response. The **body** property is returned in text fo
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 636
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)/$entity",
@@ -300,6 +314,14 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 [!INCLUDE [sample-code](../includes/snippets/java/get-event-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-multiple-locations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-multiple-locations-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -317,7 +339,6 @@ the **start** and **end** properties are displayed in the default UTC time zone,
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,locations)/$entity",
@@ -410,6 +431,8 @@ Content-length: 1992
 
 The following example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_seriesMaster_expansion"
@@ -417,6 +440,16 @@ The following example shows expanding a series master event of a recurring serie
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-seriesmaster-expansion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-seriesmaster-expansion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
 
@@ -429,7 +462,6 @@ The GET operation returns the selected properties for the series master event. S
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1992
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",

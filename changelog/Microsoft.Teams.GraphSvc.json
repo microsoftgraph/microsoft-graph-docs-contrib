@@ -229,32 +229,170 @@
       "SubArea": ""
     },
     {
-      "ChangeList": [{
+      "ChangeList": [
+        {
           "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
           "ApiChange": "Resource",
           "ChangedApiName": "provisionChannelEmailResult",
           "ChangeType": "Addition",
           "Description": "Added the [provisionChannelEmailResult](https://docs.microsoft.com/en-us/graph/api/resources/provisionChannelEmailResult?view=graph-rest-1.0) resource type.",
           "Target": "provisionChannelEmailResult"
-      }, {
+        },
+        {
           "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
           "ApiChange": "Method",
           "ChangedApiName": "provisionEmail",
           "ChangeType": "Addition",
           "Description": "Added the [provisionEmail](https://docs.microsoft.com/en-us/graph/api/channel-provisionEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
-      }, {
+        },
+        {
           "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
           "ApiChange": "Method",
           "ChangedApiName": "removeEmail",
           "ChangeType": "Addition",
           "Description": "Added the [removeEmail](https://docs.microsoft.com/en-us/graph/api/channel-removeEmail?view=graph-rest-1.0) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
-      }],
+        }
+      ],
       "Id": "37b0cd12-f9bd-45d0-a494-1f498a37cfc7",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-24T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-beta) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
+          "Target": "teamworkHostedContent"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkHostedContent](https://docs.microsoft.com/en-us/graph/api/resources/teamworkHostedContent?view=graph-rest-beta) resource.",
+          "Target": "teamworkHostedContent"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
+          "Target": "teamsAppIcon"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamsAppIcon](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppIcon?view=graph-rest-beta) resource.",
+          "Target": "teamsAppIcon"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
+          "Target": "teamworkBot"
+        },
+        {
+          "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-beta) resource.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "A287D22A-8B0E-44D8-8B15-7781B1F61B6E",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-29T11:01:30.771Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6D8BFD24-0663-4FCB-A71D-D60758334258",
+          "ApiChange": "Property",
+          "ChangedApiName": "webUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **webUrl** property to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "6D8BFD24-0663-4FCB-A71D-D60758334258",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-12-15T09:20:09.7567921Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-26T09:30:11.7567234Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

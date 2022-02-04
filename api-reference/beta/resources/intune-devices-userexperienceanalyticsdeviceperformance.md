@@ -2,7 +2,7 @@
 title: "userExperienceAnalyticsDevicePerformance resource type"
 description: "The user experience analytics device performance entity contains device boot performance details."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -34,7 +34,7 @@ The user experience analytics device performance entity contains device boot per
 |deviceName|String|The user experience analytics device name.|
 |model|String|The user experience analytics device model.|
 |manufacturer|String|The user experience analytics device manufacturer.|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The user experience analytics device disk type. Possible values are: `hdd`, `ssd`, `unknown`.|
 |operatingSystemVersion|String|The user experience analytics device Operating System version.|
 |bootScore|Int32|The user experience analytics device boot score.|
 |coreBootTimeInMs|Int32|The user experience analytics device core boot time in milliseconds.|
@@ -89,6 +89,7 @@ Here is a JSON representation of the resource.
   "modelStartupPerformanceScore": "4.2"
 }
 ```
+
 
 
 

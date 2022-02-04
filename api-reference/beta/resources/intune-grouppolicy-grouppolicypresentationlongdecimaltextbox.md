@@ -2,7 +2,7 @@
 title: "groupPolicyPresentationLongDecimalTextBox resource type"
 description: "Represents an ADMX longDecimalTextBox element and an ADMX longDecimal element."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -69,6 +69,7 @@ Here is a JSON representation of the resource.
   "maxValue": 1024
 }
 ```
+
 
 
 

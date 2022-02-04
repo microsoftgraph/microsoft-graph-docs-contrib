@@ -51,7 +51,7 @@ The following table specifies the properties that can be updated.
 |autoSubscribeNewMembers|Boolean|Default is `false`. Indicates whether new members added to the group will be auto-subscribed to receive email notifications. **autoSubscribeNewMembers** can't be `true` when **subscriptionEnabled** is set to `false` on the group.|
 |description|String|An optional description for the group.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
-|mailNickname|String|The mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. |
+|mailNickname|String|The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. |
 |preferredDataLocation|String|The preferred data location for the Microsoft 365 group. To update this property, the calling user must be assigned one of the following Azure AD roles: <br><ul><li> Global Administrator <li> User Account Administrator <li> Partner Tier1 or Tier2 Support <li>Directory Writer <li> Exchange Administrator <li> SharePoint Administrator </ul> <br/>For more information about this property, see  [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |securityEnabled|Boolean|Specifies whether the group is a security group, including Microsoft 365 groups. |
 |visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
@@ -111,6 +111,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -139,7 +147,6 @@ You can obtain the ID of the label you want to apply to a Microsoft 365 group by
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "assignedLabels": 
@@ -164,6 +171,14 @@ Content-length: 211
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

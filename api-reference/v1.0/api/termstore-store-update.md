@@ -67,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"
@@ -87,6 +86,14 @@ Content-length: 133
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-store-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-store-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "List securityBaselineTemplates"
 description: "List properties and relationships of the securityBaselineTemplate objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -81,6 +81,7 @@ Content-Length: 531
   ]
 }
 ```
+
 
 
 

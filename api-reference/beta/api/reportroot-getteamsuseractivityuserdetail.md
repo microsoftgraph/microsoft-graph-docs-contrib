@@ -66,6 +66,7 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
+- User Id
 - User Principal Name
 - Last Activity Date
 - Is Deleted
@@ -95,7 +96,7 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and a **[teamsUserActivityUserDetail](../resources/teamsuseractivityuserdetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 2000 items.
 
@@ -144,7 +145,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -175,7 +176,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -184,10 +185,10 @@ Content-Type: application/json
 Content-Length: 452
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 

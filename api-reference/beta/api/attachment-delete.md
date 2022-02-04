@@ -112,9 +112,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -153,6 +153,14 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-attachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-attachment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

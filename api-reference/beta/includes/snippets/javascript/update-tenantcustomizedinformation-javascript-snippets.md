@@ -15,7 +15,12 @@ const tenantCustomizedInformation = {
   tenantId: 'String',
   contacts: [
     {
-      '@odata.type': 'microsoft.graph.managedTenants.tenantContactInformation'
+      '@odata.type': 'microsoft.graph.managedTenants.tenantContactInformation',
+      name: 'String',
+      title: 'String',
+      email: 'String',
+      phone: 'String',
+      notes: 'String'
     }
   ],
   website: 'String'

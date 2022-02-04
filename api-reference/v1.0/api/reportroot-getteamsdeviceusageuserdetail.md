@@ -41,7 +41,7 @@ In the request URL, provide one of the following parameters with a valid value.
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
-| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
+| date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 28 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either period or date in the URL.
 
@@ -60,6 +60,7 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns:
 
 - Report Refresh Date
+- User Id
 - User Principal Name
 - Last Activity Date
 - Is Deleted
@@ -113,7 +114,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

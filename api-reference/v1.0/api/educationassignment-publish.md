@@ -1,8 +1,8 @@
 ---
 title: "educationAssignment: publish"
-description: "This action publishes an education assignment."
+description: "Change the state of an educationAssignment from its original draft status to the published status."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -13,7 +13,15 @@ Namespace: microsoft.graph
 
 Publish an education assignment.
 
+Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
+
+You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
+
 Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. Calling this API creates [educationSubmission](../resources/educationsubmission.md) objects and displays the assignment in each student's list.
+
+The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+
+To update the properties of a published **assignment**, see [update an assignment](../api/educationassignment-update.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,6 +80,14 @@ POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationassignment-publish-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationassignment-publish-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-publish-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

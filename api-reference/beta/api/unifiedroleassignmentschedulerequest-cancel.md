@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: cancel"
 description: "Cancel a unifiedRoleAssignmentScheduleRequest."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -72,6 +72,14 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSch
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroleassignmentschedulerequest-cancel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/unifiedroleassignmentschedulerequest-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleassignmentschedulerequest-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

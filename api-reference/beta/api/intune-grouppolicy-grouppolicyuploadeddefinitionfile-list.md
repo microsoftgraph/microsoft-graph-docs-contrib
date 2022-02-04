@@ -2,7 +2,7 @@
 title: "List groupPolicyUploadedDefinitionFiles"
 description: "List properties and relationships of the groupPolicyUploadedDefinitionFile objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -75,9 +75,9 @@ Content-Length: 1176
       "targetNamespace": "Target Namespace value",
       "policyType": "admxIngested",
       "revision": "Revision value",
+      "fileName": "File Name value",
       "id": "0ce1a8cf-a8cf-0ce1-cfa8-e10ccfa8e10c",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "fileName": "File Name value",
       "status": "uploadInProgress",
       "content": "Y29udGVudA==",
       "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00",
@@ -96,6 +96,7 @@ Content-Length: 1176
   ]
 }
 ```
+
 
 
 

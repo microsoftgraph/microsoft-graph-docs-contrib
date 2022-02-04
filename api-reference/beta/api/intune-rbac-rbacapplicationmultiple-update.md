@@ -2,7 +2,7 @@
 title: "Update rbacApplicationMultiple"
 description: "Update the properties of a rbacApplicationMultiple object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -81,6 +81,7 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
+
 
 
 

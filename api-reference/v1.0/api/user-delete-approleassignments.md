@@ -36,9 +36,9 @@ DELETE /users/{id}/appRoleAssignments/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -78,6 +78,14 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments/{id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-delete-approleassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-delete-approleassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-delete-approleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

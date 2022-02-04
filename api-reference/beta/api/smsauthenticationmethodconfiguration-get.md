@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global Reader
 * Authentication Policy Administrator
@@ -96,11 +96,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
-    "id": "713980c7-80c7-7139-c780-3971c7803971",
-    "state": "String"
-  }
+    "id": "Sms",
+    "state": "enabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "isUsableForSignIn": true
+        }
+    ]
 }
 ```
 

@@ -39,10 +39,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "resultTemplateId": {
-                    "displayName": "String",
-                    "body": "Json schema"
-                }
+   "resultTemplateId": {
+      "displayName": "String",
+      "body": "Json schema"
+   }
 }
 ```
 
