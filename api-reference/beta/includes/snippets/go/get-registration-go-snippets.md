@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.RegistrationRequestBuilderGetQueryParameters{
-	Expand: "customQuestions",
+	Expand: "microsoft.graph.meetingRegistration/customQuestions",
 }
 options := &msgraphsdk.RegistrationRequestBuilderGetOptions{
 	Q: requestParameters,

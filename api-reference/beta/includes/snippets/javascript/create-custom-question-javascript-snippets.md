@@ -16,7 +16,7 @@ const meetingRegistrationQuestion = {
   answerInputType: 'text'
 };
 
-await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/customQuestions')
+await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions')
 	.version('beta')
 	.post(meetingRegistrationQuestion);
 
