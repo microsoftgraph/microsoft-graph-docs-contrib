@@ -116,6 +116,47 @@ while(messagesPage != null) {
 }
 ```
 
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
+    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+)
+
+query := messages.MessagesRequestBuilderGetQueryParameters{
+    Select: []string{"body", "sender", "subject"},
+}
+
+options := messages.MessagesRequestBuilderGetOptions{
+    H: map[string]string{
+        "Prefer": "outlook.body-content-type=\"text\"",
+    },
+    Q: &query,
+}
+
+result, err := client.Me().Messages().Get(&options)
+
+// Initialize iterator
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
+    func() serialization.Parsable {
+        return messages.NewMessagesResponse()
+    })
+
+pageIterator.SetHeaders(map[string]string{"Content-Type": "application/json"})
+
+// Iterate over all pages
+iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    fmt.Printf("%s\n", *message.GetSubject())
+    // Return true to continue the iteration
+    return true
+})
+```
+
 ---
 
 ## Stopping and resuming the iteration
@@ -201,6 +242,13 @@ while (!pageIterator.isComplete()) {
 
 ```java
 // not supported in java SDK
+```
+
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
 ```
 
 ---
