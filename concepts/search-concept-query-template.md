@@ -1,5 +1,5 @@
 ---
-title: "Use Template Query In Microsoft Search API (preview)"
+title: "Use template query in Microsoft Search API (preview)"
 description: "Provide a template way to help decorate user query "
 author: "yiwenwang"
 ms.localizationpriority: medium
@@ -9,7 +9,7 @@ ms.prod: "search"
 # Use QueryTemplate Microsoft Search API
 QueryTemplate provides a way to template user query.
 
-## Example 1: Use KQL/FQL in Graph Search
+## Example 1: Use KQL in queryTemplate
 
 ### Request
 

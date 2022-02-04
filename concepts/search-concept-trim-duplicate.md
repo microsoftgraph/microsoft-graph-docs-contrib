@@ -1,6 +1,6 @@
 ---
 title: "Trim duplicate search results in Microsoft Search API(preview)"
-description: "Trim Duplicate search results using the Microsoft Search API."
+description: "Trim duplicate search results using the Microsoft Search API."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -9,9 +9,9 @@ ms.prod: "search"
 # Trim duplicate search results in Microsoft Search API
 
 You can use the Microsoft Search API in Microsoft Graph to dedup search results. To dedup the results, specify the **trimDuplicate** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object.
-TrimDuplicate is only supported to SharePoint items, the default value is false.
+TrimDuplicate is only supported on SharePoint items, the default value is false.
 
-## Example 1: Trim Duplicate
+## Example
 
 ### Request
 
