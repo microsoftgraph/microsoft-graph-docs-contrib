@@ -478,7 +478,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request for adding an application to a catalog, including specifying a required attribute of that application.
 
 <!-- {
   "blockType": "request",
@@ -499,7 +499,29 @@ Content-type: application/json
       "resourceType": "Application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
       "originSystem": "AadApplication",
-      "attributes": []
+      "attributes": [
+        {
+          "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
+          "isEditable": true,
+          "isPersistedOnAssignmentRemoval": true,
+          "attributeSource": {
+              "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+              "question": {
+                  "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+                  "isRequired": false,
+                  "sequence": 0,
+                  "isSingleLineQuestion": true,
+                  "text": {
+                      "defaultText": "Title",
+                      "localizedTexts": []
+                  }
+              }
+          },
+          "attributeDestination": {
+              "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
+          }
+        }
+      ]
   }
 }
 

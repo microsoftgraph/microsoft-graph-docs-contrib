@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource that defines the question provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system or the request approver.
+Resource that defines the [question](accesspackagequestion.md) provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system or the request approver.
 
-Inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md).
+This type inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md) and is used in the **attributeSource** property of an [accessPackageResourceAttribute](accesspackageresouceattribute.md).
 
 ## Properties
 |Property|Type|Description|

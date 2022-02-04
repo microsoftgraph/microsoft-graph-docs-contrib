@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver. It is inherited by [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md). 
+An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver.  It is used in the **attributeSource** property of an [accessPackageResourceAttribute](accesspackageresouceattribute.md). This type is inherited by [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md).
 
 ## Properties
 None.
