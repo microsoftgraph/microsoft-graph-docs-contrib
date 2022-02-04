@@ -18,6 +18,40 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeAssignment.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeAssignment.Read.All` delegated and application permissions to read the **customSecurityAttributes** property of the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeAssignment.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeAssignment.Read.All` delegated and application permissions to read the **customSecurityAttributes** property of the [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeDefinition.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeDefinition.Read.All` delegated and application permissions to the read operations of the [customSecurityAttributeDefinition](https://docs.microsoft.com/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta) resource.",
+          "Target": "customSecurityAttributeDefinition"
+        }
+      ],
+      "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-04T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
    {
       "ChangeList": [
         {
