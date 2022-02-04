@@ -108,16 +108,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.homeRealmDiscoveryPolicy)",
+    "value": [
+        {
+            "id": "6c6f154f-cb39-4ff9-bf5b-62d5ad585cde",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "Contoso default HRD Policy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 
