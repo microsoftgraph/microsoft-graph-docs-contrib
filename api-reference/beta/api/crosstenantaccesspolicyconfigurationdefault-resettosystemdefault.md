@@ -66,7 +66,6 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
