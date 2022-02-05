@@ -1,6 +1,6 @@
 ---
 title: "Delete crossTenantAccessPolicyConfigurationPartner"
-description: "Deletes a partner-specific configuration in a cross-tenant access policy."
+description: "Delete a partner-specific configuration in a cross-tenant access policy."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy.
+Delete a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy.
 
 ## Permissions
 
