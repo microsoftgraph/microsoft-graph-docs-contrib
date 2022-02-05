@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcprovisioningpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcprovisioningpolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -111,13 +115,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-      "id": "1d164206-bf41-4fd2-8424-a3192d392273",
-      "displayName": "Display Name value",
       "description": "Description value",
-      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-      "imageId": "Image ID value",
+      "displayName": "Display Name value",
+      "domainJoinConfiguration": {
+          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+          "type": "hybridAzureADJoin"
+      },
+      "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
       "imageDisplayName": "Image Display Name value",
-      "imageType":"custom"
+      "imageId": "Image ID value",
+      "imageType":"custom",
+      "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
     }
   ]
 }

@@ -721,14 +721,18 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.Read.All_ | Read custom security attribute assignments | Allows the app to read custom security attribute assignments for all principals in the tenant on behalf of a signed in user. | Yes | No |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant on behalf of a signed in user. | Yes | No |
+| _CustomSecAttributeDefinition.Read.All_ | Read custom security attribute definitions | Allows the app to read custom security attribute definitions for the tenant on behalf of a signed in user. | Yes | No |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant on behalf of a signed in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.Read.All_ | Read custom security attribute assignments | Allows the app to read custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
+| _CustomSecAttributeDefinition.Read.All_ | Read custom security attribute definitions | Allows the app to read custom security attribute definitions for the tenant without a signed in user. | Yes |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Yes |
 
 ---
@@ -1815,7 +1819,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ### Remarks
 
 > [!CAUTION]
-> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.All_, allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
+> Permissions that allow granting authorization, such as _RoleManagement.ReadWrite.Directory_, allow an application to grant itself, other applications, or any user, additional privileges. Use caution when granting any of these permissions.
 
 With the _RoleManagement.Read.Directory_ permission an application can read directoryRoles and directoryRoleTemplates. This includes reading membership information for directory roles.
 
@@ -2162,6 +2166,22 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteForTeam.All_ | Manage Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Does not give the ability to read application-specific settings.| Yes |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ | Allow the Teams app to manage itself for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself in any team, without a signed-in user.| Yes |
 
+## Teams device management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices on behalf of the signed-in user.	| Yes | No |
+| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices on behalf of the signed-in user. 	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkDevice.Read.All_ | Read Teams devices. | Allows the app to read the management data for Teams devices, without a signed-in user.	| Yes | No |
+| _TeamworkDevice.ReadWrite.All_ | Read and write Teams devices. | Allows the app to read and write the management data for Teams devices, without a signed-in user. | Yes | No |
+
 ## Team member permissions 
 
 #### Delegated permissions
@@ -2244,8 +2264,16 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Read and write tags in any team in Microsoft Teams, without a signed-in user.	| Yes | No |
-| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Read tags in any team in Microsoft Teams, without a signed-in user. | Yes | No |
+| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams, on behalf of the signed-in user.	| Yes | No |
+| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
+| _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
+
 
 ## Terms of use permissions
 
