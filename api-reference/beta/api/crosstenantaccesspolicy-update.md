@@ -59,7 +59,7 @@ The following table specifies the properties that can be updated.
 
 If successful, this method returns a `200 OK` response code and an updated [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object in the response body.
 
-The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25kB. This method will return a `400 Bad Request` error code if the size of the policy will exceed 25kB.
+The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25KB. This method will return a `400 Bad Request` error code if the size of the policy will exceed 25KB.
 
 ## Examples
 
