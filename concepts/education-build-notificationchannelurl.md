@@ -73,7 +73,7 @@ Content-type: application/json
 ```
 
 ### Step 2 - Get the channel id based on channel name and team id
-Make a GET request with the teamId obtained in previous step and the channel name. Skip this step if you already have the channel id.
+Make a GET request with the team ID obtained in the previous step and the channel name. Skip this step if you already have the channel id.
 
 #### Request example
 The following example shows the request.
@@ -116,7 +116,7 @@ Replace the `{team-id}` and `{channel-id}` placeholders with the values describe
 
 | Placeholder | Description | Example |
 |:--|:--|:--|
-| `{team-id}` | Same team ID from the response in step 1. It is the team which current assignment belongs to. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
+| `{team-id}` | The team ID from the response in step 1. This is the team that the current assignment belongs to. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
 | `{channel-id}` | Item ID from the response body obtained in step 2. | 19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
 
 The following example shows a **notificationChannelUrl** based on this format.
@@ -222,7 +222,7 @@ Content-Type: application/json
 ```
 
 ##### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
