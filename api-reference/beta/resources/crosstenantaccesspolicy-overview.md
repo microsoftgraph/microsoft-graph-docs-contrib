@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In the traditional Azure AD B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
-**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. This collaboration is mainly through the Azure Active Directory (Azure AD) B2B collaboration and Azure AD B2B direct connect (future) features. The control can be on either **outbound access** (how your users collaborate with other organizations), **inbound access** (how other organizations collaborate with you), or both.
+**Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on either **outbound access** (how your users collaborate with other organizations), **inbound access** (how other organizations collaborate with you), or both.
 
 Granular controls let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect. These controls are implemented through:
 
