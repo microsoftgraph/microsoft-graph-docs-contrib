@@ -14,6 +14,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
 
 ```
