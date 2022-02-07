@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory that cross-tenant access policies inherit from.",
+          "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource. Represents the base policy in the directory that cross-tenant access policies inherit from.",
           "Target": "tenantRelationshipAccessPolicyBase"
         },
         {
