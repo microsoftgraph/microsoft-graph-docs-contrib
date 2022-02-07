@@ -2,6 +2,130 @@
 	"changelog": [
 		{
 			"ChangeList": [
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "servicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [servicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Target": "activityType"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the [adminConfirmedServicePrincipalCompromised](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [adminDismissedAllRiskForServicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskServicePrincipalActivity",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource",
+				"Target": "riskServicePrincipalActivity"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipals",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipals](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "servicePrincipalRiskDetections",
+				"ChangeType": "Addition",
+				"Description": "Added the [servicePrincipalRiskDetections](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-beta) resource",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipalHistoryItem",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource",
+				"Target": "riskyServicePrincipalHistoryItem"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "servicePrincipalRiskDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the [servicePrincipalRiskDetection](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource",
+				"Target": "servicePrincipalRiskDetection"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "confirmCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) resource",
+				"Target": "confirmCompromised"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "dismiss",
+				"ChangeType": "Addition",
+				"Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) resource",
+				"Target": "dismiss"
+			  }
+			],
+			"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-02-03T18:21:07.2696343Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  },
+		{
+			"ChangeList": [
+			  {
+				"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the [adminConfirmedServicePrincipalCompromised](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [adminDismissedAllRiskForServicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Target": "riskDetail"
+			  }
+			],
+			"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-02-03T18:21:07.2690735Z",
+			"WorkloadArea": "Reports and audit",
+			"SubArea": "Identity and access reports"
+		  },
+		{
+			"ChangeList": [
 				{
 					"Id": "91d733d8-c9f6-425f-9da5-1d4ffc5e07b3",
 					"ApiChange": "Property",
