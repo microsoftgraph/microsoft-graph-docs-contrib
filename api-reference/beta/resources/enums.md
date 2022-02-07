@@ -938,6 +938,20 @@ Namespace: microsoft.graph
 |block|
 |unknownFutureValue|
 
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
+
 ### anniversaryType values
 
 |Member|
