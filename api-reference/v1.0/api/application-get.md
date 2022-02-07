@@ -121,6 +121,11 @@ Content-type: application/json
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {

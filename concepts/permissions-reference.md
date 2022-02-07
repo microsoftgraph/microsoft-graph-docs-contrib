@@ -686,14 +686,18 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _CustomSecAttributeAssignment.Read.All_ | Read custom security attribute assignments | Allows the app to read custom security attribute assignments for all principals in the tenant on behalf of a signed in user. | Yes | No |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant on behalf of a signed in user. | Yes | No |
+| _CustomSecAttributeDefinition.Read.All_ | Read custom security attribute definitions | Allows the app to read custom security attribute definitions for the tenant on behalf of a signed in user. | Yes | No |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant on behalf of a signed in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _CustomSecAttributeAssignment.Read.All_ | Read custom security attribute assignments | Allows the app to read custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Read and write custom security attribute assignments | Allows the app to read and write custom security attribute assignments for all principals in the tenant without a signed in user. | Yes |
+| _CustomSecAttributeDefinition.Read.All_ | Read custom security attribute definitions | Allows the app to read custom security attribute definitions for the tenant without a signed in user. | Yes |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Read and write custom security attribute definitions | Allows the app to read and write custom security attribute definitions for the tenant without a signed in user. | Yes |
 
 ---
@@ -2190,8 +2194,16 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Read and write tags in any team in Microsoft Teams, without a signed-in user.	| Yes | No |
-| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Read tags in any team in Microsoft Teams, without a signed-in user. | Yes | No |
+| _TeamworkTag.ReadWrite_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams, on behalf of the signed-in user.	| Yes | No |
+| _TeamworkTag.Read_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamworkTag.ReadWrite.All_| Read and write tags in Microsoft Teams. | Allows the app to read and write tags in Teams without a signed-in user.	| Yes | No |
+| _TeamworkTag.Read.All_ | Read tags in Microsoft Teams. | Allows the app to read tags in Teams without a signed-in user | Yes | No |
+
 
 ## Terms of use permissions
 

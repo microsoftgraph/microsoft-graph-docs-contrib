@@ -67,7 +67,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{accessPackageCatalogId}
 Content-Type: application/json
 
 {

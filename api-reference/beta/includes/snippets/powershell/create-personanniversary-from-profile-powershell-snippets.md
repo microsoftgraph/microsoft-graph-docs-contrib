@@ -11,6 +11,7 @@ $params = @{
 	Date = "1980-01-08"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileAnniversary -UserId $userId -BodyParameter $params
 
 ```
