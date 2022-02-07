@@ -19,9 +19,9 @@ The purpose of the mailbox. Used to differentiate a mailbox for a single user fr
 ## Properties
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|value|[mailboxRecipientType](#mailboxrecipienttype-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
+|value|[userPurpose](#userPurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
 
-### mailboxRecipientType values
+### userPurpose values
 |Member|Description|
 |:---------------|:--------|
 |unknown|No information found about the mailbox.|
