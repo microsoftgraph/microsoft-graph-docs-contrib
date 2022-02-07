@@ -11,6 +11,21 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
 ### accessPackageFilterByCurrentUserOptions values
 
 |Member|
@@ -2672,7 +2687,6 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |or|
 |and|
-
 
 ### subjectRightsRequestStage values 
 
