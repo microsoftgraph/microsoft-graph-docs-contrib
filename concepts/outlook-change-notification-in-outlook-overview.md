@@ -50,7 +50,7 @@ Creating a subscription requires read scope to the resource. For example, to get
 Notifications with resource data for Outlook resources is currently available only in Microsoft Graph Beta endpoint. To have resource data included in the change notification, the following properties **must** be specified in addition to those usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
-- **resource** which specifies the subscription resource url **must** use the `$select` query parameter to explicitly specify the resource properties to be included in the notification payload.
+- **resource** which specifies the subscription resource url **must** use the `$select` query parameter to explicitly specify the resource properties to be included in the notification payload for Outlook resources.
 > **Note:** $top, $skip, $orderby, $select=Body,UniqueBody and $expand other than SingleValueExtendedProperties,MultiValueExtendedProperties are not supported in subscription resource Url.
 - **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
