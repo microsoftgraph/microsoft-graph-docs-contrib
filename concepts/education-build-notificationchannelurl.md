@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Build notificationChannelUrl for an education assignment using the Microsoft Graph API
+# Specify the default channel for education assignment notifications using the Microsoft Graph API
 
 This article describes how to use the education API in Microsoft Graph to build the `notificationChannelUrl` string property for an [educationAssignment](/graph/api/resources/educationassignment).
 
@@ -15,21 +15,21 @@ This property is used to specify the default Teams channel to send notifications
 
 ## Prerequisites
 
-Before building the property, identify the corresponding team for the **assignment** and the name of the channel.
+Before building the property, identify the corresponding team for the assignment and the name of the channel.
 
-### Pre-requisite 1: Identify the team
+To identify the team for the assignment, in the left menu in Teams, click Teams and then select the appropriate team.
 
 ![In the left vertical menu in Microsoft Teams, click on Teams option and select the desired team](./images/notificationchannel-team.png)
 
-### Pre-requisite 2: Identify the channel
+Identify the appropriate channel within the team that you selected.
 
-![Once you have selected the team, select the appropiate channel from the Channels section](./images/notificationchannel-channel.png)
+![Once you have selected the team, select the appropriate channel from the Channels section](./images/notificationchannel-channel.png)
 
 ## Build the notificationChannelUrl property value
 
 The following steps describe how to build the property value.
 
-### Step 1 - Get the team id based on your team name
+### Step 1 - Get the team ID based on your team name
 To find the team id, make a GET request with the team name. If you already have the team id, skip this step.
 
 #### Request example
@@ -72,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-### Step 2 - Get the channel id based on channel name and team id
+### Step 2 - Get the channel ID based on channel name and team ID
 Make a GET request with the team ID obtained in the previous step and the channel name. Skip this step if you already have the channel id.
 
 #### Request example
