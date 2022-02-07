@@ -1,23 +1,5 @@
 {
   "changelog": [
-        {
-      "ChangeList": [
-        {
-          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-          "ApiChange": "Property",
-          "ChangedApiName": "provisioningStatus",
-          "ChangeType": "Addition",
-          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
-          "Target": "servicePlanInfo"
-        }
-      ],
-      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-02-01T00:00:00.2532422Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },
     {
       "ChangeList": [
         {
@@ -85,7 +67,7 @@
           "Target": "crossTenantAccessPolicyTargetConfiguration"
         },
         {
-          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
           "ChangeType": "Addition",
@@ -93,7 +75,7 @@
           "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
         },
         {
-          "Id": "0a673359-4f88-11nbe-ae53-ed740c456b69",
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetType",
           "ChangeType": "Addition",
@@ -104,9 +86,27 @@
       "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-10T00:00:00Z",
+      "CreatedDateTime": "2022-02-07T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
+          "Target": "servicePlanInfo"
+        }
+      ],
+      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-02-01T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [

@@ -331,10 +331,10 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 ## Cross-tenant access settings vs tenant restrictions
 
-Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because Tenant Restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because Tenant Restrictions are scoped to networks and devices, not accounts. Learn more about [Tenant Restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
 ## Next steps
 
-+ [Cross-tenant access settings documentation](https://docs.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-overview)
++ [Cross-tenant access settings documentation](/azure/active-directory/external-identities/cross-tenant-access-overview)
 + [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type
 + [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type
