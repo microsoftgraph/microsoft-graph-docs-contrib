@@ -41,18 +41,16 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.accessPackageResourceAttribute",
   "attributeDestination": {
-    "@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore"
+    "@odata.type": "microsoft.graph.accessPackageResourceAttributeDestination"
   },
-  "attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
+  "attributeName": "String",
   "attributeSource": {
-    "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
-    "question": {
-      "@odata.type": "microsoft.graph.accessPackageQuestion"
-    }
+    "@odata.type": "microsoft.graph.accessPackageResourceAttributeSource"
   },
   "id": "String (identifier)",
-  "isEditable": true,
-  "isPersistedOnAssignmentRemoval": true
+  "isEditable": "Boolean",
+  "isPersistedOnAssignmentRemoval": "Boolean"
 }
 ```

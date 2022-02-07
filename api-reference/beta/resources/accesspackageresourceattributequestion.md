@@ -38,14 +38,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
   "question": {
-    "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-       "isRequired": false,
-       "sequence": 0,
-       "isSingleLineQuestion": true,
-       "text": {
-           "defaultText": "Title",
-           "localizedTexts": []
-       }
+    "@odata.type": "microsoft.graph.accessPackageQuestion"
   }
 }
 ```
