@@ -17,7 +17,7 @@ Resource that defines the [question](accesspackagequestion.md) provided to an en
 
 This type inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md) and is used in the **attributeSource** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md).
 
-The only property is `question`, which could be an [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) or a [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md).
+The only property is **question**, which could be an [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) or a [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md) object type.
 
 ## Properties
 |Property|Type|Description|
