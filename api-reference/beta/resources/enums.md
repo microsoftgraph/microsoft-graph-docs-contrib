@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### accessReviewHistoryStatus
+### accessReviewHistoryStatus values
 
 |Member|
 |:---|
