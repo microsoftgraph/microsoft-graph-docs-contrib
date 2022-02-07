@@ -11699,6 +11699,42 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+        - name: Cross-tenant access (preview)
+          items:
+          - name: Overview
+            href: resources/crosstenantaccesspolicy-overview.md
+          - name: Policy
+            items:
+            - name: Cross-tenant access policy
+              href: resources/crosstenantaccesspolicy.md
+            - name: Get
+              href: api/crosstenantaccesspolicy-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicy-update.md
+          - name: Default settings
+            items:
+            - name: Cross-tenant access default settings
+              href: resources/crosstenantaccesspolicyconfigurationdefault.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+            - name: Reset to system default
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+          - name: Partner settings
+            items:
+            - name: Cross-tenant access partner settings
+              href: resources/crosstenantaccesspolicyconfigurationpartner.md
+            - name: List
+              href: api/crosstenantaccesspolicy-list-partners.md
+            - name: Create
+              href: api/crosstenantaccesspolicy-post-partners.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+            - name: Delete
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:

@@ -11,15 +11,20 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### accessReviewHistoryStatus values
+### crossTenantAccessPolicyTargetConfigurationAccessType values
 
 |Member|
 |:---|
-|done|
-|inprogress|
-|error|
-|requested|
+|allowed|
+|blocked|
 |unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
 
 ### accessPackageFilterByCurrentUserOptions values
 
@@ -2682,7 +2687,6 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |or|
 |and|
-
 
 ### subjectRightsRequestStage values 
 
