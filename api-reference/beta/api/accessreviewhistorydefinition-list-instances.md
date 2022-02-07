@@ -1,5 +1,5 @@
 ---
-title: "List instances"
+title: "List instances (of an accessReviewHistoryDefinition)"
 description: "Retrieve the instances of an access review history definition."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List instances
+# List instances (of an accessReviewHistoryDefinition)
 
 Namespace: microsoft.graph
 

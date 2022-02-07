@@ -11,6 +11,16 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessReviewHistoryStatus
+
+|Member|
+|:---|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
 ### accessPackageFilterByCurrentUserOptions values
 
 |Member|
