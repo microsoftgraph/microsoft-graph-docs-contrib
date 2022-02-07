@@ -5,6 +5,14 @@
         {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
+          "ChangedApiName": "tenantRelationshipAccessPolicyBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory that cross-tenant access policies inherit from.",
+          "Target": "tenantRelationshipAccessPolicyBase"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicy",
           "ChangeType": "Addition",
           "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
