@@ -9,22 +9,79 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Outlook resources in Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide a low latency model by allowing 
-you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid 
-calling the API to get the payload.
+Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. The [subscription](/graph/api/resources/webhooks?preserve-view=true) approach reduces the delay between the time of a change and receiving its notification. In addition, when setting up a subscription, you can specify notifications to include resource data, thereby avoiding a separate subsequent API call to get the resource payload.
 
 A maximum of 1000 active subscriptions per mailbox for all applications is allowed for Outlook resources.
 
-For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
+## Subscribe to changes in mail, calendar or contacts
+
+To subscribe to change notifications of Outlook resources, first create a [subscription](/graph/api/subscription-post-subscriptions.md).
+
+The following user resources are supported:
+
+- [contact](/graph/api/resources/contact)
+- [event](/graph/api/resources/event)
+- [message](/graph/api/resources/message)
+
+The above resources support creation of subscriptions with and without resource data in the notification payload.
+
+## Creating a subscription
+
+To [create a subscription](webhooks.md#creating-a-subscription), you need to specify the Outlook resource for which you want to receive notifications when the requested type of changes (created, updates or deleted) occur. See an [example](#example-1-create-a-subscription-to-get-change-notifications-without-resource-data-when-the-user-receives-a-new-message).
+
+### Permissions
+
+Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. Outlook change notifications support delegated and application permission scopes. Depending on the resource the permission specified in the following table is the least privileged required to call this API.
+- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission 
+  Calendars.Read to subscribe to events in another user’s mailbox.
+- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
+  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
+  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they 
+    do **not** support subscribing to change notifications on items in shared or delegated folders.
+
+| Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
+|:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
+|[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
+|[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
+|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+
+### Including resource data in notification payload (preview)
+
+Notifications with resource data for Outlook resources is currently available only in Microsoft Graph Beta endpoint. To have resource data included in the change notification, the following properties **must** be specified in addition to those usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
+
+- **includeResourceData** which should be set to `true` to explicitly request resource data.
+- **resource** which specifies the resource **must** use the `$select` query parameter to explicitly specify the resource properties to be included in the notification payload.
+> **Note:** $top, $skip, $orderby, $select=Body,UniqueBody and $expand other than SingleValueExtendedProperties,MultiValueExtendedProperties are not supported in subscription resource Url.
+- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
+- **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
+
+See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message).
+
+### Refine the conditions for a notification
+You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
+
+One common application of $filter is to get notification on a change in a specific property of the specified resource. For example, you can use $filter to subscribe to unread messages in a folder (the _isRead_ property is false), and include all the change types:
+- A message added to or marked unread in the folder would trigger a `Created` notification.
+- Reading a message or marking it as read in the folder would trigger a `Deleted` notification.
+- A change to any property, other than _isRead_, of a message in the folder would trigger an `Updated` notification.
+
+If you don’t use a $filter when creating the subscription:
+- Adding a message to the folder would result in a `Created` notification.
+- Reading a message in the folder, marking the message as read, or changing any other property of a message in that folder would result in an `Updated` notification.
+- Deleting the message would result in a `Delete` notification.
+
+### Subscribing to subscription lifecycle notifications
+The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](/graph/concepts/webhooks-lifecycle).
+
+### Subscription Lifetime
+The maximum time a subscription can last for an Outlook resource is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, [subscriptions can be renewed](/graph/api-reference/v1.0/api/subscription-update.md) until the caller has permissions to access to resource.
 
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the 
 resource payload along with the notification, which removes the need to call back and get the content.
 
-> **Note:** The maximum time a subscription can last is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, subscriptions can be renewed until the caller has permissions to access to resource.
-
-### Notifications with resource data
+### Notifications with resource data (preview)
 
 For notifications with resource data, the payload looks like the following.  In the example below, the payload is for a notification corresponding to the outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification.
 
@@ -60,10 +117,6 @@ For notifications with resource data, the payload looks like the following.  In 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the outlook [message](/graph/api/resources/message?preserve-view=true) schema. The payload is similar to that returned by GET operations. However, only those properties are returned in the notification payload that are specified using `$select` while specifying the _resource_ during subscription creation. Notification for other outlook entities like [contacts](/graph/api/resources/contact?preserve-view=true), [calendar](/graph/api/resources/calendar?preserve-view=true) follow their respective schemas. 
-
-> **Note:** `$select` query parameter is mandatory when subscribing to change notification with resource data for Outlook resources. Using this you can specify the properties of the _resource_ that you want included in the notification payload while creating the subscription. See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message). Also, $top, $skip, $orderby, $select=Body,UniqueBody and $expand other than SingleValueExtendedProperties,MultiValueExtendedProperties are not supported in subscription resource Url.
-
-> **Note:** Notifications with resource data is currently available only in Microsoft Graph Beta endpoint.
 
 ```json
 {
@@ -111,69 +164,6 @@ The payload looks like the following. This payload is for a message sent in a ch
 Previous example above shows a notification that corresponds to a outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
 > **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
-
-## Subscribe to changes in mail, calendar or contacts
-
-To get change notifications for all messages and replies across channels in a tenant, subscribe to /teams/getAllMessages. This resource supports including resource data in the notification.
-Create one or more single-value extended properties in a new or existing instance of a resource.
-
-The following user resources are supported:
-
-- [contact](/graph/api/resources/contact)
-- [event](/graph/api/resources/event)
-- [message](/graph/api/resources/message)
-
-### Permissions
-
-Outlook change notifications support delegated and application permission scopes.
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission 
-  Calendars.Read to subscribe to events in another user’s mailbox.
-- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
-  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they 
-    do **not** support subscribing to change notifications on items in shared or delegated folders.
-
-| Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
-|:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
-|[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
-|[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-
-### Refine the conditions for a notification
-You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
-
-One common application of $filter is to get notification on a change in a specific property of the specified resource. For example, you can use $filter to subscribe to unread messages in a folder (the _isRead_ property is false), and include all the change types:
-- A message added to or marked unread in the folder would trigger a `Created` notification.
-- Reading a message or marking it as read in the folder would trigger a `Deleted` notification.
-- A change to any property, other than _isRead_, of a message in the folder would trigger an `Updated` notification.
-
-If you don’t use a $filter when creating the subscription:
-- Adding a message to the folder would result in a `Created` notification.
-- Reading a message in the folder, marking the message as read, or changing any other property of a message in that folder would result in an `Updated` notification.
-- Deleting the message would result in a `Delete` notification.
-
-## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-POST /subscriptions
-```
-
-### Request headers
-
-| Name           | Type    | Description               |
-|:---------------|:--------|:--------------------------|
-| Authorization  | string  | Bearer {token}. Required. |
-
-## Request body
-
-In the request body, supply a JSON representation of [subscription](/graph/api/resources/subscription) object.
-
-## Response
-
-If successful, this method returns `201 Created` response code and a [subscription](/graph/api/resources/subscription) object in the response body.
-For details about how errors are returned, see [Error responses][error-response].
 
 ## Examples
 
