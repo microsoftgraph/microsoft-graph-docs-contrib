@@ -15,7 +15,7 @@ A maximum of 1000 active subscriptions per mailbox for all applications is allow
 
 ## Subscribe to changes in mail, calendar or contacts
 
-To subscribe to change notifications of Outlook resources, first create a [subscription](/graph/api/subscription-post-subscriptions.md).
+To subscribe to change notifications of Outlook resources, first create a [subscription](/graph/api/subscription-post-subscriptions?preserve-view=true).
 
 The following user resources are supported:
 
@@ -52,7 +52,7 @@ Notifications with resource data for Outlook resources is currently available on
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
 - **resource** which specifies the resource **must** use the `$select` query parameter to explicitly specify the resource properties to be included in the notification payload.
 > **Note:** $top, $skip, $orderby, $select=Body,UniqueBody and $expand other than SingleValueExtendedProperties,MultiValueExtendedProperties are not supported in subscription resource Url.
-- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
+- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
 
 See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message).
@@ -71,10 +71,10 @@ If you don’t use a $filter when creating the subscription:
 - Deleting the message would result in a `Delete` notification.
 
 ### Subscribing to subscription lifecycle notifications
-The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](/graph/concepts/webhooks-lifecycle).
+The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
 
 ### Subscription Lifetime
-The maximum time a subscription can last for an Outlook resource is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, [subscriptions can be renewed](/graph/api-reference/v1.0/api/subscription-update.md) until the caller has permissions to access to resource.
+The maximum time a subscription can last for an Outlook resource is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, [subscriptions can be renewed](/graph/api/subscription-update) until the caller has permissions to access to resource.
 
 ## Notification payloads
 
