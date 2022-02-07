@@ -25,9 +25,9 @@ If the **attributeSource** of the attribute is an [accessPackageResourceAttribut
 |Property|Type|Description|
 |:---|:---|:---|
 |attributeDestination|[accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md)|Information about how to set the attribute, currently a [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md).|
-|attributeName|String|The name of the attribute in the end system.|
+|attributeName|String|The name of the attribute in the end system. If the destination if `accessPackageUserDirectoryAttributeStore`, then a user property such as `jobTitle` or a directory schema extension for the user object type, such as `extension_2b676109c7c74ae2b41549205f1947ed_personalTitle`.|
 |attributeSource|[accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md)|Information about how to populate the attribute value when an **accessPackageAssignmentRequest** is being fulfilled, currently a [accessPackageResourceAttributeQuestion](accesspackageresourceattributequestion.md).|
-|id|String|Unique identifier for the attribute. Read-only. |
+|id|String|Unique identifier for the attribute on the access package resource. Read-only. |
 |isEditable|String| Specifies whether or not an existing attribute value can be edited by the requester.|
 |isPersistedOnAssignmentRemoval|Boolean| Specifies whether the attribute will remain in the end system after an assignment ends.|
 
