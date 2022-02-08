@@ -146,7 +146,9 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAda
         return messages.NewMessagesResponse()
     })
 
-pageIterator.SetHeaders(map[string]string{"Content-Type": "application/json"})
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(map[string]string{"Prefer": "outlook.body-content-type=\"text\""})
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
@@ -274,7 +276,9 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAda
         return messages.NewMessagesResponse()
     })
 
-pageIterator.SetHeaders(map[string]string{"Content-Type": "application/json"})
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(map[string]string{"Prefer": "outlook.body-content-type=\"text\""})
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25
@@ -295,7 +299,7 @@ time.Sleep(5 * time.Second)
 fmt.Printf("Resuming iteration...\n")
 
 // Resume iteration
-iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+iterateErr = pageIterator.Iterate(func(pageItem interface{}) bool {
     message := pageItem.(graph.Message)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
