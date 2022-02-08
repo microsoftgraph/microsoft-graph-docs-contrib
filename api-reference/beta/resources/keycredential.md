@@ -21,7 +21,7 @@ Contains a key credential associated with an application or a service principal.
 |customKeyIdentifier|Binary| Custom key identifier |
 | displayName | String | Friendly name for the key. Optional. |
 |endDateTime|DateTimeOffset|The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|key|Binary| Value for the key credential. Should be a Base64 encoded value. Returned only on `$select` for a single `GET applications/{applicationId}?$select=keyCredentials` or `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`. |
+|key|Binary| Value for the key credential. Should be a Base64 encoded value. Returned only on `$select` for a single object, that is, `GET applications/{applicationId}?$select=keyCredentials` or `GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials`; otherwise, it is always `null`. |
 |keyId|Guid|The unique identifier for the key.|
 |startDateTime|DateTimeOffset|The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |type|String|The type of key credential; for example, `Symmetric`, `AsymmetricX509Cert`.|
