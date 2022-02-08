@@ -94,7 +94,7 @@ items:
           - name: Microsoft 365 groups
             href: office365-groups-concept-overview.md
           - name: Configure group options
-            href: group-set-options
+            href: group-set-options.md
       - name: Applications
         items:
           - name: Overview
