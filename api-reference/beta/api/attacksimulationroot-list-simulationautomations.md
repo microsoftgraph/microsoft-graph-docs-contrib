@@ -84,8 +84,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomat
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "(microsoft.graph.simulationAutomation)",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.simulationAutomation)"
 }
 -->
 ``` http
