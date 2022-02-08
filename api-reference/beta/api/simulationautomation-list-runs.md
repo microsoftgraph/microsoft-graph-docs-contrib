@@ -1,6 +1,6 @@
 ---
 title: "List runs"
-description: "List runs of an attack simulation automation of a tenant."
+description: "Get a list of the simulationAutomationRun objects and their properties."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List runs of an attack simulation automation of a tenant.
+Get a list of the [simulationAutomationRun](../resources/simulationautomationrun.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,9 +34,9 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$skiptoken`, `$top`, `$select`.
+This method supports the `$count`, `$skiptoken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-Use `@odata.nextLink` for pagination.
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 The following are examples of their use:
 
@@ -46,11 +46,10 @@ The following are examples of their use:
 -->
 ``` http
 GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$count=true
+GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$skipToken={skipToken}
 GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$top=1
 GET /security/attackSimulation/simulationautomations/{simulationAutomationId}/runs?$select={property}
 ```
-
-For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -73,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96/runs
 ```
 
 
@@ -82,7 +81,8 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomat
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.simulationAutomationRun)"
+  "@odata.type": "microsoft.graph.simulationAutomationRun",
+  "isCollection": true
 }
 -->
 ``` http
