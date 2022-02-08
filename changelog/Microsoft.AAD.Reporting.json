@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+              "Id": "07c2453e-e776-4768-a5cb-75d0f3d1fe22",
+              "ApiChange": "Resource",
+              "ChangedApiName": "userRegistrationDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the **userRegistrationDetails** relationship to [authenticationMethodsRoot](https://docs.microsoft.com/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+              "Target": "authenticationMethodsRoot"
+            },
+            {
+              "Id": "07c2453e-e776-4768-a5cb-75d0f3d1fe22",
+              "ApiChange": "Resource",
+              "ChangedApiName": "userRegistrationDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the [userRegistrationDetails](https://docs.microsoft.com/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource and related methods. The userRegistrationDetails resource provides details of the authentication methods registered for the user.",
+              "Target": "userRegistrationDetails"
+            }
+        ],
+        "Id": "07c2453e-e776-4768-a5cb-75d0f3d1fe22",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-01-24T00:00:00.000Z",
+        "WorkloadArea": "Reports",
+        "SubArea": "Identity and access reports"
+    },
+    {
         "ChangeList": [
             {
                 "Id": "7b7675fc-e198-4b66-add5-df4f0d86b5f1",
@@ -97,7 +123,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-01-19T00:00:00.000Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {

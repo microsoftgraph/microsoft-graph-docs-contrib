@@ -357,6 +357,48 @@
     {
       "ChangeList": [
         {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of the [teamsApp](https://docs.microsoft.com/en-us/graph/api/resources/teamsApp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.Read.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        },
+        {
+          "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AppCatalog.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `AppCatalog.ReadWrite.All` to the read operations of [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource.",
+          "Target": "teamworkBot"
+        }
+      ],
+      "Id": "5F977174-7E48-4AB7-BEF0-215CEE8F0061",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-01-26T09:30:11.7567234Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
           "ApiChange": "Resource",
           "ChangedApiName": "teamworkOnlineMeetingInfo",
@@ -384,7 +426,7 @@
       "Id": "0C3FCFD0-DDEF-45A9-8071-CF48DCA98503",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-01-25T12:58:28.5337951Z",
+      "CreatedDateTime": "2022-02-07T12:58:28.5337951Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

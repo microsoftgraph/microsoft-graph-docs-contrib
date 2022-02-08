@@ -40,7 +40,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 

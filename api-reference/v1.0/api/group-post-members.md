@@ -16,9 +16,10 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 You can add users, organizational contacts, service principals or other groups. 
 
 > [!IMPORTANT]
-> + You can only add members to security and Microsoft 365 groups.
+> + You can add members to security and Microsoft 365 groups only. For more information, see [Group types in Azure AD and Microsoft Graph only](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
+> + A security group can have users, devices, groups, or service principals as its members, while a Microsoft 365 group can have only users as its members.
 
 ## Permissions
 
