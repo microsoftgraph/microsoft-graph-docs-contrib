@@ -1,6 +1,6 @@
 ---
 title: "simulationAutomationRun resource type"
-description: "Represent run of an attack simulation automation of a tenant."
+description: "Represents a run of an attack simulation automation of a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent run of an attack simulation automation of a tenant.
+Represents a run of an attack simulation automation of a tenant.
 
 
 ## Methods
@@ -25,21 +25,21 @@ Represent run of an attack simulation automation of a tenant.
 |Property|Type|Description|
 |:---|:---|:---|
 |endDateTime|DateTimeOffset|Date and time when the run ends in an attack simulation automation.|
-|id|String|Id of the run of attack simulation automation.|
-|simulationId|String|Id of the attack simulation campaign initiated in the attack simulation automation run.|
+|id|String|Unique identifier for the run of an attack simulation automation.|
+|simulationId|String|Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.|
 |startDateTime|DateTimeOffset|Date and time when the run starts in an attack simulation automation.|
 |status|[simulationAutomationRunStatus](#simulationautomationrunstatus-values)|Status of the run of an attack simulation automation. The possible values are: `unknown`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
 
 ### simulationAutomationRunStatus values
 
-|Member|
-|:---|
-|unknown|
-|running|
-|succeeded|
-|failed|
-|skipped|
-|unknownFutureValue|
+|Member|Description |
+|:---|:---|
+|unknown| Simulation automation run status not defined. |
+|running| Simulation automation run status as running. |
+|succeeded| Simulation automation run status as succeeded. |
+|failed| Simulation automation run status as failed. |
+|skipped| Simulation automation run status as skipped. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.
@@ -57,11 +57,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.simulationAutomationRun",
-  "id": "String (identifier)",
-  "status": "String",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "simulationId": "String"
+  "id": "String (identifier)",
+  "simulationId": "String",
+  "startDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

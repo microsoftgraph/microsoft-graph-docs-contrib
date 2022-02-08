@@ -411,7 +411,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "simulationAutomations",
           "ChangeType": "Addition",
-          "Description": "Added the **simulationAutomations** relationship to [attackSimulationRoot](https://docs.microsoft.com/en-us/graph/api/resources/attackSimulationRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **simulationAutomations** relationship to the [attackSimulationRoot](https://docs.microsoft.com/en-us/graph/api/resources/attacksimulationroot?view=graph-rest-beta) resource.",
           "Target": "attackSimulationRoot"
         },
         {
@@ -419,7 +419,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "automationId",
           "ChangeType": "Addition",
-          "Description": "Added the **automationId** property to [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Added the **automationId** property to the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -427,7 +427,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "cleanupArtifacts",
           "ChangeType": "Deletion",
-          "Description": "Removed the **cleanupArtifacts** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **cleanupArtifacts** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -435,7 +435,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "enableRegionTimezoneDelivery",
           "ChangeType": "Deletion",
-          "Description": "Removed the **enableRegionTimezoneDelivery** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **enableRegionTimezoneDelivery** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -443,7 +443,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includeAllAccountTargets",
           "ChangeType": "Deletion",
-          "Description": "Removed the **includeAllAccountTargets** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **includeAllAccountTargets** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -451,7 +451,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "payloadSource",
           "ChangeType": "Deletion",
-          "Description": "Removed the **payloadSource** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **payloadSource** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -459,7 +459,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "trainingAssignmentPreference",
           "ChangeType": "Deletion",
-          "Description": "Removed the **trainingAssignmentPreference** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **trainingAssignmentPreference** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -467,7 +467,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "trainingContentPreference",
           "ChangeType": "Deletion",
-          "Description": "Removed the **trainingContentPreference** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **trainingContentPreference** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -475,7 +475,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "trainingDueDateTime",
           "ChangeType": "Deletion",
-          "Description": "Removed the **trainingDueDateTime** property from [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Description": "Removed the **trainingDueDateTime** property from the [simulation](https://docs.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
         },
         {
@@ -483,7 +483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "simulationAutomation",
           "ChangeType": "Addition",
-          "Description": "Added the [simulationAutomation](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomation?view=graph-rest-beta) resource",
+          "Description": "Added the [simulationAutomation](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomation?view=graph-rest-beta) resource type and a supported method.",
           "Target": "simulationAutomation"
         },
         {
@@ -491,7 +491,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "simulationAutomationRun",
           "ChangeType": "Addition",
-          "Description": "Added the [simulationAutomationRun](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomationRun?view=graph-rest-beta) resource",
+          "Description": "Added the [simulationAutomationRun](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomationRun?view=graph-rest-beta) resource type and a supported method.",
           "Target": "simulationAutomationRun"
         }
       ],

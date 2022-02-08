@@ -46,17 +46,17 @@ The attack simulation and training _API_ enables tenant administrators to list l
 
 ### simulationStatus values
 
-|Member|
-|:---|
-|unknown|
-|draft|
-|running|
-|scheduled|
-|succeeded|
-|failed|
-|cancelled|
-|excluded|
-|unknownFutureValue|
+|Member|Description |
+|:---|:---|
+|unknown| Simulation status not defined. |
+|draft| Simulation status as draft. |
+|running| Simulation status as running. |
+|scheduled| Simulation status as scheduled. |
+|succeeded| Simulation status as succeeded. |
+|failed| Simulation status as failed. |
+|cancelled| Simulation status as cancelled. |
+|excluded| Simulation status as excluded. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### simulationAttackTechnique values
 

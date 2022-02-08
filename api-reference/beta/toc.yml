@@ -13912,17 +13912,17 @@ items:
             href: api/usersimulationdetails-list.md
           - name: Get simulation overview
             href: api/simulationreportoverview-get.md
-        - name: SimulationAutomations
+        - name: Simulation automation
           items:
-          - name: SimulationAutomation
+          - name: Simulation automation
             href: resources/simulationautomation.md
-          - name: List simulation automations
+          - name: List
             href: api/attacksimulationroot-list-simulationautomations.md
-        - name: SimulationAutomationRuns
+        - name: Simulation automation run
           items:
-          - name: SimulationAutomationRun
+          - name: Simulation automation run
             href: resources/simulationautomationrun.md
-          - name: List simulation automation runs
+          - name: List
             href: api/simulationautomation-list-runs.md
         - name: Reports
           items:
