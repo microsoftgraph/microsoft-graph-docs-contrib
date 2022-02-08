@@ -17,7 +17,7 @@ Represents details about an online meeting in Microsoft Teams.
 |Property|Type|Description|
 |:---|:---|:---|
 |calendarEventId|String|The identifier of the calendar event associated with the meeting.|
-|joinWebUrl|String|The URL which can be clicked on to join or uniquely identify the meeting.|
+|joinWebUrl|String|The URL that users click to join or uniquely identify the meeting.|
 |organizer|[teamworkUserIdentity](teamworkuseridentity.md)|The organizer of the meeting.|
 
 ## Relationships
