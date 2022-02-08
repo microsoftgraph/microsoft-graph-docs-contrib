@@ -16,12 +16,11 @@ The purpose of the mailbox. Used to differentiate a mailbox for a single user fr
 ## Properties
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
+|value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
 
 ### userPurpose values
 |Member|Description|
 |:---------------|:--------|
-|unknown|No information found about the mailbox.|
 |user|A user account with a mailbox in the local forest.|
 |linked|A mailbox linked to a user account in another forest.|
 |shared|A mailbox shared by two or more user accounts.|
