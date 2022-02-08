@@ -125,4 +125,4 @@ Content-Type: application/json
 
 ## See also
 
-* [Build notificationChannelUrl property value using the Microsoft Graph API](/graph/education-build-notificationchannelurl)
+* [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)
