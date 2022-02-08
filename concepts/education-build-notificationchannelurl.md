@@ -1,6 +1,6 @@
 ---
-title: "Build notificationChannelUrl for an education assignment"
-description: "How to build the notificationChannelUrl property value for assignments"
+title: "Specify the default channel for education assignment notifications using the Microsoft Graph API"
+description: "Use the education API in Microsoft Graph to specify the default Microsoft Teams channel to which to send notifications about an **assignment**."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -9,21 +9,19 @@ doc_type: conceptualPageType
 
 # Specify the default channel for education assignment notifications using the Microsoft Graph API
 
-This article describes how to use the education API in Microsoft Graph to build the `notificationChannelUrl` string property for an [educationAssignment](/graph/api/resources/educationassignment).
-
-This property is used to specify the default Teams channel to send notifications about the **assignment**. Default value is null.
+This article describes how to use the education API in Microsoft Graph to specify the default Microsoft Teams channel to which to send notifications about an **assignment**. Specifying the default channel involves building the **notificationChannelUrl** string property for an [educationAssignment](/graph/api/resources/educationassignment). The default value for this property is `null`.
 
 ## Prerequisites
 
 Before building the property, identify the corresponding team for the assignment and the name of the channel.
 
-To identify the team for the assignment, in the left menu in Teams, click Teams and then select the appropriate team.
+To identify the team for the assignment, in the left menu in Teams, click **Teams** and then select the appropriate team.
 
-![In the left vertical menu in Microsoft Teams, click on Teams option and select the desired team](./images/notificationchannel-team.png)
+![Screenshot of a team selected from the Teams navigation element](./images/notificationchannel-team.png)
 
 Identify the appropriate channel within the team that you selected.
 
-![Once you have selected the team, select the appropriate channel from the Channels section](./images/notificationchannel-channel.png)
+![Screenshot of a channel selected in a team](./images/notificationchannel-channel.png)
 
 ## Build the notificationChannelUrl property value
 
