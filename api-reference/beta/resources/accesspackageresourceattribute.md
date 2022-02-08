@@ -26,6 +26,16 @@ An access package resource attribute is the definition of a property that a user
 |isEditable|String| Specifies whether or not an existing attribute value can be edited by the requester.|
 |isPersistedOnAssignmentRemoval|Boolean| Specifies whether the attribute will remain in the end system after an assignment ends.|
 
+
+### accessPackageResourceAttribute resource type and extension properties
+
+The **attributeDestination**, **attributeName**, and **attributeSource** properties of an access package resource attribute relate to the [directory extension properties](extensionproperty.md).
+
+If the **attributeDestination** is an [accessPackageUserDirectoryAttributeStore](accesspackageuserdirectoryattributestore.md) object type, then the attribute indicated by **attributeName** must be a writable property of the [user](user.md) object. These writable properties are String types registered as [extension properties](extensionproperty.md) on the target **User** object.
+
+For example, suppose an application requires two user attributes, a user's job title, and their personal title. The values of these attributes could be synchronized to Azure AD from the on-premises Active Directory **jobTitle** and **personalTitle** attributes. Because **personalTitle** is not one of the default properties of the [user](user.md) object, this would require [creating a directory schema extension](../api/application-post-extensionproperty.md) to add the **personalTitle** property to the user object type. When creating a resource request for the application, you can include two access package resource attributes, one for the user property **jobTitle**, and another with the name of the directory schema extension property that was created for the personal title, such as `extension_2b676109c7c74ae2b41549205f1947ed_personalTitle`.
+
+If the **attributeSource** of the attribute is an [accessPackageResourceAttributeQuestion](accesspackageresourceattributequestion.md), then the requestor's supplied value is stored as provided on the user object, and made available to the application and other Microsoft Graph clients.
 ## Relationships
 None.
 
