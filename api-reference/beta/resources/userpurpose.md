@@ -24,7 +24,6 @@ The purpose of the mailbox. Used to differentiate a mailbox for a single user fr
 ### userPurpose values
 |Member|Description|
 |:---------------|:--------|
-|unknown|No information found about the mailbox.|
 |user|A user account with a mailbox in the local forest.|
 |linked|A mailbox linked to a user account in another forest.|
 |shared|A mailbox shared by two or more user accounts.|
