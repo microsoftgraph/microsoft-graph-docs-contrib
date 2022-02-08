@@ -11,6 +11,21 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
 ### accessPackageFilterByCurrentUserOptions values
 
 |Member|
@@ -921,6 +936,20 @@ Namespace: microsoft.graph
 |:---|
 |allow|
 |block|
+|unknownFutureValue|
+
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
 |unknownFutureValue|
 
 ### anniversaryType values
@@ -2658,7 +2687,6 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |or|
 |and|
-
 
 ### subjectRightsRequestStage values 
 

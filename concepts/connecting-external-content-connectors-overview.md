@@ -34,5 +34,3 @@ While these connectors help connect to popular services, you may want to integra
 * [Working with the connectors API](connecting-external-content-connectors-api-overview.md)
 * [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
 * [Build your first custom Microsoft Graph connector](connecting-external-content-build-quickstart.yml)
---->
-
