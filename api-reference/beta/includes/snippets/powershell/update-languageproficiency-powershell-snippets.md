@@ -10,6 +10,7 @@ $params = @{
 	AllowedAudiences = "organization"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId -BodyParameter $params
 
 ```

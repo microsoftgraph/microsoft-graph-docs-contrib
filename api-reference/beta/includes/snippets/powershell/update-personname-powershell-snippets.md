@@ -10,6 +10,7 @@ $params = @{
 	Nickname = "Kesha"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserProfileName -UserId $userId -PersonNameId $personNameId -BodyParameter $params
 
 ```
