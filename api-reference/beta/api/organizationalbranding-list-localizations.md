@@ -124,7 +124,7 @@ Content-Type: application/json
             "loginPageTextVisibilitySettings": {
               "hideCannotAccessYourAccount": false,
               "hideForgotMyPassword": false,
-              "hideResetItNow": false
+              "hideResetItNow": false,
               "hideTermsOfUse": true,
               "hidePrivacyAndCookies": true,
             }
