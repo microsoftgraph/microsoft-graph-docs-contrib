@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/incompatibleAccessPackages
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
 ```
 
 ## Optional query parameters

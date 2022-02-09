@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 [!INCLUDE [sample-code](../includes/snippets/go/get-ownedobjects-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-ownedobjects-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global Reader
 * Authentication Policy Administrator
@@ -100,28 +100,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
-      "id":"Fido2",
-      "state":"enabled",
-      "isSelfServiceRegistrationAllowed":true,
-      "isAttestationEnforced":true,
-      "keyRestrictions":{
-         "isEnforced":false,
-         "enforcementType":"block",
-         "aaGuids":[
-            
-         ]
-      },
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

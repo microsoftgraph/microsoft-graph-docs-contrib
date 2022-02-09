@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "get_bookingbusiness"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmicrosoft.com
+GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicrosoft.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusiness-csharp-snippets.md)]
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmi
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusiness-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -87,7 +91,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses/$entity",
-    "id":"Fabrikam@M365B489948.onmicrosoft.com",
+    "id":"Fabrikam@contoso.onmicrosoft.com",
     "displayName":"Fabrikam",
     "businessType":"",
     "phone":"206-555-0100",

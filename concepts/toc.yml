@@ -183,7 +183,7 @@ items:
           - name: Manage items
             href: connecting-external-content-manage-items.md
           - name: External groups
-            href: connecting-external-content-external-groups.md            
+            href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
@@ -256,9 +256,15 @@ items:
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
+          - name: Specify the default channel for assignment notifications
+            href: education-build-notificationchannelurl.md            
       - name: Files
-        href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+        items:
+          - name: Overview
+            href: onedrive-concept-overview.md
+          - name: Addressing drive items
+            href: onedrive-addressing-driveitems.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central
@@ -269,7 +275,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Assign custom security attributes (preview)
+              - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
@@ -346,7 +352,7 @@ items:
                 href: onenote-branding.md
               - name: Error codes
                 href: onenote-error-codes.md
-      - name: Notifications (preview)
+      - name: Notifications (deprecated)
         displayName: Notifications
         items:
           - name: Overview
@@ -374,6 +380,8 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Customize people insights privacy (preview)
+            href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
           - name: Item insights overview
@@ -534,7 +542,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md

@@ -1,9 +1,9 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
-author: "Jordanndahl"
+author: "Harini84"
 ms.localizationpriority: high
-ms.prod: "groups"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-events-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-events-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

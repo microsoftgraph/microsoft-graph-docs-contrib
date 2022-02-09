@@ -73,6 +73,8 @@ The following example adds a new custom security attribute definition that is a 
 + Attribute: `ProjectDate`
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition"
@@ -93,6 +95,32 @@ Content-Type: application/json
     "usePreDefinedValuesOnly": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-customsecurityattributedefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 <!-- {
@@ -128,6 +156,8 @@ The following example adds a new custom security attribute definition that suppo
 + Attribute: `Project`
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customsecurityattributedefinition_v2"
@@ -147,6 +177,104 @@ Content-length: 310
     "status":"Available",
     "type":"String",
     "usePreDefinedValuesOnly": true
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-customsecurityattributedefinition-v2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customsecurityattributedefinition-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-customsecurityattributedefinition-v2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-customsecurityattributedefinition-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-v2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-v2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customSecurityAttributeDefinition"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/customSecurityAttributeDefinitions/$entity",
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "id": "Engineering_Project",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true
+}
+```
+
+### Example 3: Add a custom security attribute with a list of predefined values
+
+The following example adds a new custom security attribute definition with a list of predefined values as a collection of strings.
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Predefined values: `Alpine`, `Baker`, `Cascade`
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_customsecurityattributedefinition_allowedvalues"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions
+Content-Type: application/json
+
+{
+    "attributeSet": "Engineering",
+    "description": "Active projects for user",
+    "isCollection": true,
+    "isSearchable": true,
+    "name": "Project",
+    "status": "Available",
+    "type": "String",
+    "usePreDefinedValuesOnly": true,
+    "allowedValues": [
+        {
+            "id": "Alpine",
+            "isActive": true
+        },
+        {
+            "id": "Baker",
+            "isActive": true
+        },
+        {
+            "id": "Cascade",
+            "isActive": true
+        }
+    ]
 }
 ```
 

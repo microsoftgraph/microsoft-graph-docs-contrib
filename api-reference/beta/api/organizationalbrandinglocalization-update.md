@@ -33,7 +33,7 @@ Only Stream data types, including **backgroundLogo** and **backgroundImage**, ar
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
-PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
+PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{backgroundImage | bannerLogo | squareLogo}
 ```
 
 ## Request headers
@@ -88,33 +88,17 @@ The following request updates the banner logo for the fr-FR localization.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR/bannerLogo
 Content-Type: image/jpeg
 
 <Image>
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocalization-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocalization-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandinglocalization-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
 
@@ -141,7 +125,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocalization6"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 
@@ -194,7 +178,7 @@ The following is an example of the request.
   "name": "update_organizationalbrandinglocalization7"
 }-->
 
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 Content-Type: application/json
 

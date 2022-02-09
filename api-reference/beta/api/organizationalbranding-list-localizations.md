@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "list_organizationalbrandinglocalization"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/localizations/
 ```
 # [C#](#tab/csharp)

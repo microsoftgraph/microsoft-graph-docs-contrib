@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
 [!INCLUDE [sample-code](../includes/snippets/go/get-permission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-permission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -98,10 +102,19 @@ Content-Type: application/json
 
 {
    "id":"1",
+   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
    "roles":[
       "read"
    ],
    "grantedToIdentities":[
+      {
+         "application":{
+            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+            "displayName":"Contoso Time Manager App"
+         }
+      }
+   ],
+   "grantedToIdentitiesV2":[
       {
          "application":{
             "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",

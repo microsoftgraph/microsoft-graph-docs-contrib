@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtCla
 [!INCLUDE [sample-code](../includes/snippets/go/list-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

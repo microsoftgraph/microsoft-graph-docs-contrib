@@ -19,8 +19,6 @@ responseStatus.SetResponse(&response)
 time, err := time.Parse(time.RFC3339, "datetime-value")
 responseStatus.SetTime(&time)
 requestBody.SetRecurrence(nil)
-iCalUId := "iCalUId-value"
-requestBody.SetICalUId(&iCalUId)
 reminderMinutesBeforeStart := int32(99)
 requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isOnlineMeeting := true
