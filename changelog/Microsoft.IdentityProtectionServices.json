@@ -71,7 +71,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "riskyServicePrincipalHistoryItem",
 				"ChangeType": "Addition",
-				"Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource",
+				"Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource and related methods. Use this API to retrieve the risk history of an Azure AD service principal as determined by Azure AD Identity Protection.",
 				"Target": "riskyServicePrincipalHistoryItem"
 			  },
 			  {
