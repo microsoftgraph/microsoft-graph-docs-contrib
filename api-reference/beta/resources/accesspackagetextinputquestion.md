@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A child of **accessPackageQuestion** that has text input as an answer.
+A child of **accessPackageQuestion** that has text input as an answer.  This is used in the **questions** property of an [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) and inside an [accessPackageResourceAttribute](accesspackageresourceattribute.md) of an access package resource.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 

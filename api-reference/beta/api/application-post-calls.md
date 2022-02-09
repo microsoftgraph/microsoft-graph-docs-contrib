@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Notes:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
 >
-> Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
