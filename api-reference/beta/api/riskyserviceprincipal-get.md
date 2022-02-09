@@ -49,50 +49,7 @@ If successful, this method returns a `200 OK` response code and a [riskyServiceP
 
 ## Examples
 
-### Example 1: List risky service principals
-#### Request
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_riskyserviceprincipal"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals
-```
-
-
-### Response
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyServicePrincipal"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.riskyServicePrincipal",
-    "id": "9089a539-a539-9089-39a5-899039a58990",
-    "accountEnabled": true,
-    "isProcessing": false,
-    "riskLastUpdatedDateTime": "2021-08-14T13:06:51.0451374Z",
-    "riskLevel": "high",
-    "riskState": "atRisk",
-    "riskDetail": "none",
-    "displayName": "Contoso App",
-    "appId": "b55552fe-a272-4b56-990b-95038d917878",
-    "servicePrincipalType": "Application"
-  }
-}
-```
-
-### Example 2: List a filtered set of risky service principals
-#### Request
-The following example shows how to use `$filter` to get the collection of riskyServicePrincipal objects whose aggregate risk level is `high`.
+### Request
 <!-- {
   "blockType": "request",
   "name": "get_riskyserviceprincipal"
@@ -100,7 +57,7 @@ The following example shows how to use `$filter` to get the collection of riskyS
 -->
 
  ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'high'
+GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/9089a539-a539-9089-39a5-899039a58990
 ```
 
 

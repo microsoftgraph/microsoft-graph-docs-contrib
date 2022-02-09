@@ -31,7 +31,7 @@ Represents the risk activity of an Azure AD service principal as determined by A
 ```json
 {
     "riskEventTypes": ["String"],
-    "detail": "string"
+    "detail": "String"
 }
 ```
 <!--
