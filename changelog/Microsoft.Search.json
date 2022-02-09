@@ -821,7 +821,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectionQuota",
           "ChangeType": "Addition",
-          "Description": "Added the [connectionQuota](https://docs.microsoft.com/en-us/graph/api/resources/connectionQuota?view=graph-rest-beta) resource",
+          "Description": "Added the [connectionQuota](https://docs.microsoft.com/en-us/graph/api/resources/connectionQuota?view=graph-rest-beta) resource and a supported method",
           "Target": "connectionQuota"
         },
         {
@@ -829,7 +829,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "ingestedItemsCount",
           "ChangeType": "Addition",
-          "Description": "Added the [ingestedItemsCount](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource",
+          "Description": "Added the **ingestedItemsCount** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
           "Target": "externalConnection"
         },
         {
@@ -837,7 +837,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "quota",
           "ChangeType": "Addition",
-          "Description": "Added the [quota](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource",
+          "Description": "Added the quota relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
           "Target": "externalConnection"
         }
       ],
@@ -845,9 +845,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-08T23:52:35.8265267Z",
-      "WorkloadArea": "Substrate Connectors",
+      "WorkloadArea": "Search",
       "SubArea": ""
     }
-
   ]
 }

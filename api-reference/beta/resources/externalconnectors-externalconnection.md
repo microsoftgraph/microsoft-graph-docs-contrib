@@ -19,15 +19,15 @@ A logical container to add content from an external source into Microsoft Graph.
 
 | Method                                                           | Return Type                                   | Description |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
-| [Create externalConnection](../api/externalconnectors-external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
-| [List externalConnections](../api/externalconnectors-externalconnection-list.md)    | externalConnection collection                 | Get an externalConnection object collection. |
-| [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of an externalConnection object. |
-| [Update externalConnection](../api/externalconnectors-externalconnection-update.md) | externalConnection                            | Update an externalConnection object. |
-| [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete an externalConnection object. |
+| [Create externalConnection](../api/externalconnectors-external-post-connections.md) | externalConnection                            | Create a new **externalConnection** by posting to the connections collection. |
+| [List externalConnections](../api/externalconnectors-externalconnection-list.md)    | externalConnection collection                 | Get an **externalConnection** object collection. |
+| [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of an **externalConnection** object. |
+| [Update externalConnection](../api/externalconnectors-externalconnection-update.md) | externalConnection                            | Update an **externalConnection** object. |
+| [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete an **externalConnection** object. |
 | [Create schema](../api/externalconnectors-externalconnection-post-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
 | [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)    | [externalItem](externalconnectors-externalitem.md)               | Create a new externalItem by posting to the items collection. |
-|[Get connectionQuota](../api/externalconnectors-connectionquota-get.md)|[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a connectionQuota. |
+|[Get connectionQuota](../api/externalconnectors-connectionquota-get.md)|[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
 
 ## Properties
 
