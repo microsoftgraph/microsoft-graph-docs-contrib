@@ -127,24 +127,6 @@
 		{
 			"ChangeList": [
 				{
-					"Id": "91d733d8-c9f6-425f-9da5-1d4ffc5e07b3",
-					"ApiChange": "Property",
-					"ChangedApiName": "servicePrincipalRiskLevels",
-					"ChangeType": "Addition",
-					"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy on service principals.",
-					"Target": "conditionalAccessConditionSet"
-				}
-			],
-			"Id": "91d733d8-c9f6-425f-9da5-1d4ffc5e07b3",
-			"Cloud": "Prod",
-			"Version": "beta",
-			"CreatedDateTime": "2022-01-06T00:00:00.000Z",
-			"WorkloadArea": "Identity and access",
-			"SubArea": "Identity and sign-in"
-		},
-		{
-			"ChangeList": [
-				{
 					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
 					"ApiChange": "Member",
 					"ChangedApiName": "ADFederationServicesMFAAdapter",
