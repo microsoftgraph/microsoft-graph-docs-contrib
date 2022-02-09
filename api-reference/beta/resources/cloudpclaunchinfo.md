@@ -1,9 +1,9 @@
 ---
 title: "cloudPcLaunchInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the Cloud PC launch info"
+author: "AndrewKuSZ"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the Cloud PC launch info
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|**TODO: Add Description**|
-|cloudPcLaunchUrl|String|**TODO: Add Description**|
+|cloudPcId|String|The unique identifier of the Cloud PC.|
+|cloudPcLaunchUrl|String|The launch url of the Cloud PC|
 
 ## Relationships
 None.
