@@ -115,7 +115,7 @@ Content-Type: application/json
             "customPrivacyAndCookiesUrl": "null",
             "customTermsOfUseText": "null",
             "customTermsOfUseUrl": "null",
-            "customResetItNowText": null,
+            "customResetItNowText": "null",
             "faviconRelativeUrl": "null",
             "headerBackgroundColor": "null",
             "signInPageText": "Contoso",
@@ -126,7 +126,7 @@ Content-Type: application/json
               "hideForgotMyPassword": false,
               "hideResetItNow": false,
               "hideTermsOfUse": true,
-              "hidePrivacyAndCookies": true,
+              "hidePrivacyAndCookies": true
             }
         },
         {
