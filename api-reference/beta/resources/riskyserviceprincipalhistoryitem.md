@@ -42,7 +42,7 @@ Represents the risk history of an Azure AD service principal as determined by Az
 {
     "servicePrincipalId": "String",
     "initiatedBy": "String",
-    "activity": {"@odata.type": "microsoft.graph.riskyServicePrincipalActivity"}
+    "activity": {"@odata.type": "microsoft.graph.riskServicePrincipalActivity"}
 }
 ```
 
