@@ -1,6 +1,6 @@
 ---
 title: "riskyServicePrincipalActivity resource type"
-description: author
+description: "Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection."
 author: "ebasseri"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
