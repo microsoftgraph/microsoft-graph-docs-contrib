@@ -148,7 +148,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAda
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(map[string]string{"Prefer": "outlook.body-content-type=\"text\""})
+pageIterator.SetHeaders(options.H)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
@@ -278,7 +278,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAda
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(map[string]string{"Prefer": "outlook.body-content-type=\"text\""})
+pageIterator.SetHeaders(options.H)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25
