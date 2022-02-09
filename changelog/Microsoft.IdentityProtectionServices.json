@@ -31,7 +31,7 @@
 				"ApiChange": "Resource",
 				"ChangedApiName": "riskServicePrincipalActivity",
 				"ChangeType": "Addition",
-				"Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource",
+				"Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource. Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection.",
 				"Target": "riskServicePrincipalActivity"
 			  },
 			  {
