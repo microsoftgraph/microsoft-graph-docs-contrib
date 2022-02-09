@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.localizationpriority: high
 ---
 
 # Microsoft Graph throttling guidance
@@ -82,7 +81,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
 
 >[!NOTE]
->[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+>[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
 
 ## Throttling and batching
 
@@ -205,9 +204,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
-| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 18,000 per 5 minutes |
+| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -242,6 +241,10 @@ The following table lists base request costs. Any requests not listed have a bas
 | PATCH | Any identity path not listed in the table | 1 | 1 |
 | PUT | Any identity path not listed in the table | 1 | 1 |
 | DELETE | Any identity path not listed in the table | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> The cost of POST, PATCH, and DELETE operations on the `applications` request path depends on the **signInAudience** type. For apps where the **signInAudience** is `AzureADMyOrg` or `AzureADMultipleOrgs`, the cost is 70,000 requests per 5 minutes; while for apps where the **signInAudience** is `AzureADandPersonalMicrosoftAccount` or `PersonalMicrosoftAccount`, the cost is 60 requests per minute.
 
 Other factors that affect a request cost:
 
@@ -290,7 +293,7 @@ Other factors that affect a request cost:
 
 | Request type |  Limit per app per tenant |
 | ------------ | ------------------------ |
-| Any | 60 requests per 60 seconds |
+| Any | 5 requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 
@@ -482,3 +485,11 @@ The preceding limits apply to the following resources:
 | <!-- fake header--> |
 |--|
 | <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+
+### Service Communications service limits
+The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
+
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 240 requests per 60 seconds |
+|Any | 800 requests per hour |

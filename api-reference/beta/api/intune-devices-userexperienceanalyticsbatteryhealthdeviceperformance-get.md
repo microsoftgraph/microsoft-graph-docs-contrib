@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 450
+Content-Length: 490
 
 {
   "value": {
@@ -72,14 +72,16 @@ Content-Length: 450
     "deviceId": "Device Id value",
     "deviceName": "Device Name value",
     "model": "Model value",
+    "manufacturer": "Manufacturer value",
     "maxCapacityPercentage": 5,
     "estimatedRuntimeInMinutes": 9,
     "batteryAgeInDays": 0,
     "deviceBatteryHealthScore": 8,
-    "healthStatus": "Health Status value"
+    "healthStatus": "insufficientData"
   }
 }
 ```
+
 
 
 

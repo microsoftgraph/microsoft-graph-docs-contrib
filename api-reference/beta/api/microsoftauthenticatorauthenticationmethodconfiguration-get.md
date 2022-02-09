@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global Reader
 * Authentication Policy Administrator
@@ -97,23 +97,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-    "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String",
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets", 
-    "includeTargets": [ 
-        { 
-            "targetType": "group", 
-            "id": "5c6226ca-d325-4972-9fa8-1861c91f74c0", 
-            "isRegistrationRequired": false, 
-            "authenticationMode": "any", 
-            "numberMatchingRequiredState": "default",
-            "displayLocationInformationRequiredState": "default",
-            "displayAppInformationRequiredState": "default"
-        } 
-    ] 
-  }
+    "id": "MicrosoftAuthenticator",
+    "state": "disabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "authenticationMode": "any",
+            "outlookMobileAllowedState": "default",
+            "displayAppInformationRequiredState": "default",
+            "numberMatchingRequiredState": "default"
+        }
+    ]
 }
 ```
 

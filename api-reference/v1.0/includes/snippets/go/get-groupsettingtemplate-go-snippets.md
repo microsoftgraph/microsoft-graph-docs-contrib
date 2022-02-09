@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupSettingTemplateId := "groupSettingTemplate-id"
-result, err := graphClient.GroupSettingTemplatesById(&groupSettingTemplateId).Get(options)
+result, err := graphClient.GroupSettingTemplatesById(&groupSettingTemplateId).Get(nil)
 
 
 ```

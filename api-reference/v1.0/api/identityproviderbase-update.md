@@ -148,6 +148,7 @@ PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-
 Content-type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "displayName": "Apple"
 }
 ```

@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Delegated (personal Microsoft account) | Not supported.                                                   |
-| Application                            | Not supported.                                                   |
+| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## HTTP request
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontent-coloricon-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamsappicon-get-hostedcontent-coloricon-value-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

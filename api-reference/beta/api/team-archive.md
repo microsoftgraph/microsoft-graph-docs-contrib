@@ -19,7 +19,7 @@ Membership changes to the team continue to be allowed.
 
 Archiving is an async operation. A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
-In order to archive team, the team and [group](../resources/group.md) must have an owner.
+To archive a team, the team and [group](../resources/group.md) must have an owner.
 
 To restore a team from its archived state, use the API to [unarchive](team-unarchive.md).
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use different permissions and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -60,7 +60,7 @@ This optional parameter defines whether to set permissions for team members to r
 If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Example
-#### Request
+### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -91,9 +91,13 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 [!INCLUDE [sample-code](../includes/snippets/go/archive-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/archive-team-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+### Response
 The following is an example of a response.
 <!-- {
   "blockType": "response",
@@ -117,5 +121,3 @@ Content-Length: 0
   "suppressions": []
 }
 -->
-
-

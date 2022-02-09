@@ -26,7 +26,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 | Supported values for resourceProvisioningOptions   |Description| Default if not set |
 |:---------------|:--------|:------------|
-| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group.| The group is a regular Microsoft 365 group without Teams capabilities.|
+| Team|Provision this group as a team in Microsoft Teams. Additionally, this value can also be added on [group update](/graph/api/group-update) through a `PATCH` operation, in order to provision a team from an existing Microsoft 365 group.| The group is a regular Microsoft 365 group without Teams capabilities.|
 
 
 ## See also
