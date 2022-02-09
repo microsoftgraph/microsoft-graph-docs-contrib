@@ -100,32 +100,6 @@
 		  },
 		{
 			"ChangeList": [
-			  {
-				"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
-				"ApiChange": "Member",
-				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
-				"ChangeType": "Addition",
-				"Description": "Added the [adminConfirmedServicePrincipalCompromised](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-				"Target": "riskDetail"
-			  },
-			  {
-				"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
-				"ApiChange": "Member",
-				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
-				"ChangeType": "Addition",
-				"Description": "Added the [adminDismissedAllRiskForServicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-				"Target": "riskDetail"
-			  }
-			],
-			"Id": "34997413-71c5-40d7-b64b-c9415c6ddf33",
-			"Cloud": "Prod",
-			"Version": "beta",
-			"CreatedDateTime": "2022-02-03T18:21:07.2690735Z",
-			"WorkloadArea": "Reports and audit",
-			"SubArea": "Identity and access reports"
-		  },
-		{
-			"ChangeList": [
 				{
 					"Id": "3e561e90-bb23-498e-970c-4e1d562d4b3d",
 					"ApiChange": "Member",
