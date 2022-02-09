@@ -33,7 +33,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |:---|:---|:---|
 |activity|activityType|Indicates the activity type the detected risk is linked to. The possible values are: `signin`,`unknownFutureValue`, `servicePrincipal`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipal`.|
 |activityDateTime|DateTimeOffset|Date and time when the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|additionalInfo|String|Additional information associated with the risk detection in JSON format.|
+|additionalInfo|String|Additional information associated with the risk detection. This string value is represented as a JSON object with the quotations escaped. |
 |appId|String|The unique identifier for the associated application.|
 |correlationId|String|Correlation ID of the sign-in activity associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in activity.|
 |detectedDateTime|DateTimeOffset|Date and time when the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
