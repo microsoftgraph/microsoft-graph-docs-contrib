@@ -11713,9 +11713,9 @@ items:
             items:
             - name: Risk detection
               href: resources/serviceprincipalriskdetection.md
-            - name: List risk detections
+            - name: List
               href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
-            - name: Get risk detection
+            - name: Get
               href: api/serviceprincipalriskdetection-get.md
           - name: Risky service principal
             items:
