@@ -84,6 +84,7 @@ The following is a JSON representation of the resource.
   ],
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
+  "customCannotAccessYourAccountUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
