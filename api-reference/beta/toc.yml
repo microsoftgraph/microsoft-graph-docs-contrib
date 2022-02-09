@@ -10068,6 +10068,10 @@ items:
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
+          - name: List my cloudPCs
+            href: api/user-list-cloudpcs.md
+          - name: Get my Cloud PC launch info
+            href: api/cloudpc-getcloudpclaunchinfo.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
