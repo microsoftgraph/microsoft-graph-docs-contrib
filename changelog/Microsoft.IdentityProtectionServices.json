@@ -60,28 +60,44 @@
 			  },
 			  {
 				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
-				"ApiChange": "Resource",
-				"ChangedApiName": "servicePrincipalRiskDetection",
-				"ChangeType": "Addition",
-				"Description": "Added the [servicePrincipalRiskDetection](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource",
-				"Target": "servicePrincipalRiskDetection"
-			  },
-			  {
-				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
 				"ApiChange": "Method",
 				"ChangedApiName": "confirmCompromised",
 				"ChangeType": "Addition",
-				"Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) resource",
-				"Target": "confirmCompromised"
+				"Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
 			  },
 			  {
 				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
 				"ApiChange": "Method",
 				"ChangedApiName": "dismiss",
 				"ChangeType": "Addition",
-				"Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/dismiss?view=graph-rest-beta) resource",
-				"Target": "dismiss"
-			  }
+				"Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Property",
+				"ChangedApiName": "servicePrincipalRiskLevels",
+				"ChangeType": "Addition",
+				"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy for service principals in their Azure AD tenant.",
+				"Target": "conditionalAccessConditionSet"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.Read.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals' risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.Read.All` to the read operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Target": "identityProtectionRoot"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.ReadWrite.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.ReadWrite.All` to the read and write operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-v1.0) APIs.",
+				"Target": "identityProtectionRoot"
+			}
 			],
 			"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
 			"Cloud": "Prod",
