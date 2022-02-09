@@ -7,7 +7,7 @@
 				"ApiChange": "Member",
 				"ChangedApiName": "servicePrincipal",
 				"ChangeType": "Addition",
-				"Description": "Added the [servicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Description": "Added the `servicePrincipal` member to the **activityType** enumeration.",
 				"Target": "activityType"
 			  },
 			  {
@@ -15,7 +15,7 @@
 				"ApiChange": "Member",
 				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
 				"ChangeType": "Addition",
-				"Description": "Added the [adminConfirmedServicePrincipalCompromised](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
 				"Target": "riskDetail"
 			  },
 			  {
@@ -23,7 +23,7 @@
 				"ApiChange": "Member",
 				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
 				"ChangeType": "Addition",
-				"Description": "Added the [adminDismissedAllRiskForServicePrincipal](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
 				"Target": "riskDetail"
 			  },
 			  {
