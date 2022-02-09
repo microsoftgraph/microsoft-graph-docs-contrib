@@ -14,8 +14,10 @@ The Microsoft Graph query engine uses an index store to fulfill query requests. 
 
 For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
+<!-- markdownlint-disable MD023 MD025 -->
 + Option 1: Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
 
+    # [HTTP](#tab/http)
     <!-- {
       "blockType": "request",
       "name": "get_users_enabled"
@@ -23,6 +25,78 @@ For example, if you wish to retrieve only inactive user accounts, you can run ei
     ```msgraph-interactive
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
     ```
+
+    # [C#](#tab/csharp)
+
+    ```csharp
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=CS
+    var user = await graphClient.Users.Request()
+        .Filter("accountEnabled eq false")
+        .GetAsync();
+    ```
+
+    # [JavaScript](#tab/javascript)
+
+    ```javascript
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Javascript
+    let users = await client.api('/users')
+      .filter('accountEnabled eq false')
+      .get();
+    ```
+
+    # [Objective-C](#tab/objc)
+
+    ```objectivec
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Objective-C
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users?$filter=accountEnabled eq false"]]];
+    [urlRequest setHTTPMethod:@"GET"];
+
+    MSURLSessionDataTask *usersDataTask = [httpClient dataTaskWithRequest:urlRequest
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+      NSError *jsonError = nil;
+      MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+      MSGraphUser *user = [[MSGraphUser alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+
+    }];
+
+    [usersDataTask execute];
+    ```
+
+    # [Java](#tab/java)
+
+    ```java
+    // See https://docs.microsoft.com/en-us/graph/sdks/create-client?tabs=Java
+    UserCollectionPage users = graphClient.users()
+        .buildRequest()
+        .filter("accountEnabled eq false")
+        .get();
+    ```
+
+    # [Go](#tab/go)
+
+    ```go
+    // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
+    requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
+        Filter: "accountEnabled eq false",
+    }
+
+    options := &msgraphsdk.UsersRequestBuilderGetOptions{
+        Q: requestParameters,
+    }
+
+    result, err := client.Users().Get(options)
+    ```
+
+    # [PowerShell](#tab/powershell)
+
+    ```powershell
+    Import-Module Microsoft.Graph.Users
+
+    Get-MgUser -Filter "accountEnabled eq false"
+    ```
+
+    ---
 
 + Option 2: Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
@@ -34,6 +108,8 @@ For example, if you wish to retrieve only inactive user accounts, you can run ei
     GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
     ConsistencyLevel: eventual
     ```
+
+<!-- markdownlint-enable MD023 MD025 -->
 
 These advanced query capabilities are supported only on Azure AD directory objects and their relationships, including the following frequently used objects:
 
