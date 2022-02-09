@@ -39,6 +39,7 @@ None.
 | customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be Unicode and not exceed 128 characters. |
 | customCannotAccessYourAccountText | String | String to replace the display text for the "Can’t access your account” hyperlink inside of the sign-in form (username collection screen). This text must be Unicode and not exceed 256 characters. |
 | customForgotMyPasswordText | String | String to replace the default display text of "Forgot my password" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
+| customResetItNowText | String | String to replace the default display text of "reset it now" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
 | customPrivacyAndCookiesUrl | String | String of custom URL to replace the default value of the Privacy and Cookies Url in the footer.This text must be Unicode and not exceed 128 characters. |
 | customPrivacyAndCookiesText | String | String to replace a default value of the Privacy and Cookies URL display text in the footer.This text must be Unicode and not exceed 256 characters. |
 | customTermsOfUseUrl | String | String of custom URL to replace the default value of the Terms of Use URL in the footer. This text must be Unicode and not exceed 128characters. |

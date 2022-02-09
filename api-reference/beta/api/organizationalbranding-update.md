@@ -52,7 +52,9 @@ The following tables specifiy the properties that can be updated.
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be Unicode and not exceed 128 characters. |
 | customCannotAccessYourAccountText | String | String to replace the display text for the "Can’t access your account” hyperlink inside of the sign-in form (username collection screen). This text must be Unicode and not exceed 256 characters. |
+| customCannotAccessYourAccountUrl | String | String of custom URL to replace the default value of "Can’t access your account” destination URL. This text must be Unicode and not exceed 128 characters. |
 | customForgotMyPasswordText | String | String to replace the default display text of "Forgot my password" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
+| customResetItNowTextText | String | String to replace the default display text of "reset it now" hyperlink inside of the sign-in form (password collection screen). This text must be Unicode and not exceed 256 characters. |
 | customPrivacyAndCookiesUrl | String | String of custom URL to replace the default value of the Privacy and Cookies Url in the footer.This text must be Unicode and not exceed 128 characters. |
 | customPrivacyAndCookiesText | String | String to replace a default value of the Privacy and Cookies URL display text in the footer.This text must be Unicode and not exceed 256 characters. |
 | customTermsOfUseUrl | String | String of custom URL to replace the default value of the Terms of Use URL in the footer. This text must be Unicode and not exceed 128characters. |
@@ -60,7 +62,9 @@ The following tables specifiy the properties that can be updated.
 | favicon | Stream | A custom browser icon (favicon) to replace a default “Microsoft logo” value utilizing AAD Company Branding blade. |
 | headerBackgroundColor | String | String containing RGB color that will enable admins customize the color of the header. |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | This is a complex type that represents the various texts that can be hidden on the login page for a tenant. |
-| hideAccountResetCredentials | Boolean | Option to hide the self service password reset (SSPR) hyperlinks such as “Can’t access your account”, "Forgot my password" and "reset it now" inside of the sign-in form. |
+| hideCannotAccessYourAccount | Boolean | Option to hide the self service password reset (SSPR) hyperlink “Can’t access your account” inside of the sign-in form (account collection sceen). |
+| hideForgotMyPassword | Boolean | Option to hide the self service password reset (SSPR) hyperlink “Forgot my password” inside of the sign-in form (password collection sceen). |
+| hideResetItNow | Boolean | Option to hide the self service password reset (SSPR) hyperlink “reset it now” inside of the sign-in form (password collection sceen). |
 | hideTermsOfUse | Boolean | Option to hide “Terms of Use” hyperlink in the footer. |
 | hidePrivacyAndCookies | Boolean | Option to hide "Microsoft Privacy & Cookies" URL in the footer. |
 | signInPageText | String | Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters. |
