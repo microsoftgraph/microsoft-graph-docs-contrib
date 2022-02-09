@@ -27,7 +27,7 @@ Represents the risk history of an Azure AD service principal as determined by Az
 |:---------------|:--------|:------------|
 | servicePrincipalId         | string  | The identifier of the service principal. |
 | initiatedBy    | bool    | The identifier of the actor of the operation. |
-| activity       | [riskyServicePrincipalActivity](riskyserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
+| activity       | [riskServicePrincipalActivity](riskserviceprincipalactivity.md)| The activity related to service principal risk level change. | 
 
 ## JSON representation
 
