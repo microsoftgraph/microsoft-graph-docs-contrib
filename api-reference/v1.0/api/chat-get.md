@@ -273,6 +273,50 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Get the meeting details of a chat associated with a Microsoft Teams meeting
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_meeting_chat"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/chats/19:meeting_ZDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2
+```
+
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "19:meeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4@thread.v2",
+    "topic": "Test Meeting",
+    "createdDateTime": "2021-08-17T12:21:37.322Z",
+    "lastUpdatedDateTime": "2021-08-18T00:31:31.817Z",
+    "chatType": "meeting",
+    "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d35",
+    "onlineMeetingInfo": {
+        "calendarEventId": "AAMkADAzMjNhY2NiLWVmNDItNDVjYS05MnFjLTExY2U0ZWMyZTNmZQBGAAAAAAARDMODhhR0TZRGWo9nN0NcBwAmvYmLhDvYR6hCFdQLgxR-AAAAAAENAAAmvYmLhDvYR6hCFdQLgxR-AABkrglJAAA=",
+        "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YDZlYTYxOWUtYzdlMi00ZmMxLWIxMTAtN2YzODZlZjAxYzI4%40thread.v2/0?context=%7b%22Tid%22%3a%222432b57b-0abd-43db-aa7b-16eadd115d34%22%2c%22Oid%22%3a%22bfb5bb25-3a8d-487d-9828-7875ced51a30%22%7d",
+        "organizer": {
+            "id": "bfb5bb25-3a8d-487d-9828-7875ced51a30",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
