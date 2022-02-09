@@ -71,6 +71,7 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,7 +83,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+  "value": [
+    {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
     "requestId": null,
@@ -107,7 +109,8 @@ Content-Type: application/json
       "9d9fea30-d8e3-481b-b57c-0ef569a989e5"
     ],
     "additionalInfo": "[{\"Key\":\"alertUrl\",\"Value\":null}]"
-  }
+    }
+  ]
 }
 ```
 
@@ -131,7 +134,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipalRiskDetection"
+  "@odata.type": "Collection(microsoft.graph.servicePrincipalRiskDetection)"
 }
 -->
 ``` http
@@ -139,7 +142,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+  "value": [
+    {
     "@odata.type": "#microsoft.graph.servicePrincipalRiskDetection",
     "id": "2856d6e87c5c3a74021ff70291fa68107570c150d8dc145bdea5",
     "requestId": null,
@@ -164,6 +168,7 @@ Content-Type: application/json
       "9d9fea30-d8e3-481b-b57c-0ef569a989e5"
     ],
     "additionalInfo": "[{\"Key\":\"alertUrl\",\"Value\":null}]"
-  }
+    }
+  ]
 }
 ```
