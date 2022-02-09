@@ -113,19 +113,24 @@ Content-Type: application/json
     ],
     "customAccountResetCredentialsUrl": "null",
     "customCannotAccessYourAccountText": "null",
+    "customCannotAccessYourAccountUrl": "null",
     "customForgotMyPasswordText": "null",
     "customPrivacyAndCookiesText": "null",
     "customPrivacyAndCookiesUrl": "null",
     "customTermsOfUseText": "null",
     "customTermsOfUseUrl": "null",
+    "customResetItNowText": null,
     "faviconRelativeUrl": "null",
     "headerBackgroundColor": "null",
-    "signInPageText": "Welcome to Contoso France",
-    "usernameHintText": "Welcome to Contoso France",
+    "signInPageText": "Contoso",
+    "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "usernameHintText": "",
     "loginPageTextVisibilitySettings": {
-      "hideAccountResetCredentials": false,
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false
       "hideTermsOfUse": true,
-      "hidePrivacyAndCookies": true
+      "hidePrivacyAndCookies": true,
     }
 }
 ```
