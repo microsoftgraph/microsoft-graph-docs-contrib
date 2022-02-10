@@ -19,7 +19,7 @@ This is a complex type that represents the various texts that can be hidden on t
 
 |Property|Type|Description|
 |:---|:---|:---|
-| hideCannotAccessYourAccount | Boolean | Option to hide the self-service password reset (SSPR) "Can't access your account" hyperlink on the sign-in form. |
+| hideCannotAccessYourAccount | Boolean | Option to hide the self-service password reset (SSPR) "Can't access your account?" hyperlink on the sign-in form. |
 | hideForgotMyPassword | Boolean | Option to hide the self-service password reset (SSPR) "Forgot my password" hyperlink on the sign-in form. |
 | hideResetItNow | Boolean | Option to hide the self-service password reset (SSPR) "reset it now" hyperlink on the sign-in form. |
 | hideTermsOfUse | Boolean | Option to hide the "Terms of Use" hyperlink in the footer. |
