@@ -68,8 +68,7 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationDefault"
+  "truncated": true
 }
 -->
 
