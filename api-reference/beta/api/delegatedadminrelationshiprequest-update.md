@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminRelationshipRequest"
 description: "Update the properties of a delegatedAdminRelationshipRequest object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType
@@ -45,10 +45,10 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description** Required.|
-|status|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|action|String|The action to be performed on the delegated admin relationship. Required.|
+|status|String|The status of the request. Optional.|
+|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the relationship request was created in UTC. This is set by the system and cannot be set by the caller. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship request was last modified in UTC. This is set by the system and cannot be set by the caller. Optional.|
 
 
 

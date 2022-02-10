@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminOperation"
 description: "Read the properties and relationships of a delegatedAdminOperation object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

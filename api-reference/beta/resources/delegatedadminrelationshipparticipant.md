@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipParticipant resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "Contains details of a participant in a Delegated Admin relationship."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains details of a participant in a Delegated Admin relationship.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description**|
+|tenantId|String|The tenant ID of the participant in the relationship. Must be a valid tenant ID as in AAD.|
 
 ## Relationships
 None.

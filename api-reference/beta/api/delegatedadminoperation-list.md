@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminOperations"
 description: "Get a list of the delegatedAdminOperation objects and their properties."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

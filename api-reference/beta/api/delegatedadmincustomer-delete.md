@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedAdminCustomer"
 description: "Deletes a delegatedAdminCustomer object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

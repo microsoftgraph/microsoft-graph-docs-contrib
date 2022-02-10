@@ -1,7 +1,7 @@
 ---
 title: "List operations"
 description: "Get the delegatedAdminOperation resources from the operations navigation property."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

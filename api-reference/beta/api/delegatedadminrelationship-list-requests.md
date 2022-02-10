@@ -1,7 +1,7 @@
 ---
 title: "List requests"
 description: "Get the delegatedAdminRelationshipRequest resources from the requests navigation property."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

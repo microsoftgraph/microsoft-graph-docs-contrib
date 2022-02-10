@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminAccessDetails resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "Represents access details for a delegated admin relationship and delegated admin access assignment."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents access details for a delegated admin relationship and delegated admin access assignment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|unifiedRoles|[unifiedRole](../resources/unifiedrole.md) collection|**TODO: Add Description**|
+|unifiedRoles|[unifiedRole](../resources/unifiedrole.md) collection|The directory roles specified for access.|
 
 ## Relationships
 None.

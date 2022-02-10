@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminOperation"
 description: "Update the properties of a delegatedAdminOperation object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType
@@ -45,12 +45,9 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|operationType|String|**TODO: Add Description** Required.|
-|data|String|**TODO: Add Description** Required.|
-|status|String|**TODO: Add Description** Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-
+|operationType|String|The type of long running operation. This is set by the system and cannot be set by the caller. Required.|
+|data|String|The data (payload) for the operation. Required.|
+|status|String|The status of the operation. Required.|
 
 
 ## Response

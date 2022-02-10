@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminCustomer"
 description: "Read the properties and relationships of a delegatedAdminCustomer object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

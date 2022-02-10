@@ -1,7 +1,7 @@
 ---
 title: "Create delegatedAdminRelationshipRequest"
 description: "Create a new delegatedAdminRelationshipRequest object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType
@@ -46,11 +46,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description** Required.|
-|status|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
+|action|String|The action to be performed on the delegated admin relationship. Required.|
 
 
 ## Response

@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

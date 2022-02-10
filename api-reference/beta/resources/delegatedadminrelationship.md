@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationship resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "Represents the partner view of a delegated admin relationship between a partner and customer."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the partner view of a delegated admin relationship between a partner and customer.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminRelationships](../api/delegatedadminrelationship-list.md)|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md) collection|Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.|
+|[List delegatedAdminRelationships](../api/tenantrelationship-list-delegatedadminrelationships.md)|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md) collection|Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.|
 |[Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|Create a new [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object.|
 |[Get delegatedAdminRelationship](../api/delegatedadminrelationship-get.md)|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|Read the properties and relationships of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object.|
 |[Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)|[delegatedAdminRelationship](../resources/delegatedadminrelationship.md)|Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object.|
@@ -33,24 +33,24 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|**TODO: Add Description**|
-|activatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|**TODO: Add Description**|
-|duration|Duration|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|partner|[delegatedAdminRelationshipParticipant](../resources/delegatedadminrelationshipparticipant.md)|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
+|activatedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship became active in UTC. This is set by the system and cannot be set by the caller.|
+|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was created in UTC. This is set by the system and cannot be set by the caller.|
+|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the "approvalPending" status or beyond.|
+|duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive.|
+|endDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship either terminated or expired, or in the case of an active relationship, the date and time at which it is *scheduled* to expire (i.e., endDateTime = activatedDateTime + duration) in UTC. This is set by the system and cannot be set by the caller.|
+|id|String|The unique identifier of the relationship. This is set by the system and cannot be set by the caller.|
+|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was last modified in UTC. This is set by the system and cannot be set by the caller.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the "approvalPending" status or beyond. Must be unique across all relationships from the partner for the customer.|
+|partner|[delegatedAdminRelationshipParticipant](../resources/delegatedadminrelationshipparticipant.md)|The information of the partner of the relationship. This is set by the partner and cannot be changed by the customer.|
+|status|String|The status of the relationship.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|**TODO: Add Description**|
-|operations|[delegatedAdminOperation](../resources/delegatedadminoperation.md) collection|**TODO: Add Description**|
-|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|**TODO: Add Description**|
+|accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|The access assignments associated with the Delegated Admin relationship.|
+|operations|[delegatedAdminOperation](../resources/delegatedadminoperation.md) collection|The long running operations associated with the Delegated Admin relationship.|
+|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the Delegated Admin relationship.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

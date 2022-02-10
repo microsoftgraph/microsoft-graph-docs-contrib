@@ -1,7 +1,7 @@
 ---
 title: "Create delegatedAdminAccessAssignment"
 description: "Create a new delegatedAdminAccessAssignment object."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType
@@ -46,11 +46,8 @@ You can specify the following properties when creating a **delegatedAdminAccessA
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|**TODO: Add Description** Optional.|
-|accessContainer|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|**TODO: Add Description** Required.|
-|accessDetails|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|**TODO: Add Description** Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|accessContainer|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
+|accessDetails|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
 
 
 
@@ -73,7 +70,6 @@ Content-length: 316
 
 {
   "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment",
-  "status": "String",
   "accessContainer": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
   },

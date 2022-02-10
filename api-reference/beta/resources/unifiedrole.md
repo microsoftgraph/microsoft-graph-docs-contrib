@@ -1,24 +1,23 @@
 ---
 title: "unifiedRole resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "The directory roles specified for access."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
 ---
 
 # unifiedRole resource type
-
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-**TODO: Add Description**
+The directory roles specified for access.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roleDefinitionId|String|**TODO: Add Description**|
+|roleDefinitionId|String|The unified role definition ID of the role.|
 
 ## Relationships
 None.

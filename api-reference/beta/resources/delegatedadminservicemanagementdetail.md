@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "Contains the management details of a Delegated Admin service."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains the management details of a Delegated Admin service.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|serviceId|String|**TODO: Add Description**|
-|serviceManagementUrl|String|**TODO: Add Description**|
-|serviceName|String|**TODO: Add Description**|
+|serviceId|String|The service ID of a managed service.|
+|serviceManagementUrl|String|The service name of a managed service.|
+|serviceName|String|The URL of the management portal for the managed service.|
 
 ## Relationships
 None.

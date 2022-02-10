@@ -1,7 +1,7 @@
 ---
 title: "List accessAssignments"
 description: "Get the delegatedAdminAccessAssignment resources from the accessAssignments navigation property."
-author: "adtangir"
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminAccessAssignment resource type"
-description: "**TODO: Add Description**"
-author: "adtangir"
+description: "Represents an assignment of access details to an access container."
+author: "smrtsec"
 ms.localizationpriority: medium
 ms.prod: "gdap"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an assignment of access details (containing roles) to an access container (like a security group). Once it's active, the members of the access container get access to the roles specified in the access details.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,12 +27,12 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|**TODO: Add Description**|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
+|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment.|
+|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the access assignment was created in UTC. This is set by the system and cannot be set by the caller.|
+|id|String|The unique identifier of the access assignment. This is set by the system and cannot be set by the caller.|
+|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this access assignment was last modified in UTC. This is set by the system and cannot be set by the caller.|
+|status|String|The status of the assignment.|
 
 ## Relationships
 None.
