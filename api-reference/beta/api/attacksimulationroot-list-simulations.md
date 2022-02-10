@@ -55,8 +55,6 @@ GET /security/attackSimulation/simulations?$top=1
 GET /security/attackSimulation/simulations?$select={property}
 ```
 
-For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 |Name|Description|
 |:---|:---|

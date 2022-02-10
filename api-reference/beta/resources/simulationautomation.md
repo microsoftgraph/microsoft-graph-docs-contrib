@@ -40,17 +40,17 @@ Represents an attack simulation automation of a tenant.
 
 |Member|Description |
 |:---|:---|
-|unknown| Simulation automation status not defined. |
-|draft| Simulation automation status as draft. |
-|notRunning| Simulation automation status as notRunning. |
-|running| Simulation automation status as running. |
-|completed| Simulation automation status as completed. |
+|unknown| Simulation automation status is not defined. |
+|draft| Simulation automation is in draft mode. |
+|notRunning| Simulation automation is not running. |
+|running| Simulation automation is running. |
+|completed| Simulation automation has completed. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|runs|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Collection of simulation automation runs. |
+|runs|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|A collection of simulation automation runs. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

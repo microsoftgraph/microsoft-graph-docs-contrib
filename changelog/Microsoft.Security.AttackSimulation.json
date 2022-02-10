@@ -483,7 +483,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "simulationAutomation",
           "ChangeType": "Addition",
-          "Description": "Added the [simulationAutomation](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomation?view=graph-rest-beta) resource type and a supported method.",
+          "Description": "Added the [simulationAutomation](https://docs.microsoft.com/en-us/graph/api/resources/simulationautomation?view=graph-rest-beta) resource type and a supported method.",
           "Target": "simulationAutomation"
         },
         {
@@ -491,8 +491,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "simulationAutomationRun",
           "ChangeType": "Addition",
-          "Description": "Added the [simulationAutomationRun](https://docs.microsoft.com/en-us/graph/api/resources/simulationAutomationRun?view=graph-rest-beta) resource type and a supported method.",
+          "Description": "Added the [simulationAutomationRun](https://docs.microsoft.com/en-us/graph/api/resources/simulationautomationrun?view=graph-rest-beta) resource type and a supported method.",
           "Target": "simulationAutomationRun"
+        },
+        {
+          "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",
+          "ApiChange": "Member",
+          "ChangedApiName": "notCompleted",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **notCompleted** member from the **trainingStatus** enumeration. This member is not used.",
+          "Target": "trainingStatus"
         }
       ],
       "Id": "b9e0c182-c252-4d91-aae8-005d6d89d68b",

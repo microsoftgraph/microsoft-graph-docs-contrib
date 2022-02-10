@@ -19,7 +19,7 @@ Represents a run of an attack simulation automation of a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List Runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the [simulationAutomationRun](../resources/simulationautomationrun.md) objects and their properties.|
+|[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the [simulationAutomationRun](../resources/simulationautomationrun.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,11 +34,11 @@ Represents a run of an attack simulation automation of a tenant.
 
 |Member|Description |
 |:---|:---|
-|unknown| Simulation automation run status not defined. |
-|running| Simulation automation run status as running. |
-|succeeded| Simulation automation run status as succeeded. |
-|failed| Simulation automation run status as failed. |
-|skipped| Simulation automation run status as skipped. |
+|unknown| Simulation automation run status is not defined. |
+|running| The run of a simulation automation is running. |
+|succeeded| The run of a simulation automation has succeeded. |
+|failed| The run of a simulation automation has failed. |
+|skipped| The run of a simulation automation has skipped. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships

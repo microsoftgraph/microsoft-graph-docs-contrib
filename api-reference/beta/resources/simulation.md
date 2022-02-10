@@ -48,14 +48,14 @@ The attack simulation and training _API_ enables tenant administrators to list l
 
 |Member|Description |
 |:---|:---|
-|unknown| Simulation status not defined. |
-|draft| Simulation status as draft. |
-|running| Simulation status as running. |
-|scheduled| Simulation status as scheduled. |
-|succeeded| Simulation status as succeeded. |
-|failed| Simulation status as failed. |
-|cancelled| Simulation status as cancelled. |
-|excluded| Simulation status as excluded. |
+|unknown| The simulation status is not defined. |
+|draft| The simulation is in draft mode. |
+|running| The simulation is running. |
+|scheduled| The simulation is scheduled. |
+|succeeded| The simulation has succeeded. |
+|failed| The simulation has failed. |
+|cancelled| The simulation is cancelled. |
+|excluded| The simulation is excluded. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ### simulationAttackTechnique values
