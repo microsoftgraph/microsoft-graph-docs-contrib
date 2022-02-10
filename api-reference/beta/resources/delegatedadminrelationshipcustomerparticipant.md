@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminRelationshipCustomerParticipant resource type"
-description: "**TODO: Add Description**"
+description: "Contains details of a customer participant in a Delegated Admin relationship."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "gdap"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains details of a customer participant in a Delegated Admin relationship. Inherits from [delegatedAdminRelationshipParticipant](../resources/delegatedAdminRelationshipParticipant.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
+|displayName|String|The display name of the customer organization. This is set by the system and cannot be set by the caller.|
+|tenantId|String|The tenant ID of the customer participant in the relationship. Must be a valid tenant ID as in AAD.|
 
 ## Relationships
 None.

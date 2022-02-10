@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminRelationshipRequest resource type"
-description: "**TODO: Add Description**"
+description: "Represents a request specific to a delegated admin relationship between a partner and customer."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "gdap"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a request specific to a delegated admin relationship between a partner and customer.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,11 +27,11 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
+|action|String|The action to be performed on the delegated admin relationship.|
+|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the relationship request was created in UTC. This is set by the system and cannot be set by the caller.|
+|id|String|he unique identifier of the relationship request. This is set by the system and cannot be set by the caller.|
+|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship request was last modified in UTC. This is set by the system and cannot be set by the caller.|
+|status|String|The status of the request.|
 
 ## Relationships
 None.

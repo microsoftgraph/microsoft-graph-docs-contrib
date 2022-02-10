@@ -1,6 +1,6 @@
 ---
 title: "List delegatedAdminCustomers"
-description: "Get the delegatedAdminCustomer resources from the delegatedAdminCustomers navigation property."
+description: "Get a list of the delegatedAdminCustomer objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "gdap"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the delegatedAdminCustomer resources from the delegatedAdminCustomers navigation property.
+Get a list of the [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

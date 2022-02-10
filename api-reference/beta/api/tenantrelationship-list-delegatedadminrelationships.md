@@ -1,6 +1,6 @@
 ---
 title: "List delegatedAdminRelationships"
-description: "Get the delegatedAdminRelationship resources from the delegatedAdminRelationships navigation property."
+description: "Get a list of the delegatedAdminRelationship objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "gdap"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the delegatedAdminRelationship resources from the delegatedAdminRelationships navigation property.
+Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

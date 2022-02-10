@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminOperation resource type"
-description: "**TODO: Add Description**"
+description: "Represents a long running operation related to a Delegated Admin relationship."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "gdap"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a long running operation related to a Delegated Admin relationship.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,12 +27,12 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|data|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|operationType|String|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The time at which the request was created in UTC. This is set by the system and cannot be set by the caller.|
+|data|String|The data (payload) for the operation.|
+|id|String|The unique identifier of the Delegated Admin long running operation. This is set by the system and cannot be set by the caller.|
+|lastModifiedDateTime|DateTimeOffset|The time at which the request was last modified in UTC. This is set by the system and cannot be set by the caller.|
+|operationType|String|The type of long running operation. This is set by the system and cannot be set by the caller.|
+|status|String|The status of the operation. This is set by the system and cannot be set by the caller.|
 
 ## Relationships
 None.
