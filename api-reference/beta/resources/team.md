@@ -66,6 +66,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|summary|[teamSummary](teamSummary.md)| The summary of the team. |
 
 ### Instance attributes
 
