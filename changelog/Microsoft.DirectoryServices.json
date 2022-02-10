@@ -8,7 +8,7 @@
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
           "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to [add a resource to a catalog in entitlement management](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta).",
-          "Target": "entitlementManagement"
+          "Target": "accessPackageResourceRequest"
         }
       ],
       "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
