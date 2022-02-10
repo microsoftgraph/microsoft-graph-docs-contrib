@@ -2,6 +2,128 @@
 	"changelog": [
 		{
 			"ChangeList": [
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "servicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the `servicePrincipal` member to the **activityType** enumeration.",
+				"Target": "activityType"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminConfirmedServicePrincipalCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminConfirmedServicePrincipalCompromised` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Member",
+				"ChangedApiName": "adminDismissedAllRiskForServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the `adminDismissedAllRiskForServicePrincipal` member to the **riskDetail** enumeration.",
+				"Target": "riskDetail"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskServicePrincipalActivity",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskServicePrincipalActivity](https://docs.microsoft.com/en-us/graph/api/resources/riskServicePrincipalActivity?view=graph-rest-beta) resource. Represents the risk activity of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Target": "riskServicePrincipalActivity"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipal",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipal?view=graph-rest-beta) resource and related methods. Use this API to access all at-risk service principals in your Azure AD tenant.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "servicePrincipalRiskDetection",
+				"ChangeType": "Addition",
+				"Description": "Added the [servicePrincipalRiskDetection](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalRiskDetection?view=graph-rest-beta) resource and related methods. Use this API to access all service principal risk detections in your Azure AD environment.",
+				"Target": "servicePrincipalRiskDetection"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "riskyServicePrincipals",
+				"ChangeType": "Addition",
+				"Description": "Added the **riskyServicePrincipals** navigation property to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Relationship",
+				"ChangedApiName": "servicePrincipalRiskDetections",
+				"ChangeType": "Addition",
+				"Description": "Added the **servicePrincipalRiskDetections** navigation property to the [identityProtectionRoot](https://docs.microsoft.com/en-us/graph/api/resources/identityProtectionRoot?view=graph-rest-beta) resource.",
+				"Target": "identityProtectionRoot"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Resource",
+				"ChangedApiName": "riskyServicePrincipalHistoryItem",
+				"ChangeType": "Addition",
+				"Description": "Added the [riskyServicePrincipalHistoryItem](https://docs.microsoft.com/en-us/graph/api/resources/riskyServicePrincipalHistoryItem?view=graph-rest-beta) resource and related methods. Use this API to retrieve the risk history of an Azure AD service principal as determined by Azure AD Identity Protection.",
+				"Target": "riskyServicePrincipalHistoryItem"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "confirmCompromised",
+				"ChangeType": "Addition",
+				"Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Method",
+				"ChangedApiName": "dismiss",
+				"ChangeType": "Addition",
+				"Description": "Added the [dismiss](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta) method to the [riskyServicePrincipal](https://docs.microsoft.com/en-us/graph/api/riskyserviceprincipal?view=graph-rest-beta) resource.",
+				"Target": "riskyServicePrincipal"
+			  },
+			  {
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Property",
+				"ChangedApiName": "servicePrincipalRiskLevels",
+				"ChangeType": "Addition",
+				"Description": "Added the **servicePrincipalRiskLevels** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) resource. Administrators can use this property to set a risk-based policy for service principals in their Azure AD tenant.",
+				"Target": "conditionalAccessConditionSet"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.Read.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.Read.All` to the read operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Target": "identityProtectionRoot"
+			},
+			{
+				"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+				"ApiChange": "Permission",
+				"ChangedApiName": "IdentityRiskyServicePrincipal.ReadWrite.All",
+				"ChangeType": "Addition",
+				"Description": "Added support for the service principals risk-based delegated and application permissions of `IdentityRiskyServicePrincipal.ReadWrite.All` to the read and write operations of Azure AD [identity protection](https://docs.microsoft.com/graph/api/resources/identityprotectionroot?view=graph-rest-beta) APIs.",
+				"Target": "identityProtectionRoot"
+			}
+			],
+			"Id": "5a2defb1-0d73-4133-867b-e6d90f45701d",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-02-09T00:00:00.2696343Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		  },
+		{
+			"ChangeList": [
 				{
 					"Id": "cad83874-f5f9-459e-9b42-965603408cda",
 					"ApiChange": "Property",
