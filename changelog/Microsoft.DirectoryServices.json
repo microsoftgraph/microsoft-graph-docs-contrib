@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "5225ee5e-515b-48b1-8a0f-dc1725d3d827",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceManagementReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceManagementReference** property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "5225ee5e-515b-48b1-8a0f-dc1725d3d827",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",
