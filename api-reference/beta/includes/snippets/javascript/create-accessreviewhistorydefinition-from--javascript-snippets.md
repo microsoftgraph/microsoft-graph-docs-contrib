@@ -19,8 +19,20 @@ const accessReviewHistoryDefinition = {
     'notReviewed',
     'notNotified'
   ],
-  reviewHistoryPeriodStartDateTime: '2021-01-01T00:00:00Z',
-  reviewHistoryPeriodEndDateTime: '2021-04-05T00:00:00Z',
+  scheduleSettings: {
+      reportRange: 'P1M',
+      recurrence: {
+          pattern: {
+              type: 'monthly',
+              interval: 1
+          },
+          range: {
+              type: 'noEnd',
+              startDate: '2018-08-03T21:02:30.667Z',
+              count: 0
+          }
+        }
+  },
   scopes: [
     {
       '@odata.type': '#microsoft.graph.accessReviewQueryScope',

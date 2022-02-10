@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the m
 |advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-|disableUDPConnections|Boolean|When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.|
+|disableUDPConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
 
 
 

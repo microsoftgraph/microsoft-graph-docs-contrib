@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -77,11 +77,14 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 [!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-renew-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
-Note: The response object shown here might be shortened for readability.
+### Response
 <!-- {
   "blockType": "response"
 } -->

@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 [!INCLUDE [sample-code](../includes/snippets/go/get-activitystatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-activitystatistics-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -34,7 +34,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## Optional query parameters
 
-This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
 > $filter doesn't support using the same property more than once in the query, which prevents bounding queries, such as, sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z.
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
@@ -86,10 +86,14 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-shifts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 

@@ -51,13 +51,9 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 > [!IMPORTANT]
 > For an app in US Government:
 >
->
 > * If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
-> * If you're working in a Microsoft 365 GCC High environment, use: `https://portal.azure.us` and `https://graph.microsoft.us`.
+> * If you're working in a Microsoft 365 GCC High environment, use `https://portal.azure.us` and `https://graph.microsoft.us`.
 > * If you're working in a Microsoft 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
->
->
-> Access to US Government data using the worldwide endpoint will be disabled in the near future.
 
 > [!NOTE]
 > Apps can only access organizational data through the national cloud endpoints. This means that apps can only access data in tenants that are registered in the specific national cloud. Apps that are trying to access consumer data associated with Microsoft personal accounts through Microsoft Graph should use the global service `https://graph.microsoft.com`. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service or any other national cloud.
@@ -68,6 +64,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Access reviews | ✔ | ✔ | ➖ |
 | Applications | ✔ | ➖ | ➖ |
 | Change notifications (webhooks) | ✔ | ✔ | ✔\* |
 | Delta query | ✔ | ✔ | ➖ |
@@ -90,7 +87,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Teams | ✔ | ✔ | ✔ |
 | Users | ✔ | ✔ | ✔ |
 
-The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
+The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (v1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts
 * Applications

@@ -17,10 +17,27 @@ requestBody.SetDecisions( []AccessReviewHistoryDecisionFilter {
 	"notReviewed",
 	"notNotified",
 }
-reviewHistoryPeriodStartDateTime, err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
-requestBody.SetReviewHistoryPeriodStartDateTime(&reviewHistoryPeriodStartDateTime)
-reviewHistoryPeriodEndDateTime, err := time.Parse(time.RFC3339, "2021-04-05T00:00:00Z")
-requestBody.SetReviewHistoryPeriodEndDateTime(&reviewHistoryPeriodEndDateTime)
+scheduleSettings := msgraphsdk.NewAccessReviewHistoryScheduleSettings()
+requestBody.SetScheduleSettings(scheduleSettings)
+reportRange := "P1M"
+scheduleSettings.SetReportRange(&reportRange)
+recurrence := msgraphsdk.NewPatternedRecurrence()
+scheduleSettings.SetRecurrence(recurrence)
+pattern := msgraphsdk.NewRecurrencePattern()
+recurrence.SetPattern(pattern)
+type := "monthly"
+pattern.SetType(&type)
+interval := int32(1)
+pattern.SetInterval(&interval)
+range := msgraphsdk.NewRecurrenceRange()
+recurrence.SetRange(range)
+type := "noEnd"
+range.SetType(&type)
+startDate := "2018-08-03T21:02:30.667Z"
+range.SetStartDate(&startDate)
+range.SetAdditionalData(map[string]interface{}{
+	"count": ,
+}
 requestBody.SetScopes( []AccessReviewScope {
 	msgraphsdk.NewAccessReviewScope(),
 	SetAdditionalData(map[string]interface{}{
