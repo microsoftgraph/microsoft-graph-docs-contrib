@@ -4760,9 +4760,9 @@
         {
           "Id": "2272f260-c87f-42b2-88e4-ea84fc822a5f",
           "ApiChange": "Property",
-          "ChangedApiName": "team",
+          "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the summary property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta).",
+          "Description": "Added the **summary** property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta).",
           "Target": "team"
         }
       ],
