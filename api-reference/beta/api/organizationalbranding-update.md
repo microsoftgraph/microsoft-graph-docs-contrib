@@ -41,13 +41,11 @@ PATCH /organization/{organizationId}/branding
 |Accept-Language|A valid ISO 639-1 locale. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. 
-
-The following tables specifiy the properties that can be updated. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
+| backgroundColor | String | Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
 | backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. |
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be ASCII or non-ASCII characters must be URL encoded, and not exceed 128 characters. |
@@ -149,7 +147,6 @@ The following is an example of the request.
 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocaliation_2"
@@ -161,16 +158,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocaliation-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 
 

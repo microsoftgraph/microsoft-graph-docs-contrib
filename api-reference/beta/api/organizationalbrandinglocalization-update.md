@@ -43,13 +43,12 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
 
-The following table specifies the properties that can be updated. 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
+| backgroundColor | String | Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
 | backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. |
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be ASCII or non-ASCII characters must be URL encoded, and not exceed 128 characters. |
@@ -107,7 +106,7 @@ Content-Type: image/jpeg
 } -->
 
 ```http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
@@ -208,6 +207,8 @@ Content-Type: application/json
 
 #### Response
 
+Following the request, the **usernameHintText** for the `fr-FR` localization will be empty instead of inheriting the value from the default branding object.
+
 <!-- {
   "blockType": "response"
 } -->
@@ -215,5 +216,3 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-
-Following this request, usernameHintText for the `fr-FR` localization will be empty instead of inheriting the value from the default branding object.

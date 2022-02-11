@@ -120,7 +120,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#branding",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')/branding/0",
     "id": "0",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/illustration?ts=637535563816027796",
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/bannerlogo?ts=637535563824629275",
     "cdnList": [
@@ -128,20 +128,20 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
-    "customAccountResetCredentialsUrl": "null",
-    "customCannotAccessYourAccountText": "null",
-    "customCannotAccessYourAccountUrl": "null",
-    "customForgotMyPasswordText": "null",
-    "customPrivacyAndCookiesText": "null",
-    "customPrivacyAndCookiesUrl": "null",
-    "customTermsOfUseText": "null",
-    "customTermsOfUseUrl": "null",
-    "customResetItNowText": "null",
-    "faviconRelativeUrl": "null",
-    "headerBackgroundColor": "null",
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
     "signInPageText": "Contoso",
     "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
-    "usernameHintText": "",
+    "usernameHintText": " ",
     "loginPageTextVisibilitySettings": {
       "hideCannotAccessYourAccount": false,
       "hideForgotMyPassword": false,
@@ -325,8 +325,6 @@ The following example returns the **bannerLogo** object which hadn't been set fo
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbranding_frlocale_bannerLogo"
@@ -335,23 +333,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/default/bannerLogo
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-frlocale-bannerlogo-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbranding-frlocale-bannerlogo-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbranding-frlocale-bannerlogo-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### Response

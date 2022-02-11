@@ -30,10 +30,10 @@ None.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
+| backgroundColor | String | Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
 | backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. |
 | backgroundImageRelativeUrl | String | A relative URL for the **backgroundImage** property that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. |
-| bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG no larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
+| bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | bannerLogoRelativeUrl | String | A relative url for the **bannerLogo** property that is combined with a CDN base URL from the **cdnList** to provide the read-only version served by a CDN. Read-only. |
 | cdnList | String collection | A list of base URLs for all available CDN providers that are serving the assets of the current resource. Several CDN providers are used at the same time for high availability of read requests. Read-only. |
 | customAccountResetCredentialsUrl | String | String of custom URL for reseting account credentials.This text must be ASCII or non-ASCII characters must be URL encoded, and not exceed 128 characters. |
@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.organizationalBrandingLocalization",
+  "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
   "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
@@ -82,24 +82,24 @@ The following is a JSON representation of the resource.
   "cdnList": [
     "String"
   ],
+  "signInPageText": "String",
+  "squareLogo": "Stream",
+  "squareLogoRelativeUrl": "String",
+  "usernameHintText": "String",
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
+  "customResetItNowText": "String",
   "customTermsOfUseText": "String",
   "customTermsOfUseUrl": "String",
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
   "headerBackgroundColor": "String",
-  "signInPageText": "String",
-  "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "usernameHintText": "String",
   "loginPageTextVisibilitySettings": {
     "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
 }
 ```
-

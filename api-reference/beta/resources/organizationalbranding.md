@@ -32,6 +32,7 @@ You can't change your original configuration's language. However, companies can 
 <!--| [Delete organizationalBranding](../api/organizationalbranding-delete.md) | None | Delete an [organizationalBranding](../resources/organizationalbranding.md) object. |-->
 
 ## Properties
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | backgroundColor | String | Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
@@ -64,9 +65,10 @@ You can't change your original configuration's language. However, companies can 
 | usernameHintText | String | String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Inherited from [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-| localizations | [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
+| localizations | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -90,21 +92,22 @@ The following is a JSON representation of the resource.
   "cdnList": [
     "String"
   ],
+  "signInPageText": "String",
+  "squareLogo": "Stream",
+  "squareLogoRelativeUrl": "String",
+  "usernameHintText": "String",
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
+  "customResetItNowText": "String",
   "customTermsOfUseText": "String",
   "customTermsOfUseUrl": "String",
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
   "headerBackgroundColor": "String",
-  "signInPageText": "String",
-  "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "usernameHintText": "String",
   "loginPageTextVisibilitySettings": {
     "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }

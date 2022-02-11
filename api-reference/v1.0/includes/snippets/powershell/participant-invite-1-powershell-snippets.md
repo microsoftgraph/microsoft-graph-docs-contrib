@@ -16,7 +16,7 @@ $params = @{
 				User = @{
 					"@odata.type" = "#microsoft.graph.identity"
 					Id = "278405a3-f568-4b3e-b684-009193463064"
-					DisplayName = "string"
+					IdentityProvider = "AAD"
 				}
 			}
 		}

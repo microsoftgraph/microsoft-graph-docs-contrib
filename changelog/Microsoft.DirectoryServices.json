@@ -7,23 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customAccountResetCredentialsUrl",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customAccountResetCredentialsUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customAccountResetCredentialsUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customAccountResetCredentialsUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customAccountResetCredentialsUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customAccountResetCredentialsUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customAccountResetCredentialsUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -31,23 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCannotAccessYourAccountUrl",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customCannotAccessYourAccountUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -55,23 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customCannotAccessYourAccountText",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customCannotAccessYourAccountText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customCannotAccessYourAccountText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customCannotAccessYourAccountText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -79,23 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customForgotMyPasswordText",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customForgotMyPasswordText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customForgotMyPasswordText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customForgotMyPasswordText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customForgotMyPasswordText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customForgotMyPasswordText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customForgotMyPasswordText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -103,23 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customResetItNowText",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customResetItNowText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customResetItNowText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customResetItNowText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customResetItNowText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customResetItNowText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customResetItNowText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -127,23 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customPrivacyAndCookiesUrl",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customPrivacyAndCookiesUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -151,23 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customPrivacyAndCookiesText",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customPrivacyAndCookiesText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customPrivacyAndCookiesText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customPrivacyAndCookiesText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -175,23 +63,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customTermsOfUseUrl",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customTermsOfUseUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -199,23 +71,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "customTermsOfUseText",
           "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "customTermsOfUseText",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **customTermsOfUseText** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **customTermsOfUseText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -223,23 +79,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "favicon",
           "ChangeType": "Addition",
-          "Description": "Added Added the **favicon** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "favicon",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **favicon** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "favicon",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **favicon** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **favicon** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -247,23 +87,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "faviconRelativeUrl",
           "ChangeType": "Addition",
-          "Description": "Added Added the **faviconRelativeUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "faviconRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **faviconRelativeUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "faviconRelativeUrl",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **faviconRelativeUrl** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **faviconRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
@@ -271,150 +95,30 @@
           "ApiChange": "Property",
           "ChangedApiName": "headerBackgroundColor",
           "ChangeType": "Addition",
-          "Description": "Added Added the **headerBackgroundColor** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "headerBackgroundColor",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **headerBackgroundColor** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "headerBackgroundColor",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **headerBackgroundColor** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **headerBackgroundColor** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
           "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
           "ApiChange": "Property",
-          "ChangedApiName": "hideCannotAccessYourAccount",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
           "ChangeType": "Addition",
-          "Description": "Added Added the **hideCannotAccessYourAccount** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideCannotAccessYourAccount",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideCannotAccessYourAccount** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideCannotAccessYourAccount",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideCannotAccessYourAccount** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
+          "Description": "Added the **loginPageTextVisibilitySettings** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
           "Target": "organizationalBrandingProperties"
         },
         {
           "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideForgotMyPassword",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
           "ChangeType": "Addition",
-          "Description": "Added Added the **hideForgotMyPassword** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideForgotMyPassword",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideForgotMyPassword** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideForgotMyPassword",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideForgotMyPassword** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideResetItNow",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideResetItNow** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideResetItNow",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideResetItNow** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideResetItNow",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideResetItNow** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideTermsOfUse",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideTermsOfUse** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideTermsOfUse",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideTermsOfUse** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hideTermsOfUse",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hideTermsOfUse** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingProperties"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hidePrivacyAndCookies",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hidePrivacyAndCookies** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
-          "Target": "organizationalBranding"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hidePrivacyAndCookies",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hidePrivacyAndCookies** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingLocalization?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingLocalization"
-        },
-        {
-          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
-          "ApiChange": "Property",
-          "ChangedApiName": "hidePrivacyAndCookies",
-          "ChangeType": "Addition",
-          "Description": "Added Added the **hidePrivacyAndCookies** property to the [organizationalBranding](https://docs.microsoft.com/en-us/graph/api/resources/organizationalBrandingProperties?view=graph-rest-beta) resource.",
-          "Target": "organizationalBrandingProperties"
+          "Description": "Added the [loginPageTextVisibilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta) resource.",
+          "Target": "loginPageTextVisibilitySettings"
         }
       ],
       "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2022-02-09T00:00:00",
+      "CreatedDateTime": "2022-02-10T00:00:00",
       "WorkloadArea": "Identity and access ",
       "SubArea": " Identity and sign-in"
     },
