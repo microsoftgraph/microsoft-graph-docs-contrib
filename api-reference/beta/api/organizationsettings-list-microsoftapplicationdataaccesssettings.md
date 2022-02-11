@@ -3,11 +3,12 @@ title: "List microsoftApplicationDataAccessSettings"
 description: "Get the microsoftApplicationDataAccessSettings resources from the microsoftApplicationDataAccessSettings navigation property."
 author: "ttomi"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "insights"
 doc_type: apiPageType
 ---
 
 # List microsoftApplicationDataAccessSettings
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Get the microsoftApplicationDataAccessSettings resources from the microsoftApplicationDataAccessSettings navigation property.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -33,15 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
 ```
 
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -60,8 +61,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
 ```
 
-
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -77,11 +78,13 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
-      "id": "0e2bed6e-08a2-1d3e-403a-81b7c65afa6c",
-      "isEnabledForAllMicrosoftApplications": "Boolean",
-      "disabledForGroup": "String"
+      "isEnabledInOrganization": true,
+      "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
     }
   ]
 }
 ```
 
+## See also
+
+[Customize item insights privacy](/graph/insights-customize-item-insights-privacy) for an organization.
