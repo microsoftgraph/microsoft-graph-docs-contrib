@@ -42,7 +42,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -82,6 +82,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
@@ -89,7 +93,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request to send a change notification when the user receives a new mail.
 
@@ -132,13 +136,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
-##### Resources examples
+#### Resources examples
 
 The following are valid values for the resource property of the subscription:
 
@@ -153,7 +161,7 @@ The following are valid values for the resource property of the subscription:
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
+|[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
@@ -161,9 +169,10 @@ The following are valid values for the resource property of the subscription:
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -189,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-## Notification endpoint validation
+#### Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 

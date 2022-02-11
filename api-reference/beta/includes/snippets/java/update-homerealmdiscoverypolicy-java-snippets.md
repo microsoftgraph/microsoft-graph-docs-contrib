@@ -8,10 +8,12 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 HomeRealmDiscoveryPolicy homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy();
 LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
+definitionList.add("{"HomeRealmDiscoveryPolicy":
+     {"AccelerateToFederatedDomain":true,
+      "PreferredDomain":"federated.example.edu",
+      "AlternateIdLogin":{"Enabled":true}}}");
 homeRealmDiscoveryPolicy.definition = definitionList;
-homeRealmDiscoveryPolicy.displayName = "displayName-value";
-homeRealmDiscoveryPolicy.isOrganizationDefault = true;
+homeRealmDiscoveryPolicy.displayName = "Contoso default HRD Policy";
 
 graphClient.policies().homeRealmDiscoveryPolicies("{id}")
 	.buildRequest()

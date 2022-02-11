@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /directoryRoles
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
+This method supports the `$count`, `$select`, `$search`, `$filter` (`eq`), and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Description|
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/directoryRoles
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryroles-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryroles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

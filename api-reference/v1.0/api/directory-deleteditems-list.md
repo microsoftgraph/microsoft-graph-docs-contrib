@@ -15,6 +15,8 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
+>**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
+
 ## Permissions
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -166,6 +168,10 @@ ConsistencyLevel: eventual
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

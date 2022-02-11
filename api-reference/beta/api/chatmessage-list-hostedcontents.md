@@ -25,7 +25,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Note**: Permissions marked with ** are deprecated and should not be used.
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use different permissions and avoid using these permissions going forward.
 
 ### Permissions for chat
 
@@ -109,6 +109,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschannelmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -249,6 +253,10 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschatmessage-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschatmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

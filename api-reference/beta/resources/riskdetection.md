@@ -36,7 +36,6 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |requestId|string|Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.|
 |correlationId|string|Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in. |
 |riskEventType|string|The type of risk event detected. The possible values are `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`,`adminConfirmedUserCompromised`, `mcasImpossibleTravel`, `mcasSuspiciousInboxManipulationRules`, `investigationsThreatIntelligenceSigninLinked`, `maliciousIPAddressValidCredentialsBlockedIP`, and `unknownFutureValue`. |
-|riskType|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
 |riskState|riskState|The state of a detected risky user or sign-in. The possible values are `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, and `unknownFutureValue`. |
 |riskLevel|riskLevel|Level of the detected risk. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
 |riskDetail|riskDetail|Details of the detected risk. The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Azure AD Premium P2 customers. P1 customers will be returned `hidden`.|
@@ -53,6 +52,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |
+|riskType (deprecated)|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
 
 ## JSON representation
 

@@ -49,14 +49,14 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the hardware configuration|
-|version|Int32|Version of the hardware configuration|
+|version|Int32|Version of the hardware configuration (E.g. 1, 2, 3 ...)|
 |displayName|String|Name of the hardware configuration|
 |description|String|Description of the hardware configuration|
 |createdDateTime|DateTimeOffset|Timestamp of when the hardware configuration was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of when the hardware configuration was modified. This property is read-only.|
 |fileName|String|File name of the hardware configuration|
 |configurationFileContent|Binary|File content of the hardware configuration|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Oem type of the hardware configuration. Possible values are: `dell`, `surface`, `surfaceDock`.|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|Oem type of the hardware configuration (E.g. DELL, HP, Surface and SurfaceDock). Possible values are: `dell`, `surface`, `surfaceDock`.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the hardware configuration|
 |perDevicePasswordDisabled|Boolean|A value indicating whether per devcive pasword disabled|
 
