@@ -7,8 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the [Create accessPackageResourceRequest
-](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta) operation.",
+          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the [Create accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta) operation.",
           "Target": "accessPackageResourceRequest"
         }
       ],
