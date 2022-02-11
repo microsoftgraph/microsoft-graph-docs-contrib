@@ -30,7 +30,7 @@ Contains a key credential associated with an application or a service principal.
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
