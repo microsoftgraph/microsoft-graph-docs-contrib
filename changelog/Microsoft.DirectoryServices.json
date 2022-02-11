@@ -125,6 +125,24 @@
     {
       "ChangeList": [
         {
+          "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the [Create accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta) operation.",
+          "Target": "accessPackageResourceRequest"
+        }
+      ],
+      "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",
