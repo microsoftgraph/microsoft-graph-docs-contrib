@@ -1,41 +1,75 @@
 ---
-title: "Overview of access reviews API"
-description: "The access reviews API allows you to programmatically review access to your Azure AD resources."
+title: "Overview of access reviews API in Microsoft Graph"
+description: "The access reviews API allows you to programmatically review access to your Azure AD resources. This helps to ensure that the right people have the right access to the right resources in the organization."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Overview of the access reviews API
+# Overview of the access reviews API in Microsoft Graph
 
-The [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph allows you to programmatically review access to Azure AD resources. This review helps to ensure that the right people have the right access to the right resources in the organization.
+Today, the nature of collaboration is no longer within teams and departments in an organization, but also across organizations, and with external vendors and suppliers. Unfortunately, this also introduces new challenges where sensitive resources are involved. It's therefore important to ensure that only the right people have continued access to the resources.
 
-Using the access reviews API, you can do the following actions:
-+ Create, read, update, and delete access reviews, access review settings, and schedules.
-+ Investigate past access reviews and the decisions taken by reviewers, including the steps Azure AD took automatically.
+[Azure Active Directory (Azure AD) access reviews](/azure/active-directory/governance/access-reviews-overview) helps to ensure that the right people have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
 
-## Scope of use
+Azure AD access reviews is a feature of Azure AD Identity Governance. Azure AD Identity Governance helps you to protect, monitor, and audit access to critical assets while ensuring employee productivity.
 
-The access reviews APIs support both delegated and application contexts. In a user (delegated) context, an application calls the access reviews API on behalf of a user. Typical scenarios include:
+## Who can participate in an access review
+
+Access reviews are about attesting a principal's access to a resource. Principals can be individual users, groups, or applications.
+
+Resources to which access can be reviewed include groups, privileged roles (including Azure AD roles and Azure resource roles), access packages, and applications.
+
+The reviewers in the access review may include the following scenarios:
+
++ A user (guest user or a member) reviewing their own access and attesting to their need for continued access
++ Another user reviewing access for other principals. For example, a user in a security administrator role
++ A user's manager attesting to their direct reports' need for continued access
++ Members of a group
++ Group owners, including owners who might meet specific criteria
++ Application owners
+
+## Building blocks of the access review API
+
+The access reviews API is structured logically and is composed of these building blocks.
+
+### Access reviews schedule definitions
+
+The logical blueprint that contains the settings of an access review and its instances. The settings include the following:
+
++ The resources against which access is reviewed
++ The principals whose continued need for access is reviewed
++ The reviewers who attest to access to these resources
++ The frequency of the access review
++ The stages of the access review (for a multi-stage access review)
++ Decisions to be taken after an access review is completed
+
+### Access review instance
+
+Represents a single review activity against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance. For a multi-stage access review, each instance contains the stages of that instance.
+
+### Decision items recorded for a review
+
+Represents a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of principals under review. If there are no decisions taken, that is, reviewers haven't responded to the review, there will be no decision objects for the instance.
+
+Access reviews also support auditing the decisions that were made on each access review, with the decisions downloadable for offline auditing.
+
+## Scope of calling the access reviews APIs
+
+The access reviews APIs support both [delegated](/graph/auth-v2-user) and [application](/graph/auth-v2-service) contexts.
+
+In a delegated (user) context, an application calls the access reviews API on behalf of a user. Typical scenarios include:
 + An administrator using a script to create, read, or update an access review.
 + A resource owner using an app or a script to create an access review for a resource they own.
 + An administrator automatically collecting all decisions for one or more access reviews.
-  
-To authorize your app in a user (delegated) context, see [get access on behalf of a user](/graph/auth-v2-user).
 
-In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews. To authorize your app in this context, see [get access without a user](/graph/auth-v2-service).
-
-## Building blocks of an access review
-
-Access reviews are structured logically and are comprised of these building blocks:
-+ **Access reviews schedule definitions** -  The logical blueprint that contains the settings of an access review and its instances. The settings include the resources against which access is reviewed, and the reviewers who attest to access to these resources.
-+ **Access review instance** - Represents a single review activity against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance.
-+ **Decision items recorded for a review** - Represents a decision a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of users under review. If there are no decisions taken, that is, reviewers haven’t responded to the review, there will be no decision objects for the instance.
+In an application context, an application calls the access reviews API without a signed-in user present. A typical scenario is a scheduled background script regularly collecting decisions for all access reviews.
 
 ## Next steps
 
-Try out the following tutorials to manage access reviews:
-
-+ [Tutorial: Use the access reviews API to review access to your security groups](tutorial-accessreviews-securitygroup.md)
-+ [Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups](tutorial-accessreviews-M365group.md)
++ [Use the access reviews API](/graph/api/resources/accessreviewsv2-overview)
++ [Read more about Azure AD access reviews](/azure/active-directory/governance/access-reviews-overview)
++ Try out the following tutorials to manage access reviews:
+    + [Use the access reviews API to review access to your security groups](tutorial-accessreviews-securitygroup.md)
+    + [Use the access reviews API to review guest access to your Microsoft 365 groups](tutorial-accessreviews-M365group.md)

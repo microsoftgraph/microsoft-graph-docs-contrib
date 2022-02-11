@@ -8,6 +8,7 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to your security groups
 
+
 In this tutorial, you will use Graph Explorer to review access to a security group in your tenant.
 
 You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
