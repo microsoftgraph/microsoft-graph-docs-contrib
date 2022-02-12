@@ -34,7 +34,7 @@ Represents a run of an attack simulation automation of a tenant.
 
 |Member|Description |
 |:---|:---|
-|unknown| Simulation automation run status is not defined. |
+|unknown| The status of a run of a simulation automation is not defined. |
 |running| The run of a simulation automation is running. |
 |succeeded| The run of a simulation automation has succeeded. |
 |failed| The run of a simulation automation has failed. |

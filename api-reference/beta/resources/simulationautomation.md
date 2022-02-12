@@ -40,11 +40,11 @@ Represents an attack simulation automation of a tenant.
 
 |Member|Description |
 |:---|:---|
-|unknown| Simulation automation status is not defined. |
-|draft| Simulation automation is in draft mode. |
-|notRunning| Simulation automation is not running. |
-|running| Simulation automation is running. |
-|completed| Simulation automation has completed. |
+|unknown| The status of the simulation automation is not defined. |
+|draft| The simulation automation is in draft mode. |
+|notRunning| The simulation automation is not running. |
+|running| The simulation automation is running. |
+|completed| The simulation automation has completed. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships

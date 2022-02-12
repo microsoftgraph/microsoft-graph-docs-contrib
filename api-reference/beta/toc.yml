@@ -13332,7 +13332,6 @@ items:
           items:
           - name: Item insights (preview)
             href: resources/iteminsights.md
-
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
@@ -13363,8 +13362,6 @@ items:
             href: api/userinsightssettings-get.md
           - name: Update
             href: api/userinsightssettings-update.md
-
-
       - name: Mention (preview)
         href: resources/mention.md
       - name: Analytics (preview)

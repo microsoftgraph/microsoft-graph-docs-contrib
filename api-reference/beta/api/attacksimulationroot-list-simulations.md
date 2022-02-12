@@ -55,6 +55,8 @@ GET /security/attackSimulation/simulations?$top=1
 GET /security/attackSimulation/simulations?$select={property}
 ```
 
+For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -70,8 +72,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
