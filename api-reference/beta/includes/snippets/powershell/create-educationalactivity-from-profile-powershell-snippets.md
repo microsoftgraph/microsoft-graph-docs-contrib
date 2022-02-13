@@ -37,6 +37,7 @@ $params = @{
 	StartMonthYear = "Date"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileEducationalActivity -UserId $userId -BodyParameter $params
 
 ```
