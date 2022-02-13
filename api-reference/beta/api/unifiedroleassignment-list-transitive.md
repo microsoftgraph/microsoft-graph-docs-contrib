@@ -1,5 +1,5 @@
 ---
-title: "List transitive unifiedRoleAssignment"
+title: "List transitiveRoleAssignment"
 description: "List direct and transitive role assignments for a specific principal."
 ms.localizationpriority: medium
 author: "abhijeetsinha"
@@ -7,17 +7,15 @@ ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
-# List direct and transitive unifiedRoleAssignments for a principal
+# List transitiveRoleAssignment
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. For example, this request can be used if a user is a member of a group and that group is assigned an Azure AD role. For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept).
+Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for a specific principal. For example, if a user is assigned an Azure AD role through group membership, the role assignment is transitive, and this request will list the group's ID as the **principalId**. Results can also be filtered by the **roleDefinitionId** and **directoryScopeId**. Supported only for directory (Azure AD) provider.
 
-If the role assignment is transitive, the group's ID will be returned for `principalID`. Results can also be filtered based on `roleDefinitionId` and `directoryScopeId`.
-
-Supported only for directory (Azure AD) provider.
+For more information, see [Use Azure AD groups to manage role assignments](/azure/active-directory/roles/groups-concept).
 
 > [!NOTE]
 > This request might have replication delays for role assignments that were recently created, updated, or deleted.
@@ -46,7 +44,7 @@ GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`) and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can filter by the ***principalId**, **roleDefinitionId** and **directoryScopeId** to retrieve both direct and transitive role assignments for a principal.
 
 ## Request headers
 
@@ -64,9 +62,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.
 
 ## Examples
-For the examples in this section, consider the following set up:
+For the examples in this section, consider the following role assignment scenario:
 
-| User | Group | Role | Scope | Role assignment |
+| User | Group | Role | Scope | Role assignment ID |
 | :---: | :---: | :---: | :---: | :---: |
 | Alice |  | User Administrator | Tenant | RA1 |
 |  | G1<br/>(Alice is a member) | User Administrator | Tenant | RA2 |
