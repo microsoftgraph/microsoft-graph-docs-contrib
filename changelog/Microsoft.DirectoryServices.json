@@ -454,16 +454,16 @@
         { 
           "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
           "ApiChange": "Method",
-          "ChangedApiName": "List transitiveRoleAssignments",
+          "ChangedApiName": "transitiveRoleAssignments",
           "ChangeType": "Addition",
-          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignment-list-transitive) method.",
+          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/rbacapplication-list-transitiveroleassignments) method to the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleAssignment"
         }
       ],
         "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2022-01-17T00:00:00.000Z",
+        "CreatedDateTime": "2022-03-01T00:00:00.000Z",
         "WorkloadArea": "Identity and Access",
         "SubArea": "Directory management"
     },
