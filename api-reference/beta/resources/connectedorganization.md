@@ -43,12 +43,12 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), a conne
 |modifiedBy|String|UPN of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+|identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable. Supports `$select` and `$filter`(`eq`). To filter by the derived types, you must declare the resource using its full OData cast, for example, `microsoft.graph.azureActiveDirectoryTenant.`|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable. Supports `$select` and `$filter`(`eq`). To filter by the derived types, you must declare the resource using its full OData cast, for example, `microsoft.graph.azureActiveDirectoryTenant.`|
 |internalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 |externalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 
