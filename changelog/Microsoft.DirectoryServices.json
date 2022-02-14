@@ -451,6 +451,14 @@
     },	  
     {
       "ChangeList": [
+        {
+          "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "transitiveRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **transitiveRoleAssignments** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-beta) resource.",
+          "Target": "rbacApplication"
+        },
         { 
           "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
           "ApiChange": "Method",
