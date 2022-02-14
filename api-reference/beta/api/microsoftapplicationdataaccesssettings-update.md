@@ -66,7 +66,6 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/mi
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
   "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
@@ -78,6 +77,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings",
 }
 -->
 ``` http
@@ -85,7 +85,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
   "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
