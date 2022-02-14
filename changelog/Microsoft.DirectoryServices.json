@@ -3,6 +3,146 @@
     {
       "ChangeList": [
         {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customAccountResetCredentialsUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAccountResetCredentialsUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customForgotMyPasswordText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customForgotMyPasswordText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customResetItNowText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customResetItNowText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "favicon",
+          "ChangeType": "Addition",
+          "Description": "Added the **favicon** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "faviconRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **faviconRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerBackgroundColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerBackgroundColor** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageTextVisibilitySettings** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageTextVisibilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta) resource.",
+          "Target": "loginPageTextVisibilitySettings"
+        }
+      ],
+      "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the [Create accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta) operation.",
+          "Target": "accessPackageResourceRequest"
+        }
+      ],
+      "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",

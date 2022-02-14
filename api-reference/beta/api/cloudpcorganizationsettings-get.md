@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+GET /deviceManagement/virtualEndpoint/organizationSettings
 ```
 
 ## Optional query parameters
@@ -57,12 +57,11 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOrgani
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/organizationSettings
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
