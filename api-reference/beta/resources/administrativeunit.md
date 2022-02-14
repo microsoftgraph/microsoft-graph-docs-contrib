@@ -28,8 +28,8 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
-|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
+|[Create](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
+|[List](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
