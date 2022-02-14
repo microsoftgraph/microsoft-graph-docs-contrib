@@ -1,5 +1,5 @@
 ---
-title: "findTenantInformationByTenantId"
+title: "tenantRelationships: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# findTenantInformationByTenantId
+# tenantRelationships: findTenantInformationByTenantId
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md).
+Given a tenant ID, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md). You can use this API to validate tenant information and use their **tenantId** to [configure cross-tenant B2B connect settings between you and the tenant](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,8 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /tenantRelationships/findTenantInformationByTenantId(tenantId='{id}')
 ```
 
-## Optional query parameters
-None.
+## Function parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that must be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+| tenantId | String | Unique tenant identifier of an Azure AD tenant. |
 
 ## Request headers
 |Name|Description|
@@ -53,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a [tenantInforma
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_tenantrelationshiproot"
+  "name": "tenantrelationshipsthis.findtenantinformationbytenantid"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationByTenantId(tenantId='tenant-id-value')
+GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationByTenantId(tenantId='6babcaad-604b-40ac-a9d7-9fd97c0b779f')
 ```
 
 
@@ -66,7 +71,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationBy
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.tenantRelationshipRoot"
+  "@odata.type": "microsoft.graph.tenantInformation"
 }
 -->
 ``` http
@@ -74,13 +79,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.tenantRelationshipRoot",
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#graph.tenantInformation",
-    "tenantId": "String (identifier)",
-    "federationBrandName": "The Contoso Company",
-    "displayName": "Contoso Production Tenant",
-    "defaultDomainName": "contoso.com"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.tenantInformation",
+    "tenantId": "6babcaad-604b-40ac-a9d7-9fd97c0b779f",
+    "federationBrandName": null,
+    "displayName": "Contoso, Ltd",
+    "defaultDomainName": "CONTOSO18839.onmicrosoft.com"
 }
 ```
