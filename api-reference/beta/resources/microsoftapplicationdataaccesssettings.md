@@ -19,8 +19,8 @@ Represents settings to allow invocation of internal APIs to all Microsoft applic
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccesssettings.md)|[microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md)|Get the _settings_ in an [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object for displaying Microsoft application data access setting in an organization.|
-|[Update microsoftApplicationDataAccessSettings](../api/microsoftapplicationdataaccesssettings-update.md)|[microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md)|Update the properties of a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object.|
+|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccesssettings.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Get the _settings_ in an [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object for displaying Microsoft application data access setting in an organization.|
+|[Update microsoftApplicationDataAccessSettings](../api/microsoftapplicationdataaccesssettings-update.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Update the properties of a [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object.|
 
 ## Properties
 
