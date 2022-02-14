@@ -11513,16 +11513,13 @@ items:
               href: api/unifiedRoleManagementPolicyRule-get.md
             - name: Update
               href: api/unifiedRoleManagementPolicyRule-update.md
-        - name: Tenant relationships
+        - name: Tenant information
           href: resources/tenantrelationships.md
           items:
-          - name: Tenant information
-            href: resources/tenantinformation.md
-            items:
-            - name: Find by domain name
-              href: api/tenantrelationships-findtenantinformationbydomainname.md
-            - name: Find by tenant ID
-              href: api/tenantrelationships-findtenantinformationbytenantid.md
+          - name: Find by domain name
+            href: api/tenantrelationships-findtenantinformationbydomainname.md
+          - name: Find by tenant ID
+            href: api/tenantrelationships-findtenantinformationbytenantid.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods

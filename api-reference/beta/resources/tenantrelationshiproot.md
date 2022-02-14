@@ -1,19 +1,19 @@
 ---
-title: "tenantRelationships resource type"
-description: "Represents how external tenants interact with your tenant."
+title: "tenantRelationshipRoot resource type"
+description: "Resource that exposes methods to retrieve basic identification information about Azure AD tenants."
 author: "adimitui"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# tenantRelationships resource type
+# tenantRelationshipRoot resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how external tenants interact with your tenant.
+Resource that exposes methods to retrieve basic identification information about Azure AD tenants. The information is exposed through the [tenantInformation](tenantinformation.md) resource and includes the tenant's domain name and unique ID.
 
 ## Methods
 |Method|Return type|Description|

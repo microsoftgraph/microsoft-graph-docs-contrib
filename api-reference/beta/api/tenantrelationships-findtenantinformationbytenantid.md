@@ -1,5 +1,5 @@
 ---
-title: "tenantRelationships: findTenantInformationByTenantId"
+title: "tenantRelationshipRoot: findTenantInformationByTenantId"
 description: "Given a tenant ID, search for a tenant and read its tenantInformation."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# tenantRelationships: findTenantInformationByTenantId
+# tenantRelationshipRoot: findTenantInformationByTenantId
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [tenantInforma
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "tenantrelationshipsthis.findtenantinformationbytenantid"
+  "name": "tenantrelationshiprootthis.findtenantinformationbytenantid"
 }
 -->
 ``` http
