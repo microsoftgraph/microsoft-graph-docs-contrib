@@ -2314,11 +2314,11 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### plannerContextState values
 
-|Member             |Value|Description|
-|:------------------|:----|:----------------------------------------------------------------------|
-|active             |0    | The context has no problems.                                          |
-|delinked           |1    | A formerly linked plannerPlanContext is no longer linked to the plan. |
-|unknownFutureValue |2    | Sentinel value to indicate future values.                             |
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |                             |
 
 
 ### policyScope values
