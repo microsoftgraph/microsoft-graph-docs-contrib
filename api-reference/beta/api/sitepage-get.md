@@ -37,7 +37,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -73,7 +73,7 @@ GET /sites/{site-id}/pages/{page-id}
 ---
 
 
-##### Response
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

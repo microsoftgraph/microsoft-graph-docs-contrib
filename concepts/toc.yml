@@ -88,7 +88,13 @@ items:
       - name: Users
         href: azuread-users-concept-overview.md
       - name: Groups
-        href: office365-groups-concept-overview.md
+        items:
+          - name: Overview
+            href: /graph/api/resources/groups-overview
+          - name: Microsoft 365 groups
+            href: office365-groups-concept-overview.md
+          - name: Configure group options
+            href: group-set-options.md
       - name: Applications
         items:
           - name: Overview
@@ -297,6 +303,10 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+                  - name: Configure the scope
+                    href: accessreviews-scope-concept.md
+                  - name: Assign reviewers
+                    href: accessreviews-reviewers-concept.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail
