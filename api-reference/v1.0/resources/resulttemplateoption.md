@@ -1,6 +1,6 @@
 ---
 title: "resultTemplateOption resource type"
-description: "Provides the search display layouts options for render connectors search results."
+description: "Provides the search result template options to render search results from connectors."
 ms.localizationpriority: medium
 author: "cristianv-ms"
 ms.prod: "search"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Provides the search result templates options for render connectors search results.
+Provides the search result template options to render search results from connectors.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the **resultTemplates** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). The result template is based on [Adaptive Cards](https://adaptivecards.io/). This property is optional.|
+|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the **resultTemplates** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-v1.0). The result template is based on [Adaptive Cards](https://adaptivecards.io/). Optional. |
 
 
 ## JSON representation
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
  {
-    "enableResultTemplate": true
+    "enableResultTemplate": "Boolean"
  }
 ```
 

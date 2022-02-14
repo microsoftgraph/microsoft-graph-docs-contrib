@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 {
   "originalQueryString": "String",
   "queryAlteration": "String",
-  "queryAlterationType": "suggestion"
+  "queryAlterationType": "String"
 }
 ```

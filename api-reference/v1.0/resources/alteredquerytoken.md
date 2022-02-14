@@ -36,8 +36,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "offset": 0,
-  "length": 6,
+  "length": "Int32",
+  "offset": "Int32",
   "suggestion": "String"
 }
 ```

@@ -132,23 +132,23 @@ Once the response is returned containing the collection of [searchBucket](search
 
 Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
 
-See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
+For examples that show how to use aggregation to enhance and narrow down search results, see [Refine search results](/graph/search-concept-aggregation).
 
 ## Request spelling correction
 
 Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md).
 
-In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+In the request body of the [query](/graph/api/search-query?view=graph-rest-v1.0) method, specify the **queryAlterationOptions** that should be applied to the query for the spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
 
 See [Request spelling correction](/graph/search-concept-speller) for examples that show how to use spelling corrections.
 
 ## Search display layout
 
-The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview) by using the display layout or the result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
 
-To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
+TTo get the result template in the [searchResponse](searchResponse.md) you have to set the **enableResultTemplate** property to **true**, which is defined in the [resultTemplateOptions](./resulttemplateoption.md) in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [searchHit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is part of the response.
 
-See [Use search display layout](/graph/search-concept-display-layout) for examples.
+For examples that show how to render search results, see [Use search display layout](/graph/search-concept-display-layout).
 
 ## Error handling
 
