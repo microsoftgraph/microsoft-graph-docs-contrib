@@ -23,6 +23,14 @@ The **plannerPlanContextDetails** resource contains additional information about
 |url|String|URL of the user experience represented by the associated **plannerPlanContext**. |
 |state|plannerContextState| Indicates the state of the associated **plannerPlanContext**. |
 
+### plannerContextState values
+
+|Member             |Value|Description|
+|:------------------|:----|:----------------------------------------------------------------------|
+|active             |0    | The context has no problems.                                          |
+|delinked           |1    | A formerly linked plannerPlanContext is no longer linked to the plan. |
+|unknownFutureValue |2    | Sentinel value to indicate future values.                             |
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -37,10 +45,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "url": "http://www.microsoft.com",
-  "customLinkText": "Visit Microsoft's home page.",
-  "displayLinkType": "other"
-  "state": "active"
+  "url": "string",
+  "customLinkText": "string",
+  "displayLinkType": {"@odata.type": "microsoft.graph.plannerPlanContextType"}
+  "state": {"@odata.type": "microsoft.graph.plannerContextState"}
 }
 
 ```
