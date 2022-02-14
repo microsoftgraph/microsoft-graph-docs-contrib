@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the microsoftApplicationDataAccessSettings resources from the microsoftApplicationDataAccessSettings navigation property.
+Get the microsoftApplicationDataAccessSettings resource from the microsoftApplicationDataAccessSettings navigation property.
 
 ## Permissions
 

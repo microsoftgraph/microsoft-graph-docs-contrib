@@ -26,8 +26,8 @@ Represents settings to allow invocation of internal APIs to all Microsoft applic
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForAllMicrosoftApplications|Boolean|`true` if all Microsoft applications can invoke internal APIs for users; `false` if all users without exceptions in the organization are able to invoke internal APIs using ONLY Office applications. Default is `true`. Optional.|
-|disabledForGroup|String|The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+|isEnabledForAllMicrosoftApplications|Boolean|When set to 'true', all users in the organization are allowed to invoke any M365 API using any Microsoft application (not restricted to Microsoft Office applications only). This is the default. It is possible to disable this for only a subset of users, by use of the security AAD group identified by the GUID given in `disabledForGroup`. <br> When set to 'false', users in the organization are able to invoke M365 APIs using Microsoft Office applications _only_.|
+|disabledForGroup|String|The ID of security AAD group whose members will _not_ be allowed to invoke M365 APIs using Microsoft applications not part of Microsoft Office. <br> This is only applicable if the property above is set to true.|
 
 ## Relationships
 
