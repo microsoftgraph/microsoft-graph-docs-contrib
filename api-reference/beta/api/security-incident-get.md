@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/security/incidents/{incidentId}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.incident"
+  "@odata.type": "microsoft.graph.security.incident"
 }
 -->
 

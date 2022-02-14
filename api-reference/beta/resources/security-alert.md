@@ -20,8 +20,8 @@ When a threat is detected, alerts are created in the system for an analyst to in
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List alerts](../api/security-list-alerts.md)|[alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
-|[Get alert](../api/security-alert-get.md)|[alert](security-alert.md)|Read the properties and relationships of an [alert](security-alert.md) object.|
+|[List alerts](../api/security-list-alerts.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of the [alert](security-alert.md) objects and their properties.|
+|[Get alert](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Read the properties and relationships of an [alert](security-alert.md) object.|
 
 
 ## Properties
@@ -30,11 +30,11 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |id|String|Unique identifier to represent the alert.|
 |providerAlertId|String|The ID of the alert as it appears in the provider product that generated the alert.|
 |incidentId|String|Unique identifier to represent the [incident](security-incident.md) this alert is associated with.|
-|status|[alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|severity|[alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|classification|[alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
-|determination|[alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|serviceSource|[serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |aadTenantId|String|The Azure Active Directory tenant the alert was created in.|
 |title|String|Brief identifying string value describing the alert.|
@@ -52,7 +52,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |resolvedDateTime|DateTimeOffset|Time when the alert was resolved.|
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
 |lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
-|comments|[alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
+|comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 
 ### alertClassification values 
 
@@ -176,3 +176,10 @@ The following is a JSON representation of the resource.
     ]
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.security"
+}
+-->

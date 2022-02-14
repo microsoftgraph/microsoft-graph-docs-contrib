@@ -1,5 +1,5 @@
 ---
-title: "Get cu"
+title: "Get alert"
 description: "Retrieve the properties and relationships of an security alert object."
 ms.date: 09/09/2021
 author: "BenAlfasi"
