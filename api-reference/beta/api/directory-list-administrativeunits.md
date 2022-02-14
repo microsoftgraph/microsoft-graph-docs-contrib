@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [administrativeUnit](../resources/administrativeunit.md) objects in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -55,6 +55,7 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits
+GET https://graph.microsoft.com/beta/directory/administrativeUnits
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunits-csharp-snippets.md)]
@@ -82,7 +83,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -95,14 +96,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "visibility": "visibility-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits",
+    "value": [
+        {
+            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+            "deletedDateTime": null,
+            "displayName": "Seattle District Technical Schools",
+            "description": "Seattle district technical schools administration",
+            "isMemberManagementRestricted": null,
+            "visibility": "HiddenMembership",
+            "membershipRule": null,
+            "membershipType": null,
+            "membershipRuleProcessingState": null
+        }
+    ]
 }
 ```
 

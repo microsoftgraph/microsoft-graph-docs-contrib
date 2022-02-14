@@ -44,10 +44,10 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|string|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
-|id|string|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
-|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
+|description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
+|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
+|id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
+|visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set (value is `null`), the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 ## Relationships
 | Relationship | Type	|Description|
