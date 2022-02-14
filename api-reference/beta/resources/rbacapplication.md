@@ -43,7 +43,7 @@ None
 |roleEligibilityScheduleInstances|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedRoleEligibilityScheduleInstance.md) collection| Instances of eligible role assignments through Azure AD Privileged Identity Management. |
 |roleEligibilityScheduleRequests|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) collection| Requests for eligible role assignments through Azure AD Privileged Identity Management. |
 |roleEligibilitySchedules|[unifiedRoleEligibilitySchedule](../resources/unifiedRoleEligibilitySchedule.md) collection| Schedule for eligible role assignments through Azure AD Privileged Identity Management. |
-
+|transitiveRoleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups that are transitive. |
 
 
 ## JSON representation
