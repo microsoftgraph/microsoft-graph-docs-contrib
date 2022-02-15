@@ -258,6 +258,22 @@ items:
             href: assignments-submissions-states-transition.md            
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md            
+          - name: Microsoft Graph Onboarding
+            items:
+              - name: Microsoft Partner Network
+                href: msgraph-onboarding-mpn.md
+              - name: Demo EDU Dev Tenant
+                href: msgraph-onboarding-devtenant.md
+              - name: Demo EDU Tenant
+                href: msgraph-onboarding-edutenant.md
+              - name: School Data Sync
+                href: msgraph-onboarding-sds.md
+              - name: Microsoft Teams
+                href: msgraph-onboarding-msteams.md
+              - name: Assignments
+                href: msgraph-onboarding-assignments.md
+              - name: Microsoft Graph Explorer
+                href: msgraph-onboarding-graphexplorer.md                                                                                            
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
