@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.
+Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object. The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md).  
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,8 +48,8 @@ You can specify the following properties when creating a **customAccessPackageWo
 |:---|:---|:---|
 |displayName|String|The display name of the custom extension.|
 |description|String|Description of the custom extension.|
-|endpointConfiguration |microsoft.graph. customExtensionEndPointConfiguration |The endpoint configuration type. First will be the configuration of calling a Logic App workflow.|
-|authenticationConfiguration |microsoft.graph.customExtensionAuthenticationConfiguration |Configuration for securing the API call. For example, using OAuth client-credentials.|
+|endpointConfiguration |[microsoft.graph.customExtensionEndPointConfiguration](../resources/customextensionendpointconfiguration.md) |The endpoint configuration type. First will be the configuration of calling a Logic App workflow.|
+|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call. For example, using OAuth client-credentials.|
 
 
 
