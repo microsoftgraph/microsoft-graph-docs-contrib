@@ -110,12 +110,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "433dafca-5047-4614-95f7-a03510b1ded3",
-  "requestType": "AdminAdd",
-  "requestState": "Delivered",
-  "requestStatus": "Fulfilled",
-  "isValidationOnly": false,
-  "createdDateTime": "2019-10-25T22:55:11.623Z"
+  "id": "c0cfd117-f90e-4f48-8226-e282a2ae752c", 
+  "requestType": "UserAdd", 
+  "requestState": "delivered", 
+  "requestStatus": "Delivered", 
+  "createdDateTime": "2022-01-07T00:51:12.817Z", 
+  "completedDate": "2022-01-07T00:53:15.127Z", 
+  "schedule": { 
+      "startDateTime": null, 
+      "recurrence": null, 
+      "expiration": { 
+          "endDateTime": null, 
+          "duration": null, 
+          "type": "notSpecified"
+        } 
+    }, 
+    "customExtensionHandlerInstances": [ 
+        { 
+            "status": "requestReceived", 
+            "externalCorrelationId": "08585600902100964604743022906CU13", 
+            "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498", 
+            "stage": "assignmentRequestCreated" 
+        } 
+
+    ] 
+
+} 
 }
 ```
 
