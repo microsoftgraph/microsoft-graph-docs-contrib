@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_microsoftapplicationdataaccesssetting_request"
+  "name": "list_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
-  "name": "list_microsoftapplicationdataaccesssetting_response"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
+  "name": "list_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http

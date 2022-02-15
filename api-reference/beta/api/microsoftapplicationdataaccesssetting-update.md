@@ -61,7 +61,7 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 
 <!-- {
   "blockType": "request",
-  "name": "update_microsoftapplicationdataaccesssetting_request"
+  "name": "update_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http
@@ -78,8 +78,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
-  "name": "update_microsoftapplicationdataaccesssetting_response"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
+  "name": "update_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http
