@@ -48,7 +48,7 @@ The following table lists the properties that are required to create a chat obje
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
-|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
+|members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list. Each member must be assigned with corresponding role as `owner` or `guest`. Guest tenant user must be assigned with  `guest` role.|
 |installedApps| [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 
 > **Note:** Currently, only one app installation is supported. If multiple app installations are listed in the request, the response will be a `Bad Request` error.
@@ -93,6 +93,43 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Example 2: Create a group chat with a guest tenant user
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_chat_oneOnOne"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/chats
+Content-Type: application/json
+
+{
+  "chatType": "group",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+    },
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["owner"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+    }
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "roles": ["guest"],
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98')"
+    }
+  ]
+}
+```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
