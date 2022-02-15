@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: enumPageType
 ---
 
-# dataType enum type
+#accessPackageCustomExtensionHandlerStatus enum type
 
 Namespace: microsoft.graph
 
