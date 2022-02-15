@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 #### Request
 
+Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from invoking M365 APIs using Microsoft applications not part of Microsoft Office.
+
 # [HTTP](#tab/http)
 
 <!-- {
