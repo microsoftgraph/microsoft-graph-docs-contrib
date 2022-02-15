@@ -1,6 +1,6 @@
 ---
 title: "accessReviewStage: filterByCurrentUser"
-description: "Returns all accessReviewStage objects for a given reviewer."
+description: "Return all accessReviewStage objects for a given reviewer."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns all [accessReviewStage](../resources/accessReviewStage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
+Return all [accessReviewStage](../resources/accessReviewStage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
