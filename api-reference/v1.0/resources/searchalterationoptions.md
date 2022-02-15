@@ -17,8 +17,8 @@ Provides the search alteration options for spelling correction.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggestions for spelling correction in [queryAlterationResponse](/graph/api/resources/alterationresponse?view=graph-rest-v1.0) for typos in query. Optional.|
-|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query **when there are no results** for the original query with typos and get the spelling modification information in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). Optional.|
+|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, the user will get the search results for the corrected query *in case of no results* for the original query with typos. The [response](/graph/api/resources/searchresponse) will also include the spelling modification information in the **queryAlterationResponse** property. Optional.
+|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, the user will get the search results for the original search query and suggestions for spelling correction in the **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse) for the typos in the query. Optional.
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "enableSuggestion": true,
-  "enableModification": true
+  "enableModification": "Boolean",
+  "enableSuggestion": "Boolean"
 }
 ```
 
