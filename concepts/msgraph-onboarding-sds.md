@@ -31,10 +31,10 @@ To access the School Data Sync Admin Portal launch a private web browser, naviga
    ![Sync options](./images/msgraph-onboarding/sds3-syncoptions.png)
 
 5. Once uploaded, select an arbitrary stop date in the future, click **Next**.
-   - In a production scenario you would usually choose to sync existing users. 
-   - For a more detailed instruction on the sync process see [How to deploy School Data Sync by using CSV files](https://docs.microsoft.com/en-us/SchoolDataSync/how-to-deploy-school-data-sync-by-using-csv-files).
+   - In a production scenario you would usually choose to sync existing users.
+   - For a more detailed instruction on the sync process see [How to deploy School Data Sync by using CSV files](https://docs.microsoft.com/SchoolDataSync/how-to-deploy-school-data-sync-by-using-csv-files).
 
-   ![Sync options](./images/msgraph-onboarding/sds5-date.png)
+   ![Sync options date](./images/msgraph-onboarding/sds5-date.png)
 
 6. On the Teacher options page make sure that faculty licenses are selected and click **Next**.
 
@@ -62,4 +62,4 @@ To access the School Data Sync Admin Portal launch a private web browser, naviga
 
 ## Next steps
 
-* [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)
+- [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)

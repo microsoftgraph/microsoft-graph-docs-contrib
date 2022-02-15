@@ -26,7 +26,7 @@ Press Submit after providing all the required information.
 | Purpose | Resource |
 |--------------|-------------|
 | Develop for the Microsoft 365 Platform     | [https://developer.microsoft.com/en-us/microsoft-365/?utm_source=developermscom](https://developer.microsoft.com/en-us/microsoft-365/?utm_source=developermscom) |
-| Develop for Microsoft Graph                | [https://docs.microsoft.com/en-us/graph/](https://docs.microsoft.com/en-us/graph/) |
+| Develop for Microsoft Graph                | [https://docs.microsoft.com/en-us/graph/](https://docs.microsoft.com/graph/) |
 | Create a Teams app                         | [https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL2#ex4](https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL2#ex4) |
 
 ## See also

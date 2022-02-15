@@ -260,6 +260,8 @@ items:
             href: education-build-notificationchannelurl.md            
           - name: Microsoft Graph Onboarding
             items:
+              - name: Overview
+                href: msgraph-onboarding-overview.md
               - name: Microsoft Partner Network
                 href: msgraph-onboarding-mpn.md
               - name: Demo EDU Dev Tenant

@@ -33,7 +33,7 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
 
 5. Enter `https://graph.microsoft.com/v1.0/education/classes` in the query field and press **Run query** to fetch a list of classes.
 
-   ![Get Schools](./images/msgraph-onboarding/explorer5-classes.png)
+   ![Get Classes](./images/msgraph-onboarding/explorer5-classes.png)
 
 6. Take the first class Id `740202c8-5db7-4496-a055-9f3c9fd98207` to get its assignments.
    - Enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments` in the query field.
@@ -80,4 +80,4 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
 
 ## Next steps
 
-* [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)
+- [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)
