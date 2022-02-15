@@ -80,8 +80,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
 }
 -->
 ``` http
