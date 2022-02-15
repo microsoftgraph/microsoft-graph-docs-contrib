@@ -24,7 +24,7 @@ Used for the **approvalStages** property of approval settings in the **requestAp
 | isEscalationEnabled |Boolean | If true, then one or more escalation approvers are configured in this approval stage. |
 | escalationTimeInMinutes |Int32 | If escalation is required, the time a request can be pending a response from a primary approver. |
 | primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md). |
-| escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md).|
+| escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md).  If there are no escalation approvers or escalation approvers are not required, the value should be an empty collection.|
 
 
 
