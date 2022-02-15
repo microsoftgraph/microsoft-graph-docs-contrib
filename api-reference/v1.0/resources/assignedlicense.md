@@ -16,8 +16,8 @@ Represents a license assigned to a user. The **assignedLicenses** property of th
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|disabledPlans|Guid collection|A collection of the unique identifiers for plans that have been disabled.|
-|skuId|Guid|The unique identifier for the SKU.|
+|disabledPlans|GUID collection|A collection of the unique identifiers for plans that have been disabled.|
+|skuId|GUID|The unique identifier for the SKU.|
 
 ## JSON representation
 
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["GUID"],
+  "skuId": "GUID"
 }
 
 ```

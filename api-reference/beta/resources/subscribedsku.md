@@ -31,7 +31,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 |id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |
 |servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| Information about the service plans that are available with the SKU. Not nullable |
-|skuId|Guid| The unique identifier (GUID) for the service SKU. |
+|skuId|GUID| The unique identifier (GUID) for the service SKU. |
 |skuPartNumber|String| The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC". To get a list of commercial subscriptions that an organization has acquired, see [List subscribedSkus](../api/subscribedsku-list.md). |
 
 ## Relationships
@@ -52,14 +52,14 @@ The following is a JSON representation of the resource
 
 ```json
 {
-  "appliesTo": "string",
-  "capabilityStatus": "string",
+  "appliesTo": "String",
+  "capabilityStatus": "String",
   "consumedUnits": 1024,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "prepaidUnits": {"@odata.type": "microsoft.graph.licenseUnitsDetail"},
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "guid",
-  "skuPartNumber": "string"
+  "skuId": "GUID",
+  "skuPartNumber": "String"
 }
 
 ```
