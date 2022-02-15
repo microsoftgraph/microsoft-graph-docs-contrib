@@ -81,7 +81,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings"
 }
 -->
 ``` http
