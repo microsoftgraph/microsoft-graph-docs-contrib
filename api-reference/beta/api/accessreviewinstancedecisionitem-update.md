@@ -1,6 +1,6 @@
 ---
 title: "Update accessReviewInstanceDecisionItem"
-description: "Update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
+description: "Update an existing accessReviewInstanceDecisionItem object for which the calling user is the reviewer."
 ms.localizationpriority: medium
 author: "isabelleatmsft"
 ms.prod: "governance"
@@ -28,13 +28,13 @@ One of the following permissions is required to call this API. Delegated permiss
 
 ## HTTP request
 
-Update a decision on an accessReviewInstance
+To update a decision on an accessReviewInstance:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Update a decision on a stage of an accessReviewInstance that has multiple stages
+To update a decision on a stage of an accessReviewInstance that has multiple stages:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
