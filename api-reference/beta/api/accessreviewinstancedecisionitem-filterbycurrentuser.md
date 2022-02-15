@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstanceDecisionItem: filterByCurrentUser"
-description: "Retrieves all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
+description: "Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
+Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
 
 >[!NOTE]
->The default page size for this API is 100 accessReviewInstanceDecisionItem objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+>The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Retrieve decisions for an instance of an access review for which the calling user is the reviewer.
+To retrieve decisions for an instance of an access review for which the calling user is the reviewer:
 <!-- {
   "blockType": "ignored"
 }
@@ -38,7 +38,7 @@ Retrieve decisions for an instance of an access review for which the calling use
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-Retrieve decisions for a stage in an instance of an access review for which the calling user is the reviewer.
+To retrieve decisions for a stage in an instance of an access review for which the calling user is the reviewer:
 <!-- {
   "blockType": "ignored"
 }
@@ -75,7 +75,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 
 ## Examples
 
-### Example 1: Retrieves all decisions on an accessReviewInstance for which the calling user is the reviewer.
+### Example 1: Retrieve all decisions on an accessReviewInstance for which the calling user is the reviewer
 
 #### Request
 
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieves all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer.
+### Example 2: Retrieve all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer
 
 #### Request
 
