@@ -12415,11 +12415,26 @@ items:
               href: api/accessreviewinstance-list-contactedreviewers.md
             - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
-            - name: Access review instance decision item
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
+          - name: Access review stage
+            href: resources/accessreviewstage.md
+            items:
               - name: List
+                href: api/accessreviewinstance-list-stages.md
+              - name: Get
+                href: api/accessreviewstage-get.md
+              - name: Update
+                href: api/accessreviewstage-update.md
+              - name: Filter by current user
+                href: api/accessreviewstage-filterbycurrentuser.md
+              - name: Stop
+                href: api/accessreviewstage-stop.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+              - name: List decisions from an instance
                 href: api/accessreviewinstance-list-decisions.md
+              - name: List decisions from a stage of an instance
+                href: api/accessreviewstage-list-decisions.md
               - name: Get
                 href: api/accessreviewinstancedecisionitem-get.md
               - name: Filter by current user
