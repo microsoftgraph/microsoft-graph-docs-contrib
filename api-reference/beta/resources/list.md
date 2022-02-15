@@ -107,7 +107,7 @@ The **list** resource has the following relationships to other resources.
 
 ## JSON representation
 
-Here is a JSON representation of a **list** resource.
+The following is a JSON representation of the resource.
 
 <!-- { "blockType": "resource", 
        "@odata.type": "microsoft.graph.list",
