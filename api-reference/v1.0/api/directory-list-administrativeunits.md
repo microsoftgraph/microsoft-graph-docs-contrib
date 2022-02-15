@@ -84,7 +84,8 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

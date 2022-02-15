@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits
+GET /directory/administrativeUnits
 ```
 ## Optional query parameters
 This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -55,7 +56,6 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits
-GET https://graph.microsoft.com/beta/directory/administrativeUnits
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunits-csharp-snippets.md)]
@@ -84,7 +84,8 @@ GET https://graph.microsoft.com/beta/directory/administrativeUnits
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
