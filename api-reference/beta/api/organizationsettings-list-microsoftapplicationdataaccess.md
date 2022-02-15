@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account) | User.Read.All, User.ReadWrite.All |
+|Delegated (work or school account) | Organization.Read.All, Organization.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Not supported. |
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /organization/{organizationId}/settings/microsoftApplicationDataAccessSetting
+GET /organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
 
 ## Request headers
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_microsoftapplicationdataaccesssetting"
+  "name": "list_microsoftapplicationdataaccesssetting_request"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccessSetting
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
 
 ### Response
@@ -66,8 +66,8 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.microsoftApplicationDataAccessSetting)"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
+  "name": "list_microsoftapplicationdataaccesssetting_response"
 }
 -->
 ``` http
@@ -75,13 +75,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
-      "isEnabledInOrganization": true,
-      "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
+  "isEnabledInOrganization": true,
+  "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
 

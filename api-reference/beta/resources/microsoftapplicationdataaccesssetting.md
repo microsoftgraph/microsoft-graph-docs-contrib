@@ -1,6 +1,6 @@
 ---
 title: "microsoftApplicationDataAccessSetting resource type"
-description: "**TODO: Add Description**"
+description: "Represents setting for allowing invoking M365 APIs using any Microsoft application (not only Microsoft Office applications)"
 author: "ttomi"
 ms.localizationpriority: medium
 ms.prod: "insights"

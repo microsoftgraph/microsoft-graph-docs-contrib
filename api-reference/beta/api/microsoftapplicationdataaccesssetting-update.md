@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|User.ReadWrite.All|
+|Delegated (work or school account)|Organization.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -55,15 +55,13 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-#### Request
+### Request
 
 Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from invoking M365 APIs using Microsoft applications not part of Microsoft Office.
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
-  "name": "update_microsoftapplicationdataaccesssetting"
+  "name": "update_microsoftapplicationdataaccesssetting_request"
 }
 -->
 ``` http
@@ -75,12 +73,13 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
+  "name": "update_microsoftapplicationdataaccesssetting_response"
 }
 -->
 ``` http
