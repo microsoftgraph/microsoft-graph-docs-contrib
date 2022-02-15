@@ -1,6 +1,6 @@
 ---
 title: "resultTemplate resource type"
-description: "A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates."
+description: "Represents a dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates."
 ms.localizationpriority: medium
 author: "cristianv-ms"
 ms.prod: "search"
@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A dictionary of **resultTemplateIds** and associated values, which includes the name and JSON schema of the result templates.
+Represents a dictionary of **resultTemplateIds** and associated values, which includes the name and JSON schema of the result templates.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String|ID of a result template. It must map to a **resultTemplateId** in the [searchHit](searchhit.md).|
-|displayName|String|Name of the result template.|
 |body|Json|JSON schema of the result template.|
+|displayName|String|Name of the result template.|
+|key|String|ID of a result template. The **key** property must map to a **resultTemplateId** in the [searchHit](searchhit.md) collection.|
 
 ## JSON representation
 

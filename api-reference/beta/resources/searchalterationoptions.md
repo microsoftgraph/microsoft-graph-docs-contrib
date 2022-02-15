@@ -37,8 +37,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "enableSuggestion": true,
-  "enableModification": true
+  "enableModification": true,
+  "enableSuggestion": true
 }
 ```
 

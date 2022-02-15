@@ -17,7 +17,7 @@ Provides the search result template options to render search results from connec
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the **resultTemplates** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-v1.0). The result template is based on [Adaptive Cards](https://adaptivecards.io/). Optional. |
+|enableResultTemplate|Boolean|Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the **resultTemplates** property of the [response](/graph/api/resources/searchresponse). The result template is based on [Adaptive Cards](https://adaptivecards.io/). Optional. |
 
 
 ## JSON representation

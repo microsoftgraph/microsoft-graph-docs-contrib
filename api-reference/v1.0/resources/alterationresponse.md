@@ -18,8 +18,8 @@ Provides information related to spelling corrections in the alteration response.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |originalQueryString|String| Defines the original user query string.|
-|queryAlteration|[searchAlteration](searchalteration.md)| Defines the details of alteration information for the spelling correction.|
-|queryAlterationType|searchAlterationType| Defines the type of the spelling correction. Possible values are `suggestion`, `modification`.|
+|queryAlteration|[searchAlteration](searchalteration.md)| Defines the details of the alteration information for the spelling correction.|
+|queryAlterationType|searchAlterationType| Defines the type of the spelling correction. Possible values are: `suggestion`, `modification`.|
 
 ## JSON representation
 
