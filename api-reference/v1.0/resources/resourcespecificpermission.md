@@ -1,7 +1,7 @@
 ---
 title: "resourceSpecificPermission resource type"
 description: "Resource-specific permissions can be used to access specific instances of a resource."
-author: "phsignor"
+author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
