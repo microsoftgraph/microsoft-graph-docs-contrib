@@ -1,19 +1,19 @@
 ---
-title: "List microsoftApplicationDataAccessSettings"
-description: "Get the microsoftApplicationDataAccessSettings resources from the microsoftApplicationDataAccessSettings navigation property."
+title: "List microsoftApplicationDataAccessSetting"
+description: "Get the microsoftApplicationDataAccessSetting resources from the microsoftApplicationDataAccessSetting navigation property."
 author: "ttomi"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
 
-# List microsoftApplicationDataAccessSettings
+# List microsoftApplicationDataAccessSetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the microsoftApplicationDataAccessSettings resource from the microsoftApplicationDataAccessSettings navigation property.
+Get the microsoftApplicationDataAccessSetting resource from the microsoftApplicationDataAccessSetting navigation property.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
+GET /organization/{organizationId}/settings/microsoftApplicationDataAccessSetting
 ```
 
 ## Request headers
@@ -47,18 +47,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoftApplicationDataAccessSetting](../resources/microsoftapplicationdataaccesssetting.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_microsoftapplicationdataaccesssettings"
+  "name": "list_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccessSetting
 ```
 
 ### Response
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.microsoftApplicationDataAccessSettings)"
+  "@odata.type": "Collection(microsoft.graph.microsoftApplicationDataAccessSetting)"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
+      "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
       "isEnabledInOrganization": true,
       "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
     }

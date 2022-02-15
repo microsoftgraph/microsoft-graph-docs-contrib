@@ -1,5 +1,5 @@
 ---
-title: "microsoftApplicationDataAccessSettings resource type"
+title: "microsoftApplicationDataAccessSetting resource type"
 description: "**TODO: Add Description**"
 author: "ttomi"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
-# microsoftApplicationDataAccessSettings resource type
+# microsoftApplicationDataAccessSetting resource type
 
 Namespace: microsoft.graph
 
@@ -19,8 +19,8 @@ Represents settings to allow invocation of internal APIs to all Microsoft applic
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccesssettings.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Get the _settings_ in an [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object for displaying Microsoft application data access setting in an organization.|
-|[Update microsoftApplicationDataAccessSettings](../api/microsoftapplicationdataaccesssettings-update.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Update the properties of a [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object.|
+|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md)|[microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md)|Get the _settings_ in an [microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md) object for displaying Microsoft application data access setting in an organization.|
+|[Update microsoftApplicationDataAccessSetting](../api/microsoftapplicationdataaccesssetting-update.md)|[microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md)|Update the properties of a [microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md) object.|
 
 ## Properties
 
@@ -38,14 +38,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings",
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
+  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
   "isEnabledForAllMicrosoftApplications": "Boolean",
   "disabledForGroup": "String"
 }

@@ -1,19 +1,19 @@
 ---
-title: "Update microsoftApplicationDataAccessSettings"
-description: "Update the properties of a microsoftApplicationDataAccessSettings object."
+title: "Update microsoftApplicationDataAccessSetting"
+description: "Update the properties of a microsoftApplicationDataAccessSetting object."
 author: "ttomi"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
 
-# Update microsoftApplicationDataAccessSettings
+# Update microsoftApplicationDataAccessSetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object.
+Update the properties of a [microsoftApplicationDataAccessSetting](../resources/microsoftapplicationdataaccesssetting.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PUT /organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
+PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ PUT /organization/{organizationId}/settings/microsoftApplicationDataAccessSettin
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoftApplicationDataAccessSetting](../resources/microsoftapplicationdataaccesssetting.md) object in the response body.
 
 ## Examples
 
@@ -63,15 +63,14 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 
 <!-- {
   "blockType": "request",
-  "name": "update_microsoftapplicationdataaccesssettings"
+  "name": "update_microsoftapplicationdataaccesssetting"
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccessSettings
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccess
 Content-Type: application/json
 
 {
-  "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
@@ -81,7 +80,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting"
 }
 -->
 ``` http
