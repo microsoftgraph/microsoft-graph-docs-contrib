@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Retrieve a decision on an accessReviewInstance
+To retrieve a decision on an accessReviewInstance:
 <!-- {
   "blockType": "ignored"
 }
@@ -34,7 +34,7 @@ Retrieve a decision on an accessReviewInstance
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Retrieve a decision from a stage of an accessReviewInstance
+To retrieve a decision from a stage of an accessReviewInstance:
 
 <!-- {
   "blockType": "ignored"
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 
 ## Examples
 
-### Example 1: Retrieves a decision on an accessReviewInstance
+### Example 1: Retrieve a decision on an accessReviewInstance
 
 #### Request
 
@@ -148,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieves a decision from a stage of a multi-stage access review
+### Example 2: Retrieve a decision from a stage of a multi-stage access review
 
 #### Request
 <!-- {
