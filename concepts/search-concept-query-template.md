@@ -7,9 +7,10 @@ ms.prod: "search"
 ---
 
 # Use QueryTemplate Microsoft Search API
-QueryTemplate provides a way to template user query.
+Microsoft Search API provides a way to template user query.
+Client side developers can restrict the query scope through KQL, FQL and Query Variables to help build their own search experience. 
 
-## Example 1: Use KQL in queryTemplate
+## Example : Use KQL in queryTemplate
 
 ### Request
 
