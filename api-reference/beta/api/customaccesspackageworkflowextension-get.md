@@ -1,0 +1,97 @@
+---
+title: "Get customAccessPackageWorkflowExtension"
+description: "Read the properties and relationships of a customAccessPackageWorkflowExtension object."
+author: "currenme"
+ms.localizationpriority: medium
+ms.prod: "governance"
+doc_type: apiPageType
+---
+
+# Get customAccessPackageWorkflowExtension
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the properties and relationships of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|EntitlementManagement.Read.All EntitlementManagement.ReadWrite.All |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|EntitlementManagement.Read.All EntitlementManagement.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId} /customAccessPackageWorkflowExtensions/{customExtensionID}
+```
+
+## Optional query parameters
+This method supports the `$select` OData query parameter to retrieve specific properties. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object in the response body.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_customaccesspackageworkflowextension"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customExtensionID}
+```
+
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAccessPackageWorkflowExtension"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{ 
+    "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customExtensionID}", 
+
+    "id": "98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0", 
+    "displayName": "test_action_0124_email", 
+    "description": "this is for graph testing only", 
+    "createdDateTime": "2022-01-24T21:48:57.15Z", 
+    "lastModifiedDateTime": "2022-01-24T21:55:44.953Z", 
+    "clientConfiguration": null, 
+    "endpointConfiguration": { 
+        "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
+        "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
+        "resourceGroupName": "xiaojil", 
+        "logicAppWorkflowName": "elm-extension-email" 
+    }, 
+    "authenticationConfiguration": { 
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication", 
+        "resourceId": "eed6dee9-7ff7-44a5-8980-c11e8886cea2" 
+    } 
+} 
+```
+

@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. An access package catalog might also have linked resources that are used in those access packages to provide access. To view or change the membership of catalog-scoped roles, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 
-
 ## Methods
 
 | Method       | Return Type | Description |
@@ -28,6 +27,8 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 | [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
+|[List customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-list.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get the customAccessPackageWorkflowExtension resources from the customAccessPackageWorkflowExtension navigation property.|
+|[Create customAccessPackageWorkflowExtension](../api/customextensionhandler-post-customextension.md)|[customAccessPackageWorkflowExtension](../resources/customextension.md)|Create a new customAccessPackageWorkflowExtension object.|
 
 ## Properties
 
@@ -51,6 +52,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable. Supports `$expand`.|
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
+|customAccessPackageWorkflowExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Read-only.|
 
 ## JSON representation
 
