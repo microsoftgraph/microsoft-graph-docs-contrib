@@ -55,11 +55,9 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-### Example 1: Update data access settings for microsoft applications
-
 #### Request
 
-##### [HTTP](#tab/http)
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
