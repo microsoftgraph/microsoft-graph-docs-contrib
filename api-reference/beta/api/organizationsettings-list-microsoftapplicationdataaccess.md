@@ -66,6 +66,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
   "name": "list_microsoftapplicationdataaccesssetting"
 }
@@ -76,7 +77,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
-  "isEnabledInOrganization": true,
+  "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```

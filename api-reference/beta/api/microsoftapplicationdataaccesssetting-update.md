@@ -78,6 +78,7 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "truncated": true,
   "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
   "name": "update_microsoftapplicationdataaccesssetting"
 }
@@ -87,6 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
   "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
