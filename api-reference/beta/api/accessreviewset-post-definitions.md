@@ -64,14 +64,12 @@ If successful, this method returns a `201 Created` response code and an [accessR
 
 ### Example 1: Create an access review on a group
 
-This is an example of creating an access review with the following settings:
-+ The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
-+ A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
+The following example creates an access review with the following settings:
++ The review reviews all members of a group with the **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ A specific user with the user **id** `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer.
 + It recurs weekly and continues indefinitely.
 
 #### Request
-In the request body, supply a JSON representation of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -213,7 +211,7 @@ Content-type: application/json
 
 ### Example 2: Create an access review on all teams with inactive guest users
 
-This is an example of creating an access review with the following settings:
+The following example creates an access review with the following settings:
 + The review reviews all teams with inactive guest users. The period of inactivity is 30 days from the start date of the access review.
 + The group owners are the reviewers and fallback reviewers are assigned.
 + It recurs on the third day of every quarter and continues indefinitely.
@@ -391,7 +389,7 @@ Content-type: application/json
 ```
 ### Example 3: Create an access review of all users to an application
 
-This is an example of creating an access review with the following settings:
+The following example creates an access review with the following settings:
 + The review reviews user access to an application.
 + The people managers are the reviewers and fallback reviewers are the members of a group.
 + It recurs semi-annually and ends 1 year from the startDate.
@@ -575,11 +573,11 @@ Content-type: application/json
 
 ### Example 4: Create an access review on a group with multiple stages
 
-This is an example of creating an access review with the following settings:
-+ The review reviews all members of a group, whose group **id** is `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
-+ It has two stages
-+ A specific user, whose user **id** is `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer for the first stage.
-+ The people managers are the reviewers and fallback reviewers are the members of a group for the second stage.
+The following example creates an access review with the following settings:
++ The review reviews all members of a group with the **id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ It has two stages:
+  + A specific user with the user **id** `398164b1-5196-49dd-ada2-364b49f99b27` is the reviewer for the first stage.
+  + The people managers are the reviewers and fallback reviewers for the second stage.
 + It recurs weekly and continues indefinitely.
 
 #### Request
