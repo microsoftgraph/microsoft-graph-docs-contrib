@@ -38,7 +38,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|Guid collection|A collection of GUIDs that identify the licenses to remove.|
+|removeLicenses|GUID collection|A collection of GUIDs that identify the licenses to remove.|
 
 ## Response
 
@@ -62,7 +62,7 @@ Content-type: application/json
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "guid"
+      "skuId": "45715bb8-13f9-4bf6-927f-ef96c102d394"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
