@@ -9,29 +9,27 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Outlook resources in Microsoft Graph
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. The [subscription](/graph/api/resources/webhooks?preserve-view=true) approach reduces the delay between the time of a change and receiving its notification. In addition, when setting up a subscription, you can specify notifications to include resource data, thereby avoiding a separate subsequent API call to get the resource payload.
+The Microsoft Graph API lets you subscribe to changes to a resource, including creation, update, or deletion of the resource, and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes for a specific resource, and a URL for an endpoint to receive notifications of such changes. Setting up a subscription reduces the overhead to otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to have notifications include the data that has changed in the resource, saving a separate subsequent API call to get the resource payload.
 
-A maximum of 1000 active subscriptions per mailbox for all applications is allowed for Outlook resources.
+There is a maximum limit of 1000 active subscriptions for Outlook resources per mailbox for all applications. You can subscribe to changes in contacts, events, or messages in the mailbox.
 
-## Subscribe to changes in mail, calendar or contacts
+## Subscribe to changes in contacts, calendar, or mail
 
-To subscribe to change notifications of Outlook resources, first create a [subscription](/graph/api/subscription-post-subscriptions?preserve-view=true).
+To subscribe to change notifications of Outlook resources, first create a [subscription](/graph/api/subscription-post-subscriptions).
 
-The following user resources are supported:
+The following Outlook resources support subscriptions with or without resource data in the notification payload.
 
 - [contact](/graph/api/resources/contact)
 - [event](/graph/api/resources/event)
 - [message](/graph/api/resources/message)
 
-The above resources support creation of subscriptions with and without resource data in the notification payload.
+## Create a subscription
 
-## Creating a subscription
+To [create a subscription](webhooks.md#creating-a-subscription), specify the Outlook resource and the type of changes (creation, update, or deletion) for which you want to receive notifications. See an [example](#example-1-create-a-subscription-to-get-change-notifications-without-resource-data-when-the-user-receives-a-new-message).
 
-To [create a subscription](webhooks.md#creating-a-subscription), you need to specify the Outlook resource for which you want to receive notifications when the requested type of changes (created, updates or deleted) occur. See an [example](#example-1-create-a-subscription-to-get-change-notifications-without-resource-data-when-the-user-receives-a-new-message).
+### Request permissions
 
-### Permissions
-
-Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. Outlook change notifications support delegated and application permission scopes. Depending on the resource the permission specified in the following table is the least privileged required to call this API.
+Creating a subscription requires a read scope to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. Outlook change notifications support delegated and application permission scopes. Depending on the resource the permission specified in the following table is the least privileged required to call this API.
 - Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission 
   Calendars.Read to subscribe to events in another user’s mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
@@ -45,12 +43,12 @@ Creating a subscription requires read scope to the resource. For example, to get
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
 |[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
-### Including resource data in notification payload (preview)
+### Include resource data in notification payload (preview)
 
 Notifications with resource data for Outlook resources is currently available only in Microsoft Graph Beta endpoint. To have resource data included in the change notification, the following properties **must** be specified in addition to those usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
-- **resource** which specifies the subscription resource url **must** use the `$select` query parameter to explicitly specify the resource properties to be included in the notification payload for Outlook resources.
+- **resource** which specifies the resource URL **must** use the `$select` query parameter to explicitly specify the Outlook resource properties to include in the notification payload.
 > **Note:** $top, $skip, $orderby, $select=Body,UniqueBody and $expand other than SingleValueExtendedProperties,MultiValueExtendedProperties are not supported in subscription resource Url.
 - **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each change notification, which certificate to use for decryption.
@@ -70,20 +68,22 @@ If you don’t use a $filter when creating the subscription:
 - Reading a message in the folder, marking the message as read, or changing any other property of a message in that folder would result in an `Updated` notification.
 - Deleting the message would result in a `Delete` notification.
 
-### Subscribing to subscription lifecycle notifications
+### Subscribe to lifecycle notifications
 The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
 
-### Subscription Lifetime
-The maximum time a subscription can last for an Outlook resource is 4320 minutes for notification without resource data and 1 day for notification with resource data; however, [subscriptions can be renewed](/graph/api/subscription-update) until the caller has permissions to access to resource.
+### Keep track of subscription lifetime
+Make sure to renew a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4320 minutes (under 3 days), and 1 day with resource data. 
 
-## Notification payloads
+You can [renew a subscription](/graph/api/subscription-update) until you get permissions to access the resource.
 
-Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the 
-resource payload along with the notification, which removes the need to call back and get the content.
+## Receive notification payloads
 
-### Notifications with resource data (preview)
+Depending on your subscription, notifications come with or without resource data. Subscribing with resource data allows you to get the 
+resource payload along with the notification, avoiding the overhead for a separate API call to get the changed resource data.
 
-For notifications with resource data, the payload looks like the following.  In the example below, the payload is for a notification corresponding to the outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification.
+### Receive notifications with resource data (preview)
+
+The payload of a notification with resource data looks like the following.  In the example below, the payload is for a notification corresponding to the Outlook **message** resource. The  **resource** and **resourceData** properties represent the **message** resource that triggered the notification. Use the **encryptedContent** property to decrypt the resource data.
 
 ```json
 {
@@ -116,7 +116,7 @@ For notifications with resource data, the payload looks like the following.  In 
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the outlook [message](/graph/api/resources/message?preserve-view=true) schema. The payload is similar to that returned by GET operations. However, only those properties are returned in the notification payload that are specified using `$select` while specifying the _resource_ during subscription creation. Notification for other outlook entities like [contacts](/graph/api/resources/contact?preserve-view=true), [calendar](/graph/api/resources/calendar?preserve-view=true) follow their respective schemas. 
+The decrypted notification payload looks like the following. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification for other Outlook entities like [contacts](/graph/api/resources/contact), [calendar](/graph/api/resources/calendar) follow their respective schemas. 
 
 ```json
 {
@@ -137,11 +137,14 @@ The decrypted notification payload looks like the following. The decrypted paylo
 }
 ```
 
-### Notifications without resource data
+### Receive notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate, because the actual resource data is not sent over.
 
-The payload looks like the following. This payload is for a message sent in a channel.
+The next example shows the payload of a notification that corresponds to an Outlook **message** resource. It includes the **resource** and **resourceData** properties, which represent the resource that triggered the notification. Use the **resource** and **@odata.id** properties to make calls to Microsoft Graph to get the payload of the resource.
+
+> **Note** GET calls always return the current state of the resource. If the resource is changed between the time the notification is sent and the time the resource is retrieved, the operation returns only the state of the resource on retrieval.
+
 
 ```json
 "value": [
@@ -161,9 +164,7 @@ The payload looks like the following. This payload is for a message sent in a ch
  }
 ]
 ```
-Previous example above shows a notification that corresponds to a outlook message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
-> **Note** GET calls will always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation will return the updated resource.
 
 ## Examples
 
