@@ -45,17 +45,17 @@ PATCH /me/settings/contactMergeSuggestions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|`true` if duplicate contact merge suggestions feature is enabled for user; `false` if duplicate contact merge suggestions feature is disabled. Default is `true`.|
+|isEnabled|Boolean|`true` if the duplicate contact merge suggestions feature is enabled for user; `false` if the feature is disabled. Default is `true`.|
 
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and the value is updated in the backend.
+If successful, this method returns a `204 No Content` response code and the value is updated on the backend.
 
 ## Examples
 
-The following is an example request on how user updates "**isEnabled**" privacy setting in order to disable the duplicate contacts merge suggestions feature.
+The following example updates the **isEnabled** privacy setting to disable the duplicate contacts merge suggestions feature.
 
 ### Request
 <!-- {
@@ -77,7 +77,6 @@ Content-Type: application/json
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "update_contactmergesuggestions"

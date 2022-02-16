@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), for Delve,  for [item insights](../resources/officegraphinsights.md) and for [contactMergeSuggestions](../resources/contactmergesuggestions.md).
+Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), for Delve, for [item insights](../resources/officegraphinsights.md), and for [contactMergeSuggestions](../resources/contactmergesuggestions.md).
 
 Manage user's locale-based preferences: 
   - Determining what language and regional formatting a user prefers to view applications with.
@@ -31,8 +31,8 @@ Configure the visibility of [itemInsights](../resources/iteminsights.md) and [me
   - Checking whether a user's item and meeting hours insights are enabled.
   - Disabling or enabling item and meeting hours insights for specific user.
 
-Configure the visibility of [contactMergeSuggestions](../resources/contactmergesuggestions.md).
-  - Checking whether a user's duplicate contacts merge suggestions are enabled.
+Configure the visibility of [contactMergeSuggestions](../resources/contactmergesuggestions.md):
+  - Determining whether a user's duplicate contacts merge suggestions are enabled.
   - Disabling or enabling the duplicate contacts merge suggestions for a specific user.
 
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).

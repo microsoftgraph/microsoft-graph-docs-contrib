@@ -1,6 +1,6 @@
 ---
 title: "contactMergeSuggestions resource type"
-description: "Represents a user privacy settings to merge duplicate-contacts suggestions. The user may have the option to enable / disable the feature from privacy settings."
+description: "Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list"
 author: "jagadeesh-vadivel"
 ms.localizationpriority: medium
 ms.prod: "personal-contacts"
@@ -19,13 +19,13 @@ Users have the option to enable or disable the feature in the privacy settings f
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/contactmergesuggestions-get.md)|[contactMergeSuggestions](contactmergesuggestions.md)|Read the properties of a **contactMergeSuggestions** setting.|
-|[Update](../api/contactmergesuggestions-update.md)|NA |Update the properties of a **contactMergeSuggestions** setting.|
+|[Get](../api/contactmergesuggestions-get.md)|[contactMergeSuggestions](contactmergesuggestions.md)|Read the properties of a **contactMergeSuggestions** object.|
+|[Update](../api/contactmergesuggestions-update.md)|None |Update the properties of a **contactMergeSuggestions** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|`true` if duplicate contact merge suggestions feature is enabled for user; `false` if duplicate contact merge suggestions feature is disabled. Default is `true`.|
+|isEnabled|Boolean|`true` if the duplicate contact merge suggestions feature is enabled for the user; `false` if the feature is disabled. Default value is `true`.|
 
 ## Relationships
 None.
