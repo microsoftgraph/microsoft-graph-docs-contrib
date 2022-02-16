@@ -58,7 +58,7 @@ The following example shows how to call this API.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignore",
+  "blockType": "ignored",
   "name": "user_revokesigninsessionss"
 }-->
 ```http
