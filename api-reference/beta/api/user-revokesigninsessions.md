@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code.
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 ---
 
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true
