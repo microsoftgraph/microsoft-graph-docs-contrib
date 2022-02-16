@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloud PC snapshot.
+Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system.
 
 
 Inherits from [entity](../resources/entity.md).
