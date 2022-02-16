@@ -3,7 +3,7 @@ title: "contactMergeSuggestions resource type"
 description: "Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list"
 author: "jagadeesh-vadivel"
 ms.localizationpriority: medium
-ms.prod: "personal-contacts"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
