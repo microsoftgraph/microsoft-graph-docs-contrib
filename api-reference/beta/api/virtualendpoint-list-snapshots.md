@@ -1,6 +1,6 @@
 ---
 title: "List snapshots"
-description: "Get a list of the cloudPcSnapshot objects and their properties."
+description: "Get a list of cloudPcSnapshot objects and their properties."
 author: "xintaozMS"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.
+Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
