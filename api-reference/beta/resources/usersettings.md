@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), for Delve and for [item insights](../resources/officegraphinsights.md).
+Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), for Delve, for [item insights](../resources/officegraphinsights.md), and for [contactMergeSuggestions](../resources/contactmergesuggestions.md).
 
 Manage user's locale-based preferences: 
   - Determining what language and regional formatting a user prefers to view applications with.
@@ -30,6 +30,10 @@ Manage Delve accessibility:
 Configure the visibility of [itemInsights](../resources/iteminsights.md) and [meeting hours insights](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1). ItemInsights are derived between users and other items (such as documents or sites) in Microsoft 365:
   - Checking whether a user's item and meeting hours insights are enabled.
   - Disabling or enabling item and meeting hours insights for specific user.
+
+Configure the visibility of [contactMergeSuggestions](../resources/contactmergesuggestions.md):
+  - Determining whether a user's duplicate contacts merge suggestions are enabled.
+  - Disabling or enabling the duplicate contacts merge suggestions for a specific user.
 
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
@@ -56,6 +60,7 @@ To learn how to get or update user settings, see [Get settings](../api/usersetti
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
+|contactMergeSuggestions|[contactMergeSuggestions](contactmergesuggestions.md)| The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.|
 
 ## JSON representation
 
