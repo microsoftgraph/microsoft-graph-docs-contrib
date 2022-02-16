@@ -3,7 +3,7 @@ title: "contactMergeSuggestions resource type"
 description: "Represents a user privacy settings to merge duplicate-contacts suggestions. The user may have the option to enable / disable the feature from privacy settings."
 author: "jagadeesh-vadivel"
 ms.localizationpriority: medium
-ms.prod: "outlook"
+ms.prod: "personal-contacts"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user privacy settings to merge duplicate-contacts suggestions. The user may have the option to enable / disable the feature from privacy settings.
+Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list.
+Users have the option to enable or disable the feature in the privacy settings for Outlook. By default, suggestion is enabled. This resource provides a programmatic alternative to enable or disable this feature. Duplicate contact items remain as duplicates in the contact folder unless the user selects merging them.
 
 ## Methods
 |Method|Return type|Description|

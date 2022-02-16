@@ -325,26 +325,26 @@ items:
         - name: Reminder view
           href: api/user-reminderview.md
       - name: Contacts
-        href: resources/contact.md
         items:
-        - name: Create contact
-          href: api/user-post-contacts.md
-        - name: Create contact folder
-          href: api/user-post-contactfolders.md
-        - name: List contacts
-          href: api/user-list-contacts.md
-        - name: List contact folders
-          href: api/user-list-contactfolders.md
-        - name: Merge duplicate contacts
+        - name: Contact
+          href: resources/contact.md
           items:
-          - name: User control (preview)
-            items:
-            - name: Contact merge suggestions
-              href: resources/contactmergesuggestions.md
-            - name: Get
-              href: api/contactmergesuggestions-get.md
-            - name: Update
-              href: api/contactmergesuggestions-update.md
+          - name: Create contact
+            href: api/user-post-contacts.md
+          - name: Create contact folder
+            href: api/user-post-contactfolders.md
+          - name: List contacts
+            href: api/user-list-contacts.md
+          - name: List contact folders
+            href: api/user-list-contactfolders.md
+        - name: Contact merge suggestions (preview)
+          items:
+          - name: Contact merge suggestions
+            href: resources/contactmergesuggestions.md
+          - name: Get
+            href: api/contactmergesuggestions-get.md
+          - name: Update
+            href: api/contactmergesuggestions-update.md
       - name: Delegated permission grants
         items:
         - name: List delegated permission grants
@@ -13459,6 +13459,14 @@ items:
           href: api/contactfolder-post-contacts.md
         - name: Get contact delta
           href: api/contact-delta.md
+      - name: Contact merge suggestions (preview)
+        items:
+        - name: Contact merge suggestions 
+          href: resources/contactmergesuggestions.md
+        - name: Get
+          href: api/contactmergesuggestions-get.md 
+        - name: Update
+          href: api/contactmergesuggestions-update.md
       - name: Extended properties
         items:
         - name: Overview
