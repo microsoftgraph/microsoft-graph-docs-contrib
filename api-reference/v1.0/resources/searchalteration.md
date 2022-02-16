@@ -1,6 +1,6 @@
 ---
 title: "searchAlteration resource type"
-description: "Provides the details of search alteration for spelling correction."
+description: "Provides the details about the search alteration for spelling correction."
 ms.localizationpriority: medium
 author: "nmoreau"
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Provides the details of search alteration for spelling correction.
+Provides the details about the search alteration for spelling correction.
 
 ## Properties
 

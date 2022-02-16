@@ -17,12 +17,12 @@ Represents a single result within the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|contentSource|String|The name of the content source which the **externalItem** is part of .|
 |hitId|String|The internal identifier for the item.|
 |rank|Int32|The rank or the order of the result.|
-|contentSource|String|The name of the content source which the **externalItem** is part of .|
-|summary|String|A summary of the result, if a summary is available.|
 |resultTemplateId|String|ID of the result template used to render the search result. This ID must map to a display layout in the **resultTemplates** dictionary that is also included in the [searchResponse](searchresponse.md).|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
+|summary|String|A summary of the result, if a summary is available.|
 
 ## JSON representation
 
@@ -39,11 +39,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "hitId": "String",
-  "rank": 1,
-  "summary": "String",
   "contentSource": "String",
-  "resource": { "@odata.type": "microsoft.graph.entity" }
+  "hitId": "String",
+  "rank": "Int32",
+  "resultTemplateId": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
+  "summary": "String"
 }
 ```
 
