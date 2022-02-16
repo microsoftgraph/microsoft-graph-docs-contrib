@@ -50,8 +50,8 @@ You must define **service** or (**servicePlanId** _and_ **skuId**) for this acti
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | The name of the service to activate. |
-| servicePlanId | Guid | The plan identifier of the service plan to activate. |
-| skuId | Guid | The SKU identifier of the service plan. |
+| servicePlanId | GUID | The plan identifier of the service plan to activate. |
+| skuId | GUID | The SKU identifier of the service plan. |
 
 ## Response
 
