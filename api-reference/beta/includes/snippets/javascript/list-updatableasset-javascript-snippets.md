@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let exclusions = await client.api('/admin/windows/updates/deployments/{deploymentId}/audience/exclusions')
+let updatableAssets = await client.api('/admin/windows/updates/updatableAssets')
 	.version('beta')
 	.get();
 

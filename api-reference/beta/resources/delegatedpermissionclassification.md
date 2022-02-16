@@ -23,7 +23,7 @@ Delegated permission classifications can be used in combination with user consen
 |:---------------|:--------|:----------|
 | id | String | A unique identifier for the **delegatedPermissionClassification** Key. Not nullable. Read-only. |
 | classification | permissionClassificationType | The classification value being given. Possible value: `low`. Does not support `$filter`. |
-| permissionId | Guid | The unique identifier (**id**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Does not support `$filter`. |
+| permissionId | GUID | The unique identifier (**id**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Does not support `$filter`. |
 | permissionName | String | The claim value (**value**) for the delegated permission listed in the **publishedPermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Does not support `$filter`. |
 
 ## JSON representation

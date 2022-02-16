@@ -8103,6 +8103,25 @@ items:
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
+          - name: Oem warranty
+            href: resources/intune-devices-oemwarranty.md
+          - name: Oem warranty information on-boarding
+            href: resources/intune-devices-oemwarrantyinformationonboarding.md
+            items:
+            - name: List
+              href: api/intune-devices-oemwarrantyinformationonboarding-list.md
+            - name: Get
+              href: api/intune-devices-oemwarrantyinformationonboarding-get.md
+            - name: Create
+              href: api/intune-devices-oemwarrantyinformationonboarding-create.md
+            - name: Delete
+              href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
+            - name: Update
+              href: api/intune-devices-oemwarrantyinformationonboarding-update.md
+            - name: enable action
+              href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
+            - name: disable action
+              href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
           - name: Operating system upgrade eligibility
             href: resources/intune-devices-operatingsystemupgradeeligibility.md
           - name: Os version count
@@ -8718,6 +8737,23 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
+          - name: User experience analytics work from anywhere model performance
+            href: resources/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md
+            items:
+            - name: List
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-list.md
+            - name: Get
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-get.md
+            - name: Create
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-create.md
+            - name: Delete
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
+            - name: Update
+              href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
+          - name: Warranty offer
+            href: resources/intune-devices-warrantyoffer.md
+          - name: Warranty type
+            href: resources/intune-devices-warrantytype.md
           - name: Windows defender product status
             href: resources/intune-devices-windowsdefenderproductstatus.md
           - name: Windows defender scan action result
@@ -10561,16 +10597,16 @@ items:
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
-        - name: Get assignment settings
+        - name: Get
           href: api/educationassignmentsettings-get.md
-        - name: Update assignment settings
+        - name: Update
           href: api/educationassignmentsettings-update.md
       - name: Assignment defaults
         href: resources/educationassignmentdefaults.md
         items:
-        - name: Get assignment defaults
+        - name: Get
           href: api/educationassignmentdefaults-get.md
-        - name: Update assignment defaults
+        - name: Update
           href: api/educationassignmentdefaults-update.md
       - name: Category
         href: resources/educationcategory.md
@@ -10586,13 +10622,13 @@ items:
       - name: Rubric
         href: resources/educationrubric.md
         items:
-        - name: Create rubric
+        - name: Create
           href: api/educationuser-post-rubrics.md
-        - name: Get rubric
+        - name: Get
           href: api/educationrubric-get.md
-        - name: Update rubric
+        - name: Update
           href: api/educationrubric-update.md
-        - name: Delete rubric
+        - name: Delete
           href: api/educationrubric-delete.md
       - name: Submission
         href: resources/educationsubmission.md
@@ -10659,12 +10695,12 @@ items:
       - name: Synchronization profile status
         href: resources/educationsynchronizationprofilestatus.md
         items:
-        - name: Get sync status
+        - name: Get
           href: api/educationsynchronizationprofilestatus-get.md
       - name: Synchronization errors
         href: resources/educationsynchronizationerror.md
         items:
-        - name: Get sync errors
+        - name: Get
           href: api/educationsynchronizationerrors-get.md
     - name: Extensions
       items:
@@ -11663,6 +11699,42 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
+        - name: Cross-tenant access (preview)
+          items:
+          - name: Overview
+            href: resources/crosstenantaccesspolicy-overview.md
+          - name: Policy
+            items:
+            - name: Cross-tenant access policy
+              href: resources/crosstenantaccesspolicy.md
+            - name: Get
+              href: api/crosstenantaccesspolicy-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicy-update.md
+          - name: Default settings
+            items:
+            - name: Cross-tenant access default settings
+              href: resources/crosstenantaccesspolicyconfigurationdefault.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+            - name: Reset to system default
+              href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+          - name: Partner settings
+            items:
+            - name: Cross-tenant access partner settings
+              href: resources/crosstenantaccesspolicyconfigurationpartner.md
+            - name: List
+              href: api/crosstenantaccesspolicy-list-partners.md
+            - name: Create
+              href: api/crosstenantaccesspolicy-post-partners.md
+            - name: Get
+              href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+            - name: Update
+              href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+            - name: Delete
+              href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -11715,6 +11787,28 @@ items:
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
               href: api/riskyusers-dismiss.md
+          - name: Service principal risk detection
+            items:
+            - name: Risk detection
+              href: resources/serviceprincipalriskdetection.md
+            - name: List
+              href: api/identityprotectionroot-list-serviceprincipalriskdetections.md
+            - name: Get
+              href: api/serviceprincipalriskdetection-get.md
+          - name: Risky service principal
+            items:
+            - name: Risky service principal
+              href: resources/riskyserviceprincipal.md
+            - name: List risky service principals
+              href: api/identityprotectionroot-list-riskyserviceprincipals.md
+            - name: Get risky service principal
+              href: api/riskyserviceprincipal-get.md
+            - name: List history
+              href: api/riskyserviceprincipal-list-history.md 
+            - name: Confirm compromised
+              href: api/riskyserviceprincipal-confirmcompromised.md 
+            - name: Dismiss
+              href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
           items:
           - name: Identity provider base
@@ -11898,6 +11992,15 @@ items:
                 href: api/fido2authenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/fido2authenticationmethodconfiguration-delete.md
+            - name: X509 certificate
+              href: resources/x509Certificateauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/x509certificateauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/x509certificateauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/x509certificateauthenticationmethodconfiguration-delete.md
             - name: Microsoft Authenticator policy
               href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
               items:
@@ -12312,11 +12415,26 @@ items:
               href: api/accessreviewinstance-list-contactedreviewers.md
             - name: List pending approval (deprecated)
               href: api/accessreviewinstance-pendingaccessreviewinstances.md
-            - name: Access review instance decision item
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
+          - name: Access review stage
+            href: resources/accessreviewstage.md
+            items:
               - name: List
+                href: api/accessreviewinstance-list-stages.md
+              - name: Get
+                href: api/accessreviewstage-get.md
+              - name: Update
+                href: api/accessreviewstage-update.md
+              - name: Filter by current user
+                href: api/accessreviewstage-filterbycurrentuser.md
+              - name: Stop
+                href: api/accessreviewstage-stop.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+              - name: List decisions from an instance
                 href: api/accessreviewinstance-list-decisions.md
+              - name: List decisions from a stage of an instance
+                href: api/accessreviewstage-list-decisions.md
               - name: Get
                 href: api/accessreviewinstancedecisionitem-get.md
               - name: Filter by current user

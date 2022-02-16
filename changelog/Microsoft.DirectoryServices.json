@@ -9,12 +9,368 @@
           "ChangeType": "Addition",
           "Description": "Added the [customPasswordAddition](https://docs.microsoft.com/en-us/graph/api/resources/passwordcredentialconfiguration?view=graph-rest-beta) enum to passwordCredentialConfiguration",
           "Target": "appCredentialRestrictionType"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customAccountResetCredentialsUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAccountResetCredentialsUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customCannotAccessYourAccountText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customCannotAccessYourAccountText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customForgotMyPasswordText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customForgotMyPasswordText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customResetItNowText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customResetItNowText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customPrivacyAndCookiesText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customPrivacyAndCookiesText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "customTermsOfUseText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customTermsOfUseText** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "favicon",
+          "ChangeType": "Addition",
+          "Description": "Added the **favicon** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "faviconRelativeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **faviconRelativeUrl** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "headerBackgroundColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **headerBackgroundColor** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **loginPageTextVisibilitySettings** property to the [organizationalBrandingProperties](https://docs.microsoft.com/en-us/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource.",
+          "Target": "organizationalBrandingProperties"
+        },
+        {
+          "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loginPageTextVisibilitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [loginPageTextVisibilitySettings](https://docs.microsoft.com/en-us/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta) resource.",
+          "Target": "loginPageTextVisibilitySettings"
         }
       ],
-      "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
+      "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:00",
+      "WorkloadArea": "Identity and access ",
+      "SubArea": " Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `EntitlementManagement.ReadWrite.All` application permission to the [Create accessPackageResourceRequest](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta) operation.",
+          "Target": "accessPackageResourceRequest"
+        }
+      ],
+      "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-10T00:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantRelationshipAccessPolicyBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource. Represents the base policy in the directory that cross-tenant access policies inherit from.",
+          "Target": "tenantRelationshipAccessPolicyBase"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
+          "Target": "crossTenantAccessPolicy"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationDefault](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta) resource and related methods. Represents the default configuration defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationDefault"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Target": "crossTenantAccessPolicyConfigurationPartner"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
+          "Target": "crossTenantAccessPolicyInboundTrust"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyConfigurationBase"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
+          "Target": "crossTenantAccessPolicyB2BSetting"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
+          "Target": "crossTenantAccessPolicyTarget"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
+          "Target": "crossTenantAccessPolicyTargetConfiguration"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetConfigurationType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
+        },
+        {
+          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "crossTenantAccessPolicyTargetType",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossTenantAccessPolicyTargetType** enumeration.",
+          "Target": "crossTenantAccessPolicyTargetType"
+        }
+      ],
+      "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-07T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "x509CertificateAuthenticationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMode](https://docs.microsoft.com/en-us/?view=graph-rest-beta) enumeration type.",
+          "Target": "x509CertificateAuthenticationMode"
+        },
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "x509CertificateRuleType",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateRuleType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) enumeration type.",
+          "Target": "x509CertificateRuleType"
+        },
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationModeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationModeConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource. Use this resource to define the strong authentication configurations for the X.509 certificate.",
+          "Target": "x509CertificateAuthenticationModeConfiguration"
+        },
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateRule](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource. Use this resource to define the strong authentication configuration rules for the X.509 certificate.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateUserBinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateUserBinding](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource. Use this resource to map the fields in the X.509 certificate to attributes of the Azure AD user object in order to bind the certificate to the user account.",
+          "Target": "x509CertificateUserBinding"
+        },
+        {
+          "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource and related methods. Represents the details of the Azure AD native Certificate-Based Authentication (CBA) in the tenant including whether the authentication method is enabled or disabled and the users and groups who can register and use it.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-27T22:17:51.760961Z",
+      "CreatedDateTime": "2022-02-03T00:00:00.8027648Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-1.0) resource.",
+          "Target": "servicePlanInfo"
+        }
+      ],
+      "Id": "0f3be1ec-d352-4eb8-ad76-c8e1e1a615eb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-02-01T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeAssignment.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeAssignment.Read.All` delegated and application permissions to read the **customSecurityAttributes** property of the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeAssignment.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeAssignment.Read.All` delegated and application permissions to read the **customSecurityAttributes** property of the [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+          "ApiChange": "Permission",
+          "ChangedApiName": "CustomSecAttributeDefinition.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `CustomSecAttributeDefinition.Read.All` delegated and application permissions to the read operations of the [customSecurityAttributeDefinition](https://docs.microsoft.com/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta) resource.",
+          "Target": "customSecurityAttributeDefinition"
+        }
+      ],
+      "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-04T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5198730-2bcb-4253-a18c-bf7d5b494386",
+          "ApiChange": "Property",
+          "ChangedApiName": "provisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added `ErrorStatus` to the list of possible values for the **provisioningStatus** property of the [servicePlanInfo](https://docs.microsoft.com/graph/api/resources/serviceplaninfo?view=graph-rest-beta) resource.",
+          "Target": "servicePlanInfo"
+        }
+      ],
+      "Id": "b5198730-2bcb-4253-a18c-bf7d5b494386",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-01T00:00:00.3698793",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
