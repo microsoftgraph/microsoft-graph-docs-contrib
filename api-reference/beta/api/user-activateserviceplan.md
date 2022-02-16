@@ -49,8 +49,8 @@ In the request body, provide a JSON object with the following parameter:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | PlanId of the ServicePlan to activate. |
-| skuId | Guid | SkuId of SKU the service plan is on. |
+| servicePlanId | GUID | PlanId of the ServicePlan to activate. |
+| skuId | GUID | SkuId of SKU the service plan is on. |
 
 ## Response
 

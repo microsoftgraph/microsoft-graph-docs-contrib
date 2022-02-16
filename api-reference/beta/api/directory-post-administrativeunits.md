@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits
-
+POST /directory/administrativeUnits
 ```
 ## Request headers
 | Name      |Description|
@@ -97,7 +97,7 @@ In the request body, supply a JSON representation of an [administrativeUnit](../
 ### Response
 
 The following is an example of the response. 
-> Note: The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
