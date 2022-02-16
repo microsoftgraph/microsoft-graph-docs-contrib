@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for APIs to manage Cloud PC.
+Represents a container for APIs to manage Cloud PCs.
 
-Use the Cloud PC API to provision and manage virtual desktops for employees in an organization. Use it in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
+Use the Cloud PC API to provision and manage virtual desktops for employees in an organization, or along with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
 ## Methods
 
@@ -35,13 +35,13 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |[List auditEvents](../api/virtualendpoint-list-auditevents.md)|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|List properties and relationships of the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects.|
 |[List supportedRegions](../api/virtualendpoint-list-supportedregions.md)|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|List properties and relationships of the [cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) objects.|
 |[List servicePlans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List properties and relationships of the [cloudPcServicePlan](../resources/cloudpcserviceplan.md) objects.|
-|[List snapshots](../api/virtualendpoint-list-snapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|List properties and relationships of the [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects.|
+|[List snapshots](../api/virtualendpoint-list-snapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) objects and their properties.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the virtual endpoint id. Read-only.|
+|id|String|The unique identifier for the virtual endpoint. Read-only.|
 
 ## Relationships
 
