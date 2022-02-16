@@ -184,6 +184,8 @@ Content-type: application/json
 
 If changes have occurred, a collection of changed user objects is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. Implement the same pattern of following the `nextLink` and persist the final `deltaLink` for future calls.
 
+>**Note:** This request might have replication delays for users that were recently created, updated, or deleted. Retry the `nextLink` or `deltaLink` after some time to retrieve the latest changes.
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
