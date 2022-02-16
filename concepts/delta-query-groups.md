@@ -8,13 +8,13 @@ ms.custom: graphiamtop20
 
 # Get incremental changes for groups
 
-The [delta query](./delta-query-overview.md) in Microsoft Graph lets you query for additions, deletions, or updates to [supported resources](delta-query-overview.md#supported-resources). It's enabled through a series of [delta](/graph/api/group-delta?view=graph-rest-1.0) requests. For groups, the delta query enables you to discover changes without fetching the entire set of groups to compare changes.
+The [delta query](./delta-query-overview.md) in Microsoft Graph lets you query for additions, deletions, or updates to [supported resources](delta-query-overview.md#supported-resources). It's enabled through a series of [delta](/graph/api/group-delta?) requests. For groups, the delta query enables you to discover changes without fetching the entire set of groups to compare changes.
 
 Clients that synchronize groups with a local profile store can use the delta query for both their initial full synchronization along with subsequent incremental synchronizations. Typically, a client would do an initial full synchronization of all the groups in a tenant, and then, get incremental changes to groups periodically.
 
 ## Track changes to groups
 
-Track groups changes through one or more GET requests with the **delta** function. The GET request is like a [list groups](/graph/api/group-list?view=graph-rest-1.0) request, except with the following extra objects in the URL:
+Track groups changes through one or more GET requests with the **delta** function. The GET request is like a [list groups](/graph/api/group-list?) request, except with the following extra objects in the URL:
 
 - The **delta** function.
 - A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 ### Initial response
 
-If successful, this method returns `200 OK` response code and [group](/graph/api/resources/group?view=graph-rest-1.0) collection object in the response body. If the entire set of groups is too large to fit in one response, a `nextLink` containing a state token will also be included.
+If successful, this method returns `200 OK` response code and [group](/graph/api/resources/group) collection object in the response body. If the entire set of groups is too large to fit in one response, a `nextLink` containing a state token will also be included.
 
 In this example, a `nextLink` was included; the original `$select` query parameter is encoded in the state token.
 
@@ -247,7 +247,7 @@ Some things to note about the example response above:
 
 - `members@delta` contains the following changes to the group membership.
 
-  - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that. Only users that have been permanently deleted are removed from groups. Users that have been temporary deleted keep their group memberships and won't appear in the delta result until they're permanently deleted. For details, see [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-1.0).
+  - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that. Only users that have been permanently deleted are removed from groups. Users that have been temporary deleted keep their group memberships and won't appear in the delta result until they're permanently deleted. For details, see [directory (deleted items)](/graph/api/resources/directory).
 
   - The second user has been added to the group.
 

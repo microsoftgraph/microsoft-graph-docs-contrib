@@ -8,13 +8,13 @@ ms.custom: graphiamtop20
 
 # Get incremental changes for users
 
-The [delta query](./delta-query-overview.md) in Microsoft Graph lets you query for additions, deletions, or updates to [supported resources](delta-query-overview.md#supported-resources). It is enabled through a series of [delta](/graph/api/user-delta?view=graph-rest-1.0) requests. For users, the delta query enables you to discover changes without fetching the entire set of users to compare changes.
+The [delta query](./delta-query-overview.md) in Microsoft Graph lets you query for additions, deletions, or updates to [supported resources](delta-query-overview.md#supported-resources). It is enabled through a series of [delta](/graph/api/user-delta) requests. For users, the delta query enables you to discover changes without fetching the entire set of users to compare changes.
 
 Clients that synchronize users with a local profile store can use the delta query for both their initial full synchronization along with subsequent incremental synchronizations. Typically, a client would do an initial full synchronization of all the users in a tenant, and then, get incremental changes to users periodically.
 
 ## Track changes to users
 
-Track user changes through one or more GET requests with the **delta** function. The GET request is like a [list users](/graph/api/user-list?view=graph-rest-1.0) request, except with the following extra objects in the URL:
+Track user changes through one or more GET requests with the **delta** function. The GET request is like a [list users](/graph/api/user-list) request, except with the following extra objects in the URL:
 
 - The **delta** function.
 - A [state token](./delta-query-overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ### Initial response
 
-If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user?view=graph-rest-1.0) collection object in the response body. Assuming the entire set of users is too large, the response will also include a `nextLink` state token in an `@odata.nextLink` parameter.
+If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. Assuming the entire set of users is too large, the response will also include a `nextLink` state token in an `@odata.nextLink` parameter.
 
 In this example, a `nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. The `$select` query parameter from the initial request is encoded into the `nextLink` URL.
 
