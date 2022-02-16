@@ -48,7 +48,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code.
 
 >[!NOTE]
 >This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
@@ -99,7 +99,13 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
+    "value": true
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
