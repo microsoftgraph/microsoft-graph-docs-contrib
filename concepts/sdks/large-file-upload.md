@@ -40,9 +40,10 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
     var fileUploadTask =
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
+    var totalLength = fileStream.Length;
     // Create a callback that is invoked after each slice is uploaded
     IProgress<long> progress = new Progress<long>(prog => {
-        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
+        Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
     });
 
     try
@@ -225,9 +226,10 @@ int maxSliceSize = 320 * 1024;
 var fileUploadTask =
     new LargeFileUploadTask<FileAttachment>(uploadSession, fileStream, maxSliceSize);
 
+var totalLength = fileStream.Length;
 // Create a callback that is invoked after each slice is uploaded
 IProgress<long> progress = new Progress<long>(prog => {
-    Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
 });
 
 try
