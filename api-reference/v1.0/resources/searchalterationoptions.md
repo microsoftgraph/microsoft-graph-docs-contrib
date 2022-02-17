@@ -11,16 +11,14 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides the search alteration options for spelling correction.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query **when there are no results** for the original query with typos and get the spelling modification information in **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true). Optional.|
-|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, the user will get the search results for the original search query and suggestions for spelling correction in the **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true) for the typos in the query. Optional.|
+|enableModification|Boolean|Indicates whether spelling modifications are enabled. If enabled, the user will get the search results for the corrected query *in case of no results* for the original query with typos. The [response](/graph/api/resources/searchresponse) will also include the spelling modification information in the **queryAlterationResponse** property. Optional.|
+|enableSuggestion|Boolean|Indicates whether spelling suggestions are enabled. If enabled, the user will get the search results for the original search query and suggestions for spelling correction in the **queryAlterationResponse** property of the [response](/graph/api/resources/searchresponse) for the typos in the query. Optional.|
 
 ## JSON representation
 
