@@ -10152,6 +10152,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC snapshot
+          href: resources/cloudpcsnapshot.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-snapshots.md
+          - name: Get
+            href: api/cloudpcsnapshot-get.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:
@@ -11188,7 +11195,7 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device member of
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
