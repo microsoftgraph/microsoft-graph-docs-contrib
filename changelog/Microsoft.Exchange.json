@@ -3,61 +3,11 @@
     {
       "ChangeList": [
         {
-          "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-          "ApiChange": "Property",
-          "ChangedApiName": "includeResourceData",
-          "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **includeResourceData** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription) resource to `true` enables change notifications to include resource data.",
-          "Target": "subscription"
-        },
-        {
-          "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-          "ApiChange": "Property",
-          "ChangedApiName": "encryptionCertificate",
-          "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificate** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact) resource to a certificate with a public key enables encrypting and including resource data as part of a change notification.",
-          "Target": "subscription"
-        },
-        {
-          "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-          "ApiChange": "Property",
-          "ChangedApiName": "encryptionCertificateId",
-          "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificateId** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact) resource allows an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
-          "Target": "subscription"
-        },
-        {
-          "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-          "ApiChange": "Property",
-          "ChangedApiName": "encryptedContent",
-          "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **encryptedContent** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification) contains the encrypted data of the changed resource and related information to decrypt it.",
-          "Target": "subscription"
-        },
-        {
-          "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-          "ApiChange": "Property",
-          "ChangedApiName": "resourceData",
-          "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **resourceData** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification) identifies the changed resource.",
-          "Target": "subscription"
-        }
-      ],
-      "Id": "df91e796-3966-4551-a231-a55bd669e34f",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-02-17T00:00:00.000Z",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
           "ApiChange": "Property",
           "ChangedApiName": "includeResourceData",
           "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **includeResourceData** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription) resource to `true` enables change notifications to include resource data.",
+          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources, setting the **includeResourceData** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource to `true` enables change notifications to include resource data.",
           "Target": "subscription"
         },
         {
@@ -65,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptionCertificate",
           "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificate** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact) resource to a certificate with a public key enables encrypting and including resource data as part of a change notification.",
+          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources, setting the **encryptionCertificate** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource to a certificate with a public key enables encrypting and including resource data as part of a change notification.",
           "Target": "subscription"
         },
         {
@@ -73,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptionCertificateId",
           "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificateId** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact) resource allows an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
+          "Description": "When [creating a subscription](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources, setting the **encryptionCertificateId** property of the [subscription](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource allows an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
           "Target": "subscription"
         },
         {
@@ -81,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptedContent",
           "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **encryptedContent** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification) contains the encrypted data of the changed resource and related information to decrypt it.",
+          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **encryptedContent** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification?view=graph-rest-beta) contains the encrypted data of the changed resource and related information to decrypt it.",
           "Target": "subscription"
         },
         {
@@ -89,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resourceData",
           "ChangeType": "Change",
-          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact), [event](https://docs.microsoft.com/en-us/graph/api/resources/event), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **resourceData** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification) identifies the changed resource.",
+          "Description": "For subscriptions to changes in Outlook [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta), or [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) resources that include resource data, the **resourceData** property of [changeNotification](https://docs.microsoft.com/en-us/graph/api/resources/changemotification?view=graph-rest-beta) identifies the changed resource.",
           "Target": "subscription"
         }
       ],
