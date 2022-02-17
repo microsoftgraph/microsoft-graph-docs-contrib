@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://canary.graph.microsoft.com/testprodbetaelmextensibility/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('b5007cd4-cbe3-48a9-b7aa-9378f6a55ba1')/customAccessPackageWorkflowExtensions
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions
 ```
 
 
@@ -74,7 +74,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://canary.graph.microsoft.com/testprodbetaelmextensibility/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('b5007cd4-cbe3-48a9-b7aa-9378f6a55ba1')/customAccessPackageWorkflowExtensions", 
+  "@odata.context": 
+  "/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions", 
 
     "value": [ 
 
@@ -88,7 +89,7 @@ Content-Type: application/json
             "endpointConfiguration": { 
                 "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
                 "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-                "resourceGroupName": "xiaojil", 
+                "resourceGroupName": "test", 
                 "logicAppWorkflowName": "elm-extension-email" 
             }, 
             "authenticationConfiguration": { 

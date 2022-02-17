@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId} /customAccessPackageWorkflowExtensions/{customExtensionID}
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customExtensionID}
 ```
 
 ## Optional query parameters
@@ -85,7 +85,7 @@ Content-Type: application/json
     "endpointConfiguration": { 
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
         "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-        "resourceGroupName": "xiaojil", 
+        "resourceGroupName": "test", 
         "logicAppWorkflowName": "elm-extension-email" 
     }, 
     "authenticationConfiguration": { 
