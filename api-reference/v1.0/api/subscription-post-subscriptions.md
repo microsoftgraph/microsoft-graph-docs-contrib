@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
-See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications. 
+
+Some resources support the option to include encrypted resource data in change notifications. These resources include [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), and [presence](../resources/presence.md). For more information, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## Permissions
 
@@ -54,15 +56,7 @@ On a personal OneDrive, you can subscribe to the root folder or any subfolder in
 
 OneDrive for Business and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
-### contact, event, and message
-
-Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
-
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
-- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
-
-  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### presence
 

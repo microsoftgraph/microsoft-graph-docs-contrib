@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Outlook resources in Microsoft Graph
 
-The Microsoft Graph API lets you subscribe to changes to a resource, including creation, update, or deletion of the resource, and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes for a specific resource, and a URL for an endpoint to receive notifications of such changes. Setting up a subscription reduces the overhead to otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to have notifications include the data that has changed in the resource, saving a separate subsequent API call to get the resource payload.
+The Microsoft Graph API lets you subscribe to changes to a resource - including creation, update, or deletion of the resource - and receive notifications via webhooks. A [subscription](/graph/api/resources/webhooks) specifies the desired types of changes to monitor for a specific resource, and a URL for an endpoint to receive notifications of those changes. Setting up a subscription reduces the overhead to otherwise having to query and compare resources to deduce any changes. You can optionally specify in the subscription request to encrypt and include as part of a notification the resource data that has changed, saving a separate subsequent API call to get the resource payload.
 
 There is a maximum limit of 1000 active subscriptions for Outlook resources per mailbox for all applications. You can subscribe to changes in contacts, events, or messages in the mailbox.
 
@@ -29,13 +29,9 @@ To [create a subscription](webhooks.md#creating-a-subscription), specify the Out
 
 ### Request permissions
 
-Creating a subscription requires a read scope to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. Outlook change notifications support delegated and application permission scopes. Depending on the resource the permission specified in the following table is the least privileged required to call this API.
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission 
-  Calendars.Read to subscribe to events in another user’s mailbox.
-- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
-  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they 
-    do **not** support subscribing to change notifications on items in shared or delegated folders.
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
+
+Depending on the resource, the permission specified in the following table is the least privileged required to call this API.
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
@@ -72,7 +68,7 @@ If you don’t use a $filter when creating the subscription:
 The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
 
 ### Keep track of subscription lifetime
-Make sure to renew a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4320 minutes (under 3 days), and 1 day with resource data. 
+Make sure to extend a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4320 minutes (under 3 days), and 1 day with resource data. 
 
 You can [renew a subscription](/graph/api/subscription-update) until you get permissions to access the resource.
 
@@ -344,6 +340,7 @@ Content-type: application/json
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
+- [Set up change notifications that include resource data](webhooks-with-resource-data.md)
 - [Outlook mail API overview](outlook-mail-concept-overview.md)
 - [Outlook contacts API overview](outlook-contacts-concept-overview.md)
 - [Outlook calendar API overview](outlook-calendar-concept-overview.md)
