@@ -22,6 +22,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 
 ```

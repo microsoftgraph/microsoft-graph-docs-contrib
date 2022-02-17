@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
 |mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
-|onBehalfOfUserId|Guid| The ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
+|onBehalfOfUserId|GUID| The ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
 
 ## Response
 If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

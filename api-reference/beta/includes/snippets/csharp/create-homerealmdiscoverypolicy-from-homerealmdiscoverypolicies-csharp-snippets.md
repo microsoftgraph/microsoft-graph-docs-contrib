@@ -10,7 +10,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 {
 	Definition = new List<String>()
 	{
-		"definition-value"
+		"{\"HomeRealmDiscoveryPolicy\":\r\n     {\"AccelerateToFederatedDomain\":true,\r\n      \"PreferredDomain\":\"federated.example.edu\",\r\n      \"AlternateIdLogin\":{\"Enabled\":true}}}"
 	},
 	DisplayName = "displayName-value",
 	IsOrganizationDefault = true
