@@ -18,10 +18,10 @@ Represents the Cloud PC-specified bulk remote action result.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|A list of all the Intune managed device IDs that completed the bulk action successfully.|
 |failedDeviceIds|String collection|A list of all the Intune managed device IDs that completed the bulk action with a failure.|
 |notFoundDeviceIds|String collection|A list of all the Intune managed device IDs that were not found when the bulk action was attempted.|
 |notSupportedDeviceIds|String collection|A list of all the Intune managed device IDs that were identified as unsupported for the bulk action.|
+|successfulDeviceIds|String collection|A list of all the Intune managed device IDs that completed the bulk action successfully.|
 
 ## Relationships
 None.
