@@ -108,7 +108,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/transitiveRoleAssignments",
     "value": [
         {
             "id": "<RA1's ID>",
@@ -144,7 +144,7 @@ The following is an example of the request. This request requires the **Consiste
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '<Alice's ID>' & roleDefinitionId eq '<User Administrator role template ID>'
+GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '<Alice's ID>' and roleDefinitionId eq '<User Administrator role template ID>'
 ConsistencyLevel: eventual
 ```
 
@@ -197,7 +197,7 @@ The following is an example of the request. This request requires the **Consiste
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '<Alice's ID>' & directoryScopeID eq '/administrativeUnits/<AU1 ID>'
+GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '<Alice's ID>' and directoryScopeId eq '/administrativeUnits/<AU1 ID>'
 ConsistencyLevel: eventual
 ```
 ---
