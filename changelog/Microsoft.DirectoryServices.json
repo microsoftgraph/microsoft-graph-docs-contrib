@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageCustomExtensionHandlerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionHandlerStatus** enumeration type.",
+          "Target": "accessPackageCustomExtensionHandlerStatus"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessPackageCustomExtensionStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type.",
+          "Target": "accessPackageCustomExtensionStage"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdTokenAuthentication](https://docs.microsoft.com/en-us/graph/api/resources/azureAdTokenAuthentication?view=graph-rest-beta) resource type.",
+          "Target": "azureAdTokenAuthentication"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionAuthenticationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionAuthenticationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionAuthenticationConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionClientConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionClientConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionEndpointConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionEndpointConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandlerInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionHandlerInstance](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionHandlerInstance"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "logicAppTriggerEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "logicAppTriggerEndpointConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandlers",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionHandlers** relationship to [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionHandlerInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionHandlerInstances** property to [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAccessPackageWorkflowExtensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAccessPackageWorkflowExtensions** relationship to [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAccessPackageWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAccessPackageWorkflowExtension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta) resource",
+          "Target": "customAccessPackageWorkflowExtension"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customCalloutExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customCalloutExtension](https://docs.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-beta) resource",
+          "Target": "customCalloutExtension"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionHandler](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource",
+          "Target": "customExtensionHandler"
+        }
+      ],
+      "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-01-24T21:26:12.2719903Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "202070a6-5aba-470a-8389-aa11a953b7d8",
           "ApiChange": "Property",
           "ChangedApiName": "customAccountResetCredentialsUrl",
