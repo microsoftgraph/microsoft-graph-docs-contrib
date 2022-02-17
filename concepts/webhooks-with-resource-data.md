@@ -27,13 +27,18 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) resources supports change notifications that include resource data. Support to include resource data for Outlook resources [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), [message](/graph/api/resources/message.md) is currently in preview in Microsoft Graph Beta. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
 - User's presence information update: `/communications/presences/{id}`
+- New or changed personal contacts in a user's mailbox: `/users/{id}/contacts`
+- New or changed personal contacts in a user's contactFolder: `/users/{id}/contactFolders/{id}/contacts`
+- New or changed events in a user's mailbox: `/users/{id}/events`
+- New or changed messages in a user's mailbox: `/users/{id}/messages`
+- New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
 
 The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
@@ -582,3 +587,4 @@ decryptedPayload += decipher.final('utf8');
 - [Get subscription](/graph/api/subscription-get)
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [Update subscription](/graph/api/subscription-update)
+- [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
