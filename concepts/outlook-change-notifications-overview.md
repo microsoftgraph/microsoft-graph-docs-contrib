@@ -29,7 +29,7 @@ To [create a subscription](webhooks.md#creating-a-subscription), specify the Out
 
 ### Request permissions
 
-[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
+[!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
 Depending on the resource, the permission specified in the following table is the least privileged required to call this API.
 
