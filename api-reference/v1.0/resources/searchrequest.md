@@ -52,8 +52,7 @@ The following is a JSON representation of the resource.
   "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
-  "size": "Int32",
-  "aggregations": {"@odata.type": "microsoft.graph.sortProperty"}
+  "size": "Int32"
 }
 ```
 
