@@ -89,6 +89,10 @@ POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 [!INCLUDE [sample-code](../includes/snippets/go/event-dismissreminder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/event-dismissreminder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

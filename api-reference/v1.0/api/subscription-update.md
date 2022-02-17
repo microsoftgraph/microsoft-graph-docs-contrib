@@ -41,7 +41,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -74,6 +74,14 @@ PATCH /subscriptions/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription length of time varies depending on the resource. |
 
 ## Response
 
@@ -119,6 +127,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subscription-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-subscription-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -138,6 +138,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -288,6 +292,10 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-cloudpc-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -413,6 +421,10 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-entitlementmanagement-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

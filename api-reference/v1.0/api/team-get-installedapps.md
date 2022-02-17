@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Permissions marked with ** are deprecated and should not be used.
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 ## HTTP request
 
@@ -83,6 +83,10 @@ GET /teams/{id}/installedApps/{id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-installed-teams-apps-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-installed-teams-apps-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teams
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-installed-teams-apps-expand-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-installed-teams-apps-expand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

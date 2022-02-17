@@ -2,7 +2,7 @@
 title: "List namedLocations"
 description: "Get a list of namedLocation objects."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-namedlocations-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,6 +202,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 [!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-namedlocations-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -296,6 +304,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 [!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-namedlocations-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -374,6 +386,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-namedlocations-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-namedlocations-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

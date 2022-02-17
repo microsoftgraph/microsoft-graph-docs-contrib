@@ -88,7 +88,13 @@ items:
       - name: Users
         href: azuread-users-concept-overview.md
       - name: Groups
-        href: office365-groups-concept-overview.md
+        items:
+          - name: Overview
+            href: /graph/api/resources/groups-overview
+          - name: Microsoft 365 groups
+            href: office365-groups-concept-overview.md
+          - name: Configure group options
+            href: group-set-options.md
       - name: Applications
         items:
           - name: Overview
@@ -256,6 +262,8 @@ items:
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
+          - name: Specify the default channel for assignment notifications
+            href: education-build-notificationchannelurl.md            
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -273,7 +281,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Assign custom security attributes (preview)
+              - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
@@ -295,6 +303,10 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+                  - name: Configure the scope
+                    href: accessreviews-scope-concept.md
+                  - name: Assign reviewers
+                    href: accessreviews-reviewers-concept.md
               - name: Use PIM for Azure AD to assign roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail

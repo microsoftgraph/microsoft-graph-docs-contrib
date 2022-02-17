@@ -34,7 +34,7 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## Optional query parameters
-This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-list-shifts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-shifts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

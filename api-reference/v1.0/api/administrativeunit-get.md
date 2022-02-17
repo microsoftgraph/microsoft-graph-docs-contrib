@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 
@@ -54,7 +54,7 @@ Here is an example of the request.
   "name": "get_administrativeunit"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-administrativeunit-csharp-snippets.md)]
@@ -76,13 +76,17 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
----
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+Here is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,10 +97,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/administrativeUnits/$entity",
+    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "membershipRule": null,
+    "membershipType": null,
+    "membershipRuleProcessingState": null,
+    "visibility": "HiddenMembership"
 }
 ```
 
