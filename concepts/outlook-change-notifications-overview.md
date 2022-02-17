@@ -35,7 +35,7 @@ Depending on the resource, the permission specified in the following table is th
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
-|[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
+|[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
 |[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
@@ -68,9 +68,9 @@ If you don’t use a $filter when creating the subscription:
 The above Outlook resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
 
 ### Keep track of subscription lifetime
-Make sure to extend a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4320 minutes (under 3 days), and 1 day with resource data. 
+Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4320 minutes (under 3 days), and 1 day with resource data. 
 
-You can [renew a subscription](/graph/api/subscription-update) until you get permissions to access the resource.
+If you lose the permission that was granted earlier for a subscription and the subscription expires meanwhile, request permission again to [create](/graph/api/subscription-post-subscriptions) a new subscription.
 
 ## Receive notification payloads
 
