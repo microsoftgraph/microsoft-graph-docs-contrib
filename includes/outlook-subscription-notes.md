@@ -6,8 +6,6 @@ ms.topic: include
 ---
 
 <!-- markdownlint-disable MD041-->
-### contact, event, and message
-
 You can subscribe to changes in Outlook **contact**, **event**, or **message** resources and optionally specify in the POST request payload whether to include encrypted resource data in notifications.
 
 Creating and managing (getting, updating, and deleting) a subscription requires a read scope to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. Outlook change notifications support delegated and application permission scopes. Note the following limitations:
