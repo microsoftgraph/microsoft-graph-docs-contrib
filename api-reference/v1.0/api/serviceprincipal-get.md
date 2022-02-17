@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 > [!NOTE]
-> A service principal can retrieve its own details without being granted any application permissions.
+> A service principal can retrieve its own application and service principal details without being granted any application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
