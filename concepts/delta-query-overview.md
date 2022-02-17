@@ -183,6 +183,8 @@ Navigation properties are not supported. For example, you cannot track changes t
 
 Expect varying delays between the time a change is made to a resource instance, which can be through an app interface or API, and the time the tracked change is reflected in a delta query response.
 
+Sometimes the changes that have occurred to the object might not be indicated when you select the `nextLink` or the `deltaLink`. This is because some requests might have replication delays for objects that were recently created, updated, or deleted. Retry the `nextLink` or `deltaLink` after some time to retrieve the latest changes.
+
 ### National clouds
 
 Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
