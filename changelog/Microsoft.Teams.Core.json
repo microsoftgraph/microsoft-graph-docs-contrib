@@ -4,42 +4,6 @@
     {
       "ChangeList": [
         {
-          "Id": "7b074c21-a487-4436-93c6-16ecccac77bb",
-          "ApiChange": "",
-          "ChangedApiName": "Create",
-          "ChangeType": "",
-          "Description": "Added validaiton for conversation member role of guest tenant user.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "7b074c21-a487-4436-93c6-16ecccac77bb",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-02-15T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "03a7500b-eb79-4bdb-bc6d-aa68e3dd7aff",
-          "ApiChange": "",
-          "ChangedApiName": "Create",
-          "ChangeType": "",
-          "Description": "Added validaiton for conversation member role of guest tenant user.",
-          "Target": "chat"
-        }
-      ],
-      "Id": "03a7500b-eb79-4bdb-bc6d-aa68e3dd7aff",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2022-02-15T13:04:49.407Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "f55c7c44-403f-4fb6-baf3-2d9bc723556b",
           "ApiChange": "Permission",
           "ChangedApiName": "teamworkTag",
