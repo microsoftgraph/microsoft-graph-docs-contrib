@@ -14,51 +14,50 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 ## [C#](#tab/csharp)
 
 ```csharp
-using (var fileStream = System.IO.File.OpenRead(filePath))
+using var fileStream = System.IO.File.OpenRead(filePath);
+
+// Use properties to specify the conflict behavior
+// in this case, replace
+var uploadProps = new DriveItemUploadableProperties
 {
-    // Use properties to specify the conflict behavior
-    // in this case, replace
-    var uploadProps = new DriveItemUploadableProperties
+    ODataType = null,
+    AdditionalData = new Dictionary<string, object>
     {
-        ODataType = null,
-        AdditionalData = new Dictionary<string, object>
-        {
-            { "@microsoft.graph.conflictBehavior", "replace" }
-        }
-    };
-
-    // Create the upload session
-    // itemPath does not need to be a path to an existing item
-    var uploadSession = await graphClient.Me.Drive.Root
-        .ItemWithPath(itemPath)
-        .CreateUploadSession(uploadProps)
-        .Request()
-        .PostAsync();
-
-    // Max slice size must be a multiple of 320 KiB
-    int maxSliceSize = 320 * 1024;
-    var fileUploadTask =
-        new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
-
-    var totalLength = fileStream.Length;
-    // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(prog => {
-        Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
-    });
-
-    try
-    {
-        // Upload the file
-        var uploadResult = await fileUploadTask.UploadAsync(progress);
-
-        Console.WriteLine(uploadResult.UploadSucceeded ?
-            $"Upload complete, item ID: {uploadResult.ItemResponse.Id}" :
-            "Upload failed");
+        { "@microsoft.graph.conflictBehavior", "replace" }
     }
-    catch (ServiceException ex)
-    {
-        Console.WriteLine($"Error uploading: {ex.ToString()}");
-    }
+};
+
+// Create the upload session
+// itemPath does not need to be a path to an existing item
+var uploadSession = await graphClient.Me.Drive.Root
+    .ItemWithPath(itemPath)
+    .CreateUploadSession(uploadProps)
+    .Request()
+    .PostAsync();
+
+// Max slice size must be a multiple of 320 KiB
+int maxSliceSize = 320 * 1024;
+var fileUploadTask =
+    new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
+
+var totalLength = fileStream.Length;
+// Create a callback that is invoked after each slice is uploaded
+IProgress<long> progress = new Progress<long>(prog => {
+    Console.WriteLine($"Uploaded {prog} bytes of {totalLength} bytes");
+});
+
+try
+{
+    // Upload the file
+    var uploadResult = await fileUploadTask.UploadAsync(progress);
+
+    Console.WriteLine(uploadResult.UploadSucceeded ?
+        $"Upload complete, item ID: {uploadResult.ItemResponse.Id}" :
+        "Upload failed");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Error uploading: {ex.ToString()}");
 }
 ```
 
