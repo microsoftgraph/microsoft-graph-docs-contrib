@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 If successful, this action returns a `200 OK` response code and a [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) in the response body.
 
-In addition to [general errors](../concepts/errors.md) that apply to Microsoft Graph, this API returns the **423** status code if the file is locked for extract sensitivityLabel operation. In such cases, the `code` property on the error resource type indicates type of error blocking sensitivityLabel extraction.
+In addition to [general errors](../../../concepts/errors.md) that apply to Microsoft Graph, this API returns the **423** status code if the file is locked for extract sensitivityLabel operation. In such cases, the `code` property on the error resource type indicates type of error blocking sensitivityLabel extraction.
 The possible values for the error types include:
 
 | Value                       | Description                                                                                                         |
