@@ -37,9 +37,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "service": "string",
-    "skuId": "guid",
-    "servicePlanId": "guid"
+    "service": "String",
+    "skuId": "GUID",
+    "servicePlanId": "GUID"
 }
 
 ```
