@@ -1,5 +1,5 @@
 ---
-title: "personalTaskProperties resource type"
+title: "taskViewpoint resource type"
 description: Contains personal properties of a task"
 author: "avijityadav"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# personalTaskProperties resource type
+# taskViewpoint resource type
 
 Namespace: microsoft.graph
 
@@ -18,7 +18,7 @@ Contains personal properties of a [task](task.md). When sharing or assigning a *
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reminderDatetime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the **task** to occur.|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the **task** to occur.|
 
 ## Relationships
 None.
@@ -27,12 +27,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.personalTaskProperties"
+  "@odata.type": "microsoft.graph.taskViewpoint"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.personalTaskProperties",
+  "@odata.type": "#microsoft.graph.taskViewpoint",
   "reminderDatetime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   }

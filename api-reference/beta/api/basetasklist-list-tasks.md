@@ -86,10 +86,7 @@ Content-Type: application/json
             "createdDateTime": "2021-11-17T06:58:32.4882235Z",
             "lastModifiedDateTime": "2021-11-17T07:02:49.1697427Z",
             "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-            "body": {
-                "content": "",
-                "contentType": "text"
-            },
+            "textBody":  "",
             "parentList": {
                 "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNm"
             }

@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft To Do API
+# Use the Microsoft To Do Tasks API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ GET /me/tasks/lists/{taskListId}/tasks
 
 ## Checklist Item 
 
-A [ChecklistItem](linkedresource_v2.md) represents an item that helps break down complex task in much smaller steps. To get a checklistItems from a task, make the following HTTP request:
+A [ChecklistItem](checklistitem.md) represents an item that helps break down complex task in much smaller steps. To get a checklistItems from a task, make the following HTTP request:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
 ```

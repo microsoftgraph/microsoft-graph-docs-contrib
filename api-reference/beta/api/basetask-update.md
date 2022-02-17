@@ -48,7 +48,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|textBody|String|The task body in text format that typically contains information about the task.|
 |createdDateTime|DateTimeOffset|The date in the specified time zone that the task was finished.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header.|
 |bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header.|
@@ -59,7 +59,7 @@ PATCH /users/{userId|userPrincipalName}/tasks/alltasks/{baseTaskId}
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |displayName|String|A brief description of the task.|
 |status|taskStatus_v2|Indicates state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Properties that are personal to a user such as reminderDateTime.|
+|viewpoint|[taskViewpoint](../resources/taskviewpoint.md)|Properties that are personal to a user such as reminderDateTime.|
 
 
 
@@ -82,9 +82,7 @@ Content-length: 634
 
 {
   "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -99,8 +97,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -127,10 +125,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-15T14:38:25.6868632Z",
     "lastModifiedDateTime": "2021-11-15T15:51:13.3606631Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt"
     }

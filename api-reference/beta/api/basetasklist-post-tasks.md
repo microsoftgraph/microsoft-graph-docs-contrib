@@ -47,7 +47,7 @@ You can specify the following properties when creating a **baseTask**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|textBody|String|The task body in text format that typically contains information about the task.|
 |createdDateTime|DateTimeOffset|The date in the specified time zone that the task was finished.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
@@ -81,9 +81,7 @@ Content-length: 634
 
 {
   "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
   "dueDateTime": {
@@ -98,8 +96,8 @@ Content-length: 634
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   }
 }
 ```
@@ -126,10 +124,7 @@ Content-Type: application/json
     "createdDateTime": "2021-11-17T10:11:18.0229364Z",
     "lastModifiedDateTime": "2021-11-17T10:11:18.19789Z",
     "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
+    "textBody":  "",
     "parentList": {
         "id": "AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi"
     }

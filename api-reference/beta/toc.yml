@@ -14854,7 +14854,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Checklist
+      - name: Checklist item
         href: resources/checklistitem.md
         items:
         - name: List

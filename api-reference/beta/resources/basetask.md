@@ -34,7 +34,7 @@ This is an abstract base type inherited by [task](task.md) resource.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. |
+|textBody|String|The task body in text format that typically contains information about the task. |
 |bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'. |
 |completedDateTime|DateTimeOffset|The date when the task was finished. |
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'. |
@@ -43,7 +43,7 @@ This is an abstract base type inherited by [task](task.md) resource.
 |id|String|Unique identifier for the task. By default, this value will not change if a task is moved from one list to another. |
 |importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.  The possible values are: `low`, `normal`, `high`.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'. |
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Properties that are personal to a user such as reminderDateTime. |
+|viewpoint|[taskViewpoint](../resources/taskviewpoint.md)|Properties that are personal to a user such as reminderDateTime. |
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task. |
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone when the task is to begin. |
 |status|taskStatus_v2|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`,`unknownFutureValue`. |
@@ -68,9 +68,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.baseTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
+  "textBody": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "bodyLastModifiedDateTime": "String (timestamp)",
@@ -87,8 +85,8 @@ The following is a JSON representation of the resource.
   },
   "displayName": "String",
   "status": "String",
-  "personalProperties": {
-    "@odata.type": "microsoft.graph.personalTaskProperties"
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.taskViewpoint"
   },
   "id": "String (identifier)"
 }

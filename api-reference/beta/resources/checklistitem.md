@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of checklist items on a task. **ChecklistItem** helps split complex tasks into smaller more actionable steps.
+Represents a subtask in a bigger [baseTask](./baseTask.md). **ChecklistItem** allows breaking down a complex task into more actionable, smaller tasks. 
 
 ## Methods
 |Method|Return type|Description|
