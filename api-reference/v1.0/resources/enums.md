@@ -1724,8 +1724,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### searchAlterationType values
 
-| Member | Description |
-|:---------------|:----------|
+| Member |
+|:---------------|
 |modification|
 |suggestion|
 

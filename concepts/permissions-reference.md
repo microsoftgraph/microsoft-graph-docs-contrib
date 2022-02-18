@@ -1286,6 +1286,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Managed tenant permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Read all managed tenant specific information | Allows the app to read all managed tenant information on behalf of the signed-in user. | Yes | No |
+| _ManagedTenants.ReadWrite.All_ | Read and write all managed tenant specific information | Allows the app to read and write all managed tenant information on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+None.
+
+---
+
 ## Member permissions
 
 #### Delegated permissions
@@ -1319,6 +1334,7 @@ Membership in some Microsoft 365 groups can be hidden. This means that only the 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+---
 
 ## Notes permissions
 
@@ -1365,6 +1381,8 @@ For work or school accounts, _Notes.Read.All_ and _Notes.ReadWrite.All_ allow th
 * _Notes.ReadWrite.All_: Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
 
 ## Notifications permissions
 #### Delegated permissions
