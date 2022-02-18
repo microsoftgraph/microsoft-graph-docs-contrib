@@ -17,6 +17,8 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md), and [user](../resources/user.md) resources.
 
+>**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -119,6 +121,14 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -180,6 +190,14 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-deleteditems-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deleteditems-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deleteditems-count-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -198,25 +216,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,deletedDateTime)",
-    "@odata.count": 3,
+    "@odata.count": 2,
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/54c8f8fa-7217-4846-baf9-94af2381864f/Microsoft.DirectoryServices.Group",
-            "id": "54c8f8fa-7217-4846-baf9-94af2381864f",
-            "displayName": "Digital Initiative Public Relations",
-            "deletedDateTime": "2021-09-07T15:41:06Z"
+            "id": "c31799b8-0683-4d70-9e91-e032c89d3035",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:56:36Z"
         },
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/a7acbd5f-07ec-4b97-9fbf-8fe94d44b044/Microsoft.DirectoryServices.Group",
-            "id": "a7acbd5f-07ec-4b97-9fbf-8fe94d44b044",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:41:57Z"
-        },
-        {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1a5999a0-3b42-498e-b408-0c2f9951db1d/Microsoft.DirectoryServices.Group",
-            "id": "1a5999a0-3b42-498e-b408-0c2f9951db1d",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:42:03Z"
+            "id": "74e45ce0-a52a-4766-976c-7201b0f99370",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:58:37Z"
         }
     ]
 }

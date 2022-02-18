@@ -1,7 +1,7 @@
 ---
 title: "Get tenantCustomizedInformation"
 description: "Read the properties and relationships of a tenantCustomizedInformation object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsC
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tenantcustomizedinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a specific resource attached to an assignment.
+Delete a specific [educationAssignmentResource](../resources/educationassignmentresource.md) attached to an assignment.
 
 In general, only teachers in the class can remove a resource. However, teachers cannot remove resources marked as "distributeToStudents", after the assignment has been published to students.
 
@@ -69,6 +69,14 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignmentresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignmentresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationassignmentresource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

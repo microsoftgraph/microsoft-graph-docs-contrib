@@ -1,26 +1,28 @@
 ---
-title: "Add member"
-description: "Add a member to a Microsoft 365 group or security group through the **members** navigation property."
+title: "Add members"
+description: "Add a member to a Microsoft 365 or security group through the members navigation property."
 ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add member
+# Add members
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a member to a group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
-You can add users, service principals or other groups. 
+You can add users, devices, service principals, or other groups. 
 
-> [!Important]
-> + You can only add users to groups that are managed through the cloud.
+> [!IMPORTANT]
+> + You can add members to security and Microsoft 365 groups only. For more information, see [Group types in Azure AD and Microsoft Graph only](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + You cannot add security groups to Microsoft 365 groups.
 > + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
+> + A security group can have users, devices, groups, or service principals as its members, while a Microsoft 365 group can have only users as its members.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +62,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
@@ -80,6 +81,14 @@ Content-length: 30
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

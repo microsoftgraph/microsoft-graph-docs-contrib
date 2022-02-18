@@ -29,7 +29,7 @@
         {
           "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
           "ApiChange": "Method",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "insightsSettings",
           "ChangeType": "Addition",
           "Description": "Added a [list](https://docs.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta) operation to [insightsSettings](https://docs.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta) to list settings for people insights.",
           "Target": "insightsSettings"
@@ -37,7 +37,7 @@
         {
           "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
           "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
+          "ChangedApiName": "insightsSettings",
           "ChangeType": "Addition",
           "Description": "Add functionality to the [update](https://docs.microsoft.com/graph/api/insightsSettings-update?view=graph-rest-beta) operation to update [insightsSettings](https://docs.microsoft.com/graph/api/resources/insightsettings?view=graph-rest-beta) for people insights.",
           "Target": "insightsSettings"
@@ -46,7 +46,7 @@
       "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-11-02T00:00:00.000Z",
+      "CreatedDateTime": "2021-12-06T00:00:00.000Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "Insights"
     }, 

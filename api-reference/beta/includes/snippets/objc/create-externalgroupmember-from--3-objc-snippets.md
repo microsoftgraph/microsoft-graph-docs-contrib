@@ -11,14 +11,13 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
-[externalGroupMember setId:@"1431b9c38ee647f6a"];
-[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType group]];
-[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType external]];
+MSGraphExternalConnectorsIdentity *identity = [[MSGraphExternalConnectorsIdentity alloc] init];
+[identity setId:@"1431b9c38ee647f6a"];
+[identity setType: [MSGraphExternalConnectorsIdentityType externalGroup]];
 
 NSError *error;
-NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:externalGroupMemberData];
+NSData *identityData = [identity getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:identityData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

@@ -73,7 +73,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 Content-Type: application/json
-Content-length: 295
 
 {
   "description": "This is a description for a legalHold"
@@ -93,6 +92,14 @@ Content-length: 295
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-legalhold-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-legalhold-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

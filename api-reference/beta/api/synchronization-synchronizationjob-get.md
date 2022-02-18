@@ -73,6 +73,14 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationjob-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationjob-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +97,6 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2577
 
 {
     "id": "{jobId}",

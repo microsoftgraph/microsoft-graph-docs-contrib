@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -76,6 +76,14 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/filesFolder
 [!INCLUDE [sample-code](../includes/snippets/java/get-filesfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-filesfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-filesfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -90,7 +98,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/channels('19%3Af253e46c035b42308e9a4a22a87037af%40thread.skype')/filesFolder/$entity",

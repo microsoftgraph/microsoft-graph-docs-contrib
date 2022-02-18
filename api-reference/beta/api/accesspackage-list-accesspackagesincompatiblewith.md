@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackage/{id}/accessPackagesIncompatibleWith
+GET /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackagesIncompatibleWith
 ```
 
 ## Optional query parameters
@@ -81,6 +81,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accesspackagesincompatiblewith-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackagesincompatiblewith-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackagesincompatiblewith-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

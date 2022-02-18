@@ -36,12 +36,13 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -63,6 +64,10 @@ Additional limitations apply for subscriptions on Outlook items. The limitations
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
   - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
 
+### presence
+
+Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -77,6 +82,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
+## Request body
+
+In the request body, supply a JSON representation of [subscription](../resources/subscription.md) object.
+
 ## Response
 
 If successful, this method returns `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
@@ -84,7 +93,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request to send a change notification when the user receives a new mail.
 
@@ -123,13 +132,21 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
-##### Resources examples
+#### Resources examples
 
 The following are valid values for the resource property of the subscription:
 
@@ -144,6 +161,7 @@ The following are valid values for the resource property of the subscription:
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
@@ -151,9 +169,10 @@ The following are valid values for the resource property of the subscription:
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -163,7 +182,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 252
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
@@ -180,7 +198,7 @@ Content-length: 252
 }
 ```
 
-## Notification endpoint validation
+#### Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 

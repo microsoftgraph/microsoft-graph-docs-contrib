@@ -96,6 +96,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -118,7 +122,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
-    "id": "guid",
+    "id": "45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "My API connector",
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {

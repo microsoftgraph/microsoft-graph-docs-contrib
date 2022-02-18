@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents an existing partnership that the partner tenant has with a customer tenant.
 
 > **Important:**
-> Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.
+> Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.
 
 ## Methods
 
@@ -29,7 +29,7 @@ Represents an existing partnership that the partner tenant has with a customer t
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 |contractType|String|Type of contract. Possible values are:  `SyndicationPartner`, `BreadthPartner`, `ResellerPartner`. See more in the [table below](#contracttype-values). |
-|customerId|Guid|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
+|customerId|GUID|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
 |defaultDomainName|String|A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.|
 |displayName|String|A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.|
 |id|String| The unique identifier for the partnership. Key, read-only |
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "contractType": "String",
-  "customerId": "Guid",
+  "customerId": "GUID",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"

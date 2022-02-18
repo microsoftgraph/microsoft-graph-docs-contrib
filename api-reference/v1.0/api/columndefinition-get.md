@@ -52,18 +52,18 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 
 ## Request body
 
-  
+Do not supply a request body for this method.
 
-Do not supply a request body with this method.
+## Response
 
+If successful, this method returns a `200 OK` response code and a [columnDefinition][columnDefinition] object in the response body.
   
 
 ## Example
 
-  
-
 ### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_column_from_contenttype" } -->
@@ -89,12 +89,20 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-column-from-contenttype-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-column-from-contenttype-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-  
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

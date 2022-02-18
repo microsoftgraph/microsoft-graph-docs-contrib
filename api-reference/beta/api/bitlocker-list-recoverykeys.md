@@ -65,6 +65,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|User-Agent|The identifier for the calling application. This value contains information about the operating system and the browser used. Required.|
 |ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
@@ -91,6 +92,7 @@ The following is an example of the request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -108,6 +110,14 @@ ocp-client-version: "1.2"
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -162,6 +172,7 @@ The following is an example of the request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
@@ -179,6 +190,14 @@ ocp-client-version: "1.2"
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global Reader
 * Authentication Policy Administrator
@@ -82,6 +82,14 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationmethodspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,14 +111,28 @@ Content-Type: application/json
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-    "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
+    "lastModifiedDateTime": "2022-01-26T10:47:26.6044384Z",
     "policyVersion": "1.4",
+    "registrationEnforcement": {
+        "authenticationMethodsRegistrationCampaign": {
+            "snoozeDurationInDays": 1,
+            "state": "default",
+            "excludeTargets": [],
+            "includeTargets": [
+                {
+                    "id": "all_users",
+                    "targetType": "group",
+                    "targetedAuthenticationMethod": "microsoftAuthenticator"
+                }
+            ]
+        }
+    },
     "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
             "id": "Fido2",
-            "state": "enabled",
+            "state": "disabled",
             "isSelfServiceRegistrationAllowed": true,
             "isAttestationEnforced": true,
             "keyRestrictions": {
@@ -137,8 +159,7 @@ Content-Type: application/json
                     "targetType": "group",
                     "id": "all_users",
                     "isRegistrationRequired": false,
-                    "authenticationMode": "any",
-                    "featureSettings": null
+                    "authenticationMode": "any"
                 }
             ]
         },

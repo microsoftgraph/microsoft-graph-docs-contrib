@@ -25,6 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
+> [!NOTE]
+> A service principal can retrieve its own application and service principal details without being granted any application permissions.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -32,7 +35,7 @@ GET /servicePrincipals/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
@@ -53,7 +56,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
 
 ## Examples
-### Request
+
+### Example 1: Get the properties of the specified service principal
+
+#### Request
+
 Here is an example of the request.
 
 
@@ -82,10 +89,18 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-### Response
+#### Response
 Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -128,6 +143,11 @@ Content-type: application/json
         ],
         "signInAudience": "AzureADandPersonalMicrosoftAccount",
         "tags": [],
+        "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+        },
         "addIns": [],
         "api": {
             "resourceSpecificApplicationPermissions": []
@@ -160,3 +180,124 @@ Content-type: application/json
 }
 -->
 
+### Example 2: Get the custom security attribute assignments of the specified service principal
+
+The following example gets the custom security attributes of the specified service principal.
+
+Attribute #1
+
++ Attribute set: `Engineering`
++ Attribute: `Project`
++ Attribute data type: Collection of Strings
++ Attribute value: `["Baker","Cascade"]`
+
+Attribute #2
+
++ Attribute set: `Engineering`
++ Attribute: `CostCenter`
++ Attribute data type: Collection of Integers
++ Attribute value: `[1001]`
+
+Attribute #3
+
++ Attribute set: `Engineering`
++ Attribute: `Certification`
++ Attribute data type: Boolean
++ Attribute value: `true`
+
+Attribute #4
+
++ Attribute set: `Marketing`
++ Attribute: `Level`
++ Attribute data type: String
++ Attribute value: `"Public"`
+
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+#### Request
+
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_customsecurityattributes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-customsecurityattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipal-customsecurityattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-customsecurityattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-customsecurityattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-customsecurityattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-customsecurityattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+If there are no custom security attributes assigned to the service principal or if the calling principal does not have access, the response will look like:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```

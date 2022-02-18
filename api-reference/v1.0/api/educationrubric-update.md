@@ -2,7 +2,7 @@
 title: "Update educationRubric"
 description: "Update the properties of educationRubric object."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: "apiPageType"
 ---
@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|itemBody|The description of this rubric.|
 |displayName|String|The name of this rubric.|
-|grading|educationAssignmentGradeType|Whether this rubric has points or not.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|The grading type of the rubric. `null` if this is a no-points rubric and [educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) if it is a rubric with points.|
 |levels|rubricLevel collection|The collection of levels making up this rubric.|
 |qualities|rubricQuality collection|The collection of qualities making up this rubric.|
 
@@ -91,6 +91,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationrubric-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

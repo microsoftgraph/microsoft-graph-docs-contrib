@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
 description: "Learn how to identify and remediate risk using Microsoft Graph APIs."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 ---
@@ -483,7 +483,8 @@ In this tutorial, you used many APIs to accomplish tasks. Explore the API refere
 - [What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 - [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 - [How it works: Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
-- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
-- [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
-- [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Simulating risk detections in Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
+- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy)
+- [riskDetection](/graph/api/resources/riskdetection)
+- [riskyUser](/graph/api/resources/riskyuser)
+- [user](/graph/api/resources/user)

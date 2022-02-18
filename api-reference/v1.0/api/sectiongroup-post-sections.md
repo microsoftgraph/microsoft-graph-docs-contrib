@@ -56,7 +56,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -78,6 +77,14 @@ Content-length: 27
 [!INCLUDE [sample-code](../includes/snippets/java/create-section-from-sectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-section-from-sectiongroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-section-from-sectiongroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,7 +98,6 @@ Here is an example of the response. Note: The response object shown here is trun
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

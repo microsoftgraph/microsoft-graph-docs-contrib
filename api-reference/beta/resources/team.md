@@ -36,6 +36,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
+|[List all teams in an organization](../api/teams-list.md) | [team](team.md) collection | List all teams in an organization. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
 |[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
@@ -80,7 +81,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |

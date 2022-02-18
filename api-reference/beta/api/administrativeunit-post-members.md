@@ -1,6 +1,6 @@
 ---
 title: "Add a member"
-description: "Use this API to add a member (user or group) to an administrative unit."
+description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a member (user or group) to an administrative unit or to create a new group within an administrative unit. All [group types](/graph/api/resources/groups-overview) can be created within an administrative unit.
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit. All [group types](/graph/api/resources/groups-overview) can be created within an administrative unit.
 
-**NOTE:** Currently it's only possible to add one member at a time to an administrative unit.`
+**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,9 +54,8 @@ POST /administrativeUnits/{id}/members
 | Authorization  | Bearer {token}. Required. |
 | Content-type  | application/json. Required. |
 
-## Request body
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
@@ -86,6 +85,8 @@ The following will add an existing user or group to the administrative unit.
 #### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
@@ -98,11 +99,38 @@ Content-type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-ref-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-ref-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
-In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
+
+In the request body, provide the `id` of the [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) object you want to add.
 
 #### Response
+
 The following is an example of the response.
  
 <!-- {
@@ -120,6 +148,8 @@ The following example creates a new group in the administrative unit.
 #### Request
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members"
@@ -141,6 +171,28 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 In the request body, provide the properties of the [group](../resources/group.md) object you want to add.

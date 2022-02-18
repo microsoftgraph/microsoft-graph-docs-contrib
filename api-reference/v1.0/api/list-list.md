@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -13,6 +12,10 @@ Namespace: microsoft.graph
 
 Get the collection of [lists][] for a [site][].
 
+Lists with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
+
+[system]: ../resources/systemfacet.md
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
@@ -34,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -59,10 +62,18 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-lists-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enum-lists-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -95,13 +106,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## Remarks
-
-Lists with the [system][] facet are hidden by default.
-To list them, include `system` in your `$select` statement.
-
-[system]: ../resources/systemfacet.md
 
 <!-- {
   "type": "#page.annotation",

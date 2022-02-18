@@ -20,9 +20,8 @@ For example, you can:
 - Get details of an onlineMeeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-recording-of-a-teams-live-event).
-- Use the `/meetingAttendanceReport` path to get the attendance report of a scheduled meeting, as shown in [example 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-Meeting attendance report, Teams live event attendee report, and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report, and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -60,14 +59,6 @@ To get an **onlineMeeting** using **joinWebUrl** with delegated (`/me`) and app 
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
-```
-
-To get the attendance report of an online meeting with delegated (`/me`) and app (`/users/{userId}`) permission:
-<!-- { "blockType": "ignored" }-->
-
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
 To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
@@ -147,6 +138,14 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onlinemeeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onlinemeeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onlinemeeting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -392,6 +391,14 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendee-report-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendee-report-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -447,6 +454,14 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/java/get-live-event-recording-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-live-event-recording-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-live-event-recording-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -466,113 +481,4 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```http
 HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-### Example 6: Fetch attendance report of an online meeting
-
-The following example shows a request to get a meeting attendance report.
-
-#### Request
-
-The following request uses delegated permission.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_attendance_report"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendance-report-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendance-report-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendance-report-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-The following request uses application permission.
-<!-- { "blockType": "ignored" }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-
-#### Response
-
-> **Note:** The response object shown here might be shortened for readability. 
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport",
-  "name": "get_attendance_report"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
-    "attendanceRecords": [
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1558,
-            "role": "Organizer",
-            "identity": {
-                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
-                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
-                    "durationInSeconds": 1558
-                }
-            ]
-        },
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1152,
-            "role": "Presenter",
-            "identity": {
-                "id": "(redacted)",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
-                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
-                    "durationInSeconds": 415
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
-                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
-                    "durationInSeconds": 427
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
-                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
-                    "durationInSeconds": 310
-                }
-            ]
-        }
-    ],
-    "totalParticipantCount": 2
-}
 ```

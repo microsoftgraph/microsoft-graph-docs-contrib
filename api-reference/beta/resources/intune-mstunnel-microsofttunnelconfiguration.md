@@ -39,10 +39,10 @@ Entity that represents a collection of Microsoft Tunnel settings
 |routesExclude|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
-|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
+|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-|disableUDPConnections|Boolean|When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.|
+|disableUDPConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
 
 ## Relationships
 None
@@ -90,6 +90,7 @@ Here is a JSON representation of the resource.
   "disableUDPConnections": true
 }
 ```
+
 
 
 

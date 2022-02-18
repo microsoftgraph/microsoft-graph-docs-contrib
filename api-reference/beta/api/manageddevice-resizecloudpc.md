@@ -44,7 +44,13 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|targetServicePlanId|String|The target service plan ID of the resize configuration with new vCPU and storage size.|
 
 ## Response
 
@@ -64,6 +70,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
+Content-Type: application/json
+
+{
+  "targetServicePlanId": "30d0e128-de93-41dc-89ec-33d84bb662a0"
+}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/manageddevice-resizecloudpc-csharp-snippets.md)]
@@ -79,6 +90,14 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-resizecloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-resizecloudpc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevice-resizecloudpc-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

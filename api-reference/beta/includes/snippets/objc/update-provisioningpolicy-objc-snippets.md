@@ -12,12 +12,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCloudPcProvisioningPolicy *cloudPcProvisioningPolicy = [[MSGraphCloudPcProvisioningPolicy alloc] init];
-[cloudPcProvisioningPolicy setDisplayName:@"Display Name value"];
-[cloudPcProvisioningPolicy setDescription:@"Description value"];
-[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701ffff"];
-[cloudPcProvisioningPolicy setImageId:@"Image ID value"];
-[cloudPcProvisioningPolicy setImageDisplayName:@"Image Display Name value"];
-[cloudPcProvisioningPolicy setImageType: [MSGraphCloudPcProvisioningPolicyImageType custom]];
+[cloudPcProvisioningPolicy setDisplayName:@"HR provisioning policy"];
+[cloudPcProvisioningPolicy setDescription:@"Provisioning policy for India HR employees"];
+[cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701b553"];
 
 NSError *error;
 NSData *cloudPcProvisioningPolicyData = [cloudPcProvisioningPolicy getSerializedDataWithError:&error];

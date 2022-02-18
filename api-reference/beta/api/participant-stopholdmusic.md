@@ -85,6 +85,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/participant-stopholdmusic-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-stopholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-stopholdmusic-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,38 +115,8 @@ Location: https://graph.microsoft.com/beta/communications/calls/e141b67c-90fd-45
 {
   "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-### Notification sent to the application after the stopHoldMusicOperation finishes
-
-```http
-POST https://bot.contoso.com/api/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "#microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.stopHoldMusicOperation",
-        "@odata.id": "communications/calls/e141b67c-90fd-455d-858b-b48a40b9cc8d/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
-      }
-    }
-  ]
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "resultInfo": null
 }
 ```
