@@ -1,6 +1,6 @@
 ---
 title: "joinMeetingIdSettings resource type"
-description: "Specifies the joinMeetingId and the meeting passcode, as well as the passcode requirement."
+description: "Specifies the joinMeetingId and the meeting passcode as well as the passcode requirement."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the joinMeetingId and the meeting passcode, as well as the passcode requirement.
+Specifies the **joinMeetingId** and the meeting passcode as well as the passcode requirement.
 
 ## Properties
 
-| Property            | Type      | Description                                   | Required | ReadOnly |
-|:--------------------|:----------|:----------------------------------------------|----------|----------|
-| isPasscodeRequired  | Boolean   | Indicates whether a passcode is required to join a meeting when using joinMeetingId. | No | No |
-| joinMeetingId       | String    | The meeting ID to be used to join a meeting.  | No       | Yes      |
-| passcode            | String    | The passcode to join a meeting.               | No       | Yes      |
-
+| Property            | Type      | Description                                   |
+|:--------------------|:----------|:----------------------------------------------|
+| isPasscodeRequired  | Boolean   | Indicates whether a passcode is required to join a meeting when using **joinMeetingId**. Optional. |
+| joinMeetingId       | String    | The meeting ID to be used to join a meeting. Optional. Read-only. |
+| passcode            | String    | The passcode to join a meeting.  Optional. Read-only. |
 ## JSON representation
 
 The following is a JSON representation of the resource.

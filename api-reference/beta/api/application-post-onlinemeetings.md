@@ -39,8 +39,8 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
->- `joinMeetingIdSettings` may not be generated for some pre-scheduled meetings if the meeting was created before this feature was supported.
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `joinMeetingIdSettings` might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
 
 ## Request headers
 
@@ -63,6 +63,8 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 ### Example 1: Create an online meeting with user token
 
 #### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,6 +109,9 @@ Content-Type: application/json
 
 
 #### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -172,6 +177,9 @@ Content-Type: application/json
 ### Example 2: Create an online meeting in a Microsoft Teams channel with a user token
 
 #### Request
+
+The following is an example of the request.
+
 >**Note:** The Object ID of the user token passed should be a member of the channel represented by **threadId** in the payload.
 
 ```http
@@ -188,6 +196,8 @@ Content-Type: application/json
 }
 ```
 #### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -245,6 +255,8 @@ Content-Type: application/json
 
 #### Request
 
+The following is an example of the request.
+
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
@@ -263,6 +275,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
 
@@ -353,11 +367,14 @@ Content-Type: application/json
 }
 -->
 
-### Example 4: Create an online meeting with passcode
+### Example 4: Create an online meeting that requires a passcode
 
-A passcode can be added to the meeting. The passcode is used when joining a meeting with joinMeetingId. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 #### Request
->**Note:** Passcode is automatically generated and custom passcode is not supported.
+
+The following is an example of the request.
+
+>**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -374,6 +391,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -428,10 +447,12 @@ Content-Type: application/json
 ```
 
 
-### Example 5: Create an online meeting with no passcode
+### Example 5: Create an online meeting that does not require a passcode
 
-When `isPasscodeRequired` is set to false or when `joinMeetingIdSettings` is not specified in the request, the generated online meeting will not have a passcode.
+When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
 #### Request
+
+The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -461,6 +482,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -498,7 +521,7 @@ Content-Type: application/json
         "user": {
           "id": "550fae72-d251-43ec-868c-373732c2704f",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "displayName": "Tyler Stein"
         }
       },
       "role": "presenter",

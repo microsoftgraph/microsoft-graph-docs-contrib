@@ -18,8 +18,8 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an onlineMeeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
-- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-attendee-report-of-a-teams-live-event).
-- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 6](#example-6-fetch-recording-of-a-teams-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-the-attendee-report-of-a-teams-live-event).
+- Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 6](#example-6-fetch-the-recording-of-a-teams-live-event).
 
 Teams live event attendee report, and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
@@ -64,8 +64,8 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 To get an **onlineMeeting** using **joinMeetingId** with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onlineMeetings?$filter=JoinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
-GET /users/{userId}/onlineMeetings?$filter=JoinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
 ```
 
 To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
@@ -88,9 +88,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 > [!NOTE]
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
->- `joinMeetingIdSettings` may not be generated for some pre-scheduled meetings if the meeting was created before this feature was supported.
+>- `joinMeetingIdSettings` might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` must be URL encoded.
 
@@ -122,6 +122,8 @@ If successful, this method returns a `200 OK` response code. The response also i
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 #### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -159,6 +161,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -252,6 +256,8 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
+The following is an example of the request.
+
 > **Note:** The meeting ID has been truncated for readability.
 
 The following request uses a user token.
@@ -267,6 +273,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -318,6 +326,8 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
+The following is an example of the request.
+
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -331,6 +341,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -382,9 +394,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 ### Example 4: Retrieve an online meeting by joinMeetingId
-You can retrieve meeting information via joinMeetingId by using either a user or application token.
+You can retrieve meeting information via the **joinMeetingId** by using either a user or an application token.
 
 #### Request
+
+The following is an example of the request.
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
@@ -399,6 +413,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 ```
 
 #### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -449,11 +465,13 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### Example 5: Fetch attendee report of a Teams live event
+### Example 5: Fetch the attendee report of a Teams live event
 
 The following example shows a request to download an attendee report.
 
 #### Request
+
+The following is an example of the request.
 
 The following request uses delegated permission.
 
@@ -502,6 +520,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 
 #### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -513,11 +533,13 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### Example 6: Fetch recording of a Teams live event
+### Example 6: Fetch the recording of a Teams live event
 
 The following example shows a request to download a recording.
 
 #### Request
+
+The following is an example of the request.
 
 The following request uses delegated permission.
 
@@ -563,6 +585,9 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
