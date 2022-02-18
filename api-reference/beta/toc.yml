@@ -11534,6 +11534,8 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-unifiedrbacresourceaction.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+            - name: Resource scope
+              href: resources/unifiedrbacresourcescope.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods

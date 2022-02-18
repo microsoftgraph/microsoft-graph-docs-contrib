@@ -80,6 +80,7 @@ Content-Type: application/json
     "actionVerb": "PATCH",
     "description": "Deploy and manage programs in Insights app",
     "id": "microsoft.insights-programs-update-patch",
-    "name": "microsoft.insights/programs/update"
+    "name": "microsoft.insights/programs/update",
+    "resourceScopeId": null
 }
 ```

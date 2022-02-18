@@ -30,11 +30,12 @@ Inherits from [entity](entity.md).
 |description|String|Description for the action. Supports `$filter` (`eq`). |
 |id|String|Unique identifier for an action within the directory resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
 |name|String|Name for the action within the directory resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
+|resourceScopeId|String|Not implemented.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceNamespace|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md)|A named collection of related actions.|
+|resourceScope|[unifiedRbacResourceScope](../resources/unifiedrbacresourcescope.md)|Not implemented.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -51,6 +52,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "actionVerb": "String",
   "description": "String",
-  "name": "String"
+  "name": "String",
+  "resourceScopeId": "String"
 }
 ```
