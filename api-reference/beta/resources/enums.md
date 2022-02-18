@@ -1069,10 +1069,10 @@ Namespace: microsoft.graph
 
 ### searchAlterationType values
 
-| Member | Description |
-|:---------------|:----------|
-|modification|Get search results for corrected alterate query and the spelling correction information for typos.|
-|suggestion|Get search results for original user query and the suggested spelling correction information for typos in the query.|
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### bucketAggregationSortProperty values
 
