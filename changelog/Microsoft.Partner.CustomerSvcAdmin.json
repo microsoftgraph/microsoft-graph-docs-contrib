@@ -1,0 +1,166 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminAccessAssignmentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminAccessAssignmentStatus** enumeration type.",
+          "Target": "delegatedAdminAccessAssignmentStatus"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminAccessContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminAccessContainerType** enumeration type.",
+          "Target": "delegatedAdminAccessContainerType"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminRelationshipOperationStatus** enumeration type.",
+          "Target": "delegatedAdminRelationshipOperationStatus"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipOperationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminRelationshipOperationType** enumeration type.",
+          "Target": "delegatedAdminRelationshipOperationType"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipRequestAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminRelationshipRequestAction** enumeration type.",
+          "Target": "delegatedAdminRelationshipRequestAction"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipRequestStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminRelationshipRequestStatus** enumeration type.",
+          "Target": "delegatedAdminRelationshipRequestStatus"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "delegatedAdminRelationshipStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAdminRelationshipStatus** enumeration type.",
+          "Target": "delegatedAdminRelationshipStatus"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminAccessContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminAccessContainer](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminAccessContainer?view=graph-rest-beta) resource type.",
+          "Target": "delegatedAdminAccessContainer"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminAccessDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminAccessDetails](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminAccessDetails?view=graph-rest-beta) resource type.",
+          "Target": "delegatedAdminAccessDetails"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminRelationshipCustomerParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminRelationshipCustomerParticipant](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipCustomerParticipant?view=graph-rest-beta) resource type.",
+          "Target": "delegatedAdminRelationshipCustomerParticipant"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminRelationshipParticipant",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminRelationshipParticipant](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipParticipant?view=graph-rest-beta) resource type.",
+          "Target": "delegatedAdminRelationshipParticipant"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRole](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRole?view=graph-rest-beta) resource type.",
+          "Target": "unifiedRole"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminAccessAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminAccessAssignment](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminAccessAssignment?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminAccessAssignment"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminCustomer",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminCustomer](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminCustomer?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminCustomer"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminRelationship](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminRelationship"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminRelationshipOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminRelationshipOperation](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipOperation?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminRelationshipOperation"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminRelationshipRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminRelationshipRequest](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipRequest?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminRelationshipRequest"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delegatedAdminServiceManagementDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [delegatedAdminServiceManagementDetail](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-beta) resource",
+          "Target": "delegatedAdminServiceManagementDetail"
+        },
+        {
+          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantRelationship](https://docs.microsoft.com/en-us/graph/api/resources/tenantRelationship?view=graph-rest-beta) resource",
+          "Target": "tenantRelationship"
+        }
+      ],
+      "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-16T23:33:05.8733913Z",
+      "WorkloadArea": "Microsoft.Partner.CustomerSvcAdmin",
+      "SubArea": ""
+    }
+  ]
+}
