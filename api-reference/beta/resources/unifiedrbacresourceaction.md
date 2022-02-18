@@ -35,7 +35,7 @@ Inherits from [entity](entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceScope|[unifiedRbacResourceScope](../resources/unifiedrbacresourcescope.md)|Not implemented.|
+|resourceScope| None |Not implemented.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
