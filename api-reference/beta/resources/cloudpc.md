@@ -31,6 +31,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Bulk reprovision remote action](../api/manageddevice-bulkreprovisioncloudpc.md)|None|Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.|
 |[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
+|[Set cloudPc review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|When IT admins consider a Cloud PC as suspicious, they can use this API to set the Cloud PC device in review state, they can also use it to set the Cloud PC back to normal after review.|
+|[Get cloudPc review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudPcReviewStatus.md)|Get and check the review status of a specific Cloud PC device.|
+|[Bulk set cloudPc review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudpcbulkremoteactionresult](../resources/cloudpcbulkremoteactionresult.md)|Perform bulk setting Cloud PC review status for a set of Cloud PC devices with their Intune managed device IDs.|
 
 ## Properties
 

@@ -10064,6 +10064,12 @@ items:
             href: api/manageddevice-resizecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
+          - name: Set cloudPc review status
+            href: api/manageddevice-setcloudpcreviewstatus.md
+          - name: Get cloudPc review status
+            href: api/manageddevice-getcloudpcreviewstatus.md
+          - name: Bulk set cloudPc review status
+            href: api/manageddevice-bulksetcloudpcreviewstatus.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
