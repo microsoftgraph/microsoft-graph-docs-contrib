@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRbacResourceActions"
+title: "List resourceActions"
 description: "Get a list of the unifiedRbacResourceAction objects and their properties."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List unifiedRbacResourceActions
+# List resourceActions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

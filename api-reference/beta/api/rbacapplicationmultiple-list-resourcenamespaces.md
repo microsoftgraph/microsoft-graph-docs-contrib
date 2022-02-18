@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRbacResourceNamespaces"
+title: "List resourceNamespaces"
 description: "Get a list of the unifiedRbacResourceNamespace objects and their properties."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List unifiedRbacResourceNamespaces
+# List resourceNamespaces
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
