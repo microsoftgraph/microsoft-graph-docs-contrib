@@ -33,6 +33,7 @@ None
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|resourceNamespaces|[unifiedRbacResourceNamespace](../resources/unifiedrbacresourcenamespace.md) collection|Resource that represents a collection of related actions.|
 |roleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection| Resource to grant access to users or groups. |
 |roleDefinitions|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection| Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles. |
 |roleAssignmentApprovals|[approval](../resources/approval.md) collection| Decisions associated with a role assignment approval.|
