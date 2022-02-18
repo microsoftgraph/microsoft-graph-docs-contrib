@@ -20,7 +20,6 @@ using var fileStream = System.IO.File.OpenRead(filePath);
 // in this case, replace
 var uploadProps = new DriveItemUploadableProperties
 {
-    ODataType = null,
     AdditionalData = new Dictionary<string, object>
     {
         { "@microsoft.graph.conflictBehavior", "replace" }
