@@ -37,10 +37,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "resultTemplateId": {
-                        "displayName": "String",
-                        "body": {"@odata.type": "microsoft.graph.Json"}
-                      }
+   "resultTemplateId": {
+      "displayName": "String",
+      "body":{
+         "@odata.type":"microsoft.graph.Json"
+      }
+   }
 }
 ```
 
