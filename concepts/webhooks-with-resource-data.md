@@ -12,7 +12,7 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
+- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.
 
@@ -96,11 +96,11 @@ Content-Type: application/json
 }
 ```
 
-## Subscription lifecycle notifications (preview)
+## Subscription lifecycle notifications
 
 Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle. 
 
-For more information about how to receive, and respond to, lifecycle notifications (preview), see [Reduce missing subscriptions and change notifications (preview)](webhooks-lifecycle.md)
+For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications)](webhooks-lifecycle.md)
 
 ## Validating the authenticity of notifications
 
