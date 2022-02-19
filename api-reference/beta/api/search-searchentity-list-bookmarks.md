@@ -1,6 +1,6 @@
 ---
 title: "List bookmarks"
-description: "Get a list of the bookmark objects and their properties."
+description: "Get a list of bookmark objects and their properties."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [bookmark](../resources/search-bookmark.md) objects and their properties.
+Get a list of [bookmark](../resources/search-bookmark.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +35,7 @@ GET /search/bookmarks
 ```
 
 ## Optional query parameters
-This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/search/bookmarks
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
