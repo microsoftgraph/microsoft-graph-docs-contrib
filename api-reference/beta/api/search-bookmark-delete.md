@@ -1,6 +1,6 @@
 ---
 title: "Delete bookmark"
-description: "Deletes a bookmark object."
+description: "Delete a bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.date: 09/21/2021
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [bookmark](../resources/search-bookmark.md) object.
+Delete a [bookmark](../resources/search-bookmark.md) object.
 
 ## Permissions
 One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
