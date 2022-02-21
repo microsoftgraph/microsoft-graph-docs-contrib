@@ -15,15 +15,20 @@ Represents a document set in SharePoint.
 
 ## Properties
 
-| Property name  | Type    | Description|
+| Property  | Type    | Description|
 |:---------------|:--------|:--------------------------------------------------|
 | shouldPrefixNameToFile | Boolean  | Add the name of the document set to each file name.|
 | allowedContentTypes | Collection(microsoft.graph.contentTypeInfo) | Content types allowed in document set.|
 | defaultContents     | Collection(microsoft.graph.documentSetContent) | Default contents of document set. | 
 | propagateWelcomePageChanges | Boolean | Specifies whether to push welcome page changes to inherited content types.  |
-| sharedColumns       | Collection(microsoft.graph.columnDefinition) | Columns edited on the document set that synchronize to all documents in the set. These are read-only on the documents themselves. |
-| welcomePageColumns  | Collection(microsoft.graph.columnDefinition)  | Specifies columns to show on the welcome page for the document set.  |
 | welcomePageUrl      | string | Welcome page absolute URL.  |
+
+## Relationships
+
+| Relationship   | Type                      | Description
+|:----------------|:--------------------------|:-------------------------------
+| sharedColumns       | Collection(microsoft.graph.columnDefinition) | Columns edited on the document set that synchronize to all documents in the set. These are read-only on the documents themselves. 
+| welcomePageColumns  | Collection(microsoft.graph.columnDefinition)  | Specifies columns to show on the welcome page for the document set.
 
 ## JSON representation
 

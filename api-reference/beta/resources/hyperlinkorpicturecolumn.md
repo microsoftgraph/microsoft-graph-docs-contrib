@@ -16,7 +16,7 @@ Indicates that the column contains URL data which can be an achortag or an image
 
 ## Properties
 
-| Property name      | Type               | Description
+| Property      | Type               | Description
 |:-------------------|:-------------------|:----------------------------------------------
 | isPicture       | Boolean             | Specifies whether the display format used for URL columns is an image or a hyperlink. 
 
