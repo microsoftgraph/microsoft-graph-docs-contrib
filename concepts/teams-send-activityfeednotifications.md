@@ -416,5 +416,5 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 ## See also
 
-* [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md).
+* [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
 * [Design activity feed notifications for Microsoft Teams app](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
