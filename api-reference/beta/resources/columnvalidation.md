@@ -16,7 +16,7 @@ Contains metadata for validating the column.
 
 ## Properties
 
-| Property name  | Type    | Description
+| Property  | Type    | Description
 |:---------------|:--------|:--------------------------------------------------
 | **formula**    | string  | The formula to validate column value. For examples, see [Examples of common formulas in lists](https://support.microsoft.com/office/examples-of-common-formulas-in-sharepoint-lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3) 
 | **descriptions**    | Collection(microsoft.graph.displayNameLocalization)  | Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails. 
