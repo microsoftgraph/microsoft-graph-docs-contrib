@@ -52,7 +52,7 @@ The following screenshot shows the **Select Permissions** dialog box for Microso
 
 > [!IMPORTANT]
 > 
-> We recommend that you configure the least privileged set of permissions required by your app. This improves the privilege security of your app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+> We recommend that you configure the least privileged set of permissions required by your app. This improves the security of your app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 ## 3. Get administrator consent
 

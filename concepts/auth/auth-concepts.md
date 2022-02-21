@@ -15,7 +15,7 @@ This article provides an overview of access tokens, the Microsoft identity platf
 
 ## Access tokens
 
-Access tokens issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. Access tokens are opaque to the caller. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport-layer security.
+Access tokens issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
 
 The following example shows a Microsoft identity platform access token:
 
@@ -78,9 +78,9 @@ _Effective permissions_ are the permissions that your app has when making reques
 
 - For delegated permissions, the *effective permissions* of your app are the least-privileged intersection of the delegated permissions the app has been granted (by consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user.
 
-  For example, assume your app has been granted the *User.ReadWrite.All* delegated permission and calls the [Update user](/graph/api/user-update) API. This permission nominally grants your app permission to read and update the profile of every user in an organization. However, because of effective permissions, the following restrictions apply to the privileges of the signed-in user:
-    + If the signed-in user is a global administrator, your app can update the profile of every user in the organization.
-    + If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
+  For example, suppose that your app has been granted the *User.ReadWrite.All* delegated permission and calls the [Update user](/graph/api/user-update) API. This permission nominally grants your app permission to read and update the profile of every user in an organization. However, because of effective permissions, the following restrictions apply to the privileges of the signed-in user:
+  + If the signed-in user is a global administrator, your app can update the profile of every user in the organization.
+  + If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
 
 - For application permissions, the *effective permissions* of your app are the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
@@ -92,7 +92,8 @@ _Effective permissions_ are the permissions that your app has when making reques
 | App type scenarios | Web / Mobile / single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on-behalf of a user](../auth-v2-user.md) | [Get access as a service](../auth-v2-service.md) |
 | Who can consent | <li> Users can consent for their data <li> Admins can consent for all users | Only admin can consent |
-| Common names | <li>OAuth2 permissions   <li>Impersonation access permission <li>[oAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | <li> App roles <li>App-only permissions <li> [appRoleAssignments](/graph/api/resources/approleassignment) <li>Direct access permissions  |
+| Other names | <li> scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
+| Result of consent | [oAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignments](/graph/api/resources/approleassignment) |
 
 
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
@@ -145,5 +146,6 @@ The Microsoft identity platform documentation contains articles and samples that
 
 ## See also
 
+- [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens)
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md)
 - [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview)

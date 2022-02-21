@@ -27,9 +27,8 @@ The _constraint_ element of the name determines the potential extent of access y
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
-> **Note**: 
-> 1. In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user in the organization.
-> 2. Azure AD roles also provide permissions to manage Azure AD resource. To see which permissions are included in each Azure AD role, see the [Azure AD built-in roles reference](/azure/active-directory/roles/permissions-reference).
+> [!NOTE]
+> In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user. For administrators, these privileges are defined through the [Azure AD roles](/azure/active-directory/roles/permissions-reference) that the user is assigned.
 
 ## Microsoft accounts and work or school accounts
 
