@@ -1076,7 +1076,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity risk permissions
+## Identity protection risk permissions
 
 #### Delegated permissions
 
@@ -1085,7 +1085,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information  | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user. | Yes | No |
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
 | _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information  | Allows the app to read and update identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Read all risky service principal information  | Allows the app to read all risky service principal information for your organization, on behalf of the signed-in user. | Yes | No |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and write all risky service principal information  | Allows the app to read and update risky service principal information for all service principals in your organization, on behalf of the signed-in user. Update operations include dismissing risky service principals.| Yes | No |
 
 #### Application permissions
 
@@ -1094,7 +1095,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information | Allows the app to read identity risk event information for all users in your organization without a signed-in user. | Yes |
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information | Allows the app to read identity user risk information for all users in your organization without a signed-in user. | Yes |
 | _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information | Allows the app to read and update identity user risk information for all users in your organization without a signed-in user. | Yes |
-
+| _IdentityRiskyServicePrincipal.Read.All_ |   Read all risky service principal information  | Allows the app to read all risky service principal information for your organization, without a signed-in user. | Yes |
+| _IdentityRiskyServicePrincipal.ReadWrite.All_ |   Read and write all risky service principal information  | Allows the app to read and update risky service principal for your organization, without a signed-in user.| Yes |
 
 All identity risk permissions are valid only for work or school accounts. For an app with delegated permissions to read identity risk information, the signed-in user must be a member of one of the following [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference): Global Administrator, Security Administrator, or Security Reader.
 
@@ -1112,6 +1114,12 @@ The following usages are valid for both delegated and application permissions:
 * Read all risky users and properties in the tenant (`GET /identityProtection/riskyUsers`)
 * Read all risky users whose aggregate risk level is Medium (`GET /identityProtection/riskyUsers?$filter=riskLevel eq 'medium'`)
 * Read the risk information for a specific user (`GET /identityProtection/riskyUsers?$filter=id eq 'userId'`)
+
+#### Read risky service principals
+
+* Read all risky service principals and properties in the tenant (`GET /identityProtection/riskyServicePrincipals`)
+* Read all risky service principals whose aggregate risk level is Medium (`GET /identityProtection/riskyServicePrincipals?$filter=riskLevel eq 'medium'`)
+* Read the risk information for a specific service principal (`GET /identityProtection/riskyServicePrincipals?$filter=id eq '{riskyServicePrincipalsId}'`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1348,6 +1356,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Managed tenant permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Read all managed tenant specific information | Allows the app to read all managed tenant information on behalf of the signed-in user. | Yes | No |
+| _ManagedTenants.ReadWrite.All_ | Read and write all managed tenant specific information | Allows the app to read and write all managed tenant information on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+None.
+
+---
+
 ## Member permissions
 
 #### Delegated permissions
@@ -1381,6 +1404,7 @@ Membership in some Microsoft 365 groups can be hidden. This means that only the 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+---
 
 ## Notes permissions
 
@@ -1427,6 +1451,8 @@ For work or school accounts, _Notes.Read.All_ and _Notes.ReadWrite.All_ allow th
 * _Notes.ReadWrite.All_: Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
 
 ## Notifications permissions
 #### Delegated permissions
@@ -1665,6 +1691,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
@@ -1681,6 +1708,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.AccessReview_ | Read and write your organization's access review policy | Allows the app to read and write your organization's access review policy, without a signed-in user. | Yes |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies, without a signed-in user. | Yes |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
+| _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | 
+| _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes |
+| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy without a signed-in user. | Yes |
 | _Policy.ReadWrite.AuthenticationMethod_   | Read and write all authentication method policies    | Allows the app to read and write all authentication method policies for the tenant, without a signed-in user. | Yes |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes |
@@ -1700,6 +1730,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.ReadWrite.AuthenticationFlows_: Read and write your organization's authentication flows policy (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.AuthenticationMethod_: Use this permission to manage the settings of the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 * _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
+* _Policy.ReadWrite.CrossTenantAccessPolicy_: Read and write your organization's cross tenant access policy (`PATCH /beta/policies/crossTenantAccessPolicy`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 

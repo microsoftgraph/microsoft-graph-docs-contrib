@@ -114,7 +114,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |preferredSingleSignOnMode|string|Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are `password`, `saml`, `notSupported`, and `oidc`.|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Specifies the expiration date of the keyCredential used for token signing, marked by **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
-|publishedPermissionScopes|[permissionScope](permissionscope.md) collection|The delegated permissions exposed by the application. For more information see the **oauth2PermissionScopes** property on the [application](application.md) entity's **api** property. Not nullable.|
+|publishedPermissionScopes|[permissionScope](permissionscope.md) collection|The delegated permissions exposed by the application. For more information see the **oauth2PermissionScopes** property on the [application](application.md) entity's **api** property. Not nullable. <br/>**Note:** This property is named **oauth2PermissionScopes** in v1.0.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
 |samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on.|
@@ -167,40 +167,40 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": "string",
-  "appDisplayName": "string",
-  "appId": "string",
-  "appOwnerOrganizationId": "guid",
-  "applicationTemplateId": "string",
+  "alternativeNames": "String",
+  "appDisplayName": "String",
+  "appId": "String",
+  "appOwnerOrganizationId": "GUID",
+  "applicationTemplateId": "String",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "customSecurityAttributes": {
     "@odata.type": "microsoft.graph.customSecurityAttributeValue"
   },
-  "disabledByMicrosoftStatus": "string",
-  "displayName": "string",
-  "errorUrl": "string",
-  "homepage": "string",
-  "id": "string (identifier)",
+  "disabledByMicrosoftStatus": "String",
+  "displayName": "String",
+  "errorUrl": "String",
+  "homepage": "String",
+  "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "loginUrl": "string",
-  "logoutUrl": "string",
+  "loginUrl": "String",
+  "logoutUrl": "String",
   "notes": "String",
-  "notificationEmailAddresses": ["string"],
+  "notificationEmailAddresses": ["String"],
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "passwordSingleSignOnSettings": {"@odata.type": "microsoft.graph.passwordSingleSignOnSettings"},
-  "preferredSingleSignOnMode": "string",
+  "preferredSingleSignOnMode": "String",
   "preferredTokenSigningKeyEndDateTime": "DateTime",
-  "preferredTokenSigningKeyThumbprint": "string",
-  "replyUrls": ["string"],
-  "samlMetadataUrl": "string",
+  "preferredTokenSigningKeyThumbprint": "String",
+  "replyUrls": ["String"],
+  "samlMetadataUrl": "String",
   "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",
-  "servicePrincipalNames": ["string"],
-  "servicePrincipalType": "string",
+  "servicePrincipalNames": ["String"],
+  "servicePrincipalType": "String",
   "signInAudience": "String",
-  "tags": ["string"],
+  "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "useCustomTokenSigningKey": false,
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}

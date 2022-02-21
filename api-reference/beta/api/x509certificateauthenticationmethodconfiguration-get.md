@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_x509certificateauthenticationmethodconfiguration"
@@ -65,8 +67,28 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 ``` http
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-x509certificateauthenticationmethodconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-x509certificateauthenticationmethodconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
+
+The following response object shows an x509CertificateAuthenticationMethodConfiguration with its default configuration.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -79,29 +101,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
-	"id": "X509Certificate",
-	"state": "disabled",
-	"certificateUserBindings": [{
-			"x509CertificateField": "PrincipalName",
-			"userProperty": "onPremisesUserPrincipalName",
-			"priority": 1
-		},
-		{
-			"x509CertificateField": "RFC822Name",
-			"userProperty": "userPrincipalName",
-			"priority": 2
-		}
-	],
-	"authenticationModeConfiguration": {
-		"x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
-		"rules": []
-	},
-	"includeTargets": [{
-		"targetType": "group",
-		"id": "all_users",
-		"isRegistrationRequired": false
-	}]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
+    "id": "X509Certificate",
+    "state": "disabled",
+    "certificateUserBindings": [
+        {
+            "x509CertificateField": "PrincipalName",
+            "userProperty": "onPremisesUserPrincipalName",
+            "priority": 1
+        },
+        {
+            "x509CertificateField": "RFC822Name",
+            "userProperty": "userPrincipalName",
+            "priority": 2
+        }
+    ],
+    "authenticationModeConfiguration": {
+        "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
+        "rules": []
+    },
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

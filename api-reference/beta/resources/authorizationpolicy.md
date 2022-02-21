@@ -34,7 +34,7 @@ Represents a policy that can control Azure Active Directory authorization settin
 |description|String| Description of this policy.|  
 |displayName|String| Display name for this policy. |  
 |enabledPreviewFeatures|String collection| List of features enabled for private preview on the tenant. | 
-|guestUserRoleId|Guid| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](../api/rbacapplication-list-roledefinitions.md) to find the list of available role templates. Currently following roles are supported:  User (`a0b1b346-4d3e-4e8b-98f8-753987be4970`), Guest User (`10dae51f-b6af-4016-8d66-8c2a99b929b3`), and Restricted Guest User (`2af84b1e-32c8-42b7-82bc-daa82404023b`). | 
+|guestUserRoleId|GUID| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](../api/rbacapplication-list-roledefinitions.md) to find the list of available role templates. Currently following roles are supported:  User (`a0b1b346-4d3e-4e8b-98f8-753987be4970`), Guest User (`10dae51f-b6af-4016-8d66-8c2a99b929b3`), and Restricted Guest User (`2af84b1e-32c8-42b7-82bc-daa82404023b`). | 
 |id|String| ID of the authorization policy. Required. Read-only.| 
 |permissionGrantPolicyIdsAssignedToDefaultUserRole|String collection|Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent. Values should be in the format `managePermissionGrantsForSelf.{id}`, where `{id}` is the **id** of a built-in or custom [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies). An empty list indicates user consent to apps is disabled. |
 
@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
-  "guestUserRoleId": "Guid",
+  "guestUserRoleId": "GUID",
   "blockMsolPowerShell": true,
   "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "allowedToUseSSPR": true,

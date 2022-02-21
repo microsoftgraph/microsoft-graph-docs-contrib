@@ -116,7 +116,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group"
+  "name": "get_group_termstore"
 }
 -->
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_group"
+  "name": "get_group_termstore_sites"
 }
 -->
 

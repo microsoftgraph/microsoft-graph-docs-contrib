@@ -23,7 +23,7 @@ Delegated permissions can be requested by client applications needing an access 
 |:---------------|:--------|:----------|
 |adminConsentDescription|String|A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf of all users. This text appears in tenant-wide admin consent experiences.|
 |adminConsentDisplayName|String|The permission's title, intended to be read by an administrator granting the permission on behalf of all users.|
-|id|Guid|Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.|
+|id|GUID|Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.|
 |isEnabled|Boolean|When creating or updating a permission, this property must be set to **true** (which is the default). To delete a permission, this property must first be set to **false**.  At that point, in a subsequent call, the permission may be removed.|
 |type|String| The possible values are: `User` and `Admin`. Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required. While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission). For more information, see [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent). |
 |userConsentDescription|String|A description of the delegated permissions, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.|
@@ -44,13 +44,13 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "guid",
-  "adminConsentDisplayName": "string",
-  "adminConsentDescription": "string",
-  "userConsentDisplayName": "string",
-  "userConsentDescription": "string",
-  "value": "string",
-  "type": "string",
+  "id": "GUID",
+  "adminConsentDisplayName": "String",
+  "adminConsentDescription": "String",
+  "userConsentDisplayName": "String",
+  "userConsentDescription": "String",
+  "value": "String",
+  "type": "String",
   "isEnabled": true
 }
 ```
