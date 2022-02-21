@@ -68,4 +68,4 @@ It is useful for the alert to be consumed as a chat or channel message; for exam
 
 ## See also
 
-[Design activity feed notifications for Microsoft Teams app](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
+[Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile) 
