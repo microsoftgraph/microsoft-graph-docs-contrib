@@ -19,7 +19,7 @@ Typical customer scenarios for access reviews include:
 - Customers can review and certify employee access to Azure AD resources.
 - Customers can review and audit assignments to Azure AD privileged roles. This supports organizations in the management of privileged access.
 
-The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription.
+The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
 ## Methods
 
