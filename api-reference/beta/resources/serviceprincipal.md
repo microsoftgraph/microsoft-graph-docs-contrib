@@ -170,7 +170,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "alternativeNames": "String",
   "appDisplayName": "String",
   "appId": "String",
-  "appOwnerOrganizationId": "GUID",
+  "appOwnerOrganizationId": "Guid",
   "applicationTemplateId": "String",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],

@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
 {
   "alternateNotificationEmails": "String",
   "groupLifetimeInDays": 180,
-  "id": "GUID (identifier)",
+  "id": "Guid (identifier)",
   "managedGroupTypes": "String"
 }
 ```

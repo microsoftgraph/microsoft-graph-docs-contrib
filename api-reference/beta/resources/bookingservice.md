@@ -39,7 +39,7 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
-|id|String|The ID of that service, in a GUID format. Read-only.|
+|id|String|The ID of that service, in a Guid format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |

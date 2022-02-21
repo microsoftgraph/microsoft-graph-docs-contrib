@@ -31,8 +31,8 @@ None.
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
 | resourceData | [resourceData](resourcedata.md) | The content of this property depends on the type of resource being subscribed to. Required. |
 | subscriptionExpirationDateTime | DateTimeOffset | The expiration time for the subscription. Required. |
-| subscriptionId | GUID | The unique identifier of the subscription that generated the notification. |
-| tenantId | GUID | The unique identifier of the tenant from which the change notification originated. |
+| subscriptionId | Guid | The unique identifier of the subscription that generated the notification. |
+| tenantId | Guid | The unique identifier of the tenant from which the change notification originated. |
 
 ## Relationships
 

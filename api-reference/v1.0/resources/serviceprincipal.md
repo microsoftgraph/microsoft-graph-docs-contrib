@@ -154,7 +154,7 @@ Here is a JSON representation of the resource
   "alternativeNames": ["String"] ,
   "appDisplayName": "String",
   "appId": "String",
-  "appOwnerOrganizationId": "GUID",
+  "appOwnerOrganizationId": "Guid",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "disabledByMicrosoftStatus": "String",
