@@ -28,7 +28,7 @@ The _constraint_ element of the name determines the potential extent of access y
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
 > [!NOTE]
-> In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user. For administrators, these privileges are defined through the [Azure AD roles](/azure/active-directory/roles/permissions-reference) that the user is assigned.
+> In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user. For administrators, these privileges are determined through the [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference) that the user is assigned.
 
 ## Microsoft accounts and work or school accounts
 
