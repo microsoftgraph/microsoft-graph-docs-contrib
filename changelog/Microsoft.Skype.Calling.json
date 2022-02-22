@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "joinMeetingIdSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [joinMeetingIdSettings](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [joinMeetingIdSettings](https://docs.microsoft.com/en-us/graph/api/resources/joinmeetingidsettings?view=graph-rest-beta) resource type.",
           "Target": "joinMeetingIdSettings"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "joinMeetingIdSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Description": "Added the **joinMeetingIdSettings** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
           "Target": "onlineMeeting"
         }
       ],

@@ -118,7 +118,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 - If you fetch the attendee report or recording of a **Microsoft Teams Live Event**, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
 
 > [!NOTE]
->- `joinMeetingIdSettings` might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
+>- **joinMeetingIdSettings** might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
 
 ## Examples
 
@@ -126,7 +126,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -259,7 +259,7 @@ You can retrieve meeting information via meeting ID with either a user or applic
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 > **Note:** The meeting ID has been truncated for readability.
 
@@ -329,7 +329,7 @@ You can retrieve meeting information via JoinWebUrl by using either a user or ap
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
@@ -400,8 +400,6 @@ The following is an example of the response.
 You can retrieve meeting information via the **joinMeetingId** by using either a user or an application token.
 
 #### Request
-
-The following is an example of the request.
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
