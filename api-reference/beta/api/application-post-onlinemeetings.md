@@ -39,8 +39,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
->- `joinMeetingIdSettings` might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 
@@ -64,7 +63,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -178,7 +177,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 >**Note:** The Object ID of the user token passed should be a member of the channel represented by **threadId** in the payload.
 
@@ -255,7 +254,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -372,7 +371,7 @@ The following is an example of the response.
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
@@ -452,7 +451,7 @@ Content-Type: application/json
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings

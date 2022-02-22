@@ -21,7 +21,7 @@ For example, you can:
 - Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-the-attendee-report-of-a-teams-live-event).
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 6](#example-6-fetch-the-recording-of-a-teams-live-event).
 
-Teams live event attendee report, and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report and Teams live event recordings are online meeting artifacts. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## Permissions
 
@@ -116,6 +116,9 @@ If successful, this method returns a `200 OK` response code. The response also i
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch the attendance report of an online meeting, this method returns a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
 - If you fetch the attendee report or recording of a **Microsoft Teams Live Event**, this method returns a `Location` header that indicates the URI to the attendee report or recording, respectively.
+
+> [!NOTE]
+>- `joinMeetingIdSettings` might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
 
 ## Examples
 
@@ -471,8 +474,6 @@ The following example shows a request to download an attendee report.
 
 #### Request
 
-The following is an example of the request.
-
 The following request uses delegated permission.
 
 # [HTTP](#tab/http)
@@ -538,8 +539,6 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 The following example shows a request to download a recording.
 
 #### Request
-
-The following is an example of the request.
 
 The following request uses delegated permission.
 

@@ -1,6 +1,6 @@
 ---
 title: "joinMeetingIdSettings resource type"
-description: "Specifies the joinMeetingId and the meeting passcode as well as the passcode requirement."
+description: "Specifies the joinMeetingId, the meeting passcode, and the requirement for the passcode."
 author: "yuyaolian-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the **joinMeetingId** and the meeting passcode as well as the passcode requirement.
+Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode.
 
 ## Properties
 
