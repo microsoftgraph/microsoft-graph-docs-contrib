@@ -10,7 +10,7 @@ ms.prod: "governance"
 
 Contoso Limited is a growing service provider that has delegated various Azure AD administrator privileges to users, groups, and service principals in the organization. The company needs to ensure only the right assignees have access to privileged roles. The system auditors should also audit the access review history to report on the effectiveness of Contoso's internal controls.
 
-In this tutorial, you as the Global Administrator of Contoso will use the access reviews API to create a recurring access review of users and groups with access to privileged roles. This access includes both active and eligible roles.
+In this tutorial, you'll use the access reviews API to create a recurring access review of users and groups with access to privileged roles. This access includes both active and eligible roles.
 
 ## Prerequisites
 
@@ -213,7 +213,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the **accessReviewScheduleDefinition** object. Only one instance is returned, in this scenario representing the first recurrence of only one resource under review.
+In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the **accessReviewScheduleDefinition** object. Only one instance is returned representing the first recurrence of only one resource under review.
 
 ```http
 HTTP/1.1 200 OK
@@ -267,7 +267,7 @@ Content-type: application/json
 }
 ```
 
-The status of this access review instance is `InProgress`. This means that the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired.
+The status of this access review instance is `InProgress`. An `InProgress` status means that the review instance is open for reviewers to submit decisions, and the period for this access review instance hasn't expired.
 
 ## Step 3: Retrieve access review decisions before recording any decisions
 
@@ -425,13 +425,13 @@ When you retrieve the access review decisions, they have the following settings:
 + The reviewedBy object contains your details as the reviewer.
 + The applyResult is `New` meaning the decisions haven't been applied.
 
-Even though you've recorded all the decisions that were pending for this accessReviewInstance, these decisions haven't been applied to the resource and principal objects. For example, Adele still has access to the privileged role. This is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, nor has the accessReviewInstance period expired and autocompleted.
+While you've recorded all the pending decisions for this instance, the decisions haven't been applied to the resource and principal objects. For example, Adele still has access to the privileged role. This behavior is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, nor has the instance period expired and autocompleted.
 
-In this tutorial, you won't stop the accessReviewInstance manually but, you'll let the accessReviewInstance expire and autocomplete and then apply the access review decisions.
+In this tutorial, you won't stop the instance manually but you'll let it end automatically and then apply the decisions.
 
 ## Step 5: Apply access review decisions
 
-As an admin, after the 3 day duration has passed and the **status** of the accessReviewInstance is set to `Completed`, you can apply the access review decisions.
+As an admin, after the three-day duration has passed and the **status** of the accessReviewInstance is set to `Completed`, you can apply the decisions.
 
 ### Request
 
@@ -538,12 +538,14 @@ Content-type: application/json
 }
 ```
 
-<!---
-## Step 6: Retrieve access review history definitions
+## Step 7: Retrieve access review history definitions
 
 Contoso's auditors also want to review the access review history for the last quarter. In this example, you'll generate an access review history report for all **accessReviewScheduleDefinition** objects scoped to directory role assignments (roleAssignmentScheduleInstances). In this query, the **decisions** property is empty and therefore defaults to include all decisions in the history report.
 
-### Request: Define the scope of history definitions
+### Define the scope of the history report
+
+#### Request
+
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 
@@ -562,7 +564,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDe
 }
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 200 OK
@@ -570,7 +572,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
-    "id": "95cfc9f5-9181-498c-ac85-a1fb91e96fe9",
+    "id": "a222f18d-5cf5-4210-874c-14d0a7d930b3",
     "displayName": "Last quarter's group reviews April 2021",
     "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
     "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
@@ -582,7 +584,7 @@ Content-type: application/json
         "notNotified"
     ],
     "status": "requested",
-    "createdDateTime": "2022-01-18T09:38:55.7433246Z",
+    "createdDateTime": "2022-02-22T10:08:08.2057428Z",
     "fulfilledDateTime": null,
     "downloadUri": null,
     "createdBy": {
@@ -601,62 +603,40 @@ Content-type: application/json
     ]
 }
 ```
-The response object above does not contain a downloadUri value. Give it a few moments for the file to be generated and run a GET request. The downloadUri should then be populated with a link that allows you to retrieve the history report.
 
-### Request: Generate the downloadUri that contains a link to download the history report
+### Generate a link to download the history report
+
+#### Request
+
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/95cfc9f5-9181-498c-ac85-a1fb91e96fe9/generateDownloadUri()
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/a222f18d-5cf5-4210-874c-14d0a7d930b3/instances/a222f18d-5cf5-4210-874c-14d0a7d930b3/generateDownloadUri()
 ```
 
-### Response
+#### Response
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewHistoryDefinition",
-    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-    "id": "95cfc9f5-9181-498c-ac85-a1fb91e96fe9",
-    "displayName": "Last quarter's group reviews April 2021",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewHistoryInstance",
+    "@odata.type": "#microsoft.graph.accessReviewHistoryInstance",
+    "id": "a222f18d-5cf5-4210-874c-14d0a7d930b3",
     "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
     "reviewHistoryPeriodEndDateTime": "9999-12-31T00:00:00Z",
-    "decisions": [
-        "approve",
-        "deny",
-        "dontKnow",
-        "notReviewed",
-        "notNotified"
-    ],
     "status": "done",
-    "createdDateTime": "2022-01-18T09:38:55.7433246Z",
-    "fulfilledDateTime": "2022-01-18T09:38:58.7176521Z",
-    "downloadUri": "https://ermconsolreportweu.blob.core.windows.net/erm-reports/Last quarter's group reviews April 2021-95cfc9f5-9181-498c-ac85-a1fb91e96fe9.csv?skoid=4ad0868b-7b78-4869-abb7-8f29151d8428&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2022-01-18T09:44:18Z&ske=2022-01-18T09:46:18Z&sks=b&skv=2020-04-08&sv=2020-04-08&st=2022-01-18T09:44:18Z&se=2022-01-19T09:44:18Z&sr=b&sp=r&sig=EbLjyNMCFqk563iusd9MW7hYVMhMdmuhJpWNlAUk8pM%3D",
-    "createdBy": {
-        "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
-        "displayName": "MOD Administrator",
-        "type": null,
-        "userPrincipalName": "admin@M365x010717.onmicrosoft.com"
-    },
-    "scopes": [
-        {
-            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'roleAssignmentScheduleInstances')",
-            "queryType": "MicrosoftGraph",
-            "queryRoot": null
-        }
-    ]
+    "runDateTime": "2022-02-22T10:08:08.2057428Z",
+    "fulfilledDateTime": "2022-02-22T10:09:28.5862766Z",
+    "downloadUri": "https://ermconsolreportweu.blob.core.windows.net/erm-reports/Last quarter's group reviews April 2021-a222f18d-5cf5-4210-874c-14d0a7d930b3.csv?skoid=4ad0868b-7b78-4869-abb7-8f29151d8428&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2022-02-22T10:11:22Z&ske=2022-02-22T10:13:22Z&sks=b&skv=2020-04-08&sv=2020-04-08&st=2022-02-22T10:11:22Z&se=2022-02-23T10:11:22Z&sr=b&sp=r&sig=5eX5BfVLS58QqF7oguRH8TeSQdXDHZlapY3y1U%2FGz%2BM%3D"
 }
 ```
 
-The downloadUri property contains a link to download the history report. To download the report, the auditors select this link. This link is active for only 24 hours.
-
---->
+The downloadUri property contains a link to download the history report in an Excel file format. This link is active for only 24 hours.
 
 
 ## Step 6: Clean up resources
 
-Delete the **accessReviewScheduleDefinition** object that you created for this tutorial. This will remove the settings, instances, and decisions associated with the access review.
+Delete the **accessReviewScheduleDefinition** object that you created for this tutorial. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
 
 ### Request
 
@@ -673,7 +653,7 @@ Content-type: text/plain
 
 ## Conclusion
 
-You've learned how to review access to privileged roles in Azure AD. You can also use the access reviews API to review access to Azure Resource roles. Using this API, the organization can continually govern privileged access to its resources.
+You've learned how to review access to privileged roles in Azure AD. Your organization can use the access reviews API to continually govern privileged access to its resources including both Azure AD roles and Azure resource roles.
 
 ## See also
 
