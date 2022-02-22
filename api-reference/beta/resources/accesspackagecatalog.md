@@ -51,7 +51,8 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |:-------------|:------------|:------------|
 |accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable. Supports `$expand`.|
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
-|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection|The roles of each resource in a catalog. Read-only.|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection|The roles in each resource in a catalog. Read-only.|
+|accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection|Read-only.|
 
 ## JSON representation
 
