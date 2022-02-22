@@ -1,6 +1,6 @@
 ---
 title: "resourceSpecificPermission resource type"
-description: "Resource-specific permissions can be used to access specific instances of a resource."
+description: "Represents permissions used to authorize an appliation for direct access to data for a specific instance of resource"
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Resource-specific application permissions are permissions used to authorize an appliation for direct access to data for a specific instance of resource, such as a chat or team. For example, the resource-specific permission ChannelMessage.Read.Group allows a Teams app to read the channel messages for a single team. 
+Represents permissions used to authorize an appliation for direct access to data for a specific instance of resource, such as a chat or team. For example, the resource-specific permission ChannelMessage.Read.Group allows a Teams app to read the channel messages for a single team. 
 
 Currently, resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using the Microsoft Graph API. See [Resource-specific consent for Teams apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) for more details.
 
