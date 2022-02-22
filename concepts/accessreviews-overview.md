@@ -1,5 +1,5 @@
 --- 
-title: "Overview of access reviews API in Microsoft Graph" 
+title: "Overview of access reviews API" 
 description: "The access reviews API allows you to programmatically review access to your Azure AD resources. This helps to ensure that the right people have the right access to the right resources in the organization." 
 author: "FaithOmbongi" 
 ms.localizationpriority: medium 
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType 
 --- 
 
-# Overview of the access reviews API in Microsoft Graph
+# Overview of the access reviews API
 
 [Azure Active Directory (Azure AD) access reviews](/azure/active-directory/governance/access-reviews-overview) is a feature of Azure AD Identity Governance that helps to ensure that the right identities (or principals) have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
 
@@ -39,7 +39,7 @@ This is the logical blueprint that contains the settings of an access review and
 + The reviewers who attest to the need for the principals to maintain access to specific resources.
 + The frequency of the access review.
 + The stages of the access review (for a multi-stage access review).
-+ Decisions to be taken after an access review is completed.
++ Default decisions if decisions aren't recorded.
 
 ### Access review instance
 
@@ -48,6 +48,8 @@ Represents a single review activity, or occurrence, against which reviewers make
 ### Decision items recorded for a review
 
 Represents a decision that a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of principals under review. If there are no decisions taken, that is, reviewers haven't responded to the review, there will be no decision objects for the instance.
+
+System-generated recommended decisions are provided for decision items. These are based off the last sign in date of the principal in review. This feature gives reviewers visibility into dormant accounts in the organization, and recommends decisions to apply about the principals' continued access.
 
 Access reviews also support auditing the decisions that were made on each access review, with the decisions also downloadable for offline auditing.
 

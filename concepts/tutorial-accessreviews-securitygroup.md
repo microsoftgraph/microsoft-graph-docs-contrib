@@ -8,9 +8,9 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to your security groups
 
-Suppose you use Azure AD security groups to assign identities (or principals) access to resources in your organization. This access might be granted automatically when a user meets a certain criteria. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
+Suppose you use Azure AD security groups to assign identities (or principals) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
 
-This tutorial guides you to use the access review API to review access to a security group in your tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
+This tutorial guides you to use the access review API to review access to a security group in your tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 ## Prerequisites
 
@@ -35,7 +35,10 @@ To consent to the required permissions in Graph Explorer:
    
    <!--![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)-->
    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
-
+   
+>[!NOTE]
+>The response objects shown in this tutorial might be shortened for readability.
+   
 ## Step 1: Create test users in your tenant
 
 Create three new test users by running the request below three times, changing the values of **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record the IDs of the three new test users.
@@ -53,7 +56,7 @@ Content-Type: application/json
     "accountEnabled": true,
     "displayName": "Adele Vance",
     "mailNickname": "AdeleV",
-    "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com",
+    "userPrincipalName": "AdeleV@Contoso.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": true,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -78,7 +81,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
     "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
     "displayName": "Adele Vance",
-    "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com"
+    "userPrincipalName": "AdeleV@Contoso.com"
 }
 ```
 
@@ -110,7 +113,7 @@ Content-Type: application/json
     "mailNickname": "buildingsecurity",
     "securityEnabled": true,
     "owners@odata.bind": [
-        "https://graph.microsoft.com/beta/users/d3bcdff4-4f80-4418-a65e-7bf3778c5dca",
+        "https://graph.microsoft.com/beta/users/d3bcdff4-4f80-4418-a65e-7bf3778c5dca"
     ],
     "members@odata.bind": [
         "https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
@@ -148,25 +151,24 @@ From the response, record the ID of the new group to use it later in this tutori
 
 Create an access review for members of the security group, using the following settings:
 
-+ It's a self-reviewing access review. Therefore, each group member will self-attest to their need for continued access to the group.
-+ This is a one-time access review. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
++ It's a self-reviewing access review. Therefore, each group member will self-attest to their need to maintain access to the group.
++ It's a one-time access review. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
 + The review scope is limited to all members (direct and indirect) of the **Building security** group.
 
 ### Request
 
-In this call, replace the following:
-+ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the **Building security** group.
-+ The scope specifies that the review is applied to all members of the **Building security** group. For more options for configuring the scope, see the [See also](#see-also) section.
+In this call, replace the following values:
++ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the ID of the **Building security** group. The scope specifies that the review is applied to all members of the **Building security** group. For more options for configuring the scope, see the [See also](#see-also) section.
 + Value of **startDate** with today's date and value of **endDate** with a date five days from the start date.
 
 The access review has the following settings:
 
-+ It's a self-review. This is inferred when you don't specify a value for the **reviewers** property.
++ It's a self-review as inferred when you don't specify a value for the **reviewers** property.
 + The scope of the review is members of the **Building security** group.
 + The reviewer must provide justification for why they need to maintain access to the group.
-+ The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires. This removes the group members from the group.
++ The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires. The `Deny` decision removes the group members from the group.
 + It's a one-off review that ends after five days.
-+ The principals who are defined in the scope of the review, members of the **Building security** group, will receive email notifications and reminders prompting them to self-attest to their need for continued access.
++ The principals who are defined in the scope of the review, members of the **Building security** group, will receive email notifications and reminders prompting them to self-attest to their need to maintain access.
 
 <!-- {
   "blockType": "request",
@@ -266,11 +268,11 @@ Content-type: application/json
 }
 ```
 
-The status of the above access review is marked as **NotStarted**. You may retrieve the access reviews (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions`) to monitor the status and when it's marked as **InProgress**, then instances have been created for the access review and decisions can be posted.
+The status of the above access review is marked as **NotStarted**. You may retrieve the access review (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) to monitor the status and when it's marked as **InProgress**, then instances have been created for the access review and decisions can be posted. You can also retrieve the access review to see the full settings of the access review.
 
 ## Step 4: List instances of the access review
 
-Once the **status** of the access review is marked as `InProgress`, run the following query to list all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose ID is the same as the access review schedule definition's ID.
+Once the **status** of the access review is marked as `InProgress`, run the following query to list all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance with an ID like the schedule definition's ID.
 
 ### Request
 
@@ -325,7 +327,7 @@ You can confirm that all members of the **Building security** group were contact
 
 ### Request
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3, and `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of the instance returned in Step 4.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
 
 <!-- {
   "blockType": "request",
@@ -356,13 +358,13 @@ Content-type: application/json
         {
             "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
             "displayName": "Adele Vance",
-            "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com",
+            "userPrincipalName": "AdeleV@Contoso.com",
             "createdDateTime": "2022-02-11T17:35:34.4092545Z"
         },
         {
             "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
-            "displayName": "MOD Administrator",
-            "userPrincipalName": "admin@M365x557205.onmicrosoft.com",
+            "displayName": "Alex Wilber",
+            "userPrincipalName": "AlexW@Contoso.com",
             "createdDateTime": "2022-02-11T17:35:34.4092545Z"
         }
     ]
@@ -375,7 +377,7 @@ You're interested in the decisions taken for the instance of the access review.
 
 ### Request
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3, and `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of the instance returned in Step 4.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
 
 <!-- {
   "blockType": "request",
@@ -434,14 +436,14 @@ Content-type: application/json
             "principal": {
                 "@odata.type": "#microsoft.graph.userIdentity",
                 "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
-                "displayName": "MOD Administrator",
+                "displayName": "Alex Wilber",
                 "type": "user",
-                "userPrincipalName": "admin@M365x557205.onmicrosoft.com",
+                "userPrincipalName": "AlexW@Contoso.com",
                 "lastUserSignInDateTime": "2/11/2022 5:31:37 PM +00:00"
             }
         },
         {
-            "id": "817e1852-3f8f-46e0-87ba-ef7dad616ba6",
+            "id": "c7de8fba-4d6a-4fab-a659-62ff0c02643d",
             "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
             "reviewedDateTime": null,
             "decision": "NotReviewed",
@@ -473,7 +475,7 @@ Content-type: application/json
                 "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
                 "displayName": "Adele Vance",
                 "type": "user",
-                "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com",
+                "userPrincipalName": "AdeleV@Contoso.com",
                 "lastUserSignInDateTime": "2/11/2022 4:58:13 PM +00:00"
             }
         }
@@ -481,30 +483,33 @@ Content-type: application/json
 }
 ```
 
-From the call, the **decision** property has the value of `NotReviewed`. This is because members have completed their self-attestation. Follow step 7 to learn how each member can self-attest to their need for access review.
+From the call, the **decision** property has the value of `NotReviewed` because the group members haven't completed their self-attestation. Follow Step 7 to learn how each member can self-attest to their need for access review.
 
-## Step 7: Self-review your pending access
+## Step 7: Self-review a pending access
 
-In Step 3, you configured the access review as a self-reviewing. This means that both members of **Building security** must self-attest to their need to maintain access to the group. You'll complete this step as one of the two members of the **Building security** group.
+In Step 3, you configured the access review as self-reviewing. This configuration requires that both members of the **Building security** group self-attest to their need to maintain their access to the group. 
 
-In this step, one of contacted reviewers will list their access review instances then complete the access review self-attestation process. They can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/).
+>[!NOTE]
+>Complete this step as one of the two members of the **Building security** group.
 
-Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and sign in as one of the two members of the **Building security** group. By doing so, you won't interrupt your current session. Alternatively, you can interrupt your current session by logging out of Graph Explorer and logging back in as one of the two group members.
+In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, will let the default decisions be applied to their access review.
 
-### Use the access reviews API to self-review pending access
+Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and sign in as one of the two members of the **Building security** group. We'll sign in as Adele Vance. By doing so, you won't interrupt your current session. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
 
-Run the following query in Graph Explorer. In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3, and `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of the instance returned in Step 4.
+### Method 1: Use the access reviews API to self-review pending access
 
-#### List pending access reviews decision items
+#### List your access reviews decision items
+
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
 
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions
+GET https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/filterByCurrentUser(on='reviewer')
 ```
 
 ##### Response
-From the response below, user Adele Vance has one pending access review to self-attest to.
+From the response below, you (Adele Vance) have one pending access review (**decision** is `NotReviewed`) to self-attest to. The principal and resource properties indicate the principal to whom the decision applies and the resource that was the scope of the access review. In this case, Adele Vance and the **Building security** group respectively.
 
 ```http
 HTTP/1.1 200 OK
@@ -516,7 +521,7 @@ Content-type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-            "id": "817e1852-3f8f-46e0-87ba-ef7dad616ba6",
+            "id": "c7de8fba-4d6a-4fab-a659-62ff0c02643d",
             "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
             "reviewedDateTime": null,
             "decision": "NotReviewed",
@@ -548,16 +553,15 @@ Content-type: application/json
                 "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
                 "displayName": "Adele Vance",
                 "type": "user",
-                "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com",
-                "lastUserSignInDateTime": "2/11/2022 4:58:13 PM +00:00"
+                "userPrincipalName": "AdeleV@Contoso.com",
+                "lastUserSignInDateTime": "2/15/2022 9:35:23 AM +00:00"
             }
         }
     ]
 }
 ```
 
-
-#### Complete your access review
+#### Record a decision
 
 To complete the access review, Adele Vance will confirm the need to maintain access to the **Building security** group.
 
@@ -566,120 +570,50 @@ To complete the access review, Adele Vance will confirm the need to maintain acc
 In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and `817e1852-3f8f-46e0-87ba-ef7dad616ba6` with the ID of the pending decision item returned in the previous step.
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/817e1852-3f8f-46e0-87ba-ef7dad616ba6
+PATCH https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/c7de8fba-4d6a-4fab-a659-62ff0c02643d
 
 {
-  "decision": "Approve",
-  "justification": "As the assistant security manager, I still need access to the building security group.",
+    "decision": "Approve",
+    "justification": "As the assistant security manager, I still need access to the building security group."
 }
 ```
 
 ##### Response
 
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{}
-
-```
-
-### Use the My Access portal
-
-Instead of a user calling the API to list their pending access review instances, reviewers can visit the [My Access portal](https://myaccess.microsoft.com/) portal to check their pending access review instances. They can follow one of two ways to get there:
-
-+ Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is like the following screenshot. This takes them to the Access reviews menu of the My Access portal.
-
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Email notification to review your access." border="true":::
-
-+ Option 2: Go to the [My Access portal](https://myaccess.microsoft.com/) portal. Select the **Access reviews** menu and select the **Groups and Apps** tab.
-
-From the list of access reviews, select the access review for which you want to post the decision. Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
-
-
-### Complete the access review self-attestation
-
-In the same incognito browser session, sign in to the [My Access portal](https://myaccess.microsoft.com/) to complete the self-attestation. 
-+ From the right navigation bar, select **Access reviews**
-+ Select the **Groups and Apps** tab.
-+ From the list of access reviews, select the access review for which you want to post the decision
-+ Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
-
-The user has now posted their decision for the access review.
-
-   ![Self-attest to access review](../images/../concepts/images/tutorial-accessreviews-api/selfattest.png)
-   <!--:::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to access review":::-->
-
-You can now sign out and exit the incognito browser session.
-
-Via API:
-
-#### Request
-
-```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/817e1852-3f8f-46e0-87ba-ef7dad616ba6/
-```
-
-#### Response
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
-While still logged in as the user, list your access review instances. The response shows that you've posted the decision and the **decision** property is marked as **Approve**. In the response object, the principal and resource properties indicate the principal to whom the decision applies and the resource that was the scope of the access review. In this case, Adele Vance and the Building security respectively.
 
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(accessReviewInstanceDecisionItem)",
-    "@odata.count": 1,
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-            "id": "817e1852-3f8f-46e0-87ba-ef7dad616ba6",
-            "accessReviewId": "2d56c364-0695-4ec6-8b92-4c1db7c80f1b",
-            "reviewedDateTime": "2022-02-11T18:04:44.363Z",
-            "decision": "Approve",
-            "justification": "As the assistant security manager, I still need access to the building security group.",
-            "appliedDateTime": null,
-            "applyResult": "New",
-            "recommendation": "Approve",
-            "principalLink": "https://graph.microsoft.com/v1.0/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
-            "resourceLink": "https://graph.microsoft.com/v1.0/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
-            "reviewedBy": {
-                "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
-                "displayName": "Adele Vance",
-                "type": null,
-                "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com"
-            },
-            "appliedBy": {
-                "id": "00000000-0000-0000-0000-000000000000",
-                "displayName": "",
-                "type": null,
-                "userPrincipalName": ""
-            },
-            "resource": {
-                "id": "eb75ccd2-59ef-48b7-8f76-cc3f33f899f4",
-                "displayName": "Building security",
-                "type": "group"
-            },
-            "principal": {
-                "@odata.type": "#microsoft.graph.userIdentity",
-                "id": "3b8ceebc-49e6-4e0c-9e14-c906374a7ef6",
-                "displayName": "Adele Vance",
-                "type": "user",
-                "userPrincipalName": "AdeleV@m365x557205.onmicrosoft.com",
-                "lastUserSignInDateTime": "2/11/2022 4:58:13 PM +00:00"
-            }
-        }
-    ]
-}
+#### Verify the decisions
 
+To verify the decisions you've recorded for your access review, [list your access review decision items](#list-your-access-reviews-decision-items). While the access review period hasn't expired nor the decisions applies, the **applyResult** will be marked as `New` and you're allowed to change the decision.
+
+You can now sign out and exit the incognito browser session.
+
+### Method 2: Use the My Access portal
+
+Reviewers can also visit the [My Access portal](https://myaccess.microsoft.com/) portal to check their pending access review instances.
+
++ List the pending access reviews. The user can follow one of two ways to get there:
+  + Option 1: Select **Review access** button from the email notification that they received in their mail inbox. The email notification is like the following screenshot. Selecting this button directs them to the pending access review.
+
+  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Email notification to review your access." border="true":::
+
+  + Option 2: Go to the [My Access portal](https://myaccess.microsoft.com/) portal. Select the **Access reviews** menu and select the **Groups and Apps** tab.
+
++ From the list of access reviews, select the access review for which you want to post the decision. Select **Yes** to post the decision that you still need access to **Building security**. Enter a reason, then select **Submit**.
+
+  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Self-attest to the need to maintain access to a resource.":::
+
+
+You can now sign out and exit the incognito browser session.
 
 ## Step 8: Confirm the decisions and the status of the access review
 
-Back in the main browser session where you're still logged in as a global administrator, repeat Step 4 to see that the **decision** property for the member who completed step 5 is now `Approve`. When the access review completes, the default decision of `Deny` will be applied for the decision item for the other user of the **Building security** group.
+Back in the main browser session where you're still logged in as a global administrator, repeat Step 4 to see that the **decision** property Adele Vance is now `Approve`. When the access review ends or expires, the default decision of `Deny` will be recorded for Alex Wilber. When the review period ends, the decisions will be automatically applied because the **autoApplyDecisionsEnabled** was set to `true` and the period of the access review instance will have ended. In this case, Adele will maintain access to the Building security group and Alex will automatically be removed from the group.
 
-Congratulations! You've created an access review and self-attested to the need for access. You only do this once, and maintain access until when the access review definition expires.
+Congratulations! You've created an access review and self-attested to your need to maintain access. You only self-attested once, and will maintain access until it's removed through either a `Deny` decision of another access review instance, or through another internal process.
 
 ## Step 9: Clean up resources
 
@@ -689,14 +623,14 @@ Delete the resources that you created for this tutorial—the **Building securit
 
 #### Request
 
-In this call, replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security**.
+In this call, replace `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` with the **id** of **Building security**.
 
 <!-- {
   "blockType": "request",
   "name": "tutorial-accessreviews-Securitygroup-delete_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
+DELETE https://graph.microsoft.com/beta/groups/eb75ccd2-59ef-48b7-8f76-cc3f33f899f4
 ```
 
 #### Response
@@ -707,12 +641,11 @@ DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101ac
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ### Delete the access review definition
 
-In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
 
 #### Request
 <!-- {
@@ -720,7 +653,7 @@ In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of 
   "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
+DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b
 ```
 
 #### Response
@@ -730,11 +663,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ### Delete the three test users
-In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the **id** of your test user. Repeat this twice with the **id**s of the other two users to delete them.
+In this call, replace `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` with the ID of one of your test users. Repeat this step twice with the IDs of the other two users to delete them.
 
 #### Request
 
@@ -743,7 +675,7 @@ In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the **id** of 
   "name": "tutorial-accessreviews-Securitygroup-delete_user"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
+DELETE https://graph.microsoft.com/beta/users/3b8ceebc-49e6-4e0c-9e14-c906374a7ef6
 ```
 
 #### Response
@@ -753,17 +685,16 @@ DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06
 } -->
 ```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ## Conclusion
 
 You've created an access review in which the principals have self-attested to their need to maintain their access to a resource, in this case, the **Building security** group.
 
-This tutorial has demonstrated one of the supported access review scenarios. The access reviews API supports different scenarios defined by a combination of resources, principals, and reviewers to suit your business needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true).
+This tutorial has demonstrated one of the scenarios by the Azure AD access reviews API. The access reviews API supports different scenarios through a combination of resources, principals, and reviewers to suit your access attestation needs. For more information, see the [access reviews API](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true).
 
 ## See also
 
 + [Access reviews API](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
-+ [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
++ [What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)
 + [Review access for yourself to groups or applications in Azure AD access reviews](/azure/active-directory/governance/review-your-access)
