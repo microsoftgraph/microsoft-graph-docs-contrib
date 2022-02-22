@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "14162e03-c31b-4eda-92a1-3ac5a125ad25",
-          "ApiChange": "Property",
-          "ChangedApiName": "resourceSpecificApplicationPermissions",
-          "ChangeType": "Addition",
-          "Description": "Added the **resourceSpecificApplicationPermissions** property to [apiApplication](https://docs.microsoft.com/en-us/graph/api/resources/apiApplication?view=graph-rest-1.0) resource.",
-          "Target": "apiApplication"
-        },
-        {
-          "Id": "14162e03-c31b-4eda-92a1-3ac5a125ad25",
           "ApiChange": "Resource",
           "ChangedApiName": "resourceSpecificPermission",
           "ChangeType": "Addition",
