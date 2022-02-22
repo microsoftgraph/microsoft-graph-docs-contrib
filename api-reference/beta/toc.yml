@@ -11917,9 +11917,10 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Policy
-          href: resources/policy-overview.md
+        - name: Policies
           items:
+          - name: Overview
+            href: resources/policy-overview.md
           - name: Activity-based timeout policy
             href: resources/activitybasedtimeoutpolicy.md
             items:
