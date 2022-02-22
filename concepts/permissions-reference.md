@@ -1838,7 +1838,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _ExternalConnection.Read.All_ | Read all external connections | Allows the app to read all external connections on behalf of a signed-in user. | Yes | No |
 | _ExternalConnection.ReadWrite.All_ | Read and write all external connections | Allows the app to read and write all external connections on behalf of a signed-in user. | Yes | No |
-| _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. | Yes | No |
+| _ExternalConnection.ReadWrite.OwnedBy_ | Read and write external connections | Allows the app to read and write external connections on behalf of a signed-in user. The app can only read and write external connections that it is authorized to, or it can create new external connections. | Yes | No |
 | _ExternalItem.Read.All_ | Read external data | Allows an app to query data ingested with Microsoft Graph connectors. | Yes | No |
 | _ExternalItem.ReadWrite.All_ | Read and write all external items | Allows the app to read and write all external items on behalf of a signed-in user. | Yes | No |
 | _ExternalItem.ReadWrite.OwnedBy_ | Read and write external items | Allows the app to read and write external items on behalf of a signed-in user. The app can only read external items of the connection that it is authorized to. | Yes | No |
