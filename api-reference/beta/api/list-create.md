@@ -114,6 +114,8 @@ Content-Type: application/json
 
 The following is an example of the response.
 
+> **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
 ```http
@@ -138,9 +140,6 @@ Content-type: application/json
   }
 }
 ```
-
-**Note:** The response object is truncated for clarity.
-Default properties will be returned from the actual call.
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md
