@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 description: "Create a new list in a site."
-ms.date: 09/11/2017
 title: Create a SharePoint List
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -33,13 +32,31 @@ One of the following permissions is required to call this API. To learn more, in
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
 ## Request body
 
-In the request body, supply a JSON representation of the [list][] resource to create.
+In the request body, supply a JSON representation of a [list][] object.
 
-## Example
+## Response
 
-Here is an example of how to create a new generic list.
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+
+## Examples
+
+### Request
+
+The following is an example of how to create a new generic list.
+
+> **Note:** Custom columns are optional.
+
+In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
+If the **list** facet or **template** is not specified, the list defaults to the `genericList` template, which includes a _Title_ column.
 
 
 # [HTTP](#tab/http)
@@ -93,14 +110,9 @@ Content-Type: application/json
 ---
 
 
-**Note:** Custom columns are optional.
+### Response
 
-In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.
-If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.
-
-## Response
-
-If successful, this method returns a [list][] in the response body for the created list.
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
