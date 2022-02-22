@@ -47,6 +47,7 @@ None.
 | contentExport | The operation represents a content export from a review set. |
 | convertToPdf | The operation represents converting documents to PDFs with redactions. |
 | estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for business. |
+| purgeData | The operation represents purging content from the source workloads. |
 
 ### caseOperationStatus values
 
