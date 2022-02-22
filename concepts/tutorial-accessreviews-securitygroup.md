@@ -643,7 +643,7 @@ HTTP/1.1 204 No Content
 
 ### Delete the access review definition
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review definition. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions.
 
 #### Request
 <!-- {
