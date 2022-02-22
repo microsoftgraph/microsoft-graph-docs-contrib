@@ -33,9 +33,14 @@ Inherits from [entity](entity.md).
 |resourceScopeId|String|Not implemented.|
 
 ## Relationships
+
+None.
+
+<!-- The resourceScope relationship hasn't been implemented but is in the public schema. To unhide this and its related entities and methods once it's implemented.
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceScope| None |Not implemented.|
+|resourceScope| [unifiedRbacResourceScope](unifiedrbacresourcescope.md) |Not implemented.|
+-->
 
 ## JSON representation
 The following is a JSON representation of the resource.
