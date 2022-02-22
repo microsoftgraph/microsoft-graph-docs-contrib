@@ -36,6 +36,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | default-selected-group-ids | defaultSelectedGroupIds | Similar to default-selected-user-ids, when provided a string of comma-separated Microsoft Graph group IDs, the component renders the respective groups as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
 | disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
+| disable-images | disableImages | Sets whether to disable fetching and display of person images. When set to true, user initials are instead displayed.
 | allow-any-email | allowAnyEmail | Indicates whether the people picker can accept email addresses without selecting a person. Default value is `false`. When you finish typing an email address, you can press comma (`,`), semicolon (`;`), tab or enter keys to add it.
 
 The following is a `show-max` example.
