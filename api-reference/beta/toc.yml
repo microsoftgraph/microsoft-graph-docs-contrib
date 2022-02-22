@@ -1803,6 +1803,8 @@ items:
             href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
             href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
+          - name: Purge results of source collection
+            href: api/ediscovery-sourcecollection-purgedata.md
         - name: Tag
           href: resources/ediscovery-tag.md
           items:

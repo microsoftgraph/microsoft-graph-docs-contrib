@@ -31,6 +31,7 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of additional **dataSource** objects associated with a source collection.|
 |[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of custodian **dataSource** objects associated with a source collection.|
 |[List noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of non-custodial sources **noncustodialSource** objects associated with a source collection.|
+|[Purge data](../api/ediscovery-sourcecollection-purgedata.md)|None|Run a purge data operation on the items returned by the source collection.|
 
 ## Properties
 
