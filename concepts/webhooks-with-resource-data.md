@@ -12,7 +12,7 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
+- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.
 
@@ -27,17 +27,27 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+The Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) and [presence](/graph/api/resources/presence) resources support change notifications with resource data. Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), [message](/graph/api/resources/message.md) resources have similar support _in preview_. Specifically, you can set up a subscription for the use cases listed below.
 
+Available in the v1.0 and beta endpoints:
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
 - User's presence information update: `/communications/presences/{id}`
 
-The **chatMessage** and the **presence** resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
+Available in only the beta endpoint:
+- New or changed personal contacts in a user's mailbox: `/users/{id}/contacts`
+- New or changed personal contacts in a user's contactFolder: `/users/{id}/contactFolders/{id}/contacts`
+- New or changed events in a user's mailbox: `/users/{id}/events`
+- New or changed messages in a user's mailbox: `/users/{id}/messages`
+- New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
 
-This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage**-based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
+Change notifications that include **chatMessage** or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
+
+Change notifications for **contact**, **event**, or **message** resources include only a subset of properties for the resource, which must be specified in the corresponding subscription request using a `$select` query parameter. For more information and an example for subscribing to change notifications with resource data for the **message** resource, see [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md). 
+
+The rest of this article walks through an example to subscribe to change notifications for **chatMessage** resources in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage** subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
 ## Creating a subscription
 
@@ -86,11 +96,11 @@ Content-Type: application/json
 }
 ```
 
-## Subscription lifecycle notifications (preview)
+## Subscription lifecycle notifications
 
 Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle. 
 
-For more information about how to receive, and respond to, lifecycle notifications (preview), see [Reduce missing subscriptions and change notifications (preview)](webhooks-lifecycle.md)
+For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications)](webhooks-lifecycle.md)
 
 ## Validating the authenticity of notifications
 
@@ -582,3 +592,4 @@ decryptedPayload += decipher.final('utf8');
 - [Get subscription](/graph/api/subscription-get)
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [Update subscription](/graph/api/subscription-update)
+- [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
