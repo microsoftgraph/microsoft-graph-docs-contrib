@@ -36,7 +36,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |comments|[microsoft.graph.security.alertComment](security-alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|aadTenantId|String|The Azure Active Directory tenant the alert was created in.|
+|tenantId|String|The Azure Active Directory tenant the alert was created in.|
 |incidentWebUrl|String|URL for the incident page in Microsoft 365 Defender portal.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.|
@@ -76,7 +76,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.incident",
   "id": "String (identifier)",
   "incidentWebUrl": "String",
-  "aadTenantId": "String",
+  "tenantId": "String",
   "redirectIncidentId": "String",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",

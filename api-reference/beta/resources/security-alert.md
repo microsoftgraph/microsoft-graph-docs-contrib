@@ -36,7 +36,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
 |detectorId|String|The ID of the detector that triggered the alert.|
-|aadTenantId|String|The Azure Active Directory tenant the alert was created in.|
+|tenantId|String|The Azure Active Directory tenant the alert was created in.|
 |title|String|Brief identifying string value describing the alert.|
 |description|String|String value describing each alert.|
 |category|String|The attack kill-chain category the alert belongs to. Aligned with the MITRE ATT&CK framework.|
@@ -151,7 +151,7 @@ The following is a JSON representation of the resource.
     "determination": "String",
     "serviceSource": "String",
     "detectorId": "String",
-    "aadTenantId": "String",
+    "tenantId": "String",
     "title": "String",
     "description": "String",
     "category": "String",

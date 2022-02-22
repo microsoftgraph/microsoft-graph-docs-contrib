@@ -109,7 +109,7 @@ Content-type: application/json
         "determination": "unknown",
         "serviceSource": "microsoftDefenderForEndpoint",
         "detectorId": "b6ef6eae-651b-4913-a97f-b491c6685036",
-        "aadTenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+        "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
         "title": "Horizontal port scan initiated from unmanaged  device",
         "description": "Horizontal port scan initiated from unmanaged device",
         "category": "Discovery",
