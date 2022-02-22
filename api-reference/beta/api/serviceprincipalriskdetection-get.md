@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Delegated (work or school account)|IdentityRiskEvent.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+|Application|IdentityRiskEvent.Read.All|
 
 ## HTTP request
 
