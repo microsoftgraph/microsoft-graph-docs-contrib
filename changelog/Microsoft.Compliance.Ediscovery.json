@@ -637,6 +637,40 @@
 			"CreatedDateTime": "2022-01-14T06:26:50.7387609Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
-		}
+		},
+		{
+			"ChangeList": [
+			  {
+				"Id": "03f5af75-44df-4567-b4fd-3332cb4e052e",
+				"ApiChange": "Member",
+				"ChangedApiName": "purgeData",
+				"ChangeType": "Addition",
+				"Description": "Added the **purgeData** member to the **caseAction** enumeration.",
+				"Target": "caseAction"
+			  },
+			  {
+				"Id": "03f5af75-44df-4567-b4fd-3332cb4e052e",
+				"ApiChange": "Resource",
+				"ChangedApiName": "purgeDataOperation",
+				"ChangeType": "Addition",
+				"Description": "Added the [purgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/purgeDataOperation?view=graph-rest-beta) resource",
+				"Target": "purgeDataOperation"
+			  },
+			  {
+				"Id": "03f5af75-44df-4567-b4fd-3332cb4e052e",
+				"ApiChange": "Method",
+				"ChangedApiName": "purgeData",
+				"ChangeType": "Addition",
+				"Description": "Added the [purgeData](https://docs.microsoft.com/en-us/graph/api/purgeData?view=graph-rest-beta) method to the [purgeData](https://docs.microsoft.com/en-us/graph/api/purgeData?view=graph-rest-beta) resource.",
+				"Target": "purgeData"
+			  }
+			],
+			"Id": "03f5af75-44df-4567-b4fd-3332cb4e052e",
+			"Cloud": "Prod",
+			"Version": "beta",
+			"CreatedDateTime": "2022-02-22T17:05:38.1837303Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": ""
+		  }
 	]
 }
