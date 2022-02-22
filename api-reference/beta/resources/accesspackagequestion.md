@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the `accessPackageQuestion` property of an [access package assignment policy](accesspackageassignmentpolicy.md). 
+Used for the **accessPackageQuestion** property of an [access package assignment policy](accesspackageassignmentpolicy.md) and the **accessPackageResourceAttributeQuestion** in an [accessPackageResourceAttribute](accesspackageresourceattribute.md).
 
-Subtypes include [accessPackageTextInputQuestions](accesspackagetextinputquestion.md) and [accessPackageMultipleChoiceQuestions](accesspackagemultiplechoicequestion.md).
+Subtypes include [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) and [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md).
 
 ## Properties
 |Property|Type|Description|

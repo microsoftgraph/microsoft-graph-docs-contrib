@@ -64,10 +64,6 @@ You can deduplicate the exported JSON objects based on the `internetMessageId` o
 
 The extracted data includes some meta properties that don't exist when using the corresponding Microsoft Graph APIs. Specifically, the `puser` field can be useful for determining which user the data was extracted from. In the scenario where you have two copies of the same email in different mailboxes, you can use the `puser` field to determine which copy came from which mailbox. The `puser` field is also useful for datasets such as the `Manager` dataset. The exported JSON will contain information about a manager, but this is only useful if you know whose manager they are. The `puser` field will tell you whose manager that JSON object corresponds to.
 
-## Is a mix of users with and without Workplace Analytics licenses supported?
-
-Today, we require all users in user list to either have Workplace Analytics license or all users in user list to not have Workplace Analytics license. Unfortunately, we do not supported mixed user list, i.e. some users have Workplace Analytics license and some do not. This is because if users in user list have Workplace Analytics license then no additional charges are required for Data Connect, whereas if customers do not have Workplace Analytics license, then customers are billed using consumption billing detailed here. If this is breaking your use case today, please let us know and we can see if there are opportunities to help your scenario here.
-
 ## Is hybrid mode tenant setup supported?
 
 If your Microsoft 365 setup have some users in Exchange Online and some users in Exchange on-premises then the users who are in Exchange on-premises would not be supported. Unfortunately, today we do not support Data Connect for Exchange on-premises users.

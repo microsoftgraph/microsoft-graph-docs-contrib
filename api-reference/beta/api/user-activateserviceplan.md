@@ -49,8 +49,8 @@ In the request body, provide a JSON object with the following parameter:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| servicePlanId | Guid | PlanId of the ServicePlan to activate. |
-| skuId | Guid | SkuId of SKU the service plan is on. |
+| servicePlanId | GUID | PlanId of the ServicePlan to activate. |
+| skuId | GUID | SkuId of SKU the service plan is on. |
 
 ## Response
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-activateserviceplan-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-activateserviceplan-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

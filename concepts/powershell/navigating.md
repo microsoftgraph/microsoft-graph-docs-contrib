@@ -9,6 +9,8 @@ author: jasonjoh
 
 The Microsoft Graph API is huge, and it's growing all the time. Because of this, the number of commands in the Microsoft Graph PowerShell SDK is also very large. Finding the right command for what you want to achieve can be challenging, especially if you're not already familiar with Microsoft Graph. Let's look at some ways to help find a particular command.
 
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
+
 ## Command naming conventions
 
 The commands in the SDK are generated directly from the [REST API](/graph/api/overview?view=graph-rest-1.0&preserve-view=true), so the names are influenced by the API. You don't have to understand the details of the API to use this SDK, but it helps to understand the naming convention.

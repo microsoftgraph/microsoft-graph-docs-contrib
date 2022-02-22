@@ -43,15 +43,17 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove.|
+|removeLicenses|GUID collection|A collection of skuIds that identify the licenses to remove.|
 
 ## Response
 
 If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.
 
-## Example
-Add licenses to the user.
-##### Request
+## Examples
+
+### Example 1: Assign licenses to the signed-in user
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,17 +65,19 @@ POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
 
 {
-  "addLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
-    },
-    {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
-    }
-  ],
-  "removeLicenses": []
+    "addLicenses": [
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+    "removeLicenses": []
 }
 ```
 # [C#](#tab/csharp)
@@ -96,25 +100,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/user-assignlicense-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## Example
-Remove licenses from the user.
-
-##### Request
-```http
-POST https://graph.microsoft.com/beta/me/assignLicense
-Content-type: application/json
-
-{
-  "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
-}
-```
-
-##### Response
-In both examples, the response is the updated user object. Note: The response object shown here might be shortened for readability.
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,24 +121,59 @@ Content-type: application/json
 {
   "accountEnabled": true,
   "assignedLicenses": [
-    {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "assignedDateTime": "2016-10-19T10:37:00Z",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value"
+        {
+            "disabledPlans": [
+                "8a256a2b-b617-496d-b51b-e76466e88db0"
+            ],
+            "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        },
+        {
+            "disabledPlans": [],
+            "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d"
+        }
+    ],
+  "city": "Nairobi",
+  "companyName": "Contoso"
+}
+```
+
+### Example 2: Remove licenses from the signed-in user
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "user_assignlicense_removelicenses"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/assignLicense
+Content-type: application/json
+
+{
+    "addLicenses": [],
+    "removeLicenses": [
+        "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+    ]
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "accountEnabled": true,
+  "assignedLicenses": [],
+  "city": "Nairobi",
+  "companyName": "Contoso"
 }
 ```
 

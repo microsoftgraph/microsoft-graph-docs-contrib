@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /administrativeUnits/{id}
+PATCH /directory/administrativeUnits/{id}
 ```
 
 ## Request headers
@@ -42,12 +43,10 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|description|string|Description for the administrative unit.|
-|displayName|string|Display name for the administrative unit.|
-|visibility|string|Visibility for the administrative unit. If not set then the default is "public". Can be set to "HiddenMembership", which hides the membership from non-members.|
+|description|String|Description for the administrative unit.|
+|displayName|String|Display name for the administrative unit.|
 
-Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
-add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
+Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.
 
 ## Response
 
@@ -55,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -64,13 +63,11 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_administrativeunit"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/administrativeUnits/{id}
+PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "visibility": "visibility-value"
+    "displayName": "Greater Seattle District Technical Schools"
 }
 ```
 # [C#](#tab/csharp)
@@ -93,10 +90,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response"

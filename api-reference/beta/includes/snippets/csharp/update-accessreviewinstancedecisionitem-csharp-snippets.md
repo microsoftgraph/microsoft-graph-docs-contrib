@@ -12,7 +12,7 @@ var accessReviewInstanceDecisionItem = new AccessReviewInstanceDecisionItem
 	Justification = "This person is still on my team"
 };
 
-await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
+await graphClient.IdentityGovernance.AccessReviews.Definitions["{accessReviewScheduleDefinition-id}"].Instances["{accessReviewInstance-id}"].Stages["{accessReviewStage-id}"].Decisions["{accessReviewInstanceDecisionItem-id}"]
 	.Request()
 	.UpdateAsync(accessReviewInstanceDecisionItem);
 

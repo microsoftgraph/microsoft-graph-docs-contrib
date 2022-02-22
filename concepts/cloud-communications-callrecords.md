@@ -20,7 +20,7 @@ Organizations and partners often have their own tooling for generating reports a
 
 ## Look up a call record by its call ID
 
-Applications can retrieve a [call record](/graph/api/resources/callrecords-callrecord.md) by its ID. This ID can be determined from a webhook notification or retrieved from administrative tools.
+Applications can retrieve a [call record](/graph/api/resources/callrecords-callrecord) by its ID. This ID can be determined from a webhook notification or retrieved from administrative tools.
 
 ## Get call record reports
 

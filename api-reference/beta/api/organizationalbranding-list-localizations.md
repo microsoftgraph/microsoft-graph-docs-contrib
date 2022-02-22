@@ -99,7 +99,7 @@ Content-Type: application/json
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/0",
             "id": "0",
-            "backgroundColor": "",
+            "backgroundColor": " ",
             "backgroundImageRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/illustration?ts=637635061764954395",
             "bannerLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/bannerlogo?ts=637635061773126717",
             "cdnList": [
@@ -107,9 +107,27 @@ Content-Type: application/json
                 "aadcdn.msftauthimages.net",
                 "aadcdn.msauthimages.net"
             ],
+            "customAccountResetCredentialsUrl": null,
+            "customCannotAccessYourAccountText": null,
+            "customCannotAccessYourAccountUrl": null,
+            "customForgotMyPasswordText": null,
+            "customPrivacyAndCookiesText": null,
+            "customPrivacyAndCookiesUrl": null,
+            "customTermsOfUseText": null,
+            "customTermsOfUseUrl": null,
+            "customResetItNowText": null,
+            "faviconRelativeUrl": null,
+            "headerBackgroundColor": null,
             "signInPageText": "Contoso",
-            "squareLogoRelativeUrl": "c1c6b6c8-ctwpxrbizfcsectmtir3yvna3hrhaib9j7ueqv0ldne/logintenantbranding/0/tilelogo?ts=637635061781098977",
-            "usernameHintText": ""
+            "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+            "usernameHintText": " ",
+            "loginPageTextVisibilitySettings": {
+              "hideCannotAccessYourAccount": false,
+              "hideForgotMyPassword": false,
+              "hideResetItNow": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true
+            }
         },
         {
             "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')//localizations/fr",
@@ -118,9 +136,27 @@ Content-Type: application/json
             "backgroundImageRelativeUrl": null,
             "bannerLogoRelativeUrl": null,
             "cdnList": [],
-            "signInPageText": "Welcome",
-            "squareLogoRelativeUrl": null,
-            "usernameHintText": "hint"
+            "customAccountResetCredentialsUrl": null,
+            "customCannotAccessYourAccountText": null,
+            "customCannotAccessYourAccountUrl": null,
+            "customForgotMyPasswordText": null,
+            "customPrivacyAndCookiesText": null,
+            "customPrivacyAndCookiesUrl": null,
+            "customTermsOfUseText": null,
+            "customTermsOfUseUrl": null,
+            "customResetItNowText": null,
+            "faviconRelativeUrl": null,
+            "headerBackgroundColor": null,
+            "signInPageText": "Contoso",
+            "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+            "usernameHintText": " ",
+            "loginPageTextVisibilitySettings": {
+              "hideCannotAccessYourAccount": false,
+              "hideForgotMyPassword": false,
+              "hideResetItNow": false,
+              "hideTermsOfUse": true,
+              "hidePrivacyAndCookies": true
+            }
         }
     ]
 }

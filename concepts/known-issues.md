@@ -292,7 +292,7 @@ Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Micr
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
-The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
@@ -338,7 +338,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -391,11 +391,6 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
-
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
@@ -410,17 +405,13 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ### Installation of apps that require resource-specific consent permissions is not supported
-The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 - [Add app to team](/graph/api/team-post-installedapps.md)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Add app to chat](/graph/api/chat-post-installedapps.md)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users
-
-### Get user by userPrincipalName that starts with a dollar ($) symbol
-
-Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
 ### Encode number (#) symbols in userPrincipalName
 

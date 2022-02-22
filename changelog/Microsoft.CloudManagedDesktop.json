@@ -2,6 +2,145 @@
     "changelog": [
         {
             "ChangeList": [
+                {"Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "organizationSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **organizationSettings** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "userAccountType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **userAccountType** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "osVersion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **osVersion** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcOrganizationSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcOrganizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcOrganizationSettings"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "dnsCheckNameWithInvalidCharacter",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `dnsCheckNameWithInvalidCharacter` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckScpNotConfigured",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckScpNotConfigured` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "pendingProvision",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `pendingProvision` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPcStatus"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcUserAccountType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcUserAccountType** enumeration type.",
+                    "Target": "cloudPcUserAccountType"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcOperatingSystem",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcOperatingSystem** enumeration type.",
+                    "Target": "cloudPcOperatingSystem"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Parameter",
+                    "ChangedApiName": "userAccountType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **userAccountType** parameter to the [reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPC-reprovision?view=graph-rest-beta) method.",
+                    "Target": "reprovision"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Parameter",
+                    "ChangedApiName": "osVersion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **osVersion** parameter to the [reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPC-reprovision?view=graph-rest-beta) method.",
+                    "Target": "reprovision"
+                },
+                {
+                    "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "changeUserAccountType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [changeUserAccountType](https://docs.microsoft.com/en-us/graph/api/cloudPC-changeUserAccountType?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "b50951e4-5191-11ec-a817-519c224fca78",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-01-18T03:57:59.088Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "snapshots",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **snapshots** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcSnapshot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcSnapshotStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcSnapshotStatus** enumeration type.",
+                    "Target": "cloudPcSnapshotStatus"
+                }
+            ],
+            "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-15T1413:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
