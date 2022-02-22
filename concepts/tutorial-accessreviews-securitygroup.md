@@ -23,17 +23,15 @@ To complete this tutorial, you need the following resources and privileges:
 
 To consent to the required permissions in Graph Explorer:
 1. Select the settings gear icon to the right of the user account details, and then select **Select permissions**.
-   
-   <!--![Select the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/settings.png)-->
-    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+
+    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select Microsoft Graph permissions." border="true":::
 
 2. Scroll through the list of permissions to these permissions:
    + AccessReview (3), expand and then select **AccessReview.ReadWrite.All**.
    + Group (2), expand and then select **Group.ReadWrite.All**.
   
     Select **Consent**, and in the pop-up window, choose to **Consent on behalf of your organization** and then select **Accept** to accept the consent of the permissions.
-   
-   <!--![Consent to the Microsoft Graph permissions](../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png)-->
+
    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
    
 >[!NOTE]
