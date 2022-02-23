@@ -36,15 +36,15 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 
 
 ## Request body
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
+In the request body, supply a JSON representation of an [outlookCategory](../resources/outlookcategory.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [outlookCategory](../resources/outlookcategory.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,8 +57,8 @@ Content-type: application/json
 Content-Length: 70
 
 {
-      "displayName":"Project expenses",
-      "color":"preset9"
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 # [C#](#tab/csharp)
@@ -87,9 +87,9 @@ Content-Length: 70
 
 ---
 
-In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,10 +100,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
-  "id":"bac262b7-485d-4739-b436-e31467d64fac",
-  "displayName":"Project expenses",
-  "color":"preset9"
+   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+   "id": "bac262b7-485d-4739-b436-e31467d64fac",
+   "displayName": "Project expenses",
+   "color": "preset9"
 }
 ```
 
