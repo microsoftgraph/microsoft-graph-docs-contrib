@@ -1,6 +1,6 @@
 ---
 title: "customAccessPackageWorkflowExtension resource type"
-description: "A custom access package workflow extension defines the attributes of external API, which can be called at different stages of assignment request."
+description: "Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle."
 author: "currenme"
 ms.localizationpriority: medium
 ms.prod: "governance"
