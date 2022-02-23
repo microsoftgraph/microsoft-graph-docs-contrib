@@ -135,6 +135,7 @@ Content-type: application/json
   "passwordCredentials": [],
   "publisherName": null,
   "replyUrls": [],
+  "resourceSpecificApplicationPermissions": [],
   "servicePrincipalNames": [],
   "servicePrincipalType": null,
   "signInAudience": "AzureADandPersonalMicrosoftAccount",

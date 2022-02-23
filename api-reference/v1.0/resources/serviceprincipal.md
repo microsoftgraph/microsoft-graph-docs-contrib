@@ -169,6 +169,7 @@ Here is a JSON representation of the resource
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "replyUrls": ["string"],
+  "resourceSpecificApplicationPermissions": [{"@odata.type": "microsoft.graph.resourceSpecificPermission"}],
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "tags": ["string"],
