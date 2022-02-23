@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list.
-Users have the option to enable or disable the feature in the privacy settings for Outlook. By default, suggestion is enabled. This resource provides a programmatic alternative to enable or disable this feature. Duplicate contact items remain as duplicates in the contact folder unless the user selects merging them.
+This resource provides a means to enable or disable the feature at the user level. By default, suggestion is enabled. Duplicate contact items remain as duplicates in the contact folder unless the user selects merging them.
 
 ## Methods
 |Method|Return type|Description|
