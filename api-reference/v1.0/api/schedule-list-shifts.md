@@ -38,7 +38,7 @@ GET /teams/{teamId}/schedule/shifts
 This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> $filter doesn't support using the same property more than once in the query, which prevents bounding queries, such as, sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z.
+> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query will not work: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z` and `sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## Request headers
 
