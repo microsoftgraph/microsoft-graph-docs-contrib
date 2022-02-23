@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/ accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customExtensionId}
+DELETE /identityGovernance/entitlementManagement/ accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
 ```
 
 ## Request headers
