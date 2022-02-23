@@ -72,7 +72,7 @@ Microsoft Graph has two types of permissions.
 
 - **Application permissions** are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant).
 
-**Effective permissions** are the permissions that your app has when making requests to Microsoft Graph. This is determined by a combination of the Microsoft Graph permissions you've granted to the app *and* the privileges of the signed-in user or the calling app. Within organizations, the privileges of the signed-in user or an app are determined by policy or by membership in one or more [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference). It's important to understand the difference between the delegated and application permissions that your app is granted, and its effective permissions when making calls to Microsoft Graph.
+**Effective permissions** are the permissions that your app has when making requests to Microsoft Graph. This is determined by a combination of the Microsoft Graph permissions you've granted to the app *and* the privileges of the signed-in user or the calling app. Within organizations, the privileges of the signed-in user or an app are determined by policy or by membership in one or more roles. It's important to understand the difference between the delegated and application permissions that your app is granted, and its effective permissions when making calls to Microsoft Graph.
 
 #### Effective permissions in delegated vs application-only permission scenarios
 
