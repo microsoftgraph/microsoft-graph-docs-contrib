@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewHistoryDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-1.0) resource and related methods. Represents a collection of access review historical data and the scopes used to collect that data.",
           "Target": "accessReviewHistoryDefinition"
         },
         {
