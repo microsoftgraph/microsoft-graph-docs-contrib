@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type used for authenticationConfiguration property of custom access package workflow extension. Derived from [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md). 
+Abstract base type that exposes the derived types used to configure the **authenticationConfiguration** property of a [custom access package workflow extension](customaccesspackageworkflowextension.md) object. This abstract type is inherited by the [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md) resource type. 
 
 ## Properties
 
