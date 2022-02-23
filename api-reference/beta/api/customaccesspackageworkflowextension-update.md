@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PUT /identityGovernance/entitlementManagement/ accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
+PUT /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
 ```
 
 ## Request headers
@@ -45,10 +45,10 @@ PUT /identityGovernance/entitlementManagement/ accessPackageCatalogs/{catalogId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The access package name.|
-|description|String|The description of the access package.|
-|endpointConfiguration |microsoft.graph. customExtensionEndPointConfiguration |The endpoint configuration type. First will be the configuration of calling a Logic App workflow.|
-|authenticationConfiguration|microsoft.graph.customExtensionAuthenticationConfiguration|Configuration for securing the API call. For example, using OAuth client-credentials.|
+|description|String|Description for the customAccessPackageWorkflowExtension object.|
+|displayName|String|Display name for the customAccessPackageWorkflowExtension.|
+|endpointConfiguration|[customExtensionEndPointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 
 
 ## Response
@@ -64,13 +64,13 @@ If successful, this method returns a `200 OK` response code and an updated [cust
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackages/{accessPackageId}/accessPackageAssignmentPolicies/{accessPackageAssignmentPolicyId}/customExtensionHandlers/{customExtensionHandlerId}/customExtension
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only"
 }
 ```
 
@@ -92,7 +92,7 @@ Content-Type: application/json
     "endpointConfiguration": { 
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
         "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-        "resourceGroupName": "xiaojil", 
+        "resourceGroupName": "EMLogicApp", 
         "logicAppWorkflowName": "elm-extension-email" 
     }, 
     "authenticationConfiguration": { 

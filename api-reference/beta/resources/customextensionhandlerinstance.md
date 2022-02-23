@@ -1,6 +1,6 @@
 ---
 title: "customExtensionHandlerInstance resource type"
-description: "customExtensionHandlerInstance resource is used to record each instance of custom extension running information and its result."
+description: "Used to record the status of an instance of a custom extension being run on an access package assignment request."
 author: "currenme"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The customExtensionHandlerInstance resource is used to record each instance of custom extension running information and its result.
+Used to record the status of an instance of a custom extension being run on an [access package assignment request](accesspackageassignmentrequest.md).
 
 ## Methods
 None

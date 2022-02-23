@@ -25,10 +25,16 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 | [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
+| **Access package resources**| | |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| **Access package resource roles**| | |
 | [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
-|[List customAccessPackageWorkflowExtension](../api/accesspackagecatalog-list-customaccesspackageworkflowextension.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get the customAccessPackageWorkflowExtension resources from the customAccessPackageWorkflowExtension navigation property.|
-|[Create customAccessPackageWorkflowExtension](../api/accesspackagecatalog-post-customaccesspackageworkflowextension.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new customAccessPackageWorkflowExtension object.|
+| **Custom access package package workflow extension**| | |
+|[List customAccessPackageWorkflowExtension](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get a list of the [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) objects and their properties.|
+|[Create customAccessPackageWorkflowExtension](../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Get customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-get.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Read the properties and relationships of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Update customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-update.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Update the properties of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Delete customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|None|Deletes a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
 
 ## Properties
 
@@ -54,7 +60,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection|The roles in each resource in a catalog. Read-only.|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection|Read-only.|
-|customAccessPackageWorkflowExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Read-only.|
+|customAccessPackageWorkflowExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 
 ## JSON representation
 

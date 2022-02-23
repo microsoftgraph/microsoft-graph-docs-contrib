@@ -18,28 +18,24 @@ The configuration details for the logic app's endpoint that is associated with a
 ## Properties
 
 |Property|Type|Description|
-|:---|:---|:---|
-|subscriptionId|String|Identifier of the Azure subscription for the logic app.| 
-|resourceGroupName|String|The Azure resource group name for the logic app.| 
-|logicAppWorkflowName|String|The name of the logic app.| 
+|:---|:---|:---| 
+|logicAppWorkflowName|String|The name of the logic app.|
+|resourceGroupName|String|The Azure resource group name for the logic app.|
+|subscriptionId|String|Identifier of the Azure subscription for the logic app.|
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.logicAppTriggerEndpointConfiguration",
-  "baseType": "microsoft.graph.customExtensionEndpointConfiguration"
+  "@odata.type": "microsoft.graph.logicAppTriggerEndpointConfiguration"
 }
 -->
-
 ``` json
-{ 
-
-    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
-    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-    "resourceGroupName": "resourcegroup", 
-    "logicAppWorkflowName": "elm_extension_test" 
-
-} 
+{
+  "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+  "subscriptionId": "String",
+  "resourceGroupName": "String",
+  "logicAppWorkflowName": "String"
+}
 ```

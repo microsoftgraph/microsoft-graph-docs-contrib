@@ -12727,7 +12727,7 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
-          - name: Custom Access Package Workflow Extension
+          - name: Custom access package workflow extension
             href: resources/customAccessPackageWorkflowExtension.md
             items:
             - name: List

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/ accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions
+POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions
 ```
 
 ## Request headers
@@ -46,10 +46,10 @@ You can specify the following properties when creating a **customAccessPackageWo
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the custom extension.|
-|description|String|Description of the custom extension.|
-|endpointConfiguration |[microsoft.graph.customExtensionEndPointConfiguration](../resources/customextensionendpointconfiguration.md) |The endpoint configuration type. First will be the configuration of calling a Logic App workflow.|
-|authenticationConfiguration|[microsoft.graph.customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call. For example, using OAuth client-credentials.|
+|description|String|Description for the customAccessPackageWorkflowExtension object.|
+|displayName|String|Display name for the customAccessPackageWorkflowExtension.|
+|endpointConfiguration|[customExtensionEndPointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 
 
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [customAc
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/customAccessPackageWorkflowExtensions
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions
 Content-Type: application/json
 
 { 
@@ -75,7 +75,7 @@ Content-Type: application/json
     "endpointConfiguration": { 
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
         "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-        "resourceGroupName": "xiaojil", 
+        "resourceGroupName": "EMLogicApp", 
         "logicAppWorkflowName": "customextension_test" 
     }, 
     "authenticationConfiguration": { 
@@ -108,7 +108,7 @@ Content-Type: application/json
     "endpointConfiguration": { 
         "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
         "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-        "resourceGroupName": "xiaojil", 
+        "resourceGroupName": "EMLogicApp", 
         "logicAppWorkflowName": "customextension_test" 
     },
     "authenticationConfiguration": { 
