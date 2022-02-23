@@ -4331,7 +4331,7 @@
     },
     {
       "ChangeList": [
-        {           
+        {
           "Id": "5a1d17b0-c9a6-4c4f-ad7f-f57703ea9518",
           "ApiChange": "EnumType",
           "ChangedApiName": "teamworkConnectionStatus",
