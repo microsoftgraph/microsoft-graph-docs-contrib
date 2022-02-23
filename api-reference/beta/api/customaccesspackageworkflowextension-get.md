@@ -74,8 +74,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 { 
-    "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customExtensionID}", 
-
+    "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0", 
     "id": "98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0", 
     "displayName": "test_action_0124_email", 
     "description": "this is for graph testing only", 
