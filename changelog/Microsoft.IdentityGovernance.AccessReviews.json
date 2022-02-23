@@ -63,8 +63,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-01-26T19:09:41.0191537Z",
-      "WorkloadArea": "Microsoft.IdentityGovernance.AccessReviews",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
