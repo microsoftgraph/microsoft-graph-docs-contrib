@@ -1,6 +1,6 @@
 ---
 title: "customExtensionAuthenticationConfiguration resource type"
-description: "Abstract base type that exposes the derived types used to configure the authenticationConfiguration property of a custom access package workflow extension object."
+description: "Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the customCalloutExtension abstract type"
 author: "currenme"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type that exposes the derived types used to configure the **authenticationConfiguration** property of a [custom access package workflow extension](customaccesspackageworkflowextension.md) object. This abstract type is inherited by the [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md) resource type. 
+Abstract base type that exposes the configuration for the **authenticationConfiguration** property of the derived types that inherit from the [customCalloutExtension](customcalloutextension.md) abstract type. This abstract type is inherited by the [azureAdTokenAuthentication](../resources/azureadtokenauthentication.md) resource type.
 
 ## Properties
 

@@ -12731,9 +12731,9 @@ items:
             href: resources/customAccessPackageWorkflowExtension.md
             items:
             - name: List
-              href: api/customaccesspackageworkflowextension-list.md
+              href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
             - name: Create
-              href: api/customextensionhandler-post-customextension.md
+              href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
             - name: Get
               href: api/customaccesspackageworkflowextension-get.md
             - name: Update

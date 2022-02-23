@@ -24,7 +24,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String| Identifier of the stage. Inherited from [entity](../resources/entity.md).|
-|stage|[accessPackageCustomExtensionStage](accesspackagecustomextensionstage.md)|Indicates the stage when a custom access package workflow extension will be executed. |
+|stage|accessPackageCustomExtensionStage|Indicates the stage of the request workflow when the access package custom extension runs. The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`. |
 
 ## Relationships
 |Relationship|Type|Description|
