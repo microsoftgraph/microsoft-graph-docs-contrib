@@ -80,7 +80,7 @@ Content-Type: application/json
 Content-length: 634
 
 {
-  "@odata.type": "#microsoft.graph.baseTask",
+  "@odata.type": "#microsoft.graph.task",
   "textBody":  "String",
   "bodyLastModifiedDateTime": "String (timestamp)",
   "completedDateTime": "String (timestamp)",
@@ -108,7 +108,7 @@ Content-length: 634
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.baseTask"
+  "@odata.type": "microsoft.graph.task"
 }
 -->
 ``` http

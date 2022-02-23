@@ -68,6 +68,7 @@ POST https://graph.microsoft.com/beta/me/tasks/lists
 Content-Type: application/json
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Shopping list"
 }
 ```
