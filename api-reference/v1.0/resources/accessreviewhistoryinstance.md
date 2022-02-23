@@ -33,7 +33,7 @@ Namespace: microsoft.graph
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, reviews ending on or before this date will be included in the fetched history data.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, reviews starting on or after this date will be included in the fetched history data.|
 |runDateTime|DateTimeOffset|Timestamp when the instance's history data is scheduled to be generated.|
-|status|String collection|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** has been marked as `done`, a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) method.|
+|status|accessReviewHistoryStatus|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`. Once the **status** has been marked as `done`, a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md) method.|
 
 ## JSON representation
 
