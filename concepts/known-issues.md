@@ -338,7 +338,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -391,11 +391,6 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
-
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
@@ -417,10 +412,6 @@ The following API calls do not support installing apps that require [resource-sp
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users
-
-### Get user by userPrincipalName that starts with a dollar ($) symbol
-
-Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
 ### Encode number (#) symbols in userPrincipalName
 

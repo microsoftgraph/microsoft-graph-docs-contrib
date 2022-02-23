@@ -50,8 +50,8 @@ You must define **service** or (**servicePlanId** _and_ **skuId**) for this acti
 | Property         | Type         | Description                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| String | The name of the service to activate. |
-| servicePlanId | Guid | The plan identifier of the service plan to activate. |
-| skuId | Guid | The SKU identifier of the service plan. |
+| servicePlanId | GUID | The plan identifier of the service plan to activate. |
+| skuId | GUID | The SKU identifier of the service plan. |
 
 ## Response
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/organization-activateservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/organization-activateservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

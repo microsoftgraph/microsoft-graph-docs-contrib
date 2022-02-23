@@ -24,6 +24,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 
 ```

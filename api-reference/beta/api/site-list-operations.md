@@ -19,8 +19,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
 |Delegated (work or school account)|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
@@ -102,14 +100,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.richLongRunningOperation",
-      "id": "0x0101,contentTypeCopy",
-      "createdDateTime": "String (timestamp)",
-      "resourceLocation": "String",
-      "status": "String",
-      "percentageComplete": "Integer",
-      "resourceId": "String",
-      "type": "String"
+      "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "createdDateTime": "2022-01-24T16:28:23Z",
+      "resourceId": "0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "resourceLocation": "https://graph.microsoft.com/beta/sites/5b3ea0e2-5fed-45ab-a8b8-7f7cd97189d6/contentTypes/0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "status": "succeeded",
+      "type": "contentTypeCopy"
     }
   ]
 }
