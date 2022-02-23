@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: Download a file
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
+description: "Download the contents of the primary stream (file) of a driveItem. Only driveItems with the file property can be downloaded."
 doc_type: apiPageType
 ---
 # Download the contents of a DriveItem
@@ -13,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the **file** property can be downloaded.
+Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
-Read more about CORS and understand how it works:
+For more information about CORS and how it works, see:
 - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 - [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online&preserve-view=true).
 - [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
