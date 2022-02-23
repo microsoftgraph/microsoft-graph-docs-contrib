@@ -54,7 +54,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable. Supports `$expand`.|
-|customExtensionHandlers|[microsoft.graph.customExtensionHandler](../resources/customextensionhandler.md) collection|Custom extension handler collection associated with the policy. Supports $expand.| 
+|customExtensionHandlers|[customExtensionHandler](../resources/customextensionhandler.md) collection| The collection of stages when to execute which custom access package workflow extension. Supports `$expand`.| 
 
 
 
