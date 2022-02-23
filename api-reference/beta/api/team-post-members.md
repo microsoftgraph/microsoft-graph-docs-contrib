@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| TeamMember.ReadWrite.All |
 
 > [!NOTE]
-> You can't add guest members to a team by using application permissions.
+> You can't add guest members to a team by using application permissions. 
 
 ## HTTP request
 
