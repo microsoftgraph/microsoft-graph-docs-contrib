@@ -14,10 +14,10 @@ description := "custom docset"
 requestBody.SetDescription(&description)
 base := msgraphsdk.NewContentType()
 requestBody.SetBase(base)
-base.SetAdditionalData(map[string]interface{}{
-	"name": "Document Set",
-	"id": "0x0120D520",
-}
+name := "Document Set"
+base.SetName(&name)
+id := "0x0120D520"
+base.SetId(&id)
 group := "Document Set Content Types"
 requestBody.SetGroup(&group)
 options := &msgraphsdk.ContentTypesRequestBuilderPostOptions{

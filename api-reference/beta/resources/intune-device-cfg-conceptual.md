@@ -56,6 +56,7 @@ The following Graph resources are available to manage settings and features on d
 - [Android device owner play store mode](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android device owner required password type](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android device owner SCEP certificate profile](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
+- [Android device owner system update freeze period](intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md)
 - [Android device owner system update install type](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android device owner trusted root certificate](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Android device owner virtual home button type](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)

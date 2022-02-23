@@ -2,7 +2,7 @@
 title: "conditionalAccessPlatforms resource type"
 description: "Platforms included in and excluded from the policy scope."
 ms.localizationpriority: medium
-author: "videor"
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -19,8 +19,8 @@ Platforms included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
-|excludePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
+|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `linux`. |
+|excludePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`, `linux`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `linux`. |
 
 ## Relationships
 

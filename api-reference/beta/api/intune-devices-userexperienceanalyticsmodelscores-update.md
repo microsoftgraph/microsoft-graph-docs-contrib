@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |endpointAnalyticsScore|Double|The user experience analytics model score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |startupPerformanceScore|Double|The user experience analytics model startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appReliabilityScore|Double|The user experience analytics model app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|workFromAnywhereScore|Double|The user experience analytics model work from anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsModelScores/{userExperienceAnalyticsModelScoresId}
 Content-type: application/json
-Content-length: 351
+Content-length: 384
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -79,6 +80,7 @@ Content-length: 351
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```
@@ -88,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 400
+Content-Length: 433
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsModelScores",
@@ -99,6 +101,7 @@ Content-Length: 400
   "endpointAnalyticsScore": 7.333333333333333,
   "startupPerformanceScore": 7.666666666666667,
   "appReliabilityScore": 6.333333333333333,
+  "workFromAnywhereScore": 7.0,
   "healthStatus": "insufficientData"
 }
 ```

@@ -20,9 +20,8 @@ requestBody.SetUserAttributeValues( []UserAttributeValuesItem {
 }
 userAttribute := msgraphsdk.NewIdentityUserFlowAttribute()
 requestBody.SetUserAttribute(userAttribute)
-userAttribute.SetAdditionalData(map[string]interface{}{
-	"id": "extension_guid_shoeSize",
-}
+id := "extension_guid_shoeSize"
+userAttribute.SetId(&id)
 options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
 	Body: requestBody,
 }

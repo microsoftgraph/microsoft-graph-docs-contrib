@@ -49,9 +49,9 @@ Here is a JSON representation of the resource
 ```json
 {
   "assignedDateTime": "String (timestamp)",
-  "capabilityStatus": "string",
-  "service": "string",
-  "servicePlanId": "guid"
+  "capabilityStatus": "String",
+  "service": "String",
+  "servicePlanId": "Guid"
 }
 
 ```

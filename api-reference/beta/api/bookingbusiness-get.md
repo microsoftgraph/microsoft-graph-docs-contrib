@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicros
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusiness-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

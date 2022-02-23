@@ -46,9 +46,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |appsBlockInstallFromUnknownSources|Boolean|Indicates whether or not the user is allowed to enable unknown sources setting. When set to true, user is not allowed to enable unknown sources settings.|
 |bluetoothBlocked|Boolean|Indicates whether or not to disable the use of bluetooth. When set to true, bluetooth cannot be enabled on the device.|
 |bluetoothBlockConfiguration|Boolean|Indicates whether or not to block a user from configuring bluetooth.|
-|bluetoothBlockContactSharing|Boolean|Indicates whether or not to block a user from sharing contacts via bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
-|cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
@@ -58,7 +56,6 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |storageBlockExternalMedia|Boolean|Indicates whether or not to block external media.|
 |storageBlockUsbFileTransfer|Boolean|Indicates whether or not to block USB file transfer.|
-|backupBlocked|Boolean|Indicates whether or not to block backup service.|
 |wifiBlockEditConfigurations|Boolean|Indicates whether or not to block the user from editing the wifi connection settings.|
 
 ## Relationships
@@ -117,9 +114,7 @@ Here is a JSON representation of the resource.
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 1024,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
@@ -129,7 +124,6 @@ Here is a JSON representation of the resource.
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```

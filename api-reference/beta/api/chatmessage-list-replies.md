@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-listmessagereplies-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-listmessagereplies-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -143,6 +147,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -181,6 +186,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -219,6 +225,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []

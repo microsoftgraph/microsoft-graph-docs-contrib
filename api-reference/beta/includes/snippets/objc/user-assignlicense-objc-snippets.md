@@ -16,15 +16,14 @@ NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 NSMutableArray *addLicensesList = [[NSMutableArray alloc] init];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"11b0131d-43c8-4bbb-b2c8-e80f9a50834a"];
+[disabledPlansList addObject: @"8a256a2b-b617-496d-b51b-e76466e88db0"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-1"];
+[addLicenses setSkuId:@"84a661c4-e949-4bd2-a560-ed7766fcaf2b"];
 [addLicensesList addObject: addLicenses];
 MSGraphAssignedLicense *addLicenses = [[MSGraphAssignedLicense alloc] init];
 NSMutableArray *disabledPlansList = [[NSMutableArray alloc] init];
-[disabledPlansList addObject: @"a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235"];
 [addLicenses setDisabledPlans:disabledPlansList];
-[addLicenses setSkuId:@"skuId-value-2"];
+[addLicenses setSkuId:@"f30db892-07e9-47e9-837c-80727f46fd3d"];
 [addLicensesList addObject: addLicenses];
 payloadDictionary[@"addLicenses"] = addLicensesList;
 

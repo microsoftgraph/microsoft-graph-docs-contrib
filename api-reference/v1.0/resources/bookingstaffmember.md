@@ -23,6 +23,8 @@ When booking appointments, the Bookings API considers the following settings to 
 
 Inherits from [bookingStaffMemberBase](bookingstaffmemberbase.md).
 
+Microsoft Bookings supports a maximum of 100 staff members in a booking calendar.
+
 ## Methods
 
 | Method		   | Return Type	|Description|

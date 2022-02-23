@@ -292,7 +292,7 @@ Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Micr
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
-The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
@@ -338,7 +338,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -391,11 +391,6 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
-
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
@@ -410,17 +405,13 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ### Installation of apps that require resource-specific consent permissions is not supported
-The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
+The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 - [Add app to team](/graph/api/team-post-installedapps.md)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Add app to chat](/graph/api/chat-post-installedapps.md)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users
-
-### Get user by userPrincipalName that starts with a dollar ($) symbol
-
-Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
 ### Encode number (#) symbols in userPrincipalName
 
@@ -432,17 +423,18 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
 
 ### Access to a user's profile photo is limited
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
-Failure to read or update a photo, in this case, results in the following error:
+1. Reading and updating a user's profile photo is only possible if the user has a mailbox. Failure to read or update a photo, in this case, results in the following error:
 
-```javascript
-{
-  "error": {
-    "code": "ErrorNonExistentMailbox",
-    "message": "The SMTP address has no mailbox associated with it."
-  }
-}
-```
+    ```html
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+    ``` 
+2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code
 
@@ -473,9 +465,9 @@ The following limitations apply to query parameters:
 * `$search`:
   * Full-text search is only available for a subset of entities, such as messages.
   * Cross-workload searching is not supported.
-  * Searching is not supported on Azure AD B2C tenants.
+  * Searching is not supported in Azure AD B2C tenants.
 * `$count`:
-  * Not supported on Azure AD B2C tenants.
+  * Not supported in Azure AD B2C tenants.
   * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
 * Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
