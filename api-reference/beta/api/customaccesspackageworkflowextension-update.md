@@ -66,7 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [cust
 ``` http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackages/{accessPackageId}/accessPackageAssignmentPolicies/{accessPackageAssignmentPolicyId}/customExtensionHandlers/{customExtensionHandlerId}/customExtension
 Content-Type: application/json
-Content-length: 134
 
 {
   "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
