@@ -66,8 +66,8 @@ Before an application can add items to the search index, it must create and conf
 - [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.
 - [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.
 
-> [!IMPORTANT]
-> After a schema has been registered, it cannot be changed for an existing connection.
+> [!NOTE]
+> Please see [Schema update capabilities](./connecting-external-content-manage-schema#schema-update-capabilities) for additional information on updating the schema for an existing connection.
 
 ## Update a connection
 
