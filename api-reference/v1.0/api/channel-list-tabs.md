@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List tabs in channel
 
 Namespace: microsoft.graph
+
+
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
 > **Note**: Files tab is native to channel or chat, and is not part of the list tabs API.
