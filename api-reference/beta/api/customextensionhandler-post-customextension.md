@@ -68,7 +68,6 @@ If successful, this method returns a `201 Created` response code and a [customAc
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/customAccessPackageWorkflowExtensions
 Content-Type: application/json
-Content-length: 134
 
 { 
     "displayName": "test_action_0124", 
