@@ -29,7 +29,7 @@ Represents an existing partnership that the partner tenant has with a customer t
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
 |contractType|String|Type of contract. Possible values are:  `SyndicationPartner`, `BreadthPartner`, `ResellerPartner`. See more in the [table below](#contracttype-values). |
-|customerId|GUID|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
+|customerId|Guid|The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource. |
 |defaultDomainName|String|A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.|
 |displayName|String|A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.|
 |id|String| The unique identifier for the partnership. Key, read-only |
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "contractType": "String",
-  "customerId": "GUID",
+  "customerId": "Guid",
   "defaultDomainName": "String",
   "displayName": "String",
   "id": "String (identifier)"
