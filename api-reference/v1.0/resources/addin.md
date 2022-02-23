@@ -34,9 +34,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "guid",
+  "id": "GUID",
   "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
-  "type": "string"
+  "type": "String"
 }
 
 ```
