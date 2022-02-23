@@ -30,7 +30,7 @@ In addition, Microsoft Graph supports many new Azure AD datasets and features th
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
   - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
-  - [Access reviews](/graph/api/resources/accessreviewsv2-root) for one-time or recurring access reviews for attestation of user's access rights.
+  - [Access reviews](/graph/api/resources/accessreviewsv2-overview) for one-time or recurring access reviews for attestation of user's access rights.
   - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices.
 - Security features such as:
   - [Identity risk events](/graph/api/resources/riskdetection).

@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.  The resulting list includes all the assignment requests, current and well as expired, that the caller has access to read, across all catalogs and access packages.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.  The resulting list includes all the assignment requests, current and well as expired, that the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## Optional query parameters
 
-This method supports the `$expand` and `$filter` OData query parameters to help customize the response.
+This method supports the `$select`, `$expand` and `$filter` OData query parameters to help customize the response.
 
 ### Example scenarios for using query parameters
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 [!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -115,7 +119,7 @@ Content-Type: application/json
       "state": "delivered",
       "status": "Delivered",
       "createdDateTime": "2019-10-25T22:55:11.623Z",
-      "completedDate": "2019-10-26T22:55:11.623Z",
+      "completedDateTime": "2019-10-26T22:55:11.623Z",
       "schedule": {
         "@odata.type": "microsoft.graph.entitlementManagementSchedule"
       }

@@ -31,8 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/onlineMeetings/{id}/registration/customQuestions
+POST /me/onlineMeetings/{id}/registration/microsoft.graph.meetingRegistration/customQuestions
 ```
+
+> [!TIP]
+> To access `/customQuestions`, follow the [example](#example) to cast the type of **registration** to **meetingRegistration**.
 
 ## Request headers
 
@@ -60,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [meetingR
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/customQuestions
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions
 Content-Type: application/json
 
 {
@@ -85,10 +88,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-custom-question-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-custom-question-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -107,7 +106,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/customQuestions/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/customQuestions/$entity",
   "id": "MSNhYjc5NWI4MC119zX3gwMDIwX3lvdXJfeDAwMjBfam8=",
   "displayName": "What's your job position?",
   "isRequired": false,

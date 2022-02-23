@@ -51,6 +51,8 @@ The command prompts you to go to a web page to sign in using a device code. Once
 
 Now that you're signed in, you can start making calls to Microsoft Graph.
 
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
+
 ### Get the signed-in user
 
 In this section you'll locate the signed-in user and get her user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.

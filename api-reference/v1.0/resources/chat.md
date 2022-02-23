@@ -57,7 +57,9 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | id| String| The chat's unique identifier. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
-
+| webUrl | String| The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only. |
+| tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 
 ### chatType values 
 
@@ -75,6 +77,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
+| tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
 
 ## JSON representation
 
@@ -92,7 +95,12 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "string",
+  "webUrl": "string",
+  "tenantId": "string",
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  }
 }
 ```
 

@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9313
+Content-Length: 9557
 
 {
   "value": {
@@ -250,6 +250,15 @@ Content-Length: 9313
     "storageAllowUsb": true,
     "storageBlockExternalMedia": true,
     "storageBlockUsbFileTransfer": true,
+    "systemUpdateFreezePeriods": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+        "startMonth": 10,
+        "startDay": 8,
+        "endMonth": 8,
+        "endDay": 6
+      }
+    ],
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",

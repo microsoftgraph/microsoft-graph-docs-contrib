@@ -48,14 +48,14 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "string",
+  "id": "String",
   "createdDateTime": "String (timestamp)",
-  "principalDisplayName": "string",
-  "principalId": "guid",
-  "principalType": "string",
-  "resourceDisplayName": "string",
-  "resourceId": "guid",
-  "appRoleId": "guid"
+  "principalDisplayName": "String",
+  "principalId": "Guid",
+  "principalType": "String",
+  "resourceDisplayName": "String",
+  "resourceId": "Guid",
+  "appRoleId": "Guid"
 }
 ```
 
