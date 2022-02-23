@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object. The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md).  
+Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
