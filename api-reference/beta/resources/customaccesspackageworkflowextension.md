@@ -51,26 +51,20 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.customAccessPackageWorkflowExtension",
-  "baseType": "microsoft.graph.customExtension",
+  "baseType": "microsoft.graph.customCalloutExtension",
   "openType": false
 }
 -->
 ``` json
-{ 
-  "id": "98ffaec5-ae8e-4902-a434-5ffc5d3d3cd0", 
-  "displayName": "test extension", 
-  "description": "Custom access package workflow extension for testing", 
-  "createdDateTime": "2022-01-24T21:48:57.15Z", 
-  "lastModifiedDateTime": "2022-01-24T21:55:44.953Z", 
-  "endpointConfiguration": { 
-      "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration", 
-      "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d", 
-      "resourceGroupName": "resourcegroup", 
-      "logicAppWorkflowName": "elm_extension_test" 
-  }, 
-    "authenticationConfiguration": { 
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication", 
-        "resourceId": "eed6dee9-7ff7-44a5-8980-c11e8886cea2" 
-  } 
-} 
+{
+  "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "endpointConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionEndPointConfiguration"
+  }
+}
 ```
