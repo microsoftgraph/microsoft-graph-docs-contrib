@@ -28,7 +28,8 @@ The configuration details for the logic app's endpoint that is associated with a
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.logicAppTriggerEndpointConfiguration"
+  "@odata.type": "microsoft.graph.logicAppTriggerEndpointConfiguration",
+  "baseType": "microsoft.graph.customExtensionEndpointConfiguration"
 }
 -->
 ``` json
