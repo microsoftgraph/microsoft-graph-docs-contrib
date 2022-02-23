@@ -30,7 +30,7 @@ Represents the directory audit items and its collection.
 | activityDisplayName | String                                              | Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged, refer to [Azure Ad activity list](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | [keyValue](keyvalue.md) collection                  | Indicates additional details on the activity.                                                                                                                                                                                                                          |
 | category            | String                                              | Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)                                                                                                                                              |
-| correlationId       | GUID                                                | Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.                                                                                                                                    |
+| correlationId       | Guid                                                | Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.                                                                                                                                    |
 | id                  | String                                              | Indicates the unique ID for the activity.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indicates information about the user or app initiated the activity.                                                                                                                                                                                                    |
 | loggedByService     | String                                              | Indicates information on which service initiated the activity (For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.                                                          |
@@ -61,7 +61,7 @@ Here is a JSON representation of the resource.
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "GUID",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",
