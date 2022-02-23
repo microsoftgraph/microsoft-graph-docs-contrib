@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewHistoryInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-1.0) resource",
+          "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-1.0) resource and related methods. Represents the instances of a recurring access review history definition.",
           "Target": "accessReviewHistoryInstance"
         },
         {
