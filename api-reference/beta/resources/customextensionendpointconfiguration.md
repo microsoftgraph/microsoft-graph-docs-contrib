@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type used for endpointConfiguration property of custom access package workflow extension.
+Abstract base type that exposes the derived types used to configure the **endpointConfiguration** property of a [custom access package workflow extension](customaccesspackageworkflowextension.md) object. This abstract type is inherited by the [logicAppTriggerEndpointConfiguration](logicapptriggerendpointconfiguration.md) object.
 
 ## Properties
 
