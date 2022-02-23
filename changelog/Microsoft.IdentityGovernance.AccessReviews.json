@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessReviewHistoryScheduleSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryScheduleSettings?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryScheduleSettings?view=graph-rest-1.0) resource type. Use this resource to configure the settings of an [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-1.0) object.",
           "Target": "accessReviewHistoryScheduleSettings"
         },
         {
