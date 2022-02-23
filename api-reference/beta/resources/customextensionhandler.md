@@ -1,6 +1,6 @@
 ---
 title: "customExtensionHandler resource type"
-description: "Defines when to execute which custom access package workflow extension."
+description: "Defines when to execute a custom access package workflow extension."
 author: "currenme"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines when to execute which custom access package workflow extension.
+Defines when to execute a [custom access package workflow extension](customaccesspackageworkflowextension.md).
+
+Inherits from [entity](entity.md).
 
 ## Methods
 None.
@@ -21,12 +23,13 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|stage|[microsoft.graph.accessPackageCustomExtensionStage]()|Indicates at which stage the custom action will be executed.|
+|id|String| Identifier of the stage. Inherited from [entity](../resources/entity.md).|
+|stage|[accessPackageCustomExtensionStage](accesspackagecustomextensionstage.md)|Indicates the stage when a custom access package workflow extension will be executed. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[microsoft.graph.customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Indicate which custom extension will be executed at this stage. Nullable. Supports $expand|
+|customExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Indicates which custom extension will be executed at this stage. Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -40,10 +43,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "customExtensionHandlers": [ 
-      "stage": "assignmentRequestCreated"
-      "customExtension": { 
-          "@odata.type": "#microsoft.graph.customAccessPackageWorkflowExtension", 
+  "@odata.type": "#microsoft.graph.customExtensionHandler",
+  "id": "String (identifier)",
+  "stage": "String"
 }
 ```
 

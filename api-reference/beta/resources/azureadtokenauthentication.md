@@ -26,7 +26,8 @@ Defines the Azure AD application used to authenticate a logic app with a [custom
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.azureAdTokenAuthentication"
+  "@odata.type": "microsoft.graph.azureAdTokenAuthentication",
+  "baseType": "microsoft.graph.customExtensionAuthenticationConfiguration"
 }
 -->
 

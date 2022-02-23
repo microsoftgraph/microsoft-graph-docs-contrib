@@ -21,10 +21,10 @@ None
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|customExtensionId|String|Identification of the custom extension triggered at this instance.|
-|externalCorrelationId|String|Logic app unique run Id.|
-|stage|[microsoft.graph.accessPackageCustomExtensionStage](../resources/accesspackagecustomextensionstage.md)|Indicates at which stage of the request workflow, the custom extension runs.|
-|status|[microsoft.graph.accessPackageCustomExtensionHandlerStatus](../resources/accesspackagecustomextensionhandlerstatus.md)|Status of request to custom extension.|
+|customExtensionId|String|Identifier of the custom extension triggered at this instance.|
+|externalCorrelationId|String|The unique run ID for the logic app.|
+|stage|accessPackageCustomExtensionStage|Indicates the stage of the request workflow when the access package custom extension runs. The possible values are: `assignmentRequestCreated`, `assignmentRequestApproved`, `assignmentRequestGranted`, `assignmentRequestRemoved`, `assignmentFourteenDaysBeforeExpiration`, `assignmentOneDayBeforeExpiration`, `unknownFutureValue`.|
+|status|accessPackageCustomExtensionHandlerStatus|Status of the request to run the access package custom extension. The possible values are: `requestSent`, `requestReceived`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -38,11 +38,12 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 
-{ 
-  "status": "requestReceived", 
-  "externalCorrelationId": "08585600902100964604743022906CU13", 
-  "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498", 
-  "stage": "assignmentRequestCreated" 
- } 
+{
+  "@odata.type": "#microsoft.graph.customExtensionHandlerInstance",
+  "stage": "String",
+  "customExtensionId": "String",
+  "externalCorrelationId": "String",
+  "status": "String"
+}
 ```
 
