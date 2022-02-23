@@ -1,6 +1,6 @@
 ---
 title: "customExtensionAuthenticationConfiguration resource type"
-description: "Abstract base type used for authenticationConfiguration property of custom access package workflow extension."
+description: "Abstract base type that exposes the derived types used to configure the authenticationConfiguration property of a custom access package workflow extension object."
 author: "currenme"
 ms.localizationpriority: medium
 ms.prod: "governance"
