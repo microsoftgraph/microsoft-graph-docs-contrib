@@ -33,6 +33,6 @@ The following is a JSON representation of the resource.
 ``` json
 { 
   "@odata.type": "#microsoft.graph.azureAdTokenAuthentication", 
-  "resourceId": "eed6dee9-7ff7-44a5-8980-c11e8886cea2" 
+  "resourceId": "String" 
  } 
 ```
