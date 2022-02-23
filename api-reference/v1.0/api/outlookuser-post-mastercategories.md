@@ -33,14 +33,14 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-
+|Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of an [outlookCategory](../resources/outlookcategory.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [outlookCategory](../resources/outlookcategory.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [outlookCategory](../resources/outlookcategory.md) object in the response body.
 
 ## Example
 ### Request
