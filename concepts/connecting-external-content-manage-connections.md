@@ -67,7 +67,7 @@ Before an application can add items to the search index, it must create and conf
 - [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.
 
 > [!NOTE]
-> Please see [Schema update capabilities](./connecting-external-content-manage-schema#schema-update-capabilities) for additional information on updating the schema for an existing connection.
+> Please see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities) for additional information on updating the schema for an existing connection.
 
 ## Update a connection
 
@@ -79,7 +79,7 @@ You can [delete a connection](/graph/api/externalconnection-delete?view=graph-re
 
 ## Next steps
 
-- [Register the connection schema](./connecting-external-content-manage-schema.md)
+- [Register the connection schema](/graph/connecting-external-content-manage-schema.md)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
