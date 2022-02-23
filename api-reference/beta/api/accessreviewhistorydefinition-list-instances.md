@@ -86,7 +86,7 @@ Content-Type: application/json
     "value": [
         {
             "id": "61a617dd-238f-4037-8fa5-d800e515f5bc",
-            "status": "Done",
+            "status": "done",
             "reviewHistoryPeriodStartDate": "2021-02-01T00:00:00Z",
             "reviewHistoryPeriodEndDate": "2021-03-01T00:00:00Z",
             "fulfilledDateTime": "2021-03-01T01:38:15.7998393Z",
