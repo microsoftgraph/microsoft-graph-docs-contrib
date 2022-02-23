@@ -27,8 +27,8 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 | [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
-|[List customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-list.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get the customAccessPackageWorkflowExtension resources from the customAccessPackageWorkflowExtension navigation property.|
-|[Create customAccessPackageWorkflowExtension](../api/customextensionhandler-post-customextension.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new customAccessPackageWorkflowExtension object.|
+|[List customAccessPackageWorkflowExtension](../api/accesspackagecatalog-list-customaccesspackageworkflowextension.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get the customAccessPackageWorkflowExtension resources from the customAccessPackageWorkflowExtension navigation property.|
+|[Create customAccessPackageWorkflowExtension](../api/accesspackagecatalog-post-customaccesspackageworkflowextension.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new customAccessPackageWorkflowExtension object.|
 
 ## Properties
 
