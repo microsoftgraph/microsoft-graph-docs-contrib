@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
+const baseTask = {
   '@odata.type': '#microsoft.graph.baseTask',
   body: {
     '@odata.type': 'microsoft.graph.itemBody'
@@ -36,6 +36,6 @@ const tasks = {
 
 await client.api('/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi/tasks')
 	.version('beta')
-	.post(tasks);
+	.post(baseTask);
 
 ```

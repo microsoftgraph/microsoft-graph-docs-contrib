@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: Get a SharePoint Site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -82,6 +81,10 @@ GET /sites/{site-id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

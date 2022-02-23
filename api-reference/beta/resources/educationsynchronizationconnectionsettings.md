@@ -38,14 +38,13 @@ The following is a JSON representation of this resource.
 
 <!-- {
   "blockType": "resource",
-   truncated: true,
-   "isAbstract":true,
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
 }-->
 
 ```json
-{}
+{
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
+  "clientId": "String",
+  "clientSecret": "String",
+}
 ```
