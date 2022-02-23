@@ -19,7 +19,7 @@ An admin access container that can be assigned roles via an access assignment.
 |Property|Type|Description|
 |:---|:---|:---|
 |accessContainerId|String|The identifier of the access container (e.g., security group). For "securityGroup" access containers, this must be a valid ID of an AAD security group in the partner tenant.|
-|accessContainerType|String|The type of access container (e.g., security group) that will be assigned one or more roles approved for the associated relationship.|
+|accessContainerType|delegatedAdminAccessContainerType|The type of access container (e.g., security group) that will be assigned one or more roles approved for the associated relationship. The possible values are: `securityGroup`, `unknownFutureValue`.|
 
 ## Relationships
 None.

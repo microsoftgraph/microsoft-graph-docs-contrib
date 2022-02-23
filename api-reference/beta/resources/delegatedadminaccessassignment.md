@@ -32,7 +32,7 @@ Represents an assignment of access details (containing roles) to an access conta
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the access assignment was created in UTC. This is set by the system and cannot be set by the caller.|
 |id|String|The unique identifier of the access assignment. This is set by the system and cannot be set by the caller.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this access assignment was last modified in UTC. This is set by the system and cannot be set by the caller.|
-|status|String|The status of the assignment.|
+|status|delegatedAdminAccessAssignmentStatus|The status of the assignment.The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
 
 ## Relationships
 None.
