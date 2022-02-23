@@ -566,7 +566,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notifications in Microsoft Teams
+              - name: Change notifications for Microsoft Teams
                 items:
                   - name: Overview
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -580,6 +580,8 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
                     href: teams-changenotifications-chatMembership.md
+              - name: Change notifications for Outlook resources
+                href: outlook-change-notifications-overview.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

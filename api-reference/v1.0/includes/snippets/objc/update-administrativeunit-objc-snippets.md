@@ -7,14 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/directory/administrativeUnits/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/directory/administrativeUnits/4d7ea995-bc0f-45c0-8c3e-132e93bf95f8"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAdministrativeUnit *administrativeUnit = [[MSGraphAdministrativeUnit alloc] init];
-[administrativeUnit setDisplayName:@"displayName-value"];
-[administrativeUnit setDescription:@"description-value"];
-[administrativeUnit setVisibility:@"visibility-value"];
+[administrativeUnit setDisplayName:@"Greater Seattle District Technical Schools"];
 
 NSError *error;
 NSData *administrativeUnitData = [administrativeUnit getSerializedDataWithError:&error];
