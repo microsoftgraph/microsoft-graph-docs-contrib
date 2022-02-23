@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents permissions used to authorize an application for direct access to data for a specific instance of resource, such as a chat or team. For example, the resource-specific permission ChannelMessage.Read.Group allows a Teams app to read the channel messages of a single team. 
 
-Currently, resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using the Microsoft Graph API. See [Resource-specific consent for Teams apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) for more details.
+Resource-specific permissions are only supported for Teams apps accessing to specific chats and teams using the Microsoft Graph API. See [Resource-specific consent for Teams apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) for more details.
 
 ## Properties
 
