@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List instances
+# List instances (of an accessReviewHistoryDefinition)
 
 Namespace: microsoft.graph
 
