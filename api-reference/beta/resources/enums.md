@@ -13,6 +13,28 @@ Namespace: microsoft.graph
 
 ### accessReviewHistoryStatus values
 
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
+
+### accessReviewHistoryStatus values
+
 |Member|
 |:---|
 |done|
@@ -2893,25 +2915,4 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
-|unknownFutureValue|
-
-### accessReviewHistoryStatus values
-
-| Member|
-|:-----------------|
-|done|
-|inprogress|
-|error|
-|requested|
-|unknownFutureValue|
-
-### accessReviewHistoryDecisionFilter values
-
-| Member|
-|:-----------------|
-|approve|
-|deny|
-|notReviewed|
-|dontKnow|
-|notNotified|
 |unknownFutureValue|
