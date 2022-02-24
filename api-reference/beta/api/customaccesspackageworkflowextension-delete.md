@@ -12,9 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object. The custom workflow extension must first be removed from any associated [policies](../resources/accesspackageassignmentpolicy.md) before it can be deleted. To identify the policies and the custom workflow extension to delete:
+Deletes a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object. The custom workflow extension must first be removed from any associated [policies](../resources/accesspackageassignmentpolicy.md) before it can be deleted. Follow these steps to remove the custom workflow extension from any associated policies:
 1. First retrieve the accessPackageCatalogId by calling the [Get accessPackageAssignmentPolicy](accesspackageassignmentpolicy-get.md) request and appending `?$expand=accessPackage($expand=accessPackageCatalog)` to the query. For example, `https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies?$expand=accessPackage($expand=accessPackageCatalog)`.
-2. Retrieve the ID of the **customAccessPackageWorkflowExtension** object that you want to delete by running the [LIST customAccessPackageWorkflowExtensions](accesspackagecatalog-list-customaccesspackageworkflowextensions.md) operation.
+2. Use the access package catalog ID and retrieve the ID of the **customAccessPackageWorkflowExtension** object that you want to delete by running the [LIST customAccessPackageWorkflowExtensions](accesspackagecatalog-list-customaccesspackageworkflowextensions.md) operation.
+3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy. For an example, see [Example 2: Remove the customExtensionHandlers from a policy](accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-from-a-policy).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
