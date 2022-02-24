@@ -235,7 +235,7 @@ Content-type: application/json
         "id": "bf59c5ba-5304-4c9b-9192-e5a4cb8444e7",
         "displayName": "MOD Administrator",
         "type": null,
-        "userPrincipalName": "admin@M365x557205.onmicrosoft.com"
+        "userPrincipalName": "admin@Contoso.com"
     },
     "scope": {},
     "instanceEnumerationScope": {},

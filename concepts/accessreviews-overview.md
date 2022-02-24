@@ -49,7 +49,7 @@ Represents a single review activity, or occurrence, against which reviewers make
 
 Represents a decision that a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of principals under review. If there are no decisions taken, that is, reviewers haven't responded to the review, there will be no decision objects for the instance.
 
-System-generated recommended decisions are provided for decision items. These are based off the last sign in date of the principal in review. This feature gives reviewers visibility into dormant accounts in the organization, and recommends decisions to apply about the principals' continued access.
+System-generated recommended decisions are provided for decision items. These are based on the last sign in date of the principal in review. This feature gives reviewers visibility into dormant accounts in the organization, and recommends decisions to apply about the principals' continued access.
 
 Access reviews also support auditing the decisions that were made on each access review, with the decisions also downloadable for offline auditing.
 
