@@ -20,6 +20,12 @@ Inherits from [entity](entity.md).
 ## Methods
 None.
 
+> [!NOTE]
+>
+> 1. To read the customExtensionHandler objects on a policy, append `?$expand=customExtensionHandlers` to a [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) request. For example, `GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionHandlers`. For more details, see [Example 2: Retrieve the custom extension handlers for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy).
+>
+> 2. To delete the **customExtensionHandlers** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection. For more details, see [Example 2: Remove the customExtensionHandlers from a policy](../api/accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-from-a-policy).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -29,7 +35,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Indicates which custom extension will be executed at this stage. Nullable. Supports `$expand`.|
+|customExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Indicates which custom workflow extension will be executed at this stage. Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

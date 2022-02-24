@@ -59,10 +59,11 @@ The following table shows the properties that are required when you update an [a
 If successful, this method returns a `200 OK` response code and an updated [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.
 
 
-
 ## Examples
 
-### Request
+### Example 1: Update the details of a policy
+
+#### Request
 In this policy update, one of the options for the multiple choice question was removed. Future requestors will no longer have the removed option available to them.
 
 
@@ -179,7 +180,7 @@ Content-Type: application/json
 
 
 
-### Response
+#### Response
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -246,6 +247,78 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
     }]
+}
+```
+
+
+
+### Example 2: Remove the customExtensionHandlers from a policy
+
+To remove the collection of **customExtensionHandlers** and their associated custom workflow extension objects from a policy, assign an empty collection to the **customExtensionHandlers** object.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accesspackageassignmentpolicy_delete_customExtensionHandlers"
+}
+-->
+
+```http
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null,
+    "customExtensionHandlers": []
+}
+```
+
+
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "expiration": {
+        "type": "afterDuration",
+        "duration": "P365D"
+    },
+    "requestApprovalSettings": null,
+    "requestorSettings": {
+        "acceptRequests": true,
+        "scopeType": "AllExistingDirectorySubjects",
+        "allowedRequestors": []
+    },
+    "accessReviewSettings": null
 }
 ```
 

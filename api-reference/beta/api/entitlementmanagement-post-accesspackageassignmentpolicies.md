@@ -392,24 +392,7 @@ Content-type: application/json
         },
         "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
         "isSingleLineQuestion": false
-    },
-    "customExtensionHandlers": [ 
-        { 
-        "stage": "assignmentRequestCreated", 
-        "customExtension": { 
-        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8" 
-            } 
-        }, 
-        { 
-        "stage": "assignmentRequestGranted", 
-        "customExtension": { 
-        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8" 
-            } 
-        } 
-    ],
-    "policyAssignmentType": "RequestBased", 
-    "autoAssignmentSettings": null  
-]
+    }]
 }
 ```
 # [C#](#tab/csharp)
