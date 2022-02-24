@@ -1,5 +1,5 @@
 ---
-title: "microsoftApplicationDataAccessSetting resource type"
+title: "microsoftApplicationDataAccessSettings resource type"
 description: "Represents setting for allowing invoking M365 APIs using any Microsoft application (not only Microsoft Office applications)"
 author: "ttomi"
 ms.localizationpriority: medium
@@ -7,20 +7,20 @@ ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
-# microsoftApplicationDataAccessSetting resource type
+# microsoftApplicationDataAccessSettings resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-Represents settings to allow invocation of internal APIs to all Microsoft applications for users in an organization.
+Represents _settings_ to determine access to Microsoft 365 APIs from all Microsoft applications for users in an organization. When disabled, the same APIs are still accessible through Office applications in accordance with other settings.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md)|[microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md)|Get the _settings_ in an [microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md) object for displaying Microsoft application data access setting in an organization.|
-|[Update microsoftApplicationDataAccessSetting](../api/microsoftapplicationdataaccesssetting-update.md)|[microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md)|Update the properties of a [microsoftApplicationDataAccessSetting](microsoftapplicationdataaccesssetting.md) object.|
+|[List microsoftApplicationDataAccessSettings](../api/organizationsettings-list-microsoftapplicationdataaccess.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Get the _settings_ in an [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object for displaying Microsoft application data access setting in an organization.|
+|[Update microsoftApplicationDataAccessSettings](../api/microsoftapplicationdataaccesssettings-update.md)|[microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md)|Update the properties of a [microsoftApplicationDataAccessSettings](microsoftapplicationdataaccesssettings.md) object.|
 
 ## Properties
 
@@ -38,14 +38,14 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
+  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
   "isEnabledForAllMicrosoftApplications": "Boolean",
   "disabledForGroup": "String"
 }

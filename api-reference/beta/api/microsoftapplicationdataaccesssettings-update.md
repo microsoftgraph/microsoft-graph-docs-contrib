@@ -1,19 +1,19 @@
 ---
-title: "Update microsoftApplicationDataAccessSetting"
-description: "Update the properties of a microsoftApplicationDataAccessSetting object."
+title: "Update microsoftApplicationDataAccessSettings"
+description: "Update the properties of a microsoftApplicationDataAccessSettings object."
 author: "ttomi"
 ms.localizationpriority: medium
 ms.prod: "insights"
 doc_type: apiPageType
 ---
 
-# Update microsoftApplicationDataAccessSetting
+# Update microsoftApplicationDataAccessSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoftApplicationDataAccessSetting](../resources/microsoftapplicationdataaccesssetting.md) object.
+Update the properties of a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoftApplicationDataAccessSetting](../resources/microsoftapplicationdataaccesssetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object in the response body.
 
 ## Examples
 
@@ -61,7 +61,7 @@ Here is an example request that shows how an admin updates "**disabledForGroup**
 
 <!-- {
   "blockType": "request",
-  "name": "update_microsoftapplicationdataaccesssetting"
+  "name": "update_microsoftapplicationdataaccesssettings"
 }
 -->
 ``` http
@@ -79,8 +79,8 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSetting",
-  "name": "update_microsoftapplicationdataaccesssetting"
+  "@odata.type": "microsoft.graph.microsoftApplicationDataAccessSettings",
+  "name": "update_microsoftapplicationdataaccesssettings"
 }
 -->
 ``` http
@@ -88,7 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSetting",
+  "@odata.type": "#microsoft.graph.microsoftApplicationDataAccessSettings",
   "isEnabledForAllMicrosoftApplications": true,
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }

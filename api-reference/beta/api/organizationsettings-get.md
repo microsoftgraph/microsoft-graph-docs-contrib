@@ -17,7 +17,7 @@ Retrieve the properties and relationships of an [organizationSettings](../resour
 
 This operation does not return [insightsSettings](../resources/insightssettings.md). Depending on the type of insights, you can get their settings by using [list itemInsights](organizationsettings-list-iteminsights.md) or [list peopleInsights](organizationsettings-list-peopleinsights.md).
 
-<!-- todo: mention microsoftApplicationDataAccessSetting -->
+This operation does not return [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). In order to retrieve [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md) use [list microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md)
 
 ## Permissions
 
