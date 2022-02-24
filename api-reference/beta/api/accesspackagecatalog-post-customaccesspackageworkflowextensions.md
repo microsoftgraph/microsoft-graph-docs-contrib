@@ -1,5 +1,5 @@
 ---
-title: "Create customAccessPackageWorkflowExtension"
+title: "Create customAccessPackageWorkflowExtensions"
 description: "Create a new customAccessPackageWorkflowExtension object."
 author: "currenme"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create customAccessPackageWorkflowExtension
+# Create customAccessPackageWorkflowExtensions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -40,7 +40,8 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.customCalloutExtension",
-  "openType": false
+  "openType": false,
+  "abstract": true
 }
 -->
 ``` json
