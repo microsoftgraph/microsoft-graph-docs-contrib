@@ -19,7 +19,7 @@ Represents a reference to a directory object in a partner organization. Inherits
 |:---------------|:--------|:----------|
 |description|String| Description of the object returned. Read-only. |
 |displayName|String| Name of directory object being returned, like group or application. Read-only. |
-|externalPartnerTenantId|GUID| The tenant identifier for the partner tenant. Read-only. |
+|externalPartnerTenantId|Guid| The tenant identifier for the partner tenant. Read-only. |
 |id|String| The unique identifier for the resource. Inherited from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Read-only. |
 |objectType|String| The type of the referenced object in the partner tenant. Read-only. |
 
