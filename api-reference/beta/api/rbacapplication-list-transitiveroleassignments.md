@@ -70,7 +70,9 @@ For the examples in this section, consider the following role assignment scenari
 |  | G1<br/>ae2fc327-4c71-48ed-b6ca-f48632186510<br/>(Alice is a member) | User Administrator<br/>fe930be7-5e62-47db-91af-98c3a49a38b1 | Tenant | RA2<br/>8a021d5f-7351-4713-aab4-b088504d476e |
 |  | G2<br/>6ffb34b8-5e6d-4727-a7f9-93245e7f6ea8<br/>(Alice is a member) | Helpdesk Administrator<br/>729827e3-9c14-49f7-bb1b-9608f156bbb8 | Administrative unit (AU1)<br/>26e79164-0c5c-4281-8c5b-be7bc7809fb2 | RA3<br/>6cc86637-13c8-473f-afdc-e0e65c9734d2 |
 
-Alice is assigned the User Administrator role directly at tenant scope with role assignment RA1. Alice is member of a group G1 and G1 is assigned the User Administrator role at tenant scope with role assignment RA2. Alice is also a member of group G2 and G2 is assigned the Helpdesk Administrator role at an administrative unit AU1 scope with role assignment RA3.
++ Alice is assigned the User Administrator role directly at tenant scope with role assignment RA1. 
++ Alice is member of a group G1 and G1 is assigned the User Administrator role at tenant scope with role assignment RA2.
++ Alice is also a member of group G2 and G2 is assigned the Helpdesk Administrator role at an administrative unit AU1 scope with role assignment RA3.
 
 ### Example 1 : Get direct and transitive role assignments of a principal
 
