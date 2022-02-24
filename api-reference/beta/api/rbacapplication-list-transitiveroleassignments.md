@@ -39,7 +39,7 @@ To list transitive role assignments for a directory provider:
 }
 -->
 ```http
-GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '<Alice's ID>'
+GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '{principalId}'
 ```
 
 ## Optional query parameters
@@ -84,7 +84,7 @@ The following is an example of the request. This request requires the **Consiste
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '{principal id}'
+GET https://graph.microsoft.com/beta/roleManagement/directory/transitiveRoleAssignments?$count=true&$filter=principalId eq '2c7936bc-3517-40f3-8eda-4806637b6516'
 ConsistencyLevel: eventual
 ```
 ---
