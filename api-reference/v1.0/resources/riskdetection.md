@@ -29,11 +29,11 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|activityType|Indicates the activity type the detected risk is linked to. . Possible values are: `signin`, `user`, `unknownFutureValue`.|
+|activity|activityType|Indicates the activity type the detected risk is linked to. Possible values are: `signin`, `user`, `unknownFutureValue`.|
 |activityDateTime|DateTimeOffset|Date and time that the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is look like this: `2014-01-01T00:00:00Z`|
-|additionalInfo|String|Additional information associated with the risk detection in JSON format. <br/>If there are risk reasons available for the detection, they will present in the value of this property. Possible risk reasons are: `SuspiciousIP` and `PasswordSpray`. <br/>For more information about each risk reason, see [riskReasons values](#riskreasons-values). |
+|additionalInfo|String|Additional information associated with the risk detection in JSON format. For example, `"[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"`. Possible keys in the additionalInfo JSON string are: `userAgent`, `alertUrl`, `relatedEventTimeInUtc`, `relatedUserAgent`, `deviceInformation`, `relatedLocation`, `requestId`, `correlationId`, `lastActivityTimeInUtc`, `malwareName`, `clientLocation`, `clientIp`, `riskReasons`. <br/>For more information about riskReasons and possible values, see [riskReasons values](#riskreasons-values). |
 |correlationId|String|Correlation ID of the sign-in associated with the risk detection. This property is `null` if the risk detection is not associated with a sign-in.|
-|detectedDateTime|DateTimeOffset|Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is look like this: `2014-01-01T00:00:00Z`|
+|detectedDateTime|DateTimeOffset|Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: `2014-01-01T00:00:00Z`|
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). Possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String|Unique ID of the risk detection. Inherited from [entity](../resources/entity.md)|
 |ipAddress|String|Provides the IP address of the client from where the risk occurred.|
@@ -77,10 +77,10 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 ### riskReasons values
 
-| riskReason | UI display string | Available for which riskEventType |
+| riskEventType | Possible value for riskReasons | UI display string |
 |--|--|--|
-| SuspiciousIP | This sign-in was from a suspicious IP address | investigationsThreatIntelligence |
-| PasswordSpray | This user account was attacked by a password spray. | investigationsThreatIntelligence |
+| `investigationsThreatIntelligence` | `suspiciousIP` | This sign-in was from a suspicious IP address |
+| `investigationsThreatIntelligence` | `passwordSpray` | This user account was attacked by a password spray. |
 
 ## Relationships
 None.
