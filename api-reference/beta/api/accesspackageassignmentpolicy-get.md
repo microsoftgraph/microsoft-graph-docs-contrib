@@ -189,15 +189,14 @@ Content-type: application/json
                     "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
                     "resourceGroupName": "resourcegroup",
                     "logicAppWorkflowName": "customextension_test"
-                }
-    "authenticationConfiguration": {
+                },
+                "authenticationConfiguration": {
                     "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
                     "resourceId": "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
                 }
             }
         }
-    }
-]
+    ]
 }
 ```
 
