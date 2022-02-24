@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
-description: "An object that represents a collection of related actions in a directory."
+description: "Represents the namespace of the area to which the role permission belongs to."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object that represents a collection of related actions. Inherits from [entity](entity.md).
+Represents the namespace of the area to which the role permission belongs to. Inherits from [entity](entity.md).
 
 ## Methods
 |Method|Return type|Description|
