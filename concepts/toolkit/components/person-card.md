@@ -91,6 +91,7 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
 | user-id | string | Allows developers to supply user-id to retrieve data shown on person-card component |
 | person-query | string | Allows developers to supply person-query to retrieve data shown on person-card component |
+| person-card | string | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`.
 
 
 ## Templates
