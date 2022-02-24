@@ -4,42 +4,50 @@
       "ChangeList": [
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "accessPackageCustomExtensionHandlerStatus",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customCalloutExtension",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageCustomExtensionHandlerStatus** enumeration type.",
-          "Target": "accessPackageCustomExtensionHandlerStatus"
+          "Description": "Added the [customCalloutExtension](https://docs.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-beta) resource.",
+          "Target": "customCalloutExtension"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "accessPackageCustomExtensionStage",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customAccessPackageWorkflowExtensions",
           "ChangeType": "Addition",
-          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type.",
-          "Target": "accessPackageCustomExtensionStage"
+          "Description": "Added the **customAccessPackageWorkflowExtensions** navigation property to the [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
+          "Target": "accessPackageCatalog"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
-          "ChangedApiName": "azureAdTokenAuthentication",
+          "ChangedApiName": "customAccessPackageWorkflowExtension",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAdTokenAuthentication](https://docs.microsoft.com/en-us/graph/api/resources/azureAdTokenAuthentication?view=graph-rest-beta) resource type.",
-          "Target": "azureAdTokenAuthentication"
+          "Description": "Added the [customAccessPackageWorkflowExtension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta) resource and related methods. Use this object to define and manage the attributes of a logic app that you can integrate with entitlement management to broaden your governance workflows.",
+          "Target": "customAccessPackageWorkflowExtension"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionAuthenticationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionAuthenticationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [customExtensionAuthenticationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-beta) resource.",
           "Target": "customExtensionAuthenticationConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdTokenAuthentication](https://docs.microsoft.com/en-us/graph/api/resources/azureAdTokenAuthentication?view=graph-rest-beta) resource. Use this object to define the Azure AD application to use to authenticate a logic app with a custom access package workflow extension.",
+          "Target": "azureAdTokenAuthentication"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionClientConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [customExtensionClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-beta) resource. Use this object to configure the HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection.",
           "Target": "customExtensionClientConfiguration"
         },
         {
@@ -53,74 +61,66 @@
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
-          "ChangedApiName": "customExtensionHandlerInstance",
-          "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandlerInstance](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type.",
-          "Target": "customExtensionHandlerInstance"
-        },
-        {
-          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Resource",
           "ChangedApiName": "logicAppTriggerEndpointConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-beta) resource type. Use this object to configure the endpoint for the logic app that is associated with a [custom access package workflow extension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta).",
           "Target": "logicAppTriggerEndpointConfiguration"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "customExtensionHandlers",
           "ChangeType": "Addition",
-          "Description": "Added the **customExtensionHandlers** relationship to [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **customExtensionHandlers** navigation property to the [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
           "Target": "accessPackageAssignmentPolicy"
-        },
-        {
-          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Property",
-          "ChangedApiName": "customExtensionHandlerInstances",
-          "ChangeType": "Addition",
-          "Description": "Added the **customExtensionHandlerInstances** property to [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
-          "Target": "accessPackageAssignmentRequest"
-        },
-        {
-          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Resource",
-          "ChangedApiName": "customAccessPackageWorkflowExtensions",
-          "ChangeType": "Addition",
-          "Description": "Added the **customAccessPackageWorkflowExtensions** relationship to [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
-          "Target": "accessPackageCatalog"
-        },
-        {
-          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Resource",
-          "ChangedApiName": "customAccessPackageWorkflowExtension",
-          "ChangeType": "Addition",
-          "Description": "Added the [customAccessPackageWorkflowExtension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta) resource",
-          "Target": "customAccessPackageWorkflowExtension"
-        },
-        {
-          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
-          "ApiChange": "Resource",
-          "ChangedApiName": "customCalloutExtension",
-          "ChangeType": "Addition",
-          "Description": "Added the [customCalloutExtension](https://docs.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-beta) resource",
-          "Target": "customCalloutExtension"
         },
         {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionHandler",
           "ChangeType": "Addition",
-          "Description": "Added the [customExtensionHandler](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource",
+          "Description": "Added the [customExtensionHandler](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](customaccesspackageworkflowextension.md) runs.",
           "Target": "customExtensionHandler"
-        }
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessPackageCustomExtensionStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](customaccesspackageworkflowextension.md) can be run.",
+          "Target": "accessPackageCustomExtensionStage"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionHandlerInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionHandlerInstances** property to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandlerInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionHandlerInstance](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request",
+          "Target": "customExtensionHandlerInstance"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessPackageCustomExtensionHandlerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionHandlerStatus** enumeration type.",
+          "Target": "accessPackageCustomExtensionHandlerStatus"
+        }        
       ],
       "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-24T21:26:12.2719903Z",
+      "CreatedDateTime": "2022-02-24T00:00:00.2719903Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [

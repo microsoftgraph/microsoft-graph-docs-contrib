@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the Azure AD application used to authenticate a logic app with a [custom access package workflow extension](customaccesspackageworkflowextension.md). Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Defines the Azure AD application used to authenticate a logic app with a [custom access package workflow extension](customaccesspackageworkflowextension.md). Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|Identifier of the Azure AD application used to authenticate a logic app with a custom access package workflow extension.| 
+|resourceId|String|The **appID** of the Azure AD application to use to authenticate a logic app with a custom access package workflow extension.|
 
 ## JSON representation
 

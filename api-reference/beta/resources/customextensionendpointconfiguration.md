@@ -28,7 +28,6 @@ The following is a JSON representation of the resource.
   "abstract": true
 }
 -->
-
 ``` json
 { 
   "@odata.type": "#microsoft.graph.customExtensionEndpointConfiguration" 
