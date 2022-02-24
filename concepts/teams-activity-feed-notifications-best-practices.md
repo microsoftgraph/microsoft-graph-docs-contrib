@@ -65,3 +65,7 @@ You can update an existing activity feed notification instead of creating a new 
 Bot messages are delivered as chat or channel messages. If the user turns on chat or channel notifications, the notifications that are triggered are sent as chat or channel messages. To send bot messages, *@mention* the name of the user for the notification to appear in the activity feed.
 
 It is useful for the alert to be consumed as a chat or channel message; for example, a message that is consumed by all channel members.
+
+## See also
+
+[Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile) 

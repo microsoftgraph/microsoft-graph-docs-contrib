@@ -21,7 +21,7 @@ Property|Type|Description
 |customKeyIdentifier|Binary| Custom key identifier. |
 | displayName | String | The friendly name for the key. |
 |endDateTime|DateTimeOffset|The date and time at which the credential expires. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-|keyId|GUID|The unique identifier (GUID) for the key.|
+|keyId|Guid|The unique identifier (GUID) for the key.|
 |startDateTime|DateTimeOffset|The date and time at which the credential becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |type|String|The type of key credential. "AsymmetricX509Cert".|
 |usage|String|A string that describes the purpose for which the key can be used. For example, "Verify".|
@@ -47,7 +47,7 @@ Here is a JSON representation of the resource
   "displayName": "String",
   "endDateTime": "String (timestamp)",
   "key": "String (Binary)",
-  "keyId": "GUID",
+  "keyId": "Guid",
   "startDateTime": "String (timestamp)",
   "thumbprint": "String",
   "type": "String",

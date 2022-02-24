@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
 |mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|onBehalfOfUserId|GUID| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
+|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
 
 ## Response
 If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
