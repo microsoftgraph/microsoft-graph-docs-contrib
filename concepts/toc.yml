@@ -181,7 +181,7 @@ items:
           - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
           - name: Build your first custom connector
-            href: connecting-external-content-build-quickstart.yml            
+            href: connecting-external-content-build-quickstart.yml
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -261,9 +261,9 @@ items:
           - name: Upload files
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
-            href: assignments-submissions-states-transition.md            
+            href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
-            href: education-build-notificationchannelurl.md            
+            href: education-build-notificationchannelurl.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -366,7 +366,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md                  
+            href: notifications-concept-overview.md
           - name: Get started
             displayName: Notifications
             items:
@@ -383,7 +383,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md                
+                href: notifications-integrating-with-ios.md
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -478,8 +478,8 @@ items:
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
-              - name: Best practices 
-                href: teams-activity-feed-notifications-best-practices.md  
+              - name: Best practices
+                href: teams-activity-feed-notifications-best-practices.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
@@ -575,7 +575,7 @@ items:
                   - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md                  
+                    href: teams-changenotifications-chatmessage.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
@@ -652,6 +652,15 @@ items:
                 href: migrate-azure-ad-graph-faq.md
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
+          - name: Exchange Web Services
+            displayName: Migration, Exchange Web Services, EWS
+            items:
+              - name: Overview
+                href: migrate-exchange-web-services-overview.md
+              - name: Authentication
+                href: migrate-exchange-web-services-authentication.md
+              - name: API mapping
+                href: migrate-exchange-web-services-api-mapping.md
       - name: Use SDKs
         items:
           - name: Overview
