@@ -40,7 +40,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 ### Request
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request"
