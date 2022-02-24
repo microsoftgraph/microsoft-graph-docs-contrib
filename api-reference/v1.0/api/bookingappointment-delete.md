@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
-
 ```
 ## Request headers
 | Name       | Description|
@@ -51,7 +50,8 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
