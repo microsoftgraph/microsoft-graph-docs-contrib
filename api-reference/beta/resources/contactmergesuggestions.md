@@ -1,7 +1,7 @@
 ---
 title: "contactMergeSuggestions resource type"
 description: "Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list"
-author: "jagadeesh-vadivel"
+author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the feature to suggest merging contact items when Outlook detects duplicates in the user's contacts list.
+
 This resource provides a means to enable or disable the feature at the user level. By default, suggestion is enabled. Duplicate contact items remain as duplicates in the contact folder unless the user selects merging them.
 
 ## Methods

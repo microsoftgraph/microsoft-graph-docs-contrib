@@ -1,7 +1,7 @@
 ---
 title: "Update contactMergeSuggestions"
 description: "Update the properties of a contactMergeSuggestions object."
-author: "jagadeesh-vadivel"
+author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
