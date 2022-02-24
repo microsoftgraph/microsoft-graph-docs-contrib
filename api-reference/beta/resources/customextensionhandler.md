@@ -1,7 +1,7 @@
 ---
 title: "customExtensionHandler resource type"
 description: "Defines when to execute a custom access package workflow extension."
-author: "currenme"
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
