@@ -102,7 +102,7 @@ Create a group that’s assignable to an Azure AD role. Assign yourself as the g
 
 ### Request: Create a role-assignable group
 
-Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your **id**.
+Replace `1ed8ac56-4827-4733-8f80-86adc2e67db5` with your ID and `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's ID.
 
 <!-- {
   "blockType": "request",
@@ -121,6 +121,10 @@ Content-type: application/json
     "isAssignableToRole": true,
     "owners@odata.bind": [
         "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+    ],
+    "members@odata.bind": [
+        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
+        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
     ]
 }
 ```
@@ -151,40 +155,6 @@ Content-type: application/json
     "visibility": "Private",
     "onPremisesProvisioningErrors": []
 }
-```
-
-### Request
-
-Assign yourself and Aline as the two members to the security group. In the following request, replace:
-+ `e77cbb23-0ff2-4e18-819c-690f58269752` in the URL with the value of the group's **id**.
-+ `7146daa8-1b4b-4a66-b2f7-cf593d03c8d2` with the value of Aline's **id**.
-+ `1ed8ac56-4827-4733-8f80-86adc2e67db5` with the value of your **id**.
-
-<!-- {
-  "blockType": "request",
-  "name": "tutorial-assignaadroles-addGroupMembers"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/groups/e77cbb23-0ff2-4e18-819c-690f58269752
-Content-type: application/json
-
-{
-    "members@odata.bind": [
-        "https://graph.microsoft.com/v1.0/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-        "https://graph.microsoft.com/v1.0/users/7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
-    ]
-}
-```
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
-} -->
-```
-HTTP/1.1 204 No Content
 ```
 
 ## Step 3: Create a unifiedRoleEligibilityScheduleRequest
