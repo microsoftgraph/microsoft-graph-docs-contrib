@@ -8,9 +8,9 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to your security groups
 
-Suppose you use Azure AD security groups to assign identities (or principals) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
+Suppose you use Azure AD security groups to assign identities (also called *principals*) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
 
-This tutorial guides you to use the access review API to review access to a security group in your tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
+This tutorial guides you to use the access review API to review access to a security group in your Azure AD tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
 + Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator or Identity Governance Administrator Azure AD role.
-  + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You'll sign in later in this tutorial.
+  + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
 + The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
@@ -39,7 +39,7 @@ To consent to the required permissions in Graph Explorer:
    
 ## Step 1: Create test users in your tenant
 
-Create three new test users by running the request below three times, changing the values of **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record the IDs of the three new test users.
+Create three new test users by running the request below three times, changing the values of the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record the IDs of the three new test users.
 
 ### Request
 <!-- {
@@ -147,12 +147,6 @@ From the response, record the ID of the new group to use it later in this tutori
 
 ## Step 3: Create an access review for the security group
 
-Create an access review for members of the security group, using the following settings:
-
-+ It's a self-reviewing access review. Therefore, each group member will self-attest to their need to maintain access to the group.
-+ It's a one-time access review. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
-+ The review scope is limited to all members (direct and indirect) of the **Building security** group.
-
 ### Request
 
 In this call, replace the following values:
@@ -161,12 +155,12 @@ In this call, replace the following values:
 
 The access review has the following settings:
 
-+ It's a self-review as inferred when you don't specify a value for the **reviewers** property.
-+ The scope of the review is members of the **Building security** group.
++ It's a self-review as inferred when you don't specify a value for the **reviewers** property. Therefore, each group member will self-attest to their need to maintain access to the group.
++ The scope of the review is members (direct and indirect) of the **Building security** group.
 + The reviewer must provide justification for why they need to maintain access to the group.
 + The default decision is `Deny` when the reviewers don't respond to the access review request before the instance expires. The `Deny` decision removes the group members from the group.
-+ It's a one-off review that ends after five days.
-+ The principals who are defined in the scope of the review, members of the **Building security** group, will receive email notifications and reminders prompting them to self-attest to their need to maintain access.
++ It's a one-time access review that ends after five days. Therefore, once access is granted, the user doesn't need to self-attest again within the access review period.
++ The principals who are defined in the scope of the review will receive email notifications and reminders prompting them to self-attest to their need to maintain access.
 
 <!-- {
   "blockType": "request",
@@ -325,7 +319,7 @@ You can confirm that all members of the **Building security** group were contact
 
 ### Request
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition.
 
 <!-- {
   "blockType": "request",
@@ -375,7 +369,7 @@ You're interested in the decisions taken for the instance of the access review.
 
 ### Request
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and the instance.
 
 <!-- {
   "blockType": "request",
@@ -387,7 +381,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### Response
 
-The following response shows the decisions taken on the instance of the review. Because **Building security** had two members, two decision items are expected.
+The following response shows the decisions taken on the instance of the review. Because **Building security** has two members, two decision items are expected.
 
 <!-- {
   "blockType": "response",
@@ -485,20 +479,20 @@ From the call, the **decision** property has the value of `NotReviewed` because 
 
 ## Step 7: Self-review a pending access decision
 
-In Step 3, you configured the access review as self-reviewing. This configuration requires that both members of the **Building security** group self-attest to their need to maintain their access to the group. 
+In Step 3, you configured the access review as self-reviewing. This configuration requires that both members of the **Building security** group self-attest to their need to maintain their access to the group.
 
 >[!NOTE]
 >Complete this step as one of the two members of the **Building security** group.
 
-In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, will let the default decisions be applied to their access review.
+In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, we will let the default decisions be applied to their access review.
 
-Start a new browser session in **incognito** or **InPrivate browsing** mode, or via an anonymous browser, and sign in as one of the two members of the **Building security** group. We'll sign in as Adele Vance. By doing so, you won't interrupt your current session. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
+Start a new **incognito**, **anonymous**, or **InPrivate browsing** browser session, and sign in as one of the two members of the **Building security** group. By doing so, you won't interrupt your current administrator session. We'll sign in as Adele Vance. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
 
 ### Method 1: Use the access reviews API to self-review pending access
 
 #### List your access reviews decision items
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition returned in Step 3.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition.
 
 ##### Request
 
@@ -507,7 +501,7 @@ GET https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definition
 ```
 
 ##### Response
-From the response below, you (Adele Vance) have one pending access review (**decision** is `NotReviewed`) to self-attest to. The principal and resource properties indicate the principal to whom the decision applies and the resource that was the scope of the access review. In this case, Adele Vance and the **Building security** group respectively.
+From the response below, you (Adele Vance) have one pending access review (**decision** is `NotReviewed`) to self-attest to. The **principal** and **resource** properties indicate the principal that the decision applies to and the resource to which access is under review. In this case, Adele Vance and the **Building security** group respectively.
 
 ```http
 HTTP/1.1 200 OK
@@ -565,7 +559,7 @@ To complete the access review, Adele Vance will confirm the need to maintain acc
 
 ##### Request
 
-In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and `817e1852-3f8f-46e0-87ba-ef7dad616ba6` with the ID of the pending decision item returned in the previous step.
+In this call, replace `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` with the ID of your access review schedule definition and `c7de8fba-4d6a-4fab-a659-62ff0c02643d` with the ID of the pending decision item returned in the previous step.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/c7de8fba-4d6a-4fab-a659-62ff0c02643d
@@ -609,7 +603,7 @@ You can now sign out and exit the incognito browser session.
 
 ## Step 8: Confirm the decisions and the status of the access review
 
-Back in the main browser session where you're still logged in as a global administrator, repeat Step 4 to see that the **decision** property Adele Vance is now `Approve`. When the access review ends or expires, the default decision of `Deny` will be recorded for Alex Wilber. When the review period ends, the decisions will be automatically applied because the **autoApplyDecisionsEnabled** was set to `true` and the period of the access review instance will have ended. In this case, Adele will maintain access to the Building security group and Alex will automatically be removed from the group.
+Back in the main browser session where you're still logged in as a global administrator, repeat Step 4 to see that the **decision** property for Adele Vance is now `Approve`. When the access review ends or expires, the default decision of `Deny` will be recorded for Alex Wilber. The decisions will then be automatically applied because the **autoApplyDecisionsEnabled** was set to `true` and the period of the access review instance will have ended. Adele will then maintain access to the **Building security** group and Alex will automatically be removed from the group.
 
 Congratulations! You've created an access review and self-attested to your need to maintain access. You only self-attested once, and will maintain access until it's removed through either a `Deny` decision of another access review instance, or through another internal process.
 

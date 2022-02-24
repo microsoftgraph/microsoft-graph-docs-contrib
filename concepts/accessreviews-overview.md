@@ -19,43 +19,43 @@ Resources for which access can be reviewed include groups, privileged roles (inc
 
 The reviewers, or attesters, in the access review may include the following users or groups of users:
 
-+ A user (guest user or a member) reviewing their own access and attesting to their need for continued access
-+ Another user, for example, an admin in a Security Administrator role, reviewing access for other principals
-+ A user's manager attesting to their direct reports' need for continued access
-+ Members of a group
-+ Group owners, including owners who might meet specific criteria
-+ Application owners
++ A user (guest user or a member) reviewing their own access and attesting to their need for continued access.
++ Another user, for example, an admin in a Security Administrator role, reviewing access for other principals.
++ A user's manager attesting to their direct reports' need for continued access.
++ Members of a group.
++ Group owners, including owners who might meet specific criteria.
++ Application owners.
 
 ## Building blocks of the access review API
 
-The access reviews API is structured logically and is composed of these building blocks.  
+The access reviews API is structured logically and is composed of the following building blocks.  
 
-### Access reviews schedule definitions
+### 1. Access reviews schedule definition
 
 This is the logical blueprint that contains the settings of an access review and its instances. These settings include:
 
-+ The resources for which access is reviewed.
-+ The principals whose continued need for access is reviewed.
-+ The reviewers who attest to the need for the principals to maintain access to specific resources.
++ The resources being accessed.
++ The principals that access the resource.
++ The reviewers who attest to the need for the principals to maintain access to resources.
 + The frequency of the access review.
 + The stages of the access review (for a multi-stage access review).
-+ Default decisions if decisions aren't recorded.
++ Default decisions to apply if decisions aren't recorded.
 
-### Access review instance
+### 2. Access review instance
 
-Represents a single review activity, or occurrence, against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance. For a multi-stage access review, each instance contains stages.
+Represents a single review activity, or occurrence, against which reviewers make decisions. An access review definition may have multiple instances as is the case in recurring reviews. One-off reviews have exactly one instance. For a multi-stage access review, each instance contains up to three stages.
 
-### Decision items recorded for a review
+### 3. Decision item recorded for a review
 
 Represents a decision that a reviewer made on an instance, including the time stamp and justification for the decision. Each review instance has as many decisions as the number of principals under review. If there are no decisions taken, that is, reviewers haven't responded to the review, there will be no decision objects for the instance.
 
-System-generated recommended decisions are provided for decision items. These are based on the last sign in date of the principal in review. This feature gives reviewers visibility into dormant accounts in the organization, and recommends decisions to apply about the principals' continued access.
+System-generated recommended decisions can be provided for each decision item. These are based on the last sign in date of the principal whose access is under review. This feature gives reviewers visibility into dormant accounts in the organization, and recommends the decisions to apply about the principal's continued access.
 
-Access reviews also support auditing the decisions that were made on each access review, with the decisions also downloadable for offline auditing.
+Access reviews also support auditing the decisions that were made on each access review instance, with the decisions also downloadable for offline auditing.
 
-## Scope of calling the access reviews APIs
+## Scope of calling the access reviews API
 
-The access reviews APIs support both [delegated](/graph/auth-v2-user) and [application](/graph/auth-v2-service) contexts.
+The access reviews API supports both [delegated](/graph/auth-v2-user) and [application](/graph/auth-v2-service) contexts.
 
 In a delegated (user) context, an application calls the access reviews API on behalf of a user. Typical scenarios include:
 
