@@ -48,7 +48,7 @@ You can specify the following properties when creating a **customAccessPackageWo
 |:---|:---|:---|
 |description|String|Description for the customAccessPackageWorkflowExtension object.|
 |displayName|String|Display name for the customAccessPackageWorkflowExtension.|
-|endpointConfiguration|[customExtensionEndPointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 
 
