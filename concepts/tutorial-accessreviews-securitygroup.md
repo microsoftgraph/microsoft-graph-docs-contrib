@@ -17,7 +17,7 @@ This tutorial guides you to use the access review API to review access to a secu
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator Azure AD role.
++ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Global Administrator or Identity Governance Administrator Azure AD role.
   + [Optional] Start a new **incognito** or **InPrivate browser** session or start a session in an anonymous browser. You'll sign in later in this tutorial.
 + The following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
@@ -483,7 +483,7 @@ Content-type: application/json
 
 From the call, the **decision** property has the value of `NotReviewed` because the group members haven't completed their self-attestation. Follow Step 7 to learn how each member can self-attest to their need for access review.
 
-## Step 7: Self-review a pending access
+## Step 7: Self-review a pending access decision
 
 In Step 3, you configured the access review as self-reviewing. This configuration requires that both members of the **Building security** group self-attest to their need to maintain their access to the group. 
 
