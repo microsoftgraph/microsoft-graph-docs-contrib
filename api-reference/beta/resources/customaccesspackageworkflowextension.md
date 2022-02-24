@@ -1,7 +1,7 @@
 ---
 title: "customAccessPackageWorkflowExtension resource type"
 description: "Defines the attributes of a logic app, which can be called at various stages of an access package request and assignment cycle."
-author: "currenme"
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

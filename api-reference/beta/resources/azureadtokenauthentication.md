@@ -1,7 +1,7 @@
 ---
 title: "azureAdTokenAuthentication resource type"
 description: "Defines the Azure AD application used to authenticate with a custom access package workflow extension."
-author: "currenme"
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

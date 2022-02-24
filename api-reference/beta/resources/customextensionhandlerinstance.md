@@ -1,7 +1,7 @@
 ---
 title: "customExtensionHandlerInstance resource type"
 description: "Used to record the status a custom workflow extension instance being run on an access package assignment request."
-author: "currenme"
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

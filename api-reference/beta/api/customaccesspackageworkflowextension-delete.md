@@ -1,7 +1,7 @@
 ---
 title: "Delete customAccessPackageWorkflowExtension"
 description: "Deletes a customAccessPackageWorkflowExtension object."
-author: "currenme"
+author: "currenmehta"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
