@@ -17,8 +17,8 @@ In this tutorial, you'll use the access reviews API to create a recurring access
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
-+ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in an Identity Governance Administrator role.
-+ Principals assigned to a privileged role that is the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
++ Sign in to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) as a user in a Privileged Role Administrator role.
++ Principals assigned to a privileged role. These assignments will be the scope of your access review. To assign privileged roles, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
 + The following delegated permissions: `AccessReview.ReadWrite.All`.
 
 To consent to the required permissions in Graph Explorer:
