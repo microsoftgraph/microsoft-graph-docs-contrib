@@ -26,8 +26,8 @@ Represents an operation that an authorized principal is allowed to perform.
 |:---|:---|:---|
 |actionVerb|String|HTTP method for the action, such as `DELETE`, `GET`, `PATCH`, `POST`, `PUT`, or `null`. Supports `$filter` (`eq`) but not for `null` values. |
 |description|String|Description for the action. Supports `$filter` (`eq`). |
-|id|String|Unique identifier for an action within the directory resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
-|name|String|Name for the action within the directory resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
+|id|String|Unique identifier for an action within the resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
+|name|String|Name for the action within the resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
 |resourceScopeId|String|Not implemented.|
 
 ## Relationships

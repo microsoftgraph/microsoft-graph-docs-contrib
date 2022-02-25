@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example gets all directory resource namespaces.
+The following example gets all resource namespaces.
 
 ### Request
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here has been shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

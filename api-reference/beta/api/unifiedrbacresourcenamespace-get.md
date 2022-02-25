@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRbacR
 
 ## Examples
 
-The following example gets the directory resource namespace with the identifier of `microsoft.aad.b2c`.
+The following example gets the resource namespace with the identifier of `microsoft.aad.b2c`.
 
 ### Request
 <!-- {
@@ -64,7 +64,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
