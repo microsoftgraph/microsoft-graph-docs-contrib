@@ -11529,7 +11529,7 @@ items:
               href: api/rbacapplicationmultiple-list-resourcenamespaces.md
             - name: Get
               href: api/unifiedrbacresourcenamespace-get.md
-            - name: Resource actions
+            - name: Resource action
               href: resources/unifiedrbacresourceaction.md
               items:
               - name: List
