@@ -52,7 +52,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 ### riskEventType values
 
-| riskEventType | UI Display Name | Description |
+| Name | UI Display Name | Description |
 |--|--|--|
 | unlikelyTravel | Atypical travel | Identifies two sign-ins originating from geographically distant locations, where at least one of the locations may also be atypical for the user, given past behavior.  |
 | anonymizedIPAddress | Anonymous IP address | Indicates sign-ins from an anonymous IP address, for example, using an anonymous browser or VPN. |
@@ -77,7 +77,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 ### riskReasons values
 
-| riskEventType | Possible value for riskReasons | UI display string |
+| riskEventType | Value | UI display string |
 |--|--|--|
 | `investigationsThreatIntelligence` | `suspiciousIP` | This sign-in was from a suspicious IP address |
 | `investigationsThreatIntelligence` | `passwordSpray` | This user account was attacked by a password spray. |
