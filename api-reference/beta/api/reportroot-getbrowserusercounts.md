@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getBrowserUserCounts"
-description: "Get a report that provides the trend in the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization."
+description: "Get a report that provides the trend with the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the trend in the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization.
+Get a report that provides the trend with the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
