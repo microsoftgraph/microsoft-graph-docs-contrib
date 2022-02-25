@@ -130,17 +130,18 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 ⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`. 
 ⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
-> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> [!NOTE]
+> - After tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
+> - The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior.
 
-The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
+For example:  
+`https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo OR mail:onevideo"`  
+This looks for all groups with display names that has `one` and `video` tokens, or mail starting with `onevideo`.  
 
-`https://graph.microsoft.com/v1.0/groups/?$search="displayName:OneVideo"`
-
-This looks for all groups with display names that look like "OneVideo". `$search` can be used together with `$filter` as well. For example:
-
-`https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`
-
-This looks for all mail-enabled groups with display names that look like "OneVideo". The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`. The search text is tokenized based on casing, but matches are performed in a case-insensitive manner. For example, "OneVideo" would be split into two input tokens "one" and "video", but matches properties insensitive to case.
+`$search` can be used together with `$filter` as well:  
+`https://graph.microsoft.com/v1.0/groups/?$filter=mailEnabled eq true&$search="displayName:OneVideo"`  
+This looks for all mail-enabled groups with display names that look like "OneVideo".
+The results are restricted based on a logical conjunction (an "AND") of the `$filter` and the entire query in the `$search`.
 
 The syntax of search follows these rules:
 
@@ -148,7 +149,7 @@ The syntax of search follows these rules:
 * Any number of clauses is supported. Parentheses for precedence is also supported.
 * The syntax for each clause is: "\<property>:\<text to search>".
 * The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startsWith" if search is not supported on the property.
-* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. No other characters need to be escaped.
+* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. All the other special characters must be urlEncoded.
 * Logical `AND` and `OR` operators must be put outside double quotes and they must be in upper case.
 
 The following table shows some examples.
