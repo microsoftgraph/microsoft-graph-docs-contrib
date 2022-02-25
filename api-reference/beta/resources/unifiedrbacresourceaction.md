@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents an operation that an authorized principal is allowed to perform.
 
-Inherits from [entity](entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
