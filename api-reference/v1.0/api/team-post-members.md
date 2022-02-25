@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| TeamMember.ReadWrite.All |
 
 > [!NOTE]
-> * You can't add guest members to a team by using application permissions.
+> * Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) to a team is not supported.
 > * Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 
