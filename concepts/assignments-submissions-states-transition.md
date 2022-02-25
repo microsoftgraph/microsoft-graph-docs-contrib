@@ -31,20 +31,21 @@ The following diagram shows the state transitions that can occur for assignments
 The caller must use the [GET assignment](/graph/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
 
 ### Assignments states transitions based on the allowed actions
-| Current assignment state | Action | New state |
-|:--|:--|:--|
-| Draft | The teacher schedules the assignment | Scheduled |
-| Draft | Publish | Published |
-| Draft | Edited | Draft |
-| Draft | Discarded | |	
-| Published | Publish finished | Assigned |
-| Published | Discarded | |
-| Scheduled | Reach due date | Published |
-| Scheduled | Cancel schedule | Draft |
-| Scheduled | Reschedule | Scheduled |
-| Assigned | Discarded | |
-| Pending |	Copy completed | Draft |
-| Pending | Discarded | |	
+| Current assignment state | Action | New state | Features Available to edit |
+|:--|:--|:--|:--|
+| Draft | The teacher schedules the assignment | Scheduled | Resources, Categories, Rubrics |
+| Draft | Publish | Published | Submissions |
+| Draft | Edited | Draft | Resources, Categories, Rubrics |
+| Draft | Discarded | |	|
+| Published | Publish finished | Assigned | Submissions |
+| Published | Publish failed | Draft | |
+| Published | Discarded | | |
+| Scheduled | Reach due date | Published | |
+| Scheduled | Cancel schedule | Draft | Resources, Categories, Rubrics |
+| Scheduled | Reschedule | Scheduled | |
+| Assigned | Discarded | | |
+| Pending |	Copy completed | Draft | |
+| Pending | Discarded | | |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
