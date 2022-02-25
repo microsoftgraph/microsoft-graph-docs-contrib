@@ -3337,34 +3337,6 @@ items:
               href: api/intune-auditing-devicemanagement-get.md
             - name: Update
               href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management exchange access state
             href: resources/intune-devices-devicemanagementexchangeaccessstate.md
           - name: Device management exchange access state reason
