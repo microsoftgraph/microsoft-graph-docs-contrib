@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a new [https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwideconversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
+Add a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| TeamMember.ReadWrite.All |
 
 > [!NOTE]
-> Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide) to a team is not supported.
+> Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) to a team is not supported.
 
 ## HTTP request
 
