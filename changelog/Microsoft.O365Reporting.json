@@ -1321,7 +1321,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [getBrowserUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowseruserdetail?view=graph-rest-beta) method.",
           "Target": "getBrowserUserDetail"
-        },
+        }
       ],
       "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
       "Cloud": "prd",
