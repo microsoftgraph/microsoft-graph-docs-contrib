@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the namespace of the area or service such as Azure AD, Intune, and Exchange that defines role permissions. Inherits from [entity](entity.md).
+Represents the namespace of the area or service such as Azure AD, Intune, and Exchange that defines role permissions.
 
 ## Methods
 |Method|Return type|Description|
