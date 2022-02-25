@@ -74,6 +74,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 [!INCLUDE [sample-code](../includes/snippets/go/group-unsubscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-unsubscribebymail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

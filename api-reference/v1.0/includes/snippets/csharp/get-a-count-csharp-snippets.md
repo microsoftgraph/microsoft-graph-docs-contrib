@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var devices = await graphClient.Devices
+var contacts = await graphClient.Contacts
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName, 'a')")
+	.Filter("startswith(displayName,'A')")
 	.OrderBy("displayName")
 	.Top(1)
 	.GetAsync();

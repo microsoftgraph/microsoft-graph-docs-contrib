@@ -115,12 +115,12 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')/branding/localizations/$entity",
     "@odata.id": "https://graph.microsoft.com/v2/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/directoryObjects/$/Microsoft.DirectoryServices.Organization('d69179bf-f4a4-41a9-a9de-249c0f2efb1d')//localizations/fr-FR",
     "id": "fr-FR",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
     "cdnList": [],
     "signInPageText": " ",
     "squareLogoRelativeUrl": null,
-    "usernameHintText": ""
+    "usernameHintText": " "
 }
 ```

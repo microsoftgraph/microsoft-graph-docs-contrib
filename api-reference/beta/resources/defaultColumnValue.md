@@ -5,7 +5,8 @@ ms.date: 09/12/2017
 title: DefaultColumnValue
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sites-and-lists"
+
 ---
 # DefaultColumnValue resource type
 
@@ -40,7 +41,7 @@ Only one of **formula** or **value** may be specified at a time.
 SharePoint formulas use a syntax similar to Excel formulas.
 See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.
 
-[SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
+[SPFormulas]: https://support.office.com/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 
 <!--

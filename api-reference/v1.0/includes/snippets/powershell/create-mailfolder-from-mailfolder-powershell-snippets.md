@@ -11,6 +11,7 @@ $params = @{
 	IsHidden = $true
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

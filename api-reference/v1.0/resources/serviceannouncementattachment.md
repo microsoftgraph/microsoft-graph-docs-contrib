@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Represents an attachment associated with a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
-Inherits from [attachment](../resources/attachment.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

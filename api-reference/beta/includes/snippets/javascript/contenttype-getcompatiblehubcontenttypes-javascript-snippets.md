@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let getCompatibleHubContentTypes = await client.api('//sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes')
+let getCompatibleHubContentTypes = await client.api('/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes')
 	.version('beta')
 	.get();
 
