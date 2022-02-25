@@ -12729,6 +12729,19 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
+          - name: Custom access package workflow extension
+            href: resources/customAccessPackageWorkflowExtension.md
+            items:
+            - name: List
+              href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
+            - name: Create
+              href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
+            - name: Get
+              href: api/customaccesspackageworkflowextension-get.md
+            - name: Update
+              href: api/customaccesspackageworkflowextension-update.md
+            - name: Delete
+              href: api/customaccesspackageworkflowextension-delete.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:

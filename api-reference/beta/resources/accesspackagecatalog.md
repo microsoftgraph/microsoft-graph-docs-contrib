@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. An access package catalog might also have linked resources that are used in those access packages to provide access. To view or change the membership of catalog-scoped roles, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 
-
 ## Methods
 
 | Method       | Return Type | Description |
@@ -26,8 +25,16 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 | [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 | [Update accessPackageCatalog](../api/accesspackagecatalog-update.md)|None | Update the properties of an accessPackageCatalog object. |
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
+| **Access package resources**| | |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| **Access package resource roles**| | |
 | [List accessPackageCatalog resource roles](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [accessPackageResourceRole](accesspackageresourcerole.md) collection | Retrieve a list of accessPackageResourceRole objects for resources in a catalog. |
+| **Custom access package package workflow extensions**| | |
+|[List customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|Get a list of the [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) objects and their properties.|
+|[Create customAccessPackageWorkflowExtensions](../api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Get customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-get.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Read the properties and relationships of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Update customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-update.md)|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)|Update the properties of a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
+|[Delete customAccessPackageWorkflowExtension](../api/customaccesspackageworkflowextension-delete.md)|None|Deletes a [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object.|
 
 ## Properties
 
@@ -53,6 +60,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection|The roles in each resource in a catalog. Read-only.|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection|Read-only.|
+|customAccessPackageWorkflowExtension|[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 
 ## JSON representation
 

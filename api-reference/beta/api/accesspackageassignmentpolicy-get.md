@@ -54,7 +54,9 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ## Examples
 
-### Request
+### Example 1: Retrieve a policy
+
+#### Request
 
 The following is an example of the request.
 
@@ -65,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{id}
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/b2eba9a1-b357-42ee-83a8-336522ed6cbf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicy-csharp-snippets.md)]
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -118,6 +120,83 @@ Content-type: application/json
   "canExtend": false,
   "durationInDays": 365,
   "accessReviewSettings": null
+}
+```
+
+### Example 2: Retrieve the custom extension handlers for a policy
+
+#### Request
+
+The following is an example of a request to retrieve the collection of custom extension handlers that are defined for a policy and their associated custom workflow extension.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageassignmentpolicy_expand_customextensionhandlers"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionHandlers($expand=customExtension)
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "4540a08f-8ab5-43f6-a923-015275799197",
+    "displayName": "policy with custom access package workflow extension",
+    "description": "Run specified custom access package workflow extension at different stages.",
+    "canExtend": true,
+    "durationInDays": 0,
+    "expirationDateTime": null,
+    "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+    "accessReviewSettings": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "NoApproval",
+        "approvalStages": []
+    },
+    "customExtensionHandlers": [
+        {
+            "id": "5a38d27a-b702-48d9-ac72-dcf158ba1b0d",
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "id": "219f57b6-7983-45a1-be01-2c228b7a43f8",
+                "displayName": "test_action_1",
+                "description": "Test logic app",
+                "createdDateTime": "2022-01-11T05:19:16.97Z",
+                "lastModifiedDateTime": "2022-01-11T05:19:16.97Z",
+                "endpointConfiguration": {
+                    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+                    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+                    "resourceGroupName": "resourcegroup",
+                    "logicAppWorkflowName": "customextension_test"
+                },
+                "authenticationConfiguration": {
+                    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+                    "resourceId": "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
+                }
+            }
+        }
+    ]
 }
 ```
 
