@@ -37,6 +37,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
 | disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
 | allow-any-email | allowAnyEmail | Indicates whether the people picker can accept email addresses without selecting a person. Default value is `false`. When you finish typing an email address, you can press comma (`,`), semicolon (`;`), tab or enter keys to add it.
+| user-ids | userIds | A string of comma-separated user IDs that you only want to appear in the search. For example `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d` will only display the twon users in the dropdown when the input is focused. When you type a search text, it will return results that match the users in the two user IDs only.
 
 The following is a `show-max` example.
 
