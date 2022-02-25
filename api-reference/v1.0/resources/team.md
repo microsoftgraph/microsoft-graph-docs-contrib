@@ -78,7 +78,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 

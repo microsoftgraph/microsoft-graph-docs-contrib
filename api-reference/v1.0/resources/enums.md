@@ -1722,6 +1722,13 @@ Possible values for user account types (group membership), per Windows definitio
 |strategic|
 |unknownFutureValue|
 
+### searchAlterationType values
+
+| Member |
+|:---------------|
+|modification|
+|suggestion|
+
 ### serviceHealthClassificationType values 
 
 |Member|

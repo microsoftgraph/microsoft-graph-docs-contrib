@@ -108,6 +108,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "snapshots",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **snapshots** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcSnapshot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcSnapshotStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcSnapshotStatus** enumeration type.",
+                    "Target": "cloudPcSnapshotStatus"
+                }
+            ],
+            "Id": "d5711d39-7d15-4fac-9d6d-e81c2feae401",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-15T1413:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",

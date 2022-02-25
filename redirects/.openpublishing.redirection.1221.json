@@ -219,6 +219,26 @@
       "source_path_from_root": "/api-reference/beta/resources/identityprotection-root.md",
       "redirect_url": "/graph/api/resources/identityprotection-overview?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/administrativeunit-post-administrativeunits.md",
+      "redirect_url": "/graph/api/directory-post-administrativeunits?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/administrativeunit-post-administrativeunits.md",
+      "redirect_url": "/graph/api/directory-post-administrativeunits?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/administrativeunit-list.md",
+      "redirect_url": "/graph/api/directory-list-administrativeunits?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/administrativeunit-list.md",
+      "redirect_url": "/graph/api/directory-list-administrativeunits?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }
