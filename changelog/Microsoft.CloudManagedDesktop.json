@@ -112,7 +112,7 @@
                     "ApiChange": "Member",
                     "ChangedApiName": "restoring",
                     "ChangeType": "Addition",
-                    "Description": "Added the **restoring** member to the **cloudPcStatus** enumeration.",
+                    "Description": "Added the `restoring` member to the **cloudPcStatus** enumeration.",
                     "Target": "cloudPcStatus"
                 },
                 {
@@ -128,7 +128,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkRemoteActionResult",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcBulkRemoteActionResult?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [cloudPcBulkRemoteActionResult](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcbulkremoteactionresult?view=graph-rest-beta) resource type.",
                     "Target": "cloudPcBulkRemoteActionResult"
                 },
                 {

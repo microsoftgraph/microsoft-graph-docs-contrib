@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: bulkRestoreCloudPc"
-description: "Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time."
+description: "Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time."
 author: "rongting"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time.
+Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |managedDeviceIds|String collection|The IDs of the Cloud PC devices.|
-|restorePointDateTime|DateTimeOffset|The UTC time point for the selected Cloud PC devices to restore to a previous state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: '2014-01-01T00:00:00Z'.|
+|restorePointDateTime|DateTimeOffset|The UTC time point for the selected Cloud PC devices to restore to a previous state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is '2014-01-01T00:00:00Z'.|
 |timeRange|[restoreTimeRange](#restoretimerange-values)|The time range of the restore point. Possible values are: `before`, `after`, `beforeOrAfter`, `unknownFutureValue`.|
 
 ### restoreTimeRange values

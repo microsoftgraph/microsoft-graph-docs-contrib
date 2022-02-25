@@ -32,7 +32,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Resize remote action](../api/manageddevice-resizecloudpc.md)|None|Upgrade or downgrade an existing Cloud PC to another configuration with new vCPU and storage size through Intune managed device ID.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state from a snapshot.|
-|[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes Intune managed device IDs and a restore point date and time.|
+|[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
 
 ## Properties
 
