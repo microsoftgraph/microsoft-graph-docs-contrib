@@ -25,11 +25,11 @@ The **plannerPlanContextDetails** resource contains additional information about
 
 ### plannerContextState values
 
-|Member             |Value|Description|
-|:------------------|:----|:----------------------------------------------------------------------|
-|active             |0    | The context has no problems.                                          |
-|delinked           |1    | A formerly linked plannerPlanContext is no longer linked to the plan. |
-|unknownFutureValue |2    | Sentinel value to indicate future values.                             |
+|Values              |Description|
+|:------------------|:----------------------------------------------------------------------|
+|active             | The context has no problems.                                          |
+|delinked           | A formerly linked plannerPlanContext is no longer linked to the plan. |
+|unknownFutureValue | Sentinel value to indicate future values.                             |
 
 ## JSON representation
 
