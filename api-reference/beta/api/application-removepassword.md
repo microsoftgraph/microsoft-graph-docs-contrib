@@ -44,7 +44,7 @@ POST /applications/{id}/removePassword
 
 | Property	| Type | Description|
 |:----------|:-----|:-----------|
-| keyId     | GUID | The unique identifier for the password. Required. |
+| keyId     | Guid | The unique identifier for the password. Required. |
 
 ## Response
 
