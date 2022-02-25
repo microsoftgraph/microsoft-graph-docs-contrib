@@ -50,12 +50,72 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example gets the actions for the directory resource namespace with the identifier of `microsoft.insights`.
+### Example 1: Get microsoft.directory actions
 
-### Request
+The following example gets the actions for the resource namespace with the identifier of `microsoft.directory`.
+
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrbacresourceaction"
+  "name": "list_unifiedrbacresourceaction_directory"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions
+```
+
+
+#### Response
+>**Note:** The response object shown here has been shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions?$skiptoken=bWljcm9z...",
+    "value": [
+        {
+            "actionVerb": null,
+            "description": "Create and delete access reviews, and read and update all properties of access reviews in Azure AD",
+            "id": "microsoft.directory-accessReviews-allProperties-allTasks",
+            "name": "microsoft.directory/accessReviews/allProperties/allTasks",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": "GET",
+            "description": "Read all properties of access reviews",
+            "id": "microsoft.directory-accessReviews-allProperties-read-get",
+            "name": "microsoft.directory/accessReviews/allProperties/read",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": null,
+            "description": "Manage access reviews of application role assignments in Azure AD",
+            "id": "microsoft.directory-accessReviews-definitions.applications-allProperties-allTasks",
+            "name": "microsoft.directory/accessReviews/definitions.applications/allProperties/allTasks",
+            "resourceScopeId": null
+        }
+    ]
+}
+```
+
+### Example 2: Get microsoft.insights actions
+
+The following example gets the actions for the resource namespace with the identifier of `microsoft.insights`.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "list_unifiedrbacresourceaction_insights"
 }
 -->
 ``` http
@@ -63,8 +123,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
 
 
-### Response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,20 +140,37 @@ Content-Type: application/json
         {
             "actionVerb": null,
             "description": "Manage all aspects of Insights app",
-            "id": "microsoft.insights-allEntities-allTasks",
-            "name": "microsoft.insights/allEntities/allTasks"
+            "id": "microsoft.insights-allEntities-allProperties-allTasks",
+            "name": "microsoft.insights/allEntities/allProperties/allTasks",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": null,
+            "description": "Read all aspects of Viva Insights",
+            "id": "microsoft.insights-allEntities-allProperties-read",
+            "name": "microsoft.insights/allEntities/allProperties/read",
+            "resourceScopeId": null
         },
         {
             "actionVerb": "PATCH",
             "description": "Deploy and manage programs in Insights app",
-            "id": "microsoft.insights-programs-update-patch",
-            "name": "microsoft.insights/programs/update"
+            "id": "microsoft.insights-programs-allProperties-update-patch",
+            "name": "microsoft.insights/programs/allProperties/update",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": null,
+            "description": "Run and manage queries in Viva Insights",
+            "id": "microsoft.insights-queries-allProperties-allTasks",
+            "name": "microsoft.insights/queries/allProperties/allTasks",
+            "resourceScopeId": null
         },
         {
             "actionVerb": "GET",
             "description": "View reports and dashboard in Insights app",
-            "id": "microsoft.insights-reports-read-get",
-            "name": "microsoft.insights/reports/read"
+            "id": "microsoft.insights-reports-allProperties-read-get",
+            "name": "microsoft.insights/reports/allProperties/read",
+            "resourceScopeId": null
         }
     ]
 }

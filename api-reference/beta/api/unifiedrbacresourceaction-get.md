@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRbacR
 
 ## Examples
 
-The following example gets the action with the identifier `microsoft.insights-programs-update-patch` for the directory resource namespace with the identifier of `microsoft.insights`.
+The following example gets the action with the identifier `microsoft.directory-accessReviews-allProperties-read-get` for the resource namespace with the identifier of `microsoft.directory`.
 
 ### Request
 <!-- {
@@ -59,12 +59,11 @@ The following example gets the action with the identifier `microsoft.insights-pr
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.insights/resourceActions/microsoft.insights-programs-update-patch
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions/microsoft.directory-accessReviews-allProperties-read-get
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,11 +75,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.insights')/resourceActions/$entity",
-    "actionVerb": "PATCH",
-    "description": "Deploy and manage programs in Insights app",
-    "id": "microsoft.insights-programs-update-patch",
-    "name": "microsoft.insights/programs/update",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions/$entity",
+    "actionVerb": "GET",
+    "description": "Read all properties of access reviews",
+    "id": "microsoft.directory-accessReviews-allProperties-read-get",
+    "name": "microsoft.directory/accessReviews/allProperties/read",
     "resourceScopeId": null
 }
 ```
