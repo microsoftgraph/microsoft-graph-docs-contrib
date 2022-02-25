@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the namespace of the area to which the role permission belongs to. Inherits from [entity](entity.md).
+Represents the namespace of the area or service such as Azure AD, Intune, and Exchange that defines role permissions. Inherits from [entity](entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,8 +24,8 @@ Represents the namespace of the area to which the role permission belongs to. In
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier of the directory resource namespace, such as `microsoft.aad.b2c`. Required.|
-|name|String|Name of the directory resource namespace. Typically, the same name as the **id** property, such as `microsoft.aad.b2c`. Required. Supports `$filter` (`eq`, `startsWith`).|
+|id|String|Unique identifier of the resource namespace that defines permissions, such as `microsoft.aad.b2c`. Required.|
+|name|String|Name of the resource namespace. Typically, the same name as the **id** property, such as `microsoft.aad.b2c`. Required. Supports `$filter` (`eq`, `startsWith`).|
 
 ## Relationships
 |Relationship|Type|Description|
