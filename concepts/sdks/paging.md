@@ -116,6 +116,49 @@ while(messagesPage != null) {
 }
 ```
 
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
+    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+)
+
+query := messages.MessagesRequestBuilderGetQueryParameters{
+    Select: []string{"body", "sender", "subject"},
+}
+
+options := messages.MessagesRequestBuilderGetOptions{
+    H: map[string]string{
+        "Prefer": "outlook.body-content-type=\"text\"",
+    },
+    Q: &query,
+}
+
+result, err := client.Me().Messages().Get(&options)
+
+// Initialize iterator
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
+    func() serialization.Parsable {
+        return messages.NewMessagesResponse()
+    })
+
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(options.H)
+
+// Iterate over all pages
+iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    fmt.Printf("%s\n", *message.GetSubject())
+    // Return true to continue the iteration
+    return true
+})
+```
+
 ---
 
 ## Stopping and resuming the iteration
@@ -201,6 +244,68 @@ while (!pageIterator.isComplete()) {
 
 ```java
 // not supported in java SDK
+```
+
+### [Go](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+```go
+import (
+    msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
+    "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
+    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+)
+
+query := messages.MessagesRequestBuilderGetQueryParameters{
+    Select: []string{"body", "sender", "subject"},
+}
+
+options := messages.MessagesRequestBuilderGetOptions{
+    H: map[string]string{
+        "Prefer": "outlook.body-content-type=\"text\"",
+    },
+    Q: &query,
+}
+
+result, err := client.Me().Messages().Get(&options)
+
+// Initialize iterator
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
+    func() serialization.Parsable {
+        return messages.NewMessagesResponse()
+    })
+
+// Any custom headers sent in original request should also be added
+// to the iterator
+pageIterator.SetHeaders(options.H)
+
+// Pause iterating after 25
+var count, pauseAfter = 0, 25
+
+// Iterate over all pages
+iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    count++
+    fmt.Printf("%d: %s\n", count, *message.GetSubject())
+    // Once count = 25, this returns false,
+    // Which pauses the iteration
+    return count < pauseAfter
+})
+
+// Pause 5 seconds
+fmt.Printf("Iterated first %d messages, pausing for 5 seconds...\n", pauseAfter)
+time.Sleep(5 * time.Second)
+fmt.Printf("Resuming iteration...\n")
+
+// Resume iteration
+iterateErr = pageIterator.Iterate(func(pageItem interface{}) bool {
+    message := pageItem.(graph.Message)
+    count++
+    fmt.Printf("%d: %s\n", count, *message.GetSubject())
+    // Return true to continue the iteration
+    return true
+})
 ```
 
 ---

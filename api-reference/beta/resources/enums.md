@@ -11,6 +11,26 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageCustomExtensionHandlerStatus values 
+
+|Member|
+|:---|
+|requestSent|
+|requestReceived|
+|unknownFutureValue|
+
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
 ### accessReviewHistoryStatus values
 
 |Member|
