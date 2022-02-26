@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceNamespace",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceNamespace](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourcenamespace?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceNamespace"
+        },
+        {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceAction](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceAction"
+        }
+      ],
+        "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-02-25T00:00:00.000Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
           "ApiChange": "Resource",
           "ChangedApiName": "customCalloutExtension",
