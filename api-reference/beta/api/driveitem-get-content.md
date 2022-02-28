@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
+Cross-Origin Resource Sharing (CORS) policies apply to this API. For more information about CORS and how it works, see:
+- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+- [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online&preserve-view=true).
+- [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,11 +97,6 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
-
-For more information about CORS (Cross-Origin Resource Sharing) and how it works, see:
-- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
-- [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online&preserve-view=true).
-- [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
 
 ## Partial range downloads
 
