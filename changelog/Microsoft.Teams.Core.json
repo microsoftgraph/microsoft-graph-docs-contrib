@@ -3048,6 +3048,48 @@
     {
       "ChangeList": [
         {
+          "Id": "465ea0f8-98b3-11ec-b909-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added support for deletion of message in channel [POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/softDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "465ea0f8-98b3-11ec-b909-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added support for recovering a deleted message in channel [POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "465ea0f8-98b3-11ec-b909-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added support for deletion of message in chat [POST /users/{user-id}/chats/{chat-id}/messages/{message-id}/softDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "465ea0f8-98b3-11ec-b909-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added support for recpvering a deleted message in chat [POST /users/{user-id}/chats/{chat-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "465ea0f8-98b3-11ec-b909-0242ac120002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-16T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "72aa5a7e-e86a-43a2-a14e-47cec8821a74",
           "ApiChange": "Resource",
           "ChangedApiName": "Tabs",

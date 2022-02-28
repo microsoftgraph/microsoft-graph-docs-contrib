@@ -34,7 +34,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
 |[Reply to a message in channel](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 |[Update reply message](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
-|[Delete reply in channel](../api/chatmessage-delete.md)|[chatMessage](chatmessage.md)| Delete the single reply message in a channel.|
+|[Delete reply message in channel](../api/chatmessage-delete.md)|[chatMessage](chatmessage.md)| Delete the single reply message in a channel.|
 |**Chat messages**| | |
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
