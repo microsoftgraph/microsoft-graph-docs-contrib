@@ -3,7 +3,6 @@ title: "Create bookmark"
 description: "Create a new bookmark object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -16,7 +15,7 @@ Namespace: microsoft.graph.search
 Create a new [bookmark](../resources/search-bookmark.md) object.
 
 ## Permissions
-One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -55,7 +54,7 @@ The following table shows the properties that are available when you create a [b
 |languageTags|String collection|List of countries or regions able to view this bookmark.|
 |platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
-|powerAppIds|String collection|List of PowerApps associated with this bookmark. If users add existing PowerApps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
+|powerAppIds|String collection|List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
 |keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
 |state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
 |groupIds|String collection|List of security groups able to view this bookmark.|

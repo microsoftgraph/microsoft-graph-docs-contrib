@@ -4,7 +4,6 @@ description: "Use Microsoft Graph to manage administrative search answers in the
 ms.localizationpriority: high
 author: "jakeost-msft"
 ms.prod: "search"
-ms.date: 10/25/2021
 doc_type: conceptualPageType
 ---
 

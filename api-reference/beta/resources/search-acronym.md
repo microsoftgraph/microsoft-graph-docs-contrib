@@ -3,7 +3,6 @@ title: "acronym resource type"
 description: "An acronym is an administrative answer in Microsoft Search results to define common acronyms in a organization."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---

@@ -4,7 +4,6 @@ description: "Microsoft Search lets administrators associate search terms with m
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
-ms.date: 10/25/2021
 doc_type: conceptualPageType
 ---
 

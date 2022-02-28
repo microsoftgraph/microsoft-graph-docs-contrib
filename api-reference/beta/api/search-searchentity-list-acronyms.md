@@ -3,7 +3,6 @@ title: "List acronyms"
 description: "Get a list of the acronym objects and their properties."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -16,7 +15,7 @@ Namespace: microsoft.graph.search
 Get a list of the [acronym](../resources/search-acronym.md) objects and their properties.
 
 ## Permissions
-One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -63,7 +62,7 @@ GET https://graph.microsoft.com/beta/search/acronyms
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

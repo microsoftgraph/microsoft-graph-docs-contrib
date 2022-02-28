@@ -3,7 +3,6 @@ title: "answerKeyword resource type"
 description: "Answer keywords allow users to define words and phrases that will trigger an administrative search answer to appear in search results."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---

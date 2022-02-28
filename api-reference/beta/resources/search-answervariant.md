@@ -3,7 +3,6 @@ title: "answerVariant resource type"
 description: "An answer variant can be used to change certain properties of a search answer based on country or platform."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---

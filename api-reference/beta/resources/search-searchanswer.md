@@ -3,7 +3,6 @@ title: "searchAnswer resource type"
 description: "The search answer is a base type for other search answers."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---

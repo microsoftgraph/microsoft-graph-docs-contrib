@@ -3,7 +3,6 @@ title: "qna resource type"
 description: "Represents a question and answer (Q&A) in Microsoft Search."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: resourcePageType
 ---

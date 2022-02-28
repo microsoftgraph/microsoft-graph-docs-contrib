@@ -3,7 +3,6 @@ title: "Create acronym"
 description: "Create a new acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 doc_type: apiPageType
 ---
@@ -16,7 +15,7 @@ Namespace: microsoft.graph.search
 Create a new [acronym](../resources/search-acronym.md) object.
 
 ## Permissions
-One of the following permissions is required to call this api. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|

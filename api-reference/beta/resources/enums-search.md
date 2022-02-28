@@ -3,7 +3,6 @@ title: "Search enum values"
 description: "Microsoft Graph search enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.prod: "search"
 author: "jakeost-msft"
 ---
