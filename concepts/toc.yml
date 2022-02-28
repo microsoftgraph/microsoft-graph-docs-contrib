@@ -147,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Cloud communications
         items:
           - name: Overview
@@ -217,7 +219,7 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Change notifications
+              - name: Subscribe to change notifications
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Corporate management
@@ -330,6 +332,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Notes
         displayName: OneNote
         items:
@@ -407,6 +411,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Reports
         items:
           - name: Overview
@@ -479,7 +485,9 @@ items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
               - name: Best practices 
-                href: teams-activity-feed-notifications-best-practices.md  
+                href: teams-activity-feed-notifications-best-practices.md
+          - name: Subscribe to change notifications
+            href: teams-change-notification-in-microsoft-teams-overview.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
