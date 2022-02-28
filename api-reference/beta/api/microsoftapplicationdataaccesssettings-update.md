@@ -46,8 +46,8 @@ PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForAllMicrosoftApplications|Boolean|When set to 'true', all users in the organization are allowed to invoke any M365 API using any Microsoft application (not restricted to Microsoft Office applications only). This is the default. It is possible to disable this for only a subset of users, by use of the security AAD group identified by the GUID given in `disabledForGroup`. <br> When set to 'false', users in the organization are able to invoke M365 APIs using Microsoft Office applications _only_.|
-|disabledForGroup|String|The ID of security AAD group whose members will _not_ be allowed to invoke M365 APIs using Microsoft applications not part of Microsoft Office. <br> This is only applicable if the property above is set to true.|
+|isEnabledForAllMicrosoftApplications|Boolean|When set to 'true', all users in the organization are allowed to access M365 data using any Microsoft application (not restricted to Microsoft 365 applications only). This is the default. It is possible to disable this for only a subset of users, by use of the security AAD group identified by the GUID given in `disabledForGroup`. <br> When set to 'false', users in the organization are able to access M365 data using Microsoft 365 applications _only_.|
+|disabledForGroup|String|The ID of security AAD group whose members will _not_ be allowed to access M365 data using Microsoft applications not part of Microsoft 365. <br> This is only applicable if the property above is set to true.|
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from invoking M365 APIs using Microsoft applications not part of Microsoft Office.
+Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from accessing M365 data using Microsoft applications not part of Microsoft 365.
 
 <!-- {
   "blockType": "request",
