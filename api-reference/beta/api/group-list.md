@@ -493,6 +493,64 @@ Content-type: application/json
 }
 ```
 
+
+### Example 8: List any groups with any licenses
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_with_licenses"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=assignedLicenses/any()
+```
+
+#### Response
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,assignedLicenses)",
+    "value": [
+        {
+            "id": "5caf712c-8483-4b3d-8384-d8da988c0ca4",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        },
+        {
+            "id": "aae8ec2a-5a08-4013-ae70-fafbb5c20de1",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "18181a46-0d4e-45cd-891e-60aabd171b4e"
+                }
+            ]
+        },
+        {
+            "id": "e55bdaa0-e104-479a-979e-b0457fff6380",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
