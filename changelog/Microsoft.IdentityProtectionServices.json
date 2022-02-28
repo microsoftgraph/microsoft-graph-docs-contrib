@@ -1,6 +1,32 @@
 {
 	"changelog": [
 		{
+			"ChangeList": [
+				{
+					"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
+					"ApiChange": "Property",
+					"ChangedApiName": "clientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the **clientApplications** property to the [conditionalAccessConditionSet](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource. Use this property to configure the service principals and workload identities to include in or exclude from a conditional access policy.",
+					"Target": "conditionalAccessConditionSet"
+				},
+				{
+					"Id": "7ab08cd6-b443-4855-b625-9b80b1b92ea3",
+					"ApiChange": "Resource",
+					"ChangedApiName": "conditionalAccessClientApplications",
+					"ChangeType": "Addition",
+					"Description": "Added the [conditionalAccessClientApplications](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource type.",
+					"Target": "conditionalAccessClientApplications"
+				}
+			],
+			"Id": "9946d332-7957-421b-ad0a-70b3a9f0efa4",
+			"Cloud": "Prod",
+			"Version": "v1.0",
+			"CreatedDateTime": "2021-01-26T00:00:00.000Z",
+			"WorkloadArea": "Identity and access",
+			"SubArea": "Identity and sign-in"
+		},
+		{
       			"ChangeList": [
         			{
 					  "Id": "8e875dc0-5df2-43c8-8c6b-316aed281493",
