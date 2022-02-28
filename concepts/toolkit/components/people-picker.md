@@ -38,6 +38,9 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
 | disable-images | disableImages | Sets whether to disable fetching and display of person images. When set to `true`, user initials are displayed instead.
 | allow-any-email | allowAnyEmail | Indicates whether the people picker can accept email addresses without selecting a person. Default value is `false`. When you finish typing an email address, you can press comma (`,`), semicolon (`;`), tab or enter keys to add it.
+| user-filters | userFilters | Specifies the filter criteria to use when querying the users endpoint. It requires the `user-type` to be set to `user` or `contact`. By default, the `user-type` is `any` and this leads the querying to take place in the `people` endpoint block. Example: `user-filters="startsWith(displayName,'a')"`. This attribute is optional. Learn more about [the support for filter on user properties of Azure AD directory objects](/graph/aad-advanced-queries?tabs=http#user-properties).
+| group-filters | groupFilters | Specifies the filter criteria to use when querying the `groups` endpoint. It requires the `type` to be set to `group`. Example: `group-filters="startsWith(displayName,'a')"`. This attribute is optional.
+| people-filters | peopleFilters | Specifies the filter criteria to use when querying the `people` endpoint. It is used as it is. Example: `people-filters="jobTitle eq 'Web Marketing Manager'"`. This attribute is optional. Learn more about [filtering and the supported capabilities on the people resource](/graph/people-example).
 
 The following is a `show-max` example.
 
