@@ -69,6 +69,7 @@ For the possible resource path values for each supported resource and to learn h
 | SharePoint **list**    | 42300 minutes (under 30 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
 | **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
+| **presence**        | 60 minutes (1 hour) |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 
