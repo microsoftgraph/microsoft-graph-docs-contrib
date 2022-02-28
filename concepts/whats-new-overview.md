@@ -21,7 +21,7 @@ Get [details about an online meeting](/graph/api/resources/teamworkOnlineMeeting
 ## February 2022: New in preview only
 
 ### Change notifications
-Subscribe to changes of Outlook contacts, events, or messages and receive notifications that include resource data in the payload. For more information, see [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md).
+Subscribe to changes of Outlook contacts, events, or messages to receive notifications that include resource data in the payload. For more information, see [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md).
 
 ### Identity and access | Directory management
 Use application permissions `CustomSecAttributeAssignment.Read.All` to read [custom security attribute definitions](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) for an organization without a signed-in user.
