@@ -12453,6 +12453,7 @@ items:
               - name: Stop
                 href: api/accessreviewstage-stop.md
           - name: Access review instance decision item
+            displayName: access review decisions
             href: resources/accessreviewinstancedecisionitem.md
             items:
               - name: List decisions from an instance
@@ -12491,6 +12492,7 @@ items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
+                displayName: Downloadable access review history report
                 href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
