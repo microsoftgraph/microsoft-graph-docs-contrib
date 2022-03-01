@@ -155,13 +155,14 @@ Namespace: microsoft.graph
 
 ### appCredentialRestrictionType values
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### appKeyCredentialRestrictionType values
 
