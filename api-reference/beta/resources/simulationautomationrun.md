@@ -19,7 +19,7 @@ Represents a run of an attack simulation automation of a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the [simulationAutomationRun](../resources/simulationautomationrun.md) objects and their properties.|
+|[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of runs of attack simulation automation.|
 
 ## Properties
 |Property|Type|Description|
