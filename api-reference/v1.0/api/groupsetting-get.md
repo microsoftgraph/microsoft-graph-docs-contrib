@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific of group setting object. The setting can be a tenant-level or group-specific setting.
+Retrieve the properties of a specific group setting object. The setting can be a tenant-level or group-specific setting.
 
 ## Permissions
 
