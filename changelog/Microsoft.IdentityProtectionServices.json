@@ -11,7 +11,7 @@
 					"Target": "conditionalAccessConditionSet"
 				},
 				{
-					"Id": "7ab08cd6-b443-4855-b625-9b80b1b92ea3",
+					"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
 					"ApiChange": "Resource",
 					"ChangedApiName": "conditionalAccessClientApplications",
 					"ChangeType": "Addition",
