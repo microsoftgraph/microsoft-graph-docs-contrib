@@ -10056,12 +10056,16 @@ items:
             href: api/cloudpc-rename.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
-          - name: Reprovision remote action
+          - name: Reprovision remotely action
             href: api/manageddevice-reprovisioncloudpc.md
-          - name: Bulk reprovision remote action
+          - name: Bulk reprovision remotely action
             href: api/manageddevice-bulkreprovisioncloudpc.md
-          - name: Resize remote action
+          - name: Resize remotely action
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore remotely action
+            href: api/manageddevice-restorecloudpc.md
+          - name: Bulk restore remotely action
+            href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
