@@ -26,7 +26,7 @@ By default, all entities inherit the preset defaults. To change the default sett
 |:---------------|:--------|:----------|
 |[Create setting](../api/group-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate.|
 |[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Read properties of a specific setting object.|
-|[List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
+|[List settings](../api/group-list-settings.md) | [directorySetting](directorysetting.md) collection |List properties of all setting objects.|
 |[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)	|Update a setting object. Only settingValues can be changed in an update.|
 |[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
 

@@ -79,7 +79,7 @@ This resource supports:
 | [List rejectedSenders](../api/group-list-rejectedsenders.md) | [directoryObject](directoryobject.md) collection | Get a list of users or groups that are in the rejected-senders list for this group. |
 | [Add rejectedSender](../api/group-post-rejectedsenders.md)  | [directoryObject](directoryobject.md) | Add a new User or Group to the rejectedSenders collection. |
 | [Remove rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Remove new User or Group from the rejectedSenders collection. |
-| [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
 | **Directory objects** |||
 | [List deleted groups](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days. |
 | [List deleted groups owned by user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Retrieve the groups deleted in the tenant in the last 30 days and that are owned by a user. |
@@ -92,7 +92,7 @@ This resource supports:
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | String collection | Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 | **Group settings** |||
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
-| [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+| [List settings](../api/group-list-settings.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 | [Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
 | [Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 | [Get setting template](../api/groupsettingtemplate-get.md) | None | Read properties of a setting template. |

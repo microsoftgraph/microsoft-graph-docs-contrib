@@ -51,7 +51,7 @@ The following properties are required when creating the [groupSetting](../resour
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
 |templateId|String| Unique identifier for the tenant-level [groupSettingTemplates](../resources/groupsettingtemplate.md) object used to create this group-level settings object. Read-only. |
-|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object.|
+|values|[settingValue](../resources/settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object.|
 
 ## Response
 

@@ -18,7 +18,7 @@ By default, all groups inherit the preset defaults. To change the default settin
 Group settings apply to only Microsoft 365 groups.
 
 > [!TIP]
-> The `/beta` version of this resource is named [directorySetting](../../beta/resources/directorysetting.md).
+> The `/beta` version of this resource is named [directorySetting](/graph/api/resources/directorysetting?view=graph-rest-beta&preserve-view=true).
 
 ## Methods
 
