@@ -1,5 +1,5 @@
 ---
-title: "List directory settings"
+title: "List settings"
 description: "Retrieve a list of directory setting objects."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,18 +7,18 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List directory settings
+# List settings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of directory setting objects.
-
-> **Note**: The /beta version of this API is only applies to groups. The /v1.0 version of this API has been renamed to *List groupSettings*.
+Retrieve a list of tenant-level or group-specific group settings objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### List tenant-wide settings
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -26,13 +26,25 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### List group-specific settings
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All  |
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 List tenant-wide or group settings
-
 ```http
 GET /settings
-GET /groups/{id}/settings
+```
+
+<!-- { "blockType": "ignored" } -->
+List group-specific settings
+```http
+GET /groups/{groupId}/settings
 ```
 
 ## Optional query parameters

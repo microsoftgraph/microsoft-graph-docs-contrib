@@ -11246,18 +11246,18 @@ items:
             href: api/directoryroletemplate-list.md
           - name: Get directory role template
             href: api/directoryroletemplate-get.md
-        - name: Directory setting
+        - name: Directory settings
           href: resources/directorysetting.md
           items:
-          - name: Create setting
-            href: api/directorysetting-post-settings.md
-          - name: Get setting
+          - name: Create
+            href: api/group-post-settings.md
+          - name: Get
             href: api/directorysetting-get.md
-          - name: List settings
-            href: api/directorysetting-list.md
-          - name: Update setting
+          - name: List
+            href: api/group-list-settings.md
+          - name: Update
             href: api/directorysetting-update.md
-          - name: Delete setting
+          - name: Delete
             href: api/directorysetting-delete.md
         - name: Directory setting template
           href: resources/directorysettingtemplate.md

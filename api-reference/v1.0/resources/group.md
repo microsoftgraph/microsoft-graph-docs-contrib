@@ -194,7 +194,7 @@ This resource supports:
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Entry-point to Planner resource that might exist for a Unified Group.|
 |rejectedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable|
-|settings|[groupSetting](groupsetting.md) collection| Read-only. Nullable.|
+|settings|[groupSetting](groupsetting.md) collection| Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.|
 |sites|[site](site.md) collection|The list of SharePoint sites in this group. Access the default site with /sites/root.|
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 

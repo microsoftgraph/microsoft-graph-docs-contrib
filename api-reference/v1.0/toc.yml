@@ -576,15 +576,15 @@ items:
         - name: Group setting
           href: resources/groupsetting.md
           items:
-          - name: Create setting
-            href: api/groupsetting-post-groupsettings.md
-          - name: Get setting
+          - name: Create
+            href: api/group-post-settings.md
+          - name: Get
             href: api/groupsetting-get.md
-          - name: List settings
-            href: api/groupsetting-list.md
-          - name: Update setting
+          - name: List
+            href: api/group-list-settings.md
+          - name: Update
             href: api/groupsetting-update.md
-          - name: Delete setting
+          - name: Delete
             href: api/groupsetting-delete.md
         - name: Group setting template
           href: resources/groupsettingtemplate.md

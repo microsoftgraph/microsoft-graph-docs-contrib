@@ -1,5 +1,5 @@
 ---
-title: "Create a directory setting on groups"
+title: "Create settings"
 description: "Use this API to create a new directory setting for the group."
 author: "Jordanndahl"
 ms.localizationpriority: medium
@@ -7,13 +7,14 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Create a directory setting on groups
+# Create settings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new directory setting for the group.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /settings
 POST /groups/{id}/settings
 ```
 ## Request headers
@@ -40,31 +42,31 @@ In the request body, supply a JSON representation of [directorySetting](../resou
 
 If successful, this method returns `201 Created` response code and [directorySetting](../resources/directorysetting.md) object in the response body.
 
-## Example
-### Request
+## Examples
+
+### Example 1: Create a setting to block guests for a specific Microsoft 365 group
+
+#### Request
 The following is an example of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directorysetting_from_group"
+  "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/settings
+POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
 }
 ```
 # [C#](#tab/csharp)
@@ -87,7 +89,7 @@ Content-type: application/json
 
 
 
-### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -100,17 +102,87 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "directorySetting": {
-    "id": "id-value",
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": null,
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
     "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
     ]
-  }
+}
+```
+
+### Example 2: Create a directory or tenant-level setting
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_directorysettings"
+}-->
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/settings
+Content-type: application/json
+
+{
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directorySetting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#settings/$entity",
+    "id": "844d252c-4de2-43eb-a784-96df77231aae",
+    "displayName": null,
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        }
+    ]
 }
 ```
 

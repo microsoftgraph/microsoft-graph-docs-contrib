@@ -11,7 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available **groupSettingTemplates**, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific group settings. Currently, the only templates available apply to Microsoft 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
+Group setting templates represent system-defined settings available to the tenant. [Group settings](groupsetting.md) can be created based on the available **groupSettingTemplates**, and values changed from their preset defaults. Group setting templates cannot be created, updated or deleted. These settings can represent tenant-wide settings, or can represent specific group settings. Currently, the only templates available for groups apply to Microsoft 365 groups, and include settings such as whether users can create groups or invite guests from outside the organization to become members of a group.
+
+For more information about the available Microsoft 365 group settings, see [Template settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
+
+> [!TIP]
+> The `/beta` version of this resource is named [directorySettingTemplate](../../beta/resources/directorysettingtemplate.md).
 
 ## Methods
 
@@ -25,7 +30,7 @@ Group setting templates represent system-defined settings available to the tenan
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |description|String| Description of the template. |
-|displayName|String| Display name of the template. |
+|displayName|String| Display name of the template. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.|
 |id|String| Unique identifier for the template. Read-only.|
 |values|[settingTemplateValue](settingtemplatevalue.md) collection| Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. |
 

@@ -1,5 +1,5 @@
 ---
-title: "Delete a directory setting"
+title: "Delete directorySetting"
 description: "Delete a directory setting."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,15 +7,13 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Delete a directory setting
+# Delete directorySetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a directory setting.
-
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Delete groupSettings*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,12 +26,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-Delete a specific tenant-wide or group setting
+Delete a specific tenant-wide setting.
 ```http
-DELETE /settings/{id}
-DELETE /groups/{id}/settings/{id}
-
+DELETE /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Delete a group-specific setting.
+```http
+DELETE /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -56,7 +59,7 @@ Here is an example of the request.
   "name": "delete_directorysetting"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/settings/{id}
+DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directorysetting-csharp-snippets.md)]
