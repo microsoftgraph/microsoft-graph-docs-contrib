@@ -33,9 +33,9 @@ requestBody.SetMembers( []ConversationMember {
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.aadUserConversationMember",
 		"roles":  []String {
-			"owner",
+			"guest",
 		}
-		"user@odata.bind": "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')",
+		"user@odata.bind": "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')",
 	}
 }
 options := &msgraphsdk.ChatsRequestBuilderPostOptions{
