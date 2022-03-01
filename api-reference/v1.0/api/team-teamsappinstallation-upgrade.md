@@ -1,5 +1,5 @@
 ---
-title: "teamsAppInstallation in team: upgrade"
+title: "teamsAppInstallation: upgrade"
 description: "Upgrade an app installation in a team"
 author: "akjo"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# teamsAppInstallation in team: upgrade
+# teamsAppInstallation: upgrade
 
 Namespace: microsoft.graph
 
