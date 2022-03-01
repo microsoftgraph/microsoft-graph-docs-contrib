@@ -19,8 +19,8 @@ This is an abstract type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get the **simulation** resources from the **simulations** navigation property.|
-|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get the **simulationAutomation** resources from the **simulationAutomations** navigation property.|
+|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 
 ## Properties
 |Property|Type|Description|

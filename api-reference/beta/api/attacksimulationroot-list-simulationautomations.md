@@ -1,6 +1,6 @@
 ---
 title: "List simulationAutomations"
-description: "Get a list of the simulationAutomation objects and their properties."
+description: "Get a list of attack simulation automations for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [simulationAutomation](../resources/simulationautomation.md) objects and their properties.
+Get a list of attack simulation automations for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

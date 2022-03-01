@@ -1,6 +1,6 @@
 ---
 title: "List runs"
-description: "Get a list of the simulationAutomationRun objects and their properties."
+description: "Get a list of the runs of attack simulation automation for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [simulationAutomationRun](../resources/simulationautomationrun.md) objects and their properties.
+Get a list of the runs of attack simulation automation for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

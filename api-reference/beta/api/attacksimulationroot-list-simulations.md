@@ -1,6 +1,6 @@
 ---
 title: "List simulations"
-description: "List attack simulations of a tenant."
+description: "Get a list of attack simulation campaigns for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List attack simulations of a tenant.
+Get a list of attack simulation campaigns for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
