@@ -12,7 +12,7 @@ You can use the Microsoft Search API in Microsoft Graph to sort search results. 
 
 Sorting is supported for SharePoint and OneDrive items. The property of SharePoint and OneDrive items to be sorted on should be *Sortable* in the search schema.
 
-Sorting is also supported for [External items](/graph/api/resources/externalconnectors-externalitem). The property(/graph/api/resources/externalconnectors-property) of External items to be sorted on should be *refinable* in the search schema.
+Sorting is also supported for [External items](/graph/api/resources/externalconnectors-externalitem). The [property](/graph/api/resources/externalconnectors-property) of External items to be sorted on should be *refinable* in the search schema.
 
 The default sort order is ascending. Set the **isDescending** property to change it.
 
