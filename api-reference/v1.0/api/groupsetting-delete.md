@@ -62,7 +62,7 @@ In this example, you delete the tenant-level group setting object.
   "blockType": "request",
   "name": "delete_groupsetting"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # [C#](#tab/csharp)

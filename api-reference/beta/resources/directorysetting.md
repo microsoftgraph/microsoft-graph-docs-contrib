@@ -18,7 +18,7 @@ Directory settings define the configurations that can be used to customize the t
 By default, all entities inherit the preset defaults. To change the default settings, you must create a new settings object using the [directorySettingTemplates](directorysettingtemplate.md). When the same setting is defined at both the tenant-wide and to a specific group, the entity-level setting overrides the tenant-wide setting. For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group.
 
 > [!TIP]
-> The `/v1.0` version of this resource is named [groupSetting](../../v1.0/resources/groupsetting.md).
+> The `/v1.0` version of this resource is named [groupSetting](/graph/api/resources/groupsetting?view=graph-rest-1.0&preserve-view=true).
 
 ## Methods
 
@@ -36,7 +36,7 @@ By default, all entities inherit the preset defaults. To change the default sett
 |displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
 |id|string| Unique identifier for these settings. Read-only.|
 |templateId|string| Unique identifier for the template used to create this group of settings. Read-only.|
-|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced [groupSettingTemplates](groupsettingtemplate.md) object.|
+|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced [directorySettingTemplates](directorysettingtemplate.md) object.|
 
 ## Relationships
 None

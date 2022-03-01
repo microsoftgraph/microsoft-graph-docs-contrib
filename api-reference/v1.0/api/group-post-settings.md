@@ -44,14 +44,14 @@ POST /groups/{id}/settings
 | Content-Type | application/json |
 
 ## Request body
-In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. The display name, templateId, and description are inherited from the referenced [groupSettingTemplates](groupsettingtemplate.md) object. Only the value property can be changed from the default value.
+In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. The display name, templateId, and description are inherited from the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object. Only the value property can be changed from the default value.
 
 The following properties are required when creating the [groupSetting](../resources/groupsetting.md) object.
 
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
-|templateId|String| Unique identifier for the tenant-level [groupSettingTemplates](groupsettingtemplate.md) object used to create this group-level settings object. Read-only. |
-|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](groupsettingtemplate.md) object.|
+|templateId|String| Unique identifier for the tenant-level [groupSettingTemplates](../resources/groupsettingtemplate.md) object used to create this group-level settings object. Read-only. |
+|values|[settingValue](settingvalue.md) collection| Collection of name-value pairs corresponding to the **name** and **defaultValue** properties in the referenced [groupSettingTemplates](../resources/groupsettingtemplate.md) object.|
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns `201 Created` response code and [groupSetting
 
 ### Request
 
-Only the [groupSettingTemplate](groupsettingtemplate.md) named `Group.Unified` can be applied to all Microsoft 365 groups at the tenant-level.
+Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified` can be applied to all Microsoft 365 groups at the tenant-level.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -155,13 +155,13 @@ Content-type: application/json
 }
 ```
 
-The **displayName** property and other name-value pairs will be populated with the default values from the [groupSettingTemplates](groupsettingtemplate.md) object that matches the **templateId**.
+The **displayName** property and other name-value pairs will be populated with the default values from the [groupSettingTemplates](../resources/groupsettingtemplate.md) object that matches the **templateId**.
 
 ## Example 2: Create a setting to block guests for a specific Microsoft 365 group
 
 ### Request
 
-Only the [groupSettingTemplate](groupsettingtemplate.md) named `Group.Unified.Guest` can be applied to specific Microsoft 365 groups.
+Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified.Guest` can be applied to specific Microsoft 365 groups.
 
 # [HTTP](#tab/http)
 <!-- {

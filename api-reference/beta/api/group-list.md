@@ -508,6 +508,14 @@ GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=
 
 #### Response
 
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

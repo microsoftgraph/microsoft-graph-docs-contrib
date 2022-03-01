@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -58,7 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "delete_directorysetting"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 ```
 # [C#](#tab/csharp)
@@ -87,7 +87,7 @@ DELETE https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e212
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

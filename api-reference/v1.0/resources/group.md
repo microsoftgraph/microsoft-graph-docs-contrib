@@ -37,13 +37,13 @@ This resource supports:
 | [delta](../api/group-delta.md) | group collection | Get incremental changes for groups. |
 | [Add members](../api/group-post-members.md) | None | Add a user or group to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Add owners](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
-| [Create setting](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
+| [Create setting](../api/group-post-settings.md) | [groupSetting](groupsetting.md) | Create a setting object based on a groupSettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation. |
 | [Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 | [Get setting](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Read properties of a specific setting object. |
 | [List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
 | [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) collection | Get the direct members of this group from the **members** navigation property. |
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) collection | Get the owners of the group from the **owners** navigation property. |
-| [List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
+| [List settings](../api/group-list-settings.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 | [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups and devices that are members, including nested members of this group. |
 | [List transitive memberOf](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 | [Remove member](../api/group-delete-members.md) | None | Remove a member from a Microsoft 365 group or a security group through the **members** navigation property.|

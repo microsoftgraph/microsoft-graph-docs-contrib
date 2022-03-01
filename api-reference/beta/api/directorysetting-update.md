@@ -64,7 +64,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
 

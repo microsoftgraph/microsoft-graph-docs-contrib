@@ -18,7 +18,7 @@ Directory setting templates represent system-defined settings available to the t
 For more information about the available Microsoft 365 group settings, see [Template settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets).
 
 > [!TIP]
-> The `/v1.0` version of this resource is named [groupSettingTemplate](../../beta/resources/groupsettingtemplate.md).
+> The `/v1.0` version of this resource is named [groupSettingTemplate](/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0&preserve-view=true).
 
 ## Methods
 

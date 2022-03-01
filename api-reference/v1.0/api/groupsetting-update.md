@@ -69,7 +69,7 @@ In this example, `84af2ca5-c274-41bf-86e4-6e374ec4def6` is the identifier of the
   "blockType": "request",
   "name": "update_tenant_groupsetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
 
@@ -126,7 +126,7 @@ In this example, `0167b5af-f3d1-4910-82d2-398747fa381c` is the identifier of the
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
 

@@ -192,12 +192,12 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_groupsettings_for_a_group"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 ```
 
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
