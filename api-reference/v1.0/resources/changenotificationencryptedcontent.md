@@ -37,15 +37,15 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.changeNotificationEncryptedContent"
 }-->
 
-```json
+``` json
 {
-  "data": "{encrypted data that produces a full resource}",
-  "dataSignature": "<HMAC-SHA256 hash>",
-  "dataKey": "{encrypted symmetric key from Microsoft Graph}",
-  "encryptionCertificateId": "MySelfSignedCert/DDC9651A-D7BC-4D74-86BC-A8923584B0AB",
-  "encryptionCertificateThumbprint": "07293748CC064953A3052FB978C735FB89E61C3D"
+  "@odata.type": "#microsoft.graph.changeNotificationEncryptedContent",
+  "data": "String",
+  "dataSignature": "String",
+  "dataKey": "String",
+  "encryptionCertificateId": "String",
+  "encryptionCertificateThumbprint": "String"
 }
-```
 
 <!-- uuid: 6bb14c3d-16ef-4ea3-8dc7-c88b9190081c
 2020-08-05 14:57:30 UTC -->
