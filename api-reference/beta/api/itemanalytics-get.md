@@ -41,6 +41,9 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 
+## Optional query parameters
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name          | Description               |
@@ -53,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [itemAnalytics][] object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [itemAnalytics][] object in the response body. 
 
 ## Example
 
