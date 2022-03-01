@@ -116,6 +116,10 @@ Content-Type: application/json
     "displayName": "String",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -184,6 +188,10 @@ Content-Type: application/json
     "displayName": "Display Name value",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",
     "assignments": [

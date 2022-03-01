@@ -10056,12 +10056,16 @@ items:
             href: api/cloudpc-rename.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
-          - name: Reprovision remote action
+          - name: Reprovision remotely action
             href: api/manageddevice-reprovisioncloudpc.md
-          - name: Bulk reprovision remote action
+          - name: Bulk reprovision remotely action
             href: api/manageddevice-bulkreprovisioncloudpc.md
-          - name: Resize remote action
+          - name: Resize remotely action
             href: api/manageddevice-resizecloudpc.md
+          - name: Restore remotely action
+            href: api/manageddevice-restorecloudpc.md
+          - name: Bulk restore remotely action
+            href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
@@ -10152,6 +10156,13 @@ items:
           items:
           - name: List
             href: api/virtualendpoint-list-serviceplans.md
+        - name: Cloud PC snapshot
+          href: resources/cloudpcsnapshot.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-snapshots.md
+          - name: Get
+            href: api/cloudpcsnapshot-get.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:
@@ -11188,7 +11199,7 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device member of
             href: api/device-list-memberof.md
           - name: List device transitive groups
             href: api/device-list-transitivememberof.md
@@ -11405,6 +11416,8 @@ items:
             items:
             - name: List role assignment
               href: api/rbacapplication-list-roleassignments.md
+            - name: List transitive role assignments
+              href: api/rbacapplication-list-transitiveroleassignments.md
             - name: Create role assignment
               href: api/rbacapplication-post-roleassignments.md
             - name: Get role assignment
@@ -11513,6 +11526,20 @@ items:
               href: api/unifiedRoleManagementPolicyRule-get.md
             - name: Update
               href: api/unifiedRoleManagementPolicyRule-update.md
+          - name: Resource namespace
+            href: resources/unifiedrbacresourcenamespace.md
+            items:
+            - name: List
+              href: api/rbacapplicationmultiple-list-resourcenamespaces.md
+            - name: Get
+              href: api/unifiedrbacresourcenamespace-get.md
+            - name: Resource action
+              href: resources/unifiedrbacresourceaction.md
+              items:
+              - name: List
+                href: api/unifiedrbacresourcenamespace-list-resourceactions.md
+              - name: Get
+                href: api/unifiedrbacresourceaction-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -11896,9 +11923,10 @@ items:
               href: api/organizationalbrandinglocalization-update.md
             - name: Delete
               href: api/organizationalbrandinglocalization-delete.md
-        - name: Policy
-          href: resources/policy-overview.md
+        - name: Policies
           items:
+          - name: Overview
+            href: resources/policy-overview.md
           - name: Activity-based timeout policy
             href: resources/activitybasedtimeoutpolicy.md
             items:
@@ -12719,6 +12747,19 @@ items:
               href: api/connectedorganization-delete-externalsponsors.md
             - name: Remove internal sponsors
               href: api/connectedorganization-delete-internalsponsors.md
+          - name: Custom access package workflow extension
+            href: resources/customAccessPackageWorkflowExtension.md
+            items:
+            - name: List
+              href: api/accesspackagecatalog-list-customaccesspackageworkflowextensions.md
+            - name: Create
+              href: api/accesspackagecatalog-post-customaccesspackageworkflowextensions.md
+            - name: Get
+              href: api/customaccesspackageworkflowextension-get.md
+            - name: Update
+              href: api/customaccesspackageworkflowextension-update.md
+            - name: Delete
+              href: api/customaccesspackageworkflowextension-delete.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
@@ -13953,6 +13994,49 @@ items:
           href: resources/searchresponse.md
         - name: Query data
           href: api/search-query.md
+      - name: Answer
+        items:
+        - name: Overview
+          href: resources/search-api-answers-overview.md
+        - name: Acronym
+          href: resources/search-acronym.md
+          items:
+          - name: List acronyms
+            href: api/search-searchentity-list-acronyms.md
+          - name: Create acronym
+            href: api/search-searchentity-post-acronyms.md
+          - name: Get acronym
+            href: api/search-acronym-get.md
+          - name: Update acronym
+            href: api/search-acronym-update.md
+          - name: Delete acronym
+            href: api/search-acronym-delete.md
+        - name: Bookmark
+          href: resources/search-bookmark.md
+          items:
+          - name: List bookmarks
+            href: api/search-searchentity-list-bookmarks.md
+          - name: Create bookmark
+            href: api/search-searchentity-post-bookmarks.md
+          - name: Get bookmark
+            href: api/search-bookmark-get.md
+          - name: Update bookmark
+            href: api/search-bookmark-update.md
+          - name: Delete bookmark
+            href: api/search-bookmark-delete.md
+        - name: QnA
+          href: resources/search-qna.md
+          items:
+          - name: List qnas
+            href: api/search-searchentity-list-qnas.md
+          - name: Create qna
+            href: api/search-searchentity-post-qnas.md
+          - name: Get qna
+            href: api/search-qna-get.md
+          - name: Update qna
+            href: api/search-qna-update.md
+          - name: Delete qna
+            href: api/search-qna-delete.md
       - name: Index
         items:
         - name: Overview
