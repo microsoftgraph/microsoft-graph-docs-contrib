@@ -149,7 +149,7 @@ The syntax of search follows these rules:
 * Any number of clauses is supported. Parentheses for precedence is also supported.
 * The syntax for each clause is: "\<property>:\<text to search>".
 * The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startsWith" if search is not supported on the property.
-* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. All the other special characters must be urlEncoded.
+* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. All the other special characters must be URL encoded.
 * Logical `AND` and `OR` operators must be put outside double quotes and they must be in upper case.
 
 The following table shows some examples.
