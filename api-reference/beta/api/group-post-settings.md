@@ -25,11 +25,19 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Directory.ReadWrite.All |
 
 ## HTTP request
+
+Create a tenant-wide setting.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /settings
+```
+
+Create a group-specific setting.
+<!-- { "blockType": "ignored" } -->
+```http
 POST /groups/{id}/settings
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|

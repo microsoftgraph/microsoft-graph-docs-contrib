@@ -15,9 +15,6 @@ Use this API to create a new setting, based on the templates available in [group
 
 Group settings apply to only Microsoft 365 groups. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
-> [!NOTE]
-> For `beta` endpoints, use [directorySettingTemplates](/graph/api/resources/directorysettingtemplate?view=graph-rest-beta&preserve-view=true).
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,9 +27,16 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Directory.ReadWrite.All |
 
 ## HTTP request
+
+Create a tenant-wide setting.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupSettings
+```
+
+Create a group-specific setting.
+<!-- { "blockType": "ignored" } -->
+```http
 POST /groups/{id}/settings
 ```
 

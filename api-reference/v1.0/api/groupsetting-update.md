@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-Update a specific tenant-wide setting.
+Update a tenant-wide setting.
 ```http
 PATCH /groupSettings/{groupSettingId}
 ```

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-Delete a specific tenant-wide setting.
+Delete a tenant-wide setting.
 ```http
 DELETE /settings/{directorySettingId}
 ```
