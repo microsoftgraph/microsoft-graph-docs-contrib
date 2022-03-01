@@ -4,7 +4,7 @@ description: "A changeNotificationEncryptedContent object represents the encrypt
 ms.localizationpriority: medium
 author: "baywet"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # changeNotificationEncryptedContent resource type
@@ -46,6 +46,7 @@ The following is a JSON representation of the resource.
   "encryptionCertificateId": "String",
   "encryptionCertificateThumbprint": "String"
 }
+```
 
 <!-- uuid: 6bb14c3d-16ef-4ea3-8dc7-c88b9190081c
 2020-08-05 14:57:30 UTC -->
