@@ -283,3 +283,19 @@ Content-type: application/json
 ```
 
 >**Note:** Acquire session information depends on the initial request. You don't need to acquire the result if the initial request doesn't return a response body.
+
+## Throttling
+
+### Why not simple limit numbers?
+
+We monitor the resource usage of multiple dependency services when the APIs are called, and the impact varies a lot between different requests. For example, you may easily imagine that updating a short string in a single cell of a small workbook would consume much less resources than adding a huge table with complex formulas to a large workbook. Even with the same API, parameters and target workbooks may introduce significant differences. Using simple and universal numbers would result in more restrictive limits; in contrast, following the best practices here would help Graph clients to complete tasks fast with fewer failures.
+
+### Retry-After header
+
+In many cases, a throttling response will include a `Retry-After` header. Respecting the value of the header and delaying similar requests would help the client to recover from throttling. See [Error handling for Excel APIs in Microsoft Graph](workbook-error-handling.md) for detailed instructions on how to handle error responses from Excel Graph.
+
+### Throttling and concurrency
+
+Another factor related to throttling is request concurrency. It is not generally recommended to increase concurrency when using Excel Graph APIs (i.e. parallelizing the requests to the same workbook), especially for write requests. Instead, unless there is a specific concern (such as significant networking overhead compared to very short request execution time), we recommend sequential usage in the most common case: for each workbook, only send the next request after receiving a success response to the current request.
+
+Concurrent write requests to the same workbook don’t usually execute in parallel (although in some cases they do); rather, they are often the reason of throttling, timeout (when requests are queued on servers), merge conflict (when concurrent sessions are involved) and other types of failures. They also complicate error handling: when you receive a failure response for one of them, you’re not sure about the status of the other pending requests and it would be more difficult to determine or to recover the state of the workbook.
