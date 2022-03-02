@@ -14,11 +14,6 @@ Namespace: microsoft.graph
 
 Download the contents of the primary stream (file) of a [driveItem](../resources/driveitem.md). Only **driveItems** with the **file** property can be downloaded.
 
-Cross-Origin Resource Sharing (CORS) policies apply to this API. For more information about CORS and how it works, see: 
-- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
-- [Using the OneDrive API in JavaScript apps (CORS support)](/onedrive/developer/rest-api/concepts/working-with-cors?view=odsp-graph-online&preserve-view=true).
-- [OneDrive CORS download in JavaScript](https://stackoverflow.com/questions/27068647/onedrive-cors-download-in-javascript/35583833#35583833).
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +48,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 Here is an example to download a complete file.
 
-
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -96,6 +91,36 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+
+### Downloading files in JavaScript apps
+To download files in a JavaScript app you cannot use the `/content` API, since this responds with a `302` redirect.
+A `302` redirect is explicitly prohibited when a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) _preflight_ is required, such as when providing the **Authorization** header.
+
+Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` would have redirected to.
+This URL can then be requested directly using XMLHttpRequest.
+Because these URLs are pre-authenticated they can be retrieved without a CORS preflight request.
+
+#### Example
+
+To retrieve the download URL for a file, first make a request that includes the `@microsoft.graph.downloadUrl` property:
+
+```http
+GET /drive/items/{item-id}?select=id,@microsoft.graph.downloadUrl
+```
+
+This returns the id and download URL for a file:
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "12319191!11919",
+  "@microsoft.graph.downloadUrl": "https://..."
+}
+```
+
+You can then make an XMLHttpRequest for the URL provided in `@microsoft.graph.downloadUrl` to retrieve the file.
 
 ## Partial range downloads
 
