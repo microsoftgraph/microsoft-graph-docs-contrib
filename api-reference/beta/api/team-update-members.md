@@ -46,6 +46,9 @@ In the request body, supply the values for the relevant fields to update. Existi
 |:---------------|:--------|:----------|
 |roles|string collection|The role for the user. Must be `owner` or empty. Guest users are automatically stamped with `guest` role and this value cannot be updated. |
 
+> [!NOTE]
+> Team members with role of 'guest' cannot be given the role of 'owner'.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [conversationMember](../resources/conversationmember.md) object in the response body.
