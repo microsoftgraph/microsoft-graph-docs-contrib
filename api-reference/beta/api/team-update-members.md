@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
+> [!NOTE]
+> Team members with role of `guest` cannot be given the role of `owner`.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,9 +48,6 @@ In the request body, supply the values for the relevant fields to update. Existi
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |roles|string collection|The role for the user. Must be `owner` or empty. Guest users are automatically stamped with `guest` role and this value cannot be updated. |
-
-> [!NOTE]
-> Team members with role of `guest` cannot be given the role of `owner`.
 
 ## Response
 
