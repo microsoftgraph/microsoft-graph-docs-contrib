@@ -47,7 +47,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 In the request body, supply a JSON representation of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
+The following table shows the properties that can be updated for the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -81,8 +81,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "Display Name value",
-  "description": "Description value",
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "imageId": "Image ID value",
   "imageDisplayName": "Image Display Name value",
@@ -112,12 +112,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-provisioningpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-provisioningpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-**Note:**
 <!-- {
   "blockType": "response",
   "truncated": true,

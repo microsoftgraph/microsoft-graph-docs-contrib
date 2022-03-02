@@ -9,6 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 	Top: 2,
+	OrderBy: "createdDateTime",
 }
 options := &msgraphsdk.MessagesRequestBuilderGetOptions{
 	Q: requestParameters,

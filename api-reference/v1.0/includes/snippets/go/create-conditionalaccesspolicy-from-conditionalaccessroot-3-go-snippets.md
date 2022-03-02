@@ -101,17 +101,18 @@ sessionControls.SetApplicationEnforcedRestrictions(nil)
 sessionControls.SetPersistentBrowser(nil)
 cloudAppSecurity := msgraphsdk.NewCloudAppSecuritySessionControl()
 sessionControls.SetCloudAppSecurity(cloudAppSecurity)
-cloudAppSecurity.SetAdditionalData(map[string]interface{}{
-	"cloudAppSecurityType": "blockDownloads",
-	"isEnabled": true,
-}
+cloudAppSecurityType := "blockDownloads"
+cloudAppSecurity.SetCloudAppSecurityType(&cloudAppSecurityType)
+isEnabled := true
+cloudAppSecurity.SetIsEnabled(&isEnabled)
 signInFrequency := msgraphsdk.NewSignInFrequencySessionControl()
 sessionControls.SetSignInFrequency(signInFrequency)
-signInFrequency.SetAdditionalData(map[string]interface{}{
-	"value": ,
-	"type": "hours",
-	"isEnabled": true,
-}
+value := int32(4)
+signInFrequency.SetValue(&value)
+type := "hours"
+signInFrequency.SetType(&type)
+isEnabled := true
+signInFrequency.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
 	Body: requestBody,
 }

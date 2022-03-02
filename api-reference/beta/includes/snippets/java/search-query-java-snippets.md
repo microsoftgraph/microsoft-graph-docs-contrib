@@ -30,7 +30,6 @@ graphClient.search()
 	.query(SearchEntityQueryParameterSet
 		.newBuilder()
 		.withRequests(requestsList)
-		.withQueryAlterationOptions(null)
 		.build())
 	.buildRequest()
 	.post();

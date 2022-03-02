@@ -72,7 +72,7 @@ const bookingService = {
     ]
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services')
+await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services')
 	.version('beta')
 	.post(bookingService);
 
