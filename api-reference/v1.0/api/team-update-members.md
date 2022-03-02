@@ -45,7 +45,7 @@ In the request body, supply the values for the relevant fields to update. Existi
 |roles|string collection|The role for the user. Must be `owner` or empty. Guest users are automatically stamped with `guest` role and this value cannot be updated. |
 
 > [!NOTE]
-> Team members with role of 'guest' cannot be given the role of 'owner'.
+> Team members with role of `guest` cannot be given the role of `owner`.
 
 ## Response
 
