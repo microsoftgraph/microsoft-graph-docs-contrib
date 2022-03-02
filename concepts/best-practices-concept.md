@@ -52,7 +52,7 @@ Depending on the requests you make to Microsoft Graph, your applications should 
 
 ### Pagination
 
-When querying a resource collection, you should expect that Microsoft Graph will the return result set in multiple pages, due to server-side page size limits. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.
+When querying a resource collection, you should expect that Microsoft Graph will return the result set in multiple pages, due to server-side page size limits. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.
 
 For example, listing the signed-in users messages:
 
