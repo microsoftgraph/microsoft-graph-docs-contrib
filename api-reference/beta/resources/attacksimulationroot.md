@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRoot resource type"
-description: "Provides tenants capability to launch a realistic phishing attacks and learn from it."
+description: "Provides the ability to launch a realistic phishing attack and allows organization to learn from it."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides tenants capability to launch a realistic phishing attacks and learn from it.
+Provides the ability to launch a realistic phishing attack and allows organization to learn from it.
 This is an abstract type.
 
 ## Methods
