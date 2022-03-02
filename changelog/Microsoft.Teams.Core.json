@@ -3060,7 +3060,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Added support for recovering a deleted message in channel [POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Description": "Added support for undelete a message in channel [POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
           "Target": "chatMessage"
         },
         {
@@ -3076,7 +3076,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Added support for recpvering a deleted message in chat [POST /users/{user-id}/chats/{chat-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
+          "Description": "Added support for undelete a message in chat [POST /users/{user-id}/chats/{chat-id}/messages/{message-id}/undoSoftDelete](https://docs.microsoft.com/en-us/graph/api/chatmessage-delete?view=graph-rest-beta) for a user in delegated context.",
           "Target": "chatMessage"
         }
       ],

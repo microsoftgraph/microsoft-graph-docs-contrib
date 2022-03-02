@@ -1,7 +1,7 @@
 ---
 title: "Delete chatMessage in a channel or chat"
 description: "Delete a single message (without its replies) in a channel or a chat."
-author: "SumitGupta"
+author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -54,14 +54,17 @@ POST /users/{user-id}/chats/{chat-id}/messages/{message-id}/softDelete
 ```
 
 ## Optional query parameters
+
 This method does not supports or needs the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -71,9 +74,10 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Example 1: Delete a message in a chat
-#### Request
-The following is an example of the request.
 
+#### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,34 +87,11 @@ The following is an example of the request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/users/12730000-201d-4f95-8083-1b7f99b3edeb/chats/19%3Ameeting_NzFkYzVhZDgtMjM0ZCrbrnbtrntU5LWFmZWUtYmFhMjBjYzNmNDA3%40thread.v2/messages/1644600000013/softDelete
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
-[!INCLUDEscv c dxf';.[';lzx po] [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 #### Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 <!-- {
@@ -121,9 +102,10 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Delete a message in a channel
-#### Request
-The following is an example of the request.
 
+#### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,34 +115,10 @@ The following is an example of the request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/c7350b61-0000-4d6e-8745-d9315e7a7c7a/channels/19%3Adfvebr546c27dc24a068902098e09188c11%40thread.tacv2/messages/1644219111164/softDelete
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
-[!INCLUDEscv c dxf';.[';lzx po] [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 #### Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 <!-- {
@@ -170,11 +128,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 HTTP/1.1 204 No Content
 ```
 
+### Example 3: Undelete a message in a chat
 
-### Example 3: Undo Soft-Deleted message in a chat
 #### Request
-The following is an example of the request.
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -184,34 +142,10 @@ The following is an example of the request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/users/12730000-201d-4f95-8083-1b7f99b3edeb/chats/19%3Ameeting_NzFkYzVhZDgtMjM0ZCrbrnbtrntU5LWFmZWUtYmFhMjBjYzNmNDA3%40thread.v2/messages/1644600000013/undoSoftDelete
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
-[!INCLUDEscv c dxf';.[';lzx po] [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 #### Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 <!-- {
@@ -221,10 +155,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Undo Soft-Deleted a message in a channel
-#### Request
-The following is an example of the request.
+### Example 4: Undelete a message in a channel
 
+#### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -234,34 +169,10 @@ The following is an example of the request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/c7350b61-0000-4d6e-8745-d9315e7a7c7a/channels/19%3Adfvebr546c27dc24a068902098e09188c11%40thread.tacv2/messages/1644219111164/undoSoftDelete
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-chatmessagechannel-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagechannel-1-javascript-snippets.md)]
-[!INCLUDEscv c dxf';.[';lzx po] [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagechannel-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessagechannel-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagechannel-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
 #### Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 <!-- {

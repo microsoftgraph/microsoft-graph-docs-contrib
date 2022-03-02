@@ -6624,8 +6624,6 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
-        - name: Delete message
-          href: api/chatmessage-delete.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -6674,8 +6672,6 @@ items:
           href: api/chatmessage-post-replies.md
         - name: Update message
           href: api/chatmessage-update.md
-        - name: Delete message
-          href: api/chatmessage-delete.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
         - name: Get messages across all channels
