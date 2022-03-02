@@ -27,11 +27,11 @@ To complete this tutorial, you need the following resources and privileges:
 To consent to the required permissions in Graph Explorer:
 1. Select the horizontal ellipses icon to the right of the user account details, and then choose **Select permissions**.
 
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Select Microsoft Graph permissions." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Select Microsoft Graph permissions." border="true":::
 
 2. Scroll through the list of permissions to **AccessReview (3)**, expand and then select `AccessReview.ReadWrite.All`. Select **Consent**, and then select **Accept** to accept the consent of the permissions.
 
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consent to Microsoft Graph permissions." border="true":::
 
 >[!NOTE]
 >The response objects shown in this tutorial might be shortened for readability.
@@ -56,9 +56,9 @@ In the following request, replace the `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` wit
 
 <!-- {
   "blockType": "request",
-  "name": "tutorial-accessreviewsroleassignments-create"
+  "name": "tutorial-accessreviews-priviledroles-create"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
@@ -117,6 +117,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -211,7 +216,11 @@ Each access review instance represents *each recurrence with each unique resourc
 
 In the following request, replace `57457d7c-af59-470c-ae71-aa72c657fe0f` with the value of the access review that you created in Step 1.
 
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-getinstances"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances
 ```
 
@@ -219,6 +228,11 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 In this response, the instance object shows the end date as three days after the start date; this period was defined in Step 1 in the **instanceDurationInDays** property of the **accessReviewScheduleDefinition** object. *Only one instance is returned representing the first recurrence of only one resource under review.*
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -283,8 +297,11 @@ In the following request, replace the following values:
 + `57457d7c-af59-470c-ae71-aa72c657fe0f` with the value of the access review that you created in Step 1.
 + `ad0dd148-5d16-4cfd-86e9-ab502f819aaf` with the value of the access review instance you'd like to retrieve decisions for.
 
-
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-getnodecisions"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions
 ```
 
@@ -296,6 +313,11 @@ The following response shows two decision items each corresponding to a decision
 + The `NotReviewed` value of the **decision** property indicates that the reviewers haven't reviewed and posted their decisions.
 + No recommendations are available because recommendations weren't enabled in the **accessReviewScheduleDefinition** in Step 1.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "collection(microsoft.graph.accessReviewInstanceDecisionItem)"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -400,7 +422,11 @@ In the following requests, replace the following values:
 
 In the following request, you approve access for the IT Helpdesk group.
 
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-decisionsforgroup"
+}-->
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions/62fd1c5b-04b8-4703-9fd7-dce6232c3775
 Content-type: application/json
 
@@ -411,7 +437,10 @@ Content-type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```
 HTTP/1.1 204 No Content
 ```
@@ -422,7 +451,11 @@ HTTP/1.1 204 No Content
 
 In the following request, you deny access for Aline Dupuy.
 
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-decisionsforuser"
+}-->
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions/4d79fbf6-36e6-430b-ba0a-2a727a480303
 Content-type: application/json
 
@@ -434,6 +467,10 @@ Content-type: application/json
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```
 HTTP/1.1 204 No Content
 ```
@@ -457,13 +494,19 @@ In this tutorial, you won't stop the instance manually, but you'll let it end au
 As an admin, after the **status** of the access review instance is set to `Completed`, you can apply the decisions.
 
 ### Request
-
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-applydecisions"
+}-->
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/applyDecisions
 ```
 
 ### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```
 HTTP/1.1 204 No Content
 ```
@@ -477,8 +520,11 @@ After the decisions have been applied, the **status** of the access review insta
 Contoso's auditors are reviewing of all decisions to grant or deny access to privileged roles in the organization. You'll retrieve access review decision logs for all access reviews scoped to privileged roles. In this example, you'll retrieve decision logs for the **accessReviewScheduleDefinition** you created in Step 1.
 
 ### Request
-
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-getdecisions"
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/ad0dd148-5d16-4cfd-86e9-ab502f819aaf/decisions
 ```
 
@@ -488,6 +534,11 @@ The following response object is different from the response object you received
 + The access review **decision** for IT Helpdesk is `Approve` while for Aline is `Deny`.
 + The **reviewedBy** object contains your basic details as the reviewer.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "collection(microsoft.graph.accessReviewInstanceDecisionItem)"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -708,16 +759,21 @@ The downloadUri property contains a link to download the history report in an Ex
 Delete the **accessReviewScheduleDefinition** object that you created for this tutorial. Because the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, decisions.
 
 ### Request
-
-```http
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-priviegedroles-deleteaccessreview"
+}-->
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 ### Response
-
-```
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
 HTTP/1.1 204 No Content
-Content-type: text/plain
 ```
 
 ## Conclusion
