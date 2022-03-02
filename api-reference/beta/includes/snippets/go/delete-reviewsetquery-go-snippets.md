@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Delete(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Delete(nil)
 
 
 ```

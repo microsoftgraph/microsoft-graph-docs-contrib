@@ -30,4 +30,5 @@ The following APIs are currently protected:
 >[Send message](/graph/api/channel-post-messages) is not a protected API.
 
 To request access to these protected APIs, complete the following [request form](https://aka.ms/teamsgraph/requestaccess). We review access requests every Wednesday and deploy approvals every Friday, 
-except during major holiday weeks in the U.S. Submissions during those weeks will be processed the following non-holiday week.
+except during major holiday weeks in the U.S. Submissions during those weeks will be processed the following non-holiday week. To verify whether your request has been approved, test your application access on the next applicable Monday. If we have additional questions about the request, we will contact the email specified in the form. 
+

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 secureScoreControlProfileId := "secureScoreControlProfile-id"
-result, err := graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Get(options)
+result, err := graphClient.Security().SecureScoreControlProfilesById(&secureScoreControlProfileId).Get(nil)
 
 
 ```

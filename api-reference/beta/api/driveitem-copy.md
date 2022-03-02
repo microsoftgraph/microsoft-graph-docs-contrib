@@ -2,7 +2,7 @@
 author: JeremyKelley
 description: "Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name."
 ms.date: 09/10/2017
-title: driveItem: copy
+title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType

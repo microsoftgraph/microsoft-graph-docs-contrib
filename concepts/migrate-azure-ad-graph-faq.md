@@ -117,7 +117,13 @@ First, confirm the full list of apps owned by your tenant or third-party applica
 
 ## Can I request for an exception if I'm unable to meet the June 30, 2022 migration deadline?  
 
-There are no exceptions to this deprecation. Your apps will no longer receive responses from the Azure AD Graph endpoint after June 30, 2022. 
+There are no exceptions to this deprecation. Your apps will no longer receive responses from the Azure AD Graph endpoint after June 30, 2022.
+
+## My organization runs Azure Stack Hub. What actions should I take?
+
+If your organization runs Azure Stack Hub, the most important action is to follow the [Azure Stack Hub servicing policy](/azure-stack/operator/azure-stack-servicing-policy).
+
+If necessary, Azure Stack Hub will continue using Azure AD Graph beyond June 30, 2022, to ensure all systems migrate to using Microsoft Graph. To migrate, customers will be notified through the Azure Stack Hub admin portal to update their home and guest tenant directories. The migration to Microsoft Graph will be managed by the integrated system update experience.
 
 ## I need to add new Azure AD Graph permissions to my app, but I can't select Azure AD Graph as a required permission for my app registration. How can I add the Azure AD Graph permissions?
 
@@ -127,8 +133,10 @@ If you've identified a gap where Microsoft Graph doesn't support a feature avail
 
 If you still need to configure Azure AD Graph permissions for your applications, use one of the following workarounds.
 
++ Use the Azure portal to find the APIs your organization uses
++ Update the application manifest on the Azure portal
 + Use the [application](/graph/api/resources/application) API in Microsoft Graph to update the [requiredResourceAccess](/graph/api/resources/requiredresourceaccess) object
-+ Use the [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell
++ Use the [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK
 
 For examples using the listed workarounds, see [Use Microsoft Graph to configure required Azure AD Graph permissions for an app registration](migrate-azure-ad-graph-configure-permissions.md)
 

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 siteId := "site-id"
 permissionId := "permission-id"
-result, err := graphClient.SitesById(&siteId).PermissionsById(&permissionId).Get(options)
+result, err := graphClient.SitesById(&siteId).PermissionsById(&permissionId).Get(nil)
 
 
 ```

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create schema
 Namespace: microsoft.graph.externalConnectors
 
-
-
 Create a new [schema](../resources/externalconnectors-schema.md) object.
 
 ## Permissions
@@ -34,7 +32,7 @@ POST /external/connections/{id}/schema
 ```
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
-When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property. The `properties` object must contain at least one property, up to a maximum of 64.
+When you register a custom item schema, the **schema** object **must** have the **baseType** property set to `microsoft.graph.externalItem` and **must** contain the **properties** property. The **properties** object **must** contain at least one property, up to a maximum of 128.
 
 ## Response
 

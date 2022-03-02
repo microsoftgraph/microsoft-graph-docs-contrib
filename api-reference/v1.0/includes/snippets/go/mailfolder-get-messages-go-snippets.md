@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Get(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Get(nil)
 
 
 ```

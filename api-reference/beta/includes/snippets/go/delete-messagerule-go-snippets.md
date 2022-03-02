@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 mailFolderId := "mailFolder-id"
 messageRuleId := "messageRule-id"
-graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Delete(options)
+graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Delete(nil)
 
 
 ```

@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The ChromebookTenant's Id|
 |ownerUserPrincipalName|String|The ChromebookTenant's OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. Possible values are: `unknown`, `inprogress`, `onboarded`, `failed`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. Possible values are: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|The ChromebookTenant's LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|The ChromebookTenant's LastDirectorySyncDateTime|
 
@@ -92,6 +92,7 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
+
 
 
 

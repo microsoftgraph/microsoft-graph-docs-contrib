@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Unarchive().Post(options)
+graphClient.TeamsById(&teamId).Unarchive().Post(nil)
 
 
 ```

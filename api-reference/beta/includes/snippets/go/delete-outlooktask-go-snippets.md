@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 outlookTaskId := "outlookTask-id"
-graphClient.Me().Outlook().TasksById(&outlookTaskId).Delete(options)
+graphClient.Me().Outlook().TasksById(&outlookTaskId).Delete(nil)
 
 
 ```

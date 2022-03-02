@@ -25,7 +25,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive. |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 |delta|[directoryObject](directoryObject.md) collection| Get incremental changes for directory objects, for example, [users](../api/user-delta.md), [groups](../api/group-delta.md), [applications](../api/application-delta.md), and [service principals](../api/serviceprincipal-delta.md). Each derived type supports filtering by the **id**. For more information on delta queries, see the [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).|
 
 ## Properties
@@ -36,7 +36,7 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 ## Relationships
 
-None
+None.
 
 
 ## JSON representation
@@ -68,7 +68,6 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

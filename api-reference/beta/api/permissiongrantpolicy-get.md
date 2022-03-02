@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-permissiongrantpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +125,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": false
+            "clientApplicationsFromVerifiedPublisherOnly": false,
+            "certifiedClientApplicationsOnly": false
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -132,7 +137,8 @@ Content-type: application/json
             "clientApplicationIds": [ "all" ],
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
-            "clientApplicationsFromVerifiedPublisherOnly": true
+            "clientApplicationsFromVerifiedPublisherOnly": true,
+            "certifiedClientApplicationsOnly": false
         }
     ],
     "excludes": []

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
-graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Delete(options)
+graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Delete(nil)
 
 
 ```

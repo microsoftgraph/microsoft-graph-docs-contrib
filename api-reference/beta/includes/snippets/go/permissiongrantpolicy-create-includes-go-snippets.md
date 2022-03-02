@@ -10,8 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPermissionGrantConditionSet()
 permissionType := "delegated"
 requestBody.SetPermissionType(&permissionType)
-clientApplicationsFromVerifiedPublisherOnly := true
-requestBody.SetClientApplicationsFromVerifiedPublisherOnly(&clientApplicationsFromVerifiedPublisherOnly)
+certifiedClientApplicationsOnly := true
+requestBody.SetCertifiedClientApplicationsOnly(&certifiedClientApplicationsOnly)
 options := &msgraphsdk.IncludesRequestBuilderPostOptions{
 	Body: requestBody,
 }

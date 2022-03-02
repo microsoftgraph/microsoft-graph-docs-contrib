@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Delete(options)
+graphClient.Communications().CallsById(&callId).Delete(nil)
 
 
 ```

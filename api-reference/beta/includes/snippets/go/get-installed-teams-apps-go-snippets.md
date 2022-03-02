@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Get(options)
+result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Get(nil)
 
 
 ```

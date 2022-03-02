@@ -58,7 +58,7 @@ The following is an example of a request to delete the `fr-FR` localization obje
   "name": "delete_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # [C#](#tab/csharp)

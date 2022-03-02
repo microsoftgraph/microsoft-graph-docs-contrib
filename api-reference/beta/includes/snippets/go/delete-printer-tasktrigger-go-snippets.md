@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 printerId := "printer-id"
 printTaskTriggerId := "printTaskTrigger-id"
-graphClient.Print().PrintersById(&printerId).TaskTriggersById(&printTaskTriggerId).Delete(options)
+graphClient.Print().PrintersById(&printerId).TaskTriggersById(&printTaskTriggerId).Delete(nil)
 
 
 ```

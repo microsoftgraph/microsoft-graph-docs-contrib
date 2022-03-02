@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 featureRolloutPolicyId := "featureRolloutPolicy-id"
-result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Get(options)
+result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Get(nil)
 
 
 ```

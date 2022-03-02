@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 namedLocationId := "namedLocation-id"
-result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Get(options)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Get(nil)
 
 
 ```

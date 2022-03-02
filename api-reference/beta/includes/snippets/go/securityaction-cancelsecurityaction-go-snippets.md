@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 securityActionId := "securityAction-id"
-graphClient.Security().SecurityActionsById(&securityActionId).CancelSecurityAction().Post(options)
+graphClient.Security().SecurityActionsById(&securityActionId).CancelSecurityAction().Post(nil)
 
 
 ```

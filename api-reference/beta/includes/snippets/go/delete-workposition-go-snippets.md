@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 workPositionId := "workPosition-id"
-graphClient.Me().Profile().PositionsById(&workPositionId).Delete(options)
+graphClient.Me().Profile().PositionsById(&workPositionId).Delete(nil)
 
 
 ```

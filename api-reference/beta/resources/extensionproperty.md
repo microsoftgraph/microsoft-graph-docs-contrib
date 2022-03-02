@@ -36,7 +36,7 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 |:-------------|:------------|:------------|
 |appDisplayName|String| Display name of the application object on which this extension property is defined. Read-only. |
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
-|isSyncedFromOnPremises|Boolean| Indicates if this extension property was sycned from onpremises directory using Azure AD Connect. Read-only. |
+|isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only. |
 |name|String| Name of the extension property. Not nullable. |
 |targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 

@@ -1,5 +1,5 @@
 ---
-title: "Get a group setting"
+title: "Get groupSetting"
 description: "Retrieve the properties of a specific of group setting object."
 author: "Jordanndahl"
 ms.localizationpriority: medium
@@ -7,16 +7,18 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Get a group setting
+# Get groupSetting
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific of group setting object.
+Retrieve the properties of a specific group setting object. The setting can be a tenant-level or group-specific setting.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+
+### List tenant-wide settings
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -24,19 +26,33 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### List group-specific settings
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 
-Get a specific tenant-wide or group setting.
+Get a tenant-wide setting.
 
 ```http
-GET /groupSettings/{id}
-GET /groups/{id}/settings/{id}
+GET /groupSettings/{groupSettingId}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-> Note: $filter is not supported.
+<!-- { "blockType": "ignored" } -->
+Get a group-specific setting.
+```http
+GET /groups/{groupId}/settings/{groupSettingId}
+```
+
+## Optional query parameters
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name | Description |
@@ -51,17 +67,20 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+
+### Example 1: Get a group setting for a specific group
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_groupsetting"
+  "name": "get_groupsettings"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groupSettings/{id}
+GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings/a06fa228-3042-4662-bd09-33e298da1afe
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
@@ -85,9 +104,8 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ---
 
-##### Response
+#### Response
 
-Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,18 +116,107 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ],
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "a06fa228-3042-4662-bd09-33e298da1afe",
+    "displayName": "Group.Unified.Guest",
+    "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
 }
 ```
 
+### Example 2: Get the group settings for all Microsoft 365 groups
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_groupsettings_tenantwide"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.groupSetting"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "84af2ca5-c274-41bf-86e4-6e374ec4def6",
+    "displayName": "Group.Unified",
+    "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        },
+        {
+            "name": "CustomBlockedWordsList",
+            "value": ""
+        },
+        {
+            "name": "EnableMSStandardBlockedWords",
+            "value": "true"
+        },
+        {
+            "name": "ClassificationDescriptions",
+            "value": ""
+        },
+        {
+            "name": "DefaultClassification",
+            "value": ""
+        },
+        {
+            "name": "PrefixSuffixNamingRequirement",
+            "value": "[Contoso-][GroupName]"
+        },
+        {
+            "name": "AllowGuestsToBeGroupOwner",
+            "value": "false"
+        },
+        {
+            "name": "AllowGuestsToAccessGroups",
+            "value": "true"
+        },
+        {
+            "name": "GuestUsageGuidelinesUrl",
+            "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+            "name": "GroupCreationAllowedGroupId",
+            "value": ""
+        },
+        {
+            "name": "AllowToAddGuests",
+            "value": "true"
+        },
+        {
+            "name": "UsageGuidelinesUrl",
+            "value": ""
+        },
+        {
+            "name": "ClassificationList",
+            "value": ""
+        },
+        {
+            "name": "EnableGroupCreation",
+            "value": "true"
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

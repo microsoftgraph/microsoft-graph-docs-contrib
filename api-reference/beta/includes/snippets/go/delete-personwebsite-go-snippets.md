@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 personWebsiteId := "personWebsite-id"
-graphClient.Me().Profile().WebsitesById(&personWebsiteId).Delete(options)
+graphClient.Me().Profile().WebsitesById(&personWebsiteId).Delete(nil)
 
 
 ```

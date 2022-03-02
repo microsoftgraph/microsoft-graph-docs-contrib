@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).Resources().Get(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).Resources().Get(nil)
 
 
 ```

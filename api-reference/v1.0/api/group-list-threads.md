@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-threads-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-threads-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

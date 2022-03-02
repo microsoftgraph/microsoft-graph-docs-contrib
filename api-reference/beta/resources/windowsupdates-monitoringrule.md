@@ -1,7 +1,7 @@
 ---
 title: "monitoringRule resource type"
 description: "Rule defining a signal and threshold to monitor, and the action to perform when met."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9636
+Content-Length: 10021
 
 {
   "value": [
@@ -117,6 +117,9 @@ Content-Length: 9636
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "crossProfilePoliciesAllowCopyPaste": true,
+      "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+      "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
       "microsoftLauncherConfigurationEnabled": true,
       "microsoftLauncherCustomWallpaperEnabled": true,
       "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -234,9 +237,7 @@ Content-Length: 9636
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
-      "safeBootBlocked": true,
       "screenCaptureBlocked": true,
-      "securityAllowDebuggingFeatures": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
@@ -246,6 +247,15 @@ Content-Length: 9636
       "storageAllowUsb": true,
       "storageBlockExternalMedia": true,
       "storageBlockUsbFileTransfer": true,
+      "systemUpdateFreezePeriods": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+          "startMonth": 10,
+          "startDay": 8,
+          "endMonth": 8,
+          "endDay": 6
+        }
+      ],
       "systemUpdateWindowStartMinutesAfterMidnight": 11,
       "systemUpdateWindowEndMinutesAfterMidnight": 9,
       "systemUpdateInstallType": "postpone",
@@ -285,6 +295,7 @@ Content-Length: 9636
   ]
 }
 ```
+
 
 
 

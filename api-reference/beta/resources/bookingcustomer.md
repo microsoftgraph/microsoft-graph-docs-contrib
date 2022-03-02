@@ -1,6 +1,6 @@
 ---
 title: "bookingCustomer resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents a customer of a bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -29,10 +29,10 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
 |phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships

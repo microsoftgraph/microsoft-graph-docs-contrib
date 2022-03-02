@@ -16,7 +16,7 @@ schedulingPolicy.sendConfirmationsToOwner = true;
 schedulingPolicy.allowStaffSelection = true;
 bookingBusiness.schedulingPolicy = schedulingPolicy;
 
-graphClient.bookingBusinesses("fabrikam@M365B489948.onmicrosoft.com")
+graphClient.bookingBusinesses("fabrikam@contoso.onmicrosoft.com")
 	.buildRequest()
 	.patch(bookingBusiness);
 
