@@ -12842,6 +12842,8 @@ items:
             items:
             - name: Azure resources
               href: resources/privilegedidentitymanagement-resources.md
+            - name: Migrate to new ARM APIs
+              href: resources/privilegedidentitymanagement-migrate-azureresources.md
             - name: Managed resources
               href: resources/governanceresource.md
               items:
