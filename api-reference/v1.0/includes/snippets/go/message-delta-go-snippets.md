@@ -10,12 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.MessageRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 	H: headers,
 }
 mailFolderId := "mailFolder-id"
-messageId := "message-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessagesById(&messageId).Get(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()().Get(options)
 
 
 ```

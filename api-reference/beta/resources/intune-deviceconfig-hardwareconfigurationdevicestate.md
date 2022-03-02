@@ -31,7 +31,7 @@ Contains properties for device run state of the hardware configuration
 |:---|:---|:---|
 |id|String|Key of the hardware configuration script device state entity. This property is read-only.|
 |deviceName|String|The name of the device|
-|osVersion|String|Operating system version of the device.|
+|osVersion|String|Operating system version of the device (E.g. 10.0.19042.1165, 10.0.19042.1288 etc.)|
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|

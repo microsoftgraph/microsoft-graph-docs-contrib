@@ -1,6 +1,6 @@
 ---
 title: "Get servicePrincipal"
-description: "Retrieve the properties and relationships of serviceprincipal object."
+description: "Retrieve the properties and relationships of servicePrincipal object."
 author: "sureshja"
 ms.localizationpriority: high
 ms.prod: "applications"
@@ -22,6 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
+> [!NOTE]
+> A service principal can retrieve its own application and service principal details without being granted any application permissions.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,7 +32,7 @@ GET /servicePrincipals/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
 For example, `$select=id,appId,keyCredentials`.
@@ -81,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -113,6 +120,11 @@ Content-type: application/json
   "endpoints": [],
   "homepage": null,
   "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+  "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
   "info": {
     "termsOfServiceUrl": null,
     "supportUrl": null,

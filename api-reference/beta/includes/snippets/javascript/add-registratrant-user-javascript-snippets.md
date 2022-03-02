@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-const meetingRegistrant = {
+const meetingRegistrantBase = {
+  '@odata.type': '#microsoft.graph.meetingRegistrant',
   firstName: 'Frederick',
   lastName: 'Cormier',
   email: 'frederick.cormier@contoso.com',
@@ -28,6 +29,6 @@ const meetingRegistrant = {
 
 await client.api('/users/16664f75-11dc-4870-bec6-38c1aaa81431/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/registrants')
 	.version('beta')
-	.post(meetingRegistrant);
+	.post(meetingRegistrantBase);
 
 ```

@@ -14,6 +14,11 @@ requestBody.SetContacts( []TenantContactInformation {
 	msgraphsdk.NewTenantContactInformation(),
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
+		"name": "String",
+		"title": "String",
+		"email": "String",
+		"phone": "String",
+		"notes": "String",
 	}
 }
 website := "String"

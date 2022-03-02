@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/applications/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,6 +121,11 @@ Content-type: application/json
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {
