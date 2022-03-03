@@ -67,7 +67,7 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq 
 
 ## Query parameters
 
-This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. The `$expand` query parameter is also supported on **principal**. For general information, see [OData query parameters](/graph/query-parameters).
+This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId`, `principalId` or `appScopeId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. The `$expand` query parameter is also supported on **principal**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -326,6 +326,55 @@ Content-type: application/json
     ]
 }
 ```
+
+### Example 3: Request using $filter for role assignments on an access package catalog and expand principal
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments",
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }    
+        }
+    ]
+}
+```
+
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
