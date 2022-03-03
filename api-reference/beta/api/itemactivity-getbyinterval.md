@@ -4,7 +4,7 @@ description: "Get itemActivityStats for the activities that took place under thi
 title: Get item activity stats by interval
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "files"
 ---
 # Get item activity stats by interval
 
