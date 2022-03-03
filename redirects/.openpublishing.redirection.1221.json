@@ -239,6 +239,26 @@
       "source_path_from_root": "/api-reference/beta/api/administrativeunit-list.md",
       "redirect_url": "/graph/api/directory-list-administrativeunits?view=graph-rest-beta",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/directorysetting-post-settings.md",
+      "redirect_url": "/graph/api/group-post-settings?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/directorysetting-list.md",
+      "redirect_url": "/graph/api/group-list-settings?view=graph-rest-beta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/groupsetting-post-groupsettings.md",
+      "redirect_url": "/graph/api/group-post-settings?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/groupsetting-list.md",
+      "redirect_url": "/graph/api/group-list-settings?view=graph-rest-1.0",
+      "redirect_document_id": true
     }
   ]
 }

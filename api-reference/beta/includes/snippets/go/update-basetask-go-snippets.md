@@ -8,11 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewBaseTask()
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-body.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.itemBody",
-}
 bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
 completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -38,11 +33,6 @@ displayName := "String"
 requestBody.SetDisplayName(&displayName)
 status := "String"
 requestBody.SetStatus(&status)
-personalProperties := msgraphsdk.NewPersonalTaskProperties()
-requestBody.SetPersonalProperties(personalProperties)
-personalProperties.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.personalTaskProperties",
-}
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.baseTask",
 }
