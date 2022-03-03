@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/09
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreement-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
