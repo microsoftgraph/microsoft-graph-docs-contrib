@@ -339,7 +339,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveReports|[directoryObject](directoryobject.md) collection | The transitive reports for a user. Read-only.|
-|usageRight|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
+|usageRights|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
 ## JSON representation
 
