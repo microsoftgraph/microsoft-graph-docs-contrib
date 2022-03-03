@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd2
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.extensionProperty"
+  "@odata.type": "microsoft.graph.extensionProperty"
 }
 -->
 ``` http
