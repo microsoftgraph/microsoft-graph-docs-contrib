@@ -2,6 +2,40 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcLaunchInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcLaunchInfo?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcLaunchInfo"
+                },
+                {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getCloudPcLaunchInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getCloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "getCloudPcLaunchInfo"
+                },
+                {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "listMyCloudPCs",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [listMyCloudPCs](https://docs.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "getCloudPcLaunchInfo"
+                }
+            ],
+            "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-03-02T14:13:04.317411Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {"Id": "b50951e4-5191-11ec-a817-519c224fca78",
                     "ApiChange": "Relationship",
                     "ChangedApiName": "organizationSettings",
