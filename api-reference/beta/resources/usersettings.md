@@ -18,7 +18,7 @@ Settings that represent a user’s preferences for the following:
 - [Item insights](../resources/officegraphinsights.md)
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)
-- [Suggesting to merge duplicate contacts](../resources/contactmergesuggestions.md).
+- [Suggestions to merge duplicate contacts](../resources/contactmergesuggestions.md).
 
 Manage Delve accessibility:
   - Checking whether a user and the user's organization have access to Office Delve.
