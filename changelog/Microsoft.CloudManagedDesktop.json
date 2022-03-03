@@ -16,7 +16,7 @@
                     "ChangedApiName": "getCloudPcLaunchInfo",
                     "ChangeType": "Addition",
                     "Description": "Added the [getCloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
-                    "Target": "getCloudPcLaunchInfo"
+                    "Target": "cloudPC"
                 },
                 {
                     "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
@@ -24,7 +24,7 @@
                     "ChangedApiName": "listMyCloudPCs",
                     "ChangeType": "Addition",
                     "Description": "Added the [listMyCloudPCs](https://docs.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
-                    "Target": "getCloudPcLaunchInfo"
+                    "Target": "cloudPC"
                 }
             ],
             "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
