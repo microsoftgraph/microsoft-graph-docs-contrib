@@ -100,28 +100,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
-      "id":"Fido2",
-      "state":"enabled",
-      "isSelfServiceRegistrationAllowed":true,
-      "isAttestationEnforced":true,
-      "keyRestrictions":{
-         "isEnforced":false,
-         "enforcementType":"block",
-         "aaGuids":[
-            
-         ]
-      },
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

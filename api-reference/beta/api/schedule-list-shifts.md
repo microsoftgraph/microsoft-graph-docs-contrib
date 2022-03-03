@@ -33,7 +33,11 @@ GET /teams/{teamId}/schedule/shifts
 ```
 
 ## Optional query parameters
-This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
+
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+
+> [!NOTE]
+> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query will not work: `sharedShift/startDateTime ge 2019-05-09T00:00:00Z and sharedShift/startDateTime le 2019-05-09T23:59:59Z`.
 
 ## Request headers
 

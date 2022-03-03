@@ -19,9 +19,9 @@ Search requests run in the context of the signed-in user, identified using an [a
 
 ## Common use cases
 
-The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search, where you pass a [searchRequest](searchRequest.md) in the request body, defining the specifics of your search.
+The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search, where you pass a [searchRequest](searchrequest.md) in the request body, defining the specifics of your search.
 
-This section lists the common use cases of the **query** method, based on the properties and parameters you set in the **query** [searchRequest](searchRequest.md) body.
+This section lists the common use cases of the **query** method, based on the properties and parameters you set in the **query** [searchRequest](searchrequest.md) body.
 
 Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can otherwise obtain from a corresponding GET operation with the same permissions and access control.
 
@@ -143,9 +143,9 @@ See [refine search results](/graph/search-concept-aggregation) for examples that
 
 ## Request spelling correction
 
-Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md).
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchResponse](searchresponse.md).
 
-In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+In the [searchRequest](./searchrequest.md), specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. For details about the **queryAlterationOptions** property, see [searchAlterationOptions](./searchalterationoptions.md).
 
 For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
 
@@ -153,7 +153,7 @@ For examples that show how to use spelling corrections, see [Request spelling co
 
 The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
 
-To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
+To get the result template in the [searchResponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
 
 See [Use search display layout](/graph/search-concept-display-layout) for examples.
 

@@ -13,6 +13,7 @@ $params = @{
 	Proficiency = "advancedProfessional"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserProfileSkill -UserId $userId -SkillProficiencyId $skillProficiencyId -BodyParameter $params
 
 ```

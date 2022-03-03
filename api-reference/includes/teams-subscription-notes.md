@@ -16,8 +16,10 @@ ms.localizationpriority: medium
 You must use the `Prefer: include-unknown-enum-members` request header to get the following values in **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` for `/teams/{id}/channels/{id}/messages` and `/chats/{id}/messages` resource.
 
 > [!NOTE]
->`/teams/getAllMessages` and `/chats/getAllMessages` has [licensing and payment requirements](/graph/teams-licenses).
-> `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` query parameters.
+>`/teams/getAllMessages`, `/chats/getAllMessages`, `/me/chats/getAllMessages` and `/users/{id}/chats/getAllMessages` 
+> have [licensing and payment requirements](/graph/teams-licenses).
+> `/teams/getAllMessages` and `/chats/getAllMessages` support both `model=A` and `model=B` query parameters,
+> `/me/chats/getAllMessages` and `/users/{id}/chats/getAllMessages` support only `model=B`.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ### conversationMember

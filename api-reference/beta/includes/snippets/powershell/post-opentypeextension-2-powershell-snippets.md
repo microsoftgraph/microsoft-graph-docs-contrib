@@ -14,6 +14,7 @@ $params = @{
 	ExpirationDate = "2015-12-03T10:00:00.000Z"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

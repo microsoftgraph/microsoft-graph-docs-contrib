@@ -18,6 +18,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserOutlookTaskFolderTask -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId -BodyParameter $params
 
 ```
