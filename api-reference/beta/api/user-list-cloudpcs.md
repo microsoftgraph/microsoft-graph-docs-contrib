@@ -1,7 +1,7 @@
 ---
 title: "List my cloudPCs"
 description: "List the cloudPC objects of the calling user."
-author: "AndrewKuSZ"
+author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -62,7 +62,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

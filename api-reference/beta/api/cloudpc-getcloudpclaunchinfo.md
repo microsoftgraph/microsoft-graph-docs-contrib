@@ -1,7 +1,7 @@
 ---
 title: "Get my Cloud PC launch info"
 description: "Get the cloudPCLaunchInfo for a calling user's Cloud PC"
-author: "AndrewKuSZ"
+author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [cloudPcLaunchInfo](../resources/intune-cloudpclaunchinfo.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md) in the response body.
 
 ## Examples
 
@@ -59,7 +59,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInf
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

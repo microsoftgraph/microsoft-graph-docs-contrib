@@ -1,7 +1,7 @@
 ---
 title: "cloudPcLaunchInfo resource type"
 description: "Represents the Cloud PC launch info"
-author: "AndrewKuSZ"
+author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
