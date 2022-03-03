@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents _settings_ to determine access from Microsoft applications to Microsoft 365 data belonging to users in an organization. For example, given the proper authorization, whether only Microsoft 365 apps (such as Word and Excel) can access users' Microsoft 365 data, or whether other Microsoft apps (such as Windows), can access the data as well.
 
+Examples of Microsoft 365 data in an organization include Word, Excel, and PowerPoint documents, Outlook messages, and Teams meeting recordings, which the user in the Microsoft app has been properly authorized to access.
+
 ## Methods
 
 |Method|Return type|Description|
@@ -26,7 +28,7 @@ Represents _settings_ to determine access from Microsoft applications to Microso
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForAllMicrosoftApplications|Boolean|When set to 'true', all users in the organization are allowed to access M365 data using any Microsoft application (not restricted to Microsoft 365 applications only). This is the default. It is possible to disable this for only a subset of users, by use of the security AAD group identified by the GUID given in `disabledForGroup`. <br> When set to 'false', users in the organization are able to access M365 data using Microsoft 365 applications _only_.|
+|isEnabledForAllMicrosoftApplications|Boolean|When set to `true`, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access. The Microsoft app can be a Microsoft 365 app (e.g., Excel, Outlook) or non-Microsoft 365 app (e.g., Edge). The default is `true`. <br> It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the **disabledForGroup** property. <br> When set to `false`, users can access authorized Microsoft 365 data only in a Microsoft 365 app.|
 |disabledForGroup|String|The ID of security AAD group whose members will _not_ be allowed to access M365 data using Microsoft applications not part of Microsoft 365. <br> This is only applicable if the property above is set to true.|
 
 ## Relationships
