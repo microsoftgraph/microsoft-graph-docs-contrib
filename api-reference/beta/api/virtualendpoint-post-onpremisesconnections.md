@@ -141,6 +141,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "ac2ad805-167e-49ee-9bef-196c4ce7ffff",
+  "managedBy": "windows365",
   "displayName": "test-canary-02",
   "type": "hybridAzureADJoin",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
