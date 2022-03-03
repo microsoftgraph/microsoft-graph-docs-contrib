@@ -858,6 +858,8 @@ items:
               href: api/extensionproperty-get.md
             - name: Delete
               href: api/extensionproperty-delete.md
+            - name: Get available extension properties
+              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
