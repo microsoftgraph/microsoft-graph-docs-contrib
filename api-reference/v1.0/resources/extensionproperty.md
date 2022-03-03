@@ -20,13 +20,20 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 > It allows you to use Microsoft Graph to continue to manage extension properties added through Azure AD Graph (deprecated) or [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > For new custom extensions, we recommend that you use Microsoft Graph schema extensions for [adding custom data to resources](/graph/extensibility-overview).
 
+Inherits from [directoryObject](directoryobject.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Get extensionProperty](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Delete extensionProperty](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+
+> [!TIP]
+> 1. To set a value for the extension property to an instance of a resource that is specified in **targetObjects**, use the Update operation of the resource. For example, the [Update user](../api/user-update.md) API to set the value for a user.
+> 2. To remove the extension property and its value from an instance of a resource that is specified in **targetObjects**, set the value of the extension property to `null`.
 
 ## Properties
 
@@ -34,6 +41,7 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 |:-------------|:------------|:------------|
 |appDisplayName|String| Display name of the application object on which this extension property is defined. Read-only. |
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](directoryobject.md).|
 |isSyncedFromOnPremises|Boolean| Indicates if this extension property was synced from on-premises active directory using Azure AD Connect. Read-only. |
 |name|String| Name of the extension property. Not nullable. |
 |targetObjects|String collection| Following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
@@ -48,20 +56,24 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.extensionProperty",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.directoryObject",
+  "openType": true
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.extensionProperty",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
   "appDisplayName": "String",
-  "dataType": "String",
-  "isSyncedFromOnPremises": true,
   "name": "String",
-  "targetObjects": ["String"]
+  "dataType": "String",
+  "isSyncedFromOnPremises": "Boolean",
+  "targetObjects": [
+    "String"
+  ]
 }
 ```
 
