@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
   "id": "String",
   "principalDisplayName": "String",
   "principalId": "Guid",
-  "principalType": "String",  
+  "principalType": "String",
   "resourceDisplayName": "String",
   "resourceId": "Guid"
 }
