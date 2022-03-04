@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a656cb57-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2911b20-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "customSecurityAttributeDefinitions",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "directory"
         },
         {
-          "Id": "a6594d96-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2937e69-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "attributeSets",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "directory"
         },
         {
-          "Id": "a65bb1d0-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b295decc-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "inboundSharedUserProfiles",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "directory"
         },
         {
-          "Id": "a65e13f6-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2984505-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "outboundSharedUserProfiles",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "directory"
         },
         {
-          "Id": "a6743350-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2adb90d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "attributeSet",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "attributeSet"
         },
         {
-          "Id": "a67698a8-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2b018bb-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeDefinition",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "customSecurityAttributeDefinition"
         },
         {
-          "Id": "a678fa99-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2b27b6b-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "allowedValue",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "allowedValue"
         },
         {
-          "Id": "a67b5cc7-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2b4db9d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "customSecurityAttributes",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "device"
         },
         {
-          "Id": "a67dbc80-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2b73f69-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "isManagementRestricted",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "device"
         },
         {
-          "Id": "a6802229-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2bac1ef-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "createdDateTime",
           "ChangeType": "Addition",
@@ -83,7 +83,7 @@
           "Target": "device"
         },
         {
-          "Id": "a682813d-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2bd2617-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "privateEndpointConnection",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "privateEndpointConnection"
         },
         {
-          "Id": "a684e70d-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2bf8c0d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "privateLinkPolicy",
           "ChangeType": "Addition",
@@ -99,7 +99,7 @@
           "Target": "privateLinkPolicy"
         },
         {
-          "Id": "a689a978-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2c44ac0-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "squareDarkLogo",
           "ChangeType": "Addition",
@@ -107,7 +107,7 @@
           "Target": "organizationalBrandingProperties"
         },
         {
-          "Id": "a68c0d7f-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2c6aefc-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "squareDarkLogoRelativeUrl",
           "ChangeType": "Addition",
@@ -115,7 +115,7 @@
           "Target": "organizationalBrandingProperties"
         },
         {
-          "Id": "a68e6e8d-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2c91291-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "certifiedApplicationsOnly",
           "ChangeType": "Addition",
@@ -123,7 +123,7 @@
           "Target": "servicePrincipalCreationConditionSet"
         },
         {
-          "Id": "a690d246-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2cb72a3-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "certifiedClientApplicationsOnly",
           "ChangeType": "Addition",
@@ -131,7 +131,7 @@
           "Target": "permissionGrantConditionSet"
         },
         {
-          "Id": "a6933615-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2cddd84-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "privateLinkPolicies",
           "ChangeType": "Addition",
@@ -139,7 +139,7 @@
           "Target": "policyRoot"
         },
         {
-          "Id": "a6959509-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2d0391d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "multiTenantCollaborationPendingMemberState",
           "ChangeType": "Addition",
@@ -147,7 +147,7 @@
           "Target": "multiTenantCollaborationPendingMemberState"
         },
         {
-          "Id": "a69f1d78-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2d9ca5b-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "licenseMigrationInfo",
           "ChangeType": "Addition",
@@ -155,7 +155,7 @@
           "Target": "organization"
         },
         {
-          "Id": "a6a64ec1-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2e0eb7d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "isMemberManagementRestricted",
           "ChangeType": "Addition",
@@ -163,7 +163,7 @@
           "Target": "administrativeUnit"
         },
         {
-          "Id": "a6a8a91c-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2e34c54-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "membershipRule",
           "ChangeType": "Addition",
@@ -171,7 +171,7 @@
           "Target": "administrativeUnit"
         },
         {
-          "Id": "a6ab0b5c-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2e5ae5c-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "membershipType",
           "ChangeType": "Addition",
@@ -179,7 +179,7 @@
           "Target": "administrativeUnit"
         },
         {
-          "Id": "a6ad6f4e-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2e81001-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "membershipRuleProcessingState",
           "ChangeType": "Addition",
@@ -187,7 +187,7 @@
           "Target": "administrativeUnit"
         },
         {
-          "Id": "a6afce28-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2ea7560-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeValue",
           "ChangeType": "Addition",
@@ -195,7 +195,7 @@
           "Target": "customSecurityAttributeValue"
         },
         {
-          "Id": "a6b2a746-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2ecd500-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Relationship",
           "ChangedApiName": "domainNameReferences",
           "ChangeType": "Addition",
@@ -203,7 +203,7 @@
           "Target": "sharedEmailDomain"
         },
         {
-          "Id": "a6b50d8e-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2ef3791-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
           "ChangeType": "Addition",
@@ -211,7 +211,7 @@
           "Target": "defaultUserRolePermissions"
         },
         {
-          "Id": "a6b76e2d-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2f198f8-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "Status",
           "ChangeType": "Addition",
@@ -219,7 +219,7 @@
           "Target": "domainState"
         },
         {
-          "Id": "a6b9d236-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2f3fc6f-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "LastActionDateTime",
           "ChangeType": "Addition",
@@ -227,7 +227,7 @@
           "Target": "domainState"
         },
         {
-          "Id": "a6bc327e-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2f65dd7-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyOutboundSetting",
           "ChangeType": "Addition",
@@ -235,7 +235,7 @@
           "Target": "crossTenantAccessPolicyOutboundSetting"
         },
         {
-          "Id": "a6be940e-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2f8c100-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyInboundSetting",
           "ChangeType": "Addition",
@@ -243,7 +243,7 @@
           "Target": "crossTenantAccessPolicyInboundSetting"
         },
         {
-          "Id": "a6c0f7fe-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2fb23d3-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "inboundSharedUserProfile",
           "ChangeType": "Addition",
@@ -251,7 +251,7 @@
           "Target": "inboundSharedUserProfile"
         },
         {
-          "Id": "a6c359b9-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2fd85e2-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantReference",
           "ChangeType": "Addition",
@@ -259,7 +259,7 @@
           "Target": "tenantReference"
         },
         {
-          "Id": "a6c5bf37-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b2ffe7af-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "outboundSharedUserProfile",
           "ChangeType": "Addition",
@@ -267,7 +267,7 @@
           "Target": "outboundSharedUserProfile"
         },
         {
-          "Id": "a6c81d30-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3024b40-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "complexExtensionValue",
           "ChangeType": "Addition",
@@ -275,7 +275,7 @@
           "Target": "complexExtensionValue"
         },
         {
-          "Id": "a6ca8302-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b304ac69-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "passwordValidationInformation",
           "ChangeType": "Addition",
@@ -283,7 +283,7 @@
           "Target": "passwordValidationInformation"
         },
         {
-          "Id": "a6cce34a-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b30711d0-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "requestSignatureVerification",
           "ChangeType": "Addition",
@@ -291,7 +291,7 @@
           "Target": "requestSignatureVerification"
         },
         {
-          "Id": "a6cf4490-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b30971b4-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "validationResult",
           "ChangeType": "Addition",
@@ -299,7 +299,7 @@
           "Target": "validationResult"
         },
         {
-          "Id": "a6d1a7ec-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b30bd49f-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "unknown",
           "ChangeType": "Addition",
@@ -307,7 +307,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6d40e21-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b30e3634-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "callback",
           "ChangeType": "Addition",
@@ -315,7 +315,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6d66f05-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3109884-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "car",
           "ChangeType": "Addition",
@@ -323,7 +323,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6d8cfee-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b312fb23-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "primary",
           "ChangeType": "Addition",
@@ -331,7 +331,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6db30f7-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3155c59-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "telex",
           "ChangeType": "Addition",
@@ -339,7 +339,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6dd9639-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b317c1f0-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "ttyTdd",
           "ChangeType": "Addition",
@@ -347,7 +347,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6dff7dd-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b31a22dd-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "organizationMain",
           "ChangeType": "Addition",
@@ -355,7 +355,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6e26330-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b31c874c-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Enum type",
           "ChangedApiName": "weakAlgorithms",
           "ChangeType": "Addition",
@@ -363,7 +363,7 @@
           "Target": "weakAlgorithms"
         },
         {
-          "Id": "a6ebe2d9-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3260cf3-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
@@ -371,7 +371,7 @@
           "Target": "directoryObject"
         },
         {
-          "Id": "a6f0a9d6-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b32ad21c-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Resource",
           "ChangedApiName": "ComplexExtensionValue",
           "ChangeType": "Deletion",
@@ -379,7 +379,7 @@
           "Target": "ComplexExtensionValue"
         },
         {
-          "Id": "a6f310c3-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b32d3502-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "status",
           "ChangeType": "Deletion",
@@ -387,7 +387,7 @@
           "Target": "domainState"
         },
         {
-          "Id": "a6f56f12-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b32f9745-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Property",
           "ChangedApiName": "lastActionDateTime",
           "ChangeType": "Deletion",
@@ -395,7 +395,7 @@
           "Target": "domainState"
         },
         {
-          "Id": "a6fc9251-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b336c021-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "home",
           "ChangeType": "Deletion",
@@ -403,7 +403,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a6fef564-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b339217d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "business",
           "ChangeType": "Deletion",
@@ -411,7 +411,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a70159db-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b33b852d-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "mobile",
           "ChangeType": "Deletion",
@@ -419,7 +419,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a703bbcd-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b33de8d9-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "other",
           "ChangeType": "Deletion",
@@ -427,7 +427,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a7061cb5-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b340462c-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "assistant",
           "ChangeType": "Deletion",
@@ -435,7 +435,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a7087f37-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b342a9a9-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "homeFax",
           "ChangeType": "Deletion",
@@ -443,7 +443,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a70ae13f-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3450efb-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "businessFax",
           "ChangeType": "Deletion",
@@ -451,7 +451,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a70d41ed-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b3476fe4-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "otherFax",
           "ChangeType": "Deletion",
@@ -459,7 +459,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a70fa57b-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b349d47b-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "pager",
           "ChangeType": "Deletion",
@@ -467,7 +467,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a7120817-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b34c32df-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Member",
           "ChangedApiName": "radio",
           "ChangeType": "Deletion",
@@ -475,7 +475,7 @@
           "Target": "phoneType"
         },
         {
-          "Id": "a7147337-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "b34e9689-27e1-11ec-9ce8-b357a2761d24",
           "ApiChange": "Method",
           "ChangedApiName": "activateService",
           "ChangeType": "Deletion",
@@ -483,260 +483,256 @@
           "Target": "organization"
         }
       ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
+      "Id": "b28eb8c8-27e1-11ec-9ce8-b357a2761d24",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
+      "CreatedDateTime": "2021-10-08T02:44:45.846Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
     {
       "ChangeList": [
         {
-          "Id": "a6607659-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "isMultiValued",
+          "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
+          "ApiChange": "Member",
+          "ChangedApiName": "customPasswordAddition",
           "ChangeType": "Addition",
-          "Description": "Added the **isMultiValued** property to the [extensionProperty](https://docs.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-beta) resource.",
-          "Target": "extensionProperty"
+          "Description": "Added the `customPasswordAddition` member to the **appCredentialRestrictionType** enumeration. Use this new restriction for the [application authentication methods policy](https://docs.microsoft.com/en-us/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta) to restrict all new custom (non-Azure AD generated) password secrets on applications or service principals.",
+          "Target": "appCredentialRestrictionType"
         }
       ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
+      "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
+      "CreatedDateTime": "2022-03-01T00:00:00.0123959Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "a662d8d7-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "isManagementRestricted",
+          "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsApplication",
           "ChangeType": "Addition",
-          "Description": "Added the **isManagementRestricted** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-          "Target": "application"
+          "Description": "Added the [windowsApplication](https://docs.microsoft.com/en-us/graph/api/resources/windowsApplication?view=graph-rest-beta) resource type.",
+          "Target": "windowsApplication"
         },
         {
-          "Id": "a66539e5-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
+          "ApiChange": "Property",
+          "ChangedApiName": "windows",
+          "ChangeType": "Addition",
+          "Description": "Added the **windows** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-28T00:00:00.0123959Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceNamespace",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceNamespace](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourcenamespace?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceNamespace"
+        },
+        {
+          "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacResourceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacResourceAction](https://docs.microsoft.com/en-us/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "unifiedRbacResourceAction"
+        }
+      ],
+        "Id": "37231272-8d44-4c8e-8d75-0758790a53a9",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-02-25T00:00:00.000Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customCalloutExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customCalloutExtension](https://docs.microsoft.com/en-us/graph/api/resources/customCalloutExtension?view=graph-rest-beta) resource.",
+          "Target": "customCalloutExtension"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customAccessPackageWorkflowExtensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **customAccessPackageWorkflowExtensions** navigation property to the [accessPackageCatalog](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
+          "Target": "accessPackageCatalog"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAccessPackageWorkflowExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAccessPackageWorkflowExtension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta) resource and related methods. Use this object to define and manage the attributes of a logic app that you can integrate with entitlement management to broaden your governance workflows.",
+          "Target": "customAccessPackageWorkflowExtension"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionAuthenticationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionAuthenticationConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionAuthenticationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "customExtensionAuthenticationConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAdTokenAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAdTokenAuthentication](https://docs.microsoft.com/en-us/graph/api/resources/azureAdTokenAuthentication?view=graph-rest-beta) resource. Use this object to define the Azure AD application to use to authenticate a logic app with a custom access package workflow extension.",
+          "Target": "azureAdTokenAuthentication"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionClientConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionClientConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionClientConfiguration?view=graph-rest-beta) resource. Use this object to configure the HTTP connection settings that define how long Azure AD can wait for a a response from a logic app before it shuts down the connection.",
+          "Target": "customExtensionClientConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionEndpointConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "customExtensionEndpointConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "logicAppTriggerEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [logicAppTriggerEndpointConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/logicAppTriggerEndpointConfiguration?view=graph-rest-beta) resource type. Use this object to configure the endpoint for the logic app that is associated with a [custom access package workflow extension](https://docs.microsoft.com/en-us/graph/api/resources/customAccessPackageWorkflowExtension?view=graph-rest-beta).",
+          "Target": "logicAppTriggerEndpointConfiguration"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customExtensionHandlers",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionHandlers** navigation property to the [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentPolicy?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionHandler](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandler?view=graph-rest-beta) resource. Use this object to define the stage of an access package assignment request when the [custom access package workflow extension](customaccesspackageworkflowextension.md) runs.",
+          "Target": "customExtensionHandler"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessPackageCustomExtensionStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionStage** enumeration type. This enumeration type defines the supported stages an access package assignment request when a [custom access package workflow extension](customaccesspackageworkflowextension.md) can be run.",
+          "Target": "accessPackageCustomExtensionStage"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Property",
+          "ChangedApiName": "customExtensionHandlerInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the **customExtensionHandlerInstances** property to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customExtensionHandlerInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [customExtensionHandlerInstance](https://docs.microsoft.com/en-us/graph/api/resources/customExtensionHandlerInstance?view=graph-rest-beta) resource type. This read-only property lists the collection of [custom workflow extension](customaccesspackageworkflowextension.md) instances being run on an assignment request",
+          "Target": "customExtensionHandlerInstance"
+        },
+        {
+          "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessPackageCustomExtensionHandlerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageCustomExtensionHandlerStatus** enumeration type.",
+          "Target": "accessPackageCustomExtensionHandlerStatus"
+        }        
+      ],
+      "Id": "fe4dbb1b-9c7a-4ab5-8127-1d60878cab14",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-24T00:00:00.2719903Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
           "ChangeType": "Addition",
-          "Description": "Added the **memberOf** relationship to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-          "Target": "application"
+          "Description": "Added `administrativeUnit` as a supported return type of the [List memberOf](https://docs.microsoft.com/en-us/graph/api/device-list-memberOf?view=graph-rest-beta) method of the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
         },
         {
-          "Id": "a6679d52-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "oauth2RequirePostResponse",
-          "ChangeType": "Addition",
-          "Description": "Added the **oauth2RequirePostResponse** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-          "Target": "application"
-        },
-        {
-          "Id": "a66aaa1d-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "requestSignatureVerification",
-          "ChangeType": "Addition",
-          "Description": "Added the **requestSignatureVerification** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-          "Target": "application"
-        },
-        {
-          "Id": "a66d0c78-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
           "ApiChange": "Relationship",
-          "ChangedApiName": "claimsMappingPolicies",
+          "ChangedApiName": "members",
           "ChangeType": "Addition",
-          "Description": "Added the **claimsMappingPolicies** relationship to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-          "Target": "application"
+          "Description": "Added `device` as a supported type for methods that query the **members** navigation property of the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource. The methods are [Get member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-get-members?view=graph-rest-beta), [List members](https://docs.microsoft.com/en-us/graph/api/administrativeunit-list-members?view=graph-rest-beta), [Add member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-post-members?view=graph-rest-beta), and [Remove member](https://docs.microsoft.com/en-us/graph/api/administrativeunit-delete-members?view=graph-rest-beta).",
+          "Target": "administrativeUnit"
         }
       ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
+      "Id": "e34aceeb-8c4b-430a-ab0e-521201013853",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Applications",
-      "SubArea": ""
+      "CreatedDateTime": "2022-02-16T00:00:00.2532422Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory Management"
     },
     {
       "ChangeList": [
         {
-          "Id": "a66f6e64-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "createdDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-beta) resource.",
-          "Target": "appRoleAssignment"
-        },
-        {
-          "Id": "a671d0f9-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "lastModifiedDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [appRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/appRoleAssignment?view=graph-rest-beta) resource.",
-          "Target": "appRoleAssignment"
-        }
-      ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Applications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a687466d-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "isManagementRestricted",
-          "ChangeType": "Addition",
-          "Description": "Added the **isManagementRestricted** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
-          "Target": "group"
-        },
-        {
-          "Id": "a6e4b9df-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Method",
-          "ChangedApiName": "reprocessLicenseAssignment",
-          "ChangeType": "Addition",
-          "Description": "Added the [reprocessLicenseAssignment](https://docs.microsoft.com/en-us/graph/api/group-reprocessLicenseAssignment?view=graph-rest-beta) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
-          "Target": "group"
-        },
-        {
-          "Id": "a6e98216-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Method",
-          "ChangedApiName": "renew",
-          "ChangeType": "Addition",
-          "Description": "Added the [renew](https://docs.microsoft.com/en-us/graph/api/group-renew?view=graph-rest-beta) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
-          "Target": "group"
-        }
-      ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Groups",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a697f6ca-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "customSecurityAttributes",
-          "ChangeType": "Addition",
-          "Description": "Added the **customSecurityAttributes** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
-          "Target": "servicePrincipal"
-        },
-        {
-          "Id": "a69a5a65-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "isManagementRestricted",
-          "ChangeType": "Addition",
-          "Description": "Added the **isManagementRestricted** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
-          "Target": "servicePrincipal"
-        },
-        {
-          "Id": "a69cbb0d-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "createdDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **createdDateTime** property to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
-          "Target": "servicePrincipal"
-        }
-      ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Applications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a6a18045-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "customSecurityAttributes",
-          "ChangeType": "Addition",
-          "Description": "Added the **customSecurityAttributes** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
-        },
-        {
-          "Id": "a6a3e29f-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "isManagementRestricted",
-          "ChangeType": "Addition",
-          "Description": "Added the **isManagementRestricted** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
-        },
-        {
-          "Id": "a6e71dd1-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Method",
-          "ChangedApiName": "validatePassword",
-          "ChangeType": "Addition",
-          "Description": "Added the [validatePassword](https://docs.microsoft.com/en-us/graph/api/user-validatePassword?view=graph-rest-beta) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
-        },
-        {
-          "Id": "a6ee46c3-27e1-11ec-9ce8-b357a2761d24",
+          "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
           "ApiChange": "Relationship",
-          "ChangedApiName": "oauth2PermissionGrants",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **oauth2PermissionGrants** relationship from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
+          "ChangedApiName": "transitiveRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **transitiveRoleAssignments** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-beta) resource.",
+          "Target": "rbacApplication"
         },
-        {
-          "Id": "a716cc60-27e1-11ec-9ce8-b357a2761d24",
+        { 
+          "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
           "ApiChange": "Method",
-          "ChangedApiName": "activateServicePlan",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **activateServicePlan** method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
-          "Target": "user"
+          "ChangedApiName": "transitiveRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [List transitiveRoleAssignments](https://docs.microsoft.com/en-us/graph/api/rbacapplication-list-transitiveroleassignments) method to the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleAssignment"
         }
       ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Users",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a6f7ce98-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "appId",
-          "ChangeType": "Change",
-          "Description": "Changed the **appId** property in the [preAuthorizedApplication](https://docs.microsoft.com/en-us/graph/api/resources/preAuthorizedApplication?view=graph-rest-beta) resource from required to optional.",
-          "Target": "preAuthorizedApplication"
-        }
-      ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Applications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "a6fa334a-27e1-11ec-9ce8-b357a2761d24",
-          "ApiChange": "Property",
-          "ChangedApiName": "forceChangePasswordNextSignInWithMfa",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **forceChangePasswordNextSignInWithMfa** property from the [passwordProfile](https://docs.microsoft.com/en-us/graph/api/resources/passwordProfile?view=graph-rest-beta) resource.",
-          "Target": "passwordProfile"
-        }
-      ],
-      "Id": "a654699a-27e1-11ec-9ce8-b357a2761d24",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2021-10-08T02:44:25.331Z",
-      "WorkloadArea": "Users",
-      "SubArea": ""
+        "Id": "1c8b1db6-2c25-402f-9bcd-3f5f0fae5a53",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-02-24T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -885,7 +881,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource. Represents the base policy in the directory that cross-tenant access policies inherit from.",
+          "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshipaccesspolicybase?view=graph-rest-beta) resource. Represents the base policy in the directory that cross-tenant access policies inherit from.",
           "Target": "tenantRelationshipAccessPolicyBase"
         },
         {
@@ -893,7 +889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
+          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource and related methods. Represents the base policy in the directory for cross-tenant access settings and exposes the relationships used to define the tenant-wide default and partner-specific cross-tenant access settings.",
           "Target": "crossTenantAccessPolicy"
         },
         {
@@ -909,7 +905,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationPartner](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta) resource and related methods. Represents the partner-specific configuration that is defined for inbound and outbound settings of Azure AD B2B and B2B Direct Connect collaboration.",
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
@@ -917,7 +913,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
+          "Description": "Added the [crossTenantAccessPolicyInboundTrust](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyinboundtrust?view=graph-rest-beta) resource. This complex type defines the conditional access claims you want to accept from other Azure AD organizations via your cross-tenant access policy configuration.",
           "Target": "crossTenantAccessPolicyInboundTrust"
         },
         {
@@ -925,7 +921,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyConfigurationBase](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyconfigurationbase?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyConfigurationBase"
         },
         {
@@ -933,7 +929,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
+          "Description": "Added the [crossTenantAccessPolicyB2BSetting](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicyb2bsetting?view=graph-rest-beta) resource. This complex type defines the inbound and outbound rulesets for Azure Active Directory (Azure AD) B2B collaboration.",
           "Target": "crossTenantAccessPolicyB2BSetting"
         },
         {
@@ -941,7 +937,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyTarget",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
+          "Description": "Added the [crossTenantAccessPolicyTarget](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicytarget?view=graph-rest-beta) resource. This complex type defines whether the cross-tenant access settings are targeted to specific users, groups, or applications.",
           "Target": "crossTenantAccessPolicyTarget"
         },
         {
@@ -949,7 +945,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [crossTenantAccessPolicyTargetConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicytargetconfiguration?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicyTargetConfiguration"
         },
         {
@@ -1187,7 +1183,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },	  
-	{
+  	{
       "ChangeList": [
         { 
           "Id": "68e26d5b-6671-460f-9783-1139f53cc92c",
@@ -1659,7 +1655,7 @@
       "WorkloadArea": "Users",
       "SubArea": ""
     },
-   {
+  {
       "ChangeList": [
       {
           "Id": "081f222d-0ccd-42bd-aff6-3455f608f9d5",
@@ -5793,7 +5789,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "regionalAndLanguageSettings,userSettings",
           "ChangeType": "Change",
-          "Description": "Added the [regionalAndLanguageSettings](https://docs.microsoft.com/en-us/graph/resources/regionalandlanguagesettings) relationship to the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings) resource.",
+          "Description": "Added the [regionalAndLanguageSettings](https://docs.microsoft.com/en-us/graph/api/resources/regionalandlanguagesettings) relationship to the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings) resource.",
           "Target": "regionalAndLanguageSettings,userSettings"
         },
         {
@@ -6827,7 +6823,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "removePassword,application",
           "ChangeType": "Addition",
-          "Description": "Added [removePassword](https://docs.microsoft.com/en-us/graph/api/application-removepassword?view=graph-rest-beta) method to the [application](https://docs.microsoft.com/en-us/graph/resources/application?view=graph-rest-beta) resource.",
+          "Description": "Added [removePassword](https://docs.microsoft.com/en-us/graph/api/application-removepassword?view=graph-rest-beta) method to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
           "Target": "removePassword,application"
         },
         {
@@ -6835,7 +6831,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "addIns",
           "ChangeType": "Addition",
-          "Description": "Added **addIns** property to the [application](https://docs.microsoft.com/en-us/graph/resources/application?view=graph-rest-beta).",
+          "Description": "Added **addIns** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta).",
           "Target": "application"
         },
         {
@@ -6843,7 +6839,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "addPassword,removePassword,serviceprincipal",
           "ChangeType": "Addition",
-          "Description": "Added [addPassword](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) and [removePassword](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) methods to the [serviceprincipal](https://docs.microsoft.com/en-us/graph/resources/serviceprincipal?view=graph-rest-beta) resource.",
+          "Description": "Added [addPassword](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) and [removePassword](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) methods to the [serviceprincipal](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.",
           "Target": "addPassword,removePassword,serviceprincipal"
         }
       ],
