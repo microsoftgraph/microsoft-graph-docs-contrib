@@ -1,6 +1,6 @@
 ---
 title: "outgoingCallOptions resource type"
-description: "Represents a class that contains the options for an outgoing call"
+description: "Represents a class that contains the options for an outgoing call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
