@@ -73,6 +73,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | The routing information on how the call was retargeted. Read-only.                                                                                                                |
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
 | callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from `Microsoft.Graph.Call.CallChainId`. |
+| callOptions            | [outgoingCallOptions](outgoingCallOptions.md)                                                         | The call options.   |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for meeting scenarios.                                                                                                                                |
 | direction           | callDirection                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
 | id                  | String                                                                                                 | The call id. Read-only.                                                                                                                                                                        |
@@ -114,6 +115,7 @@ The following is a JSON representation of the resource.
     "answeredBy",
     "callRoutes",
     "callChainId",
+    "callOptions",
     "chatInfo",
     "direction",
     "id",
@@ -145,6 +147,7 @@ The following is a JSON representation of the resource.
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
   "callChainId": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
