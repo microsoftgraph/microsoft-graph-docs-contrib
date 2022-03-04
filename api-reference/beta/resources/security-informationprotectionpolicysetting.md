@@ -20,7 +20,7 @@ Resource that exposes the Microsoft Information Protection label policy settings
 | Method                                                                                                  | Return type                                                                                                                | Description                                                                                                                                           |
 | :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md)     | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. |
-| [Get default sensitivityLabel](../api/security-informationprotectionpolicysetting-list-defaultlabel.md) | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection                          | Get the sensitivityLabel resources from the defaultLabel navigation property.                                                                         |
+
 
 ## Properties
 

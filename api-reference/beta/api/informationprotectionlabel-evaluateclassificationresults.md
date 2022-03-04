@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `evaluateClassificationResults` API is deprecated and will stop returning data on August 30, 2022. Please use the new [evaluateClassificationResults API](./security-informationprotection-sensitivitylabel-evaluateclassificationresults.md).
+> The `evaluateClassificationResults` API is deprecated and will stop returning data on August 30, 2022. Please use the new [evaluateClassificationResults API](./security-sensitivitylabel-evaluateclassificationresults.md).
 
 Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
