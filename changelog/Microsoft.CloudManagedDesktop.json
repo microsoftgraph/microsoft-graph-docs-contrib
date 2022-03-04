@@ -4,70 +4,6 @@
             "ChangeList": [
                 {
                 "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "EnumType",
-                "ChangedApiName": "cloudPcManagementService",
-                "ChangeType": "Addition",
-                "Description": "Added the **cloudPcManagementService** enumeration type.",
-                "Target": "cloudPcManagementService"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "EnumType",
-                "ChangedApiName": "cloudPcUserAccessLevel",
-                "ChangeType": "Addition",
-                "Description": "Added the **cloudPcUserAccessLevel** enumeration type.",
-                "Target": "cloudPcUserAccessLevel"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Resource",
-                "ChangedApiName": "cloudPcForensicStorageAccount",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcForensicStorageAccount](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcForensicStorageAccount?view=graph-rest-beta) resource type.",
-                "Target": "cloudPcForensicStorageAccount"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Resource",
-                "ChangedApiName": "cloudPcLaunchInfo",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcLaunchInfo?view=graph-rest-beta) resource type.",
-                "Target": "cloudPcLaunchInfo"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Resource",
-                "ChangedApiName": "cloudPcReviewStatus",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcReviewStatus?view=graph-rest-beta) resource type.",
-                "Target": "cloudPcReviewStatus"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Property",
-                "ChangedApiName": "subscriptionDisplayName",
-                "ChangeType": "Addition",
-                "Description": "Added the **subscriptionDisplayName** property to [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
-                "Target": "cloudPcSourceDeviceImage"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Property",
-                "ChangedApiName": "subscriptionId",
-                "ChangeType": "Addition",
-                "Description": "Added the **subscriptionId** property to [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
-                "Target": "cloudPcSourceDeviceImage"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Resource",
-                "ChangedApiName": "cloudPcSubscription",
-                "ChangeType": "Addition",
-                "Description": "Added the [cloudPcSubscription](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSubscription?view=graph-rest-beta) resource type.",
-                "Target": "cloudPcSubscription"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcCrossCloudGovernmentOrganizationMapping",
                 "ChangeType": "Addition",
@@ -76,99 +12,11 @@
                 },
                 {
                 "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Property",
-                "ChangedApiName": "managedBy",
-                "ChangeType": "Addition",
-                "Description": "Added the **managedBy** property to [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
-                "Target": "cloudPcOnPremisesConnection"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
                 "ApiChange": "Resource",
                 "ChangedApiName": "crossCloudGovernmentOrganizationMapping",
                 "ChangeType": "Addition",
                 "Description": "Added the **crossCloudGovernmentOrganizationMapping** relationship to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
                 "Target": "virtualEndpoint"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "bulkSetCloudPcReviewStatus",
-                "ChangeType": "Addition",
-                "Description": "Added the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) method to the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                "Target": "bulkSetCloudPcReviewStatus"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "getStorageAccounts",
-                "ChangeType": "Addition",
-                "Description": "Added the [getStorageAccounts](https://docs.microsoft.com/en-us/graph/api/intune-getStorageAccounts?view=graph-rest-beta) method to the [getStorageAccounts](https://docs.microsoft.com/en-us/graph/api/intune-getStorageAccounts?view=graph-rest-beta) resource.",
-                "Target": "getStorageAccounts"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "microsoft.graph.reprovisionCloudPc]",
-                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
-                "ChangeType": "Change",
-                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
-                "Target": "reprovisionCloudPc"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "microsoft.graph.resizeCloudPc]",
-                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
-                "ChangeType": "Change",
-                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
-                "Target": "resizeCloudPc"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "microsoft.graph.restoreCloudPc]",
-                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
-                "ChangeType": "Change",
-                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
-                "Target": "restoreCloudPc"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "setCloudPcReviewStatus",
-                "ChangeType": "Addition",
-                "Description": "Added the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) method to the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                "Target": "setCloudPcReviewStatus"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "getCloudPcLaunchInfo",
-                "ChangeType": "Addition",
-                "Description": "Added the [getCloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcLaunchInfo?view=graph-rest-beta) method to the [getCloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcLaunchInfo?view=graph-rest-beta) resource.",
-                "Target": "getCloudPcLaunchInfo"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "microsoft.graph.getCloudPcRemoteActionResults]",
-                "ChangedApiName": "https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/",
-                "ChangeType": "Change",
-                "Description": "Removed the **https://ls.int.cpcgateway.trafficmanager.net/api/rms/odata/managedDevices/** resource type",
-                "Target": "getCloudPcRemoteActionResults"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "getCloudPcReviewStatus",
-                "ChangeType": "Addition",
-                "Description": "Added the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) method to the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                "Target": "getCloudPcReviewStatus"
-                },
-                {
-                "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
-                "ApiChange": "Method",
-                "ChangedApiName": "getSubscriptions",
-                "ChangeType": "Addition",
-                "Description": "Added the [getSubscriptions](https://docs.microsoft.com/en-us/graph/api/intune-getSubscriptions?view=graph-rest-beta) method to the [getSubscriptions](https://docs.microsoft.com/en-us/graph/api/intune-getSubscriptions?view=graph-rest-beta) resource.",
-                "Target": "getSubscriptions"
                 }
             ],
             "Id": "ce998c71-ecc3-4fe7-adaa-ff6a2ced7cee",
