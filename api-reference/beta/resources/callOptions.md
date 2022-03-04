@@ -1,7 +1,7 @@
 ---
 title: "callOptions resource type"
-description: "An abstract base class that contains the options for a call".
-author: "satyakomsft"
+description: "An abstract base class that contains the options for a call."
+author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
