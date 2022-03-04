@@ -41,7 +41,7 @@ POST ** Collection URI for microsoft.graph.cloudPcCrossCloudGovernmentOrganizati
 |X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required.|
 
 ## Request body
-Request body is empty.
+Request body is empty JSON string.
 
 ## Response
 
@@ -59,6 +59,8 @@ If successful, this method returns a `200 OK` response code and a [cloudPcCrossC
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcCrossCloudGovernmentOrganizationMapping
 Content-Type: application/json
 X-MS-CloudPC-USGovCloudTenantAADToken: {token}
+
+{}
 ```
 
 
