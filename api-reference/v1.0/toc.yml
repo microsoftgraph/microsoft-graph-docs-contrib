@@ -854,8 +854,12 @@ items:
               href: api/application-list-extensionproperty.md
             - name: Create
               href: api/application-post-extensionproperty.md
+            - name: Get
+              href: api/extensionproperty-get.md
             - name: Delete
-              href: api/application-delete-extensionproperty.md
+              href: api/extensionproperty-delete.md
+            - name: Get available extension properties
+              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
