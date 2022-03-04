@@ -60,7 +60,7 @@ Inherits from [entity](../resources/entity.md).
 | basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
 | enhanced                        | Allows users to tag images with custom tags and ehanced features.                                                     |
 
-### SharingCapabilities property values
+### SharingCapability property values
 | Value                           | Description                                                                                                           |
 | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
 | disabled                        | External user sharing (share by email) and guest link sharing are both disabled.                                      |
@@ -108,7 +108,7 @@ The following is a JSON representation of the resource.
     "sharingAllowedDomainList" : ["string"],
     "sharingBlockedDomainList" : ["string"],
     "sharingCapability": {"@odata.type": "microsoft.graph.tenantAdmin.sharingCapabilities"},
-    "sharingDomainRestrictionMode": {"@odata.type": "microsoft.graph.tenantAdmin.imageTaggingChoice"},
+    "sharingDomainRestrictionMode": {"@odata.type": "microsoft.graph.tenantAdmin.sharingDomainRestrictionMode"},
     "siteCreationDefaultManagedPath": "string",
     "siteCreationDefaultStorageLimitInMB": 240000,
     "tenantDefaultTimezone": "string"
