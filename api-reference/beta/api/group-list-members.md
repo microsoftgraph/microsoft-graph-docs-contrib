@@ -325,4 +325,44 @@ Content-type: application/json
 }
 -->
 
+### Example 6: Use OData value to retrieve Service Principal added as members in Azure AD group.
 
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_pr_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/{GroupId}/members/microsoft.graph.servicePrincipal
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+"@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals",
+    "value": [
+        {
+            "id": "11111111-2222-3333-4444-555555555555",
+            "deletedDateTime": null,
+            "accountEnabled": true,
+		  "appDisplayName": "Contoso Azure App",
+            "appId": "11111111-2222-3333-4444-555555555555",
+		}
+}
+```
