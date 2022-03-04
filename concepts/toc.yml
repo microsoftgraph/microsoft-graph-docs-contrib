@@ -305,6 +305,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access to a Microsoft 365 group
                     href: tutorial-accessreviews-M365group.md
+                  - name: Review access to privileged roles
+                    href: tutorial-accessreviews-roleassignments.md
                   - name: Configure the scope
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers

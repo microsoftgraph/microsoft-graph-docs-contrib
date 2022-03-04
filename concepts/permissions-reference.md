@@ -27,7 +27,9 @@ The _constraint_ element of the name determines the potential extent of access y
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
-> **Note**: In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user in the organization.
+> [!NOTE]
+> In delegated scenarios, your app's access is also limited by the privileges of the signed-in user. These privileges are determined by the user's assigned roles and their relationship to the data being accessed.
+> For example, if the signed-in user doesn't have the appropriate privileges to view a file, then the client app won't be able to read that file either, even if the app is granted the `File.Read.All` delegated permission.
 
 ## Microsoft accounts and work or school accounts
 
@@ -178,6 +180,9 @@ With the _AdministrativeUnit.ReadWrite.All_ permission an application can create
 _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid only for work or school accounts.
 
 ### Example usage
+
+> [!NOTE]
+> The `v1.0` endpoint for the administrative units API is `/v1.0/directory/administrativeUnits`.
 
 - _AdministrativeUnit.Read.All_: Read administrative units (`GET /beta/administrativeUnits`)
 - _AdministrativeUnit.Read.All_: Read members list of an administrative unit (`GET /beta/administrativeUnits/<id>/members`)
