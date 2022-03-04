@@ -1,6 +1,6 @@
 ---
 title: "incomingCallOptions resource type"
-description: "Represents a class that contains the options for an incoming call".
+description: "Represents a class that contains the options for an incoming call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
