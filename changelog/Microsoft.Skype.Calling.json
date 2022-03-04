@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outgoingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [outgoingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incomingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [incomingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Property",
+          "ChangedApiName": "isContentSharingNotificationEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isContentSharingNotificationEnabled** property to [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "callOptions"
+        }
+      ],
+      "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-11-18T06:24:28.2066497Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6e99df43-f8b1-45e4-baa4-11887ca66497",
           "ApiChange": "Resource",
           "ChangedApiName": "externalMeetingRegistrant",
