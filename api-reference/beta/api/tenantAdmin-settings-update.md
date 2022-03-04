@@ -80,11 +80,6 @@ If successful, this method returns a `200 OK` response code and an updated [sett
 ## Examples
 
 ### Request
-<!-- {
-  "blockType": "request",
-  "name": "update_settings"
-}
--->
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/sharepoint/settings
 Content-Type: application/json

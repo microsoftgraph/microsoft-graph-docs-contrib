@@ -1,7 +1,6 @@
 ---
 title: "settings resource type"
-description:  "The settings resource contains information about the organization settings for the SharePoint and OneDrive for Business workload.
-Refer to [tenant] for details."
+description:  "The settings resource contains information about the organization settings for the SharePoint and OneDrive for Business workload. Refer to [tenant] for details."
 author: lfernandez
 ms.localizationpriority: medium
 ms.prod: "Sharepoint"
@@ -27,11 +26,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| allowedDomainGuidsForSyncApp                       | Collection Guid              | List of trusted domain GUIDs for sync client.                                                                                                                                                                           |
-| availableManagedPathsForSiteCreation               | Collection String            | Array of strings representing the managed paths available for site creation.                                                                                                                                            |
+| allowedDomainGuidsForSyncApp                       | Collection(Guid)             | List of trusted domain GUIDs for sync client.                                                                                                                                                                           |
+| availableManagedPathsForSiteCreation               | Collection(String)           | Array of strings representing the managed paths available for site creation. Read-only.                                                                                                                                 |
 | deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | Integer representing the number of days for preserving a deleted user's personal sites.                                                                                                                                 |
-| excludedFileExtensionsForSyncApp                   | Collection String            | List of strings representing the file extensions that should be excluded from the sync client.                                                                                                                          |
-| imageTaggingOption                                 | ImageTaggingChoice           | Specifies the image tagging option for the tenant. Value should be one of the values listed in [imageTaggingChoice] enumeration.                                                                                        |
+| excludedFileExtensionsForSyncApp                   | Collection(String)           | List of strings representing the file extensions that should be excluded from the sync client.                                                                                                                          |
+| imageTaggingOption                                 | ImageTaggingChoice           | Specifies the image tagging option for the tenant. See below for the full list of image tagging options.                                                                                                                |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Boolean indicating if comments are allowed on the modern site pages in SharePoint.                                                                                                                                      |
 | isFileActivityNotificationEnabled                  | Boolean                      | Boolean indicating if push notifications are enabled for OneDrive for Business events.                                                                                                                                  |
 | isLoopEnabled                                      | Boolean                      | Boolean indicating if Fluid Framework is allowed on SharePoint sites.                                                                                                                                                   |
@@ -46,13 +45,35 @@ Inherits from [entity](../resources/entity.md).
 | isSyncButtonHiddenOnPersonalSite                   | Boolean                      | Boolean indicating if the sync button on OneDrive for Business sites will be shown or hidden.                                                                                                                           |
 | isUnmanagedSyncAppForTenantRestricted              | Boolean                      | Boolean indicating if the unmanaged sync client will be enabled for the tenant.                                                                                                                                         |
 | personalSiteDefaultStorageLimitInMB                | Long                         | Integer representing the default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (Mb).                                                               |
-| sharingAllowedDomainList                           | Collection String            | Specifies a list of email domains that is allowed for sharing with the external collaborators.                                                                                                                          |
-| sharingBlockedDomainList                           | Collection String            | Specifies a list of email domains that is blocked or prohibited for sharing with the external collaborators.                                                                                                            |
-| sharingCapability                                  | SharingCapabilities          | Sharing capability for the tenant. Value should be one of the values listed in [sharingCapabilities] enumeration.                                                                                                       |
-| sharingDomainRestrictionMode                       | SharingDomainRestrictionMode | Specifies the external sharing mode for domains. Value should be one of the values listed in [sharingDomainRestrictionMode] enumeration.                                                                                |
+| sharingAllowedDomainList                           | Collection(String)           | Specifies a list of email domains that is allowed for sharing with the external collaborators.                                                                                                                          |
+| sharingBlockedDomainList                           | Collection(String)           | Specifies a list of email domains that is blocked or prohibited for sharing with the external collaborators.                                                                                                            |
+| sharingCapability                                  | SharingCapabilities          | Sharing capability for the tenant. See below for the full list of sharing capabilities.                                                                                                                                 |
+| sharingDomainRestrictionMode                       | SharingDomainRestrictionMode | Specifies the external sharing mode for domains. See below for the full list of  sharing domain restriction mode                                                                                                        |
 | siteCreationDefaultManagedPath                     | String                       | String representing the value of the team site managed path. This is the path under which new team sites will be created under.                                                                                         |
 | siteCreationDefaultStorageLimitInMB                | Int                          | Integer representing the default storage quota for a new site upon creation. Measured in megabytes (Mb).                                                                                                                |
 | tenantDefaultTimezone                              | String                       | The tenant's default timezone for newly created sites.                                                                                                                                                                  |
+
+### ImageTaggingOption property values
+| Value                           | Description                                                                                                           |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
+| disabled                        | The image tagging option for the tenant is disabled.                                                                  |
+| basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
+| enhanced                        | Allows users to tag images with custom tags and ehanced features.                                                     |
+
+### SharingCapabilities property values
+| Value                           | Description                                                                                                           |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
+| disabled                        | External user sharing (share by email) and guest link sharing are both disabled.                                      |
+| externalUserSharingOnly         | External user sharing is enabled, but guest link sharing is disabled.                                                 |
+| externalUserAndGuestSharing     | Both external user sharing and guest link sharing are enabled.                                                        |
+| existingExternalUserSharingOnly | External user sharing and guest link sharing are both disabled, but AllowGuestUserSignIn is enabled.                  |
+
+### SharingDomainRestrictionMode property values
+| Value                           | Description                                                                                                           |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| None                            | No restrictions apply                                                                                                 |
+| AllowList                       | Users will be able to share with external collaborators coming only from the list of allowed email domains.           |
+| BlockList                       | Users will be able to share with all external collaborators apart from the ones on the list of blocked email domains. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
