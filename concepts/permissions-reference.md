@@ -27,7 +27,9 @@ The _constraint_ element of the name determines the potential extent of access y
 * **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
 * If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
 
-> **Note**: In delegated scenarios, the effective permissions granted to your app are constrained by the privileges of the signed-in user in the organization.
+> [!NOTE]
+> In delegated scenarios, your app's access is also limited by the privileges of the signed-in user. These privileges are determined by the user's assigned roles and their relationship to the data being accessed.
+> For example, if the signed-in user doesn't have the appropriate privileges to view a file, then the client app won't be able to read that file either, even if the app is granted the `File.Read.All` delegated permission.
 
 ## Microsoft accounts and work or school accounts
 
@@ -178,6 +180,9 @@ With the _AdministrativeUnit.ReadWrite.All_ permission an application can create
 _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid only for work or school accounts.
 
 ### Example usage
+
+> [!NOTE]
+> The `v1.0` endpoint for the administrative units API is `/v1.0/directory/administrativeUnits`.
 
 - _AdministrativeUnit.Read.All_: Read administrative units (`GET /beta/administrativeUnits`)
 - _AdministrativeUnit.Read.All_: Read members list of an administrative unit (`GET /beta/administrativeUnits/<id>/members`)
@@ -1286,6 +1291,21 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Managed tenant permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ManagedTenants.Read.All_ | Read all managed tenant specific information | Allows the app to read all managed tenant information on behalf of the signed-in user. | Yes | No |
+| _ManagedTenants.ReadWrite.All_ | Read and write all managed tenant specific information | Allows the app to read and write all managed tenant information on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+None.
+
+---
+
 ## Member permissions
 
 #### Delegated permissions
@@ -1319,6 +1339,7 @@ Membership in some Microsoft 365 groups can be hidden. This means that only the 
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+---
 
 ## Notes permissions
 
@@ -1365,6 +1386,8 @@ For work or school accounts, _Notes.Read.All_ and _Notes.ReadWrite.All_ allow th
 * _Notes.ReadWrite.All_: Update the page in a notebook for any user in the organization (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
 
 ## Notifications permissions
 #### Delegated permissions
@@ -1829,6 +1852,34 @@ Access to data via search requires the read permission to the item. Ex : _Files.
 #### Delegated
 
 * _ExternalItem.Read.All_ :  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+
+---
+
+## Search configuration permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configuration, on behalf of the signed-in user. | Yes | No |
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+|   Permission    |  Display String   |  Description | Admin Consent Required | 
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SearchConfiguration.Read.All_ | Read your organization's search configuration | Allows the app to read search configurations, without a signed-in user. | Yes | 
+| _SearchConfiguration.ReadWrite.All_ | Read and write your organization's search configuration | Allows the app to read and write search configurations, without a signed-in user. | Yes | 
+
+
+### Remarks
+Search configuration permissions are only valid for work or school accounts.
+
+### Example usage
+
+#### Delegated and Application
+
+- _SearchConfiguration.Read.All_: Read the list of all bookmarks created for your tenant (`GET /beta/search/bookmarks`)
+- _SearchConfiguration.ReadWrite.All_: Update or read all bookmarks created for your tenant  (`PATCH /beta/search/bookmarks/{id}`)
 
 ---
 
