@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.agreementFileLocalization)"
+  "@odata.type": "microsoft.graph.agreementFileLocalization"
 }
 -->
 ``` http

@@ -12921,13 +12921,13 @@ items:
             - name: List acceptances
               href: api/user-list-agreementacceptances.md
             - name: List acceptance status
-              href: api/user-list-acceptances.md
+              href: api/agreement-list-acceptances.md
           - name: Agreement files
             items:
-            - name: Agreement file
+            - name: Default agreement file
               href: resources/agreementfile.md
-            - name: Agreement files
-              href: resources/agreementfiles.md
+            - name: Localized agreement files
+              href: resources/agreementfilelocalization.md
             - name: Get default file
               href: api/agreementfile-get.md
             - name: Create localized files

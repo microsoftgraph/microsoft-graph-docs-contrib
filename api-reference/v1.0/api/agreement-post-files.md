@@ -3,7 +3,7 @@ title: "Create agreementFileLocalization"
 description: "Create a new localized agreement file."
 author: "raprakasMSFT"
 ms.localizationpriority: medium
-ms.prod: "governance*"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -45,7 +45,7 @@ You can specify the following properties when creating an **agreementFileLocaliz
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.|
-|fileData|[agreementFileData](agreementfiledata.md)|Data that represents the terms of use PDF document.|
+|fileData|[agreementFileData](../resources/agreementfiledata.md)|Data that represents the terms of use PDF document.|
 |fileName|String|Name of the agreement file (for example, TOU.pdf). |
 |isDefault|Boolean|If none of the languages matches the client preference, indicates whether this is the default agreement file . If none of the files are marked as default, the first one is treated as the default. Read-only.|
 |isMajorVersion|Boolean|Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language.|
@@ -108,4 +108,4 @@ Content-Type: application/json
         "data": "JVBERi0xLjUKJb/"
     }
 }
-
+```

@@ -94,12 +94,10 @@ Content-type: application/json
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agreement"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
