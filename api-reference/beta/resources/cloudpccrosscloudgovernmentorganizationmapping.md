@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create cloudPcCrossCloudGovernmentOrganizationMapping](../api/virtualendpoint-post-crosscloudgovernmentorganizationmapping.md)|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Create a new [cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md) object.|
+|[Create cloudPcCrossCloudGovernmentOrganizationMapping](../api/cloudpccrosscloudgovernmentorganizationmapping-post.md)|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Create a new [cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md) object.|
 |[Get cloudPcCrossCloudGovernmentOrganizationMapping](../api/cloudpccrosscloudgovernmentorganizationmapping-get.md)|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Read the properties and relationships of a [cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md) object.|
 
 ## Properties
