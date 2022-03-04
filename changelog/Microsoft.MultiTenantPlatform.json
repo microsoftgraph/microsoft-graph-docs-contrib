@@ -26,6 +26,14 @@
                 "Description": "Added the [list](https://docs.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
                 "Target": "auditEvent"
               },
+              {
+                "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
+                "ApiChange": "Method",
+                "ChangedApiName": "GET",
+                "ChangeType": "Addition",
+                "Description": "Added the [get](https://docs.microsoft.com/graph/api/managedtenants-auditevent-get?view=graph-rest-beta) operation to the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
+                "Target": "auditEvent"
+              }
             ],
             "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
             "Cloud": "Prod",
