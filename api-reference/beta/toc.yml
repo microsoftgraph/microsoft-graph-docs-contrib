@@ -10210,12 +10210,12 @@ items:
           items:
           - name: List aggregated policy compliances
             href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
-        - name: Audit Event
+        - name: Audit events
           href: resources/managedtenants-auditevent.md
           items:
-          - name: List audit events
+          - name: List
             href: api/managedtenants-managedtenant-list-auditevents.md
-          - name: Get audit event
+          - name: Get
             href: api/managedtenants-auditevent-get.md            
         - name: Cloud PC connection
           href: resources/managedtenants-cloudpcconnection.md
