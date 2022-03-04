@@ -290,144 +290,59 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create assignment policy with questions
-
-Questions configured in an assignment policy will be asked to requestors in scope of the policy. Their answers will be shown to their approvers. Question IDs are read-only and are included in the response by default.
+### Example 3: Create a policy and specify the stages to trigger pre-defined custom workflow extensions
 
 #### Request
 
-The following example shows a request to create an access package assignment policy. 
+In the following example, the pre-defined **customAccessPackageWorkflowExtension** object is triggered when an access package assigned request is created and when it's granted.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_questions"
+  "name": "create_accesspackageassignmentpolicy_customaccesspackageworkflowextension"
 }-->
-
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 Content-type: application/json
 
 {
-    "accessPackageId": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "displayName": "Users from connected organizations can request",
-    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
-    "canExtend": false,
-    "durationInDays": 365,
-    "expirationDateTime": null,
-    "requestorSettings": {
-        "scopeType": "AllExistingConnectedOrganizationSubjects",
-        "acceptRequests": true
+  "displayName": "extension-policy",
+  "description": "test",
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "expiration": {
+    "type": "afterDuration",
+    "duration": "P365D"
+  },
+  "canExtend": false,
+  "requestApprovalSettings": null,
+  "requestorSettings": {
+    "acceptRequests": true,
+    "scopeType": "AllExistingDirectorySubjects",
+    "allowedRequestors": [],
+    "isOnBehalfAllowed": false
+  },
+  "accessReviewSettings": null,
+  "questions": [],
+  "customExtensionHandlers": [
+    {
+      "stage": "assignmentRequestCreated",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8" //customAccessPackageWorkflowExtension.id
+      }
     },
-    "requestApprovalSettings": {
-        "isApprovalRequired": true,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": true,
-        "approvalMode": "SingleStage",
-        "approvalStages": [{
-                "approvalStageTimeOutInDays": 14,
-                "isApproverJustificationRequired": true,
-                "isEscalationEnabled": false,
-                "escalationTimeInMinutes": 11520,
-                "primaryApprovers": [{
-                        "@odata.type": "#microsoft.graph.groupMembers",
-                        "isBackup": true,
-                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
-                        "description": "group for users from connected organizations which have no external sponsor"
-                    },
-                    {
-                        "@odata.type": "#microsoft.graph.externalSponsors",
-                        "isBackup": false
-                    }
-                ]
-            }
-        ]
-    },
-    "questions": [{
-        "isRequired": false,
-        "text": {
-            "defaultText": "what state are you from?",
-            "localizedTexts": [{
-                "text": "¿De qué estado eres?",
-                "languageCode": "es"
-            }]
-        },
-        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-        "choices": [{
-            "actualValue": "AZ",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "Arizona",
-                    "languageCode": "es"
-                }]
-            }
-        }, {
-            "actualValue": "CA",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "California",
-                    "languageCode": "es"
-                }]
-            }
-        }, {
-            "actualValue": "OH",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "Ohio",
-                    "languageCode": "es"
-                }]
-            }
-        }],
-        "allowsMultipleSelection": false
-    }, {
-        "isRequired": false,
-        "text": {
-            "defaultText": "Who is your manager?",
-            "localizedTexts": [{
-                "text": "por qué necesita acceso a este paquete",
-                "languageCode": "es"
-            }]
-        },
-        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-        "isSingleLineQuestion": false
-    }]
+    {
+      "stage": "assignmentRequestGranted",
+      "customExtension": {
+        "id": "219f57b6-7983-45a1-be01-2c228b7a43f8"
+      }
+    }
+  ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-questions-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-
----
 
 #### Response
 
-The following is an example of the response.
+The following is an example of the response. The **customExtensionHandlers** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension handlers for a policy](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta&tabs=http#example-2-retrieve-the-custom-extension-handlers-for-a-policy)
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -441,62 +356,31 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
-  "accessPackageId": "string (identifier)",
-  "displayName": "Users from connected organizations can request",
-  "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
-  "questions": [{
-        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
-        "isRequired": false,
-        "text": {
-            "defaultText": "what state are you from?",
-            "localizedTexts": [{
-                "text": "¿De qué estado eres?",
-                "languageCode": "es"
-            }]
-        },
-        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
-        "choices": [{
-            "actualValue": "AZ",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "Arizona?",
-                    "languageCode": "es"
-                }]
-            }
-        }, {
-            "actualValue": "CA",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "California",
-                    "languageCode": "es"
-                }]
-            }
-        }, {
-            "actualValue": "OH",
-            "displayValue": {
-                "localizedTexts": [{
-                    "text": "Ohio",
-                    "languageCode": "es"
-                }]
-            }
-        }],
-        "allowsMultipleSelection": false
-    }, {
-        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
-        "isRequired": false,
-        "text": {
-            "defaultText": "Who is your manager?",
-            "localizedTexts": [{
-                "text": "por qué necesita acceso a este paquete",
-                "languageCode": "es"
-            }]
-        },
-        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
-        "isSingleLineQuestion": false
-    }]
+  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
+  "displayName": "extension-policy",
+  "description": "test",
+  "canExtend": false,
+  "durationInDays": 0,
+  "expirationDateTime": null,
+  "accessPackageId": "ba5807c7-2aa9-4c8a-907e-4a17ee587500",
+  "accessReviewSettings": null,
+  "questions": [],
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
 }
 ```
+
+
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
