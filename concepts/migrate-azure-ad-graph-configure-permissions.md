@@ -18,7 +18,7 @@ However, your app might still temporarily require Azure AD Graph permissions to 
 1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
-> Any app using Azure AD Graph will still stop functioning after June 30, 2022. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
+> Any app using Azure AD Graph will still stop functioning after the Azure AD Graph API retirement. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
 
 ## Option 1: Use the Azure portal to find the APIs your organization uses
 

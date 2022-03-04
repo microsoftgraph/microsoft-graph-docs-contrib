@@ -8,6 +8,8 @@ ms.prod: "governance"
 
 # Tutorial: Use the access reviews API to review access to your security groups
 
+The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities (also called *principals*) are assigned to resources in the organization. One of the most efficient and effective methods to manage access privileges for principals to other resources is through Azure AD security groups. For example, hundreds of users can be assigned to a security group and the security group assigned access to a folder. Using the access reviews API, organizations can periodically attest to principals that have access to such groups and by extension, other resources in the organization.
+
 Suppose you use Azure AD security groups to assign identities (also called *principals*) access to resources in your organization. Periodically, you need to attest that all members of the security group need their membership and by extension, their access to the resources assigned to the security group.
 
 This tutorial guides you to use the access review API to review access to a security group in your Azure AD tenant. You can use Graph Explorer or Postman to try out and test your access reviews API calls before you automate them into a script or an app. This test environment saves you time by helping you properly define and validate your queries without repeatedly recompiling your application.
@@ -484,7 +486,7 @@ In Step 3, you configured the access review as self-reviewing. This configuratio
 >[!NOTE]
 >Complete this step as one of the two members of the **Building security** group.
 
-In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, we will let the default decisions be applied to their access review.
+In this step, you'll list your pending access reviews then complete the self-attestation process. You can complete this step in one of two ways, using the API or using the [My Access portal](https://myaccess.microsoft.com/). The other reviewer won't complete this process and instead, you'll let the default decisions be applied to their access review.
 
 Start a new **incognito**, **anonymous**, or **InPrivate browsing** browser session, and sign in as one of the two members of the **Building security** group. By doing so, you won't interrupt your current administrator session. We'll sign in as Adele Vance. Alternatively, you can interrupt your current administrator session by logging out of Graph Explorer and logging back in as one of the two group members.
 

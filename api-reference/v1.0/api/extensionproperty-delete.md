@@ -58,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/applications/{id}/extensionProperties/{id}
+DELETE https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties/
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-extensionproperty-csharp-snippets.md)]

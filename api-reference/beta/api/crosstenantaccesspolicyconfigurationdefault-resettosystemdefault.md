@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 [!INCLUDE [sample-code](../includes/snippets/go/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
