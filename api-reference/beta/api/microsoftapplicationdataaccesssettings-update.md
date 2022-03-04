@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object.
+Update the settings in a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ## Permissions
 
@@ -46,8 +46,8 @@ PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledForAllMicrosoftApplications|Boolean|When set to `true`, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access. The Microsoft app can be a Microsoft 365 app (e.g., Excel, Outlook) or non-Microsoft 365 app (e.g., Edge). The default is `true`. <br> It is possible to disable this access for a subset of users in an Azure AD security group, by specifying the group in the **disabledForGroup** property. <br> When set to `false`, users can access authorized Microsoft 365 data only in a Microsoft 365 app.|
-|disabledForGroup|String|The ID of security AAD group whose members will _not_ be allowed to access M365 data using Microsoft applications not part of Microsoft 365. <br> This is only applicable if the property above is set to true.|
+|isEnabledForAllMicrosoftApplications|Boolean|When set to `true`, all users in the organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access. The Microsoft app can be a Microsoft 365 app (e.g., Excel, Outlook) or non-Microsoft 365 app (e.g., Edge). The default is `true`. <br> It is possible to disable this access for a subset of users in an Azure Active Directory (Azure AD) security group, by specifying the group in the **disabledForGroup** property. <br> When set to `false`, users can access authorized Microsoft 365 data only in a Microsoft 365 app.|
+|disabledForGroup|String|The ID of an Azure AD security group whose members are allowed to access Microsoft 365 data using only Microsoft 365 apps, but not other Microsoft apps such as Edge. <br> This is only applicable if **isEnabledForAllMicrosoftApplications** is set to `true`.|
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from accessing M365 data using Microsoft applications not part of Microsoft 365.
+Here is an example request that shows how an admin updates the "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from accessing Microsoft 365 data using Microsoft applications that are not part of Microsoft 365.
 
 <!-- {
   "blockType": "request",
