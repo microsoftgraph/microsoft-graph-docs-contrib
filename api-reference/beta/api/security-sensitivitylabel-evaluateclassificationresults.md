@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Using [classification results](../resources/security-classificationresult.md), compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
-To evaluate based on classification results, provide [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following: 
+To evaluate based on classification results, provide [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following: 
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
@@ -47,8 +47,18 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To evaluate as the signed-in user or specified user:
+
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+POST /users/me/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+```
+
+To evaluate as the service principal:
+
+``` http
+POST /users/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 ```
 
 ## Request headers
@@ -65,7 +75,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/security-contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
+| contentInfo           | [contentInfo](../resources/security-contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
 | classificationResults | [classificationResult](../resources/security-classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 
@@ -88,21 +98,23 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-  "contentInfo": {
-    "@odata.type": "#microsoft.graph.security.contentInfo",
-    "format@odata.type": "#microsoft.graph.security.contentFormat",
-    "format": "default",
-    "identifier": null,
-    "state@odata.type": "#microsoft.graph.security.contentState",
-    "state": "rest"
-  },
-  "classificationResults": [
-    {
-      "sensitiveTypeId": "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
-      "count": 4,
-      "confidenceLevel": 75
-    }
-  ]
+    "contentInfo": {
+        "@odata.type": "#microsoft.graph.security.contentInfo",
+        "format@odata.type": "#microsoft.graph.security.contentFormat",
+        "format": "default",
+        "contentFormat": "File",
+        "identifier": "c:\\user\\new.docx",
+        "state@odata.type": "#microsoft.graph.security.contentState",
+        "state": "rest",
+        "metadata": []
+    },
+    "classificationResults": [
+        {
+            "sensitiveTypeId": "50842eb7-edc8-4019-85dd-5a5c1f2bb085", //Credit Card 
+            "count": 7,
+            "confidenceLevel": 99
+        }
+    ]
 }
 ```
 

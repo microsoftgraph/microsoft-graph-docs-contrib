@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To get labels available to the signed-in user or specified user:
+To get a label available to the signed-in user or specified user:
 ``` http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 GET /me/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
@@ -46,15 +46,18 @@ GET /security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 Getting a label from the organizational list requires the application permission `InformationProtectionPolicy.Read.All`.
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -87,21 +90,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.sensitivityLabel",
-    "color": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels/$entity",
+    "id": "0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3",
+    "name": "FTEs, Approved Partners, and Vendors",
+    "description": "",
+    "color": "",
+    "sensitivity": 2,
+    "tooltip": "This label is intended to protect NDA-level data and share with external and internal vendors and partners, as well as all FTEs. FTEs will have full control of the protected information.",
+    "isActive": true,
+    "isAppliable": true,
     "contentFormats": [
-      "String"
+        "file",
+        "email",
+        "site",
+        "unifiedgroup",
+        "schematizeddata"
     ],
-    "description": "Consult Contoso data labeling policy for more details.",
-    "hasProtection": "True",
-    "id": "5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2",
-    "isActive": "True",
-    "isAppliable": "True",
-    "name": "Highly Confidential",
-    "sensitivity": "2",
-    "tooltip": "Data classified as Contoso Highly Confidential."
-  }
+    "hasProtection": true
 }
 ```
 

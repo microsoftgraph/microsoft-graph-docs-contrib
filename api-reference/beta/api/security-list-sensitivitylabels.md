@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List sensitivityLabels
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph.security
 Get the sensitivityLabel resources from the sensitivityLabels navigation property.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -68,8 +70,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_sensitivitylabel"
 }
 -->
+
+To get labels available to the signed-in user or specified user:
+
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabels
+GET https://graph.microsoft.com/beta/users/{userEmail}/security/informationProtection/sensitivityLabels
+GET https://graph.microsoft.com/beta/me/security/informationProtection/sensitivityLabels
+```
+
+To get labels available to the organization:
+
+``` http
+GET https://graph.microsoft.com/beta/security/informationProtection/sensitivityLabels
 ```
 
 
@@ -89,71 +101,41 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels",
     "value": [
         {
-            "id": "285ccb20-8260-4b1a-9e08-b5e051ffc848",
-            "name": "Contoso Public",
+            "id": "0d39dc11-75ff-4309-8b32-ff94f0e41607",
+            "name": "Any User (No Protection)",
             "description": "",
             "color": "",
-            "sensitivity": 1,
-            "tooltip": "Data labeled as Contoso Confidential.",
+            "sensitivity": 7,
+            "tooltip": "The most sensitive information stored by Milt0rCorp; product plans, customer information, and other trade secrets. Data labeled for Any User will not be protected and should be used with caution and sparingly.",
             "isActive": true,
             "isAppliable": true,
             "contentFormats": [
                 "file",
-                "email"
+                "email",
+                "schematizeddata"
             ],
             "hasProtection": false,
-            "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('285ccb20-8260-4b1a-9e08-b5e051ffc848')/parent/$entity",
-            "parent": null
-        },
-        {
-            "id": "8cf764ac-ef2b-4787-8ccd-0a8a65e7bafa",
-            "name": "Contoso Confidential",
-            "description": "",
-            "color": "",
-            "sensitivity": 4,
-            "tooltip": "Data labeled as Contoso Confidential",
-            "isActive": false,
-            "isAppliable": false,
-            "contentFormats": [
-                "file",
-                "email"
-            ],
-            "hasProtection": false,
-            "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('8cf764ac-ef2b-4787-8ccd-0a8a65e7bafa')/parent/$entity",
-            "parent": null
-        },
-        {
-            "id": "a20cbae4-0c05-448c-b342-cb6c618d0957",
-            "name": "Full Time Employees",
-            "description": "",
-            "color": "",
-            "sensitivity": 4,
-            "tooltip": "Data labeled as Contoso Confidential \ Full Time Employees.",
-            "isActive": true,
-            "isAppliable": true,
-            "contentFormats": [
-                "file",
-                "email"
-            ],
-            "hasProtection": false,
-            "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('a20cbae4-0c05-448c-b342-cb6c618d0957')/parent/$entity",
+            "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40constoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/$entity",
             "parent": {
-                "id": "8cf764ac-ef2b-4787-8ccd-0a8a65e7bafa",
-                "name": "Contoso Confidential",
+                "id": "566663c7-4d8d-4b8f-b280-784a31971dbe",
+                "name": "Highly Confidential",
                 "description": "",
                 "color": "",
-                "sensitivity": 4,
-                "tooltip": "Data labeled as Contoso Confidential",
+                "sensitivity": 7,
+                "tooltip": "The most sensitive information at Milt0rCorp; product plans, customer information, data not shareable even under NDA.",
                 "isActive": false,
                 "isAppliable": false,
                 "contentFormats": [
                     "file",
-                    "email"
+                    "email",
+                    "schematizeddata"
                 ],
-                "hasProtection": false
+                "hasProtection": false,
+                "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/parent/$entity",
+                "parent": null
             }
         }
-    ]
-}
+} // Truncated
+
 ```
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Indicate to the consuming application what actions it should take to remove the label information.
 
-Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one of more of the following: 
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one of more of the following: 
 
 * [justifyAction](../resources/security-justifyaction.md)
 * [metadataAction](../resources/security-metadataaction.md)
@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter              | Type                                                                      | Description                                                                                                                         |
 | :--------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo            | [contentInfo](../resources/security-contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo            | [contentInfo](../resources/security-contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs. |
 | downgradeJustification | [downgradeJustification](../resources/security-downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
 ## Response
@@ -80,54 +80,46 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-  "contentInfo": {
-    "@odata.type": "#microsoft.graph.security.contentInfo",
-    "format@odata.type": "#microsoft.graph.security.contentFormat",
-    "format": "default",
-    "identifier": null,
-    "state@odata.type": "#microsoft.graph.security.contentState",
-    "state": "rest",
-    "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
-    "metadata": [
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
-        "value": "True"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
-        "value": "Standard"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
-        "value": "1/1/0001 12:00:00 AM"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
-        "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-        "value": "General"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
-        "value": "0"
-      },
-      {
-        "@odata.type": "#microsoft.graph.keyValuePair",
-        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
-        "value": "00000000-0000-0000-0000-000000000000"
-      }
-    ]
-  },
-  "downgradeJustification": {
-        "@odata.type": "microsoft.graph.security.downgradeJustification"
+    "contentInfo": {
+        "@odata.type": "#microsoft.graph.security.contentInfo",
+        "identifier": null,
+        "state": "rest",
+        "metadata": [
+            {
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Enabled",
+                "value": "True"
+            },
+            {
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Method",
+                "value": "Standard"
+            },
+            {
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_SetDate",
+                "value": "1/1/0001 12:00:00 AM"
+            },
+            {
+                "@odata.type": "#microsoft.graph.security.keyValuePair",
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_SiteId",
+                "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
+            },
+            {
+                "@odata.type": "#microsoft.graph.security.keyValuePair",
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Name",
+                "value": "LabelScopedToBob_Tests"
+            },
+            {
+                "@odata.type": "#microsoft.graph.security.keyValuePair",
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_ContentBits",
+                "value": "0"
+            },
+            {
+                "@odata.type": "#microsoft.graph.security.keyValuePair",
+                "name": "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_ActionId",
+                "value": "00000000-0000-0000-0000-000000000000"
+            }
+        ]
+    },
+    "downgradeJustification": {
         "justificationMessage": "The information has been declassified.",
         "isDowngradeJustified": true
     }
@@ -147,18 +139,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.informationProtectionAction)",
     "value": [
         {
             "@odata.type": "#microsoft.graph.security.metadataAction",
             "metadataToRemove": [
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
-                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId"
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Enabled",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Method",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_SetDate",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_SiteId",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Name",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_ContentBits",
+                "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_ActionId"
             ],
             "metadataToAdd": []
         }

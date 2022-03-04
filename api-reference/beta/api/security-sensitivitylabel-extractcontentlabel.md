@@ -34,8 +34,18 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To extract content label as the signed-in user or specified user:
+
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
+POST /users/me/security/informationProtection/sensitivityLabels/extractContentLabel
+```
+
+To extract content label as the service principal:
+
+``` http
+POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
 ```
 
 ## Request headers
@@ -54,7 +64,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter   | Type                                       | Description                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo | [contentInfo](../resources/security-contentinfo.md) | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo | [contentInfo](../resources/security-contentinfo.md) | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs. |
 
 ## Response
 
@@ -76,47 +86,36 @@ User-agent: ContosoLOBApp/1.0
 
 {
     "contentInfo": {
-        "@odata.type": "#microsoft.graph.security.contentInfo",
-        "format@odata.type": "#microsoft.graph.security.contentFormat",
         "format": "default",
-        "identifier": null,
-        "state@odata.type": "#microsoft.graph.security.contentState",
+        "identifier": "MyDoc.docx",
         "state": "rest",
-        "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
         "metadata": [
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Enabled",
                 "value": "True"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Method",
                 "value": "Standard"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_SetDate",
                 "value": "1/1/0001 12:00:00 AM"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_SiteId",
                 "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-                "value": "Top Secret"
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_Name",
+                "value": "LabelScopedToBob_Tests"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_ContentBits",
                 "value": "0"
             },
             {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+                "name": "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_ActionId",
                 "value": "00000000-0000-0000-0000-000000000000"
             }
         ]
@@ -139,17 +138,8 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.contentLabel",
-    "creationDateTime": "1970-01-01T00:00:00Z",
+    "createdDateTime": "2001-01-01T12:00:00Z",
     "assignmentMethod": "standard",
-    "label": {
-        "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
-        "name": "Top Secret",
-        "description": "",
-        "color": "#000000",
-        "sensitivity": 13,
-        "tooltip": "This information is top secret.",
-        "isActive": true,
-        "parent" : null
-    }
+    "sensitivityLabelId": "0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3"
 }
 ```
