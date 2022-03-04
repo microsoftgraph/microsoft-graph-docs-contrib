@@ -1,8 +1,6 @@
 {
   "changelog": [
     {
-  "ChangeList":[
-    {
       "ChangeList": [
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
@@ -28,6 +26,8 @@
       "WorkloadArea": "Files",
       "SubArea": ""
     },
+    {
+  "ChangeList":[
     {
       "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
       "ApiChange": "Property",

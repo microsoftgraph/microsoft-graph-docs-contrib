@@ -3,7 +3,7 @@ title: "Get settings"
 description: "Read the properties and relationships of a settings object."
 author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: "Tenant Admin"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
