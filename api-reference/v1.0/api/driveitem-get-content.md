@@ -92,23 +92,23 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### Downloading files in JavaScript apps
-To download files in a JavaScript app you cannot use the `/content` API, since this responds with a `302` redirect.
+## Downloading files in JavaScript apps
+To download files in a JavaScript app, you cannot use the `/content` API, because this responds with a `302` redirect.
 A `302` redirect is explicitly prohibited when a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) _preflight_ is required, such as when providing the **Authorization** header.
 
-Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` would have redirected to.
+Instead, your app needs to select the `@microsoft.graph.downloadUrl` property, which returns the same URL that `/content` directs to.
 This URL can then be requested directly using XMLHttpRequest.
-Because these URLs are pre-authenticated they can be retrieved without a CORS preflight request.
+Because these URLs are pre-authenticated, they can be retrieved without a CORS preflight request.
 
-#### Example
+### Example
 
 To retrieve the download URL for a file, first make a request that includes the `@microsoft.graph.downloadUrl` property:
 
 ```http
-GET /drive/items/{item-id}?select=id,@microsoft.graph.downloadUrl
+GET /drive/items/{item-ID}?select=id,@microsoft.graph.downloadUrl
 ```
 
-This returns the id and download URL for a file:
+This returns the ID and download URL for a file:
 
 ```http
 HTTP/1.1 200 OK
