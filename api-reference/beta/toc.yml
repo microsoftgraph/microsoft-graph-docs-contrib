@@ -13976,17 +13976,17 @@ items:
           href: resources/informationprotectionlabel.md
           items:
           - name: List sensitivity labels
-            href: api/security-informationprotection-list-sensitivitylabels.md
+            href: api/security-list-sensitivitylabels.md
           - name: Get sensitivity label
-            href: api/security-informationprotection-sensitivitylabel-get.md
+            href: api/security-sensitivitylabel-get.md
           - name: Evaluate application
-            href: api/security-informationprotection-sensitivitylabel-evaluateapplication.md
+            href: api/security-sensitivitylabel-evaluateapplication.md
           - name: Evaluate classification result
-            href: api/security-informationprotection-sensitivitylabel-evaluateclassificationresults.md
+            href: api/security-sensitivitylabel-evaluateclassificationresults.md
           - name: Evaluate removal
-            href: api/security-informationprotection-sensitivitylabel-evaluateremoval.md
+            href: api/security-sensitivitylabel-evaluateremoval.md
           - name: Extract label
-            href: api/security-informationprotection-sensitivitylabel-extractcontentlabel.md
+            href: api/security-sensitivitylabel-extractcontentlabel.md
         - name: Threat assessment
           items:
           - name: Overview

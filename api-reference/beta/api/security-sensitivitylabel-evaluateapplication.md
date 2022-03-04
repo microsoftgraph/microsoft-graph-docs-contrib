@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To get evaluate as the signed-in user or specified user:
+To evaluate as the signed-in user or specified user:
 
 ``` http
 POST /{userId}/security/informationProtection/sensitivityLabels/evaluateApplication

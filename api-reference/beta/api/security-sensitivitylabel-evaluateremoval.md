@@ -39,8 +39,18 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To evaluate removal as the signed-in user or specified user:
+
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
+POST /users/me/security/informationProtection/sensitivityLabels/evaluateRemoval
+```
+
+To evaluate removal as the service principal:
+
+``` http
+POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
 ## Request headers
