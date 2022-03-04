@@ -342,7 +342,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. The **customExtensionHandlers** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension handlers for a policy](https://docs.microsoft.com/en-us/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta&tabs=http#example-2-retrieve-the-custom-extension-handlers-for-a-policy)
+The following is an example of the response. The **customExtensionHandlers** object isn't returned by default. To retrieve this object, use the **GET** method with `$expand`. For more information, see [Retrieve the custom extension handlers for a policy](accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy)
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
