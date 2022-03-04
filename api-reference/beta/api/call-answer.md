@@ -49,6 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
 | callbackUri         | String                                                                                                                               | Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`. |
 | acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
+| callOptions            | [incomingCallOptions](../resources/incomingCallOptions.md)                                                         | The call options.   |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | The media configuration. Required.                                                                                                                                                                                 |
 | participantCapacity | Int                                                                                                                                  | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
 
@@ -80,6 +81,10 @@ Content-Length: 211
   "acceptedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "participantCapacity": 200
 }
 ```
@@ -460,6 +465,54 @@ Content-Type: application/json
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
+    }
+  ]
+}
+```
+
+##### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
+    }
+  ]
+}
+```
+
+##### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions/2765eb15-01f8-47c6-b12b-c32111a4a86f"
     }
   ]
 }
