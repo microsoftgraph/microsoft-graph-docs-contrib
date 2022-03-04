@@ -1,6 +1,6 @@
 ---
 title: "auditEvent resource type"
-description: "Represents Microsoft 365 Lighthouse audit events for managed tenants."
+description: "Represents an audit event for managed tenants in Microsoft 365 Lighthouse."
 author: "vkumar2015"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft 365 Lighthouse audit events for managed tenants.
+Represents an audit event for managed tenants in Microsoft 365 Lighthouse.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,8 +25,8 @@ Represents Microsoft 365 Lighthouse audit events for managed tenants.
 |Property|Type|Description|
 |:---|:---|:---|
 |activity|String|A string which uniquely represents the operation that occurred. Required. Read-only.|
-|activityDateTime|DateTimeOffset|The time this activity happened. Required. Read-only.|
-|activityId|String|The identifier of the activity request which made this audit event. Required. Read-only.|
+|activityDateTime|DateTimeOffset|The time when the activity ocurred. Required. Read-only.|
+|activityId|String|The identifier of the activity request that made the audit event. Required. Read-only.|
 |category|String|A category which represents a logical grouping of activities. Required. Read-only.|
 |httpVerb|String|The HTTP verb that was used when making the API request. Required. Read-only.|
 |id|String|The unique identifier of the audit event. Required. Read-only.|
