@@ -5524,8 +5524,25 @@ items:
             href: api/agreement-update.md
           - name: Delete
             href: api/agreement-delete.md
-          - name: List acceptance status
-            href: api/user-list-agreementacceptances.md
+          - name: Agreement acceptances
+            href: resources/agreementacceptance.md
+            items:
+            - name: List acceptances
+              href: api/user-list-agreementacceptances.md
+            - name: List acceptance status
+              href: api/user-list-acceptances.md
+          - name: Agreement files
+            items:
+            - name: Agreement file
+              href: resources/agreementfile.md
+            - name: Agreement files
+              href: resources/agreementfiles.md
+            - name: Get default file
+              href: api/agreementfile-get.md
+            - name: Create localized files
+              href: api/agreement-post-files.md
+            - name: List localized files
+              href: api/agreement-list-files.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
