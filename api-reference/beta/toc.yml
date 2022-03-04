@@ -540,6 +540,12 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
+        - name: Settings for Microsoft 365 data access in Microsoft applications
+          items:
+          - name: List
+            href: api/organizationsettings-list-microsoftapplicationdataaccess.md
+          - name: Update
+            href: api/microsoftapplicationdataaccesssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -13216,6 +13222,12 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
+        - name: Settings for Microsoft 365 data access in Microsoft applications
+          items:
+          - name: List
+            href: api/organizationsettings-list-microsoftapplicationdataaccess.md
+          - name: Update
+            href: api/microsoftapplicationdataaccesssettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
