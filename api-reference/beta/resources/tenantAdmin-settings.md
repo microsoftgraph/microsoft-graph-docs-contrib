@@ -85,48 +85,32 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "@odata.type": "#microsoft.graph.tenantAdmin.settings",
-    "id": "e79403fa-abdf-af49-56c5-f7119d8b1948",
-    "allowedDomainGuidsForSyncApp": [
-        "bdd1ab9b-3fd0-4def-a761-ec8d7471732c",
-        "ad31vb6b-5zd0-7tyg-m231-kj8d6578432c"
-    ],
-    "availableManagedPathsForSiteCreation": [
-        "/sites/",
-        "/teams/"
-    ],
-    "deletedUserPersonalSiteRetentionPeriodInDays": 344,
-    "excludedFileExtensionsForSyncApp": [
-        ".md",
-        ".git"
-    ],
-    "imageTaggingOption": "basic",
-    "isCommentingOnSitePagesEnabled": true,
-    "isFileActivityNotificationEnabled": true,
-    "isLoopEnabled": true,
-    "isMacSyncAppEnabled": false,
-    "isResharingByExternalUsersEnabled": true,
-    "isSharePointMobileNotificationEnabled": true,
-    "isSharePointNewsfeedEnabled": true,
-    "isSiteCreationEnabled": true,
-    "isSiteCreationUIEnabled": true,
-    "isSitePagesCreationEnabled": true,
-    "isSitesStorageLimitAutomatic": true,
-    "isSyncButtonHiddenOnPersonalSite": true,
-    "isUnmanagedSyncAppForTenantRestricted": true,
-    "personalSiteDefaultStorageLimitInMB": 113664,
-    "sharingAllowedDomainList" : [
-        "contoso.com",
-        "fabrikam.com"
-    ],
-    "sharingBlockedDomainList" : [
-        "contoso.com",
-        "fabrikam.com"
-    ],
-    "sharingCapability": "externalUserAndGuestSharing",
-    "sharingDomainRestrictionMode": "allowList",
-    "siteCreationDefaultManagedPath": "/sites/",
-    "siteCreationDefaultStorageLimitInMB": 808034,
-    "tenantDefaultTimezone": "(UTC-05:00) Eastern Time (US and Canada)"
+    "id": "string (identifier)",
+    "allowedDomainGuidsForSyncApp": ["string (identifier)"],
+    "availableManagedPathsForSiteCreation": ["string"],
+    "deletedUserPersonalSiteRetentionPeriodInDays": 236,
+    "excludedFileExtensionsForSyncApp": ["string"],
+    "imageTaggingOption": {"@odata.type": "microsoft.graph.tenantAdmin.imageTaggingChoice"},
+    "isCommentingOnSitePagesEnabled": "boolean",
+    "isFileActivityNotificationEnabled": "boolean",
+    "isLoopEnabled": "boolean",
+    "isMacSyncAppEnabled": "boolean",
+    "isResharingByExternalUsersEnabled": "boolean",
+    "isSharePointMobileNotificationEnabled": "boolean",
+    "isSharePointNewsfeedEnabled": "boolean",
+    "isSiteCreationEnabled": "boolean",
+    "isSiteCreationUIEnabled": "boolean",
+    "isSitePagesCreationEnabled": "boolean",
+    "isSitesStorageLimitAutomatic": "boolean",
+    "isSyncButtonHiddenOnPersonalSite": "boolean",
+    "isUnmanagedSyncAppForTenantRestricted": "boolean",
+    "personalSiteDefaultStorageLimitInMB": 80000,
+    "sharingAllowedDomainList" : ["string"],
+    "sharingBlockedDomainList" : ["string"],
+    "sharingCapability": {"@odata.type": "microsoft.graph.tenantAdmin.sharingCapabilities"},
+    "sharingDomainRestrictionMode": {"@odata.type": "microsoft.graph.tenantAdmin.imageTaggingChoice"},
+    "siteCreationDefaultManagedPath": "string",
+    "siteCreationDefaultStorageLimitInMB": 240000,
+    "tenantDefaultTimezone": "string"
 }
 ```
