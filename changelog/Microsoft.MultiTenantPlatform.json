@@ -12,10 +12,10 @@
               },
               {
                 "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
-                "ApiChange": "Resource",
+                "ApiChange": "Relationship",
                 "ChangedApiName": "auditEvents",
                 "ChangeType": "Addition",
-                "Description": "Added the **auditEvents** relationship to [managedTenant](https://docs.microsoft.com/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+                "Description": "Added the **auditEvents** navigation property to [managedTenant](https://docs.microsoft.com/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
                 "Target": "managedTenant"
               },
               {
@@ -23,8 +23,8 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "GET",
                 "ChangeType": "Addition",
-                "Description": "Added the [list](https://docs.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
-                "Target": "managedTenant"
+                "Description": "Added the [list](https://docs.microsoft.com/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta) operation to the [auditEvent](https://docs.microsoft.com/graph/api/resources/managedtenants-auditEvent?view=graph-rest-beta) resource.",
+                "Target": "auditEvent"
               },
             ],
             "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
