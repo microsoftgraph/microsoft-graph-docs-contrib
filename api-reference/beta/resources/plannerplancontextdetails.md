@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 {
   "url": "string",
   "customLinkText": "string",
-  "displayLinkType": "string"
+  "displayLinkType": "string",
   "state": "string"
 }
 
