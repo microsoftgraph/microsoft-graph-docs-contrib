@@ -31,10 +31,6 @@ Retrieve a list of contentSharingSession objects in the call.
 GET /communications/calls/{id}/contentSharingSessions
 ```
 
-## Optional query parameters
-
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
 ## Request headers
 
 | Name          | Description               |
