@@ -29,7 +29,7 @@ The **plannerPlanContextDetails** resource contains additional information about
 |:------------------|:----------------------------------------------------------------------|
 |active             | The context has no problems.                                          |
 |delinked           | A formerly linked plannerPlanContext is no longer linked to the plan. |
-|unknownFutureValue | Sentinel value to indicate future values.                             |
+|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                     |
 
 ## JSON representation
 
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   "url": "string",
   "customLinkText": "string",
   "displayLinkType": {"@odata.type": "microsoft.graph.plannerPlanContextType"}
-  "state": {"@odata.type": "microsoft.graph.plannerContextState"}
+  "state": "string"
 }
 
 ```
