@@ -1,7 +1,7 @@
 ---
 title: "List members of a chat"
 description: "Retrieve members of a chat."
-author: "bhartono"
+author: "anandjo"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

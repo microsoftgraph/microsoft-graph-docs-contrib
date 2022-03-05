@@ -1,7 +1,7 @@
 ---
 title: "Create shift"
 description: "Create a new shift."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
