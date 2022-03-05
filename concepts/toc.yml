@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: National cloud deployments
             href: deployments.md
-          - name: Hybrid deployments (preview)
+          - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
       - name: Tutorials
         items:
