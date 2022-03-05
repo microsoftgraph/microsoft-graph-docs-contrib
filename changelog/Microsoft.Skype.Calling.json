@@ -33,6 +33,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **isContentSharingNotificationEnabled** property to [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
           "Target": "callOptions"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentSharingSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentSharingSession](https://docs.microsoft.com/en-us/graph/api/resources/contentSharingSession?view=graph-rest-beta) resource.",
+          "Target": "call"
         }
       ],
       "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
