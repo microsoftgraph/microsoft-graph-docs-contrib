@@ -40,14 +40,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.plannerPlanContextDetails"
 }-->
 
 ```json
 {
   "url": "string",
   "customLinkText": "string",
-  "displayLinkType": {"@odata.type": "microsoft.graph.plannerPlanContextType"}
+  "displayLinkType": "string"
   "state": "string"
 }
 
