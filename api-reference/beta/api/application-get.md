@@ -164,7 +164,8 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }
+    },
+    "windows": null
 }
 ```
 
