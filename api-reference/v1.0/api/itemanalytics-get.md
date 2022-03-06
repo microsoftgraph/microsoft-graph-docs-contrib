@@ -68,7 +68,7 @@ The following is an example of a request.
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
-GET /drives/{drive-id}/items/{item-id}/analytics
+GET /drives/{drive-id}/items/{item-id}/analytics/allTime
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
@@ -104,12 +104,6 @@ Content-type: application/json
         "access": {
             "actionCount": 123,
             "actorCount": 89
-        }
-    },
-    "lastSevenDays": {
-        "access": {
-            "actionCount": 52,
-            "actorCount": 41
         }
     }
 }
