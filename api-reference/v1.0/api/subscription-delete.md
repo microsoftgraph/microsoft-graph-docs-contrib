@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete a subscription.
 
-See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+For the list of resources that support subscribing to change notifications, see the table in the [Permissions](#permissions) section.
 
 ## Permissions
 
@@ -82,9 +82,9 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,9 +122,10 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
+
 <!-- {
   "blockType": "response"
 } -->
