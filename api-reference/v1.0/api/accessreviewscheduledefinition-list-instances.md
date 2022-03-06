@@ -1,6 +1,6 @@
 ---
 title: "List instances"
-description: "Get the accessReviewInstance resources from the instances navigation property."
+description: "Get a list of the accessReviewInstance objects and their properties."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List instances
 Namespace: microsoft.graph
 
-Get the [accessReviewInstance](../resources/accessreviewinstance.md) resources from the instances navigation property on an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.
 
 >[!NOTE]
 >The default page size for this API is 100 accessReviewScheduleDefinition objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances
+GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-csharp-snippets.md)]
@@ -99,17 +99,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('2dca8959-b716-4b4c-a93d-a535c01eb6e0')/instances",
-    "@odata.count": 1,
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('8564a649-4f67-4e09-88e7-55def6530e88')/instances",
+    "@odata.count": 2,
     "value": [
         {
-            "id": "8d035c9d-798d-47fa-beb4-f986a4b8126f",
-            "startDateTime": "2021-05-01T07:00:00Z",
-            "endDateTime": "2021-05-15T07:00:00Z",
-            "status": "InProgress",
+            "id": "7bc18cf4-3d70-4009-bc8e-a7c5adb30849",
+            "startDateTime": "2021-03-09T23:10:28.83Z",
+            "endDateTime": "2021-03-09T23:10:28.83Z",
+            "status": "Applied",
             "scope": {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/v1.0/groups/0914d821-ca3b-45cc-98ee-54c00a04deef/transitiveMembers",
+                "query": "/v1.0/groups/f661fdd0-f0f7-42c0-8281-e89c6527ac63/members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
                 "queryType": "MicrosoftGraph",
                 "queryRoot": null
             }

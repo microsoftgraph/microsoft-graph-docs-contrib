@@ -18,7 +18,7 @@ contentInfo.state = ContentState.REST;
 
 LinkedList<ClassificationResult> classificationResultsList = new LinkedList<ClassificationResult>();
 ClassificationResult classificationResults = new ClassificationResult();
-classificationResults.sensitiveTypeId = UUID.fromString("cb353f78-2b72-4c3c-8827-92ebe4f69fdf");
+classificationResults.sensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf";
 classificationResults.count = 4;
 classificationResults.confidenceLevel = 75;
 

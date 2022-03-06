@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -43,7 +43,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chat][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
-- Teams [presence][] (preview)
+- Teams [presence][]
 - Teams [team][]
 - [todoTask][] (preview)
 - [user][]
@@ -325,7 +325,7 @@ The following table lists the latency to expect between an event happening in th
 |[group][] | Less than 2 minutes | 15 minutes |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[presence][] | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[team][] | Less than 10 seconds | 60 minutes |

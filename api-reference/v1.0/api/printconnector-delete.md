@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 [!INCLUDE [sample-code](../includes/snippets/go/delete-printconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-printconnector-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

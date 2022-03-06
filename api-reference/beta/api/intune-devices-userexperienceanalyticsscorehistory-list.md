@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 705
 
 {
   "value": [
@@ -74,10 +74,12 @@ Content-Length: 627
       "coreSigninScore": 15,
       "recommendedSoftwareScore": 8,
       "appHealthOverallScore": 5,
+      "workFromAnywhereScore": 5,
       "batteryHealthScore": 2,
       "startupTotalDevices": 3,
       "recommendedSoftwareTotalDevices": 15,
       "appHealthTotalDevices": 5,
+      "workFromAnywhereTotalDevices": 12,
       "batteryHealthTotalDevices": 9,
       "restartScore": 12
     }

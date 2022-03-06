@@ -1,6 +1,6 @@
 ---
 title: "bookingService resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
  
 Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
+Inherits from [bookingNamedEntity](bookingNamedEntity.md).
+
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -28,17 +30,19 @@ Represents information about a particular service provided by a [bookingBusiness
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
+|customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains the set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
 |defaultPrice|Double|The default monetary price for the service.|
-|defaultPriceType|string|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|bookingPriceType|The default way the service is charged. Possible values are: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[bookingReminder](bookingreminder.md) collection|The default set of reminders for an appointment of this service. The value of this property is available only when reading this **bookingService** by its ID.|
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
-|emailAddress|String|An email address|
 |id|String|The ID of that service, in a GUID format. Read-only.|
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
 |preBuffer|Duration|The time to buffer before an appointment for this service can start.|
@@ -65,14 +69,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "additionalInformation": "String",
   "defaultDuration": "String (timestamp)",
   "defaultLocation": {"@odata.type": "microsoft.graph.location"},
   "defaultPrice": 1024,
-  "defaultPriceType": "string",
+  "defaultPriceType": {"@odata.type": "microsoft.graph.bookingPriceType"},
   "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
   "description": "String",
   "displayName": "String",
-  "emailAddress": "String",
   "id": "String (identifier)",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
@@ -82,6 +86,12 @@ The following is a JSON representation of the resource.
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "smsNotificationsEnabled": "Boolean",
   "staffMemberIds": ["String"],
+  "customQuestions": [
+    {
+      "@odata.type": "microsoft.graph.bookingQuestionAssignment"
+    }
+  ],
+  "maximumAttendeesCount": "Integer",
   "webUrl": "String"
 }
 

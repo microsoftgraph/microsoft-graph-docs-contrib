@@ -70,7 +70,7 @@ The status is a read-only property in the submission and changes based on the ac
 | State | Description | REST API call |
 |:--|:--|:--|
 | Working |	Initial state after the submission is created. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted	| It happens after the student turned i n the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Submitted	| It happens after the student turned in the assignment. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Returned | After the teacher returned the assignment back to the student. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Reassigned | After the teacher returned the assignment  to the student for revision. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
@@ -113,4 +113,4 @@ The following limits apply to all API calls:
 
 * The maximum number of assignments and submissions resources are 10 for the teacher and plus 10 for the student.
 * The maximum size allowed for resources is 50 MB overall or 10 resources.
-* Throttling limits apply; for details, see [Microsoft Graph throttling guidance](https://docs.microsoft.com/graph/throttling).
+* Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).

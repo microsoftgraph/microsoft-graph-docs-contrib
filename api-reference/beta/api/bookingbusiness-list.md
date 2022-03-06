@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusinesses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response 1
@@ -99,11 +103,11 @@ Content-type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
-            "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
+            "id":"Contosolunchdelivery@contoso.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
         },
         {
-            "id":"Fabrikam@M365B489948.onmicrosoft.com",
+            "id":"Fabrikam@contoso.onmicrosoft.com",
             "displayName":"Fabrikam",
         }
     ]
@@ -140,6 +144,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/query-bookingbusinesses-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

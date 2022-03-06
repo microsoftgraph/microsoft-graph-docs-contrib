@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
 description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
@@ -731,7 +731,7 @@ No Content - 204
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
 - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)

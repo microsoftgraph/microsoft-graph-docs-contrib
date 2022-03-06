@@ -8,21 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCloudPcProvisioningPolicy()
-displayName := "Display Name value"
+displayName := "HR provisioning policy"
 requestBody.SetDisplayName(&displayName)
-description := "Description value"
+description := "Provisioning policy for India HR employees"
 requestBody.SetDescription(&description)
-onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701ffff"
+onPremisesConnectionId := "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 requestBody.SetOnPremisesConnectionId(&onPremisesConnectionId)
-imageId := "Image ID value"
-requestBody.SetImageId(&imageId)
-imageDisplayName := "Image Display Name value"
-requestBody.SetImageDisplayName(&imageDisplayName)
-imageType := "custom"
-requestBody.SetImageType(&imageType)
-requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-}
 options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }

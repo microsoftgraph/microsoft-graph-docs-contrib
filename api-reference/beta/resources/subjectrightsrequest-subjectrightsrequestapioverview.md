@@ -28,7 +28,6 @@ The API includes the following key entities.
 | Subject rights request detail | [microsoft.graph.subjectRightsRequestDetail](subjectRightsRequestDetail.md) | Represents the details of a subject rights request, including number of items found, number of items reviewed, and so on. |
 | Subject rights request stage detail | [microsoft.graph.subjectRightsRequestStageDetail](subjectRightsRequestStageDetail.md) | Represents the properties of the stages of a subject rights request. |
 
->[!IMPORTANT]
->The subject rights request API permissions are not currently available. For details, see [Known issues](/graph/known-issues#compliance).
+
 
 

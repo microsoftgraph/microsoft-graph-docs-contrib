@@ -142,6 +142,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |storageAllowUsb|Boolean|Indicates whether or not to allow USB mass storage.|
 |storageBlockExternalMedia|Boolean|Indicates whether or not to block external media.|
 |storageBlockUsbFileTransfer|Boolean|Indicates whether or not to block USB file transfer.|
+|systemUpdateFreezePeriods|[androidDeviceOwnerSystemUpdateFreezePeriod](../resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md) collection|Indicates the annually repeating time periods during which system updates are postponed. This collection can contain a maximum of 500 elements.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|The type of system update configuration. Possible values are: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
@@ -372,6 +373,15 @@ Here is a JSON representation of the resource.
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 1024,
+      "startDay": 1024,
+      "endMonth": 1024,
+      "endDay": 1024
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 1024,
   "systemUpdateWindowEndMinutesAfterMidnight": 1024,
   "systemUpdateInstallType": "String",

@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [serviceHealthIssue](../resources/servicehealthissue.md) objects in the response body. The response is paginated and each page contains 100 objects.
 
 ## Example
 
@@ -102,6 +102,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/issues",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues?$skip=100",
   "value": [
     {
       "startDateTime": "2020-11-13T21:00:00Z",

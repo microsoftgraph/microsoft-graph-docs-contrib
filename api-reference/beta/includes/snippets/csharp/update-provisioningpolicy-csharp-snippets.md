@@ -8,12 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var cloudPcProvisioningPolicy = new CloudPcProvisioningPolicy
 {
-	DisplayName = "Display Name value",
-	Description = "Description value",
-	OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-	ImageId = "Image ID value",
-	ImageDisplayName = "Image Display Name value",
-	ImageType = CloudPcProvisioningPolicyImageType.Custom
+	DisplayName = "HR provisioning policy",
+	Description = "Provisioning policy for India HR employees",
+	OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 };
 
 await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"]

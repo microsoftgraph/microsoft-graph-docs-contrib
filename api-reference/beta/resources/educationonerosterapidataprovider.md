@@ -58,12 +58,8 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "schoolsIds": ["String"],
   "termIds": ["String"],
   "connectionSettings": {
-    "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings",
     "clientId": "String",
     "clientSecret": "String"
-  },
-  "customizations": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
   }
 }
 ```
@@ -78,7 +74,6 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.ediscovery.settings"
   ]
 }-->
 

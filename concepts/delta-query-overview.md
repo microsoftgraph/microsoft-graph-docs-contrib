@@ -1,7 +1,7 @@
 ---
 title: "Use delta query to track changes in Microsoft Graph data"
 description: "Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -113,7 +113,7 @@ Delta query is currently supported for the following resources. Note that some r
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource                                    |
-| Education Ccasses                                              | [delta](/graph/api/educationclass-delta) function of the [educationClass](/graph/api/resources/educationclass) resource                                      |
+| Education classes                                              | [delta](/graph/api/educationclass-delta) function of the [educationClass](/graph/api/resources/educationclass) resource                                      |
 | Education users                                                | [delta](/graph/api/educationuser-delta) function of the [educationUser](/graph/api/resources/educationuser) resource                                         |
 | Education schools                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource                                   |
 | Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta) function of the [event](/graph/api/resources/event) resource                         |
@@ -182,6 +182,8 @@ Navigation properties are not supported. For example, you cannot track changes t
 ### Processing delays
 
 Expect varying delays between the time a change is made to a resource instance, which can be through an app interface or API, and the time the tracked change is reflected in a delta query response.
+
+Sometimes the changes that have occurred to the object might not be indicated when you select the `nextLink` or the `deltaLink`. This is because some requests might have replication delays for objects that were recently created, updated, or deleted. Retry the `nextLink` or `deltaLink` after some time to retrieve the latest changes.
 
 ### National clouds
 
