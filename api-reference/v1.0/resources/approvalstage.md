@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies decision stages in the approval.
+Specifies a decision stage in an [approval](approval.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -29,7 +29,7 @@ Specifies decision stages in the approval.
 |id|String|The identifier of the stage associated with an approval object. Read-only.|
 |justification|String|The justification associated with the approval stage decision.|
 |reviewResult|String|The result of this approval record. Possible values include: `NotReviewed`, `Approved`, `Denied`.|
-|reviewedBy|[userIdentity](useridentity.md) | The identifier of the reviewer. Read-only.|
+|reviewedBy|[identity](identity.md) | The identifier of the reviewer. Read-only.|
 |reviewedDateTime|DateTimeOffset|The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |status|String|The stage status. Possible values: `InProgress`, `Initializing`, `Completed`, `Expired`. Read-only.|
 

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), apply an approve or deny decision on an [approvalStage](../resources/approvalstage.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), approve or deny an [approvalStage](../resources/approvalstage.md) object in an [approval](../resources/approval.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/stages/{id}
+PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}
 ```
 
 ## Request headers
@@ -43,13 +43,13 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`.|
+| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`. Required.|
 | justification | String | Justification related to the approver's decision. |
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code in the response body. However, if the caller does not have the right permissions, the method returns a `403 Forbidden` response code, or if the approval id is not found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` in the response body.
+If successful, this method returns a `204 No Content` response code in the response body. IOf the caller does not have the right permissions, the method returns a `403 Forbidden` response code, or if the approval id is not found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` response code.
 
 ## Examples
 
@@ -73,8 +73,6 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -82,7 +80,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

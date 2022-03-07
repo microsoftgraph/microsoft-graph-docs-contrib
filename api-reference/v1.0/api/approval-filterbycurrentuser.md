@@ -1,16 +1,16 @@
 ---
-title: "Filter accessPackageAssignmentApprovals"
-description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property."
+title: "approval filterByCurrentUser"
+description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property for the current user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# FilterByCurrentUser accessPackageAssignmentApprovals
+# approval filterByCurrentUser
 Namespace: microsoft.graph
 
-In Azure AD entitlement management, return a collection of the access package assignment approvals.  With the option of `approver`, this returns the access package assignment approvals that the calling user as an approver is in scope of approving, including those requests they have to take action on.
+In Azure AD entitlement management, return a collection of [access package assignment approvals](../resources/approval.md). The returned objects are those which the calling user is in the scope of being an approver.
 
 ## Permissions
 
@@ -32,8 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
-## Optional query parameters
+## Function parameters
 This method supports the OData query parameters for paging through a large result set. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|on|approvalFilterByCurrentUserOptions| The allowed value is `approver`. Required.|
 
 ## Request headers
 |Name|Description|
@@ -52,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_approval"
+  "name": "approvalthis-filterbycurrentuser"
 }
 -->
 ``` http

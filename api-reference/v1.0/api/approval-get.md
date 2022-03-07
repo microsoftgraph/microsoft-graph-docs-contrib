@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
+GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [approval](../resources/approval.md) object in the response body. However, if the caller does not have the right permissions, the method returns a `403 Forbidden` response code.
+If successful, this method returns a `200 OK` response code and the requested [approval](../resources/approval.md) object in the response body. If the caller does not have the right permissions, the method returns a `403 Forbidden` response code.
 
 ## Examples
 

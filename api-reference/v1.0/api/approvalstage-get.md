@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties of an [approvalStage](../resources/approvalstage.md) object.  An approval stage is contained within an [approval](../resources/approval.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties of an [approvalStage](../resources/approvalstage.md) object. An approval stage is contained within an [approval](../resources/approval.md) object.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/stages/{id}
+GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [approvalStage](../resources/approvalstage.md) object in the response body. However, if the caller does not have the right permissions, the method returns a `403 Forbidden` response code.
+If successful, this method returns a `200 OK` response code and the [approvalStage](../resources/approvalstage.md) object in the response body. If the caller does not have the right permissions, the method returns a `403 Forbidden` response code.
 
 ## Examples
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and the [approvalSta
 
 <!-- {
   "blockType": "request",
-  "name": "get_approvalstage_2"
+  "name": "get_approvalstage"
 }
 -->
 ``` http
