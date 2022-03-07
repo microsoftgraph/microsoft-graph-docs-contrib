@@ -312,7 +312,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- Sort is not supported for **message**, **event**.
+- Sort is not supported for **message** and **event**.
 - Sort by relevance cannot be specified in **sortProperties**.
 
 ## Next steps
