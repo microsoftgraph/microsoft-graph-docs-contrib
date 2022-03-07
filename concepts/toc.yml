@@ -208,7 +208,7 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Devices and apps
+      - name: Device and app management
         expanded: true
         items:
           - name: Cloud printing
