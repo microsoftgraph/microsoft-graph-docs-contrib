@@ -1,6 +1,6 @@
 ---
 title: "approvalStage resource type"
-description: "The approvalStage object associated with a userConsentRequest."
+description: "The approvalStage object associated with a userConsentRequest or an access package assignment request."
 author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "governance"
