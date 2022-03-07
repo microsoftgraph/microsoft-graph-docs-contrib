@@ -23,7 +23,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the [list approval stages](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-list) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+        "Description": "Added the [list approval stages](https://docs.microsoft.com/en-us/graph/api/approval-list-stage) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
         "Target": "approval"
         },
         {
@@ -31,7 +31,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-get) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/approvalstage-get) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource for an approver in entitlement management.",
         "Target": "approvalstage"
         },
         {
@@ -39,7 +39,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "PATCH",
         "ChangeType": "Addition",
-        "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-stage-update) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalstage?view=graph-rest-1.0) resource for an approver in entitlement management.",
+        "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/approvalstage-update) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalstage?view=graph-rest-1.0) resource for an approver in entitlement management.",
         "Target": "approvalstage"
         }
       ],

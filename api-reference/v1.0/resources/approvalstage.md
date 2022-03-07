@@ -16,9 +16,9 @@ Specifies decision stages in the approval.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List approvalStages](../api/entitlementmanagement-accesspackageassignmentapproval-stage-list.md) | [approvalStage](approvalstage.md) collection | List the **approvalStage** objects associated with an **approval** object in entitlement management. |
-|[Get approvalStage](../api/entitlementmanagement-accesspackageassignmentapproval-stage-get.md) | [approvalStage](approvalstage.md) | Retrieve the properties of an **approvalStage** object in entitlement management. |
-|[Update approvalStage](../api/entitlementmanagement-accesspackageassignmentapproval-stage-update.md) | None | Apply approve or deny decision on an **approvalStage** object in entitlement management. |
+|[List approvalStages](../api/approval-list-stages.md) | [approvalStage](approvalstage.md) collection | List the **approvalStage** objects associated with an **approval** object in entitlement management. |
+|[Get approvalStage](../api/approvalstage-get.md) | [approvalStage](approvalstage.md) | Retrieve the properties of an **approvalStage** object in entitlement management. |
+|[Update approvalStage](../api/approvalstage-update.md) | None | Apply approve or deny decision on an **approvalStage** object in entitlement management. |
 
 ## Properties
 
