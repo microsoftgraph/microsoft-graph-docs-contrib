@@ -12796,6 +12796,8 @@ items:
             items:
             - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
+            - name: Migrate to new Role Management APIs
+              href: resources/privilegedidentitymanagement-migrate-azuread.md
             - name: Privileged role
               href: resources/privilegedrole.md
               items:
@@ -12861,6 +12863,8 @@ items:
             items:
             - name: Azure resources
               href: resources/privilegedidentitymanagement-resources.md
+            - name: Migrate to new ARM APIs
+              href: resources/privilegedidentitymanagement-migrate-azureresources.md
             - name: Managed resources
               href: resources/governanceresource.md
               items:
