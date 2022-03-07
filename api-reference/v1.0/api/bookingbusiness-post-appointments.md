@@ -33,13 +33,14 @@ POST /solutions/bookingBusinesses/{id}/appointments
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of a [bookingAppointment](../resources/bookingappointment.md) object.
 
-If maximumAttedeesCount of the service is greater than 1:
+If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
 
-- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the create Customer API.
+- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md).
 
-- Pass valid customer IDs while creating or updating the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object.
+- Pass valid customer IDs when you create or update the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object.
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [bookingAppointment](../resources/bookingappointment.md) object in the response body.

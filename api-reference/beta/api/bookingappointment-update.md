@@ -14,7 +14,9 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -28,19 +30,16 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## Optional request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-If maximumAttedeesCount of the service is greater than 1:
-
-- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md).
-
-- Pass valid customer IDs while creating or updating the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -77,11 +76,19 @@ If maximumAttedeesCount of the service is greater than 1:
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](../resources/bookingstaffmember.md) who is scheduled in this appointment.|
 |start|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
+> [!NOTE]
+> If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
+> - Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md).
+> - Pass valid customer IDs when you create or update the appointment. In case a valid customer ID isn’t passed, that customer won't be present in the resulting appointment object.
 
 ## Response
+
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+
 ## Example
+
 ### Request
+
 The following example changes the date of service by a day and updates the invoice date.
 
 # [HTTP](#tab/http)
