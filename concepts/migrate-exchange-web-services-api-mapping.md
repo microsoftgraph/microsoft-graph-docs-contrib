@@ -1,18 +1,21 @@
 ---
-title: "Exchange Web Services API mapping to Microsoft Graph"
+title: "Exchange Web Services (EWS) API mapping to Microsoft Graph"
 description: "Describes equivalent Microsoft Graph APIs for Exchange Web Services APIs."
 author: "jasonjoh"
 ms.localizationpriority: medium
-ms.prod: "Exchange"
+ms.prod: "exchange"
+doc_type: conceptualPageType
 ---
 
-# Exchange Web Services API mapping to Microsoft Graph
+# Exchange Web Services (EWS) API mapping to Microsoft Graph
+
+This article provides equivalent Microsoft Graph APIs for Exchange Web Services (EWS).
 
 ## Utility APIs
 
 | EWS API                                                                                             | Microsoft Graph API |
 |-----------------------------------------------------------------------------------------------------|-----|
-| [ConvertId](/exchange/client-developer/web-service-reference/convertid-operation)                   | [translate Exchange Ids](/graph/api/user-translateexchangeids) |
+| [ConvertId](/exchange/client-developer/web-service-reference/convertid-operation)                   | [Translate Exchange IDs](/graph/api/user-translateexchangeids) |
 | [ResolveNames](/exchange/client-developer/web-service-reference/resolvenames-operation)             | [List people](/graph/api/user-list-people) |
 | [GetServerTimeZones](/exchange/client-developer/web-service-reference/getservertimezones-operation) | [Get time zone choices](/graph/api/outlookuser-supportedtimezones) |
 
@@ -69,8 +72,8 @@ ms.prod: "Exchange"
 
 | EWS API                                                                                             | Microsoft Graph API |
 |-----------------------------------------------------------------------------------------------------|-----|
-| [GetUserOofSettings](/exchange/client-developer/web-service-reference/getuseroofsettings-operation) | [Get mailbox settings](/graph/api/user-get-mailboxsettings) |
-| [SetUserOofSettings](/exchange/client-developer/web-service-reference/setuseroofsettings-operation) | [Update mailbox settings](/graph/api/user-update-mailboxsettings) |
+| [GetUserOofSettings](/exchange/client-developer/web-service-reference/getuseroofsettings-operation) | [Get user mailbox settings](/graph/api/user-get-mailboxsettings) |
+| [SetUserOofSettings](/exchange/client-developer/web-service-reference/setuseroofsettings-operation) | [Update user mailbox settings](/graph/api/user-update-mailboxsettings) |
 
 ### Notifications
 

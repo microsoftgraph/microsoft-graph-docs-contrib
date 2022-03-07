@@ -1,9 +1,10 @@
 ---
-title: "Migrate Exchange Web Services apps to Microsoft Graph"
+title: "Migrate Exchange Web Services (EWS) apps to Microsoft Graph"
 description: "Describes how to migrate Exchange Web Services (EWS) apps to Microsoft Graph."
 author: "jasonjoh"
 ms.localizationpriority: medium
-ms.prod: "Exchange"
+ms.prod: "exchange"
+doc_type: conceptualPageType
 ---
 
 # Migrate Exchange Web Services (EWS) apps to Microsoft Graph
