@@ -20,7 +20,11 @@ The details of the Cloud PC review status.
 |:---|:---|:---|
 |inReview|Boolean| True if the Cloud PC is set to in review by admin.|
 |userAccessLevel|cloudPcUserAccessLevel|The access level of the Cloud PC's end user, possible values include: `unrestricted`, `restricted`.|
+|subscriptionId|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
+|subscriptionName|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountId|String|The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.|
+|azureStorageAccountName|String|The name of the Azure Storage account in which the Cloud PC snapshot is being saved.|
+|reviewStartDateTime|DateTimeOffset|The specific time of when the Cloud PC was placed under review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as ‘2014-01-01T00:00:00Z’.|
 |restorePointDateTime|DateTimeOffset|The specific time of the Cloud PC's snapshot that was taken and saved automatically when it is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as ‘2014-01-01T00:00:00Z’.|
 
 
@@ -49,8 +53,12 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcReviewStatus",
   "inReview": "Boolean",
   "userAccessLevel": "String",
+  "reviewStartDateTime": "String (timestamp)",
   "restorePointDateTime": "String (timestamp)",
-  "azureStorageAccountId": "String"
+  "subscriptionId": "String",
+  "subscriptionName": "String",
+  "azureStorageAccountId": "String",
+  "azureStorageAccountName": "String"
 }
 ```
 

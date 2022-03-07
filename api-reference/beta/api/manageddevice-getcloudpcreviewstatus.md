@@ -75,8 +75,12 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.CloudPcReviewStatus",
     "inReview": true,
     "userAccessLevel": "restricted",
-    "restorePointDateTime": "2022-02-15T07:05:03.0919357Z",
-    "azureStorageAccountId": "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
+    "reviewStartDateTime": "2022-02-15T06:52:34Z",
+    "restorePointDateTime": "2022-02-15T07:05:03Z",
+    "subscriptionId": "f68bd846-16ad-4b51-a7c6-c84944a3367c",
+    "subscriptionName": "deschutes-INT-DR-test",
+    "azureStorageAccountId": "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview",
+    "azureStorageAccountName": "snapshotsUnderReview"
 }
 
 ```
