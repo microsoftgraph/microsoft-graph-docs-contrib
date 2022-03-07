@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{users-id}/teamwork/associatedTeams
+GET /users/{user-id}/teamwork/associatedTeams
 ```
 > **Note**: This API also returns the host team of the shared channel that the user is a direct member of.
 
