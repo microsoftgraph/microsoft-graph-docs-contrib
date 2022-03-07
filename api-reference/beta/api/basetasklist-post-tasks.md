@@ -58,7 +58,7 @@ You can specify the following properties when creating a **baseTask**.
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |displayName|String|A brief description of the task.|
 |status|taskStatus_v2|Indicates the state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Required.|
-|personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Properties that are personal to a user such as reminderDateTime.|
+|viewpoint|[taskViewpoint](../resources/taskviewpoint.md)|Properties that are personal to a user such as reminderDateTime.|
 
 
 
