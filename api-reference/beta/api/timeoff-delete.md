@@ -1,7 +1,7 @@
 ---
 title: "Delete timeOff"
 description: "Delete a timeOff instance from a schedule."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
