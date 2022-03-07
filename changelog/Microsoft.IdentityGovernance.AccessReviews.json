@@ -7,7 +7,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-filterByCurrentUser) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
+        "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/approval-filterbycurrentuser) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
         "Target": "approval"
         },
         {
@@ -15,7 +15,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "GET",
         "ChangeType": "Addition",
-        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-get) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
+        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/approval-get) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource for an approver in entitlement management.",
         "Target": "approval"
         },
         {

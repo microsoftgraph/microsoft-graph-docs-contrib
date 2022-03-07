@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageAssignmentApprovals"
+title: "Filter accessPackageAssignmentApprovals"
 description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property."
 author: "markwahl-msft"
 ms.localizationpriority: medium
