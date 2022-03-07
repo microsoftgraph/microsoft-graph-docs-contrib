@@ -643,7 +643,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "teamInfo"
-        }
+        },
         {
           "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
           "ApiChange": "Resource",
