@@ -64,9 +64,9 @@ The following are some additional errors that your app might encounter within th
 | **payloadTooLargeUncategorized**              | The request payload exceeds the size limit.
 | **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number.
 | **requestAborted**         | The request was aborted during run time.
-| **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. Please try your request again.
-| **tooManyRequestsUncategorized**             | The client app or user has been throttled. Please try your request again.
-| **transientFailure**           | The request failed due to a transient error. Please try your request again.
+| **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. Please try your request again after the cooldown duration specified by `Retry-After` header.
+| **tooManyRequestsUncategorized**             | The client app or user has been throttled. Please try your request again after the cooldown duration specified by `Retry-After` header. Refer to https://docs.microsoft.com/graph/workbook-best-practice#throttling for best practices to reduce throttling.
+| **transientFailure**           | The request failed due to a transient error. Please try your request again after the cooldown duration specified by `Retry-After` header.
 | **unauthorizedUncategorized**         | Required authentication information for the resource is either missing or invalid.
 | **unsupportedOperation**         | The operation being attempted is not supported.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit.
