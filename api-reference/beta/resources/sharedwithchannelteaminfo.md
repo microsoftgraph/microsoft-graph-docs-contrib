@@ -52,10 +52,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedWithChannelTeamInfo",
-  "id": "String (identifier)",
-  "tenantId": "String",
   "displayName": "String",
-  "isHostTeam": "Boolean"
+  "id": "String (identifier)",
+  "isHostTeam": "Boolean",
+  "tenantId": "String"
 }
 ```
 

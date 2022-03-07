@@ -64,10 +64,8 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.sharedWithChannelTeamInfo",
   "isCollection": true
 }
@@ -83,12 +81,12 @@ Content-Type: application/json
       "id": "2173de69-de69-2173-69de-732169de7321",
       "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "displayName": "Team Contosso",
-      "isHostTeam": "true"
+      "isHostTeam": True
     },
     {
       "id": "893075dd-2487-4122-86db-022c42e20265",
       "displayName": "Team fabricam",
-      "isHostTeam": "false",
+      "isHostTeam": False,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
   ]

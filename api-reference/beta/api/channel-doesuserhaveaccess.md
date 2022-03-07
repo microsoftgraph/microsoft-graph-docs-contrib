@@ -11,7 +11,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check whether a [user](../../beta/resources/aaduserconversationmember.md) has access to the [shared channel](../../beta/resources/channel.md) or not.
+Check whether a [user](../../beta/resources/aaduserconversationmember.md) has access to the shared [channel](../../beta/resources/channel.md) or not.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -81,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "true"
+  "value": true
 }
 ```
 
@@ -110,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "true"
+  "value": true
 }
 ```
 
@@ -139,7 +139,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": "false"
+  "value": false
 }
 ```
 

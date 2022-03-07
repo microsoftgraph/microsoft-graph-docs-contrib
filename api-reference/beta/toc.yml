@@ -14754,6 +14754,8 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Check user access
+          href: api/channel-doesuserhaveaccess.md
         - name: List teams shared with channel
           href: api/sharedwithchannelteaminfo-list.md
         - name: Get team shared with channel

@@ -321,7 +321,7 @@ Content-length: 468
     "displayName": "John Doe",
     "visibleHistoryStartDateTime": null,
     "userId": "24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
-    "email": "john_doe@crosstenantchannel1.onmicrosoft.com",
+    "email": "john_doe@contoso.com",
     "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
 }
 ```
@@ -373,7 +373,7 @@ Content-length: 468
     "displayName": "Eric Solomon",
     "visibleHistoryStartDateTime": null,
     "userId": "bc3598dd-cce4-4742-ae15-173429951408",
-    "email": "ericsol@fabrikam.onmicrosoft.com",
+    "email": "ericsol@fabrikam.com",
     "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```

@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}/teamwork/associatedTeams
+GET /users/{users-id}/teamwork/associatedTeams
 ```
 > **Note**: This API also returns the host team of the shared channel that the user is a direct member of.
 
@@ -87,6 +87,12 @@ Content-Type: application/json
       "id": "b695c5a5-c5a5-b695-a5c5-95b6a5c595b6",
       "tenantId": "172b0cce-e65d-7hd4-9a49-91d9f2e8493a",
       "displayName": "Contoso Team"
+    },
+    {
+      "@odata.type": "#microsoft.graph.associatedTeamInfo",
+      "id": "b695c5a5-8934-b695-a5c5-95b6a5c595b6",
+      "tenantId": "172b0cce-8961-7hd4-9a49-91d9f2e8493a",
+      "displayName": "Fabrikam Team"
     }
   ]
 }

@@ -95,7 +95,7 @@ Content-Type: application/json
       ],
       "displayName": "Eric Solomon",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-      "email": "ericsol@teamsip.onmicrosoft.com",
+      "email": "ericsol@fabrikam.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     }
   ]

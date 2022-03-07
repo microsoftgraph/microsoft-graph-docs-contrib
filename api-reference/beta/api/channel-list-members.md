@@ -122,7 +122,7 @@ Content-type: application/json
       "roles": [],
       "displayName": "Caleb Foster",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-      "email": "calfos@teamsip.onmicrosoft.com",
+      "email": "calfos@contoso.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     },
     {
@@ -133,7 +133,7 @@ Content-type: application/json
       ],
       "displayName": "Eric Solomon",
       "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-      "email": "ericsol@teamsip.onmicrosoft.com",
+      "email": "ericsol@contoso.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     }
   ]

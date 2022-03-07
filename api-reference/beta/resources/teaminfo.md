@@ -36,13 +36,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamInfo",
+  "displayName": "String",
   "id": "String (identifier)",
-  "tenantId": "String",
-  "displayName": "String"
+  "tenantId": "String"
 }
 ```
-
-## See also
-- [associatedTeamInfo](associatedteaminfo.md)
-- [sharedWithChannelTeamInfo](sharedwithchannelteaminfo.md)
-

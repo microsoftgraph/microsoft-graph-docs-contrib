@@ -606,7 +606,7 @@
         },
         {
           "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
-          "ApiChange": "Relationship",
+          "ApiChange": "Property",
           "ChangedApiName": "tenantId",
           "ChangeType": "Addition",
           "Description": "Added the **tenantId** property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
@@ -659,12 +659,20 @@
           "ChangeType": "Addition",
           "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "sharedWithChannelTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Method",
+          "ChangedApiName": "doesUserHaveAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/doesUserHaveAccess?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "channel"
         }
       ],
       "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-12-25T21:46:49.407Z",
+      "CreatedDateTime": "2022-03-30T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
