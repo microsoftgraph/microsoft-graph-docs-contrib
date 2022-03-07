@@ -52,7 +52,7 @@ where files are shared, and where tabs are added.
 |[Get team shared with channel](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Get a team that is shared with the channel.|
 |[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
 |[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.
-||[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to the shared channel or not.|
+|[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to the shared channel or not.|
 
 ## Properties
 
