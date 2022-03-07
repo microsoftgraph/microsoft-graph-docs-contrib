@@ -1,7 +1,7 @@
 ---
 title: "List accessPackageAssignmentApprovals"
 description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property."
-author: "sbounouh"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

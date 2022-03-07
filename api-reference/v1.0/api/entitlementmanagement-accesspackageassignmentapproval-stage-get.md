@@ -2,7 +2,7 @@
 title: "Get approvalStage"
 description: "Retrieve the properties of an approvalStage object."
 ms.localizationpriority: medium
-author: "sbounouh"
+author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: "apiPageType"
 ---
