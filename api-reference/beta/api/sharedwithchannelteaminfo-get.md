@@ -81,7 +81,7 @@ Content-Type: application/json
     "id": "2173de69-de69-2173-69de-732169de7321",
     "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
     "displayName": "Team contosso",
-    "isHostTeam": "true"
+    "isHostTeam": true
   }
 }
 ```

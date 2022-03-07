@@ -2,6 +2,7 @@
 title: "channel: doesUserHaveAccess"
 description: "Check whether a user has access to the shared channel or not."
 author: "devjha-ms"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -11,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check whether a [user](../../beta/resources/aaduserconversationmember.md) has access to the shared [channel](../../beta/resources/channel.md) or not.
+Check whether a [user](../resources/aaduserconversationmember.md) has access to the shared [channel](../resources/channel.md) or not.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,9 +39,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|Id of the [User](../../beta/resources/useridentity.md)|
-|tenantId|String|TenantId which the Azure AD [User](../../beta/resources/useridentity.md) belongs to. Default value of this property is current tenantId of the logged-in user or app.|
-|userPrincipalName|String|User Principal Name (UPN) of the [User](../../beta/resources/useridentity.md)|
+|userId|String|Id of the [User](../resources/useridentity.md)|
+|tenantId|String|TenantId which the Azure AD [User](../resources/useridentity.md) belongs to. Default value of this property is current tenantId of the logged-in user or app.|
+|userPrincipalName|String|User Principal Name (UPN) of the [User](../resources/useridentity.md)|
 
 
 ## Request headers
