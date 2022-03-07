@@ -51,7 +51,7 @@ LabelingOptions labelingOptions = new LabelingOptions();
 labelingOptions.additionalDataManager().put("assignmentMethod@odata.type", new JsonPrimitive("#microsoft.graph.assignmentMethod"));
 labelingOptions.assignmentMethod = AssignmentMethod.STANDARD;
 labelingOptions.additionalDataManager().put("labelId@odata.type", new JsonPrimitive("#Guid"));
-labelingOptions.labelId = UUID.fromString("97309856-9c28-4ac6-9382-5f8bc20c457b");
+labelingOptions.labelId = "97309856-9c28-4ac6-9382-5f8bc20c457b";
 labelingOptions.downgradeJustification = null;
 labelingOptions.additionalDataManager().put("extendedProperties@odata.type", new JsonPrimitive("#Collection(microsoft.graph.keyValuePair)"));
 LinkedList<KeyValuePair> extendedPropertiesList = new LinkedList<KeyValuePair>();

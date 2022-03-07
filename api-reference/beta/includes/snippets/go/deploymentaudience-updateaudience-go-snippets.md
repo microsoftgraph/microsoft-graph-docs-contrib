@@ -11,28 +11,28 @@ requestBody := msgraphsdk.New()
 requestBody.SetAddMembers( []UpdatableAsset {
 	msgraphsdk.NewUpdatableAsset(),
 	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
 		"id": "String (identifier)",
 	}
 }
 requestBody.SetRemoveMembers( []UpdatableAsset {
 	msgraphsdk.NewUpdatableAsset(),
 	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
 		"id": "String (identifier)",
 	}
 }
 requestBody.SetAddExclusions( []UpdatableAsset {
 	msgraphsdk.NewUpdatableAsset(),
 	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
 		"id": "String (identifier)",
 	}
 }
 requestBody.SetRemoveExclusions( []UpdatableAsset {
 	msgraphsdk.NewUpdatableAsset(),
 	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+		"@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
 		"id": "String (identifier)",
 	}
 }

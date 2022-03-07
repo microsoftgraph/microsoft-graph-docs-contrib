@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessReviewHistoryDecisionFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewHistoryDecisionFilter** enumeration type.",
+          "Target": "accessReviewHistoryDecisionFilter"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessReviewHistoryStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewHistoryStatus** enumeration type.",
+          "Target": "accessReviewHistoryStatus"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewHistoryScheduleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewHistoryScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryScheduleSettings?view=graph-rest-1.0) resource type. Use this resource to configure the settings of an [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewhistorydefinition?view=graph-rest-1.0) object.",
+          "Target": "accessReviewHistoryScheduleSettings"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewHistoryDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-1.0) resource and related methods. Represents a collection of access review historical data and the scopes used to collect that data.",
+          "Target": "accessReviewHistoryDefinition"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewHistoryInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-1.0) resource and related methods. Represents the instances of a recurring access review history definition.",
+          "Target": "accessReviewHistoryInstance"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "historyDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyDefinitions** relationship to the [accessReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewSet"
+        },
+        {
+          "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+          "ApiChange": "Method",
+          "ChangedApiName": "generateDownloadUri",
+          "ChangeType": "Addition",
+          "Description": "Added the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/accessreviewhistoryinstance-generatedownloaduri?view=graph-rest-1.0) method to the [accessReviewHistoryInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryInstance?view=graph-rest-1.0).",
+          "Target": "accessReviewHistoryInstance"
+        }
+      ],
+      "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-02-25T00:00:00.0191537Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d5aa418f-1721-4d4b-98e2-1ff54c33085d",
           "ApiChange": "Property",
           "ChangedApiName": "decisionHistoriesForReviewersEnabled",
