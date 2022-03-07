@@ -52,8 +52,8 @@ This resource supports:
 | [List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) collection | List properties of all setting objects. |
 | [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups, devices, and service principals that are members, including nested members of this group. |
 | [List transitive memberOf](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups and administrative units that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
-| [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group, a security group or a mail-enabled security group through the **owners** navigation property. |
-| [Remove member](../api/group-delete-members.md) | None | Remove a member from a Microsoft 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
+| [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. |
+| [Remove member](../api/group-delete-members.md) | None | Remove a member from a Microsoft 365 group or a security group through the **members** navigation property. |
 | [Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Update a setting object. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
@@ -144,7 +144,7 @@ This resource supports:
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, and `eq` on `null` values).|
 |mailNickname|String|The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
+|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](/azure/active-directory/enterprise-users/groups-dynamic-membership). <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are `On` or `Paused`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Describes the processing status for rules-based dynamic groups. The property is `null` for non-rule based dynamic groups or if the dynamic group processing has been paused. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). Read-only. |
 |onPremisesDomainName|String|Contains the on-premises **domain FQDN**, also called **dnsDomainName** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Read-only. |
@@ -193,10 +193,10 @@ This resource supports:
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the group. Read-only. Nullable.|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports `$expand`.|
-|members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable. Supports `$expand`.|
+|members|[directoryObject](directoryobject.md) collection| Members of this group, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
 |membersWithLicenseErrors|[user](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[onenote](onenote.md)| Read-only.|
-|owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports `$expand`.|
+|owners|[directoryObject](directoryobject.md) collection|The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permissions that have been granted for a group to a specific application. Supports `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo. |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
@@ -336,4 +336,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-

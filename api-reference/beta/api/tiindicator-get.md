@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/get-tiindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tiindicator-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

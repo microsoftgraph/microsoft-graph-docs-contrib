@@ -8,8 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-identityUserFlowAttributeAssignmentId := "identityUserFlowAttributeAssignment-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Get(nil)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().GetOrder()().Get(nil)
 
 
 ```

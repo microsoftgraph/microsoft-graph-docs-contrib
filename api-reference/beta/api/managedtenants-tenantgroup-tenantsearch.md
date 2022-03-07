@@ -1,7 +1,7 @@
 ---
 title: "tenantGroup: tenantSearch"
 description: "Searches for the specified managed tenants across tenant groups."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType

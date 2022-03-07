@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraph51d8a471-2e9d-4f53-9937-c33a8742d28f *51d8a471-2e9d-4f53-9937-c33a8742d28f = [[MSGraph51d8a471-2e9d-4f53-9937-c33a8742d28f alloc] initWithData:data error:&nserror];
+		MSGraphChecklistItem *checklistItem = [[MSGraphChecklistItem alloc] initWithData:data error:&nserror];
 
 }];
 

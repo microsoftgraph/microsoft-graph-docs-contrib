@@ -112,6 +112,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

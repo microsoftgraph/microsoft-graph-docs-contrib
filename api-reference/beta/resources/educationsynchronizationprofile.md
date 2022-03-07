@@ -127,9 +127,6 @@ The following is a JSON representation of the **educationSynchronizationProfile*
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ]
 }-->
 
 

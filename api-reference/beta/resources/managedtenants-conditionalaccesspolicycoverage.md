@@ -1,7 +1,7 @@
 ---
 title: "conditionalAccessPolicyCoverage resource type"
 description: "Represents information about any Azure Active Directory policy that defines access rules of a resource for a given managed tenant."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: resourcePageType

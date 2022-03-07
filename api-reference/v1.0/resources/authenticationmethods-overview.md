@@ -37,9 +37,10 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Software token | Allow users to perform multifactor authentication using an application that supporters the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
-|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method.|
+|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
+|Require re-register MFA | Represents a configuration that requires that when user signs in next time, they're requested to set up a new MFA authentication method.| Allow the user to set up new MFA methods, for example, if they changed their authentication device. <br/> **NOTE:** This feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
 
 ## Next steps
 
 * Review the authentication method types and their various methods.
-* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+* Try the API in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

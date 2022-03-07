@@ -12,14 +12,26 @@ schedulingGroupId := "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
 requestBody.SetSchedulingGroupId(&schedulingGroupId)
 sharedOpenShift := msgraphsdk.NewOpenShiftItem()
 requestBody.SetSharedOpenShift(sharedOpenShift)
-sharedOpenShift.SetAdditionalData(map[string]interface{}{
-	"notes": "Inventory Management",
-	"openSlotCount": ,
-	"displayName": "Field shift",
-	"startDateTime": "2018-10-04T00:58:45.340Z",
-	"endDateTime": "2018-10-04T09:50:45.332Z",
-	"theme": "white",
-	"activities":  []Object {
+notes := "Inventory Management"
+sharedOpenShift.SetNotes(&notes)
+openSlotCount := int32(5)
+sharedOpenShift.SetOpenSlotCount(&openSlotCount)
+displayName := "Field shift"
+sharedOpenShift.SetDisplayName(&displayName)
+startDateTime, err := time.Parse(time.RFC3339, "2018-10-04T00:58:45.340Z")
+sharedOpenShift.SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2018-10-04T09:50:45.332Z")
+sharedOpenShift.SetEndDateTime(&endDateTime)
+theme := "white"
+sharedOpenShift.SetTheme(&theme)
+sharedOpenShift.SetActivities( []ShiftActivity {
+	msgraphsdk.NewShiftActivity(),
+	SetAdditionalData(map[string]interface{}{
+		"isPaid": true,
+		"startDateTime": "2018-10-04T00:58:45.340Z",
+		"endDateTime": "2018-10-04T01:58:45.340Z",
+		"code": "",
+		"displayName": "Lunch",
 	}
 }
 requestBody.SetDraftOpenShift(nil)

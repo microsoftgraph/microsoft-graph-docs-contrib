@@ -33,11 +33,12 @@ The user experience analytics battery health device performance entity contains 
 |deviceId|String|The unique identifier of the device, Intune DeviceID.|
 |deviceName|String|Device friendly name.|
 |model|String|The model name of the device.|
+|manufacturer|String|The manufacturer name of the device.|
 |maxCapacityPercentage|Int32|Ratio of current capacity and design capacity of the battery with the lowest capacity. Unit in percentage and values range from 0-100. Valid values -2147483648 to 2147483647|
 |estimatedRuntimeInMinutes|Int32|The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values -2147483648 to 2147483647|
 |batteryAgeInDays|Int32|Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647|
 |deviceBatteryHealthScore|Int32|A weighted average of a device’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647|
-|healthStatus|String|The overall battery health status of the device.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## Relationships
 None
@@ -57,6 +58,7 @@ Here is a JSON representation of the resource.
   "deviceId": "String",
   "deviceName": "String",
   "model": "String",
+  "manufacturer": "String",
   "maxCapacityPercentage": 1024,
   "estimatedRuntimeInMinutes": 1024,
   "batteryAgeInDays": 1024,

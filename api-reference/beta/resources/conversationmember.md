@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a user in a [team](team.md) or a [channel](channel.md) or a [chat](chat.md).
-See also [aadUserConversationMember](aaduserconversationmember.md).
 
 ## Methods
 
@@ -68,6 +67,14 @@ The following is a JSON representation of the resource.
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
+
+## See also
+
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [skypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
+- [skypeUserConversationMember](skypeUserConversationMember.md)
+- [microsoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
