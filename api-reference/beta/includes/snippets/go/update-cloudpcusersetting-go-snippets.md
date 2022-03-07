@@ -12,6 +12,12 @@ displayName := "Example"
 requestBody.SetDisplayName(&displayName)
 selfServiceEnabled := true
 requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
+restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
+requestBody.SetRestorePointSetting(restorePointSetting)
+frequencyInHours := "16"
+restorePointSetting.SetFrequencyInHours(&frequencyInHours)
+userRestoreEnabled := true
+restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{

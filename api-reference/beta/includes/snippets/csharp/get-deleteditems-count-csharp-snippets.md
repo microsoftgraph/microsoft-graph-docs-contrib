@@ -6,6 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("$count", "true")
+};
+
 var group = await graphClient.Directory.DeletedItems
 	.Request()
 	.Header("ConsistencyLevel","eventual")

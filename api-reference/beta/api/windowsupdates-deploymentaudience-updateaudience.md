@@ -85,25 +85,25 @@ Content-Type: application/json
 {
   "addMembers": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "removeMembers": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "addExclusions": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ],
   "removeExclusions": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAsset",
+      "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "String (identifier)"
     }
   ]
