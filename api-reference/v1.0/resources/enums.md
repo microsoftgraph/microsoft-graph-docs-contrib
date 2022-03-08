@@ -11,6 +11,22 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|
