@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: National cloud deployments
             href: deployments.md
-          - name: Hybrid deployments (preview)
+          - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
       - name: Tutorials
         items:
@@ -208,7 +208,7 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Devices and apps
+      - name: Device and app management
         expanded: true
         items:
           - name: Cloud printing
@@ -303,7 +303,7 @@ items:
                     href: accessreviews-overview.md
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: Review access to a Microsoft 365 group
+                  - name: Review access for guest users
                     href: tutorial-accessreviews-M365group.md
                   - name: Review access to privileged roles
                     href: tutorial-accessreviews-roleassignments.md
@@ -492,6 +492,8 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Get change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
