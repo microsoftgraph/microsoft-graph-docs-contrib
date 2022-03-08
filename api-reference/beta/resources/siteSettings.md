@@ -1,6 +1,6 @@
 ---
 title: "siteSettings resource type"
-description: "This resource represents the settings of a site."
+description: "Represents the settings of a site."
 author: k-tsoi
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents the settings of a [site].
+Represents the settings of a [site].
 
 ## Properties
 |Property|Type|Description|
