@@ -50,6 +50,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the channel and run other operations on the [channel](../resources/channel.md) object.
 
+> [!Note]
+> Currently, invoking URL returned from **@odata.id** property fails for cross-tenant shared channel. Please remove "/tenants/{tenant-id}" part from URL before invoking the graph call to access cross-tenant shared channel. For details, see [known issues](/graph/known-issues).
+
 ## Examples
 
 ### Request
