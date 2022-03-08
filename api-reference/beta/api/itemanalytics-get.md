@@ -4,7 +4,7 @@ description: "Get itemAnalytics about the views that took place under this resou
 title: Get analytics
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: "files"
+ms.prod: "sharepoint"
 ---
 # Get analytics
 
