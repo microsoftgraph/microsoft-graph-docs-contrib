@@ -11415,6 +11415,7 @@ items:
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
+          displayName: Unified RBAC, Privileged Identity Management, PIM v3
           href: resources/rolemanagement.md
           items:
           - name: Role definition
@@ -12789,6 +12790,7 @@ items:
             - name: Update
               href: api/entitlementmanagementsettings-update.md
         - name: Privileged Identity Management
+          displayName: PIM v2
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
@@ -12796,8 +12798,6 @@ items:
             items:
             - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
-            - name: Migrate to new Role Management APIs
-              href: resources/privilegedidentitymanagement-migrate-azuread.md
             - name: Privileged role
               href: resources/privilegedrole.md
               items:
@@ -12863,8 +12863,6 @@ items:
             items:
             - name: Azure resources
               href: resources/privilegedidentitymanagement-resources.md
-            - name: Migrate to new ARM APIs
-              href: resources/privilegedidentitymanagement-migrate-azureresources.md
             - name: Managed resources
               href: resources/governanceresource.md
               items:
