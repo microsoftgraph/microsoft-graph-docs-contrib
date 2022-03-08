@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 #### Response
 <!-- {
   "blockType": "response",
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 ``` http
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 #### Response
 <!-- {
   "blockType": "response",
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 ``` http
@@ -132,7 +132,7 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 #### Response
 <!-- {
   "blockType": "response",
-  "@odata.type": "Edm.Boolean"
+  "@odata.type": "string"
 }
 -->
 ``` http

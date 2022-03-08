@@ -491,9 +491,6 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
 Content-Length: 0
-
-{
-}
 ```
 
 ## See also
