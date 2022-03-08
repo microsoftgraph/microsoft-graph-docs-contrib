@@ -1,5 +1,5 @@
 ---
-title: "Get a Site's Settings"
+title: "Get site settings"
 description: "Get the settings of a site"
 author: k-tsoi
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Get the settings of a site
+# Get site settings
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
