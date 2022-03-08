@@ -173,11 +173,11 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
 
   /* inherited from baseItem */
-  "name": "string",
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "webUrl": "url"
 }
 ```
