@@ -155,13 +155,14 @@ Namespace: microsoft.graph
 
 ### appCredentialRestrictionType values
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### appKeyCredentialRestrictionType values
 
@@ -2482,6 +2483,15 @@ Possible values for user account types (group membership), per Windows definitio
 |meetingNotes|
 |other|
 |unknownFutureValue|
+
+### plannerContextState values
+
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |  
+
 
 ### policyScope values
 

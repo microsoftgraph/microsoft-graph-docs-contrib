@@ -1,7 +1,7 @@
 ---
 title: "Replace timeOffReason"
 description: "Replace an existing timeOffReason."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

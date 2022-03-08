@@ -1,7 +1,7 @@
 ---
 title: "List shifts"
 description: "Get the list of shifts in a schedule."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
