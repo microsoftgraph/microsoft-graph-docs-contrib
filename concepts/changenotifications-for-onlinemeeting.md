@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for meeting events on using Microsoft Graph"
-description: "Change notifications enables you to listen to Teams Meeting events"
+title: "Get change notifications for meeting call updates in Microsoft Graph"
+description: "Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams meetings."
 author: "benlee-msft"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for meeting call updates in Microsoft Graph
 
-Change notifications enable you to subscribe to call started/ended and call roster updates for Microsoft Teams meetings. Change notifications provide a low latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 ### Subscribe to messages across all channels
 
