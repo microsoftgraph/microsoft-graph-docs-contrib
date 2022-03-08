@@ -20,7 +20,7 @@ options := &msgraphsdk.ConversationThreadRequestBuilderPatchOptions{
 }
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(options)
+result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Patch(options)
 
 
 ```

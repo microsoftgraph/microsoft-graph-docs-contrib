@@ -18,7 +18,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.OrganizationSettingsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(options)
 
 
 ```
