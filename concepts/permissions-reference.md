@@ -104,25 +104,6 @@ The following is the JSON response:
 }
 ```
 
-## Retrieving permission IDs
-
-If you need to set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. You can use the Azure CLI to retrieve the identifier by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
-
-```bash
-az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
-```
-
-The response should be similar to the following example, which contains the description, identifier, display name, and permission name:
-
-```json
-{
-  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
-  "adminConsentDisplayName": "Read all groups",
-  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
-  "value": "Group.Read.All"
-}
-```
-
 ## All permissions
 
 | Permission                                              | Type        | ID                                   |
@@ -186,7 +167,6 @@ The response should be similar to the following example, which contains the desc
 | Calls.InitiateGroupCall.All                             | Application | 4c277553-8a09-487b-8023-29ee378d8324 |
 | Calls.JoinGroupCall.All                                 | Application | f6b49018-60ab-4f81-83bd-22caeabfed2d |
 | Calls.JoinGroupCallAsGuest.All                          | Application | fd7ccf6b-3d28-418b-9701-cd10f5cd2fd4 |
-| cc                                                      | Application | eb6b3d76-ed75-4be6-ac36-158d04c0a555 |
 | Channel.Create                                          | Application | f3a65bd4-b703-46df-8f7e-0174fea562aa |
 | Channel.Create                                          | Delegated   | 101147cf-4178-4455-9d58-02b5c164e759 |
 | Channel.Delete.All                                      | Application | 6a118a39-1227-45d4-af0c-ea7b40d210bc |
@@ -612,6 +592,7 @@ The response should be similar to the following example, which contains the desc
 | TeamsApp.Read.All                                       | Application | afdb422a-4b2a-4e07-a708-8ceed48196bf |
 | TeamsApp.Read.All                                       | Delegated   | 9127ba42-f79f-43b1-be80-f23ecd42377e |
 | TeamsApp.ReadWrite                                      | Delegated   | 2a5addc2-4d9e-4d7d-8527-5215aec410f3 |
+| TeamsApp.ReadWrite.All                                  | Application | eb6b3d76-ed75-4be6-ac36-158d04c0a555 |
 | TeamsApp.ReadWrite.All                                  | Delegated   | d3f0af02-b22d-4778-a433-14f7e3f2e1e2 |
 | TeamsAppInstallation.ReadForChat                        | Delegated   | bf3fbf03-f35f-4e93-963e-47e4d874c37a |
 | TeamsAppInstallation.ReadForChat.All                    | Application | cc7e7635-2586-41d6-adaa-a8d3bcad5ee5 |
@@ -727,6 +708,7 @@ The response should be similar to the following example, which contains the desc
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Read all access reviews | Allows the app to read access reviews without a signed-in user. | Yes |
+| _AccessReview.ReadWrite.All_ |   Manage all access reviews | Allows the app to read, update, delete and perform actions on access reviews, reviewers, decisions and settings in the organization, without a signed-in user. | Yes |
 | _AccessReview.ReadWrite.Membership_ | Manage access reviews for group and app memberships | Allows the app to manage access reviews of groups and apps without a signed-in user. | Yes |
 
 
@@ -2050,7 +2032,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## OpenID permissions
+## OpenID Connect (OIDC) permissions
 
 #### Delegated permissions
 
@@ -2213,7 +2195,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.CrossTenantAccess_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
@@ -2232,10 +2214,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
 | _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes | 
 | _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes |
-| _Policy.ReadWrite.CrossTenantAccessPolicy_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy without a signed-in user. | Yes |
+| _Policy.ReadWrite.CrossTenantAccess_ | Read and write your organization's cross-tenant access policy | Allows the app to read and write your organization's cross-tenant access policy without a signed-in user. | Yes |
 | _Policy.ReadWrite.AuthenticationMethod_   | Read and write all authentication method policies    | Allows the app to read and write all authentication method policies for the tenant, without a signed-in user. | Yes |
-| _Policy.ReadWrite.Authorization_ | Read and write your organization's authorization policy | Allows the app to read and write your organization's authorization policy on behalf of the signed-in user.  For example, authorization policies can control some of the permissions that the out-of-the-box user role has by default. | Yes |
-| _Policy.ReadWrite.ConsentRequest_ | Read and write your organization's consent requests policy | Allows the app to read and write your organization's consent requests policy without a signed-in user. | Yes |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.PermissionGrant_ | Manage consent and permission grant policies | Allows the app to manage policies related to consent and permission grants for applications, without a signed-in user. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
@@ -2252,7 +2232,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.ReadWrite.AuthenticationFlows_: Read and write your organization's authentication flows policy (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.AuthenticationMethod_: Use this permission to manage the settings of the authentication methods policy, including enabling and disabling authentication methods, allowing users and groups to use those methods, and configuring other settings related to the authentication methods that users may register and use in a tenant.
 * _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
-* _Policy.ReadWrite.CrossTenantAccessPolicy_: Read and write your organization's cross tenant access policy (`PATCH /beta/policies/crossTenantAccessPolicy`)
+* _Policy.ReadWrite.CrossTenantAccess_: Read and write your organization's cross tenant access policy (`PATCH /beta/policies/crossTenantAccessPolicy`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 
