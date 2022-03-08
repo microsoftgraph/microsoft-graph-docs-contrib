@@ -33,10 +33,9 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-   "value":{
-      "languageTag": "String",
-      "timeZone": "String"
-   }
+    "@odata.type": "#microsoft.graph.siteSettings",
+    "languageTag": "String",
+    "timeZone": "String"
 }
 ```
 
