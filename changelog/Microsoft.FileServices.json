@@ -2352,7 +2352,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the **settings** property to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the **settings** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
