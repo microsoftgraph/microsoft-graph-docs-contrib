@@ -325,7 +325,7 @@ Content-type: application/json
 }
 -->
 
-### Example 6: Use OData value to retrieve Service Principal added as members in Azure AD group.
+### Example 6: Use OData cast to retrieve service principals added as group members
 
 #### Request
 
@@ -333,11 +333,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_pr_count"
+  "name": "get_members_serviceprincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{GroupId}/members/microsoft.graph.servicePrincipal
-ConsistencyLevel: eventual
+GET https://graph.microsoft.com/beta/groups/15381caf-e381-4663-b832-c082960fde49/members/microsoft.graph.servicePrincipal
 ```
 
 #### Response
@@ -348,21 +347,23 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user",
+  "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-"@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals",
-    "value": [
-        {
-            "id": "11111111-2222-3333-4444-555555555555",
-            "deletedDateTime": null,
-            "accountEnabled": true,
-		  "appDisplayName": "Contoso Azure App",
-            "appId": "11111111-2222-3333-4444-555555555555",
-		}
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals",
+  "value": [
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "appDisplayName": "Contoso Azure App",
+      "appId": "11111111-2222-3333-4444-555555555555",
+    }
+  ]
 }
 ```
