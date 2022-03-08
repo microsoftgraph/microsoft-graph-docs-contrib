@@ -410,7 +410,7 @@ items:
           href: api/user-list-memberof.md
         - name: List transitive member of
           href: api/user-list-transitivememberof.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
@@ -424,22 +424,18 @@ items:
             href: api/insights-list-used.md
         - name: Organization control (preview)
           items:
-          - name: Insights settings
-            href: resources/insightssettings.md
           - name: Settings for item insights
             items:
+            - name: Insights settings
+              href: resources/insightssettings.md
             - name: List
               href: api/organizationsettings-list-iteminsights.md
             - name: Update
               href: api/insightssettings-update.md
-          - name: Settings for people insights
+          - name: Settings for apps to access data
             items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for Microsoft 365 data access in Microsoft applications
-            items:
+            - name: App data access settings
+              href: resources/microsoftapplicationdataaccesssettings.md
             - name: List
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
@@ -540,12 +536,6 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-        - name: Settings for Microsoft 365 data access in Microsoft applications
-          items:
-          - name: List
-            href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-          - name: Update
-            href: api/microsoftapplicationdataaccesssettings-update.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -13222,12 +13212,6 @@ items:
             href: api/organizationsettings-list-peopleinsights.md
           - name: Update
             href: api/insightssettings-update.md
-        - name: Settings for Microsoft 365 data access in Microsoft applications
-          items:
-          - name: List
-            href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-          - name: Update
-            href: api/microsoftapplicationdataaccesssettings-update.md
       - name: Profile (preview)
         items:
         - name: Profile
@@ -13530,13 +13514,12 @@ items:
           href: api/profilecardproperty-update.md
         - name: Delete
           href: api/profilecardproperty-delete.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
           - name: Item insights (preview)
-            href: resources/iteminsights.md
-          
+            href: resources/iteminsights.md          
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
@@ -13545,22 +13528,18 @@ items:
             href: api/insights-list-used.md
         - name: Organization control (preview)
           items:
-          - name: Insights settings
-            href: resources/insightssettings.md
           - name: Settings for item insights
             items:
+            - name: Insights settings
+              href: resources/insightssettings.md
             - name: List
               href: api/organizationsettings-list-iteminsights.md
             - name: Update
               href: api/insightssettings-update.md
-          - name: Settings for people insights
+          - name: Settings for apps to access data
             items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for Microsoft 365 data access in Microsoft applications
-            items:
+            - name: App data access settings
+              href: resources/microsoftapplicationdataaccesssettings.md
             - name: List
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
