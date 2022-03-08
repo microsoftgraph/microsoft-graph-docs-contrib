@@ -1,13 +1,13 @@
 ---
-title: "androidForWorkVpnConfiguration resource type"
-description: "By providing the configurations in this profile you can instruct the Android device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
+title: "aospDeviceOwnerPkcsCertificateProfile resource type"
+description: "AOSP Device Owner PKCS certificate profile"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
-# androidForWorkVpnConfiguration resource type
+# aospDeviceOwnerPkcsCertificateProfile resource type
 
 Namespace: microsoft.graph
 
@@ -15,19 +15,19 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-By providing the configurations in this profile you can instruct the Android device to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user.
+AOSP Device Owner PKCS certificate profile
 
 
-Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
+Inherits from [aospDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md)
 
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List androidForWorkVpnConfigurations](../api/intune-deviceconfig-androidforworkvpnconfiguration-list.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) collection|List properties and relationships of the [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) objects.|
-|[Get androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-get.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Read properties and relationships of the [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) object.|
-|[Create androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-create.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Create a new [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) object.|
-|[Delete androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-delete.md)|None|Deletes a [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md).|
-|[Update androidForWorkVpnConfiguration](../api/intune-deviceconfig-androidforworkvpnconfiguration-update.md)|[androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md)|Update the properties of a [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) object.|
+|[List aospDeviceOwnerPkcsCertificateProfiles](../api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-list.md)|[aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md) collection|List properties and relationships of the [aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md) objects.|
+|[Get aospDeviceOwnerPkcsCertificateProfile](../api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-get.md)|[aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)|Read properties and relationships of the [aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md) object.|
+|[Create aospDeviceOwnerPkcsCertificateProfile](../api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-create.md)|[aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)|Create a new [aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md) object.|
+|[Delete aospDeviceOwnerPkcsCertificateProfile](../api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md)|None|Deletes a [aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md).|
+|[Update aospDeviceOwnerPkcsCertificateProfile](../api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md)|[aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md)|Update the properties of a [aospDeviceOwnerPkcsCertificateProfile](../resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,15 +43,14 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|connectionName|String|Connection name displayed to the user.|
-|connectionType|[androidForWorkVpnConnectionType](../resources/intune-deviceconfig-androidforworkvpnconnectiontype.md)|Connection type. Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`.|
-|role|String|Role when connection type is set to Pulse Secure.|
-|realm|String|Realm when connection type is set to Pulse Secure.|
-|servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
-|fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
-|customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
+|certificationAuthority|String|PKCS Certification Authority|
+|certificationAuthorityName|String|PKCS Certification Authority Name|
+|certificationAuthorityType|[deviceManagementCertificationAuthority](../resources/intune-deviceconfig-devicemanagementcertificationauthority.md)|Certification authority type. Possible values are: `notConfigured`, `microsoft`, `digiCert`.|
+|certificateTemplateName|String|PKCS Certificate Template Name|
+|subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
+|subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
+|certificateStore|[certificateStore](../resources/intune-shared-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -63,19 +62,19 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|identityCertificate|[androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|Identity certificate for client authentication when authentication method is certificate.|
+|managedDeviceCertificateStates|[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) collection|Certificate state for devices. This collection can contain a maximum of 2147483647 elements.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidForWorkVpnConfiguration"
+  "@odata.type": "microsoft.graph.aospDeviceOwnerPkcsCertificateProfile"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.androidForWorkVpnConfiguration",
+  "@odata.type": "#microsoft.graph.aospDeviceOwnerPkcsCertificateProfile",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
@@ -107,34 +106,20 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "connectionName": "String",
-  "connectionType": "String",
-  "role": "String",
-  "realm": "String",
-  "servers": [
+  "certificationAuthority": "String",
+  "certificationAuthorityName": "String",
+  "certificationAuthorityType": "String",
+  "certificateTemplateName": "String",
+  "subjectAlternativeNameFormatString": "String",
+  "subjectNameFormatString": "String",
+  "certificateStore": "String",
+  "customSubjectAlternativeNames": [
     {
-      "@odata.type": "microsoft.graph.vpnServer",
-      "description": "String",
-      "address": "String",
-      "isDefaultServer": true
+      "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+      "sanType": "String",
+      "name": "String"
     }
-  ],
-  "fingerprint": "String",
-  "customData": [
-    {
-      "@odata.type": "microsoft.graph.keyValue",
-      "key": "String",
-      "value": "String"
-    }
-  ],
-  "customKeyValueData": [
-    {
-      "@odata.type": "microsoft.graph.keyValuePair",
-      "name": "String",
-      "value": "String"
-    }
-  ],
-  "authenticationMethod": "String"
+  ]
 }
 ```
 

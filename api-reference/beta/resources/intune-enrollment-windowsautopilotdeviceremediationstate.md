@@ -1,5 +1,5 @@
 ---
-title: "diskType enum type"
+title: "windowsAutopilotDeviceRemediationState enum type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "intune"
 doc_type: enumPageType
 ---
 
-# diskType enum type
+# windowsAutopilotDeviceRemediationState enum type
 
 Namespace: microsoft.graph
 
@@ -20,10 +20,10 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Enum member for unknown or default diskType|
-|hdd|1|Enum member for HDD devices|
-|ssd|2|Enum member for SSD devices|
-|unknownFutureValue|999|Evolvable enum member|
+|unknown|0|Unknown status.|
+|noRemediationRequired|1|No hardware change has been detected.|
+|automaticRemediationRequired|2|Hardware change detected on client. Additional remediation is required.|
+|unknownFutureValue|4|Marks the end of known enum values, and allows for additional values in the future.|
 
 
 
