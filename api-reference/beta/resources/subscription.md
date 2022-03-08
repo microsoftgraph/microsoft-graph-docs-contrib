@@ -29,7 +29,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
-- An [online meeting][] on Microsoft Teams.*
+- An [online meeting][] in Microsoft Teams.*
 - The [presence][] of a user in Microsoft Teams.*
 - A [team](./team.md) in Microsoft Teams.*
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
