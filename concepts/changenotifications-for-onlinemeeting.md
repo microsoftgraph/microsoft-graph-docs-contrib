@@ -82,7 +82,7 @@ The decrypted notification payload looks like the following.
 }
 ```
 
-You may choose to omit encryption by not including the property **includeResourceData** or setting this value to false in your subscrpition request body.
+You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscrpition request body.
 ## Event notifications types
 The following are the supported meeting events:
 - CallStarted - Occurs when a meeting call is started.
