@@ -1,64 +1,6 @@
 {
   "changelog": [
     {
-      "ChangeList": [ 
-        {
-        "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-        "ApiChange": "Method",
-        "ChangedApiName": "GET",
-        "ChangeType": "Addition",
-        "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/approval-filterbycurrentuser) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource.  Use this method in Azure AD Entitlement Management to retrieve approval objects for which the calling user is an approver.",
-        "Target": "approval"
-        },
-        {
-        "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-        "ApiChange": "Method",
-        "ChangedApiName": "GET",
-        "ChangeType": "Addition",
-        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/approval-get) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource. Use this method in Azure AD Entitlement Management to retrieve approval objects for an [access package assignment request](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest.md) object.",
-        "Target": "approval"
-        },
-        {
-        "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-        "ApiChange": "Method",
-        "ChangedApiName": "GET",
-        "ChangeType": "Addition",
-        "Description": "Added the [list approval stages](https://docs.microsoft.com/en-us/graph/api/approval-list-stage) operation to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource. Use this method in Azure AD Entitlement Management to retrieve approval stage objects for an approval object.",
-        "Target": "approval"
-        },
-        {
-        "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-        "ApiChange": "Method",
-        "ChangedApiName": "GET",
-        "ChangeType": "Addition",
-        "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/approvalstage-get) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-1.0) resource. Use this method in Azure AD Entitlement Management to retrieve the details of an approval stage associated with an [access package assignment request](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest.md) object.",
-        "Target": "approvalstage"
-        },
-        {
-        "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-        "ApiChange": "Method",
-        "ChangedApiName": "PATCH",
-        "ChangeType": "Addition",
-        "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/approvalstage-update) operation to the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalstage?view=graph-rest-1.0) resource.  Use this method in Azure AD Entitlement Management to approve or deny a request.",
-        "Target": "approvalstage"
-        },
-        {
-          "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "approvalFilterByCurrentUserOptions",
-          "ChangeType": "Addition",
-          "Description": "Added the **approvalFilterByCurrentUserOptions** enumeration type.",
-          "Target": "approvalFilterByCurrentUserOptions "
-          }
-      ],
-      "Id": "9700f9af-b50b-4b13-92c0-c8effa34c60e",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-01-04T00:00:00.557Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
-    },
-    {
       "ChangeList": [
         {
           "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
