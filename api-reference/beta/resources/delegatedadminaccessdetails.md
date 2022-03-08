@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminAccessDetails resource type"
 description: "Represents access details for a delegated admin relationship and delegated admin access assignment."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 

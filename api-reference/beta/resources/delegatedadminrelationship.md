@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminRelationship resource type"
 description: "Represents the partner view of a delegated admin relationship between a partner and customer."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 
@@ -26,7 +26,6 @@ Represents the partner view of a delegated admin relationship between a partner 
 |[List accessAssignments](../api/delegatedadminrelationship-list-accessassignments.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|Get the delegatedAdminAccessAssignment resources from the accessAssignments navigation property.|
 |[Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md)|Create a new delegatedAdminAccessAssignment object.|
 |[List operations](../api/delegatedadminrelationship-list-operations.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md) collection|Get the delegatedAdminOperation resources from the operations navigation property.|
-|[Create delegatedAdminOperation](../api/delegatedadminrelationship-post-operations.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md)|Create a new delegatedAdminOperation object.|
 |[List requests](../api/delegatedadminrelationship-list-requests.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|Get the delegatedAdminRelationshipRequest resources from the requests navigation property.|
 |[Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md)|Create a new delegatedAdminRelationshipRequest object.|
 

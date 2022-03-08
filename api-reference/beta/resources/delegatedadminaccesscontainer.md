@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminAccessContainer resource type"
 description: "An admin access container that can be assigned roles via an access assignment."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 

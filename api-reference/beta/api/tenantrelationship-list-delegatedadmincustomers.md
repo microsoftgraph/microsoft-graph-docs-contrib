@@ -1,9 +1,9 @@
 ---
 title: "List delegatedAdminCustomers"
 description: "Get a list of the delegatedAdminCustomer objects and their properties."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers
+Authorization: Bearer {token}
 ```
 
 

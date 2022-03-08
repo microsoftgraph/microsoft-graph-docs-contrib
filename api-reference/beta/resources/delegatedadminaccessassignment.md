@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminAccessAssignment resource type"
 description: "Represents an assignment of access details to an access container."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 

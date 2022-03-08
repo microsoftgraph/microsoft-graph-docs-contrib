@@ -1,9 +1,9 @@
 ---
 title: "Delete delegatedAdminOperation"
 description: "Deletes a delegatedAdminOperation object."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 

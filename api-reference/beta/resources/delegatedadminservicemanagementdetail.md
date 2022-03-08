@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
 description: "Contains the management details of a Delegated Admin service."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 
@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Contains the management details of a Delegated Admin service.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List delegatedAdminServiceManagementDetails](../api/tenantrelationship-list-delegatedadminservicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md)|Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties.|
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

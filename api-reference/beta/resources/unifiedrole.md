@@ -1,9 +1,9 @@
 ---
 title: "unifiedRole resource type"
 description: "The directory roles specified for access."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 

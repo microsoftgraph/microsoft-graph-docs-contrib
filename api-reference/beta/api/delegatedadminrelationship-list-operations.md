@@ -1,13 +1,13 @@
 ---
-title: "List operations"
+title: "List operations for delegated admin relationships"
 description: "Get the delegatedAdminOperation resources from the operations navigation property."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
-# List operations
+# List operations for delegated admin relationships
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/operations
+Authorization: Bearer {token}
 ```
 
 

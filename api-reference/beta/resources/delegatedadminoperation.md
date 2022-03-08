@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminOperation resource type"
 description: "Represents a long running operation related to a Delegated Admin relationship."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 
@@ -19,7 +19,6 @@ Represents a long running operation related to a Delegated Admin relationship.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List delegatedAdminOperations](../api/delegatedadminoperation-list.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md) collection|Get a list of the [delegatedAdminOperation](../resources/delegatedadminoperation.md) objects and their properties.|
-|[Create delegatedAdminOperation](../api/delegatedadminrelationship-post-operations.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md)|Create a new [delegatedAdminOperation](../resources/delegatedadminoperation.md) object.|
 |[Get delegatedAdminOperation](../api/delegatedadminoperation-get.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md)|Read the properties and relationships of a [delegatedAdminOperation](../resources/delegatedadminoperation.md) object.|
 |[Update delegatedAdminOperation](../api/delegatedadminoperation-update.md)|[delegatedAdminOperation](../resources/delegatedadminoperation.md)|Update the properties of a [delegatedAdminOperation](../resources/delegatedadminoperation.md) object.|
 |[Delete delegatedAdminOperation](../api/delegatedadminoperation-delete.md)|None|Deletes a [delegatedAdminOperation](../resources/delegatedadminoperation.md) object.|

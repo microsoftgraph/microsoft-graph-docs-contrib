@@ -1,18 +1,18 @@
 ---
-title: "Get delegatedAdminOperation"
-description: "Read the properties and relationships of a delegatedAdminOperation object."
+title: "List delegatedAdminServiceManagementDetails"
+description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
 author: "amharris1331"
 ms.localizationpriority: medium
 ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
-# Get delegatedAdminOperation
+# List delegatedAdminServiceManagementDetails
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [delegatedAdminOperation](../resources/delegatedadminoperation.md) object.
+Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/operations/{delegatedAdminOperationId}
+GET /tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [delegatedAdminOperation](../resources/delegatedadminoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_delegatedadminoperation"
+  "name": "list_delegatedAdminServiceManagementDetails"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/operations/{delegatedAdminOperationId}
+GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
 Authorization: Bearer {token}
 ```
 
@@ -67,7 +67,7 @@ Authorization: Bearer {token}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.partner.customerServiceAdministration.delegatedAdminOperation"
+  "@odata.type": "Collection(microsoft.partner.customerServiceAdministration.delegatedAdminServiceManagementDetail)"
 }
 -->
 ``` http
@@ -75,15 +75,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminOperation",
-    "id": "5640623e-b692-c9a1-8ab1-2ce73a84fe6f",
-    "operationType": "String",
-    "data": "String",
-    "status": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
+      "serviceId": "String",
+      "serviceName": "String",
+      "serviceManagementUrl": "String"
+    }
+  ]
 }
 ```
 

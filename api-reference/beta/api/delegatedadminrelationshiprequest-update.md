@@ -1,9 +1,9 @@
 ---
 title: "Update delegatedAdminRelationshipRequest"
 description: "Update the properties of a delegatedAdminRelationshipRequest object."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
@@ -37,6 +37,7 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|If-Match|{@odata.etag of delegated admin access assignment}. Use the GET API to get the @odata.etag first. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -66,6 +67,8 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests/{delegatedAdminRelationshipRequestId}
+Authorization: Bearer {token}
+If-Match: "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\""
 Content-Type: application/json
 Content-length: 120
 

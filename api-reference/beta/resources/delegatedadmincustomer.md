@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminCustomer resource type"
 description: "Represents a Delegated Admin customer."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 
@@ -18,11 +18,9 @@ Represents a Delegated Admin customer. This object is created by the system when
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminCustomers](../api/delegatedadmincustomer-list.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md) collection|Get a list of the [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) objects and their properties.|
+|[List delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md) collection|Get a list of the [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) objects and their properties.|
 |[Create delegatedAdminCustomer](../api/tenantrelationship-post-delegatedadmincustomers.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md)|Create a new [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
 |[Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md)|Read the properties and relationships of a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
-|[Update delegatedAdminCustomer](../api/delegatedadmincustomer-update.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md)|Update the properties of a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
-|[Delete delegatedAdminCustomer](../api/delegatedadmincustomer-delete.md)|None|Deletes a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
 
 ## Properties
 |Property|Type|Description|

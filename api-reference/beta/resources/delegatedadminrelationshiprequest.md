@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminRelationshipRequest resource type"
 description: "Represents a request specific to a delegated admin relationship between a partner and customer."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: resourcePageType
 ---
 

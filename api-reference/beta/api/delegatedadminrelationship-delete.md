@@ -1,9 +1,9 @@
 ---
 title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
@@ -37,6 +37,7 @@ DELETE /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|If-Match|{@odata.etag of delegated admin access assignment}. Use the GET API to get the @odata.etag first. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,6 +56,8 @@ If successful, this method returns a `204 No Content` response code.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}
+Authorization: Bearer {token}
+If-Match: "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\""
 ```
 
 

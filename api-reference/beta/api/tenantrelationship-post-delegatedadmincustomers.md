@@ -1,9 +1,9 @@
 ---
 title: "Create delegatedAdminCustomer"
 description: "Create a new delegatedAdminCustomer object."
-author: "smrtsec"
+author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "gdap"
+ms.prod: "partner-center"
 doc_type: apiPageType
 ---
 
@@ -65,6 +65,7 @@ If successful, this method returns a `201 Created` response code and a [delegate
 -->
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers
+Authorization: Bearer {token}
 Content-Type: application/json
 Content-length: 148
 
