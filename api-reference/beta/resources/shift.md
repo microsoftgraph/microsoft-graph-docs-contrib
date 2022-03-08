@@ -1,7 +1,7 @@
 ---
 title: "shift resource type"
 description: "A shift is a unit of scheduled work in the schedule."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

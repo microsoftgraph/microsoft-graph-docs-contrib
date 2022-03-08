@@ -11,6 +11,7 @@ $params = @{
 	FilterQuery = "contains(subject, 'Analytics')"
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

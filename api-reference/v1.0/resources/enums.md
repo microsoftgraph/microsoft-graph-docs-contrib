@@ -1722,6 +1722,13 @@ Possible values for user account types (group membership), per Windows definitio
 |strategic|
 |unknownFutureValue|
 
+### searchAlterationType values
+
+| Member |
+|:---------------|
+|modification|
+|suggestion|
+
 ### serviceHealthClassificationType values 
 
 |Member|
@@ -1900,4 +1907,25 @@ Possible values for user account types (group membership), per Windows definitio
 |priceVaries|
 |callUs|
 |notSet|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

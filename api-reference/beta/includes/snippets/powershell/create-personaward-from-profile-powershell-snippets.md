@@ -15,6 +15,7 @@ $params = @{
 	WebUrl = "https://www.iabm.io"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileAward -UserId $userId -BodyParameter $params
 
 ```

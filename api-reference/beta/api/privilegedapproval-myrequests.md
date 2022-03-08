@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedapproval-myrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedapproval-myrequests-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -11,6 +11,7 @@ $params = @{
 	DisplayName = "Important contacts"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserContactFolder -UserId $userId -BodyParameter $params
 
 ```

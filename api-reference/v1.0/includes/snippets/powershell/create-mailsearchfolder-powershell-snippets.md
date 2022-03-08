@@ -16,6 +16,7 @@ $params = @{
 	FilterQuery = "contains(subject, 'weekly digest')"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

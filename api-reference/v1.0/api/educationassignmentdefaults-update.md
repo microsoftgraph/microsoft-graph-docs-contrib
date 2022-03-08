@@ -123,3 +123,6 @@ Content-Type: application/json
 }
 ```
 
+## See also
+
+* [Specify the default channel for education assignment notifications](/graph/education-build-notificationchannelurl)

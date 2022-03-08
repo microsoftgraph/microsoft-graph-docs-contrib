@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
-title: List
+title: List resource
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "The list resource represents a list in a site."
@@ -39,51 +38,6 @@ All examples below are relative to a site, for example, `https://graph.microsoft
 [Delete list item]: ../api/listitem-delete.md
 [Create list item]: ../api/listitem-create.md
 [Get WebSocket channel]: ../api/subscriptions-socketio.md
-
-## JSON representation
-
-Here is a JSON representation of a **list** resource.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [
-    "items",
-    "drive"
-  ],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.list"
-}-->
-
-```json
-{
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
-  "displayName": "title of list",
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
-  "list": {
-    "@odata.type": "microsoft.graph.listInfo",
-    "hidden": false,
-    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
-  },
-  "system": false,
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of list",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of list",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "webUrl": "url to visit the list in a browser"
-}
-```
 
 ## Properties
 
@@ -136,6 +90,51 @@ The **list** resource has the following relationships to other resources.
 [site]: site.md
 [systemFacet]: systemfacet.md
 [subscription]: subscription.md
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "items",
+    "drive"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.list"
+}-->
+
+```json
+{
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "displayName": "title of list",
+  "drive": { "@odata.type": "microsoft.graph.drive" },
+  "items": [ { "@odata.type": "microsoft.graph.listItem" } ],
+  "list": {
+    "@odata.type": "microsoft.graph.listInfo",
+    "hidden": false,
+    "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
+  },
+  "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of list",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of list",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "webUrl": "url to visit the list in a browser"
+}
+```
 
 <!-- {
   "type": "#page.annotation",
