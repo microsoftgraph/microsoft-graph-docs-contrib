@@ -84,6 +84,7 @@ Content-Type: application/json
       "isHostTeam": true
     },
     {
+      "@odata.type": "#microsoft.graph.sharedWithChannelTeamInfo",
       "id": "893075dd-2487-4122-86db-022c42e20265",
       "displayName": "Team fabricam",
       "isHostTeam": false,

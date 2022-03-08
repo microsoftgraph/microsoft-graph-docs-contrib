@@ -483,8 +483,7 @@ Content-type: application/json
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 
 ```http
