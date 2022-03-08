@@ -28,7 +28,7 @@ The **plannerPlanContextDetails** resource contains additional information about
 |Value              |Description|
 |:------------------|:----------------------------------------------------------------------|
 |active             | The context has no problems.                                          |
-|delinked           | A formerly linked plannerPlanContext is no longer linked to the plan. |
+|delinked           | A formerly linked **plannerPlanContext** is no longer linked to the plan. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                     |
 
 ## JSON representation
