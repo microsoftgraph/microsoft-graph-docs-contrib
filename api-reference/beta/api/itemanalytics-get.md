@@ -4,7 +4,7 @@ description: "Get itemAnalytics about the views that took place under this resou
 title: Get analytics
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "files"
 ---
 # Get analytics
 
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [itemAnalytics][] object in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [itemAnalytics][] objects in the response body. 
 
 ## Example
 
