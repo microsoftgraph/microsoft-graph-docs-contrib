@@ -28,7 +28,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.siteSettings"
+  "@odata.type": "microsoft.graph.sitesettings"
 }
 -->
 ``` json
