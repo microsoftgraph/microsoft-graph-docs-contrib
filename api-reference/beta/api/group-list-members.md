@@ -336,7 +336,7 @@ The following is an example of the request.
   "name": "get_members_serviceprincipals"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{GroupId}/members/microsoft.graph.servicePrincipal
+GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194/members/microsoft.graph.servicePrincipal
 ```
 
 #### Response
