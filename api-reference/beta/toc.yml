@@ -14347,7 +14347,7 @@ items:
         - name: List operations
           href: api/site-list-operations.md
         - name: Get site settings
-          href: api/siteSettings-get.md
+          href: api/sitesettings-get.md
         - name: Permissions
           items:
           - name: Permission

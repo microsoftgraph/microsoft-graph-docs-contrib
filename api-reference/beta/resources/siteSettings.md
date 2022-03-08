@@ -18,8 +18,8 @@ This resource represents the settings of a [site].
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|languageTag|String|The language tag of language used on this site.|
-|timeZone|String|Indicates the time zone of the site using UTC Offset format.|
+|languageTag|String|The language tag for the language used on this site.|
+|timeZone|String|Indicates the time offset for the time zone of the site from Coordinated Universal Time (UTC).|
 
 ## Relationships
 None.
@@ -33,9 +33,10 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.siteSettings",
-  "languageTag": "String",
-  "timeZone": "String"
+   "value":{
+      "languageTag": "String",
+      "timeZone": "String"
+   }
 }
 ```
 

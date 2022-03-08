@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [siteSettings](../resources/siteSettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [sitesettings](../resources/sitesettings.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_siteSettings"
+  "name": "get_sitesettings"
 }
 -->
 ``` http
@@ -73,7 +73,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteSettings"
+  "@odata.type": "microsoft.graph.sitesettings"
 }
 -->
 ``` http
