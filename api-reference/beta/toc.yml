@@ -1987,7 +1987,7 @@ items:
           href: api/bookingstaffmember-update.md
         - name: Delete
           href: api/bookingstaffmember-delete.md
-    - name: Devices and apps
+    - name: Device and app management
       expanded: true
       items:
       - name: Cloud printing
