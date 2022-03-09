@@ -18,11 +18,11 @@ Represents an assignment of access details (containing roles) to an access conta
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminAccessAssignments](../api/delegatedadminaccessassignment-list.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|Get a list of the [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) objects and their properties.|
-|[Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md)|Create a new [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.|
-|[Get delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-get.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md)|Read the properties and relationships of a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.|
-|[Update delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-update.md)|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md)|Update the properties of a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.|
-|[Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)|None|Deletes a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.|
+|[Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Create a new **delegatedAdminAccessAssignment** object.|
+|[List delegatedAdminAccessAssignments](../api/delegatedadminaccessassignment-list.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md) collection|Get a list of the **delegatedAdminAccessAssignment** objects and their properties.|
+|[Get delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-get.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Read the properties and relationships of a **delegatedAdminAccessAssignment** object.|
+|[Update delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-update.md)|[delegatedAdminAccessAssignment](delegatedadminaccessassignment.md)|Update the properties of a **delegatedAdminAccessAssignment** object.|
+|[Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)|None|Deletes a **delegatedAdminAccessAssignment** object.|
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Represents an assignment of access details (containing roles) to an access conta
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the access assignment was created in UTC. This is set by the system and cannot be set by the caller.|
 |id|String|The unique identifier of the access assignment. This is set by the system and cannot be set by the caller.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this access assignment was last modified in UTC. This is set by the system and cannot be set by the caller.|
-|status|delegatedAdminAccessAssignmentStatus|The status of the assignment.The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
+|status|delegatedAdminAccessAssignmentStatus|The status of the assignment. The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
 
 ## Relationships
 None.

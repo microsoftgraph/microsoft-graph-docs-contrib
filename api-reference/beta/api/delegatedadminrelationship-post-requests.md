@@ -67,7 +67,7 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminRelationshipRequest",
+  "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "action": "String",
   "status": "String"
 }
@@ -79,7 +79,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.partner.customerServiceAdministration.delegatedAdminRelationshipRequest"
+  "@odata.type": "microsoft.graph.delegatedAdminRelationshipRequest"
 }
 -->
 ``` http
@@ -87,7 +87,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminRelationshipRequest",
+  "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
   "action": "String",
   "status": "String",

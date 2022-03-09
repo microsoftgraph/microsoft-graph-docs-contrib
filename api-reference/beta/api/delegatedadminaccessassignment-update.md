@@ -47,8 +47,8 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Property|Type|Description|
 |:---|:---|:---|
 |status|String|The status of the assignment. Optional.|
-|accessContainer|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
-|accessDetails|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
+|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
 
 
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 <!-- {
   "blockType": "request",
   "name": "update_delegatedadminaccessassignment"
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
 }
 -->
 ``` http
@@ -91,7 +92,8 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
 Content-Type: application/json
 
 {

@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 <!-- {
   "blockType": "request",
   "name": "update_delegatedadminoperation"
+  "@odata.type": "microsoft.graph.delegatedAdminOperation"
 }
 -->
 ``` http

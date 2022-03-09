@@ -67,7 +67,7 @@ Authorization: Bearer {token}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.partner.customerServiceAdministration.delegatedAdminRelationship)"
+  "@odata.type": "Collection(microsoft.graph.delegatedAdminRelationship)"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminRelationship",
+      "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
       "id": "1e0c63f8-e144-1d2b-5986-1b13565d56af",
       "displayName": "String",
       "duration": "String (duration)",

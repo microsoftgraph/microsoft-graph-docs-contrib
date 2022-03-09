@@ -67,7 +67,7 @@ Authorization: Bearer {token}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment"
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment",
+    "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
     "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
     "status": "String",
     "accessContainer": {

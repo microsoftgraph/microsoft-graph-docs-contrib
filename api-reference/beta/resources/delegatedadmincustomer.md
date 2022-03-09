@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminCustomer resource type"
-description: "Represents a Delegated Admin customer."
+description: "Represents a delegated admin customer."
 author: "amharris1331"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Delegated Admin customer. This object is created by the system when at least one Delegated Admin relationship exists between the partner and customer and is deleted when no more relationships exist.
+Represents a delegated admin customer. This object is created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more relationships exist.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md) collection|Get a list of the [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) objects and their properties.|
-|[Create delegatedAdminCustomer](../api/tenantrelationship-post-delegatedadmincustomers.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md)|Create a new [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
-|[Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](../resources/delegatedadmincustomer.md)|Read the properties and relationships of a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.|
+|[Create delegatedAdminCustomer](../api/tenantrelationship-post-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Create a new **delegatedAdminCustomer** object.|
+|[List delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) collection|Get a list of the **delegatedAdminCustomer** objects and their properties.|
+|[Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Read the properties and relationships of a **delegatedAdminCustomer** object.|
 
 ## Properties
 |Property|Type|Description|

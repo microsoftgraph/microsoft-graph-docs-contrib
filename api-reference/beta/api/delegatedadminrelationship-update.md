@@ -48,9 +48,9 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 |:---|:---|:---|
 |displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the "approvalPending" status or beyond. Must be unique across all relationships from the partner for the customer. Required|
 |duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive. Required.|
-|partner|[microsoft.partner.customerServiceAdministration.delegatedAdminRelationshipParticipant](../resources/delegatedadminrelationshipparticipant.md)|The information of the partner of the relationship. This is set by the partner and cannot be changed by the customer. Required.|
-|customer|[microsoft.partner.customerServiceAdministration.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the "approvalPending" status or beyond. Optional.|
-|accessDetails|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship. Required.|
+|partner|[microsoft.graph.delegatedAdminRelationshipParticipant](../resources/delegatedadminrelationshipparticipant.md)|The information of the partner of the relationship. This is set by the partner and cannot be changed by the customer. Required.|
+|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the "approvalPending" status or beyond. Optional.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship. Required.|
 |status|String|The status of the relationship. Optional.|
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was created in UTC. This is set by the system and cannot be set by the caller. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was last modified in UTC. This is set by the system and cannot be set by the caller. Optional.|
@@ -73,9 +73,9 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}
-Content-Type: application/json
 Authorization: Bearer {token}
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
+Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
@@ -102,6 +102,7 @@ If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.delegatedAdminRelationship"
 }
 -->
 ``` http

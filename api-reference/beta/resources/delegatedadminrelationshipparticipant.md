@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminRelationshipParticipant resource type"
-description: "Contains details of a participant in a Delegated Admin relationship."
+description: "Contains details of a participant in a delegated admin relationship."
 author: "amharris1331"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details of a participant in a Delegated Admin relationship.
+Contains details of a participant in a delegated admin relationship.
 
 ## Properties
 |Property|Type|Description|

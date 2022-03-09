@@ -67,7 +67,7 @@ Authorization: Bearer {token}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.partner.customerServiceAdministration.delegatedAdminServiceManagementDetail)"
+  "@odata.type": "Collection(microsoft.graph.delegatedAdminServiceManagementDetail)"
 }
 -->
 ``` http

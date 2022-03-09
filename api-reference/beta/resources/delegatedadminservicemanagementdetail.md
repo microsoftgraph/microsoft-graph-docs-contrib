@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
-description: "Contains the management details of a Delegated Admin service."
+description: "Contains the management details of a delegated admin service."
 author: "amharris1331"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the management details of a Delegated Admin service.
+Contains the management details of a delegated admin service.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminServiceManagementDetails](../api/tenantrelationship-list-delegatedadminservicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md)|Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties.|
+|[List delegatedAdminServiceManagementDetails](../api/tenantrelationship-list-delegatedadminservicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
+
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

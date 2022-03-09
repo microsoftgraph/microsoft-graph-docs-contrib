@@ -18,11 +18,11 @@ Represents a request specific to a delegated admin relationship between a partne
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminRelationshipRequests](../api/delegatedadminrelationshiprequest-list.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|Get a list of the [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) objects and their properties.|
-|[Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md)|Create a new [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object.|
-|[Get delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-get.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md)|Read the properties and relationships of a [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object.|
-|[Update delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-update.md)|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md)|Update the properties of a [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object.|
-|[Delete delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-delete.md)|None|Deletes a [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object.|
+|[Create delegatedAdminRelationshipRequest](../api/delegatedadminrelationship-post-requests.md)|[delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md)|Create a new **delegatedAdminRelationshipRequest** object.|
+|[List delegatedAdminRelationshipRequests](../api/delegatedadminrelationshiprequest-list.md)|[delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md) collection|Get a list of the **delegatedAdminRelationshipRequest** objects and their properties.|
+|[Get delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-get.md)|[delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md)|Read the properties and relationships of a **delegatedAdminRelationshipRequest** object.|
+|[Update delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-update.md)|[delegatedAdminRelationshipRequest](delegatedadminrelationshiprequest.md)|Update the properties of a **delegatedAdminRelationshipRequest** object.|
+|[Delete delegatedAdminRelationshipRequest](../api/delegatedadminrelationshiprequest-delete.md)|None|Deletes a **delegatedAdminRelationshipRequest** object.|
 
 ## Properties
 |Property|Type|Description|

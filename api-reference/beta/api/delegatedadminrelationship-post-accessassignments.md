@@ -46,8 +46,8 @@ You can specify the following properties when creating a **delegatedAdminAccessA
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessContainer|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
-|accessDetails|[microsoft.partner.customerServiceAdministration.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
+|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
 
 
 
@@ -69,7 +69,7 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment",
+  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
   "accessContainer": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
   },
@@ -85,7 +85,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment"
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminAccessAssignment",
+  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
   "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
   "status": "String",
   "accessContainer": {
