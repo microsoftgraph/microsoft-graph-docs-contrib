@@ -33,7 +33,7 @@ options := &msgraphsdk.CloudPcOnPremisesConnectionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 cloudPcOnPremisesConnectionId := "cloudPcOnPremisesConnection-id"
-graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).Patch(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnectionsById(&cloudPcOnPremisesConnectionId).Patch(options)
 
 
 ```

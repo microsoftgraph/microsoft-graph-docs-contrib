@@ -19,7 +19,7 @@ options := &msgraphsdk.ProgressTaskBoardFormatRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).ProgressTaskBoardFormat().Patch(options)
+result, err := graphClient.Planner().TasksById(&plannerTaskId).ProgressTaskBoardFormat().Patch(options)
 
 
 ```

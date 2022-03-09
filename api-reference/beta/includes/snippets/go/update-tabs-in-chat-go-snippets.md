@@ -15,7 +15,7 @@ options := &msgraphsdk.TeamsTabRequestBuilderPatchOptions{
 }
 chatId := "chat-id"
 teamsTabId := "teamsTab-id"
-graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Patch(options)
+result, err := graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Patch(options)
 
 
 ```

@@ -16,7 +16,7 @@ options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
 
 
 ```

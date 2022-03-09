@@ -16,7 +16,7 @@ options := &msgraphsdk.AgreementRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 agreementId := "agreement-id"
-graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
 
 
 ```
