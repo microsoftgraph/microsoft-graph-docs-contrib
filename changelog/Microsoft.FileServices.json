@@ -1,6 +1,48 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sensitivityLabelAssignmentMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignmentMethod** enumeration type.",
+          "Target": "sensitivityLabelAssignmentMethod"
+        },
+        {
+          "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
+          "ApiChange": "Resource",
+          "ChangedApiName": "extractSensitivityLabelsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabelsResult](https://docs.microsoft.com/en-us/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-1.0) resource type.",
+          "Target": "extractSensitivityLabelsResult"
+        },
+        {
+          "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensitivityLabelAssignment](https://docs.microsoft.com/en-us/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
+          "Target": "sensitivityLabelAssignment"
+        },
+        {
+          "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
+          "ApiChange": "Method",
+          "ChangedApiName": "extractSensitivityLabels",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-1.0) method to the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-1.0) resource.",
+          "Target": "extractSensitivityLabels"
+        }
+      ],
+      "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-03-09T20:17:33.7017535Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
   "ChangeList":[
     {
       "Id": "17EC0EF8-3292-492A-B703-FEE54D82D4D1",
