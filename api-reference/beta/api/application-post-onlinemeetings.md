@@ -148,7 +148,7 @@ Content-Type: application/json
         "user": {
           "id": "550fae72-d251-43ec-868c-373734f",
           "tenantId": "72f988bf-86f1-41af-91ab-2d1db47",
-          "displayName": "John Smith"
+          "displayName": "Mario Rogers"
         }
       },
       "role": "presenter",
@@ -234,7 +234,7 @@ Content-Type: application/json
         "user": {
           "id": "55ae72-d251-43ec-868c-373704f",
           "tenantId": "72f98f-86f1-41af-91ab-2d7db47",
-          "displayName": "John Smith"
+          "displayName": "Mario Rogers"
         }
       },
       "role": "presenter",
@@ -429,7 +429,7 @@ Content-Type: application/json
         "user": {
           "id": "5e72-d251-43ec-868c-3732704f",
           "tenantId": "72fbf-86f1-41af-91ab-2d71db47",
-          "displayName": "John Smith"
+          "displayName": "Mario Rogers"
         }
       },
       "role": "presenter",

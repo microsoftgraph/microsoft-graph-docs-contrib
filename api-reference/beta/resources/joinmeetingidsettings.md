@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode.
+Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode for an online meeting.
 
 ## Properties
 
