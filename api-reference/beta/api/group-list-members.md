@@ -325,4 +325,45 @@ Content-type: application/json
 }
 -->
 
+### Example 6: Use OData cast to retrieve service principals added as group members
 
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_serviceprincipals"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194/members/microsoft.graph.servicePrincipal
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals",
+  "value": [
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "appDisplayName": "Contoso Azure App",
+      "appId": "11111111-2222-3333-4444-555555555555",
+    }
+  ]
+}
+```
