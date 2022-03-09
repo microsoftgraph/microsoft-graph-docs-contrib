@@ -1,5 +1,5 @@
 ---
-title: "approval filterByCurrentUser"
+title: "approval: filterByCurrentUser"
 description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property for the current user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# approval filterByCurrentUser
+# approval: filterByCurrentUser
 Namespace: microsoft.graph
 
 In Azure AD entitlement management, return a collection of [access package assignment approvals](../resources/approval.md). The returned objects are those which the calling user is in the scope of being an approver.
