@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Team summary consists of ownersCount, membersCount, guestsCount in the [team](team.md).
+Contains information about a team in Microsoft Teams, including numbers of owners, members, and guests.
 
 ## Properties
 | Property	   | Type	|Description|
