@@ -3,7 +3,7 @@ title: "Create delegatedAdminAccessAssignment"
 description: "Create a new delegatedAdminAccessAssignment object."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

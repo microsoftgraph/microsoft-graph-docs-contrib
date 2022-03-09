@@ -3,7 +3,7 @@ title: "List delegatedAdminServiceManagementDetails"
 description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "delegatedAdminAccessDetails resource type"
 description: "Represents access details for a delegated admin relationship and delegated admin access assignment."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

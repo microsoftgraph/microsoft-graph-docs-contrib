@@ -3,7 +3,7 @@ title: "delegatedAdminAccessContainer resource type"
 description: "An admin access container that can be assigned roles via an access assignment."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

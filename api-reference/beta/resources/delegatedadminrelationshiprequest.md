@@ -3,7 +3,7 @@ title: "delegatedAdminRelationshipRequest resource type"
 description: "Represents a request specific to a delegated admin relationship between a partner and customer."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

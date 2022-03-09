@@ -3,7 +3,7 @@ title: "delegatedAdminRelationshipParticipant resource type"
 description: "Contains details of a participant in a Delegated Admin relationship."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

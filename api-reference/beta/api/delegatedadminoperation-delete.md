@@ -3,7 +3,7 @@ title: "Delete delegatedAdminOperation"
 description: "Deletes a delegatedAdminOperation object."
 author: "amharris1331"
 ms.localizationpriority: medium
-ms.prod: "partner-center"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -37,6 +37,7 @@ DELETE /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|If-Match|Last known ETag value for the **delegated admin operation** to be deleted. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,6 +56,8 @@ If successful, this method returns a `204 No Content` response code.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/operations/{delegatedAdminOperationId}
+Authorization: Bearer {token}
+If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 ```
 
 
