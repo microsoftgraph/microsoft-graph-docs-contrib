@@ -34,9 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/analytics
-GET /sites/{site-id}/analytics
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
+GET /drives/{drive-id}/items/{item-id}/analytics/allTime
+GET /sites/{site-id}/analytics/allTime
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/allTime
+GET /drives/{drive-id}/items/{item-id}/analytics/lastSevenDays
+GET /sites/{site-id}/analytics/lastSevenDays
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics/lastSevenDays
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -65,7 +68,7 @@ The following is an example of a request.
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
 ```msgraph-interactive
-GET /drives/{drive-id}/items/{item-id}/analytics
+GET /drives/{drive-id}/items/{item-id}/analytics/allTime
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
@@ -101,12 +104,6 @@ Content-type: application/json
         "access": {
             "actionCount": 123,
             "actorCount": 89
-        }
-    },
-    "lastSevenDays": {
-        "access": {
-            "actionCount": 52,
-            "actorCount": 41
         }
     }
 }
