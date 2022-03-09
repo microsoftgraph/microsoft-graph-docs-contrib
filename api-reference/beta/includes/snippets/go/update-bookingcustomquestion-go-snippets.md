@@ -22,7 +22,7 @@ options := &msgraphsdk.BookingCustomQuestionRequestBuilderPatchOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomQuestionId := "bookingCustomQuestion-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
 
 
 ```

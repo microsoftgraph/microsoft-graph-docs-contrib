@@ -29,7 +29,7 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets( []AuthenticationMet
 options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
 
 
 ```

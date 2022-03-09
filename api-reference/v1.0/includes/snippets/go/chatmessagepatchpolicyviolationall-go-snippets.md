@@ -29,7 +29,7 @@ options := &msgraphsdk.ChatMessageRequestBuilderPatchOptions{
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(options)
 
 
 ```

@@ -5450,6 +5450,24 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment request approval
+            items:
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
+              href: api/approval-get.md
+            - name: Filter by current user
+              href: api/approval-filterbycurrentuser.md 
+            - name: Approval stage
+              items:
+              - name: Approval stage
+                href: resources/approvalstage.md
+              - name: List
+                href: api/approval-list-stages.md
+              - name: Get
+                href: api/approvalstage-get.md
+              - name: Update
+                href: api/approvalstage-update.md
           - name: Access package assignment request
             href: resources/accesspackageassignmentrequest.md
             items:
