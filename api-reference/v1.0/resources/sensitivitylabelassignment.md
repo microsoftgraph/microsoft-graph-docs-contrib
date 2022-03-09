@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabelAssignment resource type"
-description: "provides details of sensitivityLabel assigned to a file"
+description: "Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business."
 author: "jaLuthra"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -11,28 +11,28 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **sensitivityLabelAssignment** resource type provides details of sensitivityLabel assigned to a file in SharePoint or OneDrive for Business.
+The **sensitivityLabelAssignment** resource type Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentMethod|sensitivityLabelAssignmentMethod|The assignment method of the label on the document. Whether the assignment of the label was done automatically, standard or as a privileged operation.The possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
-|sensitivityLabelId|String|Id of the sensitivityLabel assigned to the file.|
-|tenantId|String|Indicates id of the tenant hosting the file during application of this label.|
+|assignmentMethod|sensitivityLabelAssignmentMethod|Indicates whether the label assignment was done automatically, as a standard or a privileged operation.The possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
+|sensitivityLabelId|String|The unique identifier for the sensitivity label assigned to the file.|
+|tenantId|String|The unique identifier for the tenant that hosts the file when this label was applied.|
 
-### sensitivityLabelAssignmentMethod enumeration
+### sensitivityLabelAssignmentMethod values
 
-| Member             | Description
-|:------------------ |:-----------------------------------------------
-| standard           | Label assignment method is standard.
-| privileged         | Label assignment method is privileged. This indicates that label was applied manually by user or by an admin.
-| auto               | Label assignment method is automatic. This indicates that label was applied automatically by system due to a configured policy like default label or auto-classification of sensitive content etc.
-| unknownFutureValue | Marker value for future compatibility.
+| Member             | Description                                    |
+|:------------------ |:-----------------------------------------------|
+| standard           | The assignment method for the label is standard.|
+| privileged         | The assignment method for the label is privileged. Indicates that the label was applied manually by a user or by an admin.|
+| auto               | Indicates that the label was applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|labels|[extractSensitivityLabelsResult](./extractsensitivitylabelsresult.md)|List of sensitivityLabel assigned to a given file.|
+|labels|[extractSensitivityLabelsResult](./extractsensitivitylabelsresult.md)|List of sensitivity labels assigned to a file.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -44,9 +44,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sensitivityLabelAssignment",
+  "assignmentMethod": "String",
   "sensitivityLabelId": "String",
-  "tenantId": "String",
-  "assignmentMethod": "String"
+  "tenantId": "String"
 }
 ```
 

@@ -1,18 +1,18 @@
 ---
-title: "Extract sensitivity labels"
-description: "Extract sensitivityLabel(s) assigned to a drive item"
+title: "driveItem: extractSensitivityLabels"
+description: "Extract one or more sensitivity labels assigned to a drive item."
 author: "jaLuthra"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Extract sensitivity labels
+# driveItem: extractSensitivityLabels
 Namespace: microsoft.graph
 
-Extract sensitivityLabel(s) assigned to a drive item and update drive item's metadata with the latest assigned label details. In case of failure to extract file's sensitivityLabel(s), extraction error would be thrown with proper error code and message.
+Extract one or more sensitivity labels assigned to a drive item and update drive item's metadata with the latest assigned label details. In case of failure to extract the sensitivity labels of a file, the extraction error will be thrown with proper error code and message.
 
-> **Note**: This API is applicable only for supported file extensions. When this API is called, first the file's sensitivityLabel(s) metadata are retrieved from the database and checked whether these are latest w.r.t the file's content. If yes, the retrieved values from database are returned. If not, then sensitivityLabel(s) are extracted from the file's content stream, corresponding metadata in database are updated and the newly extracted values are returned.
+> **Note**: This API is applicable only for supported file extensions. When this API is called, first the sensitivity label metadata is retrieved from the database for the file and checked whether these are latest w.r.t the file's content. If yes, the retrieved values from database are returned. If not, then sensitivity labels are extracted from the file's content stream, corresponding metadata in database are updated and the newly extracted values are returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,28 +52,34 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) in the response body.
+If successful, this action returns a `200 OK` response code and an [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) in the response body.
 
-In addition to general errors that apply to Microsoft Graph, this API returns the **423** status code if the file is locked for extract sensitivityLabel operation. In such cases, the `code` property on the error resource type indicates type of error blocking sensitivityLabel extraction.
+In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the sensitivity label extraction.
 The possible values for the error types include:
 
 | Value                       | Description                                                                                                         |
 |:----------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption and hence cannot be opened to extract sensitivityLabel.             |
-| fileDecryptionNotSupported  | Indicates that the encrypted document has specific properties which do not allow these files to be opened by SPO to extract sensitivityLabel.     |
-| fileDecryptionDeferred      | Indicates this file is being processed for decryption, and label extraction will be performed after some time.      |
-| unknownFutureValue          | Marker value for future compatibility.                                                                              |
+| fileDoubleKeyEncrypted      | Indicates that the file is protected via double key encryption; hence it cannot be opened for the extraction of the sensitivity labels.             |
+| fileDecryptionNotSupported  | Indicates that the encrypted file has specific properties which do not allow these files to be opened by SharePoint to extract sensitivity labels.    |
+| fileDecryptionDeferred      | Indicates that the file is being processed for decryption; hence it cannot be opened for the extraction of the sensitivity labels.      |
+| unknownFutureValue          | Evolvable enumeration sentinel value. Do not use.                                                                   |
 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph" } -->
 ``` http
-POST https://graph.microsoft.com/v1.0/drive/root/items/{item-id}/extractSensitivityLabels
+POST https://graph.microsoft.com/v1.0/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
 ```
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
