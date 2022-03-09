@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationship/delegatedAdminRelationships
+POST /tenantRelationships/delegatedAdminRelationships
 ```
 
 ## Request headers
@@ -65,13 +65,13 @@ If successful, this method returns a `201 Created` response code and a [delegate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships
+POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships
 Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "displayName": "String",
-  "duration": "String (duration)",
+  "displayName": "Contoso admin relationship",
+  "duration": "P730D",
   "customer": {
     "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
   },
@@ -96,9 +96,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "id": "1e0c63f8-e144-1d2b-5986-1b13565d56af",
-  "displayName": "String",
-  "duration": "String (duration)",
+  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso admin relationship",
+  "duration": "P730D",
   "partner": {
     "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
   },
@@ -108,11 +108,11 @@ Content-Type: application/json
   "accessDetails": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "activatedDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)"
+  "status": "approvalPending",
+  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
+  "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
+  "activatedDateTime": "",
+  "endDateTime": "2024-02-10T11:24:42.3148266Z"
 }
 ```
 

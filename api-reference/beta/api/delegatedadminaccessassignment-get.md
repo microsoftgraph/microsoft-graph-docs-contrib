@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
+GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
 Authorization: Bearer {token}
 ```
 
@@ -78,15 +78,15 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
     "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
-    "status": "String",
+    "status": "active",
     "accessContainer": {
       "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
     },
     "accessDetails": {
       "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
     },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
+    "createdDateTime": "2022-02-10T00:55:47.1180588Z",
+    "lastModifiedDateTime": "2022-02-10T00:55:47.1180588Z"
   }
 }
 ```

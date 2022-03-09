@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
+GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
 Authorization: Bearer {token}
 ```
 
@@ -78,11 +78,11 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-      "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
-      "action": "String",
-      "status": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)"
+      "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
+      "action": "approve",
+      "status": "created",
+      "createdDateTime": "2022-02-10T10:55:47.1180588Z",
+      "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
     }
   ]
 }

@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.unifiedRole",
-  "roleDefinitionId": "String"
+  "roleDefinitionId": "e3973bdf-4987-49ae-837a-ba8e231c7286"
 }
 ```
 

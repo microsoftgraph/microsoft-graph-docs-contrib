@@ -30,14 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests/{delegatedAdminRelationshipRequestId}
+PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests/{delegatedAdminRelationshipRequestId}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|If-Match|Last known ETag value for the **delegated admin relationship request** to be updated. Required.|
+|If-Match|Last known ETag value for the **delegatedAdminRelationshipRequest** to be updated. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -67,15 +67,14 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests/{delegatedAdminRelationshipRequestId}
+PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests/{delegatedAdminRelationshipRequestId}
 Authorization: Bearer {token}
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-  "action": "String",
-  "status": "String"
+  "action": "terminate",
 }
 ```
 
@@ -84,7 +83,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminRelationshipRequest"
 }
 -->
 ``` http
@@ -93,11 +93,11 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-  "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
-  "action": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "id": "dd4a23c7-070c-4d1c-8be8-1e86085ac9d1",
+  "action": "terminate",
+  "status": "created",
+  "createdDateTime": "2022-02-10T10:55:47.1180588Z",
+  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
 }
 ```
 

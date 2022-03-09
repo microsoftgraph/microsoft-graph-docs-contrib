@@ -49,16 +49,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-  "id": "String (identifier)",
-  "status": "String",
+  "id": "a9d6cf90-083a-47dc-ace2-1da98be3f344",
+  "status": "active",
   "accessContainer": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
   },
   "accessDetails": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "2022-02-13T10:33:52.3182097Z",
+  "lastModifiedDateTime": "2022-03-09T20:34:59.3282097Z"
 }
 ```
 

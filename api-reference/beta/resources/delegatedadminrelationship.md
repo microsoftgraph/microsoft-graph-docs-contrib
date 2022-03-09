@@ -60,9 +60,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "duration": "String (duration)",
+  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso admin relationship",
+  "duration": "P730D",
   "partner": {
     "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
   },
@@ -72,11 +72,11 @@ The following is a JSON representation of the resource.
   "accessDetails": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "activatedDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)"
+  "status": "active",
+  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
+  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
+  "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
+  "endDateTime": "2024-02-10T11:24:42.3148266Z"
 }
 ```
 

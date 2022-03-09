@@ -41,9 +41,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-  "serviceId": "String",
-  "serviceName": "String",
-  "serviceManagementUrl": "String"
+  "serviceId": "M365 Lighthouse",
+  "serviceName": "Microsoft 365 Lighthouse",
+  "serviceManagementUrl": "https://lighthouse.microsoft.com"
 }
 ```
 

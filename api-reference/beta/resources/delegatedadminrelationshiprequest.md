@@ -48,11 +48,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-  "id": "String (identifier)",
-  "action": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
+  "action": "approve",
+  "status": "created",
+  "createdDateTime": "2022-02-10T10:55:47.1180588Z",
+  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
 }
 ```
 

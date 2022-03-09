@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
+GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
 Authorization: Bearer {token}
 ```
 
@@ -78,9 +78,9 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-      "serviceId": "String",
-      "serviceName": "String",
-      "serviceManagementUrl": "String"
+      "serviceId": "M365 Lighthouse",
+      "serviceName": "Microsoft 365 Lighthouse",
+      "serviceManagementUrl": "https://lighthouse.microsoft.com"
     }
   ]
 }

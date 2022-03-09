@@ -30,14 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
+PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
 ```
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|If-Match|Last known ETag value for the **delegated admin access assignment** to be updated. Required.|
+|If-Match|Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -54,7 +54,7 @@ PATCH /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshi
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body, or a `202 Accepted` response code.
 
 ## Examples
 
@@ -66,14 +66,14 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
+PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
 Authorization: Bearer {token}
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-  "status": "String",
+  "status": "pending",
   "accessContainer": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
   },
@@ -88,7 +88,8 @@ Content-Type: application/json
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
 }
 -->
 ``` http
@@ -99,15 +100,15 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
   "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
-  "status": "String",
+  "status": "active",
   "accessContainer": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
   },
   "accessDetails": {
     "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "2022-02-10T00:55:47.1180588Z",
+  "lastModifiedDateTime": "2022-02-14T22:55:47.1180588Z"
 }
 ```
 

@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessContainer",
-  "accessContainerId": "String",
-  "accessContainerType": "String"
+  "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",
+  "accessContainerType": "securityGroup"
 }
 ```
 

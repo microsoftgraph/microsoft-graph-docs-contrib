@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
+POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
 ```
 
 ## Request headers
@@ -62,14 +62,13 @@ If successful, this method returns a `201 Created` response code and a [delegate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
+POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
 Authorization: Bearer {token}
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-  "action": "String",
-  "status": "String"
+  "action": "lockForApproval"
 }
 ```
 
@@ -89,10 +88,10 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
-  "action": "String",
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "action": "lockForApproval",
+  "status": "created",
+  "createdDateTime": "2022-02-10T10:55:47.1180588Z",
+  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
 }
 ```
 

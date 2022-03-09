@@ -43,9 +43,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
-  "id": "String (identifier)",
-  "tenantId": "String",
-  "displayName": "String"
+  "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "displayName": "Contoso"
 }
 ```
 

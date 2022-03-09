@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}
+GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers/{delegatedAdminCustomerId}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 Authorization: Bearer {token}
 ```
 
@@ -77,9 +77,9 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
-    "id": "f2b7c6b0-3fa6-545e-92c3-adcc75ecbaf2",
-    "tenantId": "String",
-    "displayName": "String"
+    "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+    "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+    "displayName": "Contoso"
   }
 }
 ```

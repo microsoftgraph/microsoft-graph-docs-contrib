@@ -18,7 +18,7 @@ Contains details of a participant in a delegated admin relationship.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|The tenant ID of the participant in the relationship. Must be a valid tenant ID as in AAD.|
+|tenantId|String|The tenant ID of the participant in the relationship. Must be a valid tenant ID in AAD.|
 
 ## Relationships
 None.
@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipParticipant",
-  "tenantId": "String"
+  "tenantId": "8777b240-c6f0-4469-9e98-a3205431b836"
 }
 ```
 
