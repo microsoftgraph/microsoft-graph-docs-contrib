@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [dele
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_delegatedadminaccessassignment"
+  "name": "update_delegatedadminaccessassignment",
   "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
 }
 -->
