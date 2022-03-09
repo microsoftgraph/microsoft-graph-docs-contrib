@@ -18,7 +18,6 @@ Represents a delegated admin customer. This object is created by the system when
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create delegatedAdminCustomer](../api/tenantrelationship-post-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Create a new **delegatedAdminCustomer** object.|
 |[List delegatedAdminCustomers](../api/tenantrelationship-list-delegatedadmincustomers.md)|[delegatedAdminCustomer](delegatedadmincustomer.md) collection|Get a list of the **delegatedAdminCustomer** objects and their properties.|
 |[Get delegatedAdminCustomer](../api/delegatedadmincustomer-get.md)|[delegatedAdminCustomer](delegatedadmincustomer.md)|Read the properties and relationships of a **delegatedAdminCustomer** object.|
 
