@@ -7,7 +7,7 @@ ms.prod: "Sharepoint"
 doc_type: "resourcePageType"
 ---
 
-# Ssttings resource type
+# Settings resource type
 
 Namespace: microsoft.graph.tenantAdmin
 
