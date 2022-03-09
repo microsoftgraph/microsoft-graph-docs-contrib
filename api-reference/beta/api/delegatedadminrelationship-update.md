@@ -76,7 +76,6 @@ PATCH https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminRelation
 Content-Type: application/json
 Authorization: Bearer {token}
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
-Content-length: 529
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",

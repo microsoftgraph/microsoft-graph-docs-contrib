@@ -67,7 +67,6 @@ If successful, this method returns a `201 Created` response code and a [delegate
 POST https://graph.microsoft.com/beta/tenantRelationship/delegatedAdminCustomers
 Authorization: Bearer {token}
 Content-Type: application/json
-Content-length: 148
 
 {
   "@odata.type": "#microsoft.partner.customerServiceAdministration.delegatedAdminCustomer",
