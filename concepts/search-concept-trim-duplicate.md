@@ -1,17 +1,17 @@
 ---
-title: "Trim duplicate search results in Microsoft Search API(preview)"
-description: "Trim duplicate search results using the Microsoft Search API."
+title: "Use the Microsoft Search API to trim duplicate search results (preview)"
+description: "Learn how to use the Microsoft Search API to trim duplicate search results."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Trim duplicate search results in Microsoft Search API
+# Use the Microsoft Search API to trim duplicate search results (preview)
 
-You can use the Microsoft Search API in Microsoft Graph to dedup search results. To dedup the results, specify the **trimDuplicate** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object.
-TrimDuplicate is only supported on SharePoint items, the default value is false.
+In this article, you will learn how to use the Microsoft Search API to trim duplicate search results. Specify the \*\*trimDuplicate\*\* property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object to trim away the duplicate search results. The **trimDuplicate** property is only supported on files hosted in SharePoints. The default value is `false`.
 
 ## Example
+The following example shows a request that searches for SharePoint items and uses the **trimDuplicate** property to trim away the duplicate search results.
 
 ### Request
 
@@ -53,7 +53,7 @@ Content-type: application/json
                     "@odata.type": "#microsoft.graph.searchHit",
                     "hitId": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
                     "rank": 1,
-                    "summary": "As we work to become a more <ddd/> We <c0>test</c0> samples from the region between 10 and 100 times per day <ddd/> and surrounding areas that CPU uses to <c0>test</c0> the quality of your drinking water every day <ddd/> ",
+                    "summary": "Unique Item 1 ",
                     "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 971838,
@@ -64,17 +64,17 @@ Content-type: application/json
                         "id": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
                         "createdBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adatum Corporation"
                             }
                         },
                         "createdDateTime": "2020-07-22T21:14:59+00:00",
                         "lastModifiedBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adatum Corporation"
                             }
                         },
                         "lastModifiedDateTime": "2018-09-12T16:20:16+00:00",
-                        "name": "Our Water Our Future.docx",
+                        "name": "Adatum Corporation Name",
                         "parentReference": {
                             "siteId": "Contoso066a,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
                             "driveId": "b!NAe_rKr80k-n7e5zlCVIqSnIwTNsGBVBlusjEvRHgjMmmcA3Ubc7R4Kyao9hbgL4",
@@ -84,14 +84,14 @@ Content-type: application/json
                                 "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
                             }
                         },
-                        "webUrl": "https://Contoso066a/sites/GlobalSales/Shared Documents/Q1 2019/Our Water Our Future.docx"
+                        "webUrl": "http://www.adatum.com/"
                     }
                 },
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
                     "hitId": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
                     "rank": 2,
-                    "summary": "QT300 Accessories Specs Costs Chart Continue <ddd/> 16 Package 5 14 Grand Total 99 Results Data <c0>Test</c0> Group Gender <c0>Test</c0> Option 1 2 3 18-25 Male Package 4 Color <ddd/> ",
+                    "summary": "Unique item 2",
                     "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 34428,
@@ -102,17 +102,17 @@ Content-type: application/json
                         "id": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
                         "createdBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adventure Works Cycles"
                             }
                         },
                         "createdDateTime": "2020-07-22T21:23:50+00:00",
                         "lastModifiedBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adventure Works Cycles"
                             }
                         },
                         "lastModifiedDateTime": "2012-10-29T17:52:10+00:00",
-                        "name": "QT300 Accessories Specs.xlsx",
+                        "name": "Adventure Works Cycles Name",
                         "parentReference": {
                             "siteId": "Contoso066a,893378cb-d2cd-4076-a2c9-e50587a26832,04120cf2-7863-4701-8541-eb26266a25e6",
                             "driveId": "b!H9kkVwxlEEiDzGGogYkX1twlusOfLMtIg750zfaOpaBq9eOBX6MXQapv1hTT-bIt",
@@ -122,7 +122,7 @@ Content-type: application/json
                                 "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
                             }
                         },
-                        "webUrl": "https://Contoso066a/sites/contosoteam/Shared Documents/QT300 Accessories Specs.xlsx"
+                        "webUrl": "http://www.adventure-works.com/"
                     }
                 }
             ]
@@ -133,7 +133,7 @@ Content-type: application/json
 
 ## Known limitations
 
-- TrimDuplicate is not supported for **message**, **event**, and **externalItem**.
+The **trimDuplicate** property is not supported for the following resources: **message**, **event**, and **externalItem**.
 
 ## Next steps
 
