@@ -15,7 +15,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Delta()().Get(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Delta()(team-id, channel-id).Get(options)
 
 
 ```

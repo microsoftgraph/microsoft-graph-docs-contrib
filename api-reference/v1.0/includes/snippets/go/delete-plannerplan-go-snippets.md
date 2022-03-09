@@ -14,7 +14,7 @@ options := &msgraphsdk.PlannerPlanRequestBuilderDeleteOptions{
 	H: headers,
 }
 plannerPlanId := "plannerPlan-id"
-graphClient.Planner().PlansById(&plannerPlanId).Delete(options)
+result, err := graphClient.Planner().PlansById(&plannerPlanId).Delete(options)
 
 
 ```

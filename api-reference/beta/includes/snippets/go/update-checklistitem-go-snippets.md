@@ -16,7 +16,7 @@ options := &msgraphsdk.ChecklistItemRequestBuilderPatchOptions{
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
 checklistItemId := "checklistItem-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Patch(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Patch(options)
 
 
 ```

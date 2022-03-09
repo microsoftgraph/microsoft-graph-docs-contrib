@@ -259,6 +259,16 @@
       "source_path_from_root": "/api-reference/v1.0/api/groupsetting-list.md",
       "redirect_url": "/graph/api/group-list-settings?view=graph-rest-1.0",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/application-delete-extensionproperty.md",
+      "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-1.0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/application-delete-extensionproperty.md",
+      "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-beta",
+      "redirect_document_id": true
     }
   ]
 }

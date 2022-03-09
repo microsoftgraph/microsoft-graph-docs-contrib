@@ -39,7 +39,7 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
-| tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only.|
+| tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only. Key.|
 
 ## Relationships
 
@@ -50,7 +50,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
   "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },

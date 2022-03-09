@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All|
 |Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All    |
 |Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperties-csharp-snippets.md)]
@@ -109,16 +109,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties",
     "value": [
         {
-            "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+            "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
             "deletedDateTime": null,
-            "appDisplayName": "Display name",
-            "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
             "targetObjects": [
-            	"Application"
+                "User"
+            ]
+        },
+        {
+            "id": "1f0f15e3-925d-40f0-8fc8-9d3ad135bce0",
+            "deletedDateTime": null,
+            "appDisplayName": "",
+            "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "targetObjects": [
+                "User"
             ]
         }
     ]
