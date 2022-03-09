@@ -1,16 +1,16 @@
 ---
-title: "Use template query in Microsoft Search API (preview)"
-description: "Provide a template way to help decorate user query "
+title: "Use the Microsoft Search API to search content using query templates (preview)"
+description: "Learn how to use query templates in the Microsoft Search API to search for content based on query variables, KQL, and FQL."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
-# Use QueryTemplate Microsoft Search API
-Microsoft Search API provides a way to template user query.
-Client side developers can restrict the query scope through KQL, FQL and Query Variables to help build their own search experience. 
+# Use the Microsoft Search API to search content using query templates (preview)
+QueryTemplate provides a way to template user query.
 
-## Example : Use KQL in queryTemplate
+## Example
+The following example shows a request that uses a query template to search for content based on a query variable and KQL.
 
 ### Request
 
@@ -63,17 +63,17 @@ Content-type: application/json
                         "id": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
                         "createdBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adventure Works Cycles"
                             }
                         },
                         "createdDateTime": "2020-07-22T21:14:59+00:00",
                         "lastModifiedBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adventure Works Cycles"
                             }
                         },
                         "lastModifiedDateTime": "2018-09-12T16:20:16+00:00",
-                        "name": "Our Water Our Future.docx",
+                        "name": "Adventure Works Cycles Name",
                         "parentReference": {
                             "siteId": "Contoso066a,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
                             "driveId": "b!NAe_rKr80k-n7e5zlCVIqSnIwTNsGBVBlusjEvRHgjMmmcA3Ubc7R4Kyao9hbgL4",
@@ -83,7 +83,7 @@ Content-type: application/json
                                 "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
                             }
                         },
-                        "webUrl": "https://Contoso066a/sites/GlobalSales/Shared Documents/Q1 2019/Our Water Our Future.docx"
+                        "webUrl": "http://www.adventure-works.com/"
                     }
                 },
                 {
@@ -101,17 +101,17 @@ Content-type: application/json
                         "id": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
                         "createdBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adatum Corporation"
                             }
                         },
                         "createdDateTime": "2020-07-22T21:23:50+00:00",
                         "lastModifiedBy": {
                             "user": {
-                                "displayName": "Contoso066a"
+                                "displayName": "Adatum Corporation"
                             }
                         },
                         "lastModifiedDateTime": "2012-10-29T17:52:10+00:00",
-                        "name": "QT300 Accessories Specs.xlsx",
+                        "name": "Adatum Corporation Name",
                         "parentReference": {
                             "siteId": "Contoso066a,893378cb-d2cd-4076-a2c9-e50587a26832,04120cf2-7863-4701-8541-eb26266a25e6",
                             "driveId": "b!H9kkVwxlEEiDzGGogYkX1twlusOfLMtIg750zfaOpaBq9eOBX6MXQapv1hTT-bIt",
@@ -121,7 +121,7 @@ Content-type: application/json
                                 "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
                             }
                         },
-                        "webUrl": "https://Contoso066a/sites/contosoteam/Shared Documents/QT300 Accessories Specs.xlsx"
+                        "webUrl": "http://www.adatum.com/"
                     }
                 }
             ]
