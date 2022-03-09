@@ -5456,6 +5456,8 @@ items:
               href: resources/approval.md
             - name: Get
               href: api/approval-get.md
+            - name: Filter by current user
+              href: api/approval-filterbycurrentuser.md 
             - name: Approval stage
               items:
               - name: Approval stage
