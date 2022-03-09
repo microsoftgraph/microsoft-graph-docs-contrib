@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD).
+Represents the current status of a user's response to a company's customizable terms of use agreement powered by Azure Active Directory (Azure AD).
 
 <!--
 ## Methods

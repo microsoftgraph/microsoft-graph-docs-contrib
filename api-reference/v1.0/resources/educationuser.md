@@ -69,6 +69,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Relationship  | Type                                                          | Description                                    |
 | :------------ | :------------------------------------------------------------ | :--------------------------------------------- |
+| assignments   | [educationAssignment](../resources/educationassignment.md) collection   | Assignments belonging to the user.   |
 | classes       | [educationClass](../resources/educationclass.md) collection   | Classes to which the user belongs. Nullable.   |
 | schools       | [educationSchool](../resources/educationschool.md) collection | Schools to which the user belongs. Nullable.   |
 | taughtClasses | [educationClass](../resources/educationclass.md) collection   | Classes for which the user is a teacher.       |

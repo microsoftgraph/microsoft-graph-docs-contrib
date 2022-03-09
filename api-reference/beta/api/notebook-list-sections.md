@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 [!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sections-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
-	Search: "%22displayName:wa%22%20OR%20%22displayName:to%22",
+	Search: "%22displayName:wa%22%20OR%20%22displayName:ad%22",
 	Orderby: "displayName",
 	Count: true,
 }

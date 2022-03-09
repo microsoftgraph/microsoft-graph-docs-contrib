@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCaseSettings()
 redundancyDetection := msgraphsdk.NewRedundancyDetectionSettings()
@@ -38,7 +38,7 @@ options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options)
 
 
 ```

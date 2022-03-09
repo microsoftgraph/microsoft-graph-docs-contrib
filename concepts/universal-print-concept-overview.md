@@ -85,7 +85,7 @@ Follow these steps to enable pull printing:
 ## API reference
 Looking for the API reference for this service?
 
-- [Universal Print API in Microsoft Graph beta](/graph/api/resources/print)
+- [Universal Print API in Microsoft Graph](/graph/api/resources/print)
 
 ## Provide feedback
 

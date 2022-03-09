@@ -11,6 +11,15 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|
@@ -435,6 +444,25 @@ Namespace: microsoft.graph
 |groupCall|
 |peerToPeer|
 |unknownFutureValue|
+
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### onlineMeetingRole values
 
@@ -1371,6 +1399,7 @@ Possible values for user account types (group membership), per Windows definitio
 | chatEvent |
 | typing |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessagePolicyViolationDlpActionType values
 
@@ -1702,6 +1731,13 @@ Possible values for user account types (group membership), per Windows definitio
 |strategic|
 |unknownFutureValue|
 
+### searchAlterationType values
+
+| Member |
+|:---------------|
+|modification|
+|suggestion|
+
 ### serviceHealthClassificationType values 
 
 |Member|
@@ -1820,4 +1856,85 @@ Possible values for user account types (group membership), per Windows definitio
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### answerInputType values 
+
+|Member|
+|:---|
+|text|
+|radioButton|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

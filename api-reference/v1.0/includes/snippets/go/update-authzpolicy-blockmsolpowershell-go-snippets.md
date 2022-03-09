@@ -13,7 +13,7 @@ requestBody.SetBlockMsolPowerShell(&blockMsolPowerShell)
 options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().AuthorizationPolicy().Patch(options)
+result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
 
 
 ```

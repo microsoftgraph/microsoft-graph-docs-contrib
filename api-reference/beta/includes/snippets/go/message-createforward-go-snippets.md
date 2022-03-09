@@ -10,9 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
-message.SetAdditionalData(map[string]interface{}{
-	"isDeliveryReceiptRequested": true,
-	"toRecipients":  []Object {
+isDeliveryReceiptRequested := true
+message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
+message.SetToRecipients( []Recipient {
+	msgraphsdk.NewRecipient(),
+	SetAdditionalData(map[string]interface{}{
 	}
 }
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
@@ -21,7 +23,7 @@ options := &msgraphsdk.CreateForwardRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateForward().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).CreateForward(message-id).Post(options)
 
 
 ```

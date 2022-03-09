@@ -2,7 +2,7 @@
 title: "educationAssignment resource type"
 description: "Represents a task or unit of work assigned to a student or team member in a class as part of their study."
 ms.localizationpriority: medium
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -42,6 +42,7 @@ The assignment APIs are exposed in the class namespace.
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property isn't specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a **submission** or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the **assignment** should become active.  If in the future, the **assignment** isn't shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -87,6 +88,7 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "addedStudentAction": "none",
+  "addToCalendarAction": "string",  
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

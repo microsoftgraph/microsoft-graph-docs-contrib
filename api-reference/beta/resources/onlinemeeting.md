@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
+This resource supports subscribing to [change notifications](/graph/webhooks).
+
 ## Methods
 
 | Method | Return Type |Description |
@@ -91,11 +93,13 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
-| registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
 | meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
 
 > [!TIP]
-> The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
+>
+>- The **meetingAttendanceReport** property is deprecated. It will remain in beta for backward compatibility. Going forward, please use **attendanceReports** property to retrieve attendance reports of an online meeting.
+>- The type of **registration** can be [meetingRegistration](meetingregistration.md) or [externalMeetingRegistration](externalmeetingregistration.md), both of which inherit from [meetingRegistrationBase](meetingregistrationbase.md).
 
 ## JSON representation
 

@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "disabledPlans": ["guid"],
-  "skuId": "guid"
+  "disabledPlans": ["Guid"],
+  "skuId": "Guid"
 }
 
 ```

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemInsightsSettings = new ItemInsightsSettings
+var insightsSettings = new InsightsSettings
 {
 	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 };
 
 await graphClient.Organization["{organization-id}"].Settings.ItemInsights
 	.Request()
-	.UpdateAsync(itemInsightsSettings);
+	.UpdateAsync(insightsSettings);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -43,7 +43,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chat][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
-- Teams [presence][] (preview)
+- Teams [presence][]
+- Teams [onlineMeeting][]
 - Teams [team][]
 - [todoTask][] (preview)
 - [user][]
@@ -55,7 +56,7 @@ Or to a top-level resource:
 `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`, `/communications/onlinemeeting/{meeting-id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -267,7 +268,7 @@ Your process should process every change notification it receives. The following
 
     If your processing is expected to take more than 3 seconds, you should persist the notification, return a `202 - Accepted` status code in your response to Microsoft Graph, then process the notifications. If the notification is not persisted, return a 5xx class code to indicate an error so the notification will be retried.
 
-    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - Accepted` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
+    If your processing is expected to take less than 3 seconds, you should process the notifications and return a `200 - OK` status code in your response to Microsoft Graph. If the notification is not processes correctly, return a 5xx class code to indicate an error so the notification will be retried.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
@@ -325,7 +326,8 @@ The following table lists the latency to expect between an event happening in th
 |[group][] | Less than 2 minutes | 15 minutes |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[onlineMeeting][] | Less than 10 seconds | 1 minute |
+|[presence][] | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[team][] | Less than 10 seconds | 60 minutes |
@@ -363,3 +365,4 @@ The following table lists the latency to expect between an event happening in th
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

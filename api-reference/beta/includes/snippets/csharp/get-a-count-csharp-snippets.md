@@ -6,10 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipals = await graphClient.ServicePrincipals
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("$count", "true")
+};
+
+var contacts = await graphClient.Contacts
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("startswith(displayName, 'a')")
+	.Filter("startswith(displayName,'A')")
 	.OrderBy("displayName")
 	.Top(1)
 	.GetAsync();

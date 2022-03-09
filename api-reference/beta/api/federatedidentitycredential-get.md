@@ -31,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Optional query parameters
@@ -80,6 +82,10 @@ GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff3834
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

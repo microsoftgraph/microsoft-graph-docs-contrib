@@ -24,9 +24,9 @@ members1.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https
 membersList.add(members1);
 AadUserConversationMember members2 = new AadUserConversationMember();
 LinkedList<String> rolesList2 = new LinkedList<String>();
-rolesList2.add("owner");
+rolesList2.add("guest");
 members2.roles = rolesList2;
-members2.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"));
+members2.additionalDataManager().put("user@odata.bind", new JsonPrimitive("https://graph.microsoft.com/v1.0/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"));
 membersList.add(members2);
 ConversationMemberCollectionResponse conversationMemberCollectionResponse = new ConversationMemberCollectionResponse();
 conversationMemberCollectionResponse.value = membersList;

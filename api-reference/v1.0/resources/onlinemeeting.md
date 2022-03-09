@@ -74,6 +74,12 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
 | unknownFutureValue | Unknown future value.                                                  |
 
+## Relationships
+
+| Relationship | Type | Description |
+| ------------ | ---- | ----------- |
+| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
+
 ## JSON representation
 
 <!-- {

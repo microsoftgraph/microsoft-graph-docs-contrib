@@ -20,7 +20,7 @@ var recipients = new List<DriveRecipient>()
 };
 
 await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.CreateLink(type,scope,null,password,null,recipients)
+	.CreateLink(type,scope,null,password,null,recipients,null)
 	.Request()
 	.PostAsync();
 

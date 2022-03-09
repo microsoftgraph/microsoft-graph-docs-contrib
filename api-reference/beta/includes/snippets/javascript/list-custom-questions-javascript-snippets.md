@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let customQuestions = await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/customQuestions')
+let customQuestions = await client.api('/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions')
 	.version('beta')
 	.get();
 

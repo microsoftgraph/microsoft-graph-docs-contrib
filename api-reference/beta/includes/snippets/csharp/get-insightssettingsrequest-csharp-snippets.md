@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemInsightsSettings = await graphClient.Organization["{organization-id}"].Settings.ItemInsights
+var insightsSettings = await graphClient.Organization["{organization-id}"].Settings.ItemInsights
 	.Request()
 	.GetAsync();
 

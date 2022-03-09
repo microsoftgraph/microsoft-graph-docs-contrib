@@ -19,12 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SubjectRightsRequest.Read.All*, SubjectRightsRequest.ReadWrite.All*|
+|Delegated (work or school account)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported|
-
->[!IMPORTANT]
->Permissions marked with an asterisk (*) are currently not available. For details, see [Known issues](/graph/known-issues#compliance).
 
 ## HTTP request
 
@@ -46,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `302` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200` response code.
 
 ## Examples
 
@@ -77,6 +74,10 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/subjectrightsrequest-getfinalattachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/subjectrightsrequest-getfinalattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,6 +90,6 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 302 
+HTTP/1.1 200 
 ```
 

@@ -14,6 +14,11 @@ requestBody.SetContacts( []TenantContactInformation {
 	msgraphsdk.NewTenantContactInformation(),
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
+		"name": "String",
+		"title": "String",
+		"email": "String",
+		"phone": "String",
+		"notes": "String",
 	}
 }
 website := "String"
@@ -25,7 +30,7 @@ options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
 
 
 ```

@@ -27,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
-
 ```
 
 ## Request headers
@@ -46,7 +45,7 @@ If successful, this method returns `201 Created` response code and [groupLifecyc
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -84,10 +83,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-grouplifecyclepolicy-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-grouplifecyclepolicy-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
