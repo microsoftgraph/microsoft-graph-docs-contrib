@@ -438,7 +438,7 @@ Content-Type: application/json
   },
   "subject": "User meeting",
   "joinMeetingIdSettings": {
-    "isPasscodeRequired": false,
+    "isPasscodeRequired": true,
     "joinMeetingId": "1234567890",
     "passcode": "123abc"
   }
