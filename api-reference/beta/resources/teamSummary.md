@@ -1,6 +1,6 @@
 ---
 title: "teamSummary resource type"
-description: "Team summary consists of ownersCount, membersCount, guestsCount."
+description: "Contains information about a team in Microsoft Teams, including numbers of owners, members, and guests."
 ms.localizationpriority: medium
 author: "akhilkohlimicrosoft"
 ms.prod: "microsoft-teams"
@@ -18,9 +18,9 @@ Team summary consists of ownersCount, membersCount, guestsCount in the [team](te
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|ownersCount|Integer|Count of owners in a team.|
-|membersCount|Integer|Count of members in a team.|
 |guestsCount|Integer|Count of guests in a team.|
+|membersCount|Integer|Count of members in a team.|
+|ownersCount|Integer|Count of owners in a team.|
 
 ## JSON representation
 
@@ -33,9 +33,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "ownersCount": 2,
-    "membersCount": 3,
-    "guestsCount": 4,
+    "guestsCount": "Integer",
+    "membersCount": "Integer",
+    "ownersCount": "Integer",
 }
 ```
 
