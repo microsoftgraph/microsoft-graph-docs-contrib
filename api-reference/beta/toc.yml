@@ -1835,7 +1835,7 @@ items:
       - name: Records Management (preview)
         items:
         - name: Overview
-          href: resources/recordsmanagement-RMoverview.md
+          href: resources/recordsmanagement-rm-overview.md
         - name: Label
           href: resources/recordsmanagement-retentionlabel.md
           items:
