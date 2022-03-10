@@ -17,7 +17,7 @@ options := &msgraphsdk.ItemEmailRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemEmailId := "itemEmail-id"
-graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
 
 
 ```

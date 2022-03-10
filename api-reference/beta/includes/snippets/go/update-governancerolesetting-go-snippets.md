@@ -20,7 +20,7 @@ options := &msgraphsdk.GovernanceRoleSettingRequestBuilderPatchOptions{
 }
 privilegedAccessId := "privilegedAccess-id"
 governanceRoleSettingId := "governanceRoleSetting-id"
-graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(options)
 
 
 ```

@@ -23,7 +23,7 @@ options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 printerId := "printer-id"
-graphClient.Print().PrintersById(&printerId).Patch(options)
+result, err := graphClient.Print().PrintersById(&printerId).Patch(options)
 
 
 ```

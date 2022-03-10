@@ -14,7 +14,7 @@ options := &msgraphsdk.OutlookTaskGroupRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 outlookTaskGroupId := "outlookTaskGroup-id"
-graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
+result, err := graphClient.Me().Outlook().TaskGroupsById(&outlookTaskGroupId).Patch(options)
 
 
 ```

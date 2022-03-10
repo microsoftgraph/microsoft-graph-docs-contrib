@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 teamId := "team-id"
 channelId := "channel-id"
 conversationMemberId := "conversationMember-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).MembersById(&conversationMemberId).Delete(nil)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MembersById(&conversationMemberId).Delete(nil)
 
 
 ```

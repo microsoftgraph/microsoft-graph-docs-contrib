@@ -1,7 +1,7 @@
 ---
 title: "Get schedulingGroup"
 description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
