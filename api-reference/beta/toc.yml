@@ -10810,6 +10810,8 @@ items:
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Extract Sensitivity Labels
+          href: api/driveitem-extractsensitivitylabels.md
         - name: Bundles
           href: resources/bundle.md
       - name: Permissions

@@ -4615,8 +4615,6 @@ items:
           href: api/driveitem-preview.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-        - name: Extract Sensitivity Labels
-          href: api/driveitem-extractsensitivitylabels.md
       - name: Permissions
         href: resources/permission.md
         items:
