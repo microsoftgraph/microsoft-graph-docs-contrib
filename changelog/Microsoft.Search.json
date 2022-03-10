@@ -821,7 +821,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "queryTemplate",
           "ChangeType": "Addition",
-          "Description": "Added the **queryTemplate** property to [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchQuery?view=graph-rest-beta) resource.",
+          "Description": "Added the **queryTemplate** property to the [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta) resource.",
           "Target": "searchQuery"
         },
         {
@@ -829,7 +829,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "trimDuplicates",
           "ChangeType": "Addition",
-          "Description": "Added the **trimDuplicates** property to [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **trimDuplicates** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta) resource.",
           "Target": "searchRequest"
         }
       ],
