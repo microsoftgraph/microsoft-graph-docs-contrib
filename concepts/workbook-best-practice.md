@@ -292,10 +292,10 @@ We monitor the resource usage of multiple dependency services when the APIs are 
 
 ### Retry-After header
 
-In many cases, a throttling response includes a `Retry-After` header. Respecting the value of the header and delaying similar requests would help the client recover from throttling. See [Error handling for Excel APIs in Microsoft Graph](workbook-error-handling.md) for detailed instructions on how to handle error responses from Excel in Microsoft Graph.
+In many cases, a throttling response includes a `Retry-After` header. Respecting the value of the header and delaying similar requests would help the client recover from throttling. See [Error handling for Excel APIs in Microsoft Graph](workbook-error-handling.md) for detailed instructions on how to handle error responses from Excel API in Microsoft Graph.
 
 ### Throttling and concurrency
 
-Another factor related to throttling is request concurrency. It isn't recommended to increase concurrency when using the Excel REST API in Microsoft Graph (i.e. parallelizing the requests to the same workbook), especially for write requests. Instead, unless there is a specific concern, such as significant networking overhead compared to very short request execution time; we recommend sequential usage in the most common case: for each workbook, only send the next request after receiving a successful response to the current request.
+Another factor related to throttling is request concurrency. It isn't recommended to increase concurrency when using the Excel API (i.e. parallelizing the requests to the same workbook), especially for write requests. Instead, unless there is a specific concern, such as significant networking overhead compared to very short request execution time; we recommend sequential usage in the most common case: for each workbook, only send the next request after receiving a successful response to the current request.
 
 Concurrent write requests to the same workbook don’t usually execute in parallel (although in some cases they do); rather, they are often the cause of throttling, timeout (when requests are queued on servers), merge conflict (when concurrent sessions are involved) and other types of failures. They also complicate error handling, for example, when receiving a failure response, there is no way to confirm the status of other pending requests, making it difficult to determine or to recover the state of the workbook.
