@@ -1,7 +1,7 @@
 ---
 title: "Authentication differences between Exchange Web Services (EWS) and Microsoft Graph"
 description: "Describes authentication details to help you to migrate Exchange Web Services (EWS) apps to Microsoft Graph."
-author: "jasonjoh"
+author: "sumithra-maran"
 ms.localizationpriority: medium
 ms.prod: "exchange"
 doc_type: conceptualPageType

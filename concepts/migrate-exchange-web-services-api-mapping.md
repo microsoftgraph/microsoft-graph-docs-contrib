@@ -1,7 +1,7 @@
 ---
 title: "Exchange Web Services (EWS) API mapping to Microsoft Graph"
 description: "Describes equivalent Microsoft Graph APIs for Exchange Web Services APIs."
-author: "jasonjoh"
+author: "sumithra-maran"
 ms.localizationpriority: medium
 ms.prod: "exchange"
 doc_type: conceptualPageType
