@@ -17,25 +17,31 @@ applicationRestrictions.SetPasswordCredentials( []PasswordCredentialConfiguratio
 	SetAdditionalData(map[string]interface{}{
 		"restrictionType": "passwordAddition",
 		"maxLifetime": nil,
-		"restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z",
+		"restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
 	}
 	msgraphsdk.NewPasswordCredentialConfiguration(),
 	SetAdditionalData(map[string]interface{}{
 		"restrictionType": "passwordLifetime",
 		"maxLifetime": "P4DT12H30M5S",
-		"restrictForAppsCreatedAfterDateTime": "2019-01-01T10:37:00Z",
+		"restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z",
 	}
 	msgraphsdk.NewPasswordCredentialConfiguration(),
 	SetAdditionalData(map[string]interface{}{
 		"restrictionType": "symmetricKeyAddition",
 		"maxLifetime": nil,
-		"restrictForAppsCreatedAfterDateTime": "2021-04-01T10:37:00Z",
+		"restrictForAppsCreatedAfterDateTime": "2021-01-01T10:37:00Z",
+	}
+	msgraphsdk.NewPasswordCredentialConfiguration(),
+	SetAdditionalData(map[string]interface{}{
+		"restrictionType": "customPasswordAddition",
+		"maxLifetime": nil,
+		"restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
 	}
 	msgraphsdk.NewPasswordCredentialConfiguration(),
 	SetAdditionalData(map[string]interface{}{
 		"restrictionType": "symmetricKeyLifetime",
 		"maxLifetime": "P40D",
-		"restrictForAppsCreatedAfterDateTime": "2015-04-01T10:37:00Z",
+		"restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
 	}
 }
 applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
@@ -49,7 +55,7 @@ applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
 options := &msgraphsdk.DefaultAppManagementPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
+result, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
 
 
 ```

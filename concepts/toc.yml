@@ -208,7 +208,7 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Devices and apps
+      - name: Device and app management
         expanded: true
         items:
           - name: Cloud printing
@@ -492,6 +492,8 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Get change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks

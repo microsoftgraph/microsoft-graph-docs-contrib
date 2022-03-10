@@ -36,7 +36,7 @@ options := &msgraphsdk.SchemaExtensionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 schemaExtensionId := "schemaExtension-id"
-graphClient.SchemaExtensionsById(&schemaExtensionId).Patch(options)
+result, err := graphClient.SchemaExtensionsById(&schemaExtensionId).Patch(options)
 
 
 ```

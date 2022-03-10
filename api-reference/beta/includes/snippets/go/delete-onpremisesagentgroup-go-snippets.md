@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Delete(nil)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Delete(nil)
 
 
 ```

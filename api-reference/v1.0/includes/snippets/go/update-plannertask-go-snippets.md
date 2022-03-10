@@ -27,7 +27,7 @@ options := &msgraphsdk.PlannerTaskRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).Patch(options)
+result, err := graphClient.Planner().TasksById(&plannerTaskId).Patch(options)
 
 
 ```

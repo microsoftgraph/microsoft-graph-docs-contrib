@@ -1548,7 +1548,7 @@ items:
           href: api/bookingstaffmember-update.md
         - name: Delete
           href: api/bookingstaffmember-delete.md
-    - name: Devices and apps
+    - name: Device and app management
       expanded: true
       items:
       - name: Cloud printing
@@ -5450,6 +5450,24 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment request approval
+            items:
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
+              href: api/approval-get.md
+            - name: Filter by current user
+              href: api/approval-filterbycurrentuser.md 
+            - name: Approval stage
+              items:
+              - name: Approval stage
+                href: resources/approvalstage.md
+              - name: List
+                href: api/approval-list-stages.md
+              - name: Get
+                href: api/approvalstage-get.md
+              - name: Update
+                href: api/approvalstage-update.md
           - name: Access package assignment request
             href: resources/accesspackageassignmentrequest.md
             items:
@@ -5524,8 +5542,25 @@ items:
             href: api/agreement-update.md
           - name: Delete
             href: api/agreement-delete.md
-          - name: List acceptance status
-            href: api/user-list-agreementacceptances.md
+          - name: Agreement acceptances
+            href: resources/agreementacceptance.md
+            items:
+            - name: List acceptances
+              href: api/user-list-agreementacceptances.md
+            - name: List acceptance status
+              href: api/agreement-list-acceptances.md
+          - name: Agreement files
+            items:
+            - name: Default agreement file
+              href: resources/agreementfile.md
+            - name: Localized agreement files
+              href: resources/agreementfilelocalization.md
+            - name: Get default file
+              href: api/agreementfile-get.md
+            - name: Create localized files
+              href: api/agreement-post-files.md
+            - name: List localized files
+              href: api/agreement-list-files.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

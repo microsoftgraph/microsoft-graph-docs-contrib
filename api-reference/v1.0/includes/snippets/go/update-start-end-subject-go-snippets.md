@@ -18,7 +18,7 @@ options := &msgraphsdk.OnlineMeetingRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
 
 
 ```
