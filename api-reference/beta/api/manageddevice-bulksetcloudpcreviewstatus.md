@@ -47,18 +47,19 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|managedDeviceIds|String collection|The managed device id for these Cloud PC devices.|
+|managedDeviceIds|Collection(String)|The managed device IDs of the Cloud PC devices.|
 |reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC devices. |
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) object in the response body.
 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.bulksetcloudpcreviewstatus"
@@ -83,10 +84,9 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
 }
 -->

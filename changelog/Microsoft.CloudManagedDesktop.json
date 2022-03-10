@@ -155,7 +155,7 @@
                     "ChangedApiName": "bulkSetCloudPcReviewStatus",
                     "ChangeType": "Addition",
                     "Description": "Added the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) method to the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                    "Target": "bulkSetCloudPcReviewStatus"
+                    "Target": "managedDevice"
                 },
                 {
                     "Id": "4e8587f8-9825-442b-b76f-330450c59548",
@@ -163,7 +163,7 @@
                     "ChangedApiName": "setCloudPcReviewStatus",
                     "ChangeType": "Addition",
                     "Description": "Added the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) method to the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                    "Target": "setCloudPcReviewStatus"
+                    "Target": "managedDevice"
                 },
                 {
                     "Id": "4e8587f8-9825-442b-b76f-330450c59548",
@@ -171,7 +171,7 @@
                     "ChangedApiName": "getCloudPcReviewStatus",
                     "ChangeType": "Addition",
                     "Description": "Added the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) method to the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) resource.",
-                    "Target": "getCloudPcReviewStatus"
+                    "Target": "managedDevice"
                 }
             ],
             "Id": "4e8587f8-9825-442b-b76f-330450c59548",

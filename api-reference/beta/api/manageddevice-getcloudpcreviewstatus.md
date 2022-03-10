@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [cloudPcReviewStatus](../resources/cloudpcreviewstatus.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [cloudPcReviewStatus](../resources/cloudpcreviewstatus.md) object in the response body.
 
 ## Examples
 
@@ -60,10 +60,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.cloudPcReviewStatus"
 }
 -->

@@ -19,7 +19,7 @@ The details of the Cloud PC review status.
 |Property|Type|Description|
 |:---|:---|:---|
 |inReview|Boolean| True if the Cloud PC is set to in review by admin.|
-|userAccessLevel|cloudPcUserAccessLevel|The access level of the Cloud PC's end user, possible values include: `unrestricted`, `restricted`.|
+|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the Cloud PC's end user, possible values include: `unrestricted`, `restricted`.|
 |subscriptionId|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountId|String|The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.|
@@ -30,11 +30,11 @@ The details of the Cloud PC review status.
 
 ### cloudPcUserAccessLevel values
 
-|Member|Description|
-|:---|:---|
-|unrestricted|No restriction. User can access their Cloud PC.|
-|restricted|User is not allowed to access their Cloud PC.|
-|unknownFutureValue|Unknown future status (reserved, not used right now).|
+|Member|Value|Description|
+|:---|:---|:---|
+|unrestricted|0|No restriction. User can access their Cloud PC.|
+|restricted|1|User is not allowed to access their Cloud PC.|
+|unknownFutureValue|999|Unknown future status (reserved, not used right now).|
 
 ##### CSDL
 
