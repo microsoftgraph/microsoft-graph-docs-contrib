@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API to search content using query templates (preview)"
-description: "Learn how to use query templates in the Microsoft Search API to search for content based on query variables, KQL, and FQL."
+description: "Learn how to use query templates in the Microsoft Search API to search for content based on [query variables](https://docs.microsoft.com/en-us/sharepoint/technical-reference/query-variables), [KQL](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)."
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -10,7 +10,7 @@ ms.prod: "search"
 QueryTemplate provides a way to template user query.
 
 ## Example
-The following example shows a request that uses a query template to search for content based on a query variable and KQL.
+The following example shows a request that uses a query template to search for content based on a [query variables](https://docs.microsoft.com/en-us/sharepoint/technical-reference/query-variables) and [KQL](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 ### Request
 
@@ -26,7 +26,7 @@ Content-Type: application/json
       ],
        "query": {
         "queryString": "contoso",
-        "queryTemplate":"({searchTerms}) AuthorOWSUSER:Contoso066a"
+        "queryTemplate":"({searchTerms}) AuthorOWSUSER:Adventure"
       }
     }
   ]
@@ -101,7 +101,7 @@ Content-type: application/json
                         "id": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
                         "createdBy": {
                             "user": {
-                                "displayName": "Adatum Corporation"
+                                "displayName": "Adventure Works Cycles"
                             }
                         },
                         "createdDateTime": "2020-07-22T21:23:50+00:00",
