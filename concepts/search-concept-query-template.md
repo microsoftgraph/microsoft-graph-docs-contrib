@@ -42,17 +42,19 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "searchTerms": [
-        "test"
+        "contoso"
     ],
     "hitsContainers": [
         {
+            "total": 2,
+            "moreResultsAvailable": false,
             "@odata.type": "#microsoft.graph.searchHitsContainer",
             "hits": [
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
                     "hitId": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
                     "rank": 1,
-                    "summary": "As we work to become a more <ddd/> We <c0>test</c0> samples from the region between 10 and 100 times per day <ddd/> and surrounding areas that CPU uses to <c0>test</c0> the quality of your drinking water every day <ddd/> ",
+                    "summary": "As we work to become a more <ddd/> We <c0>test</c0> samples from the region between 10 and 100 times per day <ddd/> and surrounding areas that CPU uses to <c0>test</c0> the quality of your drinking water every day <ddd/> contoso",
                     "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 971838,
@@ -121,7 +123,7 @@ Content-type: application/json
                                 "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
                             }
                         },
-                        "webUrl": "http://www.adatum.com/"
+                        "webUrl": "http://www.adatum.com/contoso"
                     }
                 }
             ]
