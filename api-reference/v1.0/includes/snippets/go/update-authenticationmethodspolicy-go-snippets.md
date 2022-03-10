@@ -42,7 +42,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
 
 
 ```

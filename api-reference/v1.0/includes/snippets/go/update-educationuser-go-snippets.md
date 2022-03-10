@@ -20,7 +20,7 @@ options := &msgraphsdk.EducationUserRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 educationUserId := "educationUser-id"
-graphClient.Education().UsersById(&educationUserId).Patch(options)
+result, err := graphClient.Education().UsersById(&educationUserId).Patch(options)
 
 
 ```

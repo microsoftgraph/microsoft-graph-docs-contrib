@@ -36,9 +36,10 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
 |[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
 |**Extensions**| | |
-| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+| [Get extensionProperty](../api/extensionproperty-delete.md) | None | Get an extension property from an application object. |
+| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. |
 |[Get available extension properties](../api/directoryobject-getavailableextensionproperties.md)|[extensionProperty](../resources/extensionproperty.md) collection|Get all or a filtered list of the directory extension properties that have been registered in a directory.|
 |**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|

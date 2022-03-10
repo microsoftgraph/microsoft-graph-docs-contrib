@@ -22,7 +22,7 @@ options := &msgraphsdk.AssignedToTaskBoardFormatRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).AssignedToTaskBoardFormat().Patch(options)
+result, err := graphClient.Planner().TasksById(&plannerTaskId).AssignedToTaskBoardFormat().Patch(options)
 
 
 ```

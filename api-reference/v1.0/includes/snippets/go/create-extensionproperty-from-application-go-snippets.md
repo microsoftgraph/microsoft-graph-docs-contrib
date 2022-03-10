@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewExtensionProperty()
-name := "extensionName"
+name := "jobGroup"
 requestBody.SetName(&name)
-dataType := "string"
+dataType := "String"
 requestBody.SetDataType(&dataType)
 requestBody.SetTargetObjects( []String {
-	"Application",
+	"User",
 }
 options := &msgraphsdk.ExtensionPropertiesRequestBuilderPostOptions{
 	Body: requestBody,

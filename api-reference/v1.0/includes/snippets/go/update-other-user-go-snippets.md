@@ -17,7 +17,7 @@ options := &msgraphsdk.UserRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Patch(options)
+result, err := graphClient.UsersById(&userId).Patch(options)
 
 
 ```

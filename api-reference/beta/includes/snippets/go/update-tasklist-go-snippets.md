@@ -14,7 +14,7 @@ options := &msgraphsdk.BaseTaskListRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 baseTaskListId := "baseTaskList-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
 
 
 ```
