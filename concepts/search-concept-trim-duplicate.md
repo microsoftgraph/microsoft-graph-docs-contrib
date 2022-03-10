@@ -8,10 +8,10 @@ ms.prod: "search"
 
 # Use the Microsoft Search API to trim duplicate search results (preview)
 
-In this article, you will learn how to use the Microsoft Search API to trim duplicate search results. Specify the \*\*trimDuplicate\*\* property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object to trim away the duplicate search results. The **trimDuplicate** property is only supported on files hosted in SharePoints. The default value is `false`.
+In this article, you will learn how to use the Microsoft Search API to trim duplicate search results. Specify the \*\*trimDuplicates\*\* property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object to trim away the duplicate search results. The **trimDuplicates** property is only supported on files hosted in SharePoints. The default value is `false`.
 
 ## Example
-The following example shows a request that searches for SharePoint items and uses the **trimDuplicate** property to trim away the duplicate search results.
+The following example shows a request that searches for SharePoint items and uses the **trimDuplicates** property to trim away the duplicate search results.
 
 ### Request
 
@@ -26,9 +26,9 @@ Content-Type: application/json
           "driveItem"
       ],
        "query": {
-        "queryString": "contoso"
+        "queryString": "Adatum Corporation"
       },
-      "trimDuplicate": true
+      "trimDuplicates": true
     }
   ]
 }
@@ -108,7 +108,7 @@ Content-type: application/json
                         "createdDateTime": "2020-07-22T21:23:50+00:00",
                         "lastModifiedBy": {
                             "user": {
-                                "displayName": "Adventure Works Cycles"
+                                "displayName": "Adatum Corporation"
                             }
                         },
                         "lastModifiedDateTime": "2012-10-29T17:52:10+00:00",
@@ -133,7 +133,7 @@ Content-type: application/json
 
 ## Known limitations
 
-The **trimDuplicate** property is not supported for the following resources: **message**, **event**, and **externalItem**.
+The **trimDuplicates** property is not supported for the following resources: **message**, **event**, and **externalItem**.
 
 ## Next steps
 
