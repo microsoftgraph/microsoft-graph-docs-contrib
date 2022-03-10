@@ -23,7 +23,7 @@ Represents a search query that contains search terms and optional filters.
 |:-------------|:------------|:------------|
 |queryString|String|The search query containing the search terms. Required.|
 |query_string (deprecated)|[searchQueryString](searchquerystring.md)|This is now replaced by the **queryString** property. The search query containing the search terms.|
-
+|queryTemplate|String|The query template provide a way to decorate the query string.Support both KQL and query variables Optional.|
 
 ## JSON representation
 
