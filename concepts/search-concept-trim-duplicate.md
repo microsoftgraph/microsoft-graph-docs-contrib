@@ -12,7 +12,7 @@ In this article, you will learn how to use the Microsoft Search API to trim dupl
 The **trimDuplicates** property is only supported on files hosted in SharePoint. The default value is `false`.
 
 ## Example
-The following example shows a request that searches for SharePoint items and uses the **trimDuplicates** property to trim away the duplicate search results.
+The following example shows a request that searches for files hosted in SharePoint and uses the **trimDuplicates** property to trim away the duplicate search results.
 
 ### Request
 
