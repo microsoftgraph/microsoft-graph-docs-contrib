@@ -445,9 +445,9 @@ items:
             href: search-concept-speller.md
           - name: Search display layout (preview)
             href: search-concept-display-layout.md
-          - name: Trim Duplicate (preview)
+          - name: Trim duplicate search results (preview)
             href: search-concept-trim-duplicate.md
-          - name: QueryTemplate (preview)
+          - name: Query template (preview)
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
