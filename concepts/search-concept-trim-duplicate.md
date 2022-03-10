@@ -44,17 +44,20 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.searchResponse",
     "searchTerms": [
-        "test"
+        "Adatum",
+        "Corporation"
     ],
     "hitsContainers": [
         {
+            "total": 2,
+            "moreResultsAvailable": false,
             "@odata.type": "#microsoft.graph.searchHitsContainer",
             "hits": [
                 {
                     "@odata.type": "#microsoft.graph.searchHit",
                     "hitId": "01VRZMWHPGDM5KTXS53RF3SSGHW7SGGPKL",
                     "rank": 1,
-                    "summary": "Unique Item 1 ",
+                    "summary": "Unique Item 1 which created by Adatum Corporation ",
                     "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 971838,
@@ -92,7 +95,7 @@ Content-type: application/json
                     "@odata.type": "#microsoft.graph.searchHit",
                     "hitId": "01BTQFB3LHZTAYBV2VXVEK22ETF5WOQGT2",
                     "rank": 2,
-                    "summary": "Unique item 2",
+                    "summary": "Unique item 2 which modified by Adatum Corporation",
                     "resource": {
                         "@odata.type": "#microsoft.graph.driveItem",
                         "size": 34428,
