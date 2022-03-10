@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().ResetToDefault().Post(nil)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().ResetToDefault(case-id).Post(nil)
 
 
 ```

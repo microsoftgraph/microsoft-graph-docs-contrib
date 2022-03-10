@@ -15,7 +15,7 @@ options := &msgraphsdk.CalendarPermissionRequestBuilderPatchOptions{
 }
 userId := "user-id"
 calendarPermissionId := "calendarPermission-id"
-graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Patch(options)
+result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Patch(options)
 
 
 ```

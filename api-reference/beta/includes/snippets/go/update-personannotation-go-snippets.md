@@ -15,7 +15,7 @@ options := &msgraphsdk.PersonAnnotationRequestBuilderPatchOptions{
 }
 userId := "user-id"
 personAnnotationId := "personAnnotation-id"
-graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Patch(options)
 
 
 ```

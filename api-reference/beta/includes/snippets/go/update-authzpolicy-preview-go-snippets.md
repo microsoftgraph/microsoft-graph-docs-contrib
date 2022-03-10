@@ -15,7 +15,7 @@ options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 authorizationPolicyId := "authorizationPolicy-id"
-graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(options)
+result, err := graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(options)
 
 
 ```

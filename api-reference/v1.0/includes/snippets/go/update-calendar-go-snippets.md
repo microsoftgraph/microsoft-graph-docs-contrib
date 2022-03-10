@@ -13,7 +13,7 @@ requestBody.SetName(&name)
 options := &msgraphsdk.CalendarRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-graphClient.Me().Calendar().Patch(options)
+result, err := graphClient.Me().Calendar().Patch(options)
 
 
 ```

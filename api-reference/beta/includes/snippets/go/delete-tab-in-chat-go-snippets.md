@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 chatId := "chat-id"
 teamsTabId := "teamsTab-id"
-graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Delete(nil)
+result, err := graphClient.ChatsById(&chatId).TabsById(&teamsTabId).Delete(nil)
 
 
 ```

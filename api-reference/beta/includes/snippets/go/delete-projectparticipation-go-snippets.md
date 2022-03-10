@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 projectParticipationId := "projectParticipation-id"
-graphClient.Me().Profile().ProjectsById(&projectParticipationId).Delete(nil)
+result, err := graphClient.Me().Profile().ProjectsById(&projectParticipationId).Delete(nil)
 
 
 ```

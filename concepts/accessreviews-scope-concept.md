@@ -136,7 +136,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Note that dynamic groups and role-assignable groups are not included in this review.
 
-### Example 8: Review all assignemnt to Entitlement Management access packages
+### Example 8: Review all assignment to Entitlement Management access packages
 
 ```http
 "scope": {

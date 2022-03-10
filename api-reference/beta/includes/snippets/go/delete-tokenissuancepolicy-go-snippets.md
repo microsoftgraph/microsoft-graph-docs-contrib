@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Delete(nil)
+result, err := graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Delete(nil)
 
 
 ```
