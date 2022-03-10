@@ -19,6 +19,7 @@ Contains personal properties of a [task](task.md). When sharing or assigning a *
 |Property|Type|Description|
 |:---|:---|:---|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the **task** to occur.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 
 ## Relationships
 None.
@@ -35,7 +36,8 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.taskViewpoint",
   "reminderDatetime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  }
+  },
+  "categories": ["string"]
 }
 ```
 
