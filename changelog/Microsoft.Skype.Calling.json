@@ -9,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **coorganizer** member to the **onlineMeetingRole** enumeration.",
           "Target": "onlineMeetingRole"
-        },
-        {
-          "Id": "1f8b1c03-720b-4dd6-b8f5-c631931dcc10",
-          "ApiChange": "Property",
-          "ChangedApiName": "registrantId",
-          "ChangeType": "Addition",
-          "Description": "Added the **registrantId** property to the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
-          "Target": "attendanceRecord"
         }
       ],
       "Id": "1f8b1c03-720b-4dd6-b8f5-c631931dcc10",

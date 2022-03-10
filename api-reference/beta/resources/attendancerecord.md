@@ -29,7 +29,6 @@ Contains information associated with an attendance record in a [meetingAttendanc
 | emailAddress | String | Email address of the user associated with this atttendance record. |
 | identity | [identity](identity.md) | Identity of the user associated with this atttendance record. |
 | role | String | Role of the attendee. Possible values are: `None`, `Attendee`, `Presenter`, and `Organizer`.  |
-| registrantId | String | Unique identifier of a [meetingRegistrant](meetingregistrantbase.md). Presents when the participant has registered for the meeting. |
 | totalAttendanceInSeconds | Int32 | Total duration of the attendances in seconds. |
 
 ## JSON representation
@@ -50,7 +49,6 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "totalAttendanceInSeconds": "Int32",
   "role": "String(None|Attendee|Presenter|Organizer)",
-  "registrantId": "String",
   "identity": {
     "@odata.type": "#microsoft.graph.identity"
   },
