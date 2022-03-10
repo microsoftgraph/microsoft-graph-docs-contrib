@@ -1563,8 +1563,8 @@ items:
             href: api/audioroutinggroup-delete.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
-        - name: Enable Large Gallery view
-          href: api/call-enablelargegalleryview.md
+        - name: Add Large Gallery view
+          href: api/call-addlargegalleryview.md
       - name: Call records
         items:
         - name: Overview

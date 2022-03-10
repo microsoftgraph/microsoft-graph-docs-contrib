@@ -1,13 +1,13 @@
 --- 
-title: "EnableLargeGalleryViewOperation resource type"
-description: "Describes the response format of enabling Large Gallery view operation."
+title: "AddLargeGalleryViewOperation resource type"
+description: "Describes the response format of adding Large Gallery view operation."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# EnableLargeGalleryViewOperation resource type
+# AddLargeGalleryViewOperation resource type
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.enableLargeGalleryViewOperation"
+  "@odata.type": "microsoft.graph.addLargeGalleryViewOperation"
 }-->
 ```json
 {
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "enableLargeGalleryViewOperation resource",
+  "description": "addLargeGalleryViewOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

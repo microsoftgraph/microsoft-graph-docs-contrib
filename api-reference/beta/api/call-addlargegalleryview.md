@@ -1,21 +1,21 @@
 ---
-title: "call: enableLargeGalleryView"
-description: "Enable Large Gallery view in a call."
+title: "call: addLargeGalleryView"
+description: "Add Large Gallery view in a call."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# call: enableLargeGalleryView
+# call: addLargeGalleryView
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable Large Gallery view in a call.
+Add Large Gallery view in a call.
 
-For more information about how to handle Large Gallery view operation, see [enableLargeGalleryViewOperation](../resources/enablelargegalleryviewoperation.md).
+For more information about how to handle Large Gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,14 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | For joining meetings: Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All<br/>For initiating peer-to-peer calls: Calls.Initiate.All<br/>For initiating group calls: Calls.InitiateGroupCalls.All                       |
+| Application     | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All or Calls.InitiateGroupCalls.All                       |
 
->**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/enableLargeGalleryView
-POST /communications/calls/{id}/enableLargeGalleryView
+POST /app/calls/{id}/addLargeGalleryView
+POST /communications/calls/{id}/addLargeGalleryView
 ```
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
@@ -60,10 +59,10 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-enableLargeGalleryView"
+  "name": "call-addLargeGalleryView"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/enableLargeGalleryView
+POST https://graph.microsoft.com/beta/communications/calls/{id}/addLargeGalleryView
 Content-Type: application/json
 Content-Length: 46
 
@@ -80,16 +79,16 @@ Content-Length: 46
 
 <!-- {
   "blockType": "response",
-  "name": "call-enableLargeGalleryView",
+  "name": "call-addLargeGalleryView",
   "truncated": true,
-  "@odata.type": "microsoft.graph.enableLargeGalleryViewOperation"
+  "@odata.type": "microsoft.graph.addLargeGalleryViewOperation"
 } -->
 ```http
 HTTP/1.1 202 ACCEPTED
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
 
 {
-  "@odata.type": "#microsoft.graph.enableLargeGalleryViewOperation",
+  "@odata.type": "#microsoft.graph.addLargeGalleryViewOperation",
   "clientContext": "clientContext-value",
   "id": "e33176d4-836a-4fd7-b95a-d11bda52811d",
   "resultInfo": null,
@@ -102,7 +101,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 <!--
 {
   "type": "#page.annotation",
-  "description": "call: enableLargeGalleryView",
+  "description": "call: addLargeGalleryView",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
