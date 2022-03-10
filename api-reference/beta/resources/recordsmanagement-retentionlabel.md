@@ -47,7 +47,7 @@ A retentionLabel allows a user to retain or delete content and configure additio
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|eventType|[retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type|
+|eventType|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -35,7 +35,7 @@ Explore the [Microsoft 365 subject rights request APIs](subjectrightsrequest-sub
 
 Records Management solution in M365 provides the capability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations, compliance regulations, and increases efficiency with regular disposition of items that are no longer required to be retained. Learn more about [Microsoft 365 records management](/microsoft-365/compliance/records-management)
 
-Explore the [Microsoft 365 Records Management APIs](recordsmanagement-RMoverview.md).
+Explore the [Microsoft 365 Records Management APIs](recordsmanagement-rm-overview.md).
 
 <!--
 ## Labels
