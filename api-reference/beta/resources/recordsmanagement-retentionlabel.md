@@ -1,6 +1,6 @@
 ---
 title: "retentionLabel resource type"
-description: "A retentionLabel allows a user to retain or delete content and configure additional settings and actions"
+description: "Represents how customers can manage their data, whether and for how long to retain or delete it."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A retentionLabel allows a user to retain or delete content and configure additional settings and actions.
 
 ## Methods
 |Method|Return type|Description|
@@ -29,15 +29,15 @@ Namespace: microsoft.graph.recordsManagement
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod|Specifies the action of a document that has been labeled with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies the behaviour of a document that has been labeled with this label during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity|
-|createdDateTime|DateTimeOffset|The date time when the entity was created|
-|descriptionForAdmins|String|Optional information about the label for the Admin|
-|descriptionForUsers|String|Optional information about the label for the User|
-|displayName|String|Unique string defining the name of the label|
-|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers that will be notified and have to approve before an item is deleted|
-|id|String|Id of the label Inherited from [entity](../resources/recordsmanagement-entity.md).|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to be applied on a document with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the entity.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the entity is created.|
+|descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
+|descriptionForUsers|String|This is an optional property that provides the label information for the user|
+|displayName|String|Unique string that defines a label name.|
+|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
+|id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
 |isInUse|Boolean|Specifies if the label is currently being used|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified|

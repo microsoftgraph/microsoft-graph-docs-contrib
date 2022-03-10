@@ -32,7 +32,7 @@ When an event is created, it is associated to a specific event type. The creatio
 |createdDateTime|DateTimeOffset|The date time when the entity was created.|
 |description|String|Optional information about the event type|
 |displayName|String|Name of the event type|
-|id|String|Id of the EventType Inherited from [entity](../resources/recordsmanagement-entity.md).|
+|id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
 

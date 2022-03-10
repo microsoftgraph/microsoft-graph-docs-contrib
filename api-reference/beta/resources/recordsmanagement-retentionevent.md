@@ -37,7 +37,7 @@ Namespace: microsoft.graph.recordsManagement
 |eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|Specifies the number of processed documents per workload|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |filesQuery|String|Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event.|
-|id|String|Id of the Event Inherited from [entity](../resources/recordsmanagement-entity.md).|
+|id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
 |lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated|

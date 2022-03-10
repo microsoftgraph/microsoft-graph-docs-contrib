@@ -1,6 +1,6 @@
 ---
 title: "dispositionReviewStage resource type"
-description: "**Provides details about the reviewer and the review stage for a label set for a disposition review**"
+description: "Represents the reviewers to approve at each stage of the disposition process of a document."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -18,8 +18,8 @@ For content that has a label set for a disposition review at the end of a retetn
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reviewers|String collection|**A collection of reviewers at each stage**|
-|stageName|String|**Unique name for each stage**|
+|reviewers|String collection|A collection of reviewers at each stage|
+|stageName|String|Unique name for each stage|
 
 ## Relationships
 None.
