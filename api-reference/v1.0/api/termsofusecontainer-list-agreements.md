@@ -28,7 +28,7 @@ GET /identityGovernance/termsOfUse/agreements
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name         | Type        | Description |
@@ -91,13 +91,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "Sample ToU",
-      "isViewingBeforeAcceptanceRequired": true,
-      "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#agreements",
+    "value": [
+        {
+            "id": "0ec9f6a6-159d-4dd8-a563-1f0b5935e80b",
+            "displayName": "All users terms of use",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "920f5775-d5d7-454b-861f-14685bb24e2c",
+            "displayName": "ToU",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": "P90D",
+            "isViewingBeforeAcceptanceRequired": false,
+            "isPerDeviceAcceptanceRequired": false
+        },
+        {
+            "id": "94410bbf-3d3e-4683-8149-f034e55c39dd",
+            "displayName": "Contoso ToU for guest users",
+            "termsExpiration": null,
+            "userReacceptRequiredFrequency": null,
+            "isViewingBeforeAcceptanceRequired": true,
+            "isPerDeviceAcceptanceRequired": false
+        }
+    ]
 }
 ```
 
