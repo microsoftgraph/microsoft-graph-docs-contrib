@@ -81,6 +81,18 @@ Content-Type: application/json
       "serviceId": "M365 Lighthouse",
       "serviceName": "Microsoft 365 Lighthouse",
       "serviceManagementUrl": "https://lighthouse.microsoft.com"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
+      "serviceId": "DynamicsNAV",
+      "serviceName": "Dynamics 365 Business Central",
+      "serviceManagementUrl": "https://businesscentral.dynamics.com"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
+      "serviceId": "TeamspaceAPI",
+      "serviceName": "Teams",
+      "serviceManagementUrl": "https://admin.teams.microsoft.com"
     }
   ]
 }

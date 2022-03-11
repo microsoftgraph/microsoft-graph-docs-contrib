@@ -81,6 +81,12 @@ Content-Type: application/json
       "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
       "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
       "displayName": "Contoso"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
+      "id": "1c0fa218-5dec-49db-8247-cfa457af8116",
+      "tenantId": "1c0fa218-5dec-49db-8247-cfa457af8116",
+      "displayName": "Delegated Admin Customer"
     }
   ]
 }

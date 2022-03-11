@@ -45,7 +45,7 @@ Represents the partner view of a delegated admin relationship between a partner 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|The access assignments associated with the delegated admin relationship.|
-|operations|[delegatedAdminOperation](../resources/delegatedadminoperation.md) collection|The long running operations associated with the delegated admin relationship.|
+|operations|[delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) collection|The long running operations associated with the delegated admin relationship.|
 |requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship.|
 
 ## JSON representation

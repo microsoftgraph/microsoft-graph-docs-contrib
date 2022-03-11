@@ -1,5 +1,5 @@
 ---
-title: "delegatedAdminOperation resource type"
+title: "delegatedAdminRelationshipOperation resource type"
 description: "Represents a long running operation related to a delegated admin relationship."
 author: "amharris1331"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
-# delegatedAdminOperation resource type
+# delegatedAdminRelationshipOperation resource type
 
 Namespace: microsoft.graph
 
@@ -18,10 +18,10 @@ Represents a long running operation related to a delegated admin relationship.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminOperations](../api/delegatedadminoperation-list.md)|[delegatedAdminOperation](delegatedadminoperation.md) collection|Get a list of the **delegatedAdminOperation** objects and their properties.|
-|[Get delegatedAdminOperation](../api/delegatedadminoperation-get.md)|[delegatedAdminOperation](delegatedadminoperation.md)|Read the properties and relationships of a **delegatedAdminOperation** object.|
-|[Update delegatedAdminOperation](../api/delegatedadminoperation-update.md)|[delegatedAdminOperation](delegatedadminoperation.md)|Update the properties of a **delegatedAdminOperation** object.|
-|[Delete delegatedAdminOperation](../api/delegatedadminoperation-delete.md)|None|Deletes a **delegatedAdminOperation** object.|
+|[List delegatedAdminRelationshipOperations](../api/delegatedadminrelationshipoperation-list.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md) collection|Get a list of the **delegatedAdminRelationshipOperation** objects and their properties.|
+|[Get delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-get.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md)|Read the properties and relationships of a **delegatedAdminRelationshipOperation** object.|
+|[Update delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-update.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md)|Update the properties of a **delegatedAdminRelationshipOperation** object.|
+|[Delete delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-delete.md)|None|Deletes a **delegatedAdminRelationshipOperation** object.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,13 +41,13 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.delegatedAdminOperation",
+  "@odata.type": "microsoft.graph.delegatedAdminRelationshipOperation",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.delegatedAdminOperation",
+  "@odata.type": "#microsoft.graph.delegatedAdminRelationshipOperation",
   "id": "57e4479a-aafb-4d00-ab0f-8ce6027466cf",
   "operationType": "updateGdapRelationshipAccessAssignment",
   "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"PartnerGdapRelationshipId\":\"5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836\",\"Customer\":{\"TenantId\":\"4fdbff88-9d6b-42e0-9713-45c922ba8001\"},\"AccessContainer\":{\"Id\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"ContainerType\":0},\"AccessDetails\":{\"RoleType\":0,\"Roles\":null,\"UnifiedRoles\":[{\"RoleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"Status\":1,\"Activities\":[],\"_etag\":\"\\\"3d0001d2-0000-0200-0000-61775c160000\\\"\",\"partitionKey\":null}",

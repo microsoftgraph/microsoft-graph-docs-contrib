@@ -78,6 +78,14 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+      "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
+      "action": "lockForApproval",
+      "status": "complete",
+      "createdDateTime": "2022-02-10T06:14:55.5398865Z",
+      "lastModifiedDateTime": "2022-02-10T06:14:55.5398865Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
       "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
       "action": "approve",
       "status": "created",

@@ -88,6 +88,19 @@ Content-Type: application/json
       },
       "createdDateTime": "2022-02-10T00:55:47.1180588Z",
       "lastModifiedDateTime": "2022-02-10T00:55:47.1180588Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
+      "id": "c3878794-6020-4095-a75b-2b44c516dd1a",
+      "status": "pending",
+      "accessContainer": {
+        "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+      },
+      "accessDetails": {
+        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+      },
+      "createdDateTime": "2022-02-20T00:55:47.1180588Z",
+      "lastModifiedDateTime": "2022-03-11T02:00:27.7912161Z"
     }
   ]
 }

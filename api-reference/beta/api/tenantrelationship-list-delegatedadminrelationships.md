@@ -95,6 +95,26 @@ Content-Type: application/json
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
       "endDateTime": "2024-02-10T11:24:42.3148266Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
+      "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
+      "displayName": "Contoso support relationship",
+      "duration": "P30D",
+      "partner": {
+        "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
+      },
+      "customer": {
+        "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+      },
+      "accessDetails": {
+        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+      },
+      "status": "terminated",
+      "createdDateTime": "2021-09-29T16:52:39.6133896Z",
+      "lastModifiedDateTime": "2021-09-29T16:57:20.2101088Z",
+      "activatedDateTime": "2021-09-29T16:57:20.2101088Z",
+      "endDateTime": "2021-09-30T13:22:20.3301097Z"
     }
   ]
 }

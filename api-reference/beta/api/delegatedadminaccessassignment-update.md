@@ -93,7 +93,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
 Content-Type: application/json
 
@@ -110,5 +110,9 @@ Content-Type: application/json
   "createdDateTime": "2022-02-10T00:55:47.1180588Z",
   "lastModifiedDateTime": "2022-02-14T22:55:47.1180588Z"
 }
+```
+
+``` http
+HTTP/1.1 202 Accepted
 ```
 
