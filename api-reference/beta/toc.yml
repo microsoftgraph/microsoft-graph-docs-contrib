@@ -10159,6 +10159,10 @@ items:
             href: api/virtualendpoint-list-snapshots.md
           - name: Get
             href: api/cloudpcsnapshot-get.md
+          - name: Get
+            href: api/cloudpcsubscription-get.md
+          - name: Get
+            href: api/cloudpcforensicstorageaccount-get.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:

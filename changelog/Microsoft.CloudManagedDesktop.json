@@ -142,6 +142,48 @@
         {
             "ChangeList": [
                 {
+                    "Id": "07d4dd82-cf73-49cf-98c4-17f03cf18558",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "GET",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcSubscription](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) complex type and supported methods.",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "07d4dd82-cf73-49cf-98c4-17f03cf18558",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "GET",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcForensicStorageAccount](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "07d4dd82-cf73-49cf-98c4-17f03cf18558",
+                    "ApiChange": "ComplexType",
+                    "ChangedApiName": "cloudPcSnapshot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcSubscription** complex type.",
+                    "Target": "cloudPcSnapshot"
+                },
+                {
+                    "Id": "07d4dd82-cf73-49cf-98c4-17f03cf18558",
+                    "ApiChange": "ComplexType",
+                    "ChangedApiName": "cloudPcSnapshot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcForensicStorageAccount** complex type.",
+                    "Target": "cloudPcSnapshot"
+                }
+            ],
+            "Id": "07d4dd82-cf73-49cf-98c4-17f03cf18558",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-03-10T1413:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "5e030710-8a28-4fb9-a484-c10d15aeb968",
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",
