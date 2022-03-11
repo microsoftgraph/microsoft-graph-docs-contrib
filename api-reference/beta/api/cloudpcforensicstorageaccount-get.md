@@ -82,11 +82,11 @@ Content-Type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudPcForensicStorageAccounts",
     "value":[
         {
-            "storageAccountId": "/subscriptions/618f7b25-b146-4c0e-a21b-2f1c67e78648/resourceGroups/res2627/providers/Microsoft.Storage/storageAccounts/sto1125",
-            ""storageAccountName":"sto1125"
+            "storageAccountId": "/subscriptions/{subscription-id}/resourceGroups/res2627/providers/Microsoft.Storage/storageAccounts/sto1125",
+            "storageAccountName":"sto1125"
         },
         {
-            "storageAccountId": "/subscriptions/618f7b25-b146-4c0e-a21b-2f1c67e78648/resourceGroups/res9407/providers/Microsoft.Storage/storageAccounts/sto8596",
+            "storageAccountId": "/subscriptions/{subscription-id}/resourceGroups/res9407/providers/Microsoft.Storage/storageAccounts/sto8596",
             "storageAccountName":"sto8596"
         }
     ]
