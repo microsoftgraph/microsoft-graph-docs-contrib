@@ -61,11 +61,11 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "clientConfiguration": {
-    "@odata.type": "#microsoft.graph.customExtensionClientConfiguration"
-    }
+    "@odata.type": "microsoft.graph.customExtensionClientConfiguration",
+  }
   "authenticationConfiguration": {
-    "@odata.type": "#microsoft.graph.customExtensionAuthenticationConfiguration"
-    }
+    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration",
+  }
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
