@@ -3,7 +3,7 @@ title: "settings resource type"
 description:  "The settings resource contains information about the organization settings for the SharePoint and OneDrive for Business workload. Refer to [tenant] for details."
 author: lfernandez
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: "SharePoint"
 doc_type: "resourcePageType"
 ---
 

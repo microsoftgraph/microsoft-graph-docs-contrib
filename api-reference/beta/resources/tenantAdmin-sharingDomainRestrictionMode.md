@@ -3,7 +3,7 @@ title: "sharingDomainRestrictionMode enum type"
 description: "The list of options for sharing files or sites with external domains."
 ms.localizationpriority: medium
 author: "lfernandez"
-ms.prod: "sharepoint"
+ms.prod: "SharePoint"
 doc_type: "enumPageType"
 ---
 

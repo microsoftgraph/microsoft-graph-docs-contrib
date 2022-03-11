@@ -3,7 +3,7 @@ title: "imageTaggingChoice enum type"
 description: "Enum type representing image tagging options for all users within a tenant."
 ms.localizationpriority: medium
 author: "lfernandez"
-ms.prod: "sharepoint"
+ms.prod: "SharePoint"
 doc_type: "enumPageType"
 ---
 

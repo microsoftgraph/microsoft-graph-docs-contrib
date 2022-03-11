@@ -3,7 +3,7 @@ title: "Update settings"
 description: "Update the properties of a settings object. Allows users to update organization level settings that pertain to SharePoint/OneDrive."
 author: "lfernandez"
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: "SharePoint"
 doc_type: apiPageType
 ---
 
