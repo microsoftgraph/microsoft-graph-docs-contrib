@@ -11,22 +11,22 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **sensitivityLabelAssignment** resource type Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business.
+Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentMethod|sensitivityLabelAssignmentMethod|Indicates whether the label assignment was done automatically, as a standard or a privileged operation.The possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
+|assignmentMethod|sensitivityLabelAssignmentMethod|Indicates whether the label assignment is done automatically, as a standard, or a privileged operation. The possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
 |sensitivityLabelId|String|The unique identifier for the sensitivity label assigned to the file.|
-|tenantId|String|The unique identifier for the tenant that hosts the file when this label was applied.|
+|tenantId|String|The unique identifier for the tenant that hosts the file when this label is applied.|
 
 ### sensitivityLabelAssignmentMethod values
 
 | Member             | Description                                    |
 |:------------------ |:-----------------------------------------------|
 | standard           | The assignment method for the label is standard.|
-| privileged         | The assignment method for the label is privileged. Indicates that the label was applied manually by a user or by an admin.|
-| auto               | Indicates that the label was applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
+| privileged         | The assignment method for the label is privileged. Indicates that the label is applied manually by a user or by an admin.|
+| auto               | Indicates that the label is applied automatically by the system due to a configured policy, such as default label or auto-classification of sensitive content.|
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

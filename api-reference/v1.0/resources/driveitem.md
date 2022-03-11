@@ -63,7 +63,6 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 | [Check in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Check out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | [extractSensitivityLabelsResult](./extractsensitivitylabelsresult.md) | Extract one or more sensitivity labels assigned to a drive item.
 
 ## Properties
 

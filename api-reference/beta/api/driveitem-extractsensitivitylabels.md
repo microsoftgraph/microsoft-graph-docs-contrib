@@ -10,9 +10,9 @@ doc_type: apiPageType
 # driveItem: extractSensitivityLabels
 Namespace: microsoft.graph
 
-Extract one or more sensitivity labels assigned to a drive item and update drive item's metadata with the latest assigned label details. In case of failure to extract the sensitivity labels of a file, the extraction error will be thrown with proper error code and message.
+Extracts one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. In case of failure to extract the sensitivity labels of a file, the extraction error will be thrown with proper error code and message.
 
-> **Note**: This API is applicable only for supported file extensions. When this API is called, first the sensitivity label metadata is retrieved from the database for the file and checked whether these are latest w.r.t the file's content. If yes, the retrieved values from database are returned. If not, then sensitivity labels are extracted from the file's content stream, corresponding metadata in database are updated and the newly extracted values are returned.
+> **Note**: This API is applicable only for supported file extensions. When called this api first retrieves the sensitivity label metadata of the file from the database then it checks whether the sensitivity label details are latest in terms of file content. If yes, the retrieved values from the database are returned. If not, then sensitivity labels are extracted from the content stream of the file, corresponding metadata is updated in the database, and the newly extracted values are returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -90,26 +90,25 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
   "value": {
     "@odata.type": "microsoft.graph.extractSensitivityLabelsResult",
-    "labels" : [
-        {
+    "labels": [
+      {
         "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
         "assignmentMethod": "standard",
         "tenantId": "fed495cb-8c27-41ea-8749-00b0a084bc3d"
-        },
-        {
+      },
+      {
         "sensitivityLabelId": "fa781fdf-68c8-43ec-ae08-c4813deb2144",
         "assignmentMethod": "standard",
         "tenantId": "277601b1-6094-456c-a358-95bfc99539d7"
-        },
-        {
+      },
+      {
         "sensitivityLabelId": "3937098d-df0c-4c8d-8f66-5876b57b75ba",
         "assignmentMethod": "standard",
         "tenantId": "f2477f30-c8a2-422d-8995-6f056b494655"
-        }
+      }
     ]
   }
 }

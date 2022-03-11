@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "extractSensitivityLabelsResult",
           "ChangeType": "Addition",
-          "Description": "Added the [extractSensitivityLabelsResult](https://docs.microsoft.com/en-us/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [extractSensitivityLabelsResult](https://docs.microsoft.com/en-us/graph/api/resources/extractSensitivityLabelsResult?view=graph-rest-beta) resource type.",
           "Target": "extractSensitivityLabelsResult"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensitivityLabelAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [sensitivityLabelAssignment](https://docs.microsoft.com/en-us/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [sensitivityLabelAssignment](https://docs.microsoft.com/en-us/graph/api/resources/sensitivityLabelAssignment?view=graph-rest-beta) resource type.",
           "Target": "sensitivityLabelAssignment"
         },
         {
@@ -31,13 +31,13 @@
           "ApiChange": "Method",
           "ChangedApiName": "extractSensitivityLabels",
           "ChangeType": "Addition",
-          "Description": "Added the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-1.0) method to the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-1.0) resource.",
-          "Target": "extractSensitivityLabels"
+          "Description": "Added the [extractSensitivityLabels](https://docs.microsoft.com/en-us/graph/api/extractSensitivityLabels?view=graph-rest-beta) method to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
         }
       ],
       "Id": "8d44ba60-d170-4c53-8a45-8bb2d96fa654",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2022-03-09T20:17:33.7017535Z",
       "WorkloadArea": "Files",
       "SubArea": ""
