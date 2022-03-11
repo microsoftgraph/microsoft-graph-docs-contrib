@@ -33,13 +33,13 @@ The JSON blob contains the types of resources expected in the response, the unde
 |entityTypes|entityType collection| One or more types of resources expected in the response. Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `person`, `externalItem`. See [known limitations](search-api-overview.md#known-limitations) for those combinations of two or more entity types that are supported in the same search request. Required.|
 |fields|String collection |Contains the fields to be returned for each resource object specified in **entityTypes**, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in **externalItem** from content that Microsoft Graph connectors bring in. <br>The fields property can be using the [semantic labels](/microsoftsearch/configure-connector#step-5-assign-property-labels) applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.<br>Optional.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
+|query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
+|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
 |resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
-|stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 |trimDuplicates|Boolean|Indicates whether to trim away the duplicate SharePoint files from search results. Default value is `false`. Optional.|
-|query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
-|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
+|stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
 
 ## JSON representation
 
