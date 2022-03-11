@@ -53,13 +53,6 @@ Inherits from [entity](../resources/entity.md).
 | siteCreationDefaultStorageLimitInMB                | Int                          | Integer representing the default storage quota for a new site upon creation. Measured in megabytes (Mb).                                                                                                                |
 | tenantDefaultTimezone                              | String                       | The tenant's default timezone for newly created sites.                                                                                                                                                                  |
 
-### ImageTaggingOption property values
-| Value                           | Description                                                                                                           |
-| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
-| disabled                        | The image tagging option for the tenant is disabled.                                                                  |
-| basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
-| enhanced                        | Allows users to tag images with custom tags and ehanced features.                                                     |
-
 ### SharingCapability property values
 | Value                           | Description                                                                                                           |
 | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
@@ -67,6 +60,13 @@ Inherits from [entity](../resources/entity.md).
 | externalUserSharingOnly         | External user sharing is enabled, but guest link sharing is disabled.                                                 |
 | externalUserAndGuestSharing     | Both external user sharing and guest link sharing are enabled.                                                        |
 | existingExternalUserSharingOnly | External user sharing and guest link sharing are both disabled, but AllowGuestUserSignIn is enabled.                  |
+
+### ImageTaggingOption property values
+| Value                           | Description                                                                                                           |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
+| disabled                        | The image tagging option for the tenant is disabled.                                                                  |
+| basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
+| enhanced                        | Allows users to tag images with custom tags and ehanced features.                                                     |
 
 ### SharingDomainRestrictionMode property values
 | Value                           | Description                                                                                                           |
