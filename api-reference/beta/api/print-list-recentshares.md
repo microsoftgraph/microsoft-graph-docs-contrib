@@ -54,7 +54,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_shares"
+  "name": "get_recentprintershares"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/print/recentPrinterShares
@@ -82,8 +82,7 @@ Content-type: application/json
             "viewPoint": {
                 "lastUsedDateTime": "2021-10-24T05:11:07Z"
             }
-        },
-      ...
+        }
   ]
 }
 ```
