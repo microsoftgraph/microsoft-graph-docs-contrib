@@ -418,7 +418,7 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
-See [Throttling](workbook-best-practice.md#throttling) for explanations and best practices related to Excel service throttling. The following numbers represent part of the limits.
+For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). The following numbers represent part of the limits.
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
