@@ -3,7 +3,7 @@ title: Get recent shares
 description: Retrieve a list of recently used printer shares by the user.
 author: mayankbansal018
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
