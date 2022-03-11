@@ -15,13 +15,13 @@ Assignments and submissions are an important part in the interaction between tea
 
 An assignment represents a task or unit of work assigned to a student or team members in a class as part of their study. Only teachers or team owners can create, copy, or schedule assignments. These actions have an impact on assignment states. The following table lists the assignment states and the APIs that are available to change the state. 
 
-| State | Description | REST API call |
-|:--|:--|:--|
-| Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` |
-| Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
-| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| State | Description | REST API call | Features Available to Edit |
+|:--|:--|:--|:--|
+| Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, Categories, Rubrics |
+| Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
+| Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, Categories, Rubrics |
+| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students. | `POST /education/classes/{id}/assignments/{id}/publish` | Submissions |
+| Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` | |
 
 The following diagram shows the state transitions that can occur for assignments.
 
@@ -31,21 +31,21 @@ The following diagram shows the state transitions that can occur for assignments
 The caller must use the [GET assignment](/graph/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
 
 ### Assignments states transitions based on the allowed actions
-| Current assignment state | Action | New state | Features Available to edit |
-|:--|:--|:--|:--|
-| Draft | The teacher schedules the assignment | Scheduled | Resources, Categories, Rubrics |
-| Draft | Publish | Published | Submissions |
-| Draft | Edited | Draft | Resources, Categories, Rubrics |
-| Draft | Discarded | |	|
-| Published | Publish finished | Assigned | Submissions |
-| Published | Publish failed | Draft | |
-| Published | Discarded | | |
-| Scheduled | Reach due date | Published | |
-| Scheduled | Cancel schedule | Draft | Resources, Categories, Rubrics |
-| Scheduled | Reschedule | Scheduled | |
-| Assigned | Discarded | | |
-| Pending |	Copy completed | Draft | |
-| Pending | Discarded | | |
+| Current assignment state | Action | New state |
+|:--|:--|:--|
+| Draft | The teacher schedules the assignment | Scheduled |
+| Draft | Publish | Published |
+| Draft | Edited | Draft |
+| Draft | Discarded | |
+| Published | Publish finished | Assigned |
+| Published | Publish failed | Draft |
+| Published | Discarded | |
+| Scheduled | Reach due date | Published |
+| Scheduled | Cancel schedule | Draft |
+| Scheduled | Reschedule | Scheduled |
+| Assigned | Discarded | |
+| Pending |	Copy completed | Draft |
+| Pending | Discarded | |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
