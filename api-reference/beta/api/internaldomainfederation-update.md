@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Domain.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Domain.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,19 +45,19 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identityProviderBase](../resources/identityproviderbase.md). Optional.|
-|issuerUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
-|metadataExchangeUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
-|signingCertificate|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
-|passiveSignInUri|String|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
-|preferredAuthenticationProtocol|authenticationProtocol|**TODO: Add Description** Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). The possible values are: `wsFed`, `saml`, `unknownFutureValue`. Optional.|
-|activeSignInUri|String|**TODO: Add Description** Optional.|
-|signOutUri|String|**TODO: Add Description** Optional.|
-|promptLoginBehavior|promptLoginBehavior|**TODO: Add Description**. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`. Optional.|
-|isSignedAuthenticationRequestRequired|Boolean|**TODO: Add Description** Optional.|
-|nextSigningCertificate|String|**TODO: Add Description** Optional.|
-|signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|**TODO: Add Description** Optional.|
-|federatedIdpMfaBehavior|federatedIdpMfaBehavior|**TODO: Add Description**. The possible values are: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. Optional.|
+|displayName|String|URI that clients are redirected to when they sign out of AAD services. Referred to as LogOffUri in MSOnline PowerShell cmdlets. Inherited from [identityProviderBase](../resources/identityproviderbase.md). Optional.|
+|issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
+|metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
+|signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. <br>This property is used in the following scenarios: <br> - if a rollover is required outside of the autorollover update <br> - a new federation service is being set up <br> - if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.<br>Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Required.|
+|passiveSignInUri|String|URI that web-based clients are directed to when signing in to Azure AD services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). Optional.|
+|preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md). The possible values are: `wsFed`, `saml`. Optional.|
+|activeSignInUri|String|URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory (AAD). Single sign-on is also known as identity federation. Referred to as ActiveLogOnUri in MSOnline PowerShell cmdlets. Optional.|
+|signOutUri|String|URI that clients are redirected to when they sign out of AAD services. Referred to as LogOffUri in MSOnline PowerShell cmdlets. Optional.|
+|promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign in prompt. This value can set fresh authentication and authentication method and the prompt=login field to the IDP to display a UI for authentication. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`. Optional.|
+|isSignedAuthenticationRequestRequired|Boolean|If true, when SAML authentication requests are sent to the federated SAML IDP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IDP are not signed. Optional.|
+|nextSigningCertificate|String|Next token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated. Optional.|
+|signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Update status of the signing certificate and the next signing certificate. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Should be compatible with the X509Certificate2 class. Optional.|
+|federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider. The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: accepts MFA if performed by identity provider. If not, triggers Azure MFA. <br> `enforceMfaByFederatedIdp` : accepts MFA if performed by identity provider. If not, redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp` : rejects MFA if performed by identity provider. Always triggers Azure MFA.<br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](https://docs.microsoft.com/en-us/powershell/module/msonline/set-msoldomainfederationsettings?view=azureadps-1.0) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not performed, will trigger Azure MFA. Optional.|
 
 
 
@@ -74,27 +74,12 @@ If successful, this method returns a `200 OK` response code and an updated [inte
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
+PATCH https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/6601d14b-d113-8f64-fda2-9b5ddda18ecc
 Content-Type: application/json
-Content-length: 615
 
 {
-  "@odata.type": "#microsoft.graph.internalDomainFederation",
-  "displayName": "String",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String",
-  "activeSignInUri": "String",
-  "signOutUri": "String",
-  "promptLoginBehavior": "String",
-  "isSignedAuthenticationRequestRequired": "Boolean",
-  "nextSigningCertificate": "String",
-  "signingCertificateUpdateStatus": {
-    "@odata.type": "microsoft.graph.signingCertificateUpdateStatus"
-  },
-  "federatedIdpMfaBehavior": "String"
+  "displayName": "Contoso name change",  
+  "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```
 
@@ -113,21 +98,19 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.internalDomainFederation",
   "id": "6601d14b-d113-8f64-fda2-9b5ddda18ecc",
-  "displayName": "String",
-  "issuerUri": "String",
-  "metadataExchangeUri": "String",
-  "signingCertificate": "String",
-  "passiveSignInUri": "String",
-  "preferredAuthenticationProtocol": "String",
-  "activeSignInUri": "String",
-  "signOutUri": "String",
-  "promptLoginBehavior": "String",
-  "isSignedAuthenticationRequestRequired": "Boolean",
-  "nextSigningCertificate": "String",
-  "signingCertificateUpdateStatus": {
-    "@odata.type": "microsoft.graph.signingCertificateUpdateStatus"
-  },
-  "federatedIdpMfaBehavior": "String"
+   "displayName": "Contoso name change",
+   "issuerUri": "http://contoso.com/adfs/services/trust",
+   "metadataExchangeUri": "https://sts.contoso.com/adfs/services/trust/mex",
+   "signingCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
+   "passiveSignInUri": "https://sts.contoso.com/adfs/ls",
+   "preferredAuthenticationProtocol": "wsFed",
+   "activeSignInUri": "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
+   "signOutUri": "https://sts.contoso.com/adfs/ls",
+   "promptLoginBehavior": "nativeSupport",
+   "isSignedAuthenticationRequestRequired": true,
+   "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
+   "signingCertificateUpdateStatus": null
+   "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```
 

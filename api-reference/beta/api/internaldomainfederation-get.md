@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Domain.Read.All, Domain.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Domain.Read.All, Domain.ReadWrite.All|
 
 ## HTTP request
 
@@ -57,9 +57,8 @@ If successful, this method returns a `200 OK` response code and an [internalDoma
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
+GET https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/6601d14b-d113-8f64-fda2-9b5ddda18ecc
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -77,21 +76,19 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.internalDomainFederation",
     "id": "6601d14b-d113-8f64-fda2-9b5ddda18ecc",
-    "displayName": "String",
-    "issuerUri": "String",
-    "metadataExchangeUri": "String",
-    "signingCertificate": "String",
-    "passiveSignInUri": "String",
-    "preferredAuthenticationProtocol": "String",
-    "activeSignInUri": "String",
-    "signOutUri": "String",
-    "promptLoginBehavior": "String",
-    "isSignedAuthenticationRequestRequired": "Boolean",
-    "nextSigningCertificate": "String",
-    "signingCertificateUpdateStatus": {
-      "@odata.type": "microsoft.graph.signingCertificateUpdateStatus"
-    },
-    "federatedIdpMfaBehavior": "String"
+    "displayName": "Contoso",
+    "issuerUri": "http://contoso.com/adfs/services/trust",
+    "metadataExchangeUri": "https://sts.contoso.com/adfs/services/trust/mex",
+    "signingCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
+    "passiveSignInUri": "https://sts.contoso.com/adfs/ls",
+    "preferredAuthenticationProtocol": "wsFed",
+    "activeSignInUri": "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed",
+    "signOutUri": "https://sts.contoso.com/adfs/ls",
+    "promptLoginBehavior": "nativeSupport",
+    "isSignedAuthenticationRequestRequired": true,
+    "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
+    "signingCertificateUpdateStatus": null
+    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
   }
 }
 ```
