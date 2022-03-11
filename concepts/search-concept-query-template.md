@@ -1,13 +1,13 @@
 ---
 title: "Use the Microsoft Search API to search content using query templates (preview)"
-description: "Learn how to use query templates in the Microsoft Search API to search for content based on [query variables](https://docs.microsoft.com/en-us/sharepoint/technical-reference/query-variables), [KQL](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)."
+description: "Learn how to use query templates in the Microsoft Search API to search for content based on query variable, KQL"
 author: "yiwenwang"
 ms.localizationpriority: medium
 ms.prod: "search"
 ---
 
 # Use the Microsoft Search API to search content using query templates (preview)
-In this article, you will learn how to use query templates in the Microsoft Search API to search for content based on query variables, KQL, and FQL. This allows you to restrict the query scope and build your own search experience.
+In this article, you will learn how to use query templates in the Microsoft Search API to search for content based on [query variable](https://docs.microsoft.com/en-us/sharepoint/technical-reference/query-variables) and [KQL](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). This allows you to restrict the query scope and build your own search experience.
 
 ## Example
 The following example shows a request that uses a query template to search for content based on a [query variables](https://docs.microsoft.com/en-us/sharepoint/technical-reference/query-variables) and [KQL](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
