@@ -431,15 +431,7 @@ items:
             - name: List
               href: api/organizationsettings-list-iteminsights.md
             - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for apps to access data
-            items:
-            - name: App data access settings
-              href: resources/microsoftapplicationdataaccesssettings.md
-            - name: List
-              href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-            - name: Update
-              href: api/microsoftapplicationdataaccesssettings-update.md
+              href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -11332,6 +11324,14 @@ items:
           items:
           - name: Get org settings
             href: api/organizationSettings-get.md
+          - name: App settings for Microsoft 365 data (preview)
+            items:
+            - name: App data access settings
+              href: resources/microsoftapplicationdataaccesssettings.md
+            - name: List
+              href: api/organizationsettings-list-microsoftapplicationdataaccess.md
+            - name: Update
+              href: api/microsoftapplicationdataaccesssettings-update.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -13535,15 +13535,7 @@ items:
             - name: List
               href: api/organizationsettings-list-iteminsights.md
             - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for apps to access data
-            items:
-            - name: App data access settings
-              href: resources/microsoftapplicationdataaccesssettings.md
-            - name: List
-              href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-            - name: Update
-              href: api/microsoftapplicationdataaccesssettings-update.md
+              href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
