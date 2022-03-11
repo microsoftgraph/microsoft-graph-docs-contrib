@@ -42,9 +42,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-{
-    "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ad47"
-}
+Do not supply a request body for this method.
 
 ## Response
 
@@ -62,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getStorageAccounts/0ac520ee-14c0-480f-b6c9-0a90c585ad47
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionId='cb6ad4c4-8a17-4245-a644-e4436b1ee204')
 ```
 
 
