@@ -31,7 +31,7 @@ The following diagram shows the state transitions that can occur for assignments
 The caller must use the [GET assignment](/graph/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
 
 ### Assignments states transitions based on the allowed actions
-| Current assignment state | Action | New state |
+| Current assignment state | New Action | New state |
 |:--|:--|:--|
 | Draft | The teacher schedules the assignment | Scheduled |
 | Draft | Publish | Published |
@@ -80,7 +80,7 @@ The following diagram shows the state transition flow.
 ![Submission states transitions diagram](images/states-transitions/diagram-submissions.PNG)
 
 ### Submissions states transitions based on allowed actions
-| Current submission state | Action | New state |
+| Current submission state | New Action | New state |
 |:--|:--|:--|
 | Working |	Turn in	| Submitted |
 | Working |	Return for revision	| Reassigned |
