@@ -47,7 +47,7 @@ The caller must use the [GET assignment](/graph/api/educationassignment-get.md) 
 | Pending |	Copy completed | Draft |
 | Pending | Discarded | |
 
-`Note: Any action and state transition not listed in the table is NOT allowed`
+>**Note:** Any action and state transition not listed in the table is not allowed.
 
 ### Sync vs. async operations over assignments API calls
 The following table mentions the API calls that affect the assignment state and the operation type.
@@ -95,7 +95,7 @@ The following diagram shows the state transition flow.
 | Reassigned | Return | Returned |
 | Reassigned | Return for revision | Reassigned |
 
-`Note: Any action and state transition not listed in the table is NOT allowed`
+>**Note:** Any action and state transition not listed in the table is not allowed.
 
 ### Sync vs. async operations over submissions API calls
 The following table lists the API calls that affect the submission state and the operation type.
