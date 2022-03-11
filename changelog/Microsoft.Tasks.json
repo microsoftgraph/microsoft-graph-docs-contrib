@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personalTaskProperties",
           "ChangeType": "Change",
-          "Description": "Renamed the **personalTaskProperties** resource type as  [taskViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/taskViewpoint?view=graph-rest-beta)",
+          "Description": "Renamed the **personalTaskProperties** resource type to [taskViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/taskViewpoint?view=graph-rest-beta).",
           "Target": "taskViewpoint"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "textBody",
           "ChangeType": "Deletion",
-          "Description": "Renamed the **body** property as **textBody** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
+          "Description": "Renamed the **body** property to **textBody** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "viewpoint",
           "ChangeType": "Change",
-          "Description": "Renamed the **personalProperties** property  as **viewpoint** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
+          "Description": "Renamed the **personalProperties** property to **viewpoint** in [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
@@ -31,15 +31,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "textBody",
           "ChangeType": "Change",
-          "Description": "Changed the type of **textBody** property of [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource from **itemBody** to **String**",
+          "Description": "Changed the type of the **textBody** property of the [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/baseTask?view=graph-rest-beta) resource from **itemBody** to String.",
           "Target": "baseTask"
         }
       ],
       "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-02-10T15:24:58.2857485Z",
-      "WorkloadArea": "Microsoft.Tasks",
+      "CreatedDateTime": "2022-03-10T15:24:58.2857485Z",
+      "WorkloadArea": "To-do tasks",
       "SubArea": ""
     },
     {
@@ -225,7 +225,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-12-01T12:29:37.2597467Z",
-      "WorkloadArea": "Microsoft.Tasks",
+      "WorkloadArea": "To-do tasks",
       "SubArea": ""
     },
     {
