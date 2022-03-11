@@ -53,6 +53,17 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
+### externalActivityType values
+
+
+
+|Member
+|:--------------
+|viewed
+|modified
+|created
+|commented
+|unknownFutureValue
 
 ### externalGroupMemberType values
 
@@ -133,5 +144,3 @@ Namespace: microsoft.graph.externalConnectors
   "namespace": "microsoft.graph.externalConnectors"
 }
 -->
-
-

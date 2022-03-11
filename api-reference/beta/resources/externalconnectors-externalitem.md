@@ -23,6 +23,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an externalItem.    |
 | [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an externalItem. |
 | [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an externalItem. |
+|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityBase](../resources/externalconnectors-externalactivityBase.md) collection|**TODO: Add Description**|
 
 ## Properties
 
