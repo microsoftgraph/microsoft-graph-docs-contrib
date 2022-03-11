@@ -19,7 +19,7 @@ options := &msgraphsdk.TokenLifetimePolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tokenLifetimePolicyId := "tokenLifetimePolicy-id"
-graphClient.Policies().TokenLifetimePoliciesById(&tokenLifetimePolicyId).Patch(options)
+result, err := graphClient.Policies().TokenLifetimePoliciesById(&tokenLifetimePolicyId).Patch(options)
 
 
 ```

@@ -15,7 +15,7 @@ options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderPatchOptions{
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Patch(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Patch(options)
 
 
 ```

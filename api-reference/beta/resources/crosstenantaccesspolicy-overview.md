@@ -53,9 +53,11 @@ Inbound trust settings also enable you to trust devices that are compliant, or h
 
 The cross-tenant access settings API can be used to set up multiple configurations for allowing or blocking access to and from your organization. The following table highlights scenarios, shows an example of the API response, and what the interpretation should be of that response. **b2bSetting** is used as a placeholder for any B2B inbound (**b2bCollaborationInbound** or **b2bDirectConnectInbound**) or outbound (**b2bCollaborationOutbound** or **b2bDirectConnectOutbound**) configuration.
 
+<br/>
+
 <table>
 <tr>
-<td> Scenario </td> <td> API output </td> <td> Interpretation </td>
+<th> Scenario </th> <th> API output </th> <th> Interpretation </th>
 </tr>
 <tr>
 <td> Block all users and block all applications </td>

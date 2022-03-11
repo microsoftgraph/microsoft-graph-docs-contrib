@@ -20,7 +20,7 @@ options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptio
 	H: headers,
 }
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
 
 
 ```

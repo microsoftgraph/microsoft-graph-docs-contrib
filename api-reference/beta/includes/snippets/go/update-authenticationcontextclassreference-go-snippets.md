@@ -16,7 +16,7 @@ options := &msgraphsdk.AuthenticationContextClassReferenceRequestBuilderPatchOpt
 	Body: requestBody,
 }
 authenticationContextClassReferenceId := "authenticationContextClassReference-id"
-graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(options)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(options)
 
 
 ```
