@@ -38,7 +38,7 @@ options := &msgraphsdk.EventRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Patch(options)
+result, err := graphClient.Me().EventsById(&eventId).Patch(options)
 
 
 ```

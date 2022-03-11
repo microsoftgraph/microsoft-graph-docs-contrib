@@ -14,7 +14,7 @@ options := &msgraphsdk.ApplicationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Patch(options)
+result, err := graphClient.ApplicationsById(&applicationId).Patch(options)
 
 
 ```

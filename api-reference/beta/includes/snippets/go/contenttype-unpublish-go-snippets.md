@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Unpublish().Post(nil)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Unpublish(site-id, contentType-id).Post(nil)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.SubscriptionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 subscriptionId := "subscription-id"
-graphClient.SubscriptionsById(&subscriptionId).Patch(options)
+result, err := graphClient.SubscriptionsById(&subscriptionId).Patch(options)
 
 
 ```

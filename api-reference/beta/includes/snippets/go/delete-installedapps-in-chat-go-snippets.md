@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 chatId := "chat-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Delete(nil)
+result, err := graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Delete(nil)
 
 
 ```

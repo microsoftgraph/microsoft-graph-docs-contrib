@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Delete(nil)
+result, err := graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Delete(nil)
 
 
 ```

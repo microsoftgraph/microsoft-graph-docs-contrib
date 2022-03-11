@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewQualityRequestBody()
 quality := msgraphsdk.NewTeleconferenceDeviceQuality()
 requestBody.SetQuality(quality)
 callChainId := "0622673d-9f69-49b3-9d4f-5ec64f42ecce"
