@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "#microsoft.graph.customExtensionClientConfiguration"
     }
   "authenticationConfiguration": {
-    "@odata.type: "#microsoft.graph.customExtensionAuthenticationConfiguration"
+    "@odata.type": "#microsoft.graph.customExtensionAuthenticationConfiguration"
     }
   "description": "String",
   "createdDateTime": "String (timestamp)",
