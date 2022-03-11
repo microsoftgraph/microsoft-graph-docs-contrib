@@ -1,7 +1,7 @@
 ---
 title: Get recent shares
 description: Retrieve a list of recently used printer shares by the user.
-author: maban-msft
+author: mayankbansal018
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
