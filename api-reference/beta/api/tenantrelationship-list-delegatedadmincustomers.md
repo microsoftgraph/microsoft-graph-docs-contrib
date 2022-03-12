@@ -89,7 +89,7 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIwMDAwMTEwMS0wMDAwLTAyMDAtMDAwMC02MDI1OTQyMjAwMDAiJw==\"",
       "id": "1c0fa218-5dec-49db-8247-cfa457af8116",
       "tenantId": "1c0fa218-5dec-49db-8247-cfa457af8116",
-      "displayName": ""Contoso subsidiary""
+      "displayName": "Contoso subsidiary"
     }
   ]
 }

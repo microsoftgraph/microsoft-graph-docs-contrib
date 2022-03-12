@@ -100,7 +100,7 @@ Content-Type: application/json
         "roleDefinitionId": "e6d1a23a-da11-4be4-9570-befc86d067a7"
       }
     ]
-  }
+  },
   "status": "active",
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
