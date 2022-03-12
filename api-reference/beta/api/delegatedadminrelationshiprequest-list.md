@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **status**, **action**, **createdDateTime**, and **lastModifiedDateTime** fields. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,22 +75,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+      "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
       "action": "lockForApproval",
       "status": "complete",
-      "createdDateTime": "2022-02-10T06:14:55.5398865Z",
+      "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-10T06:14:55.5398865Z"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+      "@odata.etag": "W/\"JyIxODAwZTY4My0wMKkMLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
       "action": "approve",
       "status": "created",
-      "createdDateTime": "2022-02-10T10:55:47.1180588Z",
-      "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
+      "createdDateTime": "2022-02-03T10:55:47.1180588Z",
+      "lastModifiedDateTime": "2022-02-15T11:26:44.9941884Z"
     }
   ]
 }

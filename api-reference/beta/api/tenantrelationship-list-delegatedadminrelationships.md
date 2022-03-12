@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **displayName**, **status**, **duration**, **activatedDateTime**, and **endDateTime** fields. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,20 +75,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminRelationships",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
+      "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wMDAwLTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
       "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
       "displayName": "Contoso admin relationship",
       "duration": "P730D",
       "partner": {
-        "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
+        "tenantId": "8777b240-c6f0-4469-9e98-a3205431b836"
       },
       "customer": {
-        "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+        "tenantId": "52eaad04-13a2-4a2f-9ce8-93a294fadf36",
+        "displayName": "Contoso"
       },
       "accessDetails": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+        "unifiedRoles": [
+          {
+            "roleDefinitionId": "dd4db9a0-cc4a-4213-9f9f-70242232d97e"
+          }
+        ]
       },
       "status": "active",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
@@ -98,17 +105,26 @@ Content-Type: application/json
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
+      "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wKklILTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
       "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
-      "displayName": "Contoso support relationship",
+      "displayName": "Contoso subsidiary relationship",
       "duration": "P30D",
       "partner": {
-        "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
+        "tenantId": "8777b240-c6f0-4469-9e98-a3205431b836"
       },
       "customer": {
-        "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+        "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
+        "displayName": "Contoso subsidiary"
       },
       "accessDetails": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+        "unifiedRoles": [
+          {
+            "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+          },
+          {
+            "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+          }
+        ]
       },
       "status": "terminated",
       "createdDateTime": "2021-09-29T16:52:39.6133896Z",

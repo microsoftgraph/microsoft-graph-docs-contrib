@@ -75,12 +75,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
-    "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-    "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-    "displayName": "Contoso"
-  }
+  "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers/$entity",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+  "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
+  "displayName": "Contoso"
 }
 ```
 

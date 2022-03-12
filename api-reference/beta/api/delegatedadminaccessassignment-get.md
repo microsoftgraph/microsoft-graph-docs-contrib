@@ -75,19 +75,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-    "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
+  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
+    "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
+    "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+    "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
+    "versionStamp": "\"00000298-0000-0200-0000-622be04b0000\"",
     "status": "active",
+    "createdDateTime": "2022-03-09T13:20:35.2772433Z",
+    "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",
     "accessContainer": {
-      "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+      "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
+      "accessContainerType": "securityGroup"
     },
     "accessDetails": {
-      "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-    },
-    "createdDateTime": "2022-02-10T00:55:47.1180588Z",
-    "lastModifiedDateTime": "2022-02-10T00:55:47.1180588Z"
-  }
+      "unifiedRoles": [
+        {
+          "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        },
+        {
+          "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+        },
+        {
+          "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+        },
+        {
+          "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+        }
+      ]
+    }
 }
 ```
 

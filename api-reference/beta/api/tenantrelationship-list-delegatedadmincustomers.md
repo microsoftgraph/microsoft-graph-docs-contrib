@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **displayName** field. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,18 +75,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
+      "@odata.etag": "W/\"JyIxODAwMTMzZi0wMDAwLTAyMDAtMDAwMC02MTNjMGFhZTAwMDAiJw==\"",
       "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
       "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
       "displayName": "Contoso"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
+      "@odata.etag": "W/\"JyIwMDAwMTEwMS0wMDAwLTAyMDAtMDAwMC02MDI1OTQyMjAwMDAiJw==\"",
       "id": "1c0fa218-5dec-49db-8247-cfa457af8116",
       "tenantId": "1c0fa218-5dec-49db-8247-cfa457af8116",
-      "displayName": "Delegated Admin Customer"
+      "displayName": ""Contoso subsidiary""
     }
   ]
 }

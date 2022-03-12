@@ -69,12 +69,25 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
   "accessContainer": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+    "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",
+    "accessContainerType": "securityGroup"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+      },
+      {
+        "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+      },
+      {
+        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+      }
+    ]
   }
 }
 ```
@@ -93,17 +106,34 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "a9d6cf90-083a-47dc-ace2-1da98be3f344",
   "status": "pending",
+  "createdDateTime": "2022-02-13T10:33:52.3182097Z",
+  "lastModifiedDateTime": "2022-03-09T20:34:59.3282097Z",
   "accessContainer": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+    "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",
+    "accessContainerType": "securityGroup"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-  },
-  "createdDateTime": "2022-02-13T10:33:52.3182097Z",
-  "lastModifiedDateTime": "2022-03-09T20:34:59.3282097Z"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+      },
+      {
+        "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+      },
+      {
+        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+      }
+    ]
+  }
 }
 ```
 

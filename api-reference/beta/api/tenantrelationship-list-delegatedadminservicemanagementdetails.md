@@ -75,6 +75,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",

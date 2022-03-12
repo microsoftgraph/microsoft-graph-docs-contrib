@@ -67,7 +67,6 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "action": "lockForApproval"
 }
 ```
@@ -87,6 +86,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
   "action": "lockForApproval",
   "status": "created",

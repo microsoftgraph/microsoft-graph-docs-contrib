@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **status** field. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -75,32 +75,65 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-      "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
+      "@odata.etag": "W/\"JyIwMDAwMDI5OC0wMDAwLTAyMDAtMDAwMC02MjJiZTA0YjAwMDAiJw==\"",
+      "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
+      "versionStamp": "\"00000298-0000-0200-0000-622be04b0000\"",
       "status": "active",
+      "createdDateTime": "2022-03-07T22:55:18.6780449Z",
+      "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",
       "accessContainer": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+          "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
+          "accessContainerType": "securityGroup"
       },
       "accessDetails": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-      },
-      "createdDateTime": "2022-02-10T00:55:47.1180588Z",
-      "lastModifiedDateTime": "2022-02-10T00:55:47.1180588Z"
+          "unifiedRoles": [
+              {
+                   "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+              },
+              {
+                  "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+              },
+              {
+                  "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+              },
+              {
+                  "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+              }
+          ]
+      }
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-      "id": "c3878794-6020-4095-a75b-2b44c516dd1a",
-      "status": "pending",
+      "@odata.etag": "W/\"JyIwMDAwMjAwOC0wMDAwLTAyMDAtMDAwMC02MjJhYWQzYjAwMDAiJw==\"",
+      "id": "8d56bce3-440f-4b4f-b5c2-cc0bcbd0199c",
+      "versionStamp": "\"00002008-0000-0200-0000-622aad3b0000\"",
+      "status": "active",
+      "createdDateTime": "2022-03-10T23:50:35.8970153Z",
+      "lastModifiedDateTime": "2022-03-11T02:00:27.7912161Z",
       "accessContainer": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+          "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",
+          "accessContainerType": "securityGroup"
       },
       "accessDetails": {
-        "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-      },
-      "createdDateTime": "2022-02-20T00:55:47.1180588Z",
-      "lastModifiedDateTime": "2022-03-11T02:00:27.7912161Z"
+          "unifiedRoles": [
+              {
+                  "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+              },
+              {
+                  "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+              },
+              {
+                  "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+              },
+              {
+                  "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+              }
+          ]
+      }
     }
   ]
 }

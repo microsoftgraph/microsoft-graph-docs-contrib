@@ -93,6 +93,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests/$entity",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "dd4a23c7-070c-4d1c-8be8-1e86085ac9d1",
   "action": "terminate",
   "status": "created",

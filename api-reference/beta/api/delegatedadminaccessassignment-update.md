@@ -72,17 +72,25 @@ If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-  "status": "pending",
-  "accessContainer": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
-  },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+      },
+      {
+        "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+      },
+      {
+        "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+      }
+    ]
   }
 }
 ```
 
+### Example 1: Returns a 200 response
+
+Returns a 200 response.
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -94,25 +102,50 @@ Content-Type: application/json
 -->
 ``` http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-  "id": "62bb42bf-e5d9-31d8-cc8c-d1a442d08341",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+  "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
+  "versionStamp": "\"0000569a-0000-0200-0000-622be4240000\"",
   "status": "active",
+  "createdDateTime": "2022-03-11T23:50:30.3770449Z",
+  "lastModifiedDateTime": "2022-03-12T00:07:00.5036079Z",
   "accessContainer": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessContainer"
+    "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
+    "accessContainerType": "securityGroup"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-  },
-  "createdDateTime": "2022-02-10T00:55:47.1180588Z",
-  "lastModifiedDateTime": "2022-02-14T22:55:47.1180588Z"
+    "unifiedRoles": [
+        {
+          "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        },
+        {
+          "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+        },
+        {
+          "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+        }
+      ]
+    }
 }
 ```
+### Example 2: Returns a 202 response
 
+Returns a 202 response.
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
+}
+-->
 ``` http
 HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
 ```
 
