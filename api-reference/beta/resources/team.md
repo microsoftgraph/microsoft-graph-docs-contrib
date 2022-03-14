@@ -123,7 +123,8 @@ The following is a JSON representation of the resource.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 
