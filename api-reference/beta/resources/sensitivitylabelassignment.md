@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about a sensitivity label assigned to a [driveitem](./driveitem.md) in SharePoint or OneDrive for Business.
+Provides details about a sensitivity label assigned to a [file](./driveitem.md) in SharePoint or OneDrive for Business.
 
 ## Properties
 |Property|Type|Description|
