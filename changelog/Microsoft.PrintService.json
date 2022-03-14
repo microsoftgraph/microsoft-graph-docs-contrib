@@ -29,6 +29,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ae312013-2c53-4ae2-b3ef-1107518c38c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "print",
+          "ChangeType": "Addition",
+          "Description": "Added the **print** property to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ae312013-2c53-4ae2-b3ef-1107518c38c1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-11T03:23:57.6575831Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ffcaf9ed-cf62-4ad0-bbbd-35e5ce8ca783",
           "ApiChange": "Method",
           "ChangedApiName": "uploadData",
