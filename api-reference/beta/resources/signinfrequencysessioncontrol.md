@@ -19,6 +19,7 @@ Session control to enforce sign-in frequency. Inherits from [Conditional Access 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is everyTime .|
 |value         |Int32        | The number of `days` or `hours`.|
 |authenticationType |signInFrequencyAuthenticationType  | Possible values are `primaryAndSecondaryAuthentication` or `secondaryAuthentication` .|
