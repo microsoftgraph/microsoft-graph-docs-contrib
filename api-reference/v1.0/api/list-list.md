@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -13,8 +12,8 @@ Namespace: microsoft.graph
 
 Get the collection of [lists][] for a [site][].
 
-[lists]: ../resources/list.md
-[site]: ../resources/site.md
+Lists with the [system][] facet are hidden by default.
+To list them, include `system` in your `$select` statement.
 
 ## Permissions
 
@@ -32,9 +31,25 @@ One of the following permissions is required to call this API. To learn more, in
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body. 
+
 ## Example
 
-#### Request
+### Request
+
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -70,7 +85,9 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ---
 
 
-##### Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -104,12 +121,10 @@ Content-type: application/json
 }
 ```
 
-## Remarks
-
-Lists with the [system][] facet are hidden by default.
-To list them, include `system` in your `$select` statement.
-
 [system]: ../resources/systemfacet.md
+[list]: ../resources/list.md
+[lists]: ../resources/list.md
+[site]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",

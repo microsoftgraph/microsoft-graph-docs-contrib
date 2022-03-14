@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 [!INCLUDE [sample-code](../includes/snippets/go/domain-verify-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-verify-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

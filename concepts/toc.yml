@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: National cloud deployments
             href: deployments.md
-          - name: Hybrid deployments (preview)
+          - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
       - name: Tutorials
         items:
@@ -88,7 +88,13 @@ items:
       - name: Users
         href: azuread-users-concept-overview.md
       - name: Groups
-        href: office365-groups-concept-overview.md
+        items:
+          - name: Overview
+            href: /graph/api/resources/groups-overview
+          - name: Microsoft 365 groups
+            href: office365-groups-concept-overview.md
+          - name: Configure group options
+            href: group-set-options.md
       - name: Applications
         items:
           - name: Overview
@@ -141,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Cloud communications
         items:
           - name: Overview
@@ -200,7 +208,7 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Devices and apps
+      - name: Device and app management
         expanded: true
         items:
           - name: Cloud printing
@@ -211,7 +219,7 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Change notifications
+              - name: Subscribe to change notifications
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Corporate management
@@ -256,6 +264,8 @@ items:
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
             href: assignments-submissions-states-transition.md            
+          - name: Specify the default channel for assignment notifications
+            href: education-build-notificationchannelurl.md            
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -275,7 +285,7 @@ items:
             items:
               - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
-              - name: Use PIM for Azure AD to assign roles
+              - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
@@ -293,9 +303,15 @@ items:
                     href: accessreviews-overview.md
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: Review access to a Microsoft 365 group
+                  - name: Review access for guest users
                     href: tutorial-accessreviews-M365group.md
-              - name: Use PIM for Azure AD to assign roles
+                  - name: Review access to privileged roles
+                    href: tutorial-accessreviews-roleassignments.md
+                  - name: Configure the scope
+                    href: accessreviews-scope-concept.md
+                  - name: Assign reviewers
+                    href: accessreviews-reviewers-concept.md
+              - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -318,6 +334,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Notes
         displayName: OneNote
         items:
@@ -395,6 +413,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Reports
         items:
           - name: Overview
@@ -415,14 +435,16 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results
-            href: search-concept-sort.md
+          - name: Manage admin search answers (preview)
+            href: search-concept-answers.md
+          - name: Manage search results layout (preview)
+            href: search-concept-display-layout.md
           - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
-          - name: Search display layout (preview)
-            href: search-concept-display-layout.md
+          - name: Sort search results
+            href: search-concept-sort.md
       - name: Security
         items:
           - name: Overview
@@ -467,7 +489,11 @@ items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
               - name: Best practices 
-                href: teams-activity-feed-notifications-best-practices.md  
+                href: teams-activity-feed-notifications-best-practices.md
+          - name: Subscribe to change notifications
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Get change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
@@ -554,7 +580,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notifications in Microsoft Teams
+              - name: Change notifications for Microsoft Teams
                 items:
                   - name: Overview
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -568,6 +594,8 @@ items:
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
                     href: teams-changenotifications-chatMembership.md
+              - name: Change notifications for Outlook resources
+                href: outlook-change-notifications-overview.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

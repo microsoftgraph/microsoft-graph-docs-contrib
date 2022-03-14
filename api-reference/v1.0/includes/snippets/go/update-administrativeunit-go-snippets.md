@@ -8,17 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAdministrativeUnit()
-displayName := "displayName-value"
+displayName := "Greater Seattle District Technical Schools"
 requestBody.SetDisplayName(&displayName)
-description := "description-value"
-requestBody.SetDescription(&description)
-visibility := "visibility-value"
-requestBody.SetVisibility(&visibility)
 options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 administrativeUnitId := "administrativeUnit-id"
-graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(options)
+result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(options)
 
 
 ```

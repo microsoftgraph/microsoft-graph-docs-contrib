@@ -17,7 +17,7 @@ options := &msgraphsdk.ItemPublicationRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemPublicationId := "itemPublication-id"
-graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().PublicationsById(&itemPublicationId).Patch(options)
 
 
 ```

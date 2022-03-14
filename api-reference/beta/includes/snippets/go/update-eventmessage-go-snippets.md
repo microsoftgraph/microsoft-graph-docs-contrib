@@ -14,7 +14,7 @@ options := &msgraphsdk.MessageRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Patch(options)
+result, err := graphClient.Me().MessagesById(&messageId).Patch(options)
 
 
 ```

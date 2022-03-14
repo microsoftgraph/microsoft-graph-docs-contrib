@@ -18,7 +18,7 @@ options := &msgraphsdk.ConnectedOrganizationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 connectedOrganizationId := "connectedOrganization-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).Patch(options)
 
 
 ```

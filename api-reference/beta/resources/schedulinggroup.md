@@ -1,7 +1,7 @@
 ---
 title: "schedulingGroup resource type"
 description: "A logical grouping of members in the schedule (usually by role)."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

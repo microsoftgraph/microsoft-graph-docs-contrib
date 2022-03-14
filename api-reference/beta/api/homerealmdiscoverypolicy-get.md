@@ -110,12 +110,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/homeRealmDiscoveryPolicies/$entity",
+    "id": "8f865ec2-2b02-405f-91e7-cb580dfdfa56",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+    ],
+    "displayName": "displayName-value",
+    "isOrganizationDefault": true
 }
 ```
 

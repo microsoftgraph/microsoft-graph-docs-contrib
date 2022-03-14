@@ -31,6 +31,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMessage -UserId $userId -BodyParameter $params
 
 ```

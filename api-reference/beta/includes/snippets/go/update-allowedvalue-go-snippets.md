@@ -15,7 +15,7 @@ options := &msgraphsdk.AllowedValueRequestBuilderPatchOptions{
 }
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
 allowedValueId := "allowedValue-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValuesById(&allowedValueId).Patch(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValuesById(&allowedValueId).Patch(options)
 
 
 ```

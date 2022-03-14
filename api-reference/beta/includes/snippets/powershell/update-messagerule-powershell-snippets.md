@@ -13,6 +13,7 @@ $params = @{
 	}
 }
 
+# A UPN can also be used as -UserId.
 Update-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.PersonWebsiteRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 personWebsiteId := "personWebsite-id"
-graphClient.Me().Profile().WebsitesById(&personWebsiteId).Patch(options)
+result, err := graphClient.Me().Profile().WebsitesById(&personWebsiteId).Patch(options)
 
 
 ```

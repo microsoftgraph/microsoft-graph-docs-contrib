@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 [!INCLUDE [sample-code](../includes/snippets/go/basetasklist-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/basetasklist-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

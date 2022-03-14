@@ -8,23 +8,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCloudPcOnPremisesConnection()
-displayName := "Display Name value"
+displayName := "test-canary-02"
 requestBody.SetDisplayName(&displayName)
+type := "hybridAzureADJoin"
+requestBody.SetType(&type)
 subscriptionId := "0ac520ee-14c0-480f-b6c9-0a90c585ffff"
 requestBody.SetSubscriptionId(&subscriptionId)
-subscriptionName := "Subscription Name value"
+subscriptionName := "CPC customer 001 test subscription"
 requestBody.SetSubscriptionName(&subscriptionName)
-adDomainName := "Active Directory Domain Name value"
+adDomainName := "contoso001.com"
 requestBody.SetAdDomainName(&adDomainName)
-adDomainUsername := "Active Directory Domain User Name value"
+adDomainUsername := "dcadmin"
 requestBody.SetAdDomainUsername(&adDomainUsername)
-organizationalUnit := "Organization Unit value"
+organizationalUnit := "OU=Domain Controllers, DC=contoso001, DC=com"
 requestBody.SetOrganizationalUnit(&organizationalUnit)
-resourceGroupId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG"
+resourceGroupId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG"
 requestBody.SetResourceGroupId(&resourceGroupId)
-virtualNetworkId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet"
+virtualNetworkId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET"
 requestBody.SetVirtualNetworkId(&virtualNetworkId)
-subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
+subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 requestBody.SetSubnetId(&subnetId)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

@@ -21,7 +21,7 @@ options := &msgraphsdk.MobilityManagementPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(options)
+result, err := graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(options)
 
 
 ```
