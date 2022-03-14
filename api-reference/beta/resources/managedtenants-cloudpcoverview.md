@@ -40,6 +40,8 @@ Represents an overview of cloud PCs for a given managed tenant.
 |numberOfCloudPcStatusUnknown|Int32|The number of cloud PCs that have a status of `unknown`. Optional. Read-only.|
 |numberOfCloudPcStatusUpgrading|Int32|The number of cloud PCs that have a status of `upgrading`. Optional. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Optional. Read-only.|
+|totalBusinessLicenses|Int32|The total number of cloud PC devices that have the `Business` SKU. Optional. Read-only.|
+|totalEnterpriseLicenses|Int32|The total number of cloud PC devices that have the `Enterprise` SKU. Optional. Read-only.|
 |totalCloudPcConnectionStatus|Int32|The total number of cloud PC connection statuses for the given managed tenant. Optional. Read-only.|
 |totalCloudPcStatus|Int32|The total number of cloud PC statues for the given managed tenant. Optional. Read-only.|
 
@@ -76,6 +78,8 @@ The following is a JSON representation of the resource.
   "numberOfCloudPcConnectionStatusPassed": "Integer",
   "numberOfCloudPcConnectionStatusFailed": "Integer",
   "numberOfCloudPcConnectionStatusUnkownFutureValue": "Integer",
+  "totalBusinessLicenses": "Integer",
+  "totalEnterpriseLicenses": "Integer",
   "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
