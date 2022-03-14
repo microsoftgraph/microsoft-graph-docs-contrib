@@ -33,7 +33,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "GUID",
+  "id": "Guid",
   "type": "String"
 }
 

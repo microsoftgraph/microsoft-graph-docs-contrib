@@ -15,6 +15,8 @@ List all the groups in an organization, including but not limited to Microsoft 3
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
+>**Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -540,6 +542,71 @@ Content-type: application/json
     ]
 }
 ```
+
+
+### Example 7: List any groups with any licenses
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_with_licenses"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups?$select=id,assignedLicenses&$filter=assignedLicenses/any()
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,assignedLicenses)",
+    "value": [
+        {
+            "id": "5caf712c-8483-4b3d-8384-d8da988c0ca4",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        },
+        {
+            "id": "aae8ec2a-5a08-4013-ae70-fafbb5c20de1",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "18181a46-0d4e-45cd-891e-60aabd171b4e"
+                }
+            ]
+        },
+        {
+            "id": "e55bdaa0-e104-479a-979e-b0457fff6380",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
