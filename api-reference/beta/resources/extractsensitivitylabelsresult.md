@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents the response format for the [extractSensitivityLabels](../api/driveitem-extractsensitivitylabels.md) API.
 
 ## Properties

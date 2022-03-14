@@ -10,9 +10,11 @@ doc_type: apiPageType
 # driveItem: extractSensitivityLabels
 Namespace: microsoft.graph
 
-Extracts one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. In case of failure to extract the sensitivity labels of a file, the extraction error will be thrown with proper error code and message.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> **Note**: This API is applicable only for supported file extensions. When called this api first retrieves the sensitivity label metadata of the file from the database then it checks whether the sensitivity label details are latest in terms of file content. If yes, the retrieved values from the database are returned. If not, then sensitivity labels are extracted from the content stream of the file, corresponding metadata is updated in the database, and the newly extracted values are returned.
+Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. In case of failure to extract the sensitivity labels of a file, the extraction error will be thrown with proper error code and message.
+
+> **Note**: This API is applicable only for supported file extensions. When called, this API first retrieves the sensitivity label metadata of the file from the database, then it checks whether the sensitivity label details are latest in terms of file content. If yes, the retrieved values from the database are returned. If not, then sensitivity labels are extracted from the content stream of the file, corresponding metadata is updated in the database, and the newly extracted values are returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and an [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) in the response body.
+If successful, this action returns a `200 OK` response code and an [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) object in the response body.
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the sensitivity label extraction.
 The possible values for the error types include:
@@ -72,7 +74,7 @@ The following is an example of a request.
 
 <!-- { "blockType": "request", "name": "extract-sensitivitylabels", "tags": "service.graph" } -->
 ``` http
-POST https://graph.microsoft.com/v1.0/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
+POST https://graph.microsoft.com/beta/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/extractSensitivityLabels
 ```
 
 

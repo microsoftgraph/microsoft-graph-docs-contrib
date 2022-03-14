@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Provides details about a sensitivity label assigned to a file in SharePoint or OneDrive for Business.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Provides details about a sensitivity label assigned to a [driveitem](./driveitem.md) in SharePoint or OneDrive for Business.
 
 ## Properties
 |Property|Type|Description|
