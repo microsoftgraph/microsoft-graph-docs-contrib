@@ -18,9 +18,9 @@ Contains information about a team in Microsoft Teams, including numbers of owner
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|guestsCount|Integer|Count of guests in a team.|
-|membersCount|Integer|Count of members in a team.|
-|ownersCount|Integer|Count of owners in a team.|
+|guestsCount|Int32|Count of guests in a team.|
+|membersCount|Int32|Count of members in a team.|
+|ownersCount|Int32|Count of owners in a team.|
 
 ## JSON representation
 
