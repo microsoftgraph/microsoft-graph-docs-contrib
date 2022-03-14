@@ -11560,12 +11560,12 @@ items:
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
         - name: Tenant information
-          href: resources/tenantrelationships.md
+          href: resources/tenantrelationshiproot.md
           items:
             - name: Find tenant by domain name
-              href: api/tenantrelationships-findtenantinformationbydomainname.md
+              href: api/tenantrelationshiproot-findtenantinformationbydomainname.md
             - name: Find tenant by tenant ID
-              href: api/tenantrelationships-findtenantinformationbytenantid.md
+              href: api/tenantrelationshiproot-findtenantinformationbytenantid.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
