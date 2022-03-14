@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and a collection of [externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
 
 ## Examples
 
