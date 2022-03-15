@@ -20,7 +20,7 @@ options := &msgraphsdk.FeatureRolloutPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 featureRolloutPolicyId := "featureRolloutPolicy-id"
-result, err := graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Patch(options)
+graphClient.Policies().FeatureRolloutPoliciesById(&featureRolloutPolicyId).Patch(options)
 
 
 ```

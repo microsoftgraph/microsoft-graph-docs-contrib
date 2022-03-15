@@ -16,7 +16,7 @@ options := &msgraphsdk.AttributeSetRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 attributeSetId := "attributeSet-id"
-result, err := graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(options)
+graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(options)
 
 
 ```
