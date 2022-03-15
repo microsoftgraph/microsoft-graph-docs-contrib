@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+***TODO: Add Description***
 
 
 Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).
