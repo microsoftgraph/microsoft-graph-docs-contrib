@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
+[!INCLUDE [GDPR-related guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 Represents an Azure AD [access review](accessreviews-root.md).  
 
 ## Methods
