@@ -66,6 +66,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
 
 ### Instance attributes
 
@@ -122,7 +123,8 @@ The following is a JSON representation of the resource.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 
