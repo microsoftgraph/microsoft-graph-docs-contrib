@@ -51,6 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_sharedwithchannelteaminfo"
@@ -62,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d
 
 
 ### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

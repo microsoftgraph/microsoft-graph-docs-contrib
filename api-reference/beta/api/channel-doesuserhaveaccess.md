@@ -1,6 +1,6 @@
 ---
 title: "channel: doesUserHaveAccess"
-description: "Check whether a user has access to the shared channel or not."
+description: "Check whether a user has access to a shared channel or not."
 author: "devjha-ms"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check whether a [user](../resources/aaduserconversationmember.md) has access to the shared [channel](../resources/channel.md) or not.
+Check whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md) or not.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,9 +39,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|Id of the [User](../resources/useridentity.md)|
-|tenantId|String|TenantId which the Azure AD [User](../resources/useridentity.md) belongs to. Default value of this property is current tenantId of the logged-in user or app.|
-|userPrincipalName|String|User Principal Name (UPN) of the [User](../resources/useridentity.md)|
+|userId|String|Unique identifier for the [User](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
+|tenantId|String|The ID of the Azure Active Directory tenant that the [user](../resources/useridentity.md) belongs to. The default value for this property is the current **tenantId** of the signed-in user or app.|
+|userPrincipalName|String|The User Principal Name (UPN) of the [User](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
 
 
 ## Request headers
@@ -50,15 +50,17 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Do not supply a request body for this function.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a Boolean in the response body.
+If successful, this function returns a `200 OK` response code and a boolean in the response body.
 
 ## Examples
 
-### Example 1: Check access for in-tenant user.
+### Example 1: Check access for an internal user
+
+The following is an example of a request that checks whether an internal user has access to a shared channel.
 
 #### Request
 <!-- {
@@ -67,7 +69,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}//channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581g-484b-4845-9e01-60667f8b12ae')
+GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581g-484b-4845-9e01-60667f8b12ae')
 ```
 
 
@@ -87,7 +89,9 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Check access for external tenant user (using tenantId).
+### Example 2: Check access for an external user
+
+The following is an example of a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
 
 #### Request
 <!-- {
@@ -96,7 +100,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}//channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='62855810-484b-4823-9e01-60667f8b12ae', tenantId='57fb72d0-d811-46f4-8947-305e6072eaa5')
+GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='62855810-484b-4823-9e01-60667f8b12ae', tenantId='57fb72d0-d811-46f4-8947-305e6072eaa5')
 ```
 
 
@@ -116,7 +120,9 @@ Content-Type: application/json
 ```
 
 
-### Example 3: Check user access using User Principal Name (UPN)
+### Example 3: Check user access for a user using the user principal name
+
+The following is an example of a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
 
 #### Request
 <!-- {
@@ -125,7 +131,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}//channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userPrincipalName='john.doe@contoso.com')
+GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userPrincipalName='john.doe@contoso.com')
 ```
 
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).
-This does not include the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
+This method does not return the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
 - Users with `Guest` role
 - Users who are externally authenticated in the tenant
 
@@ -45,7 +45,7 @@ GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeam
 ```
 
 ## Optional query parameters
-This operation supports the `$select` and `$count` [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$select` and `$count` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_conversationmember"
@@ -73,6 +74,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 
 
 ### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -96,6 +98,18 @@ Content-Type: application/json
       "displayName": "Eric Solomon",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
       "email": "ericsol@fabrikam.com",
+      "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
+    },
+    
+    {
+      "@odata.type": "#microsoft.graph.conversationMember",
+      "id": "MmFiOWMFxTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ",
+      "roles": [
+        "user"
+      ],
+      "displayName": "Caleb Foster",
+      "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
+      "email": "calfos@fabrikam.com",
       "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
     }
   ]

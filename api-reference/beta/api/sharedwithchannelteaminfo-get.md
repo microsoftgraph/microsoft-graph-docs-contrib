@@ -53,6 +53,7 @@ If successful, this method returns a `200 OK` response code and a [sharedWithCha
 ## Examples
 
 ### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_sharedwithchannelteaminfo"
@@ -64,6 +65,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 
 
 ### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

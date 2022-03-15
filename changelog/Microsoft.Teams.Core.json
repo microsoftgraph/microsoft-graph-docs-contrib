@@ -641,7 +641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "teamInfo"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "associatedTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "associatedTeamInfo"
         },
         {
@@ -657,7 +657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharedWithChannelTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "sharedWithChannelTeamInfo"
         },
         {
@@ -665,7 +665,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "doesUserHaveAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/doesUserHaveAccess?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/doesuserhaveaccess?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta&preserve-view=true) resource type.",
           "Target": "channel"
         }
       ],

@@ -55,13 +55,14 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the channel and run other operations on the [channel](../resources/channel.md) object.
 
 > [!Note]
-> Currently, invoking URL returned from **@odata.id** property fails for cross-tenant shared channel. Please remove "/tenants/{tenant-id}" part from URL before invoking the graph call to access cross-tenant shared channel. For details, see [known issues](/graph/known-issues).
+> Currently, invoking the URL returned from the **@odata.id** property fails for cross-tenant shared channels. You can solve this issue if you remove the `/tenants/{tenant-id}` part from the URL before you call this API. For more details, see [known issues](Please add here the link to the specific section under known issues).
 
 ## Examples
 
 ### Example 1: List all channels
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_all_channel"
@@ -73,6 +74,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 
 #### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,6 +114,7 @@ Content-Type: application/json
 ### Example 2: List all shared channels
 
 #### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "list_all_shared_channel"
@@ -123,6 +126,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 
 #### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
