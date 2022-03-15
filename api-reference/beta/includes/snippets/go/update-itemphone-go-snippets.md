@@ -15,7 +15,7 @@ options := &msgraphsdk.ItemPhoneRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemPhoneId := "itemPhone-id"
-graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(options)
+result, err := graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(options)
 
 
 ```

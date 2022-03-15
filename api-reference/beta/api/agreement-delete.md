@@ -43,10 +43,10 @@ Do not supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -55,7 +55,7 @@ If successful, this method returns a `204, No Content` response code. It does no
   "name": "delete_agreement"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
+DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-agreement-csharp-snippets.md)]
@@ -84,8 +84,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ---
 
 
-##### Response
->**Note:** The response object shown here might be shortened for readability.
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -16,7 +16,7 @@ options := &msgraphsdk.PeopleInsightsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().PeopleInsights().Patch(options)
+result, err := graphClient.OrganizationById(&organizationId).Settings().PeopleInsights().Patch(options)
 
 
 ```
