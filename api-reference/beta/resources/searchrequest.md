@@ -56,19 +56,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "entityTypes": ["String"],
-  "contentSources": ["String"],
-  "query": {"@odata.type": "microsoft.graph.searchQuery"},
-  "from": 1024,
-  "size": 1024,
-  "fields": ["String"],
-  "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
-  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
+  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
+  "contentSources": ["String"],
   "enableTopResults": true,
+  "entityTypes": ["String"],
+  "fields": ["String"],
+  "from": 1024,
+  "query": {"@odata.type": "microsoft.graph.searchQuery"},
   "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
-  "trimDuplicates": false,
+  "size": 1024,
+  "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
+  "trimDuplicates": false
 }
 ```
 
