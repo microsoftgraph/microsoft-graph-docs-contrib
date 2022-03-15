@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about a team in Microsoft Teams, including numbers of owners, members, and guests.
+Contains information about a team in Microsoft Teams, including number of owners, members, and guests.
 
 ## Properties
 | Property	   | Type	|Description|
