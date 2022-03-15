@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 tiIndicatorId := "tiIndicator-id"
-graphClient.Security().TiIndicatorsById(&tiIndicatorId).Delete(nil)
+result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Delete(nil)
 
 
 ```

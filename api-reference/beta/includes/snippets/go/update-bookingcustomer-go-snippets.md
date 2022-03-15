@@ -17,7 +17,7 @@ options := &msgraphsdk.BookingCustomerRequestBuilderPatchOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomerId := "bookingCustomer-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).CustomersById(&bookingCustomerId).Patch(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomersById(&bookingCustomerId).Patch(options)
 
 
 ```

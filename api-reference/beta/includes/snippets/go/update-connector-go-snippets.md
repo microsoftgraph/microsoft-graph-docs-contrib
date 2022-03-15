@@ -28,7 +28,7 @@ options := &msgraphsdk.PrintConnectorRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 printConnectorId := "printConnector-id"
-graphClient.Print().ConnectorsById(&printConnectorId).Patch(options)
+result, err := graphClient.Print().ConnectorsById(&printConnectorId).Patch(options)
 
 
 ```

@@ -27,7 +27,7 @@ options := &msgraphsdk.EducationAssignmentRequestBuilderPatchOptions{
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(options)
 
 
 ```

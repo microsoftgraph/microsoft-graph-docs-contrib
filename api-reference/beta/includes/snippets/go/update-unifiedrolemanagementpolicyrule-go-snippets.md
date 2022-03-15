@@ -21,7 +21,7 @@ options := &msgraphsdk.UnifiedRoleManagementPolicyRuleRequestBuilderPatchOptions
 }
 unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
 unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(options)
+result, err := graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(options)
 
 
 ```

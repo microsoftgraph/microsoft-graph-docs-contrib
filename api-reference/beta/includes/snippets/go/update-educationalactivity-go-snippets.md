@@ -29,7 +29,7 @@ options := &msgraphsdk.EducationalActivityRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 educationalActivityId := "educationalActivity-id"
-graphClient.Me().Profile().EducationalActivitiesById(&educationalActivityId).Patch(options)
+result, err := graphClient.Me().Profile().EducationalActivitiesById(&educationalActivityId).Patch(options)
 
 
 ```

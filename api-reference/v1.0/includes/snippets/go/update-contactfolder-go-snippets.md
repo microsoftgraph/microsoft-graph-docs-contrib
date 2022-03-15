@@ -16,7 +16,7 @@ options := &msgraphsdk.ContactFolderRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 contactFolderId := "contactFolder-id"
-graphClient.Me().ContactFoldersById(&contactFolderId).Patch(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Patch(options)
 
 
 ```

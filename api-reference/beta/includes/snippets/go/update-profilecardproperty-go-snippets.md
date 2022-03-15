@@ -20,7 +20,7 @@ options := &msgraphsdk.ProfileCardPropertyRequestBuilderPatchOptions{
 }
 organizationId := "organization-id"
 profileCardPropertyId := "profileCardProperty-id"
-graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(options)
+result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(options)
 
 
 ```

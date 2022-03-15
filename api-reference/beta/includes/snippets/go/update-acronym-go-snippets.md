@@ -14,7 +14,7 @@ options := &msgraphsdk.AcronymRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 acronymId := "acronym-id"
-graphClient.Search().AcronymsById(&acronymId).Patch(options)
+result, err := graphClient.Search().AcronymsById(&acronymId).Patch(options)
 
 
 ```
