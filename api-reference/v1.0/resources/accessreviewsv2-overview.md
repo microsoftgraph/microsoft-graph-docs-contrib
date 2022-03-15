@@ -21,6 +21,8 @@ Typical customer scenarios for access reviews include:
 
 The access reviews feature, including the API, is available only with a valid purchase or trial license of Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
+[!INCLUDE [GDPR-related guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 ## Methods
 
 The following table lists the methods that you can use to interact with access review-related resources.
