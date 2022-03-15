@@ -249,8 +249,6 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
 
-The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
-
 The following is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
