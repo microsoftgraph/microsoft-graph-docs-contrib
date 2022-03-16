@@ -2279,9 +2279,9 @@ Taxonomy permissions are valid only on work or school accounts.
 
 #### Application permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes | No |
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _CrossTenantInformation.ReadBasic.All_ | Read basic information about an external tenant. | Allows the app to read limited information about an external tenant, without a signed-in user.	| Yes |
 
 
 ## Terms of use permissions
