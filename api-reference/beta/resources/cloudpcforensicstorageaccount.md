@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Represents the storage account information that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
 
-
-Inherits from [entity](../resources/entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
