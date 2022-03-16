@@ -960,9 +960,8 @@ Content-Type: application/json
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join scheduled meeting with joinMeetingId and passcode
-To join the scheduled meeting we can use combination of **joinMeetingId** and **passcode** (if required).
+To join the scheduled meeting we can use a combination of **joinMeetingId** and **passcode** (if required).
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
->**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 #### Join a meeting which requries passcode
 <!-- {
@@ -1043,8 +1042,6 @@ Content-Type: application/json
 
 ### Example 7: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
-
->**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
