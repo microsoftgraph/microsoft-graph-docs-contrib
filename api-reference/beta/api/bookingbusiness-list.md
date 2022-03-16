@@ -115,9 +115,10 @@ Content-type: application/json
 }
 ```
 
-
 ##### Request 2
-The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
+
+The following example shows how to use the `query` parameter to get one or more matching 
+Bookings businesses in the tenant.
 
 # [HTTP](#tab/http)
 <!-- {
