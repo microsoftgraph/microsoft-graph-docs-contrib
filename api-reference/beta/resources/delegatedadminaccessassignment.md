@@ -40,7 +40,7 @@ None.
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
-  "blockType": "resource"
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment",
   "openType": false
 }
