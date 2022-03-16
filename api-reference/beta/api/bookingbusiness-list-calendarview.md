@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,6 +44,7 @@ The values of `start` and `end` are interpreted using the timezone offset specif
 This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
@@ -52,6 +53,7 @@ This method also supports some of the [OData query parameters](/graph/query-para
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.
 
 ## Example

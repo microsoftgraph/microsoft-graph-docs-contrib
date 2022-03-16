@@ -14,16 +14,19 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
@@ -52,6 +55,7 @@ If successful, this method returns a `201 Created` response code and [bookingApp
 ## Example
 
 ### Request
+
 The following is an example of the request. This appointment does not involve booking specific staff members.
 
 # [HTTP](#tab/http)

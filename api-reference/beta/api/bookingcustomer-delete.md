@@ -21,27 +21,32 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/customers/{id}
 
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ##### Request
 The following is an example of the request.
 

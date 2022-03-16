@@ -23,9 +23,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/appointments/{id}
@@ -92,6 +93,7 @@ If successful, this method returns a `204, No Content` response code. It does no
 The following example changes the date of service by a day and updates the invoice date.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment"

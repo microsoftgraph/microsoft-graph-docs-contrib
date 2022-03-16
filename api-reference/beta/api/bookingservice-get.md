@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
+|Delegated (personal Microsoft account) | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 |Application | Not supported.  |
 
 ## HTTP request
@@ -28,19 +28,26 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /bookingBusinesses/{id}/services/{id}
 ```
+
 ## Optional query parameters
+
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and a [bookingService](../resources/bookingservice.md) object in the response body.
 ## Example
+
 ### Request
 The following is an example of the request.
 
