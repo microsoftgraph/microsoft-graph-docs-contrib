@@ -35,6 +35,8 @@ In the request body, pass the list of staff IDs along with 2 other parameters of
 
 ##### Example
 
+```http
+
 { 
     "staffIds": [
         "311a5454-08b2-4560-ba1c-f715e938cb79"
@@ -48,6 +50,7 @@ In the request body, pass the list of staff IDs along with 2 other parameters of
         "timeZone": "Pacific Standard Time"
     }
 }
+```
 
 ## Response body
 
