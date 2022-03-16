@@ -61,6 +61,8 @@ In the response body, for each staff member, their available windows are returne
 
 ### Example
 
+```http
+
 {
     "staffAvailabilityResponse": [
         {
@@ -130,3 +132,4 @@ In the response body, for each staff member, their available windows are returne
         }
     ]
 }
+```
