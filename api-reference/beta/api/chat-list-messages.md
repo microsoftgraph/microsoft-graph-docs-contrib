@@ -48,7 +48,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
-| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **LastModifiedDateTime (default)** and **CreatedDateTime** in **Descending** order. Ascending order is currently not supported.|
+| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **lastModifiedDateTime** (default) and **createdDateTime** in **descending** order. Ascending order is currently not supported.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by createdDateTime.
+The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by **createdDateTime**.
 
 
 # [HTTP](#tab/http)
