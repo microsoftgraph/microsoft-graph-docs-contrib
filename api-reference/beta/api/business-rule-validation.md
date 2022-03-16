@@ -39,7 +39,7 @@ At a service, the scheduling policy is inherited from business. The customer may
 
 If a scheduling policy exists at both service level and business level, the service level policy will take precedence.
 
-#### Partially Set Policies  
+#### Partially Set Policies
 
 #### Pre-Buffer
 
