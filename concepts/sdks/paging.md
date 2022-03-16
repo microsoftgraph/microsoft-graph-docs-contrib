@@ -141,10 +141,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
@@ -271,10 +268,7 @@ options := messages.MessagesRequestBuilderGetOptions{
 result, err := client.Me().Messages().Get(&options)
 
 // Initialize iterator
-pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase,
-    func() serialization.Parsable {
-        return messages.NewMessagesResponse()
-    })
+pageIterator, err := msgraphcore.NewPageIterator(result, adapter.GraphRequestAdapterBase, graph.CreateMessageCollectionResponseFromDiscriminatorValue)
 
 // Any custom headers sent in original request should also be added
 // to the iterator
