@@ -11332,6 +11332,36 @@ items:
               href: api/organizationsettings-list-microsoftapplicationdataaccess.md
             - name: Update
               href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for item insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Org control for people insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Profile card customization (preview)
+            items:
+            - name: Profile card property
+              href: resources/profilecardproperty.md
+            - name: List
+              href: api/organizationsettings-list-profilecardproperties.md
+            - name: Create
+              href: api/organizationsettings-post-profilecardproperties.md
+            - name: Get
+              href: api/profilecardproperty-get.md
+            - name: Update
+              href: api/profilecardproperty-update.md
+            - name: Delete
+              href: api/profilecardproperty-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
