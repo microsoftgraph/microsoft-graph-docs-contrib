@@ -28,7 +28,7 @@ options := &msgraphsdk.DetailsRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerPlanId := "plannerPlan-id"
-result, err := graphClient.Planner().PlansById(&plannerPlanId).Details().Patch(options)
+graphClient.Planner().PlansById(&plannerPlanId).Details().Patch(options)
 
 
 ```

@@ -15,7 +15,7 @@ options := &msgraphsdk.TeamworkTagRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
+graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
 
 
 ```

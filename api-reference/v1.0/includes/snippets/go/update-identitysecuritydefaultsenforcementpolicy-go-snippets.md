@@ -13,7 +13,7 @@ requestBody.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.IdentitySecurityDefaultsEnforcementPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().IdentitySecurityDefaultsEnforcementPolicy().Patch(options)
+graphClient.Policies().IdentitySecurityDefaultsEnforcementPolicy().Patch(options)
 
 
 ```

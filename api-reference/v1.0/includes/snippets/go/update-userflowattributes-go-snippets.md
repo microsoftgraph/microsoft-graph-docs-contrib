@@ -14,7 +14,7 @@ options := &msgraphsdk.IdentityUserFlowAttributeRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 identityUserFlowAttributeId := "identityUserFlowAttribute-id"
-result, err := graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(options)
+graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(options)
 
 
 ```

@@ -14,7 +14,7 @@ options := &msgraphsdk.WebAccountRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 webAccountId := "webAccount-id"
-result, err := graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
+graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
 
 
 ```

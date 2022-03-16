@@ -43,7 +43,7 @@ options := &msgraphsdk.BookingAppointmentRequestBuilderPatchOptions{
 }
 bookingBusinessId := "bookingBusiness-id"
 bookingAppointmentId := "bookingAppointment-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Patch(options)
 
 
 ```
