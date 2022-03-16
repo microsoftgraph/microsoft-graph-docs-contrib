@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Migrate Exchange Web Services (EWS) apps to Microsoft Graph
 
-[Exchange Web Services (EWS)](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) is a legacy protocol that has been in usage since Exchange Server 2007. In August 2018, [Microsoft announced](https://techcommunity.microsoft.com/t5/exchange-team-blog/upcoming-changes-to-exchange-web-services-ews-api-for-office-365/ba-p/608055) that there will not be any active investment in EWS APIs for Exchange Online. It is strongly recommended to migrate your EWS apps that access Exchange Online to Microsoft Graph.
+[Exchange Web Services (EWS)](/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange) is a legacy protocol that has been in usage since Exchange Server 2007. In August 2018, [Microsoft announced](https://techcommunity.microsoft.com/t5/exchange-team-blog/upcoming-changes-to-exchange-web-services-ews-api-for-office-365/ba-p/608055) that there will not be any active investment in EWS APIs for Exchange Online. We strongly recommend that to migrate your EWS apps that access Exchange Online to Microsoft Graph.
 
 ## Why use Microsoft Graph?
 
