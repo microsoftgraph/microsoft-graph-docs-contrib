@@ -1,7 +1,7 @@
 ---
 title: "Create delegatedAdminRelationshipRequest"
 description: "Create a new delegatedAdminRelationshipRequest object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

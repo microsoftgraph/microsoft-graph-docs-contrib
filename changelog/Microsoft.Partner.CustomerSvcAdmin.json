@@ -81,15 +81,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [delegatedAdminRelationshipCustomerParticipant](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipCustomerParticipant?view=graph-rest-beta) resource type.",
           "Target": "delegatedAdminRelationshipCustomerParticipant"
-        },
-        {
-          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "delegatedAdminRelationshipParticipant",
-          "ChangeType": "Addition",
-          "Description": "Added the [delegatedAdminRelationshipParticipant](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationshipParticipant?view=graph-rest-beta) resource type.",
-          "Target": "delegatedAdminRelationshipParticipant"
-        },
+        },s
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
           "ApiChange": "Resource",

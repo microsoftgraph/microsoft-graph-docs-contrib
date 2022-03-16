@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details of a customer participant in a delegated admin relationship. Inherits from [delegatedAdminRelationshipParticipant](delegatedAdminRelationshipParticipant.md).
+Contains details of a customer participant in a delegated admin relationship.
 
 ## Properties
 |Property|Type|Description|

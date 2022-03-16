@@ -70,21 +70,13 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "displayName": "Contoso relationship",
-  "duration": "P30D",
+  "displayName": "Contoso admin relationship",
+  "duration": "P730D",
   "customer": {
-    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
-    "displayName": "Contoso Inc"
+    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
   },
   "accessDetails": {
-    "unifiedRoles": [
-      {
-        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
-      },
-      {
-        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
-      }
-    ]
+    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   }
 }
 ```
@@ -104,28 +96,22 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wKklILTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
-  "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
-  "displayName": "Contoso relationship",
-  "duration": "P30D",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminRelationships",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso admin relationship",
+  "duration": "P730D",
   "customer": {
-    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
-    "displayName": "Contoso Inc"
+    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
   },
   "accessDetails": {
-    "unifiedRoles": [
-      {
-        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
-      },
-      {
-        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
-      }
-    ]
+    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "status": "created",
-  "createdDateTime": "2021-09-29T16:52:39.6133896Z",
-  "lastModifiedDateTime": "2021-09-29T16:57:20.2101088Z",
-  "activatedDateTime": "2021-09-29T16:57:20.2101088Z"
+  "status": "approvalPending",
+  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
+  "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
+  "activatedDateTime": "",
+  "endDateTime": "2024-02-10T11:24:42.3148266Z"
 }
 ```
 

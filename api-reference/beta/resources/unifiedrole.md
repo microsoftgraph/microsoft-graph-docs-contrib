@@ -1,7 +1,7 @@
 ---
 title: "unifiedRole resource type"
 description: "The directory roles specified for access."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
