@@ -16,7 +16,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 options := &msgraphsdk.ContinuousAccessEvaluationPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(options)
+graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(options)
 
 
 ```

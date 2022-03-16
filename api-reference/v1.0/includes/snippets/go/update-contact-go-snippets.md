@@ -24,7 +24,7 @@ options := &msgraphsdk.ContactRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 contactId := "contact-id"
-result, err := graphClient.Me().ContactsById(&contactId).Patch(options)
+graphClient.Me().ContactsById(&contactId).Patch(options)
 
 
 ```

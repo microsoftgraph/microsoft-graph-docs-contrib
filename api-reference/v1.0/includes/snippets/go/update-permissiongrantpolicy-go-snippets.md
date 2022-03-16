@@ -14,7 +14,7 @@ options := &msgraphsdk.PermissionGrantPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(options)
+graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(options)
 
 
 ```
