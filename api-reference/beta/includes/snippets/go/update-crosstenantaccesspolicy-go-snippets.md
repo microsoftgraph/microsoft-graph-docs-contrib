@@ -13,7 +13,7 @@ requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.CrossTenantAccessPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(options)
+graphClient.Policies().CrossTenantAccessPolicy().Patch(options)
 
 
 ```

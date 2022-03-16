@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var contacts = await graphClient.Contacts
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Filter("startswith(displayName,'A')")
 	.OrderBy("displayName")
