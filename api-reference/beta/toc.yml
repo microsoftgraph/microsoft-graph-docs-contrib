@@ -422,16 +422,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
-          - name: Settings for item insights
-            items:
-            - name: Insights settings
-              href: resources/insightssettings.md
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md          
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -520,7 +518,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -13234,7 +13232,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -13556,16 +13554,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
-          - name: Settings for item insights
-            items:
-            - name: Insights settings
-              href: resources/insightssettings.md
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md          
+          - name: Insights settings
+            href: resources/insightssettings.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
