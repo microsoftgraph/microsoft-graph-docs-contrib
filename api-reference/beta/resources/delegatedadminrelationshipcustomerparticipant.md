@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipCustomerParticipant",
   "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-  "displayName": "Contoso"
+  "displayName": "Contoso Inc"
 }
 ```
 

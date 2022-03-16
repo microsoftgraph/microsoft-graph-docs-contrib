@@ -59,27 +59,22 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
-  "displayName": "Contoso relationship",
+  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso admin relationship",
   "duration": "P730D",
+  "partner": {
+    "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
+  },
   "customer": {
-    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
-    "displayName": "Contoso Inc"
+    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
   },
   "accessDetails": {
-    "unifiedRoles": [
-      {
-        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
-      },
-      {
-        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
-      }
-    ]
+    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
   },
-  "status": "created",
-  "createdDateTime": "2021-09-29T16:52:39.6133896Z",
-  "lastModifiedDateTime": "2021-09-29T16:57:20.2101088Z",
-  "activatedDateTime": "2021-09-29T16:57:20.2101088Z",
+  "status": "active",
+  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
+  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
+  "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
   "endDateTime": "2024-02-10T11:24:42.3148266Z"
 }
 ```
