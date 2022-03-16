@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationship resource type"
-description: "Represents the partner view of a delegated admin relationship between a partner and customer."
-author: "amharris1331"
+description: "Represents a delegated admin relationship between a partner and customer."
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the partner view of a delegated admin relationship between a partner and customer.
+Represents a delegated admin relationship between a partner and customer.
 
 ## Methods
 |Method|Return type|Description|
@@ -29,12 +29,11 @@ Represents the partner view of a delegated admin relationship between a partner 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the relationship. This is set by the system and cannot be set by the caller.|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the 'approvalPending' status or beyond. Must be unique across all relationships from the partner for the customer.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the 'approvalPending' status or beyond. Must be unique across all relationships of the partner.|
 |duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the 'approvalPending' status or beyond. Must be a value between P1D and P2Y inclusive.|
-|partner|[delegatedAdminRelationshipParticipant](../resources/delegatedadminrelationshipparticipant.md)|The information of the partner of the relationship. This is set by the partner and cannot be changed by the customer.|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the 'approvalPending' status or beyond.|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`.|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`.|
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was created in UTC. This is set by the system and cannot be set by the caller.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was last modified in UTC. This is set by the system and cannot be set by the caller.|
 |activatedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship became active in UTC. This is set by the system and cannot be set by the caller.|
@@ -60,22 +59,27 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
-  "displayName": "Contoso admin relationship",
+  "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso relationship",
   "duration": "P730D",
-  "partner": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
-  },
   "customer": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
+    "displayName": "Contoso Inc"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+      }
+    ]
   },
-  "status": "active",
-  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
-  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
-  "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
+  "status": "created",
+  "createdDateTime": "2021-09-29T16:52:39.6133896Z",
+  "lastModifiedDateTime": "2021-09-29T16:57:20.2101088Z",
+  "activatedDateTime": "2021-09-29T16:57:20.2101088Z",
   "endDateTime": "2024-02-10T11:24:42.3148266Z"
 }
 ```

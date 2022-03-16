@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminAccessAssignment"
 description: "Read the properties and relationships of a delegatedAdminAccessAssignment object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.
+Read the properties of a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -79,7 +79,6 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
     "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
     "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
-    "versionStamp": "\"00000298-0000-0200-0000-622be04b0000\"",
     "status": "active",
     "createdDateTime": "2022-03-09T13:20:35.2772433Z",
     "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",

@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminRelationships"
 description: "Get a list of the delegatedAdminRelationship objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **displayName**, **status**, **duration**, **activatedDateTime**, and **endDateTime** fields. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -83,12 +83,9 @@ Content-Type: application/json
       "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
       "displayName": "Contoso admin relationship",
       "duration": "P730D",
-      "partner": {
-        "tenantId": "8777b240-c6f0-4469-9e98-a3205431b836"
-      },
       "customer": {
         "tenantId": "52eaad04-13a2-4a2f-9ce8-93a294fadf36",
-        "displayName": "Contoso"
+        "displayName": "Contoso Inc"
       },
       "accessDetails": {
         "unifiedRoles": [
@@ -109,12 +106,9 @@ Content-Type: application/json
       "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
       "displayName": "Contoso subsidiary relationship",
       "duration": "P30D",
-      "partner": {
-        "tenantId": "8777b240-c6f0-4469-9e98-a3205431b836"
-      },
       "customer": {
         "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
-        "displayName": "Contoso subsidiary"
+        "displayName": "Contoso subsidiary Inc"
       },
       "accessDetails": {
         "unifiedRoles": [

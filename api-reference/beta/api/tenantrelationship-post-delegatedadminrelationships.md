@@ -1,7 +1,7 @@
 ---
 title: "Create delegatedAdminRelationship"
 description: "Create a new delegatedAdminRelationship object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -46,10 +46,10 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the 'approvalPending' status or beyond. Must be unique across all relationships from the partner for the customer. Required.|
-|duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive. Required.|
-|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the "approvalPending" status or beyond. Optional.|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship. Required.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the 'approvalPending' status or beyond. Must be unique across all relationships from the partner for the customer.|
+|duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive.|
+|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship (if not set at the time of creation), and can neither be changed by the customer nor by the partner once the relationship is in the "approvalPending" status or beyond.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
 
 
 ## Response
@@ -70,13 +70,21 @@ Authorization: Bearer {token}
 Content-Type: application/json
 
 {
-  "displayName": "Contoso admin relationship",
-  "duration": "P730D",
+  "displayName": "Contoso relationship",
+  "duration": "P30D",
   "customer": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
+    "displayName": "Contoso Inc"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+      }
+    ]
   }
 }
 ```
@@ -96,25 +104,28 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminRelationships",
-  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
-  "id": "5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
-  "displayName": "Contoso admin relationship",
-  "duration": "P730D",
-  "partner": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipParticipant"
-  },
+  "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wKklILTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
+  "id": "1041ef52-a99b-4245-a3be-cbd3fa7c5ed1-8777b240-c6f0-4469-9e98-a3205431b836",
+  "displayName": "Contoso relationship",
+  "duration": "P30D",
   "customer": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
+    "tenantId": "4b827261-d21f-4aa9-b7db-7fa1f56fb163",
+    "displayName": "Contoso Inc"
   },
   "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+      }
+    ]
   },
-  "status": "approvalPending",
-  "createdDateTime": "2022-02-10T11:24:42.3148266Z",
-  "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
-  "activatedDateTime": "",
-  "endDateTime": "2024-02-10T11:24:42.3148266Z"
+  "status": "created",
+  "createdDateTime": "2021-09-29T16:52:39.6133896Z",
+  "lastModifiedDateTime": "2021-09-29T16:57:20.2101088Z",
+  "activatedDateTime": "2021-09-29T16:57:20.2101088Z"
 }
 ```
 

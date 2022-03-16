@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminRelationshipOperations"
 description: "Get a list of the delegatedAdminRelationshipOperation objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 300 objects respectively. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminAccessAssignment resource type"
 description: "Represents an assignment of access details to an access container."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an assignment of access details (containing roles) to an access container (like a security group). Once it's active, the members of the access container get access to the roles specified in the access details.
+Represents an assignment of access details (containing unified roles) to an access container (like a security group). Once it's active, the members of the access container get access to the roles specified in the access details.
 
 ## Methods
 |Method|Return type|Description|
@@ -32,7 +32,7 @@ Represents an assignment of access details (containing roles) to an access conta
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the access assignment was created in UTC. This is set by the system and cannot be set by the caller.|
 |id|String|The unique identifier of the access assignment. This is set by the system and cannot be set by the caller.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this access assignment was last modified in UTC. This is set by the system and cannot be set by the caller.|
-|status|delegatedAdminAccessAssignmentStatus|The status of the assignment. The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
+|status|delegatedAdminAccessAssignmentStatus|The status of the access assignment. The possible values are: `pending`, `active`, `deleting`, `deleted`.|
 
 ## Relationships
 None.
@@ -40,8 +40,7 @@ None.
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
+  "blockType": "resource"
   "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment",
   "openType": false
 }

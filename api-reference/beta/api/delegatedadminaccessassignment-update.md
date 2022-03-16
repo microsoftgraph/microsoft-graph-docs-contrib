@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminAccessAssignment"
 description: "Update the properties of a delegatedAdminAccessAssignment object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -46,15 +46,14 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|The status of the assignment. Optional.|
-|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
+|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body, or a `202 Accepted` response code.
+If successful, this method returns a `202 Accepted` response code and an updated [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body, or a `200 OK` if there aren't any changes to the object.
 
 ## Examples
 
@@ -88,51 +87,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 1: Returns a 200 response
-
-Returns a 200 response.
-
-### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
-  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
-  "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
-  "versionStamp": "\"0000569a-0000-0200-0000-622be4240000\"",
-  "status": "active",
-  "createdDateTime": "2022-03-11T23:50:30.3770449Z",
-  "lastModifiedDateTime": "2022-03-12T00:07:00.5036079Z",
-  "accessContainer": {
-    "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
-    "accessContainerType": "securityGroup"
-  },
-  "accessDetails": {
-    "unifiedRoles": [
-        {
-          "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
-        },
-        {
-          "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
-        },
-        {
-          "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
-        }
-      ]
-    }
-}
-```
-### Example 2: Returns a 202 response
+### Example 1: Returns a 202 response
 
 Returns a 202 response.
 

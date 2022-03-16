@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminRelationshipRequest"
 description: "Read the properties and relationships of a delegatedAdminRelationshipRequest object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -79,7 +79,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests/$entity",
   "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
-  "action": "approve",
+  "action": "lockForApproval",
   "status": "created",
   "createdDateTime": "2022-02-10T10:55:47.1180588Z",
   "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"

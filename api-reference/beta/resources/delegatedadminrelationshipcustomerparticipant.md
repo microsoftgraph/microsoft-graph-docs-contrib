@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipCustomerParticipant resource type"
 description: "Contains details of a customer participant in a delegated admin relationship."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Contains details of a customer participant in a delegated admin relationship. In
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the customer organization. This is set by the system and cannot be set by the caller.|
-|tenantId|String|The tenant ID of the customer participant in the relationship. Must be a valid tenant ID as in AAD.|
+|tenantId|String|The tenant ID of the customer participant in the relationship. Must be a valid tenant ID as in Azure Active Directory.|
 
 ## Relationships
 None.

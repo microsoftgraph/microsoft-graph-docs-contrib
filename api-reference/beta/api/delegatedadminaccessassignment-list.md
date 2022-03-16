@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminAccessAssignments"
 description: "Get a list of the delegatedAdminAccessAssignment objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **status** field. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -81,7 +81,6 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
       "@odata.etag": "W/\"JyIwMDAwMDI5OC0wMDAwLTAyMDAtMDAwMC02MjJiZTA0YjAwMDAiJw==\"",
       "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
-      "versionStamp": "\"00000298-0000-0200-0000-622be04b0000\"",
       "status": "active",
       "createdDateTime": "2022-03-07T22:55:18.6780449Z",
       "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",

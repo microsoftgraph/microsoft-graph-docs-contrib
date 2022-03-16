@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminCustomer resource type"
 description: "Represents a delegated admin customer."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -26,7 +26,7 @@ Represents a delegated admin customer. This object is created by the system when
 |:---|:---|:---|
 |displayName|String|The display name of the delegated admin customer organization. This is set by the system and cannot be set by the caller.|
 |id|String|The unique identifier of the delegated admin customer. This is set by the system and cannot be set by the caller.|
-|tenantId|String|The tenant ID of the delegated admin customer. Must be a valid tenant ID as in AAD.|
+|tenantId|String|The tenant ID of the delegated admin customer. Must be a valid tenant ID as in AAD. This is set by the system and cannot be set by the caller.|
 
 ## Relationships
 None.

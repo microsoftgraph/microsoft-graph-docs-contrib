@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminCustomers"
 description: "Get a list of the delegatedAdminCustomer objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **displayName** field. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -82,14 +82,14 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIxODAwMTMzZi0wMDAwLTAyMDAtMDAwMC02MTNjMGFhZTAwMDAiJw==\"",
       "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
       "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-      "displayName": "Contoso"
+      "displayName": "Contoso Inc"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
       "@odata.etag": "W/\"JyIwMDAwMTEwMS0wMDAwLTAyMDAtMDAwMC02MDI1OTQyMjAwMDAiJw==\"",
       "id": "1c0fa218-5dec-49db-8247-cfa457af8116",
       "tenantId": "1c0fa218-5dec-49db-8247-cfa457af8116",
-      "displayName": "Contoso subsidiary"
+      "displayName": "Contoso subsidiary Inc"
     }
   ]
 }

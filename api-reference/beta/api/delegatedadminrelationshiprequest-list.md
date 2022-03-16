@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminRelationshipRequests"
 description: "Get a list of the delegatedAdminRelationshipRequest objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -85,15 +85,6 @@ Content-Type: application/json
       "status": "complete",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-10T06:14:55.5398865Z"
-    },
-    {
-      "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-      "@odata.etag": "W/\"JyIxODAwZTY4My0wMKkMLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
-      "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
-      "action": "approve",
-      "status": "created",
-      "createdDateTime": "2022-02-03T10:55:47.1180588Z",
-      "lastModifiedDateTime": "2022-02-15T11:26:44.9941884Z"
     }
   ]
 }

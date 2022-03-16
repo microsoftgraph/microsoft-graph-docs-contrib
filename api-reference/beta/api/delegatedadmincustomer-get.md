@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminCustomer"
 description: "Read the properties and relationships of a delegatedAdminCustomer object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.
+Read the properties of a [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -80,7 +80,7 @@ Content-Type: application/json
   "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
   "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-  "displayName": "Contoso"
+  "displayName": "Contoso Inc"
 }
 ```
 

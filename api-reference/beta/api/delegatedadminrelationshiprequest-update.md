@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminRelationshipRequest"
 description: "Update the properties of a delegatedAdminRelationshipRequest object."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -46,10 +46,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|The action to be performed on the delegated admin relationship. Required.|
-|status|String|The status of the request. Optional.|
-|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the relationship request was created in UTC. This is set by the system and cannot be set by the caller. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship request was last modified in UTC. This is set by the system and cannot be set by the caller. Optional.|
+|action|String|The action to be performed on the delegated admin relationship.|
 
 
 
@@ -73,7 +70,6 @@ If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "action": "terminate",
 }
 ```

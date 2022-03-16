@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipOperation resource type"
 description: "Represents a long running operation related to a delegated admin relationship."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -20,8 +20,6 @@ Represents a long running operation related to a delegated admin relationship.
 |:---|:---|:---|
 |[List delegatedAdminRelationshipOperations](../api/delegatedadminrelationshipoperation-list.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md) collection|Get a list of the **delegatedAdminRelationshipOperation** objects and their properties.|
 |[Get delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-get.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md)|Read the properties and relationships of a **delegatedAdminRelationshipOperation** object.|
-|[Update delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-update.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md)|Update the properties of a **delegatedAdminRelationshipOperation** object.|
-|[Delete delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-delete.md)|None|Deletes a **delegatedAdminRelationshipOperation** object.|
 
 ## Properties
 |Property|Type|Description|

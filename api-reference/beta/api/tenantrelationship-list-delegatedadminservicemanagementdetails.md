@@ -1,7 +1,7 @@
 ---
 title: "List delegatedAdminServiceManagementDetails"
 description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
-author: "amharris1331"
+author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -79,19 +79,19 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-      "serviceId": "M365 Lighthouse",
+      "id": "5d0273c3-0f0e-4e00-90e8-e792c8860fb5",
       "serviceName": "Microsoft 365 Lighthouse",
       "serviceManagementUrl": "https://lighthouse.microsoft.com"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-      "serviceId": "DynamicsNAV",
+      "id": "2b565abc-b0de-4974-97c0-bed0abb14a0f",
       "serviceName": "Dynamics 365 Business Central",
       "serviceManagementUrl": "https://businesscentral.dynamics.com"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-      "serviceId": "TeamspaceAPI",
+      "id": "ce0b42f4-bfde-4abe-a5f7-add83f104b23",
       "serviceName": "Teams",
       "serviceManagementUrl": "https://admin.teams.microsoft.com"
     }
