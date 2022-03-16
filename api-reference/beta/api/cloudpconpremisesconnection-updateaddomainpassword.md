@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 Update the Active Directory domain password for an [onPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the type of the **onPremisesConnection** is `hybridAzureADJoin`.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -16,6 +16,9 @@ By integrating with and building on top of Windows 365, you can provision, manag
 
 ### Create on-premises network connections
 
+> [!IMPORTANT]
+> **on-premises network connetions** will be renamed to **Azure network connections** in the future
+
 Create [on-premises network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to give line of sight to a domain controller. Once created, if not in use, an on-premises network connection can be deleted. Health checks can also be run on an on-premises network connection to check its health status and, if needed, the AD domain password can be updated. 
 
 ### Provision Cloud PCs

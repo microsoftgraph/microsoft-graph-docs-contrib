@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
-Notes: A renaming of on-premises network connection to Azure network connection is under way, you will see Azure network connection from the UX portal before graph api changes.
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Methods
 
