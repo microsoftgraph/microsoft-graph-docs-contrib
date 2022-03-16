@@ -87,7 +87,51 @@ Content-Type: application/json
 }
 ```
 
-### Example 1: Returns a 202 response
+### Example 1: Returns a 200 response
+
+Returns a 200 response.
+
+### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.delegatedAdminAccessAssignment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
+  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+  "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
+  "versionStamp": "\"0000569a-0000-0200-0000-622be4240000\"",
+  "status": "active",
+  "createdDateTime": "2022-03-11T23:50:30.3770449Z",
+  "lastModifiedDateTime": "2022-03-12T00:07:00.5036079Z",
+  "accessContainer": {
+    "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
+    "accessContainerType": "securityGroup"
+  },
+  "accessDetails": {
+    "unifiedRoles": [
+        {
+          "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        },
+        {
+          "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+        },
+        {
+          "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+        }
+      ]
+    }
+}
+```
+### Example 2: Returns a 202 response
 
 Returns a 202 response.
 
@@ -103,4 +147,3 @@ Returns a 202 response.
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/operations/d8dbb27b-7fe7-4523-a3df-f766355fe0f2
 ```
-
