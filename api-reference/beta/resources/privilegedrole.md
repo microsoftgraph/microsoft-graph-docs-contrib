@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Represents an [Azure AD built-in administrator role](/azure/active-directory/roles/permissions-reference), for example, **Global Administrator, Billing Administrator, Service Administrator, User Administrator**, and **Password Administrator**.
 
