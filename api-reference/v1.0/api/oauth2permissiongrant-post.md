@@ -72,11 +72,10 @@ POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
 
 {
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value"
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All"
 }
 ```
 # [C#](#tab/csharp)
@@ -119,12 +118,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
+    "principalId": null,
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "DelegatedPermissionGrant.ReadWrite.All"
 }
 ```
 
