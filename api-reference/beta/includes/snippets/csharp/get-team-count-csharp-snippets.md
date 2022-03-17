@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var servicePrincipals = await graphClient.ServicePrincipals
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:Team")
 	.GetAsync();

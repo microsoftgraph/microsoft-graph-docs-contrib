@@ -40,7 +40,7 @@ In the request body, supply the values for relevant fields that should be update
 |isViewingBeforeAcceptanceRequired|Boolean|Whether the user has to expand and view the agreement before accepting.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [agreement](../resources/agreement.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 ## Example
 ### Request
 
@@ -50,13 +50,13 @@ If successful, this method returns a `200 OK` response code and an updated [agre
   "blockType": "request",
   "name": "update_agreement"
 }-->
-```http
-PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/093b947f-8363-4979-a47d-4c52b33ee1be
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/0ec9f6a6-159d-4dd8-a563-1f0b5935e80b
 Content-type: application/json
 
 {
-  "displayName": "Sample ToU display name",
-  "isViewingBeforeAcceptanceRequired": true
+    "displayName": "All Contoso volunteers - Terms of use",
+    "isViewingBeforeAcceptanceRequired": true
 }
 ```
 # [C#](#tab/csharp)
@@ -91,18 +91,10 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agreement"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "displayName": "Sample ToU display name",
-  "isViewingBeforeAcceptanceRequired": true,
-  "id": "093b947f-8363-4979-a47d-4c52b33ee1be"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

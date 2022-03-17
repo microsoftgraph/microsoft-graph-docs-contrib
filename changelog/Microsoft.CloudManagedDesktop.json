@@ -30,7 +30,49 @@
             "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2022-03-02T14:13:04.317411Z",
+            "CreatedDateTime": "2022-03-17T14:13:04.317411Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "RoleManagement.Read.CloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `RoleManagement.Read.CloudPC` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+                    "Target": "unifiedRoleDefinition"
+                },
+                {
+                    "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "RoleManagement.ReadWrite.CloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://docs.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+                    "Target": "unifiedRoleDefinition"
+                },
+                {
+                    "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "RoleManagement.Read.CloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the delegated permission of `RoleManagement.Read.CloudPC` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+                    "Target": "unifiedRoleDefinition"
+                },
+                {
+                    "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "RoleManagement.ReadWrite.CloudPC",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the delegated permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://docs.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+                    "Target": "unifiedRoleDefinition"
+                }
+            ],
+            "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-03-14T15:13:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
