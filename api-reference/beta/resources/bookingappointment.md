@@ -15,6 +15,8 @@ Namespace: microsoft.graph
  
 Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
+> [!NOTE]
+> If you're creating a custom app using application permissions, you must follow the rules in this topic, [Business rules validation](../api/business-rule-validation.md).
 
 ## Methods
 
@@ -28,6 +30,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |[Cancel](../api/bookingappointment-cancel.md)|None| Cancel a **bookingAppointment** object.|
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
