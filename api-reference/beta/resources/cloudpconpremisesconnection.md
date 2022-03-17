@@ -54,7 +54,7 @@ Represents a defined collection of Azure resource information that can be used t
 |:---|:---|:---|
 |windows365|1| On-premises connection was successfully created through Windows365.|
 |devBox|2| On-premises connection was successfully created through Project Fidalgo.|
-|unknownFutureValue|4| Unknown future types (Reserved, not used right now).|
+|unknownFutureValue|4| Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcOnPremisesConnectionType values
 
