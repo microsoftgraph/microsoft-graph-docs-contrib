@@ -9,17 +9,21 @@ doc_type: apiPageType
 
 # Business rules validation
 
-When an appointment is created by a non-admin user, Bookings will use the business rules what the organization has configured for the Bookings calendar.  
-
-However, admins can override these rules in certain circumstances.
+When an appointment is created by a non-admin user, Bookings will use the business rules what the organization has configured for the Bookings calendar. However, admins can override these rules in certain circumstances.
 
 ## Business Settings
+
+### Business hours
+
+:::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
 
 This is a setting in the business object and can be modified via the API as well. An appointment can’t be set outside business hours. The attribute which corresponds to the API is “businesshours”.
 
 ### Scheduling policy
 
-The API resource is here bookingSchedulingPolicy resource type - Microsoft Graph v1.0 | Microsoft Docs. The web-app settings are given below.
+The API resource is here [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md). The web-app settings are given below.
+
+:::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
 **Time Increment (Time slot interval)** indicates the duration of an appointment. While validating business rules, we need to ensure that an appointment is for the same duration as indicated in the service.
 
