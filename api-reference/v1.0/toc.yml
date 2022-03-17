@@ -4605,7 +4605,7 @@ items:
         - name: Add item
           href: api/bundle-additem.md
         - name: Remove item
-          href: api/bundle-remonveitem.md
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:
