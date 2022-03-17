@@ -1,17 +1,17 @@
 ---
-title: "Add group owner"
-description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+title: "Add owners"
+description: "Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object."
 ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Add group owner
+# Add owners
 
 Namespace: microsoft.graph
 
-Add a user or service principal to the group's owners. The owners are a set of users or service principals who are allowed to modify the group object.
+Add a user or service principal to a Microsoft 365 or security group's owners. The owners are a set of users or service principals who are allowed to modify the group object.
 
 >**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
 
@@ -36,14 +36,14 @@ POST /groups/{id}/owners/$ref
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation with the **@odata.id** of a [user](../resources/user.md) or [servicePrincipal](../resources/user.md) object to be added
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
-#### Request
-The following is an example of the request.
+### Request
+The following is an example of the request that adds a user as a group owner.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -53,7 +53,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
@@ -75,11 +74,19 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-owner-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation with the **@odata.id** of a [user](../resources/user.md) or [servicePrincipal](../resources/user.md) object to be added.
 
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

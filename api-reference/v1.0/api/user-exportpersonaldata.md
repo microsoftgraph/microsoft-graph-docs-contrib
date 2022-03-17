@@ -61,7 +61,6 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 ```http
 POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"
@@ -81,6 +80,14 @@ Content-length: 48
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-exportpersonaldata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-exportpersonaldata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

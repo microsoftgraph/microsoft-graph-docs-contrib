@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/connections/contosohr')
+await client.api('/external/connections/contosohr')
 	.delete();
 
 ```

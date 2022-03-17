@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -85,6 +83,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcusersetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcusersetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcusersetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +100,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcUserSetting)"
+  "@odata.type": "microsoft.graph.cloudPcUserSetting",
+  "isCollection": true
 }
 -->
 ``` http
@@ -109,6 +116,10 @@ Content-Type: application/json
       "displayName": "Test1",
       "selfServiceEnabled": true,
       "localAdminEnabled": false,
+      "restorePointSetting": {
+        "frequencyInHours": 16,
+        "userRestoreEnabled": true
+      },
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }

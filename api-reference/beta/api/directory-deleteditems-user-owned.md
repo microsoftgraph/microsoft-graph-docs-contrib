@@ -79,7 +79,6 @@ from actual calls.
 ``` http
 HTTP/1.1 200
 Content-type: application/json
-Content-length: 1249
 
 {
 "value": [

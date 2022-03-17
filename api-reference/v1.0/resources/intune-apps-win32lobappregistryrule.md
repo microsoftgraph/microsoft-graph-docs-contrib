@@ -2,7 +2,7 @@
 title: "win32LobAppRegistryRule resource type"
 description: "A complex type to store registry rule data for a Win32 LOB app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -51,7 +51,6 @@ Here is a JSON representation of the resource.
   "comparisonValue": "String"
 }
 ```
-
 
 
 

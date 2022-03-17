@@ -2,7 +2,7 @@
 title: "keyTypedValuePair resource type"
 description: "A key-value pair with a string key and a typed value."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -38,6 +38,7 @@ Here is a JSON representation of the resource.
   "key": "String"
 }
 ```
+
 
 
 

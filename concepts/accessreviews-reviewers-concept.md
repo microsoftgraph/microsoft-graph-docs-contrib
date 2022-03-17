@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Assign reviewers to your access review using the Microsoft Graph API
 
-The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
 
 The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource.  In addition, you can specify fallback reviewers by using **fallbackReviewers** property. These properties are not required when you create a self-review (where users review their own access).
 
@@ -84,6 +84,7 @@ Because `./manager` is a relative query, specify the **queryRoot** property with
 ]
 ```
 
-## See also
+## Next steps
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)
++ [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources

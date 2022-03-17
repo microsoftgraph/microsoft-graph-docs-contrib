@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleScheduleBase resource type"
 description: "Base property of unified role schedules that combines unified role assignment schedules and unified role eligibility schedules"
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # unifiedRoleScheduleBase resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Base property of unified role schedules that combines unified role assignment schedules and unified role eligibility schedules
 

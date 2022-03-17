@@ -171,6 +171,7 @@ HTTP/1.1 204 No Content
 The following is an example of the request.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -197,6 +198,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 

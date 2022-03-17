@@ -2,7 +2,7 @@
 title: "iosMinimumOperatingSystem resource type"
 description: "Contains properties of the minimum operating system required for an iOS mobile app."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -50,6 +50,7 @@ Here is a JSON representation of the resource.
   "v14_0": true
 }
 ```
+
 
 
 

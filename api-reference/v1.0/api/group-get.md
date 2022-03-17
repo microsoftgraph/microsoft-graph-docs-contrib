@@ -15,6 +15,8 @@ Get the properties and relationships of a group object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
+>**Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -58,7 +60,6 @@ Return all default properties.
 
 The following is an example of a GET request. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -67,24 +68,6 @@ The following is an example of a GET request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 The following is an example of the response. It includes only the default properties.
@@ -102,32 +85,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/b320ee12-b1cd-4cca-b648-a437be61c5cd/Microsoft.DirectoryServices.Group",
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-22T00:51:37Z",
+    "createdDateTime": "2021-09-13T10:07:01Z",
     "creationOptions": [],
     "description": "Self help community for library",
     "displayName": "Library Assist",
+    "expirationDateTime": "2022-01-11T10:07:01Z",
     "groupTypes": [
         "Unified"
     ],
     "isAssignableToRole": null,
-    "mail": "library2@contoso.com",
+    "mail": "library@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
     "proxyAddresses": [
-        "smtp:library7423@contoso.com",
-        "SMTP:library2@contoso.com"
+        "SPO:SPO_0dbffe23-f6fb-4478-adcd-880daf88bb12@SPO_84841066-274d-4ec0-a5c1-276be684bdd3",
+        "SMTP:library@contoso.com"
     ],
-    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "renewedDateTime": "2021-09-13T10:07:01Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1306860066-1319449225-59104187-458188010",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
 }
@@ -166,6 +160,14 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-non-default-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-non-default-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-non-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

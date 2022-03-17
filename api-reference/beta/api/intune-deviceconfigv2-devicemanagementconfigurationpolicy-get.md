@@ -2,7 +2,7 @@
 title: "Get deviceManagementConfigurationPolicy"
 description: "Read properties and relationships of the deviceManagementConfigurationPolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 920
 
 {
   "value": {
@@ -72,7 +72,7 @@ Content-Length: 918
     "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
     "name": "Name value",
     "description": "Description value",
-    "platforms": "macOS",
+    "platforms": "android",
     "technologies": "mdm",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -92,6 +92,7 @@ Content-Length: 918
   }
 }
 ```
+
 
 
 

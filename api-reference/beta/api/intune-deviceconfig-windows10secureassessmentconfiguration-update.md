@@ -2,7 +2,7 @@
 title: "Update windows10SecureAssessmentConfiguration"
 description: "Update the properties of a windows10SecureAssessmentConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -175,6 +175,7 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
+
 
 
 

@@ -1,146 +1,146 @@
 {
   "changelog": [
     {
-        "ChangeList": [
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Property",
-                "ChangedApiName": "state",
-                "ChangeType": "Addition",
-                "Description": "Added the **state** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta) resource.",
-                "Target": "externalConnection"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalGroup",
-                "ChangeType": "Addition",
-                "Description": "Added the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalgroup?view=graph-rest-beta) resource.",
-                "Target": "externalGroup"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalGroupMember",
-                "ChangeType": "Addition",
-                "Description": "Added the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
-                "Target": "externalGroupMember"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "drive,list,listItem,site",
-                "ChangeType": "Addition",
-                "Description": "Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#scope-search-based-on-entity-types).",
-                "Target": "more details here"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Property",
-                "ChangedApiName": "selected properties",
-                "ChangeType": "Addition",
-                "Description": "Identify [selected properties](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#get-selected-properties) to return in search results.",
-                "Target": "selected properties"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "sortProperties",
-                "ChangeType": "Addition",
-                "Description": "[Sort](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta\u0026preserve-view=true) resource.",
-                "Target": "Sort,searchRequest"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "aggregations,aggregationFilters,searchRequest",
-                "ChangeType": "Addition",
-                "Description": "[Refine results using aggregations](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.",
-                "Target": "Refine results using aggregations"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Resource",
-                "ChangedApiName": "more than one connection",
-                "ChangeType": "Addition",
-                "Description": "Query external data across [more than one connection](search-concept-custom-types.md).",
-                "Target": "more than one connection"
-            },
-            {
-                "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-                "ApiChange": "Property",
-                "ChangedApiName": "more details",
-                "ChangeType": "Change",
-                "Description": "Some properties in the request and response have been renamed and are deprecated.  See [more details](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#schema-change-deprecation-warning) about the deprecation.",
-                "Target": "more details"
-            }
-        ],
-        "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2020-09-01T00:00:00",
-        "WorkloadArea": "Search",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalgroup?view=graph-rest-beta) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroupMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
+          "Target": "externalGroupMember"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "drive,list,listItem,site",
+          "ChangeType": "Addition",
+          "Description": "Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#scope-search-based-on-entity-types).",
+          "Target": "more details here"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "selected properties",
+          "ChangeType": "Addition",
+          "Description": "Identify [selected properties](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#get-selected-properties) to return in search results.",
+          "Target": "selected properties"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sortProperties",
+          "ChangeType": "Addition",
+          "Description": "[Sort](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "Sort,searchRequest"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregations,aggregationFilters,searchRequest",
+          "ChangeType": "Addition",
+          "Description": "[Refine results using aggregations](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.",
+          "Target": "Refine results using aggregations"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "more than one connection",
+          "ChangeType": "Addition",
+          "Description": "Query external data across [more than one connection](search-concept-custom-types.md).",
+          "Target": "more than one connection"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "more details",
+          "ChangeType": "Change",
+          "Description": "Some properties in the request and response have been renamed and are deprecated.  See [more details](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#schema-change-deprecation-warning) about the deprecation.",
+          "Target": "more details"
+        }
+      ],
+      "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
-        "ChangeList": [
-            {
-                "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
-                "ApiChange": "Property",
-                "ChangedApiName": "aliases,isRefinable,labels",
-                "ChangeType": "Addition",
-                "Description": "Added the **aliases**, **isRefinable**, and **labels** properties to the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) entity.",
-                "Target": "property"
-            },
-            {
-                "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
-                "ApiChange": "Resource",
-                "ChangedApiName": "get externalItem",
-                "ChangeType": "Addition",
-                "Description": "Added the [get externalItem](https://docs.microsoft.com/en-us/graph/api/externalitem-get?view=graph-rest-beta) operation.",
-                "Target": "get externalItem"
-            }
-        ],
-        "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2020-06-01T00:00:00",
-        "WorkloadArea": "Search",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+          "ApiChange": "Property",
+          "ChangedApiName": "aliases,isRefinable,labels",
+          "ChangeType": "Addition",
+          "Description": "Added the **aliases**, **isRefinable**, and **labels** properties to the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) entity.",
+          "Target": "property"
+        },
+        {
+          "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get externalItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [get externalItem](https://docs.microsoft.com/en-us/graph/api/externalitem-get?view=graph-rest-beta) operation.",
+          "Target": "get externalItem"
+        }
+      ],
+      "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
-        "ChangeList": [
-            {
-                "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalFile",
-                "ChangeType": "Change",
-                "Description": "The [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.",
-                "Target": "externalFile"
-            },
-            {
-                "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
-                "ApiChange": "Property",
-                "ChangedApiName": "content,properties",
-                "ChangeType": "Change",
-                "Description": "The [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
-                "Target": "externalItem"
-            },
-            {
-                "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
-                "ApiChange": "Resource",
-                "ChangedApiName": "Retry-After",
-                "ChangeType": "Change",
-                "Description": "Operations on [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
-                "Target": "externalItem"
-            }
-        ],
-        "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2020-03-01T00:00:00",
-        "WorkloadArea": "Search",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalFile",
+          "ChangeType": "Change",
+          "Description": "The [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.",
+          "Target": "externalFile"
+        },
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Property",
+          "ChangedApiName": "content,properties",
+          "ChangeType": "Change",
+          "Description": "The [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Retry-After",
+          "ChangeType": "Change",
+          "Description": "Operations on [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
+          "Target": "externalItem"
+        }
+      ],
+      "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -185,286 +185,286 @@
       "SubArea": ""
     },
     {
-        "ChangeList": [
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Property",
-                "ChangedApiName": "authorizedAppIds",
-                "ChangeType": "Change",
-                "Description": "Renamed the **authorizedApps** property to **authorizedAppIds**. See [configuration](https://docs.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource. Moved this resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "configuration"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "connectionOperation",
-                "ChangeType": "Change",
-                "Description": "Moved the [connectionOperation](https://docs.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "connectionOperation"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalConnection",
-                "ChangeType": "Change",
-                "Description": "Moved the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalConnection"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalGroup",
-                "ChangeType": "Change",
-                "Description": "Moved the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalGroup"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalGroupMember",
-                "ChangeType": "Change",
-                "Description": "Moved the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalGroupMember?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalGroupMember"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalItem",
-                "ChangeType": "Change",
-                "Description": "Moved the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalItem?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalItem"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "schema",
-                "ChangeType": "Change",
-                "Description": "Moved the [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "schema"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "acl",
-                "ChangeType": "Change",
-                "Description": "Moved the [acl](https://docs.microsoft.com/en-us/graph/api/resources/acl?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "acl"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "configuration",
-                "ChangeType": "Change",
-                "Description": "Moved the [configuration](https://docs.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "configuration"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "externalItemContent",
-                "ChangeType": "Change",
-                "Description": "Moved the [externalItemContent](https://docs.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalItemContent"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "properties",
-                "ChangeType": "Change",
-                "Description": "Moved the [properties](https://docs.microsoft.com/en-us/graph/api/resources/properties?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "properties"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "property",
-                "ChangeType": "Change",
-                "Description": "Moved the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
-                "Target": "property"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "string",
-                "ChangeType": "Change",
-                "Description": "Renamed `String` member to `string` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "int64",
-                "ChangeType": "Change",
-                "Description": "Renamed the `Int64` member to `int64` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "double",
-                "ChangeType": "Change",
-                "Description": "Renamed the `Double` member to `double` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "dateTime",
-                "ChangeType": "Change",
-                "Description": "Renamed the `DateTime` member to `dateTime` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "boolean",
-                "ChangeType": "Change",
-                "Description": "Renamed the `Boolean` member to `boolean` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "stringCollection",
-                "ChangeType": "Change",
-                "Description": "Renamed the `StringCollection` member to `stringCollection` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "int64Collection",
-                "ChangeType": "Change",
-                "Description": "Renamed the `Int64Collection` member to `int64Collection` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "doubleCollection",
-                "ChangeType": "Change",
-                "Description": "Renamed the `DoubleCollection` member to `doubleCollection` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Member",
-                "ChangedApiName": "dateTimeCollection",
-                "ChangeType": "Change",
-                "Description": "Renamed the `DateTimeCollection` member to `dateTimeCollection` in the **propertyType** enumeration.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "accessType",
-                "ChangeType": "Change",
-                "Description": "Moved the **accessType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "accessType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "aclType",
-                "ChangeType": "Change",
-                "Description": "Moved the **aclType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "aclType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "connectionOperationStatus",
-                "ChangeType": "Change",
-                "Description": "Moved the **connectionOperationStatus** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "connectionOperationStatus"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "connectionState",
-                "ChangeType": "Change",
-                "Description": "Moved the **connectionState** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "connectionState"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "externalGroupMemberType",
-                "ChangeType": "Change",
-                "Description": "Moved the **externalGroupMemberType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalGroupMemberType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "externalItemContentType",
-                "ChangeType": "Change",
-                "Description": "Moved the **externalItemContentType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "externalItemContentType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "identitySourceType",
-                "ChangeType": "Change",
-                "Description": "Moved the **identitySourceType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "identitySourceType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "label",
-                "ChangeType": "Change",
-                "Description": "Moved the **label** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "label"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Enum type",
-                "ChangedApiName": "propertyType",
-                "ChangeType": "Change",
-                "Description": "Moved the **propertyType** enumeration type to the microsoft.graph.externalConnectors namespace.",
-                "Target": "propertyType"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Property",
-                "ChangedApiName": "isContent",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **isContent** property from the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
-                "Target": "property"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Property",
-                "ChangedApiName": "error",
-                "ChangeType": "Change",
-                "Description": "Changed the type of the **error** property in the [connectionOperation](https://docs.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to be of [publicError](https://docs.microsoft.com/en-us/graph/api/resources/publicerror?view=graph-rest-beta) type instead.",
-                "Target": "connectionOperation"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "errorDetail",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **errorDetail** resource type.",
-                "Target": "errorDetail"
-            },
-            {
-                "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-                "ApiChange": "Resource",
-                "ChangedApiName": "innerErrorDetail",
-                "ChangeType": "Deletion",
-                "Description": "Removed the **innerErrorDetail** resource type.",
-                "Target": "innerErrorDetail"
-            }
-        ],
-        "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
-        "Cloud": "prd",
-        "Version": "beta",
-        "CreatedDateTime": "2021-07-16T00:00:00",
-        "WorkloadArea": "Search",
-        "SubArea": ""
+      "ChangeList": [
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizedAppIds",
+          "ChangeType": "Change",
+          "Description": "Renamed the **authorizedApps** property to **authorizedAppIds**. See [configuration](https://docs.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource. Moved this resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "configuration"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectionOperation",
+          "ChangeType": "Change",
+          "Description": "Moved the [connectionOperation](https://docs.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "connectionOperation"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalConnection",
+          "ChangeType": "Change",
+          "Description": "Moved the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroup",
+          "ChangeType": "Change",
+          "Description": "Moved the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroupMember",
+          "ChangeType": "Change",
+          "Description": "Moved the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalGroupMember?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalGroupMember"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalItem",
+          "ChangeType": "Change",
+          "Description": "Moved the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalItem?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schema",
+          "ChangeType": "Change",
+          "Description": "Moved the [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "schema"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acl",
+          "ChangeType": "Change",
+          "Description": "Moved the [acl](https://docs.microsoft.com/en-us/graph/api/resources/acl?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "acl"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configuration",
+          "ChangeType": "Change",
+          "Description": "Moved the [configuration](https://docs.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "configuration"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalItemContent",
+          "ChangeType": "Change",
+          "Description": "Moved the [externalItemContent](https://docs.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalItemContent"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "properties",
+          "ChangeType": "Change",
+          "Description": "Moved the [properties](https://docs.microsoft.com/en-us/graph/api/resources/properties?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "properties"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "property",
+          "ChangeType": "Change",
+          "Description": "Moved the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Target": "property"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "string",
+          "ChangeType": "Change",
+          "Description": "Renamed `String` member to `string` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "int64",
+          "ChangeType": "Change",
+          "Description": "Renamed the `Int64` member to `int64` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "double",
+          "ChangeType": "Change",
+          "Description": "Renamed the `Double` member to `double` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "dateTime",
+          "ChangeType": "Change",
+          "Description": "Renamed the `DateTime` member to `dateTime` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "boolean",
+          "ChangeType": "Change",
+          "Description": "Renamed the `Boolean` member to `boolean` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "stringCollection",
+          "ChangeType": "Change",
+          "Description": "Renamed the `StringCollection` member to `stringCollection` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "int64Collection",
+          "ChangeType": "Change",
+          "Description": "Renamed the `Int64Collection` member to `int64Collection` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "doubleCollection",
+          "ChangeType": "Change",
+          "Description": "Renamed the `DoubleCollection` member to `doubleCollection` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Member",
+          "ChangedApiName": "dateTimeCollection",
+          "ChangeType": "Change",
+          "Description": "Renamed the `DateTimeCollection` member to `dateTimeCollection` in the **propertyType** enumeration.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessType",
+          "ChangeType": "Change",
+          "Description": "Moved the **accessType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "accessType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "aclType",
+          "ChangeType": "Change",
+          "Description": "Moved the **aclType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "aclType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "connectionOperationStatus",
+          "ChangeType": "Change",
+          "Description": "Moved the **connectionOperationStatus** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "connectionOperationStatus"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "connectionState",
+          "ChangeType": "Change",
+          "Description": "Moved the **connectionState** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "connectionState"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "externalGroupMemberType",
+          "ChangeType": "Change",
+          "Description": "Moved the **externalGroupMemberType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalGroupMemberType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "externalItemContentType",
+          "ChangeType": "Change",
+          "Description": "Moved the **externalItemContentType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "externalItemContentType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "identitySourceType",
+          "ChangeType": "Change",
+          "Description": "Moved the **identitySourceType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "identitySourceType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "label",
+          "ChangeType": "Change",
+          "Description": "Moved the **label** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "label"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "propertyType",
+          "ChangeType": "Change",
+          "Description": "Moved the **propertyType** enumeration type to the microsoft.graph.externalConnectors namespace.",
+          "Target": "propertyType"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "isContent",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isContent** property from the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Target": "property"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "error",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **error** property in the [connectionOperation](https://docs.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to be of [publicError](https://docs.microsoft.com/en-us/graph/api/resources/publicerror?view=graph-rest-beta) type instead.",
+          "Target": "connectionOperation"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "errorDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **errorDetail** resource type.",
+          "Target": "errorDetail"
+        },
+        {
+          "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "innerErrorDetail",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **innerErrorDetail** resource type.",
+          "Target": "innerErrorDetail"
+        }
+      ],
+      "Id": "36eb4864-7899-11eb-8d30-85f45032d4a1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-16T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -721,6 +721,98 @@
       "CreatedDateTime": "2021-07-19T17:11:41.609Z",
       "WorkloadArea": "Search",
       "SubArea": ""
-    }
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Property",
+            "ChangedApiName": "connectorId",
+            "ChangeType": "Addition",
+            "Description": "Added the **connectorId** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Property",
+            "ChangedApiName": "searchSettings",
+            "ChangeType": "Addition",
+            "Description": "Added the **searchSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "displayTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [displayTemplate](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-displayTemplate?view=graph-rest-beta) resource type.",
+            "Target": "displayTemplate"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "propertyRule",
+            "ChangeType": "Addition",
+            "Description": "Added the [propertyRule](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta) resource type.",
+            "Target": "propertyRule"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Resource",
+            "ChangedApiName": "searchSettings",
+            "ChangeType": "Addition",
+            "Description": "Added the [searchSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-searchSettings?view=graph-rest-beta) resource type.",
+            "Target": "searchSettings"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "binaryOperator",
+            "ChangeType": "Addition",
+            "Description": "Added the **binaryOperator** enumeration type.",
+            "Target": "binaryOperator"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "ruleOperation",
+            "ChangeType": "Addition",
+            "Description": "Added the **ruleOperation** enumeration type.",
+            "Target": "ruleOperation"
+          },
+          {
+            "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "groups",
+            "ChangeType": "Addition",
+            "Description": "Added the **groups** relationship to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-1.0) resource.",
+            "Target": "externalConnection"
+          }
+      ],
+      "Id": "f7d67d61-f565-11eb-b6a8-8203ca0139f1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-10-05T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
+          "ApiChange": "Method",
+          "ChangedApiName": "schema",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://docs.microsoft.com/en-us/graph/api/externalconnectors-schema-update?view=graph-rest-beta) method to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource type.",
+          "Target": "schema"
+        }
+      ],
+      "Id": "b0cf779b-1461-4e8e-afd7-2896bf5bfd29",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-12-01T23:34:36.128237Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }    
   ]
 }

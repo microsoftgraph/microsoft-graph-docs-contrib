@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var securityEnabledOnly = true;
+var securityEnabledOnly = false;
 
 await graphClient.DirectoryObjects["{directoryObject-id}"]
 	.GetMemberGroups(securityEnabledOnly)

@@ -15,6 +15,8 @@ Change notifications enable you to subscribe to changes (create and delete) in c
 
 To get change notifications for membership changes in any chat across the tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
+
 ### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
@@ -53,7 +55,7 @@ To get change notifications for membership changes in a particular chat, subscri
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example
 

@@ -14,7 +14,7 @@ var appManagementPolicy = new AppManagementPolicy
 	}
 };
 
-await graphClient.Applications["{application-id}"].AppManagementPolicies.References
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppManagementPolicies.References
 	.Request()
 	.AddAsync(appManagementPolicy);
 

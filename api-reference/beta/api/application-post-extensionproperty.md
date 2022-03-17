@@ -68,14 +68,14 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/extensionProperties
+POST https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties
 Content-type: application/json
 
 {
-    "name": "extensionName",
-    "dataType": "string",
+    "name": "jobGroup",
+    "dataType": "String",
     "targetObjects": [
-    	"Application"
+        "User"
     ]
 }
 ```
@@ -93,6 +93,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-extensionproperty-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-extensionproperty-from-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,14 +121,15 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('fd918e4b-c821-4efb-b50a-5eddd23afc6f')/extensionProperties/$entity",
+    "id": "da38c7b1-133e-4a79-abcd-e2fd586ce621",
     "deletedDateTime": null,
-    "appDisplayName": "Display name",
-    "name": "extension_b3efaf8f68a44275abcff28ef86b2ee3_extensionName",
+    "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
     "isSyncedFromOnPremises": false,
+    "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [
-    	"Application"
+        "User"
     ]
 }
 ```

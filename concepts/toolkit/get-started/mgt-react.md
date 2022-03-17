@@ -88,7 +88,12 @@ import { MgtTemplateProps } from '@microsoft/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
+  return <div>
+    {event.subject}<br />
+    {event.attendees
+      .map((attendee: any) => attendee.emailAddress.name)
+      .join(', ')}
+  </div>;
 };
 ```
 

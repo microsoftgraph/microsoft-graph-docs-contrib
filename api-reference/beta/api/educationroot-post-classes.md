@@ -55,7 +55,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/classes
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "Health Level 1",
@@ -83,6 +82,14 @@ Content-length: 224
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationroot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationclass-from-educationroot-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,7 +106,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 224
 
 {
     "id": "11019",

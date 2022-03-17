@@ -2,7 +2,7 @@
 title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -117,6 +117,7 @@ Content-Length: 638
   "version": "Version value"
 }
 ```
+
 
 
 

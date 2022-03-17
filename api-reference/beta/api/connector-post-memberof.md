@@ -53,7 +53,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 Content-type: application/json
-Content-length: 99
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
@@ -75,6 +74,10 @@ Content-length: 99
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectorgroup-from-connector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connectorgroup-from-connector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
@@ -88,7 +91,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 119
 
 {
   "id": "id-value",

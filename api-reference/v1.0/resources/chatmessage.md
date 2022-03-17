@@ -34,6 +34,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |**Chat messages**| | |
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
+|[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, that includes 1:1 chats, group chats, and meeting chats. |
+|[Get all channel messages](../api/channel-getallmessages.md)|[channel](channel.md) collection | Get all messages from all channels that a user is a participant in. |
 |[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
 |[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
@@ -67,6 +69,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |chatId|string|If the message was sent in a chat, represents the identity of the chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |webUrl|string|Read-only. Link to the message in Microsoft Teams.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only. If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 
 ## Relationships
 
@@ -121,7 +124,10 @@ The following is a JSON representation of the resource.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

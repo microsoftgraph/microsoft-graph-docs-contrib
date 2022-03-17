@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | AuditLog.Read.All and Directory.Read.All |
 
 > [!IMPORTANT]
-> This API has a [known issue](/graph/known-issues#azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
+> This API has a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) and currently requires consent to both the **AuditLog.Read.All** and **Directory.Read.All** permissions.
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 |[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-For general information, see [OData query parameters](/graph/query_parameters).
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Attributes supported by the $filter parameter
 
@@ -117,6 +117,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-provisioningobjectsummary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -270,6 +278,14 @@ GET https://graph.microsoft.com/v1.0/auditLogs/provisioning
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-error-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-provisioningobjectsummary-error-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

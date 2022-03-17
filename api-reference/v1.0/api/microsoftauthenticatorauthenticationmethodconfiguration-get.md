@@ -21,7 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the Global admin role. For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Global Reader
+* Authentication Policy Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -74,6 +78,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 [!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,11 +99,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
-    "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String"
-  }
+    "id": "MicrosoftAuthenticator",
+    "state": "disabled",
+    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "authenticationMode": "any"
+        }
+    ]
 }
 ```
 

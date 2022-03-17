@@ -57,7 +57,6 @@ The following example shows the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

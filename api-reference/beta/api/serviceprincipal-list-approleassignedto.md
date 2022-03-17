@@ -19,6 +19,8 @@ For example, if the resource service principal is the service principal for the 
 
 If the resource service principal is an application that has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
 
+>**Note** This request might have replication delays for app role assignments that were recently granted or removed.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,6 +86,14 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-approleassignedto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-approleassignedto-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-approleassignedto-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

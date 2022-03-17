@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleManagementPolicyRule"
 description: "Read the properties and relationships of an unifiedRoleManagementPolicyRule object."
-author: "shauliu1"
+author: "carolinetempleton"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -74,6 +74,14 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRol
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

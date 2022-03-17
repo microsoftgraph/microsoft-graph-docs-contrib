@@ -113,6 +113,20 @@ Namespace: microsoft.graph.externalConnectors
 | dateTimeCollection
 | unknownFutureValue
 
+### ruleOperation values 
+
+|Member|
+|:---|
+|null|
+|equals|
+|notEquals|
+|contains|
+|notContains|
+|lessThan|
+|greaterThan|
+|startsWith|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

@@ -2,7 +2,7 @@
 title: "windowsDeliveryOptimizationMode enum type"
 description: "Delivery optimization mode for peer distribution"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,7 +25,6 @@ Delivery optimization mode for peer distribution
 |httpWithInternetPeering|4|HTTP blended with Internet peering|
 |simpleDownload|99|Simple download mode with no peering|
 |bypassMode|100|Bypass mode. Do not use Delivery Optimization and use BITS instead|
-
 
 
 

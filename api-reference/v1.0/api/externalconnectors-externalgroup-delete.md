@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}/groups/{externalGroupId}
+DELETE /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

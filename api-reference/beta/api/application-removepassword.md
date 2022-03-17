@@ -44,7 +44,7 @@ POST /applications/{id}/removePassword
 
 | Property	| Type | Description|
 |:----------|:-----|:-----------|
-| keyId     | GUID | The unique identifier for the password. Required. |
+| keyId     | Guid | The unique identifier for the password. Required. |
 
 ## Response
 
@@ -86,6 +86,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-removepassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-removepassword-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-removepassword-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -33,11 +33,11 @@ $GroupReadAll = @{
 # Requires an admin
 if ($TenantId)
 {
-  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
+  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read" -TenantId $TenantId
 }
 else
 {
-  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read" -TenantId $TenantId
+  Connect-MgGraph -Scopes "Application.ReadWrite.All User.Read"
 }
 
 # Get context for access to tenant ID

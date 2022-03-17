@@ -2,7 +2,7 @@
 title: "Create androidScepCertificateProfile"
 description: "Create a new androidScepCertificateProfile object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -202,6 +202,7 @@ Content-Length: 1919
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
 title: drive resource type
-description: drive resource representing a user's OneDrive or a document library in SharePoint
+description: The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
+
 # drive resource type
 
 Namespace: microsoft.graph
 
-The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
+The top-level object that represents a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
@@ -42,7 +43,7 @@ Users without a OneDrive license may not have a default drive available.
 | name                 | string                        | The name of the item. Read-write.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Optional. The user account that owns the drive. Read-only.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Optional. Information about the drive's storage space quota. Read-only.                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only.                                                                                                                                                         |
+| sharepointIds        | [sharepointIds][]             | Returns identifiers useful for SharePoint REST compatibility. Read-only. This property is not returned by default and must be selected using the `$select` query parameter.  |
 | system               | [systemFacet][]               | If present, indicates that this is a system-managed drive. Read-only.
 | webUrl               | string (url)                  | URL that displays the resource in the browser. Read-only.                                                                                                                                                                        |
 
@@ -63,7 +64,7 @@ Users without a OneDrive license may not have a default drive available.
 
 ## JSON representation
 
-Here is a JSON representation of a Drive resource.
+The following is a JSON representation of this resource.
 
 The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
 
@@ -111,7 +112,6 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 }
 ```
-
 
 [bundle]: bundle.md
 [driveItem]: driveItem.md

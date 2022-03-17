@@ -1,6 +1,6 @@
 ---
 title: "Remove group owner"
-description: "Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property."
+description: "Use this API to remove an owner from a Microsoft 365 group or a security group through the owners navigation property."
 ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to remove an owner from a Microsoft 365 group, a security group, or a mail-enabled security group through the owners navigation property. Once owners are assigned to a group, the last owner of the group cannot be removed. 
+Use this API to remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > **Note:** For issues encountered when removing owner of a group associated with a [team](/graph/api/resources/team.md), see [Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
@@ -31,9 +31,9 @@ DELETE /groups/{id}/owners/{id}/$ref
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

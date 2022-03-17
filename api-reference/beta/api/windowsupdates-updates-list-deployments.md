@@ -1,7 +1,7 @@
 ---
 title: "List deployments"
 description: "Get a list of deployment objects and their properties."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -75,6 +75,14 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-deployment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-deployment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

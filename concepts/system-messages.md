@@ -12,10 +12,10 @@ ms.custom: scenarios:getting-started
 Microsoft Teams generates system messages for events such as members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
 
-Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
+Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
 
-System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) objects.
+System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) objects.
 In this case, the **messageType** property is set to `systemEventMessage` and the **eventDetail** property provides the event details.
 
 
@@ -23,12 +23,12 @@ In this case, the **messageType** property is set to `systemEventMessage` and th
 
 The following GET operations support system messages:
 
-- GET /teams/{team-id}/channel/{channel-id}/messages
-- GET /teams/{team-td}/channel/{channel-id}/messages/{message-id}
+- GET /teams/{team-id}/channels/{channel-id}/messages
+- GET /teams/{team-td}/channels/{channel-id}/messages/{message-id}
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 
 ## Supported change notifications
 
@@ -109,6 +109,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -169,6 +170,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -220,6 +222,7 @@ The following JSON examples show the responses for each supported event type.
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -265,6 +268,7 @@ The following JSON examples show the responses for each supported event type.
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -319,6 +323,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -367,6 +372,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -415,6 +421,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -463,6 +470,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -511,6 +519,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -558,6 +567,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -596,6 +606,7 @@ The following JSON examples show the responses for each supported event type.
   "locale": "en-us",
   "webUrl": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "from": null,
   "body": {
@@ -650,6 +661,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -696,6 +708,7 @@ The following JSON examples show the responses for each supported event type.
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -749,6 +762,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -807,6 +821,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -850,6 +865,7 @@ The following JSON examples show the responses for each supported event type.
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -898,6 +914,7 @@ The following JSON examples show the responses for each supported event type.
   "webUrl": null,
   "from": null,
   "channelIdentity": null,
+  "onBehalfOf": null,
   "policyViolation": null,
   "body": {
     "contentType": "html",
@@ -954,6 +971,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
     "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1001,6 +1019,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1048,6 +1067,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1097,6 +1117,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1145,6 +1166,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1192,6 +1214,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1239,6 +1262,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1287,6 +1311,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1335,6 +1360,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1383,6 +1409,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "97a5ecc4-300b-4c5a-9f87-ca9a4969b3e0",
     "channelId": "19:d0891bf6638f48e8be186e2e92b4a554@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],
@@ -1431,6 +1458,7 @@ The following JSON examples show the responses for each supported event type.
     "teamId": "5e91c375-f755-4882-880e-f1b9322faa87",
     "channelId": "19:318c8c65f0794971a1a9b5e3413d77de@thread.tacv2"
   },
+  "onBehalfOf": null,
   "attachments": [],
   "mentions": [],
   "reactions": [],

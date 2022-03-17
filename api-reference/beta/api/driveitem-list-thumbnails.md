@@ -12,6 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
@@ -55,7 +56,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## Optional query parameters
 
-This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to customize the response.
 
 Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
 This is currently only supported on OneDrive Personal.
@@ -317,7 +318,7 @@ For example if your app needs thumbnails that are 300x400, it can request that s
 <!-- { "blockType": "request","name": "get-thumbnail-custom-size", "scopes": "files.read" } -->
 
 ```msgraph-interactive
-GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
+GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
@@ -350,7 +351,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "0",
-      "c300x400_Crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
+      "c300x400_crop": { "height": 300, "width": 400, "url": "https://sn3302files.onedrive.com/123"},
     }
   ]
 }
@@ -363,7 +364,7 @@ You can specify the following options after the size of the thumbnail requested:
 | Thumbnail identifier | Resolution             | Aspect ratio | Description                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | c300x400             | Bounded by 300x400 box | Original     | Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio                                                                 |
-| c300x400_Crop        | 300x400                | Cropped      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
+| c300x400_crop        | 300x400                | Cropped      | Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box. |
 
 **Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.
 In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.

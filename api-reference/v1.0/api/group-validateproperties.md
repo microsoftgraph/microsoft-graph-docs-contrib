@@ -74,7 +74,6 @@ This is an example of a successful validation request.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 132
 
 {
   "displayName": "Myprefix_test_mysuffix",
@@ -98,6 +97,14 @@ Content-length: 132
 [!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-validateproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-validateproperties-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -117,7 +124,6 @@ This is an example of a request with validation errors.
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
-Content-length: 128
 
 {
   "displayName": "MyPrefix_test_mysuffix",
@@ -129,7 +135,6 @@ Content-length: 128
 ```http
 HTTP/1.1 422
 Content-type: application/json
-Content-length: 223
 
 {
   "error": {

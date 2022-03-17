@@ -36,7 +36,7 @@ GET /groups
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 group objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
@@ -93,6 +93,14 @@ GET https://graph.microsoft.com/beta/groups
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-groups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,6 +206,8 @@ Content-type: application/json
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors_count"
@@ -243,6 +253,8 @@ Content-type: application/json
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -275,6 +287,8 @@ Content-type: text/plain
 #### Request
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
   "blockType": "request",
@@ -317,6 +331,8 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
   "blockType": "request",
@@ -361,6 +377,8 @@ Content-type: application/json
 
 The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
+
 <!-- {
   "blockType": "request",
   "name": "get_video_count"
@@ -404,12 +422,13 @@ Content-type: application/json
 }
 ```
 
-### Example 7: List dynamic groups, filtered by enabled membershipRuleProcessingState
+### Example 7: List dynamic groups
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request that filters by the **membershipRuleProcessingState** to retrieve dynamic groups. You may also filter by the **groupTypes** properties (that is, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request uses the `not` operator of the `$filter` query parameter. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+>**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -417,7 +436,7 @@ The following is an example of the request.
   "name": "get_enabled_dynamic_groups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
+GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'&$count=true&$select=id,membershipRule,membershipRuleProcessingState
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
@@ -433,6 +452,14 @@ GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membership
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-enabled-dynamic-groups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-enabled-dynamic-groups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-enabled-dynamic-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -453,21 +480,113 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
-   "value":[
-      {
-         "id":"1cdf9c18-a7dc-46b1-b47f-094d5656376d",
-         "membershipRule":"user.accountEnabled -eq false",
-         "membershipRuleProcessingState":"On",
-         "membershipRuleProcessingStatus":{
-            "status":"Succeeded",
-            "lastMembershipUpdated":"2020-09-14T00:00:00Z",
-            "errorMessage":null
-         }
-      }
-   ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState)",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b/Microsoft.DirectoryServices.Group",
+            "id": "e9f4a701-e7b5-4401-a0ca-5bd5f3cdcf4b",
+            "membershipRule": "(user.userType -contains \"Guest\" and user.accountEnabled -eq true) or (user.city -eq \"Nairobi\")",
+            "membershipRuleProcessingState": "On"
+        }
+    ]
 }
 ```
+
+
+### Example 8: List any groups with any licenses
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_with_licenses"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=assignedLicenses/any()
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-with-licenses-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-with-licenses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-with-licenses-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-with-licenses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-groups-with-licenses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-with-licenses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,assignedLicenses)",
+    "value": [
+        {
+            "id": "5caf712c-8483-4b3d-8384-d8da988c0ca4",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        },
+        {
+            "id": "aae8ec2a-5a08-4013-ae70-fafbb5c20de1",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "18181a46-0d4e-45cd-891e-60aabd171b4e"
+                }
+            ]
+        },
+        {
+            "id": "e55bdaa0-e104-479a-979e-b0457fff6380",
+            "assignedLicenses": [
+                {
+                    "disabledPlans": [
+                        "7547a3fe-08ee-4ccb-b430-5077c5041653"
+                    ],
+                    "skuId": "6fd2c87f-b296-42f0-b197-1e91e994b900"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

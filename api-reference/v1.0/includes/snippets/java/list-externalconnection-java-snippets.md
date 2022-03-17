@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ExternalConnectionCollectionPage connections = graphClient.connections()
+ExternalConnectionCollectionPage connections = graphClient.external().connections()
 	.buildRequest()
 	.get();
 

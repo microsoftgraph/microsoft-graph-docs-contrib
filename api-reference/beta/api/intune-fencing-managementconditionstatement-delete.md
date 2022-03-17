@@ -2,7 +2,7 @@
 title: "Delete managementConditionStatement"
 description: "Deletes a managementConditionStatement."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

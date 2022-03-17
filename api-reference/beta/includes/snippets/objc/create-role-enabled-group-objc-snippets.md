@@ -21,7 +21,6 @@ NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
 [group setMailEnabled: true];
 [group setSecurityEnabled: true];
 [group setMailNickname:@"contosohelpdeskadministrators"];
-[group setVisibility:@"Private"];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

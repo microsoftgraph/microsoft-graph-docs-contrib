@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents the audit property. This shows the edited property name, the old value, and the new value.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

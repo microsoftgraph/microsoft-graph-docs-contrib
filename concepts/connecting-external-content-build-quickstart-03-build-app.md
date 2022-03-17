@@ -424,7 +424,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {
-        private class MicrosoftGraphServiceClient _microsoftGraphClient;
+        private GraphServiceClient _microsoftGraphClient;
 
         public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
         {
@@ -434,7 +434,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
             var httpProvider = new HttpProvider(serializer);
 
             // Initialize the Microsoft Graph client
-            _microsoftGraphClient = new MicrosoftGraphServiceClient(authProvider, httpProvider);
+            _microsoftGraphClient = new GraphServiceClient(authProvider, httpProvider);
         }
     }
 }

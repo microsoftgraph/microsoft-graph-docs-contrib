@@ -1,7 +1,7 @@
 ---
 title: "Update officeClientConfigurationAssignment"
 description: "Update the properties of a officeClientConfigurationAssignment object."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: apiPageType

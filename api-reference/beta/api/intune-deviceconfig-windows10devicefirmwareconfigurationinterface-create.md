@@ -2,7 +2,7 @@
 title: "Create windows10DeviceFirmwareConfigurationInterface"
 description: "Create a new windows10DeviceFirmwareConfigurationInterface object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -177,6 +177,7 @@ Content-Length: 1569
   "simultaneousMultiThreading": "enabled"
 }
 ```
+
 
 
 

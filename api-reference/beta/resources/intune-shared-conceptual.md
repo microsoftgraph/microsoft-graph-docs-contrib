@@ -24,6 +24,7 @@ The following Graph resources are shared between Intune workflows:
 - [Android enterprise always on VPN package type](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Android managed app protection](intune-shared-androidmanagedappprotection.md)
 - [Android managed store app assignment settings](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Android managed store auto update mode](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Certificate destination store](intune-shared-certificatedestinationstore.md)
 - [Certificate store](intune-shared-certificatestore.md)
 - [Certificate validity period scale](intune-shared-certificatevalidityperiodscale.md)

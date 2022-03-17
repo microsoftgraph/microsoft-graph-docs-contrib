@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Schema schema = graphClient.connections("contosohr").schema()
+Schema schema = graphClient.external().connections("contosohr").schema()
 	.buildRequest()
 	.get();
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 A team in Microsoft Teams is a collection of [channel](channel.md) objects.
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a [group](../resources/group.md).
+Every team is associated with a [Microsoft 365 group](../resources/group.md).
 The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`.
 For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
@@ -25,12 +25,13 @@ For more information about working with groups and members in teams, see [Use th
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create team](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
-|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing Microsoft 365 group.|
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of members in the team.|
 |[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
+|[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
 |[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
 |[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
@@ -71,13 +72,13 @@ Instance attributes are properties with special behaviors. These properties are 
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|string|Indicates that the team is in migration state and is currently being used for migration purposes. It accepts one value: `migration`. **Note**: In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
 
-For a POST request example, see [Request (create team in migration state)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+For a POST request example, see [Request (create team in migration state)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## Relationships
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 

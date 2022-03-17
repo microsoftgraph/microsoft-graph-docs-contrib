@@ -2,7 +2,7 @@
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -72,6 +72,9 @@ The following table shows the properties that are required when you create the [
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
+|crossProfilePoliciesAllowCopyPaste|Boolean|Indicates whether or not text copied from one profile (personal or work) can be pasted in the other.|
+|crossProfilePoliciesAllowDataSharing|[androidDeviceOwnerCrossProfileDataSharing](../resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)|Indicates whether data from one profile (personal or work) can be shared with apps in the other profile. Possible values are: `notConfigured`, `crossProfileDataSharingBlocked`, `dataSharingFromWorkToPersonalBlocked`, `crossProfileDataSharingAllowed`, `unkownFutureValue`.|
+|crossProfilePoliciesShowWorkContactsInPersonalProfile|Boolean|Indicates whether or not contacts stored in work profile are shown in personal profile contact searches/incoming calls.|
 |microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
 |microsoftLauncherCustomWallpaperEnabled|Boolean|Indicates whether or not to configure the wallpaper on the targeted devices.|
 |microsoftLauncherCustomWallpaperImageUrl|String|Indicates the URL for the image file to use as the wallpaper on the targeted devices.|
@@ -123,8 +126,8 @@ The following table shows the properties that are required when you create the [
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
-|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 1 to 9999999|
-|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 1 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
+|kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
 |kioskModeManagedHomeScreenPinRequired|Boolean|Whether or not require user to set a PIN for sign-in session for Managed Home Screen.|
 |kioskModeManagedHomeScreenPinRequiredToResume|Boolean|Whether or not required user to enter session PIN if screensaver has appeared for Managed Home Screen.|
@@ -149,9 +152,7 @@ The following table shows the properties that are required when you create the [
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Indicates the Play Store mode of the device. Possible values are: `notConfigured`, `allowList`, `blockList`.|
-|safeBootBlocked|Boolean|Indicates whether or not rebooting the device into safe boot is disabled.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|
-|securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |securityDeveloperSettingsEnabled|Boolean|Indicates whether or not the user is allowed to access developer settings like developer options and safe boot on the device.|
 |securityRequireVerifyApps|Boolean|Indicates whether or not verify apps is required.|
 |statusBarBlocked|Boolean|Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.|
@@ -159,6 +160,7 @@ The following table shows the properties that are required when you create the [
 |storageAllowUsb|Boolean|Indicates whether or not to allow USB mass storage.|
 |storageBlockExternalMedia|Boolean|Indicates whether or not to block external media.|
 |storageBlockUsbFileTransfer|Boolean|Indicates whether or not to block USB file transfer.|
+|systemUpdateFreezePeriods|[androidDeviceOwnerSystemUpdateFreezePeriod](../resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md) collection|Indicates the annually repeating time periods during which system updates are postponed. This collection can contain a maximum of 500 elements.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|The type of system update configuration. Possible values are: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
@@ -173,6 +175,8 @@ The following table shows the properties that are required when you create the [
 |personalProfileAppsAllowInstallFromUnknownSources|Boolean|Indicates whether the user can install apps from unknown sources on the personal profile.|
 |personalProfileCameraBlocked|Boolean|Indicates whether to disable the use of the camera on the personal profile.|
 |personalProfileScreenCaptureBlocked|Boolean|Indicates whether to disable the capability to take screenshots on the personal profile.|
+|personalProfilePlayStoreMode|[personalProfilePersonalPlayStoreMode](../resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md)|Used together with PersonalProfilePersonalApplications to control how apps in the personal profile are allowed or blocked. Possible values are: `notConfigured`, `blockedApps`, `allowedApps`.|
+|personalProfilePersonalApplications|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|Policy applied to applications in the personal profile. This collection can contain a maximum of 500 elements.|
 |workProfilePasswordExpirationDays|Int32|Indicates the number of days that a work profile password can be set before it expires and a new password will be required. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Indicates the minimum length of the work profile password. Valid values 4 to 16|
 |workProfilePasswordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for the work profile password. Valid values 1 to 16|
@@ -197,7 +201,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 8247
+Content-length: 8916
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -248,6 +252,9 @@ Content-length: 8247
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "crossProfilePoliciesAllowCopyPaste": true,
+  "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+  "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
   "microsoftLauncherConfigurationEnabled": true,
   "microsoftLauncherCustomWallpaperEnabled": true,
   "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -365,9 +372,7 @@ Content-length: 8247
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "playStoreMode": "allowList",
-  "safeBootBlocked": true,
   "screenCaptureBlocked": true,
-  "securityAllowDebuggingFeatures": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
   "statusBarBlocked": true,
@@ -377,6 +382,15 @@ Content-length: 8247
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 10,
+      "startDay": 8,
+      "endMonth": 8,
+      "endDay": 6
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
@@ -391,6 +405,16 @@ Content-length: 8247
   "personalProfileAppsAllowInstallFromUnknownSources": true,
   "personalProfileCameraBlocked": true,
   "personalProfileScreenCaptureBlocked": true,
+  "personalProfilePlayStoreMode": "blockedApps",
+  "personalProfilePersonalApplications": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
   "workProfilePasswordMinimumNumericCharacters": 11,
@@ -410,7 +434,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8419
+Content-Length: 9088
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -464,6 +488,9 @@ Content-Length: 8419
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
+  "crossProfilePoliciesAllowCopyPaste": true,
+  "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+  "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
   "microsoftLauncherConfigurationEnabled": true,
   "microsoftLauncherCustomWallpaperEnabled": true,
   "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -581,9 +608,7 @@ Content-Length: 8419
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "playStoreMode": "allowList",
-  "safeBootBlocked": true,
   "screenCaptureBlocked": true,
-  "securityAllowDebuggingFeatures": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
   "statusBarBlocked": true,
@@ -593,6 +618,15 @@ Content-Length: 8419
   "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
+  "systemUpdateFreezePeriods": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+      "startMonth": 10,
+      "startDay": 8,
+      "endMonth": 8,
+      "endDay": 6
+    }
+  ],
   "systemUpdateWindowStartMinutesAfterMidnight": 11,
   "systemUpdateWindowEndMinutesAfterMidnight": 9,
   "systemUpdateInstallType": "postpone",
@@ -607,6 +641,16 @@ Content-Length: 8419
   "personalProfileAppsAllowInstallFromUnknownSources": true,
   "personalProfileCameraBlocked": true,
   "personalProfileScreenCaptureBlocked": true,
+  "personalProfilePlayStoreMode": "blockedApps",
+  "personalProfilePersonalApplications": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
   "workProfilePasswordMinimumNumericCharacters": 11,
@@ -620,6 +664,7 @@ Content-Length: 8419
   "workProfilePasswordRequiredType": "required"
 }
 ```
+
 
 
 

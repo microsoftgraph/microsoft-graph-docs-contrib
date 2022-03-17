@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 View the effective permissions of the currently authenticated user. GetEffectivePermissions is a function that retrieves the effective permissions of the currently authenticated user, which helps UX hide or disable content that the current user doesn't have access to.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -81,6 +79,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/virtualendpoint-geteffectivepermissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/virtualendpoint-geteffectivepermissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualendpoint-geteffectivepermissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

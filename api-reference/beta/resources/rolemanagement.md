@@ -27,8 +27,6 @@ For more information, see:
 * [Delegation and roles in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
 * [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Methods
 
 None.

@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,6 +54,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The setting name as it appears in the UI. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
 |selfServiceEnabled|Boolean|To turn on the self service option, change this setting to `True`. |
+|restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 
 ## Response
@@ -75,13 +74,16 @@ If successful, this method returns a `201 Created` response code and a [cloudPcU
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings
 Content-Type: application/json
-Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",
   "displayName": "Example",
   "selfServiceEnabled": false,
-  "localAdminEnabled": true
+  "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -98,6 +100,14 @@ Content-length: 159
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpcusersetting-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcusersetting-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcusersetting-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -122,6 +132,10 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": false,
   "localAdminEnabled": true,
+  "restorePointSetting": {
+    "frequencyInHours": 16,
+    "userRestoreEnabled": true
+  },
   "lastModifiedDateTime": "2021-02-01T10:29:57Z"  
 }
 ```

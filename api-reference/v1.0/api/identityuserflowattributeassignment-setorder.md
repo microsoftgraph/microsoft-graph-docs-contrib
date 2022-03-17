@@ -70,7 +70,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAssignments/setOrder
 Content-Type: application/json
-Content-length: 90
 
 {
   "newAssignmentOrder": {
@@ -95,6 +94,10 @@ Content-length: 90
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/identityuserflowattributeassignment-setorder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityuserflowattributeassignment-setorder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

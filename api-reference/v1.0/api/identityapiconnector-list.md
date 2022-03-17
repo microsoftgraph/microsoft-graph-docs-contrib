@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/identity/apiConnectors
 [!INCLUDE [sample-code](../includes/snippets/java/list-identityapiconnectors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-identityapiconnectors-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

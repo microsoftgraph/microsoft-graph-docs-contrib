@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the provider.
+Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the directory provider.
 
 ## Permissions
 
@@ -28,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
-GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## Query parameters
@@ -83,6 +84,14 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roleassignments-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -197,6 +206,14 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-roleassignments-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

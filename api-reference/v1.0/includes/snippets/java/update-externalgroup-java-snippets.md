@@ -10,7 +10,7 @@ ExternalGroup externalGroup = new ExternalGroup();
 externalGroup.displayName = "Contoso Marketing";
 externalGroup.description = "The product marketing team";
 
-graphClient.connections("{connectionsId}").groups("{externalGroupId}")
+graphClient.external().connections("{connectionsId}").groups("{externalGroupId}")
 	.buildRequest()
 	.patch(externalGroup);
 

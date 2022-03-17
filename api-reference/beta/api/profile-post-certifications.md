@@ -74,7 +74,6 @@ If successful, this method returns a `201 Created` response code and an [personC
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/certifications
 Content-Type: application/json
-Content-length: 497
 
 {
   "certificationId": "KB-1235466333663322",
@@ -98,6 +97,14 @@ Content-length: 497
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personcertification-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personcertification-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personcertification-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

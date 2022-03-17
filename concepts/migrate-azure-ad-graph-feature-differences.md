@@ -1,16 +1,16 @@
 ---
-title: "Feature differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph"
+title: "Feature differences between Azure AD Graph and Microsoft Graph"
 description: "Describes feature differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Feature differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph
+# Feature differences between Azure AD Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Many features in Microsoft Graph work similarly to their Azure AD Graph counterparts. However, a few have been changed or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
+Many features in Microsoft Graph work similarly to their Azure Active Directory (Azure AD) Graph counterparts. However, a few have been changed or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
 This article explores how Microsoft Graph handles:
 

@@ -8,7 +8,11 @@ author: jasonjoh
 # Install the Microsoft Graph PowerShell SDK
 
 > [!NOTE]
-> Installing the main module of the SDK will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication`.
+> Installing the main module of the SDK will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication`. For a list of available Microsoft Graph modules, use the following command.
+>
+> ```powershell
+> Find-Module Microsoft.Graph*
+> ```
 
 The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). You can install the SDK in PowerShell Core or Windows PowerShell using the following command.
 
@@ -27,7 +31,7 @@ Install-Module Microsoft.Graph -Scope AllUsers
 
 ## Supported PowerShell versions
 
-PowerShell 7 and later is the recommended PowerShell version for use withe the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later.
+PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later.
 
 The following prerequisites must be met to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
 

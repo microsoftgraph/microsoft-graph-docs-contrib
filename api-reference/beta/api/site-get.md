@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 description: "Retrieve properties and relationships for a site resource."
-ms.date: 09/10/2017
 title: Get a SharePoint Site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -80,6 +79,14 @@ GET /sites/{site-id}
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-site-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

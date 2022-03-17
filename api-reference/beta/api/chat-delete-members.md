@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -76,6 +76,14 @@ DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec12
 [!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-members-from-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-members-from-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,4 +102,3 @@ HTTP/1.1 204 No Content
 
 - [Remove member from channel](channel-delete-members.md)
 - [Remove member from team](team-delete-members.md)
-

@@ -1,26 +1,28 @@
 ---
-title: "Property differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph"
+title: "Property differences between Azure AD Graph and Microsoft Graph"
 description: "Describes property differences between Azure AD Graph resources (entities) and Microsoft Graph, in order to help migrate apps accordingly."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
-# Property differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph
+# Property differences between Azure AD Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-In general, the best way to compare the Azure AD Graph API to Microsoft Graph is to compare the underlying metadata for each service, especially the resource descriptions:
+In general, the best way to compare the Azure Active Directory (Azure AD) Graph API to Microsoft Graph is to compare the underlying metadata for each service, especially the resource descriptions:
 
 - [Azure AD Graph metadata](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Microsoft Graph beta metadata](https://graph.microsoft.com/beta/$metadata)
 - [Microsoft Graph v1.0 metadata](https://graph.microsoft.com/v1.0/$metadata)
 
-Here, property differences between resources are highlighted. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+This article highlights property differences between resources. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
-Because user and group are so frequently used, these resources appear first.  Other resources appear alphabetically.
+Because the [user](#user-property-differences) and [group](#group-property-differences) resources are so frequently used, they're listed first. Other resources are listed alphabetically.
 
 ## User property differences
+
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
@@ -42,6 +44,8 @@ Because user and group are so frequently used, these resources appear first.  Ot
 
 ## Group property differences
 
+The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
@@ -50,6 +54,9 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 
 ## Application property differences
+
+The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it has been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+
 
 | Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,6 +81,9 @@ Because user and group are so frequently used, these resources appear first.  Ot
 
 ## AppRoleAssignment differences
 
+The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it has been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+
+
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **creationTimestamp** | beta &nbsp;-&nbsp;**creationTimestamp** <br> v1.0 &nbsp;-&nbsp;**createdDateTime** | |
@@ -81,7 +91,7 @@ Because user and group are so frequently used, these resources appear first.  Ot
 
 ## Contact property differences
 
-The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft Graph.  Here are the property differences:
+The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it has been renamed to **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -100,11 +110,17 @@ The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft 
 
 ## Contract property differences
 
+The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it has been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+
+
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **customerContextId** | beta &nbsp;-&nbsp;**customerId** <br> v1.0 &nbsp;-&nbsp; **customerId**  |  |
 
 ## Device property differences
+
+The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it has been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -118,15 +134,27 @@ The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft 
 | **dirSyncEnabled** |  beta&nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** |  |
 | **lastDirSyncTime** |  beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** |  |
 
+## DirectoryObject property differences
+
+The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryObject** in Microsoft Graph. The changes to its properties will also be seen in other resources that inherit from **DirectoryObject**. Here are the property differences:
+
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| **deletionTimestamp** | beta&nbsp;-&nbsp;**deletedDateTime** <br> v1.0 &nbsp;-&nbsp; **deletedDateTime** | While **deletionTimestamp** was a DateTime type, **deletedDateTime** is a DateTimeOffset type.  |
+| **objectId** | beta&nbsp;-&nbsp;**id** <br> v1.0 &nbsp;-&nbsp; **id** | The **id** property in Microsoft Graph is inherited from the [entity](/graph/api/resources/entity) resource. |
+| **objectType** | beta&nbsp;-&nbsp;*Not available* <br> v1.0 &nbsp;-&nbsp; *Not available* | This property is not used in Microsoft Graph. Instead, Microsoft Graph returns the **@odata.type** property but only for APIs that might return objects of different types or derived types. For example, the [List group members](/graph/api/group-list-members) API might return members who are [users](/graph/api/resources/user), [groups](/graph/api/resources/group), [service principals](/graph/api/resources/serviceprincipal), [organizational contacts](/graph/api/resources/orgcontact), or [devices](/graph/api/resources/device). For users, the **@odata.type** is `#microsoft.graph.user`. |
+
 ## DirectoryObjectReference property differences
 
-The Azure AD Graph directoryObjectReference resource has been renamed to directoryObjectPartnerReference in Microsoft Graph.  Here are the property differences:
+The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it has been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **externalContextId** | beta&nbsp;-&nbsp;**externalPartnerTenantId** <br> v1.0 &nbsp;-&nbsp; **externalPartnerTenantId** |  |
 
 ## Domain property differences
+
+The Azure AD Graph **Domain** resource has been renamed to **domain** in Microsoft Graph. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -136,6 +164,8 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## OAuth2PermissionsGrant property differences
 
+The Azure AD Graph **OAuth2PermissionsGrant** resource has been renamed to **oAuth2PermissionsGrant** in Microsoft Graph. Here are the property differences:
+
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **expiryTime** | beta&nbsp;-&nbsp;**expiryTime** <br> v1.0&nbsp;-&nbsp;_Removed_ | This property is not used and is removed in Microsoft Graph v1.0. |
@@ -143,11 +173,11 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Policy property differences
 
-In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview).
+In Microsoft Graph, there are named policy types (such as **tokenIssuancePolicy** or **tokenLifetimePolicy**) rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview).
 
 ## ServiceEndpoint property differences
 
-The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft Graph.
+The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it has been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -156,6 +186,8 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 | **resourceId** | beta&nbsp;-&nbsp;**providerResourceId**<br> v1.0 &nbsp;-&nbsp;**providerResourceId** | |
 
 ## ServicePrincipal property differences
+
+The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it has been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -168,7 +200,7 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 
 ## TenantDetails property differences
 
-The Azure AD Graph TenantDetails resource is renamed to organization in Microsoft Graph.  Here are the property differences:
+The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -179,11 +211,11 @@ The Azure AD Graph TenantDetails resource is renamed to organization in Microsof
 
 ## TrustedCasForPasswordlessAuth property differences
 
-The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration). There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
+The Azure AD Graph **TrustedCasForPasswordlessAuth** resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration). There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
 
-### CertificateAuthorityInformation
+### CertificateAuthorityInformation property differences
 
-The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAuthority** in Microsoft Graph. The following are the property differences.
+The Azure AD Graph **CertificateAuthorityInformation** has been renamed to **certificateAuthority** in Microsoft Graph. The following are the property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
