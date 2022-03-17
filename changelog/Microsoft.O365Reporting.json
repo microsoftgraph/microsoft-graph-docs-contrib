@@ -1300,7 +1300,7 @@
 	"ChangeList": [
         {
           "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
-          "ApiChange": "method",
+          "ApiChange": "Method",
           "ChangedApiName": "getBrowserDistributionUserCounts",
           "ChangeType": "Addition",
           "Description": "Added the [getBrowserDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserdistributionusercounts?view=graph-rest-beta) method.",
@@ -1308,7 +1308,7 @@
         },
         {
           "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
-          "ApiChange": "method",
+          "ApiChange": "Method",
           "ChangedApiName": "getBrowserUserCounts",
           "ChangeType": "Addition",
           "Description": "Added the [getBrowserUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserusercounts?view=graph-rest-beta) method.",
@@ -1316,7 +1316,7 @@
         },
         {
           "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
-          "ApiChange": "method",
+          "ApiChange": "Method",
           "ChangedApiName": "getBrowserUserDetail",
           "ChangeType": "Addition",
           "Description": "Added the [getBrowserUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowseruserdetail?view=graph-rest-beta) method.",

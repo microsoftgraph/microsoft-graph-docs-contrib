@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getBrowserUserCounts"
-description: "Get a report that provides the trend with the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization."
+description: "Get a report that provides the trend in usage for the number of active users using Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer when used to access the Microsoft 365 services over a selected period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -13,21 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the trend with the number of active users for each browser – Edge, Edge Legacy, Internet Explorer - in your organization.
+Get a report that provides the trend in usage for the number of active users using Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer when used to access the Microsoft 365 services over a selected period.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
+> **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
+| -------------------------------------- | -------------------------------------------- |
 | Delegated (work or school account)     | Reports.Read.All                            |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
-> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -42,12 +42,12 @@ GET /reports/getBrowserUserCounts(period='{period_value}')
 In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                                       |
-| :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to text/csv or application/json.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
 
 ## Request headers
 
@@ -57,15 +57,13 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 ## Request body
 
-Do not supply a request body with this method.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) object in the response body.
-
 ### CSV
 
-If successful, return a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
@@ -80,7 +78,7 @@ The CSV file has the following headers for columns:
 
 ### JSON
 
-If successful, return a `200 OK` response code and a JSON object in response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 ## Examples
 
@@ -89,38 +87,7 @@ If successful, return a `200 OK` response code and a JSON object in response bod
 The following is an example that outputs CSV.
 
 #### Request
-
-
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_getBrowserUserCounts_csv"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=text/csv
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserusercounts-csv-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserusercounts-csv-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserusercounts-csv-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserusercounts-csv-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+The following is an example of a request.
 
 #### Response
 
@@ -146,7 +113,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Period, Report Date, Edge, Edge Legacy, Internet Explorer
+Report Refresh Date, Report Period, Report Date, Edge, Edge Legacy, Internet Explorer
 ```
 
 ### Example 2: JSON output
@@ -154,38 +121,7 @@ Report Refresh Date,Report Period, Report Date, Edge, Edge Legacy, Internet Expl
 The following is an example that returns JSON.
 
 #### Request
-
-
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "reportroot_getBrowserUserCounts_json"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=application/json
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getbrowserusercounts-json-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getbrowserusercounts-json-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getbrowserusercounts-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getbrowserusercounts-json-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
+The following is an example of a request.
 
 #### Response
 
