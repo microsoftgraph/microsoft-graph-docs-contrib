@@ -64,10 +64,9 @@ If successful, this method returns `204 No Content` response code. It does not r
 ```http
 PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 Content-Type: application/json
-Content-Length: 30
 
 {
-  "scope": "scope-value"
+    "scope": "User.ReadBasic.All Group.ReadWrite.All"
 }
 ```
 # [C#](#tab/csharp)
