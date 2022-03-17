@@ -14,7 +14,7 @@ options := &msgraphsdk.ClaimsMappingPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 claimsMappingPolicyId := "claimsMappingPolicy-id"
-result, err := graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Patch(options)
+graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Patch(options)
 
 
 ```

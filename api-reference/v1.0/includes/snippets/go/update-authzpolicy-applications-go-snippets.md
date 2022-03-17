@@ -15,7 +15,7 @@ defaultUserRolePermissions.SetAllowedToCreateApps(&allowedToCreateApps)
 options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(options)
 
 
 ```

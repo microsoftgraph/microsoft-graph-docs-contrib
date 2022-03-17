@@ -14,7 +14,7 @@ options := &msgraphsdk.SetRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 setId := "set-id"
-result, err := graphClient.TermStore().SetsById(&setId).Patch(options)
+graphClient.TermStore().SetsById(&setId).Patch(options)
 
 
 ```
