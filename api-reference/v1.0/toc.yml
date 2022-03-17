@@ -4591,6 +4591,21 @@ items:
           href: api/driveitem-preview.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Bundles
+        href: resources/bundle.md
+        items:
+        - name: List
+          href: api/bundle-list.md
+        - name: Create
+          href: api/drive-post-bundles.md
+        - name: Get
+          href: api/bundle-get.md
+        - name: Update
+          href: api/bundle-update.md
+        - name: Add item
+          href: api/bundle-additem.md
+        - name: Remove item
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:
