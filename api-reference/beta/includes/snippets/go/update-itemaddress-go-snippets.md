@@ -17,7 +17,7 @@ options := &msgraphsdk.ItemAddressRequestBuilderPatchOptions{
 }
 userId := "user-id"
 itemAddressId := "itemAddress-id"
-result, err := graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(options)
+graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(options)
 
 
 ```

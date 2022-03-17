@@ -14,7 +14,7 @@ options := &msgraphsdk.AccessPackageRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(options)
 
 
 ```
