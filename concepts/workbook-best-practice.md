@@ -286,7 +286,7 @@ Content-type: application/json
 
 ## Throttling
 
-Excel APIs in Microsoft Graph affect the resource usage of multiple dependency services. The impact can vary between different requests: for example, you might expect that updating a short string in a single cell of a small workbook would consume fewer resources than adding a big table with complex formulas to a large workbook. Even with the same API, parameters and target workbooks can introduce significant differences. Therefore Excel API throttling isn't defined with simple and universal limit numbers, as they would result in more restrictive limits. In contrast, we recommend the following practices for Excel API consumers to complete tasks quickly with fewer throttling errors.
+Excel APIs in Microsoft Graph affect the resource usage of multiple dependency services. The impact can vary between different requests: for example, you might expect that updating a short string in a single cell of a small workbook would consume fewer resources than adding a big table with complex formulas to a large workbook. Even with the same API, parameters and target workbooks can introduce significant differences. Therefore Excel API throttling isn't defined with simple and universal limit numbers, as they would result in more restrictive limits. The following best practices will help you complete tasks more quickly with fewer throttling errors.
 
 ### Retry-After header
 
