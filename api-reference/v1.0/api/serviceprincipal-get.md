@@ -42,7 +42,7 @@ The use of `$select` to get **keyCredentials** for service principals has a thro
 | Authorization  | Bearer {token}. Required.  |
 | Accept-Language| Language code. Optional.   |
 
-Providing the Accept-Language header with a supported language code, such as es-ES or de-DE, will return localized values where available. Note that the header is not supported for [list operations](../serviceprincipal-list.md).
+Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
 
 ## Request body
 Do not supply a request body for this method.
