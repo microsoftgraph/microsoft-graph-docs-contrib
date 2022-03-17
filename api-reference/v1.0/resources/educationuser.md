@@ -74,6 +74,7 @@ Inherits from [entity](../resources/entity.md).
 | schools       | [educationSchool](../resources/educationschool.md) collection | Schools to which the user belongs. Nullable.   |
 | taughtClasses | [educationClass](../resources/educationclass.md) collection   | Classes for which the user is a teacher.       |
 | user          | [user](../resources/user.md)                                  | The directory user corresponding to this user. |
+|rubrics|[educationRubric](educationrubric.md) collection|When set, the grading rubric attached to the assignment.|
 
 ## JSON representation
 
