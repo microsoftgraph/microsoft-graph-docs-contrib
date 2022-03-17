@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A unifiedRoleManagementPolicy specifies the various policies associated with a scope and role definition. It is derived from microsoft.graph.policyBase.
+A unifiedRoleManagementPolicy specifies the various policies associated with a Azure AD scope and role definition. It is derived from [entity](entity.md). For policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies).
 
 ## Methods
 |Method|Return type|Description|
