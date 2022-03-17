@@ -66,10 +66,11 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Report Period
-- Report Date
 - Team Name
 - Team Id
+- Team type
+- Last Activity Date
+- Report Period
 - Active users
 - Active Channels
 - Guests
@@ -80,7 +81,6 @@ The CSV file has the following headers for columns.
 - Channel Messages
 - Urgent Messages
 - Mentions
-- Last Activity Date
 - Active Shared Channels
 - Active external Users
 
@@ -132,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Period,Report Date,Team Name, Team Id,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Reply Messages,Channel Messages,Urgent Messages,Mentions,Last Activity Date,Active Shared Channels,Active External Users
+Report Refresh Date,Team Name,Team Id,Team Type,Last Activity Date,Report Period,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Reply Messages,Channel Messages,Urgent Messages,Mentions,Active Shared Channels,Active External Users
 ```
 
 ### JSON
@@ -175,12 +175,13 @@ Content-Length: 876
   "value": [
     {
       "reportRefreshDate": "2021-09-01", 
-      "reportPeriod":7,
-      "userCounts": [
+      "teamName": "sampleTeam",
+      "teamId": "a063d832-ae9a-467d-8cb4-17c073260890",
+      "teamType": "Private",
+      "lastActivityDate": "2021-09-01",
+      "details": [
         {
-          "reportDate": "2021-09-01", 
-          "teamName": "sampleTeam", 
-          "teamId": "a063d832-ae9a-467d-8cb4-17c073260890"
+          "reportPeriod":7,
           "activeUsers": 26, 
           "activeChannels": 17, 
           "guests": 4, 
@@ -191,7 +192,6 @@ Content-Length: 876
           "channelMessages": 0,
           "urgentMessages": 0,
           "mentions": 0,
-          "lastActivityDate": "2021-09-01",
           "activeSharedChannels": "6",
           "activeExternalUsers": "8"
         }

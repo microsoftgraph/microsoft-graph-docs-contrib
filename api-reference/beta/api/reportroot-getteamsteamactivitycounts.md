@@ -77,6 +77,9 @@ The CSV file has the following headers for columns.
 - Channel Messages
 - Active Shared Channels
 - Active external Users
+- Reply Messages
+- Urgent Messages
+- Mentions
 
 ### JSON
 
@@ -126,7 +129,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Period,Report Date,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Channel Messages,Active Shared Channels,Active External Users
+Report Refresh Date,Report Period,Report Date,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Channel Messages,Active Shared Channels,Active External Users,Reply Messages,Urgent Messages,Mentions
 ```
 
 ### JSON
@@ -181,7 +184,10 @@ Content-Length: 641
           "postMessages": 83,
           "channelMessages": 101,
           "activeSharedChannels": 1,
-          "activeExternalUsers": 2
+          "activeExternalUsers": 2,
+          "replyMessages":10,
+          "urgentMessages":8,
+          "mentions":1
         }
       ]
     }
