@@ -36,7 +36,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](./connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `HTML` are supported. If your data source has other content types such as binary files, videos or images, you can parse them to text before adding them to Microsoft Graph. For instance, using optical character recognition to extract searchable text from images.
+Content is one of the key fields influencing [relevance](./connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `html` are supported. If your data source has other content types, such as binary files, videos, or images, you can parse them to text before adding them to Microsoft Graph. For example, you can use optical character recognition to extract searchable text from images.
 
 ![An example content component](./images/connectors-images/connecting-external-content-manage-items-2.png)
 
