@@ -42,8 +42,6 @@ The following is a JSON representation of a **documentSet** resource.
   "allowedContentTypes": [{ "@type": "microsoft.graph.contentTypeInfo" }],
   "defaultContents": [{ "@type": "microsoft.graph.documentSetContent" }],
   "propagateWelcomePageChanges": false,
-  "sharedColumns": [{ "@type": "microsoft.graph.columnDefinition" }],
-  "welcomePageColumns": [{ "@type": "microsoft.graph.columnDefinition" }],
   "welcomePageUrl": "string"
 }
 ```

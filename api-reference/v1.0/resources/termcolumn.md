@@ -34,9 +34,7 @@ Here is a JSON representation of a **termColumn** resource.
 ```json
 {
     "allowMultipleValues": true,
-    "parentTerm": { "@type": "microsoft.graph.termStore.term" },
     "showFullyQualifiedName": false,
-    "termSet": { "@type": "microsoft.graph.termStore.set" }
 }
 ```
 
