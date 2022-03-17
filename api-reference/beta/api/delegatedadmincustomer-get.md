@@ -1,6 +1,6 @@
 ---
 title: "Get delegatedAdminCustomer"
-description: "Read the properties and relationships of a delegatedAdminCustomer object."
+description: "Read the properties of a delegatedAdminCustomer object."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

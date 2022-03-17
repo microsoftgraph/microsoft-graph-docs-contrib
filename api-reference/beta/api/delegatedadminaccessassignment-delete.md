@@ -1,6 +1,6 @@
 ---
 title: "Delete delegatedAdminAccessAssignment"
-description: "Deletes a delegatedAdminAccessAssignment object."
+description: "Delete a delegatedAdminAccessAssignment object."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

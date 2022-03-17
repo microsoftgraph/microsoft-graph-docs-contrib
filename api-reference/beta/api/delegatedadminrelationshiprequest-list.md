@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. The default and maximum page sizes are 300 objects respectively, and the `$orderBy` filter can only be applied to the **status**, **action**, **createdDateTime**, and **lastModifiedDateTime** fields. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -84,7 +84,7 @@ Content-Type: application/json
       "action": "lockForApproval",
       "status": "complete",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
-      "lastModifiedDateTime": "2022-02-10T06:14:55.5398865Z"
+      "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
     }
   ]
 }

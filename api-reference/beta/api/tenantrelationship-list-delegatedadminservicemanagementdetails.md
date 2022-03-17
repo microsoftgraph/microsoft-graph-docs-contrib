@@ -79,6 +79,12 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
+      "id": "fa5fa04e-13df-4b7c-9e99-92573ba1fa55",
+      "serviceName": "Azure Active Directory",
+      "serviceManagementUrl": "https://aad.portal.azure.com"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "5d0273c3-0f0e-4e00-90e8-e792c8860fb5",
       "serviceName": "Microsoft 365 Lighthouse",
       "serviceManagementUrl": "https://lighthouse.microsoft.com"

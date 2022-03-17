@@ -1,6 +1,6 @@
 ---
 title: "Get delegatedAdminAccessAssignment"
-description: "Read the properties and relationships of a delegatedAdminAccessAssignment object."
+description: "Read the properties of a delegatedAdminAccessAssignment object."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -76,32 +76,31 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
-    "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
-    "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
-    "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
-    "status": "active",
-    "createdDateTime": "2022-03-09T13:20:35.2772433Z",
-    "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",
-    "accessContainer": {
-      "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
-      "accessContainerType": "securityGroup"
-    },
-    "accessDetails": {
-      "unifiedRoles": [
-        {
-          "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
-        },
-        {
-          "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
-        },
-        {
-          "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
-        },
-        {
-          "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
-        }
-      ]
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
+  "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
+  "status": "active",
+  "createdDateTime": "2022-03-09T13:20:35.2772433Z",
+  "lastModifiedDateTime": "2022-03-11T23:50:35.8970153Z",
+  "accessContainer": {
+    "accessContainerId": "227a2f44-2682-4831-a021-f8d69a34bcba",
+    "accessContainerType": "securityGroup"
+  },
+  "accessDetails": {
+    "unifiedRoles": [
+      {
+        "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+      },
+      {
+        "roleDefinitionId": "44367163-eba1-44c3-98af-f5787879f96a"
+      },
+      {
+        "roleDefinitionId": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+      },
+      {
+        "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+      }
+    ]
+  }
 }
 ```
 

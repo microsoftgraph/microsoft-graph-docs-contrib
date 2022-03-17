@@ -109,7 +109,6 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
       "@odata.etag": "W/\"JyIwMDAwMjAwOC0wMDAwLTAyMDAtMDAwMC02MjJhYWQzYjAwMDAiJw==\"",
       "id": "8d56bce3-440f-4b4f-b5c2-cc0bcbd0199c",
-      "versionStamp": "\"00002008-0000-0200-0000-622aad3b0000\"",
       "status": "active",
       "createdDateTime": "2022-03-10T23:50:35.8970153Z",
       "lastModifiedDateTime": "2022-03-11T02:00:27.7912161Z",

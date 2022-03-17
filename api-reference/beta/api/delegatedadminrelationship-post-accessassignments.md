@@ -104,7 +104,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
+Location: https://traf-pcsvcadmin-prod.trafficmanager.net/CustomerServiceAdminApi/Web/v1/granularAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/a9d6cf90-083a-47dc-ace2-1da98be3f344
 {
 
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
@@ -113,7 +113,7 @@ Content-Type: application/json
   "id": "a9d6cf90-083a-47dc-ace2-1da98be3f344",
   "status": "pending",
   "createdDateTime": "2022-02-13T10:33:52.3182097Z",
-  "lastModifiedDateTime": "2022-03-09T20:34:59.3282097Z",
+  "lastModifiedDateTime": "2022-02-13T10:33:52.3182097Z",
   "accessContainer": {
     "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",
     "accessContainerType": "securityGroup"

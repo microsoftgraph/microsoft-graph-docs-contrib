@@ -83,16 +83,15 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/c45e5ffb-3de2-4938-a214-b7eed802db66-4be56058-bb48-4a8e-8282-6cf0e98e6c9d/requests/5a6666c9-7282-0a41-67aa-25a5a3fbf339
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests",
-  "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
   "id": "5a6666c9-7282-0a41-67aa-25a5a3fbf339",
   "action": "lockForApproval",
   "status": "created",
   "createdDateTime": "2022-02-10T10:55:47.1180588Z",
-  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
+  "lastModifiedDateTime": "2022-02-10T10:55:47.1180588Z"
 }
 ```
 
