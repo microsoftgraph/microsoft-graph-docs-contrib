@@ -62,7 +62,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 Content-Type: application/json
 
 {
