@@ -18,6 +18,9 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessReviewScheduleDefinitions](../api/accessreviewset-list-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every accessReviewScheduleDefinition. Does not include associated accessReviewInstance objects in the results. |

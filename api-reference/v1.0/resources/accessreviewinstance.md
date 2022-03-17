@@ -20,6 +20,9 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.|

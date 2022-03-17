@@ -19,6 +19,8 @@ Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on 
 
 ## Methods
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md) | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects and their properties.|

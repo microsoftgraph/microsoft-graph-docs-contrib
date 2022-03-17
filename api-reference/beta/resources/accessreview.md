@@ -19,6 +19,8 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 ## Methods
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List accessReviews](../api/accessreview-list.md) | [accessReview](accessreview.md) collection | List accessReviews for a businessFlowTemplate. |

@@ -21,6 +21,8 @@ An accessReviewScheduleDefinition contains a list of [accessReviewInstance](acce
 
 ## Methods
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List accessReviewScheduleDefinitions](../api/accessreviewset-list-definitions.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every accessReviewScheduleDefinition. Does not include associated accessReviewInstance objects in the results. |

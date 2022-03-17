@@ -17,6 +17,8 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 
 ## Methods
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md) collection|Get a list of the [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) objects and their properties.|
