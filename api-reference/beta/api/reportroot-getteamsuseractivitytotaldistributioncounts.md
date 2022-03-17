@@ -168,9 +168,9 @@ Content-Length: 661
   "@odata.context": "https://graph.microsoft.com/beta/getTeamsUserActivityTotalDistributionCounts(period='D7')?$format=application/json&$skiptoken=D07uj", 
   "value": [
       "reportRefreshDate": "2021-09-01", 
-      "reportPeriod":7,
       "userCounts"
         {
+          "reportPeriod":7,
           "teamChatMessages": 26, 
           "privateChatMessages": 17, 
           "calls": 4, 
