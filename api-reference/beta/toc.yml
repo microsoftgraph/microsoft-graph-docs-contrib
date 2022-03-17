@@ -11586,6 +11586,15 @@ items:
               href: api/unifiedrolemanagementpolicy-list-effectiverules.md
             - name: List rules
               href: api/unifiedrolemanagementpolicy-list-rules.md
+            - name: Role management policy rule
+              href: resources/unifiedRoleManagementPolicyRule.md
+              items:
+              - name: List
+                href: api/unifiedRoleManagementPolicyRule-list.md
+              - name: Get
+                href: api/unifiedRoleManagementPolicyRule-get.md
+              - name: Update
+                href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Role management policy assignment
             href: resources/unifiedRoleManagementPolicyAssignment.md
             items:
@@ -11593,15 +11602,6 @@ items:
               href: api/unifiedRoleManagementPolicyAssignment-list.md
             - name: Get
               href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Resource namespace
             href: resources/unifiedrbacresourcenamespace.md
             items:
