@@ -16,7 +16,7 @@ options := &msgraphsdk.MailFolderRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
 
 
 ```

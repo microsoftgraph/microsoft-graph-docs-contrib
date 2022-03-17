@@ -33,7 +33,7 @@ In contrast, for item insights and [meeting hours insights](https://support.micr
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
+|disabledForGroup|String| The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
 ## JSON representation
 
@@ -47,9 +47,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-
-  "isEnabledInOrganization": "Boolean",
-  "disabledForGroup": "String"
+  "disabledForGroup": "String",
+  "isEnabledInOrganization": "Boolean"
 }
 ```
 
