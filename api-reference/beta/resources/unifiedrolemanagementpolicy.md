@@ -17,7 +17,7 @@ A unifiedRoleManagementPolicy specifies the various policies associated with a s
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicies](../api/unifiedrolemanagementpolicy-list.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) collection|Get a list of the [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.|
+|[Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object given the scope.|
 |[List effectiveRules](../api/unifiedrolemanagementpolicy-list-effectiverules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection|Get the unifiedRoleManagementPolicyRule resources from the effectiveRules navigation property.|
 |[List rules](../api/unifiedrolemanagementpolicy-list-rules.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection|Get the unifiedRoleManagementPolicyRule resources from the rules navigation property.|
 
@@ -30,8 +30,8 @@ A unifiedRoleManagementPolicy specifies the various policies associated with a s
 |isOrganizationDefault|Boolean|This can only be set to true for a single tenant wide policy which will apply to all scopes and roles. Set the scopeId to "/" and scopeType to Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|The identity who last modified the role setting.|
 |lastModifiedDateTime|DateTimeOffset|The time when the role setting was last modified.|
-|scopeId|String|The id of the scope where the policy is created. E.g. "/", groupId, etc.|
-|scopeType|String|The type of the scope where the policy is created. One of Directory, DirectoryRole, Group.|
+|scopeId|String|The id of the scope where the policy is created. Can be `/` for the tenant or a group ID. Required.|
+|scopeType|String|The type of the scope where the policy is created. One of `Directory`, `DirectoryRole`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
