@@ -20,4 +20,4 @@ Enum type representing image tagging options for all users within a tenant.
 |:---|:---|
 | disabled                        | The image tagging option for the tenant is disabled.                                                 |
 | basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.   |
-| enhanced                        | Allows users to tag images with custom tags and ehanced features.                                    |
+| enhanced                        | Allows users to tag images with custom tags and enhanced features.                                   |
