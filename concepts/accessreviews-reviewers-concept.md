@@ -81,7 +81,10 @@ To assign only the group owners from a specific country as reviewers:
     }
 ]
 ```
+
 Because `./manager` is a relative query, specify the **queryRoot** property with the value `decisions`.
+
+If the corresponding access review **scope** targets B2B direct connect users and teams with shared channels, the team owner will be assigned to review access for the B2B direct connect users.
 
 ### Example 6: Application owners as reviewers
 
@@ -98,3 +101,4 @@ Because `./manager` is a relative query, specify the **queryRoot** property with
 
 + [Configure the scope of your access review definition](/graph/accessreviews-scope-concept)
 + [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
++ [Create an access review](/azure/active-directory/governance/create-access-review)

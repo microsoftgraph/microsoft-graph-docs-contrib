@@ -254,6 +254,9 @@ In this example, the access review is scoped to all users who are members of a g
 
 To review B2B direct connect users and teams with shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 7](#example-5-review-all-guest-users-assigned-to-all-teams), won't include B2B direct connect users and teams with shared channels.
 
+> [!NOTE]
+> Access review of B2B direct connect users and teams is only supported in single-stage access reviews and not in multi-stage access reviews.
+
 ### Example 15: Review all guest users assigned to a directory role
 
 ```http
@@ -280,3 +283,4 @@ To review B2B direct connect users and teams with shared channels, you must spec
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)
 + [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
++ [Create an access review](/azure/active-directory/governance/create-access-review)
