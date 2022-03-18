@@ -1,6 +1,6 @@
 ---
 title: "cloudPcWindowsSettings resource type"
-description: "Represents specific windows settings to configure while creating Cloud PCs for a provisioning policy."
+description: "Represents specific Windows settings to configure while creating Cloud PCs for a provisioning policy."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents specific windows settings to configure while creating Cloud PCs for a provisioning policy.
+Represents specific Windows settings to configure while creating Cloud PCs for a provisioning policy.
 
 ## Properties
 
