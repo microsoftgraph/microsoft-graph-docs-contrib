@@ -4,18 +4,18 @@
 			"ChangeList": [
 			  {
 				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
-				"ApiChange": "EnumType",
+				"ApiChange": "Enum type",
 				"ChangedApiName": "signInFrequencyAuthenticationType",
 				"ChangeType": "Addition",
-				"Description": "Added the [signInFrequencyAuthenticationType](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Description": "Added the **signInFrequencyAuthenticationType** enumeration.",
 				"Target": "signInFrequencyAuthenticationType"
 			  },
 			  {
 				"Id": "1ea2aa9b-44d5-43b9-9b47-73ab6b4de86c",
-				"ApiChange": "EnumType",
+				"ApiChange": "Enum type",
 				"ChangedApiName": "signInFrequencyInterval",
 				"ChangeType": "Addition",
-				"Description": "Added the [signInFrequencyInterval](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+				"Description": "Added the **signInFrequencyInterval** enumeration.",
 				"Target": "signInFrequencyInterval"
 			  },
 			  {
@@ -23,7 +23,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "authenticationType",
 				"ChangeType": "Addition",
-				"Description": "Added the [authenticationType](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource",
+				"Description": "Added the **authenticationType** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
 				"Target": "signInFrequencySessionControl"
 			  },
 			  {
@@ -31,7 +31,7 @@
 				"ApiChange": "Property",
 				"ChangedApiName": "frequencyInterval",
 				"ChangeType": "Addition",
-				"Description": "Added the [frequencyInterval](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource",
+				"Description": "Added the **frequencyInterval** property to the [signInFrequencySessionControl](https://docs.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl?view=graph-rest-beta) resource.",
 				"Target": "signInFrequencySessionControl"
 			  }
 			],
