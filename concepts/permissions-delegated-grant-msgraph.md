@@ -17,7 +17,7 @@ ms.custom: template-how-to
 To complete these instructions, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Note that Graph Explorer supports sign-in in delegated contexts only while Postman supports sign-in in both delegated and application contexts.
++ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Graph Explorer supports sign in for delegated scenarios only while Postman supports sign in for both delegated and application scenarios.
 + Consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated or app permissions.
 
 ## Step 1: Register an application with Azure AD
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
 
 ## Step 5 [Optional]: Create an app role assignment for a user to the app
 
-This step assigns the app to a user identified by principal ID `4f74691a-6111-4a08-b59c-2a89c9bc6c19`. This assignment allows the user to see the app will appear on the [MyApps portal](https://myapps.microsoft.com/), and it also allows users to access the app as intended if the app is configured to require user assignment.
+This step assigns the app to a user identified by principal ID `4f74691a-6111-4a08-b59c-2a89c9bc6c19`. This assignment allows the user to see the app on the [MyApps portal](https://myapps.microsoft.com/) and access the app as if the app is configured to require user assignment.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/ef969797-201d-4f6b-960c-e9ed5f31dab5/appRoleAssignedTo

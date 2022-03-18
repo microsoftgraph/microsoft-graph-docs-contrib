@@ -17,7 +17,7 @@ ms.custom: template-how-to
 To complete this tutorial, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Note that Graph Explorer supports sign-in in delegated contexts only while Postman supports sign-in in both delegated and application contexts.
++ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Graph Explorer supports sign in for delegated scenarios only while Postman supports sign in for both delegated and application scenarios.
 + Consent to the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All` delegated or app permissions.
 
 > [!CAUTION]
@@ -93,9 +93,9 @@ Content-Type: application/json
 }
 ```
 
-Note that the service principal ID in the URL must always be the same as the **resourceId** and references the resource service principal that exposes app roles that you want to assign to another service principal. In this example, the resource service principal is identified by `943603e4-e787-4fe9-93d1-e30f749aae39` and exposes an app role identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2` which we're granting to our service principal that we created in Step 2 above.
+The service principal ID in the URL must always be the same as the **resourceId** and references the resource service principal that exposes app roles that you want to assign to another service principal. In this example, the resource service principal is identified by `943603e4-e787-4fe9-93d1-e30f749aae39` and exposes an app role identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`, that we're granting to our service principal that we created in Step 2 above.
 
-An example of a resource service principal is the Microsoft Graph service principal which exposes [hundreds of app roles](permissions-reference.md). To retrieve the ID of the Microsoft Graph service principal in your tenant, run the following request:
+An example of a resource service principal is the Microsoft Graph service principal that exposes [hundreds of app roles](permissions-reference.md). To retrieve the ID of the Microsoft Graph service principal in your tenant, run the following request:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft Graph'
