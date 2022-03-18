@@ -3341,34 +3341,6 @@ items:
               href: api/intune-auditing-devicemanagement-get.md
             - name: Update
               href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management exchange access state
             href: resources/intune-devices-devicemanagementexchangeaccessstate.md
           - name: Device management exchange access state reason
@@ -4135,7 +4107,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management role assignment
             href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -4619,6 +4591,21 @@ items:
           href: api/driveitem-preview.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Bundles
+        href: resources/bundle.md
+        items:
+        - name: List
+          href: api/bundle-list.md
+        - name: Create
+          href: api/drive-post-bundles.md
+        - name: Get
+          href: api/bundle-get.md
+        - name: Update
+          href: api/bundle-update.md
+        - name: Add item
+          href: api/bundle-additem.md
+        - name: Remove item
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:

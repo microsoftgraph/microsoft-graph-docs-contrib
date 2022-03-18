@@ -15,7 +15,7 @@ options := &msgraphsdk.CustodianRequestBuilderPatchOptions{
 }
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(options)
 
 
 ```

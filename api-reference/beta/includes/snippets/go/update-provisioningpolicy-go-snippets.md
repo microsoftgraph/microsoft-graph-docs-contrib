@@ -18,7 +18,7 @@ options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Patch(options)
 
 
 ```

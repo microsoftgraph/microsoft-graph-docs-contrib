@@ -14,7 +14,7 @@ options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
 
 
 ```

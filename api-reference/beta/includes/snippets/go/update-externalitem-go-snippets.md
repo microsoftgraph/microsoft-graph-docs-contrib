@@ -21,7 +21,7 @@ options := &msgraphsdk.ExternalItemRequestBuilderPatchOptions{
 }
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(options)
 
 
 ```

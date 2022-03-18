@@ -9540,7 +9540,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -10917,8 +10917,21 @@ items:
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
-        - name: Bundles
-          href: resources/bundle.md
+      - name: Bundles
+        href: resources/bundle.md
+        items:
+        - name: List
+          href: api/bundle-list.md
+        - name: Create
+          href: api/drive-post-bundles.md
+        - name: Get
+          href: api/bundle-get.md
+        - name: Update
+          href: api/bundle-update.md
+        - name: Add item
+          href: api/bundle-additem.md
+        - name: Remove item
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -15342,7 +15355,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Checklist
+      - name: Checklist item
         href: resources/checklistitem.md
         items:
         - name: List

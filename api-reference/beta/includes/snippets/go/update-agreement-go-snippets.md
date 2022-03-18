@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAgreement()
-displayName := "displayName-value"
+displayName := "All Contoso volunteers - Terms of use"
 requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired)
@@ -16,7 +16,7 @@ options := &msgraphsdk.AgreementRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
+graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Patch(options)
 
 
 ```

@@ -13,7 +13,7 @@ requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
 options := &msgraphsdk.TermStoreRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.TermStore().Patch(options)
+graphClient.TermStore().Patch(options)
 
 
 ```

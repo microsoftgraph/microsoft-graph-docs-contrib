@@ -25,7 +25,7 @@ defaultRegionalFormat.SetLocale(&locale)
 options := &msgraphsdk.RegionalAndLanguageSettingsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(options)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(options)
 
 
 ```
