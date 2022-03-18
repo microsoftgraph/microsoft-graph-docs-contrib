@@ -20,6 +20,24 @@
     },
     {
       "ChangeList": [
+        { 
+          "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignedPrincipals",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedPrincipals](https://docs.microsoft.com/en-us/graph/api/unifiedroledefinition-assignedprincipals) method to the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+        "Id": "daa9406f-39d6-48fc-aaa4-452a7494b05c",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-04-01T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
           "ApiChange": "Resource",

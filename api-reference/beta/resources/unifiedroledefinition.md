@@ -26,11 +26,12 @@ The following RBAC providers are currently supported:
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List unifiedRoleDefinition](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Read a list of unifiedRoleDefinition objects, and their properties. |
+| [List unifiedRoleDefinitions](../api/rbacapplication-list-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Read a list of unifiedRoleDefinition objects, and their properties. |
 | [Get unifiedRoleDefinition](../api/unifiedroledefinition-get.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Read the properties of a unifiedRoleDefinition object. |
 | [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a unifiedRoleDefinition object. |
 | [Update unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Update a unifiedRoleDefinition object. |
 | [Delete unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | None | Delete a unifiedRoleDefinition object. |
+|[assignedPrincipals](../api/unifiedroledefinition-assignedprincipals.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description**|
 
 ## Properties
 

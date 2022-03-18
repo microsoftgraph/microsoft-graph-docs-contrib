@@ -11487,6 +11487,8 @@ items:
               href: api/unifiedroledefinition-update.md
             - name: Delete role definition
               href: api/unifiedroledefinition-delete.md
+            - name: Assigned princials
+              href: api/unifiedroledefinition-assignedprincipals.md
           - name: Role assignment
             href: resources/unifiedroleassignment.md
             items:
