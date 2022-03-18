@@ -17,7 +17,17 @@ The primary reviewers are configured in the **reviewers** property of the access
 
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. For descriptions of these properties, see [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) resource type.
 
-### Example 1: A specific user as the reviewer
+### Example 1: A self-review
+
+```http
+"reviewers": []
+```
+
+To configure a self-review, do not specify the **reviewers** property, or supply an empty object to the property.
+
+If the corresponding access review **scope** targets B2B direct connect users and teams with shared channels, the team owner will be assigned to review access for the B2B direct connect users.
+
+### Example 2: A specific user as the reviewer
 
 ```http
 "reviewers": [
@@ -28,7 +38,7 @@ To configure the reviewers and fallback reviewers, set the values of **query**, 
 ]
 ```
 
-### Example 2: Members of a group as reviewers
+### Example 3: Members of a group as reviewers
 
 ```http
 "reviewers": [
@@ -39,7 +49,7 @@ To configure the reviewers and fallback reviewers, set the values of **query**, 
 ]
 ```
 
-### Example 3: Group owners as reviewers
+### Example 4: Group owners as reviewers
 ```http
 "reviewers": [
     {
@@ -60,7 +70,7 @@ To assign only the group owners from a specific country as reviewers:
 ]
 ```
 
-### Example 4: People managers as reviewers
+### Example 5: People managers as reviewers
 
 ```http
 "reviewers": [
@@ -73,7 +83,7 @@ To assign only the group owners from a specific country as reviewers:
 ```
 Because `./manager` is a relative query, specify the **queryRoot** property with the value `decisions`.
 
-### Example 5: Application owners as reviewers
+### Example 6: Application owners as reviewers
 
 ```http
 "reviewers": [

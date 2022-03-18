@@ -55,6 +55,7 @@ To review *only inactive users* assigned to the group:
     "queryType": "MicrosoftGraph"
 }
 ```
+
 ### Example 3: Review all users assigned to all Microsoft 365 groups
 
 ```http
@@ -85,7 +86,7 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 ```
 
 Because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Note that dynamic groups and role-assignable groups are not included in this review.
-    
+
 ### Example 5: Review all guest users assigned to all Teams
 
 ```http
@@ -101,6 +102,8 @@ Because this review is applied on all Microsoft 365 groups, configure the **inst
 ```
     
 Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.  Note that dynamic groups and role-assignable groups are not included in this review.
+
+This review won't include users in teams with shared channels. To scope the review to users in teams with shared channels, see [Example 14: Review all users assigned to a Teams, including B2B direct connect users in teams with shared channels](#example-14-review-all-users-assigned-to-a-teams-including-b2b-direct-connect-users-in-teams-with-shared-channels)
 
 ### Example 6: Review all inactive guest users assigned to all Microsoft 365 groups
 
@@ -135,6 +138,8 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 ```
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Note that dynamic groups and role-assignable groups are not included in this review.
+
+This review won't include inactive users in teams with shared channels. To scope the review to users in teams with shared channels, see [Example 14: Review all users assigned to a Teams, including B2B direct connect users in teams with shared channels](#example-14-review-all-users-assigned-to-a-teams-including-b2b-direct-connect-users-in-teams-with-shared-channels)
 
 ### Example 8: Review all assignment to Entitlement Management access packages
 
@@ -215,7 +220,41 @@ The **principalResourceMembershipsScope** exposes the **principalScopes** and **
 
 In this example, the principals are all inactive guest users with the period of their inactivity calculated as 30 days from the start date of the access review instance.
 
-### Example 14: Review all guest users assigned to a directory role
+### Example 14: Review all users assigned to teams, including B2B direct connect users in teams with shared channels
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/users",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ],
+    "resourceScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/groups/{groupId}/transitiveMembers",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/teams/{groupId}/channels?$filter=(membershipType eq 'shared')",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ]
+}
+```
+
+In this example, the access review is scoped to all users who are members of a group and all users who are members of a team with shared channels including internal users, B2B collaboration users, and B2B direct connect users.
+
+To review B2B direct connect users and teams with shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 7](#example-5-review-all-guest-users-assigned-to-all-teams), won't include B2B direct connect users and teams with shared channels.
+
+### Example 15: Review all guest users assigned to a directory role
 
 ```http
 "scope": {
