@@ -55,7 +55,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
     "id": "576ce272-f1a3-4c6a-9199-d5cd67c191f5",
     "appId": "d3d7efc0-4950-43e2-8d2a-c48fffe7e52e",
-    "displayName": "ADO#1694534"
+    "displayName": "My application"
 }
 ```
 
@@ -91,10 +91,10 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals/$entity",
     "id": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "accountEnabled": true,
-    "appDisplayName": "ADO#1694534",
+    "appDisplayName": "My application",
     "appId": "d3d7efc0-4950-43e2-8d2a-c48fffe7e52e",
     "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
-    "displayName": "ADO#1694534"
+    "displayName": "My application"
 }
 ```
 
@@ -143,7 +143,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appRoleId": "134fd756-38ce-4afd-ba33-e9623dbe66c2",
     "createdDateTime": "2022-03-17T20:09:07.6830758Z",
-    "principalDisplayName": "ADO#1694534",
+    "principalDisplayName": "My application",
     "principalId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "principalType": "ServicePrincipal",
     "resourceDisplayName": "Microsoft Graph",
