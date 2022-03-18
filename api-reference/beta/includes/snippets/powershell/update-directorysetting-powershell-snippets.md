@@ -9,8 +9,8 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{
 	Values = @(
 		@{
-			Name = "name-value"
-			Value = "value-value"
+			Name = "CustomBlockedWordsList"
+			Value = "Contoso"
 		}
 	)
 }

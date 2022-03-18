@@ -14,7 +14,7 @@ selfServiceEnabled := true
 requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
 restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
 requestBody.SetRestorePointSetting(restorePointSetting)
-frequencyInHours := "16"
+frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours)
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)

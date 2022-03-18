@@ -1987,7 +1987,7 @@ items:
           href: api/bookingstaffmember-update.md
         - name: Delete
           href: api/bookingstaffmember-delete.md
-    - name: Devices and apps
+    - name: Device and app management
       expanded: true
       items:
       - name: Cloud printing
@@ -2570,6 +2570,8 @@ items:
               href: api/intune-books-iosvppebookassignment-delete.md
             - name: Update
               href: api/intune-books-iosvppebookassignment-update.md
+          - name: Key/value pair
+            href: resources/intune-androidforwork-keyvaluepair.md
           - name: macOS dmg app
             href: resources/intune-apps-macosdmgapp.md
             items:
@@ -3690,6 +3692,8 @@ items:
               href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
             - name: unassignResourceAccountFromDevice action
               href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+          - name: Windows autopilot device remediation state
+            href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
           - name: Windows autopilot device type
             href: resources/intune-enrollment-windowsautopilotdevicetype.md
           - name: Windows autopilot profile assignment detailed status
@@ -4453,6 +4457,13 @@ items:
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+          - name: Aosp device owner certificate profile base
+            href: resources/intune-deviceconfig-aospdeviceownercertificateprofilebase.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownercertificateprofilebase-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownercertificateprofilebase-get.md
           - name: Aosp device owner compliance policy
             href: resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md
             items:
@@ -4479,6 +4490,32 @@ items:
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
+          - name: Aosp device owner PKCS certificate profile
+            href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
+          - name: Aosp device owner trusted root certificate
+            href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
           - name: App install control type
             href: resources/intune-deviceconfig-appinstallcontroltype.md
           - name: App list item
@@ -5802,6 +5839,10 @@ items:
             href: resources/intune-deviceconfig-keytypedvaluepair.md
           - name: Key value
             href: resources/intune-deviceconfig-keyvalue.md
+          - name: Key/value pair
+            href: resources/intune-deviceconfig-keyvaluepair.md
+          - name: Key/value pair
+            href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
           - name: LAN manager authentication level
@@ -6348,6 +6389,8 @@ items:
               href: api/intune-deviceconfig-restrictedappsviolation-update.md
           - name: Retire scheduled managed device
             href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
+          - name: Run state
+            href: resources/intune-deviceconfig-runstate.md
           - name: Safe search filter type
             href: resources/intune-deviceconfig-safesearchfiltertype.md
           - name: Scheduled retire state
@@ -8201,6 +8244,8 @@ items:
             href: resources/intune-auditing-rolescopetaginfo.md
           - name: Rotate BitLocker keys device action result
             href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
+          - name: Run state
+            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -8946,6 +8991,8 @@ items:
             href: resources/intune-mam-iosmobileappidentifier.md
           - name: JSON
             href: resources/intune-mam-json.md
+          - name: Key/value pair
+            href: resources/intune-mam-keyvaluepair.md
           - name: Mac app identifier
             href: resources/intune-mam-macappidentifier.md
           - name: Managed app clipboard sharing level
@@ -9225,6 +9272,8 @@ items:
               href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
             - name: Update
               href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
+          - name: Device enrollment configuration type
+            href: resources/intune-onboarding-deviceenrollmentconfigurationtype.md
           - name: Device enrollment limit configuration
             href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
             items:
@@ -9450,7 +9499,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -9760,8 +9809,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: Create
-              href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9849,8 +9896,6 @@ items:
             href: resources/intune-shared-keystorageprovideroption.md
           - name: Key usages
             href: resources/intune-shared-keyusages.md
-          - name: Key/value pair
-            href: resources/intune-shared-keyvaluepair.md
           - name: macOS LOB app assignment settings
             href: resources/intune-shared-macoslobappassignmentsettings.md
           - name: macOS VPP app assignment settings
@@ -9925,8 +9970,6 @@ items:
             href: resources/intune-shared-rgbcolor.md
           - name: Run as account type
             href: resources/intune-shared-runasaccounttype.md
-          - name: Run state
-            href: resources/intune-shared-runstate.md
           - name: Saved UI state generation options
             href: resources/intune-shared-saveduistategenerationoptions.md
           - name: Setting source type
@@ -10833,8 +10876,21 @@ items:
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
-        - name: Bundles
-          href: resources/bundle.md
+      - name: Bundles
+        href: resources/bundle.md
+        items:
+        - name: List
+          href: api/bundle-list.md
+        - name: Create
+          href: api/drive-post-bundles.md
+        - name: Get
+          href: api/bundle-get.md
+        - name: Update
+          href: api/bundle-update.md
+        - name: Add item
+          href: api/bundle-additem.md
+        - name: Remove item
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -11415,6 +11471,7 @@ items:
           - name: Remove included groups
             href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
+          displayName: Unified RBAC, Privileged Identity Management, PIM v3
           href: resources/rolemanagement.md
           items:
           - name: Role definition
@@ -12789,10 +12846,11 @@ items:
             - name: Update
               href: api/entitlementmanagementsettings-update.md
         - name: Privileged Identity Management
+          displayName: PIM v2
           items:
           - name: Privileged Identity Management
             href: resources/privilegedidentitymanagement-root.md
-          - name: Azure AD (deprecated))
+          - name: Azure AD (deprecated)
             items:
             - name: Azure AD
               href: resources/privilegedidentitymanagement-directory.md
@@ -12912,18 +12970,35 @@ items:
           items:
           - name: Agreement
             href: resources/agreement.md
-          - name: Create
-            href: api/termsofusecontainer-post-agreements.md
           - name: List
             href: api/termsofusecontainer-list-agreements.md
+          - name: Create
+            href: api/termsofusecontainer-post-agreements.md
           - name: Get
             href: api/agreement-get.md
           - name: Update
             href: api/agreement-update.md
           - name: Delete
             href: api/agreement-delete.md
-          - name: List acceptance status
-            href: api/user-list-agreementacceptances.md
+          - name: Agreement acceptances
+            href: resources/agreementacceptance.md
+            items:
+            - name: List acceptances
+              href: api/user-list-agreementacceptances.md
+            - name: List acceptance status
+              href: api/agreement-list-acceptances.md
+          - name: Agreement files
+            items:
+            - name: Default agreement file
+              href: resources/agreementfile.md
+            - name: Localized agreement files
+              href: resources/agreementfilelocalization.md
+            - name: Get default file
+              href: api/agreementfile-get.md
+            - name: Create localized files
+              href: api/agreement-post-files.md
+            - name: List localized files
+              href: api/agreement-list-files.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -15239,7 +15314,7 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Checklist
+      - name: Checklist item
         href: resources/checklistitem.md
         items:
         - name: List

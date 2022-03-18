@@ -23,7 +23,7 @@ options := &msgraphsdk.ForwardRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Forward().Post(options)
+graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(options)
 
 
 ```
