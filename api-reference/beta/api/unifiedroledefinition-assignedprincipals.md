@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleDefinition: assignedPrincipals"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "abhijeetsinha"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/rbacApplicationMultiple/roleDefinitions/{un
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.EnterpriseRbac.directoryObject)"
+  "@odata.type": "Collection(Microsoft.directoryObject)"
 }
 -->
 ``` http
@@ -86,7 +86,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.EnterpriseRbac.directoryObject",
+      "@odata.type": "#Microsoft.directoryObject",
       "id": "String (identifier)"
     }
   ]
