@@ -25,15 +25,15 @@ Contains information about a participant in a meeting.
 
 ### onlineMeetingRole values
 
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this evolvable enum: coorganizer.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the `coorganizer` value in this evolvable enum.
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
 | attendee            | Participant's role is attendee. This value applies to all meetings.   |
 | presenter           | Participant's role is presenter. This value applies to meetings with **allowedPresenter** set to `roleIsPresenter`, or a Teams live event. |
 | producer            | Participant's role is producer. This value applies to Teams live event only.  |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 | coorganizer | Participant's role is co-organizer. This value applies to all meetings except Teams live event. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
