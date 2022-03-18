@@ -11575,29 +11575,31 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-get.md
             - name: Filter by current user
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
+          - name: Role management policies
             items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: Rules
-              href: resources/unifiedRoleManagementPolicyRule.md
+            - name: Role management policy
+              href: resources/unifiedRoleManagementPolicy.md
               items:
               - name: List
-                href: api/unifiedrolemanagementpolicy-list-rules.md
+                href: api/unifiedrolemanagementpolicy-list.md
               - name: Get
-                href: api/unifiedrolemanagementpolicyrule-get.md
-              - name: Update
-                href: api/unifiedrolemanagementpolicyrule-update.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: Rules
+                href: resources/unifiedRoleManagementPolicyRule.md
+                items:
+                - name: List
+                  href: api/unifiedrolemanagementpolicy-list-rules.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicyrule-get.md
+                - name: Update
+                  href: api/unifiedrolemanagementpolicyrule-update.md
+            - name: Role management policy assignment
+              href: resources/unifiedRoleManagementPolicyAssignment.md
+              items:
+              - name: List
+                href: api/unifiedRoleManagementPolicyAssignment-list.md
+              - name: Get
+                href: api/unifiedRoleManagementPolicyAssignment-get.md
           - name: Resource namespace
             href: resources/unifiedrbacresourcenamespace.md
             items:
