@@ -1,8 +1,29 @@
 {
     "changelog": [
         {
+            
+         "ChangeList": [
+          {
+              "Id": "e33b35a2-c9d5-405d-8519-a61a32e40e09",
+              "ApiChange": "Member",
+              "ChangedApiName": "granularDelegatedAdminPrivileges",
+              "ChangeType": "Addition",
+              "Description": "Added the **granularDelegatedAdminPrivileges** member to the **workloadOnboardingStatus** enumeration.",
+              "Target": "workloadOnboardingStatus"
+          },
+          {
+              "Id": "e33b35a2-c9d5-405d-8519-a61a32e40e09",
+              "ApiChange": "Member",
+              "ChangedApiName": "delegatedAndGranularDelegetedAdminPrivileges",
+              "ChangeType": "Addition",
+              "Description": "Added the **delegatedAndGranularDelegetedAdminPrivileges** member to the **workloadOnboardingStatus** enumeration.",
+              "Target": "workloadOnboardingStatus"
+          }
+         ],
+            
             "ChangeList": [
-              {
+              
+                {
                 "Id": "f500d77c-028f-4366-a285-1d3074b9d648",
                 "ApiChange": "Resource",
                 "ChangedApiName": "auditEvent",
