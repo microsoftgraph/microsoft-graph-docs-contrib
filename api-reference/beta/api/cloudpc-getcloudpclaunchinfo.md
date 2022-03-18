@@ -1,5 +1,5 @@
 ---
-title: "Get my Cloud PC launch info"
+title: "cloudPC: getCloudPcLaunchInfo"
 description: "Get the cloudPCLaunchInfo for a calling user's Cloud PC"
 author: "andrewku0409"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get my Cloud PC launch info
+# cloudPC: getCloudPcLaunchInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

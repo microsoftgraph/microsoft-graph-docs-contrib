@@ -1,6 +1,6 @@
 ---
 title: "cloudPcLaunchInfo resource type"
-description: "Represents the Cloud PC launch info"
+description: "Contains the information to launch a [cloudPC](../resources/cloudpc.md)"
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC launch info
+Contains the information to launch a [cloudPC](../resources/cloudpc.md)
 
 ## Properties
 |Property|Type|Description|
