@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/rbacApplicationMultiple/roleDefinitions/{un
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.directoryObject)"
+  "@odata.type": "Collection(microsoft.graph.directoryObject)"
 }
 -->
 ``` http
@@ -86,7 +86,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.directoryObject",
+      "@odata.type": "#microsoft.graph.directoryObject",
       "id": "String (identifier)"
     }
   ]
