@@ -11586,7 +11586,7 @@ items:
               href: resources/unifiedRoleManagementPolicyRule.md
               items:
               - name: List
-                href: api/unifiedrolemanagementpolicy-list-rules.m
+                href: api/unifiedrolemanagementpolicy-list-rules.md
               - name: Get
                 href: api/unifiedrolemanagementpolicyrule-get.md
               - name: Update
