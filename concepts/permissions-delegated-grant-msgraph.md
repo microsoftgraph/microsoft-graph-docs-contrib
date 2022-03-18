@@ -24,6 +24,10 @@ To complete these instructions, you need the following resources and privileges:
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-delegated-perms-create-app"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
@@ -35,6 +39,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -51,6 +60,10 @@ Content-type: application/json
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-delegated-perms-create-sp"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
@@ -62,6 +75,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -79,6 +97,10 @@ Content-type: application/json
 
 ## Step 3: Assign a delegated permission to the service principal
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-delegated-perms-sp-oauth2permissiongrants"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
@@ -93,6 +115,11 @@ Content-Type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oauth2PermissionGrants"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -110,8 +137,12 @@ Content-type: application/json
 
 ## Step 4 [Optional]: Assign more delegated permissions to the service principal
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-delegated-perms-sp-oauth2permissiongrants-patch"
+}-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/IcMSBl_bMkqQnk8oCAVX7-QDNpSH5-lPk9HjD3Sarjk
 Content-Type: application/json
 
 {
@@ -121,6 +152,11 @@ Content-Type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oauth2PermissionGrants"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -130,6 +166,10 @@ HTTP/1.1 204 No Content
 
 This step assigns the app to a user identified by principal ID `4f74691a-6111-4a08-b59c-2a89c9bc6c19`. This assignment allows the user to see the app on the [MyApps portal](https://myapps.microsoft.com/) and access the app as if the app is configured to require user assignment.
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-delegated-perms-sp-appRoleAssignedTo"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/ef969797-201d-4f6b-960c-e9ed5f31dab5/appRoleAssignedTo
 Content-Type: application/json
@@ -143,6 +183,11 @@ Content-Type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignments"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

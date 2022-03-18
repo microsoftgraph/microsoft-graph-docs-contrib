@@ -27,6 +27,10 @@ To complete this tutorial, you need the following resources and privileges:
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-app-perms-create-app"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
@@ -38,6 +42,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -54,6 +63,10 @@ Content-type: application/json
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-app-perms-create-sp"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
@@ -65,6 +78,11 @@ Content-type: application/json
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -82,6 +100,10 @@ Content-type: application/json
 
 ## Step 3: Assign an app role to the service principal
 
+<!-- {
+  "blockType": "request",
+  "name": "grant-app-perms-sp-approleassignedto"
+}-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/943603e4-e787-4fe9-93d1-e30f749aae39/appRoleAssignedTo
 Content-Type: application/json
@@ -97,12 +119,20 @@ The service principal ID in the URL must always be the same as the **resourceId*
 
 An example of a resource service principal is the Microsoft Graph service principal that exposes [hundreds of app roles](permissions-reference.md). To retrieve the ID of the Microsoft Graph service principal in your tenant, run the following request:
 
+<!-- {
+  "blockType": "ignore"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft Graph'
 ```
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appRoleAssignments"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
