@@ -44,6 +44,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "isEnabled":true,
   "type": "String",
   "value": 1024,
   "authenticationType": "String",
