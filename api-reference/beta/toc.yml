@@ -11575,33 +11575,31 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-get.md
             - name: Filter by current user
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
+          - name: Role management policies
             items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List effective rules
-              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
+            - name: Role management policy
+              href: resources/unifiedRoleManagementPolicy.md
+              items:
+              - name: List
+                href: api/unifiedrolemanagementpolicy-list.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: Rules
+                href: resources/unifiedRoleManagementPolicyRule.md
+                items:
+                - name: List
+                  href: api/unifiedrolemanagementpolicy-list-rules.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicyrule-get.md
+                - name: Update
+                  href: api/unifiedrolemanagementpolicyrule-update.md
+            - name: Role management policy assignment
+              href: resources/unifiedRoleManagementPolicyAssignment.md
+              items:
+              - name: List
+                href: api/unifiedRoleManagementPolicyAssignment-list.md
+              - name: Get
+                href: api/unifiedRoleManagementPolicyAssignment-get.md
           - name: Resource namespace
             href: resources/unifiedrbacresourcenamespace.md
             items:
@@ -11843,28 +11841,21 @@ items:
           items:
           - name: Get data policy operation
             href: api/datapolicyoperation-get.md
-          - name: Delegated permission grants
-            href: resources/oauth2permissiongrant.md
-            items:
-            - name: List delegated permission grants
-              href: api/oauth2permissiongrant-list.md
-            - name: Get delegated permission grants
-              href: api/oauth2permissiongrant-get.md
-            - name: Create delegated permission grant
-              href: api/oauth2permissiongrant-post.md
-            - name: Update delegated permission grant
-              href: api/oauth2permissiongrant-update.md
-            - name: Delete delegated permission grant
-              href: api/oauth2permissiongrant-delete.md
-            - name: Get delta
-              href: api/oauth2permissiongrant-delta.md
-            - name: Organization
-              href: resources/organization.md
-              items:
-              - name: Get org details
-                href: api/organization-get.md
-              - name: Update org details
-                href: api/organization-update.md
+        - name: Delegated permission grants
+          href: resources/oauth2permissiongrant.md
+          items:
+          - name: List
+            href: api/oauth2permissiongrant-list.md
+          - name: Get
+            href: api/oauth2permissiongrant-get.md
+          - name: Create
+            href: api/oauth2permissiongrant-post.md
+          - name: Update
+            href: api/oauth2permissiongrant-update.md
+          - name: Delete
+            href: api/oauth2permissiongrant-delete.md
+          - name: Get delta
+            href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
           href: resources/identityprotection-overview.md
           items:
@@ -11979,6 +11970,13 @@ items:
           items:
           - name: Create invitation
             href: api/invitation-post.md
+        - name: Organization
+          href: resources/organization.md
+          items:
+          - name: Get org details
+            href: api/organization-get.md
+          - name: Update org details
+            href: api/organization-update.md
         - name: Organizational branding
           href: resources/organizationalbranding.md
           items:
