@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "ac9d4374-002f-4be5-9c45-ae246ec65191",
+          "ApiChange": "Property",
+          "ChangedApiName": "registrantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrantId** property to the [attendanceRecord](https://docs.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "ac9d4374-002f-4be5-9c45-ae246ec65191",
+       "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1f8b1c03-720b-4dd6-b8f5-c631931dcc10",
+          "ApiChange": "Member",
+          "ChangedApiName": "coorganizer",
+          "ChangeType": "Addition",
+          "Description": "Added the **coorganizer** member to the **onlineMeetingRole** enumeration.",
+          "Target": "onlineMeetingRole"
+        }
+      ],
+      "Id": "1f8b1c03-720b-4dd6-b8f5-c631931dcc10",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-18T19:48:31.9995671Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6e99df43-f8b1-45e4-baa4-11887ca66497",
           "ApiChange": "Resource",
           "ChangedApiName": "externalMeetingRegistrant",

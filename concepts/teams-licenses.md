@@ -75,8 +75,9 @@ and subscriptions with licensing and payment requirements will not send change n
 
 ## Required licenses for `model=A` 
 
-The user will need one of the 
-[supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export). 
+The user will need a license that supports 
+the Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference),
+such as one of these [supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
 Which user needs the license varies by API; 
 for details, see [`model=A` requirements](#modela-requirements).
 
