@@ -418,6 +418,8 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
+For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). In addition, the following are some throttling limits.
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### Identity providers service limits

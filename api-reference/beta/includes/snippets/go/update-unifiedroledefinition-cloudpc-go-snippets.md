@@ -25,7 +25,7 @@ options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-result, err := graphClient.RoleManagement().CloudPC().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
+graphClient.RoleManagement().CloudPC().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
 
 
 ```

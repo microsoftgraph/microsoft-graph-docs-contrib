@@ -19,7 +19,7 @@ options := &msgraphsdk.PrinterShareRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 printerShareId := "printerShare-id"
-result, err := graphClient.Print().SharesById(&printerShareId).Patch(options)
+graphClient.Print().SharesById(&printerShareId).Patch(options)
 
 
 ```

@@ -34,7 +34,7 @@ options := &msgraphsdk.TeamRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Patch(options)
+graphClient.TeamsById(&teamId).Patch(options)
 
 
 ```

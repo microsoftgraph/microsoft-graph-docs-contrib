@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 personCertificationId := "personCertification-id"
-result, err := graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Delete(nil)
+graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Delete(nil)
 
 
 ```

@@ -19,7 +19,7 @@ options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-result, err := graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
+graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
 
 
 ```

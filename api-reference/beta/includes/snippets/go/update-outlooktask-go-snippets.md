@@ -22,7 +22,7 @@ options := &msgraphsdk.OutlookTaskRequestBuilderPatchOptions{
 	H: headers,
 }
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Patch(options)
+graphClient.Me().Outlook().TasksById(&outlookTaskId).Patch(options)
 
 
 ```
