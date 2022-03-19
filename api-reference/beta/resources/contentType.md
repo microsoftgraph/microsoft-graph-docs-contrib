@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a content type in SharePoint.
 Content types allow you to define a set of columns that must be present on every [**listItem**][listItem] in a [**list**][list].
 
-## Methods
+## Properties
 
 | Property          | Type                 | Description|
 |:------------------|:---------------------|:----------------------------------|
