@@ -20,7 +20,7 @@ options := &msgraphsdk.MarkChatUnreadForUserRequestBuilderPostOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).MarkChatUnreadForUser().Post(options)
+graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(options)
 
 
 ```

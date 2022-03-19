@@ -79,9 +79,9 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### presence
+### onlineMeetings, presence
 
-Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
 
 ## HTTP request
 
@@ -182,6 +182,7 @@ The following are valid values for the resource property.
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{WebJoinUrl}'`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|

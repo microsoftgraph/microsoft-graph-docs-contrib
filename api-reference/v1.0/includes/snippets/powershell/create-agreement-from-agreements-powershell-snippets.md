@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "MSGraph Sample"
+	DisplayName = "Contoso ToU for guest users"
 	IsViewingBeforeAcceptanceRequired = $true
 	Files = @(
 		@{
@@ -15,7 +15,7 @@ $params = @{
 			Language = "en"
 			IsDefault = $true
 			FileData = @{
-				Data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=")
+				Data = [System.Text.Encoding]::ASCII.GetBytes("SGVsbG8gd29ybGQ=//truncated-binary")
 			}
 		}
 	)

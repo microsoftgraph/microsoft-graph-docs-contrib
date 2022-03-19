@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var applications = await graphClient.Applications
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:Web")
 	.GetAsync();
