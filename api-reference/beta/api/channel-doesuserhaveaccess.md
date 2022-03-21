@@ -39,9 +39,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|Unique identifier for the [User](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
 |tenantId|String|The ID of the Azure Active Directory tenant that the [user](../resources/useridentity.md) belongs to. The default value for this property is the current **tenantId** of the signed-in user or app.|
-|userPrincipalName|String|The User Principal Name (UPN) of the [User](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
+|userId|String|Unique identifier for the [user](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
+|userPrincipalName|String|The User Principal Name (UPN) of the [user](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
 
 
 ## Request headers

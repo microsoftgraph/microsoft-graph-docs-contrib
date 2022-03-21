@@ -412,7 +412,7 @@ The following API calls do not support installing apps that require [resource-sp
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
-The API call for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
+The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
 ```
 GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 {

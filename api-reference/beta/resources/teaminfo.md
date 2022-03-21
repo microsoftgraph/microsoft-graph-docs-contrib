@@ -1,6 +1,6 @@
 ---
 title: "teamInfo resource type"
-description: "Represents a team with fewer properties."
+description: "Represents a team with basic information."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"

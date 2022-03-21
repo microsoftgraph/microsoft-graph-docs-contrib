@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 
 ### Response
 
-The following is an example of a request.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -103,6 +103,8 @@ Content-Type: application/json
   ]
 }
 ```
+
+## See also
 
 - [List joinedTeams](../api/user-list-joinedteams.md)
 - [List all teams in an organization](../api/teams-list.md)
