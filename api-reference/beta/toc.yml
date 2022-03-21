@@ -10145,7 +10145,7 @@ items:
             href: api/virtualendpoint-list-galleryimages.md
           - name: Get
             href: api/cloudpcgalleryimage-get.md
-        - name: Cloud PC on-premises connection
+        - name: Cloud PC Azure network connection
           href: resources/cloudpconpremisesconnection.md
           items:
           - name: List

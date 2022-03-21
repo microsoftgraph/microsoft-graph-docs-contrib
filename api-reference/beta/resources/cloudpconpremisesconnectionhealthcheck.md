@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnectionHealthCheck resource type"
-description: "The result of a cloud PC on-premises connection health check."
+description: "The result of a cloud PC Azure network connection health check."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The result of a cloud PC on-premises connection health check.
+The result of a cloud PC Azure network connection health check.
 
 ## Methods
 

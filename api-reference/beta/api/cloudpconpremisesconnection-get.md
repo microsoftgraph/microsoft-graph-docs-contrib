@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 
 ## Examples
 
-### Example 1: Get the default properties of an on-premises connection
+### Example 1: Get the default properties of an Azure network connection
 
 #### Request
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails
 
 #### Request
 

@@ -1,6 +1,6 @@
 ---
 title: "CloudPcOnPremisesConnection: runHealthChecks"
-description: "Run health checks on the Cloud PC on-premises connection."
+description: "Run health checks on the Cloud PC Azure network connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"

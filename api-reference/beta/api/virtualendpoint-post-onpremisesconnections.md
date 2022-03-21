@@ -1,6 +1,6 @@
 ---
 title: "Create cloudPcOnPremisesConnection"
-description: "Create an on-premises connection  for provisioning Cloud PCs."
+description: "Create an Azure network connection  for provisioning Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the on-premises connection.|
+|displayName|String|The display name for the Azure network connection.|
 |type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
