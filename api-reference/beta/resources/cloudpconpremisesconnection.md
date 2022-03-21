@@ -31,7 +31,6 @@ Represents a defined collection of Azure resource information that can be used t
 
 ## Properties
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the Azure network connection. Read-only.|
