@@ -50,10 +50,15 @@ You can specify the following properties when creating a **delegatedAdminAccessA
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
 
 
-
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
+## Response headers
+|Name|Description|
+|:---|:---|
+|Content-Type|application/json.|
+|Location|The location of the resource object.|
+
+If successful, this method returns a `201 Created` response code and a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body. The Location header in the response points to the created delegatedAdminAccessAssignment object.
 
 ## Examples
 
@@ -104,7 +109,8 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Location: https://traf-pcsvcadmin-prod.trafficmanager.net/CustomerServiceAdminApi/Web/v1/granularAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/a9d6cf90-083a-47dc-ace2-1da98be3f344
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/a9d6cf90-083a-47dc-ace2-1da98be3f344
+
 {
 
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",

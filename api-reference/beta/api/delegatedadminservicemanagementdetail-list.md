@@ -80,26 +80,26 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "fa5fa04e-13df-4b7c-9e99-92573ba1fa55",
-      "serviceName": "Azure Active Directory",
-      "serviceManagementUrl": "https://aad.portal.azure.com"
+      "serviceManagementUrl": "https://aad.portal.azure.com/contoso.onmicrosoft.com",
+      "serviceName": "Azure Active Directory"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "5d0273c3-0f0e-4e00-90e8-e792c8860fb5",
-      "serviceName": "Microsoft 365 Lighthouse",
-      "serviceManagementUrl": "https://lighthouse.microsoft.com"
+      "serviceManagementUrl": "https://lighthouse.microsoft.com",
+      "serviceName": "Microsoft 365 Lighthouse"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "2b565abc-b0de-4974-97c0-bed0abb14a0f",
-      "serviceName": "Dynamics 365 Business Central",
-      "serviceManagementUrl": "https://businesscentral.dynamics.com"
+      "serviceManagementUrl": "https://businesscentral.dynamics.com/55beae45-27a6-4e7a-8c7c-2eae70816cfa/admin",
+      "serviceName": "Dynamics 365 Business Central"
     },
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
       "id": "ce0b42f4-bfde-4abe-a5f7-add83f104b23",
-      "serviceName": "Teams",
-      "serviceManagementUrl": "https://admin.teams.microsoft.com"
+      "serviceManagementUrl": "https://admin.teams.microsoft.com/?delegatedOrg=contoso.onmicrosoft.com",
+      "serviceName": "Teams"
     }
   ]
 }

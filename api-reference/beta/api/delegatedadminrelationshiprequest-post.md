@@ -84,6 +84,7 @@ Content-Type: application/json
 HTTP/1.1 201 Created
 Content-Type: application/json
 Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/c45e5ffb-3de2-4938-a214-b7eed802db66-4be56058-bb48-4a8e-8282-6cf0e98e6c9d/requests/5a6666c9-7282-0a41-67aa-25a5a3fbf339
+
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
   "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#requests",

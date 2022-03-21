@@ -28,12 +28,12 @@ Represents a delegated admin relationship between a partner and customer.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the relationship. This is set by the system and cannot be set by the caller.|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the 'approvalPending' status or beyond. Must be unique across all relationships of the partner.|
-|duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the 'approvalPending' status or beyond. Must be a value between P1D and P2Y inclusive.|
-|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the 'approvalPending' status or beyond.|
+|id|String|The unique identifier of the relationship. Read-only.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner (only when the relationship is in the "created" status) and cannot be changed by the customer.|
+|duration|Duration|The duration (ISO 8601) of the relationship. Must be a value between P1D and P2Y inclusive. This is set by the partner (only when the relationship is in the "created" status) and cannot be changed by the customer.|
+|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner at the time of relationship creation or by the system after customer approval of the relationship if the partner did not originally set it. This cannot be changed by the customer.|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`.|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`. This is set by the system and cannot be set by the caller.|
 |createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was created in UTC. This is set by the system and cannot be set by the caller.|
 |lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was last modified in UTC. This is set by the system and cannot be set by the caller.|
 |activatedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship became active in UTC. This is set by the system and cannot be set by the caller.|

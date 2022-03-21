@@ -46,10 +46,10 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This is set by the partner and cannot be changed by the customer, and cannot be changed by the caller once the relationship is in the "approvalPending" status or beyond. Must be unique across all relationships from the partner for the customer.|
-|duration|Duration|The duration (ISO 8601) of the relationship. This is set by the partner and cannot be changed by the customer, and once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive.|
-|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed by the customer, and by the partner once the relationship is in the "approvalPending" status or beyond.|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
+|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship, and cannot be changed once the relationship is in the "approvalPending" status or beyond.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. Must be unique across all relationships from the partner for the customer.|
+|duration|Duration|The duration (ISO 8601) of the relationship. Must be a value between P1D and P2Y inclusive.|
 
 
 ## Response
@@ -119,8 +119,7 @@ Content-Type: application/json
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
   "customer": {
-    "tenantId": "52eaad04-13a2-4a2f-9ce8-93a294fadf36",
-    "displayName": "Contoso Inc"
+    "tenantId": "52eaad04-13a2-4a2f-9ce8-93a294fadf36"
   },
   "accessDetails": {
     "unifiedRoles": [

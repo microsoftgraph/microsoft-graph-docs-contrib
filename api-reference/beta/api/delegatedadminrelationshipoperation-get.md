@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select OData query parameter to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 |Name|Description|
@@ -80,7 +80,7 @@ Content-Type: application/json
   "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wMDAwLTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
   "id": "57e4479a-aafb-4d00-ab0f-8ce6027466cf",
   "operationType": "delegatedAdminAccessAssignmentUpdate",
-  "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"PartnerGdapRelationshipId\":\"5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836\",\"Customer\":{\"TenantId\":\"4fdbff88-9d6b-42e0-9713-45c922ba8001\"},\"AccessContainer\":{\"Id\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"ContainerType\":0},\"AccessDetails\":{\"RoleType\":0,\"Roles\":null,\"UnifiedRoles\":[{\"RoleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"Status\":1,\"Activities\":[],\"_etag\":\"\\\"3d0001d2-0000-0200-0000-61775c160000\\\"\",\"partitionKey\":null}",
+  "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"status\":\"active\"}",
   "status": "complete",
   "createdDateTime": "2022-02-11T19:27:31.4047395Z",
   "lastModifiedDateTime": "2022-02-11T19:27:31.4047395Z"

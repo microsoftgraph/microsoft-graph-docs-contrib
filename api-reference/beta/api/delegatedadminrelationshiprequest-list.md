@@ -85,6 +85,15 @@ Content-Type: application/json
       "status": "complete",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
+      "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
+      "id": "8a1b6676-5c12-47ba-8d3a-1d38387b0909",
+      "action": "terminate",
+      "status": "running",
+      "createdDateTime": "2022-03-02T06:11:55.5398865Z",
+      "lastModifiedDateTime": "2022-03-02T06:11:55.5398865Z"
     }
   ]
 }

@@ -47,9 +47,9 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
-|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner during relationship creation, or by the system after customer approval of the relationship (if not set at the time of creation), and cannot be changed once the relationship is in the "approvalPending" status or beyond.|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. This cannot be changed once the relationship is in the "approvalPending" status or beyond. Must be unique across all relationships from the partner for the customer.|
-|duration|Duration|The duration (ISO 8601) of the relationship. This cannot be changed once the relationship is in the "approvalPending" status or beyond. Must be a value between P1D and P2Y inclusive.|
+|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship.|
+|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
+|duration|Duration|The duration (ISO 8601) of the relationship. Must be a value between P1D and P2Y inclusive.|
 
 ## Response
 
@@ -100,7 +100,8 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Location: https://traf-pcsvcadmin-prod.trafficmanager.net/CustomerServiceAdminApi/Web/v1/granularAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
+Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
+
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
   "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminRelationships",
