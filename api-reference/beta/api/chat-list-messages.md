@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -48,7 +48,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
-| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **LastModifiedDateTime (default)** and **CreatedDateTime**. |
+| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **lastModifiedDateTime** (default) and **createdDateTime** in **descending** order. Ascending order is currently not supported.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by createdDateTime.
+The following is an example of the request. `$top=2` is passed to retrieve two messages and `$orderBy=createdDateTime` is passed to sort messages by **createdDateTime**.
 
 
 # [HTTP](#tab/http)
@@ -79,7 +79,7 @@ The following is an example of the request. `$top=2` is passed to retrieve two m
   "name": "get_allchatmessages_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime desc
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-1-csharp-snippets.md)]

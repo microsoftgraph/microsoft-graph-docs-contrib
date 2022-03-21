@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 [!INCLUDE [sample-code](../includes/snippets/go/group-subscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-subscribebymail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

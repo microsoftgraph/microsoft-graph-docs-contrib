@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "089ae336-9c5f-4c6f-afd6-12ed9c196b14",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "deviceEnrollmentConfigurationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceEnrollmentConfigurationType** enumeration type.",
+          "Target": "deviceEnrollmentConfigurationType"
+        },
+        {
+          "Id": "089ae336-9c5f-4c6f-afd6-12ed9c196b14",
+          "ApiChange": "Member",
+          "ChangedApiName": "androidAosp",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **androidAosp** member from the **enrollmentRestrictionPlatformType** enumeration.",
+          "Target": "enrollmentRestrictionPlatformType"
+        },
+        {
+          "Id": "089ae336-9c5f-4c6f-afd6-12ed9c196b14",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceEnrollmentConfigurationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceEnrollmentConfigurationType** property to [deviceEnrollmentConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceEnrollmentConfiguration?view=graph-rest-beta) resource.",
+          "Target": "deviceEnrollmentConfiguration"
+        },
+        {
+          "Id": "089ae336-9c5f-4c6f-afd6-12ed9c196b14",
+          "ApiChange": "Property",
+          "ChangedApiName": "aospRestriction",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **aospRestriction** property from [deviceEnrollmentPlatformRestrictionsConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceEnrollmentPlatformRestrictionsConfiguration?view=graph-rest-beta) resource.",
+          "Target": "deviceEnrollmentPlatformRestrictionsConfiguration"
+        },
+        {
+          "Id": "2adde579-2ec5-4c8e-b9ac-63784b95c5bb",
+          "ApiChange": "Property",
+          "ChangedApiName": "enableDeviceGroupMembershipReport",
+          "ChangeType": "Addition",
+          "Description": "Added the **enableDeviceGroupMembershipReport** property to [deviceManagementSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementSettings?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementSettings"
+        },
+        {
+          "Id": "2adde579-2ec5-4c8e-b9ac-63784b95c5bb",
+          "ApiChange": "Property",
+          "ChangedApiName": "enableEnhancedTroubleshootingExperience",
+          "ChangeType": "Addition",
+          "Description": "Added the **enableEnhancedTroubleshootingExperience** property to [deviceManagementSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementSettings?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementSettings"
+        },
+        {
+          "Id": "2adde579-2ec5-4c8e-b9ac-63784b95c5bb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerCertificateProfileBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "2adde579-2ec5-4c8e-b9ac-63784b95c5bb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerPkcsCertificateProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerPkcsCertificateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerPkcsCertificateProfile?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerPkcsCertificateProfile"
+        },
+        {
+          "Id": "2adde579-2ec5-4c8e-b9ac-63784b95c5bb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerTrustedRootCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerTrustedRootCertificate](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerTrustedRootCertificate?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerTrustedRootCertificate"
+        },
+        {
+          "Id": "9eb5dd31-8ea1-4a7f-9c5b-470f93b18188",
+          "ApiChange": "Property",
+          "ChangedApiName": "orderBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **orderBy** property to [assignmentFilterEvaluateRequest](https://docs.microsoft.com/en-us/graph/api/resources/intune-assignmentFilterEvaluateRequest?view=graph-rest-beta) resource.",
+          "Target": "assignmentFilterEvaluateRequest"
+        }
+      ],
+      "Id": "9eb5dd31-8ea1-4a7f-9c5b-470f93b18188",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-02-23T19:49:25.2151355Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a2002e2d-579a-11ec-a817-519c224fca78",
           "ApiChange": "Member",
           "ChangedApiName": "quickScan",

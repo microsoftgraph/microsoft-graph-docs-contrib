@@ -115,6 +115,8 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
+    "type": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
     "subscriptionName": "Subscription Name value",
@@ -187,6 +189,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {

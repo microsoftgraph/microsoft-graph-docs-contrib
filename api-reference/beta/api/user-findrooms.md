@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/findRooms
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-rooms-in-tenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-rooms-in-tenant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

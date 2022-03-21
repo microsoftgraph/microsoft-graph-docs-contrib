@@ -15,6 +15,8 @@ Returns a list of [educationAssignment](../resources/educationassignment.md) ass
 
 This method allows a caller to find all the **assignments** belonging to a student or a teacher in a single call rather than having to request **assignments** from each **class**. The **assignment** list contains what is needed to get the detailed information for the **assignment** from within the **class** namespace. Use the methods defined for the **assignment** for all other operations.
 
+> **Note:** The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/education/me/assignments
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-me-assignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-me-assignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -230,6 +236,10 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-assignments-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -238,8 +248,6 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 #### Response
 
 If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
-
-The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
 
 The following is an example of the response. 
 
@@ -373,6 +381,10 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-expand-submissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-assignments-expand-submissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

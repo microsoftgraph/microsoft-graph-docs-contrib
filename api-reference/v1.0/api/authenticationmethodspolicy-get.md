@@ -111,16 +111,16 @@ Content-Type: application/json
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-    "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
+    "lastModifiedDateTime": "2022-01-26T10:47:26.6044384Z",
     "policyVersion": "1.4",
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
-            "snoozeDurationInDays": 2,
-            "state": "enabled",
+            "snoozeDurationInDays": 1,
+            "state": "default",
             "excludeTargets": [],
             "includeTargets": [
                 {
-                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 }
@@ -132,7 +132,7 @@ Content-Type: application/json
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
             "id": "Fido2",
-            "state": "enabled",
+            "state": "disabled",
             "isSelfServiceRegistrationAllowed": true,
             "isAttestationEnforced": true,
             "keyRestrictions": {
@@ -159,8 +159,7 @@ Content-Type: application/json
                     "targetType": "group",
                     "id": "all_users",
                     "isRegistrationRequired": false,
-                    "authenticationMode": "any",
-                    "featureSettings": null
+                    "authenticationMode": "any"
                 }
             ]
         },

@@ -22,8 +22,7 @@ This is an abstract type.
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get the simulation resources from the simulations navigation property.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

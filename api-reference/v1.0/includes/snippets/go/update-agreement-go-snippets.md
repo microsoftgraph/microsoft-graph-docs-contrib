@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAgreement()
-displayName := "Sample ToU display name"
+displayName := "All Contoso volunteers - Terms of use"
 requestBody.SetDisplayName(&displayName)
 isViewingBeforeAcceptanceRequired := true
 requestBody.SetIsViewingBeforeAcceptanceRequired(&isViewingBeforeAcceptanceRequired)
