@@ -14,11 +14,12 @@ ms.custom: template-how-to
 
 ## Prerequisites
 
-To complete this tutorial, you need the following resources and privileges:
+To complete these instructions, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Graph Explorer supports sign in for delegated scenarios only while Postman supports sign in for both delegated and application scenarios.
-+ Consent to the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All` delegated or app permissions.
++ Sign in to an app as a user in an Application Administrator role or a user allowed to create applications in the tenant. You can use either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) (for delegated scenarios only) or [Postman](/graph/use-postman) (for either delegated and application scenarios) to test these queries.
++ Consent to the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
++ The object ID of a resource service principal that exposes app roles, and the ID of the app role to grant. In this guide, we'll use the Microsoft Graph resource service principal.
 
 > [!CAUTION]
 > The `AppRoleAssignment.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
@@ -100,6 +101,10 @@ Content-type: application/json
 
 ## Step 3: Assign an app role to the service principal
 
+In this step, we'll assign an app role that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. One of the app roles Microsoft Graph exposes is the `AdministrativeUnit.Read.All` application permission that's identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`.
+
+Therefore, we'll grant our app (the principal) an app role with ID `134fd756-38ce-4afd-ba33-e9623dbe66c2` that's exposed by a resource service principal with ID `943603e4-e787-4fe9-93d1-e30f749aae3`.
+
 <!-- {
   "blockType": "request",
   "name": "grant-app-perms-sp-approleassignedto"
@@ -113,17 +118,6 @@ Content-Type: application/json
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
     "appRoleId": "134fd756-38ce-4afd-ba33-e9623dbe66c2"
 }
-```
-
-The service principal ID in the URL must always be the same as the **resourceId** and references the resource service principal that exposes app roles that you want to assign to another service principal. In this example, the resource service principal is identified by `943603e4-e787-4fe9-93d1-e30f749aae39` and exposes an app role identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`, that we're granting to our service principal that we created in Step 2 above.
-
-An example of a resource service principal is the Microsoft Graph service principal that exposes [hundreds of app roles](permissions-reference.md). To retrieve the ID of the Microsoft Graph service principal in your tenant, run the following request:
-
-<!-- {
-  "blockType": "ignore"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft Graph'
 ```
 
 ### Response
@@ -150,6 +144,10 @@ Content-type: application/json
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39"
 }
 ```
+
+## Conclusion
+
+You've granted an app role to a service principal. This method of granting permissions using Microsoft Graph bypasses the consent workflow and should be used with caution.
 
 ## See also
 

@@ -17,8 +17,9 @@ ms.custom: template-how-to
 To complete these instructions, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user in an Application Administrator role or a user allowed to create applications in the tenant. Graph Explorer supports sign in for delegated scenarios only while Postman supports sign in for both delegated and application scenarios.
-+ Consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated or app permissions.
++ Sign in to an app as a user in an Application Administrator role or a user allowed to create applications in the tenant. You can use either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) (for delegated scenarios only) or [Postman](/graph/use-postman) (for either delegated and application scenarios) to test these queries.
++ Consent to the `Application.ReadWrite.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated or app permissions.
++ The object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal.
 
 ## Step 1: Register an application with Azure AD
 
@@ -95,7 +96,9 @@ Content-type: application/json
 }
 ```
 
-## Step 3: Assign a delegated permission to the service principal
+## Step 3: Grant a delegated permission to the service principal
+
+In this step, we'll grant the service principal a delegated permission (or scope) that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. We'll grant the `Group.Read.All` scope to our service principal and grant consent on behalf of all users in the tenant.
 
 <!-- {
   "blockType": "request",
@@ -106,10 +109,10 @@ POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
 
 {
-    "clientId": "0612c321-db5f-4a32-909e-4f28080557ef",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "consentType": "AllPrincipals",
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
-    "scope": "AuditLog.Read.All"
+    "scope": "Group.Read.All"
 }
 ```
 
@@ -126,27 +129,28 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
-    "clientId": "0612c321-db5f-4a32-909e-4f28080557ef",
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "consentType": "AllPrincipals",
-    "id": "IcMSBl_bMkqQnk8oCAVX7-QDNpSH5-lPk9HjD3Sarjk",
+    "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
     "principalId": null,
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
-    "scope": "AuditLog.Read.All"
+    "scope": "Group.Read.All"
 }
 ```
 
-## Step 4 [Optional]: Assign more delegated permissions to the service principal
+## Step 4 [Optional]: Grant more delegated permissions to the service principal
 
+In this step, we'll grant an additional `AuditLog.Read.All` Microsoft Graph delegated permission to our service principal on behalf of all users in the tenant.
 <!-- {
   "blockType": "request",
   "name": "grant-delegated-perms-sp-oauth2permissiongrants-patch"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/IcMSBl_bMkqQnk8oCAVX7-QDNpSH5-lPk9HjD3Sarjk
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 Content-Type: application/json
 
 {
-    "scope": "AuditLog.Read.All Group.ReadWrite.All"
+    "scope": "Group.Read.All AuditLog.Read.All"
 }
 ```
 
@@ -205,6 +209,10 @@ Content-type: application/json
     "resourceId": "ef969797-201d-4f6b-960c-e9ed5f31dab5"
 }
 ```
+
+## Conclusion
+
+You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph bypasses the consent workflow and should be used with caution.
 
 ## See also
 
