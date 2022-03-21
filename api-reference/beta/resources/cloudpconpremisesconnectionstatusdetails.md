@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
 ## Properties
 
 |Property|Type|Description|

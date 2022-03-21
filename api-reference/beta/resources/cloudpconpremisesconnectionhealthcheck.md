@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 The result of a cloud PC Azure network connection health check.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
 ## Methods
 
 |Method|Return type|Description|
