@@ -18,7 +18,7 @@ Contains the management details of a delegated admin service.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminServiceManagementDetails](../api/tenantrelationship-list-delegatedadminservicemanagementdetails.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
+|[List delegatedAdminServiceManagementDetails](../api/delegatedadminservicemanagementdetail-list.md)|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md)|Get a list of the **delegatedAdminServiceManagementDetail** objects and their properties.|
 
 
 ## Properties
