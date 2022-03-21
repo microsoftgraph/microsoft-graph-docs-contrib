@@ -1,6 +1,6 @@
 ---
 title: "simulationAutomation resource type"
-description: "Represents an attack simulation automation of a tenant."
+description: "Represents simulation automation created to run on a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attack simulation automation of a tenant.
+Represents simulation automation created to run on a tenant.
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of the [simulationAutomation](../resources/simulationautomation.md) objects and their properties.|
-|[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get the **simulationAutomationRun** resources from the **runs** navigation property.|
+|[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the attack simulation automation runs for a tenant.|
 
 ## Properties
 |Property|Type|Description|

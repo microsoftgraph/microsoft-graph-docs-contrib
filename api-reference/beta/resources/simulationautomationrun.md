@@ -1,6 +1,6 @@
 ---
 title: "simulationAutomationRun resource type"
-description: "Represents a run of an attack simulation automation of a tenant."
+description: "Represents a run of an attack simulation automation on a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a run of an attack simulation automation of a tenant.
+Represents a run of an attack simulation automation on a tenant.
 
 
 ## Methods
