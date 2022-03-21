@@ -1,13 +1,15 @@
 ---
-title: "How-To: Grant Microsoft Graph delegated permissions programmatically"
-description: "Learn how to use the Microsoft Graph API to grant Microsoft Graph API permissions to an app."
+title: "How-To: Grant delegated permissions programmatically"
+description: "Learn how to use Microsoft Graph to grant API permissions to an app."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.custom: template-how-to
 ---
 
-# How-To: Grant Microsoft Graph delegated permissions programmatically
+# How-To: Grant delegated permissions programmatically
+
+Use the following instructions to grant to an app delegated permissions that are exposed by an API. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -17,7 +19,7 @@ ms.custom: template-how-to
 To complete these instructions, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to an app as a user in an Application Administrator role or a user allowed to create applications in the tenant. You can use either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) (for delegated scenarios only) or [Postman](/graph/use-postman) (for either delegated and application scenarios) to test these queries.
++ Privileges to create applications in the tenant. You can either authenticate as a user or as an app that can create applications in the tenant. To test these instructions, you can run your session in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman).
 + Consent to the `Application.ReadWrite.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated or app permissions.
 + The object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal.
 
@@ -140,7 +142,7 @@ Content-type: application/json
 
 ## Step 4 [Optional]: Grant more delegated permissions to the service principal
 
-In this step, we'll grant an additional `AuditLog.Read.All` Microsoft Graph delegated permission to our service principal on behalf of all users in the tenant.
+In this step, we'll also grant the `AuditLog.Read.All` Microsoft Graph delegated permission to our service principal on behalf of all users in the tenant.
 <!-- {
   "blockType": "request",
   "name": "grant-delegated-perms-sp-oauth2permissiongrants-patch"

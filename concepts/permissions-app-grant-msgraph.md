@@ -1,13 +1,15 @@
 ---
-title: "How-To: Grant Microsoft Graph application permissions programmatically"
-description: "Learn how to use the Microsoft Graph API to grant Microsoft Graph API permissions to an app."
+title: "How-To: Grant API application permissions programmatically"
+description: "Learn how to use Microsoft Graph to grant API permissions to an app."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.custom: template-how-to
 ---
 
-# How-To: Grant Microsoft Graph application permissions programmatically
+# How-To: Grant API application permissions programmatically
+
+Use the following instructions to grant to an app application permissions that are exposed by an API. Application permissions allow an app to call an API with its own identity, and may sometimes be called app roles, app-only permissions, or direct access permissions.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -17,8 +19,8 @@ ms.custom: template-how-to
 To complete these instructions, you need the following resources and privileges:
 
 + A working Azure AD tenant.
-+ Sign in to an app as a user in an Application Administrator role or a user allowed to create applications in the tenant. You can use either [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) (for delegated scenarios only) or [Postman](/graph/use-postman) (for either delegated and application scenarios) to test these queries.
-+ Consent to the `Application.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
++ Privileges to create applications in the tenant. You can either authenticate as a user or as an app that can create applications in the tenant. To test these instructions, you can run your session in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman).
++ Consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
 + The object ID of a resource service principal that exposes app roles, and the ID of the app role to grant. In this guide, we'll use the Microsoft Graph resource service principal.
 
 > [!CAUTION]
@@ -101,7 +103,7 @@ Content-type: application/json
 
 ## Step 3: Assign an app role to the service principal
 
-In this step, we'll assign an app role that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. One of the app roles Microsoft Graph exposes is the `AdministrativeUnit.Read.All` application permission that's identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`.
+In this step, we'll assign an app role that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. The app role is `AdministrativeUnit.Read.All` that's identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`.
 
 Therefore, we'll grant our app (the principal) an app role with ID `134fd756-38ce-4afd-ba33-e9623dbe66c2` that's exposed by a resource service principal with ID `943603e4-e787-4fe9-93d1-e30f749aae3`.
 
