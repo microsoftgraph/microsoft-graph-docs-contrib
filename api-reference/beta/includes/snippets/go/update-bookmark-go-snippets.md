@@ -14,7 +14,7 @@ options := &msgraphsdk.BookmarkRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 bookmarkId := "bookmark-id"
-result, err := graphClient.Search().BookmarksById(&bookmarkId).Patch(options)
+graphClient.Search().BookmarksById(&bookmarkId).Patch(options)
 
 
 ```

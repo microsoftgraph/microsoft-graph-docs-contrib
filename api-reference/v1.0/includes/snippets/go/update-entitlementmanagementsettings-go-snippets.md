@@ -13,7 +13,7 @@ requestBody.SetExternalUserLifecycleAction(&externalUserLifecycleAction)
 options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().Settings().Patch(options)
 
 
 ```

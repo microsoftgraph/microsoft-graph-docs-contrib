@@ -21,7 +21,7 @@ options := &msgraphsdk.TermRequestBuilderPatchOptions{
 }
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
+graphClient.TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
 
 
 ```

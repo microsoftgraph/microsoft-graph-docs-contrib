@@ -17,7 +17,7 @@ requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswo
 options := &msgraphsdk.B2cAuthenticationMethodsPolicyRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
+graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(options)
 
 
 ```

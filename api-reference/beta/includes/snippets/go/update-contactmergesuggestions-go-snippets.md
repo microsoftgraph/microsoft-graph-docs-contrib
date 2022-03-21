@@ -13,7 +13,7 @@ requestBody.SetIsEnabled(&isEnabled)
 options := &msgraphsdk.ContactMergeSuggestionsRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(options)
+graphClient.Me().Settings().ContactMergeSuggestions().Patch(options)
 
 
 ```

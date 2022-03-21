@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var user = await graphClient.Groups["{group-id}"].Members
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:Pr")
 	.Select("displayName,id")
