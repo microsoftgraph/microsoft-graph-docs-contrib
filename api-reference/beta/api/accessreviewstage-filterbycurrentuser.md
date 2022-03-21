@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Return all [accessReviewStage](../resources/accessReviewStage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -23,8 +23,6 @@ The access reviews feature, including the API, is available only with a valid pu
 
 ## Methods
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 The following table lists the methods that you can use to interact with access review-related resources.
 
 | Method		   | Return type	|Description|

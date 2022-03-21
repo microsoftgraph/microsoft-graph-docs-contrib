@@ -21,8 +21,6 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 
 ## Methods
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
 |[List accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties. |

@@ -18,9 +18,6 @@ Each decision item is system-generated based off of the parent [accessReviewInst
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get a list of the [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects and their properties.|

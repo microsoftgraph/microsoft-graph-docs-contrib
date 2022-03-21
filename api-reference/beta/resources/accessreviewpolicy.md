@@ -19,9 +19,6 @@ Access review policy is a singleton that enables administrators to manage direct
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get accessReviewPolicy](../api/accessreviewpolicy-get.md)|[accessReviewPolicy](../resources/accessreviewpolicy.md)|Read the properties and relationships of an [accessReviewPolicy](../resources/accessreviewpolicy.md) object.|
