@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) objects. A list of zero or more accessReviewScheduleDefinition objects are returned, including all of their nested properties, for each access review series created. This does not include the associated accessReviewInstance objects.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

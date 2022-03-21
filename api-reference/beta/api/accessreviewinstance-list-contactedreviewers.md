@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Get the reviewers who received notifications for an [access review instance](../resources/accessreviewinstance.md). The reviewers are represented by an [accessReviewReviewer](../resources/accessreviewreviewer.md) object. A list of zero or more objects are returned, including all of their nested properties.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

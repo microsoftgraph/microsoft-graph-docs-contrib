@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Get the decisions from a stage in a multi-stage access review. The decisions in an [accessReviewStage](../resources/accessReviewStage.md) object are represented by an accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

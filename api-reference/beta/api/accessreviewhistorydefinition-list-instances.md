@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

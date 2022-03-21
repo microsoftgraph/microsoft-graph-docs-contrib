@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 Get a list of the [accessReviewInstance](../resources/accessreviewinstance.md) objects and their properties.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
