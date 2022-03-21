@@ -14,9 +14,6 @@ Namespace: microsoft.graph
 
 Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
-
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -16,10 +16,7 @@ Namespace: microsoft.graph
 >[!NOTE]
 >This method will be deprecated and will stop returning data on May 19, 2023. It has been replaced by [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 
-
 Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects pending approval by the calling user. A list of zero or more accessReviewInstance objects are returned, of which the calling user is an assigned reviewer.
-
-[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-intro-sentence.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
