@@ -1,9 +1,9 @@
 ---
 title: "Create internalDomainFederation"
 description: "Create a new internalDomainFederation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "akgoel23"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ You can specify the following properties when creating an **internalDomainFedera
 |promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign in prompt. This value can set fresh authentication and authentication method and the prompt=login field to the IDP to display a UI for authentication. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`. Optional.|
 |isSignedAuthenticationRequestRequired|Boolean|If true, when SAML authentication requests are sent to the federated SAML IDP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IDP are not signed. Optional.|
 |nextSigningCertificate|String|Next token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated. Optional.|
-|signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Update status of the signing certificate and the next signing certificate. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Should be compatible with the X509Certificate2 class. Optional.|
+|signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate. Optional.|
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider. The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: accepts MFA if performed by identity provider. If not, triggers Azure MFA. <br> `enforceMfaByFederatedIdp` : accepts MFA if performed by identity provider. If not, redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp` : rejects MFA if performed by identity provider. Always triggers Azure MFA.<br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](https://docs.microsoft.com/en-us/powershell/module/msonline/set-msoldomainfederationsettings?view=azureadps-1.0) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not performed, will trigger Azure MFA. Optional.|
 
 

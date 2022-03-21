@@ -1,9 +1,9 @@
 ---
 title: "Delete internalDomainFederation"
 description: "Deletes an internalDomainFederation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "akgoel23"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
