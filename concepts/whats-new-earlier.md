@@ -253,7 +253,7 @@ The [create case](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-
 ### Devices and apps | Cloud PC
 - [Reprovision a Cloud PC](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) as a cloud-managed virtual desktop enrolled into Intune.
 - [Resize a Cloud PC](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) by either upgrading or downgrading it to another configuration with a new virtual CPU (vCPU) and storage size.
-- [Set up](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true), [list](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true), and [run health checks](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) on [on-premises network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to provision Cloud PCs.
+- [Set up](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true), [list](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true), and [run health checks](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) on [Azure network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to provision Cloud PCs.
 
 ### Devices and apps | Corporate management
 Intune monthly updates for the beta version. In the [changelog](https://developer.microsoft.com/graph/changelog), set the **Date** filter for September, 2021, and look for a section with this same heading.
@@ -714,8 +714,8 @@ Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/
 - Get the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) status of a user who is [out-of-office](/graph/api/resources/outofofficesettings?view=graph-rest-beta&preserve-view=true), and any message set for that status.
 
 ### Devices and apps | Cloud PC
-- [Update an Active Directory domain password](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) for a successful [on-premises network connection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true).
-- [Running health checks on an on-premises network connection](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can now expose 5 additional error types in the [on-premises connection health check](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource. For more information on the error types, see the [changelog](https://developer.microsoft.com/graph/changelog) for January 2021.
+- [Update an Active Directory domain password](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) for a successful [Azure network connection](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true).
+- [Running health checks on an Azure network connection](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can now expose 5 additional error types in the [on-premises connection health check](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true) resource. For more information on the error types, see the [changelog](https://developer.microsoft.com/graph/changelog) for January 2021.
 
 ### Devices and apps | Cloud printing
 - [Subscribe to change notifications of cloud printing](universal-print-webhook-notifications.md) - when a print job is started, and when the print job is ready to be downloaded by a printer.
