@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -176,7 +176,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### Response
 
-**Note:**
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
