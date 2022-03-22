@@ -4,26 +4,26 @@
 		"ChangeList": [
 		  {
 			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
-			  "ApiChange": "Column",
+			  "ApiChange": "Method",
 			  "ChangedApiName": "getTeamsUserActivityTotalCounts",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **Post Messages, Reply Message, Meetings Organized, Meetings Attended, Audio Duration, Video Duration, Screen Share Duration** column to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** column to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
 			  "Target": "getTeamsUserActivityTotalCounts"
 		  },
 		  {
 			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
-			  "ApiChange": "Column",
+			  "ApiChange": "Method",
 			  "ChangedApiName": "getTeamsUserActivityCounts",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **Post Messages, Reply Message, Meetings Organized, Meetings Attended, Audio Duration, Video Duration, Screen Share Duration** column to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** column to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
 			  "Target": "getTeamsUserActivityCounts"
 		  },
 		  {
 			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
-			"ApiChange": "Column",
+			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsUserActivityUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **Home Tenant Display Name, Resource Tenant Display Name, Post Messages, Reply Messages, Urgent Messages** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
+			"Description": "Added the **Home Tenant Display Name**, **Resource Tenant Display Name**, **Post Messages**, **Reply Messages**, **Urgent Messages** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
 			"Target": "getTeamsUserActivityUserDetail"
 		 },
 		 {
@@ -33,14 +33,6 @@
 			"ChangeType": "Addition",
 			"Description": "Added support for the [getTeamsUserActivityTotalDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta) method.",
 			"Target": "getTeamsUserActivityTotalDistributionCounts"
-		 },
-		 {
-			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
-			"ApiChange": "Method",
-			"ChangedApiName": "getTeamsTeamActivityCounts",
-			"ChangeType": "Addition",
-			"Description": "Added support for the [getTeamsTeamActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityCounts?view=graph-rest-beta) method.",
-			"Target": "getTeamsTeamActivityCounts"
 		 }
 	  ],
 		"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",

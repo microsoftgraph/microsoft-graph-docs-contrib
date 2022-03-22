@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -36,19 +36,25 @@ GET /reports/getTeamsUserActivityTotalDistributionCounts(period='D7')
 
 ## Function parameters
 
-In the request URL, provide one of the following parameters with a valid value.
+In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7, D30, D90, and D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required.|
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+## Optional query parameters
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
 
 ## Response
 
@@ -58,7 +64,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Team Chat Messages
@@ -74,15 +80,15 @@ The CSV file has the following headers for columns.
 - Reply Messages
 - Report Period
 
-### JSON
+### Example 2: JSON output
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 2000 items.
 
-## Example
+## Examples
 
-### CSV
+### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
