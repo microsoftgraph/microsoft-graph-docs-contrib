@@ -1565,9 +1565,9 @@ items:
           href: resources/contentsharingsession.md
           items:
           - name: List
-            href: api/call-list-contentsharingsessions.md
+            href: resources/call-list-contentsharingsessions.md
           - name: Get
-            href: api/contentsharingsession-get.md
+            href: resources/contentsharingsession-get.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
       - name: Call records
