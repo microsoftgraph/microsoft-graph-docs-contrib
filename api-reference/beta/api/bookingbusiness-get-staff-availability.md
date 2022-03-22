@@ -23,9 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-### Request
-
 <!-- { "blockType": "ignored" } -->
+
 ```Get  /solutions/bookingBusinesses/{id}/getStaffAvailability
 ```
 
@@ -52,7 +51,7 @@ In the request body, pass the list of staff IDs along with 2 other parameters of
 }
 ```
 
-## Response body
+## Response
 
 In the response body, for each staff member, their available windows are returned. The types of status of the windows are explained below.
 

@@ -1912,7 +1912,7 @@ items:
         - name: Unpublish
           href: api/bookingbusiness-unpublish.md
         - name: Get
-          href: api/get-staff-availability.md
+          href: api/bookingbusiness-get-staff-availability.md
       - name: Booking appointment
         href: resources/bookingappointment.md
         items:
