@@ -24,7 +24,7 @@ Indicates that the column's values contains taxonomy data.
 
 | Relationship   | Type                      | Description
 |:----------------|:--------------------------|:-------------------------------
-| parentTerm     | microsoft.graph.termStore.term | Specifies the term guid whose children can be selected as column's value.
+| parentTerm     | microsoft.graph.termStore.term | Specifies the parent term for which the child terms can be selected as the column value.
 | termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. 
 
 ## JSON representation

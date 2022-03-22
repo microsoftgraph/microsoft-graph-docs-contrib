@@ -21,7 +21,7 @@ Contains metadata about document set settings.
 | allowedContentTypes | Collection(microsoft.graph.contentTypeInfo) | Content types allowed in document set.
 | defaultContents     | Collection(microsoft.graph.documentSetContent) | Default contents of document set.  
 | propagateWelcomePageChanges | Boolean | Specifies whether to push welcome page changes to inherited content types.  
-| shouldPrefixNameToFile | Boolean  | Add the name of the Document Set to each file name.
+| shouldPrefixNameToFile | Boolean  | Indicates whether to add the name of the document set to each file name.
 | welcomePageUrl      | string | Welcome page absolute URL.  
 
 ## Relationships
