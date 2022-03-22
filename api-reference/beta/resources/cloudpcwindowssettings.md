@@ -19,7 +19,7 @@ Represents specific Windows settings to configure while creating Cloud PCs for a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|language|String|The Windows Language/Region tag to use for language pack configuration and localization of the Cloud PC. The default is "en-US", corresponding to English (United States).|
+|language|String|The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is `en-US`, which corresponds to English (United States).|
 
 ## Relationships
 
