@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminAccessAssignmentStatus",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminAccessAssignmentStatus** enumeration type.",
@@ -12,7 +12,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminAccessContainerType",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminAccessContainerType** enumeration type.",
@@ -20,7 +20,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminRelationshipOperationStatus",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminRelationshipOperationStatus** enumeration type.",
@@ -28,7 +28,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminRelationshipOperationType",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminRelationshipOperationType** enumeration type.",
@@ -36,7 +36,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminRelationshipRequestAction",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminRelationshipRequestAction** enumeration type.",
@@ -44,7 +44,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminRelationshipRequestStatus",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminRelationshipRequestStatus** enumeration type.",
@@ -52,7 +52,7 @@
         },
         {
           "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum Type",
           "ChangedApiName": "delegatedAdminRelationshipStatus",
           "ChangeType": "Addition",
           "Description": "Added the **delegatedAdminRelationshipStatus** enumeration type.",
@@ -137,22 +137,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [delegatedAdminServiceManagementDetail](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-beta) resource",
           "Target": "delegatedAdminServiceManagementDetail"
-        },
-        {
-          "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "tenantRelationship",
-          "ChangeType": "Addition",
-          "Description": "Added the [tenantRelationship](https://docs.microsoft.com/en-us/graph/api/resources/tenantRelationship?view=graph-rest-beta) resource",
-          "Target": "tenantRelationship"
         }
       ],
       "Id": "864c77db-f273-4a11-8104-8149f3f9566f",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-02-16T23:33:05.8733913Z",
-      "WorkloadArea": "Microsoft.Partner.CustomerSvcAdmin",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
