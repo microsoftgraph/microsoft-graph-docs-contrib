@@ -20,9 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> To remove members from a role-assignable group, the calling user or app must also be assigned the *RoleManagement.ReadWrite.Directory* permission.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

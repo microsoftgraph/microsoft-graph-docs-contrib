@@ -18,7 +18,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 	H: headers,
 }
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()().Get(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()(contactFolder-id).Get(options)
 
 
 ```

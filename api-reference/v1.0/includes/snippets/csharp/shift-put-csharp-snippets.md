@@ -67,6 +67,6 @@ var shift = new Shift
 await graphClient.Teams["{team-id}"].Schedule.Shifts["{shift-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
-	.UpdateAsync(shift);
+	.PutAsync(shift);
 
 ```

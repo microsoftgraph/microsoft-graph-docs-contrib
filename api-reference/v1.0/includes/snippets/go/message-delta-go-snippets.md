@@ -14,7 +14,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 	H: headers,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()().Get(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Delta()(mailFolder-id).Get(options)
 
 
 ```

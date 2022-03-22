@@ -576,15 +576,15 @@ items:
         - name: Group setting
           href: resources/groupsetting.md
           items:
-          - name: Create setting
-            href: api/groupsetting-post-groupsettings.md
-          - name: Get setting
+          - name: Create
+            href: api/group-post-settings.md
+          - name: Get
             href: api/groupsetting-get.md
-          - name: List settings
-            href: api/groupsetting-list.md
-          - name: Update setting
+          - name: List
+            href: api/group-list-settings.md
+          - name: Update
             href: api/groupsetting-update.md
-          - name: Delete setting
+          - name: Delete
             href: api/groupsetting-delete.md
         - name: Group setting template
           href: resources/groupsettingtemplate.md
@@ -854,8 +854,12 @@ items:
               href: api/application-list-extensionproperty.md
             - name: Create
               href: api/application-post-extensionproperty.md
+            - name: Get
+              href: api/extensionproperty-get.md
             - name: Delete
-              href: api/application-delete-extensionproperty.md
+              href: api/extensionproperty-delete.md
+            - name: Get available extension properties
+              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
@@ -1544,7 +1548,7 @@ items:
           href: api/bookingstaffmember-update.md
         - name: Delete
           href: api/bookingstaffmember-delete.md
-    - name: Devices and apps
+    - name: Device and app management
       expanded: true
       items:
       - name: Cloud printing
@@ -3337,34 +3341,6 @@ items:
               href: api/intune-auditing-devicemanagement-get.md
             - name: Update
               href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
-          - name: Device management
-            href: resources/intune-auditing-devicemanagement.md
-            items:
-            - name: Get
-              href: api/intune-auditing-devicemanagement-get.md
-            - name: Update
-              href: api/intune-auditing-devicemanagement-update.md
           - name: Device management exchange access state
             href: resources/intune-devices-devicemanagementexchangeaccessstate.md
           - name: Device management exchange access state reason
@@ -4131,7 +4107,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: /resources/intune-rbac-conceptual.md
+          href: resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management role assignment
             href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -4615,6 +4591,21 @@ items:
           href: api/driveitem-preview.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Bundles
+        href: resources/bundle.md
+        items:
+        - name: List
+          href: api/bundle-list.md
+        - name: Create
+          href: api/drive-post-bundles.md
+        - name: Get
+          href: api/bundle-get.md
+        - name: Update
+          href: api/bundle-update.md
+        - name: Add item
+          href: api/bundle-additem.md
+        - name: Remove item
+          href: api/bundle-removeitem.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -5363,6 +5354,7 @@ items:
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
             - name: Access review instance decision item
+              displayName: access review decisions
               href: resources/accessreviewinstancedecisionitem.md
               items:
               - name: Get
@@ -5373,6 +5365,23 @@ items:
                 href: api/accessreviewinstancedecisionitem-update.md
               - name: Filter by current user
                 href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review history definition
+            href: resources/accessreviewhistorydefinition.md
+            items:
+            - name: Get
+              href: api/accessreviewhistorydefinition-get.md
+            - name: List
+              href: api/accessreviewset-list-historydefinitions.md
+            - name: Create
+              href: api/accessreviewset-post-historydefinitions.md
+            - name: Access review history instance
+              href: resources/accessreviewhistoryinstance.md
+              items: 
+              - name: List
+                href: api/accessreviewhistorydefinition-list-instances.md
+              - name: Generate download URI
+                displayName: Downloadable access review history report
+                href: api/accessreviewhistoryinstance-generatedownloaduri.md
         - name: Consent requests
           href: resources/consentrequests-overview.md
           items:
@@ -5428,6 +5437,24 @@ items:
               href: api/entitlementmanagement-list-assignments.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+          - name: Access package assignment request approval
+            items:
+            - name: Approval
+              href: resources/approval.md
+            - name: Get
+              href: api/approval-get.md
+            - name: Filter by current user
+              href: api/approval-filterbycurrentuser.md 
+            - name: Approval stage
+              items:
+              - name: Approval stage
+                href: resources/approvalstage.md
+              - name: List
+                href: api/approval-list-stages.md
+              - name: Get
+                href: api/approvalstage-get.md
+              - name: Update
+                href: api/approvalstage-update.md
           - name: Access package assignment request
             href: resources/accesspackageassignmentrequest.md
             items:
@@ -5502,8 +5529,25 @@ items:
             href: api/agreement-update.md
           - name: Delete
             href: api/agreement-delete.md
-          - name: List acceptance status
-            href: api/user-list-agreementacceptances.md
+          - name: Agreement acceptances
+            href: resources/agreementacceptance.md
+            items:
+            - name: List acceptances
+              href: api/user-list-agreementacceptances.md
+            - name: List acceptance status
+              href: api/agreement-list-acceptances.md
+          - name: Agreement files
+            items:
+            - name: Default agreement file
+              href: resources/agreementfile.md
+            - name: Localized agreement files
+              href: resources/agreementfilelocalization.md
+            - name: Get default file
+              href: api/agreementfile-get.md
+            - name: Create localized files
+              href: api/agreement-post-files.md
+            - name: List localized files
+              href: api/agreement-list-files.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

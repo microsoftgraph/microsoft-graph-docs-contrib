@@ -15,6 +15,10 @@ MSGraphCloudPcUserSetting *cloudPcUserSetting = [[MSGraphCloudPcUserSetting allo
 [cloudPcUserSetting setDisplayName:@"Example"];
 [cloudPcUserSetting setSelfServiceEnabled: false];
 [cloudPcUserSetting setLocalAdminEnabled: true];
+MSGraphCloudPcRestorePointSetting *restorePointSetting = [[MSGraphCloudPcRestorePointSetting alloc] init];
+[restorePointSetting setFrequencyInHours: 16];
+[restorePointSetting setUserRestoreEnabled: true];
+[cloudPcUserSetting setRestorePointSetting:restorePointSetting];
 
 NSError *error;
 NSData *cloudPcUserSettingData = [cloudPcUserSetting getSerializedDataWithError:&error];

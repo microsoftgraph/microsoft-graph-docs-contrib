@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -32,7 +34,9 @@ Represents an Azure Active Directory object. The **directoryObject** type is the
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. |
+|id|String|The unique identifier for the object. For example, `12345678-9abc-def0-1234-56789abcde`. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only. Inherited from [entity](entity.md).|
+
 
 ## Relationships
 
