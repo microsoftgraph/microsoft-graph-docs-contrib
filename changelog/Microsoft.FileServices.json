@@ -2344,7 +2344,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "parentTerm",
           "ChangeType": "Addition",
-          "Description": "Added the **parentTerm** relationship to [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource",
+          "Description": "Added the **parentTerm** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
           "Target": "termColumn"
         },
         {
@@ -2352,14 +2352,14 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "termSet",
           "ChangeType": "Addition",
-          "Description": "Added the **termSet** relationship to [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource",
+          "Description": "Added the **termSet** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
           "Target": "termColumn"
         }
       ],
       "Id": "307e33be-6bd7-42a0-b4d7-74b244dbdf79",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-03-10T05:16:31.2660118Z",
+      "CreatedDateTime": "2022-03-21T05:16:31.2660118Z",
       "WorkloadArea": "Sites and Lists",
       "SubArea": ""
     }
