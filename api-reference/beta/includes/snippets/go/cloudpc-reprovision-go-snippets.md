@@ -16,7 +16,7 @@ options := &msgraphsdk.ReprovisionRequestBuilderPostOptions{
 	Body: requestBody,
 }
 cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Reprovision().Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Reprovision(cloudPC-id).Post(options)
 
 
 ```

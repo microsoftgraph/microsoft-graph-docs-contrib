@@ -1,0 +1,46 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [ 
+        {
+          "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource and related methods. Use this method in Azure AD Entitlement Management to retrieve approval objects.",
+          "Target": "approval"
+        },
+        {
+          "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalstage?view=graph-rest-1.0) resource and related methods. Use this method in Azure AD Entitlement Management to manage approval stages for an approval object.",
+          "Target": "approvalStage"
+        },
+        {
+          "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "approvalFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalFilterByCurrentUserOptions** enumeration type.",
+          "Target": "approvalFilterByCurrentUserOptions "
+        },
+        {
+          "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackageAssignmentApprovals",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageAssignmentApprovals** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementmanagement?view=graph-rest-1.0) resource.",
+          "Target": "entitlementManagement"
+        }
+      ],
+      "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-03-08T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    }
+  ]
+}

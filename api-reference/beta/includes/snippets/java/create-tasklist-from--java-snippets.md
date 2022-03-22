@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-BaseTaskList baseTaskList = new BaseTaskList();
+TaskList baseTaskList = new TaskList();
 baseTaskList.displayName = "Shopping list";
 
 graphClient.me().tasks().lists()

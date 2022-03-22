@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var devices = await graphClient.Devices
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Filter("extensionAttributes/extensionAttribute1 eq 'BYOD-Device'")
 	.GetAsync();

@@ -10,6 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewBaseTaskList()
 displayName := "Shopping list"
 requestBody.SetDisplayName(&displayName)
+requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.taskList",
+}
 options := &msgraphsdk.ListsRequestBuilderPostOptions{
 	Body: requestBody,
 }
