@@ -47,9 +47,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
-If the purge data operation is started successfully, this action returns a `204 No Content` response code. The response will also contain a `Location` header, which contains the location of the [Purge data operation](../resources/ediscovery-purgedataoperation.md) that was created to commit the purge. Check the status of the purge data operation by making a GET request to the location URL, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
+If the purge data operation is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [Purge data operation](../resources/ediscovery-purgedataoperation.md) that was created to commit the purge. Check the status of the purge data operation by making a GET request to the location URL, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
 
 ## Examples
 
@@ -72,5 +72,5 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
