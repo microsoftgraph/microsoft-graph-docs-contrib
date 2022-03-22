@@ -25,7 +25,7 @@ or submission object to which this resource belongs.
 |createdDateTime|DateTimeOffset|Date time the resoruce was added.|
 |displayName|string|The display name of the resource.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource.|
-|lastModifiedDateTime|DateTimeOffset|Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## JSON representation
 

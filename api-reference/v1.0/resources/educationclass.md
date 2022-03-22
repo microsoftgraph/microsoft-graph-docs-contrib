@@ -52,7 +52,7 @@ Inherits from [entity](../resources/entity.md).
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
-|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. |
+|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
 |assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
 |assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 
