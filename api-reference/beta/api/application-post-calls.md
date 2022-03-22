@@ -97,7 +97,7 @@ Content-Type: application/json
     "audio"
   ],
   "callOptions": {
-    "@odata.type": "#microsoft.graph.incomingCallOptions",
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
     "isContentSharingNotificationEnabled": true
   },
   "mediaConfig": {
