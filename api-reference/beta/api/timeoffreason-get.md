@@ -1,7 +1,7 @@
 ---
 title: "Get timeOffReason"
 description: "Get a timeOffReason by ID."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

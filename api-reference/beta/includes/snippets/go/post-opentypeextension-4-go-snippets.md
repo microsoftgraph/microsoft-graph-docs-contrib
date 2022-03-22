@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewPostRequestBody()
 post := msgraphsdk.NewPost()
 requestBody.SetPost(post)
 body := msgraphsdk.NewItemBody()
@@ -36,7 +36,7 @@ options := &msgraphsdk.ReplyRequestBuilderPostOptions{
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply().Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(options)
 
 
 ```

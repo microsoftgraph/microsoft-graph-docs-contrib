@@ -16,7 +16,7 @@ options := &msgraphsdk.UploadClientCertificateRequestBuilderPostOptions{
 	Body: requestBody,
 }
 identityApiConnectorId := "identityApiConnector-id"
-result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate().Post(options)
+result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate(identityApiConnector-id).Post(options)
 
 
 ```

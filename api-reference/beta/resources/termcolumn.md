@@ -1,11 +1,12 @@
 ---
 author: swapnil1993
-title:  "termColumn resource type"
-description: "The termColumn resource indicates that the column's values contains taxonomy data."
+title: termColumn resource type
+description: The termColumn resource indicates that the column's values contains taxonomy data.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "sites-and-lists"
+ms.prod: sites-and-lists
 ---
+
 # termColumn resource type
 
 Namespace: microsoft.graph
@@ -15,21 +16,22 @@ Indicates that the column's values contains taxonomy data.
 
 ## Properties
 
-| Property | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| allowMultipleValues | Boolean | Specifies whether the column will allow more than one value.
-| showFullyQualifiedName | Boolean | Specifies whether to display the entire term path or only the term label.  
+| Property               | Type                           | Description                                                               |
+| :--------------------- | :----------------------------- | :------------------------------------------------------------------------ |
+| allowMultipleValues    | Boolean                        | Specifies whether the column will allow more than one value               |
+| showFullyQualifiedName | Boolean                        | Specifies whether to display the entire term path or only the term label. |
 
 ## Relationships
 
 | Relationship   | Type                      | Description
 |:----------------|:--------------------------|:-------------------------------
 | parentTerm     | microsoft.graph.termStore.term | Specifies the parent term for which the child terms can be selected as the column value.
-| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value. 
+| termSet      | microsoft.graph.termStore.set | Termset whose children can be selected as column's value.
 
 ## JSON representation
 
 Here is a JSON representation of a **termColumn** resource.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.termColumn" } -->
 
 ```json
@@ -38,4 +40,3 @@ Here is a JSON representation of a **termColumn** resource.
     "showFullyQualifiedName": false,
 }
 ```
-
