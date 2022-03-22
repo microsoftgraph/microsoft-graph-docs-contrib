@@ -1,6 +1,40 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+              "ApiChange": "EnumType",
+              "ChangedApiName": "cloudPcManagementService",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcManagementService** enumeration type.",
+              "Target": "cloudPcManagementService"
+            },
+            {
+              "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+              "ApiChange": "Property",
+              "ChangedApiName": "managedBy",
+              "ChangeType": "Addition",
+              "Description": "Added the **managedBy** property to [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+              "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+                "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+                "ApiChange": "Property",
+                "ChangedApiName": "inUse",
+                "ChangeType": "Change",
+                "Description": "Changed the **inUse** property in the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) to nullable",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+          ],
+          "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-03-17T06:57:48.3702162Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
@@ -39,6 +73,32 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-14T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
+                "ApiChange": "Property",
+                "ChangedApiName": "subscriptionDisplayName",
+                "ChangeType": "Addition",
+                "Description": "Added the **subscriptionDisplayName** property to the [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                "Target": "cloudPcSourceDeviceImage"
+              },
+              {
+                "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
+                "ApiChange": "Property",
+                "ChangedApiName": "subscriptionId",
+                "ChangeType": "Addition",
+                "Description": "Added the **subscriptionId** property to the [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                "Target": "cloudPcSourceDeviceImage"
+              }
+            ],
+            "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-03-21T13:51:04.8137419Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
@@ -254,6 +314,32 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-02-15T14:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "windowsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **windowsSettings** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcWindowsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcWindowsSettings](https://docs.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcWindowsSettings"
+                }
+            ],
+            "Id": "f603db7f3dfe45e3a502ba9e94cfe4ad",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-03-21T15:38:03.127Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
