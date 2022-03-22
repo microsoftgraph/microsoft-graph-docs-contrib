@@ -7,7 +7,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "subscriptionDisplayName",
                 "ChangeType": "Addition",
-                "Description": "Added the **subscriptionDisplayName** property to [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                "Description": "Added the **subscriptionDisplayName** property to the [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
                 "Target": "cloudPcSourceDeviceImage"
               },
               {
@@ -15,14 +15,14 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "subscriptionId",
                 "ChangeType": "Addition",
-                "Description": "Added the **subscriptionId** property to [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+                "Description": "Added the **subscriptionId** property to the [cloudPcSourceDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
                 "Target": "cloudPcSourceDeviceImage"
               }
             ],
             "Id": "53dd7420-a83f-4198-a63c-7aa7cb0b4416",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2022-03-02T13:51:04.8137419Z",
+            "CreatedDateTime": "2022-03-21T13:51:04.8137419Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
