@@ -79,7 +79,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
       "id": "b3548526-e615-3785-3118-be70b3968ec5",
       "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
-      "enableConnection": "true",
+      "enableConnection": true,
       "lastSyncDateTime": "2020-11-03T12:43:14Z",
       "status": "active",
       "statusDetails": "The external partner is active"
@@ -88,7 +88,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
       "id": "dc6422cb-3001-45a7-9dcd-21207eea6b0e",
       "partnerId": "459a0e56-da26-4ba1-a729-8eeef733425b",
-      "enableConnection": "true",
+      "enableConnection": true,
       "lastSyncDateTime": "2020-11-03T12:43:14Z",
       "status": "unresponsive",
       "statusDetails": "The external partner is unresponsive"
