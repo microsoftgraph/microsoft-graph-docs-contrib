@@ -13738,8 +13738,8 @@ items:
             href: api/reportroot-getteamsuseractivitydistributionusercounts.md
           - name: Get distribution total user counts
             href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
-          - name: Get total distribution counts of Microsoft Teams user activity
-            href: api/reportroot-getTeamsUserActivityTotalDistributionCounts.md
+          - name: Get total distribution activity counts
+            href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:

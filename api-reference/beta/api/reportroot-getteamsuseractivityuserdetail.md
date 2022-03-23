@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserDetail(period='D7')
-GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
+GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
+GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
 ## Function parameters
@@ -47,13 +47,19 @@ In the request URL, provide one of the following parameters with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+## Optional query parameters
+
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter set to `text/csv` or `application/json`.
 
 ## Request headers
 
 | Name          | Description               |
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
 
 ## Response
 
@@ -66,8 +72,8 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Home Tenant Display Name
-- Resource Tenant Display Name
+- Tenant Name
+- Host Tenant Name
 - User Id
 - User Principal Name
 - Last Activity Date
@@ -105,9 +111,9 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 The default page size for this request is 2000 items.
 
-## Example
+## Examples
 
-### CSV
+### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
@@ -150,10 +156,10 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Home Tenant Display Name,Resource Tenant Display Name,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,Tenant Name,Host Tenant Name,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
-### JSON
+### Example 2: JSON output
 
 The following is an example that returns JSON.
 
@@ -193,8 +199,8 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "homeTenantDisplayName": "Microsoft",
-      "resourceTenantDisplayName": "SampleTenant",
+      "tenantName": "Microsoft",
+      "hostTenantName": "SampleTenant",
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 

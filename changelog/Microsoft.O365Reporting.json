@@ -7,7 +7,7 @@
 			  "ApiChange": "Method",
 			  "ChangedApiName": "getTeamsUserActivityTotalCounts",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** column to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
 			  "Target": "getTeamsUserActivityTotalCounts"
 		  },
 		  {
@@ -15,7 +15,7 @@
 			  "ApiChange": "Method",
 			  "ChangedApiName": "getTeamsUserActivityCounts",
 			  "ChangeType": "Addition",
-			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** column to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
 			  "Target": "getTeamsUserActivityCounts"
 		  },
 		  {
@@ -23,7 +23,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsUserActivityUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **Home Tenant Display Name**, **Resource Tenant Display Name**, **Post Messages**, **Reply Messages**, **Urgent Messages** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
+			"Description": "Added the **Tenant Name**, **Host Tenant Display**, **Post Messages**, **Reply Messages**, **Urgent Messages** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
 			"Target": "getTeamsUserActivityUserDetail"
 		 },
 		 {
