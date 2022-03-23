@@ -35,6 +35,15 @@ Namespace: microsoft.graph
 |allExternalUsers|
 |unknownFutureValue|
 
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|

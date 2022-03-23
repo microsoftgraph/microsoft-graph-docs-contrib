@@ -14,7 +14,7 @@ options := &msgraphsdk.GetAllMessagesRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().GetAllMessages()().Get(options)
+result, err := graphClient.TeamsById(&teamId).Channels().GetAllMessages()(team-id).Get(options)
 
 
 ```

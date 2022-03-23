@@ -25,6 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|accessPackageAssignmentApprovals|[approval](../resources/approval.md) collection | Approval stages for assignment requests.|
 |accessPackages|[accessPackage](../resources/accesspackage.md) collection|Represents access package objects.|
 |assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Access package assignment policies.|
 |assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Represents access package assignment requests created by or on behalf of a user.|
