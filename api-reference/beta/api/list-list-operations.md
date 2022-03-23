@@ -100,14 +100,10 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.richLongRunningOperation",
-      "id": "0x0101,contentTypeCopy",
-      "createdDateTime": "String (timestamp)",
-      "resourceLocation": "String",
-      "status": "String",
-      "percentageComplete": "Integer",
-      "resourceId": "String",
-      "type": "String"
+      "id": "contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE",
+      "createdDateTime": "2022-01-24T16:28:23Z",
+      "status": "notStarted",
+      "type": "contentTypeCopy"
     }
   ]
 }

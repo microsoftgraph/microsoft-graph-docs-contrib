@@ -28,8 +28,8 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
-|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
+|[Create](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
+|[List](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
@@ -58,13 +58,13 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|string|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
-|id|string|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
-|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
-|membershipType|String|Membership type for the administrative unit. Can be `dynamic` or `assigned`. If not set, default behavior is `Assigned`.|
-|membershipRule|String|Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).|
-|membershipRuleProcessingState|String|Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. If not set, default behavior is `Paused`.|
+|description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
+|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
+|id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
+| membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). |
+| membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. If not set, the default behavior is `Paused`. |
+| membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. If not set, the default behavior is `assigned`. |
+| visibility | String | Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, the default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -88,12 +88,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string",
-  "membershipType": "string",
-  "membershipRule": "string",
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String",
+  "membershipType": "String",
+  "membershipRule": "String",
   "membershipRuleProcessingState": "String"
 }
 

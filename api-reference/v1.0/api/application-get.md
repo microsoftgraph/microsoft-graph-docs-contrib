@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All    |
 |Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All |
 |Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
@@ -121,6 +121,11 @@ Content-type: application/json
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "verifiedPublisher": {
+            "displayName": "publisher_contoso",
+            "verifiedPublisherId": "9999999",
+             "addedDateTime": "2021-04-24T17:49:44Z"
+    },
     "tags": [],
     "tokenEncryptionKeyId": null,
     "api": {

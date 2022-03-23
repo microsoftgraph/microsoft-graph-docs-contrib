@@ -235,6 +235,48 @@
     {
       "ChangeList":[
         {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bundle",
+          "ChangeType": "addition",
+          "Description": "Added the [bundle](https://docs.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "bundle"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "album",
+          "ChangeType": "addition",
+          "Description": "Added the [album](https://docs.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-1.0) resource.",
+          "Target": "album"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bundles",
+          "ChangeType": "addition",
+          "Description": "Added the **bundles** navigation property to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Target": "drive"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Property",
+          "ChangedApiName": "bundle",
+          "ChangeType": "addition",
+          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-03-16T00:00:00.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
           "ApiChange": "Parameter",
           "ChangedApiName": "type",
@@ -2340,51 +2382,27 @@
     {
       "ChangeList": [
         {
-          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "Id": "307e33be-6bd7-42a0-b4d7-74b244dbdf79",
           "ApiChange": "Relationship",
-          "ChangedApiName": "operations",
+          "ChangedApiName": "parentTerm",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
-          "Target": "list"
+          "Description": "Added the **parentTerm** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
+          "Target": "termColumn"
         },
         {
-          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
-          "ApiChange": "Resource",
-          "ChangedApiName": "richLongRunningOperation",
-          "ChangeType": "Addition",
-          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-beta) resource",
-          "Target": "richLongRunningOperation"
-        },
-        {
-          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+          "Id": "307e33be-6bd7-42a0-b4d7-74b244dbdf79",
           "ApiChange": "Relationship",
-          "ChangedApiName": "operations",
+          "ChangedApiName": "termSet",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
-          "Target": "site"
-        },
-        {
-          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
-          "ApiChange": "Method",
-          "ChangedApiName": "addCopyFromContentTypeHub",
-          "ChangeType": "Addition",
-          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
-          "Target": "contentType"
-        },
-        {
-          "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
-          "ApiChange": "Method",
-          "ChangedApiName": "getCompatibleHubContentTypes",
-          "ChangeType": "Addition",
-          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource.",
-          "Target": "contentType"
+          "Description": "Added the **termSet** relationship to the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource.",
+          "Target": "termColumn"
         }
       ],
-      "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
+      "Id": "307e33be-6bd7-42a0-b4d7-74b244dbdf79",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-01-20T05:57:29.5959903Z",
-      "WorkloadArea": "Files",
+      "CreatedDateTime": "2022-03-22T05:16:31.2660118Z",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }
   ]

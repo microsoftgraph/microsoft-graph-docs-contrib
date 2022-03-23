@@ -12,6 +12,7 @@ $params = @{
 	ContentBytes = "a0b1c76de9f7="
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

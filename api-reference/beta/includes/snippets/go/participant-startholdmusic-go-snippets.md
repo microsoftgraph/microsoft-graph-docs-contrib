@@ -20,7 +20,7 @@ options := &msgraphsdk.StartHoldMusicRequestBuilderPostOptions{
 }
 callId := "call-id"
 participantId := "participant-id"
-result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).StartHoldMusic(call-id, participant-id).Post(options)
 
 
 ```

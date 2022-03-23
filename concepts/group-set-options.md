@@ -5,7 +5,7 @@ author: "Jordanndahl"
 ms.localizationpriority: high
 ---
 
-# Set Microsoft 365 group behaviors and provisioning options (preview)
+# Set Microsoft 365 group behaviors and provisioning options
 
 Using the [group](/graph/api/resources/group) resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group. Depending on the resource, some can also be provisioned on group update.
 

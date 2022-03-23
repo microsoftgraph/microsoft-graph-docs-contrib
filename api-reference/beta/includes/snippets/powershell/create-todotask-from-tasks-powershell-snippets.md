@@ -17,6 +17,7 @@ $params = @{
 	)
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
 
 ```

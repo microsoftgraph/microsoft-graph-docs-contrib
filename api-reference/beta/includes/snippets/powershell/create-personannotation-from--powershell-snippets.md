@@ -14,6 +14,7 @@ $params = @{
 	DisplayName = "About Me"
 }
 
+# A UPN can also be used as -UserId.
 New-MgUserProfileNote -UserId $userId -BodyParameter $params
 
 ```
