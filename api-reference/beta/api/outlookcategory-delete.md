@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories/4b1c2495-54c
 [!INCLUDE [sample-code](../includes/snippets/go/delete-outlookcategory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-outlookcategory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

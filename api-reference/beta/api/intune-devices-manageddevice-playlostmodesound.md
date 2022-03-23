@@ -1,6 +1,6 @@
 ---
 title: "playLostModeSound action"
-description: "Remote lock"
+description: "Play lost mode sound"
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Remote lock
+Play lost mode sound
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,15 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|durationInMinutes|String|Not yet documented|
+
+
 
 ## Response
 If successful, this action returns a `204 No Content` response code.
@@ -59,6 +67,13 @@ If successful, this action returns a `204 No Content` response code.
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/playLostModeSound
+
+Content-type: application/json
+Content-length: 56
+
+{
+  "durationInMinutes": "Duration In Minutes value"
+}
 ```
 
 ### Response

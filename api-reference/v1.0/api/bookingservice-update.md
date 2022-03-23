@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/services/{id}
+PATCH /solutions/bookingBusinesses/{id}/services/{id}
 ```
 ## Request headers
 | Name       | Description|

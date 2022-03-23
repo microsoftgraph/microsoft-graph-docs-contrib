@@ -22,6 +22,8 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
+For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+
 **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
@@ -33,6 +35,7 @@ For example:
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 
 >**Note:** In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
+
 
 ## Methods
 
@@ -72,13 +75,14 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
+| bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
 | content              | Stream             | The content stream, if the item represents a file.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
 | deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
+| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
 | eTag                 | String             | eTag for the entire item (metadata + content). Read-only.
 | file                 | [file][]           | File metadata, if the item is a file. Read-only.
 | fileSystemInfo       | [fileSystemInfo][] | File system information on client. Read-write.
@@ -153,7 +157,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds", "source", "media"],
@@ -162,6 +166,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 ```json
 {  
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -222,6 +227,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[bundle]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemSource]: driveItemSource.md

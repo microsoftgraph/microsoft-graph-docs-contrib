@@ -1,6 +1,6 @@
 ---
 title: "Remove member"
-description: "Use this API to remove a member from a group via the **members** navigation property."
+description: "Remove a member from a group via the members navigation property."
 ms.localizationpriority: high
 author: "Jordanndahl"
 ms.prod: "groups"
@@ -11,16 +11,19 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
+Remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> To remove members from a role-assignable group, the calling user or app must also be assigned the *RoleManagement.ReadWrite.Directory* permission.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

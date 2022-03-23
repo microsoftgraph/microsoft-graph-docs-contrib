@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5726
+Content-Length: 5775
 
 {
   "value": [
@@ -203,7 +203,8 @@ Content-Length: 5726
       "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
       "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
       "touchIdTimeoutInHours": 5,
-      "iCloudPrivateRelayBlocked": true
+      "iCloudPrivateRelayBlocked": true,
+      "iCloudDesktopAndDocumentsBlocked": true
     }
   ]
 }

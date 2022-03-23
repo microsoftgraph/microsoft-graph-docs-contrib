@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 | Delegated (personal Microsoft account) | Application.Read.All and User.Read, Application.ReadWrite.All and User.Read  |
 | Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/applications
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -197,6 +201,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -265,6 +273,10 @@ ConsistencyLevel: eventual
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-web-count-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-web-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

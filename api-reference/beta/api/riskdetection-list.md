@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-riskdetection-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

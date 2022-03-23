@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Configure the scope of your access review using the Microsoft Graph API
 
-The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
+The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
 
 The resources to review are configured in the **scope** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope), an abstract type inherited by the following resources that can be used to configure resources or groups of resources that access will be reviewed against.
 
@@ -136,7 +136,7 @@ Because this review is applied on inactive users, use the **accessReviewInactive
 
 Because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Note that dynamic groups and role-assignable groups are not included in this review.
 
-### Example 8: Review all assignemnt to Entitlement Management access packages
+### Example 8: Review all assignment to Entitlement Management access packages
 
 ```http
 "scope": {

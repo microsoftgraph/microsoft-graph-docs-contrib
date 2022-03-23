@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.
 ## Permissions
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -138,6 +142,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -207,6 +215,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -272,6 +284,10 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignments-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-privilegedroleassignments-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

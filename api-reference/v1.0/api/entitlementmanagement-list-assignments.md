@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects.
 
 For directory-wide administrators, the resulting list includes all the assignments, current and well as expired, that the caller has access to read, across all catalogs and access packages.  If the caller is on behalf of a delegated user who is assigned only to catalog-specific delegated administrative roles, the request must supply a filter to indicate a specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

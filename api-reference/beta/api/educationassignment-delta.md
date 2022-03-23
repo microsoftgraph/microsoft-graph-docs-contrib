@@ -73,7 +73,7 @@ Use the `$top` parameter to specify the number of assignments to be returned. Th
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$top=2
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-delta-csharp-snippets.md)]
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/education/education/classes/72a7baec-c3e9-4
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -251,6 +255,10 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -406,6 +414,10 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

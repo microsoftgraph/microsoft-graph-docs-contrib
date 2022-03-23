@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMemberOf
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivememberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

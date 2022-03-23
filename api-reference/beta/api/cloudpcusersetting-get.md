@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettin
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcusersetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcusersetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,6 +116,10 @@ Content-Type: application/json
     "displayName": "String",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -152,6 +160,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/usersettin
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcusersetting-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcusersetting-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -176,6 +188,10 @@ Content-Type: application/json
     "displayName": "Display Name value",
     "selfServiceEnabled": true,
     "localAdminEnabled": false,
+    "restorePointSetting": {
+      "frequencyInHours": 16,
+      "userRestoreEnabled": true
+    },
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",
     "assignments": [

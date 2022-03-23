@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 [!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-methods-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 [!INCLUDE [sample-code](../includes/snippets/go/get-acceptedsenders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-acceptedsenders-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

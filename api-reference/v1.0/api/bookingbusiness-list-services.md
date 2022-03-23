@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/services
+GET /solutions/bookingBusinesses/{id}/services
 ```
 ## Optional query parameters
 This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -90,8 +90,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",
@@ -131,8 +129,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",
@@ -179,8 +175,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",

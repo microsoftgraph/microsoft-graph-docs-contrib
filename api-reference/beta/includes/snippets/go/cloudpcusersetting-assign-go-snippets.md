@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewAssignmentsRequestBody()
 requestBody.SetAssignments( []CloudPcUserSettingAssignment {
 	msgraphsdk.NewCloudPcUserSettingAssignment(),
 	SetAdditionalData(map[string]interface{}{
@@ -18,7 +18,7 @@ options := &msgraphsdk.AssignRequestBuilderPostOptions{
 	Body: requestBody,
 }
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Assign().Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Assign(cloudPcUserSetting-id).Post(options)
 
 
 ```

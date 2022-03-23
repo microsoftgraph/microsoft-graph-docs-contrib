@@ -44,6 +44,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [chatMessage][]
 - Teams [conversationMember][]
 - Teams [presence][]
+- Teams [onlineMeeting][]
 - Teams [team][]
 - [todoTask][] (preview)
 - [user][]
@@ -55,7 +56,7 @@ Or to a top-level resource:
 `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`, `/communications/onlinemeeting/{meeting-id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -325,6 +326,7 @@ The following table lists the latency to expect between an event happening in th
 |[group][] | Less than 2 minutes | 15 minutes |
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
+|[onlineMeeting][] | Less than 10 seconds | 1 minute |
 |[presence][] | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
@@ -363,3 +365,4 @@ The following table lists the latency to expect between an event happening in th
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team
+[onlineMeeting]: /graph/api/resources/onlinemeeting

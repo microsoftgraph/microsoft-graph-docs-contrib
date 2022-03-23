@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Application.ReadWrite.All    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -82,6 +82,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-application-from-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-application-from-applications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,7 +155,8 @@ Content-type: application/json
             "enableIdTokenIssuance": false,
             "enableAccessTokenIssuance": false
         }
-    }
+    }, 
+    "windows" : null
 }
 ```
 

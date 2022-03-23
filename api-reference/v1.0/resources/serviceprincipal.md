@@ -80,12 +80,12 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |:---------------|:--------|:----------|
 | accountEnabled |Boolean| `true` if the service principal account is enabled; otherwise, `false`. Supports `$filter` (`eq`, `ne`, `not`, `in`).|
 | addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
-|alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity). Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+|alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](/azure/active-directory/managed-identities-azure-resources/overview). Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |appDescription|String|The description exposed by the associated application.|
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property). Supports `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`).|
 |applicationTemplateId|String|Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only. Supports `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
-|appOwnerOrganizationId|String|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
+|appOwnerOrganizationId|Guid|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications. Supports `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `NOT`). |
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
@@ -104,6 +104,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 |preferredSingleSignOnMode|string|Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are `password`, `saml`, `notSupported`, and `oidc`.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
+|resourceSpecificApplicationPermissions|[resourceSpecificPermission](../resources/resourcespecificpermission.md) collection|The resource-specific application permissions exposed by this application. Currently, resource-specific permissions are only supported for [Teams apps accessing to specific chats and teams](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) using Microsoft Graph. Read-only.|
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on.|
 |servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,<ul><li>Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the “aud” claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable. <br><br> Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |servicePrincipalType|String|Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. The **servicePrincipalType** property can be set to three different values: <ul><li>__Application__ - A service principal that represents an application or service. The **appId** property identifies the associated app registration, and matches the **appId** of an [application](application.md), possibly from a different tenant. If the associated app registration is missing, tokens are not issued for the service principal.</li><li>__ManagedIdentity__ - A service principal that represents a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview). Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.</li><li>__Legacy__ - A service principal that represents an app created before app registrations, or through legacy experiences. Legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration. The **appId** value does not associate the service principal with an app registration. The service principal can only be used in the tenant where it was created.</li><li>__SocialIdp__ - For internal use. </ul>|
@@ -151,26 +152,27 @@ Here is a JSON representation of the resource
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": ["string"] ,
-  "appDisplayName": "string",
-  "appId": "string",
-  "appOwnerOrganizationId": "guid",
+  "alternativeNames": ["String"] ,
+  "appDisplayName": "String",
+  "appId": "String",
+  "appOwnerOrganizationId": "Guid",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
-  "disabledByMicrosoftStatus": "string",
-  "displayName": "string",
-  "homepage": "string",
-  "id": "string (identifier)",
+  "disabledByMicrosoftStatus": "String",
+  "displayName": "String",
+  "homepage": "String",
+  "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "logoutUrl": "string",
-  "notes": "string",
+  "logoutUrl": "String",
+  "notes": "String",
   "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "replyUrls": ["string"],
-  "servicePrincipalNames": ["string"],
-  "servicePrincipalType": "string",
-  "tags": ["string"],
+  "replyUrls": ["String"],
+  "resourceSpecificApplicationPermissions": [{"@odata.type": "microsoft.graph.resourceSpecificPermission"}],
+  "servicePrincipalNames": ["String"],
+  "servicePrincipalType": "String",
+  "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }

@@ -10,7 +10,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -74,6 +74,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackageassignmentrequest-cancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackageassignmentrequest-cancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

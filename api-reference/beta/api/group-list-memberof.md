@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-memberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

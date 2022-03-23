@@ -29,19 +29,28 @@ One of the following permissions is required to call this API. To learn more, in
 POST /bookingBusinesses/{id}/appointments
 
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.
 
+If the maximum number of customers (**maximumAttedeesCount**) allowed in the [service](../resources/bookingservice.md) is greater than 1:
+
+- Make sure that the customers exist in the Booking Calendar. If they don’t, create using the [Create bookingCustomer](bookingbusiness-post-customers.md) operation.
+- Pass valid customer IDs when you create or update the appointment. If the customer ID is not valid, that customer won't be included in the appointment object.
 
 ## Response
+
 If successful, this method returns a `201 Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 
 ## Example
+
 ### Request
 The following is an example of the request. This appointment does not involve booking specific staff members.
 
@@ -232,6 +241,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingappointment-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingappointment-from-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscoveryPo
 [!INCLUDE [sample-code](../includes/snippets/go/list-homerealmdiscoverypolicies-on-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-homerealmdiscoverypolicies-on-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,16 +108,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "definition": [
-        "definition-value"
-      ],
-      "displayName": "displayName-value",
-      "isOrganizationDefault": true,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.homeRealmDiscoveryPolicy)",
+    "value": [
+        {
+            "id": "6c6f154f-cb39-4ff9-bf5b-62d5ad585cde",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"HomeRealmDiscoveryPolicy\":     {\"AccelerateToFederatedDomain\":true,      \"PreferredDomain\":\"federated.example.edu\",      \"AlternateIdLogin\":{\"Enabled\":true}}}"
+            ],
+            "displayName": "Contoso default HRD Policy",
+            "isOrganizationDefault": false
+        }
+    ]
 }
 ```
 

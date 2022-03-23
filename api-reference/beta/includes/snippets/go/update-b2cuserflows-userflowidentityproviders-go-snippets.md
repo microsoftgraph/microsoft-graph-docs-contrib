@@ -12,11 +12,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/{id}",
 	"@odata.type": "#microsoft.graph.identityProvider",
 }
-options := &msgraphsdk.RefRequestBuilderPatchOptions{
+options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserFlowIdentityProviders().$ref().Patch(options)
+identityProviderBaseId := "identityProviderBase-id"
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserFlowIdentityProvidersById(&identityProviderBaseId).Patch(options)
 
 
 ```

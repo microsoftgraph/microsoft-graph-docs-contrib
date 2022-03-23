@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.  The expiration field of an [entitlementManagementSchedule](entitlementmanagementschedule.md) indicates when the access package assignment should expire.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.  The expiration field of an [entitlementManagementSchedule](entitlementmanagementschedule.md) indicates when the access package assignment should expire.
 
 ## Properties
 |Property|Type|Description|

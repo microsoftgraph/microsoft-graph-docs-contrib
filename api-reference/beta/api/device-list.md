@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/devices
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -185,6 +189,10 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -369,6 +377,10 @@ ConsistencyLevel: eventual
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-by-extensionattribute-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-devices-by-extensionattribute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

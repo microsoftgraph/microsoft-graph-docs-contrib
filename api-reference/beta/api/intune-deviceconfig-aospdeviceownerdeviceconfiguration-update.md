@@ -64,9 +64,7 @@ The following table shows the properties that are required when you create the [
 |appsBlockInstallFromUnknownSources|Boolean|Indicates whether or not the user is allowed to enable unknown sources setting. When set to true, user is not allowed to enable unknown sources settings.|
 |bluetoothBlocked|Boolean|Indicates whether or not to disable the use of bluetooth. When set to true, bluetooth cannot be enabled on the device.|
 |bluetoothBlockConfiguration|Boolean|Indicates whether or not to block a user from configuring bluetooth.|
-|bluetoothBlockContactSharing|Boolean|Indicates whether or not to block a user from sharing contacts via bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
-|cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
@@ -76,7 +74,6 @@ The following table shows the properties that are required when you create the [
 |securityAllowDebuggingFeatures|Boolean|Indicates whether or not to block the user from enabling debugging features on the device.|
 |storageBlockExternalMedia|Boolean|Indicates whether or not to block external media.|
 |storageBlockUsbFileTransfer|Boolean|Indicates whether or not to block USB file transfer.|
-|backupBlocked|Boolean|Indicates whether or not to block backup service.|
 |wifiBlockEditConfigurations|Boolean|Indicates whether or not to block the user from editing the wifi connection settings.|
 
 
@@ -91,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1693
+Content-length: 1587
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -126,9 +123,7 @@ Content-length: 1693
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -138,7 +133,6 @@ Content-length: 1693
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
@@ -148,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1865
+Content-Length: 1759
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -186,9 +180,7 @@ Content-Length: 1865
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -198,7 +190,6 @@ Content-Length: 1865
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```

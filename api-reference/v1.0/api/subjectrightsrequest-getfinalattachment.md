@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `302` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200` response code.
 
 ## Examples
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/subjectrightsrequest-getfinalattachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/subjectrightsrequest-getfinalattachment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -84,6 +88,6 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 302 
+HTTP/1.1 200 
 ```
 

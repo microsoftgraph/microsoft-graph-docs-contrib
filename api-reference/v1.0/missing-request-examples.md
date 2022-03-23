@@ -41,6 +41,10 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/go/get-current-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-current-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -79,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-drive-from-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-drive-from-id-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,6 +128,10 @@ GET https://graph.microsoft.com/v1.0/users/{user-id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-users-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-users-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

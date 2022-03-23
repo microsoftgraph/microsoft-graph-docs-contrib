@@ -27,6 +27,7 @@ Windows Driver Update Profile
 |[Update windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Update the properties of a [windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md) object.|
 |[assign action](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|None|Not yet documented|
 |[executeAction action](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Not yet documented|
+|[syncInventory action](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|None|Sync the driver inventory of a WindowsDriverUpdateProfile.|
 
 ## Properties
 |Property|Type|Description|

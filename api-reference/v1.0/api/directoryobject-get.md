@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All |
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryobject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryobject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

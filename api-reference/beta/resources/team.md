@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 A team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a [group](../resources/group.md). The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
+Every team is associated with a [Microsoft 365 group](../resources/group.md). The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create team](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
-|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing Microsoft 365 group.|
 |[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../api/group-delete.md) | None |Delete the team and its associated group. |
@@ -66,6 +66,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |classSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a class.|
 |isMembershipLimitedToOwners|Boolean|If set to `true`, the team is currently in the owner-only team membership state and not accessible by other team members, such as students.|
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
 
 ### Instance attributes
 
@@ -81,7 +82,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
+|channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
@@ -122,7 +123,8 @@ The following is a JSON representation of the resource.
   "visibility": "string",
   "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"},
   "isMembershipLimitedToOwners":"boolean",
-  "createdDateTime": "dateTimeOffset"
+  "createdDateTime": "dateTimeOffset",
+  "summary":  {"@odata.type": "microsoft.graph.teamSummary"}
 }
 ```
 

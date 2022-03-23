@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /oAuth2Permissiongrants/{id}
+DELETE /oAuth2PermissionGrants/{id}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ Here is an example of the request.
   "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-oauth2permissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-oauth2permissiongrant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -30,12 +30,12 @@ Contains properties for User state of the hardware configuration
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the hardware configuration script user state entity. This property is read-only.|
-|upn|String|User Principal Name (UPN)|
-|userEmail|String|User Email address|
+|upn|String|User Principal Name (UPN).|
+|userEmail|String|User Email address.|
 |userName|String|User name|
 |lastStateUpdateDateTime|DateTimeOffset|Last timestamp when the hardware configuration executed|
-|successfulDeviceCount|Int32|Success device count for specific user|
-|failedDeviceCount|Int32|Failed device count for specific user|
+|successfulDeviceCount|Int32|Success device count for specific user.|
+|failedDeviceCount|Int32|Failed device count for specific user.|
 |pendingDeviceCount|Int32|Pending device count for specific user.|
 |errorDeviceCount|Int32|Error device count for specific user.|
 |notApplicableDeviceCount|Int32|Not applicable device count for specific user.|
