@@ -838,8 +838,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/application-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/application-removepassword.md
           - name: Add key
             href: api/application-addkey.md
@@ -931,8 +933,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/serviceprincipal-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/serviceprincipal-removepassword.md
           - name: Add key
             href: api/serviceprincipal-addkey.md
