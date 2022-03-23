@@ -5353,18 +5353,18 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
-            - name: Access review instance decision item
-              displayName: access review decisions
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
-              - name: Get
-                href: api/accessreviewinstancedecisionitem-get.md
-              - name: List
-                href: api/accessreviewinstance-list-decisions.md
-              - name: Update
-                href: api/accessreviewinstancedecisionitem-update.md
-              - name: Filter by current user
-                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review instance decision item
+            displayName: access review decisions
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:
