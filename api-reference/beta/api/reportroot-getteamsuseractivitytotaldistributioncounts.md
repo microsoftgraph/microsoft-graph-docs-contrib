@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsUserActivityTotalDistributionCounts"
-description: "Get total distribution counts of Microsoft Teams user activity in a specific time period."
+description: "Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "zhiliqiao"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get total distribution counts of Microsoft Teams user activity in a specific time period.
+Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages.
 
 ## Permissions
 
@@ -24,14 +24,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityTotalDistributionCounts(period='D7')
+GET /reports/getTeamsUserActivityTotalDistributionCounts(period='{period_value}')
 ```
 
 ## Function parameters
@@ -40,7 +40,7 @@ In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7, D30, D90, and D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required.|
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required.|
 
 ## Optional query parameters
 
@@ -80,7 +80,7 @@ The CSV file has the following headers for columns:
 - Reply Messages
 - Report Period
 
-### Example 2: JSON output
+### JSON
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
@@ -134,7 +134,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Meetings Organized,Meetings Attended,Audio Duration,Video Duration,Screen Share Duration,Post Messages,Reply Messages,Report Period
 ```
 
-### JSON
+### Example 2: JSON output
 
 The following is an example that returns JSON.
 
