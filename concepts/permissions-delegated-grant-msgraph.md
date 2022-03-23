@@ -9,7 +9,9 @@ ms.custom: template-how-to
 
 # How-To: Grant delegated permissions programmatically
 
-Use the following instructions to grant to an app delegated permissions that are exposed by an API. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
+When you grant API permissions to a client app or user in Azure Active Directory (Azure AD), they're recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+
+Use the following instructions to grant delegated permissions that are exposed by an API to an app. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -140,6 +142,12 @@ Content-type: application/json
 }
 ```
 
+To confirm the delegated permissions assigned to the service principal, you run the following request.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 'ef969797-201d-4f6b-960c-e9ed5f31dab5'
+```
+
 ## Step 4 [Optional]: Grant more delegated permissions to the service principal
 
 In this step, we'll also grant the `AuditLog.Read.All` Microsoft Graph delegated permission to our service principal on behalf of all users in the tenant.
@@ -167,7 +175,6 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-
 ## Step 5 [Optional]: Create an app role assignment for a user to the app
 
 This step assigns the app to a user identified by principal ID `4f74691a-6111-4a08-b59c-2a89c9bc6c19`. This assignment allows the user to see the app on the [MyApps portal](https://myapps.microsoft.com/) and access the app as if the app is configured to require user assignment.
@@ -185,6 +192,12 @@ Content-Type: application/json
     "resourceId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
+```
+
+To confirm all users who have a role assignment to the app, run the following request.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals/ef969797-201d-4f6b-960c-e9ed5f31dab5/appRoleAssignedTo
 ```
 
 ### Response

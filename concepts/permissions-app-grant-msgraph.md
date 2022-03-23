@@ -9,7 +9,9 @@ ms.custom: template-how-to
 
 # How-To: Grant API application permissions programmatically
 
-Use the following instructions to grant to an app application permissions that are exposed by an API. Application permissions allow an app to call an API with its own identity, and may sometimes be called app roles, app-only permissions, or direct access permissions.
+When you grant API permissions to a client app or user in Azure Active Directory (Azure AD), they're recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+
+Use the following instructions to grant application permissions that are exposed by an API to an app. Application permissions allow an app to call an API with its own identity, and may sometimes be called app roles, app-only permissions, or direct access permissions.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -145,6 +147,12 @@ Content-type: application/json
     "resourceDisplayName": "Microsoft Graph",
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39"
 }
+```
+
+To confirm all apps with a role assignment to the app, run the following request.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals/943603e4-e787-4fe9-93d1-e30f749aae39/appRoleAssignedTo
 ```
 
 ## Conclusion
