@@ -10226,16 +10226,16 @@ items:
           - name: Update
             href: api/cloudpcorganizationsettings-update.md
         - name: Cloud PC external partner settings
-        - href: resources/cloudpcexternalpartnersettings.md
+          href: resources/cloudpcexternalpartnersetting.md
           items:
           - name: List
             href: api/virtualendpoint-list-externalpartnersettings.md
           - name: Get
-            href: api/cloudpcexternalpartnersettings-get.md
+            href: api/cloudpcexternalpartnersetting-get.md
           - name: Create
             href: api/virtualendpoint-post-externalpartnersettings.md
           - name: Update
-            href: api/cloudpcexternalpartnersettings-update.md
+            href: api/cloudpcexternalpartnersetting-update.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
