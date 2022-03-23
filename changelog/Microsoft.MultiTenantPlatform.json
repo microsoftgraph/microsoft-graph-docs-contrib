@@ -39,7 +39,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-03-04T15:17:41.9924643Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Multi-tenant management"
           },
         {
@@ -65,7 +65,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2021-11-17T19:03:49.1166069Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     },
     {
@@ -515,7 +515,7 @@
             "Cloud": "prd",
             "Version": "Beta",
             "CreatedDateTime": "2021-07-13T16:09:23.569Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Multi-tenant management"
         },
         {
@@ -541,7 +541,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2021-12-06T23:54:12.684464Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Multi-tenant management"
         }
     ]
