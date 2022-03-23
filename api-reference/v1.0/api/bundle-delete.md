@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-title: Delete bundle
-description: Delete a bundle of driveItems
+author: "JeremyKelley"
+title: "Delete bundle"
+description: "Delete a bundle of driveItems."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -38,30 +38,34 @@ DELETE /drive/items/{bundle-id}
 
 | Name          | Description  |
 |:------------- |:------------ |
-| Authorization | Bearer \{token\}. Required. |
-| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.
+| Authorization | Bearer {token}. Required. |
+| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.|
 
 ## Request body
 
-Do not supply a request body with this method.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-For information about error responses, see [Error responses][error-response].
+For information about error responses, see [Microsoft Graph error responses and resource types][error-response].
 
 ## Example
 
 ### Request
 
+The following is an example of a request.
+
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
+DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response" } -->
 
