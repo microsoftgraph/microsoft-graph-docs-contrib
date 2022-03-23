@@ -1,9 +1,9 @@
 ---
 title: "itemIdResolver resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: Defines the rules for resolving a given URL to a connector item's id."
+author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the rules for resolving a given URL to a connector item's id.
 
 
 Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).
@@ -21,9 +21,9 @@ Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|itemId|String|**TODO: Add Description**|
-|priority|Int32|**TODO: Add Description** Inherited from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).|
-|urlMatchInfo|[microsoft.graph.externalConnectors.urlMatchInfo](../resources/externalconnectors-urlmatchinfo.md)|**TODO: Add Description**|
+|itemId|String|Pattern representing the item id.|
+|priority|Int32|Priority of each urlToItemResolverBase instance. Inherited from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).|
+|urlMatchInfo|[microsoft.graph.externalConnectors.urlMatchInfo](../resources/externalconnectors-urlmatchinfo.md)|Configurations to match and resolve URL.|
 
 ## Relationships
 None.
@@ -45,4 +45,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

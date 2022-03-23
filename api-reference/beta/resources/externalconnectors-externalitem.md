@@ -33,10 +33,12 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | content    | [microsoft.graph.externalConnectors.externalItemContent](externalconnectors-externalitemcontent.md) | A plain-text  representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID of the item within the containing [externalConnection](externalconnectors-externalconnection.md). Must be alphanumeric and a maximum of 128 characters. Required. |
 | properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](externalconnectors-schema.md) defined for the [externalConnection](externalconnectors-externalconnection.md). Required. |
+| activities        | [microsoft.graph.externalConnectors.externalActivityBase](externalconnectors-externalActivity.md) collection               | An array of activities performed involving this item. Activities are write-only and additively updates the item with new activities on subsequent calls. Response will contain an array of results. |
 
 ## Relationships
-
-None.
+| Relationship | Type                                                     | Description |
+|:-------------|:---------------------------------------------------------|:---|
+| activities        | [microsoft.graph.externalConnectors.externalActivityBase](externalconnectors-externalActivity.md) collection               | Write-only property. Returns results. |
 
 ## JSON representation
 
@@ -63,6 +65,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "properties": "Object",
   "content": { "@odata.type": "microsoft.graph.externalConnectors.externalItemContent" }
+  "activities": { "@odata.type": "Collection(microsoft.graph.externalConnectors.externalActivityBase)" }
 }
 ```
 

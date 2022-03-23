@@ -1,9 +1,9 @@
 ---
 title: "activitySettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "**Collects configurable settings related to activities involving connector content."
+author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Collects configurable settings related to activities involving connector content.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|urlToItemResolvers|[microsoft.graph.externalConnectors.urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md) collection|**TODO: Add Description**|
+|urlToItemResolvers|[microsoft.graph.externalConnectors.urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md) collection|Specifies configurations to identify an externalItem based on a shared URL|
 
 ## Relationships
 None.
@@ -40,4 +40,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

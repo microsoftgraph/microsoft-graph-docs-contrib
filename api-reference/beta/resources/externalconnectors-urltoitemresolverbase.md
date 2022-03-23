@@ -1,10 +1,11 @@
 ---
 title: "urlToItemResolverBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "**Defines the rules for resolving a given URL to a connector item."
+author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "search"
 doc_type: resourcePageType
+---
 ---
 
 # urlToItemResolverBase resource type
@@ -13,13 +14,13 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines the rules for resolving a given URL to a connector item.
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|**TODO: Add Description**|
+|priority|Int32|Priority of each urlToItemResolverBase instance. |
 
 ## Relationships
 None.
@@ -37,4 +38,3 @@ The following is a JSON representation of the resource.
   "priority": "Integer"
 }
 ```
-
