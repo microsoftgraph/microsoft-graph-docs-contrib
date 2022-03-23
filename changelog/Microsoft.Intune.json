@@ -3,6 +3,280 @@
     {
       "ChangeList": [
         {
+          "Id": "dfd7a8f8-d29e-41d0-927a-067624ac6d58",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "windowsDriverUpdateProfileInventorySyncState",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsDriverUpdateProfileInventorySyncState** enumeration type.",
+          "Target": "windowsDriverUpdateProfileInventorySyncState"
+        },
+        {
+          "Id": "dfd7a8f8-d29e-41d0-927a-067624ac6d58",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsDriverUpdateProfileInventorySyncStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsDriverUpdateProfileInventorySyncStatus](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsDriverUpdateProfileInventorySyncStatus?view=graph-rest-beta) resource type.",
+          "Target": "windowsDriverUpdateProfileInventorySyncStatus"
+        },
+        {
+          "Id": "dfd7a8f8-d29e-41d0-927a-067624ac6d58",
+          "ApiChange": "Property",
+          "ChangedApiName": "inventorySyncStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **inventorySyncStatus** property to [windowsDriverUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsDriverUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsDriverUpdateProfile"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoUnlockWithWatchDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoUnlockWithWatchDisabled** property to [depMacOSEnrollmentProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-depMacOSEnrollmentProfile?view=graph-rest-beta) resource.",
+          "Target": "depMacOSEnrollmentProfile"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceAccountPassword",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceAccountPassword** property to [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceAccountUpn",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceAccountUpn** property to [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceFriendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceFriendlyName** property to [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateDeviceProperties",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **updateDeviceProperties** method from the [updateDeviceProperties](https://docs.microsoft.com/en-us/graph/api/intune-updateDeviceProperties?view=graph-rest-beta) resource.",
+          "Target": "updateDeviceProperties"
+        },
+        {
+          "Id": "6f87b37a-eb2e-4b6c-8941-c8383befa68e",
+          "ApiChange": "Method",
+          "ChangedApiName": "updateDeviceProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateDeviceProperties](https://docs.microsoft.com/en-us/graph/api/intune-updateDeviceProperties?view=graph-rest-beta) method to the [updateDeviceProperties](https://docs.microsoft.com/en-us/graph/api/intune-updateDeviceProperties?view=graph-rest-beta) resource.",
+          "Target": "updateDeviceProperties"
+        },
+        {
+          "Id": "7879bc8a-429f-4a9e-8a3d-53ebef3261d0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAttachRBACState",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAttachRBACState](https://docs.microsoft.com/en-us/graph/api/resources/intune-tenantAttachRBACState?view=graph-rest-beta) resource type.",
+          "Target": "tenantAttachRBACState"
+        },
+        {
+          "Id": "7879bc8a-429f-4a9e-8a3d-53ebef3261d0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAttachRBAC",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantAttachRBAC** relationship to [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "7879bc8a-429f-4a9e-8a3d-53ebef3261d0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantAttachRBAC",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantAttachRBAC](https://docs.microsoft.com/en-us/graph/api/resources/intune-tenantAttachRBAC?view=graph-rest-beta) resource",
+          "Target": "tenantAttachRBAC"
+        },
+        {
+          "Id": "7879bc8a-429f-4a9e-8a3d-53ebef3261d0",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Addition",
+          "Description": "Added the [enable](https://docs.microsoft.com/en-us/graph/api/intune-enable?view=graph-rest-beta) method to the [enable](https://docs.microsoft.com/en-us/graph/api/intune-enable?view=graph-rest-beta) resource.",
+          "Target": "enable"
+        },
+        {
+          "Id": "7879bc8a-429f-4a9e-8a3d-53ebef3261d0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getState",
+          "ChangeType": "Addition",
+          "Description": "Added the [getState](https://docs.microsoft.com/en-us/graph/api/intune-getState?view=graph-rest-beta) method to the [getState](https://docs.microsoft.com/en-us/graph/api/intune-getState?view=graph-rest-beta) resource.",
+          "Target": "getState"
+        },
+        {
+          "Id": "f35d9b9b-c5ae-440f-8010-6c01f13c254b",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "deviceManagementConfigurationSecretSettingValueState",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSecretSettingValueState** enumeration type.",
+          "Target": "deviceManagementConfigurationSecretSettingValueState"
+        },
+        {
+          "Id": "f35d9b9b-c5ae-440f-8010-6c01f13c254b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSecretSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSecretSettingValue](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationSecretSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSecretSettingValue"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "aospDeviceOwnerWiFiSecurityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **aospDeviceOwnerWiFiSecurityType** enumeration type.",
+          "Target": "aospDeviceOwnerWiFiSecurityType"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "kioskModeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **kioskModeType** enumeration type.",
+          "Target": "kioskModeType"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "wiredNetworkAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **wiredNetworkAuthenticationMethod** enumeration type.",
+          "Target": "wiredNetworkAuthenticationMethod"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "wiredNetworkAuthenticationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **wiredNetworkAuthenticationType** enumeration type.",
+          "Target": "wiredNetworkAuthenticationType"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "kioskModeUseManagedHomeScreenApp",
+          "ChangeType": "Addition",
+          "Description": "Added the **kioskModeUseManagedHomeScreenApp** property to [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateValidityPeriodScale",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateValidityPeriodScale** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateValidityPeriodValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateValidityPeriodValue** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "extendedKeyUsages",
+          "ChangeType": "Addition",
+          "Description": "Added the **extendedKeyUsages** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "renewalThresholdPercentage",
+          "ChangeType": "Addition",
+          "Description": "Added the **renewalThresholdPercentage** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectAlternativeNameType",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectAlternativeNameType** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectNameFormat",
+          "ChangeType": "Addition",
+          "Description": "Added the **subjectNameFormat** property to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rootCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the **rootCertificate** relationship to [aospDeviceOwnerCertificateProfileBase](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerCertificateProfileBase?view=graph-rest-beta) resource.",
+          "Target": "aospDeviceOwnerCertificateProfileBase"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerEnterpriseWiFiConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerEnterpriseWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerEnterpriseWiFiConfiguration?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerEnterpriseWiFiConfiguration"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerScepCertificateProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerScepCertificateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerScepCertificateProfile?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerScepCertificateProfile"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aospDeviceOwnerWiFiConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [aospDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-aospDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource",
+          "Target": "aospDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "988cb7c3-e50f-4e9f-bfe3-fe9a99fc2937",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsWiredNetworkConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsWiredNetworkConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsWiredNetworkConfiguration?view=graph-rest-beta) resource",
+          "Target": "windowsWiredNetworkConfiguration"
+        },
+        {
+          "Id": "981faa0b-dd13-481f-aed0-c0106cbd31da",
+          "ApiChange": "Property",
+          "ChangedApiName": "v15_0",
+          "ChangeType": "Addition",
+          "Description": "Added the **v15_0** property to [iosMinimumOperatingSystem](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosMinimumOperatingSystem?view=graph-rest-beta) resource.",
+          "Target": "iosMinimumOperatingSystem"
+        }
+      ],
+      "Id": "981faa0b-dd13-481f-aed0-c0106cbd31da",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-21T19:31:11.5427286Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "089ae336-9c5f-4c6f-afd6-12ed9c196b14",
           "ApiChange": "EnumType",
           "ChangedApiName": "deviceEnrollmentConfigurationType",
