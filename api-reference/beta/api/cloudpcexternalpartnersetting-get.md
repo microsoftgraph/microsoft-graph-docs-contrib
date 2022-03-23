@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcExternalPartnerSetting](../resources/intune-cloudpcexternalpartnersetting.md) object.
+Read the properties and relationships of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/virtualEndpoint/externalPartnerSettings/{cloudPcExternalPartnerSettingId}
+GET /deviceManagement/virtualEndpoint/externalPartnerSettings/{id}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPcExternalPartnerSetting](../resources/intune-cloudpcexternalpartnersetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcExtern
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartnerSettings/{cloudPcExternalPartnerSettingId}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartnerSettings/{id}
 ```
 
 
@@ -74,15 +74,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
-    "id": "b3548526-e615-3785-3118-be70b3968ec5",
-    "partnerId": "String",
-    "enableConnection": "Boolean",
-    "lastSyncDateTime": "String (timestamp)",
-    "status": "String",
-    "statusDetails": "String"
-  }
+  "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
+  "id": "b3548526-e615-3785-3118-be70b3968ec5",
+  "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+  "enableConnection": "true",
+  "lastSyncDateTime": "2020-11-03T12:43:14Z",
+  "status": "active",
+  "statusDetails": "The external partner is active"
 }
 ```
-

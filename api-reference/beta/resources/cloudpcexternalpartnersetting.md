@@ -18,7 +18,7 @@ Represents a external partner setting on Cloud PC.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcExternalPartnerSettings](../api/cloudpcexternalpartnersetting-list.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
+|[List cloudPcExternalPartnerSettings](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
 |[Create cloudPcExternalPartnerSetting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[Get cloudPcExternalPartnerSetting](../api/cloudpcexternalpartnersetting-get.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Read the properties and relationships of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[Update cloudPcExternalPartnerSetting](../api/cloudpcexternalpartnersetting-update.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Update the properties of a [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|

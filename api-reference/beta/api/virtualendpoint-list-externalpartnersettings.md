@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [cloudPcExternalPartnerSetting](../resources/intune-cloudpcexternalpartnersetting.md) objects and their properties.
+Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /deviceManagement/virtualEndpoint/externalPartnerSettings
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -78,13 +78,21 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
       "id": "b3548526-e615-3785-3118-be70b3968ec5",
-      "partnerId": "String",
-      "enableConnection": "Boolean",
-      "lastSyncDateTime": "String (timestamp)",
-      "status": "String",
-      "statusDetails": "String"
+      "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+      "enableConnection": "true",
+      "lastSyncDateTime": "2020-11-03T12:43:14Z",
+      "status": "active",
+      "statusDetails": "The external partner is active"
+    },
+    {
+      "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
+      "id": "dc6422cb-3001-45a7-9dcd-21207eea6b0e",
+      "partnerId": "459a0e56-da26-4ba1-a729-8eeef733425b",
+      "enableConnection": "true",
+      "lastSyncDateTime": "2020-11-03T12:43:14Z",
+      "status": "unresponsive",
+      "statusDetails": "The external partner is unresponsive"
     }
   ]
 }
 ```
-

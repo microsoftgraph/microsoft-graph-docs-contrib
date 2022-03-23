@@ -10233,7 +10233,7 @@ items:
           - name: Get
             href: api/cloudpcexternalpartnersettings-get.md
           - name: Create
-            href: api/cloudpcexternalpartnersettings-create.md
+            href: api/virtualendpoint-post-externalpartnersettings.md
           - name: Update
             href: api/cloudpcexternalpartnersettings-update.md
       - name: Device updates (preview)
