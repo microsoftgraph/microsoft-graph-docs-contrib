@@ -122,10 +122,11 @@ Content-type: application/json
 
 ### Example 2: Get a bundle and its children in a single call
 
-The following is an example of a request. Use the `expand` [query string parameter](/graph/query-parameters) to include the children of a bundle in the same request that retrieves the metadata of a bundle.
+Use the `expand` [query string parameter](/graph/query-parameters) to include the children of a bundle in the same request that retrieves the metadata of a bundle.
 
 #### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
