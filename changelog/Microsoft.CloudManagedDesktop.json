@@ -3,6 +3,40 @@
         {
           "ChangeList": [
             {
+              "Id": "25b4592a-ed69-402f-8125-4368dd568e6a",
+              "ApiChange": "EnumType",
+              "ChangedApiName": "cloudPcExternalPartnerStatus",
+              "ChangeType": "Addition",
+              "Description": "Added the **cloudPcExternalPartnerStatus** enumeration type.",
+              "Target": "cloudPcExternalPartnerStatus"
+            },
+            {
+              "Id": "25b4592a-ed69-402f-8125-4368dd568e6a",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcExternalPartnerSetting",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcExternalPartnerSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerSetting?view=graph-rest-beta) resource",
+              "Target": "cloudPcExternalPartnerSetting"
+            },
+            {
+              "Id": "25b4592a-ed69-402f-8125-4368dd568e6a",
+              "ApiChange": "Resource",
+              "ChangedApiName": "externalPartnerSettings",
+              "ChangeType": "Addition",
+              "Description": "Added the **externalPartnerSettings** relationship to [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+              "Target": "virtualEndpoint"
+            }
+          ],
+          "Id": "25b4592a-ed69-402f-8125-4368dd568e6a",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-05-23T07:42:23.0981939Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
               "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
               "ApiChange": "EnumType",
               "ChangedApiName": "cloudPcManagementService",
