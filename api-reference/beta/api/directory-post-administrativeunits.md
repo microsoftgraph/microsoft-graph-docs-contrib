@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and an [adminis
 
 ### Request
 
-The following is an example of a request that creates a new administrative unit which a dynamic membership rule to include all users whose country is United States.
+The following is an example of a request that creates a new administrative unit with a dynamic membership rule to include all users whose country is United States.
 
 # [HTTP](#tab/http)
 <!-- {
