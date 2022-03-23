@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetQueryParameters{
-	Expand: "roleDefinition,principal,directoryScope",
+	Expand: "roleDefinition",
 }
 options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetOptions{
 	Q: requestParameters,
