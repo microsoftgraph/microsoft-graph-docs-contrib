@@ -68,13 +68,13 @@ The `@microsoft/mgt-components` package contains all Microsoft Graph connected w
 
 Providers are available via a single package and can be installed as needed. The following provider packages are available:
 
-- <b>@micosoft/mgt-msal-provider</b>
+- <b>@microsoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
+    [`@microsoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
 
-- <b>@micosoft/mgt-msal2-provider</b>
+- <b>@microsoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
+    [`@microsoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
