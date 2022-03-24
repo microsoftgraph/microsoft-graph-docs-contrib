@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties and the `$expand` parameter.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties and the `$expand` parameter to retrieve relationships.
 
 For example, to retrieve the access package assignment policies, add `$expand=assignmentPolicies`.
 
