@@ -54,7 +54,7 @@ Let customers create new [teams](/graph/api/resources/team) and [channels](/grap
 [Install](/graph/api/teamsappinstallation-add) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
 [Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
-[Send messages](/graph/api/channel-post-message) to the channel linking back to your website.
+[Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
