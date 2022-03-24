@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get StaffAvailability
 
-This API returns the availability information of staff members of a Bookings Calendar.
+Returns the availability information of staff members of a Bookings Calendar.
 
 ## Permissions
 
@@ -32,6 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 In the request body, pass the list of staff IDs along with 2 other parameters of [dateTimeTimeZone resource type](../../v1.0/resources/datetimetimezone.md) called **startDateTime** and **endDateTime**. These correspond to the 2 timestamps between which the staff availability will be returned.
 
 ##### Example
+
+### Request
 
 ```http
 

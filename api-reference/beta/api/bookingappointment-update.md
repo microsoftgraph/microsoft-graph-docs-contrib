@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 > [!NOTE]
-> If you're creating a custom app using application permissions, you must follow the rules in this topic, [Business rules validation](../api/business-rule-validation.md).
+> If you create a custom app using application permissions, follow, [Business rules validation](bookingsbusiness-business-rules.md).
 
 ## HTTP request
 
@@ -87,7 +87,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 ## Response
 
-If successful, this method returns a `204, No Content` response code. It does not return anything in the bookingappointment-get.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the bookingappointment-get.
 
 ## Example
 

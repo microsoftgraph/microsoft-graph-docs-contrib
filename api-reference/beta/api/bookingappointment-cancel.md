@@ -48,13 +48,16 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.
 
 ## Example
+
 The following is an example of how to call this API.
+
 ##### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)

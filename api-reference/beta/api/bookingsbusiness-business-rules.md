@@ -4,30 +4,32 @@ description: "Learn how to override business rules when an admin is booking an a
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
-doc_type: apiPageType
+doc_type: conceptualPageType
 ---
 
 # Business rules validation
 
-When an appointment is created by a non-admin user, Bookings will use the business rules what the organization has configured for the Bookings calendar. However, admins can override these rules in certain circumstances.
+Use Booking rules validation to override business rules the organization has configured for Bookings calendar.
 
-## Business Settings
+<!-- When an appointment is created by a non-admin user, Bookings will use the business rules what the organization has configured for the Bookings calendar. However, admins can override these rules in certain circumstances. -->
+
+## Business settings
 
 ### Business hours
 
-:::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
+<!-- :::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off"::: -->
 
 This is a setting in the business object and can be modified via the API as well. An appointment can’t be set outside business hours. The attribute which corresponds to the API is “businesshours”.
 
 ### Scheduling policy
 
-The API resource is here [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md). The web-app settings are given below.
+The API resource for scheduling policy is here: [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md). The web-app settings are given below.
 
-:::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
+<!-- :::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar"::: -->
 
-**Time Increment (Time slot interval)** indicates the duration of an appointment. While validating business rules, we need to ensure that an appointment is for the same duration as indicated in the service.
+**Time Increment (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum Lead time** indicates the minimum time before which an appointment can be made or cancelled.
+**Minimum Lead time** indicates the minimum time before an appointment can be made or cancelled.
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
@@ -39,11 +41,11 @@ The API resource is here [BookingSchedulingPolicy resource type](../../v1.0/reso
 
 At a service, the scheduling policy is inherited from business. The customer may choose to override the policies.
 
-#### Main Policy  
+#### Main policy  
 
 If a scheduling policy exists at both service level and business level, the service level policy will take precedence.
 
-#### Partially Set Policies
+### Partially set policies
 
 #### Pre-Buffer
 

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 > [!NOTE]
-> If you're creating a custom app using application permissions, you must follow the rules in this topic, [Business rules validation](../api/business-rule-validation.md).
+> If you're creating a custom app using application permissions, you must follow the rules in this topic, [Business rules validation](bookingsbusiness-business-rules.md).
 
 ## HTTP request
 
