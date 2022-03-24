@@ -2,7 +2,7 @@
 title: "Person-Card component in the Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
 ms.localizationpriority: medium
-author: vogtn
+author: sebastienlevert
 ---
 
 # Person-Card component in the Microsoft Graph Toolkit

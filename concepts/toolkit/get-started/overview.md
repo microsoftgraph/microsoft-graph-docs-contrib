@@ -2,7 +2,7 @@
 title: "Getting started with the Microsoft Graph Toolkit"
 description: "Get started using the Microsoft Graph Toolkit in your application."
 ms.localizationpriority: medium
-author: elisenyang
+author: sebastienlevert
 ---
 
 # Getting started with the Microsoft Graph Toolkit
