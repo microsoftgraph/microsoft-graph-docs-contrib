@@ -1,6 +1,6 @@
 ---
-title: "accessPackageAssignmentRequestorSettings complex type"
-description: "Used for the `requestorSettings` property of an access package assignment policy. Provides additional settings to select who can create a request."
+title: "accessPackageAssignmentRequestorSettings resource type"
+description: "Used for the requestorSettings property of an access package assignment policy. Provides additional settings to select who can create a request."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
