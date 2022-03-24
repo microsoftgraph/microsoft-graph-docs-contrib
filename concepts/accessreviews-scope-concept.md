@@ -250,7 +250,7 @@ In this example, the principals are all inactive guest users with the period of 
 }
 ```
 
-In this example, the access review is scoped to all users who are members of a group and all users who are members of a team with shared channels including internal users, B2B collaboration users, and B2B direct connect users.
+In this example, the access review is scoped to all users who are members of a team or assigned to a shared channel within the team, including internal users, B2B collaboration users, and B2B direct connect users.
 
 To review B2B direct connect users and teams with shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 7](#example-5-review-all-guest-users-assigned-to-all-teams), won't include B2B direct connect users and teams with shared channels.
 
