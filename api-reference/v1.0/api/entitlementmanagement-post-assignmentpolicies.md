@@ -1,5 +1,5 @@
 ---
-title: "Create accessPackageAssignmentPolicy"
+title: "Create assignmentPolicies"
 description: "Create a new accessPackageAssignmentPolicy object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
