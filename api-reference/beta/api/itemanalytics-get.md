@@ -4,7 +4,7 @@ description: "Get itemAnalytics about the views that took place under this resou
 title: Get analytics
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # Get analytics
 
@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [itemAnalytics][] object in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [itemAnalytics][] objects in the response body. 
 
 ## Example
 
@@ -84,6 +84,10 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-analytics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

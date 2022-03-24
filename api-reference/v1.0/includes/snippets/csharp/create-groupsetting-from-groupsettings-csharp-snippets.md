@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupSetting = new GroupSetting
 {
-	DisplayName = "Group.Unified",
 	TemplateId = "62375ab9-6b52-47ed-826b-58e47e0e304b",
 	Values = new List<SettingValue>()
 	{

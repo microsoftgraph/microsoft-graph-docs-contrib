@@ -31,7 +31,7 @@ Install-Module Microsoft.Graph -Scope AllUsers
 
 ## Supported PowerShell versions
 
-PowerShell 7 and later is the recommended PowerShell version for use withe the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later.
+PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later.
 
 The following prerequisites must be met to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
 

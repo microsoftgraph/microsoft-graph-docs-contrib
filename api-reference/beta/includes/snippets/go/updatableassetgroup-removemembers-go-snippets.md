@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewAssetsRequestBody()
 requestBody.SetAssets( []UpdatableAsset {
 	msgraphsdk.NewUpdatableAsset(),
 	SetAdditionalData(map[string]interface{}{
@@ -19,7 +19,7 @@ options := &msgraphsdk.RemoveMembersRequestBuilderPostOptions{
 	Body: requestBody,
 }
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).RemoveMembers().Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).RemoveMembers(updatableAsset-id).Post(options)
 
 
 ```
