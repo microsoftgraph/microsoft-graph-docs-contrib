@@ -395,24 +395,6 @@
     {
       "ChangeList": [
         {
-        "Id": "9070bab3-60a9-4690-bcc5-b7fcbad3f315",
-        "ApiChange": "Resource",
-        "ChangedApiName": "accessPackageAssignmentPolicy",
-        "ChangeType": "Addition",
-        "Description": "Added the [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-1.0) resource and related methods for controlling how users receive assignments to access packages in entitlement management.",
-        "Target": "accessPackageCatalog"
-        }
-      ],
-      "Id": "9070bab3-60a9-4690-bcc5-b7fcbad3f315",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-02-22T00:00:00.8892294Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "1663575c-e085-40b5-8a3e-34312515f17c",
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
