@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the purge data operation to delete sensitive misplaced content.
+Permanently delete Teams messages that match the specified [sourceCollection](../resources//ediscovery-sourcecollection.md)
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 

@@ -13,8 +13,23 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the purge data method to delete sensitive misplaced content. This method supports purge for mail, channel, and chat message content.
+Permanently delete Teams messages that match the specified [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
+There are five categories of Teams content that you can collect and purge:
+
+- **Teams 1:1 chats**. Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
+
+- **Teams group chats**. Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
+
+- **Teams channels**. Chat messages, posts, replies, and attachments shared in a standard Teams channel.
+
+- **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
+
+- **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
+
+For more information about purging Teams messages, see:
+- [eDiscovery solution series: Data spillage scenario - Search and purge](https://docs.microsoft.com/microsoft-365/compliance/data-spillage-scenariosearch-and-purge?view=o365-worldwide)
+- [Advanced eDiscovery workflow for content in Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
