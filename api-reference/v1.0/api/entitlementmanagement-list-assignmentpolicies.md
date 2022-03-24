@@ -1,5 +1,5 @@
 ---
-title: "List accessPackageAssignmentPolicies"
+title: "List assignmentPolicies"
 description: "List the accessPackageAssignmentPolicy objects."
 author: "markwahl-msft"
 ms.localizationpriority: medium
