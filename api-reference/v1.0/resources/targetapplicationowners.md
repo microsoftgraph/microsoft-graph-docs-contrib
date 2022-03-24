@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
-# targetApplicationOwners complex type
+# targetApplicationOwners resource type
 
 Namespace: microsoft.graph
 
