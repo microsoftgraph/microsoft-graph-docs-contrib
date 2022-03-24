@@ -20,6 +20,32 @@
     },
     {
       "ChangeList": [
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "IsMemberManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **IsMemberManagementRestricted** property to the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Target": "administrativeUnit"
+        },
+        { 
+          "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+          "ApiChange": "Property",
+          "ChangedApiName": "IsManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **IsManagementRestricted** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+        "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-04-01T00:00:00.000Z",
+        "WorkloadArea": "Identity and Access",
+        "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "73263d94-f8e6-41a2-9e28-0db8132d584e",
           "ApiChange": "Resource",
