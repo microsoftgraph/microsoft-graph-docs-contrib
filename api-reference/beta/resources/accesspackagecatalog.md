@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. An access package with the **displayName** of **General** is included by default in Azure AD entitlement management.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package catalog is a container for zero or more access packages. Azure AD entitlement management includes a built-in catalog named **General**.
 
 An access package catalog might also have linked resources that are used in those access packages to provide access. To view or change the membership of catalog-scoped roles, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
