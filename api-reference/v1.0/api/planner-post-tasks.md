@@ -34,7 +34,7 @@ POST /planner/tasks
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [plannerTask](../resources/plannertask.md) object.
+In the request body, supply a JSON representation of a [plannerTask](../resources/plannertask.md) object.
 The **plannerTask** planId property must be set to an existing [plannerPlan](../resources/plannerplan.md) object's ID.
 
 ## Response
