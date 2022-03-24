@@ -15,14 +15,14 @@ Used for the requestor settings of an [access package assignment policy](accessp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowCustomAssignmentSchedule|Boolean|If false, the requestor is not permitted to include a schedule in their request.|
-|enableOnBehalfRequestorsToAddAccess|Boolean|If true, allows on-behalf-of requestors to create a request to add access for another subject.|
-|enableOnBehalfRequestorsToRemoveAccess|Boolean|If true, allows on-behalf-of requestors to create a request to remove access for another subject.|
-|enableOnBehalfRequestorsToUpdateAccess|Boolean|If true, allows on-behalf-of requestors to create a request to update access for another subject.|
-|enableTargetsToSelfAddAccess|Boolean|If true, allows requestors to create a request to add access for themselves.|
-|enableTargetsToSelfRemoveAccess|Boolean|If true, allows requestors to create a request to remove their access.|
-|enableTargetsToSelfUpdateAccess|Boolean|If true, allows requestors to create a request to update their access.|
-|onBehalfRequestors|[subjectSet](../resources/subjectset.md) collection|The subjects who can request on-behalf-of others.|
+|allowCustomAssignmentSchedule|Boolean|If `false`, the requestor is not permitted to include a schedule in their request.|
+|enableOnBehalfRequestorsToAddAccess|Boolean|If `true`, allows on-behalf-of requestors to create a request to add access for another principal.|
+|enableOnBehalfRequestorsToRemoveAccess|Boolean|If `true`, allows on-behalf-of requestors to create a request to remove access for another principal.|
+|enableOnBehalfRequestorsToUpdateAccess|Boolean|If `true`, allows on-behalf-of requestors to create a request to update access for another principal.|
+|enableTargetsToSelfAddAccess|Boolean|If `true`, allows requestors to create a request to add access for themselves.|
+|enableTargetsToSelfRemoveAccess|Boolean|If `true`, allows requestors to create a request to remove their access.|
+|enableTargetsToSelfUpdateAccess|Boolean|If `true`, allows requestors to create a request to update their access.|
+|onBehalfRequestors|[subjectSet](../resources/subjectset.md) collection|The principals who can request on-behalf-of others.|
 
 ## Relationships
 None.
