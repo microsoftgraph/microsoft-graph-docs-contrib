@@ -1,6 +1,6 @@
 ---
-title: "accessPackageApprovalStage complex type"
-description: "Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage."
+title: "accessPackageApprovalStage resource type"
+description: "Used for the stages property of approval settings. Specifies the primary, fallback, and escalation approvers of each stage."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
