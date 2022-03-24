@@ -1,6 +1,6 @@
 ---
-title: "targetManager complex type"
-description: "Complex type for entitlement management to indicate the owners of an application as requestors"
+title: "targetManager resource type"
+description: "Complex type for entitlement management to indicate the manager, including indirect managers of a user may request on behalf of that user."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
