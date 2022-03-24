@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used in an access package assignment policy, this type inherits from [subjectSet](../resources/subjectset.md) and indicates the managers of a user may request on behalf of that user.
+Used in an access package assignment policy, this type inherits from [subjectSet](../resources/subjectset.md) and indicates the manager, including indirect managers of a user may request on behalf of that user.
 
 ## Properties
 |Property|Type|Description|
