@@ -31,8 +31,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessPackageAssignmentApprovalSettings",
-  "isApprovalRequiredForAdd": true,
-  "isApprovalRequiredForUpdate": true,
+  "isApprovalRequiredForAdd": "Boolean",
+  "isApprovalRequiredForUpdate": "Boolean",
   "stages": [
     {
       "@odata.type": "microsoft.graph.accessPackageApprovalStage"
