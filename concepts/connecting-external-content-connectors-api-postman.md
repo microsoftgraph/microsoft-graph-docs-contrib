@@ -120,7 +120,7 @@ Note that you are using the [client credential flow](/azure/active-directory/dev
 
 ## Step 6 – Create a new connection
 
-A [connection](/connectors/custom-connectors/define-postman-collection) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 ```http
 POST /external/connections
