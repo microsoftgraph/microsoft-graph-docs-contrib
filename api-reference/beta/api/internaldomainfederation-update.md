@@ -113,7 +113,7 @@ Content-Type: application/json
    "signingCertificateUpdateStatus": {
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
-    }
+    },
    "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```

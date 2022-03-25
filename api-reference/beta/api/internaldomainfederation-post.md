@@ -107,7 +107,6 @@ Content-Type: application/json
 -->
 
 ``` http
-
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -128,7 +127,7 @@ Content-Type: application/json
    "signingCertificateUpdateStatus": {
         "certificateUpdateResult": "Success",
         "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
-    }
+    },
    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
 }
 ```
