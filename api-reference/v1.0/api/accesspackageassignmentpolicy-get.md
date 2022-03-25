@@ -81,26 +81,28 @@ Content-Type: application/json
   "id": "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
   "displayName": "All Users",
   "description": "All users in the directory can request access.",
-  "allowedTargetScope": "String",
-  "specificAllowedTargets": [
-    {
-      "@odata.type": "microsoft.graph.singleUser"
-    }
-  ],
+  "allowedTargetScope": "allDirectoryUsers",
+  "createdDateTime": "2020-12-18T20:18:02.587Z",
+  "modifiedDateTime": "2020-12-18T20:18:02.65Z",
+  "specificAllowedTargets": [],
   "expiration": {
-    "@odata.type": "microsoft.graph.expirationPattern"
+      "duration": "P365D",
+      "type": "afterDuration"
   },
   "requestorSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentRequestorSettings"
+      "enableTargetsToSelfAddAccess": true,
+      "enableTargetsToSelfUpdateAccess": false,
+      "enableTargetsToSelfRemoveAccess": true,
+      "allowCustomAssignmentSchedule": true,
+      "enableOnBehalfRequestorsToAddAccess": false,
+      "enableOnBehalfRequestorsToUpdateAccess": false,
+      "enableOnBehalfRequestorsToRemoveAccess": false
   },
   "requestApprovalSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentApprovalSettings"
-  },
-  "reviewSettings": {
-    "@odata.type": "microsoft.graph.accessPackageAssignmentReviewSettings"
-  },
-  "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+      "isApprovalRequiredForAdd": false,
+      "isApprovalRequiredForUpdate": false,
+      "stages": []
+  }
 }
 ```
 
