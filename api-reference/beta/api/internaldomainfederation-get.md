@@ -87,7 +87,10 @@ Content-Type: application/json
     "promptLoginBehavior": "nativeSupport",
     "isSignedAuthenticationRequestRequired": true,
     "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-    "signingCertificateUpdateStatus": null
+    "signingCertificateUpdateStatus": {
+        "certificateUpdateResult": "Success",
+        "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
+    },
     "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
   }
 }
