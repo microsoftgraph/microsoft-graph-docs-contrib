@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabel: evaluateApplication"
-description: "**Evaluate which label to apply based on existing content info and desired content state.**"
+description: "Evaluate which label to apply based on an existing content information and a desired content state."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -18,13 +18,13 @@ Given [contentInfo](../resources/security-contentinfo.md), which includes existi
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
-* [addWatermarkAction](../resources/security-addWatermarkaction.md)
+* [addWatermarkAction](../resources/security-addwatermarkaction.md)
 * [applyLabelAction](../resources/security-applylabelaction.md)
 * [customAction](../resources/security-customaction.md)
 * [justifyAction](../resources/security-justifyaction.md)
 * [metadataAction](../resources/security-metadataaction.md)
 * [protectAdhocAction](../resources/security-protectadhocaction.md)
-* [protectByTemplateAction](../resources/security-protectBytemplateaction.md)
+* [protectByTemplateAction](../resources/security-protectbytemplateaction.md)
 * [protectionDoNotForwardAction](../resources/security-protectdonotforwardaction.md)
 * [recommendLabelAction](../resources/security-recommendlabelaction.md)
 * [removeContentFooterAction](../resources/security-removecontentfooteraction.md)
@@ -48,14 +48,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To evaluate as the signed-in user or specified user:
+To evaluate as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
 POST /{userId}/security/informationProtection/sensitivityLabels/evaluateApplication
 POST /me/security/informationProtection/sensitivityLabels/evaluateApplication
 ```
 
-To evaluate as the service principal:
+To evaluate as a service principal (application permission):
 
 ``` http
 POST /security/informationProtection/sensitivityLabels/evaluateApplication
@@ -69,7 +69,7 @@ POST /security/informationProtection/sensitivityLabels/evaluateApplication
 | User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -80,7 +80,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and an [informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body.
 
 ## Examples
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of a classification operation from the Microsoft Classification Engine. Data classification results from Azure Information Protection, Office, and other Microsoft services may return a [well-defined set of classification types](/office365/securitycompliance/what-the-sensitive-information-types-look-for). These types can be provided to the [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) API to resolve a sensitive information to a Microsoft Information Protection label. 
+Represents the result of a classification operation from the Microsoft classification engine. Data classification results from Azure Information Protection, Office, and other Microsoft services might return a [well-defined set of classification types](/office365/securitycompliance/what-the-sensitive-information-types-look-for). These types can be provided to the [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) API to resolve a sensitive information to a Microsoft Information Protection label. 
 
 ## Properties
 | Property        | Type  | Description                                                            |
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.classificationResult",
   "confidenceLevel": "Integer",
   "count": "Integer",
-  "sensitiveTypeId": "Guid"
+  "sensitiveTypeId": "GUID"
 }
 ```
 

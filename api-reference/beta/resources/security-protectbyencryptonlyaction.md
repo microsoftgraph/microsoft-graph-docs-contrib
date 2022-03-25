@@ -1,6 +1,6 @@
 ---
 title: "protectByEncryptOnlyAction resource type"
-description: "Informs the application that an Azure Information Protection Encrypt-only protection should be applied."
+description: "Informs the application that an Azure Information Protection encrypt-only protection should be applied."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informs the application that an Azure Information Protection encrypt-only protection should be applied. **protectByEncryptOnlyAction** may be returned by [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must use a client library, such as the Microsoft Information Protection SDK, to apply protection via Microsoft Information Protection.
+Informs the application that an Azure Information Protection encrypt-only protection should be applied. **protectByEncryptOnlyAction** might be returned by [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must use a client library, such as the Microsoft Information Protection SDK, to apply protection via Microsoft Information Protection.
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 

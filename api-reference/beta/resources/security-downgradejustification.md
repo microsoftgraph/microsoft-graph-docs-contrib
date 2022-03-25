@@ -1,6 +1,6 @@
 ---
 title: "downgradeJustification resource type"
-description: "Represents user input on why downgrade was performed."
+description: "Represents the user input on why downgrade was performed."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents user input on why downgrade was performed. Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
+Represents the user input on why downgrade was performed. The downgrade justification might be required based on the label policy configuration in Office Security and Compliance Center.
 
 ## Properties
 | Property             | Type    | Description                                                                                          |

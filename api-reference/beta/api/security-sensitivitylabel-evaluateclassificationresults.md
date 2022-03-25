@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabel: evaluateClassificationResults"
-description: "Evaluate which label to apply based on existing content info and a classification result."
+description: "Evaluate which label to apply based on an existing content information and a classification result."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,19 +12,19 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using [classification results](../resources/security-classificationresult.md), compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
+Use the [classification results](../resources/security-classificationresult.md) to compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
 To evaluate based on classification results, provide [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following: 
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
-* [addWatermarkAction](../resources/security-addWatermarkaction.md)
+* [addWatermarkAction](../resources/security-addwatermarkaction.md)
 * [applyLabelAction](../resources/security-applylabelaction.md)
 * [customAction](../resources/security-customaction.md)
 * [justifyAction](../resources/security-justifyaction.md)
 * [metadataAction](../resources/security-metadataaction.md)
 * [protectAdhocAction](../resources/security-protectadhocaction.md)
-* [protectByTemplateAction](../resources/security-protectBytemplateaction.md)
+* [protectByTemplateAction](../resources/security-protectbytemplateaction.md)
 * [protectionDoNotForwardAction](../resources/security-protectdonotforwardaction.md)
 * [recommendLabelAction](../resources/security-recommendlabelaction.md)
 * [removeContentFooterAction](../resources/security-removecontentfooteraction.md)
@@ -48,14 +48,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To evaluate as the signed-in user or specified user:
+To evaluate as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 POST /users/me/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 ```
 
-To evaluate as the service principal:
+To evaluate as a service principal (application permission):
 
 ``` http
 POST /users/security/informationProtection/sensitivityLabels/evaluateClassificationResults
@@ -69,20 +69,20 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateClassificat
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/security-contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/security-classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
+| classificationResults | [classificationResult](../resources/security-classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Microsoft 365 Security and Compliance Center. |
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body.
+If successful, this action returns a `200 OK` response code and an [informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body.
 
 ## Examples
 

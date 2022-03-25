@@ -13,17 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types. The [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) may return a **recommendLabelAction** if the Microsoft Information Protection labeling policy is set to **recommend** and label rather than enforce a label. The user or appliation may choose to ignore or accept the recommendation. 
+Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types. The [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) might return a **recommendLabelAction** if the Microsoft Information Protection labeling policy is set to **recommend** a label rather than enforce a label. The user or application might choose to ignore or accept the recommendation. 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 
 ## Properties
 
-| Property                    | Type                                                                                                                    | Description                                                                      |
-| :-------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| actionSource                | String                                                                                                                  | Possible values are: `manual`, `automatic`, `recommended`, `default`.            |
-| actions                     | [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Actions to take if the label is accepted by the user.                            |
-| responsibleSensitiveTypeIds | Guid collection                                                                                                         | The sensitive information type GUIDs that caused the recommendation to be given. |
+| Property                    | Type                                                                                           | Description                                                                                                 |
+| :-------------------------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| actionSource                | String                                                                                         | Specifies why the label was selected. Possible values are: `manual`, `automatic`, `recommended`, `default`. |
+| actions                     | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Actions to take if the label is accepted by the user.                                                       |
+| responsibleSensitiveTypeIds | GUID collection                                                                                | The sensitive information type GUIDs that caused the recommendation to be given.                            |
 
 ## Relationships
 
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   ],
   "actionSource": "String",
   "responsibleSensitiveTypeIds": [
-    "Guid"
+    "GUID"
   ]
 }
 ```

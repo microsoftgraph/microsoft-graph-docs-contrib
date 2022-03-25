@@ -1,6 +1,6 @@
 ---
 title: "protectByTemplateAction resource type"
-description: "Informs the application that an Azure Information Protection protection template should be applied."
+description: "Informs the application that a protection template in Microsoft Information Protection should be applied."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informs the application that an Azure Information Protection protection template should be applied. **protectionByTemplateAction** may be returned by [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.
+Informs the application that a protection template in Microsoft Information Protection should be applied. **protectionByTemplateAction** might be returned by [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) or [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.
 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 
 ## Properties
-| Property   | Type   | Description                                                                                   |
-| :--------- | :----- | :-------------------------------------------------------------------------------------------- |
-| templateId | String | The GUID of the Microsoft Information Protection protection template to apply to the content. |
+| Property   | Type   | Description                                                                                                  |
+| :--------- | :----- | :----------------------------------------------------------------------------------------------------------- |
+| templateId | String | The unique identifier for a protection template in Microsoft Information Protection to apply to the content. |
 
 ## Relationships
 None.

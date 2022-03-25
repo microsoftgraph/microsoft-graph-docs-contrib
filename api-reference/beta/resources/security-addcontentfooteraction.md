@@ -20,7 +20,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 ## Properties
 | Property      | Type   | Description                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | String | Possible values are: `left`, `right`, `center`.               |
+| alignment     | String | The horizontal alignment of the footer.                       |
 | fontColor     | String | Color of the font to use for the footer.                      |
 | fontName      | String | Name of the font to use for the footer.                       |
 | fontSize      | Int32  | Font size to use for the footer.                              |

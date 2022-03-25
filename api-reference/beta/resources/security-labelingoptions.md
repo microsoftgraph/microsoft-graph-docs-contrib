@@ -16,12 +16,12 @@ Namespace: microsoft.graph.security
 Represents the labeling options that can be provided to the evaluation APIs. **labelingOptions** must be passed in to the [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md) API to specify details about the label that is to be applied. 
 
 ## Properties
-| Property               | Type                                                         | Description                                                                                                                   |
-| :--------------------- | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| assignmentMethod       | String                                                       | Possible values are: `standard`, `privileged`, `auto`.                                                                        |
-| downgradeJustification | [downgradeJustification](security-downgradejustification.md) | The downgrade justification object that indicates if downgrade was justified and, if so, the reason.                          |
-| extendedProperties     | [keyValuePair](keyvaluepair.md) collection                   | Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information. |
-| labelId                | Guid                                                         | The GUID of the label that should be applied to the information.                                                              |
+| Property               | Type                                                         | Description                                                                                                                                                                                |
+| :--------------------- | :----------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| assignmentMethod       | String                                                       | Describes whether the label was applied by a process or automation (`standard`) or a person (`privileged`). A `standard` assignment cannot override `privileged`. To override, set `auto`. |
+| downgradeJustification | [downgradeJustification](security-downgradejustification.md) | The downgrade justification object that indicates if downgrade was justified and, if so, the reason.                                                                                       |
+| extendedProperties     | [keyValuePair](keyvaluepair.md) collection                   | Extended properties will be parsed and returned in the standard Microsoft Information Protection labeled metadata format as part of the label information.                                 |
+| labelId                | GUID                                                         | The GUID of the label that should be applied to the information.                                                                                                                           |
 
 ## Relationships
 None.
@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.security.keyValuePair"
     }
   ],
-  "labelId": "Guid"
+  "labelId": "GUID"
 }
 ```
 

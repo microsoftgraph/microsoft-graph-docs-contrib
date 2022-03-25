@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **informationProtectionAction** is an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the following actions that instruct the application on how to apply, update, or remove the information protection label. 
+Describes an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the following actions that instruct the application on how to apply, update, or remove the information protection label. 
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
@@ -30,8 +30,6 @@ The **informationProtectionAction** is an abstract entity that is returned as th
 * [removeContentHeaderAction](../resources/security-removecontentheaderaction.md)
 * [removeProtectionAction](../resources/security-removeprotectionaction.md)
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
-
-This is an abstract type.
 
 ## Properties
 

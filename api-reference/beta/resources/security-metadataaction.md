@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the metadata to be written or removed from a file. **metadataAction** may be returned by the [evaluateRemoval](../api/security-sensitivitylabel-evaluateremoval.md), [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md), and [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) APIs. The action informs the consuming application of the specific key/value pairs that should be added to the file or the specific metadata keys that should be removed from the file. This metadata is what describes the file or information as being *labeled*.
+Represents the metadata to be written or removed from a file. **metadataAction** might be returned by the [evaluateRemoval](../api/security-sensitivitylabel-evaluateremoval.md), [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md), and [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) APIs. The action informs the consuming application of the specific key-value pairs that should be added to the file or the specific metadata keys that should be removed from the file. This metadata is what describes the file or information as being *labeled*.
 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
@@ -21,7 +21,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 ## Properties
 | Property         | Type                                       | Description                                                                        |
 | :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
-| metadataToAdd    | [keyValuePair](keyvaluepair.md) collection | A collection of key value pairs that should be added to the file.                  |
+| metadataToAdd    | [keyValuePair](keyvaluepair.md) collection | A collection of key-value pairs that should be added to the file.                  |
 | metadataToRemove | String collection                          | A collection of strings that indicate which keys to remove from the file metadata. |
 
 ## Relationships

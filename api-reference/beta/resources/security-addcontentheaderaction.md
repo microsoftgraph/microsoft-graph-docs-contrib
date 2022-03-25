@@ -21,7 +21,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 
 | Property      | Type   | Description                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | String | Possible values are: `left`, `right`, `center`.               |
+| alignment     | String | The horizontal alignment of the header.                       |
 | fontColor     | String | Color of the font to use for the header.                      |
 | fontName      | String | Name of the font to use for the header.                       |
 | fontSize      | Int32  | Font size to use for the header.                              |

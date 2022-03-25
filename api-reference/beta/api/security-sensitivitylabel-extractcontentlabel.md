@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabel: extractContentLabel"
-description: "Retrieve contentLabel using metadata from a labeled object."
+description: "Retrieve the contentLabel using the metadata from a labeled object."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,10 +13,10 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/security-contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/security-contentlabel.md).
+Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/security-contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/security-contentlabel.md).
 
 >[!NOTE]
->The **[contentLabel](../resources/security-contentlabel.md)** resource represents a sensitivity label that has been applied to a piece of information. [sensitivityLabels](../resources/security-sensitivitylabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
+>The [contentLabel](../resources/security-contentlabel.md) resource represents a sensitivity label that has been applied to a piece of information. [sensitivityLabels](../resources/security-sensitivitylabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
 
 ## Permissions
 
@@ -35,14 +35,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To extract content label as the signed-in user or specified user:
+To extract the content label as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
 POST /users/me/security/informationProtection/sensitivityLabels/extractContentLabel
 ```
 
-To extract content label as the service principal:
+To extract the content label as a service principal (application permission):
 
 ``` http
 POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
@@ -58,7 +58,7 @@ POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -68,7 +68,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [contentLabel](../resources/security-contentlabel.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [contentLabel](../resources/security-contentlabel.md) object in the response body.
 
 ## Examples
 

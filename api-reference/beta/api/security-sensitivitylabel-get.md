@@ -30,20 +30,18 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To get a label available to the signed-in user or specified user:
+To get a label as the signed-in user (delegated permission) or specified user (application permission):
+
 ``` http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 GET /me/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 ```
 
-Getting a label on behalf of another user requires the application permission `InformationProtectionPolicy.Read.All`.
+To get labels available to the organization as a service principal (application permission):
 
-To get labels available to the organization:
 ```http
 GET /security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 ```
-
-Getting a label from the organizational list requires the application permission `InformationProtectionPolicy.Read.All`.
 
 ## Optional query parameters
 
@@ -73,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [sensitivityLa
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabel/{5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2}
+GET https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabel/5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2
 ```
 
 

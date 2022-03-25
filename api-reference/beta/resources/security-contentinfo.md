@@ -18,10 +18,10 @@ Represents the current state of some information that is to be labeled. **conten
 ## Properties
 | Property      | Type                                                                                      | Description                                                                                                                     |
 | :------------ | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| contentFormat | String                                                                                    | **TODO**                                                                                                                        |
+| contentFormat | String                                                                                    | The format of the content to be labeled, `file` or `email`.                                                                     |
 | identifier    | String                                                                                    | Identifier used for Azure Information Protection Analytics.                                                                     |
-| metadata      | [microsoft.graph.security.keyValuePair](../resources/security-keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key/value pairs, where the key is the MSIP_Label_GUID_PropName. |
-| state         | contentState                                                                              | The possible values are: `rest`, `motion`, `use`.                                                                               |
+| metadata      | [keyValuePair](../resources/security-keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key/value pairs, where the key is the MSIP_Label_GUID_PropName. |
+| state         | contentState                                                                              | The usage state of the content, `rest`, `motion`, or `use`.                                                                                |
 
 ## Relationships
 None.

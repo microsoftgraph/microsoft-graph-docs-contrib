@@ -1,6 +1,6 @@
 ---
 title: "sensitivityLabel: evaluateRemoval"
-description: "Evaluate which label to remove and how to remove it based on existing content info."
+description: "Evaluate which label to remove and how to remove it based on an existing content information."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Indicate to the consuming application what actions it should take to remove the label information.
 
-Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one of more of the following: 
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one or more of the following: 
 
 * [justifyAction](../resources/security-justifyaction.md)
 * [metadataAction](../resources/security-metadataaction.md)
@@ -40,14 +40,14 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To evaluate removal as the signed-in user or specified user:
+To evaluate removal as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
 POST /users/me/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
-To evaluate removal as the service principal:
+To evaluate removal as a service principal (application permission):
 
 ``` http
 POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
@@ -63,7 +63,7 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -74,7 +74,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [microsoft.graph.security.informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body. The [informationProtectionAction object](../resources/security-informationprotectionaction.md) will contain a [metadataAction](../resources/security-metadataaction.md) object that informs the application which metadata to remove.
+If successful, this action returns a `200 OK` response code and an [informationProtectionAction](../resources/security-informationprotectionaction.md) collection in the response body. The [informationProtectionAction](../resources/security-informationprotectionaction.md) object will contain a [metadataAction](../resources/security-metadataaction.md) object that informs the application which metadata to remove.
 
 ## Examples
 
