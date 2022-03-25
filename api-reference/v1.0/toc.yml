@@ -838,8 +838,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/application-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/application-removepassword.md
           - name: Add key
             href: api/application-addkey.md
@@ -931,8 +933,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/serviceprincipal-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/serviceprincipal-removepassword.md
           - name: Add key
             href: api/serviceprincipal-addkey.md
@@ -5353,18 +5357,18 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
-            - name: Access review instance decision item
-              displayName: access review decisions
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
-              - name: Get
-                href: api/accessreviewinstancedecisionitem-get.md
-              - name: List
-                href: api/accessreviewinstance-list-decisions.md
-              - name: Update
-                href: api/accessreviewinstancedecisionitem-update.md
-              - name: Filter by current user
-                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review instance decision item
+            displayName: access review decisions
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:

@@ -25,7 +25,7 @@ Use Microsoft Graph to [create a new virtual team](/graph/api/team-put-teams) wh
 [add the right people](/graph/api/group-post-members) to the team, 
 and configure the team with 
 [channels](/graph/api/channel-post),
-[tabs](/graph/api/teamstab-add),
+[tabs](/graph/teams-configuring-builtin-tabs),
 and [apps](/graph/api/teamsappinstallation-add).
 If you want to get the new team together to discuss the business issue, 
 [add a new event](/graph/api/group-post-events) to the team calendar.
@@ -54,7 +54,7 @@ Let customers create new [teams](/graph/api/resources/team) and [channels](/grap
 [Install](/graph/api/teamsappinstallation-add) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
 [Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
-[Send messages](/graph/api/channel-post-message) to the channel linking back to your website.
+[Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
