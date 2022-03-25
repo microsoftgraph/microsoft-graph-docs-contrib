@@ -33,7 +33,7 @@ For more information on MIME format, see [getting MIME content of a message](out
 | Create a draft to reply to a message | [createReply](/graph/api/message-createreply) |
 | ReplyAll to a message | [replyAll](/graph/api/message-replyall) | 
 | Create a draft to replyAll to a message | [createReplyAll](/graph/api-reference/api/message-createreplyall) |
-| Forward a message | [forward](/graph/outlook-send-mime-message) |
+| Forward a message | [forward](/graph/api/message-forward) |
 | Create a draft to forward a message | [createForward](/graph/api-reference/api/message-createforward) | 
 
 
