@@ -37,7 +37,7 @@ You can use the Lighthouse API to perform the following threat management tasks:
 
 You can use the Lighthouse API to perform the following user tasks:
 
-- Discover [risky users](/microsoft-365/lighthouse/m365-lighthouse-view-manage-risky-users) across your customers.
+- Discover [risky users](/graph/api/resources/riskyuser) across your customers.
 - View [credential user registration summary](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) to understand what users across your customers have registered for multi-factor authentication and self-service password reset.
 
 ## API reference
