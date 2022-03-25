@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentApprovalSettings complex type"
-description: "Specifies the settings for approval of a request for an access pacakge in an access package assignment policy."
+description: "Specifies the settings for approval of a request for an access package assignment in an access package assignment policy."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used for the request approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to indicate if approval is needed for new requests for an access package through that policy or for updates to existing requests, and to select who must approve each request.
+Used for the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to indicate if approval is needed for new requests for an access package assignment through that policy or for updates to existing requests, and to select who must approve each request.
 
 ## Properties
 |Property|Type|Description|
