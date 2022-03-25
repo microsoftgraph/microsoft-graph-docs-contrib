@@ -13,15 +13,15 @@ Namespace: microsoft.graph.recordsManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Retrieve the status of an event and additional information about location and workload**
+Retrieve the status of an event and additional information about location and workload.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|location|String|Location in the workload|
+|location|String|Location in the workload.|
 |status|retentionEventStatusType|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
-|statusInformation|String|Additional infroamtion about the status|
-|workload|String|Workload being targetted by the event|
+|statusInformation|String|Additional infroamtion about the status.|
+|workload|String|Workload being targetted by the event.|
 
 ## Relationships
 None.

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**recordsManagement.ReadWrite.All**|
-|Delegated (personal Microsoft account)|**Not supported**|
-|Application|**recordsManagement.ReadWrite.All**|
+|Delegated (work or school account)|recordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|recordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -42,22 +42,22 @@ POST /compliance/recordsManagement/events
 ## Request body
 In the request body, supply a JSON representation of the [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.
 
-You can specify the following properties when creating a **retentionEvent**.
+You can specify the following properties when creating a retentionEvent.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**Name of the event**Optional.|
-|description|String|**Optional information about the event** Optional.|
-|messagesQuery|String|**Specifies the keywords that are used to scope Exchange content for the compliance retention event.** Optional.|
-|filesQuery|String|**Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event.** Optional.|
-|eventTriggerDateTime|DateTimeOffset|**Optional time when the event should be triggered.** Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
-|createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
-|eventPropagationResult|[microsoft.graph.recordsManagement.eventPropagationResult](../resources/recordsmanagement-eventpropagationresult.md)|**Status and errors of the Event Sync** Optional.|
-|eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|**Specifies the number of processed documents per workload** Optional.|
-|lastStatusUpdateTime|DateTimeOffset|**Last time the status of the event was updated** Optional.|
+|displayName|String|Name of the event. Optional.|
+|description|String|Optional information about the event. Optional.|
+|messagesQuery|String|Specifies the keywords that are used to scope Exchange content for the compliance retention event. Optional.|
+|filesQuery|String|Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event. Optional.|
+|eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered. Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
+|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
+|eventPropagationResult|[microsoft.graph.recordsManagement.eventPropagationResult](../resources/recordsmanagement-eventpropagationresult.md)|Status and errors of the Event Sync. Optional.|
+|eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|Specifies the number of processed documents per workload. Optional.|
+|lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated. Optional.|
 
 
 

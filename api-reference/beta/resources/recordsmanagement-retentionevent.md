@@ -31,22 +31,22 @@ Namespace: microsoft.graph.recordsManagement
 |:---|:---|:---|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
 |createdDateTime|DateTimeOffset|The date time when the entity was created.|
-|description|String|Optional information about the event|
-|displayName|String|Name of the event|
-|eventPropagationResult|[microsoft.graph.recordsManagement.eventPropagationResult](../resources/recordsmanagement-eventpropagationresult.md)|Status and errors of the Event Sync|
-|eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|Specifies the number of processed documents per workload|
+|description|String|Optional information about the event.|
+|displayName|String|Name of the event.|
+|eventPropagationResult|[microsoft.graph.recordsManagement.eventPropagationResult](../resources/recordsmanagement-eventpropagationresult.md)|Status and errors of the Event Sync.|
+|eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|Specifies the number of processed documents per workload.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |filesQuery|String|Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event.|
 |id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
-|lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated|
+|lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated.|
 |messagesQuery|String|Specifies the keywords that are used to scope Exchange content for the compliance retention event.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md) collection|Retention labels linked to the event|
+|labels|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md) collection|Retention labels linked to the event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

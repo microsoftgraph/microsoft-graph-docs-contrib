@@ -34,20 +34,20 @@ A retentionLabel allows a user to retain or delete content and configure additio
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the entity.|
 |createdDateTime|DateTimeOffset|Represents the date and time in which the entity is created.|
 |descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
-|descriptionForUsers|String|This is an optional property that provides the label information for the user|
+|descriptionForUsers|String|This is an optional property that provides the label information for the user.|
 |displayName|String|Unique string that defines a label name.|
 |dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
 |id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
-|isInUse|Boolean|Specifies if the label is currently being used|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified|
-|retentionDurationInDays|Int32|Specifies the number of days to retain the content|
+|isInUse|Boolean|Specifies if the label is currently being used.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
+|retentionDurationInDays|Int32|Specifies the number of days to retain the content.|
 |retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|eventType|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type|
+|eventType|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**recordsManagement.ReadWrite.All**|
-|Delegated (personal Microsoft account)|**Not supported**|
-|Application|**recordsManagement.ReadWrite.All**|
+|Delegated (work or school account)|recordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|recordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -46,19 +46,19 @@ PATCH /compliance/recordsManagement/events/{retentionEventId}/labels/{retentionL
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**Unique string defining the name of the label** Optional.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|**Specifies the behaviour of a document that has been labeled with this label during the retention period**. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. Optional.|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod|**Specifies the action of a document that has been labeled with this label after the retention period**. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. Optional.|
-|retentionTrigger|retentionTrigger|**Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date**. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. Optional.|
-|retentionDurationInDays|Int32|**Specifies the number of days to retain the content** Optional.|
-|isInUse|Boolean|**Specifies if the label is currently being used** Optional.|
-|descriptionForAdmins|String|**Optional information about the label for the Admin** Optional.|
-|descriptionForUsers|String|**Optional information about the label for the User** Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
-|createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified.** Optional.|
-|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|**A multi stage collection of reviewers that will be notified and have to approve before an item is deleted** Optional.|
+|displayName|String|Unique string defining the name of the label. Optional.|
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies the behaviour of a document that has been labeled with this label during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. Optional.|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod|Specifies the action of a document that has been labeled with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. Optional.|
+|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date**. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. Optional.|
+|retentionDurationInDays|Int32|Specifies the number of days to retain the content. Optional.|
+|isInUse|Boolean|Specifies if the label is currently being used. Optional.|
+|descriptionForAdmins|String|Optional information about the label for the Admin. Optional.|
+|descriptionForUsers|String|Optional information about the label for the User. Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
+|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
+|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers that will be notified and have to approve before an item is deleted. Optional.|
 
 
 

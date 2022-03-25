@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**recordsManagement.ReadWrite.All**|
-|Delegated (personal Microsoft account)|**Not supported**|
-|Application|**recordsManagement.ReadWrite.All**|
+|Delegated (work or school account)|recordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|recordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -42,16 +42,16 @@ POST /compliance/recordsManagement/eventTypes
 ## Request body
 In the request body, supply a JSON representation of the [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.
 
-You can specify the following properties when creating a **retentionEventType**.
+You can specify the following properties when creating a retentionEventType.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**Name of the event type** Optional.|
-|description|String|**Optional information about the event type** Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The user who created the entity.** Optional.|
-|createdDateTime|DateTimeOffset|**The date time when the entity was created.** Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|**The latest user who modified the entity.** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**The latest date time when the entity was modified** Optional.|
+|displayName|String|Name of the event type. Optional.|
+|description|String|Optional information about the event type. Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
+|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
 
 
 

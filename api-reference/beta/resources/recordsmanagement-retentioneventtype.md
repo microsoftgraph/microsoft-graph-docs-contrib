@@ -30,8 +30,8 @@ When an event is created, it is associated to a specific event type. The creatio
 |:---|:---|:---|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
 |createdDateTime|DateTimeOffset|The date time when the entity was created.|
-|description|String|Optional information about the event type|
-|displayName|String|Name of the event type|
+|description|String|Optional information about the event type.|
+|displayName|String|Name of the event type.|
 |id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
