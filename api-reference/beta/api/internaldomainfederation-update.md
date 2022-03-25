@@ -57,7 +57,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |isSignedAuthenticationRequestRequired|Boolean|If true, when SAML authentication requests are sent to the federated SAML IDP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IDP are not signed. Optional.|
 |nextSigningCertificate|String|Next token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IDP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated. Optional.|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate. Optional.|
-|federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider. The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: accepts MFA if performed by identity provider. If not, triggers Azure MFA. <br> `enforceMfaByFederatedIdp` : accepts MFA if performed by identity provider. If not, redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp` : rejects MFA if performed by identity provider. Always triggers Azure MFA.<br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](https://docs.microsoft.com/powershell/module/msonline/set-msoldomainfederationsettings?view=azureadps-1.0) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not performed, will trigger Azure MFA. Optional.|
+|federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider or performs Azure MFA when a federated user accesses an application for which a Conditional Access policy that requires MFA has been configured The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: Azure AD accepts MFA if performed by identity provider. If not, performs Azure MFA. <br> `enforceMfaByFederatedIdp`: Azure AD accepts MFA if performed by identity provider. If not, it redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp`: Azure AD always performs Azure MFA and rejects MFA if performed by identity provider. <br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](/powershell/module/msonline/set-msoldomainfederationsettings) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not, will perform Azure MFA. Required.|
 
 
 
@@ -91,6 +91,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -109,7 +110,10 @@ Content-Type: application/json
    "promptLoginBehavior": "nativeSupport",
    "isSignedAuthenticationRequestRequired": true,
    "nextSigningCertificate": "MIIE3jCCAsagAwIBAgIQQcyDaZz3MI",
-   "signingCertificateUpdateStatus": null
+   "signingCertificateUpdateStatus": {
+        "certificateUpdateResult": "Success",
+        "lastRunDateTime": "2021-08-25T07:44:46.2616778Z"
+    }
    "federatedIdpMfaBehavior": "acceptIfMfaDoneByFederatedIdp"
 }
 ```

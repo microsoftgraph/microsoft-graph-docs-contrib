@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-*A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with an on-premises environment. An on-premises environment can be federated with Azure AD and the federation can be used for authentication and authorization. For more information on federation, see [What is federation with Azure AD?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed)*
+*A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with an on-premises environment. An on-premises environment can be federated with Azure AD and the federation can be used for authentication and authorization. For more information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed)*
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
@@ -31,7 +31,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |:---|:---|:---|
 |activeSignInUri|String|URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory (Azure AD). Single sign-on is also known as identity federation. Referred to as ActiveLogOnUri in MSOnline PowerShell cmdlets.|
 |displayName|String|URI that clients are redirected to when they sign out of Azure AD services. Referred to as LogOffUri in MSOnline PowerShell cmdlets. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
-|federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider. The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: accepts MFA if performed by identity provider. If not, triggers Azure MFA. <br> `enforceMfaByFederatedIdp` : accepts MFA if performed by identity provider. If not, redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp` : rejects MFA if performed by identity provider. Always triggers Azure MFA.<br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](https://docs.microsoft.com/powershell/module/msonline/set-msoldomainfederationsettings) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not performed, will trigger Azure MFA.|
+|federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the identity provider or performs Azure MFA when a federated user accesses an application for which a Conditional Access policy that requires MFA has been configured The possible values are: <br> `acceptIfMfaDoneByFederatedIdp`: Azure AD accepts MFA if performed by identity provider. If not, performs Azure MFA. <br> `enforceMfaByFederatedIdp`: Azure AD accepts MFA if performed by identity provider. If not, it redirects request to identity provider to perform MFA. <br> `rejectMfaByFederatedIdp`: Azure AD always performs Azure MFA and rejects MFA if performed by identity provider. <br>**Note**<br> `federatedIdpMfaBehavior` is an evolved version of [`SupportsMfa`](/powershell/module/msonline/set-msoldomainfederationsettings) property (supported by MSOnline V1 PowerShell module). Switching between `federatedIdpMfaBehavior` and `SupportsMfa` is not supported. Once `federatedIdpMfaBehavior` property is set, Azure AD ignores the `SupportsMfa` setting. If the `federatedIdpMfaBehavior` property is never set, Azure AD will continue to honor the `SupportsMfa` setting. If neither `federatedIdpMfaBehavior` nor `SupportsMfa` is set, Azure AD by default will accept MFA performed by identity provider and if not, will perform Azure MFA.|
 |id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |isSignedAuthenticationRequestRequired|Boolean|If true, when SAML authentication requests are sent to the federated SAML IDP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IDP are not signed.|
 |issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
@@ -59,6 +59,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.internalDomainFederation",
