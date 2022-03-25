@@ -10,18 +10,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used for the access reviews of access review assignments, configured in an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed.  
+Settings configured in an [access package assignment policy](accesspackageassignmentpolicy.md) for the access reviews of assignments to an access package that were made through that policy. Provides settings to select reviewers of those assignments, and how often the assignments must be reviewed.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |expirationBehavior|accessReviewExpirationBehavior|The default decision to apply if the access is not reviewed. The possible values are: `keepAccess`, `removeAccess`, `acceptAccessRecommendation`, `unknownFutureValue`.|
-|fallbackReviewers|[subjectSet](../resources/subjectset.md) collection|This collection specifies the users who will be the fallback reviewers.|
-|isEnabled|Boolean|If true, access reviews are required for assignments from this policy.|
+|fallbackReviewers|[subjectSet](../resources/subjectset.md) collection|This collection specifies the users who will be the fallback reviewers when the primary reviewers don't respond.|
+|isEnabled|Boolean|If `true`, access reviews are required for assignments through this policy.|
 |isRecommendationEnabled|Boolean|Specifies whether to display recommendations to the reviewer. The default value is `true`.|
 |isReviewerJustificationRequired|Boolean|Specifies whether the reviewer must provide justification for the approval. The default value is `true`.|
-|isSelfReview|Boolean|Who should be asked to do the review.|
-|primaryReviewers|[subjectSet](../resources/subjectset.md) collection|This collection specifies the users who will be reviewers.|
+|isSelfReview|Boolean|Specifies whether the principals can review their own assignments.|
+|primaryReviewers|[subjectSet](../resources/subjectset.md) collection|This collection specifies the users or group of users who will review the access package assignments.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|When the first review should start and how often it should recur.|
 
 ## Relationships
