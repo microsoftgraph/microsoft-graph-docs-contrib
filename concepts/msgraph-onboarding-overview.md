@@ -13,7 +13,24 @@ Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud 
 
 Microsoft allows you to create demo tenants for different purposes and start making requests to Microsoft Graph API.
 
-![Administrator consent dialog.](./images/msgraph-onboarding/msgraph-tenants.png)
+You have to follow the flow below based on your purposes.
+
+- Join the Microsoft Partner Network (MPN).
+- Create a Demo EDU Development tenant.
+
+    Purposes:
+    - Information about integrating with Microsoft Education products and services such as Microsoft Teams, School Data Sync, Immersive Reader and more.
+    - Microsoft 365 Education tenant for the purposes of developing your integrations.
+    - Development purposes.
+    - Testing solutions.
+
+- Or Create a EDU tenant.
+
+    Purposes:
+    - Interactive digital experiences using fully functional Microsoft 365 environments.
+    - Personal learning.
+    - Demos.
+    - Customer immersion experience.
 
 ## Next Steps
 
