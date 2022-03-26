@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleManagementPolicyAssignments"
 description: "Get a list of the unifiedRoleManagementPolicyAssignment objects and their properties."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

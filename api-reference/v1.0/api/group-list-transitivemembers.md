@@ -342,7 +342,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_groups_transitivemembers_startswith"
 }-->
 
 ```msgraph-interactive
