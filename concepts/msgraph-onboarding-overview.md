@@ -32,7 +32,7 @@ You have to follow the flow below based on your purposes.
     - Demos.
     - Customer immersion experience.
 
-## Next Steps
+## Next steps
 
 - To start creating a new tenant, see:
   - Join the [Microsoft Partner Network](/graph/msgraph-onboarding-mpn)

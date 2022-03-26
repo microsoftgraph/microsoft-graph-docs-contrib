@@ -1,5 +1,5 @@
 ---
-title: "Join the Microsoft Partner Network"
+title: "Join the Microsoft Partner Network to get an education tenant"
 description: "This article describes the steps to join the Microsoft Partner Network."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
@@ -7,13 +7,13 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Partner Network
+# Join the Microsoft Partner Network to get an education tenant
 
-Microsoft partner Network is a powerful community of companies and organizations like yours that connects you to the relationships, insights, tools, resources, and programs you need to amaze your customers and drive business growth.
+Microsoft Partner Network is a powerful community of companies and organizations like yours that connects you to the relationships, insights, tools, resources, and programs you need to amaze your customers and drive business growth.
 
-> **Note**: MPN is required if you need an EDU dev tenant and publishing apps in Microsoft marketplaces.
+> **Note**: Join Microsoft Partner Network is required if you need an EDU dev tenant and publishing apps in Microsoft marketplaces.
 
-## How to join the Microsoft Partner Network?
+## Steps to join the Microsoft Partner Network
 
 To join the Microsoft Partner Network, go to the [Partner with Microsoft](https://partner.microsoft.com/) page on the Partner Network website and select **Become a partner**.
 
@@ -53,13 +53,15 @@ To join the Microsoft Partner Network, go to the [Partner with Microsoft](https:
 
     ![Partner center](./images/msgraph-onboarding/mpn-step9.png)
 
+## Next steps
+
+- Create a [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
+- Create a [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
+
 ## See also
 
 - [Partner With Microsoft](https://docs.microsoft.com/partner-center/mpn-overview)
 - [More details about create an MPN account in Partner Center](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account)
 - [Manage your Partner Center account](https://docs.microsoft.com/partner-center/partner-center-account-setup)
 
-## Next Steps
 
-- Create a [Demo EDU Dev Tenant](/graph/msgraph-onboarding-devtenant)
-- Create a [Demo EDU Tenant](/graph/msgraph-onboarding-edutenant)
