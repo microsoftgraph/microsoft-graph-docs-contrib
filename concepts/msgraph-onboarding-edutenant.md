@@ -15,11 +15,11 @@ Using your Microsoft Partner Network (MPN) ID, use the [Customer Digital Experie
 
 ## How to create a new Demo EDU tenant for testing and learning purposes?
 
-1. Click on My Environments tab.
+1. Click on **My Environments** tab.
 
     ![Environments tab](./images/msgraph-onboarding/edutenant-1.png)
 
-2. In My Tenants tab, press Create Tenant.
+2. In My Tenants tab, click **Create Tenant**.
 
     ![Create tenant](./images/msgraph-onboarding/edutenant-2.png)
 
@@ -38,7 +38,7 @@ Standard Microsoft 365 tenants take approximately 12-48 hours (NOT including Add
     - **90 days:** 90 day tenants include the latest services and content at time of provisioning. Recommended choice for specific customizations relating to a customer engagement. 90 day tenants will not receive extensions.
     - **1 year:** 1 year tenants include the latest services and content at time of provisioning. Recommended choice for customization and learning such as creating Hybrid environments. Only 1 year tenants can be extended. If a tenant is required long term, please select 1 year tenants.
 
-6. Look for Microsoft Education Demo Content and press **Create Tenant**.
+6. Look for **Microsoft Education Demo Content** and click **Create Tenant**.
 
     ![Create tenant button](./images/msgraph-onboarding/edutenant-4.png)
 
@@ -58,11 +58,11 @@ Standard Microsoft 365 tenants take approximately 12-48 hours (NOT including Add
 - [Unassign licenses from users](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide)
 - [Buy or remove licenses from your subscription](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide)
 
+## Next steps
+
+- [School Data Sync](/graph/msgraph-onboarding-sds)
+
 ## See also
 
 - [Join the Microsoft Partner Network](/graph/msgraph-onboarding-mpn)
 - Create a [Demo EDU Dev Tenant](/graph/msgraph-onboarding-devtenant)
-
-## Next steps
-
-- [School Data Sync](/graph/msgraph-onboarding-sds)

@@ -17,15 +17,15 @@ Microsoft Partner Network is a powerful community of companies and organizations
 
 To join the Microsoft Partner Network, go to the [Partner with Microsoft](https://partner.microsoft.com/) page on the Partner Network website and select **Become a partner**.
 
-1. The first step is to specify how would you like to partner with Microsoft, select one or more of the options and press **Next**.
+1. Specify how would you like to partner with Microsoft, select one or more of the options and click **Next**.
 
     ![How would you like to partner with Microsoft](./images/msgraph-onboarding/mpn-step1.png)
 
-2. Specify your company work account and press **Next**.
+2. Specify your company work account and click **Next**.
 
     ![Get started](./images/msgraph-onboarding/mpn-step2.png)
 
-3. To verify your identity set your phone number and select how would you like to get the verification code, press **Text me** or **Call me** according to your selection, and put your code when receive it and press **Next**.
+3. To verify your identity set your phone number and select how would you like to get the verification code, click **Text me** or **Call me** according to your selection, and put your code when receive it and click **Next**.
 
     ![Verify your identity](./images/msgraph-onboarding/mpn-step3.png)
 
@@ -33,15 +33,15 @@ To join the Microsoft Partner Network, go to the [Partner with Microsoft](https:
 
     ![Did you get your email address from your company](./images/msgraph-onboarding/mpn-step4.png)
 
-5. Complete you MPN account information, set a password and confirm the verification code sent to your email, press **Next**.
+5. Complete you MPN account information, set a password and confirm the verification code sent to your email, click **Next**.
 
     ![MPN account information](./images/msgraph-onboarding/mpn-step5.png)
 
-6. Login with your MPN account.
+6. Sign in with your MPN account.
 
     ![Pick an account](./images/msgraph-onboarding/mpn-step6.png)
 
-7. Provide your company information and press **Accept and continue**.
+7. Provide your company information and click **Accept and continue**.
 
     ![Company information](./images/msgraph-onboarding/mpn-step7.png)
 

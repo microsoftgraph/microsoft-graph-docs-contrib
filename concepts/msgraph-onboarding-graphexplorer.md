@@ -13,7 +13,7 @@ When you want to utilize your data within your own applications you use the Micr
 
 Microsoft provides the online Graph Explorer so you can test the queries to the API before you implement them in your application.
 
-1. To access the Graph Explorer launch a private web browser, navigate to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), click Sign in with Microsoft, then enter your O365 Global Admin account credentials.
+1. To access the Graph Explorer launch a private web browser, navigate to [developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer), click **Sign in to Graph Explorer**, then enter your O365 Global Admin account credentials.
 
    ![Sign In](./images/msgraph-onboarding/explorer1-signin.png)
 
@@ -21,7 +21,7 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
 
    ![Schools permissions](./images/msgraph-onboarding/explorer2-schools.png)
 
-3. Go to Modify permissions tab and search for EduRoster.ReadBasic click Consent permission.
+3. Go to **Modify permissions** tab and search for **EduRoster.ReadBasic** click **Consent** permission.
 
    ![Roster permissions](./images/msgraph-onboarding/explorer3-roster.png)
 
@@ -31,16 +31,16 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
 
    ![Get Schools](./images/msgraph-onboarding/explorer4-schoolsrun.png)
 
-5. Enter `https://graph.microsoft.com/v1.0/education/classes` in the query field and press **Run query** to fetch a list of classes.
+5. Enter `https://graph.microsoft.com/v1.0/education/classes` in the query field and click **Run query** to fetch a list of classes.
 
    ![Get Classes](./images/msgraph-onboarding/explorer5-classes.png)
 
 6. Take the first class Id `740202c8-5db7-4496-a055-9f3c9fd98207` to get its assignments.
    - Enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments` in the query field.
-   - Press **Run query**.
+   - Click **Run query**.
 
 7. Access to the Assignments API features requires that you grant corresponding permissions to the Graph Explorer app.
-   - Go to Modify permissions tab and search for EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic.
+   - Go to **Modify permissions** tab and search for **EduAssignments.Read, EduAssignments.ReadBasic, EduAssignments.ReadWrite and EduAssignments.ReadWriteBasic**.
    - Click on **Consent** button.
 
    ![Consent permissions for assignments](./images/msgraph-onboarding/explorer6-assignments.png)
@@ -72,7 +72,7 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
             }
         ```
 
-    - Press **Run query** button, you must get a `Created – 201` response and a JSON object representing the new assignment.
+    - Click **Run query** button, you must get a `Created – 201` response and a JSON object representing the new assignment.
       ![Create assignment](./images/msgraph-onboarding/explorer8-createassignment.png)
 
 10. Try more queries. You can find the API reference and more example queries at [developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview).
