@@ -1,5 +1,5 @@
 ---
-title: "Demo EDU Dev tenant"
+title: "Set up a demo dev tenant for developing education solutions"
 description: "This article describes the steps to create a new Demo EDU tenant for development purposes."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
@@ -7,19 +7,17 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Demo EDU dev tenant
+# Set up a demo dev tenant for developing education solutions
 
 A Demo EDU dev tenant is meant to simulate a Microsoft 365 EDU customer tenant for the purpose of developing and testing solutions.
 
-## How to create a new Demo EDU tenant for development purposes?
+## Create a new Demo EDU tenant for development purposes
 
-To get an EDU tenant go to [Partner Sign Up](https://aka.ms/edupartnersignup) and click **Microsoft Education Integration**. Complete all the sections of the form. Pay special attention to the **Product Information** section. You must provide your MPN ID in the **MPN No** field, and choose **Yes** in the **Are you requesting an EDU development tenant?** box.
+To get an EDU tenant go to [Partner Sign Up](https://aka.ms/edupartnersignup) and click **Microsoft Education Integration**. 
 
-![Create new Demo EDU tenant](./images/msgraph-onboarding/devtenant.png)
+1. Complete all the sections of the form. Pay special attention to the **Product Information** section. You must provide your MPN ID in the **MPN No** field, and choose **Yes** in the **Are you requesting an EDU development tenant?** box.
 
-After you provide all the required information, click **Submit**.
-
-![Submission completed](./images/msgraph-onboarding/devtenantdone.png)
+1. After you provide all the required information, click **Submit**.
 
 You must receive an email notification about you tenant request.
 

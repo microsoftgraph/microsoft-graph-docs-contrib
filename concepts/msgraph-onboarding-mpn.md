@@ -19,19 +19,11 @@ To join the Microsoft Partner Network, go to the [Partner with Microsoft](https:
 
 1. Specify how would you like to partner with Microsoft, select one or more of the options and click **Next**.
 
-    ![How would you like to partner with Microsoft](./images/msgraph-onboarding/mpn-step1.png)
-
 2. Specify your company work account and click **Next**.
-
-    ![Get started](./images/msgraph-onboarding/mpn-step2.png)
 
 3. To verify your identity set your phone number and select how would you like to get the verification code, click **Text me** or **Call me** according to your selection, and put your code when receive it and click **Next**.
 
-    ![Verify your identity](./images/msgraph-onboarding/mpn-step3.png)
-
-4. Select Yes to specify that your email address was provided by your company.
-
-    ![Did you get your email address from your company](./images/msgraph-onboarding/mpn-step4.png)
+4. Select **Yes** to specify that your email address was provided by your company.
 
 5. Complete you MPN account information, set a password and confirm the verification code sent to your email, click **Next**.
 
@@ -39,19 +31,11 @@ To join the Microsoft Partner Network, go to the [Partner with Microsoft](https:
 
 6. Sign in with your MPN account.
 
-    ![Pick an account](./images/msgraph-onboarding/mpn-step6.png)
-
 7. Provide your company information and click **Accept and continue**.
-
-    ![Company information](./images/msgraph-onboarding/mpn-step7.png)
 
 8. The MPN account is created, send invite to your company members if needed.
 
-    ![Invite others from your company](./images/msgraph-onboarding/mpn-step8.png)
-
 9. You can access [Partner Center](https://partner.microsoft.com/) with your MPN account.
-
-    ![Partner center](./images/msgraph-onboarding/mpn-step9.png)
 
 ## Next steps
 

@@ -1,13 +1,13 @@
 ---
-title: "School Data Sync"
-description: "This article describes the steps to setup the school data."
+title: "Use School Data Sync to work with education APIs in Microsoft Graph"
+description: "Learn how to set up School Data Sync to work with education APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# School Data Sync
+# Use School Data Sync to work with education APIs in Microsoft Graph
 
 Microsoft School Data Sync simplifies class management in Office 365. School Data Sync reads rosters from your SIS and creates classes and groups for Microsoft Teams, Intune for Education, and third-party applications.
 

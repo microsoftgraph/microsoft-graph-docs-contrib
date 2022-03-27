@@ -1,5 +1,5 @@
 ---
-title: "Demo EDU tenant"
+title: "Set up a demo education tenant"
 description: "This article describes the steps to create a new Demo EDU tenant for testing and learning purposes."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
@@ -7,25 +7,23 @@ ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Demo EDU tenant
+# Set up a demo education tenant
 
-A Demo EDU tenant is supposed to be used for personal learning and customer demos only.
+If you need a tenant for your personal learning or for customer demos, but not for developing education solutions, you can set up a demo EDU tenant instead of a demo EDU dev tenant.
 
 Using your Microsoft Partner Network (MPN) ID, use the [Customer Digital Experiences (CDX)](https://cdx.transform.microsoft.com/) to create a demo EDU tenant.
 
-## How to create a new Demo EDU tenant for testing and learning purposes?
+## Create a new demo education tenant for testing and learning purposes
 
 1. Click on **My Environments** tab.
 
-    ![Environments tab](./images/msgraph-onboarding/edutenant-1.png)
-
-2. In My Tenants tab, click **Create Tenant**.
-
-    ![Create tenant](./images/msgraph-onboarding/edutenant-2.png)
+2. In **My Tenants** tab, click **Create Tenant**.
 
 3. See the environment limits.
 
-    ![Environment limits](./images/msgraph-onboarding/edutenant-3.png)
+    - 90 day Tenants: 0 of 6
+    - 1 year Tenants: 0 of 3
+    - Custom Tenants: 0 of 1
 
 4. Select the tenant type.
     - **Quick Tenant:** A quick tenant is a pre-provisioned custom Microsoft 365 tenant. These tenants contain the same robust demo content and Add-On options (i.e. EMS, PSTN Calling, etc.) as custom tenants but without the wait. While the Microsoft 365 tenant is immediately available, the Add-On's content is provisioned only upon a request basis.
@@ -40,12 +38,8 @@ Standard Microsoft 365 tenants take approximately 12-48 hours (NOT including Add
 
 6. Look for **Microsoft Education Demo Content** and click **Create Tenant**.
 
-    ![Create tenant button](./images/msgraph-onboarding/edutenant-4.png)
-
 7. Accept the terms of use.
     > Important: Demo EDU Tenant should NOT be used for development purposes.
-
-    ![Terms of use](./images/msgraph-onboarding/edutenant-5.png)
 
 8. Tenant details are displayed after its creation.
 
