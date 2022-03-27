@@ -41,7 +41,13 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 
 ## Optional query parameters
 
-You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. Maximum allowed value for `$top` is 50.
+This method supports the following [OData query parameters](/graph/query-parameters).
+
+| Name      | Description          |
+|:----------|:---------------------|
+| [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
+| [$expand](/graph/query-parameters#expand)  | Currently supports **replies** only. If a channel message contains more than 1000 replies, replies@odata.nextLink will be provided for pagination.|
+
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 > **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
@@ -401,6 +407,258 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": []
+        },
+        {
+            "id": "1616883610266",
+            "replyToId": null,
+            "etag": "1616883610266",
+            "messageType": "systemEventMessage",
+            "createdDateTime": "2021-03-28T03:50:10.266Z",
+            "lastModifiedDateTime": "2021-03-28T03:50:10.266Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616883610266?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616883610266&parentMessageId=1616883610266",
+            "policyViolation": null,
+            "from": null,
+            "body": {
+                "contentType": "html",
+                "content": "<systemEventMessage/>"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [],
+            "eventDetail": {
+                "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "teamDescription": "Team for Microsoft Teams members",
+                "initiator": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 3: Request with expand query option on replies
+
+#### Request
+
+The following is an example of the request.
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_listchannelmessages_2"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$expand=replies
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-listchannelmessages-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-listchannelmessages-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+The following is an example of the response  when `Prefer: include-unknown-enum-members` is provided in the request header.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages",
+    "@odata.count": 3,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$skiptoken=%5b%7B%22token%22%3a%22%2bRID%3a~vpsQAJ9uAC047gwAAACcBQ%3d%3d%23RT%3a1%23TRC%3a20%23RTD%3aAyAER1ygxSHVHGAn2S99BTI6OzViOjZnOGU5ZWM1ZDVmOGdiZjk2OGNkZmNmMTczNGY3QXVpc2ZiZS91YmR3MzwyNzIyNDY2OTU0NTg6AA%3d%3d%23ISV%3a2%23IEO%3a65551%23QCF%3a3%23FPC%3aAggEAAAAcBYAABUFAADQKgAABAAAAHAWAAACALu4GwAAAHAWAAACAPSTMwAAAHAWAACaAFWa84BXgQKAEIAMgBaAE4AUgAuAAoAIwAIgACAAAiAACAABACCAAAEVgBSAI4AYgA%2bAGQAEEAAQAAEABACAAAIEEBBAACAYgB%2bAH4AbgBqACoAHwAICCBAEEIAAAgEQAACAIoAZgB2ADoAMgAKAPoAZgB2AJoAXgBIAgiAAQUqLF4AJgALACARAgBCACoAfgB6AIwABgYCQAAFXAAAAcBYAAAYA%2f50ZgGeEXwAAAHAWAAAEAPaBS4V7AAAAcBYAAAIA1aSJAAAAcBYAAAIAtLmbAAAAcBYAAAIAqKXdAAAAcBYAAAQAppUugOMAAABwFgAABADQoAWA6wAAAHAWAAAEABGl94M5AAAA0CoAAAYA6pF7iYOBaQIAANAqAAAcAEUPAMAAMAACAQCBAHQAADDAgCAAQgByAQAzUJDRBAAA0CoAAAQAETwKAA4FAADQKgAAAgBekRUFAADQKgAAHAB2pQCABYAMgJeAH4ATgAGAvIIIgASABIAFgCWA%22%2c%22range%22%3a%7B%22min%22%3a%2205C1D79B33ADE4%22%2c%22max%22%3a%2205C1D7A52F89EC%22%7D%7D%5d",
+    "value": [
+        {
+            "id": "1616963377068",
+            "replyToId": null,
+            "etag": "1616963377068",
+            "messageType": "message",
+            "createdDateTime": "2021-03-28T20:29:37.068Z",
+            "lastModifiedDateTime": "2021-03-28T20:29:37.068Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": "",
+            "summary": null,
+            "chatId": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616963377068?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616963377068&parentMessageId=1616963377068",
+            "policyViolation": null,
+            "eventDetail": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><div><div><span><img height=\"145\" src=\"https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZC92aWV3cy9pbWdv/$value\" width=\"131\" style=\"vertical-align:bottom; width:131px; height:145px\"></span><div>&nbsp;</div></div><div><div><span><img height=\"65\" src=\"https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNC92aWV3cy9pbWdv/$value\" width=\"79\" style=\"vertical-align:bottom; width:79px; height:65px\"></span></div></div></div></div>"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [],
+            "replies@odata.count": 3,
+            "replies@odata.nextLink": "https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/replies?$skiptoken=MSwwLDE2NDQ0MzkzODAxNDU"
+            "replies" [
+                {
+                    "id": "1616989753153",
+                    "replyToId": "1616963377068",
+                    "etag": "1616989753153",
+                    "messageType": "message",
+                    "createdDateTime": "2021-03-29T03:49:13.153Z",
+                    "lastModifiedDateTime": "2021-03-29T03:49:13.153Z",
+                    "lastEditedDateTime": null,
+                    "deletedDateTime": null,
+                    "subject": null,
+                    "summary": null,
+                    "chatId": null,
+                    "importance": "normal",
+                    "locale": "en-us",
+                    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989753153?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989753153&parentMessageId=1616989510408",
+                    "policyViolation": null,
+                    "eventDetail": null,
+                    "from": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                            "displayName": "Robin Kline",
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "body": {
+                        "contentType": "text",
+                        "content": "Reply3"
+                    },
+                    "channelIdentity": {
+                        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+                    },
+                    "attachments": [],
+                    "mentions": [],
+                    "reactions": []
+                },
+                {
+                    "id": "1616989750004",
+                    "replyToId": "1616963377068",
+                    "etag": "1616989750004",
+                    "messageType": "message",
+                    "createdDateTime": "2021-03-29T03:49:10.004Z",
+                    "lastModifiedDateTime": "2021-03-29T03:49:10.004Z",
+                    "lastEditedDateTime": null,
+                    "deletedDateTime": null,
+                    "subject": null,
+                    "summary": null,
+                    "chatId": null,
+                    "importance": "normal",
+                    "locale": "en-us",
+                    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989750004?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989750004&parentMessageId=1616989510408",
+                    "policyViolation": null,
+                    "eventDetail": null,
+                    "from": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                            "displayName": "Robin Kline",
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "body": {
+                        "contentType": "text",
+                        "content": "Reply2"
+                    },
+                    "channelIdentity": {
+                        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+                    },
+                    "attachments": [],
+                    "mentions": [],
+                    "reactions": []
+                },
+                {
+                    "id": "1616989747416",
+                    "replyToId": "1616963377068",
+                    "etag": "1616989747416",
+                    "messageType": "message",
+                    "createdDateTime": "2021-03-29T03:49:07.416Z",
+                    "lastModifiedDateTime": "2021-03-29T03:49:07.416Z",
+                    "lastEditedDateTime": null,
+                    "deletedDateTime": null,
+                    "subject": null,
+                    "summary": null,
+                    "chatId": null,
+                    "importance": "normal",
+                    "locale": "en-us",
+                    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616989747416?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616989747416&parentMessageId=1616989510408",
+                    "policyViolation": null,
+                    "eventDetail": null,
+                    "from": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                            "displayName": "Robin Kline",
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "body": {
+                        "contentType": "text",
+                        "content": "Reply1"
+                    },
+                    "channelIdentity": {
+                        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+                    },
+                    "attachments": [],
+                    "mentions": [],
+                    "reactions": []
+                }
+            ]
         },
         {
             "id": "1616883610266",
