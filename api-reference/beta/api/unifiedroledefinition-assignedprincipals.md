@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /rbacApplicationMultiple/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals
+GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals
 ```
 
 ## Function parameters
@@ -42,8 +42,6 @@ The following table shows the parameters that can be used with this function.
 |transitive|Boolean|**TODO: Add Description**|
 |directoryScopeType|String|**TODO: Add Description**|
 |directoryScopeId|String|**TODO: Add Description**|
-|appScopeType|String|**TODO: Add Description**|
-|appScopeId|String|**TODO: Add Description**|
 
 
 ## Request headers
@@ -67,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [directoryOb
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/rbacApplicationMultiple/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(transitive=Boolean,directoryScopeType='parameterValue',directoryScopeId='parameterValue',appScopeType='parameterValue',appScopeId='parameterValue')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(transitive=Boolean,directoryScopeType='parameterValue',directoryScopeId='parameterValue')
 ```
 
 
