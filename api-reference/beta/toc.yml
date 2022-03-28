@@ -11166,45 +11166,63 @@ items:
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
             href: api/directory-deleteditems-user-owned.md
-        - name: Delegated Admin Relationships
-          href: resources/delegatedadminrelationship.md
+        - name: Delegated admin relationships
+          displayName: Partner Center, CSP, VAR
           items:
-          - name: Delete delegatedAdminAccessAssignment
-            href: api/delegatedadminaccessassignment-delete.md
-          - name: Get delegatedAdminAccessAssignment
-            href: api/delegatedadminaccessassignment-get.md
-          - name: List delegatedAdminAccessAssignments
-            href: api/delegatedadminaccessassignment-list.md
-          - name: Create delegatedAdminAccessAssignment
-            href: api/delegatedadminaccessassignment-post.md
-          - name: Update delegatedAdminAccessAssignment
-            href: api/delegatedadminaccessassignment-update.md
-          - name: Get delegatedAdminCustomer
-            href: api/delegatedadmincustomer-get.md
-          - name: List delegatedAdminCustomers
-            href: api/delegatedadmincustomer-list.md
-          - name: Delete delegatedAdminRelationship
-            href: api/delegatedadminrelationship-delete.md
-          - name: Get delegatedAdminRelationship
-            href: api/delegatedadminrelationship-get.md
-          - name: List delegatedAdminRelationships
-            href: api/delegatedadminrelationship-list.md
-          - name: Create delegatedAdminRelationship
-            href: api/delegatedadminrelationship-post.md
-          - name: Update delegatedAdminRelationship
-            href: api/delegatedadminrelationship-update.md
-          - name: Get delegatedAdminRelationshipOperation
-            href: api/delegatedadminrelationshipoperation-get.md
-          - name: List delegatedAdminRelationshipOperations
-            href: api/delegatedadminrelationshipoperation-list.md
-          - name: Get delegatedAdminRelationshipRequest
-            href: api/delegatedadminrelationshiprequest-get.md
-          - name: List delegatedAdminRelationshipRequests
-            href: api/delegatedadminrelationshiprequest-list.md
-          - name: Create delegatedAdminRelationshipRequest
-            href: api/delegatedadminrelationshiprequest-post.md
-          - name: List delegatedAdminServiceManagementDetails
-            href: api/delegatedadminservicemanagementdetail-list.md
+          - name: Delegated admin relationships
+            href: resources/delegatedadminrelationship.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post.md
+            - name: List
+              href: api/delegatedadminrelationship-list.md
+            - name: Get
+              href: api/delegatedadminrelationship-get.md
+            - name: Update
+              href: api/delegatedadminrelationship-update.md
+            - name: Delete
+              href: api/delegatedadminrelationship-delete.md
+          - name: Delegated admin access assignments
+            href: resources/delegatedadminaccessassignment.md
+            items:
+            - name: Create
+              href: api/delegatedadminaccessassignment-post.md
+            - name: List
+              href: api/delegatedadminaccessassignment-list.md
+            - name: Get
+              href: api/delegatedadminaccessassignment-get.md
+            - name: Update
+              href: api/delegatedadminaccessassignment-update.md
+            - name: Delete
+              href: api/delegatedadminaccessassignment-delete.md
+          - name: Delegated admin relationship requests
+            href: resources/delegatedadminrelationshiprequest.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationshiprequest-post.md
+            - name: List
+              href: api/delegatedadminrelationshiprequest-list.md
+            - name: Get
+              href: api/delegatedadminrelationshiprequest-get.md
+          - name: Delegated admin relationship operations
+            href: resources/delegatedadminrelationshipoperation.md
+            items:
+            - name: List
+              href: api/delegatedadminrelationshipoperation-list.md
+            - name: Get
+              href: api/delegatedadminrelationshipoperation-get.md
+          - name: Delegated admin customer
+            href: resources/delegatedadmincustomer.md
+            items:
+            - name: List
+              href: api/delegatedadmincustomer-list.md
+            - name: Get 
+              href: api/delegatedadmincustomer-get.md
+            - name: Service management details
+              href: resources/delegatedadminservicemanagementdetail.md
+              items:      
+              - name: List
+                href: api/delegatedadminservicemanagementdetail-list.md
         - name: Device
           href: resources/device.md
           items:
