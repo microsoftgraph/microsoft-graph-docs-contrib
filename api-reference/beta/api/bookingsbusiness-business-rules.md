@@ -39,7 +39,7 @@ The API resource for scheduling policy is here: [BookingSchedulingPolicy resourc
 
 ### Scheduling
 
-At a service, the scheduling policy is inherited from business. The customer may choose to override the policies.
+At a service, the scheduling policy is inherited from the business. The customer may choose to override the policies.
 
 #### Main policy  
 
@@ -49,8 +49,8 @@ If a scheduling policy exists at both service level and business level, the serv
 
 #### Pre-Buffer
 
-This is the extra time needed for an appointment before an appointment. In the staff member calendar the appointment is of duration “pre-buffer time” +” appointment slot time”.
+This is the extra time needed for an appointment before a following appointment. In the staff member calendar, the appointment is of duration "pre-buffer time" + "appointment slot time".
 
 #### Post-Buffer
 
-This is the extra time needed for an appointment after an appointment. In the staff member calendar the appointment is of duration ” appointment slot time”+ “post buffer time”.
+This is the extra time needed for an appointment after a previous appointment. In the staff member calendar, the appointment is of duration "appointment slot time" + "post buffer time".

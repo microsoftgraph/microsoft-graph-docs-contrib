@@ -1,6 +1,6 @@
 ---
 title: "Create bookingAppointment"
-description: "Create a new bookingAppointment for the specified bookingbusiness."
+description: "Create a new bookingAppointment for the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 > [!NOTE]
-> If you're creating a custom app using application permissions, you must follow the rules in this topic, [Business rules validation](bookingsbusiness-business-rules.md).
+> If you create a custom app using application permissions, you must follow the [Business rules validation](bookingsbusiness-business-rules.md).
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ If the maximum number of customers (**maximumAttedeesCount**) allowed in the [se
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 
 ## Example
 
