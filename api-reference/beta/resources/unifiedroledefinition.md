@@ -31,7 +31,7 @@ The following RBAC providers are currently supported:
 | [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a unifiedRoleDefinition object. |
 | [Update unifiedRoleDefinition](../api/unifiedroledefinition-update.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Update a unifiedRoleDefinition object. |
 | [Delete unifiedRoleDefinition](../api/unifiedroledefinition-delete.md) | None | Delete a unifiedRoleDefinition object. |
-|[assignedPrincipals](../api/unifiedroledefinition-assignedprincipals.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description**|
+| [assignedPrincipals](../api/unifiedroledefinition-assignedprincipals.md) | [directoryObject](../resources/directoryobject.md) collection|Get the users and groups assigned to a role across all scopes.|
 
 ## Properties
 
