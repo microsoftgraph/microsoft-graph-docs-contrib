@@ -17,7 +17,7 @@ Represents details about a Microsoft Teams-enabled device that is provisioned fo
 
 Microsoft Teams-enabled devices are Teams-certified collaboration devices. They include Teams Rooms on Windows, Teams Rooms on Android, Phones, Panels, Displays, Surface Hubs, and SIP devices.
 
-Learn more - [Manage your devices in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/devices/device-management)
+Learn more about how to [Manage your devices in Microsoft Teams](/microsoftteams/devices/device-management)
 >**Note**:
 > This does not include mobile phones, laptops, computers, tabs, etc.
 
