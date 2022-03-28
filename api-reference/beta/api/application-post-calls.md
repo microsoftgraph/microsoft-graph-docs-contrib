@@ -959,11 +959,10 @@ Content-Type: application/json
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
-### Example 6: Join scheduled meeting with joinMeetingId and passcode
-To join the scheduled meeting we can use a combination of **joinMeetingId** and **passcode** (if required).
-This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
+### Example 6: Join a scheduled meeting with joinMeetingId and passcode
+The following shows an example that requires a **joinMeetingId** and a **passcode** to join an existing meeting. You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-#### Join a meeting which requries passcode
+#### Request
 <!-- {
   "blockType": "example",
   "name": "join-meeting-app-hosted-media",
@@ -1001,7 +1000,9 @@ Content-Type: application/json
   "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
-#### Join a meeting which does not requrie passcode
+### Example 7: Join a scheduled meeting with joinMeetingId
+The following shows an example that requires a **joinMeetingId** but doesn't required a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+#### Request
 <!-- {
   "blockType": "example",
   "name": "join-meeting-app-hosted-media",
@@ -1040,7 +1041,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 7: Join scheduled meeting with app hosted media
+### Example 8: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
 
 <!-- {
@@ -1086,7 +1087,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 8: Join channel meeting with service hosted media
+### Example 9: Join channel meeting with service hosted media
 Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
@@ -1145,7 +1146,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 9: Join channel meeting as a guest with service hosted media
+### Example 10: Join channel meeting as a guest with service hosted media
 For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
 The display name is the name you want to be displayed in the meeting for your guest identity. The id may be a unique id identifying the guest identity.
 
@@ -1273,7 +1274,7 @@ Content-Type: application/json
 
 > **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
 
-### Example 10: Create peer-to-peer PSTN call with service hosted media
+### Example 11: Create peer-to-peer PSTN call with service hosted media
 
 > **Note:** This call requires the Calls.Initiate.All permission.
 
@@ -1441,7 +1442,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 11: Create peer-to-peer PSTN call with application hosted media
+### Example 12: Create peer-to-peer PSTN call with application hosted media
 
 > **Note**: This example requires Calls.Initiate.All and Calls.AccessMedia.All permissions.
 

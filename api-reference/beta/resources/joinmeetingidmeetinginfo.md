@@ -1,6 +1,6 @@
 ---
 title: "joinMeetingIdMeetingInfo resource type"
-description: "The joinMeetingIdMeetingInfo type."
+description: "Contains information that allows you to join an existing meeting with a joinMeetingId and a passcode."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inherits from [meetingInfo](../resources/meetinginfo.md). This is the information that allows you to join an existing meeting with an ID and passcode (if requried). This information is obtained with the [Get Online Meetings API](../api/onlinemeeting-get.md).
+Contains information that allows you to join an existing meeting with a **joinMeetingId** and a **passcode** (if required). You can retrieve these properties from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
+
+Inherits from [meetingInfo](../resources/meetinginfo.md).
 
 ## Properties
 
 | Property                | Type    | Description                                                   |
 | :---------------------- | :------ | :------------------------------------------------------------ |
 | joinMeetingId           | String  | The ID used to join the meeting.                              |
-| passcode                | String  | The passcode used to join the call. Optional.                 |
+| passcode                | String  | The passcode used to join the meeting. Optional.                 |
 
 ## JSON representation
 
