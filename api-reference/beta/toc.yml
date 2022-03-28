@@ -14999,16 +14999,36 @@ items:
         - name: Device activity
           href: resources/teamworkdeviceactivity.md
           items:
+            - name: Active peripherals
+              href: resources/teamworkactiveperipherals.md
             - name: Get
               href: api/teamworkdeviceactivity-get.md
         - name: Device configuration
           href: resources/teamworkdeviceconfiguration.md
           items:
+            - name: Peripheral
+              href: resources/teamworkperipheral.md
+            - name: Camera configuration
+              href: resources/teamworkcameraconfiguration.md
+            - name: Display configuration
+              href: resources/teamworkdisplayconfiguration.md
+            - name: Hardware configuration
+              href: resources/teamworkhardwareconfiguration.md
+            - name: Microphone configuration
+              href: resources/teamworkmicrophoneconfiguration.md
+            - name: Speaker configuration
+              href: resources/teamworkspeakerconfiguration.md
+            - name: System configuration
+              href: resources/teamworksystemconfiguration.md
             - name: Get
               href: api/teamworkdeviceconfiguration-get.md
         - name: Device health
           href: resources/teamworkdevicehealth.md
           items:
+            - name: Peripherals health
+              href: resources/teamworkperipheralshealth.md
+            - name: Hardware health
+              href: resources/teamworkhardwarehealth.md
             - name: Get
               href: api/teamworkdevicehealth-get.md
         - name: Device operation

@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 Represents details about a Microsoft Teams-enabled device that is provisioned for the tenant.
 
+Microsoft Teams-enabled devices are Teams-certified collaboration devices. They include Teams Rooms on Windows, Teams Rooms on Android, Phones, Panels, Displays, Surface Hubs, and SIP devices.
+
+Learn more - [Manage your devices in Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/devices/device-management)
+>**Note**:
+> This does not include mobile phones, laptops, computers, tabs, etc.
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
