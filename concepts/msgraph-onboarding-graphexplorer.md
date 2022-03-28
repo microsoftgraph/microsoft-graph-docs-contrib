@@ -64,6 +64,10 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
 10. Try more queries. You can find the API reference and more example queries at [developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/education-overview).
     The Graph Explorer is a great tool to help you tweak your queries.
 
+11. You can see more detailed examples for Assignments API.
+
+> [!VIDEO https://www.youtube.com/watch?v=JePYam-hyUU&t=75s]
+
 ## Next steps
 
 - [Microsoft Teams setup](/graph/msgraph-onboarding-msteams)

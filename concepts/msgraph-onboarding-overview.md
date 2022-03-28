@@ -16,7 +16,7 @@ Microsoft allows you to create demo tenants for different purposes and start mak
 You have to follow the flow below based on your purposes.
 
 - Join the Microsoft Partner Network (MPN).
-- Create a Demo EDU Development tenant.
+- Create a Demo EDU development tenant.
 
     Purposes:
     - Information about integrating with Microsoft Education products and services such as Microsoft Teams, School Data Sync, Immersive Reader and more.
@@ -24,7 +24,7 @@ You have to follow the flow below based on your purposes.
     - Development purposes.
     - Testing solutions.
 
-- Or Create a EDU tenant.
+- Or Create an EDU tenant.
 
     Purposes:
     - Interactive digital experiences using fully functional Microsoft 365 environments.
