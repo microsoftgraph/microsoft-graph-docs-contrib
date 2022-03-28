@@ -86,8 +86,6 @@ The following example shows how to create an access review history definition sc
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessreviewhistorydefinition_from_"

@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues
 [!INCLUDE [sample-code](../includes/snippets/go/list-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-servicehealthissue-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

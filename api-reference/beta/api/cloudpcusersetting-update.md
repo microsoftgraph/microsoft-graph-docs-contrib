@@ -82,7 +82,7 @@ Content-Type: application/json
   "displayName": "Example",
   "selfServiceEnabled": true,
   "restorePointSetting": {
-    "frequencyInHours": "16",
+    "frequencyInHours": 16,
     "userRestoreEnabled": true
   },
   "localAdminEnabled": false

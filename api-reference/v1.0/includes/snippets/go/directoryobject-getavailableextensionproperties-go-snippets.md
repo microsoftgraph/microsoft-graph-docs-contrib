@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
-isSyncedFromOnPremises := "Boolean"
+requestBody := msgraphsdk.NewIsSyncedFromOnPremisesRequestBody()
+isSyncedFromOnPremises := true
 requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises)
 options := &msgraphsdk.GetAvailableExtensionPropertiesRequestBuilderPostOptions{
 	Body: requestBody,

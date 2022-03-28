@@ -18,7 +18,7 @@ options := &msgraphsdk.HideForUserRequestBuilderPostOptions{
 	Body: requestBody,
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).HideForUser().Post(options)
+graphClient.ChatsById(&chatId).HideForUser(chat-id).Post(options)
 
 
 ```
