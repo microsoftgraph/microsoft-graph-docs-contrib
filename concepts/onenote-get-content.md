@@ -18,6 +18,14 @@ If the request is successful, Microsoft Graph returns a 200 HTTP status code and
 
 By using query string options, you can filter your queries and improve performance.
 
+> [!NOTE]
+> The OneNote API supports CRUD based operations for OneNote resources. These operations support Creating, Reading, Updating, and Deleting of OneNote content. If you are building a solution supporting one of the following scenarios you will hit OneNote API limitations:
+> 
+> • Backup/Restore OneNote Sections
+> 
+> • Backup/Restore OneNote Notebooks
+> 
+> For backup and restore operations we recommend following guidance at [https://aka.ms/scanguidance](https://aka.ms/scanguidance).
 
 <a name="request-uri"></a>
 
