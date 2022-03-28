@@ -272,8 +272,6 @@ items:
                 href: msgraph-onboarding-sds.md
               - name: Microsoft Teams
                 href: msgraph-onboarding-msteams.md
-              - name: Assignments
-                href: msgraph-onboarding-assignments.md
               - name: Microsoft Graph Explorer
                 href: msgraph-onboarding-graphexplorer.md                                                                                            
       - name: Files

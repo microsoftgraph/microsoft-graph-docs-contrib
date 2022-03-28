@@ -47,5 +47,6 @@ After the installation finished, complete the welcome wizard.
 
 ## Next steps
 
-* [Assignments API](/graph/msgraph-onboarding-assignments)
+You can start testing calls to Microsoft Graph APIs with Graph Explorer after completing you classes set up.
+
 * [Graph Explorer](/graph/msgraph-onboarding-graphexplorer)
