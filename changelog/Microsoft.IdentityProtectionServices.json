@@ -1,6 +1,24 @@
 {
 	"changelog": [
 		{
+		      "ChangeList": [
+			      {
+			  		"Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
+			  		"ApiChange": "Member",
+			  		"ChangedApiName": "linux",
+			  		"ChangeType": "Addition",
+			  		"Description": "Added the **linux** member to the **conditionalAccessDevicePlatform** enumeration.",
+			  		"Target": "conditionalAccessDevicePlatform"
+			      	    }
+		      	          ],
+		      		  "Id": "72b6ab5a-f674-4872-9c80-bb4dcb54915f",
+		      		  "Cloud": "Prod",
+		      		  "Version": "v1.0",
+		      		  "CreatedDateTime": "2022-03-18T02:27:11.9832963Z",
+		      		  "WorkloadArea": "Identity and access",
+		      		  "SubArea": "Identity and sign-in"
+    },
+    {
 			"ChangeList": [
 				{
 					"Id": "8aa81736-9387-4a42-ab7a-e69eaf53fb8c",
