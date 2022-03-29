@@ -1,5 +1,5 @@
 ---
-title: "Create internalDomainFederation"
+title: "Create federationConfiguration"
 description: "Create a new internalDomainFederation object."
 author: "akgoel23"
 ms.localizationpriority: medium
