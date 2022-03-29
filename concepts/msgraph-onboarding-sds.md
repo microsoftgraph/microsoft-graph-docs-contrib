@@ -11,20 +11,20 @@ doc_type: conceptualPageType
 
 Microsoft School Data Sync simplifies class management in Office 365. School Data Sync reads rosters from your SIS and creates classes and groups for Microsoft Teams, Intune for Education, and third-party applications. School Data Sync set up is required for Microsoft Graph education APIs usage.
 
-To access the School Data Sync Admin Portal launch a private web browser, navigate to sds.microsoft.com, click **Sign-In**, then enter your Office 365 Global Admin account credentials created during your [Demo EDU tenant creation](/graph/msgraph-onboarding-edutenant). After you sign in:
+To access the School Data Sync Admin Portal launch a private web browser, navigate to `sds.microsoft.com`, click **Sign-In**, then enter your Office 365 Global Admin account credentials created during your [Demo EDU tenant creation](/graph/msgraph-onboarding-edutenant). After you sign in:
 
 1. See the example CSV files containing demo data: [School](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/School.csv), [Section](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/Section.csv), [Student](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/Student.csv), [Student Enrollment](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/StudentEnrollment.csv), [Teacher](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/Teacher.csv) and [Teacher Roster](https://github.com/microsoft/edu-devcamp/blob/master/HOL/HOL0/assets/TeacherRoster.csv). Take as base and adapt them according to your needs.
 
 2. Click **+ Add Profile** in the left navigation pane to create a Sync Profile.
 
 3. On the **Choose Connection Type** page, complete the form.
-   - Enter a name for your sync profile. This name will be used to identify the sync profile in the SDS Dashboard and cannot be changed once the profile setup is complete. 
-   - Select **Upload CVS files** and **CVS files: SDS Format**. 
+   - Enter a name for your sync profile. This name will be used to identify the sync profile in the SDS Dashboard and cannot be changed once the profile setup is complete.
+   - Select **Upload CVS files** and **CVS files: SDS Format**.
    - Click **Start**.
 
    ![Connection type](./images/msgraph-onboarding/sds2-connection.png)
 
-4. On the **Sync Options** page, select the **New users** option. Then click **Upload files** to upload your six CSV files.
+4. On the **Sync Options** page, select the **New users** option, and then click **Upload files** to upload your six CSV files.
 
    ![Sync options](./images/msgraph-onboarding/sds3-syncoptions.png)
 

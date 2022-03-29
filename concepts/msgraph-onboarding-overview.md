@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Graph Onboarding overview"
-description: "This article provides the information needed to onboard new developers and partners into the MPN, create tenants and use microsoft graph API."
+title: "Onboarding process to create education tenants and work with Microsoft Graph APIs"
+description: "This article provides the information needed to onboard new developers and partners into the MPN, create education or development tenants and work with Microsoft Graph APIs."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Graph API Onboarding overview
+# Onboarding process to create education tenants and work with Microsoft Graph APIs
 
 Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud services resources.
 
