@@ -4,7 +4,7 @@ description: Represents the status of the governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
+author: japere
 ---
 
 # governanceRoleAssignmentRequestStatus resource type
