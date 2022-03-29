@@ -4,15 +4,7 @@
       "ChangeList": [
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "dayOfWeek",
-          "ChangeType": "Addition",
-          "Description": "Added the **dayOfWeek** enumeration type.",
-          "Target": "dayOfWeek"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "expirationPatternType",
           "ChangeType": "Addition",
           "Description": "Added the **expirationPatternType** enumeration type.",
@@ -20,23 +12,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "recurrencePatternType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recurrencePatternType** enumeration type.",
-          "Target": "recurrencePatternType"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "recurrenceRangeType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recurrenceRangeType** enumeration type.",
-          "Target": "recurrenceRangeType"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleAssignmentScheduleFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleAssignmentScheduleFilterByCurrentUserOptions** enumeration type.",
@@ -44,7 +20,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleAssignmentScheduleInstanceFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleAssignmentScheduleInstanceFilterByCurrentUserOptions** enumeration type.",
@@ -52,7 +28,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleAssignmentScheduleRequestFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleAssignmentScheduleRequestFilterByCurrentUserOptions** enumeration type.",
@@ -60,7 +36,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleEligibilityScheduleFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleEligibilityScheduleFilterByCurrentUserOptions** enumeration type.",
@@ -68,7 +44,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleEligibilityScheduleInstanceFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleEligibilityScheduleInstanceFilterByCurrentUserOptions** enumeration type.",
@@ -76,7 +52,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "roleEligibilityScheduleRequestFilterByCurrentUserOptions",
           "ChangeType": "Addition",
           "Description": "Added the **roleEligibilityScheduleRequestFilterByCurrentUserOptions** enumeration type.",
@@ -84,7 +60,7 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "unifiedRoleManagementPolicyRuleTargetOperations",
           "ChangeType": "Addition",
           "Description": "Added the **unifiedRoleManagementPolicyRuleTargetOperations** enumeration type.",
@@ -92,19 +68,11 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "unifiedRoleScheduleRequestActions",
           "ChangeType": "Addition",
           "Description": "Added the **unifiedRoleScheduleRequestActions** enumeration type.",
           "Target": "unifiedRoleScheduleRequestActions"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "EnumType",
-          "ChangedApiName": "weekIndex",
-          "ChangeType": "Addition",
-          "Description": "Added the **weekIndex** enumeration type.",
-          "Target": "weekIndex"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -125,14 +93,6 @@
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
-          "ChangedApiName": "groupMembers",
-          "ChangeType": "Addition",
-          "Description": "Added the [groupMembers](https://docs.microsoft.com/en-us/graph/api/resources/groupMembers?view=graph-rest-1.0) resource type.",
-          "Target": "groupMembers"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
           "ChangedApiName": "identity",
           "ChangeType": "Addition",
           "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource type.",
@@ -149,14 +109,6 @@
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
-          "ChangedApiName": "recurrencePattern",
-          "ChangeType": "Addition",
-          "Description": "Added the [recurrencePattern](https://docs.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-1.0) resource type.",
-          "Target": "recurrencePattern"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
           "ChangedApiName": "recurrenceRange",
           "ChangeType": "Addition",
           "Description": "Added the [recurrenceRange](https://docs.microsoft.com/en-us/graph/api/resources/recurrenceRange?view=graph-rest-1.0) resource type.",
@@ -169,22 +121,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [requestSchedule](https://docs.microsoft.com/en-us/graph/api/resources/requestSchedule?view=graph-rest-1.0) resource type.",
           "Target": "requestSchedule"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "singleUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [singleUser](https://docs.microsoft.com/en-us/graph/api/resources/singleUser?view=graph-rest-1.0) resource type.",
-          "Target": "singleUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "subjectSet",
-          "ChangeType": "Addition",
-          "Description": "Added the [subjectSet](https://docs.microsoft.com/en-us/graph/api/resources/subjectSet?view=graph-rest-1.0) resource type.",
-          "Target": "subjectSet"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -213,74 +149,10 @@
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRolePermission",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRolePermission](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRolePermission?view=graph-rest-1.0) resource type.",
-          "Target": "unifiedRolePermission"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "administrativeUnit",
-          "ChangeType": "Addition",
-          "Description": "Added the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeUnit?view=graph-rest-1.0) resource",
-          "Target": "administrativeUnit"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "appScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [appScope](https://docs.microsoft.com/en-us/graph/api/resources/appScope?view=graph-rest-1.0) resource",
-          "Target": "appScope"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "device",
-          "ChangeType": "Addition",
-          "Description": "Added the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource",
-          "Target": "device"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "directoryObject",
-          "ChangeType": "Addition",
-          "Description": "Added the [directoryObject](https://docs.microsoft.com/en-us/graph/api/resources/directoryObject?view=graph-rest-1.0) resource",
-          "Target": "directoryObject"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "policyRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource",
-          "Target": "policyRoot"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "rbacApplication",
-          "ChangeType": "Addition",
-          "Description": "Added the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-1.0) resource",
-          "Target": "rbacApplication"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
           "ChangedApiName": "request",
           "ChangeType": "Addition",
           "Description": "Added the [request](https://docs.microsoft.com/en-us/graph/api/resources/request?view=graph-rest-1.0) resource",
           "Target": "request"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "roleManagement",
-          "ChangeType": "Addition",
-          "Description": "Added the [roleManagement](https://docs.microsoft.com/en-us/graph/api/resources/roleManagement?view=graph-rest-1.0) resource",
-          "Target": "roleManagement"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -313,14 +185,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) resource",
           "Target": "unifiedRoleAssignmentScheduleRequest"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unifiedRoleDefinition",
-          "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleDefinition?view=graph-rest-1.0) resource",
-          "Target": "unifiedRoleDefinition"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -425,70 +289,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRoleScheduleInstanceBase](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleScheduleInstanceBase?view=graph-rest-1.0) resource",
           "Target": "unifiedRoleScheduleInstanceBase"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "cancel",
-          "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/cancel?view=graph-rest-1.0) method to the [cancel](https://docs.microsoft.com/en-us/graph/api/cancel?view=graph-rest-1.0) resource.",
-          "Target": "cancel"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "cancel",
-          "ChangeType": "Addition",
-          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/cancel?view=graph-rest-1.0) method to the [cancel](https://docs.microsoft.com/en-us/graph/api/cancel?view=graph-rest-1.0) resource.",
-          "Target": "cancel"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
-          "Target": "filterByCurrentUser"
         }
       ],
       "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
