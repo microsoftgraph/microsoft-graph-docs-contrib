@@ -29,8 +29,8 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeSignInUri|String|URL of the end point used by active clients when authenticating with domains set up for single sign-on in Azure Active Directory (Azure AD). Referred to as ActiveLogOnUri in MSOnline PowerShell cmdlets.|
-|displayName|String|The display name of the identity Provider. Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
+|activeSignInUri|String|URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the **ActiveLogOnUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|displayName|String|The display name of the federated identity Provider (IdP). Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Azure AD accepts the MFA performed by the federated IdP when a federated user accesses an application that is governed by a conditional access policy that requires MFA. The possible values are: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. For more information, see [federatedIdpMfaBehavior values](#federatedidpmfabehavior-values).|
 |id|String|The identifier of the identity provider. Inherited from [entity](../resources/entity.md).|
 |isSignedAuthenticationRequestRequired|Boolean|If `true`, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If `false` (default), the SAML authentication requests sent to the federated IdP are not signed.|
