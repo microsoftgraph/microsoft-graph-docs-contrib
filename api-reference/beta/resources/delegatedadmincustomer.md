@@ -29,8 +29,9 @@ Represents an Azure AD tenant that is a customer of a Microsoft partner and has 
 |tenantId|String|The Azure AD-assigned tenant ID of the customer. Read-only.|
 
 ## Relationships
+|Relationship|Type|Description|
 |:---|:---|:---|
-|serviceManagementDetails|[delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) collection| Contains the management details of a service in the customer tenant that's managed by delegated administration.|
+|serviceManagementDetails|[delegatedAdminServiceManagementDetail](delegatedadminservicemanagementdetail.md) collection|Contains the management details of a service in the customer tenant that's managed by delegated administration.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
