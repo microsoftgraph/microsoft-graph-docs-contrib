@@ -45,7 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|**TODO: Add Description**|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
 |isOrganizationDefault|Boolean|**TODO: Add Description**|
-|lastModifiedBy|[identity](../resources/intune-identity.md)|**TODO: Add Description**|
+|lastModifiedBy|[identity](identity.md)|**TODO: Add Description**|
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
 |scopeId|String|**TODO: Add Description**|
 |scopeType|String|**TODO: Add Description**|
