@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a request specific to a delegated admin relationship between a partner and a customer.
+Represents a request specific to a delegated admin relationship between a partner and a customer. It allows the Microsoft partner admin to take actions on a relationship such as locking a relationship for approval or terminating a relationship.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,11 +25,11 @@ Represents a request specific to a delegated admin relationship between a partne
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|The action to be performed on the delegated admin relationship.|
-|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which the relationship request was created in UTC. This is set by the system and cannot be set by the caller.|
-|id|String|The unique identifier of the relationship request. This is set by the system and cannot be set by the caller.|
-|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship request was last modified in UTC. This is set by the system and cannot be set by the caller.|
-|status|String|The status of the request. This is set by the system and cannot be set by the caller.|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship.|
+|createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship request was created. Read-only. |
+|id|String|The unique identifier of the relationship request. Read-only. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and UTC time when this relationship request was last modified. Read-only.|
+|status|delegatedAdminRelationshipRequestStatus|The status of the request. Read-only. The possible values are: `created`, `pending`, `complete`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -40,17 +40,18 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.delegatedAdminRelationshipRequest",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationshipRequest",
-  "id": "cf4a23c7-070c-4d1c-8be8-1e86085ac9d1",
-  "action": "lockForApproval",
-  "status": "complete",
-  "createdDateTime": "2022-02-10T10:55:47.1180588Z",
-  "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z"
+  "id": "String (identifier)",
+  "action": "String",
+  "status": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

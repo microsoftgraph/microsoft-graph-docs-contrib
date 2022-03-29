@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminAccessDetails resource type"
-description: "Represents access details for a delegated admin relationship and delegated admin access assignment."
+description: "Represents the administrative roles that a Microsoft partner has in a customer tenant through a delegated admin relationship and delegated admin access assignment."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents access details (e.g., unified roles) for a delegated admin relationship and delegated admin access assignment.
+Represents the administrative roles that a Microsoft partner has in a customer tenant through a delegated admin relationship and delegated admin access assignment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|unifiedRoles|[unifiedRole](../resources/unifiedrole.md) collection|The directory roles specified for access.|
+|unifiedRoles|[unifiedRole](../resources/unifiedrole.md) collection|The directory roles that the Microsoft partner is assigned in the customer tenant.|
 
 ## Relationships
 None.

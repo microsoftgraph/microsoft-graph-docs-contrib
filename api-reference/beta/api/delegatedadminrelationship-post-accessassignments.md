@@ -1,5 +1,5 @@
 ---
-title: "Create delegatedAdminAccessAssignment"
+title: "Create accessAssignments"
 description: "Create a new delegatedAdminAccessAssignment object."
 author: "adtangir"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Create delegatedAdminAccessAssignment
+# Create accessAssignments
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -46,19 +46,13 @@ You can specify the following properties when creating a **delegatedAdminAccessA
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment. Required.|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment. Required.|
+|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container through which members are assigned access. For example, a security group.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner is assigned in the customer tenant.|
 
 
 ## Response
 
-## Response headers
-|Name|Description|
-|:---|:---|
-|Content-Type|application/json.|
-|Location|The location of the resource object.|
-
-If successful, this method returns a `201 Created` response code and a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body. The Location header in the response points to the created delegatedAdminAccessAssignment object.
+If successful, this method returns a `201 Created` response code and a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body. A **Location** header in the response points to the created **delegatedAdminAccessAssignment** object.
 
 ## Examples
 
@@ -69,8 +63,7 @@ If successful, this method returns a `201 Created` response code and a [delegate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments
-Authorization: Bearer {token}
+POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments
 Content-Type: application/json
 
 {
@@ -99,7 +92,6 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

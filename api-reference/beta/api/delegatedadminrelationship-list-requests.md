@@ -1,5 +1,5 @@
 ---
-title: "List delegatedAdminRelationshipRequests"
+title: "List requests"
 description: "Get a list of the delegatedAdminRelationshipRequest objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List delegatedAdminRelationshipRequests
+# List requests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -40,6 +40,7 @@ This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$cou
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Prefer|@odata.maxpagesize=n. Where **n** is the desired number of results per page. The maximum value is 300. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -47,6 +48,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) objects in the response body.
+
+Each **delegatedAdminRelationshipRequest** object contains an **@odata.etag** property as per RFC2616.
 
 ## Examples
 
@@ -57,8 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836/requests
 ```
 
 

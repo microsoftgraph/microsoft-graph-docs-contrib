@@ -1,13 +1,13 @@
 ---
-title: "List delegatedAdminServiceManagementDetails"
-description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
+title: "List serviceManagementDetails"
+description: "Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List delegatedAdminServiceManagementDetails
+# List serviceManagementDetails
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serv
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 |Name|Description|
@@ -58,9 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
-Authorization: Bearer {token}
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

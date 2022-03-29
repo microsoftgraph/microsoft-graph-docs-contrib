@@ -36,8 +36,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 ## Request headers
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
-|If-Match|Last known ETag value for the **delegatedAdminRelationship** to be deleted. Required.|
+|If-Match|If-match: <etag>. Last known ETag value for the **delegatedAdminRelationship** to be deleted. Retrieve the ETag value from a LIST or GET operation.Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -56,13 +55,11 @@ If successful, this method returns a `204 No Content` response code.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}
-Authorization: Bearer {token}
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -702,7 +702,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## DelegatedAdminRelationship permissions
+## Delegated admin relationship permissions
 
 #### Delegated permissions
 

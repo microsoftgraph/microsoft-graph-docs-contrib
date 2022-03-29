@@ -1,5 +1,5 @@
 ---
-title: "List delegatedAdminRelationshipOperations"
+title: "List operations"
 description: "Get a list of the delegatedAdminRelationshipOperation objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List delegatedAdminRelationshipOperations
+# List operations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,6 +36,8 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ## Optional query parameters
 This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
+`$skip` supports up to 500 objects while `$top` supports up to 20 objects.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -57,10 +59,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/operations
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836/operations
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

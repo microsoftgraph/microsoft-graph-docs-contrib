@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
-description: "Contains the management details of a service managed by Delegated Administration"
+description: "Contains the management details of a service in the customer tenant that's managed by delegated administration."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the management details of a delegated admin service.
+Contains the management details of a service in the customer tenant that's managed by delegated administration.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,9 +24,9 @@ Contains the management details of a delegated admin service.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of a managed service.|
-|serviceName|String|The name of a managed service.|
-|serviceManagementUrl|String|The URL of the management portal for the managed service.|
+|id|String|The identifier of a managed service. Read-only.|
+|serviceName|String|The name of a managed service. Read-only.|
+|serviceManagementUrl|String|The URL of the management portal for the managed service. Read-only.|
 
 ## Relationships
 None.
@@ -35,15 +35,18 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.delegatedAdminServiceManagementDetail"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.delegatedAdminServiceManagementDetail",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
-  "id": "5d0273c3-0f0e-4e00-90e8-e792c8860fb5",
-  "serviceName": "Microsoft 365 Lighthouse",
-  "serviceManagementUrl": "https://lighthouse.microsoft.com"
+  "id": "String (identifier)",
+  "serviceId": "String",
+  "serviceName": "String",
+  "serviceManagementUrl": "String"
 }
 ```
-

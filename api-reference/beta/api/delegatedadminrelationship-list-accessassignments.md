@@ -1,5 +1,5 @@
 ---
-title: "List delegatedAdminAccessAssignments"
+title: "List accessAssignments"
 description: "Get a list of the delegatedAdminAccessAssignment objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List delegatedAdminAccessAssignments
+# List accessAssignments
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,6 +36,8 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
+`$skip` supports up to 500 objects while `$top` supports up to 20 objects.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -48,6 +50,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) objects in the response body.
 
+Each **delegatedAdminAccessAssignment** object contains an **@odata.etag** property as per RFC2616.
+
 ## Examples
 
 ### Request
@@ -57,8 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments
 ```
 
 

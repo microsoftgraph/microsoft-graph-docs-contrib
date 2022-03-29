@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminCustomer resource type"
-description: "Represents a delegated admin customer."
+description: "Represents a customer who has a delegated admin relationship with a Microsoft partner."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a delegated admin customer. This object is created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more relationships exist.
+Represents an Azure AD tenant that is a customer of a Microsoft partner and has a delegated admin relationship with the Microsoft partner. This object is automatically created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more active relationships exist.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,12 +24,13 @@ Represents a delegated admin customer. This object is created by the system when
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the delegated admin customer organization. This is set by the system and cannot be set by the caller.|
-|id|String|The unique identifier of the delegated admin customer. This is set by the system and cannot be set by the caller.|
-|tenantId|String|The tenant ID of the delegated admin customer. Must be a valid tenant ID as in AAD. This is set by the system and cannot be set by the caller.|
+|displayName|String|The Azure AD display name of the customer tenant. Read-only. Supports `$orderBy`. |
+|id|String|The Azure AD-assigned unique identifier of the customer. Read-only. Inherited from [entity](../resources/entity.md).|
+|tenantId|String|The Azure AD-assigned tenant ID of the customer. Read-only.|
 
 ## Relationships
-None.
+|:---|:---|:---|
+|serviceManagementDetails|[delegatedAdminServiceManagementDetail](../resources/delegatedadminservicemanagementdetail.md) collection| Contains the management details of a service in the customer tenant that's managed by delegated administration.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -37,15 +38,15 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.delegatedAdminCustomer",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminCustomer",
-  "id": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-  "tenantId": "4fdbff88-9d6b-42e0-9713-45c922ba8001",
-  "displayName": "Contoso"
+  "id": "String (identifier)",
+  "tenantId": "String",
+  "displayName": "String"
 }
-```
 

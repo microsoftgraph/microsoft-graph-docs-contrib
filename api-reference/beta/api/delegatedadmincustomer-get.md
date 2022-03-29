@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 ```
 
 ## Optional query parameters
-This method supports the $select OData query parameter to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` OData query parameter to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 |Name|Description|
@@ -57,8 +57,7 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/4fdbff88-9d6b-42e0-9713-45c922ba8001
 ```
 
 

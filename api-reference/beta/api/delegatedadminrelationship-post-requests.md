@@ -1,5 +1,5 @@
 ---
-title: "Create delegatedAdminRelationshipRequest"
+title: "Create requests"
 description: "Create a new delegatedAdminRelationshipRequest object."
 author: "adtangir"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Create delegatedAdminRelationshipRequest
+# Create requests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -46,8 +46,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|The action to be performed on the delegated admin relationship. Required.|
-
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `unknownFutureValue`.|
 
 ## Response
 
@@ -62,8 +61,7 @@ If successful, this method returns a `201 Created` response code and a [delegate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/requests
-Authorization: Bearer {token}
+POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836/requests
 Content-Type: application/json
 
 {

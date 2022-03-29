@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the $select OData query parameter to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` OData query parameter to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 |Name|Description|
@@ -48,6 +48,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
 
+The **delegatedAdminRelationship** object also contains an **@odata.etag** property as per RFC2616.
+ 
 ## Examples
 
 ### Request
@@ -57,8 +59,7 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
 ```
 
 

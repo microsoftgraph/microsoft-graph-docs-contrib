@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the $select OData query parameter to retrieve specific user properties, including those that are not returned by default.
+This method supports the `$select` OData query parameter to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 |Name|Description|
@@ -57,13 +57,10 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
-Authorization: Bearer {token}
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/da9d6cf90-083a-47dc-ace2-1da98be3f344
 ```
 
-
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,6 +73,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.delegatedAdminAccessAssignment",
+  "@odata.etag": "W/\"JYsD02WrMDI5OC0wMDAwLTAyMDAtMDAwMC02MjJiZTA0YjAwMDAiJw==\"",
   "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#accessAssignments/$entity",
   "id": "84c586df-0943-416e-b95f-7289cb8d3bd5",
   "status": "active",

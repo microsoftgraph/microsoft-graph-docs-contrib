@@ -1,6 +1,6 @@
 ---
 title: "unifiedRole resource type"
-description: "The directory roles specified for access."
+description: "The directory roles that can be assigned to a Microsoft partner through a delegated admin relationship."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,12 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The directory roles specified for access.
+The directory roles that can be assigned to a Microsoft partner through a delegated admin relationship.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|roleDefinitionId|String|The unified role definition ID of the role.|
+|roleDefinitionId|String|The unified role definition ID of the directory role. Refer to [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) resource.|
 
 ## Relationships
 None.
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.unifiedRole",
-  "roleDefinitionId": "e3973bdf-4987-49ae-837a-ba8e231c7286"
+  "roleDefinitionId": "String"
 }
 ```
 

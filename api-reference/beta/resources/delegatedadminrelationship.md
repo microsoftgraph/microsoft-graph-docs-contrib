@@ -1,6 +1,6 @@
 ---
 title: "delegatedAdminRelationship resource type"
-description: "Represents a delegated admin relationship between a partner and customer."
+description: "Represents the details of the delegated administrative privileges that a Microsoft partner has in a customer tenant."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -28,24 +28,23 @@ Represents a delegated admin relationship between a partner and customer.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the relationship. Read-only.|
-|displayName|String|The display name of the relationship. This is primarily meant for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner (only when the relationship is in the "created" status) and cannot be changed by the customer.|
-|duration|Duration|The duration (ISO 8601) of the relationship. Must be a value between P1D and P2Y inclusive. This is set by the partner (only when the relationship is in the "created" status) and cannot be changed by the customer.|
-|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The information of the customer of the relationship. This is set either by the partner at the time of relationship creation or by the system after customer approval of the relationship if the partner did not originally set it. This cannot be changed by the customer.|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the relationship.|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`. This is set by the system and cannot be set by the caller.|
-|createdDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was created in UTC. This is set by the system and cannot be set by the caller.|
-|lastModifiedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship was last modified in UTC. This is set by the system and cannot be set by the caller.|
-|activatedDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship became active in UTC. This is set by the system and cannot be set by the caller.|
-|endDateTime|DateTimeOffset|The date and time (ISO 8601) at which this relationship either terminated or expired, or in the case of an active relationship, the date and time at which it is *scheduled* to expire (i.e., endDateTime = activatedDateTime + duration) in UTC. This is set by the system and cannot be set by the caller.|
-
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details containing the identifiers of the administrative roles that the partner admin is requesting in the customer tenant.|
+|activatedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only.|
+|customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer.|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer.|
+|duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. This is set by the partner only when the relationship is in the `created` status and cannot be changed by the customer.|
+|endDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the **status** of relationship will either be `terminated` or `expired`. Calculated as `endDateTime = activatedDateTime + duration`. Read-only.|
+|id|String|The unique identifier of the relationship. Read-only. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only.|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. This is set by the system and cannot be set by the caller. Supports `$orderBy`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessAssignments|[delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) collection|The access assignments associated with the delegated admin relationship.|
 |operations|[delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) collection|The long running operations associated with the delegated admin relationship.|
-|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship.|
+|requests|[delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) collection|The requests associated with the delegated admin relationship. Supports `$expand`|
 
 ## JSON representation
 The following is a JSON representation of the resource.

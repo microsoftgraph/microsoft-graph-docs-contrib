@@ -37,21 +37,21 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|If-Match|Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
+|If-Match|If-match: <etag>. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|accessContainer|[microsoft.graph.delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container of the access assignment.|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details of the access assignment.|
-
+|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container through which members are assigned access. For example, a security group.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner is assigned in the customer tenant|
 
 
 ## Response
+
+If successful, this method returns a `200 OK` or a `202 Accepted` response code.
 
 ## Response headers
 |Name|Description|
@@ -60,7 +60,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Location|The location of the resource object.|
 |Retry-After|The time after which a subsequent API call can be made.|
 
-If successful, this method returns a `202 Accepted` response code with a URL to a long running operation in the `Location` response header that can be monitored for completion. **Note:** If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
+This method returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header that can be monitored for completion. If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
 
 ## Examples
 
@@ -72,8 +72,7 @@ If successful, this method returns a `202 Accepted` response code with a URL to 
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshipId}/accessAssignments/{delegatedAdminAccessAssignmentId}
-Authorization: Bearer {token}
+PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/da9d6cf90-083a-47dc-ace2-1da98be3f344
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
@@ -100,7 +99,7 @@ Content-Type: application/json
 Returns a 202 response.
 
 ### Response
-
+The following is an example response that returns a `202 Accepted` response code and a **Retry-After** header.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

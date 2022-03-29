@@ -36,10 +36,13 @@ GET /tenantRelationships/delegatedAdminRelationships
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
+`$skip` supports up to 500 objects while `$top` supports up to 20 objects.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Prefer|@odata.maxpagesize=n. Where **n** is the desired number of results per page. The maximum value is 300. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -47,6 +50,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body.
+
+Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
 
 ## Examples
 
@@ -58,7 +63,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships
-Authorization: Bearer {token}
 ```
 
 
