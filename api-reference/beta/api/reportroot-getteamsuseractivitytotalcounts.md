@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsUserActivityTotalCounts"
-description: "Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users."
+description: "Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or non-licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, and meetings. The activities are performed by Microsoft Teams licensed or non-licensed users.
+Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed or non-licensed users.
 
 ## Permissions
 
