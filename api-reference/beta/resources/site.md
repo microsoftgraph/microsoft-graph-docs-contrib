@@ -40,7 +40,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List columns][]               | GET /sites/{site-id}/columns
 | [Create column][]              | POST /sites/{site-id}/columns
 | [List operations](../api/site-list-operations.md)|GET /sites/{site-id}/operations
-| [Get site setting][]           | GET /sites/{site-id}/settings
+| [Get site settings][]           | GET /sites/{site-id}/settings
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -63,22 +63,22 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
-[Get site setting]: ../api/sitesettings-get.md
+[Get site settings]: ../api/sitesettings-get.md
 
 
 ## Properties
 
 | Property name            | Type               | Description
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **createdDateTime**      | DateTimeOffset     | The date and time when the item was created. Read-only.
 | **description**          | string             | The descriptive text for the site.                                               |
 | **displayName**          | string             | The full title for the site. Read-only.
 | **eTag**                 | string             | ETag for the item. Read-only.
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.
+| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
+| **lastModifiedDateTime** | DateTimeOffset     | The date and time when the item was last modified. Read-only.
 | **name**                 | string             | The name / title of the item.
 | **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.
-| **settings**             | [sitesettings]     | The settings on this site. Returned only on $select. Read-only.
+| **settings**             | [siteSettings]     | The settings for this site. Returned only on $select. Read-only.
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
@@ -123,7 +123,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
-[sitesettings]: sitesettings.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
