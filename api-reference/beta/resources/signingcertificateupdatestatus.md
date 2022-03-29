@@ -18,8 +18,8 @@ Provides status and timestamp of the last update of the signing certificate.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|certificateUpdateResult|String|Status of the last certificate update|
-|lastRunDateTime|DateTimeOffset|Date and time of the last certificate update|
+|certificateUpdateResult|String|Status of the last certificate update. Read-only. For a list of statuses, see [certificateUpdateResult status](#certificateupdateresult-status).|
+|lastRunDateTime|DateTimeOffset|Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only. |
 
 ### certificateUpdateResult status
 | Value | Description |
