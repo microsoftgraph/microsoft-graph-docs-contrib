@@ -18,7 +18,7 @@ Represents a long-running operation related to a delegated admin relationship. A
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List delegatedAdminRelationshipOperations](../api/delegatedadminrelationshipoperation-list.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md) collection|Get a list of the **delegatedAdminRelationshipOperation** objects and their properties.|
+|[List delegatedAdminRelationshipOperations](../api/delegatedadminrelationship-list-operations.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md) collection|Get a list of the **delegatedAdminRelationshipOperation** objects and their properties.|
 |[Get delegatedAdminRelationshipOperation](../api/delegatedadminrelationshipoperation-get.md)|[delegatedAdminRelationshipOperation](delegatedadminrelationshipoperation.md)|Read the properties and relationships of a **delegatedAdminRelationshipOperation** object.|
 
 ## Properties

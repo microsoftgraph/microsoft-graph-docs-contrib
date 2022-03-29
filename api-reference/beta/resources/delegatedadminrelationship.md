@@ -18,8 +18,8 @@ Represents a delegated admin relationship between a partner and customer.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create delegatedAdminRelationship](../api/delegatedadminrelationship-post.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Create a new **delegatedAdminRelationship** object.|
-|[List delegatedAdminRelationships](../api/delegatedadminrelationship-list.md)|[delegatedAdminRelationship](delegatedadminrelationship.md) collection|Get a list of the **delegatedAdminRelationship** objects and their properties.|
+|[Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Create a new **delegatedAdminRelationship** object.|
+|[List delegatedAdminRelationships](../api/tenantrelationship-list-delegatedadminrelationships.md)|[delegatedAdminRelationship](delegatedadminrelationship.md) collection|Get a list of the **delegatedAdminRelationship** objects and their properties.|
 |[Get delegatedAdminRelationship](../api/delegatedadminrelationship-get.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Read the properties and relationships of a **delegatedAdminRelationship** object.|
 |[Update delegatedAdminRelationship](../api/delegatedadminrelationship-update.md)|[delegatedAdminRelationship](delegatedadminrelationship.md)|Update the properties of a **delegatedAdminRelationship** object.|
 |[Delete delegatedAdminRelationship](../api/delegatedadminrelationship-delete.md)|None|Deletes a **delegatedAdminRelationship** object.|
