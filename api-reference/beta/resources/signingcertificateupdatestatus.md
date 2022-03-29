@@ -21,6 +21,12 @@ Provides status and timestamp of the last update of the signing certificate.
 |certificateUpdateResult|String|Status of the last certificate update|
 |lastRunDateTime|DateTimeOffset|Date and time of the last certificate update|
 
+### certificateUpdateResult status
+| Value | Description |
+| :--- | :--- |
+|  |  |
+
+
 ## Relationships
 None.
 
