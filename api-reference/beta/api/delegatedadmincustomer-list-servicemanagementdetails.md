@@ -1,6 +1,6 @@
 ---
 title: "List serviceManagementDetails"
-description: "Get a list of the [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) objects and their properties."
+description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails
+GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/4fdbff88-9d6b-42e0-9713-45c922ba8001/serviceManagementDetails
 ```
 
 ### Response
@@ -73,7 +73,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers/{delegatedAdminCustomerId}/serviceManagementDetails",
+  "@odata.context": "https://graph.microsoft.com/beta/tenantRelationships/$metadata#delegatedAdminCustomers/4fdbff88-9d6b-42e0-9713-45c922ba8001/serviceManagementDetails",
   "value": [
     {
       "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",

@@ -37,7 +37,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
+|If-Match|If-match: etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
@@ -92,11 +92,6 @@ Content-Type: application/json
   }
 }
 ```
-
-
-### Example: Returns a 202 response
-
-Returns a 202 response.
 
 ### Response
 The following is an example response that returns a `202 Accepted` response code and a **Retry-After** header.
