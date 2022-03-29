@@ -14,13 +14,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a class that contains the options for an outgoing call.
-Inherited from [callOptions](callOptions.md).
+
+Inherits from [callOptions](calloptions.md).
 
 ## Properties
+
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

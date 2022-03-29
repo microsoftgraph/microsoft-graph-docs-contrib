@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentSharingSession",
           "ChangeType": "Addition",
-          "Description": "Added the [contentSharingSession](https://docs.microsoft.com/en-us/graph/api/resources/contentSharingSession?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentSharingSession](https://docs.microsoft.com/en-us/graph/api/resources/contentSharingSession?view=graph-rest-beta) resource and supported methods.",
           "Target": "call"
         }
       ],
