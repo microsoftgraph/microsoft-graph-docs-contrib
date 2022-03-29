@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-*A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with an on-premises environment. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed)*
+Represents configurations of the domains for a tenant that are federated with Azure AD. Use this resource to federate your on-premises environment with Azure AD and use this federation for authentication and authorization. For information on federation, see [What is federation with Azure AD?](/azure/active-directory/hybrid/whatis-fed).
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
