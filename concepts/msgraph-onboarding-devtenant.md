@@ -21,15 +21,14 @@ To get an EDU tenant go to [Partner Sign Up](https://aka.ms/edupartnersignup) an
 
 You must receive an email notification about you tenant request.
 
-## Developer Resources
+## Use your development tenant with these developer resources
 
 | Purpose | Resource |
 |--------------|-------------|
 | Develop for the Microsoft 365 Platform     | [https://developer.microsoft.com/en-us/microsoft-365/?utm_source=developermscom](https://developer.microsoft.com/en-us/microsoft-365/?utm_source=developermscom) |
-| Develop for Microsoft Graph                | [https://docs.microsoft.com/en-us/graph/](https://docs.microsoft.com/graph/) |
 | Create a Teams app                         | [https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL2#ex4](https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL2#ex4) |
+| Create Progressive Web Apps                | [https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL3#overview](https://github.com/microsoft/edu-devcamp/tree/master/HOL/HOL3#overview)
 
 ## See also
 
-* [Join the Microsoft Partner Network](/graph/msgraph-onboarding-mpn)
-* Create a [Demo EDU Tenant](/graph/msgraph-onboarding-edutenant)
+* If the tenant is not for development purposes then you can create a [Demo EDU Tenant](/graph/msgraph-onboarding-edutenant)
