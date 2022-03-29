@@ -8,7 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
-	Select: "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand",
+	Select: "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences",
+	Expand: "exceptionOccurrences",
 }
 options := &msgraphsdk.EventRequestBuilderGetOptions{
 	Q: requestParameters,

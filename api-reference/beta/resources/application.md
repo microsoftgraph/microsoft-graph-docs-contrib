@@ -38,14 +38,15 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Create call](../api/application-post-calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 |[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|
 |**Certificates and secrets**| | |
-|[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
-|[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
+|[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password or secret to an application.|
+|[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password or secret from an application.|
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|
 |[Remove key](../api/application-removekey.md)|None|Remove a key credential from an application.|
 |**Extensions**| | |
-| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
-| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+| [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+| [Get extensionProperty](../api/extensionproperty-delete.md) | None | Get an extension property from an application object. |
+| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. |
 |**Federated identity credentials**| | |
 | [List federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) collection | List federated identity credentials on an application object. |
 | [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Create a federated identity credential on an application object. |
@@ -110,6 +111,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application. For more information about how publisher verification helps support application security, trustworthiness, and compliance, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).|
 | uniqueName | String | The unique identifier that can be assigned to an application as an alternative identifier. Immutable. Read-only. |
 | web |[webApplication](webapplication.md)| Specifies settings for a web application. |
+| windows |[windowsApplication](windowsapplication.md)| Specifies settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store.|
 
 ### signInAudience values
 
@@ -182,7 +184,8 @@ The following is a JSON representation of the resource.
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"},
+  "windows": {"@odata.type": "microsoft.graph.windowsApplication"}
 }
 ```
 

@@ -21,7 +21,7 @@ options := &msgraphsdk.ForwardRequestBuilderPostOptions{
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward().Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward(group-id, conversationThread-id, post-id).Post(options)
 
 
 ```

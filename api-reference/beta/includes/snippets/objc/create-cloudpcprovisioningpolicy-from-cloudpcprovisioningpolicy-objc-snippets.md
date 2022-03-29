@@ -23,6 +23,9 @@ MSGraphCloudPcDomainJoinConfiguration *domainJoinConfiguration = [[MSGraphCloudP
 [cloudPcProvisioningPolicy setImageId:@"MicrosoftWindowsDesktop_Windows-10_19h1-evd"];
 [cloudPcProvisioningPolicy setImageType: [MSGraphCloudPcProvisioningPolicyImageType gallery]];
 [cloudPcProvisioningPolicy setOnPremisesConnectionId:@"4e47d0f6-6f77-44f0-8893-c0fe1701ffff"];
+MSGraphCloudPcWindowsSettings *windowsSettings = [[MSGraphCloudPcWindowsSettings alloc] init];
+[windowsSettings setLanguage:@"en-US"];
+[cloudPcProvisioningPolicy setWindowsSettings:windowsSettings];
 
 NSError *error;
 NSData *cloudPcProvisioningPolicyData = [cloudPcProvisioningPolicy getSerializedDataWithError:&error];

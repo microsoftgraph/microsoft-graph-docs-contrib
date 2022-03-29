@@ -296,7 +296,7 @@ The **allowExternalSenders** property can only be accessed on unified groups. Ac
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
@@ -338,7 +338,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -406,9 +406,9 @@ The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only
 
 ### Installation of apps that require resource-specific consent permissions is not supported
 The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
-- [Add app to team](/graph/api/team-post-installedapps.md)
+- [Add app to team](/graph/api/team-post-installedapps)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
-- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
 ## Users

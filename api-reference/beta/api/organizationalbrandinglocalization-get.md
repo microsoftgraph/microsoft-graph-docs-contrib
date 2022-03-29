@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,7 +107,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.organizationalBrandingProperties",
     "@odata.id": "https://graph.microsoft.com/v2/99b24e1b-abec-4598-9d63-a2baf0a3cea1/directoryObjects/$/Microsoft.DirectoryServices.Organization('99b24e1b-abec-4598-9d63-a2baf0a3cea1')//localizations('fr-FR')/fr-FR",
     "id": "fr-FR",
-    "backgroundColor": "",
+    "backgroundColor": " ",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/1036/bannerlogo?ts=637673868626068858",
     "cdnList": [
@@ -111,8 +115,27 @@ Content-Type: application/json
         "aadcdn.msftauthimages.net",
         "aadcdn.msauthimages.net"
     ],
-    "signInPageText": "Welcome to Contoso France",
-    "usernameHintText": "Welcome to Contoso France"
+    "customAccountResetCredentialsUrl": null,
+    "customCannotAccessYourAccountText": null,
+    "customCannotAccessYourAccountUrl": null,
+    "customForgotMyPasswordText": null,
+    "customPrivacyAndCookiesText": null,
+    "customPrivacyAndCookiesUrl": null,
+    "customTermsOfUseText": null,
+    "customTermsOfUseUrl": null,
+    "customResetItNowText": null,
+    "faviconRelativeUrl": null,
+    "headerBackgroundColor": null,
+    "signInPageText": "Contoso",
+    "squareLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/0/tilelogo?ts=637535563832888580",
+    "usernameHintText": " ",
+    "loginPageTextVisibilitySettings": {
+      "hideCannotAccessYourAccount": false,
+      "hideForgotMyPassword": false,
+      "hideResetItNow": false,
+      "hideTermsOfUse": true,
+      "hidePrivacyAndCookies": true
+    }
 }
 ```
 
@@ -239,6 +262,10 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbranding-frlocale-bannerlogo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

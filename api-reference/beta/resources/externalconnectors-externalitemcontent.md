@@ -20,7 +20,7 @@ The content of an [externalItem](externalconnectors-externalitem.md) indexed via
 | Property | Type   | Description                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | value    | String | The content for the externalItem. Required.                                                 |
-| type     | String | The type of content in the value property. Possible values are `text` and `html`. Required. |
+| type     | String | The type of content in the value property. Possible values are `text` and `html`. These are the content types that the indexer supports, and not the file extension types allowed. Required. |
 
 ## Relationships
 
