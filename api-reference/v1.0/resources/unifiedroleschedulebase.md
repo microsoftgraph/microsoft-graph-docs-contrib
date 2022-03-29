@@ -19,6 +19,10 @@ Namespace: microsoft.graph
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
+None.
+
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleScheduleBases](../api/unifiedroleschedulebase-list.md)|[unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) collection|Get a list of the [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md) objects and their properties.|
@@ -33,6 +37,8 @@ Inherits from [entity](../resources/entity.md).
 |[Add principal](../api/unifiedroleschedulebase-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
 |[List unifiedRoleDefinition](../api/unifiedroleschedulebase-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
 |[Add unifiedRoleDefinition](../api/unifiedroleschedulebase-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
+
+-->
 
 ## Properties
 |Property|Type|Description|

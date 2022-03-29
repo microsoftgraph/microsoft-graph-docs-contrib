@@ -19,12 +19,16 @@ Namespace: microsoft.graph
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
+
+None.
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyNotificationRules](../api/unifiedrolemanagementpolicynotificationrule-list.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) collection|Get a list of the [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) objects and their properties.|
 |[Get unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-get.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
 |[Update unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-update.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)|Update the properties of an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
 |[Delete unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|
