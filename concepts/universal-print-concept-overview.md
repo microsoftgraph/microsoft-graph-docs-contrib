@@ -39,10 +39,10 @@ Keeping track of an organization's printers, printer configurations, and printer
 * **Keep an eye on printer status, configurations, and availability** by using [List printers](/graph/api/print-list-printers) and [printerStatus](/graph/api/resources/printerstatus).
 
 * **See who's using your printers and how much they're printing** by using the reporting APIs:
-  * [List dailyPrintUsageSummariesByUser](/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagesummarybyuser)
-  * [List monthlyPrintUsageSummariesByUser]/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagesummarybyuser)
-  * [List dailyPrintUsageSummariesByPrinter](/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagesummarybyprinter)
-  * [List monthlyPrintUsageSummariesByPrinter](/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagesummarybyprinter)
+  * [List dailyPrintUsageByUser](/graph/api/reportroot-list-dailyprintusagebyuser)
+  * [List monthlyPrintUsageByUser](/graph/api/reportroot-list-monthlyprintusagebyuser)
+  * [List dailyPrintUsageByPrinter](/graph/api/reportroot-list-dailyprintusagebyprinter)
+  * [List monthlyPrintUsageByPrinter](/graph/api/reportroot-list-monthlyprintusagebyprinter)
 
 * **Configure user permissions** by modifying user and group membership on printers:
   * [List allowedUsers](/graph/api/printershare-list-allowedusers)
