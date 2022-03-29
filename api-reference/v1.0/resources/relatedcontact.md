@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.
+Represents a contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.
 
 ## Properties
 
@@ -21,7 +21,7 @@ Contact record related to an [educationUser](../resources/educationuser.md) that
 | displayName   | String                | Name of the contact. Required.                                                                                                            |
 | emailAddress  | String                | Primary email address of the contact. Required.                                                                                           |
 | mobilePhone   | String                | Mobile phone number of the contact.                                                                                                       |
-| relationship  | `contactRelationship` | Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`. |
+| relationship  | `contactRelationship` | Relationship to the user. Possible values are: `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -37,11 +37,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "accessConsent": true,
   "displayName": "String",
   "emailAddress": "String",
   "mobilePhone": "String",
-  "relationship": "String",
-  "accessConsent": true
+  "relationship": "String"
 }
 ```
 
