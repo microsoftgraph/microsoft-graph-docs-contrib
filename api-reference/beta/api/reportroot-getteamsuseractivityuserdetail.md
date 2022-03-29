@@ -72,8 +72,8 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns.
 
 - Report Refresh Date
-- Tenant Name
-- Host Tenant Name
+- Tenant Display Name
+- Shared Channel Tenant Display Names
 - User Id
 - User Principal Name
 - Last Activity Date
@@ -156,7 +156,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Tenant Name,Host Tenant Name,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### Example 2: JSON output
@@ -199,8 +199,8 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
-      "tenantName": "Microsoft",
-      "hostTenantName": "SampleTenant",
+      "tenantDisplayName": "Microsoft",
+      "sharedChannelTenantDisplayNames": "SampleTenant",
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
