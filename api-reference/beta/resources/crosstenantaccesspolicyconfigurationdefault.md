@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 The default configuration defined for inbound and outbound settings of Azure AD B2B collaboration and B2B direct connect.
 
-Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
-
 ## Methods
 
 |Method|Return type|Description|

@@ -17,8 +17,6 @@ The partner-specific configuration that is defined for inbound and outbound sett
 
 For any partner-specific property that is `null`, these settings will inherit the behavior configured in your [default cross tenant access settings](../resources/crosstenantaccesspolicyconfigurationdefault.md).
 
-Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
-
 ## Methods
 
 |Method|Return type|Description|
