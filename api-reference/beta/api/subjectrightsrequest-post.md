@@ -97,7 +97,7 @@ Content-Type: application/json
         "SSN": "String"
     },
     "includeAllVersions": "Boolean",
-    "pauseAfterDownload": "Boolean",
+    "pauseAfterEstimate": "Boolean",
     "includeAuthoredContent": "Boolean",
     "externalId": "String",
     "contentQuery": "String",
