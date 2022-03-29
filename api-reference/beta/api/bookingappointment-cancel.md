@@ -1,6 +1,6 @@
 ---
 title: "bookingAppointment: cancel"
-description: "Cancel the specified bookingAppointment in the specified bookingbusiness, and send a message to the involved customer and staff members."
+description: "Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.
+Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingBusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.
 
 ## Permissions
 
@@ -48,15 +48,15 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.
+If you attempt to cancel an appointment that does not exist, this method returns `HTTP 404 Not found`.
 
 ## Example
 
 The following is an example of how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -100,7 +100,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 The following is an example of the response.
 <!-- {
   "blockType": "response"
