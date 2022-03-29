@@ -30,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /security/subjectRightsRequests
 POST /privacy/subjectRightsRequests
+
 ```
 
 ## Request headers
@@ -53,7 +55,13 @@ The following table shows the properties that are required when you create the [
 |internalDueDateTime|DateTimeOffset|Internal due date that is used for tracking the request completion.|
 |regulations|String collection|One or more regulations for the request.|
 |type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
-
+|includeAllVersions|Boolean|Include all versions of the document. Optional.|
+|pauseAfterEstimate|Boolean|Pause after estimate. Optional.|
+|includeAuthoredContent|Boolean|Include the content authored by the data subject. Optional.|
+|externalId|String|The external Id specified by the caller. Optional.|
+|contentQuery|String|KQL Query that should be used for the search. Optional.|
+|mailboxlocations|[subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|The mailbox locations that should be included in the search. Optional.|
+|sitelocations|[subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)|The site locations that should be included in the search. Optional.|
 
 ## Response
 
@@ -87,7 +95,19 @@ Content-Type: application/json
         "residency": "String",
         "phoneNumber": "String",
         "SSN": "String"
-    }
+    },
+    "includeAllVersions": "Boolean",
+    "pauseAfterDownload": "Boolean",
+    "includeAuthoredContent": "Boolean",
+    "externalId": "String",
+    "contentQuery": "String",
+    "mailboxlocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
+    },
+    "sitelocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+    }    
+
 }
 ```
 # [C#](#tab/csharp)
@@ -186,7 +206,18 @@ Content-Type: application/json
     "team": {
         "id": "String (identifier)",
         "webUrl": "String"
-    }
+    },
+    "includeAllVersions": "Boolean",
+    "pauseAfterEstimate": "Boolean",
+    "includeAuthoredContent": "Boolean",
+    "externalId": "String",
+    "contentQuery": "String",
+    "mailboxlocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
+    },
+    "sitelocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+    }    
 }
 ```
 

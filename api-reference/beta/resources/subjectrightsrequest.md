@@ -49,6 +49,13 @@ Inherits from [entity](../resources/entity.md).
 |stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
 |type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+| includeAuthoredContent| Boolean | Include content authored by the data subject.|
+| includeAllVersions   | Boolean | Include all version of the documents.|
+| pauseAfterEstimate   | Boolean| pause the request after estimate has finished.|
+| externalId           | String| External Id for the request, immutable after creation and is used for track request for external system.|
+| contentQuery         | String | KQL based content query, that should be used for search.|
+| mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched.|
+| sitelocations| [subjectRightsRequestSiteLocation](../resources/subjectRightsRequestSiteLocation.md)| SharePoint and OneDrive site locations that should be searched.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -130,7 +137,19 @@ The following is a JSON representation of the resource.
     },
     "team": {
         "@odata.type": "microsoft.graph.team"
+    },
+    "includeAllVersions": "Boolean",
+    "pauseAfterDownload": "Boolean",
+    "includeAuthoredContent": "Boolean",
+    "externalId": "String",
+    "contentQuery": "String",
+    "mailboxlocations": {
+    "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
+    },
+    "sitelocations": {
+    "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
     }
+
 }
 ```
 

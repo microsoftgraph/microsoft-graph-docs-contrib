@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -150,7 +151,18 @@ Content-Type: application/json
     "team": {
         "id": "String (identifier)",
         "webUrl": "String"
-    }
+    },
+    "includeAllVersions": "Boolean",
+    "pauseAfterEstimate": "Boolean",
+    "includeAuthoredContent": "Boolean",
+    "externalId": "String",
+    "contentQuery": "String",
+    "mailboxlocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
+    },
+    "sitelocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+    }    
 }
 ```
 
