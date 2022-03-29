@@ -39,13 +39,15 @@ To join the Microsoft Partner Network, go to the [Partner with Microsoft](https:
 
 ## Next steps
 
+Joining to Microsoft Partner Network is required before any tenant creation. You can choose any tenant according to your needs.
+
 - Create a [Demo EDU dev tenant](/graph/msgraph-onboarding-devtenant)
 - Create a [Demo EDU tenant](/graph/msgraph-onboarding-edutenant)
 
 ## See also
 
+You can review more detailed information and benefits of becoming a Microsoft Partner.
+
 - [Partner With Microsoft](https://docs.microsoft.com/partner-center/mpn-overview)
 - [More details about create an MPN account in Partner Center](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account)
 - [Manage your Partner Center account](https://docs.microsoft.com/partner-center/partner-center-account-setup)
-
-

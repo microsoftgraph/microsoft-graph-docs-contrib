@@ -62,5 +62,4 @@ In step number eight you noticed the created tenant already contains different u
 
 ## See also
 
-- [Join the Microsoft Partner Network](/graph/msgraph-onboarding-mpn)
-- Create a [Demo EDU Dev Tenant](/graph/msgraph-onboarding-devtenant)
+- If the tenant is for development purposes then you can create a [Demo EDU Dev Tenant](/graph/msgraph-onboarding-devtenant)
