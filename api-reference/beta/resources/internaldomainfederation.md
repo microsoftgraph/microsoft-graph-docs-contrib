@@ -44,10 +44,23 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Azure AD services. Referred to as LogOffUri in MSOnline PowerShell cmdlets.|
 
+### federatedIdpMfaBehavior values
+
+| Member | Description |
+| :--- | :--- |
+| acceptIfMfaDoneByFederatedIdp | Azure AD accepts MFA that's performed by the federated identity provider. If the federated identity provider didn't perform MFA, Azure AD performs the MFA. |
+| enforceMfaByFederatedIdp | Azure AD accepts MFA that's performed by identity provider. If the federated identity provider didn't perform MFA, it redirects the request to federated identity provider to perform MFA. |
+| rejectMfaByFederatedIdp | Azure AD always performs MFA and rejects MFA that's performed by the federated identity provider. |
+
+**Note:** **federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings). 
++ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
++ Once **federatedIdpMfaBehavior** property is set, Azure AD ignores the **SupportsMfa** setting.
++ If the **federatedIdpMfaBehavior** property is never set, Azure AD will continue to honor the **SupportsMfa** setting.
++ If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Azure AD will default to `acceptIfMfaDoneByFederatedIdp` behavior.
+
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|domains|Collection(microsoft.graph.domain)|Collection of domains that correspond to the  internal federation configuration.|
+
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
