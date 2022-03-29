@@ -1,18 +1,18 @@
 ---
-title: "List roleAssignmentSchedules"
-description: "Get the unifiedRoleAssignmentSchedule resources from the roleAssignmentSchedules navigation property."
+title: "Get unifiedRoleManagementPolicyRule"
+description: "Read the properties and relationships of an unifiedRoleManagementPolicyRule object."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List roleAssignmentSchedules
+# Get unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
 
 
-Get the unifiedRoleAssignmentSchedule resources from the roleAssignmentSchedules navigation property.
+Read the properties and relationships of an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentSchedules
+GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
+GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRules/{unifiedRoleManagementPolicyRuleId}
 ```
 
 ## Optional query parameters
@@ -46,18 +47,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedroleassignmentschedule"
+  "name": "get_unifiedrolemanagementpolicyrule"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSchedules
+GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
 ```
 
 
@@ -66,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentSchedule)"
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
 ``` http
@@ -74,25 +75,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
-      "id": "287c0550-dab0-98e0-2454-da5867ac6437",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "String",
-      "memberType": "String"
+  "value": {
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyRule",
+    "id": "c5b6e3df-8919-75bf-77ed-24c872fc54d0",
+    "target": {
+      "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
     }
-  ]
+  }
 }
 ```
 

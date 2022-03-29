@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementPolicyRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -20,6 +20,9 @@ This is an abstract type.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
+None.
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicyrule-list.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) collection|Get a list of the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) objects and their properties.|
@@ -27,6 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object.|
 |[Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Update the properties of an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object.|
 |[Delete unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|

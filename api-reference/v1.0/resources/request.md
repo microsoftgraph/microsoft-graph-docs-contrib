@@ -1,9 +1,9 @@
 ---
 title: "request resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,8 @@ Namespace: microsoft.graph
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List requests](../api/request-list.md)|[request](../resources/request.md) collection|Get a list of the [request](../resources/request.md) objects and their properties.|
-|[Get request](../api/request-get.md)|[request](../resources/request.md)|Read the properties and relationships of a [request](../resources/request.md) object.|
-|[Update request](../api/request-update.md)|[request](../resources/request.md)|Update the properties of a [request](../resources/request.md) object.|
-|[Delete request](../api/request-delete.md)|None|Deletes a [request](../resources/request.md) object.|
+
+None.
 
 ## Properties
 |Property|Type|Description|

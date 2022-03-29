@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementPolicyApprovalRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,16 @@ Namespace: microsoft.graph
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
+
+None. 
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyApprovalRules](../api/unifiedrolemanagementpolicyapprovalrule-list.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) collection|Get a list of the [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) objects and their properties.|
 |[Get unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-get.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
 |[Update unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-update.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)|Update the properties of an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
 |[Delete unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|

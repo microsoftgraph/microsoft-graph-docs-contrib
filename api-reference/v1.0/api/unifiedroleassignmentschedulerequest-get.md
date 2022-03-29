@@ -1,9 +1,9 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleRequest"
 description: "Read the properties and relationships of an unifiedRoleAssignmentScheduleRequest object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

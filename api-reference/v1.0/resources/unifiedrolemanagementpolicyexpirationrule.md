@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementPolicyExpirationRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,17 @@ Namespace: microsoft.graph
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
+
+None.
+
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyExpirationRules](../api/unifiedrolemanagementpolicyexpirationrule-list.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) collection|Get a list of the [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) objects and their properties.|
 |[Get unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-get.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
 |[Update unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-update.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)|Update the properties of an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
 |[Delete unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|

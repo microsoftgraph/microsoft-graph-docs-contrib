@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementPolicyEnablementRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,16 @@ Namespace: microsoft.graph
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
+
+None.
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyEnablementRules](../api/unifiedrolemanagementpolicyenablementrule-list.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) collection|Get a list of the [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) objects and their properties.|
 |[Get unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-get.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
 |[Update unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-update.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)|Update the properties of an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
 |[Delete unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|

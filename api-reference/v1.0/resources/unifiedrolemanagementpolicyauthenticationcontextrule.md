@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleManagementPolicyAuthenticationContextRule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -19,12 +19,17 @@ Namespace: microsoft.graph
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
+
+None. 
+
+<!--
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleManagementPolicyAuthenticationContextRules](../api/unifiedrolemanagementpolicyauthenticationcontextrule-list.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) collection|Get a list of the [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) objects and their properties.|
 |[Get unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-get.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
 |[Update unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-update.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)|Update the properties of an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
 |[Delete unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
+-->
 
 ## Properties
 |Property|Type|Description|

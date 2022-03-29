@@ -1,9 +1,9 @@
 ---
 title: "unifiedRoleAssignmentSchedule resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "japere"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -22,11 +22,14 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleAssignmentSchedules](../api/rbacapplication-list-roleassignmentschedules.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection|Get a list of the [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) objects and their properties.|
-|[Create unifiedRoleAssignmentSchedule](../api/rbacapplication-post-roleassignmentschedules.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Create a new [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
 |[Get unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-get.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Read the properties and relationships of an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
+|[filterByCurrentUser](../api/unifiedroleassignmentschedule-filterbycurrentuser.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection|**TODO: Add Description**|
+
+
+<!--
+|[Create unifiedRoleAssignmentSchedule](../api/rbacapplication-post-roleassignmentschedules.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Create a new [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
 |[Update unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-update.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Update the properties of an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
 |[Delete unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-delete.md)|None|Deletes an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
-|[filterByCurrentUser](../api/unifiedroleassignmentschedule-filterbycurrentuser.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection|**TODO: Add Description**|
 |[List unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentschedule-list-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the unifiedRoleEligibilitySchedule resources from the activatedUsing navigation property.|
 |[Add unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentschedule-post-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Add activatedUsing by posting to the activatedUsing collection.|
 |[List appScope](../api/unifiedroleassignmentschedule-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
@@ -37,6 +40,7 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 |[Add principal](../api/unifiedroleassignmentschedule-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
 |[List unifiedRoleDefinition](../api/unifiedroleassignmentschedule-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
 |[Add unifiedRoleDefinition](../api/unifiedroleassignmentschedule-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
+-->
 
 ## Properties
 |Property|Type|Description|
