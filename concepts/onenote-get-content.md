@@ -14,18 +14,16 @@ To get OneNote content and structure, you send a GET request to the target endpo
 
 `GET ../onenote/pages/{id}`
 
-If the request is successful, Microsoft Graph returns a 200 HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
+If the request is successful, Microsoft Graph returns a `200 OK` HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
 
 By using query string options, you can filter your queries and improve performance.
 
 > [!NOTE]
-> The OneNote API supports CRUD based operations for OneNote resources. These operations support Creating, Reading, Updating, and Deleting of OneNote content. If you are building a solution supporting one of the following scenarios you will hit OneNote API limitations:
+> If you're building a solution that supports one of the following scenarios, you will hit OneNote API limitations:
+> - Backup/restore OneNote sections
+> - Backup/restore OneNote notebooks
 > 
-> • Backup/Restore OneNote Sections
-> 
-> • Backup/Restore OneNote Notebooks
-> 
-> For backup and restore operations we recommend following guidance at [https://aka.ms/scanguidance](https://aka.ms/scanguidance).
+> For backup and restore operations, see [Best practices for discovering files and detecting changes at scale](https://aka.ms/scanguidance).
 
 <a name="request-uri"></a>
 
@@ -607,7 +605,7 @@ Microsoft Graph supports the following OData operators and functions in **filter
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>
-  
+
 | String function | Example |  
 |------|------|   
 | contains | `contains(tolower(title),'spring')` |  
