@@ -37,7 +37,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|If-Match|If-match: <etag>. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
+|If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be updated. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
