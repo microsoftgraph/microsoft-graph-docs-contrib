@@ -73,7 +73,8 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedroleeligibilityschedulerequest"
+  "name": "update_unifiedroleeligibilityschedulerequest",
+  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
 ``` http
