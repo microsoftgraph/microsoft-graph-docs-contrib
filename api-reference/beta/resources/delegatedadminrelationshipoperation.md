@@ -26,7 +26,7 @@ Represents a long-running operation related to a delegated admin relationship. A
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the request was created. Read-only.|
 |data|String|The data (payload) for the operation. Read-only.|
-|id|String|The unique identifier of the delegated admin long-running operation. Read-only.|
+|id|String|The unique identifier of the delegated admin long-running operation. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the request was last modified. Read-only.|
 |operationType|delegatedAdminRelationshipOperationType|The type of long-running operation. The possible values are: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`. Read-only.|
 |status|delegatedAdminRelationshipOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Read-only. Supports `$orderBy`.|

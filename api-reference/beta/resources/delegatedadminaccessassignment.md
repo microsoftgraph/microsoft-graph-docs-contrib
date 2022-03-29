@@ -30,7 +30,7 @@ Represents an assignment of administrative roles to a Microsoft partner using de
 |accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container through which members are assigned access. For example, a security group.|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details containing the identifiers of the administrative roles that the partner is assigned in the customer tenant.|
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the access assignment was created. Read-only.|
-|id|String|The unique identifier of the access assignment. Read-only.|
+|id|String|The unique identifier of the access assignment. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 and in UTC time when this access assignment was last modified. Read-only.|
 |status|delegatedAdminAccessAssignmentStatus|The status of the access assignment. The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
 
