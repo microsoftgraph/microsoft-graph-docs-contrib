@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-Here is an example request that shows how an admin updates the "**disabledForGroup**" privacy setting in order to prohibit users in a particular Azure AD group from accessing Microsoft 365 data using Microsoft applications that are not part of Microsoft 365.
+The following example request shows how an admin updates the **disabledForGroup** privacy setting in order to prohibit users in a particular Azure AD group from accessing Microsoft 365 data using Microsoft applications that are not part of Microsoft 365.
 
 <!-- {
   "blockType": "request",
