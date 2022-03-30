@@ -7,7 +7,7 @@ author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 
-# Microsoft browser usage reports
+# Microsoft 365 browser usage reports
 
 Namespace: microsoft.graph
 
