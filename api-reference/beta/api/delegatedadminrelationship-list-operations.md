@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand`, `$select`, `$filter`, `$top`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 `$top` supports up to 300 objects.
 
