@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Update the properties of an [application](../resources/application.md) object.
 
 > [!IMPORTANT]
-> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password for an application.
+> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) |  Application.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Application.ReadWrite.All    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -64,6 +64,7 @@ In the request body, supply the values for relevant fields that should be update
 | uniqueName | String | The unique identifier that can be assigned to an application as an alternative identifier. Immutable. Read-only.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | web                     | [webApplication](../resources/webapplication.md)                            | Specifies settings for a web application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
+| windows                     | [windowsApplication](../resources/windowsapplication.md)                            | Specifies settings for apps running Microsoft Windows and published in the Microsoft Store or Xbox games store. Includes package SID and redirect URIs for authorization codes and access tokens. |
 
 ## Response
 

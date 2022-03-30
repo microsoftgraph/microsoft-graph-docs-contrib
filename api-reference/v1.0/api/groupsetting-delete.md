@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a group setting.
+Delete a tenant-level or group-specific [groupSetting](../resources/groupsetting.md) object.
 
 ## Permissions
 
@@ -20,16 +20,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
+Delete a tenant-wide setting.
 ```http
-DELETE /groupSettings/{id}
-DELETE /groups/{id}/settings/{id}
+DELETE /groupSettings/{groupSettingId}
+```
 
+<!-- { "blockType": "ignored" } -->
+Delete a group-specific setting.
+```http
+DELETE /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## Request headers
@@ -47,14 +52,17 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+
+### Request
+
+In this example, you delete the tenant-level group setting object.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
 }-->
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # [C#](#tab/csharp)
@@ -79,7 +87,7 @@ DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

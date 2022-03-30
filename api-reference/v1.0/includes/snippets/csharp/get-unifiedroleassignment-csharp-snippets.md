@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var unifiedRoleAssignment = await graphClient.RoleManagement.Directory.RoleAssignments["{unifiedRoleAssignment-id}"]
 	.Request()
-	.Expand("directoryScope")
+	.Expand("roleDefinition")
 	.GetAsync();
 
 ```

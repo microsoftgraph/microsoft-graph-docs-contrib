@@ -1,6 +1,6 @@
 ---
 title: "Delete groupLifecyclePolicy"
-description: "Deletes a groupLifecyclePolicy."
+description: "Delete a groupLifecyclePolicy."
 author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
+Delete a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## Permissions
 
@@ -22,14 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application | Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
-
 ```
 
 ## Request headers
@@ -45,12 +44,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
-##### Request
+### Request
 
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +86,9 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 ---
 
-##### Response
+### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
