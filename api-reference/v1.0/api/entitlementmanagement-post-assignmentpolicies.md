@@ -71,12 +71,33 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-  "displayName": "String",
-  "description": "String",
+  "displayName": "New Policy",
+  "description": "policy for assignment",
+  "allowedTargetScope": "notSpecified",
+  "specificAllowedTargets": [],
+  "expiration": {
+      "endDateTime": null,
+      "duration": null,
+      "type": "noExpiration"
+  },
+  "requestorSettings": {
+      "enableTargetsToSelfAddAccess": false,
+      "enableTargetsToSelfUpdateAccess": false,
+      "enableTargetsToSelfRemoveAccess": false,
+      "allowCustomAssignmentSchedule": true,
+      "enableOnBehalfRequestorsToAddAccess": false,
+      "enableOnBehalfRequestorsToUpdateAccess": false,
+      "enableOnBehalfRequestorsToRemoveAccess": false,
+      "onBehalfRequestors": []
+  },
+  "requestApprovalSettings": {
+      "isApprovalRequiredForAdd": false,
+      "isApprovalRequiredForUpdate": false,
+      "stages": []
+  },
   "accessPackage": {
-        "id": "49d2c59b-0a81-463d-a8ec-ddad3935d8a0"
+      "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
   }
-
 }
 ```
 
@@ -95,8 +116,8 @@ Content-Type: application/json
 
 {
   "id": "87e1c7f7-c7f7-87e1-f7c7-e187f7c7e187",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "New policy",
+  "description": "policy for assignment"
 }
 ```
 
