@@ -8,7 +8,7 @@
           "ChangedApiName": "callOptions",
           "ChangeType": "Addition",
           "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
-          "Target": "call"
+          "Target": "callOptions"
         },
         {
           "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
@@ -25,14 +25,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [incomingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
           "Target": "call"
-        },
-        {
-          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
-          "ApiChange": "Property",
-          "ChangedApiName": "isContentSharingNotificationEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the **isContentSharingNotificationEnabled** property to [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
-          "Target": "callOptions"
         },
         {
           "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
