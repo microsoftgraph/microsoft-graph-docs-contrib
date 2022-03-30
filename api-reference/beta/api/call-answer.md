@@ -59,7 +59,7 @@ This method returns a `202 Accepted` response code.
 ## Examples
 The following example shows how to call this API.
 
-##### Request
+#### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -117,7 +117,7 @@ This blob is the serialized configuration for media sessions which is generated 
 ---
 
 
-##### Response
+#### Response
 Here is an example of the response. 
 
 <!-- {
@@ -129,7 +129,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -198,7 +198,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "ignored",
@@ -227,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 <!-- {
   "blockType": "response"
 } -->
@@ -235,7 +235,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -265,7 +265,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -297,7 +297,7 @@ Content-Type: application/json
 
 ### Example 2: Answer VOIP call with application hosted media
 
-##### Notification - incoming
+#### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -353,7 +353,7 @@ Content-Type: application/json
 }
 ```
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -401,7 +401,7 @@ Content-Type: application/json
 ---
 
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response"
@@ -410,7 +410,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -440,7 +440,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -470,7 +470,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - content sharing started
+#### Notification - content sharing started
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -494,7 +494,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - content sharing ended
+#### Notification - content sharing ended
 
 ```http
 POST https://bot.contoso.com/api/calls
