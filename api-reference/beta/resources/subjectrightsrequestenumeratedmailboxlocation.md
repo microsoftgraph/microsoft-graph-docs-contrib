@@ -20,7 +20,7 @@ Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsre
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|upns|String collection|Collection of mailbox that should be included in the search.|
+|upns|String collection|Collection of mailbox that should be included in the search. Include the upn of the mailbox for e.g. user1@contoso.onmicrosoft.com|
 
 ## Relationships
 None.
@@ -36,7 +36,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedMailboxLocation",
   "upns": [
-    "String"
+    "user1@contoso.onmicrosoft.com",
+    "user2@contoso.onmicrosoft.com"
   ]
 }
 ```

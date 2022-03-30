@@ -20,7 +20,7 @@ Inherits from [subjectRightsRequestSiteLocation](../resources/subjectrightsreque
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|urls|String collection|Collection of site url that should be included.|
+|urls|String collection|Collection of site url that should be included. Include the url of the site. For example https://www.contoso.com/site1|
 
 ## Relationships
 None.
@@ -36,7 +36,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedSiteLocation",
   "urls": [
-    "String"
+    "https://www.contoso.com/site1",
+    "https://www.contoso.com/site2"
   ]
 }
 ```

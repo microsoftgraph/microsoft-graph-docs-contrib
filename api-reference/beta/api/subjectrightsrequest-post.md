@@ -65,8 +65,8 @@ The following list of properties will only be available under the /security path
 |Property|Type|Description|
 |:---|:---|:---|
 | includeAuthoredContent| Boolean | Include content authored by the data subject.|
-| includeAllVersions   | Boolean | Include all version of the documents.|
-| pauseAfterEstimate   | Boolean| pause the request after estimate has finished.|
+| includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents.|
+| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause - allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to false if you want it to perform the estimate and then automatically begin retrieval for content.|
 | externalId           | String| External Id for the request, immutable after creation and is used for track request for external system.|
 | contentQuery         | String | KQL based content query, that should be used for search.|
 | mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched.|
@@ -116,7 +116,6 @@ Content-Type: application/json
     "sitelocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
     }    
-
 }
 ```
 # [C#](#tab/csharp)
