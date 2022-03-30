@@ -49,6 +49,13 @@ Inherits from [entity](../resources/entity.md).
 |stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
 |type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+
+## New properties
+
+The following list of properties will only be available under the /security path.
+
+|Property|Type|Description|
+|:---|:---|:---|
 | includeAuthoredContent| Boolean | Include content authored by the data subject.|
 | includeAllVersions   | Boolean | Include all version of the documents.|
 | pauseAfterEstimate   | Boolean| pause the request after estimate has finished.|

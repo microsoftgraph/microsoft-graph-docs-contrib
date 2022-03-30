@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
@@ -55,13 +57,20 @@ The following table shows the properties that are required when you create the [
 |internalDueDateTime|DateTimeOffset|Internal due date that is used for tracking the request completion.|
 |regulations|String collection|One or more regulations for the request.|
 |type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
-|includeAllVersions|Boolean|Include all versions of the document. Optional.|
-|pauseAfterEstimate|Boolean|Pause after estimate. Optional.|
-|includeAuthoredContent|Boolean|Include the content authored by the data subject. Optional.|
-|externalId|String|The external Id specified by the caller. Optional.|
-|contentQuery|String|KQL Query that should be used for the search. Optional.|
-|mailboxlocations|[subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|The mailbox locations that should be included in the search. Optional.|
-|sitelocations|[subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)|The site locations that should be included in the search. Optional.|
+
+## New properties
+
+The following list of properties will only be available under the /security path.
+
+|Property|Type|Description|
+|:---|:---|:---|
+| includeAuthoredContent| Boolean | Include content authored by the data subject.|
+| includeAllVersions   | Boolean | Include all version of the documents.|
+| pauseAfterEstimate   | Boolean| pause the request after estimate has finished.|
+| externalId           | String| External Id for the request, immutable after creation and is used for track request for external system.|
+| contentQuery         | String | KQL based content query, that should be used for search.|
+| mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched.|
+| sitelocations| [subjectRightsRequestSiteLocation](../resources/subjectRightsRequestSiteLocation.md)| SharePoint and OneDrive site locations that should be searched.|
 
 ## Response
 
