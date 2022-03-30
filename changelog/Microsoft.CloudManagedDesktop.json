@@ -23,7 +23,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Addition",
-                    "Description": "Added the [listMyCloudPCs](https://docs.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-beta) operation to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
                     "Target": "user"
                 }
             ],
