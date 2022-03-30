@@ -92,7 +92,7 @@ The following is an example of a request.
   "name": "reportroot_getbrowserdistributionusercounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')?$format=text/csv
 ```
 
@@ -134,7 +134,7 @@ The following is an example of a request.
   "name": "reportroot_getbrowserdistributionusercounts_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')?$format=application/json
 ```
 

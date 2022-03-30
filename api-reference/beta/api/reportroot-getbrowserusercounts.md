@@ -84,18 +84,19 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ### Example 1: CSV output
 
+The following is an example that outputs CSV.
+
+#### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowserusercounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=text/csv
 ```
-
-#### Request
-The following is an example of a request.
 
 #### Response
 
@@ -129,13 +130,14 @@ Report Refresh Date, Report Period, Report Date, Edge, Edge Legacy, Internet Exp
 The following is an example that returns JSON.
 
 #### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowserusercounts_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=application/json
 ```
 

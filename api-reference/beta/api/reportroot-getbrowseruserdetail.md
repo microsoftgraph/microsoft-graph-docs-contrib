@@ -94,7 +94,7 @@ The following is an example of a request.
   "name": "reportroot_getbrowseruserdetail_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=text/csv
 ```
 #### Response
@@ -136,7 +136,7 @@ The following is an example of a request.
   "name": "reportroot_getbrowseruserdetail_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=application/json
 ```
 
