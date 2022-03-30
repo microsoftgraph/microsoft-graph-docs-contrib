@@ -21,7 +21,7 @@ Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All                                        |
 
 ## HTTP request
 
