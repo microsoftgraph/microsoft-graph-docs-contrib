@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
-> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -87,6 +87,14 @@ The following is an example that outputs CSV.
 
 #### Request
 The following is an example of a request.
+<!-- {
+  "blockType": "ignored",
+  "name": "reportroot_getbrowserdistributionusercounts_csv"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')?$format=text/csv
+```
 
 #### Response
 
@@ -121,6 +129,14 @@ The following is an example that returns JSON.
 
 #### Request
 The following is an example of a request.
+<!-- {
+  "blockType": "ignored",
+  "name": "reportroot_getbrowserdistributionusercounts_json"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getBrowserDistributionUserCounts(period='D7')?$format=application/json
+```
 
 #### Response
 

@@ -15,10 +15,12 @@ Namespace: microsoft.graph
 
 Use the Microsoft 365 browser usage reports to get insights into the usage of browsers (Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer) in your organization.
 
+> **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
+
 ## Reports
 
 | Function                                 | CSV return type | JSON return type                         | Description                              |
 | :--------------------------------------- | --------------- | ---------------------------------------- | ---------------------------------------- |
-| [Get browser user counts](../api/reportroot-getbrowserusercounts.md ) | Stream          | Edm.Stream |Get the trend in the number of active users for each browser. |
-| [Get browser disctribution counts](../api//reportroot-getbrowserdistributionusercounts.md) | Edm.Stream          | Stream | et the number of users by browser over the selected period. |
-| [Get browser detail](../api/reportroot-getbrowseruserdetail.md ) | Stream          | Edm.Stream | Get the detailed browser useage per user.  |
+| [Get user detail](../api/reportroot-getbrowseruserdetail.md ) | Stream          | Stream | Get the detailed browser usage per user.  |
+| [Get user counts](../api/reportroot-getbrowserusercounts.md ) | Stream          | Stream |Get the trend in the number of active users for each browser. |
+| [Get distribution user counts](../api/reportroot-getbrowserdistributionusercounts.md) | Stream          | Stream | Get the number of users by browser over a selected period. |
