@@ -39,6 +39,7 @@ Microsoft provides the online Graph Explorer so you can test the queries to the 
    - Enter `https://graph.microsoft.com/v1.0/education/classes/740202c8-5db7-4496-a055-9f3c9fd98207/assignments` in the query field.
    - Make sure POST is selected in the request type.
    - Paste the JSON below into the **Request body** tab.
+
         ```json
             {
                 "dueDateTime": "2024-02-15T00:00:00Z",
