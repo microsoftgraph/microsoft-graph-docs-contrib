@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get participant
+# Get contentSharingSession
 
 Namespace: microsoft.graph
 
