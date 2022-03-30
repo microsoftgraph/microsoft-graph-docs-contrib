@@ -1721,6 +1721,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|EmailUser|
 
 ### postType values 
 
