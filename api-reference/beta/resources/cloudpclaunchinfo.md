@@ -1,6 +1,6 @@
 ---
 title: "cloudPcLaunchInfo resource type"
-description: "Contains the information to launch a [cloudPC](../resources/cloudpc.md)"
+description: "Contains the information to launch a cloud PC"
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
