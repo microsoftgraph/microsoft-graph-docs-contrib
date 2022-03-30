@@ -3,7 +3,31 @@
     {
       "ChangeList": [
         {
-        "Id": "9070bab3-60a9-4690-bcc5-b7fcbad3f315",
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicies** relationship to [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicy** relationship to [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicies** relationship to [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-1.0) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+        "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
         "ApiChange": "Resource",
         "ChangedApiName": "accessPackageAssignmentPolicy",
         "ChangeType": "Addition",
@@ -11,7 +35,7 @@
         "Target": "accessPackageAssignmentPolicy"
         }
       ],
-      "Id": "9070bab3-60a9-4690-bcc5-b7fcbad3f315",
+      "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-02-22T00:00:00.8892294Z",
