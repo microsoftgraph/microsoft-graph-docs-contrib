@@ -2422,6 +2422,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **settings** property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
+        },
+        {
+          "Id": "9ce14ba6-741e-4ca5-9879-f2a9f3adf958",
+          "ApiChange": "Method",
+          "ChangedApiName": "siteSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [get siteSettings](https://docs.microsoft.com/en-us/graph/api/sitesettings-get?view=graph-rest-beta) action on a [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
         }
       ],
       "Id": "9ce14ba6-741e-4ca5-9879-f2a9f3adf958",
