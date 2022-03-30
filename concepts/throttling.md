@@ -133,7 +133,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
+| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
