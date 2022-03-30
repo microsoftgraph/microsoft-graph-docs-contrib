@@ -77,8 +77,7 @@ Response contains bytes for the transcript in the body. `content-type` header sp
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "truncated": true
 }
 -->
 ```http
@@ -107,8 +106,7 @@ Response contains bytes for the transcript in the body. `content-type` header sp
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "truncated": true
 }
 -->
 ```http
@@ -138,8 +136,7 @@ Response contains bytes for the transcript in the body. `Content-type` header sp
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "truncated": true
 }
 -->
 ```http
@@ -168,8 +165,7 @@ Response contains bytes for the transcript in the body. `content-type` header sp
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "truncated": true
 }
 -->
 ```http
