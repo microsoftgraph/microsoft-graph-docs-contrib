@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *isSyncedFromOnPremises = @"Boolean";
+BOOL isSyncedFromOnPremises = YES;
 payloadDictionary[@"isSyncedFromOnPremises"] = isSyncedFromOnPremises;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

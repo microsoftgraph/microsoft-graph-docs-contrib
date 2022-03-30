@@ -11,7 +11,7 @@ $params = @{
 	DisplayName = "Example"
 	SelfServiceEnabled = $true
 	RestorePointSetting = @{
-		FrequencyInHours = "16"
+		FrequencyInHours = 16
 		UserRestoreEnabled = $true
 	}
 	LocalAdminEnabled = $false

@@ -1,7 +1,7 @@
 ---
 title: "Create unifiedRoleEligibilityScheduleRequest"
 description: "Create a new unifiedRoleEligibilityScheduleRequest object."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
