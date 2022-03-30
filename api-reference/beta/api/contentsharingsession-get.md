@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get participant
+# Get contentSharingSession
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Retrieve the properties of a **contentSharingSession** object.
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.       |
 | Delegated (personal Microsoft account) | Not supported.       |
-| Application     | None                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All                                        |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [contentSharingSession](../resources/contentSharingSession.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [contentSharingSession](../resources/contentsharingsession.md) object in the response body.
 
 ## Example
 
@@ -49,7 +49,6 @@ If successful, this method returns a `200 OK` response code and a [contentSharin
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-contentSharingSession"
@@ -92,4 +91,3 @@ Content-Type: application/json
   ]
 }
 -->
-

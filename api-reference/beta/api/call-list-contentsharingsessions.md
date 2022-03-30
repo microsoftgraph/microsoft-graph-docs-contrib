@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of contentSharingSession objects in the call.
+Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in the call.
 
 ## Permissions
 
@@ -21,7 +21,7 @@ Retrieve a list of contentSharingSession objects in the call.
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.       |
 | Delegated (personal Microsoft account) | Not supported.       |
-| Application     | None                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All                                        |
 
 ## HTTP request
 
@@ -51,12 +51,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-contentsharingsessions"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions
 ```
@@ -88,7 +86,7 @@ Content-Type: application/json
          "id":"278405a3-f568-4b3e-b684-009193463064"
       }
    ],
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
 }
 
 ```
@@ -105,5 +103,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-
