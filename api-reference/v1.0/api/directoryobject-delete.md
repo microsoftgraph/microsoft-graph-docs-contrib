@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes a directoryObject.
+Delete a directory object, for example, a group, user, application, or service principal.
 
 ## Permissions
 
