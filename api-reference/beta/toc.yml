@@ -11624,8 +11624,11 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-overview.md
-          - name: List all methods
-            href: api/authentication-list-methods.md
+          - name: Authentication methods
+            href: resources/authenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
