@@ -11068,7 +11068,7 @@ items:
       items:
       - name: Overview
         href: resources/azure-ad-overview.md
-      - name: Customer Relationship management
+      - name: Customer relationship management
         items:
         - name: Delegated admin relationships
           displayName: Partner Center, CSP, VAR

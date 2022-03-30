@@ -2935,7 +2935,6 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |lockForApproval|
-|approve|
 |terminate|
 |unknownFutureValue|
 

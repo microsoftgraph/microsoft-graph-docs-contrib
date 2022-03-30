@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD tenant that is a customer of a Microsoft partner and has a delegated admin relationship with the Microsoft partner. This object is automatically created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more active relationships exist.
+Represents an Azure AD organization that is a customer of a Microsoft partner and has a delegated admin relationship with the Microsoft partner. This object is automatically created by the system when at least one delegated admin relationship exists between the partner and customer and is deleted when no more active relationships exist.
 
 ## Methods
 |Method|Return type|Description|

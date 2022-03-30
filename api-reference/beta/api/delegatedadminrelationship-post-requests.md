@@ -46,11 +46,11 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `unknownFutureValue`.|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `terminate`.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object in the response body. The response contains a **Location** header which contains a URL to the created delegated admin relationship request.
 
 ## Examples
 

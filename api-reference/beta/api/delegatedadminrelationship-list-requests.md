@@ -40,7 +40,6 @@ This method supports the `$expand`, `$select`, `$filter`, `$top`, `$skip`, `$cou
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Prefer|@odata.maxpagesize=n. Where **n** is the desired number of results per page. The maximum value is 300. Optional.|
 
 ## Request body
 Do not supply a request body for this method.

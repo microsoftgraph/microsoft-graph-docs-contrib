@@ -48,14 +48,14 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 |:---|:---|:---|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant. Required.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. Optional.|
-|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
-|duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive.|
+|displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Required.|
+|duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. Required.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
 
-The response contains a **Location** header which contains a URL to the long-running operation for the status of the delegated admin relationship request. Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
+The response contains a **Location** header which contains a URL to the created delegated admin relationship. Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
 ## Examples
 
 ### Request
@@ -66,7 +66,6 @@ The response contains a **Location** header which contains a URL to the long-run
 -->
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships
-Authorization: Bearer {token}
 Content-Type: application/json
 
 {
@@ -124,7 +123,7 @@ Location: https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRel
       }
     ]
   },
-  "status": "approvalPending",
+  "status": "created",
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
   "activatedDateTime": "",

@@ -36,13 +36,12 @@ GET /tenantRelationships/delegatedAdminCustomers
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$skip`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
-`$skip` supports up to 500 objects while `$top` supports up to 20 objects.
+`$top` supports up to 300 objects.
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Prefer|@odata.maxpagesize=n. Where **n** is the desired number of results per page. The maximum value is 300. Optional.|
 
 ## Request body
 Do not supply a request body for this method.

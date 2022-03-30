@@ -45,7 +45,6 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|The access container through which members are assigned access. For example, a security group.|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner is assigned in the customer tenant|
 
 
@@ -57,10 +56,10 @@ If successful, this method returns a `200 OK` or a `202 Accepted` response code.
 |Name|Description|
 |:---|:---|
 |Content-Type|application/json.|
-|Location|The location of the resource object.|
-|Retry-After|The time after which a subsequent API call can be made.|
+|Location|The location of the long-running operation.|
+|Retry-After|The time after which a subsequent API call can be made to the Location URL to check the status of the long-running operation.|
 
-This method returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header that can be monitored for completion. If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
+This method typically returns a `202 Accepted` response code with a URL to a long-running operation in the **Location** response header that can be monitored for completion. If the values specified in the call are identical to the values in the existing object, the API returns a `200 OK` response code with the original [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) object in the response body.
 
 ## Examples
 
@@ -72,7 +71,7 @@ This method returns a `202 Accepted` response code with a URL to a long-running 
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/da9d6cf90-083a-47dc-ace2-1da98be3f344
+PATCH https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5e5594d3-6f82-458b-b567-77db4811f0cd-00000000-0000-0000-0000-000000001234/accessAssignments/da9d6cf90-083a-47dc-ace2-1da98be3f344
 If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 Content-Type: application/json
 
@@ -94,7 +93,7 @@ Content-Type: application/json
 ```
 
 ### Response
-The following is an example response that returns a `202 Accepted` response code and a **Retry-After** header.
+The following is an example response that returns a `202 Accepted` response code along with **Location** and **Retry-After** headers.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

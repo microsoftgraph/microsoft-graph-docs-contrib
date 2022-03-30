@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.delegatedAdminServiceManagementDetail",
   "id": "String (identifier)",
-  "serviceId": "String",
   "serviceName": "String",
   "serviceManagementUrl": "String"
 }

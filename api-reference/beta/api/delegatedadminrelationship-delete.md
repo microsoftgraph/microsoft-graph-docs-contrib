@@ -36,7 +36,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 ## Request headers
 |Name|Description|
 |:---|:---|
-|If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be deleted. Retrieve the ETag value from a LIST or GET operation.Required.|
+|If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be deleted. Retrieve the ETag value from a LIST or GET operation. Required.|
 
 ## Request body
 Do not supply a request body for this method.

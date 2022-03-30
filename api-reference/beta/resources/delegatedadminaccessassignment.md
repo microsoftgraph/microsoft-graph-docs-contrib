@@ -32,7 +32,7 @@ Represents an assignment of administrative roles to a Microsoft partner using de
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the access assignment was created. Read-only.|
 |id|String|The unique identifier of the access assignment. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 and in UTC time when this access assignment was last modified. Read-only.|
-|status|delegatedAdminAccessAssignmentStatus|The status of the access assignment. The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
+|status|delegatedAdminAccessAssignmentStatus|The status of the access assignment. Read-only. The possible values are: `pending`, `active`, `deleting`, `deleted`, `error`, `unknownFutureValue`.|
 
 ## Relationships
 None.

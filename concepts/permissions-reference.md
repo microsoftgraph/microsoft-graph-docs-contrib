@@ -708,8 +708,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _DelegatedAdminRelationship.Read.All_ | Read partner customer service administration data | Allows the app to read and query the GDAP related information, on behalf of the signed-in user. | Yes | No |
-| _DelegatedAdminRelationship.ReadWrite.All_ | Read and write partner customer service administration data | Allows the app to read and write the GDAP related information, on behalf of the signed-in user. | Yes | No |
+| _DelegatedAdminRelationship.Read.All_ | Read partner customer service administration data | Allows the app to read and query the delegated administration related information, on behalf of the signed-in user. | Yes | No |
+| _DelegatedAdminRelationship.ReadWrite.All_ | Read and write partner customer service administration data | Allows the app to read and write the delegated administration related information, on behalf of the signed-in user. | Yes | No |
 
 ---
 

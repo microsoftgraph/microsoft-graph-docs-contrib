@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a long-running operation related to a delegated admin relationship. An example of a long-running operation can be an update to the [delegatedAdminRelationship](delegatedadminrelationship.md) object.
+Represents a long-running operation related to a delegated admin relationship. An example of a long-running operation can be an update to the [delegatedAdminAccessAssignment](delegatedAdminAccessAssignment.md) object.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,12 +24,12 @@ Represents a long-running operation related to a delegated admin relationship. A
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the request was created. Read-only.|
+|createdDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the long-running operation was created. Read-only.|
 |data|String|The data (payload) for the operation. Read-only.|
 |id|String|The unique identifier of the delegated admin long-running operation. Read-only. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the request was last modified. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The time in ISO 8601 format and in UTC time when the long-running operation was last modified. Read-only.|
 |operationType|delegatedAdminRelationshipOperationType|The type of long-running operation. The possible values are: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`. Read-only.|
-|status|delegatedAdminRelationshipOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Read-only. Supports `$orderBy`.|
+|status|delegatedAdminRelationshipOperationStatus|The status of the operation. Read-only. The possible values are: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Read-only. Supports `$orderBy`.|
 
 ## Relationships
 None.
