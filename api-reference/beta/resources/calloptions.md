@@ -1,6 +1,6 @@
 ---
 title: "callOptions resource type"
-description: "An abstract base class that contains the optional features for the call."
+description: "An abstract base class that contains the optional features for a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base class that contains the optional features for the call.
+An abstract base class that contains the optional features for a call.
 
 ## Properties
+
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
 |isContentSharingNotificationEnabled   |Boolean                   |The value that indicates whether content sharing notifications should be enabled for the call.    |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

@@ -1,6 +1,6 @@
 ---
 title: "List contentSharingSessions"
-description: "Retrieve a list of contentSharingSession objects in the call."
+description: "Retrieve a list of contentSharingSession objects in a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in the call.
+Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in a call.
 
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported        |
-| Delegated (personal Microsoft account) | Not Supported        |
+| Delegated (work or school account)     | Not supported.       |
+| Delegated (personal Microsoft account) | Not supported.       |
 | Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All                                        |
 
 ## HTTP request
@@ -43,25 +43,27 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [contentSharingSession](../resources/contentsharingsession.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [contentSharingSession](../resources/contentsharingsession.md) objects in the response body.
 
 ## Example
 
 ### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get-contentsharingsessions"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/contentSharingSessions
 ```
----
 
 <!-- markdownlint-disable MD024 -->
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -101,5 +103,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-
