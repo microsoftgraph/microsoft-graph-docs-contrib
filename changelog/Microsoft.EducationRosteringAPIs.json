@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "relatedContact",
           "ChangeType": "Addition",
-          "Description": "Added the [relatedContact](https://docs.microsoft.com/en-us/graph/api/resources/relatedContact?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [relatedContact](https://docs.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0) resource.",
           "Target": "relatedContact"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationUser",
           "ChangeType": "Addition",
-          "Description": "Added the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource",
+          "Description": "Added the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationuser?view=graph-rest-1.0) resource.",
           "Target": "educationUser"
         }
       ],
