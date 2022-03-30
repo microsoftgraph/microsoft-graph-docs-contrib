@@ -1,7 +1,7 @@
 ---
 title: "rbacApplication: roleScheduleInstances"
 description: "Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

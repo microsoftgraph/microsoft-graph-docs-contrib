@@ -16,7 +16,7 @@ options := &msgraphsdk.ReviewSetQueryRequestBuilderPatchOptions{
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(options)
 
 
 ```

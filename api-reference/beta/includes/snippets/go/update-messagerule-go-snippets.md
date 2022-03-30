@@ -19,7 +19,7 @@ options := &msgraphsdk.MessageRuleRequestBuilderPatchOptions{
 }
 mailFolderId := "mailFolder-id"
 messageRuleId := "messageRule-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(options)
 
 
 ```

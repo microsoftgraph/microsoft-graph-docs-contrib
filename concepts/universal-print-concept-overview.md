@@ -39,10 +39,10 @@ Keeping track of an organization's printers, printer configurations, and printer
 * **Keep an eye on printer status, configurations, and availability** by using [List printers](/graph/api/print-list-printers) and [printerStatus](/graph/api/resources/printerstatus).
 
 * **See who's using your printers and how much they're printing** by using the reporting APIs:
-  * [List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser)
-  * [List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser)
-  * [List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter)
-  * [List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter)
+  * [List dailyPrintUsageByUser](/graph/api/reportroot-list-dailyprintusagebyuser)
+  * [List monthlyPrintUsageByUser](/graph/api/reportroot-list-monthlyprintusagebyuser)
+  * [List dailyPrintUsageByPrinter](/graph/api/reportroot-list-dailyprintusagebyprinter)
+  * [List monthlyPrintUsageByPrinter](/graph/api/reportroot-list-monthlyprintusagebyprinter)
 
 * **Configure user permissions** by modifying user and group membership on printers:
   * [List allowedUsers](/graph/api/printershare-list-allowedusers)

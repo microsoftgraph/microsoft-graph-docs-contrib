@@ -10,7 +10,7 @@ ms.prod: "cloud-communications"
 
 Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Usage and diagnostic data can be consumed to produce custom reporting for your business to help monitor adoption or to troubleshoot call quality issues.
 
-Organizations can subscribe to changes to call records using the Microsoft Graph [webhook subscriptions](/graph/api/resources/webhooks.md) capability, allowing them to build near-real-time reports from the data or to alert on certain scenarios like emergency calls.
+Organizations can subscribe to changes to call records using the Microsoft Graph [webhook subscriptions](/graph/api/resources/webhooks) capability, allowing them to build near-real-time reports from the data or to alert on certain scenarios like emergency calls.
 
 > **Important:** Use discretion when granting the CallRecords.Read.All permission to applications. Call records can provide insights into the operation of your business, and therefore can be a target for malicious actors. Only grant this permission to applications you trust to meet your data protection requirements.
 
