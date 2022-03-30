@@ -89,11 +89,11 @@ The following is an example that outputs CSV.
 #### Request
 
 The following is an example of a request.
+
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowserusercounts_csv"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=text/csv
 ```
@@ -102,8 +102,7 @@ GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$
 
 The following is an example of the response.
 
-<!-- { "blockType": "response" } --> 
-
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -117,7 +116,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
   "truncated": true,
   "@odata.type": "stream"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
@@ -132,11 +130,11 @@ The following is an example that returns JSON.
 #### Request
 
 The following is an example of a request.
+
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowserusercounts_json"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserCounts(period='D7')?$format=application/json
 ```
@@ -152,7 +150,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "stream"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json

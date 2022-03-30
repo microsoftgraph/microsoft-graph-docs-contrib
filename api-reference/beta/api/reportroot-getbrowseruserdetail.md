@@ -71,6 +71,7 @@ The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - User Principal Name
+- Report Period
 - Edge
 - Edge Legacy
 - Internet Explorer
@@ -88,22 +89,23 @@ The default page size for this request is 200 items.
 The following is an example that outputs CSV.
 
 #### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowseruserdetail_csv"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=text/csv
 ```
+
 #### Response
 
 The following is an example of the response.
 
 
-<!-- { "blockType": "response" } --> 
-
+<!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
@@ -117,7 +119,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
   "truncated": true,
   "@odata.type": "stream"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
@@ -130,12 +131,13 @@ Report Refresh Date, User Principal Name, Report Period, Edge, Edge Legacy, Inte
 The following is an example that returns JSON.
 
 #### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getbrowseruserdetail_json"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/reports/getBrowserUserDetail(period='D7')?$format=application/json
 ```
@@ -151,7 +153,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "stream"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
