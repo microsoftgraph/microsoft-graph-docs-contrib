@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base class that contains the options for a call.
+An abstract base class that contains the optional features for a call.
 
 ## Properties
 |Property                 |Type                      |Description                                                                        |
