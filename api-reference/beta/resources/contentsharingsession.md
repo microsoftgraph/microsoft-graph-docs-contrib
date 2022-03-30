@@ -15,6 +15,15 @@ Namespace: microsoft.graph
 
 Represents a content sharing session in a call.
 
+
+
+## Methods
+
+| Method                                                             | Return Type                                                 | Description                                                                     |
+|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Get](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md)                                             | Read properties of the **contentSharingSession** object.                                         |
+| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Get a contentSharingSession object collection.                                            |
+
 ## Properties
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
