@@ -19,6 +19,7 @@ Inherited from [callOptions](calloptions.md).
 ## Properties
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
+|isContentSharingNotificationEnabled   |Boolean                   |The value that indicates whether content sharing notifications should be enabled for the call. Inherited from [callOptions](calloptions.md).    |
 
 ## JSON representation
 The following is a JSON representation of the resource.
