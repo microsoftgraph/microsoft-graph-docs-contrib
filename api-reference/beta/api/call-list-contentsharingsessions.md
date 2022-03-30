@@ -85,7 +85,7 @@ Content-Type: application/json
          "id":"278405a3-f568-4b3e-b684-009193463064"
       }
    ],
-   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
+   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/contentSharingSessions"
 }
 
 ```
