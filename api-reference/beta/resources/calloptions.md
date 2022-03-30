@@ -1,6 +1,6 @@
 ---
 title: "callOptions resource type"
-description: "An abstract base class that contains the optional features for the call."
+description: "An abstract base class that contains the optional features for a call."
 author: "satyakonmsft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base class that contains the optional features for the call.
+An abstract base class that contains the optional features for a call.
 
 ## Properties
 

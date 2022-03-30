@@ -15,22 +15,23 @@ Namespace: microsoft.graph
 
 Represents a content sharing session in a call.
 
-
-
 ## Methods
 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [Get](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md)                                             | Read properties of the **contentSharingSession** object.                                         |
-| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Get a contentSharingSession object collection.                                            |
+| [Get contentSharingSession](../api/contentsharingsession-get.md )                                     | [contentSharingSession](contentsharingsession.md)                                             | Retrieve the properties of a **contentSharingSession** object.                                         |
+| [List contentSharingSessions](../api/call-list-contentsharingsessions.md )              | [contentSharingSession](contentsharingsession.md) collection                    | Retrieve a list of **contentSharingSession** objects in a call.                                            |
 
 ## Properties
+
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
 | id                      | String                   | Unique identifier for the content sharing session. Read-only. |
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.contentSharingSession"
