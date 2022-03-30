@@ -1561,7 +1561,7 @@ items:
             href: api/audioroutinggroup-update.md
           - name: Delete
             href: api/audioroutinggroup-delete.md
-        - name: ContentSharingSession
+        - name: Content sharing session
           href: resources/contentsharingsession.md
           items:
           - name: List
