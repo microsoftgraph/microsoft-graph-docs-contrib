@@ -16,7 +16,7 @@
           "ChangedApiName": "outgoingCallOptions",
           "ChangeType": "Addition",
           "Description": "Added the [outgoingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
-          "Target": "call"
+          "Target": "outgoingCallOptions"
         },
         {
           "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
@@ -24,7 +24,7 @@
           "ChangedApiName": "incomingCallOptions",
           "ChangeType": "Addition",
           "Description": "Added the [incomingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
-          "Target": "call"
+          "Target": "incomingCallOptions"
         },
         {
           "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
