@@ -2428,7 +2428,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "siteSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [get siteSettings](https://docs.microsoft.com/en-us/graph/api/sitesettings-get?view=graph-rest-beta) action on a [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get siteSettings](https://docs.microsoft.com/en-us/graph/api/sitesettings-get?view=graph-rest-beta) action to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
           "Target": "site"
         }
       ],
