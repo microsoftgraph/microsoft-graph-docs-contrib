@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of contentSharingSession objects in the call.
+Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in the call.
 
 ## Permissions
 
