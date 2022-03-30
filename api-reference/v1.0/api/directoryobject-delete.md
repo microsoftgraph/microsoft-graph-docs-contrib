@@ -17,12 +17,37 @@ Deletes a directoryObject.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Delete a user
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | User.ReadWrite.All |
+
+### Delete a group
+
+| Permission type                        | Permissions (from least to most privileged)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Application                            | Group.ReadWrite.All                             |
+
+### Delete a application
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.All |
+
+### Delete a service principal
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.All |
 
 ## HTTP request
 
@@ -56,7 +81,7 @@ If successful, this method returns `204 No Content` response code. It does not r
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-csharp-snippets.md)]
