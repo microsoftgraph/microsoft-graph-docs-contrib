@@ -64,7 +64,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
-[Get site setting]: ../api/sitesettings-get.md
+[Get site settings]: ../api/sitesettings-get.md
 
 ## Properties
 
@@ -124,7 +124,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
-[sitesettings]: sitesettings.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
