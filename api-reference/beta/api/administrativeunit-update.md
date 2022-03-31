@@ -52,9 +52,13 @@ Since the **administrativeUnit** resource supports [extensions](/graph/extensibi
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Update an administrative unit
+
+The following example updates the display name of an administrative unit.
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -97,7 +101,34 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update a restricted management administrative unit
+
+The following example changes a restricted management administrative unit to a regular administrative unit.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_administrativeunit_restricted"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/administrativeUnits/2sd35b05-ae71-48ab-9e7d-4r41a28te37d
+Content-type: application/json
+
+{
+    "isMemberManagementRestricted": false
+}
+```
+
+#### Response
 
 <!-- {
   "blockType": "response"

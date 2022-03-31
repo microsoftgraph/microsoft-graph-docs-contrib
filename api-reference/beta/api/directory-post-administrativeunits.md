@@ -45,11 +45,11 @@ Because the **administrativeUnit** resource supports [extensions](/graph/extensi
 
 If successful, this method returns a `201 Created` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Create an administrative unit
 
-The following is an example of the request.
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
 
-### Response
-
-The following is an example of the response. 
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -114,6 +112,47 @@ Content-type: application/json
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
     "visibility": "HiddenMembership"
+}
+```
+
+### Example 2: Create a restricted management administrative unit
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_administrativeunit_restricted"
+}-->
+```http
+POST https://graph.microsoft.com/beta/administrativeUnits
+Content-type: application/json
+
+{
+    "displayName": "Executive Division",
+    "description": "Executive division administration",
+    "isMemberManagementRestricted": true
+}
+```
+
+In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.administrativeUnit"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "2sd35b05-ae71-48ab-9e7d-4r41a28te37d",
+    "deletedDateTime": null,
+    "displayName": "Executive Division",
+    "description": "Executive division administration",
+    "isMemberManagementRestricted": true
 }
 ```
 

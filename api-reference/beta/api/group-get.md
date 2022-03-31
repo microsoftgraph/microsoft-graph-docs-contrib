@@ -266,6 +266,33 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Check if management of a group is restricted
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_group_restricted"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/aed0b780-965f-4149-85c5-a8c73e58brt6?$select=isManagementRestricted
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.administrativeUnit"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "isManagementRestricted": true
+}
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
