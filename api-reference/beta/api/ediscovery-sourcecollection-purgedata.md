@@ -15,21 +15,18 @@ Namespace: microsoft.graph.ediscovery
 
 Permanently delete Teams messages that match the specified [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
-There are five categories of Teams content that you can collect and purge:
+>**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
-- **Teams 1:1 chats**. Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
-
-- **Teams group chats**. Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
-
-- **Teams channels**. Chat messages, posts, replies, and attachments shared in a standard Teams channel.
-
-- **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
-
-- **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
+You can collect and purge the following categories of Teams content:
+- **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people.  Teams 1:1 chats are also called *conversations*.
+- **Teams group chats** - Chat messages, posts, and attachments shared in a Teams conversation between three or more people. Also called *1:N* chats or *group conversations*.
+- **Teams channels** - Chat messages, posts, replies, and attachments shared in a standard Teams channel.
+- **Private channels** - Message posts, replies, and attachments shared in a private Teams channel.
+- **Shared channels** - Message posts, replies, and attachments shared in a shared Teams channel.
 
 For more information about purging Teams messages, see:
-- [eDiscovery solution series: Data spillage scenario - Search and purge](https://docs.microsoft.com/microsoft-365/compliance/data-spillage-scenariosearch-and-purge?view=o365-worldwide)
-- [Advanced eDiscovery workflow for content in Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
+- [eDiscovery solution series: Data spillage scenario - Search and purge](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
+- [Advanced eDiscovery workflow for content in Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +61,8 @@ Do not supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code.
 
-If the purge data operation is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [Purge data operation](../resources/ediscovery-purgedataoperation.md) that was created to commit the purge. Check the status of the purge data operation by making a GET request to the location URL, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
+If the purge data operation is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [Purge data operation](../resources/ediscovery-purgedataoperation.md) that was created to commit the purge.
+To check the status of the purge data operation, make a GET request to the location URL. When the request successfully completes, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
 
 ## Examples
 
