@@ -21,7 +21,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 | Property   | Type                                       | Description                                          |
 | :--------- | :----------------------------------------- | :--------------------------------------------------- |
 | name       | String                                     | Name of the custom action.                           |
-| properties | [keyValuePair](keyvaluepair.md) collection | Properties, in key value pair format, of the action. |
+| properties | [keyValuePair](keyvaluepair.md) collection | Properties, in key-value pair format, of the action. |
 
 ## Relationships
 None.

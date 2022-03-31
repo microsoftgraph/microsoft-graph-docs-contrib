@@ -1,6 +1,6 @@
 ---
 title: "keyValuePair resource type"
-description: "Key value pair for Information Protection sensitivity labels."
+description: "Represents a key-value pair for sensitivity labels in Microsoft Information Protection."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
