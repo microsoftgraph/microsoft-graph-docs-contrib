@@ -327,6 +327,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "post_chatmessage_3"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -1200,6 +1201,108 @@ Content-type: application/json
             }
         }
     ],
+    "reactions": []
+}
+```
+
+### Example 10: Send message that contains cards that are attributed to a Teams app
+
+#### Request
+
+The following is an example of the request.
+
+> **Note:** When specifying a Teams app to attribute a card to, the AAD app id of the token used to make the call must match the AAD app id of the Teams app. The AAD app id of the Teams app can be found in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [app manifest schema](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema).
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_10"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
+Content-type: application/json
+
+{
+    "subject": null,
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
+        }
+    ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
+    "id": "1616991851162",
+    "replyToId": null,
+    "etag": "1616991851162",
+    "messageType": "message",
+    "createdDateTime": "2021-03-29T04:24:11.162Z",
+    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
+            "name": null,
+            "thumbnailUrl": null,
+            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
+        }
+    ],
+    "onBehalfOf": null,
+    "mentions": [],
     "reactions": []
 }
 ```
