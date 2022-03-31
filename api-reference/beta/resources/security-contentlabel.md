@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the **contentLabel** object that defines Microsoft Information Protection metadata on an object. **contentLabel** is returned by the [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md) API resolve the **sensitivityLabel** that is currently applied to a file.
+Describes the **contentLabel** object that defines Microsoft Information Protection metadata on an object. **contentLabel** is returned by the [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md) API to resolve the **sensitivityLabel** that is currently applied to a file.
 
 ## Properties
 | Property         | Type           | Description                                                                                                                                                                                |
 | :--------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | assignmentMethod | String         | Describes whether the label was applied by a process or automation (`standard`) or a person (`privileged`). A `standard` assignment cannot override `privileged`. To override, set `auto`. |
-| creationDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`                |
+| creationDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                |
 
 
 ## Relationships

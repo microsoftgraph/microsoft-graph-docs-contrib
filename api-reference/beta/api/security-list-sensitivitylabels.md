@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the sensitivityLabel resources from the sensitivityLabels navigation property.
+Get the [sensitivityLabel](../resources/security-sensitivitylabel.md) resources from the **sensitivityLabels** navigation property.
 
 ## Permissions
 
@@ -47,15 +47,18 @@ GET /security/informationProtection/sensitivityLabels
 Listing labels for the organization requires the application permission `InformationProtectionPolicy.Read.All`.
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -86,6 +89,7 @@ GET https://graph.microsoft.com/beta/security/informationProtection/sensitivityL
 
 
 ### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
