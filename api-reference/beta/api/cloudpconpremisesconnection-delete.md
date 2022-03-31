@@ -17,9 +17,9 @@ Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesco
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-When you delete a Azure network connection, permissions to the service are removed from the specified Azure resources.
+When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 
-You cannot delete a Azure network connection when it's in use, as indicated by the `inUse` property.
+You cannot delete an Azure network connection when it's in use, as indicated by the `inUse` property.
 
 ## Permissions
 
