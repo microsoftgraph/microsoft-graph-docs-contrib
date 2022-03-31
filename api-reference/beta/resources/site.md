@@ -41,6 +41,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List columns][]                                  | GET /sites/{site-id}/columns                                |
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -63,6 +64,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create contentType]: ../api/site-post-contenttypes.md
 [List columns]: ../api/site-list-columns.md
 [Create column]: ../api/site-post-columns.md
+[Get site settings]: ../api/sitesettings-get.md
 
 ## Properties
 
@@ -76,6 +78,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string             | The name / title of the item.                                                                  |
 | **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
+| **settings**             | [siteSettings]     | The settings on this site. Returned only on $select. Read-only.                                |
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
@@ -121,6 +124,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
+[siteSettings]: sitesettings.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
@@ -149,30 +153,32 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 
 ```json
 {
+  "displayName": "string",
   "id": "string",
   "root": { "@odata.type": "microsoft.graph.root" },
+  "settings": { "@odata.type": "microsoft.graph.sitesettings" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
-  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
+
   /* inherited from baseItem */
-  "name": "string",
   "createdDateTime": "datetime",
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "webUrl": "url"
 }
 ```

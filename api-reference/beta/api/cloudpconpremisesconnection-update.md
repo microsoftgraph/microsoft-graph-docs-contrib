@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
-Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot update it.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Permissions
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the on-premises connection.|
+|displayName|String|The display name for the Azure network connection.|
 |type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
