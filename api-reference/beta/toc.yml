@@ -15004,8 +15004,6 @@ items:
         - name: Device configuration
           href: resources/teamworkdeviceconfiguration.md
           items:
-            - name: Peripheral
-              href: resources/teamworkperipheral.md
             - name: Get
               href: api/teamworkdeviceconfiguration-get.md
         - name: Device health
