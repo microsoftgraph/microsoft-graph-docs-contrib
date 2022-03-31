@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|SharePointTenantSettings.Read.All , SharePointTenantSettings.ReadWrite.All , Sites.Read.All , Sites.ReadWrite.All , Sites.Manage.All , Sites.FullControl.All |
+|Delegated (work or school account)|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application|SharePointTenantSettings.Read.All , SharePointTenantSettings.ReadWrite.All , Sites.Read.All , Sites.ReadWrite.All , Sites.Manage.All , Sites.FullControl.All|
+|Application|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantAdmin/sharepoint/settings
+GET /admin/sharepoint/settings
 ```
 
 ## Optional query parameters
