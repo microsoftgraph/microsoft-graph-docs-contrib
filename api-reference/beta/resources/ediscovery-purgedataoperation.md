@@ -13,7 +13,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete Teams messages that match the specified [sourceCollection](../resources//ediscovery-sourcecollection.md)
+Represents an operation to permanently delete Microsoft Teams messages.
+This operation is currently scoped to Teams only, more data sources will be in scope in the future.
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 

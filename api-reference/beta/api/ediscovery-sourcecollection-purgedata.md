@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete Teams messages that match the specified [sourceCollection](../resources//ediscovery-sourcecollection.md).
+Permanently delete Teams messages contained in the  [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
@@ -77,8 +77,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourc
 ```
 
 ### Response
-
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
