@@ -24,7 +24,21 @@ Provides status and timestamp of the last update of the signing certificate.
 ### certificateUpdateResult status
 | Value | Description |
 | :--- | :--- |
-|  |  |
+|success|The attempt was successful.|
+|unknownError|Do not know the reason for failure.|
+|internalServerError|Something went wrong on our side.|
+|noValidExistingCertFound|No valid existing signing certificate was found.|
+|noStsAuthUrlFound|No STS Auth Url was found.|
+|noFederationProtocolFound|No federation protocol was found.|
+|noNewCertificateFound|No new certificate was found.|
+|couldNotAccessRemoteHost|Could not reach the provider to get the new certificates.|
+|connectionError|There was a connection error|
+|xmlParsingError|Failed to parse the XML|
+|badRequest|Received BadRequest error from the fed metadata request.|
+|unauthorized|Received Unauthorized error from the fed metadata request.|
+|forbidden|Received Forbidden error from the fed metadata request.|
+|notFound|Received NotFound error from the fed metadata request.|
+|providerError|Received InternalServerError from the provider.|
 
 
 ## Relationships
