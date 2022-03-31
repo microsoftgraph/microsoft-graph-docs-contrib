@@ -410,7 +410,7 @@ items:
           href: api/user-list-memberof.md
         - name: List transitive member of
           href: api/user-list-transitivememberof.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
@@ -422,22 +422,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Settings for item insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -526,7 +518,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -11397,6 +11389,44 @@ items:
           items:
           - name: Get org settings
             href: api/organizationSettings-get.md
+          - name: App settings for Microsoft 365 data (preview)
+            items:
+            - name: App data access settings
+              href: resources/microsoftapplicationdataaccesssettings.md
+            - name: List
+              href: api/organizationsettings-list-microsoftapplicationdataaccess.md
+            - name: Update
+              href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for item insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Org control for people insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Profile card customization (preview)
+            items:
+            - name: Profile card property
+              href: resources/profilecardproperty.md
+            - name: List
+              href: api/organizationsettings-list-profilecardproperties.md
+            - name: Create
+              href: api/organizationsettings-post-profilecardproperties.md
+            - name: Get
+              href: api/profilecardproperty-get.md
+            - name: Update
+              href: api/profilecardproperty-update.md
+            - name: Delete
+              href: api/profilecardproperty-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -13289,7 +13319,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -13599,7 +13629,7 @@ items:
           href: api/profilecardproperty-update.md
         - name: Delete
           href: api/profilecardproperty-delete.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
@@ -13611,22 +13641,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Settings for item insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md          
         - name: User control (preview)
           items:
           - name: User insights settings
