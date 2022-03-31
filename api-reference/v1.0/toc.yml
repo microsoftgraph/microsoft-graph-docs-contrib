@@ -5036,24 +5036,24 @@ items:
               href: api/identityproviderbase-update.md
             - name: Delete identity provider
               href: api/identityproviderbase-delete.md
-            - name: Domain-based external identities
-              items:
-              - name: SAML/Ws-Fed external domain federation
-                href: resources/samlorwsfedexternaldomainfederation.md
-              - name: List federated configurations
-                href: api/samlorwsfedexternaldomainfederation-list.md
-              - name: Get federated configuration
-                href: api/samlorwsfedexternaldomainfederation-get.md
-              - name: Create federated configuration
-                href: api/samlorwsfedexternaldomainfederation-post.md
-              - name: Update federated configuration
-                href: api/samlorwsfedexternaldomainfederation-update.md
-              - name: Delete federated configuration
-                href: api/samlorwsfedexternaldomainfederation-delete.md
-              - name: List domains
-                href: api/samlorwsfedexternaldomainfederation-list-domains.md
-              - name: Create externalDomainName
-                href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Domain-based external identities
+            items:
+            - name: SAML/Ws-Fed external domain federation
+              href: resources/samlorwsfedexternaldomainfederation.md
+            - name: List federated configurations
+              href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get federated configuration
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create federated configuration
+              href: api/samlorwsfedexternaldomainfederation-post.md
+            - name: Update federated configuration
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete federated configuration
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create externalDomainName
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
