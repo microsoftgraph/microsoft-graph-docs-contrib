@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
-description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs."
+description: "Represents a defined collection of Azure resource information that can be used to establish Azure network connectivity for Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+Represents a defined collection of Azure resource information that can be used to establish Azure network connectivity for Cloud PCs.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -34,7 +34,7 @@ Represents a defined collection of Azure resource information that can be used t
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the Azure network connection. Read-only.|
-|managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Specifies which services manage the on-premises connection. Possible values are: `windows365`, `devBox` and `unknownFutureValue`. Read-only.
+|managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. Possible values are: `windows365`, `devBox` and `unknownFutureValue`. Read-only.
 |type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |displayName|String|The display name for the Azure network connection.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
@@ -54,8 +54,8 @@ Represents a defined collection of Azure resource information that can be used t
 
 |Member| Value |Description|
 |:---|:---|:---|
-|windows365|1| On-premises connection was successfully created through Windows365.|
-|devBox|2| On-premises connection was successfully created through Project Fidalgo.|
+|windows365|1| Azure network connection was successfully created through Windows365.|
+|devBox|2| Azure network connection was successfully created through Project Fidalgo.|
 |unknownFutureValue|4| Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcOnPremisesConnectionType values
