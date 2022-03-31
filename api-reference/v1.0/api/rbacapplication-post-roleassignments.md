@@ -315,7 +315,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create a role assignment at access package catalog scope
+### Example 4: Create a role assignment with access package catalog scope
 
 #### Request
 
