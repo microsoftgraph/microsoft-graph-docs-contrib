@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
-author: "Jordanndahl"
+author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -11,23 +11,26 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get groups that the group is a direct member of. 
+Get groups that the group is a direct member of.
 
 This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+| Permission type                        | Permissions (from least to most privileged)              |
+| :------------------------------------- | :------------------------------------------------------- |
+| Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                                           |
+| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{id}/memberOf
 ```
@@ -38,15 +41,17 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request headers
 
-| Name | Description |
-|:---- |:----------- |
-| Authorization  | Bearer {token}. Required. |
+| Name             | Description                                                                                                                                                                                                       |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization    | Bearer {token}. Required.                                                                                                                                                                                         |
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Examples
@@ -58,34 +63,43 @@ If successful, this method returns a `200 OK` response code and collection of [d
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "group_get_memberof"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 ```
+
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-memberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/group-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -103,6 +117,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -130,6 +145,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/$count
 ConsistencyLevel: eventual
@@ -142,6 +158,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -159,6 +176,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_count_group_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
@@ -171,6 +189,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -188,6 +207,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "get_video_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
@@ -197,7 +217,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -205,6 +225,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -229,9 +250,10 @@ Content-type: application/json
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_groups_memberof_startswith"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
@@ -241,7 +263,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -249,6 +271,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
