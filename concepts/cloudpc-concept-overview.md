@@ -12,11 +12,11 @@ Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virt
 
 ## Why integrate with Windows 365 Cloud PCs? 
 
-By integrating with and building on top of Windows 365, you can provision, manage, and secure Cloud PCs for end users as quickly and easily as possible. Using the Microsoft Graph API, you can provision Cloud PCs, manage device images, create and run health checks on on-premises network connections, create and assign provisioning policies, and more.  
+By integrating with and building on top of Windows 365, you can provision, manage, and secure Cloud PCs for end users as quickly and easily as possible. Using the Microsoft Graph API, you can provision Cloud PCs, manage device images, create and run health checks on Azure network connections, create and assign provisioning policies, and more.  
 
-### Create on-premises network connections
+### Create Azure network connections
 
-Create [on-premises network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to give line of sight to a domain controller. Once created, if not in use, an on-premises network connection can be deleted. Health checks can also be run on an on-premises network connection to check its health status and, if needed, the AD domain password can be updated. 
+Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to give line of sight to a domain controller. Once created, if not in use, an Azure network connection can be deleted. Health checks can also be run on an Azure network connection to check its health status and, if needed, the AD domain password can be updated. 
 
 ### Provision Cloud PCs
 
