@@ -112,6 +112,7 @@ Content-Type: application/json
     "displayName": "CrossTenantAccessPolicy",
     "lastModifiedDateTime": "08-23-2021Z00:00:00",
     "definition": "Cross tenant access policy..."
+    "allowedCloudEndpoints": ["partner.microsoftonline.cn"]
   }
 }
 ```
