@@ -13,6 +13,14 @@
         {
           "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
           "ApiChange": "Resource",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
           "ChangedApiName": "outgoingCallOptions",
           "ChangeType": "Addition",
           "Description": "Added the [outgoingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
