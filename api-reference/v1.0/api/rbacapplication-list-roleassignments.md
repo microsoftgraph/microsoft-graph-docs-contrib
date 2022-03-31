@@ -285,7 +285,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Request using $filter for role assignments on an access package catalog and expand principal
+### Example 3: Request using $filter for role assignments on an access package catalog and expand the principal object
 
 #### Request
 
