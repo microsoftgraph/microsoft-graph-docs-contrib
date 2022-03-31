@@ -207,7 +207,7 @@ Content-type: application/json
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
-[Microsoft Graph error responses and resource types]: /graph/errors
+[error-response]: /graph/errors
 [OData Query Parameters]: /graph/query-parameters
 
 <!-- {
