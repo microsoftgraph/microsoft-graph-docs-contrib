@@ -178,7 +178,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_orgcontacts_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName

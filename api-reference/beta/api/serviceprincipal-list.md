@@ -171,7 +171,7 @@ The following is an example of the request. This request requires the **Consiste
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "list_serviceprincipals_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
