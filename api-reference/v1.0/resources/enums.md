@@ -1938,3 +1938,11 @@ Possible values for user account types (group membership), per Windows definitio
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+|unknownFutureValue|

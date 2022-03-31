@@ -5014,24 +5014,46 @@ items:
           items:
           - name: Identity provider base
             href: resources/identityproviderbase.md
-          - name: Built-in identity provider
-            href: resources/builtinidentityprovider.md
-          - name: Social identity provider
-            href: resources/socialidentityprovider.md
-          - name: Apple identity provider
-            href: resources/applemanagedidentityprovider.md
-          - name: List
-            href: api/identitycontainer-list-identityproviders.md
-          - name: Create
-            href: api/identitycontainer-post-identityproviders.md
-          - name: Get
-            href: api/identityproviderbase-get.md
-          - name: Update
-            href: api/identityproviderbase-update.md
-          - name: Delete
-            href: api/identityproviderbase-delete.md
-          - name: List available provider types
-            href: api/identityproviderbase-availableprovidertypes.md
+          - name: External identities
+            items:
+            - name: Built-in identity provider type
+              href: resources/builtinidentityprovider.md
+            - name: Social identity provider type
+              href: resources/socialidentityprovider.md
+            - name: Apple identity provider type
+              href: resources/applemanagedidentityprovider.md
+            - name: OpenID Connect identity provider type
+              href: resources/openidconnectidentityprovider.md
+            - name: List available identity providers
+              href: api/identityproviderbase-availableprovidertypes.md
+            - name: List configured identity providers
+              href: api/identitycontainer-list-identityproviders.md
+            - name: Create identity provider
+              href: api/identitycontainer-post-identityproviders.md
+            - name: Get identity provider
+              href: api/identityproviderbase-get.md
+            - name: Update identity provider
+              href: api/identityproviderbase-update.md
+            - name: Delete identity provider
+              href: api/identityproviderbase-delete.md
+            - name: Domain-based external identities
+              items:
+              - name: SAML/Ws-Fed external domain federation
+                href: resources/samlorwsfedexternaldomainfederation.md
+              - name: List federated configurations
+                href: api/samlorwsfedexternaldomainfederation-list.md
+              - name: Get federated configuration
+                href: api/samlorwsfedexternaldomainfederation-get.md
+              - name: Create federated configuration
+                href: api/samlorwsfedexternaldomainfederation-post.md
+              - name: Update federated configuration
+                href: api/samlorwsfedexternaldomainfederation-update.md
+              - name: Delete federated configuration
+                href: api/samlorwsfedexternaldomainfederation-delete.md
+              - name: List domains
+                href: api/samlorwsfedexternaldomainfederation-list-domains.md
+              - name: Create externalDomainName
+                href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
