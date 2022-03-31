@@ -23,7 +23,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **assignmentPolicies** relationship to [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-1.0) resource.",
+          "Description": "Added the **assignmentPolicies** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-1.0) resource.",
           "Target": "entitlementManagement"
         },
         {
