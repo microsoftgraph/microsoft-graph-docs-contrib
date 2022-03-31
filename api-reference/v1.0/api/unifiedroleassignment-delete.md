@@ -17,7 +17,7 @@ Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the Directory (Azure AD) provider
+### For the directory (Azure AD) provider
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
