@@ -688,6 +688,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Delegated admin relationship permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | Read Delegated Admin relationships with customers | Allows the app to read details of delegated admin relationships with customers like access details (that includes roles) and the duration as well as specific role assignments to security groups on behalf of the signed-in user. | Yes | No |
+| _DelegatedAdminRelationship.ReadWrite.All_ | Manage Delegated Admin relationships with customers | Allows the app to manage (create-update-terminate) Delegated Admin relationships with customers and role assignments to security groups for active Delegated Admin relationships on your behalf. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | Read Delegated Admin relationships with customers | Allows the app to read details of delegated admin relationships with customers like access details (that includes roles) and the duration as well as specific role assignments to security groups without a signed-in user. | Yes | No |
+| _DelegatedAdminRelationship.ReadWrite.All_ | Manage Delegated Admin relationships with customers | Allows the app to manage (create-update-terminate) Delegated Admin relationships with customers and role assignments to security groups for active Delegated Admin relationships without a signed-in user. | Yes | No |
+
+---
+
 ## Device permissions
 
 #### Delegated permissions
