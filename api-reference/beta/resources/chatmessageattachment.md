@@ -49,7 +49,8 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
   "contentUrl": "string",
   "content": "string",
   "name": "string",
-  "thumbnailUrl": "string"
+  "thumbnailUrl": "string",
+  "teamsAppId": "string"
 }
 
 ```
