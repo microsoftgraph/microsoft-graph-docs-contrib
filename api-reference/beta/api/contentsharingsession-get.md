@@ -21,7 +21,7 @@ Retrieve the properties of a [contentSharingSession](../resources/contentsharing
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.       |
 | Delegated (personal Microsoft account) | Not supported.       |
-| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All                                        |
+| Application     | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All                                      |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
