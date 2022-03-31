@@ -162,14 +162,14 @@ These are some of the common error codes received via notification when call is 
 | 200  | 5000     | Removed from the conversation by another participant.                                              |
 | 200  | 5001     | The conversation has ended.                                                                        |
 | 200  | 5002     | The conversation has ended as all other participants have left the call.                           |
-| 200  | 5003     | The conversation has ended (Removing modality controller as this conversation has ended.)          |
-| 200  | 5007     | This conversation has ended as the initiator of the group call left the conversation.              |
-| 200  | 5010     | This conversation has ended as only one participant remained in the conversation.                  |
-| 200  | 5012     | This conversation has ended as there are no participants in the incoming roster.                   |
-| 200  | 5013     | This conversation has ended as no one else has joined the group call.                              |
-| 200  | 5014     | This conversation has ended since we were unable to determine a potential host for the group call. |
-| 200  | 5020     | This conversation has ended as there are no non-hidden participants in the incoming roster.        |
-| 200  | 5030     | This conversation has ended as the breakout room duration has elapsed.                             |
+| 200  | 5003     | The conversation has ended                                                                         |
+| 200  | 5007     | The conversation has ended as the initiator of the group call left the conversation.              |
+| 200  | 5010     | The conversation has ended as only one participant remained in the conversation.                  |
+| 200  | 5012     | The conversation has ended as there are no participants in the incoming roster.                   |
+| 200  | 5013     | The conversation has ended as no one else has joined the group call.                              |
+| 200  | 5014     | The conversation has ended since we were unable to determine a potential host for the group call. |
+| 200  | 5020     | The conversation has ended as there are no non-hidden participants in the incoming roster.        |
+| 200  | 5030     | The conversation has ended as the breakout room duration has elapsed.                             |
 | 200  | 5300     | Participant was removed from the conversation by another participant.                              |
 | 200  | 5855     | Participant waiting in lobby was removed from the conversation after lobby inactivity timeout.     |
 | 200  | 7000     | The conversation has ended by bot.                                                                 |
@@ -185,7 +185,7 @@ These are some of the common error codes received via notification when call is 
 | 480  | 10076    | Callee couldnot be reached.                                                                        |
 | 480  | 10134    | Call rejected due to inability to route the call.                                                  |
 | 480  | 10199    | Call rejected as private calling is disabled for the user.                                         |
-| 500  | 1005     | Media disconnected in the bot side 	Check media connectivity between bot and Microsoft             |
+| 500  | 1005     | Media disconnected in the bot side 	Check media connectivity between bot and Microsoft.            |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
