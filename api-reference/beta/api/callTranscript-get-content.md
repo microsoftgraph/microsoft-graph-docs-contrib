@@ -134,7 +134,7 @@ Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
 #### Response
 
-Response contains bytes for the transcript in the body. `Content-type` header specifies type of the transcript content.
+Response contains bytes for the transcript in the body. `Content-Type` header specifies type of the transcript content.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -164,7 +164,7 @@ Accept: application/vnd.openxmlformats-officedocument.wordprocessingml.document
 ```
 #### Response
 
-Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content.
+Response contains bytes for the transcript in the body. `Content-Type` header specifies type of the transcript content.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
