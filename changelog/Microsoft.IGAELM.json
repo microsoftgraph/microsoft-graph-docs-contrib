@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **assignmentPolicies** relationship to [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
+          "Description": "Added the **assignmentPolicies** relationship to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
           "Target": "accessPackage"
         },
         {
