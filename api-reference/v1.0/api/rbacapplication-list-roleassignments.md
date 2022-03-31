@@ -63,7 +63,13 @@ GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq 
 
 ## Query parameters
 
-This operation requires the `$filter` query parameter to query specific instances of role assignments. You can filter on the `roleDefinitionId` or `principalId` properties, or for the entitlement management provider, the `appScopeId` property. For the directory provider, the `roleDefinitionId` property can be either a role object ID or a **templateId**. For general information, see [OData query parameters](/graph/query-parameters).
+This operation requires the `$filter` query parameter to query role assignments for the supported RBAC providers.
+
+For the directory provider, you must filter on either the **roleDefinitionId** or **principalId** properties. The **roleDefinitionId** property can be either a role object ID or a value for the **templateId** property.
+
+For the entitlement management provider, you must filter on either the **roleDefinitionId**, **principalId** or **appScopeId** properties.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
