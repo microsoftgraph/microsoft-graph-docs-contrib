@@ -1,6 +1,6 @@
 ---
 title: "purgeDataOperation resource type"
-description: "Use the purge data operation to delete sensitive misplaced content."
+description: "Represents an operation to permanently delete Microsoft Teams messages"
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
