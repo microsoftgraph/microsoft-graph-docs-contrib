@@ -10418,6 +10418,11 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
+        - name: My roles
+          href: resources/managedtenants-myrole.md
+          items:
+          - name: List my roles
+            href: api/managedtenants-managedtenant-list-myroles.md 
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
