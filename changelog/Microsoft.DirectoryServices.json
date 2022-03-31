@@ -10513,7 +10513,7 @@
       "ChangeList": [
         {
           "Id": "438838d1-a936-4789-9d1c-c929788be1eb",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "federatedIdpMfaBehavior",
           "ChangeType": "Addition",
           "Description": "Added the **federatedIdpMfaBehavior** enumeration type.",
@@ -10521,7 +10521,7 @@
         },
         {
           "Id": "438838d1-a936-4789-9d1c-c929788be1eb",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "promptLoginBehavior",
           "ChangeType": "Addition",
           "Description": "Added the **promptLoginBehavior** enumeration type.",
@@ -10540,7 +10540,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "federationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **federationConfiguration** relationship to [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
+          "Description": "Added the **federationConfiguration** relationship to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-beta) resource.",
           "Target": "domain"
         },
         {
@@ -10548,7 +10548,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "internalDomainFederation",
           "ChangeType": "Addition",
-          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-beta) resource",
+          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-beta) resource and related methods. Use this resource to federate your domains with Azure AD.",
           "Target": "internalDomainFederation"
         }
       ],
