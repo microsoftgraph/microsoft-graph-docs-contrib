@@ -15442,7 +15442,7 @@ items:
           href: api/linkedresource-update.md
         - name: Delete
           href: api/linkedresource-delete.md
-      - name: To-do Tasks(new)
+      - name: To-do Tasks(experimental)
         items:
         - name: Overview
           href: resources/tasks-overview.md

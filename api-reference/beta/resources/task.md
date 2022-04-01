@@ -30,8 +30,8 @@ Inherits from [baseTask](../resources/basetask.md).
 |[Update task](../api/basetask-update.md)|[task](../resources/task.md)|Update the properties of a [task](../resources/task.md) object.|
 |[Delete task](../api/basetask-delete.md)|None|Deletes a [task](../resources/task.md) object.|
 |[move](../api/basetask-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
-|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
-|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
+|[List checklistItems](../api/todotask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
+|[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
 |[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
 |[Create linkedResource](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
 
