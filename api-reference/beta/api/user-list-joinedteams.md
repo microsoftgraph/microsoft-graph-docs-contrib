@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
+> **Note**: This API doesn't return the host team of the shared channel that the user is a direct member of.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /me/joinedTeams
 GET /users/{id | user-principal-name}/joinedTeams
 ```
-> **Note**: These APIs don't return the host team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
 This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 > [!Note]
 > Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 
 ## Example
 ### Request

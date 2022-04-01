@@ -37,7 +37,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /users/{user-id}/teamwork/associatedTeams
 ```
-> **Note**: This API also returns the host team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
 This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
@@ -53,6 +52,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [associatedTeamInfo](../resources/associatedteaminfo.md) objects in the response body.
+
+> **Note**: This API also returns the host team of the shared channel that the user is a direct member of.
 
 ## Examples
 
@@ -103,6 +104,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 
 ## See also
 
