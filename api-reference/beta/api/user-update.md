@@ -342,9 +342,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 6: Add or update the values of a schema extension for a user
+### Example 5: Add or update the values of a schema extension for a user
 
-In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`. You can update or assign a value to a single property or all properties in the extension.
+You can update or assign a value to a single property or all properties in the extension.
 
 #### Request
 
