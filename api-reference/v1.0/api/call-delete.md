@@ -153,6 +153,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 #### Call end reason codes
 
 These are some of the common error codes received via notification when call is terminated.
@@ -187,7 +188,7 @@ These are some of the common error codes received via notification when call is 
 | 480  | 10076    | Callee could not be reached.                                                                       |
 | 480  | 10134    | Call rejected due to inability to route the call.                                                  |
 | 480  | 10199    | Call rejected as private calling is disabled for the user.                                         |
-| 500  | 1005     | Media disconnected in the bot side. Check media connectivity between bot and Microsoft.            |
+| 500  | 1005     | Server encountered connectivity error with Bot's media. Please check media connectivity between Bot and Microsoft. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
