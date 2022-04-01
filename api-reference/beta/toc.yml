@@ -1811,6 +1811,8 @@ items:
             href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
             href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
+          - name: Purge data
+            href: api/ediscovery-sourcecollection-purgedata.md
         - name: Tag
           href: resources/ediscovery-tag.md
           items:
@@ -11208,9 +11210,9 @@ items:
           href: resources/administrativeunit.md
           items:
           - name: List
-            href: api/administrativeunit-list.md
+            href: api/directory-list-administrativeunits.md
           - name: Create
-            href: api/administrativeunit-post-administrativeunits.md
+            href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
           - name: Update
