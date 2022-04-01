@@ -1,18 +1,20 @@
 ---
-title: "assignedPrincipals"
-description: "Get the users and groups assigned to a role across all scopes."
+title: "List assignedPrincipals"
+description: "List the principals (users and groups) directly or transitively assigned to a specific role for different scopes."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# assignedPrincipals
+# List assignedPrincipals
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the users and groups assigned to a role across all scopes.
+List the principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use `count` query parameter to also get the count.
+
+If you want to list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
 ## Permissions
 One of the following permissions is required to call this API. At a minimum, a caller must have the `RoleManagement.Read.Directory` permission for queries. If the caller does not have permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects) pattern.
@@ -73,7 +75,7 @@ The following table shows the parameters that can be used with this function.
 |directoryScopeType|String|Directory scope type to get assigned principals for. Supported values are `tenant`, `administrativeUnit`, and `resource`.|
 |directoryScopeId|String|ID of the directory scope to get assigned principals for. By default, all scopes are considered.|
 
-### Scopes
+### directoryScopeType
 
 |Scope|Query|Supported for|
 |:---|:---|:---|
