@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!TIP]
 > 1. Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
->2. The `User.Read` permission allows the app to read the profile, and discover the group membership, reports and manager of the signed-in user only.
+>2. The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports and manager of the signed-in user only.
 
 ## HTTP request
 For a specific user:
