@@ -4802,10 +4802,10 @@
       "ChangeList": [
         {
         "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
-        "ApiChange": "Enum type",
-        "ChangedApiName": "teamworkUserIdentityType",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
         "ChangeType": "Addition",
-        "Description": "Added the enumeration **teamworkUserIdentityType** to represent types of users (Azure AD user, anonymous guest, and so on) in Microsoft Teams.",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
         "Target": "teamworkUserIdentityType"
       }
         ],
@@ -4820,10 +4820,10 @@
       "ChangeList": [
         {
         "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
-        "ApiChange": "Enum type",
-        "ChangedApiName": "teamworkUserIdentityType",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
         "ChangeType": "Addition",
-        "Description": "Added the enumeration **teamworkUserIdentityType** to represent types of users (Azure AD user, anonymous guest, and so on) in Microsoft Teams.",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
         "Target": "teamworkUserIdentityType"
       }
         ],
