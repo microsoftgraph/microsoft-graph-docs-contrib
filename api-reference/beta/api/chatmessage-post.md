@@ -1211,7 +1211,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
-> **Note:** When specifying a Teams app to attribute a card to, the AAD app id used to make the call must match the AAD app id of the Teams app. The AAD app id of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+> **Note:** When specifying a Teams app to attribute a card to, the AAD app ID used to make the call must match the AAD app ID of the Teams app. The AAD app ID of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 >
 > Furthermore, the app specified in the payload must be installed either for the user sending the message or in the chat or channel in which the message is being sent.
 
