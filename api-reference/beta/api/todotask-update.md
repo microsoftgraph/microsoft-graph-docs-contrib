@@ -48,6 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier of the task. Inherited from [entity](../resources/entity.md)|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |importance|importance|The importance of the event. Possible values are: `low`, `normal`, `high`.|
