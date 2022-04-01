@@ -1,6 +1,6 @@
 ---
 title: "purgeDataOperation resource type"
-description: "Represents an operation to permanently delete Microsoft Teams messages"
+description: "Represents an operation to permanently delete data in a sourceCollection. Currently the operation is scoped to Microsoft Teams messages only."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an operation to permanently delete Microsoft Teams messages.
-This operation is currently scoped to Teams only, more data sources will be in scope in the future.
+Represents an operation to permanently delete data in a sourceCollection. This operation is currently scoped to Microsoft Teams messages only; more data sources will be in scope in the future.
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
@@ -25,7 +24,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`,`purgeData`|
+|action|[microsoft.graph.ediscovery.caseAction](../resources/ediscovery-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`,`purgeData`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
