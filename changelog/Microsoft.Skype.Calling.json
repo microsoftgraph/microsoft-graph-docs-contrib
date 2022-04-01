@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callOptions",
           "ChangeType": "Addition",
-          "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) property to the call resource.",
           "Target": "call"
         },
         {
