@@ -1,5 +1,5 @@
 ---
-title: "List incoming channels"
+title: "List incomingChannels"
 description: "Get the list of incoming channels."
 author: "devjha-ms"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# List incoming channels
+# List incomingChannels
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
