@@ -668,9 +668,9 @@
 			"Id": "03f5af75-44df-4567-b4fd-3332cb4e052e",
 			"Cloud": "Prod",
 			"Version": "beta",
-			"CreatedDateTime": "2022-02-22T17:05:38.1837303Z",
+			"CreatedDateTime": "2022-03-31T17:05:38.1837303Z",
 			"WorkloadArea": "Compliance",
-			"SubArea": ""
+			"SubArea": "eDiscovery"
 		}
 	]
 }
