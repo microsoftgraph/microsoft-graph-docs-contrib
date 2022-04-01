@@ -1,6 +1,6 @@
 ---
 title: "List assignedPrincipals"
-description: "List the principals (users and groups) directly or transitively assigned to a specific role for different scopes."
+description: "Get a list the principals (users and groups) directly or transitively assigned to a specific role for different scopes."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use `count` query parameter to also get the count.
+Get a list the principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use `count` query parameter to also get the count.
 
 If you want to list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
@@ -100,20 +100,55 @@ If successful, this function returns a `200 OK` response code and a [directoryOb
 
 ## Examples
 
-The following example gets directly assigned principals for a specific administrative unit scope and directory role.
+For the examples in this section, consider the following role assignment scenario. A user named Alice has both direct and transitive role assignments as follows:
 
-### Request
+| User | Group | Role | Scope |
+| :---: | :---: | :---: | :---: |
+| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
+| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope2 |
+|  | Group1<br/>`86b38db7-6e8b-4ad2-b2aa-ced7f09486c1`<br/>(User1 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
+|  | Group2<br/>`182351a6-d974-4d18-88ae-8a148da44cd2`<br/>(User1 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
+|  | Group3<br/>`b93d5379-a464-4db5-b8e1-694910f1e11e`<br/>(User2 is a member)<br/>(User3 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope3 |
+
++ User1 is assigned the Role1 role directly at Scope1 scope.
++ User1 is assigned the Role1 role directly at Scope2 scope.
++ User1 is member of the Group1 group and Group1 is assigned the Role1 role at Scope1 scope.
++ User1 is member of the Group2 group and Group2 is assigned the Role1 role at Scope1 scope.
++ User2 is member of the Group3 group and Group3 is assigned the Role1 role at Scope3 scope.
++ User3 is member of the Group3 group and Group3 is assigned the Role1 role at Scope3 scope.
+
+### Example 1: Get direct and transitive assigned principal counts for all scopes
+
+#### Request
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/$count
+```
+
+| Example | Count |
+| --- | ---|
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/$count`	| 4<br/>(User1, Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/$count` | 6<br/>(User1, User2, User3, Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/microsoft.graph.user/$count` | 1<br/>(User1) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/microsoft.graph.user/$count` | 3<br/>(User1, User2, User3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+
+
+
+### Example 2: Get directly assigned principals for a specific administrative unit scope and directory role
+
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "unifiedroledefinitionthis.assignedprincipals"
+  "name": "unifiedroledefinition_assignedprincipals_scope_role"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='<guid>')
 ```
 
-
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -131,6 +166,162 @@ Content-Type: application/json
     {
         "@odata.type": "#microsoft.graph.user",
         "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f"
+    }
+  ]
+}
+```
+
+### Example 3: Get directly assigned principals for all scopes
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "unifiedroledefinition_assignedprincipals_allscopes"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.directoryObject)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "value": [
+    {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
+        "displayName": "User1",
+        "userPrincipalName": "user1@contoso.com"
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "86b38db7-6e8b-4ad2-b2aa-ced7f09486c1",
+        "displayName": "Group1"
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "182351a6-d974-4d18-88ae-8a148da44cd2",
+        "displayName": "Group2"
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "b93d5379-a464-4db5-b8e1-694910f1e11e",
+        "displayName": "Group3"
+    }
+  ]
+}
+```
+
+### Example 4: Get directly assigned users only for a particular scope
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "unifiedroledefinition_assignedprincipals_scope"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.directoryObject)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "value": [
+    {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
+        "displayName": "User1",
+        "userPrincipalName": "user1@contoso.com"
+    }
+  ]
+}
+```
+
+### Example 5: Get transitive assigned principals and inline count with minimum permission set
+
+The following example gets the transitive assigned principals and inline count with ([RoleManagement.Read.Directory](/graph/permissions-reference#role-management-permissions) + [GroupMember.Read.All](/graph/permissions-reference#group-permissions)) permission set.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "unifiedroledefinition_assignedprincipals_minimumpermission_count"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()?$count=true
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.directoryObject)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.count": 6,
+  "value": [
+    {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "6c62e70d-f5f5-4b9d-9eea-ed517ed9341f",
+        "displayName": null,
+        "userPrincipalName": null
+    },
+    {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "95024ec5-8e34-47bd-bd7c-ab034b6dc64e",
+        "displayName": null,
+        "userPrincipalName": null
+    },
+    {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "951e631d-11aa-49c3-95d1-4cdad24986d5",
+        "displayName": null,
+        "userPrincipalName": null
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "86b38db7-6e8b-4ad2-b2aa-ced7f09486c1",
+        "displayName": null
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "182351a6-d974-4d18-88ae-8a148da44cd2",
+        "displayName": null
+    },
+    {
+        "@odata.type": "#microsoft.graph.group",
+        "id": "b93d5379-a464-4db5-b8e1-694910f1e11e",
+        "displayName": null
     }
   ]
 }
