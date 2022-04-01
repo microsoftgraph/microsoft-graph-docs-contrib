@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> The Subject Rights Request API under the /privacy node is deprecated and will stop returning data on March 30, 2024. Please use the new path under /security.
+> The Subject Rights Request API under the /privacy node is deprecated and will stop returning data on March 30, 2025. Please use the new path under /security.
