@@ -1,9 +1,9 @@
 ---
 title: "sharingCapabilities enum type"
 description: "Enum type representing sharing capabilities for a SharePoint site or tenant."
+author: "liamfernandez"
 ms.localizationpriority: medium
-author: "lfernandez"
-ms.prod: "SharePoint"
+ms.prod: "files"
 doc_type: "enumPageType"
 ---
 

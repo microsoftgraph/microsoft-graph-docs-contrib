@@ -1,9 +1,9 @@
 ---
 title: "Get settings"
-description: "Read the properties and relationships of a settings object."
-author: "lfernandez"
+description: "Read the properties and relationships of a tenant admin settings resource."
+author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "SharePoint"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [settings](../resources/tenantAdmin-settings.md) object.
+Read the properties and relationships of a [tenant admin settings](../resources/tenantAdmin-settings.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,9 +1,9 @@
 ---
-title: "settings resource type"
-description:  "The settings resource contains information about the organization settings for the SharePoint and OneDrive for Business workload. Refer to [tenant] for details."
-author: lfernandez
+title: "tenant admin settings resource type"
+description:  "The tenant admin settings resource contains information about the organization settings for the SharePoint and OneDrive workload."
+author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "SharePoint"
+ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the organization settings for the SharePoint and OneDrive for Business workload.
+Represents the organization settings for the SharePoint and OneDrive workload.
 
 Inherits from [entity](../resources/entity.md).
 

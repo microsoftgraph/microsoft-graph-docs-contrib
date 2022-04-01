@@ -1,9 +1,9 @@
 ---
 title: "Update settings"
-description: "Update the properties of a settings object. Allows users to update organization-level settings that pertain to SharePoint/OneDrive."
-author: "lfernandez"
+description: "Update the properties of a settings object. Allows users to update organization-level settings that pertain to SharePoint and OneDrive."
+author: "liamfernandez"
 ms.localizationpriority: medium
-ms.prod: "SharePoint"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an organization's [settings](../resources/tenantAdmin-settings.md) for SharePoint and OneDrive.
+Update the properties of an organization's [tenant admin settings](../resources/tenantAdmin-settings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
