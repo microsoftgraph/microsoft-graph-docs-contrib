@@ -101,6 +101,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### protocolType values 
 
@@ -554,6 +555,22 @@ Namespace: microsoft.graph
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
 |unknownFutureValue|
+
+
+### clientCredentialType values 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
 
 ### azureADLicenseType values
 
