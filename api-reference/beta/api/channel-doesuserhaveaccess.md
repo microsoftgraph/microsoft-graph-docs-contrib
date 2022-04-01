@@ -1,6 +1,6 @@
 ---
 title: "channel: doesUserHaveAccess"
-description: "Check whether a user has access to a shared channel or not."
+description: "Determine whether a user has access to a shared channel."
 author: "devjha-ms"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md) or not.
+Determine whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +54,7 @@ Do not supply a request body for this function.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a boolean in the response body.
+If successful, this function returns a `200 OK` response code and a Boolean in the response body.
 
 ## Examples
 
