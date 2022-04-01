@@ -40,7 +40,7 @@ options := &msgraphsdk.SchemaRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 externalConnectionId := "externalConnection-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).Schema().Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).Schema().Patch(options)
 
 
 ```

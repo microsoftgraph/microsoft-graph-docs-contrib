@@ -17,7 +17,7 @@ options := &msgraphsdk.EventRequestBuilderPatchOptions{
 }
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).Calendar().EventsById(&eventId).Patch(options)
+graphClient.GroupsById(&groupId).Calendar().EventsById(&eventId).Patch(options)
 
 
 ```

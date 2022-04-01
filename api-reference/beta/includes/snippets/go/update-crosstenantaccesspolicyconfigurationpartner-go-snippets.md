@@ -20,7 +20,7 @@ options := &msgraphsdk.CrossTenantAccessPolicyConfigurationPartnerRequestBuilder
 	Body: requestBody,
 }
 crossTenantAccessPolicyConfigurationPartnerTenantId := "crossTenantAccessPolicyConfigurationPartner-tenantId"
-result, err := graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(options)
+graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(options)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 externalConnectionId := "externalConnection-id"
 externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Delete(nil)
+graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Delete(nil)
 
 
 ```

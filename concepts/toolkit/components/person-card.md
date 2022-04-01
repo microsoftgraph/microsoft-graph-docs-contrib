@@ -2,7 +2,7 @@
 title: "Person-Card component in the Microsoft Graph Toolkit"
 description: "A Person-Card component is a component to display more information relating to a person."
 ms.localizationpriority: medium
-author: vogtn
+author: sebastienlevert
 ---
 
 # Person-Card component in the Microsoft Graph Toolkit
@@ -171,6 +171,7 @@ The Person-Card control uses the following Microsoft Graph APIs and permissions.
 | `sections.organization.showWorksWith` set (default) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organization |
 | `sections.mailMessages` enabled (default) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Messages |
 | `sections.files` enabled (default) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
+| `sections.profile` enabled (default) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Profile |
 
 The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
 

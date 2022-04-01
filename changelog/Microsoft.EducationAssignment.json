@@ -622,14 +622,6 @@
         },
         {
           "Id": "ae957525-cd7b-4311-9a22-3374454f9251",
-          "ApiChange": "Resource",
-          "ChangedApiName": "educationUser",
-          "ChangeType": "Addition",
-          "Description": "Added the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
-          "Target": "educationUser"
-        },
-        {
-          "Id": "ae957525-cd7b-4311-9a22-3374454f9251",
           "ApiChange": "Action",
           "ChangedApiName": "publish",
           "ChangeType": "Addition",
