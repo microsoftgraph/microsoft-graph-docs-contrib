@@ -103,6 +103,7 @@ myParticipantId     | String                                                    
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) collection | Read-only. Nullable.                                                |
 | operations          | [commsOperation](commsoperation.md) collection       | Read-only. Nullable.                                                |
 | participants        | [participant](participant.md) collection             | Read-only. Nullable.                                                |
+| contentSharingSessions        | [contentSharingSession](contentsharingsession.md) collection             | Read-only. Nullable.                                                |
 
 ## JSON representation
 
