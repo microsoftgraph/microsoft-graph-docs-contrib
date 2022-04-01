@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [task trigger](../resources/printtasktrigger.md) on the specified [printer](../resources/printer.md). Currently, only **one** task trigger can be specified per printer, but this limit may be removed in the future. 
 
+**Note:** The appId used to generate access token for creating create task trigger should be the same appId that was used to create corresponding task definition.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
