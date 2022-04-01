@@ -204,7 +204,7 @@ The following example shows how a user can request an access package assignment 
   "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
 Content-type: application/json
 
 {
