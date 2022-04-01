@@ -2695,7 +2695,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
-|EmailUser|
+|emailUser|
 
 ### callRecordingStatus values
 
