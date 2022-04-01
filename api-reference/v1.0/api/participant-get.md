@@ -1,7 +1,7 @@
 ---
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a **participant** object.
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
