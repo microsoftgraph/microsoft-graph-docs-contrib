@@ -36,7 +36,8 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
   "optionalProperties": [
     "thumbnailUrl",
     "content",
-    "contentUrl"
+    "contentUrl",
+    "teamsAppId"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.chatMessageAttachment"
