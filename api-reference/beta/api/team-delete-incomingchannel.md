@@ -1,5 +1,5 @@
 ---
-title: "Remove incoming channel"
+title: "Remove incomingChannels"
 description: "Remove an incoming channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Remove incoming channel
+# Remove incomingChannels
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
