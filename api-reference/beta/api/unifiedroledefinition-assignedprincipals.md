@@ -1,6 +1,6 @@
 ---
 title: "List assignedPrincipals"
-description: "Get a list the principals (users and groups) directly or transitively assigned to a specific role for different scopes."
+description: "Get the list of principals (users and groups) directly or transitively assigned to a specific role for different scopes."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list the principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use `count` query parameter to also get the count.
+Get the list of principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use the `count` query parameter to also get the count.
 
 If you want to list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
