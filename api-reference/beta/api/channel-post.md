@@ -446,53 +446,6 @@ Content-Length: 0
 }
 ```
 
-
-### Example 6: Create a shared channel on behalf of a user
-
-#### Request
-
-The following example shows how to create a shared channel.
-
-
-<!-- {
-  "blockType": "request",
-  "name": "create_shared_channel"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
-Content-type: application/json
-
-{
-  "displayName": "My First Shared Channel",
-  "description": "This is my first shared channel",
-  "membershipType": "shared",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
-      "roles": [
-        "owner"
-      ]
-    }
-  ]
-}
-```
-
-#### Response
-
-The following is an example of the response.
-<!-- {
-  "blockType": "response"
-} -->
-
-```http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
-Content-Length: 0
-```
-
 ## See also
 
 * [Complete migration for a channel](channel-completemigration.md)
