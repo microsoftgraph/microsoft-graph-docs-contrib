@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
+> [!IMPORTANT]
+> Shared channels are currently in public preview status. To gain access to this API, you must turn on the targeted release option in your tenant. See more details on the [Shared channels in Microsoft Teams (Preview)](/microsoftteams/shared-channels).
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +55,7 @@ In the request body, supply a JSON representation of a [channel](../resources/ch
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body for channel with a **membershipType** value of `standard` or `private`. For channel with a **membershipType** value of `shared`, this method return `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 If the request is unsuccessful, this method returns a `400 Bad Request` response code. The following are common reasons for this response:
 
@@ -444,6 +448,53 @@ Content-Length: 0
     "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
+```
+
+
+### Example 6: Create a shared channel on behalf of a user
+
+#### Request
+
+The following example shows how to create a shared channel.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
 ```
 
 ## See also
