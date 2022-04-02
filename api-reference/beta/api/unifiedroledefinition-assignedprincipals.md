@@ -104,11 +104,11 @@ For the examples in this section, consider the following role assignment scenari
 
 | User | Group | Role | Scope |
 | :---: | :---: | :---: | :---: |
-| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
-| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope2 |
-|  | Group1<br/>`86b38db7-6e8b-4ad2-b2aa-ced7f09486c1`<br/>(User1 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
-|  | Group2<br/>`182351a6-d974-4d18-88ae-8a148da44cd2`<br/>(User1 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope1 |
-|  | Group3<br/>`b93d5379-a464-4db5-b8e1-694910f1e11e`<br/>(User2 is a member)<br/>(User3 is a member) | Role1<br/>`fe930be7-5e62-47db-91af-98c3a49a38b1` | Scope3 |
+| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1 | Scope1 |
+| User1<br/>`6c62e70d-f5f5-4b9d-9eea-ed517ed9341f` |  | Role1 | Scope2 |
+|  | Group1<br/>`86b38db7-6e8b-4ad2-b2aa-ced7f09486c1`<br/>(User1 is a member) | Role1 | Scope1 |
+|  | Group2<br/>`182351a6-d974-4d18-88ae-8a148da44cd2`<br/>(User1 is a member) | Role1 | Scope1 |
+|  | Group3<br/>`b93d5379-a464-4db5-b8e1-694910f1e11e`<br/>(User2 is a member)<br/>(User3 is a member) | Role1 | Scope3 |
 
 + User1 is assigned the Role1 role directly at Scope1 scope.
 + User1 is assigned the Role1 role directly at Scope2 scope.
@@ -122,17 +122,17 @@ For the examples in this section, consider the following role assignment scenari
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/$count
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count
 ```
 
 | Example | Count |
 | --- | ---|
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/$count`	| 4<br/>(User1, Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/$count` | 6<br/>(User1, User2, User3, Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/microsoft.graph.user/$count` | 1<br/>(User1) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/microsoft.graph.user/$count` | 3<br/>(User1, User2, User3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=false)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{id}/assignedPrincipals(transitive=true)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/$count` | 4<br/>(User1, Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count` | 6<br/>(User1, User2, User3, Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/microsoft.graph.user/$count` | 1<br/>(User1) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/microsoft.graph.user/$count` | 3<br/>(User1, User2, User3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
 
 
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{i
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='<guid>')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='<guid>')
 ```
 
 #### Response
@@ -180,7 +180,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals()
 ```
 
 #### Response
@@ -232,7 +232,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
 ```
 
 #### Response
@@ -271,7 +271,7 @@ The following example gets the transitive assigned principals and inline count w
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()?$count=true
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals()?$count=true
 ```
 
 #### Response
