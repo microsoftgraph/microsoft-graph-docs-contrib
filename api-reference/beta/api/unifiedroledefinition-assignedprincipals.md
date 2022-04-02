@@ -86,6 +86,10 @@ The following table shows the parameters that can be used with this function.
 |All resource scopes|`assignedPrincipals(directoryScopeType='resource', transitive=true\|false)`|Directory roles|
 |Specific resource scope|`assignedPrincipals(directoryScopeType='resource', directoryScopeId ='<guid>', transitive=true\|false)`|Directory roles|
 
+## Optional query parameters
+
+This method supports the `$count` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
