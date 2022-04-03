@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 983
+Content-Length: 1034
 
 {
   "value": {
@@ -78,6 +78,7 @@ Content-Length: 983
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "deviceEnrollmentConfigurationType": "limit",
     "showInstallationProgress": true,
     "blockDeviceSetupRetryByUser": true,
     "allowDeviceResetOnInstallFailure": true,
