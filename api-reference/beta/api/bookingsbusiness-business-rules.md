@@ -9,7 +9,9 @@ doc_type: conceptualPageType
 
 # Business rules validation
 
-Use Booking rules validation to override business rules the organization has configured for Bookings calendar.
+When an appointment is created by a non-administrator user, Microsoft Bookings will use the business rules which are configured for the Bookings calendar. However, administrators have the authority to override Bookings rules in a few cases.
+
+In the case of a customer, either via graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.
 
 <!-- When an appointment is created by a non-admin user, Bookings will use the business rules what the organization has configured for the Bookings calendar. However, admins can override these rules in certain circumstances. -->
 
@@ -25,7 +27,7 @@ The previous image shows a configuration option that can also be modified via AP
 
 The image below shows the web-app settings. For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
 
-:::image type="content" source="../../../concepts/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar"
+:::image type="content" source="../../../concepts/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
@@ -33,7 +35,7 @@ The image below shows the web-app settings. For more details about the schedulin
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
-**Staff control**
+**Staff control (allow staff selection)** allows a customer to choose a specific person for their booking. If a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to true.
 
 ## Service level settings
 
@@ -41,16 +43,18 @@ The image below shows the web-app settings. For more details about the schedulin
 
 At a service, the scheduling policy is inherited from the business. The customer might choose to override the policies.
 
-#### Main policy  
+### Main policy  
 
 If a scheduling policy exists at both service level and business level, the service level policy will take precedence.
 
 ### Partially set policies
 
-#### Pre-Buffer
+If the user has set few of the 4 relevant policies and not all, we should inherit the unset policy from the business level scheduling policy. This won’t disrupt their functioning as they can set all the policies to the desired value for the service.
+
+### Pre-Buffer
 
 This is the extra time needed for an appointment before a following appointment. In the staff member calendar, the appointment is of duration "pre-buffer time" + "appointment slot time".
 
-#### Post-Buffer
+### Post-Buffer
 
 This is the extra time needed for an appointment after a previous appointment. In the staff member calendar, the appointment is of duration "appointment slot time" + "post buffer time".
