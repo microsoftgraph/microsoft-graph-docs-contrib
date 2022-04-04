@@ -856,6 +856,7 @@ GET https://graph.microsoft.com/beta/users?$filter=isManagementRestricted eq tru
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName)",
     "value": [
