@@ -127,4 +127,107 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create a policy for users from other organizations to request
+
+The following example shows a more complex policy with two stages of approval.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_2"
+}
+-->
+```http
+{
+    "displayName": "policy for external access requests",
+    "description": "policy for users from connected organizations to request access, with two stages of approval.",
+    "allowedTargetScope": "allConfiguredConnectedOrganizationUsers",
+    "specificAllowedTargets": [],
+    "expiration": {
+        "type": "noExpiration"
+    },
+    "requestorSettings": {
+        "enableTargetsToSelfAddAccess": true,
+        "enableTargetsToSelfUpdateAccess": true,
+        "enableTargetsToSelfRemoveAccess": true,
+        "allowCustomAssignmentSchedule": false,
+        "enableOnBehalfRequestorsToAddAccess": false,
+        "enableOnBehalfRequestorsToUpdateAccess": false,
+        "enableOnBehalfRequestorsToRemoveAccess": false,
+        "onBehalfRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequiredForAdd": true,
+        "isApprovalRequiredForUpdate": false,
+        "stages": [
+            {
+                "durationBeforeAutomaticDenial": "P14D",
+                "isApproverJustificationRequired": false,
+                "isEscalationEnabled": false,
+                "durationBeforeEscalation": "PT0S",
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.internalSponsors"
+                    }
+                ],
+                "fallbackPrimaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "userId": "7deff43e-1f17-44ef-9e5f-d516b0ba11d4"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+                    }
+                ],
+                "escalationApprovers": [],
+                "fallbackEscalationApprovers": []
+            },
+            {
+                "durationBeforeAutomaticDenial": "P14D",
+                "isApproverJustificationRequired": false,
+                "isEscalationEnabled": false,
+                "durationBeforeEscalation": "PT0S",
+                "primaryApprovers": [],
+                "fallbackPrimaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "userId": "46184453-e63b-4f20-86c2-c557ed5d5df9"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+                    }
+                ],
+                "escalationApprovers": [],
+                "fallbackEscalationApprovers": []
+            }
+        ]
+    },
+    "accessPackage": {
+        "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
+    }
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "9d8f2361-39be-482e-b267-34ad6baef4d3",
+    "displayName": "policy for external access requests",
+    "description": "policy for users from connected organizations to request access, with two stages of approval."
+}
+```
 
