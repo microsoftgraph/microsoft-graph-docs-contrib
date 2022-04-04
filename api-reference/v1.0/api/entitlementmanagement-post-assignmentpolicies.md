@@ -60,7 +60,14 @@ If successful, this method returns a `201 Created` response code and an [accessP
 
 ## Examples
 
-### Request
+### Example 1: Create a direct assignment policy
+
+A direct assignment policy is useful when access package assignment requests will only be created by an administrator, not by users themselves.
+
+#### Request
+
+The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews.
+
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_from_"
@@ -101,8 +108,7 @@ Content-Type: application/json
 }
 ```
 
-
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
