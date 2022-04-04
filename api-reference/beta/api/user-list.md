@@ -790,7 +790,52 @@ Content-type: application/json
 }
 ```
 
-### Example 12: List all users whose management is restricted
+### Example 12: Get the value of a schema extension for all users
+
+In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### Response
+
+In the following response, the schema extension property `ext55gb1l09_msLearnCourses` is unassigned in two of the user objects.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+> **Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
+
+### Example 13: List all users whose management is restricted
 
 #### Request
 <!-- {
@@ -811,7 +856,6 @@ GET https://graph.microsoft.com/beta/users?$filter=isManagementRestricted eq tru
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName)",
     "value": [

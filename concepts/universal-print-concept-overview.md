@@ -74,7 +74,7 @@ Follow these steps to enable pull printing:
 
 3. [Update the attributes of your virtual printer](/graph/api/printer-update) by using application permissions and an `application/ipp` media type (see examples).
 
-4. [Create a task trigger for your virtual printer](/graph/api/printer-post-tasktriggers) using an administrator authentication token that will associate your task definition with virtual printer.
+4. [Create a task trigger for your virtual printer](/graph/api/printer-post-tasktriggers) using an administrator authentication token that will associate your task definition with virtual printer. The appId used to generate the access token should be the same appId that was used to create the task definition.
 
 5. When a print job is submitted to the virtual printer, it will be paused due to the [printTaskTrigger](/graph/api/resources/printtasktrigger). A [printTask](/graph/api/resources/printtask) with `processing` state will be created based on the associated [printTaskDefinition](/graph/api/resources/printtaskdefinition).
 
