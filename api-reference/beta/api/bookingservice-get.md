@@ -20,7 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 |Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request

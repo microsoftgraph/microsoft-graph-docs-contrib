@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a customer appointment for a [bookingService](bookingservice.md), performed by a set of staff members, provided by a Microsoft Bookings business.
 
 > [!NOTE]
-> If you create a custom app using application permissions, you must follow the [Business rules validation](bookingsbusiness-business-rules.md).
+> If you create a custom app using application permissions, you must follow the [Business rules validation](../api/bookingsbusiness-business-rules.md).
 
 ## Methods
 

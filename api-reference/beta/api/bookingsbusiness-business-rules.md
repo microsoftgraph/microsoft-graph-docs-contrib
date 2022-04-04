@@ -17,29 +17,29 @@ Use Booking rules validation to override business rules the organization has con
 
 ### Business hours
 
-<!-- :::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off"::: -->
+:::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
 
-This is a setting in the business object and can be modified via the API as well. An appointment can’t be set outside business hours. The attribute which corresponds to the API is “businesshours”.
+The previous image shows a configuration option that can also be modified via API. Use the (API that can be used to modify businessHours) to modify **businessHours**. Note that an appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
-The API resource for scheduling policy is here: [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md). The web-app settings are given below.
+The image below shows the web-app settings. For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
 
-<!-- :::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar"::: -->
+:::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar"
 
-**Time Increment (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
+**Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum Lead time** indicates the minimum time before an appointment can be made or cancelled.
+**Minimum lead time** indicates the minimum time before an appointment can be made or cancelled.
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
-**Allow Staff selection**
+**Staff control**
 
 ## Service level settings
 
 ### Scheduling
 
-At a service, the scheduling policy is inherited from the business. The customer may choose to override the policies.
+At a service, the scheduling policy is inherited from the business. The customer might choose to override the policies.
 
 #### Main policy  
 

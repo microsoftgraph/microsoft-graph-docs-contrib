@@ -1894,6 +1894,8 @@ items:
         href: resources/booking-api-overview.md
       - name: Booking business
         href: resources/bookingbusiness.md
+      - name: Booking business rules validation
+        href: api/bookingsbusiness-business-rules.md
         items:
         - name: List
           href: api/bookingbusiness-list.md
