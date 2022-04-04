@@ -42,6 +42,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
 |verifiedCustomDomainPasswordCredential|[passwordCredential](passwordcredential.md)| The associated password credential for the custom domain used. |
+|isStateSessionEnabled|Boolean| Indicates if state parameter validation is enabled during Authorization Code Grant flow. For all new apps, the property will be true by default. For all existing apps, it is set to false. |
 
 ## JSON representation
 
@@ -74,6 +75,7 @@ Here is a JSON representation of the resource.
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},
   "verifiedCustomDomainPasswordCredential": {"@odata.type": "microsoft.graph.passwordCredential"},
+  "isStateSessionEnabled": true
 }
 
 ```
