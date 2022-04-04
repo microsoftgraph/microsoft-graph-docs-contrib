@@ -194,7 +194,7 @@ Here is an example of the request.
   "name": "list_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&top=10
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDisplayName,'Graph')&$top=10
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-2-csharp-snippets.md)]
