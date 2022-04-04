@@ -443,6 +443,10 @@ items:
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
+          - name: Trim duplicate search results (preview)
+            href: search-concept-trim-duplicate.md
+          - name: Use query templates (preview)
+            href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
       - name: Security
