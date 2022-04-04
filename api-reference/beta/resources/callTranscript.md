@@ -1,6 +1,6 @@
 ---
 title: "callTranscript resource type"
-description: "Represents a transcript associated to a Microsoft Teams Online Meeting."
+description: "Represents a transcript associated with a Microsoft Teams Online Meeting."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"

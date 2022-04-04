@@ -43,7 +43,7 @@ This method supports the `$skipToken` and `$top` [OData query parameters](/graph
 
 | Pattern                | Supported | Syntax                                 | Notes |
 | ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
 | Page limit             |     ✓     | `/transcripts?$top=20` | Get transcripts with page size 20. Default page limit is 10. Max page limit is 100. |
 
 ## Request headers
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts",
-    "@odata.count": 10,
+    "@odata.count": 3,
     "@odata.nextLink": "https://graph.microsoft.com/beta/users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts?$skiptoken=MSMjMCMjMjAyMS0wOS0xNlQxMzo1OToyNy4xMjEwMzgzWg%3d%3d",
     "value": [
         {
@@ -100,35 +100,7 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
             "createdDateTime": "2021-09-16T18:56:00.9038309Z"
-        },
-        {
-            "id": "MSMjMCMjYmY0MjczOTMtNWYzMC00MGU0LThjNzUtODJmZjQxYTVlZDIz",
-            "createdDateTime": "2021-09-16T18:53:05.5627936Z"
-        },
-        {
-            "id": "MSMjMCMjMTUxZjI2ZjMtNzcxYS00NGFiLTlmNWQtYzI1ZTVjOWRjNDAw",
-            "createdDateTime": "2021-09-16T18:48:25.2408573Z"
-        },
-        {
-            "id": "MSMjMCMjZGFmNzc0YTctMTU2Mi00M2NmLWI2MTMtNjY4YTEwY2QyMDYx",
-            "createdDateTime": "2021-09-16T18:38:35.3375762Z"
-        },
-        {
-            "id": "MSMjMCMjYjJlNmM5ZWItNzgzMy00OGQyLThmNzYtZjE5MTEwZGI0NDIw",
-            "createdDateTime": "2021-09-16T14:24:36.3934536Z"
-        },
-        {
-            "id": "MSMjMCMjMGMwNDJlMzctYTk3Yi00OTE4LWIzNzYtZjM5NTI5ZDI1Y2Zi",
-            "createdDateTime": "2021-09-16T14:03:40.0792162Z"
-        },
-        {
-            "id": "MSMjMCMjZjljOTJkMjgtODZiNS00OTQ5LWE3ZDUtZDZhMDNiNWI4ZGNm",
-            "createdDateTime": "2021-09-16T14:00:47.960732Z"
-        },
-        {
-            "id": "MSMjMCMjYWQ4ZDAzNWMtNDk2Yi00MGRmLTk3ZmUtNmVjMTgyYzFkYWM0",
-            "createdDateTime": "2021-09-16T13:59:27.1210383Z"
-        }
+        }        
     ]
 }
 ```

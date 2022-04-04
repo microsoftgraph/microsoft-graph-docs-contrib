@@ -40,7 +40,7 @@ GET users({userId})/onlineMeetings({meetingId})/transcripts({transcriptId})/cont
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) that allows response customization.
 
 The supported format types are `text/vtt` for vtt OR `application/vnd.openxmlformats-officedocument.wordprocessingml.document` for docx format.
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and contains bytes f
 
 ## Examples
 
-### Example 1: Get a callTranscript Content
+### Example 1: Get a callTranscript content
 #### Request
 <!-- {
   "blockType": "request",
@@ -91,7 +91,7 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 2: Get a callTranscript Content specifying $format query param
+### Example 2: Get a callTranscript content specifying $format query param
 #### Request
 <!-- {
   "blockType": "request",
@@ -121,7 +121,7 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 3: Get a callTranscript Content specifying Accept header
+### Example 3: Get a callTranscript content specifying Accept header
 #### Request
 <!-- {
   "blockType": "request",
@@ -151,7 +151,7 @@ User Name
 This is a transcript test.
 ```
 
-### Example 4: Get a callTranscript Content with $format getting precedence over the Accept header
+### Example 4: Get a callTranscript content with $format getting precedence over the Accept header
 #### Request
 <!-- {
   "blockType": "request",
