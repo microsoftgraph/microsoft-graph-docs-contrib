@@ -1,5 +1,5 @@
 --- 
-title: "AddLargeGalleryViewOperation resource type"
+title: "adLargeGalleryViewOperation resource type"
 description: "Describes the response format of adding Large Gallery view operation."
 author: "navali-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# AddLargeGalleryViewOperation resource type
+# addLargeGalleryViewOperation resource type
 
 Namespace: microsoft.graph
 
@@ -20,12 +20,13 @@ Describes the response format of enabling Large Gallery view operation.
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The server operation ID. Read-only.                                                                                             |
+| id                             | String                      | The ID for the server operation. Read-only.                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
-None
+
+None.
 
 ## JSON representation
 
@@ -43,7 +44,7 @@ The following is a JSON representation of the resource.
   "clientContext": "String",
   "id": "String (identifier)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
-  "status": "notStarted | running | completed | failed"
+  "status": "String"
 }
 ```
 

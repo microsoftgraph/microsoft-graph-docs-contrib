@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported        |
-| Delegated (personal Microsoft account) | Not Supported        |
-| Application     | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All or Calls.InitiateGroupCalls.All                       |
+| Delegated (work or school account)     | Not supported.       |
+| Delegated (personal Microsoft account) | Not supported.       |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All                       |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,28 +35,27 @@ POST /communications/calls/{id}/addLargeGalleryView
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                |
+|:--------------|:---------------------------|
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+In the request body, provide a JSON object with the following parameter.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Unique client context string. Can have a maximum of 256 characters. |
+| clientContext  | String  | Unique client context string that can have a maximum of 256 characters. |
 
 ## Response
 If successful, this method returns `202 ACCEPTED` response code.
 
-## Example
+## Examples
 The following example shows how to call this API.
 
-##### Request
-The following example shows the request.
+### Request
+The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-addLargeGalleryView"
@@ -70,10 +69,11 @@ Content-Length: 46
   "clientContext": "785f4929-92ca-497b-863f-c778c77c9758"
 }
 ```
----
 
 
-##### Response
+### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
