@@ -10532,7 +10532,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalDomainName",
           "ChangeType": "Addition",
-          "Description": "Added the [externalDomainName](https://docs.microsoft.com/en-us/graph/api/resources/externalDomainName?view=graph-rest-1.0) resource",
+          "Description": "Added the [externalDomainName](https://docs.microsoft.com/en-us/graph/api/resources/externalDomainName?view=graph-rest-1.0) resource.",
           "Target": "externalDomainName"
         },
         {
@@ -10540,7 +10540,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "samlOrWsFedExternalDomainFederation",
           "ChangeType": "Addition",
-          "Description": "Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-1.0) resource",
+          "Description": "Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-1.0) resource and related methods. Use this resource to federate with an external organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. ",
           "Target": "samlOrWsFedExternalDomainFederation"
         },
         {
@@ -10548,7 +10548,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "samlOrWsFedProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [samlOrWsFedProvider](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedProvider?view=graph-rest-1.0) resource",
+          "Description": "Added the [samlOrWsFedProvider](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedProvider?view=graph-rest-1.0) resource.",
           "Target": "samlOrWsFedProvider"
         }
       ],
