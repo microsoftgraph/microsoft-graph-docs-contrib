@@ -36,10 +36,9 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Update column values][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get the documentSetVersion resources from the documentSetVersions navigation property.|
-|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new documentSetVersion object.|
-|[Restore documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new documentSetVersion object.|
-
+|[List documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+|[Restore documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
