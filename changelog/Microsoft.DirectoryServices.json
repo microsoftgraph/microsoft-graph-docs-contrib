@@ -10513,7 +10513,7 @@
       "ChangeList": [
         {
           "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "authenticationProtocol",
           "ChangeType": "Addition",
           "Description": "Added the **authenticationProtocol** enumeration type.",
