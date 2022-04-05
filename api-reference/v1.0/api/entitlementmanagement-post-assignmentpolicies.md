@@ -139,6 +139,9 @@ The following example shows a more complex policy with two stages of approval.
 }
 -->
 ```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
+Content-Type: application/json
+
 {
     "displayName": "policy for external access requests",
     "description": "policy for users from connected organizations to request access, with two stages of approval.",
