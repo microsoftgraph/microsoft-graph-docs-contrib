@@ -36,6 +36,9 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Update column values][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
+|[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get the documentSetVersion resources from the documentSetVersions navigation property.|
+|[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new documentSetVersion object.|
+|[Restore documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new documentSetVersion object.|
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -113,7 +116,8 @@ The following properties are inherited from **[baseItem][]**.
 | Relationship | Type                           | Description                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
-| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.                                  |
+| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
+|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for user created document set version.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
 | versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
