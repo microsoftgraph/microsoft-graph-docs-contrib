@@ -1,6 +1,6 @@
 ---
 title: "call: addLargeGalleryView"
-description: "Add Large Gallery view in a call."
+description: "Add the large gallery view to a call."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add Large Gallery view in a call.
+Add the large gallery view to a call.
 
-For more information about how to handle Large Gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
+For more information about how to handle large gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not supported.       |
 | Delegated (personal Microsoft account) | Not supported.       |
-| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All                       |
+| Application     | Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All                       |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,33 +35,31 @@ POST /communications/calls/{id}/addLargeGalleryView
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description                |
-|:--------------|:---------------------------|
-| Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/json. Required.|
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, provide a JSON object with the following parameter.
+In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Unique client context string that can have a maximum of 256 characters. |
+| clientContext  | String  | Unique client context string. Can have a maximum of 256 characters. |
 
 ## Response
 If successful, this method returns `202 ACCEPTED` response code.
 
-## Examples
-The following example shows how to call this API.
+## Example
 
 ### Request
-The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-addLargeGalleryView"
+  "name": "call-addLargeGalleryView-1"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/addLargeGalleryView
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/addLargeGalleryView
 Content-Type: application/json
 Content-Length: 46
 
@@ -72,8 +70,6 @@ Content-Length: 46
 
 
 ### Response
-
-The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -114,10 +110,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d",
       "resourceData": {
         "@odata.type": "#microsoft.graph.addLargeGalleryViewOperation",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d",
         "clientContext": "785f4929-92ca-497b-863f-c778c77c9758",
         "status": "completed"
       }
@@ -126,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-## Identifying Large Gallery view application from the roster and subscribing to the video feed
+## Identifying large gallery view application from the roster and subscribing to the video feed
 
-Following is an example of Roster when Large Gallery View is successfully added to the call
+Following is an example of a Roster when the large gallery View is successfully added to the call
 
 <!-- {
   "blockType": "example",
@@ -442,7 +438,7 @@ Following is an example of Roster when Large Gallery View is successfully added 
 }
 ```
 
-The Large Gallery view applications can be identified by using the following pointers:
+The large gallery view applications can be identified by using the following pointers:
 
 - The ApplicationType of the participant will be set as 'LargeGallery-V2'.
 - The video media stream direction will be set to 'sendReceive'.

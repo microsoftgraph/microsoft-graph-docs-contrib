@@ -1,6 +1,6 @@
 --- 
-title: "adLargeGalleryViewOperation resource type"
-description: "Describes the response format of adding Large Gallery view operation."
+title: "AddLargeGalleryViewOperation resource type"
+description: "Describes the response format for an operation that adds the large gallery view."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the response format of enabling Large Gallery view operation.
+Describes the response format for an operation that adds the large gallery view.
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The ID for the server operation. Read-only.                                                                                             |
+| id                             | String                      | The ID of the server operation. Read-only.                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| status                         | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
 
