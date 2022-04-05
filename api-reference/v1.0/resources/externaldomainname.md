@@ -1,6 +1,6 @@
 ---
 title: "externalDomainName resource type"
-description: "Domain name of the external organization an Azure Active Directory (Azure AD) tenant acting as the resource tenant is trying to set up federation with."
+description: "Domain name of the external organization that an Azure Active Directory (Azure AD) tenant acting as the resource tenant is federating with."
 author: "namkedia"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
