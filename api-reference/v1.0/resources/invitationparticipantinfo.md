@@ -35,7 +35,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "replacesCallId": "String"
+  "replacesCallId": "String",
+  "participantId": "String"
 }
 ```
 
