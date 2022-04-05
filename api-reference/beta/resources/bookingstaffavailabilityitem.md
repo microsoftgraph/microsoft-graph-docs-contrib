@@ -18,7 +18,7 @@ Returns the available and busy slots of staff members.
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
 |staffId |String |The ID of the staff member.|
-|availabilityItems |Collection of availabilityItem |Collection of availabilityItem. Each item indicates a slot and the status of the staff member.|
+|availabilityItems |[availabilityItem](bookingavailability.md) |Collection of availabilityItem. Each item indicates a slot and the status of the staff member.|
 
 ## JSON representation
 
