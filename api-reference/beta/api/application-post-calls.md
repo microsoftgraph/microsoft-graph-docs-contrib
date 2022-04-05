@@ -1239,7 +1239,7 @@ The following shows an example that requires a **joinMeetingId** but doesn't req
 
 #### Request
 <!-- {
-  "blockType": "reqeust",
+  "blockType": "request",
   "name": "join-meeting-with-join-meeting-id-and-without-passcode",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -1727,8 +1727,7 @@ Content-Type: application/json
         "displayName": "Guest User",
         "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
       }
-    }
-  },
+    },
     "region": null,
     "languageId": null
   },
