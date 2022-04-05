@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [callOptions](https://docs.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-beta) resource.",
+          "Target": "callOptions"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outgoingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [outgoingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/outgoingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "outgoingCallOptions"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incomingCallOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [incomingCallOptions](https://docs.microsoft.com/en-us/graph/api/resources/incomingCallOptions?view=graph-rest-beta) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentSharingSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentSharingSession](https://docs.microsoft.com/en-us/graph/api/resources/contentSharingSession?view=graph-rest-beta) resource and supported methods.",
+          "Target": "contentSharingSession"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Property",
+          "ChangedApiName": "callOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **callOptions** property to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        },
+        {
+          "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "contentSharingSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentSharingSessions** relationship to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "c1eed465-f9bf-4a63-84c5-87dd66c72318",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-04T06:24:28.2066497Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac9d4374-002f-4be5-9c45-ae246ec65191",
           "ApiChange": "Property",
           "ChangedApiName": "registrantId",
