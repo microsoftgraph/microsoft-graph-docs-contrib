@@ -5022,8 +5022,6 @@ items:
               href: resources/socialidentityprovider.md
             - name: Apple identity provider type
               href: resources/applemanagedidentityprovider.md
-            - name: OpenID Connect identity provider type
-              href: resources/openidconnectidentityprovider.md
             - name: List available identity providers
               href: api/identityproviderbase-availableprovidertypes.md
             - name: List configured identity providers
