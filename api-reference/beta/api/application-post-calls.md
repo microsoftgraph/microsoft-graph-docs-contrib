@@ -459,18 +459,16 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 
 ##### Request
 
-```http
-POST https://graph.microsoft.com/beta/communications/calls
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "request",
   "@odata.type": "microsoft.graph.call",
   "name": "create-group-call-service-hosted-media"
 }-->
 
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -534,7 +532,6 @@ Content-Type: application/json
 } -->
 
 ```http
-
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -606,18 +603,16 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 
 ##### Request
 
-```http
-POST https://graph.microsoft.com/beta/communications/calls
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "request",
   "@odata.type": "microsoft.graph.call",
   "name": "create-group-call-app-hosted-media"
 }-->
 
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -682,7 +677,6 @@ Content-Type: application/json
 } -->
 
 ```http
-
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -1169,7 +1163,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.call"
 }-->
 
-````http
+```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -1238,7 +1232,7 @@ Content-Type: application/json
   "meetingCapability": null,
   "toneInfo": null
 }
-````
+```
 
 ### Example 7: Join a scheduled meeting with joinMeetingId
 The following shows an example that requires a **joinMeetingId** but doesn't require a **passcode** to join an existing meeting. You can retrieve the **joinMeetingId** property from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
@@ -1290,7 +1284,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.call"
 }-->
 
-````http
+```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -1359,7 +1353,7 @@ Content-Type: application/json
   "meetingCapability": null,
   "toneInfo": null
 }
-````
+```
 
 ### Example 8: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
@@ -1417,7 +1411,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.call"
 }-->
 
-````http
+```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -1485,7 +1479,7 @@ Content-Type: application/json
   "meetingCapability": null,
   "toneInfo": null
 }
-````
+```
 
 ### Example 9: Join channel meeting with service hosted media
 Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
@@ -1712,8 +1706,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.call"
 }-->
 
-````http
-
+```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
@@ -1791,7 +1784,7 @@ Content-Type: application/json
   "meetingCapability": null,
   "toneInfo": null
 }
-````
+```
 
 ##### Notification - roster
 
