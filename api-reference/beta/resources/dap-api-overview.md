@@ -1,6 +1,6 @@
 ---
 title: "Delegated admin privileges (DAP) API overview"
-description: "Delegated admin privileges allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access to partners."
+description: "Delegated admin privileges allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 As part of the Microsoft Partner Center ecosystem, Microsoft partners in the Cloud Solution Provider, Value Added Reseller, or Advisor programs can perform administrative operations on their customer tenants to help manage the customer's services, for example, Azure AD and Microsoft 365. This capability previously allowed partners to assume a Global Administrator role in the customer tenant indefinitely, creating potential security exposures and limiting market potential.
 
-Delegated admin privileges (DAP) provides partners with least-privileged access following the [Zero Trust cybersecurity model](/security/zero-trust/). Through DAP, partners configure and request granular and time-bound access to their customers' environments, and customers must explicitly grant this least-privileged access to partners. In addition, partners must specify specific roles for customer tenant administration for a definite amount of time. This control eliminates the need for partners to have the Global Administrator role in their customer's tenant but rather, they now have lesser privileged permissions that they absolutely need.
+**Delegated admin privileges (DAP)** provides partners with least-privileged access to their customer tenants following the [Zero Trust cybersecurity model](/security/zero-trust/). Through DAP, partners configure and request granular and time-bound access to their customers' environments, and customers must explicitly grant this least-privileged access to partners. In addition, partners must request specific roles for customer tenant administration for a definite amount of time. This control eliminates the need for partners to have the Global Administrator role in their customer's tenant but rather, they now have lesser privileged permissions that they absolutely need for delegated administrative tasks.
 
 For more information about DAP, see:
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
@@ -28,7 +28,7 @@ For more information about DAP, see:
 | Use cases | APIs |
 |--|--|
 | Create a new delegated admin relationship for approval by any customer <br/> Create a new delegated admin relationship for approval by a specific customer | [Create delegatedAdminRelationship](../api/tenantrelationship-post-delegatedadminrelationships.md) |
-| List all delegated admin relationships of a partner <br/> List all delegated admin relationships for a specific customer | [List delegatedAdminRelationships](../api/tenantrelationship-list-delegatedadminrelationships.md) //Which properties support $filter? What's the syntax? They weren't filled out in the API.md> |
+| List all delegated admin relationships of a partner <br/> List all delegated admin relationships for a specific customer | [List delegatedAdminRelationships](../api/tenantrelationship-list-delegatedadminrelationships.md) |
 | Get a delegated admin relationship by ID | [Get delegatedAdminRelationship](../api/delegatedadminrelationship-get.md)  |
 | Delete delegated admin relationship | [Delete delegatedAdminRelationship](../api/delegatedadminrelationship-delete.md) |
 
