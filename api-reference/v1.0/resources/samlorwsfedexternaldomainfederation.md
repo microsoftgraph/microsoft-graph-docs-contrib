@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A resource that allows an Azure Active Directory (Azure AD) tenant to set up federation with another organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. This enables the Azure AD tenant to allow guest users to access its resources. For more information on SAML/WS-Fed IdP federation, see [Federation with SAML/WS-Fed identity providers for guest users](/azure/active-directory/external-identities/direct-federation).
+Allows an Azure Active Directory (Azure AD) tenant to federate with an external organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. This enables the Azure AD tenant to allow guest users to access its resources. For more information on SAML or WS-Fed IdP federation, see [Federation with SAML or WS-Fed identity providers for guest users](/azure/active-directory/external-identities/direct-federation).
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 
