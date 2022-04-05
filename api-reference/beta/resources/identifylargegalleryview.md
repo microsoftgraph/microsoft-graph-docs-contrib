@@ -340,6 +340,7 @@ The following example and guidance can help identify the application which can b
 
 <!-- {
   "blockType": "example",
+  "truncated": true,
   "@odata.type": "microsoft.graph.participant"
 }-->
 ```json
