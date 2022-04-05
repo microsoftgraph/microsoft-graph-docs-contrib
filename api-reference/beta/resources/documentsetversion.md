@@ -30,7 +30,7 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | **comment** | string | Comment about the captured version.
-| **createdBy**   | [IdentitySet][] | User who captured the version.
+| **createdBy**   | [IdentitySet](../resources/identitySet.md) | User who captured the version.
 | **createdDateTime**     | DateTime | Date when this version was created.
 | **items**       | Collection([documentSetVersionItem](../resources/documentSetVersionItem.md)) | Items within the document set that are captured as part of this version.
 | **shouldCaptureMinorVersion** | boolean  | If 'true' minor versions of items are also captured otherwise only major versions will be captured. Is 'False' by default.
