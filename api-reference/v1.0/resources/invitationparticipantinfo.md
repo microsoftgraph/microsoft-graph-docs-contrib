@@ -18,7 +18,8 @@ This resource is used to represent the entity that is being invited to a group c
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
-| replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. This call will be dropped once the participant is added. |
+| replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully. |
+| participantId                      | String                        | Optional. The id of the target participant.                                          |
 
 ## JSON representation
 
