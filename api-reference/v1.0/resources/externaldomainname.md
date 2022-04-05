@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the domain name of the external organization that an Azure Active Directory (Azure AD) tenant acting as the resource tenant is trying to set up federation with.
+Represents the domain name of the external organization that an Azure Active Directory (Azure AD) tenant acting as the resource tenant is federating with.
 
 Inherits from [entity](../resources/entity.md).
 
