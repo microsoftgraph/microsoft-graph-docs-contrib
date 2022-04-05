@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.documentSetVersion",
-  "baseType": "oneDrive.listItemVersion",
+  "baseType": "microsoft.graph.listItemVersion",
   "openType": false
 }
 -->

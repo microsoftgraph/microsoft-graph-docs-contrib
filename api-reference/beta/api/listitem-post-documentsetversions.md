@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [document
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_documentsetversion_from_"
+  "name": "create_documentsetversion"
 }
 -->
 ``` http
@@ -80,7 +80,7 @@ Content-length: 70
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.documentSetVersion"
+  "@odata.type": "microsoft.graph.documentSetVersion"
 }
 -->
 ``` http

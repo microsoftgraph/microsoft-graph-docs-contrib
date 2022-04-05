@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(oneDrive.documentSetVersion)"
+  "@odata.type": "Collection(microsoft.graph.documentSetVersion)"
 }
 -->
 ``` http
