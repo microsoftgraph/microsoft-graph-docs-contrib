@@ -45,13 +45,13 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the accessPackageAssignmentPolicy, and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
+For an administrator to request to create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **assignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **assignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **assignment** property contains an object with the `targetId` with the `id` of the user. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
-For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the accessPackageAssignmentPolicy. The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **assignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
@@ -190,6 +190,52 @@ Content-type: application/json
     "requestType": "AdminRemove",
     "requestState": "Submitted",
     "requestStatus": "Accepted"
+}
+```
+
+### Example 3: Request an assignment
+
+The following example shows how a user can request an access package assignment for themselves.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "userAdd",
+    "assignment": {
+        "accessPackageId": "d7be3253-b9c6-4fab-adef-30d30de8da2b"
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/assignmentRequests/$entity",
+    "id": "724bc62d-90ff-48f3-903f-b59ec8453343",
+    "requestType": "userAdd",
+    "state": "submitted"
 }
 ```
 
