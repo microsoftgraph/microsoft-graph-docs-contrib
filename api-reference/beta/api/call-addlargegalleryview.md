@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Add the large gallery view to a call.
 
-For more information about how to handle large gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
+For more information about how to handle a large gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,25 +35,27 @@ POST /communications/calls/{id}/addLargeGalleryView
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                |
+|:--------------|:---------------------------|
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
+In the request body, provide a JSON object with the following parameter.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Unique client context string. Can have a maximum of 256 characters. |
+| clientContext  | String  | Unique client context string that can have a maximum of 256 characters. |
 
 ## Response
-If successful, this method returns `202 ACCEPTED` response code.
+If successful, this method returns a `202 Accepted` response code and an [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md) object in the response body.
 
 ## Example
 
 ### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "call-addLargeGalleryView-1"
@@ -68,14 +70,15 @@ Content-Length: 46
 }
 ```
 
-
 ### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "name": "call-addLargeGalleryView",
+  "name": "call-addLargeGalleryView-1"
   "truncated": true,
   "@odata.type": "microsoft.graph.addLargeGalleryViewOperation"
 } -->
@@ -92,7 +95,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 }
 ```
 
-##### Notification - operation completed
+### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls

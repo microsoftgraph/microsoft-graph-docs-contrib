@@ -1,5 +1,5 @@
 --- 
-title: "AddLargeGalleryViewOperation resource type"
+title: "addLargeGalleryViewOperation resource type"
 description: "Describes the response format for an operation that adds the large gallery view."
 author: "navali-msft"
 ms.localizationpriority: medium
