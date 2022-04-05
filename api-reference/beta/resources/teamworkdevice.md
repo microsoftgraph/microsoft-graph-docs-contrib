@@ -19,7 +19,7 @@ Microsoft Teams-enabled devices are Teams-certified collaboration devices. They 
 
 For more details, see [Manage your devices in Microsoft Teams.](/microsoftteams/devices/device-management)
 >**Note**:
-> This does not include mobile phones, laptops, computers, tabs, etc.
+> This does not include mobile phones, laptops, computers, tabs, and so on.
 
 Inherits from [entity](../resources/entity.md).
 
