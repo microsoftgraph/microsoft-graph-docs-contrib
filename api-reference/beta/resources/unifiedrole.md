@@ -3,7 +3,7 @@ title: "unifiedRole resource type"
 description: "The directory roles that can be assigned to a Microsoft partner through a delegated admin relationship."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
 ---
 
