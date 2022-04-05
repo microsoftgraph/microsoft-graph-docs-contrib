@@ -22,7 +22,7 @@ Inherits from [meetingInfo](../resources/meetinginfo.md).
 | Property                | Type    | Description                                                   |
 | :---------------------- | :------ | :------------------------------------------------------------ |
 | joinMeetingId           | String  | The ID used to join the meeting.                              |
-| passcode                | String  | The passcode used to join the meeting. Optional.                 |
+| passcode                | String  | The passcode used to join the meeting. Optional.              |
 
 ## JSON representation
 

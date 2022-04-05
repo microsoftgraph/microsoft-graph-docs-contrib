@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                                                                           |
-| Delegated (personal Microsoft account) | Not Supported                                                                           |
-| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Delegated (work or school account)     | Not supported.                                                                          |
+| Delegated (personal Microsoft account) | Not supported.                                                                          |
+| Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
 > **Notes:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
 >
@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
-##### Request
+#### Request
 
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -219,7 +219,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -250,7 +250,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -287,7 +287,7 @@ Content-Type: application/json
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
-##### Request
+#### Request
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
@@ -366,7 +366,7 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
+`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS session information should be passed here.
 
 The following is an example of an audio media session blob.
 
@@ -376,7 +376,7 @@ The following is an example of an audio media session blob.
 
 >**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -457,7 +457,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -520,7 +520,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -601,7 +601,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -665,7 +665,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -745,17 +745,16 @@ Content-Type: application/json
 
 ### Example 5: Join scheduled meeting with service hosted media
 
-To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
-This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
+To join the scheduled meeting we will need to get the thread ID, message ID, organizer ID and the tenant ID in which the meeting is scheduled.
+This information can be obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
+The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "join-meeting-service-hosted-media",
@@ -829,7 +828,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -917,7 +916,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -967,7 +966,7 @@ Content-Type: application/json
 
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1016,7 +1015,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster
+#### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1482,13 +1481,13 @@ Content-Type: application/json
 ```
 
 ### Example 9: Join channel meeting with service hosted media
-Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
+Meeting inside a channel requires specific details like thread ID, message ID, and organizer details that can be obtained using the [Get onlineMeeting](../api/onlinemeeting-get.md) API.
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
+The values of authorization token, callback url, application ID, application name, user ID, user name and tenant ID must be replaced along with the details obtained from the [Get onlineMeeting](../api/onlinemeeting-get.md) API with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -1540,7 +1539,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -1633,7 +1632,7 @@ The display name is the name you want to be displayed in the meeting for your gu
 
 > **Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -1698,7 +1697,7 @@ Content-Type: application/json
 
 > **Note:** The guest join depends on the tenant settings for meeting. The application might be put in lobby waiting to be admitted by a user. This is defined by the `isInLobby` property
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -1785,7 +1784,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster
+#### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1927,6 +1926,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
+  "name": "create-call-service-hosted-media-2",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
@@ -2096,6 +2096,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
+  "name": "create-call-service-hosted-media-3",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
