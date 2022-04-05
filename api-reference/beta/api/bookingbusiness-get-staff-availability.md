@@ -1,5 +1,5 @@
 ---
-title: "Get staffAvailability"
+title: "getStaffAvailability"
 description: "Learn how to get the availability information of staff members of a Booking Calendar."
 ms.localizationpriority: medium
 author: kwekua
@@ -7,7 +7,7 @@ ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
-# Get staffAvailability
+# getStaffAvailability
 
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
@@ -22,9 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendar.Read, Calendar.ReadWrite, Bookings.Read.All, Calendars.ReadWrite  |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
 
-```Get  /solutions/bookingBusinesses/{id}/getStaffAvailability
+<!-- { "blockType": "ignored" } -->
+```http
+Get /solutions/bookingBusinesses/{id}/getStaffAvailability
+
 ```
 
 #### Request body
