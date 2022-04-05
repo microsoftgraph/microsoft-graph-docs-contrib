@@ -29,7 +29,6 @@ SDKs are currently available for the following languages and platforms:
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
 - [PowerShell](/graph/powershell/get-started)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
-- [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
 ## Microsoft 365 developer subscription
 
