@@ -10521,10 +10521,10 @@
         },
         {
           "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "federationConfigurations",
           "ChangeType": "Addition",
-          "Description": "Added the **federationConfigurations** relationship to [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Description": "Added the **federationConfigurations** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
           "Target": "directory"
         },
         {
