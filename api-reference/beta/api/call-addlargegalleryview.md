@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Add the large gallery view to a call.
 
-For more information about how to handle a large gallery view operation, see [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md).
+For more information about how to identify the large gallery view participant, see [identifyLargeGalleryView](../resources/identifylargegalleryview.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +54,7 @@ If successful, this method returns a `202 Accepted` response code and an [addLar
 
 ### Request
 
-The following is an example shows how to add a large gallery view to the call. 
+The following example shows how to add a large gallery view to a call.
 
 <!-- {
   "blockType": "request",
