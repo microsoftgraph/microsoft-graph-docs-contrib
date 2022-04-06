@@ -81,7 +81,7 @@ The CSV file has the following headers for columns:
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
-## Example
+## Examples
 
 ### CSV
 
