@@ -411,6 +411,24 @@ The following API calls do not support installing apps that require [resource-sp
 - [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
+### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
+The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
+```
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
+
 ## Users
 
 ### Encode number (#) symbols in userPrincipalName
