@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-title: Update a bundle
-description: Update a bundle of driveItems
+author: "JeremyKelley"
+title: "Update bundle"
+description: "Update a bundle of driveItems"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -68,7 +68,7 @@ This example renames a bundle.
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 Content-Type: application/json
 
 {
