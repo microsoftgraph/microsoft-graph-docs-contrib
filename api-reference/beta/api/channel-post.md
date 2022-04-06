@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
 > [!IMPORTANT]
-> Shared channels are currently in public preview status. To gain access to this API, you must turn on the targeted release option in your tenant. See more details on the [Shared channels in Microsoft Teams (Preview)](/microsoftteams/shared-channels).
+> Shared channels are currently in public preview status. During this time, the Microsoft Graph API to create a shared channel is available to a limited audience. We recommend creating shared channels in the Teams client and using Microsoft Graph APIs to manage them. For details about how to enable shared channels in the Teams client, see [Shared channels in Microsoft Teams (Preview)](/microsoftteams/shared-channels).
 
 
 ## Permissions
