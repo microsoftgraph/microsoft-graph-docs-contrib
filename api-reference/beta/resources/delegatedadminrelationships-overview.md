@@ -23,6 +23,8 @@ For more information about DAP, see:
 
 ## Use cases for delegated admin APIs
 
+This section describes the ways that Microsoft partners can programmatically manage delegated admin relationships for their customers.
+
 ### Delegated admin relationship
 
 | Use cases | APIs |
