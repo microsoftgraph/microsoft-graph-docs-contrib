@@ -36,7 +36,7 @@ GET /reports/getTeamsTeamActivityDetail(period='D7')
 
 ## Function parameters
 
-In the request URL, provide the following parameter with a valid value.
+In the request URL, provide the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -87,7 +87,7 @@ The CSV file has the following headers for columns:
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
-## Example
+## Examples
 
 ### CSV
 
