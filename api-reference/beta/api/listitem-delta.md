@@ -81,29 +81,11 @@ Here is an example of the initial request, how to call this API to establish you
 
 Here is an example of the initial request.
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_listItem_delta_first" } -->
 
-```msgraph-interactive
+```
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-listItem-delta-first-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-listItem-delta-first-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-listItem-delta-first-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-listItem-delta-first-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -158,29 +140,11 @@ Here is an example of the last page in a set, how to call this API to update you
 
 Here is an example request after the initial request.
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
-```msgraph-interactive
+```
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-listItem-delta-last-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-listItem-delta-last-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-listItem-delta-last-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-listItem-delta-last-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -243,29 +207,11 @@ To retrieve the latest deltaLink, call `delta` with a query string parameter `?t
 GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
 ```
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
 
-```msgraph-interactive
+```
 GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-latest-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

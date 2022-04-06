@@ -24,17 +24,18 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 The following tasks are available for **listItem** resources.
 All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
 
-| Common task                    | HTTP method
-|:-------------------------------|:------------------------
-| [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Get analytics][]              | GET /items/{item-id}/analytics
-| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
+| Common task                    | HTTP method                                  |
+| :----------------------------- | :------------------------------------------- |
+| [Get][]                        | GET /items/{item-id}                         |
+| [Get column values][Get]       | GET /items/{item-id}?expand=fields           |
+| [Get analytics][]              | GET /items/{item-id}/analytics               |
+| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval |
+| [Create][]                     | POST /items                                  |
+| [Delete][]                     | DELETE /items/{item-id}                      |
+| [Update][]                     | PATCH /items/{item-id}                       |
+| [Update column values][Update] | PATCH /items/{item-id}/fields                |
+| [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
 | [List changes for all Items in the List][item-changes]    | GET /items/{item-id}/delta
-| [Create][]                     | POST /items
-| [Delete][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -42,6 +43,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[CreateLink]: ../api/listitem-createlink.md
 [item-changes]: ../api/listitem-delta.md
 
 ## JSON representation
