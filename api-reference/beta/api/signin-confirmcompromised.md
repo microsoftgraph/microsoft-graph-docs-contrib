@@ -1,6 +1,6 @@
 ---
 title: "signIn: confirmCompromised"
-description: "Allows you to mark Azure AD log events as risky for Azure AD Identity Protection."
+description: "Allows you to mark Azure AD sign in events as risky for Azure AD Identity Protection."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API allows admins to mark an event in the Azure AD logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky or can mark unflagged events as risky. To mark a sign-in as risky, include he requestID of the sign-in in the request body. If successful, this method returns a 204 No Content response code. It does not return anything in the response body.
+Allows admins to mark an event in the Azure AD sign in logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky or they can mark unflagged events as risky. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|requestIds|String collection|The requestIds of the events that should be marked risky for Azure AD Identity Protection.|
+|requestIds|String collection|The IDs of the sign in events that should be marked risky for Azure AD Identity Protection.|
 
 
 
@@ -65,7 +65,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/auditLogs/signIns/confirmCompromised
 Content-Type: application/json
-Content-length: 42
 
 {
   "requestIds": [
@@ -78,7 +77,6 @@ Content-length: 42
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
