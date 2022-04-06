@@ -36,8 +36,6 @@ This section describes the ways that Microsoft partners can programmatically man
 
 ### Delegated admin relationship request
 
-Both Microsoft partners and their customers can manage requests in delegated admin relationships.
-
 | Use cases | APIs |
 |--|--|
 | Create a delegated admin relationship request to lock a relationship for customer approval or terminate an existing relationship. | [Create requests](../api/delegatedadminrelationship-post-requests.md) |
@@ -73,9 +71,4 @@ Both Microsoft partners and their customers can manage requests in delegated adm
 
 ## Permissions
 
-To manage delegated admin relationships, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference).
-
-
-## License requirements
-
-//Any license requirements to use the DAP feature/APIs.
+To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [delegated admin privileges permissions](/graph/permissions-reference#delegated-admin-relationship-permissions).
