@@ -11151,7 +11151,7 @@ items:
           displayName: GDAP, Partner Center, CSP, VAR
           items:
           - name: Overview
-            href: resources/dap-api-overview.md
+            href: resources/delegatedadminrelationships-api-overview.md
           - name: Delegated admin relationships
             href: resources/delegatedadminrelationship.md
             items:
