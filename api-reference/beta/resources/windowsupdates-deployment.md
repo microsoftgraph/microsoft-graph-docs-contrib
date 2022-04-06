@@ -1,8 +1,8 @@
 ---
 title: "deployment resource type"
 description: "Represents the deployment of content to a set of devices."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

@@ -2,7 +2,7 @@
 title: "Delete legalHold"
 description: "Delete a legalHold object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
@@ -79,6 +79,14 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/leg
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-legalhold-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-legalhold-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

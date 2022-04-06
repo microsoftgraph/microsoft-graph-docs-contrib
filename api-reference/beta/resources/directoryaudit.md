@@ -2,7 +2,7 @@
 title: "directoryAudit resource type"
 description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (beta version)."
 author: "SarahBar"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
@@ -30,13 +30,14 @@ Represents the directory audit items and its collection.
 | activityDisplayName | String                                              | Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged, refer to [Azure Ad activity list](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | [keyValue](keyvalue.md) collection                  | Indicates additional details on the activity.                                                                                                                                                                                                                          |
 | category            | String                                              | Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management etc..)                                                                                                                                              |
-| correlationId       | GUID                                                | Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.                                                                                                                                    |
+| correlationId       | Guid                                                | Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.                                                                                                                                    |
 | id                  | String                                              | Indicates the unique ID for the activity.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indicates information about the user or app initiated the activity.                                                                                                                                                                                                    |
 | loggedByService     | String                                              | Indicates information on which service initiated the activity (For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.                                                          |
 | result              | operationResult                                              | Indicates the result of the activity. Possible values are: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | String                                              | Indicates the reason for failure if the **result** is `failure` or `timeout`.                                                                                                                                                                                              |
-| targetResources     | [targetResource](targetresource.md) collection      | Indicates information on which resource was changed due to the activity. Target Resource Type can be `User`, `Device`, `Directory`, `App`, `Role`, `Group`, `Policy` or `Other`.                                                                                                       |
+| targetResources     | [targetResource](targetresource.md) collection      | Information about the resource that changed due to the activity.  | 
+| userAgent | String | Type of user agent used by a user in the activity. |                                                                                                      
 
 ## Relationships
 None
@@ -66,7 +67,8 @@ Here is a JSON representation of the resource.
   "loggedByService": "String",
   "result": "string",
   "resultReason": "String",
-  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}]
+  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}],
+  "userAgent": "String"
 }
 ```
 

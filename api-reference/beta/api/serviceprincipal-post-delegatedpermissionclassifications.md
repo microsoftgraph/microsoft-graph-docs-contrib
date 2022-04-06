@@ -1,7 +1,7 @@
 ---
 title: "Create delegatedPermissionClassification"
 description: "Classify a permission by adding a delegatedPermissionClassification to the API's service principal."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "applications"
 author: "psignoret"
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
+|Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|Application | Policy.ReadWrite.PermissionGrant |
 
 ## HTTP request
 
@@ -84,6 +84,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-delegatedpermissionclassification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-create-delegatedpermissionclassification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

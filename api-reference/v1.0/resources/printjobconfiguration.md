@@ -2,7 +2,7 @@
 title: printJobConfiguration resource type
 description: A group of settings that a printer should use to print a job.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printJobConfiguration resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 A group of settings that a printer should use to print a job.
 

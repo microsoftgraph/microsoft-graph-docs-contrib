@@ -1,7 +1,7 @@
 ---
 title: "educationRubric resource type"
 description: "A grading rubric that can be attached to an assignment"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
 doc_type: "resourcePageType"
@@ -30,6 +30,7 @@ See [Education rubric overview](/graph/education-rubric-overview) for more infor
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the rubric.|
 |createdBy|[identitySet](identityset.md)|The user who created this resource.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |description|[itemBody](itembody.md)|The description of this rubric.|
@@ -59,6 +60,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "id": "String (identifier)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "description": {"@odata.type": "microsoft.graph.itemBody"},

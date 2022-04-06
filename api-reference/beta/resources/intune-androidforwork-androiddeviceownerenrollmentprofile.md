@@ -35,7 +35,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|The enrollment token type for an enrollment profile. Possible values are: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
@@ -43,9 +43,14 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |tokenCreationDateTime|DateTimeOffset|Date time the most recently created token was created.|
 |tokenExpirationDateTime|DateTimeOffset|Date time the most recently created token will expire.|
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
+|enrollmentTokenUsageCount|Int32|Total number of AOSP devices that have enrolled using the current token.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
+|wifiSsid|String|String that contains the wi-fi login ssid|
+|wifiPassword|String|String that contains the wi-fi login password|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
+|wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
 
 ## Relationships
 None
@@ -73,6 +78,7 @@ Here is a JSON representation of the resource.
   "tokenCreationDateTime": "String (timestamp)",
   "tokenExpirationDateTime": "String (timestamp)",
   "enrolledDeviceCount": 1024,
+  "enrollmentTokenUsageCount": 1024,
   "qrCodeContent": "String",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -81,7 +87,11 @@ Here is a JSON representation of the resource.
   },
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "wifiSsid": "String",
+  "wifiPassword": "String",
+  "wifiSecurityType": "String",
+  "wifiHidden": true
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Get OneNote content and structure with Microsoft Graph"
 description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 
@@ -14,10 +14,16 @@ To get OneNote content and structure, you send a GET request to the target endpo
 
 `GET ../onenote/pages/{id}`
 
-If the request is successful, Microsoft Graph returns a 200 HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
+If the request is successful, Microsoft Graph returns a `200 OK` HTTP status code and the entities or content that you requested. OneNote entities are returned as JSON objects that conform to the OData version 4.0 specification.
 
 By using query string options, you can filter your queries and improve performance.
 
+> [!NOTE]
+> If you're building a solution that supports one of the following scenarios, you will hit OneNote API limitations:
+> - Backup/restore OneNote sections
+> - Backup/restore OneNote notebooks
+> 
+> For backup and restore operations, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
 
 <a name="request-uri"></a>
 
@@ -599,7 +605,7 @@ Microsoft Graph supports the following OData operators and functions in **filter
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>
-  
+
 | String function | Example |  
 |------|------|   
 | contains | `contains(tolower(title),'spring')` |  

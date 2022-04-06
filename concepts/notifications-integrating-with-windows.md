@@ -1,7 +1,7 @@
 ---
 title: "Integrate your Windows UWP app with the client-side SDK for user notifications"
 description: "Integrate your Windows UWP app with user notifications client SDK."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "notifications"
 ---
 

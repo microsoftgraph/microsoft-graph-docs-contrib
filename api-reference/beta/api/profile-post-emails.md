@@ -1,7 +1,7 @@
 ---
 title: "Create itemEmail"
 description: "Create a new itemEmail."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -73,7 +73,6 @@ If successful, this method returns a `201 Created` response code and an [itemEma
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/emails
 Content-Type: application/json
-Content-length: 383
 
 {
   "address": "Innocenty.Popov@adventureworks.com",
@@ -93,6 +92,14 @@ Content-length: 383
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itememail-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-itememail-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-itememail-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

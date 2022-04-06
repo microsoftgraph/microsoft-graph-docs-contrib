@@ -1,7 +1,7 @@
 ---
 title: "deviceInfo resource type"
 description: "The deviceInfo type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"

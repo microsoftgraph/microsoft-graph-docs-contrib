@@ -1,7 +1,7 @@
 ---
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** "
-localization_priority: Priority
+ms.localizationpriority: high
 author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType

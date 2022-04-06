@@ -2,7 +2,7 @@
 title: "outlookItem resource type"
 description: "Here is a JSON representation of the resource"
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

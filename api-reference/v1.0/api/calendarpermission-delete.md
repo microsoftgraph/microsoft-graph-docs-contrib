@@ -1,13 +1,15 @@
 ---
 title: "Delete calendarPermission"
 description: "Delete calendarPermission."
-localization_priority: Normal
-author: "sochowdh"
+author: "Harini84"
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
 # Delete calendarPermission
+
+Namespace: microsoft.graph
 
 Delete calendarPermission.
 
@@ -44,7 +46,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -59,7 +61,6 @@ If successful, this method returns `204, No Content` response code. It does not 
 ### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,8 +87,15 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -111,4 +119,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

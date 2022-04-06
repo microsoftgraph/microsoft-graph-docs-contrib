@@ -1,7 +1,7 @@
 ---
 title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
@@ -82,7 +82,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 87
 
 {
   "name": "name-value",

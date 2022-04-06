@@ -2,7 +2,7 @@
 title: "userAttributeValuesItem resource type"
 description: "Used to populate the values for a user flow attribute within a user flow when there are multiple selections to choose from."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

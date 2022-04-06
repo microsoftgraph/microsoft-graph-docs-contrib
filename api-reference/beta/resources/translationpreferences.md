@@ -1,7 +1,7 @@
 ---
 title: "translationPreferences resource type"
 description: "A resource representing the user's translation settings preferences."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jasonbro"
 ms.prod: "users"
 doc_type: resourcePageType

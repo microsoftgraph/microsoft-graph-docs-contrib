@@ -1,7 +1,7 @@
 ---
 title: "Filter: clear"
 description: "Clear the filter on the given column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.prod: ""
@@ -78,9 +78,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -1,7 +1,7 @@
 ---
 title: "addIn resource type"
 description: "Here is a JSON representation of the resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"
@@ -36,9 +36,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "guid",
+  "id": "GUID",
   "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
-  "type": "string"
+  "type": "String"
 }
 
 ```

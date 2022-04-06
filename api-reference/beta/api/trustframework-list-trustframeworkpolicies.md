@@ -1,7 +1,7 @@
 ---
 title: "List trustFrameworkPolicies"
 description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "Nickgmicrosoft"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -79,6 +79,14 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-trustframeworks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-trustframeworks-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-trustframeworks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: "windowsDeploymentSettings resource type"
 description: "Settings controlling when and how the service deploys a Windows 10 update."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
 ---

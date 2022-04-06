@@ -1,9 +1,9 @@
 ---
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "users"
 author: "jpettere"
 ---
 

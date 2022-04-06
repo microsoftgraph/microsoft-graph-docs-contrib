@@ -2,7 +2,7 @@
 title: "teamsAppIcon resource type"
 description: "An icon associated with an app on Microsoft Teams."
 author: "jecha"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

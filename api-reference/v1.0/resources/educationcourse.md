@@ -2,7 +2,7 @@
 title: "educationCourse resource type"
 description: "Represents the course information for a class."
 author: "mlafleur"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---

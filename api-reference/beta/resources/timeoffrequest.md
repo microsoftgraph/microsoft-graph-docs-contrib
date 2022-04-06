@@ -1,7 +1,7 @@
 ---
 title: "timeOffRequest resource type"
 description: "Represents a type of shift request to take timeoff."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a type of shift request to take [timeoff](../resources/timeoff.md).
+Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
+| Method       | Return type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) collection | Get the list of **timeOffRequest** objects in this schedule.|
 | [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |

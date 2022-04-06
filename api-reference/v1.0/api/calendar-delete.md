@@ -2,7 +2,7 @@
 title: "Delete calendar"
 description: "Delete a calendar other than the default calendar."
 author: "harini84"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/v1.0/me/calendar
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,11 +49,11 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the Resource Operation. Read-only, automatically generated.|
-|resource|String|Resource category to which this Operation belongs.|
+|resource|String|Resource category to which this Operation belongs. This property is read-only.|
 |resourceName|String|Name of the Resource this operation is performed on.|
 |actionName|String|Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.|
 |description|String|Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.|
-|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment.|
+|enabledForScopeValidation|Boolean|Determines whether the Permission is validated for Scopes defined per Role Assignment. This property is read-only.|
 
 
 

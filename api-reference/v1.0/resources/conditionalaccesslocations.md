@@ -1,8 +1,8 @@
 ---
 title: "conditionalAccessLocations resource type"
 description: "Represents locations included in and excluded from the policy scope."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

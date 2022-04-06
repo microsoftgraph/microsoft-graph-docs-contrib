@@ -2,15 +2,13 @@
 title: List printJobs for a printer
 description: Retrieve a list of print jobs associated with the printer.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # List printJobs for a printer
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve a list of print jobs associated with the [printer](../resources/printer.md).
 

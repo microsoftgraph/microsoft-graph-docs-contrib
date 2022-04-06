@@ -2,7 +2,7 @@
 title: "Update educationAssignmentSettings"
 description: "Update the properties of an educationAssignmentSettings object."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -67,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
-Content-length: 114
 
 {
   "submissionAnimationDisabled": true
@@ -87,6 +86,14 @@ Content-length: 114
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignmentsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentsettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignmentsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

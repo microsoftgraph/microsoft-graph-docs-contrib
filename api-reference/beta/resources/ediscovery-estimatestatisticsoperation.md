@@ -2,7 +2,7 @@
 title: "estimateStatisticsOperation resource type"
 description: "Represents the operation that handles estimating the count and size of a source collection."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

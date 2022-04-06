@@ -1,7 +1,7 @@
 ---
 title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
 author: "dkershaw10"

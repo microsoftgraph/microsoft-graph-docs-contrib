@@ -1,7 +1,7 @@
 ---
 title: "trustFrameworkKey resource type"
 description: "Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "valnav"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

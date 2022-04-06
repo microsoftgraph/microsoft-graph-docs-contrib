@@ -1,7 +1,7 @@
 ---
 title: "Create outlookTask"
 description: "Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -64,7 +64,6 @@ The following example shows the use of the `Prefer: outlook.timezone` header. It
 POST https://graph.microsoft.com/beta/me/outlook/tasks
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 276
 
 {
   "subject": "Shop for children's weekend",
@@ -94,6 +93,14 @@ Content-length: 276
 [!INCLUDE [sample-code](../includes/snippets/java/create-outlooktask-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-outlooktask-from-outlookuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-outlooktask-from-outlookuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.
@@ -113,7 +120,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",

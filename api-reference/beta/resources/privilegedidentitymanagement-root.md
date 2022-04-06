@@ -1,25 +1,37 @@
 ---
 title: "Privileged Identity Management"
 description: "APIs for Azure AD Privileged Identity Management to manage Azure Active Directory roles and Azure resource roles."
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "governance"
-author: "shauliu"
+author: "japere"
 ---
 
-# Privileged Identity Management
+# Privileged Identity Management (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD, Azure resources, and other Microsoft Online Services like Microsoft 365 or Microsoft Intune. Microsoft Graph provides APIs that you can use to manage Azure AD roles and Azure resource roles.
+>[!CAUTION]
+>The Privileged Identity Management (PIM) API for **Azure AD roles** is deprecated and stopped returning data on May 31, 2021. Use the [role management](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) API and see the [migration guidance below](#migrate-from-pim-v2-to-pim-v3-apis).
+>
+>The Privileged Identity Management (PIM) API for **Azure resources** will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests). To migrate, see the migration guidance below.
 
-- [APIs for Azure AD roles](privilegedidentitymanagement-directory.md)
-- [APIs for Azure resource roles](privilegedidentitymanagement-resources.md)
+[Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This scope includes access to resources in Azure AD, Azure resources, and other Microsoft services like Microsoft 365 or Microsoft Intune.
 
-> [!IMPORTANT]
-> The API to manage Azure AD roles is deprecated for most tenants except for a few that use an older version of Privileged Identity Management (PIM). For more information about PIM versions, see [Determine your version of PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). If you are using the new version and are recieving a **TenantEnabledInAadRoleMigration** error, you can wait until a new API is available for PIM functionality under the [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) API for Azure AD roles, or you can use the [Azure Resource](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) API for your Azure AD roles. To use the **Azure resource** API, replace `azureResources` with `aadRoles` for `provider_id` and use your tenant id for `resource_id`. We recommend that you wait for the new API. You will be able to continue using the **Azure resource** API after the new API is available. Any new features made available in the Azure portal will also be made exclusively available through the new API.
+There have been several iterations of the PIM API over the past few years. This iteration is the second iteration (here referred to as PIM v2) and it's succeeded by PIM v3. For more information about the history of the PIM API, see [PIM API history](/azure/active-directory/privileged-identity-management/pim-apis#pim-api-history).
+
+Microsoft Graph provides the following PIM v2 APIs to manage Azure AD roles and Azure resource roles. We recommend that you migrate from PIM v2 to PIM v3.
+
+- [APIs for Azure AD roles](privilegedidentitymanagement-directory.md) (deprecated)
+- [APIs for Azure resources](privilegedidentitymanagement-resources.md)
+
+## Migrate from PIM v2 to PIM v3 APIs
+
+[!INCLUDE [pimv2AADRoles-migration](../../includes/pimv2AADRoles-migration.md)]
+
+[!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

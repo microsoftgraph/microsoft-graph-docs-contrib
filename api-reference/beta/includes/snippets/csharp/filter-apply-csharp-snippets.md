@@ -18,7 +18,7 @@ var criteria = new WorkbookFilterCriteria
 		Index = 99
 	},
 	DynamicCriteria = "dynamicCriteria-value",
-	Values = JToken.Parse("{}"),
+	Values = JsonDocument.Parse("{}"),
 	FilterOn = "filterOn-value"
 };
 

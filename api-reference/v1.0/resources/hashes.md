@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-localization_priority: Normal
+ms.localizationpriority: medium
 title: "Hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.prod: ""

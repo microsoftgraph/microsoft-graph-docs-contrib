@@ -21,7 +21,7 @@ const call = {
         '@odata.type': '#microsoft.graph.identity',
         displayName: 'Calling Bot',
         id: '3d913abb-aec0-4964-8fa6-3c6850c4f278'
-      },
+      }
     },
     countryCode: null,
     endpointType: null,
@@ -45,7 +45,8 @@ const call = {
   ],
   mediaConfig: {
     '@odata.type': '#microsoft.graph.serviceHostedMediaConfig'
-  }
+  },
+  tenantId: 'aa67bd4c-8475-432d-bd41-39f255720e0a'
 };
 
 await client.api('/communications/calls')

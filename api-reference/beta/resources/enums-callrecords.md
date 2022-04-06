@@ -2,7 +2,7 @@
 title: "Call records enum values"
 description: "Microsoft Graph call records enumeration values"
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 author: "gageames"
 ---
@@ -84,6 +84,7 @@ Namespace: microsoft.graph.callRecords
 | skypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### serviceRole values
 

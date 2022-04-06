@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
-localization_priority: Priority
+ms.localizationpriority: high
 author: "nmoreau"
 ms.prod: "search"
 doc_type: resourcePageType
@@ -28,6 +28,10 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
+|[Sort search results](#sort-search-results)| **sort** |
+|[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**|
 
 ## Scope search based on entity types
 
@@ -81,9 +85,9 @@ When searching an entity type, such as **message**, **event**, **drive**, **driv
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
-The **listItem** and **externalItem** entities are the only supported entities that allow getting extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
+The **listItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
 
-If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
+If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
 If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
@@ -98,6 +102,53 @@ Depending on the entity type, the searchable properties vary. For details, see:
 
 - [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+
+## Sort search results
+
+Search results in the response are sorted in the following default sort order:
+
+- **message** and **event** are sorted by date.
+- All SharePoint, OneDrive, person and connector types are sorted by relevance.
+
+The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
+
+Note that sorting results is currently only supported on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
+
+The properties on which the sort clause are applied need to be sortable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified in the request is not sortable or does not exist, the response will return an error, `HTTP 400 Bad Request`. Note that you cannot specify to sort documents by relevance using [sortProperty](sortproperty.md).
+
+When specifying the **name** of a [sortProperty](sortproperty.md) object, you can either use the property name from the Microsoft Graph type (for example, in [driveItem](driveitem.md)), or the name of the managed property in the search index.
+
+See [sort search results](/graph/search-concept-sort) for examples that show how to sort results.
+
+## Refine results using aggregations
+
+Aggregations (also known as refiners in SharePoint) are a very popular way to enhance a search experience. In addition to the results, they provide some level of aggregate information on the matching set of search results. For example, you can provide information on the most represented authors of the documents matching the query, or the most represented file types, etc.
+
+In the [searchRequest](./searchrequest.md), specify the aggregations that should be returned in addition to the search results. The description of each aggregation is defined in the [aggregationOption](./aggregationoption.md), which specifies the property on which the aggregation should be computed, and the number of [searchBucket](searchBucket.md) to be returned in the response.
+
+The properties on which the aggregation is requested need to be refinable in the SharePoint [search schema](/sharepoint/manage-search-schema). If the property specified is not refinable or does not exist, the response returns `HTTP 400 Bad Request`.
+
+Once the response is returned containing the collection of [searchBucket](searchBucket.md) objects, it is possible to refine the search request to only the matching elements contained in one [searchBucket](searchBucket.md). This is achieved by passing back the  **aggregationsFilterToken** value in the **aggregationFilters** property of the subsequent [searchRequest](./searchrequest.md).
+
+Aggregations are currently supported for any refinable property on the following SharePoint and OneDrive types: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md), and on Microsoft Graph connectors [externalItem](externalconnectors-externalitem.md).
+
+For examples that show how to use aggregation to enhance and narrow down search results, see [Refine search results](/graph/search-concept-aggregation).
+
+## Request spelling correction
+
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchResponse](searchresponse.md).
+
+In the request body of the [query](/graph/api/search-query) method, specify the **queryAlterationOptions** that should be applied to the query for the spelling corrections. The description of **queryAlterationOptions** is defined in the [searchRequest](./searchrequest.md).
+
+For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
+
+## Search display layout
+
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview) by using the display layout or the result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+
+To get the result template in the [searchResponse](searchresponse.md) you have to set the **enableResultTemplate** property to **true**, which is defined in the [resultTemplateOptions](./resulttemplateoption.md) in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [searchHit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is part of the response.
+
+For examples that show how to render search results, see [Use search display layout](/graph/search-concept-display-layout).
 
 ## Error handling
 
@@ -128,6 +179,10 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
+  - [Sort search results](/graph/search-concept-sort)
+  - [Refine search results](/graph/search-concept-aggregation)
+  - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

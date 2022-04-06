@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: List who has access to a file
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 description: "List the effective sharing permissions of on a driveItem."
 doc_type: apiPageType
@@ -66,8 +66,6 @@ Effective sharing permissions of a DriveItem can come from two sources:
 Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property.
 This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
 
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).
-
 ## Example
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
@@ -119,11 +117,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {

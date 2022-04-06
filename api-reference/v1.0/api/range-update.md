@@ -2,7 +2,7 @@
 title: "Update range"
 description: "Update the properties of range object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -66,7 +66,6 @@ Here is an example of the request. It updates a range - values, number-format an
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
-Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
@@ -90,7 +89,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

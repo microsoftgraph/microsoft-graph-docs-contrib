@@ -1,7 +1,7 @@
 ---
 title: "pageLinks resource type"
 description: "Links for opening a OneNote page."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType

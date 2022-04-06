@@ -2,7 +2,7 @@
 title: "Get authenticationFlowsPolicy"
 description: "Read the properties and relationships of an authenticationFlowsPolicy object."
 author: "linkhp"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -73,6 +73,14 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationflowspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationflowspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationflowspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

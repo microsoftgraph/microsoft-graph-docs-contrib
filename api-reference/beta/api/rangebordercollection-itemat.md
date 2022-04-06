@@ -2,7 +2,7 @@
 title: "RangeBorderCollection: ItemAt"
 description: "Gets a border object using its index"
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -64,7 +64,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt
 Content-type: application/json
-Content-length: 20
 
 {
   "index": {
@@ -88,7 +87,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 136
 
 {
   "id": "id-value",

@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Resumable file upload
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
@@ -92,6 +92,8 @@ The following example controls the behavior if the filename is already taken, an
 ### Request
 
 The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
+
+>**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -246,7 +248,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
-```
+```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
@@ -324,7 +326,7 @@ Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
-```
+```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 

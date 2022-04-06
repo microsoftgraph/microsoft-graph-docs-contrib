@@ -2,15 +2,13 @@
 title: Create printJob
 description: Create a new printJob for a printer. 
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Create printJob
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Create a new [printJob](../resources/printJob.md) for a [printer](../resources/printer.md). 
 
@@ -65,7 +63,6 @@ If successful, this method returns a `201 Created` response code and a [printJob
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

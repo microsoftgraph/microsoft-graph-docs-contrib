@@ -1,7 +1,7 @@
 ---
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) object.
+Add a strong password or secret to a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Application.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -40,7 +40,7 @@ POST /servicePrincipals/{id}/addPassword
 
 ## Request body
 
-In the request body, provide an optional `passwordCredential` object with the following properties.
+In the request body, provide an empty [passwordCredential](../resources/passwordcredential.md) object or with the following optional properties.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -92,12 +92,21 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addpassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addpassword-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-addpassword-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

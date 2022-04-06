@@ -2,7 +2,7 @@
 title: "localizedLabel resource type"
 description: "Represents the label for a term in the term store."
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "Sharepoint"
 doc_type: resourcePageType
 ---
@@ -21,7 +21,7 @@ Identifies the labels associated with a given term.
 |Property|Type|Description|
 |:---|:---|:---|
 |isDefault|Boolean|Indicates whether the label is the default label.|
-|languageTag|String|The anguage tag for the label.|
+|languageTag|String|The language tag for the label.|
 |name|String|The name of the label.|
 
 ## Relationships

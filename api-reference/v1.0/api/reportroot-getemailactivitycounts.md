@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getEmailActivityCounts"
 description: "Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

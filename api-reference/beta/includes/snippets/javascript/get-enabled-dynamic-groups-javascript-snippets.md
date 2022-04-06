@@ -12,8 +12,8 @@ const client = Client.init(options);
 
 let groups = await client.api('/groups')
 	.version('beta')
-	.filter('membershipRuleProcessingState eq \'On\'')
-	.select('id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus')
+	.filter('mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq \'Unified\')) and membershipRuleProcessingState eq \'On\'')
+	.select('id,membershipRule,membershipRuleProcessingState')
 	.get();
 
 ```

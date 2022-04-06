@@ -1,7 +1,7 @@
 ---
 title: "directoryDefinition resource type"
 description: "Provides the synchronization engine information about a directory and its objects."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

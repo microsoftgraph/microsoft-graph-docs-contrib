@@ -1,8 +1,8 @@
 ---
 title: "countryNamedLocation resource type"
 description: "Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -29,11 +29,12 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2. Required.|
+|countryLookupMethod|countryLookupMethodType|Determines what method is used to decide which country the user is located in. Possible values are `clientIpAddress`(default) and `authenticatorAppGps`. Note: `authenticatorAppGps` is not yet supported in the Microsoft Cloud for US Government.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
-|displayName|String|Human-readable name of the location. Inherited from [namedLocation](../resources/namedLocation.md).|
+|displayName|String|Human-readable name of the location. Required. Inherited from [namedLocation](../resources/namedLocation.md).|
 |id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location.|
+|includeUnknownCountriesAndRegions|Boolean|`true` if IP addresses that don't map to a country or region should be included in the named location. Optional. Default value is `false`.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
 
 ## Relationships
@@ -55,6 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "countriesAndRegions": ["String"],
+  "countryLookupMethod": "String",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
@@ -62,6 +64,12 @@ The following is a JSON representation of the resource.
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## See also
+
++ [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
++ [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -72,4 +80,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

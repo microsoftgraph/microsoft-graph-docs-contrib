@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getEmailActivityUserCounts"
 description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

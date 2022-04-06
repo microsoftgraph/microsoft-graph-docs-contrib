@@ -1,8 +1,8 @@
 ---
 title: "cloudPcOnPremisesConnectionStatusDetails resource type"
-description: "The status details of a cloud PC on-premises connection."
+description: "The status details of a Cloud PC Azure network connection."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The status details of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Properties
 

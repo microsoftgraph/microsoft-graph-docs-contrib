@@ -2,7 +2,7 @@
 title: "Create legalHold siteSource"
 description: "Create a new legalHold siteSource object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|site@odata.bind|String|ID of the site, which you can get from the [site](../resources/site.md) resource by using the [Get a site resource by path](../api/site-getbypath.md) method. The usage is {hostname}:/{relative-path}. For the site URL `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field.  For the OneDrive for business site URL `https://contoso-my.sharepoint.com/personal/adelev_contoso_com`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso-my.sharepoint.com:/personal/adelev_contoso_com` |
+|site|String|URL of the site; for example, `https://contoso.sharepoint.com/sites/HumanResources`.|
 
 ## Response
 
@@ -72,10 +72,11 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
-Content-length: 154
 
 {
-    "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
 }
 ```
 # [C#](#tab/csharp)
@@ -94,8 +95,18 @@ Content-length: 154
 [!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sitesource-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-sitesource-from--2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+
+---
 
 ### Response
 
@@ -112,14 +123,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2020-12-28T20:08:57.857Z",
-    "id": "50073f3e-cb22-48e5-95a9-51a3da455181",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/legalHolds('644db9d3-5a67-4ca0-aa1c-0cca02168875')/siteSources/$entity",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:17:31.687Z",
+    "id": "32443932-4343-3545-3339-373031353742",
     "createdBy": {
         "user": {
             "id": null,
-            "displayName": "EDiscovery admin"
+            "displayName": "Edisco Admin"
         }
     }
 }

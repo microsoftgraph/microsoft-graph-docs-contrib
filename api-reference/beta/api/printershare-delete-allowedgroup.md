@@ -2,7 +2,7 @@
 title: Delete allowedGroup from printerShare
 description: Revoke the specified group's access to submit print jobs to the associated printer share.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---

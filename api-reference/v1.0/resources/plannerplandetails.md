@@ -1,7 +1,7 @@
 ---
 title: "plannerPlanDetails resource type"
 description: "The **plannerPlanDetails** resource represents the additional information about a plan. Each plan object has a details object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

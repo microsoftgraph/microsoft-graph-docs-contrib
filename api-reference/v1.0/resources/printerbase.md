@@ -2,15 +2,13 @@
 title: printerBase resource type
 description: Represents base type for printer and printer share
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 # printerBase resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents a base type for [printer](printer.md) and [printerShare](printerShare.md) entity types.
 

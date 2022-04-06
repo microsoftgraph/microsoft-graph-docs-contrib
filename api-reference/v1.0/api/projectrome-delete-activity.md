@@ -1,7 +1,7 @@
 ---
 title: "Delete an activity"
 description: "Delete an existing user activity for your app."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "project-rome"
 author: "ailae"
 doc_type: apiPageType
@@ -48,9 +48,9 @@ If successful, this method returns the `204 No Content` response code if the act
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -78,12 +78,20 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-activity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-activity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

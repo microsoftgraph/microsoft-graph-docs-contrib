@@ -1,7 +1,7 @@
 ---
 title: "scoredEmailAddress resource type"
 description: "Represents a scored email address."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "AAmatino"
 ms.prod: ""
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "userFlowLanguagePage resource type"
 description: "Determines the strings that are shown to users during a user flow."
 author: "jkdouglas"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

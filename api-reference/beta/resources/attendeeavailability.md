@@ -1,7 +1,7 @@
 ---
 title: "attendeeAvailability resource type"
 description: "The availability of an attendee."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType

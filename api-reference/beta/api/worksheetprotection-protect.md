@@ -2,7 +2,7 @@
 title: "workbookWorksheetProtection: protect"
 description: "Protect a worksheet. It throws if the worksheet has been protected."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -60,7 +60,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
 Content-type: application/json
-Content-length: 383
 
 {
   "options": {
@@ -100,9 +99,7 @@ Content-length: 383
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -2,7 +2,7 @@
 title: "MuteParticipantOperation resource type"
 description: "Describes the response format of a call participant mute operation."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

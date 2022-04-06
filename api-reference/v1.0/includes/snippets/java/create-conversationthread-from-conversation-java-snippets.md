@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConversationThread conversationThread = new ConversationThread();
-conversationThread.topic = "topic-value";
+conversationThread.topic = "Take your wellness days and rest";
 LinkedList<Post> postsList = new LinkedList<Post>();
 Post posts = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.HTML;
-body.content = "this is body content";
+body.content = "Waiting for the summer holidays.";
 posts.body = body;
 postsList.add(posts);
 PostCollectionResponse postCollectionResponse = new PostCollectionResponse();

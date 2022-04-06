@@ -1,7 +1,7 @@
 ---
 title: "Azure AD synchronization API overview"
 description: "Automate the provisioning of identities from HR systems, Active Directory, and Azure Active Directory to cloud applications."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

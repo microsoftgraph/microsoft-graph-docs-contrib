@@ -1,9 +1,9 @@
 ---
 title: "Update member in team"
 description: "Update the role of member in a team."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
@@ -12,6 +12,9 @@ ms.prod: "microsoft-teams"
 Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
+
+> [!NOTE]
+> Team members with the role of `guest` cannot be given the role of `owner`.
 
 ## Permissions
 
@@ -86,6 +89,14 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/java/update-member-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-member-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-member-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -100,7 +111,6 @@ content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 475
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",

@@ -1,8 +1,8 @@
 ---
 title: "conditionalAccessUsers resource type"
 description: "Represents users, groups, and roles included in and excluded from the policy scope."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

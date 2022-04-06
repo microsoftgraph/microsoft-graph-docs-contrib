@@ -2,7 +2,7 @@
 title: "printJob: cancel"
 description: Cancel a print job.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -78,9 +78,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ### Response
 The following is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

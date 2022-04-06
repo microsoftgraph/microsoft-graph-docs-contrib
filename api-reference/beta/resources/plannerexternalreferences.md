@@ -1,7 +1,7 @@
 ---
 title: "plannerExternalReferences resource type"
 description: "The **plannerExternalReferences** resource represents the collection of references on a task. This is an Open Type. It is part of the task details object. The value in the property-value pair is the externalReference object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

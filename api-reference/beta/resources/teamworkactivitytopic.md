@@ -2,7 +2,7 @@
 title: "teamworkActivityTopic resource type"
 description: Represents the topic of an activity feed notification.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---

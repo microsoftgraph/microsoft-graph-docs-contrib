@@ -1,7 +1,7 @@
 ---
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
 author: "abheek-das"

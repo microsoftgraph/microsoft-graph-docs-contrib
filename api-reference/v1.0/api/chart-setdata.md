@@ -2,7 +2,7 @@
 title: "Chart: setData"
 description: "Resets the source data for the chart."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -59,7 +59,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
 Content-type: application/json
-Content-length: 70
 
 {
   "sourceData": "sourceData-value",

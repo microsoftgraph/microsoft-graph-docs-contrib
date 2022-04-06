@@ -2,7 +2,7 @@
 title: Get printSettings
 description: Retrieve tenant-wide settings for the Universal Print service.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get printSettings
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Retrieve tenant-wide settings for the Universal Print service.
 

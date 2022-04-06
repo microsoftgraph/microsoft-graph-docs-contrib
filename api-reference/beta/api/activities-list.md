@@ -3,7 +3,7 @@ author: daspek
 ms.date: 09/10/2017
 title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ""
 ---

@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let getrecentnotebooks = await client.api('/me/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)')
+let getRecentNotebooks = await client.api('/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)')
+	.version('beta')
 	.get();
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
@@ -60,7 +60,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 Content-type: application/json
-Content-length: 45
 
 {
   "locked": true,
@@ -95,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "locked": true,

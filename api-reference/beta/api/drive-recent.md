@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "List a set of items that have been recently used by the signed in user."
 ms.date: 09/10/2017
 title: List Recent Files
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete publishedResource"
 description: "Delete a [publishedResource](../resources/publishedresource.md) object."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "japere"
 ms.prod: "applications"
 doc_type: "apiPageType"

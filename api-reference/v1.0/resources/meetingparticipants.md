@@ -2,7 +2,7 @@
 title: "meetingParticipants resource type"
 description: "Participants in a meeting."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

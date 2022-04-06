@@ -1,19 +1,33 @@
 ---
 author: JeremyKelley
-description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
+description: The driveRecipient resource represents a person, group, or other recipient to share with using the invite action.
 ms.date: 09/10/2017
 title: DriveRecipient
-localization_priority: Normal
-ms.prod: "sharepoint"
+ms.localizationpriority: medium
+ms.prod: sharepoint
 doc_type: resourcePageType
 ---
-# DriveRecipient resource
+
+# driveRecipient resource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.
+Represents a person, group, or other recipient to share a drive item with using the [invite](../api/driveitem-invite.md) action.
+
+When using [invite](../api/driveitem-invite.md) to add permissions, the **driveRecipient** object can specify the **email**, **alias**, or **objectId** of the recipient.
+Only one of these values is required; multiple values are not accepted.
+
+## Properties
+
+The recipients resource has these properties.
+
+| Property | Type   | Description                                                                                             |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------ |
+| email    | String | The email address for the recipient, if the recipient has an associated email address.                  |
+| alias    | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
+| objectId | String | The unique identifier for the recipient in the directory.                                               |
 
 ## JSON representation
 
@@ -21,6 +35,7 @@ The **DriveRecipient** resource represents a person, group, or other recipient t
   "blockType": "resource", 
   "@odata.type": "microsoft.graph.driveRecipient", 
   "optionalProperties": ["alias", "objectId", "email"] } -->
+
 ```json
 {
   "email": "string",
@@ -28,20 +43,6 @@ The **DriveRecipient** resource represents a person, group, or other recipient t
   "objectId": "string",
 }
 ```
-
-## Properties
-The recipients resource has these properties.
-
-| Property name | Type   | Description                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
-| alias         | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
-| objectId      | String | The unique identifier for the recipient in the directory.                                               |
-
-## Remarks
-
-When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**.
-Only one of these values is required.
 
 <!--
 {
@@ -53,5 +54,3 @@ Only one of these values is required.
   "suppressions": []
 }
 -->
-
-

@@ -2,7 +2,7 @@
 title: "Education rubric overview"
 description: "Rubrics are an effective and widely-used way of grading assignments, and the education API in Microsoft Graph supports them."
 author: "mmast-msft"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "education"
 ---
 

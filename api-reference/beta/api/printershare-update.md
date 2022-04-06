@@ -2,7 +2,7 @@
 title: Update printershare
 description: Update the properties of printer share. This method can be used to "swap" printers.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -65,7 +65,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
-Content-length: 109
 
 {
   "displayName": "ShareName",
@@ -89,6 +88,14 @@ Content-length: 109
 [!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printershare-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printershare-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -102,7 +109,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

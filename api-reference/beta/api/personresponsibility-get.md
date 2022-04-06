@@ -2,7 +2,7 @@
 title: "Get personResponsibility"
 description: "Read the properties and relationships of a personResponsibility object."
 author: "kevinbellinger"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "people"
 doc_type: apiPageType
 ---

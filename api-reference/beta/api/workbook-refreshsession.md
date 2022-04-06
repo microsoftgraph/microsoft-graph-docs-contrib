@@ -2,7 +2,7 @@
 title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -55,7 +55,6 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/refreshSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 

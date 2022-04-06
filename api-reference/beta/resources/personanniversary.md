@@ -1,7 +1,7 @@
 ---
 title: "personAnniversary resource type"
 description: "personAnniversary resource type"
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

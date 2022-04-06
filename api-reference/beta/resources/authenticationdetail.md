@@ -1,7 +1,7 @@
 ---
 title: "authenticationDetail resource type"
 description: "Provides the authentication details for a user sign-in, such as multi-factor authentication (MFA) information and PTA/PHS details."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"

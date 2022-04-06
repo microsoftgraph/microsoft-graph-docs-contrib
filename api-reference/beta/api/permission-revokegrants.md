@@ -2,7 +2,7 @@
 title: "permission: revokeGrants"
 description: "Update an item's sharing permissions"
 author: "learafa"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -76,7 +76,6 @@ If successful, this action returns a `200 OK` response code and a [permission](.
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 Content-Type: application/json
-Content-length: 95
 
 {
   "grantees": [

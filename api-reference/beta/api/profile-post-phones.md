@@ -1,7 +1,7 @@
 ---
 title: "Create itemPhone"
 description: "Use this API to create a new itemPhone."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and an [itemPho
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Car Phone",
@@ -93,6 +92,14 @@ Content-length: 382
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-itemphone-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-itemphone-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-itemphone-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

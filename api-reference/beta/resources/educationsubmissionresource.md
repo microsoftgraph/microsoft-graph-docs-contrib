@@ -1,8 +1,8 @@
 ---
 title: "educationSubmissionResource resource type"
-description: "A wrapper around a resource for use on a submission. The wrapper adds a pointer to the assignment resource if this was copied from the assignment.  "
+description: "A wrapper around a resource for use on a submission."
 author: "dipakboyed"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -20,6 +20,7 @@ A wrapper around a resource for use on a submission. The wrapper adds a pointer 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
+|[List resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
 |[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
 |[Delete](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
 

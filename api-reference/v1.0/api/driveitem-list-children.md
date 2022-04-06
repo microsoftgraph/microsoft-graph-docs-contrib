@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: List the contents of a folder
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Return a collection of DriveItems in the children relationship of a DriveItem."
 doc_type: apiPageType
@@ -106,6 +106,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-children-files-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-children-files-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

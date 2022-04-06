@@ -1,9 +1,9 @@
 ---
 title: "teamwork resource type"
 description: "A container for Microsoft Teams features available for organization."
-author: "clearab"
+author: "akjo"
 doc_type: resourcePageType
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
@@ -25,7 +25,8 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+|devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
+|workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation
 
@@ -60,5 +61,3 @@ The following is a JSON representation of the resource.
 ## See Also
 
 - [userTeamwork resource](userteamwork.md)
-
-

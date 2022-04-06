@@ -1,7 +1,7 @@
 ---
 title: "Best practices for working with Microsoft Graph"
 description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
@@ -17,7 +17,7 @@ Experiment with new APIs before you integrate them into your application.
 
 ## Authentication
 
-To access the data in Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following:
+To access data through Microsoft Graph, your application will need to acquire an OAuth 2.0 access token, and present it to Microsoft Graph in either of the following options:
 
 - The HTTP *Authorization* request header, as a *Bearer* token
 - The graph client constructor, when using a Microsoft Graph client library
@@ -28,22 +28,23 @@ Use the Microsoft Authentication Library API, [MSAL](/azure/active-directory/dev
 
 Apply the following best practices for consent and authorization in your app:
 
-- **Use least privilege**. Only request permissions that are absolutely necessary, and only when you need them. For the APIs your application calls, check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users?view=graph-rest-1.0), and choose the least privileged permissions. For a full list of permissions, see [permissions reference](permissions-reference.md).
+- **Apply least privilege**. Grant users and apps only the lowest privileged permission they require to call the API. Check the permissions section in the method topics (for example, see [creating a user](/graph/api/user-post-users)), and choose the least privileged permissions. For example, if the app will read only the profile of the currently signed-in user, grant *User.Read* instead of *User.ReadBasic.All*. If an app doesn't read the user's calendar, do not grant it the *Calendars.Read* permission. For a full list of permissions, see [permissions reference](permissions-reference.md).
 
-- **Use the correct permission type based on scenarios**. If you're building an interactive application where a signed in user is present, your application should use *delegated* permissions, where the application is delegated permission to act as the signed-in user when making calls to Microsoft Graph. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use application permissions.
+- **Use the correct permission type based on scenarios**. Avoid using both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs without a signed-in user, such as a background service or daemon, your application should use *application permissions*.
 
-    >**Note:** Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, circumnavigating policies configured by an administrator.
-<!-- LG: Use a more clear lead-in here, like "Consider the end user and admin experience"? -->
+  > [!CAUTION]
+  > Using application permissions for interactive scenarios can put your application at compliance and security risk. It can inadvertently elevate a user's privileges to access data, bypassing policies configured by an administrator.
+
 - **Be thoughtful when configuring your app**. This will directly affect end user and admin experiences, along with application adoption and security. For example:
 
-  - Your application's privacy statement, terms of use, name, logo and domain will show up in consent and other experiences - so make sure to configure these carefully so they are understood by your end-users.
+  - Your application's name, logo, domain, publisher verification status, privacy statement, and terms of use will show up in consent and other experiences. Configure these settings carefully so they are understood by your end users.
   - Consider who will be consenting to your application - either end users or administrators - and configure your application to [request permissions appropriately](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Ensure that you understand the difference between [static, dynamic, and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
   - Tenant administrators can disable the ability for end users to consent to applications. In this case, an administrator would need to consent on behalf of their users.
-  - Tenant administrators can set custom authorization policies such as blocking users from reading other user's profiles, or limiting self-service group creation to a limited set of users. In this case, your application should expect to handle 403 error response when acting on behalf of a user.
+  - Tenant administrators can set custom authorization policies such as blocking users from reading other user's profiles, or limiting self-service group creation to a limited set of users. In this case, your application should expect to handle `403 Forbidden` error response when acting on behalf of a user.
 
 ## Handle responses effectively
 
@@ -51,7 +52,7 @@ Depending on the requests you make to Microsoft Graph, your applications should 
 
 ### Pagination
 
-When querying a resource collection, you should expect that Microsoft Graph will the return result set in multiple pages, due to server-side page size limits. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.
+When querying a resource collection, you should expect that Microsoft Graph will return the result set in multiple pages, due to server-side page size limits. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.
 
 For example, listing the signed-in users messages:
 
@@ -80,12 +81,16 @@ While your application should handle all error responses (in the 400 and 500 ran
 |Throttling|429|APIs might throttle at any time for a variety of reasons, so your application must **always** be prepared to handle 429 responses. This error response includes the *Retry-After* field in the HTTP response header. Backing off requests using the *Retry-After* delay is the fastest way to recover from throttling. For more information, see [throttling](throttling.md).|
 |Service unavailable| 503 | This is likely because the services is busy. You should employ a back-off strategy similar to 429. Additionally, you should **always** make new retry requests over a new HTTP connection.|
 
-### Evolvable enums
+### Handling future members in evolvable enumerations
 
-Client applications can be broken by the addition of members to an existing enum. For some newer enums in Microsoft Graph, a mechanism is available to allow for adding new members without incurring a breaking change. On these newer enums, you'll see a common *sentinel* member called `unknownFutureValue` that demarcates known and unknown enum members. Known members will have a number less than the sentinel member, while unknown members will be greater in value.
-By default, unknown members are not returned by Microsoft Graph. If, however, your application is written to handle the appearance of unknown members, it can opt-in to receive unknown enum members, using an HTTP *Prefer* request header.
+Adding members to existing enumerations can break applications already using these enums. Evolvable enums is a mechanism that Microsoft Graph API uses to add new members to existing enumerations without causing a breaking change for applications.
 
->**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
+Evolvable enums have a common _sentinel_ member called `unknownFutureValue` that demarcates known members that have been defined in the enum initially, and unknown members that are added subsequently or will be defined in the future. Internally, known members are mapped to numeric values that are less than the sentinel member, and unknown members are greater than the sentinel member. The documentation for an evolvable enum lists the possible _string_ values in ascending order: known members, followed by `unknownFutureValue`, followed by unknown members. Like other types of enumerations, you should _always_ reference members of evolvable enums by their _string_ values.
+
+By default, a GET operation returns only known members for properties of evolvable enum types and your application needs to handle only the known members. If you design your application to handle unknown members as well, you can opt-in to receive those members by using an HTTP `Prefer` request header:
+```http
+Prefer: include-unknown-enum-members
+```
 
 
 ## Storing data locally
@@ -118,7 +123,7 @@ For some operations, such as PUT and PATCH (and in some cases POST), if your app
 
 If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling on a regular basis.
 
-Use [webhook notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) to get push notifications when data changes.
+Use [webhook notifications](/graph/api/resources/webhooks) to get push notifications when data changes.
 
 If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This will avoid excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
 
@@ -128,7 +133,7 @@ Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this might lead to empty responses which wastes resources, too long and you might end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
-Use [webhook notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
+Use [webhook notifications](/graph/api/resources/webhooks) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
 ### Batching
 
@@ -139,6 +144,7 @@ Use [batching](json-batching.md) where significant network latency can have a bi
 ## Reliability and support
 To ensure reliability and facilitate support for your application:
 
+- Use TLS 1.2 to support all capabilities of Microsoft Graph. For more information about the Microsoft Graph TLS 1.0 and 1.1 deprecation, see [Enable support for TLS 1.2 in your environment](/troubleshoot/azure/active-directory/enable-support-tls-environment).
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.

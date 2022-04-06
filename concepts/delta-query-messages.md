@@ -1,8 +1,8 @@
 ---
 title: "Get incremental changes to messages in a folder"
 description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"
-author: "davidmu1"
-localization_priority: Priority
+author: "FaithOmbongi"
+ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 

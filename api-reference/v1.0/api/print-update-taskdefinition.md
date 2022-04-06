@@ -2,7 +2,7 @@
 title: Update printTaskDefinition
 description: Update a task definition.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update printTaskDefinition
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update a task definition.
 
@@ -69,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [prin
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",
@@ -92,6 +89,14 @@ Content-length: 163
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-printtaskdefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printtaskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printtaskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

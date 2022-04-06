@@ -2,7 +2,7 @@
 title: "Create application"
 description: "Create a new application."
 author: "sureshja"
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
 ---
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Create a new [application](../resources/application.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords for an application.
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Application.ReadWrite.All |
-|Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/applications
 Content-type: application/json
-Content-length: 67
 
 {
   "displayName": "Display name"
@@ -80,11 +79,19 @@ Content-length: 67
 [!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-application-from-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-application-from-applications-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
-Here is an example of the response. 
+The following is an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -95,7 +102,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",

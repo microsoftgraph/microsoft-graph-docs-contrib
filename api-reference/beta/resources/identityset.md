@@ -1,11 +1,10 @@
 ---
 author: JeremyKelley
 description: "The identitySet resource is a keyed collection of identity resources."
-ms.date: 09/10/2017
 title: IdentitySet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "users"
 ---
 # identitySet resource type
 

@@ -1,7 +1,7 @@
 ---
 title: "synchronizationSchedule resource type"
 description: "Defines the schedule used to run a synchronizationJob."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

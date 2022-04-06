@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActivationCounts"
 description: "Get the count of Microsoft 365 activations on desktops and devices."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

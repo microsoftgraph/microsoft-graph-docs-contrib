@@ -1,22 +1,63 @@
 ---
-title: "Use the People API in Microsoft Graph to get information about the people most relevant to you"
-description: "Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. "
+title: "Use the people API in Microsoft Graph to get information about the people most relevant to you"
+description: "Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. "
 ms.date: 4/9/2019
 author: "anthona"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "insights"
 ---
 
-# Use the People API in Microsoft Graph to get information about the people most relevant to you
+# Use the people API in Microsoft Graph to get information about the people most relevant to you
 
-Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
-The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.
+Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. 
+
+Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
+The people API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
+
+## Including a person as relevant or "working-with"
+ 
+For a person to be included as relevant to or "working with" a profile owner in Delve, to be displayed in the owner's profile card, or to be returned by the people API, there must be a _public_ relationship between the person and the profile owner. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
+
+![Image of working with relationships](images/working-with.png)
+ 
+The following are examples of public relationships:
+
+- Individuals connected in the org chart: manager, direct report, peers (share the same manager) 
+- Members of a public group or distribution list with fewer than 30 people. Public groups have membership lists that are available in the directory.
+ 
+If the profile owner communicates with someone and there is _no public relationship_ between them, such as an org chart connection or a group in common, the fact that they've been communicating is _not visible_ to others.
+
+The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.
+ 
+Examples of private communication include:
+- Sending emails to each other where the name of the other person is in the TO line
+- Inviting users to meetings by including their name in the calendar invite 
+ 
+Examples of public interaction include:
+- Sending or receiving emails to/from each other as part of a public group 
+- Inviting users to meetings as part of group, or where more than X people are invited
+ 
+The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
+ 
+In order for User C to appear, the profile owner must be in a relatively small group or distribution list with that user that is public (meaning the membership list is available in the directory).
+ 
+People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
+
+## Disabling "working-with"
+Administrators can manage the display or return of people relevant to a profile owner at two levels:
+* For an organization:
+  - Enable for the entire organization. This is the default setting.
+  - Disable for the entire organization, other than the profile owner.
+* For an Azure AD group in the organization:
+  - Disable for a specified Azure AD group. This is useful for enabling "working-with" for an organization except for members in the Azure AD group.
+
+For more information, see [customize people insight privacy control](insights-customize-people-insights-privacy.md).
 
 ## Authorization
 
-To call the People API in Microsoft Graph, your app will need the appropriate permissions:
+To call the people API in Microsoft Graph, your app will need the appropriate permissions:
 
-* People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
+* People.Read - Use to make general people API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
 * People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
 
 ## Browse people
@@ -690,7 +731,7 @@ Content-type: application/json
 
 ### Browse another user’s relevant people
 
-The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working-with feature](#implementation-of-the-working-with-feature). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
+The following request gets the people most relevant to another person in the signed-in user's organization, as described in the [implementation of the working-with feature](#including-a-person-as-relevant-or-working-with). This request requires the People.Read.All permission. All the query parameters described in the above sections apply as well.
 
 In this example, Roscoe Seidel's relevant people are displayed.
 
@@ -948,31 +989,3 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### Implementation of the working-with feature
- 
-There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
-
-![Image of working with relationships](images/working-with.png)
- 
-The following are examples of public relationships:
-
-- Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager) 
-- Members of a public group or distribution list with fewer than 30 people. Public groups have membership lists that are available in the directory.
- 
-If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.
-
-The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.
- 
-Examples of private communication include:
-- Sending emails to each other where the name of the other person is in the TO line
-- Inviting users to meetings by including their name in the calendar invite 
- 
-Examples of public interaction include:
-- Sending or receiving emails to/from each other as part of a public group 
-- Inviting users to meetings as part of group, or where more than X people are invited
- 
-The ranking doesn’t change based on who User A is (the person looking at someone else's page). The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).
- 
-In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).
- 
-People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.

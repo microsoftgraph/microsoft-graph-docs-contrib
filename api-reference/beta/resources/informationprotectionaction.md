@@ -1,7 +1,7 @@
 ---
 title: "informationProtectionAction resource type"
 description: "Describes the abtract informationProtectionAction entity."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"

@@ -1,7 +1,7 @@
 ---
 title: "parseExpressionResponse resource type"
 description: "Represents the response from the synchronizationSchema: parseExpression action."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

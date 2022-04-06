@@ -2,7 +2,7 @@
 title: "basicAuthentication resource type"
 description: "Represents configuration for using Basic authentication in an API call."
 author: "nickgmicrosoft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

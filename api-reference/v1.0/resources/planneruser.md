@@ -1,7 +1,7 @@
 ---
 title: "plannerUser resource type"
 description: "The **plannerUser** resource provide access to Planner resources for a user. It doesn't contain any usable properties."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType
@@ -24,7 +24,7 @@ The **plannerUser** resource provide access to Planner resources for a [user](us
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Identifier of the planenrUser|
+|id|String| Read-only. Identifier of the plannerUser|
 
 ## Relationships
 | Relationship | Type	|Description|

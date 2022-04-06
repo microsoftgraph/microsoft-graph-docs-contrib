@@ -1,7 +1,7 @@
 ---
 title: "logonUser resource type"
 description: "Contains stateful information about the logged on user on this host"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 author: "preetikr"

@@ -2,15 +2,13 @@
 title: Update printSettings
 description: Update tenant-wide settings for the Universal Print service.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
 # Update printSettings
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Update tenant-wide settings for the Universal Print service.
 
@@ -93,8 +91,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "truncated": true
 }
 -->
 ``` http

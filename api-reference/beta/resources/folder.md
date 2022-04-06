@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "The Folder resource groups folder-related data on an item into a single structure. "
 ms.date: 09/10/2017
 title: Folder
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
 ---

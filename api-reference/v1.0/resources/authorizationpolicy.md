@@ -1,7 +1,7 @@
 ---
 title: "authorizationPolicy resource type"
 description: "Represents a policy that can control authorization settings of Azure Active Directory."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "abhijeetsinha"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"

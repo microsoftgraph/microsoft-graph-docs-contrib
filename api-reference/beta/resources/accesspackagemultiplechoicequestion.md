@@ -2,7 +2,7 @@
 title: "accessPackageMultipleChoiceQuestion resource type"
 description: "Subclass of accessPackageQuestion that has multiple choice as the question's answer format"
 author: "markwahl-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A child of **accessPackageQuestion** that presents multiple options that the requestor must choose an answer from.
+A child of **accessPackageQuestion** that presents multiple options that the requestor must choose an answer from. This is used in the **questions** property of an [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) and inside an [accessPackageResourceAttribute](accesspackageresourceattribute.md) of an access package resource.
 
 Inherits from [accessPackageQuestion](../resources/accesspackagequestion.md).
 

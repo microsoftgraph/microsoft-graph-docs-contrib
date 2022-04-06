@@ -1,8 +1,8 @@
 ---
-title: "actionResultType resource type"
-description: "Abstract type for modeling responses of bulk operations."
+title: "actionResultPart resource type"
+description: "Abstract type to model responses of bulk operations."
 author: "AkJo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that serves as a base for modeling responses of bulk operations. The **error** property is selectively populated based on whether the response represents an error.
+An abstract type that serves as a base to model responses of bulk operations. The **error** property is selectively populated based on whether the response represents an error.
 
 ## Properties
 
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 ## See also
 
 - [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
-- [Add members in bulk to team](../api/conversationmembers-add.md)
+- [Add members in bulk to a team](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->

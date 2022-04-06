@@ -2,7 +2,7 @@
 title: "emailAuthenticationMethodConfiguration resource type"
 description: "Represents an email OTP authentication methods policy"
 author: "mmcla"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

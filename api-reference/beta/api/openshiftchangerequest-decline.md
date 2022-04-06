@@ -1,7 +1,7 @@
 ---
 title: "openShiftChangeRequest: decline"
 description: "Decline an openshift request."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
@@ -96,9 +96,7 @@ Content-type: application/json
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

@@ -2,7 +2,7 @@
 title: "participantJoiningResponse resource type"
 description: "An abstract base class that contains the response to a participant joining notification."
 author: "yizhenww"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

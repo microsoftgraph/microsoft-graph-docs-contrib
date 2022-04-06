@@ -2,7 +2,7 @@
 title: "Create legalHold userSource"
 description: "Create a new legalHold userSource object."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|SMTP address of the user.|
+|email|String|SMTP address of the user or the SMTP address of the group mailbox. To get the email address of the group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). Using get group, you can query by the name of the group using `$filter`; for example, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`. |
 |includedSources|microsoft.graph.ediscovery.sourceType|Specifies which sources are included in this group. This value must be `mailbox`, `site` is not supported for legalHolds at this time.|
 
 ## Response
@@ -61,6 +61,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
+
 
 
 # [HTTP](#tab/http)
@@ -73,7 +74,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
 Content-Type: application/json
-Content-length: 208
 
 {
   "email": "adelev@contoso.com",
@@ -96,8 +96,18 @@ Content-length: 208
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-usersource-from--2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
+
+---
 
 ### Response
 

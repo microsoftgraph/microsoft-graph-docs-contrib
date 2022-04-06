@@ -3,7 +3,7 @@ author: JeremyKelley
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

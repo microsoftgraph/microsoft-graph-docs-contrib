@@ -8,9 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var siteSource = new Microsoft.Graph.Ediscovery.SiteSource
 {
-	AdditionalData = new Dictionary<string, object>()
+	Site = new Site
 	{
-		{"site@odata.bind", "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"}
+		WebUrl = "https://contoso.sharepoint.com/sites/HumanResources"
 	}
 };
 

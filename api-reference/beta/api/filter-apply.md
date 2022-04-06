@@ -1,7 +1,7 @@
 ---
 title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
 ms.prod: ""
@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
 Content-type: application/json
-Content-length: 321
 
 {
   "criteria": {
@@ -103,9 +102,7 @@ Content-length: 321
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

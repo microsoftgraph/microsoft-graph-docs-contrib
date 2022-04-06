@@ -3,7 +3,7 @@ title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
 author: "markwahl-msft"
 ms.prod: "governance"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ---
 
@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve only the identity sources, add `$select=identitySources`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For example, to retrieve only the identity sources, add `$select=identitySources`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -80,6 +80,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connectedorganization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

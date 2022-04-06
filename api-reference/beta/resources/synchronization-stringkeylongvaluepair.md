@@ -1,7 +1,7 @@
 ---
 title: "stringKeyLongValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is an Int64."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

@@ -2,7 +2,7 @@
 title: printOperation resource type
 description: Represents a long-running Universal Print operation. Base class for operation types such as printerCreateOperation.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printOperation resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents a long-running Universal Print operation. Base class for operation types such as [printerCreateOperation](printercreateoperation.md).
 

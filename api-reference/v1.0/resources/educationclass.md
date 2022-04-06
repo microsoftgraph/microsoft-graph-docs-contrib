@@ -1,7 +1,7 @@
 ---
 title: "educationClass resource type"
 description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "mlafleur"
 ms.prod: "education"
 doc_type: resourcePageType
@@ -47,10 +47,14 @@ Inherits from [entity](../resources/entity.md).
 
 | Relationship | Type                                                          | Description                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
+| assignments  | [educationAssignment](educationAssignment.md) collection | All assignments associated with this class. Nullable.     |
 | group        | [group](../resources/group.md)                                | The underlying Microsoft 365 group object.                |
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
+|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
+|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
+|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 
 ## JSON representation
 

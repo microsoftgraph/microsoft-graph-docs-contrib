@@ -2,7 +2,7 @@
 title: Get printSettings
 description: Retrieve tenant-wide settings for the Universal Print service.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
 ---
@@ -86,7 +86,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 144
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",

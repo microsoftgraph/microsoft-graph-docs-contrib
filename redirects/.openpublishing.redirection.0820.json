@@ -1,0 +1,34 @@
+{
+  "redirections": [
+  {
+    "source_path_from_root": "/api-reference/beta/api/photo-delete.md",
+    "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-beta",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/photo-get.md",
+    "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-beta",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/api-reference/beta/api/photo-update.md",
+    "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-beta",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/photo-delete.md",
+    "redirect_url": "/graph/api/resources/profilephoto?view=graph-rest-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/photo-get.md",
+    "redirect_url": "/graph/api/profilephoto-get?view=graph-rest-1.0",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/api-reference/v1.0/api/photo-update.md",
+    "redirect_url": "/graph/api/profilephoto-update?view=graph-rest-1.0",
+    "redirect_document_id": false
+  }
+]
+}

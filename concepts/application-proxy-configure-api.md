@@ -3,7 +3,7 @@ title: Configure Application Proxy using Microsoft Graph APIs
 description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
 author: davidmu1
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 ---
 
@@ -13,7 +13,7 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 
 ## Prerequisites
 
-- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
+- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
 - This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
     1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.

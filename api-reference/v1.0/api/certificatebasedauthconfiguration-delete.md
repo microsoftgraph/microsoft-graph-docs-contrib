@@ -1,7 +1,7 @@
 ---
 title: "Delete certificateBasedAuthConfiguration"
 description: "Delete certificateBasedAuthConfiguration."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthCo
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-certificatebasedauthconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-certificatebasedauthconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

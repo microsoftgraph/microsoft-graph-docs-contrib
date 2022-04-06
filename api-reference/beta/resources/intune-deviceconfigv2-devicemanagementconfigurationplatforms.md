@@ -21,9 +21,13 @@ Supported platform types.
 |Member|Value|Description|
 |:---|:---|:---|
 |none|0|None.|
+|android|1|Android.|
+|iOS|4|iOS.|
 |macOS|8|MacOS.|
 |windows10X|16|Windows 10 X.|
 |windows10|32|Windows 10.|
+|linux|128|Linux.|
+|unknownFutureValue|1073741824|Sentinel member for cases where the client cannot handle the new enum values.|
 
 
 

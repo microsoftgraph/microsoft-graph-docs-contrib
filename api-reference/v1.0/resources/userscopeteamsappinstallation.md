@@ -2,7 +2,7 @@
 title: "userScopeTeamsAppInstallation resource type"
 description: "Represents a teamsApp installed in the personal scope of a user."
 author: "AkJo"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

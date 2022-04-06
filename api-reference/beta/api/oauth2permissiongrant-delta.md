@@ -1,7 +1,7 @@
 ---
 title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "psignoret"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |oauth2permissiongrant | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -101,6 +101,14 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/oauth2permissiongrant-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/oauth2permissiongrant-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/oauth2permissiongrant-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

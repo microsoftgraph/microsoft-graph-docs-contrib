@@ -203,13 +203,9 @@ To retrieve the latest deltaLink, call `delta` with a query string parameter `?t
 
 #### Request
 
-```http
-GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
-```
-
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
 
-```
+```http
 GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
 ```
 

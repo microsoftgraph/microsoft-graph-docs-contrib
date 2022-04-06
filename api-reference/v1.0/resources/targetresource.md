@@ -1,7 +1,7 @@
 ---
 title: "targetResource resource type"
 description: "Represents target resource types associated with audit activity."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "dhanyahk"
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

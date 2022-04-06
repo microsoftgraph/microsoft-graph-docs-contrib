@@ -1,7 +1,7 @@
 ---
 title: "profileCardProperty resource type"
 description: "Used to designate either a new property to surface in a shared, people experience or one that will have a custom display name or annotation applied to it. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"

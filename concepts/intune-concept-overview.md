@@ -1,8 +1,8 @@
 ---
 title: "Intune devices and apps API overview"
 description: "Microsoft Intune helps enterprises manage devices and apps within an organization. You can use the Intune API in Microsoft Graph to manage devices, apps, and even configure Intune while using your preferred tools. "
-author: "rolyon"
-localization_priority: Priority
+author: "dougeby"
+ms.localizationpriority: high
 ms.prod: "intune"
 ---
 
@@ -56,4 +56,4 @@ Looking for the API reference for this service?
 - See how to perform common tasks by using the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples).
 - Find out how to [use the Intune REST API](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 - See the [Changelog](changelog.md) for information about what's new in the Intune API.
-- Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.
+- Explore [resources](https://developer.microsoft.com/graph/gallery/) for more ideas about how to use Microsoft Graph.

@@ -1,7 +1,7 @@
 ---
 title: "Manage app registration and API permission for Microsoft Graph notifications"
 description: "In order to receive notifications sent via Microsoft Graph, you first need to register your application on the Microsoft Azure portal."
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
 ---

@@ -2,7 +2,7 @@
 title: "Add member to team"
 description: "Add a new member to a team."
 author: "nkramer"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -21,7 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| TeamMember.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> [!NOTE]
+> Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) to a team is not supported.
 
 ## HTTP request
 
@@ -51,7 +53,9 @@ For best results, stagger calls with a 2 second buffer.
 
 ## Examples
 
-### Request
+### Example 1: Add a member to a team
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,7 +66,6 @@ For best results, stagger calls with a 2 second buffer.
 ``` http
 POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -86,9 +89,17 @@ Content-length: 100
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversationmember-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationmember-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 
 <!-- 
@@ -114,6 +125,80 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+### Example 2: Add a member to a team using user principal name
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_conversationmember_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationmember-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationmember-upn-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-upn-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-upn-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conversationmember-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationmember-upn-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Jacob Hancock",
+    "email": "jacob@contoso.com"
+}
+```
+
 ## See also
 
 - [Create member in channel](channel-post-members.md)

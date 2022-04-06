@@ -1,7 +1,7 @@
 ---
 title: "threatAssessmentRequest resource type"
 description: "An abstract resource type used to represent a threat assessment request item."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "hafen-ms"
 ms.prod: "security"
 doc_type: "resourcePageType"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract resouce type used to represent a threat assessment request item.
+An abstract resource type used to represent a threat assessment request item.
 
 A threat assessment request can be one of the following types:
 

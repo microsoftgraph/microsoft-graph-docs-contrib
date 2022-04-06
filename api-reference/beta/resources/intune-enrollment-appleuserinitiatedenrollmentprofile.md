@@ -36,7 +36,7 @@ The enrollmentProfile resource represents a collection of configurations which m
 |displayName|String|Name of the profile|
 |description|String|Description of the profile|
 |priority|Int32|Priority, 0 is highest|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|The platform of the Device. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|platform|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|The platform of the Device. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |createdDateTime|DateTimeOffset|Profile creation time|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time|
 

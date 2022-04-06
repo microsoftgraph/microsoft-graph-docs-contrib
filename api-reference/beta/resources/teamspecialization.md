@@ -2,7 +2,7 @@
 title: "teamSpecialization enum type"
 description: "Describes the special use case for a team."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: enumPageType
 ---

@@ -2,7 +2,7 @@
 title: "prompt resource type"
 description: "Prompt action base type."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

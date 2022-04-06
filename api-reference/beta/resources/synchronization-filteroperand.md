@@ -1,7 +1,7 @@
 ---
 title: "filterOperand resource type"
 description: "Contains a collection of values for the operand."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

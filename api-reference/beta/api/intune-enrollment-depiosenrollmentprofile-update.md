@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See [Enroll devices in Microsoft Intune](/mem/intune/enrollment) for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -97,6 +97,12 @@ The following table shows the properties that are required when you create the [
 |zoomDisabled|Boolean|Indicates if zoom setup pane is disabled|
 |restoreCompletedScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
 |updateCompleteScreenDisabled|Boolean|Indicates if Weclome screen is disabled|
+|forceTemporarySession|Boolean|Indicates if temporary sessions is enabled|
+|temporarySessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|userSessionTimeoutInSeconds|Int32|Indicates timeout of temporary session|
+|passcodeLockGracePeriodInSeconds|Int32|Indicates timeout before locked screen requires the user to enter the device passocde to unlock it|
+|carrierActivationUrl|String|Carrier URL for activating device eSIM.|
+|userlessSharedAadModeEnabled|Boolean|Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See [Shared iOS and iPadOS devices](/mem/intune/enrollment/device-enrollment-shared-ios)|
 
 
 
@@ -110,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 2108
+Content-length: 2377
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -167,7 +173,13 @@ Content-length: 2108
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
 
@@ -176,7 +188,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2157
+Content-Length: 2426
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -234,7 +246,13 @@ Content-Length: 2157
   "passCodeDisabled": true,
   "zoomDisabled": true,
   "restoreCompletedScreenDisabled": true,
-  "updateCompleteScreenDisabled": true
+  "updateCompleteScreenDisabled": true,
+  "forceTemporarySession": true,
+  "temporarySessionTimeoutInSeconds": 0,
+  "userSessionTimeoutInSeconds": 11,
+  "passcodeLockGracePeriodInSeconds": 0,
+  "carrierActivationUrl": "https://example.com/carrierActivationUrl/",
+  "userlessSharedAadModeEnabled": true
 }
 ```
 

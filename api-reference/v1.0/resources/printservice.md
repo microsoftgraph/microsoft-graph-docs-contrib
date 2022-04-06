@@ -2,7 +2,7 @@
 title: printService resource type
 description: Represents an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (e.g., discovery, notifications, registration and IPP) and have one or more endpoints.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
@@ -10,8 +10,6 @@ doc_type: resourcePageType
 # printService resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Represents an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (discovery, notifications, registration, and IPP) and have one or more endpoints.
 

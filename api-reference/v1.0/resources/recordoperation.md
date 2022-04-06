@@ -2,7 +2,7 @@
 title: "recordOperation resource type"
 description: "This resource type contains information related to audio recording."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

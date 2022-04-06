@@ -1,7 +1,7 @@
 ---
 title: "reportRoot: getYammerGroupsActivityCounts"
 description: "Get the number of Yammer messages posted, read, and liked in groups."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
 doc_type: apiPageType

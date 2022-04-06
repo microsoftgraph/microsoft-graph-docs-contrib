@@ -2,7 +2,7 @@
 title: "educationSynchronizationProfile resource type"
 description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -38,7 +38,7 @@ Represents a set of configurations used to synchronize education entities and ro
 | id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                               |
 | displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                           |
-| expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. When `null`. the profile will never expire. (optional)       |
+| expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. Provide the date in `YYYY-MM-DD` format, following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html). Maximum value is 18 months from profile creation.  (optional)       |
 | handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] AAD Users.                                  |
 | licensesToAssign                     | [educationSynchronizationLicenseAssignment] collection | License setup configuration.                                                                                                      |
@@ -127,9 +127,6 @@ The following is a JSON representation of the **educationSynchronizationProfile*
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ]
 }-->
 
 

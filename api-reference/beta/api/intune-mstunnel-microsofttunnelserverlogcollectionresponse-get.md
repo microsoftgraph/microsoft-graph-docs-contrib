@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|MicrosoftTunnelGateway.Read.All, MicrosoftTunnelGateway.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 324
+Content-Length: 481
 
 {
   "value": {
@@ -72,7 +72,10 @@ Content-Length: 324
     "status": "completed",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
     "endDateTime": "2017-01-01T00:03:30.9241974-08:00",
-    "sizeInBytes": 11
+    "sizeInBytes": 11,
+    "serverId": "Server Id value",
+    "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
+    "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
   }
 }
 ```

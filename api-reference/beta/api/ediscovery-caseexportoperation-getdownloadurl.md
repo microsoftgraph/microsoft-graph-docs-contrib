@@ -2,7 +2,7 @@
 title: "caseExportOperation: getDownloadUrl"
 description: "Returns the download URL "
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-4
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/caseexportoperation-getdownloadurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/caseexportoperation-getdownloadurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

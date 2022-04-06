@@ -1,7 +1,7 @@
 ---
 title: "workbookApplication: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: apiPageType
@@ -60,7 +60,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationType": "calculationType-value"
@@ -90,8 +89,7 @@ Content-length: 48
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 
 ```http

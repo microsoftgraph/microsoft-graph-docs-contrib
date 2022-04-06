@@ -2,14 +2,12 @@
 title: "Universal Print cloud printing API overview"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "braedenp-msft"
-localization_priority: Priority
-ms.prod: "universal-print"
+ms.localizationpriority: high
+ms.prod: "cloud-printing"
 ms.custom: scenarios:getting-started
 ---
 
 # Universal Print cloud printing API overview
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft.
 
@@ -41,10 +39,10 @@ Keeping track of an organization's printers, printer configurations, and printer
 * **Keep an eye on printer status, configurations, and availability** by using [List printers](/graph/api/print-list-printers) and [printerStatus](/graph/api/resources/printerstatus).
 
 * **See who's using your printers and how much they're printing** by using the reporting APIs:
-  * [List dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser)
-  * [List monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser)
-  * [List dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter)
-  * [List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter)
+  * [List dailyPrintUsageByUser](/graph/api/reportroot-list-dailyprintusagebyuser)
+  * [List monthlyPrintUsageByUser](/graph/api/reportroot-list-monthlyprintusagebyuser)
+  * [List dailyPrintUsageByPrinter](/graph/api/reportroot-list-dailyprintusagebyprinter)
+  * [List monthlyPrintUsageByPrinter](/graph/api/reportroot-list-monthlyprintusagebyprinter)
 
 * **Configure user permissions** by modifying user and group membership on printers:
   * [List allowedUsers](/graph/api/printershare-list-allowedusers)
@@ -76,7 +74,7 @@ Follow these steps to enable pull printing:
 
 3. [Update the attributes of your virtual printer](/graph/api/printer-update) by using application permissions and an `application/ipp` media type (see examples).
 
-4. [Create a task trigger for your virtual printer](/graph/api/printer-post-tasktriggers) using an administrator authentication token that will associate your task definition with virtual printer.
+4. [Create a task trigger for your virtual printer](/graph/api/printer-post-tasktriggers) using an administrator authentication token that will associate your task definition with virtual printer. The appId used to generate the access token should be the same appId that was used to create the task definition.
 
 5. When a print job is submitted to the virtual printer, it will be paused due to the [printTaskTrigger](/graph/api/resources/printtasktrigger). A [printTask](/graph/api/resources/printtask) with `processing` state will be created based on the associated [printTaskDefinition](/graph/api/resources/printtaskdefinition).
 
@@ -87,11 +85,11 @@ Follow these steps to enable pull printing:
 ## API reference
 Looking for the API reference for this service?
 
-- [Universal Print API in Microsoft Graph beta](/graph/api/resources/print)
+- [Universal Print API in Microsoft Graph](/graph/api/resources/print)
 
 ## Provide feedback
 
-We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## See also
 

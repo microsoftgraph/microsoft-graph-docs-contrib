@@ -2,7 +2,7 @@
 title: "educationSynchronizationProfile: uploadUrl"
 description: "Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data synchronization profile in the tenant. The SAS token has a validity of one hour."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application|EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +74,14 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-uploadurl-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-uploadurl-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-uploadurl-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -89,7 +97,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 314
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#String",

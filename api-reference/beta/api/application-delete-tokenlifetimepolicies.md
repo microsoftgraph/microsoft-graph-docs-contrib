@@ -1,7 +1,7 @@
 ---
 title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "apiPageType"

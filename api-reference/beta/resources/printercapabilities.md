@@ -2,7 +2,7 @@
 title: printerCapabilities complex type
 description: Represents the capabilities reported by a printer.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

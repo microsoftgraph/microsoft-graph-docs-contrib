@@ -4,7 +4,7 @@ description: "The Microsoft Graph communications API adds a new dimension to how
 author: "ananmishr"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Working with the communications API in Microsoft Graph

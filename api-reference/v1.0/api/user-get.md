@@ -2,7 +2,7 @@
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
 author: "jpettere"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -13,26 +13,35 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 
-> Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
+> **Note:** Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
+>
+> This request might have replication delays for users that were recently created, updated, or deleted.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+> [!TIP]
+> 1. Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+>2. The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports and manager of the signed-in user only.
 
 ## HTTP request
 For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me
 GET /users/{id | userPrincipalName}
 ```
-Note that when the **userPrincipalName** begins with a `$` character, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes. For details, see the [known issues](/graph/known-issues#users) list.
+
+> [!TIP]
+> 
+> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
+> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +50,7 @@ GET /me
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
 
@@ -58,7 +67,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
@@ -66,20 +75,28 @@ This method returns `202 Accepted` when the request has been processed successfu
 
 ### Example 1: Standard users request
 
+#### Request
+
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). This example illustrates the default request and response. 
 
-<!-- { "blockType": "ignored" } -->
-```http
+<!-- {
+  "blockType": "request",
+  "name": "get_user_1"
+} -->
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### Response
+#### Response
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -103,7 +120,7 @@ Content-length: 491
 
 You can get the user information for the signed-in user by replacing `/users/{id | userPrincipalName}` with `/me`.
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -130,9 +147,17 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -142,7 +167,6 @@ GET https://graph.microsoft.com/v1.0/me
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [
@@ -161,26 +185,104 @@ Content-length: 491
 }
 ```
 
-### Example 3: Users request using $select
+### Example 3: Use $select to retrieve specific properties of a user
 
-If you need a different property set, you can use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+To retrieve specific properties, use the OData `$select` query parameter. For example, to return _displayName_, _givenName_, _postalCode_, and _identities_, you would use the add the following to your query `$select=displayName,givenName,postalCode,identities`
 
-##### Request
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_select"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
-##### Response
-<!-- { "blockType": "ignored" } -->
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-select-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-select-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-select-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-select-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "postalCode": "98004"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
+}
+```
+
+### Example 4: Get the value of a schema extension for a user
+
+In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)/$entity",
+    "ext55gb1l09_msLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Developer",
+        "courseName": "Introduction to Microsoft Graph",
+        "courseId": 1
+    }
 }
 ```
 

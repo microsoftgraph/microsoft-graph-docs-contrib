@@ -2,7 +2,7 @@
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -75,6 +75,7 @@ This object provides a targeted subset of properties from the core [user] object
 | classes       | [educationClass] collection  | Classes to which the user belongs. Nullable. |
 | schools       | [educationSchool] collection | Schools to which the user belongs. Nullable. |
 | taughtClasses | [educationClass] collection  | Classes for which the user is a teacher.     |
+|rubrics|[educationRubric](educationrubric.md) collection|When set, the grading rubric attached to the assignment.|
 
 ## JSON representation
 

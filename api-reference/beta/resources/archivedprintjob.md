@@ -2,7 +2,7 @@
 title: archivedPrintJob resource type
 description: A record of a "final state" (completed, aborted or failed) print job that is used for reporting purposes. This is not an active print job.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

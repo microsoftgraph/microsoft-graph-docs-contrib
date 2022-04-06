@@ -2,7 +2,7 @@
 title: "teamMessagingSettings resource type"
 description: "Settings to configure messaging and mentions in the team."
 author: "nkramer"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

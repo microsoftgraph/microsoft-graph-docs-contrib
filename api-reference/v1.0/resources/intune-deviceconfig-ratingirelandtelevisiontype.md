@@ -28,9 +28,3 @@ TV content rating labels in Ireland
 
 
 
-
-
-
-
-
-

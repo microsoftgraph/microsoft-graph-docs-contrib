@@ -2,7 +2,7 @@
 title: "Update chartlegend"
 description: "Update the properties of chartlegend object."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: apiPageType
 ---
@@ -59,7 +59,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 Content-type: application/json
-Content-length: 72
 
 {
   "visible": true,
@@ -95,7 +94,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "visible": true,

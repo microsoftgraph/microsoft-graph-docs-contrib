@@ -30,9 +30,3 @@ Movies rating labels in United Kingdom
 
 
 
-
-
-
-
-
-

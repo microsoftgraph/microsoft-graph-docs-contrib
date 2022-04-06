@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "The UploadSession resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook event and message objects."
 ms.prod: ""
 doc_type: resourcePageType

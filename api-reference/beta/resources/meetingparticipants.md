@@ -1,8 +1,8 @@
 ---
 title: "meetingParticipants resource type"
 description: "Participants in a meeting."
-author: "jsandoval-msft"
-localization_priority: Normal
+author: "mkhribech"
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

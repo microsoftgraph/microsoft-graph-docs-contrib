@@ -1,7 +1,7 @@
 ---
 title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and multi-factor authentication (MFA)."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: "conceptualPageType"
@@ -26,9 +26,9 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All<br>AuditLogs.Read.All|
+|Delegated (work or school account)|Reports.Read.All, AuditLog.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Reports.Read.All<br>AuditLogs.Read.All|
+|Application|Reports.Read.All, AuditLog.Read.All|
 
 In order to access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
 
@@ -54,6 +54,7 @@ The following table lists some common requests that you can use with this API.
 | [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
 | [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users capable of multi-factor authentication, self-service password reset and passwordless authentication. |
 | [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Get the number of users registered for each authentication method. |
+| [userRegistrationDetails](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Get the MFA registration details for all users. |
 
 ## Next steps
 

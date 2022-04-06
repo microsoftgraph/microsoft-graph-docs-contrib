@@ -2,7 +2,7 @@
 title: Get printer
 description: Retrieve the properties and relationships of a printer object.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
 ---
@@ -79,6 +79,14 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printer-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -92,7 +100,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
@@ -172,7 +179,6 @@ The following is an example of the response, when using $select=id,displayName,c
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

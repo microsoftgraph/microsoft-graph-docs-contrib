@@ -1,8 +1,8 @@
 ---
 title: "channelModerationSettings resource type"
 description: "Used to control who can start new posts and reply to posts in a channel."
-author: "bhartono"
-localization_priority: Normal
+author: "anandjo"
+ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---

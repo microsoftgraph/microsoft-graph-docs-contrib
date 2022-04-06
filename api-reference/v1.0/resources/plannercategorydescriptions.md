@@ -1,7 +1,7 @@
 ---
 title: "plannerCategoryDescriptions resource type"
 description: "The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the plan details object. There can be up to 6 categories defined. "
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
 doc_type: resourcePageType

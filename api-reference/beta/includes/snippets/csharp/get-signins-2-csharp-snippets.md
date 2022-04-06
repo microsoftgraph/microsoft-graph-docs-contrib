@@ -6,8 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("top", "10")
+};
+
 var signIns = await graphClient.AuditLogs.SignIns
-	.Request()
+	.Request( queryOptions )
+	.Filter("startsWith(appDisplayName,'Azure')")
 	.GetAsync();
 
 ```

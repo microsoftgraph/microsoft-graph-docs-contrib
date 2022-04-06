@@ -1,7 +1,7 @@
 ---
 title: "applicationServicePrincipal resource type"
 description: "A combination of an application and a servicePrincipal."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "sureshja"
 ms.prod: "applications"
 doc_type: "resourcePageType"

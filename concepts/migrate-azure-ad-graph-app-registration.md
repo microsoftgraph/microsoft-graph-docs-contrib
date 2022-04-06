@@ -2,7 +2,7 @@
 title: "Review app registration, permissions, and consent migration issues"
 description: "Describes app registration, permission, and consent migration from Azure Active Directory (Azure AD) to Microsoft Graph API."
 author: "dkershaw10"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "applications"
 ---
 
@@ -16,7 +16,7 @@ For any app update, there are three areas to consider:
 
     You do **not** have to re-register your app to migrate to Microsoft Graph. Simply update the code, test heavily, and then deploy your update.  
 
-- **Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions. Delegated permissions which were granted for Azure AD Graph will be implicitly considered granted for Microsoft Graph also. Application permissions (app roles) will need to be granted again.
+- **Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions. Delegated permissions which were granted for Azure Active Directory (Azure AD) Graph will be implicitly considered granted for Microsoft Graph also. Application permissions (app roles) will need to be granted again.
 
     If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically. Find more details about switching to MSAL in [review app authentication library changes](./migrate-azure-ad-graph-authentication-library.md).
 

@@ -1,7 +1,7 @@
 ---
 title: 'List applicationTemplates'
 description: 'Retrieve a list of applicationtemplate objects.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: 'luleonpla'
 ms.prod: 'applications'
 doc_type: 'apiPageType'
@@ -86,6 +86,14 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

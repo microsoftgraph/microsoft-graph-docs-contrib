@@ -1,7 +1,7 @@
 ---
 title: "List certifications"
 description: "Get a collection of personCertifications from the certifications navigation property."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: apiPageType
@@ -82,6 +82,14 @@ GET https://graph.microsoft.com/beta/me/profile/certifications
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-itemcertifications-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-itemcertifications-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-itemcertifications-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

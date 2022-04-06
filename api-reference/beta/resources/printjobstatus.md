@@ -2,7 +2,7 @@
 title: printJobStatus resource type
 description: Represents the current status of a print job.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
 ---

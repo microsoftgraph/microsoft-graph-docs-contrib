@@ -2,7 +2,7 @@
 author: chackman
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
@@ -55,7 +55,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}/unfollow
+POST /me/drive/items/{item-id}/unfollow
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]

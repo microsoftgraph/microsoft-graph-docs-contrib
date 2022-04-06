@@ -1,7 +1,7 @@
 ---
 title: "filterGroup resource type"
 description: "Defines a set of clauses that an object must satisfy to be considered in scope."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.prod: "applications"

@@ -2,7 +2,7 @@
 title: "toneInfo resource type"
 description: "A single DTMF event."
 author: "ananmishr"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---

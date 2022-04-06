@@ -1,7 +1,7 @@
 ---
 title: "SortField resource type"
 description: "Represents a condition in a sorting operation."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType

@@ -2,7 +2,7 @@
 title: "Remove member from chat"
 description: "Remove a conversationMember from a chat."
 author: "AkJo"
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| ChatMember.ReadWrite.All |
+|Delegated (work or school account)| ChatMember.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| ChatMember.ReadWrite.All |
 
@@ -71,6 +71,14 @@ DELETE https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec12
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-members-from-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-members-from-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-members-from-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

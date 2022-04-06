@@ -1,8 +1,8 @@
 ---
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
-localization_priority: Normal
-author: "videor"
+ms.localizationpriority: medium
+author: "davidspooner"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

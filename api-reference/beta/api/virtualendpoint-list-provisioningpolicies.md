@@ -1,8 +1,8 @@
 ---
-title: "List cloudPcProvisioningPolicy"
-description: "View the properties and relationships of all cloud PC provisioning policies."
+title: "List provisioningPolicies"
+description: "View the properties and relationships of all Cloud PC provisioning policies."
 author: "AshleyYangSZ"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) objects.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -87,16 +85,25 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcprovisioningpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcprovisioningpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcprovisioningpolicies-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
+  "isCollection": true
 }
 -->
 
@@ -108,13 +115,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-      "id": "1d164206-bf41-4fd2-8424-a3192d392273",
-      "displayName": "Display Name value",
       "description": "Description value",
+      "displayName": "Display Name value",
+      "domainJoinConfiguration": {
+          "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff",
+          "type": "hybridAzureADJoin"
+      },
+      "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
       "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-      "imageId": "Image ID value",
       "imageDisplayName": "Image Display Name value",
-      "imageType":"custom"
+      "imageId": "Image ID value",
+      "imageType":"custom",
+      "windowsSettings": {
+        "language": "en-US"
+      }
     }
   ]
 }

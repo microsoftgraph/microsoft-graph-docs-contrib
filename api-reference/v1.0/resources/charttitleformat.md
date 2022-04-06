@@ -2,7 +2,7 @@
 title: "ChartTitleFormat resource type"
 description: "Encapsulates the format properties for the chart title."
 author: "lumine2008"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "excel"
 doc_type: resourcePageType
 ---

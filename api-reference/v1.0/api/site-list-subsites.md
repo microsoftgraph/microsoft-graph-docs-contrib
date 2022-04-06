@@ -1,8 +1,7 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Get a collection of subsites defined for a site."
 doc_type: apiPageType
@@ -27,6 +26,32 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /sites/{site-id}/sites
+```
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {code}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response 
+
+If successful, this method returns a `200 OK` response code and a collection of [site][] objects in the response body. 
+
+## Example
+
+### Request
+
+The following is an example of a request.
+
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
@@ -50,10 +75,20 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 [!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-subsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-subsites-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

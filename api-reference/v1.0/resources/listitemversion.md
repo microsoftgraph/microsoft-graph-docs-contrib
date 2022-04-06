@@ -1,7 +1,7 @@
 ---
 title: "ListItemVersion resource type"
 description: "The **listItemVersion** resource represents a previous version of a ListItem resource."
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 author: "JeremyKelley"
 doc_type: resourcePageType

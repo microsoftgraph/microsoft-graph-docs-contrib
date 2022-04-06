@@ -2,7 +2,7 @@
 title: "siteSource resource type"
 description: "The container for a site associated with a custodian."
 author: "mahage-msft"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---

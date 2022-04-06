@@ -3,7 +3,7 @@ author: rahmit
 description: "Removes a sitePage from the site pages list in a site."
 ms.date: 05/07/2018
 title: Delete a page from a SharePoint site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---

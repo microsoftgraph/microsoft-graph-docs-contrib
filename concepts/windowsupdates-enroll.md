@@ -1,8 +1,8 @@
 ---
 title: "Enroll in update management by the Windows Update for Business deployment service"
 description: "When a device is enrolled in update management by the Windows Update for Business deployment service, you can use the deployment service to manage content delivered from Windows Update to that device."
-author: "Alice-at-Microsoft"
-localization_priority: Normal
+author: "aarononeal"
+ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
 ---
@@ -15,7 +15,7 @@ Today, the deployment service supports enrollment in management of Windows 10 fe
 
 ## Enroll the device in update management
 
-When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments.md). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice.md) object is automatically created if it does not already exist).
+When you enroll a device in management for a certain update category, the deployment service becomes the authority for updates of that category coming from Windows Update. As a result, devices do not receive updates of that category from Windows Update until you deploy an update using the deployment service by assigning it to a [deployment](windowsupdates-deployments.md). Devices are automatically registered with the service when enrolled in management by the service (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
 ### Request
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences and [updatableAsset](/graph/api/resources/windowsupdates-updatableasset) groups.
+You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from every [deploymentAudience](/graph/api/resources/windowsupdates-deploymentaudience) and [updatableAssetGroup](/graph/api/resources/windowsupdates-updatableassetgroup).
 
 ### Request
 

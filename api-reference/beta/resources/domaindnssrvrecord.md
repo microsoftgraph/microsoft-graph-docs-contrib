@@ -2,7 +2,7 @@
 title: "domainDnsSrvRecord resource type"
 description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

@@ -1,7 +1,7 @@
 ---
 title: "publicClientApplication resource type"
 description: "Specifies settings for non Web App or Web Api. (e.g. Mobile or other public client such as an installed application running on a desktop device)"
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
 author: "sureshja"
