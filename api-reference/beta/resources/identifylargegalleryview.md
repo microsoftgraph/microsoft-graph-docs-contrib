@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-After the large gallery view is added successfully in the call, the developers need to identify participant from the roster which is sending those large gallery view videos feeds. 
+After the large gallery view is added successfully in a call, the developers need to identify the participant from the roster which sends those large gallery view videos feeds. 
 The following example and guidance can help identify the application which can be subscribed to get the feeds.
 
 ## Sample roster with large gallery view
@@ -332,9 +332,9 @@ The following example and guidance can help identify the application which can b
 
 ## Pointers for identifying the large gallery view participant
 
-- The ApplicationType of the participants will be set as 'LargeGallery-V2'.
-- The video media stream direction will be set to 'sendReceive'.
-- The metadata will be included which will contain more details including paging.
+- The **ApplicationType** of the participants will be set as `LargeGallery-V2`.
+- The **direction** of the video media stream will be set to `sendReceive`.
+- The **metadata** will be included which will contain more details such as paging.
 
 ### Example of the large gallery view participant
 
@@ -389,7 +389,7 @@ The following example and guidance can help identify the application which can b
 
 ### Definition for deserializing metadata
 
-Following definition can be use for deserializing metadata and extracting relevant information.
+Use the following definition to deserialize the **metadata** property and extract the relevant information.
 
 ```csharp
     /// <summary>
