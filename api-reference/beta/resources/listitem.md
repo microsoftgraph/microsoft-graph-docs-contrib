@@ -39,6 +39,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 |[List documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
 |[Create documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
 |[Restore documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivity-getbyinterval.md
