@@ -527,7 +527,7 @@ items:
   - name: Develop
     expanded: true
     items:
-      - name: Get auth tokens
+      - name: Authentication and authorization
         items:
           - name: Overview
             href: auth/index.yml
