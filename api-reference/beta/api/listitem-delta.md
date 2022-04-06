@@ -1,7 +1,7 @@
 ---
 author: learafa
 description: "This method allows your app to track changes to a list and its items over time."
-title: "sites: delta"
+title: "lisItem: delta"
 localization_priority: Normal
 ms.prod: "SharePoint"
 doc_type: apiPageType
@@ -21,9 +21,8 @@ Your app should continue calling with the `@odata.nextLink` until you see an `@o
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted items are returned with an @removed object and [`deleted` facet](../resources/deleted.md).
-The @removed will include reason property, for example, "@removed": {"reason": "deleted"}. Deleted indicates the item is deleted and cannot be restored.
-Items with this deleted reason or deleted facet property should be removed from your local state.
+Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Deleted indicates the item is deleted and cannot be restored.
+Items with this  property should be removed from your local state.
 
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
@@ -144,7 +143,7 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}delta(token=1230919asd190410jlka)"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}delta?token=1230919asd190410jlka"
 }
 ```
 
@@ -163,7 +162,7 @@ Here is an example request after the initial request.
 <!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta(token='1230919asd190410jlka')
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listItem-delta-last-csharp-snippets.md)]
@@ -214,7 +213,7 @@ Content-type: application/json
             "@removed": {"reason": "deleted"}
         }
     ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta?(token='1230919asd190410jlka')"
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
 }
 ```
 
