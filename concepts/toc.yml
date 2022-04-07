@@ -708,11 +708,11 @@ items:
               - name: Installation
                 href: /powershell/microsoftgraph/installation.md?toc=/graph/toc.json
               - name: Get started
-                href: powershell/microsoftgraph/get-started.md?toc=/graph/toc.json
+                href: /powershell/microsoftgraph/get-started.md?toc=/graph/toc.json
               - name: Navigating the SDK
-                href: powershell/microsoftgraph/navigating.md?toc=/graph/toc.json
+                href: /powershell/microsoftgraph/navigating.md?toc=/graph/toc.json
               - name: App-only authentication
-                href: powershell/microsoftgraph/app-only.md?toc=/graph/toc.json
+                href: /powershell/microsoftgraph/app-only.md?toc=/graph/toc.json
       - name: Use the Toolkit
         items:
           - name: Toolkit overview

@@ -159,7 +159,7 @@ composer require microsoft/microsoft-graph
 
 ## Install the Microsoft PowerShell SDK
 
-See [Install the Microsoft Graph PowerShell SDK](../powershell/installation.md).
+See [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md).
 
 ## Install the Microsoft Graph Ruby SDK
 
