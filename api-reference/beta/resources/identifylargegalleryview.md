@@ -1,5 +1,5 @@
 --- 
-title: "How to identify the large gallery view application in the roster"
+title: "Learn how to identify the large gallery view application in the roster"
 description: "Describes how the large gallery view application can be identified in the roster."
 author: "navali-msft"
 ms.localizationpriority: medium
@@ -7,16 +7,19 @@ ms.prod: "cloud-communications"
 doc_type: conceptualPageType
 ---
 
-# How to identify the large gallery view application in the roster
+# Learn how to identify the large gallery view application in the roster
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-After the large gallery view is added successfully in a call, the developers need to identify the participant from the roster which sends those large gallery view videos feeds. 
-The following example and guidance can help identify the application which can be subscribed to get the feeds.
+In this article, you will learn how to identify the large gallery view application in the roster. 
+By identifying the large gallery view, application developer can extract relevant information and subscribe to the 
+video feed.
 
 ## Sample roster with large gallery view
+
+Following is a sample of roster received by application, once the large gallery view is successfully added to the call. 
 
 <!-- {
   "blockType": "example",

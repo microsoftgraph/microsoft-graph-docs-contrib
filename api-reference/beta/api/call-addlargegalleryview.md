@@ -52,7 +52,9 @@ If successful, this method returns a `202 Accepted` response code and an [addLar
 
 ## Example
 
-### Request
+### Example 1: Adding large gallery view to the call
+
+#### Request
 
 The following example shows how to add a large gallery view to a call.
 
@@ -70,9 +72,7 @@ Content-Length: 46
 }
 ```
 
-### Response
-
-The following is an example of the response.
+#### Response
 
 If successful, this method returns a `202 Accepted` response code and 
 an [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md) object in the response body.
@@ -98,7 +98,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 }
 ```
 
-### Notification - operation completed
+#### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
