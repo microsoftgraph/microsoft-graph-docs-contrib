@@ -2,7 +2,7 @@
 author: learafa
 description: "This method allows your app to track changes to a list and its items over time."
 title: "lisItem: delta"
-localization_priority: Normal
+ms.localizationpriority: meduim
 ms.prod: "SharePoint"
 doc_type: apiPageType
 ---
