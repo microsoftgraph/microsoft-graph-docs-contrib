@@ -23,6 +23,7 @@ An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationPointsOutcome.|
 |points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade the teacher has given the student for this assignment.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A copy of the points property that is made when the grade is released to the student.|
 
@@ -45,6 +46,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

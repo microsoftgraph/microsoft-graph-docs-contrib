@@ -133,7 +133,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
+| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -169,20 +169,25 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST /teams | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET channel message  | 20 rps | 200 rps |
+| GET 1:1/group chat message  | 20 rps | 200 rps |
+| POST channel message | 50 rps | 500 rps |
+| POST 1:1/group chat message | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
 | POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
+| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
+| Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
