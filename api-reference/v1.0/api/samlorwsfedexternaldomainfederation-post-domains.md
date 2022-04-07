@@ -62,7 +62,6 @@ If successful, this method returns a `201 Created` response code and an [externa
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externaldomainname_from_"
