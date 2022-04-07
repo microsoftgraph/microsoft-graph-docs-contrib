@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamActivityCounts"
-description: "Get the number of Microsoft Teams activity by activity type. The activity types are meetings and messages related"
+description: "Get the number of activities in Microsoft Teams teams by activity type. The activity types are related to meetings and messages."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of Microsoft Teams activity by activity type. The activity types are meetings and messages related.
+Get the number of activities in Microsoft Teams teams by activity type. The activity types are related to meetings and messages.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsTeamActivityCounts(period='D7')
+GET /reports/getTeamsTeamActivityCounts(period={period_value})
 ```
 
 ## Function parameters
@@ -87,7 +87,7 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ## Example
 
-### CSV
+### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
@@ -132,7 +132,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,Report Period,Report Date,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Channel Messages,Active Shared Channels,Active External Users,Reply Messages,Urgent Messages,Mentions
 ```
 
-### JSON
+### Example 2: JSON output
 
 The following is an example that returns JSON.
 
