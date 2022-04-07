@@ -3,7 +3,7 @@ title: "List accessAssignments"
 description: "Get a list of the delegatedAdminAccessAssignment objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 
