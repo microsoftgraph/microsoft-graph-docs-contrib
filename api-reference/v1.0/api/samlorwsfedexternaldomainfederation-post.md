@@ -68,7 +68,6 @@ If successful, this method returns a `201 Created` response code and a [samlOrWs
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_samlorwsfedexternaldomainfederation_from_"
