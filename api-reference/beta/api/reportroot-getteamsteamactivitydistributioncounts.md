@@ -25,8 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-> **Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
-
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -41,11 +40,11 @@ In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter set to text/csv or application/json.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
 
 ## Request headers
 
@@ -61,7 +60,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Report Period
@@ -73,7 +72,7 @@ The CSV file has the following headers for columns.
 - Post Messages
 - Channel Messages
 - Active Shared Channels
-- Active external Users
+- Active External Users
 - Reply Messages
 - Urgent Messages
 - Mentions
@@ -82,7 +81,7 @@ The CSV file has the following headers for columns.
 
 If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
-## Example
+## Examples
 
 ### CSV
 
@@ -90,7 +89,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "ignored",
@@ -125,7 +124,6 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
-
 Report Refresh Date,Report Period,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Channel Messages,Active Shared Channels,Active External Users,Reply Messages,Urgent Messages,Mentions
 ```
 
@@ -135,7 +133,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "ignored",
@@ -152,7 +150,6 @@ GET https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDistributionCou
 The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -163,7 +160,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 575
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDistributionCounts(period='D7')?$format=application/json&$skiptoken=D07uj", 
   "value": [
