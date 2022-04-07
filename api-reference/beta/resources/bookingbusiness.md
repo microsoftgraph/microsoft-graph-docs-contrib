@@ -19,7 +19,7 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method  | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
@@ -43,7 +43,7 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
@@ -99,8 +99,6 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -113,5 +111,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
