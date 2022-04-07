@@ -71,7 +71,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 - `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel messsage contains more than 1000 replies, `replies@odata.nextLink` will be provided for pagination. 
 
 
-> **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#Example-3:-Request-with-expand-query-option-on-replies).
+> **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-expand-query-option-on-replies).
 
 ## Request headers
 | Header        | Value                     |
