@@ -461,14 +461,12 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_listchannelmessages_3"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$expand=replies
 ```
 
