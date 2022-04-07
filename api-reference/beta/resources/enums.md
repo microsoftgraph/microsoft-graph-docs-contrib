@@ -11,6 +11,58 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### accessPackageCustomExtensionHandlerStatus values 
+
+|Member|
+|:---|
+|requestSent|
+|requestReceived|
+|unknownFutureValue|
+
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
+
+### accessReviewHistoryStatus values
+
+|Member|
+|:---|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
 ### crossTenantAccessPolicyTargetConfigurationAccessType values
 
 |Member|
@@ -69,6 +121,13 @@ Namespace: microsoft.graph
 |reviewer|
 |unknownFutureValue|
 
+### accessReviewStageFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
 ### continuousAccessEvaluationMode values 
 
 |Member|
@@ -96,13 +155,14 @@ Namespace: microsoft.graph
 
 ### appCredentialRestrictionType values
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### appKeyCredentialRestrictionType values
 
@@ -724,6 +784,8 @@ Namespace: microsoft.graph
 |hidden|
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -1050,10 +1112,10 @@ Namespace: microsoft.graph
 
 ### searchAlterationType values
 
-| Member | Description |
-|:---------------|:----------|
-|suggestion|Get search results for original user query and the suggested spelling correction information for typos in the query.|
-|modification|Get search results for corrected alterate query and the spelling correction information for typos.|
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### bucketAggregationSortProperty values
 
@@ -1693,7 +1755,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [Registry Hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1972,6 +2034,7 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### chatMessagePolicyViolationUserActionType values
 
@@ -2421,6 +2484,15 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### plannerContextState values
+
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |  
+
+
 ### policyScope values
 
 |Member|
@@ -2632,23 +2704,6 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
-|unknownFutureValue|
-
-### simulationStatus values
-
-|Member|
-|:---|
-|unknown|
-|draft|
-|inProgress|
-|scheduled|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelled|
-|excluded|
-|deleted|
-|included|
 |unknownFutureValue|
 
 ### payloadDeliveryPlatform values
@@ -2873,4 +2928,73 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
 |unknownFutureValue|

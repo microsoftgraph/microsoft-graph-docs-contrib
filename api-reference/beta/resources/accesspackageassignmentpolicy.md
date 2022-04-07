@@ -54,6 +54,9 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable. Supports `$expand`.|
+|customExtensionHandlers|[customExtensionHandler](../resources/customextensionhandler.md) collection| The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.| 
+
+
 
 ## JSON representation
 
@@ -70,42 +73,32 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id": "string",
-    "accessPackageId": "string",
-    "displayName": "string",
-    "description": "string",
-    "isDenyPolicy": false,
-    "canExtend": false,
-    "durationInDays": 365,
-    "requestorSettings": {
-        "scopeType": "string",
-        "acceptRequests": true,
-        "allowedRequestors": [{
-            "@odata.type": "#microsoft.graph.userSet"
-        }]
-    },
-    "requestApprovalSettings": {
-        "isApprovalRequired": false,
-        "isApprovalRequiredForExtension": false,
-        "isRequestorJustificationRequired": false,
-        "approvalMode": "string",
-        "approvalStages": [{
-            "approvalStageTimeOutInDays": 14,
-            "isApproverJustificationRequired": true,
-            "isEscalationEnabled": true,
-            "escalationTimeInMinutes": 11520,
-            "primaryApprovers": [{
-                "@odata.type": "#microsoft.graph.userSet"
-            }],
-            "escalationApprovers": [{
-                "@odata.type": "#microsoft.graph.userSet"
-            }]
-        }]
-    },
-    "accessReviewSettings": null,
-    "questions": [{
-        "@odata.type": "#microsoft.graph.question"
-    }]
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentPolicy",
+  "id": "String (identifier)",
+  "accessPackageId": "String",
+  "displayName": "String",
+  "description": "String",
+  "canExtend": "Boolean",
+  "durationInDays": "Integer",
+  "expirationDateTime": "String (timestamp)",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
+  "questions": [
+    {
+      "@odata.type": "microsoft.graph.accessPackageMultipleChoiceQuestion"
+    }
+  ],
+  "requestorSettings": {
+    "@odata.type": "microsoft.graph.requestorSettings"
+  },
+  "requestApprovalSettings": {
+    "@odata.type": "microsoft.graph.approvalSettings"
+  },
+  "accessReviewSettings": {
+    "@odata.type": "microsoft.graph.assignmentReviewSettings"
+  }
 }
 ```
 

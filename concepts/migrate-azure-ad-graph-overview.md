@@ -8,20 +8,18 @@ ms.prod: "applications"
 
 # Migrate Azure AD Graph apps to Microsoft Graph
 
-> [!WARNING]
-> **Azure Active Directory (Azure AD) Graph is deprecated**. To avoid loss of functionality, migrate your applications to Microsoft Graph before June 30, 2022 when Azure AD Graph API endpoints will stop responding to requests.
->
-> Microsoft will continue technical support and apply security fixes for Azure AD Graph until June 30, 2022 when all functionality and support will end. If you fail to migrate your applications to Microsoft Graph before June 30, 2022, you put their functionality and stability at risk.
-
-[Azure AD Graph is deprecated](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Update your Azure AD Graph apps to use Microsoft Graph now.
+> [!IMPORTANT]
+> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps.
 
 ## Why use Microsoft Graph?
 
-Azure AD Graph offers access to only Azure AD services. Microsoft Graph offers a single unified endpoint to access Azure AD services and other Microsoft 365 services such as Microsoft Teams, Microsoft Exchange, and Microsoft Intune. For most production apps, Microsoft Graph fully supports Azure AD scenarios.
+Microsoft Graph represents our best-in-breed API surface. It offers a single unified endpoint to access Azure AD services and Microsoft 365 services such as Microsoft Teams and Microsoft Intune. Microsoft Graph API's usage has more than doubled that of Azure AD Graph, and in the past two years we have added [167 new features](https://developer.microsoft.com/en-us/graph/changelog). All new functionalities will only be available through the Microsoft Graph.
 
 Microsoft Graph is also more secure and resilient than Azure AD Graph.
 
-In addition, Microsoft Graph supports many new Azure AD datasets and features that aren't available in Azure AD Graph, including in Windows 10 and Enterprise Mobility + Security (EMS). Switch to Microsoft Graph to take advantage of these new APIs, all through one single endpoint, including:
+Microsoft Graph has all the capabilities that have been available in Azure AD Graph and new APIs like identity protection and authentication methods. Its client libraries offer built-in support for features like retry handling, secure redirects, transparent authentication, and payload compression.
+
+Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 
 - [Microsoft 365 group management](/graph/office365-groups-concept-overview).
 - [External user invitations](/graph/api/resources/invitation).
@@ -44,6 +42,8 @@ The rest of the articles in this section help you migrate your app from Azure AD
 - Guidance describing specific differences between the APIs.
 - Links to more resources and examples to illustrate specific differences.
 - An FAQ to address other questions or concerns.
+
+Send any other questions, open issues, and feature requests through Microsoft Q&A by using the tag [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
 
 ## Next Steps
 

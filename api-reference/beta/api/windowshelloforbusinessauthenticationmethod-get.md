@@ -51,6 +51,8 @@ GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAu
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
+>**Note:** To read the **device** navigation property for another user, specify it in an `$expand` query as follows: `/users/{id}/authentication/windowsHelloForBusinessMethods/{id}?$expand=device`.
+
 ## Optional query parameters
 
 Not supported.

@@ -4,7 +4,7 @@ description: "Delete privilegedRoleAssignment."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "japere"
 ---
 
 # Delete privilegedRoleAssignment
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Delete [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## Permissions

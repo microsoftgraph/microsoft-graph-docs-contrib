@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewAttachmentItemRequestBody()
 attachmentItem := msgraphsdk.NewAttachmentItem()
 requestBody.SetAttachmentItem(attachmentItem)
 attachmentType := "file"
@@ -20,7 +20,7 @@ options := &msgraphsdk.CreateUploadSessionRequestBuilderPostOptions{
 	Body: requestBody,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(options)
 
 
 ```

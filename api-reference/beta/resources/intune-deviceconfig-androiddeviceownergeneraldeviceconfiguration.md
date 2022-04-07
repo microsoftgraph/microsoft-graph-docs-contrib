@@ -116,6 +116,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeManagedHomeScreenSignInBackground|String|Custom URL background for sign-in screen for Managed Home Screen.|
 |kioskModeManagedHomeScreenSignInBrandingLogo|String|Custom URL branding logo for sign-in screen and session pin page for Managed Home Screen.|
 |kioskModeManagedHomeScreenSignInEnabled|Boolean|Whether or not show sign-in screen for Managed Home Screen.|
+|kioskModeUseManagedHomeScreenApp|[kioskModeType](../resources/intune-deviceconfig-kioskmodetype.md)|Whether or not to use single app kiosk mode or multi-app kiosk mode. Possible values are: `notConfigured`, `singleAppMode`, `multiAppMode`.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
@@ -343,6 +344,7 @@ Here is a JSON representation of the resource.
   "kioskModeManagedHomeScreenSignInBackground": "String",
   "kioskModeManagedHomeScreenSignInBrandingLogo": "String",
   "kioskModeManagedHomeScreenSignInEnabled": true,
+  "kioskModeUseManagedHomeScreenApp": "String",
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,

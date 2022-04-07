@@ -23,6 +23,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Device and app management data](intune-onboarding-deviceandappmanagementdata.md)
 - [Device comanagement authority configuration](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Device enrollment configuration type](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restriction configuration](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)

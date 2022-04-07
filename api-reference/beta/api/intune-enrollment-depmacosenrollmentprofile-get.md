@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1438
+Content-Length: 1480
 
 {
   "value": {
@@ -101,7 +101,8 @@ Content-Length: 1438
     "zoomDisabled": true,
     "iCloudStorageDisabled": true,
     "chooseYourLockScreenDisabled": true,
-    "accessibilityScreenDisabled": true
+    "accessibilityScreenDisabled": true,
+    "autoUnlockWithWatchDisabled": true
   }
 }
 ```
