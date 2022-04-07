@@ -14803,7 +14803,9 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Delete message
-          href: api/chatmessage-delete.md
+          href: api/chatmessage-softdelete.md
+        - name: Undelete message
+          href: api/chatmessage-undoSoftdelete.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -14867,7 +14869,9 @@ items:
         - name: Update message
           href: api/chatmessage-update.md
         - name: Delete message
-          href: api/chatmessage-delete.md
+          href: api/chatmessage-softdelete.md
+        - name: Undelete message
+          href: api/chatmessage-undoSoftdelete.md
         - name: Get messages across all channels
           href: api/channel-getallmessages.md
         - name: Get messages across all chats
