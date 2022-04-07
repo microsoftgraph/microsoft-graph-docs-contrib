@@ -1,6 +1,6 @@
 ---
 title: "staffAvailabilityItem resource type"
-description: "Returns available and busy slots of a staff member."
+description: "Returns the available and busy slots of a staff member."
 author: "kwekua"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Returns the available and busy slots of staff members.
+Returns the available and busy slots of a staff member.
 
 ## Properties
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
+|availabilityItems |[availabilityItem](bookingavailability.md) collection |Each item in this collection indicates a slot and the status of the staff member.|
 |staffId |String |The ID of the staff member.|
-|availabilityItems |[availabilityItem](bookingavailability.md) |Collection of availabilityItem. Each item indicates a slot and the status of the staff member.|
 
 ## JSON representation
 
@@ -26,7 +26,7 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "staffId": "String",
-  "availabilityItems": "availabilityItem"
+  "availabilityItems": "availabilityItem",
+  "staffId": "String"
 }
 ```

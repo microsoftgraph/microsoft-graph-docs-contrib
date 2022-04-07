@@ -17,10 +17,10 @@ Indicates the status of the staff member for a given time slot.
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
-|Status |[BookingAvailabilityStatus](bookingavailabilitystatus.md) |The status of the staff member.|
-|startDateTime |dateTimeTimeZone |The start time of the time slot.|
 |endDateTime |dateTimeTimeZone |The end time of the time slot.|
-|serviceId |String |Indicates the service ID in case of 1:n appointments. If the appointment is of type 1:n, this field will be present, else null.|
+|serviceId |String |Indicates the service ID in case of 1:n appointments. If the appointment is of type 1:n, this field will be present, otherwise, `null`.|
+|status |[bookingAvailabilityStatus](bookingavailabilitystatus.md) |The status of the staff member.|
+|startDateTime |dateTimeTimeZone |The start time of the time slot.|
 
 ## JSON representation
 
@@ -28,9 +28,9 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "Status": "BookingAvailabilityStatus",
-  "startDateTime": "DateTimeInfo",
   "endDateTime": "DateTimeInfo",
-  "serviceId": "String"
+  "serviceId": "String",
+  "status": "bookingAvailabilityStatus",
+  "startDateTime": "DateTimeInfo"
 }
 ```
