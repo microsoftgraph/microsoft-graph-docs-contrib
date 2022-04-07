@@ -15269,7 +15269,7 @@ items:
             href: api/callTranscript-list.md
           - name: Get
             href: api/callTranscript-get.md
-          - name: Get Content
+          - name: Get content
             href: api/callTranscript-get-content.md
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
