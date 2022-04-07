@@ -1,21 +1,21 @@
 ---
-title: "List cloudPCs of the signed-in user"
-description: "List the cloudPC objects of the signed-in user."
+title: "List cloudPCs of the user"
+description: "List the cloudPC devices that are attributed to the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPCs of the signed-in user
+# List cloudPCs of the user
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [cloudPC](../resources/cloudpc.md) objects of the signed-in user. 
+List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user. 
 
 >[!NOTE]
->This operation returns only the following properties: Id, DisplayName, ImageDisplayName, ServicePlanId, ServicePlanName, ServicePlanType, Status, LastModifiedDateTime, AadDeviceId, StatusDetails, GracePeriodEndDateTime.
+>This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
