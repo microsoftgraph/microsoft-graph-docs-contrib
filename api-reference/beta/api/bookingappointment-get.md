@@ -1,6 +1,6 @@
 ---
 title: "Get bookingAppointment"
-description: "Get the properties and relationships of a bookingAppointment object in the specified bookingbusiness."
+description: "Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookingAppointment](../resources/bookingappointment.md) object in the response body.
 ## Example
 ### Request
 The following is an example of the request.

@@ -44,10 +44,10 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -85,8 +85,9 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicros
 
 ---
 
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

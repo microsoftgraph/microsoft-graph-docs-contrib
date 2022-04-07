@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported  |
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

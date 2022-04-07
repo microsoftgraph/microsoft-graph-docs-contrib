@@ -25,24 +25,24 @@ The previous image shows a configuration option that can also be modified via AP
 
 ### Scheduling policy
 
-The image below shows the web-app settings. For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
+The following image shows the web app settings. For more details about the scheduling policy, see [bookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
 
 :::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
 :::image type="content" source="../../../concepts/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
-**Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
+**Time increments (Time slot interval)**: Indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum lead time** indicates the minimum time before an appointment can be made or cancelled.
+**Minimum lead time**: Indicates the minimum time before an appointment can be made or cancelled.
 
-**Maximum Lead time** indicates the maximum time before an appointment can be made.  
+**Maximum Lead time**: Indicates the maximum time before an appointment can be made.  
 
-**Allow staff selection** is if a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to true.
+**Allow staff selection**: If a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in the [bookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to `true`.
 
 > [!NOTE]
-> This setting is called **Staff control** in the Bookings web app.
+> The **Allow staff selection** setting is called **Staff control** in the Bookings web app.
 
-## Service level settings
+## Service-level settings
 
 ### Scheduling
 
@@ -50,11 +50,11 @@ At a service, the scheduling policy is inherited from the business. The customer
 
 ### Main policy  
 
-If a scheduling policy exists at both service level and business level, the service level policy will take precedence.
+If a scheduling policy exists at both service-level and business-level, the service-level policy will take precedence.
 
 ### Partially set policies
 
-If the user doesn't set a policy for the service level policy, it will default to the business level policy setting.
+If the user doesn't set a policy for the service-level policy, it will default to the business-level policy setting.
 
 ### Pre-Buffer
 
