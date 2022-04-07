@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getCloudPcLaunchInfo"
-description: "Get the cloudPCLaunchInfo for a calling user's Cloud PC."
+description: "Get the Cloud PC launch information for a calling user's Cloud PC."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
