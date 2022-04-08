@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingbusiness.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingstaffavailabilityresponse.md).
 
 ## Permissions
 
@@ -35,7 +37,8 @@ Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 
 |Name |Description |
 |:--------------|:------------|
-|Authorization |Bearer {code} |
+|Authorization |Bearer {code}. Required. |
+|Content-Type| application/json. Required.|
 
 ## Request body
 
@@ -43,13 +46,21 @@ In the request body, pass the list of staff IDs along with two other parameters 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object.
+If successful, this method returns 200 and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object is returned.
 
 ## Example
 
 ### Request
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "bookingbusiness_getstaffavailability"
+}-->
 
 ```http
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+Content-Type: application/json 
 
 { 
     "staffIds": [ 
@@ -68,7 +79,17 @@ If successful, this method returns a `200 OK` response code and a [staffAvailabi
 
 ### Response
 
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bookingStaffAvailabilityResponse",
+} -->
+
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
 { 
     "staffAvailabilityResponse": [ 
@@ -149,79 +170,5 @@ In the response body, for each staff member, their available windows are returne
 |slotAvailable | The staff member has an appointment in the given window. The appointment is for a service which has **maxAttendeecount** more than 1. The customer can join this appointment as there are empty slots available.   |
 |Busy | The staff member has an appointment in the given window. Either the staff member has an appointment for a service which has **maxAttendeecount** equal to 1 or the staff has an appointment for a service with **maxAttendeecount** more than 1 but without any available slots.  |
 
-### Example
 
-```http
-
-{
-    "staffAvailabilityResponse": [
-        {
-            "staffId": "311a5454-08b2-4560-ba1c-f715e938cb79",
-            "availabilityItems": [
-                {
-                    "status": "Available",
-                    "startDateTime": {
-                        "dateTime": "2022-01-24T08:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "endDateTime": {
-                        "dateTime": "2022-01-24T15:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "serviceId": ""
-                },
-                {
-                    "status": "Busy",
-                    "startDateTime": {
-                        "dateTime": "2022-01-24T15:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "endDateTime": {
-                        "dateTime": "2022-01-24T16:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976"
-                },
-                {
-                    "status": "Available",
-                    "startDateTime": {
-                        "dateTime": "2022-01-24T16:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "endDateTime": {
-                        "dateTime": "2022-01-24T17:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "serviceId": ""
-                },
-                {
-                    "status": "Available",
-                    "startDateTime": {
-                        "dateTime": "2022-01-25T08:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "endDateTime": {
-                        "dateTime": "2022-01-25T17:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "serviceId": ""
-                },
-                {
-                    "status": "Available",
-                    "startDateTime": {
-                        "dateTime": "2022-01-26T08:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "endDateTime": {
-                        "dateTime": "2022-01-26T17:00:00",
-                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)"
-                    },
-                    "serviceId": ""
-                }
-            ]
-        }
-    ]
-}
-```
 -->
-
