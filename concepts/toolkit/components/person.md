@@ -66,8 +66,9 @@ You can use several properties to customize the component.
 | vertical-layout   | verticalLayout   | Set the component layout to vertical.|
 | view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
-| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
-| line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
+| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `jobTitle`.|
+| line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `department`.|
+| line4-property  | line4Property  | Sets the property of the personDetails to use for the fourth line of text. Default is `email`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
 
 ## CSS custom properties
