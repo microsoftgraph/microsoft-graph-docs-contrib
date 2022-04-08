@@ -285,9 +285,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_listchannelmessages_2"
@@ -461,7 +458,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_listchannelmessages_2"
