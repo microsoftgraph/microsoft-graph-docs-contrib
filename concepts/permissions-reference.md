@@ -255,6 +255,8 @@ None.
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage all delegated permission grants | Allows the app to grant or revoke any delegated permission for any API (including Microsoft Graph), without a signed-in user. | Yes |
+|BookingsAppointment.ReadWrite.All |  |  | Yes |
+| Bookings.Read.All |  |  | Yes |
 
 ### Remarks
 
