@@ -11221,8 +11221,10 @@ items:
       - name: Customer relationship management
         items:
         - name: Delegated admin relationships
-          displayName: Partner Center, CSP, VAR
+          displayName: GDAP, Partner Center, CSP, VAR
           items:
+          - name: Overview
+            href: resources/delegatedadminrelationships-api-overview.md
           - name: Delegated admin relationships
             href: resources/delegatedadminrelationship.md
             items:
