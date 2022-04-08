@@ -34,7 +34,8 @@
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	},
-  "ChangeList": [
+	{
+		"ChangeList": [
 		 {
 			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
 			  "ApiChange": "Method",
