@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Reports.Read.All                         |
 
 > **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -44,6 +45,7 @@ In the request URL, provide the following parameters with a valid value.
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, {date_value} should be a date from that range. |
 
 > **Note:** You need to set either **period** or **date** in the request URL.
+
 ## Optional query parameters
 
 This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is `text/csv`. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to `text/csv` or `application/json`.
@@ -130,6 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 Report Refresh Date,Team Name,Team Id,Team Type,Last Activity Date,Report Period,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Reply Messages,Channel Messages,Urgent Messages,Mentions,Active Shared Channels,Active External Users
 ```
 
@@ -166,6 +169,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 876
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDetail(period='D7')?$format=application/json&$skiptoken=D07uj", 
   "value": [

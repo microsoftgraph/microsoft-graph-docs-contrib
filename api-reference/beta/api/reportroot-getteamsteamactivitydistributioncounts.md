@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Reports.Read.All                         |
 
 > **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -124,6 +125,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 Report Refresh Date,Report Period,Active Users,Active Channels,Guests,Reactions,Meetings Organized,Post Messages,Channel Messages,Active Shared Channels,Active External Users,Reply Messages,Urgent Messages,Mentions
 ```
 
@@ -160,6 +162,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 575
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/reports/getTeamsTeamActivityDistributionCounts(period='D7')?$format=application/json&$skiptoken=D07uj", 
   "value": [
