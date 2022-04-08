@@ -63,7 +63,8 @@ You can use several properties to customize the component.
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `mail` and `jobTitle` by default) |
+| vertical-layout   | verticalLayout   | Set the component layout to vertical.|
+| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
 | line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
 | line3-property  | line3Property  | Sets the property of the personDetails to use for the third line of text. Default is `jobTitle`.|
@@ -117,6 +118,7 @@ Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with cus
 `line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
 `line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
 `line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line4clicked` | Fired when line4 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -133,6 +135,7 @@ The `mgt-person` component supports several [templates](../customize-components/
 | line1 | person: The person details object | The template for the first line of person metadata. |
 | line2 | person: The person details object | The template for the second line of person metadata. |
 | line3 | person: The person details object | The template for the third line of person metadata. |
+| line4 | person: The person details object | The template for the fourth line of person metadata. |
 
 The following example defines a template for the person component.
 
@@ -164,6 +167,29 @@ The following example defines a template for the person component.
   <template data-type="line3">
     <div>
       Loves MGT
+    </div>
+  </template>
+</mgt-person>
+
+<mgt-person view="fourLines">
+  <template data-type="line1">
+    <div>
+      Hello, my name is: {{person.displayName}}
+    </div>
+  </template>
+  <template data-type="line2">
+    <div>
+      Musician
+    </div>
+  </template>
+  <template data-type="line3">
+    <div>
+      Calif records
+    </div>
+  </template>
+  <template data-type="line4">
+    <div>
+      {{person.mail}}
     </div>
   </template>
 </mgt-person>
