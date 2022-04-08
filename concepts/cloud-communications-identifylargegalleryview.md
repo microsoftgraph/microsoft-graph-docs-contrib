@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
 
 In this article, you will learn how to identify the large gallery view application in the roster. 
 By identifying the large gallery view, application developer can extract relevant information and subscribe to the 
