@@ -3,7 +3,7 @@ title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 

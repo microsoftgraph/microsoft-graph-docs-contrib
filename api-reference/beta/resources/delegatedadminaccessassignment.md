@@ -3,7 +3,7 @@ title: "delegatedAdminAccessAssignment resource type"
 description: "Represents an assignment of administrative roles to a Microsoft partner's access container."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
 ---
 

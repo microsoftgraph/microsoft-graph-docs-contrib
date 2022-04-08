@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teams/{teamsId}/allChannels
+GET /teams/{team-id}/allChannels
 ```
 
 ## Optional query parameters
@@ -102,7 +102,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
@@ -145,7 +145,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }

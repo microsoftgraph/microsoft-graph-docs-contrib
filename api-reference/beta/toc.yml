@@ -11223,8 +11223,10 @@ items:
       - name: Customer relationship management
         items:
         - name: Delegated admin relationships
-          displayName: Partner Center, CSP, VAR
+          displayName: GDAP, Partner Center, CSP, VAR
           items:
+          - name: Overview
+            href: resources/delegatedadminrelationships-api-overview.md
           - name: Delegated admin relationships
             href: resources/delegatedadminrelationship.md
             items:
@@ -14035,6 +14037,8 @@ items:
             href: api/reportroot-getteamsuseractivitydistributionusercounts.md
           - name: Get distribution total user counts
             href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
+          - name: Get total distribution activity counts
+            href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
