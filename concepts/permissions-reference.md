@@ -688,7 +688,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Delegated admin relationship permissions
+## Granular delegated admin privileges (GDAP) permissions
 
 #### Delegated permissions
 
