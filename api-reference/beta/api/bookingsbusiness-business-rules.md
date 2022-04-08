@@ -25,7 +25,7 @@ The previous image shows a configuration option that can also be modified via AP
 
 ### Scheduling policy
 
-The following image shows the web app settings. For more details about the scheduling policy, see [bookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
+The following image shows the web app settings. For more details about the scheduling policy, see [bookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy).
 
 :::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
