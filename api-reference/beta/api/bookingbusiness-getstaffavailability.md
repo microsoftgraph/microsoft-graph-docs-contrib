@@ -1,17 +1,17 @@
 ---
-title: "bookingsBusiness- getStaffAvailability"
-description: "Learn how to get the availability information of staff members of a Booking Calendar."
+title: "bookingsBusiness: getStaffAvailability"
+description: "Learn how to get the availability information of staff members of a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
-# bookingsBusiness- getStaffAvailability
+# bookingsBusiness: getStaffAvailability
 
 Namespace: microsoft.graph
 
-Get the availability information of staff members of a Microsoft Bookings calendar.
+Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingbusiness.md).
 
 ## Permissions
 
@@ -39,11 +39,11 @@ Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 
 ## Request body
 
-In the request body, pass the list of staff IDs along with 2 other parameters of [dateTimeTimeZone resource type](/graph/resources/datetimetimezone) called **startDateTime** and **endDateTime**. These correspond to the two timestamps between which the staff availability will be returned.
+In the request body, pass the list of staff IDs along with two other parameters of [dateTimeTimeZone resource type](/graph/resources/datetimetimezone) called **startDateTime** and **endDateTime**. These correspond to the two timestamps between which the staff availability will be returned.
 
 ## Response
 
-If successful, this method returns 200 and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object is returned.
+If successful, this method returns a `200 OK` response code and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object.
 
 ## Example
 
