@@ -1,7 +1,7 @@
 {
     "changelog": [
         {
-            ChangeList : [ 
+            "ChangeList": [ 
               {
                 "Id" : "ee987293-c132-4e6a-ae6e-2dc77054c47c",
                 "ApiChange": "Method",
