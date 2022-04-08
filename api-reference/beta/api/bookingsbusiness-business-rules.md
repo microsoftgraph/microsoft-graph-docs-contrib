@@ -19,21 +19,11 @@ If an appointment is created or updated via [Create bookingAppointment](bookingb
 
 ### Business hours
 
-:::image type="content" source="../../../concepts/images/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
-
-:::image type="content" source="../../../concepts/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
-
-The previous image shows a configuration option that can also be modified via API.
-
 Use the (API that can be used to modify businessHours) to modify **businessHours**. Note that an appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
-The image below shows the web-app settings. For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
-
-:::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
-
-:::image type="content" source="../../../concepts/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
+For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
