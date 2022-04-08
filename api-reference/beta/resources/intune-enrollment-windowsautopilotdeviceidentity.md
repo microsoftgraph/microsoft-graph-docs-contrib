@@ -54,6 +54,9 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
 |displayName|String|Display Name|
+|deviceAccountUpn|String|Surface Hub Device Account Upn|
+|deviceAccountPassword|String|Surface Hub Device Account Password|
+|deviceFriendlyName|String|Surface Hub Device Friendly Name|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -92,7 +95,10 @@ Here is a JSON representation of the resource.
   "azureActiveDirectoryDeviceId": "String",
   "azureAdDeviceId": "String",
   "managedDeviceId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "deviceAccountUpn": "String",
+  "deviceAccountPassword": "String",
+  "deviceFriendlyName": "String"
 }
 ```
 

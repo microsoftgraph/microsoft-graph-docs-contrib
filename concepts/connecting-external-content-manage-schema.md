@@ -67,11 +67,12 @@ If a property is retrievable, its value can be returned in search results. Any p
 
 ### Refinable
 
-If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page.
+If a property is refinable, an admin can configure it as a custom filter in the Microsoft Search results page. A `refinable` property cannot be `searchable`.
 
 ![Refine results by tags, a refinable property](./images/connectors-images/connecting-external-content-manage-schema-5.svg)
 
 *Refine results by `tags`, a refinable property.*
+
 
 ## Semantic labels
 
@@ -188,5 +189,5 @@ Adding a semantic label can affect experiences like Relevance and Viva Topics.
 - [Add items to the connection](./connecting-external-content-manage-items.md)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
-- [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)
+- [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart)
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewWebUrlRequestBody()
 webUrl := "webUrl value"
 requestBody.SetWebUrl(&webUrl)
 options := &msgraphsdk.GetNotebookFromWebUrlRequestBuilderPostOptions{

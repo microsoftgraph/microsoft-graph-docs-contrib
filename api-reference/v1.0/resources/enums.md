@@ -11,6 +11,39 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### accessReviewExpirationBehavior values
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### allowedTargetScope values
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
 ### accessPackageAssignmentFilterByCurrentUserOptions values
 
 |Member|
@@ -1907,4 +1940,25 @@ Possible values for user account types (group membership), per Windows definitio
 |priceVaries|
 |callUs|
 |notSet|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
 |unknownFutureValue|

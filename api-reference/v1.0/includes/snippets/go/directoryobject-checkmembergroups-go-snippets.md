@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewGroupIdsRequestBody()
 requestBody.SetGroupIds( []String {
 	"f448435d-3ca7-4073-8152-a1fd73c0fd09",
 	"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6",
@@ -19,7 +19,7 @@ options := &msgraphsdk.CheckMemberGroupsRequestBuilderPostOptions{
 	Body: requestBody,
 }
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).CheckMemberGroups().Post(options)
+result, err := graphClient.DirectoryObjectsById(&directoryObjectId).CheckMemberGroups(directoryObject-id).Post(options)
 
 
 ```
