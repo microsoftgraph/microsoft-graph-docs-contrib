@@ -37,7 +37,7 @@ The following image shows the web app settings. For more details about the sched
 
 **Maximum Lead time**: Indicates the maximum time before an appointment can be made.  
 
-**Allow staff selection**: If a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in the [bookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to `true`.
+**Allow staff selection**: If a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in the [bookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy.md) to `true`.
 
 > [!NOTE]
 > The **Allow staff selection** setting is called **Staff control** in the Bookings web app.
