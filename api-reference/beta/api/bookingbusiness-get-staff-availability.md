@@ -31,7 +31,7 @@ Get /bookingBusinesses/{id}/getStaffAvailability
 
 #### Request body
 
-In the request body, pass the list of staff IDs along with 2 other parameters of [dateTimeTimeZone resource type](../../v1.0/resources/datetimetimezone.md) called **startDateTime** and **endDateTime**. These correspond to the 2 timestamps between which the staff availability will be returned.
+In the request body, pass the list of staff IDs along with 2 other parameters of [dateTimeTimeZone resource type](/graph/resources/datetimetimezone) called **startDateTime** and **endDateTime**. These correspond to the two timestamps between which the staff availability will be returned.
 
 ##### Example
 
