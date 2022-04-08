@@ -60,11 +60,11 @@ Do not supply a request body for this method.
 
 If successful, this action returns a `204 No Content` response code.
 
-## Example 1 :
+## Examples
 
-### Soft-Delete message in a chat
+### Example 1: Soft-Delete message in a chat
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "chatmessagethis.softdelete"
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{c
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,11 +86,9 @@ POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{c
 HTTP/1.1 204 No Content
 ```
 
-## Example 2 :
+### Example 2: Soft-Delete message in a channel
 
-### Soft-Delete message in a channel
-
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "chatmessagethis.softdelete"
@@ -101,7 +99,7 @@ POST https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/messa
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,11 +110,9 @@ POST https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/messa
 HTTP/1.1 204 No Content
 ```
 
-## Example 3 :
+### Example 3: Soft-Delete message of a reply.
 
-### Soft-Delete message of a reply.
-
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "chatmessagethis.softdelete"
@@ -127,7 +123,7 @@ POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{c
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
