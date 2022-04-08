@@ -1,5 +1,5 @@
 ---
-title: "getStaffAvailability"
+title: "bookingsBusiness- getStaffAvailability"
 description: "Learn how to get the availability information of staff members of a Booking Calendar."
 ms.localizationpriority: medium
 author: kwekua
@@ -7,7 +7,9 @@ ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
-# getStaffAvailability
+# bookingsBusiness- getStaffAvailability
+
+Namespace: microsoft.graph
 
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
@@ -25,37 +27,120 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Get /bookingBusinesses/{id}/getStaffAvailability
+Get /solutions/bookingBusinesses/{id}/getStaffAvailability
 
 ```
 
-#### Request body
+## Request header
+
+|Name |Description |
+|:--------------|:------------|
+|Authorization |Bearer {code} |
+
+## Request body
 
 In the request body, pass the list of staff IDs along with 2 other parameters of [dateTimeTimeZone resource type](/graph/resources/datetimetimezone) called **startDateTime** and **endDateTime**. These correspond to the two timestamps between which the staff availability will be returned.
 
-##### Example
+## Response
+
+If successful, this method returns 200 and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object is returned.
+
+## Example
 
 ### Request
 
 ```http
 
 { 
-    "staffIds": [
-        "311a5454-08b2-4560-ba1c-f715e938cb79"
-    ],
-    "startDateTime": {
-        "dateTime": "2022-01-25T00: 00: 00",
-        "timeZone": "India Standard Time"
-    },
-    "endDateTime": {
-        "dateTime": "2022-01-26T17: 00: 00",
-        "timeZone": "Pacific Standard Time"
-    }
+    "staffIds": [ 
+        "311a5454-08b2-4560-ba1c-f715e938cb79" 
+    ], 
+    "startDateTime": { 
+        "dateTime": "2022-01-25T00: 00: 00", 
+        "timeZone": "India Standard Time" 
+    }, 
+    "endDateTime": { 
+        "dateTime": "2022-01-26T17: 00: 00", 
+        "timeZone": "Pacific Standard Time" 
+    } 
 }
 ```
 
-## Response
+### Response
 
+```http
+
+{ 
+    "staffAvailabilityResponse": [ 
+        { 
+            "staffId": "311a5454-08b2-4560-ba1c-f715e938cb79", 
+            "availabilityItems": [ 
+                { 
+                    "status": "Available", 
+                    "startDateTime": { 
+                        "dateTime": "2022-01-24T08:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "endDateTime": { 
+                        "dateTime": "2022-01-24T15:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "serviceId": "" 
+                }, 
+                { 
+                    "status": "Busy", 
+                    "startDateTime": { 
+                        "dateTime": "2022-01-24T15:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "endDateTime": { 
+                        "dateTime": "2022-01-24T16:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976" 
+                }, 
+                { 
+                    "status": "Available", 
+                    "startDateTime": { 
+                        "dateTime": "2022-01-24T16:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "endDateTime": { 
+                        "dateTime": "2022-01-24T17:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "serviceId": "" 
+                }, 
+                { 
+                    "status": "Available", 
+                    "startDateTime": { 
+                        "dateTime": "2022-01-25T08:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "endDateTime": { 
+                        "dateTime": "2022-01-25T17:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "serviceId": "" 
+                }, 
+                { 
+                    "status": "Available", 
+                    "startDateTime": { 
+                        "dateTime": "2022-01-26T08:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "endDateTime": { 
+                        "dateTime": "2022-01-26T17:00:00", 
+                        "timeZone": "(UTC-08:00) Pacific Time (US & Canada)" 
+                    }, 
+                    "serviceId": "" 
+                } 
+            ] 
+        } 
+    ] 
+}
+```
+<!-- 
 In the response body, for each staff member, their available windows are returned. The types of status of the windows are explained below.
 
 |Type      | Explanation              |
@@ -138,3 +223,5 @@ In the response body, for each staff member, their available windows are returne
     ]
 }
 ```
+-->
+

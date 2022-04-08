@@ -11,7 +11,9 @@ doc_type: conceptualPageType
 
 When an appointment is created by a non-administrator user, Microsoft Bookings will use the business rules which are configured for the Bookings calendar. However, administrators have the authority to override Bookings rules in a few cases.
 
-In the case of an end customer, either via graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.
+In the case of an end customer, either via Microsoft Graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.
+
+If an appointment is created or updated via [Create bookingAppointment](bookingbusiness-post-appointments.md) or [Update bookingAppointment](bookingappointment-update.md) using Application permissions, the business rules given below should be followed.
 
 ## Business settings
 
@@ -21,28 +23,30 @@ In the case of an end customer, either via graph APIs (using application permiss
 
 :::image type="content" source="../../../concepts/business-hrs.png" alt-text="Screenshot showing business hours from Monday to Saturday and Sunday as a day off":::
 
-The previous image shows a configuration option that can also be modified via API. Use the (API that can be used to modify businessHours) to modify **businessHours**. Note that an appointment can't be set outside the business hours.
+The previous image shows a configuration option that can also be modified via API.
+
+Use the (API that can be used to modify businessHours) to modify **businessHours**. Note that an appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
-The following image shows the web app settings. For more details about the scheduling policy, see [bookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy).
+The image below shows the web-app settings. For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
 
 :::image type="content" source="../../../concepts/images/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
 :::image type="content" source="../../../concepts/default-schd-policy.png" alt-text="Screenshot showing default scheduling policy for a Bookings calendar":::
 
-**Time increments (Time slot interval)**: Indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
+**Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum lead time**: Indicates the minimum time before an appointment can be made or cancelled.
+**Minimum lead time** indicates the minimum time before an appointment can be made or cancelled.
 
-**Maximum Lead time**: Indicates the maximum time before an appointment can be made.  
+**Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
-**Allow staff selection**: If a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in the [bookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy.md) to `true`.
+**Allow staff selection** is if a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to true.
 
 > [!NOTE]
-> The **Allow staff selection** setting is called **Staff control** in the Bookings web app.
+> This setting is called **Staff control** in the Bookings web app.
 
-## Service-level settings
+## Service level settings
 
 ### Scheduling
 
@@ -50,11 +54,11 @@ At a service, the scheduling policy is inherited from the business. The customer
 
 ### Main policy  
 
-If a scheduling policy exists at both service-level and business-level, the service-level policy will take precedence.
+If a scheduling policy exists at both service level and business level, the service level policy will take precedence.
 
 ### Partially set policies
 
-If the user doesn't set a policy for the service-level policy, it will default to the business-level policy setting.
+If the user doesn't set a policy for the service level policy, it will default to the business level policy setting.
 
 ### Pre-Buffer
 
