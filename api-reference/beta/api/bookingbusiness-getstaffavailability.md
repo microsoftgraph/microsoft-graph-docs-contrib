@@ -1,6 +1,6 @@
 ---
 title: "bookingsBusiness: getStaffAvailability"
-description: "Learn how to get the availability information of staff members of a Booking Calendar."
+description: "Learn how to get the availability information of staff members of a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
