@@ -72,3 +72,8 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 ## Permissions
 
 To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#delegated-admin-relationship-permissions).
+
+
+## See also
+
++ [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
