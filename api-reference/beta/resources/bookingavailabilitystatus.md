@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Enum indicating the status of a staff member.
 
 ## Properties

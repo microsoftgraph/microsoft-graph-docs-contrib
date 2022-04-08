@@ -9,6 +9,10 @@ doc_type: conceptualPageType
 
 # Business rules validation
 
+Namespace: microsoft.graph
+
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 When an appointment is created by a non-administrator user, Microsoft Bookings will use the business rules which are configured for the Bookings calendar. However, administrators have the authority to override Bookings rules in a few cases.
 
 In the case of an end customer, either via Microsoft Graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.

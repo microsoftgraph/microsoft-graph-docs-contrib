@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Indicates the status of the staff member for a given time slot.
 
 ## Properties

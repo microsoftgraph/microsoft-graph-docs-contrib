@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Returns the available and busy slots of a staff member.
 
 ## Properties
