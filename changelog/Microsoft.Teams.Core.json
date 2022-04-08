@@ -4,8 +4,8 @@
       "ChangeList": [
         {
           "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "LIST",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "expand",
           "ChangeType": "Addition",
           "Description": "Enabled 'expand' query parameter for list channel messages api.",
           "Target": "channelMessage"
@@ -22,8 +22,8 @@
       "ChangeList": [
         {
           "Id": "3580c1e4-e1bb-4611-843c-42e851863c3f",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "LIST",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "expand",
           "ChangeType": "Addition",
           "Description": "Enabled 'expand' query parameter for list channel messages api.",
           "Target": "channelMessage"
