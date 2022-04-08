@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isStateSessionEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isStateSessionEnabled** property to [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Description": "Added the **isStateSessionEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource. Use this property to enable or disable validation of the **state** parameter for apps that use the OAuth 2.0 authorization code grant flow.",
           "Target": "onPremisesPublishing"
         }
       ],
