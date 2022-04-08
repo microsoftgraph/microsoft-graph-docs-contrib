@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Add the large gallery view to a call.
 
-For more information about how to identify the large gallery view participant, see [identifyLargeGalleryView](../resources/identifylargegalleryview.md).
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

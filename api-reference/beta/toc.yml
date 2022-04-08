@@ -1569,10 +1569,6 @@ items:
           href: api/call-logteleconferencedevicequality.md
         - name: Add large gallery view
           href: api/call-addlargegalleryview.md
-        - name: Concepts
-          items:
-          - name: Identify large gallery view app
-            href: resources/identifylargegalleryview.md
       - name: Call records
         items:
         - name: Overview
