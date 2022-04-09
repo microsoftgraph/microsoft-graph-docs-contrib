@@ -25,6 +25,11 @@ Returns the available and busy slots of staff members.
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.staffAvailabilityResponse"
+}-->
+
 ``` json
 {
   "staffAvailabilityResponse": "staffAvailability"

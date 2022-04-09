@@ -26,6 +26,11 @@ Represents the available and busy time slots of a Bookings [staff member](bookin
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.staffAvailabilityItem"
+}-->
+
 ``` json
 {
   "availabilityItems": "availabilityItem",

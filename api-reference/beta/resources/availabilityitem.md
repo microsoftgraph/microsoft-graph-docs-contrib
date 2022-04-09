@@ -28,6 +28,11 @@ Indicates the status of a [staff member](bookingstaffmember.md) for a given time
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.availabilityItem"
+}-->
+
 ``` json
 {
   "endDateTime": "DateTimeInfo",
