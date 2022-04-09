@@ -11220,7 +11220,7 @@ items:
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
-        - name: Delegated admin relationships
+        - name: Granular delegated admin privileges (preview)
           displayName: GDAP, Partner Center, CSP, VAR
           items:
           - name: Overview

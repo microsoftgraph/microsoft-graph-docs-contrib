@@ -1,13 +1,13 @@
 ---
-title: "Delegated admin privileges (DAP) API overview"
-description: "Delegated admin privileges allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
+title: "Granular delegated admin privileges (GDAP) API overview (preview)"
+description: "Granular delegated admin privileges (GDAP) allow Microsoft partners to configure and request granular and time-bound access to their customers' environments, allowing customers to enforce a least-privileged access for Microsoft partners."
 author: "adtangir"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
 ---
 
-# Delegated admin privileges (DAP) API overview
+# Granular delegated admin privileges (GDAP) API overview (preview)
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 As part of the Microsoft Partner Center ecosystem, Microsoft partners in the Cloud Solution Provider, Value Added Reseller, or Advisor programs can perform administrative operations on their customer tenants to help manage the customer's services, for example, Azure AD and Microsoft 365. This capability previously allowed partners to assume a Global Administrator role in the customer tenant indefinitely, creating potential security exposures and limiting market potential.
 
-**Delegated admin privileges (DAP)** provide partners with least-privileged access to their customer tenants following the [Zero Trust cybersecurity model](/security/zero-trust/). Through DAP, partners configure and request granular and time-bound access to their customers' environments, and customers must explicitly grant this least-privileged access to partners. In addition, partners must request specific roles for customer tenant administration for a definite amount of time. This control eliminates the need for partners to have the Global Administrator role in their customer's tenant but rather, they now have lesser privileged permissions that they absolutely need for delegated administrative tasks.
+**Granular delegated admin privileges (GDAP)** provide partners with least-privileged access to their customer tenants following the [Zero Trust cybersecurity model](/security/zero-trust/). Through GDAP, partners configure and request granular and time-bound access to their customers' environments, and customers must explicitly grant this least-privileged access to partners. In addition, partners must request specific roles for customer tenant administration for a definite amount of time. This control eliminates the need for partners to have the Global Administrator role in their customer's tenant but rather, they now have lesser privileged permissions that they absolutely need for delegated administrative tasks.
 
-For more information about DAP, see:
+For more information about GDAP, see:
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 + [Least-privileged roles by task](/partner-center/gdap-least-privileged-roles-by-task)
 
-## Use cases for delegated admin APIs
+## Use cases for GDAP APIs
 
-This section describes the ways that Microsoft partners can programmatically manage delegated admin relationships for their customers.
+This section describes the ways that Microsoft partners can use the GDAP APIs to programmatically manage delegated admin relationships for their customers.
 
 ### Delegated admin relationship
 
@@ -71,4 +71,9 @@ This section describes the ways that Microsoft partners can programmatically man
 
 ## Permissions
 
-To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [delegated admin privileges permissions](/graph/permissions-reference#delegated-admin-relationship-permissions).
+To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#delegated-admin-relationship-permissions).
+
+
+## See also
+
++ [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
