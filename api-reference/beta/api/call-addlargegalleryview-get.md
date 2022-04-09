@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get call
+# Get addLargeGalleryView
 
 Namespace: microsoft.graph
 
