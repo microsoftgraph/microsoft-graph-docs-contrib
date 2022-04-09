@@ -78,15 +78,9 @@ If successful, this action returns a `200 OK` response code and an [informationP
 
 ## Examples
 
-<<<<<<< HEAD
-### Response
-
-The following is an example of the response.
-=======
 ### Request
 
 The following is an example of a request.
->>>>>>> 478058bd54e25400f577bda41fe70aeb2cae6be3
 
 <!-- {
   "blockType": "request",
