@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `listLabels` API is deprecated and will stop returning data on August 30, 2022. Please use the new [list sensitivityLabels API](./security-list-sensitivitylabels.md).
+> This API is deprecated and will stop returning data on January 1, 2023. Please use the new [list sensitivity labels API](./security-list-sensitivitylabels.md).
 
 Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.
 

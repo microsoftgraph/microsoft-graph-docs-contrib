@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `extractLabel` API is deprecated and will stop returning data on August 30, 2022. Please use the new [extractContentLabel API](./security-sensitivitylabel-extractcontentlabel.md).
+> This API is deprecated and will stop returning data on January 1, 2023. Please use the new [Extract content label API](./security-sensitivitylabel-extractcontentlabel.md).
 
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 

@@ -31,20 +31,18 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To get labels available to the signed-in user or specified user:
+To get labels available to the signed-in user (delegated permission) or specified user (application permission):
+
 ``` http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels
 GET /me/security/informationProtection/sensitivityLabels
 ```
 
-Listing labels on behalf of another user requires the application permission `InformationProtectionPolicy.Read.All`.
+To get labels available to the organization (application permission):
 
-To get labels available to the organization:
 ```http
 GET /security/informationProtection/sensitivityLabels
 ```
-
-Listing labels for the organization requires the application permission `InformationProtectionPolicy.Read.All`.
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -71,14 +69,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-To get labels available to the signed-in user or specified user:
-
 ``` http
 GET https://graph.microsoft.com/beta/users/{userEmail}/security/informationProtection/sensitivityLabels
 GET https://graph.microsoft.com/beta/me/security/informationProtection/sensitivityLabels
 ```
-
-To get labels available to the organization:
 
 ``` http
 GET https://graph.microsoft.com/beta/security/informationProtection/sensitivityLabels
@@ -86,7 +80,9 @@ GET https://graph.microsoft.com/beta/security/informationProtection/sensitivityL
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

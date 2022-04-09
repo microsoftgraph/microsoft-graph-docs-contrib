@@ -161,7 +161,9 @@ User-agent: ContosoLobApp/1.0
 ```
 
 ### Response
->
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

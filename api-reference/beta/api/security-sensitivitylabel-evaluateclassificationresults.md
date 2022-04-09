@@ -120,7 +120,9 @@ User-agent: ContosoLOBApp/1.0
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -78,7 +78,10 @@ If successful, this action returns a `200 OK` response code and an [informationP
 
 ## Examples
 
-### Request
+### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.evaluateremoval"

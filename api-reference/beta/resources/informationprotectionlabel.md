@@ -1,13 +1,13 @@
 ---
-title: "informationProtectionLabel resource type"
-description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
+title: "informationProtectionLabel resource type (deprecated)"
+description: "Describes the information protection label that details how to properly apply a sensitivity label to information. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# informationProtectionLabel resource type
+# informationProtectionLabel resource type (deprecated)
 
 Namespace: microsoft.graph
 

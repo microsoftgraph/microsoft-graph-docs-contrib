@@ -434,7 +434,7 @@ items:
           - name: Integrated solutions
             href: security-integration.md
           - name: Information Protection
-            href: information-protection-overview.md
+            href: security-information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists

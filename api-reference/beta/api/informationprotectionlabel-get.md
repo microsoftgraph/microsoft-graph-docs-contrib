@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The `Get informationProtectionLabel` API is deprecated and will stop returning data on August 30, 2022. Please use the new [sensitivityLabel API](./security-sensitivitylabel-get.md).
+> This API is deprecated and will stop returning data on January 1, 2023. Please use the new [sensitivity label API](./security-sensitivitylabel-get.md).
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 
