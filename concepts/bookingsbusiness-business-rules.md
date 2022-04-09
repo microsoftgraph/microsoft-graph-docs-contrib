@@ -11,13 +11,11 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 When an appointment is created by a non-administrator user, Microsoft Bookings will use the business rules which are configured for the Bookings calendar. However, administrators have the authority to override Bookings rules in a few cases.
 
 In the case of an end customer, either via Microsoft Graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.
 
-If an appointment is created or updated via [Create bookingAppointment](bookingbusiness-post-appointments.md) or [Update bookingAppointment](bookingappointment-update.md) using Application permissions, the business rules given below should be followed.
+If an appointment is created or updated via [Create bookingAppointment](/graph/api/bookingbusiness-post-appointments) or [Update bookingAppointment](/graph/api/bookingappointment-update) using Application permissions, the business rules given below should be followed.
 
 ## Business settings
 
@@ -27,7 +25,7 @@ Use the (API that can be used to modify businessHours) to modify **businessHours
 
 ### Scheduling policy
 
-For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md).
+For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy).
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
@@ -35,7 +33,7 @@ For more details about the scheduling policy, see [BookingSchedulingPolicy resou
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
-**Allow staff selection** is if a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in [BookingSchedulingPolicy resource type](../../v1.0/resources/bookingschedulingpolicy.md) to true.
+**Allow staff selection** is if a user wants to pass staff members via the appointment API, they should set the **allowStaffSelection** attribute in [BookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy) to true.
 
 > [!NOTE]
 > This setting is called **Staff control** in the Bookings web app.
