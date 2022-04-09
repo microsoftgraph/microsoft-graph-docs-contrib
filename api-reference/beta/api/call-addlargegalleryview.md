@@ -127,7 +127,7 @@ Content-Type: application/json
 ```
 ## See also
 
-- Learn how to [identify the large gallery view app](/graph/cloud-communications-identifylargegalleryview.md) in the call.
+- Learn how to [identify the large gallery view app](/graph/cloud-communications-identifylargegalleryview) in the call.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
