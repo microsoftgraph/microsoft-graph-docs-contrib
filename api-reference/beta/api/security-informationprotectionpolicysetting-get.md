@@ -1,6 +1,6 @@
 ---
 title: "Get informationProtectionPolicySetting"
-description: "Fetches users-specific MIP policy settings for the user."
+description: "Fetch users-specific Microsoft Information Protection policy settings for a user."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -8,13 +8,15 @@ doc_type: apiPageType
 ---
 
 # Get informationProtectionPolicySetting
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. The settings exposed by this API should be used in applications to populate the *more info URL* for MIP help, whether labeling is mandatory for the user, and whether justification must be provided on downgrade. 
+Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Information Protection help, whether labeling is mandatory for the user, and whether justification must be provided on downgrade.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -34,9 +36,11 @@ GET /users/{usersId}/security/informationProtection/labelPolicySettings
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
@@ -52,6 +56,9 @@ If successful, this method returns a `200 OK` response code and an [informationP
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_informationprotectionpolicysetting"
@@ -63,6 +70,9 @@ GET https://graph.microsoft.com/beta/users/{usersId}/security/informationProtect
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

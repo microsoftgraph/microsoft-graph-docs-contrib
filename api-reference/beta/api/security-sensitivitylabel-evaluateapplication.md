@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 
-Given [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), and [labelingOptions](../resources/security-labelingoptions.md) as an input, the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) object that contains one of more of the following: 
+Given [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key-value pairs](../resources/security-keyvaluepair.md), and [labelingOptions](../resources/security-labelingoptions.md) as an input, the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) object that contains one of more of the following: 
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
@@ -75,7 +75,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter       | Type                                                        | Description                                                                                                                      |
 | :-------------- | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo     | [contentInfo](../resources/security-contentinfo.md)         | Provides details on the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs. |
+| contentInfo     | [contentInfo](../resources/security-contentinfo.md)         | Provides details on the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key-value pairs. |
 | labelingOptions | [labelingOptions](../resources/security-labelingoptions.md) | Provides details about the desired state of the content.                                                                         |
 
 ## Response
@@ -85,6 +85,9 @@ If successful, this action returns a `200 OK` response code and an [informationP
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.evaluateapplication"

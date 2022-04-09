@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Use the [classification results](../resources/security-classificationresult.md) to compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
-To evaluate based on classification results, provide [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following: 
+To evaluate based on classification results, provide the [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key-value pairs](../resources/security-keyvaluepair.md), and [classification results](../resources/security-classificationresult.md). The API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains one of more of the following:
 
 * [addContentFooterAction](../resources/security-addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/security-addcontentheaderaction.md)
@@ -33,6 +33,7 @@ To evaluate based on classification results, provide [contentInfo](../resources/
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -62,6 +63,7 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateClassificat
 ```
 
 ## Request headers
+
 | Name          | Description                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
@@ -69,13 +71,14 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateClassificat
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/security-contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
+| contentInfo           | [contentInfo](../resources/security-contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key-value pairs.                                                                                                                                                   |
 | classificationResults | [classificationResult](../resources/security-classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Microsoft 365 Security and Compliance Center. |
 
 
@@ -87,6 +90,9 @@ If successful, this action returns a `200 OK` response code and an [informationP
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.evaluateclassificationresults"

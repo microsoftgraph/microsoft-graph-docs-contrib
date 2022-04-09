@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/security-contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/security-contentlabel.md).
 
 >[!NOTE]
->The [contentLabel](../resources/security-contentlabel.md) resource represents a sensitivity label that has been applied to a piece of information. [sensitivityLabels](../resources/security-sensitivitylabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
+>The [contentLabel](../resources/security-contentlabel.md) resource represents a sensitivity label that has been applied to a piece of information. [sensitivityLabels](../resources/security-sensitivitylabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to the information.
 
 ## Permissions
 
@@ -64,7 +64,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter   | Type                                       | Description                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo | [contentInfo](../resources/security-contentinfo.md) | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs. |
+| contentInfo | [contentInfo](../resources/security-contentinfo.md) | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key-value pairs. |
 
 ## Response
 
@@ -75,6 +75,8 @@ If successful, this action returns a `200 OK` response code and a [contentLabel]
 ### Response
 
 The following is an example of the response.
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -126,6 +128,8 @@ User-agent: ContosoLOBApp/1.0
 ```
 
 ### Response
+
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

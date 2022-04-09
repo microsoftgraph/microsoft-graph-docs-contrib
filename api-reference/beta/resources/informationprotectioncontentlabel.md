@@ -1,13 +1,13 @@
 ---
-title: "informationProtectionContentLabel resource type"
-description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object."
+title: "informationProtectionContentLabel resource type (deprecated)"
+description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object. (deprecated)"
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
-# informationProtectionContentLabel resource type
+# informationProtectionContentLabel resource type (deprecated)
 
 Namespace: microsoft.graph
 

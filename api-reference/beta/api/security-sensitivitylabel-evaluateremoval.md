@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Indicate to the consuming application what actions it should take to remove the label information.
 
-Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one or more of the following: 
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key-value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one or more of the following: 
 
 * [justifyAction](../resources/security-justifyaction.md)
 * [metadataAction](../resources/security-metadataaction.md)
@@ -69,7 +69,7 @@ The following table shows the parameters that can be used with this action.
 
 | Parameter              | Type                                                                      | Description                                                                                                                         |
 | :--------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- |
-| contentInfo            | [contentInfo](../resources/security-contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key/value pairs. |
+| contentInfo            | [contentInfo](../resources/security-contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/security-keyvaluepair.md) as key-value pairs. |
 | downgradeJustification | [downgradeJustification](../resources/security-downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
 ## Response
@@ -78,9 +78,15 @@ If successful, this action returns a `200 OK` response code and an [informationP
 
 ## Examples
 
+<<<<<<< HEAD
 ### Response
 
 The following is an example of the response.
+=======
+### Request
+
+The following is an example of a request.
+>>>>>>> 478058bd54e25400f577bda41fe70aeb2cae6be3
 
 <!-- {
   "blockType": "request",
@@ -140,6 +146,9 @@ User-agent: ContosoLOBApp/1.0
 ```
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
