@@ -1,6 +1,6 @@
 ---
 title: "staffAvailabilityItem resource type"
-description: "Returns the available and busy slots of a staff member."
+description: "Represents the available and busy time slots of a Bookings staff member."
 author: "kwekua"
 ms.localizationpriority: medium
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the available and busy slots of a staff member.
+Represents the available and busy time slots of a Bookings [staff member](bookingstaffmember.md).
 
 ## Properties
 
