@@ -19,7 +19,7 @@ Represents the available and busy time slots of a Bookings [staff member](bookin
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
-|availabilityItems |[availabilityItem](bookingavailability.md) collection |Each item in this collection indicates a slot and the status of the staff member.|
+|availabilityItems |[availabilityItem](availabilityitem.md) collection |Each item in this collection indicates a slot and the status of the staff member.|
 |staffId |String |The ID of the staff member.|
 
 ## JSON representation

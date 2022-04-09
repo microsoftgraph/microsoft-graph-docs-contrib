@@ -1914,7 +1914,7 @@ items:
         - name: Unpublish
           href: api/bookingbusiness-unpublish.md
         - name: Get staff availability
-          href: api/bookingbusiness-get-staff-availability.md
+          href: api/bookingbusiness-getstaffavailability.md
       - name: Booking appointment
         href: resources/bookingappointment.md
         items:

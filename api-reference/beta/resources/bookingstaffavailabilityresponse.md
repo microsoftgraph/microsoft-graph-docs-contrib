@@ -19,7 +19,7 @@ Returns the available and busy slots of staff members.
 
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
-|staffAvailabilityResponse|[staffAvailabilityItem](bookingstaffavailabilityitem.md) collection |Indicates the available and busy slots of staff members.|
+|staffAvailabilityResponse|[staffAvailabilityItem](staffavailabilityitem.md) collection |Indicates the available and busy slots of staff members.|
 
 ## JSON representation
 
