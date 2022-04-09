@@ -76,8 +76,6 @@ If successful, this action returns a `200 OK` response code and a [contentLabel]
 
 The following is an example of the response.
 
-The following is an example of a request.
-
 <!-- {
   "blockType": "request",
   "name": "sensitivitylabelthis.extractcontentlabel"
@@ -131,7 +129,6 @@ User-agent: ContosoLOBApp/1.0
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
