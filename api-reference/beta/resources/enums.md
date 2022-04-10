@@ -11,6 +11,15 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### bookingAvailabilityStatus
+
+|Member|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
 ### accessPackageCustomExtensionHandlerStatus values 
 
 |Member|
