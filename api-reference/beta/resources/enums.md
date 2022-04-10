@@ -11,7 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### bookingsAvailabilityStatus
+### bookingsAvailabilityStatus values
 
 |Member|
 |:-----|
