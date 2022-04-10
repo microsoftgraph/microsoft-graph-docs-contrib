@@ -1,31 +1,31 @@
 ---
-title: "Business rules validation"
-description: "Learn how to override business rules when an admin is booking an appointment."
+title: "Business rules to follow when creating or updating Bookings appointments using Microsoft Graph"
+description: "This article describes the business rules to follow when using the create or update Bookings appointments in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
 doc_type: conceptualPageType
 ---
 
-# Business rules validation
+# Business rules to follow when creating or updating Bookings appointments using Microsoft Graph
 
 Namespace: microsoft.graph
 
-When an appointment is created by a non-administrator user, Microsoft Bookings will use the business rules which are configured for the Bookings calendar. However, administrators have the authority to override Bookings rules in a few cases.
+When a non-admin user creates an appointment in Microsoft Bookings, Bookings uses the business rules that are configured for the calendar. Only administrators have the authority to override Bookings rules.
 
-In the case of an end customer, either via Microsoft Graph APIs (using application permissions) or any other end point, the business rules must be respected or else there will be unforeseen errors.
+End users or apps who create or update appointments via Microsoft Graph APIs (using application permissions) must adhere to business rules to prevent unforeseen errors.
 
-If an appointment is created or updated via [Create bookingAppointment](/graph/api/bookingbusiness-post-appointments) or [Update bookingAppointment](/graph/api/bookingappointment-update) using Application permissions, the business rules given below should be followed.
+If you use the [create](/graph/api/bookingbusiness-post-appointments) or [update](/graph/api/bookingappointment-update) appointment APIs with application permissions, you must follow the business rules described in this article.
 
 ## Business settings
 
 ### Business hours
 
-Use the (API that can be used to modify businessHours) to modify **businessHours**. Note that an appointment can't be set outside the business hours.
+Use the [Update bookingBusiness](/graph/api/bookingbusiness-update?view=graph-rest-beta&tabs=http) API to modify **businessHours**. Note that an appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
-For more details about the scheduling policy, see [BookingSchedulingPolicy resource type](/graph/api/resources/bookingschedulingpolicy).
+For details about the scheduling policy, see [bookingSchedulingPolicy](/graph/api/resources/bookingschedulingpolicy).
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
@@ -42,7 +42,7 @@ For more details about the scheduling policy, see [BookingSchedulingPolicy resou
 
 ### Scheduling
 
-At a service, the scheduling policy is inherited from the business. The customer might choose to override the policies.
+At a service level, the scheduling policy is inherited from the business. The customer might choose to override the policies.
 
 ### Main policy  
 
