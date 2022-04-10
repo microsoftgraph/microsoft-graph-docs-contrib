@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Business rules to follow when creating or updating Bookings appointments using Microsoft Graph
 
-Namespace: microsoft.graph
-
 When a non-admin user creates an appointment in Microsoft Bookings, Bookings uses the business rules that are configured for the calendar. Only administrators have the authority to override Bookings rules.
 
 End users or apps who create or update appointments via Microsoft Graph APIs (using application permissions) must adhere to business rules to prevent unforeseen errors.
