@@ -46,7 +46,7 @@ In the request body, pass the list of staff IDs along with two other parameters 
 
 ## Response
 
-If successful, this method returns 200 and a [staffAvailabilityResponse](../resources/bookingstaffavailabilityresponse.md) object is returned.
+If successful, this method returns a `200 OK` response code and a [staffAvailabilityItem](../resources/staffavailabilityitem.md) collection in the response.
 
 ## Example
 
@@ -84,7 +84,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.bookingStaffAvailabilityResponse",
+  "@odata.type": "microsoft.graph.staffAvailabilityItem",
 } -->
 
 ```http
@@ -92,7 +92,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 { 
-    "staffAvailabilityResponse": [ 
+    "staffAvailabilityItem": [ 
         { 
             "staffId": "311a5454-08b2-4560-ba1c-f715e938cb79", 
             "availabilityItems": [ 

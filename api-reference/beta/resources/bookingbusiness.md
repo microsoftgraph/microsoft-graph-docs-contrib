@@ -39,7 +39,7 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
-|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityResponse](bookingstaffavailabilityresponse.md) | Get the availability information of staff members of a Microsoft Bookings calendar.|
+|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) collection| Get the availability information of staff members of a Microsoft Bookings calendar.|
 
 ## Properties
 
