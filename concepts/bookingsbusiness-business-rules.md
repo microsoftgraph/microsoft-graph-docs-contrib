@@ -1,13 +1,13 @@
 ---
 title: "Business rules to follow when creating or updating Bookings appointments using Microsoft Graph"
-description: "This article describes the business rules to follow when using the create or update Bookings appointments in Microsoft Graph."
+description: "This article describes the business rules to follow when using the create or update Bookings appointments APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
 doc_type: conceptualPageType
 ---
 
-# Business rules to follow when creating or updating Bookings appointments using Microsoft Graph
+# Business rules for Bookings appointments
 
 When a non-admin user creates an appointment in Microsoft Bookings, Bookings uses the business rules that are configured for the calendar. Only administrators have the authority to override Bookings rules.
 

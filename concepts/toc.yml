@@ -208,6 +208,9 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
+        items:
+          - name: Business rules
+            href: bookingbusiness-business-rules.md
       - name: Device and app management
         expanded: true
         items:
