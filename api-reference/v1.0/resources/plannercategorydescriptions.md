@@ -62,7 +62,6 @@ Here is a JSON representation of the resource.
   "category4": "String",
   "category5": "String",
   "category6": "String",
-  "category6": "String",
   "category7": "String",
   "category8": "String",
   "category9": "String",
