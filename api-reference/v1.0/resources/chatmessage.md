@@ -26,8 +26,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
 |[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
 |[Update message in channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
-|[Delete reply in channel](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the single root message in a channel.|
-|[Undelete message in channel](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the single root message in a channel.|
 |**Channel message replies**| | |
 |[List replies to message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
 |[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
