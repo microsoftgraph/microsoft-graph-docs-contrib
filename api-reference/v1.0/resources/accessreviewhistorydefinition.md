@@ -32,9 +32,8 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required.|
 |id|String|The assigned unique identifier of an access review history definition.|
-|reviewHistoryPeriodEndDateTime|DateTimeOffset| A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined. |
-|reviewHistoryPeriodStartDateTime|DateTimeOffset|A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.|
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](accessReviewHistoryScheduleSettings.md)| The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined.|
+|reviewHistoryPeriodEndDateTime|DateTimeOffset| A timestamp. Reviews ending on or before this date will be included in the fetched history data. |
+|reviewHistoryPeriodStartDateTime|DateTimeOffset|A timestamp. Reviews starting on or before this date will be included in the fetched history data. |
 |scopes|[accessReviewScope](accessreviewscope.md) collection|Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.|
 |status| accessReviewHistoryStatus|Represents the status of the review history data collection. The possible values are: `done`, `inProgress`, `error`, `requested`, `unknownFutureValue`.|
 
@@ -75,9 +74,6 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.accessReviewScope"
     }
-  ],
-  "scheduleSettings": {
-    "@odata.type": "microsoft.graph.accessReviewHistoryScheduleSettings"
-  }
+  ]
 }
 ```
