@@ -16,10 +16,11 @@ Get the properties and relationships of a [place](../resources/place.md) object 
 
 The **place** object can be one of the following types:
 
-* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
+* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md) which includes properties such as an email address for the workspace, and accessibility and capacity. 
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-Both **room** and **roomList** are derived from the [place](../resources/place.md) object. 
+All **room**, **workspace** and **roomList** are derived from the **place** object.
 
 ## Permissions
 
@@ -152,8 +153,35 @@ Content-type: application/json
     "displayDevice": "surface hub"
 }
 ```
+### Example 2: Get a workspace
+#### Request
 
-### Example 2: Get a room list
+The following example specifies the **id** of a **workspace** to get its properties.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_workspace"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_workspace",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace"
+} -->
+
+### Example 3: Get a room list
 #### Request
 
 The following example specifies the **emailAddress** of a **roomList** to get its properties.

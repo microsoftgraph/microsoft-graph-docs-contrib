@@ -13,18 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
+Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the workspaces, all the room lists, the workspaces in a specific room list,  or the rooms in a specific room list in the tenant.
 
 A **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [workspace](../resources/workspace.md) which includes properties such as an email address for the workspace, and accessibility and capacity. 
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
-Both **room** and **roomList** are derived from the **place** object.
+All **room**, **workspace** and **roomList** are derived from the **place** object.
 
 By default, this operation returns 100 places per page. 
-
-Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 
@@ -46,6 +45,12 @@ To get all the rooms in a tenant:
 GET /places/microsoft.graph.room
 ```
 
+To get all the workspaces in a tenant:
+
+```http
+GET /places/microsoft.graph.workspace
+```
+
 To get all the room lists in a tenant:
 
 ```http
@@ -58,7 +63,13 @@ To get all the rooms in the specified room list:
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**. 
+To get all the workspaces in the specified room list:
+
+```http
+GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/workspaces
+```
+
+>**Note**: To get rooms or workspaces in a room list, you must specify the room list by its **emailAddress** property, not by its **id**. 
 
 ## Optional query parameters
 This method supports the following query parameters to help customize the response:
@@ -217,8 +228,37 @@ Content-type: application/json
   ]
 }
 ```
+### Example 2: List all the workspaces defined in the tenant
 
-### Example 2: List all the room lists defined in the tenant
+#### Request
+
+The following example shows how to get all the [workspaces](../resources/workspace.md) objects in the tenant.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_all_workspaces"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_all_workspaces",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace",
+  "isCollection": true
+} -->
+
+### Example 3: List all the room lists defined in the tenant
 
 #### Request
 
@@ -313,7 +353,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List rooms contained in a room list
+### Example 4: List rooms contained in a room list
 
 #### Request
 
@@ -403,6 +443,36 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 5: List workspaces contained in a room list
+
+#### Request
+
+The following example shows how to get a list of [workspace](../resources/workspace.md) objects contained in a **roomList**. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_workspaces_in_roomlist"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/workspaces
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_workspaces_in_roomlist",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workspace",
+  "isCollection": true
+} -->
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
