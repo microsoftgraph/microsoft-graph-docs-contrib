@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a workspace in a tenant. 
 
-In Exchange Online, each workspace is associated with a room mailbox. Derived from [place](place.md).
+In Exchange Online, each workspace is associated with a workspace mailbox. Derived from [place](place.md).
 
 ## Methods
 
@@ -33,7 +33,7 @@ In Exchange Online, each workspace is associated with a room mailbox. Derived fr
 | bookingType            | [bookingType](#bookingtype-values)                | Type of workspace. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the workspace is in. |
 | capacity               | Int32                                             | Specifies the capacity of the workspace. |
-| displayName            | String                                            | The name associated with the workspace. ||
+| displayName            | String                                            | The name associated with the workspace. |
 | emailAddress           | String                                            | Email address of the workspace. |
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the workspace is on. |
@@ -92,7 +92,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "room resource",
+  "description": "workspace resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
