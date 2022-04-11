@@ -101,24 +101,62 @@ Content-type: application/json
     "value": [
         {
             "createdDateTime": "2020-06-02T22:46:58Z",
+            "eTag": "\"{12AD05BB-59B8-43AA-9456-77C44E9BC066},756\"",
             "id": "1",
+            "lastModifiedDateTime": "2021-10-14T23:27:27Z",
             "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/TestFolder",
+            "createdBy": {
+                "user": {
+                    "displayName": "John doe",
+                }
+            },
+            "parentReference": {
+                "id": "1",
+                "path": "Shared%20Documents",
+                "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
+            },
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Folder"
             }
         },
         {
+            "createdDateTime": "2020-06-02T22:46:58Z",
+            "eTag": "\"{12AD05BB-59B8-43AA-9456-77C44E9BC067},756\"",
             "id": "2",
-            "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/Shared%20Documents/TestItemA.txt",
+            "lastModifiedDateTime": "2021-10-14T23:27:27Z",
+            "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/TestItemA.txt",
+            "createdBy": {
+                "user": {
+                    "displayName": "John doe",
+                }
+            },
+            "parentReference": {
+                "id": "3",
+                "path": "Shared%20Documents",
+                "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
+            },
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Document"
             }
         },
         {
+            "createdDateTime": "2020-06-02T22:46:58Z",
+            "eTag": "\"{12AD05BB-59B8-43AA-9456-77C44E9BC068},756\"",
             "id": "3",
-            "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/Shared%20Documents/TestItemB.txt",
+            "lastModifiedDateTime": "2021-10-14T23:27:27Z",
+            "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/TestItemB.txt",
+            "createdBy": {
+                "user": {
+                    "displayName": "John doe",
+                }
+            },
+            "parentReference": {
+                "id": "3",
+                "path": "Shared%20Documents",
+                "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
+            },
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Document"
@@ -160,21 +198,35 @@ Content-type: application/json
     "value": [
        {
             "createdDateTime": "2020-06-02T22:46:58Z",
+            "eTag": "\"{12AD05BB-59B8-43AA-9456-77C44E9BC066},756\"",
             "id": "1",
+            "lastModifiedDateTime": "2016-03-21T20:01:37Z",
             "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/TestFolder",
+            "createdBy": {
+                "user": {
+                    "displayName": "John doe",
+                }
+            },
+            "parentReference": {
+                "id": "1",
+                "path": "Shared%20Documents",
+                "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
+            },
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Folder"
-            }
+            },
         },
         {
             "id": "3",
-            "webUrl": "http://contoso.sharepoint.com/Shared%20Documents/Shared%20Documents/TestItemB.txt",
+            "parentReference": {
+                "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
+            }
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Document"
             },
-            "@removed": {"reason": "deleted"}
+            "deleted": {"state": "deleted"}
         }
     ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
