@@ -3,7 +3,7 @@
         {
             "ChangeList": [ 
               {
-                "Id" : "ee987293-c132-4e6a-ae6e-2dc77054c47c",
+                "Id": "ee987293-c132-4e6a-ae6e-2dc77054c47c",
                 "ApiChange": "Method",
                 "ChangedApiName": "getStaffAvailability",
                 "ChangeType": "Addition",
@@ -11,84 +11,84 @@
                 "Target": "bookingStaffMember"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "Bookings.Read.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
-                "Target" : "bookingBusiness"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "Bookings.Read.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
+                "Target": "bookingBusiness"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "Bookings.Read.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
-                "Target" : "bookingStaffMember"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "Bookings.Read.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
+                "Target": "bookingStaffMember"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "Bookings.Read.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) resource.",
-                "Target" : "bookingService"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "Bookings.Read.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) resource.",
+                "Target": "bookingService"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "Bookings.Read.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) resource. Booking Appointment",
-                "Target" : "bookingCustomer"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "Bookings.Read.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) resource. Booking Appointment",
+                "Target": "bookingCustomer"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "Bookings.Read.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) resource.",
-                "Target" : "bookingAppointment"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "Bookings.Read.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) resource.",
+                "Target": "bookingAppointment"
               },
                 {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "BookingsAppointment.ReadWrite.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
-                "Target" : "bookingBusiness"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "BookingsAppointment.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
+                "Target": "bookingBusiness"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "BookingsAppointment.ReadWrite.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
-                "Target" : "bookingStaffMember"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "BookingsAppointment.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
+                "Target": "bookingStaffMember"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "BookingsAppointment.ReadWrite.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) resource.",
-                "Target" : "bookingService"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "BookingsAppointment.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) resource.",
+                "Target": "bookingService"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "BookingsAppointment.ReadWrite.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) resource. Booking Appointment",
-                "Target" : "bookingCustomer"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "BookingsAppointment.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) resource. Booking Appointment",
+                "Target": "bookingCustomer"
               },
               {
-                "Id" : "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
-                "ApiChange" : "Permission" ,
-                "ChangedApiName" : "BookingsAppointment.ReadWrite.All",
-                "ChangeType" : "Addition"
-                "Description" : "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) resource.",
-                "Target" : "bookingAppointment"
+                "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
+                "ApiChange": "Permission",
+                "ChangedApiName": "BookingsAppointment.ReadWrite.All",
+                "ChangeType": "Addition",
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) resource.",
+                "Target": "bookingAppointment"
               },
             ],
             "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
