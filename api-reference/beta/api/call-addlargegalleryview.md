@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/addLargeGalleryView
 POST /communications/calls/{id}/addLargeGalleryView
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
@@ -50,9 +51,7 @@ If successful, this method returns a `202 Accepted` response code and an [addLar
 
 ## Example
 
-### Example 1: Adding large gallery view to the call
-
-#### Request
+### Request
 
 The following example shows how to add a large gallery view to a call.
 
@@ -70,10 +69,9 @@ Content-Length: 46
 }
 ```
 
-#### Response
+### Response
 
-If successful, this method returns a `202 Accepted` response code and 
-an [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md) object in the response body.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -96,7 +94,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 }
 ```
 
-#### Notification - operation completed
+### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -125,9 +123,10 @@ Content-Type: application/json
   ]
 }
 ```
+
 ## See also
 
-- Learn how to [identify the large gallery view app](/graph/cloud-communications-identifylargegalleryview) in the call.
+- [Learn how to identify the large gallery view app in a call](/graph/cloud-communications-identifylargegalleryview).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
