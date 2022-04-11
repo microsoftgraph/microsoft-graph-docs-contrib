@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Sync on-demand from Active Directory to Azure Active Directory
+### Example 2: Sync on-demand from Active Directory to Azure Active Directory (Azure AD cloud sync)
 
 #### Request
 
