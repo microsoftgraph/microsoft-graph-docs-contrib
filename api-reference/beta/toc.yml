@@ -15263,14 +15263,14 @@ items:
         href: resources/onlinemeeting.md
         items:        
         - name: Transcript
-          href: resources/callTranscript.md
+          href: resources/calltranscript.md
           items:
           - name: List
-            href: api/callTranscript-list.md
+            href: api/calltranscript-list.md
           - name: Get
-            href: api/callTranscript-get.md
+            href: api/calltranscript-get.md
           - name: Get content
-            href: api/callTranscript-get-content.md
+            href: api/calltranscript-get-content.md
       - name: Resource-specific permission grants
         href: resources/resourcespecificpermissiongrant.md
         items:

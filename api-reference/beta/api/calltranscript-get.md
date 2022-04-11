@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve single [callTranscript](../resources/callTranscript.md) associated with a Microsoft Teams Online Meeting.
+Retrieve single [callTranscript](../resources/calltranscript.md) associated with a Microsoft Teams Online Meeting.
 
 ## Permissions
 

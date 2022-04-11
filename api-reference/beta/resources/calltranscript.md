@@ -18,9 +18,9 @@ A callTranscript represents a transcript associated to an Online Meeting.
 ## Methods
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
-|[List callTranscripts](../api/callTranscript-list.md) | [callTranscript](callTranscript.md) collection | Get the list of transcripts associated to an Online Meeting.| 
-|[Get callTranscript](../api/callTranscript-get.md) | [callTranscript](callTranscript.md) | Read properties of a transcript.| 
-|[Get callTranscript content](../api/callTranscript-get-content.md) | [callTranscript](callTranscript.md) content bytes | Get the transcript's content bytes.| 
+|[List callTranscripts](../api/calltranscript-list.md) | [callTranscript](callTranscript.md) collection | Get the list of transcripts associated to an Online Meeting.| 
+|[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](callTranscript.md) | Read properties of a transcript.| 
+|[Get callTranscript content](../api/calltranscript-get-content.md) | [callTranscript](callTranscript.md) content bytes | Get the transcript's content bytes.| 
 
 ## Properties
 
