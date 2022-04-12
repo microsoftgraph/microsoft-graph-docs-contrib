@@ -393,7 +393,7 @@ Content-type: application/json
         "postalCode": "98052",
         "countryOrRegion": "USA"
       },
-      "geocoordinates": null,
+      "geoCoordinates": null,
       "phone": null,
       "emailAddress": "bldg1@contoso.com"
     },
@@ -407,7 +407,7 @@ Content-type: application/json
         "postalCode": "98052",
         "countryOrRegion": "USA"
       },
-      "geocoordinates": null,
+      "geoCoordinates": null,
       "phone": null,
       "emailAddress": "bldg2@contoso.com"
     }
