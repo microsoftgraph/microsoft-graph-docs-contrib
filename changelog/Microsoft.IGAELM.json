@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d54d764d-2587-46f9-9fd5-1cc4df27be97",
+          "ApiChange": "Method",
+          "ChangedApiName": "additionalAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalAccess** API to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignment"
+        }
+      ],
+      "Id": "d54d764d-2587-46f9-9fd5-1cc4df27be97",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-12T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentPolicies",
