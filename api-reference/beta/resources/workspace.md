@@ -62,40 +62,36 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.workspace"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.workspace",
+  "baseType": "microsoft.graph.place",
+  "openType": false
+}
+-->
+``` json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "bookingType": "String",
-  "building": "String",
-  "capacity": 1024,
-  "displayName": "String",
-  "emailAddress": "String",
-  "floorLabel": "String",
-  "floorNumber": 1024,
-  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "@odata.type": "#microsoft.graph.workspace",
   "id": "String (identifier)",
-  "isWheelChairAccessible": true,
-  "label": "String",
-  "nickname": "String",
+  "displayName": "String",
+  "geoCoordinates": {
+    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
+  },
   "phone": "String",
-  "tags": ["String"]
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "emailAddress": "String",
+  "nickname": "String",
+  "building": "String",
+  "floorNumber": "Integer",
+  "label": "String",
+  "capacity": "Integer",
+  "bookingType": "String",
+  "isWheelChairAccessible": "Boolean",
+  "tags": [
+    "String"
+  ],
+  "floorLabel": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "workspace resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
