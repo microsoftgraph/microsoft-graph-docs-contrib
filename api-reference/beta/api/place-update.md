@@ -164,7 +164,6 @@ Content-type: application/json
     "building": "1",
     "floorLabel": "1P",
     "floorNumber": 1,
-    "isManaged": true,
     "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
@@ -172,7 +171,7 @@ Content-type: application/json
     ],
     "audioDeviceName": null,
     "videoDeviceName": null,
-    "displayDevice": "surface hub"
+    "displayDeviceName": "surface hub"
 }
 ```
 
