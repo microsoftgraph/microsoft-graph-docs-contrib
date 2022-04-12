@@ -535,6 +535,44 @@ The following is an example of the response.
   "isCollection": true
 } -->
 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/workspaces",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "ws200@contoso.com",
+      "displayName": "Work Space 200",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488625,
+        "longitude": -122.1293731033802
+      },
+      "phone": "000-000-0000",
+      "nickname": "Work Space",
+      "label": "200",
+      "capacity": 40,
+      "building": "2",
+      "floorNumber": 2,
+      "isWheelChairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "benches",
+        "nice view"
+      ]
+    }
+  ]
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
