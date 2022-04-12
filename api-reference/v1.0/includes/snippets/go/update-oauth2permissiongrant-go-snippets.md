@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewOAuth2PermissionGrant()
-scope := "scope-value"
+scope := "User.ReadBasic.All Group.ReadWrite.All"
 requestBody.SetScope(&scope)
 options := &msgraphsdk.OAuth2PermissionGrantRequestBuilderPatchOptions{
 	Body: requestBody,

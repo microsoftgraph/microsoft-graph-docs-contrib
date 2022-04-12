@@ -1,5 +1,47 @@
 {
   "changelog": [
+	{
+		"ChangeList": [
+		  {
+			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsUserActivityTotalCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsUserActivityTotalCounts"
+		  },
+		  {
+			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsUserActivityCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsUserActivityCounts"
+		  },
+		  {
+			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Tenant Name**, **Host Tenant Display**, **Post Messages**, **Reply Messages**, **Urgent Messages** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityTotalDistributionCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsUserActivityTotalDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta) method.",
+			"Target": "getTeamsUserActivityTotalDistributionCounts"
+		 }
+	  ],
+		"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-04-06T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
     {
 	  "ChangeList": [
 		{
@@ -1587,6 +1629,40 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-02-04T09:55:05.981Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    },
+	{
+	"ChangeList": [
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserDistributionUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserdistributionusercounts?view=graph-rest-beta) method.",
+          "Target": "getBrowserDistributionUserCounts"
+        },
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserusercounts?view=graph-rest-beta) method.",
+          "Target": "getBrowserUserCounts"
+        },
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserUserDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowseruserdetail?view=graph-rest-beta) method.",
+          "Target": "getBrowserUserDetail"
+        }
+      ],
+      "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-13T03:46:16.421Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     }

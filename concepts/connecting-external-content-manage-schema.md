@@ -189,5 +189,5 @@ Adding a semantic label can affect experiences like Relevance and Viva Topics.
 - [Add items to the connection](./connecting-external-content-manage-items.md)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
-- [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart&preserve-view=true)
+- [Build your first custom connector with Microsoft Graph](/graph/connecting-external-content-build-quickstart)
 

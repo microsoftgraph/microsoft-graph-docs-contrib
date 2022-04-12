@@ -27,9 +27,10 @@ None.
 |:---|:---|:---|
 |accessPackageAssignmentApprovals|[approval](../resources/approval.md) collection | Approval stages for assignment requests.|
 |accessPackages|[accessPackage](../resources/accesspackage.md) collection|Represents access package objects.|
+|assignmentPolicies|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) collection|Access package assignment policies.|
 |assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Represents access package assignment requests created by or on behalf of a user.|
 |assignments|[accessPackageAssignment](../resources/accesspackageassignment.md) collection| Represents the grant of an access package to a subject (user or group).|
-|catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection| Represents a group of access packages.|
+|catalogs|[accessPackageCatalog](../resources/accesspackagecatalog.md) collection| Represents a collection of access packages.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Represents references to a directory or domain of another organization whose users can request access.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)| Represents the settings that control the behavior of Azure AD entitlement management.|
 
