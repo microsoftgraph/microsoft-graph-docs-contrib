@@ -183,7 +183,6 @@ Content-type: application/json
       "capacity": 50,
       "building": "1",
       "floorNumber": 1,
-      "isManaged": true,
       "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
@@ -191,7 +190,7 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDevice": "surface hub"
+      "displayDeviceName": "surface hub"
     },
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
@@ -214,7 +213,6 @@ Content-type: application/json
       "capacity": 40,
       "building": "2",
       "floorNumber": 2,
-      "isManaged": true,
       "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
@@ -223,7 +221,7 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDevice": "surface hub"
+      "displayDeviceName": "surface hub"
     }
   ]
 }
