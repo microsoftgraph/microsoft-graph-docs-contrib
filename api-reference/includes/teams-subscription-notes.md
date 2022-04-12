@@ -9,9 +9,7 @@ ms.localizationpriority: medium
 
 ### chatMessage
 
-**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), and do not require [encryption](/graph/webhooks-with-resource-data). The only exception is the `/users/{id}/chats/getAllMessages` resource (only available in beta) which supports resource data regardless of the permission type.
-
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified. Before you can create a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+**chatMessage** subscriptions can be specified to include resource data. If specified to include resource data, [encryption](/graph/webhooks-with-resource-data) is required. The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified for such subscriptions. Before you can create a **chatMessage** subscription, you may need to request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 You must use the `Prefer: include-unknown-enum-members` request header to get the following values in **chatMessage** **messageType** [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` for `/teams/{id}/channels/{id}/messages` and `/chats/{id}/messages` resource.
 
