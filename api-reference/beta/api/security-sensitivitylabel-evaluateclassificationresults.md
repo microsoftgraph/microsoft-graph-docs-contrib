@@ -68,7 +68,7 @@ POST /users/security/informationProtection/sensitivityLabels/evaluateClassificat
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
 | Content-type  | application/json. Required.                                                                                                                                                       |
-| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
+| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is `ApplicationName/Version`. Optional. |
 
 ## Request body
 
@@ -132,7 +132,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.informationProtectionAction)"
+  "@odata.type": "microsoft.graph.security.informationProtectionAction",
+  "isCollection": true
 }
 -->
 ```http

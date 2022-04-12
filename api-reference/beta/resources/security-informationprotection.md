@@ -27,8 +27,8 @@ None.
 ## Relationships
 | Relationship        | Type                                                                                              | Description                                                                                |
 | :------------------ | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
-| labelPolicySettings | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Reads the Microsoft Information Protection policy settings for the user or organization. |
-| sensitivityLabels   | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Reads the Microsoft Information Protection labels for the user or organization.          |
+| labelPolicySettings | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the Microsoft Information Protection policy settings for the user or organization. |
+| sensitivityLabels   | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Information Protection labels for the user or organization.          |
 
 ## JSON representation
 The following is a JSON representation of the resource.
