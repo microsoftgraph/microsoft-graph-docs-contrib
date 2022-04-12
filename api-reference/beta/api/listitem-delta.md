@@ -215,13 +215,13 @@ Content-type: application/json
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Folder"
-            },
+            }
         },
         {
             "id": "3",
             "parentReference": {
                 "siteId": "12AD05BB-59B8-43AA-9456-77C44E9BC066"
-            }
+            },
             "contentType": {
                 "id": "0x00123456789abc",
                 "name": "Document"
