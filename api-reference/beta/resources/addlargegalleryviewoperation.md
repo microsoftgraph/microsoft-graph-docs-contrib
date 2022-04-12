@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 Describes the response format for an operation that adds the large gallery view.
 
+## Methods
+
+| Method | Return Type | Description |
+|:-|:-|:-|
+| [Get addLargeGalleryViewOperation](../api/call-addlargegalleryviewoperation-get.md) | [addLargeGalleryViewOperation](addLargeGalleryViewOperation.md) | Get the status of an operation that adds the large gallery view to a call. |
+
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |

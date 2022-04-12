@@ -1,5 +1,5 @@
 ---
-title: "Get addLargeGalleryView"
+title: "Get addLargeGalleryViewOperation"
 description: "Get the status of an operation that adds the large gallery view to a call."
 author: "navali-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get addLargeGalleryView
+# Get addLargeGalleryViewOperation
 
 Namespace: microsoft.graph
 

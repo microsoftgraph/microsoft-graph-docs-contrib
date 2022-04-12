@@ -1568,11 +1568,9 @@ items:
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
         - name: Add large gallery view
-          items:
-          - name: Add large gallery view
-            href: api/call-addlargegalleryview.md
-          - name: Get
-            href: api/call-addlargegalleryview-get.md
+          href: api/call-addlargegalleryview.md
+        - name: Get large gallery view operation
+          href: api/call-addlargegalleryviewoperation-get.md
       - name: Call records
         items:
         - name: Overview
