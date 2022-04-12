@@ -142,7 +142,6 @@ Content-type: application/json
     "capacity": 50,
     "building": "1",
     "floorNumber": 1,
-    "isManaged": true,
     "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
@@ -150,7 +149,7 @@ Content-type: application/json
     ],
     "audioDeviceName": null,
     "videoDeviceName": null,
-    "displayDevice": "surface hub"
+    "displayDeviceName": "surface hub"
 }
 ```
 ### Example 2: Get a workspace
