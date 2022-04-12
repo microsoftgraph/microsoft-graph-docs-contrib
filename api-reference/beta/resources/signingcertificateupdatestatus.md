@@ -24,21 +24,21 @@ Provides status and timestamp of the last update of the signing certificate.
 ### certificateUpdateResult status
 | Value | Description |
 | :--- | :--- |
-|success|The attempt was successful.|
-|unknownError|Do not know the reason for failure.|
-|internalServerError|Something went wrong on our side.|
+|success|The certificate update operation was successful.|
+|unknownError|The reason for failure is undefined.|
+|internalServerError|There was an internal server error while processing the request.|
 |noValidExistingCertFound|No valid existing signing certificate was found.|
-|noStsAuthUrlFound|No STS Auth Url was found.|
-|noFederationProtocolFound|No federation protocol was found.|
+|noStsAuthUrlFound|No STS authentication URL was found.|
+|noFederationProtocolFound|The federation protocol was undefined.|
 |noNewCertificateFound|No new certificate was found.|
 |couldNotAccessRemoteHost|Could not reach the provider to get the new certificates.|
-|connectionError|There was a connection error|
-|xmlParsingError|Failed to parse the XML|
-|badRequest|Received BadRequest error from the fed metadata request.|
-|unauthorized|Received Unauthorized error from the fed metadata request.|
-|forbidden|Received Forbidden error from the fed metadata request.|
-|notFound|Received NotFound error from the fed metadata request.|
-|providerError|Received InternalServerError from the provider.|
+|connectionError|There was a connection error, for example, a connection time out.|
+|xmlParsingError|Failed to parse the XML.|
+|badRequest|Received a `400 BadRequest` error code in the fed metadata request.|
+|unauthorized|Received `401 Unauthorized` error code in the fed metadata request.|
+|forbidden|Received `403 Forbidden` error code in the fed metadata request.|
+|notFound|Received `404 NotFound` error code in the fed metadata request.|
+|providerError|Received a `500 InternalServerError` error code from the provider.|
 
 
 ## Relationships
