@@ -255,7 +255,71 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.workspace",
   "isCollection": true
 } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
 
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.workspace",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+      "emailAddress": "ws100@contoso.com",
+      "displayName": "Work Space 100",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488626,
+        "longitude": -122.1293731033803
+      },
+      "phone": "000-000-0000",
+      "nickname": "Work Space",
+      "label": "100",
+      "capacity": 50,
+      "building": "1",
+      "floorNumber": 1,
+      "isWheelChairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "bean bags"
+      ]
+    },
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "ws200@contoso.com",
+      "displayName": "Work Space 200",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488625,
+        "longitude": -122.1293731033802
+      },
+      "phone": "000-000-0000",
+      "nickname": "Work Space",
+      "label": "200",
+      "capacity": 40,
+      "building": "2",
+      "floorNumber": 2,
+      "isWheelChairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "benches",
+        "nice view"
+      ]
+    }
+  ]
+}
+```
 ### Example 3: List all the room lists defined in the tenant
 
 #### Request
