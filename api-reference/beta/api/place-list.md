@@ -491,7 +491,6 @@ Content-type: application/json
       "capacity": 40,
       "building": "2",
       "floorNumber": 2,
-      "isManaged": true,
       "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
@@ -500,7 +499,7 @@ Content-type: application/json
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
-      "displayDevice": "surface hub"
+      "displayDeviceName": "surface hub"
     }
   ]
 }
