@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.plannerCategoryDescriptions",
   "category1": "String",
   "category2": "String",
   "category3": "String",
