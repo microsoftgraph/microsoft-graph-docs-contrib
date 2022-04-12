@@ -11,19 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Defines the settings of the approval stages in a [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md) object. Specifies the primary and escalation approvers of each stage and whether approvals and escalations are required.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalStageTimeOutInDays|Int32|**TODO: Add Description**|
-|escalationApprovers|[subjectSet](../resources/subjectset.md) collection|**TODO: Add Description**|
-|escalationTimeInMinutes|Int32|**TODO: Add Description**|
-|isApproverJustificationRequired|Boolean|**TODO: Add Description**|
-|isEscalationEnabled|Boolean|**TODO: Add Description**|
-|primaryApprovers|[subjectSet](../resources/subjectset.md) collection|**TODO: Add Description**|
+|approvalStageTimeOutInDays|Int32| The number of days that a request can be pending a response before it is automatically denied. |
+|escalationApprovers|[subjectSet](../resources/subjectset.md) collection| The escalation approvers for this stage when the primary approvers don't respond.|
+|escalationTimeInMinutes|Int32|The time a request can be pending a response from a primary approver before it can be escalated to the escalation approvers.|
+|isApproverJustificationRequired|Boolean| Indicates whether the approver must provide justification for their reponse.|
+|isEscalationEnabled|Boolean| Indicates whether escalation if enabled.|
+|primaryApprovers|[subjectSet](../resources/subjectset.md) collection| The primary approvers of this stage.|
 
 ## Relationships
 None.

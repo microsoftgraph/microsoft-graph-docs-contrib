@@ -1,6 +1,6 @@
 ---
 title: "List roleEligibilityScheduleInstances"
-description: "Get the unifiedRoleEligibilityScheduleInstance resources from the roleEligibilityScheduleInstances navigation property."
+description: "Get the instances of role eligibilities."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # List roleEligibilityScheduleInstances
 Namespace: microsoft.graph
 
-
-
-Get the unifiedRoleEligibilityScheduleInstance resources from the roleEligibilityScheduleInstances navigation property.
+Get the instances of role eligibilities.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +32,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,20 +72,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleEligibilityScheduleInstance",
-      "id": "75ab289e-a724-3721-ea9a-742f3f9a3324",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "memberType": "String",
-      "roleEligibilityScheduleId": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilityScheduleInstances",
+    "value": [
+        {
+            "id": "8MYkhImhnkm70CbBdTyW1BbHHAdHgZdDpbqyEFlRzAs-1-e",
+            "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "roleDefinitionId": "8424c6f0-a189-499e-bbd0-26c1753c96d4",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": "2022-04-12T14:44:50.287Z",
+            "endDateTime": "2024-04-10T00:00:00Z",
+            "memberType": "Direct",
+            "roleEligibilityScheduleId": "77f71919-62f3-4d0c-9f88-0a0391b665cd"
+        }
+    ]
 }
 ```
 

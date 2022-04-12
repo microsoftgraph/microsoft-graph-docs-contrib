@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest: cancel"
-description: "**TODO: Add Description**"
+description: "Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days. After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory	|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 
@@ -43,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code. Attempting to cancel a request that is not in a cancelable state, for example, a unifiedRoleEligibilityScheduleRequest object whose **status** is `Provisioned` or `Failed`, returns a `400 Bad Request` error code.
 
 ## Examples
 
@@ -54,12 +52,11 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestId}/cancel
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

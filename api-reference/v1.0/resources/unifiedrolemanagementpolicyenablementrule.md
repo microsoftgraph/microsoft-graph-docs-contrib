@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyEnablementRule resource type"
-description: "**TODO: Add Description**"
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the enablement rule associated with a role management policy."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,31 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
-
-Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the enablement rule associated with a role management policy.
 
 ## Methods
 
 None.
-<!--
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedRoleManagementPolicyEnablementRules](../api/unifiedrolemanagementpolicyenablementrule-list.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) collection|Get a list of the [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-get.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
-|[Update unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-update.md)|[unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)|Update the properties of an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
-|[Delete unifiedRoleManagementPolicyEnablementRule](../api/unifiedrolemanagementpolicyenablementrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md) object.|
--->
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|enabledRules|String collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|**TODO: Add Description** Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
+|enabledRules|String collection|The collection of rules that are enabled for this policy rule. For example, `MultiFactorAuthentication`, `Ticketing`, and `Justification`.|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the enablement rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
 
 ## Relationships
 None.

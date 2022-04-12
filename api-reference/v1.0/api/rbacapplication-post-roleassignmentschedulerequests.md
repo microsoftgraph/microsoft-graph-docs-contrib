@@ -1,6 +1,6 @@
 ---
 title: "Create unifiedRoleAssignmentScheduleRequest"
-description: "Create a new unifiedRoleAssignmentScheduleRequest object."
+description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,20 @@ doc_type: apiPageType
 # Create unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
+In PIM, carry out the following operations through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object:
++ Request active and persistent role assignments for a principal, with or without expiry dates.
++ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
 
-
-Create a new [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
+To call this API, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA. See [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,22 +48,15 @@ You can specify the following properties when creating an **unifiedRoleAssignmen
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Required.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|approvalId|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|customData|String|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [request](../resources/request.md). Optional.|
-|action|unifiedRoleScheduleRequestActions|**TODO: Add Description**. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. Optional.|
-|principalId|String|**TODO: Add Description** Optional.|
-|roleDefinitionId|String|**TODO: Add Description** Optional.|
-|directoryScopeId|String|**TODO: Add Description** Optional.|
-|appScopeId|String|**TODO: Add Description** Optional.|
-|isValidationOnly|Boolean|**TODO: Add Description** Optional.|
-|targetScheduleId|String|**TODO: Add Description** Optional.|
-|justification|String|**TODO: Add Description** Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|**TODO: Add Description** Optional.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|**TODO: Add Description** Optional.|
+|action|unifiedRoleScheduleRequestActions|Represents the type of the operation on the role assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: For administrators to assign roles to users or groups.</li><li>`adminRemove`: For administrators to remove users or groups from roles.</li><li> `adminUpdate`: For administrators to change existing role assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For users to activate their assignments.</li><li>`selfDeactivate`: For users to deactivate their active assignments.</li><li>`selfExtend`: For users to request to extend their expiring assignments.</li><li>`selfRenew`: For users to request to renew their expired assignments.</li></ul>|
+|customData|String|Free text field to define any custom data for the request. Optional.|
+|principalId|String|Identifier of the principal that has been granted the assignment. Required.|
+|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned. Required.|
+|directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Either **directoryScopeId** or **appScopeId** is required.|
+|appScopeId|String|Identifier of the app-specific scope when the assignment is scoped to an app. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Either **directoryScopeId** or **appScopeId** is required.|
+|justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object. Optional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Required.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
 
 
@@ -71,7 +66,9 @@ If successful, this method returns a `201 Created` response code and an [unified
 
 ## Examples
 
-### Request
+### Example 1: Admin assigning a directory role to a principal
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentschedulerequest_from_"
@@ -80,36 +77,24 @@ If successful, this method returns a `201 Created` response code and an [unified
 ``` http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests
 Content-Type: application/json
-Content-length: 671
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "approvalId": "String",
-  "customData": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
-  "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
-  }
+    "action": "adminAssign",
+    "justification": "Assign Groups Admin to IT Helpdesk group",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "scheduleInfo": {
+        "startDateTime": "2022-04-10T00:00:00Z",
+        "expiration": {
+            "type": "NoExpiration"
+        }
+    }
 }
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -122,30 +107,95 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
-  "id": "3c664a53-8825-6fc0-662b-7362c52e9b60",
-  "status": "String",
-  "completedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)",
-  "approvalId": "String",
-  "customData": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "action": "String",
-  "principalId": "String",
-  "roleDefinitionId": "String",
-  "directoryScopeId": "String",
-  "appScopeId": "String",
-  "isValidationOnly": "Boolean",
-  "targetScheduleId": "String",
-  "justification": "String",
-  "scheduleInfo": {
-    "@odata.type": "microsoft.graph.requestSchedule"
-  },
-  "ticketInfo": {
-    "@odata.type": "microsoft.graph.ticketInfo"
-  }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "id": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+    "status": "Provisioned",
+    "createdDateTime": "2022-04-11T11:50:03.9014347Z",
+    "completedDateTime": "2022-04-11T11:50:05.9999343Z",
+    "approvalId": null,
+    "customData": null,
+    "action": adminAssign",
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+    "justification": "Assign Groups Admin to IT Helpdesk group",
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+        }
+    },
+    "scheduleInfo": {
+        "startDateTime": "2022-04-11T11:50:05.9999343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": null,
+        "ticketSystem": null
+    }
 }
 ```
 
+### Example 2: User activating their eligible role
+
+#### Request
+
+In the following request, a user identified by **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` activates their own eligible role to an Azure AD role identified by ID `fdd7a751-b60b-444a-984c-02652fe8fa1c`. The scope of their role is all directory objects in the tenant and the assignment is for five hours. To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_selfActivate"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/
+Content-Type: application/json
+
+{
+    "action": "selfActivate",
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "justification": "Need to update app roles for selected apps.",
+    "scheduleInfo": {
+        "startDateTime": "2022-04-12T00:00:00.000Z",
+        "expiration": {
+            "type": "AfterDuration",
+            "duration": "PT5H"
+        }
+    },
+    "ticketInfo": {
+        "ticketNumber": "CONTOSO:Normal-67890",
+        "ticketSystem": "MS Project"
+    }
+}
+```
+
+
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+
+```

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Get the instances of active role assignments for the calling principal."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,9 +10,7 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Get the instances of active role assignments for the calling principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser(on=parameterValue)
 ```
 
 ## Function parameters
@@ -39,8 +37,11 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|The possible values are `principal`, `unknownFutureValue`.|
 
+## Optional query parameters
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -63,7 +64,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
 
@@ -80,22 +81,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleInstance",
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "assignmentType": "String",
-      "memberType": "String",
-      "roleAssignmentOriginId": "String",
-      "roleAssignmentScheduleId": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(unifiedRoleAssignmentScheduleInstance)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleInstance",
+            "id": "lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1",
+            "principalId": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": null,
+            "endDateTime": null,
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "roleAssignmentOriginId": "lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1",
+            "roleAssignmentScheduleId": "lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1"
+        }
+    ]
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "List roleAssignmentScheduleInstances"
-description: "Get the unifiedRoleAssignmentScheduleInstance resources from the roleAssignmentScheduleInstances navigation property."
+description: "Get the instances of active role assignments."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # List roleAssignmentScheduleInstances
 Namespace: microsoft.graph
 
-
-
-Get the unifiedRoleAssignmentScheduleInstance resources from the roleAssignmentScheduleInstances navigation property.
+Get the instances of active role assignments.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +32,8 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,22 +73,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleInstance",
-      "id": "52981a45-0a98-eb2b-8aee-3de56be01bc6",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "startDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "assignmentType": "String",
-      "memberType": "String",
-      "roleAssignmentOriginId": "String",
-      "roleAssignmentScheduleId": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleInstances",
+    "value": [
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1",
+            "principalId": "6be4b305-b75e-4efc-bfcc-31bd3b53a5f8",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": null,
+            "endDateTime": null,
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "roleAssignmentOriginId": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1",
+            "roleAssignmentScheduleId": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1"
+        },
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1",
+            "principalId": "56f2d212-e49c-42e3-8298-0188e5bef094",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "startDateTime": null,
+            "endDateTime": null,
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "roleAssignmentOriginId": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1",
+            "roleAssignmentScheduleId": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1"
+        }
+    ]
 }
 ```
 

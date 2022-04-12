@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyNotificationRule resource type"
-description: "**TODO: Add Description**"
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the notification rules that are associated with a role management policy."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,35 +11,25 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the notification rules that are associated with a role management policy.
 
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Methods
 
 None.
-<!--
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedRoleManagementPolicyNotificationRules](../api/unifiedrolemanagementpolicynotificationrule-list.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) collection|Get a list of the [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-get.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
-|[Update unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-update.md)|[unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)|Update the properties of an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
-|[Delete unifiedRoleManagementPolicyNotificationRule](../api/unifiedrolemanagementpolicynotificationrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md) object.|
--->
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isDefaultRecipientsEnabled|Boolean|**TODO: Add Description**|
-|notificationLevel|String|**TODO: Add Description**|
-|notificationRecipients|String collection|**TODO: Add Description**|
-|notificationType|String|**TODO: Add Description**|
-|recipientType|String|**TODO: Add Description**|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|**TODO: Add Description** Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|isDefaultRecipientsEnabled|Boolean|Indicates whether a default recipient will receive the notification email.|
+|notificationLevel|String|The level of notification. The possible values are `None`, `Critical`, `All`.|
+|notificationRecipients|String collection|The list of recipients of the email notifications.|
+|notificationType|String|The type of notification. Only `Email` is supported.|
+|recipientType|String|The type of recipient of the notification. The possible values are `Requestor`, `Approver`, `Admin`.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the notification rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
 
 ## Relationships
 None.

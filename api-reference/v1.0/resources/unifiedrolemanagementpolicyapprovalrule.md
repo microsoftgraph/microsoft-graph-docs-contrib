@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyApprovalRule resource type"
-description: "**TODO: Add Description**"
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approval as defined for a role management policy."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,31 +11,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
-
-Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines rules for approval as defined for a role management policy.
 
 ## Methods
 
-None. 
-<!--
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedRoleManagementPolicyApprovalRules](../api/unifiedrolemanagementpolicyapprovalrule-list.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) collection|Get a list of the [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-get.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
-|[Update unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-update.md)|[unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)|Update the properties of an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
-|[Delete unifiedRoleManagementPolicyApprovalRule](../api/unifiedrolemanagementpolicyapprovalrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md) object.|
--->
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|setting|[approvalSettings](../resources/approvalsettings.md)|**TODO: Add Description**|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|**TODO: Add Description** Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|setting|[approvalSettings](../resources/approvalsettings.md)|The settings for approval as defined in a rule.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the approval rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
 
 ## Relationships
 None.

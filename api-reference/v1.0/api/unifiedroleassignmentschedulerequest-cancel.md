@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: cancel"
-description: "**TODO: Add Description**"
+description: "Immediately cancel a unifiedRoleAssignmentScheduleRequest object whose status is Granted."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Immediately cancel a [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days. After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -43,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `204 No Content` response code. Attempting to cancel a request that is not in a cancelable state, for example, a **unifiedRoleAssignmentScheduleRequest** object whose **status** is `Provisioned` or `Failed`, returns a `400 Bad Request` error code.
 
 ## Examples
 
@@ -54,12 +52,11 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestId}/cancel
+POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e/cancel
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

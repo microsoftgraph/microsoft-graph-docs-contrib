@@ -1,6 +1,6 @@
 ---
 title: "requestSchedule resource type"
-description: "**TODO: Add Description**"
+description: "In PIM, use this resource to define the schedule for when the principal will have an eligible or active role."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,16 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|expiration|[expirationPattern](../resources/expirationpattern.md)|**TODO: Add Description**|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
+|expiration|[expirationPattern](../resources/expirationpattern.md)|When the assignment expires.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The frequency of the assignment.|
+|startDateTime|DateTimeOffset|When the assignment becomes active.|
 
 ## Relationships
 None.

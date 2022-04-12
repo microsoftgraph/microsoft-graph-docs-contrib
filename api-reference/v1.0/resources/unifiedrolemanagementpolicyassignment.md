@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyAssignment resource type"
-description: "**TODO: Add Description**"
+description: "The assignment of a role management policy to a role definition object."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,10 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+The assignment of a role management policy to a [role definition](../resources/unifiedroledefinition.md) object.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,18 +30,19 @@ Inherits from [entity](../resources/entity.md).
 -->
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|policyId|String|**TODO: Add Description**|
-|roleDefinitionId|String|**TODO: Add Description**|
-|scopeId|String|**TODO: Add Description**|
-|scopeType|String|**TODO: Add Description**|
+|id|String|Unique identifier for the policy assignment. The ID is typically a concatenation of the **unifiedRoleManagementPolicy** ID and the **roleDefinitionId** separated by an underscore.|
+|policyId|String|The id of the policy. Inherited from [entity](../resources/entity.md).|
+|roleDefinitionId|String|The identifier of the [role definition](unifiedroledefinition.md) object where the policy applies. If not specified, the policy applies to all roles.|
+|scopeId|String|The identifier of the scope where the policy is assigned.  Can be `/` for the tenant or a group ID. Required.|
+|scopeType|String|The type of the scope where the policy is assigned. One of `Directory`, `DirectoryRole`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|**TODO: Add Description**|
+|policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)| The policy that's associated with a policy assignment. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyExpirationRule resource type"
-description: "**TODO: Add Description**"
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the expiration rules associated with a role management policy."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,33 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
-
-Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the expiration rules associated with a role management policy.
 
 ## Methods
 
 None.
 
-<!--
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedRoleManagementPolicyExpirationRules](../api/unifiedrolemanagementpolicyexpirationrule-list.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) collection|Get a list of the [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-get.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
-|[Update unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-update.md)|[unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)|Update the properties of an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
-|[Delete unifiedRoleManagementPolicyExpirationRule](../api/unifiedrolemanagementpolicyexpirationrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md) object.|
--->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isExpirationRequired|Boolean|**TODO: Add Description**|
-|maximumDuration|Duration|**TODO: Add Description**|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|**TODO: Add Description** Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|isExpirationRequired|Boolean|Indicates whether expiration is required or if it's a permanently active assignment or eligibility. |
+|maximumDuration|Duration| The maximum duration allowed for eligibility or assignment which is not permanent. Required when **isExpirationRequired** is `true`. |
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the expiration rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
 
 ## Relationships
 None.

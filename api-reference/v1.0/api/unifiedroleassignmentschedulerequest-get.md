@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleRequest"
-description: "Read the properties and relationships of an unifiedRoleAssignmentScheduleRequest object."
+description: "In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # Get unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
-
-
-Read the properties and relationships of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
+In PIM, read the details of a request for an active and persistent role assignment made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +32,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignm
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestId}
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e
 ```
 
 
@@ -74,32 +72,122 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
-    "id": "3c664a53-8825-6fc0-662b-7362c52e9b60",
-    "status": "String",
-    "completedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)",
-    "approvalId": "String",
-    "customData": "String",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests/$entity",
+    "id": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+    "status": "Provisioned",
+    "createdDateTime": "2022-04-11T11:50:05.95Z",
+    "completedDateTime": "2022-04-11T11:50:06Z",
+    "approvalId": null,
+    "customData": null,
+    "action": "adminAssign",
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "isValidationOnly": false,
+    "targetScheduleId": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+    "justification": "Assign Groups Admin to IT Helpdesk group",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "device": null,
+        "user": {
+            "displayName": null,
+            "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+        }
     },
-    "action": "String",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "isValidationOnly": "Boolean",
-    "targetScheduleId": "String",
-    "justification": "String",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
+        "startDateTime": "2022-04-11T11:50:05.9999343Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
     },
     "ticketInfo": {
-      "@odata.type": "microsoft.graph.ticketInfo"
+        "ticketNumber": null,
+        "ticketSystem": null
     }
-  }
 }
 ```
 
+### Example 2: Retrieve specified properties of a role assignment request and expand the relationships
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentschedulerequest_expand_relationships"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e?$select=principalId,action,roleDefinitionId&$expand=roleDefinition,activatedUsing,principal,targetSchedule
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentScheduleRequest)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests(principalId,action,roleDefinitionId,roleDefinition(),activatedUsing(),principal(),targetSchedule())/$entity",
+    "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+    "action": "adminAssign",
+    "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "roleDefinition": {
+        "id": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "description": "",
+        "displayName": "Groups Administrator",
+        "isBuiltIn": true,
+        "isEnabled": true,
+        "templateId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "version": null,
+        "resourceScopes": [],
+        "rolePermissions": []
+    },
+    "activatedUsing": null,
+    "principal": {
+        "@odata.type": "#microsoft.graph.user",
+        "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+        "displayName": "Conf Room Adams",
+        "userPrincipalName": "Adams@Contoso.com",
+        "mail": "Adams@Contoso.com",
+        "businessPhones": [],
+        "givenName": null,
+        "jobTitle": null,
+        "mobilePhone": null,
+        "officeLocation": null,
+        "preferredLanguage": null,
+        "surname": null
+    },
+    "targetSchedule": {
+        "id": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+        "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+        "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "directoryScopeId": "/",
+        "appScopeId": null,
+        "createdUsing": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+        "createdDateTime": "2022-04-11T11:50:05.95Z",
+        "modifiedDateTime": "2022-04-11T11:50:05.95Z",
+        "status": "Provisioned",
+        "assignmentType": "Assigned",
+        "memberType": "Direct",
+        "scheduleInfo": {
+            "startDateTime": "2022-04-11T11:50:05.9999343Z",
+            "recurrence": null,
+            "expiration": {
+                "type": "noExpiration",
+                "endDateTime": null,
+                "duration": null
+            }
+        }
+    }
+}
+```

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentSchedule: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "Retrieve the schedules for active role assignment operations for which the signed-in user is the principal."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # unifiedRoleAssignmentSchedule: filterByCurrentUser
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory	|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory	|
 
 ## HTTP request
 
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -39,7 +37,11 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions| The possible values are `principal`, `unknownFutureValue`.|
+
+## Optional query parameters
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -63,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='principal')
 ```
 
 
@@ -80,25 +82,32 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
-      "id": "String (identifier)",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "String",
-      "memberType": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(unifiedRoleAssignmentSchedule)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
+            "id": "lAPpYvVpN0KRkAEhdxReEJ2SvT9WjGJEhR4OuaezoqU-1",
+            "principalId": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": null,
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "status": "Provisioned",
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2022-04-11T19:31:50.5613964Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            }
+        }
+    ]
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "List roleAssignmentSchedules"
-description: "Get the unifiedRoleAssignmentSchedule resources from the roleAssignmentSchedules navigation property."
+description: "Get the schedules for active role assignment operations."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # List roleAssignmentSchedules
 Namespace: microsoft.graph
 
-
-
-Get the unifiedRoleAssignmentSchedule resources from the roleAssignmentSchedules navigation property.
+Get the schedules for active role assignment operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory	|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory	|
 
 ## HTTP request
 
@@ -34,7 +32,7 @@ GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,25 +72,53 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentSchedule",
-      "id": "287c0550-dab0-98e0-2454-da5867ac6437",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "assignmentType": "String",
-      "memberType": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentSchedules",
+    "value": [
+        {
+            "id": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+            "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+            "createdDateTime": "2022-04-11T11:50:06.343Z",
+            "modifiedDateTime": null,
+            "status": "Provisioned",
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2022-04-11T11:50:06.343Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            }
+        },
+        {
+            "id": "lAPpYvVpN0KRkAEhdxReEAWz5Gtet_xOv8wxvTtTpfg-1",
+            "principalId": "6be4b305-b75e-4efc-bfcc-31bd3b53a5f8",
+            "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": null,
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "status": "Provisioned",
+            "assignmentType": "Assigned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2022-04-11T17:11:50.8825697Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            }
+        }
+    ]
 }
 ```
 

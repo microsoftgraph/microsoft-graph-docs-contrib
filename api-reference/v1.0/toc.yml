@@ -4859,7 +4859,98 @@ items:
             - name: Get
               href: api/unifiedroleassignment-get.md
             - name: Delete
-              href: api/unifiedroleassignment-delete.md            
+              href: api/unifiedroleassignment-delete.md
+          - name: Privileged identity management (PIM)
+            href: privilegedidentitymanagementv3-overview.md
+            items:
+            - name: Role assignments
+              items:
+                - name: Schedule requests
+                  href: unifiedroleassignmentschedulerequest.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                    - name: Create
+                      href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedulerequest-get.md
+                    - name: Cancel
+                      href: api/unifiedroleassignmentschedulerequest-cancel.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                - name: Schedules
+                  href: unifiedroleassignmentschedule.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentshedules.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedule-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentshedule-filterbycurrentuser.md
+                - name: Schedule instances
+                  href: unifiedroleassignmentscheduleinstance.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentsheduleinstances.md
+                    - name: Get
+                      href: api/unifiedroleassignmentscheduleinstance-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentsheduleinstance-filterbycurrentuser.md
+            - name: Role eligibility
+              items:
+              - name: Schedule requests
+                href: unifiedroleeligibilityschedulerequest.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+              - name: Schedules
+                href: unifiedroleeligibilityschedule.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedules.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedules-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedules-filterbycurrentuser.md
+              - name: Schedule instances
+                href: unifiedroleeligibilityscheduleinstance.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+          - name: Role management policies
+            items:
+            - name: Policies
+              displayName: role management policies
+              href: unifiedrolemanagementpolicy.md
+              items:
+              - name: List
+                href: api/policyroot-list-rolemanagementpolicies.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicy-get.md
+              - name: List rules
+                href: api/unifiedrolemanagementpolicy-list-rules.md
+              - name: Get rules
+                href: api/unifiedrolemanagementpolicyrule-get.md
+            - name: Policy assignments
+              displayName: role managemement policy assignments
+              href: unifiedrolemanagementpolicyassignment.md
+              items:
+              - name: List
+                href: api/api/policyroot-list-rolemanagementpolicyassignments.md
+              - name: Get
+                href: api/unifiedrolemanagementpolicyassignment-get.md              
       - name: Identity and sign-in
         items:
         - name: Authentication methods

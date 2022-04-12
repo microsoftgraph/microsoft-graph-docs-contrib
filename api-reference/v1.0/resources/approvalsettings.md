@@ -1,6 +1,6 @@
 ---
 title: "approvalSettings resource type"
-description: "**TODO: Add Description**"
+description: "The settings for approval as defined in a role management policy rule."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,18 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+The settings for approval as defined in a role management policy rule.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalMode|String|**TODO: Add Description**|
-|approvalStages|[unifiedApprovalStage](../resources/unifiedapprovalstage.md) collection|**TODO: Add Description**|
-|isApprovalRequired|Boolean|**TODO: Add Description**|
-|isApprovalRequiredForExtension|Boolean|**TODO: Add Description**|
-|isRequestorJustificationRequired|Boolean|**TODO: Add Description**|
+|approvalMode|String|One of `SingleStage`, `Serial`, `Parallel`, `NoApproval` (default). `NoApproval` is used when `isApprovalRequired` is `false`.|
+|approvalStages|[unifiedApprovalStage](../resources/unifiedapprovalstage.md) collection|If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.|
+|isApprovalRequired|Boolean|Indicates whether approval is required for requests in this policy.|
+|isApprovalRequiredForExtension|Boolean|Indicates whether approval is required for a user to extend their assignment.|
+|isRequestorJustificationRequired|Boolean|Indicates whether the requestor is required to supply a justification in their request.|
 
 ## Relationships
 None.

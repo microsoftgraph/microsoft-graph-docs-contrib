@@ -1,6 +1,6 @@
 ---
 title: "ticketInfo resource type"
-description: "**TODO: Add Description**"
+description: "Represents ticket information related to role assignment and eligibility requests."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Represents ticket information related to role assignment and eligibility requests. Use this object to define ticket parameters for a role assignment or eligibility request is initiated by another request made in an external system.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketNumber|String|**TODO: Add Description**|
-|ticketSystem|String|**TODO: Add Description**|
+|ticketNumber|String|The ticket number.|
+|ticketSystem|String|The description of the ticket system.|
 
 ## Relationships
 None.

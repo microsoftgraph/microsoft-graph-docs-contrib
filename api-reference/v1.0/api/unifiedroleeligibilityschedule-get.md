@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleEligibilitySchedule"
-description: "Read the properties and relationships of an unifiedRoleEligibilitySchedule object."
+description: "Retrieve the schedule for a role eligibility operation."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # Get unifiedRoleEligibilitySchedule
 Namespace: microsoft.graph
 
-
-
-Read the properties and relationships of an [unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) object.
+Retrieve the schedule for a role eligibility operation.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -31,13 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /roleManagement/directory/roleEligibilitySchedules/{unifiedRoleEligibilityScheduleId}
-GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentScheduleId}/activatedUsing
-GET /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignmentScheduleRequestId}/activatedUsing
-GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestId}/targetSchedule
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySchedules/{unifiedRoleEligibilityScheduleId}
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySchedules/23f1ba38-8f98-4ed3-bdaf-b240b343c196
 ```
 
 

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: filterByCurrentUser"
-description: "**TODO: Add Description**"
+description: "In PIM, retrieve the requests for active role assignments for a particular principal. The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,18 +10,16 @@ doc_type: apiPageType
 # unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+In PIM, retrieve the requests for active role assignments for a particular principal. The principal can be the creator or approver of the **unifiedRoleAssignmentScheduleRequest** object, or they can be the target of the assignment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -30,16 +28,20 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
+GET /roleManagement/directory/roleAssignmentScheduleRequests?$filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleRequestFilterByCurrentUserOptions|**TODO: Add Description**|
+|on|roleAssignmentScheduleRequestFilterByCurrentUserOptions| The possible values are `principal`, `createdBy`, `approver`, `unknownFutureValue`. Only `principal` and `approver` are currently supported.|
+
+## Optional query parameters
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -63,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests?$filterByCurrentUser(on='principal')
 ```
 
 
@@ -80,34 +82,46 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleAssignmentScheduleRequest",
-      "id": "String (identifier)",
-      "status": "String",
-      "completedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)",
-      "approvalId": "String",
-      "customData": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "action": "String",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "isValidationOnly": "Boolean",
-      "targetScheduleId": "String",
-      "justification": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "ticketInfo": {
-        "@odata.type": "microsoft.graph.ticketInfo"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleAssignmentScheduleRequests",
+    "value": [
+        {
+            "id": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+            "status": "Provisioned",
+            "createdDateTime": "2022-04-11T11:50:05.95Z",
+            "completedDateTime": "2022-04-11T11:50:06Z",
+            "approvalId": null,
+            "customData": null,
+            "action": "adminAssign",
+            "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "roleDefinitionId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "isValidationOnly": false,
+            "targetScheduleId": "95c690fb-3eb3-4942-a03f-4524aed6f31e",
+            "justification": "Assign Groups Admin to IT Helpdesk group",
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "displayName": null,
+                    "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5"
+                }
+            },
+            "scheduleInfo": {
+                "startDateTime": "2022-04-11T11:50:05.9999343Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "noExpiration",
+                    "endDateTime": null,
+                    "duration": null
+                }
+            },
+            "ticketInfo": {
+                "ticketNumber": null,
+                "ticketSystem": null
+            }
+        }
+    ]
 }
 ```
 

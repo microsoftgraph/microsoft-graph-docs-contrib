@@ -1,6 +1,6 @@
 ---
 title: "List roleEligibilitySchedules"
-description: "Get the unifiedRoleEligibilitySchedule resources from the roleEligibilitySchedules navigation property."
+description: "Get the schedules for role eligibility operations."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegated (personal Microsoft account)|Not supported|
+|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleEligibilitySchedules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,24 +74,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
-      "id": "4814e6e0-a923-14cb-6a73-76fb94977450",
-      "principalId": "String",
-      "roleDefinitionId": "String",
-      "directoryScopeId": "String",
-      "appScopeId": "String",
-      "createdUsing": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)",
-      "status": "String",
-      "scheduleInfo": {
-        "@odata.type": "microsoft.graph.requestSchedule"
-      },
-      "memberType": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilitySchedules",
+    "value": [
+        {
+            "id": "77f71919-62f3-4d0c-9f88-0a0391b665cd",
+            "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "roleDefinitionId": "8424c6f0-a189-499e-bbd0-26c1753c96d4",
+            "directoryScopeId": "/",
+            "appScopeId": null,
+            "createdUsing": "77f71919-62f3-4d0c-9f88-0a0391b665cd",
+            "createdDateTime": "2022-04-12T14:44:50.287Z",
+            "modifiedDateTime": "0001-01-01T08:00:00Z",
+            "status": "Provisioned",
+            "memberType": "Direct",
+            "scheduleInfo": {
+                "startDateTime": "2022-04-12T14:44:50.287Z",
+                "recurrence": null,
+                "expiration": {
+                    "type": "afterDateTime",
+                    "endDateTime": "2024-04-10T00:00:00Z",
+                    "duration": null
+                }
+            }
+        }
+    ]
 }
 ```
 
