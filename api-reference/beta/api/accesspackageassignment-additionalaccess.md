@@ -7,13 +7,12 @@ ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
-# accessPackageAssignment: additionalAssignments
+# accessPackageAssignment: additionalAccess
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate additional access for a target user, based on the incompatible access packages for a specific access package.
-
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate additional access for a target user.  This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,8 +38,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| accessPackageId | `string` |  Scope down to assignments of a specific access package. |
-| incompatibleAccessPackageId | `string` | Scope down to assignments due to a specific incompatible access package. |
+| accessPackageId | String |  Indicates the ID of an access package for which the caller would like to retrieve the assignments. |
+| incompatibleAccessPackageId | String | Returns the assignments for users who also have assignments to another, incompatible, access package. |
 
 ## Request headers
 |Name|Description|
@@ -58,7 +57,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ## Examples
 
-The following example gets the additional access package assignments for a target user.
+The following example gets the access package assignments for users who have assignments to both access packages.
 
 ### Request
 

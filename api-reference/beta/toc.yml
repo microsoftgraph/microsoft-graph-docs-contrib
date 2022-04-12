@@ -12878,6 +12878,8 @@ items:
             items:
             - name: List
               href: api/entitlementmanagement-list-accesspackageassignments.md
+            - name: Additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
