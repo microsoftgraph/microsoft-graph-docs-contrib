@@ -1,6 +1,6 @@
 ---
 title: "Get addLargeGalleryView"
-description: "Get the status of addLargeGalleryView operation."
+description: "Get the status of an operation that adds the large gallery view to a call."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,16 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the status of addLargeGalleryView operation.
+Get the status of an operation that adds the large gallery view to a call.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported.                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | None.                                  |
+| Delegated (work or school account)     | Not supported.                        |
+| Delegated (personal Microsoft account) | Not supported.                        |
+| Application                            | None.                                 |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,42 +31,47 @@ One of the following permissions is required to call this API. To learn more, in
 GET /app/calls/{callId}/operations/{id}
 GET /communications/calls/{callId}/operations/{id}
 ```
+
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
+
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [addlargegalleryviewoperation](../resources/addlargegalleryviewoperation.md) object in the response body.
 
-## Examples
+If successful, this method returns a `200 OK` response code and an [addLargeGalleryViewOperation](../resources/addlargegalleryviewoperation.md) object in the response body.
 
-### Example 1: Get the status of add large gallery view operation
+## Example
 
-#### Request
+### Request
 
-# [HTTP](#tab/http)
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
-  "name": "get-addLargeGalleryView-1"
+  "name": "get-addLargeGalleryViewOperation-1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/e33176d4-836a-4fd7-b95a-d11bda52811d
 ```
 
-#### Response
+### Response
+
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "name": "get-addLargeGalleryView-1",
+  "name": "get-addLargeGalleryViewOperation-1",
   "truncated": true,
   "@odata.type": "microsoft.graph.addLargeGalleryViewOperation"
 } -->
