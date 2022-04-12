@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  Represents a recurrence of an [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) object. A history definition that does not recur will have exactly one instance.
 
- Every **accessReviewHistoryInstance** along with its associated **accessReviewHistoryDefinition** contain the properties **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime**, **decisions**, and **scopes**. These properties are used when scheduling recurrences as well as selecting review data and can be modified. Each **accessReviewHistoryInstance** object and data is only available for 30 days. Once an **accessReviewHistoryInstance** status has been moved to `done` a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md).
+ Every **accessReviewHistoryInstance** along with its associated **accessReviewHistoryDefinition** contain the properties **reviewHistoryPeriodStartDateTime**, **reviewHistoryPeriodEndDateTime**, **decisions**, **scheduleSettings**, and **scopes**. These properties are used when scheduling recurrences as well as selecting review data and can be modified. Each **accessReviewHistoryInstance** object and data is only available for 30 days. Once an **accessReviewHistoryInstance** status has been moved to `done` a link can be generated to retrieve the instance's data by calling [generateDownloadUri](../api/accessreviewhistoryinstance-generatedownloaduri.md).
 
 ## Methods
 
