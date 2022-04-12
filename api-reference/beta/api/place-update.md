@@ -3,7 +3,7 @@ title: "Update place"
 description: "Update the properties of place object."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: "Outlook"
+ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
@@ -201,6 +201,21 @@ Content-type: application/json
   "isWheelChairAccessible": false
 }
 ```
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+# [Objective-C](#tab/objc)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
+
+---
+
 
 ### Response
 

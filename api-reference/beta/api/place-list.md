@@ -241,6 +241,21 @@ The following example shows how to get all the [workspaces](../resources/workspa
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.workspace
 ```
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+# [Objective-C](#tab/objc)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
+
+---
+
 
 #### Response
 
@@ -446,6 +461,10 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
 ---
 
 
@@ -520,6 +539,21 @@ The following example shows how to get a list of [workspace](../resources/worksp
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/workspaces
 ```
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+# [Objective-C](#tab/objc)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
+
+---
+
 
 #### Response
 

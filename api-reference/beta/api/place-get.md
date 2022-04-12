@@ -166,6 +166,21 @@ The following example specifies the **id** of a **workspace** to get its propert
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
+# [C#](#tab/csharp)
+
+# [JavaScript](#tab/javascript)
+
+# [Objective-C](#tab/objc)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
+
+---
+
 
 #### Response
 
