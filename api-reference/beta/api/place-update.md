@@ -221,10 +221,10 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
+    "@odata.type": "#microsoft.graph.workspace",
     "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
+    "emailAddress": "ws100@contoso.com",
+    "displayName": "Work Space 100",
     "address": {
       "street": "4567 Main Street",
       "city": "Buffalo",
@@ -237,7 +237,7 @@ Content-type: application/json
       "longitude": -122.0
     },
     "phone": "555-555-0100",
-    "nickname": "Conf Room",
+    "nickname": "Work Space",
     "label": "100",
     "capacity": 50,
     "building": "1",
