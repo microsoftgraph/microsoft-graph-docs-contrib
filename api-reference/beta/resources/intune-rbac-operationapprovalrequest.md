@@ -45,6 +45,7 @@ The OperationApprovalRequest Entity
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|The current approval request status. This property is read-only. Possible values are: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
 |requestJustification|String|The request justification. This property is read-only.|
 |approvalJustification|String|The justification for the approval of the request. This property is read-only.|
+|operationApprovalPolicies|String|The operational approval policies used in the request. This property is read-only.|
 
 ## Relationships
 None
@@ -102,7 +103,8 @@ Here is a JSON representation of the resource.
   },
   "status": "String",
   "requestJustification": "String",
-  "approvalJustification": "String"
+  "approvalJustification": "String",
+  "operationApprovalPolicies": "String"
 }
 ```
 
