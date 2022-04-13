@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # retentionEventType resource type
 
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,11 +19,11 @@ When an event is created, it is associated to a specific event type. The creatio
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List retentionEventTypes](../api/recordsmanagement-retentioneventtype-list.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md) collection|Get a list of the [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) objects and their properties.|
-|[Create retentionEventType](../api/recordsmanagement-recordsmanagementroot-post-eventtypes.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Create a new [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.|
-|[Get retentionEventType](../api/recordsmanagement-retentioneventtype-get.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Read the properties and relationships of a [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.|
-|[Update retentionEventType](../api/recordsmanagement-retentioneventtype-update.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Update the properties of a [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.|
-|[Delete retentionEventType](../api/recordsmanagement-retentioneventtype-delete.md)|None|Deletes a [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.|
+|[List retentionEventTypes](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get a list of the [retentionEventType](../resources/security-retentioneventtype.md) objects and their properties.|
+|[Create retentionEventType](../api/security-retentionlabel-post-eventtypes.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Create a new [retentionEventType](../resources/security-retentioneventtype.md) object.|
+|[Get retentionEventType](../api/security-retentioneventtype-get.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Read the properties and relationships of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
+|[Update retentionEventType](../api/security-retentioneventtype-update.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
+|[Delete retentionEventType](../api/security-retentioneventtype-delete.md)|None|Deletes a [retentionEventType](../resources/security-retentioneventtype.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,14 +44,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.recordsManagement.retentionEventType",
+  "@odata.type": "microsoft.graph.security.retentionEventType",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEventType",
+  "@odata.type": "#microsoft.graph.security.retentionEventType",
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",

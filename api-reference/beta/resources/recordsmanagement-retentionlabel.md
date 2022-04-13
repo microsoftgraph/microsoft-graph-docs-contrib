@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # retentionLabel resource type
 
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,13 +18,13 @@ A retentionLabel allows a user to retain or delete content and configure additio
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List retentionLabels](../api/recordsmanagement-retentionlabel-list.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/recordsmanagement-retentionlabel.md) objects and their properties.|
-|[Create retentionLabel](../api/recordsmanagement-recordsmanagementroot-post-labels.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md)|Create a new [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
-|[Get retentionLabel](../api/recordsmanagement-retentionlabel-get.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
-|[Update retentionLabel](../api/recordsmanagement-retentionlabel-update.md)|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
-|[Delete retentionLabel](../api/recordsmanagement-retentionlabel-delete.md)|None|Delete a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.|
-|[List retentionEventType](../api/recordsmanagement-retentioneventtype-list.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
-|[Add retentionEventType](../api/recordsmanagement-recordsmanagementroot-post-eventtypes.md)|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
+|[List retentionLabels](../api/security-retentionlabel-list.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.|
+|[Create retentionLabel](../api/security-labelsroot-post-retentionlabels.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[Get retentionLabel](../api/security-retentionlabel-get.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[Delete retentionLabel](../api/security-retentionlabel-delete.md)|None|Delete a [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[List retentionEventType](../api/security-retentionlabel-list-eventtype.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
+|[Add retentionEventType](../api/security-retentionlabel-post-eventtypes.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +36,7 @@ A retentionLabel allows a user to retain or delete content and configure additio
 |descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
 |descriptionForUsers|String|This is an optional property that provides the label information for the user.|
 |displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.recordsManagement.dispositionReviewStage](../resources/recordsmanagement-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
+|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
 |id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
 |isInUse|Boolean|Specifies if the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
@@ -47,21 +47,21 @@ A retentionLabel allows a user to retain or delete content and configure additio
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|eventType|[microsoft.graph.recordsManagement.retentionEventType](../resources/recordsmanagement-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type.|
+|eventType|[retentionEventType](../resources/security-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.recordsManagement.retentionLabel",
+  "@odata.type": "microsoft.graph.security.retentionLabel",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionLabel",
+  "@odata.type": "#microsoft.graph.security.retentionLabel",
   "id": "String (identifier)",
   "displayName": "String",
   "behaviorDuringRetentionPeriod": "String",
@@ -81,7 +81,7 @@ The following is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "dispositionReviewStages": [
     {
-      "@odata.type": "microsoft.graph.recordsManagement.dispositionReviewStage"
+      "@odata.type": "microsoft.graph.security.dispositionReviewStage"
     }
   ]
 }

@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # dispositionReviewStage resource type
 
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,12 +28,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.recordsManagement.dispositionReviewStage"
+  "@odata.type": "microsoft.graph.security.dispositionReviewStage"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.dispositionReviewStage",
+  "@odata.type": "#microsoft.graph.security.dispositionReviewStage",
   "stageName": "String",
   "reviewers": [
     "String"

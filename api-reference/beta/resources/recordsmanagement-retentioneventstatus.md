@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # retentionEventStatus resource type
 
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,12 +30,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.recordsManagement.retentionEventStatus"
+  "@odata.type": "microsoft.graph.security.retentionEventStatus"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEventStatus",
+  "@odata.type": "#microsoft.graph.security.retentionEventStatus",
   "workload": "String",
   "location": "String",
   "status": "String",
