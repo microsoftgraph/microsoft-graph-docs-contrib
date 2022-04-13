@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # List retentionEventTypes
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) objects and their properties.
+Get a list of the [retentionEventType](../resources/security-retentioneventtype.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/recordsManagement/eventTypes
+GET /security/triggerTypes/retentionEventTypes
 ```
 
 ## Optional query parameters
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/recordsManagement/eventTypes
+GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/compliance/recordsManagement/eventTypes
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recordsManagement.retentionEventType)"
+  "@odata.type": "Collection(microsoft.graph.security.retentionEventType)"
 }
 -->
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.recordsManagement.retentionEventType",
+      "@odata.type": "#microsoft.graph.security.retentionEventType",
       "id": "dd689e79-9e79-dd68-799e-68dd799e68dd",
       "displayName": "String",
       "description": "String",

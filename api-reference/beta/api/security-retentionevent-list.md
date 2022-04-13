@@ -1,18 +1,18 @@
 ---
-title: "List retentionLabels"
-description: "Get a list of the retentionLabel objects and their properties."
+title: "List retentionEvents"
+description: "Get a list of the retentionEvent objects and their properties."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List retentionLabels
-Namespace: microsoft.graph.recordsManagement
+# List retentionEvents
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [retentionLabel](../resources/recordsmanagement-retentionlabel.md) objects and their properties.
+Get a list of the [retentionEvent](../resources/security-retentionevent.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/recordsManagement/labels
+GET /security/triggers/retentionEvents
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response.  For example, to retrieve the navigation property for event type, use $expand=eventtype. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve the navigation property for labels,use $expand=labels. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,18 +46,19 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [retentionLabel](../resources/recordsmanagement-retentionlabel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [retentionEvent](../resources/security-retentionevent.md)  objects in the response body.
 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
-  "name": "list_retentionlabel"
+  "name": "list_retentionevent"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/recordsManagement/labels
+GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 ```
 
 
@@ -66,9 +67,10 @@ GET https://graph.microsoft.com/beta/compliance/recordsManagement/labels
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recordsManagement.retentionLabel)"
+  "@odata.type": "Collection(microsoft.graph.security.retentionEvent)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -76,16 +78,13 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.recordsManagement.retentionLabel",
-      "id": "4cce81b5-81b5-4cce-b581-ce4cb581ce4c",
+      "@odata.type": "#microsoft.graph.security.retentionEvent",
+      "id": "f241abff-abff-f241-ffab-41f2ffab41f2",
       "displayName": "String",
-      "behaviorDuringRetentionPeriod": "String",
-      "actionAfterRetentionPeriod": "String",
-      "retentionTrigger": "String",
-      "retentionDurationInDays": "Integer",
-      "isInUse": "Boolean",
-      "descriptionForAdmins": "String",
-      "descriptionForUsers": "String",
+      "description": "String",
+      "messagesQuery": "String",
+      "filesQuery": "String",
+      "eventTriggerDateTime": "String (timestamp)",
       "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"
       },
@@ -94,13 +93,16 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.identitySet"
       },
       "lastModifiedDateTime": "String (timestamp)",
-      "dispositionReviewStages": [
+      "eventPropagationResult": {
+        "@odata.type": "microsoft.graph.security.eventPropagationResult"
+      },
+      "eventStatus": [
         {
-          "@odata.type": "microsoft.graph.recordsManagement.dispositionReviewStage"
+          "@odata.type": "microsoft.graph.security.retentionEventStatus"
         }
-      ]
+      ],
+      "lastStatusUpdateTime": "String (timestamp)"
     }
   ]
 }
 ```
-

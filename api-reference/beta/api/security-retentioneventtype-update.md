@@ -1,18 +1,18 @@
 ---
-title: "Create retentionEventType"
-description: "Create a new retentionEventType object."
+title: "Update retentionEventType"
+description: "Update the properties of a retentionEventType object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Create retentionEventType
-Namespace: microsoft.graph.recordsManagement
+# Update retentionEventType
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new retentionEventType object.
+Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /compliance/recordsManagement/eventTypes
+PATCH /security/labels/retentionLabels/{retentionLabelId}/eventType
+PATCH /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
 ```
 
 ## Request headers
@@ -40,9 +41,8 @@ POST /compliance/recordsManagement/eventTypes
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-You can specify the following properties when creating a retentionEventType.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -53,27 +53,28 @@ You can specify the following properties when creating a retentionEventType.
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
 
-
-
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [retentionEventType](../resources/recordsmanagement-retentioneventtype.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [retentionEventType](../resources/security-retentioneventtype.md) object in the response body.
 
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "create_retentioneventtype_from_"
+  "name": "update_retentioneventtype"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/compliance/recordsManagement/eventTypes
+PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/eventType
 Content-Type: application/json
 Content-length: 208
 
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEventType",
+  "@odata.type": "#microsoft.graph.security.retentionEventType",
   "displayName": "String",
   "description": "String",
   "createdBy": {
@@ -87,16 +88,16 @@ Content-length: 208
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.recordsManagement.retentionEventType"
+  "truncated": true
 }
 -->
+
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEventType",
+  "@odata.type": "#microsoft.graph.security.retentionEventType",
   "id": "dd689e79-9e79-dd68-799e-68dd799e68dd",
   "displayName": "String",
   "description": "String",
@@ -110,4 +111,3 @@ Content-Type: application/json
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

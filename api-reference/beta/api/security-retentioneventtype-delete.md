@@ -1,18 +1,18 @@
 ---
-title: "Delete retentionLabel"
-description: "Deletes a retentionLabel object."
+title: "Delete retentionEventType"
+description: "Deletes a retentionEventType object."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# Delete retentionLabel
-Namespace: microsoft.graph.recordsManagement
+# Delete retentionEventType
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.
+Deletes a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /compliance/recordsManagement/labels/{retentionLabelId}
-DELETE /compliance/recordsManagement/events/{retentionEventId}/labels/{retentionLabelId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/eventType
+DELETE /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
 ```
 
 ## Request headers
@@ -51,11 +51,11 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_retentionlabel"
+  "name": "delete_retentioneventtype"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/compliance/recordsManagement/labels/{retentionLabelId}
+DELETE https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
 ```
 
 

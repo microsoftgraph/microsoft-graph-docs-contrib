@@ -21,8 +21,8 @@ Namespace: microsoft.graph.security
 |:---|:---|:---|
 |[List retentionEvents](../api/security-retentionevent-list.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md) collection|Get a list of the [retentionEvent](../resources/security-retentionevent.md) objects and their properties.|
 |[Create retentionEvent](../api/security-triggerstroot-post-retentionevents.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Create a new [retentionEvent](../resources/security-retentionevent.md) object.|
-|[Get retentionEvent](../api/security-retentionevent-get.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Read the properties and relationships of a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.|
-|[Delete retentionEvent](../api/security-retentionevent-delete.md)|None|Deletes a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.|
+|[Get retentionEvent](../api/security-retentionevent-get.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Read the properties and relationships of a [retentionEvent](../resources/security-retentionevent.md) object.|
+|[Delete retentionEvent](../api/security-retentionevent-delete.md)|None|Deletes a [retentionEvent](../resources/security-retentionevent.md) object.|
 |
 
 
@@ -46,7 +46,7 @@ Namespace: microsoft.graph.security
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.recordsManagement.retentionLabel](../resources/recordsmanagement-retentionlabel.md) collection|Retention labels linked to the event.|
+|labels|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Retention labels linked to the event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

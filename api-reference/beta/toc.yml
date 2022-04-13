@@ -1852,7 +1852,7 @@ items:
           - name: Delete
             href: api/recordsmanagement-retentionlabel-delete.md
         - name: Events
-          href: resources/recordsmanagement-retentionevent.md
+          href: resources/security-retentionevent.md
           items:
           - name: List
             href: api/recordsmanagement-retentionevent-list.md
@@ -1863,7 +1863,7 @@ items:
           - name: Delete
             href: api/recordsmanagement-retentionevent-delete.md
         - name: Event Types
-          href: resources/recordsmanagement-retentioneventtype.md
+          href: resources/security-retentioneventtype.md
           items:
           - name: List
             href: api/recordsmanagement-retentioneventtype-list.md

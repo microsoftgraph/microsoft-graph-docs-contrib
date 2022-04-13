@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Delete retentionEvent
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.
+Deletes a [retentionEvent](../resources/security-retentionevent.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /compliance/recordsManagement/events/{retentionEventId}
+DELETE /security/triggers/retentionEvents/{retentionEventId}
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/compliance/recordsManagement/events/{retentionEventId}
+DELETE https://graph.microsoft.com/beta/security/triggers/retentionEvents/{retentionEventId}
 ```
 
 

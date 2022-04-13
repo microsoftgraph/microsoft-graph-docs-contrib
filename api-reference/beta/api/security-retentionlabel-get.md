@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Get retentionLabel
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object.
+Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /compliance/recordsManagement/labels/{retentionLabelId}
-GET /compliance/recordsManagement/events/{retentionEventId}/labels/{retentionLabelId}
+GET /security/labels/retentionLabels/{retentionLabelId}
+GET /security/triggers/retentionEvents/{retentionEventId}/labels/{retentionLabelId}
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [retentionLabel](../resources/recordsmanagement-retentionlabel.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [retentionLabel](../resources/security-retentionlabel.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [retentionLabe
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/compliance/recordsManagement/labels/{retentionLabelId}
+GET  https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
 ```
 
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/compliance/recordsManagement/labels/{retent
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.recordsManagement.retentionLabel"
+  "@odata.type": "microsoft.graph.security.retentionLabel"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.recordsManagement.retentionLabel",
+    "@odata.type": "#microsoft.graph.security.retentionLabel",
     "id": "4cce81b5-81b5-4cce-b581-ce4cb581ce4c",
     "displayName": "String",
     "behaviorDuringRetentionPeriod": "String",
@@ -96,7 +96,7 @@ Content-Type: application/json
     "lastModifiedDateTime": "String (timestamp)",
     "dispositionReviewStages": [
       {
-        "@odata.type": "microsoft.graph.recordsManagement.dispositionReviewStage"
+        "@odata.type": "microsoft.graph.security.dispositionReviewStage"
       }
     ]
   }

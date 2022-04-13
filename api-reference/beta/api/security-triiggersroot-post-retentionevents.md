@@ -8,11 +8,11 @@ doc_type: apiPageType
 ---
 
 # Create retentionEvent
-Namespace: microsoft.graph.recordsManagement
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.
+Create a new [retentionEvent](../resources/security-retentionevent.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /compliance/recordsManagement/events
+POST /security/triggers/retentionEvents
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ POST /compliance/recordsManagement/events
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [retentionEvent](../resources/recordsmanagement-retentionevent.md) object.
+In the request body, supply a JSON representation of the [retentionEvent](../resources/security-retentionevent.md) object.
 
 You can specify the following properties when creating a retentionEvent.
 
@@ -55,15 +55,15 @@ You can specify the following properties when creating a retentionEvent.
 |createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
-|eventPropagationResult|[microsoft.graph.recordsManagement.eventPropagationResult](../resources/recordsmanagement-eventpropagationresult.md)|Status and errors of the Event Sync. Optional.|
-|eventStatus|[microsoft.graph.recordsManagement.retentionEventStatus](../resources/recordsmanagement-retentioneventstatus.md) collection|Specifies the number of processed documents per workload. Optional.|
+|eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Status and errors of the Event Sync. Optional.|
+|eventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Specifies the number of processed documents per workload. Optional.|
 |lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated. Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [retentionEvent](../resources/recordsmanagement-retentionevent.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [retentionEvent](../resources/security-retentionevent.md) object in the response body.
 
 ## Examples
 
@@ -74,12 +74,12 @@ If successful, this method returns a `201 Created` response code and a [retentio
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/compliance/recordsManagement/events
+POST https://graph.microsoft.com/beta/security/triggers/retentionEvents
 Content-Type: application/json
 Content-length: 594
 
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEvent",
+  "@odata.type": "#microsoft.graph.security.retentionEvent",
   "displayName": "String",
   "description": "String",
   "messagesQuery": "String",
@@ -89,11 +89,11 @@ Content-length: 594
     "@odata.type": "microsoft.graph.identitySet"
   },
   "eventPropagationResult": {
-    "@odata.type": "microsoft.graph.recordsManagement.eventPropagationResult"
+    "@odata.type": "microsoft.graph.security.eventPropagationResult"
   },
   "eventStatus": [
     {
-      "@odata.type": "microsoft.graph.recordsManagement.retentionEventStatus"
+      "@odata.type": "microsoft.graph.security.retentionEventStatus"
     }
   ],
   "lastStatusUpdateTime": "String (timestamp)"
@@ -106,7 +106,7 @@ Content-length: 594
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.recordsManagement.retentionEvent"
+  "@odata.type": "microsoft.graph.security.retentionEvent"
 }
 -->
 
@@ -115,7 +115,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.recordsManagement.retentionEvent",
+  "@odata.type": "#microsoft.graph.security.retentionEvent",
   "id": "f241abff-abff-f241-ffab-41f2ffab41f2",
   "displayName": "String",
   "description": "String",
@@ -131,11 +131,11 @@ Content-Type: application/json
   },
   "lastModifiedDateTime": "String (timestamp)",
   "eventPropagationResult": {
-    "@odata.type": "microsoft.graph.recordsManagement.eventPropagationResult"
+    "@odata.type": "microsoft.graph.security.eventPropagationResult"
   },
   "eventStatus": [
     {
-      "@odata.type": "microsoft.graph.recordsManagement.retentionEventStatus"
+      "@odata.type": "microsoft.graph.security.retentionEventStatus"
     }
   ],
   "lastStatusUpdateTime": "String (timestamp)"
