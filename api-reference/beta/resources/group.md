@@ -271,6 +271,7 @@ The following is a JSON representation of the resource.
   "hideFromOutlookClients": false,
   "id": "String (identifier)",
   "isFavorite": true,
+  "isArchived": false,
   "isAssignableRole": false,
   "isSubscribedByMail": true,
   "licenseProcessingState": "String",
