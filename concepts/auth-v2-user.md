@@ -281,3 +281,4 @@ For more information about getting access to Microsoft Graph on behalf of a user
 
 - [Learn how to create a web app that calls Microsoft Graph under on behalf of a user](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user).
 - For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
+- [Prompt behavior in MSAL.js interactive requests](https://docs.microsoft.com/azure/active-directory/develop/msal-js-prompt-behavior)
