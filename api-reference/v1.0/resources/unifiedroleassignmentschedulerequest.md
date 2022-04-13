@@ -11,31 +11,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a request for an active role assignment to a principal through PIM. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment. The supported principals are users, groups, and service principals.
+Represents a request for an active role assignment to a principal through PIM. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment. Inherits from [request](../resources/request.md).
 
-The following PIM scenarios can be defined through an **unifiedRoleAssignmentScheduleRequest** object:
-
-+ An administrator can create and assign to a principal an active role assignment.
-+ An administrator can query all role assignments and their details.
-+ A principal can have a role assignment with a specific expiration time.
-+ A principal can have a role assignment with a future start time.
-+ A principal can have a recurrent role assignment, with a recurring schedule.
-+ A principal can query their role assignments and the details.
-+ A principal can activate their *eligible* role assignment with a specific expiration time or with a future start time.
-+ A principal can cancel a role assignment request they created.
-+ A principal that has activated their eligible role assignment can deactivate it when they no longer need access.
-+ A principal can deactivate, extend, or renew their role assignment.
-
-Inherits from [request](../resources/request.md).
+For more information about PIM scenarios you can define through the **unifiedRoleAssignmentScheduleRequest** resource type, see [Overview of role management through the privileged identity management (PIM) API](privilegedidentitymanagementv3-overview.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List unifiedRoleAssignmentScheduleRequests](../api/rbacapplication-list-roleassignmentschedulerequests.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
 |[Create unifiedRoleAssignmentScheduleRequest](../api/rbacapplication-post-roleassignmentschedulerequests.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Create a request for an active and persistent role assignment or activate, deactivate, extend, or renew an eligible role assignment.|
-|[Get unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Retrieve a request for an active role assignments made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
+|[Get unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Retrieve a request for an active role assignment made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
 |[cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)|None| Cancel a request for an active role assignment. |
-|[filterByCurrentUser](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments for a particular principal|
+|[filterByCurrentUser](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments for a particular principal.|
 
 ## Properties
 |Property|Type|Description|
@@ -61,7 +48,7 @@ Inherits from [request](../resources/request.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it is `null`. Supports `$expand`.|
+|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it's `null`. Supports `$expand`.|
 |appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the assignment is scoped to an app. Nullable. Supports `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|The principal that's getting a role assignment through the request. Supports `$expand`.|

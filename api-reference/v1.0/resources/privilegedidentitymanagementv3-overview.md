@@ -1,6 +1,6 @@
 ---
 title: "Overview of role management through the privileged identity management (PIM) API"
-description: "Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization."
+description: "Privileged Identity Management (PIM) is a service in Azure AD that enables you to manage, control, and monitor access to important resources in your organization."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,66 +11,71 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and the resources include resources in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. PIM allows for governance over role-based access control.
+Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. PIM allows for governance over the privileged roles and role-based access control.
+
+The Microsoft Graph PIM API for role management allows you to manage the lifecycle of Azure AD role assignments. This article introduces the governance capabilities through PIM in Microsoft Graph.
+
+> [!NOTE]
+> To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+
+## PIM API for managing role assignments
+
+PIM allows you to manage active role assignments by creating permanent assignments or temporary assignments. Use the [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) resource type and it's related methods to manage role assignments.
+
+The following table lists scenarios for using PIM to manage role assignments and the APIs to call:
+
+|Scenarios  |API  |
+|---------|---------|
+|An administrator creates and assigns to a principal a permanent role assignment  <br/> An administrator assigns to a principal a temporary role <br/> An administrator assigns a principal a recurrent role assignment, with a recurring schedule   |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
+|An administrator renews, updates, extends, or removes role assignments     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
+|An administrator queries all role assignments and their details     |   [List roleAssignmentScheduleRequests](../api/rbacapplication-list-roleassignmentschedulerequests.md)      |
+|An administrator queries a role assignment and its details     |   [Get unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-get.md)      |
+|A principal queries their role assignments and the details     |  [unifiedRoleAssignmentScheduleRequest: filterByCurrentUser](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)       |
+|A principal performs just-in-time and time-bound activation of their *eligible* role assignment     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
+|A principal cancels a role assignment request they created     |   [unifiedRoleAssignmentScheduleRequest: cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)      |
+|A principal that has activated their eligible role assignment deactivates it when they no longer need access     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
+|A principal deactivates, extends, or renews their role assignment.     |   [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md)      |
+
+## PIM API for managing role eligibilities
+
+Your principals may not require permanent role assignments because they may not require the privileges granted through the privileged role all the time. In this case, PIM also allows you to create role eligibilities and assign them to the principals. With role eligibilities, the principal activates the role when they need to perform privileged tasks. The activation is always time-bound for a maximum of 8 hours. The role eligibility can also be a permanent eligibility or a temporary eligibility.
+
+Use the  [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) resource type and it's related methods to manage role eligibilities.
+
+The following table lists scenarios for using PIM to manage role eligibilities and the APIs to call:
+
+|Scenarios  |API  |
+|---------|---------|
+|An administrator creates and assigns to a principal an eligible role  <br/> An administrator assigns a temporary role eligibility to a principal <br/> An administrator assigns a principal a recurrent role eligibility, with a recurring schedule   |   [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md)      |
+|An administrator renews, updates, extends, or removes role eligibilities     |   [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md)      |
+|An administrator queries all role eligibilities and their details     |   [List roleEligibilityScheduleRequests](../api/rbacapplication-list-roleeligibilityschedulerequests.md)      |
+|An administrator queries a role eligibility and its details     |   [Get unifiedRoleEligibilityScheduleRequest](../api/unifiedroleeligibilityschedulerequest-get.md)      |
+|An administrator cancels a role eligibility request they created     |   [unifiedRoleEligibilityScheduleRequest: cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)      |
+|A principal queries their role eligibilities and the details     |  [unifiedRoleEligibilityScheduleRequest: filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)       |
+|A principal deactivates, extends, or renews their role eligibility.     |   [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md)      |
 
 
+## Role settings and PIM
 
+Each Azure AD role defines settings or rules. Such settings include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role. Or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific settings will determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
 
-This version of the PIM API is PIM v3. For more information about the history of the PIM API, see [PIM API history: current iteration](/azure/active-directory/privileged-identity-management/pim-apis#pim-api-history).
+For example, assume that a role doesn't allow permanent active assignments and defines a maximum of 15 days for active assignments. Attempting to create a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) object without expiry date will return a `400 Bad Request` response code for violation of the expiration rule.
 
-The Microsoft Graph PIM API is separated into two major categories: PIM API for role management and PIM API for managing policies.
+Use the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource type and its related methods to retrieve the rules that apply to each Azure AD role. You can't update the role settings and rules through Microsoft Graph currently.
 
-## PIM API for role management
-
-The Microsoft Graph PIM API for role management allows you to manage the lifecycle of Azure AD role assignments. This includes time-bound assignment, just-in-time activation. To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
-
-You can manage both active and eligible role assignments through the [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) and [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) resource types of the PIM API for role management.
-
-The following APIs in Microsoft Graph allow you to use PIM for role management:
-
-| Scenarios | API |
-|--|--|
-| Create a persistent and permanent role assignment <br/> Create a persistent role assignment a defined schedule| unifiedRoleAssignmentScheduleRequest |
-| Create a permanent role eligibility <br/> Create a role eligibility with a defined schedule  |  |
-| Create an eligible role assignment with a defined schedule |  |
-| Perform a just-in-time activation of an eligible role assignment | [Create unifiedRoleAssignmentScheduleRequest](../api/rbacapplication-post-roleassignmentschedulerequests.md) |
-| Enforce multifactor authentication (MFA) for role activations |  |
-| Set up settings for an eligible role assignment, for example, justification for approval, notifications or approval, and  mandatory approval for activation. |  |
-| Row6 |  |
-| Row6 |  |
-
-You can also set up access reviews of active and eligible assignments to Azure AD roles through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
-
-## PIM API for managing policies
-
-Currently, all policies are read-only through PIM APIs. The following resources in Microsoft Graph allow you to use PIM for role management:
-
-
-## Permissions and roles
-
-- Are there specific roles that can create requests?
-- Any user can manage their role requests with the right permissions?
-
+For more information about role settings, see [Configure Azure AD role settings in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings).
 
 ## Licensing
 
-
+The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
 ## Next Steps
 
 + [unifiedRoleAssignmentScheduleRequest resource type](unifiedroleassignmentschedulerequest.md)
 + [unifiedRoleEligibilityScheduleRequest resource type](unifiedroleeligibilityschedulerequest.md)
++ You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
 
 ## See also
 
 + [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
-
-
-
-
-
-Points:
-
-+ Is ARM API in GA too?
-+ Multifactor authentication: /azure/active-directory/privileged-identity-management/pim-how-to-require-mfa

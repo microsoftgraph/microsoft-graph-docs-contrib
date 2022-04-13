@@ -32,7 +32,7 @@ GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType 
 ```
 
 ## Query parameters
-This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. It also supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -48,18 +48,20 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the role management policies that apply to Azure AD roles
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "list_unifiedrolemanagementpolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -103,4 +105,3 @@ Content-Type: application/json
     ]
 }
 ```
-

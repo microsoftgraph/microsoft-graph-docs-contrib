@@ -35,14 +35,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|Unique identifier for the policy assignment. The ID is typically a concatenation of the **unifiedRoleManagementPolicy** ID and the **roleDefinitionId** separated by an underscore.|
 |policyId|String|The id of the policy. Inherited from [entity](../resources/entity.md).|
-|roleDefinitionId|String|The identifier of the [role definition](unifiedroledefinition.md) object where the policy applies. If not specified, the policy applies to all roles.|
+|roleDefinitionId|String|The identifier of the [role definition](unifiedroledefinition.md) object where the policy applies. If not specified, the policy applies to all roles. Supports $filter (`eq`).|
 |scopeId|String|The identifier of the scope where the policy is assigned.  Can be `/` for the tenant or a group ID. Required.|
 |scopeType|String|The type of the scope where the policy is assigned. One of `Directory`, `DirectoryRole`. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)| The policy that's associated with a policy assignment. Supports `$expand`.|
+|policy|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)| The policy that's associated with a policy assignment. Supports `$expand` and a nested `$expand` of the **rules** and **effectiveRules** relationships for the policy.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
