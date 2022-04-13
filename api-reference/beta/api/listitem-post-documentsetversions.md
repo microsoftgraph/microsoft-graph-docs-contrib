@@ -46,7 +46,7 @@ You can specify the following properties when you create a **documentSetVersion*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|comment|String|If 'true', minor versions of items are also captured; otherwise, only major versions will be captured. Optional.|
+|comment|String|If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Optional.|
 |shouldCaptureMinorVersion|Boolean|Comment about the captured version. Optional.|
 
 
