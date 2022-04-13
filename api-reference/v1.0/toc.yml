@@ -4917,9 +4917,9 @@ items:
                   - name: List
                     href: api/rbacapplication-list-roleeligibilityschedules.md
                   - name: Get
-                    href: api/unifiedroleeligibilityschedules-get.md
+                    href: api/unifiedroleeligibilityschedule-get.md
                   - name: Filter by current user
-                    href: api/unifiedroleeligibilityschedules-filterbycurrentuser.md
+                    href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
               - name: Schedule instances
                 href: resources/unifiedroleeligibilityscheduleinstance.md
                 items:
