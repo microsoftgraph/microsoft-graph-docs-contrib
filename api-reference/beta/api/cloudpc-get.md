@@ -126,7 +126,7 @@ Content-Type: application/json
     "managedDeviceName": "A00002GI001",
     "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
     "provisioningPolicyName": "Marketing provisioning policy",
-    "onPremisesConnectionName": "on-Premises connection for Marketing",
+    "onPremisesConnectionName": "Azure network connection for Marketing",
     "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
     "servicePlanName": "standard",
     "servicePlanType": "enterprise",

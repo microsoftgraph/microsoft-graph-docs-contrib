@@ -115,6 +115,30 @@ Namespace: microsoft.graph
 |approver|
 |unknownFutureValue|
 
+### accessReviewExpirationBehavior values
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### allowedTargetScope values
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
+
 ### approvalFilterByCurrentUserOptions values 
 
 |Member|

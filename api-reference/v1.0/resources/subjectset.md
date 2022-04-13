@@ -23,6 +23,8 @@ This is an abstract base type that's inherited by the following derived types:
 + [requestorManager](requestormanager.md)
 + [internalSponsors](internalsponsors.md)
 + [externalSponsors](externalsponsors.md)
++ [targetManager](targetmanager.md)
++ [targetApplicationOwners](targetapplicationowners.md)
 
 
 ## Properties

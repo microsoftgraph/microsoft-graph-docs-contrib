@@ -262,7 +262,6 @@ Content-type: application/json
 ---
 
 
-
 #### Response
 <!-- {
   "blockType": "response"
@@ -270,6 +269,54 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+
+### Example 4: Add or update the values of a schema extension for a user
+
+You can update or assign a value to a single property or all properties in the extension.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_schemaextension"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+Content-type: application/json
+
+{
+    "ext55gb1l09_msLearnCourses": {
+        "courseType": "Admin"
+    }
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+>**Note:** To remove the value of the schema extension from the user object, set the property to `null`. For example:
+>
+>```http
+>PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e
+>Content-type: application/json
+>
+>{
+>    "ext55gb1l09_msLearnCourses": null
+>}
+>```
+
+## See also
+
+- [Add custom data to resources using extensions](/graph/extensibility-overview)
+- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

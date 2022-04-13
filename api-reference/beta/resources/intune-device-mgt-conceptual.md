@@ -198,6 +198,8 @@ Namespace: microsoft.graph
 - [Security baseline state summary](intune-deviceintent-securitybaselinestatesummary.md)
 - [Security baseline template](intune-deviceintent-securitybaselinetemplate.md)
 - [Shared Apple device user](intune-devices-sharedappledeviceuser.md)
+- [Tenant attach r b a c](intune-devices-tenantattachrbac.md)
+- [Tenant attach r b a c state](intune-devices-tenantattachrbacstate.md)
 - [Tuple_2 of execution type_ i collection_1 of operation](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Update windows device account action parameter](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [User experience analytics app health app performance by app version](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
