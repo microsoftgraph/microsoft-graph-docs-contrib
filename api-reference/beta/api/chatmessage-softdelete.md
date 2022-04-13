@@ -45,7 +45,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/softDelete
 POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/softDelete
-POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/replies/{chatMessageId}/softDelete
+POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/softDelete
 ```
 
 ## Request headers
@@ -119,7 +119,7 @@ HTTP/1.1 204 No Content
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{chatMessageId}/replies/{chatMessageId}/softDelete
+POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-id}/softDelete
 ```
 
 
