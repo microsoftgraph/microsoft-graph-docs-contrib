@@ -15,7 +15,7 @@ options := &msgraphsdk.PersonInterestRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 personInterestId := "personInterest-id"
-result, err := graphClient.Me().Profile().InterestsById(&personInterestId).Patch(options)
+graphClient.Me().Profile().InterestsById(&personInterestId).Patch(options)
 
 
 ```

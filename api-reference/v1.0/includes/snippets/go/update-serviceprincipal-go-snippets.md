@@ -14,7 +14,7 @@ options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
 
 
 ```

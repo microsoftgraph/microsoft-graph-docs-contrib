@@ -122,7 +122,7 @@ Content-Type: application/json
       "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
       "provisioningPolicyName": "HR provisioning policy",
-      "onPremisesConnectionName": "on-Premises connection for HR",
+      "onPremisesConnectionName": "Azure network connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",

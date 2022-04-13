@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -51,7 +53,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
