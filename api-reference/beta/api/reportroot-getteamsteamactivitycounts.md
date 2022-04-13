@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamActivityCounts"
-description: "Get the number of activities in Microsoft Teams teams by activity type. The activity types are related to meetings and messages."
+description: "Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of activities in Microsoft Teams teams by activity type. The activity types are related to meetings and messages.
+Get the number of team activities across Microsoft Teams. The activity types are related to meetings and messages.
 
 ## Permissions
 
@@ -77,7 +77,7 @@ The CSV file has the following headers for columns:
 - Post Messages
 - Channel Messages
 - Active Shared Channels
-- Active external Users
+- Active External Users
 - Reply Messages
 - Urgent Messages
 - Mentions

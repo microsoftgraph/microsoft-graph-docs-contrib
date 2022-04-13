@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamActivityDetail"
-description: "Get the number of activities in Microsoft Teams teams by activity type. The numbers include activities for both licensed and non-licensed users."
+description: "Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and non-licensed users."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of activities in Microsoft Teams teams by activity type. The numbers include activities for both licensed and non-licensed users.
+Get details about Microsoft Teams activity by team. The numbers include activities for both licensed and non-licensed users.
 
 ## Permissions
 

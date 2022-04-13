@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getTeamsTeamActivityDistributionCounts"
-description: "Get the number of activities in Microsoft Teams teams by activity type over a selected period."
+description: "Get the number of team activities across Microsoft Teams over a selected period."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of activities in Microsoft Teams teams by activity type over a selected period.
+Get the number of team activities across Microsoft Teams over a selected period.
 
 ## Permissions
 
