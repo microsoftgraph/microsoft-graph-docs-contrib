@@ -16,9 +16,9 @@ In PIM, use this resource to define the schedule for when the principal will hav
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|expiration|[expirationPattern](../resources/expirationpattern.md)|When the assignment expires.|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The frequency of the assignment.|
-|startDateTime|DateTimeOffset|When the assignment becomes active.|
+|expiration|[expirationPattern](../resources/expirationpattern.md)|When the eligible or active assignment expires.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The frequency of the  eligible or active assignment.|
+|startDateTime|DateTimeOffset|When the  eligible or active assignment becomes active.|
 
 ## Relationships
 None.

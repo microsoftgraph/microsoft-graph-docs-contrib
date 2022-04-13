@@ -23,20 +23,6 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 |[filterByCurrentUser](../api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) collection|Get the instances of eligible roles for the calling principal.|
 
 
-<!--
-|[Update unifiedRoleEligibilityScheduleInstance](../api/unifiedroleeligibilityscheduleinstance-update.md)|[unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md)|Update the properties of an [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) object.|
-|[Delete unifiedRoleEligibilityScheduleInstance](../api/unifiedroleeligibilityscheduleinstance-delete.md)|None|Deletes an [unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md) object.|
-
-|[List appScope](../api/unifiedroleeligibilityscheduleinstance-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
-|[Add appScope](../api/unifiedroleeligibilityscheduleinstance-post-appscope.md)|[appScope](../resources/appscope.md)|Add appScope by posting to the appScope collection.|
-|[List directoryScope](../api/unifiedroleeligibilityscheduleinstance-list-directoryscope.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the directoryScope navigation property.|
-|[Add directoryScope](../api/unifiedroleeligibilityscheduleinstance-post-directoryscope.md)|[directoryObject](../resources/directoryobject.md)|Add directoryScope by posting to the directoryScope collection.|
-|[List principal](../api/unifiedroleeligibilityscheduleinstance-list-principal.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/unifiedroleeligibilityscheduleinstance-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[List unifiedRoleDefinition](../api/unifiedroleeligibilityscheduleinstance-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
-|[Add unifiedRoleDefinition](../api/unifiedroleeligibilityscheduleinstance-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
--->
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

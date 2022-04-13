@@ -1,6 +1,6 @@
 ---
 title: "unifiedApprovalStage resource type"
-description: "**TODO: Add Description**"
+description: "Defines the settings of the approval stages in a unifiedRoleManagementPolicyApprovalRule object."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

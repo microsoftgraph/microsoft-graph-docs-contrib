@@ -51,7 +51,7 @@ If successful, this action returns a `204 No Content` response code. Attempting 
   "name": "unifiedroleassignmentschedulerequestthis.cancel"
 }
 -->
-``` http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/95c690fb-3eb3-4942-a03f-4524aed6f31e/cancel
 ```
 

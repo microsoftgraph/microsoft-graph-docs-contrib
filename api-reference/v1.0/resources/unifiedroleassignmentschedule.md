@@ -23,22 +23,6 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 |[filterByCurrentUser](../api/unifiedroleassignmentschedule-filterbycurrentuser.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection|Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.|
 
 
-<!--
-|[Create unifiedRoleAssignmentSchedule](../api/rbacapplication-post-roleassignmentschedules.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Create a new [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
-|[Update unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-update.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Update the properties of an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
-|[Delete unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedule-delete.md)|None|Deletes an [unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) object.|
-|[List unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentschedule-list-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the unifiedRoleEligibilitySchedule resources from the activatedUsing navigation property.|
-|[Add unifiedRoleEligibilitySchedule](../api/unifiedroleassignmentschedule-post-activatedusing.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Add activatedUsing by posting to the activatedUsing collection.|
-|[List appScope](../api/unifiedroleassignmentschedule-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
-|[Add appScope](../api/unifiedroleassignmentschedule-post-appscope.md)|[appScope](../resources/appscope.md)|Add appScope by posting to the appScope collection.|
-|[List directoryScope](../api/unifiedroleassignmentschedule-list-directoryscope.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the directoryScope navigation property.|
-|[Add directoryScope](../api/unifiedroleassignmentschedule-post-directoryscope.md)|[directoryObject](../resources/directoryobject.md)|Add directoryScope by posting to the directoryScope collection.|
-|[List principal](../api/unifiedroleassignmentschedule-list-principal.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/unifiedroleassignmentschedule-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[List unifiedRoleDefinition](../api/unifiedroleassignmentschedule-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
-|[Add unifiedRoleDefinition](../api/unifiedroleassignmentschedule-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
--->
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -58,7 +42,7 @@ Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it is `null`.|
+|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it is `null`. Supports `$expand`.|
 |appScope|[appScope](../resources/appscope.md)|Read-only property with details of the app-specific scope when the assignment is scoped to an app. Nullable. Supports `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|The principal that's getting a role assignment through the request. Supports `$expand`.|

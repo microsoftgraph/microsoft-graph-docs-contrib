@@ -24,8 +24,7 @@ The following PIM scenarios can be defined through an **unifiedRoleAssignmentSch
 + A principal can activate their *eligible* role assignment with a specific expiration time or with a future start time.
 + A principal can cancel a role assignment request they created.
 + A principal that has activated their eligible role assignment can deactivate it when they no longer need access.
-
-deactivate, extend, or renew 
++ A principal can deactivate, extend, or renew their role assignment.
 
 Inherits from [request](../resources/request.md).
 
@@ -37,21 +36,6 @@ Inherits from [request](../resources/request.md).
 |[Get unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-get.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Retrieve a request for an active role assignments made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
 |[cancel](../api/unifiedroleassignmentschedulerequest-cancel.md)|None| Cancel a request for an active role assignment. |
 |[filterByCurrentUser](../api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) collection| Retrieve the requests for active role assignments for a particular principal|
-
-<!--
-|[Update unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-update.md)|[unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md)|Update the properties of an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|
-|[Delete unifiedRoleAssignmentScheduleRequest](../api/unifiedroleassignmentschedulerequest-delete.md)|None|Deletes an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.|**TODO: Add Description**|
-|[List appScope](../api/unifiedroleassignmentschedulerequest-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
-|[Add appScope](../api/unifiedroleassignmentschedulerequest-post-appscope.md)|[appScope](../resources/appscope.md)|Add appScope by posting to the appScope collection.|
-|[List directoryScope](../api/unifiedroleassignmentschedulerequest-list-directoryscope.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the directoryScope navigation property.|
-|[Add directoryScope](../api/unifiedroleassignmentschedulerequest-post-directoryscope.md)|[directoryObject](../resources/directoryobject.md)|Add directoryScope by posting to the directoryScope collection.|
-|[List principal](../api/unifiedroleassignmentschedulerequest-list-principal.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/unifiedroleassignmentschedulerequest-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[List unifiedRoleDefinition](../api/unifiedroleassignmentschedulerequest-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
-|[Add unifiedRoleDefinition](../api/unifiedroleassignmentschedulerequest-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
-|[List unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedulerequest-list-targetschedule.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) collection|Get the unifiedRoleAssignmentSchedule resources from the targetSchedule navigation property.|
-|[Add unifiedRoleAssignmentSchedule](../api/unifiedroleassignmentschedulerequest-post-targetschedule.md)|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|Add targetSchedule by posting to the targetSchedule collection.|
--->
 
 ## Properties
 |Property|Type|Description|
@@ -77,12 +61,12 @@ Inherits from [request](../resources/request.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it is `null`.|
-|appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the assignment is scoped to an app. Nullable.|
+|activatedUsing|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation. Otherwise, it is `null`. Supports `$expand`.|
+|appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the assignment is scoped to an app. Nullable. Supports `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|The directory object that is the scope of the assignment. Read-only. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|The principal that's getting a role assignment through the request. Supports `$expand`.|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Detailed information for the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is referenced through the **roleDefinitionId** property. Supports `$expand`.|
-|targetSchedule|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|The schedule for an eligible role assignment that is referenced through the **targetScheduleId** property.|
+|targetSchedule|[unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md)|The schedule for an eligible role assignment that is referenced through the **targetScheduleId** property. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

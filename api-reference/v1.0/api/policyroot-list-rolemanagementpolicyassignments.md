@@ -32,7 +32,7 @@ GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType 
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. It also supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

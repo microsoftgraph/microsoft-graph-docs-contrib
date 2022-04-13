@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a request for a role eligibility for a principal through PIM. The eligibility permanently eligible without an expiry date or temporarily eligible with an expiry date. The supported principals are users, groups, and service principals.
+Represents a request for a role eligibility for a principal through PIM. The role eligibility can be permanently eligible without an expiry date or temporarily eligible with an expiry date. The supported principals are users, groups, and service principals.
 
 The following PIM scenarios can be defined through an **unifiedRoleEligibilityScheduleRequest** object:
 + An administrator can create and assign to a principal a role eligibility instead of [an active role assignment](unifiedroleassignmentschedulerequest.md).
@@ -22,8 +22,6 @@ The following PIM scenarios can be defined through an **unifiedRoleEligibilitySc
 + A principal can be eligible for a role from a future date and time.
 + A principal can have a recurrent role eligibility, with a recurring schedule.
 + A principal can query their role eligibilities and the details.
-+ A principal can request to extend or renew their role eligibilities.
-+ A principal that is eligible for a role can activate it for a role assignment, with a specified duration. This is called just-in-time and time-bound access.
 + A principal can request to extend or renew their role eligibilities.
 
 Inherits from [request](../resources/request.md).
@@ -40,23 +38,10 @@ Inherits from [request](../resources/request.md).
 |[filterByCurrentUser](../api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md)|[unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) collection|In PIM, retrieve the requests for role eligibilities for a particular principal. The principal can be the creator or approver of the unifiedRoleEligibilityScheduleRequest object, or they can be the target of the role eligibility.|
 |[cancel](../api/unifiedroleeligibilityschedulerequest-cancel.md)|None|Immediately cancel a **unifiedRoleEligibilityScheduleRequest** object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days.|
 
-<!--
-|[List appScope](../api/unifiedroleeligibilityschedulerequest-list-appscope.md)|[appScope](../resources/appscope.md) collection|Get the appScope resources from the appScope navigation property.|
-|[Add appScope](../api/unifiedroleeligibilityschedulerequest-post-appscope.md)|[appScope](../resources/appscope.md)|Add appScope by posting to the appScope collection.|
-|[List directoryScope](../api/unifiedroleeligibilityschedulerequest-list-directoryscope.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the directoryScope navigation property.|
-|[Add directoryScope](../api/unifiedroleeligibilityschedulerequest-post-directoryscope.md)|[directoryObject](../resources/directoryobject.md)|Add directoryScope by posting to the directoryScope collection.|
-|[List principal](../api/unifiedroleeligibilityschedulerequest-list-principal.md)|[directoryObject](../resources/directoryobject.md) collection|Get the directoryObject resources from the principal navigation property.|
-|[Add principal](../api/unifiedroleeligibilityschedulerequest-post-principal.md)|[directoryObject](../resources/directoryobject.md)|Add principal by posting to the principal collection.|
-|[List unifiedRoleDefinition](../api/unifiedroleeligibilityschedulerequest-list-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md) collection|Get the unifiedRoleDefinition resources from the roleDefinition navigation property.|
-|[Add unifiedRoleDefinition](../api/unifiedroleeligibilityschedulerequest-post-roledefinition.md)|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)|Add roleDefinition by posting to the roleDefinition collection.|
-|[List unifiedRoleEligibilitySchedule](../api/unifiedroleeligibilityschedulerequest-list-targetschedule.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md) collection|Get the unifiedRoleEligibilitySchedule resources from the targetSchedule navigation property.|
-|[Add unifiedRoleEligibilitySchedule](../api/unifiedroleeligibilityschedulerequest-post-targetschedule.md)|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|Add targetSchedule by posting to the targetSchedule collection.|
--->
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|unifiedRoleScheduleRequestActions|Represents the type of operation on the role eligibility request.The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: For administrators to assign eligible roles to principals.</li><li>`adminRemove`: For administrators to remove eligible roles from principals.</li><li> `adminUpdate`: For administrators to change existing role eligibilities.</li><li>`adminExtend`: For administrators to extend expiring role eligibilities.</li><li>`adminRenew`: For administrators to renew expired eligibilities.</li><li>`selfActivate`: For users to activate their assignments.</li><li>`selfDeactivate`: For users to deactivate their active assignments.</li><li>`selfExtend`: For users to request to extend their expiring assignments.</li><li>`SelfRenew`: For users to request to renew their expired assignments.</li></ul>|
+|action|unifiedRoleScheduleRequestActions|Represents the type of operation on the role eligibility request.The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: For administrators to assign eligible roles to principals.</li><li>`adminRemove`: For administrators to remove eligible roles from principals.</li><li> `adminUpdate`: For administrators to change existing role eligibilities.</li><li>`adminExtend`: For administrators to extend expiring role eligibilities.</li><li>`adminRenew`: For administrators to renew expired eligibilities.</li><li>`selfActivate`: For users to activate their assignments.</li><li>`selfDeactivate`: For users to deactivate their active assignments.</li><li>`selfExtend`: For users to request to extend their expiring assignments.</li><li>`selfRenew`: For users to request to renew their expired assignments.</li></ul>|
 |approvalId|String|The identifier of the approval of the request. Inherited from [request](../resources/request.md).|
 |appScopeId|String|Identifier of the app-specific scope when the role eligibility is scoped to an app. The scope of a role eligibility determines the set of resources for which the principal is eligible to access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Supports `$filter` (`eq`, `ne`, and on `null` values).|
 |completedDateTime|DateTimeOffset|The request completion date time. Inherited from [request](../resources/request.md).|
@@ -77,11 +62,11 @@ Inherits from [request](../resources/request.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the role eligibility is scoped to an app. Nullable.|
+|appScope|[appScope](../resources/appscope.md)| Read-only property with details of the app-specific scope when the role eligibility is scoped to an app. Nullable. Supports `$expand`.|
 |directoryScope|[directoryObject](../resources/directoryobject.md)|The directory object that is the scope of the role eligibility. Read-only. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|The principal that's getting a role eligibility through the request. Supports `$expand`.|
 |roleDefinition|[unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Detailed information for the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is referenced through the **roleDefinitionId** property. Supports `$expand`.|
-|targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|The schedule for a role eligibility that is referenced through the **targetScheduleId** property.|
+|targetSchedule|[unifiedRoleEligibilitySchedule](../resources/unifiedroleeligibilityschedule.md)|The schedule for a role eligibility that is referenced through the **targetScheduleId** property. Supports `$expand`.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
