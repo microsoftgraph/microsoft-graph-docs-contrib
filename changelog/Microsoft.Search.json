@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission of ExternalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission of ExternalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission of ExternalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of externalItem.ReadWrite.OwnedBy to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the application permission of ExternalItem.ReadWrite.OwnedBy to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission of ExternalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Description": "Added support for the delegated permission of ExternalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
