@@ -58,8 +58,8 @@ Currently, all policies are read-only through PIM APIs. The following resources 
 
 ## Next Steps
 
-+ [unifiedRoleAssignmentScheduleRequest resource type]()
-+ [unifiedRoleEligibilityScheduleRequest resource type]()
++ [unifiedRoleAssignmentScheduleRequest resource type](unifiedroleassignmentschedulerequest.md)
++ [unifiedRoleEligibilityScheduleRequest resource type](unifiedroleeligibilityschedulerequest.md)
 
 ## See also
 
@@ -73,4 +73,4 @@ Currently, all policies are read-only through PIM APIs. The following resources 
 Points:
 
 + Is ARM API in GA too?
-+ Multifactor authentication: https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-require-mfa
++ Multifactor authentication: /azure/active-directory/privileged-identity-management/pim-how-to-require-mfa

@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentScheduleRequest)"
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
 }
 -->
 ``` http

@@ -50,7 +50,7 @@ You can specify the following properties when creating an **unifiedRoleEligibili
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request. Optional.|
 |justification|String|A message provided by users and administrators when create they create the **unifiedRoleEligibilityScheduleRequest** object. Optional when **action** is `adminRemove`.|
 |principalId|String|Identifier of the principal that has been granted the role eligibility. Required.|
-|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Required.|
+|roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is being assigned to the principal. Required.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|*The period of the role eligibility. Optional when **action** is `adminRemove`.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role eligibility request including details of the ticket number and ticket system. Optional|
 

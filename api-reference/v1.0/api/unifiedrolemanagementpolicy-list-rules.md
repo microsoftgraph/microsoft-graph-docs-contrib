@@ -1,5 +1,5 @@
 ---
-title: "List rules"
+title: "List rules (for a role management policy)"
 description: "Get the rules defined for a role management policy."
 author: "japere"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List rules
+# List rules (for a role management policy)
 Namespace: microsoft.graph
 
 Get the rules defined for a role management policy.
