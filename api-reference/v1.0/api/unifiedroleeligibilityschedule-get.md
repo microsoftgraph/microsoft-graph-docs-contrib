@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySchedules/23f1ba38-8f98-4ed3-bdaf-b240b343c196
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySchedules/1f06eafc-7532-429b-abf1-ab5a5f4a7052
 ```
 
 
@@ -72,22 +72,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unifiedRoleEligibilitySchedule",
-    "id": "4814e6e0-a923-14cb-6a73-76fb94977450",
-    "principalId": "String",
-    "roleDefinitionId": "String",
-    "directoryScopeId": "String",
-    "appScopeId": "String",
-    "createdUsing": "String",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "status": "String",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleEligibilitySchedules/$entity",
+    "id": "1f06eafc-7532-429b-abf1-ab5a5f4a7052",
+    "principalId": "b2af90c6-279b-41f7-8e79-2f55d07af928",
+    "roleDefinitionId": "75934031-6c7e-415a-99d7-48dbd49e875e",
+    "directoryScopeId": "/",
+    "appScopeId": null,
+    "createdUsing": "1f06eafc-7532-429b-abf1-ab5a5f4a7052",
+    "createdDateTime": "2022-02-18T20:41:37.163Z",
+    "modifiedDateTime": null,
+    "status": "Provisioned",
+    "memberType": "Direct",
     "scheduleInfo": {
-      "@odata.type": "microsoft.graph.requestSchedule"
-    },
-    "memberType": "String"
-  }
+        "startDateTime": "2022-02-18T20:41:37.163Z",
+        "recurrence": null,
+        "expiration": {
+            "type": "noExpiration",
+            "endDateTime": null,
+            "duration": null
+        }
+    }
 }
 ```
 

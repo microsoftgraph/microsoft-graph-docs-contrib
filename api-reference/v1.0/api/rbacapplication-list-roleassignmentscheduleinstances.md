@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List roleAssignmentScheduleInstances
 Namespace: microsoft.graph
 
-Get the instances of active role assignments.
+Get the instances of active role assignments. The active assignments include those made through [assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), and directly through the [role assignments API](../resources/unifiedroleassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

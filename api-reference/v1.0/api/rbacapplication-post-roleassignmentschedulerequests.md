@@ -55,7 +55,7 @@ You can specify the following properties when creating an **unifiedRoleAssignmen
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Either **directoryScopeId** or **appScopeId** is required.|
 |appScopeId|String|Identifier of the app-specific scope when the assignment is scoped to an app. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Either **directoryScopeId** or **appScopeId** is required.|
 |justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object. Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Required.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Recurring schedules are currently unsupported. Required.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
 

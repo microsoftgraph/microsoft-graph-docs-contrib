@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /roleManagement/directory/roleAssignmentScheduleRequests?$filterByCurrentUser(on='parameterValue')
+GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 ## Function parameters
@@ -65,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests?$filterByCurrentUser(on='principal')
+GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser(on='principal')
 ```
 
 

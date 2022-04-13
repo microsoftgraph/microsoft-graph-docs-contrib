@@ -40,7 +40,7 @@ For more information about PIM scenarios you can define through the **unifiedRol
 |justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object.|
 |principalId|String|Identifier of the principal that has been granted the assignment. Supports `$filter` (`eq`, `ne`).|
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that is being assigned to the principal. Supports `$filter` (`eq`, `ne`).|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment. Recurring schedules are currently unsupported.|
 |status|String|The status of the role assignment request. Inherited from [request](../resources/request.md). Read-only. Supports `$filter` (`eq`, `ne`).|
 |targetScheduleId|String|Identifier of the schedule object that's linked to the assignment request. Supports `$filter` (`eq`, `ne`).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system.|
