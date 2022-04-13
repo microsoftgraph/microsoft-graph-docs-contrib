@@ -20,7 +20,7 @@ Namespace: microsoft.graph.security
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List retentionEvents](../api/security-retentionevent-list.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md) collection|Get a list of the [retentionEvent](../resources/security-retentionevent.md) objects and their properties.|
-|[Create retentionEvent](../api/security-triggerstroot-post-retentionevents.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Create a new [retentionEvent](../resources/security-retentionevent.md) object.|
+|[Create retentionEvent](../api/security-retentionevents-post.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Create a new [retentionEvent](../resources/security-retentionevent.md) object.|
 |[Get retentionEvent](../api/security-retentionevent-get.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Read the properties and relationships of a [retentionEvent](../resources/security-retentionevent.md) object.|
 |[Delete retentionEvent](../api/security-retentionevent-delete.md)|None|Deletes a [retentionEvent](../resources/security-retentionevent.md) object.|
 |

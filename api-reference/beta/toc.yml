@@ -1842,39 +1842,39 @@ items:
           href: resources/security-retentionlabel.md
           items:
           - name: List
-            href: api/recordsmanagement-retentionlabel-list.md
+            href: api/security-retentionlabel-list.md
           - name: Create
-            href: api/recordsmanagement-recordsmanagementroot-post-labels.md
+            href: api/security-retentionlabel-post.md
           - name: Get
-            href: api/recordsmanagement-retentionlabel-get.md
+            href: api/security-retentionlabel-get.md
           - name: Update
-            href: api/recordsmanagement-retentionlabel-update.md
+            href: api/security-retentionlabel-update.md
           - name: Delete
-            href: api/recordsmanagement-retentionlabel-delete.md
+            href: api/security-retentionlabel-delete.md
         - name: Events
           href: resources/security-retentionevent.md
           items:
           - name: List
-            href: api/recordsmanagement-retentionevent-list.md
+            href: api/security-retentionevent-list.md
           - name: Create
-            href: api/recordsmanagement-recordsmanagementroot-post-events.md
+            href: api/security-retentionevent-post.md
           - name: Get
-            href: api/recordsmanagement-retentionevent-get.md
+            href: api/security-retentionevent-get.md
           - name: Delete
-            href: api/recordsmanagement-retentionevent-delete.md
+            href: api/security-retentionevent-delete.md
         - name: Event Types
           href: resources/security-retentioneventtype.md
           items:
           - name: List
-            href: api/recordsmanagement-retentioneventtype-list.md
+            href: api/security-retentioneventtype-list.md
           - name: Create
-            href: api/recordsmanagement-recordsmanagementroot-post-eventtypes.md
+            href: api/security-retentioneventtype-post.md
           - name: Get
-            href: api/recordsmanagement-retentioneventtype-get.md
+            href: api/security-retentioneventtype-get.md
           - name: Update
-            href: api/recordsmanagement-retentioneventtype-update.md
+            href: api/security-retentioneventtype-update.md
           - name: Delete
-            href: api/recordsmanagement-retentioneventtype-delete.md
+            href: api/security-retentioneventtype-delete.md
       - name: Subject rights request
         items:
         - name: Overview

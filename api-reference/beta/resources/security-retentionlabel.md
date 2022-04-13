@@ -19,12 +19,12 @@ A retentionLabel allows a user to retain or delete content and configure additio
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List retentionLabels](../api/security-retentionlabel-list.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.|
-|[Create retentionLabel](../api/security-labelsroot-post-retentionlabels.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[Create retentionLabel](../api/security-retentionlabels-post.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Get retentionLabel](../api/security-retentionlabel-get.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Delete retentionLabel](../api/security-retentionlabel-delete.md)|None|Delete a [retentionLabel](../resources/security-retentionlabel.md) object.|
-|[List retentionEventType](../api/security-retentionlabel-list-eventtype.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
-|[Add retentionEventType](../api/security-retentionlabel-post-eventtypes.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
+|[List retentionEventType](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the eventType navigation property.|
+|[Add retentionEventType](../api/security-retentioneventtypes-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by posting to the eventType collection.|
 
 ## Properties
 |Property|Type|Description|

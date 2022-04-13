@@ -20,7 +20,7 @@ When an event is created, it is associated to a specific event type. The creatio
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List retentionEventTypes](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get a list of the [retentionEventType](../resources/security-retentioneventtype.md) objects and their properties.|
-|[Create retentionEventType](../api/security-retentionlabel-post-eventtypes.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Create a new [retentionEventType](../resources/security-retentioneventtype.md) object.|
+|[Create retentionEventType](../api/security-retentioneventtype-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Create a new [retentionEventType](../resources/security-retentioneventtype.md) object.|
 |[Get retentionEventType](../api/security-retentioneventtype-get.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Read the properties and relationships of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
 |[Update retentionEventType](../api/security-retentioneventtype-update.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
 |[Delete retentionEventType](../api/security-retentioneventtype-delete.md)|None|Deletes a [retentionEventType](../resources/security-retentioneventtype.md) object.|
