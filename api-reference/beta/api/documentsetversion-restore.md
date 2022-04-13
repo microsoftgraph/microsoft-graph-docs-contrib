@@ -1,6 +1,6 @@
 ---
 title: "documentSetVersion: restore"
-description: "Restore a document set version."
+description: "Restore a documentSetVersion."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a document set version.
+Restore a [documentSetVersion](../resources/documentsetversion.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,6 +48,9 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "documentsetversionthis.restore"
@@ -59,7 +62,9 @@ POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemI
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

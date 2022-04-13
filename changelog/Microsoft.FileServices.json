@@ -2454,12 +2454,12 @@
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersion",
           "ChangeType": "Addition",
-          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-beta) resource",
+          "Description": "Added the [documentSetVersion](https://docs.microsoft.com/en-us/graph/api/resources/documentSetVersion?view=graph-rest-beta) resource type.",
           "Target": "documentSetVersion"
         },
         {
           "Id": "19eaf04c-8437-44ca-bdd1-fffacce3f1c3",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "documentSetVersions",
           "ChangeType": "Addition",
           "Description": "Added the **documentSetVersions** relationship to [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-beta) resource.",

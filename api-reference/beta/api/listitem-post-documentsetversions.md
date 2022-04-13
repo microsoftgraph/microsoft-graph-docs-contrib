@@ -42,11 +42,11 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
 ## Request body
 In the request body, supply a JSON representation of the [documentSetVersion](../resources/documentsetversion.md) object.
 
-You can specify the following properties when creating a **documentSetVersion**.
+You can specify the following properties when you create a **documentSetVersion**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|comment|String|If 'true' minor versions of items are also captured otherwise only major versions will be captured. Optional.|
+|comment|String|If 'true', minor versions of items are also captured; otherwise, only major versions will be captured. Optional.|
 |shouldCaptureMinorVersion|Boolean|Comment about the captured version. Optional.|
 
 
@@ -58,6 +58,9 @@ If successful, this method returns a `201 Created` response code and a [document
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_documentsetversion"
@@ -76,6 +79,9 @@ Content-length: 70
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

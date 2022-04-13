@@ -23,26 +23,26 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 |[List documentSetVersions](../api/listitem-list-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md) collection|Get a list of the [documentSetVersion](../resources/documentsetversion.md) objects and their properties.|
 |[Create documentSetVersion](../api/listitem-post-documentsetversions.md)|[documentSetVersion](../resources/documentsetversion.md)|Create a new [documentSetVersion](../resources/documentsetversion.md) object.|
 |[Get documentSetVersion](../api/documentsetversion-get.md)|[documentSetVersion](../resources/documentsetversion.md)|Read the properties and relationships of a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Deletes a [documentSetVersion](../resources/documentsetversion.md) object.|
-|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a document set version.|
+|[Delete documentSetVersion](../api/documentsetversion-delete.md)|None|Delete a [documentSetVersion](../resources/documentsetversion.md) object.|
+|[restore](../api/documentsetversion-restore.md)|[documentSetVersion](../resources/documentsetversion.md)|Restore a [documentSetVersion](../resources/documentsetversion.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| **comment** | string | Comment about the captured version.
-| **createdBy**   | [IdentitySet](../resources/identitySet.md) | User who captured the version.
-| **createdDateTime**     | DateTime | Date when this version was created.
-| **items**       | Collection([documentSetVersionItem](../resources/documentSetVersionItem.md)) | Items within the document set that are captured as part of this version.
-| **shouldCaptureMinorVersion** | boolean  | If 'true' minor versions of items are also captured otherwise only major versions will be captured. Is 'False' by default.
-| **id**                   | string                                               | The ID of the version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md)..                                     |
-| **lastModifiedBy**       | [IdentitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md).        |
-| **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Date and time the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md).                 |
-| **published**            | [PublicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md). |
+| **comment** | string | Comment about the captured version.                                                                                                                                                                   |
+| **createdBy**   | [identitySet](../resources/identitySet.md) | User who captured the version.                                                                                                                                |
+| **createdDateTime**     | dateTime | Date when this version was created.                                                                                                                                                     |
+| **items**       | [documentSetVersionItem](../resources/documentSetVersionItem.md) collection | Items within the document set that are captured as part of this version.                                                     |
+| **shouldCaptureMinorVersion** | boolean  | If 'true', minor versions of items are also captured; otherwise, only major versions will be captured. Default value is 'False'.                                                  |
+| **id**                   | string                                               | The ID of the version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md)..                                      |
+| **lastModifiedBy**       | [identitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md).        |
+| **lastModifiedDateTime** | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md).            |
+| **published**            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listItemVersion.md). |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
+| **fields**        | [fieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
