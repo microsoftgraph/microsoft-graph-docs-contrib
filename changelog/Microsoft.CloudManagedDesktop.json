@@ -3,6 +3,24 @@
         {
           "ChangeList": [
             {
+              "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
+              "ApiChange": "Property",
+              "ChangedApiName": "windowsSettings",
+              "ChangeType": "Addition",
+              "Description": "Added the **windowsSettings** property to [cloudPcOrganizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOrganizationSettings?view=graph-rest-beta) resource.",
+              "Target": "cloudPcOrganizationSettings"
+            }
+          ],
+          "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-07T08:30:16.9388044Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
               "Id": "389c37a8-24f9-45a1-8a47-9d2b996a67da",
               "ApiChange": "EnumType",
               "ChangedApiName": "cloudPcManagementService",

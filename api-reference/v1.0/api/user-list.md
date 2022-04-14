@@ -122,16 +122,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName":"contoso1",
-      "mail":"'contoso1@gmail.com",
-      "mailNickname":"contoso1_gmail.com#EXT#",
-      "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@contoso.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@contoso.com",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
+        },
+        {
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "displayName": "MOD Administrator",
+            "givenName": "MOD",
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": "425-555-0101",
+            "officeLocation": null,
+            "preferredLanguage": "en-US",
+            "surname": "Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+        }
+    ]
 }
 ```
 
@@ -275,8 +296,6 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
-      "otherMails":["a@contoso.com"],
-      "proxyAddresses":["SMTP:a@contoso.com"],
       "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -427,7 +446,6 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     }
   ]
@@ -487,15 +505,13 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
       "displayName":"contosoAdmin1",
-      "mail":"'contosoadmin1@gmail.com",
-      "mailNickname":"contosoadmin1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"], 
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "givenName":"Contoso Administrator",
+      "mail":"'contosoadmin1@fabrikam.com",
+      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
@@ -555,6 +571,52 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### Example 9: Get the value of a schema extension for all users
+
+In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### Response
+
+In the following response, the schema extension property `ext55gb1l09_msLearnCourses` is unassigned in two of the user objects.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+>**Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
