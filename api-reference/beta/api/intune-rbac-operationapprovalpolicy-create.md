@@ -53,7 +53,6 @@ The following table shows the properties that are required when you create the o
 |description|String|The description of this OperationApprovalPolicy|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of this OperationApprovalPolicy. This property is read-only.|
 |policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `deviceResetPasscode`, `unknownFutureValue`.|
-|policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|The applicable platform(s) for this OperationApprovalPolicy. Possible values are: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`.|
 |approverGroupIds|String collection|The group IDs for the approvers for this OperationApprovalPolicy|
 
 
@@ -68,14 +67,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalPolicies
 Content-type: application/json
-Content-length: 289
+Content-length: 238
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
   "policyType": "deviceWipe",
-  "policyPlatform": "androidDeviceAdministrator",
   "approverGroupIds": [
     "Approver Group Ids value"
   ]
@@ -87,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 402
+Content-Length: 351
 
 {
   "@odata.type": "#microsoft.graph.operationApprovalPolicy",
@@ -96,7 +94,6 @@ Content-Length: 402
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "policyType": "deviceWipe",
-  "policyPlatform": "androidDeviceAdministrator",
   "approverGroupIds": [
     "Approver Group Ids value"
   ]

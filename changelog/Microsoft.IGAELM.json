@@ -1,6 +1,112 @@
 ﻿{
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicies** relationship to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackage"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicy** relationship to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageAssignment"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "assignmentPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentPolicies** relationship to the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-1.0) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+        "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+        "ApiChange": "Resource",
+        "ChangedApiName": "accessPackageAssignmentPolicy",
+        "ChangeType": "Addition",
+        "Description": "Added the [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-1.0) resource and related methods for controlling how users receive assignments to access packages in entitlement management.",
+        "Target": "accessPackageAssignmentPolicy"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "accessReviewExpirationBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewExpirationBehavior** enumeration type.",
+          "Target": "accessReviewExpirationBehavior"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "allowedTargetScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedTargetScope** enumeration type.",
+          "Target": "allowedTargetScope"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageApprovalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageApprovalStage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageApprovalStage"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentApprovalSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentApprovalSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentApprovalSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAssignmentApprovalSettings"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestorSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestorSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestorSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAssignmentRequestorSettings"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentReviewSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentReviewSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentReviewSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessPackageAssignmentReviewSettings"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetApplicationOwners",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetApplicationOwners](https://docs.microsoft.com/en-us/graph/api/resources/targetApplicationOwners?view=graph-rest-1.0) resource type.",
+          "Target": "targetApplicationOwners"
+        },
+        {
+          "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetManager",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetManager](https://docs.microsoft.com/en-us/graph/api/resources/targetManager?view=graph-rest-1.0) resource type.",
+          "Target": "targetManager"
+        },
+      ],
+      "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-03-31T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
       "ChangeList": [ 
         {
           "Id": "bd76ebc1-8b9e-48a3-81f2-220825c366a1",

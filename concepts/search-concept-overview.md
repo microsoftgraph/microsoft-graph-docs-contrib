@@ -63,6 +63,8 @@ Looking for the API reference for this service?
   - [Refine search results](search-concept-aggregation.md)
   - [Request spelling correction](search-concept-speller.md) (preview)
   - [Sort search results](search-concept-sort.md)
+  - [Use query templates](search-concept-query-template.md) (preview)
+  - [Trim duplicate search results](search-concept-trim-duplicate.md) (preview)
 - Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 - Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph) or on GitHub.

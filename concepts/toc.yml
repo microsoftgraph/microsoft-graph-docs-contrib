@@ -208,6 +208,9 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
+        items:
+          - name: Business rules
+            href: bookingsbusiness-business-rules.md
       - name: Device and app management
         expanded: true
         items:
@@ -443,6 +446,10 @@ items:
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
+          - name: Trim duplicate search results (preview)
+            href: search-concept-trim-duplicate.md
+          - name: Use query templates (preview)
+            href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
       - name: Security
@@ -523,7 +530,7 @@ items:
   - name: Develop
     expanded: true
     items:
-      - name: Get auth tokens
+      - name: Authentication and authorization
         items:
           - name: Overview
             href: auth/index.yml
