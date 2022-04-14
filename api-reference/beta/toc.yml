@@ -12126,13 +12126,13 @@ items:
             items:
             - name: Federated domain configuration
               href: resources/internaldomainfederation.md
-            - name: Get federated domain configuration
+            - name: Get
               href: api/internaldomainfederation-get.md
-            - name: Create federated domain configuration
+            - name: Create
               href: api/domain-post-federationconfiguration.md
-            - name: Update federated domain configuration
+            - name: Update
               href: api/internaldomainfederation-update.md
-            - name: Delete federated domain configuration
+            - name: Delete
               href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
