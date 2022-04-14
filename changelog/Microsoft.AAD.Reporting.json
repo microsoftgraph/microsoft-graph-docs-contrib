@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "6a60b3dd-cb30-4a9b-8b94-9197e17d4ba5",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "clientCredentialType",
           "ChangeType": "Addition",
           "Description": "Added the **clientCredentialType** enumeration type.",
@@ -15,7 +15,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "remoteDesktopToken",
           "ChangeType": "Addition",
-          "Description": "Added the **remoteDesktopToken** member to the **incomingTokenType** enumeration.",
+          "Description": "Added the `remoteDesktopToken` member to the **incomingTokenType** enumeration.",
           "Target": "incomingTokenType"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "clientCredentialType",
           "ChangeType": "Addition",
-          "Description": "Added the **clientCredentialType** property to [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Description": "Added the **clientCredentialType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource. Use this property to investigate the credential types that user clients or service principals use to authenticate to Azure AD.",
           "Target": "signIn"
         },
         {
@@ -31,23 +31,23 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) method to the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) resource.",
-          "Target": "confirmCompromised"
+          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) method to the [signin](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Target": "signIn"
         },
         {
           "Id": "6a60b3dd-cb30-4a9b-8b94-9197e17d4ba5",
           "ApiChange": "Method",
           "ChangedApiName": "confirmSafe",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/confirmSafe?view=graph-rest-beta) method to the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/confirmSafe?view=graph-rest-beta) resource.",
-          "Target": "confirmSafe"
+          "Description": "Added the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/confirmSafe?view=graph-rest-beta) method to the [signIn](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Target": "signIn"
         }
       ],
       "Id": "6a60b3dd-cb30-4a9b-8b94-9197e17d4ba5",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-25T21:43:53.6754321Z",
-      "WorkloadArea": "Reports and audit",
+      "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
     {
