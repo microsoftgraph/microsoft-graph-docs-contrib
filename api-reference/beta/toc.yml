@@ -2,7 +2,7 @@ name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
-  - name: Get auth tokens
+  - name: Authentication and authorization
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/beta
@@ -406,6 +406,8 @@ items:
         items:
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
@@ -655,6 +657,8 @@ items:
           href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List photos
@@ -1909,6 +1913,8 @@ items:
           href: api/bookingbusiness-publish.md
         - name: Unpublish
           href: api/bookingbusiness-unpublish.md
+        - name: Get staff availability
+          href: api/bookingbusiness-getstaffavailability.md
       - name: Booking appointment
         href: resources/bookingappointment.md
         items:
@@ -3690,8 +3696,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
             - name: unassignResourceAccountFromDevice action
               href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
-          - name: Windows autopilot device remediation state
-            href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
           - name: Windows autopilot device type
             href: resources/intune-enrollment-windowsautopilotdevicetype.md
           - name: Windows autopilot profile assignment detailed status
@@ -4488,6 +4492,19 @@ items:
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
+          - name: Aosp device owner enterprise Wi-Fi configuration
+            href: resources/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-update.md
           - name: Aosp device owner PKCS certificate profile
             href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
             items:
@@ -4501,6 +4518,19 @@ items:
               href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
+          - name: Aosp device owner SCEP certificate profile
+            href: resources/intune-deviceconfig-aospdeviceownerscepcertificateprofile.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-update.md
           - name: Aosp device owner trusted root certificate
             href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
             items:
@@ -4514,6 +4544,21 @@ items:
               href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
+          - name: Aosp device owner Wi-Fi configuration
+            href: resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-update.md
+          - name: Aosp device owner Wi-Fi security type
+            href: resources/intune-deviceconfig-aospdeviceownerwifisecuritytype.md
           - name: App install control type
             href: resources/intune-deviceconfig-appinstallcontroltype.md
           - name: App list item
@@ -5843,6 +5888,8 @@ items:
             href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
+          - name: Kiosk mode type
+            href: resources/intune-deviceconfig-kioskmodetype.md
           - name: LAN manager authentication level
             href: resources/intune-deviceconfig-lanmanagerauthenticationlevel.md
           - name: Local security options administrator elevation prompt behavior type
@@ -7202,6 +7249,23 @@ items:
               href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
+          - name: Windows wired network configuration
+            href: resources/intune-deviceconfig-windowswirednetworkconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-update.md
+          - name: Wired network authentication method
+            href: resources/intune-deviceconfig-wirednetworkauthenticationmethod.md
+          - name: Wired network authentication type
+            href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
           - name: Wired network interface
             href: resources/intune-deviceconfig-wirednetworkinterface.md
         - name: Device management
@@ -8298,6 +8362,17 @@ items:
               href: api/intune-deviceintent-securitybaselinetemplate-update.md
           - name: Shared Apple device user
             href: resources/intune-devices-sharedappledeviceuser.md
+          - name: Tenant attach r b a c
+            href: resources/intune-devices-tenantattachrbac.md
+            items:
+            - name: Get
+              href: api/intune-devices-tenantattachrbac-get.md
+            - name: Update
+              href: api/intune-devices-tenantattachrbac-update.md
+            - name: enable action
+              href: api/intune-devices-tenantattachrbac-enable.md
+          - name: Tenant attach r b a c state
+            href: resources/intune-devices-tenantattachrbacstate.md
           - name: Tuple_2 of execution type_ i collection_1 of operation
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
           - name: Update windows device account action parameter
@@ -9497,7 +9572,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: resources/intune-rbac-conceptual.md
+          href: /resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -11147,9 +11222,11 @@ items:
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
-        - name: Delegated admin relationships
-          displayName: Partner Center, CSP, VAR
+        - name: Granular delegated admin privileges (preview)
+          displayName: GDAP, Partner Center, CSP, VAR
           items:
+          - name: Overview
+            href: resources/delegatedadminrelationships-api-overview.md
           - name: Delegated admin relationships
             href: resources/delegatedadminrelationship.md
             items:
@@ -13960,6 +14037,8 @@ items:
             href: api/reportroot-getteamsuseractivitydistributionusercounts.md
           - name: Get distribution total user counts
             href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
+          - name: Get total distribution activity counts
+            href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -14819,6 +14898,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List your associated teams
+          href: api/associatedteaminfo-list.md
         - name: List all teams in an organization
           href: api/teams-list.md
         - name: Get primary channel
@@ -14846,6 +14927,8 @@ items:
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List members
           href: api/group-list-members.md
         - name: Add member
@@ -14881,8 +14964,12 @@ items:
       - name: Channel
         href: resources/channel.md
         items:
+        - name: List all channels
+          href: api/team-list-allchannels.md
         - name: List channels
           href: api/channel-list.md
+        - name: List incoming channels
+          href: api/team-list-incomingchannels.md
         - name: Create channel
           href: api/channel-post.md
         - name: Get channel
@@ -14891,6 +14978,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Remove incoming channel
+          href: api/team-delete-incomingchannel.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
@@ -14927,6 +15016,16 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Check user access
+          href: api/channel-doesuserhaveaccess.md
+        - name: List teams shared with channel
+          href: api/sharedwithchannelteaminfo-list.md
+        - name: Get team shared with channel
+          href: api/sharedwithchannelteaminfo-get.md
+        - name: Unshare channel with team
+          href: api/sharedwithchannelteaminfo-delete.md
+        - name: List allowed members
+          href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md
         items:

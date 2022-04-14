@@ -3,7 +3,7 @@ title: "Create delegatedAdminRelationship"
 description: "Create a new delegatedAdminRelationship object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 

@@ -11,11 +11,17 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the directory provider.
+Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the RBAC provider.
+
+The following RBAC providers are currently supported:
+- directory (Azure AD)
+- entitlement management (Azure AD)
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For the directory (Azure AD) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,7 +29,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+### For the entitlement management provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
+
+To list role assignments for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,9 +49,27 @@ GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
+To list role assignments for the entitlement management provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+```
+
 ## Query parameters
 
-This operation requires the `$filter` query parameter to query specific instances of role assignments. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a **templateId**. For general information, see [OData query parameters](/graph/query-parameters).
+This operation requires the `$filter` query parameter to query role assignments for the supported RBAC providers.
+
+For the directory provider, you must filter on either the **roleDefinitionId** or **principalId** properties. The **roleDefinitionId** property can be either a role object ID or a value for the **templateId** property.
+
+For the entitlement management provider, you must filter on either the **roleDefinitionId**, **principalId** or **appScopeId** properties.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -252,6 +286,55 @@ Content-type: application/json
             "resourceScope": "/",
             "directoryScopeId": "/",
             "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+        }
+    ]
+}
+```
+
+### Example 3: Request using $filter for role assignments on an access package catalog and expand the principal object
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }
         }
     ]
 }
