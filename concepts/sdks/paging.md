@@ -132,10 +132,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -145,7 +145,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
@@ -259,10 +259,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -272,7 +272,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25
