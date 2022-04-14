@@ -13944,6 +13944,10 @@ items:
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+          - name: Confirm safe
+            href: api/signin-confirmsafe.md
+          - name: Confirm compromised
+            href: api/signin-confirmcompromised.md
         - name: Provisioning
           href: resources/provisioningobjectsummary.md
           items:

@@ -182,6 +182,6 @@ ms.localizationpriority: medium
 | userPrincipalName                                          | ![Supported by Default][RDS]               | ![Supported by Default][RDS]               |                                            |                                            | ![Not Supported][NS]                       |
 | userType                                                   | ![Supported by Default][RDS]               |                                            |                                            |                                            | ![Requires advanced query parameters][AQP] |
 
-[RDS]: ../concepts/images/advanced-query-parameters/default.svg
-[AQP]: ../concepts/images/advanced-query-parameters/advanced.svg
-[NS]: ../concepts/images/advanced-query-parameters/notSupported.svg
+[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
+[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
+[NS]: ../concepts/images/yesandnosymbols/no.svg
