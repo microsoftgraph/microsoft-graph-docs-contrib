@@ -45,7 +45,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 | Name      | Description          |
 |:----------|:---------------------|
-| [$top](/graph/query-parameters#top-parameter)| Apply $top to specify the number of channel messages returned per page in the response. By default, a response can include up to 20 messages. You can specify up to 50 channel messages per page. |
+| [$top](/graph/query-parameters#top-parameter)| Apply `$top` to specify the number of channel messages returned per page in the response. The default page size is 20 messages. You can extend up to 50 channel messages per page. |
 | [$expand](/graph/query-parameters#expand)  | Apply `$expand` to get the properties of channel messages that are replies. By default, a response can include up to 1000 replies. For an operation that expands channel messages with more than 1000 replies, use the request URL returned in `replies@odata.nextLink` to get the next page of replies. |
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
@@ -459,18 +459,20 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following request uses `$top` to return one channel message per page, and `$expand` to include replies to that channel message.
 
 <!-- {
   "blockType": "request",
   "name": "get_listchannelmessages_3"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$expand=replies
+GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$top=1&$expand=replies
 ```
 
 #### Response
-The following is an example of the response when $expand query parameter has been applied to replies.
+The following response shows one channel message on the page, and includes a URL in `@odata.nextLink` for a subsequent operation to get the next message in that channel. 
+
+The response includes replies of that channel message. In practice, this operation can return up to 1000 replies of a channel message, and includes a URL in `replies@odata.nextLink` to get any further replies beyond the page size of 1000. This example assumes more than 1000 replies in that channel message, but for readability, the following response shows only 3 replies.
 
 <!-- {
   "blockType": "response",
