@@ -95,7 +95,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Retrieve the role management policy assignments for all Azure AD roles and expand the policy and its associated rules
+### Example 2: Retrieve the role management policy assignments for an Azure AD role and expand the policy and its associated rules
 
 #### Request
 <!-- {
@@ -104,7 +104,7 @@ Content-Type: application/json
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'&$expand=policy($expand=rules)
+GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole' and roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'&$expand=policy($expand=rules)
 ```
 
 

@@ -84,7 +84,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Retrieve a role management policy assignment for an Azure AD role and expand the policy and its associated rules
+### Example 2: Retrieve a role management policy assignment and expand the policy and its associated rules
 
 #### Request
 <!-- {
