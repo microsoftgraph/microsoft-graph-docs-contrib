@@ -70,7 +70,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.CloudPcReviewStatus",
+    "@odata.type": "microsoft.graph.cloudPcReviewStatus",
     "inReview": true,
     "userAccessLevel": "restricted",
     "reviewStartDateTime": "2022-02-15T06:52:34Z",
