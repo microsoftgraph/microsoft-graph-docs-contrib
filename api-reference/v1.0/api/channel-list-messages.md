@@ -68,11 +68,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request without optional Prefer header
+### Example 1: Request with $top query parameter and without optional prefer header
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request with $top query option and without optional prefer header.
 
 
 # [HTTP](#tab/http)
@@ -455,7 +455,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Request with expand query option on replies
+### Example 3: Request with $top and $expand query option on replies
 
 #### Request
 
