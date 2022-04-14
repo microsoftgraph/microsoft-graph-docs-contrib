@@ -69,6 +69,7 @@ Relationships between a domain and other objects in the directory such as its ve
 |domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only, Nullable|
 |serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable |
 |verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Azure AD.|
 
 ## JSON representation
 Here is a JSON representation of the resource.
