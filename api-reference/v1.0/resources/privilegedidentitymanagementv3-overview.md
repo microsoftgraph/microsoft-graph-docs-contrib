@@ -65,6 +65,23 @@ Use the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassig
 
 For more information about role settings, see [Configure Azure AD role settings in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings).
 
+## PIM and identity security with Zero Trust
+
+PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity).
+
+## Permissions and privileges
+
+To call the [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md) and [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md) APIs with admin actions, the calling user must:
++ Have a *Global Administrator* or *Privileged Role Administrator* role
++ Be granted one of the following permissions:
+  + RoleAssignmentSchedule.ReadWrite.Directory
+  + RoleEligibilitySchedule.ReadWrite.Directory
+  + RoleManagement.ReadWrite.Directory
+
+The principal must also be assigned the appropriate permissions to retrieve their role assignments and eligibilities, or call the [Create roleAssignmentScheduleRequests](../api/rbacapplication-post-roleassignmentschedulerequests.md) and [Create roleEligibilityScheduleRequests](../api/rbacapplication-post-roleeligibilityschedulerequests.md) APIs with user actions.
+
+For more information about permissions to call PIM APIs, see the [Microsoft Graph permissions reference: Role management permissions](/graph/permissions-reference#role-management-permissions).
+
 ## Licensing
 
 The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
