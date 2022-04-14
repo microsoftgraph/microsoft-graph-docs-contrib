@@ -93,6 +93,7 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
     "successfulDeviceIds": [
