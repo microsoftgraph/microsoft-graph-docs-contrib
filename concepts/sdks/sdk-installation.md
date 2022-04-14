@@ -36,7 +36,7 @@ The Microsoft Graph Go SDK is included in the following packages:
 ```Shell
 go get github.com/microsoftgraph/msgraph-sdk-go
 go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
-go get github.com/microsoft/kiota/authentication/go/azure
+go get github.com/microsoft/kiota-authentication-azure-go
 ```
 
 ## Install the Microsoft Graph Java SDK

@@ -3,7 +3,7 @@ title: "List delegatedAdminCustomers"
 description: "Get a list of the delegatedAdminCustomer objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 
