@@ -455,7 +455,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Request with $top and $expand query option on replies
+### Example 3: Request with $top and $expand query options on replies
 
 #### Request
 

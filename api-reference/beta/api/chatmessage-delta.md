@@ -72,7 +72,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 - `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any **reply chain (each channel post message and associated reply messages)** created or changed after the specified date time.
 - `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel messsage contains more than 1000 replies, `replies@odata.nextLink` will be provided for pagination. 
 
-> **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-expand-query-option-on-replies).
+> **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
 
 ## Request headers
 | Header        | Value                     |
