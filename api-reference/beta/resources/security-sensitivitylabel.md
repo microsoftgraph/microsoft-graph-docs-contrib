@@ -20,29 +20,28 @@ Describes the information protection label that details how to properly apply a 
 | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [List sensitivityLabels](../api/security-list-sensitivitylabels.md)                                | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection                       | Get a list of the [sensitivityLabel](../resources/security-sensitivitylabel.md) objects and their properties.                                                          |
 | [Get sensitivityLabel](../api/security-sensitivitylabel-get.md)                                    | [sensitivityLabel](../resources/security-sensitivitylabel.md)                                  | Read the properties and relationships of a [sensitivityLabel](../resources/security-sensitivitylabel.md) object.                                                       |
-| [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md)                     | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Given an input of [contentInfo](contentinfo.md) and [labelingOptions](labelingoptions.md), compute the set of actions required to apply the label.                      |
-| [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Given an input of [contentInfo](contentinfo.md) and classification results, compute the set of actions required to apply the label.                                     |
+| [evaluateApplication](../api/security-sensitivitylabel-evaluateapplication.md)                     | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Given an input of [contentInfo](contentinfo.md) and [labelingOptions](labelingoptions.md), compute the set of actions required to apply the label.                     |
+| [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Given an input of [contentInfo](contentinfo.md) and classification results, compute the set of actions required to apply the label.                                    |
 | [evaluateRemoval](../api/security-sensitivitylabel-evaluateremoval.md)                             | informationProtectionAction](../resources/security-informationprotectionaction.md) collection  | Given an input of [contentInfo](contentinfo.md) and [downgradeJustification](downgradejustification.md), compute the actions that should be taken to remove the label. |
 | [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md)                     | [contentLabel](../resources/security-contentlabel.md)                                          | Given an input of [contentInfo](contentinfo.md), return details on the [informationProtectionLabel](informationprotectionlabel.md) that the metadata represents.       |
-| [List sensitivityLabel](../api/security-list-sensitivitylabels.md)                                 | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection                       | Get the **sensitivityLabel** resources from the **parent** navigation property.                                                                                                |
 
 ## Properties
-| Property       | Type              | Description                                                                                              |
-| :------------- | :---------------- | :------------------------------------------------------------------------------------------------------- |
-| color          | String            | The color that the UI should display for the label, if configured.                                       |
-| contentFormats | String collection | Returns the supported content formats for the label.                                                     |
-| description    | String            | The admin-defined description for the label.                                                             |
-| hasProtection  | Boolean           | Indicates whether the label has protection actions configured.                                           |
-| id             | String            | The label ID is a globally unique identifier (GUID).                                                     |
-| isActive       | Boolean           | Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.      |
+| Property       | Type              | Description                                                                                                |
+| :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------- |
+| color          | String            | The color that the UI should display for the label, if configured.                                         |
+| contentFormats | String collection | Returns the supported content formats for the label.                                                       |
+| description    | String            | The admin-defined description for the label.                                                               |
+| hasProtection  | Boolean           | Indicates whether the label has protection actions configured.                                             |
+| id             | String            | The label ID is a globally unique identifier (GUID).                                                       |
+| isActive       | Boolean           | Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.        |
 | isAppliable    | Boolean           | Indicates whether the label can be applied to content. `False` if the label is a parent with child labels. |
-| name           | String            | The plaintext name of the label.                                                                         |
-| sensitivity    | Int32             | The sensitivity value of the label, where lower is less sensitive.                                       |
-| tooltip        | String            | The tooltip that should be displayed for the label in a UI.                                              |
+| name           | String            | The plaintext name of the label.                                                                           |
+| sensitivity    | Int32             | The sensitivity value of the label, where lower is less sensitive.                                         |
+| tooltip        | String            | The tooltip that should be displayed for the label in a UI.                                                |
 
 ## Relationships
-| Relationship | Type                                                          | Description                                                                  |
-| :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------- |
+| Relationship | Type                                                          | Description                                                                        |
+| :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------- |
 | parent       | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The parent label associated with a child label. `Null` if the label has no parent. |
 
 ## JSON representation

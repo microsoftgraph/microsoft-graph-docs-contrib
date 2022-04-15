@@ -33,6 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /users/{usersId}/security/informationProtection/labelPolicySettings
+GET /me/security/informationProtection/labelPolicySettings
+```
+
+To get labels available to the organization (application permission):
+
+```http
+GET /security/informationProtection/labelPolicySettings
 ```
 
 ## Optional query parameters
@@ -65,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/labelPolicySettings
+GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/labelPolicySettings
 ```
 
 
@@ -85,7 +92,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamipdev/$metadata#users('admin%40AzTestRmsPremUS22.onmicrosoft.com')/security/informationProtection/labelPolicySettings/$entity",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamipdev/$metadata#users('bob%40contoso.com')/security/informationProtection/labelPolicySettings/$entity",
     "id": "BFB31DC0E2183F5872EEC3FEC1A254B8118DF1156CC19E783EA6D36304242B7FCFA4CF1DA3374481AA9919D8F3D63F7C",
     "moreInfoUrl": "https://contoso.com/MIPInfo",
     "isMandatory": false,

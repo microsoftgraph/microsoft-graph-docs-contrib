@@ -13973,7 +13973,7 @@ items:
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
         - name: Sensitivity labels
-          href: resources/informationprotectionlabel.md
+          href: resources/security-informationprotectionlabel.md
           items:
           - name: List sensitivity labels
             href: api/security-list-sensitivitylabels.md
@@ -13985,8 +13985,10 @@ items:
             href: api/security-sensitivitylabel-evaluateclassificationresults.md
           - name: Evaluate removal
             href: api/security-sensitivitylabel-evaluateremoval.md
-          - name: Extract label
+          - name: Extract content label
             href: api/security-sensitivitylabel-extractcontentlabel.md
+        - name: Label policy settings
+          href: resources/security-informationprotectionpolicysetting.md
         - name: Threat assessment
           items:
           - name: Overview

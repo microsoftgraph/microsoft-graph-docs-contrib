@@ -51,7 +51,7 @@ One of the following permissions is required to call this API. To learn more, in
 To evaluate as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
-POST /{userId}/security/informationProtection/sensitivityLabels/evaluateApplication
+POST /{usersId}}/security/informationProtection/sensitivityLabels/evaluateApplication
 POST /me/security/informationProtection/sensitivityLabels/evaluateApplication
 ```
 

@@ -52,7 +52,7 @@ One of the following permissions is required to call this API. To learn more, in
 To evaluate as the signed-in user (delegated permission) or specified user (application permission):
 
 ``` http
-POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+POST /users/bob@contoso.com/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 POST /users/me/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 ```
 
@@ -99,7 +99,7 @@ The following is an example of a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

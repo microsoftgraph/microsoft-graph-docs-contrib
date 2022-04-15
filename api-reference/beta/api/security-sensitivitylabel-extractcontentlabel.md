@@ -82,7 +82,7 @@ The following is an example of the response.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
+POST https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels/extractContentLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
