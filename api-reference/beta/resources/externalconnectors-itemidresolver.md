@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the rules for resolving a given URL to a connector item's id.
+Defines the rules for resolving a URL to the ID of an [externalItem](microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md)
 
 
 Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).
@@ -21,7 +21,7 @@ Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|itemId|String|Pattern representing the item id.|
+|itemId|String|Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](..api-reference\beta\resources\externalconnectors-urlmatchinfo.md) can be referenced by inserting the group name inside curly brackets.|
 |priority|Int32|Priority of each urlToItemResolverBase instance. Inherited from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).|
 |urlMatchInfo|[microsoft.graph.externalConnectors.urlMatchInfo](../resources/externalconnectors-urlmatchinfo.md)|Configurations to match and resolve URL.|
 

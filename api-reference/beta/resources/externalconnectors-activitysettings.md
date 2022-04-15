@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.externalConnectors.activitySettings",
   "urlToItemResolvers": [
     {
-      "@odata.type": "microsoft.graph.externalConnectors.itemIdResolver"
+      "@odata.type": "microsoft.graph.externalConnectors.urlToItemResolverBase"
     }
   ]
 }
