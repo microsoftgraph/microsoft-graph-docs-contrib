@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](..api-reference\beta\resources\externalconnectors-urlmatchinfo.md) can be referenced by inserting the group name inside curly brackets.
+Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](..resources/externalconnectors-urltoitemresolverbase.md) can be referenced by inserting the group name inside curly brackets.
 This is an abstract type.
 
 ## Properties
