@@ -795,6 +795,96 @@
       "CreatedDateTime": "2021-10-05T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+            "ApiChange": "Enum type",
+            "ChangedApiName": "externalActivityType",
+            "ChangeType": "Addition",
+            "Description": "Added the **externalActivityType** enumeration type.",
+            "Target": "externalConnection"
+          },
+          {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [activitySettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-activitysettings?view=graph-rest-beta) resource",
+          "Target": "activitySettings"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemIdResolver",
+          "ChangeType": "Addition",
+          "Description": "Added the [itemIdResolver](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-itemIdResolver?view=graph-rest-beta) resource",
+          "Target": "itemIdResolver"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlToItemResolverBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlToItemResolverBase](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-urlToItemResolverBase?view=graph-rest-beta) resource",
+          "Target": "urlToItemResolverBase"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivity](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalactivity?view=graph-rest-beta) resource",
+          "Target": "externalActivity"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivityBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivityBase](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityBase?view=graph-rest-beta) resource",
+          "Target": "externalActivityBase"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalActivityResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalActivityResult](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalActivityResult?view=graph-rest-beta) resource",
+          "Target": "externalActivityResult"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Property",
+          "ChangedApiName": "activitySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [activitySettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activities",
+          "ChangeType": "Addition",
+          "Description": "Added the [activities](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalItem?view=graph-rest-beta) resource",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Method",
+          "ChangedApiName": "addActivities",
+          "ChangeType": "Addition",
+          "Description": "Added the [addActivities](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-beta) resource",
+          "Target": "addActivities"
+        }
+      ],
+      "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-11T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
