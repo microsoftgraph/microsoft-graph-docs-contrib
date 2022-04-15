@@ -54,13 +54,13 @@ POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                                         |
 | Content-type  | Content-type: application/json. Required.                                                                                                                                         |
-| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
+| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is `ApplicationName/Version`. Optional. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that can be used with this action.
 
 | Parameter   | Type                                       | Description                                                                                                                         |
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Information Protection labeling overview"
-description: "Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on Office 365 Security and Compliance Center Sensitivity Labels."
+description: "Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on Microsoft 365 Security and Compliance Center Sensitivity Labels."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -30,7 +30,7 @@ Enterprise developers use Microsoft Information Protection to label and protect 
 
 ### Discover labels available to a user or organization
 
-With Microsoft Graph you can access the [sensitivity labels](/graph/api/security-sensitivitylabel?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
+With Microsoft Graph you can access the [sensitivity labels](/graph/api/security-sensitivitylabel?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users, downstream applications, and services to understand the sensitivity of the information they're handling.
 
 ### Understand how to apply labels
 

@@ -19,7 +19,7 @@ Describes the **contentLabel** object that defines Microsoft Information Protect
 | Property         | Type           | Description                                                                                                                                                                                                                                 |
 | :--------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | assignmentMethod | String         | Describes whether the label was applied by a process or automation (`standard`) or a person (`privileged`). A `standard` assignment cannot override `privileged`. To override, set `auto`.                                                  |
-| creationDateTime | DateTimeOffset | The Timestamp resprenting when the `contentLabel` was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| creationDateTime | DateTimeOffset | Timestamp of when the **contentLabel** was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
 
 ## Relationships

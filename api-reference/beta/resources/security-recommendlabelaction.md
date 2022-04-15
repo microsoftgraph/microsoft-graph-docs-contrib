@@ -1,6 +1,6 @@
 ---
 title: "recommendLabelAction resource type"
-description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types."
+description: "Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
