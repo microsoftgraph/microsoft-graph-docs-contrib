@@ -12122,6 +12122,18 @@ items:
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
             - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -13932,6 +13944,10 @@ items:
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+          - name: Confirm safe
+            href: api/signin-confirmsafe.md
+          - name: Confirm compromised
+            href: api/signin-confirmcompromised.md
         - name: Provisioning
           href: resources/provisioningobjectsummary.md
           items:
