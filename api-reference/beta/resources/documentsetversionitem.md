@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an item which is a part of a captured document set version.
+Represents an item which is a part of a captured [documentSetVersion](../resources/documentsetversion.md).
 
 ## Properties
 |Property|Type|Description|
