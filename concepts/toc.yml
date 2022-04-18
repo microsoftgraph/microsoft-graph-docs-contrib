@@ -706,14 +706,16 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
+              - name: Overview
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Installation
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: Navigating the SDK
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
-                href: powershell/app-only.md
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the Toolkit
         items:
           - name: Toolkit overview
