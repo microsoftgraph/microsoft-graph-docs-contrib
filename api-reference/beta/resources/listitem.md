@@ -67,6 +67,7 @@ Here is a JSON representation of a **listItem** resource.
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -116,7 +117,7 @@ The following properties are inherited from **[baseItem][]**.
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
 | analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
-|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for user created document set version.|
+|documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |
 | versions     | [listItemVersion][] collection | The list of previous versions of the list item.                                                    |
