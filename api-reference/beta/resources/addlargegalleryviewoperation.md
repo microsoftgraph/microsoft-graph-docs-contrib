@@ -28,7 +28,7 @@ Describes the response format for an operation that adds the large gallery view.
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | id                             | String                      | The ID of the server operation. Read-only.                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
-| status                         | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| status                         | operationStatus             | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
 
