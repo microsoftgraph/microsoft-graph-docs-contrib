@@ -124,7 +124,7 @@ while(messagesPage != null) {
 import (
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
-    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 query := messages.MessagesRequestBuilderGetQueryParameters{
@@ -149,7 +149,7 @@ pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(graph.Message)
+    message := pageItem.(graph.Messageable)
     fmt.Printf("%s\n", *message.GetSubject())
     // Return true to continue the iteration
     return true
@@ -251,7 +251,7 @@ while (!pageIterator.isComplete()) {
 import (
     msgraphcore "github.com/microsoftgraph/msgraph-sdk-go-core"
     "github.com/microsoftgraph/msgraph-sdk-go/me/messages"
-    "github.com/microsoftgraph/msgraph-sdk-go/models/microsoft/graph"
+    "github.com/microsoftgraph/msgraph-sdk-go/models"
 )
 
 query := messages.MessagesRequestBuilderGetQueryParameters{
@@ -279,7 +279,7 @@ var count, pauseAfter = 0, 25
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
-    message := pageItem.(graph.Message)
+    message := pageItem.(graph.Messageable)
     count++
     fmt.Printf("%d: %s\n", count, *message.GetSubject())
     // Once count = 25, this returns false,
