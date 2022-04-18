@@ -19,7 +19,7 @@ An abstract base class that contains the optional features for a call.
 
 |Property                 |Type                      |Description                                                                        |
 |:---                     |:---                      |:---                                                                               |
-|isContentSharingNotificationEnabled   |Boolean                   |The value that indicates whether content sharing notifications should be enabled for the call.    |
+|isContentSharingNotificationEnabled   |Boolean                   |Indicates whether content sharing notifications should be enabled for the call.    |
 
 ## JSON representation
 
