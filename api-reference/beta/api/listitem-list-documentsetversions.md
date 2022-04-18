@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the documentSetVersion resources from the documentSetVersions navigation property.
+Get the [documentSetVersion](../resources/documentsetversion.md) resources from the **documentSetVersions** navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
+GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/1/documentSetVersions
 ```
 
 

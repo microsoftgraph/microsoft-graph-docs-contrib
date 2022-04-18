@@ -46,8 +46,8 @@ You can specify the following properties when creating a **documentSetVersion**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|comment|String|If 'true' minor versions of items are also captured otherwise only major versions will be captured. Optional.|
-|shouldCaptureMinorVersion|Boolean|Comment about the captured version. Optional.|
+|comment|String|Comment about the captured version. Optional.|
+|shouldCaptureMinorVersion|Boolean|If 'true' minor versions of items are also captured otherwise only major versions will be captured. Optional.|
 
 
 
@@ -64,13 +64,13 @@ If successful, this method returns a `201 Created` response code and a [document
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
+POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documentSetVersions
 Content-Type: application/json
 Content-length: 70
 
 {
-  "comment": "String",
-  "shouldCaptureMinorVersion": "Boolean"
+  "comment": "v1",
+  "shouldCaptureMinorVersion": false
 }
 ```
 

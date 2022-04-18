@@ -18,9 +18,9 @@ Represents an item which is a part of a captured document set version.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|itemId|String|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
-|versionId|String|**TODO: Add Description**|
+|itemId|String| Item id. |
+|title|String| Title of the item. |
+|versionId|String| Version Id of the item.|
 
 ## Relationships
 None.

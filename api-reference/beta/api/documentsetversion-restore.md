@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{documentSetVersionId}/restore
+POST /sites/root/lists/Documents/items/2/documentSetVersions/1/restore
 ```
 
 ## Request headers
