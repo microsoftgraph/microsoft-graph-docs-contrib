@@ -1,9 +1,9 @@
 ---
-author: learafa
+author: "learafa"
 description: "This method allows your app to track changes to a list and its items over time."
 title: "lisItem: delta"
-ms.localizationpriority: meduim
-ms.prod: "SharePoint"
+ms.localizationpriority: "medium"
+ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 # listItem: delta
@@ -21,10 +21,10 @@ Your app should continue calling with the `@odata.nextLink` until you see an `@o
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted items are returned with the [`deleted` facet](../resources/deleted.md). Deleted indicates the item is deleted and cannot be restored.
-Items with this  property should be removed from your local state.
+Deleted items are returned with the [deleted facet](../resources/deleted.md). Deleted indicates that the item is deleted and cannot be restored.
+Items with this property should be removed from your local state.
 
-**Note:** you should only delete a folder locally if it is empty after syncing all the changes.
+> **Note:** You should only delete a folder locally if it is empty after syncing all the changes.
 
 ## Permissions
 
@@ -44,27 +44,29 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/{siteId}/lists/{listId}/items/delta
 ```
 
-## Query Parameters
+## Query parameters
 
-| Name   | Value  | Description                                                                                                                          |
-|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token, returns new state since that token.
-
-## Optional query parameters
+| Parameter    | Type   | Description                                                                                                                          |
+|:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token        | string | Optional. If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.
 
 This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
-## Request Header
+## Request headers
 
 |Header       |Value                    |
 |-------------|-------------------------|
 |Authorization|Bearer {token}. Required.|
 
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ListItems](../resources/listItem.md) resources in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [listItem](../resources/listItem.md) objects in the response body.
 
-In addition to the collection of ListItems, the response will also include one of the following properties:
+In addition to the a collection of **listItem** objects, the response will also include one of the following properties:
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,23 +77,23 @@ In addition to the collection of ListItems, the response will also include one o
 
 ### Example 1:
 
-Here is an example of the initial request, how to call this API to establish your local state.
+The following is an example of the initial request that shows how to call this API to establish your local state.
 
 #### Request
 
-Here is an example of the initial request.
+The following is an example of the initial request.
 
 <!-- { "blockType": "request", "name": "get_listItem_delta_first" } -->
 
-```
+```http
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta
 ```
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response that includes the first page of changes, and the **@odata.nextLink** property indicating that no more items are available in the current set of items. Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true, "scope": "site.read" } -->
+<!-- { "blockType": "response", "name": "get_listItem_delta_first", "@odata.type": "microsoft.graph.listItem", "isCollection": true, "truncated": true, "scope": "site.read" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -167,28 +169,36 @@ Content-type: application/json
 }
 ```
 
-This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
-Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
-
 ### Example 2:
 
-Here is an example of the last page in a set, how to call this API to update your local state.
+The following is an example of a request that shows the last page in a set and how to call this API to update your local state.
 
 #### Request
 
-Here is an example request after the initial request.
+The following is an example of a request after the initial request.
 
 <!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
-```
+```http
 GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
 ```
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response that indicates that the item named `TestItemB.txt` was deleted and the item `TestFolder` was either added or modified between the initial request and this request to update the local state.
 
-<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.listItem)", "scope": "site.read" } -->
+The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
+
+In some cases, the service will return a `410 Gone` response code with an error response containing one of the following error codes, and a `Location` header containing a new `nextLink` that starts a fresh delta enumeration from scratch. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+
+After full enumeration is complete, compare the returned items with your local state and follow the following instructions:
+
+| Error type                       | Instructions                                                                                                                               |
+|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
+| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any items that differ from the server's version (keep both copies if you're not sure which one is more up-to-date).                                       |
+
+<!-- { "blockType": "response", "name": "get-listItem-delta-last", "truncated": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true,  "scope": "site.read" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -233,27 +243,16 @@ Content-type: application/json
 }
 ```
 
-This response indicates that the item named `TestItemB.txt` was deleted and the item `TestFolder` was either added or modified between the initial request and this request to update the local state.
-
-The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
-
-There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
-After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
-
-| Error Type                       | Instructions                                                                                                                                                                                                                    |
-|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
-| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any items that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
-
 ### Example 3:
 
-In some scenarios, it may be useful to request the current deltaLink value without first enumerating all of the items in the list already.
+In some scenarios, it may be useful to request the current `deltaLink` value without first enumerating all of the items in the list already.
 
-This can be useful if your app only wants to know about changes, and doesn't need to know about existing items.
-To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
+This can be useful if your app only wants to know about changes and doesn't need to know about existing items.
+To retrieve the latest `deltaLink`, call `delta` with a query string parameter `?token=latest`.
 
 #### Request
+
+The following is an example of a request.
 
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
 
@@ -263,7 +262,9 @@ GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
 
 #### Response
 
-<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.listItem)" } -->
+The following is an example of the response.
+
+<!-- { "blockType": "response", "name": "get-delta-latest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
 
 ```http
 HTTP/1.1 200 OK
