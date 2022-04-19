@@ -339,11 +339,6 @@ Use the following data from the roster example to identify the large gallery vie
 
 The following example shows the data for the large gallery view participant in a roster.
 
-<!-- {
-  "blockType": "example",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.participant"
-}-->
 ```json
 {
     "@odata.type": "#microsoft.graph.participant",
