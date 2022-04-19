@@ -17,18 +17,38 @@ Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For the directory (Azure AD) provider
+
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | RoleManagement.ReadWrite.Directory |
 
+### For the Entitlement management provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
+
 ## HTTP request
+
+Remove a role assignment from the directory provider:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
+```
+
+Remove a role assignment from the entitlement management provider:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## Request headers

@@ -36,10 +36,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "appliesTo": "string",
-  "provisioningStatus": "string",
-  "servicePlanId": "guid",
-  "servicePlanName": "string"
+  "appliesTo": "String",
+  "provisioningStatus": "String",
+  "servicePlanId": "Guid",
+  "servicePlanName": "String"
 }
 
 ```

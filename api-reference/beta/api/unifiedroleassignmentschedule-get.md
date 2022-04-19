@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignmentSchedule"
 description: "Read the properties and relationships of an unifiedRoleAssignmentSchedule object."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
