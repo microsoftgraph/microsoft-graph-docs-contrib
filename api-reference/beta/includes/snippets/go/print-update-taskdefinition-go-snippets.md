@@ -18,7 +18,7 @@ options := &msgraphsdk.PrintTaskDefinitionRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 printTaskDefinitionId := "printTaskDefinition-id"
-result, err := graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(options)
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(options)
 
 
 ```

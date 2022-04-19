@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 siteId := "site-id"
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Delete(nil)
+graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Delete(nil)
 
 
 ```

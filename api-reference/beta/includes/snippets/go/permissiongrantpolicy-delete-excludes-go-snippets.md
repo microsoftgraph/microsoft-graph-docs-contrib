@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 permissionGrantPolicyId := "permissionGrantPolicy-id"
 permissionGrantConditionSetId := "permissionGrantConditionSet-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).ExcludesById(&permissionGrantConditionSetId).Delete(nil)
+graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).ExcludesById(&permissionGrantConditionSetId).Delete(nil)
 
 
 ```

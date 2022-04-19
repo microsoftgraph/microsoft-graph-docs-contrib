@@ -16,7 +16,7 @@ options := &msgraphsdk.EducationSchoolRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 educationSchoolId := "educationSchool-id"
-result, err := graphClient.Education().SchoolsById(&educationSchoolId).Patch(options)
+graphClient.Education().SchoolsById(&educationSchoolId).Patch(options)
 
 
 ```

@@ -247,11 +247,11 @@ The following tables summarizes support for `$filter` operators by properties of
 
 ### Legend
 
-+ ![Works by default. Does not require advanced query parameters.](../concepts/images/advanced-query-parameters/default.svg) The `$filter` operator works by default for that property.
-+ ![Requires advanced query parameters.](../concepts/images/advanced-query-parameters/advanced.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
++ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
++ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
   + `ConsistencyLevel=eventual` header
   + `$count=true` query string
-+ ![Not supported.](../concepts/images/advanced-query-parameters/notSupported.svg) The `$filter` operator is not supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
++ ![Not supported.](../concepts/images/yesandnosymbols/no.svg) The `$filter` operator is not supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
 + Blank cells indicate that the query is not valid for that property.
 + The **null value** column indicates that the property is nullable and filterable using `null`.
 + Properties that are not listed here do not support `$filter` at all.

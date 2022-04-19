@@ -169,7 +169,7 @@ import (
     "fmt"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 

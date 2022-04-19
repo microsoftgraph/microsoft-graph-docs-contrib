@@ -13,18 +13,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete directoryObject.
+Delete a directory object, for example, a group, user, application, or service principal.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Delete a user
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | User.ReadWrite.All |
 
-**NOTE:** Users, groups, and contacts are types of directory object. As a result,if you need to delete users, the following permission can and should be used: User.ReadWrite.All
+### Delete a group
+
+| Permission type                        | Permissions (from least to most privileged)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported.                                                                              |
+| Application                            | Group.ReadWrite.All                             |
+
+### Delete an application or service principal
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.All |
 
 ## HTTP request
 

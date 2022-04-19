@@ -39,7 +39,7 @@ To use the Postman collection, you need to fork it into your Postman workspace. 
 ## Step 2 - Download the Postman Agent (Optional - Postman Web browser only)
 
 To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). You can't use Postman for the web without this due to CORS restrictions in the web browser.
-"The maximum number of [connection](/graph/api-reference/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resources per Microsoft 365 tenant."
+"The maximum number of [connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant."
 
 > [!NOTE]
 > You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you will see this collection in your workspace.
@@ -120,7 +120,7 @@ Note that you are using the [client credential flow](/azure/active-directory/dev
 
 ## Step 6 – Create a new connection
 
-A [connection](/concepts/connecting-external-content-manage-connections.md) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 ```http
 POST /external/connections

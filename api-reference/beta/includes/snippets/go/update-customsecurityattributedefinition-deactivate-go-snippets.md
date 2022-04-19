@@ -14,7 +14,7 @@ options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptio
 	Body: requestBody,
 }
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
 
 
 ```

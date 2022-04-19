@@ -35,7 +35,7 @@ applications.SetTargets( []CrossTenantAccessPolicyTarget {
 options := &msgraphsdk.DefaultRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(options)
+graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(options)
 
 
 ```
