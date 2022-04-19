@@ -1,6 +1,6 @@
 ---
 title: "chatMessage: softDelete"
-description: "Delete a single message (without its replies) in a channel or a chat."
+description: "Delete a single message or message reply in a channel or a chat."
 author: "Ramjot Singh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ---
 
 # chatMessage: softDelete
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,18 +24,16 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.ReadWrite |
-|Delegated (personal Microsoft account)| Not supported |
-|Application| Not supported |
-
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ### Permissions for chat
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChatMessage.ReadWrite |
-|Delegated (personal Microsoft account)| Not supported |
-|Application| Not supported |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 
@@ -49,11 +48,13 @@ POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -62,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Soft-Delete message in a chat
+### Example 1: Soft-delete message in a chat
 
 #### Request
 <!-- {
@@ -71,66 +72,49 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{chatMessageId}/softDelete
+POST https://graph.microsoft.com/beta/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar/chats/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/softDelete
 ```
 
-
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Soft-Delete message in a channel
+### Example 2: Soft-delete message in a channel
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "chatmessagethis.softdelete"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/softDelete
+POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a/channels/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/softDelete
 ```
 
-
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Soft-Delete message of a reply.
+### Example 3: Soft-delete message of a reply
 
 #### Request
+
 <!-- {
   "blockType": "request",
   "name": "chatmessagethis.softdelete"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/softDelete
+POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a/channels/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/replies/1649852161658/softDelete
 ```
 
-
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
-

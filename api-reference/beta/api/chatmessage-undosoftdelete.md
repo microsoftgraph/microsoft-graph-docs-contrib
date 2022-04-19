@@ -1,6 +1,6 @@
 ---
 title: "chatMessage: undoSoftDelete"
-description: "Undelete a single message (without its replies) in a channel or a chat."
+description: "Undelete a single message or a message reply in a channel or a chat."
 author: "Ramjot Singh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -8,11 +8,12 @@ ms.localizationpriority: medium
 ---
 
 # chatMessage: undoSoftDelete
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Undelete a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
+Undo soft deletion of a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -49,11 +50,13 @@ POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -62,7 +65,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Undo Soft-Deleted message in a chat
+### Example 1: Undo soft deletion of a message in a chat
 
 #### Request
 <!-- {
@@ -71,22 +74,16 @@ If successful, this action returns a `204 No Content` response code.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{userId}/chats/{chatsId}/messages/{chatMessageId}/undoSoftDelete
+POST https://graph.microsoft.com/beta/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ap/chats/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/undoSoftDelete
 ```
 
-
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Undo Soft-Deleted message in a channel
+### Example 2: Undo soft deletion of a message in a channel
 
 #### Request
 <!-- {
@@ -95,23 +92,16 @@ HTTP/1.1 204 No Content
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/undoSoftDelete
+POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a/channels/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/undoSoftDelete
 ```
 
-
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
 
-
-### Example 3: Undo Soft-Deleted message of a reply.
+### Example 3: Undo soft deletion of a message of a reply in a channel
 
 #### Request
 <!-- {
@@ -120,17 +110,10 @@ HTTP/1.1 204 No Content
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/undoSoftDelete
-```
-
+POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a/channels/19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2/messages/1649864053377/undoSoftDelete
+`
 
 #### Response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```
