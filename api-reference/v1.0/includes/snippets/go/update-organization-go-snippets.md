@@ -30,7 +30,7 @@ options := &msgraphsdk.OrganizationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Patch(options)
 
 
 ```

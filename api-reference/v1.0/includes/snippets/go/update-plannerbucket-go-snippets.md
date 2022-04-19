@@ -19,7 +19,7 @@ options := &msgraphsdk.PlannerBucketRequestBuilderPatchOptions{
 	H: headers,
 }
 plannerBucketId := "plannerBucket-id"
-result, err := graphClient.Planner().BucketsById(&plannerBucketId).Patch(options)
+graphClient.Planner().BucketsById(&plannerBucketId).Patch(options)
 
 
 ```

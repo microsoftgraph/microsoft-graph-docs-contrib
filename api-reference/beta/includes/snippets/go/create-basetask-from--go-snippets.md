@@ -8,6 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewBaseTask()
+textBody := "String"
+requestBody.SetTextBody(&textBody)
 bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
 completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -33,8 +35,13 @@ displayName := "String"
 requestBody.SetDisplayName(&displayName)
 status := "String"
 requestBody.SetStatus(&status)
+viewpoint := msgraphsdk.NewTaskViewpoint()
+requestBody.SetViewpoint(viewpoint)
+viewpoint.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "microsoft.graph.taskViewpoint",
+}
 requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.baseTask",
+	"@odata.type": "#microsoft.graph.task",
 }
 options := &msgraphsdk.TasksRequestBuilderPostOptions{
 	Body: requestBody,

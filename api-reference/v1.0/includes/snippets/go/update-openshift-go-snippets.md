@@ -40,7 +40,7 @@ options := &msgraphsdk.OpenShiftRequestBuilderPatchOptions{
 }
 teamId := "team-id"
 openShiftId := "openShift-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
+graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
 
 
 ```

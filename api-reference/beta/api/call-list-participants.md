@@ -1,7 +1,7 @@
 ---
 title: "List participants"
 description: "Retrieve a list of participant objects in the call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -21,7 +21,9 @@ Retrieve a list of participant objects in the call.
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Application     | Calls.Initiate.All, Calls.AccessMedia.All  |
+
+> **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
 ## HTTP request
 

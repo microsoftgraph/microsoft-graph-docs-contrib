@@ -14,7 +14,7 @@ options := &msgraphsdk.UserAccountInformationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 userAccountInformationId := "userAccountInformation-id"
-result, err := graphClient.Me().Profile().AccountById(&userAccountInformationId).Patch(options)
+graphClient.Me().Profile().AccountById(&userAccountInformationId).Patch(options)
 
 
 ```

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents an authentication method registered to a user. An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.
 
 > [!IMPORTANT]
-> Listing users' authentication methods only returns methods supported on this API version. See [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
+> Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
 
 ## Methods
 

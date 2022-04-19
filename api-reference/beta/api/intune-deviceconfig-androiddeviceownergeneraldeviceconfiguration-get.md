@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9557
+Content-Length: 9615
 
 {
   "value": {
@@ -220,6 +220,7 @@ Content-Length: 9557
     "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
     "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
     "kioskModeManagedHomeScreenSignInEnabled": true,
+    "kioskModeUseManagedHomeScreenApp": "singleAppMode",
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,

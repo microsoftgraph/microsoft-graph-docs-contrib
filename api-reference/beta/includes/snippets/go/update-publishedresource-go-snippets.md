@@ -15,7 +15,7 @@ options := &msgraphsdk.PublishedResourceRequestBuilderPatchOptions{
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 publishedResourceId := "publishedResource-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Patch(options)
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Patch(options)
 
 
 ```

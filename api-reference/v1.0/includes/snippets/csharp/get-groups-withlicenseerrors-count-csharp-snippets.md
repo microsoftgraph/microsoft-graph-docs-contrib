@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var groups = await graphClient.Groups
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Filter("hasMembersWithLicenseErrors eq true")
 	.Select("id,displayName")
