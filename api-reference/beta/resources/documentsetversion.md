@@ -35,10 +35,10 @@ Inherits from [listItemVersion](../resources/listitemversion.md).
 | createdDateTime     | dateTime | Date when this version was created.|
 | id                  | string                                               | The ID of the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|
 | items     | [documentSetVersionItem](../resources/documentsetversionitem.md) collection | Items within the document set that are captured as part of this version.|
-| lastModifiedBy       | [identitySet](../resources/identitySet.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|        |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).|        |
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).     |            |
 | published            | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. Inherited from [listItemVersion](../resources/listitemversion.md).| 
-| shouldCaptureMinorVersion | boolean  | If 'true' minor versions of items are also captured otherwise only major versions will be captured. Default value is `False`.|
+| shouldCaptureMinorVersion | boolean  | If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Default value is `False`.|
 
 ## Relationships
 |Relationship|Type|Description|
