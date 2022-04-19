@@ -14042,9 +14042,9 @@ items:
           items:
           - name: Get team detail
             href: api/reportroot-getteamsteamactivitydetail.md
-          - name: Get team counts
+          - name: Get team activity counts
             href: api/reportroot-getteamsteamactivitycounts.md
-          - name: Get distribution team counts
+          - name: Get team activity distribution counts
             href: api/reportroot-getteamsteamactivitydistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
