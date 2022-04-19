@@ -327,17 +327,17 @@ The following example shows a roster the application receives after the large ga
 }
 ```
 
-## Large gallery view participants
+## Large gallery view participant
 
-Use the following data from the roster example to identify the large gallery view participants:
+Use the following data from the roster example to identify the large gallery view participant:
 
-- The **ApplicationType** of the participants will be set as `LargeGallery-V2`.
+- The **ApplicationType** of the participant will be set as `LargeGallery-V2`.
 - The **direction** of the video media stream will be set to `sendReceive`.
 - The **metadata** will be included which will contain more details such as paging.
 
 ### Example
 
-The following example shows the data for a large gallery view participant in a roster.
+The following example shows the data for the large gallery view participant in a roster.
 
 <!-- {
   "blockType": "example",

@@ -53,7 +53,7 @@ If successful, this method returns a `202 Accepted` response code and an [addLar
 
 ### Request
 
-The following example shows how to add a large gallery view to a call.
+The following example shows how to add the large gallery view to a call.
 
 <!-- {
   "blockType": "request",
