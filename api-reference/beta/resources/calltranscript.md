@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A callTranscript represents a transcript associated to an Online Meeting.
+Represents a transcript associated to an online meeting.
 
 ## Methods
 |  Method       |  Return Type  | Description| 
