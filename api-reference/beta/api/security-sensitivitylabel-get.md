@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To get a label as the signed-in user (delegated permission) or specified user (application permission):
+To get a label as the signed-in user (delegated permission) or a specified user (application permission):
 
 ``` http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
@@ -84,6 +84,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "get_sensitivitylabel",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.sensitivityLabel"
 }

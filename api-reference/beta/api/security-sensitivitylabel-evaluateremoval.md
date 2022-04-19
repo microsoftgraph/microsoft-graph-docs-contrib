@@ -40,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To evaluate removal as the signed-in user (delegated permission) or specified user (application permission):
+To evaluate removal as the signed-in user (delegated permission) or a specified user (application permission):
 
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
@@ -146,6 +146,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "name": "sensitivitylabelthis.evaluateremoval",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.informationProtectionAction",
   "isCollection": true

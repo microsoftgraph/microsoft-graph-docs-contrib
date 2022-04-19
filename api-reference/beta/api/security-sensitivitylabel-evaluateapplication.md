@@ -48,10 +48,10 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To evaluate as the signed-in user (delegated permission) or specified user (application permission):
+To evaluate as the signed-in user (delegated permission) or a specified user (application permission):
 
 ``` http
-POST /{usersId}}/security/informationProtection/sensitivityLabels/evaluateApplication
+POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateApplication
 POST /me/security/informationProtection/sensitivityLabels/evaluateApplication
 ```
 
@@ -94,7 +94,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/security/informationProtection/sensitivityLabels/evaluateApplication
+POST https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels/evaluateApplication
 Content-Type: application/json
 Content-length: 181
 User-agent: ContosoLobApp/1.0
@@ -169,6 +169,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "sensitivitylabelthis.evaluateapplication",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.informationProtectionAction",
   "isCollection": true

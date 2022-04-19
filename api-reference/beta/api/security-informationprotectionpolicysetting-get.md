@@ -31,12 +31,15 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
+To get policy settings available to the signed-in user (delegated permission) or a specified user (application permission):
+
 ``` http
 GET /users/{usersId}/security/informationProtection/labelPolicySettings
 GET /me/security/informationProtection/labelPolicySettings
 ```
 
-To get labels available to the organization (application permission):
+To get policy settings available to the organization as a service principal (application permission):
 
 ```http
 GET /security/informationProtection/labelPolicySettings
@@ -83,6 +86,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "name": "get_informationprotectionpolicysetting",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.informationProtectionPolicySetting"
 }
