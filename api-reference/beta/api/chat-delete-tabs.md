@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ### Request
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 ---
 
 ### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
