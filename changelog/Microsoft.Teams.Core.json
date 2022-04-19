@@ -4887,6 +4887,42 @@
       "CreatedDateTime": "2022-03-14T20:18:40.595Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+          "Cloud": "prd",
+          "Version": "v1.0",
+          "CreatedDateTime": "2022-04-18T20:3418:40.595Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": ""
     }
   ]
 }
