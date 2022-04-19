@@ -57,7 +57,7 @@ The following example shows how to add a large gallery view to a call.
 
 <!-- {
   "blockType": "request",
-  "name": "call-addLargeGalleryView-1"
+  "name": "addLargeGalleryView-1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/addLargeGalleryView
@@ -77,7 +77,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "call-addLargeGalleryView-1",
+  "name": "addLargeGalleryView-1",
   "truncated": true,
   "@odata.type": "microsoft.graph.addLargeGalleryViewOperation"
 } -->

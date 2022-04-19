@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "addLargeGalleryView",
           "ChangeType": "Addition",
-          "Description": "Added the [addLargeGalleryView](https://docs.microsoft.com/en-us/graph/api/call-addLargeGalleryView?view=graph-rest-beta) method to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [addLargeGalleryView](https://docs.microsoft.com/en-us/graph/api/addLargeGalleryView?view=graph-rest-beta) method to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
           "Target": "addLargeGalleryView"
         }
       ],

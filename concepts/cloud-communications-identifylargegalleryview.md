@@ -1,26 +1,24 @@
 --- 
-title: "Identify the large gallery view application in the roster"
-description: "Learn how to identify the large gallery view application in the roster."
+title: "Identify the large gallery view participant in the roster after adding the large gallery view using the cloud communications API"
+description: "Learn how to identify the large gallery view participant in the roster."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: conceptualPageType
 ---
 
-# Identify the large gallery view application in the roster
+# Identify the large gallery view participant in the roster after adding the large gallery view using the cloud communications API
 
 Namespace: microsoft.graph
 
-In this article, you will learn how to identify the large gallery view application in the roster. By identifying the large gallery view, application developers can extract relevant information and subscribe to the video feed.
+The cloud communications API provides a way through which the large gallery view can be added to an existing call. 
+Once it is added successfully, you can subscribe to its video feed to get the view. In this article, you will learn how to
+identify the large gallery view participant in a roster as all the information required for subscribing is available there.
 
-## Sample roster with large gallery view
+## Roster example with large gallery view participant
 
-The following is a sample of the roster received by the application, once the large gallery view is successfully added to the call.
+The following example shows a roster the application receives after the large gallery view is successfully added to a call.
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -329,13 +327,17 @@ The following is a sample of the roster received by the application, once the la
 }
 ```
 
-## Pointers for identifying the large gallery view participant
+## Large gallery view participants
+
+Use the following data from the roster example to identify the large gallery view participants:
 
 - The **ApplicationType** of the participants will be set as `LargeGallery-V2`.
 - The **direction** of the video media stream will be set to `sendReceive`.
 - The **metadata** will be included which will contain more details such as paging.
 
-### Example of the large gallery view participant
+### Example
+
+The following example shows the data for a large gallery view participant in a roster.
 
 <!-- {
   "blockType": "example",
