@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a transcript associated to an online meeting.
+Represents a transcript associated to an [online meeting](onlinemeeting.md).
 
 ## Methods
 |  Method       |  Return Type  | Description| 
