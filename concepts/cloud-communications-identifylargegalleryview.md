@@ -415,6 +415,5 @@ Use the following definition to deserialize the **metadata** property and extrac
         [DataMember(Name = "status")]
         public string Status { get; set; }
     }
-
 ```
 
