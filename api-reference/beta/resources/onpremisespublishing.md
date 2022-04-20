@@ -71,7 +71,7 @@ Here is a JSON representation of the resource.
   "isSecureCookieEnabled": true,
   "isTranslateHostHeaderEnabled": true,
   "isTranslateLinksInBodyEnabled": true,
-  "onPremisesApplicationSegments":{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"},
+  "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},
