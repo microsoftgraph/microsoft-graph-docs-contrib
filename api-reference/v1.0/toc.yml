@@ -6390,6 +6390,8 @@ items:
           href: api/contenttype-unpublish.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
         - name: Copy to default content location
@@ -6398,6 +6400,8 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible from hub
+          href: api/contenttype-getcompatiblehubcontenttypes.md
       - name: List items
         href: resources/listitem.md
         items:
@@ -6413,6 +6417,16 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: List operations in a site
+          href: api/site-list-operations.md
+        - name: List operations in a list
+          href: api/list-list-operations.md
+        - name: Get operation
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
