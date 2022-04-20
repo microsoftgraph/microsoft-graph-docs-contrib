@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationRoot resource type"
-description: "Provides tenants capability to launch a realistic phishing attacks and learn from it."
+description: "Provides the ability to launch a realistic phishing attack that organizations can learn from."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,13 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides tenants capability to launch a realistic phishing attacks and learn from it.
+Provides the ability to launch a realistic phishing attack that organizations can learn from.
 This is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get the simulation resources from the simulations navigation property.|
+|[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation training campaigns for a tenant.|
+|[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
 
 ## Properties
 None.
@@ -27,7 +28,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|simulations|[simulation](../resources/simulation.md) collection|Represent attack simulation and training campaign of a tenant.|
+|simulations|[simulation](../resources/simulation.md) collection|Represents an attack simulation training campaign in a tenant.|
+|simulationAutomations|[simulationAutomation](../resources/simulationautomation.md) collection|Represents simulation automations created to run on a tenant.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

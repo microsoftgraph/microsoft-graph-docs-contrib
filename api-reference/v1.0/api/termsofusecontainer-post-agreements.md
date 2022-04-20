@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements
 Content-type: application/json
 
 {
-  "displayName": "MSGraph Sample",
+  "displayName": "Contoso ToU for guest users",
   "isViewingBeforeAcceptanceRequired": true,
   "files": [
     {
@@ -72,7 +72,7 @@ Content-type: application/json
       "language": "en",
       "isDefault": true,
       "fileData": {
-        "data": "SGVsbG8gd29ybGQ="
+        "data": "SGVsbG8gd29ybGQ=//truncated-binary"
       }
     }
   ]
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agreement-from-agreements-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
