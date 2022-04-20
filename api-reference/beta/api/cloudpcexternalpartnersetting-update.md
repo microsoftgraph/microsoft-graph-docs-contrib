@@ -73,7 +73,6 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +89,7 @@ Content-Type: application/json
   "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true,
   "lastSyncDateTime": "2020-11-03T12:43:14Z",
-  "status": "active",
-  "statusDetails": "The external partner is active"
+  "status": "available",
+  "statusDetails": "The external partner is available"
 }
 ```

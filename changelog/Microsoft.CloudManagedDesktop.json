@@ -256,7 +256,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcRestorePointSetting",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcRestorePointSetting](https://docs.microsoft.com/en-us/graph/api/resources/microsoftManagedDesktop?view=graph-rest-beta) resource.",
+                    "Description": "Added the [cloudPcRestorePointSetting](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta) resource.",
                     "Target": "cloudPcRestorePointSetting"
                 }
             ],

@@ -139,6 +139,7 @@ Content-type: application/json
       ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
+      "clientCredentialType": "certificate",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
@@ -245,7 +246,7 @@ In this example, the response object shows the user signed in using only their p
   "name": "get_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&$top=10
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]

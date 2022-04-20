@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See [Enroll devices in Microsoft Intune](/mem/intune/enrollment) for additional information. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|String|Support department information Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |isMandatory|Boolean|Indicates if the profile is mandatory Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
@@ -82,6 +82,7 @@ The following table shows the properties that are required when you create the [
 |iCloudStorageDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
+|autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
 
 
 
@@ -95,7 +96,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1300
+Content-length: 1340
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -131,7 +132,8 @@ Content-length: 1300
   "zoomDisabled": true,
   "iCloudStorageDisabled": true,
   "chooseYourLockScreenDisabled": true,
-  "accessibilityScreenDisabled": true
+  "accessibilityScreenDisabled": true,
+  "autoUnlockWithWatchDisabled": true
 }
 ```
 
@@ -140,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1349
+Content-Length: 1389
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -177,7 +179,8 @@ Content-Length: 1349
   "zoomDisabled": true,
   "iCloudStorageDisabled": true,
   "chooseYourLockScreenDisabled": true,
-  "accessibilityScreenDisabled": true
+  "accessibilityScreenDisabled": true,
+  "autoUnlockWithWatchDisabled": true
 }
 ```
 

@@ -266,6 +266,26 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/graph/powershell/get-started.md",
+      "redirect_url": "/powershell/microsoftgraph/get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/graph/powershell/installation.md",
+      "redirect_url": "/powershell/microsoftgraph/installation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/graph/powershell/navigating.md",
+      "redirect_url": "/powershell/microsoftgraph/navigating",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/graph/powershell/app-only.md",
+      "redirect_url": "/powershell/microsoftgraph/app-only",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/api-reference/beta/api/application-delete-extensionproperty.md",
       "redirect_url": "/graph/api/extensionproperty-delete?view=graph-rest-beta",
       "redirect_document_id": true

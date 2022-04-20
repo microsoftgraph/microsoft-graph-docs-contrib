@@ -46,7 +46,7 @@ You can specify the following properties when creating a **cloudPcExternalPartne
 
 |Property|Type|Description|
 |:---|:---|:---|
-|partnerId|String|The external partner ID. Required|
+|partnerId|String|The external partner ID. Required.|
 |enableConnection|Boolean|Enable or disable external partner connection. If true, external partner api will accept incoming calls from external partner. Required.|
 
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartnerSetting",
   "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
-  "enableConnection": true,
+  "enableConnection": true
 }
 ```
 
@@ -93,7 +93,7 @@ Content-Type: application/json
   "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true,
   "lastSyncDateTime": "2020-11-03T12:43:14Z",
-  "status": "active",
-  "statusDetails": "The external partner is active"
+  "status": "available",
+  "statusDetails": "The external partner is available"
 }
 ```

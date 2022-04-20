@@ -1,6 +1,6 @@
 ---
 title: "cloudPcExternalPartnerSetting resource type"
-description: "Represents a external partner setting on Cloud PC."
+description: "Represents an external partner setting on Cloud PC."
 author: "Shaowei-Dong"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a external partner setting on Cloud PC.
+Represents an external partner setting on Cloud PC.
 
 ## Methods
 |Method|Return type|Description|
