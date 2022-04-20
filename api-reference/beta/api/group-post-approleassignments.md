@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/appRoleAssignments
+POST /groups/{groupId}/appRoleAssignments
 ```
 
 > [!NOTE]
