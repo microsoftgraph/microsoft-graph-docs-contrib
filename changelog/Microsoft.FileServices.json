@@ -2470,8 +2470,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/restore?view=graph-rest-beta) method to the [restore](https://docs.microsoft.com/en-us/graph/api/restore?view=graph-rest-beta) resource.",
-          "Target": "restore"
+          "Description": "Added the [restore](https://docs.microsoft.com/en-us/graph/api/documentsetversion-restore?view=graph-rest-beta) method to the [documentsetversion](https://docs.microsoft.com/en-us/graph/resources/documentsetversion?view=graph-rest-beta) resource.",
+          "Target": "documentSetVersion"
         }
       ],
       "Id": "19eaf04c-8437-44ca-bdd1-fffacce3f1c3",
