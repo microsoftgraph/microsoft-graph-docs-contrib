@@ -1,24 +1,19 @@
 ---
-title: "cloudPcForensicStorageAccount complex type"
-description: "Represents a CloudPC ForensicStorageAccount."
+title: "cloudPcForensicStorageAccount resource type"
+description: "Represents a Cloud PC storage account for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcForensicStorageAccount complex type
+# cloudPcForensicStorageAccount resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the storage account information that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get cloudPcForensicStorageAccount](../api/cloudpcforensicstorageaccount-get.md)|[cloudPcForensicStorageAccount](../resources/cloudpcforensicstorageaccount.md)|Read the properties and relationships of a [cloudPcForensicStorageAccount](../resources/cloudpcforensicstorageaccount.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,8 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcForensicStorageAccount",
-  "storageAccountId": "String (identifier)",
+  "storageAccountId": "String",
   "storageAccountName": "String"
 }
 ```
-

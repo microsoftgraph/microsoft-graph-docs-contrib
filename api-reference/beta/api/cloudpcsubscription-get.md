@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcSubscription"
-description: "Read the properties and relationships of a cloudPcSubscription object."
+description: "List all subscriptions that can be used to store snapshot(s) of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcSubscription](../resources/cloudpcsubscription.md) object.
+List all subscriptions [cloudPcSubscription](../resources/cloudpcsubscription.md) that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPcSubscription](../resources/cloudpcsnapshot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and zero or more [cloudPcSubscription](../resources/cloudpcsnapshot.md) object in the response body.
 
 ## Examples
 
@@ -59,7 +59,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/getSubscriptions
 ```
-
 
 ### Response
 
@@ -79,12 +78,12 @@ Content-Type: application/json
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudPcSubscriptions",
     "value":[
         {
-            "id": "8fd04a0b-ed49-46c0-a62d-e7980d829058",
-            "name":"Cloud PC Service INT"
+            "subscriptionId": "8fd04a0b-ed49-46c0-a62d-e7980d829058",
+            "subscriptionName":"Cloud PC Service INT"
         },
         {
-            "id": "618f7b25-b146-4c0e-a21b-2f1c67e78648",
-            "name":"Cloud PC HOBO Test1"
+            "subscriptionId": "618f7b25-b146-4c0e-a21b-2f1c67e78648",
+            "subscriptionName":"Cloud PC HOBO Test1"
         }
     ]
 }

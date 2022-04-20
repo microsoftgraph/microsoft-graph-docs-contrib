@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcForensicStorageAccount"
-description: "Read the properties and relationships of a cloudPcForensicStorageAccount object."
+description: "List all storage accounts that can be used to store snapshot(s) of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcForensicStorageAccount](../resources/cloudpcforensicstorageaccount.md) object.
+List all storage accounts [cloudPcForensicStorageAccount](../resources/cloudpcforensicstorageaccount.md) that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPcForensicStorageAccount](../resources/cloudpcsnapshot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and zero or more [cloudPcForensicStorageAccount](../resources/cloudpcsnapshot.md) object in the response body.
 
 ## Examples
 
@@ -57,9 +57,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionId='cb6ad4c4-8a17-4245-a644-e4436b1ee204')
+GET /deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionId='cb6ad4c4-8a17-4245-a644-e4436b1ee204')
 ```
-
 
 ### Response
 

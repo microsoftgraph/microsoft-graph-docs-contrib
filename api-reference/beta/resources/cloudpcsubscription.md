@@ -1,24 +1,19 @@
 ---
-title: "cloudPcSubscription complex type"
-description: "Represents a CloudPC Subscription."
+title: "cloudPcSubscription resource type"
+description: "Represents a Cloud PC Subscription."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcSubscription complex type
+# cloudPcSubscription resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the subscription information that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get cloudPcSubscription](../api/cloudpcsubscription-get.md)|[cloudPcSubscription](../resources/cloudpcsubscription.md)|Read the properties and relationships of a [cloudPcSubscription](../resources/cloudpcsubscription.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,8 +37,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSubscription",
-  "subscriptionId": "String (identifier)",
+  "subscriptionId": "String",
   "subscriptionName": "String"
 }
 ```
-
