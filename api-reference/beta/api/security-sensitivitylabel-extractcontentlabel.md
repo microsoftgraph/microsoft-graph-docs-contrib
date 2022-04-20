@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To extract the content label as the signed-in user (delegated permission) or specified user (application permission):
+To extract the content label as the signed-in user (delegated permission) or a specified user (application permission):
 
 ``` http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
@@ -131,6 +131,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "sensitivitylabelthis.extractcontentlabel",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.contentLabel"
 }

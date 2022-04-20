@@ -31,14 +31,14 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To get labels available to the signed-in user (delegated permission) or specified user (application permission):
+To get labels available to the signed-in user (delegated permission) or a specified user (application permission):
 
 ``` http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels
 GET /me/security/informationProtection/sensitivityLabels
 ```
 
-To get labels available to the organization (application permission):
+To get labels available to the organization as a service principal (application permission):
 
 ```http
 GET /security/informationProtection/sensitivityLabels
@@ -91,6 +91,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "list_sensitivitylabel",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.sensitivityLabel",
   "isCollection": true
