@@ -1,5 +1,5 @@
 --- 
-title: "Identify the large gallery view participant in the roster after adding the large gallery view using the cloud communications API"
+title: "Identify the large gallery view participant in a roster after adding it using the cloud communications API"
 description: "Learn how to identify the large gallery view participant in the roster."
 author: "navali-msft"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: conceptualPageType
 ---
 
-# Identify the large gallery view participant in the roster after adding the large gallery view using the cloud communications API
+# Identify the large gallery view participant in a roster after adding it using the cloud communications API
 
 Namespace: microsoft.graph
 
-The cloud communications API provides a way through which the large gallery view can be added to an existing call. 
-Once it is added successfully, you can subscribe to its video feed to get the view. In this article, you will learn how to
-identify the large gallery view participant in a roster as all the information required for subscribing is available there.
+The cloud communications API provides an endpoint for adding the large gallery view to a call. 
+Once the participant representing large gallery view is successfully added to the call, you can subscribe to its video feed to get the view. 
+In this article, you will learn how to identify the large gallery view participant in a roster, so that relevant data required for subscribing to video feed can be retrieved.
 
 ## Roster example with large gallery view participant
 
