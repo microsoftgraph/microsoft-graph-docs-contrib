@@ -266,24 +266,24 @@
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/graph/powershell/get-started.md",
+      "source_path_from_root": "/concepts/powershell/get-started.md",
       "redirect_url": "/powershell/microsoftgraph/get-started",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/graph/powershell/installation.md",
+      "source_path_from_root": "/concepts/powershell/installation.md",
       "redirect_url": "/powershell/microsoftgraph/installation",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/graph/powershell/navigating.md",
+      "source_path_from_root": "/concepts/powershell/navigating.md",
       "redirect_url": "/powershell/microsoftgraph/navigating",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/graph/powershell/app-only.md",
+      "source_path_from_root": "/concepts/powershell/app-only.md",
       "redirect_url": "/powershell/microsoftgraph/app-only",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/api-reference/beta/api/application-delete-extensionproperty.md",
