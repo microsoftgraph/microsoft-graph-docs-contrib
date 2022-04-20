@@ -1,7 +1,7 @@
 ---
 author: "JeremyKelley"
 description: "This resource represents an item in a SharePoint list."
-title: listItem
+title: "listItem resource" 
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
@@ -116,7 +116,7 @@ The following properties are inherited from **[baseItem][]**.
 | Relationship | Type                           | Description                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | [itemActivity][] collection    | The list of recent activities that took place on this item.                                        |
-| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
+| analytics    | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.|
 |documentSetVersions|[documentSetVersion](../resources/documentsetversion.md) collection| Version information for a document set version created by a user.|
 | driveItem    | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]** |
 | fields       | [fieldValueSet][]              | The values of the columns set on this list item.                                                   |

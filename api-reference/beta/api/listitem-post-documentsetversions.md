@@ -47,7 +47,7 @@ You can specify the following properties when you create a **documentSetVersion*
 |Property|Type|Description|
 |:---|:---|:---|
 |comment|String|Comment about the captured version. Optional.|
-|shouldCaptureMinorVersion|Boolean|If 'true' minor versions of items are also captured otherwise only major versions will be captured. Optional.|
+|shouldCaptureMinorVersion|Boolean|If `true`, minor versions of items are also captured; otherwise, only major versions will be captured. Optional.|
 
 
 
@@ -85,6 +85,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "name": "create_documentsetversion",
   "truncated": true,
   "@odata.type": "microsoft.graph.documentSetVersion"
 }

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /sites/root/lists/Documents/items/2/documentSetVersions/1/restore
+POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{documentSetVersionId}/restore
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{documentSetVersionId}/restore
+POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documentSetVersions/1/restore
 ```
 
 
@@ -67,6 +67,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "documentsetversionthis.restore",
   "truncated": true
 }
 -->

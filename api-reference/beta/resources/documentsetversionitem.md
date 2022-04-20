@@ -18,9 +18,9 @@ Represents an item which is a part of a captured [documentSetVersion](../resourc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|itemId|String| Item id. |
-|title|String| Title of the item. |
-|versionId|String| Version Id of the item.|
+|itemId|String| The unique identifier for the item. |
+|title|String| The title of the item. |
+|versionId|String| The version ID of the item.|
 
 ## Relationships
 None.

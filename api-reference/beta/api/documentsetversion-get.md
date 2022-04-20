@@ -71,6 +71,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
+  "name": "get_documentsetversion",
   "truncated": true,
   "@odata.type": "microsoft.graph.documentSetVersion"
 }
