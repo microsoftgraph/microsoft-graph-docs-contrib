@@ -56,9 +56,9 @@ The following table shows the properties that are required when you create the [
 
 | Property | Type | Description |
 |--|--|--|
-| appRoleId | Guid | The identifier (**id**) for the [app role](approle.md) which is assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application has not declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. |
-| principalId | Guid | The unique identifier (**id**) for the [group](group.md) being granted the app role. |
-| resourceId | Guid | The unique identifier (**id**) for the resource [service principal](serviceprincipal.md) for which the assignment is made. |
+| appRoleId | Guid | The identifier (**id**) for the [app role](../resources/approle.md) which is assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application has not declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. |
+| principalId | Guid | The unique identifier (**id**) for the [group](../resources/group.md) being granted the app role. |
+| resourceId | Guid | The unique identifier (**id**) for the resource [service principal](../resources/serviceprincipal.md) for which the assignment is made. |
 
 ## Response
 
