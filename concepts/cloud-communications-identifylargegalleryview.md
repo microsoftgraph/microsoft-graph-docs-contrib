@@ -10,8 +10,9 @@ doc_type: conceptualPageType
 # Identify large gallery view participants in a roster when using the Microsoft Graph cloud communications API
 
 The cloud communications API provides an endpoint for [adding the large gallery view](/graph/api/call-addlargegalleryview) to a call. 
-After the participant representing large gallery view is successfully added to the call, you can subscribe to its video feed to get the view. 
-In this article, you will learn how to identify the large gallery view participant in a roster, so that relevant data required for subscribing to video feed can be retrieved.
+After the large gallery view is successfully added to a call, you can subscribe to a participant's video feed.
+
+This article describes how to identify a large gallery view participant in a roster, so that you can retrieve the relevant data to subscribe to the video feed.
 
 ## Roster example with large gallery view participant
 
