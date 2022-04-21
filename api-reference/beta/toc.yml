@@ -1570,6 +1570,14 @@ items:
             href: api/contentsharingsession-get.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
+        - name: Add large gallery view
+          href: api/call-addlargegalleryview.md
+        - name: Large gallery view operation
+          items:
+          - name: Large gallery view operation
+            href: resources/largegalleryviewoperation.md
+          - name: Get large gallery view operation status
+            href: api/addlargegalleryviewoperation-get.md
       - name: Call records
         items:
         - name: Overview
