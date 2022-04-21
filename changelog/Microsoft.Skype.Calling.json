@@ -1,5 +1,31 @@
 {
   "changelog": [
+   {
+      "ChangeList": [
+        {
+          "Id": "d33a73d7-defa-4d40-99b3-7e4ef3a35098",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addLargeGalleryViewOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryViewOperation](https://docs.microsoft.com/en-us/graph/api/resources/addLargeGalleryViewOperation?view=graph-rest-beta) resource type and a supported method.",
+          "Target": "addLargeGalleryViewOperation"
+        },
+        {
+          "Id": "d33a73d7-defa-4d40-99b3-7e4ef3a35098",
+          "ApiChange": "Method",
+          "ChangedApiName": "addLargeGalleryView",
+          "ChangeType": "Addition",
+          "Description": "Added the [addLargeGalleryView](https://docs.microsoft.com/en-us/graph/api/call-addLargeGalleryView?view=graph-rest-beta) method to the [call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource.",
+          "Target": "addLargeGalleryView"
+        }
+      ],
+      "Id": "d33a73d7-defa-4d40-99b3-7e4ef3a35098",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-20T00:54:53.3530648Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {
@@ -462,7 +488,7 @@
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "257c12e0-27a3-4b01-8701-6ec96fe4c26d",
