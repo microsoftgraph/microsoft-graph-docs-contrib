@@ -179,7 +179,8 @@ Content-Type: application/json
       "endpointType": null,
       "region": null,
       "replacesCallId": null,
-      "languageId": null
+      "languageId": null,
+      "participantId": null
     }
   ],
   "requestedModalities": [
@@ -420,7 +421,8 @@ Content-Type: application/json
           "displayName": "John",
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
-      }
+      },
+      "participantId": null
     }
   ],
   "requestedModalities": [
@@ -1323,7 +1325,8 @@ Content-Type: application/json
       "endpointType": null,
       "region": null,
       "replacesCallId": null,
-      "languageId": null
+      "languageId": null,
+      "participantId": null,
     }
   ],
   "requestedModalities": [
@@ -1410,7 +1413,8 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.identity",
           "id": "+12345678901"
         }
-      }
+      },
+      "participantId": null
     }
   ],
   "requestedModalities": [
@@ -1492,7 +1496,8 @@ Content-Type: application/json
       "endpointType": null,
       "region": null,
       "replacesCallId": null,
-      "languageId": null
+      "languageId": null,
+      "participantId": null
     }
   ],
   "requestedModalities": [
