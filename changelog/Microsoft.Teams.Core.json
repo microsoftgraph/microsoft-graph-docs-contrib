@@ -4,11 +4,11 @@
       "ChangeList": [
         {
           "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "LIST",
-          "ChangeType": "Addition",
-          "Description": "Added a requirement for users to specify `descending` sort order when using the `orderBy' query option.",
-          "Target": "chatMessage"
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Change",
+          "Description": "Using the `orderBy' query option when [listing chat messages](https://docs.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta) requires specifying the `desc` sort order.",
+          "Target": "chat"
         }
       ],
       "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
