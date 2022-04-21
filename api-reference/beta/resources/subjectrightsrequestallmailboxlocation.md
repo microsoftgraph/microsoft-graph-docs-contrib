@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for subject rights request all mailbox location. This type should be used when all mailboxes should be searched.
+Represents the properties for subject rights request all mailbox location. Use this type when you want to look for data in all mailboxes.
 
 Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md).
 

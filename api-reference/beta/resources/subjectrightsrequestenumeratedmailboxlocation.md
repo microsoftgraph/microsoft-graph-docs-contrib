@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for subject rights request enumerated mailbox location. This type should be used only when specified mailboxes should be searched.
+Represents the properties for subject rights request enumerated mailbox location. Use this type when you want to look for data in specific mailboxes.
 
 Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|upns|String collection|Collection of mailbox that should be included in the search. Include the upn of the mailbox for e.g. user1@contoso.onmicrosoft.com|
+|upns|String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `user1@contoso.onmicrosoft.com`.|
 
 ## Relationships
 None.
