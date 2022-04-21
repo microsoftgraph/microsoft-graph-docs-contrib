@@ -330,7 +330,7 @@ items:
           href: resources/cloudpc.md
         - name: List
           href: api/user-list-cloudpcs.md
-        - name: Get Cloud PC launch info
+        - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
       - name: Contacts
         items:
