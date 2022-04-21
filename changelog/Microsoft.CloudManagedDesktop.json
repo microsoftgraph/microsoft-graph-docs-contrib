@@ -11,6 +11,7 @@
                 }
             ],
             "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
+            "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-04-21T04:10:23.6033442Z",
             "WorkloadArea": "Devices and apps",
