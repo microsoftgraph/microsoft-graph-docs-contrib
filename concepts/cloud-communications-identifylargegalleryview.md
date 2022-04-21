@@ -1,18 +1,16 @@
 --- 
-title: "Identify the large gallery view participant in a roster after adding it using the cloud communications API"
-description: "Learn how to identify the large gallery view participant in the roster."
+title: "Identify large gallery view participants in a roster when using the Microsoft Graph cloud communications API"
+description: "Learn how to identify large gallery view participants in a roster."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: conceptualPageType
 ---
 
-# Identify the large gallery view participant in a roster after adding it using the cloud communications API
+# Identify large gallery view participants in a roster when using the Microsoft Graph cloud communications API
 
-Namespace: microsoft.graph
-
-The cloud communications API provides an endpoint for adding the large gallery view to a call. 
-Once the participant representing large gallery view is successfully added to the call, you can subscribe to its video feed to get the view. 
+The cloud communications API provides an endpoint for [adding the large gallery view](/graph/api/addlargegalleryview) to a call. 
+After the participant representing large gallery view is successfully added to the call, you can subscribe to its video feed to get the view. 
 In this article, you will learn how to identify the large gallery view participant in a roster, so that relevant data required for subscribing to video feed can be retrieved.
 
 ## Roster example with large gallery view participant
@@ -327,7 +325,7 @@ The following example shows a roster the application receives after the large ga
 }
 ```
 
-## Large gallery view participant
+## Identifying large gallery view participants
 
 Use the following data from the roster example to identify the large gallery view participant:
 
@@ -335,9 +333,9 @@ Use the following data from the roster example to identify the large gallery vie
 - The **direction** of the video media stream will be set to `sendReceive`.
 - The **metadata** will be included which will contain more details such as paging.
 
-### Example
+### Participant data example
 
-The following example shows the data for the large gallery view participant in a roster.
+The following example shows the data for a large gallery view participant in the roster.
 
 ```json
 {
