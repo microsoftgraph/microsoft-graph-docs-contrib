@@ -157,6 +157,9 @@ This resource supports:
 | **Outlook tasks** (deprecated)|||
 | [Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
 | [List tasks](../api/outlookuser-list-tasks.md) (deprecated) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
+| **Cloud PC**|||
+|[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) objects for the calling user|
+|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the calling user's Cloud PC|
 
 
 ## Properties
