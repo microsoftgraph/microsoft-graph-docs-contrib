@@ -11,11 +11,12 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
+options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPostOptions{
 	Body: requestBody,
 }
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).TokenIssuancePolicies().$ref().Post(options)
+tokenIssuancePolicyId := "tokenIssuancePolicy-id"
+graphClient.ApplicationsById(&applicationId).TokenIssuancePoliciesById(&tokenIssuancePolicyId).Post(options)
 
 
 ```

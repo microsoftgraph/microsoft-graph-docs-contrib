@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
 
+> [!IMPORTANT]
+> Shared channels are currently in public preview status. During this time, the Microsoft Graph API to create a shared channel is available to a limited audience. We recommend creating shared channels in the Teams client and using Microsoft Graph APIs to manage them. For details about how to enable shared channels in the Teams client, see [Shared channels in Microsoft Teams (Preview)](/microsoftteams/shared-channels).
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use different permissions and avoid using these permissions going forward. Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -51,7 +55,7 @@ In the request body, supply a JSON representation of a [channel](../resources/ch
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body for channel with a **membershipType** value of `standard` or `private`. For channel with a **membershipType** value of `shared`, this method return `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 If the request is unsuccessful, this method returns a `400 Bad Request` response code. The following are common reasons for this response:
 
@@ -113,7 +117,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -197,7 +201,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -249,7 +253,7 @@ Content-Type: application/json
 
 #### Response
 
-The following example shows the response. The Content-Location header in the response specifies the path to the channel that is being provisioned.
+The following is an example of the response. The `Content-Location` header in the response specifies the path to the channel that is being provisioned.
 Once provisioned, this channel can be used for [importing messages](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -336,7 +340,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -355,7 +359,7 @@ Content-type: application/json
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
-    "membershipType": "private"
+    "membershipType": "standard"
 }
 ```
 
@@ -419,12 +423,9 @@ Content-type: application/json
 
 
 
----
-
 #### Response
 
-The following example shows the response.
-
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -434,7 +435,8 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+Content-Length: 0
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -446,6 +448,53 @@ Content-type: application/json
     "webUrl": "https://teams.microsoft.com/l/channel/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
     "membershipType": "private"
 }
+```
+
+
+### Example 6: Create a shared channel on behalf of a user
+
+#### Request
+
+The following example shows how to create a shared channel.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
 ```
 
 ## See also
@@ -467,3 +516,7 @@ Content-type: application/json
   ]
 }
 -->
+
+
+
+

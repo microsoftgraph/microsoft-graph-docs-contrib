@@ -14,7 +14,7 @@ options := &msgraphsdk.DeltaRequestBuilderGetOptions{
 	Q: requestParameters,
 }
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Delta()().Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Delta()(educationClass-id).Get(options)
 
 
 ```

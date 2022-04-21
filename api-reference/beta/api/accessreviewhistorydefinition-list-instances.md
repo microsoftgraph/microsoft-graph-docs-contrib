@@ -1,5 +1,5 @@
 ---
-title: "List instances"
+title: "List instances (of an accessReviewHistoryDefinition)"
 description: "Retrieve the instances of an access review history definition."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List instances
+# List instances (of an accessReviewHistoryDefinition)
 
 Namespace: microsoft.graph
 
@@ -110,7 +110,7 @@ Content-Type: application/json
     "value": [
         {
             "id": "61a617dd-238f-4037-8fa5-d800e515f5bc",
-            "status": "Done",
+            "status": "done",
             "reviewHistoryPeriodStartDate": "2021-02-01T00:00:00Z",
             "reviewHistoryPeriodEndDate": "2021-03-01T00:00:00Z",
             "fulfilledDateTime": "2021-03-01T01:38:15.7998393Z",

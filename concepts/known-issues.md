@@ -296,7 +296,7 @@ The **allowExternalSenders** property can only be accessed on unified groups. Ac
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
@@ -406,10 +406,28 @@ The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only
 
 ### Installation of apps that require resource-specific consent permissions is not supported
 The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
-- [Add app to team](/graph/api/team-post-installedapps.md)
+- [Add app to team](/graph/api/team-post-installedapps)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
-- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
+The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
+```
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
 
 ## Users
 

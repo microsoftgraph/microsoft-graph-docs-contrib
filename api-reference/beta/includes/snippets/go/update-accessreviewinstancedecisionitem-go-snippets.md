@@ -15,9 +15,11 @@ requestBody.SetJustification(&justification)
 options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderPatchOptions{
 	Body: requestBody,
 }
+accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
+accessReviewStageId := "accessReviewStage-id"
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(options)
 
 
 ```

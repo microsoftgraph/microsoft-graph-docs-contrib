@@ -66,7 +66,7 @@ Use the following steps to interact with a request using the Exchange Online Pow
    >**Note:** The context field of the data access request describes the parameters and properties of the copy activity.
 
    ```powershell
-   Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   Get-ElevatedAccessRequest -RequestId ($requestId).Context | ConvertFrom-Json
    ```
 
    You'll get a response that looks like the following.

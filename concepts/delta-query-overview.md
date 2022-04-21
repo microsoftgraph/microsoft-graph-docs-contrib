@@ -109,7 +109,6 @@ Delta query is currently supported for the following resources. Note that some r
 | Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
 | Assignment categories                                          | [delta](/graph/api/educationcategory-delta) function of the [educationCategory](/graph/api/resources/educationcategory) resource                                    |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                              |
-| Directory objects                                              | [delta](/graph/api/directoryobject-delta) function (preview) of the [directoryObject](/graph/api/resources/directoryobject) resource                         |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource                                    |
@@ -182,6 +181,8 @@ Navigation properties are not supported. For example, you cannot track changes t
 ### Processing delays
 
 Expect varying delays between the time a change is made to a resource instance, which can be through an app interface or API, and the time the tracked change is reflected in a delta query response.
+
+Sometimes the changes that have occurred to the object might not be indicated when you select the `nextLink` or the `deltaLink`. This is because some requests might have replication delays for objects that were recently created, updated, or deleted. Retry the `nextLink` or `deltaLink` after some time to retrieve the latest changes.
 
 ### National clouds
 
