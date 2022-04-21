@@ -70,7 +70,8 @@ The following example shows a request that makes a peer-to-peer call between the
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -293,7 +294,8 @@ The following example shows a request that makes a peer-to-peer call between the
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -464,7 +466,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -533,7 +536,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -1208,7 +1212,8 @@ The following example shows the request to make a peer-to-peer call between the 
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-2",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -1376,7 +1381,8 @@ The following example shows a request to make a peer-to-peer call between the bo
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-3",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
