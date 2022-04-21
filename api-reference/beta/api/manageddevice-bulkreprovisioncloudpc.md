@@ -104,7 +104,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
 }
 -->
 
