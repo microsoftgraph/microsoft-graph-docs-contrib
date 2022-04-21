@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Describes the response format for an operation that adds the large gallery view.
 
+Inherits from [commsOperation](commsoperation.md).
+
 ## Methods
 
 | Method | Return Type | Description |
