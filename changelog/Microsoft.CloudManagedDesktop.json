@@ -1,6 +1,22 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+                {
+                    "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "microsoft.graph.cloudPcBulkRemoteActionResult",
+                    "Description": "Changed the return type for [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkReprovisionCloudPc?view=graph-rest-beta) Method",
+                    "Target": "bulkReprovisionCloudPc"
+                }
+            ],
+            "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
+            "Version": "beta",
+            "CreatedDateTime": "2022-04-21T04:10:23.6033442Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
           "ChangeList": [
             {
               "Id": "1df1712d-52c5-4891-9de1-bdecb1193b94",
