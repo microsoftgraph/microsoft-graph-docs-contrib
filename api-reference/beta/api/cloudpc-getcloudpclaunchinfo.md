@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getCloudPcLaunchInfo"
-description: "Get the Cloud PC launch information for a calling user's Cloud PC."
+description: "Get the Cloud PC launch information for the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [Cloud PC launch information](../resources/cloudpclaunchinfo.md) for a calling user's Cloud PC.
+Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

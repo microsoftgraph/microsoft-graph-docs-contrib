@@ -1,5 +1,5 @@
 ---
-title: "List cloudPCs of the user"
+title: "List cloudPCs for user"
 description: "List the cloudPC devices that are attributed to the signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPCs of the user
+# List cloudPCs for user
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
