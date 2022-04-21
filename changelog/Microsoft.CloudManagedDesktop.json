@@ -6,6 +6,7 @@
                     "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
                     "ApiChange": "Method",
                     "ChangedApiName": "microsoft.graph.cloudPcBulkRemoteActionResult",
+                    "ChangeType": "Addition",
                     "Description": "Changed the return type for [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkReprovisionCloudPc?view=graph-rest-beta) Method",
                     "Target": "bulkReprovisionCloudPc"
                 }
