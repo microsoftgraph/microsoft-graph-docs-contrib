@@ -20,13 +20,12 @@ SDKs are currently available for the following languages:
 
 - [C#](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell)
-- [TypeScript](https://github.com/microsoftgraph/msgraph-sdk-typescript)
-- [JavaScript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
+- [TypeScript | JavaScript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 - [Java](https://github.com/microsoftgraph/msgraph-sdk-java)
 - [Go](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
 - [Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core)
-- [Objective-C/Swift](https://github.com/microsoftgraph/msgraph-sdk-objc)
+- [Objective-C | Swift](https://github.com/microsoftgraph/msgraph-sdk-objc)
 
 ## Microsoft 365 developer subscription
 
