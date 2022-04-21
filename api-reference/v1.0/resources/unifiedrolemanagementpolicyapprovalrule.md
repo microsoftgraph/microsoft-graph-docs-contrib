@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyApprovalRule resource type"
-description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approval as defined for a role management policy."
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approving a role assignment."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines rules for approval as defined for a role management policy.
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines rules for approving a role assignment.
 
 ## Methods
 
@@ -21,8 +21,8 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
-|setting|[approvalSettings](../resources/approvalsettings.md)|The settings for approval as defined in a rule.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the approval rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).|
+|setting|[approvalSettings](../resources/approvalsettings.md)|The settings for approval of the role assignment.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the approval rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

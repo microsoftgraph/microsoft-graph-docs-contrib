@@ -4943,8 +4943,10 @@ items:
                 href: api/unifiedrolemanagementpolicy-get.md
               - name: List rules
                 href: api/unifiedrolemanagementpolicy-list-rules.md
-              - name: Get rules
+              - name: Get rule
                 href: api/unifiedrolemanagementpolicyrule-get.md
+              - name: Update rule
+                href: api/unifiedrolemanagementpolicyrule-update.md
             - name: Policy assignments
               displayName: role managemement policy assignments
               href: resources/unifiedrolemanagementpolicyassignment.md
