@@ -927,7 +927,6 @@ For more information about how to create an online meetings, see [create onlineM
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-move"
