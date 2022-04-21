@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "38f7d5e4-333e-41f5-a87d-a9e8b10cfa72",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-v1.0) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "38f7d5e4-333e-41f5-a87d-a9e8b10cfa72",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read and write operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-v1.0) resource.",
+          "Target": "unifiedRoleAssignment"
+        },
+        {
+          "Id": "38f7d5e4-333e-41f5-a87d-a9e8b10cfa72",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-v1.0) resource.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "38f7d5e4-333e-41f5-a87d-a9e8b10cfa72",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EntitlementManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-v1.0) resource.",
+          "Target": "unifiedRoleDefinition"
+        }
+      ],
+      "Id": "38f7d5e4-333e-41f5-a87d-a9e8b10cfa72",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-20T00:00:00.8892294Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f0b1d404-83b8-4796-ac5f-748597e9df5e",
           "ApiChange": "Relationship",
           "ChangedApiName": "assignmentPolicies",
