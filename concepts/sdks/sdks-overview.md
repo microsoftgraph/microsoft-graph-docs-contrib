@@ -21,7 +21,7 @@ SDKs are currently available for the following languages:
 - [C#](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell)
 - [TypeScript](https://github.com/microsoftgraph/msgraph-sdk-typescript)
-- [Javascript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
+- [JavaScript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 - [Java](https://github.com/microsoftgraph/msgraph-sdk-java)
 - [Go](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
@@ -32,8 +32,8 @@ SDKs are currently available for the following languages:
 
 When building applications using Microsoft Graph, we recommend that you get a free Microsoft 365 developer subscription by signing up for the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
-## Additional resources
+## See also
 
 * For more details about the features and capabilities of the SDK, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 * Request or vote on additional features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). 
-* For a list of SDKs and samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
+* For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples).
