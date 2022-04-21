@@ -171,6 +171,8 @@ items:
             href: cloud-communications-phone-number.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
