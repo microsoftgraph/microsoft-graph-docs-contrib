@@ -10131,9 +10131,9 @@ items:
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: List Cloud PCs of a user 
+          - name: List for user 
             href: api/user-list-cloudpcs.md
-          - name: Get Cloud PC launch info
+          - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
