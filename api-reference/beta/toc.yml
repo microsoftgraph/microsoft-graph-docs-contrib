@@ -1574,8 +1574,8 @@ items:
           href: api/call-addlargegalleryview.md
         - name: Large gallery view operation
           items:
-          - name: Large gallery view operation
-            href: resources/largegalleryviewoperation.md
+          - name: Add large gallery view operation
+            href: resources/addlargegalleryviewoperation.md
           - name: Get large gallery view operation status
             href: api/addlargegalleryviewoperation-get.md
       - name: Call records
