@@ -15,6 +15,6 @@ ms.localizationpriority: medium
 > [!NOTE]
 > Run the following commands if a schema changes in the CSV file, and reflect those changes into the SQLite database.
 > ```dotnetcli
-  dotnet ef database drop
-  dotnet ef database update
-  ```
+>  dotnet ef database drop
+>  dotnet ef database update
+>  ```

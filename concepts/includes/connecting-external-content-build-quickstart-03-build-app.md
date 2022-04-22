@@ -595,7 +595,7 @@ namespace PartsInventoryConnector
 
 ## Create the connection
 
-1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method:
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method:
 
     ```c
     #region Connections
@@ -645,7 +645,7 @@ namespace PartsInventoryConnector
 
 ## Register schema
 
-1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method:
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method:
 
     ```c
     #region Schema
