@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.educationExcelResource"
+  "@odata.type": "microsoft.graph.educationTeamsAppResource"
 }-->
 
 ```json
