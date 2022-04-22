@@ -13,7 +13,7 @@ In this step, you'll create a .NET Core console app. After that, you will create
 3. Enter the **Project name**: "PartsInventoryConnector".
 4. Select the checkbox for **Place solution and project in the same directory**, and then select **Create**.
 
-   ![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
+   ![Screenshot of the "Configure your new project" section](../images/connectors-images/build7.png)
 
 > [!IMPORTANT]
 > Before moving to the next step, copy the ApplianceParts.csv file to the root folder of the project.
@@ -22,7 +22,7 @@ In this step, you'll create a .NET Core console app. After that, you will create
 
 To add NuGet packages, first right-click **Project Solution**, and then select **Open in Terminal**.
 
-![Screenshot showing the Open terminal option](images/connectors-images/build8.png)
+![Screenshot showing the Open terminal option](../images/connectors-images/build8.png)
 
 Next, run the following command line interface (CLI) commands in the developer command prompt.
 

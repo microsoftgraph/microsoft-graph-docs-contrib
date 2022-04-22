@@ -13,7 +13,7 @@ This .NET Core application shows you how to use the Microsoft Graph connectors A
 
 The sample creates a Windows desktop app that acquires a token from the Microsoft identity platform, and uses it to send requests to the Microsoft Graph connectors API. The connectors API sends its response after the access is validated.
 
-![Diagram showing the Windows app acquiring a token and using it to access the Microsoft Graph connectors API](images/connectors-images/build1.png)
+![Diagram showing the Windows app acquiring a token and using it to access the Microsoft Graph connectors API](../images/connectors-images/build1.png)
 
 ## Prerequisites
 

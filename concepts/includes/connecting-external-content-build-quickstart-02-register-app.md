@@ -10,7 +10,7 @@ After all the prerequisites are in place, you will be able to register an applic
 2. In the left pane, select **Azure Active Directory**, and under **Manage**, select **App registrations**.
 3. Select **New registration**.
 
-    ![Screenshot showing the "app registrations" section](images/connectors-images/build2.png)
+    ![Screenshot showing the "app registrations" section](../images/connectors-images/build2.png)
 
 4. Complete the **Register an application** form with the following values, and then select **Register**.
 
@@ -20,25 +20,25 @@ After all the prerequisites are in place, you will be able to register an applic
 
     * **Redirect URI**: Leave blank
 
-    ![Screenshot showing the "register an application" section](images/connectors-images/build3-contoso-register-app.png)
+    ![Screenshot showing the "register an application" section](../images/connectors-images/build3-contoso-register-app.png)
 
 5. On the Parts Inventory Connector overview page, copy the values of **Application (client) ID and Directory (tenant) ID**. You will need both in the following section.
 
-    ![Screenshot showing the "parts inventory connector" section](images/connectors-images/build3-contoso-partsinv.png)
+    ![Screenshot showing the "parts inventory connector" section](../images/connectors-images/build3-contoso-partsinv.png)
 
 6. Select **API Permissions** under **Manage**.
 7. Select **Add a permission**, and then select **Microsoft Graph**.
 8. Select **Application permissions**, and then select the **ExternalItem.ReadWrite.All** permission. Select **Add permissions**.
 
-    ![Screenshot showing the "request API permissions" section](images/connectors-images/build4.png)
+    ![Screenshot showing the "request API permissions" section](../images/connectors-images/build4.png)
 
 9. Select **Grant admin consent for {TENANT},** and then select **Yes** when prompted.
 
-    ![Screenshot showing the "parts inventory connector api permissions" section](images/connectors-images/build5.png)
+    ![Screenshot showing the "parts inventory connector api permissions" section](../images/connectors-images/build5.png)
 
 10. Select **Certificates &amp; secrets** under **Manage**, and then select **New client secret**.
 11. Enter a description and choose an expiration time for the secret, and then select **Add**.
 
-    ![Screenshot showing the "parts inventory connector certs and secrets" section](images/connectors-images/build6.png)
+    ![Screenshot showing the "parts inventory connector certs and secrets" section](../images/connectors-images/build6.png)
 
 12. Copy and save the new secret; you will need it in the following section.
