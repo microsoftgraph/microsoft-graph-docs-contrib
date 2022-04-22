@@ -8,47 +8,47 @@ Create search verticals and result types to customize the search results in Micr
 
 ## Create a vertical
 
-To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 Admin center](https://admin.microsoft.com/) using the global administrator role, and do the following:
+To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) using the global administrator role, and do the following:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
-2. Go to **Vertical** and click the **Add** button.
+2. Go to **Vertical**, and then select **Add**.
 3. Provide the following details:
-  * **Name the vertical:** Appliance Parts.
+   * **Name the vertical:** Appliance Parts.
 
-   ![Screenshot of the "Name the vertical" section](images/connectors-images/build11.png)
+     ![Screenshot of the "Name the vertical" section](images/connectors-images/build11.png)
 
-  * **Content source**: The connector created with the app. (Parts Inventory)
+   * **Content source**: The connector created with the app (Parts Inventory).
 
-   ![Screenshot of the "Content source" section](images/connectors-images/build12.png)
+     ![Screenshot of the "Content source" section](images/connectors-images/build12.png)
 
-  * **Add a query**: Leave blank.
+   * **Add a query**: Leave blank.
 
-   ![Screenshot of the "Add a query" section](images/connectors-images/build13.png)
+     ![Screenshot of the "Add a query" section](images/connectors-images/build13.png)
 
-  * **Filters**: Leave blank.
+   * **Filters**: Leave blank.
 
-   ![Screenshot of the "Filters" section](images/connectors-images/build14.png)
+     ![Screenshot of the "Filters" section](images/connectors-images/build14.png)
 
 ## Create a result type
 
 To create a result type:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
-2. Go to the **result type** tab and click the **Add** button.
+2. Go to the **Result type** tab, and then select **Add**.
 3. Provide the following details:
 
-  * **Name**: Appliance Part
+   * **Name**: Appliance Part
 
-   ![Screenshot of the "Name the result type" section](images/connectors-images/build15.png)
+     ![Screenshot of the "Name the result type" section](images/connectors-images/build15.png)
 
-  * **Content source**: The connector created in the app.
+   * **Content source**: The connector created in the app.
 
-   ![Screenshot of the "Select a content source" section](images/connectors-images/build16.png)
+     ![Screenshot of the "Select a content source" section](images/connectors-images/build16.png)
 
-  * **Rules**: None
+   * **Rules**: None
 
-   ![Screenshot of the "Set rules" section](images/connectors-images/build17.png)
+     ![Screenshot of the "Set rules" section](images/connectors-images/build17.png)
 
-  * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) into the layout designer textbox.
+   * Paste contents of [result-type.json](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/result-type.json) into the layout designer textbox.
 
-   ![Screenshot of the "Design layout" section](images/connectors-images/build18.png)
+     ![Screenshot of the "Design layout" section](images/connectors-images/build18.png)

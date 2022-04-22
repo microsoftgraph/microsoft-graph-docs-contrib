@@ -9,8 +9,9 @@ In this step, you'll create a .NET Core console app. After that you will create 
 ## Create a .NET Core console app
 
 1. Launch Visual Studio 2019 and go to **File** > **New** > **Project**.
-2. Select the **Console App (.NET Core)** template, and select **Next**.
-3. Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
+2. Select the **Console App (.NET Core)** template, and then select **Next**.
+3. Enter the **Project name**: "PartsInventoryConnector".
+4. Select the checkbox for **Place solution and project in the same directory**, and then select **Create**.
 
 ![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
 
@@ -19,11 +20,11 @@ In this step, you'll create a .NET Core console app. After that you will create 
 
 ## Add NuGet packages
 
-To add NuGet packages, first right-click **Project Solution** and select **Open in Terminal**.
+To add NuGet packages, first right-click **Project Solution**, and then select **Open in Terminal**.
 
 ![Screenshot showing the Open terminal option](images/connectors-images/build8.png)
 
-Next, run the following CLI commands in the developer command prompt.
+Next, run the following command line interface (CLI) commands in the developer command prompt.
 
 ```dotnetcli
 dotnet add package CsvHelper --version 12.1.2
@@ -37,10 +38,10 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 > [!TIP]
 > If the `add package` command fails, check the **Package Source** of your project:
 > 1. Select the project in the Solution Explorer.
-> 2. Go to Tools > Nuget Package Manager > Package Manager Settings.
-> 3. Check the Package Sources, and make sure nuget.&#65279;org is installed as package source.
+> 2. Go to **Tools** > **Nuget Package Manager** > **Package Manager Settings**.
+> 3. Check the **Package Sources**, and make sure that nuget.&#65279;org is installed as the package source.
 >     * Name: nuget.&#65279;org
->     *  Source: https&#65279;://api.nuget.org/v3/index.json
+>     * Source: https&#65279;://api.nuget.org/v3/index.json
 
 <!---Used "&#65279;" to prevent auto-generated links --->
 
@@ -49,7 +50,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 This authentication is required to get the necessary OAuth access token to call the connectors API.
 
 1. Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.
-2. Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs and place the following code in that file:
+2. Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs, and then place the following code in that file:
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -122,7 +123,7 @@ namespace PartsInventoryConnector.Authentication
 ## Add user experience
 
 1. Create a new directory in the **PartsInventoryConnector** directory named **Console**.
-2. Create a new file in the **Console** directory named MenuChoice.cs and place the following code in that file:
+2. Create a new file in the **Console** directory named MenuChoice.cs, and then place the following code in that file:
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -144,7 +145,7 @@ namespace PartsInventoryConnector.Console
 ## Set up data model
 
 1. Create a new directory in the **PartsInventoryConnector** directory named **Models**.
-2. Create a new file in the **Models** directory named AppliancePart.cs, and place the following code in that file:
+2. Create a new file in the **Models** directory named AppliancePart.cs, and then place the following code in that file:
 
 
 ```c
@@ -193,7 +194,7 @@ namespace PartsInventoryConnector.Models
 
 
 
-3. Create a new file in the **Models** directory named ApplianceDbContext.cs, and place the following code in that file:
+3. Create a new file in the **Models** directory named ApplianceDbContext.cs, and then place the following code in that file:
 
 ```c
 using Microsoft.Data.Sqlite;
@@ -275,7 +276,7 @@ namespace PartsInventoryConnector.Models
 ```
 
 4. Create a new directory named **Data** in the **PartsInventoryConnector** directory.
-5. Create a new file in the **Data** directory named CsvDataLoader.cs and place the following code in that file:
+5. Create a new file in the **Data** directory named CsvDataLoader.cs, and then place the following code in that file:
 
 ```c
 using CsvHelper;
@@ -328,7 +329,7 @@ namespace PartsInventoryConnector.Data
 ## Write the Microsoft Graph helper service
 
 1. Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.
-2. Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs and place the following code in that file:
+2. Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs, and then place the following code in that file:
 
 ```c
 using Microsoft.Graph;
@@ -408,9 +409,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 }
 ```
 
-3. Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.
-
-    The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
+3. Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs, and then place the following code in that file. This code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
 
 ```c
 // Copyright (c) Microsoft Corporation. All rights reserved.
