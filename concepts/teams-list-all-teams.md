@@ -8,13 +8,13 @@ ms.prod: "microsoft-teams"
 
 # List all teams in Microsoft Teams for an organization
 
-To list all [teams](/graph/api/resources/team?view=graph-rest-beta) 
+To list all [teams](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) 
 in an organization (tenant), you find all groups that have teams, and then get information for each team.
 
 ## Get a list of groups
 
-To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta) in the organization that have teams,
-get a [list of all groups](/graph/api/group-list?view=graph-rest-beta) and then in code find the ones that have
+To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) in the organization that have teams,
+get a [list of all groups](/graph/api/group-list?view=graph-rest-beta&preserve-view=true) and then in code find the ones that have
 a **resourceProvisioningOptions** property that contains "Team".
 Since groups are large objects, use $select to only get the properties of the group you care about.
 
@@ -109,7 +109,7 @@ Content-type: application/json
 ## Get team information for a group
 
 To get team information for the team in a particular group, 
-call the [get team](/graph/api/team-get?view=graph-rest-beta) API and include the group ID.
+call the [get team](/graph/api/team-get?view=graph-rest-beta&preserve-view=true) API and include the group ID.
 
 ```http
 GET /teams/{group-id}
@@ -158,5 +158,5 @@ Content-type: application/json
 
 ## See also
 
-- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
-- [List groups](/graph/api/group-list?view=graph-rest-beta)
+- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta&preserve-view=true)
+- [List groups](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)
