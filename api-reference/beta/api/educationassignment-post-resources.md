@@ -654,36 +654,35 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
-    "distributeForStudentWork": false,
-    "id": "5bae19da-a720-4046-8af8-f56b9ae62d25",
-    "resource": {
-        "@odata.type": "#microsoft.graph.educationTeamsAppResource",
-        "displayName": "Template - My Story",
-        "createdDateTime": "2022-04-22T13:51:20.577384Z",
-        "lastModifiedDateTime": "2022-04-22T13:51:20.577384Z",
-        "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
-        "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
-        "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
-        "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
-        "createdBy": {
-            "application": null,
-            "device": null,
-            "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                "displayName": null
-            }
-        },
-        "lastModifiedBy": {
-            "application": null,
-            "device": null,
-            "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                "displayName": null
-            }
-        }
-    }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
+  "distributeForStudentWork": false,
+  "id": "5bae19da-a720-4046-8af8-f56b9ae62d25",
+  "resource": {
+      "@odata.type": "#microsoft.graph.educationTeamsAppResource",
+      "displayName": "Template - My Story",
+      "createdDateTime": "2022-04-22T13:51:20.577384Z",
+      "lastModifiedDateTime": "2022-04-22T13:51:20.577384Z",
+      "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+      "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+      "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+      "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      }
+  }
 }
 ```
 
