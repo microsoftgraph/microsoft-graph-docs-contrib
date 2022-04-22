@@ -38,6 +38,8 @@ The initial steps required here follow most of the same steps used to register a
 
 Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
+# [Azure AD PowerShell](#tab/azuread)
+
 1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
 
     ```PowerShell
@@ -61,6 +63,33 @@ Finally grant your partner-managed app those configured permissions for all your
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
+
+# [Microsoft Graph PowerShell](#tab/graphpowershell)
+
+1. Open a PowerShell session and connect to your partner tenant by entering your admin credentials into the sign-in window.
+
+    ```PowerShell
+    Connect-MgGraph
+    ```
+
+2. Find the group that represents the *Adminagents*.
+
+    ```PowerShell
+    $group = Get-MgGroup -Filter "displayName eq 'Adminagents'"
+    ```
+
+3. Find the service principal that has the same *appId* as your app.
+
+    ```PowerShell
+    $sp = Get-MgServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    ```
+
+4. Finally, add the service principal to the *Adminagents* group.
+
+    ```PowerShell
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
+    ```
+----
 
 ## Token acquisition flows
 
