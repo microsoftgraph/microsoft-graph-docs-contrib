@@ -22,7 +22,7 @@ Since groups are large objects, use $select to only get the properties of the gr
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 The following is an example of the response. 
 
@@ -57,7 +57,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **Note**: Filtering groups by resourceProvisioningOptions is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
 
-> **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 The following is an example of the response. 
 
