@@ -4,11 +4,11 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
-Create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing, to make it easier for users to find the information that they have permission to see.
+To make it easier for users to find the information that they have permission to see, create search verticals and result types to customize the search results in Microsoft SharePoint, Microsoft Office, and Microsoft Search in Bing.
 
 ## Create a vertical
 
-To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) using the global administrator role, and do the following:
+To create and enable a search vertical at the organization level, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) by using the global administrator role, and do the following:
 
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
 2. Go to **Vertical**, and then select **Add**.
@@ -36,7 +36,6 @@ To create a result type:
 1. Go to **Settings** > **Search & intelligence** > **Customizations**.
 2. Go to the **Result type** tab, and then select **Add**.
 3. Provide the following details:
-
    * **Name**: Appliance Part
 
      ![Screenshot of the "Name the result type" section](images/connectors-images/build15.png)

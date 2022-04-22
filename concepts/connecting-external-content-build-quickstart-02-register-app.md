@@ -14,11 +14,11 @@ After all the prerequisites are in place, you will be able to register an applic
 
 4. Complete the **Register an application** form with the following values, and then select **Register**.
 
-    a. **Name**: Parts Inventory Connector
+    * **Name**: Parts Inventory Connector
 
-    b. **Supported account types**: Accounts in this organizational directory only (Microsoft only - Single tenant)
+    * **Supported account types**: Accounts in this organizational directory only (Microsoft only - Single tenant)
 
-    c. **Redirect URI**: Leave blank
+    * **Redirect URI**: Leave blank
 
     ![Screenshot showing the "register an application" section](images/connectors-images/build3-contoso-register-app.png)
 
