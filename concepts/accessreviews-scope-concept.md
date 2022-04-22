@@ -84,7 +84,7 @@ The following example scopes the review to only direct members of the group who 
 
 ### Example 4: Review all users assigned to all Microsoft 365 groups
 
-The following example scopes the review to only direct members of the group who are users.
+The following example creates a review of each Microsoft 365 group that contains guest users. For the review instance on each group, the review is scoped to only direct members of the group who are guest users.
 
 ```http
 "instanceEnumerationScope": {
