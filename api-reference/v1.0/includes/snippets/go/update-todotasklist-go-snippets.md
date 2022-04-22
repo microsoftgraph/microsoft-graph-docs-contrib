@@ -14,7 +14,7 @@ options := &msgraphsdk.TodoTaskListRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 todoTaskListId := "todoTaskList-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).Patch(options)
+graphClient.Me().Todo().ListsById(&todoTaskListId).Patch(options)
 
 
 ```

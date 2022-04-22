@@ -156,6 +156,8 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 
 OData defines the `any` and `all` operators to evaluate matches on multi-valued properties, that is, either collection of primitive values such as String types or collection of entities.
 
+#### `any` operator
+
 The `any` operator iteratively applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *any member* of the collection, otherwise it returns `false`. The following is the syntax of the `any` operator:
 
 ```http
@@ -187,6 +189,8 @@ To negate the result of the expression inside the `any` clause, use the `not` op
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
 ConsistencyLevel: eventual
 ```
+
+#### `all` operator
 
 The `all` operator applies a Boolean expression to each member of a collection and returns `true` if the expression is `true` for *all members* of the collection, otherwise it returns `false`. It is not supported by any property.
 

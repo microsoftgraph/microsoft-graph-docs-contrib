@@ -23,7 +23,7 @@ options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptio
 	Body: requestBody,
 }
 authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
 
 
 ```

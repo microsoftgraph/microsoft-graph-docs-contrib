@@ -25,7 +25,7 @@ options := &msgraphsdk.PlannerRequestBuilderPatchOptions{
 	Body: requestBody,
 	H: headers,
 }
-result, err := graphClient.Me().Planner().Patch(options)
+graphClient.Me().Planner().Patch(options)
 
 
 ```

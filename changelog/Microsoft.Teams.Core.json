@@ -1,6 +1,23 @@
 {
-
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Change",
+          "Description": "Using the `orderBy' query option when [listing chat messages](https://docs.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta) requires specifying the `desc` sort order.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-18T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -584,6 +601,96 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-06-14T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharedWithTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharedWithTeams** relationship to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **allChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "incomingChannels",
+          "ChangeType": "Addition",
+          "Description": "Added the **incomingChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "associatedTeams",
+          "ChangeType": "Addition",
+          "Description": "Added the **associatedTeams** relationship to the [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/resources/teaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "teamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "associatedTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/resources/associatedteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "associatedTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharedWithChannelTeamInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/resources/sharedwithchannelteaminfo?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "sharedWithChannelTeamInfo"
+        },
+        {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Method",
+          "ChangedApiName": "doesUserHaveAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [doesUserHaveAccess](https://docs.microsoft.com/en-us/graph/api/doesuserhaveaccess?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/resources/channel?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-05T21:46:49.407Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
@@ -4754,6 +4861,68 @@
       "CreatedDateTime": "2021-01-26T19:18:34.4466613Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamSummary](https://docs.microsoft.com/en-us/graph/api/resources/teamSummary?view=graph-rest-beta) resource type.",
+          "Target": "teamSummary"
+        },
+        {
+          "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+          "ApiChange": "Property",
+          "ChangedApiName": "summary",
+          "ChangeType": "Addition",
+          "Description": "Added the **summary** property to [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta) resource.",
+          "Target": "team"
+        }
+      ],
+      "Id": "6f87b3b8-1396-49ab-a2d0-a26bef7ddb9f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-14T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+          "Cloud": "prd",
+          "Version": "v1.0",
+          "CreatedDateTime": "2022-04-18T20:3418:40.595Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": ""
     }
   ]
 }

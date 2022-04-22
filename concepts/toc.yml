@@ -171,6 +171,8 @@ items:
             href: cloud-communications-phone-number.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -183,7 +185,7 @@ items:
           - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
           - name: Build your first custom connector
-            href: connecting-external-content-build-quickstart.yml            
+            href: connecting-external-content-build-quickstart.yml
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -208,6 +210,9 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
+        items:
+          - name: Business rules
+            href: bookingsbusiness-business-rules.md
       - name: Device and app management
         expanded: true
         items:
@@ -263,9 +268,9 @@ items:
           - name: Upload files
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
-            href: assignments-submissions-states-transition.md            
+            href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
-            href: education-build-notificationchannelurl.md            
+            href: education-build-notificationchannelurl.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -372,7 +377,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md                  
+            href: notifications-concept-overview.md
           - name: Get started
             displayName: Notifications
             items:
@@ -389,7 +394,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md                
+                href: notifications-integrating-with-ios.md
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -443,6 +448,10 @@ items:
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
+          - name: Trim duplicate search results (preview)
+            href: search-concept-trim-duplicate.md
+          - name: Use query templates (preview)
+            href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
       - name: Security
@@ -523,7 +532,7 @@ items:
   - name: Develop
     expanded: true
     items:
-      - name: Get auth tokens
+      - name: Authentication and authorization
         items:
           - name: Overview
             href: auth/index.yml
@@ -589,7 +598,7 @@ items:
                   - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md                  
+                    href: teams-changenotifications-chatmessage.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
@@ -666,6 +675,15 @@ items:
                 href: migrate-azure-ad-graph-faq.md
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
+          - name: Exchange Web Services
+            displayName: Migration, Exchange Web Services, EWS
+            items:
+              - name: Overview
+                href: migrate-exchange-web-services-overview.md
+              - name: Authentication
+                href: migrate-exchange-web-services-authentication.md
+              - name: API mapping
+                href: migrate-exchange-web-services-api-mapping.md
       - name: Use SDKs
         items:
           - name: Overview
@@ -690,14 +708,16 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
+              - name: Overview
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Installation
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: Navigating the SDK
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
-                href: powershell/app-only.md
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the Toolkit
         items:
           - name: Toolkit overview
