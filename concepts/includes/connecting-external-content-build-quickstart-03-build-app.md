@@ -37,6 +37,7 @@ dotnet add package Microsoft.Identity.Client --version 4.13.0
 
 > [!TIP]
 > If the `add package` command fails, check the **Package Source** of your project:
+>
 > 1. Select the project in the Solution Explorer.
 > 2. Go to **Tools** > **Nuget Package Manager** > **Package Manager Settings**.
 > 3. Check the **Package Sources**, and make sure that nuget.&#65279;org is installed as the package source.
@@ -52,7 +53,7 @@ This authentication is required to get the necessary OAuth access token to call 
 1. Create a new directory named **Authentication** in the **PartsInventoryConnector** directory.
 2. Create a new file in the **Authentication** directory named ClientCredentialAuthProvider.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT license.
     using Microsoft.Graph;
@@ -61,14 +62,14 @@ This authentication is required to get the necessary OAuth access token to call 
     using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    
+
     namespace PartsInventoryConnector.Authentication
     {
         public class ClientCredentialAuthProvider : IAuthenticationProvider
         {
             private IConfidentialClientApplication _msalClient;
             private int _maxRetries = 3;
-    
+
             public ClientCredentialAuthProvider(string appId, string tenantId, string secret)
             {
                 _msalClient = ConfidentialClientApplicationBuilder
@@ -77,11 +78,11 @@ This authentication is required to get the necessary OAuth access token to call 
                     .WithClientSecret(secret)
                     .Build();
             }
-    
+
             public async Task AuthenticateRequestAsync(HttpRequestMessage request)
             {
                 int retryCount = 0;
-    
+
                 do
                 {
                     try
@@ -89,7 +90,7 @@ This authentication is required to get the necessary OAuth access token to call 
                         var result = await _msalClient
                             .AcquireTokenForClient(new[] { "https://graph.microsoft.com/.default" })
                             .ExecuteAsync();
-    
+
                         if (!string.IsNullOrEmpty(result.AccessToken))
                         {
                             request.Headers.Authorization =
@@ -112,7 +113,7 @@ This authentication is required to get the necessary OAuth access token to call 
                     {
                         throw exception;
                     }
-    
+
                     retryCount++;
                 } while (retryCount < _maxRetries);
             }
@@ -125,10 +126,10 @@ This authentication is required to get the necessary OAuth access token to call 
 1. Create a new directory in the **PartsInventoryConnector** directory named **Console**.
 2. Create a new file in the **Console** directory named MenuChoice.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT license.
-    
+
     namespace PartsInventoryConnector.Console
     {
         public enum MenuChoice
@@ -147,14 +148,14 @@ This authentication is required to get the necessary OAuth access token to call 
 1. Create a new directory in the **PartsInventoryConnector** directory named **Models**.
 2. Create a new file in the **Models** directory named AppliancePart.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT license.
     using Microsoft.Graph;
     using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    
+
     namespace PartsInventoryConnector.Models
     {
         public class AppliancePart
@@ -168,7 +169,7 @@ This authentication is required to get the necessary OAuth access token to call 
             [JsonProperty("appliances@odata.type")]
             private const string AppliancesODataType = "Collection(String)";
             public List<string> Appliances { get; set; }
-    
+
             public Properties AsExternalItemProperties()
             {
                 var properties = new Properties
@@ -184,18 +185,16 @@ This authentication is required to get the necessary OAuth access token to call 
                         { "appliances", Appliances }
                     }
                 };
-    
+
                 return properties;
             }
         }
     }
     ```
 
-
-
 3. Create a new file in the **Models** directory named ApplianceDbContext.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     using Microsoft.Data.Sqlite;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -203,18 +202,18 @@ This authentication is required to get the necessary OAuth access token to call 
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    
+
     namespace PartsInventoryConnector.Models
     {
         public class ApplianceDbContext : DbContext
         {
             public DbSet<AppliancePart> Parts { get; set; }
-    
+
             protected override void OnConfiguring(DbContextOptionsBuilder options)
             {
                 options.UseSqlite("Data Source=parts.db");
             }
-    
+
             protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
                 // EF Core can't store lists, so add a converter for the Appliances
@@ -225,7 +224,7 @@ This authentication is required to get the necessary OAuth access token to call 
                         v => JsonConvert.SerializeObject(v),
                         v => JsonConvert.DeserializeObject<List<string>>(v)
                     );
-    
+
                 // Add LastUpdated and IsDeleted shadow properties
                 modelBuilder.Entity<AppliancePart>()
                     .Property<DateTime>("LastUpdated")
@@ -235,13 +234,13 @@ This authentication is required to get the necessary OAuth access token to call 
                     .Property<bool>("IsDeleted")
                     .IsRequired()
                     .HasDefaultValue(false);
-    
+
                 // Exclude any soft-deleted items (IsDeleted = 1) from
                 // the default query sets
                 modelBuilder.Entity<AppliancePart>()
                     .HasQueryFilter(a => !EF.Property<bool>(a, "IsDeleted"));
             }
-    
+
             public override int SaveChanges()
             {
                 // Prevent deletes of data, instead mark the item as deleted
@@ -253,21 +252,21 @@ This authentication is required to get the necessary OAuth access token to call 
                     {
                         SoftDelete(entry);
                     }
-    
+
                 }
-    
+
                 return base.SaveChanges();
             }
-    
+
             private void SoftDelete(EntityEntry entry)
             {
                 var partNumber = new SqliteParameter("@partNumber",
                     entry.OriginalValues["PartNumber"]);
-    
+
                 Database.ExecuteSqlRaw(
                     "UPDATE Parts SET IsDeleted = 1 WHERE PartNumber = @partNumber",
                     partNumber);
-    
+
                 entry.State = EntityState.Detached;
             }
         }
@@ -277,7 +276,7 @@ This authentication is required to get the necessary OAuth access token to call 
 4. Create a new directory named **Data** in the **PartsInventoryConnector** directory.
 5. Create a new file in the **Data** directory named CsvDataLoader.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     using CsvHelper;
     using CsvHelper.Configuration;
     using CsvHelper.TypeConversion;
@@ -285,7 +284,7 @@ This authentication is required to get the necessary OAuth access token to call 
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    
+
     namespace PartsInventoryConnector.Data
     {
         public static class CsvDataLoader
@@ -300,7 +299,7 @@ This authentication is required to get the necessary OAuth access token to call 
                 }
             }
         }
-    
+
         public class ApplianceListConverter : DefaultTypeConverter
         {
             public override object ConvertFromString(string text, IReaderRow row, MemberMapData memberMapData)
@@ -309,7 +308,7 @@ This authentication is required to get the necessary OAuth access token to call 
                 return new List<string>(appliances);
             }
         }
-    
+
         public class AppliancePartMap : ClassMap<AppliancePart>
         {
             public AppliancePartMap()
@@ -330,14 +329,14 @@ This authentication is required to get the necessary OAuth access token to call 
 1. Create a new directory named **MicrosoftGraph** in the **PartsInventoryConnector** directory.
 2. Create a new file in the **MicrosoftGraph** directory named CustomSerializer.cs, and then place the following code in that file:
 
-    ```c
+    ```csharp
     using Microsoft.Graph;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     using Newtonsoft.Json.Serialization;
     using System;
     using System.IO;
-    
+
     namespace PartsInventoryConnector.MicrosoftGraph
     {
         // The Microsoft Graph SDK serializes enumerations in camelCase.
@@ -357,40 +356,40 @@ This authentication is required to get the necessary OAuth access token to call 
                 return base.ResolveContractConverter(objectType);
             }
         }
-    
+
         // In order to hook up the custom contract resolver for
         // PropertyType, we need to implement a custom serializer to
         // pass to the MicrosoftGraphServiceClient.
         public class CustomSerializer : ISerializer
         {
-    
+
             private Serializer _microsoftGraphSerializer;
             private JsonSerializerSettings _jsonSerializerSettings;
-    
+
             public CustomSerializer()
             {
                 _microsoftGraphSerializer = new Serializer();
-    
+
                 _jsonSerializerSettings = new JsonSerializerSettings
                 {
                     ContractResolver = new CustomContractResolver()
                 };
             }
-    
+
             // For deserialize, just pass through to the default
             // Microsoft Graph SDK serializer
             public T DeserializeObject<T>(Stream stream)
             {
                 return _microsoftGraphSerializer.DeserializeObject<T>(stream);
             }
-    
+
             // For deserialize, just pass through to the default
             // Microsoft Graph SDK serializer
             public T DeserializeObject<T>(string inputString)
             {
                 return _microsoftGraphSerializer.DeserializeObject<T>(inputString);
             }
-    
+
             public string SerializeObject(object serializeableObject)
             {
                 // If a Schema object is being serialized, do the conversion
@@ -400,7 +399,7 @@ This authentication is required to get the necessary OAuth access token to call 
                     var foo = JsonConvert.SerializeObject(serializeableObject, _jsonSerializerSettings);
                     return foo;
                 }
-    
+
                 // Otherwise, just pass through to the default Microsoft Graph SDK serializer
                 return _microsoftGraphSerializer.SerializeObject(serializeableObject);
             }
@@ -410,27 +409,27 @@ This authentication is required to get the necessary OAuth access token to call 
 
 3. Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs, and then place the following code in that file. This code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
 
-    ```c
+    ```csharp
     // Copyright (c) Microsoft Corporation. All rights reserved.
     // Licensed under the MIT license.
     using Microsoft.Graph;
     using Newtonsoft.Json;
     using System.Net.Http;
     using System.Threading.Tasks;
-    
+
     namespace PartsInventoryConnector.MicrosoftGraph
     {
         public class MicrosoftGraphHelper
         {
             private GraphServiceClient _microsoftGraphClient;
-    
+
             public MicrosoftGraphHelper(IAuthenticationProvider authProvider)
             {
                 // Configure a default HttpProvider with our
                 // custom serializer to handle the PropertyType serialization
                 var serializer = new CustomSerializer();
                 var httpProvider = new HttpProvider(serializer);
-    
+
                 // Initialize the Microsoft Graph client
                 _microsoftGraphClient = new GraphServiceClient(authProvider, httpProvider);
             }
@@ -442,7 +441,7 @@ This authentication is required to get the necessary OAuth access token to call 
 
 Open Program.cs and replace the entire contents with the following code:
 
-```c
+```csharp
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Graph;
@@ -597,266 +596,253 @@ namespace PartsInventoryConnector
 
 1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method:
 
-    ```c
-    #region Connections
-    
-            public async Task<ExternalConnection> CreateConnectionAsync(string id, string name, string description)
-            {
-                var newConnection = new ExternalConnection
-                {
-                    // Need to set to null, service returns 400
-                    // if @odata.type property is sent
-                    ODataType = null,
-                    Id = id,
-                    Name = name,
-                    Description = description
-                };
-    
-                return await _microsoftGraphClient.External.Connections.Request().AddAsync(newConnection);
-            }
-    
-    #endregion
+    ```csharp
+    public async Task<ExternalConnection> CreateConnectionAsync(string id, string name, string description)
+    {
+        var newConnection = new ExternalConnection
+        {
+            // Need to set to null, service returns 400
+            // if @odata.type property is sent
+            ODataType = null,
+            Id = id,
+            Name = name,
+            Description = description
+        };
+
+        return await _microsoftGraphClient.External.Connections.Request().AddAsync(newConnection);
+    }
     ```
 
 2. Open the Program.cs file and add the following code after the **Main** method:
 
-
-    ```c
+    ```csharp
     private static async Task CreateConnectionAsync()
-            {
-                var connectionId = PromptForInput("Enter a unique ID for the new connection", true);
-                var connectionName = PromptForInput("Enter a name for the new connection", true);
-                var connectionDescription = PromptForInput("Enter a description for the new connection", false);
-    
-                try
-                {
-                    // Create the connection
-                    _currentConnection = await _microsoftGraphHelper.CreateConnectionAsync(connectionId, connectionName, connectionDescription);
-              System.Console.WriteLine("New connection created");
-                    System.Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(_currentConnection, Newtonsoft.Json.Formatting.Indented));
-                }
-                catch (ServiceException serviceException)
-                {
-                    System.Console.WriteLine(serviceException.Message);
-                    return;
-                }
-          }
+    {
+        var connectionId = PromptForInput("Enter a unique ID for the new connection", true);
+        var connectionName = PromptForInput("Enter a name for the new connection", true);
+        var connectionDescription = PromptForInput("Enter a description for the new connection", false);
+
+        try
+        {
+            // Create the connection
+            _currentConnection = await _microsoftGraphHelper.CreateConnectionAsync(connectionId, connectionName, connectionDescription);
+        System.Console.WriteLine("New connection created");
+            System.Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(_currentConnection, Newtonsoft.Json.Formatting.Indented));
+        }
+        catch (ServiceException serviceException)
+        {
+            System.Console.WriteLine(serviceException.Message);
+            return;
+        }
+    }
     ```
 
 ## Register schema
 
 1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method:
 
-    ```c
-    #region Schema
-    
-            public async Task RegisterSchemaAsync(string connectionId, Schema schema)
-            {
-                // Need access to the HTTP response here since we are doing an
-                // async request. The new schema object isn't returned, we need
-                // the Location header from the response
-                var asyncNewSchemaRequest = _microsoftGraphClient.External.Connections[connectionId].Schema
-                    .Request()
-                    .Header("Prefer", "respond-async")
-                    .GetHttpRequestMessage();
-    
-                asyncNewSchemaRequest.Method = HttpMethod.Post;
-                asyncNewSchemaRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(schema);
-    
-                var response = await _microsoftGraphClient.HttpProvider.SendAsync(asyncNewSchemaRequest);
-    
-                if (response.IsSuccessStatusCode)
+    ```csharp
+    public async Task RegisterSchemaAsync(string connectionId, Schema schema)
+    {
+        // Need access to the HTTP response here since we are doing an
+        // async request. The new schema object isn't returned, we need
+        // the Location header from the response
+        var asyncNewSchemaRequest = _microsoftGraphClient.External.Connections[connectionId].Schema
+            .Request()
+            .Header("Prefer", "respond-async")
+            .GetHttpRequestMessage();
+
+        asyncNewSchemaRequest.Method = HttpMethod.Post;
+        asyncNewSchemaRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(schema);
+
+        var response = await _microsoftGraphClient.HttpProvider.SendAsync(asyncNewSchemaRequest);
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Get the operation ID from the Location header
+            var operationId = ExtractOperationId(response.Headers.Location);
+            await CheckSchemaStatusAsync(connectionId, operationId);
+        }
+        else
+        {
+            throw new ServiceException(
+                new Error
                 {
-                    // Get the operation ID from the Location header
-                    var operationId = ExtractOperationId(response.Headers.Location);
-                    await CheckSchemaStatusAsync(connectionId, operationId);
+                    Code = response.StatusCode.ToString(),
+                    Message = "Registering schema failed"
                 }
-                else
-                {
-                    throw new ServiceException(
-                        new Error
-                        {
-                            Code = response.StatusCode.ToString(),
-                            Message = "Registering schema failed"
-                        }
-                    );
-                }
-            }
-    
-            private string ExtractOperationId(System.Uri uri)
+            );
+        }
+    }
+
+    private string ExtractOperationId(System.Uri uri)
+    {
+        int numSegments = uri.Segments.Length;
+        return uri.Segments[numSegments - 1];
+    }
+
+    public async Task CheckSchemaStatusAsync(string connectionId, string operationId)
+    {
+        do
+        {
+            var operation = await _microsoftGraphClient.External.Connections[connectionId]
+                .Operations[operationId]
+                .Request()
+                .GetAsync();
+
+            if (operation.Status == ConnectionOperationStatus.Completed)
             {
-                int numSegments = uri.Segments.Length;
-                return uri.Segments[numSegments - 1];
+                return;
             }
-    
-            public async Task CheckSchemaStatusAsync(string connectionId, string operationId)
+            else if (operation.Status == ConnectionOperationStatus.Failed)
             {
-                do
-                {
-                    var operation = await _microsoftGraphClient.External.Connections[connectionId]
-                        .Operations[operationId]
-                        .Request()
-                        .GetAsync();
-    
-                    if (operation.Status == ConnectionOperationStatus.Completed)
+                throw new ServiceException(
+                    new Error
                     {
-                        return;
+                        Code = operation.Error.ErrorCode,
+                        Message = operation.Error.Message
                     }
-                    else if (operation.Status == ConnectionOperationStatus.Failed)
-                    {
-                        throw new ServiceException(
-                            new Error
-                            {
-                                Code = operation.Error.ErrorCode,
-                                Message = operation.Error.Message
-                            }
-                        );
-                    }
-    
-                    await Task.Delay(3000);
-                } while (true);
+                );
             }
-    
-    #endregion
+
+            await Task.Delay(3000);
+        } while (true);
+    }
     ```
 
 2. Open the Program.cs file and add the following code after the **Main** method:
 
-    ```c
+    ```csharp
     private static async Task RegisterSchemaAsync()
+    {
+        if (_currentConnection == null)
+        {
+            System.Console.WriteLine("No connection selected. Please create a new connection or select an existing connection.");
+            return;
+        }
+
+        System.Console.WriteLine("Registering schema, this may take a moment...");
+
+        try
+        {
+            // Register the schema
+            var schema = new Schema
             {
-                if (_currentConnection == null)
+                // Need to set to null, service returns 400
+                // if @odata.type property is sent
+                ODataType = null,
+                BaseType = "microsoft.graph.externalItem",
+                Properties = new List<Property>
                 {
-                    System.Console.WriteLine("No connection selected. Please create a new connection or select an existing connection.");
-                    return;
+                    new Property { Name = "partNumber", Type = PropertyType.Int64, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
+                    new Property { Name = "name", Type = PropertyType.String, IsQueryable = true, IsSearchable = true, IsRetrievable = true },
+                    new Property { Name = "description", Type = PropertyType.String, IsQueryable = false, IsSearchable = true, IsRetrievable = true },
+                    new Property { Name = "price", Type = PropertyType.Double, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
+                    new Property { Name = "inventory", Type = PropertyType.Int64, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
+                    new Property { Name = "appliances", Type = PropertyType.StringCollection, IsQueryable = true, IsSearchable = true, IsRetrievable = true }
                 }
-    
-                System.Console.WriteLine("Registering schema, this may take a moment...");
-    
-                try
-                {
-                    // Register the schema
-                    var schema = new Schema
-                    {
-                        // Need to set to null, service returns 400
-                        // if @odata.type property is sent
-                        ODataType = null,
-                        BaseType = "microsoft.graph.externalItem",
-                        Properties = new List<Property>
-                        {
-                            new Property { Name = "partNumber", Type = PropertyType.Int64, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
-                            new Property { Name = "name", Type = PropertyType.String, IsQueryable = true, IsSearchable = true, IsRetrievable = true },
-                            new Property { Name = "description", Type = PropertyType.String, IsQueryable = false, IsSearchable = true, IsRetrievable = true },
-                            new Property { Name = "price", Type = PropertyType.Double, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
-                            new Property { Name = "inventory", Type = PropertyType.Int64, IsQueryable = true, IsSearchable = false, IsRetrievable = true },
-                            new Property { Name = "appliances", Type = PropertyType.StringCollection, IsQueryable = true, IsSearchable = true, IsRetrievable = true }
-                        }
-                    };
-    
-                    await _microsoftGraphHelper.RegisterSchemaAsync(_currentConnection.Id, schema);
-                    System.Console.WriteLine("Schema registered");
-                }
-                catch (ServiceException serviceException)
-                {
-                    System.Console.WriteLine($"{serviceException.StatusCode} error registering schema:");
-                    System.Console.WriteLine(serviceException.Message);
-                    return;
-                }
-            }
+            };
+
+            await _microsoftGraphHelper.RegisterSchemaAsync(_currentConnection.Id, schema);
+            System.Console.WriteLine("Schema registered");
+        }
+        catch (ServiceException serviceException)
+        {
+            System.Console.WriteLine($"{serviceException.StatusCode} error registering schema:");
+            System.Console.WriteLine(serviceException.Message);
+            return;
+        }
+    }
     ```
 
 ## Sync items
 
 1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **Constructor** method:
 
-    ```c
-    #region PushData
-    
-            public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
-            {
-                // The SDK's auto-generated request builder uses POST here,
-                // which isn't correct. For now, get the HTTP request and change it
-                // to PUT manually.
-                var putItemRequest = _microsoftGraphClient.External.Connections[connectionId]
-                    .Items[item.Id].Request().GetHttpRequestMessage();
-    
-                putItemRequest.Method = HttpMethod.Put;
-                putItemRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(item);
-    
-                var response = await _microsoftGraphClient.HttpProvider.SendAsync(putItemRequest);
-                if (!response.IsSuccessStatusCode)
+    ```csharp
+    public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
+    {
+        // The SDK's auto-generated request builder uses POST here,
+        // which isn't correct. For now, get the HTTP request and change it
+        // to PUT manually.
+        var putItemRequest = _microsoftGraphClient.External.Connections[connectionId]
+            .Items[item.Id].Request().GetHttpRequestMessage();
+
+        putItemRequest.Method = HttpMethod.Put;
+        putItemRequest.Content = _microsoftGraphClient.HttpProvider.Serializer.SerializeAsJsonContent(item);
+
+        var response = await _microsoftGraphClient.HttpProvider.SendAsync(putItemRequest);
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new ServiceException(
+                new Error
                 {
-                    throw new ServiceException(
-                        new Error
-                        {
-                            Code = response.StatusCode.ToString(),
-                            Message = "Error indexing item."
-                        }
-                    );
+                    Code = response.StatusCode.ToString(),
+                    Message = "Error indexing item."
                 }
-            }
-    
-            #endregion
+            );
+        }
+    }
     ```
 
 2. Open the Program.cs file and add the following code after the **Main** method:
 
-    ```c
+    ```csharp
     private static async Task UpdateItemsFromDatabase()
+    {
+        if (_currentConnection == null)
+        {
+            System.Console.WriteLine("No connection selected. Please create a new connection or select an existing connection.");
+            return;
+        }
+
+        List<AppliancePart> partsToUpload = null;
+
+        using (var db = new ApplianceDbContext())
+        {
+            partsToUpload = db.Parts.ToList();
+        }
+
+        System.Console.WriteLine($"Processing {partsToUpload.Count()} add/updates");
+
+        foreach (var part in partsToUpload)
+        {
+            var newItem = new ExternalItem
             {
-                if (_currentConnection == null)
+                Id = part.PartNumber.ToString(),
+                Content = new ExternalItemContent
                 {
-                    System.Console.WriteLine("No connection selected. Please create a new connection or select an existing connection.");
-                    return;
-                }
-    
-                List<AppliancePart> partsToUpload = null;
-    
-                using (var db = new ApplianceDbContext())
+                    // Need to set to null, service returns 400
+                    // if @odata.type property is sent
+                    ODataType = null,
+                    Type = ExternalItemContentType.Text,
+                    Value = part.Description
+                },
+                Acl = new List<Acl>
                 {
-                    partsToUpload = db.Parts
-                        .ToList();
-                }
-    
-                System.Console.WriteLine($"Processing {partsToUpload.Count()} add/updates");
-    
-                foreach (var part in partsToUpload)
-                {
-                    var newItem = new ExternalItem
+                    new Acl
                     {
-                        Id = part.PartNumber.ToString(),
-                        Content = new ExternalItemContent
-                        {
-                            // Need to set to null, service returns 400
-                            // if @odata.type property is sent
-                            ODataType = null,
-                            Type = ExternalItemContentType.Text,
-                            Value = part.Description
-                        },
-                        Acl = new List<Acl>
-                        {
-                            new Acl {
-                                AccessType = AccessType.Grant,
-                                Type = AclType.Everyone,
-                                Value = _tenantId,
-                                IdentitySource = "Azure Active Directory"
-                            }
-                        },
-                        Properties = part.AsExternalItemProperties()
-                    };
-    
-                    try
-                    {
-                        System.Console.Write($"Uploading part number {part.PartNumber}...");
-                        await _microsoftGraphHelper.AddOrUpdateItem(_currentConnection.Id, newItem);
-                        System.Console.WriteLine("DONE");
+                        AccessType = AccessType.Grant,
+                        Type = AclType.Everyone,
+                        Value = _tenantId,
+                        IdentitySource = "Azure Active Directory"
                     }
-                    catch (ServiceException serviceException)
-                    {
-                        System.Console.WriteLine("FAILED");
-                        System.Console.WriteLine($"{serviceException.StatusCode} error adding or updating part {part.PartNumber}");
-                        System.Console.WriteLine(serviceException.Message);
-                    }
-                }
+                },
+                Properties = part.AsExternalItemProperties()
+            };
+
+            try
+            {
+                System.Console.Write($"Uploading part number {part.PartNumber}...");
+                await _microsoftGraphHelper.AddOrUpdateItem(_currentConnection.Id, newItem);
+                System.Console.WriteLine("DONE");
             }
+            catch (ServiceException serviceException)
+            {
+                System.Console.WriteLine("FAILED");
+                System.Console.WriteLine($"{serviceException.StatusCode} error adding or updating part {part.PartNumber}");
+                System.Console.WriteLine(serviceException.Message);
+            }
+        }
+    }
     ```
