@@ -69,8 +69,8 @@ The following example scopes the review to both direct and transitive members of
 ### Example 3: Review all users and groups assigned to a group
 
 The following example scopes the review to only direct members of the group who are either users or other groups. In this scope:
-+ The direct users are included in the review
-+ The direct groups are included in the review
++ The direct users are included in the review.
++ The direct groups are included in the review.
 + The transitive members of the groups, that is, members of nested groups, aren't included in the review.
 
 ```http
