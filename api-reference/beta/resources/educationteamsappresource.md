@@ -1,0 +1,64 @@
+---
+title: "educationTeamsAppResource resource type"
+description: "A subclass of educationResource. This resource type represents a Teams App Resource.  "
+author: "adarshgh"
+ms.localizationpriority: medium
+ms.prod: "education"
+doc_type: resourcePageType
+---
+
+# educationTeamsAppResource resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A subclass of [educationResource](educationresource.md). Teams App are type of assignment resource which correspond to an existing Teams application and allow assignments service users to use those resources through the governing application e.g. YouTube, FlipGrid. We right now have 17 such applications that assignment integrates with.
+
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|displayName|string|The display name of the resource.|
+|appId|string|Teams App ID of the application|
+|appIconWebUrl|string|URL that points to the app's icon|
+|teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams|
+|webUrl|string|URL for the app resource that can be opened in the browser|
+
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationExcelResource"
+}-->
+
+```json
+{
+  "displayName": "String",
+  "appId": "Unique String",
+  "appIconWebUrl": "String URL",
+  "teamsEmbeddedContentUrl": "String URL",
+  "webUrl": "String URL"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "educationExcelResource resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+
