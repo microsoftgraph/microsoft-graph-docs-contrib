@@ -14,7 +14,7 @@ This topic describes how you can use the Microsoft Graph connector APIs with Pos
 ## Prerequisites
 
 * Either a Microsoft account or work or school account.
-* Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program] to get a free developer subscription.
+* Access to a Microsoft 365 developer tenant. If you don't have one, you can sign up for the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) to get a free developer subscription.
 
 ## Step 1 - Fork the Microsoft Graph Postman collection
 

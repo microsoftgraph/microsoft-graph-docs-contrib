@@ -42,6 +42,7 @@ Windows Driver Update Profile
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Driver Update entity.|
+|inventorySyncStatus|[windowsDriverUpdateProfileInventorySyncStatus](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstatus.md)|Driver inventory sync status for this profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -71,7 +72,12 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "inventorySyncStatus": {
+    "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+    "lastSuccessfulSyncDateTime": "String (timestamp)",
+    "driverInventorySyncState": "String"
+  }
 }
 ```
 
