@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for subject rights request enumerated site location. This type should be used only when specified list of sites should be searched.
+Represents the properties for subject rights request enumerated site location. Use this type when you want to look for data in specific sites.
 
 Inherits from [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|urls|String collection|Collection of site url that should be included. Include the url of the site. For example https://www.contoso.com/site1|
+|urls|String collection|Collection of site URLs that should be included. Includes the URL of each site, for example, `https://www.contoso.com/site1`.|
 
 ## Relationships
 None.
