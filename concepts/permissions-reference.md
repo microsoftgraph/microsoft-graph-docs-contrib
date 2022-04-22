@@ -1469,18 +1469,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## OpenID Connect (OIDC) scopes
 
-#### Delegated permissions
-
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _email_ |    View users' email address | Allows the app to read your users' primary email address. | No | Yes |
 | _offline_access_ |    Access user's data anytime | Allows the app to read and update user data, even when they are not currently using the app.| No | Yes |
 | _openid_ |    Sign users in | By using this permission, an app can receive a unique identifier for the user in the form of the sub claim. The permission also gives the app access to the UserInfo endpoint. The openid scope can be used at the Microsoft identity platform token endpoint to acquire ID tokens. The app can use these tokens for authentication.| No | Yes |
 | _profile_ |    View users' basic profile | Allows the app to see your users' basic profile (name, picture, user name).| No | Yes |
-
-#### Application permissions
-
-None.
 
 ### Remarks
 You can use these scopes to specify artifacts that you want returned in Azure AD authorization and token requests. They are supported differently by the Azure AD v1.0 and v2.0 endpoints.
