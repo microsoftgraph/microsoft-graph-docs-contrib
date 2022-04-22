@@ -14,21 +14,26 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/customers/{id}
 ```
+
 ## Optional request headers
+
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|

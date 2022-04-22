@@ -54,9 +54,9 @@ The following table shows the properties that are required when you create the d
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`, `linux`, `unknownFutureValue`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|Policy creation date and time. This property is read-only.|
-|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time. This property is read-only.|
-|settingCount|Int32|Number of settings. This property is read-only.|
+|createdDateTime|DateTimeOffset|Policy creation date and time|
+|lastModifiedDateTime|DateTimeOffset|Policy last modification date and time|
+|settingCount|Int32|Number of settings|
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
