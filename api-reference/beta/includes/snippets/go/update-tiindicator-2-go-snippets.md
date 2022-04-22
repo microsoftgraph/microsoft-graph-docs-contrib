@@ -22,7 +22,7 @@ options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
 	H: headers,
 }
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
 
 
 ```

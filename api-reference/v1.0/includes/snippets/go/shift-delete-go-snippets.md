@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
 shiftId := "shift-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Delete(nil)
+graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Delete(nil)
 
 
 ```

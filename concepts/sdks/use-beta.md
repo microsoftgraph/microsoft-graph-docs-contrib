@@ -110,7 +110,7 @@ In order to call the beta API, you must install the [Microsoft Graph Beta SDK fo
 ```go
 import (
     msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
 )
 
 auth, err := a.NewAzureIdentityAuthenticationProviderWithScopes(...)

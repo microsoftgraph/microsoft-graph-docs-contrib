@@ -30,7 +30,7 @@ options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
+graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
 
 
 ```

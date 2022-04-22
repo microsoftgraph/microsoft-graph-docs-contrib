@@ -14,7 +14,7 @@ options := &msgraphsdk.PersonAnnualEventRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 personAnnualEventId := "personAnnualEvent-id"
-result, err := graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(options)
+graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(options)
 
 
 ```

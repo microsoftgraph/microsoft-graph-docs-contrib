@@ -44,7 +44,7 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
-|sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
+|sendDeviceOwnershipChangePushNotification|Boolean|SendDeviceOwnershipChangePushNotification will be deprecated in 06/2022 and will stop returning a value in 07/2022. A boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
 

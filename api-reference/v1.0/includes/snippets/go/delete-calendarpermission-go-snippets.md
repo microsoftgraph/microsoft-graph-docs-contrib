@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 calendarPermissionId := "calendarPermission-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Delete(nil)
+graphClient.UsersById(&userId).Calendar().CalendarPermissionsById(&calendarPermissionId).Delete(nil)
 
 
 ```

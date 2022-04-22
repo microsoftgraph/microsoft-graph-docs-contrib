@@ -22,7 +22,7 @@ options := &msgraphsdk.DeploymentRequestBuilderPatchOptions{
 	Body: requestBody,
 }
 deploymentId := "deployment-id"
-result, err := graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
+graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
 
 
 ```

@@ -17,7 +17,7 @@ options := &msgraphsdk.ExternalGroupRequestBuilderPatchOptions{
 }
 externalConnectionId := "externalConnection-id"
 externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Patch(options)
 
 
 ```

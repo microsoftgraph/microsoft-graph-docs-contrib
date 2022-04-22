@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var users = await graphClient.Users
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:wa")
 	.OrderBy("displayName")
