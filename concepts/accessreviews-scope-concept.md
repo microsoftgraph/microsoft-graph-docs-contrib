@@ -21,9 +21,11 @@ The resources to review are configured in the **scope** property of the [accessR
 
 In this article, you'll learn how to scope your access review using these three derived resource types.
 
-## Use accessReviewQueryScope to configure scope
+## Use accessReviewQueryScope and accessReviewInactiveUsersQueryScope to configure scope
 
 To configure the scope by using the **accessReviewQueryScope** type, set the values of its **query**, **queryRoot**, and **queryType** properties. For descriptions of these properties, see [accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) resource type.
+
+**accessReviewInactiveUsersQueryScope** requires all the properties of **accessReviewQueryScope** and includes an **inactiveDuration** property.
 
 ### Example 1: Review all users assigned to a group
 
@@ -64,7 +66,23 @@ The following example scopes the review to both direct and transitive members of
 }
 ```
 
-### Example 3: Review all users assigned to all Microsoft 365 groups
+### Example 3: Review all users and groups assigned to a group
+
+The following example scopes the review to only direct members of the group who are either users or other groups. In this scope:
++ The direct users are included in the review
++ The direct groups are included in the review
++ The transitive members of the groups, that is, members of nested groups, aren't included in the review.
+
+```http
+"scope": {
+        "query": "/groups/{group id}/members",
+        "queryType": "MicrosoftGraph"
+}
+```
+
+**Example scenario:** Suppose group A has three direct members - users AU1 and AU2 and group G1. Group G1 on the other hand has two members - users GU1 and GU2. Users GU1 and GU2 are therefore transitive members of the nested group G1. Only three objects are targeted in the above review, users AU1 and AU2, and group G1.
+
+### Example 4: Review all users assigned to all Microsoft 365 groups
 
 The following example scopes the review to only direct members of the group who are users.
 
@@ -81,23 +99,6 @@ The following example scopes the review to only direct members of the group who 
 ```
 
 Additionally, because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
-
-
-### Example 4: Review all users and groups assigned to all groups
-
-The following example scopes the review to only direct members of the group who are either users or other groups. In this scope:
-+ The direct users are included in the review
-+ The direct groups are included in the review
-+ The transitive members of the groups, that is, members of nested groups, aren't* included in the review.
-
-```http
-"scope": {
-        "query": "/groups/{group id}/members",
-        "queryType": "MicrosoftGraph"
-}
-```
-
-**Example scenario:** Suppose group A has three direct members - users AU1 and AU2 and group G1. Group G1 on the other hand has two members - users GU1 and GU2. Users GU1 and GU2 are therefore transitive members of the nested group G1. Only three objects are targeted in the above review, users AU1 and AU2, and group G1.
 
 ### Example 5: Review all guest users assigned to all Microsoft 365 groups
 
@@ -117,27 +118,7 @@ The following example scopes the review to direct members of all Microsoft 365 g
 
 Additionally, because this review is applied on all Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
 
-### Example 6: Review all guest users assigned to all teams
-
-The following example scopes the review to direct members of all teams who are guest users.
-
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph"
-}
-```
-    
-Additionally, because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
-
-This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 15: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-15-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
-
-### Example 7: Review all inactive guest users assigned to all Microsoft 365 groups
+#### Review all inactive guest users assigned to all Microsoft 365 groups
 
 The following example scopes the review to direct members of all Microsoft 365 who are inactive guest users.
 
@@ -156,7 +137,27 @@ The following example scopes the review to direct members of all Microsoft 365 w
 
 Additionally, because this review is applied on inactive users, use the **accessReviewInactiveUsersQueryScope** resource and specify the **@odata.type** type property with the value `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Dynamic groups and role-assignable groups aren't included in this review.
 
-### Example 8: Review all inactive guest users assigned to all Teams
+### Example 6: Review all guest users assigned to all teams
+
+The following example scopes the review to direct members of all teams who are guest users.
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+Additionally, because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
+
+This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+
+#### Review all inactive guest users assigned to all Teams
 
 The following example scopes the review to direct members of all teams who are inactive guest users.
 
@@ -175,9 +176,12 @@ The following example scopes the review to direct members of all teams who are i
 
 Additionally, because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Dynamic groups and role-assignable groups aren't included in this review.
 
-This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 14: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
-### Example 9: Review all assignment to Entitlement Management access packages
+
+---
+
+### Example 7: Review all assignment to Entitlement Management access packages
 
 ```http
 "scope": {
@@ -187,7 +191,9 @@ This review won't include B2B direct connect users in teams with shared channels
 }
 ```
 
-### Example 10: Review all service principals assigned to a privileged role
+---
+
+### Example 8: Review all service principals assigned to a privileged role
 
 ```http
 "scope": {
@@ -197,7 +203,9 @@ This review won't include B2B direct connect users in teams with shared channels
 }
 ```
     
-### Example 11: Review all users assigned to a privileged role (all active and eligible assignments included)
+### Example 9: Review all users assigned to a privileged role 
+
+#### Review all users assigned to a privileged role (all active and eligible assignments included)
 
 ```http
 "scope": {
@@ -207,7 +215,7 @@ This review won't include B2B direct connect users in teams with shared channels
 }
 ```
     
-### Example 12: Review all users with eligible assignment to a privileged role
+#### Review all users with eligible assignment to a privileged role
 
 ```http
 "scope": {
@@ -217,7 +225,7 @@ This review won't include B2B direct connect users in teams with shared channels
 }
 ```
     
-### Example 13: Review all users with active assignment to a privileged role
+#### Review all users with active assignment to a privileged role
 
 ```http
 "scope": {
@@ -227,11 +235,13 @@ This review won't include B2B direct connect users in teams with shared channels
 }
 ```
 
+---
+
 ## Use principalResourceMembershipsScope to configure scope
 
 The **principalResourceMembershipsScope** exposes the **principalScopes** and **resourceScopes** properties to support more tailored configuration options for the scope of the **accessReviewScheduleDefinition** object. The capabilities include reviewing access for multiple principals or groups of principals to multiple resources.
 
-### Example 14: Review all inactive guest users assigned to all groups
+### Example 10: Review all inactive guest users assigned to all groups
 
 The following example scopes the review to direct members of all groups who are inactive guest users. The guest users are considered inactive users when the period of their inactivity is 30 days from the start date of the access review instance.
 
@@ -256,7 +266,7 @@ The following example scopes the review to direct members of all groups who are 
 }
 ```
 
-### Example 15: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
+### Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
 
 In this example, the access review scope is all users who are members of a team, or assigned to a shared channel within the team. These members include internal users, direct and transitive users, B2B collaboration users, and B2B direct connect users.
 
@@ -293,7 +303,7 @@ To review B2B direct connect users and teams within shared channels, you must sp
 > [!NOTE]
 > Access review of B2B direct connect users and teams is only supported in single-stage access reviews and not in multi-stage access reviews.
 
-### Example 16: Review all guest users assigned to a directory role
+### Example 12: Review all guest users assigned to a directory role
 
 ```http
 "scope": {
