@@ -231,6 +231,7 @@ This resource supports:
 | refreshTokensValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) to reset.|
 | responsibilities | String collection | A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`. |
 | schools | String collection | A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`. |
+|securityIdentifier| String | Security identifier of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | showInAddressList | Boolean | `true` if the Outlook global address list should contain this user, otherwise `false`. If not set, this will be treated as `true`. For users invited through the invitation manager, this property will be set to `false`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
@@ -448,6 +449,7 @@ Here is a JSON representation of the resource
   "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["String"],
   "schools": ["String"],
+  "securityIdentifier": "String",
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["String"],
