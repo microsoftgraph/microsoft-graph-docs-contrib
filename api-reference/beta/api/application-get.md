@@ -165,7 +165,10 @@ Content-type: application/json
             "enableAccessTokenIssuance": false
         }
     },
-    "windows": null
+    "windows": {
+        "packageSid": null,
+        "redirectUris": []
+    }
 }
 ```
 

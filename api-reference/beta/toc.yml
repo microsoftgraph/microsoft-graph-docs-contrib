@@ -1561,8 +1561,23 @@ items:
             href: api/audioroutinggroup-update.md
           - name: Delete
             href: api/audioroutinggroup-delete.md
+        - name: Content sharing session
+          href: resources/contentsharingsession.md
+          items:
+          - name: List
+            href: api/call-list-contentsharingsessions.md
+          - name: Get
+            href: api/contentsharingsession-get.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
+        - name: Add large gallery view
+          href: api/call-addlargegalleryview.md
+        - name: Large gallery view operation
+          items:
+          - name: Add large gallery view operation
+            href: resources/addlargegalleryviewoperation.md
+          - name: Get large gallery view operation status
+            href: api/addlargegalleryviewoperation-get.md
       - name: Call records
         items:
         - name: Overview
@@ -10949,6 +10964,8 @@ items:
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Extract sensitivity labels
+          href: api/driveitem-extractsensitivitylabels.md
       - name: Bundles
         href: resources/bundle.md
         items:
@@ -12122,6 +12139,18 @@ items:
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
             - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -13934,6 +13963,10 @@ items:
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+          - name: Confirm safe
+            href: api/signin-confirmsafe.md
+          - name: Confirm compromised
+            href: api/signin-confirmcompromised.md
         - name: Provisioning
           href: resources/provisioningobjectsummary.md
           items:
@@ -14041,6 +14074,15 @@ items:
             href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
           - name: Get total distribution activity counts
             href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
+        - name: Microsoft Teams team activity
+          href: resources/microsoft-teams-team-usage-reports.md
+          items:
+          - name: Get team detail
+            href: api/reportroot-getteamsteamactivitydetail.md
+          - name: Get team activity counts
+            href: api/reportroot-getteamsteamactivitycounts.md
+          - name: Get team activity distribution counts
+            href: api/reportroot-getteamsteamactivitydistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
