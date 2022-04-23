@@ -58,7 +58,7 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "4c5ee71b-e6a5-4343-9e2c-4244bc7e0938",
     "deletedDateTime": null,
     "classification": "MBI",
@@ -148,6 +148,16 @@ To learn more about formulating membership rules, see [Dynamic membership rules 
 ## Other types of groups
 
 Microsoft 365 groups in Yammer are used to facilitate user collaboration through Yammer posts. This type of group can be returned through a read request, but their posts can't be accessed through the API. When Yammer posts and conversation feeds are enabled on a group, default Microsoft 365 group conversations are disabled. To learn more, see [Yammer developer API docs](https://developer.yammer.com/docs).
+
+## Group search limitations for guest users in organizations
+
+Group search capabilities allow the app to search for any groups in an organization's directory by performing queries against the `/groups` resource (for example, `https://graph.microsoft.com/beta/groups`). Both administrators and users who are members have this capability; however, guest users don't.
+
+If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific group (for example, `https://graph.microsoft.com/beta/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`); however, it can't perform queries against the `/groups` resource that potentially returns more than a single resource.
+
+With the appropriate permissions, the app can read the profiles of groups that it obtains by following links in navigation properties; for example, `/groups/{id}/members`.
+
+For more information about what guest users can do with groups, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
 
 ## Group-based licensing
 
