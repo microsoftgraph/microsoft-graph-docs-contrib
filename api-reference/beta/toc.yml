@@ -15060,9 +15060,9 @@ items:
           href: api/chatmessage-update.md
         - name: Check user access
           href: api/channel-doesuserhaveaccess.md
-        - name: List teams shared with channel
+        - name: List teams sharing a channel
           href: api/sharedwithchannelteaminfo-list.md
-        - name: Get team shared with channel
+        - name: Get team sharing a channel
           href: api/sharedwithchannelteaminfo-get.md
         - name: Unshare channel with team
           href: api/sharedwithchannelteaminfo-delete.md

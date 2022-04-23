@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [team](team.md) that is shared with a channel. A [team](team.md) can be shared with multiple channels.
+Represents a information for a [team](team.md) with which a channel is shared. A [team](team.md) can be shared multiple channels.
 
 
 Inherits from [teamInfo](../resources/teaminfo.md).
