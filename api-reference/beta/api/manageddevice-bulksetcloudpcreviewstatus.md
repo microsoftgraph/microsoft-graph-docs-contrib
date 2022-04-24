@@ -41,7 +41,7 @@ POST /deviceManagement/managedDevices/bulkSetCloudPcReviewStatus
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -51,7 +51,6 @@ The following table shows the parameters that can be used with this action.
 |reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC devices. |
 
 
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) object in the response body.
@@ -59,6 +58,8 @@ If successful, this action returns a `200 OK` response code and a [cloudPcBulkRe
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -85,9 +86,12 @@ Content-Type: application/json
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
+  "name": "manageddevicethis.bulksetcloudpcreviewstatus"
 }
 -->
 ``` http
@@ -95,15 +99,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
-    "successfulDeviceIds": [
-      "30d0e128-de93-41dc-89ec-33d84bb662a0"
-    ],
-    "failedDeviceIds": [
-      "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
-    ],
-    "notFoundDeviceIds": [],
-    "notSupportedDeviceIds": []
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
+  "successfulDeviceIds": [
+    "30d0e128-de93-41dc-89ec-33d84bb662a0"
+  ],
+  "failedDeviceIds": [
+    "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+  ],
+  "notFoundDeviceIds": [],
+  "notSupportedDeviceIds": []
 }
 ```
 

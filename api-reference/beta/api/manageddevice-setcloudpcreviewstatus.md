@@ -42,14 +42,13 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/setCloudPcReviewStatus
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC.|
-
 
 
 ## Response
@@ -59,6 +58,9 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.setcloudpcreviewstatus"
@@ -79,7 +81,9 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -49,6 +49,9 @@ If successful, this function returns a `200 OK` response code and a [cloudPcRevi
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.getcloudpcreviewstatus"
@@ -60,9 +63,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 
 ### Response
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.cloudPcReviewStatus"
+  "@odata.type": "microsoft.graph.cloudPcReviewStatus",
+  "name": "manageddevicethis.getcloudpcreviewstatus"
 }
 -->
 ``` http
