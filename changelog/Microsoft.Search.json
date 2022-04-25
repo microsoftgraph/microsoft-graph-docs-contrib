@@ -817,6 +817,32 @@
     {
       "ChangeList": [
         {
+          "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryTemplate** property to the [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta) resource.",
+          "Target": "searchQuery"
+        },
+        {
+          "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
+          "ApiChange": "Property",
+          "ChangedApiName": "trimDuplicates",
+          "ChangeType": "Addition",
+          "Description": "Added the **trimDuplicates** property to the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta) resource.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "d8d6d1b6-e860-437a-9e51-f4472b428cc7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-03-29T19:09:46.920687Z",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+        {
+      "ChangeList": [
+        {
           "Id": "b6827fe0-a520-4082-a852-93650de918d2",
           "ApiChange": "Permission",
           "ChangedApiName": "ExternalConnection.Read.All",

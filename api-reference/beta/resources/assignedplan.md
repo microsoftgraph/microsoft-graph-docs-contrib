@@ -22,8 +22,8 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Condition of the capability assignment. The possible values are `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`.|
-|service|String|The name of the service; for example, “Exchange”.|
-|servicePlanId|GUID|A GUID that identifies the service plan.|
+|service|String|The name of the service; for example, `exchange`.|
+|servicePlanId|Guid|A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
 
 
 ### capabilityStatus values
@@ -53,7 +53,7 @@ Here is a JSON representation of the resource
   "assignedDateTime": "String (timestamp)",
   "capabilityStatus": "String",
   "service": "String",
-  "servicePlanId": "GUID"
+  "servicePlanId": "Guid"
 }
 
 ```

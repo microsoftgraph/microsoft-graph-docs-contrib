@@ -11,11 +11,12 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/users/alexd@contoso.com",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
+options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
 	Body: requestBody,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).AcceptedSenders().$ref().Post(options)
+directoryObjectId := "directoryObject-id"
+graphClient.GroupsById(&groupId).AcceptedSendersById(&directoryObjectId).Post(options)
 
 
 ```

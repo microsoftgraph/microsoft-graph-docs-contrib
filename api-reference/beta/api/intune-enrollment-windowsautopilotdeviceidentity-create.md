@@ -70,6 +70,9 @@ The following table shows the properties that are required when you create the w
 |azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
 |displayName|String|Display Name|
+|deviceAccountUpn|String|Surface Hub Device Account Upn|
+|deviceAccountPassword|String|Surface Hub Device Account Password|
+|deviceFriendlyName|String|Surface Hub Device Friendly Name|
 
 
 
@@ -83,7 +86,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1077
+Content-length: 1244
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -106,7 +109,10 @@ Content-length: 1077
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
   "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 
@@ -115,7 +121,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1126
+Content-Length: 1293
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -139,7 +145,10 @@ Content-Length: 1126
   "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
   "azureAdDeviceId": "Azure Ad Device Id value",
   "managedDeviceId": "Managed Device Id value",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "deviceAccountUpn": "Device Account Upn value",
+  "deviceAccountPassword": "Device Account Password value",
+  "deviceFriendlyName": "Device Friendly Name value"
 }
 ```
 

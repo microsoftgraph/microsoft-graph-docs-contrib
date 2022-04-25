@@ -105,7 +105,10 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
     "id": "8660bf17-bf17-8660-17bf-608617bfffff",
     "userAccountType": "standardUser",
-    "osVersion": "windows11"
+    "osVersion": "windows11",
+    "windowsSettings": {
+      "language": "en-US"
+    }
   }
 }
 ```

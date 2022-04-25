@@ -69,6 +69,7 @@ Content-Type: application/json
 Content-length: 82
 
 {
+    "@odata.type": "#microsoft.graph.taskList",
     "displayName": "Travel Plan"
 }
 ```

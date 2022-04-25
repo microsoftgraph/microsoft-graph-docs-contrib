@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31bea
 [!INCLUDE [sample-code](../includes/snippets/java/get-externalgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-externalgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
