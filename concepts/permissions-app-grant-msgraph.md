@@ -20,10 +20,10 @@ Use the following instructions to grant application permissions that are exposed
 
 To complete these instructions, you need the following resources and privileges:
 
-+ A working Azure AD tenant.
-+ Privileges to create applications in the tenant. You can either authenticate as a user or as an app that can create applications in the tenant. To test these instructions, you can run your session in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman).
-+ Consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
-+ The object ID of a resource service principal that exposes app roles, and the ID of the app role to grant. In this guide, we'll use the Microsoft Graph resource service principal.
+1. A working Azure AD tenant.
+2. Privileges to create applications in the tenant. You can either authenticate as a user or as an app that can create applications in the tenant. To test these instructions, you can run your session in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman).
+3. Consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
+4. The object ID of a resource service principal that exposes app roles, and the ID of the app role to grant. In this guide, we'll use the Microsoft Graph resource service principal.
 
 > [!CAUTION]
 > The `AppRoleAssignment.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
@@ -105,9 +105,9 @@ Content-type: application/json
 
 ## Step 3: Assign an app role to the service principal
 
-In this step, we'll assign an app role that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. The app role is `AdministrativeUnit.Read.All` that's identified by ID `134fd756-38ce-4afd-ba33-e9623dbe66c2`.
+In this step, we'll assign an app role that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph in this tenant is `943603e4-e787-4fe9-93d1-e30f749aae3`. The app role `User.Read.All` is identified by ID `df021288-bdef-4463-88db-98f22de89214`.
 
-Therefore, we'll grant our app (the principal) an app role with ID `134fd756-38ce-4afd-ba33-e9623dbe66c2` that's exposed by a resource service principal with ID `943603e4-e787-4fe9-93d1-e30f749aae3`.
+Therefore, we'll grant our app (the principal) an app role with ID `df021288-bdef-4463-88db-98f22de89214` that's exposed by a resource service principal with ID `943603e4-e787-4fe9-93d1-e30f749aae3`.
 
 <!-- {
   "blockType": "request",
@@ -120,7 +120,7 @@ Content-Type: application/json
 {
     "principalId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
-    "appRoleId": "134fd756-38ce-4afd-ba33-e9623dbe66c2"
+    "appRoleId": "df021288-bdef-4463-88db-98f22de89214"
 }
 ```
 
@@ -139,7 +139,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('943603e4-e787-4fe9-93d1-e30f749aae39')/appRoleAssignedTo/$entity",
     "id": "l5eW7x0ga0-WDOntXzHatch-ol4TgO5Ph3_pURoPDwc",
     "deletedDateTime": null,
-    "appRoleId": "134fd756-38ce-4afd-ba33-e9623dbe66c2",
+    "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
     "createdDateTime": "2022-03-17T20:09:07.6830758Z",
     "principalDisplayName": "My application",
     "principalId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/943603e4-e787-4fe9-93d1-e
 
 ## Conclusion
 
-You've granted an app role to a service principal. This method of granting permissions using Microsoft Graph bypasses the consent workflow and should be used with caution.
+You've granted an app role to a service principal. This method of granting permissions using Microsoft Graph bypasses [interactive consent](/azure/active-directory/develop/application-consent-experience)
 
 ## See also
 
