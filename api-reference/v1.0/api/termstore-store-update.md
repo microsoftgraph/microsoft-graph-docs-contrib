@@ -3,7 +3,7 @@ title: "Update store"
 description: "Update the properties of a store object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: governance
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 
