@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: getCloudPcReviewStatus"
-description: "Get and check the review status of a specific Cloud PC device."
+description: "Get the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get and check the review status of a specific Cloud PC device.
+Get the review status of a specific Cloud PC device.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/getCloudPcReviewStatus
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de954929afb129392e5d9f47/getCloudPcReviewStatus
 ```
 
 

@@ -18,15 +18,14 @@ Represents the details about the review status of a Cloud PC.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inReview|Boolean| `True` if the Cloud PC is set to in review by the administrator.|
-|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
-|subscriptionId|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
-|subscriptionName|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountId|String|The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountName|String|The name of the Azure Storage account in which the Cloud PC snapshot is being saved.|
-|reviewStartDateTime|DateTimeOffset|The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|inReview|Boolean| `True` if the Cloud PC is set to in review by the administrator.|
 |restorePointDateTime|DateTimeOffset|The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
-
+|reviewStartDateTime|DateTimeOffset|The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|subscriptionId|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
+|subscriptionName|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved.|
+|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
 
 ### cloudPcUserAccessLevel values
 
@@ -36,7 +35,6 @@ Represents the details about the review status of a Cloud PC.
 |restricted|1|Users are not allowed to access the Cloud PC.|
 |unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
 
-##### CSDL
 
 ## Relationships
 None.
@@ -51,14 +49,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcReviewStatus",
+  "azureStorageAccountId": "String",
+  "azureStorageAccountName": "String",
   "inReview": "Boolean",
-  "userAccessLevel": "String",
-  "reviewStartDateTime": "String (timestamp)",
   "restorePointDateTime": "String (timestamp)",
+  "reviewStartDateTime": "String (timestamp)",
   "subscriptionId": "String",
   "subscriptionName": "String",
-  "azureStorageAccountId": "String",
-  "azureStorageAccountName": "String"
+  "userAccessLevel": "String"
 }
 ```
 

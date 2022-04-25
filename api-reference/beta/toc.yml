@@ -10196,11 +10196,11 @@ items:
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: Set Cloud PC review status
+          - name: Set review status
             href: api/manageddevice-setcloudpcreviewstatus.md
-          - name: Get Cloud PC review status
+          - name: Get review status
             href: api/manageddevice-getcloudpcreviewstatus.md
-          - name: Bulk set Cloud PCs review status
+          - name: Bulk set review status
             href: api/manageddevice-bulksetcloudpcreviewstatus.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md

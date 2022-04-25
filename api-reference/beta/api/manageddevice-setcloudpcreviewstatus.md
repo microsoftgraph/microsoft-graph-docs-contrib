@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: setCloudPcReviewStatus"
-description: "When IT admins consider a Cloud PC as suspicious, they can use this API to set the Cloud PC device in review state, they can also use it to set the Cloud PC back to normal after review."
+description: "Set the review status of a specific Cloud PC device."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When IT admins consider a Cloud PC as suspicious, they can use this API to set the Cloud PC device in review state, they can also use it to set the Cloud PC back to normal after review.
+Set the review status of a specific Cloud PC device. Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious. After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/setCloudPcReviewStatus
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de954929afb129392e5d9f47/setCloudPcReviewStatus
 Content-Type: application/json
 
 {

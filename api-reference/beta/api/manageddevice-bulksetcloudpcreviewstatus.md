@@ -1,6 +1,6 @@
 ---
 title: "managedDevice: bulkSetCloudPcReviewStatus"
-description: "Perform bulk setting Cloud PC review status for a set of Cloud PC devices with their Intune managed device IDs."
+description: "Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform bulk setting Cloud PC review status for a set of Cloud PC devices with their Intune [managed device](../resources/cloudpc.md) IDs.
+Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
