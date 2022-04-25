@@ -2,7 +2,7 @@
 title: "iosNotificationSettings resource type"
 description: "An item describing notification setting."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
   "previewVisibility": "String"
 }
 ```
+
 
 
 

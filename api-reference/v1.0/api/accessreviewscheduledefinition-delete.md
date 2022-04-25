@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Deletes an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+[!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -70,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definit
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

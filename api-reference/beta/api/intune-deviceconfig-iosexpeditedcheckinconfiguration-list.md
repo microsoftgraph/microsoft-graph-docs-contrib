@@ -2,7 +2,7 @@
 title: "List iosExpeditedCheckinConfigurations"
 description: "List properties and relationships of the iosExpeditedCheckinConfiguration objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,6 +103,7 @@ Content-Length: 1407
   ]
 }
 ```
+
 
 
 

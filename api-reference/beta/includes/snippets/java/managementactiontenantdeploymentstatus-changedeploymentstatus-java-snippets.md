@@ -23,6 +23,7 @@ graphClient.tenantRelationships().managedTenants().managementActionTenantDeploym
 		.withTenantId(tenantId)
 		.withManagementActionId(managementActionId)
 		.withManagementTemplateId(managementTemplateId)
+		.withManagementTemplateVersion(null)
 		.withStatus(status)
 		.build())
 	.buildRequest()

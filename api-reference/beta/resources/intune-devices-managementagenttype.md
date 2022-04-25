@@ -2,7 +2,7 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -34,6 +34,7 @@ Management agent type.
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
 |msSense|1024|Not yet documented|
 |intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|
+
 
 
 

@@ -2,7 +2,7 @@
 title: "Update certificateConnectorDetails"
 description: "Update the properties of a certificateConnectorDetails object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -93,6 +93,7 @@ Content-Length: 327
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
+
 
 
 

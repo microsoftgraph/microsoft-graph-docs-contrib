@@ -1,7 +1,7 @@
 ---
 title: "Delete tenantTag"
 description: "Deletes a tenantTag object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tenanttag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tenanttag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

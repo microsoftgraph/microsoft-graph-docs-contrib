@@ -18,9 +18,6 @@ Namespace: microsoft.graph
 
 Retrieve the [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) objects for a specific [accessReviewInstance](../resources/accessreviewscheduledefinition.md) pending approval by the calling user. A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
->[!NOTE]
->The default page size for this API is 100 accessReviewInstanceDecisionItem objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,6 +36,8 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 
 ## Optional query parameters
 This method supports `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Request headers
 None.
@@ -76,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

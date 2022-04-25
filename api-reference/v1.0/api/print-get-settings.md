@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve tenant-wide settings for the Universal Print service.
 
 ## Permissions

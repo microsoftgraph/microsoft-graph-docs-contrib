@@ -1,7 +1,7 @@
 ---
 title: "List tenants"
 description: "Get a list of the tenant objects and their properties."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tenant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

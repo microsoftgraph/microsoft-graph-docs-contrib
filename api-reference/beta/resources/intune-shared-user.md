@@ -2,7 +2,7 @@
 title: "user resource type"
 description: "Represents an Azure Active Directory user object."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---

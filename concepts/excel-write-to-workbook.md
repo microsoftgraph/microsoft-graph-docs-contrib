@@ -30,7 +30,7 @@ The POST body looks like this:
 {
   "index": null,
   "values": [
-    ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
+    ["alex darrow", "adarrow@tenant.onmicrosoft.com"]
   ]
 }
 ```

@@ -2,7 +2,7 @@
 title: "Create securityBaselineCategoryStateSummary"
 description: "Create a new securityBaselineCategoryStateSummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -102,6 +102,7 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

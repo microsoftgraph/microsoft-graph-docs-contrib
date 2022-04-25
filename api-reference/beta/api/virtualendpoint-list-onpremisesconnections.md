@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcOnPremisesConnections"
+title: "List onPremisesConnections"
 description: "Get a list of the cloudPcOnPremisesConnection objects and their properties."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects.
+
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Permissions
 
@@ -85,6 +87,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpconpremisesconnections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpconpremisesconnections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpconpremisesconnections-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +104,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcOnPremisesConnection)"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
+  "isCollection": true
 }
 -->
 
@@ -107,6 +118,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
       "id": "07f12770-a225-4957-9127-0d247cf4ffff",
+      "managedBy": "windows365",
+      "type": "hybridAzureADJoin",
       "displayName": "Display Name value",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
       "subscriptionName": "Subscription Name value",

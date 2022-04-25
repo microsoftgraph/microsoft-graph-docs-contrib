@@ -2,7 +2,7 @@
 title: "Create groupPolicyUploadedDefinition"
 description: "Create a new groupPolicyUploadedDefinition object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -118,6 +118,7 @@ Content-Length: 651
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

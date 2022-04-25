@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
+>**Note:** Rooms that are marked "Hidden from GAL" can't be retrieved through this endpoint.
+
 A **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
@@ -118,6 +120,14 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-rooms-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-rooms-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -241,6 +251,14 @@ GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-all-roomlists-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-all-roomlists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

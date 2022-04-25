@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 AppManagementPolicy appManagementPolicy = new AppManagementPolicy();
 appManagementPolicy.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"));
 
-graphClient.applications("{id}").appManagementPolicies().references()
+graphClient.servicePrincipals("{id}").appManagementPolicies().references()
 	.buildRequest()
 	.post(appManagementPolicy);
 

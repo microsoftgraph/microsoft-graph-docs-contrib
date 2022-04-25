@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Organization.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.ReadWrite.All |
 
@@ -73,7 +73,6 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
@@ -101,6 +100,14 @@ Content-length: 411
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-organization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

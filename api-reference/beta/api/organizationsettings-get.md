@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object, including **profileCardProperties**.
 
-This operation does not return [itemInsightsSettings](../resources/iteminsightssettings.md) through the **itemInsights** navigation property. Use [get itemInsightsSettings](iteminsightssettings-get.md) instead.
+This operation does not return [insightsSettings](../resources/insightssettings.md). Depending on the type of insights, you can get their settings by using [list itemInsights](organizationsettings-list-iteminsights.md) or [list peopleInsights](organizationsettings-list-peopleinsights.md).
+
+This operation does not return [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). To get [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), use [list microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
 
 ## Permissions
 
@@ -88,6 +90,14 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationsettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +131,7 @@ Content-type: application/json
               {
                 "languageTag": "ru-RU",
                 "displayName": "центр затрат"
-              }
+  }
             ]
           }
         ]
@@ -139,5 +149,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

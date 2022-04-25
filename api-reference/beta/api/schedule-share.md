@@ -1,7 +1,7 @@
 ---
 title: "schedule: share"
 description: "Share a schedule time range with schedule members."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -91,6 +91,14 @@ Content-type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/schedule-share-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-share-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

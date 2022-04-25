@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on cloud PCs."
+description: "View a list of all managed image resources from you Azure subscriptions. These source images can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -81,6 +81,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/cloudpcdeviceimage-getsourceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcdeviceimage-getsourceimages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcdeviceimage-getsourceimages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,7 +111,9 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
       "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+      "subscriptionDisplayName": "Subscription Display Name value"
     }
   ]
 }

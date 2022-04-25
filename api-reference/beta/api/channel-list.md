@@ -21,11 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -89,6 +89,14 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 [!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-channels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-channels-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,7 +115,6 @@ The following is the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
 
 {
   "value": [
@@ -154,7 +161,61 @@ GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 [!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-private-channels-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-private-channels-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "test private team",
+      "membershipType": "private"
+    }
+  ]
+}
+```
+
+### Example 3: List all shared channels
+
+#### Request
+
+The following example shows a request to list all shared channels.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "list_shared_channels"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels?$filter=membershipType eq 'shared'
+```
 
 
 
@@ -176,15 +237,21 @@ Content-type: application/json
 Content-length: 262
 
 {
-  "value": [
-    {
-      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
-      "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "General",
-      "description": "test private team",
-      "membershipType": "private"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2",
+            "createdDateTime": null,
+            "displayName": "shared channel-01",
+            "description": "this is the shared channel description",
+            "isFavoriteByDefault": null,
+            "email": "",
+            "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
+            "membershipType": "shared",
+            "moderationSettings": null
+        }
+    ]
 }
 ```
 
@@ -201,5 +268,3 @@ Content-length: 262
   ]
 }
 -->
-
-

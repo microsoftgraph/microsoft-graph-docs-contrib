@@ -2,7 +2,7 @@
 title: "Get remoteAssistanceSettings"
 description: "Read properties and relationships of the remoteAssistanceSettings object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,17 +63,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 227
+Content-Length: 226
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
     "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
-    "remoteAssistanceState": "disabled",
+    "remoteAssistanceState": "enabled",
     "allowSessionsToUnenrolledDevices": true
   }
 }
 ```
+
 
 
 

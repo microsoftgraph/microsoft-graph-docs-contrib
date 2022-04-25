@@ -1,7 +1,7 @@
 ---
 title: "call: redirect"
 description: "Redirect an incoming call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -160,6 +160,14 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-redirect-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

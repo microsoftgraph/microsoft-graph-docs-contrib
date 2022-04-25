@@ -2,7 +2,7 @@
 title: "deviceManagementExportJob resource type"
 description: "Entity representing a job to export a report"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -68,7 +68,6 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

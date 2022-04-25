@@ -1,7 +1,7 @@
 ---
 title: "tenant: resetTenantOnboardingStatus"
 description: "Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action. By invoking this action the platform will attempt to onboard the managed tenant for management."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenant-resettenantonboardingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenant-resettenantonboardingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -19,9 +19,9 @@ Represents a verified publisher of an [application](application.md). For more in
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
+|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 |displayName|String|The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.|
 |verifiedPublisherId|String| The ID of the verified publisher from the app publisher's Partner Center account. |
-|addedDateTime|DateTimeOffSet| The timestamp when the verified publisher was first added or most recently updated. |
 
 
 ## JSON representation
@@ -41,7 +41,6 @@ Here is a JSON representation of the resource.
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
-
 ```
 
 

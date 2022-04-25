@@ -15,7 +15,7 @@ const externalConnection = {
   description: 'Connection to index HR service tickets'
 };
 
-await client.api('/connections/contosohr')
+await client.api('/external/connections/contosohr')
 	.version('beta')
 	.update(externalConnection);
 

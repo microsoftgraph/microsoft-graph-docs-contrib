@@ -1,7 +1,7 @@
 ---
 title: "Get managedDeviceComplianceTrend"
 description: "Read the properties and relationships of a managedDeviceComplianceTrend object."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managedD
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-manageddevicecompliancetrend-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manageddevicecompliancetrend-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

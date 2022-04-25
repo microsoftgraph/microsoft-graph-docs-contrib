@@ -15,9 +15,11 @@ Namespace: microsoft.graph
  
 Represents a business in Microsoft Bookings. This is the top level object in the Microsoft Bookings API. It contains business information and related business objects such as appointments, customers, services, and staff members.
 
+Inherits from [bookingNamedEntity](bookingnamedentity.md)
+
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method  | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
@@ -32,12 +34,16 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[List services](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
 |[Create bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
 |[List staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
+|[List customQuestions](../api/bookingbusiness-list-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection|Get the **bookingCustomQuestion** resources from the **customQuestions** navigation property.|
+|[Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Create a new **bookingCustomQuestion** object.|
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
+|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) collection| Get the availability information of staff members of a Microsoft Bookings calendar.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
@@ -58,6 +64,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |appointments|[bookingAppointment](bookingappointment.md) collection| All the appointments of this business. Read-only. Nullable.|
 |calendarView|[bookingAppointment](bookingappointment.md) collection| The set of appointments of this business in a specified date range. Read-only. Nullable.|
 |customers|[bookingCustomer](bookingcustomer.md) collection| All the customers of this business. Read-only. Nullable.|
+|customQuestions|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection| All the custom questions of this business. Read-only. Nullable.|
 |services|[bookingService](bookingservice.md) collection| All the services offered by this business. Read-only. Nullable.|
 |staffMembers|[bookingStaffMember](bookingstaffmember.md) collection| All the staff members that provide services in this business. Read-only. Nullable.|
 
@@ -92,8 +99,6 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -106,5 +111,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

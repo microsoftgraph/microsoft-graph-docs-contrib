@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
 [!INCLUDE [sample-code](../includes/snippets/java/list-samlorwsfedexternaldomainfederation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-samlorwsfedexternaldomainfederation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-samlorwsfedexternaldomainfederation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

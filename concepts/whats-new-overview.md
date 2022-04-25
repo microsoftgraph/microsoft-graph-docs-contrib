@@ -12,115 +12,81 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
-## September 2021: New and generally available
 
-### Cloud communications | Online meetings
-Use `OnlineMeetingArtifact.Read.All` as delegated or application permission to read artifacts of online meetings. For more information, see [online meetings permissions](permissions-reference.md#online-meetings-permissions).
+## April 2022: New and generally available
+
+
+## April 2022: New in preview only
+
+### Teamwork
+Share a channel with one or more teams:
+- [List only channels that are shared with a team](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
+- [List all the channels in a team](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true) including those hosted in a team or shared with the team.
+- [List team members who can access a specified shared channel](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
+- [Remove a channel shared with a team](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true).
+- [List the teams that have been shared a specified channel](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
+- [Unshare a channel with a team](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
+
+
+## March 2022: New and generally available
 
 ### Files
-- Get the details of any virus detected in a [driveItem](/graph/api/resources/driveItem) through a **malware** property.
-- Use the [delta](/graph/api/driveitem-delta) function to track changes on not only the root folder but also other folders within a drive.
+Use a [bundle](/graph/api/resources/bundle) resource to share multiple files at once, much like other [driveItem](/graph/api/resources/driveitem) resources. You can apply CRUD operations on a bundle, and [add](/graph/api/bundle-additem) an item to or [remove](/graph/api/bundle-removeitem) an item from a bundle.
 
 ### Identity and access | Directory management
-- Providers of role-based access control (RBAC) can [manage roles](/graph/api/resources/rolemanagement) in Azure Active Directory, by [defining role actions](/graph/api/resources/unifiedroledefinition) that can be performed on specific resources, and [assigning roles](/graph/api/resources/unifiedroleassignment) to users based on such role definitions, giving them the corresponding access to those resources.
+Use [resource-specific permission](/graph/api/resources/resourcespecificpermission) to authorize a Teams app direct access to the data of a specific instance of a chat or team. For example, the resource-specific permission ChannelMessage.Read.Group allows a Teams app to read the channel messages of a single team.
 
-### Search | Query
-- Aggregate numeric or string type search results that are imported by [Microsoft Graph connectors](/microsoftsearch/connectors-overview) and that are set to be refinable in the [schema](/graph/api/resources/schema). See more information about [refining search results using aggregations](search-concept-aggregation.md).
-- [Sort](/graph/api/resources/search-api-overview#sort-search-results) search results for OneDrive and SharePoint on any sortable property. For more information, see [Use the Microsoft Search API to sort search results](search-concept-sort.md).
+### Identity and access | Governance
+- [Get](/graph/api/approval-get) [approval](/graph/api/resources/approval) decisions associated with a [request for access package assignment](/graph/api/resources/accesspackageassignmentrequest).
+- As part of [Azure Active Directory (Azure AD) entitlement management](/graph/api/resources/entitlementmanagement-overview), use an [access package assigment policy](/graph/api/resources/accesspackageassignmentpolicy) to manage a request, approval, assignment, or regular review to an [access package](/graph/api/resources/accesspackage). You can govern internal and external users' access to groups, applications, and SharePoint Online sites of an organization.
 
-### Teamwork
-- Use a single action [provisionEmail](/graph/api/channel-provisionemail) to get the email address of a [channel](/graph/api/resources/channel) if one exists, or create one otherwise. Use the [removeEmail](/graph/api/channel-removeemail) action to remove the email address.
-
-### Workbooks and charts
-Create table rows asynchronously. For better performance, a good practice to create multiple table rows is to batch them in one [create tableRow](/graph/api/table-post-rows) operation and carry out the operation asynchronously. Follow with the [GET workbookOperation](/graph/api/workbookoperation-get) operation and [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult) function to get the new [workbookTableRow](/graph/api/resources/workbooktablerow) resource.
+### Identity and access | Identity and sign-in
+Specify the [inclusion or exclusion of client applications](/graph/api/resources/conditionalaccessclientapplications) as among a [set of conditions](/graph/api/resources/conditionalAccessConditionSet) to apply a [conditional access policy](/graph/api/resources/conditionalaccesspolicy).
 
 
-## September 2021: New in preview only
+## March 2022: New in preview only
 
-### Cloud communications | Online meetings
-Get the total participant count in a [meeting attendance report](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
+### Cloud communications | Online meeting
+Specify one or more [meeting participants](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) as co-organizer.
 
 ### Compliance | eDiscovery
-The [create case](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-view=true) operation always creates cases in large format. This expands the case size limit to accommodate a higher total data volume and total number of items. For details, see [benefits of large cases](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide&preserve-view=true#benefits-of-large-cases).
+[Purge data](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true) and permanently delete Microsoft Teams messages from an eDiscovery [source collection](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true).
 
-### Devices and apps | Cloud PC
-- [Reprovision a Cloud PC](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) as a cloud-managed virtual desktop enrolled into Intune.
-- [Resize a Cloud PC](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) by either upgrading or downgrading it to another configuration with a new virtual CPU (vCPU) and storage size.
+### Device and app management | Cloud PC
+- Use delegated or application permissions of `RoleManagement.Read.CloudPC` for the read operations of the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) resource.
+- Use delegated or application permissions of `RoleManagement.ReadWrite.CloudPC` for the read and write operations of the [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) resource.
+- Specify the ID and display name of an Azure subscription as part of the information for a [source image for a device](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true).
+- Specify [Windows settings](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) to configure when creating Cloud PCs for a [provisioning policy](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true).
 
-### Education
-Support for adding assignments to only students' calendars if you use the `Prefer: include-unknown-enum-members` request header for operations on the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) or [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true) resource.
+### Device and app management | Corporate management
+- Intune March updates for the beta version.
 
-### Identity and access | Governance
-[Delete](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true) an [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) to remove a denied or completed request.
+### Device and app management | Multi-tenant management
+[List](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) audit events for managed tenants in Microsoft 365 Lighthouse.
 
-### Identity and access | Identity and sign-in
-Allow users to perform multi-factor authentication using a [software OATH token](/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta&preserve-view=true). A software OATH token is a software-based number generator that uses the OATH Time-Based One Time Password (TOTP) standard.
+### Identity and access | Directory management
+- [List](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) [settings](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true) that specify access from Microsoft applications to Microsoft 365 data belonging to users in an organization. For example, given the proper authorization, whether only Microsoft 365 apps (such as Word and Excel) can access users' Microsoft 365 data, or whether other Microsoft apps (such as Windows) can access the data as well. By default, all users in an organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access. 
+- Following the Zero Trust cybersecurity model, Microsoft partners can use [granular delegated admin privileges (GDAP)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) to carry out administrative tasks with least-privileged access to their customer tenants, to avoid potential security exposures. Instead of requesting Global Administrator role as in the past, partners request specific roles for customer tenant administration for a definite amount of time, and their customers must explicitly grant the least-privileged access to them.
 
+### Security | Attack simulation and training
+- [List simulation automations](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true) for a tenant.
+- [List runs](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true) of simulation automations for a tenant.
 
-## August 2021: New and generally available
+### Search
+- Specify in a [search request](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) whether to trim away the duplicate SharePoint files from search results. The default is false.
+- Qualify a [search query](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) string with a template, which supports KQL and query variables.
 
-### Cloud communications | Calls
-A [participant](/graph/api/resources/participant) can include metadata as a blob of data in the roster for a [call](/graph/api/resources/call).
+### Sites and lists
+- For a [column](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) that contains taxonomy data, specify the parent [term](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) and [term set](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) for which the child terms can be selected as column values.
+- Get the settings for a [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true), including its language and time zone.
 
-### Cloud communications | Online meetings
-- Create an [online meeting](/graph/api/resources/onlinemeeting) as a live event, configuring [broadcast settings](/graph/api/resources/broadcastMeetingSettings) and [meeting participant info](/graph/api/resources/meetingparticipantinfo) with the role of producer. See an [example](/graph/api/application-post-onlinemeetings#example-2-create-a-live-event-with-user-token).
-- Enable, disable, or limit duration of chat for an online meeting by using the **allowMeetingChat** property.
-- Enable or disable reactions for an online meeting, by using the **allowTeamworkReactions** property.
-- Allow an attendee to turn on their camera or microphones by using the **allowAttendeeToEnableCamera** or **allowAttendeeToEnableMic** property respectively.
-
-### Cloud communications | Presence
-- [Set the state of a user's presence](/graph/api/presence-setpresence) which is an aggregated state on each Teams client (desktop, mobile, or web).
-- [Clear the presence session](/graph/api/presence-clearpresence) for a user.
-
-
-### Devices and apps | Corporate management
-Intune monthly updates for the v1.0 version. Set the **Date** filter for August, 2021, and look for a section with this same heading.
-
-### Devices and apps | Service health and communications
-GA of the [service communications API](service-communications-concept-overview.md) in Microsoft Graph to access the health status and message center posts about Microsoft cloud services.
-
-### Identity and access | Governance
-Get a collection of access review scopes that is used to define reviewers and fallback reviewers for an [instance of access reviews](/graph/api/resources/accessReviewInstance).
-
-### Sites and lists | Taxonomy
-Access the SharePoint [term store](/graph/api/resources/termstore-store) taxonomy, the hierarchy that consists of [group](/graph/api/resources/termstore-group), [set](/graph/api/resources/termstore-set), and [term](/graph/api/resources/termstore-term) resources, and [relation](/graph/api/resources/termstore-relation) resources between terms.
+### Tasks and plans
+Identify if a Planner plan intended for experiences outside of Planner (such as Microsoft Teams) can track work in that context, by checking the **details** relationship of the corresponding  [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Teamwork
-[List chats](/graph/api/chat-list) that a user is part of, in a delegated context.
+- Get or set [summary information](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true) about a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), including the count of owners, members, and guests.
+- Sort messages in descending order when [listing messages in a chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
 
-## August 2021: New in preview only
-
-### Cloud communications | Calls
-- Put a [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) on hold and play music in the background, by using the [startHoldMusic](/graph/api/participant-startHoldMusic?view=graph-rest-beta&preserve-view=true) action.
-- Reincorporate a participant previously put on hold to a call, by using the [stopHoldMusic](/graph/api/participant-stopHoldMusic?view=graph-rest-beta&preserve-view=true) action.
-
-### Cloud communications | Online meetings
-Set an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to record automatically.
-
-### Devices and apps | Cloud PC
-[End the grace period](/graph/api/cloudPC-endGracePeriod?view=graph-rest-beta&preserve-view=true) for a Cloud PC. The grace period lets users access Cloud PCs up to seven days before de-provisioning occurs. Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
-
-### Devices and apps | Corporate management
-Intune monthly updates for the beta version. Set the **Date** filter for August, 2021, and look for a section with this same heading.
-
-### Identity and access | Governance
-- [Reprocess](/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-beta&preserve-view=true) an [access package assignment request](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) to automatically retry a user's request for access to the package.
-- [Reprocess](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true) an [access package assignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true) to automatically re-evaluate and enforce a user's assignments.
-- [Get a set of policy requirements](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true) to create an [assignment request for an access package](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true).
-- Get a collection of [access review reviewer](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true) resources that is used to define reviewers contacted for an [instance of access reviews](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true).
-- Get or set the duration of inactivity that recommendations are configured from in the [schedule settings of an access review](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true), by using the **recommendationLookBackDuration** property.
-
-### Identity and access | Identity and sign-in
-- Organizations can use [policies to enforce best practices for apps using application authentication methods](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Such policies can apply to [specific applications and service principals](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true), or to [all applications and service principals in a tenant](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
-- Support for paging on the **appRoleAssignments** navigation property for [users](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true), [groups](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true), and [service principals](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true).
-- Allow an Azure Active Directory (Azure AD) tenant to set up [federation with another organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol](/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta&preserve-view=true). This enables the Azure AD tenant to allow guest users to access its resources.
-
-### Teamwork
-- Get [information about an online meeting](/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta&preserve-view=true) that is associated with a [chat](/api/resources/chat?view=graph-rest-beta&preserve-view=true).
-- Get the identifier of the tenant in which a **chat** is created.
-
-### Users
-Use the last interactive and non-interactive sign-in date/time values of users' [signInActivity](/graph/api/resources/signInActivity?view=graph-rest-beta&preserve-view=true) to [manage inactive accounts](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).
 
 ## Want to stay in the loop?
 

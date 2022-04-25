@@ -2,7 +2,7 @@
 title: "deviceManagementConfigurationWindowsSkus enum type"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -35,6 +35,7 @@ Not yet documented
 |holographicForBusiness|12|Not yet documented|
 |windowsMultiSession|13|Not yet documented|
 |surfaceHub|14|Not yet documented|
+
 
 
 

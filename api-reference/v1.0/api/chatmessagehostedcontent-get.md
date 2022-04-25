@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -103,6 +103,14 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontentchatmessage-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentchatmessage-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentchatmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
