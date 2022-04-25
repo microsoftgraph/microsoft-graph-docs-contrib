@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Invite participants to the active call.
 
-For more information about how to handle operations, see [commsoperation](../resources/commsoperation.md).
+For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.
 
@@ -515,7 +515,7 @@ Content-Type: application/json
 
 ```
 
-### Example 3: Invite participants to a an existing group call, replacing an existing Peer-to-Peer call
+### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
 
 
 The invite API supports only one participant when replacing an existing peer-to-peer call. 
@@ -917,16 +917,18 @@ Content-Type: application/json
 
 >**Note:** With a `completed` status, you can expect to receive notifications about how your original peer-to-peer call has been terminated and deleted.
 
-### Example 5: Moving a participant to a different meeting
+### Example 5: Move one participant from one meeting to another
 
-A participant can be moved from one meeting to another meeting, given that these two meetings are created by the same application.
-For more information about how to create an online meetings, see [create onlineMeeting](/graph/application-post-onlinemeetings).
+You can move one participant from one meeting to another if these two meetings have been created by the same application.
+For more information about how to create an online meeting, see [Create onlineMeeting](/graph/application-post-onlinemeetings).
 
 > **Note:** The invite API supports only one participant when moving between calls.
 > When multiple participants are provided in the request body, only the first participant 
 > will be read and the rest of the participants will be ignored.
 
 #### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -956,12 +958,16 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
   "truncated": "true",
-  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation",
+  "name": "participant-invite-move"
 }-->
 
 ``` http
