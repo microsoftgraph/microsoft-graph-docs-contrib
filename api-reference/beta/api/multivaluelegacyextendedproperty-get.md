@@ -3,7 +3,7 @@ title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: outlook
 author: "abheek-das"
 ---
 
