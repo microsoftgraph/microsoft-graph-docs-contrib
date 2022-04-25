@@ -3,7 +3,7 @@ title: "Get store"
 description: "Read the properties and relationships of a store object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: governance
 doc_type: apiPageType
 ---
 

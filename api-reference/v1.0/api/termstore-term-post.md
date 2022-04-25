@@ -3,7 +3,7 @@ title: "Create term"
 description: "Create a new term object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: governance
 doc_type: apiPageType
 ---
 
