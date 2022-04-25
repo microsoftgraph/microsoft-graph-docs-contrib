@@ -191,7 +191,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals()
 ```
 
 #### Response
