@@ -161,6 +161,14 @@ Content-Type: image/jpeg
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Objective-C](#tab/objc)
+
+# [Java](#tab/java)
+
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
 ---
 
 

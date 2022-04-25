@@ -162,6 +162,10 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStand
 [!INCLUDE [sample-code](../includes/snippets/java/user-supportedtimezones-iana-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+
+# [PowerShell](#tab/powershell)
+
 ---
 
 
