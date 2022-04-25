@@ -10,7 +10,7 @@ In this step, you'll create a .NET Core console app. After that, you will create
 
 1. Launch Visual Studio 2019 and go to **File** > **New** > **Project**.
 2. Select the **Console App (.NET Core)** template, and then select **Next**.
-3. Enter the **Project name**: "PartsInventoryConnector".
+3. Enter the **Project name**: PartsInventoryConnector.
 4. Select the checkbox for **Place solution and project in the same directory**, and then select **Create**.
 
    ![Screenshot of the "Configure your new project" section](../images/connectors-images/build7.png)

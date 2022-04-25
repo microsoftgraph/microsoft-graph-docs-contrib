@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 In this step, you will build and run the sample. This code sample will create a new connection, register the schema, and then push items from the [ApplianceParts.csv](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv) file into that connection.
 
-1. Open your command-line interface (CLI) in the PartsInventoryConnector directory.
+1. Open your command-line interface (CLI) in the **PartsInventoryConnector** directory.
 2. Use the command `dotnet build` to build the sample.
 3. Use the command `dotnet run` to run the sample.
 4. Select **1. Create a connection**. Enter a unique identifier, name, and description for that connection.
