@@ -1,6 +1,6 @@
 ---
 title: "Add Named Item"
-description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
+description: Learn how to add a new name to the collection of the given scope using the user's locale for the formula."
 ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: profile
