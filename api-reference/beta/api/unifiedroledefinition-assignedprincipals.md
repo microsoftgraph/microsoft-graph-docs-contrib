@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='<guid>')
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(directoryScope='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
 ```
 
 #### Response
