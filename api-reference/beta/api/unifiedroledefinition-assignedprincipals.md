@@ -77,7 +77,7 @@ The following table shows the parameters that can be used with this function.
 
 You can also combine all the supported function parameters in one request for fine-grained results.
 
-### directoryScopeType
+### Example query patterns for directoryScopeType
 
 |Scope|Query|Supported for|
 |:---|:---|:---|
