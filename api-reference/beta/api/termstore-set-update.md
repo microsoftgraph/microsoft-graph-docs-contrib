@@ -3,7 +3,7 @@ title: "Update set"
 description: "Update the properties of a set object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: sharepoint
 doc_type: apiPageType
 ---
 

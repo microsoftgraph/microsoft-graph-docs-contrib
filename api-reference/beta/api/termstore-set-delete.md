@@ -3,7 +3,7 @@ title: "Delete set"
 description: "Delete a set object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
