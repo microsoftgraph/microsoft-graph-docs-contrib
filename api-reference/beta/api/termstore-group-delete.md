@@ -3,7 +3,7 @@ title: "Delete group"
 description: "Delete a group object in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: ms-graph
+ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
