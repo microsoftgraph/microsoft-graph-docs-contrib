@@ -3,112 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of ExternalConnection.Read.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of ExternalConnection.ReadWrite.All to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalConnection",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of ExternalConnection.ReadWrite.OwnedBy to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of ExternalItem.ReadWrite.OwnedBy to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of ExternalItem.Read.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of ExternalItem.ReadWrite.All to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        },
-        {
-          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-          "ApiChange": "Permission",
-          "ChangedApiName": "externalItem",
-          "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of externalItem.ReadWrite.OwnedBy to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
-          "Target": "externalConnection"
-        }
-      ],
-      "Id": "b6827fe0-a520-4082-a852-93650de918d2",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2022-04-13T00:00:00",
-      "WorkloadArea": "Search",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
           "ApiChange": "Property",
           "ChangedApiName": "state",
@@ -919,6 +813,330 @@
       "CreatedDateTime": "2021-12-01T23:34:36.128237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
-    }    
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalConnection.Read.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalConnection.ReadWrite.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.Read.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.OwnedBy",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.OwnedBy` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalConnection.Read.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) resource.",
+          "Target": "schema"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalConnection.ReadWrite.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) resource.",
+          "Target": "schema"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.Read.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) resource.",
+          "Target": "schema"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) resource.",
+          "Target": "schema"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalConnection.ReadWrite.OwnedBy",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.OwnedBy` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) resource.",
+          "Target": "schema"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalItem.Read.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.Read.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0) resource.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `ExternalItem.Read.All` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.Read.All` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [identity](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-identity?view=graph-rest-1.0) resource.",
+          "Target": "identity"
+        },
+        {
+          "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+          "ChangeType": "Addition",
+          "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [identity](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-identity?view=graph-rest-1.0) resource.",
+          "Target": "identity"
+        }
+      ],
+      "Id": "b6827fe0-a520-4082-a852-93650de918d2",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-13T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `ExternalConnection.Read.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `ExternalConnection.ReadWrite.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.Read.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.All` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.OwnedBy",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.OwnedBy` to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+            "Target": "externalConnection"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `ExternalConnection.Read.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource.",
+            "Target": "schema"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `ExternalConnection.ReadWrite.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource.",
+            "Target": "schema"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.Read.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource.",
+            "Target": "schema"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.All` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource.",
+            "Target": "schema"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalConnection.ReadWrite.OwnedBy",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalConnection.ReadWrite.OwnedBy` to the [schema](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-schema?view=graph-rest-beta) resource.",
+            "Target": "schema"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `ExternalItem.Read.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta) resource.",
+            "Target": "externalItem"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.Read.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.Read.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta) resource.",
+            "Target": "externalItem"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta) resource.",
+            "Target": "externalItem"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta) resource.",
+            "Target": "externalItem"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta) resource.",
+            "Target": "externalGroup"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta) resource.",
+            "Target": "externalGroup"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.All` to the [identity](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-identity?view=graph-rest-beta) resource.",
+            "Target": "identity"
+          },
+          {
+            "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+            "ApiChange": "Permission",
+            "ChangedApiName": "ExternalItem.ReadWrite.OwnedBy",
+            "ChangeType": "Addition",
+            "Description": "Added support for the delegated permission `ExternalItem.ReadWrite.OwnedBy` to the [identity](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-identity?view=graph-rest-beta) resource.",
+            "Target": "identity"
+          }
+      ],
+      "Id": "ae20516b-1d3d-4f42-8f2d-a65c00bffc4f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-13T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }
   ]
 }
