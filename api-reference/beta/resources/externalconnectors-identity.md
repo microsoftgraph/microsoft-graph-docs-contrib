@@ -26,7 +26,7 @@ Represents an identity used to set permissions on external content added to Micr
 | Property       | Type                    | Description                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
 | id             | String                  | The unique ID of the identity. It would be the objectId property in case of Azure Active Directory (Azure AD) users or groups and the **id** property of the **externalGroup** in the case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.externalGroup | The type of identity. Possible values are: `user` or `group` for Azure AD identities and `externalgroup` for groups in an external system. |
+| type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group` for Azure AD identities and `externalgroup` for groups in an external system. |
 
 ## Relationships
 

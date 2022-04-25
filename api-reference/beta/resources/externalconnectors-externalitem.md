@@ -38,7 +38,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Relationships
 | Relationship | Type                                                     | Description |
 |:-------------|:---------------------------------------------------------|:---|
-| activities        | [microsoft.graph.externalConnectors.externalActivityBase](externalconnectors-externalActivity.md) collection               | Write-only property. Returns results. |
+| activities        | [microsoft.graph.externalConnectors.externalActivityBase](externalconnectors-externalactivitybase.md) collection               | Write-only property. Returns results. |
 
 ## JSON representation
 

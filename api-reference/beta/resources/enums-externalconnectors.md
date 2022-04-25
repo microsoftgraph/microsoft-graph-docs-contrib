@@ -89,6 +89,14 @@ Namespace: microsoft.graph.externalConnectors
 | azureActiveDirectory
 | external
 
+### identityType values
+
+| Member
+|:--------------
+| user
+| group
+| externalGroup
+| unknownFutureValue
 
 ### label values
 
@@ -124,7 +132,7 @@ Namespace: microsoft.graph.externalConnectors
 | dateTimeCollection
 | unknownFutureValue
 
-### ruleOperation values 
+### ruleOperation values
 
 |Member|
 |:---|
