@@ -3,7 +3,6 @@ title: "Get multiValueLegacyExtendedProperty"
 description: "expand`."
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
 doc_type: apiPageType
 ---
 
