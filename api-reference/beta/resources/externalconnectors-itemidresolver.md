@@ -21,7 +21,7 @@ Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|itemId|String|Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](..api-reference\beta\resources\externalconnectors-urlmatchinfo.md) can be referenced by inserting the group name inside curly brackets.|
+|itemId|String|Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](../resources/externalconnectors-urlmatchinfo.md) can be referenced by inserting the group name inside curly brackets.|
 |priority|Int32|Priority of each urlToItemResolverBase instance. Inherited from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).|
 |urlMatchInfo|[microsoft.graph.externalConnectors.urlMatchInfo](../resources/externalconnectors-urlmatchinfo.md)|Configurations to match and resolve URL.|
 

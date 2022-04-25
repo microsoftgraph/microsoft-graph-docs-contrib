@@ -1,10 +1,10 @@
 ---
 title: "externalItem: addActivities"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Append additional instances of externalActivity on an an externalitem."
+author: "sacampbe-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "search"
+doc_type: resourcePageType
 ---
 
 # externalItem: addActivities
@@ -12,16 +12,15 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Append additional instances of [microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) on an an [externalitem](../resources/externalconnectors-externalitem.md).
 
-## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported                               |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                 |
 
 ## HTTP request
 
@@ -46,13 +45,15 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|**TODO: Add Description**|
+|activities|[microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) collection|Collection of activities involving an **externalItem**|
 
 
 
 ## Response
 
 If successful, this action returns a `200 OK` response code and a collection of [externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
+
+If a 207 response is returned, it indicates only some of the added externalActivity instances were successfully processed. The caller should inspect the response payload looking at each externalActivityResult's error field to determine why the externalActivity instances was not processed and what action can be taken. If the error field is null, that indicates a successful externalActivityResult.
 
 ## Examples
 
@@ -104,4 +105,3 @@ Content-Type: application/json
   ]
 }
 ```
-

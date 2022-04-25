@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collects the settings for the pattern that a URL must follow to be processed by an instance of [urlToItemResolverBase](..resources/externalconnectors-urltoitemresolverbase.md)
+Collects the settings for the pattern that a URL must follow to be processed by an instance of [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md)
 
 ## Properties
 |Property|Type|Description|
