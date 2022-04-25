@@ -31,7 +31,7 @@ To learn more, including how to choose permissions, see [Permissions](/graph/per
 
 ### Read group membership
 
-These permissions are required for transitive assignment queries.
+These permissions are required for transitive role assignment queries.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -138,10 +138,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0
 
 #### Response
 
-The above request will return a count of 6 representing the following assignments:
-+ Two direct assignments to User1 at Scope1 and Scope2
-+ Two transitive assignments to User1 through Group1 and Group2
-+ Two transitive assignments to User 2 and User3 through Group3.
+The above request will return a count of 6 representing the following role assignments:
++ Two direct role assignments to User1 at Scope1 and Scope2
++ Two transitive role assignments to User1 through Group1 and Group2
++ Two transitive role assignments to User 2 and User3 through Group3.
 
 <!-- {
   "blockType": "response"
