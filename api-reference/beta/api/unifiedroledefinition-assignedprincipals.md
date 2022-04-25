@@ -1,5 +1,5 @@
 ---
-title: "List assignedPrincipals"
+title: "unifiedRoleDefinition: assignedPrincipals"
 description: "Get the list of principals (users and groups) directly or transitively assigned to a specific role for different scopes."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
@@ -7,14 +7,14 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List assignedPrincipals
+# unifiedRoleDefinition: assignedPrincipals
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of principals (users and groups) directly or transitively assigned to a specific role for different scopes. You can use the `count` query parameter to also get the count.
+Get the list of principals (users and groups) that are assigned to a specific role for different scopes either directly or transitively. You can use the `$count` query parameter to also get the count.
 
-If you want to list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
+To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
 ## Permissions
 One of the following permissions is required to call this API. At a minimum, a caller must have the `RoleManagement.Read.Directory` permission for queries. If the caller does not have permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects) pattern.
@@ -25,9 +25,9 @@ To learn more, including how to choose permissions, see [Permissions](/graph/per
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All|
+|Delegated (work or school account)|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All|
+|Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 
 ### Read group membership
 
@@ -62,7 +62,7 @@ These permissions are required for transitive assignment queries.
 }
 -->
 ``` http
-GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(transitive=Boolean,directoryScopeType='parameterValue',directoryScopeId='parameterValue')
+GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals()
 ```
 
 ## Function parameters
@@ -72,23 +72,25 @@ The following table shows the parameters that can be used with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |transitive|Boolean|Indicates whether to include principals assigned through group membership (direct or transitive). `false` by default.|
-|directoryScopeType|String|Directory scope type to get assigned principals for. Supported values are `tenant`, `administrativeUnit`, and `resource`.|
+|directoryScopeType|String|The directory scope to get assigned principals for. Supported values are `tenant`, `administrativeUnit`, and `resource`.|
 |directoryScopeId|String|ID of the directory scope to get assigned principals for. By default, all scopes are considered.|
 
-### directoryScopeType
+You can also combine all the supported function parameters in one request for fine-grained results.
+
+### Example query patterns for directoryScopeType
 
 |Scope|Query|Supported for|
 |:---|:---|:---|
-|All scopes|`assignedPrincipals(transitive=true\|false)`|All roles|
-|Tenant scope|`assignedPrincipals(directoryScopeType='tenant', transitive=true\|false)`|All roles|
-|All administrative unit scopes|`assignedPrincipals(directoryScopeType='administrativeUnit', transitive=true\|false)`|Directory roles|
-|Specific administrative unit scope|`assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='<guid>', transitive=true\|false)`|Directory roles|
-|All resource scopes|`assignedPrincipals(directoryScopeType='resource', transitive=true\|false)`|Directory roles|
-|Specific resource scope|`assignedPrincipals(directoryScopeType='resource', directoryScopeId ='<guid>', transitive=true\|false)`|Directory roles|
+|All scopes|`/assignedPrincipals(transitive={true | false})`|All roles|
+|Tenant scope|`/assignedPrincipals(directoryScopeType='tenant', transitive={true | false})`|All roles|
+|All administrative unit scopes|`/assignedPrincipals(directoryScopeType='administrativeUnit', transitive={true | false})`|Directory roles|
+|Specific administrative unit scope|`/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='{roleDefinitionId | templateId}', transitive={true | false})`|Directory roles|
+|All resource scopes|`/assignedPrincipals(directoryScopeType='resource', transitive={true | false})`|Directory roles|
+|Specific resource scope|`/assignedPrincipals(directoryScopeType='resource', directoryScopeId ='{roleDefinitionId | templateId}', transitive={true | false})`|Directory roles|
 
 ## Optional query parameters
 
-This method supports the `$count` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count` OData query parameter to help customize the response. You can also filter by OData casts, for example, `microsoft.graph.user` and `microsoft.graph.group`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -121,10 +123,15 @@ For the examples in this section, consider the following role assignment scenari
 + User2 is member of the Group3 group and Group3 is assigned the Role1 role at Scope3 scope.
 + User3 is member of the Group3 group and Group3 is assigned the Role1 role at Scope3 scope.
 
-### Example 1: Get direct and transitive assigned principal counts for all scopes
+### Example 1: Get a count of direct and transitive assigned principals for all scopes
 
 #### Request
 
+<!-- {
+  "blockType": "ignored",
+  "name": "unifiedroledefinition_assignedprincipals_count"
+}
+-->
 ```http
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count
 ```
@@ -227,7 +234,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Get directly assigned users only for a particular scope
+### Example 4: Get directly assigned users only for a tenant-wide scope
 
 #### Request
 <!-- {
