@@ -136,14 +136,21 @@ For the examples in this section, consider the following role assignment scenari
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count
 ```
 
-| Example | Count |
-| --- | ---|
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/$count` | 4<br/>(User1, Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/$count` | 6<br/>(User1, User2, User3, Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/microsoft.graph.user/$count` | 1<br/>(User1) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/microsoft.graph.user/$count` | 3<br/>(User1, User2, User3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=false)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
-| `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/b0f54661-2d74-4c50-afa3-1ec803f12efe/assignedPrincipals(transitive=true)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+#### Response
+
+The above request will return a count of 6 representing the following assignments:
++ Two direct assignments to User1 at Scope1 and Scope2
++ Two transitive assignments to User1 through Group1 and Group2
++ Two transitive assignments to User 2 and User3 through Group3.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+
+6
 
 
 
