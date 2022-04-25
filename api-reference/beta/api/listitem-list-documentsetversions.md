@@ -1,6 +1,6 @@
 ---
 title: "List documentSetVersions"
-description: "Get the documentSetVersion resources from the documentSetVersions navigation property."
+description: "Get a list of the versions of a document set item in a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [documentSetVersion](../resources/documentsetversion.md) resources from the **documentSetVersions** navigation property.
+Get a list of the versions of a document set item in a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

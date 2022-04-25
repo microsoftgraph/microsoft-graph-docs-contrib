@@ -14652,20 +14652,20 @@ items:
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: List versions
-          href: api/listitem-list-versions.md
-        - name: List document set versions
-          href: api/listitem-list-documentsetversions.md
-        - name: Create document set version
-          href: api/listitem-post-documentsetversions.md
+          href: api/listitem-list-versions.md        
       - name: Document set version
         items:
         - name: Document set version
           href: resources/documentsetversion.md
-        - name: Get document set version
+        - name: List
+          href: api/listitem-list-documentsetversions.md
+        - name: Create
+          href: api/listitem-post-documentsetversions.md
+        - name: Get
           href: api/documentsetversion-get.md
-        - name: Delete document set version
+        - name: Delete
           href: api/documentsetversion-delete.md
-        - name: Restore document set version
+        - name: Restore
           href: api/documentsetversion-restore.md
       - name: Pages
         items:
