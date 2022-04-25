@@ -3,7 +3,7 @@ title: "Get term"
 description: "Read the properties and relationships of a term object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: governance
 doc_type: apiPageType
 ---
 

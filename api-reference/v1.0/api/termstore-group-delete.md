@@ -3,7 +3,7 @@ title: "Delete  group"
 description: "Delete a group object in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: governance
 doc_type: apiPageType
 ---
 

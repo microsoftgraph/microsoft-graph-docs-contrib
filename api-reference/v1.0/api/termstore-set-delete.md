@@ -3,7 +3,7 @@ title: "Delete set"
 description: "Delete a set object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: governance
 doc_type: apiPageType
 ---
 
