@@ -4,7 +4,8 @@ ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
 description: "Remove access to a DriveItem."
-ms.prod: ""
+ms.prod: profile
+ms.technology: microsoft-graph
 doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
