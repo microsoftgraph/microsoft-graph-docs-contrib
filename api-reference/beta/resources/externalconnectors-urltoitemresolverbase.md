@@ -1,6 +1,6 @@
 ---
 title: "urlToItemResolverBase resource type"
-description: "**Defines the rules for resolving a given URL to a connector item."
+description: "Defines the rules for resolving a given URL to a connector item."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -14,7 +14,8 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pattern that specifies how to form the ID of the external item that the URL represents. The named groups from the regular expression in urlPattern within the [urlMatchInfo](..resources/externalconnectors-urltoitemresolverbase.md) can be referenced by inserting the group name inside curly brackets.
+Defines the rules for resolving a URL to the ID of an [externalItem](microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md).
+
 This is an abstract type.
 
 ## Properties
