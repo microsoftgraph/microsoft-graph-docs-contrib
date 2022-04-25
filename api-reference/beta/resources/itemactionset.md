@@ -5,7 +5,8 @@ ms.date: 09/14/2017
 title: ItemActionSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: w10
+ms.technology: microsoft-graph
 ---
 
 # ItemActionSet resource type

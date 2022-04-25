@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: RestoreAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: w10
 ---
 # RestoreAction resource type
 

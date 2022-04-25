@@ -3,7 +3,7 @@ title: "networkInterface resource type"
 description: "Represents a Network Interface Card (NIC) associated with this host."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: identity-and-access-reports
 author: "preetikr"
 ---
 

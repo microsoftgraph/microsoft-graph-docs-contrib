@@ -5,7 +5,8 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: w10
+ms.technology: microsoft-graph
 ---
 
 # ItemActivityTimeSet resource type

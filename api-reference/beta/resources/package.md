@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Package
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: onenote
 ---
 # Package resource type
 
