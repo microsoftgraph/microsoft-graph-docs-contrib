@@ -32,7 +32,6 @@ The following permissions are required to call this API. To learn more, includin
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
