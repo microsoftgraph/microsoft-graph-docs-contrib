@@ -919,11 +919,9 @@ Content-Type: application/json
 ### Example 5: Move one participant from one meeting to another
 
 You can move one participant from one meeting to another if these two meetings have been created by the same application.
-For more information about how to create an online meeting, see [Create onlineMeeting](/graph/application-post-onlinemeetings).
+For more information about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings).
 
-> **Note:** The invite API supports only one participant when moving between calls.
-> When multiple participants are provided in the request body, only the first participant 
-> will be read and the rest of the participants will be ignored.
+> **Note:** The invite API can move only one participate per request. If you provide more than one participant in the request body, the invite API will move only the first one.
 
 #### Request
 
