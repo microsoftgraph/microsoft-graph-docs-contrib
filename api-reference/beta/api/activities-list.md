@@ -5,7 +5,7 @@ title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: governance
 ---
 # Enumerate activities (preview)
 

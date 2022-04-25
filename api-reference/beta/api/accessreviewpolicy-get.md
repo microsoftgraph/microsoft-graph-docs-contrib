@@ -140,6 +140,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+
 ---
 
 
