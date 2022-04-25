@@ -171,6 +171,8 @@ items:
             href: cloud-communications-phone-number.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -208,6 +210,9 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
+        items:
+          - name: Business rules
+            href: bookingsbusiness-business-rules.md
       - name: Device and app management
         expanded: true
         items:
@@ -527,7 +532,7 @@ items:
   - name: Develop
     expanded: true
     items:
-      - name: Get auth tokens
+      - name: Authentication and authorization
         items:
           - name: Overview
             href: auth/index.yml
@@ -703,14 +708,16 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
+              - name: Overview
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Installation
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: Navigating the SDK
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
-                href: powershell/app-only.md
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the Toolkit
         items:
           - name: Toolkit overview

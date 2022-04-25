@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
@@ -73,11 +73,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-### Request
+### Example 1: Retrieve role definitions for the directory provider
 
-The following is an example of the request.
-
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -226,6 +224,132 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Retrieve role definitions for the entitlement management provider
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement_provider"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDefinitions
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "7f480852-ebdc-47d4-87de-0d8498384a83",
+            "displayName": "AccessPackages manager",
+            "description": "AccessPackages manager",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "7f480852-ebdc-47d4-87de-0d8498384a83",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+            "displayName": "Catalog creator",
+            "description": "Catalog creator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "e2182095-804a-4656-ae11-64734e9b7ae5",
+            "displayName": "AccessPackage assignment manager",
+            "description": "AccessPackage assignment manager",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "e2182095-804a-4656-ae11-64734e9b7ae5",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/GrantRequests/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/Grants/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
