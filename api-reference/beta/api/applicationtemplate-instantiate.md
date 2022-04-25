@@ -59,7 +59,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request. The request URL specifies `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` as the application template ID. This means the request is instantiating a non-gallery app.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,11 +68,11 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applicationTemplates/229946b9-a9fb-45b8-9531-efa47453ac9e/instantiate
+POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-    "displayName": "Azure AD SAML Toolkit"
+    "displayName": "testProperties"
 }
 ```
 # [C#](#tab/csharp)
@@ -121,149 +121,51 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
     "application": {
-        "id": "20845737-a145-446f-aa3c-77d432903957",
-        "appId": "3c653ec4-4e4c-4820-8127-49e3889cad99",
-        "applicationTemplateId": "229946b9-a9fb-45b8-9531-efa47453ac9e",
-        "createdDateTime": "2022-04-25T16:48:24Z",
-        "deletedDateTime": null,
-        "displayName": "Azure AD SAML Toolkit",
-        "groupMembershipClaims": null,
+        "objectId": "428fbcb1-35bc-471d-95f2-6cc339357cb5",
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "displayName": "testProperties",
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
         "identifierUris": [],
-        "isFallbackPublicClient": false,
-        "signInAudience": "AzureADMyOrg",
-        "tags": [],
-        "tokenEncryptionKeyId": null,
-        "defaultRedirectUri": null,
-        "optionalClaims": null,
-        "addIns": [],
-        "api": {
-            "acceptMappedClaims": null,
-            "knownClientApplications": [],
-            "requestedAccessTokenVersion": null,
-            "oauth2PermissionScopes": [
-                {
-                    "adminConsentDescription": "Allow the application to access Azure AD SAML Toolkit on behalf of the signed-in user.",
-                    "adminConsentDisplayName": "Access Azure AD SAML Toolkit",
-                    "id": "00e7ef81-4deb-41d7-9ee3-90d4eba1e991",
-                    "isEnabled": true,
-                    "type": "User",
-                    "userConsentDescription": "Allow the application to access Azure AD SAML Toolkit on your behalf.",
-                    "userConsentDisplayName": "Access Azure AD SAML Toolkit",
-                    "value": "user_impersonation"
-                }
-            ],
-            "preAuthorizedApplications": []
-        },
-        "appRoles": [
-            {
-                "allowedMemberTypes": [
-                    "User"
-                ],
-                "displayName": "msiam_access",
-                "id": "8b292bda-39b6-4b77-849e-887565235bb0",
-                "isEnabled": true,
-                "description": "msiam_access",
-                "value": null,
-                "origin": "Application"
-            }
-        ],
-        "info": {
-            "logoUrl": null,
-            "marketingUrl": null,
-            "privacyStatementUrl": null,
-            "supportUrl": null,
-            "termsOfServiceUrl": null
-        },
-        "keyCredentials": [],
-        "parentalControlSettings": {
-            "countriesBlockedForMinors": [],
-            "legalAgeGroupRule": "Allow"
-        },
-        "passwordCredentials": [],
-        "publicClient": {
-            "redirectUris": []
-        },
-        "requiredResourceAccess": [],
-        "verifiedPublisher": {
-            "displayName": null,
-            "verifiedPublisherId": null,
-            "addedDateTime": null
-        },
-        "web": {
-            "homePageUrl": "https://samltoolkit.azurewebsites.net/SAML/Consume?metadata=samltoolkit|ISV9.2|primary|z",
-            "redirectUris": [
-                "https://samltoolkit.azurewebsites.net/SAML/Consume"
-            ]
-        }
+        "publicClient": null,
+        "replyUrls": [],
+        "logoutUrl": null,
+        "samlMetadataUrl": null,
+        "errorUrl": null,
+        "groupMembershipClaims": null,
+        "availableToOtherTenants": false
     },
     "servicePrincipal": {
-        "id": "912729dd-97ae-4ceb-ade4-07bed3046486",
-        "deletedDateTime": null,
+        "objectId": "7b358fa1-7d10-4a57-bd96-b7e63c2f9be5",
+        "deletionTimestamp": null,
         "accountEnabled": true,
-        "appId": "3c653ec4-4e4c-4820-8127-49e3889cad99",
-        "applicationTemplateId": "229946b9-a9fb-45b8-9531-efa47453ac9e",
-        "appDisplayName": "Azure AD SAML Toolkit",
-        "alternativeNames": [],
-        "appOwnerOrganizationId": "29a4f813-9274-4e1b-858d-0afa98ae66d4",
-        "displayName": "Azure AD SAML Toolkit",
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "appDisplayName": "testProperties",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "appOwnerTenantId": "29a4f813-9274-4e1b-858d-0afa98ae66d4",
         "appRoleAssignmentRequired": true,
+        "displayName": "testProperties",
+        "errorUrl": null,
         "loginUrl": null,
         "logoutUrl": null,
-        "homepage": "https://samltoolkit.azurewebsites.net/SAML/Consume?metadata=samltoolkit|ISV9.2|primary|z",
-        "notificationEmailAddresses": [],
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "samlMetadataUrl": null,
+        "microsoftFirstParty": null,
+        "publisherName": "Contoso",
         "preferredSingleSignOnMode": null,
         "preferredTokenSigningKeyThumbprint": null,
-        "replyUrls": [
-            "https://samltoolkit.azurewebsites.net/SAML/Consume"
-        ],
+        "preferredTokenSigningKeyEndDateTime": null,
+        "replyUrls": [],
         "servicePrincipalNames": [
-            "3c653ec4-4e4c-4820-8127-49e3889cad99"
+            "23a223ba-bb90-4949-8232-1bf479189e9b"
         ],
-        "servicePrincipalType": "Application",
         "tags": [
-            "WindowsAzureActiveDirectoryIntegratedApp"
+            "WindowsAzureActiveDirectoryIntegratedApp",
+            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
         ],
-        "tokenEncryptionKeyId": null,
+        "notificationEmailAddresses": [],
         "samlSingleSignOnSettings": null,
-        "verifiedPublisher": {
-            "displayName": null,
-            "verifiedPublisherId": null,
-            "addedDateTime": null
-        },
-        "addIns": [],
-        "appRoles": [
-            {
-                "allowedMemberTypes": [
-                    "User"
-                ],
-                "displayName": "msiam_access",
-                "id": "8b292bda-39b6-4b77-849e-887565235bb0",
-                "isEnabled": true,
-                "description": "msiam_access",
-                "value": null,
-                "origin": "Application"
-            }
-        ],
-        "info": {
-            "logoUrl": null,
-            "marketingUrl": null,
-            "privacyStatementUrl": null,
-            "supportUrl": null,
-            "termsOfServiceUrl": null
-        },
         "keyCredentials": [],
-        "oauth2PermissionScopes": [
-            {
-                "adminConsentDescription": "Allow the application to access Azure AD SAML Toolkit on behalf of the signed-in user.",
-                "adminConsentDisplayName": "Access Azure AD SAML Toolkit",
-                "id": "00e7ef81-4deb-41d7-9ee3-90d4eba1e991",
-                "isEnabled": true,
-                "type": "User",
-                "userConsentDescription": "Allow the application to access Azure AD SAML Toolkit on your behalf.",
-                "userConsentDisplayName": "Access Azure AD SAML Toolkit",
-                "value": "user_impersonation"
-            }
-        ],
         "passwordCredentials": []
     }
 }
