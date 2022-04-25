@@ -34,7 +34,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state from a snapshot.|
 |[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
 |[Set Cloud PC review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|When IT admins consider a Cloud PC as suspicious, they can use this API to set the Cloud PC device in review state, they can also use it to set the Cloud PC back to normal after review.|
-|[Get Cloud PC review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudPcReviewStatus.md)|Get and check the review status of a specific Cloud PC device.|
+|[Get Cloud PC review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get and check the review status of a specific Cloud PC device.|
 |[Bulk set Cloud PC review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudpcbulkremoteactionresult](../resources/cloudpcbulkremoteactionresult.md)|Perform bulk setting Cloud PC review status for a set of Cloud PC devices with their Intune managed device IDs.|
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReviewStatus resource type"
-description: "The details of the Cloud PC review status."
+description: "Represents the details about the review status of a Cloud PC."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,28 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The details of the Cloud PC review status.
+Represents the details about the review status of a Cloud PC.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inReview|Boolean| True if the Cloud PC is set to in review by admin.|
-|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the Cloud PC's end user, possible values include: `unrestricted`, `restricted`.|
+|inReview|Boolean| `True` if the Cloud PC is set to in review by the administrator.|
+|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
 |subscriptionId|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountId|String|The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.|
 |azureStorageAccountName|String|The name of the Azure Storage account in which the Cloud PC snapshot is being saved.|
-|reviewStartDateTime|DateTimeOffset|The specific time of when the Cloud PC was placed under review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as ‘2014-01-01T00:00:00Z’.|
-|restorePointDateTime|DateTimeOffset|The specific time of the Cloud PC's snapshot that was taken and saved automatically when it is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as ‘2014-01-01T00:00:00Z’.|
+|reviewStartDateTime|DateTimeOffset|The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|restorePointDateTime|DateTimeOffset|The specific date and time of the Cloud PC snapshot that was taken and saved automatically, when the Cloud PC is set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 
 
 ### cloudPcUserAccessLevel values
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unrestricted|0|No restriction. User can access their Cloud PC.|
-|restricted|1|User is not allowed to access their Cloud PC.|
-|unknownFutureValue|999|Unknown future status (reserved, not used right now).|
+|unrestricted|0|No restriction. Users can access the Cloud PC.|
+|restricted|1|Users are not allowed to access the Cloud PC.|
+|unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
 
 ##### CSDL
 

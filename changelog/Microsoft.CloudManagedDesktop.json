@@ -274,7 +274,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkSetCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) method to the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkSetCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-bulkSetCloudPcReviewStatus?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -282,7 +282,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "setCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) method to the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) resource.",
+                    "Description": "Added the [setCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-setCloudPcReviewStatus?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -290,7 +290,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getCloudPcReviewStatus",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) method to the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getCloudPcReviewStatus](https://docs.microsoft.com/en-us/graph/api/intune-getCloudPcReviewStatus?view=graph-rest-beta) method to the [Cloud PC](https://docs.microsoft.com/en-us/graph/api/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 }
             ],
