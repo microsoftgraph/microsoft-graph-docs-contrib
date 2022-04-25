@@ -11501,6 +11501,12 @@ items:
           items:
           - name: List domains
             href: api/domain-list.md
+          - name: List domain name references
+            href: api/domain-list-domainnamereferences.md
+          - name: List service configuration records
+            href: api/domain-list-serviceconfigurationrecords.md
+          - name: List verification DNS records
+            href: api/domain-list-verificationdnsrecords.md
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
