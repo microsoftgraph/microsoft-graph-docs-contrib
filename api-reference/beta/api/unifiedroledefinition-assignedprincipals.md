@@ -151,8 +151,17 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 
 6
+```
 
+Using the same scenario, the following examples show the counts that will be returned for each query pattern:
 
+| Example | Count |
+| --- | ---|
+| `/assignedPrincipals(transitive=false)/$count` | 4<br/>(User1, Group1, Group2, Group3) |
+| `/assignedPrincipals(transitive=false)/microsoft.graph.user/$count` | 1<br/>(User1) |
+| `/assignedPrincipals(transitive=true)/microsoft.graph.user/$count` | 3<br/>(User1, User2, User3) |
+| `/assignedPrincipals(transitive=false)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
+| `/assignedPrincipals(transitive=true)/microsoft.graph.group/$count` | 3<br/>(Group1, Group2, Group3) |
 
 ### Example 2: Get directly assigned principals for a specific administrative unit scope and directory role
 
