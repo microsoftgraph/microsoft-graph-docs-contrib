@@ -2,7 +2,7 @@
 title: "List resourceOperations"
 description: "List properties and relationships of the resourceOperation objects."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -72,7 +72,6 @@ Content-Length: 280
   ]
 }
 ```
-
 
 
 

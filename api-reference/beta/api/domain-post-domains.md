@@ -61,7 +61,6 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 ```http
 POST https://graph.microsoft.com/beta/domains
 Content-type: application/json
-Content-length: 192
 
 {
   "id": "contoso.com"
@@ -78,7 +77,6 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

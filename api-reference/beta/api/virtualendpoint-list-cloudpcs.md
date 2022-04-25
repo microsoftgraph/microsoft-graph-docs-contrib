@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,6 +114,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPC",
+      "aadDeviceId": "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
       "displayName": "Demo-1",
       "imageDisplayName": "Windows-10 19h1-evd",
@@ -113,9 +122,10 @@ Content-Type: application/json
       "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
       "provisioningPolicyName": "HR provisioning policy",
-      "onPremisesConnectionName": "on-Premises connection for HR",
+      "onPremisesConnectionName": "Azure network connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
+      "servicePlanType": "enterprise",
       "status": "provisioned",
       "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",

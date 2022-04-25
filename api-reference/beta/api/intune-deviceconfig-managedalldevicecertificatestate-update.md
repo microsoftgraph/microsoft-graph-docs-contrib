@@ -2,7 +2,7 @@
 title: "Update managedAllDeviceCertificateState"
 description: "Update the properties of a managedAllDeviceCertificateState object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -117,6 +117,7 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 

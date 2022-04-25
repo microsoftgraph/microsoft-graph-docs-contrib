@@ -1,7 +1,7 @@
 ---
 title: "call: recordResponse"
 description: "Records a short audio response from the caller. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -111,6 +111,14 @@ Content-Length: 394
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-recordresponse-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

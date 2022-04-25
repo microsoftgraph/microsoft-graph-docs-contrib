@@ -1,7 +1,7 @@
 ---
 title: "managementAction: apply"
 description: "Applies a management action against a specific managed tenant. By performing this operation the appropriate configurations will be made and policies created. As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
@@ -67,7 +67,6 @@ If successful, this action returns a `200 OK` response code and a [managementAct
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActions/{managementActionId}/apply
 Content-Type: application/json
-Content-length: 95
 
 {
   "tenantId": "String",
@@ -89,6 +88,10 @@ Content-length: 95
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/managementaction-apply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/managementaction-apply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

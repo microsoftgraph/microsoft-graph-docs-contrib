@@ -2,7 +2,7 @@
 title: "getDeviceNonComplianceReport action"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -103,6 +103,7 @@ Content-Length: 99
   "value": "Z2V0RGV2aWNlTm9uQ29tcGxpYW5jZVJlcG9ydCBJbnR1bmUgRG9jIFNhbXBsZSAtMTY1MDA3NDI3OA=="
 }
 ```
+
 
 
 

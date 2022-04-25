@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var organizationalBranding = await graphClient.Organization["{organization-id}"].Branding
 	.Request()
+	.Header("Accept-Language","0")
 	.GetAsync();
 
 ```

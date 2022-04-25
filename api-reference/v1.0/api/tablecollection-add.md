@@ -66,7 +66,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
-Content-length: 54
 
 {
   "address": "Sheet1!A1:D5",
@@ -102,7 +101,6 @@ Here is an example of the response. Note: The response object shown here might b
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

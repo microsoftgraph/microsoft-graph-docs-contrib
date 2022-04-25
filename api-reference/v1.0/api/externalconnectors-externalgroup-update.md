@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}/groups/{externalGroupId}
+PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## Request headers
@@ -59,6 +59,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +68,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/groups/{externalGroupId}
+PATCH https://graph.microsoft.com/v1.0/external/connections/{connectionsId}/groups/{externalGroupId}
 Content-Type: application/json
 
 {
@@ -90,7 +92,12 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-externalgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 
 

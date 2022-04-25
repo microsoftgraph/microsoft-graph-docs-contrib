@@ -2,7 +2,7 @@
 title: "Update androidForWorkGmailEasConfiguration"
 description: "Update the properties of a androidForWorkGmailEasConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -169,6 +169,7 @@ Content-Length: 1436
   "usernameSource": "userPrincipalName"
 }
 ```
+
 
 
 

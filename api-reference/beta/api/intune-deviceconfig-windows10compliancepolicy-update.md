@@ -2,7 +2,7 @@
 title: "Update windows10CompliancePolicy"
 description: "Update the properties of a windows10CompliancePolicy object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -219,6 +219,7 @@ Content-Length: 2083
   }
 }
 ```
+
 
 
 

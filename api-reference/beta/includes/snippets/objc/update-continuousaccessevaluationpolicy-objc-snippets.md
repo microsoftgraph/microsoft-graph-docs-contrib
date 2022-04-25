@@ -12,13 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContinuousAccessEvaluationPolicy *continuousAccessEvaluationPolicy = [[MSGraphContinuousAccessEvaluationPolicy alloc] init];
-NSMutableArray *usersList = [[NSMutableArray alloc] init];
-[usersList addObject: @"88139f01-1f8d-4c06-ad74-a2544cee9aee"];
-[continuousAccessEvaluationPolicy setUsers:usersList];
-NSMutableArray *groupsList = [[NSMutableArray alloc] init];
-[groupsList addObject: @"9972fb3f-7a40-49f5-85f6-129d9dfbd47a"];
-[groupsList addObject: @"ea178055-4713-4d9a-a06c-ff17466b7e77"];
-[continuousAccessEvaluationPolicy setGroups:groupsList];
+[continuousAccessEvaluationPolicy setMigrate: true];
 
 NSError *error;
 NSData *continuousAccessEvaluationPolicyData = [continuousAccessEvaluationPolicy getSerializedDataWithError:&error];

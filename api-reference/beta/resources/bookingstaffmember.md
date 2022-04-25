@@ -1,6 +1,6 @@
 ---
 title: "bookingStaffMember resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents a staff member who provides services in a bookingBusiness."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -23,6 +23,8 @@ When booking appointments, the Bookings API considers the following settings to 
 2. If **useBusinessHours** is false, then the staff member's specific work hours (**workingHours** property of the **bookingStaffmember** entity) represents that member's general availability.
 3. If **availabilityIsAffectedByPersonalCalendar** is true, then the Bookings API would first look at the staff member's generally available hours (as determined by either #1 or #2), and verify availability during those hours in the staff member's personal calendar, before making a booking.
 
+Microsoft Bookings supports a maximum of 100 staff members in a booking calendar.
+
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -41,7 +43,8 @@ When booking appointments, the Bookings API considers the following settings to 
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
-|role|string| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`. Required.|
+|role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest` and `unknownFutureValue`. Required.|
+|timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
 |workingHours|[bookingWorkHours](bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the **businessHours** property of the business.|
 
@@ -68,9 +71,10 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "emailAddress": "String",
   "id": "String (identifier)",
-  "role": "string",
+  "role": {"@odata.type": "microsoft.graph.bookingStaffRole"},
   "useBusinessHours": true,
-  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
+  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
+  "timeZone": "String"
 }
 
 ```

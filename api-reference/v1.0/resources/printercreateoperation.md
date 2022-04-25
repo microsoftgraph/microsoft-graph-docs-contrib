@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents a long-running printer registration operation. Derived from [printOperation](printoperation.md).
 
 Inherits from [printOperation](printoperation.md).

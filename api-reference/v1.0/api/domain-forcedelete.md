@@ -82,7 +82,6 @@ If successful, this method returns `HTTP/1.1 204 OK` status code.
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true
@@ -102,6 +101,14 @@ Content-length: 33
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/domain-forcedelete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-forcedelete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

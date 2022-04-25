@@ -93,7 +93,7 @@ by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -171,7 +171,6 @@ Here is a JSON representation of the resource
 
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
 }
-
 ```
 
 ## See also

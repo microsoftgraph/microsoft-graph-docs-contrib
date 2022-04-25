@@ -1,5 +1,5 @@
 ---
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -9,4 +9,4 @@ ms.topic: include
 
 | <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul><li> [threatAssessmentRequest](/graph/api/resources/threatassessmentrequest)  <li> [threatAssessmentResult](/graph/api/resources/threatassessmentresult) <li> [mailAssessmentRequest](/graph/api/resources/mailassessmentrequest) <li> [emailFileAssessmentRequest](/graph/api/resources/emailfileassessmentrequest) <li> [fileAssessmentRequest](/graph/api/resources/fileassessmentrRequest) <li> [urlAssessmentRequest](/graph/api/resources/urlassessmentrequest) </ul> |
+| <ul><li> [threatAssessmentRequest](/graph/api/resources/threatassessmentrequest)  <li> [threatAssessmentResult](/graph/api/resources/threatassessmentresult) <li> [mailAssessmentRequest](/graph/api/resources/mailassessmentrequest) <li> [emailFileAssessmentRequest](/graph/api/resources/emailfileassessmentrequest) <li> [fileAssessmentRequest](/graph/api/resources/fileassessmentrequest) <li> [urlAssessmentRequest](/graph/api/resources/urlassessmentrequest) </ul> |

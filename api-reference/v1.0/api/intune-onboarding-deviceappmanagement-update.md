@@ -2,7 +2,7 @@
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -91,7 +91,6 @@ Content-Length: 443
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
 }
 ```
-
 
 
 

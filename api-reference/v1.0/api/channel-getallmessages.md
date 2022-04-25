@@ -39,6 +39,17 @@ GET /teams/{team-id}/channels/getAllMessages
 
 ## Optional query parameters
 
+You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
+as shown in the following examples.  
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+
+If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
+
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.
 
@@ -80,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/teams/01fe12e0-e720-44fd-8854-28c66d1bee40/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/channel-getallchannelmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/channel-getallchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

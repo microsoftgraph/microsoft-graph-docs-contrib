@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Represents an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (discovery, notifications, registration, and IPP) and have one or more endpoints.
 
 ## Methods

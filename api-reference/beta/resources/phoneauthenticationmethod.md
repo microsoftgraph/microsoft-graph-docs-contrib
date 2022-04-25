@@ -25,7 +25,7 @@ An office phone can only receive voice calls, not SMS messages.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/Authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
+| [List](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
 | [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of phoneAuthenticationMethod object. |
 | [Update](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Update phoneAuthenticationMethod object. |
 | [Delete](../api/phoneauthenticationmethod-delete.md) | None | Delete phoneAuthenticationMethod object. |

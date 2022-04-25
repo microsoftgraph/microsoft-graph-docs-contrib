@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Lighthouse API overview"
 description: "Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium."
-author: "isaiahwilliams"
+author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
 ---
@@ -37,7 +37,7 @@ You can use the Lighthouse API to perform the following threat management tasks:
 
 You can use the Lighthouse API to perform the following user tasks:
 
-- Discover [risky users](/graph/api/resources/managedtenants-riskyuser?view=graph-rest-beta&preserve-view=true) across your customers.
+- Discover [risky users](/graph/api/resources/riskyuser) across your customers.
 - View [credential user registration summary](/graph/api/resources/managedtenants-credentialuserregistrationssummary?view=graph-rest-beta&preserve-view=true) to understand what users across your customers have registered for multi-factor authentication and self-service password reset.
 
 ## API reference

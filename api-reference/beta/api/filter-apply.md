@@ -61,7 +61,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
 Content-type: application/json
-Content-length: 321
 
 {
   "criteria": {

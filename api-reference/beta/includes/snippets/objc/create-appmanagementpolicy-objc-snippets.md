@@ -24,9 +24,26 @@ MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordC
 MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
 [passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType passwordLifetime]];
 [passwordCredentials setMaxLifetime:@"P4DT12H30M5S"];
-[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2018-10-19T10:37:00Z"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyAddition]];
+[passwordCredentials setMaxLifetime: null];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2019-10-19T10:37:00Z"];
+[passwordCredentialsList addObject: passwordCredentials];
+MSGraphPasswordCredentialConfiguration *passwordCredentials = [[MSGraphPasswordCredentialConfiguration alloc] init];
+[passwordCredentials setRestrictionType: [MSGraphAppCredentialRestrictionType symmetricKeyLifetime]];
+[passwordCredentials setMaxLifetime:@"P4D"];
+[passwordCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
 [passwordCredentialsList addObject: passwordCredentials];
 [restrictions setPasswordCredentials:passwordCredentialsList];
+NSMutableArray *keyCredentialsList = [[NSMutableArray alloc] init];
+MSGraphKeyCredentialConfiguration *keyCredentials = [[MSGraphKeyCredentialConfiguration alloc] init];
+[keyCredentials setRestrictionType: [MSGraphAppKeyCredentialRestrictionType asymmetricKeyLifetime]];
+[keyCredentials setMaxLifetime:@"P90D"];
+[keyCredentials setRestrictForAppsCreatedAfterDateTime: "2014-10-19T10:37:00Z"];
+[keyCredentialsList addObject: keyCredentials];
+[restrictions setKeyCredentials:keyCredentialsList];
 [appManagementPolicy setRestrictions:restrictions];
 
 NSError *error;

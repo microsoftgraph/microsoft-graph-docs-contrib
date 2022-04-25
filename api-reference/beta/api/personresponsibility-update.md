@@ -72,7 +72,6 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 ``` http
 PATCH https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 Content-Type: application/json
-Content-length: 446
 
 {
   "collaborationTags": [

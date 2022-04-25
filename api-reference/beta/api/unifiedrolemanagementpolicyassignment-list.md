@@ -1,7 +1,7 @@
 ---
 title: "List unifiedRoleManagementPolicyAssignments"
 description: "Get a list of the unifiedRoleManagementPolicyAssignment objects and their properties."
-author: "shauliu1"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /policies/roleManagementPolicyAssignments
+GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'Directory'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
@@ -75,6 +75,14 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-unifiedrolemanagementpolicyassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrolemanagementpolicyassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,15 +102,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "policyId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6",
-      "scopeType": "subscription",
-      "roleDefinitionId": "d6e4112f-112f-d6e4-2f11-e4d62f11e4d6"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicyAssignments",
+    "value": [
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9_fe930be7-5e62-47db-91af-98c3a49a38b1",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+        },
+        {
+            "id": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a_0526716b-113d-4c15-b2c8-68e3c22b9f80",
+            "policyId": "Directory_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "scopeId": "/",
+            "scopeType": "Directory",
+            "roleDefinitionId": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+        }
+    ]
 }
 ```
 

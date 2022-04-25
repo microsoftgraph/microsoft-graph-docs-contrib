@@ -2,7 +2,7 @@
 title: "Update windowsDriverUpdateInventory"
 description: "Update the properties of a windowsDriverUpdateInventory object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -108,6 +108,7 @@ Content-Length: 474
   "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
 }
 ```
+
 
 
 

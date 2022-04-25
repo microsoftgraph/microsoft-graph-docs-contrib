@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "startPage": 123456,
-  "endPage": 123456
+  "startPage": "Int32",
+  "endPage": "Int32"
 }
 ```
 

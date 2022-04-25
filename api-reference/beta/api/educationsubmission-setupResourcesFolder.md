@@ -93,7 +93,6 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",
