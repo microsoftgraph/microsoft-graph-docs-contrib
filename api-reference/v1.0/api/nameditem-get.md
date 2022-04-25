@@ -3,7 +3,8 @@ title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: profile
+ms.technology: microsoft-graph
 doc_type: apiPageType
 ---
 

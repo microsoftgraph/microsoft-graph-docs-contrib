@@ -3,7 +3,8 @@ title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: profile
+ms.technology: microsoft-graph
 doc_type: apiPageType
 ---
 
