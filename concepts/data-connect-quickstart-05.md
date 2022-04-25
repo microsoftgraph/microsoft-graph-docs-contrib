@@ -1,9 +1,8 @@
 ---
-title: Microsoft Graph Data Connect tutorial - Using Azure Data Factory to extract data
+title: Set up your Azure Data Factory resource
 description: Learn how to create an Azure Data Factory pipeline using Microsoft Graph data connect to extract data from Microsoft 365 to an Azure Storage account
 ms.localizationpriority: medium
 ---
-# Microsoft Graph Data Connect tutorial - Using Azure Data Factory to extract data
 <!-- markdownlint-disable MD002 MD041 -->
 
 The next step is to use the Azure Data Factory to create a pipeline to extract the data from Microsoft 365 to the Azure Storage account using Microsoft Graph data connect.

@@ -1,9 +1,8 @@
 ---
-title: Microsoft Graph Data Connect tutorial - Building an ASP.NET project
+title: Create your ASP.NET web application to process the exported data
 description: Follow along to continue the tutorial and build your first ASP.NET application project.
 ms.localizationpriority: medium
 ---
-# Microsoft Graph Data Connect tutorial - Building an ASP.NET project
 <!-- markdownlint-disable MD002 MD041 -->
 
 In this section we will be building your first ASP.NET project application for to process the Microsoft Graph Data Connect data that was exported.

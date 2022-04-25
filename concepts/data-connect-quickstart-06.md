@@ -1,9 +1,8 @@
 ---
-title: Microsoft Graph Data Connect tutorial - Managing requests with PowerShell and the Microsoft 365 Admin Center
+title: Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
 description: Learn how to approve or deny consent requests through either the Microsoft 365 Admin Center or using PowerShell.
 ms.localizationpriority: medium
 ---
-# Microsoft Graph Data Connect tutorial - Managing requests with PowerShell and the Microsoft 365 Admin Center
 <!-- markdownlint-disable MD002 MD041 -->
 
 A Microsoft 365 administrator has the ability to approve or deny consent requests. This can be done via the Microsoft 365 Admin Center or programmatically via PowerShell.
