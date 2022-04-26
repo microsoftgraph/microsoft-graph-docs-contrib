@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [teams](../resources/sharedwithchannelteaminfo.md) shared with a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
+Get the list of [teams](../resources/sharedwithchannelteaminfo.md) that has been shared a specified [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,5 +1,5 @@
 ---
-title: "Remove incomingChannels"
+title: "Remove channel"
 description: "Remove an incoming channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Remove incomingChannels
+# Remove channel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{team-id}/channels/{channel-id}/incomingChannels/{incoming-channel-id}
+DELETE /teams/{team-id}/incomingChannels/{incoming-channel-id}/$ref
 ```
 
 ## Request headers
