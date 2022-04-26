@@ -4,14 +4,14 @@
       "ChangeList": [
         {
           "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
-          "ApiChange": "Resource",
-          "ChangedApiName": "crossTenantAccessPolicy",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedCloudEndpoints",
           "ChangeType": "Addition",
-          "Description": "Added the `allowedCloudEndpoints` property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource.",
           "Target": "crossTenantAccessPolicy"
         }
       ],
-      "Id": "34b0a990-a3c9-4b70-92ac-a8ac93bf4860",
+      "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-31T00:00:00.8027648Z",
