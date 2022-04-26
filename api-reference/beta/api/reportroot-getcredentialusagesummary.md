@@ -1,5 +1,5 @@
 ---
-title: "Get getCredentialUsageSummary"
+title: "reportRoot: getCredentialUsageSummary"
 description: "Report the current state of how many users in your organization are using self-service password reset capabilities."
 ms.localizationpriority: medium
 author: "besiler"
@@ -30,10 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getCredentialUsageSummary
+GET /reports/getCredentialUsageSummary(period='{periodValue}')
 ```
 
-## Required function parameters
+## Function parameters
 
 You must use the following function parameter to request a timeframe for the response.
 
