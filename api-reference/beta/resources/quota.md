@@ -5,7 +5,8 @@ ms.date: 09/10/2017
 title: Quota
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 
 # quota resource type

@@ -3,7 +3,8 @@ title: "operation resource type"
 description: "The status of a long-running operation."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: teamwork
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "billbliss"
 ---
 

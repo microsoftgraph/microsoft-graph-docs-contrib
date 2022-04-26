@@ -5,7 +5,8 @@ ms.date: 09/14/2017
 title: RestoreAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: w10
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 # RestoreAction resource type
 

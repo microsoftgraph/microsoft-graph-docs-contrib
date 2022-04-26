@@ -3,7 +3,8 @@ title: "rankedEmailAddress resource type"
 description: "Represents a ranked email address."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: outlook
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "AAmatino"
 ---
 

@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: ItemAnalytics
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: w10
+ms.prod: cloud-pc
 ms.technology: microsoft-graph
 ---
 # itemAnalytics resource type

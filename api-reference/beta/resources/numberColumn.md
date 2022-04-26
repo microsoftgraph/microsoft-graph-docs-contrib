@@ -5,7 +5,8 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: excel
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 
 # NumberColumn resource type

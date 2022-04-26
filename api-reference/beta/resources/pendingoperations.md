@@ -4,7 +4,8 @@ description: "The pendingOperations resource indicates that one or more operatio
 ms.localizationpriority: medium
 author: "JeremyKelley"
 ms.date: 08/06/2019
-ms.prod: onenote
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 doc_type: "resourcePageType"
 ---
 

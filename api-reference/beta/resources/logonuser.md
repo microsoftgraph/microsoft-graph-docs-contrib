@@ -3,7 +3,8 @@ title: "logonUser resource type"
 description: "Contains stateful information about the logged on user on this host"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: users
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "preetikr"
 ---
 
