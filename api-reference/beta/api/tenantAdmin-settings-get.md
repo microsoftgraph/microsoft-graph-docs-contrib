@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All|
 
 ## User Roles
-In user-only or delegated scenario, a user is required to be one of the following admin or partial-admin roles to call this API. To learn more, see [About admin roles](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+In user-only or delegated scenario, a user is required to be one of the following admin or partial-admin roles to call this API. To learn more, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 * Global Admin
 * Global Reader
 * SharePoint Admin
