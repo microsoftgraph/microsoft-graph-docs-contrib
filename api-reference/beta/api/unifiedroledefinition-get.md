@@ -45,7 +45,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -167,7 +167,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,

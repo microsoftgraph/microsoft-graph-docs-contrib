@@ -2,7 +2,7 @@
 title: "Person component in the Microsoft Graph Toolkit"
 description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
 ms.localizationpriority: medium
-author: nmetulev
+author: sebastienlevert
 ---
 
 # Person component in the Microsoft Graph Toolkit

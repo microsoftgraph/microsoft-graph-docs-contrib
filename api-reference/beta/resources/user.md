@@ -215,7 +215,7 @@ This resource supports:
 | onPremisesLastSyncDateTime | DateTimeOffset | Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br> Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Contains the on-premises `sAMAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.<br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports `$filter` (`eq`) on `null` values only.  |
+| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports `$filter` (`eq` including on `null` values).  |
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 | onPremisesUserPrincipalName | String | Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | String collection | A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>NOTE: This property cannot contain accent characters.<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`). |
@@ -245,7 +245,7 @@ This resource supports:
 ### mail and proxyAddresses properties
 **mail** and **proxyAddresses** are both email-related properties. **proxyAddresses** is a collection of addresses only relevant for Microsoft Exchange server. It's used to store a list of mail addresses for a user that are tied to a single mailbox. **mail** property is used as the user's email address for various purposes including user sign in and defines the primary proxy address.
  
-Both **mail** and **proxyAddresses** can be retrieved through the [GET user](add link) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](add link) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios: 
+Both **mail** and **proxyAddresses** can be retrieved through the [GET user](../api/user-get.md) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](../api/user-update.md) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios: 
  
 1. If a user has a license that includes Microsoft Exchange, all their proxy addresses must belong to a verified domain on the tenant. Any that don't belong to verified domains are silently removed.
 2. A user's mail will NOT be set to the primary proxy address if the user is a guest and the primary proxy address contains the guest user UPN string with #EXT#.
@@ -303,6 +303,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
+|authentication|[authentication](../resources/authentication.md)|**TODO: Add Description**|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|

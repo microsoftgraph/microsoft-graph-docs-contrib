@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
-title: Update a bundle
-description: Update a bundle of driveItems
+author: "JeremyKelley"
+title: "Update bundle"
+description: "Update a bundle of driveItems"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -63,16 +63,40 @@ This example renames a bundle.
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 Content-Type: application/json
 
 {
   "name": "Shared legal agreements"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/rename-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

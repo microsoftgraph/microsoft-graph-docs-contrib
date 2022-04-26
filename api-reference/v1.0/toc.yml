@@ -2,7 +2,7 @@ name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
-  - name: Get auth tokens
+  - name: Authentication and authorization
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/1.0
@@ -838,8 +838,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/application-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/application-removepassword.md
           - name: Add key
             href: api/application-addkey.md
@@ -931,8 +933,10 @@ items:
         - name: Certificates and secrets
           items:
           - name: Add password
+            displayName: Add secrets
             href: api/serviceprincipal-addpassword.md
           - name: Remove password
+            displayName: Remove secrets
             href: api/serviceprincipal-removepassword.md
           - name: Add key
             href: api/serviceprincipal-addkey.md
@@ -4636,9 +4640,9 @@ items:
           href: resources/administrativeunit.md
           items:
           - name: List
-            href: api/administrativeunit-list.md
+            href: api/directory-list-administrativeunits.md
           - name: Create
-            href: api/administrativeunit-post-administrativeunits.md
+            href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
           - name: Update
@@ -4775,6 +4779,12 @@ items:
           items:
           - name: List domains
             href: api/domain-list.md
+          - name: List domain name references
+            href: api/domain-list-domainnamereferences.md
+          - name: List service configuration records
+            href: api/domain-list-serviceconfigurationrecords.md
+          - name: List verification DNS records
+            href: api/domain-list-verificationdnsrecords.md
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
@@ -4862,8 +4872,11 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-overview.md
-          - name: List all methods
-            href: api/authentication-list-methods.md
+          - name: Authentication methods
+            href: resources/authenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
@@ -5353,18 +5366,18 @@ items:
               href: api/accessreviewinstance-resetdecisions.md
             - name: List contacted reviewers
               href: api/accessreviewinstance-list-contactedreviewers.md
-            - name: Access review instance decision item
-              displayName: access review decisions
-              href: resources/accessreviewinstancedecisionitem.md
-              items:
-              - name: Get
-                href: api/accessreviewinstancedecisionitem-get.md
-              - name: List
-                href: api/accessreviewinstance-list-decisions.md
-              - name: Update
-                href: api/accessreviewinstancedecisionitem-update.md
-              - name: Filter by current user
-                href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+          - name: Access review instance decision item
+            displayName: access review decisions
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
           - name: Access review history definition
             href: resources/accessreviewhistorydefinition.md
             items:
@@ -5515,6 +5528,19 @@ items:
               href: api/entitlementmanagementsettings-get.md
             - name: Update
               href: api/entitlementmanagementsettings-update.md
+          - name: Access package assignment policy
+            href: resources/accesspackageassignmentpolicy.md
+            items:
+            - name: List
+              href: api/entitlementmanagement-list-assignmentpolicies.md
+            - name: Create
+              href: api/entitlementmanagement-post-assignmentpolicies.md
+            - name: Get
+              href: api/accesspackageassignmentpolicy-get.md
+            - name: Update
+              href: api/accesspackageassignmentpolicy-update.md
+            - name: Delete
+              href: api/accesspackageassignmentpolicy-delete.md
         - name: Terms of use
           items:
           - name: Agreement
