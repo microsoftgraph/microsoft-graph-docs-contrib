@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: FolderView
 ms.localizationpriority: medium
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

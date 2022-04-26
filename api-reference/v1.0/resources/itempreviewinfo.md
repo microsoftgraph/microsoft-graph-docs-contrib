@@ -4,7 +4,7 @@ ms.date: 3/16/2018
 title: ItemPreviewInfo
 ms.localizationpriority: medium
 description: "The itemPreviewInfo resource contains information on how to embed a preview of a driveItem."
-ms.prod: ""
+ms.prod: onedrive
 doc_type: resourcePageType
 ---
 # itemPreviewInfo resource type

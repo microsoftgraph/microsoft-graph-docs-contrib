@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Identity
 ms.localizationpriority: medium
 description: "The Identity resource represents an identity of an actor."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

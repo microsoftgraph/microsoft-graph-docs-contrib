@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 ms.localizationpriority: medium
 title: "Hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

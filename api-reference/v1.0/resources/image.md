@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Image
 ms.localizationpriority: medium
 description: "The Image resource groups image-related properties into a single structure."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

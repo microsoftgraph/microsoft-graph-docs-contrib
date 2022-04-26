@@ -3,7 +3,7 @@ title: "FormatProtection resource type"
 description: "Represents the format protection of a range object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 doc_type: resourcePageType
 ---
 

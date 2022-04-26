@@ -3,7 +3,7 @@ title: "Json resource type"
 description: "Represents data returned in JSON format"
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 doc_type: resourcePageType
 ---
 
