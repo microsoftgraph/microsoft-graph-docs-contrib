@@ -86,7 +86,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "name": "manageddevicethis.setcloudpcreviewstatus"
 }
 -->
 ``` http

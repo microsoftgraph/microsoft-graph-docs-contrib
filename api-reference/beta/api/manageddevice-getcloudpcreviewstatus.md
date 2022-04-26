@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de9
 
 ### Response
 
-The following is an example of the request.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -87,6 +87,5 @@ Content-Type: application/json
     "azureStorageAccountId": "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview",
     "azureStorageAccountName": "snapshotsUnderReview"
 }
-
 ```
 

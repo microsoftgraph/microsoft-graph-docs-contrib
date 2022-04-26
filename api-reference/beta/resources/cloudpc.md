@@ -33,9 +33,9 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state from a snapshot.|
 |[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
-|[Set Cloud PC review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|Set the review status of a specific Cloud PC device.|
-|[Get Cloud PC review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device.|
-|[Bulk set Cloud PC review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudpcbulkremoteactionresult](../resources/cloudpcbulkremoteactionresult.md)|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.|
+|[Set review status](../api/manageddevice-setcloudpcreviewstatus.md)|None|Set the review status of a specific Cloud PC device.|
+|[Get review status](../api/manageddevice-getcloudpcreviewstatus.md)|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|Get the review status of a specific Cloud PC device.|
+|[Bulk set review status](../api/manageddevice-bulksetcloudpcreviewstatus.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.|
 
 ## Properties
 
