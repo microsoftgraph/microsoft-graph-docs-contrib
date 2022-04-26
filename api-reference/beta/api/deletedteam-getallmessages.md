@@ -50,8 +50,8 @@ as shown in the following examples.
 If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
-GET /teams/{team-id}/channels/getAllMessages?model=A
-GET /teams/{team-id}/channels/getAllMessages?model=B
+GET /teamwork/deletedTeam/{deletedTeamId}/getAllMessages?model=A
+GET /teamwork/deletedTeam/{deletedTeamId}/getAllMessages?model=B
 ```
 If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
 
