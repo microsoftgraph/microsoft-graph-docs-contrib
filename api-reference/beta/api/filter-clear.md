@@ -4,7 +4,7 @@ description: "Clear the filter on the given column."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 ---
 
 # Filter: clear

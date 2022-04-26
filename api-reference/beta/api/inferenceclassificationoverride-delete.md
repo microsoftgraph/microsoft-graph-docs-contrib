@@ -4,7 +4,7 @@ description: "Delete a Focused Inbox override specified by its ID."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 ---
 
 # Delete inferenceClassificationOverride

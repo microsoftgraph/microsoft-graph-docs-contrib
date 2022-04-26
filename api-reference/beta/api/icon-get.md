@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of icon object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 ---
 
 # Get Icon

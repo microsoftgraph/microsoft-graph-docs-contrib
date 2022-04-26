@@ -4,7 +4,7 @@ description: "Create a Focused Inbox override for a sender identified by an SMTP
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 ---
 
 # Create inferenceClassificationOverride

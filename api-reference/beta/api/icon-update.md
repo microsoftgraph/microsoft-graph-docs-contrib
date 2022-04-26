@@ -4,7 +4,7 @@ description: "Update the properties of icon object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: excel
 ---
 
 # Update icon
