@@ -1,6 +1,6 @@
 ---
 title: "onenoteEntityHierarchyModel resource"
-description: "This is a base type for OneNote entities."
+description: "onenoteEntityHierarchyModel resource is a base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"
