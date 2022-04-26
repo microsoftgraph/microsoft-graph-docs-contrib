@@ -7,8 +7,8 @@
           "ApiChange": "Property",
           "ChangedApiName": "participantId",
           "ChangeType": "Addition",
-          "Description": "Added the **participantId** property to the [inviteParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-1.0) resource.",
-          "Target": "inviteParticipantInfo"
+          "Description": "Added the **participantId** property to the [invitationParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-1.0) resource.",
+          "Target": "invitationParticipantInfo"
         }
       ],
       "Id": "f811d073-4513-4c88-984f-d2e4f361ead5",
@@ -25,8 +25,8 @@
           "ApiChange": "Property",
           "ChangedApiName": "participantId",
           "ChangeType": "Addition",
-          "Description": "Added the **participantId** property to the [inviteParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta) resource.",
-          "Target": "inviteParticipantInfo"
+          "Description": "Added the **participantId** property to the [invitationParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta) resource.",
+          "Target": "invitationParticipantInfo"
         }
       ],
       "Id": "0ff183c4-c502-4e00-94f2-aa475d76ce8c",

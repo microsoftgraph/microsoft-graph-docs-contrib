@@ -922,7 +922,7 @@ Content-Type: application/json
 You can move one participant from one meeting to another if these two meetings have been created by the same application.
 For more information about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings).
 
-> **Note:** The invite API can move only one participate per request. If you provide more than one participant in the request body, the invite API will move only the first one.
+> **Note:** The invite API can move only one participant per request. If you provide more than one participant in the request body, the invite API will move only the first one.
 
 #### Request
 
