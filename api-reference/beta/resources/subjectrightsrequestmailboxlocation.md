@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequestMailboxLocation resource type"
-description: "Represents the properties of a subject rights request mailbox location."
+description: "Represents an abstract base type for the properties of a mailbox location in a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type. Represents the properties of mailbox location that should be searched for the request.
+Represents an abstract base type for the properties of a mailbox location in a subject rights request.
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

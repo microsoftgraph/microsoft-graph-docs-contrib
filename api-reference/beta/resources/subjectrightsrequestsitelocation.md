@@ -18,7 +18,7 @@ This is an abstract type. Represent the properties of subject rights request sit
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

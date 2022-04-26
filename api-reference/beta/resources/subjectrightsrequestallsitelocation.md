@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequestAllSiteLocation resource type"
-description: "Represents the properties for subject rights request all site location."
+description: "Represents the properties for a subject rights request that defines all sites (SharePoint sites, OneDrive for Business sites, and Teams channels) as a search location."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,14 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for subject rights request all site location. This type should be used when all SharePoint and OneDrive sites should be searched.
-
+Represents the properties for a subject rights request that defines all sites (SharePoint sites, OneDrive for Business sites, and Teams channels) as a search location. Use this type when you want to look for data in all sites.
 
 Inherits from [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

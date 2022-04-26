@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequestEnumeratedSiteLocation resource type"
-description: "Represents the properties for subject rights request enumerated site location."
+description: "Represents the properties for a subject rights request that defines specific sites (SharePoint sites, OneDrive for Business sites, and Teams channels) as a search location."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties for subject rights request enumerated site location. Use this type when you want to look for data in specific sites.
+Represents the properties for a subject rights request that defines specific sites (SharePoint sites, OneDrive for Business sites, and Teams channels) as a search location.
 
 Inherits from [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md).
 
@@ -36,8 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedSiteLocation",
   "urls": [
-    "https://www.contoso.com/site1",
-    "https://www.contoso.com/site2"
+    "String"
   ]
 }
 ```
