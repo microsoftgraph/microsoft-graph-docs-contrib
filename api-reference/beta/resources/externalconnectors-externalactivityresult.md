@@ -28,7 +28,7 @@ Inherits from [externalActivityBase](../resources/externalconnectors-externalact
 |:---|:---|:---|
 |error|[microsoft.graph.publicError](../resources/publicerror.md)|Error information explaining failure to process externalActivity|
 |startDateTime|DateTimeOffset|When the particular activity occurred. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).|
-|type|externalActivityType|The type of activity performed. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
+|type|externalConnectors.externalActivityType|The type of activity performed. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
