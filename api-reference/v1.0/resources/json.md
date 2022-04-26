@@ -1,13 +1,13 @@
 ---
-title: "Json resource type"
-description: "Represents data returned in JSON format"
+title: "Json resource type for Excel"
+description: "Represents data returned in JSON format for Excel"
 ms.localizationpriority: medium
 author: "ruoyingl"
 ms.prod: excel
 doc_type: resourcePageType
 ---
 
-# Json resource type
+# Json resource type for Excel
 
 Namespace: microsoft.graph
 

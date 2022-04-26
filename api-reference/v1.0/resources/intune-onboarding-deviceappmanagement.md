@@ -1,13 +1,13 @@
 ---
-title: "deviceAppManagement resource type"
-description: "Singleton entity that acts as a container for all device app management functionality."
+title: "intune onboarding  deviceAppManagement resource type"
+description: "intune onboarding - Singleton entity that acts as a container for all device app management functionality."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
-# deviceAppManagement resource type
+# intune onboarding deviceAppManagement resource type
 
 Namespace: microsoft.graph
 
