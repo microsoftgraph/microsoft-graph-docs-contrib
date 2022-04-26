@@ -22,19 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deletedTeams](../api/teamwork-list-deletedteam.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
-|[Create deletedTeam](../api/teamwork-post-deletedteam.md)|[deletedTeam](../resources/deletedteam.md)|Create a new [deletedTeam](../resources/deletedteam.md) object.|
-|[Get deletedTeam](../api/deletedteam-get.md)|[deletedTeam](../resources/deletedteam.md)|Read the properties and relationships of a [deletedTeam](../resources/deletedteam.md) object.|
-|[Update deletedTeam](../api/deletedteam-update.md)|[deletedTeam](../resources/deletedteam.md)|Update the properties of a [deletedTeam](../resources/deletedteam.md) object.|
-|[Delete deletedTeam](../api/teamwork-delete-deletedteam.md)|None|Deletes a [deletedTeam](../resources/deletedteam.md) object.|
 |[getAllMessages](../api/deletedteam-getallmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get all messages in the deleted team.|
-|[List allChannels](../api/team-list-channels.md)|[channel](../resources/channel.md) collection|Get the channel resources from the allChannels navigation property.|
-|[Add channel](../api/deletedteam-post-allchannels.md)|[channel](../resources/channel.md)|Add allChannels by posting to the allChannels collection.|
-|[Remove allChannels](../api/deletedteam-delete-allchannels.md)|None|Remove a [channel](../resources/channel.md) object.|
-|[List channels](../api/team-list-channels.md)|[channel](../resources/channel.md) collection|Get the channel resources from the channels navigation property.|
-|[Create channel](../api/deletedteam-post-channels.md)|[channel](../resources/channel.md)|Create a new channel object.|
-|[List channel](../api/team-list-channels.md)|[channel](../resources/channel.md) collection|Get the channel resources from the primaryChannel navigation property.|
-|[Create channel](../api/deletedteam-post-primarychannel.md)|[channel](../resources/channel.md)|Create a new channel object.|
 
 ## Properties
 |Property|Type|Description|
