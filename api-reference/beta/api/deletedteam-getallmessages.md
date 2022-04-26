@@ -93,44 +93,44 @@ HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
-    "@odata.count": 1,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/teamwork/deletedTeam({deletedTeamId})/getAllMessages?$top={topValue}&$skiptoken={skipToken}",
+    "@odata.count": 2,
+    "@odata.nextLink": "https://graph.microsoft.com/beta/teamwork/deletedTeam/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/getAllMessages",
     "value": [
         {
             "@odata.type": "#microsoft.graph.chatMessage",
-            "id": "{messageId}}",
+            "id": "1616990417393",
             "replyToId": null,
-            "etag": "1642795810017",
+            "etag": "1616990417393",
             "messageType": "message",
-            "createdDateTime": "2022-01-21T19:53:42.859Z",
-            "lastModifiedDateTime": "2022-01-21T20:10:10.017Z",
-            "lastEditedDateTime": "2022-01-21T20:10:09.782Z",
+            "createdDateTime": "2021-03-29T04:00:17.393Z",
+            "lastModifiedDateTime": "2021-03-29T04:00:17.393Z",
+            "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": null,
             "summary": null,
             "chatId": null,
             "importance": "normal",
             "locale": "en-us",
-            "webUrl": "https://teams.microsoft.com/l/message/{channelId}/{id}}?groupId={teamId}&tenantId={tenantId}}&createdTime={timeStamp}&parentMessageId={parentMessageId}}",
-            "onBehalfOf": null,
+            "webUrl": "https://teams.microsoft.com/l/message/19%3Ad5d2708d408c41d98424c1c354c19db3%40thread.tacv2/1616990417393?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990417393&parentMessageId=1616990417393",
             "policyViolation": null,
             "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
+                "conversation": null,
                 "user": {
-                    "id": ""{userId}"",
-                    "displayName": "{userName}",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
-                "contentType": "html",
-                "content": "{content}"
+                "contentType": "text",
+                "content": "Test message"
             },
             "channelIdentity": {
-                "teamId": "{teamId}}",
-                "channelId": "{channelId}}"
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:d5d2708d408c41d98424c1c354c19db3@thread.tacv2"
             },
             "attachments": [],
             "mentions": [],
@@ -138,5 +138,6 @@ HTTP/1.1 200 OK
         }
     ]
 }
+
 ```
 
