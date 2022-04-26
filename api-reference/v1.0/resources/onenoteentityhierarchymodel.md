@@ -37,7 +37,6 @@ Here is a JSON representation of the resource.
 
 ```
 ## Properties
-## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The name of the notebook.|

@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Quota
 ms.localizationpriority: medium
 description: "The quota resource provides details about space constrains on a Drive resource."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

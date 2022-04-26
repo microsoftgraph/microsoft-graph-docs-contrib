@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: SharedDriveItem
 ms.localizationpriority: medium
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

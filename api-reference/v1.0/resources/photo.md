@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Photo
 ms.localizationpriority: medium
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # Photo resource type

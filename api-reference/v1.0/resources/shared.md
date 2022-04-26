@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Shared
 ms.localizationpriority: medium
 description: "The Shared resource indicates a DriveItem has been shared with others."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

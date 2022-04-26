@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Root
 ms.localizationpriority: medium
 description: "The Root facet indicates that an object is the top-most one in its hierarchy."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Package
 ms.localizationpriority: medium
 description: " or a collection of items that should be treated as a collection instead of individual items."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

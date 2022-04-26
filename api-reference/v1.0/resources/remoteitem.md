@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
 description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
