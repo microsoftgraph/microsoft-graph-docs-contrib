@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyAuthenticationContextRule resource type"
-description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the enablement rule associated with a role management policy."
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the authentication context rule for the conditional access policy associated with a role management policy."
 author: "japere"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,20 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the enablement rule associated with a role management policy.
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the authentication context rule for the conditional access policy associated with a role management policy.
 
 ## Methods
 
-None. 
-
-<!--
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedRoleManagementPolicyAuthenticationContextRules](../api/unifiedrolemanagementpolicyauthenticationcontextrule-list.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) collection|Get a list of the [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) objects and their properties.|
-|[Get unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-get.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)|Read the properties and relationships of an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
-|[Update unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-update.md)|[unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)|Update the properties of an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
-|[Delete unifiedRoleManagementPolicyAuthenticationContextRule](../api/unifiedrolemanagementpolicyauthenticationcontextrule-delete.md)|None|Deletes an [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md) object.|
--->
+None.
 
 ## Properties
 |Property|Type|Description|
