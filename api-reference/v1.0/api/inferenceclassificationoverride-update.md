@@ -3,7 +3,7 @@ title: "Update inferenceclassificationoverride"
 description: "Change the **classifyAs** field of an override as specified. "
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
+ms.prod: non-product-specific
 doc_type: apiPageType
 ---
 

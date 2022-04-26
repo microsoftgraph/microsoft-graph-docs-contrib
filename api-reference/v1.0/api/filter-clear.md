@@ -3,7 +3,7 @@ title: "Filter: clear"
 description: "Clear the filter on the given column."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: non-product-specific
 doc_type: apiPageType
 ---
 
