@@ -25,7 +25,7 @@ This is an abstract type.
 |Property|Type|Description|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|When the particular activity occurred.|
-|type|externalActivityType|The type of activity performed. The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
+|type|externalConnectors.externalActivityType|The type of activity performed. The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
