@@ -52,6 +52,8 @@ If successful, this method returns a `200 OK` response code and a [richLongRunni
 
 ### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_richlongrunningoperation"
@@ -63,6 +65,9 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/operations/{richLongRunningO
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

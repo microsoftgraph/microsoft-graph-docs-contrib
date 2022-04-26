@@ -23,16 +23,16 @@ Contains metadata about long running operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Time when this operation was created.|
-|error|[publicError](../resources/publicerror.md)| Error due to which the operation failed.|
-|id|String|Operation identifier. Inherits from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset| Time when last action was performed on this operation.|
+|createdDateTime|DateTimeOffset|The date and time when this operation was created.|
+|error|[publicError](../resources/publicerror.md)| Error that caused the operation to fail.|
+|id|String|Unique identifier for the operation. Inherited from [entity](../resources/entity.md).|
+|lastActionDateTime|DateTimeOffset| The date and time when the last action was performed on this operation.|
 |percentageComplete|Int32|A value between 0 and 100 that indicates the progress of the operation.|
-|resourceId|String|A unique identifier for the result.|
-|resourceLocation|String|Canonical url of the resource.|
-|status|longRunningOperationStatus|Status of the opertaion.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
-|statusDetail|String|Detail about the status value.|
-|type|String| Type of the operation.|
+|resourceId|String|The unique identifier for the result.|
+|resourceLocation|String|The canonical URL of the resource.|
+|status|longRunningOperationStatus|The status of the operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|statusDetail|String|The detail about the status value.|
+|type|String| The type of the operation.|
 
 ## Relationships
 None.

@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 Add or sync a copy of a published content type from the content type hub to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a "push everywhere" to "pull as needed" approach. The method allows users to pull content types directly from the content type hub to a site or list. For more information, see [getCompatibleHubContentTypes](contenttype-getcompatiblehubcontenttypes.md) and the blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,17 +44,17 @@ POST /sites/{siteId}/contentTypes/addCopyFromContentTypeHub
 ## Request body
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|contentTypeId|String| ID of the content type in the content type hub that is to be added to the target site or a list.|
+|contentTypeId|String| The ID of the content type in the content type hub that will be added to the target site or a list.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously, or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richLongRunningOperation.md) that was created to handle the copy/sync.
+If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richlongrunningoperation.md) that was created to handle the copy/sync.
 In case of an asynchronous operation, it can take up to 70 minutes to sync or add a content type.
 
 ## Examples
@@ -61,6 +62,8 @@ In case of an asynchronous operation, it can take up to 70 minutes to sync or ad
 ### Example 1: Synchronous pull
 
 #### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -78,6 +81,9 @@ Content-length: 33
 ```
 
 #### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,9 +105,13 @@ Content-Type: application/json
     "name": "Document"
 }
 ```
+
 ### Example 2: Asynchronous pull
 
 #### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -119,6 +129,8 @@ Content-length: 33
 
 
 #### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response"

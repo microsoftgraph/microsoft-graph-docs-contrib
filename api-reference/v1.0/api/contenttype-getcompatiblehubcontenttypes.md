@@ -45,11 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [contentType](../resources/contenttype.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [contentType](../resources/contenttype.md) objects in the response body.
 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -63,11 +65,15 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/contentTypes/
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.contentType)"
+  "@odata.type": "microsoft.graph.contentType",
+  "isCollection": true
 }
 -->
 ``` http
