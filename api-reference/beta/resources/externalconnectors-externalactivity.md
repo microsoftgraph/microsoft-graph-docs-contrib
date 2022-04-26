@@ -28,7 +28,7 @@ Inherits from [externalActivityBase](../resources/externalconnectors-externalact
 |Property|Type|Description|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|When the particular activity occurred. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).|
-|type|externalActivityType|The type of activity performed. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
+|type|externalConnectors.externalActivityType|The type of activity performed. Inherited from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).The possible values are: `viewed`, `modified`, `created`, `commented`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
