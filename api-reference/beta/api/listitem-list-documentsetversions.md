@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [versions of a document set](../resources/documentsetversion) in a [list](../resources/list.md).
+Get a list of the [versions of a document set](../resources/documentsetversion) item in a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
