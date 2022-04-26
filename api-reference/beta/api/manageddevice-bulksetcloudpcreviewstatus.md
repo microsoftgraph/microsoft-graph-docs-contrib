@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|managedDeviceIds|Collection(String)|The managed device IDs of the Cloud PC devices.|
+|managedDeviceIds|String collection|The managed device IDs of the Cloud PC devices.|
 |reviewStatus|[cloudPcReviewStatus](../resources/cloudpcreviewstatus.md)|The new review status of the Cloud PC devices. |
 
 
