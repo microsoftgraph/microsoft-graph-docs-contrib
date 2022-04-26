@@ -2480,10 +2480,10 @@
       "CreatedDateTime": "2022-03-30T21:36:07.8994263Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
-    },    
+    },
     {
       "ChangeList": [
-        {          
+        {
           "Id": "19eaf04c-8437-44ca-bdd1-fffacce3f1c3",
           "ApiChange": "Resource",
           "ChangedApiName": "documentSetVersionItem",
