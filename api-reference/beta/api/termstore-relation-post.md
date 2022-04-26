@@ -3,7 +3,7 @@ title: "Create relation"
 description: "Create a new relation object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 

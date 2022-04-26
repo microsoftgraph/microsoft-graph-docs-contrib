@@ -3,7 +3,7 @@ title: "List relations"
 description: "Get the relations from the relations navigation property."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 

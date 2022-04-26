@@ -3,7 +3,7 @@ title: "List groups"
 description: "Get the groups from the groups navigation property."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 
