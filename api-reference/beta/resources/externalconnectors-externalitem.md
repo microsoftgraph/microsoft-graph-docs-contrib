@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
   ],
   "id": "String (identifier)",
   "properties": "Object",
-  "content": { "@odata.type": "microsoft.graph.externalConnectors.externalItemContent" }
+  "content": { "@odata.type": "microsoft.graph.externalConnectors.externalItemContent" },
   "activities": { "@odata.type": "Collection(microsoft.graph.externalConnectors.externalActivityBase)" }
 }
 ```
