@@ -1,6 +1,6 @@
 ---
 title: "windowsUpdateState resource type"
-description: "Not yet documented"
+description: windowsUpdateState resource type
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
