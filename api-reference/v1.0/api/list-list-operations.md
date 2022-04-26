@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_richlongrunningoperation"
@@ -62,11 +64,15 @@ GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.richLongRunningOperation)"
+  "@odata.type": "microsoft.graph.richLongRunningOperation",
+  "isCollection": true
 }
 -->
 ``` http
