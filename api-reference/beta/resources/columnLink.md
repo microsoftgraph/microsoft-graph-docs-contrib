@@ -5,7 +5,7 @@ ms.date: 09/12/2017
 title: ColumnLink
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: files
 ---
 
 # ColumnLink resource type
