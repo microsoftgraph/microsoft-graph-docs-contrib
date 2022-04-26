@@ -107,12 +107,12 @@ Content-type: application/json
             "displayName": "Conf Room Adams",
             "givenName": null,
             "jobTitle": null,
-            "mail": "Adams@M365x010717.OnMicrosoft.com",
+            "mail": "Adams@Contoso.OnMicrosoft.com",
             "mobilePhone": null,
             "officeLocation": null,
             "preferredLanguage": null,
             "surname": null,
-            "userPrincipalName": "Adams@M365x010717.OnMicrosoft.com"
+            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
         }
     ]
 }
