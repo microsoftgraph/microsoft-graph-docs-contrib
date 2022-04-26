@@ -1,5 +1,4 @@
 ---
-title: Create your ASP.NET web application to process the exported data
 description: Follow along to continue the tutorial and build your first ASP.NET application project.
 ms.localizationpriority: medium
 ---

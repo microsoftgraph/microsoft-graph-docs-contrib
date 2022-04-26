@@ -1,5 +1,4 @@
 ---
-title: Set up your Azure Data Factory resource
 description: Learn how to create an Azure Data Factory pipeline using Microsoft Graph data connect to extract data from Microsoft 365 to an Azure Storage account
 ms.localizationpriority: medium
 ---

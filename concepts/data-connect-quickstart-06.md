@@ -1,5 +1,4 @@
 ---
-title: Monitor data consent requests with Microsoft 365 Admin Center and PowerShell
 description: Learn how to approve or deny consent requests through either the Microsoft 365 Admin Center or using PowerShell.
 ms.localizationpriority: medium
 ---

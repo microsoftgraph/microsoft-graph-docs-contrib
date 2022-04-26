@@ -1,5 +1,4 @@
 ---
-title: Congratulations!
 description: The end of the Microsoft Graph Data Connect tutorial.
 ms.localizationpriority: medium
 ---
