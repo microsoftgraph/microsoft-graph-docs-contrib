@@ -1,13 +1,13 @@
 ---
-title: "Update settings"
-description: "Update the properties of a settings object. Allows users to update organization-level settings that pertain to SharePoint and OneDrive."
+title: "Update tenant admin settings"
+description: "Update the properties of a tenant admin settings resource. Allows users to update organization-level settings that pertain to SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update settings
+# Update tenant admin settings
 Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,6 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|SharePointTenantSettings.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported|
 |Application|SharePointTenantSettings.ReadWrite.All|
+
+## User Roles
+In user-only or delegated scenario, a user is required to be one of the following admin or partial-admin roles to call this API. To learn more, see [About admin roles](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+* Global Admin
+* SharePoint Admin
 
 ## HTTP request
 

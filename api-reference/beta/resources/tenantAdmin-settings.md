@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
-# Settings resource type
+# Tenant admin settings resource type
 
 Namespace: microsoft.graph.tenantAdmin
 

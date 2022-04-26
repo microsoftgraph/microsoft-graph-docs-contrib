@@ -1,5 +1,5 @@
 ---
-title: "Get settings"
+title: "Get tenant admin settings"
 description: "Read the properties and relationships of a tenant admin settings resource."
 author: "liamfernandez"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get settings
+# Get tenant admin settings
 Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,6 +22,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All|
+
+## User Roles
+In user-only or delegated scenario, a user is required to be one of the following admin or partial-admin roles to call this API. To learn more, see [About admin roles](https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+* Global Admin
+* Global Reader
+* SharePoint Admin
 
 ## HTTP request
 
