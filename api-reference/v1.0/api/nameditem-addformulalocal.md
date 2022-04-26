@@ -3,8 +3,7 @@ title: "Add Named Item FormulaLocal"
 description: Adds a new name to the collection of the given scope using the user's locale for the formula.
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: profile
-ms.technology: microsoft-graph
+ms.prod: non-product-specific
 doc_type: apiPageType
 ---
 

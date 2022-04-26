@@ -3,8 +3,7 @@ title: "List NamedItemCollection"
 description: Learn how to retrieve a list of nameditem objects.
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: profile
-ms.technology: microsoft-graph
+ms.prod: non-product-specific
 doc_type: apiPageType
 ---
 

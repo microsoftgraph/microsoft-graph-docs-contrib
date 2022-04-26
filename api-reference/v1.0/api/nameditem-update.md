@@ -3,8 +3,7 @@ title: "Update nameditem"
 description: "Update the properties of nameditem object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: profile 
-ms.technology: microsoft-graph
+ms.prod: non-product-specific 
 doc_type: apiPageType
 ---
 
