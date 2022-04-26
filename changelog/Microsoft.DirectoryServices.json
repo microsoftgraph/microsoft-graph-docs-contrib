@@ -6,8 +6,8 @@
           "Id": "62535136-e63d-4727-ae28-84d7a9ed964a",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
-          "ChangeType": "Removal",
-          "Description": "Removed the crossTenantAccessPolicyConfigurationBase resource.",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **crossTenantAccessPolicyConfigurationBase** resource.",
           "Target": "crossTenantAccessPolicyConfigurationBase"
         }
       ],
