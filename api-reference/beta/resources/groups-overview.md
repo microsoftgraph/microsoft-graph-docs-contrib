@@ -54,7 +54,7 @@ The power of Microsoft 365 groups is in its collaborative nature, perfect for pe
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -93,7 +93,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 The following JSON object shows a sample representation of a group when you call the Microsoft Graph groups API.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
