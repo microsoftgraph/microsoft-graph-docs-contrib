@@ -1,5 +1,5 @@
 ---
-title: "Get group"
+title: "Get group - Microsoft Graph API"
 description: "Get the properties and relationships of a group object."
 author: "psaffaie"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Get group
+# Get group - Microsoft Graph API
 
 Namespace: microsoft.graph
 
