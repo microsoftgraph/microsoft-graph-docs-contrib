@@ -1,6 +1,6 @@
 ---
 title: "externalActivity resource type"
-description: "Represents activity done involving external items."
+description: "Represents a record of a user interaction with an externalItem object."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents activity done involving external items.
+Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object
 
 
 Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).
