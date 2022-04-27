@@ -1,6 +1,6 @@
 ---
 title: "copyStatusModel resource type"
-description: "Here is a JSON representation of the resource."
+description: "Here is a JSON representation of the copyStatusModel resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: non-product-specific
