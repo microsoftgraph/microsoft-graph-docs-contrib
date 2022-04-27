@@ -108,7 +108,7 @@ Content-Type: application/json
 ---
 
 
-## Example Response
+### Response
 
 The following is an example of the response.
 

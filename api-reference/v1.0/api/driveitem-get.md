@@ -93,7 +93,7 @@ GET /me/drive/root
 ---
 
 
-## Example Response
+### Response
 
 Here is an example of the response.
 

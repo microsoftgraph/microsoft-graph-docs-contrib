@@ -3,7 +3,7 @@ title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: non-product-specific
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
 ---
 
