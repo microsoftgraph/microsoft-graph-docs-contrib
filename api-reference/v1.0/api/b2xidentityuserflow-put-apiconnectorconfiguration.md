@@ -1,7 +1,7 @@
 ---
 title: "Update apiConnectorConfiguration"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
-author: "nickgmicrosoft"
+author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Send replies to a message in a channel"
 description: "Reply to existing message in a channel."
-author: "RamjotSingh"
+author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
