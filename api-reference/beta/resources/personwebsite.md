@@ -35,7 +35,7 @@ Inherits from [itemFacet](itemfacet.md).
 |displayName   |String             | Contains a friendly name for the website.                                                     |
 |webUrl        |String             | Contains a link to the website itself.                                                        |
 
-## Properties
+## More Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
