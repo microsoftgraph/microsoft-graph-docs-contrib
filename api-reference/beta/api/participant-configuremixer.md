@@ -1,7 +1,7 @@
 ---
 title: "participant: configureMixer"
 description: "Configure how audio is mixed for different participants in a multiparty conversation."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -36,6 +36,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |:---|:---|:---|
 |accessPackage|[accessPackage](accesspackage.md)|Read-only. Nullable. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
 |target|[accessPackageSubject](accesspackagesubject.md)|The subject of the access package assignment. Read-only. Nullable. Supports `$expand`. Supports `$filter` (`eq`) on **objectId**.|
+|assignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)|Read-only. Supports `$filter` (`eq`) on the **id** property and `$expand` query parameters.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

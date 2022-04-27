@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                        |
-| Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
+| Delegated (work or school account)     | Not supported.                       |
+| Delegated (personal Microsoft account) | Not supported.                       |
+| Application     | Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All     |
 
 > **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 

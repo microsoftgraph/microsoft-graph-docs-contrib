@@ -3,7 +3,7 @@ title: "Update delegatedAdminAccessAssignment"
 description: "Update the properties of a delegatedAdminAccessAssignment object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 

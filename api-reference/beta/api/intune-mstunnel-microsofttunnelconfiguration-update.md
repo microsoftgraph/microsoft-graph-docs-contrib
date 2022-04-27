@@ -59,10 +59,10 @@ The following table shows the properties that are required when you create the [
 |routesExclude|String collection|Subsets of the routes that will not be routed by the server|
 |splitDNS|String collection|The domains that will be resolved using the provided dns servers|
 |listenPort|Int32|The port that both TCP and UPD will listen over on the server|
-|advancedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Additional settings that may be applied to the server|
+|advancedSettings|[keyValuePair](../resources/intune-mstunnel-keyvaluepair.md) collection|Additional settings that may be applied to the server|
 |lastUpdateDateTime|DateTimeOffset|When the MicrosoftTunnelConfiguration was last updated|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
-|disableUDPConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
+|disableUdpConnections|Boolean|When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to tansfer data.|
 
 
 
@@ -108,7 +108,7 @@ Content-length: 782
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "disableUDPConnections": true
+  "disableUdpConnections": true
 }
 ```
 
@@ -150,7 +150,7 @@ Content-Length: 831
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "disableUDPConnections": true
+  "disableUdpConnections": true
 }
 ```
 
