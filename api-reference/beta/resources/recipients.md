@@ -3,7 +3,8 @@ title: "recipients resource type"
 description: "Here is a JSON representation of the resource"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: outlook
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "MSGraphDocsVteam"
 ---
 
