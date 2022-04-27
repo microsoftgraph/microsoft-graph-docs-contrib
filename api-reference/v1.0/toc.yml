@@ -4934,7 +4934,7 @@ items:
             - name: Role management policies
               items:
               - name: Policies and rules
-                displayName: role management policies
+                displayName: role management policies, Azure AD role settings
                 href: resources/unifiedrolemanagementpolicy.md
                 items:
                 - name: List
