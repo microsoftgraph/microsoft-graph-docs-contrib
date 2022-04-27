@@ -39,9 +39,9 @@ items:
     - name: Throttling
       href: /graph/throttling?context=graph/api/beta
     - name: Change notifications
-      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
+        displayName: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: /graph/api/resources/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
@@ -54,9 +54,9 @@ items:
       - name: Get change notifications for chat and channel messages
         href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
     - name: Change tracking
-      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Overview
+        displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
         href: /graph/delta-query-overview?context=graph/api/beta
       - name: Get changes to events (example)
         href: /graph/delta-query-events?context=graph/api/beta
@@ -67,9 +67,9 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/beta
     - name: Add custom data
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Overview
+        displayName: Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
         href: /graph/extensibility-overview?context=graph/api/beta
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?context=graph/api/beta
@@ -89,9 +89,9 @@ items:
     expanded: false
     items:
     - name: Azure AD Graph
-      displayname: Migration, Azure AD Graph
       items:
       - name: Overview
+        displayName: Azure AD Graph Migration
         href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -1466,9 +1466,9 @@ items:
           - name: Update place
             href: api/place-update.md
     - name: Change notifications
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: resources/webhooks.md
       - name: Subscription
         href: resources/subscription.md
@@ -10867,7 +10867,7 @@ items:
       items:
       - name: Open extensions
         href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -10879,7 +10879,7 @@ items:
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: List schema extensions
           href: api/schemaextension-list.md
@@ -11233,16 +11233,16 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
-      displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
+        displayName: Azure AD, Microsoft identity platform
         href: resources/azure-ad-overview.md
       - name: Customer relationship management
         items:
         - name: Granular delegated admin privileges (preview)
-          displayName: GDAP, Partner Center, CSP, VAR
           items:
           - name: Overview
+            displayName: GDAP, Partner Center, CSP, VAR
             href: resources/delegatedadminrelationships-api-overview.md
           - name: Delegated admin relationships
             href: resources/delegatedadminrelationship.md
@@ -11501,6 +11501,12 @@ items:
           items:
           - name: List domains
             href: api/domain-list.md
+          - name: List domain name references
+            href: api/domain-list-domainnamereferences.md
+          - name: List service configuration records
+            href: api/domain-list-serviceconfigurationrecords.md
+          - name: List verification DNS records
+            href: api/domain-list-verificationdnsrecords.md
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
@@ -13050,9 +13056,9 @@ items:
             - name: Update
               href: api/entitlementmanagementsettings-update.md
         - name: Privileged Identity Management
-          displayName: PIM v2
           items:
           - name: Privileged Identity Management
+            displayName: PIM v2
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated)
             items:
@@ -14706,7 +14712,21 @@ items:
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: List versions
-          href: api/listitem-list-versions.md
+          href: api/listitem-list-versions.md        
+      - name: Document set version
+        items:
+        - name: Document set version
+          href: resources/documentsetversion.md
+        - name: List
+          href: api/listitem-list-documentsetversions.md
+        - name: Create
+          href: api/listitem-post-documentsetversions.md
+        - name: Get
+          href: api/documentsetversion-get.md
+        - name: Delete
+          href: api/documentsetversion-delete.md
+        - name: Restore
+          href: api/documentsetversion-restore.md
       - name: Pages
         items:
         - name: Site page
