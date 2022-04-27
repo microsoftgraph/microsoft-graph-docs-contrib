@@ -11792,8 +11792,8 @@ items:
                     href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
             - name: Role management policies
               items:
-              - name: Policies
-                displayName: role management policies
+              - name: Policies and rules
+                displayName: role management policies, Azure AD role settings
                 href: resources/unifiedrolemanagementpolicy.md
                 items:
                 - name: List
