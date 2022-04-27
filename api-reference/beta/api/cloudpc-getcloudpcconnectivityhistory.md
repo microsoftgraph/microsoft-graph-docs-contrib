@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: reboot
+# cloudPC: getCloudPcConnectivityHistory
 
 Namespace: microsoft.graph
 

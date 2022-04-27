@@ -21,7 +21,7 @@ Represents the details of the cloud pc connectivity health check item.
 |additionalDetails|string|Additional message for this health check.|
 |displayName|string|The connectivity health check item name.|
 |lastHealthCheckDateTime|DateTimeOffset|Timestamp when the last check occurs. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. |
-|result|[cloudPcConnectivityEventResult](#../resources/cloudpcconnectivityevent.md#cloudPcConnectivityEventResult-values)|The result of this health check item. Possible values are: `unknown`, `success`, `failure`.|
+|result|[cloudPcConnectivityEventResult](#../resources/cloudpcconnectivityevent.md#cloudpcconnectivityeventresult-values)|The result of this health check item. Possible values are: `unknown`, `success`, `failure`.|
 
 ## Relationships
 None.
@@ -41,3 +41,4 @@ The following is a JSON representation of the resource.
   "lastHealthCheckDateTime": "String (timestamp)",
   "result": "String"
 }
+```
