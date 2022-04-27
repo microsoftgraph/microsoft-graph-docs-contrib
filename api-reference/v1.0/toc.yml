@@ -4931,30 +4931,30 @@ items:
                     href: api/unifiedroleeligibilityscheduleinstance-get.md
                   - name: Filter by current user
                     href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-          - name: Role management policies
-            items:
-            - name: Policies
-              displayName: role management policies
-              href: resources/unifiedrolemanagementpolicy.md
+            - name: Role management policies
               items:
-              - name: List
-                href: api/policyroot-list-rolemanagementpolicies.md
-              - name: Get
-                href: api/unifiedrolemanagementpolicy-get.md
-              - name: List rules
-                href: api/unifiedrolemanagementpolicy-list-rules.md
-              - name: Get rule
-                href: api/unifiedrolemanagementpolicyrule-get.md
-              - name: Update rule
-                href: api/unifiedrolemanagementpolicyrule-update.md
-            - name: Policy assignments
-              displayName: role managemement policy assignments
-              href: resources/unifiedrolemanagementpolicyassignment.md
-              items:
-              - name: List
-                href: api/policyroot-list-rolemanagementpolicyassignments.md
-              - name: Get
-                href: api/unifiedrolemanagementpolicyassignment-get.md              
+              - name: Policies and rules
+                displayName: role management policies
+                href: resources/unifiedrolemanagementpolicy.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicies.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicy-get.md
+                - name: List rules
+                  href: api/unifiedrolemanagementpolicy-list-rules.md
+                - name: Get rule
+                  href: api/unifiedrolemanagementpolicyrule-get.md
+                - name: Update rule
+                  href: api/unifiedrolemanagementpolicyrule-update.md
+              - name: Policy assignments
+                displayName: role managemement policy assignments
+                href: resources/unifiedrolemanagementpolicyassignment.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicyassignments.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicyassignment-get.md              
       - name: Identity and sign-in
         items:
         - name: Authentication methods
