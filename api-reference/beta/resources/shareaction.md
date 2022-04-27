@@ -5,7 +5,8 @@ ms.date: 09/14/2017
 title: ShareAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 
 # ShareAction resource type

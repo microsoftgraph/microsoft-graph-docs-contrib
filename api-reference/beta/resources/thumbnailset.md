@@ -5,7 +5,8 @@ ms.date: 09/10/2017
 title: ThumbnailSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 # ThumbnailSet resource type
 

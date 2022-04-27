@@ -6,7 +6,8 @@ title: Shared
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ""
----
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 # Shared resource type
 
 Namespace: microsoft.graph

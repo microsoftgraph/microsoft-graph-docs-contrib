@@ -3,7 +3,8 @@ title: "timeStamp resource type"
 description: "Date and time information for a point in time."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "JeremyKelley"
 ---
 

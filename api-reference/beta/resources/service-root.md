@@ -3,7 +3,8 @@ title: "Service root"
 description: "2015-10-25 14:57:30 UTC -->"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: ""
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "MSGraphDocsVteam"
 ---
 

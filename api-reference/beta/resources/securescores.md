@@ -3,7 +3,8 @@ title: "secureScore resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "preetikr"
 ---
 
