@@ -551,7 +551,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "mfaExcludedUserCount",
                 "ChangeType": "Addition",
-                "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://docs.microsoft.com/en-us/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
+                "Description": "Added the **mfaExcludedUserCount** property to the [credentialUserRegistrationsSummary](https://docs.microsoft.com/graph/api/resources/managedTenants-credentialUserRegistrationsSummary?view=graph-rest-beta) resource.",
                 "Target": "credentialUserRegistrationsSummary"
               }
             ],
