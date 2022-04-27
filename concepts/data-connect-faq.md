@@ -42,7 +42,7 @@ We plan to add new datasets going forward and will disclose timelines as appropr
 
 ## What scenarios does Data Connect best address?
 
-Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they may encounter. During our public preview, we've seen customers interested in sales productivity, data archiving and management, organizational optimization, intelligent workflows, and ensuring compliance.
+Organizations that can tap into the large datasets that power their productivity tools can gain tremendous insights into the challenges and opportunities they might encounter. During our public preview, we've seen customers interested in sales productivity, data archiving and management, organizational optimization, intelligent workflows, and ensuring compliance.
 
 ## Is it possible for my data to stay within the organization's subscription with Data Connect?
 
@@ -54,7 +54,7 @@ If you want to build an app for others to use to extract their Microsoft 365 dat
 
 When creating the Data Factory pipeline, you have to provide a service principal to the Microsoft 365 linked service. In Azure, a service principal is a security identity that represents an application/service (as opposed to a user). Microsoft Graph Data Connect uses this service principal as its identity when getting authorized access to your Microsoft 365 data.
 
-If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Data Factory pipeline will likely need access to a storage resource in Azure. The customer would create the service principal with permissions to the storage account for the pipeline to use.
+If you create an Azure managed application for others to use in their tenants, you still provide a service principal for the app to use. This service principal exists in your (the publisher's) tenant. However, if the app needs other service principals, your customer (the installer) creates them in their own tenant. For example, your Data Factory pipeline likely needs access to a storage resource in Azure. The customer creates the service principal with permissions to the storage account for the pipeline to use.
 
 ## How can I check for pending Privileged Access Management requests?
 
@@ -90,14 +90,14 @@ If your Microsoft 365 setup has some users in Exchange Online and some users in 
 
 We don't currently support access to messages or events from resource accounts.
 
-## I see multiple files per ADF pipeline run, but sometimes just one file per run. Why is this happening?
+## Why do I sometimes see multiple files per ADF pipeline run but other times see only one file per run?
 
-Microsoft Graph Data Connect takes the user list for each pipeline run and then distributes the dataset extraction and curation across multiple jobs that run in parallel. For each parallel run, one output file is generated in the data sink defined by you. In some cases, if the user list is small, they may be mapped into one extraction and curation job, and in those cases only one output file would be generated in the data sink.
+Microsoft Graph Data Connect takes the user list for each pipeline run and then distributes the dataset extraction and curation across multiple jobs that run in parallel. For each parallel run, one output file is generated in the data sink defined by you. In some cases, if the user list is small, they might be mapped into one extraction and curation job, and in those cases only one output file would be generated in the data sink.
 
 ## How is billing computed when the count of objects is not a round number?
 
 For billing purposes, Microsoft Graph Data Connect rounds up the extracted object count to the nearest 1000. For example, if you extract 125 objects or 999 objects, you are billed for 1000 objects. Similarly, if you extract between 1001 to 2000 objects, you are billed for 2000 objects.
 
-## My Microsoft 365 copy data activity always fails when initialized via Azure Synapse. Why is this happening?
+## Why does my Microsoft 365 copy data activity always fail when initialized via Azure Synapse?
 
 We do not currently support initializing Microsoft 365 copy data activity via Azure Synapse. We are working toward adding the integration for Azure Synapse initialized activity and will update our documentation when this is completed.
