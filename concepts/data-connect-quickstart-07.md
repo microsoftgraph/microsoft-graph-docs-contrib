@@ -1,5 +1,4 @@
 ---
-description: Follow along to continue the tutorial and build your first ASP.NET application project.
 ms.localizationpriority: medium
 ---
 <!-- markdownlint-disable MD002 MD041 -->

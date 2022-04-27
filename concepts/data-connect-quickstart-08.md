@@ -1,5 +1,4 @@
 ---
-description: The end of the Microsoft Graph Data Connect tutorial.
 ms.localizationpriority: medium
 ---
 <!-- markdownlint-disable MD002 MD041 -->
