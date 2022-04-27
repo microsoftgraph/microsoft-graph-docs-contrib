@@ -32,9 +32,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allChannels|[channel](../resources/channel.md) collection|All channels of the deleted team. |
 |channels|[channel](../resources/channel.md) collection|The channels those are either shared with this deleted team or created in this deleted team.|
-|primaryChannel|[channel](../resources/channel.md)|The primary channels of the deleted team.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
