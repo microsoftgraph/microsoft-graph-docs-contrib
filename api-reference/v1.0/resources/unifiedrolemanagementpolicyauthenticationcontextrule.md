@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyAuthenticationContextRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the authentication context rule for the conditional access policy associated with a role management policy."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

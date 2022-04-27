@@ -1,7 +1,7 @@
 ---
 title: "List roleEligibilityScheduleInstances"
 description: "Get the instances of role eligibilities."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

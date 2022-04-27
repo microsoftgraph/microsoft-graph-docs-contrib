@@ -1,7 +1,7 @@
 ---
 title: "List rules (for a role management policy)"
 description: "Get the rules defined for a role management policy."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: filterByCurrentUser"
 description: "In PIM, retrieve the requests for active role assignments for a particular principal. The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

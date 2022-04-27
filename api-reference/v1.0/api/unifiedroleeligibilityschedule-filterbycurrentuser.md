@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilitySchedule: filterByCurrentUser"
 description: "Retrieve the schedules for role eligibilities for which the signed-in user is the principal."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

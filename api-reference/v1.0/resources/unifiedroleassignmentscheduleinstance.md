@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance resource type"
 description: "Represents the instance for an active role assignment."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

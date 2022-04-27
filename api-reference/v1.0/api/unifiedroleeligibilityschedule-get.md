@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleEligibilitySchedule"
 description: "Retrieve the schedule for a role eligibility operation."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

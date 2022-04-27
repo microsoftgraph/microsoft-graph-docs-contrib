@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentSchedule resource type"
 description: "Represents a schedule for an active role assignment operation."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

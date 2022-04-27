@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleRequest"
 description: "In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

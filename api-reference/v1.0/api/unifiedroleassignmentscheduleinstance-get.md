@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleInstance"
 description: "Get the instance of an active role assignment."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

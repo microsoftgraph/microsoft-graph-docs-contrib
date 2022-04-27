@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilityScheduleInstance: filterByCurrentUser"
 description: "Get the instances of eligible roles for the calling principal."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

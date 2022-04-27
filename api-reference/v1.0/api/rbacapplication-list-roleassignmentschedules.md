@@ -1,7 +1,7 @@
 ---
 title: "List roleAssignmentSchedules"
 description: "Get the schedules for active role assignment operations."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilityScheduleRequest: cancel"
 description: "Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

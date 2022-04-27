@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleManagementPolicyAssignment"
 description: "Get the details of a role management policy assignment and the associated policy."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyExpirationRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the maximum duration a role can be assigned to a principal (either through direct assignment or through activation of eligibility).."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

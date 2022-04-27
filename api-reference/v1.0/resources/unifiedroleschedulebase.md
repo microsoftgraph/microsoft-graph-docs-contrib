@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleScheduleBase resource type"
 description: "A template that exposes properties and relationships used in unifiedRoleAssignmentSchedule and unifiedRoleEligibilitySchedule resource types."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

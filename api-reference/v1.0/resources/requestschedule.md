@@ -1,7 +1,7 @@
 ---
 title: "requestSchedule resource type"
 description: "In PIM, use this resource to define the schedule for when the principal will have an eligible or active role."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

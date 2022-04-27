@@ -1,7 +1,7 @@
 ---
 title: "List roleManagementPolicies"
 description: "Get role management policies and their details."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

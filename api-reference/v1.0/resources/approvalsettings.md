@@ -1,7 +1,7 @@
 ---
 title: "approvalSettings resource type"
 description: "The settings for approval as defined in a role management policy rule."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

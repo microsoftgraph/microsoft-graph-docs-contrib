@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for a role eligibility operation."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

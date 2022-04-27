@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyRule resource type"
 description: "An abstract type that defines the rules associated with role management policies."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

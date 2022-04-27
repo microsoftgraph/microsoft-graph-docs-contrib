@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignmentSchedule"
 description: "Retrieve the schedule for an active role assignment operation."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

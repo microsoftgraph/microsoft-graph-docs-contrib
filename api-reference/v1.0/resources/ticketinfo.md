@@ -1,7 +1,7 @@
 ---
 title: "ticketInfo resource type"
 description: "Represents ticket information related to role assignment and eligibility requests."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

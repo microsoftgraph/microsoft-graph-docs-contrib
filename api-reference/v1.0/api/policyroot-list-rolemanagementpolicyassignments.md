@@ -1,7 +1,7 @@
 ---
 title: "List roleManagementPolicyAssignments"
 description: "Get the details of all role management policy assignments."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

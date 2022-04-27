@@ -1,7 +1,7 @@
 ---
 title: "request resource type"
 description: "Represents the details of a request in PIM or userConsentRequests"
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

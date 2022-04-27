@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleEligibilityScheduleInstance resource type"
 description: "Represents the instance for a role eligibility."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType

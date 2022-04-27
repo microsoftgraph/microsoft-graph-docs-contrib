@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleManagementPolicyRule"
 description: "Retrieve a rule defined for a role management policy."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

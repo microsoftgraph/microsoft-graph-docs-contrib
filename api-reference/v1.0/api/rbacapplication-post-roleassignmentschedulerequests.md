@@ -1,7 +1,7 @@
 ---
 title: "Create unifiedRoleAssignmentScheduleRequest"
 description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleManagementPolicyAssignment resource type"
 description: "The assignment of a role management policy to a role definition object."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
