@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleDefinition: assignedPrincipals"
-description: "Get the list of principals (users and groups) directly or transitively assigned to a specific role for different scopes."
+description: "Get the list of security principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes."
 author: "abhijeetsinha"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of principals (users and groups) that are assigned to a specific role for different scopes either directly or transitively. You can use the `$count` query parameter to also get the count.
+Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively. You can use the `$count` query parameter to also get the count.
 
 To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. At a minimum, a c
 
 To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Read role assignments
+### Read direct role assignments
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
