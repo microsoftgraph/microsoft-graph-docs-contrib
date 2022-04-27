@@ -3,7 +3,7 @@ title: "inferenceClassification resource type"
 description: "Classification of a user's messages to enable focus on those that are more relevant or important to the user. "
 ms.localizationpriority: medium
 author: "abheek-das"
-ms.prod: ""
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 
