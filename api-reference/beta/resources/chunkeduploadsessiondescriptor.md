@@ -3,7 +3,7 @@ title: "chunkedUploadSessionDescriptor resource type"
 description: "Here is a JSON representation of the resource"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 author: "MSGraphDocsVteam"
 ---
 
