@@ -164,7 +164,7 @@ The following is an example of a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-selected-properties-csharp-snippets.md)]
@@ -226,6 +226,18 @@ Content-Type: application/json
       "cloudPcId": "662009bc-7732-4f6f-8726-25883518b33e",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
       "statusDetails": null
+    },
+    "connectivityResult": {
+      "status": "unavailable",
+      "updatedDatetime": "2022-03-22T10:28:32.8260335Z",
+      "failedHealthCheckItems": [
+        {
+          "displayName": "DomainJoinCheck",
+          "result": "failure",
+          "lastHealthCheckDateTime": "2022-03-22T10:28:32.8260335Z",
+          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
+        }
+      ]
     }
 }
 ```
