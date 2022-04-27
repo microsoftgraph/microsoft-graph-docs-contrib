@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Thumbnail
 ms.localizationpriority: medium
 description: "The thumbnail resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 
