@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReviewStatus resource type"
-description: "Represents the details about the review status of a Cloud PC."
+description: "Represents details about the review status of a Cloud PC."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details about the review status of a Cloud PC.
+Represents details about the review status of a Cloud PC.
 
 ## Properties
 |Property|Type|Description|
