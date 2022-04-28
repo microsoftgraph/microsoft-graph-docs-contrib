@@ -67,7 +67,7 @@ The following example gets the access package assignments for users who have ass
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId='4c6bc7cc-c1f4-450e-8e90-2984244ef0fd',incompatibleAccessPackageId='2fda5e0a-459e-eb11-8d2a-9c7bef3841d6')
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId='2506aef1-3929-4d24-a61e-7c8b83d95e6f',incompatibleAccessPackageId='d5d99728-8c0b-4ede-83d2-cf9b0e8dabfb')?$expand=target
 ```
 
 ### Response
@@ -85,7 +85,30 @@ Content-Type: application/json
 {
   "value": [
         {
-            "@odata.type": "#microsoft.graph.accessPackageAssignment"
+            "@odata.type": "#microsoft.graph.accessPackageAssignment",
+            "id": "a61f7889-ae61-4e97-a4dc-e4fa525f5b33",
+            "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+            "accessPackageId": "2506aef1-3929-4d24-a61e-7c8b83d95e6f",
+            "assignmentPolicyId": "07c7c99d-6cf3-4527-bd05-5fc2ac8e96e7",
+            "targetId": "cdbdf152-82ce-479c-b5b8-df90f561d5c7",
+            "target": {
+                "id": "ebaf071e-c647-42c6-b86f-fbe3625b4b63",
+                "objectId": "cdbdf152-82ce-479c-b5b8-df90f561d5c7",
+                "displayName": "user1"
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessPackageAssignment",
+            "id": "a7284263-8233-44de-8095-0ee3ff5a1716",
+            "catalogId": "beedadfe-01d5-4025-910b-84abb9369997",
+            "accessPackageId": "2506aef1-3929-4d24-a61e-7c8b83d95e6f",
+            "assignmentPolicyId": "07c7c99d-6cf3-4527-bd05-5fc2ac8e96e7",
+            "targetId": "79a8f0b6-61dc-41db-b49e-470c278e05b6",
+            "target": {
+                "id": "9865b0f8-868f-42c6-a49b-3067eb4b2da1",
+                "objectId": "79a8f0b6-61dc-41db-b49e-470c278e05b6",
+                "displayName": "user2"
+            }
         }
   ]
 }
