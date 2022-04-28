@@ -41,6 +41,10 @@ The following table shows the parameters that must be supplied with this functio
 | accessPackageId | String |  Indicates the ID of an access package for which the caller would like to retrieve the assignments. Required. |
 | incompatibleAccessPackageId | String | The specific incompatible access package for which the caller would like to retrieve only those assignments where the user also has an assignment to this incompatible access package. Required. |
 
+## Optional query parameters
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
