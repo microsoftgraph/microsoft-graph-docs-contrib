@@ -20,8 +20,7 @@ Represents a record of a user interaction with an [externalItem](externalconnect
 Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 
 ## Properties
