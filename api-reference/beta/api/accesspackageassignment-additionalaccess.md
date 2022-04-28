@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId=`parameterValue`,incompatibleAccessPackageId=`parameterValue`)
+GET /identityGovernance/entitlementManagement/accessPackageAssignments/additionalAccess(accessPackageId='parameterValue',incompatibleAccessPackageId='parameterValue')
 ```
 
 ## Function parameters
