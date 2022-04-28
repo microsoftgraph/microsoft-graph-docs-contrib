@@ -4946,11 +4946,11 @@
       "ChangeList": [
         {
           "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
-          "ApiChange": "Resource",
-          "ChangedApiName": "notifications",
-          "ChangeType": "Update",
-          "Description": "Added rich notification support (includeResourceData set to true) in delegated context for [notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for Teams teams, channels, and chats.",
-          "Target": "notifications"
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Target": "subscription"
         }
       ],
       "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
@@ -4964,11 +4964,11 @@
       "ChangeList": [
         {
           "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
-          "ApiChange": "Resource",
-          "ChangedApiName": "notifications",
-          "ChangeType": "Update",
-          "Description": "Added rich notification support (includeResourceData set to true) in delegated context for [notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for Teams teams, channels, and chats.",
-          "Target": "notifications"
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Target": "subscription"
         }
       ],
       "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
