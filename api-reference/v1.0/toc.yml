@@ -7069,6 +7069,19 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Checklist item
+        href: resources/checklistitem.md
+        items:
+        - name: List
+          href: api/todotask-list-checklistitems.md
+        - name: Create
+          href: api/todotask-post-checklistitems.md
+        - name: Get
+          href: api/checklistitem-get.md
+        - name: Update
+          href: api/checklistitem-update.md
+        - name: Delete
+          href: api/checklistitem-delete.md
       - name: Linked resource
         href: resources/linkedresource.md
         items:
