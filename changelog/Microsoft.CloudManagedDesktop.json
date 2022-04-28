@@ -55,6 +55,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcLaunchInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcLaunchInfo?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcLaunchInfo"
+                },
+                {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getCloudPcLaunchInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getCloudPcLaunchInfo](https://docs.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "GET",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-beta) operation to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "user"
+                }
+            ],
+            "Id": "d3fc3f51-831e-4903-8360-299755b9cc1a",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-04-27T14:13:04.317411Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "a3dea8d3-2b75-4ffc-932b-1358da5bc1f1",
                     "ApiChange": "Permission",
                     "ChangedApiName": "RoleManagement.Read.CloudPC",
