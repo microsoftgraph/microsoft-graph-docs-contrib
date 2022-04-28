@@ -4,7 +4,6 @@ description: "Represents a website."
 ms.localizationpriority: medium
 author: "AAmatino"
 ms.prod: applications
-ms.technology: microsoft-graph
 doc_type: resourcePageType
 ---
 
