@@ -4,7 +4,8 @@ ms.date: 09/10/2017
 title: Video
 ms.localizationpriority: medium
 description: "The Video resource groups video-related data items into a single structure."
-ms.prod: ""
+ms.prod: applications
+ms.technology: microsoft-graph
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,8 @@ title: "website resource type"
 description: "Represents a website."
 ms.localizationpriority: medium
 author: "AAmatino"
-ms.prod: ""
+ms.prod: applications
+ms.technology: microsoft-graph
 doc_type: resourcePageType
 ---
 
