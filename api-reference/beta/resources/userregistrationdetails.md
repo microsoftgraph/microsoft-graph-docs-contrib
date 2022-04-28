@@ -54,6 +54,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userRegistrationDetails",
+  "defaultMethod": "String",
   "id": "String (identifier)",
   "userDisplayName": "String",
   "userPrincipalName": "String",
