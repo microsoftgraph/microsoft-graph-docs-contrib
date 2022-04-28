@@ -36,7 +36,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Update column values][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-| [List changes for all Items in the List][item-changes]    | GET /items/{item-id}/delta
+| [Get delta][item-changes]    | GET /items/{item-id}/delta
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md

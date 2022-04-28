@@ -365,10 +365,10 @@
         {
           "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
           "ApiChange": "Resource",
-          "ChangedApiName": "",
+          "ChangedApiName": "delta, listitems",
           "ChangeType": "Addition",
-          "Description": "Added _delta_ function to track changes to listItems. Example: GET /sites/{siteId}/lists/{listId}/items/delta",
-          "Target": ""
+          "Description": "Added the [revokeGrants](https://docs.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-beta) method to the [listitem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listitem"
         }
       ],
       "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",

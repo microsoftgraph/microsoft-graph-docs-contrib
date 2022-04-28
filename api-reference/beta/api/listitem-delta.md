@@ -1,6 +1,6 @@
 ---
 author: "learafa"
-description: "This method allows your app to track changes to a list and its items over time."
+description: "Get newly created, updated, or deleted list item without having to perform a full read of the entire items collection."
 title: "lisItem: delta"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This method allows your app to track changes to a list and its items over time.
+Get newly created, updated, or deleted list item without having to perform a full read of the entire items collection.
 
 Your app begins by calling `delta` without any parameters.
 The service starts enumerating the list's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
@@ -21,6 +21,8 @@ Your app should continue calling with the `@odata.nextLink` until you see an `@o
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
+The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
+The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 Deleted items are returned with the [deleted facet](../resources/deleted.md). Deleted indicates that the item is deleted and cannot be restored.
 Items with this property should be removed from your local state.
 
@@ -73,9 +75,20 @@ In addition to the a collection of **listItem** objects, the response will also 
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
+In some cases, the service will return a `410 Gone` response code with an error response containing one of the following error codes, and a `Location` header containing a new `nextLink` that starts a fresh delta enumeration from scratch. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+
+After full enumeration is complete, compare the returned items with your local state and follow the following instructions:
+
+| Error type                       | Instructions                                                                                                                               |
+|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
+| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any items that differ from the server's version (keep both copies if you're not sure which one is more up-to-date).                                       |
+
+In addition to the resync errors, see [Error Responses][error-response] for details about how errors are returned.
+
 ## Examples
 
-### Example 1:
+### Example 1: Inital Request
 
 The following is an example of the initial request that shows how to call this API to establish your local state.
 
@@ -86,7 +99,7 @@ The following is an example of the initial request.
 <!-- { "blockType": "request", "name": "get_listItem_delta_first" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/delta
 ```
 
 #### Response
@@ -165,11 +178,11 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}delta?token=1230919asd190410jlka"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}delta?token=1230919asd190410jlka"
 }
 ```
 
-### Example 2:
+### Example 2: Last page Request
 
 The following is an example of a request that shows the last page in a set and how to call this API to update your local state.
 
@@ -180,7 +193,7 @@ The following is an example of a request after the initial request.
 <!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
+GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
 ```
 
 #### Response
@@ -189,14 +202,6 @@ The following is an example of the response that indicates that the item named `
 
 The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
-In some cases, the service will return a `410 Gone` response code with an error response containing one of the following error codes, and a `Location` header containing a new `nextLink` that starts a fresh delta enumeration from scratch. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-
-After full enumeration is complete, compare the returned items with your local state and follow the following instructions:
-
-| Error type                       | Instructions                                                                                                                               |
-|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
-| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any items that differ from the server's version (keep both copies if you're not sure which one is more up-to-date).                                       |
 
 <!-- { "blockType": "response", "name": "get-listItem-delta-last", "truncated": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true,  "scope": "site.read" } -->
 
@@ -239,11 +244,11 @@ Content-type: application/json
             "deleted": {"state": "deleted"}
         }
     ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
 }
 ```
 
-### Example 3:
+### Example 3: Delta link request
 
 In some scenarios, it may be useful to request the current `deltaLink` value without first enumerating all of the items in the list already.
 
@@ -272,19 +277,9 @@ Content-type: application/json
 
 {
     "value": [ ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
 }
 ```
-
-## Remarks
-
-* The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
-
-* The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
-
-## Error responses
-
-In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
 [error-response]: /graph/errors
 
