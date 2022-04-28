@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate additional access for a target user.  This can be used to prepare to configure the incompatible access packages for a specific access package.
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.  This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,12 +34,12 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ```
 
 ## Function parameters
-The following table shows the parameters that must be supplied with this function.
+The following table shows the parameters that must be supplied with this function.  The two access package IDs must be distinct.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| accessPackageId | String |  Indicates the ID of an access package for which the caller would like to retrieve the assignments. |
-| incompatibleAccessPackageId | String | Returns the assignments for users who also have assignments to another, incompatible, access package. |
+| accessPackageId | String |  Indicates the ID of an access package for which the caller would like to retrieve the assignments. Required. |
+| incompatibleAccessPackageId | String | The specific incompatible access package for which the caller would like to retrieve only those assignments where the user also has an assignment to this incompatible access package. Required. |
 
 ## Request headers
 |Name|Description|
