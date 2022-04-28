@@ -1,6 +1,6 @@
 ---
 title: "List operations"
-description: "Get the list of richLongRunningOperations associated with a list."
+description: "Get a list of richLongRunningOperations associated with a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Get the list of [richLongRunningOperations](../resources/richlongrunningoperation.md) associated with a [list](../resources/list.md).
+Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [list](../resources/list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
