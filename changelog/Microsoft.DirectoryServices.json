@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "62535136-e63d-4727-ae28-84d7a9ed964a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantAccessPolicyConfigurationBase",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **crossTenantAccessPolicyConfigurationBase** resource.",
+          "Target": "crossTenantAccessPolicyConfigurationBase"
+        }
+      ],
+      "Id": "62535136-e63d-4727-ae28-84d7a9ed964a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-26T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5db23135-2470-428b-98ab-dd33f3c8a5cf",
           "ApiChange": "Member",
           "ChangedApiName": "customPasswordAddition",
