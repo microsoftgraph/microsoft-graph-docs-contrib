@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the instance for an active role assignment in your tenant. The active assignment may have been made through [PIM assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), or directly through the [role assignments API](../resources/unifiedroleassignment.md).
+Represents the instance for an active role assignment in your tenant. The active assignment may have been made through [PIM assignments and activation requests](../resources/rbacapplication-post-roleassignmentschedulerequests.md), or directly through the [role assignments API](../resources/unifiedroleassignment.md).
 
 Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
