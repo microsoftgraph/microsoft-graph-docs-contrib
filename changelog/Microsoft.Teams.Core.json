@@ -4967,7 +4967,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0).",
           "Target": "subscription"
         }
       ],
