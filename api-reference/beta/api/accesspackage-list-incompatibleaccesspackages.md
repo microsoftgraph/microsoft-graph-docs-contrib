@@ -64,6 +64,8 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
+```
+
 ### Response
 
 The following is an example of the response.
