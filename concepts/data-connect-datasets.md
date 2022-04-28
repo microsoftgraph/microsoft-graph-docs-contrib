@@ -45,23 +45,30 @@ Data connect supports several datasets today, including Azure Active Directory, 
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
 | BasicDataSet_v0.TeamChat_v1 | Contains [Teams chat messages](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2) for one-on-one and group chat messages. This dataset excludes chat messages explicitly deleted by users. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| BasicDataSet_v0.TeamChannelDetails |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| BasicDataSet_v0.TeamChannelMessage |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| TeamChannelDetails_v0 | Contains a Teams Channel details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/TeamsChannelDetails_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamsChannelDetails_v0.md)</li></ul> | [Free](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| GroupDetails_v0 | Contains a Teams Chat Group details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupDetails_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupDetails_v0.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| GroupMembers_v0 | Contains a Teams Chat Group member details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupMembers_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupMembers_v0.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| GroupOwners_v0 | Contains the Teams Chat Group owners details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupOwners_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupOwners_v0.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
 
 ### OneDrive and SharePoint Online
 
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
 | DocumentSharingDataset_v0_Preview | Contains information about sharing permissions of documents. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| FileActivityDataset_v0 |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| SiteUsageDataset_v0 |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
 
+<!--
+| FileActivityDataset_v0 |  | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| SiteUsageDataset_v0 |  | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) | 
+-->
+
+<!--
 ### Viva Insights
 
 | Dataset name | Description | Sample and Schema | Billing |
 |--|--|--|--|
-| CollaborationMetrics_v0 |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
-| ManagerHours_v0 |  |  | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| CollaborationMetrics_v0 |  | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) |
+| ManagerHours_v0 |  | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul> | [Paid](https://azure.microsoft.com/pricing/details/graph-data-connect/) | 
+-->
 
 ## Regions
 
