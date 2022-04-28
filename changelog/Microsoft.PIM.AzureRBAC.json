@@ -2,53 +2,100 @@
   "changelog": [
     {
       "ChangeList": [
-        
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleAssignmentScheduleRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentScheduleRequests** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
+        },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleAssignmentScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to assign and manage active role assignments to a principal through Privileged Identity Management (PIM).",
           "Target": "unifiedRoleAssignmentScheduleRequest"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleAssignmentSchedules",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentSchedules** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleAssignmentSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignmentSchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentSchedule?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleAssignmentSchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentSchedule?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify the active role assignments in your tenant.",
           "Target": "unifiedRoleAssignmentSchedule"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleAssignmentScheduleInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentScheduleInstances** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleAssignmentScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleAssignmentScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleInstance?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleAssignmentScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleInstance?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify all instances of active role assignments in your tenant.",
           "Target": "unifiedRoleAssignmentScheduleInstance"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleEligibilityScheduleRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleEligibilityScheduleRequests](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to assign and manage active role assignments to a principal through Privileged Identity Management (PIM).",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleEligibilityScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to assign and manage role eligibilities for principals through Privileged Identity Management (PIM).",
           "Target": "unifiedRoleEligibilityScheduleRequest"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleEligibilitySchedules",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleEligibilitySchedules** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleEligibilitySchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleEligibilitySchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilitySchedule?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleEligibilitySchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilitySchedule?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify the assignments of role eligibilities in your tenant.",
           "Target": "unifiedRoleEligibilitySchedule"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleEligibilityScheduleInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleEligibilityScheduleInstances** relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
+          "Target": "rbacApplication"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleEligibilityScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleEligibilityScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleInstance?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleEligibilityScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleInstance?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify all instances of role eligibilities in your tenant.",
           "Target": "unifiedRoleEligibilityScheduleInstance"
         },
         {
@@ -106,14 +153,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **roleEligibilityScheduleRequestFilterByCurrentUserOptions** enumeration type.",
           "Target": "roleEligibilityScheduleRequestFilterByCurrentUserOptions"
-        },
-        {
-          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Enum type",
-          "ChangedApiName": "unifiedRoleManagementPolicyRuleTargetOperations",
-          "ChangeType": "Addition",
-          "Description": "Added the **unifiedRoleManagementPolicyRuleTargetOperations** enumeration type.",
-          "Target": "unifiedRoleManagementPolicyRuleTargetOperations"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -189,10 +228,18 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleManagementPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleManagementPolicies** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicy?view=graph-rest-1.0) resource and related methods.",
+          "Description": "Added the [unifiedRoleManagementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicy?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify the policies and manage the associated rules and settings for Azure AD RBAC roles.",
           "Target": "unifiedRoleManagementPolicy"
         },
         {
@@ -202,6 +249,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [unifiedRoleManagementPolicyRuleTarget](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyRuleTarget?view=graph-rest-1.0) resource type.",
           "Target": "unifiedRoleManagementPolicyRuleTarget"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "unifiedRoleManagementPolicyRuleTargetOperations",
+          "ChangeType": "Addition",
+          "Description": "Added the **unifiedRoleManagementPolicyRuleTargetOperations** enumeration type.",
+          "Target": "unifiedRoleManagementPolicyRuleTargetOperations"
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
@@ -229,10 +284,18 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roleManagementPolicyAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleManagementPolicyAssignments** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleManagementPolicyAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [unifiedRoleManagementPolicyAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [unifiedRoleManagementPolicyAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyAssignment?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to identify the policies that are assigned to Azure AD RBAC roles, and their rules and settings.",
           "Target": "unifiedRoleManagementPolicyAssignment"
         },
         {
@@ -295,7 +358,7 @@
       "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-03-23T00:55:37.0291684Z",
+      "CreatedDateTime": "2022-04-28T00:55:37.0291684Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }

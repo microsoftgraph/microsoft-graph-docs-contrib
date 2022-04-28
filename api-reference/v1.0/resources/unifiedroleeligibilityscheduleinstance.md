@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleEligibilityScheduleInstance resource type"
-description: "Represents the instance for a role eligibility."
+description: "Represents the instance for a role eligibility in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the instance for a role eligibility.
+Represents the instance for a role eligibility in your tenant.
 
 Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 

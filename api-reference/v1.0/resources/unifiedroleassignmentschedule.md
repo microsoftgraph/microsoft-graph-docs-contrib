@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentSchedule resource type"
-description: "Represents a schedule for an active role assignment operation."
+description: "Represents a schedule for an active role assignment in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a schedule for an active role assignment operation and is used to instantiate a [unifiedRoleAssignmentScheduleInstance](unifiedroleassignmentscheduleinstance.md).
+Represents a schedule for an active role assignment in your tenant and is used to instantiate a [unifiedRoleAssignmentScheduleInstance](unifiedroleassignmentscheduleinstance.md). The active assignment may have been made through [PIM assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), or directly through the [role assignments API](../resources/unifiedroleassignment.md).
 
 Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
 

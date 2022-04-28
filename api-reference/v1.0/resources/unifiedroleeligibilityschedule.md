@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleEligibilitySchedule resource type"
-description: "Represents a schedule for a role eligibility operation."
+description: "Represents a schedule for a role eligibility in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a schedule for a role eligibility operation and is used to instantiate a [unifiedRoleEligibilityScheduleInstance](unifiedroleeligibilityscheduleinstance.md).
+Represents a schedule for a role eligibility in your tenant and is used to instantiate a [unifiedRoleEligibilityScheduleInstance](unifiedroleeligibilityscheduleinstance.md).
 
 
 Inherits from [unifiedRoleScheduleBase](../resources/unifiedroleschedulebase.md).
