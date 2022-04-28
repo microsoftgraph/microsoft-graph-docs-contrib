@@ -38,7 +38,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
 | [Delete](../api/educationclass-delete.md)                               | None                                           | Delete **educationClass** object.                                                         |
-| [Get delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
+| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**.                                          |
 
 ## Properties
 
