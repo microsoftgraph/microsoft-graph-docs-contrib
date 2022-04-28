@@ -1,6 +1,6 @@
 ---
 title: "List pinned message info of a chat"
-description: "Retrieve list of  pinned message info of a chat."
+description: "Retrieve list of pinned message info of a chat."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"

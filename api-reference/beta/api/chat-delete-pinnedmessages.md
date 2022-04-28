@@ -1,6 +1,6 @@
 ---
-title: "Unpin a message from chat"
-description: "Unpin a message from chat."
+title: "Unpin a message from a chat"
+description: "Unpin a message from a chat."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
