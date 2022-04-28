@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicy resource type"
 description: "Specifies the various policies associated with scopes and roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Create unifiedRoleEligibilityScheduleRequest"
 description: "In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

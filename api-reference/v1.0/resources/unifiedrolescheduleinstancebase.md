@@ -3,7 +3,7 @@ title: "unifiedRoleScheduleInstanceBase resource type"
 description: "A template that exposes properties and relationships used in unifiedRoleAssignmentScheduleInstance and unifiedRoleEligibilityScheduleInstance resource types."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

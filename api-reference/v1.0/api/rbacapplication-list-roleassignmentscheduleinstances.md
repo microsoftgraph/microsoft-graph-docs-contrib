@@ -3,7 +3,7 @@ title: "List roleAssignmentScheduleInstances"
 description: "Get the instances of active role assignments in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

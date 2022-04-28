@@ -3,7 +3,7 @@ title: "Overview of role management through the privileged identity management (
 description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

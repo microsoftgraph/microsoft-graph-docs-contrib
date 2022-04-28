@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyApprovalRule resource type"
 description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines rules for approving a role assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

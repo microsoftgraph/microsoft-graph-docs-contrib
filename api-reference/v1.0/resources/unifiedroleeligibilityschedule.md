@@ -3,7 +3,7 @@ title: "unifiedRoleEligibilitySchedule resource type"
 description: "Represents a schedule for a role eligibility in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

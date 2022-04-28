@@ -3,7 +3,7 @@ title: "unifiedRoleAssignmentSchedule resource type"
 description: "Represents a schedule for an active role assignment in your tenant."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "unifiedApprovalStage resource type"
 description: "Defines the settings of the approval stages in a unifiedRoleManagementPolicyApprovalRule object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

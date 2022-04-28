@@ -3,7 +3,7 @@ title: "unifiedRoleAssignmentScheduleInstance: filterByCurrentUser"
 description: "Get the instances of active role assignments for the calling principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

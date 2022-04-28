@@ -3,7 +3,7 @@ title: "List roleEligibilitySchedules"
 description: "Get the schedules for role eligibility operations."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

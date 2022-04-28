@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicyRule"
 description: "Update a rule defined for a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

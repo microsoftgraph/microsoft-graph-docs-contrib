@@ -3,7 +3,7 @@ title: "List roleAssignmentScheduleRequests"
 description: "In PIM, retrieve the requests for active role assignments to principals made through the unifiedRoleAssignmentScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

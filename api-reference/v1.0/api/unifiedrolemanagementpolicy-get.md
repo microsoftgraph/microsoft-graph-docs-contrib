@@ -3,7 +3,7 @@ title: "Get unifiedRoleManagementPolicy"
 description: "Retrieve the details of a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
