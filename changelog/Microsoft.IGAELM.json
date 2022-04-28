@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "additionalAccess",
           "ChangeType": "Addition",
-          "Description": "Added the **additionalAccess** API to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [additionalAccess[(https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) resource.",
           "Target": "accessPackageAssignment"
         }
       ],
