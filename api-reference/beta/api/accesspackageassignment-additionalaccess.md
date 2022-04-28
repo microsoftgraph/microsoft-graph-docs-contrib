@@ -34,7 +34,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/additiona
 ```
 
 ## Function parameters
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that must be supplied with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
