@@ -19,9 +19,9 @@ To get change notifications for membership changes in a particular team, subscri
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
+|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta, v1.0 |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta, v1.0 |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -55,7 +55,7 @@ To get change notifications for membership changes in all private channels in a 
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMember.Read.All   | beta |
+|Application | ChannelMember.Read.All   | beta, v1.0 |
 
 
 ### Example
