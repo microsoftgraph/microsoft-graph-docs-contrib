@@ -324,6 +324,14 @@ items:
           href: api/user-list-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+      - name: Cloud PC
+        items:
+        - name: Cloud PC
+          href: resources/cloudpc.md
+        - name: List
+          href: api/user-list-cloudpcs.md
+        - name: Get launch info
+          href: api/cloudpc-getcloudpclaunchinfo.md
       - name: Contacts
         items:
         - name: Contact
@@ -10211,6 +10219,10 @@ items:
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
+          - name: List for user 
+            href: api/user-list-cloudpcs.md
+          - name: Get launch info for user
+            href: api/cloudpc-getcloudpclaunchinfo.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
