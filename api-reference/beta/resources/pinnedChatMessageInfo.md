@@ -1,6 +1,6 @@
 ---
 title: "pinnedChatMessageInfo resource type"
-description: "Represents an individual pinned message in a channel or chat entity.
+description: "Represents an individual pinned message in a channel or chat entity."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -15,25 +15,24 @@ Namespace: microsoft.graph
 
 Represents an individual pinned message in a [channel](channel.md) or [chat](chat.md) entity.
 
-## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|**Chat messages**| | |
-|[List pinned messages in chat](../api/chat-list-pinnedMessages.md)  | [pinnedChatMessageInfo](../resources/pinnedChatMessageInfo.md) | List pinned messages in a chat. |
-|[Pin a message in chat](../api/pinnedmessage-update.md)  | [pinnedChatMessageInfo](../resources/pinnedChatMessageInfo.md) | Pin a chat message in a chat. |
-|[Unpin a messages in chat](../api/pinnedmessage-delete.md)| None | Unpin a chat message in a chat.|
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List pinned messages in chat](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
+|[Pin a message in chat](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
+|[Unpin a messages from chat](../api/chat-delete-pinnedmessages.md)|None|Unpin a chat message from a chat.|
 
 ## Properties
-
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
+|Property|Type|Description|
+|:---|:---|:---|
 | id| String| Read-only. ID of the [chatMessage](../resources/chatmessage.md). |
 
 ## Relationships
-
-| Relationship | Type |Description|
-|:---------------|:--------|:----------|
+|Relationship|Type|Description|
+|:---|:---|:---|
 | message | [chatMessage](../resources/chatmessage.md) | Represents detail of chat message that is pinned.|
 
 ## JSON representation
@@ -49,12 +48,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.pinnedChatMessageInfo",
-  "id": "String (identifier)"  
-  }
+  "id": "String (identifier)"
 }
 ```
 
-## See also
-
-- [chat](../resources/chat.md)
-- [chatMessage](../resources/chatmessage.md)
