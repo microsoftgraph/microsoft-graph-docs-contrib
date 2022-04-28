@@ -23,6 +23,10 @@ A subclass of [educationResource](educationresource.md). Teams App are type of a
 |appIconWebUrl|string|URL that points to the app's icon|
 |teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams|
 |webUrl|string|URL for the app resource that can be opened in the browser|
+|createdBy|String|The display name of the user that created this resource.|
+|createdDateTime|DateTimeOffset|Date time the resoruce was added.|
+|lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 
 ## JSON representation
@@ -43,7 +47,11 @@ The following is a JSON representation of the resource.
   "appId": "Unique String",
   "appIconWebUrl": "String URL",
   "teamsEmbeddedContentUrl": "String URL",
-  "webUrl": "String URL"
+  "webUrl": "String URL",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"  
 }
 
 ```
