@@ -41,7 +41,7 @@ Graph Explorer includes the following elements:
 
 ## Make a GET request in Graph Explorer
 
-To run a GET request in Graph Explorer, you don’t have to be signed in. Just choose a sample query and sample data shows in the response preview. 
+To run a GET request in Graph Explorer, you don’t have to be signed in. Just choose a sample query, and sample data shows in the response preview. 
 
 :::image type="content" source="./images/making-a-get-request.png" alt-text="Screenshot of a sample request in Graph Explorer." border="true":::
 
@@ -58,7 +58,7 @@ When you sign in to Graph Explorer and choose the same query, the response is re
 To try POST, PUT, PATCH, and DELETE requests, sign in to Graph Explorer by using a Microsoft 365 account. This can be an organizational account for testing or demonstration purposes. To get a free sample Microsoft 365 E5 developer subscription, along with tools and other resources to help you build solutions for the Microsoft 365 platform, join the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). 
 
 >[!IMPORTANT]
->If you choose to sign in by using your organizational account, running a non-GET request can affect the data in the tenant.
+>If you choose to sign in by using your organizational account, running a non-GET request might affect the data in the tenant.
 
 For example, to run a POST request, select POST in the drop-down list for the HTTP verb, and add a request body and request headers as appropriate.
 
@@ -66,10 +66,10 @@ For example, to run a POST request, select POST in the drop-down list for the HT
 
 1. Select a POST sample query.
 2. Update **Request body**; for example, give the application a name.
-3. Click **Run query**.
+3. Select **Run query**.
 4. See the response from the Microsoft Graph API.
 
-To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and click **Add**.
+To view the response in a format other than the default JSON, choose the **Request headers** tab in the request pane, define the key/value pair, and then select **Add**.
 
 :::image type="content" source="./images/adding-key-value-pairs.png" alt-text="Screenshot that shows the Request headers tab in Graph Explorer." border="true":::
 
