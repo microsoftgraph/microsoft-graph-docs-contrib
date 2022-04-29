@@ -162,16 +162,16 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getStorageAccounts",
                     "ChangeType": "Addition",
-                    "Description": "Added the getStorageAccounts method to the getStorageAccounts resource.",
-                    "Target": "getStorageAccounts"
+                    "Description": "Added the getStorageAccounts method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSnapshot"
                     },
                     {
                     "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
                     "ApiChange": "Method",
                     "ChangedApiName": "getSubscriptions",
                     "ChangeType": "Addition",
-                    "Description": "Added the getSubscriptions method to the getSubscriptions resource.",
-                    "Target": "getSubscriptions"
+                    "Description": "Added the getSubscriptions method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSnapshot"
                     }
             ],
             "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
