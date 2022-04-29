@@ -4,6 +4,7 @@ description: "Links for opening a OneNote page."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "jewan-microsoft"
 ---
 

@@ -3,7 +3,8 @@ title: "multiValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a collection of values."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: non-product-specific
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "abheek-das"
 ---
 

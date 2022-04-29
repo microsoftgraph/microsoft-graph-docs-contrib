@@ -5,7 +5,8 @@ ms.date: 09/14/2017
 title: ItemActionStat
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 ---
 # itemActionStat resource type
 
