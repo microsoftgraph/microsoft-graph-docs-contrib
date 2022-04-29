@@ -6,7 +6,6 @@ title: Package
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 ---
 # Package resource type
 

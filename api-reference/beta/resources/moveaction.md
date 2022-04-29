@@ -5,8 +5,7 @@ ms.date: 09/14/2017
 title: MoveAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: sites-and-lists
 ---
 
 # MoveAction resource type

@@ -4,7 +4,6 @@ description: "A section in a OneNote notebook. Sections can contain pages."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "jewan-microsoft"
 ---
 

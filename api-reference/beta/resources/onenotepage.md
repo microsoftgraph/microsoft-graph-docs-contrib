@@ -4,7 +4,6 @@ description: "A page in a OneNote notebook."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: onenote
-ms.technology: microsoft-graph
 author: "jewan-microsoft"
 ---
 

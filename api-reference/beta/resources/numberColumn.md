@@ -6,7 +6,6 @@ title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 ---
 
 # NumberColumn resource type
