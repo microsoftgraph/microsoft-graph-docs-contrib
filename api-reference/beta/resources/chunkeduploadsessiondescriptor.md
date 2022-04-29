@@ -3,7 +3,7 @@ title: "chunkedUploadSessionDescriptor resource type"
 description: "Here is a JSON representation of the chunkedUploadSessionDescriptor resource"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: files
+ms.prod: non-product-specific
 author: "MSGraphDocsVteam"
 ---
 
