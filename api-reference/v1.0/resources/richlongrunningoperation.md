@@ -1,6 +1,6 @@
 ---
 title: "richLongRunningOperation resource type"
-description: "Contains metadata about long running operation."
+description: "Represents the status of a long-running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -11,13 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains metadata about long running operation.
+Represents the status of a long-running operation.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List richLongRunningOperations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a site.|
-|[List richLongRunningOperations in a list](../api/list-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of the [richLongRunningOperation](../resources/richlongrunningoperation.md) objects and their properties in a list.|
 |[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Read the properties of a [richLongRunningOperation](../resources/richlongrunningoperation.md) object.|
 
 ## Properties
@@ -49,17 +47,17 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.richLongRunningOperation",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "lastActionDateTime": "String (timestamp)",
-  "resourceLocation": "String",
-  "status": "String",
-  "statusDetail": "String",
+  "id": "String (identifier)",
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
+  "lastActionDateTime": "String (timestamp)",
   "percentageComplete": "Integer",
   "resourceId": "String",
+  "resourceLocation": "String",
+  "status": "String",
+  "statusDetail": "String",
   "type": "String"
 }
 ```

@@ -59,7 +59,7 @@ If successful, this action returns a `200 OK` response code and a [contentType](
 ## Examples
 
 ### Example 1: Synchronous pull
-
+A content type will be added or synced synchronously based on certain conditions. Here is an example of a synchronous operation.
 #### Request
 
 The following is an example of a request.
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
+POST https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/addCopyFromContentTypeHub
 Content-Type: application/json
 Content-length: 33
 
@@ -106,6 +106,7 @@ Content-Type: application/json
 ```
 
 ### Example 2: Asynchronous pull
+A content type will be added or synced asynchronously if the conditions to add or sync it synchronously are not met. Here is an example of an asynchronous operation.
 
 #### Request
 
@@ -117,12 +118,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/contentTypes/addCopyFromContentTypeHub
+POST https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/addCopyFromContentTypeHub
 Content-Type: application/json
 Content-length: 33
 
 {
-  "contentTypeId": "String"
+  "contentTypeId": "0x0101"
 }
 ```
 
@@ -137,5 +138,5 @@ The following is an example of the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-location: https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/operations/{operationId}
+location: https://graph.microsoft.com/v1.0/sites/root/lists/Documents/operations/contentTypeCopy,0x0101
 ```

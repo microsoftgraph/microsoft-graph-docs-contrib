@@ -1,6 +1,6 @@
 ---
 title: "contentType: getCompatibleHubContentTypes"
-description: "Get compatible content types in content type hub that can be added to a target site or a list."
+description: "Get a list of compatible content types from the content type hub that can be added to a target site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -10,8 +10,7 @@ doc_type: apiPageType
 # contentType: getCompatibleHubContentTypes
 Namespace: microsoft.graph
 
-
-Get compatible content types in the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
+Get a list of compatible content types from the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).
 
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a "push everywhere" to "pull as needed" approach. The method allows users to pull content types directly from the content type hub to a site or list. For more information, see [contentType: addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) and the blog post [Syntex Product Updates – August 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
@@ -59,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/lists/{listId}/contentTypes/getCompatibleHubContentTypes
+GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/getCompatibleHubContentTypes
 ```
 
 ### Response

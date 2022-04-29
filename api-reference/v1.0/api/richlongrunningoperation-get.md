@@ -1,6 +1,6 @@
 ---
 title: "Get richLongRunningOperation"
-description: "Read the properties of a richLongRunningOperation object."
+description: "Get the status of a rich long-running operation."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get richLongRunningOperation
 Namespace: microsoft.graph
 
-Read the properties of a [richLongRunningOperation](../resources/richlongrunningoperation.md) object.
+Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/operations/{richLongRunningOperation-ID}
+GET https://graph.microsoft.com/v1.0/sites/root/operations/contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE
 ```
 
 

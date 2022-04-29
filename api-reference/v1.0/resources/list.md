@@ -30,6 +30,7 @@ All examples below are relative to a site, for example, `https://graph.microsoft
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 | [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
+|[List richLongRunningOperations in a list](../api/list-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [list](../resources/list.md).
 
 [Get list]: ../api/list-get.md
 [Create list]: ../api/list-create.md
@@ -75,6 +76,7 @@ The **list** resource has the following relationships to other resources.
 | **items**         | Collection([listItem][])         | All items contained in the list.
 | **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
+| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the list. 
 | **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
 
 [baseItem]: baseitem.md

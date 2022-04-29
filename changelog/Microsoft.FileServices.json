@@ -2528,26 +2528,10 @@
         {
           "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
           "ApiChange": "Resource",
-          "ChangedApiName": "entity",
-          "ChangeType": "Addition",
-          "Description": "Added the [entity](https://docs.microsoft.com/en-us/graph/api/resources/entity?view=graph-rest-1.0) resource",
-          "Target": "entity"
-        },
-        {
-          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
-          "ApiChange": "Resource",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
           "Target": "list"
-        },
-        {
-          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "longRunningOperation",
-          "ChangeType": "Addition",
-          "Description": "Added the [longRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/longRunningOperation?view=graph-rest-1.0) resource",
-          "Target": "longRunningOperation"
         },
         {
           "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
