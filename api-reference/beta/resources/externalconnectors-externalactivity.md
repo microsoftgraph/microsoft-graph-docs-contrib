@@ -14,7 +14,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object
+Represents a record of a user interaction with an [externalItem](externalconnectors-externalitem.md) object.
 
 
 Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).
