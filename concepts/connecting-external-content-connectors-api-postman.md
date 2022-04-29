@@ -83,7 +83,7 @@ Set up the variables in Postman. This information is used to generate the access
    - Set the **Current value** of **tenant** to the directory (tenant) ID value from step 3.15.
    - Set the **Current value** of **client\_id** to the application (client) ID value from step 3.15.
    - Set the **Current value** of **client\_secret** to the client secret value from step 3.17.
-   - Set the **Current value** of **userName** to `admin@xxxxxxx.onmicrosoft.com`
+   - Set the **Current value** of **userName** to `admin@xxxxxxx.onmicrosoft.com`.
    - Set the **Current value** of **password** to tenant admin password.
 
    ![Screenshot showing the selected Variables](./images/connectors-images/08-postman.png)
@@ -124,7 +124,7 @@ The following example shows a successful response:
 
 ## Step 6: Create a new connection
 
-A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, id, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, ID, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 ```http
 POST /external/connections
