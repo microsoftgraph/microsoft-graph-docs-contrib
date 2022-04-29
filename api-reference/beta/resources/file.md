@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: File
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sites-and-lists
+ms.prod: files
 ---
 # File resource type
 

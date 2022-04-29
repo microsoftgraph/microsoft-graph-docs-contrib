@@ -3,7 +3,7 @@ title: "FilterDatetime resource type"
 description: "Represents how to filter a date when filtering on values."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: excel
+ms.prod: workbooks-and-charts
 author: "ruoyingl"
 ---
 
