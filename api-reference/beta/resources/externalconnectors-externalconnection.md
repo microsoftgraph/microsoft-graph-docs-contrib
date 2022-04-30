@@ -63,12 +63,23 @@ The following is a JSON representation of the resource.
   "keyProperty": "id"
 }-->
 
-```json
+``` json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.externalConnectors.externalConnection",
   "id": "String (identifier)",
   "name": "String",
-  "state": "String"
+  "description": "String",
+  "configuration": {
+    "@odata.type": "microsoft.graph.externalConnectors.configuration"
+  },
+  "state": "String",
+  "connectorId": "String",
+  "searchSettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
+  },
+  "activitySettings": {
+    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
+  }
 }
 ```
 

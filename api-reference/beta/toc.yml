@@ -439,7 +439,7 @@ items:
           - name: List
             href: api/organizationsettings-list-iteminsights.md
           - name: Update
-            href: api/insightssettings-update.md          
+            href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -10219,7 +10219,7 @@ items:
             href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: List for user 
+          - name: List for user
             href: api/user-list-cloudpcs.md
           - name: Get launch info for user
             href: api/cloudpc-getcloudpclaunchinfo.md
@@ -10433,7 +10433,7 @@ items:
           - name: List
             href: api/managedtenants-managedtenant-list-auditevents.md
           - name: Get
-            href: api/managedtenants-auditevent-get.md            
+            href: api/managedtenants-auditevent-get.md
         - name: Cloud PC connection
           href: resources/managedtenants-cloudpcconnection.md
           items:
@@ -11303,11 +11303,11 @@ items:
             items:
             - name: List
               href: api/tenantrelationship-list-delegatedadmincustomers.md
-            - name: Get 
+            - name: Get
               href: api/delegatedadmincustomer-get.md
             - name: Service management details
               href: resources/delegatedadminservicemanagementdetail.md
-              items:      
+              items:
               - name: List
                 href: api/delegatedadmincustomer-list-servicemanagementdetails.md
       - name: Directory management
@@ -12113,9 +12113,9 @@ items:
             - name: Get risky service principal
               href: api/riskyserviceprincipal-get.md
             - name: List history
-              href: api/riskyserviceprincipal-list-history.md 
+              href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md 
+              href: api/riskyserviceprincipal-confirmcompromised.md
             - name: Dismiss
               href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
@@ -12793,7 +12793,7 @@ items:
               href: api/accessreviewset-post-historydefinitions.md
             - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
-              items: 
+              items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
@@ -13840,7 +13840,7 @@ items:
           - name: List
             href: api/organizationsettings-list-iteminsights.md
           - name: Update
-            href: api/insightssettings-update.md          
+            href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -13940,10 +13940,10 @@ items:
           href: api/contact-delta.md
       - name: Contact merge suggestions (preview)
         items:
-        - name: Contact merge suggestions 
+        - name: Contact merge suggestions
           href: resources/contactmergesuggestions.md
         - name: Get
-          href: api/contactmergesuggestions-get.md 
+          href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
       - name: Extended properties
@@ -14057,9 +14057,9 @@ items:
           - name: User registration details
             href: resources/userregistrationdetails.md
             items:
-            - name: List 
+            - name: List
               href: api/authenticationmethodsroot-list-userregistrationdetails.md
-            - name: Get 
+            - name: Get
               href: api/userregistrationdetails-get.md
       - name: Microsoft 365 usage reports
         items:
@@ -14423,6 +14423,8 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
+          - name: addActivities action
+            href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
           - name: External group
@@ -14729,7 +14731,7 @@ items:
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: List versions
-          href: api/listitem-list-versions.md        
+          href: api/listitem-list-versions.md
       - name: Document set version
         items:
         - name: Document set version

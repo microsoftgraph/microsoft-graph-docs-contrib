@@ -1227,15 +1227,15 @@
           "ApiChange": "Property",
           "ChangedApiName": "activitySettings",
           "ChangeType": "Addition",
-          "Description": "Added the [activitySettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource",
+          "Description": "Added the [activitySettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) property to the externalConnection resource",
           "Target": "externalConnection"
         },
         {
           "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "activities",
           "ChangeType": "Addition",
-          "Description": "Added the [activities](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalItem?view=graph-rest-beta) resource",
+          "Description": "Added the [activities](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalItem?view=graph-rest-beta) navigation property to externalItem",
           "Target": "externalItem"
         },
         {
@@ -1245,6 +1245,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [addActivities](https://docs.microsoft.com/en-us/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-beta) resource",
           "Target": "addActivities"
+        },
+        {
+          "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlMatchInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlMatchInfo](https://docs.microsoft.com/en-us/graph/api/resources/urlMatchInfo?view=graph-rest-beta) resource",
+          "Target": "urlMatchInfo"
         }
       ],
       "Id": "908eafe6-f7b4-4003-b023-4df6f227d568",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of processing an externalActivity. Null if successful.
+Represents the result of processing an [externalActivity](../resources/externalconnectors-externalactivity.md). Null if successful.
 
 
 Inherits from [externalActivityBase](../resources/externalconnectors-externalactivitybase.md).

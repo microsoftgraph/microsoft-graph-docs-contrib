@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity used to set permissions on external content added to Microsoft Graph.
+Represents an entity used to set permissions on external content added to Microsoft Graph.
 
 ## Methods
 |Method|Return type|Description|
