@@ -81,7 +81,7 @@ Content-Type: application/json
 
 ## Subscribe to messages in a channel
 
-To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
+To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only mode*.
 
 Channel-level subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 
 ## Subscribe to messages in a chat
 
-To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats/{chat-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
+To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats/{chat-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and  *application-only mode*.
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
