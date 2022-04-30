@@ -28,7 +28,7 @@ Represents a summary of Azure Active Directory credential user registrations for
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Optional. Read-only.|
 |mfaAndSsprCapableUserCount|Int32|The number of users that are capable of performing multi-factor authentication or self service password reset. Optional. Read-only.|
 |mfaConditionalAccessPolicyState|String|The state of a conditional access policy that enforces multi-factor authentication. Optional. Read-only.|
-|mfaExcludedUserCount|Int32|The number of users in the multi-factor authentication exclusion security group (M365 Lighthouse - MFA Exclusions). Optional. Read-only.|
+|mfaExcludedUserCount|Int32|The number of users in the multi-factor authentication exclusion security group (Microsoft 365 Lighthouse - MFA exclusions). Optional. Read-only.|
 |mfaRegisteredUserCount|Int32|The number of users registered for multi-factor authentication. Optional. Read-only.|
 |securityDefaultsEnabled|Boolean|A flag indicating whether Identity Security Defaults is enabled. Optional. Read-only.|
 |ssprEnabledUserCount|Int32|The number of users enabled for self service password reset. Optional. Read-only.|
