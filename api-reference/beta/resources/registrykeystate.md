@@ -3,8 +3,7 @@ title: "registryKeyState resource type"
 description: "Contains information about registry key changes related to the alert, and the process that changed the registry keys."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: security
 author: "preetikr"
 ---
 

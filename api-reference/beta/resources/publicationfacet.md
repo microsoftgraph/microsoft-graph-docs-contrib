@@ -5,8 +5,7 @@ ms.date: 09/10/2017
 title: PublicationFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: files
 ---
 # PublicationFacet resource type
 

@@ -4,8 +4,7 @@ description: "The photo resource provides photo and camera properties, for examp
 ms.date: 09/10/2017
 ms.localizationpriority: medium
 author: "JeremyKelley"
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: files
 doc_type: "resourcePageType"
 ---
 

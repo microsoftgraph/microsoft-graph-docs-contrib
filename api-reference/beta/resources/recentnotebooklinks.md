@@ -3,8 +3,7 @@ title: "recentNotebookLinks resource type"
 description: "Links to open a OneNote notebook. This resource type exists as a property on a recentNotebook resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: notes
 author: "jewan-microsoft"
 ---
 
