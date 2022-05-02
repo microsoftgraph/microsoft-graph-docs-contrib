@@ -109,3 +109,33 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 | [GetReminders](/exchange/client-developer/web-service-reference/getreminders-operation)                   | [Reminder view](/graph/api/user-reminderview) |
 | [PerformReminderAction](/exchange/client-developer/web-service-reference/performreminderaction-operation) | [Dismiss reminder](/graph/api/event-dismissreminder)<br/>[Snooze reminder](/graph/api/event-snoozereminder) |
 <!-- markdownlint-enable MD033 -->
+
+### Permissions
+
+<!-- markdownlint-disable MD033 -->
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
+| [GetReminders](/exchange/client-developer/web-service-reference/getreminders-operation)                   | [Reminder view](/graph/api/user-reminderview) |
+| [PerformReminderAction](/exchange/client-developer/web-service-reference/performreminderaction-operation) | [Dismiss reminder](/graph/api/event-dismissreminder)<br/>[Snooze reminder](/graph/api/event-snoozereminder) |
+
+### Invitations
+
+
+## Groups APIs
+
+| EWS API                                                                                               | Microsoft Graph API |
+|-------------------------------------------------------------------------------------------------------|-----|
+| GetUserUnifiedGroups | [List memberof](/graph/api/user-list-memberof) |
+| GetUnifiedGroupsSettings | [groupSetting](/graph/api/resources/groupsetting) |
+| GetUnifiedGroupDetails | [Get group](/graph/api/group-get) |
+| GetUnifiedGroupMembers | [List members](/graph/api/group-list-members) |
+| GetUnifiedGroupUnseenCount | [Get group](/graph/api/group-get) |
+| SetUnifiedGroupMembershipState | [Add/remove member/owner](/graph/api/resources/group) |
+| FindUnifiedGroups | [List groups](/graph/api/group-list) |
+| SetUnifiedGroupUserSubscribeState | [Subscribe/unsubscribeByMail](/graph/api/group-subscribebymail) |
+| UpdateUnifiedGroup | [Update group](/graph/api/group-update) |
+| CreateUnifiedGroup | [Create group](/graph/api/group-post-groups) |
+| RemoveUnifiedGroup | [Delete group](/graph/api/group-delete) |
+| SetUnifiedGroupFavoriteState | [Group addFavorite](/graph/api/group-addfavorite) |
+| JoinPrivateUnifiedGroup | [Subscribe/unsubscribeByMail](/graph/api/group-subscribebymail) |
+| GetDlMembersForUnifiedGroup | [List group members](/graph/api/group-list-members) |
