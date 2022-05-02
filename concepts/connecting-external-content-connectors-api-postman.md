@@ -36,7 +36,7 @@ To use the Postman collection, you need to fork it into your Postman workspace. 
 
    ![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
 
-## Step 2: Download the Postman Agent (Optional - Postman Web browser only)
+## Step 2: Download the Postman Agent (Optional - Postman web browser only)
 
 To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). 
 
@@ -78,13 +78,13 @@ Set up the variables in Postman. This information is used to generate the access
 
    ![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
 
-2. In the Variables section, provide the required information using the information from step 3.
+2. In the Variables section, provide the required information by using the information from step 3:
 
-   - Set the **Current value** of **tenant** to the directory (tenant) ID value from step 3.15.
-   - Set the **Current value** of **client\_id** to the application (client) ID value from step 3.15.
-   - Set the **Current value** of **client\_secret** to the client secret value from step 3.17.
-   - Set the **Current value** of **userName** to `admin@xxxxxxx.onmicrosoft.com`.
-   - Set the **Current value** of **password** to tenant admin password.
+   - Set the current value of **tenant** to the directory (tenant) ID value from step 3.15.
+   - Set the current value of **client\_id** to the application (client) ID value from step 3.15.
+   - Set the current value of **client\_secret** to the client secret value from step 3.17.
+   - Set the current value of **userName** to `admin@xxxxxxx.onmicrosoft.com`.
+   - Set the current value of **password** to tenant admin password.
 
    ![Screenshot showing the selected Variables](./images/connectors-images/08-postman.png)
 
@@ -124,7 +124,7 @@ The following example shows a successful response:
 
 ## Step 6: Create a new connection
 
-A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, ID, and description. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
+A [connection](/graph/connecting-external-content-manage-connections) is a logical container for your external data that you can manage as a single unit. Choose a connection name, description, and ID. Get the necessary details from the admin to connect to the data source and provide a mechanism to authorize against the content source when setting up the connection. You can use the [Microsoft Graph SDK](/graph/sdks/sdks-overview) and APIs to program your connector setup. If you want to store credentials, you can use Azure Key Vault.
 
 ```http
 POST /external/connections
@@ -350,4 +350,4 @@ HTTP/1.1 200 OK
 
 ## Error handling
 
-For details about how to resolve errors, see [Microsoft Graph authorization errors](/graph/resolve-auth-errors).
+For details about how to resolve errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors).
