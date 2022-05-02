@@ -48,21 +48,23 @@ The following table shows the parameter that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|contentTypeId|String| The ID of the content type in the content type hub that will be added to the target site or a list.|
+|contentTypeId|String| The ID of the content type in the content type hub that will be added to a target site or a list.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richlongrunningoperation.md) that was created to handle the copy/sync. In case of an asynchronous operation, it can take up to 70 minutes to sync or add a content type.
+If successful, this action returns a `200 OK` response code and a [contentType](../resources/contenttype.md) object in the response body if the content type is added synchronously or a `202 Accepted` response code if the content type will be synced asynchronously. The response will also contain a `Location` header, which contains the location of the [richLongRunningOperation](../resources/richlongrunningoperation.md) that was created to handle the copy/sync operation. In case of an asynchronous operation, it can take up to 70 minutes to sync or add a content type.
 
 ## Examples
 
 ### Example 1: Synchronous pull
-A content type will be added or synced synchronously based on certain conditions. Here is an example of a synchronous operation.
+
+The following example adds or syncs a content type synchronously based on certain conditions.
+
 #### Request
 
-The following is an example of a request.
+The following is an example of a synchronous operation.
 
 <!-- {
   "blockType": "request",
@@ -106,11 +108,12 @@ Content-Type: application/json
 ```
 
 ### Example 2: Asynchronous pull
-A content type will be added or synced asynchronously if the conditions to add or sync it synchronously are not met. Here is an example of an asynchronous operation.
+
+The following example adds or syncs a content type asynchronously because the conditions for a synchronous operation are not fulfilled.
 
 #### Request
 
-The following is an example of a request.
+The following is an example of an asynchronous operation.
 
 <!-- {
   "blockType": "request",

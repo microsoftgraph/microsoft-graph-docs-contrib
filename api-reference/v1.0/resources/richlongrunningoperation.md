@@ -1,6 +1,6 @@
 ---
 title: "richLongRunningOperation resource type"
-description: "Represents the status of a long-running operation."
+description: "Represents the status of a long-running operation on a site or a list."
 author: "swapnil1993"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the status of a long-running operation.
+Represents the status of a long-running operation on a [site](../resources/site.md) or a [list](../resources/list.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Read the properties of a [richLongRunningOperation](../resources/richlongrunningoperation.md) object.|
+|[Get richLongRunningOperation](../api/richlongrunningoperation-get.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md)|Get the status of a [rich long-running operation](../resources/richlongrunningoperation.md) on a [site](../resources/site.md) or a [list](../resources/list.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -48,10 +48,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.richLongRunningOperation",
   "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
   "error": {
     "@odata.type": "microsoft.graph.publicError"
   },
+  "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "percentageComplete": "Integer",
   "resourceId": "String",

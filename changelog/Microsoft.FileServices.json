@@ -2530,7 +2530,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Description": "Added the **operations** relationship to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
           "Target": "list"
         },
         {
@@ -2538,7 +2538,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "richLongRunningOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-1.0) resource",
+          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-1.0) resource and a supported method.",
           "Target": "richLongRunningOperation"
         },
         {
@@ -2546,7 +2546,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
-          "Description": "Added the **operations** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Description": "Added the **operations** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
           "Target": "site"
         },
         {

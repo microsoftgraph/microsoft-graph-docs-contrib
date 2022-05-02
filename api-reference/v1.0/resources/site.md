@@ -32,7 +32,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[List richLongRunningOperations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
+| [List richLongRunningOperations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -90,7 +90,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **items**         | Collection([baseItem][])                         | Used to address any item contained in this site. This collection can't be enumerated.
 | **lists**         | Collection([list][])                             | The collection of lists under this site.
 | **onenote**       | [onenote][]                                      | Calls the OneNote service for notebook related operations.
-| **operations**      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.
+| **operations**    | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the site.
 | **permissions**   | Collection([permission][])                       | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])                             | The collection of the sub-sites under this site.
 | **termStore**     | [microsoft.graph.termStore.store]                | The default termStore under this site.
