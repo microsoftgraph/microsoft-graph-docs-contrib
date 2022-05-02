@@ -87,7 +87,7 @@ Microsoft Graph has two types of permissions.
 ##### Comparison of delegated and application permissions
 
 
-| <!-- No header--> | Delegated permissions | Application permissions |
+| Setting | Delegated permissions | Application permissions |
 |--|--|--|
 | App type scenarios | Web / Mobile / single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on-behalf of a user](../auth-v2-user.md) | [Get access as a service](../auth-v2-service.md) |
