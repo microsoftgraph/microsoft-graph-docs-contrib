@@ -6431,10 +6431,6 @@ items:
         items:
         - name: Rich long-running operation
           href: resources/richLongRunningOperation.md
-        - name: List operations in a site
-          href: api/site-list-operations.md
-        - name: List operations in a list
-          href: api/list-list-operations.md
         - name: Get
           href: api/richlongrunningoperation-get.md
       - name: Taxonomy

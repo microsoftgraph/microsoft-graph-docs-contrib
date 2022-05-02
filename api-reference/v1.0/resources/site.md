@@ -32,7 +32,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-| [List richLongRunningOperations in a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
+|[List operations on a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -145,6 +145,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],

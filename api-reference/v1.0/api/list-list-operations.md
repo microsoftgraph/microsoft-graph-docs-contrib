@@ -1,5 +1,5 @@
 ---
-title: "List operations"
+title: "List operations on a list"
 description: "Get a list of richLongRunningOperations associated with a list."
 author: "swapnil1993"
 ms.localizationpriority: medium

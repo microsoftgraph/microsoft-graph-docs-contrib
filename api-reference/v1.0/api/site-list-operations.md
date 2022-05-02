@@ -1,5 +1,5 @@
 ---
-title: "List operations"
+title: "List operations on a site"
 description: "Get a list of richLongRunningOperations associated with a site."
 author: "swapnil1993"
 ms.localizationpriority: medium
