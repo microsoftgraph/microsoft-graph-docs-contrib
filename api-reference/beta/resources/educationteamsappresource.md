@@ -1,6 +1,6 @@
 ---
 title: "educationTeamsAppResource resource type"
-description: "A subclass of educationResource. This resource type represents a Teams App Resource.  "
+description: "Represents a Teams application to submit to an assignment.  "
 author: "adarshgh"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subclass of [educationResource](educationresource.md). Teams App are type of assignment resource which correspond to an existing Teams application and allow assignments service users to use those resources through the governing application e.g. YouTube, FlipGrid. We right now have 17 such applications that assignment integrates with.
+Represents a Teams application to submit to an [assignment](educationassignment.md). This resource allows users to use those resources through the governing application, for example, YouTube and FlipGrid.
+
+Inherited from [educationResource](educationresource.md).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -23,10 +25,10 @@ A subclass of [educationResource](educationresource.md). Teams App are type of a
 |appIconWebUrl|string|URL that points to the app's icon|
 |teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams|
 |webUrl|string|URL for the app resource that can be opened in the browser|
-|createdBy|String|The display name of the user that created this resource.|
-|createdDateTime|DateTimeOffset|Date time the resoruce was added.|
-|lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdBy|String|The display name of the user that created this resource. Inherited from **educationResource**.|
+|createdDateTime|DateTimeOffset|Date time the resoruce was added. Inherited from **educationResource**.|
+|lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource. Inherited from **educationResource**.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from **educationResource**.|
 
 
 ## JSON representation
