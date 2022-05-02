@@ -49,20 +49,13 @@ Inherits from [entity](../resources/entity.md).
 |stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
 |type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
-
-## New properties
-
-The following list of properties will only be available under the /security path.
-
-|Property|Type|Description|
-|:---|:---|:---|
-| includeAuthoredContent| Boolean | Include content authored by the data subject.|
-| includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents.|
-| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause - allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to false if you want it to perform the estimate and then automatically begin retrieval for content.|
-| externalId           | String| External Id for the request, immutable after creation and is used for track request for external system.|
-| contentQuery         | String | KQL based content query, that should be used for search.|
-| mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched.|
-| sitelocations| [subjectRightsRequestSiteLocation](../resources/subjectRightsRequestSiteLocation.md)| SharePoint and OneDrive site locations that should be searched.|
+| includeAuthoredContent| Boolean | Include content authored by the data subject. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause - allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to false if you want it to perform the estimate and then automatically begin retrieval for content. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| externalId           | String| External Id for the request, immutable after creation and is used for track request for external system. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| contentQuery         | String | KQL based content query, that should be used for search. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
+| sitelocations| [subjectRightsRequestSiteLocation](../resources/subjectRightsRequestSiteLocation.md)| SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the \security query path and not the \privacy query path.|
 
 ## Relationships
 |Relationship|Type|Description|
