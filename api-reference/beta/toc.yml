@@ -14423,7 +14423,7 @@ items:
             href: api/externalconnectors-externalitem-update.md
           - name: Delete
             href: api/externalconnectors-externalitem-delete.md
-          - name: addActivities action
+          - name: Add activities
             href: api/externalconnectors-externalitem-addactivities.md
         - name: External group
           items:
