@@ -1,6 +1,6 @@
 ---
 title: "myRole resource type"
-description: "Represents the role assignments that are present with a managed tenant."
+description: "Represents the role assignments that are present in a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the role assignments that are present with a managed tenant.
+Represents the role assignments that are present in a [managed tenant](../resources/managedtenants-tenant.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -41,11 +41,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.myRole",
-  "tenantId": "String",
   "assignments": [
     {
       "@odata.type": "microsoft.graph.managedTenants.roleAssignment"
     }
-  ]
+  ],
+  "tenantId": "String"
 }
 ```
