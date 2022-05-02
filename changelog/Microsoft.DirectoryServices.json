@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedCloudEndpoints",
           "ChangeType": "Addition",
-          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource. Use this property to enable B2B collaboration across Azure clouds. For example, between tenants in Azure Global and Azure Government clouds, and Azure Global and Azure China clouds. ",
           "Target": "crossTenantAccessPolicy"
         }
       ],
