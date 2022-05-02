@@ -30,7 +30,7 @@ All examples below are relative to a site, for example, `https://graph.microsoft
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 | [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
-|[List operations on a list](../api/list-list-operations.md)| GET /lists/{list-id}/operations
+| [List operations](../api/list-list-operations.md)| GET /lists/{list-id}/operations
 
 [Get list]: ../api/list-get.md
 [Create list]: ../api/list-create.md

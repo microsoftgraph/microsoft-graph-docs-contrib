@@ -60,7 +60,7 @@ If successful, this action returns a `200 OK` response code and a [contentType](
 
 ### Example 1: Synchronous pull
 
-The following example adds or syncs a content type synchronously based on certain conditions.
+The following example adds or syncs a content type synchronously based on certain backend conditions.
 
 #### Request
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 
 ### Example 2: Asynchronous pull
 
-The following example adds or syncs a content type asynchronously because the conditions for a synchronous operation are not fulfilled.
+The following example adds or syncs a content type asynchronously because the backend conditions for a synchronous operation are not fulfilled.
 
 #### Request
 

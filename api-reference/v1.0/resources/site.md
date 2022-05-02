@@ -32,7 +32,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[List operations on a site](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
+| [List operations](../api/site-list-operations.md)|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection|Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [site](../resources/site.md).
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md

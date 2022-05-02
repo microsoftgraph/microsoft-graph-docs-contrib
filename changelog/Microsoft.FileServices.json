@@ -2527,7 +2527,7 @@
         },
         {
           "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
@@ -2543,7 +2543,7 @@
         },
         {
           "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "operations",
           "ChangeType": "Addition",
           "Description": "Added the **operations** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
