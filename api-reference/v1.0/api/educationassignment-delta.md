@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: delta"
-description: "Get a list of newly created or updated assignments without having to perform a full ready of the collection."
+description: "Get a list of newly created or updated assignments without having to perform a full read of the collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # educationAssignment: delta
 Namespace: microsoft.graph
 
-Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full ready of the collection.
+Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full read of the collection.
 
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
