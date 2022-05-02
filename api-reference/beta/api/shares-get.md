@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Access shared items
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: microsoft-teams
+ms.prod: files
 ---
 # Accessing shared DriveItems
 
