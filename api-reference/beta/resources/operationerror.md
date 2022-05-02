@@ -3,8 +3,7 @@ title: "operationError resource type"
 description: "Describes errors in teamsAsyncOperation."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: teamwork
 author: "billbliss"
 ---
 

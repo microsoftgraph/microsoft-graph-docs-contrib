@@ -4,8 +4,7 @@ description: "The pendingContentUpdate resource indicates that an operation that
 ms.localizationpriority: medium
 author: "JeremyKelley"
 ms.date: 08/06/2019
-ms.prod: cloud-pc
-ms.technology: microsoft-graph
+ms.prod: notes
 doc_type: "resourcePageType"
 ---
 
