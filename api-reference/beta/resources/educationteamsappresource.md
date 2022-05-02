@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a Teams application to submit to an [assignment](educationassignment.md). This resource allows users to use those resources through the governing application, for example, YouTube and FlipGrid.
 
-Inherited from [educationResource](educationresource.md).
+Inherites from [educationResource](educationresource.md).
 
 ## Properties
 | Property	   | Type	|Description|
