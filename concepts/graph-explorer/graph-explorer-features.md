@@ -1,25 +1,25 @@
 ---
 
-title: "Working with Graph Explorer"
+title: "Work with Graph Explorer"
 description: "Find out how to use some of the important features in Graph Explorer."
 ms.localizationpriority: high
 author: RabebOthmani
 
 ---
-# Working with Graph Explorer
+# Work with Graph Explorer
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. This article describes how to use some of the important features in Graph Explorer.
 
 ## Consent to permissions
 
-The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. Consent to permissions in Graph Explorer either by choosing the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. The **Modify permissions** tab lists all the permissions you need to run the query in the address bar. 
+The user or administrator must grant Graph Explorer the correct permissions by using a consent process to access data in Microsoft Graph. You can consent to permissions in Graph Explorer by choosing either the **Modify permissions** tab or the **Select permissions** option in the settings gear next to your profile when you’re signed in. The **Modify permissions** tab lists all the permissions that you need to run the query in the address bar. 
 
 To consent to permissions:
 
 1. Select a sample query and run it.
 2. Select the **Modify permissions** tab.
 3. See the list of permissions required to run the query.
-4. Select the consent button next to the permission you want to consent to.
+4. Select the **Consent** button next to the permission that you want to consent to.
 
 ![Screenshot of Graph Explorer with the steps to consent to permissions highlighted](./images/modify-permissions.png)
 
@@ -44,7 +44,7 @@ For each REST API query that you select or enter in Graph Explorer, you can find
 
 ## Integrate UI components
 
-Graph Explorer includes several features to make implementing the user interface (UI) easier. Reuse these components in your apps too.
+Graph Explorer includes several features to make implementing the UI easier. Reuse these components in your apps too.
 
 ### Microsoft Graph Toolkit integration
 
@@ -89,7 +89,7 @@ Queries that are run in Graph Explorer are saved for 30 days on the **History** 
 
 ![Screenshot of the History tab with options highlighted](./images/storing-and-sharing-queries.png)
 
-To share queries that you run, select the **Share** button in the response pane, and then select **Copy**. This copies a link to share and allow others to see your query and the results.
+To share queries that you run, select the **Share** button in the response pane, and then select **Copy**. This copies a link to share that allows others to see your query and the results.
 
 ![Screenshot of Graph Explorer with the Share and Copy options highlighted](./images/share-query.png)
 
