@@ -36,7 +36,7 @@ To use the Postman collection, you need to fork it into your Postman workspace. 
 
    ![Screenshot of the My Workspace section in Postman, showing the Microsoft Graph collection forked ](./images/connectors-images/18-postman.png)
 
-## Step 2: Download the Postman Agent (Optional - Postman web browser only)
+## Step 2: Download the Postman Agent (optional - Postman web browser only)
 
 To use this Postman collection in your web browser, download the [Postman Desktop Agent](https://www.postman.com/downloads). 
 
