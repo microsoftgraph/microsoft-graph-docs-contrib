@@ -11,6 +11,21 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
 ### expirationPatternType values 
 
 |Member|
