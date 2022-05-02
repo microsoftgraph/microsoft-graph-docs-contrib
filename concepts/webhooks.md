@@ -107,6 +107,18 @@ Each Teams resource has different subscription quotas.
   - Per app and channel or chat combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
+- For subscriptions to **channels**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **teams**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **conversationMembers**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
 ## Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
