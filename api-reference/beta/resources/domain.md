@@ -35,6 +35,7 @@ To associate a domain with a tenant:
 |:---------------|:--------|:----------|
 |[Get domain](../api/domain-get.md) | [domain](domain.md) | Read properties and relationships of a domain object.|
 |[Create domain](../api/domain-post-domains.md) | [domain](domain.md) | Adds a domain to the tenant. |
+|[List domain](../api/domain-list.md) | [domain](domain.md) | Retrieve all domains linked to the tenant. |
 |[List domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| Retrieve a list of directory objects with a reference to the domain.|
 |[List serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain configuration.|
 |[List verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) collection|  Retrieve a list of domain DNS records for domain verification.|
