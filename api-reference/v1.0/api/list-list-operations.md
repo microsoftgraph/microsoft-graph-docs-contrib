@@ -7,9 +7,9 @@ ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 
-# List operations
-Namespace: microsoft.graph
+# List operations on a list
 
+Namespace: microsoft.graph
 
 Get a list of [rich long-running operations](../resources/richlongrunningoperation.md) associated with a [list](../resources/list.md).
 
