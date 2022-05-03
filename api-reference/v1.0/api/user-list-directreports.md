@@ -98,11 +98,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@Contoso.OnMicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@Contoso.OnMicrosoft.com"
+        }
+    ]
 }
 ```
 

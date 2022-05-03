@@ -33,6 +33,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object. Use this API to check the health status of the Cloud PC and the session host.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md)|None|Restore a Cloud PC device to a previous state from a snapshot.|
 |[Bulk restore remote action](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.|
+|[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[Get launch info for user](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 
 ## Properties
 

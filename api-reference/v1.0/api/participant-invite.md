@@ -722,7 +722,7 @@ Content-Type: application/json
 
 >**Note:** With a "completed" status, you can expect to receive notifications on how your original peer-to-peer call has been terminated and deleted.
 
-### Example 4: Invite one PSTN participant to an existing group call
+### Example 4: Invite one PSTN participant to an existing call
 
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Note:** Phone ID is the phone number in E.164 format.
