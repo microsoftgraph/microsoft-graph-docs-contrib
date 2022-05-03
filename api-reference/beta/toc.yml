@@ -14508,31 +14508,39 @@ items:
           - name: Reopen
             href: api/ediscovery-case-reopen.md # todo
           - name: List custodians
-            href: api/ediscovery-case-list-custodians.md
+            href: api/security-ediscoveryfile-list-custodian.md
           - name: Create custodian
-            href: api/ediscovery-case-post-custodians.md
+            href: api/security-ediscoverycase-post-custodians.md
+          - name: List non-custodial data sources
+            href: api/security-ediscoverysearch-list-noncustodialsources.md
+          - name: Create non-custodial data source
+            href: api/security-ediscoverycase-post-noncustodialdatasources.md
           - name: List legal holds
-            href: api/ediscovery-case-list-legalholds.md
+            href: api/security-ediscoverycase-list-legalholds.md
           - name: Create legal hold
-            href: api/ediscovery-case-post-legalholds.md
+            href: api/security-ediscoverycase-post-legalholds.md
+          - name: List operations
+            href: api/security-ediscoverycase-list-operations.md
+          - name: Create operation
+            href: api/security-ediscoverycase-post-operations.md
+          - name: List searches
+            href: api/security-ediscoverycase-list-searches.md
+          - name: Create search
+            href: api/security-ediscoverycase-post-searches.md
           - name: List review sets
-            href: api/ediscovery-case-list-reviewsets.md
+            href: api/security-ediscoverycase-list-reviewsets.md
           - name: Create review set
-            href: /api/ediscovery-case-post-reviewsets.md
-          - name: Get settings
-            href: api/ediscovery-casesettings-get.md
-          - name: Update settings
-            href: api/ediscovery-casesettings-update.md
-          - name: Reset to default
-            href: api/ediscovery-casesettings-resettodefault.md
-          - name: List source collections
-            href: api/ediscovery-case-list-sourcecollections.md
-          - name: Create source collection
-            href: /api/ediscovery-case-post-sourcecollections.md
+            href: api/security-ediscoverycase-post-reviewsets.md
           - name: List tags
-            href: /api/ediscovery-case-list-tags.md
+            href: api/security-ediscoveryfile-list-tags.md
           - name: Create tag
-            href: /api/ediscovery-case-post-tags.md
+            href: api/security-ediscoverycase-post-tags.md
+          - name: Get settings
+            href: api/security-ediscoverycase-list-settings.md
+          - name: Update settings
+            href: api/security-ediscoverycase-post-settings.md
+          - name: Reset to default
+            href: api/ediscovery-casesettings-resettodefault.md # todo
         - name: Custodian
           href: resources/ediscovery-custodian.md
           items:
