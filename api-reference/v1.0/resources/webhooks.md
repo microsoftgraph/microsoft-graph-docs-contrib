@@ -31,6 +31,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
+| Teams [channel][] | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` <br> Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers` | Yes |
 | Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
 
@@ -59,6 +60,8 @@ In general, subscription operations require read permission to the resource. For
 [chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [conversation]: ./conversation.md
+[conversationMember]: ./conversationmember.md
+[channel]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
 [site]: ./site.md
@@ -70,4 +73,5 @@ In general, subscription operations require read permission to the resource. For
 [alert]: ./alert.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[team]: ./team.md
 
