@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Delete group - Microsoft Graph API
+# Delete group 
 
 Namespace: microsoft.graph
 

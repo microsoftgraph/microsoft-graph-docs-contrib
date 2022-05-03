@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# Get group - Microsoft Graph API
+# Get group 
 
 Namespace: microsoft.graph
 
