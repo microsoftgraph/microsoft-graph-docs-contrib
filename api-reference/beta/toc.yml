@@ -14490,25 +14490,23 @@ items:
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: eDiscovery (preview)
         items:
-        - name: Overview
-          href: resources/ediscovery-eDiscoveryapioverview.md
         - name: eDiscovery case
-          href: resources/ediscovery-case.md
+          href: resources/security-ediscoverycase.md
           items:
           - name: List
-            href: api/ediscovery-case-list.md
+            href: api/security-casesroot-list-ediscoverycases.md
           - name: Create
-            href: api/ediscovery-case-post.md
+            href: api/security-casesroot-post-ediscoverycases.md
           - name: Get
-            href: api/ediscovery-case-get.md
+            href: api/security-ediscoverycase-get.md
           - name: Update
-            href: api/ediscovery-case-update.md
+            href: api/security-ediscoverycase-update.md
           - name: Delete
-            href: api/ediscovery-case-delete.md
+            href: api/security-casesroot-delete-ediscoverycases.md
           - name: Close
-            href: api/ediscovery-case-close.md
+            href: api/ediscovery-case-close.md # todo
           - name: Reopen
-            href: api/ediscovery-case-reopen.md
+            href: api/ediscovery-case-reopen.md # todo
           - name: List custodians
             href: api/ediscovery-case-list-custodians.md
           - name: Create custodian
