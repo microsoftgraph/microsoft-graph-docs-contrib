@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Represents an abstract base type for the properties of a mailbox location in a subject rights request.
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships

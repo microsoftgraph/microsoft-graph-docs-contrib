@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
+Create a new [subjectRightsRequest](../resources/subjectrightsrequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,9 +44,9 @@ POST /privacy/subjectRightsRequests
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
+In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectrightsrequest.md) object.
 
-The following table shows the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
+The following table shows the properties that are required when you create the [subjectRightsRequest](../resources/subjectrightsrequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -66,11 +66,11 @@ The following list of properties will only be available under the /security path
 |:---|:---|:---|
 | includeAuthoredContent| Boolean | Include content authored by the data subject.|
 | includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents.|
-| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause - allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to false if you want it to perform the estimate and then automatically begin retrieval for content.|
-| externalId           | String| External Id for the request, immutable after creation and is used for track request for external system.|
-| contentQuery         | String | KQL based content query, that should be used for search.|
-| mailboxlocations     | [subjectRightsRequestMailboxLocation](../resources/subjectRightsRequestMailboxLocation.md)|Mailbox locations that should be searched.|
-| sitelocations| [subjectRightsRequestSiteLocation](../resources/subjectRightsRequestSiteLocation.md)| SharePoint and OneDrive site locations that should be searched.|
+| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval for the content.|
+| externalId           | String| The external ID for the request that is immutable after creation and is used to track the request for the external system.|
+| contentQuery         | String | KQL based content query that should be used for search.|
+| mailboxLocations     | [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|The mailbox locations that should be searched.|
+| siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched.|
 
 ## Response
 

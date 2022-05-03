@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequestSiteLocation resource type"
-description: "Represents the properties of subject rights request site location."
+description: "Represents an abstract base type for the properties of a site location in a subject rights request."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,11 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type. Represent the properties of subject rights request site location that should be included in the search for the request.
+Represents an abstract base type for the properties of a site location in a subject rights request.
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships
