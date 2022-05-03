@@ -4,7 +4,6 @@ description: "Use Send As and Send On Behalf Of permissions to send Outlook mess
 author: "jasonjoh"
 ms.localizationpriority: high
 ms.prod: "outlook"
-ms.date: 04/28/2022
 ---
 
 # Send Outlook messages from another user
@@ -27,7 +26,7 @@ In order to send messages from another user, applications that use user tokens u
 Two permissions affect the end result of sending a message from another user: **Send on Behalf** and **Send As**. The user that is signed in to your application with the **Mail.Send.Shared** permission MUST have at least one of these permissions granted to the mailbox, group, or distribution list that the mail is from.
 
 > [!NOTE]
-> It is currently not possible to query which mailboxes the authenticated user has permissions for using Microsoft Graph.
+> It's not currently possible to use Microsoft Graph to query which mailboxes the authenticated user has permissions for.
 
 #### Send on Behalf
 
