@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: Access shared items
 ms.localizationpriority: medium
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
-ms.prod: non-product-specific
+ms.prod: files
 doc_type: apiPageType
 ---
 # Accessing shared DriveItems
