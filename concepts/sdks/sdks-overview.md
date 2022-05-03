@@ -25,7 +25,6 @@ SDKs are currently available for the following languages:
 - [Go](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [PHP](https://github.com/microsoftgraph/msgraph-sdk-php)
 - [Python (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core)
-- [Objective-C | Swift](https://github.com/microsoftgraph/msgraph-sdk-objc)
 
 ## Microsoft 365 developer subscription
 
