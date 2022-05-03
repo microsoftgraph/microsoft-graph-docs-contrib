@@ -20,10 +20,10 @@
         },
         {
           "Id": "ad18be47-8800-4594-be69-454a95f198d1",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "myRoles",
           "ChangeType": "Addition",
-          "Description": "Added the **myRoles** relationship to [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
+          "Description": "Added the **myRoles** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta) resource.",
           "Target": "managedTenant"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "myRole",
           "ChangeType": "Addition",
-          "Description": "Added the [myRole](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-myRole?view=graph-rest-beta) resource",
+          "Description": "Added the [myRole](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-myRole?view=graph-rest-beta) resource and a supported method.",
           "Target": "myRole"
         }
       ],

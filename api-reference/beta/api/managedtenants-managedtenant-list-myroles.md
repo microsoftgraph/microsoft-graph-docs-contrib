@@ -51,6 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_myrole"
@@ -62,11 +65,15 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/myRoles
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.managedTenants.myRole)"
+  "@odata.type": "microsoft.graph.managedTenants.myRole",
+  "isCollection": true
 }
 -->
 ``` http

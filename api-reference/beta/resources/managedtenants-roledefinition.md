@@ -20,7 +20,7 @@ Represents detailed information for the role definition.
 |:---|:---|:---|
 |description|String|The description for the role.|
 |displayName|String|The display name for the role assignment.|
-|templateId|String|The well know unique identifier for the role.|
+|templateId|String|The well known unique identifier for the role.|
 
 ## Relationships
 None.
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.roleDefinition",
-  "templateId": "String",
+  "description": "String",
   "displayName": "String",
-  "description": "String"
+  "templateId": "String"
 }
 ```
