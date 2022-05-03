@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPcForensicStorageAccount"
+title: "cloudPCSnapshot: getStorageAccounts"
 description: "List all storage accounts that can be used to store snapshot(s) of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
