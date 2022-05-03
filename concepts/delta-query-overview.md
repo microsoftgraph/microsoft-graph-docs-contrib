@@ -132,9 +132,9 @@ Delta query is currently supported for the following resources. Note that some r
 
 
 > \* The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. Delta query for drives and lists will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a drive](/graph/api/driveitem-delta) and [Track changes for a list](/graph/api/listitem-delta)
+[driveItem: delta](/graph/api/driveitem-delta) and [listItem: delta](/graph/api/listitem-delta).
 
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta).
+> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences. For details, see [planner: delta](/graph/api/planneruser-list-delta).
 
 ## Limitations
 
