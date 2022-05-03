@@ -14542,20 +14542,38 @@ items:
           - name: Reset to default
             href: api/ediscovery-casesettings-resettodefault.md # todo
         - name: Custodian
-          href: resources/ediscovery-custodian.md
+          href: resources/security-ediscoverycustodian.md
           items:
           - name: List
-            href: api/ediscovery-case-list-custodians.md
+            href: api/security-ediscoveryfile-list-custodian.md
           - name: Create
-            href: api/ediscovery-case-post-custodians.md
+            href: api/security-ediscoveryfile-post-custodian.md
           - name: Get
-            href: api/ediscovery-custodian-get.md
+            href: api/security-ediscoverycustodian-get.md
           - name: Update
-            href: api/ediscovery-custodian-update.md
+            href: api/security-ediscoverycustodian-update.md
           - name: Activate
-            href: api/ediscovery-custodian-activate.md
+            href: api/security-ediscoverycustodian-activate.md
           - name: Release
-            href: api/ediscovery-custodian-release.md
+            href: api/security-ediscoverycustodian-release.md
+          - name: Apply hold
+            href: api/security-ediscoverycustodian-applyhold.md
+          - name: Remove hold
+            href: api/security-ediscoverycustodian-removehold.md
+          - name: Update index
+            href: api/security-ediscoverycustodian-updateindex.md
+          - name: List user sources
+            href: api/security-ediscoverycustodian-list-usersources.md
+          - name: Create user source
+            href: api/security-ediscoverycustodian-post-usersources.md
+          - name: List unitifed group sources
+            href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+          - name: Create unifed group source
+            href: api/security-ediscoverycustodian-post-unifiedgroupsources.m
+          - name: List site sources
+            href: api/security-ediscoverycustodian-list-sitesources.md
+          - name: Create site source
+            href: api/security-ediscoverycustodian-post-sitesources.md
         - name: Legal hold
           href: resources/ediscovery-legalhold.md
           items:
