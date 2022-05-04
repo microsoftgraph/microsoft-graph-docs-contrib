@@ -14490,7 +14490,7 @@ items:
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: eDiscovery (preview)
         items:
-        - name: eDiscovery case
+        - name: Case
           href: resources/security-ediscoverycase.md
           items:
           - name: List
@@ -14504,9 +14504,13 @@ items:
           - name: Delete
             href: api/security-casesroot-delete-ediscoverycases.md
           - name: Close
-            href: api/ediscovery-case-close.md # todo
+            href: api/ediscovery-case-close.md # TODO docstub missed this
           - name: Reopen
-            href: api/ediscovery-case-reopen.md # todo
+            href: api/ediscovery-case-reopen.md # TODO docstub missed this
+          - name: List operations
+            href: api/security-ediscoverycase-list-operations.md
+          - name: Create operation
+            href: api/security-ediscoverycase-post-operations.md
           - name: List custodians
             href: api/security-ediscoveryfile-list-custodian.md
           - name: Create custodian
@@ -14519,10 +14523,6 @@ items:
             href: api/security-ediscoverycase-list-legalholds.md
           - name: Create legal hold
             href: api/security-ediscoverycase-post-legalholds.md
-          - name: List operations
-            href: api/security-ediscoverycase-list-operations.md
-          - name: Create operation
-            href: api/security-ediscoverycase-post-operations.md
           - name: List searches
             href: api/security-ediscoverycase-list-searches.md
           - name: Create search
@@ -14540,14 +14540,14 @@ items:
           - name: Update settings
             href: api/security-ediscoverycase-post-settings.md
           - name: Reset to default
-            href: api/ediscovery-casesettings-resettodefault.md # todo
+            href: api/ediscovery-casesettings-resettodefault.md # TODO : docstub missed this
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:
           - name: List
-            href: api/security-ediscoveryfile-list-custodian.md
+            href: api/security-ediscoverycase-list-custodians.md # TODO docstub missed this
           - name: Create
-            href: api/security-ediscoveryfile-post-custodian.md
+            href: api/security-ediscoverycase-post-custodians.md
           - name: Get
             href: api/security-ediscoverycustodian-get.md
           - name: Update
@@ -14574,102 +14574,124 @@ items:
             href: api/security-ediscoverycustodian-list-sitesources.md
           - name: Create site source
             href: api/security-ediscoverycustodian-post-sitesources.md
-        - name: Legal hold
-          href: resources/ediscovery-legalhold.md
+        - name: Non-custodial data source
+          href: resources/security-ediscoverynoncustodialdatasource.md
           items:
           - name: List
-            href: api/ediscovery-case-list-legalholds.md
+            href: api/security-ediscoverycase-list-noncustodialsources.md # TODO docstub missed this
           - name: Create
-            href: api/ediscovery-case-post-legalholds.md
+            href: api/security-ediscoverysearch-post-noncustodialsources.md
           - name: Get
-            href: api/ediscovery-legalhold-get.md
-          - name: Update
-            href: api/ediscovery-legalhold-update.md
-          - name: Delete
-            href: api/ediscovery-legalhold-delete.md
-        - name: Non-custodial data sources
-          href: resources/ediscovery-noncustodialdatasource.md
-          items:
-          - name: List
-            href: api/ediscovery-noncustodialdatasource-list.md
-          - name: Create
-            href: api/ediscovery-noncustodialdatasource-post.md
-          - name: Get
-            href: api/ediscovery-noncustodialdatasource-get.md
-          - name: List datasource
+            href: api/security-ediscoverynoncustodialdatasource-get.md
+          - name: List data sources
             href: api/ediscovery-noncustodialdatasource-list-datasource.md
+          - name: Create data source
+            href: api/security-ediscoverynoncustodialdatasource-post-datasource.md
           - name: Release
-            href: api/ediscovery-noncustodialdatasource-release.md
-        - name: Review set
-          href: resources/ediscovery-reviewset.md
+            href: api/security-ediscoverynoncustodialdatasource-release.md
+          - name: Apply hold
+            href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+          - name: Remove hold
+            href: api/security-ediscoverynoncustodialdatasource-removehold.md
+          - name: Update index
+            href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+        - name: Hold policy
+          href: resources/security-ediscoveryholdpolicy.md
           items:
           - name: List
-            href: api/ediscovery-case-list-reviewsets.md
+            href: api/security-ediscoverycase-list-legalholds.md
           - name: Create
-            href: api/ediscovery-case-post-reviewsets.md
+            href: api/security-ediscoverycase-post-legalholds.md
           - name: Get
-            href: api/ediscovery-reviewset-get.md
-        - name: Review set query
-          href: resources/ediscovery-reviewsetquery.md
-          items:
-          - name: List
-            href: api/ediscovery-reviewsetquery-list.md
-          - name: Create
-            href: api/ediscovery-reviewsetquery-post.md
-          - name: Get
-            href: api/ediscovery-reviewsetquery-get.md
+            href: api/security-ediscoveryholdpolicy-get.md
           - name: Update
-            href: api/ediscovery-reviewsetquery-update.md
+            href: api/security-ediscoveryholdpolicy-update.md
           - name: Delete
-            href: api/ediscovery-reviewsetquery-delete.md
-          - name: Apply tags
-            href: api/ediscovery-reviewsetquery-applytags.md
-        - name: Source collection
-          href: resources/ediscovery-sourcecollection.md
+            href: api/security-ediscoverycase-delete-legalholds.md
+        - name: Search
+          href: resources/security-ediscoverysearch.md
           items:
           - name: List
-            href: api/ediscovery-case-list-sourcecollections.md
+            href: api/security-ediscoverycase-list-searches.md
           - name: Create
-            href: api/ediscovery-case-post-sourcecollections.md
+            href: api/security-ediscoverycase-post-searches.md
           - name: Get
-            href: api/ediscovery-sourcecollection-get.md
+            href: api/security-ediscoverysearch-get.md
           - name: Update
-            href: api/ediscovery-sourcecollection-update.md
+            href: api/security-ediscoverysearch-update.md
           - name: Delete
-            href: api/ediscovery-sourcecollection-delete.md
-          - name: List custodian sources
-            href: api/ediscovery-sourcecollection-list-custodiansources.md
-          - name: Add custodian sources
-            href: api/ediscovery-sourcecollection-post-custodiansources.md
-          - name: List additional sources
-            href: api/ediscovery-sourcecollection-list-additionalsources.md
-          - name: Add additional sources
-            href: api/ediscovery-sourcecollection-post-additionalsources.md
+            href: api/security-ediscoverycase-delete-searches.md
           - name: Estimate statistics
-            href: api/ediscovery-sourcecollection-estimatestatistics.md
-          - name: List add to review set operations
-            href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
-          - name: List last estimate operation
-            href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
+            href: api/security-ediscoverysearch-estimatestatistics.md
           - name: Purge data
-            href: api/ediscovery-sourcecollection-purgedata.md
-        - name: Tag
-          href: resources/ediscovery-tag.md
+            href: api/security-ediscoverysearch-purgedata.md
+          - name: List custodian sources
+            href: api/security-ediscoverysearch-list-custodiansources.md
+          - name: Add custodian sources
+            href: api/security-ediscoverysearch-post-custodiansources.md
+          - name: Remove custodian sources
+            href: api/security-ediscoverysearch-delete-custodiansources.md
+          - name: List non-custodial data sources
+            href: api/security-ediscoverysearch-list-noncustodialsources.md
+          - name: Add non-custodial data sources
+            href: api/security-ediscoverysearch-post-noncustodialsources.md
+          - name: Remove non-custodial data sources
+            href: api/security-ediscoverysearch-delete-noncustodialsources.md
+          - name: List additional sources
+            href: api/security-ediscoverysearch-list-additionalsources.md # TODO
+          - name: Add additional sources
+            href: api/security-ediscoverysearch-post-additionalsources.md
+          - name: List add to review set operations
+            href: api/security-ediscoverysearch-delete-additionalsources.md # TODO
+        - name: Review set
+          href: resources/security-ediscoveryreviewset.md
           items:
           - name: List
-            href: api/ediscovery-case-list-tags.md
+            href: api/security-ediscoverycase-list-reviewsets.md
           - name: Create
-            href: api/ediscovery-case-post-tags.md
+            href: api/security-ediscoverycase-post-reviewsets.md
           - name: Get
-            href: api/ediscovery-tag-get.md
+            href: api/security-ediscoveryreviewset-get.md
+          - name: Export
+            href: api/security-ediscoveryreviewset-export.md
+          - name: Add to review set
+            href: api/security-ediscoveryreviewset-addtoreviewset.md
+        - name: Review set query
+          href: resources/security-ediscoveryreviewsetquery.md
+          items:
+          - name: List
+            href: api/security-ediscoveryreviewset-list-queries.md
+          - name: Create
+            href: api/security-ediscoveryreviewset-post-queries.md
+          - name: Get
+            href: api/security-ediscoveryreviewsetquery-get.md
           - name: Update
-            href: api/ediscovery-tag-update.md
+            href: api/security-ediscoveryreviewsetquery-update.md
           - name: Delete
-            href: api/ediscovery-tag-delete.md
+            href: api/security-ediscoveryreviewset-delete-queries.md
+          - name: Export
+            href: api/security-ediscoveryreviewsetquery-export.md
+          - name: Apply tags
+            href: api/security-ediscoveryreviewsetquery-applytags.md
+          - name: Run
+            href: api/security-ediscoveryreviewsetquery-run.md
+        - name: Revie set tag
+          href: resources/security-ediscoveryreviewtag.md
+          items:
+          - name: List
+            href: api/security-ediscoveryfile-list-tags.md
+          - name: Create
+            href: api/security-ediscoveryfile-post-tags.md
+          - name: Get
+            href: api/security-ediscoveryreviewtag-get.md
+          - name: Update
+            href: api/security-ediscoveryreviewtag-update.md
+          - name: Delete
+            href: api/security-ediscoveryfile-delete-tags.md
           - name: List child tags
-            href: api/ediscovery-tag-childtags.md
+            href: api/security-ediscoveryfile-list-tags.md
           - name: List tags as hierarchy
-            href: api/ediscovery-tag-ashierarchy.md
+            href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection
         items:
         - name: Labels
