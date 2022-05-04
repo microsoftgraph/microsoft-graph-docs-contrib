@@ -12697,10 +12697,6 @@ items:
               href: api/identityapiconnector-uploadclientcertificate.md
             - name: Delete
               href: api/identityapiconnector-delete.md
-        - name: User
-          items:
-          - name: Default user role permissions
-            href: resources/defaultuserrolepermissions.md
       - name: Governance
         items:
         - name: Access reviews
