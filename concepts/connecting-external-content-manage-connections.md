@@ -17,13 +17,13 @@ The Microsoft Graph connectors platform offers an intuitive way to add your exte
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
-![Sample custom helpdesk system Tickets Connector structure](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
+![Sample custom helpdesk system Tickets Connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
 
-*Sample custom helpdesk system Tickets Connector structure*
+*Sample custom helpdesk system Tickets Connector structure.*
 
-![Admin view of connections including the custom Tickets Connector](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+![Admin view of connections including the custom Tickets Connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
 
-*Admin view of connections including the custom Tickets Connector*
+*Admin view of connections including the custom Tickets Connector.*
 
 <!-- markdownlint-enable MD036 -->
 
@@ -81,6 +81,6 @@ To remove all items that were indexed via a connection, you can [delete a connec
 
 ## Next steps
 
-- [Register the connection schema](/graph/connecting-external-content-manage-schema)
+- [Register the connection schema](connecting-external-content-manage-schema.md)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)
