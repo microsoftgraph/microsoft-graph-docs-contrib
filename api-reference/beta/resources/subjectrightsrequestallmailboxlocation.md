@@ -1,6 +1,6 @@
 ---
 title: "subjectRightsRequestAllMailboxLocation resource type"
-description: "Represents the properties for a subject rights request that defines all mailboxes (Exchange mailboxes and individual or group Microsoft Teams chats) as a search location.s"
+description: "Represents the properties for a subject rights request that defines all mailboxes (Exchange mailboxes and individual or group Microsoft Teams chats) as a search location."
 author: "skadam-msft"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -18,7 +18,6 @@ Represents the properties for a subject rights request that defines all mailboxe
 Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md).
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships

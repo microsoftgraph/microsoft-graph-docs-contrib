@@ -151,7 +151,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentQuery",
           "ChangeType": "Addition",
-          "Description": "Added the **contentQuery** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **contentQuery** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -159,7 +159,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "externalId",
           "ChangeType": "Addition",
-          "Description": "Added the **externalId** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalId** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includeAllVersions",
           "ChangeType": "Addition",
-          "Description": "Added the **includeAllVersions** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **includeAllVersions** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -175,7 +175,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "includeAuthoredContent",
           "ChangeType": "Addition",
-          "Description": "Added the **includeAuthoredContent** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **includeAuthoredContent** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -183,7 +183,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mailboxlocations",
           "ChangeType": "Addition",
-          "Description": "Added the **mailboxlocations** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **mailboxlocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -191,7 +191,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "pauseAfterEstimate",
           "ChangeType": "Addition",
-          "Description": "Added the **pauseAfterEstimate** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **pauseAfterEstimate** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sitelocations",
           "ChangeType": "Addition",
-          "Description": "Added the **sitelocations** property to [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **sitelocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
