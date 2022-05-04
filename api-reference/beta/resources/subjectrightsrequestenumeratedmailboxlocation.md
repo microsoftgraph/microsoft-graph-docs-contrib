@@ -20,7 +20,7 @@ Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsre
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|upns|String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `Monica.Thompson@microsoft.com`.|
+|upns|String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `Monica.Thompson@contoso.com`.|
 
 ## Relationships
 None.

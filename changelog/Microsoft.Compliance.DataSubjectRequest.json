@@ -181,9 +181,9 @@
         {
           "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
           "ApiChange": "Property",
-          "ChangedApiName": "mailboxlocations",
+          "ChangedApiName": "mailboxLocations",
           "ChangeType": "Addition",
-          "Description": "Added the **mailboxlocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **mailboxLocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
@@ -197,9 +197,9 @@
         {
           "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
           "ApiChange": "Property",
-          "ChangedApiName": "sitelocations",
+          "ChangedApiName": "siteLocations",
           "ChangeType": "Addition",
-          "Description": "Added the **sitelocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the **siteLocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequest"
         },
         {
