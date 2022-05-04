@@ -5,7 +5,7 @@ ms.date: 09/12/2017
 title: ContentTypeInfo
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: sharepoint
+ms.prod: sites-and-lists
 ---
 
 # ContentTypeInfo resource type
