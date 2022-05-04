@@ -2067,3 +2067,13 @@ Possible values for user account types (group membership), per Windows definitio
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
