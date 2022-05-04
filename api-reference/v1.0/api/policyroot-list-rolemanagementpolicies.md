@@ -111,7 +111,7 @@ Content-Type: application/json
 #### Request
 <!-- {
   "blockType": "request",
-  "name": "list_unifiedrolemanagementpolicy"
+  "name": "list_unifiedrolemanagementpolicy_expand_rules"
 }
 -->
 ```msgraph-interactive
