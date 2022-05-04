@@ -2514,6 +2514,64 @@
       "CreatedDateTime": "2022-04-25T03:24:57.6436095Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [list](https://docs.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "richLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [richLongRunningOperation](https://docs.microsoft.com/en-us/graph/api/resources/richLongRunningOperation?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "richLongRunningOperation"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "operations",
+          "ChangeType": "Addition",
+          "Description": "Added the **operations** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "addCopyFromContentTypeHub",
+          "ChangeType": "Addition",
+          "Description": "Added the [addCopyFromContentTypeHub](https://docs.microsoft.com/en-us/graph/api/addCopyFromContentTypeHub?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        },
+        {
+          "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCompatibleHubContentTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCompatibleHubContentTypes](https://docs.microsoft.com/en-us/graph/api/getCompatibleHubContentTypes?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/resources/contentType?view=graph-rest-1.0) resource.",
+          "Target": "contentType"
+        }
+      ],
+      "Id": "e572e575-6c8b-41d3-9632-f5dd7a70cb0c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-03T06:10:35.3472999Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }

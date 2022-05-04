@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Invite participants to the active call.
 
-For more information about how to handle operations, see [commsoperation](../resources/commsoperation.md).
+For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.
 
@@ -514,7 +514,7 @@ Content-Type: application/json
 
 ```
 
-### Example 3: Invite participants to a an existing group call, replacing an existing Peer-to-Peer call
+### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
 
 
 The invite API supports only one participant when replacing an existing peer-to-peer call. 
@@ -915,6 +915,191 @@ Content-Type: application/json
 ```
 
 >**Note:** With a `completed` status, you can expect to receive notifications about how your original peer-to-peer call has been terminated and deleted.
+
+### Example 5: Move one participant from one meeting to another
+
+You can move one participant from one meeting to another if these two meetings have been created by the same application.
+For more information about how to create an online meeting, see [Create onlineMeeting](/graph/api/application-post-onlinemeetings).
+
+> **Note:** The invite API can move only one participate per request. If you provide more than one participant in the request body, the invite API will move only the first one.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-move"
+}-->
+
+```http
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+Content-Type: application/json
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation",
+  "name": "participant-invite-move"
+}-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "278405a3-f568-4b3e-b684-009193463064",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "user": {
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### Notification - operation completed
+
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"278405a3-f568-4b3e-b684-009193463064"
+         }
+      }
+   ]
+}
+```
+
+#### Notification - roster updated with participant added
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
