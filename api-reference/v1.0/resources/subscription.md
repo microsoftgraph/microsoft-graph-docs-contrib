@@ -18,7 +18,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [channel](./channel.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
-- A [conversationMember](./conversationmember.md) in a team, channel, or chat in Microsoft Teams.
+- A [conversationMember](./conversationmember.md) in a team or channel in Microsoft Teams.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
@@ -66,7 +66,10 @@ For the possible resource path values for each supported resource and to learn h
 |:--------------------|:-------------------------|
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
+| Teams **channel**    | 60 minutes (1 hour)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Teams **conversationMember**    | 60 minutes (1 hour)  |
+| Teams **team**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
 | SharePoint **list**    | 42300 minutes (under 30 days)    |
