@@ -4977,6 +4977,24 @@
       "CreatedDateTime": "2022-04-28T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled support for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0) and [team and channel membership](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-04T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
