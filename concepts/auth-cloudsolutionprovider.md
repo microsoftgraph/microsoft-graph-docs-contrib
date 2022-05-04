@@ -13,7 +13,7 @@ ms.custom: graphiamtop20
 
 This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the [authorization code grant flow](/azure/active-directory/develop/active-directory-protocols-oauth-code) or the [service to service client credentials flow](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta) resources.
+**Important:** Calling Microsoft Graph from a CSP application is only supported for directory resources (such as **user**, **group**,**device**, **organization**) and [Intune](/graph/api/resources/intune-graph-overview) resources.
 
 ## What is a partner-managed application
 
