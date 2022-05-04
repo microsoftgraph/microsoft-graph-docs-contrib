@@ -77,13 +77,7 @@ The following is an example of a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels
-GET https://graph.microsoft.com/beta/me/security/informationProtection/sensitivityLabels
 ```
-
-``` http
-GET https://graph.microsoft.com/beta/security/informationProtection/sensitivityLabels
-```
-
 
 ### Response
 
