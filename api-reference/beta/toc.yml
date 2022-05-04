@@ -10160,9 +10160,9 @@ items:
           - name: Get
             href: api/cloudpcsnapshot-get.md
           - name: Get subscriptions
-            href: api/cloudpcsubscription-get.md
+            href: api/cloudpcsnapshot-getsubscriptions.md
           - name: Get storage accounts
-            href: api/cloudpcforensicstorageaccount-get.md
+            href: api/cloudpcsnapshot-getstorageaccounts.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:

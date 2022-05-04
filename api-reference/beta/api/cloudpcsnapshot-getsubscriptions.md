@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPcSubscription"
+title: "cloudPCSnapshot: getSubscriptions"
 description: "List all subscriptions that can be used to store snapshot(s) of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
