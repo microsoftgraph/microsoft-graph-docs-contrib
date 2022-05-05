@@ -19,7 +19,7 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method  | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
@@ -39,9 +39,11 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
+|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) collection| Get the availability information of staff members of a Microsoft Bookings calendar.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
@@ -97,8 +99,6 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -111,5 +111,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

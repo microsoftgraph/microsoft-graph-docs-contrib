@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewDisplayNameRequestBody()
-displayName := "My custom name"
+displayName := "Azure AD SAML Toolkit"
 requestBody.SetDisplayName(&displayName)
 options := &msgraphsdk.InstantiateRequestBuilderPostOptions{
 	Body: requestBody,
