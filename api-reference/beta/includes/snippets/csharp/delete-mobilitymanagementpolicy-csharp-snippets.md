@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"]
+await graphClient.Policies.MobileAppManagementPolicies["{mobilityManagementPolicy-id}"]
 	.Request()
 	.DeleteAsync();
 
