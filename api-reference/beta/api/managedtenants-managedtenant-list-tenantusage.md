@@ -7,12 +7,12 @@ ms.prod: "microsoft-365-lighthouse"
 doc_type: apiPageType
 ---
 
-# List tenantUsages
+# List tenantUsage
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [tenantUsage](../resources/managedtenants-tenantusage.md) objects and their properties.
+Get the [monthly usage data for each service](../resources/managedtenants-serviceusage.md) in a [managed tenant](../resources/managedtenants-tenantusage.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /tenantRelationships/managedTenants/tenantUsage
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
