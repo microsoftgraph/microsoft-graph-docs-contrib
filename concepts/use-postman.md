@@ -42,11 +42,9 @@ To use this collection in your own developer tenant, create an Azure AD applicat
 1. On the left menu, select **App registrations**.
 1. On the horizontal menu, select **New registration**.
 1. Set the **Application name** to `Postman`.
-1. From drop-down menu, select **Web**. 
-1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/callback`.
+1. From drop-down menu, select **Web**.
+1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
 1. Select **Register**.
-1. On the left menu, select **Authentication**.
-1. Under **Redirect URIs**, select **Add URI**. Set the value to `https://app.getpostman.com/oauth2/callback` and select **Save**.
 1. On the left menu, select **API Permissions**.
 1. In the horizontal menu, select **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
 1. Type `Mail.`, expand the **Mail** options, and check **Mail.Read**.
