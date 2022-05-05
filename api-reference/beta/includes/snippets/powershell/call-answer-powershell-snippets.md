@@ -15,6 +15,10 @@ $params = @{
 	AcceptedModalities = @(
 		"audio"
 	)
+	CallOptions = @{
+		"@odata.type" = "#microsoft.graph.incomingCallOptions"
+		IsContentSharingNotificationEnabled = $true
+	}
 	ParticipantCapacity = 200
 }
 
