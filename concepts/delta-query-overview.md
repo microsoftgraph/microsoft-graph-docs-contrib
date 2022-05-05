@@ -199,7 +199,12 @@ Delta query can return a response code of `410 (gone)` and a **Location** header
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again.
++ For [directory objects](/graph/api/resources/directoryobject), the limit is seven days. 
++ For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
++ For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
+
+In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see (Error codes in Microsoft Graph](/graph/errors#code-property).
 
 ## Prerequisites
 

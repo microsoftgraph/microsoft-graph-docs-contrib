@@ -41,7 +41,7 @@ An administrator with the _global administrator role_ can tune item insights pri
 
 
 ### How to configure item insights settings via PowerShell?
-Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](./powershell/installation.md) to set item insights for an entire organization or for specific groups.
+Confirm the following additional prerequisites. Then you can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md) to set item insights for an entire organization or for specific groups.
 
 #### Additional prerequisites
 * **PowerShell module** - Install [module version 0.9.1 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).

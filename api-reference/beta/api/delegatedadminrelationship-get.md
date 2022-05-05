@@ -3,7 +3,7 @@ title: "Get delegatedAdminRelationship"
 description: "Read the properties of a delegatedAdminRelationship object."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: apiPageType
 ---
 
@@ -53,6 +53,8 @@ The **delegatedAdminRelationship** object also contains an **@odata.etag** prope
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_delegatedadminrelationship"
@@ -61,6 +63,28 @@ The **delegatedAdminRelationship** object also contains an **@odata.etag** prope
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delegatedadminrelationship-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delegatedadminrelationship-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delegatedadminrelationship-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delegatedadminrelationship-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-delegatedadminrelationship-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response
