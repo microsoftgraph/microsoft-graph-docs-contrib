@@ -100,7 +100,7 @@ The following is an example of the initial request.
 <!-- { "blockType": "request", "name": "get_listItem_delta_first" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/delta
+GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta
 ```
 
 #### Response
@@ -179,7 +179,7 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}delta?token=1230919asd190410jlka"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
 }
 ```
 
@@ -194,7 +194,7 @@ The following is an example of a request after the initial request.
 <!-- { "blockType": "request", "name": "get-listItem-delta-last" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/delta?token=1230919asd190410jlka
+GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka
 ```
 
 #### Response
@@ -245,7 +245,7 @@ Content-type: application/json
             "deleted": {"state": "deleted"}
         }
     ],
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
 }
 ```
 
@@ -261,7 +261,7 @@ The following is an example of a request.
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "sites.read", "target": "action" } -->
 
 ```http
-GET /sites/{siteId}/lists/{listId}/items/delta?token=latest
+GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=latest
 ```
 
 #### Response
@@ -276,9 +276,12 @@ Content-type: application/json
 
 {
     "value": [ ],
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}/items/{itemId}/delta?token=1230919asd190410jlka"
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
 }
 ```
+
+## See also
+[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 
 [error-response]: /graph/errors
 

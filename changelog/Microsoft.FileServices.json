@@ -364,7 +364,7 @@
       "ChangeList": [
         {
           "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
-          "ApiChange": "Resource",
+          "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
           "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-beta) method to the [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
