@@ -41,21 +41,21 @@ Inherits from [entity](../resources/entity.md).
 |dataSubjectType|dataSubjectType|The type of the data subject. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|The name of the request.|
-| externalId           | String| The external ID for the request that is immutable after creation and is used to track the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| externalId           | String| The external ID for the request that is immutable after creation and is used for tracking the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |history|[subjectRightsRequestHistory](../resources/subjectrightsrequesthistory.md) collection|Collection of history change events.|
-| includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| includeAllVersions   | Boolean | Include all versions of the documents. By default, the current copies of the documents will be returned. If SharePoint sites have versioning enabled, including all versions will include the historical copies of the documents. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| includeAuthoredContent| Boolean | Include content authored by the data subject. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |insight|[subjectRightsRequestDetail](../resources/subjectrightsrequestdetail.md)|Insight about the request.|
 |internalDueDateTime|DateTimeOffset|The date and time when the request is internally due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity information for the entity that last modified the request.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the request was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | mailboxLocations     | [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|The mailbox locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval for the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval of the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |regulations|String collection|List of regulations that this request will fulfill.|
 | siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |stages|[subjectRightsRequestStageDetail](../resources/subjectrightsrequeststagedetail.md) collection|Information about the different stages for the request.|
-|status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|subjectRightsRequestType|The type of the request. Possible values are:`export`, `access`, `tagForAction`, `unknownFutureValue`. `delete` type is currently not supported.|
-| includeAuthoredContent| Boolean | Include content authored by the data subject. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+|status|subjectRightsRequestStatus|The status of the request. Possible values are: `active`, `closed`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`. The `delete` type is currently not supported.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -76,7 +76,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",
-    "type": "access",
     "contentQuery": "String",
     "closedDateTime": "String (timestamp)",
     "createdBy": {
@@ -91,8 +90,8 @@ The following is a JSON representation of the resource.
     "displayName": "String",
     "externalId": "String",
     "id": "String (identifier)",
-    "includeAuthoredContent": "Boolean",
     "includeAllVersions": "Boolean",
+    "includeAuthoredContent": "Boolean",
     "insight": {
         "@odata.type": "microsoft.graph.subjectRightsRequestDetail"
     },
@@ -105,50 +104,47 @@ The following is a JSON representation of the resource.
     },
     "lastModifiedDateTime": "String (timestamp)",
     "mailboxLocations": {
-    "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
+        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
     "pauseAfterDownload": "Boolean",
     "stages": [
         {
             "stage": "contentRetrieval",
             "status": "completed",
-            "error": 
-            {
+            "error": {
                 "@odata.type": "microsoft.graph.publicError"
             }
         },
         {
             "stage": "contentReview",
             "status": "current",
-            "error": 
-            {
+            "error": {
                 "@odata.type": "microsoft.graph.publicError"
             }
         },
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": 
-            {
+            "error": {
                 "@odata.type": "microsoft.graph.publicError"
             }
         },
         {
             "stage": "caseResolved",
             "status": "notStarted",
-            "error": 
-            {
+            "error": {
                 "@odata.type": "microsoft.graph.publicError"
             }
         }
     ],
     "siteLocations": {
-    "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
     },
     "status": "active",
     "team": {
         "@odata.type": "microsoft.graph.team"
-    }
+    },
+    "type": "access"
 }
 ```
 

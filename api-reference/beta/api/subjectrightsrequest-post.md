@@ -55,15 +55,15 @@ The following table shows the properties that are required when you create the [
 |dataSubjectType|dataSubjectType|Data subject type. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|Name of the request.|
-| externalId           | String| The external ID for the request that is immutable after creation and is used to track the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-| includeAllVersions   | Boolean | Include all version of the documents. By default, current copies of documents will be returned. If SharePoint sites have versioning enabled, including all versions will include historical copies of documents. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| externalId           | String| The external ID for the request that is immutable after creation and is used for tracking the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| includeAllVersions   | Boolean | Include all versions of the documents. By default, the current copies of the documents will be returned. If SharePoint sites have versioning enabled, including all versions will include the historical copies of the documents. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 | includeAuthoredContent| Boolean | Include content authored by the data subject. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |internalDueDateTime|DateTimeOffset|Internal due date that is used for tracking the request completion.|
 | mailboxLocations     | [subjectRightsRequestMailboxLocation](../resources/subjectrightsrequestmailboxlocation.md)|The mailbox locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval for the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
+| pauseAfterEstimate   | Boolean| Pause the request after estimate has finished. By default, the data estimate will run and then pause, allowing you to preview results and then select the option to retrieve data in the UI. You can set this property to `false` if you want it to perform the estimate and then automatically begin with the retrieval of the content. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |regulations|String collection|One or more regulations for the request.|
 | siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
-|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`. `delete` type is currently not supported.|
+|type|subjectRightsRequestType|Type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`. The `delete` type is currently not supported.|
 
 ## Response
 
