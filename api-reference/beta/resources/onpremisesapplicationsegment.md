@@ -21,7 +21,7 @@ Represents [onPremisesApplicationSegment](onPremisesApplicationSegment.md) objec
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |alternateUrl|String|If you are configuring a traffic manager in front of multiple App Proxy application segments, the alternateUrl is the user-friendly URL that will point to the traffic manager.|
-|corsConfigurations|[corsConfiguration](corsConfiguration.md) Collection|CORS Rule definition for particular application segment.|
+|corsConfigurations|[corsConfiguration](corsconfiguration.md) Collection|CORS Rule definition for particular application segment.|
 |externalUrl|String |The published external url for the application segment. For example, https://intranet.contoso.com/|
 |internalUrl|String |The internal url of the application segment. For example, https://intranet/.|
 
