@@ -72,23 +72,7 @@ While directory searches in the global addressing list in active directory. Plea
 Maximum number of results to return
 ## From
 Specify the minimum index for paging, default is 0, the first results is the most relevant.
-Fields: The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. Note: the default returned fields are only a subset of all the properties. Below is a list of all properties:
-
-| **Returned Properties** |
-|:--------------------------|:----------------------------------------|
-| hitId | 
-| rank |
-| displayName |
-| givenName |
-| surname |
-| emailAddresses |
-| phones |
-| jobTitle |
-| department |
-| officeLocation |
-| personType |
-| userPrincipalName |
-| additionalOfficeLocation |
+Fields: The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. Note: the default returned fields are only a subset of all the properties. 
 
 ## Filter
 Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes, ExternalDirectoryObjectID
