@@ -44,17 +44,17 @@ The results of the people API can be specific by giving additional details when 
 ## Source of results
 People results come from two sources, mailbox or directory. By default, the results will come from both sources which conflicts being removed, but directory sources are preferred when there are conflicts. 
 Mail box results consist of:
-•	People who sent you email
-•	People who you sent email to
-•	People you had meeting with
-•	People you had Teams chat with
-•	People in your manager's org chart
-•	Public contacts of the above people
+* People who sent you email
+* People who you sent email to
+* People you had meeting with
+* People you had Teams chat with
+* People in your manager's org chart
+* Public contacts of the above people
 While directory searches in the global addressing list in active directory. Please note:
-•	Not applicable for Consumer users. They do not have GAL. API will return bad request.
-•	People who are not in the callers GAL will not be returned
-•	People who are hidden by IBP (Information Barrier protocol) will not be returned
-•	People who are hidden in the address list will not be returned
+* Not applicable for Consumer users. They do not have GAL. API will return bad request.
+* People who are not in the callers GAL will not be returned
+* People who are hidden by IBP (Information Barrier protocol) will not be returned
+* People who are hidden in the address list will not be returned
 
 ### Example 1: mailbox results only
 ```
