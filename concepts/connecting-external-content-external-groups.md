@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 
 # Use external groups to manage permissions to Microsoft Graph connectors data sources
 
-[External groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) in a Microsoft Graph connection, and connect to data sources outside Azure Active Directory (Azure AD) groups.
+[External groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) in a Microsoft Graph connection and connect to data sources outside Azure Active Directory (Azure AD) groups.
 
 For data sources that rely on Azure AD users and groups, you set permissions on external items by associating an access control list (ACL) with an Azure AD user and group ID when [creating](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) or updating the external items.
 
-However, for data sources that use non-Azure AD groups, or group-like constructs, like Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
+However, for data sources that use non-Azure AD groups or group-like constructs such as Salesforce Profiles, Dynamics Business Units, SharePoint groups, ServiceNow local groups, or Confluence local groups, we recommend that you use *external groups*.
 
 ## Common external group scenarios
 
@@ -31,7 +31,7 @@ Salesforce uses profiles, roles, and permission sets for authorization. These ar
 The following image shows the structure of the membership information in Salesforce.
 
 <!---Using html to adjust the size of the image --->
-<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of a structure of roles in Salesforce. The role of vice president of sales is at the top level of the hierarchy and has three subordinates, namely, the head of sales operations, the head of sales, and the head of account management. The head of sales operations has a sales operations manager as a subordinate. The head of sales has a sales development manager as a subordinate." width="400px;"/></p>
+<br><p align="center"><img src="images/connectors-images/roles-salesforce.png" alt="Diagram of a structure of roles in Salesforce. The role of vice president of sales is at the top level of the hierarchy and has three subordinates, namely, the head of sales operations, the head of sales, and the head of account management. The head of sales operations has a sales operations manager as a subordinate. The head of sales has a sales development manager as a subordinate." width="500px;"/></p>
 
 ## Using external groups in your connection
 
@@ -155,6 +155,6 @@ You can use the groups API to manage your external groups and group membership. 
 
 ## Next steps
 
+- [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
 - [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview.md)
 - [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
-- [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)

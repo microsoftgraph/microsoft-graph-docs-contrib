@@ -12,11 +12,11 @@ ms.prod: search
 
 Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) resource in Microsoft Graph.
 
-After you have [created a connection](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http), you can add your content. Each item from your data source must be represented as an externalItem in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. 
-
-An externalItem has three key components: access control list, properties, and content.
+After you [create a connection](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http), you can add your content. Each item from your data source must be represented as an externalItem in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the item ID or derive it from one or more fields. 
 
 ## Key components
+
+An externalItem has three key components: access control list, properties, and content.
 
 ### Access control list
 
@@ -28,13 +28,13 @@ The access control list (ACL) is used to specify whether the given roles are gra
 
 The **accessType** value `deny` takes precedence over `grant`. For example, in the item shown earlier, while `Everyone` is granted access and a specific user is denied access, the effective permission for this user is `deny`.
 
-If your data source has non-Azure AD groups, such as teams within your helpdesk system, used to set permissions for the item, you can create external groups in Microsoft Graph by using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the ACLs of individual items because each group membership can lead to a high volume of item updates.
+If your data source has non-Azure AD groups (such as teams within your helpdesk system) that are used to set permissions for the item, you can create external groups in Microsoft Graph by using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the ACLs of individual items because each group membership can lead to a high volume of item updates.
 
 External groups can consist of another external group, Azure AD users, and Azure AD groups. If you have non-Azure AD users, you must translate them to Azure AD users in your ACL.
 
 ### Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](connecting-external-content-manage-schema.md) for the connection before adding items into it and convert **datatypes** into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](connecting-external-content-manage-schema.md) for the connection before adding items into it and convert **datatypes** into [supported datatypes](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0&preserve-view=true).
 
 ![An example property component.](./images/connectors-images/connecting-external-content-manage-items-1.png)
 
@@ -42,7 +42,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 ### Content
 
-The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
+The content component is used to add the bulk of the item that needs to be full text indexed. Examples include a ticket description, parsed text from a file body, or a wiki page body.
 
 Content is one of the key fields influencing [relevance](connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `html` are supported. If your data source has other content types, such as binary files, videos, or images, you can parse them to text before adding them to Microsoft Graph. For example, you can use optical character recognition to extract searchable text from images.
 
@@ -56,11 +56,11 @@ Content cannot be directly added into a search result template, but you can use 
 
 *A search result template.*
 
-When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](/microsoftsearch/manage-verticals) and [result types](/microsoftsearch/manage-result-types) or using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true).
+When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](./microsoftsearch/manage-verticals) and [result types](./microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Add an item
 
-To add an item to the index, you can [create an externalItem](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). When you create an item, you assign a unique identifier in the URL.
+To add an item to the index, you [create an externalItem](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). When you create an item, you assign a unique identifier in the URL.
 
 For example, your application may index helpdesk tickets by using the ticket number. If a ticket has the ticket number `SR00145`, the request might look like the following:
 
@@ -76,7 +76,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+> Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](./microsoftsearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
 ## Update an item
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 ## Delete an item
 
-To remove items from the index, you can [delete the externalItem](/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&preserve-view=true&tabs=http), using the unique identifier assigned to the item when you created it.
+To remove items from the index, you [delete the externalItem](/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0&preserve-view=true&tabs=http), using the unique identifier assigned to the item when you created it.
 
 ```http
 DELETE /external/connections/contosohelpdesk/items/SR00145

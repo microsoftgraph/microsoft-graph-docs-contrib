@@ -163,7 +163,7 @@ This section includes information about the update capabilities for the [schema]
 
 ### Add a property
 
-You can add a property to your schema; doing so does not require reingestion, but it is recommended.
+You can add a property to your schema; doing so does not require reingestion, but we recommend it.
 
 When you add a property, you can include all the search attributes that you need.
 

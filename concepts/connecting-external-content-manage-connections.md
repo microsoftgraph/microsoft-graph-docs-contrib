@@ -27,7 +27,7 @@ After a connection has been created, you can add your content from any external 
 
 <!-- markdownlint-enable MD036 -->
 
-You can model a connection any way you want, but creating one connection for every instance of your connector is the most common model. For example, each time that you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
+You can model a connection any way you want, but creating one connection for every instance of your connector is the most common model. For example, each time that you [set up the Microsoft Windows file share connector](./microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
 ## States and operations
 
@@ -63,7 +63,7 @@ The first step for an application to add items to the search index is to create 
 
 ## Create a connection
 
-Before an application can add items to the search index, it must create and configure a connection by using the following steps:
+Before an application can add items to the search index, it must create and configure a connection:
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) with a unique ID, display name, and description.
 2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) to define the fields that will be included in the index.
