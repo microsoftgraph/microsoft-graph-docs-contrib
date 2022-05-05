@@ -29,7 +29,7 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | **Limit** | **Description** |
 | --------- | --------------- |
-| 100,000 | The maximum number of [external groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) per Microsoft 365 tenant. |
+| **100,000** | The maximum number of [external groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) per Microsoft 365 tenant. |
 | **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion
@@ -44,4 +44,4 @@ This article describes implementation and operational limits for Microsoft Graph
 
 When a [throttling](throttling.md) threshold is exceeded, Microsoft Graph limits any further requests from that client for a period of time. When throttling occurs, Microsoft Graph returns HTTP status code 429 (Too many requests), and the requests fail. A suggested wait time is returned in the response header of the failed request.
 
-Throttling behavior can depend on the type and number of requests. For example, if you have a high volume of requests, all requests types are throttled. Threshold limits vary based on the request type. Therefore, you could encounter a scenario where writes are throttled but reads are still permitted.
+Throttling behavior can depend on the type and number of requests. For example, if you have a high volume of requests, all request types are throttled. Threshold limits vary based on the request type. Therefore, you could encounter a scenario where writes are throttled but reads are still permitted.
