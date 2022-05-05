@@ -33,6 +33,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [myRole](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-myRole?view=graph-rest-beta) resource and a supported method.",
           "Target": "myRole"
+        }, 
+        {
+          "Id": "ad18be47-8800-4594-be69-454a95f198d1",
+          "ApiChange": "Member",
+          "ChangedApiName": "granularDelegatedAdminPrivileges",
+          "ChangeType": "Addition",
+          "Description": "Added the **granularDelegatedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Target": "delegatedPrivilegeStatus"
+        },
+        {
+          "Id": "ad18be47-8800-4594-be69-454a95f198d1",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedAndGranularDelegetedAdminPrivileges",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedAndGranularDelegetedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Target": "delegatedPrivilegeStatus"
         }
       ],
       "Id": "ad18be47-8800-4594-be69-454a95f198d1",
