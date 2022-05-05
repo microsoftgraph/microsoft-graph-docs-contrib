@@ -1,8 +1,7 @@
 ---
 title: "Delete participant"
 description: "Delete a specific participant in a call."
-manager: zhengni
-author: jackry6350
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -23,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not Supported                               |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | None                                        |
+| Application                            | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
 
 Tenant-level application meeting configuration is required to allow an application to call this API. The tenant admin should call the following cmdlet on the tenant remote PowerShell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
@@ -82,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-participant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -156,6 +159,10 @@ Content-Length: 464
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

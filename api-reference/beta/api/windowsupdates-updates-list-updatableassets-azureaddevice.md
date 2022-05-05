@@ -1,7 +1,7 @@
 ---
 title: "List azureADDevice resources"
 description: "Get a list of azureADDevice objects and their properties."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: apiPageType
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/?$fil
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-azureaddevice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-azureaddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

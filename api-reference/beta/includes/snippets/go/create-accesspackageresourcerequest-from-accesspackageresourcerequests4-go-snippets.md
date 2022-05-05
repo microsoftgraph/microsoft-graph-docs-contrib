@@ -14,10 +14,10 @@ requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
 accessPackageResource := msgraphsdk.NewAccessPackageResource()
 requestBody.SetAccessPackageResource(accessPackageResource)
-accessPackageResource.SetAdditionalData(map[string]interface{}{
-	"originId": "c6294667-7348-4f5a-be73-9d2c65f574f3",
-	"originSystem": "AadGroup",
-}
+originId := "c6294667-7348-4f5a-be73-9d2c65f574f3"
+accessPackageResource.SetOriginId(&originId)
+originSystem := "AadGroup"
+accessPackageResource.SetOriginSystem(&originSystem)
 options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
 	Body: requestBody,
 }

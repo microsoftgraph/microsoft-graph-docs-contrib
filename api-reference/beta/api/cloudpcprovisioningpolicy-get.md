@@ -92,12 +92,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcprovisioningpolicy-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcprovisioningpolicy-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,13 +115,20 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "domainJoinType": "hybridAzureADJoin",
+        "onPremisesConnectionId": "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
-    "imageType": "custom"
+    "imageId": "Image ID value",
+    "imageType": "custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```
 
@@ -156,12 +167,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcprovisioningpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcprovisioningpolicy-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Response
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,13 +190,21 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "id": "b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff",
-    "displayName": "Display Name value",
     "description": "Description value",
-    "onPremisesConnectionId": "6bf90392-5fea-459a-9e9d-a2484abbffff",
-    "imageId": "Image ID value",
+    "displayName": "Display Name value",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
     "imageDisplayName": "Image Display Name value",
+    "imageId": "Image ID value",
     "imageType": "custom",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    },
     "assignments": [
       {
         "@odata.type": "microsoft.graph.cloudPcProvisioningPolicyAssignment",

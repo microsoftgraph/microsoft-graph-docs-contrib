@@ -1,7 +1,7 @@
 ---
 title: "List roleManagementPolicyAssignments"
 description: "Get the unifiedRoleManagementPolicyAssignment resources from the roleManagementPolicyAssignments navigation property."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrolemanagementpolicyassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

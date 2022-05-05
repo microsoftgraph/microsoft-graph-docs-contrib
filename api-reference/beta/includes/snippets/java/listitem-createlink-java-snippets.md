@@ -16,6 +16,7 @@ graphClient.sites("{siteId}").lists("{listId}").items("{itemId}")
 		.withExpirationDateTime(null)
 		.withPassword(null)
 		.withRecipients(null)
+		.withRetainInheritedPermissions(null)
 		.build())
 	.buildRequest()
 	.post();

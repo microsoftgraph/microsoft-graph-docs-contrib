@@ -44,6 +44,7 @@ The values of `start` and `end` are interpreted using the timezone offset specif
 This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
@@ -52,7 +53,8 @@ This method also supports some of the [OData query parameters](/graph/query-para
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200, OK` response code and [bookingAppointment](../resources/bookingappointment.md) collection object in the response body.
+
+If successful, this method returns a `200 OK` response code and a collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -85,6 +87,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-getcalendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-getcalendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

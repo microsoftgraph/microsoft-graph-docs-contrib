@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
+GET /solutions/bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ```
 
 ## Query parameters
@@ -103,8 +103,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -150,8 +148,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -189,8 +185,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -236,8 +230,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

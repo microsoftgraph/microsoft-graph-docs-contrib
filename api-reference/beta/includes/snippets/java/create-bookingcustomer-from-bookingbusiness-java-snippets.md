@@ -40,7 +40,7 @@ phones1.type = PhoneType.BUSINESS;
 phonesList.add(phones1);
 bookingCustomer.phones = phonesList;
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").customers()
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").customers()
 	.buildRequest()
 	.post(bookingCustomer);
 

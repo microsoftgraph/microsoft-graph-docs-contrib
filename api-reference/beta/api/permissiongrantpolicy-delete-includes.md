@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
+| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
 | Delegated (personal Microsoft account) | Not supported.    |
-| Application | PermissionGrantPolicy.ReadWrite.All |
+| Application | Policy.ReadWrite.PermissionGrant |
 
 ## HTTP request
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-delete-includes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-delete-includes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

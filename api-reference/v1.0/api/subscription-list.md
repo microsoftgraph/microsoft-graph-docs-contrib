@@ -52,7 +52,7 @@ This API supports the following permission scopes; to learn more, including how 
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Not supported |
 |[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 Response results are based on the context of the calling app. The following sections describe the common scenarios.
 
@@ -133,6 +133,10 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscriptions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscriptions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -19,13 +19,20 @@ mediaConfig.SetAdditionalData(map[string]interface{}{
 requestBody.SetAcceptedModalities( []Modality {
 	"audio",
 }
+callOptions := msgraphsdk.NewIncomingCallOptions()
+requestBody.SetCallOptions(callOptions)
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled)
+callOptions.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.incomingCallOptions",
+}
 participantCapacity := int32(200)
 requestBody.SetParticipantCapacity(&participantCapacity)
 options := &msgraphsdk.AnswerRequestBuilderPostOptions{
 	Body: requestBody,
 }
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer().Post(options)
+graphClient.Communications().CallsById(&callId).Answer(call-id).Post(options)
 
 
 ```

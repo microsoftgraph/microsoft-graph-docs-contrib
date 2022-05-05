@@ -107,6 +107,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroledefinition-from-rbacapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroledefinition-from-rbacapplication-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -133,7 +137,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -144,7 +148,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom"
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
 }
 ```
 

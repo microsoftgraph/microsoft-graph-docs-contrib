@@ -2,7 +2,7 @@
 title: "Microsoft Teams MSAL2 provider"
 description: "Use the Teams MSAL2 provider inside your Microsoft Teams tab to facilitate authentication and Microsoft Graph access to all components. The provider can be used for single-sign-on (SSO) or interactive sign in."
 ms.localizationpriority: medium
-author: simonagren
+author: sebastienlevert
 ---
 
 # Microsoft Teams MSAL2 provider
@@ -50,7 +50,7 @@ import {Providers} from '@microsoft/mgt-element';
 import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider(config);
 ```

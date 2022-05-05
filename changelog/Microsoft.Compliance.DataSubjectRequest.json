@@ -96,7 +96,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-10-15T21:04:31.2767577Z",
       "WorkloadArea": "Compliance",
-      "SubArea": "Privacy"
+      "SubArea": "Subject rights requests"
     },
     {
       "ChangeList": [
@@ -194,7 +194,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-10-15T21:04:31.2767577Z",
       "WorkloadArea": "Compliance",
-      "SubArea": "Privacy"
+      "SubArea": "Subject rights requests"
     }
   ]
 }

@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```powershell
+
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	Title = "A new task"
+	LinkedResources = @(
+		@{
+			WebUrl = "http://microsoft.com"
+			ApplicationName = "Microsoft"
+			DisplayName = "Microsoft"
+		}
+	)
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
+
+```

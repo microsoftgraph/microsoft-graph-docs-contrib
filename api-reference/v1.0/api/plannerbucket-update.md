@@ -39,7 +39,6 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
-|planId|String|Plan id to which the bucket belongs.|
 
 ## Response
 
@@ -84,6 +83,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-plannerbucket-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-plannerbucket-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

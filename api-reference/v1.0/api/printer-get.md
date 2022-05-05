@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 [!INCLUDE [sample-code](../includes/snippets/go/get-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printer-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -203,6 +207,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displ
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printer-capabilities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printer-capabilities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

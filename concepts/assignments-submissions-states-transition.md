@@ -15,13 +15,13 @@ Assignments and submissions are an important part in the interaction between tea
 
 An assignment represents a task or unit of work assigned to a student or team members in a class as part of their study. Only teachers or team owners can create, copy, or schedule assignments. These actions have an impact on assignment states. The following table lists the assignment states and the APIs that are available to change the state. 
 
-| State | Description | REST API call |
-|:--|:--|:--|
-| Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` |
-| Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
-| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| State | Description | REST API call | Features Available to Edit |
+|:--|:--|:--|:--|
+| Draft | Initial status when a new assignment is created or copied from an existing assignment. | `POST /education/classes/{id}/assignments` | Resources, Categories, Rubrics |
+| Published | A background processing state  when the assignment is distributed to each student assigned. | `POST /education/classes/{id}/assignments/{id}/publish` | |
+| Scheduled | Status when the teacher scheduled the assignment to publish in a future time. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` | Resources, Categories, Rubrics |
+| Assigned | After finishing the publish, the assignment is moved to Assigned state and is available for the students. | `POST /education/classes/{id}/assignments/{id}/publish` | Submissions |
+| Pending | Background processing status when a new assignment is being copied from an existing one. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` | |
 
 The following diagram shows the state transitions that can occur for assignments.
 
@@ -31,22 +31,23 @@ The following diagram shows the state transitions that can occur for assignments
 The caller must use the [GET assignment](/graph/api/educationassignment-get.md) operation to check the current assignment status and verify that the publishing process succeeded.
 
 ### Assignments states transitions based on the allowed actions
-| Current assignment state | Action | New state |
+| Current assignment state | New Action | New state |
 |:--|:--|:--|
 | Draft | The teacher schedules the assignment | Scheduled |
 | Draft | Publish | Published |
 | Draft | Edited | Draft |
-| Draft | Discarded | |	
+| Draft | Discarded | |
 | Published | Publish finished | Assigned |
+| Published | Publish failed | Draft |
 | Published | Discarded | |
 | Scheduled | Reach due date | Published |
 | Scheduled | Cancel schedule | Draft |
 | Scheduled | Reschedule | Scheduled |
 | Assigned | Discarded | |
 | Pending |	Copy completed | Draft |
-| Pending | Discarded | |	
+| Pending | Discarded | |
 
-`Note: Any action and state transition not listed in the table is NOT allowed`
+>**Note:** Any action and state transition not listed in the table is not allowed.
 
 ### Sync vs. async operations over assignments API calls
 The following table mentions the API calls that affect the assignment state and the operation type.
@@ -79,7 +80,7 @@ The following diagram shows the state transition flow.
 ![Submission states transitions diagram](images/states-transitions/diagram-submissions.PNG)
 
 ### Submissions states transitions based on allowed actions
-| Current submission state | Action | New state |
+| Current submission state | New Action | New state |
 |:--|:--|:--|
 | Working |	Turn in	| Submitted |
 | Working |	Return for revision	| Reassigned |
@@ -94,7 +95,7 @@ The following diagram shows the state transition flow.
 | Reassigned | Return | Returned |
 | Reassigned | Return for revision | Reassigned |
 
-`Note: Any action and state transition not listed in the table is NOT allowed`
+>**Note:** Any action and state transition not listed in the table is not allowed.
 
 ### Sync vs. async operations over submissions API calls
 The following table lists the API calls that affect the submission state and the operation type.
@@ -113,4 +114,4 @@ The following limits apply to all API calls:
 
 * The maximum number of assignments and submissions resources are 10 for the teacher and plus 10 for the student.
 * The maximum size allowed for resources is 50 MB overall or 10 resources.
-* Throttling limits apply; for details, see [Microsoft Graph throttling guidance](https://docs.microsoft.com/graph/throttling).
+* Throttling limits apply; for details, see [Microsoft Graph throttling guidance](/graph/throttling).
