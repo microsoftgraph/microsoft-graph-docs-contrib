@@ -8,7 +8,89 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search people (preview)
 
-Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed in user's organization.
+Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
+
+## Returned people properties
+The people api returns the following set of properties:
+
+
+| **Response filed name** | **Data type** |
+|:--------------------------|:----------------------------------------|
+|   hitId | String |
+|   rank | Integer |
+|   summary | String |
+|   displayName | String |
+|   givenName | String |
+|   surname | String |
+|   emailAddress | String |
+|   phones | String |
+|   jobTitle | String |
+|   department | String |
+|   officeLocation | String |
+|   personType | String |
+|   userPrincipalName | String |
+
+## Person types
+The People API supports several subtypes that users can ask for, see the table below.
+| **People Types** |	**Examples** |
+| Person	| OrganizationUser, OrganizationContact, PersonalContact, ImplicitContact, ChatImplicitContact |
+| Group	| PublicDistributionList, UnifiedGroup, PersonalDistributionList |
+| Other |	Rooms, GuestUser | 
+
+## Request details
+The results of the people API can be specific by giving additional details when making the request. Below is a few ways to make the requests more specific. 
+
+## Source of results
+People results come from two sources, mailbox or directory. By default, the results will come from both sources which conflicts being removed, but directory sources are preferred when there are conflicts. 
+Mail box results consist of:
+•	People who sent you email
+•	People who you sent email to
+•	People you had meeting with
+•	People you had Teams chat with
+•	People in your manager's org chart
+•	Public contacts of the above people
+While directory searches in the global addressing list in active directory. Please note:
+•	Not applicable for Consumer users. They do not have GAL. API will return bad request.
+•	People who are not in the callers GAL will not be returned
+•	People who are hidden by IBP (Information Barrier protocol) will not be returned
+•	People who are hidden in the address list will not be returned
+
+### Example 1: mailbox results only
+#[HTTP](#tab/http)
+<!--{
+“Provenances”: [“Mailbox”]
+}-->
+
+### Example 2: Results from both sources
+
+#[HTTP](#tab/http)
+<!--{
+“Provenances”: [“Mailbox”, “Directory”]
+}-->
+
+## Size 
+Maximum number of results to return
+## From
+Specify the minimum index for paging, default is 0, the first results is the most relevant.
+Fields: The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. Note: the default returned fields are only a subset of all the properties. Below is a list of all properties:
+
+| **Returned Properties** |
+| hitId | 
+| rank |
+| displayName |
+| givenName |
+| surname |
+| emailAddresses |
+| phones |
+| jobTitle |
+| department |
+| officeLocation |
+| personType |
+| userPrincipalName |
+| additionalOfficeLocation |
+
+## Filter
+Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes, ExternalDirectoryObjectID
 
 ## Example: Search person by name
 
