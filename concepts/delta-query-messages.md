@@ -9,7 +9,7 @@ ms.custom: graphiamtop20
 # Get incremental changes to messages in a folder
 
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
-[delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain
+[delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages,
 without having to fetch the entire set of the user's messages from the server every time.
 
@@ -23,7 +23,7 @@ subsequently, get incremental changes to that folder periodically.
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.
 
 Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET
-request is very much like the way you [get messages](/graph/api/user-list-messages?view=graph-rest-1.0),
+request is very much like the way you [get messages](/graph/api/user-list-messages),
 except that you include the **delta** function:
 
 ```http

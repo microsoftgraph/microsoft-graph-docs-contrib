@@ -11,7 +11,7 @@ ms.custom: graphiamtop20
 By using delta query, you can get new, updated, or deleted events in a specified calendar(s), or within a defined collection of events (as a calendar view) in the calendar. This article describes the latter - getting such incremental changes to events in a calendar view. 
 
 > **Note**
-The capability for the former - getting incremental changes to events in a calendar not bound to a fixed start and end date range - is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta?view=graph-rest-beta) function.
+The capability for the former - getting incremental changes to events in a calendar not bound to a fixed start and end date range - is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta) function.
 
 A calendar view is a collection of events in a date/time range (../me/calendarview) from the default calendar 
 or some other specified calendar of a user, or from a group calendar. 
@@ -30,8 +30,8 @@ Delta query for events in a calendar view is specific to a calendar and date/tim
 you need to track each calendar individually. 
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
-the [delta](/graph/api/event-delta?view=graph-rest-1.0) function. The initial GET 
-request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), 
+the [delta](/graph/api/event-delta) function. The initial GET 
+request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview), 
 except that you include the **delta** function. The following is the initial GET delta request of a calendar view in the signed-in user's default calendar:
 
 ```
