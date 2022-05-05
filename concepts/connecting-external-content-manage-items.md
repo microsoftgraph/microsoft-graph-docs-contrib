@@ -56,7 +56,7 @@ Content cannot be directly added into a search result template, but you can use 
 
 *A search result template.*
 
-When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](./microsoftsearch/manage-verticals) and [result types](./microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true).
+When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](/en-us/microsoftsearch/manage-verticals) and [result types](/en-us/microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true).
 
 ## Add an item
 
@@ -76,7 +76,7 @@ Content-Type: application/json
 ```
 
 > [!NOTE]
-> Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](./microsoftsearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
+> Before indexed items can be found in the Microsoft Search UI, an administrator must [customize the search results page](/en-us/microsoftsearch/configure-connector#next-steps-customize-the-search-results-page) for the corresponding connection.
 
 ## Update an item
 
