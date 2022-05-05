@@ -1,6 +1,6 @@
 ---
 title: "educationTeamsAppResource resource type"
-description: "Represents a Teams application to submit to an assignment.  "
+description: "Represents a Microsoft Teams application to submit to an assignment."
 author: "adarshgh"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Teams application to submit to an [assignment](educationassignment.md). This resource allows users to use those resources through the governing application, for example, YouTube and FlipGrid.
+Represents a Microsoft Teams application to submit to an [assignment](educationassignment.md). This resource allows users to use those resources through the governing application; for example, YouTube or FlipGrid.
 
 Inherites from [educationResource](educationresource.md).
 
