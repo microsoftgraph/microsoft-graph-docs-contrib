@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -145,6 +145,9 @@ The following table shows the properties that are required when you create the d
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
+|appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 
 
 
@@ -158,7 +161,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 5407
+Content-length: 5594
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -281,7 +284,10 @@ Content-length: 5407
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
   "appActionIfDeviceLockNotSet": "wipe",
-  "connectToVpnOnLaunch": true
+  "connectToVpnOnLaunch": true,
+  "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
+  "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe"
 }
 ```
 
@@ -290,7 +296,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 5579
+Content-Length: 5766
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -416,7 +422,10 @@ Content-Length: 5579
   "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
   "deviceLockRequired": true,
   "appActionIfDeviceLockNotSet": "wipe",
-  "connectToVpnOnLaunch": true
+  "connectToVpnOnLaunch": true,
+  "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
+  "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
+  "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe"
 }
 ```
 
