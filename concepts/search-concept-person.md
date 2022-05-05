@@ -33,6 +33,7 @@ The people api returns the following set of properties:
 ## Person types
 The People API supports several subtypes that users can ask for, see the table below.
 | **People Types** |	**Examples** |
+|:-----------------|:--------------| 
 | Person	| OrganizationUser, OrganizationContact, PersonalContact, ImplicitContact, ChatImplicitContact |
 | Group	| PublicDistributionList, UnifiedGroup, PersonalDistributionList |
 | Other |	Rooms, GuestUser | 
