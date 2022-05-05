@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const extensionProperty = {
-  isSyncedFromOnPremises: 'Boolean'
+  isSyncedFromOnPremises: true
 };
 
 await client.api('/directoryObjects/getAvailableExtensionProperties')

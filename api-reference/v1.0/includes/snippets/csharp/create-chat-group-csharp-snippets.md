@@ -38,11 +38,11 @@ var chat = new Chat
 		{
 			Roles = new List<String>()
 			{
-				"owner"
+				"guest"
 			},
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"}
+				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"}
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 {
     "pathsToIgnore": [
+        "/adaptive-cards",
         "/aspnet",
         "/azure",
         "/cloud-app-security",
@@ -18,9 +19,11 @@
         "/office365",
         "/onedrive",
         "/openspecs",
+        "/partner-center",
         "/powershell",
         "/previous-versions",
         "/rest",
+        "/security",
         "/skypeforbusiness",
         "/sharepoint",
         "/troubleshoot",

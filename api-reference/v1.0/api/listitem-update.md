@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 title: Update listItem
-description: Update the properties on a **[listItem][]**.
+description: Update the properties on a listItem.
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -86,6 +86,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-listitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

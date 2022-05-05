@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewAccessPackageAssignmentRequest()
-requestType := "AdminRemove"
+requestType := "userAdd"
 requestBody.SetRequestType(&requestType)
 assignment := msgraphsdk.NewAccessPackageAssignment()
 requestBody.SetAssignment(assignment)
 assignment.SetAdditionalData(map[string]interface{}{
-	"id": "a6bb6942-3ae1-4259-9908-0133aaee9377",
+	"accessPackageId": "d7be3253-b9c6-4fab-adef-30d30de8da2b",
 }
 options := &msgraphsdk.AssignmentRequestsRequestBuilderPostOptions{
 	Body: requestBody,

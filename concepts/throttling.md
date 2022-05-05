@@ -133,7 +133,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
+| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -159,9 +159,8 @@ You can find additional information about best practices in [OneNote API throttl
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### Microsoft Teams service limits
 
@@ -169,20 +168,25 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST /teams | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET channel message  | 20 rps | 200 rps |
+| GET 1:1/group chat message  | 20 rps | 200 rps |
+| POST channel message | 50 rps | 500 rps |
+| POST 1:1/group chat message | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
 | POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
+| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
+| Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
@@ -204,9 +208,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
-| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 18,000 per 5 minutes |
+| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -241,6 +245,10 @@ The following table lists base request costs. Any requests not listed have a bas
 | PATCH | Any identity path not listed in the table | 1 | 1 |
 | PUT | Any identity path not listed in the table | 1 | 1 |
 | DELETE | Any identity path not listed in the table | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> The cost of POST, PATCH, and DELETE operations on the `applications` request path depends on the **signInAudience** type. For apps where the **signInAudience** is `AzureADMyOrg` or `AzureADMultipleOrgs`, the cost is 70,000 requests per 5 minutes; while for apps where the **signInAudience** is `AzureADandPersonalMicrosoftAccount` or `PersonalMicrosoftAccount`, the cost is 60 requests per minute.
 
 Other factors that affect a request cost:
 
@@ -329,9 +337,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### Microsoft Graph reports service limits
@@ -401,9 +410,7 @@ The preceding information applies to the following resources:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -414,6 +421,8 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
+For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). In addition, the following are some throttling limits.
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### Identity providers service limits
@@ -478,6 +487,15 @@ The following limits apply to requests on the assignment service API:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
+
+### Service Communications service limits
+The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
+
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 240 requests per 60 seconds |
+|Any | 800 requests per hour |

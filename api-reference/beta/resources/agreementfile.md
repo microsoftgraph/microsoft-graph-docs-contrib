@@ -25,7 +25,7 @@ None.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [agreementFileProperties](../resources/agreementfileproperties.md).|
+|createdDateTime|DateTimeOffset|The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [agreementFileProperties](../resources/agreementfileproperties.md).|
 |displayName|String|Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement. Inherited from [agreementFileProperties](../resources/agreementfileproperties.md).|
 |fileData|[agreementFileData](agreementfiledata.md)|Data that represents the terms of use PDF document. Read-only. Inherited from [agreementFileProperties](../resources/agreementfileproperties.md).|
 |fileName|String|Name of the agreement file (for example, TOU.pdf). Read-only. Inherited from [agreementFileProperties](../resources/agreementfileproperties.md).|

@@ -8,19 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewOAuth2PermissionGrant()
-clientId := "clientId-value"
+clientId := "ef969797-201d-4f6b-960c-e9ed5f31dab5"
 requestBody.SetClientId(&clientId)
-consentType := "consentType-value"
+consentType := "AllPrincipals"
 requestBody.SetConsentType(&consentType)
-principalId := "principalId-value"
-requestBody.SetPrincipalId(&principalId)
-resourceId := "resourceId-value"
+resourceId := "943603e4-e787-4fe9-93d1-e30f749aae39"
 requestBody.SetResourceId(&resourceId)
-scope := "scope-value"
+scope := "DelegatedPermissionGrant.ReadWrite.All"
 requestBody.SetScope(&scope)
-startTime, err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
+startTime, err := time.Parse(time.RFC3339, "2022-03-17T00:00:00Z")
 requestBody.SetStartTime(&startTime)
-expiryTime, err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
+expiryTime, err := time.Parse(time.RFC3339, "2023-03-17T00:00:00Z")
 requestBody.SetExpiryTime(&expiryTime)
 options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
 	Body: requestBody,
