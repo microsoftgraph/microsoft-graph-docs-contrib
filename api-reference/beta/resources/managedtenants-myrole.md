@@ -18,7 +18,7 @@ Represents the role assignments that are present in a [managed tenant](../resour
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List myRoles](../api/managedtenants-myrole-list.md)|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|Get a list of the [myRole](../resources/managedtenants-myrole.md) objects and their properties.|
+|[List myRoles](../api/managedtenants-managedtenant-list-myroles.md)|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|Get a list of the [myRole](../resources/managedtenants-myrole.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

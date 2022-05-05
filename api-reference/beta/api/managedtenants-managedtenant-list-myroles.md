@@ -1,6 +1,6 @@
 ---
 title: "List myRoles"
-description: "Get the myRole resources from the myRoles navigation property."
+description: "Gets the roles that you have through a delegated relationship across managed tenants." 
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,9 +12,10 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the myRole resources from the myRoles navigation property.
+Gets the roles that you have through a delegated relationship across managed tenants.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,19 +35,22 @@ GET /tenantRelationships/managedTenants/myRoles
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [myRole](../resources/myrole.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [myRole](../resources/managedtenants-myrole.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +66,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/myRoles
 ```
-
 
 ### Response
 
@@ -87,7 +90,7 @@ Content-Type: application/json
       "tenantId": "06b192f6-991c-4f3a-b4f6-ed85580566cf",
       "assignments": [
         {
-          "assignmentType": "delegatedAccessPrivelege",
+          "assignmentType": "delegatedAdminPrivileges",
           "roles": [
             {
               "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
@@ -102,7 +105,7 @@ Content-Type: application/json
           ]
         },
         {
-          "assignmentType": "granularDelegatedAccessPrivelege",
+          "assignmentType": "granularDelegatedAdminPrivileges",
           "roles": [
             {
               "templateId": "3a2c62db-5318-420d-8d74-23affee5d9d5",
@@ -137,7 +140,7 @@ Content-Type: application/json
           ]
         },
         {
-          "assignmentType": "granularDelegatedAccessPrivelege",
+          "assignmentType": "granularDelegatedAdminPrivileges",
           "roles": [
             {
               "templateId": "194ae4cb-b126-40b2-bd5b-6091b380977d",

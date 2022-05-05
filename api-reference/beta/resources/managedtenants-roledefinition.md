@@ -20,7 +20,7 @@ Represents detailed information for the role definition.
 |:---|:---|:---|
 |description|String|The description for the role.|
 |displayName|String|The display name for the role assignment.|
-|templateId|String|The well known unique identifier for the role.|
+|templateId|String|The unique identifier for the template.|
 
 ## Relationships
 None.
