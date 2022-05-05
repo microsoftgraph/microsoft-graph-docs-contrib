@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # User selection and filtering capabilities in Microsoft Graph Data Connect
 
-You can use Microsoft Graph Data Connect to select the users that you want to extract data for, and to include filters to limit the data returned. This article describes the user selection options that Data Connect provides and the filtering that it supports.
+You can use Microsoft Graph Data Connect to select the users that you want to extract data for and to include filters to limit the data returned. This article describes the user selection options that Data Connect provides and the filtering that it supports.
 
 ## User selection
 
