@@ -57,6 +57,8 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deviceAccountUpn|String|Surface Hub Device Account Upn|
 |deviceAccountPassword|String|Surface Hub Device Account Password|
 |deviceFriendlyName|String|Surface Hub Device Friendly Name|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Device Remediation State. Possible values are: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
+|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -98,7 +100,9 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "deviceAccountUpn": "String",
   "deviceAccountPassword": "String",
-  "deviceFriendlyName": "String"
+  "deviceFriendlyName": "String",
+  "remediationState": "String",
+  "remediationStateLastModifiedDateTime": "String (timestamp)"
 }
 ```
 

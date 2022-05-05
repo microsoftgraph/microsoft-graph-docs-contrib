@@ -69,6 +69,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indicates which enrollment profile you want to configure. Possible values are: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
+|detailedHelpText|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized detailed help text provided to users when they attempt to modify managed settings on their device.|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
@@ -133,11 +134,13 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordCountToBlock|Int32|Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
+|passwordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a device must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
 |playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Indicates the Play Store mode of the device. Possible values are: `notConfigured`, `allowList`, `blockList`.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to disable the capability to take screenshots.|
 |securityDeveloperSettingsEnabled|Boolean|Indicates whether or not the user is allowed to access developer settings like developer options and safe boot on the device.|
 |securityRequireVerifyApps|Boolean|Indicates whether or not verify apps is required.|
+|shortHelpText|[androidDeviceOwnerUserFacingMessage](../resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md)|Represents the customized short help text provided to users when they attempt to modify managed settings on their device.|
 |statusBarBlocked|Boolean|Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.|
 |stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md) collection|List of modes in which the device's display will stay powered-on. This collection can contain a maximum of 4 elements.|
 |storageAllowUsb|Boolean|Indicates whether or not to allow USB mass storage.|
@@ -259,6 +262,17 @@ Here is a JSON representation of the resource.
   "enrollmentProfile": "String",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
+  "detailedHelpText": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "String",
+        "value": "String"
+      }
+    ],
+    "defaultMessage": "String"
+  },
   "factoryResetDeviceAdministratorEmails": [
     "String"
   ],
@@ -363,11 +377,23 @@ Here is a JSON representation of the resource.
   "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
   "passwordPreviousPasswordCountToBlock": 1024,
   "passwordRequiredType": "String",
+  "passwordRequireUnlock": "String",
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "playStoreMode": "String",
   "screenCaptureBlocked": true,
   "securityDeveloperSettingsEnabled": true,
   "securityRequireVerifyApps": true,
+  "shortHelpText": {
+    "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+    "localizedMessages": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "String",
+        "value": "String"
+      }
+    ],
+    "defaultMessage": "String"
+  },
   "statusBarBlocked": true,
   "stayOnModes": [
     "String"
