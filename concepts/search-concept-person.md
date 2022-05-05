@@ -56,13 +56,13 @@ While directory searches in the global addressing list in active directory. Plea
 •	People who are hidden in the address list will not be returned
 
 ### Example 1: mailbox results only
-```HTTP
+```
 “Provenances”: [“Mailbox”]
 ```
 
 ### Example 2: Results from both sources
 
-```HTTP
+```
 “Provenances”: [“Mailbox”, “Directory”]
 ```
 
