@@ -7,36 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.NewSchemaExtension()
-owner := "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
-requestBody.SetOwner(&owner)
-requestBody.SetProperties( []ExtensionSchemaProperty {
-	msgraphsdk.NewExtensionSchemaProperty(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "courseId",
-		"type": "Integer",
-	}
-	msgraphsdk.NewExtensionSchemaProperty(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "courseName",
-		"type": "String",
-	}
-	msgraphsdk.NewExtensionSchemaProperty(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "courseType",
-		"type": "String",
-	}
-	msgraphsdk.NewExtensionSchemaProperty(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "courseSupervisors",
-		"type": "String",
-	}
+requestBody := msgraphsdk.NewUser()
+requestBody.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.SchemaExtensionRequestBuilderPatchOptions{
+options := &msgraphsdk.UserRequestBuilderPatchOptions{
 	Body: requestBody,
 }
-schemaExtensionId := "schemaExtension-id"
-graphClient.SchemaExtensionsById(&schemaExtensionId).Patch(options)
+userId := "user-id"
+graphClient.UsersById(&userId).Patch(options)
 
 
 ```

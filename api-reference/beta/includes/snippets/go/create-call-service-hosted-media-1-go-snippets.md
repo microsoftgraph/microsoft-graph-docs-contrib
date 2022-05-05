@@ -19,6 +19,13 @@ requestBody.SetTargets( []InvitationParticipantInfo {
 requestBody.SetRequestedModalities( []Modality {
 	"audio",
 }
+callOptions := msgraphsdk.NewCallOptions()
+requestBody.SetCallOptions(callOptions)
+isContentSharingNotificationEnabled := true
+callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled)
+callOptions.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.outgoingCallOptions",
+}
 mediaConfig := msgraphsdk.NewMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 mediaConfig.SetAdditionalData(map[string]interface{}{
