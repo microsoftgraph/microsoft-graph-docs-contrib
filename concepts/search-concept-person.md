@@ -75,6 +75,7 @@ Specify the minimum index for paging, default is 0, the first results is the mos
 Fields: The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. Note: the default returned fields are only a subset of all the properties. Below is a list of all properties:
 
 | **Returned Properties** |
+|:--------------------------|:----------------------------------------|
 | hitId | 
 | rank |
 | displayName |
