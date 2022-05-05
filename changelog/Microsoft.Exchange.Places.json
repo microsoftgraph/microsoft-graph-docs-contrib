@@ -5,14 +5,6 @@
         {
           "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
           "ApiChange": "Resource",
-          "ChangedApiName": "spaces",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **spaces** relationship from [roomList](https://docs.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
-          "Target": "roomList"
-        },
-        {
-          "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
-          "ApiChange": "Resource",
           "ChangedApiName": "workspaces",
           "ChangeType": "Addition",
           "Description": "Added the **workspaces** relationship to [roomList](https://docs.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
