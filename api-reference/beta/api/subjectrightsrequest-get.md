@@ -154,7 +154,7 @@ Content-Type: application/json
         "firstName": "Monica",
         "lastName": "Thompson",
         "email": "Monica.Thompson@contoso.com",
-        "residency": "USA"
+        "residency": "USA",
         "SSN": "123-456-7890"
     },
     "team": {

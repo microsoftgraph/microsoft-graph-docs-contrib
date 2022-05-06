@@ -158,7 +158,6 @@ Content-Type: application/json
         "lastName": "Thompson",
         "email": "Monica.Thompson@contoso.com",
         "residency": "USA"
-        "SSN": "123-456-7890"
     },
     "team": {
         "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
