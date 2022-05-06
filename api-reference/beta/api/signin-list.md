@@ -41,7 +41,7 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Reader
 
 ### Viewing applied CA policies in sign-ins
-The Applied CA Policies listed in [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) are only available to users and apps with roles that allow them to read conditional access data. If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) portion of the response will be omitted. The following roles grant users permissions to view conditional access data:
+The Applied CA Policies listed in [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) are only available to users and apps with roles that allow them to read conditional access data. If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) portion of the response will be omitted. The following roles grant users permissions to view conditional access data:
 
 + Global Reader
 + Company Administrator
@@ -49,7 +49,7 @@ The Applied CA Policies listed in [appliedConditionalAccessPolicy](appliedcondit
 + Security Reader
 + Conditional Access Administrator
 
-Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) in the logs. 
+Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) in the logs. 
 
 + Policy.Read.All
 + Policy.ReadWrite.ConditionalAccess
