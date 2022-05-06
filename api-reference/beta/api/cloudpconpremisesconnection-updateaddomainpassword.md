@@ -18,7 +18,7 @@ Update the Active Directory domain password for a [cloudPcOnPremisesConnection](
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+This API will be supported with both POST and PATCH method before the end of June 2022, and will be finally switched to POST at that time.
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
