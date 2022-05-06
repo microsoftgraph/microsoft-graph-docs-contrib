@@ -99,7 +99,8 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 
 | EWS API                                                                                               | Microsoft Graph API |
 |-------------------------------------------------------------------------------------------------------|-----|
-| [GetUserAvailability](/exchange/client-developer/web-service-reference/getuseravailability-operation) | [Get free/busy schedule](/graph/api/calendar-getschedule) |
+| [GetUserAvailability](/exchange/client-developer/web-service-reference/getuseravailability-operation)<br/>FindAvailableMeetingTimes | [Get free/busy schedule](/graph/api/calendar-getschedule)|
+ 
 
 ### Reminders
 
@@ -117,10 +118,21 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 |-----------------------------------------------------------------------------------------------------------|-----|
 | [GetReminders](/exchange/client-developer/web-service-reference/getreminders-operation)                   | [Reminder view](/graph/api/user-reminderview) |
 | [PerformReminderAction](/exchange/client-developer/web-service-reference/performreminderaction-operation) | [Dismiss reminder](/graph/api/event-dismissreminder)<br/>[Snooze reminder](/graph/api/event-snoozereminder) |
+|CreateSharingPermission,GetSharingPermission | [Calendar owner: Get sharing or delegation information and permissions](outlook-share-or-delegate-calendar.md#calendar-owner-get-sharing-or-delegation-information-and-permissions)|
+|UpdateSharingPermission | [Get calendar information about sharees and delegates, and update individual permissions](outlook-share-or-delegate-calendar.md#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions)|
+|DeleteSharingPermission| [Delete a sharee or delegate of a calendar](outlook-share-or-delegate-calendar.md#delete-a-sharee-or-delegate-of-a-calendar)|
+|GetSharingPermissionInfo | [Calendar owner: Get properties of a shared or delegated calendar](outlook-share-or-delegate-calendar.md#get-properties-of-a-shared-or-delegated-calendar)|
 
 ### Invitations
 
+|ActivateSharingInvitation | [Share or delegate a calendar in Outlook](/graph/outlook-share-or-delegate-calendar)|
+|GetSharingInvitation | [Sharee: Get a shared calendar or its events directly from calendar owner's mailbox](outlook-get-shared-events-calendars.md#sharee-get-a-shared-calendar-or-its-events-directly-from-calendar-owners-mailbox)|
+|DeleteSharingInvitation | [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](outlook-share-or-delegate-calendar.md#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)|
+|CreateSharingInvitation | [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf)|
 
+### Shared Information
+
+| GetCalendarSharedInformation,GetConsumerCalendarSharedInformation | [List calendars](/graph/api/user-list-calendars) |
 ## Groups APIs
 
 | EWS API                                                                                               | Microsoft Graph API |
