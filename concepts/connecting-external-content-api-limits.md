@@ -15,22 +15,22 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | **Limit** | **Description** |
 | --------- | --------------- |
-| **10 connections** | The maximum number of [connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) resources per Microsoft 365 tenant. |
-| **700,000 items** | The maximum number of [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) per connection. |
+| **10** | The maximum number of [connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) resources per Microsoft 365 tenant. |
+| **700,000** | The maximum number of [items](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) per connection. |
 | **70 GB** | The maximum byte size of a connection. |
 
 ## Schema limits
 
 | **Limit** | **Description** |
 | --------- | --------------- |
-| **128 properties** | The maximum number of properties that can be defined in a [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), characterizing the data ingested through a connection. |
+| **128** | The maximum number of properties that can be defined in a [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), characterizing the data ingested through a connection. |
 
 ## Group limits
 
 | **Limit** | **Description** |
 | --------- | --------------- |
 | **100,000** | The maximum number of [external groups](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) per Microsoft 365 tenant. |
-| **1000 requests/sec** | The maximum number of requests allowed per second in the group administration [throttling](#throttling) threshold. |
+| **1000** | The maximum number of requests allowed per second (requests/sec) in the group administration [throttling](#throttling) threshold. |
 
 ## Item ingestion
 
