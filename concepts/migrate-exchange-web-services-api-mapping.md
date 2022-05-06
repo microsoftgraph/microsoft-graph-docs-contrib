@@ -124,14 +124,16 @@ This article lists the Microsoft Graph APIs that map to Exchange Web Services (E
 |GetSharingPermissionInfo | [Calendar owner: Get properties of a shared or delegated calendar](outlook-share-or-delegate-calendar.md#get-properties-of-a-shared-or-delegated-calendar)|
 
 ### Invitations
-
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
 |ActivateSharingInvitation | [Share or delegate a calendar in Outlook](/graph/outlook-share-or-delegate-calendar)|
 |GetSharingInvitation | [Sharee: Get a shared calendar or its events directly from calendar owner's mailbox](outlook-get-shared-events-calendars.md#sharee-get-a-shared-calendar-or-its-events-directly-from-calendar-owners-mailbox)|
 |DeleteSharingInvitation | [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](outlook-share-or-delegate-calendar.md#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)|
 |CreateSharingInvitation | [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf)|
 
 ### Shared Information
-
+| EWS API                                                                                                   | Microsoft Graph API |
+|-----------------------------------------------------------------------------------------------------------|-----|
 | GetCalendarSharedInformation,GetConsumerCalendarSharedInformation | [List calendars](/graph/api/user-list-calendars) |
 ## Groups APIs
 
