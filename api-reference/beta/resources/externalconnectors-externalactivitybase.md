@@ -1,6 +1,6 @@
 ---
 title: "externalActivityBase resource type"
-description: "Represents the basetype for activity done involving external items."
+description: "Represents the basetype for a user interaction with an external item."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the basetype for activity done involving external items.
+Represents the basetype for a user interaction with an [externalitem](../resources/externalconnectors-externalitem.md).
+
 This is an abstract type. Base type of [externalActivity](../resources/externalconnectors-externalactivity.md) and [externalActivityResult](../resources/externalconnectors-externalactivityresult.md).
 
 
