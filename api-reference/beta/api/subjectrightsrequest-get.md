@@ -166,8 +166,8 @@ Content-Type: application/json
     "includeAuthoredContent": true,
     "externalId": null,
     "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
-    "mailboxlocations": null,
-    "sitelocations": {
+    "mailboxLocations": null,
+    "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }    
 }

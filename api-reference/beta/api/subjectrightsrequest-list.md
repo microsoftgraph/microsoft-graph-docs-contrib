@@ -168,8 +168,8 @@ Content-Type: application/json
     "includeAuthoredContent": true,
     "externalId": null,
     "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
-    "mailboxlocations": null,
-    "sitelocations": {
+    "mailboxLocations": null,
+    "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     },
 
@@ -236,10 +236,10 @@ Content-Type: application/json
     "includeAuthoredContent": true,
     "externalId": null,
     "contentQuery": "(('Alex Wilber' OR 'Alex.Wilber@contoso.com') OR (participants=Alex.Wilber@contoso.com))",
-    "mailboxlocations": {
+    "mailboxLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllMailBoxLocation"
     },
-    "sitelocations": {
+    "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
   ]
