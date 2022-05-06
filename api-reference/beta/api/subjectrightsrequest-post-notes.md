@@ -73,10 +73,11 @@ Content-Type: application/json
 {
 "content": 
   {
-    "content": "String",
+    "content": "Please take a look at the files tagged with follow up",
     "contentType": "text"
   }
 }
+
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authorednote-from--csharp-snippets.md)]

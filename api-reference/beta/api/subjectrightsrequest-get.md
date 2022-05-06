@@ -102,18 +102,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
     {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "GDPR"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export request for Monica Thompson",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-06-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-04-20T22:42:28Z",
+    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+    "createdDateTime": "2022-04-19T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
@@ -137,33 +137,38 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": 
+        {
+            "id": "",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": 
+        {
+            "id": "",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Monica",
+        "lastName": "Thompson",
+        "email": "Monica.Thompson@contoso.com",
+        "residency": "USA"
+        "SSN": "123-456-7890"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
     },
-    "includeAllVersions": "Boolean",
-    "pauseAfterEstimate": "Boolean",
-    "includeAuthoredContent": "Boolean",
-    "externalId": "String",
-    "contentQuery": "String",
-    "mailboxlocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
-    },
+    "includeAllVersions": false,
+    "pauseAfterEstimate": true,
+    "includeAuthoredContent": true,
+    "externalId": null,
+    "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
+    "mailboxlocations": null,
     "sitelocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }    
 }
 ```

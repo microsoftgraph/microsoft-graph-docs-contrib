@@ -79,35 +79,31 @@ If successful, this method returns a `201 Created` response code and a [subjectR
   "name": "create_subjectRightsRequest_from_"
 }
 -->
-``` http
+``` json
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "contentQuery": "String",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "externalId": "String",
-    "displayName": "String",
-    "description": "String",
-    "includeAllVersions": "Boolean",
-    "includeAuthoredContent": "Boolean",
-    "internalDueDateTime": "String (timestamp)",
+    "type": "export",
+    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@hotmail.com\") OR (participants:\"Diego.Siciliani@hotmail.com\"))",
+    "dataSubjectType": "customer",
+    "externalId": "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
+    "displayName": "Export report for customer Id: 12345",
+    "description": "This is a export request",
+    "includeAllVersions": false,
+    "includeAuthoredContent": true,
+    "internalDueDateTime": "2022-07-20T22:42:28Z",
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Diego",
+        "lastName": "Siciliani",
+        "email": "Diego.Siciliani@hotmail.com",
+        "residency": "USA"
     },
-    "mailboxlocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
-    },
-    "pauseAfterEstimate": "Boolean",
-    "regulations": ["String"],
+    "mailboxlocations": null,
+    "pauseAfterEstimate": true,
+    "regulations": ["CCPA"],
     "sitelocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }    
 }
 ```
