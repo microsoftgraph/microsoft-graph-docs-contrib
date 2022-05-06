@@ -177,6 +177,7 @@ Content-type: application/json
             ]
         }
     ],
+    "language": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

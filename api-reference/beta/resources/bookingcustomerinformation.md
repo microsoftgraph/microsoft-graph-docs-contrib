@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "phone": "String",
   "notes": "String",
-  "smsNotificationsEnabled": "String",
+  "smsNotificationsEnabled": "Boolean",
   "location": {
     "@odata.type": "microsoft.graph.location"
   },

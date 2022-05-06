@@ -80,10 +80,9 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isAnonymousJoinEnabled": "Boolean",
+  "language": "String",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
-  "language": "String",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
@@ -96,6 +95,7 @@ The following is a JSON representation of the resource.
     }
   ],
   "maximumAttendeesCount": "Integer",
+  "isAnonymousJoinEnabled": "Boolean",
   "webUrl": "String"
 }
 

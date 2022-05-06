@@ -190,6 +190,7 @@ Content-type: application/json
             ]
         }
     ],
+    "language":"en-US",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",
