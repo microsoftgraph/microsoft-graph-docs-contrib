@@ -1,7 +1,7 @@
 ---
 title: Configure Application Proxy using Microsoft Graph APIs
 description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-author: davidmu1
+author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
@@ -105,7 +105,7 @@ Content-type: application/json
     "externalAuthenticationType": "aadPreAuthentication",
     "internalUrl": "https://contosoiwaapp.com",
     "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-  }
+  },
   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
   "web": {
     "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
