@@ -14411,6 +14411,18 @@ items:
             href: api/externalconnectors-schema-get.md
           - name: Update
             href: api/externalconnectors-schema-update.md
+        - name: External activity
+          items:
+          - name: External activity
+            href: resources/externalconnectors-externalactivity.md
+        - name: External activity base
+          items:
+          - name: External activity base
+            href: resources/externalconnectors-externalactivitybase.md
+        - name: External activity result
+          items:
+          - name: External activity result
+            href: resources/externalconnectors-externalactivityresult.md
         - name: External item
           items:
           - name: External item
