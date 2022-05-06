@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/devices/delta
 } --> 
 ```http
 HTTP/1.1 200 OK
-Content-type: device/json
+Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#devices",
