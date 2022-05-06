@@ -40,8 +40,10 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
+|isAnonymousJoinEnabled|Boolean|True means anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
 |isHiddenFromCustomers|Boolean|True means this service is not available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|language|String|The language of the self service booking page.
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
@@ -78,8 +80,10 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "isAnonymousJoinEnabled": "Boolean",
   "isHiddenFromCustomers": true,
   "isLocationOnline": "Boolean",
+  "language": "String",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",

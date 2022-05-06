@@ -34,6 +34,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
+|anonymousJoinWebUrl|String|Url of meeting to join anonymously.
 |customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
 |customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
 |customerLocation|[location](location.md)|Represents location information for the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
@@ -108,6 +109,7 @@ The following is a JSON representation of the resource.
   "invoiceUrl": "String",
   "isLocationOnline": "Boolean",
   "joinWebUrl": "String",
+  "anonymousJoinWebUrl": "String",
   "optOutOfCustomerEmail": true,
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",

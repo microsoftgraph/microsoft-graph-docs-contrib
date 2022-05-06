@@ -108,6 +108,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,
+    "language":null,
     "address":{
         "type":"home",
         "postOfficeBox":"",
