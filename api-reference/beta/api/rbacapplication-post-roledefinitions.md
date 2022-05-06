@@ -1,5 +1,5 @@
 ---
-title: "Create unifiedRoleDefinition"
+title: "Create roleDefinitions"
 description: "Create a new unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "abhijeetsinha"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
-# Create unifiedRoleDefinition
+# Create roleDefinitions
 
 Namespace: microsoft.graph
 
