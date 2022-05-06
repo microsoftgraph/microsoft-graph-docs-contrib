@@ -49,6 +49,7 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Suggested enrollment limit](intune-enrollment-suggestedenrollmentlimit.md)
 - [Windows autopilot deployment profile assignment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows autopilot device remediation state](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Windows autopilot device type](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows autopilot profile assignment detailed status](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows autopilot profile assignment status](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
