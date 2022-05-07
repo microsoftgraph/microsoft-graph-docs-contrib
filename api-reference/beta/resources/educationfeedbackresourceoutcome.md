@@ -1,0 +1,68 @@
+---
+title: "educationFeedbackResourceOutcome resource type"
+description: "An educationOutcome that gives feedback in the form of document."
+ms.localizationpriority: medium
+author: "cristobal-buenrostro"
+ms.prod: "education"
+doc_type: "resourcePageType"
+---
+
+# educationFeedbackResourceOutcome resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of document.
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Setup Feedback Resources Folder](../api/educationassignment-setupfeedbackresourcesfolder.md) | [educationAssignment](educationassignment.md) | Create a SharePoint folder to upload files as feedback resources. |
+| [Create Feedback Resource Outcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Create new educationFeedbackResourceOutcome for Submission. |
+| [Delete Feedback Resource Outcome](../api/educationoutcome-update.md) | None | Delete educationFeedbackResourceOutcome from Submission. |
+| [List Feedback Resources](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) collection | Get an educationFeedbackResourceOutcome object collection. |
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|Unique identifier for the educationFeedbackResourceOutcome.|
+|feedbackResource|[educationResource](educationResource.md)|The actual feedback resource.|
+|resourceStatus|educationFeedbackResourceOutcomeStatus|The possible values are: `notPublished`, `pendingPublish`, `published`, `failedPublish`, and `unknownFutureValue`.|
+
+## Relationships
+
+None
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationFeedbackResourceOutcome",
+  "keyProperty": "id"
+}-->
+
+```json
+{
+  "id": "String (identifier)",
+  "feedbackResource": {"@odata.type": "microsoft.graph.educationResource"},
+  "resourceStatus": {"@odata.type": "microsoft.graph.educationFeedbackResourceOutcomeStatus"}
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2022-05-05 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationFeedbackResourceOutcome resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
