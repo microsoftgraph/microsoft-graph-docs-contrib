@@ -83,7 +83,7 @@ Content-type: application/json
     "assignedDateTime": null,
     "allowLateSubmissions": true,
     "resourcesFolderUrl": null,
-    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!9i0vapy4v02vPa13nXvmLuPofkLptz5InpCzu0fn0IRzOBm8o5mJQbXuPddtkYG7/items/01PREZ76FARBTP25X74JFISOFAN7QAHOYW",
+    "feedbackResourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!9i0vapy4v02vPa13nXvmLuPofkLptz5InpCzu0fn0IRzOBm8o5mJQbXuPddtkYG7/items/01PREZ76FARBTP25X74JFISOFAN7QAHOYW",
     "createdDateTime": "2022-02-24T18:57:27.8611453Z",
     "lastModifiedDateTime": "2022-02-24T18:57:40.5319603Z",
     "allowStudentsToAddResourcesToSubmission": true,

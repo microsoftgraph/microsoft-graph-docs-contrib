@@ -108,7 +108,7 @@ Content-type: application/json
         "displayName": "Document1.docx",
         "createdDateTime": "2022-05-06T00:50:30.0772177Z",
         "lastModifiedDateTime": "2022-05-06T00:50:30.0772434Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQZQ33I4AJBSURHZJDDQKEJ5TEMJ",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F8CNZWU38SarWxPyWM7jx/items/01VANVJQZQ33I4AJBSURHZJDDQKEJ5TEMJ",
         "createdBy": {
             "application": null,
             "device": null,
