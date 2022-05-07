@@ -26,8 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-This method does not support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
-
 This method only supports the `$top` OData query parameter.
 
 ## HTTP request
@@ -59,9 +57,9 @@ If successful, this function returns a `200 OK` response code and an [educationA
 
 #### Request
 
-The following is an example of the request. 
+The following is an example of the request.
 
-Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments; otherwise, you will get all the assignments in the class.
+Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional. Use it when you have a long list of assignments; otherwise, you will get all the assignments in the class.
 
 <!-- {
   "blockType": "request",
@@ -209,7 +207,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 
 The following is an example of the response.
 
->**Note:** You must continue using the `@odata.nextLink` value for the consequent calls until you get the `@odata.deltaLink` property in the response.
+>**Note:** You must continue using the `@odata.nextLink` value for the subsequent calls until you get the `@odata.deltaLink` property in the response.
 
 <!-- {
   "blockType": "response",
@@ -340,9 +338,9 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 The following is an example of the response.
 
->**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial Delta call.
+>**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial delta call.
 
->Sometimes the delta response will be very large in which case an `@odata.nextLink` will be returned to continue fetching changes until you hit an `@odata.deltaLink` again.
+>**Note:** The delta response might be large, in which case an `@odata.nextLink` is returned. Continue fetching changes until you hit an `@odata.deltaLink` again.
 
 <!-- {
   "blockType": "response",

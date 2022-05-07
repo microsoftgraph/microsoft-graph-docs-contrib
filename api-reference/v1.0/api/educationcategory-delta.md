@@ -10,6 +10,8 @@ doc_type: apiPageType
 # educationCategory: delta
 Namespace: microsoft.graph
 
+Get a list of newly created or updated [educationCategory](../resources/educationcategory.md) objects without having to perform a full read of the collection.
+
 > This method doesn't return deleted categories.
 
 ## Permissions
@@ -22,8 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
-This method does not support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
-
 This method only supports the `$top` OData query parameter.
 
 ## HTTP request
@@ -55,9 +55,9 @@ If successful, this function returns a `200 OK` response code and an [educationC
 
 #### Request
 
-The following is an example of the request. 
+The following is an example of the request.
 
-Use the `$top` parameter to specify the number of categories to be returned. The parameter is optional but use it preferably when you have a long list of categories, otherwise you will get all the categories in the class.
+Use the `$top` parameter to specify the number of categories to be returned. The parameter is optional. Use it when you have a long list of categories; otherwise, you will get all the categories in the class.
 
 <!-- {
   "blockType": "request",
