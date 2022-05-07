@@ -78,7 +78,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
 | **name**                 | string             | The name / title of the item.                                                                  |
 | **root**                 | [root][]           | If present, indicates that this is the root site in the site collection. Read-only.            |
-| **settings**             | [siteSettings]     | The settings on this site. Returned only on $select. Read-only.                                |
+| **settings**             | [siteSettings]     | The settings on this site. Read-only.                                |
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
