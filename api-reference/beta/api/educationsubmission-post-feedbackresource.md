@@ -1,6 +1,6 @@
 ---
 title: "Create educationFeedbackResourceOutcome"
-description: "Create a new assignment."
+description: "Create a new feeback resource for submission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
