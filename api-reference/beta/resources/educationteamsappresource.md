@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Teams application to submit to an [assignment](educationassignment.md). This resource allows users to use those resources through the governing application; for example, YouTube or FlipGrid.
+Represents a Microsoft Teams application from a partner that can be loaded to an [assignment](educationassignment.md). This resource allows teachers and students to interact and use partner resources through the application; for example, YouTube or FlipGrid.
 
 Inherites from [educationResource](educationresource.md).
 
@@ -21,10 +21,10 @@ Inherites from [educationResource](educationresource.md).
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|string|The display name of the resource.|
-|appId|string|Teams App ID of the application|
-|appIconWebUrl|string|URL that points to the app's icon|
-|teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams|
-|webUrl|string|URL for the app resource that can be opened in the browser|
+|appId|string|Teams App ID of the application.|
+|appIconWebUrl|string|URL that points to the app's icon.|
+|teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams.|
+|webUrl|string|URL for the app resource that can be opened in the browser.|
 |createdBy|String|The display name of the user that created this resource. Inherited from **educationResource**.|
 |createdDateTime|DateTimeOffset|Date time the resoruce was added. Inherited from **educationResource**.|
 |lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource. Inherited from **educationResource**.|
