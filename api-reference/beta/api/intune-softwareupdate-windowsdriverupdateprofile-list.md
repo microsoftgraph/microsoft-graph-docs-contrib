@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 579
+Content-Length: 832
 
 {
   "value": [
@@ -77,7 +77,12 @@ Content-Length: 579
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "inventorySyncStatus": {
+        "@odata.type": "microsoft.graph.windowsDriverUpdateProfileInventorySyncStatus",
+        "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+        "driverInventorySyncState": "success"
+      }
     }
   ]
 }

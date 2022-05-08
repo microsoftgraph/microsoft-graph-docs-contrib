@@ -12,6 +12,10 @@ userAccountType := "standardUser"
 requestBody.SetUserAccountType(&userAccountType)
 osVersion := "windows11"
 requestBody.SetOsVersion(&osVersion)
+windowsSettings := msgraphsdk.NewCloudPcWindowsSettings()
+requestBody.SetWindowsSettings(windowsSettings)
+language := "en-US"
+windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
 }
