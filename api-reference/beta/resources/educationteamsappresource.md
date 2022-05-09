@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Teams application from a partner that can be loaded to an [assignment](educationassignment.md). This resource allows teachers and students to interact and use partner resources through the application; for example, YouTube or FlipGrid.
+An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md) which allows education service users to share assignments on the Teams client, as supported by the corresponding governing application. Examples of governing applications are YouTube and FlipGrid.
+
+For information about using FlipGrid for education on Microsoft Teams, see [introduction to FlipGrid](https://education.microsoft.com/en-us/resource/13cb22b1).
 
 Inherites from [educationResource](educationresource.md).
 
