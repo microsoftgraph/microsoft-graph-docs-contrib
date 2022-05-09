@@ -33,6 +33,7 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 | **isCompromised** | beta  &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | The Microsoft Graph [identity protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) API provides more sophisticated functionality. |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
+| **passwordProfile** | beta  &nbsp;-&nbsp; **passwordProfile** <br> v1.0 &nbsp;-&nbsp; **passwordProfile** | The property name and type is still **passwordProfile** butthe properties of the **passwordProfile** complex type have changed. See [passwordProfile property differences](#passwordprofile-property-differences). |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;**signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity) resource.|
@@ -41,6 +42,16 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 | **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
+
+### passwordProfile property differences
+
+The properties of the **passwordProfile** complex type have been renamed in Microsoft Graph as follows.
+
+| Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property | Comments |
+|--|--|--|
+| enforceChangePasswordPolicy | beta &nbsp;-&nbsp; **forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignIn** |  |
+| forceChangePasswordNextLogin | beta &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** |  |
+| password | beta &nbsp;-&nbsp; **password** <br> v1.0 &nbsp;-&nbsp; **password** |  |
 
 ## Group property differences
 
@@ -95,17 +106,17 @@ The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it ha
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **city** | beta&nbsp;-&nbsp;**addresses (city)** <br> v1.0 &nbsp;-&nbsp; **addresses (city)**  | The city property is part of the addresses resource collection. |
-| **country** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(countryOrRegion)**<br> v1.0&nbsp;-&nbsp;**addresses**&nbsp;**(countryOrRegion)**  | The countryOrRegion property is part of the addresses resource collection. |
+| **city** | beta&nbsp;-&nbsp;**addresse/city** <br> v1.0 &nbsp;-&nbsp; **addresses/city**  | The **city** property is part of the **addresses** resource collection. |
+| **country** | beta&nbsp;-&nbsp;**addresses/countryOrRegion**<br> v1.0&nbsp;-&nbsp;**addresses/countryOrRegion**  | The **countryOrRegion** property is part of the **addresses** resource collection. |
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp;**onPremisesSyncEnabled**   | |
-| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(businessFax)** <br> v1.0 &nbsp;-&nbsp;**phones**&nbsp;**(businessFax)** | Now part of the phones collection, which supports mobile, business, and businessFax. |
+| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones/businessFax** <br> v1.0 &nbsp;-&nbsp;**phones/businessFax** | Now part of the **phones** collection which supports various phone types. |
 | **physicalDeliveryOfficeName** | beta &nbsp;-&nbsp;**officeLocation** <br> v1.0 &nbsp;-&nbsp; **officeLocation** | |
-| **postalCode** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(postalCode)**<br> v1.0 &nbsp;-&nbsp;**addresses**&nbsp;**(postalCode)** | The postalCode property is part of the addresses resource collection. |
-| **provisioningErrors** | beta &nbsp;-&nbsp; not available <br> v1.0 &nbsp;-&nbsp; not available | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors**. Currently this is only available in beta. |
+| **postalCode** | beta&nbsp;-&nbsp;**addresses/postalCode**<br> v1.0 &nbsp;-&nbsp;**addresses/postalCode** | The **postalCode** property is part of the **addresses** resource collection. |
+| **provisioningErrors** | beta &nbsp;-&nbsp; not available <br> v1.0 &nbsp;-&nbsp; not available | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors**. Currently this is only available in `beta`. |
 | **sipProxyAddress** |  beta &nbsp;-&nbsp;**imAddresses**<br> v1.0 &nbsp;-&nbsp;**imAddresses**  | |
-| **state** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(state)**<br> v1.0 &nbsp;-&nbsp; **addresses**&nbsp;**(state)**  | The state property is part of the addresses resource collection. |
-| **streetAddress** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(street)**<br> v1.0 &nbsp;-&nbsp;**addresses**&nbsp;**(street)**  | The street property is part of the addresses resource collection. |
-| **telephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(business)** <br> v1.0 &nbsp;-&nbsp;**phones**&nbsp;**(business)** | Now part of the phones collection, which supports mobile, business, and businessFax. |
+| **state** | beta &nbsp;-&nbsp;**addresses/state**<br> v1.0 &nbsp;-&nbsp; **addresses/state**  | The **state** property is part of the **addresses** resource collection. |
+| **streetAddress** | beta &nbsp;-&nbsp;**addresses/street**<br> v1.0 &nbsp;-&nbsp;**addresses/street**  | The **street** property is part of the **addresses** resource collection. |
+| **telephoneNumber** | beta&nbsp;-&nbsp;**phones/business** <br> v1.0 &nbsp;-&nbsp;**phones/business** | Now part of the **phones** collection which supports various phone types. |
 | **thumbnailPhoto** | beta &nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 
 ## Contract property differences
