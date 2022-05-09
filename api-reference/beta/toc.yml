@@ -15308,9 +15308,9 @@ items:
         - name: List pinned messages in a chat
           href: api/chat-list-pinnedmessages.md
         - name: Pin a message in a chat
-          href: api/chat-post-pinnedmessage.md
+          href: api/chat-post-pinnedmessages.md
         - name: Unpin a message from a chat
-          href: api/chat-delete-pinnedmessage.md
+          href: api/chat-delete-pinnedmessages.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
