@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example1: List all the pinned messages in the chat
+### Example 1: List all the pinned messages in the chat
 ### Request
 The following is an example of a request.
 <!-- {
@@ -88,7 +88,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example2: List all the pinned messages in the chat along with associated chat message
+### Example 2: List all the pinned messages in the chat along with associated chat message
 ### Request
 The following is an example of a request.
 <!-- {
