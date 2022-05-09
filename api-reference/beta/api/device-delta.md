@@ -2,7 +2,7 @@
 title: "device: delta"
 description: "Get created, updated, or deleted devices without performing a full read of the entire resource collection."
 ms.localizationpriority: medium
-author: "davidhou"
+author: "msdhou"
 ms.prod: "devices"
 doc_type: apiPageType
 ---
