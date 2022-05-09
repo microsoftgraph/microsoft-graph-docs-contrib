@@ -36,7 +36,7 @@ The initial steps required here follow most of the same steps used to register a
 
 ### Pre-consent your app for all your customers
 
-Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using Azure AD powershell V2. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).  Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
+Finally grant your partner-managed app those configured permissions for all your customers. You can do this by adding the **servicePrincipal** that represents the app to the *Adminagents* group in your Partner tenant, using [Azure AD powershell V2](https://www.powershellgallery.com/packages/AzureAD) or [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Follow these steps to find the *Adminagents* group, the **servicePrincipal** and add it to the group.
 
 # [Azure AD PowerShell](#tab/azuread)
 
