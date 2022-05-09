@@ -20,10 +20,13 @@ Use the following instructions to grant delegated permissions that are exposed b
 
 To complete these instructions, you need the following resources and privileges:
 
-+ A working Azure AD tenant.
-+ Privileges to create applications in the tenant. You can either authenticate as a user or as an app that can create applications in the tenant. To test these instructions, you can run your session in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman).
-+ Consent to the `Application.ReadWrite.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated or app permissions.
-+ The object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal.
+1. A working Azure AD tenant.
+2. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as an app or user with privileges to create applications in the tenant.
+3. In the app you've signed in to, consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
+4. The object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal in our tenant.
+
+> [!CAUTION]
+> The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app or user in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
 ## Step 1: Register an application with Azure AD
 
@@ -102,7 +105,7 @@ Content-type: application/json
 
 ## Step 3: Grant a delegated permission to the service principal
 
-In this step, we'll grant the service principal a delegated permission (or scope) that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph is `943603e4-e787-4fe9-93d1-e30f749aae3`. We'll grant the `Group.Read.All` scope to our service principal and grant consent on behalf of all users in the tenant.
+In this step, we'll grant the service principal a delegated permission (or scope) that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph in this tenant is `943603e4-e787-4fe9-93d1-e30f749aae3`. The object ID of our service principal is `ef969797-201d-4f6b-960c-e9ed5f31dab5`. We'll grant the `User.Read.All` scope to our service principal and grant consent on behalf of one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
 
 <!-- {
   "blockType": "request",
@@ -114,11 +117,30 @@ Content-Type: application/json
 
 {
     "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
-    "consentType": "AllPrincipals",
+    "consentType": "Principal",
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
-    "scope": "Group.Read.All"
+    "principalId": "1ed8ac56-4827-4733-8f80-86adc2e67db5",
+    "scope": "User.Read.All"
 }
 ```
+
+Alternatively, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the above except with the following changes:
+- The **consentType** is `AllPrincipal`, indicating that you're consenting on behalf of all users in the tenant.
+- The **principalId** property is not supplied or can be `null`.
+An example request body is as follows:
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+Content-Type: application/json
+
+{
+    "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+    "consentType": "AllPrincipals",
+    "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+    "scope": "User.Read.All"
+}
+```
+
 
 ### Response
 
@@ -134,13 +156,15 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
     "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
-    "consentType": "AllPrincipals",
+    "consentType": "Principal",
     "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
-    "principalId": null,
+    "principalId": "1ed8ac56-4827-4733-8f80-86adc2e67db5",
     "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
-    "scope": "Group.Read.All"
+    "scope": "User.Read.All"
 }
 ```
+
+If you granted consent for all users in the tenant, the **consentType** in the above response object would be `AllPrincipals` and the **principalId** would be `null`.
 
 To confirm the delegated permissions assigned to the service principal, you run the following request.
 
@@ -160,7 +184,7 @@ PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXz
 Content-Type: application/json
 
 {
-    "scope": "Group.Read.All AuditLog.Read.All"
+    "scope": "User.Read.All AuditLog.Read.All"
 }
 ```
 
@@ -175,59 +199,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## Step 5 [Optional]: Create an app role assignment for a user to the app
-
-This step assigns the app to a user identified by principal ID `4f74691a-6111-4a08-b59c-2a89c9bc6c19`. This assignment allows the user to see the app on the [MyApps portal](https://myapps.microsoft.com/) and access the app as if the app is configured to require user assignment.
-
-<!-- {
-  "blockType": "request",
-  "name": "grant-delegated-perms-sp-appRoleAssignedTo"
-}-->
-```msgraph-interactive
-POST https://graph.microsoft.com/v1.0/servicePrincipals/ef969797-201d-4f6b-960c-e9ed5f31dab5/appRoleAssignedTo
-Content-Type: application/json
-
-{
-    "principalId": "4f74691a-6111-4a08-b59c-2a89c9bc6c19",
-    "resourceId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
-    "appRoleId": "00000000-0000-0000-0000-000000000000"
-}
-```
-
-To confirm all users who have a role assignment to the app, run the following request.
-
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals/ef969797-201d-4f6b-960c-e9ed5f31dab5/appRoleAssignedTo
-```
-
-### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignments"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('ef969797-201d-4f6b-960c-e9ed5f31dab5')/appRoleAssignedTo/$entity",
-    "id": "Gml0TxFhCEq1nCqJybxsGWE6Ywzd6w9Gnp7H4SZEIpE",
-    "deletedDateTime": null,
-    "appRoleId": "00000000-0000-0000-0000-000000000000",
-    "createdDateTime": "2022-03-18T10:52:39.7396904Z",
-    "principalDisplayName": "Conf Room Crystal",
-    "principalId": "4f74691a-6111-4a08-b59c-2a89c9bc6c19",
-    "principalType": "User",
-    "resourceDisplayName": "My application",
-    "resourceId": "ef969797-201d-4f6b-960c-e9ed5f31dab5"
-}
-```
-
 ## Conclusion
 
-You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph bypasses the consent workflow and should be used with caution.
+You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph bypasses [interactive consent](/azure/active-directory/develop/application-consent-experience) and should be used with caution.
 
 ## See also
 
