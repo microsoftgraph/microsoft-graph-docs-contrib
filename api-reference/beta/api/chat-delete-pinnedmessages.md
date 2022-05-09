@@ -1,13 +1,13 @@
 ---
 title: "Unpin a message from a chat"
-description: "Unpin a message from a chat."
+description: "Unpin a message from a chat"
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Delete pinnedChatMessageInfo
+# Unpin a message from a chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /chats/{chatsId}/pinnedMessages/{pinnedChatMessageInfoId}/$ref
+DELETE /chats/{chat-id}/pinnedMessages/{pinnedChatMessageInfoId}
 ```
 
 ## Request headers

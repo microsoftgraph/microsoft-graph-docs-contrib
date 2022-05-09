@@ -15305,7 +15305,7 @@ items:
       - name: Pinned chat message info
         href: resources/pinnedChatMessageInfo.md
         items:
-        - name: List of pinned messages for a chat
+        - name: List pinned messages in a chat
           href: api/chat-list-pinnedmessages.md
         - name: Pin a message in a chat
           href: api/chat-post-pinnedmessage.md

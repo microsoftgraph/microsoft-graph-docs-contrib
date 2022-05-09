@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual pinned message in a [channel](channel.md) or [chat](chat.md) entity.
+Represents an individual pinned message in a [chat](chat.md) entity.
 
 
 Inherits from [entity](../resources/entity.md).

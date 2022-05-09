@@ -1,5 +1,5 @@
 ---
-title: "List pinned message info of a chat"
+title: "List pinned messages in a chat"
 description: "Retrieve list of pinned message info of a chat."
 author: "sumanac"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List pinnedChatMessageInfoes
+# List pinned messages in a chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/chats/{chatsId}/pinnedMessages
+GET https://graph.microsoft.com/beta/chats/{chat-id}/pinnedMessages
 ```
 
 ### Response
