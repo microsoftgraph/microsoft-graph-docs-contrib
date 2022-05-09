@@ -107,7 +107,7 @@ Content-type: application/json
         {
           "type": 2,
           "identityProvider": null,
-          "key": "Y3YxN2E1MWFlYw=="
+          "key": "base64Y3YxN2E1MWFlYw=="
         }
       ]
     }
