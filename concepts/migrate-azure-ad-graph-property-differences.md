@@ -33,7 +33,8 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 | **isCompromised** | beta  &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | The Microsoft Graph [identity protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) API provides more sophisticated functionality. |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
-| **passwordProfile** | beta  &nbsp;-&nbsp; **passwordProfile** <br> v1.0 &nbsp;-&nbsp; **passwordProfile** | The property name and type is still **passwordProfile** butthe properties of the **passwordProfile** complex type have changed. See [passwordProfile property differences](#passwordprofile-property-differences). |
+| **passwordProfile/enforceChangePasswordPolicy** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** | |
+| **passwordProfile/forceChangePasswordNextLogin** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;**signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity) resource.|
@@ -42,16 +43,6 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 | **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
-
-### passwordProfile property differences
-
-The properties of the **passwordProfile** complex type have been renamed in Microsoft Graph as follows.
-
-| Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property | Comments |
-|--|--|--|
-| enforceChangePasswordPolicy | beta &nbsp;-&nbsp; **forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignIn** |  |
-| forceChangePasswordNextLogin | beta &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** |  |
-| password | beta &nbsp;-&nbsp; **password** <br> v1.0 &nbsp;-&nbsp; **password** |  |
 
 ## Group property differences
 
