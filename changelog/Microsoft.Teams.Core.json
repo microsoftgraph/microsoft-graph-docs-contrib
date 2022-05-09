@@ -40,11 +40,11 @@
       "ChangeList": [
         {
           "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
-          "ApiChange": "Parameter",
-          "ChangedApiName": "LIST",
-          "ChangeType": "Addition",
-          "Description": "Added a requirement for users to specify `descending` sort order when using the `orderBy' query option.",
-          "Target": "chatMessage"
+          "ApiChange": "Relationship",
+          "ChangedApiName": "messages",
+          "ChangeType": "Change",
+          "Description": "Using the `orderBy' query option when [listing chat messages](https://docs.microsoft.com/en-us/graph/api/chat-list-messages?view=graph-rest-beta) requires specifying the `desc` sort order.",
+          "Target": "chat"
         }
       ],
       "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
@@ -4921,6 +4921,96 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-03-14T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration.",
+        "Target": "teamworkUserIdentityType"
+      }
+        ],
+        "Id": "febc4150-2531-4407-b3df-2ab22ded2ccb",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+        "ApiChange": "Member",
+        "ChangedApiName": "emailUser",
+        "ChangeType": "Addition",
+        "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
+        "Target": "teamworkUserIdentityType"
+        }
+      ],
+      "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "242cb3e4-ef8c-11eb-b6a8-8203ca0139f2",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppId** property to the [chatMessageAttachment](https://docs.microsoft.com/en-us/graph/api/resources/chatMessageAttachment?view=graph-rest-beta) resource.",
+          "Target": "chatMessageAttachment"
+        }
+      ],
+      "Id": "242cb3e4-ef8c-11eb-b6a8-8203ca0139f2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-25T10:11:41.458Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-28T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-28T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
