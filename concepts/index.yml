@@ -1,15 +1,15 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: Learn how to use Microsoft Graph to access the data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility + Security. Browse API reference, sample code, tutorials, and more.
+summary: Learn how to use Microsoft Graph to access the data and intelligence in Microsoft 365, Windows, and Enterprise Mobility + Security. Browse API reference, sample code, tutorials, and more.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
-  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
+  description: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can build unique, intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 05/24/2021
+  ms.date: 05/09/2022
   featureFlags:
   - clicktale
 
