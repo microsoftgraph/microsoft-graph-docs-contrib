@@ -7,7 +7,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "getStaffAvailability",
                 "ChangeType": "Addition",
-                "Description": "Added the [getStaffAvailability](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta) method to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
+                "Description": "Added the [getStaffAvailability](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta) method to the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource.",
                 "Target": "bookingStaffMember"
               },
               {

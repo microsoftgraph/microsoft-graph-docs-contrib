@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AccessPackageAssignmentRequestFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
-	.filterByCurrentUser(AccessPackageAssignmentRequestFilterByCurrentUserParameterSet
+AccessPackageFilterByCurrentUserCollectionPage filterByCurrentUser = graphClient.identityGovernance().entitlementManagement().accessPackages()
+	.filterByCurrentUser(AccessPackageFilterByCurrentUserParameterSet
 		.newBuilder()
-		.withOn('target')
+		.withOn('allowedRequestor')
 		.build())
 	.buildRequest()
 	.get();
