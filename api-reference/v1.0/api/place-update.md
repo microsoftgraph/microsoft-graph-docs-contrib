@@ -3,7 +3,7 @@ title: "Update place"
 description: "Update the properties of place object."
 ms.localizationpriority: medium
 author: "vrod9429"
-ms.prod: outlook
+ms.prod: calendar
 doc_type: "apiPageType"
 ---
 

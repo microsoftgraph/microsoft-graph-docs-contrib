@@ -3,7 +3,7 @@ title: "Add Named Item"
 description: Add a new name to the collection of the given scope using the user's locale for the formula.
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: non-product-specific
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
 ---
 
