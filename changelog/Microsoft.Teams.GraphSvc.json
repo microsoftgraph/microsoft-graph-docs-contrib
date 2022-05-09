@@ -32,7 +32,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-29T19:48:01.454Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -106,7 +106,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-03-04T01:13:01.454Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -132,7 +132,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-04-07T01:13:01.454Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -166,7 +166,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-06-07T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -200,7 +200,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-08-31T22:52:32.5315491Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -226,7 +226,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-13T06:30:06.7567921Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -260,7 +260,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-09-24T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -334,7 +334,7 @@
       "Version": "beta",
       "CreatedDateTime": "2021-11-29T11:01:30.771Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -352,7 +352,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2021-12-15T09:20:09.7567921Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -394,7 +394,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-01-26T09:30:11.7567234Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "ChangeList": [
@@ -428,7 +428,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-02-07T12:58:28.5337951Z",
       "WorkloadArea": "Teamwork",
-      "SubArea": ""
+      "SubArea": "GraphSvc"
     },
     {
       "changelog": [
