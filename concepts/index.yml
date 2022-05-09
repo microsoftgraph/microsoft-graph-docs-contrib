@@ -19,33 +19,32 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: What services can I access through Microsoft Graph?
+    - title: What can I access through Microsoft Graph?
       itemType: concept
       url: ./overview-major-services.md
-    - title: What are Microsoft Graph connectors?
-      itemType: overview
-      url: ./connecting-external-content-connectors-overview.md
-    - title: What is Microsoft Graph Data Connect?
-      itemType: overview
-      url: ./data-connect-concept-overview.md
-    - title: Microsoft Graph REST API
-      itemType: reference
-      url: /graph/api/overview?view=graph-rest-1.0
-    - title: Install SDKs
-      itemType: overview
-      url: /graph/sdks/sdk-installation
     - title: New and updated APIs, SDKs, and tools
       itemType: whats-new
       url: ./whats-new-overview.md
-    - title: Changelog
-      itemType: overview
-      url: ./changelog.md   
+    - title: Microsoft Graph REST API
+      itemType: reference
+      url: /graph/api/overview?view=graph-rest-1.0
+  
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   title: Working with Microsoft Graph
   items:
     # Card
+    - title: Microsoft Graph Data Connect
+      links:
+        - url: ./data-connect-concept-overview.md
+          itemType: overview
+          text: Access data at scale.
+    - title: Microsoft Graph connectors
+      links:
+        - url: ./connecting-external-content-connectors-overview.md
+          itemType: overview
+          text: Surface external data.  
     - title: Users
       links:
         - url: ./azuread-users-concept-overview.md
@@ -71,11 +70,6 @@ conceptualContent:
         - url: ./teams-concept-overview.md
           itemType: overview
           text: Explore chat-based collaboration, meetings, calling, and enterprise voice features.
-    - title: OneDrive file storage
-      links:
-        - url: ./onedrive-concept-overview.md
-          itemType: overview
-          text: Work with various types of files from OneDrive.
     - title: Outlook calendar and mail
       links:
         - url: ./outlook-calendar-concept-overview.md
@@ -84,15 +78,19 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: Excel workbooks and charts
-      links:
-        - url: ./excel-concept-overview.md
-          itemType: overview
-          text: Read and modify Excel files.
 
 tools:
-  title: Tools
+  title: SDKs and tools
   items:
+    # Card
+    - title: SDKs
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: /graph/sdks/sdk-installation
+    # Card
+    - title: Quick starts
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: https://developer.microsoft.com/graph/quick-start
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
@@ -101,14 +99,6 @@ tools:
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
-    # Card
-    - title: Quick start
-      imageSrc: ./images/hub/icon02-quickstart.svg
-      url: https://developer.microsoft.com/graph/quick-start
-    # Card
-    - title: What's new
-      imageSrc: ./images/hub/icon01-sdk.svg
-      url: ./whats-new-overview.md
 
 additionalContent:
   sections:
@@ -141,4 +131,6 @@ additionalContent:
             - text: Microsoft Graph Q&A community support
               url: /answers/products/graph
             - text: Known issues
-              url: ./known-issues.md 
+              url: ./known-issues.md
+            - text: Changelog
+              url: ./changelog.md             
