@@ -19,15 +19,53 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: What can I access through Microsoft Graph?
+    - title: What services can I access through Microsoft Graph?
       itemType: concept
       url: ./overview-major-services.md
-    - title: New and updated APIs, SDKs, and tools
-      itemType: whats-new
-      url: ./whats-new-overview.md
-    - title: Microsoft Graph REST API
-      itemType: reference
+    - title: What are Microsoft Graph connectors?
+      itemType: overview
+      url: ./connecting-external-content-connectors-overview.md
+    - title: What is Microsoft Graph Data Connect?
+      itemType: overview
+      url: ./data-connect-concept-overview.md
+
+tools:
+  title: SDKs and tools
+  items:
+      # Card
+    - title: APIs
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/hub/icon01-sdk.svg
       url: /graph/api/overview?view=graph-rest-1.0
+    # Card
+    - title: SDKs
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: /graph/sdks/sdk-installation
+    # Card
+    - title: Graph Explorer
+      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      url: https://developer.microsoft.com/graph/graph-explorer/
+    # Card
+    - title: Microsoft Graph Toolkit
+      imageSrc: ./images/hub/icon04-graphtoolkit.svg
+      url: ./toolkit/overview.md
+    # Card
+    - title: Quick start
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: https://developer.microsoft.com/graph/quick-start
+    # Card
+    - title: What's new
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: ./whats-new-overview.md
+    # Card
+    - title: Changelog
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: ./changelog.md
+    # Card
+    - title: Known issues
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: ./known-issues.md
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -78,27 +116,6 @@ conceptualContent:
           itemType: overview
           text: Develop applications by extending Microsoft 365 data into Azure.
 
-tools:
-  title: SDKs and tools
-  items:
-    # Card
-    - title: SDKs
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/hub/icon01-sdk.svg
-      url: /graph/sdks/sdk-installation
-    # Card
-    - title: Quick starts
-      imageSrc: ./images/hub/icon02-quickstart.svg
-      url: https://developer.microsoft.com/graph/quick-start
-    # Card
-    - title: Graph Explorer
-      imageSrc: ./images/hub/icon03-graphexplorer.svg
-      url: https://developer.microsoft.com/graph/graph-explorer/
-    # Card
-    - title: Microsoft Graph Toolkit
-      imageSrc: ./images/hub/icon04-graphtoolkit.svg
-      url: ./toolkit/overview.md
-
 additionalContent:
   sections:
     - title: Tutorials and resources
@@ -134,10 +151,6 @@ additionalContent:
         # Card
         - title: Resources and community
           links:
-            - text: Changelog
-              url: ./changelog.md
-            - text: Known issues
-              url: ./known-issues.md
             - text: Support
               url: https://developer.microsoft.com/graph/support
             - text: Microsoft Graph on Q&A
