@@ -118,46 +118,31 @@ conceptualContent:
 
 additionalContent:
   sections:
-    - title: Tutorials and resources
+    - title: Resources
       items:
         # Card
-        - title: Learning paths
+        - title: Learn
           links:
             - text: Microsoft Graph fundamentals
               url: /learn/paths/m365-msgraph-fundamentals/
-            - text: Build apps with Microsoft Graph – Associate
-              url: /learn/paths/m365-msgraph-associate/
-            - text: Explore Microsoft Graph scenarios for JavaScript development
-              url: /learn/paths/m365-msgraph-scenarios
-            - text: Explore Microsoft Graph scenarios for ASP.NET Core development
-              url: /learn/paths/m365-msgraph-dotnet-core-scenarios/
-            - text: Develop apps with Microsoft Graph Toolkit
-              url: /learn/paths/m365-msgraph-toolkit
-        # Card
-        - title: How-to
-          links:
-            - text: "Connectors: Build your first custom connector"
-              url: /graph/connecting-external-content-build-quickstart
-            - text: "Microsoft Search: Search content in OneDrive and Sharepoint"
-              url: /graph/search-concept-files
-            - text: "Identity: Manage access to resources"
-              url: /graph/tutorial-access-package-api
-            - text: "Outlook: Attach large files to a message or event"
-              url: /graph/outlook-large-attachments
-            - text: "Outlook: Get MIME content of a message"
-              url: /graph/outlook-get-mime-message
-            - text: "More tutorials..."
+            - text: Microsoft learning paths
+              url: /learn/browse/?products=ms-graph&resource_type=learning%20path
+            - text: Tutorials
               url: /graph/tutorials
         # Card
-        - title: Resources and community
+        - title: Connect
           links:
-            - text: Support
-              url: https://developer.microsoft.com/graph/support
-            - text: Microsoft Graph on Q&A
-              url: /answers/products/graph
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts
               url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
             - text: Monthly community calls
               url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
+
+        # Card
+        - title: Get support
+          links:
+            - text: Microsoft Graph support
+              url: https://developer.microsoft.com/graph/support
+            - text: Microsoft Graph Q&A community support
+              url: /answers/products/graph
