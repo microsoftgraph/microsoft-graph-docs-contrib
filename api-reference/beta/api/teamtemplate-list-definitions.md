@@ -1,18 +1,18 @@
 ---
-title: "List team"
-description: "Get the team resources from the teamDefinition navigation property."
+title: "List teamTemplate"
+description: "Get a list of the teamTemplate objects and their properties."
 author: "CharlieKB"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# List team
+# List teamTemplateDefinitions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the team resources from the teamDefinition navigation property.
+Get a list of the [teamTemplateDefinition](../resources/teamtemplatedefinition.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teamwork/teamTemplates/{teamTemplateId}/definitions/{teamTemplateDefinitionId}/teamDefinition
+GET /teamwork/teamTemplates/{teamTemplateId}/definitions
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [team](../resources/team.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [teamTemplateDefinition](../resources/teamtemplatedefinition.md) objects in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_team"
+  "name": "list_teamtemplatedefinition"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teamwork/teamTemplates/{teamTemplateId}/definitions/{teamTemplateDefinitionId}/teamDefinition
+GET https://graph.microsoft.com/beta/teamwork/teamTemplates/{teamTemplateId}/definitions
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.team)"
+  "@odata.type": "Collection(microsoft.graph.teamTemplateDefinition)"
 }
 -->
 ``` http
@@ -78,37 +78,23 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.team",
-      "id": "097fc3aa-a113-6c36-da4e-11ba9a9c600c",
-      "createdDateTime": "String (timestamp)",
+      "@odata.type": "#microsoft.graph.teamTemplateDefinition",
+      "id": "804ea553-41ff-d766-919a-88edb128aa52",
+      "parentTemplateId": "String",
       "displayName": "String",
+      "languageTag": "String",
+      "audience": "String",
       "description": "String",
-      "internalId": "String",
-      "classification": "String",
-      "specialization": "String",
-      "visibility": "String",
-      "webUrl": "String",
-      "memberSettings": {
-        "@odata.type": "microsoft.graph.teamMemberSettings"
+      "shortDescription": "String",
+      "iconUrl": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
       },
-      "guestSettings": {
-        "@odata.type": "microsoft.graph.teamGuestSettings"
-      },
-      "messagingSettings": {
-        "@odata.type": "microsoft.graph.teamMessagingSettings"
-      },
-      "funSettings": {
-        "@odata.type": "microsoft.graph.teamFunSettings"
-      },
-      "discoverySettings": {
-        "@odata.type": "microsoft.graph.teamDiscoverySettings"
-      },
-      "isArchived": "Boolean",
-      "summary": {
-        "@odata.type": "microsoft.graph.teamSummary"
-      },
-      "tenantId": "String",
-      "isMembershipLimitedToOwners": "Boolean"
+      "publisherName": "String",
+      "categories": [
+        "String"
+      ]
     }
   ]
 }
