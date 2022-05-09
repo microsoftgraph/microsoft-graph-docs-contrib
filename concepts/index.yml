@@ -30,7 +30,7 @@ highlightedContent:
       url: ./data-connect-concept-overview.md
 
 tools:
-  title: SDKs and tools
+  title: APIs, SDKs, and tools
   items:
       # Card
     - title: APIs
@@ -82,11 +82,21 @@ conceptualContent:
         - url: ./office365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
+    - title: Identity and access management
+      links:
+        - url: ./azuread-identity-access-management-concept-overview.md
+          itemType: overview
+          text: Use Azure AD methods to manage access and authenticate users.
+    - title: Security
+      links:
+        - url: ./security-concept-overview.md
+          itemType: overview
+          text: Connect Microsoft security products, services, and partners to streamline security operations.
     - title: Microsoft Teams teamwork
       links:
         - url: ./teams-concept-overview.md
           itemType: overview
-          text: Integrate with Microsoft Teams.
+          text: Explore chat-based collaboration, meetings, calling, and enterprise voice features.
     - title: OneDrive file storage
       links:
         - url: ./onedrive-concept-overview.md
@@ -105,16 +115,6 @@ conceptualContent:
         - url: ./excel-concept-overview.md
           itemType: overview
           text: Read and modify Excel files.
-    - title: Identity and access management
-      links:
-        - url: ./azuread-identity-access-management-concept-overview.md
-          itemType: overview
-          text: Use Azure AD methods to manage access and authenticate users.
-    - title: Microsoft Graph Data Connect
-      links:
-        - url: ./data-connect-concept-overview.md
-          itemType: overview
-          text: Develop applications by extending Microsoft 365 data into Azure.
 
 additionalContent:
   sections:
