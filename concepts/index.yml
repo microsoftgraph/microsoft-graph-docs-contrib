@@ -28,44 +28,18 @@ highlightedContent:
     - title: What is Microsoft Graph Data Connect?
       itemType: overview
       url: ./data-connect-concept-overview.md
-
-tools:
-  title: APIs, SDKs, and tools
-  items:
-      # Card
-    - title: APIs
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/hub/icon01-sdk.svg
+    - title: Microsoft Graph REST API
+      itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
-    # Card
-    - title: SDKs
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/hub/icon01-sdk.svg
+    - title: Install SDKs
+      itemType: overview
       url: /graph/sdks/sdk-installation
-    # Card
-    - title: Graph Explorer
-      imageSrc: ./images/hub/icon03-graphexplorer.svg
-      url: https://developer.microsoft.com/graph/graph-explorer/
-    # Card
-    - title: Microsoft Graph Toolkit
-      imageSrc: ./images/hub/icon04-graphtoolkit.svg
-      url: ./toolkit/overview.md
-    # Card
-    - title: Quick start
-      imageSrc: ./images/hub/icon02-quickstart.svg
-      url: https://developer.microsoft.com/graph/quick-start
-    # Card
-    - title: What's new
-      imageSrc: ./images/hub/icon01-sdk.svg
+    - title: New and updated APIs, SDKs, and tools
+      itemType: whats-new
       url: ./whats-new-overview.md
-    # Card
     - title: Changelog
-      imageSrc: ./images/hub/icon01-sdk.svg
-      url: ./changelog.md
-    # Card
-    - title: Known issues
-      imageSrc: ./images/hub/icon01-sdk.svg
-      url: ./known-issues.md
+      itemType: overview
+      url: ./changelog.md   
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -116,6 +90,26 @@ conceptualContent:
           itemType: overview
           text: Read and modify Excel files.
 
+tools:
+  title: Tools
+  items:
+    # Card
+    - title: Graph Explorer
+      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      url: https://developer.microsoft.com/graph/graph-explorer/
+    # Card
+    - title: Microsoft Graph Toolkit
+      imageSrc: ./images/hub/icon04-graphtoolkit.svg
+      url: ./toolkit/overview.md
+    # Card
+    - title: Quick start
+      imageSrc: ./images/hub/icon02-quickstart.svg
+      url: https://developer.microsoft.com/graph/quick-start
+    # Card
+    - title: What's new
+      imageSrc: ./images/hub/icon01-sdk.svg
+      url: ./whats-new-overview.md
+
 additionalContent:
   sections:
     - title: Resources
@@ -146,3 +140,5 @@ additionalContent:
               url: https://developer.microsoft.com/graph/support
             - text: Microsoft Graph Q&A community support
               url: /answers/products/graph
+            - text: Known issues
+              url: ./known-issues.md 
