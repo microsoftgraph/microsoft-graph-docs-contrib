@@ -115,11 +115,11 @@ The caller is expected to have a cache containing subscribed objects. For detail
 
 Planner's delta query call flow is as follows:
 
-1. The caller initiates a delta sync query, obtaining a `nextLink` and an empty collection of changes.
+1. The caller initiates a delta sync query, obtaining a `@odata.nextLink` and an empty collection of changes.
 2. The caller must [populate the object cache for delta queries](#populate-the-object-cache-for-delta-queries) with objects that the user is subscribed to, updating its cache.
-3. The caller follows the `nextLink` provided in the initial delta sync query to obtain a new `deltaLink` to any changes since previous step.
+3. The caller follows the `@odata.nextLink` provided in the initial delta sync query to obtain a new `@odata.deltaLink` to any changes since previous step.
 4. The caller applies the changes in the returned delta response to the objects in its cache.
-5. The caller follows the new deltaLink to obtain the next deltaLink and changes since the current `deltaLink` was generated.
+5. The caller follows the new deltaLink to obtain the next deltaLink and changes since the current `@odata.deltaLink` was generated.
 6. The caller applies the changes (if any) and waits a short time before rerunning the previous step and this step.
 
 ## Planner resource versioning

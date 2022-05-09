@@ -1,5 +1,23 @@
 {
-  "changelog": [
+  "changelog": [	
+    {
+      "ChangeList": [
+        {
+          "Id": "b94c9471-549a-4d52-83fc-f639c1f6bd11",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStateSessionEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStateSessionEnabled** property to the [onPremisesPublishing](https://docs.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource. Use this property to enable or disable validation of the **state** parameter for apps that use the OAuth 2.0 authorization code grant flow.",
+          "Target": "onPremisesPublishing"
+        }
+      ],
+      "Id": "b94c9471-549a-4d52-83fc-f639c1f6bd11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-05T04:35:15.9351072Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -17,6 +35,60 @@
       "CreatedDateTime": "2022-04-26T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "65ccb320-7a4d-4942-9fb7-485662eede83",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedToReadBitlockerKeysForOwnedDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedToReadBitlockerKeysForOwnedDevice** property to the [defaultUserRolePermissions](https://docs.microsoft.com/en-us/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta) resource.",
+          "Target": "defaultUserRolePermissions"
+        }
+      ],
+      "Id": "65ccb320-7a4d-4942-9fb7-485662eede83",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-04T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "196cb4e0-17f1-4098-83a0-59431da1ef5c",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceManagementReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceManagementReference** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "196cb4e0-17f1-4098-83a0-59431da1ef5c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-06T22:07:03.8786676Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e8bcffd7-99a0-4a2d-8af8-88f963af2418",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceManagementReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceManagementReference** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "e8bcffd7-99a0-4a2d-8af8-88f963af2418",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-06T22:07:03.879225Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
