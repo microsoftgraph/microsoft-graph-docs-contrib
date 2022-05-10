@@ -23,6 +23,7 @@ The authentication method APIs are used to manage a user's authentication method
 * You can reset a user's password.
 * You can retrieve details of a user's FIDO2 Security Key, and delete it if the user has lost the key.
 * You can retrieve details of a user's Microsoft Authenticator registration, and delete it if the user has lost the phone.
+* You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
 
