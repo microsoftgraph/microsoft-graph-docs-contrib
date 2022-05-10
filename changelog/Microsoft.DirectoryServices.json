@@ -10599,6 +10599,56 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+    {      
+      "ChangeList": [
+        {
+          "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "authenticationProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationProtocol** enumeration type.",
+          "Target": "authenticationProtocol"
+        },
+        {
+          "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "federationConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **federationConfigurations** relationship to the [directory](https://docs.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalDomainName",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalDomainName](https://docs.microsoft.com/en-us/graph/api/resources/externalDomainName?view=graph-rest-1.0) resource.",
+          "Target": "externalDomainName"
+        },
+        {
+          "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "samlOrWsFedExternalDomainFederation",
+          "ChangeType": "Addition",
+          "Description": "Added the [samlOrWsFedExternalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-1.0) resource and related methods. Use this resource to federate with an external organization whose identity provider (IdP) supports either the SAML or WS-Fed protocol. ",
+          "Target": "samlOrWsFedExternalDomainFederation"
+        },
+        {
+          "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "samlOrWsFedProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [samlOrWsFedProvider](https://docs.microsoft.com/en-us/graph/api/resources/samlOrWsFedProvider?view=graph-rest-1.0) resource.",
+          "Target": "samlOrWsFedProvider"
+        }
+      ],
+      "Id": "a2deaeb7-e6c9-4080-9a20-95538bc96ec7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-09T20:13:50.3396814Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
