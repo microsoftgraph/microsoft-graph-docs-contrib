@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft 365 data and other datasets, you can build intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
+summary: The Microsoft Graph API, Microsoft Graph Data Connect, and Microsoft Graph connectors power the Microsoft 365 platform. Access Microsoft 365 data and other datasets to build intelligent applications, derive insights and analytics, and extend Microsoft 365 experiences.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
-  description: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft 365 data and other datasets, you can build intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
+  description: The Microsoft Graph API, Microsoft Graph Data Connect, and Microsoft Graph connectors power the Microsoft 365 platform. Access Microsoft 365 data and other datasets to build intelligent applications, derive insights and analytics, and extend Microsoft 365 experiences.
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
@@ -32,19 +32,19 @@ highlightedContent:
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Working with the Microsoft Graph API
+  title: Build an app with the Microsoft Graph API
   items:
     # Card
     - title: Microsoft Graph REST API
       links:
         - url: /graph/api/overview?view=graph-rest-1.0
           itemType: reference
-          text: API reference for the v1.0 endpoint.
+          text: Try the API reference for the v1.0 endpoint.
     - title: New and updated APIs
       links:
         - url: ./whats-new-overview.md
           itemType: whats-new
-          text: Highlights of what's new in Microsoft Graph.  
+          text: Discover what's new in Microsoft Graph.  
     - title: Users API
       links:
         - url: ./azuread-users-concept-overview.md
