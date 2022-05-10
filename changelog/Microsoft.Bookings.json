@@ -7,7 +7,7 @@
                 "ApiChange": "Method",
                 "ChangedApiName": "getStaffAvailability",
                 "ChangeType": "Addition",
-                "Description": "Added the [getStaffAvailability](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta) method to the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) resource.",
+                "Description": "Added the [getStaffAvailability](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta) method to the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource.",
                 "Target": "bookingStaffMember"
               },
               {
@@ -15,7 +15,7 @@
                 "ApiChange": "Permission",
                 "ChangedApiName": "Bookings.Read.All",
                 "ChangeType": "Addition",
-                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
+                "Description": "Added support for the application permission `Bookings.Read.All` to the read operations of the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource.",
                 "Target": "bookingBusiness"
               },
               {
@@ -55,7 +55,7 @@
                 "ApiChange": "Permission",
                 "ChangedApiName": "BookingsAppointment.ReadWrite.All",
                 "ChangeType": "Addition",
-                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingBuisness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource."
+                "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) resource.",
                 "Target": "bookingBusiness"
               },
               {
@@ -89,7 +89,7 @@
                 "ChangeType": "Addition",
                 "Description": "Added support for the application permission `BookingsAppointment.ReadWrite.All` to the read operations of the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) resource.",
                 "Target": "bookingAppointment"
-              },
+              }
             ],
             "Id": "ed4b2246-1e63-4911-b4b8-b62ebff8a932",
             "Cloud": "Prod",

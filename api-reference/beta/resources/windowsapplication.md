@@ -7,7 +7,7 @@ ms.prod: "applications"
 author: "aricrowe57"
 ---
 
-# webApplication resource type
+# windowsApplication resource type
 
 Namespace: microsoft.graph
 
