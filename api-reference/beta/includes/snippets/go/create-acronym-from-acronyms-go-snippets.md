@@ -18,10 +18,7 @@ webUrl := "http://microsoft.com/deep-neural-network"
 requestBody.SetWebUrl(&webUrl)
 state := "draft"
 requestBody.SetState(&state)
-options := &msgraphsdk.AcronymsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Acronyms().Post(options)
+result, err := graphClient.Search().Acronyms().Post(requestBody)
 
 
 ```

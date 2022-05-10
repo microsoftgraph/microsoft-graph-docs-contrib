@@ -27,11 +27,8 @@ requestBody.SetMembers( []ConversationMember {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#Microsoft.Graph.channel",
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

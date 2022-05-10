@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
 delegatedAdminRelationshipRequestId := "delegatedAdminRelationshipRequest-id"
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).RequestsById(&delegatedAdminRelationshipRequestId).Get(nil)
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).RequestsById(&delegatedAdminRelationshipRequestId).Get()
 
 
 ```

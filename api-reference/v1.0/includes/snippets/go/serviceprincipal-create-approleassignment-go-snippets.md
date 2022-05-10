@@ -14,11 +14,8 @@ resourceId := "8fce32da-1246-437b-99cd-76d1d4677bd5"
 requestBody.SetResourceId(&resourceId)
 appRoleId := "498476ce-e0fe-48b0-b801-37ba7e2685c6"
 requestBody.SetAppRoleId(&appRoleId)
-options := &msgraphsdk.AppRoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignments().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AppRoleAssignments().Post(requestBody)
 
 
 ```

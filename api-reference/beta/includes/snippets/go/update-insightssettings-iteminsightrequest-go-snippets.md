@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewInsightsSettings()
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 requestBody.SetDisabledForGroup(&disabledForGroup)
-options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().ItemInsights().Patch(options)
+graphClient.OrganizationById(&organizationId).Settings().ItemInsights().Patch(requestBody)
 
 
 ```
