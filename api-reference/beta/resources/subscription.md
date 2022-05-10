@@ -21,7 +21,7 @@ A subscription allows a client app to receive change notifications about changes
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
 - A [channel](./channel.md) in Microsoft Teams.
-- A [chat](./chat.md) in Microsoft Teams.*
+- A [chat](./chat.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
 - A [conversationMember](./conversationmember.md) in a team, channel, or chat in Microsoft Teams.

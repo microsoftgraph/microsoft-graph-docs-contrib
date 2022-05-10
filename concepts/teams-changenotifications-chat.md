@@ -21,7 +21,7 @@ To get change notifications for all changes (create and update) related to any c
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   | beta|
+|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   | beta, v1.0 |
 
 ### Example
 
@@ -50,9 +50,9 @@ To get change notifications for all changes related to a particular chat, subscr
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta, v1.0 |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta |
+|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta, v1.0 |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

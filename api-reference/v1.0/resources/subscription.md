@@ -16,6 +16,7 @@ A subscription allows a client app to receive change notifications about changes
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
 - A [channel](./channel.md) in Microsoft Teams.
+- A [chat](./chat.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
 - A [conversationMember](./conversationmember.md) in a team or channel in Microsoft Teams.
@@ -67,6 +68,7 @@ For the possible resource path values for each supported resource and to learn h
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **channel**    | 60 minutes (1 hour)  |
+| Teams **chat**    | 60 minutes (1 hour)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
 | Teams **conversationMember**    | 60 minutes (1 hour)  |
 | Teams **team**    | 60 minutes (1 hour)  |

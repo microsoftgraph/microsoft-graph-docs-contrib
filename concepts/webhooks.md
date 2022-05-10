@@ -110,7 +110,11 @@ Each Teams resource has different subscription quotas.
 - For subscriptions to **channels**:
   - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions
-  
+
+- For subscriptions to **chats**:
+  - Per app and chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
 - For subscriptions to **teams**:
   - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions

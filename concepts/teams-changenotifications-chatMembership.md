@@ -23,7 +23,7 @@ To get change notifications for membership changes in any chat across the tenant
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta|
+|Application | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta, v1.0 |
 
 ### Example
 
@@ -51,9 +51,9 @@ To get change notifications for membership changes in a particular chat, subscri
 
 |Permission type      | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
+|Delegated (work or school account) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta,v1.0 |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta |
+|Application | ChatMember.Read.Chat*, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta, v1.0 |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
