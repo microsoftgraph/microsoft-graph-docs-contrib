@@ -1,5 +1,31 @@
 {
-  "changelog": [	
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **emailAuthenticationMethod** resource and associated methods.",
+          "Target": "emailAuthenticationMethod"
+        },
+        {
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **phoneAuthenticationMethod** resource and associated methods.",
+          "Target": "phoneAuthenticationMethod"
+        }
+      ],
+      "Id": "aa87c199-7df7-43f4-b87f-dc45741a6b23",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-10T21:30:00.00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
