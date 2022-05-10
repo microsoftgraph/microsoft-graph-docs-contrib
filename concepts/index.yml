@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: Learn how to use Microsoft Graph to access the data and intelligence in Microsoft 365, Windows, and Enterprise Mobility + Security. Browse API reference, sample code, tutorials, and more.
+summary: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft 365 data and other datasets, you can build intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
-  description: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can build unique, intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
+  description: The Microsoft Graph API, Microsoft Graph connectors, and Microsoft Graph Data Connect power the Microsoft 365 platform. With the ability to access Microsoft 365 data and other datasets, you can build intelligent applications, extend Microsoft 365 experiences, and derive insights and analytics.
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
@@ -19,7 +19,7 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: Microsoft Graph services and features
+    - title: Learn about Microsoft Graph services and features
       itemType: concept
       url: ./overview-major-services.md
     - title: Access rich data at scale with Microsoft Graph Data Connect
