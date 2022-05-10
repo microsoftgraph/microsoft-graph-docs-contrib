@@ -110,7 +110,7 @@ additionalContent:
               url: /learn/paths/m365-msgraph-fundamentals/
             - text: Microsoft learning paths
               url: /learn/browse/?products=ms-graph&resource_type=learning%20path
-            - text: Tutorials
+            - text: Tutorial - Build your first app
               url: /graph/tutorials
         # Card
         - title: Connect
