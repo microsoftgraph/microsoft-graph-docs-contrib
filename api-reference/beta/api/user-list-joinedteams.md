@@ -1,9 +1,9 @@
 ---
 title: "List team"
 description: "Get the team resources from the teamDefinition navigation property."
-author: "CharlieKB"
+author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "Teamwork"
 doc_type: apiPageType
 ---
 

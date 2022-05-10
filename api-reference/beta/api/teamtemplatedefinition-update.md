@@ -1,9 +1,9 @@
 ---
 title: "Update teamTemplateDefinition"
 description: "Update the properties of a teamTemplateDefinition object."
-author: "CharlieKB"
+author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "Teamwork"
 doc_type: apiPageType
 ---
 
