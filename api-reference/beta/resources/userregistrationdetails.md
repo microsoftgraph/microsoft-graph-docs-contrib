@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultMethod|String|The method the user or admin selected as default for performing multi-factor authentication for the user.|
+|defaultMfaMethod|defaultMfaMethodType|The method the user or admin selected as default for performing multi-factor authentication for the user. The possible values are: `none`, `mobilePhone`, `alternateMobilePhone`, `officePhone`, `microsoftAuthenticatorPush`, `softwareOneTimePasscode`, `unknownFutureValue`.|
 |id|String|User object identifier in Azure AD. Inherited from [entity](../resources/entity.md).|
 |isMfaCapable|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
 |isMfaRegistered|Boolean|Whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md).  Supports `$filter` (`eq`).|

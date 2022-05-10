@@ -21,19 +21,27 @@
     {
       "ChangeList": [
         {
-          "Id": "5527244c-2c92-4dea-ba34-b18e3a7c3ba2",
-          "ApiChange": "Property",
-          "ChangedApiName": "defaultMethod",
+          "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "defaultMfaMethodType",
           "ChangeType": "Addition",
-          "Description": "Added the **defaultMethod** property to the [userRegistrationDetails](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
+          "Description": "Added the **defaultMfaMethodType** enumeration type.",
+          "Target": "defaultMfaMethodType"
+        },
+        {
+          "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultMfaMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultMfaMethod** property to the [userRegistrationDetails](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationDetails?view=graph-rest-beta) resource.",
           "Target": "userRegistrationDetails"
         }
       ],
-      "Id": "5527244c-2c92-4dea-ba34-b18e3a7c3ba2",
+      "Id": "96427898-c13f-4630-bd17-ee281c8e5f98",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-04-18T21:35:40.9738581Z",
-      "WorkloadArea": "Reports",
+      "CreatedDateTime": "2022-05-09T20:58:23.6080073Z",
+      "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     },
     {
