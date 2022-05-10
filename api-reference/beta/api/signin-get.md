@@ -17,7 +17,7 @@ Get a [signIn](../resources/signin.md) object that contains a specific user sign
 
 ## Permissions
 
-Any Azure AD user can read their own sign-ins. In order to read sign-ins beyond those where the signed in user is the actor, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -38,8 +38,8 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Operator
 + Security Reader
 
-### Viewing applied CA policies in sign-ins
-The Applied CA Policies listed in [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) are only available to users and apps with roles that allow them to read conditional access data. If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) portion of the response will be omitted. The following roles grant users permissions to view conditional access data:
+### Viewing applied conditional access (CA) policies in sign-ins
+The applied CA policies listed in **appliedConditionalAccessPolicies** property are only available to users and apps with roles that allow them to read [conditional access data](../resources/appliedconditionalaccesspolicy.md). If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the **appliedConditionalAccessPolicies** property in the response will be omitted. The following Azure AD roles grant users permissions to view conditional access data:
 
 + Global Reader
 + Company Administrator
@@ -47,7 +47,7 @@ The Applied CA Policies listed in [appliedConditionalAccessPolicy](../resources/
 + Security Reader
 + Conditional Access Administrator
 
-Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) in the logs. 
+Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) objects in the sign-in logs. 
 
 + Policy.Read.All
 + Policy.ReadWrite.ConditionalAccess
