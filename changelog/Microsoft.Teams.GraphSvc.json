@@ -447,7 +447,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "pinnedChatMessageInfo",
               "ChangeType": "Addition",
-              "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-beta) resource",
+              "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-beta) resource and supported methods.",
               "Target": "pinnedChatMessageInfo"
             }
           ],

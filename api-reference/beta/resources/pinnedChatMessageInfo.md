@@ -23,17 +23,17 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List pinned messages in chat](../api/chat-list-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md) collection|Get a list of pinned messages in a chat.|
 |[Pin a message in chat](../api/chat-post-pinnedmessages.md)|[pinnedChatMessageInfo](../resources/pinnedchatmessageinfo.md)|Pin a chat message in a chat.|
-|[Unpin a messages from chat](../api/chat-delete-pinnedmessages.md)|None|Unpin a chat message from a chat.|
+|[Unpin a messages from chat](../api/chat-delete-pinnedmessages.md)|None|Unpin a message from a chat.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id| String| Read-only. ID of the [chatMessage](../resources/chatmessage.md). |
+| id| String| The ID of the [chatMessage](../resources/chatmessage.md). Read-only. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| message | [chatMessage](../resources/chatmessage.md) | Represents detail of chat message that is pinned.|
+| message | [chatMessage](../resources/chatmessage.md) | Represents details about the chat message that is pinned.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
