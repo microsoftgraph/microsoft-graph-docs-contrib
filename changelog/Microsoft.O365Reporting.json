@@ -3,6 +3,32 @@
 	{
 		"ChangeList": [
 		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 }
+	  ],
+		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-05-09T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
 			"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsTeamActivityCounts",
