@@ -202,7 +202,7 @@ Content-Type: application/json
     "includeAllVersions": false,
     "pauseAfterEstimate": false,
     "includeAuthoredContent": false,
-    "externalId": "String",
+    "externalId": "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
     "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
     "mailboxLocations": null,
     "siteLocations": {
