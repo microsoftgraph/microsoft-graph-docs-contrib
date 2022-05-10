@@ -39,7 +39,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "granularDelegatedAdminPrivileges",
           "ChangeType": "Addition",
-          "Description": "Added the **granularDelegatedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Description": "Added the `granularDelegatedAdminPrivileges` member to the **delegatedPrivilegeStatus** enumeration.",
           "Target": "delegatedPrivilegeStatus"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "delegatedAndGranularDelegetedAdminPrivileges",
           "ChangeType": "Addition",
-          "Description": "Added the **delegatedAndGranularDelegetedAdminPrivileges** member to the **delegatedPrivilegeStatus** enumeration.",
+          "Description": "Added the `delegatedAndGranularDelegetedAdminPrivileges` member to the **delegatedPrivilegeStatus** enumeration.",
           "Target": "delegatedPrivilegeStatus"
         }
       ],
