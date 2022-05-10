@@ -41,7 +41,7 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | id                     | String                                            | Unique identifier for the workspace. Read-only. |
 | isWheelChairAccessible | Boolean                                           | Specifies whether the workspace is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the workspace, for example, a number or name. |
-| nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet work space". |
+| nickname               | String                                            | Specifies a nickname for the workspace, for example, "quiet workspace". |
 | phone                  | String                                            | The phone number of the workspace. |
 | tags                   | String collection                                 | Specifies additional features of the workspace, for example, details like the type of view or furniture type. |
 

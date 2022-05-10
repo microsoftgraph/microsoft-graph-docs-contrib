@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group of [room](room.md) and [workspace](workspace.md) objects defined in the tenant.
+Represents a group of [room](room.md) or [workspace](workspace.md) resources defined in the tenant. A **roomList** can contain a mix of **room** and **workspace** resources. 
+
+In Exchange Online, each **roomList** is associated with a mailbox.
 
 Derived from [place](place.md).
 
@@ -21,7 +23,7 @@ Derived from [place](place.md).
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the work spaces, all the room lists, the work spaces in a specific room list, or the rooms in a specific room list in the tenant.|
+| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the workspaces, all the room lists, the workspaces in a specific room list, or the rooms in a specific room list in the tenant.|
 | [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room list. |
 | [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
 

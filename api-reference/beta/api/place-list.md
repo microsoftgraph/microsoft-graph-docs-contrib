@@ -13,17 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the workspaces, all the room lists, the workspaces in a specific room list,  or the rooms in a specific room list in the tenant.
+Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. 
+
+You can do the following for a given tenant:
+- [List all the rooms](#example-1-list-all-the-rooms-defined-in-the-tenant).
+- [List all the workspaces](#example-2-list-all-the-workspaces-defined-in-the-tenant).
+- [List all the room lists](#example-3-list-all-the-room-lists-defined-in-the-tenant).
+- [List rooms in a specific room list](#example-4-list-rooms-contained-in-a-room-list).
+- [List workspaces in a specific room list](#example-5-list-workspaces-contained-in-a-room-list).
 
 A **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
 * A [workspace](../resources/workspace.md) which includes properties such as an email address for the workspace, and accessibility and capacity. 
-* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
+* A [roomList](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
-All **room**, **workspace** and **roomList** are derived from the **place** object.
+The **room**, **workspace** and **roomList** resources are derived from the **place** object.
 
-By default, this operation returns 100 places per page. 
+By default, this operation returns up to 100 places per page. 
+
+Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 
@@ -280,7 +289,7 @@ Content-type: application/json
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
       "emailAddress": "ws100@contoso.com",
-      "displayName": "Work Space 100",
+      "displayName": "Workspace 100",
       "address": {
         "street": "4567 Main Street",
         "city": "Buffalo",
@@ -293,7 +302,7 @@ Content-type: application/json
         "longitude": -122.1293731033803
       },
       "phone": "000-000-0000",
-      "nickname": "Work Space",
+      "nickname": "Workspace",
       "label": "100",
       "capacity": 50,
       "building": "1",
@@ -307,7 +316,7 @@ Content-type: application/json
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
       "emailAddress": "ws200@contoso.com",
-      "displayName": "Work Space 200",
+      "displayName": "Workspace 200",
       "address": {
         "street": "4567 Main Street",
         "city": "Buffalo",
@@ -320,7 +329,7 @@ Content-type: application/json
         "longitude": -122.1293731033802
       },
       "phone": "000-000-0000",
-      "nickname": "Work Space",
+      "nickname": "Workspace",
       "label": "200",
       "capacity": 40,
       "building": "2",
@@ -579,7 +588,7 @@ Content-type: application/json
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
       "emailAddress": "ws200@contoso.com",
-      "displayName": "Work Space 200",
+      "displayName": "Workspace 200",
       "address": {
         "street": "4567 Main Street",
         "city": "Buffalo",
@@ -592,7 +601,7 @@ Content-type: application/json
         "longitude": -122.1293731033802
       },
       "phone": "000-000-0000",
-      "nickname": "Work Space",
+      "nickname": "Workspace",
       "label": "200",
       "capacity": 40,
       "building": "2",

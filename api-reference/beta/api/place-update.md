@@ -239,7 +239,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.workspace",
     "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
     "emailAddress": "ws100@contoso.com",
-    "displayName": "Work Space 100",
+    "displayName": "Workspace 100",
     "address": {
       "street": "4567 Main Street",
       "city": "Buffalo",
@@ -252,7 +252,7 @@ Content-type: application/json
       "longitude": -122.0
     },
     "phone": "555-555-0100",
-    "nickname": "Work Space",
+    "nickname": "Workspace",
     "label": "100",
     "capacity": 50,
     "building": "1",

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md), [workspace](workspace.md), and [roomList](roomlist.md).
 
 ### Using the places API
-Exchange Online administrators can organize meeting rooms and work spaces in a tenant into room lists. Using the places API, you can get all the room lists, rooms, or work spaces in the tenant, or get all the rooms or work spaces in a specific room list.
+Exchange Online administrators can organize meeting rooms and workspaces in a tenant into room lists. Using the places API, you can use the [list](../api/place-list.md) operation to get all the rooms, workspaces, or room lists in the tenant, or get the rooms and workspaces in a specific room list.
 
 Places like [room](room.md), [workspace](workspace.md) and [roomList](roomlist.md) contain the basic **id**, display name and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
 
