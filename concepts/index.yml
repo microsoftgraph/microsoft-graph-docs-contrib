@@ -19,58 +19,58 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: What can I access through Microsoft Graph?
+    - title: What services can I access through Microsoft Graph?
       itemType: concept
       url: ./overview-major-services.md
-    - title: New and updated APIs, SDKs, and tools
-      itemType: whats-new
-      url: ./whats-new-overview.md
-    - title: Microsoft Graph REST API
-      itemType: reference
-      url: /graph/api/overview?view=graph-rest-1.0
+    - title: Microsoft Graph Data Connect
+      itemType: overview
+      url: ./data-connect-concept-overview.md
+    - title: Microsoft Graph connectors
+      itemType: overview
+      url: ./connecting-external-content-connectors-overview.md
   
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Working with Microsoft Graph
+  title: Working with the Microsoft Graph API
   items:
     # Card
-    - title: Microsoft Graph Data Connect
+    - title: Microsoft Graph REST API
       links:
-        - url: ./data-connect-concept-overview.md
-          itemType: overview
-          text: Access data at scale.
-    - title: Microsoft Graph connectors
+        - url: /graph/api/overview?view=graph-rest-1.0
+          itemType: reference
+          text: API reference for the v1.0 endpoint.
+    - title: New and updated APIs
       links:
-        - url: ./connecting-external-content-connectors-overview.md
-          itemType: overview
-          text: Surface external data.  
-    - title: Users
+        - url: ./whats-new-overview.md
+          itemType: whats-new
+          text: Highlights of what's new in Microsoft Graph.  
+    - title: Users API
       links:
         - url: ./azuread-users-concept-overview.md
           itemType: overview
           text: Access and manipulate user resources directly.
-    - title: Groups
+    - title: Groups API
       links:
         - url: ./office365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
-    - title: Identity and access management
+    - title: Identity and access management API
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
           text: Use Azure AD methods to manage access and authenticate users.
-    - title: Security
+    - title: Security API
       links:
         - url: ./security-concept-overview.md
           itemType: overview
           text: Connect Microsoft security products, services, and partners to streamline security operations.
-    - title: Microsoft Teams teamwork
+    - title: Microsoft Teams API
       links:
         - url: ./teams-concept-overview.md
           itemType: overview
           text: Explore chat-based collaboration, meetings, calling, and enterprise voice features.
-    - title: Outlook calendar and mail
+    - title: Outlook API
       links:
         - url: ./outlook-calendar-concept-overview.md
           itemType: overview
@@ -88,7 +88,7 @@ tools:
       imageSrc: ./images/hub/icon01-sdk.svg
       url: /graph/sdks/sdk-installation
     # Card
-    - title: Quick starts
+    - title: Quick start
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: https://developer.microsoft.com/graph/quick-start
     # Card
@@ -131,6 +131,4 @@ additionalContent:
             - text: Microsoft Graph Q&A community support
               url: /answers/products/graph
             - text: Known issues
-              url: ./known-issues.md
-            - text: Changelog
-              url: ./changelog.md             
+              url: ./known-issues.md          
