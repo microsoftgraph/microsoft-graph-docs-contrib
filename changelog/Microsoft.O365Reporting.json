@@ -17,6 +17,30 @@
 			"ChangeType": "Addition",
 			"Description": "Added support for the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
 			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
 		 }
 	  ],
 		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
