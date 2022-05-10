@@ -19,13 +19,13 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: What services can I access through Microsoft Graph?
+    - title: Microsoft Graph services and features
       itemType: concept
       url: ./overview-major-services.md
-    - title: Microsoft Graph Data Connect
+    - title: Access rich data at scale with Microsoft Graph Data Connect
       itemType: overview
       url: ./data-connect-concept-overview.md
-    - title: Microsoft Graph connectors
+    - title: Surface external data with Microsoft Graph connectors
       itemType: overview
       url: ./connecting-external-content-connectors-overview.md
   
@@ -94,7 +94,7 @@ tools:
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
-      url: https://developer.microsoft.com/graph/graph-explorer/
+      url: /graph/graph-explorer/graph-explorer-overview
     # Card
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
