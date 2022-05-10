@@ -116,11 +116,19 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "author": { "@odata.type": "microsoft.graph.identitySet"},
+    "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
+    "createdDateTime": "2022-05-10T22:42:28Z",
+    "author": 
+      {
+        "user": 
+            {
+                "id": "",
+                "displayName": "srradmin@contoso.com"
+            }
+      },
     "content": {
-          "@odata.type": "microsoft.graph.itemBody"
+      "content": "Please take a look at the files tagged with follow up",
+      "contentType": "text"
     }
 
 }

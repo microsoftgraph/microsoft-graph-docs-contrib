@@ -79,13 +79,13 @@ If successful, this method returns a `201 Created` response code and a [subjectR
   "name": "create_subjectRightsRequest_from_"
 }
 -->
-``` json
+``` http
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 Content-Type: application/json
 
 {
     "type": "export",
-    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@hotmail.com\") OR (participants:\"Diego.Siciliani@hotmail.com\"))",
+    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
     "dataSubjectType": "customer",
     "externalId": "F53BF2DA-607D-412A-B568-FAA0F023AC0B",
     "displayName": "Export report for customer Id: 12345",
@@ -96,13 +96,13 @@ Content-Type: application/json
     "dataSubject": {
         "firstName": "Diego",
         "lastName": "Siciliani",
-        "email": "Diego.Siciliani@hotmail.com",
+        "email": "Diego.Siciliani@contoso.com",
         "residency": "USA"
     },
-    "mailboxlocations": null,
+    "mailboxLocations": null,
     "pauseAfterEstimate": true,
     "regulations": ["CCPA"],
-    "sitelocations": {
+    "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }    
 }
@@ -140,80 +140,73 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "CCPA"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export report for customer Id: 12345",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-07-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-05-10T22:42:28Z",
+    "id": "CA084038-C5D2-493D-8DAB-23FC12393C76",
+    "createdDateTime": "2022-05-10T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         },
         {
             "stage": "contentReview",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         },
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null 
+
         },
         {
             "stage": "caseResolved",
             "status": "notStarted",
-            "error": 
-            {
-                "@odata.type": "microsoft.graph.publicError"
-            }
+            "error": null
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": 
+            {
+                "id": "",
+                "displayName": "srradmin@contoso.com"
+            }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": 
+            {
+                "id": "",
+                "displayName": "srradmin@contoso.com"
+            }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Diego",
+        "lastName": "Siciliani",
+        "email": "Diego.Siciliani@contoso.com",
+        "residency": "USA"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
     },
-    "includeAllVersions": "Boolean",
-    "pauseAfterEstimate": "Boolean",
-    "includeAuthoredContent": "Boolean",
+    "includeAllVersions": false,
+    "pauseAfterEstimate": false,
+    "includeAuthoredContent": false,
     "externalId": "String",
-    "contentQuery": "String",
-    "mailboxlocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
-    },
-    "sitelocations": {
-        "@odata.type": "microsoft.graph.subjectRightsRequestSiteLocation"
+    "contentQuery": "((\"Diego Siciliani\" OR \"Diego.Siciliani@contoso.com\") OR (participants:\"Diego.Siciliani@contoso.com\"))",
+    "mailboxLocations": null,
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }    
 }
 ```
