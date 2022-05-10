@@ -17,8 +17,8 @@ Indicates the attributes related to applied conditional access policy or policie
 
 ## Properties
 
-| Property   | Type	|Description|
-|:---------------|:--------|:----------|
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
 |authenticationStrength|[authenticationStrength](authenticationstrength.md)| The custom authentication strength enforced in a Conditional Access policy.|
 |conditionsNotSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are not satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`,`ipAddressSeenByAzureAD`,`ipAddressSeenByResourceProvider`,`unknownFutureValue`,`servicePrincipals`,`servicePrincipalRisk`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals`,`servicePrincipalRisk`.|
 |conditionsSatisfied|conditionalAccessConditions|Refers to the conditional access policy conditions that are satisfied. The possible values are: `none`, `application`, `users`, `devicePlatform`, `location`, `clientType`, `signInRisk`, `userRisk`, `time`, `deviceState`, `client`,`ipAddressSeenByAzureAD`,`ipAddressSeenByResourceProvider`,`unknownFutureValue`,`servicePrincipals`,`servicePrincipalRisk`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipals`,`servicePrincipalRisk`.|
