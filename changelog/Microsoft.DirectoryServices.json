@@ -11,7 +11,7 @@
           "Target": "emailAuthenticationMethod"
         },
         {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "Id": "51cc8ef6-7798-4344-b6ee-e48543e5a50a",
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
