@@ -16,18 +16,18 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: What is Microsoft Graph?
+    - title: Microsoft Graph overview
       itemType: overview
       url: ./overview.md
-    - title: Try the Microsoft Graph REST API
-      itemType: reference
-      url: /graph/api/overview?view=graph-rest-1.0
-    - title: Access rich data at scale with Microsoft Graph Data Connect
+    - title: Microsoft Graph Data Connect
       itemType: overview
       url: ./data-connect-concept-overview.md
-    - title: Surface external data with Microsoft Graph connectors
+    - title: Microsoft Graph connectors
       itemType: overview
       url: ./connecting-external-content-connectors-overview.md
+    - title: Microsoft Graph REST API
+      itemType: reference
+      url: /graph/api/overview?view=graph-rest-1.0
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
