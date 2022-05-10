@@ -4999,6 +4999,36 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
+          - name: Phone
+            href: resources/phoneauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-phonemethods.md
+            - name: Get
+              href: api/phoneauthenticationmethod-get.md
+            - name: Update
+              href: api/phoneauthenticationmethod-update.md
+            - name: Delete
+              href: api/phoneauthenticationmethod-delete.md
+            - name: Add
+              href: api/authentication-post-phonemethods.md
+            - name: Enable SMS sign-in
+              href: api/phoneauthenticationmethod-enablesmssignin.md
+            - name: Disable SMS sign-in
+              href: api/phoneauthenticationmethod-disablesmssignin.md
+          - name: Email
+            href: resources/emailauthenticationmethod.md
+            items:
+            - name: List
+              href: api/emailauthenticationmethod-list.md
+            - name: Get
+              href: api/emailauthenticationmethod-get.md
+            - name: Update
+              href: api/emailauthenticationmethod-update.md
+            - name: Delete
+              href: api/emailauthenticationmethod-delete.md
+            - name: Add
+              href: api/emailauthenticationmethod-post.md
         - name: Certificate-based auth configuration
           href: resources/certificatebasedauthconfiguration.md
           items:
