@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 05/09/2022
+  ms.date: 05/10/2022
   featureFlags:
   - clicktale
 
@@ -19,32 +19,31 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: Learn about Microsoft Graph services and features
-      itemType: concept
-      url: ./overview-major-services.md
+    - title: Try the Microsoft Graph REST API
+      itemType: reference
+      url: /graph/api/overview?view=graph-rest-1.0
     - title: Access rich data at scale with Microsoft Graph Data Connect
       itemType: overview
       url: ./data-connect-concept-overview.md
     - title: Surface external data with Microsoft Graph connectors
       itemType: overview
       url: ./connecting-external-content-connectors-overview.md
-  
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   title: Build an app with the Microsoft Graph API
   items:
     # Card
-    - title: Microsoft Graph REST API
+    - title: Microsoft Graph services and features
       links:
-        - url: /graph/api/overview?view=graph-rest-1.0
-          itemType: reference
-          text: Try the API reference for the v1.0 endpoint.
-    - title: New and updated APIs
+        - url: ./overview-major-services.md
+          itemType: concept
+          text: Manage, protect, and extract data for multiple scenarios. 
+    - title: What's new?
       links:
         - url: ./whats-new-overview.md
           itemType: whats-new
-          text: Discover what's new in Microsoft Graph.  
+          text: Discover new and updated Microsoft Graph APIs.  
     - title: Users API
       links:
         - url: ./azuread-users-concept-overview.md
