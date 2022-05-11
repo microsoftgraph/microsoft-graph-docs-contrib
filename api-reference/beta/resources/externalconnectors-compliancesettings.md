@@ -27,7 +27,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
+  "@odata.type": "microsoft.graph.externalConnectors.complianceSettings"
 }
 -->
 ``` json
