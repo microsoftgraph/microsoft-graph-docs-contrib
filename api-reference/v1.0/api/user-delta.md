@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [change tracking](/graph/delta-query-overview) for details.
 
+> [!NOTE]
+> Changes to the **licenseAssignmentStates** property are currently not tracked.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
