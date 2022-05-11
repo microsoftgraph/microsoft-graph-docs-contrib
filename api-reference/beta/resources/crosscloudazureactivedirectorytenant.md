@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
-# azureActiveDirectoryTenant resource type
+# crossCloudAzureActiveDirectoryTenant resource type
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | The name of the Azure Active Directory tenant. Read only. |
 | tenantId |String | The ID of the Azure Active Directory tenant. Read only. |
-| cloudInstance | String | The ID of the cloud. Read only. |
+| cloudInstance | String | The ID of the cloud where the tenant is located. Read only. |
 
 ## Relationships
 
