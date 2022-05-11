@@ -53,6 +53,22 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
+### contentExperienceType values
+|Member
+|:--------------
+| search
+| topicDiscovery
+| bookmarks
+| workplaceInsights
+| peopleProfileEnrichment
+| compliance
+| contentEnrichment
+| contextualInsertion
+| recommendedActions
+| contentRecall
+| acronyms
+| unknownFutureValue
+
 ### externalGroupMemberType values
 
 | Member

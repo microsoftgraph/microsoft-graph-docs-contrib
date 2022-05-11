@@ -1197,6 +1197,32 @@
       "CreatedDateTime": "2022-04-28T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "contentExperienceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentExperienceType** enumeration.",
+          "Target": "contentExperienceType"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "complianceSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [complianceSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-compliancesettings?view=graph-rest-beta) resource type.",
+          "Target": "complianceSettings"
+        }
+      ],
+      "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-20T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }
