@@ -39,8 +39,17 @@ An office phone can only receive voice calls, not SMS messages.
 |phoneType|authenticationPhoneType|The type of this phone. Possible values are: `mobile`, `alternateMobile`, or `office`.|
 |smsSignInState|authenticationMethodSignInState|Whether a phone is ready to be used for SMS sign-in or not. Possible values are: `notSupported`, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, or `notConfigured`, `unknownFutureValue`.|
 
-### smsSignInState values
+### authenticationPhoneType values
 
+Phones can be of three types, the following are the possible values.
+
+|Value|Description|
+|--------|-----------|
+|mobile|A primary mobile phone, usable for SMS and voice calls.|
+|alternateMobile|An alternate or backup mobile phone, usable for SMS and voice calls.|
+|office|An office phone or landline, usable only for voice calls.|
+
+### authenticationMethodSignInState values
 The SMS sign-in state property gives information about whether or not a phone number is ready to sign in via SMS. The following are the possible values.
 
 |Value|Description|
