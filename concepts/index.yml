@@ -16,7 +16,7 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Microsoft Graph overview
+    - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
     - title: Microsoft Graph REST API
