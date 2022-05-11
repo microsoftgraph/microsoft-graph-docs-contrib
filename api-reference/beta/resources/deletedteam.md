@@ -47,8 +47,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deletedTeam",
-  "id": "String (identifier)",
-  "isMembershipLimitedToOwners": "Boolean"
+  "id": "String (identifier)"
 }
 ```
 
