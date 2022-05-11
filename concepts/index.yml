@@ -31,7 +31,7 @@ highlightedContent:
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Microsoft Graph services and features
+  title: Services and features
   items:
     # Card 
     - title: Users
@@ -76,7 +76,7 @@ conceptualContent:
       links:
         - url: ./overview-major-services.md
           itemType: concept
-          text: Explore services for productivity, collaboration, and more.  
+          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.  
 tools:
   title: SDKs and tools
   items:
