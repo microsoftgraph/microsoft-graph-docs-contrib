@@ -55,19 +55,13 @@ The components are also available as [React components](./get-started/mgt-react.
 
 ## Why use the Microsoft Graph Toolkit?
 
-The Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application.
+The Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
 
-**Cuts development time**
+- **Cuts development time**. The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
 
-The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
+- **Works everywhere**. All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue). 
 
-**Works everywhere**
-
-All components are based on web standards and work seamlessly with any modern browser and web framework (such as React, Angular, or Vue). 
-
-**Is beautiful but flexible**
-
-The components are designed to look and feel like Microsoft 365 experiences but are also customizable by using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
+- **Is beautiful but flexible**. The components are designed to look and feel like Microsoft 365 experiences but are also customizable by using [CSS custom properties](./customize-components/style.md) and [templating](./customize-components/templates.md).
 
 ## Who should use it?
 

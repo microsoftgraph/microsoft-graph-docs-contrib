@@ -21,7 +21,11 @@ To use the Microsoft Graph Toolkit to develop an app, you need access to a Micro
 
 ## Set up your development environment
 
-To develop with the toolkit, you need a text editor or IDE. You can use the editor or IDE of your choice or install and use [Visual Studio Code](https://code.visualstudio.com/download) for free. You also need a modern web browser such as Microsoft Edge, Google Chrome, or Firefox. You also need an LTS version of Node.js, which you can install from [nodejs.org](https://nodejs.org).
+To develop with the toolkit, you need the following:
+
+- A text editor or IDE. You can use the editor or IDE of your choice, or you can install and use [Visual Studio Code](https://code.visualstudio.com/download) for free.
+- A modern web browser such as Microsoft Edge, Google Chrome, or Firefox.
+- An LTS version of Node.js, which you can install from [nodejs.org](https://nodejs.org).
 
 ## Use the Microsoft Graph Toolkit
 
@@ -97,7 +101,7 @@ Providers are available via a single package and can be installed as needed. The
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` is the main package that includes all the above packages and re-exports them so they are available via a single package that you can install. 
+The `@microsoft/mgt` is the main package that includes all the preceding packages and re-exports them so they are available via a single package that you can install. 
 
 <b>@microsoft/mgt-react</b>
 
