@@ -31,19 +31,9 @@ highlightedContent:
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Services and features
+  title: Microsoft Graph services and features
   items:
-    # Card
-    - title: Microsoft Graph services and features
-      links:
-        - url: ./overview-major-services.md
-          itemType: concept
-          text: Manage, protect, and extract data for multiple scenarios. 
-    - title: What's new?
-      links:
-        - url: ./whats-new-overview.md
-          itemType: whats-new
-          text: Discover new and updated Microsoft Graph APIs.  
+    # Card 
     - title: Users
       links:
         - url: ./azuread-users-concept-overview.md
@@ -77,7 +67,16 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-
+    - title: What's new?
+      links:
+        - url: ./whats-new-overview.md
+          itemType: whats-new
+          text: Discover new and updated Microsoft Graph APIs. 
+    - title: All services and features
+      links:
+        - url: ./overview-major-services.md
+          itemType: concept
+          text: Explore services for productivity, collaboration, and more.  
 tools:
   title: SDKs and tools
   items:
@@ -110,7 +109,7 @@ additionalContent:
               url: /learn/paths/m365-msgraph-fundamentals/
             - text: Microsoft learning paths
               url: /learn/browse/?products=ms-graph&resource_type=learning%20path
-            - text: Tutorial - Build your first app
+            - text: Tutorials
               url: /graph/tutorials
         # Card
         - title: Community
