@@ -23,7 +23,7 @@ Entity that acts as a container for administrative resources to manage a tenant'
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.tenantAdmin.settings](../resources/tenantAdmin-settings.md)|Represents the organization settings for the SharePoint and OneDrive workload.|
+|settings|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md)|Represents the organization settings for SharePoint and OneDrive for Business.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

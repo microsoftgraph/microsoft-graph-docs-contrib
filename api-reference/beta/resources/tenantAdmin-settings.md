@@ -1,6 +1,6 @@
 ---
 title: "tenant admin settings resource type"
-description:  "The tenant admin settings resource contains information about the organization settings for the SharePoint and OneDrive workload."
+description:  "Represents the organization settings for SharePoint and OneDrive for Business."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,44 +13,44 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the organization settings for the SharePoint and OneDrive workload.
+Represents the organization settings for SharePoint and OneDrive for Business.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/tenantAdmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantAdmin-settings.md) | Get the admin settings for the current tenant.|
-|[Update settings](../api/tenantAdmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantAdmin-settings.md) | Update the admin settings for the current tenant.|
+|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the admin settings for the current tenant.|
+|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update the admin settings for the current tenant.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| allowedDomainGuidsForSyncApp                       | Collection(Guid)            | List of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                                 |
-| availableManagedPathsForSiteCreation               | Collection(String)           | Array of strings representing the managed paths available for site creation. Read-only.                                                                                                                                 |
-| deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | Integer representing the number of days for preserving a deleted user's OneDrive.                                                                                                                                       |
-| excludedFileExtensionsForSyncApp                   | Collection(String)            | List of strings representing the file extensions not uploaded by the OneDrive sync app.                                                                                                                                 |
-| imageTaggingOption                                 | ImageTaggingChoice           | Specifies the image tagging option for the tenant.                                                                                                                                                                      |
-| isCommentingOnSitePagesEnabled                     | Boolean                      | Boolean indicating if comments are allowed on modern site pages in SharePoint.                                                                                                                                          |
-| isFileActivityNotificationEnabled                  | Boolean                      | Boolean indicating if push notifications are enabled for OneDrive events.                                                                                                                                               |
-| isLoopEnabled                                      | Boolean                      | Boolean indicating if Fluid Framework is allowed on SharePoint sites.                                                                                                                                                   |
-| isMacSyncAppEnabled                                | Boolean                      | Boolean indicating if files can be synced using the OneDrive sync app for Mac.                                                                                                                                          |
-| isResharingByExternalUsersEnabled                  | Boolean                      | Boolean indicating if guests are allowed to reshare files, folders, and sites they don't own.                                                                                                                           |
-| isSharePointMobileNotificationEnabled              | Boolean                      | Boolean indicating if mobile push notifications are enabled for SharePoint.                                                                                                                                             |
-| isSharePointNewsfeedEnabled                        | Boolean                      | Boolean indicating if the newsfeed is allowed on the modern site pages in SharePoint.                                                                                                                                   |
-| isSiteCreationEnabled                              | Boolean                      | Boolean indicating whether users are allowed to create sites.                                                                                                                                                           |
-| isSiteCreationUIEnabled                            | Boolean                      | Boolean indicating if the UI commands for creating sites are shown.                                                                                                                                                     |
-| isSitePagesCreationEnabled                         | Boolean                      | Boolean indicating if creating new modern pages is allowed on SharePoint sites.                                                                                                                                         |
-| isSitesStorageLimitAutomatic                       | Boolean                      | Boolean indicating if site storage space is automatically managed or if specific storage limits are set per site.                                                                                                       |
-| isSyncButtonHiddenOnPersonalSite                   | Boolean                      | Boolean indicating if the sync button in OneDrive is hidden.                                                                                                                                                            |
-| isUnmanagedSyncAppForTenantRestricted              | Boolean                      | Boolean indicating if users are allowed to sync files only on PCs joined to specific domains.                                                                                                                           |
-| personalSiteDefaultStorageLimitInMB                | Long                         | Integer representing the default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                               |
-| sharingAllowedDomainList                           | Collection(String)           | Specifies a list of email domains that is allowed for sharing outside the organization.                                                                                                                                 |
-| sharingBlockedDomainList                           | Collection(String)           | Specifies a list of email domains that is blocked for sharing outside the organization.                                                                                                                                 |
-| sharingCapability                                  | SharingCapabilities          | Sharing capability for the tenant.                                                                                                                                                                                      |
-| sharingDomainRestrictionMode                       | SharingDomainRestrictionMode | Specifies the external sharing mode for domains.                                                                                                                                                                        |
-| siteCreationDefaultManagedPath                     | String                       | String representing the value of the team site managed path. This is the path under which new team sites will be created.                                                                                               |
-| siteCreationDefaultStorageLimitInMB                | Int                          | Integer representing the default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                |
+| allowedDomainGuidsForSyncApp                       | GUID collection              | List of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                                 |
+| availableManagedPathsForSiteCreation               | String collection           | Collection that represents the managed paths available for site creation. Read-only.                                                                                                                                 |
+| deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | Represents the number of days for preserving a deleted user's OneDrive.                                                                                                                                       |
+| excludedFileExtensionsForSyncApp                   | String collection            | List of strings representing the file extensions not uploaded by the OneDrive sync app.                                                                                                                                 |
+| imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant.                                                                                                                                                                      |
+| isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates if comments are allowed on modern site pages in SharePoint.                                                                                                                                          |
+| isFileActivityNotificationEnabled                  | Boolean                      | Indicates if push notifications are enabled for OneDrive events.                                                                                                                                               |
+| isLoopEnabled                                      | Boolean                      | Indicates if Fluid Framework is allowed on SharePoint sites.                                                                                                                                                   |
+| isMacSyncAppEnabled                                | Boolean                      | Indicates if files can be synced using the OneDrive sync app for Mac.                                                                                                                                          |
+| isResharingByExternalUsersEnabled                  | Boolean                      | Indicates if guests are allowed to reshare files, folders, and sites they don't own.                                                                                                                           |
+| isSharePointMobileNotificationEnabled              | Boolean                      | Indicates if mobile push notifications are enabled for SharePoint.                                                                                                                                             |
+| isSharePointNewsfeedEnabled                        | Boolean                      | Indicates if the newsfeed is allowed on the modern site pages in SharePoint.                                                                                                                                   |
+| isSiteCreationEnabled                              | Boolean                      | Indicates whether users are allowed to create sites.                                                                                                                                                           |
+| isSiteCreationUIEnabled                            | Boolean                      | Indicates if the UI commands for creating sites are shown.                                                                                                                                                     |
+| isSitePagesCreationEnabled                         | Boolean                      | Indicates if creating new modern pages is allowed on SharePoint sites.                                                                                                                                         |
+| isSitesStorageLimitAutomatic                       | Boolean                      | Indicates if site storage space is automatically managed or if specific storage limits are set per site.                                                                                                       |
+| isSyncButtonHiddenOnPersonalSite                   | Boolean                      | Indicates if the sync button in OneDrive is hidden.                                                                                                                                                            |
+| isUnmanagedSyncAppForTenantRestricted              | Boolean                      | Indicates if users are allowed to sync files only on PCs joined to specific domains.                                                                                                                           |
+| personalSiteDefaultStorageLimitInMB                | Long                         | Represents the default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                               |
+| sharingAllowedDomainList                           | String collection           | Specifies a list of email domains that is allowed for sharing outside the organization.                                                                                                                                 |
+| sharingBlockedDomainList                           | String collection           | Specifies a list of email domains that is blocked for sharing outside the organization.                                                                                                                                 |
+| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant.                                                                                                                                                                                      |
+| sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains.                                                                                                                                                                        |
+| siteCreationDefaultManagedPath                     | String                       | Represents the value of the team site managed path. This is the path under which new team sites will be created.                                                                                               |
+| siteCreationDefaultStorageLimitInMB                | Int                          | Represents the default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                |
 | tenantDefaultTimezone                              | String                       | The tenant's default timezone for newly created sites.                                                                                                                                                                  |
 
 ### ImageTaggingOption property values
@@ -66,12 +66,12 @@ Inherits from [entity](../resources/entity.md).
 | disabled                        | Users can share only with people in the organization. No external sharing is allowed.                                 |
 | externalUserSharingOnly         | Users can share with new and existing guests. Guests must sign in or provide a verification code.                     |
 | externalUserAndGuestSharing     | Users can share with anyone by using links that don't require sign-in.                                                |
-| existingExternalUserSharingOnly | Users can share with existing guests (those already in the organization's directory).                                 |
+| existingExternalUserSharingOnly | Users can share with existing guests (those already in the directory of the organization).                            |
 
 ### SharingDomainRestrictionMode property values
 | Value                           | Description                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| none                            | No restrictions apply                                                                                                 |
+| none                            | No restrictions apply.                                                                                                |
 | allowList                       | Users will be able to share with external collaborators coming only from the list of allowed email domains.           |
 | blockList                       | Users will be able to share with all external collaborators apart from the ones on the list of blocked email domains. |
 
@@ -85,11 +85,11 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-    "id": "string (identifier)",
     "allowedDomainGuidsForSyncApp": ["string (identifier)"],
     "availableManagedPathsForSiteCreation": ["string"],
     "deletedUserPersonalSiteRetentionPeriodInDays": 236,
     "excludedFileExtensionsForSyncApp": ["string"],
+    "id": "string (identifier)",
     "imageTaggingOption": {"@odata.type": "microsoft.graph.tenantAdmin.imageTaggingChoice"},
     "isCommentingOnSitePagesEnabled": "boolean",
     "isFileActivityNotificationEnabled": "boolean",
