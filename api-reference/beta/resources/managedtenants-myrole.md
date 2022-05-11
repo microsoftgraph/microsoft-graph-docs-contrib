@@ -1,6 +1,6 @@
 ---
 title: "myRole resource type"
-description: "Represents the role assignments that are present in a managed tenant."
+description: "Represents the role assignments to a signed-in user for a managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the role assignments that are present in a [managed tenant](../resources/managedtenants-tenant.md).
+Represents the role assignments to a signed-in user for a [managed tenant](../resources/managedtenants-tenant.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List myRoles](../api/managedtenants-managedtenant-list-myroles.md)|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|Get a list of the [myRole](../resources/managedtenants-myrole.md) objects and their properties.|
+|[List myRoles](../api/managedtenants-managedtenant-list-myroles.md)|[microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md) collection|Get the roles that the signed-in user has through a delegated relationship across [managed tenants](../resources/managedtenants-tenant.md).|
 
 ## Properties
 |Property|Type|Description|

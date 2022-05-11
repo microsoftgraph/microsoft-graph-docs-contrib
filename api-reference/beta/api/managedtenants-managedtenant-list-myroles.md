@@ -1,6 +1,6 @@
 ---
 title: "List myRoles"
-description: "Gets the roles that you have through a delegated relationship across managed tenants." 
+description: "Get the roles that a signed-in user has through a delegated relationship across managed tenants." 
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the roles that you have through a delegated relationship across managed tenants.
+Get the roles that a signed-in user has through a delegated relationship across managed tenants.
 
 ## Permissions
 
@@ -130,7 +130,7 @@ Content-Type: application/json
       "tenantId": "5618f6-991c-4f3a-b4f6-ed85580566cf",
       "assignments": [
         {
-          "assignmentType": "delegatedAccessPrivelege",
+          "assignmentType": "delegatedAdminPrivileges",
           "roles": [
             {
               "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
