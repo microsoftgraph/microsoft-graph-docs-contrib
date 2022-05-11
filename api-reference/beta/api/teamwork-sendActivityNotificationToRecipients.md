@@ -60,9 +60,9 @@ The following table shows the parameters that can be used with this action.
 | templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview). |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There is an upper limit of 100 recipients in a single request. |
 
-- The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
+The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
 
-  - [teamsCatalogApp](../resources/teamscatalogapp.md)
+- [teamsCatalogApp](../resources/teamscatalogapp.md)
 
 ## Response
 
