@@ -17,6 +17,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **phoneAuthenticationMethod** resource and associated methods.",
           "Target": "phoneAuthenticationMethod"
+        },
+        {
+          "Id": "ae0b4038-ef8b-48e7-b711-c52dbde06cf8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **softwareOathAuthenticationMethod** resource and associated methods.",
+          "Target": "softwareOathAuthenticationMethod"
         }
       ],
       "Id": "aa87c199-7df7-43f4-b87f-dc45741a6b23",
