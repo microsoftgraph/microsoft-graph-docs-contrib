@@ -1,19 +1,19 @@
 ---
-title: "Get connection"
-description: "Retrieve the properties and relationships of an externalConnection."
+title: "Get connectionQuota"
+description: "Retrieve the properties and relationships of a connectionQuota."
 ms.localizationpriority: medium
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Get connection
+# Get connectionQuota
 
 Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [externalConnection](../resources/externalconnectors-externalconnection.md).
+Retrieve the properties and relationships of a [connectionQuota](../resources/externalconnectors-connectionquota.md) object.
 
 ## Permissions
 
@@ -21,21 +21,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /external/connections/{id}
+GET /external/connections/{id}/quota
 ```
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports all [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -63,7 +63,7 @@ The following is an example of a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/external/connections/contosohr
+GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -75,7 +75,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalConnectors.externalConnection"
+  "@odata.type": "microsoft.graph.externalConnectors.connectionQuota"
 } -->
 
 ```http
@@ -83,24 +83,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "contosohr",
-  "ingestedItemsCount": 700000,
-  "name": "Contoso HR",
-  "description": "Connection to index Contoso HR system",
-  "state": "ready",
-  "configuration": {
-    "authorizedAppIds": [
-      "d310d35d-72ec-47dd-92f2-fb9c40936555"
-    ]
-  }
+  "itemsRemaining": 7000
 }
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
+2021-12-02 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get connection",
+  "description": "Get connectionQuota",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
