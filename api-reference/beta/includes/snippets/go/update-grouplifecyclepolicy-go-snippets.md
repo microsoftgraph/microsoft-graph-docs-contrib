@@ -14,11 +14,8 @@ managedGroupTypes := "Selected"
 requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails)
-options := &msgraphsdk.GroupLifecyclePolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupLifecyclePolicyId := "groupLifecyclePolicy-id"
-graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(options)
+graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(requestBody)
 
 
 ```

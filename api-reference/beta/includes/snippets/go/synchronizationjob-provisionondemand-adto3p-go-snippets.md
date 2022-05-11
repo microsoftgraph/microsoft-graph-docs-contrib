@@ -16,12 +16,9 @@ requestBody.SetParameters( []SynchronizationJobApplicationParameters {
 		"ruleId": "ea807875-5618-4f0a-9125-0b46a05298ca",
 	}
 }
-options := &msgraphsdk.ProvisionOnDemandRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(requestBody)
 
 
 ```

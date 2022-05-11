@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupId := "group-id"
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.GroupsById(&groupId).MembersById(&directoryObjectId).Get(nil)
+result, err := graphClient.GroupsById(&groupId).MembersById(&directoryObjectId).Get()
 
 
 ```

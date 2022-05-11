@@ -16,10 +16,7 @@ restorePointDateTime, err := time.Parse(time.RFC3339, "2021-09-23T04:00:00.00000
 requestBody.SetRestorePointDateTime(&restorePointDateTime)
 timeRange := "before"
 requestBody.SetTimeRange(&timeRange)
-options := &msgraphsdk.BulkRestoreCloudPcRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(options)
+result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(requestBody)
 
 
 ```
