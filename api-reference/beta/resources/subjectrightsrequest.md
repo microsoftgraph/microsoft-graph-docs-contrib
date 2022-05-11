@@ -55,7 +55,7 @@ Inherits from [entity](../resources/entity.md).
 | siteLocations| [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |stages|[subjectRightsRequestStageDetail](../resources/subjectrightsrequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `access`, `tagForAction`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
