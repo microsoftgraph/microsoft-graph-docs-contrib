@@ -16,16 +16,16 @@ Namespace: microsoft.graph
 Promotes subdomain to root domain.
 
 > **Important:**
-> Only applies to an verified domain. For a verified domain, the isVerified property of the [domain](../resources/domain.md) is true.
+> Only applies to a verified domain. For a verified domain, the isVerified property of the [domain](../resources/domain.md) is true.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Domain.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Permission type      | Permissions  |
+|:--------------------|:-------------|
+|Delegated (work or school account) | Domain.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
 |Application | Domain.ReadWrite.All |
 
 ## HTTP request
@@ -48,7 +48,7 @@ POST /domains/{id}/promote
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns `204 No Content` response code with a boolean value of `true`.
 
 ## Example
 
