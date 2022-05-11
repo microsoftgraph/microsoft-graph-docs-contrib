@@ -1,25 +1,25 @@
 ---
 title: "Microsoft Graph Toolkit: UI components and authentication providers for Microsoft Graph"
-description: "The Microsoft Graph Toolkit is a collection of authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
+description: "Microsoft Graph Toolkit is a collection of authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
 # Microsoft Graph Toolkit: UI components and authentication providers 
 
-The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
+Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
-The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the following example, a signed-in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
+Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the following example, a signed-in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs).
 
-## What's in the Microsoft Graph Toolkit?
+## What's in Microsoft Graph Toolkit?
 
 ### Components
 
-The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
+Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
 
 The components are also available as [React components](./get-started/mgt-react.md).
 
@@ -53,9 +53,9 @@ The components are also available as [React components](./get-started/mgt-react.
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./providers/custom.md)|Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code.|
 
-## Why use the Microsoft Graph Toolkit?
+## Why use Microsoft Graph Toolkit?
 
-The Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
+Microsoft Graph Toolkit enables you to quickly and easily integrate common experiences powered by Microsoft Graph into your own application. The toolkit:
 
 - **Cuts development time**. The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft 365 experience is done for you, with no customization required.
 
@@ -65,7 +65,7 @@ The Microsoft Graph Toolkit enables you to quickly and easily integrate common e
 
 ## Who should use it?
 
-The Microsoft Graph Toolkit is great for developers of all experience levels that want to develop an app that connects to and accesses data from Microsoft Graph, such as a:
+Microsoft Graph Toolkit is great for developers of all experience levels that want to develop an app that connects to and accesses data from Microsoft Graph, such as a:
 - Web app
 - Microsoft Teams tab
 - Progressive Web App (PWA)
@@ -74,7 +74,7 @@ The Microsoft Graph Toolkit is great for developers of all experience levels tha
 
 ## Where can I use it?
 
-The Microsoft Graph Toolkit is supported in the following browsers:
+Microsoft Graph Toolkit is supported in the following browsers:
 
 |![Edge](images/edgeIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
 |----|----|----|----|----|----|----|
@@ -83,5 +83,5 @@ The Microsoft Graph Toolkit is supported in the following browsers:
 ## Next steps
 
 - Try out the components in the [playground](https://mgt.dev).
-- [Get started](./get-started/overview.md) with the Microsoft Graph Toolkit.
-- Check out the Microsoft Graph Toolkit on [GitHub](https://aka.ms/mgt).
+- [Get started](./get-started/overview.md) with Microsoft Graph Toolkit.
+- Check out Microsoft Graph Toolkit on [GitHub](https://aka.ms/mgt).

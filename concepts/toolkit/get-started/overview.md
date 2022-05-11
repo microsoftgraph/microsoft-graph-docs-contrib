@@ -1,13 +1,13 @@
 ---
-title: "Get started with the Microsoft Graph Toolkit"
-description: "Learn how to set up your Microsoft 365 tenant and development environment and use the Microsoft Graph Toolkit."
+title: "Get started with Microsoft Graph Toolkit"
+description: "Learn how to set up your Microsoft 365 tenant and development environment and use Microsoft Graph Toolkit."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Get started with the Microsoft Graph Toolkit
+# Get started with Microsoft Graph Toolkit
 
-The Microsoft Graph Toolkit components can easily be added to your web application, SharePoint web part, or Microsoft Teams tabs. The components are based on web standards and can be used in both plain JavaScript projects or with popular web frameworks such as Reach, Angular, and Vue.js.
+Microsoft Graph Toolkit components can easily be added to your web application, SharePoint web part, or Microsoft Teams tabs. The components are based on web standards and can be used in both plain JavaScript projects or with popular web frameworks such as Reach, Angular, and Vue.js.
 
 Watch this short video to get started using the toolkit.
 
@@ -17,7 +17,7 @@ For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit](
 
 ## Set up your Microsoft 365 tenant
 
-To use the Microsoft Graph Toolkit to develop an app, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
+To use Microsoft Graph Toolkit to develop an app, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## Set up your development environment
 
@@ -27,9 +27,9 @@ To develop with the toolkit, you need the following:
 - A modern web browser such as Microsoft Edge, Google Chrome, or Firefox.
 - An LTS version of Node.js, which you can install from [nodejs.org](https://nodejs.org).
 
-## Use the Microsoft Graph Toolkit
+## Use Microsoft Graph Toolkit
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
+You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
 
 # [unpkg](#tab/html)
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
@@ -61,7 +61,7 @@ Now you can reference all the components on the page that you're using:
 
 ### NPM packages
 
-The Microsoft Graph Toolkit is made up of several NPM packages, allowing you to only include the code that you need for your applications.
+Microsoft Graph Toolkit is made up of several NPM packages, allowing you to only include the code that you need for your applications.
 
 <b>@microsoft/mgt-element</b>
 
@@ -109,11 +109,11 @@ The [`@microsoft/mgt-react`](./mgt-react.md) package contains all the auto-gener
 
 <b>@microsoft/mgt-spfx</b>
 
-The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use the Microsoft Graph Toolkit in SharePoint Framework solutions.
+The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 ## Next steps
 
-You're now ready to start developing with the Microsoft Graph Toolkit! The following guides are available to help you get started:
+You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
 
 - [Register an Azure Active Directory app](./add-aad-app-registration.md)
 - [Build a web app (JavaScript)](./build-a-web-app.md) (vanilla JavaScript)
