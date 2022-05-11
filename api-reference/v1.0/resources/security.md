@@ -1,9 +1,9 @@
 ---
 title: "security resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties."
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "preetikr"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -11,45 +11,70 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
-
-Inherits from [entity](../resources/entity.md).
+The security resource is the entry point for the Security object model. It returns a singleton security resource. It doesn't contain any usable properties.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get security](../api/security-get.md)|[security](../resources/security.md)|Read the properties and relationships of a [security](../resources/security.md) object.|
-|[Update security](../api/security-update.md)|[security](../resources/security.md)|Update the properties of a [security](../resources/security.md) object.|
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List alerts](../api/alert-list.md) | [alert](alert.md) collection | Get a alert object collection. |
+| [get alerts](../api/alert-get.md) | [alert](alert.md) collection | Get a alert object. |
+| [Update alerts](../api/alert-update.md) | [alert](alert.md) collection | Get a alert object. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+None
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|alerts|[alert](../resources/alert.md) collection|**TODO: Add Description**|
-|secureScoreControlProfiles|[secureScoreControlProfile](../resources/securescorecontrolprofile.md) collection|**TODO: Add Description**|
-|secureScores|[secureScore](../resources/securescore.md) collection|**TODO: Add Description**|
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|alerts|[alert](alert.md) collection| Read-only. Nullable.|
+
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security",
   "baseType": "microsoft.graph.entity",
-  "openType": false
-}
--->
-``` json
+  "@odata.type": "microsoft.graph.security"
+}-->
+
+```json
 {
-  "@odata.type": "#microsoft.graph.security",
-  "id": "String (identifier)"
 }
 ```
+
+## Example
+
+The **security** resource is available at the root of the graph.
+
+<!--{
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/security
+```
+
+<!--{
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security"
+}-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "security resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
 
