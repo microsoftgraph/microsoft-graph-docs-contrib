@@ -12,7 +12,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [tenant admin settings](../resources/tenantAdmin-settings.md) resource.
+Read the properties and relationships of a [tenant admin settings](../resources/tenantadmin-settings.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|SharePointTenantSettings.Read.All, SharePointTenantSettings.ReadWrite.All|
 
 ## User Roles
@@ -52,11 +52,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [settings](../resources/tenantAdmin-settings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [settings](../resources/tenantadmin-settings.md) object in the response body.
 
 ## Examples
 
 ### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_settings"
@@ -68,6 +71,9 @@ GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 
 
 ### Response
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
