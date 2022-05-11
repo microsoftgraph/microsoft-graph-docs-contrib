@@ -12,11 +12,8 @@ displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
 isHidden := true
 requestBody.SetIsHidden(&isHidden)
-options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(requestBody)
 
 
 ```

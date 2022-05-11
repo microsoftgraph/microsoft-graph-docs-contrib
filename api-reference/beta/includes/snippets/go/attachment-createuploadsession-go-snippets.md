@@ -16,11 +16,8 @@ name := "flower"
 attachmentItem.SetName(&name)
 size := int64(3483322)
 attachmentItem.SetSize(&size)
-options := &msgraphsdk.CreateUploadSessionRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(requestBody)
 
 
 ```

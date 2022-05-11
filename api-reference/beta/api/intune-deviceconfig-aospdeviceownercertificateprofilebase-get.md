@@ -32,9 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
 ```
 
 ## Optional query parameters
@@ -57,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [aospDeviceOwner
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.aospDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication
 ```
 
 ### Response
@@ -65,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1295
+Content-Length: 1731
 
 {
   "value": {
@@ -100,7 +98,19 @@ Content-Length: 1295
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
-    "version": 7
+    "version": 7,
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
+    ],
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```

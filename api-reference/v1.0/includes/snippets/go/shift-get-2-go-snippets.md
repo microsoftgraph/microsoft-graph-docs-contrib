@@ -20,11 +20,8 @@ requestBody.SetAvailability( []ShiftAvailability {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.etag": "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa",
 }
-options := &msgraphsdk.ShiftPreferencesRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ShiftPreferences().Patch(options)
+graphClient.UsersById(&userId).Settings().ShiftPreferences().Patch(requestBody)
 
 
 ```

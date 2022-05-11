@@ -157,6 +157,9 @@ This resource supports:
 | **Outlook tasks** (deprecated)|||
 | [Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
 | [List tasks](../api/outlookuser-list-tasks.md) (deprecated) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
+| **Cloud PC**|||
+|[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 
 
 ## Properties
@@ -215,7 +218,7 @@ This resource supports:
 | onPremisesLastSyncDateTime | DateTimeOffset | Indicates the last time at which the object was synced with the on-premises directory; for example: "2013-02-16T03:04:54Z". The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br> Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Contains the on-premises `sAMAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.<br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports `$filter` (`eq`) on `null` values only.  |
+| onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports `$filter` (`eq` including on `null` values).  |
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; `null` if this object has never been synced from an on-premises directory (default). Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 | onPremisesUserPrincipalName | String | Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | String collection | A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>NOTE: This property cannot contain accent characters.<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`). |
@@ -234,7 +237,7 @@ This resource supports:
 | showInAddressList | Boolean | `true` if the Outlook global address list should contain this user, otherwise `false`. If not set, this will be treated as `true`. For users invited through the invitation manager, this property will be set to `false`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but*, not with any other filterable properties. **Note:** Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<br><br>**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving this property.|
+| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but*, not with any other filterable properties. **Note:** Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<br><br>**Note:** <br/><li>There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving this property.<li>This property is not returned for a user who has never signed in or last signed in before April 2020.|
 | state | String | The state or province in the user's address. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | streetAddress | String | The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -245,7 +248,7 @@ This resource supports:
 ### mail and proxyAddresses properties
 **mail** and **proxyAddresses** are both email-related properties. **proxyAddresses** is a collection of addresses only relevant for Microsoft Exchange server. It's used to store a list of mail addresses for a user that are tied to a single mailbox. **mail** property is used as the user's email address for various purposes including user sign in and defines the primary proxy address.
  
-Both **mail** and **proxyAddresses** can be retrieved through the [GET user](add link) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](add link) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios: 
+Both **mail** and **proxyAddresses** can be retrieved through the [GET user](../api/user-get.md) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](../api/user-update.md) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios: 
  
 1. If a user has a license that includes Microsoft Exchange, all their proxy addresses must belong to a verified domain on the tenant. Any that don't belong to verified domains are silently removed.
 2. A user's mail will NOT be set to the primary proxy address if the user is a guest and the primary proxy address contains the guest user UPN string with #EXT#.
@@ -303,6 +306,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
+|authentication|[authentication](../resources/authentication.md)|**TODO: Add Description**|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|

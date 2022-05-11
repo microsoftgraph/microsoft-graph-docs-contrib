@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewUserAccountTypeRequestBody()
 userAccountType := "administrator"
 requestBody.SetUserAccountType(&userAccountType)
-options := &msgraphsdk.ChangeUserAccountTypeRequestBuilderPostOptions{
-	Body: requestBody,
-}
 cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).ChangeUserAccountType(cloudPC-id).Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).ChangeUserAccountType(cloudPC-id).Post(requestBody)
 
 
 ```

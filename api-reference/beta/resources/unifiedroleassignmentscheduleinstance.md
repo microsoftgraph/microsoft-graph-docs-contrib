@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleAssignmentScheduleInstance resource type"
 description: "Represents a schedule instance for an active role assignment operations through Azure AD Privileged Identity Management."
-author: "carolinetempleton"
+author: "japere"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

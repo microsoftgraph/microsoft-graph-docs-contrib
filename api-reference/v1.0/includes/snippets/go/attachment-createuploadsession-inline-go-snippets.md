@@ -20,11 +20,8 @@ isInline := true
 attachmentItem.SetIsInline(&isInline)
 contentId := "my_inline_picture"
 attachmentItem.SetContentId(&contentId)
-options := &msgraphsdk.CreateUploadSessionRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().CreateUploadSession(message-id).Post(requestBody)
 
 
 ```

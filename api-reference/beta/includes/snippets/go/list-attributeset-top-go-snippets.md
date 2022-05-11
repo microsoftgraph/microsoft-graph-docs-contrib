@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AttributeSetsRequestBuilderGetQueryParameters{
 	Top: 10,
 }
-options := &msgraphsdk.AttributeSetsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AttributeSetsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Directory().AttributeSets().Get(options)
+result, err := graphClient.Directory().AttributeSets().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

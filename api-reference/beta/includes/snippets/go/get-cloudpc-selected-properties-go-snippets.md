@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CloudPCRequestBuilderGetQueryParameters{
 	Select: "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult",
 }
-options := &msgraphsdk.CloudPCRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CloudPCRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 cloudPCId := "cloudPC-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Get(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
