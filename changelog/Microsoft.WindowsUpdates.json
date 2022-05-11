@@ -427,6 +427,38 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [removeMembersById](https://docs.microsoft.com/en-us/graph/api/windowsupdates-updatableassetgroup-removeMembersById?view=graph-rest-beta) method to the [updatableAsset](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableasset?view=graph-rest-beta) resource.",
                     "Target": "updatableAsset"
+                },
+                {
+                    "Id": "06069dc9-dc15-4079-8087-6dd303b7f06b",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "resourceConnectionState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **resourceConnectionState** enumeration type.",
+                    "Target": "resourceConnectionState"
+                },
+                {
+                    "Id": "06069dc9-dc15-4079-8087-6dd303b7f06b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "operationalInsightsConnection",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [operationalInsightsConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-operationalInsightsConnection?view=graph-rest-beta) resource",
+                    "Target": "operationalInsightsConnection"
+                },
+                {
+                    "Id": "06069dc9-dc15-4079-8087-6dd303b7f06b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "resourceConnection",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [resourceConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-resourceConnection?view=graph-rest-beta) resource",
+                    "Target": "resourceConnection"
+                },
+                {
+                    "Id": "06069dc9-dc15-4079-8087-6dd303b7f06b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "resourceConnections",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **resourceConnections** relationship to the [updates](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-updates?view=graph-rest-beta) resource.",
+                    "Target": "updates"
                 }
             ],
             "Id": "477a23ce-8dee-11eb-8507-815178c7c041",

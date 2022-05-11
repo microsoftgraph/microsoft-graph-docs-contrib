@@ -10161,6 +10161,26 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembers.md
             - name: Remove members by ID
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+        - name: Resource connection
+          href: resources/windowsupdates-resourceconnection.md
+          items:
+            - name: List resource connections
+              href: api/windowsupdates-updates-list-resourceconnections.md
+            - name: Get resource connection
+              href: api/windowsupdates-resourceconnection-get.md
+            - name: Delete resource connection
+              href: api/windowsupdates-resourceconnection-delete.md
+            - name: Operational Insights connection
+              href: resources/windowsupdates-operationalinsightsconnection.md
+              items:
+              - name: List Operational Insights connections
+                href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+              - name: Create Operational Insights connection
+                href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+              - name: Get Operational Insights connection
+                href: api/windowsupdates-operationalinsightsconnection-get.md
+              - name: Delete Operational Insights connection
+                href: api/windowsupdates-operationalinsightsconnection-delete.md
       - name: Multi-tenant management (preview)
         items:
         - name: Managed tenant
