@@ -245,7 +245,7 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 ### Owner must be specified when updating a schemaExtension definition using Microsoft Graph Explorer
 
-When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
 
 ### Filtering on schema extension properties is not supported on all entity types
 
