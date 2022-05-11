@@ -77,27 +77,27 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@microsoft/mgt-msal-provider</b>
 
-    `[@microsoft/mgt-msal-provider](../providers/msal.md)` contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
+    <code>[@microsoft/mgt-msal-provider](../providers/msal.md)</code> contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
 
 - <b>@microsoft/mgt-msal2-provider</b>
 
-    `[@microsoft/mgt-msal2-provider](../providers/msal2.md)` contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
+    [@microsoft/mgt-msal2-provider](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
-    `[@microsoft/mgt-teams-provider](../providers/teams.md)` contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in the Microsoft Teams tab application.
+    [@microsoft/mgt-teams-provider](../providers/teams.md) contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in the Microsoft Teams tab application.
 
 -  <b>@microsoft/mgt-teams-msal2-provider</b>
 
-    `[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)` contains the `TeamsMsal2Provider` and `mgt-teams-msal2-provider` component. The Microsoft Teams MSAL2 provider enables authentication in the Microsoft Teams tab application.
+    [@microsoft/mgt-teams-msal2-provider](../providers/teams.md) contains the `TeamsMsal2Provider` and `mgt-teams-msal2-provider` component. The Microsoft Teams MSAL2 provider enables authentication in the Microsoft Teams tab application.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    `[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)` contains the `SharePointProvider` for authenticating in a SharePoint environment. 
+    [@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md) contains the `SharePointProvider` for authenticating in a SharePoint environment. 
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    `[@microsoft/mgt-proxy-provider](../providers/proxy.md)` contains the `ProxyProvider` for an application that proxy Graph calls through a backend service. 
+    [@microsoft/mgt-proxy-provider](../providers/proxy.md) contains the `ProxyProvider` for an application that proxy Graph calls through a backend service. 
 
 <b>@microsoft/mgt</b>
 
@@ -105,11 +105,11 @@ The `@microsoft/mgt` package is the main package that includes all the preceding
 
 <b>@microsoft/mgt-react</b>
 
-The `[@microsoft/mgt-react](./mgt-react.md)` package contains all the auto-generated React components and takes dependency on the `@microsoft/mgt` package.
+The [@microsoft/mgt-react](./mgt-react.md) package contains all the auto-generated React components and takes dependency on the `@microsoft/mgt` package.
 
 <b>@microsoft/mgt-spfx</b>
 
-The `[@microsoft/mgt-spfx](./mgt-spfx.md)` package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
+The [@microsoft/mgt-spfx](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 ## Next steps
 
