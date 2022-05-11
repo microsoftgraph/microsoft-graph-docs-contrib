@@ -12,10 +12,7 @@ requestBody.SetValue( []String {
 	"externalId-value1",
 	"externalId-value2",
 }
-options := &msgraphsdk.DeleteTiIndicatorsByExternalIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(options)
+result, err := graphClient.Security().TiIndicators().DeleteTiIndicatorsByExternalId().Post(requestBody)
 
 
 ```

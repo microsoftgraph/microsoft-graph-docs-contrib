@@ -39,10 +39,7 @@ requestBody.SetAuthenticationMethodConfigurations( []AuthenticationMethodConfigu
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
 }
-options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(requestBody)
 
 
 ```

@@ -13,10 +13,7 @@ requestBody.SetRequestIds( []String {
 	"42bf60ac-d0cb-4206-aa5c-101884298f55",
 	"f09c8f14-8d8e-42cf-8a7e-732b0594e79b",
 }
-options := &msgraphsdk.ConfirmCompromisedRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.AuditLogs().SignIns().ConfirmCompromised().Post(options)
+graphClient.AuditLogs().SignIns().ConfirmCompromised().Post(requestBody)
 
 
 ```
