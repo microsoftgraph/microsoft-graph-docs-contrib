@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /urlThreatSubmission
+PATCH /urlThreats/{urlThreatsId}
 ```
 
 ## Request headers
@@ -66,13 +66,14 @@ If successful, this method returns a `200 OK` response code and an updated [urlT
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "update_urlthreatsubmission"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/urlThreatSubmission
+PATCH https://graph.microsoft.com/beta/urlThreats/{urlThreatsId}
 Content-Type: application/json
 Content-length: 520
 
@@ -99,6 +100,7 @@ Content-length: 520
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

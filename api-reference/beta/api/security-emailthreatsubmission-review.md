@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /emailThreatSubmission/review
+POST /emailThreats/{emailThreatsId}/review
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ POST /emailThreatSubmission/review
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
 
@@ -57,13 +57,14 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "emailthreatsubmissionthis.review"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/emailThreatSubmission/review
+POST https://graph.microsoft.com/beta/emailThreats/{emailThreatsId}/review
 Content-Type: application/json
 Content-length: 28
 
@@ -74,6 +75,7 @@ Content-length: 28
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -15,12 +15,15 @@ Namespace: microsoft.graph.security
 
 **TODO: Add Description**
 
+
+Inherits from [identity](../resources/intune-identity.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description** Inherited from [identity](../resources/intune-identity.md).|
 |email|String|**TODO: Add Description**|
-|identity|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [identity](../resources/intune-identity.md).|
 
 ## Relationships
 None.
@@ -35,8 +38,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.submissionUserIdentity",
-  "identity": "String",
   "displayName": "String",
+  "id": "String (identifier)",
   "email": "String"
 }
 ```

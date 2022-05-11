@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [thre
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "update_threatsubmission"
@@ -97,6 +98,7 @@ Content-length: 494
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

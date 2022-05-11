@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /emailThreatSubmissionPolicy
+GET /emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 ## Optional query parameters
@@ -51,17 +51,19 @@ If successful, this method returns a `200 OK` response code and an [emailThreatS
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_emailthreatsubmissionpolicy"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/emailThreatSubmissionPolicy
+GET https://graph.microsoft.com/beta/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

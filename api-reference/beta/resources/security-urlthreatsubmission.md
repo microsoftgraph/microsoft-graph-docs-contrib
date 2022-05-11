@@ -21,10 +21,11 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List urlThreatSubmissions](../api/security-urlthreatsubmission-list.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.|
+|[List urlThreatSubmissions](../api/security-threatsubmissionroot-list-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.|
+|[Create urlThreatSubmission](../api/security-urlthreatsubmission-post-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Create a new [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 |[Get urlThreatSubmission](../api/security-urlthreatsubmission-get.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Read the properties and relationships of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 |[Update urlThreatSubmission](../api/security-urlthreatsubmission-update.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Update the properties of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
-|[Delete urlThreatSubmission](../api/security-urlthreatsubmission-delete.md)|None|Deletes an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
+|[Delete urlThreatSubmission](../api/security-threatsubmissionroot-delete-urlthreats.md)|None|Deletes an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 |[review](../api/security-urlthreatsubmission-review.md)|None|**TODO: Add Description**|
 
 ## Properties

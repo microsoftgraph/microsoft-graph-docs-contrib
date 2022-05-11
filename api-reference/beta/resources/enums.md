@@ -66,20 +66,6 @@ doc_type: enumTypes
 |app|
 |unknownFutureValue|
 
-### submissionPolicyType values 
-
-
-
-|Member|
-|:---|
-|unknown|
-|exchangeTransportRule|
-|antiMalwarePolicy|
-|safeAttachmentPolicy|
-|antiPhishPolicy|
-|hostedContentFilterPolicy|
-|unknownFutureValue|
-
 ### submissionResultCategory values 
 
 

@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and an [emailUrlThre
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_emailurlthreatsubmission"
@@ -62,6 +63,7 @@ GET https://graph.microsoft.com/beta/emailUrlThreatSubmission
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

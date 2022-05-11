@@ -22,10 +22,11 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List emailThreatSubmissions](../api/security-emailthreatsubmission-list.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection|Get a list of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects and their properties.|
+|[List emailThreatSubmissions](../api/security-threatsubmissionroot-list-emailthreats.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md) collection|Get a list of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) objects and their properties.|
+|[Create emailThreatSubmission](../api/security-emailthreatsubmission-post-emailthreats.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Create a new [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
 |[Get emailThreatSubmission](../api/security-emailthreatsubmission-get.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Read the properties and relationships of an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
 |[Update emailThreatSubmission](../api/security-emailthreatsubmission-update.md)|[microsoft.graph.security.emailThreatSubmission](../resources/security-emailthreatsubmission.md)|Update the properties of an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
-|[Delete emailThreatSubmission](../api/security-emailthreatsubmission-delete.md)|None|Deletes an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
+|[Delete emailThreatSubmission](../api/security-threatsubmissionroot-delete-emailthreats.md)|None|Deletes an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.|
 |[review](../api/security-emailthreatsubmission-review.md)|None|**TODO: Add Description**|
 
 ## Properties

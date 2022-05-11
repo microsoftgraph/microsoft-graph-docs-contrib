@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /fileThreatSubmission
+GET /fileThreats/{fileThreatsId}
 ```
 
 ## Optional query parameters
@@ -51,17 +51,19 @@ If successful, this method returns a `200 OK` response code and a [fileThreatSub
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_filethreatsubmission"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/fileThreatSubmission
+GET https://graph.microsoft.com/beta/fileThreats/{fileThreatsId}
 ```
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

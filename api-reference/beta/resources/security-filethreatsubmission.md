@@ -21,10 +21,11 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List fileThreatSubmissions](../api/security-filethreatsubmission-list.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md) collection|Get a list of the [fileThreatSubmission](../resources/security-filethreatsubmission.md) objects and their properties.|
+|[List fileThreatSubmissions](../api/security-threatsubmissionroot-list-filethreats.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md) collection|Get a list of the [fileThreatSubmission](../resources/security-filethreatsubmission.md) objects and their properties.|
+|[Create fileThreatSubmission](../api/security-filethreatsubmission-post-filethreats.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md)|Create a new [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
 |[Get fileThreatSubmission](../api/security-filethreatsubmission-get.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md)|Read the properties and relationships of a [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
 |[Update fileThreatSubmission](../api/security-filethreatsubmission-update.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md)|Update the properties of a [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
-|[Delete fileThreatSubmission](../api/security-filethreatsubmission-delete.md)|None|Deletes a [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
+|[Delete fileThreatSubmission](../api/security-threatsubmissionroot-delete-filethreats.md)|None|Deletes a [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
 |[review](../api/security-filethreatsubmission-review.md)|None|**TODO: Add Description**|
 
 ## Properties

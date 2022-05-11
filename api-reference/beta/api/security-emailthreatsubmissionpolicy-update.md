@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /emailThreatSubmissionPolicy
+PATCH /emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 ## Request headers
@@ -68,13 +68,14 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 ## Examples
 
 ### Request
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "update_emailthreatsubmissionpolicy"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/emailThreatSubmissionPolicy
+PATCH https://graph.microsoft.com/beta/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 Content-Type: application/json
 Content-length: 721
 
@@ -98,6 +99,7 @@ Content-length: 721
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
