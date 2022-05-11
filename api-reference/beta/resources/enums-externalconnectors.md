@@ -57,16 +57,7 @@ Namespace: microsoft.graph.externalConnectors
 |Member
 |:--------------
 | search
-| topicDiscovery
-| bookmarks
-| workplaceInsights
-| peopleProfileEnrichment
 | compliance
-| contentEnrichment
-| contextualInsertion
-| recommendedActions
-| contentRecall
-| acronyms
 | unknownFutureValue
 
 ### externalGroupMemberType values
