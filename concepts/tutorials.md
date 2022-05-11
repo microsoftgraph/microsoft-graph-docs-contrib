@@ -27,6 +27,7 @@ In these exercises, you will create a basic command-line application that has th
 | [Java](/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
 | [JavaScript](/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
 | [PHP](/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
+| [Power Automate](/tutorials/power-automate) | [microsoftgraph/msgraph-training-powerautomate)](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
 | [PowerShell](/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
 | [Python](/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
 | [TypeScript](/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
@@ -34,7 +35,7 @@ In these exercises, you will create a basic command-line application that has th
 > [!TIP]
 > If you prefer to download a completed project, you can download from one of the following places.
 >
-> - [Microsoft Graph Quick Start](https://developer.microsoft.com/graph/quick-start) automates registering an application for you and downloads the completed project already configured for user authentication.
+> - [Microsoft Graph Quick Start](https://developer.microsoft.com/graph/quick-start) automates registering an application for you and downloads the completed project already configured for user authentication. Available for all tutorials except Power Automate.
 > - Completed projects can be downloaded from their corresponding GitHub repositories. Instructions on registering an application and configuring the sample are located in each repository.
 
 ## Next steps
