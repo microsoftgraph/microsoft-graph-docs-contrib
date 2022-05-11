@@ -101,10 +101,12 @@ Content-Type: application/json
     },
     "mailboxLocations": null,
     "pauseAfterEstimate": true,
-    "regulations": ["CCPA"],
+    "regulations": [
+        "CCPA"
+    ],
     "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
-    }    
+    }
 }
 ```
 # [C#](#tab/csharp)
@@ -166,8 +168,7 @@ Content-Type: application/json
         {
             "stage": "generateReport",
             "status": "notStarted",
-            "error": null 
-
+            "error": null
         },
         {
             "stage": "caseResolved",
@@ -176,18 +177,16 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "user": 
-            {
-                "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-                "displayName": "srradmin@contoso.com"
-            }
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "user": 
-            {
-                "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-                "displayName": "srradmin@contoso.com"
-            }
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
         "firstName": "Diego",
@@ -207,7 +206,7 @@ Content-Type: application/json
     "mailboxLocations": null,
     "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
-    }    
+    }
 }
 ```
 

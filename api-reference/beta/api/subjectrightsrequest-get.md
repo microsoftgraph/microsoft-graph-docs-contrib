@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-    {
+{
     "type": "export",
     "dataSubjectType": "customer",
     "regulations": [
@@ -137,15 +137,13 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "user": 
-        {
+        "user": {
             "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
             "displayName": "srradmin@contoso.com"
         }
     },
     "lastModifiedBy": {
-        "user": 
-        {
+        "user": {
             "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
             "displayName": "srradmin@contoso.com"
         }
@@ -169,7 +167,7 @@ Content-Type: application/json
     "mailboxLocations": null,
     "siteLocations": {
         "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
-    }    
+    }
 }
 ```
 

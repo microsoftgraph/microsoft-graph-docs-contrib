@@ -75,7 +75,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "@odata.type": "#microsoft.graph.subjectRightsRequest",
     "contentQuery": "String",
     "closedDateTime": "String (timestamp)",
     "createdBy": {
@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
     },
     "createdDateTime": "String (timestamp)",
     "dataSubject": {
-        "@odata.type": "microsoft.graph.dataSubject",
+        "@odata.type": "microsoft.graph.dataSubject"
     },
     "dataSubjectType": "customer",
     "description": "String",
@@ -96,9 +96,6 @@ The following is a JSON representation of the resource.
         "@odata.type": "microsoft.graph.subjectRightsRequestDetail"
     },
     "internalDueDateTime": "String (timestamp)",
-        "regulations": [
-            "String"
-    ],
     "lastModifiedBy": {
         "@odata.type": "microsoft.graph.identitySet"
     },
@@ -107,6 +104,9 @@ The following is a JSON representation of the resource.
         "@odata.type": "microsoft.graph.subjectRightsRequestMailboxLocation"
     },
     "pauseAfterDownload": "Boolean",
+    "regulations": [
+        "String"
+    ],
     "stages": [
         {
             "stage": "contentRetrieval",

@@ -107,10 +107,9 @@ Content-Type: application/json
             "id": "73A1E594-D973-4740-B1CC-42FD21727543",
             "createdDateTime": "2022-06-20T22:42:28Z",
             "author": {
-                "user": 
-                {
-                  "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-                  "displayName": "srradmin@contoso.com"
+                "user": {
+                    "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+                    "displayName": "srradmin@contoso.com"
                 }
             },
             "content": {
