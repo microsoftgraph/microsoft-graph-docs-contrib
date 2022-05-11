@@ -24,12 +24,9 @@ post.SetAttachments( []Attachment {
 		"contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu",
 	}
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(requestBody)
 
 
 ```

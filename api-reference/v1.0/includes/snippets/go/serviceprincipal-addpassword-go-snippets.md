@@ -12,11 +12,8 @@ passwordCredential := msgraphsdk.NewPasswordCredential()
 requestBody.SetPasswordCredential(passwordCredential)
 displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName)
-options := &msgraphsdk.AddPasswordRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword(servicePrincipal-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddPassword(servicePrincipal-id).Post(requestBody)
 
 
 ```

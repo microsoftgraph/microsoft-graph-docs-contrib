@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTrustFrameworkKeySet()
 id := "keyset1"
 requestBody.SetId(&id)
-options := &msgraphsdk.KeySetsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TrustFramework().KeySets().Post(options)
+result, err := graphClient.TrustFramework().KeySets().Post(requestBody)
 
 
 ```

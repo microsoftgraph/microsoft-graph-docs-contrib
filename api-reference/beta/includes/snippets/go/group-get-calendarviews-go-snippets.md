@@ -14,12 +14,12 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"Prefer": "outlook.body-content-type="text""
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).CalendarView().Get(options)
+result, err := graphClient.GroupsById(&groupId).CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

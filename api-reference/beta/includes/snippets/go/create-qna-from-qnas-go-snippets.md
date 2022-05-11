@@ -47,10 +47,7 @@ requestBody.SetGroupIds( []String {
 }
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.QnasRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Qnas().Post(options)
+result, err := graphClient.Search().Qnas().Post(requestBody)
 
 
 ```

@@ -13,12 +13,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"participantMixerLevels":  []Object {
 	}
 }
-options := &msgraphsdk.ParticipantRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
 participantId := "participant-id"
-graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(options)
+graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Post(requestBody)
 
 
 ```
