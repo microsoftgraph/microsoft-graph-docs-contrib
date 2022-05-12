@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the storage account information that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
+Represents the storage account information that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|storageAccountId|String|The id of the storage account.|
+|storageAccountId|String|The ID of the storage account.|
 |storageAccountName|String|The name of the storage account.|
 
 ## Relationships
