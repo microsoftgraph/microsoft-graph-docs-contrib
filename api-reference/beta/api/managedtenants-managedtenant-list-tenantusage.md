@@ -1,5 +1,5 @@
 ---
-title: "List tenantUsages"
+title: "List tenantUsage"
 description: "Get a list of the tenantUsage objects and their properties."
 author: "kylewirpel"
 ms.localizationpriority: medium
