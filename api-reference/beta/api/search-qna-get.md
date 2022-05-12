@@ -120,7 +120,7 @@ Content-Type: application/json
     },
     "availabilityStartDateTime": "2020-09-21T20:01:37Z",
     "availabilityEndDateTime": "2021-12-31T20:01:37Z",
-    "languageTags": ["en-US"],
+    "languageTags": ["en-us"],
     "platforms": ["ios"],
     "groupIds": ["groupId"],
     "targetedVariations": null,
