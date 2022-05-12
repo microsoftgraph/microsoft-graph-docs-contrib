@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object,  which represents the Temporary Access Pass authentication method policy for the Azure AD tenant.
 
 ## Permissions
@@ -27,7 +25,6 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 
 * Authentication Policy Administrator
 * Global Administrator
-
 
 ## HTTP request
 
@@ -59,55 +56,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
-Content-Type: application/json
-
-{
-  "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-  "state":"enabled",
-  "defaultLifetimeInMinutes":60,
-  "defaultLength":8,
-  "minimumLifetimeInMinutes":60,
-  "maximumLifetimeInMinutes":1440,"
-  isUsableOnce":false,
-  "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
-}
-
-
-```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-temporaryaccesspassauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-temporaryaccesspassauthenticationmethodconfiguration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-temporaryaccesspassauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-temporaryaccesspassauthenticationmethodconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 <!-- {

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
 
 ## Permissions
@@ -61,7 +59,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
     "id": "TemporaryAccessPass",
     "state": "disabled",
