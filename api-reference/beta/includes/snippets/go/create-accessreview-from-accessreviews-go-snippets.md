@@ -64,10 +64,7 @@ autoReviewSettings := msgraphsdk.NewAutoReviewSettings()
 settings.SetAutoReviewSettings(autoReviewSettings)
 notReviewedResult := "Deny"
 autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
-options := &msgraphsdk.AccessReviewsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.AccessReviews().Post(options)
+result, err := graphClient.AccessReviews().Post(requestBody)
 
 
 ```

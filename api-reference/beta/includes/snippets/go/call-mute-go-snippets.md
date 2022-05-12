@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewClientContextRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.MuteRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).Mute(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).Mute(call-id).Post(requestBody)
 
 
 ```

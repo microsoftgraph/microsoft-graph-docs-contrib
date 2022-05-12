@@ -28,11 +28,8 @@ actions.SetForwardTo( []Recipient {
 }
 stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules)
-options := &msgraphsdk.MessageRulesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRules().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).MessageRules().Post(requestBody)
 
 
 ```

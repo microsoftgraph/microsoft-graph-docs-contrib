@@ -55,8 +55,6 @@ Namespace: microsoft.graph.externalConnectors
 
 ### externalActivityType values
 
-
-
 |Member
 |:--------------
 |viewed
@@ -64,6 +62,7 @@ Namespace: microsoft.graph.externalConnectors
 |created
 |commented
 |unknownFutureValue
+
 
 ### externalGroupMemberType values
 

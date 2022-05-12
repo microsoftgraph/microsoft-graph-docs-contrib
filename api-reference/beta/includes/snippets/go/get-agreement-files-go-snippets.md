@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AgreementRequestBuilderGetQueryParameters{
 	Expand: "files",
 }
-options := &msgraphsdk.AgreementRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AgreementRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 agreementId := "agreement-id"
-result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).Get(options)
+result, err := graphClient.IdentityGovernance().TermsOfUse().AgreementsById(&agreementId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

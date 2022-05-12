@@ -46,10 +46,7 @@ requestBody.SetPowerAppIds( []String {
 }
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.BookmarksRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Bookmarks().Post(options)
+result, err := graphClient.Search().Bookmarks().Post(requestBody)
 
 
 ```

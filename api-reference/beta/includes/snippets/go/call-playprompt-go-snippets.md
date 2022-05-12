@@ -18,11 +18,8 @@ requestBody.SetPrompts( []Prompt {
 }
 loop := false
 requestBody.SetLoop(&loop)
-options := &msgraphsdk.PlayPromptRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(requestBody)
 
 
 ```

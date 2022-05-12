@@ -14,11 +14,11 @@ requestParameters := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetQuery
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().Get(options)
+result, err := graphClient.RoleManagement().Directory().TransitiveRoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
