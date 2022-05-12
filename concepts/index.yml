@@ -84,7 +84,7 @@ tools:
     - title: SDKs
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/hub/icon01-sdk.svg
-      url: /graph/sdks/sdk-installation
+      url: /graph/sdks/sdks-overview
     # Card
     - title: Quick start
       imageSrc: ./images/hub/icon02-quickstart.svg
