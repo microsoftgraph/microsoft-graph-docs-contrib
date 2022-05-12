@@ -1,10 +1,10 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+doc_type: enumPageType
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: enumTypes
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 ---
 
 # Enum values
@@ -307,22 +307,256 @@ Namespace: microsoft.graph
 |:---|
 |notStarted|
 |running|
-|succeeded|
+|complete|
 |failed|
 |unknownFutureValue|
 
-### longRunningOperationStatus values 
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+
+### consentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### attributeType values
+
+|Member|
+|:---|
+|String|
+|Integer|
+|Reference|
+|Binary|
+|Boolean|
+|DateTime|
+
+### mutability values
+
+|Member|
+|:---|
+|ReadWrite|
+|ReadOnly|
+|Immutable|
+|WriteOnly|
+
+### directoryDefinitionDiscoverabilities values
+
+|Member|
+|:---|
+|None|
+|AttributeNames|
+|AttributeDataTypes|
+|AttributeReadOnly|
+|ReferenceAttributes|
+|UnknownFutureValue|
+
+### connectorGroupRegion values
+
+|Member|
+|:---|
+|nam|
+|eur|
+|aus|
+|asia|
+|ind|
+|unknownFutureValue|
+
+### connectorGroupType values
+
+|Member|
+|:---|
+|applicationProxy|
+
+### onPremisesPublishingType values
+
+|Member|
+|:---|
+|applicationProxy|
+|exchangeOnline|
+|authentication|
+|provisioning|
+|intunePfx|
+|oflineDomainJoin|
+|unknownFutureValue|
+
+### agentStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### connectorStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### callType values
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### tone values
+
+|Member|
+|:---|
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### routingPolicy values
+
+|Member|
+|:---|
+|none|
+|noMissedCall|
+|disableForwardingExceptPhone|
+|disableForwarding|
+|preferSkypeForBusiness|
+|unknownFutureValue|
+
+### meetingCapabilities values
+
+|Member|
+|:---|
+|questionAndAnswer|
+|unknownFutureValue|
+
+### onlineMeetingRole values
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|producer|
+|unknownFutureValue|
+
+### autoAdmittedUsersType values
+
+|Member|
+|:---|
+|everyoneInCompany|
+|everyone|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### callDirection values
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### modality values
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
+### kerberosSignOnMappingAttributeType values
+
+|Member|
+|:---|
+|userPrincipalName|
+|onPremisesUserPrincipalName|
+|userPrincipalUsername|
+|onPremisesUserPrincipalUsername|
+|onPremisesSAMAccountName|
+
+### externalAuthenticationType values
+
+|Member|
+|:---|
+|passthru|
+|aadPreAuthentication|
+
+### recipientScopeType values
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
+### appliedConditionalAccessPolicyResult values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+
+### microsoftAuthenticatorAuthenticationMode values
 
 
 
 |Member|
 |:---|
-<<<<<<< HEAD
-|notStarted|
-|running|
-|succeeded|
-|failed|
-=======
 |any|
 |push|
 |deviceBasedPush|
@@ -492,135 +726,325 @@ Namespace: microsoft.graph
 |:---|
 |success|
 |failure|
->>>>>>> main
 |skipped|
+|warning|
 |unknownFutureValue|
 
-### submissionCategory values 
-
-
+### provisioningStepType values
 
 |Member|
 |:---|
-|notJunk|
-|spam|
-|phishing|
-|malware|
+|import|
+|scoping|
+|matching|
+|processing|
+|referenceResolution|
+|export|
 |unknownFutureValue|
 
-### submissionClientSource values 
-
-
-
-|Member|
-|:---|
-|microsoft|
-|other|
-|unknownFutureValue|
-
-### submissionContentType values 
-
-
+### registrationAuthMethod values
 
 |Member|
 |:---|
 |email|
-|url|
-|file|
-|app|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+|fido|
+|appPassword|
 |unknownFutureValue|
 
-### submissionResultCategory values 
-
-
+### registrationStatusType values
 
 |Member|
 |:---|
-|notJunk|
-|spam|
-|phishing|
-|malware|
-|allowedByPolicy|
-|blockedByPolicy|
-|spoof|
-|unknown|
-|noResultAvailable|
+|registered|
+|enabled|
+|capable|
+|mfaRegistered|
 |unknownFutureValue|
 
-### submissionResultDetail values 
 
-
+### signInIdentifierType values 
 
 |Member|
 |:---|
-|none|
-|underInvestigation|
-|simulatedThreat|
-|allowedBySecOps|
-|allowedByThirdPartyFilters|
-|messageNotFound|
-|urlFileShouldNotBeBlocked|
-|urlFileShouldBeBlocked|
-|urlFileCannotMakeDecision|
-|domainImpersonation|
-|userImpersonation|
-|brandImpersonation|
-|outboundShouldNotBeBlocked|
-|outboundShouldBeBlocked|
-|outboundBulk|
-|outboundCannotMakeDecision|
-|outboundNotRescanned|
-|zeroHourAutoPurgeAllowed|
-|zeroHourAutoPurgeBlocked|
-|zeroHourAutoPurgeQuarantineReleased|
-|onPremisesSkip|
-|allowedByTenantAllowBlockList|
-|blockedByTenantAllowBlockList|
-|allowedUrlByTenantAllowBlockList|
-|allowedFileByTenantAllowBlockList|
-|allowedSenderByTenantAllowBlockList|
-|allowedRecipientByTenantAllowBlockList|
-|blockedUrlByTenantAllowBlockList|
-|blockedFileByTenantAllowBlockList|
-|blockedSenderByTenantAllowBlockList|
-|blockedRecipientByTenantAllowBlockList|
-|allowedByConnection|
-|blockedByConnection|
-|allowedByExchangeTransportRule|
-|blockedByExchangeTransportRule|
-|quarantineReleased|
-|quarantineReleasedThenBlocked|
-|junkMailRuleDisabled|
-|allowedByUserSetting|
-|blockedByUserSetting|
-|allowedByTenant|
-|blockedByTenant|
-|invalidFalsePositive|
-|invalidFalseNegative|
-|spoofBlocked|
-|goodReclassifiedAsBad|
-|goodReclassifiedAsBulk|
-|goodReclassifiedAsGood|
-|goodReclassifiedAsCannotMakeDecision|
-|badReclassifiedAsGood|
-|badReclassifiedAsBulk|
-|badReclassifiedAsBad|
-|badReclassifiedAsCannotMakeDecision|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
 |unknownFutureValue|
 
-### submissionSource values 
 
+### signInUserType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### requirementProvider values 
 
 
 |Member|
 |:---|
 |user|
-|administrator|
+|request|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
-### tenantAllowBlockListAction values 
+
+### riskDetail values
+
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|adminConfirmedUserCompromised|
+|unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 
 
+<!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
+### usageAuthMethod values
+
+|Member|
+|:---|
+|email|
+|mobileSMS|
+|mobileCall|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobileCall|
+|fido|
+|appPassword|
+|unknownFutureValue|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticationContextDetail values
+
+|Member|
+|:---|
+|required|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
+|unknownFutureValue|
+
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### educationAssignmentStatus values
+|Member|
+|:---|
+|draft|
+|published|
+|assigned|
+|unknownFutureValue|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
+
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### expirationRequirement values
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
+
+### replyRestriction values
+
+| Member
+|:--------------
+| everyone
+| authorAndModerators
+| unknownFutureValue
+
+### userNewMessageRestriction values
+
+| Member
+|:--------------
+|everyone
+|everyoneExceptGuests
+|moderators
+|unknownFutureValue
+
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### allowedAudiences values
+
+|Member|
+|:---|
+|me|
+|family|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+|unknownFutureValue|
+
+### emailType values
+
+|Member|
+|:---|
+|unknown|
+|work|
+|personal|
+|main|
+|other|
+
+### authenticationMethodSignInState values
+
+|Member|
+|:---|
+|notSupported|
+|notAllowedByPolicy|
+|notEnabled|
+|phoneNumberNotUnique|
+|ready|
+|notConfigured|
+|unknownFutureValue|
+
+### authenticationPhoneType values
+
+|Member|
+|:---|
+|mobile|
+|alternateMobile|
+|office|
+|unknownFutureValue|
+
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### fido2RestrictionEnforcementType values
 
 |Member|
 |:---|
@@ -628,46 +1052,190 @@ Namespace: microsoft.graph
 |block|
 |unknownFutureValue|
 
-### tenantAllowBlockListEntryType values 
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
 
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
 
+### anniversaryType values
 
 |Member|
 |:---|
-|url|
-|fileHash|
-|sender|
-|recipient|
+|birthday|
+|wedding|
 |unknownFutureValue|
 
-### userMailboxSetting values 
+### skillProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|limitedWorking|
+|generalProfessional|
+|advancedProfessional|
+|expert|
+|unknownFutureValue|
+
+### languageProficiencyLevel values
+
+|Member|
+|:---|
+|elementary|
+|conversational|
+|limitedWorking|
+|professionalWorking|
+|fullProfessional|
+|nativeOrBilingual|
+|unknownFutureValue|
+
+### personRelationship values
+
+|Member|
+|:---|
+|manager|
+|colleague|
+|directReport|
+|dotLineReport|
+|assistant|
+|dotLineManager|
+|alternateContact|
+|friend|
+|spouse|
+|sibling|
+|child|
+|parent|
+|sponsor|
+|emergencyContact|
+|other|
+|unknownFutureValue|
+
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
+
+### analyticsActivityType values
+
+| Member
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
+
+### registrationAuthMethod values
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+
+### entityTypes values
+
+|Member|
+|:---|
+|event|
+|message|
+|driveItem|
+|externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+|unknownFutureValue|
+
+### searchAlterationType values
+
+| Member |
+|:---------------|
+|modification|
+|suggestion|
+
+### bucketAggregationSortProperty values
+
+|Member|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
+
+### contactRelationship values
+
+| Member             | Value | Description                              |
+| :----------------- | :---- | :--------------------------------------- |
+| parent             | 0     | The user's parent.                       |
+| relative           | 1     | The user's relative.                     |
+| aide               | 2     | The user's aide.                         |
+| doctor             | 3     | The user's doctor.                       |
+| guardian           | 4     | The user's guardian.                     |
+| child              | 5     | The user's child.                        |
+| other              | 6     | An unspecified relationship to the user. |
+| unknownFutureValue | 7     | Marker value for future compatibility.   |
+
+### scheduleEntityTheme values
+
+| Member
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| gray
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
 
 
+### timeOffReasonIconType values
 
 |Member|
 |:---|
 |none|
-|junkMailDeletion|
-|isFromAddressInAddressBook|
-|isFromAddressInAddressSafeList|
-|isFromAddressInAddressBlockList|
-|isFromAddressInAddressImplicitSafeList|
-|isFromAddressInAddressImplicitJunkList|
-|isFromDomainInDomainSafeList|
-|isFromDomainInDomainBlockList|
-|isRecipientInRecipientSafeList|
-|customRule|
-|junkMailRule|
-|senderPraPresent|
-|fromFirstTimeSender|
-|exclusive|
-|priorSeenPass|
-|senderAuthenticationSucceeded|
-|isJunkMailRuleEnabled|
+|car|
+|calendar|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|clock|
+|juryDuty|
+|globe|
+|cup|
+|phone|
+|weather|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
 |unknownFutureValue|
 
-<<<<<<< HEAD
-=======
 ### timeCardState values
 
 |Member|
@@ -2483,4 +3051,164 @@ Possible values for user account types (group membership), per Windows definitio
 |terminating|
 |terminationRequested|
 |unknownFutureValue|
->>>>>>> main
+
+### longRunningOperationStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+
+### submissionCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|unknownFutureValue|
+
+### submissionClientSource values 
+
+|Member|
+|:---|
+|microsoft|
+|other|
+|unknownFutureValue|
+
+### submissionContentType values 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|app|
+|unknownFutureValue|
+
+### submissionResultCategory values 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|spoof|
+|unknown|
+|noResultAvailable|
+|unknownFutureValue|
+
+### submissionResultDetail values 
+
+|Member|
+|:---|
+|none|
+|underInvestigation|
+|simulatedThreat|
+|allowedBySecOps|
+|allowedByThirdPartyFilters|
+|messageNotFound|
+|urlFileShouldNotBeBlocked|
+|urlFileShouldBeBlocked|
+|urlFileCannotMakeDecision|
+|domainImpersonation|
+|userImpersonation|
+|brandImpersonation|
+|outboundShouldNotBeBlocked|
+|outboundShouldBeBlocked|
+|outboundBulk|
+|outboundCannotMakeDecision|
+|outboundNotRescanned|
+|zeroHourAutoPurgeAllowed|
+|zeroHourAutoPurgeBlocked|
+|zeroHourAutoPurgeQuarantineReleased|
+|onPremisesSkip|
+|allowedByTenantAllowBlockList|
+|blockedByTenantAllowBlockList|
+|allowedUrlByTenantAllowBlockList|
+|allowedFileByTenantAllowBlockList|
+|allowedSenderByTenantAllowBlockList|
+|allowedRecipientByTenantAllowBlockList|
+|blockedUrlByTenantAllowBlockList|
+|blockedFileByTenantAllowBlockList|
+|blockedSenderByTenantAllowBlockList|
+|blockedRecipientByTenantAllowBlockList|
+|allowedByConnection|
+|blockedByConnection|
+|allowedByExchangeTransportRule|
+|blockedByExchangeTransportRule|
+|quarantineReleased|
+|quarantineReleasedThenBlocked|
+|junkMailRuleDisabled|
+|allowedByUserSetting|
+|blockedByUserSetting|
+|allowedByTenant|
+|blockedByTenant|
+|invalidFalsePositive|
+|invalidFalseNegative|
+|spoofBlocked|
+|goodReclassifiedAsBad|
+|goodReclassifiedAsBulk|
+|goodReclassifiedAsGood|
+|goodReclassifiedAsCannotMakeDecision|
+|badReclassifiedAsGood|
+|badReclassifiedAsBulk|
+|badReclassifiedAsBad|
+|badReclassifiedAsCannotMakeDecision|
+|unknownFutureValue|
+
+### submissionSource values 
+
+|Member|
+|:---|
+|user|
+|administrator|
+|unknownFutureValue|
+
+### tenantAllowBlockListAction values 
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### tenantAllowBlockListEntryType values 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|sender|
+|recipient|
+|unknownFutureValue|
+
+### userMailboxSetting values 
+
+|Member|
+|:---|
+|none|
+|junkMailDeletion|
+|isFromAddressInAddressBook|
+|isFromAddressInAddressSafeList|
+|isFromAddressInAddressBlockList|
+|isFromAddressInAddressImplicitSafeList|
+|isFromAddressInAddressImplicitJunkList|
+|isFromDomainInDomainSafeList|
+|isFromDomainInDomainBlockList|
+|isRecipientInRecipientSafeList|
+|customRule|
+|junkMailRule|
+|senderPraPresent|
+|fromFirstTimeSender|
+|exclusive|
+|priorSeenPass|
+|senderAuthenticationSucceeded|
+|isJunkMailRuleEnabled|
+|unknownFutureValue|
