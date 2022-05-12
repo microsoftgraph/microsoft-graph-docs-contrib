@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSubscription resource type"
-description: "Represents a Cloud PC Subscription."
+description: "Represents a Cloud PC subscription."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the subscription information that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
+Represents the subscription information that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|subscriptionId|String|The id of the subscription.|
+|subscriptionId|String|The ID of the subscription.|
 |subscriptionName|String|The name of the subscription.|
 
 ## Relationships
