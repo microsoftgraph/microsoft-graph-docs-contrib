@@ -10325,7 +10325,7 @@ items:
         - name: Tenant usage
           href: resources/managedtenants-tenantusage.md
           items:
-          - name: List tenant usage
+          - name: List
             href: api/managedtenants-managedtenant-list-tenantusage.md
         - name: Windows device malware state
           href: resources/managedtenants-windowsdevicemalwarestate.md
