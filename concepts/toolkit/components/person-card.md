@@ -149,6 +149,16 @@ mgt-person {
   --person-card-details-item-font-size: 20px;
   --person-card-details-item-color: #3abf0a;
   --person-card-background-color: #000000;
+  --person-card-contact-link-color: #ff0000;
+  --person-card-contact-link-hover-color: #00ff00;
+  --person-card-show-more-color: #ff0000;
+  --person-card-show-more-hover-color: #00ff00;
+  --person-card-base-links-color: #ff0000;
+  --person-card-base-links-hover-color: #00ff00;
+  --person-card-tab-nav-color: #ff0000;
+  --person-card-active-org-member-color: #ff0000;
+  --person-card-nav-back-arrow-hover-color: #00ff00;
+  --person-card-nav-back-arrow-color: #ff0000;
 }
 ```
 
