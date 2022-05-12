@@ -1,9 +1,9 @@
 ---
 title: "Get fileThreatSubmission"
 description: "Read the properties and relationships of a fileThreatSubmission object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "caigen"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: apiPageType
 ---
 
