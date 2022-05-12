@@ -7,7 +7,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "cloudPcBulkRemoteActionResult",
                     "ChangeType": "Addition",
-                    "Description": "Changed the return type for the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkReprovisionCloudPc?view=graph-rest-beta) metho.d",
+                    "Description": "Changed the return type for the [bulkReprovisionCloudPc](https://docs.microsoft.com/en-us/graph/api/intune-bulkReprovisionCloudPc?view=graph-rest-beta) method.",
                     "Target": "bulkReprovisionCloudPc"
                 }
             ],
