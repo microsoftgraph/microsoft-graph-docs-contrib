@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of [externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivityresult.md) objects in the response body.
 
-If a 207 response is returned, it indicates only some of the added externalActivity instances were successfully processed. The caller should inspect the response payload looking at each externalActivityResult's error field to determine why the externalActivity instances was not processed and what action can be taken. If the error field is null, that indicates a successful externalActivityResult.
+If a `207` response is returned, it indicates only some of the added **externalActivity** instances were successfully processed. The caller should inspect the response payload looking at each **externalActivityResult**'s error field to determine why the **externalActivity** instances was not processed and what action can be taken. If the error field is null, that indicates a successful **externalActivityResult**.
 
 ## Examples
 
