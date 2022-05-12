@@ -11647,7 +11647,7 @@ items:
             href: api/domain-update.md
           - name: Verify domain
             href: api/domain-verify.md
-            name: Promote domain
+          - name: Promote domain
             href: api/domain-promote.md
         - name: Feature rollout policy
           href: resources/featurerolloutpolicy.md
