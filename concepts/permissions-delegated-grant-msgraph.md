@@ -9,7 +9,7 @@ ms.custom: template-how-to
 
 # How-To: Grant delegated permissions programmatically
 
-When you grant API permissions to a client app or user in Azure Active Directory (Azure AD), they're recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app or user in Azure Active Directory (Azure AD), they're recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 Use the following instructions to grant delegated permissions that are exposed by an API to an app. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
 
@@ -21,9 +21,9 @@ Use the following instructions to grant delegated permissions that are exposed b
 To complete these instructions, you need the following resources and privileges:
 
 1. A working Azure AD tenant.
-2. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as an app or user with privileges to create applications in the tenant.
-3. In the app you've signed in to, consent to the `Application.ReadWrite.All` and `AppRoleAssignment.ReadWrite.All` delegated or application permissions.
-4. The object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal in our tenant.
+2. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+3. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions.
+4. Get the object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal in our tenant.
 
 > [!CAUTION]
 > The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app or user in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
@@ -125,8 +125,8 @@ Content-Type: application/json
 ```
 
 Alternatively, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the above except with the following changes:
-- The **consentType** is `AllPrincipal`, indicating that you're consenting on behalf of all users in the tenant.
-- The **principalId** property is not supplied or can be `null`.
+- The **consentType** is `AllPrincipals`, indicating that you're consenting on behalf of all users in the tenant.
+- The **principalId** property isn't supplied or can be `null`.
 An example request body is as follows:
 
 ```msgraph-interactive
@@ -168,13 +168,47 @@ If you granted consent for all users in the tenant, the **consentType** in the a
 
 To confirm the delegated permissions assigned to the service principal, you run the following request.
 
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get-delegated-perms-sp-oauth2permissiongrants"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 'ef969797-201d-4f6b-960c-e9ed5f31dab5'
 ```
 
+### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oauth2PermissionGrants"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants",
+    "value": [
+        {
+            "clientId": "ef969797-201d-4f6b-960c-e9ed5f31dab5",
+            "consentType": "Principal",
+            "id": "l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk",
+            "principalId": "1ed8ac56-4827-4733-8f80-86adc2e67db5",
+            "resourceId": "943603e4-e787-4fe9-93d1-e30f749aae39",
+            "scope": "User.Read.All"
+        }
+    ]
+}
+```
+
 ## Step 4 [Optional]: Grant more delegated permissions to the service principal
 
-In this step, we'll also grant the `AuditLog.Read.All` Microsoft Graph delegated permission to our service principal on behalf of all users in the tenant.
+In this step, we'll grant our app another delegated permission that's exposed by Microsoft Graph, on behalf of only one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
+
+Because we already have a delegated permission grant scoped to principal ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`, resource ID `943603e4-e787-4fe9-93d1-e30f749aae39`, *and* client ID `ef969797-201d-4f6b-960c-e9ed5f31dab5`, we update the existing delegated permission grant using a PATCH request instead of running a new POST request.
+
 <!-- {
   "blockType": "request",
   "name": "grant-delegated-perms-sp-oauth2permissiongrants-patch"
@@ -184,7 +218,7 @@ PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/l5eW7x0ga0-WDOntXz
 Content-Type: application/json
 
 {
-    "scope": "User.Read.All AuditLog.Read.All"
+    "scope": "User.Read.All Group.Read.All"
 }
 ```
 
@@ -207,4 +241,3 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 + [How-To: Grant Microsoft Graph application permissions programmatically](permissions-app-grant-msgraph.md)
 + [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
-+ [appRoleAssignment resource type](/graph/api/resources/approleassignment)
