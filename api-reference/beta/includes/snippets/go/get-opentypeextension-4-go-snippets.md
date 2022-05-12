@@ -11,7 +11,7 @@ groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
 extensionId := "extension-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Get(nil)
+result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Get()
 
 
 ```

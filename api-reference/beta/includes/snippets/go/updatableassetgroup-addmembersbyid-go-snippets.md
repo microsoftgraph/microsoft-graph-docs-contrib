@@ -15,11 +15,8 @@ requestBody.SetIds( []String {
 }
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
 requestBody.SetMemberEntityType(&memberEntityType)
-options := &msgraphsdk.AddMembersByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembersById(updatableAsset-id).Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembersById(updatableAsset-id).Post(requestBody)
 
 
 ```

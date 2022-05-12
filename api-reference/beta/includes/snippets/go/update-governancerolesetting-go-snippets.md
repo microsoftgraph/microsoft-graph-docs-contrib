@@ -15,12 +15,9 @@ requestBody.SetAdminEligibleSettings( []GovernanceRuleSetting {
 		"setting": "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}",
 	}
 }
-options := &msgraphsdk.GovernanceRoleSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
 governanceRoleSettingId := "governanceRoleSetting-id"
-graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(options)
+graphClient.PrivilegedAccessById(&privilegedAccessId).RoleSettingsById(&governanceRoleSettingId).Patch(requestBody)
 
 
 ```

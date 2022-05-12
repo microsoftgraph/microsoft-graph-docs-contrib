@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AllChannelsRequestBuilderGetQueryParameters{
 	Filter: "membershipType%20eq%20'shared'",
 }
-options := &msgraphsdk.AllChannelsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AllChannelsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).AllChannels().Get(options)
+result, err := graphClient.TeamsById(&teamId).AllChannels().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

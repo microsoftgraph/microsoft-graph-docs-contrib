@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewKeyRequestBody()
 key := "key-value"
 requestBody.SetKey(&key)
-options := &msgraphsdk.UploadCertificateRequestBuilderPostOptions{
-	Body: requestBody,
-}
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadCertificate(trustFrameworkKeySet-id).Post(options)
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadCertificate(trustFrameworkKeySet-id).Post(requestBody)
 
 
 ```
