@@ -146,7 +146,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcForensicStorageAccount",
                     "ChangeType": "Addition",
-                    "Description": "Added the cloudPcForensicStorageAccount resource type.",
+                    "Description": "Added the [cloudPcForensicStorageAccount]((https://docs.microsoft.com/en-us/graph/api/resources/cloudpcforensicstorageaccount?view=graph-rest-beta) resource.",
                     "Target": "cloudPcForensicStorageAccount"
                     },
                     {
@@ -154,7 +154,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcSubscription",
                     "ChangeType": "Addition",
-                    "Description": "Added the cloudPcSubscription resource type.",
+                    "Description": "Added the [cloudPcSubscription](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsubscription?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSubscription"
                     },
                     {
@@ -162,7 +162,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getStorageAccounts",
                     "ChangeType": "Addition",
-                    "Description": "Added the getStorageAccounts method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getStorageAccounts](https://docs.microsoft.com/en-us/graph/api/cloudpcsnapshot-getstorageaccounts?view=graph-rest-beta) method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSnapshot"
                     },
                     {
@@ -170,14 +170,14 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getSubscriptions",
                     "ChangeType": "Addition",
-                    "Description": "Added the getSubscriptions method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getSubscriptions](https://docs.microsoft.com/en-us/graph/api/cloudpcsnapshot-getsubscriptions?view=graph-rest-beta) method to the [cloudPcSnapshot](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
                     "Target": "cloudPcSnapshot"
                     }
             ],
             "Id": "112e8692-d578-4f1f-b28a-b2d11dc0a5f3",
             "Cloud": "prd",
             "Version": "beta",
-            "CreatedDateTime": "2021-03-15T1413:07.177Z",
+            "CreatedDateTime": "2021-05-11T1413:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
