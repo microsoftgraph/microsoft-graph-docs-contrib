@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/emailThreats/{emailThreatsId}
+GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{emailThreatsId}
 ```
 
 
