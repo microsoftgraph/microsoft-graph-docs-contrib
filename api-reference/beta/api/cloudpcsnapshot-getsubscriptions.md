@@ -1,6 +1,6 @@
 ---
 title: "cloudPCSnapshot: getSubscriptions"
-description: "List all subscriptions that can be used to store snapshot(s) of a Cloud PC for forensic analysis."
+description: "List all subscriptions that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis."
 author: "xhan2077"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all subscriptions [cloudPcSubscription](../resources/cloudpcsubscription.md) that can be used to store snapshot(s) of a Cloud PC for forensic analysis.
+List all subscriptions [cloudPcSubscription](../resources/cloudpcsubscription.md) that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and zero or more [cloudPcSubscription](../resources/cloudpcsnapshot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and zero or more [cloudPcSubscription](../resources/cloudpcsnapshot.md) objects in the response body.
 
 ## Examples
 
