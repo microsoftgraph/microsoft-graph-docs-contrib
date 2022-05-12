@@ -210,6 +210,11 @@ HTTP/1.1 204 No Content
 - [Update member's role in team](team-update-members.md)
 - [Remove member from team](team-delete-members.md)
 
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
