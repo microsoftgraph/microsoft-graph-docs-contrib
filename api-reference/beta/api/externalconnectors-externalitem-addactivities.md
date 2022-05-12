@@ -1,6 +1,6 @@
 ---
 title: "externalItem: addActivities"
-description: "Append additional instances of externalActivity on an an externalitem."
+description: "Append additional instances of externalActivity on an externalitem."
 author: "sacampbe-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Append additional instances of [microsoft.graph.externalConnectors.externalActivity](../resources/externalconnectors-externalactivity.md) on an an [externalitem](../resources/externalconnectors-externalitem.md).
+Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) on an [externalitem](../resources/externalconnectors-externalitem.md).
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
