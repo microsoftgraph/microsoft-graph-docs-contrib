@@ -10,8 +10,6 @@ doc_type: apiPageType
 # temporaryAccessPassAuthenticationMethodConfiguration resource type
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a Temporary Access Pass authentication methods policy. The Authentication methods policy defines the configuration settings and users or groups who are enabled to use the authentication method.
 
 ## Methods
