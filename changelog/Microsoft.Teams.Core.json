@@ -4985,7 +4985,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "POST",
           "ChangeType": "Addition",
-          "Description": "Enabled support for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0) and [team and channel membership](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0).",
+          "Description": "Enabled support for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
           "Target": "subscription"
         }
       ],
