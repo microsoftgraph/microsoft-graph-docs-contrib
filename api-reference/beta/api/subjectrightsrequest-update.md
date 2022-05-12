@@ -72,8 +72,8 @@ PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRig
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
-  "internalDueDateTime": "2021-08-30T00:00:00Z"
+    "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "internalDueDateTime": "2021-08-30T00:00:00Z"
 }
 ```
 # [C#](#tab/csharp)
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 {
     "displayName": "Updated case name for Diego Siciliani",
-    "description": "This is updated an updated case",
+    "description": "This is an updated case",
     "internalDueDateTime": "2022-07-20T22:42:28Z"
 }
 ```
