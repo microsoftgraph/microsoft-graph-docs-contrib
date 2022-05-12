@@ -107,10 +107,7 @@ onPremisesInfo.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.educationUser",
 }
-options := &msgraphsdk.UsersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Users().Post(options)
+result, err := graphClient.Education().Users().Post(requestBody)
 
 
 ```

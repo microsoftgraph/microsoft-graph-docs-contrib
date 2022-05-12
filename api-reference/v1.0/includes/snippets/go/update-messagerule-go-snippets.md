@@ -14,12 +14,9 @@ actions := msgraphsdk.NewMessageRuleActions()
 requestBody.SetActions(actions)
 markImportance := "high"
 actions.SetMarkImportance(&markImportance)
-options := &msgraphsdk.MessageRuleRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
 messageRuleId := "messageRule-id"
-graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).MessageRulesById(&messageRuleId).Patch(requestBody)
 
 
 ```

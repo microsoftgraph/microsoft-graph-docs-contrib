@@ -147,8 +147,7 @@ Content-type: application/json
             ],
             "condition": null
         }
-    ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
+    ]
 }
 ```
 

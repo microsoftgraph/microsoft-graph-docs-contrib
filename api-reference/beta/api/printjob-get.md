@@ -238,7 +238,6 @@ Content-type: application/json
   "isFetchable": false,
   "configuration": {    
   },
-  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

@@ -176,7 +176,6 @@ Content-Type: application/json
         "displayName": null,
         "id": null
     },
-    "effectiveRules@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/effectiveRules",
     "effectiveRules": [
         {
             "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
@@ -477,7 +476,6 @@ Content-Type: application/json
             }
         }
     ],
-    "rules@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/rules",
     "rules": [
         {
             "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",

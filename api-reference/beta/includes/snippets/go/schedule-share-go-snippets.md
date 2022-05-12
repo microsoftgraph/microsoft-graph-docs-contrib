@@ -14,11 +14,8 @@ startDateTime, err := time.Parse(time.RFC3339, "2018-10-08T00:00:00.000Z")
 requestBody.SetStartDateTime(&startDateTime)
 endDateTime, err := time.Parse(time.RFC3339, "2018-10-15T00:00:00.000Z")
 requestBody.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.ShareRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(options)
+graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(requestBody)
 
 
 ```

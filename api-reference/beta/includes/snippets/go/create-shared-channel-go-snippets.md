@@ -24,11 +24,8 @@ requestBody.SetMembers( []ConversationMember {
 		}
 	}
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

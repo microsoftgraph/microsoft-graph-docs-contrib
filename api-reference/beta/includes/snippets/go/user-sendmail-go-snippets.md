@@ -30,10 +30,7 @@ message.SetCcRecipients( []Recipient {
 }
 saveToSentItems := "false"
 requestBody.SetSaveToSentItems(&saveToSentItems)
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

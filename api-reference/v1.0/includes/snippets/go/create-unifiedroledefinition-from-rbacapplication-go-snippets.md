@@ -22,10 +22,7 @@ requestBody.SetRolePermissions( []UnifiedRolePermission {
 }
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.RoleDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(requestBody)
 
 
 ```
