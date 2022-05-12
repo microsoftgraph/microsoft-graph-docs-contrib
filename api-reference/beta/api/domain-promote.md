@@ -48,7 +48,7 @@ POST /domains/{id}/promote
 
 ## Response
 
-If successful, this method returns `204 No Content` response code with a boolean value of `true`.
+If successful, this method returns `200 OK` response code with a boolean value of `true`.
 
 ## Example
 
@@ -94,10 +94,10 @@ Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.domain"
+  "value": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 Content-type: application/json
 ```
 
