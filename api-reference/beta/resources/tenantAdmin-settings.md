@@ -1,6 +1,6 @@
 ---
 title: "tenant admin settings resource type"
-description:  "Represents the organization settings for SharePoint and OneDrive for Business."
+description:  "Represents the tenant-level settings for SharePoint and OneDrive for Business."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the organization settings for SharePoint and OneDrive for Business.
+Represents the tenant-level settings for SharePoint and OneDrive for Business.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| allowedDomainGuidsForSyncApp                       | GUID collection              | List of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                                 |
-| availableManagedPathsForSiteCreation               | String collection           | Collection that represents the managed paths available for site creation. Read-only.                                                                                                                                 |
-| deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | Represents the number of days for preserving a deleted user's OneDrive.                                                                                                                                       |
-| excludedFileExtensionsForSyncApp                   | String collection            | List of strings representing the file extensions not uploaded by the OneDrive sync app.                                                                                                                                 |
+| allowedDomainGuidsForSyncApp                       | GUID collection              | Collection of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                                 |
+| availableManagedPathsForSiteCreation               | String collection           | Collection of managed paths available for site creation. Read-only.                                                                                                                                 |
+| deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | The number of days for preserving a deleted user's OneDrive.                                                                                                                                       |
+| excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                 |
 | imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant.                                                                                                                                                                      |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates if comments are allowed on modern site pages in SharePoint.                                                                                                                                          |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates if push notifications are enabled for OneDrive events.                                                                                                                                               |
@@ -44,36 +44,39 @@ Inherits from [entity](../resources/entity.md).
 | isSitesStorageLimitAutomatic                       | Boolean                      | Indicates if site storage space is automatically managed or if specific storage limits are set per site.                                                                                                       |
 | isSyncButtonHiddenOnPersonalSite                   | Boolean                      | Indicates if the sync button in OneDrive is hidden.                                                                                                                                                            |
 | isUnmanagedSyncAppForTenantRestricted              | Boolean                      | Indicates if users are allowed to sync files only on PCs joined to specific domains.                                                                                                                           |
-| personalSiteDefaultStorageLimitInMB                | Long                         | Represents the default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                               |
-| sharingAllowedDomainList                           | String collection           | Specifies a list of email domains that is allowed for sharing outside the organization.                                                                                                                                 |
-| sharingBlockedDomainList                           | String collection           | Specifies a list of email domains that is blocked for sharing outside the organization.                                                                                                                                 |
+| personalSiteDefaultStorageLimitInMB                | Long                         | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                               |
+| sharingAllowedDomainList                           | String collection           | Collection of email domains that is allowed for sharing outside the organization.                                                                                                                                 |
+| sharingBlockedDomainList                           | String collection           | Collection of email domains that is blocked for sharing outside the organization.                                                                                                                                 |
 | sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant.                                                                                                                                                                                      |
 | sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains.                                                                                                                                                                        |
-| siteCreationDefaultManagedPath                     | String                       | Represents the value of the team site managed path. This is the path under which new team sites will be created.                                                                                               |
-| siteCreationDefaultStorageLimitInMB                | Int                          | Represents the default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                |
-| tenantDefaultTimezone                              | String                       | The tenant's default timezone for newly created sites.                                                                                                                                                                  |
+| siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                               |
+| siteCreationDefaultStorageLimitInMB                | Int                          | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                |
+| tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites.                                                                                                                                                                  |
 
-### ImageTaggingOption property values
-| Value                           | Description                                                                                                           |
+### imageTaggingOption values
+| Member                          | Description                                                                                                           |
 | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
 | disabled                        | The image tagging option for the tenant is disabled.                                                                  |
 | basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
 | enhanced                        | Allows users to tag images with custom tags and enhanced features.                                                    |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
-### SharingCapabilities property values
-| Value                           | Description                                                                                                           |
+### sharingCapabilities values
+| Member                          | Description                                                                                                           |
 | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
 | disabled                        | Users can share only with people in the organization. No external sharing is allowed.                                 |
 | externalUserSharingOnly         | Users can share with new and existing guests. Guests must sign in or provide a verification code.                     |
 | externalUserAndGuestSharing     | Users can share with anyone by using links that don't require sign-in.                                                |
 | existingExternalUserSharingOnly | Users can share with existing guests (those already in the directory of the organization).                            |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
-### SharingDomainRestrictionMode property values
-| Value                           | Description                                                                                                           |
+### sharingDomainRestrictionMode values
+| Member                          | Description                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | none                            | No restrictions apply.                                                                                                |
 | allowList                       | Users will be able to share with external collaborators coming only from the list of allowed email domains.           |
 | blockList                       | Users will be able to share with all external collaborators apart from the ones on the list of blocked email domains. |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
 ## JSON representation
 The following is a JSON representation of the resource.
