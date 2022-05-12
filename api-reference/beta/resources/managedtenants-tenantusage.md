@@ -19,7 +19,7 @@ Represents the number of monthly active users per service in a managed tenant fo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tenantUsages](../api/managedtenants-managedtenant-list-tenantusage.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Get a list of the [tenantUsage](../resources/managedtenants-tenantusage.md) objects and their properties.|
+|[List tenantUsage](../api/managedtenants-managedtenant-list-tenantusage.md)|[microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md) collection|Gets the [monthly usage data for each service](../resources/managedtenants-tenantusage.md) in a [managed tenant](../resources/managedtenants-managedtenant.md).|
 
 ## Properties
 |Property|Type|Description|
