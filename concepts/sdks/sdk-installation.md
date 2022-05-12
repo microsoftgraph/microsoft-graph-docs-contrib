@@ -96,47 +96,6 @@ npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 
-## Install the Microsoft Graph Objective-C SDK
-
-The Microsoft Graph Objective-C SDK supports both iOS and macOS platforms and can be installed into your project using either CocoaPods or Carthage.
-
-### Install the Microsoft Graph Objective-C SDK using Cocoapods
-
-Add the following line in your podfile to include the Objective-C Microsoft Graph SDK and Microsoft Graph Objective-C Auth SDK in your xcode project:
-
-```ruby
-pod 'MSGraphClientSDK'
-pod 'MSGraphMSALAuthProvider'
-```
-
-### Install the Microsoft Graph Objective-C SDK using Carthage
-
-Perform the following steps to install the Microsoft Graph Objective-C SDK and Microsoft Graph Objective-C Auth SDK using the [Carthage](https://github.com/Carthage/Carthage) package manager.
-
-1. Create a **Cartfile** that specifies the Objective-C SDK GitHub repository and [release tag](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) to target.
-
-    ```text
-    github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
-    github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
-    ```
-
-1. Run `carthage update`. This will fetch dependencies into a Carthage/Checkouts folder and then builds the MSGraphClientSDK library.
-
-1. Using Xcode, in your application target's **General** settings tab, in the **Linked Frameworks and Libraries** section, drag and drop the **MSGraphClientSDK.framework** and **MSGraphMSALAuthProvider.framework** from the Carthage/Build folder on disk.
-
-1. On your application target's **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a run script in which you specify your shell (ex: /bin/sh), and add the following contents to the script:
-
-    ```Shell
-    /usr/local/bin/carthage copy-frameworks
-    ```
-
-1. Add the paths to the frameworks you want to use under **Input Files**.
-
-    ```Shell
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
-    $(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
-    ```
-
 ## Install the Microsoft Graph PHP SDK
 
 The [Microsoft Graph PHP SDK](https://github.com/microsoftgraph/msgraph-sdk-php) is available from [packagist.org](https://packagist.org/packages/microsoft/microsoft-graph) and can be installed in the following ways:
@@ -157,14 +116,17 @@ composer require microsoft/microsoft-graph
 }
 ```
 
-## Install the Microsoft PowerShell SDK
+## Install the Microsoft Graph PowerShell SDK
 
 See [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md).
 
-## Install the Microsoft Graph Ruby SDK
+## Install the Microsoft Graph Python SDK (preview)
 
-The [Microsoft Graph Ruby SDK](https://github.com/microsoftgraph/msgraph-sdk-ruby) is available from [rubygems.org](https://rubygems.org/) and can be installed using the following command:
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```ruby
-gem install microsoft_graph
+The [Microsoft Graph Core Python Client Library (preview)](https://github.com/microsoftgraph/msgraph-sdk-python-core) is available on [PyPI](https://pypi.org/).
+
+```Shell
+python -m pip install msgraph-core
+python -m pip install azure-identity
 ```
