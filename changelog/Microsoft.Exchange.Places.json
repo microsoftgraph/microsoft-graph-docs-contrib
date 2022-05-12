@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "f685e2e7-e767-4dc2-b668-3516e9ccf8d5",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "workspaces",
           "ChangeType": "Addition",
           "Description": "Added the **workspaces** relationship to the [roomList](https://docs.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-beta) resource.",
