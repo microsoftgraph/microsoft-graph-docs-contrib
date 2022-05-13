@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ThreatSubmission.ReadWrite,ThreatSubmission.ReadWrite.All|
+|Delegated (personal Microsoft account)|N/A|
+|Application|ThreatSubmission.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /fileThreats
+POST /security/threatSubmission/fileThreats
 ```
 
 ## Request headers
@@ -40,25 +40,7 @@ POST /fileThreats
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.
-
-You can specify the following properties when creating a **fileThreatSubmission**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|contentType|submissionContentType|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `email`, `url`, `file`, `app`, `unknownFutureValue`. Optional.|
-|category|submissionCategory|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Required.|
-|source|submissionSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `user`, `administrator`, `unknownFutureValue`. Optional.|
-|createdBy|[microsoft.graph.security.submissionUserIdentity](../resources/security-submissionuseridentity.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|status|longRunningOperationStatus|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Optional.|
-|result|[microsoft.graph.security.submissionResult](../resources/security-submissionresult.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|adminReview|[microsoft.graph.security.submissionAdminReview](../resources/security-submissionadminreview.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|clientSource|submissionClientSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `microsoft`, `other`, `unknownFutureValue`. Optional.|
-|fileName|String|**TODO: Add Description** Required.|
-
-
+In the request body, supply a JSON representation of the [fileContentThreatSubmission](../resources/security-filecontentthreatsubmission.md) object. The [fileUrlContentThreatSubmission](../resources/security-fileurlthreatsubmission.md) is reserved and not supported by now.
 
 ## Response
 
@@ -74,28 +56,14 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/fileThreats
-Content-Type: application/json
-Content-length: 523
+POST https://graph.microsoft.com/beta/security/threatSubmission/fileThreatSubmissions
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.fileThreatSubmission",
-  "tenantId": "String",
-  "contentType": "String",
-  "category": "String",
-  "source": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.security.submissionUserIdentity"
-  },
-  "status": "String",
-  "result": {
-    "@odata.type": "microsoft.graph.security.submissionResult"
-  },
-  "adminReview": {
-    "@odata.type": "microsoft.graph.security.submissionAdminReview"
-  },
-  "clientSource": "String",
-  "fileName": "String"
+  "@odata.type": "#microsoft.graph.fileContentThreatSubmission",
+  "category": "malware",
+  "fileName": "test.html",
+  "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
 
@@ -111,28 +79,31 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.fileThreatSubmission",
-  "id": "7113d48a-8acc-ac7d-8735-2629157f3b57",
-  "tenantId": "String",
-  "createdDateTime": "String (timestamp)",
-  "contentType": "String",
-  "category": "String",
-  "source": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/fileThreatSubmission/$entity",
+  "@odata.type": "#microsoft.graph.fileThreatSubmission",
+  "category": "malware",
+  "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
+  "createdDateTime": "2021-10-10T03:30:18.6890937Z",
+  "contentType": "file",
+  "fileName": "test.html",
+  "status": "running",
+  "source": "administrator",
   "createdBy": {
-    "@odata.type": "microsoft.graph.security.submissionUserIdentity"
+    "user": {
+      "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
+      "displayName": "Ronald Admin",
+      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+    }
   },
-  "status": "String",
   "result": {
-    "@odata.type": "microsoft.graph.security.submissionResult"
+  	"detail": "underInvestigation"
+  	...
   },
-  "adminReview": {
-    "@odata.type": "microsoft.graph.security.submissionAdminReview"
-  },
-  "clientSource": "String",
-  "fileName": "String"
+  "adminReview": null,
+  "tenantId" : "39238e87-b5ab-4ef6-a559-af54c6b07b42"
 }
 ```
 
