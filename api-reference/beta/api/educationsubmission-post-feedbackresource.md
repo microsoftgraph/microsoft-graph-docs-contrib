@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_educationfeedbackresourceoutcome"
+  "name": "create_educationFeedbackResourceOutcome"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions/2185e6d7-2924-4ed1-dde1-269f89e29184/outcomes
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 Content-type: application/json
 
 { 
-    "@odata.type": "#microsoft.graph.educationfeedbackResourceOutcome",
+    "@odata.type": "#microsoft.graph.educationFeedbackResourceOutcome",
     "feedbackResource": {
          "@odata.type": "#microsoft.graph.educationWordResource",
          "displayName": "Document1.docx"
