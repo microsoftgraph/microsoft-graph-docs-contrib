@@ -46,19 +46,20 @@ You can specify the following properties when creating an **emailThreatSubmissio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isReportToMicrosoftEnabled|Boolean|**TODO: Add Description** Required.|
-|isReportToCustomizedEmailAddressEnabled|Boolean|**TODO: Add Description** Required.|
-|isAskMeEnabledForUsers|Boolean|**TODO: Add Description** Required.|
-|isAlwaysReportEnabledForUsers|Boolean|**TODO: Add Description** Required.|
-|isNeverReportEnabledForUsers|Boolean|**TODO: Add Description** Required.|
-|isCustomizedMessageEnabledForPhishing|Boolean|**TODO: Add Description** Required.|
-|isCustomizedMessageEnabled|Boolean|**TODO: Add Description** Required.|
-|customizedReportRecipientEmailAddress|String|**TODO: Add Description** Required.|
-|isReviewEmailNotificationEnabled|Boolean|**TODO: Add Description** Required.|
-|isCustomizedNotificationSenderEnabled|Boolean|**TODO: Add Description** Required.|
-|isOrganizationBrandingEnabled|Boolean|**TODO: Add Description** Required.|
-|customizedNotificationSenderEmailAddress|String|**TODO: Add Description** Required.|
-|isReportFromQuarantineEnabled|Boolean|**TODO: Add Description** Required.|
+| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to microsoft for analysis.                              |
+| isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
+| isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
+| isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              |
+| isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               |
+| isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              |
+| isCustomizedMessageEnabled               | Boolean | If enabled, customized message is enabled.                                                 |
+| customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 |
+| isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
+| isCustomizedNotificationSenderEnabled    | Boolean | If enabled, notificationSenderAddress is used by review notification email.                |
+| isOrganizationBrandingEnabled            | Boolean | If enabled, tenant branding logo will be used in review notification message.              |
+| customizedNotificationSenderEmailAddress | String  | Customized notification sender address for review notification message.                    |
+| isReportFromQuarantineEnabled            | Boolean | If enabled, submission could be created from security portal quarantine page.              |
+
 
 
 
