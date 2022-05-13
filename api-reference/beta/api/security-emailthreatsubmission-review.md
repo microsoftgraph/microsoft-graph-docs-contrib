@@ -64,12 +64,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/emailThreats/{emailThreatsId}/review
-Content-Type: application/json
-Content-length: 28
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/49c5ef5b-1f65-444a-e6b9-08d772ea2059/review
+Content-type: application/json
 
 {
-  "category": "String"
+  "category": "phishing"
 }
 ```
 
