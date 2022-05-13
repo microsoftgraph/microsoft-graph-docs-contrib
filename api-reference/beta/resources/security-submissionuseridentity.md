@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Threat submission user identity.
 
 
-Inherits from [identity](../resources/intune-identity.md).
+Inherits from graph.identity.
 
 ## Properties
 | Property    | Type   | Description                                                                                                    | Required |
