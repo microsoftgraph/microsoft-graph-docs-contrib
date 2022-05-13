@@ -28,7 +28,7 @@ None.
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
 |securityactions|[securityAction](../resources/securityaction.md)|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
-|threatSubmission|[threatSubmissionRoot](../resources/security-threatsubmissionroot.md)|Threat submission sent to Microsoft which could be suspicious email threat, url threat, file threat etc.|
+|threatSubmission|[threatSubmissionRoot](../resources/security-threatsubmission.md)|Threat submission sent to Microsoft which could be suspicious email threat, url threat, file threat etc.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
