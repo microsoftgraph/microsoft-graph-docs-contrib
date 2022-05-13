@@ -50,22 +50,22 @@ You can't use Postman for the web without this due to CORS restrictions in the w
 
 To use this collection in your own developer tenant, create an Azure Active Directory (Azure AD) application and give it the appropriate permissions for the requests that you want to call.
 
-1. Go to [portal.azure.com](https://portal.azure.com/) and **Sign in** with your developer tenant administrator account.
-2. Under Azure Services, select **Azure Active Directory**.
+1. Go to [portal.azure.com](https://portal.azure.com/) and sign in with your developer tenant administrator account.
+2. Under **Azure Services**, select **Azure Active Directory**.
 3. On the left menu, select **App registrations**.
 4. On the horizontal menu, select **New registration**.
-5. Set the Application name to "Parts Inventory".
+5. Set the Application name to `Parts Inventory`.
 6. Set the Redirect URI to https://oauth.pstmn.io/v1/browser-callback.
 7. Select **Register**.
 8. On the left menu, select **API Permissions**.
-9. In the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions**.
+9. On the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions**.
 10. Start typing `ExternalItem.ReadWrite.All` and select `ExternalItem.ReadWrite.All`.
-11. Select **Application permissions**, type "User", and select **Application Permissions**.
-12. Expand the **User options** and select **`ExternalItem.ReadWrite.All`**.
+11. Select **Application permissions**, type `User`, and then select **Application Permissions**.
+12. Expand the **User** options, and then select `ExternalItem.ReadWrite.All`.
 13. Select **Add permissions**.
-14. In the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
-15. In the left menu, select **Overview**. From here, you can get the application (client) ID and directory (tenant) ID. You'll need these in step 4.
-16. In the left menu, select **Certificates and secrets**.
+14. On the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
+15. On the left menu, select **Overview**. From here, you can get the **application (client) ID** and **directory (tenant) ID**. You'll need these in step 4.
+16. On the left menu, select **Certificates and secrets**.
 17. Select **New client secret**, enter a description, and then select **Add**. Copy the new client secret value; you'll need this in step 4.
 
 The Azure AD application now has permissions to make requests on behalf of a user to call `ExternalItem.ReadWrite.All`, and as an application for `ExternalItem.ReadWrite.All`.
@@ -268,7 +268,7 @@ After the connection state changes from **draft** to **ready**, you can ingest i
 
 ## Step 8: Add external group member (optional)
 
-If your external service uses non-Azure AD ACLs, sync those permissions.  
+If your external service uses non-Azure AD access control lists (ACLs), sync those permissions.  
 
 External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
 
@@ -306,7 +306,7 @@ After you create a connection, you can add your content. Each item from your dat
 
 If you have binary files, you must parse to get the metadata and a text version of the content. If you have non-text content such as a PDF or BMP file, you must use object character recognition to convert content to text.  
 
-You are responsible for converting your source permissions to grant or deny. Deny takes higher precedence over grant.
+You are responsible for converting your source permissions to `grant` or `deny`. `Deny` takes higher precedence over `grant`.
 
 The following is an example of a request.
 
@@ -351,3 +351,7 @@ HTTP/1.1 200 OK
 ## Error handling
 
 For details about how to resolve errors, see [Resolve Microsoft Graph authorization errors](/graph/resolve-auth-errors).
+
+## See also
+
+- [Use Postman with the Microsoft Graph API](use-postman.md)
