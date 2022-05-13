@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRole objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # List privilegedRoles
