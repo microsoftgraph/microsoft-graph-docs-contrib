@@ -25,7 +25,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|deletedTeam|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 

@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teamwork/deletedTeam/{deletedTeamId}/getAllMessages
+GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages
 ```
 
 ## Request headers
@@ -50,8 +50,8 @@ as shown in the following examples.
 If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
-GET /teamwork/deletedTeam/{deletedTeamId}/getAllMessages?model=A
-GET /teamwork/deletedTeam/{deletedTeamId}/getAllMessages?model=B
+GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=A
+GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=B
 ```
 If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
 
@@ -75,7 +75,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teamwork/deletedTeam({deletedTeamId})/getAllMessages
+GET https://graph.microsoft.com/beta/teamwork/deletedTeams({deletedTeamId})/channels/getAllMessages
 ```
 
 
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(chatMessage)",
     "@odata.count": 2,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/teamwork/deletedTeam/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/getAllMessages",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages",
     "value": [
         {
             "@odata.type": "#microsoft.graph.chatMessage",
