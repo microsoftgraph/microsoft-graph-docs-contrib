@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for [listing a user's chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) in application-only context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
           "ApiChange": "Relationship",
           "ChangedApiName": "replies",
