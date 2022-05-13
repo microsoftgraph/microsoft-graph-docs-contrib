@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ThreatSubmission.ReadWrite,ThreatSubmission.ReadWrite.All|
+|Delegated (personal Microsoft account)|N/A|
+|Application|ThreatSubmission.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /urlThreats
+POST /security/threatSubmission/urlThreats
 ```
 
 ## Request headers
@@ -46,17 +46,8 @@ You can specify the following properties when creating an **urlThreatSubmission*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|contentType|submissionContentType|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `email`, `url`, `file`, `app`, `unknownFutureValue`. Optional.|
-|category|submissionCategory|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Required.|
-|source|submissionSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `user`, `administrator`, `unknownFutureValue`. Optional.|
-|createdBy|[microsoft.graph.security.submissionUserIdentity](../resources/security-submissionuseridentity.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|status|longRunningOperationStatus|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Optional.|
-|result|[microsoft.graph.security.submissionResult](../resources/security-submissionresult.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|adminReview|[microsoft.graph.security.submissionAdminReview](../resources/security-submissionadminreview.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|clientSource|submissionClientSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `microsoft`, `other`, `unknownFutureValue`. Optional.|
-|webUrl|String|**TODO: Add Description** Required.|
+|category|submissionCategory|Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Required.|
+|webUrl|String|The webUrl to be submitted. Required.|
 
 
 
@@ -74,27 +65,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/urlThreats
+POST https://graph.microsoft.com/beta/security/threatSubmission/urlThreats
 Content-Type: application/json
 Content-length: 520
 
 {
   "@odata.type": "#microsoft.graph.security.urlThreatSubmission",
-  "tenantId": "String",
-  "contentType": "String",
   "category": "String",
-  "source": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.security.submissionUserIdentity"
-  },
-  "status": "String",
-  "result": {
-    "@odata.type": "microsoft.graph.security.submissionResult"
-  },
-  "adminReview": {
-    "@odata.type": "microsoft.graph.security.submissionAdminReview"
-  },
-  "clientSource": "String",
   "webUrl": "String"
 }
 ```
