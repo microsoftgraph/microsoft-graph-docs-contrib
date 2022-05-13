@@ -77,25 +77,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies
-Content-Type: application/json
-Content-length: 721
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailthreatSubmissionPolicies
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmissionPolicy",
-  "isReportToMicrosoftEnabled": "Boolean",
-  "isReportToCustomizedEmailAddressEnabled": "Boolean",
-  "isAskMeEnabledForUsers": "Boolean",
-  "isAlwaysReportEnabledForUsers": "Boolean",
-  "isNeverReportEnabledForUsers": "Boolean",
-  "isCustomizedMessageEnabledForPhishing": "Boolean",
-  "isCustomizedMessageEnabled": "Boolean",
-  "customizedReportRecipientEmailAddress": "String",
-  "isReviewEmailNotificationEnabled": "Boolean",
-  "isCustomizedNotificationSenderEnabled": "Boolean",
-  "isOrganizationBrandingEnabled": "Boolean",
-  "customizedNotificationSenderEmailAddress": "String",
-  "isReportFromQuarantineEnabled": "Boolean"
+  "isReportToMicrosoftEnabled": true
 }
 ```
 
@@ -114,21 +100,21 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmissionPolicy",
-  "id": "3df67ecc-11b4-b5b4-9bae-b0729940b3d1",
-  "isReportToMicrosoftEnabled": "Boolean",
-  "isReportToCustomizedEmailAddressEnabled": "Boolean",
-  "isAskMeEnabledForUsers": "Boolean",
-  "isAlwaysReportEnabledForUsers": "Boolean",
-  "isNeverReportEnabledForUsers": "Boolean",
-  "isCustomizedMessageEnabledForPhishing": "Boolean",
-  "isCustomizedMessageEnabled": "Boolean",
-  "customizedReportRecipientEmailAddress": "String",
-  "isReviewEmailNotificationEnabled": "Boolean",
-  "isCustomizedNotificationSenderEnabled": "Boolean",
-  "isOrganizationBrandingEnabled": "Boolean",
-  "customizedNotificationSenderEmailAddress": "String",
-  "isReportFromQuarantineEnabled": "Boolean"
+  "@odata.type": "#microsoft.graph.emailThreatSubmissionPolicy",
+  "id": "DefaultReportSubmissionPolicy",
+  "isReportToMicrosoftEnabled": true,
+  "isReportToCustomizedEmailAddressEnabled": false,
+  "isAskMeEnabledForUsers": true,
+  "isAlwaysReportEnabledForUsers": true,
+  "isNeverReportEnabledForUsers": true,
+  "isCustomizedMessageEnabledForPhishing": false,
+  "isCustomizedMessageEnabled": false,
+  "customizedReportRecipientEmailAddress": null,
+  "isReviewEmailNotificationEnabled": false,
+  "isCustomNotificationSenderEnabled": false,
+  "isOrganizationBrandingEnabled": false,
+  "customizedNotificationSenderEmailAddress": null,
+  "isReportFromQuarantineEnabled": false
 }
 ```
 
