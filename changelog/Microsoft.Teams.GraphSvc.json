@@ -433,7 +433,7 @@
     {
       "ChangeList": [
         {
-          "Id": "28de5067-b5dc-421b-86eb-28993c73f4ba",
+          "Id": "470bfc69-959d-449d-9cbe-82d0c5b7ca4d",
           "ApiChange": "Resource",
           "ChangedApiName": "deletedTeam",
           "ChangeType": "Addition",
@@ -441,15 +441,15 @@
           "Target": "deletedTeam"
         },
         {
-          "Id": "28de5067-b5dc-421b-86eb-28993c73f4ba",
+          "Id": "470bfc69-959d-449d-9cbe-82d0c5b7ca4d",
           "ApiChange": "Resource",
-          "ChangedApiName": "deletedTeam",
+          "ChangedApiName": "deletedTeams",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedTeam** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the **deletedTeams** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
         },
         {
-          "Id": "28de5067-b5dc-421b-86eb-28993c73f4ba",
+          "Id": "470bfc69-959d-449d-9cbe-82d0c5b7ca4d",
           "ApiChange": "Method",
           "ChangedApiName": "getAllMessages",
           "ChangeType": "Addition",
@@ -457,10 +457,10 @@
           "Target": "getAllMessages"
         }
       ],
-      "Id": "28de5067-b5dc-421b-86eb-28993c73f4ba",
+      "Id": "470bfc69-959d-449d-9cbe-82d0c5b7ca4d",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-04-25T19:06:44.1592157Z",
+      "CreatedDateTime": "2022-05-12T23:33:30.8696124Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Microsoft.Teams.Shifts"
     }
