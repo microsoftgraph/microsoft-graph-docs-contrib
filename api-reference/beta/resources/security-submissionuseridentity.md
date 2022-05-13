@@ -1,6 +1,6 @@
 ---
 title: "submissionUserIdentity resource type"
-description: "**TODO: Add Description**"
+description: "threat submission user identity"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,17 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Threat submission user identity.
 
 
 Inherits from [identity](../resources/intune-identity.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [identity](../resources/intune-identity.md).|
-|email|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [identity](../resources/intune-identity.md).|
+| Property    | Type   | Description                                                                                                    | Required |
+|:------------|:-------|:---------------------------------------------------------------------------------------------------------------|:---------|
+| id    | String | The field inherits from graph.identity.  | ✔        |
+| displayName | String | The field inherits from graph.identity.                                                                 | ✔        |
+| email       | String | The email of submission user for delegated token case.                                                         | ❌        |
 
 ## Relationships
 None.
