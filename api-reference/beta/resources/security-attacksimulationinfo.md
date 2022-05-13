@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationInfo resource type"
-description: "**TODO: Add Description**"
+description: "threat submission attack simulation info"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+If one email is attack simulation email, the email threat submission will contain attack simulation information.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|attackSimDateTime|DateTimeOffset|**TODO: Add Description**|
-|attackSimDurationTime|Duration|**TODO: Add Description**|
-|attackSimId|Guid|**TODO: Add Description**|
-|attackSimUserId|String|**TODO: Add Description**|
+| Property              | Type           | Description                          | Required |
+|:----------------------|:---------------|:-------------------------------------|:---------|
+| attackSimId           | Guid           | The attack simulation activity id.   | ✔        |
+| attackSimDateTime     | DateTimeOffset | The attack simulation date time.     | ✔        |
+| attackSimDurationTime | Duration       | The attack simulation duration time. | ✔        |
+| attackSimUserId       | String         | The attack simulation user id.       | ✔        |
 
 ## Relationships
 None.
