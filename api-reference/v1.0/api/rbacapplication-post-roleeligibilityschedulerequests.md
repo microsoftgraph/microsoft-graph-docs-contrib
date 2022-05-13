@@ -1,5 +1,5 @@
 ---
-title: "Create unifiedRoleEligibilityScheduleRequest"
+title: "Create roleEligibilityScheduleRequest"
 description: "In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleEligibilityScheduleRequest
+# Create roleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
 In PIM, request for a role eligibility for a principal through the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object. This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
