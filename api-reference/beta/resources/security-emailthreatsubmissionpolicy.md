@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmissionPolicy resource type"
-description: "**TODO: Add Description**"
+description: "email threat submission policy"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
