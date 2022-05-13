@@ -38,10 +38,7 @@ forceChangePasswordNextSignIn := false
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
 passwordPolicies := "DisablePasswordExpiration"
 requestBody.SetPasswordPolicies(&passwordPolicies)
-options := &msgraphsdk.UsersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Users().Post(options)
+result, err := graphClient.Users().Post(requestBody)
 
 
 ```

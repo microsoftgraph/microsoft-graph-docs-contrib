@@ -38,8 +38,50 @@
       "Id": "a673cdb1-b8a3-4de7-bae3-188e3b9f5b53",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-03-04T07:58:02.8273321Z",
+      "CreatedDateTime": "2022-05-13T07:58:02.8273321Z",
       "WorkloadArea": "Devices and apps",
+      "SubArea": "Multi-tenant management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceUsage](https://docs.microsoft.com/graph/api/resources/managedtenants-serviceUsage?view=graph-rest-beta) resource.",
+          "Target": "serviceUsage"
+        },
+        {
+          "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantUsage](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-tenantUsage?view=graph-rest-beta) resource.",
+          "Target": "tenantUsage"
+        },
+        {
+          "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantUsage** navigation property to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list tenantUsage](https://docs.microsoft.com/en-us/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta) operation to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-managedtenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        }
+      ],
+      "Id": "89642509-d737-44ab-87b2-fe2c0925b8b3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-12T21:39:51.5037621Z",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Multi-tenant management"
     },
     {
@@ -197,7 +239,6 @@
           "ApiChange": "Resource",
           "ChangedApiName": "windowsProtectionState",
           "ChangeType": "Addition",
-          "Description": "Added the [windowsProtectionState](https://docs.microsoft.com/en-us/graph/api/resources/windowsProtectionState?view=graph-rest-1.0) resource type.",
           "Description": "Added the [windowsProtectionState](https://docs.microsoft.com/en-us/graph/api/resources/managedtenants-windowsProtectionState?view=graph-rest-beta) resource type.",
           "Target": "windowsProtectionState"
         },

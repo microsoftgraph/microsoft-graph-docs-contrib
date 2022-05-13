@@ -20,11 +20,8 @@ requestBody.SetMembers( []TeamworkTagMember {
 		"userId": "085d800c-b86b-4bfc-a857-9371ad1caf29",
 	}
 }
-options := &msgraphsdk.TagsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Tags().Post(options)
+result, err := graphClient.TeamsById(&teamId).Tags().Post(requestBody)
 
 
 ```

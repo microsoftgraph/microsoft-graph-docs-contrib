@@ -14,12 +14,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.aadUserConversationMember",
 	"user@odata.bind": "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Members().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Members().Post(requestBody)
 
 
 ```

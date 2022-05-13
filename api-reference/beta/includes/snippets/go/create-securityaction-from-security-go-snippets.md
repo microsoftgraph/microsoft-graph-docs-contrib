@@ -25,10 +25,7 @@ provider := "Windows Defender ATP"
 vendorInformation.SetProvider(&provider)
 vendor := "Microsoft"
 vendorInformation.SetVendor(&vendor)
-options := &msgraphsdk.SecurityActionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Security().SecurityActions().Post(options)
+result, err := graphClient.Security().SecurityActions().Post(requestBody)
 
 
 ```

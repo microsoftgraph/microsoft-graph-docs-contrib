@@ -16,11 +16,8 @@ activity := "Available"
 requestBody.SetActivity(&activity)
 expirationDuration := "PT1H"
 requestBody.SetExpirationDuration(&expirationDuration)
-options := &msgraphsdk.SetPresenceRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetPresence(user-id).Post(options)
+graphClient.UsersById(&userId).Presence().SetPresence(user-id).Post(requestBody)
 
 
 ```

@@ -13,11 +13,11 @@ requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"Prefer": "return=minimal"
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.Contacts().Delta()().Get(options)
+result, err := graphClient.Contacts().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

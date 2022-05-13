@@ -245,7 +245,7 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 ### Owner must be specified when updating a schemaExtension definition using Microsoft Graph Explorer
 
-When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
 
 ### Filtering on schema extension properties is not supported on all entity types
 
@@ -413,7 +413,7 @@ The following API calls do not support installing apps that require [resource-sp
 
 ### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
 The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
-```
+```http
 GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 {
     "error": {
