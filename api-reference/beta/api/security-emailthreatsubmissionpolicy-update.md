@@ -63,7 +63,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -75,25 +75,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
-Content-Type: application/json
-Content-length: 721
+PATCH https://graph.microsoft.com/beta/security/threatSubmission/emailthreatSubmissionPolicies/DefaultReportSubmissionPolicy
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmissionPolicy",
-  "isReportToMicrosoftEnabled": "Boolean",
-  "isReportToCustomizedEmailAddressEnabled": "Boolean",
-  "isAskMeEnabledForUsers": "Boolean",
-  "isAlwaysReportEnabledForUsers": "Boolean",
-  "isNeverReportEnabledForUsers": "Boolean",
-  "isCustomizedMessageEnabledForPhishing": "Boolean",
-  "isCustomizedMessageEnabled": "Boolean",
-  "customizedReportRecipientEmailAddress": "String",
-  "isReviewEmailNotificationEnabled": "Boolean",
-  "isCustomizedNotificationSenderEnabled": "Boolean",
-  "isOrganizationBrandingEnabled": "Boolean",
-  "customizedNotificationSenderEmailAddress": "String",
-  "isReportFromQuarantineEnabled": "Boolean"
+  "isReportToMicrosoftEnabled": false
 }
 ```
 
@@ -107,25 +93,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmissionPolicy",
-  "id": "3df67ecc-11b4-b5b4-9bae-b0729940b3d1",
-  "isReportToMicrosoftEnabled": "Boolean",
-  "isReportToCustomizedEmailAddressEnabled": "Boolean",
-  "isAskMeEnabledForUsers": "Boolean",
-  "isAlwaysReportEnabledForUsers": "Boolean",
-  "isNeverReportEnabledForUsers": "Boolean",
-  "isCustomizedMessageEnabledForPhishing": "Boolean",
-  "isCustomizedMessageEnabled": "Boolean",
-  "customizedReportRecipientEmailAddress": "String",
-  "isReviewEmailNotificationEnabled": "Boolean",
-  "isCustomizedNotificationSenderEnabled": "Boolean",
-  "isOrganizationBrandingEnabled": "Boolean",
-  "customizedNotificationSenderEmailAddress": "String",
-  "isReportFromQuarantineEnabled": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
 
