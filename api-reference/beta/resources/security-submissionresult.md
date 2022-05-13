@@ -1,6 +1,6 @@
 ---
 title: "submissionResult resource type"
-description: "**TODO: Add Description**"
+description: "threat submission result"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -16,13 +16,15 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|category|submissionResultCategory|**TODO: Add Description**.The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable`, `unknownFutureValue`.|
-|detail|submissionResultDetail|**TODO: Add Description**.The possible values are: `none`, `underInvestigation`, `simulatedThreat`, `allowedBySecOps`, `allowedByThirdPartyFilters`, `messageNotFound`, `urlFileShouldNotBeBlocked`, `urlFileShouldBeBlocked`, `urlFileCannotMakeDecision`, `domainImpersonation`, `userImpersonation`, `brandImpersonation`, `outboundShouldNotBeBlocked`, `outboundShouldBeBlocked`, `outboundBulk`, `outboundCannotMakeDecision`, `outboundNotRescanned`, `zeroHourAutoPurgeAllowed`, `zeroHourAutoPurgeBlocked`, `zeroHourAutoPurgeQuarantineReleased`, `onPremisesSkip`, `allowedByTenantAllowBlockList`, `blockedByTenantAllowBlockList`, `allowedUrlByTenantAllowBlockList`, `allowedFileByTenantAllowBlockList`, `allowedSenderByTenantAllowBlockList`, `allowedRecipientByTenantAllowBlockList`, `blockedUrlByTenantAllowBlockList`, `blockedFileByTenantAllowBlockList`, `blockedSenderByTenantAllowBlockList`, `blockedRecipientByTenantAllowBlockList`, `allowedByConnection`, `blockedByConnection`, `allowedByExchangeTransportRule`, `blockedByExchangeTransportRule`, `quarantineReleased`, `quarantineReleasedThenBlocked`, `junkMailRuleDisabled`, `allowedByUserSetting`, `blockedByUserSetting`, `allowedByTenant`, `blockedByTenant`, `invalidFalsePositive`, `invalidFalseNegative`, `spoofBlocked`, `goodReclassifiedAsBad`, `goodReclassifiedAsBulk`, `goodReclassifiedAsGood`, `goodReclassifiedAsCannotMakeDecision`, `badReclassifiedAsGood`, `badReclassifiedAsBulk`, `badReclassifiedAsBad`, `badReclassifiedAsCannotMakeDecision`, `unknownFutureValue`.|
-|detectedFiles|[microsoft.graph.security.submissionDetectedFile](../resources/security-submissiondetectedfile.md) collection|**TODO: Add Description**|
-|detectedUrls|String collection|**TODO: Add Description**|
-|userMailboxSetting|userMailboxSetting|**TODO: Add Description**.The possible values are: `none`, `junkMailDeletion`, `isFromAddressInAddressBook`, `isFromAddressInAddressSafeList`, `isFromAddressInAddressBlockList`, `isFromAddressInAddressImplicitSafeList`, `isFromAddressInAddressImplicitJunkList`, `isFromDomainInDomainSafeList`, `isFromDomainInDomainBlockList`, `isRecipientInRecipientSafeList`, `customRule`, `junkMailRule`, `senderPraPresent`, `fromFirstTimeSender`, `exclusive`, `priorSeenPass`, `senderAuthenticationSucceeded`, `isJunkMailRuleEnabled`, `unknownFutureValue`.|
+| Property           | Type                               | Description                                                             | Required |
+|:-------------------|:-----------------------------------|:------------------------------------------------------------------------|:---------|
+| category           | submissionResultCategory           | The submission result category.                                         | ✔        |
+| detail             | submissionResultDetail             | The submission result detail.                                           | ✔        |
+| policyType         | submissionPolicyType               | The submission policy type.                                             | ❌        |
+| policyId           | String                             | The policy id for policy hit email submission.                          | ❌        |
+| userMailboxSetting | userMailBoxSetting                 | The user mailbox setting flag string which is a comma separated string. | ❌        |
+| detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  | ❌        |
+| detectedFiles      | Collection(submissionDetectedFile) | Detected files in the email submission.                                 | ❌        |
 
 ## Relationships
 None.
