@@ -83,7 +83,7 @@ Content-Type: application/json
             "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
             "createdDateTime": "2021-10-10T03:30:18.6890937Z",
             "contentType": "email",
-            "emailSubject": "This is a spam"
+            "emailSubject": "This is a spam",
             "status": "succeeded",
             "source": "administrator",
             "createdBy": {
