@@ -9,6 +9,8 @@ ms.prod: search
 
 # Use Postman with the Microsoft Graph connectors API
 
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so that you can create better APIs faster.
+
 This article describes how you can use the Microsoft Graph connector APIs with Postman.
 
 ## Prerequisites
