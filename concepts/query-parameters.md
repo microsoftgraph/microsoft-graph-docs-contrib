@@ -14,7 +14,7 @@ Microsoft Graph supports optional query parameters that you can use to specify a
 > On the beta endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
 > On the v1 endpoint, the `$` prefix is optional for only a subset of APIs. For simplicity, always include `$` if using the v1 endpoint.
 
-Query parameters can be OData system query options or other query parameters. 
+Query parameters can be [OData system query options](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) or other query parameters.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
