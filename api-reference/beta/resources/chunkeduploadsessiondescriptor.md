@@ -1,6 +1,6 @@
 ---
 title: "chunkedUploadSessionDescriptor resource type"
-description: "Here is a JSON representation of the chunkedUploadSessionDescriptor resource"
+description: "chunkedUploadSessionDescriptor resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: non-product-specific
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
