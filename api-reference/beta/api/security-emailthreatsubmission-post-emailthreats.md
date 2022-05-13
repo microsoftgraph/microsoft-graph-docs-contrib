@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /emailThreats
+POST /security/threatSubmission/emailThreats
 ```
 
 ## Request headers
@@ -40,33 +40,7 @@ POST /emailThreats
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.
-
-You can specify the following properties when creating an **emailThreatSubmission**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|tenantId|String|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|contentType|submissionContentType|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `email`, `url`, `file`, `app`, `unknownFutureValue`. Optional.|
-|category|submissionCategory|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Required.|
-|source|submissionSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `user`, `administrator`, `unknownFutureValue`. Optional.|
-|createdBy|[microsoft.graph.security.submissionUserIdentity](../resources/security-submissionuseridentity.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|status|longRunningOperationStatus|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Optional.|
-|result|[microsoft.graph.security.submissionResult](../resources/security-submissionresult.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|adminReview|[microsoft.graph.security.submissionAdminReview](../resources/security-submissionadminreview.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). Optional.|
-|clientSource|submissionClientSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `microsoft`, `other`, `unknownFutureValue`. Optional.|
-|recipientEmailAddress|String|**TODO: Add Description** Required.|
-|internetMessageId|String|**TODO: Add Description** Optional.|
-|subject|String|**TODO: Add Description** Optional.|
-|sender|String|**TODO: Add Description** Optional.|
-|senderIP|String|**TODO: Add Description** Optional.|
-|receivedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|originalCategory|submissionCategory|**TODO: Add Description**. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Optional.|
-|attackSimulationInfo|[microsoft.graph.security.attackSimulationInfo](../resources/security-attacksimulationinfo.md)|**TODO: Add Description** Optional.|
-|tenantAllowOrBlockListAction|[microsoft.graph.security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md)|**TODO: Add Description** Optional.|
-
-
+In the request body, supply a JSON representation of the [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or the [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md)
 
 ## Response
 
@@ -82,40 +56,48 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/emailThreats
-Content-Type: application/json
-Content-length: 943
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmission",
-  "tenantId": "String",
-  "contentType": "String",
-  "category": "String",
-  "source": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.security.submissionUserIdentity"
-  },
-  "status": "String",
-  "result": {
-    "@odata.type": "microsoft.graph.security.submissionResult"
-  },
-  "adminReview": {
-    "@odata.type": "microsoft.graph.security.submissionAdminReview"
-  },
-  "clientSource": "String",
-  "recipientEmailAddress": "String",
-  "internetMessageId": "String",
-  "subject": "String",
-  "sender": "String",
-  "senderIP": "String",
-  "receivedDateTime": "String (timestamp)",
-  "originalCategory": "String",
-  "attackSimulationInfo": {
-    "@odata.type": "microsoft.graph.security.attackSimulationInfo"
-  },
-  "tenantAllowOrBlockListAction": {
-    "@odata.type": "microsoft.graph.security.tenantAllowOrBlockListAction"
+  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "category": "spam",
+  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
+}
+```
+
+or with tenantAllowOrBlockListAction provided
+
+```http
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "category": "notSpam",
+  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "messageUrl": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
+  "tenantAllowOrBlockListAction": 
+  {
+    "action": "allow",
+    "expirationDateTime": "2021-10-30T03:30:18.6890937Z"
+    "note": "temporal allow the url/attachment/sender in the email."
   }
+}
+```
+
+or
+
+```http
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.emailContentThreatSubmission",
+  "category": "spam",
+  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "fileContent": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
 
@@ -131,40 +113,55 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.emailThreatSubmission",
-  "id": "7dd42276-41bf-1336-7977-a93393203c7b",
-  "tenantId": "String",
-  "createdDateTime": "String (timestamp)",
-  "contentType": "String",
-  "category": "String",
-  "source": "String",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreatSubmission/$entity",
+  "@odata.type": "#microsoft.graph.emailUrlThreatSubmission",
+  "category": "spam",
+  "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+  "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
+  "createdDateTime": "2021-10-10T03:30:18.6890937Z",
+  "contentType": "email",
+  "emailSubject": "This is a spam"
+  "status": "succeeded",
+  "source": "administrator",
   "createdBy": {
-    "@odata.type": "microsoft.graph.security.submissionUserIdentity"
+    "user": {
+      "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
+      "displayName": "Ronald Admin",
+      "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+    }
   },
-  "status": "String",
   "result": {
-    "@odata.type": "microsoft.graph.security.submissionResult"
+  	"detail": "allowedByTenant",
+    "category": "notSpam",
+    "policyType": "antiPhishPolicy",
+    "policyId": "some-policy-id-if-hit"
+  	"userMailboxSetting": "isFromDomainInDomainSafeList,isJunkMailRuleEnabled",
+    "detectedUrls": ["contoso.com"]
+    "detectedFiles": [
+        {
+            "fileName": "test.ps1",
+            "fileHash": "hash of test.ps1"
+        }
+    ]
   },
-  "adminReview": {
-    "@odata.type": "microsoft.graph.security.submissionAdminReview"
+  "adminReview": null,
+  "internetMessageId": "some-internet-message-id@contoso.com",
+  "sender": "test@contoso.com",
+  "senderIP": "127.0.0.1",
+  "receivedDateTime": "2021-10-09T03:30:18.6890937Z",
+  "originalCategory": "notSpam",
+  "attackSimulationInfo": null,
+  "tenantAllowOrBlockListAction": 
+  {
+    "action": "allow",
+    "expirationDateTime": "2021-10-30T03:30:18.6890937Z",
+    "note": "temporal allow the url/attachment/sender in the email.",
+    "results": null
   },
-  "clientSource": "String",
-  "recipientEmailAddress": "String",
-  "internetMessageId": "String",
-  "subject": "String",
-  "sender": "String",
-  "senderIP": "String",
-  "receivedDateTime": "String (timestamp)",
-  "originalCategory": "String",
-  "attackSimulationInfo": {
-    "@odata.type": "microsoft.graph.security.attackSimulationInfo"
-  },
-  "tenantAllowOrBlockListAction": {
-    "@odata.type": "microsoft.graph.security.tenantAllowOrBlockListAction"
-  }
+  "tenantId" : "39238e87-b5ab-4ef6-a559-af54c6b07b42"
 }
 ```
 
