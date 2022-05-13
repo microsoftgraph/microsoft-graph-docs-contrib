@@ -13,18 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Threat submission result when threat submission is processed by system.
 
 ## Properties
 | Property           | Type                               | Description                                                             | Required |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|:---------|
 | category           | submissionResultCategory           | The submission result category.                                         | ✔        |
 | detail             | submissionResultDetail             | The submission result detail.                                           | ✔        |
-| policyType         | submissionPolicyType               | The submission policy type.                                             | ❌        |
-| policyId           | String                             | The policy id for policy hit email submission.                          | ❌        |
-| userMailboxSetting | userMailBoxSetting                 | The user mailbox setting flag string which is a comma separated string. | ❌        |
+| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string. | ❌        |
 | detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  | ❌        |
-| detectedFiles      | Collection(submissionDetectedFile) | Detected files in the email submission.                                 | ❌        |
+| detectedFiles      | Collection([submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Detected files in the email submission.                                 | ❌        |
 
 ## Relationships
 None.
