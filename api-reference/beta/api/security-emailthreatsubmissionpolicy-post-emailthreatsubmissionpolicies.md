@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /emailThreatSubmissionPolicies
+POST security/threatSubmission/emailThreatSubmissionPolicies
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/emailThreatSubmissionPolicies
+POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies
 Content-Type: application/json
 Content-length: 721
 
