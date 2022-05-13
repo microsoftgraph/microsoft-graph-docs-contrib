@@ -1,6 +1,6 @@
 ---
 title: "submissionDetectedFile resource type"
-description: "**TODO: Add Description**"
+description: "threat submission detected file"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -16,10 +16,10 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|fileHash|String|**TODO: Add Description**|
-|fileName|String|**TODO: Add Description**|
+| Property | Type   | Description    | Required |
+|:---------|:-------|:---------------|:---------|
+| fileName | String | The file name. | ✔        |
+| fileHash | String | The file hash. | ✔        |
 
 ## Relationships
 None.
