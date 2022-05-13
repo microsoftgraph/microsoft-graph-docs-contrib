@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmission: review"
-description: "**TODO: Add Description**"
+description: "review email threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|category|String|**TODO: Add Description**|
+|category|String|notSpam, junk, phishing, malware. Case insensitive.|
 
 
 
