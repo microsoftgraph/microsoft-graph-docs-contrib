@@ -1,6 +1,6 @@
 ---
 title: "tenantAllowOrBlockListAction resource type"
-description: "**TODO: Add Description**"
+description: "tenant allow or block list action"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+When admin creates email threat submission, tenant allow block list operation could be provided. When tenant allow block list operation is provided, the threat submission will auto add releated items (urls/attachments/senders) into tenant allow block list.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|action|tenantAllowBlockListAction|**TODO: Add Description**.The possible values are: `allow`, `block`, `unknownFutureValue`.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description**|
-|note|String|**TODO: Add Description**|
-|results|[microsoft.graph.security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md) collection|**TODO: Add Description**|
+| Property           | Type                                        | Description                                                                      | Required |
+|:-------------------|:--------------------------------------------|:---------------------------------------------------------------------------------|:---------|
+| action             | tenantAllowBlockListAction                  | The tenant allow block list action.                                              | ✔        |
+| results            | Collection(tenantAllowBlockListEntryResult) | The result which contains tenant allow block list items of the email submission. | ❌        |
+| expirationDateTime | DateTimeOffset                              | The tenant allow block list auto expiration date time.                           | ✔        |
+| note               | String                                      | The tenant allow block list note string.                                         | ❌        |
 
 ## Relationships
 None.
