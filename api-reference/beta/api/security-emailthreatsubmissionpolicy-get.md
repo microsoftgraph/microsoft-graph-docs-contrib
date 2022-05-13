@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
+GET security/threatSubmission//emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
+GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 
