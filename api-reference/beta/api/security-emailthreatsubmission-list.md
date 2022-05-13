@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET security/threatSubmission/emailThreats
+GET /security/threatSubmission/emailThreats
 ```
 
 ## Optional query parameters
@@ -74,41 +74,71 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.emailThreatSubmission",
-      "id": "7dd42276-41bf-1336-7977-a93393203c7b",
-      "tenantId": "String",
-      "createdDateTime": "String (timestamp)",
-      "contentType": "String",
-      "category": "String",
-      "source": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.security.submissionUserIdentity"
-      },
-      "status": "String",
-      "result": {
-        "@odata.type": "microsoft.graph.security.submissionResult"
-      },
-      "adminReview": {
-        "@odata.type": "microsoft.graph.security.submissionAdminReview"
-      },
-      "clientSource": "String",
-      "recipientEmailAddress": "String",
-      "internetMessageId": "String",
-      "subject": "String",
-      "sender": "String",
-      "senderIP": "String",
-      "receivedDateTime": "String (timestamp)",
-      "originalCategory": "String",
-      "attackSimulationInfo": {
-        "@odata.type": "microsoft.graph.security.attackSimulationInfo"
-      },
-      "tenantAllowOrBlockListAction": {
-        "@odata.type": "microsoft.graph.security.tenantAllowOrBlockListAction"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/emailThreats",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.emailThreatSubmission",
+            "category": "spam",
+            "recipientEmailAddress": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
+            "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
+            "createdDateTime": "2021-10-10T03:30:18.6890937Z",
+            "contentType": "email",
+            "emailSubject": "This is a spam"
+            "status": "succeeded",
+            "source": "administrator",
+            "createdBy": {
+                "user": {
+                    "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
+                    "displayName": "Ronald Admin",
+                    "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+                }
+            },
+            "result": {
+  	        "detail": "allowedByTenant",
+            "category": "notSpam",
+            "policyType": "antiPhishPolicy",
+            "policyId": "some-policy-id-if-hit"
+  	        "userMailboxSetting": "isFromDomainInDomainSafeList,isJunkMailRuleEnabled",
+            "detectedUrls": ["contoso.com"]
+            "detectedFiles": [
+                {
+                    "fileName": "test.ps1",
+                    "fileHash": "hash of test.ps1"
+                }
+            ]
+            },
+            "adminReview": null,
+            "internetMessageId": "some-internet-message-id@contoso.com",
+            "sender": "test@contoso.com",
+            "senderIP": "127.0.0.1",
+            "receivedDateTime": "2021-10-09T03:30:18.6890937Z",
+            "originalCategory": "notSpam",
+            "attackSimulationInfo": null,
+            "tenantAllowOrBlockListAction": 
+            {
+                "action": "allow",
+                "expirationDateTime": "2021-10-30T03:30:18.6890937Z",
+                "note": "temporal allow the url/attachment/sender in the email.",
+                "results": [
+                    {
+                        "identity": "tenant allow block list id",
+                        "value": "contoso.com",
+                        "entryType": "url",
+                        "expirationDateTime": "2021-10-30T03:30:18.6890937Z",
+                        "status": "succeeded"
+                    },
+                    {
+                        "identity": "tenant allow block list id",
+                        "value": "test-contoso.com",
+                        "entryType": "url",
+                        "expirationDateTime": "2021-10-30T03:30:18.6890937Z",
+                        "status": "skipped"
+                    },
+                ]
+            },
+            "tenantId" : "39238e87-b5ab-4ef6-a559-af54c6b07b42"
+        }
+    ]
 }
 ```
 
