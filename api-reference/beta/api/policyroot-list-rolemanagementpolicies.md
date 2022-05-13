@@ -1,7 +1,7 @@
 ---
 title: "List roleManagementPolicies"
 description: "Get the unifiedRoleManagementPolicy resources from the roleManagementPolicies navigation property."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
