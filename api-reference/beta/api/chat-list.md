@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All (*only for `GET /users/{user-id | user-principal-name}/chats`*) |
+|Application | Chat.ReadBasic.All*, Chat.Read.All*, Chat.ReadWrite.All* |
+
+\* This scenario is only supported for the following call: `GET /users/{user-id | user-principal-name}/chats`
 
 ## HTTP request
 
