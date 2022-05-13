@@ -1,6 +1,6 @@
 ---
 title: "tenantAllowBlockListEntryResult resource type"
-description: "**TODO: Add Description**"
+description: "tenant allow block list entry result"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+One entry for tenant allow block list item which could be url, attachment or senders.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|entryType|tenantAllowBlockListEntryType|**TODO: Add Description**.The possible values are: `url`, `fileHash`, `sender`, `recipient`, `unknownFutureValue`.|
-|expirationDateTime|DateTimeOffset|**TODO: Add Description**|
-|identity|String|**TODO: Add Description**|
-|status|longRunningOperationStatus|**TODO: Add Description**.The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
-|value|String|**TODO: Add Description**|
+| Property           | Type                          | Description                                             | Required |
+|:-------------------|:------------------------------|:--------------------------------------------------------|:---------|
+| identity           | String                        | The identity.                                           | ✔        |
+| value              | String                        | The tenant allow block list value.                      | ✔        |
+| entryType          | tenantAllowBlockListEntryType | The tenant allow block list entry type.                 | ✔        |
+| expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                | ❌        |
+| status             | longRunningOperationStatus    | The tenant allow block operation result for this entry. | ✔        |
 
 ## Relationships
 None.
