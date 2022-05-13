@@ -86,7 +86,7 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 
 1. As a query string parameter with the syntax `$count=true` to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph. For example, `users?$count=true`.
 2. As a [URL segment](#other-odata-url-capabilities) to retrieve only the integer total of the collection. For example, `users/$count`.
-3. In a `$filter` expression with equality operators to retrieve the count a collection where the filtered property is an empty collection. See [the examples below](#examples-using-the-filter-query-operator).
+3. In a `$filter` expression with equality operators to retrieve a collection of data where the filtered property is an empty collection. See [the examples below](#examples-using-the-filter-query-operator).
 
 > [!NOTE]
 > 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
