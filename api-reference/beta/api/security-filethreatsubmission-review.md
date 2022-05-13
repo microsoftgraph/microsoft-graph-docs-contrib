@@ -1,6 +1,6 @@
 ---
 title: "fileThreatSubmission: review"
-description: "**TODO: Add Description**"
+description: "review file threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ThreatSubmission.ReadWrite.All|
+|Delegated (personal Microsoft account)|N/A|
+|Application|ThreatSubmission.ReadWrite.All|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /fileThreats/{fileThreatsId}/review
+POST /security/threatSubmission/fileThreats/{fileThreatsId}/review
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|category|String|**TODO: Add Description**|
+|category|String|notSpam, junk, phishing, malware. Case insensitive.|
 
 
 
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/fileThreats/{fileThreatsId}/review
+POST https://graph.microsoft.com/beta/security/threatSubmission/fileThreats/{fileThreatsId}/review
 Content-Type: application/json
 Content-length: 28
 
