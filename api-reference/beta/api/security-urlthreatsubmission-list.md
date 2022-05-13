@@ -76,25 +76,28 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.urlThreatSubmission",
-      "id": "8be9c8d5-3d8e-53b9-abac-740c89e0437c",
-      "tenantId": "String",
-      "createdDateTime": "String (timestamp)",
-      "contentType": "String",
-      "category": "String",
-      "source": "String",
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/threatSubmission/urlThreatSubmission/$entity",
+      "@odata.type": "#microsoft.graph.urlThreatSubmission",
+      "category": "phishing",  
+      "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
+      "createdDateTime": "2021-10-10T03:30:18.6890937Z",
+      "contentType": "url",
+      "webUrl": "http://phishing.contoso.com"
+      "status": "running",
+      "source": "administrator",
       "createdBy": {
-        "@odata.type": "microsoft.graph.security.submissionUserIdentity"
+        "user": {
+          "identity": "c52ce8db-3e4b-4181-93c4-7d6b6bffaf60",
+          "displayName": "Ronald Admin",
+          "email": "tifc@a830edad9050849eqtpwbjzxodq.onmicrosoft.com"
+        }
       },
-      "status": "String",
       "result": {
-        "@odata.type": "microsoft.graph.security.submissionResult"
-      },
-      "adminReview": {
-        "@odata.type": "microsoft.graph.security.submissionAdminReview"
-      },
-      "clientSource": "String",
-      "webUrl": "String"
+        "detail": "underInvestigation"
+        ...
+      }
+      "adminReview": null,
+      "tenantId" : "39238e87-b5ab-4ef6-a559-af54c6b07b42"
     }
   ]
 }
