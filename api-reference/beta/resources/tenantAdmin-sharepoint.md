@@ -1,6 +1,6 @@
 ---
 title: "sharepoint resource type"
-description: "Entity that acts as a container for administrative resources to manage a tenant's SharePoint and OneDrive settings."
+description: "Represents a container for administrative resources to manage tenant-level settings for SharePoint and OneDrive for Business."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that acts as a container for administrative resources to manage a tenant's SharePoint and OneDrive settings.
+Represents a container for administrative resources to manage tenant-level settings for SharePoint and OneDrive for Business.
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ Entity that acts as a container for administrative resources to manage a tenant'
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md)|Represents the organization settings for SharePoint and OneDrive for Business.|
+|settings|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md)|Represents the tenant-level settings for SharePoint and OneDrive for Business.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
