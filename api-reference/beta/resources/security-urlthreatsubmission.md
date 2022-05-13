@@ -1,6 +1,6 @@
 ---
 title: "urlThreatSubmission resource type"
-description: "**TODO: Add Description**"
+description: "url threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Used for submitting url threat.
 
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
@@ -24,25 +24,11 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 |[List urlThreatSubmissions](../api/security-threatsubmissionroot-list-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md) collection|Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.|
 |[Create urlThreatSubmission](../api/security-urlthreatsubmission-post-urlthreats.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Create a new [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 |[Get urlThreatSubmission](../api/security-urlthreatsubmission-get.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Read the properties and relationships of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
-|[Update urlThreatSubmission](../api/security-urlthreatsubmission-update.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Update the properties of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
-|[Delete urlThreatSubmission](../api/security-threatsubmissionroot-delete-urlthreats.md)|None|Deletes an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
-|[review](../api/security-urlthreatsubmission-review.md)|None|**TODO: Add Description**|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|adminReview|[microsoft.graph.security.submissionAdminReview](../resources/security-submissionadminreview.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).|
-|category|submissionCategory|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`.|
-|clientSource|submissionClientSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).The possible values are: `microsoft`, `other`, `unknownFutureValue`.|
-|contentType|submissionContentType|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).The possible values are: `email`, `url`, `file`, `app`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.security.submissionUserIdentity](../resources/security-submissionuseridentity.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|result|[microsoft.graph.security.submissionResult](../resources/security-submissionresult.md)|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).|
-|source|submissionSource|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).The possible values are: `user`, `administrator`, `unknownFutureValue`.|
-|status|longRunningOperationStatus|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`.|
-|tenantId|String|**TODO: Add Description** Inherited from [threatSubmission](../resources/security-threatsubmission.md).|
-|webUrl|String|**TODO: Add Description**|
+| Property | Type   | Description                 | Key | Required |
+|:---------|:-------|:----------------------------|:----|:---------|
+| webUrl   | String | The webUrl to be submitted. | ❌   | ✔        |
 
 ## Relationships
 None.
