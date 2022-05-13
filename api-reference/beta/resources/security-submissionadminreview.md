@@ -1,6 +1,6 @@
 ---
 title: "submissionAdminReview resource type"
-description: "**TODO: Add Description**"
+description: "threat submission admin review data"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Admin review information for user reported messages.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|reviewBy|String|**TODO: Add Description**|
-|reviewDateTime|DateTimeOffset|**TODO: Add Description**|
-|reviewResult|submissionResultCategory|**TODO: Add Description**.The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable`, `unknownFutureValue`.|
+| Property       | Type                     | Description                                  | Required |
+|:---------------|:-------------------------|:---------------------------------------------|:---------|
+| reviewDateTime | DateTimeOffset           | The review date time.                        | ✔        |
+| reviewResult   | submissionResultCategory | The review result                            | ✔        |
+| reviewBy       | String                   | The reviewer email or other identity string. | ✔        |
 
 ## Relationships
 None.
