@@ -51,7 +51,7 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. On the horizontal menu, select **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
 1. Type `Mail.`, expand the **Mail** options, and then select **Mail.Read**.
 1. Select **Application permissions**, type `User.`, and then select **Application Permissions**.
-1. Expand the **User** options, and then select **User.Read.All**.
+1. Expand the **User** options, and then select `User.Read.All`.
 1. Select **Add permissions**.
 1. On the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
 1. On the left menu, select **Overview**. From here, you can get the **application (client) ID** and **directory (tenant) ID**. You'll need these in step 4.

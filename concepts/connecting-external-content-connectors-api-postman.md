@@ -45,8 +45,7 @@ To use this Postman collection in your web browser, download the [Postman Deskto
 You can't use Postman for the web without this due to CORS restrictions in the web browser:
 "The maximum number of [connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant."
 
-> [!NOTE]
-> You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you see this collection in your workspace.
+You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you see this collection in your workspace.
 
 ## Step 3: Create an Azure AD application
 
@@ -56,8 +55,8 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 2. Under **Azure Services**, select **Azure Active Directory**.
 3. On the left menu, select **App registrations**.
 4. On the horizontal menu, select **New registration**.
-5. Set the Application name to `Parts Inventory`.
-6. Set the Redirect URI to https://oauth.pstmn.io/v1/browser-callback.
+5. Set the **Application name** to `Parts Inventory`.
+6. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
 7. Select **Register**.
 8. On the left menu, select **API Permissions**.
 9. On the horizontal menu, select **Add a permission** > **Microsoft Graph** > **Delegated Permissions**.
@@ -74,7 +73,7 @@ The Azure AD application now has permissions to make requests on behalf of a use
 
 ## Step 4: Configure authentication
 
-Set up the variables in Postman. This information is used to generate the access token.
+In this step, you set up the environment variables in Postman that you use to retrieve an access token.
 
 1. Select the **Microsoft Graph** tab and go to the **Variables** section.
 
