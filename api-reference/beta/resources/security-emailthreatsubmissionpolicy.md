@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Threat submission policy is used for customize your organization's experience when reporting potential threats and spam in Microsoft Outlook.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -28,22 +28,22 @@ Inherits from [entity](../resources/entity.md).
 |[Delete emailThreatSubmissionPolicy](../api/security-threatsubmissionroot-delete-emailthreatsubmissionpolicies.md)|None|Deletes an [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|customizedNotificationSenderEmailAddress|String|**TODO: Add Description**|
-|customizedReportRecipientEmailAddress|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isAlwaysReportEnabledForUsers|Boolean|**TODO: Add Description**|
-|isAskMeEnabledForUsers|Boolean|**TODO: Add Description**|
-|isCustomizedMessageEnabled|Boolean|**TODO: Add Description**|
-|isCustomizedMessageEnabledForPhishing|Boolean|**TODO: Add Description**|
-|isCustomizedNotificationSenderEnabled|Boolean|**TODO: Add Description**|
-|isNeverReportEnabledForUsers|Boolean|**TODO: Add Description**|
-|isOrganizationBrandingEnabled|Boolean|**TODO: Add Description**|
-|isReportFromQuarantineEnabled|Boolean|**TODO: Add Description**|
-|isReportToCustomizedEmailAddressEnabled|Boolean|**TODO: Add Description**|
-|isReportToMicrosoftEnabled|Boolean|**TODO: Add Description**|
-|isReviewEmailNotificationEnabled|Boolean|**TODO: Add Description**|
+| Property                                 | Type    | Description                                                                                | Key | Required |
+|:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|:----|:---------|
+| id                                       | String  | Policy id.                                                                                 | ✔   | ✔        |
+| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to microsoft for analysis.                              | ❌   | ✔        |
+| isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               | ❌   | ✔        |
+| isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    | ❌   | ✔        |
+| isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              | ❌   | ✔        |
+| isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               | ❌   | ✔        |
+| isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              | ❌   | ✔        |
+| isCustomizedMessageEnabled               | Boolean | If enabled, customized message is enabled.                                                 | ❌   | ✔        |
+| customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 | ❌   | ✔        |
+| isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. | ❌   | ✔        |
+| isCustomizedNotificationSenderEnabled    | Boolean | If enabled, notificationSenderAddress is used by review notification email.                | ❌   | ✔        |
+| isOrganizationBrandingEnabled            | Boolean | If enabled, tenant branding logo will be used in review notification message.              | ❌   | ✔        |
+| customizedNotificationSenderEmailAddress | String  | Customized notification sender address for review notification message.                    | ❌   | ✔        |
+| isReportFromQuarantineEnabled            | Boolean | If enabled, submission could be created from security portal quarantine page.              | ❌   | ✔        |
 
 ## Relationships
 None.
