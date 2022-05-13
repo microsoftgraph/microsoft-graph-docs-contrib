@@ -10061,6 +10061,10 @@ items:
             href: api/virtualendpoint-list-snapshots.md
           - name: Get
             href: api/cloudpcsnapshot-get.md
+          - name: Get subscriptions
+            href: api/cloudpcsnapshot-getsubscriptions.md
+          - name: Get storage accounts
+            href: api/cloudpcsnapshot-getstorageaccounts.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:
@@ -10323,6 +10327,11 @@ items:
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Unassign tenant tag
             href: api/managedtenants-tenanttag-unassigntag.md
+        - name: Tenant usage
+          href: resources/managedtenants-tenantusage.md
+          items:
+          - name: List
+            href: api/managedtenants-managedtenant-list-tenantusage.md
         - name: Windows device malware state
           href: resources/managedtenants-windowsdevicemalwarestate.md
           items:
@@ -14187,6 +14196,12 @@ items:
             href: api/externalconnectors-externalgroup-post-members.md
           - name: Delete
             href: api/externalconnectors-externalgroupmember-delete.md
+        - name: Connection quota
+          items:
+          - name: Connection quota
+            href: resources/externalconnectors-connectionquota.md
+          - name: Get
+            href: api/externalconnectors-connectionquota-get.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:

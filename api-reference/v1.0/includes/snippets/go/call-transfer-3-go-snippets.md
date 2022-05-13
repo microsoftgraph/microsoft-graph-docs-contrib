@@ -22,11 +22,8 @@ transferTarget.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08",
 }
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

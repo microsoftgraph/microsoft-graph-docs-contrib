@@ -16,12 +16,9 @@ displayName := "Microsoft"
 requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.LinkedResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResources().Post(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResources().Post(requestBody)
 
 
 ```

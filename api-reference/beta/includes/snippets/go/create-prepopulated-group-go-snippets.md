@@ -29,10 +29,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 		"https://graph.microsoft.com/beta/users/69456242-0067-49d3-ba96-9de6f2728e14",
 	}
 }
-options := &msgraphsdk.GroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Groups().Post(options)
+result, err := graphClient.Groups().Post(requestBody)
 
 
 ```

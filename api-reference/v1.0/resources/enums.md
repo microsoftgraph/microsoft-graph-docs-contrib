@@ -2068,6 +2068,13 @@ Possible values for user account types (group membership), per Windows definitio
 |notNotified|
 |unknownFutureValue|
 
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+
 ### longRunningOperationStatus values
 
 | Member|

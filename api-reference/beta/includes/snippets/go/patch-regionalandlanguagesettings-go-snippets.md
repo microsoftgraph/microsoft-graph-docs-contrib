@@ -22,10 +22,7 @@ defaultRegionalFormat := msgraphsdk.NewLocaleInfo()
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)
 locale := "en-US"
 defaultRegionalFormat.SetLocale(&locale)
-options := &msgraphsdk.RegionalAndLanguageSettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(options)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(requestBody)
 
 
 ```

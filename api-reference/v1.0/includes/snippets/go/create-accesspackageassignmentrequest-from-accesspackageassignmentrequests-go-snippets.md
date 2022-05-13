@@ -15,10 +15,7 @@ requestBody.SetAssignment(assignment)
 assignment.SetAdditionalData(map[string]interface{}{
 	"accessPackageId": "d7be3253-b9c6-4fab-adef-30d30de8da2b",
 }
-options := &msgraphsdk.AssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(requestBody)
 
 
 ```
