@@ -28,9 +28,9 @@ Inherits from [entity](../resources/entity.md).
 | category        | submissionCategory         | not junk, spam, phishing or malware.                                             | ❌   | ✔        |
 | status          | longRunningOperationStatus | If the threat submission check is finished.                                      | ❌   | ❌        |
 | source          | submissionSource           | The threat submission source. Administrator or user.                             | ❌   | ❌        |
-| createdBy       | submissionUserIdentity     | The submitter of the threat submission.                                          | ❌   | ❌        |
-| result          | submissionResult           | The threat submission check result.                                              | ❌   | ❌        |
-| adminReview     | submissionAdminReview      | User submission admin review                                                     | ❌   | ❌        |
+| createdBy       | [submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.                                          | ❌   | ❌        |
+| result          | [submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.                                              | ❌   | ❌        |
+| adminReview     | [submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review                                                     | ❌   | ❌        |
 | tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. | ❌   | ❌        |
 | clientSource    | submissionClientSource     | microsoft or other client.                                                       | ❌   | ❌        |
 
