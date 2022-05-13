@@ -59,7 +59,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_educationfeedbackresource"
+  "name": "create_educationfeedbackresourceoutcome"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions/2185e6d7-2924-4ed1-dde1-269f89e29184/outcomes
@@ -83,7 +83,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationfeedbackResourceOutcome"
+  "@odata.type": "microsoft.graph.educationFeedbackResourceOutcome"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -135,7 +135,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create educationAssignment",
+  "description": "Create educationFeedbackResourceOutcome",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
