@@ -16,10 +16,7 @@ state := "published"
 requestBody.SetState(&state)
 isExternallyVisible := true
 requestBody.SetIsExternallyVisible(&isExternallyVisible)
-options := &msgraphsdk.CatalogsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(requestBody)
 
 
 ```

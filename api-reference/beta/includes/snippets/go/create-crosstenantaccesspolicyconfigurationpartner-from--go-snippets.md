@@ -36,10 +36,7 @@ applications.SetTargets( []CrossTenantAccessPolicyTarget {
 		"targetType": "application",
 	}
 }
-options := &msgraphsdk.PartnersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(options)
+result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Post(requestBody)
 
 
 ```

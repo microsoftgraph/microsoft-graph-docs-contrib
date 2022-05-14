@@ -28,11 +28,8 @@ linesForEditing := int32(0)
 text.SetLinesForEditing(&linesForEditing)
 maxLength := int32(255)
 text.SetMaxLength(&maxLength)
-options := &msgraphsdk.ColumnsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Columns().Post(options)
+result, err := graphClient.SitesById(&siteId).Columns().Post(requestBody)
 
 
 ```

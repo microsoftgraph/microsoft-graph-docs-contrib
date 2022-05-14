@@ -10,6 +10,9 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
 	UserAccountType = "standardUser"
 	OsVersion = "windows11"
+	WindowsSettings = @{
+		Language = "en-US"
+	}
 }
 
 Update-MgDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params

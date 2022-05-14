@@ -48,9 +48,9 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ---
 
 
-##### Response
+### Response
 
 The following is an example of the response. 
 

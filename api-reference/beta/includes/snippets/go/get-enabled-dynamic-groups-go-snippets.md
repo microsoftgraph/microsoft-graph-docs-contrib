@@ -12,10 +12,10 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 	Count: true,
 	Select: "id,membershipRule,membershipRuleProcessingState",
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.GroupsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
