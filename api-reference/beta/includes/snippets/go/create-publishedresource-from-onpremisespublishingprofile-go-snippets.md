@@ -12,11 +12,8 @@ displayName := "New provisioning"
 requestBody.SetDisplayName(&displayName)
 resourceName := "domain1.contoso.com"
 requestBody.SetResourceName(&resourceName)
-options := &msgraphsdk.PublishedResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResources().Post(requestBody)
 
 
 ```

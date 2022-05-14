@@ -22,10 +22,7 @@ message.SetMentions( []Mention {
 	SetAdditionalData(map[string]interface{}{
 	}
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

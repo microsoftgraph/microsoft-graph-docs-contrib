@@ -25,10 +25,7 @@ requestBody.SetRequests( []SearchRequest {
 		}
 	}
 }
-options := &msgraphsdk.QueryRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Query().Post(options)
+result, err := graphClient.Search().Query().Post(requestBody)
 
 
 ```

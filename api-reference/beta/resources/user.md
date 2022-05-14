@@ -157,6 +157,9 @@ This resource supports:
 | **Outlook tasks** (deprecated)|||
 | [Create outlookTask](../api/outlookuser-post-tasks.md) (deprecated) | [outlookTask](outlooktask.md) | Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox. |
 | [List tasks](../api/outlookuser-list-tasks.md) (deprecated) | [outlookTask](outlooktask.md) collection | Get all the Outlook tasks in the user's mailbox. |
+| **Cloud PC**|||
+|[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 
 
 ## Properties
@@ -234,7 +237,7 @@ This resource supports:
 | showInAddressList | Boolean | `true` if the Outlook global address list should contain this user, otherwise `false`. If not set, this will be treated as `true`. For users invited through the invitation manager, this property will be set to `false`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but*, not with any other filterable properties. **Note:** Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<br><br>**Note:** There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving this property.|
+| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but*, not with any other filterable properties. **Note:** Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<br><br>**Note:** <br/><li>There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving this property.<li>This property is not returned for a user who has never signed in or last signed in before April 2020.|
 | state | String | The state or province in the user's address. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | streetAddress | String | The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |

@@ -79,10 +79,7 @@ startDate := "2021-05-05"
 range.SetStartDate(&startDate)
 endDate := "2022-05-05"
 range.SetEndDate(&endDate)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

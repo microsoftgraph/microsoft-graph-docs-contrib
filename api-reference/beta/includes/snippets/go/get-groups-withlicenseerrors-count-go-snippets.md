@@ -15,11 +15,11 @@ requestParameters := &msgraphsdk.GroupsRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.GroupsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.GroupsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.Groups().Get(options)
+result, err := graphClient.Groups().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

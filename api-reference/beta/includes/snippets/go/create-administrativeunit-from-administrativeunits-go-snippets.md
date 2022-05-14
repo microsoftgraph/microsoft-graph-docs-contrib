@@ -14,10 +14,7 @@ description := "Seattle district technical schools administration"
 requestBody.SetDescription(&description)
 visibility := "HiddenMembership"
 requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.AdministrativeUnitsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.AdministrativeUnits().Post(options)
+result, err := graphClient.AdministrativeUnits().Post(requestBody)
 
 
 ```

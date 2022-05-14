@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ChildFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: true,
 }
-options := &msgraphsdk.ChildFoldersRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ChildFoldersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Get(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
