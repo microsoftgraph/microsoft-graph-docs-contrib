@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /auditEvent
-GET /managedTenant/auditEvents/{auditEventId}
+GET /tenantRelationships/managedTenants/auditEvents/{auditEventId}
 ```
 
 ## Optional query parameters
