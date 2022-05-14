@@ -40,9 +40,7 @@ POST /classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) object in the request body.
-
-If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
+If successful, this method returns a 200 Ok response code and [educationAssignment](../resources/educationassignment.md) object in the request body.
 
 ## Example
 The following example shows how to call this API.
@@ -118,32 +116,6 @@ Content-type: application/json
         "user": {
             "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
             "displayName": null
-        }
-    }
-}
-```
-
-If the specified **assignment** already has a folder, this method returns a `400 Bad request` and an error response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "odata.error"
-} -->
-```http
-HTTP/1.1 400 Bad request
-Content-type: application/json
-
-{
-    "error": {
-        "code": "badRequest",
-        "message": "Bad request.",
-        "innerError": {
-            "code": "folderAlreadyExists",
-            "message": "Resource folder already exists and has previously been set up.",
-            "date": "2021-09-14T19:05:24",
-            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
-            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

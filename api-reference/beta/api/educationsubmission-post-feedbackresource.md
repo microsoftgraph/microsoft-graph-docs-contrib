@@ -13,16 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) to a submission feedback resource list.
+Add an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) to a submission outcome list.
 
-Only the student assigned to the submission can perform this operation.
+Only the teacher can perform this operation.
 
-The operation will not succeed if the **allowStudentsToAddResources** flag is not set to `true`.
-
-To create a new file-based resource, upload the file to the resources folder associated with the submission. If the file doesn't exist or is not in that folder, the POST request will fail.
+To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or is not in that folder, the POST request will fail.
 
 > [!IMPORTANT]
-> Before you can upload an assignment resource, you must [set up the feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
+> Before you can upload an assignment feedback resource, you must [set up the feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

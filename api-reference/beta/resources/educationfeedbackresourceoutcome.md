@@ -22,7 +22,6 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 | [Setup Feedback Resources Folder](../api/educationassignment-setupfeedbackresourcesfolder.md) | [educationAssignment](educationassignment.md) | Create a SharePoint folder to upload files as feedback resources. |
 | [Create Feedback Resource Outcome](../api/educationsubmission-post-feedbackresource.md) | [educationOutcome](educationoutcome.md) | Create new educationFeedbackResourceOutcome for Submission. |
 | [Delete Feedback Resource Outcome](../api/educationsubmissionfeedbackresource-delete.md) | None | Delete educationFeedbackResourceOutcome from Submission. |
-| [List Feedback Resources](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) collection | Get an educationFeedbackResourceOutcome object collection. |
 
 ## Properties
 

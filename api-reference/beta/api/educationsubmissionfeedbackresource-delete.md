@@ -1,6 +1,6 @@
 ---
 title: "Delete educationFeedbackResourceOutcome"
-description: "Deletes a feedback resource from the submission. This can only be done by the student."
+description: "Deletes a feedback resource from the submission. This can only be done by the teacher."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) from the submission. This can only be done by the student.
+Deletes an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) from the submission. This can only be done by the teacher.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
