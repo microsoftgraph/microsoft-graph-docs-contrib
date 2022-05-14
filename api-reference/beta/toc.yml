@@ -15378,9 +15378,10 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Task list
-        href: resources/todotasklist.md
+      - name: To-do task list
         items:
+        - name: To-do task list
+          href: resources/todotasklist.md
         - name: List task lists
           href: api/todo-list-lists.md
         - name: Create task list
@@ -15391,15 +15392,16 @@ items:
           href: api/todotasklist-update.md
         - name: Delete task list
           href: api/todotasklist-delete.md
-        - name: Get task list delta
+        - name: Get delta for task list
           href: api/todotasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Task
-        href: resources/todotask.md
+      - name: To-do task
         items:
+        - name: To-do task
+          href: resources/todotask.md
         - name: List tasks
           href: api/todotasklist-list-tasks.md
         - name: Create task
@@ -15410,7 +15412,7 @@ items:
           href: api/todotask-update.md
         - name: Delete task
           href: api/todotask-delete.md
-        - name: Get task delta
+        - name: Get delta for task
           href: api/todotask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -15442,11 +15444,11 @@ items:
           href: api/linkedresource-update.md
         - name: Delete
           href: api/linkedresource-delete.md
-      - name: To-do Tasks(experimental)
+      - name: To-do API with base tasks (deprecated)
         items:
         - name: Overview
           href: resources/tasks-overview.md
-        - name: Task list
+        - name: Base task list
           items:
           - name: Base task list
             href: resources/basetasklist.md
@@ -15454,41 +15456,41 @@ items:
             href: resources/tasklist.md
           - name: Well-known task list
             href: resources/wellknowntasklist.md
-          - name: List task lists
+          - name: List base task lists
             href: api/tasks-list-lists.md
-          - name: Create task list
+          - name: Create base task list
             href: api/tasks-post-lists.md
-          - name: Get task list
+          - name: Get base task list
             href: api/basetasklist-get.md
-          - name: Update task list
+          - name: Update base task list
             href: api/tasklist-update.md
-          - name: Delete task list
+          - name: Delete base task list
             href: api/tasklist-delete.md
-          - name: Get task list delta
+          - name: Get delta for base task list
             href: api/basetasklist-delta.md
           - name: Create open extension
             href: api/opentypeextension-post-opentypeextension.md
           - name: Get open extension
             href: api/opentypeextension-get.md
-        - name: Task
+        - name: Base task
           items:
           - name: Base task
             href: resources/basetask.md
           - name: Task
             href: resources/task.md
-          - name: List tasks
+          - name: List base tasks
             href: api/basetasklist-list-tasks.md
-          - name: Create task
+          - name: Create base task
             href: api/basetasklist-post-tasks.md
-          - name: Get task
+          - name: Get base task
             href: api/basetask-get.md
-          - name: Update task
+          - name: Update base task
             href: api/basetask-update.md
-          - name: Move task
+          - name: Move base task
             href: api/basetask-move.md
-          - name: Delete task
+          - name: Delete base task
             href: api/basetask-delete.md
-          - name: Get task delta
+          - name: Get delta for base task
             href: api/basetask-delta.md
           - name: Create open extension
             href: api/opentypeextension-post-opentypeextension.md
@@ -15507,7 +15509,7 @@ items:
             href: api/checklistitem-update.md
           - name: Delete
             href: api/checklistitem-delete.md
-        - name: Linked resource
+        - name: Linked resource v2
           href: resources/linkedresource_v2.md
           items:
           - name: List
