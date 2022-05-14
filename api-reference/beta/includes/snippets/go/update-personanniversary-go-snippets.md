@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPersonAnnualEvent()
 allowedAudiences := "contacts"
 requestBody.SetAllowedAudiences(&allowedAudiences)
-options := &msgraphsdk.PersonAnnualEventRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 personAnnualEventId := "personAnnualEvent-id"
-graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(options)
+graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(requestBody)
 
 
 ```

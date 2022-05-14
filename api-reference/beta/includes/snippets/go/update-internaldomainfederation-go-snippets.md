@@ -12,12 +12,9 @@ displayName := "Contoso name change"
 requestBody.SetDisplayName(&displayName)
 federatedIdpMfaBehavior := "acceptIfMfaDoneByFederatedIdp"
 requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior)
-options := &msgraphsdk.InternalDomainFederationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 domainId := "domain-id"
 internalDomainFederationId := "internalDomainFederation-id"
-graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Patch(options)
+graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Patch(requestBody)
 
 
 ```

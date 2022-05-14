@@ -17,10 +17,7 @@ displayName := "Chelsea FC"
 requestBody.SetDisplayName(&displayName)
 webUrl := "https://www.chelseafc.com"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.InterestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Interests().Post(options)
+result, err := graphClient.Me().Profile().Interests().Post(requestBody)
 
 
 ```

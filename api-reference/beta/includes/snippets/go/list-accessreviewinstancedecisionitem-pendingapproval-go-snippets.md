@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.DecisionsRequestBuilderGetQueryParameters{
 	Top: 100,
 	Skip: 0,
 }
-options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DecisionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().Get(options)
+result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

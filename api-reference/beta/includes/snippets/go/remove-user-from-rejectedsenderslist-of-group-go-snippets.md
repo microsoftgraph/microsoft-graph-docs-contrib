@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderDeleteQueryParameters{
 	Id: "https://graph.microsoft.com/beta/users/%7Bid%7D",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderDeleteOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DirectoryObjectRequestBuilderDeleteRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 groupId := "group-id"
 directoryObjectId := "directoryObject-id"
-graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).Delete(options)
+graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

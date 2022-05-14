@@ -133,7 +133,6 @@ Content-type: application/json
     "userReacceptRequiredFrequency": "P90D",
     "isViewingBeforeAcceptanceRequired": false,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
     "files": [
         {
             "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",

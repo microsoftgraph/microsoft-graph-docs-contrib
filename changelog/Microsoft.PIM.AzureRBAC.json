@@ -52,10 +52,10 @@
         },
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "roleEligibilityScheduleRequests",
           "ChangeType": "Addition",
-          "Description": "Added the [roleEligibilityScheduleRequests](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to assign and manage active role assignments to a principal through Privileged Identity Management (PIM).",
+          "Description": "Added the [roleEligibilityScheduleRequests](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-1.0) relationship to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplication?view=graph-rest-1.0) resource.",
           "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {

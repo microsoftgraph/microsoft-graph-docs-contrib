@@ -15,12 +15,9 @@ requestBody.SetAnnotations( []ProfileCardAnnotation {
 		}
 	}
 }
-options := &msgraphsdk.ProfileCardPropertyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
 profileCardPropertyId := "profileCardProperty-id"
-graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(options)
+graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(requestBody)
 
 
 ```

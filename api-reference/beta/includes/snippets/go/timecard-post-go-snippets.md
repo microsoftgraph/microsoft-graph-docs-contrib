@@ -35,11 +35,8 @@ requestBody.SetBreaks( []TimeCardBreak {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"onBehalfOfUserId": "a3601044-a1b5-438e-b742-f78d01d68a67",
 }
-options := &msgraphsdk.TimeCardsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().Post(requestBody)
 
 
 ```

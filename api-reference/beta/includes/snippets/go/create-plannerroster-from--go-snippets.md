@@ -11,10 +11,7 @@ requestBody := msgraphsdk.NewPlannerRoster()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.plannerRoster",
 }
-options := &msgraphsdk.RostersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Planner().Rosters().Post(options)
+result, err := graphClient.Planner().Rosters().Post(requestBody)
 
 
 ```

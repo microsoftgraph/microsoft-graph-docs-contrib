@@ -15,13 +15,13 @@ requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.DirectoryObjectRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
 deviceId := "device-id"
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DevicesById(&deviceId).MemberOfById(&directoryObjectId).Get(options)
+result, err := graphClient.DevicesById(&deviceId).MemberOfById(&directoryObjectId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -18,10 +18,7 @@ thumbnailUrl := "https://iame.io/dfhdfdfd334.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iame.io/blackbelt"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.CertificationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Certifications().Post(options)
+result, err := graphClient.Me().Profile().Certifications().Post(requestBody)
 
 
 ```
