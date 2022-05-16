@@ -18,7 +18,7 @@ Represents the details of cloud pc connectivity event.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventDatetime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|eventDateTime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |eventName|string|Name of the event.|
 |eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure`.|
 |eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck`.|
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcConnectivityEvent",
-  "eventDatetime": "String (timestamp)",
+  "eventDateTime": "String (timestamp)",
   "eventName": "String",
   "eventResult": "String",
   "eventType": "String",

@@ -20,7 +20,7 @@ Represents the details of the cloud pc connectivity status.
 |:---|:---|:---|
 |failedHealthCheckItems|[cloudPcHealthCheckItem](../resources/cloudpchealthcheckitem.md) collection|A list of failed health check items. If `status` is `available`, this property will be empty.|
 |status|[cloudPcConnectivityStatus](#cloudpcconnectivitystatus-values)|Connectivity status of the Cloud PC. Possible values are: `unknown`, `available`, `availableWithWarning`, `unavailable`.|
-|updatedDatetime|string|Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. |
+|updatedDateTime|string|Datetime when the status was updated. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. |
 
 ### cloudPcConnectivityStatus values
 
@@ -47,6 +47,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.cloudPcConnectivityResult",
   "failedHealthCheckItems": "String",
   "status": "String",
-  "updatedDatetime": "String (timestamp)"
+  "updatedDateTime": "String (timestamp)"
 }
 ```
