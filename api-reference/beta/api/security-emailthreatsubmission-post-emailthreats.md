@@ -137,7 +137,7 @@ Content-type: application/json
     "detail": "allowedByTenant",
     "category": "notSpam",
     "userMailboxSetting": "isFromDomainInDomainSafeList,isJunkMailRuleEnabled",
-    "detectedUrls": ["contoso.com"]
+    "detectedUrls": ["contoso.com"],
     "detectedFiles": [
         {
             "fileName": "test.ps1",
