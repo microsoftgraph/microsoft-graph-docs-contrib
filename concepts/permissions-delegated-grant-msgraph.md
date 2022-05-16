@@ -1,17 +1,17 @@
 ---
-title: "How-To: Grant delegated permissions programmatically"
+title: "Grant delegated permissions using Microsoft Graph"
 description: "Learn how to use Microsoft Graph to grant API permissions to an app."
-author: "FaithOmbongi"
+author: "psignoret"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.custom: template-how-to
 ---
 
-# How-To: Grant delegated permissions programmatically
+# Grant delegated permissions using Microsoft Graph
 
-When you grant API permissions to a client app or user in Azure Active Directory (Azure AD), they're recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants recorded as objects that can be accessed, updated, or deleted like any other. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
-Use the following instructions to grant delegated permissions that are exposed by an API to an app. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
+Use the following instructions to grant delegated permissions that are exposed by an API to an app. Delegated permissions, also called scopes or OAuth2 permissions, allow an app to call an API on behalf of a signed-in user.
 
 > [!CAUTION]
 > Be careful! Permissions granted programmatically are not subject to review or confirmation. They take effect immediately.
@@ -20,10 +20,10 @@ Use the following instructions to grant delegated permissions that are exposed b
 
 To complete these instructions, you need the following resources and privileges:
 
-1. A working Azure AD tenant.
-2. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
-3. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions.
-4. Get the object ID of a resource service principal that exposes delegated permissions (scopes). In this guide, we'll use the Microsoft Graph resource service principal in our tenant.
+1. A working Azure AD tenant, and you must complete the following steps:
+    1. Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
+    2. In the app you've signed in to, consent to the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All` delegated permissions.
+    3. Get the object ID of a resource service principal that exposes delegated permissions (scopes). This article uses the Microsoft Graph service principal in the tenant as the resource service principal.
 
 > [!CAUTION]
 > The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or service to manage permission grants and elevate privileges for any app or user in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
@@ -105,7 +105,7 @@ Content-type: application/json
 
 ## Step 3: Grant a delegated permission to the service principal
 
-In this step, we'll grant the service principal a delegated permission (or scope) that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph in this tenant is `943603e4-e787-4fe9-93d1-e30f749aae3`. The object ID of our service principal is `ef969797-201d-4f6b-960c-e9ed5f31dab5`. We'll grant the `User.Read.All` scope to our service principal and grant consent on behalf of one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
+In this step, you'll grant the service principal a delegated permission (or scope) that's exposed by Microsoft Graph. In the following example, the object ID of Microsoft Graph in this tenant is `943603e4-e787-4fe9-93d1-e30f749aae3`. The object ID of your service principal is `ef969797-201d-4f6b-960c-e9ed5f31dab5`. You'll grant the `User.Read.All` scope to your service principal and grant consent on behalf of one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
 
 <!-- {
   "blockType": "request",
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-Alternatively, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the above except with the following changes:
+Alternatively, you can choose to grant consent on behalf of all users in the tenant. The request body is similar to the previous request body except with the following changes:
 - The **consentType** is `AllPrincipals`, indicating that you're consenting on behalf of all users in the tenant.
 - The **principalId** property isn't supplied or can be `null`.
 An example request body is as follows:
@@ -166,7 +166,7 @@ Content-type: application/json
 
 If you granted consent for all users in the tenant, the **consentType** in the above response object would be `AllPrincipals` and the **principalId** would be `null`.
 
-To confirm the delegated permissions assigned to the service principal, you run the following request.
+To confirm the delegated permissions assigned to the service principal on behalf of user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`, you run the following request.
 
 ### Request
 
@@ -175,7 +175,7 @@ To confirm the delegated permissions assigned to the service principal, you run 
   "name": "get-delegated-perms-sp-oauth2permissiongrants"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 'ef969797-201d-4f6b-960c-e9ed5f31dab5'
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 'ef969797-201d-4f6b-960c-e9ed5f31dab5' and principalId eq '1ed8ac56-4827-4733-8f80-86adc2e67db5' and consentType eq'Principal'
 ```
 
 ### Response
@@ -205,9 +205,9 @@ Content-type: application/json
 
 ## Step 4 [Optional]: Grant more delegated permissions to the service principal
 
-In this step, we'll grant our app another delegated permission that's exposed by Microsoft Graph, on behalf of only one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
+In this step, you'll grant the app another delegated permission that's exposed by Microsoft Graph, on behalf of only one user identified by user ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`.
 
-Because we already have a delegated permission grant scoped to principal ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`, resource ID `943603e4-e787-4fe9-93d1-e30f749aae39`, *and* client ID `ef969797-201d-4f6b-960c-e9ed5f31dab5`, we update the existing delegated permission grant using a PATCH request instead of running a new POST request.
+Because you already have a delegated permission grant scoped to principal ID `1ed8ac56-4827-4733-8f80-86adc2e67db5`, resource ID `943603e4-e787-4fe9-93d1-e30f749aae39`, *and* client ID `ef969797-201d-4f6b-960c-e9ed5f31dab5`, you update the existing delegated permission grant using a PATCH request instead of running a new POST request.
 
 <!-- {
   "blockType": "request",
@@ -235,7 +235,7 @@ HTTP/1.1 204 No Content
 
 ## Conclusion
 
-You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph bypasses [interactive consent](/azure/active-directory/develop/application-consent-experience) and should be used with caution.
+You've granted delegated permissions (or scopes) to a service principal. This method of granting permissions using Microsoft Graph is an alternative to [interactive consent](/azure/active-directory/develop/application-consent-experience) and should be used with caution.
 
 ## See also
 
