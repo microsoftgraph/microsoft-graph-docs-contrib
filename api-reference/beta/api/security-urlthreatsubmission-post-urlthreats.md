@@ -96,7 +96,7 @@ Content-type: application/json
   "id": "49c5ef5b-1f65-444a-e6b9-08d772ea2059",
   "createdDateTime": "2021-10-10T03:30:18.6890937Z",
   "contentType": "url",
-  "webUrl": "http://phishing.contoso.com"
+  "webUrl": "http://phishing.contoso.com",
   "status": "running",
   "source": "administrator",
   "createdBy": {
