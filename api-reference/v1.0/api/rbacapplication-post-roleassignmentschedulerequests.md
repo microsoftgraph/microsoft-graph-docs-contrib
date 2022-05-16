@@ -68,6 +68,8 @@ If successful, this method returns a `201 Created` response code and an [unified
 
 ### Example 1: Admin assigning a directory role to a principal
 
+In the following request, the admin creates a request to assign a role identified by `fdd7a751-b60b-444a-984c-02652fe8fa1c` to a principal identified by ID `071cc716-8147-4397-a5ba-b2105951cc0b`. The scope of their role is all directory objects in the tenant and the assignment is permanent.
+
 #### Request
 
 # [HTTP](#tab/http)
