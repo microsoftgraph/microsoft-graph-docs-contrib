@@ -7,9 +7,11 @@ ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
 
-# Use the To Do API in Microsoft Graph
+# Use the To Do API in Microsoft Graph (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Use the Microsoft Graph To Do API to create an app that connects with users' task in their mailbox. Build a variety of experiences with tasks, such as the following:
 
