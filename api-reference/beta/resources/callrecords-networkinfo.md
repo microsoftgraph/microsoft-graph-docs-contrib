@@ -27,6 +27,7 @@ Represents information about the network used in a call.
 |ipAddress|String|IP address of the media endpoint.|
 |linkSpeed|Int64|Link speed in bits per second reported by the network adapter used by the media endpoint.|
 |macAddress|String|The media access control (MAC) address of the media endpoint's network device.|
+|networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Network protocol used for the transmission of stream. Possible values are: `unknown`, `udp`, `tcp`.|
 |port|Int32|Network port number used by media endpoint.|
 |receivedQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.|
 |reflexiveIPAddress|String|IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.|
@@ -34,6 +35,7 @@ Represents information about the network used in a call.
 |relayPort|Int32|Network port number allocated on the media relay server by the media endpoint.|
 |sentQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.|
 |subnet|String|Subnet used for media stream by the media endpoint.|
+|traceRouteHops|[microsoft.graph.callRecords.traceRouteHop](callrecords-traceroutehop.md) collection|List of network trace route hops collected for this MediaStream.|
 |wifiBand|microsoft.graph.callRecords.wifiBand|WiFi band used by the media endpoint. Possible values are: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Estimated remaining battery charge in percentage reported by the media endpoint.|
 |wifiChannel|Int32|WiFi channel used by the media endpoint.|
@@ -67,6 +69,7 @@ The following is a JSON representation of the resource.
   "ipAddress": "String",
   "linkSpeed": 1024,
   "macAddress": "String",
+  "networkTransportProtocol": "String",
   "port": 1024,
   "receivedQualityEventRatio": "Double",
   "reflexiveIPAddress": "String",
@@ -74,6 +77,7 @@ The following is a JSON representation of the resource.
   "relayPort": 1024,
   "sentQualityEventRatio": "Double",
   "subnet": "String",
+  "traceRouteHops": [{"@odata.type": "microsoft.graph.callRecords.traceRouteHop"}],
   "wifiBand": "String",
   "wifiBatteryCharge": 1024,
   "wifiChannel": 1024,

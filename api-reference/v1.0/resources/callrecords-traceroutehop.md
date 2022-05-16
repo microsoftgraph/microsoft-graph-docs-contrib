@@ -1,0 +1,41 @@
+---
+title: "traceRouteHop resource type"
+description: "The traceRouteHop type"
+ms.localizationpriority: medium
+author: "maperend"
+ms.prod: "cloud-communications"
+doc_type: "resourcePageType"
+---
+
+# media resource type
+
+Namespace: microsoft.graph.callRecords
+
+Represents the network trace route hops collected for this MediaStream.
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|hopCount|Int32|The network path count of this hop that was used to compute the RTT.|
+|ipAddress|String|IP address used for this hop in the network trace.|
+|roundTripTime|String|The time from when trace route packet was sent from client to this hop and back to the client, denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.callRecords.traceRouteHop"
+}-->
+
+```json
+{
+  "hopCount": "Integer",
+  "ipAddress": "String",
+  "roundTripTime": "String"
+}
+```
+
+[ISO 8601]: https://www.iso.org/iso/iso8601
