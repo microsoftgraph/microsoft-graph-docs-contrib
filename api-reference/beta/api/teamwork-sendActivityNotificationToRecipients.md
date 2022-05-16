@@ -58,6 +58,7 @@ The following table shows the parameters that can be used with this action.
 | chainId            | Int64                                                        | Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
 | previewText        | [itemBody](../resources/itembody.md)                         | Preview text for the notification. Microsoft Teams will only show first 150 characters. |
 | templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview). |
+| teamsAppId         | String                                                       | Optional. Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Azure AD app ID are installed for the same recipient user. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There is an upper limit of 100 recipients in a single request. |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
