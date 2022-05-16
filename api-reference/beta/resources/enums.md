@@ -929,6 +929,15 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 |reassigned|
 
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|

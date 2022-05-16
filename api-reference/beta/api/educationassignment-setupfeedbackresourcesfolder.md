@@ -37,7 +37,7 @@ POST /classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
 | Authorization  | Bearer `{token}`. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+You need to provide an empty json `{}` as request body for this method.
 
 ## Response
 If successful, this method returns a 200 Ok response code and [educationAssignment](../resources/educationassignment.md) object in the request body.
