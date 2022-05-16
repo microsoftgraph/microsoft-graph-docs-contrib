@@ -12,12 +12,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"acl":  []Object {
 	}
 }
-options := &msgraphsdk.ExternalItemRequestBuilderPutOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"
-graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Put(options)
+graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Put(requestBody)
 
 
 ```

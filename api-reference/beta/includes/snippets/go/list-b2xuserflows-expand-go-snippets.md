@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.B2xUserFlowsRequestBuilderGetQueryParameters{
 	Expand: "identityProviders",
 }
-options := &msgraphsdk.B2xUserFlowsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.B2xUserFlowsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().B2xUserFlows().Get(options)
+result, err := graphClient.Identity().B2xUserFlows().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewContentTypeIdRequestBody()
 contentTypeId := "String"
 requestBody.SetContentTypeId(&contentTypeId)
-options := &msgraphsdk.AddCopyFromContentTypeHubRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ContentTypes().AddCopyFromContentTypeHub(site-id, list-id).Post(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ContentTypes().AddCopyFromContentTypeHub(site-id, list-id).Post(requestBody)
 
 
 ```

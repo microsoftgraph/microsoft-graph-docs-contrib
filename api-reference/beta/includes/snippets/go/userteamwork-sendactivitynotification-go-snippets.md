@@ -27,11 +27,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 		"value": "Task 12322",
 	}
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(options)
+graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(requestBody)
 
 
 ```

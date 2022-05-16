@@ -50,12 +50,9 @@ documentSet.SetWelcomePageColumns( []ColumnDefinition {
 		"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
 	}
 }
-options := &msgraphsdk.ContentTypeRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).Patch(requestBody)
 
 
 ```

@@ -11,12 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/education/classes/11006",
 }
-options := &msgraphsdk.EducationClassRequestBuilderPostOptions{
-	Body: requestBody,
-}
 educationSchoolId := "educationSchool-id"
 educationClassId := "educationClass-id"
-graphClient.Education().SchoolsById(&educationSchoolId).ClassesById(&educationClassId).Post(options)
+graphClient.Education().SchoolsById(&educationSchoolId).ClassesById(&educationClassId).Post(requestBody)
 
 
 ```

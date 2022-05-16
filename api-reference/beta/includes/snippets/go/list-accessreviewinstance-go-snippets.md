@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.InstancesRequestBuilderGetQueryParameters{
 	Top: 100,
 	Skip: 0,
 }
-options := &msgraphsdk.InstancesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.InstancesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).Instances().Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).Instances().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

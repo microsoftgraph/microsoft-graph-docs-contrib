@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use Microsoft Graph to manage administrative search answer results in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
+You can use Microsoft Graph to [manage administrative search answer results](/graph/search-concept-answers) in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
 
 Requests to manage administrative search answers are performed by global administrators, search administrators, search editors, or are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
 
@@ -71,6 +71,6 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## Next steps
 
-- See the [Microsoft Search API overview](/graph/search-concept-overview).
+- Learn about [setting up administrative search answers for users in an organization](/graph/search-concept-answers).
 - Drill down on the methods, properties, and relationships of the answer type resources: [bookmarks](search-bookmark.md), [acronyms](search-acronym.md), and [QnAs](search-qna.md).
-
+- See the [Microsoft Search API overview](/graph/search-concept-overview).
