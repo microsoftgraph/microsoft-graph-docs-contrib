@@ -88,7 +88,7 @@ The following is an example of a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateRemoval
+POST https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels/evaluateRemoval
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
