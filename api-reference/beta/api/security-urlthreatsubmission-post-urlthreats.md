@@ -108,7 +108,6 @@ Content-type: application/json
   },
   "result": {
   	"detail": "underInvestigation"
-  	...
   }
   "adminReview": null,
   "tenantId" : "39238e87-b5ab-4ef6-a559-af54c6b07b42"
