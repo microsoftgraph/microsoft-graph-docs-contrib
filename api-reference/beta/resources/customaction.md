@@ -1,6 +1,6 @@
 ---
 title: "customAction resource type (deprecated)"
-description: "Represents any custom actions that a label may provide, if configured by the administrator. (deprecated)"
+description: "Represents any custom actions that a label may provide, if configured by the administrator."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

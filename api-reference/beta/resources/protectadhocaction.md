@@ -1,6 +1,6 @@
 ---
 title: "protectAdhocAction resource type (deprecated)"
-description: "Informs the application that ad hoc protection should be applied. (deprecated)"
+description: "Informs the application that ad hoc protection should be applied."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

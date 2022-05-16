@@ -1,6 +1,6 @@
 ---
 title: "justifyAction resource type (deprecated)"
-description: "Indicates that a justification is required for the specified operation. (deprecated)"
+description: "Indicates that a justification is required for the specified operation."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

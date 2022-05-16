@@ -1,6 +1,6 @@
 ---
 title: "applyLabelAction resource type (deprecated)"
-description: "Represents a set of actions that should be taken to apply or update a label. (deprecated)"
+description: "Represents a set of actions that should be taken to apply or update a label."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

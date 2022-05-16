@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionLabel: evaluateClassificationResults (deprecated)"
-description: "Evaluate which label to apply based on existing content info and a classification result. (deprecated)"
+description: "Evaluate which label to apply based on existing content info and a classification result."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

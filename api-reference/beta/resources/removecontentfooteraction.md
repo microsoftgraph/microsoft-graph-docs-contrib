@@ -1,6 +1,6 @@
 ---
 title: "removeContentFooterAction resource type (deprecated)"
-description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable. (deprecated)"
+description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
