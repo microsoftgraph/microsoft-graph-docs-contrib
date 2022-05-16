@@ -8,101 +8,9 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Microsoft Graph permissions reference
 
-For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions.
+For your app to access data in Microsoft Graph, it must be granted the permissions it needs. This topic lists the permissions associated with all Microsoft Graph APIs. For more guidance about how to use the permissions, see the [permissions overview](permissions-overview.md).
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
-
-To learn more about how permissions work, see [Authentication and authorization basics](auth/auth-concepts.md#microsoft-graph-permissions), and watch the following video.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
-
-## Microsoft Graph permission names
-
-Microsoft Graph permission names follow a simple pattern: _resource.operation.constraint_. For example, _User.Read_ grants permission to read the profile of the signed-in user, _User.ReadWrite_ grants permission to read and modify the profile of the signed-in user, and _Mail.Send_ grants permission to send mail on behalf of the signed-in user.
-
-The _constraint_ element of the name determines the potential extent of access your app will have within the directory. Currently Microsoft Graph supports the following constraints:
-
-* **All** grants permission for the app to perform the operations on all of the resources of the specified type in a directory. For example, _User.Read.All_ potentially grants the app privileges to read the profiles of all of the users in a directory.
-* **Shared** grants permission for the app to perform the operations on resources that other users have shared with the signed-in user. This constraint is mainly used with Outlook resources like mail, calendars, and contacts. For example, _Mail.Read.Shared_, grants privileges to read mail in the mailbox of the signed-in user as well as mail in mailboxes that other users in the organization have shared with the signed-in user.
-* **AppFolder** grants permission for the app to read and write files in a dedicated folder in OneDrive. This constraint is only exposed on [Files permissions](#files-permissions) and is only valid for Microsoft accounts.
-* If **no constraint** is specified the app is limited to performing the operations on the resources owned by the signed-in user. For example, _User.Read_ grants privileges to read the profile of the signed-in user only, and _Mail.Read_ grants permission to read only mail in the mailbox of the signed-in user.
-
-> [!NOTE]
-> In delegated scenarios, your app's access is also limited by the privileges of the signed-in user. These privileges are determined by the user's assigned roles and their relationship to the data being accessed.
-> For example, if the signed-in user doesn't have the appropriate privileges to view a file, then the client app won't be able to read that file either, even if the app is granted the `File.Read.All` delegated permission.
-
-## Microsoft accounts and work or school accounts
-
-Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both.
-
-## Limits on requested permissions per app
-
-Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for your app, shown in the app's manifest. 
-
-| signInAudience                     | Allowed users                                            | Maximum permissions the app can request   | Maximum Microsoft Graph permissions the app can request   | Maximum permissions that can be consented in a single request         |
-| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
-| AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
-| AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
-| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
-| AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |
-
-## Permissions availability status
-
-Microsoft Graph permissions in the [Azure portal](https://portal.azure.com/) are generally available and in GA status for all apps to use, except for a few sets that are in preview or private preview status. Permissions in preview are available to the public; they may change and may not be promoted to GA status. Permissions in private preview status are not and may never become available to the public. Do not use permissions in preview or private preview status in production apps.
-
-## User and group search limitations for guest users in organizations
-
-User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
-
-If the signed-in user is a guest user, depending on the permissions an app has been granted, it can read the profile of a specific user or group (for example, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`); however, it cannot perform queries against the `/users` or `/groups` resource set that potentially return more than a single resource.
-
-With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
-
-## Limited information returned for inaccessible member objects
-
-Container objects such as groups support members of various types, for example users and devices. When an application queries the membership of a container object and does not have permission to read a certain type, members of that type are returned but with limited information.  The application receives a 200 response and a collection of objects.  Complete information is returned for the object types that the application has permissions to read.  For the object types which the application does not have permission to read, only the the object type and ID are returned.
-
-This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
-
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
-
-```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
-```
-
-The following is the JSON response:
-
-```json
-{
-"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl)",
-    "value":[
-        {
-            "@odata.type":"#microsoft.graph.user",
-            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
-            "displayName":"Jane Dane",
-            "createdDateTime":"2019-09-18T09:06:51Z",
-            "deletedDateTime":null
-        },
-        {
-            "@odata.type":"#microsoft.graph.group",
-            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
-            "displayName":"Group 1",
-            "description":null,
-            "createdDateTime":"2019-10-24T01:34:35Z",
-            "deletedDateTime":null
-        },
-        {
-            "@odata.type":"#microsoft.graph.device",
-            "id": "d282309e-f91d-43b6-badb-9e68aa4b4fc8",
-            "accountEnabled":null,
-            "deviceId":null,
-            "displayName":null,
-            "operatingSystem":null,
-            "operatingSystemVersion":null
-        }
-    ]
-}
-```
 
 ## Access reviews permissions
 
@@ -2608,6 +2516,8 @@ This section shows some common scenarios that target [user](/graph/api/resources
 
 ## All permissions and IDs
 
+<!-- this table is auto-generated don't edit it manually! -->
+
 | Permission                                              | Type        | ID                                   |
 |---------------------------------------------------------|-------------|--------------------------------------|
 | AccessReview.Read.All                                   | Delegated   | ebfcd32b-babb-40f4-a14b-42706e83bd28 |
@@ -3196,3 +3106,8 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | WorkforceIntegration.Read.All                           | Delegated   | f1ccd5a7-6383-466a-8db8-1a656f7d06fa |
 | WorkforceIntegration.ReadWrite.All                      | Delegated   | 08c4b377-0d23-4a8b-be2a-23c1c1d88545 |
 | WorkforceIntegration.ReadWrite.All                      | Application | 202bf709-e8e6-478e-bcfd-5d63c50b68e3 |
+
+
+## See also
+
++ [Microsoft Graph permissions overview](permissions-overview.md)

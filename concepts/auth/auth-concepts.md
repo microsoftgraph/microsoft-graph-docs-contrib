@@ -38,49 +38,23 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
 ```
 
+For more information, see [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2)
+
+## Access scenarios
+
+[!INCLUDE [msgraph-access-scenarios](../includes/msgraph-access-scenarios.md)]
+
 ## Microsoft Graph permissions
 
-Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app. When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, permissions can be pre-consented to by an administrator when the app is installed.
+Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app.
 
-### Best practices for requesting permissions
+Microsoft Graph exposes two types of permissions to support its [access scenarios](/graph/auth/auth-concepts#access-scenarios). These are **delegated permissions** and **application permissions**. Delegated permissions allow the application to act on a user's behalf while application permissions allow the app to access data without a signed-in user present.
+
+Not all permissions are valid for both Microsoft accounts and work or school accounts. Depending on the account type that you defined when you registered the app with the Microsoft identity platform, some permissions may not be available to be granted to your app.
+
+When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, permissions can be pre-consented to by an administrator when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
-
-### Delegated and application permissions
-
-Microsoft Graph has two types of permissions.
-
-- **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making calls to Microsoft Graph. Some delegated permissions can be consented by non-administrative users, but some higher-privileged permissions require [administrator consent](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
-
-- **Application permissions** are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can only be [consented by an administrator](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant).
-
-**Effective permissions** are the permissions that your app has when making requests to Microsoft Graph. The effective permissions are determined by a combination of the Microsoft Graph permissions you've granted to the app, *and* the privileges of the signed-in user or the calling app. Within organizations, the policy or membership in one or more roles determine the privileges of the signed-in user or an app. It's important to understand the difference between the delegated and application permissions your app has and its effective permissions when making calls to Microsoft Graph.
-
-#### Effective permissions in delegated vs application-only permission scenarios
-
-- For delegated permissions, the *effective permissions* of your app are the least-privileged intersection of the delegated permissions the app has been granted (by consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user.
-
-  Suppose that your app has been granted the *User.ReadWrite.All* delegated permission and calls the [Update user](/graph/api/user-update) API. This permission nominally grants your app permission to read and update the profile of every user in an organization. However, because of effective permissions, the following restrictions apply to the privileges of the signed-in user:
-  + If the signed-in user is a global administrator, your app can update the profile of every user in the organization.
-  + If the signed-in user isn't in an administrator role, your app can update *only* the profile of the signed-in user. It won't update the profiles of other users in the organization because the signed-in user doesn't have those privileges.
-
-- For application permissions, the *effective permissions* of your app are the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
-
-##### Comparison of delegated and application permissions
-
-
-| <!-- No header--> | Delegated permissions | Application permissions |
-|--|--|--|
-| App type scenarios | Web / Mobile / single-page app (SPA) | Web / Daemon |
-| Access context | [Get access on-behalf of a user](../auth-v2-user.md) | [Get access as a service](../auth-v2-service.md) |
-| Who can consent | <li> Users can consent for their data <li> Admins can consent for all users | Only admin can consent |
-| Other names | <li> scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
-| Result of consent | [oAuth2PermissionGrants](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignments](/graph/api/resources/approleassignment) |
-
-
-:::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
-
-For a complete list of delegated and application permissions for Microsoft Graph, and which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
 
 
 ## Access tokens

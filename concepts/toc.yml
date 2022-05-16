@@ -545,7 +545,12 @@ items:
           - name: Get access without a user
             href: auth-v2-service.md
           - name: Permissions
-            href: permissions-reference.md
+            items:
+            - name: Permissions overview
+              href: permissions-overview.md
+            - name: Permissions reference
+              displayName: Microsoft Graph permissions list
+              href: permissions-reference.md
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
