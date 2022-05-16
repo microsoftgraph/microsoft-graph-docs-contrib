@@ -134,11 +134,9 @@ Content-type: application/json
     }
   },
   "result": {
-  	"detail": "allowedByTenant",
+    "detail": "allowedByTenant",
     "category": "notSpam",
-    "policyType": "antiPhishPolicy",
-    "policyId": "some-policy-id-if-hit"
-  	"userMailboxSetting": "isFromDomainInDomainSafeList,isJunkMailRuleEnabled",
+    "userMailboxSetting": "isFromDomainInDomainSafeList,isJunkMailRuleEnabled",
     "detectedUrls": ["contoso.com"]
     "detectedFiles": [
         {
