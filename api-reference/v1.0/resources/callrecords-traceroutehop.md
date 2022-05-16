@@ -2,12 +2,12 @@
 title: "traceRouteHop resource type"
 description: "The traceRouteHop type"
 ms.localizationpriority: medium
-author: "maperend"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
-# media resource type
+# traceRouteHop resource type
 
 Namespace: microsoft.graph.callRecords
 
