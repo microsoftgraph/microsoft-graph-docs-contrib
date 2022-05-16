@@ -1,18 +1,18 @@
 ---
-title: "Update tenant admin settings"
-description: "Update the properties of a tenant admin settings resource. Allows users to update organization-level settings that pertain to SharePoint and OneDrive."
+title: "Update settings (tenantAdmin)"
+description: "Update one or more tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update tenant admin settings
+# Update settings (tenantAdmin)
 Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an organization's [tenant admin settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
+Update one or more tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,10 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|SharePointTenantSettings.ReadWrite.All|
 
-## User Roles
-In user-only or delegated scenario, a user is required to be one of the following admin or partial-admin roles to call this API. To learn more, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-* Global Admin
-* SharePoint Admin
+When calling on behalf of a user, the user needs to belong to one of the following admin roles. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles):
+* Global Administrator
+* SharePoint Administrator
 
 ## HTTP request
 
@@ -50,10 +49,13 @@ The following table shows the properties that can be edited for a [settings](../
 
 |Property|Type|Description|
 |:---|:---|:---|
-| allowedDomainGuidsForSyncApp                       | GUID collection              | Collection of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                                 |
-| deletedUserPersonalSiteRetentionPeriodInDays       | Int                          | The number of days for preserving a deleted user's OneDrive.                                                                                                                                       |
-| excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                 |
-| imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant.                                                                                                                                                                      |
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+| allowedDomainGuidsForSyncApp                       | GUID collection              | Collection of trusted domain GUIDs for the OneDrive sync app.                                                                                                                                                  |
+| deletedUserPersonalSiteRetentionPeriodInDays       | Int32                        | The number of days for preserving a deleted user's OneDrive.                                                                                                                                                   |
+| excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                           |
+| imageTaggingOption                                 | imageTaggingChoice           | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                                                                                       |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates if comments are allowed on modern site pages in SharePoint.                                                                                                                                          |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates if push notifications are enabled for OneDrive events.                                                                                                                                               |
 | isLoopEnabled                                      | Boolean                      | Indicates if Fluid Framework is allowed on SharePoint sites.                                                                                                                                                   |
@@ -67,14 +69,15 @@ The following table shows the properties that can be edited for a [settings](../
 | isSitesStorageLimitAutomatic                       | Boolean                      | Indicates if site storage space is automatically managed or if specific storage limits are set per site.                                                                                                       |
 | isSyncButtonHiddenOnPersonalSite                   | Boolean                      | Indicates if the sync button in OneDrive is hidden.                                                                                                                                                            |
 | isUnmanagedSyncAppForTenantRestricted              | Boolean                      | Indicates if users are allowed to sync files only on PCs joined to specific domains.                                                                                                                           |
-| personalSiteDefaultStorageLimitInMB                | Long                         | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                               |
-| sharingAllowedDomainList                           | String collection            | Collection of email domains that is allowed for sharing outside the organization.                                                                                                                                 |
-| sharingBlockedDomainList                           | String collection            | Collection of email domains that is blocked for sharing outside the organization.                                                                                                                                 |
-| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant.                                                                                                                                                                                      |
-| sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains.                                                                                                                                                                        |
-| siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                               |
-| siteCreationDefaultStorageLimitInMB                | Int                          | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                |
-| tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites.                                                                                                                                                                  |
+| personalSiteDefaultStorageLimitInMB                | Int64                        | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                                           |
+| sharingAllowedDomainList                           | String collection            | Collection of email domains that is allowed for sharing outside the organization.                                                                                                                              |
+| sharingBlockedDomainList                           | String collection            | Collection of email domains that is blocked for sharing outside the organization.                                                                                                                              |
+| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`,`existingExternalUserSharingOnly`.                                                |
+| sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                                                                        |
+| siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
+| siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
+| tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites.                                                                                                                                                      |
+
 
 
 
