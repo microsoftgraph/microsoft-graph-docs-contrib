@@ -53,7 +53,7 @@ Inherits from [entity](../resources/entity.md).
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
 | tenantDefaultTimezone                              | String                       | The default timezone of a tenant for newly created sites.                                                                                                                                                      |
 
-### imageTaggingOption values
+### imageTaggingChoice values
 | Member                          | Description                                                                                                           |
 | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------|
 | disabled                        | The image tagging option for the tenant is disabled.                                                                  |
