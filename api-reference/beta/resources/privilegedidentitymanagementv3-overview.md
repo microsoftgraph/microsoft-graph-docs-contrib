@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # Overview of role management through the privileged identity management (PIM) API
 
-Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](/azure/active-directory/governance/identity-governance-overview) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](/azure/active-directory/governance/identity-governance-overview) that enables you to manage, control, and monitor access to important resources in your organization. This access is enabled through privileged roles and role-based access control (RBAC) and can be granted to users, groups, or service principals. The resources can be in Azure AD, Azure, and other Microsoft cloud services such as Microsoft 365 or Microsoft Intune.
 
 The Microsoft Graph PIM API for role management allows you to govern privileged access and limit excessive access. This article introduces the governance capabilities of PIM APIs in Microsoft Graph.
 
@@ -64,7 +64,7 @@ The following table lists scenarios for using PIM to manage Azure AD role settin
 |Scenarios  |API  |
 |---------|---------|
 |Retrieve role management policies and associated rules or settings   |   [List unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)      |
-|Retrieve a role management policy and it's associated rules or settings |   [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)      |
+|Retrieve a role management policy and its associated rules or settings |   [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)      |
 |Retrieve the rules or settings defined for role management policy | [List rules](../api/unifiedrolemanagementpolicy-list-rules.md)       |
 |Retrieve a rule or settings defined for a role management policy |  [Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)      |
 |Update a rule or setting defined for a role management policy|[Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|
@@ -94,13 +94,8 @@ For more information about permissions to call PIM APIs, see the [Microsoft Grap
 
 The PIM API requires an Azure AD Premium P2 license. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
-## Next steps
-
-+ [unifiedRoleAssignmentScheduleRequest resource type](unifiedroleassignmentschedulerequest.md)
-+ [unifiedRoleEligibilityScheduleRequest resource type](unifiedroleeligibilityschedulerequest.md)
-+ You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
-
 ## See also
 
 + [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
++ You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
