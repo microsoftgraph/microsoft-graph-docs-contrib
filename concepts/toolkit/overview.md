@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Graph Toolkit: UI components and authentication providers for Microsoft Graph"
+title: "Microsoft Graph Toolkit overview"
 description: "Microsoft Graph Toolkit is a collection of authentication providers and reusable, framework-agnostic web components for accessing and working with Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Microsoft Graph Toolkit: UI components and authentication providers 
+# Microsoft Graph Toolkit overview 
 
 Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
