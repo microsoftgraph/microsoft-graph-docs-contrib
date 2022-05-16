@@ -2,6 +2,7 @@
   "changelog": [
     {
       "ChangeList": [
+        {
           "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
           "ApiChange": "Resource",
           "ChangedApiName": "educationTeamsAppResource",
