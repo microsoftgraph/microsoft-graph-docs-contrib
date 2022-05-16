@@ -12,12 +12,9 @@ site := msgraphsdk.NewSite()
 requestBody.SetSite(site)
 webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
 site.SetWebUrl(&webUrl)
-options := &msgraphsdk.SiteSourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 legalHoldId := "legalHold-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).SiteSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).SiteSources().Post(requestBody)
 
 
 ```

@@ -75,7 +75,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
-|replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
+|replies|[chatMessage](chatmessage.md)| Replies for a specified message. Supports `$expand` for channel messages. |
 |hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
 
 ## JSON representation

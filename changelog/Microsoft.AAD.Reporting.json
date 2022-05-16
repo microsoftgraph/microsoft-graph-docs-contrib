@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmCompromised",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/confirmCompromised?view=graph-rest-beta) method to the [signin](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Description": "Added the [confirmCompromised](https://docs.microsoft.com/en-us/graph/api/signin-confirmCompromised?view=graph-rest-beta) method to the [signin](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
           "Target": "signIn"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "confirmSafe",
           "ChangeType": "Addition",
-          "Description": "Added the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/confirmSafe?view=graph-rest-beta) method to the [signIn](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
+          "Description": "Added the [confirmSafe](https://docs.microsoft.com/en-us/graph/api/signin-confirmSafe?view=graph-rest-beta) method to the [signIn](https://docs.microsoft.com/en-us/graph/api/signin?view=graph-rest-beta) resource.",
           "Target": "signIn"
         }
       ],

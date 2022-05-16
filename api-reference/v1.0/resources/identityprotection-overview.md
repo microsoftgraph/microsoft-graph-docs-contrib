@@ -38,6 +38,10 @@ For specific guidance and additional information, see [Identify and remediate ri
 
 Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license.
 
+## How much data is available?
+
+The availability of risk data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+
 ## See also
 
 * [About Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)

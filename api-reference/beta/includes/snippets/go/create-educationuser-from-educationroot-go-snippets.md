@@ -55,10 +55,7 @@ state := "CA"
 residenceAddress.SetState(&state)
 street := "12345 Main St."
 residenceAddress.SetStreet(&street)
-options := &msgraphsdk.UsersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Users().Post(options)
+result, err := graphClient.Education().Users().Post(requestBody)
 
 
 ```

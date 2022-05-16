@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendarGroup()
 name := "Personal events"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().CalendarGroups().Post(options)
+result, err := graphClient.Me().CalendarGroups().Post(requestBody)
 
 
 ```

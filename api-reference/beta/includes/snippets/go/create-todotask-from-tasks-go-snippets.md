@@ -18,11 +18,8 @@ requestBody.SetLinkedResources( []LinkedResource {
 		"displayName": "Microsoft",
 	}
 }
-options := &msgraphsdk.TasksRequestBuilderPostOptions{
-	Body: requestBody,
-}
 todoTaskListId := "todoTaskList-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).Tasks().Post(options)
+result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).Tasks().Post(requestBody)
 
 
 ```

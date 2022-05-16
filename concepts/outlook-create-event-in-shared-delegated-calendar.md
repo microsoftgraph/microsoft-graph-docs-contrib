@@ -405,7 +405,6 @@ Content-type: application/json
     "flag": {
         "flagStatus": "notFlagged"
     },
-    "event@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('662b947c-d9a1-4064-926c-eba1316d4462')/messages('AAMkADADVj3fyAABZ5hYdAAA%3D')/microsoft.graph.eventMessage/microsoft.graph.eventMessage/event/$entity",
     "event": {
         "@odata.etag": "W/\"yvNriWFaOEaxVdwA1Y938gAAX+T7Jg==\"",
         "id": "AAMkADADVj3fyAABZ5ieyAAA=",

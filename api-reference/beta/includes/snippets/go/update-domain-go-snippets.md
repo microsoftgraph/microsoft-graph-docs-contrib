@@ -14,11 +14,8 @@ requestBody.SetSupportedServices( []String {
 	"Email",
 	"OfficeCommunicationsOnline",
 }
-options := &msgraphsdk.DomainRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 domainId := "domain-id"
-graphClient.DomainsById(&domainId).Patch(options)
+graphClient.DomainsById(&domainId).Patch(requestBody)
 
 
 ```
