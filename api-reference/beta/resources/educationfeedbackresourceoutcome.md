@@ -1,6 +1,6 @@
 ---
 title: "educationFeedbackResourceOutcome resource type"
-description: "An educationOutcome that gives feedback in the form of document."
+description: "Represents feedback on an educationOutcome object in the form of document."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -19,21 +19,21 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Setup Feedback Resources Folder](../api/educationassignment-setupfeedbackresourcesfolder.md) | [educationAssignment](educationassignment.md) | Create a SharePoint folder to upload files as feedback resources. |
-| [Create Feedback Resource Outcome](../api/educationsubmission-post-feedbackresource.md) | [educationOutcome](educationoutcome.md) | Create new educationFeedbackResourceOutcome for Submission. |
-| [Delete Feedback Resource Outcome](../api/educationsubmissionfeedbackresource-delete.md) | None | Delete educationFeedbackResourceOutcome from Submission. |
+| [Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) | [educationAssignment](educationassignment.md) | Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). |
+| [Create educationFeedbackResourceOutcome](../api/educationsubmission-post-feedbackresource.md) | [educationOutcome](educationoutcome.md) | Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. |
+| [Delete educationFeedbackResourceOutcome](../api/educationsubmissionfeedbackresource-delete.md) | None | Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Unique identifier for the educationFeedbackResourceOutcome.|
 |feedbackResource|[educationResource](educationResource.md)|The actual feedback resource.|
+|id|String|Unique identifier for the **educationFeedbackResourceOutcome**.|
 |resourceStatus|educationFeedbackResourceOutcomeStatus|The possible values are: `notPublished`, `pendingPublish`, `published`, `failedPublish`, and `unknownFutureValue`.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -50,8 +50,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
   "feedbackResource": {"@odata.type": "microsoft.graph.educationResource"},
+  "id": "String (identifier)",
   "resourceStatus": {"@odata.type": "microsoft.graph.educationFeedbackResourceOutcomeStatus"}
 }
 ```
