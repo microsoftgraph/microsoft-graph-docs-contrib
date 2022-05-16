@@ -49,7 +49,7 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. Select **Register**.
 1. On the left menu, select **API Permissions**.
 1. On the horizontal menu, select **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
-1. Type `Mail.`, expand the **Mail** options, and then select **Mail.Read**.
+1. Type `Mail.`, expand the **Mail** options, and then select `Mail.Read`.
 1. Select **Application permissions**, type `User.`, and then select **Application Permissions**.
 1. Expand the **User** options, and then select `User.Read.All`.
 1. Select **Add permissions**.
@@ -58,7 +58,7 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. On the left menu, select **Certificates and secrets**.
 1. Select **New client secret**, enter a description, and then select **Add**. Hover over the new client secret **Value** and copy it; you'll need this in step 4.
 
-The Azure AD application now has permissions to make requests on behalf of a user to call `Mail.Read` and as an application for `User.Read.All`.
+The application now has two permissions configured. `Mail.Read` is added as a delegated permission, which is a permission that requires a signed-in user. The application can read mail on behalf of the user. `User.Read.All` is added as an application permission, which is a permission that does not require a signed-in user. The application can read users in Azure AD.
 
 ## Step 4: Configure authentication
 
