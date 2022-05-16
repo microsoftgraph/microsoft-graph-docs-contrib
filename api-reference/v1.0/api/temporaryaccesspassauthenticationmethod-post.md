@@ -11,9 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object on a user. A user can only have one Temporary Access Pass. The passcode can be used between the start and end time of the Temporary Access Pass. If the user requires a new Temporary Access Pass:
-* While the current Temporary Access Pass is valid – the admin needs to delete the existing Temporary Access Pass and create a new pass on the user. Deleting a valid Temporary Access Pass will revoke the user’s sessions. 
-* After the Temporary Access Pass has expired – a new temporary access pass overrides the current temporary access pass and doesn't revoke the user’s sessions.
-
+* While the current Temporary Access Pass is valid – the admin can create a new Temporary Access Pass for a user. The previous Temporary Access Pass will be deleted and a new Temporary Access Pass will be created.
 
 ## Permissions
 
