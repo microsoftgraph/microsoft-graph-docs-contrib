@@ -94,8 +94,7 @@ The following is an example of a request.
 <!-- {
   "blockType": "request",
   "truncated": true,
-  "@odata.type":"microsoft.graph.tenantAdmin.settings",
-  "name": "update_tenant_settings"
+  "@odata.type":"microsoft.graph.tenantAdmin.settings"
 }
 -->
 ``` http
