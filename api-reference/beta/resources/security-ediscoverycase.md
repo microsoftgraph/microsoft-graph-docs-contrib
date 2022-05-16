@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryCase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "In the context of eDiscovery, contains custodians, holds, collections, review sets, and exports."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,10 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [case](../resources/security-case.md).
+In the context of eDiscovery, contains custodians, holds, searches, review sets, and exports. For details, see [Overview of Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## Methods
 |Method|Return type|Description|
@@ -46,28 +43,40 @@ Inherits from [case](../resources/security-case.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|closedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|closedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md).|
-|description|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md).|
-|displayName|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md).|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [case](../resources/security-case.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md).|
-|status|caseStatus|**TODO: Add Description** Inherited from [case](../resources/security-case.md).The possible values are: `unknown`, `active`, `pendingDelete`, `closing`, `closed`, `closedWithError`, `unknownFutureValue`.|
+|closedBy|[microsoft.graph.identitySet](../resources/identityset.md)|The user who closed the case.|
+|closedDateTime|DateTimeOffset|The date and time when the case was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the case.|
+|createdDateTime|DateTimeOffset|The date and time when the entity was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|description|String|The case description.|
+|displayName|String|The case name.|
+|externalId|String|The external case number for customer reference.|
+|id|String|The ID for the eDiscovery case. Read-only. |
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|The last user who modified the case.
+|lastModifiedDateTime|DateTimeOffset|The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|status|caseStatus|The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.
+
+### caseStatus values
+
+|Member|Description|
+|:----|-----------|
+| unknown | Case status is unknown. |
+| active | Case is active. |
+| pendingDelete | Case was deleted, but the delete has not been fully transacted. |
+| closing | Case was closed, but the operation has not been fully transacted. |
+| closed | The case is closed. |
+| closedWithError | The case is closed, but there were errors releasing holds in the case. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|custodians|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|**TODO: Add Description**|
-|legalHolds|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|**TODO: Add Description**|
-|noncustodialDataSources|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|**TODO: Add Description**|
-|operations|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|**TODO: Add Description**|
-|reviewSets|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|**TODO: Add Description**|
-|searches|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) collection|**TODO: Add Description**|
-|settings|[ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|**TODO: Add Description**|
-|tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|**TODO: Add Description**|
+|custodians|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Returns a list of case **ediscoveryCustodian** objects for this **case**. Read-only.|
+|legalHolds|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) collection|Returns a list of case **eDiscoveryHoldPolicy** objects for this **case**. Read-only.|
+|noncustodialDataSources|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Returns a list of case **ediscoveryNoncustodialDataSource** objects for this **case**.  Read-only. |
+|operations|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Returns a list of case **caseOperation** objects for this **case**. Read-only.|
+|reviewSets|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Returns a list of **eDiscoveryReviewSet** objects in the case. Read-only.|
+|searches|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) collection|Returns a list of **eDiscoverySearch** objects associated with this case. Read-only.|
+|settings|[ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Returns a list of **eDIscoverySettings** objects in the case. Read-only.|
+|tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns a list of **ediscoveryReviewTag** objects associated to this case. Read-only.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
