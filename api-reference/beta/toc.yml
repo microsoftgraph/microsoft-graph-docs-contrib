@@ -14533,8 +14533,25 @@ items:
             href: api/security-ediscoverycase-list-settings.md
           - name: Update settings
             href: api/security-ediscoverycase-post-settings.md
-          - name: Reset to default
-            href: api/ediscovery-casesettings-resettodefault.md # TODO : docstub missed this
+        - name: Operation
+          href : resources/security-caseoperation.md
+          items:
+           - name: List 
+             href: api/security-ediscoverycase-list-operations.md
+           - name: index operation
+             href: resources/security-ediscoveryindexoperation.md
+           - name: hold operation
+             href: resources/security-ediscoveryholdoperation.md
+           - name: purge data operation
+             href: resources/security-ediscoverypurgedataoperation.md
+           - name: estimate operation
+             href: resources/security-ediscoveryestimateoperation.md
+           - name: add to review set operations
+             href: resources/security-ediscoveryaddtoreviesetoperation.md
+           - name: tag operation
+             href: resources/security-ediscoverytagoperation.md
+           - name: export operation
+             href: resources/security-ediscoveryexportoperation.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:
@@ -14646,46 +14663,48 @@ items:
             href: api/security-ediscoverycase-post-reviewsets.md
           - name: Get
             href: api/security-ediscoveryreviewset-get.md
+          - name: List files
+            href: api/security-ediscoveryreviewset-list-files.md
           - name: Export
             href: api/security-ediscoveryreviewset-export.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-        - name: Review set query
-          href: resources/security-ediscoveryreviewsetquery.md
-          items:
-          - name: List
-            href: api/security-ediscoveryreviewset-list-queries.md
-          - name: Create
-            href: api/security-ediscoveryreviewset-post-queries.md
-          - name: Get
-            href: api/security-ediscoveryreviewsetquery-get.md
-          - name: Update
-            href: api/security-ediscoveryreviewsetquery-update.md
-          - name: Delete
-            href: api/security-ediscoveryreviewset-delete-queries.md
-          - name: Export
-            href: api/security-ediscoveryreviewsetquery-export.md
-          - name: Apply tags
-            href: api/security-ediscoveryreviewsetquery-applytags.md
-          - name: Run
-            href: api/security-ediscoveryreviewsetquery-run.md
-        - name: Review set tag
-          href: resources/security-ediscoveryreviewtag.md
-          items:
-          - name: List
-            href: api/security-ediscoveryfile-list-tags.md
-          - name: Create
-            href: api/security-ediscoveryfile-post-tags.md
-          - name: Get
-            href: api/security-ediscoveryreviewtag-get.md
-          - name: Update
-            href: api/security-ediscoveryreviewtag-update.md
-          - name: Delete
-            href: api/security-ediscoveryfile-delete-tags.md
-          - name: List child tags
-            href: api/security-ediscoveryfile-list-tags.md
-          - name: List tags as hierarchy
-            href: api/security-ediscoveryreviewtag-ashierarchy.md
+          - name: Review set query
+            href: resources/security-ediscoveryreviewsetquery.md
+            items:
+            - name: List
+              href: api/security-ediscoveryreviewset-list-queries.md
+            - name: Create
+              href: api/security-ediscoveryreviewset-post-queries.md
+            - name: Get
+              href: api/security-ediscoveryreviewsetquery-get.md
+            - name: Update
+              href: api/security-ediscoveryreviewsetquery-update.md
+            - name: Delete
+              href: api/security-ediscoveryreviewset-delete-queries.md
+            - name: Export
+              href: api/security-ediscoveryreviewsetquery-export.md
+            - name: Apply tags
+              href: api/security-ediscoveryreviewsetquery-applytags.md
+            - name: Run
+              href: api/security-ediscoveryreviewsetquery-run.md
+          - name: Review set tag
+            href: resources/security-ediscoveryreviewtag.md
+            items:
+            - name: List
+              href: api/security-ediscoveryfile-list-tags.md
+            - name: Create
+              href: api/security-ediscoveryfile-post-tags.md
+            - name: Get
+              href: api/security-ediscoveryreviewtag-get.md
+            - name: Update
+              href: api/security-ediscoveryreviewtag-update.md
+            - name: Delete
+              href: api/security-ediscoveryreviewtag-delete.md
+            - name: List child tags
+              href: api/security-ediscoveryfile-list-tags.md
+            - name: List tags as hierarchy
+              href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection
         items:
         - name: Labels
