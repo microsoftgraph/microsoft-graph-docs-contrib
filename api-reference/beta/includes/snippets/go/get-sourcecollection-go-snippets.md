@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SourceCollectionRequestBuilderGetQueryParameters{
 	Expand: "addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation",
 }
-options := &msgraphsdk.SourceCollectionRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SourceCollectionRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 caseId := "case-id"
 sourceCollectionId := "sourceCollection-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).Get(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).SourceCollectionsById(&sourceCollectionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

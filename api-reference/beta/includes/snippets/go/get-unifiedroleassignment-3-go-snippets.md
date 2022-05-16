@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderGetQueryParameters{
 	Expand: "roleDefinition",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Get(options)
+result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Create unifiedRoleDefinition"
+title: "Create roleDefinitions"
 description: "Create a new unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "abhijeetsinha"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
 
-# Create unifiedRoleDefinition
+# Create roleDefinitions
 
 Namespace: microsoft.graph
 
@@ -179,7 +179,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```

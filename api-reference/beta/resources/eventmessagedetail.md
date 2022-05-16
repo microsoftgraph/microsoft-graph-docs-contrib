@@ -21,7 +21,7 @@ List of events supported
 
 | Event | Description |
 | :---- | :---------- |
-| [callEndedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | A call has ended. |
+| [callEndedEventMessageDetail](../resources/callEndedEventMessageDetail.md) | A call has ended. |
 | [callRecordingEventMessageDetail](../resources/callRecordingEventMessageDetail.md) | Call recording is available. |
 | [callStartedEventMessageDetail](../resources/callStartedEventMessageDetail.md) | A call has started. |
 | [callTranscriptEventMessageDetail](../resources/callTranscriptEventMessageDetail.md) | Call transcript is available. |

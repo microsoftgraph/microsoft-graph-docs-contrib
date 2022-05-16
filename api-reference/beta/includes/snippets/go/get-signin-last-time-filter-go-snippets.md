@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
 	Filter: "startswith(displayName,'Eric')",
 	Select: "displayName,signInActivity",
 }
-options := &msgraphsdk.UsersRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UsersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().Get(options)
+result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

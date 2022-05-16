@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AppConsentRequestRequestBuilderGetQueryParameters{
 	Filter: "userConsentRequests/any(u:u/status%20eq%20'InProgress')",
 }
-options := &msgraphsdk.AppConsentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AppConsentRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 appConsentRequestId := "appConsentRequest-id"
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).Get(options)
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
