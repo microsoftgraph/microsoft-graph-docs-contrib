@@ -658,7 +658,7 @@ items:
         items:
           - name: Overview
             href: sdks/sdks-overview.md
-          - name: Install the SDK
+          - name: Install an SDK
             href: sdks/sdk-installation.md
           - name: Create a client
             href: sdks/create-client.md
