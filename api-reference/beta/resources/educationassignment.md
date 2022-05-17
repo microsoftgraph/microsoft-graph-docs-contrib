@@ -58,6 +58,7 @@ The **assignment** APIs are exposed in the class namespace.
 |createdDateTime|DateTimeOffset|Moment when the **assignment** was created.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |displayName|String|Name of the **assignment**.|
 |dueDateTime|DateTimeOffset|Date when the students **assignment** is due.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|feedbackResourcesFolderUrl|String|Folder URL where all the feedback file resources for this **assignment** are stored.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
 |instructions|[itemBody](itembody.md)| Instructions for the **assignment**.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |

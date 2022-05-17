@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) to a submission outcome list.
+Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission.
 
 Only the teacher can perform this operation.
 
