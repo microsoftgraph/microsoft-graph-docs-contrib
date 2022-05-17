@@ -36,7 +36,7 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Task](todotask.md)  | GA |
 | [Task list](todotasklist.md)  | GA |
 
-\* >**Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+>\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 ## Outlook-specific considerations
 
