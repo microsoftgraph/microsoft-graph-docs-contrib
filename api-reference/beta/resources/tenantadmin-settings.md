@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive for Business.|
-|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive for Business.|
+|[Get settings](../api/tenantadmin-settings-get.md)|[settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive for Business.|
+|[Update settings](../api/tenantadmin-settings-update.md) | [settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive for Business.|
 
 ## Properties
 |Property|Type|Description|
@@ -117,3 +117,14 @@ The following is a JSON representation of the resource.
     "tenantDefaultTimezone": "string"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "settings resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "namespace": "microsoft.graph.tenantAdmin"
+}
+-->
