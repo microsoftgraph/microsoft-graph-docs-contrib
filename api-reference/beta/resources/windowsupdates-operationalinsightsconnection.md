@@ -1,6 +1,6 @@
 ---
 title: "operationalInsightsConnection resource type"
-description: "A specialized resourceConnection for linking a Log Analytics workspace to the Windows Update for Business deployment service."
+description: "Represents a specialized resourceConnection that links a Log Analytics workspace to the Windows Update for Business deployment service."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A specialized [resourceConnection](../resources/windowsupdates-resourceconnection.md) for linking a Log Analytics workspace to the Windows Update for Business deployment service.
+Represents a specialized [resourceConnection](../resources/windowsupdates-resourceconnection.md) that links a Log Analytics workspace to the Windows Update for Business deployment service.
 
 Inherits from [resourceConnection](../resources/windowsupdates-resourceconnection.md).
 
@@ -23,15 +23,15 @@ Inherits from [resourceConnection](../resources/windowsupdates-resourceconnectio
 |[List operationalInsightsConnections](../api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) collection|Get a list of the [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) objects and their properties.|
 |[Create operationalInsightsConnection](../api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Create a new [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
 |[Get operationalInsightsConnection](../api/windowsupdates-operationalinsightsconnection-get.md)|[microsoft.graph.windowsUpdates.operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md)|Read the properties and relationships of an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
-|[Delete operationalInsightsConnection](../api/windowsupdates-operationalinsightsconnection-delete.md)|None|Deletes an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
+|[Delete operationalInsightsConnection](../api/windowsupdates-operationalinsightsconnection-delete.md)|None|Delete an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|azureResourceGroupName|String|The name of the Azure resource group containing the Log Analytics workspace.|
-|azureSubscriptionId|String|The Azure subscription ID containing the Log Analytics workspace.|
+|azureResourceGroupName|String|The name of the Azure resource group that contains the Log Analytics workspace.|
+|azureSubscriptionId|String|The Azure subscription ID that contains the Log Analytics workspace.|
 |id|String|An identifier for the resource connection. Key. Not nullable. Read-only. Returned by default.|
-|state|microsoft.graph.windowsUpdates.resourceConnectionState|State of the connection. The possible values are: `connected`, `notAuthorized`, `notFound`, `unknownFutureValue`.|
+|state|microsoft.graph.windowsUpdates.resourceConnectionState|The state of the connection. The possible values are: `connected`, `notAuthorized`, `notFound`, `unknownFutureValue`.|
 |workspaceName|String|The name of the Log Analytics workspace.|
 
 ## Relationships
@@ -50,10 +50,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.operationalInsightsConnection",
+  "azureResourceGroupName": "String",  
+  "azureSubscriptionId": "String",
   "id": "String (identifier)",
   "state": "String",
-  "azureSubscriptionId": "String",
-  "azureResourceGroupName": "String",
   "workspaceName": "String"
 }
 ```

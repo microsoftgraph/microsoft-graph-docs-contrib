@@ -1,6 +1,6 @@
 ---
 title: "Delete operationalInsightsConnection"
-description: "Deletes an operationalInsightsConnection object."
+description: "Delete an operationalInsightsConnection object."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.
+Delete an [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,8 +60,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/resourceConnection
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

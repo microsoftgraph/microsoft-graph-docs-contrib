@@ -10164,22 +10164,22 @@ items:
         - name: Resource connection
           href: resources/windowsupdates-resourceconnection.md
           items:
-            - name: List resource connections
+            - name: List
               href: api/windowsupdates-updates-list-resourceconnections.md
-            - name: Get resource connection
+            - name: Get
               href: api/windowsupdates-resourceconnection-get.md
-            - name: Delete resource connection
+            - name: Delete
               href: api/windowsupdates-resourceconnection-delete.md
-            - name: Operational Insights connection
+            - name: Operational insights connection
               href: resources/windowsupdates-operationalinsightsconnection.md
               items:
-              - name: List Operational Insights connections
+              - name: List
                 href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
-              - name: Create Operational Insights connection
+              - name: Create
                 href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
-              - name: Get Operational Insights connection
+              - name: Get
                 href: api/windowsupdates-operationalinsightsconnection-get.md
-              - name: Delete Operational Insights connection
+              - name: Delete
                 href: api/windowsupdates-operationalinsightsconnection-delete.md
       - name: Multi-tenant management (preview)
         items:

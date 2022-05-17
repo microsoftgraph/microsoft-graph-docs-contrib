@@ -13,7 +13,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The resourceConnection type represents connections to external resources from which more specialized connections like [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) will be derived.
+Represents connections to external resources from which more specialized connections like [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) will be derived.
 
 This is an abstract type.
 
@@ -22,13 +22,13 @@ This is an abstract type.
 |:---|:---|:---|
 |[List resourceConnections](../api/windowsupdates-updates-list-resourceconnections.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Get a list of the [resourceConnection](../resources/windowsupdates-resourceconnection.md) objects and their properties.|
 |[Get resourceConnection](../api/windowsupdates-resourceconnection-get.md)|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md)|Read the properties and relationships of a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
-|[Delete resourceConnection](../api/windowsupdates-resourceconnection-delete.md)|None|Deletes a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
+|[Delete resourceConnection](../api/windowsupdates-resourceconnection-delete.md)|None|Delete a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|An identifier for the resource connection. Key. Not nullable. Read-only. Returned by default.|
-|state|microsoft.graph.windowsUpdates.resourceConnectionState|State of the connection. The possible values are: `connected`, `notAuthorized`, `notFound`, `unknownFutureValue`.|
+|state|microsoft.graph.windowsUpdates.resourceConnectionState|The state of the connection. The possible values are: `connected`, `notAuthorized`, `notFound`, `unknownFutureValue`.|
 
 ## Relationships
 None.

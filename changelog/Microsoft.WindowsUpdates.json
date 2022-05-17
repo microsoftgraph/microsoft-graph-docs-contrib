@@ -441,7 +441,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "operationalInsightsConnection",
                     "ChangeType": "Addition",
-                    "Description": "Added the [operationalInsightsConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-operationalInsightsConnection?view=graph-rest-beta) resource",
+                    "Description": "Added the [operationalInsightsConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-operationalInsightsConnection?view=graph-rest-beta) resource and supported methods.",
                     "Target": "operationalInsightsConnection"
                 },
                 {
@@ -449,7 +449,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "resourceConnection",
                     "ChangeType": "Addition",
-                    "Description": "Added the [resourceConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-resourceConnection?view=graph-rest-beta) resource",
+                    "Description": "Added the [resourceConnection](https://docs.microsoft.com/en-us/graph/api/resources/windowsupdates-resourceConnection?view=graph-rest-beta) resource and supported methods.",
                     "Target": "resourceConnection"
                 },
                 {

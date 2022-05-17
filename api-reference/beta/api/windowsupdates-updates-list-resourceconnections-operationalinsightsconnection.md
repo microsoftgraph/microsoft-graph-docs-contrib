@@ -63,12 +63,13 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/m
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.windowsUpdates.operationalInsightsConnection)"
+  "@odata.type": "microsoft.graph.windowsUpdates.operationalInsightsConnection",
+  "isCollection": true
 }
 -->
 ``` http
