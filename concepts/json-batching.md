@@ -54,6 +54,14 @@ Content-Type: application/json
       "headers": {
         "Content-Type": "application/json"
       }
+    },
+    {
+      "id": "5",
+      "url": "users?$select=id,displayName,userPrincipalName&$filter=city eq null&$count=true",
+      "method": "GET",
+      "headers": {
+        "ConsistencyLevel": "eventual"
+      }
     }
   ]
 }
@@ -82,6 +90,24 @@ Content-Type: application/json
           "code": "Forbidden",
           "message": "..."
         }
+      }
+    },
+    {
+      "id": "5",
+      "status": 200,
+      "headers": {
+        "OData-Version": "4.0",
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName)",
+        "@odata.count": 12,
+        "value": [
+          {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com"
+          }
+        ]
       }
     },
     {
@@ -123,6 +149,7 @@ The response format for JSON batch requests is similar to the request format. Th
 * The property in the main JSON object is named **responses** as opposed to **requests**.
 * Individual responses might appear in a different order than the requests.
 * Rather than **method** and **url**, individual responses have a **status** property. The value of **status** is a number that represents the HTTP status code.
+* The **headers** property in each individual response represents the headers returned by the server, for example, **Cache-Control** and **Content-Type** headers.
 
 The status code on a batch response is typically `200` or `400`. If the batch request itself is malformed, the status code is `400`. If the batch request is parseable, the status code is `200`. A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded. This is why each individual response in the **responses** property has a status code.
 
