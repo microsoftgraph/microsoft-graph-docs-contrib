@@ -1,6 +1,6 @@
 ---
 title: "Use Postman with the Microsoft Graph connectors API"
-description: "Try connectors APIs using Postman"
+description: "Try the Microsoft Graph connectors API with Postman."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -11,7 +11,7 @@ ms.prod: search
 
 Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so that you can create better APIs faster.
 
-This article describes how you can use the Microsoft Graph connector APIs with Postman.
+This article describes how you can use the Microsoft Graph connectors API with Postman.
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ In this step, you set up the environment variables in Postman that you use to re
 
    ![Screenshot of the Microsoft Graph connectors API tab and the Variables section](./images/connectors-images/07-postman.png)
 
-2. In the Variables section, provide the required information by using the information from step 3:
+2. In the **Variables** section, provide the required information by using the information from step 3:
 
    - Set the current value of **tenant** to the directory (tenant) ID value from step 3.15.
    - Set the current value of **client\_id** to the application (client) ID value from step 3.15.
