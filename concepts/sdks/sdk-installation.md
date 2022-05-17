@@ -159,13 +159,13 @@ composer require microsoft/microsoft-graph
 
 ## Install the Microsoft PowerShell SDK
 
-All the modules are published on [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Installing is as simple as:
+All the modules are published on [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). To install:
 
 ``` powershell
 Install-Module Microsoft.Graph
 ```
 
-If you are upgrading from our preview modules, run `Install-Module` with AllowClobber and Force parameters to avoid command name conflicts:
+If you're upgrading from the preview modules, run `Install-Module` with AllowClobber and Force parameters to avoid command name conflicts:
 
 ``` powershell
  Install-Module Microsoft.Graph -AllowClobber -Force
