@@ -12,11 +12,8 @@ pkcs12Value := "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9
 requestBody.SetPkcs12Value(&pkcs12Value)
 password := "<password>"
 requestBody.SetPassword(&password)
-options := &msgraphsdk.UploadClientCertificateRequestBuilderPostOptions{
-	Body: requestBody,
-}
 identityApiConnectorId := "identityApiConnector-id"
-result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate().Post(options)
+result, err := graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).UploadClientCertificate(identityApiConnector-id).Post(requestBody)
 
 
 ```

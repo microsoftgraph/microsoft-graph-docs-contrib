@@ -11,11 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
-	Body: requestBody,
-}
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).RegisteredOwners().$ref().Post(options)
+directoryObjectId := "directoryObject-id"
+graphClient.DevicesById(&deviceId).RegisteredOwnersById(&directoryObjectId).Post(requestBody)
 
 
 ```

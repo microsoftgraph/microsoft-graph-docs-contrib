@@ -14,10 +14,7 @@ name := "Contoso HR"
 requestBody.SetName(&name)
 description := "Connection to index Contoso HR system"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.ConnectionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.External().Connections().Post(options)
+result, err := graphClient.External().Connections().Post(requestBody)
 
 
 ```

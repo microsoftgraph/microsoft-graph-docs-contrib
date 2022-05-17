@@ -44,10 +44,7 @@ requestBody.SetTenantId(&tenantId)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.call",
 }
-options := &msgraphsdk.CallsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Communications().Calls().Post(options)
+result, err := graphClient.Communications().Calls().Post(requestBody)
 
 
 ```

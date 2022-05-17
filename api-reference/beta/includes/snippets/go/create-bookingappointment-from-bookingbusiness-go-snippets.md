@@ -165,17 +165,32 @@ start.SetTimeZone(&timeZone)
 start.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.dateTimeTimeZone",
 }
+maximumAttendeesCount := int32(5)
+requestBody.SetMaximumAttendeesCount(&maximumAttendeesCount)
+filledAttendeesCount := int32(1)
+requestBody.SetFilledAttendeesCount(&filledAttendeesCount)
+requestBody.SetCustomers( []BookingCustomerInformationBase {
+	msgraphsdk.NewBookingCustomerInformationBase(),
+	SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.bookingCustomerInformation",
+		"customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+		"name": "Jordan Miller",
+		"emailAddress": "jordanm@contoso.com",
+		"phone": "213-555-0199",
+		"notes": nil,
+		"timeZone": "America/Chicago",
+		"customQuestionAnswers":  []Object {
+		}
+	}
+}
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingAppointment",
 	"invoiceStatus@odata.type": "#microsoft.graph.bookingInvoiceStatus",
 	"priceType@odata.type": "#microsoft.graph.bookingPriceType",
 	"reminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
 }
-options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(requestBody)
 
 
 ```

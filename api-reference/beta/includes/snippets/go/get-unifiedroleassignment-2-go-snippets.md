@@ -8,13 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetQueryParameters{
-	Expand: "roleDefinition,principal,directoryScope",
+	Expand: "roleDefinition",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 unifiedRoleAssignmentId := "unifiedRoleAssignment-id"
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

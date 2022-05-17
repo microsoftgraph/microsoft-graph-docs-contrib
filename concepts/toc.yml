@@ -24,7 +24,7 @@ items:
             href: users-you-can-reach.md
           - name: National cloud deployments
             href: deployments.md
-          - name: Hybrid deployments (preview)
+          - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
       - name: Tutorials
         items:
@@ -88,7 +88,13 @@ items:
       - name: Users
         href: azuread-users-concept-overview.md
       - name: Groups
-        href: office365-groups-concept-overview.md
+        items:
+          - name: Overview
+            href: /graph/api/resources/groups-overview?context=graph/context
+          - name: Microsoft 365 groups
+            href: office365-groups-concept-overview.md
+          - name: Configure group options
+            href: group-set-options.md
       - name: Applications
         items:
           - name: Overview
@@ -141,6 +147,8 @@ items:
             href: outlook-large-attachments.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Cloud communications
         items:
           - name: Overview
@@ -163,6 +171,8 @@ items:
             href: cloud-communications-phone-number.md
           - name: Online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identify large gallery view participants
+            href: cloud-communications-identifylargegalleryview.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -175,7 +185,7 @@ items:
           - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
           - name: Build your first custom connector
-            href: connecting-external-content-build-quickstart.yml            
+            href: connecting-external-content-build-quickstart.yml
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -200,7 +210,10 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Devices and apps
+        items:
+          - name: Business rules
+            href: bookingsbusiness-business-rules.md
+      - name: Device and app management
         expanded: true
         items:
           - name: Cloud printing
@@ -211,7 +224,7 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
-              - name: Change notifications
+              - name: Subscribe to change notifications
                 href: universal-print-webhook-notifications.md
                 displayName: Universal Print Webhook Notifications
           - name: Corporate management
@@ -255,7 +268,9 @@ items:
           - name: Upload files
             href: education-upload-resource-overview.md
           - name: Assignment and submission state transitions
-            href: assignments-submissions-states-transition.md            
+            href: assignments-submissions-states-transition.md
+          - name: Specify the default channel for assignment notifications
+            href: education-build-notificationchannelurl.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -273,9 +288,9 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Directory management
             items:
-              - name: Assign custom security attributes (preview)
+              - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
-              - name: Use PIM for Azure AD to assign roles
+              - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
@@ -293,9 +308,15 @@ items:
                     href: accessreviews-overview.md
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
-                  - name: Review access to a Microsoft 365 group
+                  - name: Review access for guest users
                     href: tutorial-accessreviews-M365group.md
-              - name: Use PIM for Azure AD to assign roles
+                  - name: Review access to privileged roles
+                    href: tutorial-accessreviews-roleassignments.md
+                  - name: Configure the scope
+                    href: accessreviews-scope-concept.md
+                  - name: Assign reviewers
+                    href: accessreviews-reviewers-concept.md
+              - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -318,6 +339,8 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Notes
         displayName: OneNote
         items:
@@ -354,7 +377,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md                  
+            href: notifications-concept-overview.md
           - name: Get started
             displayName: Notifications
             items:
@@ -371,7 +394,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md                
+                href: notifications-integrating-with-ios.md
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -395,6 +418,8 @@ items:
             href: outlook-get-shared-contacts-folders.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+          - name: Subscribe to change notifications
+            href: outlook-change-notifications-overview.md
       - name: Reports
         items:
           - name: Overview
@@ -415,14 +440,20 @@ items:
             href: search-concept-custom-types.md
           - name: Search persons (preview)
             href: search-concept-person.md
-          - name: Sort search results
-            href: search-concept-sort.md
+          - name: Manage admin search answers (preview)
+            href: search-concept-answers.md
+          - name: Manage search results layout (preview)
+            href: search-concept-display-layout.md
           - name: Refine search results
             href: search-concept-aggregation.md
           - name: Request spelling correction (preview)
             href: search-concept-speller.md
-          - name: Search display layout (preview)
-            href: search-concept-display-layout.md
+          - name: Trim duplicate search results (preview)
+            href: search-concept-trim-duplicate.md
+          - name: Use query templates (preview)
+            href: search-concept-query-template.md
+          - name: Sort search results
+            href: search-concept-sort.md
       - name: Security
         items:
           - name: Overview
@@ -467,7 +498,11 @@ items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
               - name: Best practices 
-                href: teams-activity-feed-notifications-best-practices.md  
+                href: teams-activity-feed-notifications-best-practices.md
+          - name: Subscribe to change notifications
+            href: teams-change-notification-in-microsoft-teams-overview.md
+          - name: Get change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
@@ -497,7 +532,7 @@ items:
   - name: Develop
     expanded: true
     items:
-      - name: Get auth tokens
+      - name: Authentication and authorization
         items:
           - name: Overview
             href: auth/index.yml
@@ -554,7 +589,7 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notifications in Microsoft Teams
+              - name: Change notifications for Microsoft Teams
                 items:
                   - name: Overview
                     href: teams-change-notification-in-microsoft-teams-overview.md
@@ -563,11 +598,13 @@ items:
                   - name: Team and channel membership
                     href: teams-changenotifications-teamMembership.md
                   - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md                  
+                    href: teams-changenotifications-chatmessage.md
                   - name: Chat
                     href: teams-changenotifications-chat.md
                   - name: Chat membership
                     href: teams-changenotifications-chatMembership.md
+              - name: Change notifications for Outlook resources
+                href: outlook-change-notifications-overview.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -638,6 +675,15 @@ items:
                 href: migrate-azure-ad-graph-faq.md
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
+          - name: Exchange Web Services
+            displayName: Migration, Exchange Web Services, EWS
+            items:
+              - name: Overview
+                href: migrate-exchange-web-services-overview.md
+              - name: Authentication
+                href: migrate-exchange-web-services-authentication.md
+              - name: API mapping
+                href: migrate-exchange-web-services-api-mapping.md
       - name: Use SDKs
         items:
           - name: Overview
@@ -662,15 +708,17 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
+              - name: Overview
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Installation
-                href: powershell/installation.md
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
-                href: powershell/get-started.md
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
               - name: Navigating the SDK
-                href: powershell/navigating.md
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
-                href: powershell/app-only.md
-      - name: Use the Toolkit
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md

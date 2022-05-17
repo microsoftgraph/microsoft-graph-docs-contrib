@@ -16,11 +16,8 @@ nbf := int64(1508969811)
 requestBody.SetNbf(&nbf)
 exp := int64(1508973711)
 requestBody.SetExp(&exp)
-options := &msgraphsdk.UploadSecretRequestBuilderPostOptions{
-	Body: requestBody,
-}
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadSecret().Post(options)
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadSecret(trustFrameworkKeySet-id).Post(requestBody)
 
 
 ```

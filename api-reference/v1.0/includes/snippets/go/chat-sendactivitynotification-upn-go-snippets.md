@@ -33,11 +33,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 		"value": "2020AAGGTAPP",
 	}
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).SendActivityNotification().Post(options)
+graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(requestBody)
 
 
 ```

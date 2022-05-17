@@ -245,7 +245,7 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 ### Owner must be specified when updating a schemaExtension definition using Microsoft Graph Explorer
 
-When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
 
 ### Filtering on schema extension properties is not supported on all entity types
 
@@ -292,11 +292,11 @@ Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Micr
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
-The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on distribution lists or security groups, including via GET operations, will result in an error.
+The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on security groups, including via GET operations, will result in an error.
 
 ### Removing a group owner also removes the user as a group member
 
-When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
+When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for a group that is associated with a [team](/graph/api/resources/team.md), the user is also removed from the /groups/{id}/members list. To work around this, remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 ## Identity and access
 
@@ -338,7 +338,7 @@ JSON batch requests are currently limited to 20 individual requests.
 * Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
 
-For more details, visit [Throttling and batching](/graph/concepts/throttling.md#throttling-and-batching).
+For more details, visit [Throttling and batching](/graph/throttling#throttling-and-batching).
 
 ### Request dependencies are limited
 
@@ -391,11 +391,6 @@ This error is due to intermittent license check failures, which we are working t
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams is not supported
-
-To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams).
-
 ### Unable to filter team members by roles
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
@@ -410,17 +405,31 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 The API call for [me/joinedTeams](/graph/api/user-list-joinedteams) returns only the **id**, **displayName**, and **description** properties of a [team](/graph/api/resources/team). To get all properties, use the [Get team](/graph/api/team-get) operation.
 
 ### Installation of apps that require resource-specific consent permissions is not supported
-The following API calls do not support installing apps that require [resource-specific consent](https://aka.ms/teams-rsc) permissions.
-- [Add app to team](/graph/api/team-post-installedapps.md)
+The following API calls do not support installing apps that require [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
+- [Add app to team](/graph/api/team-post-installedapps)
 - [Upgrade app installed in team](/graph/api/team-teamsappinstallation-upgrade.md)
-- [Add app to chat](/graph/api/chat-post-installedapps.md)
+- [Add app to chat](/graph/api/chat-post-installedapps)
 - [Upgrade app installed in chat](/graph/api/chat-teamsappinstallation-upgrade.md)
 
+### Unable to access a cross-tenant shared channel when the request URL contains tenants/{cross-tenant-id}
+The API calls for [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) and [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) return the **@odata.id** property which you can use to access the channel and run other operations on the [channel](/graph/api/resources/channel.md) object. If you call the URL returned from the **@odata.id** property, the request fails with the following error when it tries to access the cross-tenant shared [channel](/graph/api/resources/channel.md):
+```http
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel.md).
+
 ## Users
-
-### Get user by userPrincipalName that starts with a dollar ($) symbol
-
-Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`.
 
 ### Encode number (#) symbols in userPrincipalName
 

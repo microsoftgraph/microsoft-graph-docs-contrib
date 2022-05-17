@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).ReprocessLicenseAssignment().Post(nil)
+result, err := graphClient.UsersById(&userId).ReprocessLicenseAssignment(user-id).Post()
 
 
 ```

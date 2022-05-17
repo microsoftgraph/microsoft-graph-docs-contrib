@@ -11,11 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/groups/{id}",
 }
-options := &msgraphsdk.RefRequestBuilderPostOptions{
-	Body: requestBody,
-}
 administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Members().$ref().Post(options)
+directoryObjectId := "directoryObject-id"
+graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).MembersById(&directoryObjectId).Post(requestBody)
 
 
 ```

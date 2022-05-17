@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationmethodspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,25 +108,99 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
-    "lastModifiedDateTime": "2021-05-24T18:02:30.5288302Z",
+    "lastModifiedDateTime": "2022-01-26T10:47:26.6044384Z",
     "policyVersion": "1.4",
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
-            "snoozeDurationInDays": 2,
-            "state": "enabled",
+            "snoozeDurationInDays": 1,
+            "state": "default",
             "excludeTargets": [],
             "includeTargets": [
                 {
-                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "id": "all_users",
                     "targetType": "group",
                     "targetedAuthenticationMethod": "microsoftAuthenticator"
                 }
             ]
         }
-    }
+    },
+    "authenticationMethodConfigurations": [
+        {
+            "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+            "id": "Fido2",
+            "state": "disabled",
+            "isSelfServiceRegistrationAllowed": true,
+            "isAttestationEnforced": true,
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "block",
+                "aaGuids": []
+            },
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
+            "id": "MicrosoftAuthenticator",
+            "state": "disabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "authenticationMode": "any",
+                    "outlookMobileAllowedState": "default",
+                    "displayAppInformationRequiredState": "default",
+                    "numberMatchingRequiredState": "default"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
+            "id": "Sms",
+            "state": "enabled",
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false,
+                    "isUsableForSignIn": true
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+            "id": "TemporaryAccessPass",
+            "state": "disabled",
+            "defaultLifetimeInMinutes": 60,
+            "defaultLength": 8,
+            "minimumLifetimeInMinutes": 60,
+            "maximumLifetimeInMinutes": 480,
+            "isUsableOnce": false,
+            "includeTargets": [
+                {
+                    "targetType": "group",
+                    "id": "all_users",
+                    "isRegistrationRequired": false
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+            "id": "Email",
+            "state": "enabled",
+            "allowExternalIdToUseEmailOtp": "default",
+            "includeTargets": []
+        }
+    ]
 }
 ```

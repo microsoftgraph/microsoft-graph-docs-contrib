@@ -34,7 +34,9 @@ The Microsoft Graph Go SDK is included in the following packages:
 - [Microsoft Graph Core SDK for Go](https://github.com/microsoftgraph/msgraph-sdk-go-core) - The core library for making calls to Microsoft Graph.
 
 ```Shell
-go get -u github.com/microsoftgraph/msgraph-sdk-go
+go get github.com/microsoftgraph/msgraph-sdk-go
+go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get github.com/microsoft/kiota-authentication-azure-go
 ```
 
 ## Install the Microsoft Graph Java SDK
@@ -157,7 +159,17 @@ composer require microsoft/microsoft-graph
 
 ## Install the Microsoft PowerShell SDK
 
-See [Install the Microsoft Graph PowerShell SDK](../powershell/installation.md).
+All the modules are published on [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). To install:
+
+``` powershell
+Install-Module Microsoft.Graph
+```
+
+If you're upgrading from the preview modules, run `Install-Module` with AllowClobber and Force parameters to avoid command name conflicts:
+
+``` powershell
+ Install-Module Microsoft.Graph -AllowClobber -Force
+```
 
 ## Install the Microsoft Graph Ruby SDK
 

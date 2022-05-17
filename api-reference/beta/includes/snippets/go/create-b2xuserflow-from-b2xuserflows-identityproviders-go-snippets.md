@@ -22,10 +22,7 @@ requestBody.SetIdentityProviders( []IdentityProvider {
 		"name": "Facebook",
 	}
 }
-options := &msgraphsdk.B2xUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().B2xUserFlows().Post(options)
+result, err := graphClient.Identity().B2xUserFlows().Post(requestBody)
 
 
 ```

@@ -10,11 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.ContactFolderRequestBuilderGetOptions{
-	H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
-contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Get(options)
+result, err := graphClient.Me().ContactFolders().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

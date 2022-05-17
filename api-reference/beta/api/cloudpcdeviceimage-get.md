@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcdeviceimage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcdeviceimage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,7 +114,9 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
     "displayName": "Display Name value",
+    "expirationDate": "2022-11-10",
     "osBuildNumber": "OS Build Number value",
+    "osStatus": "supported",
     "operatingSystem": "Operating System value",
     "version": "Version value",
     "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",

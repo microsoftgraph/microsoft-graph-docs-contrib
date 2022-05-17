@@ -15,11 +15,8 @@ requestBody.SetToRecipients( []Recipient {
 }
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Forward().Post(options)
+graphClient.Me().EventsById(&eventId).Forward(event-id).Post(requestBody)
 
 
 ```

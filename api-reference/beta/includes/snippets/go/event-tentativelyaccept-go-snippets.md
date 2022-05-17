@@ -26,11 +26,8 @@ dateTime := "2019-12-02T19:00:00"
 end.SetDateTime(&dateTime)
 timeZone := "Pacific Standard Time"
 end.SetTimeZone(&timeZone)
-options := &msgraphsdk.TentativelyAcceptRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).TentativelyAccept().Post(options)
+graphClient.Me().EventsById(&eventId).TentativelyAccept(event-id).Post(requestBody)
 
 
 ```

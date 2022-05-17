@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewContentInfoRequestBody()
 contentInfo := msgraphsdk.NewContentInfo()
 requestBody.SetContentInfo(contentInfo)
 format := "default"
@@ -68,11 +68,10 @@ contentInfo.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.ExtractLabelRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.ExtractLabelRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

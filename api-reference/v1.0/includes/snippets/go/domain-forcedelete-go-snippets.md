@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewDisableUserAccountsRequestBody()
 disableUserAccounts := true
 requestBody.SetDisableUserAccounts(&disableUserAccounts)
-options := &msgraphsdk.ForceDeleteRequestBuilderPostOptions{
-	Body: requestBody,
-}
 domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete().Post(options)
+graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(requestBody)
 
 
 ```

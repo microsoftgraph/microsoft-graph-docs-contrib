@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
-Once the on-premises connection passes health check, which is indicated by the `healthCheckStatus` property, you cannot update it.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Permissions
 
@@ -49,11 +49,12 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 In the request body, supply a JSON representation of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
+The following table shows the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name for the on-premises connection.|
+|displayName|String|The display name for the Azure network connection.|
+|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: username@contoso.com.|
@@ -115,6 +116,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-onpremisesconnections-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,6 +141,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
   "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdcc4ffff",
+  "managedBy": "windows365",
+  "type": "hybridAzureADJoin", 
   "displayName": "Display Name value",
   "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
   "subscriptionName": "Subscription Name value",

@@ -16,10 +16,7 @@ sourceIdType := "restId"
 requestBody.SetSourceIdType(&sourceIdType)
 targetIdType := "restImmutableEntryId"
 requestBody.SetTargetIdType(&targetIdType)
-options := &msgraphsdk.TranslateExchangeIdsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().TranslateExchangeIds().Post(options)
+result, err := graphClient.Me().TranslateExchangeIds().Post(requestBody)
 
 
 ```
