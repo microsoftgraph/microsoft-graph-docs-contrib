@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this Microsoft Graph To Do API built on [todoTask](todotask.md) to create an app that connects with tasks across Microsoft To Do clients. Build a variety of experiences with tasks, such as the following:
+Use the Microsoft Graph To Do API built on [todoTask](todotask.md) to create an app that connects with tasks across Microsoft To Do clients. Build a variety of experiences with tasks, such as the following:
 
 * Create tasks from your app’s workflow, for example, from email or notifications, and save them in To Do. Use the [linkedResource](linkedresource.md) entity to store the link back to your app.
 * Sync your app’s existing tasks with To Do and create a single task view for better prioritization and manageability.
@@ -33,7 +33,7 @@ GET /me/todo/lists
 
 ## Task
 
-In this API set, a task is represented by a [todoTask](./todotask.md) resource which represents a task, i.e. a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
+In this API set, a task is represented by a [todoTask](./todotask.md) resource which is a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
 ```

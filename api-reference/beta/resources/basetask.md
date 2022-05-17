@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-Represents a task, such as a piece of work or personal item, that can be tracked and completed.
+An abstract type that represents a task, such as a piece of work or personal item, that can be tracked and completed.
 
-This is an abstract base type inherited by the [task](task.md) resource.
+This is a base type inherited by the [task](task.md) resource.
 
 ## Methods
 |Method|Return type|Description|
