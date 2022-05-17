@@ -28,7 +28,7 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 - **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Workplace Analytics
 - **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
-- **Dynamics 365 Business Central**
+- **Dynamics 365 Business Central services**
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
