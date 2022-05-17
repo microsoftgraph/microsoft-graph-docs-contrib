@@ -15,9 +15,9 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 ## Data and services powering the Microsoft 365 platform
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
-- The **Microsoft Graph API** offers a single endpoint, `https://graph.microsoft.com`, to provide access to **rich, people-centric data and insights in the Microsoft cloud**, including Microsoft 365, Windows, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and much more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, security, and help protect organizations from data leakage or loss.
-- **[Microsoft Graph connectors](#bring-data-from-an-external-content-source-to-microsoft-graph)** work in the incoming direction, **delivering data external to the Microsoft cloud into Microsoft Graph services and applications**, to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.
-- **[Microsoft Graph Data Connect](#access-microsoft-graph-data-at-scale)** provides a set of tools to streamline secure and scalable **delivery of Microsoft Graph data to popular Azure data stores**. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
+- The **Microsoft Graph API** offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, and security and help protect organizations from data leakage or loss.
+- **[Microsoft Graph connectors](#bring-data-from-an-external-content-source-to-microsoft-graph)** work in the incoming direction, delivering data external to the Microsoft cloud into Microsoft Graph services and applications to enhance Microsoft 365 experiences such as Microsoft Search. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.
+- **[Microsoft Graph Data Connect](#access-microsoft-graph-data-at-scale)** provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. The cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
 
 Together, the Microsoft Graph API, connectors, and Data Connect power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets, you can derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent applications.
 
@@ -25,10 +25,10 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- Microsoft 365 core services: Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Workplace Analytics
-- Enterprise Mobility + Security services: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
-- Windows services: activities, devices, notifications, Universal Print
-- Dynamics 365 Business Central
+- **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Workplace Analytics
+- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
+- **Windows services:** activities, devices, notifications, Universal Print
+- **Dynamics 365 Business Central**
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
