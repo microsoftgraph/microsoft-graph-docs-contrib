@@ -108,7 +108,7 @@ Content-length: 1323
     "isSitesStorageLimitAutomatic": false,
     "isSyncButtonHiddenOnPersonalSite": false,
     "isUnmanagedSyncAppForTenantRestricted": false,
-    "personalSiteDefaultStorageLimitInMB": 120000,
+    "personalSiteDefaultStorageLimitInMB": 120000
 }
 ```
 
