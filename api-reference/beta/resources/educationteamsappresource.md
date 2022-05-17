@@ -1,6 +1,6 @@
 ---
 title: "educationTeamsAppResource resource type"
-description: "Represents a Microsoft Teams application to submit to an assignment."
+description: "Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md) that allows education service users to share assignments on the Teams client."
 author: "adarshgh"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md) which allows education service users to share assignments on the Teams client, as supported by the corresponding governing application. Examples of governing applications are YouTube and FlipGrid.
+An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md) that allows education service users to share assignments on the Teams client, as supported by the corresponding governing application. Examples of governing applications are YouTube and FlipGrid.
 
 For information about using FlipGrid for education on Microsoft Teams, see [introduction to FlipGrid](https://education.microsoft.com/en-us/resource/13cb22b1).
 
