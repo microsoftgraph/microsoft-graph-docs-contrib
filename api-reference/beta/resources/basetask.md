@@ -13,8 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a task, such as a piece of work or personal item, that can be tracked and completed.
-This is an abstract base type inherited by [task](task.md) resource.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+An abstract type that represents a task, such as a piece of work or personal item, that can be tracked and completed.
+
+This is a base type inherited by the [task](task.md) resource.
 
 ## Methods
 |Method|Return type|Description|

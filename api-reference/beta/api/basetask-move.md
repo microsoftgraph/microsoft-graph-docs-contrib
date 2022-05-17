@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
 Move a [baseTask](../resources/basetask.md) object from one [baseTaskList](../resources/basetasklist.md) to another.
 
 ## Permissions

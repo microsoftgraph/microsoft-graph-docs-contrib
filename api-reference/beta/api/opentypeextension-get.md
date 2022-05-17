@@ -399,8 +399,7 @@ Content-type: application/json
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
@@ -587,8 +586,7 @@ HTTP/1.1 200 OK
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
 Represents an item in a partner application related to a [baseTask](./basetask.md). An example is an email from where the task was created. A **linkedResource** object stores information about that source application, and lets you link back to the related item. You can see the **linkedResource** in the task details view, as shown.
 
 ![Screenshot showing linked resource card in task details pane. Linked resource card shows Open in Jira, which is the partner application name, and Social media Plan which is the title of linked resource](/graph/images/todo-linkedresource-taskdetail.png)

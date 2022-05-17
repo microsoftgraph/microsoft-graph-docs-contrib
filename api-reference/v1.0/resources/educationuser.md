@@ -68,13 +68,16 @@ Inherits from [entity](../resources/entity.md).
 
 ## Relationships
 
-| Relationship  | Type                                                                  | Description                                       |
-| :------------ | :-------------------------------------------------------------------- | :------------------------------------------------ |
-| assignments   | [educationAssignment](../resources/educationassignment.md) collection | Assignments that belongs to the user.             |
-| classes       | [educationClass](../resources/educationclass.md) collection           | Classes to which the user belongs. Nullable.      |
-| schools       | [educationSchool](../resources/educationschool.md) collection         | Schools to which the user belongs. Nullable.      |
-| taughtClasses | [educationClass](../resources/educationclass.md) collection           | Classes for which the user is a teacher.          |
-| user          | [user](../resources/user.md)                                          | The directory user that corresponds to this user. |
+
+| Relationship  | Type                                                          | Description                                    |
+| :------------ | :------------------------------------------------------------ | :--------------------------------------------- |
+| assignments   | [educationAssignment](../resources/educationassignment.md) collection   | Assignments belonging to the user.   |
+| classes       | [educationClass](../resources/educationclass.md) collection   | Classes to which the user belongs. Nullable.   |
+| schools       | [educationSchool](../resources/educationschool.md) collection | Schools to which the user belongs. Nullable.   |
+| taughtClasses | [educationClass](../resources/educationclass.md) collection   | Classes for which the user is a teacher.       |
+| user          | [user](../resources/user.md)                                  | The directory user that corresponds to this user. |
+|rubrics|[educationRubric](educationrubric.md) collection|When set, the grading rubric attached to the assignment.|
+
 
 ## JSON representation
 

@@ -1,5 +1,5 @@
 ---
-title: "Delete taskList"
+title: "Delete baseTaskList"
 description: "Deletes a taskList object."
 author: "devindrajit"
 ms.localizationpriority: medium
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [taskList](../resources/tasklist.md) object.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Deletes a [baseTaskList](../resources/tasklist.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

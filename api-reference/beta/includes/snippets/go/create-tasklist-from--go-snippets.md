@@ -13,10 +13,7 @@ requestBody.SetDisplayName(&displayName)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.taskList",
 }
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Tasks().Lists().Post(options)
+result, err := graphClient.Me().Tasks().Lists().Post(requestBody)
 
 
 ```

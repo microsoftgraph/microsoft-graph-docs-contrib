@@ -26,11 +26,8 @@ requestBody.SetSpeakers( []MeetingSpeaker {
 		"bio": "CVP",
 	}
 }
-options := &msgraphsdk.RegistrationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Patch(requestBody)
 
 
 ```

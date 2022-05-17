@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [agreementFil
 
 ### Request
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_agreementfilelocalization_from_"
 }
 -->
@@ -76,7 +76,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "displayName": "Contoso ToU for guest users (French)",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
+        "data": "base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
     }
 }
 ```
@@ -105,7 +105,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "createdDateTime": "2022-03-04T14:38:22.8292386Z",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/"
+        "data": "base64JVBERi0xLjUKJb/"
     }
 }
 ```

@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String displayName = "My custom name";
+String displayName = "testProperties";
 
-graphClient.applicationTemplates("{id}")
+graphClient.applicationTemplates("8adf8e6e-67b2-4cf2-a259-e3dc5476c621")
 	.instantiate(ApplicationTemplateInstantiateParameterSet
 		.newBuilder()
 		.withDisplayName(displayName)

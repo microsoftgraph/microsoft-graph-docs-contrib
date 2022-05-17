@@ -125,7 +125,6 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

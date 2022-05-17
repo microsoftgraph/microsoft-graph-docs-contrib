@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewChecklistItem()
 displayName := "Final sign-off from the team"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ChecklistItemsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItems().Post(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItems().Post(requestBody)
 
 
 ```

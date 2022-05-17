@@ -12,12 +12,9 @@ backgroundColor := "#00000F"
 requestBody.SetBackgroundColor(&backgroundColor)
 signInPageText := "Welcome to Contoso France"
 requestBody.SetSignInPageText(&signInPageText)
-options := &msgraphsdk.OrganizationalBrandingLocalizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
 organizationalBrandingLocalizationId := "organizationalBrandingLocalization-id"
-graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Branding().LocalizationsById(&organizationalBrandingLocalizationId).Patch(requestBody)
 
 
 ```

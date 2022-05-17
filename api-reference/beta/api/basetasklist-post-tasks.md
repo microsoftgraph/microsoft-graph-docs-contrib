@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
 Create a new [baseTask](../resources/basetask.md) object in a specific [baseTaskList](../resources/basetasklist.md).
 
 ## Permissions

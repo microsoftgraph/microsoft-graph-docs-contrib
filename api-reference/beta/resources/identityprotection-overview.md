@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization. 
+Azure Active Directory (Azure AD) [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is tool that allows organizations to discover, investigate, and remediate identity-based risks in their Azure AD organization.
 
 Use the following Microsoft Graph APIs to query user and service principal risks detected by Azure AD Identity Protection:
 
@@ -51,6 +51,11 @@ For specific guidance and additional information, see [Identify and remediate ri
 ## What licenses do I need?
 
 Azure AD Identity Protection is a premium feature. You need an Azure AD Premium P1 or P2 license to access the Microsoft Graph [riskDetection API](riskdetection.md) (note: P1 licenses receive limited risk information). The [riskyUsers API](riskyuser.md) is only available with an Azure AD Premium P2 license.
+
+## How much data is available?
+
+The availability of risk data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+
 
 ## See also
 
