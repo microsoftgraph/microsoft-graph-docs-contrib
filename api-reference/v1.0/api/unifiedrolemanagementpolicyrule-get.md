@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleManagementPolicyRule"
-description: "Retrieve a rule defined for a role management policy."
+description: "Retrieve a rule or settings defined for a role management policy."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
-Retrieve a rule defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
+Retrieve a rule or settings defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
