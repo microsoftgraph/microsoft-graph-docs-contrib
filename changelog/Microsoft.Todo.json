@@ -1,5 +1,39 @@
 {
   "changelog":[
+    {
+      "ChangeList": [
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [checklistItem](https://docs.microsoft.com/en-us/graph/api/resources/checklistItem?view=graph-rest-1.0) resource type",
+          "Target": "checklistItem"
+        },
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "checklistItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **checklistItems** relationship to [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-1.0) resource.",
+          "Target": "todoTask"
+        }
+      ],
+      "Id": "158f04e1-284b-4f2d-a55f-eb7ddc637b9f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-28T07:00:09.3656536Z",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+     },
      {
       "ChangeList": [
         {

@@ -22,6 +22,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
+- A [todoTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
 For the possible resource path values for each supported resource and to learn how resources use lifecycle notifications, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
@@ -72,6 +73,8 @@ For the possible resource path values for each supported resource and to learn h
 | **presence**        | 60 minutes (1 hour) |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
+| **todoTask**              | 4230 minutes (under 3 days)    |
+
 
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
