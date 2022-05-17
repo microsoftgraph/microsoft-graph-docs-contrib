@@ -14629,12 +14629,12 @@ items:
             href: api/site-delete-permission.md
         - name: Tenant settings
           items: 
-            - name: Settings
+            - name: Tenant settings
               href: resources/tenantadmin-settings.md
-            - name: Get settings
-              href: resources/tenantadmin-settings-get.md
-            - name: Update settings
-              href: resources/tenantadmin-settings-update.md
+            - name: Get
+              href: api/tenantadmin-settings-get.md
+            - name: Update
+              href: api/tenantadmin-settings-update.md
       - name: Lists
         items:
         - name: List
