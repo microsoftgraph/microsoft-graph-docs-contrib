@@ -1,6 +1,6 @@
 ---
 title: "Update settings (tenantAdmin)"
-description: "Update one or more tenant-level settings for SharePoint and OneDrive."
+description: "Update one or more tenant-level settings for SharePoint and OneDrive for Business."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or more tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
+Update one or more tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive for Business.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

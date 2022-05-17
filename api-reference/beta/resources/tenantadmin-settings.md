@@ -1,6 +1,6 @@
 ---
 title: "settings resource type (tenantAdmin)"
-description:  "Represents the tenant-level settings for SharePoint and OneDrive."
+description:  "Represents the tenant-level settings for SharePoint and OneDrive for Business."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level settings for SharePoint and OneDrive.
+Represents the tenant-level settings for SharePoint and OneDrive for Business.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
-|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
+|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive for Business.|
+|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive for Business.|
 
 ## Properties
 |Property|Type|Description|

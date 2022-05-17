@@ -13,14 +13,6 @@
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
           "ApiChange": "Resource",
-          "ChangedApiName": "admin",
-          "ChangeType": "Change",
-          "Description": "Added a subpath to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource",
-          "Target": "admin"
-        },
-        {
-          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
-          "ApiChange": "Resource",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
           "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type.",
