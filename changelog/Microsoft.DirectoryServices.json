@@ -738,8 +738,6 @@
     {
       "ChangeList": [
         {
-<<<<<<< HEAD
-=======
           "Id": "a06f2b0b-fd32-47f4-9598-5d31e6a4ca59",
           "ApiChange": "Permission",
           "ChangedApiName": "CustomSecAttributeAssignment.Read.All",
@@ -810,7 +808,6 @@
       {
       "ChangeList": [
         {
->>>>>>> 0f5fd52088dd473de987e5726ef16a3ed339d621
           "Id": "b8a3fbfc-1db4-4d7b-980c-c13249612851",
           "ApiChange": "Property",
           "ChangedApiName": "isAnswerEditable",
