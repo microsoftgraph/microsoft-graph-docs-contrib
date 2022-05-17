@@ -1035,6 +1035,15 @@ Namespace: microsoft.graph
 | radio
 
 
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
+
+
 ### plannerPreviewType values
 
 | Member

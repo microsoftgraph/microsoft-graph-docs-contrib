@@ -203,7 +203,7 @@ Delta tokens are only valid for a specific period before the client application 
 + For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
 + For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
-In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see (Error codes in Microsoft Graph](/graph/errors#code-property).
+In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
 
 ## Prerequisites
 

@@ -1,13 +1,13 @@
 ---
-title: "Create unifiedRoleEligibilityScheduleRequest"
+title: "Create roleEligibilityScheduleRequests"
 description: "Create a new unifiedRoleEligibilityScheduleRequest object."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleEligibilityScheduleRequest
+# Create roleEligibilityScheduleRequests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
