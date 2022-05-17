@@ -14514,7 +14514,7 @@ items:
           - name: Create custodian
             href: api/security-ediscoverycase-post-custodians.md
           - name: List non-custodial data sources
-            href: api/security-ediscoverycase-list-noncustodialsources.md
+            href: api/security-ediscoverycase-list-noncustodialdatasources.md
           - name: Create non-custodial data source
             href: api/security-ediscoverycase-post-noncustodialdatasources.md
           - name: List legal holds
@@ -14530,9 +14530,9 @@ items:
           - name: Create review set
             href: api/security-ediscoverycase-post-reviewsets.md
           - name: List tags
-            href: api/security-ediscoverycase-list-reviewtags.md
+            href: api/security-ediscoverycase-list-tags.md
           - name: Create tag
-            href: api/security-ediscoverycase-post-reviewtags.md
+            href: api/security-ediscoverycase-post-tags.md
           - name: Get settings
             href: api/security-ediscoverycasesettings-get.md
           - name: Update settings
@@ -14597,9 +14597,9 @@ items:
           href: resources/security-ediscoverynoncustodialdatasource.md
           items:
           - name: List
-            href: api/security-ediscoverycase-list-noncustodialsources.md
+            href: api/security-ediscoverycase-list-noncustodialdatasources.md
           - name: Create
-            href: api/security-ediscoverycase-post-noncustodialsources.md
+            href: api/security-ediscoverycase-post-noncustodialdatasources.md
           - name: Get
             href: api/security-ediscoverynoncustodialdatasource-get.md
           - name: Release
