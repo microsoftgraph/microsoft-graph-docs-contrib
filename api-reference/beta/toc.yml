@@ -14627,6 +14627,14 @@ items:
             href: api/site-update-permission.md
           - name: Delete site permission
             href: api/site-delete-permission.md
+        - name: Tenant Settings
+          items: 
+            - name: Settings
+              href: resources/tenantadmin-settings.md
+            - name: Get settings
+              href: resources/tenantadmin-settings-get.md
+            - name: Update settings
+              href: resources/tenantadmin-settings-update.md
       - name: Lists
         items:
         - name: List
