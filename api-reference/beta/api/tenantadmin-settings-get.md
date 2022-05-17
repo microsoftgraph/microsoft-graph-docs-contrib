@@ -1,6 +1,6 @@
 ---
 title: "Get settings (tenantAdmin)"
-description: "Get the tenant-level settings for SharePoint and OneDrive for Business."
+description: "Get the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive for Business.
+Get the tenant-level [settings](../resources/tenantadmin-settings.md) for SharePoint and OneDrive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
