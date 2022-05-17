@@ -3,31 +3,31 @@
     {
       "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
-              "ApiChange": "Method",
-              "ChangedApiName": "activateServicePlan",
-              "ChangeType": "Deprecation",
-              "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
-              "Target": "user"
-            },
-            {
-              "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
-              "ApiChange": "Method",
-              "ChangedApiName": "activateService",
-              "ChangeType": "Deprecation",
-              "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
-              "Target": "organization"
-            }
-          ],
           "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
-          "Cloud": "prd",
-          "Version": "beta",
-          "CreatedDateTime": "2022-05-17T13:08:01.353Z",
-          "WorkloadArea": "Identity and access",
-          "SubArea": "Directory management"
+          "ApiChange": "Method",
+          "ChangedApiName": "activateServicePlan",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
+          "Target": "user"
         },
+        {
+          "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateService",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T13:08:01.353Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
           "ApiChange": "Parameter",
