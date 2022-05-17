@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionLabel resource type (deprecated)"
-description: "Describes the information protection label that details how to properly apply a sensitivity label to information. (deprecated)"
+description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

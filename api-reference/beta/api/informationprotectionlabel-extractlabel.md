@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionLabel: extractLabel (deprecated)"
-description: "Retrieve informationProtectionContentLabel using metadata from a labeled object. (deprecated)"
+description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

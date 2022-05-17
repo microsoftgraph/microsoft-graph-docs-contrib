@@ -1,6 +1,6 @@
 ---
 title: "labelingOptions resource type  (deprecated)"
-description: "Represents the labeling options that can be provided to the evaluation APIs.  (deprecated)"
+description: "Represents the labeling options that can be provided to the evaluation APIs."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

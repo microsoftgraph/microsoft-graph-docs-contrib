@@ -1,6 +1,6 @@
 ---
 title: "Get informationProtectionLabel (deprecated)"
-description: "Retrieve the properties and relationships of the specified informationProtectionLabel object. (deprecated)"
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

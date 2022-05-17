@@ -1,6 +1,6 @@
 ---
 title: "removeProtectionAction resource type (deprecated)"
-description: "Represents an action to remove protection from the file or information. (deprecated)"
+description: "Represents an action to remove protection from the file or information."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

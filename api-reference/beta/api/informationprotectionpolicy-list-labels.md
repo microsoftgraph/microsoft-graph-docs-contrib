@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionLabel: listLabels (deprecated)"
-description: "Retrieve a list of information protection labels. (deprecated)"
+description: "Retrieve a list of information protection labels."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

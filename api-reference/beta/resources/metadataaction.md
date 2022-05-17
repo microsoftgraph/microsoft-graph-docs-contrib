@@ -1,6 +1,6 @@
 ---
 title: "metadataAction resource type (deprecated)"
-description: "Represents the metadata to be written or removed from a file. (deprecated)"
+description: "Represents the metadata to be written or removed from a file."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

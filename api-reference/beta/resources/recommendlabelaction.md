@@ -1,6 +1,6 @@
 ---
 title: "recommendLabelAction resource type (deprecated)"
-description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types. (deprecated)"
+description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"

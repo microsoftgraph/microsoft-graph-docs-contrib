@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionAction resource type (deprecated)"
-description: "Describes the abtract informationProtectionAction entity. (deprecated)"
+description: "Describes the abtract informationProtectionAction entity."
 ms.localizationpriority: medium
 author: "tommoser"
 ms.prod: "security"
