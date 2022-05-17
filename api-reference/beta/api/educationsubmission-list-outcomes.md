@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.  There are three types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, **educationRubricOutcome**, and **educationFeedbackResourceOutcome**.
+Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.  There are four types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, **educationRubricOutcome**, and **educationFeedbackResourceOutcome**.
 
 A submission for a credit assignment (one that has no point value and no rubric) will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)
 
@@ -235,7 +235,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",

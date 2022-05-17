@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).
 
-The teacher determines the resources to upload in the submission's feedback resources folder.
+The teacher determines the resources to upload in the feedback resources folder of a submission.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,16 +31,18 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer `{token}`. Required.  |
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type   | application/json           |
 
 ## Request body
-You need to provide an empty json `{}` as request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
-If successful, this method returns a 200 Ok response code and [educationAssignment](../resources/educationassignment.md) object in the request body.
+If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the request body.
 
 ## Example
 The following example shows how to call this API.
@@ -62,7 +64,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of a response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

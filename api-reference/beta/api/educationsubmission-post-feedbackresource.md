@@ -1,6 +1,6 @@
 ---
 title: "Create educationFeedbackResourceOutcome"
-description: "Create a new feeback resource for submission."
+description: "Create a new feedback resource for a submission."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission.
 
-Only the teacher can perform this operation.
+Only a teacher can perform this operation.
 
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or is not in that folder, the POST request will fail.
 
@@ -41,7 +41,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/submissions/{submis
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type   | application/json           |
 
 ## Request body
 In the request body, supply a JSON representation of an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md) object.
@@ -53,7 +53,7 @@ This method returns a `400 Bad Request` when the submission has exceeded more th
 
 ## Example
 ### Request
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
