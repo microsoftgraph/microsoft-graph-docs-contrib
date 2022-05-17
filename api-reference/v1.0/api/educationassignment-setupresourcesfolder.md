@@ -35,7 +35,8 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 | Authorization  | Bearer `{token}`. Required.  |
 
 ## Request body
-You need to provide an empty json `{}` as request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
 
@@ -81,7 +82,7 @@ Content-type: application/json
 
 
 ### Response
-The following is an example of a response. 
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",
