@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
 A built-in task list which cannot be renamed or deleted. To Do has two built-in lists, **flagged email** and **tasks** list.
 
 This resource supports adding your data to custom properties as [open extensions](/graph/extensibility-overview)
