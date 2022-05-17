@@ -1,6 +1,6 @@
 ---
 title: "settings resource type (tenantAdmin)"
-description:  "Represents the tenant-level settings for SharePoint and OneDrive."
+description: "Represents the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 | personalSiteDefaultStorageLimitInMB                | Int64                        | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                                           |
 | sharingAllowedDomainList                           | String collection            | Collection of email domains that is allowed for sharing outside the organization.                                                                                                                              |
 | sharingBlockedDomainList                           | String collection            | Collection of email domains that is blocked for sharing outside the organization.                                                                                                                              |
-| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`,`existingExternalUserSharingOnly`.                                                |
+| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.                                                |
 | sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                                                                        |
 | siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
@@ -59,7 +59,6 @@ Inherits from [entity](../resources/entity.md).
 | disabled                        | The image tagging option for the tenant is disabled.                                                                  |
 | basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
 | enhanced                        | Allows users to tag images with custom tags and enhanced features.                                                    |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
 ### sharingCapabilities values
 | Member                          | Description                                                                                                           |
@@ -68,7 +67,6 @@ Inherits from [entity](../resources/entity.md).
 | externalUserSharingOnly         | Users can share with new and existing guests. Guests must sign in or provide a verification code.                     |
 | externalUserAndGuestSharing     | Users can share with anyone by using links that don't require sign-in.                                                |
 | existingExternalUserSharingOnly | Users can share with existing guests (those already in the directory of the organization).                            |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
 ### sharingDomainRestrictionMode values
 | Member                          | Description                                                                                                           |
@@ -76,7 +74,6 @@ Inherits from [entity](../resources/entity.md).
 | none                            | No restrictions apply.                                                                                                |
 | allowList                       | Users will be able to share with external collaborators coming only from the list of allowed email domains.           |
 | blockList                       | Users will be able to share with all external collaborators apart from the ones on the list of blocked email domains. |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
 
 ## JSON representation
 The following is a JSON representation of the resource.

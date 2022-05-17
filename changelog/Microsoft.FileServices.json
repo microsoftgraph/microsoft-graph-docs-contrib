@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
-          "Description": "Added the **sharepoint** navigation property to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sharepoint** navigation property to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
           "Target": "admin"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type.",
+          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
           "Target": "settings"
         },
         {
