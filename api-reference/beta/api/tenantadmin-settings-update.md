@@ -30,10 +30,7 @@ When calling on behalf of a user, the user needs to belong to one of the followi
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type":"microsoft.graph.tenantAdmin.settings",
-  "name": "update_tenant_settings"
+  "blockType": "ignored"
 }
 -->
 ``` http
@@ -75,7 +72,7 @@ The following table shows the properties that can be edited for a [settings](../
 | personalSiteDefaultStorageLimitInMB                | Int64                        | The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in megabytes (MB).                                                                           |
 | sharingAllowedDomainList                           | String collection            | Collection of email domains that is allowed for sharing outside the organization.                                                                                                                              |
 | sharingBlockedDomainList                           | String collection            | Collection of email domains that is blocked for sharing outside the organization.                                                                                                                              |
-| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`,`existingExternalUserSharingOnly`.                                                |
+| sharingCapability                                  | sharingCapabilities          | Sharing capability for the tenant. Possible values are: `disabled`, `externalUserSharingOnly`, `externalUserAndGuestSharing`, `existingExternalUserSharingOnly`.                                                |
 | sharingDomainRestrictionMode                       | sharingDomainRestrictionMode | Specifies the external sharing mode for domains. Possible values are: `none`, `allowList`, `blockList`.                                                                                                        |
 | siteCreationDefaultManagedPath                     | String                       | The value of the team site managed path. This is the path under which new team sites will be created.                                                                                                          |
 | siteCreationDefaultStorageLimitInMB                | Int32                        | The default storage quota for a new site upon creation. Measured in megabytes (MB).                                                                                                                            |
@@ -96,8 +93,6 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "truncated": true,
-  "@odata.type":"microsoft.graph.tenantAdmin.settings",
   "name": "update_tenant_settings"
 }
 -->
@@ -125,7 +120,8 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.tenantAdmin.settings"
 }
 -->
 ``` http
