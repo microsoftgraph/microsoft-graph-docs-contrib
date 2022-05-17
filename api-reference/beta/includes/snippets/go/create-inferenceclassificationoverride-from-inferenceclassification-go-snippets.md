@@ -16,10 +16,7 @@ name := "Samantha Booth"
 senderEmailAddress.SetName(&name)
 address := "samanthab@adatum.onmicrosoft.com"
 senderEmailAddress.SetAddress(&address)
-options := &msgraphsdk.OverridesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().InferenceClassification().Overrides().Post(options)
+result, err := graphClient.Me().InferenceClassification().Overrides().Post(requestBody)
 
 
 ```

@@ -17,11 +17,8 @@ requestBody.SetPosts( []Post {
 		}
 	}
 }
-options := &msgraphsdk.ThreadsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Threads().Post(options)
+result, err := graphClient.GroupsById(&groupId).Threads().Post(requestBody)
 
 
 ```

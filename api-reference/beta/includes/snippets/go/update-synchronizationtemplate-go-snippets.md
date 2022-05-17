@@ -16,13 +16,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"Authorization": "Bearer <token>"
 }
-options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutRequestConfiguration{
+	Headers: headers,
 }
 applicationId := "application-id"
 synchronizationTemplateId := "synchronizationTemplate-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).Put(options)
+graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

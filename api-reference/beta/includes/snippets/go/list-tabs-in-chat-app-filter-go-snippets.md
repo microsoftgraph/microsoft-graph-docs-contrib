@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.TabsRequestBuilderGetQueryParameters{
 	Expand: "teamsApp",
 	Filter: "teamsApp/id%20eq%20'com.microsoft.teamspace.tab.web'",
 }
-options := &msgraphsdk.TabsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TabsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Get(options)
+result, err := graphClient.ChatsById(&chatId).Tabs().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

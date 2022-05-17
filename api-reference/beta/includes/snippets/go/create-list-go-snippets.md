@@ -24,11 +24,8 @@ list := msgraphsdk.NewListInfo()
 requestBody.SetList(list)
 template := "genericList"
 list.SetTemplate(&template)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Lists().Post(options)
+result, err := graphClient.SitesById(&siteId).Lists().Post(requestBody)
 
 
 ```

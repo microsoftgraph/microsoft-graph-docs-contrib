@@ -12,11 +12,8 @@ customSecurityAttributes := msgraphsdk.NewCustomSecurityAttributeValue()
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 customSecurityAttributes.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Patch(options)
+graphClient.UsersById(&userId).Patch(requestBody)
 
 
 ```

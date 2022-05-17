@@ -76,10 +76,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"backupReviewers":  []Object {
 	}
 }
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```
