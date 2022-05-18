@@ -30,6 +30,7 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**
 
+
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
 ![An image showing the primary resources and relationships that are part of Microsoft Graph](images/microsoft-graph.png)
