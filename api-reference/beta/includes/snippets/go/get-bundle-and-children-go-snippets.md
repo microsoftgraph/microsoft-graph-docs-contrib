@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.DriveItemRequestBuilderGetQueryParameters{
 	Expand: "children",
 }
-options := &msgraphsdk.DriveItemRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DriveItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 driveItemId := "driveItem-id"
-result, err := graphClient.Drive().ItemsById(&driveItemId).Get(options)
+result, err := graphClient.Drive().ItemsById(&driveItemId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

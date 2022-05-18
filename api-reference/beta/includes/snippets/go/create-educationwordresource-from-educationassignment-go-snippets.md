@@ -18,12 +18,9 @@ resource.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.educationWordResource",
 	"fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
 }
-options := &msgraphsdk.ResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(requestBody)
 
 
 ```

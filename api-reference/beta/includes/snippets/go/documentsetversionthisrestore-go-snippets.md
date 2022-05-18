@@ -11,7 +11,7 @@ siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
 documentSetVersionId := "documentSetVersion-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Restore(site-id, list-id, listItem-id, documentSetVersion-id).Post(nil)
+graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Restore(site-id, list-id, listItem-id, documentSetVersion-id).Post()
 
 
 ```

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
 	Filter: "distributionMethod%20eq%20'organization'",
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().Get(options)
+result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

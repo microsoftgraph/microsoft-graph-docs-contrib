@@ -90,7 +90,7 @@ items:
       - name: Groups
         items:
           - name: Overview
-            href: /graph/api/resources/groups-overview
+            href: /graph/api/resources/groups-overview?context=graph/context
           - name: Microsoft 365 groups
             href: office365-groups-concept-overview.md
           - name: Configure group options
@@ -718,7 +718,7 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the Toolkit
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md

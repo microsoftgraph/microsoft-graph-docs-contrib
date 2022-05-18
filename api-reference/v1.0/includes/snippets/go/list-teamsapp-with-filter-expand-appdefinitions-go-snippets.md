@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
 	Filter: "id%20eq%20'876df28f-2e78-423b-94a5-44181bd0e225'",
 	Expand: "appDefinitions",
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().Get(options)
+result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

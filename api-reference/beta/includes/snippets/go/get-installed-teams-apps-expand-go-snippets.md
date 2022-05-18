@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.TeamsAppInstallationRequestBuilderGetQueryParameters{
 	Expand: "teamsAppDefinition",
 }
-options := &msgraphsdk.TeamsAppInstallationRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppInstallationRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 teamId := "team-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Get(options)
+result, err := graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

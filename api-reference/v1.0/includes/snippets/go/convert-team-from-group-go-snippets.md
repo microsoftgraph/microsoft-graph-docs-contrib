@@ -46,10 +46,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 	"group@odata.bind": "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

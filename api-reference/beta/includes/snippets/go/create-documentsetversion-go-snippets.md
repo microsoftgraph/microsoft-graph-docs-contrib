@@ -12,13 +12,10 @@ comment := "v1"
 requestBody.SetComment(&comment)
 shouldCaptureMinorVersion := false
 requestBody.SetShouldCaptureMinorVersion(&shouldCaptureMinorVersion)
-options := &msgraphsdk.DocumentSetVersionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersions().Post(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersions().Post(requestBody)
 
 
 ```

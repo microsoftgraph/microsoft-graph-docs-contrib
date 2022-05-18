@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 baseTaskListId := "baseTaskList-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Tasks().Get(nil)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Tasks().Get()
 
 
 ```

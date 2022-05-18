@@ -13,11 +13,8 @@ requestBody.SetUserId(&userId)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.plannerRosterMember",
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 plannerRosterId := "plannerRoster-id"
-result, err := graphClient.Planner().RostersById(&plannerRosterId).Members().Post(options)
+result, err := graphClient.Planner().RostersById(&plannerRosterId).Members().Post(requestBody)
 
 
 ```
