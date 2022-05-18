@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activateServicePlan",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
+          "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
           "Target": "user"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activateService",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after March 15, 2022.",
+          "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
           "Target": "organization"
         }
       ],
