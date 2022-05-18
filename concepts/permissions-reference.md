@@ -8,7 +8,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Microsoft Graph permissions reference
 
-For your app to access data in Microsoft Graph, it must be granted the permissions it needs. This topic lists the delegated and application permissions associated with all Microsoft Graph APIs. For more guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For an app to access data in Microsoft Graph, it must be granted the permissions it needs. This topic lists the delegated and application permissions exposed by Microsoft Graph. For more guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 [!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 

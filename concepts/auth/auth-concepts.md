@@ -11,7 +11,7 @@ ms.custom: graphiamtop20
 
 To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator to access the Microsoft Graph resources it needs.
 
-This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens.For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [Next Steps](#next-steps) section.
+This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens. For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [Next Steps](#next-steps) section.
 
 ## Register your app with the Microsoft identity platform
 
@@ -21,22 +21,7 @@ Before your app can get a token from the Microsoft identity platform, it must be
 - **Redirect URI/URL**: One or more endpoints at which your app will receive responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)
 - **Client secret**: A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
 
-The properties configured during registration are used in the request. For example, in the following token request: *client_id* is the *application ID*, *redirect_uri* is one of your app's registered *redirect URIs*, and *client_secret* is the *client secret*.
-
-```http
-// Line breaks for legibility only
-
-POST /common/oauth2/v2.0/token HTTP/1.1
-Host: https://login.microsoftonline.com
-Content-Type: application/x-www-form-urlencoded
-
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
-&scope=user.read%20mail.read
-&code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
-&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
-&grant_type=authorization_code
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
-```
+The app will specify these properties when making the authentication request.
 
 For more information, see [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2)
 
@@ -74,9 +59,32 @@ When a user signs in to your app they, or, in some cases, an administrator, are 
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
 
+For your app to be authorized to access data, it must specify the permissions it needs through a `scope` parameter in the authentication request.
+
 For more information about Microsoft Graph permissions and how to use them, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 ## Access tokens
+
+An application makes an authentication request to get access tokens which it uses to call an API. In the authentication request, the application specifies its registration details and the permissions it needs. The **Application ID**, **Redirect URI/URL**, and **Client secret** properties from the application registration are included in an authentication request as follows: *client_id* is the *application ID*, *redirect_uri* is one of your app's registered *redirect URIs*, and *client_secret* is the *client secret*.
+
+The following is an example of an authentication request:
+
+```http
+// Line breaks for legibility only
+
+POST /common/oauth2/v2.0/token HTTP/1.1
+Host: https://login.microsoftonline.com
+Content-Type: application/x-www-form-urlencoded
+
+client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+&scope=user.read%20mail.read
+&code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
+&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+&grant_type=authorization_code
+&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
+```
+
+After making this authentication request, the Microsoft identity platform sends back an access token to the app.
 
 Access tokens that are issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
 
@@ -86,7 +94,7 @@ The following example shows a Microsoft identity platform access token:
 EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
 ```
 
-To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTTP request. For example, the following call that returns the profile information of the signed-in user (the access token has been shortened for readability):
+To call Microsoft Graph, the app makes an authorization request by attaching the access token as a **Bearer** token to the **Authorization** header in an HTTP request. For example, the following call that returns the profile information of the signed-in user (the access token has been shortened for readability):
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
@@ -141,3 +149,4 @@ The Microsoft identity platform documentation contains articles and samples that
 - [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens)
 - [Choose a Microsoft Graph authentication provider based on scenario](../sdks/choose-authentication-providers.md)
 - [Microsoft identity platform endpoint documentation](/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Overview of Microsoft Graph permissions](permissions-overview.md)

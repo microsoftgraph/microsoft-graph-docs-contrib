@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 For the Microsoft identity platform to authorize your app to access data through Microsoft Graph, the app must be granted the permissions it needs.
 
-This topic introduces Microsoft Graph permissions and their types, their general characteristics, and provides guidance for using the permissions in your app. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
+This topic introduces Microsoft Graph permissions and provides guidance for using the permissions in your app. To see the full list of permissions that Microsoft Graph exposes, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
 To learn more about how permissions work, and watch the following video.
 
@@ -27,13 +27,13 @@ Microsoft Graph exposes two types of permissions to support its [delegated and a
 
 For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, the user. The application will only be able to read all files in the organization that Tom can already access.
 
-In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. In the Microsoft Graph permissions reference, delegated permissions that are valid for Microsoft accounts are indicated in the *Microsoft Account supported* table columns.
+In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. In the [Microsoft Graph permissions reference](permissions-reference.md), the *Microsoft Account supported* table columns indicate delegated permissions that are valid for Microsoft accounts.
 
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If consent is granted, the app is given access to the resources and APIs that it has requested.
 
 ### Application permissions
 
-**Application permissions**, also called **app roles**, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the tenant.
+**Application permissions**, also called **app roles**, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the organization.
 
 For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed. Only an administrator can consent to application permissions.
 
@@ -51,7 +51,7 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 
 ## Microsoft Graph permissions naming pattern
 
-Microsoft Graph permissions are named in the following pattern: {resource}.{operation}.{constraint} where:
+Microsoft Graph permissions are named in the following pattern: *{resource}*.*{operation}*.*{constraint}* where:
 
 | Value          | Description                                                                                                                                                                                                                  | Examples                                                           |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
