@@ -154,7 +154,7 @@ Content-type: application/json
 }
 ```
 
-If you granted consent for all users in the tenant, the **consentType** in the above response object would be `AllPrincipals` and the **principalId** would be `null`.
+If you granted consent for all users in the tenant, the **consentType** in the response object would be `AllPrincipals` and the **principalId** would be `null`.
 
 To confirm the delegated permissions assigned to the service principal on behalf of user ID `3fbd929d-8c56-4462-851e-0eb9a7b3a2a5`, you run the following request.
 
@@ -195,9 +195,10 @@ Content-type: application/json
 
 ## Step 3 : Revoke delegated permissions granted to the service principal on behalf of a user
 
-If a service principal has been granted multiple delegated permission grants on behalf of a user, you can either choose to revoke one grant or all grants. 
-+ To revoke one grant, run a PATCH request and specify only the delegated permissions to retain in the **scope** parameter.
-+ To revoke all grants, run a DELETE request for the oauth2PermissionGrant object.
+If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either one or some grant or all grants.
+
++ To revoke one or some grants, run a PATCH request on the oauth2PermissionGrant object and specify only the delegated permissions to retain in the **scope** parameter.
++ To revoke all grants, run a DELETE request on the oauth2PermissionGrant object.
 
 ### Request
 
