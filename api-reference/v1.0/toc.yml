@@ -4871,10 +4871,9 @@ items:
             - name: Delete
               href: api/unifiedroleassignment-delete.md
           - name: Privileged identity management
+            displayName: Privileged identity management, PIM
+            href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: Overview
-              displayName: Privileged identity management, PIM
-              href: resources/privilegedidentitymanagementv3-overview.md
             - name: Role assignments
               items:
                 - name: Schedule requests

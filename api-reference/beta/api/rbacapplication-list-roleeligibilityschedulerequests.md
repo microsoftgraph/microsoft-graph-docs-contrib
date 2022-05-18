@@ -1,5 +1,5 @@
 ---
-title: "List unifiedRoleEligibilityScheduleRequests"
+title: "List roleEligibilityScheduleRequests"
 description: "Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleEligibilityScheduleRequests
+# List roleEligibilityScheduleRequests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
