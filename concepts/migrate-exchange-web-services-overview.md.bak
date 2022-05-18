@@ -17,7 +17,7 @@ Microsoft Graph offers improvements over EWS in terms of security, simplicity, a
 
 ### Security
 
-Microsoft Graph has stricter security and governance policies with OAuth and [granular scoping to limit data access](/graph/permissions-reference) in a mailbox as opposed to the all or none access model in EWS.
+Microsoft Graph has stricter security and governance policies with OAuth and [granular scoping to limit data access](https://docs.microsoft.com/en-us/graph/permissions-reference) in a mailbox as opposed to the all or none access model in EWS.
 
 ### Developer simplicity
 
