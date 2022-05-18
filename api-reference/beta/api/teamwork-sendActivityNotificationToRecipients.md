@@ -77,7 +77,6 @@ This example shows how you can send an activity feed notification to multiple us
 
 #### Request
 
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -141,8 +140,6 @@ HTTP/1.1 202 Accepted
 If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
