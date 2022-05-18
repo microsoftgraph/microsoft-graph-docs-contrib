@@ -33,7 +33,7 @@ A logical container to add content from an external source into Microsoft Graph.
 
 | Property           | Type                              | Description |
 |:--------------------------|:----------------------------------|:------------|
-| complianceSettings        |[microsoft.graph.externalConnectors.complianceSettings](../resources/externalconnectors-compliancesettings.md)| The settings configuring compliance-related content in this connection, such as the display templates for compliance results.|
+| complianceSettings        |[microsoft.graph.externalConnectors.complianceSettings](../resources/externalconnectors-compliancesettings.md)| The settings required for the connection to participate in eDiscovery, such as the display templates for eDiscovery results.|
 | configuration             | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
 | connectorId               | String            | The Teams App ID. Optional.|
 | description               | String           | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
