@@ -34,6 +34,9 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /groups/{id}/members/{id}/$ref
 ```
 
+> [!IMPORTANT]
+> If the `/$ref` is not appended to the request, the user will be deleted from AAD in the case of having the appropriate permissions, otherwise an 403 Forbidden errors is returned. 
+
 ## Request headers
 
 | Name          | Description               |
