@@ -99,9 +99,9 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
-          - name: Grant app permissions
+          - name: Manage app roles
             href: permissions-app-grant-msgraph.md
-          - name: Grant delegated permissions
+          - name: Manage delegated permissions
             href: permissions-delegated-grant-msgraph.md
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
