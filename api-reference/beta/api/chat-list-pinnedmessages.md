@@ -34,7 +34,7 @@ GET /chats/{chat-id}/pinnedMessages
 ```
 
 ## Optional query parameters
-This method supports `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$expand` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List all the pinned messages in a chat
 The following example shows a request that lists all the pinned messages in a chat.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -64,12 +65,13 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.pinnedChatMessageInfo)"
+  "@odata.type": "microsoft.graph.pinnedChatMessageInfo",
+  "isCollection": true
 }
 -->
 ``` http
@@ -85,12 +87,14 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.pinnedChatMessageInfo",
       "id": "1615971548136"
-    },
+    }
   ]
 }
 ```
-### Example 2: List all the pinned messages in a chat along with associated chat message
-The following example shows a request that lists all the pinned messages in a chat along with associated chat message.
+
+### Example 2: List all the pinned messages in a chat along with the associated chat message
+The following example shows a request that lists all the pinned messages in a chat along with the associated chat message.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -103,12 +107,13 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.pinnedChatMessageInfo)"
+  "@odata.type": "microsoft.graph.pinnedChatMessageInfo",
+  "isCollection": true
 }
 -->
 ``` http
@@ -193,7 +198,7 @@ Content-Type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": []
-        },
+        }
     }    
   ]
 }
