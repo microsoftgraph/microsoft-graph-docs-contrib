@@ -1,6 +1,6 @@
 ---
 title: "List pinned messages in a chat"
-description: "Retrieve list of pinned message info of a chat."
+description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [pinnedChatMessageInfo](../resources/pinnedChatMessageInfo.md) in the specified [chat](../resources/chat.md).
+Get a list of [pinnedChatMessages](../resources/pinnedChatMessageInfo.md) in a [chat](../resources/chat.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,6 +51,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1: List all the pinned messages in a chat
+The following example shows a request that lists all the pinned messages in a chat.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -59,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/chats/{chat-id}/pinnedMessages
+GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/pinnedMessages
 ```
 
 ### Response
@@ -91,6 +93,8 @@ Content-Type: application/json
 ```
 
 ### Example 2: List all the pinned messages in a chat along with the associated chat message
+The following example shows a request that lists all the pinned messages in a chat along with associated chat message.
+
 ### Request
 The following is an example of a request.
 <!-- {
