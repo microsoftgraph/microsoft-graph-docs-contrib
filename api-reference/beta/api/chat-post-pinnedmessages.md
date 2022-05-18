@@ -1,6 +1,6 @@
 ---
 title: "Pin a message in a chat"
-description: "Pin a message in a chat."
+description: "Pin a chat message in the specified chat."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pin a chat message in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before pinning a chat message.
+Pin a chat message in the specified [chat](../resources/chat.md). This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before you can pin a chat message.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 | Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Chat.ReadWrite.All. |
+| Application                            | Chat.ReadWrite.All |
 
 ## HTTP request
 
@@ -40,7 +40,7 @@ POST /chats/{chat-Id}/pinnedMessages
 |Content-Type|application/json. Required.|
 
 ## Request body
-The request body should contain the chat message id.
+The request body should contain the chat message ID.
 
 ## Response
 
@@ -67,7 +67,7 @@ Content-length: 63
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
