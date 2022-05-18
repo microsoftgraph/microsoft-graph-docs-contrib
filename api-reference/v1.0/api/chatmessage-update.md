@@ -151,15 +151,15 @@ If successful, this method returns a `204 NoContent` response.
 
 The following is an example of the request to update the properties on a Microsoft Teams channel message in user context.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_1"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -202,15 +202,15 @@ HTTP/1.1 204 NoContent
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message in user context.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_2"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "deletedDateTime": null,
@@ -284,15 +284,15 @@ HTTP/1.1 204 NoContent
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message in user context.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_3"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
@@ -353,14 +353,15 @@ HTTP/1.1 204 NoContent
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message in user context.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_chatMessage_4"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
+
 {
   "messageType": "message",
   "subject": null,
