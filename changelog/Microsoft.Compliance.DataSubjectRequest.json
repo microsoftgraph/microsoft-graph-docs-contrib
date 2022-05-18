@@ -3,6 +3,120 @@
     {
       "ChangeList": [
         {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestAllMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestAllMailboxLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestAllMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestAllSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestAllSiteLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestAllSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestEnumeratedMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestEnumeratedMailboxLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestEnumeratedMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestEnumeratedSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestEnumeratedSiteLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestEnumeratedSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestMailboxLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestMailboxLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestMailboxLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestMailboxLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subjectRightsRequestSiteLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [subjectRightsRequestSiteLocation](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequestSiteLocation?view=graph-rest-beta) resource type.",
+          "Target": "subjectRightsRequestSiteLocation"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentQuery** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalId",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalId** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAllVersions",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAllVersions** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAuthoredContent",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAuthoredContent** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailboxLocations",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxLocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "pauseAfterEstimate",
+          "ChangeType": "Addition",
+          "Description": "Added the **pauseAfterEstimate** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+          "ApiChange": "Property",
+          "ChangedApiName": "siteLocations",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteLocations** property to the [subjectRightsRequest](https://docs.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequest"
+        }
+      ],
+      "Id": "73719bfa-8c1e-4607-8b9c-09a6e445d436",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T21:04:31.2767577Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "Subject rights requests"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5efb691a-d997-4d5b-bf09-b5ccfba02c72",
           "ApiChange": "EnumType",
           "ChangedApiName": "dataSubjectType",

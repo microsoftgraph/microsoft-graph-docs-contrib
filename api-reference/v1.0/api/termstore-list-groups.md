@@ -1,9 +1,9 @@
 ---
-title: "List groups"
+title: "List termStore groups"
 description: "Get a list of group objects in a term store."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 

@@ -82,7 +82,7 @@ Content-type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/roleManagement/directory/roleDefinitions/beta/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
+                "query": "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
                 "queryType": "MicrosoftGraph"
             }
         ]
@@ -480,7 +480,7 @@ When you retrieve the access review decisions (repeat Step 3), they have the fol
 + The reviewedBy object contains your details as the reviewer.
 + The applyResult is `New` meaning the decisions haven't been applied.
 
-While you've recorded all the pending decisions for this instance, the decisions haven't been applied to the resource and principal objects. For example, Aline still has access to the privileged role. You can verify this assignment by running the following query `https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`. This behavior is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, and the instance period hasn't ended.
+While you've recorded all the pending decisions for this instance, the decisions haven't been applied to the resource and principal objects. For example, Aline still has access to the privileged role. You can verify this assignment by running the following query `https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`. This behavior is because the **autoApplyDecisionsEnabled** was set to `false`, you haven't stopped the review, and the instance period hasn't ended.
 
 In this tutorial, you won't stop the instance manually, but you'll let it end automatically and then apply the decisions.
 
@@ -511,7 +511,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 HTTP/1.1 204 No Content
 ```
 
-Aline has now lost access to the User Administrator role while the IT Helpdesk group has maintained its access. You can verify this state of role assignment by running the following query `https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`.
+Aline has now lost access to the User Administrator role while the IT Helpdesk group has maintained its access. You can verify this state of role assignment by running the following query `https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`.
 
 After the decisions have been applied, the **status** of the access review instance will be `Applied`. Also, because we created a recurring access review in Step 1, a new instance will be started. Its start date will be three months from when the current review period is marked as having ended.
 
@@ -637,7 +637,7 @@ In the following request, an empty **decisions** object means all decisions rela
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions
 
 {
     "displayName": "Last quarter's access reviews for privileged roles - User Administrator",
@@ -661,7 +661,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
     "id": "983db508-b77b-427d-ab90-a4041efa658d",
     "displayName": "Last quarter's access reviews for privileged roles - User Administrator",
     "reviewHistoryPeriodStartDateTime": "2022-03-01T00:00:00Z",
@@ -699,7 +699,7 @@ Content-type: application/json
 #### Request
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances
 ```
 
 #### Response
@@ -709,7 +709,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions('983db508-b77b-427d-ab90-a4041efa658d')/instances",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/historyDefinitions('983db508-b77b-427d-ab90-a4041efa658d')/instances",
     "value": [
         {
             "id": "983db508-b77b-427d-ab90-a4041efa658d",
@@ -729,7 +729,7 @@ Content-type: application/json
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances/983db508-b77b-427d-ab90-a4041efa658d/generateDownloadUri()
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/983db508-b77b-427d-ab90-a4041efa658d/generateDownloadUri()
 ```
 
 #### Response
@@ -739,7 +739,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewHistoryInstance",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessReviewHistoryInstance",
     "@odata.type": "#microsoft.graph.accessReviewHistoryInstance",
     "id": "a222f18d-5cf5-4210-874c-14d0a7d930b3",
     "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
@@ -764,7 +764,7 @@ Delete the **accessReviewScheduleDefinition** object that you created for this t
   "name": "tutorial-accessreviews-priviegedroles-deleteaccessreview"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f
 ```
 
 ### Response
@@ -782,6 +782,6 @@ You've learned how to review access to privileged roles in Azure AD. Your organi
 
 ## See also
 
-+ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
 + [Learn about privileged access management](/microsoft-365/compliance/privileged-access-management-overviewe)
