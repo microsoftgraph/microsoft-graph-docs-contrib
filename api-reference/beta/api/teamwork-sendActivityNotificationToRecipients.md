@@ -1,6 +1,6 @@
 ---
-title: "team: sendActivityNotification"
-description:  Send an activity feed notification in scope of a team.
+title: "teamwork: sendActivityNotificationToRecipients"
+description:  Send activity feed notifications to multiple users in bulk.
 author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
