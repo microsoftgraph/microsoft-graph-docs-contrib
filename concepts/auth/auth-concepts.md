@@ -21,13 +21,15 @@ Before your app can get a token from the Microsoft identity platform, it must be
 - **Redirect URI/URL**: One or more endpoints at which your app will receive responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)
 - **Client secret**: A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
 
-The app will specify these properties when making the authentication request.
+The app will specify these properties in its authentication request to the Microsoft identity platform when it wants to acquire an access token.
 
 For more information, see [Register an application with the Microsoft identity platform](/graph/auth-register-app-v2)
 
 ## Access scenarios
 
-As an application developer, you must identify how your application accesses data through Microsoft Graph. The application can use **delegated access**, acting on behalf of a signed-in user, or **direct access**, acting with its own identity.
+The method that an app uses to authenticate to the Microsoft identity platform will depend on how the app wants to access data. As an application developer, you must identify which one of two ways your app will use to access data through Microsoft Graph.
++ **Delegated access**, acting on behalf of a signed-in user
++ **Direct access**, acting with its own identity
 
 :::image type="content" source="../images/access-scenarios.png" alt-text="Image shows illustration of access scenarios.":::
 
@@ -61,7 +63,7 @@ When a user signs in to your app they, or, in some cases, an administrator, are 
 
 For your app to be authorized to access data, it must specify the permissions it needs through a `scope` parameter in the authentication request.
 
-For more information about Microsoft Graph permissions and how to use them, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For more information about Microsoft Graph permissions and how to use them, see the [Overview of Microsoft Graph permissions](../permissions-overview.md).
 
 ## Access tokens
 

@@ -39,7 +39,6 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 
 #### Comparison of delegated and application permissions
 
-
 | <!-- No header--> | Delegated permissions | Application permissions |
 |--|--|--|
 | Types of apps | Web / Mobile / single-page app (SPA) | Web / Daemon |
@@ -48,6 +47,7 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 | Other names | <li> Scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
 | Result of consent | [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignment](/graph/api/resources/approleassignment) |
 
+:::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="Microsoft Graph exposes delegated and application permissions but authorizes requests based on the app's effective permissions." border="true":::
 
 ## Microsoft Graph permissions naming pattern
 
