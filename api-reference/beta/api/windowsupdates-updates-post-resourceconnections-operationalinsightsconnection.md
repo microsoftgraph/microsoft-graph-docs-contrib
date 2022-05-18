@@ -42,12 +42,12 @@ POST /admin/windows/updates/resourceConnections
 ## Request body
 In the request body, supply a JSON representation of the [operationalInsightsConnection](../resources/windowsupdates-operationalinsightsconnection.md) object.
 
-You must specify the following properties when creating a **operationalInsightsConnection**.
+You must specify the following properties when you create an **operationalInsightsConnection**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|azureResourceGroupName|String|The name of the Azure resource group containing the Log Analytics workspace.|
-|azureSubscriptionId|String|The Azure subscription ID containing the Log Analytics workspace.|
+|azureResourceGroupName|String|The name of the Azure resource group that contains the Log Analytics workspace.|
+|azureSubscriptionId|String|The Azure subscription ID that contains the Log Analytics workspace.|
 |workspaceName|String|The name of the Log Analytics workspace.|
 
 ## Response
@@ -58,9 +58,9 @@ The following errors are possible:
 
 |Response Code|Message|
 |:---|:---|
-|400 Bad Request|The specified workspace was not able to be linked. Verify the key properties are correct.|
-|403 Forbidden|The specified workspace was not able to be linked. Verify the Azure subscription is active.|
-|409 Conflict|The specified resource already exists.|
+|`400 Bad Request`|The specified workspace was not able to be linked. Verify that the key properties are correct.|
+|`403 Forbidden`|The specified workspace was not able to be linked. Verify that the Azure subscription is active.|
+|`409 Conflict`|The specified resource already exists.|
 
 ## Examples
 
@@ -86,7 +86,7 @@ Content-length: 97
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
