@@ -172,7 +172,7 @@ Namespace: microsoft.graph.callRecords
 | cn
 | pcma
 | pcmu
-| AmrWide
+| amrWide
 | g722
 | g7221
 | g7221c
