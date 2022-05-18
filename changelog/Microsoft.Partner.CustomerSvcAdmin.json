@@ -219,30 +219,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **longRunningOperationStatus** enumeration type.",
           "Target": "longRunningOperationStatus"
-        },
-        {
-          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "delegatedAdminRelationshipParticipant",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **delegatedAdminRelationshipParticipant** resource type.",
-          "Target": "delegatedAdminRelationshipParticipant"
-        },
-        {
-          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
-          "ApiChange": "Property",
-          "ChangedApiName": "partner",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **partner** property from the [delegatedAdminRelationship](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-beta) resource.",
-          "Target": "delegatedAdminRelationship"
-        },
-        {
-          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
-          "ApiChange": "Property",
-          "ChangedApiName": "serviceId",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **serviceId** property from the [delegatedAdminServiceManagementDetail](https://docs.microsoft.com/en-us/graph/api/resources/delegatedAdminServiceManagementDetail?view=graph-rest-beta) resource.",
-          "Target": "delegatedAdminServiceManagementDetail"
         }
       ],
       "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
