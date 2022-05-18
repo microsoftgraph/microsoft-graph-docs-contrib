@@ -43,7 +43,7 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
-|IsEmailNotificationEnabled|Boolean|True means staff member will be notified via email when a booking assigned to them is created or changed.
+|IsEmailNotificationEnabled|Boolean|`True` means staff member will be notified via email when a booking assigned to them is created or changed.
 |role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `scheduler`, `teamMember` and `unknownFutureValue`. Required.|
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
