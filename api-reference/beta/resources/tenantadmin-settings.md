@@ -13,15 +13,15 @@ Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level settings for SharePoint and OneDrive for Business.
+Represents the tenant-level settings for SharePoint and OneDrive.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get settings](../api/tenantadmin-settings-get.md)|[settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
-|[Update settings](../api/tenantadmin-settings-update.md) | [settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
+|[Get settings](../api/tenantadmin-settings-get.md)|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Get the tenant-level settings for SharePoint and OneDrive.|
+|[Update settings](../api/tenantadmin-settings-update.md) | [microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md) | Update one or more tenant-level settings for SharePoint and OneDrive.|
 
 ## Properties
 |Property|Type|Description|
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 | availableManagedPathsForSiteCreation               | String collection            | Collection of managed paths available for site creation. Read-only.                                                                                                                                            |
 | deletedUserPersonalSiteRetentionPeriodInDays       | Int32                        | The number of days for preserving a deleted user's OneDrive.                                                                                                                                                   |
 | excludedFileExtensionsForSyncApp                   | String collection            | Collection of file extensions not uploaded by the OneDrive sync app.                                                                                                                                           |
-| imageTaggingOption                                 | [imageTaggingChoice](../resources/tenantadmin-settings.md#imagetaggingchoice-values)           | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                                                                                       |
+| imageTaggingOption                                 | [tenantAdmin.imageTaggingChoice](../resources/tenantadmin-settings.md#imagetaggingchoice-values)           | Specifies the image tagging option for the tenant. Possible values are: `disabled`, `basic`, `enhanced`.                                                                                                       |
 | isCommentingOnSitePagesEnabled                     | Boolean                      | Indicates if comments are allowed on modern site pages in SharePoint.                                                                                                                                          |
 | isFileActivityNotificationEnabled                  | Boolean                      | Indicates if push notifications are enabled for OneDrive events.                                                                                                                                               |
 | isLoopEnabled                                      | Boolean                      | Indicates if Fluid Framework is allowed on SharePoint sites.                                                                                                                                                   |
