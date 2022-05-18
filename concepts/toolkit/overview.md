@@ -40,7 +40,7 @@ The components are also available as [React components](./get-started/mgt-react.
 
 ### Providers
 
-[Providers](/providers/providers.md) enable authentication, provide the implementation for acquiring access tokens on various platforms, and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
+[Providers](./providers/providers.md) enable authentication, provide the implementation for acquiring access tokens on various platforms, and expose a Microsoft Graph client for calling the Microsoft Graph APIs. The components work best when used with a provider, but the providers can be used on their own.
 
 |Providers|Description|
 |---------|-----------|
