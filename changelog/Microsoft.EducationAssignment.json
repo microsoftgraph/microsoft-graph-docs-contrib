@@ -44,6 +44,24 @@
     },
     {
       "ChangeList": [
+        {      
+          "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationTeamsAppResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationTeamsAppResource](https://docs.microsoft.com/en-us/graph/api/resources/educationteamsappresource?view=graph-rest-beta) resource type.",
+          "Target": "educationTeamsAppResource"
+        }
+      ],
+      "Id": "89d1da80-c72a-11ec-9d64-0242ac120002",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-17T14:48:15.2227943Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "a85673b2-5302-459e-94d3-15d744c3b4dd",
           "ApiChange": "Method",
