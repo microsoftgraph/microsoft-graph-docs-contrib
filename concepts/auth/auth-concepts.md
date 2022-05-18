@@ -54,7 +54,7 @@ For the client app, the required delegated permissions (scopes) must be granted.
 
 For the user, the authorization relies on the privileges that the user has been granted to access the resource. For example, the user might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
 
-For more information about delegated permissions that can be assigned to apps that call Microsoft Graph in a delegated access scenario, see [Microsoft Graph permission types](#microsoft-graph-permission-types).
+For more information about delegated permissions that can be assigned to apps that call Microsoft Graph in a delegated access scenario, see [Microsoft Graph permission types](#microsoft-graph-permissions).
 
 ### Direct access (app-only access)
 
@@ -62,7 +62,7 @@ In this access scenario, the application acts on its own without a signed in use
 
 One way that apps can be authorized to call Microsoft Graph with their own identity is when they're assigned **application permissions**, also called **app roles**. The appropriate application permissions or app roles must be granted to the application for it to access the resource.
 
-For more information about application permissions that can be assigned to apps that Microsoft Graph in a direct access scenario, see [Microsoft Graph permission types](#microsoft-graph-permission-types).
+For more information about application permissions that can be assigned to apps that Microsoft Graph in a direct access scenario, see [Microsoft Graph permission types](#microsoft-graph-permissions).
 
 ## Microsoft Graph permissions
 
@@ -73,6 +73,8 @@ Microsoft Graph exposes two types of permissions for the supported [access scena
 When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If consent is granted, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
+
+For more information about Microsoft Graph permissions and how to use them, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 ## Access tokens
 

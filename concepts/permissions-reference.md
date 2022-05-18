@@ -412,7 +412,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Edit_ (private preview)|Edit user's channel messages |Allows an app to edit channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
+|_ChannelMessage.Edit_|Edit user's channel messages |Allows an app to edit channel messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
 |_ChannelMessage.Read.All_ |Read user channel messages  |Allows an app to read a channel's messages in Microsoft Teams, on behalf of the signed-in user. |Yes | No |
 |_ChannelMessage.Send_ |Send channel messages |Allows an app to send channel messages in Microsoft Teams, on behalf of the signed-in user. |No| No |
 
@@ -1713,14 +1713,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Schedule management permissions ([private preview](#permissions-availability-status))
+## Schedule management permissions
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Schedule.ReadWrite.All_ (private preview)| Read and Write Shifts service (Teams) data | Allows an app to read and write schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user.| Yes | No |
-| _Schedule.Read.All_ (private preview)| Read Shifts service (Teams) data | Allows the app to read schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user.  | Yes | No |
+| _Schedule.ReadWrite.All_| Read and Write Shifts service (Teams) data | Allows an app to read and write schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user.| Yes | No |
+| _Schedule.Read.All_| Read Shifts service (Teams) data | Allows the app to read schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user.  | Yes | No |
 
 #### Delegated permissions
 
@@ -1728,8 +1728,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
 | _Schedule.ReadWrite.All_ | Read and Write Shifts service (Teams) data | Allows an app to read and write schedule, schedule groups, shifts, and associated entities in shifts applications on behalf of the signed-in user.| No | No |
 | _Schedule.Read.All_ | Read Shifts service (Teams) data | Allows the app to read schedule, schedule groups, shifts, and associated entities in shifts applications on behalf of the signed-in user.  | No | No |
-| _WorkforceIntegration.ReadWrite.All_ (private preview)| Read and write workforce integrations | Allows the app to manage workforce integrations, to synchronize data from Microsoft Teams Shifts with an integrated system, on behalf of the signed-in user.  | Yes | No |
-| _WorkforceIntegration.Read.All_ (private preview)| Read and write workforce integrations | Allows the app to manage workforce integrations, to synchronize data from Microsoft Teams Shifts with an integrated system, on behalf of the signed-in user.  | Yes | No |
+| _WorkforceIntegration.ReadWrite.All_| Read and write workforce integrations | Allows the app to manage workforce integrations, to synchronize data from Microsoft Teams Shifts with an integrated system, on behalf of the signed-in user.  | Yes | No |
+| _WorkforceIntegration.Read.All_| Read and write workforce integrations | Allows the app to manage workforce integrations, to synchronize data from Microsoft Teams Shifts with an integrated system, on behalf of the signed-in user.  | Yes | No |
 
 ## Search permissions
 
@@ -1853,7 +1853,7 @@ Security permissions are valid only on work or school accounts.
 
 ---
 
-## Short Notes permissions ([private preview](#permissions-availability-status))
+## Short Notes permissions
 
 #### Delegated permissions
 
@@ -2023,14 +2023,14 @@ Taxonomy permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ ([private preview](#permissions-availability-status)) | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
+| _TeamsActivity.Read_ | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed.	| No | No |
 | _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new notifications in users' teamwork activity feeds on behalf of the signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | No | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ ([private preview](#permissions-availability-status)) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
+| _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
 | _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to create new notifications in users' teamwork activity feeds without a signed in user. These notifications may not be discoverable or be held or governed by compliance policies. | Yes | No |
 
 ## Teams app permissions (deprecated)
@@ -2426,7 +2426,7 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
-## User authentication method permissions ([preview](#permissions-availability-status))
+## User authentication method permissions
 
 #### Delegated permissions
 

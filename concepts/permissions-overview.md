@@ -25,7 +25,7 @@ Microsoft Graph exposes two types of permissions to support its [delegated and a
 
 **Delegated permissions**, also called **scopes**, are used in the delegated access scenario. They're permissions that allow the application to act on behalf of a signed-in user. The application will never be able to access anything the signed-in user couldn't access.
 
-For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, the user. The application will only be able to read all files that Tom can already access. It won't be able to read every file in the organization.
+For example, an application has been granted the *Files.Read.All* delegated permission on behalf of Tom, the user. The application will only be able to read all files in the organization that Tom can already access.
 
 In a delegated access scenario, an app may allow users to sign in with their Microsoft accounts, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for Microsoft accounts. In the Microsoft Graph permissions reference, delegated permissions that are valid for Microsoft accounts are indicated in the *Microsoft Account supported* table columns.
 
@@ -33,7 +33,7 @@ When a user signs in to an app they, or, in some cases, an administrator, are gi
 
 ### Application permissions
 
-**Application permissions**, also called **app roles**, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the tenant. 
+**Application permissions**, also called **app roles**, are used in the direct access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission will be able to read any file in the tenant.
 
 For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed. Only an administrator can consent to application permissions.
 
@@ -43,7 +43,7 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 | <!-- No header--> | Delegated permissions | Application permissions |
 |--|--|--|
 | Types of apps | Web / Mobile / single-page app (SPA) | Web / Daemon |
-| Access context | [Get access on behalf of a user](../auth-v2-user.md) | [Get access without a user](../auth-v2-service.md) |
+| Access context | [Get access on behalf of a user](auth-v2-user.md) | [Get access without a user](auth-v2-service.md) |
 | Who can consent | <li> Users can consent for their data <li> Admins can consent for all users | Only admin can consent |
 | Other names | <li> Scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
 | Result of consent | [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) | [appRoleAssignment](/graph/api/resources/approleassignment) |
