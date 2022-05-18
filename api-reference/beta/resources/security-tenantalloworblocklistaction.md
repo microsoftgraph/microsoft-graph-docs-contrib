@@ -19,7 +19,7 @@ When admin creates email threat submission, tenant allow block list operation co
 | Property           | Type                                        | Description                                                                      | Required |
 |:-------------------|:--------------------------------------------|:---------------------------------------------------------------------------------|:---------|
 | action             | tenantAllowBlockListAction                  | The tenant allow block list action.                                              | ✔        |
-| results            | Collection([tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | The result which contains tenant allow block list items of the email submission. | ❌        |
+| results            | Collection([security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | The result which contains tenant allow block list items of the email submission. | ❌        |
 | expirationDateTime | DateTimeOffset                              | The tenant allow block list auto expiration date time.                           | ✔        |
 | note               | String                                      | The tenant allow block list note string.                                         | ❌        |
 

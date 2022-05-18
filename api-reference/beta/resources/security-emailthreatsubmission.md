@@ -38,8 +38,8 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 | senderIP                     | String                       | The sender IP of the submitted email.                                                                  | ❌   | ❌        |
 | receivedDateTime             | DateTimeOffset               | The received date time of the submitted email.                                                         | ❌   | ❌        |
 | originalCategory             | submissionCategory           | notJunk, spam, phishing, malware.                                                                      | ❌   | ❌        |
-| attackSimulationInfo         | [attackSimulationInfo](../resources/security-attacksimulationinfo.md)         | If the email is phishing simulation, the field will not be null.                                       | ❌   | ❌        |
-| tenantAllowOrBlockListAction | [tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | Used to auto add urls/attachments/senders of the email threat submission into tenant allow block list. | ❌   | ❌        |
+| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md)         | If the email is phishing simulation, the field will not be null.                                       | ❌   | ❌        |
+| tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | Used to auto add urls/attachments/senders of the email threat submission into tenant allow block list. | ❌   | ❌        |
 ## Relationships
 None.
 

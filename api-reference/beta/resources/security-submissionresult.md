@@ -22,7 +22,7 @@ Threat submission result when threat submission is processed by system.
 | detail             | submissionResultDetail             | The submission result detail.                                           | ✔        |
 | userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string. | ❌        |
 | detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  | ❌        |
-| detectedFiles      | Collection([submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Detected files in the email submission.                                 | ❌        |
+| detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Detected files in the email submission.                                 | ❌        |
 
 ## Relationships
 None.
