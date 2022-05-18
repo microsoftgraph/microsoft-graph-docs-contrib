@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection.
 
 Your app begins by calling `delta` without any parameters.
-The service starts enumerating the hierarchy of the list, returning pages of items, and either an **@odata.nextLink** or an **@odata.deltaLink**, as described in this article.
+The service starts enumerating the hierarchy of the list, returning pages of items, and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
 After you have received all the changes, you might apply them to your local state.
@@ -27,7 +27,7 @@ The same item might appear more than once in a delta feed, for various reasons. 
 Deleted items are returned with the [deleted facet](../resources/deleted.md). Deleted indicates that the item is deleted and cannot be restored.
 Items with this property should be removed from your local state.
 
-> **Note:** You should only delete a folder locally if it is empty after syncing all the changes.
+> **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
 
 ## Permissions
 
@@ -49,6 +49,8 @@ GET /sites/{siteId}/lists/{listId}/items/delta
 
 ## Query parameters
 
+In the request URL, you can include the following optional query parameter.
+
 | Parameter    | Type   | Description                                                                                                                          |
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token        | string | Optional. If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
@@ -69,16 +71,16 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [listItem](../resources/listitem.md) objects in the response body.
 
-In addition to a collection of **listItem** objects, the response will also include one of the following properties:
+In addition to a collection of **listItem** objects, the response will also include one of the following properties.
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | **@odata.nextLink**  | URL    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
-In some cases, the service will return a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header containing a new `nextLink` that starts a fresh delta enumeration from scratch. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required).
+In some cases, the service will return a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header containing a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required).
 
-After the full enumeration is completed, compare the returned items with your local state and follow the following instructions:
+After the full enumeration is completed, compare the returned items with your local state and follow the instructions based on the error type.
 
 | Error type                       | Instructions                                                                                                                               |
 |:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
