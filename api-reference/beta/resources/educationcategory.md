@@ -1,7 +1,7 @@
 ---
 title: "educationCategory resource type"
 description: "A category that can be applied to assignments."
-author: "mmast-msft"
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ A category that can be applied to assignments.
 |[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
 |[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
-|[Get delta](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) collection|Get a list of **educationCategory** objects that belongs to this class with delta query support.|
+|[Get delta](../api/educationcategory-delta.md)|[educationCategory](../resources/educationcategory.md) collection|Get a list of newly created or updated **educationCategory** without having to perform a full read of the collection.|
 
 
 ## Properties
@@ -64,5 +64,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

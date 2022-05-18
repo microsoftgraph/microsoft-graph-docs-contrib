@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -70,11 +73,10 @@ POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRigh
 Content-Type: application/json
 
 {
-"content": 
-  {
-    "content": "String",
-    "contentType": "text"
-  }
+    "content": {
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
+    }
 }
 ```
 # [C#](#tab/csharp)
@@ -117,13 +119,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "author": { "@odata.type": "microsoft.graph.identitySet"},
+    "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
+    "createdDateTime": "2022-05-10T22:42:28Z",
+    "author": {
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
+    },
     "content": {
-          "@odata.type": "microsoft.graph.itemBody"
+        "content": "Please take a look at the files tagged with follow up",
+        "contentType": "text"
     }
-
 }
 ```
 
