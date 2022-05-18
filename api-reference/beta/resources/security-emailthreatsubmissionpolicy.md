@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 | Property                                 | Type    | Description                                                                                | Key | Required |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|:----|:---------|
 | id                                       | String  | Policy id.                                                                                 | ✔   | ✔        |
-| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to microsoft for analysis.                              | ❌   | ✔        |
+| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to Microsoft for analysis.                              | ❌   | ✔        |
 | isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               | ❌   | ✔        |
 | isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    | ❌   | ✔        |
 | isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              | ❌   | ✔        |
