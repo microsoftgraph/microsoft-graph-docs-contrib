@@ -1,9 +1,10 @@
 <!-- markdownlint-disable MD041-->
 
-Microsoft Graph exposes granular permissions that allow your app to request only the permissions it requires to function. This allows you to apply the **principle of least privilege** when granting permissions to your app.
+Azure AD limits the number of permissions that can be requested and consented by a client app. These limits depend on the `signInAudience` value for an app, shown in the [app's manifest](/graph/api/resources/application). 
 
-For example, to read only the profile information of the signed-in user, an app requires only the `User.Read` permission which is the least privileged permission to access user information. Granting the `User.ReadWrite` permission to the app makes it over-privileged because the app is now granted permissions for actions it doesn't need to perform.
-
-Granting your application more privileges than it needs is a poor security practice that exposes your app to unauthorized and unintended access to data or operations. Also, requiring more permissions than necessary may may cause users to refrain from consenting to your app, affecting your app's adoption and usage.
-
-Apply the principle of least privilege when selecting and granting Microsoft Graph permissions to your app. For more information, see [Enhance security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+| signInAudience                     | Allowed users                                            | Maximum permissions the app can request   | Maximum Microsoft Graph permissions the app can request   | Maximum permissions that can be consented in a single request         |
+| ---------------------------------- | -------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- |
+| AzureADMyOrg                       | Users from the organization where the app is registered  | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| AzureADMultipleOrgs                | Users from any Azure AD organization                     | 400                                       | 400                                                       | About 155 delegated permissions and about 300 application permissions |
+| PersonalMicrosoftAccount           | Consumer users (such as Outlook.com or Live.com accounts)  | 30                                        | 30                                                        | 30                                                                    |
+| AzureADandPersonalMicrosoftAccount | Consumer users and users from any Azure AD organization  | 30                                        | 30                                                        | 30                                                                    |

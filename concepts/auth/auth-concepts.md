@@ -42,20 +42,37 @@ For more information, see [Register an application with the Microsoft identity p
 
 ## Access scenarios
 
-[!INCLUDE [msgraph-access-scenarios](../includes/msgraph-access-scenarios.md)]
+As an application developer, you must identify how your application accesses data through Microsoft Graph. The application can use **delegated access**, acting on behalf of a signed-in user, or **direct access**, acting with its own identity.
+
+:::image type="content" source="../images/access-scenarios.png" alt-text="Image shows illustration of access scenarios.":::
+
+### Delegated access (access on behalf of a user)
+
+In this access scenario, a user has signed into a client application and the client application calls Microsoft Graph on behalf of the user. Delegated access requires **delegated permissions**, also referred to as **scopes**, and both the client and the user must be authorized to make the request.
+
+For the client app, the required delegated permissions (scopes) must be granted. Scopes are permissions of a given resource that the client application exercises on behalf of a user. They're strings that represent what the application wants to do on behalf of the user. 
+
+For the user, the authorization relies on the privileges that the user has been granted to access the resource. For example, the user might be assigned a particular role through a role-based access control system (RBAC) such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
+
+For more information about delegated permissions that can be assigned to apps that call Microsoft Graph in a delegated access scenario, see [Microsoft Graph permission types](#microsoft-graph-permission-types).
+
+### Direct access (app-only access)
+
+In this access scenario, the application acts on its own without a signed in user. Direct access or app-only access is used in scenarios such as automation and backup, and is mostly used by apps that run as background services or daemons. It's suitable when it's undesirable to have a user signed in, or when the data required can't be scoped to a single user.
+
+One way that apps can be authorized to call Microsoft Graph with their own identity is when they're assigned **application permissions**, also called **app roles**. The appropriate application permissions or app roles must be granted to the application for it to access the resource.
+
+For more information about application permissions that can be assigned to apps that Microsoft Graph in a direct access scenario, see [Microsoft Graph permission types](#microsoft-graph-permission-types).
 
 ## Microsoft Graph permissions
 
 Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which Microsoft Graph permissions to request for your app.
 
-Microsoft Graph exposes two types of permissions to support its [access scenarios](/graph/auth/auth-concepts#access-scenarios). These are **delegated permissions** and **application permissions**. Delegated permissions allow the application to act on a user's behalf while application permissions allow the app to access data without a signed-in user present.
+Microsoft Graph exposes two types of permissions for the supported [access scenarios](#access-scenarios): **delegated permissions** and **application permissions**. Delegated permissions, also called **scopes**, allow the application to act on behalf of the signed-in user while application permissions, also called **app roles**, allow the app to access data without a signed-in user present.
 
-Not all permissions are valid for both Microsoft accounts and work or school accounts. Depending on the account type that you defined when you registered the app with the Microsoft identity platform, some permissions may not be available to be granted to your app.
-
-When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to these permissions. If the user consents, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, permissions can be pre-consented to by an administrator when the app is installed.
+When a user signs in to your app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If consent is granted, your app is given access to the resources and APIs that it has requested. For apps that access resources and APIs without a signed-in user, the application permissions can be pre-consented to by an administrator when the app is installed.
 
 [!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
-
 
 ## Access tokens
 
