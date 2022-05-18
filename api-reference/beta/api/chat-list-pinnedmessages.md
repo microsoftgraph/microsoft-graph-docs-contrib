@@ -1,6 +1,6 @@
 ---
 title: "List pinned messages in a chat"
-description: "Retrieve list of pinned message info of a chat."
+description: "Get a list of pinned messages in a chat."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [pinnedChatMessageInfo](../resources/pinnedChatMessageInfo.md) in the specified [chat](../resources/chat.md).
+Get a list of [pinnedChatMessages](../resources/pinnedChatMessageInfo.md) in a [chat](../resources/chat.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
