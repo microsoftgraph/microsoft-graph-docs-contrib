@@ -33,7 +33,7 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 |memberType|String|How the role eligibility is inherited. It can either be `Inherited`, `Direct`, or `Group`. It can further imply whether the **unifiedRoleEligibilitySchedule** can be managed by the caller. Supports `$filter` (`eq`, `ne`).|
 |principalId|String|Identifier of the principal that's eligible for a role. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Supports `$filter` (`eq`, `ne`). |
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](unifiedroledefinition.md) object that the principal is eligible for. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Supports `$filter` (`eq`, `ne`).|
-|roleEligibilityScheduleId|String|The identifier of the **unifiedRoleEligibilitySchedule** object from which this instance was created.|
+|roleEligibilityScheduleId|String|The identifier of the **unifiedRoleEligibilitySchedule** object from which this instance was created. Supports `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|When this instance starts.|
 
 ## Relationships
