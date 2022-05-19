@@ -24,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API.
+
 ## HTTP request
 
 The `{id}` in the request is the value of the **id** property of the device, not the **deviceId** property.
@@ -44,7 +46,7 @@ In the request body, supply the values for the [device](../resources/device.md) 
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers in Global Administrator and Cloud Device Administrator roles can update this property.|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. Only callers in *Global Administrator* and *Cloud Device Administrator* roles can update this property.|
 |operatingSystem|String|The type of operating system on the device.|
 |operatingSystemVersion|String|The version of the operating system on the device|
 |displayName|String|The display name for the device.|
