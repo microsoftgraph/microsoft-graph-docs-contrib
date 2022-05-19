@@ -464,7 +464,7 @@
               },
               {
                 "Id": "9fac1e6a-4adc-4def-804e-4d38efae3984",
-                "ApiChange": "Resource",
+                "ApiChange": "Relationship",
                 "ChangedApiName": "resourceConnections",
                 "ChangeType": "Addition",
                 "Description": "Added the **resourceConnections** relationship to the [updates](https://docs.microsoft.com/en-us/graph/api/resources/updates?view=graph-rest-beta) resource.",
