@@ -1,5 +1,5 @@
 ---
-title: "Get settings (tenantAdmin)"
+title: "Get settings"
 description: "Get the tenant-level settings for SharePoint and OneDrive."
 author: "liamfernandez"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get settings (tenantAdmin)
+# Get settings
 Namespace: microsoft.graph.tenantAdmin
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
