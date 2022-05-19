@@ -12,14 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION] 
+> **PATCH** method for this API will be deprecated after the end of **June 2022**. Please use the new [updateAdDomainPassword](cloudpconpremisesconnection-updateaddomainpassword.md).
+
 Update the Active Directory domain password for a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-> [!CAUTION] 
-> **PATCH** method for this API will be deprecated after the end of **June 2022**. Please use the new [updateAdDomainPassword](cloudpconpremisesconnection-updateaddomainpassword.md).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
