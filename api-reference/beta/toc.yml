@@ -15408,11 +15408,15 @@ items:
             href: api/tasklist-delete.md
           - name: Get delta for base task list
             href: api/basetasklist-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
             href: api/opentypeextension-get.md
         - name: Base task
           items:
           - name: Base task
             href: resources/basetask.md
+          - name: Task
             href: resources/task.md
           - name: List base tasks
             href: api/basetasklist-list-tasks.md
@@ -15428,6 +15432,12 @@ items:
             href: api/basetask-delete.md
           - name: Get delta for base task
             href: api/basetask-delta.md
+          - name: Create open extension
+            href: api/opentypeextension-post-opentypeextension.md
+          - name: Get open extension
+            href: api/opentypeextension-get.md
+        - name: Checklist item
+          href: resources/checklistitem.md
         - name: Linked resource v2
           href: resources/linkedresource_v2.md
           items:

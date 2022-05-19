@@ -57,7 +57,7 @@ This resource supports the following:
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. |
+|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of smaller subtasks linked to the more complex parent task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
 

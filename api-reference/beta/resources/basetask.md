@@ -54,7 +54,7 @@ This is a base type inherited by the [task](task.md) resource.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of checklistItems linked to a task. |
+|checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of smaller subtasks linked to the more complex parent task. |
 |extensions|[extension](../resources/extension.md) collection|The collection of open extensions defined for the task . |
 |linkedResources|[linkedResource_v2](../resources/linkedresource_v2.md) collection|A collection of resources linked to the task. |
 |parentList|[baseTaskList](../resources/basetasklist.md)|The list which contains the task. |
