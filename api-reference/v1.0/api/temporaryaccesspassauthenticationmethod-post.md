@@ -17,14 +17,6 @@ Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryacc
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
 ### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -73,7 +65,11 @@ If successful, this method returns a `201 Created` response code and a [temporar
 ## Examples
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_temporaryaccesspassauthenticationmethod_from_"
+}
+-->
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

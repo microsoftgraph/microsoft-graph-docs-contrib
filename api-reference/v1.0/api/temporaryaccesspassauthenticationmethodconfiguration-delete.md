@@ -49,12 +49,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
-
-### Request
-
-### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -63,3 +57,14 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
+}
+-->
+
+### Response

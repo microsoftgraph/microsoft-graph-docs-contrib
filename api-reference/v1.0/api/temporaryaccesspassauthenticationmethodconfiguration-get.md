@@ -77,3 +77,13 @@ Content-type: application/json
     ]
 }
 ```
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
+}
+-->
+### Response

@@ -51,42 +51,18 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
+``` http
+HTTP/1.1 204 No Content
+```
+
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_fido2authenticationmethodconfiguration_2"
+  "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-fido2authenticationmethodconfiguration-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-fido2authenticationmethodconfiguration-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-fido2authenticationmethodconfiguration-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-fido2authenticationmethodconfiguration-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-fido2authenticationmethodconfiguration-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 ### Response
 
@@ -95,6 +71,3 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
-```

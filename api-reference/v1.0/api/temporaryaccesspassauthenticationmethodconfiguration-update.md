@@ -53,9 +53,18 @@ All properties of the object can be updated. For a list of properties, see [temp
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
+``` http
+HTTP/1.1 204 No Content
+```
+
 ## Examples
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
+}
+-->
 
 ### Response
 <!-- {
@@ -63,6 +72,3 @@ If successful, this method returns a `204 No Content` response code. It does not
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
-```
