@@ -18,7 +18,8 @@ Cancel a print job. Print jobs can be canceled only on behalf of a user, using d
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.  and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. A user can cancel their own jobs or have a permission that grants [Get printer](printer-get.md) access to cancel other user jobs. 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
