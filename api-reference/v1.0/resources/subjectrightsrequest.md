@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |regulations|String collection|List of regulations that this request will fulfill.|
 |stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
 |status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`,  `access`, `tagForAction`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|

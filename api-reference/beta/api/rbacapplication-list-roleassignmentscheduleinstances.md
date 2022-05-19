@@ -1,13 +1,13 @@
 ---
-title: "List unifiedRoleAssignmentScheduleInstances"
+title: "List roleAssignmentScheduleInstances"
 description: "Get a list of the unifiedRoleAssignmentScheduleInstance objects and their properties."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List unifiedRoleAssignmentScheduleInstances
+# List roleAssignmentScheduleInstances
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
