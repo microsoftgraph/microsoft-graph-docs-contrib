@@ -44,7 +44,8 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-We recomend that you strictly use the permissions as documented in the above table. Due to security restrictions, MS Graph Subscriptions will not be able to support write access permissions where only read access previledges are needed.
+We recommend that you use the permissions as documented in the previous table. Due to security restrictions, Microsoft Graph subscriptions will not support write access permissions when only read access permissions are needed.
+
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
