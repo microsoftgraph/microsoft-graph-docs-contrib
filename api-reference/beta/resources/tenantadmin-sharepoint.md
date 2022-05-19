@@ -21,7 +21,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|settings|[settings](../resources/tenantadmin-settings.md)|Represents the tenant-level settings for SharePoint and OneDrive.|
+|settings|[microsoft.graph.tenantAdmin.settings](../resources/tenantadmin-settings.md)|Represents the tenant-level settings for SharePoint and OneDrive.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
