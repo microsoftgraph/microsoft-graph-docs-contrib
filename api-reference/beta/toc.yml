@@ -10005,8 +10005,6 @@ items:
             href: api/cloudpconpremisesconnection-runhealthcheck.md
           - name: Update Active Directory domain password
             href: api/cloudpconpremisesconnection-updateaddomainpassword.md
-          - name: Update Active Directory domain password (deprecated)
-            href: api/cloudpconpremisesconnection-updateaddomainpassword(deprecated).md
         - name: Cloud PC provisioning policy
           href: resources/cloudpcprovisioningpolicy.md
           items:
