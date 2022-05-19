@@ -1,5 +1,5 @@
 ---
-title: "cloudPcOnPremisesConnection: updateAdDomainPassword"
+title: "cloudPcOnPremisesConnection: updateAdDomainPassword(deprecated)"
 description: "Update the Active Directory domain password for a successful Azure network connection. This API is supported when the onPremisesConnection's type is hybridAzureADJoin."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -18,6 +18,8 @@ Update the Active Directory domain password for a [cloudPcOnPremisesConnection](
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+> [!CAUTION] 
+> This API will be supported for both **POST** and **PATCH** method before the end of **June 2022**, and it will be finally switched to **POST** at that time. Please use the new [updateAdDomainPassword](cloudpconpremisesconnection-updateaddomainpassword.md).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
 ## Request headers
@@ -68,7 +70,7 @@ If successful, this action returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
 
 {
