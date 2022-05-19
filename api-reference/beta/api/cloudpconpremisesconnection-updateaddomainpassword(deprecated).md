@@ -19,7 +19,7 @@ Update the Active Directory domain password for a [cloudPcOnPremisesConnection](
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 > [!CAUTION] 
-> This API will be supported for both **POST** and **PATCH** method before the end of **June 2022**, and it will be finally switched to **POST** at that time. Please use the new [updateAdDomainPassword](cloudpconpremisesconnection-updateaddomainpassword.md).
+> **PATCH** method for this API will be deprecated after the end of **June 2022**. Please use the new [updateAdDomainPassword](cloudpconpremisesconnection-updateaddomainpassword.md).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
