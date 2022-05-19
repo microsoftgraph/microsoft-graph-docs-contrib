@@ -36,7 +36,13 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+```
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
