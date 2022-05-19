@@ -18,7 +18,7 @@ Retrieve the properties and relationships of a print job.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. A user can get their own jobs or have a permission that grants [Get printer](printer-get.md) or [Get printerShare](printershare-get.md) access depending upon whether printer or printerShare is being used to fetch other user jobs. 
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. A user can get their own jobs or have a permission that grants [Get printer](printer-get.md) or [Get printerShare](printershare-get.md) access depending upon whether printer or printerShare is being used to get other user jobs. 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
