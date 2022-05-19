@@ -14489,7 +14489,9 @@ items:
         - name: Get item analytics
           href: api/itemanalytics-get.md
         - name: List versions
-          href: api/listitem-list-versions.md        
+          href: api/listitem-list-versions.md
+        - name: Get delta
+          href: api/listitem-delta.md     
       - name: Document set version
         items:
         - name: Document set version

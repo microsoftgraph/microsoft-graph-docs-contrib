@@ -71,7 +71,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {
@@ -124,7 +124,7 @@ HTTP/1.1 204 No Content
   "name": "update_device_extensionAttributes"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {
