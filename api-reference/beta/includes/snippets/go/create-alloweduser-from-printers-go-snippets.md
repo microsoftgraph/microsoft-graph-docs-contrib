@@ -11,12 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/users/{id}",
 }
-options := &msgraphsdk.UserRequestBuilderPostOptions{
-	Body: requestBody,
-}
 printerShareId := "printerShare-id"
 userId := "user-id"
-graphClient.Print().SharesById(&printerShareId).AllowedUsersById(&userId).Post(options)
+graphClient.Print().SharesById(&printerShareId).AllowedUsersById(&userId).Post(requestBody)
 
 
 ```

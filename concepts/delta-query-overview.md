@@ -117,6 +117,7 @@ Delta query is currently supported for the following resources. Note that some r
 | Education schools                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource                                   |
 | Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta) function of the [event](/graph/api/resources/event) resource                         |
 | Groups                                                         | [delta](/graph/api/group-delta) function of the [group](/graph/api/resources/group) resource                         |
+| List items\*                                                   | [delta](/graph/api/listitem-delta) function of the [listItem](/graph/api/resources/listitem) resource             |
 | Mail folders                                                   | [delta](/graph/api/mailfolder-delta) function of the [mailFolder](/graph/api/resources/mailfolder) resource          |
 | Messages in a folder                                           | [delta](/graph/api/message-delta) function of the [message](/graph/api/resources/message) resource                   |
 | Organizational contacts                                        | [delta](/graph/api/orgcontact-delta) function of the [orgContact](/graph/api/resources/orgcontact) resource          |
@@ -130,10 +131,10 @@ Delta query is currently supported for the following resources. Note that some r
 | Users                                                          | [delta](/graph/api/user-delta) function of the [user](/graph/api/resources/user) resource                            |
 
 
-> \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a drive](/graph/api/driveitem-delta).
+> \* The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. Delta query for drives and lists will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
+[driveItem: delta](/graph/api/driveitem-delta) and [listItem: delta](/graph/api/listitem-delta).
 
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta).
+> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences. For details, see [planner: delta](/graph/api/planneruser-list-delta).
 
 ## Limitations
 
@@ -203,7 +204,7 @@ Delta tokens are only valid for a specific period before the client application 
 + For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
 + For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
-In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see (Error codes in Microsoft Graph](/graph/errors#code-property).
+In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
 
 ## Prerequisites
 

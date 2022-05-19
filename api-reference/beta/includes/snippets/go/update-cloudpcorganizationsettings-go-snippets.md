@@ -19,10 +19,7 @@ windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
 }
-options := &msgraphsdk.OrganizationSettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().OrganizationSettings().Patch(requestBody)
 
 
 ```

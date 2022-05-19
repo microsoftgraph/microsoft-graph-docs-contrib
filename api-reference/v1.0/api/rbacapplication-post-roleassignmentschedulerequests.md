@@ -1,5 +1,5 @@
 ---
-title: "Create unifiedRoleAssignmentScheduleRequest"
+title: "Create roleAssignmentScheduleRequests"
 description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleAssignmentScheduleRequest
+# Create roleAssignmentScheduleRequests
 Namespace: microsoft.graph
 
 In PIM, carry out the following operations through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object:
@@ -54,8 +54,8 @@ You can specify the following properties when creating an **unifiedRoleAssignmen
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is being assigned. Required.|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Either **directoryScopeId** or **appScopeId** is required.|
 |appScopeId|String|Identifier of the app-specific scope when the assignment is scoped to an app. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Either **directoryScopeId** or **appScopeId** is required.|
-|justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object. Optional.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Recurring schedules are currently unsupported. Required.|
+|justification|String|A message provided by users and administrators when create they create the **unifiedRoleAssignmentScheduleRequest** object. Optional. Whether this property is required or optional is also dependent on the [settings for the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role assignment request. Required. The period of assignment is dependent on the [settings of the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
 
@@ -67,6 +67,8 @@ If successful, this method returns a `201 Created` response code and an [unified
 ## Examples
 
 ### Example 1: Admin assigning a directory role to a principal
+
+In the following request, the admin creates a request to assign a role identified by `fdd7a751-b60b-444a-984c-02652fe8fa1c` to a principal identified by ID `071cc716-8147-4397-a5ba-b2105951cc0b`. The scope of their role is all directory objects in the tenant and the assignment is permanent.
 
 #### Request
 

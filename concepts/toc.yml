@@ -718,7 +718,7 @@ items:
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the Toolkit
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md

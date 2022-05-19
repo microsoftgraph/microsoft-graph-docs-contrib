@@ -62,10 +62,7 @@ requestBody.SetQuestions( []AccessPackageQuestion {
 		"isSingleLineQuestion": false,
 	}
 }
-options := &msgraphsdk.AccessPackageAssignmentPoliciesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(requestBody)
 
 
 ```

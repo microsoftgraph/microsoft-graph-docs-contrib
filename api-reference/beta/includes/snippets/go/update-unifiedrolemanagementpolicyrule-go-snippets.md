@@ -31,12 +31,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"isExpirationRequired": true,
 	"maximumDuration": "PT1H45M",
 }
-options := &msgraphsdk.UnifiedRoleManagementPolicyRuleRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 unifiedRoleManagementPolicyId := "unifiedRoleManagementPolicy-id"
 unifiedRoleManagementPolicyRuleId := "unifiedRoleManagementPolicyRule-id"
-graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(options)
+graphClient.Policies().RoleManagementPoliciesById(&unifiedRoleManagementPolicyId).RulesById(&unifiedRoleManagementPolicyRuleId).Patch(requestBody)
 
 
 ```

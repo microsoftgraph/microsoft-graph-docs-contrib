@@ -19,11 +19,8 @@ message.SetToRecipients( []Recipient {
 }
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.CreateForwardRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateForward(message-id).Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).CreateForward(message-id).Post(requestBody)
 
 
 ```

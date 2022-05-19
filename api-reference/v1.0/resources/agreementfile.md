@@ -15,6 +15,10 @@ Represents a customizable terms of use agreement file that a tenant manages with
 
 Inherits from [agreementFileProperties](agreementfileproperties.md).
 
+## Methods
+
+None.
+
 ## Properties
 
 | Property     | Type        | Description |
