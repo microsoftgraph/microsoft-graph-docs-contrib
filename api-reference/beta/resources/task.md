@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# task resource type
+# task resource type (deprecated)
 
 Namespace: microsoft.graph
 

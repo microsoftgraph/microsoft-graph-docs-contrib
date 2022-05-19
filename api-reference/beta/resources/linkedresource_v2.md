@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# linkedResource_v2 resource type
+# linkedResource_v2 resource type (deprecated)
 
 Namespace: microsoft.graph
 
