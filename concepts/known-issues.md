@@ -398,6 +398,9 @@ Role query filters along with other filters `GET /teams/team-id/members?$filter=
 
 All the requests to filter team members by roles expect either a _skipToken_ parameter or a _top_ paramater in the request, but not both. If both the parameters are passed in the request, the _top_ parameter will be ignored.
 
+### Unable to add 200+ members per request to a private channel
+A maximum of 200 members per request can be added to a channel.
+
 ### Some properties for chat members might be missing in the response to a GET request
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`. A maximum of 200 members can be added per request.
 
 ## Permissions
 
