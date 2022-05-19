@@ -108,7 +108,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,
-    "language":null,
+    "languageTag":null,
     "address":{
         "type":"home",
         "postOfficeBox":"",
@@ -177,7 +177,7 @@ Content-type: application/json
             ]
         }
     ],
-    "language": "String",
+    "languageTag": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

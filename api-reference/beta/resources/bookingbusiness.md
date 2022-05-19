@@ -53,7 +53,7 @@ Inherits from [bookingNamedEntity](bookingnamedentity.md)
 |email|String|The email address for the business.|
 |id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
-|language|String|The language of the self service booking page|
+|languageTag|String|The language of the self service booking page|
 |phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness-publish.md) or [unpublish](../api/bookingbusiness-unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
@@ -94,7 +94,7 @@ The following is a JSON representation of the resource.
   "isPublished": true,
   "phone": "String",
   "publicUrl": "String",
-  "language": "String",
+  "languageTag": "String",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "webSiteUrl": "String"
 }

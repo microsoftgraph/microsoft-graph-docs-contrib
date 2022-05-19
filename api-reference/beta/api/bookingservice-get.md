@@ -105,7 +105,7 @@ Content-type: application/json
     "defaultPrice": 10,
     "defaultPriceType": "fixedPrice",
     "description": "Individual bento box lunch delivery",
-    "language": "en-US",
+    "languageTag": "en-US",
     "isHiddenFromCustomers": false,
     "notes": "Home-cooked special",
     "preBuffer": "PT5M",

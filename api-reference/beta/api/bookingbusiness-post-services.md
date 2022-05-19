@@ -97,7 +97,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
-    "language": "en-US",
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
