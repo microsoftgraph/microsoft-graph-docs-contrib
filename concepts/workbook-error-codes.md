@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Error codes for Workbooks and charts APIs in Microsoft Graph
 
-This article describes error codes that are returned by the Workbooks and charts APIs in Microsoft Graph when a request sent through the API fails. For more details about error responses and resource types in Microsoft Graph, see [Errors](/concepts/errors.md). For details about handling error responses from Excel APIs in Microsoft Graph, see [Error handling](workbook-error-handling.md).
+This article describes error codes that are returned by the Workbooks and charts APIs in Microsoft Graph when a request sent through the API fails. For details about handling error responses from Workbooks and charts APIs in Microsoft Graph, see [Error handling](workbook-error-handling.md). For more details about error responses and resource types in Microsoft Graph, see [Errors](errors.md).
 
 ## Error code
 
@@ -31,20 +31,14 @@ The following table lists the current error codes and messages. The service migh
 |504    | **gatewayTimeout**        | The server, while acting as a proxy, did not receive a timely response from the upstream server in order to complete the request.
 
 ## Detailed error code
-The following are some additional error codes that your app might encounter within the first level of nested `innerError` objects. The service might add new error codes at any time.
+The following are important error codes that your app might encounter within the first level of nested `innerError` objects. The service might add new error codes at any time.
 
 - accessConflict
-- accessDenied
 - badRequestUncategorized
 - conflictUncategorized
-- filteredRangeConflict
 - forbiddenUncategorized
 - gatewayTimeoutUncategorized
-- generalException
-- insertDeleteConflict
 - internalServerErrorUncategorized
-- invalidArgument
-- invalidReference
 - invalidSessionAccessConflict
 - invalidSessionAuthentication
 - invalidSessionNotFound
@@ -52,24 +46,19 @@ The following are some additional error codes that your app might encounter with
 - invalidSessionRestricted
 - invalidSessionUnexpected
 - invalidSessionUnsupportedWorkbook
-- itemAlreadyExists
-- itemNotFound
-- methodNotAllowed
 - methodNotAllowedUncategorized
-- nonBlankCellOffSheet
 - notFoundUncategorized
 - notImplementedUncategorized
 - payloadTooLargeUncategorized
-- rangeExceedsLimit
-- requestAborted
 - serviceUnavailableUncategorized
 - tooManyRequestsUncategorized
 - transientFailure
 - unauthorizedUncategorized
-- unsupportedOperation
 - unsupportedWorkbook
 
->**Note:** The **innerError** object might recursively contain more deeper **innerError** objects with additional, more specific error codes. These deeper **innerError** codes are intented for the developer to read.
+Some examples of other possible error codes within the first level of nested `innerError` objects are listed here: [Example of other second-level error codes](workbook-error-handling.md#example-of-other-second-level-error-codes)
+
+>**Note:** The **innerError** object might recursively contain more deeper **innerError** objects with additional, more specific error codes. These deeper **innerError** codes are intented for diagnostics purpose only.
 <!-- {
   "type": "#page.annotation",
   "description": "Workbook error code and message",
