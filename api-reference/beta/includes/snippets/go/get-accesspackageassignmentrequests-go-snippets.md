@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGe
 	Expand: "requestor($expand=connectedOrganization)",
 	Filter: "(requestState%20eq%20'PendingApproval')",
 }
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

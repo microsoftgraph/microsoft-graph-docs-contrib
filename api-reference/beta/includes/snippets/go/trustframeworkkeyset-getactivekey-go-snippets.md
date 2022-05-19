@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).GetActiveKey()(trustFrameworkKeySet-id).Get(nil)
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).GetActiveKey()(trustFrameworkKeySet-id).Get()
 
 
 ```

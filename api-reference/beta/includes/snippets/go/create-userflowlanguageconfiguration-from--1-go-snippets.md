@@ -12,12 +12,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"id": "es-ES",
 	"isEnabled": true,
 }
-options := &msgraphsdk.UserFlowLanguageConfigurationRequestBuilderPutOptions{
-	Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).Put(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).Put(requestBody)
 
 
 ```

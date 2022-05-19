@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).SendReminder(accessReviewScheduleDefinition-id, accessReviewInstance-id).Post(nil)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).SendReminder(accessReviewScheduleDefinition-id, accessReviewInstance-id).Post()
 
 
 ```

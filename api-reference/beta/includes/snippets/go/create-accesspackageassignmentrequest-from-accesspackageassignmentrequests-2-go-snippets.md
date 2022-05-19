@@ -30,10 +30,7 @@ requestBody.SetAnswers( []AccessPackageAnswer {
 		"value": "Need access to marketing campaign material",
 	}
 }
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
 
 
 ```

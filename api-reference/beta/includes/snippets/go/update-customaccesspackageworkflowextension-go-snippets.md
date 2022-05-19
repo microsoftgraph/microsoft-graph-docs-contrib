@@ -13,12 +13,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"displayName": "test_action_0124_email",
 	"description": "this is for graph testing only",
 }
-options := &msgraphsdk.CustomAccessPackageWorkflowExtensionRequestBuilderPutOptions{
-	Body: requestBody,
-}
 accessPackageCatalogId := "accessPackageCatalog-id"
 customAccessPackageWorkflowExtensionId := "customAccessPackageWorkflowExtension-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensionsById(&customAccessPackageWorkflowExtensionId).Put(options)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).CustomAccessPackageWorkflowExtensionsById(&customAccessPackageWorkflowExtensionId).Put(requestBody)
 
 
 ```

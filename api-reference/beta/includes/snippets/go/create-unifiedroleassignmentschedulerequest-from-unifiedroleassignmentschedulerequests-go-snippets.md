@@ -26,10 +26,7 @@ expiration := msgraphsdk.NewExpirationPattern()
 scheduleInfo.SetExpiration(expiration)
 type := "NoExpiration"
 expiration.SetType(&type)
-options := &msgraphsdk.RoleAssignmentScheduleRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(requestBody)
 
 
 ```

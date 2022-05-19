@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters
 	Filter: "appScopeId%20eq%20'/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'",
 	Expand: "principal",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Get(options)
+result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
