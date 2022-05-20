@@ -2766,10 +2766,10 @@
         {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
-          "ChangedApiName": "accessReviews",
+          "ChangedApiName": "accessReview",
           "ChangeType": "Addition",
-          "Description": "Added Policy.ReadWrite.AccessReviews permission.",
-          "Target": "accessReviews"
+          "Description": "Added Policy.ReadWrite.AccessReview permission.",
+          "Target": "accessReview"
         }
       ],
       "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",

@@ -11772,6 +11772,7 @@ items:
         - name: Cross-tenant access (preview)
           items:
           - name: Overview
+            displayName: Cross-tenant access settings, XTAP
             href: resources/crosstenantaccesspolicy-overview.md
           - name: Policy
             items:
