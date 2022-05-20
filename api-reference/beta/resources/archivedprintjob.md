@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A record of a "final state" (completed, aborted or failed) print job that is used for reporting purposes. This is not an active print job.
+A record of a "final state" (completed, aborted or canceled) print job that is used for reporting purposes. This is not an active print job.
 
 ## Properties
 | Property     | Type        | Description |
