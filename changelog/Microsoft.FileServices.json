@@ -4,19 +4,51 @@
       "ChangeList": [
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
-          "ApiChange": "Schema",
-          "ChangedApiName": "microsoft.graph.tenantAdmin",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharepoint",
           "ChangeType": "Addition",
-          "Description": "Added the [microsoft.graph.tenantAdmin](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "microsoft.graph.tenantAdmin"
+          "Description": "Added the **sharepoint** navigation property to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
         },
         {
           "Id": "87095323-a508-44c8-95b1-5583e8e14167",
           "ApiChange": "Resource",
-          "ChangedApiName": "admin",
-          "ChangeType": "Change",
-          "Description": "Added a subpath to the [admin](https://docs.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource",
-          "Target": "admin"
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-settings?view=graph-rest-beta) resource type and supported methods.",
+          "Target": "settings"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepoint](https://docs.microsoft.com/en-us/graph/api/resources/tenantadmin-sharepoint?view=graph-rest-beta) resource type.",
+          "Target": "sharepoint"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "imageTaggingChoice",
+          "ChangeType": "Addition",
+          "Description": "Added the **imageTaggingChoice** enumeration type.",
+          "Target": "imageTaggingChoice"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingCapabilities** enumeration type.",
+          "Target": "sharingCapabilities"
+        },
+        {
+          "Id": "87095323-a508-44c8-95b1-5583e8e14167",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "sharingDomainRestrictionMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharingDomainRestrictionMode** enumeration type.",
+          "Target": "sharingDomainRestrictionMode"
         }
       ],
       "Id": "87095323-a508-44c8-95b1-5583e8e14167",
