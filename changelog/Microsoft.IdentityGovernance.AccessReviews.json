@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "accessReviewStageFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessReviewStageFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessReviewStageFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Property",
+          "ChangedApiName": "decisionHistoriesForReviewersEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisionHistoriesForReviewersEnabled** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleSettings"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewStageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStageSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStageSettings?view=graph-rest-1.0) resource type.",
+          "Target": "accessReviewStageSettings"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stages",
+          "ChangeType": "Addition",
+          "Description": "Added the **stages** relationship to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Property",
+          "ChangedApiName": "stageSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **stageSettings** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
+          "Target": "accessReviewScheduleDefinition"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewStage?view=graph-rest-1.0) resource",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Method",
+          "ChangedApiName": "stop",
+          "ChangeType": "Addition",
+          "Description": "Added the [stop](https://docs.microsoft.com/en-us/graph/api/stop?view=graph-rest-1.0) method to the [stop](https://docs.microsoft.com/en-us/graph/api/stop?view=graph-rest-1.0) resource.",
+          "Target": "stop"
+        },
+        {
+          "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) method to the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/filterByCurrentUser?view=graph-rest-1.0) resource.",
+          "Target": "filterByCurrentUser"
+        }
+      ],
+      "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-17T00:17:11.8920753Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9d9f39ab-b84b-439f-b0fc-024ad885c1ad",
           "ApiChange": "Enum type",
           "ChangedApiName": "accessReviewHistoryDecisionFilter",
