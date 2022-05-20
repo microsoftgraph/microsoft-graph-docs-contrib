@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetQueryParameters{
 	Filter: "attributeSet%20eq%20'Engineering'%20and%20status%20eq%20'Available'%20and%20type%20eq%20'String'",
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

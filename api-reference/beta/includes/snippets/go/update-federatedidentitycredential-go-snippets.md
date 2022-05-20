@@ -19,12 +19,9 @@ requestBody.SetDescription(&description)
 requestBody.SetAudiences( []String {
 	"api://AzureADTokenExchange",
 }
-options := &msgraphsdk.FederatedIdentityCredentialRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 applicationId := "application-id"
 federatedIdentityCredentialId := "federatedIdentityCredential-id"
-graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(options)
+graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentialsById(&federatedIdentityCredentialId).Patch(requestBody)
 
 
 ```

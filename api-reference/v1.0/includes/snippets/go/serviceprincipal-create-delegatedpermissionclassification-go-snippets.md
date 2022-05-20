@@ -14,11 +14,8 @@ permissionName := "User.Read"
 requestBody.SetPermissionName(&permissionName)
 classification := "low"
 requestBody.SetClassification(&classification)
-options := &msgraphsdk.DelegatedPermissionClassificationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).DelegatedPermissionClassifications().Post(requestBody)
 
 
 ```

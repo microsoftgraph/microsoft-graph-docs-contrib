@@ -12,12 +12,9 @@ displayName := "My Query 1"
 requestBody.SetDisplayName(&displayName)
 query := "(subject:"Quarterly Financials")"
 requestBody.SetQuery(&query)
-options := &msgraphsdk.QueriesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Queries().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Queries().Post(requestBody)
 
 
 ```

@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  User.Export.All, User.Read.All  |
+|Delegated (work or school account) |  User.Export.All  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | User.Export.All, User.Read.All |
+|Application | User.Export.All |
 
 >**Note:** The export can only be performed by a company administrator when delegated permissions are used.
 

@@ -4,7 +4,7 @@ description: "Update the properties of governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # Update governanceRoleSetting

@@ -17,11 +17,8 @@ requestBody.SetCreatedDateTime(&createdDateTime)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@microsoft.graph.channelCreationMode": "migration",
 }
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

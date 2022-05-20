@@ -14,11 +14,8 @@ mailNickname := "Myprefix_test_mysuffix"
 requestBody.SetMailNickname(&mailNickname)
 onBehalfOfUserId := "onBehalfOfUserId-value"
 requestBody.SetOnBehalfOfUserId(&onBehalfOfUserId)
-options := &msgraphsdk.ValidatePropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-graphClient.GroupsById(&groupId).ValidateProperties(group-id).Post(options)
+graphClient.GroupsById(&groupId).ValidateProperties(group-id).Post(requestBody)
 
 
 ```

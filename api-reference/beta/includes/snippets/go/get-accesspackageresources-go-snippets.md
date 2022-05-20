@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.AccessPackageResourcesRequestBuilderGetQueryPar
 	Filter: "resourceType%20eq%20'Application'",
 	Expand: "accessPackageResourceScopes",
 }
-options := &msgraphsdk.AccessPackageResourcesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessPackageResourcesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResources().Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogsById(&accessPackageCatalogId).AccessPackageResources().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
