@@ -28,7 +28,7 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 
 ### capabilityStatus values
 
-The following table describes the possible statuses for the **capabilityStatus** of a subscription. The members are listed in the order of transition if the license isn't renewed.
+The following table describes the possible statuses for the **capabilityStatus** of a subscription. The members are listed in the order of their transition if the license isn't renewed.
 
 | Member | Description	|
 |:---------------|:--------|
