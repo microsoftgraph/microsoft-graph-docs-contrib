@@ -1,6 +1,7 @@
 {
   "changelog": [
-   "ChangeList": [
+    { 
+      "ChangeList": [
         {
           "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
           "ApiChange": "EnumType",
