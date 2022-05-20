@@ -18,11 +18,11 @@ Cancel a print job. Print jobs can be canceled only on behalf of a user, using d
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription. A user can cancel their own jobs or have a permission that grants [Get printer](printer-get.md) access to cancel other user jobs. 
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All <br/><br/> *To modify other users' jobs, an administrator role and a permission that grants [Get printer](printer-get.md) access is also required.* |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Not Supported. |
 
