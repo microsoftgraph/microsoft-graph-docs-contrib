@@ -20,9 +20,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All |
+|Delegated (work or school account) | Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 
@@ -71,7 +73,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {
@@ -124,7 +126,7 @@ HTTP/1.1 204 No Content
   "name": "update_device_extensionAttributes"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {

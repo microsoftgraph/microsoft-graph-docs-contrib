@@ -111,7 +111,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
-|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
+|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable. Supports `$expand` and `$filter` (`eq` when counting empty collections).|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
