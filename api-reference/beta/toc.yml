@@ -300,7 +300,7 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create
+        - name: Create calendar
           href: api/user-post-calendars.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
@@ -328,7 +328,7 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List
+        - name: List cloudPCs
           href: api/user-list-cloudpcs.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
@@ -9934,14 +9934,22 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List
+          - name: List for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get
+          - name: List for user 
+            href: api/user-list-cloudpcs.md
+          - name: Get cloudPC
             href: api/cloudpc-get.md
+          - name: Bulk reprovision remotely action
+            href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk restore remotely action
+            href: api/manageddevice-bulkrestorecloudpc.md
           - name: Change user accout type
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get launch info for user
+            href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
           - name: Reboot
@@ -9952,20 +9960,12 @@ items:
             href: api/cloudpc-reprovision.md
           - name: Reprovision remotely action
             href: api/manageddevice-reprovisioncloudpc.md
-          - name: Bulk reprovision remotely action
-            href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize remotely action
             href: api/manageddevice-resizecloudpc.md
           - name: Restore remotely action
             href: api/manageddevice-restorecloudpc.md
-          - name: Bulk restore remotely action
-            href: api/manageddevice-bulkrestorecloudpc.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: List for user 
-            href: api/user-list-cloudpcs.md
-          - name: Get launch info for user
-            href: api/cloudpc-getcloudpclaunchinfo.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
