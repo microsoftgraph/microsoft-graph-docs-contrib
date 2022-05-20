@@ -9934,9 +9934,9 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List for organization
+          - name: List Cloud PCs for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: List for user 
+          - name: List Cloud PCs for user 
             href: api/user-list-cloudpcs.md
           - name: Get cloudPC
             href: api/cloudpc-get.md
