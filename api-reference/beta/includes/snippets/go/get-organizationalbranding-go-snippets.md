@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Accept-Language": "0"
 }
-options := &msgraphsdk.BrandingRequestBuilderGetOptions{
-	H: headers,
+options := &msgraphsdk.BrandingRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Get(options)
+result, err := graphClient.OrganizationById(&organizationId).Branding().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

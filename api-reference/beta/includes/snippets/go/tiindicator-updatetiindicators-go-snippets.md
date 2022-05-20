@@ -20,10 +20,7 @@ requestBody.SetValue( []TiIndicator {
 		"additionalInformation": "test again",
 	}
 }
-options := &msgraphsdk.UpdateTiIndicatorsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(options)
+result, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(requestBody)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
 ms.localizationpriority: medium
-author: michaelcurnutt
+author: "jconley76"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

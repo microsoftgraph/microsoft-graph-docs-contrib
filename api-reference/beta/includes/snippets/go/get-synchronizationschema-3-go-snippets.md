@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"Authorization": "Bearer {Token}"
 }
-options := &msgraphsdk.SchemaRequestBuilderGetOptions{
-	H: headers,
+options := &msgraphsdk.SchemaRequestBuilderGetRequestConfiguration{
+	Headers: headers,
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().Get(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

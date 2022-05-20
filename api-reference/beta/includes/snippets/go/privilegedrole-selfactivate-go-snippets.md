@@ -16,11 +16,8 @@ ticketNumber := "ticketNumber-value"
 requestBody.SetTicketNumber(&ticketNumber)
 ticketSystem := "ticketSystem-value"
 requestBody.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.SelfActivateRequestBuilderPostOptions{
-	Body: requestBody,
-}
 privilegedRoleId := "privilegedRole-id"
-result, err := graphClient.PrivilegedRolesById(&privilegedRoleId).SelfActivate(privilegedRole-id).Post(options)
+result, err := graphClient.PrivilegedRolesById(&privilegedRoleId).SelfActivate(privilegedRole-id).Post(requestBody)
 
 
 ```

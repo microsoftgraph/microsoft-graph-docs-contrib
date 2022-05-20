@@ -58,10 +58,7 @@ type := "noEnd"
 range.SetType(&type)
 startDate := "2020-09-08T12:02:30.667Z"
 range.SetStartDate(&startDate)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

@@ -6,13 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var queryOptions = new List<QueryOption>()
-{
-	new QueryOption("search", "{query}")
-};
-
-var sites = await graphClient.Sites
-	.Request( queryOptions )
+var permissions = await graphClient.Sites["{site-id}"].Permissions
+	.Request()
 	.GetAsync();
 
 ```
