@@ -1,0 +1,61 @@
+---
+title: "TeamsFx provider"
+description: "Use the TeamxFx provider inside your Teams applications to power the components with Microsoft Graph access."
+ms.localizationpriority: medium
+author: sebastienlevert
+---
+
+# TeamsFx provider
+
+Use the TeamxFx provider inside your Teams applications to power the components with Microsoft Graph access.
+
+To learn more about authentication providers, see [Providers](./providers.md).
+
+## Get started
+
+Initialize the provider inside the your component.
+
+```ts
+// Import the providers and credential at the top of the page
+import {Providers} from '@microsoft/mgt-element';
+import {TeamsFxProvider} from '@microsoft/mgt-teamsfx-provider';
+import {TeamsUserCredential} from "@microsoft/teamsfx";
+
+const scope = ["User.Read"];
+const teamsfx = new TeamsFx();
+const provider = new TeamsFxProvider(teamsfx, scope);
+Providers.globalProvider = provider;
+```
+
+When in need of consent, get the access access token
+
+```ts
+// Automatically when loading the component or in a call-to-action
+await teamsfx.login(this.scope);
+Providers.globalProvider.setState(ProviderState.SignedIn);
+```
+
+Now you can add any component in your HTML page or in your `render()` method when using React and it will use the TeamsFx context to access Microsoft Graph.
+
+```html
+<!-- Using HTML -->
+<mgt-person query="me" view="threeLines"></mgt-person>
+```
+
+```ts
+// Using React
+public render(): void {
+  return (
+      <div>
+        <Person personQuery="me" view={PersonViewType.threelines}></Person>
+      </div>
+  );
+}
+```
+
+## Sample
+
+For details about how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter) getting started guide.
+
+## See also
+* [TeamsFx docs](https://aka.ms/teamsfx-docs)
