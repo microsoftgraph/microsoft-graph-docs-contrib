@@ -4335,7 +4335,7 @@ items:
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
-        - name: Get changes to classes
+        - name: Get delta
           href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
@@ -4423,6 +4423,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md           
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -4446,6 +4448,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md          
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -4867,10 +4871,9 @@ items:
             - name: Delete
               href: api/unifiedroleassignment-delete.md
           - name: Privileged identity management
+            displayName: Privileged identity management, PIM
+            href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: Overview
-              displayName: Privileged identity management, PIM
-              href: resources/privilegedidentitymanagementv3-overview.md
             - name: Role assignments
               items:
                 - name: Schedule requests
@@ -5115,24 +5118,44 @@ items:
           items:
           - name: Identity provider base
             href: resources/identityproviderbase.md
-          - name: Built-in identity provider
-            href: resources/builtinidentityprovider.md
-          - name: Social identity provider
-            href: resources/socialidentityprovider.md
-          - name: Apple identity provider
-            href: resources/applemanagedidentityprovider.md
-          - name: List
-            href: api/identitycontainer-list-identityproviders.md
-          - name: Create
-            href: api/identitycontainer-post-identityproviders.md
-          - name: Get
-            href: api/identityproviderbase-get.md
-          - name: Update
-            href: api/identityproviderbase-update.md
-          - name: Delete
-            href: api/identityproviderbase-delete.md
-          - name: List available provider types
-            href: api/identityproviderbase-availableprovidertypes.md
+          - name: External identities
+            items:
+            - name: Built-in identity provider type
+              href: resources/builtinidentityprovider.md
+            - name: Social identity provider type
+              href: resources/socialidentityprovider.md
+            - name: Apple identity provider type
+              href: resources/applemanagedidentityprovider.md
+            - name: List available identity providers
+              href: api/identityproviderbase-availableprovidertypes.md
+            - name: List configured identity providers
+              href: api/identitycontainer-list-identityproviders.md
+            - name: Create identity provider
+              href: api/identitycontainer-post-identityproviders.md
+            - name: Get identity provider
+              href: api/identityproviderbase-get.md
+            - name: Update identity provider
+              href: api/identityproviderbase-update.md
+            - name: Delete identity provider
+              href: api/identityproviderbase-delete.md
+          - name: Domain-based external identities
+            items:
+            - name: SAML/Ws-Fed external domain federation
+              href: resources/samlorwsfedexternaldomainfederation.md
+            - name: List federated configurations
+              href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get federated configuration
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create federated configuration
+              href: api/samlorwsfedexternaldomainfederation-post.md
+            - name: Update federated configuration
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete federated configuration
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create externalDomainName
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -6430,6 +6453,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -6463,6 +6488,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -6491,6 +6518,8 @@ items:
           href: api/contenttype-unpublish.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
         - name: Copy to default content location
@@ -6499,6 +6528,8 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible from hub
+          href: api/contenttype-getcompatiblehubcontenttypes.md
       - name: List items
         href: resources/listitem.md
         items:
@@ -6514,6 +6545,12 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:

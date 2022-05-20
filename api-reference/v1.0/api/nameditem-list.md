@@ -1,9 +1,9 @@
 ---
 title: "List NamedItemCollection"
-description: "Retrieve a list of nameditem objects."
+description: Learn how to retrieve a list of nameditem objects.
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
 ---
 

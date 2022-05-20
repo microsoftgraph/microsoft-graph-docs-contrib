@@ -20,10 +20,7 @@ requestBody.SetProficiency(&proficiency)
 requestBody.SetCollaborationTags( []String {
 	"ableToMentor",
 }
-options := &msgraphsdk.SkillsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Skills().Post(options)
+result, err := graphClient.Me().Profile().Skills().Post(requestBody)
 
 
 ```

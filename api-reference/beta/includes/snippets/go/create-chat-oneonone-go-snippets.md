@@ -28,10 +28,7 @@ requestBody.SetMembers( []ConversationMember {
 		"user@odata.bind": "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')",
 	}
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Chats().Post(options)
+result, err := graphClient.Chats().Post(requestBody)
 
 
 ```

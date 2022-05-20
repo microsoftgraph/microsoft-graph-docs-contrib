@@ -12,11 +12,8 @@ id := "id-value"
 requestBody.SetId(&id)
 groupId := "groupId-value"
 requestBody.SetGroupId(&groupId)
-options := &msgraphsdk.CopyToSectionRequestBuilderPostOptions{
-	Body: requestBody,
-}
 onenotePageId := "onenotePage-id"
-result, err := graphClient.Me().Onenote().PagesById(&onenotePageId).CopyToSection(onenotePage-id).Post(options)
+result, err := graphClient.Me().Onenote().PagesById(&onenotePageId).CopyToSection(onenotePage-id).Post(requestBody)
 
 
 ```

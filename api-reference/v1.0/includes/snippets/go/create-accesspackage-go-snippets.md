@@ -18,10 +18,7 @@ catalog := msgraphsdk.NewAccessPackageCatalog()
 requestBody.SetCatalog(catalog)
 id := "66584aae-98bb-48cc-9458-7bee5d2a6577"
 catalog.SetId(&id)
-options := &msgraphsdk.AccessPackagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(requestBody)
 
 
 ```

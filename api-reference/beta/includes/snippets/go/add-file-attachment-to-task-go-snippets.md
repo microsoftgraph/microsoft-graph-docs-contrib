@@ -14,11 +14,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.fileAttachment",
 	"contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 outlookTaskId := "outlookTask-id"
-result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(options)
+result, err := graphClient.Me().Outlook().TasksById(&outlookTaskId).Attachments().Post(requestBody)
 
 
 ```

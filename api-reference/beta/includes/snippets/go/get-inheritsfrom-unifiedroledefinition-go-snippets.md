@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderGetQueryParameters{
 	Expand: "inheritsPermissionsFrom",
 }
-options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

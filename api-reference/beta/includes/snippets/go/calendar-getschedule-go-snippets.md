@@ -29,11 +29,10 @@ requestBody.SetAvailabilityViewInterval(&availabilityViewInterval)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.GetScheduleRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.GetScheduleRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.Me().Calendar().GetSchedule().Post(options)
+result, err := graphClient.Me().Calendar().GetSchedule().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```
