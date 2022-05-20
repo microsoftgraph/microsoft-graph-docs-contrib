@@ -1,5 +1,31 @@
 {
     "changelog": [
+        { 
+          "ChangeList": [
+              {
+                "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
+                "ApiChange": "Method",
+                "ChangedApiName": "updateAdDomainPassword",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecate **PATCH** method for this API [updateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta) after the end of **June 2022**. Use **POST** for this operation instead.",
+                "Target": "cloudpconpremisesconnection-updateaddomainpassword"
+              }
+              {
+                "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
+                "ApiChange": "Method",
+                "ChangedApiName": "updateAdDomainPassword",
+                "ChangeType": "Addition",
+                "Description": "Use **POST** for this API [updateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta).",
+                "Target": "cloudpconpremisesconnection-updateaddomainpassword"
+              }
+            ],
+            "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-05-20T08:30:16.9388044Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+          },
         {
           "ChangeList": [
             {
