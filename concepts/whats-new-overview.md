@@ -22,8 +22,8 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Device and app management | Cloud PC
 - Specify [Windows settings](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) as part of [Cloud PC organization settings](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) for a tenant.
-- [Get](/graph/api/user-list-cloudpcs?view=graph-rest-beta) the Cloud PC devices attributed to the signed-in user.
-- [Get information to launch a Cloud PC device](/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) for the signed-in user.
+- [Get](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) the Cloud PC devices attributed to the signed-in user.
+- [Get information to launch a Cloud PC device](/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) for the signed-in user.
 
 ### Identity and access | Directory management
 Configure [federation settings](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) to federate domains with Azure Active Directory.
