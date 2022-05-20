@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> This API is deprecated and will stop returning data on January 1, 2023. Please use the new [sensitivity label API](./security-sensitivitylabel-get.md).
+[!INCLUDE [beta-disclaimer](../../includes/informationprotection-deprecate.md)]
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 

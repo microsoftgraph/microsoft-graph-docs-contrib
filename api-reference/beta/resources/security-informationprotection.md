@@ -19,7 +19,7 @@ Exposes methods that you can use to get Microsoft Information Protection labels 
 | Method                                                                                              | Return type                                                                                                  | Description                                                                                                    |
 | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
 | [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) collection | Get the **informationProtectionPolicySetting** resources from the **labelPolicySettings** navigation property. |
-| [List sensitivityLabels](../api/security-list-sensitivitylabels.md)                                 | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection            | Get the **sensitivityLabel** resources from the **sensitivityLabels** navigation property.                             |
+| [List sensitivityLabels](../api/security-informationprotection-list-sensitivitylabels.md)                                 | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection            | Get the **sensitivityLabel** resources from the **sensitivityLabels** navigation property.                             |
 
 ## Properties
 None.
