@@ -22,7 +22,7 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | The name of the Azure Active Directory tenant. Read only. |
 | tenantId |String | The ID of the Azure Active Directory tenant. Read only. |
-| cloudInstance | String | The ID of the cloud where the tenant is located. Read only. |
+| cloudInstance | String | The ID of the cloud where the tenant is located, one of `microsoftonline.com`, `microsoftonline.us` or `partner.microsoftonline.cn`. Read only. |
 
 ## Relationships
 
