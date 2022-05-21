@@ -167,6 +167,8 @@ Content-Length: 242
       "send": 504, 
       "receive": 76506, 
       "read": 12161, 
+      "meetingCreated": 421, 
+      "meetingInteracted": 7930, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

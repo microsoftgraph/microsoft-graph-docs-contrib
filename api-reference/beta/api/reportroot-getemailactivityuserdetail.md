@@ -186,6 +186,8 @@ Content-Length: 424
       "assignedProducts": [
         "Microsoft 365 ENTERPRISE E5"
       ], 
+      "meetingCreatedCount": 50, 
+      "meetingInteractedCount": 86, 
       "reportPeriod": "7"
     }
   ]
