@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
 	Select: "subject,body,bodyPreview,organizer,attendees,start,end,location,locations",
 }
-options := &msgraphsdk.EventRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.EventRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Get(options)
+result, err := graphClient.Me().EventsById(&eventId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

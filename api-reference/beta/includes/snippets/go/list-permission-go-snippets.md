@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SitesRequestBuilderGetQueryParameters{
 	Search: "%7Bquery%7D",
 }
-options := &msgraphsdk.SitesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SitesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Sites().Get(options)
+result, err := graphClient.Sites().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

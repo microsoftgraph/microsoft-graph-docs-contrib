@@ -19,11 +19,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"contentLocation": "contentLocation-value",
 	"contentBytes": "base64-contentBytes-value",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(requestBody)
 
 
 ```

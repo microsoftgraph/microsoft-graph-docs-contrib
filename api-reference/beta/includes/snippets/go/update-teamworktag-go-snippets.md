@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTeamworkTag()
 displayName := "Finance"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.TeamworkTagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(options)
+graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Patch(requestBody)
 
 
 ```

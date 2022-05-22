@@ -15,12 +15,9 @@ requestBody.SetPosts( []Post {
 	SetAdditionalData(map[string]interface{}{
 	}
 }
-options := &msgraphsdk.ThreadsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationId := "conversation-id"
-result, err := graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Threads().Post(options)
+result, err := graphClient.GroupsById(&groupId).ConversationsById(&conversationId).Threads().Post(requestBody)
 
 
 ```

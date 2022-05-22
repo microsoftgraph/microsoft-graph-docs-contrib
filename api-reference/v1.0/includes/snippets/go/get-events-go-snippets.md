@@ -13,11 +13,11 @@ requestParameters := &msgraphsdk.EventsRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.EventsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.EventsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.Me().Events().Get(options)
+result, err := graphClient.Me().Events().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

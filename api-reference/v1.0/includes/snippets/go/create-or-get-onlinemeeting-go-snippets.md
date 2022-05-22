@@ -24,10 +24,7 @@ participants.SetAttendees( []MeetingParticipantInfo {
 		"upn": "test1@contoso.com",
 	}
 }
-options := &msgraphsdk.CreateOrGetRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(options)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
 
 
 ```
