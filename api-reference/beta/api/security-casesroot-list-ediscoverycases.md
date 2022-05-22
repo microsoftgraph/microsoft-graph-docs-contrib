@@ -1,9 +1,9 @@
 ---
 title: "List ediscoveryCases"
-description: "Get a list of the ediscoveryCase objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Get a list of the eDiscovery cases"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -76,25 +76,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-      "id": "07aaac84-95ea-2f1b-dffa-a773b40b823f",
-      "displayName": "String",
-      "description": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "status": "String",
-      "closedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "closedDateTime": "String (timestamp)",
-      "externalId": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases",
+    "@odata.count": 22,
+    "value": [
+        {
+            "description": "",
+            "lastModifiedDateTime": "2022-05-19T23:30:41.23Z",
+            "status": "active",
+            "closedDateTime": null,
+            "externalId": "",
+            "id": "60f86305-ac3e-408b-baa2-ea585dd8b0c0",
+            "displayName": "My case 1",
+            "createdDateTime": "2022-05-19T23:30:41.23Z",
+            "lastModifiedBy": {
+                "application": null,
+                "user": {
+                    "id": null,
+                    "displayName": "MOD Administrator"
+                }
+            },
+            "closedBy": {
+                "application": null,
+                "user": {
+                    "id": null,
+                    "displayName": ""
+                }
+            }
+        },
+        {
+            "description": "",
+            "lastModifiedDateTime": "2022-05-18T23:05:07.82Z",
+            "status": "active",
+            "closedDateTime": null,
+            "externalId": "",
+            "id": "7acdda75-3559-4f93-9827-cbd4c89db033",
+            "displayName": "My case 2",
+            "createdDateTime": "2022-05-18T23:05:07.82Z",
+            "lastModifiedBy": {
+                "application": null,
+                "user": {
+                    "id": null,
+                    "displayName": "MOD Administrator"
+                }
+            },
+            "closedBy": {
+                "application": null,
+                "user": {
+                    "id": null,
+                    "displayName": ""
+                }
+            }
+        }
+    ]
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "Create ediscoveryCase"
-description: "Create a new ediscoveryCase object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Create a new eDiscovery case."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -14,14 +14,16 @@ Namespace: microsoft.graph.security
 
 Create a new [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
+>[!NOTE]
+> This API only creates an eDiscovery (Premium) case using the new case format. To learn more about the new case format in eDiscovery, see [Use the new case format in eDiscovery (Premium)](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,17 +48,9 @@ You can specify the following properties when creating an **ediscoveryCase**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|status|caseStatus|**TODO: Add Description** Inherited from [case](../resources/security-case.md). The possible values are: `unknown`, `active`, `pendingDelete`, `closing`, `closed`, `closedWithError`, `unknownFutureValue`. Optional.|
-|closedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Optional.|
-|closedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|externalId|String|**TODO: Add Description** Optional.|
-
-
+|displayName|String|The name of the eDiscovery case. Required.|
+|description|String|The case description. Optional.|
+|externalId|String|The external case number for customer reference. Optional.|
 
 ## Response
 
@@ -74,18 +68,11 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 Content-Type: application/json
-Content-length: 287
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-  "displayName": "String",
-  "description": "String",
-  "status": "String",
-  "closedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "closedDateTime": "String (timestamp)",
-  "externalId": "String"
+    "displayName": "CONTOSO LITIGATION-005",
+    "description": "Project Bazooka",
+    "externalId": "324516"
 }
 ```
 
@@ -104,21 +91,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-  "id": "07aaac84-95ea-2f1b-dffa-a773b40b823f",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "closedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "closedDateTime": "String (timestamp)",
-  "externalId": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases/$entity",
+    "description": "Project Bazooka",
+    "lastModifiedDateTime": "2022-05-22T18:36:48.0834353Z",
+    "status": "active",
+    "closedDateTime": "2022-05-22T18:36:48.083436Z",
+    "externalId": "324516",
+    "id": "22aa2acd-7554-4330-9ba9-ce20014aaae4",
+    "displayName": "CONTOSO LITIGATION-005",
+    "createdDateTime": "2022-05-22T18:36:48.0834351Z",
+    "lastModifiedBy": null,
+    "closedBy": null
 }
 ```
 
