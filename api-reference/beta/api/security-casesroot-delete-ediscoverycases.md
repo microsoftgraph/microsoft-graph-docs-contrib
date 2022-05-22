@@ -1,10 +1,10 @@
 ---
 title: "Delete ediscoveryCase"
 description: "Deletes an ediscoveryCase object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Delete ediscoveryCase
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/$ref
+DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}
 ```
 
 ## Request headers
@@ -55,9 +55,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}
+DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 ```
-
 
 ### Response
 The following is an example of the response
@@ -70,4 +69,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

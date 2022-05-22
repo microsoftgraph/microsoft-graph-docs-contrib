@@ -1,10 +1,10 @@
 ---
 title: "Get ediscoveryCase"
 description: "Read the properties and relationships of an ediscoveryCase object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get ediscoveryCase
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 ```
 
 
@@ -76,23 +76,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-    "id": "07aaac84-95ea-2f1b-dffa-a773b40b823f",
-    "displayName": "String",
-    "description": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "status": "String",
-    "closedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "closedDateTime": "String (timestamp)",
-    "externalId": "String"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases/$entity",
+    "description": "",
+    "lastModifiedDateTime": "2022-05-22T18:36:46.597Z",
+    "status": "active",
+    "closedDateTime": null,
+    "externalId": "324516",
+    "id": "22aa2acd-7554-4330-9ba9-ce20014aaae4",
+    "displayName": "CONTOSO LITIGATION-005",
+    "createdDateTime": "2022-05-22T18:36:46.597Z",
+    "lastModifiedBy": null,
+    "closedBy": null
 }
 ```
-

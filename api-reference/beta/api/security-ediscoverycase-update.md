@@ -1,10 +1,10 @@
 ---
 title: "Update ediscoveryCase"
 description: "Update the properties of an ediscoveryCase object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Update ediscoveryCase
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -42,24 +42,17 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [case](../resources/security-case.md). Optional.|
-|status|caseStatus|**TODO: Add Description** Inherited from [case](../resources/security-case.md). The possible values are: `unknown`, `active`, `pendingDelete`, `closing`, `closed`, `closedWithError`, `unknownFutureValue`. Optional.|
-|closedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Optional.|
-|closedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|externalId|String|**TODO: Add Description** Optional.|
-
-
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|description|String|The case description.|
+|displayName|String|The case name.|
+|externalId|String|The external case number for customer reference.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
+If successful, this method returns a `204 NO CONTENT` response code and an updated [ediscoveryCase](../resources/security-ediscoverycase.md) object in the response body.
 
 ## Examples
 
@@ -71,23 +64,14 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}
+PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 Content-Type: application/json
-Content-length: 287
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-  "displayName": "String",
-  "description": "String",
-  "status": "String",
-  "closedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "closedDateTime": "String (timestamp)",
-  "externalId": "String"
+    "displayName": "My Case 1 - Renamed",
+    "description": "Updated description"
 }
 ```
-
 
 ### Response
 The following is an example of the response
@@ -97,26 +81,6 @@ The following is an example of the response
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryCase",
-  "id": "07aaac84-95ea-2f1b-dffa-a773b40b823f",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "closedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "closedDateTime": "String (timestamp)",
-  "externalId": "String"
-}
+```http
+HTTP/1.1 204 No Content
 ```
-
