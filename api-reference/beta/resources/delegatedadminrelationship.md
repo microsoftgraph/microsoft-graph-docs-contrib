@@ -37,7 +37,7 @@ Represents a delegated admin relationship between a partner and customer.
 |endDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the **status** of relationship changes to either `terminated` or `expired`. Calculated as `endDateTime = activatedDateTime + duration`. Read-only.|
 |id|String|The unique identifier of the relationship. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only.|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`.|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `created` (partner creates a new relationship and in this state the relationship can be modified), `approvalPending` (partner finalizes relationship through the action - lockForApproval), `approved` (customer approves relationship), `activating` (system starts provisioning of relationship), `active` (system completes provisioning of relationship), `expiring` (Relationship has passed its expiration date), `expired` (system completes deprovisioning of relationship), `terminationRequested` (partner or customer requests termination of relationship through action - terminate), `terminating` (system starts deprovisioning of relationship), `terminated` (system completes deprovisioning of relationship), `unknownFutureValue`. Supports `$orderBy`.|
 
 ## Relationships
 |Relationship|Type|Description|
