@@ -1,19 +1,19 @@
 ---
 title: "TeamsFx provider"
-description: "Use the TeamxFx provider inside your Teams applications to power the components with Microsoft Graph access."
+description: "Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
 # TeamsFx provider
 
-Use the TeamxFx provider inside your Teams applications to power the components with Microsoft Graph access.
+Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph.
 
 To learn more about authentication providers, see [Providers](./providers.md).
 
 ## Get started
 
-Initialize the provider inside the your component.
+Initialize the provider inside your component.
 
 ```ts
 // Import the providers and credential at the top of the page
