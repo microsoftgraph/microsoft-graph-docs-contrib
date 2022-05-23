@@ -14528,19 +14528,19 @@ items:
         - name: Get operation
           href: api/richlongrunningoperation-get.md
       - name: Site permissions
-          items:
-          - name: Permission
-            href: resources/permission.md
-          - name: List site permissions
-            href: api/site-list-permissions.md
-          - name: Create site permissions
-            href: api/site-post-permissions.md
-          - name: Get site permission
-            href: api/site-get-permission.md
-          - name: Update site permission
-            href: api/site-update-permission.md
-          - name: Delete site permission
-            href: api/site-delete-permission.md
+        items:
+        - name: Permission
+          href: resources/permission.md
+        - name: List site permissions
+          href: api/site-list-permissions.md
+        - name: Create site permissions
+          href: api/site-post-permissions.md
+        - name: Get site permission
+          href: api/site-get-permission.md
+        - name: Update site permission
+          href: api/site-update-permission.md
+        - name: Delete site permission
+          href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
