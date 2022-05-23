@@ -14570,18 +14570,6 @@ items:
             href: api/security-ediscoverycustodian-removehold.md
           - name: Update index
             href: api/security-ediscoverycustodian-updateindex.md
-          - name: List user sources
-            href: api/security-ediscoverycustodian-list-usersources.md
-          - name: Create user source
-            href: api/security-ediscoverycustodian-post-usersources.md
-          - name: List site sources
-            href: api/security-ediscoverycustodian-list-sitesources.md
-          - name: Create site source
-            href: api/security-ediscoverycustodian-post-sitesources.md
-          - name: List unitifed group sources
-            href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
-          - name: Create unifed group source
-            href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
         - name: Non-custodial data source
           href: resources/security-ediscoverynoncustodialdatasource.md
           items:
@@ -14599,8 +14587,6 @@ items:
             href: api/security-ediscoverynoncustodialdatasource-removehold.md
           - name: Update index
             href: api/security-ediscoverynoncustodialdatasource-updateindex.md
-          - name: List data sources
-            href: api/ediscovery-noncustodialdatasource-list-datasource.md
         - name: Hold policy
           href: resources/security-ediscoveryholdpolicy.md
           items:
