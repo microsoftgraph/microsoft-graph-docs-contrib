@@ -54,18 +54,18 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
-  "id": "String (identifier)",
+  "cloudPcStatus": "String",
+  "deviceSpecification": "String",
   "displayName": "String",
-  "tenantId": "String",
-  "tenantDisplayName": "String",
+  "id": "String (identifier)",
+  "lastRefreshedDateTime": "String (timestamp)",
   "managedDeviceId": "String",
   "managedDeviceName": "String",
-  "userPrincipalName": "String",
+  "provisioningPolicyId": "String",
   "servicePlanName": "String",
   "servicePlanType": "String",
-  "deviceSpecification": "String",
-  "cloudPcStatus": "String",
-  "provisioningPolicyId": "String",
-  "lastRefreshedDateTime": "String (timestamp)"
-}
+  "tenantDisplayName": "String",
+  "tenantId": "String",
+  "userPrincipalName": "String"
+}     
 ```
