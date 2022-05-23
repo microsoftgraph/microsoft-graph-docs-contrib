@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/ff4eb6ab-d56a-4edf-90c1-baaec8
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-troubleshoot-cloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/user-snippets-sdk-documentation-link.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-troubleshoot-cloudpc-javascript-snippets.md)]

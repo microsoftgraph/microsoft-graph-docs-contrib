@@ -339,7 +339,7 @@ items:
         - name: Rename
           href: api/user-rename-cloudpc.md
         - name: Reprovision
-          href: api/user-reprovsion-cloudpc.md
+          href: api/user-reprovision-cloudpc.md
         - name: Troubleshoot
           href: api/user-troubleshoot-cloudpc.md
       - name: Contacts
@@ -9997,7 +9997,7 @@ items:
           - name: Rename for user
             href: api/user-rename-cloudpc.md
           - name: Reprovision for user
-            href: api/user-reprovsion-cloudpc.md
+            href: api/user-reprovision-cloudpc.md
           - name: Troubleshoot for user
             href: api/user-troubleshoot-cloudpc.md
         - name: Cloud PC device image
