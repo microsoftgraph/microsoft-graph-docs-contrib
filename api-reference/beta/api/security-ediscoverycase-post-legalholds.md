@@ -1,10 +1,10 @@
 ---
 title: "Create ediscoveryHoldPolicy"
 description: "Create a new ediscoveryHoldPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryHoldPolicy
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,18 +46,9 @@ You can specify the following properties when creating an **ediscoveryHoldPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|status|policyStatus|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). The possible values are: `pending`, `error`, `success`, `unknownFutureValue`. Optional.|
-|isEnabled|Boolean|**TODO: Add Description** Optional.|
-|contentQuery|String|**TODO: Add Description** Optional.|
-|errors|String collection|**TODO: Add Description** Optional.|
-
-
+|displayName|String|The display name of the legal hold policy.|
+|description|String|The description of the legal hold policy.|
+|contentQuery|String|The content query of the legal hold policy.|
 
 ## Response
 
@@ -73,27 +64,29 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalHolds
 Content-Type: application/json
-Content-length: 315
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryHoldPolicy",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "status": "String",
-  "isEnabled": "Boolean",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ]
+    "displayname": "My legalHold with sources",
+    "description": "Created from Graph API",
+    "contentQuery": "Bazooka",
+    "userSources@odata.bind": [
+        {
+            "@odata.type": "microsoft.graph.security.userSource",
+            "email": "SalesTeam@M365x809305.OnMicrosoft.com"
+        }
+    ],
+    "siteSources@odata.bind": [
+        {
+            "@odata.type": "microsoft.graph.security.siteSource",
+            "site": {
+                "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
+            }
+        }
+    ]
 }
 ```
-
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -108,24 +101,30 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryHoldPolicy",
-  "id": "443fa57b-b7df-068e-8e4d-733c3d38c8b1",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "isEnabled": "Boolean",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalHolds/$entity",
+    "isEnabled": true,
+    "errors": [],
+    "contentQuery": "Bazooka",
+    "description": "Created from Graph API",
+    "createdDateTime": "2022-05-23T03:54:11.1Z",
+    "lastModifiedDateTime": "2022-05-23T03:54:11.1Z",
+    "status": "pending",
+    "id": "b9758bbc-ddbd-45e0-8484-3eb49cf1ded3",
+    "displayName": "My legalHold with sources",
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": "MOD Administrator",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "user": {
+            "id": "MOD Administrator",
+            "displayName": null
+        }
+    }
 }
 ```
 
