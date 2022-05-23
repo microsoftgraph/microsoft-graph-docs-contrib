@@ -47,7 +47,6 @@ You can specify the following properties when creating an **ediscoveryCustodian*
 
 |Property|Type|Description|
 |:---|:---|:---|
-
 |email|String|Custodian's primary SMTP address. Required.|
 
 ## Response
