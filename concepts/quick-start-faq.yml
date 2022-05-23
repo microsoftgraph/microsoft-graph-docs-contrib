@@ -57,18 +57,20 @@ sections:
       - question: |
            When running a quick start, I get error message AADSTS50011.
         answer: |
-          The error message "**AADSTS50011:** *The reply url specified in the request does not match the reply urls configured for the application*" indicates a problem with the application registration for the quick start. When you download a quick start sample from the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) page, we create the application registration and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration no longer matches and could cause this error.
+          The error message _"**AADSTS50011:** The reply url specified in the request does not match the reply urls configured for the application"_ indicates a problem with the application registration for the quick start. 
+          
+          When you download a quick start sample from the [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start) page, we create the application registration and configure a reply URL (also known as a redirect URL) that matches the default URL used by the sample project. If you change the URL, the app registration no longer matches and could cause this error.
           
           To resolve this error, consult the README.md file included with the quick start project for instructions about how to create an app registration and configure it in the sample code.
 
       - question: |
           After signing in, I'm told I need admin approval.
         answer: |
-          After signing into one of the quick start samples, you might see the following message: "**Need admin approval:** *XXX Tutorial needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.*"
+          After signing into one of the quick start samples, you might see the following message: _"**Need admin approval:** XXX Tutorial needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it."_
           
           This isn't a bug with the sample. None of the quick start samples request any Microsoft Graph permission scopes that *by default* require admin consent. Tenant administrators can disable your ability to consent to Microsoft Graph permission scopes for any apps that they have not approved. In that case, you see this error.
 
-          Work with your administrators to get approval, use a personal Microsoft account (Outlook.com), or use a test Microsoft 365 tenant with Exchange Online.
+          To resolve this error, work with your administrators to get approval, use a personal Microsoft account (Outlook.com), or use a test Microsoft 365 tenant with Exchange Online.
 
 additionalContent: |
 
