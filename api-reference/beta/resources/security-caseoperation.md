@@ -1,9 +1,9 @@
 ---
 title: "caseOperation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "An abstract entity that represents a long-running process."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,10 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
 Inherits from [entity](../resources/entity.md).
+
+An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities.  Entities that derive from **caseOperation** include:
+
+- [Index operation](../resources/security-ediscoveryindexoperation.md)
+- [Hold operation](../resources/security-ediscoveryholdoperation.md)
+- [Purge data operation](../resources/security-ediscoverypurgedataoperation.md)
+- [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
+- [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
+- [Tag operation](../resources/security-ediscoverytagoperation.md)
+- [Export operation](../resources/security-ediscoveryexportoperation.md)
 
 ## Methods
 |Method|Return type|Description|
@@ -30,14 +37,38 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction|**TODO: Add Description**.The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|percentProgress|Int32|**TODO: Add Description**|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description**|
-|status|caseOperationStatus|**TODO: Add Description**.The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|completedDateTime|DateTimeOffset| The date and time the operation was completed. |
+|createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
+|createdDateTime|DateTimeOffset| The date and time the operation was created. |
+|id|String| The ID for the operation. Read-only. |
+|percentProgress|Int32| The progress of the operation. |
+|resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+
+### caseAction values
+
+|Member|Description|
+|:----|-----------|
+| addToReviewSet | The operation represents adding data to a review set from an eDiscovery collection. |
+| applyTags | The operation represents bulk tagging documents in a review set for the specified review set query. |
+| contentExport | The operation represents a content export from a review set. |
+| convertToPdf | The operation represents converting documents to PDFs with redactions. |
+| estimateStatistics  | The operation represents searching against Microsoft 365 services such as Exchange, SharePoint, and OneDrive for business. |
+| holdUpdate | The operation represent updating legal hold (apply/remove) for custodians and non-custodial data sources.
+| index | The operation represents indexing data sources of custodians and non-custodial data sources to make them searchable. |
+| purgeData | The operation represents purging content from the source workloads. |
+
+### caseOperationStatus values
+
+|Member|Description|
+|:----|-----------|
+| notStarted | The operation has not yet started. |
+| submissionFailed | Submission of the operation failed. |
+| running | The operation is currently running. |
+| succeeded | The operation was successfully completed without any errors. |
+| partiallySucceeded | The operation completed, but there were errors - See [resultInfo](../resources/resultinfo.md) for error details. |
+| failed | The operation failed - See result info for error details. |
 
 ## Relationships
 None.

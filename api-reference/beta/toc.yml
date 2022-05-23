@@ -14546,20 +14546,6 @@ items:
              href: api/security-ediscoverycase-list-operations.md
            - name: Get case opreation by id
              href: api/security-caseoperation-get.md
-           - name: Index operation
-             href: resources/security-ediscoveryindexoperation.md
-           - name: Hold operation
-             href: resources/security-ediscoveryholdoperation.md
-           - name: Purge data operation
-             href: resources/security-ediscoverypurgedataoperation.md
-           - name: Estimate operation
-             href: resources/security-ediscoveryestimateoperation.md
-           - name: Add to review set operation
-             href: resources/security-ediscoveryaddtoreviewsetoperation.md
-           - name: Tag operation
-             href: resources/security-ediscoverytagoperation.md
-           - name: Export operation
-             href: resources/security-ediscoveryexportoperation.md
         - name: Custodian
           href: resources/security-ediscoverycustodian.md
           items:

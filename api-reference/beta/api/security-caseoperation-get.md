@@ -1,10 +1,10 @@
 ---
 title: "Get caseOperation"
 description: "Read the properties and relationships of a caseOperation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get caseOperation
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/operations/{caseOperationId}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/operations/850c2f64b1ee44a4a69729327aac2b04
 ```
 
 
@@ -76,21 +76,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.caseOperation",
-    "id": "b8ed6b47-81a5-2e9d-7285-0d9b0f019ace",
-    "createdDateTime": "String (timestamp)",
-    "completedDateTime": "String (timestamp)",
-    "action": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations/$entity",
+    "@odata.type": "#microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+    "createdDateTime": "2022-05-23T16:51:34.8281972Z",
+    "completedDateTime": "0001-01-01T00:00:00Z",
+    "percentProgress": 50,
+    "status": "running",
+    "action": "addToReviewSet",
+    "id": "850c2f64b1ee44a4a69729327aac2b04",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "percentProgress": "Integer",
-    "status": "String",
-    "resultInfo": {
-      "@odata.type": "microsoft.graph.resultInfo"
+        "application": null,
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        }
     }
-  }
 }
 ```
 
