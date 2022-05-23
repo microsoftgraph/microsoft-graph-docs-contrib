@@ -63,6 +63,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get all outcomes
 
+The following example shows how to retrieve all outcomes.
+
 #### Request
 
 The following is an example of the request.
@@ -232,6 +234,8 @@ Content-type: application/json
 ```
 
 ### Example 2: Get outcomes filtered by outcome type
+
+The following example shows how to retrieve outcomes filtered by outcome type.
 
 #### Request
 
