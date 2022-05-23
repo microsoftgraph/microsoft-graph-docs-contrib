@@ -14598,13 +14598,13 @@ items:
           - name: Create
             href: api/termStore-relation-post.md
       - name: Tenant settings
-          items: 
-            - name: Settings
-              href: resources/tenantadmin-settings.md
-            - name: Get settings
-              href: api/tenantadmin-settings-get.md
-            - name: Update settings
-              href: api/tenantadmin-settings-update.md
+        items: 
+          - name: Settings
+            href: resources/tenantadmin-settings.md
+          - name: Get settings
+            href: api/tenantadmin-settings-get.md
+          - name: Update settings
+            href: api/tenantadmin-settings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
