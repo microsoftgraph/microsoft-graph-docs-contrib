@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryCustodian: applyHold"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Start the process of applying hold to eDiscovery custodians."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # ediscoveryCustodian: applyHold
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Start the process of applying hold to eDiscovery custodians. After the operation is created, you can get the status of the case operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [eDiscoveryHoldOpertaion]](../resources/security-ediscoveryholdoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,8 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|**TODO: Add Description**|
-
+|ids|String collection|The IDs of custodians to apply hold.|
 
 
 ## Response
@@ -64,13 +63,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/applyHold
+https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/applyHold
 Content-Type: application/json
-Content-length: 35
-
 {
   "ids": [
-    "String"
+    "7f697316-43ed-48e1-977f-261be050db93", "b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8"
   ]
 }
 ```
@@ -85,6 +82,10 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
+
+{
+    "location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations('1ab699d7e53d46de944144c4a650d66f')",
+}
 ```
 

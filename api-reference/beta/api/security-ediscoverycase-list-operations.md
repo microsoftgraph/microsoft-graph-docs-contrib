@@ -1,10 +1,10 @@
 ---
 title: "List caseOperations"
 description: "Get a list of the caseOperation objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List caseOperations
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/operations
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/operations
 ```
 
 
@@ -76,23 +76,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.caseOperation",
-      "id": "b8ed6b47-81a5-2e9d-7285-0d9b0f019ace",
-      "createdDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "action": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "percentProgress": "Integer",
-      "status": "String",
-      "resultInfo": {
-        "@odata.type": "microsoft.graph.resultInfo"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations",
+    "value": [
+        {
+            "createdDateTime": "2022-05-23T01:09:36.834501Z",
+            "completedDateTime": "2022-05-23T01:10:08.8710734Z",
+            "percentProgress": 100,
+            "status": "succeeded",
+            "action": "holdUpdate",
+            "id": "1ab699d7e53d46de944144c4a650d66f",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7",
+                    "displayName": null,
+                    "userPrincipalName": null
+                }
+            }
+        }
+    ]
 }
 ```
-

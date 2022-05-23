@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoveryCase"
-description: "Deletes an ediscoveryCase object."
+description: "Deletes an ediscoveryCase."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
