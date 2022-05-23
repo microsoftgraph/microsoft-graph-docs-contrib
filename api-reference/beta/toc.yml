@@ -330,8 +330,18 @@ items:
           href: resources/cloudpc.md
         - name: List cloudPCs
           href: api/user-list-cloudpcs.md
+        - name: Get
+          href: api/user-get-cloudpc.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
+        - name: Reboot
+          href: api/user-reboot-cloudpc.md
+        - name: Rename
+          href: api/user-rename-cloudpc.md
+        - name: Reprovision
+          href: api/user-reprovsion-cloudpc.md
+        - name: Troubleshoot
+          href: api/user-troubleshoot-cloudpc.md
       - name: Contacts
         items:
         - name: Contact
@@ -9976,6 +9986,20 @@ items:
             href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Bulk set review status
             href: api/manageddevice-bulksetcloudpcreviewstatus.md
+          - name: List for user 
+            href: api/user-list-cloudpcs.md
+          - name: Get for user
+            href: api/user-get-cloudpc.md
+          - name: Get launch info for user
+            href: api/cloudpc-getcloudpclaunchinfo.md
+          - name: Reboot for user
+            href: api/user-reboot-cloudpc.md
+          - name: Rename for user
+            href: api/user-rename-cloudpc.md
+          - name: Reprovision for user
+            href: api/user-reprovsion-cloudpc.md
+          - name: Troubleshoot for user
+            href: api/user-troubleshoot-cloudpc.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:

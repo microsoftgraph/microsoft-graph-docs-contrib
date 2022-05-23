@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "41b177c3-11d9-4b00-b39a-91f593cdfd09",
+              "ApiChange": "Method",
+              "ChangedApiName": "GET",
+              "ChangeType": "Addition",
+              "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get-cloudpc?view=graph-rest-beta) operation to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+              "Target": "user"
+            }
+          ],
+          "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2022-05-23T06:08:08.071541Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
