@@ -46,9 +46,9 @@ You can specify the following properties when creating an **ediscoveryHoldPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the legal hold policy.|
-|description|String|The description of the legal hold policy.|
-|contentQuery|String|The content query of the legal hold policy.|
+|displayName|String|The display name of the legal hold policy. Required.|
+|description|String|The description of the legal hold policy. Optional.|
+|contentQuery|String|The content query of the legal hold policy. Optional.|
 
 ## Response
 

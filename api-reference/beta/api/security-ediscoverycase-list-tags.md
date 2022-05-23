@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryReviewTag
+# List ediscoveryReviewTag
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -37,7 +37,6 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 Do not supply a request body for this method.
