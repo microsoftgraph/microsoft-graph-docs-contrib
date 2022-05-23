@@ -7,7 +7,7 @@ author: MichaelMainer
 
 # Install a Microsoft Graph SDK
 
-Microsoft Graph SDKs are available for a number of languages to be included in your projects via GitHub and popular platform package managers. This article describes how you can install a Microsoft Graph SDK into your project.
+Microsoft Graph SDKs are available to be included in your projects via GitHub and popular platform package managers. This article describes how you can install a Microsoft Graph SDK into your project.
 
 SDKs are available in the following languages:
 
@@ -58,39 +58,37 @@ The Microsoft Graph Java SDK is included in the following packages:
 - [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): The core library for making calls to Microsoft Graph.
 - [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK.
 
-**Use Gradle to install the Microsoft Graph Java SDK**
+To install the Microsoft Graph Java SDK, do one of the following:
 
-Add the repository and a compile dependency for microsoft-graph to your project's build.gradle:
+- Use Gradle to install the Microsoft Graph Java SDK. Add the repository and a compile dependency for microsoft-graph to your project's build.gradle:
+    
+  ```Gradle
+    repository {
+        mavenCentral()
+    }
+    
+    dependency {
+        // Include the sdk as a dependency
+        implementation 'com.microsoft.graph:microsoft-graph:5.+'
+        // Include Azure identity for authentication
+        implementation 'com.azure:azure-identity:1.+'
+    }
+  ```
 
-```Gradle
-repository {
-    mavenCentral()
-}
-
-dependency {
-    // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:5.+'
-    // Include Azure identity for authentication
-    implementation 'com.azure:azure-identity:1.+'
-}
-```
-
-**Use Maven to install the Microsoft Graph Java SDK**
-
-Add the dependency in the `dependencies` element in pom.xml:
-
-```xml
-<dependency>
-    <groupId>com.microsoft.graph</groupId>
-    <artifactId>microsoft-graph</artifactId>
-    <version>[5.0,)</version>
-</dependency>
-<dependency>
-    <groupId>com.azure</groupId>
-    <artifactId>azure-identity</artifactId>
-    <version>[1.3,)</version>
-</dependency>
-```
+- Use Maven to install the Microsoft Graph Java SDK. Add the dependency in the `dependencies` element in pom.xml:
+    
+  ```xml
+    <dependency>
+        <groupId>com.microsoft.graph</groupId>
+        <artifactId>microsoft-graph</artifactId>
+        <version>[5.0,)</version>
+    </dependency>
+    <dependency>
+        <groupId>com.azure</groupId>
+        <artifactId>azure-identity</artifactId>
+        <version>[1.3,)</version>
+    </dependency>
+  ```
 
 ## Install the Microsoft Graph JavaScript SDK
 
@@ -108,23 +106,23 @@ npm install @microsoft/microsoft-graph-types --save-dev
 
 ## Install the Microsoft Graph PHP SDK
 
-The [Microsoft Graph PHP SDK](https://github.com/microsoftgraph/msgraph-sdk-php) is available from [packagist.org](https://packagist.org/packages/microsoft/microsoft-graph) and can be installed in the following ways.
+The [Microsoft Graph PHP SDK](https://github.com/microsoftgraph/msgraph-sdk-php) is available from [packagist.org](https://packagist.org/packages/microsoft/microsoft-graph) and can be installed in the following ways:
 
-**Use composer to install the Microsoft Graph PHP SDK manually**
+- Use composer to install the Microsoft Graph PHP SDK manually:
 
-```Shell
-composer require microsoft/microsoft-graph
-```
+    ```Shell
+    composer require microsoft/microsoft-graph
+    ```
 
-**Use composer.json to install the Microsoft Graph PHP SDK**
+- Use composer.json to install the Microsoft Graph PHP SDK:
 
-```json
-{
-    "require": {
-        "microsoft/microsoft-graph": "^1.8"
+    ```json
+    {
+        "require": {
+            "microsoft/microsoft-graph": "^1.8"
+        }
     }
-}
-```
+    ```
 
 ## Install the Microsoft Graph PowerShell SDK
 
