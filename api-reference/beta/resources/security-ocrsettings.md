@@ -1,9 +1,9 @@
 ---
 title: "ocrSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "OCR settings for an eDiscovery case"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The OCR (Optical Character Recognition) settings for the eDiscovery case.
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|**TODO: Add Description**|
-|maxImageSize|Int32|**TODO: Add Description**|
-|timeout|Duration|**TODO: Add Description**|
+|isEnabled|Boolean|Indicates whether or not OCR is enabled for the case.|
+|maxImageSize|Int32|Maximum image size that will be processed in KB).|
+|timeout|Duration|The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.|
 
 ## Relationships
 None.

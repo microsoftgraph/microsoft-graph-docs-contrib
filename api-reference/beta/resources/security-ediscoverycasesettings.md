@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryCaseSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Contains settings for an eDiscovery case."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,27 +13,24 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Contains settings for an eDiscovery case. For details, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryCaseSettings](../api/security-ediscoverycase-list-settings.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) collection|Get a list of the [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) objects and their properties.|
-|[Create ediscoveryCaseSettings](../api/security-ediscoverycase-post-settings.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Create a new [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
 |[Get ediscoveryCaseSettings](../api/security-ediscoverycasesettings-get.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Read the properties and relationships of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
 |[Update ediscoveryCaseSettings](../api/security-ediscoverycasesettings-update.md)|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Update the properties of an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
-|[Delete ediscoveryCaseSettings](../api/security-ediscoverycase-delete-settings.md)|None|Deletes an [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object.|
+|[resetToDefault](../api/security-ediscoverycasesettings-resettodefault.md)|None|Reset all settings to the default values.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|**TODO: Add Description**|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|**TODO: Add Description**|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|**TODO: Add Description**|
+|id|String|The ID of the eDiscovery case. Inherited from [entity](../resources/entity.md).|
+|ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 
 ## Relationships
 None.

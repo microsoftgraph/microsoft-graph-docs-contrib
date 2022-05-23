@@ -1,9 +1,9 @@
 ---
 title: "redundancyDetectionSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Redundancy settings for an eDiscovery case."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Redundancy (email threading and near duplicate detection) settings for an eDiscovery case.
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|**TODO: Add Description**|
-|maxWords|Int32|**TODO: Add Description**|
-|minWords|Int32|**TODO: Add Description**|
-|similarityThreshold|Int32|**TODO: Add Description**|
+|isEnabled|Boolean|Indicates whether email threading and near duplicate detection are enabled.|
+|maxWords|Int32|Specifies the maximum number of words used for email threading and near duplicate detection. To learn more, see [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
+|minWords|Int32|Specifies the minimum number of words used for email threading and near duplicate detection. To learn more, see [Minimum/maximum number of words](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
+|similarityThreshold|Int32|Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see [Document and email similarity threshold](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading).|
+
 
 ## Relationships
 None.

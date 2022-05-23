@@ -14533,6 +14533,9 @@ items:
             href: api/security-ediscoverycase-list-tags.md
           - name: Create tag
             href: api/security-ediscoverycase-post-tags.md
+        - name: Case settings
+          href: resources/security-ediscoverycasesettings.md
+          items:
           - name: Get settings
             href: api/security-ediscoverycasesettings-get.md
           - name: Update settings
