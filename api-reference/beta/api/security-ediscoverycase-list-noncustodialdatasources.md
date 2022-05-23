@@ -1,10 +1,10 @@
 ---
-title: "Create ediscoveryNoncustodialDataSource"
-description: "Create a new ediscoveryNoncustodialDataSource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "List ediscoveryNoncustodialDataSource"
+description: "Get a list of the ediscoveryNoncustodialDataSource object."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryNoncustodialDataSource
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new ediscoveryNoncustodialDataSource object.
+Get a list of the [non-custodial data sources](../resources/security-ediscoverynoncustodialdatasources.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -40,24 +40,11 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.
-
-You can specify the following properties when creating an **ediscoveryNoncustodialDataSource**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|status|dataSourceContainerStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `active`, `released`, `unknownFutureValue`. Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|releasedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-
-
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of  [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object in the response body.
 
 ## Examples
 
@@ -69,17 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
-Content-Type: application/json
-Content-length: 206
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "status": "String",
-  "holdStatus": "String",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String"
-}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources?$expand=dataSource
 ```
 
 
@@ -93,18 +70,104 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "id": "df3ab25e-912d-2d31-b22e-1600ab7244e5",
-  "status": "String",
-  "holdStatus": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/noncustodialDataSources(dataSource())",
+    "@odata.count": 3,
+    "value": [
+        {
+            "status": "active",
+            "holdStatus": "applied",
+            "createdDateTime": "2022-05-23T02:09:11.1395287Z",
+            "lastModifiedDateTime": "2022-05-23T02:09:11.1395287Z",
+            "releasedDateTime": "0001-01-01T00:00:00Z",
+            "id": "35393639323133394345384344303043",
+            "displayName": "U.S. Sales",
+            "dataSource@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/noncustodialDataSources('35393639323133394345384344303043')/dataSource/$entity",
+            "dataSource": {
+                "@odata.type": "#microsoft.graph.security.siteSource",
+                "@odata.id": "https://graph.microsoft.com/v1.0/sites/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+                "displayName": "U.S. Sales",
+                "createdDateTime": "2022-05-23T02:09:11.1395535Z",
+                "holdStatus": "0",
+                "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+                "createdBy": {
+                    "application": null,
+                    "user": {
+                        "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                        "displayName": null
+                    }
+                },
+                "site": {
+                    "webUrl": "https://m365x809305.sharepoint.com/sites/USSales",
+                    "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+                    "createdDateTime": "2022-05-23T02:09:11.1395535Z"
+                }
+            }
+        },
+        {
+            "status": "active",
+            "holdStatus": "applied",
+            "createdDateTime": "2022-05-23T02:09:11.1395287Z",
+            "lastModifiedDateTime": "2022-05-23T02:09:11.1395287Z",
+            "releasedDateTime": "0001-01-01T00:00:00Z",
+            "id": "31453237353743363432414242344641",
+            "displayName": "Sales and Marketing",
+            "dataSource@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/noncustodialDataSources('31453237353743363432414242344641')/dataSource/$entity",
+            "dataSource": {
+                "@odata.type": "#microsoft.graph.security.siteSource",
+                "@odata.id": "https://graph.microsoft.com/v1.0/sites/74f6c798-fc32-4dbe-9e5b-8e11459b9f44",
+                "displayName": "Sales and Marketing",
+                "createdDateTime": "2022-05-23T02:09:11.1397925Z",
+                "holdStatus": "0",
+                "id": "74f6c798-fc32-4dbe-9e5b-8e11459b9f44",
+                "createdBy": {
+                    "application": null,
+                    "user": {
+                        "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                        "displayName": null
+                    }
+                },
+                "site": {
+                    "webUrl": "https://m365x809305.sharepoint.com/sites/SalesAndMarketing",
+                    "id": "74f6c798-fc32-4dbe-9e5b-8e11459b9f44",
+                    "createdDateTime": "2022-05-23T02:09:11.1397925Z"
+                }
+            }
+        },
+        {
+            "status": "active",
+            "holdStatus": "applied",
+            "createdDateTime": "2022-05-23T02:09:11.1395287Z",
+            "lastModifiedDateTime": "2022-05-23T02:09:11.1395287Z",
+            "releasedDateTime": "0001-01-01T00:00:00Z",
+            "id": "46333131344239353834433430454335",
+            "displayName": "Retail",
+            "dataSource@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/noncustodialDataSources('46333131344239353834433430454335')/dataSource/$entity",
+            "dataSource": {
+                "@odata.type": "#microsoft.graph.security.siteSource",
+                "@odata.id": "https://graph.microsoft.com/v1.0/sites/dbe4b18e-2765-4989-8647-48139180c45f",
+                "displayName": "Retail",
+                "createdDateTime": "2022-05-23T02:09:11.1399861Z",
+                "holdStatus": "0",
+                "id": "dbe4b18e-2765-4989-8647-48139180c45f",
+                "createdBy": {
+                    "application": null,
+                    "user": {
+                        "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                        "displayName": null
+                    }
+                },
+                "site": {
+                    "webUrl": "https://m365x809305.sharepoint.com/sites/Retail",
+                    "id": "dbe4b18e-2765-4989-8647-48139180c45f",
+                    "createdDateTime": "2022-05-23T02:09:11.1399861Z"
+                }
+            }
+        }
+    ]
 }
 ```
 

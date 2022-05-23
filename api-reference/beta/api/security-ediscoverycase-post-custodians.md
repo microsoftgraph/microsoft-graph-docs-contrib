@@ -1,10 +1,10 @@
 ---
 title: "Create ediscoveryCustodian"
 description: "Create a new ediscoveryCustodian object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryCustodian
@@ -12,16 +12,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new ediscoveryCustodian object.
+Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.
+After the custodian object is created, you will need to create the custodian's [userSource](../resources/security-usersource.md) to reference their mailbox and OneDrive for Business site.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,16 +47,8 @@ You can specify the following properties when creating an **ediscoveryCustodian*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|dataSourceContainerStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `active`, `released`, `unknownFutureValue`. Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|releasedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|email|String|**TODO: Add Description** Optional.|
-|acknowledgedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
 
-
+|email|String|Custodian's primary SMTP address. Required.|
 
 ## Response
 
@@ -73,16 +66,9 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 Content-Type: application/json
-Content-length: 264
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCustodian",
-  "status": "String",
-  "holdStatus": "String",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "email": "String",
-  "acknowledgedDateTime": "String (timestamp)"
+    "email":"AdeleV@contoso.com",
 }
 ```
 
@@ -101,16 +87,15 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCustodian",
-  "id": "e8216168-0886-f28e-a083-deb319af59d5",
-  "status": "String",
-  "holdStatus": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)",
-  "email": "String",
-  "acknowledgedDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
+     "status": "active",
+     "holdStatus": "applied",
+     "createdDateTime": "2022-05-23T00:58:19.0702426Z",
+     "lastModifiedDateTime": "2022-05-23T00:58:19.0702436Z",
+     "releasedDateTime": null,
+     "id": "0053a61a3b6c42738f7606791716a22a",
+     "displayName": "Adele Vance",
+     "email": "AdeleV@contoso.com",
+     "acknowledgedDateTime": "0001-01-01T00:00:00Z"
 }
 ```
-

@@ -1,10 +1,10 @@
 ---
 title: "Create ediscoveryNoncustodialDataSource"
 description: "Create a new ediscoveryNoncustodialDataSource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryNoncustodialDataSource
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,12 +46,7 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|dataSourceContainerStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `active`, `released`, `unknownFutureValue`. Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|releasedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
+|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Either a userSource or siteSource. For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}.  For site source use "dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, e.g. `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field. Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
 
 
 
@@ -69,16 +64,16 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources
 Content-Type: application/json
-Content-length: 206
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "status": "String",
-  "holdStatus": "String",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String"
+    "dataSource": {
+        "@odata.type": "microsoft.graph.security.siteSource",
+        "site": {
+            "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
+        }
+    }
 }
 ```
 
@@ -97,14 +92,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "id": "df3ab25e-912d-2d31-b22e-1600ab7244e5",
-  "status": "String",
-  "holdStatus": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/noncustodialDataSources/$entity",
+    "status": "active",
+    "holdStatus": "notApplied",
+    "createdDateTime": "2022-05-23T03:15:08.5354451Z",
+    "lastModifiedDateTime": "2022-05-23T03:15:08.5354451Z",
+    "releasedDateTime": "0001-01-01T00:00:00Z",
+    "id": "43373338343345303943344434423032",
+    "displayName": "Design - top secret"
 }
 ```
-
