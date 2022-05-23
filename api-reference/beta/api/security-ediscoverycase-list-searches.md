@@ -1,10 +1,10 @@
 ---
 title: "List ediscoverySearch"
-description: "Get the ediscoverySearch resources from the search navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Get the list of searches from an eDiscovery case"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List ediscoverySearch
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscoverySearch resources from the search navigation property.
+Get the list of [ediscoverySearch](../resources/security-ediscoverysearch.md) resources from from a [eDiscoveryCase](../resources/security-ediscoverycase.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/lastEstimateStatisticsOperation/search
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/lastEstimateStatisticsOperation/search
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches
 ```
 
 
@@ -76,24 +76,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoverySearch",
-      "id": "e68a48e3-0b6d-4b07-093d-8cede8afb4c0",
-      "displayName": "String",
-      "description": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "contentQuery": "String",
-      "dataSourceScopes": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/searches",
+    "value": [
+        {
+            "dataSourceScopes": "none",
+            "description": "My first search",
+            "lastModifiedDateTime": "2022-05-23T04:38:07.5787454Z",
+            "contentQuery": "(Author=\"edison\")",
+            "id": "46867792-68e6-41db-9cd0-f651c2290d91",
+            "displayName": "My search 2",
+            "createdDateTime": "2022-05-23T04:38:07.5787454Z",
+            "lastModifiedBy": null,
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                },
+                "application": {
+                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                    "displayName": "Graph Explorer"
+                }
+            }
+        },
+        {
+            "dataSourceScopes": "none",
+            "description": "My first search",
+            "lastModifiedDateTime": "2022-05-23T04:35:36.5424818Z",
+            "contentQuery": "(Author=\"edison\")",
+            "id": "80b9d59a-12a6-4273-a3d4-ab78f9a04ea5",
+            "displayName": "My search 1",
+            "createdDateTime": "2022-05-23T04:35:36.5424818Z",
+            "lastModifiedBy": null,
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                },
+                "application": {
+                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                    "displayName": "Graph Explorer"
+                }
+            }
+        }
+    ]
 }
 ```
 
