@@ -20,23 +20,25 @@ In these exercises, you create a basic command-line application that has the fol
 
 ## Build your first app
 
+To build your first app, choose a tutorial for your language.
+
+If you prefer to download a completed project, you can do so from one of the following locations:
+
+- **The project's corresponding GitHub repository**. Instructions for registering an application and configuring the sample are located in each repository.
+- **A [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)**. A quick start automates registering an application for you and downloads the completed project already configured for user authentication. A quick start is available for all tutorials except Power Automate.
+
 | Tutorial | GitHub repository |
 |----------|-------------------|
-| [.NET](/graph/tutorials/dotnet) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet-core) |
-| [Go](/graph/tutorials/go) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
-| [Java](/graph/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
-| [JavaScript](/graph/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
-| [PHP](/graph/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
+| [.NET](/graph/tutorials/dotnet?tabs=aad) | [microsoftgraph/msgraph-training-dotnet-core](https://github.com/microsoftgraph/msgraph-training-dotnet-core) |
+| [Go](/graph/tutorials/go?tabs=aad) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
+| [Java](/graph/tutorials/java?tabs=aad) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
+| [JavaScript](/graph/tutorials/javascript?tabs=aad) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
+| [PHP](/graph/tutorials/php?tabs=aad) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
 | [Power Automate](/graph/tutorials/power-automate) | [microsoftgraph/msgraph-training-powerautomate](https://github.com/microsoftgraph/msgraph-training-powerautomate) |
-| [PowerShell](/graph/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
-| [Python](/graph/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
-| [TypeScript](/graph/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
+| [PowerShell](/graph/tutorials/powershell?tabs=aad%2Cwindows) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
+| [Python](/graph/tutorials/python?tabs=aad) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
+| [TypeScript](/graph/tutorials/typescript?tabs=aad) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
 
-> [!TIP]
-> If you prefer to download a completed project, you can do so from one of the following locations:
->
-> - **A [Microsoft Graph quick start](https://developer.microsoft.com/graph/quick-start)**. A quick start automates registering an application for you and downloads the completed project already configured for user authentication. A quick start is available for all tutorials except Power Automate.
-> - **A project's corresponding GitHub repository**. Instructions for registering an application and configuring the sample are located in each repository.
 
 ## Next steps
 
