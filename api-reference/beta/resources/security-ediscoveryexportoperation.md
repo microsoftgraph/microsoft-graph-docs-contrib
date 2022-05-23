@@ -20,8 +20,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryExportOperations](../api/security-ediscoveryexportoperation-list.md)|[microsoft.graph.security.ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) collection|Get a list of the [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) objects and their properties.|
-|[Get ediscoveryExportOperation](../api/security-ediscoveryexportoperation-get.md)|[microsoft.graph.security.ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md)|Read the properties and relationships of an [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) object.|
+|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|String| Returns the URL for the export.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

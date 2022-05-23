@@ -18,11 +18,8 @@ Represents the process of indexing data sources, including custodians and non-cu
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryIndexOperations](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get a list of the [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) objects and their properties.|
-|[Get ediscoveryIndexOperation](../api/security-ediscoveryindexoperation-get.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Read the properties and relationships of an [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) object.|
 
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

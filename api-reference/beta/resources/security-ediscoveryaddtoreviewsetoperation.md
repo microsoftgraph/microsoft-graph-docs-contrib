@@ -18,11 +18,7 @@ Represents an operation to add a [eDiscoverySearch](../resources/security-edisco
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryAddToReviewSetOperations](../api/security-ediscoverysearch-list-addtoreviewsetoperation.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) collection|Get a list of the [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) objects and their properties.|
-|[Get ediscoveryAddToReviewSetOperation](../api/security-ediscoveryaddtoreviewsetoperation-get.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Read the properties and relationships of an [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

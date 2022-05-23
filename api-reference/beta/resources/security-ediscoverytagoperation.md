@@ -17,10 +17,7 @@ Namespace: microsoft.graph.security
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryTagOperations](../api/security-ediscoverytagoperation-list.md)|[microsoft.graph.security.ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) collection|Get a list of the [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) objects and their properties.|
-|[Get ediscoveryTagOperation](../api/security-ediscoverytagoperation-get.md)|[microsoft.graph.security.ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)|Read the properties and relationships of an [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) object.|
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

@@ -18,11 +18,8 @@ Represents the process of applying hold to data sources, including custodians an
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryHoldOperations](../api/security-ediscoveryholdoperation-list.md)|[microsoft.graph.security.ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) collection|Get a list of the [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) objects and their properties.|
-|[Get ediscoveryHoldOperation](../api/security-ediscoveryholdoperation-get.md)|[microsoft.graph.security.ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)|Read the properties and relationships of an [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.|
 
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

@@ -18,11 +18,7 @@ Represents the process of purging data of an eDiscovery search.
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryPurgeDataOperations](../api/security-ediscoverypurgedataoperation-list.md)|[microsoft.graph.security.ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md) collection|Get a list of the [ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md) objects and their properties.|
-|[Get ediscoveryPurgeDataOperation](../api/security-ediscoverypurgedataoperation-get.md)|[microsoft.graph.security.ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md)|Read the properties and relationships of an [ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

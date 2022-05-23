@@ -18,11 +18,7 @@ Represents the process of estimating statistics (items count, size and number of
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List ediscoveryEstimateOperations](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) collection|Get a list of the [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.|
-|[Get ediscoveryEstimateOperation](../api/security-ediscoveryestimateoperation-get.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|Read the properties and relationships of an [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
