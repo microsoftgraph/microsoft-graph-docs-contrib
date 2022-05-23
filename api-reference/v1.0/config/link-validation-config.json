@@ -2,6 +2,7 @@
     "pathsToIgnore": [
         "/aspnet",
         "/azure",
+        "/compliance",
         "/cloud-app-security",
         "/defender-for-identity",
         "/dotnet",
