@@ -1,10 +1,10 @@
 ---
 title: "Create ediscoveryReviewTag"
 description: "Create a new ediscoveryReviewTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryReviewTag
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,13 +46,9 @@ You can specify the following properties when creating an **ediscoveryReviewTag*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|childSelectability|childSelectability|**TODO: Add Description**. The possible values are: `One`, `Many`, `unknownFutureValue`. Optional.|
-
-
+|displayName|String|Display name of the tag. Required.|
+|description|String|Description of the tag. Optional.|
+|childSelectability|childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 ## Response
 
@@ -68,18 +64,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
-Content-Type: application/json
-Content-length: 235
-
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "childSelectability": "String"
+    "displayName": "My tag API",
+    "description": "Use Graph API to create tags",
+    "childSelectability": "Many"
 }
 ```
 
@@ -98,15 +87,23 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "id": "0caa0358-8777-33e3-685e-922bf1ad44d7",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "childSelectability": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/tags/$entity",
+    "displayName": "My tag API",
+    "description": "Use Graph API to create tags",
+    "lastModifiedDateTime": "2022-05-23T19:58:26.1573076Z",
+    "childSelectability": "Many",
+    "id": "7c6cc351-fb90-431f-8562-1b607a3144a4",
+    "createdBy": {
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        },
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph Explorer"
+        }
+    }
 }
 ```
 

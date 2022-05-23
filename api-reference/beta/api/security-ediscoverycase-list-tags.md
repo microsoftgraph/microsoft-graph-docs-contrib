@@ -1,10 +1,10 @@
 ---
-title: "Create ediscoveryReviewTag"
-description: "Create a new ediscoveryReviewTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "List ediscoveryReviewTag"
+description: "Get the list of ediscoveryReviewTag objects from an eDiscovery case object."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryReviewTag
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
 
 ## Request headers
@@ -40,24 +40,10 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
-
-You can specify the following properties when creating an **ediscoveryReviewTag**.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|childSelectability|childSelectability|**TODO: Add Description**. The possible values are: `One`, `Many`, `unknownFutureValue`. Optional.|
-
-
-
+Do not supply a request body for this method.
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
-
+If successful, this method returns a `200 OK` response code.
 ## Examples
 
 ### Request
@@ -68,19 +54,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
-Content-Type: application/json
-Content-length: 235
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "childSelectability": "String"
-}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 ```
 
 
@@ -94,19 +68,80 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "id": "0caa0358-8777-33e3-685e-922bf1ad44d7",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "childSelectability": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/tags",
+    "@odata.count": 5,
+    "value": [
+        {
+            "displayName": "My tag",
+            "lastModifiedDateTime": "2022-05-23T19:41:01.7432683Z",
+            "childSelectability": "Many",
+            "id": "062de822f17a4a2e9b833aa3f6c37108",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "displayName": "Responsive",
+            "description": "",
+            "lastModifiedDateTime": "2022-05-23T19:41:24.4237284Z",
+            "childSelectability": "One",
+            "id": "d3d99dc704a74801b792b3e1e722aa0d",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "displayName": "Not responsive",
+            "lastModifiedDateTime": "2022-05-23T19:41:31.3381716Z",
+            "childSelectability": "One",
+            "id": "ced26633616a434abd83762d49a25a6c",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "displayName": "Processing",
+            "description": "Determine whether to outsource processing",
+            "lastModifiedDateTime": "2022-05-23T19:46:03.8746996Z",
+            "childSelectability": "Many",
+            "id": "d8580989505c4fb3a25b845013697cf7",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "displayName": "External",
+            "lastModifiedDateTime": "2022-05-23T19:46:10.5212362Z",
+            "childSelectability": "One",
+            "id": "d05c2ef9369d49c293b5a6a6d18a5fd9",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
-

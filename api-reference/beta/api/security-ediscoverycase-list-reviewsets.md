@@ -1,6 +1,6 @@
 ---
 title: "List ediscoveryReviewSet"
-description: "Get the ediscoveryReviewSet resources from a eDiscovery case object"
+description: "Get the ediscoveryReviewSet resources from an eDiscovery case object"
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
