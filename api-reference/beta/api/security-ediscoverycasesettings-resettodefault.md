@@ -1,19 +1,19 @@
 ---
-title: "caseSettings: resetToDefault"
-description: "Reset a caseSetting object to the default values."
-author: "mahage-msft"
+title: "Reset ediscoveryCaseSettings to default"
+description: "Reset a ediscoveryCaseSettingsobject to the default values."
+author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
-doc_type: apiPageType
+doc_type: "apiPageType"
 ---
 
 # caseSettings: resetToDefault
 
-Namespace: microsoft.graph.ediscovery
+Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
+Reset a [caseSettings](../resources/security-ediscoverycaseSettings.md) object to the default values.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings/resetToDefault
 ```
 
 ## Request headers
@@ -54,8 +54,6 @@ If successful, this action returns a `200 OK` response code.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "settings_resettodefault"
@@ -63,35 +61,8 @@ If successful, this action returns a `200 OK` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/settings/resettodefault
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/settings-resettodefault-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/settings-resettodefault-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/settings-resettodefault-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/settings-resettodefault-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/settings-resettodefault-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/settings-resettodefault-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -103,28 +74,6 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 -->
 
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/settings/$entity",
-    "id": "5b840b94-f821-4c4a-8cad-3a90062bf51a",
-    "redundancyDetection": {
-        "isEnabled": true,
-        "similarityThreshold": 65,
-        "minWords": 10,
-        "maxWords": 500000
-    },
-    "topicModeling": {
-        "isEnabled": true,
-        "ignoreNumbers": true,
-        "topicCount": 100,
-        "dynamicallyAdjustTopicCount": true
-    },
-    "ocr": {
-        "isEnabled": false,
-        "maxImageSize": 24576,
-        "timeout": "PT1M"
-    }
-}
 ```

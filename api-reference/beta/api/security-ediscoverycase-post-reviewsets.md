@@ -1,10 +1,10 @@
 ---
 title: "Create ediscoveryReviewSet"
 description: "Create a new ediscoveryReviewSet object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create ediscoveryReviewSet
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,10 +46,7 @@ You can specify the following properties when creating an **ediscoveryReviewSet*
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [dataSet](../resources/security-dataset.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSet](../resources/security-dataset.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSet](../resources/security-dataset.md). Optional.|
-
+|displayName|String|The name of the review set. Required.|
 
 
 ## Response
@@ -66,16 +63,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
 Content-Type: application/json
-Content-length: 172
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+    "displayName": "My review set 2"
 }
 ```
 
@@ -92,15 +84,19 @@ The following is an example of the response
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
-  "id": "6523d676-47c8-1ecc-b16d-5aca625f22b1",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/reviewSets/$entity",
+    "displayName": "My review set 2",
+    "id": "887306f5-1eb4-4409-b18c-ba47f4e3fa9b",
+    "createdDateTime": "2022-05-23T16:33:13.5126494Z",
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": null,
+            "userPrincipalName": "c25c3914-f9f7-43ee-9cba-a25377e0cec6"
+        }
+    }
 }
 ```
 

@@ -1,10 +1,10 @@
 ---
 title: "Update ediscoveryCaseSettings"
 description: "Update the properties of an ediscoveryCaseSettings object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Update ediscoveryCaseSettings
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -67,7 +67,6 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 Content-Type: application/json
-Content-length: 356
 
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
@@ -93,21 +92,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
-  "id": "7f89494b-0d04-8f9b-92fa-d358a348fb80",
-  "redundancyDetection": {
-    "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"
-  },
-  "topicModeling": {
-    "@odata.type": "microsoft.graph.security.topicModelingSettings"
-  },
-  "ocr": {
-    "@odata.type": "microsoft.graph.security.ocrSettings"
-  }
-}
+HTTP/1.1 204 No Content
 ```
-

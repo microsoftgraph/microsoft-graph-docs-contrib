@@ -1,10 +1,10 @@
 ---
 title: "Get ediscoveryCaseSettings"
 description: "Read the properties and relationships of an ediscoveryCaseSettings object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get ediscoveryCaseSettings
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/settings
 ```
 
 
@@ -76,19 +76,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
-    "id": "7f89494b-0d04-8f9b-92fa-d358a348fb80",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity",
+    "id": "b0073e4e-4184-41c6-9eb7-8c8cc3e2288b",
     "redundancyDetection": {
-      "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"
+        "isEnabled": true,
+        "similarityThreshold": 65,
+        "minWords": 10,
+        "maxWords": 500000
     },
     "topicModeling": {
-      "@odata.type": "microsoft.graph.security.topicModelingSettings"
+        "isEnabled": false,
+        "ignoreNumbers": true,
+        "topicCount": 100,
+        "dynamicallyAdjustTopicCount": true
     },
     "ocr": {
-      "@odata.type": "microsoft.graph.security.ocrSettings"
+        "isEnabled": false,
+        "maxImageSize": 24576,
+        "timeout": "PT1M"
     }
-  }
 }
 ```
 

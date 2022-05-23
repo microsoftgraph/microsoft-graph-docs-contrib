@@ -1,10 +1,10 @@
 ---
 title: "List ediscoveryReviewSet"
-description: "Get the ediscoveryReviewSet resources from the reviewSet navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Get the ediscoveryReviewSet resources from a eDiscovery case object"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List ediscoveryReviewSet
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the ediscoveryReviewSet resources from the reviewSet navigation property.
+Get the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) resources from the reviewSet navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /ediscoveryExportOperation/reviewSet
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
 ```
 
 
@@ -76,17 +76,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryReviewSet",
-      "id": "6523d676-47c8-1ecc-b16d-5aca625f22b1",
-      "displayName": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/reviewSets",
+    "value": [
+        {
+            "displayName": "My review set",
+            "id": "025852b3-5062-4169-9609-9861a6fe2fe5",
+            "createdDateTime": "2022-05-23T16:26:08.7203883Z",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
