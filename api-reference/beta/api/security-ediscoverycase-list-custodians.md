@@ -37,7 +37,6 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
