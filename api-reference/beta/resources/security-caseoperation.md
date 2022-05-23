@@ -29,10 +29,7 @@ An abstract entity that represents a long-running eDiscovery process. It contain
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List caseOperations](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get a list of the [caseOperation](../resources/security-caseoperation.md) objects and their properties.|
-|[Create caseOperation](../api/security-ediscoverycase-post-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Create a new [caseOperation](../resources/security-caseoperation.md) object.|
 |[Get caseOperation](../api/security-caseoperation-get.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.|
-|[Update caseOperation](../api/security-caseoperation-update.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Update the properties of a [caseOperation](../resources/security-caseoperation.md) object.|
-|[Delete caseOperation](../api/security-ediscoverycase-delete-operations.md)|None|Deletes a [caseOperation](../resources/security-caseoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -100,4 +97,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

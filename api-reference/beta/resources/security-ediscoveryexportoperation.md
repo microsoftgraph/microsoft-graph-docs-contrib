@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryExportOperation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Represents the process of an eDiscovery export."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the process of an eDiscovery export.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -23,40 +22,29 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:---|:---|:---|
 |[List ediscoveryExportOperations](../api/security-ediscoveryexportoperation-list.md)|[microsoft.graph.security.ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) collection|Get a list of the [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) objects and their properties.|
 |[Get ediscoveryExportOperation](../api/security-ediscoveryexportoperation-get.md)|[microsoft.graph.security.ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md)|Read the properties and relationships of an [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) object.|
-|[Update ediscoveryExportOperation](../api/security-ediscoveryexportoperation-update.md)|[microsoft.graph.security.ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md)|Update the properties of an [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) object.|
-|[Delete ediscoveryExportOperation](../api/security-ediscoveryexportoperation-delete.md)|None|Deletes an [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md) object.|
-|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|String|**TODO: Add Description**|
-|[List ediscoveryReviewSet](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get the ediscoveryReviewSet resources from the reviewSet navigation property.|
-|[Add ediscoveryReviewSet](../api/security-ediscoveryexportoperation-post-reviewset.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Add reviewSet by posting to the reviewSet collection.|
-|[Remove ediscoveryReviewSet](../api/security-ediscoveryexportoperation-delete-reviewset.md)|None|Remove an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[List ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the ediscoveryReviewSetQuery resources from the reviewSetQuery navigation property.|
-|[Add ediscoveryReviewSetQuery](../api/security-ediscoveryexportoperation-post-reviewsetquery.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Add reviewSetQuery by posting to the reviewSetQuery collection.|
-|[Remove ediscoveryReviewSetQuery](../api/security-ediscoveryexportoperation-delete-reviewsetquery.md)|None|Remove an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`.|
-|azureBlobContainer|String|**TODO: Add Description**|
-|azureBlobToken|String|**TODO: Add Description**|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|description|String|**TODO: Add Description**|
-|exportOptions|exportOptions|**TODO: Add Description**.The possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`, `unknownFutureValue`.|
-|exportStructure|exportFileStructure|**TODO: Add Description**.The possible values are: `none`, `directory`, `pst`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|outputFolderId|String|**TODO: Add Description**|
-|outputName|String|**TODO: Add Description**|
-|percentProgress|Int32|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|status|caseOperationStatus|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|azureBlobContainer|String| The name of the Azure storage location where the export will be stored. This only applies to exports stored in your own Azure storage location. |
+|azureBlobToken|String| The SAS token for the Azure storage location.  This only applies to exports stored in your own Azure storage location. |
+|completedDateTime|DateTimeOffset| The date and time the export was completed.|
+|createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation.|
+|createdDateTime|DateTimeOffset| The date and time the export was created.|
+|description|String| The description provided for the export.|
+|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|id|String| The ID for the operation. Read-only. |
+|outputName|String| The name provided for the export.|
+|percentProgress|Int32| The progress of the operation.|
+|resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|reviewSet|[ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|**TODO: Add Description**|
-|reviewSetQuery|[ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|**TODO: Add Description**|
+|reviewSet|[ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|	Review set from where documents are exported.|
+|reviewSetQuery|[ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query which is used to filter the documents for export.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

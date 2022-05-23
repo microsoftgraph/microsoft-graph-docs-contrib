@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryTagOperation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Represents the process of tagging files in eDiscovery review set"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -23,20 +21,17 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:---|:---|:---|
 |[List ediscoveryTagOperations](../api/security-ediscoverytagoperation-list.md)|[microsoft.graph.security.ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) collection|Get a list of the [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) objects and their properties.|
 |[Get ediscoveryTagOperation](../api/security-ediscoverytagoperation-get.md)|[microsoft.graph.security.ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)|Read the properties and relationships of an [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) object.|
-|[Update ediscoveryTagOperation](../api/security-ediscoverytagoperation-update.md)|[microsoft.graph.security.ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)|Update the properties of an [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) object.|
-|[Delete ediscoveryTagOperation](../api/security-ediscoverytagoperation-delete.md)|None|Deletes an [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md) object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|percentProgress|Int32|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|status|caseOperationStatus|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|completedDateTime|DateTimeOffset| The date and time the operation was completed. |
+|createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
+|createdDateTime|DateTimeOffset| The date and time the operation was created. |
+|id|String| The ID for the operation. Read-only. |
+|percentProgress|Int32| The progress of the operation. |
+|resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## Relationships
 None.

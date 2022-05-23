@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryAddToReviewSetOperation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Adds the results of a sourceCollection to a reviewSet"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an operation to add a [eDiscoverySearch](../resources/security-ediscoverysearch.md) to a [eDiscoveryReviewSet](../resources/security-ediscoveryreviewset.md).
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -22,34 +21,25 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List ediscoveryAddToReviewSetOperations](../api/security-ediscoverysearch-list-addtoreviewsetoperation.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) collection|Get a list of the [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) objects and their properties.|
-|[Create ediscoveryAddToReviewSetOperation](../api/security-ediscoverysearch-post-addtoreviewsetoperation.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Create a new [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
 |[Get ediscoveryAddToReviewSetOperation](../api/security-ediscoveryaddtoreviewsetoperation-get.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Read the properties and relationships of an [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
-|[Update ediscoveryAddToReviewSetOperation](../api/security-ediscoveryaddtoreviewsetoperation-update.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Update the properties of an [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
-|[Delete ediscoveryAddToReviewSetOperation](../api/security-ediscoverysearch-delete-addtoreviewsetoperation.md)|None|Deletes an [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
-|[List ediscoveryReviewSet](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get the ediscoveryReviewSet resources from the reviewSet navigation property.|
-|[Add ediscoveryReviewSet](../api/security-ediscoveryaddtoreviewsetoperation-post-reviewset.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Add reviewSet by posting to the reviewSet collection.|
-|[Remove ediscoveryReviewSet](../api/security-ediscoveryaddtoreviewsetoperation-delete-reviewset.md)|None|Remove an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[List ediscoverySearch](../api/security-ediscoverycase-list-searches.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) collection|Get the ediscoverySearch resources from the search navigation property.|
-|[Add ediscoverySearch](../api/security-ediscoveryaddtoreviewsetoperation-post-search.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Add search by posting to the search collection.|
-|[Remove ediscoverySearch](../api/security-ediscoveryaddtoreviewsetoperation-delete-search.md)|None|Remove an [ediscoverySearch](../resources/security-ediscoverysearch.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|percentProgress|Int32|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|status|caseOperationStatus|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|completedDateTime|DateTimeOffset| The date and time the operation was completed. |
+|createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
+|createdDateTime|DateTimeOffset| The date and time the operation was created. |
+|id|String| The ID for the operation. Read-only. |
+|percentProgress|Int32| The progress of the operation. |
+|resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|reviewSet|[ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|**TODO: Add Description**|
-|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|**TODO: Add Description**|
+|reviewSet|[ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|eDiscovery review set to which items matching source collection query gets added.|
+|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|eDiscovery search that gets added to review set.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

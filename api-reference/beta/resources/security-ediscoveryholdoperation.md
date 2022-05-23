@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryHoldOperation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Represents the process of applying hold to data sources, including custodians and non-custodial data sources."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the process of applying hold to data sources, including custodians and non-custodial data sources."
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 
@@ -23,20 +22,18 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |:---|:---|:---|
 |[List ediscoveryHoldOperations](../api/security-ediscoveryholdoperation-list.md)|[microsoft.graph.security.ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) collection|Get a list of the [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) objects and their properties.|
 |[Get ediscoveryHoldOperation](../api/security-ediscoveryholdoperation-get.md)|[microsoft.graph.security.ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)|Read the properties and relationships of an [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.|
-|[Update ediscoveryHoldOperation](../api/security-ediscoveryholdoperation-update.md)|[microsoft.graph.security.ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)|Update the properties of an [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.|
-|[Delete ediscoveryHoldOperation](../api/security-ediscoveryholdoperation-delete.md)|None|Deletes an [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|caseAction|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`. Note that you must use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`.|
-|completedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|percentProgress|Int32|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|resultInfo|[microsoft.graph.resultInfo](../resources/resultinfo.md)|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|status|caseOperationStatus|**TODO: Add Description** Inherited from [caseOperation](../resources/security-caseoperation.md).The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `addToReviewSet`,`applyTags`,`contentExport`,`convertToPdf`,`estimateStatistics`, `purgeData`|
+|completedDateTime|DateTimeOffset| The date and time the operation was completed. |
+|createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
+|createdDateTime|DateTimeOffset| The date and time the operation was created. |
+|id|String| The ID for the operation. Read-only. |
+|percentProgress|Int32| The progress of the operation. |
+|resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## Relationships
 None.
