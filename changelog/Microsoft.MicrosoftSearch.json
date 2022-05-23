@@ -509,7 +509,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size for query size",
+          "Description": "Add maximum page size for query.",
           "Target": "Query"
         }
       ],
@@ -527,7 +527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size for query size",
+          "Description": "Add maximum page size for query.",
           "Target": "Query"
         }
       ],
