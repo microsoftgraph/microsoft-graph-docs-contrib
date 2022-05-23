@@ -14660,6 +14660,9 @@ items:
             href: api/security-ediscoveryreviewset-get.md
           - name: Export
             href: api/security-ediscoveryreviewset-export.md
+            items:
+              - name: Get download url
+                href: api/ediscovery-caseexportoperation-getdownloadurl.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
           - name: Review set query
@@ -14677,6 +14680,9 @@ items:
               href: api/security-ediscoveryreviewset-delete-queries.md
             - name: Export
               href: api/security-ediscoveryreviewsetquery-export.md
+              items:
+              - name: Get download url
+                href: api/ediscovery-caseexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
             - name: Run
