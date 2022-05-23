@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020')
+await client.api('/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020')
 	.version('beta')
 	.delete();
 
