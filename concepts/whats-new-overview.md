@@ -17,7 +17,7 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 
 ### Education
 - [Track changes for assignment](/graph/api/educationassignment-delta) resources.
-- [Track changes for assignment categories](/graph/api/educationcategory-delta) resources.
+- [Track changes for assignment category](/graph/api/educationcategory-delta) resources.
 
 ### Identity and access | Directory management
 An [application](/graph/api/resources/application) registered in Azure Active Directory (Azure AD) can specify application or service contact information from a Service or Asset Management database.
@@ -33,7 +33,7 @@ Allow an Azure Active Directory (Azure AD) tenant to set up [federation with ano
 ### Tasks and plans
 - [Get](/graph/api/plannerplandetails-get) or [update](/graph/api/plannerplandetails-update) category descriptions as part of the [details](/graph/api/resources/plannerplandetails) of a [plan](/graph/api/resources/plannerplan).
 - Instead of the **owner** property of a **plan**, use the **type** property of a [plan container](/graph/api/resources/plannerplancontainer) to specify authorization rules and the lifetime of a **plan**.
-- Get the priority of a [task](graph/api/resources/plannerTask).
+- Get the priority of a [task](/graph/api/resources/plannerTask).
 
 ### Teamwork
 [Get messages on a channel](/graph/api/channel-list-messages) and [include any replies](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) to the message.
