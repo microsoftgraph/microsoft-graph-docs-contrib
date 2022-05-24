@@ -3,7 +3,7 @@ title: "teamTemplateDefinition"
 description: "Team Templates definition"
 author: "Charlieforce"
 ms.localizationpriority: medium
-ms.prod: "Teamwork"
+ms.prod: "teamwork"
 doc_type: resourcePageType
 ---
 
@@ -13,42 +13,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Generic representation of a [teamsTemplate)(../resources/teamsTemplate.md) definition for a team with a specific structure and configuration.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List teamTemplateDefinitions](../api/teamtemplate-list-definitions.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection|Get a list of the [teamTemplateDefinition](../resources/teamtemplatedefinition.md) objects and their properties.|
-|[Create teamTemplateDefinition](../api/teamtemplate-post-definitions.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Create a new [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
-|[Get teamTemplateDefinition](../api/teamtemplatedefinition-get.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Read the properties and relationships of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
-|[Update teamTemplateDefinition](../api/teamtemplatedefinition-update.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Update the properties of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
-|[Delete teamTemplateDefinition](../api/teamtemplate-delete-definitions.md)|None|Deletes a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
-|[List team](../api/user-list-joinedteams.md)|[team](../resources/team.md) collection|Get the team resources from the teamDefinition navigation property.|
-|[Create team](../api/teamtemplatedefinition-post-teamdefinition.md)|[team](../resources/team.md)|Create a new team object.|
+|[Get teamTemplateDefinition](../api/teamwork-templatedefinition-get.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Read the properties and relationships of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|teamTemplateAudience|**TODO: Add Description**.The possible values are: `organization`, `user`, `public`, `unknownFutureValue`.|
-|categories|String collection|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|iconUrl|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|languageTag|String|**TODO: Add Description**|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|parentTemplateId|String|**TODO: Add Description**|
-|publisherName|String|**TODO: Add Description**|
-|shortDescription|String|**TODO: Add Description**|
+|audience|teamTemplateAudience|Describes the audience the team template is available to.The possible values are: `organization`, `user`, `public`, `unknownFutureValue`.|
+|categories|String collection|The assigned categories for the team template.|
+|description|String|A brief description of the team template as it will appear to the users in Microsoft Teams.|
+|displayName|String|The user defined name of the team template.|
+|iconUrl|String|The icon url for the team template.|
+|id|String|Encoded64 of `templateId` + `tenant` + `locale` for the team template. Inherited from [entity](../resources/entity.md).|
+|languageTag|String|Language the template is available in.|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|The identity of the user who last modified the team template.|
+|lastModifiedDateTime|DateTimeOffset|The date time of when the team template was last modified.|
+|parentTemplateId|String|The `templateId` for the team template|
+|publisherName|String|The organization which published the team template.|
+|shortDescription|String|A short-description of the team template as it will appear to the users in Microsoft Teams.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|teamDefinition|[team](../resources/team.md)|**TODO: Add Description**|
+|teamDefinition|[team](../resources/team.md)|Collection of [channel](../resources/channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -81,4 +74,7 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+## See also
 
+- [team](team.md)
+- [teamsTemplate](teamsTemplate.md)
