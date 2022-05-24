@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 > [!CAUTION] 
-> Use **POST** for this operation. **PATCH** method for this API will be deprecated after the end of **June 2022**.
+> Use POST for this operation. The PATCH method for this API will be deprecated after June 2022.
 
 <!-- {
   "blockType": "ignored"
