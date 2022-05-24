@@ -27,7 +27,7 @@ const provider = new TeamsFxProvider(teamsfx, scope);
 Providers.globalProvider = provider;
 ```
 
-When in need of consent, get the access access token
+Use the `teamsfx.login(scopes)` method to get the required access token.
 
 ```ts
 // Automatically when loading the component or in a call-to-action
@@ -53,9 +53,7 @@ public render(): void {
 }
 ```
 
-## Sample
-
-For details about how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter) getting started guide.
+For a sample that shows you how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
 
 ## See also
-* [TeamsFx docs](https://aka.ms/teamsfx-docs)
+* [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
