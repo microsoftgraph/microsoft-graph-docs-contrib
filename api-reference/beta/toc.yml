@@ -14892,7 +14892,13 @@ items:
         - name: Hide chat
           href: api/chat-hideforuser.md
         - name: Unhide chat
-          href: api/chat-unhideforuser.md      
+          href: api/chat-unhideforuser.md
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
