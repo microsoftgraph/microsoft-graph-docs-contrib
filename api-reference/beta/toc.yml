@@ -14892,13 +14892,7 @@ items:
         - name: Hide chat
           href: api/chat-hideforuser.md
         - name: Unhide chat
-          href: api/chat-unhideforuser.md
-        - name: List pinned messages
-          href: api/chat-list-pinnedmessages.md
-        - name: Pin message
-          href: api/chat-post-pinnedmessages.md
-        - name: Unpin message
-          href: api/chat-delete-pinnedmessages.md
+          href: api/chat-unhideforuser.md      
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -14926,6 +14920,15 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Pinned chat message
+        href: resources/pinnedChatMessageInfo.md
+        items:
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Tags
         href: resources/teamworktag.md
         items:
@@ -15302,15 +15305,6 @@ items:
           href: api/group-list-permissiongrants.md
         - name: List for chat
           href: api/chat-list-permissiongrants.md
-      - name: Pinned chat message info
-        href: resources/pinnedChatMessageInfo.md
-        items:
-        - name: List pinned messages
-          href: api/chat-list-pinnedmessages.md
-        - name: Pin message
-          href: api/chat-post-pinnedmessages.md
-        - name: Unpin message
-          href: api/chat-delete-pinnedmessages.md
     - name: To-do tasks
       displayName: Microsoft To Do
       items:
