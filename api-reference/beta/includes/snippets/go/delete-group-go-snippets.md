@@ -7,8 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+mobilityManagementPolicyId := "mobilityManagementPolicy-id"
 groupId := "group-id"
-graphClient.GroupsById(&groupId).Delete()
+graphClient.Policies().MobileDeviceManagementPoliciesById(&mobilityManagementPolicyId).IncludedGroupsById(&groupId).$ref().Delete()
 
 
 ```
