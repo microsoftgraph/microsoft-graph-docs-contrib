@@ -14648,10 +14648,10 @@ items:
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
-                href: api/ediscovery-caseexportoperation-getdownloadurl.md
+                href: api/security-ediscoveryexportoperation-downloadurl.md
           - name: Add to review set
             href: api/security-ediscoveryreviewset-addtoreviewset.md
-          - name: Review set query
+          - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
             items:
             - name: List
@@ -14668,18 +14668,22 @@ items:
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download url
-                href: api/ediscovery-caseexportoperation-getdownloadurl.md
+                href: api/security-ediscoveryexportoperation-downloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
             - name: Run
               href: api/security-ediscoveryreviewsetquery-run.md
-          - name: Review set files
+          - name: File
             href: resources/security-ediscoveryfile.md
             items:
             - name: List
               href: api/security-ediscoveryreviewset-list-files.md
             - name: Get
               href: api/security-ediscoveryfile-get.md
+            - name: Get extracted text content
+              href: api/security-ediscoveryfile-extractedTextContent
+            - name: Download content
+              href: api/security-ediscoveryfile-content
         - name: Tag
           href: resources/security-ediscoveryreviewtag.md
           items:

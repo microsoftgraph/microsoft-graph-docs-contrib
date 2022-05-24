@@ -1,6 +1,6 @@
 ---
 title: "dataSource resource type"
-description: "**TODO: Add Description**"
+description: "The dataSource entity is an abstract base class used to identify sources of content for eDiscovery."
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
@@ -13,11 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
-
-
-Inherits from [entity](../resources/entity.md).
+The dataSource entity is an abstract base class used to identify sources of content for eDiscovery.
 
 ## Methods
 |Method|Return type|Description|
