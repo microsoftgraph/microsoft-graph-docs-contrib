@@ -26,9 +26,13 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 ![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
 
+## How to integrate with people API
+There are two end people APIs that are currently available, but the two APIs are different. The two APIs are;
+* [/search](/graph/api/resources/search-concept-person.md) (request for person)
+* /people
 ## Why integrate with people data?
 
-The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
+The people API returns data of a single entity, [person](/graph/api/resources/search-concepts-person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
 
 ### Browse people by relevance
 
