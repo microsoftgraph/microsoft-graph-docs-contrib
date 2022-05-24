@@ -84,7 +84,7 @@ While directory searches in the global addressing list in active directory. Plea
 ```
 
 ## Size 
-By default 25 results or less will be returned based on the search query matches. 
+By default 25 results or less will be returned based on the search query matches. Specify the size to increase the number of results returned
 ## From
 Specify the minimum index for paging, default is 0, the first results is the most relevant.
 
@@ -131,7 +131,7 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
 
   Example 3: All users, Distribution lists, or Modern Distribution List in the organization
 
-    ```
+    
     json
         "Filter": {
             "Or": [{
@@ -149,11 +149,10 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
             }]
         },
         
-    ```
+    
 
   Example 4: Return organization users and meeting rooms
 
-    ```
     json
         "Filter": {
             "Or": [{
@@ -166,11 +165,11 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
                 }
             }]
         },
-    ```
+    
 
   Example 5: Return organization users and Guests
 
-    ```
+    
     json
         "Filter": {
             "Or": [{
@@ -183,11 +182,11 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
                 }
             }]
         },
-    ```
+    
 
   Example 6: Lookup entities using ExternalDirectoryObjectId.
 
-    ```
+    
     json
         "Filter": {
             "Or": [{
@@ -200,7 +199,7 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
                 }
             }]
         },
-    ```
+    
   Example 7: Combining multiple filters.
 
    ```
