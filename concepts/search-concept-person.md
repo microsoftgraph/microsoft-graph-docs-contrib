@@ -31,12 +31,26 @@ The people api returns the following set of properties:
 |   userPrincipalName | String |
 
 ## Person types
-The People API supports several subtypes that users can ask for, see the table below.
-| **People Types** |	**Examples** |
-|:-----------------|:--------------| 
-| Person	| OrganizationUser, OrganizationContact, PersonalContact, ImplicitContact, ChatImplicitContact |
-| Group	| PublicDistributionList, UnifiedGroup, PersonalDistributionList |
-| Other |	Rooms, GuestUser | 
+The People API supports several people types and subtypes that users can ask for, see the table below.
+|                                             | RecipientTypeDetails  | Mailbox            | Directory          | PeopleType | PeopleSubtype            | Notes
+|---------------------------------------------|-----------------------|--------------------|--------------------|------------|--------------------------|----------------
+| Organization User                           | UserMailbox, MailUser | Y                  | Y                  | Person     | OrganizationUser         | A user that belongs to the organization
+| Organization User without email address     | User                  | Y (Off by default) | Y (Off by default) | Person     | OrganizationUser         | A user that belongs to the organization
+| Organization Contact                        | MailContact,Contact   | N                  | Y                  | Person     | OrganizationContact      | A contact explicitly added to the GAL by the tenant admin, but which is not part of the organization
+| Private contact                             | Contact               | Y                  | N/A                | Person     | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser
+| Private contact without email address       | Contact               | Y (Off by default) | N/A                | Person     | PersonalContact          | A contact explicitly created by the user that doesn't belong to the organization. If the user manually adds to its contacts someone part of the organization, it will still be classified as OrganizationUser
+| Implicit contact from communication history | Contact               | Y                  | N/A                | Person     | ImplicitContact          | A contact inferred from communication history (email and chat) that we don’t have enough information about to determine if it’s a person, group, etc. On business accounts, this will always be an outside org contact, as inside org contacts found in the communication history will always be classified as OrganizationUser. For consumer accounts, anything not a PersonalContact will be classified as ImplicitContact.
+| Implicit contact from chat history          | Contact               | Y                  | N/A                | Person     | ChatImplicitContact      | Same as ImplicitContact, but when the communication history is exclusively from chat
+| Room                                        | Rooms                 | Y                  | Y                  | Other      | Room                     |
+| Guest                                       | GuestUser             | Y                  | Y                  | Other      | Guest                    |
+| Hidden Guest                                | GuestUser             | Y (Off by default) | Y (Off by default) | Other      | Guest                    |
+| Modern Group                                | Group                 | Y                  | Y                  | Group      | UnifiedGroup             | Group known as: Exchange 365 Group, Modern Groups, Microsoft 365 Groups. [Learn about Microsoft 365 Groups](https://support.microsoft.com/en-us/office/learn-about-microsoft-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+| Teams Group                                 | Group                 | Y                  | Y                  | Group      | UnifiedGroup             | As above but represents internally a Teams "Team"
+| Hidden Teams Group                          | Group                 | Y (Off by default) | Y                  | Group      | UnifiedGroup             | Hidden Teams Group
+| Distribution List                           | Group                 | Y                  | Y                  | Group      | PublicDistributionList   | Classic Exchange Distribution List or mail enabled Security Group
+| PersonalDistributionList                    | Contact               | Y (Off by default) | N/A                | Group      | PersonalDistributionList | A virtual distribution group created by the user as a helper to send emails to multiple contacts in an easy way. Used only for OWA Compose as a UX feature, not returned for other callers
+| Hidden object of any type except Guest and Teams Group  |                       | N                  | N                  |            |                          |
+
 
 ## Request details
 The results of the people API can be specific by giving additional details when making the request. Below is a few ways to make the requests more specific. 
@@ -86,8 +100,6 @@ Note: the default returned fields are only a subset of all the properties.
 
 ## Filter
 Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes, ExternalDirectoryObjectID
-
-**Filter**: Filter down the results to specific type of suggestions. Possible filter values: *PeopleType*, *PeopleSubType* and *ExternalDirectoryObjectId*. Please see [Supported result types](xref:3s-api-reference-people#supported-result-types) for all supported filter values.
 
   Example 1: Filter to only person suggestions. Returns both private and organization contacts.
 
@@ -220,17 +232,6 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
         ]
       },
    ```   
-
-- **Context**: Used to recommend suggestions based on context. Comma separated list of emails for contacts already in the context.
-
-  Example
-
-    ```json
-       "Context": {
-         "RecipientsTo": "ancsehi@microsoft.com,john@microsoft.com,han@microsoft.com",
-         "RecipientsCc": "bing@microsoft.com"
-       },
-    ```
 
 ## Example: Search person by name
 
