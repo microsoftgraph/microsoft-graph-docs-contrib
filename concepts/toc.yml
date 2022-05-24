@@ -397,8 +397,8 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-          - name: Get information about relevant people
-            href: people-example.md
+          - name: People insights overview
+            href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card (preview)
