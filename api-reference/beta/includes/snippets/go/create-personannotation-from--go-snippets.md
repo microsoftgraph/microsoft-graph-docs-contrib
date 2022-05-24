@@ -16,10 +16,7 @@ content := "I am originally from Australia, but grew up in Moscow, Russia."
 detail.SetContent(&content)
 displayName := "About Me"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.NotesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Notes().Post(options)
+result, err := graphClient.Me().Profile().Notes().Post(requestBody)
 
 
 ```

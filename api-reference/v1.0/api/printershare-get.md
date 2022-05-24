@@ -57,9 +57,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
 By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
-## Response
+<!--## Response
 
-If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.-->
 
 ## Examples
 

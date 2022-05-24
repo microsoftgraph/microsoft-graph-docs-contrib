@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proxyAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `endsWith` function of the `$filter` OData query parameter by the **proxyAddresses** property of the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-13T04:35:15.9351072Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proxyAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `endsWith` function of the `$filter` OData query parameter by the **proxyAddresses** property of the [group](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-13T04:35:15.9351072Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b94c9471-549a-4d52-83fc-f639c1f6bd11",
           "ApiChange": "Property",
           "ChangedApiName": "isStateSessionEnabled",
@@ -17,6 +53,24 @@
       "CreatedDateTime": "2022-05-05T04:35:15.9351072Z",
       "WorkloadArea": "Application",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedCloudEndpoints",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedCloudEndpoints** property to the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-beta) resource. Use this property to enable B2B collaboration across Azure clouds. For example, between tenants in Azure Global and Azure Government clouds, and Azure Global and Azure China clouds. ",
+          "Target": "crossTenantAccessPolicy"
+        }
+      ],
+      "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-23T00:00:00.8027648Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -2730,10 +2784,10 @@
         {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
-          "ChangedApiName": "accessReviews",
+          "ChangedApiName": "accessReview",
           "ChangeType": "Addition",
-          "Description": "Added Policy.ReadWrite.AccessReviews permission.",
-          "Target": "accessReviews"
+          "Description": "Added Policy.ReadWrite.AccessReview permission.",
+          "Target": "accessReview"
         }
       ],
       "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",

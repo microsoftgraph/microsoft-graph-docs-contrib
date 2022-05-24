@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendar()
 name := "Marketing calendar"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 calendarGroupId := "calendarGroup-id"
-result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(options)
+result, err := graphClient.Me().CalendarGroupsById(&calendarGroupId).Calendars().Post(requestBody)
 
 
 ```

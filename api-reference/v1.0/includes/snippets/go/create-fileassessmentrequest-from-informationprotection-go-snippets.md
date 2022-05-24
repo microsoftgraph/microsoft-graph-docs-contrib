@@ -17,10 +17,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"fileName": "test.txt",
 	"contentData": "VGhpcyBpcyBhIHRlc3QgZmlsZQ==",
 }
-options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
 
 
 ```

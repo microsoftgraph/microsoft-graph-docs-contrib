@@ -35,11 +35,8 @@ requestBody.SetFederatedIdpMfaBehavior(&federatedIdpMfaBehavior)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.internalDomainFederation",
 }
-options := &msgraphsdk.FederationConfigurationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 domainId := "domain-id"
-result, err := graphClient.DomainsById(&domainId).FederationConfiguration().Post(options)
+result, err := graphClient.DomainsById(&domainId).FederationConfiguration().Post(requestBody)
 
 
 ```

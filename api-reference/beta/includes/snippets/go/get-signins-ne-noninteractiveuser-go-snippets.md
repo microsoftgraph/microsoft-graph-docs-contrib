@@ -12,10 +12,10 @@ requestParameters := &msgraphsdk.SignInsRequestBuilderGetQueryParameters{
 	OrderBy: "createdDateTime%20DESC",
 	Top: 10,
 }
-options := &msgraphsdk.SignInsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SignInsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.AuditLogs().SignIns().Get(options)
+result, err := graphClient.AuditLogs().SignIns().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UsersRequestBuilderGetQueryParameters{
 	Select: "displayName,userPrincipalName,signInActivity",
 }
-options := &msgraphsdk.UsersRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UsersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().Get(options)
+result, err := graphClient.Users().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
