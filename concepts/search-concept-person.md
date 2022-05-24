@@ -43,13 +43,15 @@ The results of the people API can be specific by giving additional details when 
 
 ## Source of results
 People results come from two sources, mailbox or directory. By default, the results will come from both sources which conflicts being removed, but directory sources are preferred when there are conflicts. 
-Mail box results consist of:
+
+Mailbox results consist of:
 * People who sent you email
 * People who you sent email to
 * People you had meeting with
 * People you had Teams chat with
 * People in your manager's org chart
 * Public contacts of the above people
+
 While directory searches in the global addressing list in active directory. Please note:
 * Not applicable for Consumer users. They do not have GAL. API will return bad request.
 * People who are not in the callers GAL will not be returned
@@ -68,13 +70,167 @@ While directory searches in the global addressing list in active directory. Plea
 ```
 
 ## Size 
-Maximum number of results to return
+By default 25 results or less will be returned based on the search query matches. 
 ## From
 Specify the minimum index for paging, default is 0, the first results is the most relevant.
-Fields: The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. Note: the default returned fields are only a subset of all the properties. 
+
+## Fields: 
+The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. 
+
+Note: the default returned fields are only a subset of all the properties. 
+
+### Example: Specifying fields to return
+```
+"Fields": ["Id", "DisplayName", "EmailAddresses", "UserPrincipalName", "ExternalDirectoryObjectId"]  
+```
 
 ## Filter
 Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes, ExternalDirectoryObjectID
+
+**Filter**: Filter down the results to specific type of suggestions. Possible filter values: *PeopleType*, *PeopleSubType* and *ExternalDirectoryObjectId*. Please see [Supported result types](xref:3s-api-reference-people#supported-result-types) for all supported filter values.
+
+  Example 1: Filter to only person suggestions. Returns both private and organization contacts.
+
+  ```json
+          "Filter": {
+              "And": [{
+                  "Term": {
+                      "PeopleType": "Person"
+                  }
+              }]
+          },
+  ```
+
+  Example 2: Filter to only person suggestions within the Organization (Business users only)
+
+  ```json
+         "Filter": {
+              "And": [{
+                  "Term": {
+                      "PeopleType": "Person"
+                  }
+              }, {
+                  "Term": {
+                      "PeopleSubtype": "OrganizationUser"
+                  }
+              }]
+          },
+  ```
+
+  Example 3: All users, Distribution lists, or Modern Distribution List in the organization
+
+    ```json
+        "Filter": {
+            "Or": [{
+                "Term": {
+                    "PeopleSubtype": "OrganizationUser"
+                }
+            }, {
+                "Term": {
+                    "PeopleSubtype": "PublicDistributionList"
+                }
+            }, {
+                "Term": {
+                    "PeopleSubtype": "UnifiedGroup"
+                }
+            }]
+        },
+    ```
+
+  Example 4: Return organization users and meeting rooms
+
+    ```json
+        "Filter": {
+            "Or": [{
+                "Term": {
+                    "PeopleSubtype": "OrganizationUser"
+                }
+            }, {
+                "Term": {
+                    "PeopleSubtype": "Rooms"
+                }
+            }]
+        },
+    ```
+
+  Example 5: Return organization users and Guests
+
+    ```json
+        "Filter": {
+            "Or": [{
+                "Term": {
+                    "PeopleSubtype": "OrganizationUser"
+                }
+            }, {
+                "Term": {
+                    "PeopleSubtype": "Guest"
+                }
+            }]
+        },
+    ```
+
+  Example 6: Lookup entities using ExternalDirectoryObjectId.
+
+    ```json
+        "Filter": {
+            "Or": [{
+                "Term": {
+                    "ExternalDirectoryObjectId": "86303959-03f4-498e-b7d0-0ca6de7d6b7c"
+                }
+            }, {
+                "Term": {
+                    "ExternalDirectoryObjectId": "0d573e15-0dde-4b7d-b44f-58ab72dc0ba9"
+                }
+            }]
+        },
+    ```
+  Example 7: Combining multiple filters.
+
+   ```json
+        "Filter": {
+        "And": [
+          {
+            "Or": [
+              {
+                "Term": {
+                  "PeopleType": "Person"
+                }
+              },
+              {
+                "Term": {
+                  "PeopleType": "Other"
+                }
+              }
+            ]
+          },
+          {
+            "Or": [
+              {
+                "Term": {
+                  "PeopleSubtype": "OrganizationUser"
+                }
+              },
+              {
+                "Term": {
+                  "PeopleSubtype": "Guest"
+                }
+              }
+            ]
+          }
+        ]
+      },
+   ```   
+
+- **Context**: Used to recommend suggestions based on context. Comma separated list of emails for contacts already in the context.
+
+  Example
+
+    ```json
+       "Context": {
+         "RecipientsTo": "ancsehi@microsoft.com,john@microsoft.com,han@microsoft.com",
+         "RecipientsCc": "bing@microsoft.com"
+       },
+    ```
 
 ## Example: Search person by name
 
