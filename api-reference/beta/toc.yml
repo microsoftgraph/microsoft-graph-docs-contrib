@@ -14403,20 +14403,6 @@ items:
           href: api/site-list-operations.md
         - name: Get site settings
           href: api/sitesettings-get.md
-        - name: Permissions
-          items:
-          - name: Permission
-            href: resources/permission.md
-          - name: List site permissions
-            href: api/site-list-permissions.md
-          - name: Create site permissions
-            href: api/site-post-permissions.md
-          - name: Get site permission
-            href: api/site-get-permission.md
-          - name: Update site permission
-            href: api/site-update-permission.md
-          - name: Delete site permission
-            href: api/site-delete-permission.md
       - name: Lists
         items:
         - name: List
@@ -14541,6 +14527,20 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
+      - name: Site permissions
+        items:
+        - name: Permission
+          href: resources/permission.md
+        - name: List site permissions
+          href: api/site-list-permissions.md
+        - name: Create site permissions
+          href: api/site-post-permissions.md
+        - name: Get site permission
+          href: api/site-get-permission.md
+        - name: Update site permission
+          href: api/site-update-permission.md
+        - name: Delete site permission
+          href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -14597,6 +14597,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items: 
+          - name: Settings
+            href: resources/tenantadmin-settings.md
+          - name: Get settings
+            href: api/tenantadmin-settings-get.md
+          - name: Update settings
+            href: api/tenantadmin-settings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
