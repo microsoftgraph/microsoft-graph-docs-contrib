@@ -131,7 +131,8 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
 
   Example 3: All users, Distribution lists, or Modern Distribution List in the organization
 
-    ```json
+    ```
+    json
         "Filter": {
             "Or": [{
                 "Term": {
@@ -147,11 +148,13 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
                 }
             }]
         },
+        
     ```
 
   Example 4: Return organization users and meeting rooms
 
-    ```json
+    ```
+    json
         "Filter": {
             "Or": [{
                 "Term": {
@@ -167,7 +170,8 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
 
   Example 5: Return organization users and Guests
 
-    ```json
+    ```
+    json
         "Filter": {
             "Or": [{
                 "Term": {
@@ -183,7 +187,8 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
 
   Example 6: Lookup entities using ExternalDirectoryObjectId.
 
-    ```json
+    ```
+    json
         "Filter": {
             "Or": [{
                 "Term": {
@@ -198,7 +203,8 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
     ```
   Example 7: Combining multiple filters.
 
-   ```json
+   ```
+   json
         "Filter": {
         "And": [
           {
