@@ -22,7 +22,7 @@ In addition to the following permissions, the user or app's tenant must have an 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All <br/><br/> *To modify other users' jobs, an administrator role and a permission that grants [Get printer](printer-get.md) access is also required.*  |
+|Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All <br/><br/> *To get other users' jobs, a printer admin role permissions are also required.* |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| A permission that grants [Get printer](printer-get.md) access **and one of:**<br/><br/>PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
