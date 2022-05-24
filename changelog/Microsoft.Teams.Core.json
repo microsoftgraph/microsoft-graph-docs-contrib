@@ -1,6 +1,7 @@
 {
   "changelog": [
-   "ChangeList": [
+    { 
+      "ChangeList": [
         {
           "Id": "6ae53b71-88ab-4827-8e71-ab0a7bd274ed",
           "ApiChange": "EnumType",
@@ -40,10 +41,8 @@
       "CreatedDateTime": "2022-05-03T02:18:43.7311444Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Microsoft.Teams.Shifts"
-    }
-  ]
-} 
- {
+    },
+  {
       "ChangeList": [
         {
           "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
