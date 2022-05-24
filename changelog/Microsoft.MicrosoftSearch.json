@@ -510,7 +510,7 @@
           "ChangedApiName": "Size",
           "ChangeType": "Change",
           "Description": "Add maximum page size for query.",
-          "Target": "Query"
+          "Target": "searchRequest"
         }
       ],
       "Id": "09b50a1f-9206-4fef-a7d8-efd6ec0dca1f",
@@ -528,7 +528,7 @@
           "ChangedApiName": "Size",
           "ChangeType": "Change",
           "Description": "Add maximum page size for query.",
-          "Target": "Query"
+          "Target": "searchRequest"
         }
       ],
       "Id": "fd371113-6fc5-4790-bd13-788fc7231400",
