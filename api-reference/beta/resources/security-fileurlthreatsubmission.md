@@ -19,9 +19,9 @@ Used for submitting file threat by file url. It is a reserved api and not suppor
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
 
 ## Properties
-| Property | Type   | Description                   | Key | Required |
-|:---------|:-------|:------------------------------|:----|:---------|
-| fileUrl  | String | The file url to be submitted. | ❌   | ✔        |
+| Property | Type   | Description                   |
+|:---------|:-------|:------------------------------|
+| fileUrl  | String | The file url to be submitted. |
 
 ## Relationships
 None.
