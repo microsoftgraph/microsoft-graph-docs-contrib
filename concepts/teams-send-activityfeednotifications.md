@@ -388,7 +388,7 @@ HTTP/1.1 204 No Content
 
 ### Example 7: Notify multiple users about pending finance approval requests
 
-This example shows how you can send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
+The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
 
 > **Note:** The ability to send notifications to multiple users in bulk is currently only available in beta.
 
