@@ -36,7 +36,7 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Personal contact](contact.md) | GA |
 | [User](user.md) | GA |
 | [To Do task](todotask.md) | GA |
-| [To Do task list](todotasklist) | GA |
+| [To Do task list](todotasklist.md) | GA |
 | [Task (deprecated)](basetask.md) | Beta |
 | [Task list (deprecated)](basetasklist.md) | Beta |
 
