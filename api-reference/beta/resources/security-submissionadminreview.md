@@ -16,11 +16,11 @@ Namespace: microsoft.graph.security
 Admin review information for user reported messages.
 
 ## Properties
-| Property       | Type                     | Description                                  | Required |
-|:---------------|:-------------------------|:---------------------------------------------|:---------|
-| reviewDateTime | DateTimeOffset           | The review date time.                        | ✔        |
-| reviewResult   | submissionResultCategory | The review result                            | ✔        |
-| reviewBy       | String                   | The reviewer email or other identity string. | ✔        |
+| Property       | Type                     | Description                                  |
+|:---------------|:-------------------------|:---------------------------------------------|
+| reviewDateTime | DateTimeOffset           | The review date time.                        |
+| reviewResult   | submissionResultCategory | The review result                            |
+| reviewBy       | String                   | The reviewer email or other identity string. |
 
 ## Relationships
 None.
