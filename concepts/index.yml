@@ -128,5 +128,7 @@ additionalContent:
               url: https://developer.microsoft.com/graph/support
             - text: Microsoft Graph Q&A community support
               url: /answers/products/graph
+            - text: Microsoft Graph feedback portal
+              url: https://feedbackportal.microsoft.com/feedback/forum/ebe2edae-97d1-ec11-a7b5-0022481f3c80
             - text: Known issues
               url: ./known-issues.md          

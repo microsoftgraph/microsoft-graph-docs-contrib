@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/groups/{id}",
 }
 administrativeUnitId := "administrativeUnit-id"
-directoryObjectId := "directoryObject-id"
-graphClient.AdministrativeUnitsById(&administrativeUnitId).MembersById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.AdministrativeUnitsById(&administrativeUnitId).Members().$ref().Post(requestBody)
 
 
 ```
