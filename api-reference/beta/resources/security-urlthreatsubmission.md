@@ -26,9 +26,9 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 |[Get urlThreatSubmission](../api/security-urlthreatsubmission-get.md)|[microsoft.graph.security.urlThreatSubmission](../resources/security-urlthreatsubmission.md)|Read the properties and relationships of an [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.|
 
 ## Properties
-| Property | Type   | Description                 | Key | Required |
-|:---------|:-------|:----------------------------|:----|:---------|
-| webUrl   | String | The webUrl to be submitted. | ❌   | ✔        |
+| Property | Type   | Description                 |
+|:---------|:-------|:----------------------------|
+| webUrl   | String | The webUrl to be submitted. |
 
 ## Relationships
 None.
