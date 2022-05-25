@@ -19,9 +19,9 @@ Used for submitting email to MDO by email url.
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
 
 ## Properties
-| Property   | Type   | Description                            | Key | Required |
-|:-----------|:-------|:---------------------------------------|:----|:---------|
-| messageUrl | String | The graph message url to be submitted. | ❌   | ✔        |
+| Property   | Type   | Description                            |
+|:-----------|:-------|:---------------------------------------|
+| messageUrl | String | The graph message url to be submitted. |
 
 ## Relationships
 None.
