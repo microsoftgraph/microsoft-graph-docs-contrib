@@ -19,9 +19,9 @@ Used for submitting file by fileContent.
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
 
 ## Properties
-| Property    | Type   | Description                  | Key | Required |
-|:------------|:-------|:-----------------------------|:----|:---------|
-| fileContent | String | Base64 encoded file content. | ❌   | ✔        |
+| Property    | Type   | Description                  |
+|:------------|:-------|:-----------------------------|
+| fileContent | String | Base64 encoded file content. |
 
 ## Relationships
 None.
