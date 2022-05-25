@@ -27,6 +27,7 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[channels](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channels](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
@@ -169,6 +170,7 @@ The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
+|[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Chat](../resources/chat.md)|`/chats`, `/chats/{id}`|

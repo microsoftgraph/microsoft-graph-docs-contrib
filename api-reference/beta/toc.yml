@@ -15451,6 +15451,17 @@ items:
             href: api/opentypeextension-get.md
         - name: Checklist item
           href: resources/checklistitem.md
+          items:
+          - name: List
+            href: api/basetask-list-checklistitems.md
+          - name: Create
+            href: api/basetask-post-checklistitems.md
+          - name: Get
+            href: api/checklistitem-get.md
+          - name: Update
+            href: api/checklistitem-update.md
+          - name: Delete
+            href: api/checklistitem-delete.md
         - name: Linked resource v2
           href: resources/linkedresource_v2.md
           items:

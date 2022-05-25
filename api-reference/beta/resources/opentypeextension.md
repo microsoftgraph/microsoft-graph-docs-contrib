@@ -35,8 +35,10 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [User](user.md) | GA |
-| [Task](basetask.md) | GA |
-| [Task list](basetasklist.md) | GA |
+| [To Do task](todotask.md) | GA |
+| [To Do task list](todotasklist) | GA |
+| [Task (deprecated)](basetask.md) | Beta |
+| [Task list (deprecated)](basetasklist.md) | Beta |
 
 >\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
