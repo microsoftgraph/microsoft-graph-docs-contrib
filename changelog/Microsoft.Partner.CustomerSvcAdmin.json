@@ -225,8 +225,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-17T11:15:46.2343525Z",
-      "WorkloadArea": "Microsoft.Partner.CustomerSvcAdmin",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
