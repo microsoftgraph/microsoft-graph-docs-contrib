@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send activity feed notifications to multiple users, in bulk. For more details about sending notifications and the requirements for doing so, see
+Send activity feed notifications to multiple users, in bulk. 
+
+For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 ## Permissions
@@ -61,7 +63,7 @@ The following table shows the parameters that can be used with this action.
 | teamsAppId         | String                                                       | Optional. Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Azure AD app ID are installed for the same recipient user. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There is an upper limit of 100 recipients in a single request. |
 
-The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
+The following resource is supported when setting the `source` value of the **topic** property to `entityUrl`:
 
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
 
@@ -73,7 +75,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Notify multiple users about pending finance approval requests
 
-This example shows how you can send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
+The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
 
 #### Request
 
@@ -119,9 +121,6 @@ Content-Type: application/json
     ] 
 }
 ```
-
----
-
 
 #### Response
 
