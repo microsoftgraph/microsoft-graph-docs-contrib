@@ -16,13 +16,13 @@ Namespace: microsoft.graph.security
 One entry for tenant allow block list item which could be url, attachment or senders.
 
 ## Properties
-| Property           | Type                          | Description                                             | Required |
-|:-------------------|:------------------------------|:--------------------------------------------------------|:---------|
-| identity           | String                        | The identity.                                           | ✔        |
-| value              | String                        | The tenant allow block list value.                      | ✔        |
-| entryType          | tenantAllowBlockListEntryType | The tenant allow block list entry type.                 | ✔        |
-| expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                | ❌        |
-| status             | longRunningOperationStatus    | The tenant allow block operation result for this entry. | ✔        |
+| Property           | Type                          | Description                                             |
+|:-------------------|:------------------------------|:--------------------------------------------------------|
+| identity           | String                        | The identity.                                           |
+| value              | String                        | The tenant allow block list value.                      |
+| entryType          | tenantAllowBlockListEntryType | The tenant allow block list entry type.                 |
+| expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                |
+| status             | longRunningOperationStatus    | The tenant allow block operation result for this entry. |
 
 ## Relationships
 None.
