@@ -16,10 +16,10 @@ Namespace: microsoft.graph.security
 **TODO: Add Description**
 
 ## Properties
-| Property | Type   | Description    | Required |
-|:---------|:-------|:---------------|:---------|
-| fileName | String | The file name. | ✔        |
-| fileHash | String | The file hash. | ✔        |
+| Property | Type   | Description    |
+|:---------|:-------|:---------------|
+| fileName | String | The file name. |
+| fileHash | String | The file hash. |
 
 ## Relationships
 None.
