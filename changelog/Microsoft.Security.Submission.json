@@ -20,14 +20,6 @@
         },
         {
           "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
-          "ApiChange": "EntityContainer",
-          "ChangedApiName": "GraphService",
-          "ChangeType": "Addition",
-          "Description": "Added the [GraphService](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "GraphService"
-        },
-        {
-          "Id": "8b2f263c-ce65-405d-838f-64ee6fe0114a",
           "ApiChange": "EntitySet",
           "ChangedApiName": "emailThreats",
           "ChangeType": "Addition",
