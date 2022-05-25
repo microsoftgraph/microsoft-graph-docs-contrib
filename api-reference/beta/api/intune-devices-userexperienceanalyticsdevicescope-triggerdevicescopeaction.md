@@ -83,7 +83,7 @@ Content-Length: 236
 {
   "value": {
     "@odata.type": "microsoft.graph.deviceScopeActionResult",
-    "deviceScopeAction": "",
+    "deviceScopeAction": "String",
     "deviceScopeId": "Device Scope Id value",
     "status": "succeeded",
     "failedMessage": "Failed Message value"
