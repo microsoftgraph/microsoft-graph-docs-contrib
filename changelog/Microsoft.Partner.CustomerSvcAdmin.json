@@ -209,7 +209,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "complete",
           "ChangeType": "Deletion",
-          "Description": "Removed the **complete** member from the **delegatedAdminRelationshipRequestStatus** enumeration.",
+          "Description": "Removed the `complete` member from the **delegatedAdminRelationshipRequestStatus** enumeration.",
           "Target": "delegatedAdminRelationshipRequestStatus"
         },
         {
