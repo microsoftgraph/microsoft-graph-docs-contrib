@@ -16,12 +16,12 @@ Namespace: microsoft.graph.security
 If one email is attack simulation email, the email threat submission will contain attack simulation information.
 
 ## Properties
-| Property              | Type           | Description                          | Required |
-|:----------------------|:---------------|:-------------------------------------|:---------|
-| attackSimId           | Guid           | The attack simulation activity id.   | ✔        |
-| attackSimDateTime     | DateTimeOffset | The attack simulation date time.     | ✔        |
-| attackSimDurationTime | Duration       | The attack simulation duration time. | ✔        |
-| attackSimUserId       | String         | The attack simulation user id.       | ✔        |
+| Property              | Type           | Description                          |
+|:----------------------|:---------------|:-------------------------------------|
+| attackSimId           | Guid           | The attack simulation activity id.   |
+| attackSimDateTime     | DateTimeOffset | The attack simulation date time.     |
+| attackSimDurationTime | Duration       | The attack simulation duration time. |
+| attackSimUserId       | String         | The attack simulation user id.       |
 
 ## Relationships
 None.
