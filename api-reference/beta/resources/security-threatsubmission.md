@@ -13,26 +13,25 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
+This is an abstract type for threat submission.
 
 
 Inherits from [entity](../resources/entity.md).
 
 ## Properties
-| Property        | Type                       | Description                                                                      | Key | Required |
-|:----------------|:---------------------------|:---------------------------------------------------------------------------------|:----|:---------|
-| id              | String                     | Threat submission id. When creation on post, it is not necessary.                | ✔   | ✔        |
-| createdDateTime | DateTimeOffset             | When the threat submission was created.                                          | ❌   | ❌        |
-| contentType     | submissionContentType      | email, url, file or app.                                                         | ❌   | ❌        |
-| category        | submissionCategory         | not junk, spam, phishing or malware.                                             | ❌   | ✔        |
-| status          | longRunningOperationStatus | If the threat submission check is finished.                                      | ❌   | ❌        |
-| source          | submissionSource           | The threat submission source. Administrator or user.                             | ❌   | ❌        |
-| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.                                          | ❌   | ❌        |
-| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.                                              | ❌   | ❌        |
-| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review                                                     | ❌   | ❌        |
-| tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. | ❌   | ❌        |
-| clientSource    | submissionClientSource     | microsoft or other client.                                                       | ❌   | ❌        |
+| Property        | Type                       | Description                                                                      |
+|:----------------|:---------------------------|:---------------------------------------------------------------------------------|
+| id              | String                     | Threat submission id. When creation on post, it is not necessary.                |
+| createdDateTime | DateTimeOffset             | When the threat submission was created.                                          |
+| contentType     | submissionContentType      | email, url, file or app.                                                         |
+| category        | submissionCategory         | not junk, spam, phishing or malware.                                             |
+| status          | longRunningOperationStatus | If the threat submission check is finished.                                      |
+| source          | submissionSource           | The threat submission source. Administrator or user.                             |
+| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.                                          |
+| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.                                              |
+| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review                                                     |
+| tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. |
+| clientSource    | submissionClientSource     | microsoft or other client.                                                       |
 
 ## Relationships
 None.
