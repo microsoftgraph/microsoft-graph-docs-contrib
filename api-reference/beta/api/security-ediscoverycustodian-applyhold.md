@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/applyHold
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{eDiscoveryCustodianId}/applyHold
 ```
 
 ## Request headers
@@ -46,16 +47,17 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ids|String collection|The IDs of custodians to apply hold.|
+|ids|String collection|The IDs of custodians to apply hold. Optional.|
 
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
-### Request
+### Example 1. Apply hold to multiple custodians.
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -63,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/applyHold
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/applyHold
 Content-Type: application/json
 {
   "ids": [
@@ -73,7 +75,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -89,3 +91,31 @@ HTTP/1.1 202 Accepted
 }
 ```
 
+### Example 2. Apply hold to a single custodian.
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "ediscoverycustodianthis.applyhold"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/c25c3914f9f743ee9cbaa25377e0cec6/applyHold
+```
+
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+
+{
+    "location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations('1ab699d7e53d46de944144c4a650d66f')",
+}
+```
