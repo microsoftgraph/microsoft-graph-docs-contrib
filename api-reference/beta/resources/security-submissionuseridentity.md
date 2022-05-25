@@ -19,11 +19,11 @@ Threat submission user identity.
 Inherits from graph.identity.
 
 ## Properties
-| Property    | Type   | Description                                                                                                    | Required |
-|:------------|:-------|:---------------------------------------------------------------------------------------------------------------|:---------|
-| id    | String | The field inherits from graph.identity.  | ✔        |
-| displayName | String | The field inherits from graph.identity.                                                                 | ✔        |
-| email       | String | The email of submission user for delegated token case.                                                         | ❌        |
+| Property    | Type   | Description                                                                                                    |
+|:------------|:-------|:---------------------------------------------------------------------------------------------------------------|
+| id    | String | The field inherits from graph.identity.  |
+| displayName | String | The field inherits from graph.identity.                                                                 |
+| email       | String | The email of submission user for delegated token case.                                                         | 
 
 ## Relationships
 None.
