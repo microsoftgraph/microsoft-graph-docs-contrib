@@ -23,6 +23,7 @@ The Toolkit includes the following providers.
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./teams.md)|Uses msal.js to sign in users and acquire tokens on the client in Microsoft Teams tabs.|
 |[Teams MSAL2](./teams-msal2.md)|Uses msal-browser to sign in users and acquire tokens in Microsoft Teams tabs. Supports Single Sign-On with custom backend. |
+|[TeamsFx](./teamsfx.md)|Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
 |[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.|
 
