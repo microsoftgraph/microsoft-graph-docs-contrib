@@ -31,14 +31,14 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 
 | Property                     | Type                         | Description                                                                                            |
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
-| recipientEmailAddress        | String                       | The email recipient smtp address string.                                                               |
+| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, the field will not be null.|
 | internetMessageId            | String                       | The internet message id of the submitted email.                                                        |
-| subject                      | String                       | The subject of the submitted email.                                                                    |
+| originalCategory             | submissionCategory           | notJunk, spam, phishing, malware.                                                                      |
+| receivedDateTime             | DateTimeOffset               | The received date time of the submitted email.                                                         | 
+| recipientEmailAddress        | String                       | The email recipient smtp address string.                                                               |
 | sender                       | String                       | The sender of the submitted email.                                                                     | 
 | senderIP                     | String                       | The sender IP of the submitted email.                                                                  |
-| receivedDateTime             | DateTimeOffset               | The received date time of the submitted email.                                                         |
-| originalCategory             | submissionCategory           | notJunk, spam, phishing, malware.                                                                      |
-| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md)         | If the email is phishing simulation, the field will not be null.                                       |
+| subject                      | String                       | The subject of the submitted email.                                                                    |
 | tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | Used to auto add urls/attachments/senders of the email threat submission into tenant allow block list. |
 ## Relationships
 None.
