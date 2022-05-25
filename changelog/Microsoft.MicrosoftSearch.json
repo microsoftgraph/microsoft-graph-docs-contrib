@@ -509,7 +509,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size for query.",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta).",
           "Target": "searchRequest"
         }
       ],
@@ -527,7 +527,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "Size",
           "ChangeType": "Change",
-          "Description": "Add maximum page size for query.",
+          "Description": "Add maximum page size of 1000 results for a [search query](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-1.0).",
           "Target": "searchRequest"
         }
       ],
