@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("token", "latest")
 };
 
-var delta = await graphClient.Me.Drive.Root
+var delta = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items
 	.Delta()
 	.Request( queryOptions )
 	.GetAsync();
