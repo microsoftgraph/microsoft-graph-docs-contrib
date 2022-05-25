@@ -1,9 +1,9 @@
 ---
 title: "unifiedGroupSource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "The container for a custodian's group."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+The container for a custodian's group.
 
 Inherits from [dataSource](../resources/security-datasource.md).
 
@@ -24,26 +23,22 @@ Inherits from [dataSource](../resources/security-datasource.md).
 |[List unifiedGroupSources](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects and their properties.|
 |[Create unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
 |[Get unifiedGroupSource](../api/security-unifiedgroupsource-get.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Read the properties and relationships of an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
-|[Update unifiedGroupSource](../api/security-unifiedgroupsource-update.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Update the properties of an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
 |[Delete unifiedGroupSource](../api/security-ediscoverycustodian-delete-unifiedgroupsources.md)|None|Deletes an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
-|[List group](../api/ediscovery-unifiedgroupsource-list-group.md)|[microsoft.graph.group](../resources/group.md) collection|Get the group resources from the group navigation property.|
-|[Add group](../api/security-unifiedgroupsource-post-group.md)|[microsoft.graph.group](../resources/group.md)|Add group by posting to the group collection.|
-|[Remove group](../api/security-unifiedgroupsource-delete-group.md)|None|Remove a [group](../resources/group.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|includedSources|sourceType|**TODO: Add Description**.The possible values are: `mailbox`, `site`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the **unifiedGroupSource**.|
+|createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
+|displayName|String|The display name of the unified group - This is the name of the group.|
+|id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
+|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|holdStatus|dataSourceHoldStatus|The hold status of the **unifiedGroupSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[group](../resources/group.md)|**TODO: Add Description**|
+|group|[group](../resources/group.md)|Represent a group.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

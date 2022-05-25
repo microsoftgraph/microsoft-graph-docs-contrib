@@ -1,9 +1,9 @@
 ---
 title: "siteSource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: ""The container for a site associated with a custodian."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -12,11 +12,10 @@ doc_type: resourcePageType
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+The container for a site associated with a custodian.
 
-**TODO: Add Description**
+IInherits from [dataSource](../resources/security-datasource.md).
 
-
-Inherits from [dataSource](../resources/ediscovery-datasource.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,25 +23,21 @@ Inherits from [dataSource](../resources/ediscovery-datasource.md).
 |[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects and their properties.|
 |[Create siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
 |[Get siteSource](../api/security-sitesource-get.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Read the properties and relationships of a [siteSource](../resources/security-sitesource.md) object.|
-|[Update siteSource](../api/security-sitesource-update.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Update the properties of a [siteSource](../resources/security-sitesource.md) object.|
 |[Delete siteSource](../api/security-ediscoverycustodian-delete-sitesources.md)|None|Deletes a [siteSource](../resources/security-sitesource.md) object.|
-|[List site](../api/ediscovery-sitesource-list-site.md)|[microsoft.graph.site](../resources/site.md) collection|Get the site resources from the site navigation property.|
-|[Add site](../api/security-sitesource-post-site.md)|[microsoft.graph.site](../resources/site.md)|Add site by posting to the site collection.|
-|[Remove site](../api/security-sitesource-delete-site.md)|None|Remove a [site](../resources/site.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md).|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md).|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md).The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the **siteSource**.|
+|createdDateTime|DateTimeOffset|The date and time the **siteSource** was created.|
+|displayName|String|The display name of the **siteSource**. This will be the name of the SharePoint site.|
+|id|String| The ID of the **siteSource**. The site source can be retrieved at any time with [Get site](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
+|holdStatus|dataSourceHoldStatus|The hold status of the **siteSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|site|[site](../resources/site.md)|**TODO: Add Description**|
+|site|[site](../resources/site.md)|The SharePoint site associated with the **siteSource**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

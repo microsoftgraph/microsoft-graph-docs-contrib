@@ -1,9 +1,9 @@
 ---
 title: "userSource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "The container for a user's mailbox and OneDrive for Business site."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+The container for a user's mailbox and OneDrive for Business site.
 
 Inherits from [dataSource](../resources/security-datasource.md).
 
@@ -24,20 +23,38 @@ Inherits from [dataSource](../resources/security-datasource.md).
 |[List userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects and their properties.|
 |[Create userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
 |[Get userSource](../api/security-usersource-get.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Read the properties and relationships of a [userSource](../resources/security-usersource.md) object.|
-|[Update userSource](../api/security-usersource-update.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Update the properties of a [userSource](../resources/security-usersource.md) object.|
 |[Delete userSource](../api/security-ediscoverycustodian-delete-usersources.md)|None|Deletes a [userSource](../resources/security-usersource.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).|
-|email|String|**TODO: Add Description**|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md).The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|includedSources|sourceType|**TODO: Add Description**.The possible values are: `mailbox`, `site`, `unknownFutureValue`.|
-|siteWebUrl|String|**TODO: Add Description**|
+
+|createdBy|[identitySet](../resources/identityset.md)|The user who created the **userSource**.|
+|createdDateTime|DateTimeOffset|The date and time the **userSource** was created|
+|displayName|String|The display name associated with the mailbox and site.|
+|email|String|Email address of the user's mailbox.|
+|id|String|The ID of the **userSource**. This is not the ID of the actual group|
+|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|siteWebUrl|String|The URL of the user's OneDrive for Business site. Read-only.|
+|holdStatus|dataSourceHoldStatus|The hold status of the **userSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+### sourceType values
+
+Types of source related to the user. Includes mailbox and site by default.
+
+|Member|Description|
+|:----|-----------|
+|mailbox|Represents a mailbox.|
+|site|Represents a OneDrive for Business site.|
+
+### userSourceHoldStatus values
+
+|Name|Description|
+|:----|-----------|
+|notApplied|The userSource is not on Hold (all sources in it are not on hold).|
+|applied|The userSource is on Hold (all sources are on hold).|
+|applying|The userSource is in applying hold state (applyHold operation triggered).|
+|removing|The userSource is in removing the hold state(removeHold operation triggered).|
+|partial|The userSource is in mixed state where some sources are on hold and some not on hold or error state.|
 
 ## Relationships
 None.
@@ -67,4 +84,3 @@ The following is a JSON representation of the resource.
   "siteWebUrl": "String"
 }
 ```
-

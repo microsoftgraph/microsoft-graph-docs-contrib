@@ -49,7 +49,6 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
 |holdStatus|dataSourceHoldStatus|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
-
 ### custodianStatus values
 
 |Name|Description|
@@ -61,11 +60,11 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 
 |Name|Description|
 |:----|-----------|
-|notApplied|Custodian is not on Hold (all sources in it are not on hold)|
-|applied|Custodian is on Hold (all sources are on hold)|
-|applying|Custodian is in applying hold state (applyHold operation triggered)|
-|removing|Custodian is in removing the hold state(removeHold operation triggered)|
-|partial|Custodian is in mixed state where some sources are on hold and some not on hold or error state|
+|notApplied|The custodian is not on Hold (all sources in it are not on hold).|
+|applied|The custodian is on Hold (all sources are on hold).|
+|applying|The custodian is in applying hold state (applyHold operation triggered).|
+|removing|The custodian is in removing the hold state(removeHold operation triggered).|
+|partial|The custodian is in mixed state where some sources are on hold and some not on hold or error state.|
 
 ## Relationships
 |Relationship|Type|Description|
