@@ -1,9 +1,9 @@
 ---
 title: "Create siteSource"
 description: "Create a new siteSource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources
-POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/custodian/siteSources
 ```
 
 ## Request headers
@@ -47,11 +47,7 @@ You can specify the following properties when creating a **siteSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md). Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/ediscovery-datasource.md). Optional.|
-
+|site|String|URL of the site; for example, `https://contoso.sharepoint.com/sites/HumanResources`.|
 
 
 ## Response
@@ -68,17 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources
 Content-Type: application/json
-Content-length: 190
-
 {
-  "@odata.type": "#microsoft.graph.security.siteSource",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+    "site": {
+        "webUrl": "https://m365x809305.sharepoint.com/sites/Retail"
+    }
 }
 ```
 
@@ -97,14 +88,23 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.siteSource",
-  "id": "444d9703-0a37-30e9-3738-d88ca9f386c4",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/dbe4b18e-2765-4989-8647-48139180c45f",
+    "displayName": "Retail",
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "holdStatus": "applied",
+    "id": "dbe4b18e-2765-4989-8647-48139180c45f",
+    "createdBy": {
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        },
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph Explorer"
+        }
+    }
 }
 ```
 

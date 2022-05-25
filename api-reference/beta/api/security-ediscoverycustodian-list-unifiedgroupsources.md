@@ -1,9 +1,9 @@
 ---
 title: "List unifiedGroupSources"
 description: "Get a list of the unifiedGroupSource objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/custodian/unifiedGroupSources
 ```
 
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/custodian/unifiedGroupSources
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 ```
 
 
@@ -76,19 +77,53 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.unifiedGroupSource",
-      "id": "f41d8159-acca-e588-7793-3320ee29ce4f",
-      "displayName": "String",
-      "holdStatus": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "includedSources": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v1.0/groups/32e14fa4-3106-4bd2-a245-34bf0c718a7e",
+            "displayName": "Design (Mailbox)",
+            "createdDateTime": "2022-05-23T02:35:42.926309Z",
+            "holdStatus": "applied",
+            "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
+            "includedSources": "mailbox,site",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            },
+            "group": {
+                "email": "Design@M365x809305.onmicrosoft.com",
+                "webUrl": "https://m365x809305.sharepoint.com/sites/Design",
+                "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
+                "displayName": "Design (Mailbox)",
+                "createdDateTime": "2022-05-23T02:35:42.926309Z"
+            }
+        },
+        {
+            "@odata.id": "https://graph.microsoft.com/v1.0/groups/21be9868-b58b-4f8b-800c-591e9ad8d4ec",
+            "displayName": "CEO Connection (Mailbox)",
+            "createdDateTime": "2022-05-23T02:35:42.926309Z",
+            "holdStatus": "applied",
+            "id": "21be9868-b58b-4f8b-800c-591e9ad8d4ec",
+            "includedSources": "mailbox,site",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            },
+            "group": {
+                "email": "ceoconnection@M365x809305.onmicrosoft.com",
+                "webUrl": "https://m365x809305.sharepoint.com/sites/ceoconnection",
+                "id": "21be9868-b58b-4f8b-800c-591e9ad8d4ec",
+                "displayName": "CEO Connection (Mailbox)",
+                "createdDateTime": "2022-05-23T02:35:42.926309Z"
+            }
+        }
+    ]
 }
 ```
 

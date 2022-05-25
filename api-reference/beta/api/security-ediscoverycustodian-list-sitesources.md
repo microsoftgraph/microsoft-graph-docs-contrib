@@ -1,9 +1,9 @@
 ---
 title: "List siteSources"
 description: "Get the siteSource resources from the siteSources navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources
 ```
 
@@ -58,6 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources
 ```
 
@@ -76,18 +78,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.siteSource",
-      "id": "444d9703-0a37-30e9-3738-d88ca9f386c4",
-      "displayName": "String",
-      "holdStatus": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v1.0/sites/169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+            "displayName": "U.S. Sales",
+            "createdDateTime": "2022-05-23T02:35:42.926309Z",
+            "holdStatus": "applied",
+            "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            },
+            "site": {
+                "webUrl": "https://m365x809305.sharepoint.com/sites/USSales",
+                "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+                "createdDateTime": "2022-05-23T02:35:42.926309Z"
+            }
+        }
+    ]
 }
 ```
 

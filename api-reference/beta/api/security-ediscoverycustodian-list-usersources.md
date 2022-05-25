@@ -1,9 +1,9 @@
 ---
 title: "List userSources"
 description: "Get the userSource resources from the userSources navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,10 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
-
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 ## HTTP request
 
 <!-- {
@@ -30,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/userSources
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 ```
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources
 ```
 
 
@@ -76,21 +76,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.userSource",
-      "id": "f3f6f158-d612-8e59-c294-47f183497310",
-      "displayName": "String",
-      "holdStatus": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "email": "String",
-      "includedSources": "String",
-      "siteWebUrl": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources",
+    "value": [
+        {
+            "displayName": "Alex Wilber",
+            "createdDateTime": "2022-05-23T00:58:19.0702524Z",
+            "holdStatus": "applied",
+            "id": "43434642-3137-3138-3432-374142313639",
+            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "includedSources": "mailbox,site",
+            "siteWebUrl": "https://m365x809305-my.sharepoint.com/personal/alexw_m365x809305_onmicrosoft_com/",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 

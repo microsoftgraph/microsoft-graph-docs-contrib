@@ -1,9 +1,9 @@
 ---
 title: "List ediscoveryIndexOperation"
 description: "Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources/{ediscoverycustodianId}/lastIndexOperation
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources/{ediscoveryNoncustodialDataSourceId}/lastIndexOperation
 ```
 
@@ -58,9 +59,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources/{ediscoveryNoncustodialDataSourceId}/lastIndexOperation
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/lastIndexOperation
 ```
-
 
 ### Response
 The following is an example of the response
@@ -76,23 +76,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryIndexOperation",
-      "id": "e7da0fd8-ab4c-a328-d36b-0ad3df8739f2",
-      "createdDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "action": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "percentProgress": "Integer",
-      "status": "String",
-      "resultInfo": {
-        "@odata.type": "microsoft.graph.resultInfo"
-      }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.ediscoveryIndexOperation",
+    "createdDateTime": "2022-05-23T02:35:43.1932326Z",
+    "completedDateTime": "0001-01-01T00:00:00Z",
+    "percentProgress": 0,
+    "status": "running",
+    "action": "index",
+    "id": "b23821836460441891d16a2cb7463392",
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": null,
+            "displayName": null,
+            "userPrincipalName": "c25c3914-f9f7-43ee-9cba-a25377e0cec6"
+        }
     }
-  ]
 }
 ```
 
