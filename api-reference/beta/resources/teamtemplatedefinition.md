@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generic representation of a [teamsTemplate)(../resources/teamsTemplate.md) definition for a team with a specific structure and configuration.
+Generic representation of a [teamsTemplate)(../resources/teamstemplate.md) definition for a team with a specific structure and configuration.
 
 Inherits from [entity](../resources/entity.md).
 

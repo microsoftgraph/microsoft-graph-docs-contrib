@@ -1,7 +1,7 @@
 ---
 title: "teamwork resource type"
-description: "Team work resource type"
-author: "Charlieforce"
+description: "A container for the range of Microsoft Teams functionalities that are available for the organization."
+author: "charlieforce"
 ms.localizationpriority: medium
 ms.prod: "Teamwork"
 doc_type: resourcePageType
@@ -13,30 +13,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A container for the range of Microsoft Teams functionalities that are available for the organization.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Read the properties and relationships of a [teamwork](../resources/teamwork.md) object.|
-|[Update teamwork](../api/teamwork-update.md)|[teamwork](../resources/teamwork.md)|Update the properties of a [teamwork](../resources/teamwork.md) object.|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the teamTemplate resources from the teamTemplates navigation property.|
+|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Read the properties and relationships of a [teamwork](../resources/teamwork.md) object.|
 |[Create teamTemplate](../api/teamwork-post-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md)|Create a new teamTemplate object.|
+|[Update teamwork](../api/teamwork-update.md)|[teamwork](../resources/teamwork.md)|Update the properties of a [teamwork](../resources/teamwork.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String| A unique identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|devices|[teamworkDevice](../resources/teamworkdevice.md) collection|**TODO: Add Description**|
+|devices|[teamworkDevice](../resources/teamworkdevice.md) collection| The Teams devices provisioned for the tenant.|
 |teamTemplates|[teamTemplate](../resources/teamtemplate.md) collection|**TODO: Add Description**|
-|workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection|**TODO: Add Description**|
+|workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
