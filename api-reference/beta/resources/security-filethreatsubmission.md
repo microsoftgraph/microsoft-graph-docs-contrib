@@ -26,9 +26,9 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 |[Get fileThreatSubmission](../api/security-filethreatsubmission-get.md)|[microsoft.graph.security.fileThreatSubmission](../resources/security-filethreatsubmission.md)|Read the properties and relationships of a [fileThreatSubmission](../resources/security-filethreatsubmission.md) object.|
 
 ## Properties
-| Property | Type   | Description                    | Key | Required |
-|:---------|:-------|:-------------------------------|:----|:---------|
-| fileName | String | The file name to be submitted. | ❌   | ✔        |
+| Property | Type   | Description                    |
+|:---------|:-------|:-------------------------------|
+| fileName | String | The file name to be submitted. |
 
 ## Relationships
 None.
