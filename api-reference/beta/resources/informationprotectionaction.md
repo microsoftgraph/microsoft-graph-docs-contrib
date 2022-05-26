@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The **informationProtection** APIs are deprecated and will stop returning data on January 1, 2023. Please use the new [informationProtection](./security-informationprotection.md) and [sensitivityLabel](./security-sensitivitylabel.md) APIs.
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 The **informationProtectionAction** is an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the following actions that instruct the application on how to apply, update, or remove the information protection label. 
 

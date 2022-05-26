@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The **informationProtection** APIs are deprecated and will stop returning data on January 1, 2023. Please use the new [informationProtection](./security-informationprotection.md) and [sensitivityLabel](./security-sensitivitylabel.md) APIs.
-
+[!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Describes the information protection label that details how to properly apply a sensitivity label to information. The **informationProtectionLabel** resource describes the configuration of sensitivity labels that apply to a user or tenant.  
 
