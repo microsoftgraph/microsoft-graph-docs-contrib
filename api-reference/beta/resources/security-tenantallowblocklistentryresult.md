@@ -18,11 +18,11 @@ One entry for tenant allow block list item which could be url, attachment or sen
 ## Properties
 | Property           | Type                          | Description                                             |
 |:-------------------|:------------------------------|:--------------------------------------------------------|
-| identity           | String                        | The identity.                                           |
-| value              | String                        | The tenant allow block list value.                      |
 | entryType          | tenantAllowBlockListEntryType | The tenant allow block list entry type.                 |
 | expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                |
+| identity           | String                        | The identity.                                           |
 | status             | longRunningOperationStatus    | The tenant allow block operation result for this entry. |
+| value              | String                        | The tenant allow block list value.                      |
 
 ## Relationships
 None.
