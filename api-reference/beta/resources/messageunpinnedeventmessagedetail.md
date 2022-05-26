@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.messageUnpinnedEventMessageDetail",
-  "eventDateTime": "DateTimeOffset",
+  "eventDateTime": "String (timestamp)",
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
   }
