@@ -20,9 +20,9 @@ Threat submission result when threat submission is processed by system.
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category.                                         |
 | detail             | submissionResultDetail             | The submission result detail.                                           |
-| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string. |
-| detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Detected files in the email submission. |
+| detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  |
+| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string. |
 
 ## Relationships
 None.
