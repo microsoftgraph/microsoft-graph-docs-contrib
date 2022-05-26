@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about pin message.
-This message is generated when a message is pinned.****
+Represents the details of an event message about pin message. This message is generated when a message is pinned.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

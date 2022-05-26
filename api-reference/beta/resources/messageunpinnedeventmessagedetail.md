@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about unpin message.
-This message is generated when a message is unpinned.
+Represents the details of an event message about unpin message. This message is generated when a message is unpinned.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).

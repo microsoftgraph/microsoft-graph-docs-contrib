@@ -61,8 +61,8 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Members deleted | [membersDeletedEventMessageDetail](#members-deleted) | Chat, Channel, Team |
 | Members joined | [membersJoinedEventMessageDetail](#members-joined) | Chat |
 | Members left | [membersLeftEventMessageDetail](#members-left) | Chat |
-| Pin message | [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | Chat, Channel |
-| Unpin message | [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | Chat, Channel |
+| Pin message | [messagePinnedEventMessageDetail](#pin-message) | Chat, Channel |
+| Unpin message | [messageUnpinnedEventMessageDetail](#unpin-message) | Chat, Channel |
 | Tab updated | [tabUpdatedEventMessageDetail](#tab-updated) | Chat, Channel |
 | Team archived | [teamArchivedEventMessageDetail](#team-archived) | Team |
 | Team created | [teamCreatedEventMessageDetail](#team-created) | Team |
@@ -940,6 +940,93 @@ The following JSON examples show the responses for each supported event type.
         "displayName": null,
         "userIdentityType": "aadUser"
       }
+    }
+  }
+}
+```
+
+### Pin message
+
+```json
+{
+  "id": "1613453493532",
+  "replyToId": null,
+  "etag": "1613453493532",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-02-16T05:31:33.532Z",
+  "lastModifiedDateTime": "2021-02-16T05:31:33.532Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:0ae61fd5f7f44791baddce0988e71bf3@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "policyViolation": null,
+  "from": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+"eventDetail": {
+    "@odata.type": "#microsoft.graph.messagePinnedEventMessageDetail",
+    "eventDateTime": "2022-05-02T20:11:08.335Z",
+    "initiator": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
+    }
+  }
+}
+```
+
+### Unpin message
+
+```json
+{  
+  "replyToId": null,
+  "etag": "1613453493532",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-02-16T05:31:33.532Z",
+  "lastModifiedDateTime": "2021-02-16T05:31:33.532Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:0ae61fd5f7f44791baddce0988e71bf3@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "policyViolation": null,
+  "from": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+"eventDetail": {
+    "@odata.type": "#microsoft.graph.messageUnpinnedEventMessageDetail",
+    "eventDateTime": "2022-05-02T20:11:08.335Z",
+    "initiator": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": null,
+            "userIdentityType": "aadUser"
+        }
     }
   }
 }
