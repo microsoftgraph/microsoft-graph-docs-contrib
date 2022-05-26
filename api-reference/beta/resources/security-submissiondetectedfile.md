@@ -18,8 +18,8 @@ Namespace: microsoft.graph.security
 ## Properties
 | Property | Type   | Description    |
 |:---------|:-------|:---------------|
-| fileName | String | The file name. |
 | fileHash | String | The file hash. |
+| fileName | String | The file name. |
 
 ## Relationships
 None.
