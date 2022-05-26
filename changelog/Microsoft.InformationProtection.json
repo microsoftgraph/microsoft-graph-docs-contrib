@@ -1,31 +1,5 @@
 ﻿{
-  "changelog": [
-    {
-      "ChangeList": [
-        {
-          "Id": "2c08e93c-a00d-4df5-a524-c5f77bdca25f",
-          "ApiChange": "Property",
-          "ChangedApiName": "createdDateTime",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **createdDateTime** property from [contentLabel](https://docs.microsoft.com/en-us/graph/api/resources/contentLabel?view=graph-rest-beta) resource.",
-          "Target": "contentLabel"
-        },
-        {
-          "Id": "2c08e93c-a00d-4df5-a524-c5f77bdca25f",
-          "ApiChange": "Property",
-          "ChangedApiName": "creationDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **creationDateTime** property to [contentLabel](https://docs.microsoft.com/en-us/graph/api/resources/contentLabel?view=graph-rest-beta) resource.",
-          "Target": "contentLabel"
-        }        
-      ],
-      "Id": "2c08e93c-a00d-4df5-a524-c5f77bdca25f",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2022-03-31T17:28:26.1446514Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
+  "changelog": [    
     {
       "ChangeList": [
         {
@@ -33,7 +7,7 @@
           "ApiChange": "Schema",
           "ChangedApiName": "microsoft.graph.security",
           "ChangeType": "Addition",
-          "Description": "Added the [microsoft.graph.security](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the [microsoft.graph.security](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource.",
           "Target": "microsoft.graph.security"
         },
         {
@@ -41,7 +15,511 @@
           "ApiChange": "Resource",
           "ChangedApiName": "security",
           "ChangeType": "Addition",
-          "Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
+          "Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addContentFooterAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/security-addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addContentHeaderAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [addContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/security-addcontentheaderaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addWatermarkAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [addWatermarkAction](https://docs.microsoft.com/en-us/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applyLabelAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/security-applylabelaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/security-classificationresult?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentInfo](https://docs.microsoft.com/en-us/graph/api/resources/security-contentinfo?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentLabel](https://docs.microsoft.com/en-us/graph/api/resources/security-contentlabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAction](https://docs.microsoft.com/en-us/graph/api/resources/security-customaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "downgradeJustification",
+          "ChangeType": "Addition",
+          "Description": "Added the [downgradeJustification](https://docs.microsoft.com/en-us/graph/api/resources/security-downgradejustification?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationProtection](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotection?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationProtectionAction](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotectionaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionPolicySetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationProtectionPolicySetting](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotectionpolicysetting?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "justifyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [justifyAction](https://docs.microsoft.com/en-us/graph/api/resources/security-justifyaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [keyValuePair](https://docs.microsoft.com/en-us/graph/api/resources/security-keyvaluepair?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelingOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelingOptions](https://docs.microsoft.com/en-us/graph/api/resources/security-labelingoptions?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metadataAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [metadataAction](https://docs.microsoft.com/en-us/graph/api/resources/security-metadataaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectAdhocAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectAdhocAction](https://docs.microsoft.com/en-us/graph/api/resources/security-protectadhocaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectByEncryptOnlyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectByEncryptOnlyAction](https://docs.microsoft.com/en-us/graph/api/resources/security-protectbyencryptonlyaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectByTemplateAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectByTemplateAction](https://docs.microsoft.com/en-us/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectDoNotForwardAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [protectDoNotForwardAction](https://docs.microsoft.com/en-us/graph/api/resources/security-protectdonotforwardaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendLabelAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeContentFooterAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/security-removecontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeContentHeaderAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/security-removecontentheaderaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeProtectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeProtectionAction](https://docs.microsoft.com/en-us/graph/api/resources/security-removeprotectionaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeWatermarkAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeWatermarkAction](https://docs.microsoft.com/en-us/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensitivityLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluateApplication",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateapplication?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluateClassificationResults",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateclassificationresults?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "evaluateRemoval",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [evaluateRemoval](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateremoval?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "extractLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [extractLabel](https://docs.microsoft.com/en-us/graph/api/informationprotection-extractlabel?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [get label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [list](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta) method.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addContentFooterAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addContentHeaderAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentheaderaction ?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addContentFooterAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addWatermarkAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addWatermarkAction](https://docs.microsoft.com/en-us/graph/api/resources/addwatermarkaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applyLabelAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [applyLabelAction](https://docs.microsoft.com/en-us/graph/api/resources/applylabelaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "classificationResult",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [classificationResult](https://docs.microsoft.com/en-us/graph/api/resources/classificationresult?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentInfo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [contentInfo](https://docs.microsoft.com/en-us/graph/api/resources/contentInfo?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [customAction](https://docs.microsoft.com/en-us/graph/api/resources/customaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "downgradeJustification",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [downgradeJustification](https://docs.microsoft.com/en-us/graph/api/resources/downgradejustification?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "downgradeJustification",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [downgradeJustification](https://docs.microsoft.com/en-us/graph/api/resources/downgradejustification?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionContentLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [informationProtectionContentLabel](https://docs.microsoft.com/en-us/graph/api/resources/informationprotectioncontentlabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [informationProtectionLabel](https://docs.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "justifyAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [justifyAction](https://docs.microsoft.com/en-us/graph/api/resources/justifyaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelingOptions",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [labelingOptions](https://docs.microsoft.com/en-us/graph/api/resources/labelingoptions?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionLabel",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [addContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/addcontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metadataAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [metadataAction](https://docs.microsoft.com/en-us/graph/api/resources/metadataaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectAdhocAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [protectAdhocAction](https://docs.microsoft.com/en-us/graph/api/resources/protectadhocaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectByTemplateAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [protectByTemplateAction](https://docs.microsoft.com/en-us/graph/api/resources/protectbytemplateaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectDoNotForwardAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [protectDoNotForwardAction](https://docs.microsoft.com/en-us/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeContentFooterAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [removeContentFooterAction](https://docs.microsoft.com/en-us/graph/api/resources/removecontentfooteraction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeContentHeaderAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [removeContentHeaderAction](https://docs.microsoft.com/en-us/graph/api/resources/removecontentheaderaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeProtectionAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [removeProtectionAction](https://docs.microsoft.com/en-us/graph/api/resources/removeprotectionaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removeWatermarkAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [removeWatermarkAction](https://docs.microsoft.com/en-us/graph/api/resources/removewatermarkaction?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-get?view=graph-rest-beta) method to the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/security-informationprotection-list-sensitivitylabels?view=graph-rest-beta) method to the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [extractContentLabel](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "security"
         }
       ],
