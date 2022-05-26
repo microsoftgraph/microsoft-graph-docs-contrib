@@ -21,17 +21,17 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 | Property        | Type                       | Description                                                                      |
 |:----------------|:---------------------------|:---------------------------------------------------------------------------------|
-| id              | String                     | Threat submission id. When creation on post, it is not necessary.                |
-| createdDateTime | DateTimeOffset             | When the threat submission was created.                                          |
-| contentType     | submissionContentType      | email, url, file or app.                                                         |
+| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review |
 | category        | submissionCategory         | not junk, spam, phishing or malware.                                             |
-| status          | longRunningOperationStatus | If the threat submission check is finished.                                      |
-| source          | submissionSource           | The threat submission source. Administrator or user.                             |
-| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.                                          |
-| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.                                              |
-| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review                                                     |
-| tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. |
 | clientSource    | submissionClientSource     | microsoft or other client.                                                       |
+| contentType     | submissionContentType      | email, url, file or app.                                                         |
+| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.   |
+| createdDateTime | DateTimeOffset             | When the threat submission was created.                                          |
+| id              | String                     | Threat submission id. When creation on post, it is not necessary.                |
+| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.  |
+| source          | submissionSource           | The threat submission source. Administrator or user.                             |
+| status          | longRunningOperationStatus | If the threat submission check is finished.                                      |
+| tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. |
 
 ## Relationships
 None.
