@@ -21,9 +21,10 @@ Inherits from graph.identity.
 ## Properties
 | Property    | Type   | Description                                                                                                    |
 |:------------|:-------|:---------------------------------------------------------------------------------------------------------------|
-| id    | String | The field inherits from graph.identity.  |
 | displayName | String | The field inherits from graph.identity.                                                                 |
 | email       | String | The email of submission user for delegated token case.                                                         | 
+| id          | String | The field inherits from graph.identity.  |
+
 
 ## Relationships
 None.
