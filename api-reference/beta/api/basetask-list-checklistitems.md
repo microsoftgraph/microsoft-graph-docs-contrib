@@ -1,6 +1,6 @@
 ---
 title: "List checklistItems"
-description: "Get the checklistItem resources associated to a todoTask from the checklistItems navigation property."
+description: "Get the checklistItem resources associated to the checklistItems navigation property of a baseTask."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-Get the [checklistItem](../resources/checklistitem.md) resources associated to a [todoTask](../resources/todoTask.md) from the checklistItems navigation property.
+Get the [checklistItem](../resources/checklistitem.md) resources associated to the **checklistItems** navigation property of a [baseTask](../resources/baseTask.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/tasks/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
-GET /users/{id | userPrincipalName}/tasks/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
+GET /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
+GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
 ```
 
 ## Optional query parameters

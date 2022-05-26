@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-Create a new [checklistItem](../resources/checklistitem.md) object.
+Create a new [checklistItem](../resources/checklistitem.md) object as a subtask in a bigger [baseTask](../resources/basetask.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/tasks/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
-POST /users/{id | userPrincipalName}/tasks/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems
+POST /me/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
+POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTaskId}/checklistItems
 ```
 
 ## Request headers
