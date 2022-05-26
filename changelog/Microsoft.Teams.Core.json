@@ -5039,7 +5039,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retreiving chats.",
+          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
           "Target": "chat"
         }
       ],
