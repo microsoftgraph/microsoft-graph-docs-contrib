@@ -18,9 +18,9 @@ Admin review information for user reported messages.
 ## Properties
 | Property       | Type                     | Description                                  |
 |:---------------|:-------------------------|:---------------------------------------------|
+| reviewBy       | String                   | The reviewer email or other identity string. |
 | reviewDateTime | DateTimeOffset           | The review date time.                        |
 | reviewResult   | submissionResultCategory | The review result                            |
-| reviewBy       | String                   | The reviewer email or other identity string. |
 
 ## Relationships
 None.
