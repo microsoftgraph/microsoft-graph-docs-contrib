@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationInfo](https://docs.microsoft.com/en-us/graph/api/resources/authorizationInfo?view=graph-rest-beta) resource type.",
+          "Target": "authorizationInfo"
+        },
+        {
+          "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationInfo** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "4e8e0df9-0c1e-414d-860c-aedc9baa7159",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-06T11:09:26.417154Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b94c9471-549a-4d52-83fc-f639c1f6bd11",
           "ApiChange": "Property",
           "ChangedApiName": "isStateSessionEnabled",
