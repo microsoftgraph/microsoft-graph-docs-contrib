@@ -9940,10 +9940,12 @@ items:
             href: api/user-list-cloudpcs.md
           - name: Get cloudPC
             href: api/cloudpc-get.md
-          - name: Bulk reprovision remotely action
+          - name: Bulk-reprovision remotely
             href: api/manageddevice-bulkreprovisioncloudpc.md
-          - name: Bulk restore remotely action
+          - name: Bulk-restore remotely
             href: api/manageddevice-bulkrestorecloudpc.md
+          - name: Bulk-set review status
+            href: api/manageddevice-bulksetcloudpcreviewstatus.md
           - name: Change user accout type
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
@@ -9952,6 +9954,8 @@ items:
             href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
+          - name: Get review status
+            href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
@@ -9960,22 +9964,14 @@ items:
             href: api/cloudpc-reprovision.md
           - name: Reprovision remotely
             href: api/manageddevice-reprovisioncloudpc.md
-          - name: Bulk reprovision remotely
-            href: api/manageddevice-bulkreprovisioncloudpc.md
           - name: Resize remotely
             href: api/manageddevice-resizecloudpc.md
           - name: Restore remotely
             href: api/manageddevice-restorecloudpc.md
-          - name: Bulk restore remotely
-            href: api/manageddevice-bulkrestorecloudpc.md
-          - name: Troubleshoot
-            href: api/cloudpc-troubleshoot.md
           - name: Set review status
             href: api/manageddevice-setcloudpcreviewstatus.md
-          - name: Get review status
-            href: api/manageddevice-getcloudpcreviewstatus.md
-          - name: Bulk set review status
-            href: api/manageddevice-bulksetcloudpcreviewstatus.md
+          - name: Troubleshoot
+            href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md
           items:
@@ -14403,20 +14399,6 @@ items:
           href: api/site-list-operations.md
         - name: Get site settings
           href: api/sitesettings-get.md
-        - name: Permissions
-          items:
-          - name: Permission
-            href: resources/permission.md
-          - name: List site permissions
-            href: api/site-list-permissions.md
-          - name: Create site permissions
-            href: api/site-post-permissions.md
-          - name: Get site permission
-            href: api/site-get-permission.md
-          - name: Update site permission
-            href: api/site-update-permission.md
-          - name: Delete site permission
-            href: api/site-delete-permission.md
       - name: Lists
         items:
         - name: List
@@ -14541,6 +14523,20 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
+      - name: Site permissions
+        items:
+        - name: Permission
+          href: resources/permission.md
+        - name: List site permissions
+          href: api/site-list-permissions.md
+        - name: Create site permissions
+          href: api/site-post-permissions.md
+        - name: Get site permission
+          href: api/site-get-permission.md
+        - name: Update site permission
+          href: api/site-update-permission.md
+        - name: Delete site permission
+          href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -14597,6 +14593,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items: 
+          - name: Settings
+            href: resources/tenantadmin-settings.md
+          - name: Get settings
+            href: api/tenantadmin-settings-get.md
+          - name: Update settings
+            href: api/tenantadmin-settings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -14923,6 +14927,12 @@ items:
           href: api/chat-hideforuser.md
         - name: Unhide chat
           href: api/chat-unhideforuser.md
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -14950,6 +14960,15 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Pinned chat message
+        href: resources/pinnedChatMessageInfo.md
+        items:
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Tags
         href: resources/teamworktag.md
         items:
@@ -15077,6 +15096,8 @@ items:
           href: api/team-sendactivitynotification.md
         - name: Send notification to user
           href: api/userteamwork-sendactivitynotification.md
+        - name: Send notifications to multiple users in bulk
+          href: api/teamwork-sendactivitynotificationtorecipients.md
       - name: Tab
         href: resources/teamstab.md
         items:
