@@ -56,14 +56,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List member objects
 
 #### Request
-The following request will list the members of the administrative unit, returning a collection of users and/or groups.
+The following request will list the members of the administrative unit, returning a collection of users, groups, and devices.
 
 <!-- {
   "blockType": "request",
   "name": "list_administrativeunit_members"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/4696ba68-02eb-4f66-9d54-f5d09dca3f1a/members
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members
 ```
 
 #### Response

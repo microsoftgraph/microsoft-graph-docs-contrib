@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_administrativeunit_members"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/4696ba68-02eb-4f66-9d54-f5d09dca3f1a/members/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
+GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 ```
 
 ### Response
