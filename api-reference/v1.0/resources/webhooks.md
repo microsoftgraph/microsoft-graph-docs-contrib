@@ -69,5 +69,6 @@ In general, subscription operations require read permission to the resource. For
 [alert]: ./alert.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[To Do task]: ./todotask.md
 [todoTask]: ./todotask.md
 
