@@ -26,10 +26,7 @@ assignmentState := "Active"
 requestBody.SetAssignmentState(&assignmentState)
 roleId := "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 requestBody.SetRoleId(&roleId)
-options := &msgraphsdk.PrivilegedRoleAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedRoleAssignmentRequests().Post(requestBody)
 
 
 ```

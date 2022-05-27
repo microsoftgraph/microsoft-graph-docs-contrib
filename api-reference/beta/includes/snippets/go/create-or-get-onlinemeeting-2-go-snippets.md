@@ -28,10 +28,7 @@ participants.SetAttendees( []MeetingParticipantInfo {
 }
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.CreateOrGetRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(options)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
 
 
 ```

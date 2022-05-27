@@ -36,7 +36,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [baseTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
-For the possible resource path values for each supported resource and to learn how resources use lifecycle notifications, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
+For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md). To learn how to use lifecycle notifications, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).
 
 ## Methods
 

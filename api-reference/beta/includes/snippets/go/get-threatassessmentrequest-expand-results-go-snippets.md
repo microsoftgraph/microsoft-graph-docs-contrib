@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetQueryParameters{
 	Expand: "results",
 }
-options := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ThreatAssessmentRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 threatAssessmentRequestId := "threatAssessmentRequest-id"
-result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).Get(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequestsById(&threatAssessmentRequestId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

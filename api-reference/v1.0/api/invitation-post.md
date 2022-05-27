@@ -110,7 +110,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 	Select: "displayName,jobTitle,mobilePhone",
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Users().Delta()().Get(options)
+result, err := graphClient.Users().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

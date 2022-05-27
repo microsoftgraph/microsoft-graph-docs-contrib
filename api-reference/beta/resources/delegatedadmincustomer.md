@@ -3,7 +3,7 @@ title: "delegatedAdminCustomer resource type"
 description: "Represents a customer who has a delegated admin relationship with a Microsoft partner."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
 ---
 

@@ -254,7 +254,6 @@ Content-length: 4492
                     "displayName": null
                 }
             },
-            "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",

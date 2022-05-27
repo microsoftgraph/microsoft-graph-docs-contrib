@@ -14,10 +14,7 @@ planId := "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 requestBody.SetPlanId(&planId)
 orderHint := " !"
 requestBody.SetOrderHint(&orderHint)
-options := &msgraphsdk.BucketsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Planner().Buckets().Post(options)
+result, err := graphClient.Planner().Buckets().Post(requestBody)
 
 
 ```
