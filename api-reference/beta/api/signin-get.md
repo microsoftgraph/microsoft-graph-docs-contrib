@@ -206,7 +206,7 @@ Content-type: application/json
       }
     },
   "appliedConditionalAccessPolicies":[],
-  "authenticationProcessingD[!INCLUDE [gdpr-msgraph-export-note](../../includes/gdpr-msgraph-export-note.md)]etails":[
+  "authenticationProcessingDetails":[
       {
         "key":"Login Hint Present",
         "value":"True"
