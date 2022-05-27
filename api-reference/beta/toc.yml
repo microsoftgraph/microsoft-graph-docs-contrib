@@ -11195,9 +11195,9 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device member of
+          - name: List device memberships
             href: api/device-list-memberof.md
-          - name: List device transitive groups
+          - name: List device transitive memberships
             href: api/device-list-transitivememberof.md
           - name: List device usage rights
             href: api/device-list-usagerights.md
