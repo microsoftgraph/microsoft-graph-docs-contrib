@@ -23,13 +23,13 @@
           "ApiChange": "Resource",
           "ChangedApiName": "wellKnownListName_v2",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **wellKnownListName_v2** enumaration",
+          "Description": "Deprecated the **wellKnownListName_v2** enumeration",
           "Target": "wellKnownListName_v2"
         },
         {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
           "ApiChange": "Method",
-          "ChangedApiName": "Delta",
+          "ChangedApiName": "delta",
           "ChangeType": "Deprecation",
           "Description": "Deprecated the **delta** function of [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
           "Target": "baseTaskList"
@@ -37,10 +37,34 @@
         {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
           "ApiChange": "Method",
-          "ChangedApiName": "POST,GET,PATCH,DELETE",
+          "ChangedApiName": "POST",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the CRUD operations for **opentypeextension** on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
-          "Target": "baseTaskList"
+          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTaskList](https://docs.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
         },
         {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
@@ -55,24 +79,80 @@
           "ApiChange": "Method",
           "ChangedApiName": "Delta",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **delta** function of [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [delta](https://docs.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) function of [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
           "Target": "baseTask"
         },
         {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
           "ApiChange": "Method",
-          "ChangedApiName": "POST,GET,PATCH,DELETE",
+          "ChangedApiName": "POST",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the CRUD operations for **opentypeextension** on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
-          "Target": "baseTask"
+          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
         },
         {
           "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
           "ApiChange": "Method",
-          "ChangedApiName": "POST,GET,PATCH,DELETE",
+          "ChangedApiName": "GET",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the CRUD operations for **subscription** on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
-          "Target": "baseTask"
+          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) operation of [subscription](https://docs.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) on [baseTask](https://docs.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource.",
+          "Target": "subscription"
         }
       ],
       "Id": "66862b21-9f41-445b-85d8-73bfd2c8a2ca",

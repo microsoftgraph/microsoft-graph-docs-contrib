@@ -31,6 +31,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [chatMessage][] | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
+| [To Do task][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/todo/lists/alltasks` | No |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
@@ -40,8 +41,8 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [todoTask][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                       |
 | Application                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printer][], [printTaskDefinition][]|
 
 
@@ -68,4 +69,5 @@ In general, subscription operations require read permission to the resource. For
 [alert]: ./alert.md
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[todoTask]: ./todotask.md
 

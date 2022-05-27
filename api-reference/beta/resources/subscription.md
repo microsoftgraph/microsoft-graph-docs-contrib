@@ -14,12 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources.
 
 > **Note** Subscriptions marked with an asterisk (*) are supported in the `/beta` endpoint only.
 
 - An [alert][] from the Microsoft Graph Security API.
-- A [baseTask][] of a user in Microsoft To Do.* (deprecated)
+- A [baseTask][] (deprecated) of a user in Microsoft To Do.*
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
 - A [channel](./channel.md) in Microsoft Teams.*
 - A [chat](./chat.md) in Microsoft Teams.*
