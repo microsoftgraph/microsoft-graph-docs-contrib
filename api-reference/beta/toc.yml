@@ -14601,7 +14601,7 @@ items:
             href: api/security-ediscoverynoncustodialdatasource-removehold.md
           - name: Update index
             href: api/security-ediscoverynoncustodialdatasource-updateindex.md
-          - name: Create data source
+          - name: Get last index operation
             href: api/security-ediscoverycustodian-list-lastindexoperation.md
         - name: Hold policy
           href: resources/security-ediscoveryholdpolicy.md

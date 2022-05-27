@@ -1,10 +1,10 @@
 ---
 title: "Get ediscoveryHoldPolicy"
 description: "Read the properties and relationships of an ediscoveryHoldPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get ediscoveryHoldPolicy
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
 ```
 
 
@@ -76,26 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoveryHoldPolicy",
-    "id": "443fa57b-b7df-068e-8e4d-733c3d38c8b1",
-    "displayName": "String",
-    "description": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalHolds/$entity",
+    "isEnabled": true,
+    "errors": [],
+    "contentQuery": "does api fetch query?",
+    "description": "does api fetch description?",
+    "createdDateTime": "2022-05-23T01:09:53.497Z",
+    "lastModifiedDateTime": "2022-05-25T23:15:04.317Z",
+    "status": "success",
+    "id": "783c3ea4-d474-4051-9c13-08707ce8c8b6",
+    "displayName": "CustodianHold-b0073e4e-4184-41c6-9eb7-8c8cc3e2288b",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "user": {
+            "id": "MOD Administrator",
+            "displayName": null
+        }
     },
-    "createdDateTime": "String (timestamp)",
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "status": "String",
-    "isEnabled": "Boolean",
-    "contentQuery": "String",
-    "errors": [
-      "String"
-    ]
-  }
+        "application": null,
+        "user": {
+            "id": "MOD Administrator",
+            "displayName": null
+        }
+    }
 }
 ```
-

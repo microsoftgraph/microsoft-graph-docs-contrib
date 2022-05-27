@@ -1,10 +1,10 @@
 ---
 title: "Update ediscoveryHoldPolicy"
 description: "Update the properties of an ediscoveryHoldPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Update ediscoveryHoldPolicy
@@ -19,9 +19,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
 
 ## HTTP request
 
@@ -42,25 +43,15 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). Optional.|
-|status|policyStatus|**TODO: Add Description** Inherited from [policyBase](../resources/security-policybase.md). The possible values are: `pending`, `error`, `success`, `unknownFutureValue`. Optional.|
-|isEnabled|Boolean|**TODO: Add Description** Optional.|
-|contentQuery|String|**TODO: Add Description** Optional.|
-|errors|String collection|**TODO: Add Description** Optional.|
-
+|description|String|The description of the legal hold policy. Optional.|
+|contentQuery|String|The content query of the legal hold policy. Optional.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object in the response body.
 
 ## Examples
 
@@ -72,23 +63,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}
-Content-Type: application/json
-Content-length: 315
+PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryHoldPolicy",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "status": "String",
-  "isEnabled": "Boolean",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ]
+    "description": "updated description",
+    "contentQuery": "bazooka bazooka"
 }
 ```
 
@@ -102,28 +81,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryHoldPolicy",
-  "id": "443fa57b-b7df-068e-8e4d-733c3d38c8b1",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "isEnabled": "Boolean",
-  "contentQuery": "String",
-  "errors": [
-    "String"
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 

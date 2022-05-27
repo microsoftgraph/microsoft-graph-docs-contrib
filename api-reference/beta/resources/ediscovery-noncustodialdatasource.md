@@ -33,12 +33,12 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 |Property|Type|Description|
 |:---|:---|:---|
 |applyHoldToSource|Boolean|Indicates if hold is applied to non-custodial data source (such as mailbox or site).|
-|createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|displayName|String|Display name of the noncustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|id|String|Unique identifier of the nonCustodialDataSource. Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|status|microsoft.graph.ediscovery.dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
+|createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. |
+|displayName|String|Display name of the noncustodialDataSource.|
+|id|String|Unique identifier of the nonCustodialDataSource..|
+|lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. |
+|releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case.|
+|status|microsoft.graph.ediscovery.dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Possible values are: `Active`, `Released`.|
 
 ## Relationships
 
