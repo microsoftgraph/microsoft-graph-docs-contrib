@@ -80,22 +80,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value":[
-    {
-      "@odata.type":"#microsoft.graph.user",
-      "id":"492c5308-59fd-4740-9c83-4b3db07a6d70"
-      "accountEnabled":true,
-      "businessPhones":[],
-      "companyName":null,
-      "displayName":"Demo User"
-    },
-    {
-      "@odata.type":"#microsoft.graph.group",
-      "id":"07eaa5c7-c9b6-45cf-8ff7-3147d5122caa",
-      "description":"This group is the best ever",
-      "displayName":"Awesome group"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.device",
+            "id": "7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac",
+            "accountEnabled": true,
+            "deviceId": "6fa60d52-01e7-4b18-8055-4759461fc16b",
+            "displayName": "Test Windows device",
+            "operatingSystem": "Windows"
+        },
+        {
+            "@odata.type": "#microsoft.graph.device",
+            "id": "c530e1f6-7b4c-4313-840e-cf1a99ec3b38",
+            "accountEnabled": false,
+            "deviceId": "4c299165-6e8f-4b45-a5ba-c5d250a707ff",
+            "displayName": "Test Linux device",
+            "operatingSystem": "linux"
+        }
+    ]
 }
 ```
 
