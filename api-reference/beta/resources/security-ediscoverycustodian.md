@@ -22,11 +22,11 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[Create ediscoveryCustodian](../api/security-ediscoveryfile-post-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[Get ediscoveryCustodian](../api/security-ediscoverycustodian-get.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Read the properties and relationships of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[Update ediscoveryCustodian](../api/security-ediscoverycustodian-update.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Update the properties of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
-|[updateIndex](../api/security-ediscoverycustodian-updateindex.md)|None|**TODO: Add Description**|
-|[activate](../api/security-ediscoverycustodian-activate.md)|None|**TODO: Add Description**|
-|[release](../api/security-ediscoverycustodian-release.md)|None|**TODO: Add Description**|
-|[applyHold](../api/security-ediscoverycustodian-applyhold.md)|None|**TODO: Add Description**|
-|[removeHold](../api/security-ediscoverycustodian-removehold.md)|None|**TODO: Add Description**|
+|[updateIndex](../api/security-ediscoverycustodian-updateindex.md)|Triggers a indexOperation to make a custodian and associated sources searchable.|
+|[activate](../api/security-ediscoverycustodian-activate.md)|None|Re-activate a custodian from a case.|
+|[release](../api/security-ediscoverycustodian-release.md)|None|Release a custodian from a case.|
+|[applyHold](../api/security-ediscoverycustodian-applyhold.md)|None|Start the process of applying hold to eDiscovery custodians.|
+|[removeHold](../api/security-ediscoverycustodian-removehold.md)|None|Start the process of removing hold from eDiscovery custodians.|
 |[List ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) collection|Get the ediscoveryIndexOperation resources from the lastIndexOperation navigation property.|
 |[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get the siteSource resources from the siteSources navigation property.|
 |[Create siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new siteSource object.|
@@ -39,7 +39,6 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |Property|Type|Description|
 |:---|:---|:---|
 |acknowledgedDateTime|DateTimeOffset|Date and time the custodian acknowledged a hold notification.|
-|applyHoldToSources|Boolean|Identifies whether a custodian's sources were placed on hold during creation.|
 |createdDateTime|DateTimeOffset|Date and time when the custodian was added to the case.|
 |displayName|String|Display name of the custodian.|
 |email|String|Email address of the custodian.|

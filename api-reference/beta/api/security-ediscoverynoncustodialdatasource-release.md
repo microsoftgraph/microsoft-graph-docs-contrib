@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryNoncustodialDataSource: release"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Releases the non-custodial data source from the case."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # ediscoveryNoncustodialDataSource: release
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Releases the non-custodial data source from the case.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources/{ediscoveryNoncustodialDataSourceId}/release
-POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources/{ediscoveryNoncustodialDataSourceId}/release
 ```
 
 ## Request headers
@@ -44,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -69,6 +68,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 

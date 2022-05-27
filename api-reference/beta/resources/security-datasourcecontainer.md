@@ -1,9 +1,9 @@
 ---
 title: "dataSourceContainer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Base class for Custodians and Non-Custodial data sources."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,30 +13,23 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Base class for [eDiscoveryCustodian](../resources/security-ediscoverycustodian.md) and [eDiscoveryNonCutodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)
 This is an abstract type.
-
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List dataSourceContainers](../api/security-datasourcecontainer-list.md)|[microsoft.graph.security.dataSourceContainer](../resources/security-datasourcecontainer.md) collection|Get a list of the [dataSourceContainer](../resources/security-datasourcecontainer.md) objects and their properties.|
-|[Get dataSourceContainer](../api/security-datasourcecontainer-get.md)|[microsoft.graph.security.dataSourceContainer](../resources/security-datasourcecontainer.md)|Read the properties and relationships of a [dataSourceContainer](../resources/security-datasourcecontainer.md) object.|
-|[Update dataSourceContainer](../api/security-datasourcecontainer-update.md)|[microsoft.graph.security.dataSourceContainer](../resources/security-datasourcecontainer.md)|Update the properties of a [dataSourceContainer](../resources/security-datasourcecontainer.md) object.|
-|[Delete dataSourceContainer](../api/security-datasourcecontainer-delete.md)|None|Deletes a [dataSourceContainer](../resources/security-datasourcecontainer.md) object.|
 
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|releasedDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|dataSourceContainerStatus|**TODO: Add Description**.The possible values are: `active`, `released`, `unknownFutureValue`.|
+|holdStatus|dataSourceHoldStatus|The hold status of the dataSourceContainer.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|createdDateTime|DateTimeOffset|Created date and time of the dataSourceContainer entity.|
+|displayName|String|Display name of the dataSourceContainer entity.|
+|id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
+|lastModifiedDateTime|DateTimeOffset|Last modified date and time of the dataSourceContainer.|
+|releasedDateTime|DateTimeOffset|Date and time that the dataSourceContainer was released from the case.|
+|status|dataSourceContainerStatus|Latest status of the dataSourceContainer. Possible values are: `Active`, `Released`.|
 
 ## Relationships
 None.
