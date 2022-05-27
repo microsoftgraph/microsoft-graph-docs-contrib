@@ -1,6 +1,6 @@
 ---
 title: "educationFeedbackResourceOutcome resource type"
-description: "Represents feedback on an educationOutcome object in the form of document."
+description: "Represents feedback on an educationOutcome object in the form of a document."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of document.
+Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of a document.
 
 ## Methods
 
@@ -26,7 +26,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|feedbackResource|[educationResource](educationResource.md)|The actual feedback resource.|
+|feedbackResource|[educationResource](educationresource.md)|The actual feedback resource.|
 |id|String|Unique identifier for the **educationFeedbackResourceOutcome**.|
 |resourceStatus|educationFeedbackResourceOutcomeStatus|The possible values are: `notPublished`, `pendingPublish`, `published`, `failedPublish`, and `unknownFutureValue`.|
 

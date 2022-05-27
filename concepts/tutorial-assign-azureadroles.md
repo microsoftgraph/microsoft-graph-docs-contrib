@@ -464,7 +464,5 @@ HTTP/1.1 204 No Content
 
 ## See also
 
++ [Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
 + [Overview of role management through PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)
-+ [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [Enable per-user Azure AD multifactor authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [unifiedRoleEligibilityScheduleRequest resource type](/graph/api/resources/unifiedroleeligibilityschedulerequest)

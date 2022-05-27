@@ -17,7 +17,7 @@ Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.m
 
 Only a teacher can perform this operation.
 
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or is not in that folder, the POST request will fail.
+To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment. If the file doesn't exist or is not in that folder, the `POST` request will fail.
 
 > [!IMPORTANT]
 > Before you can upload an assignment feedback resource, you must [set up the feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
