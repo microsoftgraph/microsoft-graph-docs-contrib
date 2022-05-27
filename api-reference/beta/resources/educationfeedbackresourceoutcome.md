@@ -19,9 +19,8 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md) | [educationAssignment](educationassignment.md) | Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). |
-| [Create educationFeedbackResourceOutcome](../api/educationsubmission-post-feedbackresource.md) | [educationOutcome](educationoutcome.md) | Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. |
-| [Delete educationFeedbackResourceOutcome](../api/educationsubmissionfeedbackresource-delete.md) | None | Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. |
+| [Create educationFeedbackResourceOutcome](../api/educationfeedbackresourceoutcome-post-outcomes.md) | [educationOutcome](educationoutcome.md) | Create a new [feedback resource](../resources/educationfeedbackresourceoutcome.md) for a submission. |
+| [Delete educationFeedbackResourceOutcome](../api/educationfeedbackresourceoutcome-delete.md) | None | Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. |
 
 ## Properties
 
