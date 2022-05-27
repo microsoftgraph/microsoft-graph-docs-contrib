@@ -15,9 +15,7 @@ Namespace: microsoft.graph
 
 Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
-> [!NOTE]
-> This article provides steps about how to export personal data from the device or service and can be uses to support your obligations under the GDPR. You can correct, update, or delete identifiable information about end users, such as customer and employee user profiles and user work information that contain personal data, such as a user's name, work title, address, or phone number, in your [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) environment by using the [Azure portal](https://portal.azure.com/). You must sign in with an account that's a global admin for the directory.
-
+[!INCLUDE [GDPR-related guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 ## Permissions
 
@@ -208,7 +206,7 @@ Content-type: application/json
       }
     },
   "appliedConditionalAccessPolicies":[],
-  "authenticationProcessingDetails":[
+  "authenticationProcessingD[!INCLUDE [gdpr-msgraph-export-note](../../includes/gdpr-msgraph-export-note.md)]etails":[
       {
         "key":"Login Hint Present",
         "value":"True"

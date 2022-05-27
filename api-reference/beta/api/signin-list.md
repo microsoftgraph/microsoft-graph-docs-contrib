@@ -17,8 +17,7 @@ Get a list of [signIn](../resources/signin.md) objects. The list contains the us
 
 The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Azure Active Directory (Azure AD) [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
-> [!NOTE]
-> This article provides steps about how to export personal data from the device or service and can be uses to support your obligations under the GDPR. You can correct, update, or delete identifiable information about end users, such as customer and employee user profiles and user work information that contain personal data, such as a user's name, work title, address, or phone number, in your [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) environment by using the [Azure portal](https://portal.azure.com/). You must sign in with an account that's a global admin for the directory.
+[!INCLUDE [GDPR-related guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
 ## Permissions
