@@ -1,7 +1,7 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "cindycrane"
+author: "jconley76"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

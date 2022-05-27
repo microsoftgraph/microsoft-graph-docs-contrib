@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.UserRequestBuilderGetQueryParameters{
 	Count: true,
 	OrderBy: "displayName",
 	Search: "%22displayName:tier%22",
@@ -16,13 +16,12 @@ requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetRequestConfiguration{
+options := &msgraphsdk.UserRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 	Headers: headers,
 }
 groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.GroupsById(&groupId).TransitiveMembersById(&directoryObjectId).GetWithRequestConfigurationAndResponseHandler(options, nil)
+result, err := graphClient.GroupsById(&groupId).TransitiveMembers().User(group-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
