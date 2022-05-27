@@ -17,7 +17,7 @@ Get a list of [signIn](../resources/signin.md) objects. The list contains the us
 
 The maximum and default page size is 1,000 objects and by default, the most recent sign-ins are returned first. Only sign-in events that occurred within the Azure Active Directory (Azure AD) [default retention period](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) are available.
 
-[!INCLUDE [GDPR-related guidance](../../includes/gdpr-msgraph-export-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
 ## Permissions
