@@ -1,6 +1,6 @@
 ---
 title: "Remove a member"
-description: "Use this API to remove a member (user, group, device) from an administrative unit."
+description: "Use this API to remove a member (user, group, or device) from an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to remove a member (user, group, device) from an administrative unit.
+Use this API to remove a member (user, group, or device) from an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ The following is an example of the request. In the example below, `{id1}` repres
 
 <!-- {
   "blockType": "request",
-  "name": "delete_administrativeunit"
+  "name": "delete_administrativeunit_members"
 } -->
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id1}/members/{id2}/$ref

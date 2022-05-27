@@ -60,10 +60,10 @@ The following request will list the members of the administrative unit, returnin
 
 <!-- {
   "blockType": "request",
-  "name": "list_administrativeunit"
+  "name": "list_administrativeunit_members"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
+GET https://graph.microsoft.com/v1.0/groups/4696ba68-02eb-4f66-9d54-f5d09dca3f1a/members
 ```
 
 #### Response
@@ -73,8 +73,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUnit",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.administrativeUnit)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -107,7 +106,7 @@ The following request will list the member references of the administrative unit
 
 <!-- {
   "blockType": "request",
-  "name": "list_administrativeunit_refs"
+  "name": "list_administrativeunit_member_refs"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
@@ -120,8 +119,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUnit",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.administrativeUnit)"
 } -->
 ```http
 HTTP/1.1 200 OK
