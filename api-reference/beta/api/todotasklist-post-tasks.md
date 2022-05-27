@@ -85,6 +85,7 @@ Content-Type: application/json
 
 {
    "title":"A new task",
+   "categories": ["Important"],
    "linkedResources":[
       {
          "webUrl":"http://microsoft.com",
@@ -142,6 +143,7 @@ Content-Type: application/json
    "title":"A new task",
    "createdDateTime":"2020-08-18T09:03:05.8339192Z",
    "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "categories": ["Important"],
    "id":"AlMKXwbQAAAJws6wcAAAA=",
    "body":{
       "content":"",
