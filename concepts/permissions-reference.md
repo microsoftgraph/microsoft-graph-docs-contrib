@@ -763,7 +763,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Directory.Read.All_ | Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps, without a signed-in user. | Yes |
 | _Directory.ReadWrite.All_ | Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. | Yes |
-| _Directory.Write.Restricted_ |Manage all restricted resources  | Allows an app to manage restricted resources as per existing permissions of the app, without a signed-in user. | Yes | No |
+| _Directory.Write.Restricted_ |Manage all restricted resources  | Allows an app to manage restricted resources as per existing permissions of the app, without a signed-in user. | Yes |
 
 ### Remarks
 
