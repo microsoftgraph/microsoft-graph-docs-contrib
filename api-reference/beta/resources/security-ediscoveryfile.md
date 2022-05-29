@@ -1,9 +1,9 @@
 ---
 title: "ediscoveryFile resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Represents an eDiscovery file."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: resourcePageType
 ---
 
@@ -13,11 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [file](../resources/security-file.md).
-
+Entity that represents ediscovery ReviewSet files.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -27,34 +23,41 @@ Inherits from [file](../resources/security-file.md).
 |[Update ediscoveryFile](../api/security-ediscoveryfile-update.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Update the properties of an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 |[Delete ediscoveryFile](../api/security-ediscoveryreviewset-delete-files.md)|None|Deletes an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 |[List ediscoveryCustodian](../api/security-ediscoveryfile-list-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get the ediscoveryCustodian resources from the custodian navigation property.|
-|[Add ediscoveryCustodian](../api/security-ediscoveryfile-post-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Add custodian by posting to the custodian collection.|
-|[Remove ediscoveryCustodian](../api/security-ediscoveryfile-delete-custodian.md)|None|Remove an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[List tags](../api/security-ediscoveryfile-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get the ediscoveryReviewTag resources from the tags navigation property.|
-|[Add ediscoveryReviewTag](../api/security-ediscoveryfile-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Add tags by posting to the tags collection.|
-|[Remove tags](../api/security-ediscoveryfile-delete-tags.md)|None|Remove an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|dateTime|DateTimeOffset|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|extension|String|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|extractedTextContent|Stream|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|mediaType|String|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|name|String|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|otherProperties|[microsoft.graph.security.stringValueDictionary](../resources/security-stringvaluedictionary.md)|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|processingStatus|fileProcessingStatus|**TODO: Add Description** Inherited from [file](../resources/security-file.md).The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`, `unknownFutureValue`.|
-|senderAuthor|String collection|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|size|Int64|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
-|sourceType|sourceType|**TODO: Add Description** Inherited from [file](../resources/security-file.md).The possible values are: `mailbox`, `site`, `unknownFutureValue`.|
-|subjectTitle|String|**TODO: Add Description** Inherited from [file](../resources/security-file.md).|
+|content|Stream|The content stream of the original file.|
+|dateTime|DateTimeOffset|The datetime the file was last modified. [Learn more](../resources/security-ediscoveryfile#dateTime-values).|
+|extension|String|The file extension of the file such as png, msg, docx etc.|
+|extractedTextContent|Stream|The extracted text from the original file. For image based files, this would be the OCR text.|
+|id|String|The unique identifier for the file.|
+|mediaType|String|mimeType of the file. Eg: text/plain, charset=UTF-8, application/vnd.ms-outlook.|
+|name|String|The name of the file. Subject of the mail in case of email.|
+|otherProperties|String|A list of additional properties of the file like titleOfSharepointDocument, emailRecipients. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
+|processingStatus|fileProcessingStatus|The processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`.|
+|senderAuthor|String collection|The sender of the email or authors of the document.|
+|size|Int64|size of the file.|
+|sourceType|sourceType|The original source of the content. The possible values are: `mailbox`, `site`.|
+|subjectTitle|String|The subject of the email or title of the document|
 
+### dateTime values
+|File type|Definition|
+|:---|:---|
+Email |Sent date.
+Email attachments | Last modified date of the document;if not available, the parent's Sent date.
+Embedded documents | Last modified date of the document; if not available, the parent's last modified date.
+SPO documents (includes modern attachments) | SharePoint Last modified date; if not available, the documents last modified date.
+Non-Office 365 documents | Last modified date.
+Meetings | Meeting start date.
+VoiceMail | Sent date.
+IM |Sent date.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|custodian|[ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|**TODO: Add Description**|
-|tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|**TODO: Add Description**|
+|custodian|[ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Custodians associated with the file.|
+|tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Tags associated with the file.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
