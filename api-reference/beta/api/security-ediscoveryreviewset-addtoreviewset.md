@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryReviewSet: addToReviewSet"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Start the process of adding a collection from Microsoft 365 services to a review set."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # ediscoveryReviewSet: addToReviewSet
@@ -12,16 +12,17 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Start the process of adding a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md).
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,14 +47,18 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|**TODO: Add Description**|
-|additionalDataOptions|additionalDataOptions|**TODO: Add Description**|
+|search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|The ID of the eDiscovery search you'd like to add to the review set.|
+|additionalDataOptions|additionalDataOptions|The options for adding items to reviewSet.|
 
-
+### additionalDataOptions values
+|Name|Description|
+|:---|:---|
+|allVersions|include all versions of a sharepoint document matching the source collection query. Caution: SharePoint versions can significantly increase the volume of items |
+|linkedFiles|include linked files that were shared in outlook, teams, or yammer messages by attaching a link to the file.|
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -67,26 +72,11 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
 Content-Type: application/json
-Content-length: 549
-
 {
-  "search": {
-    "@odata.type": "#microsoft.graph.security.ediscoverySearch",
-    "id": "String (identifier)",
-    "displayName": "String",
-    "description": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+    "search": {
+        "id": "7c165312-d8db-48b5-9129-1af50932df53"
     },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "contentQuery": "String",
-    "dataSourceScopes": "String"
-  },
-  "additionalDataOptions": "String"
+    "additionalDataOptions": "linkedFiles"
 }
 ```
 
@@ -101,5 +91,5 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
+"location": "https://graph.microsoft.com/beta/compliance/ediscovery/cases('58399dff-cebe-478f-b1af-d3227f1fd645')/operations('a3986baecdba4112a63de26db25433bc')"
 ```
-

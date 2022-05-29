@@ -14668,13 +14668,13 @@ items:
             href: api/security-ediscoverycase-post-reviewsets.md
           - name: Get
             href: api/security-ediscoveryreviewset-get.md
+          - name: Add to review set
+            href: api/security-ediscoveryreviewset-addtoreviewset.md
           - name: Export
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
                 href: api/security-ediscoveryexportoperation-downloadurl.md
-          - name: Add to review set
-            href: api/security-ediscoveryreviewset-addtoreviewset.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
             items:
