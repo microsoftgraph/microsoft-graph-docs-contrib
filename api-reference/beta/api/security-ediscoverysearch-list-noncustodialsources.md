@@ -1,10 +1,10 @@
 ---
 title: "List noncustodialSources"
 description: "Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List noncustodialSources
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/noncustodialsources
 ```
 
 
@@ -76,18 +76,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-      "id": "df3ab25e-912d-2d31-b22e-1600ab7244e5",
-      "status": "String",
-      "holdStatus": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "releasedDateTime": "String (timestamp)",
-      "displayName": "String",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.ediscoveryNoncustodialDataSource)",
+    "value": [
+        {
+            "status": "released",
+            "holdStatus": "removing",
+            "createdDateTime": "2022-05-23T02:09:11.1395287Z",
+            "lastModifiedDateTime": "2022-05-23T02:09:11.1395287Z",
+            "releasedDateTime": "2022-05-26T18:37:12.3318976Z",
+            "id": "35393639323133394345384344303043",
+            "displayName": "U.S. Sales"
+        }
+    ]
 }
 ```
 

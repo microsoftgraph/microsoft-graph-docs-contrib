@@ -1,10 +1,10 @@
 ---
 title: "Create dataSource"
 description: "Create a new dataSource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Create dataSource
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -44,13 +44,12 @@ In the request body, supply a JSON representation of the [dataSource](../resourc
 
 You can specify the following properties when creating a **dataSource**.
 
+>**Note:** Either **email** or **site** are required, not both. 
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Optional.|
-
+|email|string|SMTP address of the mailbox. To get the email address of a group, use [List groups](../api/group-list.md) or [Get group](../api/group-get.md). You can query by the name of the group using `$filter`; for example, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName`.|
+|site|string|URL of the site; for example, `https://contoso.sharepoint.com/sites/HumanResources`. |
 
 
 ## Response
@@ -68,16 +67,11 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
-Content-Type: application/json
-Content-length: 190
-
 {
-  "@odata.type": "#microsoft.graph.security.dataSource",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+    "@odata.type": "microsoft.graph.security.siteSource",
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
 }
 ```
 

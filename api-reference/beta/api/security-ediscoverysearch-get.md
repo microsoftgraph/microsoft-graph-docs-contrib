@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,8 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}
-GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/addToReviewSetOperation/search
-GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/lastEstimateStatisticsOperation/search
 ```
 
 ## Optional query parameters
@@ -60,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/searches/60150269-9758-4439-9bc4-453c864d082f
 ```
 
 
@@ -78,22 +76,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoverySearch",
-    "id": "e68a48e3-0b6d-4b07-093d-8cede8afb4c0",
-    "displayName": "String",
-    "description": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/searches/$entity",
+    "dataSourceScopes": "none",
+    "description": "",
+    "lastModifiedDateTime": "2022-03-17T22:24:22.5038229Z",
+    "contentQuery": "messagekind:microsoftteams  ",
+    "id": "60150269-9758-4439-9bc4-453c864d082f",
+    "displayName": "loop only",
+    "createdDateTime": "2022-03-17T22:24:22.5038229Z",
+    "lastModifiedBy": null,
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "contentQuery": "String",
-    "dataSourceScopes": "String"
-  }
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        },
+        "application": {
+            "id": "80ccca67-54bd-44ab-8625-4b79c4dc7775",
+            "displayName": null
+        }
+    }
 }
 ```
 

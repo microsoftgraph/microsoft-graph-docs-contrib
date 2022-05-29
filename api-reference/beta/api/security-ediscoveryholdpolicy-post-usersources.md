@@ -1,9 +1,9 @@
 ---
 title: "Create userSource"
 description: "Create a new userSource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,14 +46,8 @@ You can specify the following properties when creating a **userSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md). Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [dataSource](../resources/security-datasource.md). Optional.|
-|email|String|**TODO: Add Description** Required.|
-|includedSources|sourceType|**TODO: Add Description**. The possible values are: `mailbox`, `site`, `unknownFutureValue`. Optional.|
-|siteWebUrl|String|**TODO: Add Description** Optional.|
-
+|email|String|SMTP address of the user.|
+|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 
 ## Response
@@ -72,18 +66,10 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 Content-Type: application/json
-Content-length: 271
 
 {
-  "@odata.type": "#microsoft.graph.security.userSource",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "email": "String",
-  "includedSources": "String",
-  "siteWebUrl": "String"
+    "email": "admin@M365x809305.onmicrosoft.com",
+    "includedSources": "mailbox, site"
 }
 ```
 
@@ -102,17 +88,25 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.userSource",
-  "id": "f3f6f158-d612-8e59-c294-47f183497310",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "email": "String",
-  "includedSources": "String",
-  "siteWebUrl": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/legalHolds('0053a61a3b6c42738f7606791716a22a')/userSources/$entity",
+    "displayName": "MOD Administrator",
+    "createdDateTime": "0001-01-01T00:00:00Z",
+    "holdStatus": "applied",
+    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+    "email": "admin@M365x809305.onmicrosoft.com",
+    "includedSources": "mailbox,site",
+    "siteWebUrl": "",
+    "createdBy": {
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        },
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph Explorer"
+        }
+    }
 }
 ```
 

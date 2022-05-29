@@ -1,11 +1,12 @@
 ---
 title: "Add ediscoveryNoncustodialDataSource"
 description: "Add noncustodialSources by posting to the noncustodialSources collection."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
+
 
 # Add ediscoveryNoncustodialDataSource
 Namespace: microsoft.graph.security
@@ -19,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,13 +47,7 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|dataSourceContainerStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `active`, `released`, `unknownFutureValue`. Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|releasedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [dataSourceContainer](../resources/security-datasourcecontainer.md). Optional.|
-
+|@odata.id|String|String that defines the non-custodial object. See the example that follows.|
 
 
 ## Response
@@ -69,16 +64,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/noncustodialSources/$ref
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/noncustodialSources/$ref
 Content-Type: application/json
-Content-length: 206
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "status": "String",
-  "holdStatus": "String",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String"
+    "@odata.id": "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources/39333641443238353535383731453339"
 }
 ```
 
@@ -94,17 +84,5 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryNoncustodialDataSource",
-  "id": "df3ab25e-912d-2d31-b22e-1600ab7244e5",
-  "status": "String",
-  "holdStatus": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "releasedDateTime": "String (timestamp)",
-  "displayName": "String",
-  "createdDateTime": "String (timestamp)"
-}
 ```
 

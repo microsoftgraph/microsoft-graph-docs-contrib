@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/userSources
-POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 ```
 
 ## Request headers

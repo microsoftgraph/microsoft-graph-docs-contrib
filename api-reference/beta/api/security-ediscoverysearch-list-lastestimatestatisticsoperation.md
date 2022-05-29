@@ -1,10 +1,10 @@
 ---
 title: "List ediscoveryEstimateOperations"
-description: "Get a list of the ediscoveryEstimateOperation objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Get the last ediscoveryEstimateOperation object and its properties."
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List ediscoveryEstimateOperations
@@ -12,16 +12,18 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
+Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
+
+>**Note:** This method only lists the last operation; it does not return a history of all operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.security.ediscoveryEstimateOperation not found
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/lastEstimateStatisticsOperation
 ```
 
 ## Optional query parameters
@@ -58,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.security.ediscoveryEstimateOperation not found
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/lastEstimateStatisticsOperation
 ```
 
 
@@ -76,29 +78,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryEstimateOperation",
-      "id": "f6a24ef7-5a80-9173-46ad-d6e96e42aed1",
-      "createdDateTime": "String (timestamp)",
-      "completedDateTime": "String (timestamp)",
-      "action": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "percentProgress": "Integer",
-      "status": "String",
-      "resultInfo": {
-        "@odata.type": "microsoft.graph.resultInfo"
-      },
-      "indexedItemCount": "Integer",
-      "indexedItemsSize": "Integer",
-      "unindexedItemCount": "Integer",
-      "unindexedItemsSize": "Integer",
-      "mailboxCount": "Integer",
-      "siteCount": "Integer"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.ediscoveryEstimateOperation",
+    "createdDateTime": "2022-05-29T18:56:48.4649404Z",
+    "completedDateTime": "2022-05-29T18:58:31.968065Z",
+    "percentProgress": 100,
+    "status": "succeeded",
+    "action": "estimateStatistics",
+    "id": "d80d2f2bc71d4544b75d4836bef4ff57",
+    "indexedItemCount": 1756,
+    "indexedItemsSize": 89489297,
+    "unindexedItemCount": 1,
+    "unindexedItemsSize": 57952,
+    "mailboxCount": 4,
+    "siteCount": 6,
+    "createdBy": {
+        "application": null,
+        "user": {
+            "id": "0d38933a-0bbd-41ca-9ebd-28c4b5ba7cb7",
+            "displayName": null,
+            "userPrincipalName": null
+        }
     }
-  ]
 }
 ```
 

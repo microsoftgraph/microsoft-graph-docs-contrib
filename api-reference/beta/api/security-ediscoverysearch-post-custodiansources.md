@@ -1,11 +1,12 @@
 ---
 title: "Add dataSource"
 description: "Add custodianSources by posting to the custodianSources collection."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
+
 
 # Add dataSource
 Namespace: microsoft.graph.security
@@ -19,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -46,10 +47,7 @@ You can specify the following properties when creating a **dataSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Optional.|
-|holdStatus|dataSourceHoldStatus|**TODO: Add Description**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`, `unknownFutureValue`. Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Optional.|
+|@odata.id|String|String that defines the custodial object. See the example that follows.|
 
 
 
@@ -67,17 +65,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/custodianSources/$ref
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/custodianSources/$ref
 Content-Type: application/json
-Content-length: 190
 
 {
-  "@odata.type": "#microsoft.graph.security.dataSource",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+    "@odata.id": "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/userSources/c25c3914-f9f7-43ee-9cba-a25377e0cec6"
 }
 ```
 
@@ -93,17 +85,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.dataSource",
-  "id": "df891f68-66b9-36e8-37a8-891bed5ba2ee",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
-}
 ```
-

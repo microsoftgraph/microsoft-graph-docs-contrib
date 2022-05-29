@@ -1,10 +1,10 @@
 ---
 title: "Update ediscoverySearch"
 description: "Update the properties of an ediscoverySearch object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Update ediscoverySearch
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,8 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}
-PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/addToReviewSetOperation/search
-PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/lastEstimateStatisticsOperation/search
 ```
 
 ## Request headers
@@ -47,20 +45,15 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|contentQuery|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|dataSourceScopes|dataSourceScopes|**TODO: Add Description**. The possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`, `unknownFutureValue`. Optional.|
-
+|contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions).  You can refine searches by using fields paired with values; for example, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
+|dataSourceScopes|dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`. **Note:** Either one custodian or specifying dataSourceScope is required when creating a source collection.|
+|description|String|The description of the **eDiscovery search**.|
+|displayName|String|The display name of the **eDiscovery search**.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [ediscoverySearch](../resources/security-ediscoverysearch.md) object in the response body.
 
 ## Examples
 
@@ -74,17 +67,9 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}
 Content-Type: application/json
-Content-length: 259
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoverySearch",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "contentQuery": "String",
-  "dataSourceScopes": "String"
+    "displayName": "Teams search"
 }
 ```
 
@@ -98,24 +83,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoverySearch",
-  "id": "e68a48e3-0b6d-4b07-093d-8cede8afb4c0",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "contentQuery": "String",
-  "dataSourceScopes": "String"
-}
+HTTP/1.1 204 No Content
 ```
-

@@ -1,10 +1,10 @@
 ---
 title: "List custodianSources"
 description: "Get the dataSource resources from the custodianSources navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List custodianSources
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/custodianSources
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/custodianSources
 ```
 
 
@@ -76,18 +76,94 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.dataSource",
-      "id": "df891f68-66b9-36e8-37a8-891bed5ba2ee",
-      "displayName": "String",
-      "holdStatus": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.dataSource)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.security.userSource",
+            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('c25c3914-f9f7-43ee-9cba-a25377e0cec6')",
+            "displayName": "MOD Administrator",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "holdStatus": "0",
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "email": "admin@M365x809305.onmicrosoft.com",
+            "includedSources": "mailbox,site",
+            "siteWebUrl": null,
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.userSource",
+            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('43434642-3137-3138-3432-374142313639')",
+            "displayName": "Alex Wilber",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "holdStatus": "0",
+            "id": "43434642-3137-3138-3432-374142313639",
+            "email": "AlexW@M365x809305.OnMicrosoft.com",
+            "includedSources": "mailbox,site",
+            "siteWebUrl": null,
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.unifiedGroupSource",
+            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources('32e14fa4-3106-4bd2-a245-34bf0c718a7e')",
+            "displayName": "Design (Mailbox)",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "holdStatus": "0",
+            "id": "32e14fa4-3106-4bd2-a245-34bf0c718a7e",
+            "includedSources": "mailbox,site",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.siteSource",
+            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources('169718e3-a8df-449d-bef4-ee09fe1ddc5d')",
+            "displayName": "U.S. Sales",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "holdStatus": "0",
+            "id": "169718e3-a8df-449d-bef4-ee09fe1ddc5d",
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.userSource",
+            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('c25c3914f9f743ee9cbaa25377e0cec6')/userSources('45354430-3730-4232-4236-323230383438')",
+            "displayName": "MOD Administrator",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "holdStatus": "0",
+            "id": "45354430-3730-4232-4236-323230383438",
+            "email": "admin@M365x809305.onmicrosoft.com",
+            "includedSources": "mailbox,site",
+            "siteWebUrl": null,
+            "createdBy": {
+                "application": null,
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": null
+                }
+            }
+        }
+    ]
 }
 ```
 

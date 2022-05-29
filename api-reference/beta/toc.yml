@@ -14619,11 +14619,11 @@ items:
           - name: List user sources
             href: api/security-ediscoverycustodian-list-usersources.md
           - name: Create user source
-            href: api/security-ediscoverycustodian-post-usersources.md
+            href: api/security-ediscoveryholdpolicy-post-usersources.md
           - name: List site sources
             href: api/security-ediscoverycustodian-list-sitesources.md
           - name: Create site source
-            href: api/security-ediscoverycustodian-post-sitesources.md
+            href: api/security-ediscoveryholdpolicy-post-sitesources.md
         - name: Search
           href: resources/security-ediscoverysearch.md
           items:
@@ -14654,11 +14654,11 @@ items:
           - name: Remove non-custodial data sources
             href: api/security-ediscoverysearch-delete-noncustodialsources.md
           - name: List additional sources
-            href: api/security-ediscoverysearch-list-additionalsources.md # TODO
+            href: api/security-ediscoverysearch-list-additionalsources.md
           - name: Add additional sources
             href: api/security-ediscoverysearch-post-additionalsources.md
-          - name: Remove additional sources
-            href: api/security-ediscoverysearch-delete-additionalsources.md
+          - name: Get last estimate statistics operation
+            href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
         - name: Review set
           href: resources/security-ediscoveryreviewset.md
           items:
