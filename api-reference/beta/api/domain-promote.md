@@ -66,6 +66,7 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
   "value": true
 } -->
 ```http
+true
 HTTP/1.1 200 OK
 Content-type: application/json
 ```
