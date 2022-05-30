@@ -1,6 +1,6 @@
 ---
 title: "fileUrlThreatSubmission resource type"
-description: "file threat submission submitted by file url"
+description: "Represents file threat submission which is submitted by file url"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for submitting file threat by file url. It is a reserved api and not supported by now.
+Represents file threat submission which is submitted by file url. It is a reserved api and not supported by now.
 
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
