@@ -1,6 +1,6 @@
 ---
 title: "emailContentThreatSubmission resource type"
-description: "email content threat submission"
+description: "Represents email content threat submission which is submitted by email file content"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for submitting email to MDO by email file content.
+Represents email content threat submission which is submitted by email file content.
 
 
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
