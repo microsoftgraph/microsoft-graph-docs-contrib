@@ -1,6 +1,6 @@
 ---
 title: "tenantAllowOrBlockListAction resource type"
-description: "tenant allow or block list action"
+description: "Represents tenant allow or block list action"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When admin creates email threat submission, tenant allow block list operation could be provided. When tenant allow block list operation is provided, the threat submission will auto add releated items (urls/attachments/senders) into tenant allow block list.
+Represents tenant allow or block list action. When admin creates email threat submission, tenant allow block list operation could be provided. When tenant allow block list operation is provided, the threat submission will auto add releated items (urls/attachments/senders) into tenant allow block list.
 
 ## Properties
 | Property           | Type                                        | Description                                                                      |
