@@ -72,6 +72,7 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
 Content-Type: application/json
+
 {
     "search": {
         "id": "7c165312-d8db-48b5-9129-1af50932df53"
@@ -91,5 +92,8 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-"location": "https://graph.microsoft.com/beta/compliance/ediscovery/cases('58399dff-cebe-478f-b1af-d3227f1fd645')/operations('a3986baecdba4112a63de26db25433bc')"
+
+{
+    "location": "https://graph.microsoft.com/beta/compliance/ediscovery/cases('58399dff-cebe-478f-b1af-d3227f1fd645')/operations('a3986baecdba4112a63de26db25433bc')"
+}
 ```

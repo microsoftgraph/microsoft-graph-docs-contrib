@@ -18,8 +18,8 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryCustodians](../api/security-ediscoveryfile-list-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get a list of the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) objects and their properties.|
-|[Create ediscoveryCustodian](../api/security-ediscoveryfile-post-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
+|[List ediscoveryCustodians](../api/security-ediscoverycase-list-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get a list of the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) objects and their properties.|
+|[Create ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[Get ediscoveryCustodian](../api/security-ediscoverycustodian-get.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Read the properties and relationships of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[Update ediscoveryCustodian](../api/security-ediscoverycustodian-update.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Update the properties of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[updateIndex](../api/security-ediscoverycustodian-updateindex.md)|Triggers a indexOperation to make a custodian and associated sources searchable.|

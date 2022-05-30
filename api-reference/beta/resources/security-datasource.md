@@ -16,12 +16,8 @@ Namespace: microsoft.graph.security
 The dataSource entity is an abstract base class used to identify sources of content for eDiscovery.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List dataSources](../api/security-ediscoverysearch-list-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get a list of the [dataSource](../resources/security-datasource.md) objects and their properties.|
-|[Get dataSource](../api/security-datasource-get.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Read the properties and relationships of a [dataSource](../resources/security-datasource.md) object.|
-|[Delete dataSource](../api/security-ediscoverysearch-delete-custodiansources.md)|None|Deletes a [dataSource](../resources/security-datasource.md) object.|
 
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

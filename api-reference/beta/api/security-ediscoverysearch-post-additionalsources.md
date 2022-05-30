@@ -67,6 +67,7 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
+
 {
     "@odata.type": "microsoft.graph.security.siteSource",
     "site": {

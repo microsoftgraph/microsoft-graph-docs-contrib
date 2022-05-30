@@ -18,16 +18,13 @@ Entity that represents ediscovery ReviewSet files.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List ediscoveryFiles](../api/security-ediscoveryreviewset-list-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Get a list of the [ediscoveryFile](../resources/security-ediscoveryfile.md) objects and their properties.|
-|[Create ediscoveryFile](../api/security-ediscoveryreviewset-post-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Create a new [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 |[Get ediscoveryFile](../api/security-ediscoveryfile-get.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Read the properties and relationships of an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
-|[Update ediscoveryFile](../api/security-ediscoveryfile-update.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Update the properties of an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
-|[Delete ediscoveryFile](../api/security-ediscoveryreviewset-delete-files.md)|None|Deletes an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |content|Stream|The content stream of the original file.|
-|dateTime|DateTimeOffset|The datetime the file was last modified. [Learn more](../resources/security-ediscoveryfile#dateTime-values).|
+|dateTime|DateTimeOffset|The datetime the file was last modified. See dateTime values for more details.|
 |extension|String|The file extension of the file such as png, msg, docx etc.|
 |extractedTextContent|Stream|The extracted text from the original file. For image based files, this would be the OCR text.|
 |id|String|The unique identifier for the file.|

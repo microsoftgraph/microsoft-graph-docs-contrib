@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the process of removing hold from eDiscovery non-custodial data sources. After the operation is created, you can get the status of the case operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [eDiscoveryHoldOpertaion]](../resources/security-ediscoveryholdoperation.md).
+Start the process of removing hold from eDiscovery non-custodial data sources. After the operation is created, you can get the status of the case operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,12 +62,13 @@ If successful, this action returns a `202 Accepted` response code.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.applyhold"
+  "name": "ediscoverycustodianthis.removehold"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources/removeHold
 Content-Type: application/json
+
 {
     "ids": [
         "39333641443238353535383731453339",
@@ -98,7 +99,7 @@ HTTP/1.1 202 Accepted
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "ediscoverycustodianthis.applyhold"
+  "name": "ediscoverycustodianthis.removehold"
 }
 -->
 ``` http
