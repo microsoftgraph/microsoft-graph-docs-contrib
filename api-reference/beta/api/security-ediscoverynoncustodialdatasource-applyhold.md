@@ -87,10 +87,6 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 202 Accepted
-
-{
-    "location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations('1ab699d7e53d46de944144c4a650d66f')",
-}
 ```
 
 ### Example 2. Apply hold to a single non-custodial data source.
@@ -116,8 +112,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 202 Accepted
-
-{
-    "location": "https://graph.microsoft.com/beta/security/cases/ediscoverycases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/operations('1ab699d7e53d46de944144c4a650d66f')",
-}
 ```

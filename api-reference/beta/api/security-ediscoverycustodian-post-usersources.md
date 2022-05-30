@@ -47,7 +47,7 @@ You can specify the following properties when creating a **userSource**.
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|String|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 ## Response
 

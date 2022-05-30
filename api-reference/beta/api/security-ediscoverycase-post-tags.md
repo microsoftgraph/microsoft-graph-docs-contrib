@@ -48,7 +48,7 @@ You can specify the following properties when creating an **ediscoveryReviewTag*
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
-|childSelectability|childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
+|childSelectability|String|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 ## Response
 
@@ -118,8 +118,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-
 POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
+
 {
     "displayName": "My tag API",
     "description": "Use Graph API to create tags",

@@ -54,7 +54,7 @@ You can specify the following properties when creating a **dataSource**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [dataSource](../resources/security-datasource.md) object in the response body.
+If successful, this method returns a `201 Created`.
 
 ## Examples
 
@@ -76,7 +76,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 }
 ```
 
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
@@ -88,17 +87,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.dataSource",
-  "id": "df891f68-66b9-36e8-37a8-891bed5ba2ee",
-  "displayName": "String",
-  "holdStatus": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
-}
 ```
-

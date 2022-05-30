@@ -51,8 +51,8 @@ The following table shows the parameters that can be used with this action.
 |description|String| Description of the export |
 |azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
 |azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
-|exportOptions|exportOptions|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|exportFileStructure| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
 ## Response
 
 If the export has started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [Export operation](../resources/security-ediscoveryexportoperation.md) that was created to handle the export.
@@ -88,7 +88,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 202 Accepted.
-"location": "https://graph.microsoft.com/beta/compliance/ediscovery/ediscoverycases('58399dff-cebe-478f-b1af-d3227f1fd645')/operations('f98a9f54efeb479ab75164cd7d0a98fb')"
+HTTP/1.1 202 Accepted
 ```
 

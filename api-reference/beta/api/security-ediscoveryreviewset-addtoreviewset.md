@@ -92,8 +92,4 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 204 No Content
-
-{
-    "location": "https://graph.microsoft.com/beta/compliance/ediscovery/cases('58399dff-cebe-478f-b1af-d3227f1fd645')/operations('a3986baecdba4112a63de26db25433bc')"
-}
 ```

@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.security.ediscoveryIndexOperation)"
+  "@odata.type": "microsoft.graph.security.ediscoveryIndexOperation"
 }
 -->
 ``` http
