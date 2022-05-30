@@ -1,6 +1,6 @@
 ---
 title: "submissionUserIdentity resource type"
-description: "threat submission user identity"
+description: "Represents threat submission user identity"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat submission user identity.
+Represents threat submission user identity.
 
 
 Inherits from graph.identity.
