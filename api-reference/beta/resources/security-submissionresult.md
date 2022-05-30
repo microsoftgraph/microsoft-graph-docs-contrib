@@ -1,6 +1,6 @@
 ---
 title: "submissionResult resource type"
-description: "threat submission result"
+description: "Represents threat submission result when threat submission is processed by Microsoft"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat submission result when threat submission is processed by system.
+Represents threat submission result when threat submission is processed by Microsoft.
 
 ## Properties
 | Property           | Type                               | Description                                                             |
