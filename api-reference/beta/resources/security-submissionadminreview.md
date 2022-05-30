@@ -1,6 +1,6 @@
 ---
 title: "submissionAdminReview resource type"
-description: "threat submission admin review data"
+description: "Represents admin review information for threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Admin review information for user reported messages.
+Represents admin review information for threat submission. Currently, only user reported email threat submission is supported and could be reviewed by administrator.
 
 ## Properties
 | Property       | Type                     | Description                                  |
