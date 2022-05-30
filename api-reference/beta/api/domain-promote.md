@@ -1,6 +1,6 @@
 ---
 title: "domain: promote"
-description: "Promotes subdomain to root domain."
+description: "Promote a verified subdomain to the root domain."
 author: "franqq"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
