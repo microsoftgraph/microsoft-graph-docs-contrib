@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Promotes subdomain to root domain.
-
-> **Important:**
-> Only applies to a verified domain. For a verified domain, the isVerified property of the [domain](../resources/domain.md) is true.
+Promote a verified subdomain to the root domain. A verified domain has its **isVerified** property set to `true`.
 
 ## Permissions
 
