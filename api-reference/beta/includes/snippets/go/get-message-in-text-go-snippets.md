@@ -13,12 +13,12 @@ requestParameters := &msgraphsdk.MessageRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"Prefer": "outlook.body-content-type="text""
 }
-options := &msgraphsdk.MessageRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.MessageRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Get(options)
+result, err := graphClient.Me().MessagesById(&messageId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

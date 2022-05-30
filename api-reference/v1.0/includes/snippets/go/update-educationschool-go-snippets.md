@@ -12,11 +12,8 @@ displayName := "Fabrikam Arts High School"
 requestBody.SetDisplayName(&displayName)
 description := "Magnate school for the arts. Los Angeles School District"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.EducationSchoolRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 educationSchoolId := "educationSchool-id"
-graphClient.Education().SchoolsById(&educationSchoolId).Patch(options)
+graphClient.Education().SchoolsById(&educationSchoolId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.DeviceRequestBuilderGetQueryParameters{
 	Select: "id,extensionAttributes",
 }
-options := &msgraphsdk.DeviceRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DeviceRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Get(options)
+result, err := graphClient.DevicesById(&deviceId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

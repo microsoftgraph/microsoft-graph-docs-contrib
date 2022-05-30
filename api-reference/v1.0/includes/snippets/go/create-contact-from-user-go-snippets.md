@@ -22,10 +22,7 @@ requestBody.SetEmailAddresses( []EmailAddress {
 requestBody.SetBusinessPhones( []String {
 	"+1 732 555 0102",
 }
-options := &msgraphsdk.ContactsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Contacts().Post(options)
+result, err := graphClient.Me().Contacts().Post(requestBody)
 
 
 ```

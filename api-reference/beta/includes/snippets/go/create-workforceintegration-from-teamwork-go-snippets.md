@@ -24,10 +24,7 @@ url := "url-value"
 requestBody.SetUrl(&url)
 supports := "supports-value"
 requestBody.SetSupports(&supports)
-options := &msgraphsdk.WorkforceIntegrationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Teamwork().WorkforceIntegrations().Post(options)
+result, err := graphClient.Teamwork().WorkforceIntegrations().Post(requestBody)
 
 
 ```

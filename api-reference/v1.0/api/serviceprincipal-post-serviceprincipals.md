@@ -26,6 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
+> [!IMPORTANT]
+> The following additional requirements must be met for an app to create a service principal:
+> + If the backing application is registered in the calling app's home tenant, the calling app must be the owner of the backing application.
+> + If the backing application is registered in another Azure AD tenant, the calling app must be assigned the `Cloud Application Administrator` or `Application Administrator` role.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +44,7 @@ POST /servicePrincipals
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain **appId**.
 
 ## Response
 

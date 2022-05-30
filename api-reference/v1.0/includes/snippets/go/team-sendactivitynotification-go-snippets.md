@@ -22,6 +22,12 @@ previewText := msgraphsdk.NewItemBody()
 requestBody.SetPreviewText(previewText)
 content := "New deployment requires your approval"
 previewText.SetContent(&content)
+recipient := msgraphsdk.NewTeamworkNotificationRecipient()
+requestBody.SetRecipient(recipient)
+recipient.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a",
+}
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
 	SetAdditionalData(map[string]interface{}{
@@ -29,11 +35,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 		"value": "6788662",
 	}
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
-}
-userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(options)
+teamId := "team-id"
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

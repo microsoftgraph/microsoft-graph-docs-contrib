@@ -57,10 +57,7 @@ requestBody.SetAttendees( []Attendee {
 		"type": "required",
 	}
 }
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Events().Post(options)
+result, err := graphClient.Me().Events().Post(requestBody)
 
 
 ```

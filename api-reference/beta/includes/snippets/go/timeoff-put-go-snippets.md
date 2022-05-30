@@ -14,13 +14,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"Prefer": "return=representation"
 }
-options := &msgraphsdk.TimeOffRequestBuilderPutOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.TimeOffRequestBuilderPutRequestConfiguration{
+	Headers: headers,
 }
 teamId := "team-id"
 timeOffId := "timeOff-id"
-graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().TimesOffById(&timeOffId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

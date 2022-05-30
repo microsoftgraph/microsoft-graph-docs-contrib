@@ -22,10 +22,7 @@ externalSource := "sis"
 requestBody.SetExternalSource(&externalSource)
 mailNickname := "fineartschool.net"
 requestBody.SetMailNickname(&mailNickname)
-options := &msgraphsdk.ClassesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Classes().Post(options)
+result, err := graphClient.Education().Classes().Post(requestBody)
 
 
 ```

@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"certificateAuthorities":  []Object {
 	}
 }
-options := &msgraphsdk.CertificateBasedAuthConfigurationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(options)
+graphClient.OrganizationById(&organizationId).CertificateBasedAuthConfiguration().Post(requestBody)
 
 
 ```
