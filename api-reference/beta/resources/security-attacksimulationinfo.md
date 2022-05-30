@@ -1,6 +1,6 @@
 ---
 title: "attackSimulationInfo resource type"
-description: "threat submission attack simulation info"
+description: "Represents threat submission attack simulation information"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
