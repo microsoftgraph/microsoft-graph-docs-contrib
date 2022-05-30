@@ -39,6 +39,7 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |status|microsoft.graph.ediscovery.dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
+
 ## Relationships
 
 |Relationship|Type|Description|
