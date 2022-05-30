@@ -87,4 +87,19 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 201 Created
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:35:02.33986Z",
+    "id": "42393244-3838-4636-3437-453030334136",
+    "createdBy": {
+        "user": {
+            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
+            "displayName": "Edisco Admin",
+            "userPrincipalname": "ediscoadmin@contoso.com"
+        }
+    }
+}
 ```

@@ -47,8 +47,8 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childTags|[microsoft.graph.security.eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
-|parent|[microsoft.graph.security.eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
+|childTags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
+|parent|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
