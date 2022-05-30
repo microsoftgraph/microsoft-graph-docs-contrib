@@ -39,14 +39,14 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 |id|String|Unique identifier of the nonCustodialDataSource. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
-|status|dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
-|holdStatus|dataSourceHoldStatus|The hold status of the nonCustodialDataSource.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|status|String|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
+|holdStatus|String|The hold status of the nonCustodialDataSource.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|dataSource|[dataSource](../resources/security-datasource.md)|User source or SharePoint site data source as non-custodial data source.|
-|lastIndexOperation|[ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the non-custodial data source.|
+|dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|User source or SharePoint site data source as non-custodial data source.|
+|lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the non-custodial data source.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

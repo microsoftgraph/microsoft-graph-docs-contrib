@@ -68,12 +68,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.caseSettings"
+  "truncated": true
 }
 -->
 
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
 ```

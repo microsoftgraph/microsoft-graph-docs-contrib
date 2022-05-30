@@ -21,7 +21,6 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |[List ediscoveryCustodians](../api/security-ediscoverycase-list-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get a list of the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) objects and their properties.|
 |[Create ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[Get ediscoveryCustodian](../api/security-ediscoverycustodian-get.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Read the properties and relationships of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
-|[Update ediscoveryCustodian](../api/security-ediscoverycustodian-update.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Update the properties of an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.|
 |[updateIndex](../api/security-ediscoverycustodian-updateindex.md)|Triggers a indexOperation to make a custodian and associated sources searchable.|
 |[activate](../api/security-ediscoverycustodian-activate.md)|None|Re-activate a custodian from a case.|
 |[release](../api/security-ediscoverycustodian-release.md)|None|Release a custodian from a case.|
@@ -46,7 +45,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
 |status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
-|holdStatus|dataSourceHoldStatus|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|String|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ### custodianStatus values
 
@@ -68,7 +67,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|lastIndexOperation|[ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the custodian.|
+|lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the custodian.|
 |siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Data source entity for SharePoint sites associated with the custodian.|
 |unifiedGroupSources|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Data source entity for groups associated with the custodian.|
 |userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Data source entity for a the custodian. This is the container for a custodian's mailbox and OneDrive for Business site.|

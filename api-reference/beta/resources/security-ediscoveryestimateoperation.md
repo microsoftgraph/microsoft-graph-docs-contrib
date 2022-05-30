@@ -40,7 +40,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|search|[ediscoverySearch](../resources/security-ediscoverysearch.md)|eDiscovery search.|
+|search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|eDiscovery search.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -29,7 +29,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|childSelectability|String|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the tag.|
 |description|String|The description for the tag.|
 |displayName|String|Display name of the tag.|
@@ -47,15 +47,14 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childTags|[eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
-|parent|[eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
+|childTags|[microsoft.graph.security.eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
+|parent|[microsoft.graph.security.eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryReviewTag",
-  "baseType": "microsoft.graph.security.tag",
   "openType": false
 }
 -->

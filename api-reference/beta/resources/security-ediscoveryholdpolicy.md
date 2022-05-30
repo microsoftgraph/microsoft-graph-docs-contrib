@@ -41,7 +41,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|the user who last modified the legal hold.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
-|status|policyStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
+|status|String|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
 
 ### legalHoldStatus values
 
@@ -63,7 +63,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryHoldPolicy",
-  "baseType": "microsoft.graph.security.policyBase",
   "openType": false
 }
 -->

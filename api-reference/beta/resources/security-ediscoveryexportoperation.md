@@ -43,8 +43,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|reviewSet|[ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|	Review set from where documents are exported.|
-|reviewSetQuery|[ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query which is used to filter the documents for export.|
+|reviewSet|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|	Review set from where documents are exported.|
+|reviewSetQuery|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|The review set query which is used to filter the documents for export.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -26,7 +26,7 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **siteSource** was created.|
 |displayName|String|The display name of the **siteSource**. This will be the name of the SharePoint site.|
 |id|String| The ID of the **siteSource**. The site source can be retrieved at any time with [Get site](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
-|holdStatus|dataSourceHoldStatus|The hold status of the **siteSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|String|The hold status of the **siteSource**.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|

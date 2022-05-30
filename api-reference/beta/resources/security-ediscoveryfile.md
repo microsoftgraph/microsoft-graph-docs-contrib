@@ -31,10 +31,10 @@ Entity that represents ediscovery ReviewSet files.
 |mediaType|String|mimeType of the file. Eg: text/plain, charset=UTF-8, application/vnd.ms-outlook.|
 |name|String|The name of the file. Subject of the mail in case of email.|
 |otherProperties|String|A list of additional properties of the file like titleOfSharepointDocument, emailRecipients. [Learn more](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).|
-|processingStatus|fileProcessingStatus|The processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`.|
+|processingStatus|String|The processing status after the item was added to a review set. The possible values are: `success`, `internalError`, `unknownError`, `processingTimeout`, `invalidFileId`, `fileSizeIsZero`, `fileSizeIsTooLarge`, `fileDepthLimitExceeded`, `fileBodyIsTooLong`, `fileTypeIsUnknown`, `fileTypeIsNotSupported`, `malformedFile`, `protectedFile`, `poisonFile`, `noReviewSetSummaryGenerated`, `extractionException`, `ocrProcessingTimeout`, `ocrFileSizeExceedsLimit`.|
 |senderAuthor|String collection|The sender of the email or authors of the document.|
 |size|Int64|size of the file.|
-|sourceType|sourceType|The original source of the content. The possible values are: `mailbox`, `site`.|
+|sourceType|String|The original source of the content. The possible values are: `mailbox`, `site`.|
 |subjectTitle|String|The subject of the email or title of the document|
 
 ### dateTime values
@@ -51,7 +51,7 @@ IM |Sent date.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|custodian|[ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Custodians associated with the file.|
+|custodian|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Custodians associated with the file.|
 |tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Tags associated with the file.|
 
 ## JSON representation
@@ -60,7 +60,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryFile",
-  "baseType": "microsoft.graph.security.file",
   "openType": false
 }
 -->

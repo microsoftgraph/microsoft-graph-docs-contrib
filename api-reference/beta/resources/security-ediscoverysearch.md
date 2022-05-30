@@ -63,9 +63,9 @@ Represents an eDiscovery search. For details, see [Collect data for a case in eD
 |Relationship|Type|Description|
 |:---|:---|:---|
 |additionalSources|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Adds an additional source to the **eDiscovery search**.|
-|addToReviewSetOperation|[ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Adds the results of the **eDiscovery search** to the specified **reviewSet**.|
+|addToReviewSetOperation|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Adds the results of the **eDiscovery search** to the specified **reviewSet**.|
 |custodianSources|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|**Custodian** sources that are included in the **eDiscovery search**.|
-|lastEstimateStatisticsOperation|[ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|The last estimate operation associated with the **eDiscovery search**.|
+|lastEstimateStatisticsOperation|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|The last estimate operation associated with the **eDiscovery search**.|
 |noncustodialSources|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|**noncustodialDataSource** sources that are included in the **eDiscovery search**|
 
 ## JSON representation
@@ -74,7 +74,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoverySearch",
-  "baseType": "microsoft.graph.security.search",
   "openType": false
 }
 -->
