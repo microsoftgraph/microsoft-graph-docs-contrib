@@ -18,13 +18,7 @@ The container for a custodian's group.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List unifiedGroupSources](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects and their properties.|
-|[Create unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
-|[Get unifiedGroupSource](../api/security-unifiedgroupsource-get.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Read the properties and relationships of an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
-|[Delete unifiedGroupSource](../api/security-ediscoverycustodian-delete-unifiedgroupsources.md)|None|Deletes an [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

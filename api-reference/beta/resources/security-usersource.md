@@ -18,13 +18,7 @@ The container for a user's mailbox and OneDrive for Business site.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects and their properties.|
-|[Create userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
-|[Get userSource](../api/security-usersource-get.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Read the properties and relationships of a [userSource](../resources/security-usersource.md) object.|
-|[Delete userSource](../api/security-ediscoverycustodian-delete-usersources.md)|None|Deletes a [userSource](../resources/security-usersource.md) object.|
-
+None. 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

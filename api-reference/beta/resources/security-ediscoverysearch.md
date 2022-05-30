@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents an eDiscovery search. For details, see [Collect data for a case in eDiscovery (Premium)](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
-Inherits from [search](../resources/security-search.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -29,15 +28,10 @@ Inherits from [search](../resources/security-search.md).
 |[purgeData](../api/security-ediscoverysearch-purgedata.md)|None|Run a purge data operation on the Teams data contained in the eDiscovery search.|
 |[List additionalSources](../api/security-ediscoverysearch-list-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the dataSource resources from the additionalSources navigation property.|
 |[Create dataSource](../api/security-ediscoverysearch-post-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Create a new dataSource object.|
-|[List ediscoveryAddToReviewSetOperation](../api/security-ediscoverysearch-list-addtoreviewsetoperation.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) collection|Get the ediscoveryAddToReviewSetOperation resources from the addToReviewSetOperation navigation property.|
-|[Add ediscoveryAddToReviewSetOperation](../api/security-ediscoverysearch-post-addtoreviewsetoperation.md)|[microsoft.graph.security.ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)|Add addToReviewSetOperation by posting to the addToReviewSetOperation collection.|
-|[Remove ediscoveryAddToReviewSetOperation](../api/security-ediscoverysearch-delete-addtoreviewsetoperation.md)|None|Remove an [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md) object.|
-|[List custodianSources](../api/security-ediscoverysearch-list-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
-|[Add dataSource](../api/security-ediscoverysearch-post-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Add custodianSources by posting to the custodianSources collection.|
-|[Remove custodianSources](../api/security-ediscoverysearch-delete-custodiansources.md)|None|Remove a [dataSource](../resources/security-datasource.md) object.|
 |[List ediscoveryEstimateOperation](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) collection|Get the ediscoveryEstimateOperation resources from the lastEstimateStatisticsOperation navigation property.|
-|[Add ediscoveryEstimateOperation](../api/security-ediscoverysearch-post-lastestimatestatisticsoperation.md)|[microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|Add lastEstimateStatisticsOperation by posting to the lastEstimateStatisticsOperation collection.|
-|[Remove ediscoveryEstimateOperation](../api/security-ediscoverysearch-delete-lastestimatestatisticsoperation.md)|None|Remove an [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) object.|
+|[List custodianSources](../api/security-ediscoverysearch-list-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md) collection|Get the dataSource resources from the custodianSources navigation property.|
+|[Add custodianSources](../api/security-ediscoverysearch-post-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Add custodianSources by posting to the custodianSources collection.|
+|[Remove custodianSources](../api/security-ediscoverysearch-delete-custodiansources.md)|None|Remove a [dataSource](../resources/security-datasource.md) object.|
 |[List noncustodialSources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) collection|Get the ediscoveryNoncustodialDataSource resources from the noncustodialSources navigation property.|
 |[Add ediscoveryNoncustodialDataSource](../api/security-ediscoverysearch-post-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Add noncustodialSources by posting to the noncustodialSources collection.|
 |[Remove noncustodialSources](../api/security-ediscoverysearch-delete-noncustodialsources.md)|None|Remove an [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.|

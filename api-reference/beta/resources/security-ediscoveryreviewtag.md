@@ -18,18 +18,13 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List ediscoveryReviewTags](../api/security-ediscoveryfile-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get a list of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.|
-|[Create ediscoveryReviewTag](../api/security-ediscoveryfile-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[List ediscoveryReviewTags](../api/security-ediscoverycase-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get a list of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.|
+|[Create ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Get ediscoveryReviewTag](../api/security-ediscoveryreviewtag-get.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Read the properties and relationships of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[Update ediscoveryReviewTag](../api/security-ediscoveryreviewtag-update.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[Delete ediscoveryReviewTag](../api/security-ediscoveryfile-delete-tags.md)|None|Deletes an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+|[Delete ediscoveryReviewTag](../api/security-ediscoverycase-delete-tags.md)|None|Deletes an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
 |[asHierarchy](../api/security-ediscoveryreviewtag-ashierarchy.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|List tags organized as hierarchy.|
-|[List childTags](../api/security-ediscoveryfile-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get the ediscoveryReviewTag resources from the childTags navigation property.|
-|[Add childTags](../api/security-ediscoveryreviewtag-post-childtags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Add childTags by posting to the childTags collection.|
-|[Remove childTags](../api/security-ediscoveryreviewtag-delete-childtags.md)|None|Remove an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
-|[List parentTag](../api/security-ediscoveryfile-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get the ediscoveryReviewTag resources from the parent navigation property.|
-|[Add parentTag](../api/security-ediscoveryreviewtag-post-parent.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Add parent by posting to the parent collection.|
-|[Remove parentTag](../api/security-ediscoveryreviewtag-delete-parent.md)|None|Remove an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.|
+
 
 ## Properties
 |Property|Type|Description|
@@ -52,8 +47,8 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|childTags|[microsoft.graph.ediscovery.tag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
-|parent|[microsoft.graph.ediscovery.tag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
+|childTags|[eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns the tags that are a child of a tag.|
+|parent|[eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Returns the parent tag of the specified tag.|
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {

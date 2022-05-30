@@ -18,13 +18,7 @@ IInherits from [dataSource](../resources/security-datasource.md).
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects and their properties.|
-|[Create siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
-|[Get siteSource](../api/security-sitesource-get.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Read the properties and relationships of a [siteSource](../resources/security-sitesource.md) object.|
-|[Delete siteSource](../api/security-ediscoverycustodian-delete-sitesources.md)|None|Deletes a [siteSource](../resources/security-sitesource.md) object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
