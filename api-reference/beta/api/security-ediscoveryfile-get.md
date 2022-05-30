@@ -1,10 +1,10 @@
 ---
 title: "Get ediscoveryFile"
 description: "Read the properties and relationships of an ediscoveryFile object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get ediscoveryFile
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/files/000168cdf05c48d98faac7bff8719726a25da40bb2b9c369fb580b8797abf661
 ```
 
 
@@ -76,26 +76,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoveryFile",
-    "id": "ac6811f5-e717-68dc-48cb-019b04e7c6a3",
-    "dateTime": "String (timestamp)",
-    "size": "Integer",
-    "name": "String",
-    "sourceType": "String",
-    "senderAuthor": [
-      "String"
-    ],
-    "subjectTitle": "String",
-    "extension": "String",
-    "mediaType": "String",
-    "content": "Stream",
-    "extractedTextContent": "Stream",
-    "processingStatus": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/reviewSets('273f11a1-17aa-419c-981d-ff10d33e420f')/files/$entity",
+    "id": "000168cdf05c48d98faac7bff8719726a25da40bb2b9c369fb580b8797abf661",
+    "dateTime": "2017-11-02T15:07:10Z",
+    "size": 921,
+    "name": "Report/CustomVisuals/WordCloud1447959067750/package.json",
+    "sourceType": "site",
+    "subjectTitle": "Operations Analytics.pbix",
+    "extension": "json",
+    "mediaType": "application/json; charset=ISO-8859-1",
+    "processingStatus": "success",
     "otherProperties": {
-      "@odata.type": "microsoft.graph.security.stringValueDictionary"
+        "Source": null,
+        "Participants": null,
+        "To": null,
+        "Cc": null,
+        "Bcc": null,
+        "Recipients": null,
+        "Author": null,
+        "CreatedTime": null,
+        "Received": null,
+        "Sent": null,
+        "LastModifiedDate": "2017-11-02T15:07:10Z",
+        "MessageType": null,
+        "Title": null,
+        "EmailHasAttachment": false,
+        "EmailImportance": "",
+        "WordCount": 25,
+        "ErrorIgnored": false,
+        "IsFromErrorRemediation": false,
+        "EmailSecurity": 0,
+        "EmailSensitivity": 0,
+        "IsModernAttachment": false,
+        "IsEmbeddedDocument": true,
+        "ComplianceLabels": null,
+        "ConversationId": null,
+        "ConversationIndex": null,
+        "ItemClass": null,
+        "LocationName": null,
+        "MeetingStartDate": null,
+        "MeetingEndDate": null,
+        "ParticipantDomains": null,
+        "RecipientDomains": null,
+        "Sender": null,
+        "SenderDomain": null
     }
-  }
 }
 ```
 

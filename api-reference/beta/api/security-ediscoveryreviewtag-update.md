@@ -1,11 +1,12 @@
 ---
 title: "Update ediscoveryReviewTag"
 description: "Update the properties of an ediscoveryReviewTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
+
 
 # Update ediscoveryReviewTag
 Namespace: microsoft.graph.security
@@ -19,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,9 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewTagId}
-PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/tags/{ediscoveryReviewTagId}
-PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/tags/{ediscoveryReviewTagId}/parent
-PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/tags/{ediscoveryReviewTagId}/childTags/{ediscoveryReviewTagId}
 ```
 
 ## Request headers
@@ -48,17 +46,14 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [tag](../resources/security-tag.md). Optional.|
-|childSelectability|childSelectability|**TODO: Add Description**. The possible values are: `One`, `Many`, `unknownFutureValue`. Optional.|
-
+|displayName|String|Display name of the tag. Required.|
+|description|String|Description of the tag. Optional.|
+|childSelectability|childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,18 +65,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewTagId}
-Content-Type: application/json
-Content-length: 235
+PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/062de822f17a4a2e9b833aa3f6c37108
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "childSelectability": "String"
+    "displayName": "My tag API 2",
+    "description": "Use Graph API to create tags (updated)"
 }
 ```
 
@@ -95,19 +83,7 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+HTTP/1.1 204 No Content
 
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-  "id": "0caa0358-8777-33e3-685e-922bf1ad44d7",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "childSelectability": "String"
-}
 ```
 

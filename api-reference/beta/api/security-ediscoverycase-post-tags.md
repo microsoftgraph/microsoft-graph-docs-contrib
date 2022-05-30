@@ -56,7 +56,8 @@ If successful, this method returns a `201 Created` response code and an [ediscov
 
 ## Examples
 
-### Request
+### Create a tag
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -73,7 +74,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ce
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -107,3 +108,55 @@ Content-Type: application/json
 }
 ```
 
+### Create a tag with a parent
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_ediscoveryreviewtag_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
+{
+    "displayName": "My tag API",
+    "description": "Use Graph API to create tags",
+    "childSelectability": "Many",
+    "parent@odata.bind":""
+}
+```
+
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/tags/$entity",
+    "displayName": "My tag API",
+    "description": "Use Graph API to create tags",
+    "lastModifiedDateTime": "2022-05-23T19:58:26.1573076Z",
+    "childSelectability": "Many",
+    "id": "7c6cc351-fb90-431f-8562-1b607a3144a4",
+    "createdBy": {
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+        },
+        "application": {
+            "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "displayName": "Graph Explorer"
+        }
+    }
+}
+```

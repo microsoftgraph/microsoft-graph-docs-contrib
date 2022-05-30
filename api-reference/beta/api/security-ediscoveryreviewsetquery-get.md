@@ -1,10 +1,10 @@
 ---
 title: "Get ediscoveryReviewSetQuery"
 description: "Read the properties and relationships of an ediscoveryReviewSetQuery object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # Get ediscoveryReviewSetQuery
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /ediscoveryExportOperation/reviewSetQuery
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries/{queryId}
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/queries/fcb86cd1-50e0-427c-840e-ba6f087364e5
 ```
 
 
@@ -76,21 +76,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.ediscoveryReviewSetQuery",
-    "id": "d04787b8-e15a-c966-eed2-8c5591777334",
-    "displayName": "String",
-    "description": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/reviewSets('273f11a1-17aa-419c-981d-ff10d33e420f')/queries/$entity",
+    "description": null,
+    "lastModifiedDateTime": "2022-05-29T23:39:51.3307953Z",
+    "contentQuery": "((Author=\"edison\"))",
+    "id": "fcb86cd1-50e0-427c-840e-ba6f087364e5",
+    "displayName": "My Query 1",
+    "createdDateTime": "2022-05-29T23:39:51.3307953Z",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": null,
+            "userPrincipalName": "c25c3914-f9f7-43ee-9cba-a25377e0cec6"
+        }
     },
-    "createdDateTime": "String (timestamp)",
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "contentQuery": "String"
-  }
+        "application": null,
+        "user": {
+            "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+            "displayName": null,
+            "userPrincipalName": "c25c3914-f9f7-43ee-9cba-a25377e0cec6"
+        }
+    }
 }
 ```
 

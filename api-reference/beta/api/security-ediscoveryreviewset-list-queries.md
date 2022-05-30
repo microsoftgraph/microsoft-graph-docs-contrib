@@ -1,10 +1,10 @@
 ---
 title: "List ediscoveryReviewSetQuery"
 description: "Get the ediscoveryReviewSetQuery resources from the reviewSetQuery navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # List ediscoveryReviewSetQuery
@@ -19,10 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
-
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 ## HTTP request
 
 <!-- {
@@ -30,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /ediscoveryExportOperation/reviewSetQuery
+GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries
 ```
 
 ## Optional query parameters
@@ -58,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/queries
 ```
 
 
@@ -76,23 +75,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryReviewSetQuery",
-      "id": "d04787b8-e15a-c966-eed2-8c5591777334",
-      "displayName": "String",
-      "description": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "contentQuery": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('58399dff-cebe-478f-b1af-d3227f1fd645')/reviewSets('273f11a1-17aa-419c-981d-ff10d33e420f')/queries",
+    "value": [
+        {
+            "lastModifiedDateTime": "2022-05-29T20:49:47.9289317Z",
+            "contentQuery": "((((FileClass=\"Email\") AND (InclusiveType=\"InclusiveMinus\" OR InclusiveType=\"Inclusive\")) OR ((FileClass=\"Attachment\") AND (UniqueInEmailSet=\"true\")) OR ((FileClass=\"Document\") AND (MarkAsRepresentative=\"Unique\")) OR ((FileClass=\"Conversation\"))))",
+            "id": "837335b0-1943-444d-a3d1-5522cc21c5a4",
+            "displayName": "[AutoGen] For Review",
+            "createdDateTime": "2022-05-29T20:49:47.9289317Z",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        },
+        {
+            "lastModifiedDateTime": "2022-05-29T20:49:48.0539099Z",
+            "contentQuery": "((FileType:gz OR FileType:gzip OR FileType:bz2 OR FileType:zip OR FileType:7z OR FileType:rar OR FileType:vhd OR FileType:mbox OR FileType:pst OR FileType:sfx) OR (Size<\"3072B\" AND (FileType:gif OR FileType:bmp OR FileType:png OR FileType:jpg OR FileType:jpeg OR FileType:tif OR FileType:tiff OR FileType:emf OR FileType:pct OR FileType:pic)))",
+            "id": "977ad4d5-3e5c-4594-8cb6-7d09dbcddf21",
+            "displayName": "[AutoGen] Potentially Immaterial Items",
+            "createdDateTime": "2022-05-29T20:49:48.0539099Z",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 

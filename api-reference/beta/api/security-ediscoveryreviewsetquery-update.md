@@ -1,12 +1,11 @@
 ---
 title: "Update ediscoveryReviewSetQuery"
 description: "Update the properties of an ediscoveryReviewSetQuery object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
-
 # Update ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
 
@@ -19,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /ediscoveryExportOperation/reviewSetQuery
+PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries/{queryId}
 ```
 
 ## Request headers
@@ -42,22 +41,16 @@ PATCH /ediscoveryExportOperation/reviewSetQuery
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|createdBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
-|contentQuery|String|**TODO: Add Description** Inherited from [search](../resources/security-search.md). Optional.|
+|displayName|String|The name of the query. Required.|
+|contentQuery|String|The KQL query for the review set. [Learn more.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object in the response body.
+If successful, this method returns a `204 No content` response code.
 
 ## Examples
 
@@ -71,16 +64,10 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
 Content-Type: application/json
-Content-length: 234
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewSetQuery",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "contentQuery": "String"
+    "displayName": "My Query 1 (update)",
+    "contentQuery": "(Author=\"edisons\")"
 }
 ```
 
@@ -94,23 +81,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.ediscoveryReviewSetQuery",
-  "id": "d04787b8-e15a-c966-eed2-8c5591777334",
-  "displayName": "String",
-  "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "contentQuery": "String"
-}
+HTTP/1.1 204 No content.
 ```
-

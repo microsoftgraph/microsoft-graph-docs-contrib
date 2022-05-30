@@ -14704,10 +14704,6 @@ items:
               href: api/security-ediscoveryreviewset-list-files.md
             - name: Get
               href: api/security-ediscoveryfile-get.md
-            - name: Get extracted text content
-              href: api/security-ediscoveryfile-extractedTextContent
-            - name: Download content
-              href: api/security-ediscoveryfile-content
         - name: Tag
           href: resources/security-ediscoveryreviewtag.md
           items:
@@ -14721,16 +14717,6 @@ items:
             href: api/security-ediscoveryreviewtag-update.md
           - name: Delete
             href: api/security-ediscoverycase-delete-tags.md
-          - name: List child tags
-            href: api/security-ediscoveryfile-list-tags.md
-          - name: Add child tags
-            href: api/security-ediscoveryreviewtag-post-childtags.md
-          - name: Remove child tags
-            href: api/security-ediscoveryreviewtag-delete-childtags.md
-          - name: Add parent tag
-            href: api/security-ediscoveryreviewtag-post-parent.md
-          - name: Remove parent tag
-            href: api/security-ediscoveryreviewtag-delete-parent.md
           - name: List tags as hierarchy
             href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection

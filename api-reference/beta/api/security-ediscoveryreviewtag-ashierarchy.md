@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryReviewTag: asHierarchy"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "List tag as hierarchy*"
+author: "SeunginLyu"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: apiPageType
+ms.prod: "ediscovery"
+doc_type: "apiPageType"
 ---
 
 # ediscoveryReviewTag: asHierarchy
@@ -12,16 +12,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+List tags with the tag hierarchy shown.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/asHierarchy
-GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/tags/asHierarchy
-GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/files/{ediscoveryFileId}/tags/{ediscoveryReviewTagId}/childTags/asHierarchy
 ```
 
 ## Request headers
@@ -57,7 +54,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/asHierarchy
+GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/asHierarchy
 ```
 
 
@@ -75,19 +72,93 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
-      "id": "String (identifier)",
-      "displayName": "String",
-      "description": "String",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "childSelectability": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(ediscoveryReviewTag)",
+    "@odata.count": 5,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
+            "displayName": "My tag API 2",
+            "description": "Use Graph API to create tags (updated)",
+            "lastModifiedDateTime": "2022-05-30T00:27:41.6407249Z",
+            "childSelectability": "Many",
+            "id": "062de822f17a4a2e9b833aa3f6c37108",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "childTags": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
+            "displayName": "Responsive",
+            "description": "",
+            "lastModifiedDateTime": "2022-05-23T19:41:24.4237284Z",
+            "childSelectability": "One",
+            "id": "d3d99dc704a74801b792b3e1e722aa0d",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "childTags": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
+            "displayName": "Not responsive",
+            "lastModifiedDateTime": "2022-05-23T19:41:31.3381716Z",
+            "childSelectability": "One",
+            "id": "ced26633616a434abd83762d49a25a6c",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "childTags": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
+            "displayName": "Processing",
+            "description": "Determine whether to outsource processing",
+            "lastModifiedDateTime": "2022-05-23T19:46:03.8746996Z",
+            "childSelectability": "Many",
+            "id": "d8580989505c4fb3a25b845013697cf7",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                }
+            },
+            "childTags": []
+        },
+        {
+            "@odata.type": "#microsoft.graph.security.ediscoveryReviewTag",
+            "displayName": "My tag API",
+            "description": "Use Graph API to create tags",
+            "lastModifiedDateTime": "2022-05-23T19:58:26.1573076Z",
+            "childSelectability": "Many",
+            "id": "7c6cc351-fb90-431f-8562-1b607a3144a4",
+            "createdBy": {
+                "user": {
+                    "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
+                    "displayName": "MOD Administrator",
+                    "userPrincipalName": "admin@M365x809305.onmicrosoft.com"
+                },
+                "application": {
+                    "id": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+                    "displayName": "Graph Explorer"
+                }
+            },
+            "childTags": []
+        }
+    ]
 }
 ```
 

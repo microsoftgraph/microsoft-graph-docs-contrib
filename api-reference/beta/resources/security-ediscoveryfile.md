@@ -22,8 +22,6 @@ Entity that represents ediscovery ReviewSet files.
 |[Get ediscoveryFile](../api/security-ediscoveryfile-get.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Read the properties and relationships of an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 |[Update ediscoveryFile](../api/security-ediscoveryfile-update.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md)|Update the properties of an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
 |[Delete ediscoveryFile](../api/security-ediscoveryreviewset-delete-files.md)|None|Deletes an [ediscoveryFile](../resources/security-ediscoveryfile.md) object.|
-|[List ediscoveryCustodian](../api/security-ediscoveryfile-list-custodian.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) collection|Get the ediscoveryCustodian resources from the custodian navigation property.|
-|[List tags](../api/security-ediscoveryfile-list-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Get the ediscoveryReviewTag resources from the tags navigation property.|
 
 ## Properties
 |Property|Type|Description|
