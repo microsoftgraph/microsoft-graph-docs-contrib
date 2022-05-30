@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmission resource type"
-description: "email threat submission"
+description: "Represents email threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for email threat submission.
+This is an abstract type for email threat submission. 
+
+It represents email threat submission. It is used to submit suspected spam emails, malware emails, phishing emails to Microsoft 365 Defender for Office. It could also be used to submit false positive cases which should not have been blocked by Microsoft 365 Defender for Office, e.g, not junk emails.
 
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
