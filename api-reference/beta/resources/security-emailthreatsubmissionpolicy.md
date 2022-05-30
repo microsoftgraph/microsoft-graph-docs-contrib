@@ -15,7 +15,6 @@ Namespace: microsoft.graph.security
 
 Represents email threat submission policy. It is used for customizing your organization's experience and policy when reporting potential threats and spam in Microsoft Outlook.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|ThreatSubmissionPolicies.ReadWrite.All|
-|Delegated (personal Microsoft account)|N/A|
+|Delegated (personal Microsoft account)|Not supported|
 |Application|ThreatSubmissionPolicy.ReadWrite.All|
 
 ## HTTP request
