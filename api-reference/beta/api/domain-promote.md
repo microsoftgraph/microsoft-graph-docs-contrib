@@ -59,7 +59,7 @@ If successful, this method returns `200 OK` response code with a boolean value o
 POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 
 ##### Response
-Note: The response object shown here might be shortened for readability.
+>Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
