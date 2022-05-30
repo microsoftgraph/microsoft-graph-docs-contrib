@@ -1,6 +1,6 @@
 ---
 title: "submissionDetectedFile resource type"
-description: "threat submission detected file"
+description: "Represents threat submission detected file information"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents threat submission detected file information.
 
 ## Properties
 | Property | Type   | Description    |
