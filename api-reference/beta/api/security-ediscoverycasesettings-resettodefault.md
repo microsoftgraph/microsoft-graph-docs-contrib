@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# caseSettings: resetToDefault
+# eDiscoveryCaseSettings: resetToDefault
 
 Namespace: microsoft.graph.security
 

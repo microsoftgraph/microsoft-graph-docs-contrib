@@ -1,13 +1,13 @@
 ---
 title: "Reopen eDiscoveryCase"
-description: "Reopen an eDiscovery case that was closed."
+description: "Reopen an eDiscoveryCase that was closed."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: "apiPageType"
 ---
 
-# case: reopen
+# eDiscoveryCase: reopen
 
 Namespace: microsoft.graph.security
 
