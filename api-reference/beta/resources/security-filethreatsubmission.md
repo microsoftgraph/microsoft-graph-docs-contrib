@@ -1,6 +1,6 @@
 ---
 title: "fileThreatSubmission resource type"
-description: "file threat submission"
+description: "Represents file threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for submitting file threat.
+This is an abstract type for file threat submission. 
+
+It represents file threat submission. It is used to submit suspected malware email attachments to Microsoft 365 Defender for Office. It could also be used to submit false positive cases which should not have been blocked by Microsoft 365 Defender for Office, e.g, safe email attachment.
+
+Currently, file threat submission is routed to Microsoft 365 Defender for Office. In future, it may be routed to Mcirosoft 365 Defender for Endpoint. This is a unified interface for file threat submission not matter how backend is changed. 
 
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
