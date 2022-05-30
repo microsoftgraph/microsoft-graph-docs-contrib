@@ -117,7 +117,8 @@ Content-Type: application/json
             "methodsRegistered": [
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
@@ -129,7 +130,8 @@ Content-Type: application/json
             "isMfaRegistered": false,
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
-            "methodsRegistered": []
+            "methodsRegistered": [],
+            "defaultMethod": ""    
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
@@ -145,7 +147,8 @@ Content-Type: application/json
                 "mobilePhone",
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "mobilePhone"
         }
     ]
 }

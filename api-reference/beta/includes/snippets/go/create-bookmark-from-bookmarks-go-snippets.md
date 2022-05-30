@@ -33,16 +33,10 @@ requestBody.SetPlatforms( []DevicePlatformType {
 requestBody.SetTargetedVariations( []AnswerVariant {
 	msgraphsdk.NewAnswerVariant(),
 	SetAdditionalData(map[string]interface{}{
-		"languageTag": "es-ES",
+		"languageTag": "es-es",
 		"displayName": "Sitio de instalación Contoso",
 		"description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
 	}
-}
-requestBody.SetGroupIds( []String {
-	"groupId",
-}
-requestBody.SetPowerAppIds( []String {
-	"powerAppId",
 }
 state := "published"
 requestBody.SetState(&state)
