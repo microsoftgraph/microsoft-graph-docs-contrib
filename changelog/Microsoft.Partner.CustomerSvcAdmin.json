@@ -214,6 +214,14 @@
         },
         {
           "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
+          "ApiChange": "Property",
+          "ChangedApiName": "status",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **status** property of [delegatedAdminRelationshipOperation](https://docs.microsoft.com/graph/api/resources/delegatedadminrelationshipoperation?view=graph-rest-beta) from **delegatedAdminRelationshipOperationStatus** to **longRunningOperationStatus**.",
+          "Target": "delegatedAdminRelationshipOperation"
+        },
+        {
+          "Id": "40f1802b-57ee-463b-98f0-3127c867310f",
           "ApiChange": "EnumType",
           "ChangedApiName": "longRunningOperationStatus",
           "ChangeType": "Addition",
