@@ -50,7 +50,7 @@ In the context of eDiscovery, contains custodians, holds, searches, review sets,
 |id|String|The ID for the eDiscovery case. Read-only. |
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|The last user who modified the case.
 |lastModifiedDateTime|DateTimeOffset|The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|status|caseStatus|The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.
+|status|String|The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details, see the following table.
 
 ### caseStatus values
 
@@ -72,7 +72,7 @@ In the context of eDiscovery, contains custodians, holds, searches, review sets,
 |operations|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Returns a list of case **caseOperation** objects for this **case**.|
 |reviewSets|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Returns a list of **eDiscoveryReviewSet** objects in the case.|
 |searches|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) collection|Returns a list of **eDiscoverySearch** objects associated with this case.|
-|settings|[ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Returns a list of **eDIscoverySettings** objects in the case.|
+|settings|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Returns a list of **eDIscoverySettings** objects in the case.|
 |tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns a list of **ediscoveryReviewTag** objects associated to this case.|
 
 ## JSON representation
@@ -81,7 +81,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.ediscoveryCase",
-  "baseType": "microsoft.graph.security.case",
   "openType": false
 }
 -->
