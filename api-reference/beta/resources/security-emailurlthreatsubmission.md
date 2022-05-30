@@ -1,6 +1,6 @@
 ---
 title: "emailUrlThreatSubmission resource type"
-description: "email threat submission submitte by email url"
+description: "Represents email url threat submission which is submitted by email url"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for submitting email to MDO by email url.
+Represents email url threat submission which is submitted by email url.
 
 
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
