@@ -1,13 +1,13 @@
 ---
-title: "Create unifiedGroupSource"
-description: "Create a new unifiedGroupSource object."
+title: "Create custodian unifiedGroupSource"
+description: "Create a new custodian unifiedGroupSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create unifiedGroupSource
+# Create custodian unifiedGroupSource
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

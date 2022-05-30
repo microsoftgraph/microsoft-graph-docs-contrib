@@ -1,13 +1,13 @@
 ---
-title: "Create userSource"
-description: "Create a new userSource object."
+title: "Create custodian userSource"
+description: "Create a new custodian userSource object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create userSource
+# Create custodian userSource
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

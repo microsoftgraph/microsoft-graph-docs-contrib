@@ -1,13 +1,13 @@
 ---
-title: "List unifiedGroupSources"
-description: "Get a list of the unifiedGroupSource objects and their properties."
+title: "List custodian's unifiedGroupSources"
+description: "Get a list of the custodian's unifiedGroupSource objects and their properties."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List unifiedGroupSources
+# List custodian's unifiedGroupSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
