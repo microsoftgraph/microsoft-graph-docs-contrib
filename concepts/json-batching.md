@@ -196,15 +196,15 @@ If an individual request fails, any request that depends on that request fails w
 
 An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.
 
-## Batch size is limited
+## Batch size limitations
 
-JSON batch requests are currently limited to **20** individual requests.
+JSON batch requests are currently limited to 20 individual requests, in addition to the following limitations:
 
-* Depending on the APIs part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
-* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of 429.
-* Batches targeting Outlook resources (eg. mail & calendar) may only contain **4** request targeting the same mailbox, more details see [Outlook service limits][throttling-outlook].
+* Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
+* Batches targeting Outlook resources (such as mail abd calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
 
-For more details, visit [Throttling and batching][throttling-and-batching].
+For more information, see [Throttling and batching][throttling-and-batching].
 
 ## Known issues
 
