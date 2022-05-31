@@ -133,7 +133,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
+| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -159,9 +159,8 @@ You can find additional information about best practices in [OneNote API throttl
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### Microsoft Teams service limits
 
@@ -169,20 +168,25 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST /teams | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET channel message  | 20 rps | 200 rps |
+| GET 1:1/group chat message  | 20 rps | 200 rps |
+| POST channel message | 50 rps | 500 rps |
+| POST 1:1/group chat message | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
 | POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
+| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
+| Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
@@ -299,6 +303,11 @@ The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### Identity and access reports best practices
+Azure AD reporting APIs are throttled when Azure AD receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices above](#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+- Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
+- If you need a broad set of Azure AD reporting data, use `$filter` on the **createdDateTime** to limit the amount of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests 3 days of data and iterate with shorter timespans until your requests are no longer throttled.
+  
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
@@ -333,9 +342,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### Microsoft Graph reports service limits
@@ -405,9 +415,7 @@ The preceding information applies to the following resources:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -484,9 +492,10 @@ The following limits apply to requests on the assignment service API:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
 
 ### Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.

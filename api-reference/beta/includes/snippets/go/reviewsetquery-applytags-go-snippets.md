@@ -14,13 +14,10 @@ requestBody.SetTagsToAdd( []Tag {
 		"id": "b4798d14-748d-468e-a1ec-96a2b1d49677",
 	}
 }
-options := &msgraphsdk.ApplyTagsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags(case-id, reviewSet-id, reviewSetQuery-id).Post(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).ApplyTags(case-id, reviewSet-id, reviewSetQuery-id).Post(requestBody)
 
 
 ```

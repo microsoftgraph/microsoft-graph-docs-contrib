@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a [signIn](../resources/signin.md) object that contains a specific user sign-in event for your tenant. This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -138,6 +140,7 @@ Content-type: application/json
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
   "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
   "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
   "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
   "conditionalAccessStatus":"notApplied",

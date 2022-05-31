@@ -1,7 +1,7 @@
 ---
 title: "request resource type"
 description: "An abstract entity type to model the asynchronized request workflow to create, update, and delete an object."
-author: "japere"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

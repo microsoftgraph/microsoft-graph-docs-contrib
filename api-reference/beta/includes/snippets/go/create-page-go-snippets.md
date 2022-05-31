@@ -28,11 +28,8 @@ requestBody.SetWebParts( []WebPart {
 		"type": "d1d91016-032f-456d-98a4-721247c305e8",
 	}
 }
-options := &msgraphsdk.PagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Pages().Post(options)
+result, err := graphClient.SitesById(&siteId).Pages().Post(requestBody)
 
 
 ```

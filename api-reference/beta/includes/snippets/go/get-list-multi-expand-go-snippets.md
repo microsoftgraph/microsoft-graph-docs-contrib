@@ -11,12 +11,12 @@ requestParameters := &msgraphsdk.ListRequestBuilderGetQueryParameters{
 	Select: "name,lastModifiedDateTime",
 	Expand: "columns(select=name,description),items)",
 }
-options := &msgraphsdk.ListRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ListRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Get(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

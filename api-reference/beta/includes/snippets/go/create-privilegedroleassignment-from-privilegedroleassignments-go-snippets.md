@@ -12,10 +12,7 @@ userId := "userId-value"
 requestBody.SetUserId(&userId)
 roleId := "roleId-value"
 requestBody.SetRoleId(&roleId)
-options := &msgraphsdk.PrivilegedRoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.PrivilegedRoleAssignments().Post(options)
+result, err := graphClient.PrivilegedRoleAssignments().Post(requestBody)
 
 
 ```

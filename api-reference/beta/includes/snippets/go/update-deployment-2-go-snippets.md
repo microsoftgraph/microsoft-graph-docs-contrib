@@ -26,11 +26,8 @@ settings.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
 }
-options := &msgraphsdk.DeploymentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(options)
+graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Patch(requestBody)
 
 
 ```

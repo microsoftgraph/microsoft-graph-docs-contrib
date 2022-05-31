@@ -36,11 +36,8 @@ requestBody.SetProperties( []Property {
 		"isRetrievable": "true",
 	}
 }
-options := &msgraphsdk.SchemaRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Schema().Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).Schema().Patch(requestBody)
 
 
 ```

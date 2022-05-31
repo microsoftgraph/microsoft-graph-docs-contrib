@@ -26,11 +26,8 @@ requestBody.SetWebsite(&website)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
 }
-options := &msgraphsdk.TenantCustomizedInformationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 tenantCustomizedInformationId := "tenantCustomizedInformation-id"
-graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(options)
+graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformationById(&tenantCustomizedInformationId).Patch(requestBody)
 
 
 ```

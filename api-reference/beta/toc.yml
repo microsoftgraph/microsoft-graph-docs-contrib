@@ -2,7 +2,7 @@ name: Reference
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
-  - name: Get auth tokens
+  - name: Authentication and authorization
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/beta
@@ -39,9 +39,9 @@ items:
     - name: Throttling
       href: /graph/throttling?context=graph/api/beta
     - name: Change notifications
-      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
+        displayName: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: /graph/api/resources/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
@@ -54,9 +54,9 @@ items:
       - name: Get change notifications for chat and channel messages
         href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
     - name: Change tracking
-      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Overview
+        displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
         href: /graph/delta-query-overview?context=graph/api/beta
       - name: Get changes to events (example)
         href: /graph/delta-query-events?context=graph/api/beta
@@ -67,9 +67,9 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/beta
     - name: Add custom data
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Overview
+        displayName: Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
         href: /graph/extensibility-overview?context=graph/api/beta
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?context=graph/api/beta
@@ -89,9 +89,9 @@ items:
     expanded: false
     items:
     - name: Azure AD Graph
-      displayname: Migration, Azure AD Graph
       items:
       - name: Overview
+        displayName: Azure AD Graph Migration
         href: /graph/migrate-azure-ad-graph-overview
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -129,7 +129,7 @@ items:
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/beta
-      - name: Install the SDK
+      - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/beta
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/beta
@@ -300,7 +300,7 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create
+        - name: Create calendar
           href: api/user-post-calendars.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
@@ -324,6 +324,14 @@ items:
           href: api/user-list-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+      - name: Cloud PC
+        items:
+        - name: Cloud PC
+          href: resources/cloudpc.md
+        - name: List cloudPCs
+          href: api/user-list-cloudpcs.md
+        - name: Get launch info
+          href: api/cloudpc-getcloudpclaunchinfo.md
       - name: Contacts
         items:
         - name: Contact
@@ -406,11 +414,13 @@ items:
         items:
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
           href: api/user-list-transitivememberof.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
@@ -422,22 +432,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Settings for item insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -526,7 +528,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -663,6 +665,8 @@ items:
           href: api/group-list-endpoints.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List lifecycle policies
           href: api/group-list-grouplifecyclepolicies.md
         - name: List photos
@@ -1470,9 +1474,9 @@ items:
           - name: Update place
             href: api/place-update.md
     - name: Change notifications
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: resources/webhooks.md
       - name: Subscription
         href: resources/subscription.md
@@ -1565,8 +1569,23 @@ items:
             href: api/audioroutinggroup-update.md
           - name: Delete
             href: api/audioroutinggroup-delete.md
+        - name: Content sharing session
+          href: resources/contentsharingsession.md
+          items:
+          - name: List
+            href: api/call-list-contentsharingsessions.md
+          - name: Get
+            href: api/contentsharingsession-get.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
+        - name: Add large gallery view
+          href: api/call-addlargegalleryview.md
+        - name: Large gallery view operation
+          items:
+          - name: Add large gallery view operation
+            href: resources/addlargegalleryviewoperation.md
+          - name: Get large gallery view operation status
+            href: api/addlargegalleryviewoperation-get.md
       - name: Call records
         items:
         - name: Overview
@@ -1819,6 +1838,8 @@ items:
             href: api/ediscovery-sourcecollection-list-addtoreviewsetoperation.md
           - name: List last estimate operation
             href: api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation.md
+          - name: Purge data
+            href: api/ediscovery-sourcecollection-purgedata.md
         - name: Tag
           href: resources/ediscovery-tag.md
           items:
@@ -1915,6 +1936,8 @@ items:
           href: api/bookingbusiness-publish.md
         - name: Unpublish
           href: api/bookingbusiness-unpublish.md
+        - name: Get staff availability
+          href: api/bookingbusiness-getstaffavailability.md
       - name: Booking appointment
         href: resources/bookingappointment.md
         items:
@@ -3912,6 +3935,8 @@ items:
             href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
           - name: Android device owner required password type
             href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
+          - name: Android device owner required password unlock
+            href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md
           - name: Android device owner SCEP certificate profile
             href: resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md
             items:
@@ -3942,6 +3967,8 @@ items:
               href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
+          - name: Android device owner user facing message
+            href: resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md
           - name: Android device owner virtual home button type
             href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
           - name: Android device owner VPN configuration
@@ -4494,6 +4521,19 @@ items:
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownerdeviceconfiguration-update.md
+          - name: Aosp device owner enterprise Wi-Fi configuration
+            href: resources/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerenterprisewificonfiguration-update.md
           - name: Aosp device owner PKCS certificate profile
             href: resources/intune-deviceconfig-aospdeviceownerpkcscertificateprofile.md
             items:
@@ -4507,6 +4547,19 @@ items:
               href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownerpkcscertificateprofile-update.md
+          - name: Aosp device owner SCEP certificate profile
+            href: resources/intune-deviceconfig-aospdeviceownerscepcertificateprofile.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerscepcertificateprofile-update.md
           - name: Aosp device owner trusted root certificate
             href: resources/intune-deviceconfig-aospdeviceownertrustedrootcertificate.md
             items:
@@ -4520,6 +4573,21 @@ items:
               href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-delete.md
             - name: Update
               href: api/intune-deviceconfig-aospdeviceownertrustedrootcertificate-update.md
+          - name: Aosp device owner Wi-Fi configuration
+            href: resources/intune-deviceconfig-aospdeviceownerwificonfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownerwificonfiguration-update.md
+          - name: Aosp device owner Wi-Fi security type
+            href: resources/intune-deviceconfig-aospdeviceownerwifisecuritytype.md
           - name: App install control type
             href: resources/intune-deviceconfig-appinstallcontroltype.md
           - name: App list item
@@ -5849,6 +5917,8 @@ items:
             href: resources/intune-deviceconfig-keyvaluepair.md
           - name: Kiosk mode managed home screen PIN complexity
             href: resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md
+          - name: Kiosk mode type
+            href: resources/intune-deviceconfig-kioskmodetype.md
           - name: LAN manager authentication level
             href: resources/intune-deviceconfig-lanmanagerauthenticationlevel.md
           - name: Local security options administrator elevation prompt behavior type
@@ -7208,21 +7278,30 @@ items:
               href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
+          - name: Windows wired network configuration
+            href: resources/intune-deviceconfig-windowswirednetworkconfiguration.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-list.md
+            - name: Get
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-get.md
+            - name: Create
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-windowswirednetworkconfiguration-update.md
+          - name: Wired network authentication method
+            href: resources/intune-deviceconfig-wirednetworkauthenticationmethod.md
+          - name: Wired network authentication type
+            href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
           - name: Wired network interface
             href: resources/intune-deviceconfig-wirednetworkinterface.md
         - name: Device management
           href: resources/intune-device-mgt-conceptual.md
           items:
-          - name: Activate device esim action result
-            href: resources/intune-devices-activatedeviceesimactionresult.md
-          - name: Admin consent
-            href: resources/intune-devices-adminconsent.md
-          - name: Admin consent state
-            href: resources/intune-devices-adminconsentstate.md
           - name: Allowed remote assistance actions
             href: resources/intune-remoteassistance-allowedremoteassistanceactions.md
-          - name: App log collection download details
-            href: resources/intune-devices-applogcollectiondownloaddetails.md
           - name: App log collection request
             href: resources/intune-devices-applogcollectionrequest.md
             items:
@@ -7238,10 +7317,6 @@ items:
               href: api/intune-devices-applogcollectionrequest-update.md
             - name: createDownloadUrl action
               href: api/intune-devices-applogcollectionrequest-createdownloadurl.md
-          - name: App log decryption algorithm
-            href: resources/intune-devices-applogdecryptionalgorithm.md
-          - name: App log upload state
-            href: resources/intune-devices-apploguploadstate.md
           - name: Apple push notification certificate
             href: resources/intune-devices-applepushnotificationcertificate.md
             items:
@@ -7270,12 +7345,6 @@ items:
             href: resources/intune-auditing-auditproperty.md
           - name: Audit resource
             href: resources/intune-auditing-auditresource.md
-          - name: Bulk managed device action result
-            href: resources/intune-devices-bulkmanageddeviceactionresult.md
-          - name: Chassis type
-            href: resources/intune-devices-chassistype.md
-          - name: Chrome o s device property
-            href: resources/intune-devices-chromeosdeviceproperty.md
           - name: Cloud PC connectivity issue
             href: resources/intune-devices-cloudpcconnectivityissue.md
             items:
@@ -7289,8 +7358,6 @@ items:
               href: api/intune-devices-cloudpcconnectivityissue-delete.md
             - name: Update
               href: api/intune-devices-cloudpcconnectivityissue-update.md
-          - name: Comanaged devices summary
-            href: resources/intune-devices-comanageddevicessummary.md
           - name: Comanagement eligible device
             href: resources/intune-devices-comanagementeligibledevice.md
             items:
@@ -7304,28 +7371,6 @@ items:
               href: api/intune-devices-comanagementeligibledevice-delete.md
             - name: Update
               href: api/intune-devices-comanagementeligibledevice-update.md
-          - name: Comanagement eligible devices summary
-            href: resources/intune-devices-comanagementeligibledevicessummary.md
-          - name: Comanagement eligible type
-            href: resources/intune-devices-comanagementeligibletype.md
-          - name: Compliance state
-            href: resources/intune-devices-compliancestate.md
-          - name: Configuration manager action
-            href: resources/intune-devices-configurationmanageraction.md
-          - name: Configuration manager action delivery status
-            href: resources/intune-devices-configurationmanageractiondeliverystatus.md
-          - name: Configuration manager action result
-            href: resources/intune-devices-configurationmanageractionresult.md
-          - name: Configuration manager action type
-            href: resources/intune-devices-configurationmanageractiontype.md
-          - name: Configuration manager client enabled features
-            href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
-          - name: Configuration manager client health state
-            href: resources/intune-devices-configurationmanagerclienthealthstate.md
-          - name: Configuration manager client information
-            href: resources/intune-devices-configurationmanagerclientinformation.md
-          - name: Configuration manager client state
-            href: resources/intune-devices-configurationmanagerclientstate.md
           - name: Data sharing consent
             href: resources/intune-devices-datasharingconsent.md
             items:
@@ -7343,8 +7388,6 @@ items:
               href: api/intune-devices-datasharingconsent-consenttodatasharing.md
             - name: consentToDataSharing action
               href: api/intune-devices-datasharingconsent-consenttodatasharing.md
-          - name: Delete user from shared Apple device action result
-            href: resources/intune-devices-deleteuserfromsharedappledeviceactionresult.md
           - name: Detected app
             href: resources/intune-devices-detectedapp.md
             items:
@@ -7358,8 +7401,6 @@ items:
               href: api/intune-devices-detectedapp-delete.md
             - name: Update
               href: api/intune-devices-detectedapp-update.md
-          - name: Device action result
-            href: resources/intune-devices-deviceactionresult.md
           - name: Device compliance script
             href: resources/intune-devices-devicecompliancescript.md
             items:
@@ -7410,22 +7451,6 @@ items:
               href: api/intune-devices-devicecustomattributeshellscript-update.md
             - name: assign action
               href: api/intune-devices-devicecustomattributeshellscript-assign.md
-          - name: Device custom attribute value type
-            href: resources/intune-devices-devicecustomattributevaluetype.md
-          - name: Device enrollment type
-            href: resources/intune-devices-deviceenrollmenttype.md
-          - name: Device exchange access state summary
-            href: resources/intune-devices-deviceexchangeaccessstatesummary.md
-          - name: Device geolocation
-            href: resources/intune-devices-devicegeolocation.md
-          - name: Device guard local system authority credential guard state
-            href: resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md
-          - name: Device guard virtualization based security hardware requirement state
-            href: resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md
-          - name: Device guard virtualization based security state
-            href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
-          - name: Device health attestation state
-            href: resources/intune-devices-devicehealthattestationstate.md
           - name: Device health script
             href: resources/intune-devices-devicehealthscript.md
             items:
@@ -7460,10 +7485,6 @@ items:
               href: api/intune-devices-devicehealthscriptassignment-delete.md
             - name: Update
               href: api/intune-devices-devicehealthscriptassignment-update.md
-          - name: Device health script boolean parameter
-            href: resources/intune-devices-devicehealthscriptbooleanparameter.md
-          - name: Device health script daily schedule
-            href: resources/intune-devices-devicehealthscriptdailyschedule.md
           - name: Device health script device state
             href: resources/intune-devices-devicehealthscriptdevicestate.md
             items:
@@ -7477,22 +7498,6 @@ items:
               href: api/intune-devices-devicehealthscriptdevicestate-delete.md
             - name: Update
               href: api/intune-devices-devicehealthscriptdevicestate-update.md
-          - name: Device health script hourly schedule
-            href: resources/intune-devices-devicehealthscripthourlyschedule.md
-          - name: Device health script integer parameter
-            href: resources/intune-devices-devicehealthscriptintegerparameter.md
-          - name: Device health script parameter
-            href: resources/intune-devices-devicehealthscriptparameter.md
-          - name: Device health script remediation history
-            href: resources/intune-devices-devicehealthscriptremediationhistory.md
-          - name: Device health script remediation history data
-            href: resources/intune-devices-devicehealthscriptremediationhistorydata.md
-          - name: Device health script remediation summary
-            href: resources/intune-devices-devicehealthscriptremediationsummary.md
-          - name: Device health script run once schedule
-            href: resources/intune-devices-devicehealthscriptrunonceschedule.md
-          - name: Device health script run schedule
-            href: resources/intune-devices-devicehealthscriptrunschedule.md
           - name: Device health script run summary
             href: resources/intune-devices-devicehealthscriptrunsummary.md
             items:
@@ -7500,12 +7505,6 @@ items:
               href: api/intune-devices-devicehealthscriptrunsummary-get.md
             - name: Update
               href: api/intune-devices-devicehealthscriptrunsummary-update.md
-          - name: Device health script string parameter
-            href: resources/intune-devices-devicehealthscriptstringparameter.md
-          - name: Device health script time schedule
-            href: resources/intune-devices-devicehealthscripttimeschedule.md
-          - name: Device log collection request
-            href: resources/intune-devices-devicelogcollectionrequest.md
           - name: Device log collection response
             href: resources/intune-devices-devicelogcollectionresponse.md
             items:
@@ -7521,8 +7520,6 @@ items:
               href: api/intune-devices-devicelogcollectionresponse-update.md
             - name: createDownloadUrl action
               href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
-          - name: Device log collection template type
-            href: resources/intune-devices-devicelogcollectiontemplatetype.md
           - name: Device management abstract complex setting definition
             href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
             items:
@@ -7622,10 +7619,6 @@ items:
             href: resources/intune-deviceintent-devicemanagementenumconstraint.md
           - name: Device management enum value
             href: resources/intune-deviceintent-devicemanagementenumvalue.md
-          - name: Device management exchange access state
-            href: resources/intune-devices-devicemanagementexchangeaccessstate.md
-          - name: Device management exchange access state reason
-            href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
           - name: Device management integer setting instance
             href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
             items:
@@ -7893,10 +7886,6 @@ items:
               href: api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md
             - name: Update
               href: api/intune-deviceintent-devicemanagementstringsettinginstance-update.md
-          - name: Device management subscription state
-            href: resources/intune-devices-devicemanagementsubscriptionstate.md
-          - name: Device management subscriptions
-            href: resources/intune-devices-devicemanagementsubscriptions.md
           - name: Device management template
             href: resources/intune-deviceintent-devicemanagementtemplate.md
             items:
@@ -7933,12 +7922,6 @@ items:
             href: resources/intune-deviceintent-devicemanagementtemplatetype.md
           - name: Device manangement intent value type
             href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
-          - name: Device operating system summary
-            href: resources/intune-devices-deviceoperatingsystemsummary.md
-          - name: Device protection overview
-            href: resources/intune-devices-deviceprotectionoverview.md
-          - name: Device registration state
-            href: resources/intune-devices-deviceregistrationstate.md
           - name: Device shell script
             href: resources/intune-devices-deviceshellscript.md
             items:
@@ -7954,10 +7937,6 @@ items:
               href: api/intune-devices-deviceshellscript-update.md
             - name: assign action
               href: api/intune-devices-deviceshellscript-assign.md
-          - name: Device type
-            href: resources/intune-devices-devicetype.md
-          - name: Disk type
-            href: resources/intune-devices-disktype.md
           - name: Embedded SIM activation code
             href: resources/intune-esim-embeddedsimactivationcode.md
           - name: Embedded SIM activation code pool
@@ -8003,18 +7982,6 @@ items:
               href: api/intune-esim-embeddedsimdevicestate-update.md
           - name: Embedded SIM device state value
             href: resources/intune-esim-embeddedsimdevicestatevalue.md
-          - name: Global device health script state
-            href: resources/intune-devices-globaldevicehealthscriptstate.md
-          - name: Hardware information
-            href: resources/intune-devices-hardwareinformation.md
-          - name: Health state
-            href: resources/intune-devices-healthstate.md
-          - name: Insight value double
-            href: resources/intune-devices-insightvaluedouble.md
-          - name: Insight value int
-            href: resources/intune-devices-insightvalueint.md
-          - name: Join type
-            href: resources/intune-devices-jointype.md
           - name: Localized notification message
             href: resources/intune-notification-localizednotificationmessage.md
             items:
@@ -8028,12 +7995,6 @@ items:
               href: api/intune-notification-localizednotificationmessage-delete.md
             - name: Update
               href: api/intune-notification-localizednotificationmessage-update.md
-          - name: Locate device action result
-            href: resources/intune-devices-locatedeviceactionresult.md
-          - name: Logged on user
-            href: resources/intune-devices-loggedonuser.md
-          - name: Lost mode state
-            href: resources/intune-devices-lostmodestate.md
           - name: Malware state for windows device
             href: resources/intune-devices-malwarestateforwindowsdevice.md
             items:
@@ -8120,14 +8081,6 @@ items:
               href: api/intune-devices-manageddevice-reenable.md
             - name: moveDevicesToOU action
               href: api/intune-devices-manageddevice-movedevicestoou.md
-          - name: Managed device architecture
-            href: resources/intune-devices-manageddevicearchitecture.md
-          - name: Managed device cleanup settings
-            href: resources/intune-devices-manageddevicecleanupsettings.md
-          - name: Managed device management features
-            href: resources/intune-devices-manageddevicemanagementfeatures.md
-          - name: Managed device models and manufacturers
-            href: resources/intune-devices-manageddevicemodelsandmanufacturers.md
           - name: Managed device overview
             href: resources/intune-devices-manageddeviceoverview.md
             items:
@@ -8135,16 +8088,6 @@ items:
               href: api/intune-devices-manageddeviceoverview-get.md
             - name: Update
               href: api/intune-devices-manageddeviceoverview-update.md
-          - name: Managed device partner reported health state
-            href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
-          - name: Managed device remote action
-            href: resources/intune-devices-manageddeviceremoteaction.md
-          - name: Managed installer status
-            href: resources/intune-devices-managedinstallerstatus.md
-          - name: Management agent type
-            href: resources/intune-devices-managementagenttype.md
-          - name: Management state
-            href: resources/intune-devices-managementstate.md
           - name: Notification message template
             href: resources/intune-notification-notificationmessagetemplate.md
             items:
@@ -8162,37 +8105,10 @@ items:
               href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
           - name: Notification template branding options
             href: resources/intune-notification-notificationtemplatebrandingoptions.md
-          - name: Oem warranty
-            href: resources/intune-devices-oemwarranty.md
-          - name: Oem warranty information on-boarding
-            href: resources/intune-devices-oemwarrantyinformationonboarding.md
-            items:
-            - name: List
-              href: api/intune-devices-oemwarrantyinformationonboarding-list.md
-            - name: Get
-              href: api/intune-devices-oemwarrantyinformationonboarding-get.md
-            - name: Create
-              href: api/intune-devices-oemwarrantyinformationonboarding-create.md
-            - name: Delete
-              href: api/intune-devices-oemwarrantyinformationonboarding-delete.md
-            - name: Update
-              href: api/intune-devices-oemwarrantyinformationonboarding-update.md
-            - name: enable action
-              href: api/intune-devices-oemwarrantyinformationonboarding-enable.md
-            - name: disable action
-              href: api/intune-devices-oemwarrantyinformationonboarding-disable.md
-          - name: Operating system upgrade eligibility
-            href: resources/intune-devices-operatingsystemupgradeeligibility.md
-          - name: Os version count
-            href: resources/intune-devices-osversioncount.md
           - name: Platform type
             href: resources/intune-esim-platformtype.md
           - name: Policy platform type
             href: resources/intune-deviceintent-policyplatformtype.md
-          - name: Remediation state
-            href: resources/intune-devices-remediationstate.md
-          - name: Remote action
-            href: resources/intune-devices-remoteaction.md
           - name: Remote action audit
             href: resources/intune-devices-remoteactionaudit.md
             items:
@@ -8238,18 +8154,8 @@ items:
               href: api/intune-remoteassistance-remoteassistancesettings-update.md
           - name: Remote assistance state
             href: resources/intune-remoteassistance-remoteassistancestate.md
-          - name: Remote lock action result
-            href: resources/intune-devices-remotelockactionresult.md
-          - name: Reset passcode action result
-            href: resources/intune-devices-resetpasscodeactionresult.md
-          - name: Revoke apple VPP licenses action result
-            href: resources/intune-devices-revokeapplevpplicensesactionresult.md
           - name: Role scope tag info
             href: resources/intune-auditing-rolescopetaginfo.md
-          - name: Rotate BitLocker keys device action result
-            href: resources/intune-devices-rotatebitlockerkeysdeviceactionresult.md
-          - name: Run state
-            href: resources/intune-devices-runstate.md
           - name: Security baseline category state summary
             href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
             items:
@@ -8302,12 +8208,8 @@ items:
               href: api/intune-deviceintent-securitybaselinetemplate-delete.md
             - name: Update
               href: api/intune-deviceintent-securitybaselinetemplate-update.md
-          - name: Shared Apple device user
-            href: resources/intune-devices-sharedappledeviceuser.md
           - name: Tuple_2 of execution type_ i collection_1 of operation
             href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
-          - name: Update windows device account action parameter
-            href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
           - name: User experience analytics app health app performance by app version
             href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
             items:
@@ -8425,8 +8327,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-update.md
-          - name: User experience analytics autopilot devices summary
-            href: resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md
           - name: User experience analytics baseline
             href: resources/intune-devices-userexperienceanalyticsbaseline.md
             items:
@@ -8539,10 +8439,6 @@ items:
               href: api/intune-devices-userexperienceanalyticscategory-get.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticscategory-update.md
-          - name: User experience analytics cloud identity devices summary
-            href: resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md
-          - name: User experience analytics cloud management devices summary
-            href: resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md
           - name: User experience analytics device performance
             href: resources/intune-devices-userexperienceanalyticsdeviceperformance.md
             items:
@@ -8623,8 +8519,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity-update.md
-          - name: User experience analytics health state
-            href: resources/intune-devices-userexperienceanalyticshealthstate.md
           - name: User experience analytics impacting process
             href: resources/intune-devices-userexperienceanalyticsimpactingprocess.md
             items:
@@ -8638,12 +8532,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsimpactingprocess-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsimpactingprocess-update.md
-          - name: User experience analytics insight
-            href: resources/intune-devices-userexperienceanalyticsinsight.md
-          - name: User experience analytics insight severity
-            href: resources/intune-devices-userexperienceanalyticsinsightseverity.md
-          - name: User experience analytics insight value
-            href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
           - name: User experience analytics metric
             href: resources/intune-devices-userexperienceanalyticsmetric.md
             items:
@@ -8696,8 +8584,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsnotautopilotreadydevice-update.md
-          - name: User experience analytics operating system restart category
-            href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
           - name: User experience analytics overview
             href: resources/intune-devices-userexperienceanalyticsoverview.md
             items:
@@ -8757,12 +8643,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsscorehistory-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsscorehistory-update.md
-          - name: User experience analytics settings
-            href: resources/intune-devices-userexperienceanalyticssettings.md
-          - name: User experience analytics summarized by
-            href: resources/intune-devices-userexperienceanalyticssummarizedby.md
-          - name: User experience analytics Windows 10 devices summary
-            href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
           - name: User experience analytics work from anywhere device
             href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
             items:
@@ -8776,8 +8656,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsworkfromanywheredevice-update.md
-          - name: User experience analytics work from anywhere devices summary
-            href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md
           - name: User experience analytics work from anywhere hardware readiness metric
             href: resources/intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md
             items:
@@ -8811,22 +8689,6 @@ items:
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-delete.md
             - name: Update
               href: api/intune-devices-userexperienceanalyticsworkfromanywheremodelperformance-update.md
-          - name: Warranty offer
-            href: resources/intune-devices-warrantyoffer.md
-          - name: Warranty type
-            href: resources/intune-devices-warrantytype.md
-          - name: Windows defender product status
-            href: resources/intune-devices-windowsdefenderproductstatus.md
-          - name: Windows defender scan action result
-            href: resources/intune-devices-windowsdefenderscanactionresult.md
-          - name: Windows device account
-            href: resources/intune-devices-windowsdeviceaccount.md
-          - name: Windows device AD account
-            href: resources/intune-devices-windowsdeviceadaccount.md
-          - name: Windows device Azure AD account
-            href: resources/intune-devices-windowsdeviceazureadaccount.md
-          - name: Windows device health state
-            href: resources/intune-devices-windowsdevicehealthstate.md
           - name: Windows device malware state
             href: resources/intune-devices-windowsdevicemalwarestate.md
             items:
@@ -8840,14 +8702,6 @@ items:
               href: api/intune-devices-windowsdevicemalwarestate-delete.md
             - name: Update
               href: api/intune-devices-windowsdevicemalwarestate-update.md
-          - name: Windows malware category
-            href: resources/intune-devices-windowsmalwarecategory.md
-          - name: Windows malware category count
-            href: resources/intune-devices-windowsmalwarecategorycount.md
-          - name: Windows malware execution state
-            href: resources/intune-devices-windowsmalwareexecutionstate.md
-          - name: Windows malware execution state count
-            href: resources/intune-devices-windowsmalwareexecutionstatecount.md
           - name: Windows malware information
             href: resources/intune-devices-windowsmalwareinformation.md
             items:
@@ -8861,20 +8715,6 @@ items:
               href: api/intune-devices-windowsmalwareinformation-delete.md
             - name: Update
               href: api/intune-devices-windowsmalwareinformation-update.md
-          - name: Windows malware name count
-            href: resources/intune-devices-windowsmalwarenamecount.md
-          - name: Windows malware overview
-            href: resources/intune-devices-windowsmalwareoverview.md
-          - name: Windows malware severity
-            href: resources/intune-devices-windowsmalwareseverity.md
-          - name: Windows malware severity count
-            href: resources/intune-devices-windowsmalwareseveritycount.md
-          - name: Windows malware state
-            href: resources/intune-devices-windowsmalwarestate.md
-          - name: Windows malware state count
-            href: resources/intune-devices-windowsmalwarestatecount.md
-          - name: Windows malware threat state
-            href: resources/intune-devices-windowsmalwarethreatstate.md
           - name: Windows managed device
             href: resources/intune-devices-windowsmanageddevice.md
             items:
@@ -8888,28 +8728,6 @@ items:
               href: api/intune-devices-windowsmanageddevice-delete.md
             - name: Update
               href: api/intune-devices-windowsmanageddevice-update.md
-          - name: Windows management app
-            href: resources/intune-devices-windowsmanagementapp.md
-            items:
-            - name: Get
-              href: api/intune-devices-windowsmanagementapp-get.md
-            - name: Update
-              href: api/intune-devices-windowsmanagementapp-update.md
-            - name: setAsManagedInstaller action
-              href: api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md
-          - name: Windows management app health state
-            href: resources/intune-devices-windowsmanagementapphealthstate.md
-            items:
-            - name: List
-              href: api/intune-devices-windowsmanagementapphealthstate-list.md
-            - name: Get
-              href: api/intune-devices-windowsmanagementapphealthstate-get.md
-            - name: Create
-              href: api/intune-devices-windowsmanagementapphealthstate-create.md
-            - name: Delete
-              href: api/intune-devices-windowsmanagementapphealthstate-delete.md
-            - name: Update
-              href: api/intune-devices-windowsmanagementapphealthstate-update.md
           - name: Windows protection state
             href: resources/intune-devices-windowsprotectionstate.md
             items:
@@ -9291,6 +9109,19 @@ items:
               href: api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
             - name: Update
               href: api/intune-onboarding-deviceenrollmentlimitconfiguration-update.md
+          - name: Device enrollment notification configuration
+            href: resources/intune-onboarding-deviceenrollmentnotificationconfiguration.md
+            items:
+            - name: List
+              href: api/intune-onboarding-deviceenrollmentnotificationconfiguration-list.md
+            - name: Get
+              href: api/intune-onboarding-deviceenrollmentnotificationconfiguration-get.md
+            - name: Create
+              href: api/intune-onboarding-deviceenrollmentnotificationconfiguration-create.md
+            - name: Delete
+              href: api/intune-onboarding-deviceenrollmentnotificationconfiguration-delete.md
+            - name: Update
+              href: api/intune-onboarding-deviceenrollmentnotificationconfiguration-update.md
           - name: Device enrollment platform restriction
             href: resources/intune-onboarding-deviceenrollmentplatformrestriction.md
           - name: Device enrollment platform restriction configuration
@@ -9402,6 +9233,10 @@ items:
               href: api/intune-onboarding-enrollmentconfigurationassignment-delete.md
             - name: Update
               href: api/intune-onboarding-enrollmentconfigurationassignment-update.md
+          - name: Enrollment notification branding options
+            href: resources/intune-onboarding-enrollmentnotificationbrandingoptions.md
+          - name: Enrollment notification template type
+            href: resources/intune-onboarding-enrollmentnotificationtemplatetype.md
           - name: Enrollment restriction platform type
             href: resources/intune-onboarding-enrollmentrestrictionplatformtype.md
           - name: Intune brand
@@ -9503,7 +9338,7 @@ items:
           - name: Windows Hello for business PIN usage
             href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
         - name: Role-based access control (RBAC)
-          href: resources/intune-rbac-conceptual.md
+          href: /resources/intune-rbac-conceptual.md
           items:
           - name: Device and app management assigned role details
             href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -10099,32 +9934,42 @@ items:
         - name: Cloud PC
           href: resources/cloudpc.md
           items:
-          - name: List
+          - name: List cloudPCs for organization
             href: api/virtualendpoint-list-cloudpcs.md
-          - name: Get
+          - name: List cloudPCs for user
+            href: api/user-list-cloudpcs.md
+          - name: Get cloudPC
             href: api/cloudpc-get.md
+          - name: Bulk-reprovision remotely
+            href: api/manageddevice-bulkreprovisioncloudpc.md
+          - name: Bulk-restore remotely
+            href: api/manageddevice-bulkrestorecloudpc.md
+          - name: Bulk-set review status
+            href: api/manageddevice-bulksetcloudpcreviewstatus.md
           - name: Change user accout type
             href: api/cloudpc-changeuseraccounttype.md
           - name: End grace period
             href: api/cloudpc-endgraceperiod.md
+          - name: Get launch info for user
+            href: api/cloudpc-getcloudpclaunchinfo.md
           - name: Get remote action results
             href: api/manageddevice-getcloudpcremoteactionresults.md
+          - name: Get review status
+            href: api/manageddevice-getcloudpcreviewstatus.md
           - name: Reboot
             href: api/cloudpc-reboot.md
           - name: Rename
             href: api/cloudpc-rename.md
           - name: Reprovision
             href: api/cloudpc-reprovision.md
-          - name: Reprovision remotely action
+          - name: Reprovision remotely
             href: api/manageddevice-reprovisioncloudpc.md
-          - name: Bulk reprovision remotely action
-            href: api/manageddevice-bulkreprovisioncloudpc.md
-          - name: Resize remotely action
+          - name: Resize remotely
             href: api/manageddevice-resizecloudpc.md
-          - name: Restore remotely action
+          - name: Restore remotely
             href: api/manageddevice-restorecloudpc.md
-          - name: Bulk restore remotely action
-            href: api/manageddevice-bulkrestorecloudpc.md
+          - name: Set review status
+            href: api/manageddevice-setcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
         - name: Cloud PC device image
@@ -10149,7 +9994,7 @@ items:
             href: api/virtualendpoint-list-galleryimages.md
           - name: Get
             href: api/cloudpcgalleryimage-get.md
-        - name: Cloud PC on-premises connection
+        - name: Cloud PC Azure network connection
           href: resources/cloudpconpremisesconnection.md
           items:
           - name: List
@@ -10222,6 +10067,10 @@ items:
             href: api/virtualendpoint-list-snapshots.md
           - name: Get
             href: api/cloudpcsnapshot-get.md
+          - name: Get subscriptions
+            href: api/cloudpcsnapshot-getsubscriptions.md
+          - name: Get storage accounts
+            href: api/cloudpcsnapshot-getstorageaccounts.md
         - name: Cloud PC organization settings
           href: resources/cloudpcorganizationsettings.md
           items:
@@ -10337,7 +10186,7 @@ items:
           - name: List
             href: api/managedtenants-managedtenant-list-auditevents.md
           - name: Get
-            href: api/managedtenants-auditevent-get.md            
+            href: api/managedtenants-auditevent-get.md
         - name: Cloud PC connection
           href: resources/managedtenants-cloudpcconnection.md
           items:
@@ -10479,6 +10328,11 @@ items:
             href: api/managedtenants-tenanttag-assigntag.md
           - name: Unassign tenant tag
             href: api/managedtenants-tenanttag-unassigntag.md
+        - name: Tenant usage
+          href: resources/managedtenants-tenantusage.md
+          items:
+          - name: List
+            href: api/managedtenants-managedtenant-list-tenantusage.md
         - name: Windows device malware state
           href: resources/managedtenants-windowsdevicemalwarestate.md
           items:
@@ -10783,7 +10637,7 @@ items:
       items:
       - name: Open extensions
         href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -10795,7 +10649,7 @@ items:
           href: api/opentypeextension-delete.md
       - name: Schema extensions
         href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
         - name: List schema extensions
           href: api/schemaextension-list.md
@@ -10880,6 +10734,8 @@ items:
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Extract sensitivity labels
+          href: api/driveitem-extractsensitivitylabels.md
       - name: Bundles
         href: resources/bundle.md
         items:
@@ -11147,19 +11003,80 @@ items:
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
-      displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
+        displayName: Azure AD, Microsoft identity platform
         href: resources/azure-ad-overview.md
+      - name: Customer relationship management
+        items:
+        - name: Granular delegated admin privileges (preview)
+          items:
+          - name: Overview
+            displayName: GDAP, Partner Center, CSP, VAR
+            href: resources/delegatedadminrelationships-api-overview.md
+          - name: Delegated admin relationships
+            href: resources/delegatedadminrelationship.md
+            items:
+            - name: Create
+              href: api/tenantrelationship-post-delegatedadminrelationships.md
+            - name: List
+              href: api/tenantrelationship-list-delegatedadminrelationships.md
+            - name: Get
+              href: api/delegatedadminrelationship-get.md
+            - name: Update
+              href: api/delegatedadminrelationship-update.md
+            - name: Delete
+              href: api/delegatedadminrelationship-delete.md
+          - name: Delegated admin access assignments
+            href: resources/delegatedadminaccessassignment.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-accessassignments.md
+            - name: List
+              href: api/delegatedadminrelationship-list-accessassignments.md
+            - name: Get
+              href: api/delegatedadminaccessassignment-get.md
+            - name: Update
+              href: api/delegatedadminaccessassignment-update.md
+            - name: Delete
+              href: api/delegatedadminaccessassignment-delete.md
+          - name: Delegated admin relationship requests
+            href: resources/delegatedadminrelationshiprequest.md
+            items:
+            - name: Create
+              href: api/delegatedadminrelationship-post-requests.md
+            - name: List
+              href: api/delegatedadminrelationship-list-requests.md
+            - name: Get
+              href: api/delegatedadminrelationshiprequest-get.md
+          - name: Delegated admin relationship operations
+            href: resources/delegatedadminrelationshipoperation.md
+            items:
+            - name: List
+              href: api/delegatedadminrelationship-list-operations.md
+            - name: Get
+              href: api/delegatedadminrelationshipoperation-get.md
+          - name: Delegated admin customer
+            href: resources/delegatedadmincustomer.md
+            items:
+            - name: List
+              href: api/tenantrelationship-list-delegatedadmincustomers.md
+            - name: Get
+              href: api/delegatedadmincustomer-get.md
+            - name: Service management details
+              href: resources/delegatedadminservicemanagementdetail.md
+              items:
+              - name: List
+                href: api/delegatedadmincustomer-list-servicemanagementdetails.md
       - name: Directory management
         items:
         - name: Administrative unit
           href: resources/administrativeunit.md
           items:
           - name: List
-            href: api/administrativeunit-list.md
+            href: api/directory-list-administrativeunits.md
           - name: Create
-            href: api/administrativeunit-post-administrativeunits.md
+            href: api/directory-post-administrativeunits.md
           - name: Get
             href: api/administrativeunit-get.md
           - name: Update
@@ -11354,6 +11271,12 @@ items:
           items:
           - name: List domains
             href: api/domain-list.md
+          - name: List domain name references
+            href: api/domain-list-domainnamereferences.md
+          - name: List service configuration records
+            href: api/domain-list-serviceconfigurationrecords.md
+          - name: List verification DNS records
+            href: api/domain-list-verificationdnsrecords.md
           - name: Create domain
             href: api/domain-post-domains.md
           - name: Delete domain
@@ -11397,6 +11320,44 @@ items:
           items:
           - name: Get org settings
             href: api/organizationSettings-get.md
+          - name: App settings for Microsoft 365 data (preview)
+            items:
+            - name: App data access settings
+              href: resources/microsoftapplicationdataaccesssettings.md
+            - name: List
+              href: api/organizationsettings-list-microsoftapplicationdataaccess.md
+            - name: Update
+              href: api/microsoftapplicationdataaccesssettings-update.md
+          - name: Org control for item insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-iteminsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Org control for people insights (preview)
+            items:
+            - name: Insights settings
+              href: resources/insightssettings.md
+            - name: List
+              href: api/organizationsettings-list-peopleinsights.md
+            - name: Update
+              href: api/insightssettings-update.md
+          - name: Profile card customization (preview)
+            items:
+            - name: Profile card property
+              href: resources/profilecardproperty.md
+            - name: List
+              href: api/organizationsettings-list-profilecardproperties.md
+            - name: Create
+              href: api/organizationsettings-post-profilecardproperties.md
+            - name: Get
+              href: api/profilecardproperty-get.md
+            - name: Update
+              href: api/profilecardproperty-update.md
+            - name: Delete
+              href: api/profilecardproperty-delete.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -11517,93 +11478,6 @@ items:
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Role assignment request
-            href: resources/unifiedroleassignmentschedulerequest.md
-            items:
-            - name: List
-              href: api/unifiedroleassignmentschedulerequest-list.md
-            - name: Get
-              href: api/unifiedroleassignmentschedulerequest-get.md
-            - name: Create
-              href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-            - name: Cancel
-              href: api/unifiedroleassignmentschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
-          - name: Role eligibility request
-            href: resources/unifiedroleeligibilityschedulerequest.md
-            items:
-            - name: List
-              href: api/unifiedroleeligibilityschedulerequest-list.md
-            - name: Get
-              href: api/unifiedroleeligibilityschedulerequest-get.md
-            - name: Create
-              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-            - name: Cancel
-              href: api/unifiedroleeligibilityschedulerequest-cancel.md
-            - name: Filter by current user
-              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
-          - name: Role assignment schedule
-            href: resources/unifiedRoleAssignmentSchedule.md
-            items:
-            - name: List
-              href: api/unifiedroleassignmentschedule-list.md
-            - name: Get
-              href: api/unifiedroleassignmentschedule-get.md
-            - name: Filter by current user
-              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
-          - name: Role eligibility schedule
-            href: resources/unifiedRoleEligibilitySchedule.md
-            items:
-            - name: List
-              href: api/unifiedRoleEligibilitySchedule-list.md
-            - name: Get
-              href: api/unifiedRoleEligibilitySchedule-get.md
-            - name: Filter by current user
-              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
-          - name: Role assignment instance
-            href: resources/unifiedRoleAssignmentScheduleInstance.md
-            items:
-            - name: List
-              href: api/unifiedRoleAssignmentScheduleInstance-list.md
-            - name: Get
-              href: api/unifiedRoleAssignmentScheduleInstance-get.md
-            - name: Filter by current user
-              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
-          - name: Role eligibility instance
-            href: resources/unifiedRoleEligibilityScheduleInstance.md
-            items:
-            - name: List
-              href: api/unifiedRoleEligibilityScheduleInstance-list.md
-            - name: Get
-              href: api/unifiedRoleEligibilityScheduleInstance-get.md
-            - name: Filter by current user
-              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
-          - name: Role management policies
-            items:
-            - name: Role management policy
-              href: resources/unifiedRoleManagementPolicy.md
-              items:
-              - name: List
-                href: api/unifiedrolemanagementpolicy-list.md
-              - name: Get
-                href: api/unifiedrolemanagementpolicy-get.md
-              - name: Rules
-                href: resources/unifiedRoleManagementPolicyRule.md
-                items:
-                - name: List
-                  href: api/unifiedrolemanagementpolicy-list-rules.md
-                - name: Get
-                  href: api/unifiedrolemanagementpolicyrule-get.md
-                - name: Update
-                  href: api/unifiedrolemanagementpolicyrule-update.md
-            - name: Role management policy assignment
-              href: resources/unifiedRoleManagementPolicyAssignment.md
-              items:
-              - name: List
-                href: api/unifiedRoleManagementPolicyAssignment-list.md
-              - name: Get
-                href: api/unifiedRoleManagementPolicyAssignment-get.md
           - name: Resource namespace
             href: resources/unifiedrbacresourcenamespace.md
             items:
@@ -11618,6 +11492,100 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
+          - name: Privileged identity management
+            displayName: Privileged identity management, PIM
+            href: resources/privilegedidentitymanagementv3-overview.md
+            items:
+            - name: Role assignments
+              items:
+                - name: Schedule requests
+                  href: resources/unifiedroleassignmentschedulerequest.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                    - name: Create
+                      href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedulerequest-get.md
+                    - name: Cancel
+                      href: api/unifiedroleassignmentschedulerequest-cancel.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                - name: Schedules
+                  href: resources/unifiedroleassignmentschedule.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentschedules.md
+                    - name: Get
+                      href: api/unifiedroleassignmentschedule-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                - name: Schedule instances
+                  href: resources/unifiedroleassignmentscheduleinstance.md
+                  items:
+                    - name: List
+                      href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                    - name: Get
+                      href: api/unifiedroleassignmentscheduleinstance-get.md
+                    - name: Filter by current user
+                      href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+            - name: Role eligibility
+              items:
+              - name: Schedule requests
+                href: resources/unifiedroleeligibilityschedulerequest.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                  - name: Create
+                    href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedulerequest-get.md
+                  - name: Cancel
+                    href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+              - name: Schedules
+                href: resources/unifiedroleeligibilityschedule.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityschedules.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityschedule-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+              - name: Schedule instances
+                href: resources/unifiedroleeligibilityscheduleinstance.md
+                items:
+                  - name: List
+                    href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                  - name: Get
+                    href: api/unifiedroleeligibilityscheduleinstance-get.md
+                  - name: Filter by current user
+                    href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+            - name: Role management policies
+              items:
+              - name: Policies and rules
+                displayName: role management policies, Azure AD role settings
+                href: resources/unifiedrolemanagementpolicy.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicies.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicy-get.md
+                - name: List rules
+                  href: api/unifiedrolemanagementpolicy-list-rules.md
+                - name: Get rule
+                  href: api/unifiedrolemanagementpolicyrule-get.md
+                - name: Update rule
+                  href: api/unifiedrolemanagementpolicyrule-update.md
+              - name: Policy assignments
+                displayName: role managemement policy assignments
+                href: resources/unifiedrolemanagementpolicyassignment.md
+                items:
+                - name: List
+                  href: api/policyroot-list-rolemanagementpolicyassignments.md
+                - name: Get
+                  href: api/unifiedrolemanagementpolicyassignment-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -11810,6 +11778,7 @@ items:
         - name: Cross-tenant access (preview)
           items:
           - name: Overview
+            displayName: Cross-tenant access settings, XTAP
             href: resources/crosstenantaccesspolicy-overview.md
           - name: Policy
             items:
@@ -11905,9 +11874,9 @@ items:
             - name: Get risky service principal
               href: api/riskyserviceprincipal-get.md
             - name: List history
-              href: api/riskyserviceprincipal-list-history.md 
+              href: api/riskyserviceprincipal-list-history.md
             - name: Confirm compromised
-              href: api/riskyserviceprincipal-confirmcompromised.md 
+              href: api/riskyserviceprincipal-confirmcompromised.md
             - name: Dismiss
               href: api/riskyserviceprincipal-dismiss.md
         - name: Identity provider
@@ -11954,6 +11923,18 @@ items:
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
             - name: Create domain
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -12573,7 +12554,7 @@ items:
               href: api/accessreviewset-post-historydefinitions.md
             - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
-              items: 
+              items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
@@ -12710,6 +12691,8 @@ items:
             items:
             - name: List
               href: api/entitlementmanagement-list-accesspackageassignments.md
+            - name: Additional access
+              href: api/accesspackageassignment-additionalaccess.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
             - name: Reprocess
@@ -12851,9 +12834,9 @@ items:
             - name: Update
               href: api/entitlementmanagementsettings-update.md
         - name: Privileged Identity Management
-          displayName: PIM v2
           items:
           - name: Privileged Identity Management
+            displayName: PIM v2
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated)
             items:
@@ -13289,7 +13272,7 @@ items:
           href: resources/person.md
         - name: List people
           href: api/user-list-people.md
-        - name: Settings for people insights
+        - name: Org control for people insights (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
@@ -13599,7 +13582,7 @@ items:
           href: api/profilecardproperty-update.md
         - name: Delete
           href: api/profilecardproperty-delete.md
-      - name: Insights
+      - name: Item insights
         items:
         - name: Item insights
           items:
@@ -13611,22 +13594,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Organization control (preview)
+        - name: Org control (preview)
           items:
           - name: Insights settings
             href: resources/insightssettings.md
-          - name: Settings for item insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-iteminsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Settings for people insights
-            items:
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
+          - name: List
+            href: api/organizationsettings-list-iteminsights.md
+          - name: Update
+            href: api/insightssettings-update.md
         - name: User control (preview)
           items:
           - name: User insights settings
@@ -13726,10 +13701,10 @@ items:
           href: api/contact-delta.md
       - name: Contact merge suggestions (preview)
         items:
-        - name: Contact merge suggestions 
+        - name: Contact merge suggestions
           href: resources/contactmergesuggestions.md
         - name: Get
-          href: api/contactmergesuggestions-get.md 
+          href: api/contactmergesuggestions-get.md
         - name: Update
           href: api/contactmergesuggestions-update.md
       - name: Extended properties
@@ -13772,6 +13747,10 @@ items:
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+          - name: Confirm safe
+            href: api/signin-confirmsafe.md
+          - name: Confirm compromised
+            href: api/signin-confirmcompromised.md
         - name: Provisioning
           href: resources/provisioningobjectsummary.md
           items:
@@ -13839,9 +13818,9 @@ items:
           - name: User registration details
             href: resources/userregistrationdetails.md
             items:
-            - name: List 
+            - name: List
               href: api/authenticationmethodsroot-list-userregistrationdetails.md
-            - name: Get 
+            - name: Get
               href: api/userregistrationdetails-get.md
       - name: Microsoft 365 usage reports
         items:
@@ -13877,6 +13856,17 @@ items:
             href: api/reportroot-getteamsuseractivitydistributionusercounts.md
           - name: Get distribution total user counts
             href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
+          - name: Get total distribution activity counts
+            href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
+        - name: Microsoft Teams team activity
+          href: resources/microsoft-teams-team-usage-reports.md
+          items:
+          - name: Get team detail
+            href: api/reportroot-getteamsteamactivitydetail.md
+          - name: Get team activity counts
+            href: api/reportroot-getteamsteamactivitycounts.md
+          - name: Get team activity distribution counts
+            href: api/reportroot-getteamsteamactivitydistributioncounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
@@ -13935,6 +13925,15 @@ items:
             href: api/reportroot-getm365appusercounts.md
           - name: Get platform user counts
             href: api/reportroot-getm365appplatformusercounts.md
+        - name: Microsoft 365 browser usage
+          href: resources/microsoft-365-browser-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getbrowseruserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getbrowserusercounts.md
+          - name: Get distribution user counts
+            href: api/reportroot-getbrowserdistributionusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
@@ -14201,6 +14200,12 @@ items:
             href: api/externalconnectors-externalgroup-post-members.md
           - name: Delete
             href: api/externalconnectors-externalgroupmember-delete.md
+        - name: Connection quota
+          items:
+          - name: Connection quota
+            href: resources/externalconnectors-connectionquota.md
+          - name: Get
+            href: api/externalconnectors-connectionquota-get.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -14358,6 +14363,10 @@ items:
           href: resources/site.md
         - name: Get site
           href: api/site-get.md
+        - name: Get lists
+          href: api/list-list.md
+        - name: List subsites
+          href: api/site-list-subsites.md
         - name: Get site analytics
           href: api/itemanalytics-get.md
         - name: Get activities by interval
@@ -14388,20 +14397,8 @@ items:
           href: api/site-search.md
         - name: List operations
           href: api/site-list-operations.md
-        - name: Permissions
-          items:
-          - name: Permission
-            href: resources/permission.md
-          - name: List site permissions
-            href: api/site-list-permissions.md
-          - name: Create site permissions
-            href: api/site-post-permissions.md
-          - name: Get site permission
-            href: api/site-get-permission.md
-          - name: Update site permission
-            href: api/site-update-permission.md
-          - name: Delete site permission
-            href: api/site-delete-permission.md
+        - name: Get site settings
+          href: api/sitesettings-get.md
       - name: Lists
         items:
         - name: List
@@ -14486,6 +14483,22 @@ items:
           href: api/itemanalytics-get.md
         - name: List versions
           href: api/listitem-list-versions.md
+        - name: Get delta
+          href: api/listitem-delta.md
+      - name: Document set version
+        items:
+        - name: Document set version
+          href: resources/documentsetversion.md
+        - name: List
+          href: api/listitem-list-documentsetversions.md
+        - name: Create
+          href: api/listitem-post-documentsetversions.md
+        - name: Get
+          href: api/documentsetversion-get.md
+        - name: Delete
+          href: api/documentsetversion-delete.md
+        - name: Restore
+          href: api/documentsetversion-restore.md
       - name: Pages
         items:
         - name: Site page
@@ -14510,6 +14523,20 @@ items:
           href: api/list-list-operations.md
         - name: Get operation
           href: api/richlongrunningoperation-get.md
+      - name: Site permissions
+        items:
+        - name: Permission
+          href: resources/permission.md
+        - name: List site permissions
+          href: api/site-list-permissions.md
+        - name: Create site permissions
+          href: api/site-post-permissions.md
+        - name: Get site permission
+          href: api/site-get-permission.md
+        - name: Update site permission
+          href: api/site-update-permission.md
+        - name: Delete site permission
+          href: api/site-delete-permission.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -14566,6 +14593,14 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
+      - name: Tenant settings
+        items: 
+          - name: Settings
+            href: resources/tenantadmin-settings.md
+          - name: Get settings
+            href: api/tenantadmin-settings-get.md
+          - name: Update settings
+            href: api/tenantadmin-settings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -14721,6 +14756,8 @@ items:
           href: api/team-clone.md
         - name: List your teams
           href: api/user-list-joinedteams.md
+        - name: List your associated teams
+          href: api/associatedteaminfo-list.md
         - name: List all teams in an organization
           href: api/teams-list.md
         - name: Get primary channel
@@ -14748,6 +14785,8 @@ items:
           href: api/group-delete.md
         - name: List joined teams
           href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: List members
           href: api/group-list-members.md
         - name: Add member
@@ -14783,8 +14822,12 @@ items:
       - name: Channel
         href: resources/channel.md
         items:
+        - name: List all channels
+          href: api/team-list-allchannels.md
         - name: List channels
           href: api/channel-list.md
+        - name: List incoming channels
+          href: api/team-list-incomingchannels.md
         - name: Create channel
           href: api/channel-post.md
         - name: Get channel
@@ -14793,6 +14836,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Remove incoming channel
+          href: api/team-delete-incomingchannel.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
@@ -14829,6 +14874,16 @@ items:
           href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: Check user access
+          href: api/channel-doesuserhaveaccess.md
+        - name: List teams sharing a channel
+          href: api/sharedwithchannelteaminfo-list.md
+        - name: Get team sharing a channel
+          href: api/sharedwithchannelteaminfo-get.md
+        - name: Unshare channel with team
+          href: api/sharedwithchannelteaminfo-delete.md
+        - name: List allowed members
+          href: api/sharedwithchannelteaminfo-list-allowedmembers.md
       - name: Chat
         href: resources/chat.md
         items:
@@ -14872,6 +14927,12 @@ items:
           href: api/chat-hideforuser.md
         - name: Unhide chat
           href: api/chat-unhideforuser.md
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -14899,6 +14960,15 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
+      - name: Pinned chat message
+        href: resources/pinnedChatMessageInfo.md
+        items:
+        - name: List pinned messages
+          href: api/chat-list-pinnedmessages.md
+        - name: Pin message
+          href: api/chat-post-pinnedmessages.md
+        - name: Unpin message
+          href: api/chat-delete-pinnedmessages.md
       - name: Tags
         href: resources/teamworktag.md
         items:
@@ -15026,6 +15096,8 @@ items:
           href: api/team-sendactivitynotification.md
         - name: Send notification to user
           href: api/userteamwork-sendactivitynotification.md
+        - name: Send notifications to multiple users in bulk
+          href: api/teamwork-sendactivitynotificationtorecipients.md
       - name: Tab
         href: resources/teamstab.md
         items:

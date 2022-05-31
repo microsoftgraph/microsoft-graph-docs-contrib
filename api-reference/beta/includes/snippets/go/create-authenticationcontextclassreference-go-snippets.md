@@ -16,10 +16,7 @@ description := "Medium protection level defined for Contoso policy"
 requestBody.SetDescription(&description)
 isAvailable := true
 requestBody.SetIsAvailable(&isAvailable)
-options := &msgraphsdk.AuthenticationContextClassReferencesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferences().Post(requestBody)
 
 
 ```
