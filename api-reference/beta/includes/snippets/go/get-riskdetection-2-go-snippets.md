@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 riskDetectionId := "riskDetection-id"
-result, err := graphClient.IdentityProtection().RiskDetectionsById(&riskDetectionId).Get(nil)
+result, err := graphClient.IdentityProtection().RiskDetectionsById(&riskDetectionId).Get()
 
 
 ```

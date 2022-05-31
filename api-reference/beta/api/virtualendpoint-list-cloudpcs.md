@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List properties and relationships of the [cloudPC](../resources/cloudpc.md) objects.
+List the [cloudPC](../resources/cloudpc.md) devices in a tenant.
 
 ## Permissions
 

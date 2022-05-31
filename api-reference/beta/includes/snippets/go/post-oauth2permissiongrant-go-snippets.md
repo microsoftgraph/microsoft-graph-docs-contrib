@@ -20,10 +20,7 @@ startTime, err := time.Parse(time.RFC3339, "2022-03-17T00:00:00Z")
 requestBody.SetStartTime(&startTime)
 expiryTime, err := time.Parse(time.RFC3339, "2023-03-17T00:00:00Z")
 requestBody.SetExpiryTime(&expiryTime)
-options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Oauth2PermissionGrants().Post(options)
+result, err := graphClient.Oauth2PermissionGrants().Post(requestBody)
 
 
 ```

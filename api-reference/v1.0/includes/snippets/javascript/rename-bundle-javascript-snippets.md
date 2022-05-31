@@ -15,7 +15,6 @@ const driveItem = {
 };
 
 await client.api('/drive/items/{bundle-id}')
-	.version('beta')
 	.update(driveItem);
 
 ```

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.MembersRequestBuilderGetQueryParameters{
 	Filter: "roles/any(r:r%20eq%20'owner')",
 }
-options := &msgraphsdk.MembersRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MembersRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Members().Get(options)
+result, err := graphClient.TeamsById(&teamId).Members().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

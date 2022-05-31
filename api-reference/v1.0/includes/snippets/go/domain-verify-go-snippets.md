@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 domainId := "domain-id"
-result, err := graphClient.DomainsById(&domainId).Verify(domain-id).Post(nil)
+result, err := graphClient.DomainsById(&domainId).Verify(domain-id).Post()
 
 
 ```

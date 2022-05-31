@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10081
+Content-Length: 10859
 
 {
   "value": [
@@ -132,6 +132,17 @@ Content-Length: 10081
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
+      "detailedHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],
@@ -236,11 +247,23 @@ Content-Length: 10081
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
       "passwordPreviousPasswordCountToBlock": 4,
       "passwordRequiredType": "required",
+      "passwordRequireUnlock": "daily",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
       "screenCaptureBlocked": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
+      "shortHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
       "statusBarBlocked": true,
       "stayOnModes": [
         "ac"

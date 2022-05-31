@@ -34,10 +34,7 @@ webSiteUrl := "https://www.fourthcoffee.com"
 requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso)
-options := &msgraphsdk.BookingBusinessesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.BookingBusinesses().Post(options)
+result, err := graphClient.BookingBusinesses().Post(requestBody)
 
 
 ```

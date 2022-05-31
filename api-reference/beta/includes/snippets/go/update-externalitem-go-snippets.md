@@ -16,12 +16,9 @@ requestBody.SetAcl( []Acl {
 		"accessType": "grant",
 	}
 }
-options := &msgraphsdk.ExternalItemRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"
-graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).ItemsById(&externalItemId).Patch(requestBody)
 
 
 ```

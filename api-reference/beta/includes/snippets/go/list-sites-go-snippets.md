@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.SitesRequestBuilderGetQueryParameters{
 	Select: "siteCollection,webUrl",
 	Filter: "siteCollection/root%20ne%20null",
 }
-options := &msgraphsdk.SitesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SitesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Sites().Get(options)
+result, err := graphClient.Sites().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

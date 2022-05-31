@@ -17,11 +17,8 @@ requestBody.SetIsUsableOnce(&isUsableOnce)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
 }
-options := &msgraphsdk.TemporaryAccessPassMethodsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Authentication().TemporaryAccessPassMethods().Post(options)
+result, err := graphClient.UsersById(&userId).Authentication().TemporaryAccessPassMethods().Post(requestBody)
 
 
 ```

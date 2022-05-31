@@ -23,12 +23,9 @@ post.SetAttachments( []Attachment {
 		"name": "Holiday event",
 	}
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(requestBody)
 
 
 ```
