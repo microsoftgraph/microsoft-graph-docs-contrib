@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmission resource type"
-description: "Represents email threat submission"
+description: "An abstract type to report suspected spam, malware or phishing emails to Microsoft 365 Defender for Office."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,10 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type for email threat submission. 
-
-It represents email threat submission. It is used to submit suspected spam emails, malware emails, phishing emails to Microsoft 365 Defender for Office. It could also be used to submit false positive cases which should not have been blocked by Microsoft 365 Defender for Office, e.g, not junk emails.
-
+An abstract type to report suspected spam, malware or phishing emails to Microsoft 365 Defender for Office. You can also submit false positive cases, which should not have been blocked by Microsoft 365 Defender for Office, e.g, not junk emails.
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 
@@ -29,8 +26,6 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 |[review](../api/security-emailthreatsubmission-review.md)|None|Review threat submission from end user by administrator.|
 
 ## Properties
-#### Properties
-
 | Property                     | Type                         | Description                                                                                            |
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
 | attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, the field will not be null.|
@@ -42,6 +37,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 | senderIP                     | String                       | The sender IP of the submitted email.                                                                  |
 | subject                      | String                       | The subject of the submitted email.                                                                    |
 | tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | Used to auto add urls/attachments/senders of the email threat submission into tenant allow block list. |
+
 ## Relationships
 None.
 
