@@ -38,8 +38,6 @@ GET /chats
 
 ## Optional query parameters
 
-This method supports the `$expand` (**members** and **lastMessagePreview** properties), `$orderBy` (**lastMessagePreview/createdDateTime** property in descending order), and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
-
 This method supports the following [OData query parameters](/graph/query-parameters).
 
 | Name      | Description          |
