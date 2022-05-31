@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type to report suspected spam, malware or phishing emails to Microsoft 365 Defender for Office. You can also submit false positive cases, which should not have been blocked by Microsoft 365 Defender for Office, e.g, not junk emails.
+An abstract type to report suspected spam, malware or phishing emails to Microsoft 365 Defender for Office. You can also submit false positive cases, which should not have been blocked by Microsoft 365 Defender for Office, for example, emails incorrectly categorized as junk or spam.
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 
