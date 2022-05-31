@@ -1,19 +1,20 @@
 ---
-title: "List scopedRoleMembers"
-description: "Retrieve a list of scopedRoleMembership resources."
+title: "List Azure AD role assignments with administrative unit scope"
+description: "List Azure Active Directory (Azure AD) role assignments with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List scopedRoleMembers
+# List Azure AD role assignments with administrative unit scope
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) resources.
+List Azure Active Directory (Azure AD) role assignments with administrative unit scope.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

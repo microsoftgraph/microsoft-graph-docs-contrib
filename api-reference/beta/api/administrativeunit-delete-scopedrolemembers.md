@@ -1,19 +1,19 @@
 ---
-title: "Remove a scopedRoleMember"
-description: "Remove a scoped-role member from an adminstrative unit."
+title: "Remove an Azure AD role assignment with administrative unit scope"
+description: "Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Remove a scopedRoleMember
+# Remove an Azure AD role assignment with administrative unit scope
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a scoped-role member from an adminstrative unit.
+Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | RoleManagement.ReadWrite.Directory    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.ReadWrite.Directory |
+
+To remove a role assignment from an administrative unit, the calling principal must be assigned one of the following Azure AD roles:
+
+* Privileged Role Administrator
+* Global Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
