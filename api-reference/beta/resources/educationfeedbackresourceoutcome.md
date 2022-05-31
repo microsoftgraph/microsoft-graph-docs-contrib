@@ -28,7 +28,7 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 |:-------------|:------------|:------------|
 |feedbackResource|[educationResource](educationresource.md)|The actual feedback resource.|
 |id|String|Unique identifier for the **educationFeedbackResourceOutcome**.|
-|resourceStatus|educationFeedbackResourceOutcomeStatus|The possible values are: `notPublished`, `pendingPublish`, `published`, `failedPublish`, and `unknownFutureValue`.|
+|resourceStatus|educationFeedbackResourceOutcomeStatus|Represents the status of the feedback resource. The possible values are: `notPublished`, `pendingPublish`, `published`, `failedPublish`, and `unknownFutureValue`.|
 
 ## Relationships
 
