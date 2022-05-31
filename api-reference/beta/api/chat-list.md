@@ -40,6 +40,17 @@ GET /chats
 
 This method supports the `$expand` (**members** and **lastMessagePreview** properties), `$orderBy` (**lastMessagePreview/createdDateTime** property in descending order), and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+This method supports the following [OData query parameters](/graph/query-parameters).
+
+| Name      | Description          |
+|:----------|:---------------------|
+| [$expand](/graph/query-parameters#expand-parameter)| Currently supports **members** and **lastMessagePreview** properties. |
+| [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
+| [$filter](/graph/query-parameters#filter-parameter)| Filters results. |
+| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in **descending** order. Ascending order is currently not supported.|
+
+The other [OData query parameters](/graph/query-parameters) are not currently supported.
+
 ## Request headers
 
 | Header       | Value |
@@ -665,7 +676,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request.
+The following is an example of a request. `lastMessagePreview/createdDateTime` is passed to sort chats by the most to least recent chat messages.
 
 <!-- {
   "blockType": "request",

@@ -48,7 +48,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Name      | Description          |
 |:----------|:---------------------|
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
-| [$orderBy](/graph/query-parameters#orderBy)  | Currently supports **lastModifiedDateTime** (default) and **createdDateTime** in **descending** order. Ascending order is currently not supported.|
+| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastModifiedDateTime** (default) and **createdDateTime** in **descending** order. Ascending order is currently not supported.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
