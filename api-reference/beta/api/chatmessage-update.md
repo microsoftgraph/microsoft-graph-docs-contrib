@@ -9,6 +9,9 @@ ms.prod: "microsoft-teams"
 
 # Update chatMessage
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+
 Update a [chatMessage](../resources/chatMessage.md) object. 
 Properties of a message except **policyViolation** can be updated in User Context.
 Only the **policyViolation** property of a **chatMessage** can be updated in Application Context.
