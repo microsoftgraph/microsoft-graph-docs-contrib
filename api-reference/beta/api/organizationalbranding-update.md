@@ -38,7 +38,7 @@ PATCH /organization/{organizationId}/branding
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|Accept-Language|A valid ISO 639-1 locale. Required.|
+|Accept-Language|A valid ISO 639-1 locale or `0` for the default locale. Required.|
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]

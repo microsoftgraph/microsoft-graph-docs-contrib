@@ -14,11 +14,8 @@ requestBody.SetAssignedLabels( []AssignedLabel {
 		"labelId": "45cd0c48-c540-4358-ad79-a3658cdc5b88",
 	}
 }
-options := &msgraphsdk.GroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-graphClient.GroupsById(&groupId).Patch(options)
+graphClient.GroupsById(&groupId).Patch(requestBody)
 
 
 ```

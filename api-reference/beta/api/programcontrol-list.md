@@ -1,5 +1,5 @@
 ---
-title: "List programControls"
+title: "List programControls (deprecated)"
 description: "In the Azure AD access reviews feature, list all the programControl objects, across all programs in the tenant."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List programControls
+# List programControls (deprecated)
 
 Namespace: microsoft.graph
 

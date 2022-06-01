@@ -35,12 +35,9 @@ sharedOpenShift.SetActivities( []ShiftActivity {
 	}
 }
 requestBody.SetDraftOpenShift(nil)
-options := &msgraphsdk.OpenShiftRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 openShiftId := "openShift-id"
-graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(options)
+graphClient.TeamsById(&teamId).Schedule().OpenShiftsById(&openShiftId).Patch(requestBody)
 
 
 ```

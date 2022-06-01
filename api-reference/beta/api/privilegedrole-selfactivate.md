@@ -4,7 +4,7 @@ description: "Activate the role that is assigned to the requester."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # privilegedRole: selfActivate

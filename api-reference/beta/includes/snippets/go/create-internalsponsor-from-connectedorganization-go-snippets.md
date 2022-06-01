@@ -11,12 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/users/{id}",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderPostOptions{
-	Body: requestBody,
-}
 connectedOrganizationId := "connectedOrganization-id"
 directoryObjectId := "directoryObject-id"
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).InternalSponsorsById(&directoryObjectId).Post(options)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizationsById(&connectedOrganizationId).InternalSponsorsById(&directoryObjectId).Post(requestBody)
 
 
 ```

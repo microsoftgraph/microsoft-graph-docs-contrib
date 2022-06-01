@@ -22,11 +22,8 @@ dateTime := "2016-04-25T13:00:00"
 dueDateTime.SetDateTime(&dateTime)
 timeZone := "Pacific Standard Time"
 dueDateTime.SetTimeZone(&timeZone)
-options := &msgraphsdk.TasksRequestBuilderPostOptions{
-	Body: requestBody,
-}
 outlookTaskFolderId := "outlookTaskFolder-id"
-result, err := graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Tasks().Post(options)
+result, err := graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Tasks().Post(requestBody)
 
 
 ```

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
@@ -21,9 +23,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/basetask.md), [tasklist](../resources/basetasklist.md)  | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Administrative unit, device, event, group, group event, group post, message, organization, personal contact, user, task, task list. |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. | Event, group event, group post, message, personal contact, task, task list |Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md), [baseTask](../resources/basetask.md) (deprecated), [baseTaskList](../resources/basetasklist.md) (deprecated), [device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md)  | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, event, group, group event, group post, message, organization, personal contact, user, to-do task, to-do task list. |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. | Base task, base task list, event, group event, group post, message, personal contact, to-do task, to-do task list |Resource instances expanded with the open extension.|
 
 ## Permissions
 
@@ -31,6 +33,8 @@ Depending on the resource that contains the extension and the permission type (d
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [baseTaskList](../resources/basetasklist.md) (deprecated)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [device](../resources/device.md) | Directory.Read.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
@@ -39,9 +43,9 @@ Depending on the resource that contains the extension and the permission type (d
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 
 ## HTTP request
 
@@ -64,8 +68,10 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
 ### Get a known resource instance expanded with a matching extension 
@@ -81,7 +87,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
@@ -399,8 +407,7 @@ Content-type: application/json
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
@@ -495,15 +502,15 @@ expands them by including the extension. The filter returns extensions that has 
 
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
+
 
 # [C#](#tab/csharp)
 
@@ -521,7 +528,6 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 
 #### Response 5
@@ -596,8 +602,7 @@ HTTP/1.1 200 OK
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",

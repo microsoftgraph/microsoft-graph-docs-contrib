@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupId := "group-id"
 eventId := "event-id"
-graphClient.GroupsById(&groupId).EventsById(&eventId).Delete(nil)
+graphClient.GroupsById(&groupId).EventsById(&eventId).Delete()
 
 
 ```

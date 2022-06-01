@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewMailFolder()
 displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.MailFolderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).Patch(requestBody)
 
 
 ```

@@ -24,6 +24,8 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |:---------------|:--------|:----------|
 |[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
 |[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of a signIn object.|
+|[Confirm compromised](../api/signin-confirmcompromised.md)|None|Mark an event in the Azure AD sign in logs as risky.|
+|[Confirm safe](../api/signin-confirmsafe.md)|None|mark an event in Azure AD sign in logs as safe.|
 
 ## Properties
 | Property	   | Type	|Description|
