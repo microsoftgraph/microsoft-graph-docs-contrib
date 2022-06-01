@@ -1,6 +1,6 @@
 ---
 title: "networkInfo resource type"
-description: "The networkInfo type"
+description: "Represents information about the network used in a call."
 ms.localizationpriority: medium
 author: "williamlooney"
 ms.prod: "cloud-communications"
