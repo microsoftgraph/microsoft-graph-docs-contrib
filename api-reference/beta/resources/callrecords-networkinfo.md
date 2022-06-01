@@ -35,7 +35,7 @@ Represents information about the network used in a call.
 |relayPort|Int32|Network port number allocated on the media relay server by the media endpoint.|
 |sentQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio sent.|
 |subnet|String|Subnet used for media stream by the media endpoint.|
-|traceRouteHops|[microsoft.graph.callRecords.traceRouteHop](callrecords-traceroutehop.md) collection|List of network trace route hops collected for this MediaStream.|
+|traceRouteHops|[microsoft.graph.callRecords.traceRouteHop](callrecords-traceroutehop.md) collection|List of network trace route hops collected for this media stream.|
 |wifiBand|microsoft.graph.callRecords.wifiBand|WiFi band used by the media endpoint. Possible values are: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Estimated remaining battery charge in percentage reported by the media endpoint.|
 |wifiChannel|Int32|WiFi channel used by the media endpoint.|
