@@ -11097,9 +11097,9 @@ items:
             href: api/administrativeunit-post-scopedrolemembers.md
           - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get role assignment with scope
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove role assignment with scope
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key (preview)
           items:
