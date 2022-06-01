@@ -5063,7 +5063,7 @@
         {
           "Id": "81CC1882-7054-4CCF-971B-17E05E1AB312",
           "ApiChange": "Parameter",
-          "ChangedApiName": "LIST",
+          "ChangedApiName": "chat",
           "ChangeType": "Addition",
           "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
           "Target": "chat"
