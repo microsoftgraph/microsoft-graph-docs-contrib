@@ -2054,7 +2054,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "alternateResourceUrl",
                 "ChangeType": "Addition",
-                "Description": "Added the **alternateResourceUrl** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Description": "Added the **alternateResourceUrl** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                 "Target": "cloudPcProvisioningPolicy"
               },
               {
@@ -2062,7 +2062,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "cloudPcGroupDisplayName",
                 "ChangeType": "Addition",
-                "Description": "Added the **cloudPcGroupDisplayName** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Description": "Added the **cloudPcGroupDisplayName** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                 "Target": "cloudPcProvisioningPolicy"
               },
               {
@@ -2070,7 +2070,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "gracePeriodInHours",
                 "ChangeType": "Addition",
-                "Description": "Added the **gracePeriodInHours** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Description": "Added the **gracePeriodInHours** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                 "Target": "cloudPcProvisioningPolicy"
               },
               {
@@ -2078,7 +2078,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "localAdminEnabled",
                 "ChangeType": "Addition",
-                "Description": "Added the **localAdminEnabled** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Description": "Added the **localAdminEnabled** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                 "Target": "cloudPcProvisioningPolicy"
               },
               {
@@ -2086,7 +2086,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "managedBy",
                 "ChangeType": "Addition",
-                "Description": "Added the **managedBy** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Description": "Added the **managedBy** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
                 "Target": "cloudPcProvisioningPolicy"
               }
             ],
