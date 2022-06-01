@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
 teamworkTagId := "teamworkTag-id"
-result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Get(nil)
+result, err := graphClient.TeamsById(&teamId).TagsById(&teamworkTagId).Get()
 
 
 ```

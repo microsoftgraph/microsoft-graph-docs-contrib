@@ -12,11 +12,8 @@ id := "Alpine"
 requestBody.SetId(&id)
 isActive := "true"
 requestBody.SetIsActive(&isActive)
-options := &msgraphsdk.AllowedValuesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValues().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValues().Post(requestBody)
 
 
 ```

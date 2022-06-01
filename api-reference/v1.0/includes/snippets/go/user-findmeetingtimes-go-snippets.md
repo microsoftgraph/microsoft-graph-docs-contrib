@@ -47,11 +47,10 @@ requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.FindMeetingTimesRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.FindMeetingTimesRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.Me().FindMeetingTimes().Post(options)
+result, err := graphClient.Me().FindMeetingTimes().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

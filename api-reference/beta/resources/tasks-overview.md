@@ -7,9 +7,11 @@ ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
 
-# Use the To Do API in Microsoft Graph
+# Use the To Do API built on base tasks in Microsoft Graph (deprecated)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Use the Microsoft Graph To Do API to create an app that connects with users' task in their mailbox. Build a variety of experiences with tasks, such as the following:
 
@@ -26,7 +28,7 @@ Before starting with the To Do API, take a look at the resources and how they re
 
 ## Task list
 
-A [taskList](./basetasklist.md) represents a logical container of [task](./basetask.md) resources. You can currently create tasks only in a task list. Tasks created without specifying list get created in the default Tasks list. To [get all your task lists](../api/basetasklist-get.md), make the following HTTP request:
+In this API set, a task list is represented by [baseTaskList](./basetasklist.md) which is a logical container of [baseTask](./basetask.md) resources. You can currently create tasks only in a task list. Tasks created without specifying list get created in the default Tasks list. To [get all your task lists](../api/basetasklist-get.md), make the following HTTP request:
 
 ``` http
 GET /me/tasks/lists
@@ -34,7 +36,7 @@ GET /me/tasks/lists
 
 ## Task
 
-A [task](./basetask.md) represents a task, that is, a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
+In this API set, a task is represented by a [baseTask](./basetask.md) resource which is a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
 ``` http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
@@ -58,8 +60,8 @@ GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceI
 For performance reasons, you may want to maintain a local cache of objects, and periodically synchronize the local cache with the server, using [delta query](/graph/delta-query-overview).
 
 The following To Do API resources support delta query:
-* [Task](./basetask.md) collection in a task list
-* [TaskList](./basetasklist.md)
+* [baseTask](./basetask.md) collection in a task list
+* [baseTaskList](./basetasklist.md)
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

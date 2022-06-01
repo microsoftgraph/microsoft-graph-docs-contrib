@@ -127,7 +127,7 @@ items:
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
-      - name: Install the SDK
+      - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/1.0
@@ -361,11 +361,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted users
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted user
           href: api/directory-deleteditems-get.md
         - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted user
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -727,13 +727,13 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md  
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
-          href: api/directory-deleteditems-get.md 
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md     
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
-          href: api/directory-deleteditems-restore.md        
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -943,7 +943,7 @@ items:
           - name: Remove key
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
-            href: api/serviceprincipal-addtokensigningcertificate.md  
+            href: api/serviceprincipal-addtokensigningcertificate.md
         - name: Delegated permission grants
           items:
           - name: List
@@ -1319,7 +1319,7 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md          
+            href: api/participant-invite.md
           - name: Start hold music
             href: api/participant-startholdmusic.md
           - name: Stop hold music
@@ -4335,7 +4335,7 @@ items:
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
-        - name: Get changes to classes
+        - name: Get delta
           href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
@@ -4383,9 +4383,9 @@ items:
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
-          href: api/educationuser-post-rubrics.md       
+          href: api/educationuser-post-rubrics.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md          
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4423,6 +4423,8 @@ items:
           href: api/educationassignment-put-rubric.md
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
+        - name: Get delta
+          href: api/educationassignment-delta.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -4446,6 +4448,8 @@ items:
           href: api/educationcategory-get.md
         - name: Delete
           href: api/educationcategory-delete.md
+        - name: Get delta
+          href: api/educationcategory-delta.md
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -4485,11 +4489,11 @@ items:
         - name: Return submission
           href: api/educationsubmission-return.md
         - name: Reassign submission
-          href: api/educationsubmission-reassign.md          
+          href: api/educationsubmission-reassign.md
       - name: Outcome
         items:
         - name: Outcome
-          href: resources/educationoutcome.md     
+          href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
@@ -4867,10 +4871,9 @@ items:
             - name: Delete
               href: api/unifiedroleassignment-delete.md
           - name: Privileged identity management
+            displayName: Privileged identity management, PIM
+            href: resources/privilegedidentitymanagementv3-overview.md
             items:
-            - name: Overview
-              displayName: Privileged identity management, PIM
-              href: resources/privilegedidentitymanagementv3-overview.md
             - name: Role assignments
               items:
                 - name: Schedule requests
@@ -4960,7 +4963,7 @@ items:
                 - name: List
                   href: api/policyroot-list-rolemanagementpolicyassignments.md
                 - name: Get
-                  href: api/unifiedrolemanagementpolicyassignment-get.md              
+                  href: api/unifiedrolemanagementpolicyassignment-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -5115,24 +5118,44 @@ items:
           items:
           - name: Identity provider base
             href: resources/identityproviderbase.md
-          - name: Built-in identity provider
-            href: resources/builtinidentityprovider.md
-          - name: Social identity provider
-            href: resources/socialidentityprovider.md
-          - name: Apple identity provider
-            href: resources/applemanagedidentityprovider.md
-          - name: List
-            href: api/identitycontainer-list-identityproviders.md
-          - name: Create
-            href: api/identitycontainer-post-identityproviders.md
-          - name: Get
-            href: api/identityproviderbase-get.md
-          - name: Update
-            href: api/identityproviderbase-update.md
-          - name: Delete
-            href: api/identityproviderbase-delete.md
-          - name: List available provider types
-            href: api/identityproviderbase-availableprovidertypes.md
+          - name: External identities
+            items:
+            - name: Built-in identity provider type
+              href: resources/builtinidentityprovider.md
+            - name: Social identity provider type
+              href: resources/socialidentityprovider.md
+            - name: Apple identity provider type
+              href: resources/applemanagedidentityprovider.md
+            - name: List available identity providers
+              href: api/identityproviderbase-availableprovidertypes.md
+            - name: List configured identity providers
+              href: api/identitycontainer-list-identityproviders.md
+            - name: Create identity provider
+              href: api/identitycontainer-post-identityproviders.md
+            - name: Get identity provider
+              href: api/identityproviderbase-get.md
+            - name: Update identity provider
+              href: api/identityproviderbase-update.md
+            - name: Delete identity provider
+              href: api/identityproviderbase-delete.md
+          - name: Domain-based external identities
+            items:
+            - name: SAML/Ws-Fed external domain federation
+              href: resources/samlorwsfedexternaldomainfederation.md
+            - name: List federated configurations
+              href: api/samlorwsfedexternaldomainfederation-list.md
+            - name: Get federated configuration
+              href: api/samlorwsfedexternaldomainfederation-get.md
+            - name: Create federated configuration
+              href: api/samlorwsfedexternaldomainfederation-post.md
+            - name: Update federated configuration
+              href: api/samlorwsfedexternaldomainfederation-update.md
+            - name: Delete federated configuration
+              href: api/samlorwsfedexternaldomainfederation-delete.md
+            - name: List domains
+              href: api/samlorwsfedexternaldomainfederation-list-domains.md
+            - name: Create externalDomainName
+              href: api/samlorwsfedexternaldomainfederation-post-domains.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -5484,7 +5507,7 @@ items:
               href: api/accessreviewset-post-historydefinitions.md
             - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
-              items: 
+              items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
@@ -5552,7 +5575,7 @@ items:
             - name: Get
               href: api/approval-get.md
             - name: Filter by current user
-              href: api/approval-filterbycurrentuser.md 
+              href: api/approval-filterbycurrentuser.md
             - name: Approval stage
               items:
               - name: Approval stage
@@ -6430,6 +6453,8 @@ items:
           href: api/site-list-subsites.md
         - name: Search for sites
           href: api/site-search.md
+        - name: List operations
+          href: api/site-list-operations.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -6463,6 +6488,8 @@ items:
           href: api/list-list-contenttypes.md
         - name: Add copy of content type
           href: api/contenttype-addcopy.md
+        - name: List operations
+          href: api/list-list-operations.md
       - name: Columns
         items:
         - name: Column definition
@@ -6491,6 +6518,8 @@ items:
           href: api/contenttype-unpublish.md
         - name: Add copy to list
           href: api/contenttype-addcopy.md
+        - name: Add or sync from hub
+          href: api/contenttype-addcopyfromcontenttypehub.md
         - name: Associate with hub sites
           href: api/contenttype-associatewithhubsites.md
         - name: Copy to default content location
@@ -6499,6 +6528,8 @@ items:
           href: api/contenttype-list-columns.md
         - name: Create column
           href: api/contenttype-post-columns.md
+        - name: Get compatible from hub
+          href: api/contenttype-getcompatiblehubcontenttypes.md
       - name: List items
         href: resources/listitem.md
         items:
@@ -6514,6 +6545,12 @@ items:
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+      - name: Rich long-running operation
+        items:
+        - name: Rich long-running operation
+          href: resources/richLongRunningOperation.md
+        - name: Get
+          href: api/richlongrunningoperation-get.md
       - name: Taxonomy
         displayname: Taxonomy API
         items:
@@ -6590,6 +6627,8 @@ items:
           href: api/plannerplan-list-buckets.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -6733,11 +6772,11 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md 
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Channel
@@ -6776,9 +6815,9 @@ items:
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Provision email address
-          href: api/channel-provisionemail.md  
+          href: api/channel-provisionemail.md
         - name: Remove email address
-          href: api/channel-removeemail.md  
+          href: api/channel-removeemail.md
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -7170,6 +7209,19 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Checklist item
+        href: resources/checklistitem.md
+        items:
+        - name: List
+          href: api/todotask-list-checklistitems.md
+        - name: Create
+          href: api/todotask-post-checklistitems.md
+        - name: Get
+          href: api/checklistitem-get.md
+        - name: Update
+          href: api/checklistitem-update.md
+        - name: Delete
+          href: api/checklistitem-delete.md
       - name: Linked resource
         href: resources/linkedresource.md
         items:

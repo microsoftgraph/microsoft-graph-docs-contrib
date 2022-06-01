@@ -14,11 +14,8 @@ justification := "All principals with access need continued access to the resour
 requestBody.SetJustification(&justification)
 resourceId := "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
 requestBody.SetResourceId(&resourceId)
-options := &msgraphsdk.BatchRecordDecisionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewInstance-id).Post(options)
+graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).BatchRecordDecisions(accessReviewInstance-id).Post(requestBody)
 
 
 ```

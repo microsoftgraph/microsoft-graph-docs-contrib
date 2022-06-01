@@ -3,7 +3,7 @@ title: "Delete term"
 description: "Delete a term object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: sites-and-lists   
 doc_type: apiPageType
 ---
 

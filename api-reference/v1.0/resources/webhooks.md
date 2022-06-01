@@ -34,6 +34,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Teams [channel][] | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [conversationMember][] | Changes to membership in a specific team:<br>`/teams/{id}/members` <br> Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers` <br> Changes to membership in a specific chat:<br>`/chats/{id}/members` <br> Changes to membership in all chats:<br>`/teams/getAllMembers` | Yes |
 | Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
+| [To Do task][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/todo/lists/alltasks` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
@@ -43,9 +44,9 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
 | Permission type                        | Supported resource types                                                      |
-| :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [team][], [user][]|
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |                                       |
+| Delegated - work or school account     | [alert][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [team][], [todoTask][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                        |
 | Application                            | [alert][], [channel][], [contact][], [conversationMember][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printer][], [printTaskDefinition][], [team][]|
 
 
@@ -76,4 +77,6 @@ In general, subscription operations require read permission to the resource. For
 [printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [team]: ./team.md
+[To Do task]: ./todotask.md
+[todoTask]: ./todotask.md
 
