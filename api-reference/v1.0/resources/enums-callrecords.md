@@ -82,6 +82,7 @@ Namespace: microsoft.graph.callRecords
 | unknown
 | udp
 | tcp
+| unknownFutureValue
 
 ### productFamily values
 

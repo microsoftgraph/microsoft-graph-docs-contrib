@@ -25,7 +25,7 @@ Represents information about the network used in a call.
 |ipAddress|String|IP address of the media endpoint.|
 |linkSpeed|Int64|Link speed in bits per second reported by the network adapter used by the media endpoint.|
 |macAddress|String|The media access control (MAC) address of the media endpoint's network device.|
-|networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Network protocol used for the transmission of stream. Possible values are: `unknown`, `udp`, `tcp`.|
+|networkTransportProtocol|microsoft.graph.callRecords.networkTransportProtocol|Network protocol used for the transmission of stream. Possible values are: `unknown`, `udp`, `tcp`, `unknownFutureValue`.|
 |port|Int32|Network port number used by media endpoint.|
 |receivedQualityEventRatio|Double|Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.|
 |reflexiveIPAddress|String|IP address of the media endpoint as seen by the media relay server. This is typically the public internet IP address associated to the endpoint.|
