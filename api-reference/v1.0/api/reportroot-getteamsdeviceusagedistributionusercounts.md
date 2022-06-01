@@ -66,7 +66,8 @@ The CSV file has the following headers for columns:
 - Linux
 - Report Period
 
-**Note**: Column Windows Phone is deprecated and value will always be 0. It is kept in response just for backward compatibility purpose.
+> [!CAUTION] 
+> The **Windows Phone** column is deprecated and its value will always be `0`. It's kept in the response for backward compatibility reasons.
 
 ## Example
 
