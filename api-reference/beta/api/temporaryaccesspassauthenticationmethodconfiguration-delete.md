@@ -67,3 +67,6 @@ If successful, this method returns a `204 No Content` response code.
   "truncated": true
 }
 -->
+``` http
+HTTP/1.1 204 No Content
+```
