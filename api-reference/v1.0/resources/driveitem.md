@@ -56,7 +56,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Unfollow Item](../api/driveitem-unfollow.md)            | No content | Unfollow a driveItem.
 | [List thumbnails](../api/driveitem-list-thumbnails.md)   | collection of driveItem | List driveItems with their thumbnails. 
 | [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
-| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
+| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing invite to a user.
 | [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
 | [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
 | [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
