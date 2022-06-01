@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create linkedResource_v2
+# Create linkedResource_v2 (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Create a new [linkedResource_v2](../resources/linkedresource_v2.md) object.
 

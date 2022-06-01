@@ -360,7 +360,7 @@ items:
       - name: Directory objects
         href: resources/directoryobject.md
         items:
-        - name: Activate service plan
+        - name: Activate service plan (deprecated)
           href: api/user-activateserviceplan.md
         - name: Assign license
           href: api/user-assignlicense.md
@@ -594,7 +594,7 @@ items:
           href: api/chat-list.md
       - name: To-do tasks
         items:
-        - name: Task
+        - name: To-do task
           href: resources/todotask.md
         - name: Create task
           href: api/todotasklist-post-tasks.md
@@ -11313,7 +11313,7 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
-          - name: Activate service
+          - name: Activate service (deprecated)
             href: api/organization-activateservice.md
         - name: Organization settings
           href: resources/organizationSettings.md
@@ -14617,6 +14617,8 @@ items:
           href: api/plannerplan-get.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
         - name: List plan tasks
           href: api/plannerplan-list-tasks.md
         - name: List plan buckets
@@ -15351,51 +15353,43 @@ items:
       displayName: Microsoft To Do
       items:
       - name: Overview
-        href: resources/tasks-overview.md
-      - name: Task list
+        href: resources/todo-overview.md
+      - name: To-do task list
         items:
-        - name: Base task list
-          href: resources/basetasklist.md
-        - name: Task list
-          href: resources/tasklist.md
-        - name: Well-known task list
-          href: resources/wellknowntasklist.md
+        - name: To-do task list
+          href: resources/todotasklist.md
         - name: List task lists
-          href: api/tasks-list-lists.md
+          href: api/todo-list-lists.md
         - name: Create task list
-          href: api/tasks-post-lists.md
+          href: api/todo-post-lists.md
         - name: Get task list
-          href: api/basetasklist-get.md
+          href: api/todotasklist-get.md
         - name: Update task list
-          href: api/tasklist-update.md
+          href: api/todotasklist-update.md
         - name: Delete task list
-          href: api/tasklist-delete.md
-        - name: Get task list delta
-          href: api/basetasklist-delta.md
+          href: api/todotasklist-delete.md
+        - name: Get delta for task list
+          href: api/todotasklist-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Task
+      - name: To-do task
         items:
-        - name: Base task
-          href: resources/basetask.md
-        - name: Task
-          href: resources/task.md
+        - name: To-do task
+          href: resources/todotask.md
         - name: List tasks
-          href: api/basetasklist-list-tasks.md
+          href: api/todotasklist-list-tasks.md
         - name: Create task
-          href: api/basetasklist-post-tasks.md
+          href: api/todotasklist-post-tasks.md
         - name: Get task
-          href: api/basetask-get.md
+          href: api/todotask-get.md
         - name: Update task
-          href: api/basetask-update.md
-        - name: Move task
-          href: api/basetask-move.md
+          href: api/todotask-update.md
         - name: Delete task
-          href: api/basetask-delete.md
-        - name: Get task delta
-          href: api/basetask-delta.md
+          href: api/todotask-delete.md
+        - name: Get delta for task
+          href: api/todotask-delta.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -15404,9 +15398,9 @@ items:
         href: resources/checklistitem.md
         items:
         - name: List
-          href: api/basetask-list-checklistitems.md
+          href: api/todotask-list-checklistitems.md
         - name: Create
-          href: api/basetask-post-checklistitems.md
+          href: api/todotask-post-checklistitems.md
         - name: Get
           href: api/checklistitem-get.md
         - name: Update
@@ -15414,73 +15408,96 @@ items:
         - name: Delete
           href: api/checklistitem-delete.md
       - name: Linked resource
-        href: resources/linkedresource_v2.md
+        href: resources/linkedresource.md
         items:
         - name: List
-          href: api/basetask-list-linkedresources.md
+          href: api/todotask-list-linkedresources.md
         - name: Create
-          href: api/basetask-post-linkedresources.md
+          href: api/todotask-post-linkedresources.md
         - name: Get
-          href: api/linkedresource_v2-get.md
+          href: api/linkedresource-get.md
         - name: Update
-          href: api/linkedresource_v2-update.md
+          href: api/linkedresource-update.md
         - name: Delete
-          href: api/linkedresource_v2-delete.md
-      - name: To-do Tasks(old)
+          href: api/linkedresource-delete.md
+      - name: To-do API with base tasks (deprecated)
         items:
         - name: Overview
-          href: resources/todo-overview.md
-        - name: Task list
-          href: resources/todotasklist.md
+          href: resources/tasks-overview.md
+        - name: Base task list
           items:
-          - name: List task lists
-            href: api/todo-list-lists.md
-          - name: Create task list
-            href: api/todo-post-lists.md
-          - name: Get task list
-            href: api/todotasklist-get.md
-          - name: Update task list
-            href: api/todotasklist-update.md
-          - name: Delete task list
-            href: api/todotasklist-delete.md
-          - name: Get task list delta
-            href: api/todotasklist-delta.md
+          - name: Base task list
+            href: resources/basetasklist.md
+          - name: Task list
+            href: resources/tasklist.md
+          - name: Well-known task list
+            href: resources/wellknowntasklist.md
+          - name: List base task lists
+            href: api/tasks-list-lists.md
+          - name: Create base task list
+            href: api/tasks-post-lists.md
+          - name: Get base task list
+            href: api/basetasklist-get.md
+          - name: Update base task list
+            href: api/tasklist-update.md
+          - name: Delete base task list
+            href: api/tasklist-delete.md
+          - name: Get delta for base task list
+            href: api/basetasklist-delta.md
           - name: Create open extension
             href: api/opentypeextension-post-opentypeextension.md
           - name: Get open extension
             href: api/opentypeextension-get.md
-        - name: Task
-          href: resources/todotask.md
+        - name: Base task
           items:
-          - name: List tasks
-            href: api/todotasklist-list-tasks.md
-          - name: Create task
-            href: api/todotasklist-post-tasks.md
-          - name: Get task
-            href: api/todotask-get.md
-          - name: Update task
-            href: api/todotask-update.md
-          - name: Delete task
-            href: api/todotask-delete.md
-          - name: Get task delta
-            href: api/todotask-delta.md
+          - name: Base task
+            href: resources/basetask.md
+          - name: Task
+            href: resources/task.md
+          - name: List base tasks
+            href: api/basetasklist-list-tasks.md
+          - name: Create base task
+            href: api/basetasklist-post-tasks.md
+          - name: Get base task
+            href: api/basetask-get.md
+          - name: Update base task
+            href: api/basetask-update.md
+          - name: Move base task
+            href: api/basetask-move.md
+          - name: Delete base task
+            href: api/basetask-delete.md
+          - name: Get delta for base task
+            href: api/basetask-delta.md
           - name: Create open extension
             href: api/opentypeextension-post-opentypeextension.md
           - name: Get open extension
             href: api/opentypeextension-get.md
-        - name: Linked resource
-          href: resources/linkedresource.md
+        - name: Checklist item
+          href: resources/checklistitem.md
           items:
           - name: List
-            href: api/todotask-list-linkedresources.md
+            href: api/basetask-list-checklistitems.md
           - name: Create
-            href: api/todotask-post-linkedresources.md
+            href: api/basetask-post-checklistitems.md
           - name: Get
-            href: api/linkedresource-get.md
+            href: api/checklistitem-get.md
           - name: Update
-            href: api/linkedresource-update.md
+            href: api/checklistitem-update.md
           - name: Delete
-            href: api/linkedresource-delete.md
+            href: api/checklistitem-delete.md
+        - name: Linked resource v2
+          href: resources/linkedresource_v2.md
+          items:
+          - name: List
+            href: api/basetask-list-linkedresources.md
+          - name: Create
+            href: api/basetask-post-linkedresources.md
+          - name: Get
+            href: api/linkedresource_v2-get.md
+          - name: Update
+            href: api/linkedresource_v2-update.md
+          - name: Delete
+            href: api/linkedresource_v2-delete.md        
       - name: Outlook tasks (deprecated)
         items:
         - name: Outlook task (deprecated)

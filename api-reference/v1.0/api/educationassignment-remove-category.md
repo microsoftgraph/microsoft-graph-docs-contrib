@@ -1,6 +1,6 @@
 ---
 title: "Remove educationCategory"
-description: "Remove an existing educationCategory from this educationAssignment"
+description: "Remove an existing educationCategory from this educationAssignment."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -31,7 +31,6 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Don't supply a request body for this method.
