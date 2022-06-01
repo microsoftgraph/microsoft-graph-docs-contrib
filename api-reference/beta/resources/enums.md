@@ -3016,16 +3016,6 @@ Possible values for user account types (group membership), per Windows definitio
 |securityGroup|
 |unknownFutureValue|
 
-### delegatedAdminRelationshipOperationStatus values 
-
-|Member|
-|:---|
-|notStarted|
-|running|
-|complete|
-|failed|
-|unknownFutureValue|
-
 ### delegatedAdminRelationshipOperationType values 
 
 |Member|
@@ -3047,7 +3037,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |created|
 |pending|
-|complete|
+|succeeded|
 |failed|
 |unknownFutureValue|
 
