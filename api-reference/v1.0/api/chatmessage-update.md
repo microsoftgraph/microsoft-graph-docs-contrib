@@ -51,20 +51,13 @@ If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-m
 | Authorization  | Bearer {token}. Required. |
 | Content-Type | application/json. Required. |
 
-## Request body
-For applications using delegated permissions:
-In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
-specifying the properties that needs to be changed.
+## Request body in application context
 
-For applications using application permissions:
 In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
 specifying only the **policyViolation** property.
 
-## Response body
-For applications using delegated permissions:
-If successful, this method returns a `204 NoContent` response.
+## Response body in application context
 
-For applications using application permissions:
 If successful, this method returns a `200 OK` response.
 
 ## Example for updating policyViolation in application context
@@ -143,6 +136,14 @@ HTTP/1.1 200 OK
   "tocPath": ""
 }-->
 
+## Request body in user context
+
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
+specifying the properties that needs to be changed.
+
+## Response body in user context
+
+If successful, this method returns a `204 NoContent` response.
 
 ## Example for updating any property of a message in user context
 
@@ -197,7 +198,7 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message in user context
+### Request to update the mentios of a message
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message in user context.
 
@@ -278,7 +279,7 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message in user context
+### Request to update the content with attachments of a message
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message in user context.
 
@@ -346,7 +347,7 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message in user context
+### Request to update the reactions in a message
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message in user context.
 
