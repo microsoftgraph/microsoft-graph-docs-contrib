@@ -10706,7 +10706,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [temporaryAccessPassAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration?view=graph-rest-1.0) resource",
+          "Description": "Added the [temporaryAccessPassAuthenticationMethodConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to configure and manage the settings of the Temporary Access Pass authentication methods policy in your tenant.",
           "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
         }
       ],
