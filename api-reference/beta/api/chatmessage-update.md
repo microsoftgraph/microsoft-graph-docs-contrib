@@ -1,6 +1,6 @@
 ---
 title: "Update chatMessage"
-description: "Update the properties of a chatMessage."
+description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
@@ -12,9 +12,10 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Update a [chatMessage](../resources/chatMessage.md) object. 
-Properties of a message except **policyViolation** can be updated in User Context.
-Only the **policyViolation** property of a **chatMessage** can be updated in Application Context.
+Update the properties of a [chatMessage](../resources/chatMessage.md) object.
+
+Properties of a message except **policyViolation** can be updated using delegated permissions.
+Only the **policyViolation** property of a **chatMessage** can be updated using application permissions.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
@@ -70,9 +71,11 @@ If successful, this method returns a `204 NoContent` response.
 For applications using application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation in application context
+## Examples
 
-### Request
+### Example 1: Update policyViolation in application context
+
+#### Request
 
 The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message in application context.
 
@@ -125,7 +128,7 @@ Content-Type: application/json
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -147,9 +150,9 @@ HTTP/1.1 200 OK
 }-->
 
 
-## Example for updating any property of a message in user context
+### Example 2: Update any property of a message in user context
 
-### Request to update the content of a message
+#### Request
 
 The following is an example of the request to update the properties on a Microsoft Teams channel message in user context.
 
@@ -188,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -200,7 +203,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message in user context
+### Example 3: Update the mentions of a message in user context
+
+#### Request
 
 The following is an example of the request to update the mentions on a Microsoft Teams channel message in user context.
 
@@ -269,7 +274,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -281,7 +286,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message in user context
+### Example 4: Update the content with attachments of a message in user context
+
+#### Request
 
 The following is an example of the request to update the attachments on a Microsoft Teams channel message in user context.
 
@@ -337,7 +344,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -349,7 +356,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message in user context
+### Example 5: Update the reactions in a message in user context
+
+#### Request
 
 The following is an example of the request to update the reactions property on a Microsoft Teams channel message in user context.
 
@@ -511,7 +520,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
