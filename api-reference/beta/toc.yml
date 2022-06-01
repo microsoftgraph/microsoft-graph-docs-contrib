@@ -14617,6 +14617,8 @@ items:
           href: api/plannerplan-get.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
         - name: List plan tasks
           href: api/plannerplan-list-tasks.md
         - name: List plan buckets
