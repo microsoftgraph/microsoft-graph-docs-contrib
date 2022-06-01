@@ -262,7 +262,7 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName"
+    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
     "cloudPcGroupDisplayName": "MyCloudPcGroup",
     "description": "The ProvisioningPolicy for West US employees.",
     "displayName": "WestUsPolicy",
@@ -281,6 +281,6 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    },
+    }
 }
 ```
