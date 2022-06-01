@@ -10732,7 +10732,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-1.0) resource",
+          "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-1.0) resource and related methods. Use this resource and related methods to create and manage Temporary Access Passes for users.",
           "Target": "temporaryAccessPassAuthenticationMethod"
         }
       ],
