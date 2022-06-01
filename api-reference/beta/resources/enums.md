@@ -592,6 +592,21 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
 ### clientCredentialType values 
 
 
