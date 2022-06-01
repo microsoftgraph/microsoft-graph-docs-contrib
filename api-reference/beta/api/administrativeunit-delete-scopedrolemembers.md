@@ -1,5 +1,5 @@
 ---
-title: "Remove an Azure AD role assignment with administrative unit scope"
+title: "Remove a scopedRoleMember"
 description: "Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Remove an Azure AD role assignment with administrative unit scope
+# Remove a scopedRoleMember
 
 Namespace: microsoft.graph
 

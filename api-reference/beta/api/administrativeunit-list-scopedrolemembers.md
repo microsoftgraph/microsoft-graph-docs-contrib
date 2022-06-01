@@ -1,5 +1,5 @@
 ---
-title: "List Azure AD role assignments with administrative unit scope"
+title: "List scopedRoleMembers"
 description: "List Azure Active Directory (Azure AD) role assignments with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List Azure AD role assignments with administrative unit scope
+# List scopedRoleMembers
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Get an Azure AD role assignment with administrative unit scope"
+title: "Get a scopedRoleMember"
 description: "Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get an Azure AD role assignment with administrative unit scope
+# Get a scopedRoleMember
 
 Namespace: microsoft.graph
 

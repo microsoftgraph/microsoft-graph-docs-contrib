@@ -1,5 +1,5 @@
 ---
-title: "Assign an Azure AD role with administrative unit scope"
+title: "Add a scopedRoleMember"
 description: "Assign an Azure Active Directory (Azure AD) role with administrative unit scope."
 ms.localizationpriority: medium
 author: "DougKirschner"
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Assign an Azure AD role with administrative unit scope
+# Add a scopedRoleMember
 
 Namespace: microsoft.graph
 
