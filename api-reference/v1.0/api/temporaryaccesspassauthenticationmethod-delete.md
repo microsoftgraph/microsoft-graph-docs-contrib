@@ -71,11 +71,5 @@ HTTP/1.1 204 No Content
   "name": "delete_temporaryAccessPassAuthenticationMethod"
 }
 -->
-
-### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
