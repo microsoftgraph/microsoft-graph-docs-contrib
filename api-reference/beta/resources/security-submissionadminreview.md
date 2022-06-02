@@ -20,7 +20,7 @@ Represents admin review information for threat submission. Currently, only user 
 |:---------------|:-------------------------|:---------------------------------------------|
 | reviewBy       | String                   | The reviewer email or other identity string. |
 | reviewDateTime | DateTimeOffset           | The review date time.                        |
-| reviewResult   | submissionResultCategory | The review result                            |
+| reviewResult   | submissionResultCategory | The review result. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`.  |
 
 ## Relationships
 None.
