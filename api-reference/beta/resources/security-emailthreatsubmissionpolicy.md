@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmissionPolicy resource type"
-description: "Represents email threat submission policy"
+description: "Represents the guidelines of an organization to report potential threats and spam."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents email threat submission policy. It is used for customizing your organization's experience and policy when reporting potential threats and spam in Microsoft Outlook.
+Represents the guidelines of an organization to report potential threats and spam. It is used for customizing your organization's end user threat submission experience when reporting potential threats and spam in Microsoft Outlook Client and OWA.
+
 
 Inherits from [entity](../resources/entity.md).
 
