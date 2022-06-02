@@ -5,6 +5,14 @@
 		  {
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
+			"ChangedApiName": "caseOperation",
+			"ChangeType": "Change",
+			"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Target": "caseOperation"
+		  },
+			{
+			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
+			"ApiChange": "Resource",
 			"ChangedApiName": "security",
 			"ChangeType": "Addition",
 			"Description": "Added the [security](https://docs.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource",
