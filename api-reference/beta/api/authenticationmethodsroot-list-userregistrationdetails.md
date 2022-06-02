@@ -1,7 +1,7 @@
 ---
 title: "List userRegistrationDetails"
 description: "Get a list of the authentication methods registered for the user as defined in the userRegistrationDetails object."
-author: "danielwood95"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType

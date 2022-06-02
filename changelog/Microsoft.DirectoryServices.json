@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateServicePlan",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateServicePlan](https://docs.microsoft.com/en-us/graph/api/user-activateServicePlan?view=graph-rest-beta) method from the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
+          "Target": "user"
+        },
+        {
+          "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateService",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [activateService](https://docs.microsoft.com/en-us/graph/api/organization-activateService?view=graph-rest-beta) method from the [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) resource. This method will stop returning data after June 30th, 2022.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "fb19b0a4-779e-11ec-90d6-0242ac120003",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-31T13:08:01.353Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
@@ -22,7 +48,7 @@
       "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-05-27T00:00:00.2532422Z",
+      "CreatedDateTime": "2022-06-02T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory Management"
     },
