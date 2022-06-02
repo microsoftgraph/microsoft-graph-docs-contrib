@@ -1,6 +1,6 @@
 ---
 title: "List temporaryAccessPassAuthenticationMethods"
-description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
+description: "Get a list of the temporaryAccessPassAuthenticationMethod objects for a user."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List temporaryAccessPassAuthenticationMethods
 Namespace: microsoft.graph
 
-Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  objects and their properties. This call will only return a single object as only one Temporary Access Pass method can be set on users.
+Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -74,6 +74,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_temporaryaccesspassauthenticationmethod"
 }
 -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
+```
+
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

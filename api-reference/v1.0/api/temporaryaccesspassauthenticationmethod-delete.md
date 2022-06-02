@@ -1,6 +1,6 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethod"
-description: "Deletes a temporaryAccessPassAuthenticationMethod object."
+description: "Deletes a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph
 
-Delete a [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
+Delete a users's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,10 +59,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-``` http
-HTTP/1.1 204 No Content
-```
-
 ## Examples
 
 ### Request
@@ -72,4 +68,19 @@ HTTP/1.1 204 No Content
 }
 -->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
+DELETE https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods/05267842-25b2-4b21-8abd-8e4982796f7f
+```
+
+### Response
+
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethod"
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

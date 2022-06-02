@@ -1,6 +1,6 @@
 ---
 title: "Update temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Update the properties of a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Update the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object,  which represents the Temporary Access Pass authentication method policy for the Azure AD tenant.
+Update the Temporary Access Pass policy for the Azure AD tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,15 +47,12 @@ In the request body, supply a JSON representation of the [temporaryAccessPassAut
 
 All properties of the object can be updated. For a list of properties, see [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
->**Note:** The `@odata.type` property with a value of `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` must be included in the body.
+> [!NOTE]
+> The **@odata.type** property with a value of `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` must be included in the request body.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-
-``` http
-HTTP/1.1 204 No Content
-```
 
 ## Examples
 
@@ -65,6 +62,13 @@ HTTP/1.1 204 No Content
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+``` http
+PATCH https://graph.microsoft.com/v1.0/temporaryAccessPassAuthenticationMethodConfiguration
+Content-Type: application/json
+{
+  "isUsableOnce": true
+}
+```
 
 ### Response
 <!-- {
@@ -72,3 +76,7 @@ HTTP/1.1 204 No Content
   "truncated": true
 }
 -->
+
+``` http
+HTTP/1.1 204 No Content
+```

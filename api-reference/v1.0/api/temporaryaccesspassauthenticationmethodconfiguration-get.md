@@ -1,6 +1,6 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Read the details of the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
+Read the details of the Temporary Access Pass policy for the Azure Active Directory (Azure AD) tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## Request headers
 |Name|Description|
@@ -45,38 +45,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 Do not supply a request body for this method.
 
 ### Response
-The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
-    "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-    "id": "TemporaryAccessPass",
-    "state": "disabled",
-    "defaultLifetimeInMinutes": 60,
-    "defaultLength": 8,
-    "minimumLifetimeInMinutes": 60,
-    "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": false,
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false
-        }
-    ]
-}
-```
+If successful, this method returns a `200 OK` response code and a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object in the response body.
 
 ## Examples
 
@@ -86,4 +55,35 @@ Content-type: application/json
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
+```
+
 ### Response
+
+The following is an example of the response
+**Note:** The response object shown here might be shortened for readability.
+
+```http
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+    "id": "TemporaryAccessPass",
+    "state": "enabled",
+    "defaultLifetimeInMinutes": 60,
+    "defaultLength": 8,
+    "minimumLifetimeInMinutes": 60,
+    "maximumLifetimeInMinutes": 480,
+    "isUsableOnce": false,
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
+}
+```

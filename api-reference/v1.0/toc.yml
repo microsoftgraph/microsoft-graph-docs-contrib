@@ -5007,24 +5007,24 @@ items:
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
-              href: api/temporaryaccesspassauthenticationmethod-list.md
+              href: api/authentication-list-temporaryaccesspassmethods.md
             - name: Create
-              href: api/temporaryaccesspassauthenticationmethod-post.md
+              href: api/authentication-post-temporaryaccesspassmethods.md
             - name: Get
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
               href: api/temporaryaccesspassauthenticationmethod-delete.md
-         - name: Certificate-based auth configuration
-          href: resources/certificatebasedauthconfiguration.md
-          items:
-          - name: List
-            href: api/certificatebasedauthconfiguration-list.md
-          - name: Create
-            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-          - name: Get
-            href: api/certificatebasedauthconfiguration-get.md
-          - name: Delete
-            href: api/certificatebasedauthconfiguration-delete.md
+          - name: Certificate-based auth configuration
+            href: resources/certificatebasedauthconfiguration.md
+            items:
+            - name: List
+              href: api/certificatebasedauthconfiguration-list.md
+            - name: Create
+              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+            - name: Get
+              href: api/certificatebasedauthconfiguration-get.md
+            - name: Delete
+              href: api/certificatebasedauthconfiguration-delete.md
         - name: Conditional access
           items:
           - name: Policies
