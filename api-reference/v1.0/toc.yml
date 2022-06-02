@@ -4661,13 +4661,13 @@ items:
             href: api/administrativeunit-get-members.md
           - name: Remove a member
             href: api/administrativeunit-delete-members.md
-          - name: Add a scoped-role administrator
+          - name: Assign a role with scope
             href: api/administrativeunit-post-scopedrolemembers.md
-          - name: List scoped-role administrators
+          - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get a scoped-role administrator
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove a scoped-role administrator
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
