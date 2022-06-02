@@ -3,13 +3,14 @@ title: "Add Named Item FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: excel
+ms.prod: workbooks-and-charts
 author: "ruoyingl"
 ---
 
 # Add Named Item FormulaLocal
 
 Namespace: microsoft.graph
+
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions

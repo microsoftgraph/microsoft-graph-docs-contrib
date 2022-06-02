@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6039
+Content-Length: 6167
 
 {
   "value": {
@@ -193,7 +193,10 @@ Content-Length: 6039
     "connectToVpnOnLaunch": true,
     "appActionIfDevicePasscodeComplexityLessThanLow": "wipe",
     "appActionIfDevicePasscodeComplexityLessThanMedium": "wipe",
-    "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe"
+    "appActionIfDevicePasscodeComplexityLessThanHigh": "wipe",
+    "requireClass3Biometrics": true,
+    "requirePinAfterBiometricChange": true,
+    "fingerprintAndBiometricEnabled": true
   }
 }
 ```
