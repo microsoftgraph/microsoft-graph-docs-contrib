@@ -18,10 +18,10 @@ Represents tenant allow block list entry result. It is an entry for tenant allow
 ## Properties
 | Property           | Type                          | Description                                             |
 |:-------------------|:------------------------------|:--------------------------------------------------------|
-| entryType          | tenantAllowBlockListEntryType | The tenant allow block list entry type.                 |
+| entryType          | tenantAllowBlockListEntryType | The entry type of tenant allow block list. The possible values are: `url`, `fileHash`, `sender` and `recipient`.  |
 | expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                |
 | identity           | String                        | The identity.                                           |
-| status             | longRunningOperationStatus    | The tenant allow block operation result for this entry. |
+| status             | longRunningOperationStatus    | The tenant allow block operation status for this entry. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
 | value              | String                        | The tenant allow block list value.                      |
 
 ## Relationships
