@@ -18,11 +18,11 @@ Represents threat submission result when threat submission is processed by Micro
 ## Properties
 | Property           | Type                               | Description                                                             |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
-| category           | submissionResultCategory           | The submission result category.                                         |
+| category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`. |
 | detail             | submissionResultDetail             | The submission result detail.                                           |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Detected files in the email submission. |
 | detectedUrls       | Collection(String)                 | Detected urls in the email submission.                                  |
-| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string. |
+| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string from a bitfield enum. |
 
 ## Relationships
 None.
