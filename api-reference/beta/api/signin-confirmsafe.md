@@ -1,6 +1,6 @@
 ---
 title: "signIn: confirmSafe"
-description: "Allows you to mark Azure AD sign in events as safe for Azure AD Identity Protection."
+description: "Allow admins to mark Azure AD sign in events as safe for Azure AD Identity Protection."
 author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows admins to mark an event in Azure AD sign in logs as safe. Admins can either mark as safe the events flagged as risky by Azure AD Identity Protection or they can mark unflagged events as safe. For more information on investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
+Allow admins to mark an event in Azure AD sign in logs as safe. Admins can either mark the events flagged as risky by Azure AD Identity Protection as safe, or they can mark unflagged events as safe. For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
