@@ -1,6 +1,6 @@
 ---
 title: "messagePinnedEventMessageDetail resource type"
-description: "Represents the details of an event message about pin message."
+description: "Represents the details of an event message about a pinned chat message."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,24 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about pin message. This message is generated when a message is pinned.
-
+Represents the details of an event message about a pinned chat message. This message is generated when a chat message is pinned.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|eventDateTime|DateTimeOffset|Date and time when the event occurred.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|eventDateTime|DateTimeOffset|Pinned event date time.|
-********
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.messagePinnedEventMessageDetail",
-  "baseType": "microsoft.graph.**eventMessageDetail**"
+  "baseType": "microsoft.graph.eventMessageDetail"
 }
 -->
 ``` json

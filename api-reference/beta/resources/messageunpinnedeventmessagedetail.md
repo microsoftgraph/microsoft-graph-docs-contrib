@@ -1,6 +1,6 @@
 ---
 title: "messageUnpinnedEventMessageDetail resource type"
-description: "Represents the details of an event message about unpin message."
+description: "Represents the details of an event message about an unpinned chat message."
 author: "sumanac"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about unpin message. This message is generated when a message is unpinned.
-
+Represents the details of an event message about an unpinned chat message. This message is generated when a chat message is unpinned.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|eventDateTime|DateTimeOffset|Date and time when the event occurred.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|eventDateTime|DateTimeOffset|Unpinned event date time.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
