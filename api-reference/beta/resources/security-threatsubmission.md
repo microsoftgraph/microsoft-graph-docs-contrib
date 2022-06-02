@@ -1,6 +1,6 @@
 ---
 title: "threatSubmission resource type"
-description: "Represent threat submission"
+description: "Represent threat submission which is used to submit suspected email, url, file threats to Microsoft 365 Defender."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -19,21 +19,21 @@ It is used to submit suspected spam emails, malware emails, phish emails, malwar
 
 It could also be used to submit false positive cases which should not have been blocked by MDO, e.g, not junk emails, safe urls and safe email attachments.
 
-Inherits from [entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmission](../resources/security-emailthreatsubmission.md), [urlThreatSubmission](../resources/security-urlthreatsubmission.md), [fileThreatSubmissin](../resources/security-filethreatsubmission.md).
 
 ## Properties
 | Property        | Type                       | Description                                                                      |
 |:----------------|:---------------------------|:---------------------------------------------------------------------------------|
-| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| User submission admin review |
-| category        | submissionCategory         | not junk, spam, phishing or malware.                                             |
-| clientSource    | submissionClientSource     | microsoft or other client.                                                       |
-| contentType     | submissionContentType      | email, url, file or app.                                                         |
+| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| Represents an administrative review of an threat submitted by a user. |
+| category        | submissionCategory         | The category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`.|
+| clientSource    | submissionClientSource     | The client source of the submission. The possible values are: `microsoft` and `other`. |
+| contentType     | submissionContentType      | The content type of the submission. The possible values are: `email`, `url`, `file` and `app`.  |
 | createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.   |
 | createdDateTime | DateTimeOffset             | When the threat submission was created.                                          |
-| id              | String                     | Threat submission id. When creation on post, it is not necessary.                |
-| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The threat submission check result.  |
-| source          | submissionSource           | The threat submission source. Administrator or user.                             |
-| status          | longRunningOperationStatus | If the threat submission check is finished.                                      |
+| id              | String                     | The id of the threat submission. |
+| result          | [security.submissionResult](../resources/security-submissionresult.md)          | The result of the threat submission.  |
+| source          | submissionSource           | The source of the submission. The possible values are: `administrator` and `user`.  |
+| status          | longRunningOperationStatus | The status of the submission. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
 | tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. |
 
 ## Relationships
