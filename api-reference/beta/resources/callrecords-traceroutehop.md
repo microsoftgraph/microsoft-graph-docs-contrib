@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the network trace route hops collected for a media stream.
+Represents the network trace route hops collected for a [media stream](callrecords-mediastream.md).
 
 ## Properties
 

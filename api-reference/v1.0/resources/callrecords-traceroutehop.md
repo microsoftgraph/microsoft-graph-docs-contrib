@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.callRecords
 
-Represents the network trace route hops collected for a media stream.
+Represents the network trace route hops collected for a [media stream](callrecords-mediastream.md).
 
 ## Properties
 
