@@ -1,5 +1,5 @@
 ---
-title: "List temporaryAccessPassAuthenticationMethods"
+title: "List temporaryAccessPassMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
 author: "inbarckMS"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List temporaryAccessPassAuthenticationMethods
+# List temporaryAccessPassMethods
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

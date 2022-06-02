@@ -1,5 +1,5 @@
 ---
-title: "Create temporaryAccessPassAuthenticationMethod"
+title: "Create temporaryAccessPassMethods"
 description: "Create a new temporaryAccessPassAuthenticationMethod object."
 author: "inbarckMS"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create temporaryAccessPassAuthenticationMethod
+# Create temporaryAccessPassMethods
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
