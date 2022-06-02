@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [channel](../resources/channel.md) in a team, as specified in the request body.
+Create a new [channel](../resources/channel.md) in a team, as specified in the request body. A maximum of 200 members can be added while creating a private channel.
 
 > [!IMPORTANT]
 > Shared channels are currently in public preview status. During this time, the Microsoft Graph API to create a shared channel is available to a limited audience. We recommend creating shared channels in the Teams client and using Microsoft Graph APIs to manage them. For details about how to enable shared channels in the Teams client, see [Shared channels in Microsoft Teams (Preview)](/microsoftteams/shared-channels).
