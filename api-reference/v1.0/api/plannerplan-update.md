@@ -40,7 +40,6 @@ In the request body, supply the values for relevant fields to updated. Existing 
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|owner|String|[Group](../resources/group.md) `id` by which the plan is owned. A valid group must exist before this field can be set. Once set, this can only be updated by the owner.|
 |title|String|Title of the plan.|
 
 ## Response
