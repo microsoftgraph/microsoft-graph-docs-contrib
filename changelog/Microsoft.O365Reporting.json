@@ -7,7 +7,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsUserActivityCounts",
 			"ChangeType": "Addition",
-			"Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method",
+			"Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, and **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method.",
 			"Target": "getTeamsUserActivityCounts"
 		 },
 		 {
@@ -15,7 +15,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsUserActivityUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **Tenant Display Name**, **Shared Channel Tenant Display Names**, **Post Messages**, **Reply Messages**, **Urgent Messages**, **Meetings Organized Count**, **Meetings Attended Count**, **Ad Hoc Meetings Organized Count**, **Ad Hoc Meetings Attended Count**, **Scheduled One-time Meetings Organized Count**, ** Scheduled One-time Meetings Attended Count**, **Scheduled Recurring Meetings Organized Count**, **Scheduled Recurring Meetings Attended Count**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Audio Duration In Seconds**, **Video Duration In Seconds**, **Screen Share Duration In Seconds**, **Is Licensed** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
+			"Description": "Added the **Tenant Display Name**, **Shared Channel Tenant Display Names**, **Post Messages**, **Reply Messages**, **Urgent Messages**, **Meetings Organized Count**, **Meetings Attended Count**, **Ad Hoc Meetings Organized Count**, **Ad Hoc Meetings Attended Count**, **Scheduled One-time Meetings Organized Count**, **Scheduled One-time Meetings Attended Count**, **Scheduled Recurring Meetings Organized Count**, **Scheduled Recurring Meetings Attended Count**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Audio Duration In Seconds**, **Video Duration In Seconds**, **Screen Share Duration In Seconds**, and **Is Licensed** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
 			"Target": "getTeamsUserActivityUserDetail"
 		 },
 		 {
@@ -23,7 +23,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the **Used Chrome OS**, **Used Linux**, **Is Licensed** clomuns to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
+			"Description": "Added the **Used Chrome OS**, **Used Linux**, and **Is Licensed** columns to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
 			"Target": "getTeamsDeviceUsageUserDetail"
 		 },
 		 {
@@ -31,7 +31,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
 			"ChangeType": "Addition",
-			"Description": "Added the **Chrome OS**, **Linux** clomuns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
 			"Target": "getTeamsDeviceUsageUserCounts"
 		 },
 		 {
@@ -39,7 +39,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
 			"ChangeType": "Addition",
-			"Description": "Added the **Chrome OS**, **Linux** clomuns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
 			"Target": "getTeamsDeviceUsageDistributionUserCounts"
 		 },
 		 {
@@ -47,7 +47,7 @@
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
 			"ChangeType": "Deprecation",
-			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
 			"Target": "getTeamsDeviceUsageUserCounts"
 		 },
 		 {
