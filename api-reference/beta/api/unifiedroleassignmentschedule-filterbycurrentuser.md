@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentSchedule: filterByCurrentUser"
-description: "Get a list of the unifiedRoleAssignmentSchedule objects and their properties filtered by a particular user principal"
+description: "Retrieve the schedules for active role assignment operations for which the signed-in user is the principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) objects and their properties associated with a particular principal object.
+Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,14 +34,15 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 ```
 
 ## Function parameters
-The following table shows the query parameters that can be used with this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions| The possible values are `principal`, `unknownFutureValue`.|
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

@@ -1,6 +1,6 @@
 ---
 title: "List roleAssignmentScheduleRequests"
-description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties."
+description: "In PIM, retrieve the requests for active role assignments to principals made through the unifiedRoleAssignmentScheduleRequest object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties.
+In PIM, retrieve the requests for active role assignments to principals. The active assignments include those made through [assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), and directly through the [role assignments API](../resources/unifiedroleassignment.md). The role assignments can be permanently active with or without an expiry date, or temporarily active after user activation of eligible assignments.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

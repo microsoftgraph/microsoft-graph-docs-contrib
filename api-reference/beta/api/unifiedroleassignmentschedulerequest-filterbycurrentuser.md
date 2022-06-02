@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest: filterByCurrentUser"
-description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties filtered by a particular user principal"
+description: "Get a list of the unifiedRoleAssignmentScheduleRequest objects and their properties filtered by a particular user principal."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 
 Get a list of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) objects and their properties associated with a particular principal object.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +41,6 @@ The following table shows the query parameters that can be used with this method
 |Parameter|Type|Description|
 |:---|:---|:---|
 |on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Filter to query objects for which the current user is the principal. Allowed value is `principal`. Required.|
-
 
 ## Optional query parameters
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
