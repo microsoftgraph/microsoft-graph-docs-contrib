@@ -1,6 +1,6 @@
 ---
 title: "List groups"
-description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
+description: "List all the groups available in an organization, excluding dynamic distribution groups."
 ms.localizationpriority: high
 author: "psaffaie"
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the groups in an organization, including but not limited to Microsoft 365 groups.
+List all the groups available in an organization, excluding dynamic distribution groups. To retrieve dynamic distribution groups, [use the Exchange admin center](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
 This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 

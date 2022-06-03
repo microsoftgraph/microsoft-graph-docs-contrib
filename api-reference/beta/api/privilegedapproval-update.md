@@ -4,7 +4,7 @@ description: "Update the properties of privilegedapproval object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # Update privilegedapproval

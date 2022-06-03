@@ -107,16 +107,17 @@ Delta query is currently supported for the following resources. Note that some r
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                               |
 | Administrative units (preview)                                 | [delta](/graph/api/administrativeunit-delta) function (preview) of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
-| Assignment categories                                          | [delta](/graph/api/educationcategory-delta) function of the [educationCategory](/graph/api/resources/educationcategory) resource                                    |
 | Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage)                                              |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Drive items\*                                                  | [delta](/graph/api/driveitem-delta) function of the [driveItem](/graph/api/resources/driveitem) resource             |
 | Education assignments                                          | [delta](/graph/api/educationassignment-delta) function of the [educationAssignment](/graph/api/resources/educationassignment) resource                                    |
+| Education categories                                           | [delta](/graph/api/educationcategory-delta) function of the [educationCategory](/graph/api/resources/educationcategory) resource                                    |
 | Education classes                                              | [delta](/graph/api/educationclass-delta) function of the [educationClass](/graph/api/resources/educationclass) resource                                      |
-| Education users                                                | [delta](/graph/api/educationuser-delta) function of the [educationUser](/graph/api/resources/educationuser) resource                                         |
 | Education schools                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource                                   |
+| Education users                                                | [delta](/graph/api/educationuser-delta) function of the [educationUser](/graph/api/resources/educationuser) resource                                         |
 | Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta) function of the [event](/graph/api/resources/event) resource                         |
 | Groups                                                         | [delta](/graph/api/group-delta) function of the [group](/graph/api/resources/group) resource                         |
+| List items\*                                                   | [delta](/graph/api/listitem-delta) function of the [listItem](/graph/api/resources/listitem) resource             |
 | Mail folders                                                   | [delta](/graph/api/mailfolder-delta) function of the [mailFolder](/graph/api/resources/mailfolder) resource          |
 | Messages in a folder                                           | [delta](/graph/api/message-delta) function of the [message](/graph/api/resources/message) resource                   |
 | Organizational contacts                                        | [delta](/graph/api/orgcontact-delta) function of the [orgContact](/graph/api/resources/orgcontact) resource          |
@@ -125,15 +126,15 @@ Delta query is currently supported for the following resources. Note that some r
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta) function of the [contact](/graph/api/resources/contact) resource                   |
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function (preview) of the all segment of [plannerUser](/graph/api/resources/planneruser) resource                 |
 | Service principals                                             | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                |
-| Tasks in a task list                                           | [delta](/graph/api/todotask-delta) function of the [todoTask](/graph/api/resources/todotask) resource                                                        |
-| Task lists                                                     | [delta](/graph/api/todotasklist-delta) function of the [todoTaskList](/graph/api/resources/todotasklist) resource                                            |
+| To-do tasks in a task list                                     | [delta](/graph/api/todotask-delta) function of the [todoTask](/graph/api/resources/todotask) resource                                                        |
+| To-do task lists                                               | [delta](/graph/api/todotasklist-delta) function of the [todoTaskList](/graph/api/resources/todotasklist) resource                                            |
 | Users                                                          | [delta](/graph/api/user-delta) function of the [user](/graph/api/resources/user) resource                            |
 
 
-> \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a drive](/graph/api/driveitem-delta).
+> \* The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. Delta query for drives and lists will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
+[driveItem: delta](/graph/api/driveitem-delta) and [listItem: delta](/graph/api/listitem-delta).
 
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta).
+> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences. For details, see [planner: delta](/graph/api/planneruser-list-delta).
 
 ## Limitations
 
@@ -203,7 +204,7 @@ Delta tokens are only valid for a specific period before the client application 
 + For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is seven days.
 + For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
-In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see (Error codes in Microsoft Graph](/graph/errors#code-property).
+In case of an expired token, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
 
 ## Prerequisites
 

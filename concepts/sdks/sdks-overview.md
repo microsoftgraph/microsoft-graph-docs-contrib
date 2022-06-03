@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Graph SDKs overview"
+title: "Microsoft Graph SDK overview"
 description: "Describes the SDKs that are available, the languages they support, and the value they provide to developers."
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
 ---
 
-# Microsoft Graph SDKs overview
+# Microsoft Graph SDK overview
 
 The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, and resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 

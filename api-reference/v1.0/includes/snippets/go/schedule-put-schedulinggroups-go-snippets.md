@@ -19,13 +19,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"Prefer": "return=representation"
 }
-options := &msgraphsdk.SchedulingGroupRequestBuilderPutOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.SchedulingGroupRequestBuilderPutRequestConfiguration{
+	Headers: headers,
 }
 teamId := "team-id"
 schedulingGroupId := "schedulingGroup-id"
-graphClient.TeamsById(&teamId).Schedule().SchedulingGroupsById(&schedulingGroupId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().SchedulingGroupsById(&schedulingGroupId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

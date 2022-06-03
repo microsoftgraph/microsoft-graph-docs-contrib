@@ -107,7 +107,7 @@ Content-Type: application/json
       "@odata.etag": "W/\"JyIxODAwZTY4My0wMDAwLTAyMDAtMDAwMC02MTU0OWFmMDAwMDAiJw==\"",
       "id": "ae5a6b9e-6355-43dd-b708-48486b69c3ff",
       "action": "lockForApproval",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-01T06:14:55.5398865Z",
       "lastModifiedDateTime": "2022-02-01T06:14:55.5398865Z"
     },

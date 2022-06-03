@@ -74,11 +74,10 @@ downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified)
 headers := map[string]string{
 	"User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateRemovalRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.EvaluateRemovalRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

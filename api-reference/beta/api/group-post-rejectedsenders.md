@@ -97,7 +97,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-rejectedsender-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-rejectedsender-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

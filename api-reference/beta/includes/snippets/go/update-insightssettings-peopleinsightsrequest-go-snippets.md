@@ -12,11 +12,8 @@ isEnabledInOrganization := true
 requestBody.SetIsEnabledInOrganization(&isEnabledInOrganization)
 disabledForGroup := "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 requestBody.SetDisabledForGroup(&disabledForGroup)
-options := &msgraphsdk.PeopleInsightsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Settings().PeopleInsights().Patch(options)
+graphClient.OrganizationById(&organizationId).Settings().PeopleInsights().Patch(requestBody)
 
 
 ```
