@@ -63,8 +63,7 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Edm.Boolean"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
