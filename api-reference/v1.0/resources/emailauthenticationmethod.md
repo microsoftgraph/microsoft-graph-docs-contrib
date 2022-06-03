@@ -17,8 +17,8 @@ Represents an email address registered to a user. Email as an authentication met
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/authentication-list-emailmethods.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Retrieve a list of a user's email authentication methods. Users may only have one email authentication method.|
-|[Create](../api/authentication-post-emailmethods.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Create a user's **emailAuthenticationMethod** object.|
+|[List](../api/emailauthenticationmethod-list.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Retrieve a list of a user's email authentication methods. Users may only have one email authentication method.|
+|[Create](../api/emailauthenticationmethod-post.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Create a user's **emailAuthenticationMethod** object.|
 |[Get](../api/emailauthenticationmethod-get.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Retrieve the properties of the user's **emailAuthenticationMethod** object.|
 |[Update](../api/emailauthenticationmethod-update.md)| None |Update the properties of a user's **emailAuthenticationMethod** object.|
 |[Delete](../api/emailauthenticationmethod-delete.md)|None|Delete a user's **emailAuthenticationMethod** object.|
