@@ -73,15 +73,3 @@ Content-type: text/plain
 true
 ```
 
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "domain: promote",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
