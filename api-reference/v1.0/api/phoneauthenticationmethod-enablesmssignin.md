@@ -1,6 +1,6 @@
 ---
 title: "phoneAuthenticationMethod: enableSmsSignIn"
-description: "Enable SMS sign-in for a mobile phone."
+description: "Enable SMS sign-in for a mobile phone number registered to a user."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Enable SMS sign-in for an existing `mobile` phone number. To be successfully enabled:
+Enable SMS sign-in for an existing `mobile` phone number registered to a user. To be successfully enabled:
 
 * The phone must have `"phoneType": "mobile"`.
 * The phone must be unique in the SMS sign-in system (no one else can also be using that number).
@@ -74,7 +74,6 @@ The following example shows how to call this API.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "phoneauthenticationmethod_enablesmssignin"

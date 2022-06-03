@@ -1,6 +1,6 @@
 ---
 title: "Get phoneAuthenticationMethod"
-description: "Retrieve a single phoneAuthenticationMethod object."
+description: "Retrieve a single phoneAuthenticationMethod object for a user."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. This method is available only for standard Azure AD and B2B users, but not B2C users.
+Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object for a user. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ## Permissions
 
@@ -76,7 +76,6 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_phoneauthenticationmethod"

@@ -1,6 +1,6 @@
 ---
 title: "Update emailAuthenticationMethod"
-description: "Update the properties of an emailAuthenticationMethod object."
+description: "Update a user's emailAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Update emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Update a user's email address represented by an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,7 +72,6 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_emailauthenticationmethod"
@@ -95,7 +94,7 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
