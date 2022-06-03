@@ -37,12 +37,14 @@ To use application permission for this API, tenant administrators must create an
 
 ## HTTP request
 
-To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission. These request URLs accept both organizer's and invited attendee's user token (delegated permission) or user ID (app permission).
+To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission: 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
+
+These request URLs accept both the organizer's and the invited attendee's user token (delegated permission) or user ID (app permission).
 
 To get an **onlineMeeting** using **videoTeleconferenceId** with app permission*:
 <!-- { "blockType": "ignored" } -->
