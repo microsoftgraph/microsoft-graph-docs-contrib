@@ -60,7 +60,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailAddress|String|Updated email address|
+|emailAddress|String|New email address.|
 
 
 
