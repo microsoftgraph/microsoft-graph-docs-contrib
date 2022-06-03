@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To create an administrative unit, the calling principal must be assigned one of the following Azure AD roles:
+To create an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
