@@ -76,7 +76,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 > [!TIP]
 >
->- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
+> When creating or updating an online meeting with **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with the specified attendees' **role** set to `presenter` in the request body.
 
 ### meetingChatMode values
 
