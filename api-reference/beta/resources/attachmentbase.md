@@ -24,10 +24,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List attachmentBases](../api/todotask-list-attachments.md)|[attachmentBase](../resources/attachmentbase.md) collection|Get a list of the [attachmentBase](../resources/attachmentbase.md) objects and their properties.|
 |[Create attachmentBase](../api/todotask-post-attachments.md)|[attachmentBase](../resources/attachmentbase.md)|Create a new [attachmentBase](../resources/attachmentbase.md) object.|
-|[Get attachmentBase](../api/attachmentbase-get.md)|[attachmentBase](../resources/attachmentbase.md)|Read the properties and relationships of an [attachmentBase](../resources/attachmentbase.md) object.|
-|[Update attachmentBase](../api/attachmentbase-update.md)|[attachmentBase](../resources/attachmentbase.md)|Update the properties of an [attachmentBase](../resources/attachmentbase.md) object.|
-|[Delete attachmentBase](../api/todotask-delete-attachments.md)|None|Deletes an [attachmentBase](../resources/attachmentbase.md) object.|
-|[createUploadSession](../api/attachmentbase-createuploadsession.md)|[uploadSession](../resources/intune-uploadsession.md)|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
