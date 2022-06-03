@@ -12032,7 +12032,7 @@ items:
             href: resources/emailauthenticationmethod.md
             items:
             - name: List
-              href: api/emailauthenticationmethod-list.md
+              href: api/authentication-list-emailmethods.md
             - name: Get
               href: api/emailauthenticationmethod-get.md
             - name: Update
@@ -12040,7 +12040,7 @@ items:
             - name: Delete
               href: api/emailauthenticationmethod-delete.md
             - name: Add
-              href: api/emailauthenticationmethod-post.md
+              href: api/authentication-post-emailmethods.md
           - name: Password
             href: resources/passwordauthenticationmethod.md
             items:
