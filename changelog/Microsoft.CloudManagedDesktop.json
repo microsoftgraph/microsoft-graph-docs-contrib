@@ -7,7 +7,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "alternateResourceUrl",
               "ChangeType": "Addition",
-              "Description": "Added the **alternateResourceUrl** property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+              "Description": "Added the **alternateResourceUrl** property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
               "Target": "cloudPcOnPremisesConnection"
             }
           ],
