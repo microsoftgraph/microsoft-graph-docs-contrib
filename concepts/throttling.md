@@ -12,6 +12,12 @@ Throttling limits the number of concurrent calls to a service to prevent overuse
 
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
 
+> [!NOTE]
+> Solutions that need to extract a large volume of data from Microsoft Graph should use [Microsoft Graph Data Connect](data-connect-concept-overview.md) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
+
+<!-- markdownlint-disable MD033 -->
+<br/>
+
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
@@ -125,7 +131,6 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
-
 
 ### Cloud communication service limits
 
@@ -303,10 +308,15 @@ The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### Identity and access reports best practices
+Azure AD reporting APIs are throttled when Azure AD receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices above](#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+- Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
+- If you need a broad set of Azure AD reporting data, use `$filter` on the **createdDateTime** to limit the amount of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests 3 days of data and iterate with shorter timespans until your requests are no longer throttled.
+  
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
-  
+
 For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
@@ -322,7 +332,6 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 | Any | 1 request per second |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
-
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -342,7 +351,6 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/trending)
 - [usedInsight](/graph/api/resources/usedinsight)
 
-
 ### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
@@ -355,7 +363,6 @@ The following limits apply to any request on `/reports`.
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
 The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
-
 
 ### Invitation manager service limits
 
@@ -384,7 +391,6 @@ The following limits apply to any request on `/security`.
 
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
-
 
 ### Files and lists service limits
 
@@ -492,6 +498,7 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/trending)
 - [educationResource](/graph/api/resources/educationresource)
 
+
 ### Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
 
@@ -499,3 +506,4 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
+

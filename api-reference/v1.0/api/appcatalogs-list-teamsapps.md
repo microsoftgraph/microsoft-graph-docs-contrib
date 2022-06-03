@@ -420,7 +420,6 @@ Content-Type: application/json
             "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
             "displayName": "Ducks-3",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
@@ -444,7 +443,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
@@ -456,7 +454,6 @@ Content-Type: application/json
             "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
             "displayName": "Self-Install-App-E2E-Tests",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
@@ -480,7 +477,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }

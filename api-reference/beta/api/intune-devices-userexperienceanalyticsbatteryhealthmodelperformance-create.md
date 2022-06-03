@@ -55,6 +55,7 @@ The following table shows the properties that are required when you create the u
 |averageMaxCapacityPercentage|Int32|The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values -2147483648 to 2147483647|
 |averageEstimatedRuntimeInMinutes|Int32|The mean of the estimated runtimes on full charge for all devices of a given model. Unit in minutes. Valid values -2147483648 to 2147483647|
 |averageBatteryAgeInDays|Int32|The mean of the battery age for all devices of a given model in a tenant. Unit in days. Valid values -2147483648 to 2147483647|
+|modelBatteryHealthScore|Int32|A weighted average of a model’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647|
 
 
 
@@ -68,7 +69,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance
 Content-type: application/json
-Content-length: 300
+Content-length: 333
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthModelPerformance",
@@ -77,7 +78,8 @@ Content-length: 300
   "manufacturer": "Manufacturer value",
   "averageMaxCapacityPercentage": 12,
   "averageEstimatedRuntimeInMinutes": 0,
-  "averageBatteryAgeInDays": 7
+  "averageBatteryAgeInDays": 7,
+  "modelBatteryHealthScore": 7
 }
 ```
 
@@ -86,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 349
+Content-Length: 382
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBatteryHealthModelPerformance",
@@ -96,7 +98,8 @@ Content-Length: 349
   "manufacturer": "Manufacturer value",
   "averageMaxCapacityPercentage": 12,
   "averageEstimatedRuntimeInMinutes": 0,
-  "averageBatteryAgeInDays": 7
+  "averageBatteryAgeInDays": 7,
+  "modelBatteryHealthScore": 7
 }
 ```
 

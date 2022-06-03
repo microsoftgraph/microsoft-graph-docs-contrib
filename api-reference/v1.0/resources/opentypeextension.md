@@ -15,16 +15,16 @@ Open extensions (formerly known as Office 365 data extensions) provide an easy w
 
 Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property, which is derived from the [extension](extension.md) abstract type. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data.
 
-One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
+One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domains (`com.microsoft` or `com.onmicrosoft`) in an extension name.
 
 Open extension example: [Add custom data to users using open extensions](/graph/extensibility-open-users)
 
-Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
+Open extensions are supported by the following resources in the corresponding versions - general availability (/v1.0) or preview (/beta).
 
 |Resource |Version |
 |:---------------|:-------|
 | [Administrative unit](/graph/api/resources/administrativeunit)  | GA |
-| [Calendar event](event.md) | GA |
+| [Calendar event](event.md) \* | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
 | [device](device.md) | GA |
@@ -33,8 +33,10 @@ Open extensions are supported by the following resources in the corresponding ve
 | [organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [user](user.md) | GA |
-| [Task](todotask.md)  | GA |
-| [Task list](todotasklist.md)  | GA |
+| [To-do task](todotask.md)  | GA |
+| [To-do task list](todotasklist.md)  | GA |
+
+>\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 ## Outlook-specific considerations
 

@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 }
 servicePrincipalId := "servicePrincipal-id"
-directoryObjectId := "directoryObject-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).OwnersById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Owners().$ref().Post(requestBody)
 
 
 ```
