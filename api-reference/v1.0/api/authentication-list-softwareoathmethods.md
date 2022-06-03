@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_softwareoathauthenticationmethod"
@@ -96,7 +95,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
       "id": "b172893e-893e-b172-3e89-72b13e8972b1",
-      "secretKey": "String"
+      "secretKey": null
     }
   ]
 }

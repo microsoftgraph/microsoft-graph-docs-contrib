@@ -1,6 +1,6 @@
 ---
 title: "Create phoneAuthenticationMethod"
-description: "Add a new phone authentication method."
+description: "Add a new phone authentication method for a user."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Add a new [phone authentication method](../resources/phoneauthenticationmethod.md). A user may only have one phone of each type, captured in the **phoneType** property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Add a new [phone authentication method](../resources/phoneauthenticationmethod.md) for a user. A user may only have one phone of each type, captured in the **phoneType** property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
 
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 
@@ -65,7 +65,7 @@ In the request body, supply a JSON representation of a [phoneAuthenticationMetho
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.|
+|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they do not match the required format.|
 |phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
 
 ## Response
@@ -78,7 +78,6 @@ If successful, this method returns a `201 Created` response code and a new [phon
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_phoneauthenticationmethod_from_authentication"
