@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **emailAuthenticationMethod** resource and associated methods.",
+          "Description": "Added the [emailAuthenticationMethod](https://docs.microsoft.com/graph/api/resources/emailAuthenticationMethod?view=graph-rest-1.0) resource and related methods. Use this resource and associated methods to manage a user's email authentication method for self-service password reset (SSPR).",
           "Target": "emailAuthenticationMethod"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **phoneAuthenticationMethod** resource and associated methods.",
+          "Description": "Added the [phoneAuthenticationMethod](https://docs.microsoft.com/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource and associated methods. Use this resource and associated methods to manage a user's phone numbers used for authentication.",
           "Target": "phoneAuthenticationMethod"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **softwareOathAuthenticationMethod** resource and associated methods.",
+          "Description": "Added the [softwareOathAuthenticationMethod]((https://docs.microsoft.com/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource and associated methods. Use this resource and associated methods to manage the Software OATH token registered to a user.",
           "Target": "softwareOathAuthenticationMethod"
         },
         {
