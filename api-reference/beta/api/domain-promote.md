@@ -49,7 +49,7 @@ If successful, this method returns `200 OK` response code with a boolean value o
 
 ## Example
 
-##### Request
+### Request
 
 <!-- {
   "blockType": "request",
