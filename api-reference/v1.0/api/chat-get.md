@@ -207,7 +207,6 @@ Content-type: application/json
     "createdDateTime": "2021-04-06T19:49:52.431Z",
     "lastUpdatedDateTime": "2021-04-21T17:13:44.033Z",
     "chatType": "group",
-    "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",

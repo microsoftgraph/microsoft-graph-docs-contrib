@@ -15,11 +15,8 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
 	"pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
 	"password": "secret",
 }
-options := &msgraphsdk.IdentityApiConnectorRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 identityApiConnectorId := "identityApiConnector-id"
-graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(options)
+graphClient.Identity().ApiConnectorsById(&identityApiConnectorId).Patch(requestBody)
 
 
 ```

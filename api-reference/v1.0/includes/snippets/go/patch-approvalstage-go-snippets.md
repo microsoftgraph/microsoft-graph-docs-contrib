@@ -12,12 +12,9 @@ reviewResult := "Approve"
 requestBody.SetReviewResult(&reviewResult)
 justification := "OK"
 requestBody.SetJustification(&justification)
-options := &msgraphsdk.ApprovalStageRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 approvalId := "approval-id"
 approvalStageId := "approvalStage-id"
-graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById(&approvalId).StagesById(&approvalStageId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentApprovalsById(&approvalId).StagesById(&approvalStageId).Patch(requestBody)
 
 
 ```

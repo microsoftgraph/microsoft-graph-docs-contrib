@@ -33,7 +33,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
 |queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
 |resultTemplateOptions|[resultTemplateOption](resulttemplateoption.md) collection|Provides the search result template options to render search results from connectors.|
-|size|Int32|The size of the page to be retrieved. Optional.|
+|size|Int32|The size of the page to be retrieved.The maximum value is 1000. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
 
 ## JSON representation

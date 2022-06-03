@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CloudPcUserSettingRequestBuilderGetQueryParameters{
 	Expand: "assignments",
 }
-options := &msgraphsdk.CloudPcUserSettingRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CloudPcUserSettingRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Get(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

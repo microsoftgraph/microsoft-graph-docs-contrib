@@ -30,11 +30,8 @@ duration := "PT9H"
 schedule.SetDuration(&duration)
 linkedEligibleRoleAssignmentId := "e327f4be-42a0-47a2-8579-0a39b025b394"
 requestBody.SetLinkedEligibleRoleAssignmentId(&linkedEligibleRoleAssignmentId)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```

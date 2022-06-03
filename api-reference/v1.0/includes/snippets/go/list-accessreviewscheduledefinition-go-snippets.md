@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.DefinitionsRequestBuilderGetQueryParameters{
 	Top: 100,
 	Skip: 0,
 }
-options := &msgraphsdk.DefinitionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DefinitionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

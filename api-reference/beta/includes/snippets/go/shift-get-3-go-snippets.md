@@ -14,11 +14,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"availability":  []Object {
 	}
 }
-options := &msgraphsdk.ShiftPreferencesRequestBuilderPutOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Settings().ShiftPreferences().Put(options)
+graphClient.UsersById(&userId).Settings().ShiftPreferences().Put(requestBody)
 
 
 ```

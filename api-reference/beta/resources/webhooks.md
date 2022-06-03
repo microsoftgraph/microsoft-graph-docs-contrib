@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
@@ -38,7 +40,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Teams [onlineMeeting][] | Changes to an online meeting: <br>`/communications/onlinemeeting/{meeting-id}` | Yes |
 | Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` <br> Changes to multiple user presences:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Yes |
 | Teams [team][] | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
-| [baseTask][] | Changes to all task in a specific task list:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/tasks/lists/alltasks` | No |
+| To Do [baseTask][] (deprecated) | Changes to all task in a specific task list:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/tasks/lists/alltasks` | No |
+| [To Do task][] | Changes to all task in a specific task list:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Changes to all tasks:<br>`/me/todo/lists/alltasks` | No |
 | [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
 
 
@@ -50,8 +53,8 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [baseTask][] |
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][], [baseTask][]                                     |
+| Delegated - work or school account     | [alert][], [baseTask][] (deprecated), [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][] |
+| Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
 | Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## See also
@@ -83,5 +86,7 @@ In general, subscription operations require read permission to the resource. For
 [printTaskDefinition]: ./printtaskdefinition.md
 [team]: ./team.md
 [baseTask]: ./baseTask.md
+[todoTask]: ./todotask.md
+[To Do task]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
 

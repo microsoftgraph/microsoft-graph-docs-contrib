@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByFeature"
 description: "Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication."
-author: "danielwood95"
+author: "besiler"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType

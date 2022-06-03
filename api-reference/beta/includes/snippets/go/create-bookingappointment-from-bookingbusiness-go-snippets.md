@@ -189,11 +189,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"priceType@odata.type": "#microsoft.graph.bookingPriceType",
 	"reminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
 }
-options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(requestBody)
 
 
 ```
