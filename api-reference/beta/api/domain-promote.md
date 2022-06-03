@@ -57,6 +57,22 @@ If successful, this method returns `200 OK` response code with a boolean value o
 }-->
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/promote
+```
+
+### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "value": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+
+true
+```
+
 2015-10-25 14:57:30 UTC -->
 <!--
 {
