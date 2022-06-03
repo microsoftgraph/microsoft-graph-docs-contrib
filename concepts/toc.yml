@@ -22,6 +22,7 @@ items:
         items:
           - name: Overview
             href: users-you-can-reach.md
+            displayName: users you can reach, users
           - name: National cloud deployments
             href: deployments.md
           - name: Hybrid deployments (deprecated)
@@ -30,6 +31,7 @@ items:
         items:
           - name: Overview
             href: tutorials.md
+            displayName: tutorials
           - name: .NET
             href: /graph/tutorials/dotnet
           - name: Go
@@ -59,12 +61,14 @@ items:
         items:
           - name: Overview
             href: azuread-users-concept-overview.md
+            displayName: users
           - name: Access user data
             href: /learn/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
             href: /graph/api/resources/groups-overview?context=graph/context
+            displayName: groups
           - name: Microsoft 365 groups
             href: office365-groups-concept-overview.md
           - name: Configure group options
@@ -75,15 +79,16 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
+            displayName: applications, apps
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
       - name: Accessing data at scale
-        displayName: Microsoft Graph Data Connect
         items:
           - name: Overview of Data Connect
             href: data-connect-concept-overview.md
+            displayName: Microsoft Graph Data Connect            
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
           - name: Datasets, regions, and sinks
@@ -97,10 +102,10 @@ items:
           - name: Frequently asked questions
             href: data-connect-faq.md
       - name: Calendar
-        displayName: Outlook
         items:
           - name: Overview
             href: outlook-calendar-concept-overview.md
+            displayName: Outlook, calendar
           - name: Find meeting times
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
@@ -129,6 +134,7 @@ items:
         items:
           - name: Overview
             href: cloud-communications-concept-overview.md
+            displayName: cloud communications
           - name: Get started
             href: cloud-communications-get-started.md
           - name: Calls
@@ -152,16 +158,18 @@ items:
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
-        displayName: connectors
         items:
           - name: Overview of Microsoft Graph connectors
             href: connecting-external-content-connectors-overview.md
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
+            displayName: Microsoft Graph connectors
           - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
+            displayName: connector, connectors
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
+            displayName: connectors, Microsoft Graph connectors
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -173,22 +181,27 @@ items:
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
-        displayName: Project Rome
         items:
           - name: Overview
             href: cross-device-concept-overview.md
+            displayName: Project Rome, cross-device, cross device, cross-device experience
           - name: Activity feed
             href: activity-feed-concept-overview.md
+            displayName: cross-device, cross device
           - name: Device relay (preview)
             href: device-relay-concept-overview.md
+            displayName: cross-device, cross device
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
+            displayName: cross device
       - name: Customer booking (preview)
-        href: booking-concept-overview.md
-        displayName: Bookings, Microsoft Bookings
         items:
+          - name: Overview 
+            href: booking-concept-overview.md
+            displayName: Bookings, Microsoft Bookings, booking, customer booking
           - name: Business rules
             href: bookingsbusiness-business-rules.md
+            displayName: Bookings, Microsoft Bookings, booking
       - name: Device and app management
         expanded: true
         items:
@@ -196,7 +209,7 @@ items:
             items:
               - name: Overview
                 href: universal-print-concept-overview.md
-                displayName: Universal Print
+                displayName: Universal Print, Cloud printing, printing
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
@@ -208,11 +221,11 @@ items:
             displayName: Intune
           - name: Cloud PC (preview)
             href: cloudpc-concept-overview.md
-          - name: Device updates (preview)
-            displayName: Windows updates
+          - name: Device updates (preview)           
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
+                displayName: Windows updates, Windows update, device update
               - name: Software updates
                 href: windowsupdates-software-updates.md
               - name: Deployments
@@ -230,15 +243,16 @@ items:
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)
-            displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+            displayName: Microsoft 365 Lighthouse
           - name: Service health and communications
-            display name: service communications API
             href: service-communications-concept-overview.md
+            displayName: service communications
       - name: Education
         items:
           - name: Overview
             href: education-concept-overview.md
+            displayName: education
           - name: Rubrics
             href: education-rubric-overview.md
           - name: Upload files
@@ -248,24 +262,25 @@ items:
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
       - name: Files
-        displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
           - name: Overview
             href: onedrive-concept-overview.md
+            displayName: files, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
           - name: Addressing drive items
             href: onedrive-addressing-driveitems.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
+            displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
               - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
+                displayName: directory
               - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
@@ -278,6 +293,7 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
+                displayName: governance
               - name: Review access to your resources
                 items:
                   - name: Overview of the access reviews API
@@ -295,10 +311,10 @@ items:
               - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail
-        displayName: Outlook, Outlook mail
         items:
           - name: Overview
             href: outlook-mail-concept-overview.md
+            displayName: Outlook, Outlook mail, mail, message           
           - name: Automate messaging
             href: outlook-create-send-messages.md
           - name: Organize messages
@@ -318,10 +334,10 @@ items:
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
       - name: Notes
-        displayName: OneNote
         items:
           - name: Overview
             href: integrate-with-onenote.md
+            displayName: OneNote, notes
           - name: Get OneNote content
             href: onenote-get-content.md
           - name: Open the OneNote client
@@ -350,15 +366,15 @@ items:
               - name: Error codes
                 href: onenote-error-codes.md
       - name: Notifications (deprecated)
-        displayName: Notifications
         items:
           - name: Overview
             href: notifications-concept-overview.md
+            displayName: notification, notifications
           - name: Get started
-            displayName: Notifications
             items:
               - name: Overview
                 href: notifications-integration-e2e-overview.md
+                displayName: notification, notifications
               - name: App registration
                 href: notifications-integration-app-registration.md
               - name: Cross-device onboarding
@@ -375,6 +391,7 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
+            displayName: people, workplace, intelligence, people and workplace intelligence
           - name: Get information about relevant people
             href: people-example.md
           - name: Customize people insights privacy (preview)
@@ -386,10 +403,10 @@ items:
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
-        displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
           - name: Overview
             href: outlook-contacts-concept-overview.md
+            displayName: Outlook, Outlook contacts, Outlook contact, People, personal contacts
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
           - name: Immutable ID
@@ -400,12 +417,14 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
+            displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
       - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
+            displayName: search
           - name: Search messages
             href: search-concept-messages.md
           - name: Search events
@@ -434,6 +453,7 @@ items:
         items:
           - name: Overview
             href: security-concept-overview.md
+            displayName: security
           - name: Data flow
             href: security-dataflow.md
           - name: Authorization
@@ -446,22 +466,22 @@ items:
             href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
-        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
       - name: Teamwork
-        displayName: Microsoft Teams
         items:
           - name: Overview
             href: teams-concept-overview.md
+            displayName: teams, team, teamwork, Microsoft Teams
           - name: Create a group and team
             href: teams-create-group-and-team.md
           - name: List all teams
             href: teams-list-all-teams.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
-          - name: Configuring built-in tabs
+          - name: Configure built-in tabs
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
@@ -485,10 +505,10 @@ items:
         href: todo-concept-overview.md
         displayName: Microsoft To Do
       - name: Workbooks and charts
-        displayName: Excel
         items:
           - name: Overview
             href: excel-concept-overview.md
+            displayName: Excel, workbooks, charts
           - name: Manage sessions
             href: excel-manage-sessions.md
           - name: Display a chart image
