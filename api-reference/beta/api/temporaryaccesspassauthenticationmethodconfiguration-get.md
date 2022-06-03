@@ -1,7 +1,7 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethodConfiguration object."
-author: "tilarso"
+author: "inbarckms"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -47,29 +47,47 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 Do not supply a request body for this method.
 
 ## Response
-The following is an example of the response.
+If successful, this method returns a `200 OK` response code and a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object in the response body.
 
-**Note:** The response object shown here might be shortened for readability.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
+```
+
+### Response
+
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
+  "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
     "id": "TemporaryAccessPass",
-    "state": "disabled",
+    "state": "enabled",
     "defaultLifetimeInMinutes": 60,
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": false,
+    "isUsableOnce": true,
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",
@@ -79,12 +97,3 @@ Content-type: application/json
     ]
 }
 ```
-## Examples
-
-### Request
-<!-- {
-  "blockType": "request",
-  "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
-}
--->
-### Response
