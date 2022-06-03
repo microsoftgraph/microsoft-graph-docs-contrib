@@ -39,10 +39,17 @@ Represents a Temporary Access Pass authentication methods policy. The Authentica
 
 ## JSON representation
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
+  "baseType": "microsoft.graph.authenticationMethodConfiguration",
+  "openType": false
+}
+-->
 ``` json
 {
-  "@odata.type": "#microsoft.authMethodPolicy.temporaryAccessPassAuthenticationMethodConfiguration",
+  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
   "defaultLifetimeInMinutes": "Integer",
@@ -50,7 +57,5 @@ The following is a JSON representation of the resource.
   "minimumLifetimeInMinutes": "Integer",
   "maximumLifetimeInMinutes": "Integer",
   "isUsableOnce": "Boolean"
-},
-"includeTargets": [ { "@odata.type": "microsoft.graph.authenticationMethodTarget" } ]
 }
 ```
