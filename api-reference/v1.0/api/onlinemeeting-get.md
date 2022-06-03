@@ -36,7 +36,8 @@ To use application permission for this API, tenant administrators must create an
 > Only the _OnlineMeetingArtifact.Read.All_ permissions are required if you fetch online meeting artifacts and you cannot fetch meeting artifacts without it. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
 
 ## HTTP request
-To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission:
+
+To get an **onlineMeeting** using meeting ID with delegated (`/me`) and app (`/users/{userId}`) permission. These request URLs accept both organizer's and invited attendee's user token (delegated permission) or user ID (app permission).
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}

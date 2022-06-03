@@ -63,7 +63,6 @@ Contains information about a meeting, including the URL used to join a meeting, 
 > [!TIP]
 >
 >- When creating or updating an online meeting with the value of **allowedPresenters** set to `roleIsPresenter`, include a full list of **attendees** with specified attendees' **role** set to `presenter` in the request body.
->- When creating or updating an online meeting with the value of **allowedPresenters** set to other values than `roleIsPresenter`, attendees' **role** will show as `null` in the response body.
 
 ### meetingChatMode values
 
