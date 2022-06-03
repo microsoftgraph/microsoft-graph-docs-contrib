@@ -532,6 +532,7 @@ items:
         items:
           - name: Overview
             href: auth/index.yml
+            displayName: authentication, authorization
           - name: Basics
             href: auth/auth-concepts.md
           - name: Register your app
@@ -552,31 +553,33 @@ items:
         items:
           - name: Overview
             href: use-the-api.md
+            displayName: use the API, Microsoft Graph API
           - name: Access data and methods
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
           - name: Query parameters
-            displayName: OData query parameters
             items:
               - name: Use query parameters
                 href: query-parameters.md
+                displayName: OData query parameters, OData
               - name: Use the search query parameter
                 href: search-query-parameter.md
               - name: Advanced query capabilities
                 href: aad-advanced-queries.md
           - name: Batching
-            displayName: Batch requests
             href: json-batching.md
+            displayName: Batch request
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
+                displayName: WebHooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
+                displayName: change notification
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
@@ -589,6 +592,7 @@ items:
                 items:
                   - name: Overview
                     href: teams-change-notification-in-microsoft-teams-overview.md
+                    displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team and channel membership
@@ -602,10 +606,10 @@ items:
               - name: Change notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
           - name: Change tracking
-            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md
+                displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, change tracking
               - name: Get changes to events (example)
                 href: delta-query-events.md
               - name: Get changes to groups (example)
@@ -615,10 +619,10 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
             items:
               - name: Overview
                 href: extensibility-overview.md
+                displayName: add custom data, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
               - name: Use open extensions (example)
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
@@ -627,18 +631,18 @@ items:
             items:
             - name: Get started
               href: graph-explorer/graph-explorer-overview.md
+              displayName: Graph Explorer, try the API, try API
             - name: Work with Graph Explorer
               href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
-        expanded: false
         items:
           - name: Azure AD Graph
-            displayName: Migration, Azure AD Graph
             items:
               - name: Overview
                 href: migrate-azure-ad-graph-overview.md
+                displayName: Migration, Azure AD Graph, migrate
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -672,10 +676,10 @@ items:
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
-            displayName: Migration, Exchange Web Services, EWS
             items:
               - name: Overview
                 href: migrate-exchange-web-services-overview.md
+                displayName: Migration, Exchange Web Services, EWS, migrate
               - name: Authentication
                 href: migrate-exchange-web-services-authentication.md
               - name: API mapping
@@ -684,8 +688,10 @@ items:
         items:
           - name: Overview
             href: sdks/sdks-overview.md
+            displayName: SDK, SDKs, Microsoft Graph SDK
           - name: Install an SDK
             href: sdks/sdk-installation.md
+            displayName: install SDK, install SDKs
           - name: Create a client
             href: sdks/create-client.md
           - name: Customize a client
@@ -706,11 +712,11 @@ items:
             items:
               - name: Overview
                 href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-              - name: Installation
+              - name: Install PowerShell SDK
                 href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
                 href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-              - name: Navigating the SDK
+              - name: Navigate the SDK
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
@@ -718,10 +724,12 @@ items:
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
+            displayName: Microsoft Graph Toolkit
           - name: Get started
             items:
               - name: Overview
                 href: toolkit/get-started/overview.md
+                displayName: Microsoft Graph Toolkit, toolkit
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
               - name: Toolkit for SPFx
@@ -748,6 +756,7 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
+                displayName: Microsoft Graph Toolkit providers, toolkit provider
               - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: MSAL2 provider
@@ -770,6 +779,7 @@ items:
             items:
               - name: Login
                 href: toolkit/components/login.md
+                displayName: Microsoft Graph toolkit components, toolkit component
               - name: Get
                 href: toolkit/components/get.md
               - name: Person
