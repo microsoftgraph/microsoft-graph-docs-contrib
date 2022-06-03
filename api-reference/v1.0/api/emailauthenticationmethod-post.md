@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailAddress|String|Email address|
+|emailAddress|String|Email address.|
 
 
 
