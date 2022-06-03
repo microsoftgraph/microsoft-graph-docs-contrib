@@ -12,6 +12,12 @@ Throttling limits the number of concurrent calls to a service to prevent overuse
 
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
 
+> [!NOTE]
+> Solutions that need to extract a large volume of data from Microsoft Graph should use [Microsoft Graph Data Connect](data-connect-concept-overview.md) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
+
+<!-- markdownlint-disable MD033 -->
+<br/>
+
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 <!-- markdownlint-enable MD034 -->
@@ -125,7 +131,6 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Personal contacts API | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
-
 
 ### Cloud communication service limits
 
@@ -311,7 +316,7 @@ Azure AD reporting APIs are throttled when Azure AD receives too many calls duri
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
-  
+
 For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
@@ -327,7 +332,6 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 | Any | 1 request per second |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
-
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
@@ -347,7 +351,6 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/trending)
 - [usedInsight](/graph/api/resources/usedinsight)
 
-
 ### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
@@ -360,7 +363,6 @@ The following limits apply to any request on `/reports`.
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
 The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
-
 
 ### Invitation manager service limits
 
@@ -389,7 +391,6 @@ The following limits apply to any request on `/security`.
 
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
-
 
 ### Files and lists service limits
 
@@ -497,6 +498,7 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/trending)
 - [educationResource](/graph/api/resources/educationresource)
 
+
 ### Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
 
@@ -504,3 +506,4 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
+
