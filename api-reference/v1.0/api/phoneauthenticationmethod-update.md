@@ -1,6 +1,6 @@
 ---
 title: "Update phoneAuthenticationMethod"
-description: "Update the phone number associated with a phoneAuthenticationMethod object."
+description: "Update a user's phone number associated with a phoneAuthenticationMethod object."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Update the phone number associated with a [phone authentication method](../resources/phoneauthenticationmethod.md).
+Update a user's phone number associated with a [phone authentication method](../resources/phoneauthenticationmethod.md) object.
 
 You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 
@@ -68,12 +68,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.|
+|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they do not match the required format.|
 |phoneType|string| Possible values are: `mobile`, `alternateMobile`, or `office`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
 
 ## Examples
 
@@ -81,7 +81,6 @@ If successful, this method returns a `200 OK` response code and an updated [phon
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_phoneauthenticationmethod"
@@ -104,26 +103,14 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.phoneAuthenticationMethod"
+  "truncated": true
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "phoneNumber": "+1 2065555554",
-  "phoneType": "mobile",
-  "smsSignInState": "ready",
-  "id": "3179e48a-750b-4051-897c-87b9720928f7"
-}
-```
-
+HTTP/1.1 204 No Content
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

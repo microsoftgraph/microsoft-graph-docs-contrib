@@ -1,6 +1,6 @@
 ---
 title: "Get softwareOathAuthenticationMethod"
-description: "Read the properties and relationships of a softwareOathAuthenticationMethod object."
+description: "Retrieve a user's softwareOathAuthenticationMethod object and is properties."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and a [softwareOathA
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_softwareoathauthenticationmethod"
@@ -95,7 +94,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
     "id": "b172893e-893e-b172-3e89-72b13e8972b1",
-    "secretKey": "String"
+    "secretKey": null
   }
 }
 ```

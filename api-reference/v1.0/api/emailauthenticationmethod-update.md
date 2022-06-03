@@ -1,6 +1,6 @@
 ---
 title: "Update emailAuthenticationMethod"
-description: "Update the properties of an emailAuthenticationMethod object."
+description: "Update a user's emailAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Update emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Update a user's email address represented by an [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,19 +60,18 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailAddress|String|Updated email address|
+|emailAddress|String|New email address.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_emailauthenticationmethod"
@@ -95,20 +94,13 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.emailAuthenticationMethod"
+  "truncated": true
 } -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
-  "emailAddress": "kim@contoso.com"
-}
+HTTP/1.1 204 No Content
 ```

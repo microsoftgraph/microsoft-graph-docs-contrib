@@ -1,6 +1,6 @@
 ---
 title: "phoneAuthenticationMethod: disableSmsSignIn"
-description: "Disable SMS sign-in for a mobile phone"
+description: "Disable SMS sign-in for a mobile phone registered to a user."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,9 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Disable SMS sign-in for an existing `mobile` phone number. 
-
->**Note:** The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
+Disable SMS sign-in for an existing `mobile` phone number registered to a user. The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ## Permissions
 
@@ -62,7 +60,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -72,7 +70,6 @@ The following example shows how to call this API.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "phoneauthenticationmethod_disablesmssignin"
@@ -93,7 +90,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

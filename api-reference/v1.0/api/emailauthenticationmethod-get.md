@@ -1,6 +1,6 @@
 ---
 title: "Get emailAuthenticationMethod"
-description: "Read the properties and relationships of an emailAuthenticationMethod object."
+description: "Retrieve a user's emailAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Get emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Retrieve a user's single [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Retrieve a user's single [email authentication method](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_emailauthenticationmethod_1"
@@ -82,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/emailMethods/3ddfcfc8-938
 ### Response
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

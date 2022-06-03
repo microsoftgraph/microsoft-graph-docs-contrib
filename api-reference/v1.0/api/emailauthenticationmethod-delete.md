@@ -1,6 +1,6 @@
 ---
 title: "Delete emailAuthenticationMethod"
-description: "Deletes an emailAuthenticationMethod object."
+description: "Deletes a user's emailAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Delete emailAuthenticationMethod
 Namespace: microsoft.graph
 
-Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object.
+Deletes a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_emailauthenticationmethod"

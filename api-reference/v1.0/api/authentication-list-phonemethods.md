@@ -1,6 +1,6 @@
 ---
 title: "List phoneMethods"
-description: "Retrieve a list of phone authentication method objects."
+description: "Retrieve a list of phone authentication method objects for a user."
 ms.localizationpriority: medium
 author: "mmcla"
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects. This will return up to three objects, as a user can have up to three phones usable for authentication. This method is available only for standard Azure AD and B2B users, but not B2C users.
+Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects for a user. This will return up to three objects, as a user can have up to three phones usable for authentication. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ## Permissions
 
@@ -73,7 +73,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_phonemethods"

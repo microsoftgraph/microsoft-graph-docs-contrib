@@ -1,6 +1,6 @@
 ---
 title: "emailAuthenticationMethod resource type"
-description: "A representation of an email address registered to a user. Email is an authentication method available only to self-service password reset (SSPR)"
+description: "Represents an email address registered to a user. Email as an authentication method is available only for self-service password reset (SSPR)."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,24 +11,24 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-A representation of an email address registered to a user. Email is an authentication method available only to self-service password reset (SSPR). Users may only have one email authentication method.
+Represents an email address registered to a user. Email as an authentication method is available only for self-service password reset (SSPR). Users may only have one email authentication method.
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/emailauthenticationmethod-list.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Retrieve a list of a user's emailAuthenticationMethods. Users may only have one email authentication method.|
-|[Create](../api/emailauthenticationmethod-post.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Create a user's emailMethods object.|
-|[Get](../api/emailauthenticationmethod-get.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Retrieve the properties  of the user's emailAuthenticationMethod object.|
-|[Update](../api/emailauthenticationmethod-update.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Update the properties of a user's emailMethods object.|
-|[Delete](../api/emailauthenticationmethod-delete.md)|None|Delete a user's emailAuthenticationMethod object.|
+|[List](../api/authentication-list-emailmethods.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Retrieve a list of a user's email authentication methods. Users may only have one email authentication method.|
+|[Create](../api/authentication-post-emailmethods.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Create a user's **emailAuthenticationMethod** object.|
+|[Get](../api/emailauthenticationmethod-get.md)|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md)|Retrieve the properties of the user's **emailAuthenticationMethod** object.|
+|[Update](../api/emailauthenticationmethod-update.md)| None |Update the properties of a user's **emailAuthenticationMethod** object.|
+|[Delete](../api/emailauthenticationmethod-delete.md)|None|Delete a user's **emailAuthenticationMethod** object.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the email address registered to this user.|
 |emailAddress|String|The email address registered to this user.|
+|id|String|The identifier of the email address registered to this user.|
 
 ## Relationships
 None.
