@@ -1,6 +1,6 @@
 ---
 title: "List roleAssignmentScheduleRequests"
-description: "In PIM, retrieve the requests for active role assignments to principals made through the unifiedRoleAssignmentScheduleRequest object."
+description: "Retrieve the requests for active role assignments to principals made through the PIM unifiedRoleAssignmentScheduleRequest object or the role assignments API."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List roleAssignmentScheduleRequests
 Namespace: microsoft.graph
 
-In PIM, retrieve the requests for active role assignments to principals. The active assignments include those made through [assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), and directly through the [role assignments API](../resources/unifiedroleassignment.md). The role assignments can be permanently active with or without an expiry date, or temporarily active after user activation of eligible assignments.
+Retrieve the requests for active role assignments to principals. The active assignments include those made through [assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), and directly through the [role assignments API](../resources/unifiedroleassignment.md). The role assignments can be permanently active with or without an expiry date, or temporarily active after user activation of eligible assignments.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleAssignmentScheduleRequest resource type"
-description: "Represents a request for an active role assignment to a principal through PIM. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment."
+description: "In PIM, represents a request for an active role assignment to a principal. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a request for an active role assignment to a principal through PIM. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment. Inherits from [request](../resources/request.md).
+I  PIM, represents a request for an active role assignment to a principal. The role assignment can be permanently active with or without an expiry date, or temporarily active after activation of an eligible assignment. Inherits from [request](../resources/request.md).
 
 For more information about PIM scenarios you can define through the **unifiedRoleAssignmentScheduleRequest** resource type, see [Overview of role management through the privileged identity management (PIM) API](privilegedidentitymanagementv3-overview.md).
 
