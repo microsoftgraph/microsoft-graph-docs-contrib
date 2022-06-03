@@ -177,10 +177,15 @@ PATCH https://graph.microsoft.com/beta/users/{id}
 Content-type: application/json
 
 {
-  "businessPhones": [
-    "+1 425 555 0109"
-  ],
-  "officeLocation": "18/2111"
+    "businessPhones": [
+        "+1 425 555 0109"
+    ],
+    "officeLocation": "18/2111",
+    "authorizationInfo": {
+        "certificateUserIds": [
+            "5432109876543210@mil"
+        ]
+    }
 }
 ```
 # [C#](#tab/csharp)
