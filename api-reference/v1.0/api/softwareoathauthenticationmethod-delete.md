@@ -1,6 +1,6 @@
 ---
 title: "Delete softwareOathAuthenticationMethod"
-description: "Deletes a softwareOathAuthenticationMethod object."
+description: "Deletes a user's softwareOathAuthenticationMethod object."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -64,7 +64,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_softwareoathauthenticationmethod"

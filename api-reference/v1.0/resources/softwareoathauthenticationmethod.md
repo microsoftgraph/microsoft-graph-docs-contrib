@@ -1,6 +1,6 @@
 ---
 title: "softwareOathAuthenticationMethod resource type"
-description: "A representation of a Software OATH token registered to a user. Software OATH is a multi-factor authentication method."
+description: "Represents a Software OATH token registered to a user. Software OATH is a multi-factor authentication method."
 author: "mmcla"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A representation of a software OATH token registered to a user. A software OATH token is a software-based number generator that uses the OATH Time-Based One Time Password (TOTP) standard for multi-factor authentication. This API will not return Microsoft Authenticator authentication method entities, though it will return an entity if Microsoft Authenticator was set up via the third-party software authenticator flow.
+Represents a software OATH token registered to a user. A software OATH token is a software-based number generator that uses the OATH Time-Based One Time Password (TOTP) standard for multi-factor authentication. This API will not return Microsoft Authenticator authentication method entities, though it will return an entity if Microsoft Authenticator was set up via the third-party software authenticator flow.
 
 ## Methods
 |Method|Return type|Description|
