@@ -66,7 +66,7 @@ The following table shows the properties that are required when you update the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -98,16 +98,9 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.emailAuthenticationMethod"
+  "truncated": true
 } -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
-  "emailAddress": "kim@contoso.com"
-}
+HTTP/1.1 204 No Content
 ```

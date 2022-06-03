@@ -73,7 +73,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
 
 ## Examples
 
@@ -103,26 +103,14 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.phoneAuthenticationMethod"
+  "truncated": true
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "phoneNumber": "+1 2065555554",
-  "phoneType": "mobile",
-  "smsSignInState": "ready",
-  "id": "3179e48a-750b-4051-897c-87b9720928f7"
-}
-```
-
+HTTP/1.1 204 No Content
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
