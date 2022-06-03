@@ -117,7 +117,7 @@ Content-type: application/json
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
+```
 ---
 
 
