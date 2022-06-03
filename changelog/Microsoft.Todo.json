@@ -73,7 +73,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the **attachmentInfo** resource type.",
           "Target": "attachmentInfo"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "uploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the [uploadSession](https://docs.microsoft.com/en-us/graph/api/resources/uploadSession?view=graph-rest-beta) resource type.",
+          "Description": "Added the **uploadSession** resource type.",
           "Target": "uploadSession"
         },
         {
@@ -89,7 +89,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentSession",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentSession?view=graph-rest-beta) resource",
+          "Description": "Added the **attachmentSession** resource",
           "Target": "attachmentSession"
         },
         {
@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachment_v2",
           "ChangeType": "Addition",
-          "Description": "Added the [attachment_v2](https://docs.microsoft.com/en-us/graph/api/resources/attachment_v2?view=graph-rest-beta) resource",
+          "Description": "Added the **attachment_v2** resource",
           "Target": "attachment_v2"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fileAttachment_v2",
           "ChangeType": "Addition",
-          "Description": "Added the [fileAttachment_v2](https://docs.microsoft.com/en-us/graph/api/resources/fileAttachment_v2?view=graph-rest-beta) resource",
+          "Description": "Added the **fileAttachment_v2** resource",
           "Target": "fileAttachment_v2"
         },
         {
@@ -137,7 +137,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "createUploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/attachment_v2?view=graph-rest-beta) method to the [attachment_v2](https://docs.microsoft.com/en-us/graph/api/attachment_v2?view=graph-rest-beta) resource.",
+          "Description": "Added the **createUploadSession** method to the **attachment_v2** resource.",
           "Target": "attachment_v2"
         }
       ],
