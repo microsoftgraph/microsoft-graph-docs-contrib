@@ -30,14 +30,11 @@ qna.keywords = keywords;
 qna.availabilityStartDateTime = OffsetDateTimeSerializer.deserialize("2020-09-21T20:01:37Z");
 qna.availabilityEndDateTime = OffsetDateTimeSerializer.deserialize("2021-12-31T20:01:37Z");
 LinkedList<String> languageTagsList = new LinkedList<String>();
-languageTagsList.add("en-US");
+languageTagsList.add("en-us");
 qna.languageTags = languageTagsList;
 LinkedList<DevicePlatformType> platformsList = new LinkedList<DevicePlatformType>();
 platformsList.add(DevicePlatformType.I_O_S);
 qna.platforms = platformsList;
-LinkedList<String> groupIdsList = new LinkedList<String>();
-groupIdsList.add("groupId");
-qna.groupIds = groupIdsList;
 qna.state = AnswerState.PUBLISHED;
 
 graphClient.search().qnas()

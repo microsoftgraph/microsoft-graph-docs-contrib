@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/education/users/14008",
 }
 educationSchoolId := "educationSchool-id"
-educationUserId := "educationUser-id"
-graphClient.Education().SchoolsById(&educationSchoolId).UsersById(&educationUserId).Post(requestBody)
+result, err := graphClient.Education().SchoolsById(&educationSchoolId).Users().$ref().Post(requestBody)
 
 
 ```

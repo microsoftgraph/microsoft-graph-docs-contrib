@@ -13,8 +13,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 }
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-educationCategoryId := "educationCategory-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).CategoriesById(&educationCategoryId).Post(requestBody)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Categories().$ref().Post(requestBody)
 
 
 ```
