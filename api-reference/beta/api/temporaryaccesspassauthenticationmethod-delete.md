@@ -105,7 +105,7 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/tem
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

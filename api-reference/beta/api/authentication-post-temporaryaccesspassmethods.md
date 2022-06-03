@@ -63,11 +63,11 @@ In the request body, supply a JSON representation of the [temporaryAccessPassAut
 
 The following table describes optional properties that can be used when creating the [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
 
-|Property|Type|Description|Required| 
-|:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use, if not set the Temporary Access Pass is available to use at creation time.| No|
-|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days).| No|
-|isUsableOnce|Boolean|Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|  No|
+|Property|Type|Description|
+|:---|:---|:---|
+|startDateTime|DateTimeOffset|Optional. The date and time when the temporaryAccessPass becomes available to use, if not set the Temporary Access Pass is available to use at creation time.|
+|lifetimeInMinutes|Int32|Optional. The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days).|
+|isUsableOnce|Boolean|Optional. Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|
 
 
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

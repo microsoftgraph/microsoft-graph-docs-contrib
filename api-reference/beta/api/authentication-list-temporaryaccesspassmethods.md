@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethod
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
