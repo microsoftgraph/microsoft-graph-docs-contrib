@@ -207,7 +207,7 @@ items:
         items:
           - name: Cloud printing
             items:
-              - name: Overview
+              - name: Cloud printing overview
                 href: universal-print-concept-overview.md
                 displayName: Universal Print, Cloud printing, printing
               - name: Upload data to upload session
@@ -223,7 +223,7 @@ items:
             href: cloudpc-concept-overview.md
           - name: Device updates (preview)           
             items:
-              - name: Overview
+              - name: Device updates overview
                 href: windowsupdates-concept-overview.md
                 displayName: Windows updates, Windows update, device update
               - name: Software updates
@@ -372,7 +372,7 @@ items:
             displayName: notification, notifications
           - name: Get started
             items:
-              - name: Overview
+              - name: Get started overview
                 href: notifications-integration-e2e-overview.md
                 displayName: notification, notifications
               - name: App registration
@@ -553,7 +553,7 @@ items:
         items:
           - name: Overview
             href: use-the-api.md
-            displayName: use the API, Microsoft Graph API
+            displayName: Microsoft Graph API
           - name: Access data and methods
             href: traverse-the-graph.md
           - name: Paging
@@ -574,9 +574,9 @@ items:
             href: throttling.md
           - name: Change notifications
             items:
-              - name: Overview
+              - name: Change notifications overview
                 href: webhooks.md
-                displayName: WebHooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+                displayName: change notifications, WebHooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
               - name: Tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
                 displayName: change notification
@@ -590,7 +590,7 @@ items:
                 href: universal-print-webhook-notifications.md
               - name: Change notifications for Microsoft Teams
                 items:
-                  - name: Overview
+                  - name: Microsoft Teams overview
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
@@ -607,7 +607,7 @@ items:
                 href: outlook-change-notifications-overview.md
           - name: Change tracking
             items:
-              - name: Overview
+              - name: Change tracking overview
                 href: delta-query-overview.md
                 displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, change tracking
               - name: Get changes to events (example)
@@ -620,7 +620,7 @@ items:
                 href: delta-query-users.md
           - name: Add custom data
             items:
-              - name: Overview
+              - name: Add custom data to resources using extensions
                 href: extensibility-overview.md
                 displayName: add custom data, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
               - name: Use open extensions (example)
@@ -640,7 +640,7 @@ items:
         items:
           - name: Azure AD Graph
             items:
-              - name: Overview
+              - name: Migrate Azure AD Graph apps
                 href: migrate-azure-ad-graph-overview.md
                 displayName: Migration, Azure AD Graph, migrate
               - name: Checklist to migrate apps
@@ -677,7 +677,7 @@ items:
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
             items:
-              - name: Overview
+              - name: Migrate Exchange Web Services apps
                 href: migrate-exchange-web-services-overview.md
                 displayName: Migration, Exchange Web Services, EWS, migrate
               - name: Authentication
@@ -710,7 +710,7 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
-              - name: Overview
+              - name: PowerShell overview
                 href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Install PowerShell SDK
                 href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
@@ -722,12 +722,12 @@ items:
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the toolkit
         items:
-          - name: Toolkit overview
+          - name: Overview
             href: toolkit/overview.md
             displayName: Microsoft Graph Toolkit
           - name: Get started
             items:
-              - name: Overview
+              - name: Get started overview
                 href: toolkit/get-started/overview.md
                 displayName: Microsoft Graph Toolkit, toolkit
               - name: Toolkit for React
