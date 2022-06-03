@@ -106,7 +106,6 @@ The sharing link is configured to be read-only and usable by anyone with the lin
 ```http
 POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",

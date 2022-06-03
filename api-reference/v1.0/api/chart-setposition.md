@@ -59,7 +59,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setPosition
 Content-type: application/json
-Content-length: 66
 
 {
   "startCell": "startCell-value",

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get printJob
 Namespace: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Retrieve the properties and relationships of a print job.
 
 ## Permissions
@@ -261,7 +259,6 @@ Content-Type: application/json
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

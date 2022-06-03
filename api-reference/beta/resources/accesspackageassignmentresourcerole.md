@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
+In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Retrieve an accessPackageAssignmentResourceRole object. |
-| [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
+| [List accessPackageAssignmentResourceRoles](../api/entitlementmanagement-list-accesspackageassignmentresourceroles.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
 
 ## Properties
 
@@ -38,7 +38,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md) collection| The access package assignments resulting in this role assignment. Read-only. Nullable.|
 |accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable.|
 |accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Read-only. Nullable.|
-|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable.|
+|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable. Supports `$filter` (`eq`) on **objectId** and `$expand` query parameters.|
 
 
 ## JSON representation

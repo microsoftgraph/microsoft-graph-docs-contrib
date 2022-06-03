@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph API to work with Microsoft Teams
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
 
 ## Key resources in Microsoft Teams
@@ -23,14 +21,14 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[teamsTab](../resources/teamstab.md) |[List](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [update](../api/channel-patch-tabs.md), [delete](../api/channel-delete-tabs.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md)|
+|[chatMessage](../resources/chatmessage.md)| [List in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md)|
 |[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md) |
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
-|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
-|activityFeedNotification| [Send notification to user in scope of a chat](../api/chat-sendactivitynotification.md), [Send notification to user in scope of a team](../api/team-sendactivitynotification.md), [Send notification to user in personal scope](../api/userteamwork-sendactivitynotification.md)|
-|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [replace](../api/schedulinggroup-put.md), [delete](../api/schedulinggroup-delete.md) |
+|activityFeedNotification| [Send notification to user in scope of a chat](../api/chat-sendactivitynotification.md), [send notification to user in scope of a team](../api/team-sendactivitynotification.md), [send notification to user in personal scope](../api/userteamwork-sendactivitynotification.md)|
+|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [replace](../api/shift-put.md), [delete](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [replace](../api/timeoffreason-put.md), [delete](../api/timeoffreason-delete.md) |
 
 ## Microsoft Teams limits
 

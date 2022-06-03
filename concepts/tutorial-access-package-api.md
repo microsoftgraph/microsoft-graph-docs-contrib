@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
 description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
 ---
@@ -277,7 +277,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "description": null,
       "originSystem": "AadGroup",
       "originId": "Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
-      "accessPackageResource@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/$entity",
       "accessPackageResource": {
         "id": "4a1e21c5-8a76-4578-acb1-641160e076e8",
         "displayName": "Marketing resources",
@@ -289,7 +288,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
         "isPendingOnboarding": false,
         "addedBy": "admin@contoso.onmicrosoft.com",
         "addedOn": "2020-06-26T17:13:23.723Z",
-        "accessPackageResourceScopes@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/accessPackageResourceScopes",
         "accessPackageResourceScopes": []
       }
     }
@@ -731,7 +729,7 @@ No Content - 204
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
 
 
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
 - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)

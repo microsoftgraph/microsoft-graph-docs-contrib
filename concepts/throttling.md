@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -138,7 +138,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
-| [Presence](/graph/api/resources/presence) (preview)   | 1500 requests in a 30 second period, per application per tenant |
+| [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 
 ### OneNote service limits
 
@@ -173,20 +173,25 @@ Limits are expressed as requests per second (rps).
 
 | Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
 |------------------------------------------------------|---------------------------------|------------|
-| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
-| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| GET team, channel, tab, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| GET channel message  | 5 rps | 100 rps |
-| GET 1:1/group chat message  | 3 rps | 30 rps |
-| POST channel message | 2 rps | 20 rps |
-| POST 1:1/group chat message | 2 rps | 20 rps |
-| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST /teams | 10 rps | 100 rps  |
+| PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
+| GET channel message  | 20 rps | 200 rps |
+| GET 1:1/group chat message  | 20 rps | 200 rps |
+| POST channel message | 50 rps | 500 rps |
+| POST 1:1/group chat message | 20 rps | 200 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 600 rps |
 | POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
 | DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
+| POST /teams/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /users/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Other GET API calls for Microsoft Teams              | 30 rps | 1500 rps |
+| Other API calls for Microsoft Teams              | 30 rps | 300 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
@@ -208,9 +213,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
-| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
-| tenant | Not Applicable | 18,000 per 5 minutes |
+| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
@@ -245,6 +250,10 @@ The following table lists base request costs. Any requests not listed have a bas
 | PATCH | Any identity path not listed in the table | 1 | 1 |
 | PUT | Any identity path not listed in the table | 1 | 1 |
 | DELETE | Any identity path not listed in the table | 1 | 1 |
+
+> [!IMPORTANT]
+> 
+> The cost of POST, PATCH, and DELETE operations on the `applications` request path depends on the **signInAudience** type. For apps where the **signInAudience** is `AzureADMyOrg` or `AzureADMultipleOrgs`, the cost is 70,000 requests per 5 minutes; while for apps where the **signInAudience** is `AzureADandPersonalMicrosoftAccount` or `PersonalMicrosoftAccount`, the cost is 60 requests per minute.
 
 Other factors that affect a request cost:
 
@@ -293,12 +302,17 @@ Other factors that affect a request cost:
 
 | Request type |  Limit per app per tenant |
 | ------------ | ------------------------ |
-| Any | 60 requests per 60 seconds |
+| Any | 5 requests per 10 seconds |
 
 The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### Identity and access reports best practices
+Azure AD reporting APIs are throttled when Azure AD receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices above](#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+- Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
+- If you need a broad set of Azure AD reporting data, use `$filter` on the **createdDateTime** to limit the amount of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests 3 days of data and iterate with shorter timespans until your requests are no longer throttled.
+  
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
@@ -413,6 +427,8 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
+For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). In addition, the following are some throttling limits.
+  
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
 ### Identity providers service limits
@@ -481,3 +497,13 @@ The preceding limits apply to the following resources:
 - [educationSubmission](/graph/api/resources/educationsubmission)
 - [trending](/graph/api/resources/trending)
 - [educationResource](/graph/api/resources/educationresource)
+
+
+### Service Communications service limits
+The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
+
+| Request type |  Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any | 240 requests per 60 seconds |
+|Any | 800 requests per hour |
+

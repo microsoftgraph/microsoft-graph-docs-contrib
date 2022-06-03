@@ -83,6 +83,14 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/java/list-chats-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-chats-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -160,6 +168,14 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 [!INCLUDE [sample-code](../includes/snippets/java/list-chats-expand-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-chats-expand-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-chats-expand-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -192,7 +208,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -226,7 +241,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -276,7 +290,6 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "members@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
                 {
                     "@odata.type": "#microsoft.graph.aadUserConversationMember",

@@ -44,7 +44,7 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -63,6 +63,9 @@
     "redirects/.openpublishing.redirection.1120.json",
     "redirects/.openpublishing.redirection.0721.json",
     "redirects/.openpublishing.redirection.0121.json",
-    "redirects/.openpublishing.redirection.0921.json"
+    "redirects/.openpublishing.redirection.0921.json",
+    "redirects/.openpublishing.redirection.1121.json",
+    "redirects/.openpublishing.redirection.1221.json",
+    "redirects/.openpublishing.redirection.0522.json"
   ]
 }

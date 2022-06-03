@@ -1,7 +1,7 @@
 ---
 title: "Applications API overview"
 description: "Register your application with Azure AD to create an identity configuration for it that allows it to integrate with Azure AD."
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: scenarios:getting-started
@@ -69,7 +69,7 @@ For more information about synchronization, see the following articles:
 - [How provisioning works](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 To learn about using the synchronization APIs, see the following tutorials and their associated APIs:
-- [Configure provisioning using Microsoft Graph APIs](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Configure provisioning using Microsoft Graph APIs](/azure/active-directory/app-provisioning/application-provisioning-configuration-api)
     - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [synchronizationTemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)

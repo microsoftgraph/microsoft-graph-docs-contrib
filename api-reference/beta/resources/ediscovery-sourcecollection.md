@@ -31,17 +31,18 @@ Represents an eDiscovery collection, commonly known as a search. For details, se
 |[List additionalSources](../api/ediscovery-sourcecollection-list-additionalsources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of additional **dataSource** objects associated with a source collection.|
 |[List custodianSources](../api/ediscovery-sourcecollection-list-custodiansources.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get a list of custodian **dataSource** objects associated with a source collection.|
 |[List noncustodialSources](../api/ediscovery-sourcecollection-list-noncustodialsources.md)|[microsoft.graph.ediscovery.noncustodialSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of non-custodial sources **noncustodialSource** objects associated with a source collection.|
+|[Purge data](../api/ediscovery-sourcecollection-purgedata.md)|None|Run a purge data operation on the Teams data contained in the source collection.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).  You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*|
+|contentQuery|String|The query string in KQL (Keyword Query Language) query. For details, see [Keyword queries and search conditions for Content Search and eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions). You can refine searches by using fields paired with values; for example, *subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **sourceCollection**.|
 |createdDateTime|DateTimeOffset|The date and time the **sourceCollection** was created.|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`.|
-|description|String|The description of the **sourceCollection**|
-|displayName|String|The display name of the **sourceCollection**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|description|String|The description of the **sourceCollection**.|
+|displayName|String|The display name of the **sourceCollection**.|
 |id|String| The ID for the **sourceCollection**. Read-only. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The last user who modified the **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the **sourceCollection** was modified.|

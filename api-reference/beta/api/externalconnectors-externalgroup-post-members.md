@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported                               |
-| Delegated (personal Microsoft account) | Not supported                               |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## HTTP request
 
@@ -80,7 +80,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 # [C#](#tab/csharp)
@@ -97,6 +96,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,7 +123,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -142,8 +144,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -160,6 +161,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -181,8 +186,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 
@@ -204,8 +208,7 @@ Content-Type: application/json
 
 {
   "id": "1431b9c38ee647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```
 # [C#](#tab/csharp)
@@ -222,6 +225,10 @@ Content-Type: application/json
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalgroupmember-from--3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -243,7 +250,6 @@ Content-Type: application/json
 
 {
   "id": "14m1b9c38qe647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```

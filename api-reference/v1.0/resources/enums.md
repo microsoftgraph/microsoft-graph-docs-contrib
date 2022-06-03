@@ -11,6 +11,268 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### expirationPatternType values 
+
+|Member|
+|:---|
+|notSpecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### recurrencePatternType values 
+
+|Member|
+|:---|
+|daily|
+|weekly|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### unifiedRoleManagementPolicyRuleTargetOperations values 
+
+|Member|
+|:---|
+|all|
+|activate|
+|deactivate|
+|assign|
+|update|
+|remove|
+|extend|
+|renew|
+|unknownFutureValue|
+
+### unifiedRoleScheduleRequestActions values 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessReviewExpirationBehavior values
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### allowedTargetScope values
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### accessPackageAssignmentRequestFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### accessPackageAssignmentState values
+
+|Member|
+|:---|
+|delivering|
+|partiallyDelivered|
+|delivered|
+|expired|
+|deliveryFailed|
+|unknownFutureValue|
+
+### accessPackageCatalogState values
+
+|Member|
+|:---|
+|unpublished|
+|published|
+|unknownFutureValue|
+
+### accessPackageCatalogType values
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### accessPackageExternalUserLifecycleAction values
+
+|Member|
+|:---|
+|none|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### accessPackageRequestState values
+
+|Member|
+|:---|
+|submitted|
+|pendingApproval|
+|delivering|
+|delivered|
+|deliveryFailed|
+|denied|
+|scheduled|
+|canceled|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### accessPackageRequestType values
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### accessPackageSubjectType values
+
+|Member|
+|:---|
+|notSpecified|
+|user|
+|servicePrincipal|
+|unknownFutureValue|
+
+### connectedOrganizationState values
+
+|Member|
+|:---|
+|configured|
+|proposed|
+
+### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### volumeType values
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
 ### filterMode values
 
 |Member|
@@ -310,6 +572,25 @@ Namespace: microsoft.graph
 |groupCall|
 |peerToPeer|
 |unknownFutureValue|
+
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### educationSubmissionStatus values
+|Member|
+|:---|
+|working|
+|submitted|
+|released|
+|returned|
+|unknownFutureValue|
+|reassigned|
 
 ### onlineMeetingRole values
 
@@ -752,6 +1033,15 @@ Namespace: microsoft.graph
 | otherFax
 | pager
 | radio
+
+
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
 
 
 ### plannerPreviewType values
@@ -1246,6 +1536,7 @@ Possible values for user account types (group membership), per Windows definitio
 | chatEvent |
 | typing |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### chatMessagePolicyViolationDlpActionType values
 
@@ -1567,6 +1858,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### postType values 
 
@@ -1576,6 +1868,13 @@ Possible values for user account types (group membership), per Windows definitio
 |quick|
 |strategic|
 |unknownFutureValue|
+
+### searchAlterationType values
+
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### serviceHealthClassificationType values 
 
@@ -1686,4 +1985,111 @@ Possible values for user account types (group membership), per Windows definitio
 |teacher|
 |faculty|
 |other|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### callRecordingStatus values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|initial|
+|chunkFinished|
+|unknownFutureValue|
+
+### teamworkCallEventType values 
+
+|Member|
+|:---|
+|call|
+|meeting|
+|screenShare|
+|unknownFutureValue|
+
+### bookingReminderRecipients values 
+
+|Member|
+|:---|
+|allAttendees|
+|staff|
+|customer|
+|unknownFutureValue|
+
+### bookingStaffRole values 
+
+|Member|
+|:---|
+|guest|
+|administrator|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### answerInputType values 
+
+|Member|
+|:---|
+|text|
+|radioButton|
+|unknownFutureValue|
+
+### bookingPriceType values
+
+|Member|
+|:---|
+|undefined|
+|fixedPrice|
+|startingAt|
+|hourly|
+|free|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
 |unknownFutureValue|

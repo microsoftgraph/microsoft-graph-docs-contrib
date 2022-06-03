@@ -15,7 +15,7 @@ acl.accessType = AccessType.GRANT;
 aclList.add(acl);
 externalItem.acl = aclList;
 
-graphClient.connections("contosohr").items("TSP228082938")
+graphClient.external().connections("contosohr").items("TSP228082938")
 	.buildRequest()
 	.patch(externalItem);
 

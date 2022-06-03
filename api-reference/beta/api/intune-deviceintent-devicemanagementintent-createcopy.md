@@ -49,6 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Not yet documented|
+|description|String|Not yet documented|
 
 
 
@@ -63,10 +64,11 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 Content-type: application/json
-Content-length: 43
+Content-length: 82
 
 {
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "description": "Description value"
 }
 ```
 
@@ -92,6 +94,7 @@ Content-Length: 418
   }
 }
 ```
+
 
 
 

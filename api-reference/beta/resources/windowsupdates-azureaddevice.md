@@ -1,7 +1,7 @@
 ---
 title: "azureADDevice resource type"
 description: "Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

@@ -24,7 +24,7 @@ Devices that are managed or pre-enrolled through Intune
 |[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.|
 |[executeAction action](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|Not yet documented|
 |[enableLostMode action](../api/intune-devices-manageddevice-enablelostmode.md)|None|Enable lost mode|
-|[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Remote lock|
+|[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Play lost mode sound|
 |[setDeviceName action](../api/intune-devices-manageddevice-setdevicename.md)|None|Set device name of the device.|
 |[activateDeviceEsim action](../api/intune-devices-manageddevice-activatedeviceesim.md)|None|Activate eSIM on the device.|
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Not yet documented|
@@ -56,6 +56,8 @@ Devices that are managed or pre-enrolled through Intune
 |[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
 |[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
 |[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
+|[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Not yet documented|
+|[getOemWarranty function](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -145,7 +147,7 @@ Devices that are managed or pre-enrolled through Intune
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. This property is read-only.|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 |logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 
@@ -361,6 +363,7 @@ Here is a JSON representation of the resource.
   "enrollmentProfileName": "String"
 }
 ```
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Update a directory setting"
+title: "Update directorySetting"
 description: "Update the properties of a specific directory setting object."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Update a directory setting
+# Update directorySetting
 
 Namespace: microsoft.graph
 
@@ -15,24 +15,30 @@ Namespace: microsoft.graph
 
 Update the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Update groupSettings*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-Update a tenant-wide or group specific setting.
+Update a tenant-wide setting.
 ```http
-PATCH /settings/{id}
-PATCH /groups/{id}/settings/{id}
+PATCH /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Update a group-specific setting.
+```http
+PATCH /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
@@ -50,7 +56,7 @@ In the request body, supply the values for relevant fields that should be update
 If successful, this method returns a `204 OK` response code.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -58,18 +64,17 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_directorysetting"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/settings/{id}
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/3c105fc3-2254-4861-9e2d-d59e2126f3ef
 Content-type: application/json
-Content-length: 178
 
 {
-  "values": [
-    {
-      "name": "name-value",
-      "value": "value-value"
-    }
-  ]
+    "values": [
+        {
+            "name": "CustomBlockedWordsList",
+            "value": "Contoso"
+        }
+    ]
 }
 ```
 # [C#](#tab/csharp)
@@ -88,9 +93,17 @@ Content-length: 178
 [!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-directorysetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-directorysetting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->

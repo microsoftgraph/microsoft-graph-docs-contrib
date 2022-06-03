@@ -1,5 +1,5 @@
 ---
-title: "Get 1:1 chat between the specified user and Teams app"
+title: "Get chat between user and teamsApp"
 description: "Retrieve one-on-one chat between the specified user and the Teams app."
 author: "AkJo"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 ---
 
-# Get one-on-one chat between the specified user and Teams app
+# Get chat between user and teamsApp
 
 Namespace: microsoft.graph
 
@@ -51,12 +51,9 @@ If successful, this method returns a `200 OK` response code and an instance of [
 
 ## Examples
 
-### Example 1: List one-on-one chats between the specified user and the Teams app
+### Request
 
-#### Request
-
-The following is an example of the request.
-
+The following is an example of a request that lists one-on-one chats between the specified user and the Teams app.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,10 +79,18 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 [!INCLUDE [sample-code](../includes/snippets/java/user-chat-teamsapps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-chat-teamsapps-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-chat-teamsapps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

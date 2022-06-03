@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to request spelling correction (preview)
 
-You can use the Microsoft Search API to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents. To request spelling corrections, specify the following properties in the **queryAlterationOptions** property of request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:
+You can use the Microsoft Search API to request spelling corrections to handle mismatches between typos in user queries and correct words in matched contents. To request spelling corrections, specify the following properties in the **queryAlterationOptions** property of the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true):
 
 - **enableSuggestion** to enable/disable spelling suggestions for the user query. You can pass `true` to get the suggested spelling correction information for typos in the user query.
 
@@ -40,13 +40,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": false
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": false
-    }
+    ]
 }
 ```
 
@@ -68,26 +68,26 @@ Content-type: application/json
                     "total": 0,
                     "moreResultsAvailable": false
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Suggestion"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Suggestion"
-    }
+    ]
 }
 ```
 
@@ -113,13 +113,13 @@ Content-Type: application/json
                 "queryString": "accountt"
             },
             "from": 0,
-            "size": 25
+            "size": 25,
+            "queryAlterationOptions": {
+                "enableSuggestion": true,
+                "enableModification": true
+            }
         }
-    ],
-    "queryAlterationOptions": {
-        "enableSuggestion": true,
-        "enableModification": true
-    }
+    ]
 }
 ```
 
@@ -175,26 +175,26 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "queryAlterationResponse": {
+                "@odata.type": "#microsoft.substrateSearch.alterationResponse",
+                "originalQueryString": "accountt",
+                "queryAlteration": {
+                    "@odata.type": "#microsoft.substrateSearch.searchAlteration",
+                    "alteredQueryString": "account",
+                    "alteredHighlightedQueryString": "account",
+                    "alteredQueryTokens": [
+                        {
+                            "offset": 0,
+                            "length": 8,
+                            "suggestion": "account"
+                        }
+                    ]
+                },
+                "queryAlterationType": "Modification"
+            }
         }
-    ],
-    "queryAlterationResponse": {
-        "@odata.type": "#microsoft.substrateSearch.alterationResponse",
-        "originalQueryString": "accountt",
-        "queryAlteration": {
-            "@odata.type": "#microsoft.substrateSearch.searchAlteration",
-            "alteredQueryString": "account",
-            "alteredHighlightedQueryString": "account",
-            "alteredQueryTokens": [
-                {
-                    "offset": 0,
-                    "length": 8,
-                    "suggestion": "account"
-                }
-            ]
-        },
-        "queryAlterationType": "Modification"
-    }
+    ]
 }
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "List programControlTypes"
+title: "List programControlTypes (deprecated)"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,11 +7,13 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List programControlTypes
+# List programControlTypes (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControlType](../resources/programcontroltype.md) objects.
 ## Permissions
@@ -67,6 +69,14 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontroltype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontroltype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-programcontroltype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

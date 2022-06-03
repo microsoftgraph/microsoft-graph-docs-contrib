@@ -95,11 +95,12 @@ Content-Length: 988
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "disableUDPConnections": true
+      "disableUdpConnections": true
     }
   ]
 }
 ```
+
 
 
 

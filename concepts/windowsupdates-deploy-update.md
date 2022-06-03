@@ -1,7 +1,7 @@
 ---
 title: "Deploy a feature update using the Windows Update for Business deployment service"
 description: "With the Windows Update for Business deployment service, you can deploy Windows feature updates to devices in an Azure AD tenant."
-author: "Alice-at-Microsoft"
+author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. When a deployment is created, a deployment audience is automatically created as a relationship.
 
-Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). The targeted devices are specified in the next step.
+Below is an example of creating a deployment of a feature update, with optional settings configuring the [deployment schedule](windowsupdates-schedule-deployment.md) and [monitoring rules](windowsupdates-manage-monitoring-rules.md). [Safeguards](windowsupdates-manage-safeguards.md) are applied by default. The targeted devices are specified in the next step.
 
 ### Request
 
@@ -90,7 +90,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -144,6 +143,7 @@ Content-Type: application/json
                 }
             ]
         },
+        "safeguard": null,
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
@@ -157,7 +157,7 @@ After a deployment is created, you can assign devices to the [deployment audienc
 
 Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-The follwoing example shows how to add Azure AD devices as members of the deployment audience.
+The following example shows how to add Azure AD devices as members of the deployment audience.
 
 ### Request
 

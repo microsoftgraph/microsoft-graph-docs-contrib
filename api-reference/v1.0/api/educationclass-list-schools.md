@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | EduRoster.ReadBasic                         |
-| Delegated (personal Microsoft account) | Not supported                               |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## HTTP request
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -80,9 +80,17 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-schools-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
@@ -97,7 +105,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
   "value": [

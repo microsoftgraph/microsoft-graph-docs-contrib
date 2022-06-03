@@ -26,3 +26,4 @@ Indicates the package type of an MSI Win32LobApp.
 
 
 
+

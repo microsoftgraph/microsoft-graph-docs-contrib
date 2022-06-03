@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b
 [!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyprinter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -92,7 +96,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
 
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

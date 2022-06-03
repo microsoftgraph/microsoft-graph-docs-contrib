@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.AuthenticationMethod|
 
-For delegated scenarios, the administrator needs the following [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+For delegated scenarios, the administrator needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global Reader
 * Authentication Policy Administrator
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 [!INCLUDE [sample-code](../includes/snippets/java/get-fido2authenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -96,31 +100,26 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
-      "id":"Fido2",
-      "state":"enabled",
-      "isSelfServiceRegistrationAllowed":true,
-      "isAttestationEnforced":true,
-      "keyRestrictions":{
-         "isEnforced":false,
-         "enforcementType":"block",
-         "aaGuids":[
-            
-         ]
-      },
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

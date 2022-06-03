@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the [meetingRegistrants](../resources/meetingregistrant.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
-You can use this method to get the registration report for a [Microsoft Teams webinar](https://support.microsoft.com/en-us/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
+You can use this method to get the registration report for a [Microsoft Teams webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 ## Permissions
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-registratrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-registratrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
