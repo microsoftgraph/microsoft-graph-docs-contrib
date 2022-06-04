@@ -16,10 +16,10 @@ The applied CA policies listed in **appliedConditionalAccessPolicies** property 
 + Security Reader
 + Conditional Access Administrator
 
-Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) objects in the sign-in logs. 
+Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) objects in the sign-in logs: 
 
 + Policy.Read.All
 + Policy.ReadWrite.ConditionalAccess
 + Policy.Read.ConditionalAccess
 
-**Note:** Azure AD users with any permissions can read sign-in logs in which their user is the actor signing in. This feature helps users spot unexpected activity in their accounts. Users cannot read CA data from their own logs unless they have one of the CA permissions identified above.
+>**Note:** Azure AD users with any permissions can read sign-in logs in which their user is the actor signing in. This feature helps users spot unexpected activity in their accounts. Users cannot read CA data from their own logs unless they have one of the CA permissions identified above.
