@@ -3,7 +3,7 @@ title: "certificationControl resource type"
 description: "This resource contains compliance certification data associated with secure score control."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 

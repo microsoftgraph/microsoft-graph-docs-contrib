@@ -17,16 +17,16 @@ To get change notifications for all changes (create and update) related to any c
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   | beta|
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All   |
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -48,18 +48,18 @@ To get change notifications for all changes related to a particular chat, subscr
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
