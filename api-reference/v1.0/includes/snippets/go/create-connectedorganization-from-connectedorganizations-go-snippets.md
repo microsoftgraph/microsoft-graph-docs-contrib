@@ -22,10 +22,7 @@ requestBody.SetIdentitySources( []IdentitySource {
 }
 state := "proposed"
 requestBody.SetState(&state)
-options := &msgraphsdk.ConnectedOrganizationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().Post(requestBody)
 
 
 ```

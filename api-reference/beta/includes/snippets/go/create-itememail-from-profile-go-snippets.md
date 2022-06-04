@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewItemEmail()
 address := "Innocenty.Popov@adventureworks.com"
 requestBody.SetAddress(&address)
-options := &msgraphsdk.EmailsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Emails().Post(options)
+result, err := graphClient.Me().Profile().Emails().Post(requestBody)
 
 
 ```

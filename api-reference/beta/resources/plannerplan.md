@@ -25,6 +25,7 @@ The **plannerPlan** resource represents a plan in Microsoft 365. A plan can be o
 |[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
+|[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 
 ## Properties
 | Property	   | Type	|Description|

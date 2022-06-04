@@ -15,12 +15,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"dealValue": ,
 	"expirationDate": "2015-07-03T13:04:00.000Z",
 }
-options := &msgraphsdk.ExtensionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Extensions().Post(options)
+result, err := graphClient.GroupsById(&groupId).EventsById(&eventId).Extensions().Post(requestBody)
 
 
 ```

@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+> [!IMPORTANT]
+> If `/$ref` is not appended to the request, the user will be deleted from Azure Active Directory (Azure AD) if the appropriate permissions are used; otherwise, a `403 Forbidden` error is returned. 
 
 ## Request headers
 
@@ -68,23 +70,27 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 ```
 
 # [C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-member-from-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-member-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

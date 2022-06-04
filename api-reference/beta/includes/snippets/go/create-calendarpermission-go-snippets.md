@@ -20,11 +20,8 @@ isRemovable := true
 requestBody.SetIsRemovable(&isRemovable)
 role := "read"
 requestBody.SetRole(&role)
-options := &msgraphsdk.CalendarPermissionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(options)
+result, err := graphClient.UsersById(&userId).Calendar().CalendarPermissions().Post(requestBody)
 
 
 ```

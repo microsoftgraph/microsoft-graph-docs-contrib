@@ -12,11 +12,8 @@ lobbyBypassSettings := msgraphsdk.NewLobbyBypassSettings()
 requestBody.SetLobbyBypassSettings(lobbyBypassSettings)
 isDialInBypassEnabled := true
 lobbyBypassSettings.SetIsDialInBypassEnabled(&isDialInBypassEnabled)
-options := &msgraphsdk.OnlineMeetingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIdentityUserFlowAttribute()
 description := "Your new hobby"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.IdentityUserFlowAttributeRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 identityUserFlowAttributeId := "identityUserFlowAttribute-id"
-graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(options)
+graphClient.Identity().UserFlowAttributesById(&identityUserFlowAttributeId).Patch(requestBody)
 
 
 ```

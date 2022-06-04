@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.RiskDetectionsRequestBuilderGetQueryParameters{
 	Filter: "riskEventType%20eq%20'unfamiliarFeatures'%20or%20riskLevel%20eq%20'medium'",
 }
-options := &msgraphsdk.RiskDetectionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.RiskDetectionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.IdentityProtection().RiskDetections().Get(options)
+result, err := graphClient.IdentityProtection().RiskDetections().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

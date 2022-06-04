@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.InstalledAppsRequestBuilderGetQueryParameters{
 	Expand: "teamsAppDefinition($expand=bot)",
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.InstalledAppsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).InstalledApps().Get(options)
+result, err := graphClient.ChatsById(&chatId).InstalledApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

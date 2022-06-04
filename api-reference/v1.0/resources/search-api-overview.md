@@ -67,6 +67,7 @@ Best practices:
 
 - Specify a smaller first page in the initial request. For example, specify **from** as 0, **size** as 25.
 - Paginate subsequent pages by updating the **from** and **size** properties. You can increase the page size in each subsequent request. The following table shows an example.
+- The maximum page size is 1000.
 
     | Page | from | size |
     |:-----|:-----|:-----|

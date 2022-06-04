@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewLegalHold()
 description := "This is a description for a legalHold"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.LegalHoldRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 legalHoldId := "legalHold-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).LegalHoldsById(&legalHoldId).Patch(requestBody)
 
 
 ```

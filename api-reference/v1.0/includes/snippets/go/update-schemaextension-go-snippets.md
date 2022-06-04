@@ -32,11 +32,8 @@ requestBody.SetProperties( []ExtensionSchemaProperty {
 		"type": "String",
 	}
 }
-options := &msgraphsdk.SchemaExtensionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 schemaExtensionId := "schemaExtension-id"
-graphClient.SchemaExtensionsById(&schemaExtensionId).Patch(options)
+graphClient.SchemaExtensionsById(&schemaExtensionId).Patch(requestBody)
 
 
 ```

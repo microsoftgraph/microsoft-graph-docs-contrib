@@ -17,10 +17,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"keyId": "99P6D879C4",
 	"certificateData": "******",
 }
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().IdentityProviders().Post(options)
+result, err := graphClient.Identity().IdentityProviders().Post(requestBody)
 
 
 ```

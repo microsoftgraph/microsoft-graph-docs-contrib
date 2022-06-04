@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
 	Count: true,
 	OrderBy: "deletedDateTime%20asc",
 	Select: "id,displayName,deletedDateTime",
@@ -15,12 +15,11 @@ requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderGetQueryParameters
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-directoryObjectId := "directoryObject-id"
-result, err := graphClient.Directory().DeletedItemsById(&directoryObjectId).Get(options)
+result, err := graphClient.Directory().DeletedItems().Group().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

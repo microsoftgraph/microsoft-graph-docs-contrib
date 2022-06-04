@@ -3,6 +3,60 @@
     {
       "ChangeList": [
         {
+          "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for [listing a user's chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) in application-only context.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3e821a97-3a08-496a-8b48-ba0d6f05c247",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-12T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "replies",
+          "ChangeType": "Addition",
+          "Description": "Added support for `expand` on the **replies** relationship when [listing channel messages](https://docs.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-1.0) that are replies.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "fef256b6-cd3f-4ee8-89c6-7063f7068cab",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-09T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3580c1e4-e1bb-4611-843c-42e851863c3f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "replies",
+          "ChangeType": "Addition",
+          "Description": "Added support for `expand` on the **replies** relationship when [listing channel messages](https://docs.microsoft.com/en-us/graph/api/channel-list-messages?view=graph-rest-1.0) that are replies.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "3580c1e4-e1bb-4611-843c-42e851863c3f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-09T13:04:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f251ad5c-eccc-40f2-a9d8-6ea05fe38e6a",
           "ApiChange": "Relationship",
           "ChangedApiName": "messages",
@@ -4915,16 +4969,16 @@
         "ChangeType": "Addition",
         "Description": "Added the `emailUser` value to the **teamworkUserIdentityType** enumeration..",
         "Target": "teamworkUserIdentityType"
-      }
-        ],
-        "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
-          "Cloud": "prd",
-          "Version": "v1.0",
-          "CreatedDateTime": "2022-04-18T20:34:40.595Z",
-          "WorkloadArea": "Teamwork",
-          "SubArea": ""
+        }
+      ],
+      "Id": "0b96fb40-df13-4bb3-8868-7d6198b0e22e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-18T20:34:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     },
-	{
+    {
       "ChangeList": [
         {
           "Id": "242cb3e4-ef8c-11eb-b6a8-8203ca0139f2",
@@ -4939,6 +4993,68 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-25T10:11:41.458Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1aa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-28T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added support for [subscribing to notifications](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) with resource data in delegated context for [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resources in a specified [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) or [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "e473f528-d700-4803-9985-6db1bde5c1ab",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-04-28T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **pinnedMessages** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "pinnedChatMessageInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [pinnedChatMessageInfo](https://docs.microsoft.com/en-us/graph/api/resources/pinnedChatMessageInfo?view=graph-rest-beta) resource and supported methods.",
+          "Target": "pinnedChatMessageInfo"
+        }
+      ],
+      "Id": "a3f15389-ea4f-4df2-84ef-7290824a28cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-04-26T00:34:47.4910041Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }
