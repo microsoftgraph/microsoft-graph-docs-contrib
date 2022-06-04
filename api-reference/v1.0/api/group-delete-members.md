@@ -35,7 +35,7 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 > [!IMPORTANT]
-> If the `/$ref` is not appended to the request, the user will be deleted from AAD in the case of having the appropriate permissions, otherwise an 403 Forbidden errors is returned. 
+> If `/$ref` is not appended to the request, the user will be deleted from Azure Active Directory (Azure AD) if the appropriate permissions are used; otherwise, a `403 Forbidden` error is returned. 
 
 ## Request headers
 
