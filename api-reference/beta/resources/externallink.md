@@ -3,7 +3,7 @@ title: "externalLink resource type"
 description: "A url that opens a OneNote page or notebook."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: onenote
+ms.prod: notes
 author: "jewan-microsoft"
 ---
 
