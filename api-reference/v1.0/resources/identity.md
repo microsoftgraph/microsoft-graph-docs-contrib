@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Identity
+title: Identity resource type
 ms.localizationpriority: medium
-description: "The Identity resource represents an identity of an actor."
-ms.prod: sites-and-lists
+description: "The identity resource represents an identity of an actor."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# Identity resource type
+# identity resource type
 
 Namespace: microsoft.graph
 
-The **Identity** resource represents an identity of an _actor_.
+The **identity** resource represents an identity of an _actor_.
 For example, an actor can be a user, device, or application.
 
 ## JSON representation
