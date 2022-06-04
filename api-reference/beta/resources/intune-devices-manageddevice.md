@@ -56,6 +56,7 @@ Devices that are managed or pre-enrolled through Intune
 |[disable action](../api/intune-devices-manageddevice-disable.md)|None|Not yet documented|
 |[reenable action](../api/intune-devices-manageddevice-reenable.md)|None|Not yet documented|
 |[moveDevicesToOU action](../api/intune-devices-manageddevice-movedevicestoou.md)|None|Not yet documented|
+|[removeDeviceFirmwareConfigurationInterfaceManagement action](../api/intune-devices-manageddevice-removedevicefirmwareconfigurationinterfacemanagement.md)|None|Not yet documented|
 |[getOemWarranty function](../api/intune-devices-manageddevice-getoemwarranty.md)|[oemWarranty](../resources/intune-devices-oemwarranty.md)|Not yet documented|
 
 ## Properties

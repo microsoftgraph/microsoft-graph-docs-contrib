@@ -1,5 +1,5 @@
 ---
-title: "Delete programControl"
+title: "Delete programControl (deprecated)"
 description: "In the Azure AD access reviews feature, delete a programControl object.  This unlinks an access review from a program."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# Delete programControl
+# Delete programControl (deprecated)
 
 Namespace: microsoft.graph
 
