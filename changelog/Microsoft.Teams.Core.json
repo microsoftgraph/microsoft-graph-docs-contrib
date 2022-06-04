@@ -5057,6 +5057,78 @@
       "CreatedDateTime": "2022-04-26T00:34:47.4910041Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true&tabs=http) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "2de8f3b5-35b7-48e5-bd25-7997f021cd4c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-04T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d970b2ad-9487-45ca-b0d1-63736ef14ab6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0) or [list](https://docs.microsoft.com/en-us/graph/api/subscription-list?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "d970b2ad-9487-45ca-b0d1-63736ef14ab6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-04T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "509f50b7-1745-44e4-9571-5995b23518ca",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "509f50b7-1745-44e4-9571-5995b23518ca",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-04T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3ed64bfd-33b1-43a9-b794-5e5cde9d8d36",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Enabled change notifications support to [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) a subscription for [teams and channel notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-team-and-channel?view=graph-rest-1.0), [team and channel membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-teammembership?view=graph-rest-1.0), [chat notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chat?view=graph-rest-1.0) and [chat membership notifications](https://docs.microsoft.com/en-us/graph/teams-changenotifications-chatmembership?view=graph-rest-1.0).",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "3ed64bfd-33b1-43a9-b794-5e5cde9d8d36",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-05-04T00:00:00",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
