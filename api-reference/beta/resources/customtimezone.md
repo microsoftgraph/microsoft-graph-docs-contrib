@@ -3,7 +3,7 @@ title: "customTimeZone resource type"
 description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: calendar
 author: "abheek-das"
 ---
 
@@ -17,7 +17,7 @@ Represents a time zone where the transition from standard to daylight saving tim
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property | Type	|Description|
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | The time offset of the time zone from Coordinated Universal Time (UTC). This value is in minutes. Time zones that are ahead of UTC have a positive offset; time zones that are behind UTC have a negative offset.|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Specifies when the time zone switches from standard time to daylight saving time. |
