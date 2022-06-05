@@ -139,7 +139,7 @@ The following table shows the properties that are required when you create the a
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
-|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
 |passwordExpirationDays|Int32|Indicates the amount of time that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for device password. Valid values 1 to 16|
@@ -191,6 +191,7 @@ The following table shows the properties that are required when you create the a
 |workProfilePasswordPreviousPasswordCountToBlock|Int32|Indicates the length of the work profile password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
+|workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 
 
 
@@ -204,7 +205,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 9658
+Content-length: 9706
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -452,7 +453,8 @@ Content-length: 9658
   "workProfilePasswordMinimumSymbolCharacters": 10,
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-  "workProfilePasswordRequiredType": "required"
+  "workProfilePasswordRequiredType": "required",
+  "workProfilePasswordRequireUnlock": "daily"
 }
 ```
 
@@ -461,7 +463,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 9830
+Content-Length: 9878
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -712,7 +714,8 @@ Content-Length: 9830
   "workProfilePasswordMinimumSymbolCharacters": 10,
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-  "workProfilePasswordRequiredType": "required"
+  "workProfilePasswordRequiredType": "required",
+  "workProfilePasswordRequireUnlock": "daily"
 }
 ```
 

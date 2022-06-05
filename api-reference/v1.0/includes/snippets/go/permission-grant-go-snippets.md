@@ -21,11 +21,8 @@ requestBody.SetRecipients( []DriveRecipient {
 requestBody.SetRoles( []String {
 	"read",
 }
-options := &msgraphsdk.GrantRequestBuilderPostOptions{
-	Body: requestBody,
-}
 sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(options)
+result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(requestBody)
 
 
 ```

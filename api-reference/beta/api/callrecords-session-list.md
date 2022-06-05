@@ -291,7 +291,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

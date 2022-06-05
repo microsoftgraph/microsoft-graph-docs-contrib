@@ -12,6 +12,9 @@ Namespace: microsoft.graph
 
 In PIM, retrieve the requests for role eligibilities for a particular principal. The principal can be the creator or approver of the **unifiedRoleEligibilityScheduleRequest** object, or they can be the target of the role eligibility.
 
+> [!NOTE]
+> This API doesn't return eligible role assignments through group memberships.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

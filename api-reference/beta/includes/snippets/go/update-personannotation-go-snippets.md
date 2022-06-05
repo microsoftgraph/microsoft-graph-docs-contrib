@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPersonAnnotation()
 allowedAudiences := "organization"
 requestBody.SetAllowedAudiences(&allowedAudiences)
-options := &msgraphsdk.PersonAnnotationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 personAnnotationId := "personAnnotation-id"
-graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Patch(options)
+graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Patch(requestBody)
 
 
 ```

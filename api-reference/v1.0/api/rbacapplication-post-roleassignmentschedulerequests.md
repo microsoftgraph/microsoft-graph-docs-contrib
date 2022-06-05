@@ -1,5 +1,5 @@
 ---
-title: "Create unifiedRoleAssignmentScheduleRequest"
+title: "Create roleAssignmentScheduleRequests"
 description: "In PIM, request for an active and persistent role assignment through the unifiedRoleAssignmentScheduleRequest object. Use this API to activate eligible roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create unifiedRoleAssignmentScheduleRequest
+# Create roleAssignmentScheduleRequests
 Namespace: microsoft.graph
 
 In PIM, carry out the following operations through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object:
@@ -42,6 +42,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
 You can specify the following properties when creating an **unifiedRoleAssignmentScheduleRequest**.
@@ -59,7 +60,6 @@ You can specify the following properties when creating an **unifiedRoleAssignmen
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role assignment request including details of the ticket number and ticket system. Optional.|
 
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object in the response body.
@@ -67,6 +67,8 @@ If successful, this method returns a `201 Created` response code and an [unified
 ## Examples
 
 ### Example 1: Admin assigning a directory role to a principal
+
+In the following request, the admin creates a request to assign a role identified by `fdd7a751-b60b-444a-984c-02652fe8fa1c` to a principal identified by ID `071cc716-8147-4397-a5ba-b2105951cc0b`. The scope of their role is all directory objects in the tenant and the assignment is permanent.
 
 #### Request
 

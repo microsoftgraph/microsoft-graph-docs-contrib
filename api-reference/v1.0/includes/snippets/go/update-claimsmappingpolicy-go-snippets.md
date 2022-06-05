@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewClaimsMappingPolicy()
 displayName := "UpdateClaimsPolicy"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ClaimsMappingPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 claimsMappingPolicyId := "claimsMappingPolicy-id"
-graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Patch(options)
+graphClient.Policies().ClaimsMappingPoliciesById(&claimsMappingPolicyId).Patch(requestBody)
 
 
 ```

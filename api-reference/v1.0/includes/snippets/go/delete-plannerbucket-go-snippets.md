@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerBucketRequestBuilderDeleteOptions{
-	H: headers,
+options := &msgraphsdk.PlannerBucketRequestBuilderDeleteRequestConfiguration{
+	Headers: headers,
 }
 plannerBucketId := "plannerBucket-id"
-graphClient.Planner().BucketsById(&plannerBucketId).Delete(options)
+graphClient.Planner().BucketsById(&plannerBucketId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

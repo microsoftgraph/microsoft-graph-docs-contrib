@@ -41,10 +41,7 @@ requestBody.SetAllowedValues( []AllowedValue {
 		"isActive": true,
 	}
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 
 ```

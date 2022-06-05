@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 reason := "busy"
 requestBody.SetReason(&reason)
-options := &msgraphsdk.RejectRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Reject(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Reject(call-id).Post(requestBody)
 
 
 ```
