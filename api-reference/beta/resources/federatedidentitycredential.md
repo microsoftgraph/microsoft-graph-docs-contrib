@@ -17,7 +17,6 @@ References an application's federated identity credentials. These federated iden
 
 Inherits from [entity](../resources/entity.md).
 
->**NOTE:** This resource is not available in [national cloud](/graph/deployments) deployments.
 
 ## Methods
 |Method|Return type|Description|
