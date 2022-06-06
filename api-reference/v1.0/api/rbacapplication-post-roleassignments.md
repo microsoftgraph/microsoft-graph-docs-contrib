@@ -160,7 +160,7 @@ Content-type: application/json
 
 #### Request
 
-The following example assigns a principal the User Administrator role over an administrative unit.
+The following example assigns the User Administrator role to a principal with an administrative unit scope.
 
 
 
