@@ -12,12 +12,13 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
-        expanded: true
+        expanded: false
         items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
+            displayName: API changes, API updates, Microsoft Graph API
       - name: Users you can reach
         items:
           - name: Overview
@@ -50,6 +51,8 @@ items:
             href: /graph/tutorials/python
           - name: TypeScript
             href: /graph/tutorials/typescript
+      - name: Quick start
+        href: https://developer.microsoft.com/graph/quick-start
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -159,8 +162,9 @@ items:
         href: compliance-concept-overview.md
       - name: Connecting external content
         items:
-          - name: Microsoft Graph connectors overview
+          - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
+            displayName: Microsoft Graph connectors
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -554,7 +558,7 @@ items:
         items:
           - name: Overview
             href: use-the-api.md
-            displayName: Microsoft Graph API, API, REST API
+            displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
           - name: Access data and methods
             href: traverse-the-graph.md
           - name: Paging
@@ -818,17 +822,22 @@ items:
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
       - name: Resources
-        expanded: true
+        expanded: false
         items:
           - name: Best practices
             href: best-practices-concept.md
+            displayName: Microsoft Graph, Best practices for working with Microsoft Graph
           - name: Known issues
             href: known-issues.md
+            displayName: Microsoft Graph, Known issues with Microsoft Graph
           - name: API changelog
             href: changelog.md
           - name: Errors
             href: errors.md
-      - name: v1.0 reference
+            displayName: Microsoft Graph error responses and resource types
+      - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-      - name: Beta reference
+        displayName: Microsoft Graph REST API v1.0 reference
+      - name: API beta reference
         href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
+        displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
