@@ -61,7 +61,7 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative units, or applications. For more information on appScope, see [appScope](../resources/appscope.md).
+In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure Active Directory (Azure AD) specified by **directoryScopeId**, or an application-specific scope specified by the **appScopeId**. Examples of Azure AD scopes are tenant (`/`), administrative unit, or application. For more information on appScope, see [appScope](../resources/appscope.md).
 
 The following table shows the properties that are required when you create a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
@@ -78,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment with a tenant-wide scope
+### Example 1: Create a role assignment with tenant scope
 
 #### Request
 
@@ -156,11 +156,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create a role assignment with an administrative unit scope
+### Example 2 : Create a role assignment with administrative unit scope
 
 #### Request
 
-The following example assigns the User Administrator role to a principal with an administrative unit scope.
+The following example assigns the User Administrator role to a principal with administrative unit scope.
 
 
 
@@ -234,7 +234,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3 : Create a role assignment with an application scope
+### Example 3 : Create a role assignment with application scope
 
 #### Request
 
