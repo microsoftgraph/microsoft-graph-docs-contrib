@@ -15,7 +15,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "dataSource",
 			"ChangeType": "Change",
-			"Description": "Added the [dataSource](https://docs.microsoft.com/en-us/graph/api/resources/security-datasource?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [dataSource](https://docs.microsoft.com/en-us/graph/api/resources/security-datasource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "dataSource"
 		  },
 		  {
@@ -23,7 +23,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "dataSourceContainer",
 			"ChangeType": "Change",
-			"Description": "Added the [dataSourceContainer](https://docs.microsoft.com/en-us/graph/api/resources/security-datasourcecontainer?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [dataSourceContainer](https://docs.microsoft.com/en-us/graph/api/resources/security-datasourcecontainer?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "dataSourceContainer"
 		  },
 		  {
@@ -31,7 +31,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryAddToReviewSetOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryAddToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryAddToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryAddToReviewSetOperation"
 		  },
 		  {
@@ -63,7 +63,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryEstimateOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryEstimateOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryEstimateOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryEstimateOperation"
 		  },
 		  {
@@ -87,7 +87,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryHoldOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryHoldOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryholdoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryHoldOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryholdoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryHoldOperation"
 		  },
 		  {
@@ -103,7 +103,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryIndexOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryIndexOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryindexoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryIndexOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryindexoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryIndexOperation"
 		  },
 		  {
@@ -119,7 +119,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryPurgeDataOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryPurgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverypurgedataoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryPurgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverypurgedataoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryPurgeDataOperation"
 		  },
 		  {
@@ -159,7 +159,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryTagOperation",
 			"ChangeType": "Change",
-			"Description": "Added the [ediscoveryTagOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverytagoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ediscoveryTagOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverytagoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryTagOperation"
 		  },
 		  {
@@ -167,7 +167,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "ocrSettings",
 			"ChangeType": "Change",
-			"Description": "Added the [ocrSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-ocrsettings?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [ocrSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-ocrsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ocrSettings"
 		  },
 		  {
@@ -175,7 +175,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "redundancyDetectionSettings",
 			"ChangeType": "Change",
-			"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-redundancydetectionsettings?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-redundancydetectionsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "redundancyDetectionSettings"
 		  },
 		  {
@@ -183,7 +183,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "siteSource",
 			"ChangeType": "Change",
-			"Description": "Added the [siteSource](https://docs.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [siteSource](https://docs.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "siteSource"
 		  },
 		  {
@@ -191,7 +191,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
 			"ChangeType": "Change",
-			"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
 		  {
@@ -199,7 +199,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "unifiedGroupSource",
 			"ChangeType": "Change",
-			"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "unifiedGroupSource"
 		  },
 		  {
@@ -207,7 +207,7 @@
 			"ApiChange": "Resource",
 			"ChangedApiName": "userSource",
 			"ChangeType": "Change",
-			"Description": "Added the [userSource](https://docs.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+			"Description": "Added the [userSource](https://docs.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "userSource"
 		  }
 		],
