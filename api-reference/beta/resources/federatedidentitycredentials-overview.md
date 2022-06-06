@@ -35,7 +35,6 @@ The [federatedIdentityCredential](federatedidentitycredential.md) resource repre
 
 The combination of **issuer** and **subject** must be unique on the app.  When the external software workload requests Microsoft identity platform to exchange the external token for an access token, the **issuer** and **subject** values of the federated identity credential are checked against the `issuer` and `subject` claims provided in the external token. If that validation check passes, Microsoft identity platform issues an access token to the external software workload.
 
-The federated identity credentials API is not available in [national cloud](/graph/deployments) deployments.
 
 ## Design considerations
 
