@@ -4,6 +4,7 @@ description: "workPosition resource type"
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: people
+ms.technology: microsoft-graph
 doc_type: "resourcePageType"
 ---
 

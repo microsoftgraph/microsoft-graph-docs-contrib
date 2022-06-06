@@ -4,6 +4,7 @@ description: "Specifies the maximum and minimum sizes (in kilobytes) that an inc
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "abheek-das"
 ---
 

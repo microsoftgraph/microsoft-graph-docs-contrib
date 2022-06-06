@@ -4,6 +4,7 @@ description: "Represents the localized description used to describe a term in th
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: sharepoint
+ms.technology: microsoft-graph
 doc_type: resourcePageType
 ---
 

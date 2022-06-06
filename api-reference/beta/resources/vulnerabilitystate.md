@@ -4,6 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: "preetikr"
 ---
 
