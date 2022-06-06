@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,18 +91,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-      "id": "String",
-      "temporaryAccessPass": "String",
-      "createdDateTime": "String (timestamp)",
-      "startDateTime": "String (timestamp)",
-      "lifetimeInMinutes": "Integer",
-      "isUsableOnce": "Boolean",
-      "isUsable": "Boolean",
-      "methodUsabilityReason": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
+     "value": [
+        {
+            "id": "bdaede67-61e0-4349-9347-d2d6afd84009",
+            "temporaryAccessPass": null,
+            "createdDateTime": "2022-06-06T16:43:04.6438213Z",
+            "startDateTime": "2022-06-06T16:48:03.027Z",
+            "lifetimeInMinutes": 60,
+            "isUsableOnce": false,
+            "isUsable": false,
+            "methodUsabilityReason": "NotYetValid"
+        }
+    ]
 }
 ```

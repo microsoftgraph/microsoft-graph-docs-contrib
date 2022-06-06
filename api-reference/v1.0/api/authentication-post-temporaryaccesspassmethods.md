@@ -52,8 +52,8 @@ The following table describes optional properties that can be used when creating
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isUsableOnce|Boolean|Optional. Determines if the pass is limited to a one-time use. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within its **lifetimeInMinutes** setting. A multi-use Temporary Access Pass (`isUsableOnce = false`), can only be created and used for sign-in if it is allowed by the  [Temporary Access Pass authentication method policy](temporaryaccesspassauthenticationmethodconfiguration.md).|
-|lifetimeInMinutes|Int32|Optional. The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Must be between 10 and 43200 (equivalent to 30 days). If not specified, the **defaultLifetimeInMinutes** setting in the [Temporary Access Pass authentication method policy](temporaryaccesspassauthenticationmethodconfiguration.md) is applied. |
+|isUsableOnce|Boolean|Optional. Determines if the pass is limited to a one-time use. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within its **lifetimeInMinutes** setting. A multi-use Temporary Access Pass (`isUsableOnce = false`), can only be created and used for sign-in if it is allowed by the  [Temporary Access Pass authentication method policy](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).|
+|lifetimeInMinutes|Int32|Optional. The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Must be between 10 and 43200 (equivalent to 30 days). If not specified, the **defaultLifetimeInMinutes** setting in the [Temporary Access Pass authentication method policy](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) is applied. |
 |startDateTime|DateTimeOffset|Optional. The date and time when the temporaryAccessPass becomes available to use. If not specified, the Temporary Access Pass is available to use immediately after it's created.| 
 
 ## Response
@@ -70,9 +70,8 @@ If successful, this method returns a `201 Created` response code and a [temporar
 -->
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
-```
+Content-Type: application/json
 
-``` http
 {
     "startDateTime": "2022-06-05T00:00:00.000Z",
     "lifetimeInMinutes": 60,
@@ -81,7 +80,7 @@ POST https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
