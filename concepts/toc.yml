@@ -18,7 +18,7 @@ items:
             href: whats-new-overview.md
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
-            displayName: API changes, API updates, Microsoft Graph API
+            displayName: API changes, API updates, Microsoft Graph API, REST API, what's new, REST API updates
       - name: Users you can reach
         items:
           - name: Overview
@@ -94,6 +94,7 @@ items:
             displayName: Microsoft Graph Data Connect, access data, bulk data           
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
+            displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
           - name: Policies and billing
@@ -104,6 +105,7 @@ items:
             href: data-connect-pam.md
           - name: Frequently asked questions
             href: data-connect-faq.md
+            displayName: Microsoft Graph Data Connect
       - name: Calendar
         items:
           - name: Overview
@@ -834,7 +836,7 @@ items:
             href: changelog.md
           - name: Errors
             href: errors.md
-            displayName: Microsoft Graph error responses and resource types
+            displayName: Microsoft Graph error responses and error resource types
       - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
         displayName: Microsoft Graph REST API v1.0 reference
