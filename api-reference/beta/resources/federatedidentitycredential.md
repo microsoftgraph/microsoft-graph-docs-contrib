@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| audiences | String collection | Lists the audiences that can appear in the external token. This field is mandatory, and defaults to "api://AzureADTokenExchange". It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required. |
+| audiences | String collection | Lists the audiences that can appear in the external token. This field is mandatory, and for Azure AD you should set its value to `api://AzureADTokenExchange`. It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required. |
 | description | String | The un-validated, user-provided description of the federated identity credential. Optional.  |
 | id| String | The unique identifier for the federated identity. Required. Read-only.  |
 | issuer | String | The URL of the external identity provider and must match the `issuer` claim of the external token being exchanged. The combination of the values of **issuer** and **subject** must be unique on the app. Required. |
