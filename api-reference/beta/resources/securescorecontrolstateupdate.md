@@ -4,7 +4,6 @@ description: "This resource contains history of control states updated by user (
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "preetikr"
 ---
 

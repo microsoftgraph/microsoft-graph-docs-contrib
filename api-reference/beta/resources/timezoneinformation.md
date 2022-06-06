@@ -4,7 +4,6 @@ description: "Represents a time zone. The supported format is Windows, and Inter
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "abheek-das"
 ---
 

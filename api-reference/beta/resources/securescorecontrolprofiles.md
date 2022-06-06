@@ -4,7 +4,6 @@ description: "Represents a tenant's secure score per control data. By default, i
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "preetikr"
 ---
 

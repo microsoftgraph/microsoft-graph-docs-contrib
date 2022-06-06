@@ -6,7 +6,6 @@ ms.date: 09/10/2017
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 ---
 # Shared resource type
 
