@@ -6,7 +6,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "caseOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-caseoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "caseOperation"
 		  },
@@ -14,7 +14,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "dataSource",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [dataSource](https://docs.microsoft.com/en-us/graph/api/resources/security-datasource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "dataSource"
 		  },
@@ -22,7 +22,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "dataSourceContainer",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [dataSourceContainer](https://docs.microsoft.com/en-us/graph/api/resources/security-datasourcecontainer?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "dataSourceContainer"
 		  },
@@ -30,7 +30,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryAddToReviewSetOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryAddToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryAddToReviewSetOperation"
 		  },
@@ -38,7 +38,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryCase",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryCase](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverycase?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryCase"
 		  },
@@ -46,7 +46,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryCaseSettings",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryCaseSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverycasesettings?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryCaseSettings"
 		  },
@@ -54,7 +54,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryCustodian",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryCustodian](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverycustodian?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryCustodian"
 		  },
@@ -62,7 +62,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryEstimateOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryEstimateOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryEstimateOperation"
 		  },
@@ -70,7 +70,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryExportOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryexportoperation?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryExportOperation"
 		  },
@@ -78,7 +78,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryFile",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryFile](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryfile?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryFile"
 		  },
@@ -86,7 +86,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryHoldOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryHoldOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryholdoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryHoldOperation"
 		  },
@@ -94,7 +94,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryHoldPolicy",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryHoldPolicy](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryholdpolicy?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryHoldPolicy"
 		  },
@@ -102,7 +102,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryIndexOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryIndexOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryindexoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryIndexOperation"
 		  },
@@ -110,7 +110,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryNoncustodialDataSource",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryNoncustodialDataSource](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverynoncustodialdatasource?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryNoncustodialDataSource"
 		  },
@@ -118,7 +118,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryPurgeDataOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryPurgeDataOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverypurgedataoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryPurgeDataOperation"
 		  },
@@ -126,7 +126,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryReviewSet",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryReviewSet"
 		  },
@@ -134,7 +134,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryReviewSetQuery",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryReviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewsetquery?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryReviewSetQuery"
 		  },
@@ -142,7 +142,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryReviewTag",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryReviewTag](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewtag?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryReviewTag"
 		  },
@@ -150,7 +150,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoverySearch",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoverySearch](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverysearch?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoverySearch"
 		  },
@@ -158,7 +158,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ediscoveryTagOperation",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ediscoveryTagOperation](https://docs.microsoft.com/en-us/graph/api/resources/security-ediscoverytagoperation?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ediscoveryTagOperation"
 		  },
@@ -166,7 +166,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "ocrSettings",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [ocrSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-ocrsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "ocrSettings"
 		  },
@@ -174,7 +174,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "redundancyDetectionSettings",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-redundancydetectionsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "redundancyDetectionSettings"
 		  },
@@ -182,7 +182,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "siteSource",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [siteSource](https://docs.microsoft.com/en-us/graph/api/resources/security-sitesource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "siteSource"
 		  },
@@ -190,7 +190,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "topicModelingSettings",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/en-us/graph/api/resources/security-topicnodelingsettings?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "topicModelingSettings"
 		  },
@@ -198,7 +198,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "unifiedGroupSource",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/en-us/graph/api/resources/security-unifiedgroupsource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "unifiedGroupSource"
 		  },
@@ -206,7 +206,7 @@
 			"Id": "f45d27ce-33f5-4113-bbec-89b8e4cb9cf8",
 			"ApiChange": "Resource",
 			"ChangedApiName": "userSource",
-			"ChangeType": "Change",
+			"ChangeType": "Addition",
 			"Description": "Added the [userSource](https://docs.microsoft.com/en-us/graph/api/resources/security-usersource?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
 			"Target": "userSource"
 		  }
