@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+> [!IMPORTANT]
+> If `/$ref` is not appended to the request, the user will be deleted from Azure Active Directory (Azure AD) if the appropriate permissions are used; otherwise, a `403 Forbidden` error is returned. 
 
 ## Request headers
 
