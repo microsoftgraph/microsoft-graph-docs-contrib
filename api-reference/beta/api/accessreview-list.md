@@ -1,5 +1,5 @@
 ---
-title: "List accessReviews"
+title: "List accessReviews (deprecated)"
 description: "Retrieve accessReview objects for a businessFlowTemplate."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReviews
+# List accessReviews (deprecated)
 
 Namespace: microsoft.graph
 

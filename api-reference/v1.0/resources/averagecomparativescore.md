@@ -3,7 +3,7 @@ title: "averageComparativeScore resource type"
 description: "Contains various different scores based on different scopes."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 

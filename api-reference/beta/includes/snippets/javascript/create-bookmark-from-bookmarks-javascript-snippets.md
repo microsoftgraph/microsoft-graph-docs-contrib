@@ -24,13 +24,11 @@ const bookmark = {
   platforms: ['windows'],
   targetedVariations: [
     {
-      languageTag: 'es-ES',
+      languageTag: 'es-es',
       displayName: 'Sitio de instalación Contoso',
       description: 'Pruebe o compre Contoso hogar o negocios y vea la información del producto'
     }
   ],
-  groupIds: ['groupId'],
-  powerAppIds: ['powerAppId'],
   state: 'published'
 };
 

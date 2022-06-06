@@ -26,6 +26,9 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 NSMutableArray *requestedModalitiesList = [[NSMutableArray alloc] init];
 [requestedModalitiesList addObject: @"audio"];
 [call setRequestedModalities:requestedModalitiesList];
+MSGraphCallOptions *callOptions = [[MSGraphCallOptions alloc] init];
+[callOptions setIsContentSharingNotificationEnabled: true];
+[call setCallOptions:callOptions];
 MSGraphMediaConfig *mediaConfig = [[MSGraphMediaConfig alloc] init];
 [call setMediaConfig:mediaConfig];
 

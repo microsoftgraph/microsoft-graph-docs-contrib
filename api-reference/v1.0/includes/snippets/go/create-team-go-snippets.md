@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.TeamRequestBuilderPutOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-graphClient.GroupsById(&groupId).Team().Put(options)
+graphClient.GroupsById(&groupId).Team().Put(requestBody)
 
 
 ```

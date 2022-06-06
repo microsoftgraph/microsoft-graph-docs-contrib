@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOutlookTaskFolder()
 name := "Charity work"
 requestBody.SetName(&name)
-options := &msgraphsdk.OutlookTaskFolderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 outlookTaskFolderId := "outlookTaskFolder-id"
-graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(options)
+graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(requestBody)
 
 
 ```

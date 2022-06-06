@@ -1,5 +1,5 @@
 ---
-title: "Update accessReview"
+title: "Update accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to change one or more of its properties."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Update accessReview
+# Update accessReview (deprecated)
 
 Namespace: microsoft.graph
 

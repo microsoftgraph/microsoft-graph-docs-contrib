@@ -15,12 +15,11 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"OData-Version": "4.01"
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```
