@@ -10338,10 +10338,6 @@ items:
             href: api/manageddevice-restorecloudpc.md
           - name: Set review status
             href: api/manageddevice-setcloudpcreviewstatus.md
-          - name: Get review status
-            href: api/manageddevice-getcloudpcreviewstatus.md
-          - name: Bulk set review status
-            href: api/manageddevice-bulksetcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
           - name: List for user 
