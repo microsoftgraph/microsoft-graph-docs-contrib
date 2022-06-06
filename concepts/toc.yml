@@ -86,9 +86,9 @@ items:
             href: application-proxy-configure-api.md
       - name: Accessing data at scale
         items:
-          - name: Overview of Data Connect
+          - name: Data Connect overview
             href: data-connect-concept-overview.md
-            displayName: Microsoft Graph Data Connect            
+            displayName: Microsoft Graph Data Connect, access data, bulk data           
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
           - name: Datasets, regions, and sinks
@@ -159,7 +159,7 @@ items:
         href: compliance-concept-overview.md
       - name: Connecting external content
         items:
-          - name: Overview of Microsoft Graph connectors
+          - name: Microsoft Graph connectors overview
             href: connecting-external-content-connectors-overview.md
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
@@ -280,24 +280,26 @@ items:
             items:
               - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
-                displayName: directory
+                displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
+                displayName: identity, authenticate, sign-in, sign in, signin
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
-                displayName: governance
+                displayName: governance, identity
               - name: Review access to your resources
                 items:
-                  - name: Overview of the access reviews API
+                  - name: Access reviews API overview
                     href: accessreviews-overview.md
+                    displayName: identity
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
@@ -369,12 +371,11 @@ items:
         items:
           - name: Overview
             href: notifications-concept-overview.md
-            displayName: notification, notifications
+            displayName: deprecated
           - name: Get started
             items:
               - name: Get started overview
                 href: notifications-integration-e2e-overview.md
-                displayName: notification, notifications
               - name: App registration
                 href: notifications-integration-app-registration.md
               - name: Cross-device onboarding
@@ -532,7 +533,7 @@ items:
         items:
           - name: Overview
             href: auth/index.yml
-            displayName: authentication, authorization
+            displayName: authentication, authorization, authenticate, authorize
           - name: Basics
             href: auth/auth-concepts.md
           - name: Register your app
@@ -553,7 +554,7 @@ items:
         items:
           - name: Overview
             href: use-the-api.md
-            displayName: Microsoft Graph API
+            displayName: Microsoft Graph API, API, REST API
           - name: Access data and methods
             href: traverse-the-graph.md
           - name: Paging
@@ -577,9 +578,8 @@ items:
               - name: Change notifications overview
                 href: webhooks.md
                 displayName: change notifications, WebHooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-              - name: Tutorial
+              - name: Change notifications tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-                displayName: change notification
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
@@ -590,7 +590,7 @@ items:
                 href: universal-print-webhook-notifications.md
               - name: Change notifications for Microsoft Teams
                 items:
-                  - name: Microsoft Teams overview
+                  - name: Change notifications for Microsoft Teams resources
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
@@ -673,11 +673,12 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
+                displayName: migrate, Azure AD Graph
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
             items:
-              - name: Migrate Exchange Web Services apps
+              - name: Migrate EWS apps
                 href: migrate-exchange-web-services-overview.md
                 displayName: Migration, Exchange Web Services, EWS, migrate
               - name: Authentication
@@ -691,7 +692,7 @@ items:
             displayName: SDK, SDKs, Microsoft Graph SDK
           - name: Install an SDK
             href: sdks/sdk-installation.md
-            displayName: install SDK, install SDKs
+            displayName: install SDK, install SDKs, installation
           - name: Create a client
             href: sdks/create-client.md
           - name: Customize a client
@@ -716,7 +717,7 @@ items:
                 href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
                 href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-              - name: Navigate the SDK
+              - name: Navigate the PowerShell SDK
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
@@ -724,7 +725,7 @@ items:
         items:
           - name: Overview
             href: toolkit/overview.md
-            displayName: Microsoft Graph Toolkit
+            displayName: Microsoft Graph Toolkit, toolkit
           - name: Get started
             items:
               - name: Get started overview
