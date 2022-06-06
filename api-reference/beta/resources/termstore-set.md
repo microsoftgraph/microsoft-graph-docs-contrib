@@ -4,7 +4,6 @@ description: "Represents a set in a term store."
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: sharepoint
-ms.technology: microsoft-graph
 doc_type: resourcePageType
 ---
 

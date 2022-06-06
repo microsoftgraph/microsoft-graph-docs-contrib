@@ -4,7 +4,6 @@ description: "The basic representation of a time zone."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "abheek-das"
 ---
 

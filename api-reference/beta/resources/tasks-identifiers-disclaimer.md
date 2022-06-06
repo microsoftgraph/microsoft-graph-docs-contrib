@@ -4,7 +4,6 @@ description: "Identifiers for objects in Tasks are service-generated string valu
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 author: "TarkanSevilmis"
 ---
 

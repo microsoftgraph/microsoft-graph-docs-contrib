@@ -5,7 +5,6 @@ doc_type: "resourcePageType"
 description: "Represents a group used in a term store."
 ms.localizationpriority: medium
 ms.prod: cloud-pc
-ms.technology: microsoft-graph
 ---
 
 # Group resource type
