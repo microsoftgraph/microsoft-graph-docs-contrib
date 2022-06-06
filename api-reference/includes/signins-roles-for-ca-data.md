@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 <!-- markdownlint-disable MD041-->
 
 ### Viewing applied conditional access (CA) policies in sign-ins
-The applied CA policies listed in **appliedConditionalAccessPolicies** property are only available to users and apps with roles that allow them to read [conditional access data](../resources/appliedconditionalaccesspolicy.md). If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the **appliedConditionalAccessPolicies** property in the response will be omitted. The following Azure AD roles grant users permissions to view conditional access data:
+The applied CA policies listed in **appliedConditionalAccessPolicies** property are only available to users and apps with roles that allow them to read [conditional access data](/graph/api/resources/appliedconditionalaccesspolicy). If a user or app has permissions to read sign-in logs but not permission to read conditional access data, the **appliedConditionalAccessPolicies** property in the response will be omitted. The following Azure AD roles grant users permissions to view conditional access data:
 
 + Global Administrator
 + Global Reader
@@ -16,7 +16,7 @@ The applied CA policies listed in **appliedConditionalAccessPolicies** property 
 + Security Reader
 + Conditional Access Administrator
 
-Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md) objects in the sign-in logs: 
+Applications must have at least one of the following permissions to see [appliedConditionalAccessPolicy](/graph/api/resources/appliedconditionalaccesspolicy) objects in the sign-in logs: 
 
 + Policy.Read.All
 + Policy.ReadWrite.ConditionalAccess
