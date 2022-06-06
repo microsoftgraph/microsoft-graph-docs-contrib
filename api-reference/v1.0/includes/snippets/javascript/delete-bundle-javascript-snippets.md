@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 await client.api('/drive/items/{bundle-id}')
-	.version('beta')
 	.delete();
 
 ```

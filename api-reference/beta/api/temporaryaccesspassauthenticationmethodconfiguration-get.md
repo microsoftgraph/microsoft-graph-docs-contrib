@@ -70,7 +70,6 @@ Content-type: application/json
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
     "isUsableOnce": false,
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

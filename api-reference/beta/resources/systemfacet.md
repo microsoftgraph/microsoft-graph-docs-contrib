@@ -1,22 +1,21 @@
 ---
 author: daspek
-description: <descripton>
-ms.date: 09/12/2017
+description: The **system** facet indicates that the object is managed by the system for its own operation.
 title: SystemFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-pc
 ---
-# System facet
+# system facet
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **System** facet indicates that the object is managed by the system for its own operation.
-Most apps should ignore items that have a System facet.
+The **system** facet indicates that the object is managed by the system for its own operation.
+Most apps should ignore items that have a system facet.
 
-**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
+>**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 
 ## JSON representation
 

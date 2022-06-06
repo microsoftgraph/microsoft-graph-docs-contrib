@@ -12,13 +12,10 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"Color": "Fuchsia",
 	"Quantity": ,
 }
-options := &msgraphsdk.FieldsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(options)
+graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).Fields().Patch(requestBody)
 
 
 ```

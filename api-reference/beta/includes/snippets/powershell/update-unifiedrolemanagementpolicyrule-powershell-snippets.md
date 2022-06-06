@@ -7,9 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule"
+	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+	Id = "Expiration_EndUser_Assignment"
+	IsExpirationRequired = $true
+	MaximumDuration = "PT1H45M"
 	Target = @{
 		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+		Caller = "EndUser"
+		Operations = @(
+			"All"
+		)
+		Level = "Assignment"
+		InheritableSettings = @(
+		)
+		EnforcedSettings = @(
+		)
 	}
 }
 

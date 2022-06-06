@@ -26,10 +26,7 @@ apiConnectorConfiguration.SetPostAttributeCollection(postAttributeCollection)
 postAttributeCollection.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "{apiConnectorId}",
 }
-options := &msgraphsdk.B2cUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().B2cUserFlows().Post(options)
+result, err := graphClient.Identity().B2cUserFlows().Post(requestBody)
 
 
 ```

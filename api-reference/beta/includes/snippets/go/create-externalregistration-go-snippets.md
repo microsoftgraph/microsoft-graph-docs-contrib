@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.externalMeetingRegistration",
 	"allowedRegistrant": "everyone",
 }
-options := &msgraphsdk.RegistrationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(requestBody)
 
 
 ```

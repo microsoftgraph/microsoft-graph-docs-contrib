@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 414
+Content-Length: 451
 
 {
   "value": [
@@ -72,7 +72,8 @@ Content-Length: 414
       "manufacturer": "Manufacturer value",
       "averageMaxCapacityPercentage": 12,
       "averageEstimatedRuntimeInMinutes": 0,
-      "averageBatteryAgeInDays": 7
+      "averageBatteryAgeInDays": 7,
+      "modelBatteryHealthScore": 7
     }
   ]
 }

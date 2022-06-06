@@ -12,12 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/identity/identityProviders/B2X_1_Test",
 	"@odata.type": "#microsoft.graph.identityProvider",
 }
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProvidersById(&identityProviderBaseId).Patch(options)
+graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProviders().$ref().Patch(requestBody)
 
 
 ```

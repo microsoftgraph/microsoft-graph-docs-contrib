@@ -26,11 +26,8 @@ originId := "https://microsoft.sharepoint.com/portals/Community"
 accessPackageResourceScope.SetOriginId(&originId)
 originSystem := "SharePointOnline"
 accessPackageResourceScope.SetOriginSystem(&originSystem)
-options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(requestBody)
 
 
 ```

@@ -592,6 +592,21 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
 ### clientCredentialType values 
 
 
@@ -928,6 +943,15 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -3001,16 +3025,6 @@ Possible values for user account types (group membership), per Windows definitio
 |securityGroup|
 |unknownFutureValue|
 
-### delegatedAdminRelationshipOperationStatus values 
-
-|Member|
-|:---|
-|notStarted|
-|running|
-|complete|
-|failed|
-|unknownFutureValue|
-
 ### delegatedAdminRelationshipOperationType values 
 
 |Member|
@@ -3032,7 +3046,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |created|
 |pending|
-|complete|
+|succeeded|
 |failed|
 |unknownFutureValue|
 

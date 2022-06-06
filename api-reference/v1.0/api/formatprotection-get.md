@@ -3,7 +3,7 @@ title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
 ms.localizationpriority: medium
 author: "ruoyingl"
-ms.prod: ""
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
 ---
 
