@@ -18,7 +18,6 @@ Represents detailed information about work positions associated with a user's [p
 
 This resource type inherits from [itemFacet](itemfacet.md).
 
-## Methods
 
 ## Methods
 |Method|Return type|Description|
