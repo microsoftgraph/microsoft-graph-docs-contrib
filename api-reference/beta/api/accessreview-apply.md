@@ -1,5 +1,5 @@
 ---
-title: "Apply accessReview"
+title: "Apply accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, apply the decisions of a completed accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  "
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Apply accessReview
+# Apply accessReview (deprecated)
 
 Namespace: microsoft.graph
 

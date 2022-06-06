@@ -34,6 +34,9 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /groups/{id}/members/{id}/$ref
 ```
 
+> [!IMPORTANT]
+> If `/$ref` is not appended to the request, the user will be deleted from Azure Active Directory (Azure AD) if the appropriate permissions are used; otherwise, a `403 Forbidden` error is returned. 
+
 ## Request headers
 
 | Name          | Description               |
@@ -83,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-obj
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

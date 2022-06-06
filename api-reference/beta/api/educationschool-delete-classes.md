@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code and a response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ---
 
 
-##### Response
+### Response
 The following is an example of the response. 
 
 <!-- {

@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}",
 }
 deviceId := "device-id"
-directoryObjectId := "directoryObject-id"
-graphClient.DevicesById(&deviceId).RegisteredOwnersById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.DevicesById(&deviceId).RegisteredOwners().$ref().Post(requestBody)
 
 
 ```

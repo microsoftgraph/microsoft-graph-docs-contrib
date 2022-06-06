@@ -4661,13 +4661,13 @@ items:
             href: api/administrativeunit-get-members.md
           - name: Remove a member
             href: api/administrativeunit-delete-members.md
-          - name: Add a scoped-role administrator
+          - name: Assign a role with scope
             href: api/administrativeunit-post-scopedrolemembers.md
-          - name: List scoped-role administrators
+          - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get a scoped-role administrator
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove a scoped-role administrator
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
@@ -4725,9 +4725,9 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device memberships
             href: api/device-list-memberof.md
-          - name: List device transitive groups
+          - name: List device transitive memberships
             href: api/device-list-transitivememberof.md
           - name: List registered owners
             href: api/device-list-registeredowners.md
@@ -6627,6 +6627,8 @@ items:
           href: api/plannerplan-list-buckets.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -7207,6 +7209,19 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Checklist item
+        href: resources/checklistitem.md
+        items:
+        - name: List
+          href: api/todotask-list-checklistitems.md
+        - name: Create
+          href: api/todotask-post-checklistitems.md
+        - name: Get
+          href: api/checklistitem-get.md
+        - name: Update
+          href: api/checklistitem-update.md
+        - name: Delete
+          href: api/checklistitem-delete.md
       - name: Linked resource
         href: resources/linkedresource.md
         items:

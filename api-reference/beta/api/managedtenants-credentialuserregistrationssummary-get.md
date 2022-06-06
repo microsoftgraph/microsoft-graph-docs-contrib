@@ -102,6 +102,7 @@ Content-Type: application/json
     "mfaAndSsprCapableUserCount": 0,
     "ssprEnabledUserCount": 1,
     "mfaRegisteredUserCount": 0,
+    "mfaExcludedUserCount": 2,
     "ssprRegisteredUserCount": 0,
     "totalUserCount": 7,
     "securityDefaultsEnabled": false,

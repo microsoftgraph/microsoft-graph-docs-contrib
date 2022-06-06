@@ -13,8 +13,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.identityProvider",
 }
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
+graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserFlowIdentityProviders().$ref().Patch(requestBody)
 
 
 ```
