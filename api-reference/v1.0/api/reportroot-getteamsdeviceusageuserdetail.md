@@ -71,14 +71,14 @@ The CSV file has the following headers for columns:
 - Used Mac
 - Used Android Phone
 - Used Windows
-- Used  Chrome OS
+- Used Chrome OS
 - Used Linux
 - Is Licensed
 - Report Period
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 ```
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 
