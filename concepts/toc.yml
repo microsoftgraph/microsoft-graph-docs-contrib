@@ -105,7 +105,7 @@ items:
             href: data-connect-pam.md
           - name: Frequently asked questions
             href: data-connect-faq.md
-            displayName: Microsoft Graph Data Connect
+            displayName: Microsoft Graph Data Connect, FAQ
       - name: Calendar
         items:
           - name: Overview
@@ -679,7 +679,7 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Migration FAQ
                 href: migrate-azure-ad-graph-faq.md
-                displayName: migrate, Azure AD Graph
+                displayName: migrate, Azure AD Graph, frequently asked questions
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
