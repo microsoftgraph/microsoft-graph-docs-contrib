@@ -45,7 +45,7 @@ POST /domains/{id}/promote
 
 ## Response
 
-If successful, this method returns `200 OK` response code with a boolean value of `true`.
+If successful, this method returns `200 OK`.
 
 ## Example
 
@@ -68,7 +68,5 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-
-true
 ```
 
