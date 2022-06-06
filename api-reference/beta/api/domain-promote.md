@@ -45,7 +45,7 @@ POST /domains/{id}/promote
 
 ## Response
 
-If successful, this method returns `200 OK`.
+If successful, this call returns a `200 OK` response and a Boolean value that specifies the publishing status of the content type.
 
 ## Example
 
@@ -63,10 +63,16 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 
 <!-- {
   "blockType": "response",
-  "truncated": true
-} -->
+  "truncated": true,
+  "@odata.type": "string"
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: text/plain
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
+    "value": true
+}
 ```
-
