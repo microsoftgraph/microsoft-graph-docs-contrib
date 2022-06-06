@@ -71,6 +71,7 @@ POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.Boolean",
     "value": true
