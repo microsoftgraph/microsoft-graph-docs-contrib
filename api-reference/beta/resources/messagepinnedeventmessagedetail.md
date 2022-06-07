@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about a pinned chat message. This message is generated when a chat message is pinned.
+Represents the details of an event message about a pinned [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true). This message is generated when a chat message is pinned.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
@@ -43,4 +43,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
+- [Example response for an event message about a pinned chat message](/graph/system-messages/#pin-message)
 - For more information about other types of events, see [System messages](/graph/system-messages).
