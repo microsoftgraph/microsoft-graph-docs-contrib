@@ -29,6 +29,7 @@ The people api returns the following set of properties:
 |   officeLocation | String |
 |   personType | String |
 |   userPrincipalName | String |
+|   additionalOfficeLocation | String |
 
 ## Person types
 The People API supports several people types and subtypes that users can ask for, see the table below.
@@ -95,7 +96,7 @@ Note: the default returned fields are only a subset of all the properties.
 
 ### Example: Specifying fields to return
 ```
-"Fields": ["Id", "DisplayName", "EmailAddresses", "UserPrincipalName", "ExternalDirectoryObjectId"]  
+"Fields": ["DisplayName", "EmailAddresses", "phones"]  
 ```
 
 ## Filter
