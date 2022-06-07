@@ -54,9 +54,75 @@
 	  "Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
 	  "Cloud": "prd",
 	  "Version": "v1.0",
-	  "CreatedDateTime": "2022-05-23T06:29:50.0042215Z",
+	  "CreatedDateTime": "2022-06-06T06:29:50.0042215Z",
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, and **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Tenant Display Name**, **Shared Channel Tenant Display Names**, **Post Messages**, **Reply Messages**, **Urgent Messages**, **Meetings Organized Count**, **Meetings Attended Count**, **Ad Hoc Meetings Organized Count**, **Ad Hoc Meetings Attended Count**, **Scheduled One-time Meetings Organized Count**, **Scheduled One-time Meetings Attended Count**, **Scheduled Recurring Meetings Organized Count**, **Scheduled Recurring Meetings Attended Count**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Audio Duration In Seconds**, **Video Duration In Seconds**, **Screen Share Duration In Seconds**, and **Is Licensed** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Used Chrome OS**, **Used Linux**, and **Is Licensed** columns to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 }
+	  ],
+		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-05-09T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
 	},
 	{
 		"ChangeList": [
