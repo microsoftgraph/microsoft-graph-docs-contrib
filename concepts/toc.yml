@@ -597,7 +597,7 @@ items:
                 href: universal-print-webhook-notifications.md
               - name: Change notifications for Microsoft Teams resources
                 items:
-                  - name: Types and payloads
+                  - name: Notification types and payloads
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
