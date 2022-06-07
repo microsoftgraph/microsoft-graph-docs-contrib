@@ -1,0 +1,63 @@
+---
+title: "retentionDuration resource type"
+description: "Represents how long content will be retained before it can be deleted"
+author: "sseth"
+ms.localizationpriority: medium
+ms.prod: "compliance"
+doc_type: resourcePageType
+---
+
+# retentionDuration resource type
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents how long a item will be retained before it can be deleted. This is an abstract type. 'retentionDurationForever' and 'retnetionDurationInDays' are the two resourceTypes that inherit from retentionDuration.
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None.
+
+## JSON representation for retentionDuration
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.retentionDuration"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.retentionDuration"
+}
+```
+## JSON representation for retentionDurationForever
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.retentionDurationForever"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.retentionDurationForever"
+}
+```
+
+## JSON representation for retentionDurarionInDays
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.retentionDurationInDays",
+  "days": "Integer"
+}
+```
+

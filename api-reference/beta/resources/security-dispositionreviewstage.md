@@ -13,13 +13,25 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type can be used to retrieve details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
+For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type provides details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List dispositionReviewStages](../api/security-retentionlabel-list-dispositionreviewstages.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Get a list of the [dispositionReviewStage](../resources/security-dispositionreviewstage.md) objects and their properties.|
+|[Create dispositionReviewStage](../api/security-retentionlabel-post-dispositionreviewstages.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Create a new [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Get dispositionReviewStage](../api/security-dispositionreviewstage-get.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Read the properties and relationships of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Update dispositionReviewStage](../api/security-dispositionreviewstage-update.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Update the properties of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Delete dispositionReviewStage](../api/security-retentionlabel-delete-dispositionreviewstages.md)|None|Deletes a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reviewers|String collection|A collection of reviewers at each stage|
-|stageName|String|Unique name for each stage|
+|id|String|Unique ID for each stage|
+|name|String|Name representing each stage within a collection|
+|reviewersEmailAddresses|String collection|A collection of reviewers at each stage|
+|stageNumber|Int32|Execution sequence number for each stage|
+
 
 ## Relationships
 None.
@@ -28,16 +40,20 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.dispositionReviewStage"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.security.dispositionReviewStage",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.dispositionReviewStage",
-  "stageName": "String",
-  "reviewers": [
+  "id": "String (identifier)",
+  "stageNumber": "Integer",
+  "name": "String",
+  "reviewersEmailAddresses": [
     "String"
   ]
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "eventPropagationResult resource type"
-description: "For event-based retention, this attribute can provide the status of event propogation after it is created."
+description: "Retrieve the status of an event and additional information about location and workload."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,13 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For event-based retention, this attribute can provide the status of event propogation after it is created.
+Retrieve the status of an event and additional information about location and workload.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|error|[microsoft.graph.publicError](../resources/publicerror.md)|The error if the status is not successful.|
-|status|eventPropagationStatus|The Status of the distribution. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
+|location|String|Location in the workload.|
+|status|retentionEventStatusType|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
+|statusInformation|String|Additional infroamtion about the status.|
+|workload|String|Workload being targetted by the event.|
 
 ## Relationships
 None.
@@ -34,10 +36,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.eventPropagationResult",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "status": "String"
+  "workload": "String",
+  "location": "String",
+  "status": "String",
+  "statusInformation": "String"
 }
 ```
+
 
