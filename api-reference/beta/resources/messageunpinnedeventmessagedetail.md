@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about an unpinned [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true. This message is generated when a chat message is unpinned.
+Represents the details of an event message about an unpinned [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true). This message is generated when a chat message is unpinned.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
