@@ -10840,6 +10840,24 @@
       "CreatedDateTime": "2022-04-14T18:53:24.3466034Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f8162921-ecb8-40fa-a870-621b98c896e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityIdentifier** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "f8162921-ecb8-40fa-a870-621b98c896e0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-12T08:35:28.7105558Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
