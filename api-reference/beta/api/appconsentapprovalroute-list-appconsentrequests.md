@@ -107,7 +107,6 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]
@@ -173,7 +172,6 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]

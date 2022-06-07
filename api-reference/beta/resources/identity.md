@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: Identity
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: files
 ---
 # identity resource type
 

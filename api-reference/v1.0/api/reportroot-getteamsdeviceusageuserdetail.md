@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
-GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
+GET /reports/getTeamsDeviceUsageUserDetail(date='{date_value}')
 ```
 
 ## Function parameters
@@ -40,10 +40,10 @@ In the request URL, provide one of the following parameters with a valid value.
 
 | Parameter | Type   | Description                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you would like to view the users who performed any activity. {date_value} must have a format of YYYY-MM-DD. As this report is only available for the past 28 days, {date_value} should be a date from that range. |
 
-> **Note:** You need to set either period or date in the URL.
+> **Note:** You need to set either **period** or **date** in the URL.
 
 ## Request headers
 
@@ -81,7 +81,6 @@ The CSV file has the following headers for columns:
 ### Request
 
 The following is an example of the request.
-
 
 <!-- {
   "blockType": "ignored",

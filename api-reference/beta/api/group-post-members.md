@@ -15,14 +15,18 @@ Namespace: microsoft.graph
 
 Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
-You can add users, devices, service principals, or other groups.
+The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
-> [!IMPORTANT]
->
-> - You can add members to security and Microsoft 365 groups only. For more information, see [Group types in Azure AD and Microsoft Graph only](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
-> - You cannot add security groups to Microsoft 365 groups.
-> - You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
-> - A security group can have users, devices, groups, or service principals as its members, while a Microsoft 365 group can have only users as its members.
+
+| Object type             | Member of security groups     | Member of Microsoft 365 group |
+|-------------------------|-------------------------------|-------------------------------|
+| Users                   | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
+| Security groups         | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Microsoft 365 groups    | ![Cannot be group member][No] | ![Cannot be group member][No] |
+| Devices                 | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Service principals      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Organizational contacts | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+
 
 ## Permissions
 
@@ -82,32 +86,32 @@ Content-type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-group-member-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-group-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/add-group-member-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/add-group-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,6 +136,11 @@ HTTP/1.1 204 No Content
 - [Add member to team](team-post-members.md)
 - [Update member's role in team](team-update-members.md)
 - [Remove member from team](team-delete-members.md)
+
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

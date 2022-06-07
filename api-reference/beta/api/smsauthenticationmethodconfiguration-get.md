@@ -104,7 +104,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
     "id": "Sms",
     "state": "enabled",
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

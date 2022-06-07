@@ -1,6 +1,64 @@
 {
   "changelog": [
 	{
+	  "ChangeList": [
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created Count** column to the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserDetail"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted Count** column to the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserDetail"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created** column to the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted** column to the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created** column to the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted** column to the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserCounts"
+		}
+	],
+	  "Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+	  "Cloud": "prd",
+	  "Version": "v1.0",
+	  "CreatedDateTime": "2022-05-23T06:29:50.0042215Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
 		"ChangeList": [
 		 {
 			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
@@ -96,7 +154,7 @@
 		"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2022-02-25T09:15:14.3122315Z",
+		"CreatedDateTime": "2022-04-18T09:15:14.3122315Z",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	},

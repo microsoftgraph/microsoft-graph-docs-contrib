@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 chatId := "chat-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Upgrade(chat-id, teamsAppInstallation-id).Post(nil)
+graphClient.ChatsById(&chatId).InstalledAppsById(&teamsAppInstallationId).Upgrade(chat-id, teamsAppInstallation-id).Post()
 
 
 ```

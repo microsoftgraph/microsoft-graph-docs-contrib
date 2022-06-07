@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 messageId := "message-id"
 extensionId := "extension-id"
-result, err := graphClient.Me().MessagesById(&messageId).ExtensionsById(&extensionId).Get(nil)
+result, err := graphClient.Me().MessagesById(&messageId).ExtensionsById(&extensionId).Get()
 
 
 ```

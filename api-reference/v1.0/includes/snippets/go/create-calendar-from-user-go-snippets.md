@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendar()
 name := "Volunteer"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Calendars().Post(options)
+result, err := graphClient.Me().Calendars().Post(requestBody)
 
 
 ```

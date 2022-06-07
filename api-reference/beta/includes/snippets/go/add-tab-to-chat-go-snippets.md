@@ -23,11 +23,8 @@ configuration.SetRemoveUrl(&removeUrl)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
 }
-options := &msgraphsdk.TabsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Tabs().Post(options)
+result, err := graphClient.ChatsById(&chatId).Tabs().Post(requestBody)
 
 
 ```

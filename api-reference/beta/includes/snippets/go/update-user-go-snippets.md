@@ -13,10 +13,7 @@ requestBody.SetBusinessPhones( []String {
 }
 officeLocation := "18/2111"
 requestBody.SetOfficeLocation(&officeLocation)
-options := &msgraphsdk.MeRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Me().Patch(options)
+graphClient.Me().Patch(requestBody)
 
 
 ```
