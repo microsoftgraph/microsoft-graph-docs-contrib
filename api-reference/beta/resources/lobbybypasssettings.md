@@ -24,6 +24,8 @@ Specifies which participants can bypass the meeting lobby.
 
 ### lobbyBypassScope values
 
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `invited`, `organizationExcludingGuests`.
+
 | Value                    | Description     |
 | ------------------------ | --------------------------------------------------- |
 | organizer | Only the organizer is admitted into the meeting and bypassing the lobby. All other participants are placed in the meeting lobby. |

@@ -1,6 +1,6 @@
 ---
 title: "ticketInfo resource type"
-description: "The object that represents ticket information related to role assignment requests"
+description: "Represents ticket information related to role assignment and eligibility requests."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The object that represents ticket information related to role assignment requests
+Represents ticket information related to role assignment and eligibility requests. Use this object to define ticket parameters for a role assignment or eligibility request is initiated by another request made in an external system.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketNumber|String|Ticket number meta data|
-|ticketSystem|String|Ticket system meta data|
+|ticketNumber|String|The ticket number.|
+|ticketSystem|String|The description of the ticket system.|
 
 ## Relationships
 None.

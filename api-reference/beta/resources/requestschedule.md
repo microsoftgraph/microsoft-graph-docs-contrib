@@ -1,6 +1,6 @@
 ---
 title: "requestSchedule resource type"
-description: "An request schedule can be included in an access package assignment request and is present in an access package assignment."
+description: "An request schedule can be included in an access package assignment request and is present in an access package assignment. In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -15,32 +15,34 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.
 
+In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment.
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|expiration|[expirationPattern](expirationpattern.md)|When the access should expire.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|For recurring access. Not used at present.|
+|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. In PIM, when the  eligible or active assignment becomes active.|
+|expiration|[expirationPattern](expirationpattern.md)|In entitlement management, when the access should expire.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|For recurring access, or eligible or active assignment. This property is currently unsupported in both PIM and entitlement management.|
 
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.requestSchedule"
-}-->
-
-```json
+}
+-->
+``` json
 {
-    "startDateTime": "2020-08-11T23:06:53.307Z",
-    "expiration": {
-      "@odata.type": "microsoft.graph.expirationPattern"
-    }
+  "@odata.type": "#microsoft.graph.requestSchedule",
+  "startDateTime": "String (timestamp)",
+  "expiration": {
+    "@odata.type": "microsoft.graph.expirationPattern"
+  },
+  "recurrence": {
+    "@odata.type": "microsoft.graph.patternedRecurrence"
+  }
 }
 ```
 
