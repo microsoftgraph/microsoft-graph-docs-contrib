@@ -30,6 +30,7 @@ items:
             href: hybrid-rest-support.md
       - name: Quick start
         href: https://developer.microsoft.com/graph/quick-start
+        displayName: quickstart
       - name: Tutorials
         items:
           - name: Overview
@@ -166,7 +167,7 @@ items:
         items:
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
-            displayName: Microsoft Graph connectors
+            displayName: Microsoft Graph connectors, connect external content
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
@@ -215,7 +216,7 @@ items:
             items:
               - name: Cloud printing overview
                 href: universal-print-concept-overview.md
-                displayName: Universal Print, Cloud printing, printing
+                displayName: Universal Print, Cloud printing, printing, device and app management
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
@@ -581,9 +582,9 @@ items:
             href: throttling.md
           - name: Change notifications
             items:
-              - name: Change notifications overview
+              - name: Overview
                 href: webhooks.md
-                displayName: change notifications, WebHooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+                displayName: change notifications, WebHooks, set up notifications for changes in resource data
               - name: Change notifications tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
@@ -594,9 +595,9 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notifications for Microsoft Teams
+              - name: Change notifications for Microsoft Teams resources
                 items:
-                  - name: Change notifications for Microsoft Teams resources
+                  - name: Types and payloads
                     href: teams-change-notification-in-microsoft-teams-overview.md
                     displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
@@ -613,9 +614,9 @@ items:
                 href: outlook-change-notifications-overview.md
           - name: Change tracking
             items:
-              - name: Change tracking overview
+              - name: Overview
                 href: delta-query-overview.md
-                displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, change tracking
+                displayName: Delta query, track changes, change tracking
               - name: Get changes to events (example)
                 href: delta-query-events.md
               - name: Get changes to groups (example)
@@ -626,9 +627,9 @@ items:
                 href: delta-query-users.md
           - name: Add custom data
             items:
-              - name: Add custom data to resources using extensions
+              - name: Overview
                 href: extensibility-overview.md
-                displayName: add custom data, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+                displayName: add custom data, extensions, resources using extensions
               - name: Use open extensions (example)
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
