@@ -124,6 +124,29 @@ When a threat is detected, alerts are created in the system for an analyst to in
 | unknownFutureValue           | unknownFutureValue for evolvable enums pattern.|
 
 
+### detectionSource values 
+
+| Value                        | Description                                    |
+| :----------------------------| :----------------------------------------------|
+| unknown                        | Uknown status.                                               |
+| microsoftDefenderForEndpoint   | Microsoft Defender For Endpoint.                             |
+| antivirus                      | Antivirus.                                                   |
+| smartScreen                    | Smart Screen.                                                |
+| customTi                       | Custom TI.                                                   |
+| microsoftDefenderForOffice365  | Microsoft Defender For Office 365.                           |
+| automatedInvestigation         | Automated Investigation.                                     |
+| microsoftThreatExperts         | Microsoft Threat Experts.                                    |
+| customDetection                | Custom Detection.                                            |
+| microsoftDefenderForIdentity   | Microsoft Defender For Identity.                             |
+| cloudAppSecurity               | Cloud App Security.                                          |
+| microsoft365Defender           | Microsoft 365 Defender.                                      |
+| azureAdIdentityProtection      | AAD Identity Protection.                                     |
+| manual                         | Manual.                                                      |
+| microsoftDataLossPrevention    | Microsoft Data Loss Prevention.                              |
+| appGovernancePolicy            | App Governance Policy.                                       |
+| appGovernanceDetection         | App Governance Detection.                                    |
+| unknownFutureValue             | unknownFutureValue for evolvable enums pattern.              |
+
 
 ## Relationships
 None.
