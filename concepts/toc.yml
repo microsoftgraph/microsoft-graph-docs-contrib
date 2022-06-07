@@ -12,7 +12,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
-        expanded: false
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -28,6 +28,8 @@ items:
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
+      - name: Quick start
+        href: https://developer.microsoft.com/graph/quick-start
       - name: Tutorials
         items:
           - name: Overview
@@ -51,8 +53,6 @@ items:
             href: /graph/tutorials/python
           - name: TypeScript
             href: /graph/tutorials/typescript
-      - name: Quick start
-        href: https://developer.microsoft.com/graph/quick-start
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -103,9 +103,9 @@ items:
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
-          - name: Frequently asked questions
+          - name: Data Connect FAQ
             href: data-connect-faq.md
-            displayName: Microsoft Graph Data Connect, FAQ
+            displayName: Microsoft Graph Data Connect, frequently asked questions
       - name: Calendar
         items:
           - name: Overview
@@ -377,10 +377,10 @@ items:
         items:
           - name: Overview
             href: notifications-concept-overview.md
-            displayName: deprecated
+            displayName: deprecated, notifications
           - name: Get started
             items:
-              - name: Get started overview
+              - name: Integrate with notifications
                 href: notifications-integration-e2e-overview.md
               - name: App registration
                 href: notifications-integration-app-registration.md
@@ -677,9 +677,9 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: "4: Deploy, test, and extend"
                 href: migrate-azure-ad-graph-deploy-test-extend.md
-              - name: Migration FAQ
+              - name: Azure AD Graph migration FAQ
                 href: migrate-azure-ad-graph-faq.md
-                displayName: migrate, Azure AD Graph, frequently asked questions
+                displayName: migrate, frequently asked questions
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
@@ -824,7 +824,7 @@ items:
               - name: Right-to-left support
                 href: toolkit/customize-components/right-to-left.md
       - name: Resources
-        expanded: false
+        expanded: true
         items:
           - name: Best practices
             href: best-practices-concept.md
