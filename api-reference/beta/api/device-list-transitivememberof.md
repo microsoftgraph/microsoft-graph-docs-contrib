@@ -1,19 +1,19 @@
 ---
-title: "List device transitive groups"
-description: "Get groups that the device is a member of."
+title: "List device transitive memberships"
+description: "Get groups and administrative units that the device is a member of."
 ms.localizationpriority: medium
 author: "spunukol"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List device transitive groups
+# List device transitive memberships
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of.
+Get groups and administrative units that the device is a member of. This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
 ## Permissions
 
