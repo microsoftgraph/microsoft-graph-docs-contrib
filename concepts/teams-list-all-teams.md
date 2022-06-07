@@ -54,9 +54,6 @@ Using the beta APIs, you can use $filter to return only the groups that have tea
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
-
-> **Note**: Filtering groups by resourceProvisioningOptions is now available in v1.0 and beta.
-
 > **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
