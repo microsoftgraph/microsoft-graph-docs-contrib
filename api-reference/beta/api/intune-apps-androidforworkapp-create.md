@@ -2,7 +2,7 @@
 title: "Create androidForWorkApp"
 description: "Create a new androidForWorkApp object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -163,6 +163,7 @@ Content-Length: 1132
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

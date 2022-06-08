@@ -9,20 +9,20 @@ ms.date: "09/20/2021"
 
 # Online meeting artifacts and permissions
 
-Online meeting artifacts are content produced for the duration of an online meeting or live event. You can use the [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) operation to get the following meeting artifacts: 
+Online meeting artifacts are content produced for the duration of an online meeting or [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). You can use the [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) operation to get the following meeting artifacts:
 
 - Attendance report of an online meeting, in the form of a JSON response. Attendance reports have the following characteristics:
-  - Available for meetings other than live events
+  - Available for meetings other than Teams live events
   - Only available when the meeting has concluded
   - Only the meeting organizer can access
-- Recordings of a live event, in the form of a download link that expires in 60 seconds. Recordings have the following characteristics:
-  - Only available for live events
-  - Only available when the live event has concluded
-  - Only the live event organizer can access
-- Attendee report of a live event, in the form of a download link that expires in 60 seconds. Attendee reports have the following characteristics:
-  - Only available for live events
-  - Only available when the live event has concluded
-  - Only the live event organizer can access
+- Recordings of a Teams live event, in the form of a download link that expires in 60 seconds. Recordings have the following characteristics:
+  - Only available for Teams live events
+  - Only available when the Teams live event has concluded
+  - Only the Teams live event organizer can access
+- Attendee report of a Teams live event, in the form of a download link that expires in 60 seconds. Attendee reports have the following characteristics:
+  - Only available for Teams live events
+  - Only available when the Teams live event has concluded
+  - Only the Teams live event organizer can access
 
 ## Permissions
 

@@ -2,7 +2,7 @@
 title: "getAssignedRoleIdsForLoggedInUser function"
 description: "Retrieves the assigned role definitions and role assignments of the currently authenticated user."
 author: "rolyon"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---

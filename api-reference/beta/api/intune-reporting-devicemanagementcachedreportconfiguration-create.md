@@ -2,7 +2,7 @@
 title: "Create deviceManagementCachedReportConfiguration"
 description: "Create a new deviceManagementCachedReportConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -113,6 +113,7 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "shauliu1"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -19,8 +19,8 @@ None
 ## Properties
 None
 
-
 ## Relationships
+
 | Relationship                              | Type                                                                                                      | Description                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | The policy that contains directory-level access review settings.                                                                                                     |
@@ -33,6 +33,7 @@ None
 | b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | The Azure AD B2C policies that define how end users register via local accounts.                                                                                     |
 | claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) collection                                                  | The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | The custom rules that define an access scenario.                                                                                                                     |
+| crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                           | The custom rules that define an access scenario when interacting with external Azure AD tenants.                                                                                                                     |
 | defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | The tenant-wide policy that enforces app management restrictions for all applications and service principals.                                                        |
 | featureRolloutPolicies                    | [featureRolloutPolicy](featurerolloutpolicy.md) collection                                                | The feature rollout policy associated with a directory object.                                                                                                       |
 | homeRealmDiscoveryPolicies                | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection                                        | The policy to control Azure AD authentication behavior for federated users.                                                                                          |
@@ -58,4 +59,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.policyRoot"
 }
 ```
-

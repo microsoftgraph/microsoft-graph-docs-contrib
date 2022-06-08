@@ -2,7 +2,7 @@
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender PUA Protection"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -25,6 +25,7 @@ Possible values of Defender PUA Protection
 |auditMode|2|Allow functionality but generate logs.|
 |warn|6|Warning message to end user with ability to bypass block from attack surface reduction rule.|
 |notConfigured|99|Not configured.|
+
 
 
 

@@ -15,7 +15,7 @@ labels.isDefault = true;
 labelsList.add(labels);
 term.labels = labelsList;
 
-graphClient.termStore().sets("{setId}").terms()
+graphClient.termStore().sets("{setId}").children()
 	.buildRequest()
 	.post(term);
 

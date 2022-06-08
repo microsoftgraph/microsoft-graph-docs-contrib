@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about teamsApp removed.
-This message is generated when a teamsApp is removed from a channel, a chat, or a team.
+Represents the details of an event message about a **teamsApp** removal.
+This message is generated when a **teamsApp** is removed from a channel, a chat, or a team.
 
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
@@ -23,8 +23,8 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|
-|teamsAppDisplayName|String|Display name of the teamApp.|
-|teamsAppId|String|Unique identifier of the teamsApp.|
+|teamsAppDisplayName|String|Display name of the **teamsApp**.|
+|teamsAppId|String|Unique identifier of the **teamsApp**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

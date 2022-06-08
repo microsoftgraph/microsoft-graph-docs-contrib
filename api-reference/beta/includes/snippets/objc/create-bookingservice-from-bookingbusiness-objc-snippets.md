@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
@@ -42,6 +42,8 @@ MSGraphBookingReminder *defaultReminders = [[MSGraphBookingReminder alloc] init]
 [bookingService setDefaultReminders:defaultRemindersList];
 [bookingService setDescription:@"Individual bento box lunch delivery"];
 [bookingService setDisplayName:@"Bento"];
+[bookingService setIsLocationOnline: true];
+[bookingService setSmsNotificationsEnabled: true];
 [bookingService setIsHiddenFromCustomers: false];
 [bookingService setNotes:@"Home-cooked special"];
 [bookingService setPostBuffer:@"PT10M"];

@@ -2,7 +2,7 @@
 title: "windowsAutopilotDeploymentProfileAssignment resource type"
 description: "An assignment of a Windows Autopilot deployment profile to an AAD group."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -58,6 +58,7 @@ Here is a JSON representation of the resource.
   "sourceId": "String"
 }
 ```
+
 
 
 

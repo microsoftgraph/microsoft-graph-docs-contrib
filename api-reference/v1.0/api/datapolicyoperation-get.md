@@ -64,6 +64,14 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-datapolicyoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-datapolicyoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-datapolicyoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -76,7 +84,6 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

@@ -22,6 +22,8 @@ Represents a participant in a call.
 | [Delete participant](../api/participant-delete.md)         | None   | Delete a participant in a call.                  |
 | [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
+| [Start hold music](../api/participant-startholdmusic.md) | [startHoldMusicOperation](startholdmusicoperation.md) | Place a participant on hold while playing music on the background. |
+| [Stop hold music](../api/participant-stopholdmusic.md) | [stopHoldMusicOperation](stopholdmusicoperation.md) | Reincorporate a participant previously put on hold to the call. |
 
 ## Properties
 

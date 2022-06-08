@@ -2,7 +2,7 @@
 title: "groupPolicyDefinitionValue resource type"
 description: "The definition value entity stores the value for a single group policy definition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

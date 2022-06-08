@@ -2,7 +2,7 @@
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -111,7 +111,6 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Update deviceConfigurationDeviceStateSummary"
 description: "Update the properties of a deviceConfigurationDeviceStateSummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -102,6 +102,7 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

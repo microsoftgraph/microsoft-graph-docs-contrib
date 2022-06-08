@@ -32,10 +32,11 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer `{token}`. Required.  |
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-You need to provide an empty json `{}` as request body for this method.
+In the request body, supply an empty JSON object `{}` for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) object in the request body.
 
@@ -81,7 +82,7 @@ Content-type: application/json
 
 
 ### Response
-The following is an example of a response. 
+The following is an example of the response. 
 
 <!-- {
   "blockType": "response",
@@ -91,7 +92,6 @@ The following is an example of a response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('955e0bd5-52c2-41ad-b7e8-5b33a18c5e78')/assignments/$entity",
@@ -154,7 +154,6 @@ If the specified **assignment** already has a folder, this method returns a `400
 ```http
 HTTP/1.1 400 Bad request
 Content-type: application/json
-Content-length: 158
 
 {
     "error": {

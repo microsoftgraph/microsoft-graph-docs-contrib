@@ -11,7 +11,7 @@ author: raprakasMSFT
 
 Namespace: microsoft.graph
 
-Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD).
+Represents the current status of a user's response to a company's customizable terms of use agreement powered by Azure Active Directory (Azure AD).
 
 ## Properties
 | Property     | Type        | Description |
@@ -25,7 +25,7 @@ Represents the current status of a user within scope of a company's customizable
 |expirationDateTime|DateTimeOffset|The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String| The identifier of the agreement acceptance. Read-only.|
 |recordedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|state|string| The state of the agreement acceptance. Possible values are: `accepted`, `declined`.|
+|state|string| The state of the agreement acceptance. Possible values are: `accepted`, `declined`. Supports `$filter` (`eq`).|
 |userDisplayName|String|Display name of the user when the acceptance was recorded.|
 |userEmail|String|Email of the user when the acceptance was recorded.|
 |userId|String|The identifier of the user who accepted the agreement.|

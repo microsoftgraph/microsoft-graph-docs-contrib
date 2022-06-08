@@ -1,6 +1,6 @@
 ---
 title: "bookingSchedulingPolicy resource type"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"

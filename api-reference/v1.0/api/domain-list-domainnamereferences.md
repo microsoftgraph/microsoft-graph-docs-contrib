@@ -34,7 +34,7 @@ GET /domains/{id}/domainNameReferences
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$filter` [OData Query Parameters](/graph/query-parameters) to help customize the response. You can only filter by the OData type of the objects returned, for example, `/domains/{domainId}/domainNameReferences/microsoft.graph.group` and `/domains/{domainId}/domainNameReferences/microsoft.graph.user`.
 
 ## Request headers
 
@@ -76,6 +76,14 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-domainnamereferences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

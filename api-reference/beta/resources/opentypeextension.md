@@ -13,20 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
 Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property,
 which is derived from the [extension](extension.md) abstract type.  Each extension has an **extensionName** property which is the only pre-defined,
 writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS)
-format that is dependent on _your own domain_, for example, `Com.Contoso.ContactInfo`. Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name.
+format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
 
 Open extension example: [Add custom data to users using open extensions](/graph/extensibility-open-users)
 
-Open extensions are supported by the following resources in the corresponding versions - general availability (GA: /v1.0 and /beta) or preview (/beta).
+Open extensions are supported by the following resources in the corresponding versions - general availability (/v1.0) or preview (/beta).
 
 | Resource | Version |
 |---------------|-------|
-| [Administrative unit](administrativeunit.md)  | GA |
-| [Calendar event](event.md) | GA |
+| [Administrative unit](administrativeunit.md) | GA |
+| [Base task (deprecated)](basetask.md) | Beta |
+| [Base task list (deprecated)](basetasklist.md) | Beta |
+| [Calendar event](event.md) \* | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
 | [Device](device.md) | GA |
@@ -35,8 +39,10 @@ Open extensions are supported by the following resources in the corresponding ve
 | [Organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [User](user.md) | GA |
-| [Task](todotask.md)  | GA |
-| [Task list](todotasklist.md)  | GA |
+| [To-do task](todotask.md) | GA |
+| [To-do task list](todotasklist.md) | GA |
+
+>\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 ## Outlook-specific considerations
 
@@ -86,7 +92,7 @@ None
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |

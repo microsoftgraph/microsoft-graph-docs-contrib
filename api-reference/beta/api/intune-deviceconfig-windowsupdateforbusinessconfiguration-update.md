@@ -2,7 +2,7 @@
 title: "Update windowsUpdateForBusinessConfiguration"
 description: "Update the properties of a windowsUpdateForBusinessConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -86,8 +86,8 @@ The following table shows the properties that are required when you create the [
 |engagedRestartDeadlineInDays|Int32|Deadline in days before automatically scheduling and executing a pending restart outside of active hours, with valid range from 2 to 30 days|
 |engagedRestartSnoozeScheduleInDays|Int32|Number of days a user can snooze Engaged Restart reminder notifications with valid range from 1 to 3 days|
 |engagedRestartTransitionScheduleInDays|Int32|Number of days before transitioning from Auto Restarts scheduled outside of active hours to Engaged Restart, which requires the user to schedule, with valid range from 0 to 30 days|
-|deadlineForFeatureUpdatesInDays|Int32|Number of days before feature updates are installed automatically with valid range from 2 to 30 days|
-|deadlineForQualityUpdatesInDays|Int32|Number of days before quality updates are installed automatically with valid range from 2 to 30 days|
+|deadlineForFeatureUpdatesInDays|Int32|Number of days before feature updates are installed automatically with valid range from 0 to 30 days|
+|deadlineForQualityUpdatesInDays|Int32|Number of days before quality updates are installed automatically with valid range from 0 to 30 days|
 |deadlineGracePeriodInDays|Int32|Number of days after deadline  until restarts occur automatically with valid range from 0 to 7 days|
 |postponeRebootUntilAfterDeadline|Boolean|Specifies if the device should wait until deadline for rebooting outside of active hours|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
@@ -96,6 +96,7 @@ The following table shows the properties that are required when you create the [
 |userPauseAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to enable end user’s access to pause software updates. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to disable user’s access to scan Windows Update. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Specifies what Windows Update notifications users see. Possible values are: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|allowWindows11Upgrade|Boolean|Allow eligible Windows 10 devices to upgrade to the latest version of Windows 11.|
 
 
 
@@ -109,7 +110,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2794
+Content-length: 2828
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -179,7 +180,8 @@ Content-length: 2794
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
 
@@ -188,7 +190,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2966
+Content-Length: 3000
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -261,9 +263,11 @@ Content-Length: 2966
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
+
 
 
 

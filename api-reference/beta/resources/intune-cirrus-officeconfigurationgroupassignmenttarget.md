@@ -1,7 +1,7 @@
 ---
 title: "officeConfigurationGroupAssignmentTarget resource type"
 description: "Office client configuration AAD group assignment target."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
 doc_type: resourcePageType

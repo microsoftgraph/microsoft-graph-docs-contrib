@@ -1,5 +1,5 @@
 ---
-title: "autoReviewSettings resource type"
+title: "autoReviewSettings resource type (deprecated)"
 description: "Specifies the behavior for when an access review completes."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,13 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# autoReviewSettings resource type
+# autoReviewSettings resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 The **autoReviewSettings** resource type is used in the [accessReviewSettings](accessreviewsettings.md) resource and specifies the behavior for when an access review completes.    
 

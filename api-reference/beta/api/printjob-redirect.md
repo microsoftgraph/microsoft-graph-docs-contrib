@@ -3,7 +3,7 @@ title: "printJob: redirect"
 description: Redirect a print job to a different printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -55,9 +55,6 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 The following example shows how to call this API.
 ### Request
 The following is an example of the request.
-
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,7 +131,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

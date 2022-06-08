@@ -55,6 +55,8 @@ var bookingService = new BookingService
 	},
 	Description = "Individual bento box lunch delivery",
 	DisplayName = "Bento",
+	IsLocationOnline = true,
+	SmsNotificationsEnabled = true,
 	IsHiddenFromCustomers = false,
 	Notes = "Home-cooked special",
 	PostBuffer = new Duration("PT10M"),

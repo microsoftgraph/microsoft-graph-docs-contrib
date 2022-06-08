@@ -2,7 +2,7 @@
 title: "windowsKioskDesktopApp resource type"
 description: "The base class for a type of apps"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -53,6 +53,7 @@ Here is a JSON representation of the resource.
   "desktopApplicationLinkPath": "String"
 }
 ```
+
 
 
 

@@ -76,14 +76,14 @@ The CSV file has the following headers for columns.
 - Send Count
 - Receive Count
 - Read Count
-- Meeting Created
-- Meeting Interacted
+- Meeting Created Count
+- Meeting Interacted Count
 - Assigned Products
 - Report Period
 
 ### JSON
 
-If successful, this method returns a `200 OK` response code and an **[emailActivityUserDetail](../resources/emailactivityuserdetail.md)** object in the response body.
+If successful, this method returns a `200 OK` response code and a JSON object in the response body.
 
 The default page size for this request is 200 items.
 
@@ -132,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 
 ### JSON
@@ -163,7 +163,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.emailActivityUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -172,7 +172,6 @@ Content-Type: application/json
 Content-Length: 424
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailActivityUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
@@ -187,6 +186,8 @@ Content-Length: 424
       "assignedProducts": [
         "Microsoft 365 ENTERPRISE E5"
       ], 
+      "meetingCreatedCount": 50, 
+      "meetingInteractedCount": 86, 
       "reportPeriod": "7"
     }
   ]

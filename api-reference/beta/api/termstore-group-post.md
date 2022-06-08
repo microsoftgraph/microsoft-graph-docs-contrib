@@ -3,7 +3,7 @@ title: "Create group"
 description: "Create a new group object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 
@@ -66,7 +66,6 @@ If successful, this method returns a `201 Created` response code and a [group](.
 ``` http
 POST https://graph.microsoft.com/beta/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

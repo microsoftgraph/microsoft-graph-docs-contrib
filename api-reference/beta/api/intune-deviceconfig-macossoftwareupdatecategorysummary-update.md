@@ -2,7 +2,7 @@
 title: "Update macOSSoftwareUpdateCategorySummary"
 description: "Update the properties of a macOSSoftwareUpdateCategorySummary object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -105,6 +105,7 @@ Content-Length: 422
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
+
 
 
 

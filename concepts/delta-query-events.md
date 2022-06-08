@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to events in a calendar view "
 description: "A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) "
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -11,7 +11,7 @@ ms.custom: graphiamtop20
 By using delta query, you can get new, updated, or deleted events in a specified calendar(s), or within a defined collection of events (as a calendar view) in the calendar. This article describes the latter - getting such incremental changes to events in a calendar view. 
 
 > **Note**
-The capability for the former - getting incremental changes to events in a calendar not bound to a fixed start and end date range - is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta?view=graph-rest-beta) function.
+The capability for the former - getting incremental changes to events in a calendar not bound to a fixed start and end date range - is currently available only in the beta version. For more information, see [delta](/graph/api/event-delta) function.
 
 A calendar view is a collection of events in a date/time range (../me/calendarview) from the default calendar 
 or some other specified calendar of a user, or from a group calendar. 
@@ -30,8 +30,8 @@ Delta query for events in a calendar view is specific to a calendar and date/tim
 you need to track each calendar individually. 
 
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
-the [delta](/graph/api/event-delta?view=graph-rest-1.0) function. The initial GET 
-request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), 
+the [delta](/graph/api/event-delta) function. The initial GET 
+request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview), 
 except that you include the **delta** function. The following is the initial GET delta request of a calendar view in the signed-in user's default calendar:
 
 ```
@@ -40,22 +40,22 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 A GET request with the **delta** function returns either:
 
-- A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
-- A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
+- A `@odata.nextLink` (that contains a URL with a **delta** function call and a `$skipToken`), or 
+- A `@odata.deltaLink` (that contains a URL with a **delta** function call and `$deltaToken`).
 
 These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the 
 _startDateTime_ and _endDateTime_ parameters, and any other query parameter 
 in your initial delta query GET request. You do not need to include these parameters in subsequent requests as they are encoded in the tokens.
 
 State tokens are completely opaque to the client. 
-To proceed with a round of change tracking, simply copy and apply the `nextLink` or 
-`deltaLink` URL returned from the last GET 
-request to the next **delta** function call for that same calendar view. A `deltaLink` returned in a response 
-signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL
+To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or 
+`@odata.deltaLink` URL returned from the last GET 
+request to the next **delta** function call for that same calendar view. A `@odata.deltaLink` returned in a response 
+signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `nextLink` and 
-`deltaLink` URLs.
+See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `@odata.nextLink` and 
+`@odata.deltaLink` URLs.
 
 ### Use query parameters in a delta query for calendar view
 
@@ -127,7 +127,7 @@ Prefer: odata.maxpagesize=2
 ### Sample initial response
 
 The response includes two events and a `@odata.nextLink` response header with a `skipToken`. 
-The `nextLink` URL indicates there are more events in the calendar view to get.
+The `@odata.nextLink` URL indicates there are more events in the calendar view to get.
 
 <!-- {
   "blockType": "response",
@@ -203,8 +203,8 @@ Content-type: application/json
 
 ### Step 2: sample second request
 
-The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
-the same _startDateTime_ and _endDateTime_ parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.
+The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify
+the same _startDateTime_ and _endDateTime_ parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
 
 
 # [HTTP](#tab/http)
@@ -237,7 +237,7 @@ Prefer: odata.maxpagesize=2
 
 ### Sample second response 
 
-The second response returns the next 2 events in the calendar view and another `nextLink`, indicating there are 
+The second response returns the next 2 events in the calendar view and another `@odata.nextLink`, indicating there are 
 more events to get from the calendar view.
 
 <!-- {
@@ -315,7 +315,7 @@ Content-type: application/json
 
 ### Step 3: sample third request
 
-The third request continues to use the latest `nextLink` returned from the last sync request. 
+The third request continues to use the latest `@odata.nextLink` returned from the last sync request. 
  
 
 
@@ -349,8 +349,8 @@ Prefer: odata.maxpagesize=2
 
 ### Sample third and final response
 
-The third response returns the only remaining event in the calendar view, and a `deltaLink` URL which indicates 
-synchronization is complete for this calendar view. Save and use the `deltaLink` URL to 
+The third response returns the only remaining event in the calendar view, and a `@odata.deltaLink` URL which indicates 
+synchronization is complete for this calendar view. Save and use the `@odata.deltaLink` URL to 
 [synchronize that calendar view in the next round](#the-next-round-sample-first-request).
 
 
@@ -405,7 +405,7 @@ Content-type: application/json
 
 ### The next round: sample first request
 
-Using the `deltaLink` from the [last request](#step-3-sample-third-request) in the last round, 
+Using the `@odata.deltaLink` from the [last request](#step-3-sample-third-request) in the last round, 
 you will be able to get only those events that have changed (by being added, deleted, or updated) in that calendar view since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 

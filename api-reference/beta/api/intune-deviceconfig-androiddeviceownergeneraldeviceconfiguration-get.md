@@ -2,7 +2,7 @@
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8848
+Content-Length: 10397
 
 {
   "value": {
@@ -120,6 +120,9 @@ Content-Length: 8848
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "crossProfilePoliciesAllowCopyPaste": true,
+    "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+    "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
     "microsoftLauncherConfigurationEnabled": true,
     "microsoftLauncherCustomWallpaperEnabled": true,
     "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -132,6 +135,17 @@ Content-Length: 8848
     "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
+    "detailedHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
@@ -217,6 +231,7 @@ Content-Length: 8848
     "kioskModeManagedHomeScreenSignInBackground": "Kiosk Mode Managed Home Screen Sign In Background value",
     "kioskModeManagedHomeScreenSignInBrandingLogo": "Kiosk Mode Managed Home Screen Sign In Branding Logo value",
     "kioskModeManagedHomeScreenSignInEnabled": true,
+    "kioskModeUseManagedHomeScreenApp": "singleAppMode",
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -235,13 +250,23 @@ Content-Length: 8848
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
     "passwordPreviousPasswordCountToBlock": 4,
     "passwordRequiredType": "required",
+    "passwordRequireUnlock": "daily",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "playStoreMode": "allowList",
-    "safeBootBlocked": true,
     "screenCaptureBlocked": true,
-    "securityAllowDebuggingFeatures": true,
     "securityDeveloperSettingsEnabled": true,
     "securityRequireVerifyApps": true,
+    "shortHelpText": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+      "localizedMessages": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "defaultMessage": "Default Message value"
+    },
     "statusBarBlocked": true,
     "stayOnModes": [
       "ac"
@@ -249,6 +274,15 @@ Content-Length: 8848
     "storageAllowUsb": true,
     "storageBlockExternalMedia": true,
     "storageBlockUsbFileTransfer": true,
+    "systemUpdateFreezePeriods": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerSystemUpdateFreezePeriod",
+        "startMonth": 10,
+        "startDay": 8,
+        "endMonth": 8,
+        "endDay": 6
+      }
+    ],
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
@@ -263,6 +297,16 @@ Content-Length: 8848
     "personalProfileAppsAllowInstallFromUnknownSources": true,
     "personalProfileCameraBlocked": true,
     "personalProfileScreenCaptureBlocked": true,
+    "personalProfilePlayStoreMode": "blockedApps",
+    "personalProfilePersonalApplications": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "workProfilePasswordExpirationDays": 1,
     "workProfilePasswordMinimumLength": 0,
     "workProfilePasswordMinimumNumericCharacters": 11,
@@ -273,10 +317,12 @@ Content-Length: 8848
     "workProfilePasswordMinimumSymbolCharacters": 10,
     "workProfilePasswordPreviousPasswordCountToBlock": 15,
     "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "required"
+    "workProfilePasswordRequiredType": "required",
+    "workProfilePasswordRequireUnlock": "daily"
   }
 }
 ```
+
 
 
 

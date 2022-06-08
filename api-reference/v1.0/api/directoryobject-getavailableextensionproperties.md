@@ -64,10 +64,9 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
 Content-Type: application/json
-Content-length: 43
 
 {
-  "isSyncedFromOnPremises": "Boolean"
+  "isSyncedFromOnPremises": true
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -84,6 +83,14 @@ Content-length: 43
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getavailableextensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getavailableextensionproperties-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getavailableextensionproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -103,6 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(extensionProperty)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.extensionProperty",

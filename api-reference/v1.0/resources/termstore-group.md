@@ -29,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 
 | Property             | Type               | Description                        |
 |:---------------------|:-------------------|:------------------------------------
-| createdDateTime      | DateTimeOffset     | Date and time of group creation. Read-only. |
-| description          | string             | Description giving details on the term usage. |
-| id                   | string             | Unique identifier of group. Read-Only. |
-| displayName          | string             | Name of group. |
-| scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'. |
-| parentSiteId         | string             | Id of the parent site of this group. |
+| createdDateTime      | DateTimeOffset     | Date and time of the group creation. Read-only. |
+| description          | string             | Description that gives details on the term usage. |
+| id                   | string             | Unique identifier of the group. Read-Only. |
+| displayName          | string             | Name of the group. |
+| scope                | string              | Returns the type of the group. Possible values are `global`, `system`, and `siteCollection`. |
+| parentSiteId         | string             | ID of the parent site of this group. |
 
 ## Relationships
 | Relationship       | Type                        | Description              |

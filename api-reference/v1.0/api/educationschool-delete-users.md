@@ -40,8 +40,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code and an empty response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,10 +67,14 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationschool-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from-educationschool-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response"

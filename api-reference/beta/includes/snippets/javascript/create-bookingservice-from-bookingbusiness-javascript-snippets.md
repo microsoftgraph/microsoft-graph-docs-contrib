@@ -51,6 +51,8 @@ const bookingService = {
     ],
     description: 'Individual bento box lunch delivery',
     displayName: 'Bento',
+    isLocationOnline: true,
+    smsNotificationsEnabled: true,
     isHiddenFromCustomers: false,
     notes: 'Home-cooked special',
     postBuffer: 'PT10M',
@@ -70,7 +72,7 @@ const bookingService = {
     ]
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services')
+await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services')
 	.version('beta')
 	.post(bookingService);
 

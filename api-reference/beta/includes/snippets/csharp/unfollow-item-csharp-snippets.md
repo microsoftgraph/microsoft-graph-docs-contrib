@@ -9,6 +9,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Unfollow()
 	.Request()
-	.DeleteAsync();
+	.PostAsync();
 
 ```
