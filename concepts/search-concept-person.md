@@ -54,10 +54,10 @@ The People API supports several people types and subtypes that users can ask for
 
 
 ## Request details
-The results of the people API can be specific by giving additional details when making the request. Below is a few ways to make the requests more specific. 
+The results of the people API can be specific by giving additional details when making the request. The following are a few ways to make the requests more specific. 
 
 ## Source of results
-People results come from two sources, mailbox or directory. By default, the results will come from both sources which conflicts being removed, but directory sources are preferred when there are conflicts. 
+People results come from two sources, mailbox or directory. By default, the results will come from both sources with conflicts being removed so that we are not showing returning same values, but directory sources are preferred when there are conflicts. 
 
 Mailbox results consist of:
 * People who sent you email
@@ -68,8 +68,8 @@ Mailbox results consist of:
 * Public contacts of the above people
 
 While directory searches in the global addressing list in active directory. Please note:
-* Not applicable for Consumer users. They do not have GAL. API will return bad request.
-* People who are not in the callers GAL will not be returned
+* Not applicable for Consumer users. 
+* People who are not in the callers global addressing list will not be returned
 * People who are hidden by IBP (Information Barrier protocol) will not be returned
 * People who are hidden in the address list will not be returned
 
@@ -85,14 +85,13 @@ While directory searches in the global addressing list in active directory. Plea
 ```
 
 ## Size 
-By default 25 results or less will be returned based on the search query matches. Specify the size to increase the number of results returned
+By default 25 results or less will be returned based on the search query matches. Based on the use case more results can be returned is the size is specified.
+
 ## From
 Specify the minimum index for paging, default is 0, the first results is the most relevant.
 
 ## Fields: 
-The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about. 
-
-Note: the default returned fields are only a subset of all the properties. 
+The API returns a set of default properties, but this can be customized to return a specific number of properties that you care about.  
 
 ### Example: Specifying fields to return
 ```
@@ -100,7 +99,7 @@ Note: the default returned fields are only a subset of all the properties.
 ```
 
 ## Filter
-Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes, ExternalDirectoryObjectID
+Results can be filtered down to specific values. Possible filter values: PeopleTypes, PeopleSubTypes
 
   Example 1: Filter to only person suggestions. Returns both private and organization contacts.
 
@@ -184,24 +183,7 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
             }]
         },
     
-
-  Example 6: Lookup entities using ExternalDirectoryObjectId.
-
-    
-    json
-        "Filter": {
-            "Or": [{
-                "Term": {
-                    "ExternalDirectoryObjectId": "86303959-03f4-498e-b7d0-0ca6de7d6b7c"
-                }
-            }, {
-                "Term": {
-                    "ExternalDirectoryObjectId": "0d573e15-0dde-4b7d-b44f-58ab72dc0ba9"
-                }
-            }]
-        },
-    
-  Example 7: Combining multiple filters.
+  Example 6: Combining multiple filters.
 
    ```
    json
@@ -238,12 +220,14 @@ Results can be filtered down to specific values. Possible filter values: PeopleT
         ]
       },
    ```   
+   
+## Full request
 
-## Example: Search person by name
+### Example: Search person by name
 
 The following request gets the people most relevant to the signed-in user, based on communication and collaboration patterns and business relationships.
 
-### Request
+#### Request
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -265,7 +249,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response, which contains one message that matches the search criterion.
 
