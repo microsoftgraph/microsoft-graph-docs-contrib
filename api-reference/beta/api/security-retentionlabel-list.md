@@ -77,12 +77,14 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.retentionLabel",
-      "id": "4cce81b5-81b5-4cce-b581-ce4cb581ce4c",
+      "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
       "displayName": "String",
       "behaviorDuringRetentionPeriod": "String",
       "actionAfterRetentionPeriod": "String",
       "retentionTrigger": "String",
-      "retentionDurationInDays": "Integer",
+      "retentionDuration": {
+        "@odata.type": "microsoft.graph.security.retentionDuration"
+      },
       "isInUse": "Boolean",
       "descriptionForAdmins": "String",
       "descriptionForUsers": "String",
@@ -94,13 +96,11 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.identitySet"
       },
       "lastModifiedDateTime": "String (timestamp)",
-      "dispositionReviewStages": [
-        {
-          "@odata.type": "microsoft.graph.security.dispositionReviewStage"
-        }
-      ]
+      "labelToBeApplied": "String",
+      "defaultRecordBehavior": "String"
     }
   ]
 }
 ```
+
 

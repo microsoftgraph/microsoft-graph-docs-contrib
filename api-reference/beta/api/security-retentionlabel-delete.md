@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /security/labels/retentionLabels/{retentionLabelId}
-DELETE /security/triggers/retentionEvents/{retentionEventId}/labels/{retentionLabelId}
+
 ```
 
 ## Request headers

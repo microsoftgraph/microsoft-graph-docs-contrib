@@ -46,18 +46,18 @@ You can specify the following properties when creating a retentionEvent.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the event. Optional.|
-|description|String|Optional information about the event. Optional.|
-|messagesQuery|String|Specifies the keywords that are used to scope Exchange content for the compliance retention event. Optional.|
-|filesQuery|String|Specifies one or more the Property:Value pairs that you've specified in the properties (also known as Columns) of SharePoint and OneDrive for Business documents to scope the compliance retention event. Optional.|
-|eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
-|eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Status and errors of the Event Sync. Optional.|
-|eventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Specifies the number of processed documents per workload. Optional.|
-|lastStatusUpdateTime|DateTimeOffset|Last time the status of the event was updated. Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
+|createdDateTime|DateTimeOffset|The date time when the entity was created.|
+|description|String|Optional information about the event.|
+|displayName|String|Name of the event.|
+|eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Status and errors of the Event Sync.|
+|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventQueries.md) collection| Specifies property value pairs: the workload type (SPO. ODB, EXO) and identification for an item to scope the retention event.|
+|retentionEventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Specifies the number of processed documents per workload.|
+|eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
+|id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
+|lastStatusUpdateDateTime|DateTimeOffset|Last time the status of the event was updated.|
 
 
 
@@ -76,32 +76,36 @@ If successful, this method returns a `201 Created` response code and a [retentio
 ``` http
 POST https://graph.microsoft.com/beta/security/triggers/retentionEvents
 Content-Type: application/json
-Content-length: 594
+Content-length: 616
 
 {
   "@odata.type": "#microsoft.graph.security.retentionEvent",
   "displayName": "String",
   "description": "String",
-  "messagesQuery": "String",
-  "filesQuery": "String",
+  "eventQueries": [
+    {
+      "@odata.type": "microsoft.graph.security.eventQuery"
+    }
+  ],
   "eventTriggerDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "eventPropagationResult": {
-    "@odata.type": "microsoft.graph.security.eventPropagationResult"
-  },
-  "eventStatus": [
+  "eventPropagationResults": [
     {
-      "@odata.type": "microsoft.graph.security.retentionEventStatus"
+      "@odata.type": "microsoft.graph.security.eventPropagationResult"
     }
   ],
-  "lastStatusUpdateTime": "String (timestamp)"
+  "eventStatus": {
+    "@odata.type": "microsoft.graph.security.retentionEventStatus"
+  },
+  "lastStatusUpdateDateTime": "String (timestamp)"
 }
 ```
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -109,18 +113,20 @@ Content-length: 594
   "@odata.type": "microsoft.graph.security.retentionEvent"
 }
 -->
-
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.retentionEvent",
-  "id": "f241abff-abff-f241-ffab-41f2ffab41f2",
+  "id": "fcdbfb58-d0c6-85dd-d011-4e0ff9a6805d",
   "displayName": "String",
   "description": "String",
-  "messagesQuery": "String",
-  "filesQuery": "String",
+  "eventQueries": [
+    {
+      "@odata.type": "microsoft.graph.security.eventQuery"
+    }
+  ],
   "eventTriggerDateTime": "String (timestamp)",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
@@ -130,14 +136,15 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.identitySet"
   },
   "lastModifiedDateTime": "String (timestamp)",
-  "eventPropagationResult": {
-    "@odata.type": "microsoft.graph.security.eventPropagationResult"
-  },
-  "eventStatus": [
+  "eventPropagationResults": [
     {
-      "@odata.type": "microsoft.graph.security.retentionEventStatus"
+      "@odata.type": "microsoft.graph.security.eventPropagationResult"
     }
   ],
-  "lastStatusUpdateTime": "String (timestamp)"
+  "eventStatus": {
+    "@odata.type": "microsoft.graph.security.retentionEventStatus"
+  },
+  "lastStatusUpdateDateTime": "String (timestamp)"
 }
 ```
+

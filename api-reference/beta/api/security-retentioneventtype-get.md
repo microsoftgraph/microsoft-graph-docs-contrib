@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /security/labels/retentionLabels/{retentionLabelId}/eventType
 GET /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
+GET /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 ```
 
 ## Optional query parameters

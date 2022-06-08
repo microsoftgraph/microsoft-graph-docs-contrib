@@ -79,11 +79,14 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.retentionEvent",
-      "id": "f241abff-abff-f241-ffab-41f2ffab41f2",
+      "id": "fcdbfb58-d0c6-85dd-d011-4e0ff9a6805d",
       "displayName": "String",
       "description": "String",
-      "messagesQuery": "String",
-      "filesQuery": "String",
+      "eventQueries": [
+        {
+          "@odata.type": "microsoft.graph.security.eventQuery"
+        }
+      ],
       "eventTriggerDateTime": "String (timestamp)",
       "createdBy": {
         "@odata.type": "microsoft.graph.identitySet"
@@ -93,15 +96,15 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.identitySet"
       },
       "lastModifiedDateTime": "String (timestamp)",
-      "eventPropagationResult": {
-        "@odata.type": "microsoft.graph.security.eventPropagationResult"
-      },
-      "eventStatus": [
+      "eventPropagationResults": [
         {
-          "@odata.type": "microsoft.graph.security.retentionEventStatus"
+          "@odata.type": "microsoft.graph.security.eventPropagationResult"
         }
       ],
-      "lastStatusUpdateTime": "String (timestamp)"
+      "eventStatus": {
+        "@odata.type": "microsoft.graph.security.retentionEventStatus"
+      },
+      "lastStatusUpdateDateTime": "String (timestamp)"
     }
   ]
 }

@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /security/labels/retentionLabels/{retentionLabelId}/eventType
 PATCH /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
+PATCH /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 ```
 
 ## Request headers
@@ -69,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [rete
 ``` http
 PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/eventType
 Content-Type: application/json
-Content-length: 208
+Content-length: 199
 
 {
   "@odata.type": "#microsoft.graph.security.retentionEventType",

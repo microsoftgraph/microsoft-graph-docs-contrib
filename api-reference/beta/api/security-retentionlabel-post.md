@@ -46,19 +46,22 @@ You can specify the following properties when creating a retentionLabel.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Unique string defining the name of the label. Optional.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies the behaviour of a document that has been labeled with this label during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. Optional.|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod|Specifies the action of a document that has been labeled with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. Optional.|
-|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. Optional.|
-|retentionDurationInDays|Int32|Specifies the number of days to retain the content. Optional.|
-|isInUse|Boolean|Specifies if the label is currently being used. Optional.|
-|descriptionForAdmins|String|**Optional information about the label for the Admin. Optional.|
-|descriptionForUsers|String|**Optional information about the label for the User. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|A multi stage collection of reviewers that will be notified and have to approve before an item is deleted. Optional.|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to be applied on a document with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the entity.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the entity is created.|
+|descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
+|descriptionForUsers|String|This is an optional property that provides the label information for the user.|
+|displayName|String|Unique string that defines a label name.|
+|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
+|id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
+|isInUse|Boolean|Specifies if the label is currently being used.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
+|retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionDuration)|Specifies the number of days to retain the content.|
+|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
+|defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
+|labelToBeApplied|String|Specifies the replacement label to be automatically applied once the retention period of the current label is completed. |
 
 
 
@@ -77,7 +80,7 @@ If successful, this method returns a `201 Created` response code and a [retentio
 ``` http
 POST https://graph.microsoft.com/beta/security/labels/retentionLabels
 Content-Type: application/json
-Content-length: 570
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
@@ -85,23 +88,23 @@ Content-length: 570
   "behaviorDuringRetentionPeriod": "String",
   "actionAfterRetentionPeriod": "String",
   "retentionTrigger": "String",
-  "retentionDurationInDays": "Integer",
+  "retentionDuration": {
+    "@odata.type": "microsoft.graph.security.retentionDuration"
+  },
   "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "dispositionReviewStages": [
-    {
-      "@odata.type": "microsoft.graph.security.dispositionReviewStage"
-    }
-  ]
+  "labelToBeApplied": "String",
+  "defaultRecordBehavior": "String"
 }
 ```
 
 
 ### Response
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -115,12 +118,14 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "id": "4cce81b5-81b5-4cce-b581-ce4cb581ce4c",
+  "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
   "displayName": "String",
   "behaviorDuringRetentionPeriod": "String",
   "actionAfterRetentionPeriod": "String",
   "retentionTrigger": "String",
-  "retentionDurationInDays": "Integer",
+  "retentionDuration": {
+    "@odata.type": "microsoft.graph.security.retentionDuration"
+  },
   "isInUse": "Boolean",
   "descriptionForAdmins": "String",
   "descriptionForUsers": "String",
@@ -132,11 +137,8 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.identitySet"
   },
   "lastModifiedDateTime": "String (timestamp)",
-  "dispositionReviewStages": [
-    {
-      "@odata.type": "microsoft.graph.security.dispositionReviewStage"
-    }
-  ]
+  "labelToBeApplied": "String",
+  "defaultRecordBehavior": "String"
 }
 ```
 

@@ -30,8 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/retentionLabels/{retentionLabelId}/eventType
-DELETE /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/eventType/$ref
+DELETE /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}/$ref
+DELETE /security/triggers/retentionEvents/{retentionEventId}/retentionEventType/$ref
 ```
 
 ## Request headers

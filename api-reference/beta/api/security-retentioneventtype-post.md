@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [retentio
 ``` http
 POST https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 Content-Type: application/json
-Content-length: 208
+Content-length: 199
 
 {
   "@odata.type": "#microsoft.graph.security.retentionEventType",
