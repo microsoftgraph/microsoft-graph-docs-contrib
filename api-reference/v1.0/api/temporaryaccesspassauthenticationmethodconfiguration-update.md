@@ -62,9 +62,10 @@ If successful, this method returns a `204 No Content` response code. It does not
   "name": "update_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/v1.0/temporaryAccessPassAuthenticationMethodConfiguration
+```http
+PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 Content-Type: application/json
+
 {
   "isUsableOnce": true
 }
@@ -77,6 +78,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
