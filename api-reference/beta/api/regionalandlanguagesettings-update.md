@@ -134,6 +134,7 @@ Content-type: application/json
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -201,7 +202,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### Response
 
