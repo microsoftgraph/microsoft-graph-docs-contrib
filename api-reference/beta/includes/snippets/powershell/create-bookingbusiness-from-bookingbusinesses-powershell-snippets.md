@@ -9,7 +9,6 @@ Import-Module Microsoft.Graph.Bookings
 $params = @{
 	DisplayName = "Fourth Coffee"
 	Address = @{
-		Type = "mall"
 		PostOfficeBox = "P.O. Box 123"
 		Street = "4567 Main Street"
 		City = "Buffalo"
