@@ -1,6 +1,6 @@
 ---
 title: "National cloud deployments"
-description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
+description: "Learn about the three Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
 author: "arpitha-dhanapathi"
 ms.localizationpriority: medium
 ---
