@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of privilegedRoleAssignm
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # Get privilegedRoleAssignment

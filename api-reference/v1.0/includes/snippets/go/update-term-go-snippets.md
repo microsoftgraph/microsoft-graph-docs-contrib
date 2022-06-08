@@ -16,13 +16,10 @@ requestBody.SetLabels( []LocalizedLabel {
 		"isDefault": true,
 	}
 }
-options := &msgraphsdk.TermRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 setId := "set-id"
 termId := "term-id"
-graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Patch(options)
+graphClient.SitesById(&siteId).TermStore().SetsById(&setId).TermsById(&termId).Patch(requestBody)
 
 
 ```

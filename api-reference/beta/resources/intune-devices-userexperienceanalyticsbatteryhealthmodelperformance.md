@@ -36,6 +36,7 @@ The user experience analytics battery health model performance entity contains b
 |averageMaxCapacityPercentage|Int32|The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values -2147483648 to 2147483647|
 |averageEstimatedRuntimeInMinutes|Int32|The mean of the estimated runtimes on full charge for all devices of a given model. Unit in minutes. Valid values -2147483648 to 2147483647|
 |averageBatteryAgeInDays|Int32|The mean of the battery age for all devices of a given model in a tenant. Unit in days. Valid values -2147483648 to 2147483647|
+|modelBatteryHealthScore|Int32|A weighted average of a model’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -57,7 +58,8 @@ Here is a JSON representation of the resource.
   "manufacturer": "String",
   "averageMaxCapacityPercentage": 1024,
   "averageEstimatedRuntimeInMinutes": 1024,
-  "averageBatteryAgeInDays": 1024
+  "averageBatteryAgeInDays": 1024,
+  "modelBatteryHealthScore": 1024
 }
 ```
 

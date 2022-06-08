@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
 	Start: "2018-04-30T00:00:00Z",
 	End: "2018-05-10T00:00:00Z",
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CalendarView().Get(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

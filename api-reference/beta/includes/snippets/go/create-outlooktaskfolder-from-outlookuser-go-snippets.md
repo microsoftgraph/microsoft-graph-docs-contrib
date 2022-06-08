@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOutlookTaskFolder()
 name := "Volunteer"
 requestBody.SetName(&name)
-options := &msgraphsdk.TaskFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Outlook().TaskFolders().Post(options)
+result, err := graphClient.Me().Outlook().TaskFolders().Post(requestBody)
 
 
 ```

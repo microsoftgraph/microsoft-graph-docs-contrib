@@ -72,11 +72,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"role@odata.type": "#microsoft.graph.bookingStaffRole",
 	"workingHours@odata.type": "#Collection(microsoft.graph.bookingWorkHours)",
 }
-options := &msgraphsdk.StaffMembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).StaffMembers().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).StaffMembers().Post(requestBody)
 
 
 ```

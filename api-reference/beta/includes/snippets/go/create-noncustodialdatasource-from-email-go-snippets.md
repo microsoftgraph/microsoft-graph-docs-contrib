@@ -16,11 +16,8 @@ dataSource.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.ediscovery.userSource",
 	"email": "adelev@contoso.com",
 }
-options := &msgraphsdk.NoncustodialDataSourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).NoncustodialDataSources().Post(requestBody)
 
 
 ```

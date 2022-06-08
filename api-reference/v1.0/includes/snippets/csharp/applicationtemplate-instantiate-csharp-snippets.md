@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var displayName = "My custom name";
+var displayName = "Azure AD SAML Toolkit";
 
 await graphClient.ApplicationTemplates["{applicationTemplate-id}"]
 	.Instantiate(displayName)

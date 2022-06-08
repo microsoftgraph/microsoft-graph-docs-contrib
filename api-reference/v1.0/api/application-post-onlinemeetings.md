@@ -170,7 +170,7 @@ Content-Type: application/json
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
 
 {

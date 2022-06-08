@@ -4,7 +4,7 @@ description: "Represents resources that could be managed by Privileged Identity 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "japere"
+author: "rkarim-ms"
 ---
 
 # governanceResource resource type

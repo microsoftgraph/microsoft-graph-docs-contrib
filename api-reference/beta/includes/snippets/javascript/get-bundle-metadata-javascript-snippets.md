@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let driveItem = await client.api('/drive/bundles/{bundle-id}')
-	.version('beta')
 	.get();
 
 ```
