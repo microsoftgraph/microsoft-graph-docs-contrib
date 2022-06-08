@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If one email is attack simulation email, the email threat submission will contain attack simulation information.
+If one email is an attack simulation email, the email threat submission will contain attack simulation information.
 
 ## Properties
 | Property              | Type           | Description                          |
