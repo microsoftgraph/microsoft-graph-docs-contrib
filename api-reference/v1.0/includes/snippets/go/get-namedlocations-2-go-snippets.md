@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
 	Filter: "isof('microsoft.graph.ipNamedLocation')",
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.NamedLocationsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

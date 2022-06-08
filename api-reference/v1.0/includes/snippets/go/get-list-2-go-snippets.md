@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Get(nil)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).Get()
 
 
 ```

@@ -11,6 +11,7 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
 ### signInFrequencyAuthenticationType values
 
 |Member|
@@ -25,6 +26,39 @@ Namespace: microsoft.graph
 |:---|
 |timeBased|
 |everyTime|
+
+#### authenticationProtocol values
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+|unknownFutureValue|
+
+#### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
+### bookingsAvailabilityStatus values
+
+|Member|
+|:-----|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
 |unknownFutureValue|
 
 ### accessPackageCustomExtensionHandlerStatus values 
@@ -117,6 +151,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### protocolType values 
 
@@ -571,6 +606,37 @@ Namespace: microsoft.graph
 |mobilePhoneAndSMS|
 |unknownFutureValue|
 
+
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
+### clientCredentialType values 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
+
 ### azureADLicenseType values
 
 |Member|
@@ -892,6 +958,15 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -1771,7 +1846,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [Registry Hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -2711,6 +2786,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### callRecordingStatus values
 
@@ -2720,23 +2796,6 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
-|unknownFutureValue|
-
-### simulationStatus values
-
-|Member|
-|:---|
-|unknown|
-|draft|
-|inProgress|
-|scheduled|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelled|
-|excluded|
-|deleted|
-|included|
 |unknownFutureValue|
 
 ### payloadDeliveryPlatform values
@@ -2961,4 +3020,63 @@ Possible values for user account types (group membership), per Windows definitio
 |running|
 |succeeded|
 |failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
 |unknownFutureValue|

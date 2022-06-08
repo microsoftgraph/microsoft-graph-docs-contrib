@@ -24,11 +24,8 @@ content := "content-value"
 body.SetContent(&content)
 bodyPreview := "bodyPreview-value"
 requestBody.SetBodyPreview(&bodyPreview)
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).Messages().Post(requestBody)
 
 
 ```

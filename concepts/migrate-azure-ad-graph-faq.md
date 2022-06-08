@@ -63,8 +63,7 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 ### Method 3: Use a PowerShell script
 
-Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps).
-
+Download and run [this PowerShell script](https://github.com/microsoft/AzureADGraphApps). Use this method to retrieve apps with their home directory in your tenant and apps with their home directories in other tenants.
 
 
 ## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app, including its owner?

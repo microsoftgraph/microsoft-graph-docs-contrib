@@ -4,7 +4,7 @@ description: "Get the requester's privileged role assignment requests."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # privilegedRoleAssignmentRequest: my
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -116,7 +116,6 @@ Content-type: application/json
         "reason": "Activate the role for business purpose",
         "ticketNumber": "234",
         "ticketSystem": "system",
-        "roleInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests('e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1')/roleInfo/$entity",
         "roleInfo": {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
             "name": "Directory Readers"
@@ -139,7 +138,6 @@ Content-type: application/json
         "reason": "Activate for testing",
         "ticketNumber": "222",
         "ticketSystem": "222",
-        "roleInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests('03ea0c3d-90a0-42d4-b220-11c049c506fb')/roleInfo/$entity",
         "roleInfo": {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
             "name": "Directory Readers"

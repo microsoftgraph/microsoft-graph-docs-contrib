@@ -14,11 +14,8 @@ id := "fr-FR"
 requestBody.SetId(&id)
 signInPageText := " "
 requestBody.SetSignInPageText(&signInPageText)
-options := &msgraphsdk.LocalizationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Branding().Localizations().Post(options)
+result, err := graphClient.OrganizationById(&organizationId).Branding().Localizations().Post(requestBody)
 
 
 ```

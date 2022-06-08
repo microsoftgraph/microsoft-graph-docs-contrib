@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /applications/{applicationsId}/extensionProperties/{extensionPropertyId}
+GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
 ```
 
 ## Optional query parameters

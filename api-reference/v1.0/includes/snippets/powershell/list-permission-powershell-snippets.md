@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSite -Search "{query}" 
+Get-MgSitePermission -SiteId $siteId
 
 ```

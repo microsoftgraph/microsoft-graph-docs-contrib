@@ -3,7 +3,7 @@ title: Update printConnector
 description: Update the properties of a printConnector object.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and an updated [prin
 ## Example
 ##### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
