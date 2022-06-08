@@ -14,10 +14,7 @@ description := "Your hobby"
 requestBody.SetDescription(&description)
 dataType := "string"
 requestBody.SetDataType(&dataType)
-options := &msgraphsdk.UserFlowAttributesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().UserFlowAttributes().Post(options)
+result, err := graphClient.Identity().UserFlowAttributes().Post(requestBody)
 
 
 ```

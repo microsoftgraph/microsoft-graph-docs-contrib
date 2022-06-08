@@ -12,11 +12,8 @@ parentFolderId := "parentFolderId-value"
 requestBody.SetParentFolderId(&parentFolderId)
 displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ContactFolderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 contactFolderId := "contactFolder-id"
-graphClient.Me().ContactFoldersById(&contactFolderId).Patch(options)
+graphClient.Me().ContactFoldersById(&contactFolderId).Patch(requestBody)
 
 
 ```

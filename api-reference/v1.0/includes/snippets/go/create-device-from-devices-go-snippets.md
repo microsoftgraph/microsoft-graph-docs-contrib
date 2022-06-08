@@ -25,10 +25,7 @@ operatingSystem := "linux"
 requestBody.SetOperatingSystem(&operatingSystem)
 operatingSystemVersion := "1"
 requestBody.SetOperatingSystemVersion(&operatingSystemVersion)
-options := &msgraphsdk.DevicesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Devices().Post(options)
+result, err := graphClient.Devices().Post(requestBody)
 
 
 ```

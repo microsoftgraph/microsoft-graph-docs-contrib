@@ -18,11 +18,8 @@ requestBody.SetAnnotations( []ProfileCardAnnotation {
 		}
 	}
 }
-options := &msgraphsdk.ProfileCardPropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardProperties().Post(options)
+result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardProperties().Post(requestBody)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
-title: "Create, update, and delete connections in the Microsoft Graph"
-description: "Learn how to use Microsoft Graph to create and manage connections"
+title: "Create, update, and delete connections in Microsoft Graph"
+description: "Learn how to use Microsoft Graph to create and manage connections."
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
@@ -8,37 +8,37 @@ ms.prod: search
 ---
 <!---<author of this doc: rsamai>--->
 
-# Create, update, and delete connections in the Microsoft Graph
+# Create, update, and delete connections in Microsoft Graph
 
-Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
+Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) resource in Microsoft Graph.
 
-The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
+The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
-![Sample custom helpdesk system Tickets Connector Structure](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
+![Sample custom helpdesk system Tickets Connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
 
-*Sample custom helpdesk system Tickets Connector Structure*
+*Sample custom helpdesk system Tickets Connector structure.*
 
-![Admin View of Connections including the custom Tickets Connector](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
+![Admin view of connections including the custom Tickets Connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.svg)
 
-*Admin View of Connections including the custom Tickets Connector*
+*Admin view of connections including the custom Tickets Connector.*
 
 <!-- markdownlint-enable MD036 -->
 
-You can model a connection anyway you want, but creating one connection for every instance of your connector is the most common model. For example, each time you [set up the Microsoft Windows file share connector](/microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, creating a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
+You can model a connection any way you want, but creating one connection for every instance of your connector is the most common model. For example, each time that you [set up the Microsoft Windows file share connector](/en-us/microsoftsearch/configure-connector), a new connection is created. You can also create a single connection to add all items from your data source. For example, you can create a single connection to add all the tickets and incidents across multiple teams from your helpdesk system.
 
 ## States and operations
 
 Your connection can exist in one of the following states.
 
-| State             | Description                                                                                                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet.                                                |
-| **Ready**         | The connection is provisioned with registered schema and is ready for ingestion.                                                                          |
-| **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation.                           |
-| **LimitExceeded** | If you hit the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
+| State             | Description                |
+|-------------------|----------------------------|
+| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet. |
+| **Ready**         | The connection is provisioned with registered schema and is ready for ingestion. |
+| **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
+| **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
 
 The following table specifies which operations are available in each state.
 
@@ -57,29 +57,30 @@ The following table specifies which operations are available in each state.
 | Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) for items that will be indexed, and provides an endpoint for your service to add, update, or delete items from the index. [Creating a connection](#create-a-connection) is the first step for an application to add items to the search index.
+A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index. 
+
+The first step for an application to add items to the search index is to create a connection.
 
 ## Create a connection
 
-Before an application can add items to the search index, it must create and configure a connection using the following steps:
+Before an application can add items to the search index, it must create and configure a connection:
 
-- [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) with a unique ID, display name, and description.
-- [Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta&preserve-view=true) to define the fields that will be included in the index.
+1. [Create a connection](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) with a unique ID, display name, and description.
+2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) to define the fields that will be included in the index.
 
 > [!NOTE]
 > For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Update a connection
 
-You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta&preserve-view=true).
+To change the display name or description of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0&preserve-view=true&tabs=http).
 
 ## Delete a connection
 
-You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta&preserve-view=true), and remove all items that were indexed via that connection.
+To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0&preserve-view=true&tabs=http).
 
 ## Next steps
 
-- [Register the connection schema](/graph/connecting-external-content-manage-schema.md)
-- [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
-- Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
+- [Register the connection schema](connecting-external-content-manage-schema.md)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)

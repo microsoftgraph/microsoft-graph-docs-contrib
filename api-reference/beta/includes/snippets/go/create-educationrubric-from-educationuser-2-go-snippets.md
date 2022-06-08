@@ -45,10 +45,7 @@ requestBody.SetGrading(grading)
 grading.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
 }
-options := &msgraphsdk.RubricsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Me().Rubrics().Post(options)
+result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
 
 
 ```

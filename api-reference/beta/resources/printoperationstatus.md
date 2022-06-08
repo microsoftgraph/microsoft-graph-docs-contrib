@@ -3,7 +3,7 @@ title: printOperationStatus resource type
 description: Represents the current status of a long-running Universal Print operation.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 

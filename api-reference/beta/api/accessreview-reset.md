@@ -1,5 +1,5 @@
 ---
-title: "Reset accessReview"
+title: "Reset accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  Previous decisions are no longer recorded, but reviewers can continue to update decisions."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Reset accessReview
+# Reset accessReview (deprecated)
 
 Namespace: microsoft.graph
 
