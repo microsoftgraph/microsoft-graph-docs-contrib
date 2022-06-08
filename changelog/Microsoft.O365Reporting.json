@@ -54,7 +54,7 @@
 	  "Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
 	  "Cloud": "prd",
 	  "Version": "v1.0",
-	  "CreatedDateTime": "2022-06-06T06:29:50.0042215Z",
+	  "CreatedDateTime": "2022-05-23T06:29:50.0042215Z",
 	  "WorkloadArea": "Reports",
 	  "SubArea": "Microsoft 365 usage reports"
 	},
@@ -120,7 +120,7 @@
 		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2022-05-09T09:15:14.3122315Z",
+		"CreatedDateTime": "2022-06-06T09:15:14.3122315Z",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	},

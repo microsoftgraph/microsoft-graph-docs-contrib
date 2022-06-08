@@ -3,7 +3,7 @@ title: Update taskDefinition
 description: Update a task definition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
