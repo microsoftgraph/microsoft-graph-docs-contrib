@@ -1258,7 +1258,7 @@ The following request updates the selected range with the text of "Sample text".
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B100")
 
 {
   "values" : "Sample text"

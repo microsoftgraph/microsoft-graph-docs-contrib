@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PermissionGrantPolicy.ReadWrite.All |
+|Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | PermissionGrantPolicy.ReadWrite.All |
+|Application | Policy.ReadWrite.PermissionGrant |
 
 ## HTTP request
 
@@ -35,9 +35,9 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -77,6 +77,14 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissi
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delete-delegatedpermissionclassifications-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delete-delegatedpermissionclassifications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delete-delegatedpermissionclassifications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

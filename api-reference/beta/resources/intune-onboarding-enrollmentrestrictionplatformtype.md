@@ -2,7 +2,7 @@
 title: "enrollmentRestrictionPlatformType enum type"
 description: "This enum indicates the platform type for which the enrollment restriction applies."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -26,8 +26,8 @@ This enum indicates the platform type for which the enrollment restriction appli
 |windowsPhone|3|Windows Phone devices|
 |android|4|Android devices|
 |androidForWork|5|Android for Work devices|
-|androidAosp|6|Android AOSP devices|
 |mac|7|macOS devices|
+
 
 
 

@@ -17,7 +17,7 @@ The support for the `$search` query parameter varies by entity, with some, such 
 
 ## Using $search on message collections
 
-You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent. A `$search` request returns up to 250 results.
+You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent. A `$search` request returns up to 1000 results.
 
 If you do a search on messages and specify only a value without specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
 
@@ -120,7 +120,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ## Using $search on directory object collections
 
-Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search uses a tokenization approach which works by extracting words from your input and output string, using spaces, numbers, different casing, and symbols to separate the words, as follows:
+Azure AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject) support the `$search` query parameter only in advanced queries. The search implementation does **not** support `contains`. Instead, it uses a tokenization approach that works by extracting words from the property value and the search string using spaces, numbers, different casing, and symbols as shown in the following examples:
 
 * **Spaces**: `hello world` => `hello`, `world`
 * **Different casing**⁽¹⁾: `HelloWorld` or `helloWORLD` => `hello`, `world`
@@ -130,7 +130,7 @@ Azure AD resources and their relationships that derive from [directoryObject](/g
 ⁽¹⁾ Currently, tokenization only works when the casing is changing from lowercase to uppercase, so `HELLOworld` is considered a single token: `helloworld`, and `HelloWORld` is two tokens: `hello`, `world`. 
 ⁽²⁾ Tokenization logic also combines words that are separated only by symbols; for example, searching for `helloworld` will find `hello-world` and `hello.world`.
 
-> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order.
+> **Note**: after tokenization, the tokens are matched independently of the original casing, and they are matched in any order. For example, displayName `李四(David Li)` will match search strings such as `李四(David Li)`, `李四`, `David`, `Li`, `David)`, `(李四`, `Li 李`.
 
 The tokenized search support works only on the **displayName** and **description** fields. Any field of String type can be put in `$search`; fields other than **displayName** and **description** default to `$filter` `startswith` behavior. For example:
 
@@ -147,10 +147,9 @@ The syntax of search follows these rules:
 * Generic format: $search="clause1" \[AND \| OR\] "\[clauseX\]"\.
 * Any number of clauses is supported. Parentheses for precedence is also supported.
 * The syntax for each clause is: "\<property>:\<text to search>".
-* The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property.
-* The whole clause part must be put inside double quotes.
-* Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case.
-* Given that the whole clause part needs to be put inside double quotes, if it contains double quote and backslash, it needs to be escaped with a backslash. No other characters need to be escaped.
+* The property name must be specified in the clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startsWith" if search is not supported on the property.
+* The whole clause must be declared inside double quotes. If it contains double quotes or backslash, it should be escaped with a backslash. No other characters need to be escaped.
+* Logical `AND` and `OR` operators must be put outside double quotes and they must be in upper case.
 
 The following table shows some examples.
 
@@ -187,4 +186,4 @@ Both the string inputs you provide in `$search`, as well as the searchable prope
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
-- [Query parameter limitations](known-issues.md#query-parameter-limitations)
+- [Query parameter limitations](known-issues.md#query-parameters)

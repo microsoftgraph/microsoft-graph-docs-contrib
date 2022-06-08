@@ -1,6 +1,6 @@
 ---
 title: "List simulations"
-description: "List attack simulations of a tenant."
+description: "Get a list of attack simulation campaigns for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List attack simulations of a tenant.
+Get a list of attack simulation campaigns for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,9 +34,9 @@ GET /security/attackSimulation/simulations
 ```
 
 ## Optional query parameters
-This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`.
+This method supports the following OData query parameters to help customize the response: `$count`, `$filter`, `$orderby`, `$skiptoken`, `$top`, `$select`.
 
-The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **mode**, **status**.
+The following properties support `$filter` and `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Use `@odata.nextLink` for pagination.
 
@@ -52,6 +52,7 @@ GET /security/attackSimulation/simulations?$filter={property} eq '{property-valu
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}
 GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
 
 For general information, see [OData query parameters](/graph/query-parameters).
@@ -97,6 +98,14 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 [!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -136,16 +145,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
-      "mode": "real",
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

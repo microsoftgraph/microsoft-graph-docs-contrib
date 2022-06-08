@@ -2,7 +2,7 @@
 title: "defaultManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -83,6 +83,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Duration|A grace period before blocking app access during off clock hours. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -128,6 +129,12 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |deviceLockRequired|Boolean|Defines if any kind of lock must be required on device. (android only)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
+|appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
+|requirePinAfterBiometricChange|Boolean|A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.|
+|fingerprintAndBiometricEnabled|Boolean|Indicate to the client to enable both biometrics and fingerprints for the app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -203,6 +210,7 @@ Here is a JSON representation of the resource.
   ],
   "appActionIfUnableToAuthenticateUser": "String",
   "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
   "appDataEncryptionType": "String",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -267,9 +275,16 @@ Here is a JSON representation of the resource.
   "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
   "deviceLockRequired": true,
   "appActionIfDeviceLockNotSet": "String",
-  "connectToVpnOnLaunch": true
+  "connectToVpnOnLaunch": true,
+  "appActionIfDevicePasscodeComplexityLessThanLow": "String",
+  "appActionIfDevicePasscodeComplexityLessThanMedium": "String",
+  "appActionIfDevicePasscodeComplexityLessThanHigh": "String",
+  "requireClass3Biometrics": true,
+  "requirePinAfterBiometricChange": true,
+  "fingerprintAndBiometricEnabled": true
 }
 ```
+
 
 
 

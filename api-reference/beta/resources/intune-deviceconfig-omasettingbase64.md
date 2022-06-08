@@ -2,7 +2,7 @@
 title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -21,8 +21,8 @@ OMA Settings Base64 definition.
 Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+| Property | Type | Description |
+| --- | --- | --- |
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
@@ -53,6 +53,7 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
 
 
 

@@ -65,7 +65,6 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
-Content-length: 381
 
 {
   "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
@@ -88,6 +87,14 @@ Content-length: 381
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-plannerplan-from-planner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-plannerplan-from-planner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -105,7 +112,6 @@ Here is an example of the response. Note: The response object shown here might b
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

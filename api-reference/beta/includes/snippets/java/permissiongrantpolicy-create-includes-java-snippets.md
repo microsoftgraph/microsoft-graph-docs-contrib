@@ -8,7 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 PermissionGrantConditionSet permissionGrantConditionSet = new PermissionGrantConditionSet();
 permissionGrantConditionSet.permissionType = PermissionType.DELEGATED;
-permissionGrantConditionSet.clientApplicationsFromVerifiedPublisherOnly = true;
+permissionGrantConditionSet.certifiedClientApplicationsOnly = true;
 
 graphClient.policies().permissionGrantPolicies("{id}").includes()
 	.buildRequest()

@@ -77,7 +77,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
 Content-Type: application/json
-Content-length: 179
 
 {
     "@odata.type": "microsoft.graph.ediscovery.userSource",
@@ -98,6 +97,14 @@ Content-length: 179
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-datasource-from--1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -143,7 +150,6 @@ Content-Type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/15d80234-8320-4f10-96d0-d98d53ffdfc9/sourceCollections/39b0bafd920e4360995c62e18a5e8a49/additionalsources
 Content-Type: application/json
-Content-length: 179
 
 {
     "@odata.type": "microsoft.graph.ediscovery.siteSource",

@@ -40,8 +40,8 @@ The following is a JSON representation of the type.
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```

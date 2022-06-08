@@ -2,7 +2,7 @@
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -61,7 +61,7 @@ Devices that are managed or pre-enrolled through Intune
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
 |azureADDeviceId|String|The unique identifier for the Azure Active Directory device. Read only. This property is read-only.|
@@ -218,7 +218,6 @@ Here is a JSON representation of the resource.
   "physicalMemoryInBytes": 1024
 }
 ```
-
 
 
 

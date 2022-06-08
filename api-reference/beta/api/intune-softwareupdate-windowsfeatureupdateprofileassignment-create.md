@@ -2,7 +2,7 @@
 title: "Create windowsFeatureUpdateProfileAssignment"
 description: "Create a new windowsFeatureUpdateProfileAssignment object."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
@@ -92,6 +92,7 @@ Content-Length: 393
   }
 }
 ```
+
 
 
 

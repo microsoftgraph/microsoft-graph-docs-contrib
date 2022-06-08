@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcDeviceImages"
+title: "List deviceImages"
 description: "List the properties and relationships of OS images uploaded to Cloud PC."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -85,6 +85,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdeviceimages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdeviceimages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcdeviceimages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,7 +102,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcDeviceImage)"
+  "@odata.type": "microsoft.graph.cloudPcDeviceImage",
+  "isCollection": true
 }
 -->
 
@@ -108,7 +117,9 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
       "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
       "displayName": "Display Name value",
+      "expirationDate": "2022-11-10",
       "osBuildNumber": "OS Build Number value",
+      "osStatus": "supported",
       "operatingSystem": "Operating System value",
       "version": "Version value",
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",

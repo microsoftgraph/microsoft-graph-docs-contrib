@@ -2,7 +2,7 @@
 title: "deviceManagementAbstractComplexSettingInstance resource type"
 description: "A setting instance representing a complex value for an abstract setting"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -59,6 +59,7 @@ Here is a JSON representation of the resource.
   "implementationId": "String"
 }
 ```
+
 
 
 

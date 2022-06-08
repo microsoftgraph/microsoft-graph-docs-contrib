@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to messages in a folder"
 description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"
-author: "davidmu1"
+author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
@@ -9,7 +9,7 @@ ms.custom: graphiamtop20
 # Get incremental changes to messages in a folder
 
 Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
-[delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain
+[delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages,
 without having to fetch the entire set of the user's messages from the server every time.
 
@@ -23,7 +23,7 @@ subsequently, get incremental changes to that folder periodically.
 Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.
 
 Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET
-request is very much like the way you [get messages](/graph/api/user-list-messages?view=graph-rest-1.0),
+request is very much like the way you [get messages](/graph/api/user-list-messages),
 except that you include the **delta** function:
 
 ```http
@@ -32,17 +32,17 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 A GET request with the **delta** function returns either:
 
-- A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or
-- A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
+- A `@odata.nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or
+- A `@odata.deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
 These tokens are [state tokens](delta-query-overview.md#state-tokens) that are completely opaque to the client.
 To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET
-request to the next **delta** function call for the same folder. A `deltaLink` returned in a response
-signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL
+request to the next **delta** function call for the same folder. A `@odata.deltaLink` returned in a response
+signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and
-`deltaLink` URLs.
+See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `@odata.nextLink` and
+`@odata.deltaLink` URLs.
 
 ### Use query parameters in a delta query for messages
 
@@ -126,7 +126,7 @@ Prefer: odata.maxpagesize=2
 ### Sample initial response
 
 The response includes two messages and an `@odata.nextLink` response header.
-The `nextLink` URL indicates there are more messages in the folder to get.
+The `@odata.nextLink` URL indicates there are more messages in the folder to get.
 
 <!-- {
   "blockType": "response",
@@ -172,8 +172,8 @@ The `nextLink` URL indicates there are more messages in the folder to get.
 
 ### Sample second request
 
-The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify
-the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.
+The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify
+the same `$select` parameter as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes it.
 
 <!-- {
   "blockType": "ignored",
@@ -188,7 +188,7 @@ Prefer: odata.maxpagesize=2
 
 ### Sample second response
 
-The second response returns the next 2 messages in the folder and another `nextLink`, indicating there are
+The second response returns the next 2 messages in the folder and another `@odata.nextLink`, indicating there are
 more messages to get from the folder.
 
 <!-- {
@@ -235,7 +235,7 @@ more messages to get from the folder.
 
 ### Sample third request
 
-The third request continues to use the latest `nextLink` URL returned from the last sync request.
+The third request continues to use the latest `@odata.nextLink` URL returned from the last sync request.
 
 <!-- {
   "blockType": "ignored",
@@ -249,8 +249,8 @@ Prefer: odata.maxpagesize=2
 
 ### Sample third and final response
 
-The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates
-synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to
+The third response returns the only remaining message in the folder, and a `@odata.deltaLink` URL which indicates
+synchronization is complete for the time being for this folder. Save and use the `@odata.deltaLink` URL to
 [synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round).
 
 <!-- {
@@ -284,7 +284,7 @@ synchronization is complete for the time being for this folder. Save and use the
 
 ### Synchronize messages in the same folder in the next round
 
-Using the `deltaLink` from the [last request](#sample-third-request) in the last round,
+Using the `@odata.deltaLink` from the [last request](#sample-third-request) in the last round,
 you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
@@ -299,7 +299,7 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-The response contains a `deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. One message was deleted and the other message was changed.
+The response contains a `@odata.deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. One message was deleted and the other message was changed.
 
 <!-- {
   "blockType": "response",

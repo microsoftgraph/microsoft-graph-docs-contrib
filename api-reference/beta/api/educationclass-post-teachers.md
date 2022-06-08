@@ -54,7 +54,6 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11017/teachers/$ref
 Content-type: application/json
-Content-length: 508
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/education/users/14011"
@@ -74,6 +73,14 @@ Content-length: 508
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from-educationclass-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationuser-from-educationclass-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationuser-from-educationclass-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

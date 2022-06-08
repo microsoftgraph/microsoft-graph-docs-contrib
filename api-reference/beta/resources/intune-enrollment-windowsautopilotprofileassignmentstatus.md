@@ -2,7 +2,7 @@
 title: "windowsAutopilotProfileAssignmentStatus enum type"
 description: "Not yet documented"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -27,6 +27,7 @@ Not yet documented
 |notAssigned|4|Not assigned|
 |pending|5|Pending assignment|
 |failed|6| Assignment failed|
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "reportRoot resource type"
 description: "The resource that represents an instance of a device or troubleshooting report, depending on context."
-ms.localizationpriority: medium
+localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
 doc_type: resourcePageType

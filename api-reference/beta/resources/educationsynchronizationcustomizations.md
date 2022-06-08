@@ -49,22 +49,39 @@ This resource is member of the following data providers:
 ```json
 {
   "school": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   },
   "section": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   },
   "student": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   },
   "teacher": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   },
   "studentEnrollment": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "synchronizationStartDate": "DateTimeOffset",
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   },
   "teacherRoster": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate": "Boolean"
   }
 }
 ```

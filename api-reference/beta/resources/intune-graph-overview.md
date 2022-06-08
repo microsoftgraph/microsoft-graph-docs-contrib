@@ -1,6 +1,6 @@
 ---
-title: "Using the Intune Graph API - Microsoft Graph API"
-description: "Lists the Microsoft Graph API for Intune endpoints (REST) you can use to manage your tenant organization and its devices, apps, access, and resources."
+title: "Working with Intune in Microsoft Graph"
+description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
 author: "rolyon"
 ms.localizationpriority: high
 ms.prod: "intune"
@@ -40,6 +40,15 @@ The following example shows how you can determine whether an application is inst
 ## Using Microsoft Graph permissions
 
 Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+## Interaction between Microsoft Graph APIs for Windows updates
+
+Microsoft Graph includes two sets of APIs that you can use to manage Windows updates: 
+
+- [Intune APIs](/graph/intune-concept-overview)
+- [Windows updates APIs](/graph/windowsupdates-concept-overview)
+
+You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

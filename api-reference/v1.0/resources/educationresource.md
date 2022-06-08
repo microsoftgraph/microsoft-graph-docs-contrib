@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A base classs for all resource objects in the system. 
+A base class for [educationExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md) and [educationExternalResource](../resources/educationexternalresource.md).
 
 An educationResource is associated with an [assignment](educationassignment.md) and/or [submission](educationsubmission.md), which represents the learning object that is being handed out or handed in. You cannot instantiate a resource directly; you must make a subclass that will represent the type of resource being used.
 

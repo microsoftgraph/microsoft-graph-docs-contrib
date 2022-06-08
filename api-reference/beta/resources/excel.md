@@ -25,7 +25,7 @@ returns a collection of worksheet objects that are part of the workbook.
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.20 endpoint](../index.md) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v.20 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](/graph/permissions-reference) is required to use the Excel resource:
 
@@ -1255,7 +1255,7 @@ The following request updates the selected range with the text of "Sample text".
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets('Sheet1')/range(address="A1:B100")
 
 {
   "values" : "Sample text"

@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -111,7 +115,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors/$entity",
-    "id":"guid",
+    "id":"GUID",
     "displayName": "Test API",
     "targetUrl": "https://someapi.com/api",
     "authenticationConfiguration": {

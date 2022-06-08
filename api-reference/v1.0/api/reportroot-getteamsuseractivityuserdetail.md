@@ -51,6 +51,10 @@ In the request URL, provide one of the following parameters with a valid value.
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
@@ -60,6 +64,9 @@ Preauthenticated download URLs are only valid for a short period of time (a few 
 The CSV file has the following headers for columns:
 
 - Report Refresh Date
+- Tenant Display Name
+- Shared Channel Tenant Display Names
+- User Id
 - User Principal Name
 - Last Activity Date
 - Is Deleted
@@ -69,7 +76,25 @@ The CSV file has the following headers for columns:
 - Private Chat Message Count
 - Call Count
 - Meeting Count
+- Post Messages
+- Reply Messages
+- Urgent Messages
+- Meetings Organized Count
+- Meetings Attended Count
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Scheduled One-time Meetings Organized Count
+- Scheduled One-time Meetings Attended Count
+- Scheduled Recurring Meetings Organized Count
+- Scheduled Recurring Meetings Attended Count
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Audio Duration In Seconds
+- Video Duration In Seconds
+- Screen Share Duration In Seconds
 - Has Other Action
+- Is Licensed
 - Report Period
 
 ## Example
@@ -113,7 +138,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

@@ -15,22 +15,24 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
 
-### Subscribe to messages across channels
+### Subscribe to messages across all channels
 
 To get change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
+
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMessage.Read.All |
 
 #### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -45,22 +47,24 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to messages across chats
+### Subscribe to messages across all chats
 
 To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
+
 #### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Chat.Read.All |
 
 #### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -77,24 +81,24 @@ Content-Type: application/json
 
 ## Subscribe to messages in a channel
 
-To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
+To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams/{team-id}/channels/{channel-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only mode*.
 
 Channel-level subscriptions also support keyword-based search via the `$search` query parameter.
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |Supported in version |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|Delegated (work or school account) | ChannelMessage.Read.All | beta, v1.0 |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.Group*, ChannelMessage.Read.All  | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | ChannelMessage.Read.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example 1: Subscribe to all messages (and replies) in a channel
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -114,7 +118,7 @@ Content-Type: application/json
 The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -132,7 +136,7 @@ Content-Type: application/json
 ### Example 3: Subscribe to messages (and replies) in a channel without resource data
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -150,7 +154,7 @@ Content-Type: application/json
 To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -165,7 +169,7 @@ Content-Type: application/json
 
 ## Subscribe to messages in a chat
 
-To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats/{chat-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
+To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats/{chat-id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and  *application-only mode*.
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -173,18 +177,18 @@ Chat-level subscriptions also support keyword-based search via the `$search` que
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported in version |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read | beta, v1.0 |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChatMessage.Read.Chat*, Chat.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.Read |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChatMessage.Read.Chat*, Chat.Read.All |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) for the beta version only currently.
 
 ### Example 1: Subscribe to messages in a chat
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -204,7 +208,7 @@ Content-Type: application/json
 The following request will send messages that contain `Hello` to the subscriber.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -222,7 +226,7 @@ Content-Type: application/json
 ### Example 3: Subscribe to messages (and replies) in a chat without resource data
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
@@ -239,7 +243,7 @@ Content-Type: application/json
 To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -252,9 +256,9 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes at the user level
+## Subscribe to changes at the user level (preview)
 
-To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes. This subscription is only available in the beta endpoint.
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
@@ -262,11 +266,11 @@ User-level chat messaging subscriptions also support keyword-based search via th
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported in version |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read, Chat.ReadWrite | beta |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All, Chat.ReadWrite.All | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Chat.Read.All, Chat.ReadWrite.All |
 
 ### Example: Subscribe to messages across all chats a particular user is part of
 

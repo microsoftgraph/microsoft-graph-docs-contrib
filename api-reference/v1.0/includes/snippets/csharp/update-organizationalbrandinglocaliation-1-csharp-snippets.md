@@ -14,6 +14,7 @@ var organizationalBranding = new OrganizationalBranding
 
 await graphClient.Organization["{organization-id}"].Branding
 	.Request()
+	.Header("Accept-Language","0")
 	.UpdateAsync(organizationalBranding);
 
 ```

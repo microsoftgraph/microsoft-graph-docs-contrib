@@ -2,7 +2,7 @@
 title: "windowsFirewallRule resource type"
 description: "A rule controlling traffic through the Windows Firewall."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -76,6 +76,7 @@ Here is a JSON representation of the resource.
   "localUserAuthorizations": "String"
 }
 ```
+
 
 
 

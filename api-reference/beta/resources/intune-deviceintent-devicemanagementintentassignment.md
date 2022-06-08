@@ -2,7 +2,7 @@
 title: "deviceManagementIntentAssignment resource type"
 description: "Intent assignment entity"
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
@@ -55,6 +55,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

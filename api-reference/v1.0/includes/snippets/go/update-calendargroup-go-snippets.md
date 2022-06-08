@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+requestBody := msgraphsdk.NewCalendarGroup()
+name := "name-value"
+requestBody.SetName(&name)
+calendarGroupId := "calendarGroup-id"
+graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(requestBody)
+
+
+```

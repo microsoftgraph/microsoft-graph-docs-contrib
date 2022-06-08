@@ -2,7 +2,7 @@
 title: "edgeCookiePolicy enum type"
 description: "Possible values to specify which cookies are allowed in Microsoft Edge."
 author: "dougeby"
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
 ---
@@ -22,7 +22,6 @@ Possible values to specify which cookies are allowed in Microsoft Edge.
 |allow|1|Allow.|
 |blockThirdParty|2|Block only third party cookies.|
 |blockAll|3|Block all cookies.|
-
 
 
 
