@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# baseTask: delta
+# baseTask: delta (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Get a set of [baseTask](../resources/basetask.md) resources that have been added, deleted, or updated in a specific [baseTaskList](../resources/basetasklist.md).
 

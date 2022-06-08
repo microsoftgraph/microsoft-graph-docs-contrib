@@ -8,6 +8,9 @@ Import-Module Microsoft.Graph.Users
 
 $params = @{
 	Title = "A new task"
+	Categories = @(
+		"Important"
+	)
 	LinkedResources = @(
 		@{
 			WebUrl = "http://microsoft.com"

@@ -313,6 +313,10 @@ The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might re
 
 In the future, either permission will be sufficient to call both methods.
 
+### Linux-based devices can't be updated by an app with application permissions
+
+When an app with application permissions attempts to update any properties of the device object where the **operationSystem** property is `linux`, apart from the **extensionAttributes** property, the [Update device](/graph/api/device-update) API returns a `400 Bad request` error code with the error message "Properties other than ExtendedAttribute1..15 can be modified only on windows devices.". Use delegated permissions to update the properties of Linux-based devices.
+
 ## JSON batching
 
 ### Nested batches are not supported

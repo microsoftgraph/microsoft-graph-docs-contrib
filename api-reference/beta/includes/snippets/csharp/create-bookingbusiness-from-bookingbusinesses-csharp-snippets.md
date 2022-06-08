@@ -11,7 +11,6 @@ var bookingBusiness = new BookingBusiness
 	DisplayName = "Fourth Coffee",
 	Address = new PhysicalAddress
 	{
-		Type = PhysicalAddressType.Unknown,
 		PostOfficeBox = "P.O. Box 123",
 		Street = "4567 Main Street",
 		City = "Buffalo",

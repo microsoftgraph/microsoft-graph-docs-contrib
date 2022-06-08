@@ -79,6 +79,42 @@ $params = @{
 			}
 		)
 	}
+	ReviewSettings = @{
+		IsEnabled = $true
+		ExpirationBehavior = "keepAccess"
+		IsRecommendationEnabled = $true
+		IsReviewerJustificationRequired = $true
+		IsSelfReview = $false
+		Schedule = @{
+			StartDateTime = [System.DateTime]::Parse("2022-07-02T06:59:59.998Z")
+			Expiration = @{
+				Duration = "P14D"
+				Type = "afterDuration"
+			}
+			Recurrence = @{
+				Pattern = @{
+					Type = "absoluteMonthly"
+					Interval = 3
+					Month = 0
+					DayOfMonth = 0
+					DaysOfWeek = @(
+					)
+				}
+				Range = @{
+					Type = "noEnd"
+					NumberOfOccurrences = 0
+				}
+			}
+		}
+		PrimaryReviewers = @(
+			@{
+				"@odata.type" = "#microsoft.graph.groupMembers"
+				GroupId = "1623f912-5e86-41c2-af47-39dd67582b66"
+			}
+		)
+		FallbackReviewers = @(
+		)
+	}
 	AccessPackage = @{
 		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"
 	}
