@@ -11,11 +11,8 @@ requestBody := msgraphsdk.NewAuthorizationPolicy()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b",
 }
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 authorizationPolicyId := "authorizationPolicy-id"
-graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(options)
+graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(requestBody)
 
 
 ```

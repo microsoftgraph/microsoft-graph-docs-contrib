@@ -23,16 +23,21 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions to add an existing user, group, or device
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
 ### Permissions to create a new group
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+To add a member to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Privileged Role Administrator
+* Global Administrator
 
 ## HTTP request
 
@@ -117,10 +122,6 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

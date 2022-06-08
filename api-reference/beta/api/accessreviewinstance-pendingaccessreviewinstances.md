@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 >[!NOTE]
 >This method will be deprecated and will stop returning data on May 19, 2023. It has been replaced by [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 
->[!NOTE]
->The default page size for this API is 100 accessReviewInstance objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
-
 Retrieve the [accessReviewInstance](../resources/accessreviewinstance.md) objects pending approval by the calling user. A list of zero or more accessReviewInstance objects are returned, of which the calling user is an assigned reviewer.
 
 ## Permissions
@@ -38,6 +35,8 @@ GET /me/pendingAccessReviewInstances
 
 ## Optional query parameters
 This method supports `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The default page size for this API is 100 **accessReviewInstance** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Request headers
 None.

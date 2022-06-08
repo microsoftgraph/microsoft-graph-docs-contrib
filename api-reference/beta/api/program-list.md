@@ -1,5 +1,5 @@
 ---
-title: "List programs"
+title: "List programs (deprecated)"
 description: "In the Azure AD access reviews feature, list all the program objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List programs
+# List programs (deprecated)
 
 Namespace: microsoft.graph
 

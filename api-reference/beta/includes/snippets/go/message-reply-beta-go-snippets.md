@@ -20,11 +20,8 @@ message.SetToRecipients( []Recipient {
 }
 comment := "Samantha, Randi, would you name the group please?"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Reply().Post(options)
+graphClient.Me().MessagesById(&messageId).Reply(message-id).Post(requestBody)
 
 
 ```

@@ -31,39 +31,40 @@ Content types allow you to define a set of columns that must be present on every
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copy a file to default content location in a [contentType](../resources/contenttype.md).|
 |[List columns](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columnDefinition.md) collection|Get a collection of columns, represented as [columnDefinition](../resources/columnDefinition.md) resources, in a **contentType**.|
 |[Create column](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Add a column to a **content type** in a site or list.|
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[contentType](../resources/contenttype.md) collection|Get a list of compatible content types from the content type hub that can be added to a target [site](../resources/site.md) or a [list](../resources/list.md).|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)|Add or sync a copy of a published content type from the content type hub to a target [site](../resources/site.md) or a [list](../resources/list.md).|
 
 
 ## Properties
 
-| Property name     | Type                 | Description|
+| Property     | Type                 | Description|
 |:------------------|:---------------------|:----------------------------------|
-| **description**   | string               | The descriptive text for the item.|
-| **group**         | string               | The name of the group this content type belongs to. Helps organize related content types.|
-| **hidden**        | Boolean              | Indicates whether the content type is hidden in the list's 'New' menu.|
-| **id**            | string               | The unique identifier of the content type.|
-| **inheritedFrom** | [itemReference][]    | If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined.|
-| **name**          | string               | The name of the content type.|
-| **order**         | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.|
-| **parentId**      | string               | The unique identifier of the content type.|
-| **readOnly**      | Boolean              | If `true`, the content type can't be modified unless this value is first set to `false`.|
-| **sealed**        | Boolean              | If `true`, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
-| **isBuiltIn**            | Boolean| Specifies if a content type is a built-in content type. |
-| **documentSet**       | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
-| **documentTemplate**  | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
-| **associatedHubsUrls**       | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
-| **propagateChanges**   | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
-
+| associatedHubsUrls         | Collection(string) | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
+| description       | string               | The descriptive text for the item.|
+| documentSet         | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
+| documentTemplate    | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
+| group             | string               | The name of the group this content type belongs to. Helps organize related content types.|
+| hidden            | Boolean              | Indicates whether the content type is hidden in the list's 'New' menu.|
+| id                | string               | The unique identifier of the content type.|
+| inheritedFrom   | [itemReference][]    | If this content type is inherited from another scope (like a site), provides a reference to the item where the content type is defined.|
+| isBuiltIn            | Boolean| Specifies if a content type is a built-in content type. |
+| name              | string               | The name of the content type.|
+| order             | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.|
+| parentId          | string               | The unique identifier of the content type.|
+| propagateChanges     | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
+| readOnly          | Boolean              | If `true`, the content type can't be modified unless this value is first set to `false`.|
+| sealed            | Boolean              | If `true`, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
 
 
 ## Relationships
 
-| Property name   | Type                      | Description|
+| Relationship    | Type                      | Description|
 |:----------------|:--------------------------|:-------------------------------|
-| **base**   | [contentType][]  | Parent contentType from which this content type is derived. |
-| **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type.|
-| **baseTypes**   | Collection([contentType][])     | The collection of content types that are ancestors of this content type.|
-| **columnPositions**       | Collection([columnDefinition][]) | Column order information in a content type.|
-| **columns**     | Collection([columnDefinition][])  | The collection of column definitions for this contentType.|
+| base     | [contentType][]  | Parent contentType from which this content type is derived. |
+| columnLinks   | [columnLink][] collection | The collection of columns that are required by this content type.|
+| baseTypes     | Collection([contentType][])     | The collection of content types that are ancestors of this content type.|
+| columnPositions         | Collection([columnDefinition][]) | Column order information in a content type.|
+| columns       | Collection([columnDefinition][])  | The collection of column definitions for this contentType.|
 
 For more information, see [Introduction to content types and content type publishing][contentTypeIntro].
 
@@ -84,26 +85,26 @@ The following is a JSON representation of a **contentType** resource.
 
 ```json
 {
+  "associatedHubsUrls" : ["string"],
+  "base": { "@type": "microsoft.graph.contentType" },
+  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
+  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }],
+  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
+  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
   "description": "string",
+  "documentSet" : { "@type": "microsoft.graph.documentSet" },
+  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
   "group": "string",
   "hidden": false,
   "id": "string",
   "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
+  "isBuiltIn" : false,
   "name": "string",
   "order": { "@type": "microsoft.graph.contentTypeOrder" },
   "parentId": "string",
-  "readOnly": false,
-  "sealed": false,
-  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }],
-  "base": { "@type": "microsoft.graph.contentType" },
-  "columnPositions" : [{ "@type": "microsoft.graph.columnDefinition" }],
-  "isBuiltIn" : false,
-  "documentSet" : { "@type": "microsoft.graph.documentSet" },
-  "documentTemplate" : { "@type": "microsoft.graph.documentSetContent" },
-  "associatedHubsUrls" : ["string"],
   "propagateChanges" : false,
-  "baseTypes" : [{ "@type": "microsoft.graph.contentType" }],
-  "columns" : [{ "@type": "microsoft.graph.columnDefinition" }]
+  "readOnly": false,
+  "sealed": false
 }
 ```
 

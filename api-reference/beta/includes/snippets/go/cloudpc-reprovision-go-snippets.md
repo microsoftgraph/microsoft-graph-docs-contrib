@@ -12,11 +12,8 @@ userAccountType := "administrator"
 requestBody.SetUserAccountType(&userAccountType)
 osVersion := "windows10"
 requestBody.SetOsVersion(&osVersion)
-options := &msgraphsdk.ReprovisionRequestBuilderPostOptions{
-	Body: requestBody,
-}
 cloudPCId := "cloudPC-id"
-graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Reprovision().Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().CloudPCsById(&cloudPCId).Reprovision(cloudPC-id).Post(requestBody)
 
 
 ```

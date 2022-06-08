@@ -34,10 +34,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
 		"teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4",
 	}
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Chats().Post(options)
+result, err := graphClient.Chats().Post(requestBody)
 
 
 ```

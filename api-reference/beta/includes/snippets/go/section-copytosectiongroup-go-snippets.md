@@ -14,11 +14,8 @@ groupId := "groupId-value"
 requestBody.SetGroupId(&groupId)
 renameAs := "renameAs-value"
 requestBody.SetRenameAs(&renameAs)
-options := &msgraphsdk.CopyToSectionGroupRequestBuilderPostOptions{
-	Body: requestBody,
-}
 onenoteSectionId := "onenoteSection-id"
-result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToSectionGroup().Post(options)
+result, err := graphClient.Me().Onenote().SectionsById(&onenoteSectionId).CopyToSectionGroup(onenoteSection-id).Post(requestBody)
 
 
 ```

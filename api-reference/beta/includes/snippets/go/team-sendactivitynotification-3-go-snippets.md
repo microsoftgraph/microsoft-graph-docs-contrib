@@ -35,11 +35,8 @@ requestBody.SetTemplateParameters( []KeyValuePair {
 		"value": "6788662",
 	}
 }
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

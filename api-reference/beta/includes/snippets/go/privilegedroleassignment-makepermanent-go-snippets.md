@@ -14,11 +14,8 @@ ticketNumber := "ticketNumber-value"
 requestBody.SetTicketNumber(&ticketNumber)
 ticketSystem := "ticketSystem-value"
 requestBody.SetTicketSystem(&ticketSystem)
-options := &msgraphsdk.MakePermanentRequestBuilderPostOptions{
-	Body: requestBody,
-}
 privilegedRoleAssignmentId := "privilegedRoleAssignment-id"
-result, err := graphClient.PrivilegedRoleAssignmentsById(&privilegedRoleAssignmentId).MakePermanent().Post(options)
+result, err := graphClient.PrivilegedRoleAssignmentsById(&privilegedRoleAssignmentId).MakePermanent(privilegedRoleAssignment-id).Post(requestBody)
 
 
 ```

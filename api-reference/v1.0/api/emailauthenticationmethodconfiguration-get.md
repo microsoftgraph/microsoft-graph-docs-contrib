@@ -84,6 +84,10 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 [!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-emailauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -107,7 +111,6 @@ Content-Type: application/json
     "id": "Email",
     "state": "enabled",
     "allowExternalIdToUseEmailOtp": "default",
-    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": []
 }
 ```

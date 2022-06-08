@@ -3,7 +3,7 @@ title: "secureScore resource type"
 description: "Represents a tenant's secure score per day of scoring data, at the tenant and control level."
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ""
+ms.prod: security
 doc_type: resourcePageType
 ---
 

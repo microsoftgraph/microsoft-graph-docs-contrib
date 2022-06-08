@@ -20,11 +20,8 @@ message.SetAttachments( []Attachment {
 }
 comment := "if the project gets approved, please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.CreateReplyAllRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll().Post(options)
+result, err := graphClient.Me().MessagesById(&messageId).CreateReplyAll(message-id).Post(requestBody)
 
 
 ```

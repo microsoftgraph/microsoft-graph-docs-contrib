@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
 	Select: "displayName,emailAddresses",
 }
-options := &msgraphsdk.ContactsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ContactsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Contacts().Get(options)
+result, err := graphClient.Me().Contacts().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

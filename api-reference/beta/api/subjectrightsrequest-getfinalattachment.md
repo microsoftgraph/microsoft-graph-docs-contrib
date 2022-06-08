@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
@@ -43,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `302` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200` response code.
 
 ## Examples
 
@@ -90,6 +93,6 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 302 
+HTTP/1.1 200 
 ```
 

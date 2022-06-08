@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Retrieve the properties and relationships of a subscription.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
@@ -23,9 +25,10 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
-|[channels](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[channels](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[channel](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[channel](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) (/chats – all chats in an organization) | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -46,14 +49,14 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[online meeting](../resources/onlinemeeting.md) | Not supported | Not supported | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
+|[team](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
+|[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -72,9 +75,9 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-### presence
+### onlineMeetings, presence
 
-**presence** subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified.
+**onlineMeetings** and **presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications with resource data. Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) are not specified if resource data is desired in notifications.
 
 ## HTTP request
 

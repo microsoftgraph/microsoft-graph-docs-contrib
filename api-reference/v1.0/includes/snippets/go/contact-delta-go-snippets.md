@@ -13,12 +13,12 @@ requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"Prefer": "odata.maxpagesize=2"
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
 contactFolderId := "contactFolder-id"
-result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()().Get(options)
+result, err := graphClient.Me().ContactFoldersById(&contactFolderId).Contacts().Delta()(contactFolder-id).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

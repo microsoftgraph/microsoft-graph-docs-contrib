@@ -17,8 +17,6 @@ The partner-specific configuration that is defined for inbound and outbound sett
 
 For any partner-specific property that is `null`, these settings will inherit the behavior configured in your [default cross tenant access settings](../resources/crosstenantaccesspolicyconfigurationdefault.md).
 
-Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -33,13 +31,13 @@ Inherits from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenan
 
 |Property|Type|Description|
 |:---|:---|:---|
-| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
-| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. Inherited from [crossTenantAccessPolicyConfigurationBase](../resources/crosstenantaccesspolicyconfigurationbase.md). |
+| b2bCollaborationInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. |
+| b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. |
+| b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. |
+| b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. |
+| inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. |
 | isServiceProvider | Boolean | Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization. |
-| tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only.|
+| tenantId | String | The tenant identifier for the partner Azure AD organization. Read-only. Key.|
 
 ## Relationships
 
@@ -50,9 +48,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "keyProperty": "tenantId",
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "baseType": "microsoft.graph.crossTenantAccessPolicyConfigurationBase",
   "openType": false
 }
 -->
@@ -60,7 +57,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
-  "tenantId": "String",
+  "tenantId": "String (identifier)",
   "inboundTrust": {
     "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
   },

@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 [!INCLUDE [sample-code](../includes/snippets/java/get-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +125,6 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

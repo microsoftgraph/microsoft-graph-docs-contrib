@@ -10,7 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
 checklistItemId := "checklistItem-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Delete(nil)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).ChecklistItemsById(&checklistItemId).Delete()
 
 
 ```

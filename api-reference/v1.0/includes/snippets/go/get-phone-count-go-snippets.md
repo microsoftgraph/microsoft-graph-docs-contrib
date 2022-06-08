@@ -14,11 +14,11 @@ requestParameters := &msgraphsdk.ContactsRequestBuilderGetQueryParameters{
 headers := map[string]string{
 	"ConsistencyLevel": "eventual"
 }
-options := &msgraphsdk.ContactsRequestBuilderGetOptions{
-	Q: requestParameters,
-	H: headers,
+options := &msgraphsdk.ContactsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+	Headers: headers,
 }
-result, err := graphClient.Contacts().Get(options)
+result, err := graphClient.Contacts().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
