@@ -14,11 +14,12 @@ items:
       - name: What's new
         expanded: true
         items:
-          - name: What's new highlights
+          - name: Highlights
             href: whats-new-overview.md
+            displayName: what's new, updates
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
-            displayName: API changes, API updates, Microsoft Graph API, REST API, what's new, REST API updates
+            displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
       - name: Users you can reach
         items:
           - name: Overview
