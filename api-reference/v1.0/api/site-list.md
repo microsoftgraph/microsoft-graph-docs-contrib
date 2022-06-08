@@ -64,7 +64,7 @@ GET /sites?$filter=siteCollection/root ne null
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 
 #### Response
@@ -108,7 +108,7 @@ Content-type: application/json
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites
+GET https://graph.microsoft.com/v1.0/sites
 ```
 
 #### Response
