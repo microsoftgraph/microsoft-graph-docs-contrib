@@ -13,7 +13,6 @@ const client = Client.init(options);
 const bookingBusiness = {
     displayName: 'Fourth Coffee',
     address: {
-        type: 'mall',
         postOfficeBox: 'P.O. Box 123',
         street: '4567 Main Street',
         city: 'Buffalo',
