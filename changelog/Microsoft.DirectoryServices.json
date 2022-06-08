@@ -21,6 +21,32 @@
     {
       "ChangeList": [
         {
+          "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certification",
+          "ChangeType": "Addition",
+          "Description": "Added the [certification](https://docs.microsoft.com/en-us/graph/api/resources/certification?view=graph-rest-1.0) resource type.",
+          "Target": "certification"
+        },
+        {
+          "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+          "ApiChange": "Property",
+          "ChangedApiName": "certification",
+          "ChangeType": "Addition",
+          "Description": "Added the **certification** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "88e98c49-306f-4dce-9db9-346b419e47b0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-07T20:38:14.1082268Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "67f39501-d577-4136-a5a9-1187a7ce9dde",
           "ApiChange": "Parameter",
           "ChangedApiName": "proxyAddresses",
