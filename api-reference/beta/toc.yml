@@ -11858,13 +11858,13 @@ items:
                 href: api/unifiedrbacresourcenamespace-list-resourceactions.md
               - name: Get
                 href: api/unifiedrbacresourceaction-get.md
-        - name: Tenant information
-          href: resources/tenantrelationshiproot.md
-          items:
-            - name: Find tenant by domain name
-              href: api/tenantrelationshiproot-findtenantinformationbydomainname.md
-            - name: Find tenant by tenant ID
-              href: api/tenantrelationshiproot-findtenantinformationbytenantid.md
+          - name: Tenant information
+            href: resources/tenantrelationshiproot.md
+            items:
+              - name: Find tenant by domain name
+                href: api/tenantrelationshiproot-findtenantinformationbydomainname.md
+              - name: Find tenant by tenant ID
+                href: api/tenantrelationshiproot-findtenantinformationbytenantid.md
           - name: Privileged identity management
             displayName: Privileged identity management, PIM
             href: resources/privilegedidentitymanagementv3-overview.md
