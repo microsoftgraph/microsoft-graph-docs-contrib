@@ -18,11 +18,9 @@ For content that has a label set for a disposition review at the end of a retetn
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dispositionReviewStages](../api/security-retentionlabel-list-dispositionreviewstages.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Get a list of the [dispositionReviewStage](../resources/security-dispositionreviewstage.md) objects and their properties.|
-|[Create dispositionReviewStage](../api/security-retentionlabel-post-dispositionreviewstages.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Create a new [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
-|[Get dispositionReviewStage](../api/security-dispositionreviewstage-get.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Read the properties and relationships of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
-|[Update dispositionReviewStage](../api/security-dispositionreviewstage-update.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Update the properties of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
-|[Delete dispositionReviewStage](../api/security-retentionlabel-delete-dispositionreviewstages.md)|None|Deletes a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Create dispositionReviewStage](../api/security-retentionlabel-post.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Create a new [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Update dispositionReviewStage](../api/security-retentionlabel-update.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Update the properties of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+
 
 ## Properties
 |Property|Type|Description|

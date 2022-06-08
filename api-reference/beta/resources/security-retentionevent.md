@@ -23,8 +23,8 @@ Namespace: microsoft.graph.security
 |[Create retentionEvent](../api/security-retentionevent-post.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Create a new [retentionEvent](../resources/security-retentionevent.md) object.|
 |[Get retentionEvent](../api/security-retentionevent-get.md)|[microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md)|Read the properties and relationships of a [retentionEvent](../resources/security-retentionevent.md) object.|
 |[Delete retentionEvent](../api/security-retentionevent-delete.md)|None|Deletes a [retentionEvent](../resources/security-retentionevent.md) object.|
-|[List retentionEventType](../api/security-retentionlabel-list-retentioneventtype.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the expand retentionEventType navigation property.|
-|[Add retentionEventType](../api/security-retentionevent-post-retentioneventtype.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Create a retentionEvent by adding the relevant retentionEventType by posting to the odata for retentionEventType collection.|
+|[List retentionEventType](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the exapnd eventType navigation property.|
+|[Add retentionEventType](../api/security-retentioneventtype-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by adding the relevant odata property when creating an event.|
 
 
 ## Properties
@@ -35,7 +35,7 @@ Namespace: microsoft.graph.security
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
 |eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Status and errors of the Event Sync.|
-|eventQueries|[microsoft.graph.security.eventQuery](../resources/security-eventquery.md) collection| Specifies property value pairs: the workload type (SPO. ODB, EXO) and identification for an item to scope the retention event.|
+|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Specifies property value pairs: the workload type (SPO. ODB, EXO) and identification for an item to scope the retention event.|
 |eventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Specifies the number of processed documents per workload.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |id|String|Represents the user who created the [entity](/graph/api/resources/entity).|

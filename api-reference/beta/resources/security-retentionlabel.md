@@ -46,6 +46,7 @@ Represents how customers can manage their data, whether and for how long to reta
 |defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
 |labelToBeApplied|String|Specifies the replacement label to be automatically applied once the retention period of the current label is completed. |
 
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
