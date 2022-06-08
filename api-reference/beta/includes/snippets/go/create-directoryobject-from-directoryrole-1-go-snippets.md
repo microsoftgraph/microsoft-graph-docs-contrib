@@ -12,8 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/users/0f933635-5b77-4cf4-a577-f78a5eb090a2",
 }
 directoryRoleId := "directoryRole-id"
-directoryObjectId := "directoryObject-id"
-graphClient.DirectoryRolesById(&directoryRoleId).MembersById(&directoryObjectId).Post(requestBody)
+result, err := graphClient.DirectoryRolesById(&directoryRoleId).Members().$ref().Post(requestBody)
 
 
 ```

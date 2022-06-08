@@ -3,6 +3,392 @@
     {
       "ChangeList": [
         {
+          "Id": "5379ae92-4f43-49a1-8a24-8ebd760e3c3c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReportSchedule",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deviceManagementReportSchedule** resource type.",
+          "Target": "deviceManagementReportSchedule"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Member",
+          "ChangedApiName": "photoLibrary",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoLibrary** member to the **managedAppDataIngestionLocation** enumeration.",
+          "Target": "managedAppDataIngestionLocation"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Member",
+          "ChangedApiName": "photoLibrary",
+          "ChangeType": "Addition",
+          "Description": "Added the **photoLibrary** member to the **managedAppDataStorageLocation** enumeration.",
+          "Target": "managedAppDataStorageLocation"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "windowsManagedAppClipboardSharingLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsManagedAppClipboardSharingLevel** enumeration type.",
+          "Target": "windowsManagedAppClipboardSharingLevel"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "windowsManagedAppDataTransferLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsManagedAppDataTransferLevel** enumeration type.",
+          "Target": "windowsManagedAppDataTransferLevel"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "fingerprintAndBiometricEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **fingerprintAndBiometricEnabled** property to the [androidManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "androidManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "requireClass3Biometrics",
+          "ChangeType": "Addition",
+          "Description": "Added the **requireClass3Biometrics** property to the [androidManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "androidManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "requirePinAfterBiometricChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **requirePinAfterBiometricChange** property to the [androidManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "androidManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "fingerprintAndBiometricEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **fingerprintAndBiometricEnabled** property to the [defaultManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-defaultManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "defaultManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "requireClass3Biometrics",
+          "ChangeType": "Addition",
+          "Description": "Added the **requireClass3Biometrics** property to the [defaultManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-defaultManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "defaultManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Property",
+          "ChangedApiName": "requirePinAfterBiometricChange",
+          "ChangeType": "Addition",
+          "Description": "Added the **requirePinAfterBiometricChange** property to the [defaultManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-defaultManagedAppProtection?view=graph-rest-beta) resource.",
+          "Target": "defaultManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsManagedAppProtections",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsManagedAppProtections** relationship to the [deviceAppManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceAppManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceAppManagement"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsManagedAppProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsManagedAppProtection](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsManagedAppProtection?view=graph-rest-beta) resource",
+          "Target": "windowsManagedAppProtection"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the [assign](https://docs.microsoft.com/en-us/graph/api/intune-assign?view=graph-rest-beta) method to the [assign](https://docs.microsoft.com/en-us/graph/api/intune-assign?view=graph-rest-beta) resource.",
+          "Target": "assign"
+        },
+        {
+          "Id": "58e302cf-573b-4f7c-95e3-ec351e349483",
+          "ApiChange": "Method",
+          "ChangedApiName": "targetApps",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetApps](https://docs.microsoft.com/en-us/graph/api/intune-targetApps?view=graph-rest-beta) method to the [targetApps](https://docs.microsoft.com/en-us/graph/api/intune-targetApps?view=graph-rest-beta) resource.",
+          "Target": "targetApps"
+        },
+        {
+          "Id": "50a70c0a-8901-4bc1-ac8c-3d5a23e68627",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementReports?view=graph-rest-beta) resource",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "50a70c0a-8901-4bc1-ac8c-3d5a23e68627",
+          "ApiChange": "Method",
+          "ChangedApiName": "getZebraFotaDeploymentReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getZebraFotaDeploymentReport](https://docs.microsoft.com/en-us/graph/api/intune-getZebraFotaDeploymentReport?view=graph-rest-beta) method to the [getZebraFotaDeploymentReport](https://docs.microsoft.com/en-us/graph/api/intune-getZebraFotaDeploymentReport?view=graph-rest-beta) resource.",
+          "Target": "getZebraFotaDeploymentReport"
+        },
+        {
+          "Id": "48806efa-8aae-4e57-940a-ee7146741c57",
+          "ApiChange": "Property",
+          "ChangedApiName": "renewalThresholdPercentage",
+          "ChangeType": "Addition",
+          "Description": "Added the **renewalThresholdPercentage** property to the [deviceManagementDerivedCredentialSettings](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementDerivedCredentialSettings?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementDerivedCredentialSettings"
+        },
+        {
+          "Id": "fe1491d7-3695-406e-908f-ccf9619a9c23",
+          "ApiChange": "Property",
+          "ChangedApiName": "modelBatteryHealthScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **modelBatteryHealthScore** property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsBatteryHealthModelPerformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "fe1491d7-3695-406e-908f-ccf9619a9c23",
+          "ApiChange": "Property",
+          "ChangedApiName": "batteryHealthScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **batteryHealthScore** property to the [userExperienceAnalyticsDeviceScores](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsDeviceScores?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsDeviceScores"
+        },
+        {
+          "Id": "fe1491d7-3695-406e-908f-ccf9619a9c23",
+          "ApiChange": "Property",
+          "ChangedApiName": "batteryHealthScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **batteryHealthScore** property to the [userExperienceAnalyticsModelScores](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsModelScores?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsModelScores"
+        },
+        {
+          "Id": "fe1491d7-3695-406e-908f-ccf9619a9c23",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeDeviceFirmwareConfigurationInterfaceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeDeviceFirmwareConfigurationInterfaceManagement](https://docs.microsoft.com/en-us/graph/api/intune-removeDeviceFirmwareConfigurationInterfaceManagement?view=graph-rest-beta) method to the [removeDeviceFirmwareConfigurationInterfaceManagement](https://docs.microsoft.com/en-us/graph/api/intune-removeDeviceFirmwareConfigurationInterfaceManagement?view=graph-rest-beta) resource.",
+          "Target": "removeDeviceFirmwareConfigurationInterfaceManagement"
+        },
+        {
+          "Id": "05e2202c-e158-43c7-be74-30192bba3b9d",
+          "ApiChange": "Method",
+          "ChangedApiName": "createEnrollmentNotificationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [createEnrollmentNotificationConfiguration](https://docs.microsoft.com/en-us/graph/api/intune-createEnrollmentNotificationConfiguration?view=graph-rest-beta) method to the [createEnrollmentNotificationConfiguration](https://docs.microsoft.com/en-us/graph/api/intune-createEnrollmentNotificationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "createEnrollmentNotificationConfiguration"
+        },
+        {
+          "Id": "05e2202c-e158-43c7-be74-30192bba3b9d",
+          "ApiChange": "Method",
+          "ChangedApiName": "createEnrollmentNotificationConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **createEnrollmentNotificationConfiguration** method from the [createEnrollmentNotificationConfiguration](https://docs.microsoft.com/en-us/graph/api/intune-createEnrollmentNotificationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "createEnrollmentNotificationConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Member",
+          "ChangedApiName": "face",
+          "ChangeType": "Addition",
+          "Description": "Added the **face** member to the **androidKeyguardFeature** enumeration.",
+          "Target": "androidKeyguardFeature"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Member",
+          "ChangedApiName": "iris",
+          "ChangeType": "Addition",
+          "Description": "Added the **iris** member to the **androidKeyguardFeature** enumeration.",
+          "Target": "androidKeyguardFeature"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Member",
+          "ChangedApiName": "biometrics",
+          "ChangeType": "Addition",
+          "Description": "Added the **biometrics** member to the **androidKeyguardFeature** enumeration.",
+          "Target": "androidKeyguardFeature"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "workProfilePasswordRequireUnlock",
+          "ChangeType": "Addition",
+          "Description": "Added the **workProfilePasswordRequireUnlock** property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyAutomaticConfigurationUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **proxyAutomaticConfigurationUrl** property to the [androidDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyExclusionList",
+          "ChangeType": "Addition",
+          "Description": "Added the **proxyExclusionList** property to the [androidDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyManualAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **proxyManualAddress** property to the [androidDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyManualPort",
+          "ChangeType": "Addition",
+          "Description": "Added the **proxyManualPort** property to the [androidDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **proxySettings** property to the [androidDeviceOwnerWiFiConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidDeviceOwnerWiFiConfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerWiFiConfiguration"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "bluetooth",
+          "ChangeType": "Addition",
+          "Description": "Added the **bluetooth** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "frontCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **frontCamera** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "infraredCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **infraredCamera** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "microphone",
+          "ChangeType": "Addition",
+          "Description": "Added the **microphone** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "nearFieldCommunication",
+          "ChangeType": "Addition",
+          "Description": "Added the **nearFieldCommunication** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "rearCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **rearCamera** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "sdCard",
+          "ChangeType": "Addition",
+          "Description": "Added the **sdCard** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "usbTypeAPort",
+          "ChangeType": "Addition",
+          "Description": "Added the **usbTypeAPort** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "wakeOnLAN",
+          "ChangeType": "Addition",
+          "Description": "Added the **wakeOnLAN** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "wakeOnPower",
+          "ChangeType": "Addition",
+          "Description": "Added the **wakeOnPower** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "wiFi",
+          "ChangeType": "Addition",
+          "Description": "Added the **wiFi** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "699e85ed-6980-4c1b-94fa-c5670d414f7a",
+          "ApiChange": "Property",
+          "ChangedApiName": "wirelessWideAreaNetwork",
+          "ChangeType": "Addition",
+          "Description": "Added the **wirelessWideAreaNetwork** property to the [windows10DeviceFirmwareConfigurationInterface](https://docs.microsoft.com/en-us/graph/api/resources/intune-windows10DeviceFirmwareConfigurationInterface?view=graph-rest-beta) resource.",
+          "Target": "windows10DeviceFirmwareConfigurationInterface"
+        },
+        {
+          "Id": "cf71854a-9e7b-4b5f-90ce-3274ad327e72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosiPadOSWebClip",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosiPadOSWebClip](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosiPadOSWebClip?view=graph-rest-beta) resource",
+          "Target": "iosiPadOSWebClip"
+        },
+        {
+          "Id": "cf71854a-9e7b-4b5f-90ce-3274ad327e72",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsWebApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsWebApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsWebApp?view=graph-rest-beta) resource",
+          "Target": "windowsWebApp"
+        }
+      ],
+      "Id": "cf71854a-9e7b-4b5f-90ce-3274ad327e72",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-23T19:55:40.7681825Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "95fcdc35-eb7b-4dc4-98b3-50f6997f5319",
           "ApiChange": "Method",
           "ChangedApiName": "getApprovableOperations",

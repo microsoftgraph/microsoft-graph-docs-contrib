@@ -29,55 +29,25 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.yml
-          - name: .NET Core
-            href: /graph/tutorials/dotnet-core
-          - name: Android
-            href: /graph/tutorials/android
-          - name: Angular
-            href: /graph/tutorials/angular
-          - name: ASP.NET Core
-            href: /graph/tutorials/aspnet-core
-          - name: ASP.NET
-            href: /learn/modules/msgraph-build-aspnetmvc-apps
-          - name: Azure Functions
-            href: /graph/tutorials/azure-functions
-          - name: Blazor WebAssembly
-            href: /graph/tutorials/blazor
-          - name: Bot Framework
-            href: /graph/tutorials/bot-framework
-          - name: iOS Objective-C
-            href: /graph/tutorials/ios-objectivec
-          - name: iOS Swift
-            href: /graph/tutorials/ios-swift
+            href: tutorials.md
+          - name: .NET
+            href: /graph/tutorials/dotnet
+          - name: Go
+            href: /graph/tutorials/go
           - name: Java
             href: /graph/tutorials/java
           - name: JavaScript
             href: /graph/tutorials/javascript
-          - name: Node.js
-            href: /graph/tutorials/node
-          - name: Office Add-in
-            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
             href: /graph/tutorials/power-automate
+          - name: PowerShell
+            href: /graph/tutorials/powershell
           - name: Python
             href: /graph/tutorials/python
-          - name: React
-            href: /graph/tutorials/react
-          - name: React Native
-            href: /graph/tutorials/react-native
-          - name: Ruby
-            href: /graph/tutorials/ruby
-          - name: SharePoint Framework
-            href: /graph/tutorials/spfx
-          - name: Teams
-            href: /graph/tutorials/teams
-          - name: UWP
-            href: /graph/tutorials/uwp
-          - name: Xamarin
-            href: /graph/tutorials/xamarin
+          - name: TypeScript
+            href: /graph/tutorials/typescript
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -86,7 +56,11 @@ items:
     expanded: true
     items:
       - name: Users
-        href: azuread-users-concept-overview.md
+        items:
+          - name: Overview
+            href: azuread-users-concept-overview.md
+          - name: Access user data
+            href: /learn/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -95,6 +69,8 @@ items:
             href: office365-groups-concept-overview.md
           - name: Configure group options
             href: group-set-options.md
+          - name: Manage group lifecycle
+            href: /learn/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -497,7 +473,7 @@ items:
             items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
-              - name: Best practices 
+              - name: Best practices
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
@@ -688,7 +664,7 @@ items:
         items:
           - name: Overview
             href: sdks/sdks-overview.md
-          - name: Install the SDK
+          - name: Install an SDK
             href: sdks/sdk-installation.md
           - name: Create a client
             href: sdks/create-client.md
@@ -762,6 +738,8 @@ items:
                 href: toolkit/providers/teams.md
               - name: Teams MSAL2 provider
                 href: toolkit/providers/teams-msal2.md
+              - name: TeamsFx provider
+                href: toolkit/providers/teamsfx.md
               - name: Electron provider
                 href: toolkit/providers/electron.md
               - name: Proxy provider
