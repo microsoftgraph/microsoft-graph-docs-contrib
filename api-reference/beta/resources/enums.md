@@ -473,6 +473,16 @@ Namespace: microsoft.graph
 |screenSharing|
 |unknownFutureValue|
 
+### endpointType values
+
+|Member|
+|:---|
+|default|
+|voicemail|
+|skypeForBusiness|
+|skypeForBusinessVoipPhone|
+|unknownFutureValue|
+
 ### kerberosSignOnMappingAttributeType values
 
 |Member|
