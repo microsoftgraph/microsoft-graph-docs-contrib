@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDriveItem()
 name := "Shared legal agreements"
 requestBody.SetName(&name)
-options := &msgraphsdk.DriveItemRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 driveItemId := "driveItem-id"
-graphClient.Drive().ItemsById(&driveItemId).Patch(options)
+graphClient.Drive().ItemsById(&driveItemId).Patch(requestBody)
 
 
 ```

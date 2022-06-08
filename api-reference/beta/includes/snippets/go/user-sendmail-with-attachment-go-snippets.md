@@ -32,10 +32,7 @@ message.SetAttachments( []Attachment {
 		"contentBytes": "SGVsbG8gV29ybGQh",
 	}
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

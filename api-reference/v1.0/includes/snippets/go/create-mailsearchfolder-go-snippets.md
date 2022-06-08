@@ -18,11 +18,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	}
 	"filterQuery": "contains(subject, 'weekly digest')",
 }
-options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(requestBody)
 
 
 ```

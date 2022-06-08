@@ -83,11 +83,10 @@ labelingOptions.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateApplicationRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.EvaluateApplicationRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

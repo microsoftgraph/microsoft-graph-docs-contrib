@@ -1,5 +1,5 @@
 ---
-title: "List my accessReview decisions"
+title: "List my accessReview decisions (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List my accessReview decisions
+# List my accessReview decisions (deprecated)
 
 Namespace: microsoft.graph
 

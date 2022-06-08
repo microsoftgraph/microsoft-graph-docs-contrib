@@ -24,10 +24,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"responseType": "code",
 	"scope": "openid",
 }
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityProviders().Post(options)
+result, err := graphClient.IdentityProviders().Post(requestBody)
 
 
 ```

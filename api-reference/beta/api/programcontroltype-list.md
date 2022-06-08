@@ -1,5 +1,5 @@
 ---
-title: "List programControlTypes"
+title: "List programControlTypes (deprecated)"
 description: "In the Azure AD access reviews feature, list all the programControlType objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List programControlTypes
+# List programControlTypes (deprecated)
 
 Namespace: microsoft.graph
 

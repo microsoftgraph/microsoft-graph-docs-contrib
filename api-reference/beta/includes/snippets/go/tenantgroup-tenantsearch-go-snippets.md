@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTenantIdRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId)
-options := &msgraphsdk.TenantSearchRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(requestBody)
 
 
 ```

@@ -14,11 +14,8 @@ newAssignmentOrder.SetOrder( []String {
 	"City",
 	"extension_GUID_ShoeSize",
 }
-options := &msgraphsdk.SetOrderRequestBuilderPostOptions{
-	Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().SetOrder(b2cIdentityUserFlow-id).Post(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().SetOrder(b2cIdentityUserFlow-id).Post(requestBody)
 
 
 ```

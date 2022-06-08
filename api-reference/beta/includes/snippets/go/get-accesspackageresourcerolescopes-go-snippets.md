@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AccessPackageRequestBuilderGetQueryParameters{
 	Expand: "accessPackageResourceRoleScopes($expand=accessPackageResourceRole,accessPackageResourceScope)",
 }
-options := &msgraphsdk.AccessPackageRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessPackageRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Get(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
