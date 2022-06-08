@@ -17,11 +17,8 @@ requestBody.SetSubject(&subject)
 requestBody.SetAudiences( []String {
 	"api://AzureADTokenExchange",
 }
-options := &msgraphsdk.FederatedIdentityCredentialsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 applicationId := "application-id"
-result, err := graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentials().Post(options)
+result, err := graphClient.ApplicationsById(&applicationId).FederatedIdentityCredentials().Post(requestBody)
 
 
 ```

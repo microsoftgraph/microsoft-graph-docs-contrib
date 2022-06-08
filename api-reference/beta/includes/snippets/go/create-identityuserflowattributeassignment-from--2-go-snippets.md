@@ -22,11 +22,8 @@ userAttribute := msgraphsdk.NewIdentityUserFlowAttribute()
 requestBody.SetUserAttribute(userAttribute)
 id := "extension_guid_shoeSize"
 userAttribute.SetId(&id)
-options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Post(options)
+result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Post(requestBody)
 
 
 ```

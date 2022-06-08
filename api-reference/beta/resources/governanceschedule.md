@@ -4,7 +4,7 @@ description: "Represents the schedule for a governanceRoleAssignmentRequest. For
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # governanceSchedule resource type

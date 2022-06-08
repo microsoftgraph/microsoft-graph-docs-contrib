@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete baseTask
+# Delete baseTask (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Delete a [baseTask](../resources/basetask.md) object.
 

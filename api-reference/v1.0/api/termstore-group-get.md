@@ -3,7 +3,7 @@ title: "Get group"
 description: "Read the properties and relationships of a term store group object."
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 

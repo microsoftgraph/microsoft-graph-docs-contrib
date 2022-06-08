@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedapproval objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # List privilegedApproval

@@ -4,7 +4,7 @@ description: "Represents a set of configurations on each role definition that ne
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # governanceRoleSetting resource type

@@ -38,10 +38,7 @@ role := "consulting"
 detail.SetRole(&role)
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent)
-options := &msgraphsdk.PositionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Positions().Post(options)
+result, err := graphClient.Me().Profile().Positions().Post(requestBody)
 
 
 ```

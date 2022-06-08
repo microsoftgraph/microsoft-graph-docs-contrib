@@ -31,10 +31,7 @@ requestBody.SetExtensions( []Extension {
 		"dealValue": ,
 	}
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+result, err := graphClient.Me().Messages().Post(requestBody)
 
 
 ```

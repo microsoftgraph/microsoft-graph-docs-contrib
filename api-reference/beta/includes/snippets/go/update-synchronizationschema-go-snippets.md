@@ -14,12 +14,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"synchronizationRules":  []Object {
 	}
 }
-options := &msgraphsdk.SchemaRequestBuilderPutOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().Put(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Schema().Put(requestBody)
 
 
 ```

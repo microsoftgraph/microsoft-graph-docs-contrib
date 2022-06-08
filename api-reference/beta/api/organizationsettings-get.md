@@ -17,6 +17,8 @@ Retrieve the properties and relationships of an [organizationSettings](../resour
 
 This operation does not return [insightsSettings](../resources/insightssettings.md). Depending on the type of insights, you can get their settings by using [list itemInsights](organizationsettings-list-iteminsights.md) or [list peopleInsights](organizationsettings-list-peopleinsights.md).
 
+This operation does not return [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). To get [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), use [list microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -118,7 +120,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
     "id": "",
-    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
     "profileCardProperties": [
       {
         "directoryPropertyName": "CustomAttribute1",
@@ -129,7 +130,7 @@ Content-type: application/json
               {
                 "languageTag": "ru-RU",
                 "displayName": "центр затрат"
-              }
+  }
             ]
           }
         ]
@@ -147,5 +148,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

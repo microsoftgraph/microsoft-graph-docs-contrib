@@ -18,11 +18,8 @@ partsToClone := "apps,tabs,settings,channels,members"
 requestBody.SetPartsToClone(&partsToClone)
 visibility := "public"
 requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.CloneRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Clone(team-id).Post(options)
+graphClient.TeamsById(&teamId).Clone(team-id).Post(requestBody)
 
 
 ```

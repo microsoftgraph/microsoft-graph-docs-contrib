@@ -124,3 +124,5 @@ and [`model=B` requirements](#modelb-requirements)
 ## Price for additional use
 
 In the future, Microsoft will charge a fee for usage over the seeded capacity. You will also be able to associate an Azure subscription to your application registration.
+The organization that owns the app registration is responsible for the payment, 
+which for multitenant apps may be different from the organization that runs the app.

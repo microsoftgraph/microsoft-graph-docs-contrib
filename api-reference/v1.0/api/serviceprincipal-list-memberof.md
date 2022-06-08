@@ -239,7 +239,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_serviceprincipals_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')

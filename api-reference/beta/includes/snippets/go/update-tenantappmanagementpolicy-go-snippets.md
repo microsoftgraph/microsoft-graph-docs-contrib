@@ -52,10 +52,7 @@ applicationRestrictions.SetKeyCredentials( []KeyCredentialConfiguration {
 		"restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z",
 	}
 }
-options := &msgraphsdk.DefaultAppManagementPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().DefaultAppManagementPolicy().Patch(options)
+graphClient.Policies().DefaultAppManagementPolicy().Patch(requestBody)
 
 
 ```

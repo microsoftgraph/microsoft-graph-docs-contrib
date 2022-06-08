@@ -3,7 +3,7 @@ title: "physicalAddress resource type"
 description: "Represents the street address of a resource such as a contact or event."
 ms.localizationpriority: medium
 author: "kevinbellinger"
-ms.prod: ""
+ms.prod: people
 doc_type: resourcePageType
 ---
 

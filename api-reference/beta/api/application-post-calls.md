@@ -1,7 +1,7 @@
 ---
 title: "Create call"
 description: "Create a new call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -70,7 +70,8 @@ The following example shows a request that makes a peer-to-peer call between the
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -96,6 +97,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -283,6 +288,96 @@ Content-Type: application/json
 }
 ```
 
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing updated
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
@@ -294,7 +389,8 @@ The following example shows a request that makes a peer-to-peer call between the
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -468,6 +564,14 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
+
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
+}-->
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -1155,7 +1259,15 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Example 7: Join channel meeting with service hosted media
+Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
+
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
+
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
+
+#### Request
+
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
@@ -1855,7 +1967,8 @@ The following example shows the request to make a peer-to-peer call between the 
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-2",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -2024,7 +2137,8 @@ The following example shows a request to make a peer-to-peer call between the bo
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-3",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
