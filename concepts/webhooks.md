@@ -1,13 +1,13 @@
 ---
-title: "Set up notifications for changes in user data"
+title: "Set up notifications for changes in resource data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes."
-author: "FaithOmbongi"
+author: "Jumaodhiss"
 ms.prod: "non-product-specific"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
-# Set up notifications for changes in user data
+# Set up notifications for changes in resource data
 
 The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive change notifications. Client apps use change notifications to update their state upon changes.
 
@@ -46,31 +46,23 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [presence][]
 - Teams [onlineMeeting][]
 - Teams [team][]
-- [todoTask][] (preview)
+- [To Do task][]
 - [user][]
 
-You can create a subscription to a specific Outlook folder such as the Inbox:
-`me/mailFolders('inbox')/messages`
+### Sample scenarios
 
-Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
+You can create a subscription for the following scenarios:
 
-Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`, `/communications/onlinemeeting/{meeting-id}`
 
-Or to any folder in a user's personal OneDrive:
-`/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-Or to the root folder of a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq 'newAlert'`,
-`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
-
-Or to the tasks in a user's To Do list:
-`/me/todo/lists/{todoTaskListId}/tasks`
+|Scenario  |Query  |
+|---------|---------|
+|To a specific Outlook folder such as the Inbox     |   `me/mailFolders('inbox')/messages`      |
+|To a top-level resource     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
+|To a specific resource instance     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeeting/{meeting-id}`       |
+|To any folder in a user's personal OneDrive     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
+|To the root folder of a SharePoint/OneDrive for Business drive     |   `/drive/root`      |
+| Or to a new [Security API](security-concept-overview.md) alert |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
+|To the tasks in a user's To Do list|`/me/todo/lists/{todoTaskListId}/tasks`|
 
 ### Azure AD resource limitations
 
@@ -94,7 +86,7 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the **userPrincipalName** (UPN) in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
 
 `/users/sh.o'neal@contoso.com/messages`
 
@@ -113,6 +105,22 @@ Each Teams resource has different subscription quotas.
 
 - For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **channels**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **chats**:
+  - Per app and chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **teams**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **conversationMembers**:
+  - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
@@ -360,7 +368,7 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[To Do task]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

@@ -3,7 +3,7 @@ title: Create printerShare
 description: Creates a new printer share for the specified printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -54,8 +54,6 @@ If successful, this method returns a `201 Created` response code and a [printerS
 ## Example
 ##### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

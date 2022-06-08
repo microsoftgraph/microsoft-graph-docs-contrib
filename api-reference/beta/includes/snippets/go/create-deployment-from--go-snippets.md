@@ -37,10 +37,7 @@ settings.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
 }
-options := &msgraphsdk.DeploymentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options)
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
 
 
 ```

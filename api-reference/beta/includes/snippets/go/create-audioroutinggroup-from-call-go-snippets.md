@@ -18,11 +18,8 @@ requestBody.SetSources( []String {
 requestBody.SetReceivers( []String {
 	"550fae72-d251-43ec-868c-373732c2704f",
 }
-options := &msgraphsdk.AudioRoutingGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroups().Post(requestBody)
 
 
 ```

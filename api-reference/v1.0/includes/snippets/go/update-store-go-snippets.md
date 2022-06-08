@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewStore()
 defaultLanguageTag := "en-US"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
-options := &msgraphsdk.TermStoreRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
-graphClient.SitesById(&siteId).TermStore().Patch(options)
+graphClient.SitesById(&siteId).TermStore().Patch(requestBody)
 
 
 ```

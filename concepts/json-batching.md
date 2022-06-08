@@ -54,6 +54,14 @@ Content-Type: application/json
       "headers": {
         "Content-Type": "application/json"
       }
+    },
+    {
+      "id": "5",
+      "url": "users?$select=id,displayName,userPrincipalName&$filter=city eq null&$count=true",
+      "method": "GET",
+      "headers": {
+        "ConsistencyLevel": "eventual"
+      }
     }
   ]
 }
@@ -82,6 +90,24 @@ Content-Type: application/json
           "code": "Forbidden",
           "message": "..."
         }
+      }
+    },
+    {
+      "id": "5",
+      "status": 200,
+      "headers": {
+        "OData-Version": "4.0",
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName)",
+        "@odata.count": 12,
+        "value": [
+          {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com"
+          }
+        ]
       }
     },
     {
@@ -123,6 +149,7 @@ The response format for JSON batch requests is similar to the request format. Th
 * The property in the main JSON object is named **responses** as opposed to **requests**.
 * Individual responses might appear in a different order than the requests.
 * Rather than **method** and **url**, individual responses have a **status** property. The value of **status** is a number that represents the HTTP status code.
+* The **headers** property in each individual response represents the headers returned by the server, for example, **Cache-Control** and **Content-Type** headers.
 
 The status code on a batch response is typically `200` or `400`. If the batch request itself is malformed, the status code is `400`. If the batch request is parseable, the status code is `200`. A `200` status code on the batch response does not indicate that the individual requests inside the batch succeeded. This is why each individual response in the **responses** property has a status code.
 
@@ -169,13 +196,24 @@ If an individual request fails, any request that depends on that request fails w
 
 An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.
 
+## Batch size limitations
+
+JSON batch requests are currently limited to 20 individual requests, in addition to the following limitations:
+
+* Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
+* Batches targeting Outlook resources (such as mail abd calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
+
+For more information, see [Throttling and batching][throttling-and-batching].
+
 ## Known issues
 
 For a list of current limitations related to batching, see [known issues][batching-known-issues].
 
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
-
+[throttling-and-batching]: throttling.md#throttling-and-batching
+[throttling-outlook]: throttling.md#outlook-service-limits
 
 ## See also
 

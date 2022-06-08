@@ -8,11 +8,11 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Advanced query capabilities on Azure AD directory objects
 
-As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`not`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endswith`) operators on the `$filter` query parameter.
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
-For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
+For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
 <!-- markdownlint-disable MD023 MD024 MD025 -->
 + Option 1: Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
@@ -217,6 +217,7 @@ The following table lists query scenarios on directory objects that are supporte
 | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Use of `$count` as a URL segment                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups/$count`                                                                                                                                                                                       |
 | Use of `$count` as a query string parameter                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../servicePrincipals?$count=true`                                                                                                                                                     |
+| Use of `$count` in a `$filter` expression                                 | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedLicenses/$count eq 0&$count=true`                                                                                                                                                                                       |
 | Use of `$search`                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$search="displayName:Browser"`                                                                                                                     |
 | Use of `$orderby` on select properties                                   | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$count=true`                                                                                                               |
 | Use of `$filter` with the `endsWith` operator                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
@@ -231,6 +232,7 @@ The following table lists query scenarios on directory objects that are supporte
 > + Using `$filter` and `$orderBy` together is supported only with advanced queries.
 > + `$expand` is not currently supported with advanced queries.
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
+> + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the **headers** property of the JSON request.
 
 ## Support for filter on properties of Azure AD directory objects
 
@@ -238,7 +240,7 @@ Properties of directory objects behave differently in their support for query pa
 
 + Queries that are supported by default will also work in advanced queries, but the response will be eventually consistent.
 + The `in` operator is supported by default whenever `eq` operator is supported by default.
-+ The `endsWith` operator is supported only with advanced queries on `mail` and `userPrincipalName` properties.
++ The `endsWith` operator is supported only with advanced queries on **mail**, **userPrincipalName**, and **proxyAddresses** properties.
 + The `not` and `ne` negation operators are supported only with advanced queries.
   + All properties that support the `eq` operator also support the `ne` or `not` operators.
   + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/query-parameters#filter-using-lambda-operators).
@@ -247,11 +249,11 @@ The following tables summarizes support for `$filter` operators by properties of
 
 ### Legend
 
-+ ![Works by default. Does not require advanced query parameters.](../concepts/images/advanced-query-parameters/default.svg) The `$filter` operator works by default for that property.
-+ ![Requires advanced query parameters.](../concepts/images/advanced-query-parameters/advanced.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
++ ![Works by default. Does not require advanced query parameters.](../concepts/images/yesandnosymbols/greencheck.svg) The `$filter` operator works by default for that property.
++ ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
   + `ConsistencyLevel=eventual` header
   + `$count=true` query string
-+ ![Not supported.](../concepts/images/advanced-query-parameters/notSupported.svg) The `$filter` operator is not supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
++ ![Not supported.](../concepts/images/yesandnosymbols/no.svg) The `$filter` operator is not supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
 + Blank cells indicate that the query is not valid for that property.
 + The **null value** column indicates that the property is nullable and filterable using `null`.
 + Properties that are not listed here do not support `$filter` at all.

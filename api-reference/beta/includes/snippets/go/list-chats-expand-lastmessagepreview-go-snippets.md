@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ChatsRequestBuilderGetQueryParameters{
 	Expand: "lastMessagePreview",
 }
-options := &msgraphsdk.ChatsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ChatsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Chats().Get(options)
+result, err := graphClient.Chats().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

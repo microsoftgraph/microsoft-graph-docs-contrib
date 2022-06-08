@@ -22,12 +22,9 @@ allowNewMessageFromBots := true
 moderationSettings.SetAllowNewMessageFromBots(&allowNewMessageFromBots)
 allowNewMessageFromConnectors := true
 moderationSettings.SetAllowNewMessageFromConnectors(&allowNewMessageFromConnectors)
-options := &msgraphsdk.ChannelRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-graphClient.TeamsById(&teamId).ChannelsById(&channelId).Patch(options)
+graphClient.TeamsById(&teamId).ChannelsById(&channelId).Patch(requestBody)
 
 
 ```

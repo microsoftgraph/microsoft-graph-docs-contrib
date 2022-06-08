@@ -11,12 +11,8 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/beta/groups/{id}",
 }
-options := &msgraphsdk.GroupRequestBuilderPostOptions{
-	Body: requestBody,
-}
 printerShareId := "printerShare-id"
-groupId := "group-id"
-graphClient.Print().SharesById(&printerShareId).AllowedGroupsById(&groupId).Post(options)
+result, err := graphClient.Print().SharesById(&printerShareId).AllowedGroups().$ref().Post(requestBody)
 
 
 ```

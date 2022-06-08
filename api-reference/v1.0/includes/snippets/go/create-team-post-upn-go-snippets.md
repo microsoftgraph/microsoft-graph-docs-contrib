@@ -25,10 +25,7 @@ requestBody.SetMembers( []ConversationMember {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

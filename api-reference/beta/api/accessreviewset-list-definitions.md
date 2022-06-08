@@ -282,7 +282,6 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]

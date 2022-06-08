@@ -2,7 +2,7 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "KuiGithui"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -71,7 +71,7 @@ Here is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{id}
+PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {

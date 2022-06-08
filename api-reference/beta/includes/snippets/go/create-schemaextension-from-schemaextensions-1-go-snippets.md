@@ -32,10 +32,7 @@ requestBody.SetProperties( []ExtensionSchemaProperty {
 		"type": "String",
 	}
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.SchemaExtensions().Post(options)
+result, err := graphClient.SchemaExtensions().Post(requestBody)
 
 
 ```
