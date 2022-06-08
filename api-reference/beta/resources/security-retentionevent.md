@@ -35,7 +35,7 @@ Namespace: microsoft.graph.security
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
 |eventPropagationResult|[microsoft.graph.security.eventPropagationResult](../resources/security-eventpropagationresult.md)|Status and errors of the Event Sync.|
-|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventQueries.md) collection| Specifies property value pairs: the workload type (SPO. ODB, EXO) and identification for an item to scope the retention event.|
+|eventQueries|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Specifies property value pairs: the workload type (SPO. ODB, EXO) and identification for an item to scope the retention event.|
 |retentionEventStatus|[microsoft.graph.security.retentionEventStatus](../resources/security-retentioneventstatus.md) collection|Specifies the number of processed documents per workload.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQuery"
+      "@odata.type": "microsoft.graph.security.eventQueries"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
