@@ -24,7 +24,7 @@ items:
         items:
           - name: Overview
             href: users-you-can-reach.md
-            displayName: users you can reach, users
+            displayName: users you can reach
           - name: National cloud deployments
             href: deployments.md
           - name: Hybrid deployments (deprecated)
@@ -105,6 +105,7 @@ items:
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
+            displayName: Privileged Access Management
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect, frequently asked questions
@@ -215,7 +216,7 @@ items:
         items:
           - name: Cloud printing
             items:
-              - name: Cloud printing overview
+              - name: Overview
                 href: universal-print-concept-overview.md
                 displayName: Universal Print, Cloud printing, printing, device and app management
               - name: Upload data to upload session
@@ -231,7 +232,7 @@ items:
             href: cloudpc-concept-overview.md
           - name: Device updates (preview)           
             items:
-              - name: Device updates overview
+              - name: Overview
                 href: windowsupdates-concept-overview.md
                 displayName: Windows updates, Windows update, device update
               - name: Software updates
@@ -305,9 +306,9 @@ items:
                 displayName: governance, identity
               - name: Review access to your resources
                 items:
-                  - name: Access reviews API overview
+                  - name: Overview
                     href: accessreviews-overview.md
-                    displayName: identity
+                    displayName: identity, access reviews API, review access
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
@@ -736,7 +737,7 @@ items:
             displayName: Microsoft Graph Toolkit, toolkit
           - name: Get started
             items:
-              - name: Get started overview
+              - name: Get started
                 href: toolkit/get-started/overview.md
                 displayName: Microsoft Graph Toolkit, toolkit
               - name: Toolkit for React
