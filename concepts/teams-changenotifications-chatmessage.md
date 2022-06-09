@@ -173,8 +173,6 @@ To track messages in a chat, you can create a change notification subscription a
 
 Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note.** Subcribing to messages in a chat is currently in preview.
-
 ### Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -262,7 +260,7 @@ To track messages across all chats a particular user is part of, you can create 
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
-> **Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### Permissions
 
