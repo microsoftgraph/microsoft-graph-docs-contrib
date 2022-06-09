@@ -4661,13 +4661,13 @@ items:
             href: api/administrativeunit-get-members.md
           - name: Remove a member
             href: api/administrativeunit-delete-members.md
-          - name: Add a scoped-role administrator
+          - name: Assign a role with scope
             href: api/administrativeunit-post-scopedrolemembers.md
-          - name: List scoped-role administrators
+          - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get a scoped-role administrator
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove a scoped-role administrator
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
@@ -5002,17 +5002,28 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Certificate-based auth configuration
-          href: resources/certificatebasedauthconfiguration.md
-          items:
-          - name: List
-            href: api/certificatebasedauthconfiguration-list.md
-          - name: Create
-            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-          - name: Get
-            href: api/certificatebasedauthconfiguration-get.md
-          - name: Delete
-            href: api/certificatebasedauthconfiguration-delete.md
+          - name: Temporary Access Pass
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-temporaryaccesspassmethods.md
+            - name: Create
+              href: api/authentication-post-temporaryaccesspassmethods.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+          - name: Certificate-based auth configuration
+            href: resources/certificatebasedauthconfiguration.md
+            items:
+            - name: List
+              href: api/certificatebasedauthconfiguration-list.md
+            - name: Create
+              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+            - name: Get
+              href: api/certificatebasedauthconfiguration-get.md
+            - name: Delete
+              href: api/certificatebasedauthconfiguration-delete.md
         - name: Conditional access
           items:
           - name: Policies
@@ -5251,6 +5262,15 @@ items:
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
             - name: Email policy
               href: resources/emailauthenticationmethodconfiguration.md
               items:
