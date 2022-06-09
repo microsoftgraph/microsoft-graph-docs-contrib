@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 You can add related content to a [todoTask](../resources//todotask.md) in the form of an attachment.
 This is an abstract type.
 
-**attachment** is the base resource for the following derived types of attachments:
+**attachmentBase** is the base resource for the following derived types of attachments:
 * A file ([taskFileAttachment](../resources/fileattachment.md) resource) attached to a task.
 
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to a [todoTask](../resources/todotask.md). 
-Use this approach to attach a file of any supported size between 0 MB to 25 MB.
+**Use this approach to attach a file of any supported size between 0 MB to 25 MB.**
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
@@ -80,7 +80,6 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachments/createUploadSession
 Content-Type: application/json
-Content-length: 85
 
 {
   "attachmentInfo": {
@@ -126,7 +125,7 @@ Specify request headers and request body as described below.
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 |Authorization|Bearer {token}. | `Authorization` request header is required for this request. |
-| Content-Length | Int32 | The number of bytes being uploaded in this operation. For better performance, keep the upper limit of the number of bytes for each `PUT` operation to 4 MB. Required. |
+| Content-Length | Int32 | The number of bytes being uploaded in this operation. The upper limit of the number of bytes for each `PUT` operation is 4 MB. The request will fail for anything higher than 4 MB. Required. |
 | Content-Range | String | The 0-based byte range of the file being uploaded in this operation, expressed in the format `bytes {start}-{end}/{total}`. Required. |
 | Content-Type | String  | The MIME type. Specify `application/octet-stream`. Required. |
 
@@ -137,7 +136,7 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 ### Response
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
-- The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1.
+- The **ExpirationDateTime** property value remains the same as returned by the initial **uploadSession** in step 1.
 - The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
 <!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
@@ -152,7 +151,7 @@ A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note 
   "blockType": "ignored"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=
+PUT https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=/content
 Content-Type: application/octet-stream
 Content-Length: 2097152
 Content-Range: bytes 0-2097151/3483322
@@ -184,7 +183,7 @@ Following the initial upload in step 2, continue to upload the remaining portion
 
 Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment. You can get the attachment ID from the URL and save it for later use. 
 
-The following examples show uploading the last byte range of the file to the message and to the event in the preceding steps.
+The following examples show uploading the last byte range of the file to the **todoTask** in the preceding steps.
 
 ### Example for Step 3: Final upload to the todoTask
 #### Request
@@ -192,7 +191,7 @@ The following examples show uploading the last byte range of the file to the mes
   "blockType": "ignored"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=
+PUT https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=/content
 Content-Type: application/octet-stream
 Content-Length: 1386170
 Content-Range: bytes 2097152-3483321/3483322
@@ -211,7 +210,27 @@ The following example response shows a `Location` response header from which you
 ```http
 HTTP/1.1 201 Created
 
-Location: https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')
+Location: https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/Attachments/AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=
 Content-Length: 0
 ```
 
+## Alternative Step : Cancel the upload session
+At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns HTTP 204 No Content.
+
+### Example for Alternative Step : Cancel the upload session
+
+#### Request
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f36d/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachmentSessions/AAMkADliMm=
+```
+
+#### Response
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 204 No content
+```
