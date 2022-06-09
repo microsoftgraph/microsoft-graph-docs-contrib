@@ -14,7 +14,7 @@ items:
       - name: What's new
         expanded: true
         items:
-          - name: Highlights
+          - name: What's new highlights
             href: whats-new-overview.md
             displayName: what's new, updates
           - name: API changelog
