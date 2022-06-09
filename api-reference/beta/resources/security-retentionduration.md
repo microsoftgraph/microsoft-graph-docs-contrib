@@ -13,11 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how long a item will be retained before it can be deleted. This is an abstract type. 'retentionDurationForever' and 'retnetionDurationInDays' are the two resourceTypes that inherit from retentionDuration.
+Represents how long a item will be retained before it can be deleted. This is an abstract type. 
+[retentionDurationForever](../resources/security-retentiondurationforever.md) and [retnetionDurationInDays](../resources/security-retentiondurationindays.md) are the two resourceTypes that inherit from retentionDuration.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
@@ -34,30 +34,5 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.retentionDuration"
 }
 ```
-## JSON representation for retentionDurationForever
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.retentionDurationForever"
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.security.retentionDurationForever"
-}
-```
 
-## JSON representation for retentionDurarionInDays
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.security.retentionDurationInDays"
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.security.retentionDurationInDays",
-  "days": "Integer"
-}
-```
 

@@ -32,6 +32,18 @@ doc_type: enumTypes
 |retainAsRegulatoryRecord|
 |unknownFutureValue|
 
+
+### defaultRecordBehavior values 
+
+
+
+|Member|
+|:---|
+|startLocked|
+|startUnlocked|
+|unknownFutureValue|
+
+
 ### eventPropagationStatus values 
 
 
