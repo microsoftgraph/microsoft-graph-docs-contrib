@@ -25,7 +25,7 @@ Inherits from [attachmentBase](../resources/attachmentbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List attachments](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
-|[Upload a file to todoTask ](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
+|[Upload a file to todoTask ](../api/taskfileattachment-createuploadsession.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
 |[Upload a small file to todoTask](../api/todotask-post-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Create a new [taskFileAttachment](../resources/taskfileattachment.md) object.|
 |[Get attachments](../api/taskfileattachment-get.md)|[taskFileAttachment](../resources/taskfileattachment.md)|Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.|
 |[Delete attachments](../api/taskfileattachment-delete.md)|None|Deletes a [taskFileAttachment](../resources/taskfileattachment.md) object.|

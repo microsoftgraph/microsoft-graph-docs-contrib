@@ -12,7 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [taskFileAttachment](../resources/taskfileattachment.md) object.
+Add a new [taskFileAttachment](../resources/taskfileattachment.md) object to a [todoTask](../resources/todotask.md).
+
+This operation limits the size of the attachment you can add to under 3 MB. For larger size attachments, please upload the attachments using [createUploadSession](../api/taskfileattachment-createuploadsession.md).
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +50,7 @@ You can specify the following properties when creating an **taskFileAttachment**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name. Required.|
 |contentType|String|The content type of the attachment. Optional.|
 |size|Int32|The size in bytes of the attachment. Required.|
 
@@ -66,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
+POST https://graph.microsoft.com/beta/me/todo/lists/AAMkpsDRVK=/tasks/AAKdfjhgsjhgJ=/attachments
 Content-Type: application/json
 Content-length: 127
 
