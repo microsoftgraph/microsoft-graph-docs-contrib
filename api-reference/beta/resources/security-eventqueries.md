@@ -36,8 +36,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.security.eventQueries",
   {
     {"queryType": "String",
-  "query": "String"},
-    {"queryType": "String",
   "query": "String"}
   }
 }
