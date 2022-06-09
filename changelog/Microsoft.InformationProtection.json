@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [informationProtection](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotection?view=graph-rest-beta) resource.",
+          "Description": "Added the [informationProtection](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotection?view=graph-rest-beta) resource and supported methods.",
           "Target": "informationProtection"
         },
         {
@@ -111,7 +111,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionPolicySetting",
           "ChangeType": "Addition",
-          "Description": "Added the [informationProtectionPolicySetting](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotectionpolicysetting?view=graph-rest-beta) resource.",
+          "Description": "Added the [informationProtectionPolicySetting](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotectionpolicysetting?view=graph-rest-beta) resource and a supported method.",
           "Target": "informationProtectionPolicySetting"
         },
         {
@@ -223,56 +223,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensitivityLabel",
           "ChangeType": "Addition",
-          "Description": "Added the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
+          "Description": "Added the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource and supported methods.",
           "Target": "sensitivityLabel"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "evaluateApplication",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateapplication?view=graph-rest-beta) method.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "evaluateClassificationResults",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateclassificationresults?view=graph-rest-beta) method.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "evaluateRemoval",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [evaluateRemoval](https://docs.microsoft.com/en-us/graph/api/informationprotection-evaluateremoval?view=graph-rest-beta) method.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "extractLabel",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [extractLabel](https://docs.microsoft.com/en-us/graph/api/informationprotection-extractlabel?view=graph-rest-beta) method.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "informationProtectionLabel",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [get label](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-get?view=graph-rest-beta) method.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "informationProtectionLabel",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [list](https://docs.microsoft.com/en-us/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta) method.",
-          "Target": "security"
         },
         {
           "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
@@ -351,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "informationProtectionLabel",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionLabel](https://docs.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [informationProtectionLabel](https://docs.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource and related operations and methods. Use the new [informationProtection](https://docs.microsoft.com/en-us/graph/api/resources/security-informationprotection?view=graph-rest-beta) and [sensitivityLabel](https://docs.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) APIs instead.",
           "Target": "informationProtectionLabel"
         },
         {
@@ -433,54 +385,6 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [removeWatermarkAction](https://docs.microsoft.com/en-us/graph/api/resources/removewatermarkaction?view=graph-rest-beta) resource.",
           "Target": "removeWatermarkAction"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-get?view=graph-rest-beta) method to the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/security-informationprotection-list-sensitivitylabels?view=graph-rest-beta) method to the [sensitivityLabel](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [evaluateApplication](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [evaluateClassificationResults](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-evaluateclassificationresults?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [extractContentLabel](https://docs.microsoft.com/en-us/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-beta) method to the [sensitivityLabels](https://docs.microsoft.com/en-us/graph/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
-          "Target": "security"
         }
       ],
       "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
