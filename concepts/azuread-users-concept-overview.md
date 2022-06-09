@@ -1,6 +1,6 @@
 ---
-title: "Overview of users in Microsoft Graph"
-description: "Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."
+title: "Users in Microsoft Graph"
+description: "Use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user in your organization."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.prod: "users"
@@ -54,6 +54,7 @@ Maximize relevance in your application by promoting recently used or trending do
 - List documents shared with a user through email or OneDrive for Business.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)

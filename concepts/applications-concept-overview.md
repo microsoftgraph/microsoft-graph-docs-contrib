@@ -1,6 +1,6 @@
 ---
 title: "Applications API overview"
-description: "Register your application with Azure AD to create an identity configuration for it that allows it to integrate with Azure AD."
+description: "Microsoft Graph APIs enable you to do the following in Azure AD: application management, on-premises publishing, service principal management, and synchronization."
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "applications"

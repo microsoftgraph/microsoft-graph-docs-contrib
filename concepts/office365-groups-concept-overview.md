@@ -1,6 +1,6 @@
 ---
-title: "Overview of Microsoft 365 groups in Microsoft Graph"
-description: "Microsoft 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. "
+title: "Microsoft 365 groups in Microsoft Graph"
+description: "Microsoft 365 groups are collections of users who share access to resources in Microsoft services. Create groups, manage group membership, and establish group policies."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.prod: "groups"
@@ -42,7 +42,7 @@ You can use the Microsoft Graph API to create, manage, or delete groups througho
 - [Enable a group for Microsoft Teams](/graph/api/team-put-teams?view=graph-rest-beta) (preview) to allow group members to engage in persistent chat.  
 - [Delete groups](/graph/api/group-delete?view=graph-rest-1.0). When a group is deleted, all associated content is also deleted, which prevents orphaned sites, conversations, or plans. 
  
-### Manage group membership seamlessly 
+### Manage group membership seamlessly
  
 Microsoft 365 groups are collections of users who share access to resources in Microsoft services or within your app. Because group membership is managed centrally, any changes to membership affect all services associated with the group. You can use Microsoft Graph to perform the following group membership tasks:
  
