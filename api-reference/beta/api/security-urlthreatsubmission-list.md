@@ -35,6 +35,16 @@ GET /security/threatSubmission/urlThreats
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+| Pattern                | Supported | Syntax                                 | Notes |
+| ---------------------- | :-------: | -------------------------------------- | ----- |
+| Server-side pagination |     ✓     | `@odata.nextLink`                      |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=url eq 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=id eq 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=createdDateTime ge 'value' and createdDateTime lt 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=category eq 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=createdBy eq 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=status eq 'value'` |       |
+| Filter                 |     ✓     | `/urlThreats?$filter=source eq 'value'` |       |
 
 ## Request headers
 |Name|Description|
