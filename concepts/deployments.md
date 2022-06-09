@@ -1,6 +1,6 @@
 ---
 title: "National cloud deployments"
-description: "Learn about the three Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
+description: "Learn about Microsoft Graph national cloud deployments and the capabilities that are available to developers within each."
 author: "arpitha-dhanapathi"
 ms.localizationpriority: medium
 ---
@@ -13,7 +13,7 @@ Current national clouds include:
 
 * Microsoft Cloud for US Government
 * Microsoft Cloud Germany
-* Azure and Microsoft 365 operated by 21Vianet in China
+* Microsoft Azure and Microsoft 365 operated by 21Vianet in China
 
 Each national cloud environment is unique and different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for national cloud environments; for example, registering applications, acquiring tokens, and calling the Microsoft Graph API can be different.
 
