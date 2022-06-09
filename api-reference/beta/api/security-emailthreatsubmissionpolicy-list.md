@@ -34,7 +34,7 @@ GET security/threatSubmission/emailThreatSubmissionPolicies
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+Not suppported by now since only 1 email threat submission policy is supported by now and it is designed for future usage.
 
 ## Request headers
 |Name|Description|
