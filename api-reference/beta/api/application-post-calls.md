@@ -564,7 +564,6 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-
 ```
 
 <!-- {
@@ -573,6 +572,7 @@ Content-Type: application/json
   "truncated": true
 }-->
 
+```http
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -1259,15 +1259,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 7: Join channel meeting with service hosted media
-Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
-
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
-
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
-
-#### Request
-
+#### Response
 <!-- {
   "blockType": "response",
   "name": "join-meeting-with-join-meeting-id-and-passcode",
