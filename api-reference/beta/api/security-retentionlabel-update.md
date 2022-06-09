@@ -58,7 +58,7 @@ PATCH /security/labels/retentionLabels/{retentionLabelId}
 |isInUse|Boolean|Specifies if the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
-|retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration)|Specifies the number of days to retain the content.|
+|retentionDuration|[microsoft.graph.security.retentionduration](../resources/security-retentionduration)|Specifies the number of days to retain the content.|
 |retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
 |defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
 |labelToBeApplied|String|Specifies the replacement label to be automatically applied once the retention period of the current label is completed. |
