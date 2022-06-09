@@ -22,7 +22,7 @@ Groups form the foundation that enables user collaboration and integration acros
  
 You can use the Microsoft Graph API to create, manage, or delete groups throughout the lifecycle of collaboration. For example, you can do the following:  
  
-- Use the [Create group](/graph/api/group-post-groups?view=graph-rest-1.0) API to provision a new group. The group is then made available in a range of applications, such as Outlook, SharePoint, Microsoft Teams, Planner, and even Microsoft Stream. Microsoft Graph synchronizes across these connected services to seamlessly provide access to all group members.  
+- Use the [Create group](/graph/api/group-post-groups?view=graph-rest-1.0&preserve-view=true) API to provision a new group. The group is then made available in a range of applications, such as Outlook, SharePoint, Microsoft Teams, Planner, and even Microsoft Stream. Microsoft Graph synchronizes across these connected services to seamlessly provide access to all group members.  
  
     **Every Microsoft 365 group is integrated with a default set of Microsoft 365 services**
 
