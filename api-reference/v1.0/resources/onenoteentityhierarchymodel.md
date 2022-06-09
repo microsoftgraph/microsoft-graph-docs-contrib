@@ -1,9 +1,9 @@
 ---
 title: "onenoteEntityHierarchyModel resource"
-description: "onenoteEntityHierarchyModel resource is a base type for OneNote entities."
+description: "A base type for OneNote entities."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
-ms.prod: "onenote"
+ms.prod: notes
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This is a base type for OneNote entities.
+A base type for OneNote entities.
 
 ## JSON representation
 
