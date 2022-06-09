@@ -256,9 +256,9 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to changes at the user level (preview)
+## Subscribe to changes at the user level
 
-To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes. This subscription is only available in the beta endpoint.
+To track messages across all chats a particular user is part of, you can create a change notification subscription at a user level. To do this, subscribe to `/users/{user-id}/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in both *delegated* and *application-only* modes.
 
 User-level chat messaging subscriptions also support keyword-based search via the `$search` query parameter.
 
