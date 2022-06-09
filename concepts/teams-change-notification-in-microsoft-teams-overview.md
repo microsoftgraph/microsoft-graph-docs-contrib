@@ -22,7 +22,8 @@ For details about which resources support which types of change notifications, s
 
 ## Currently supported resources
 The following details the Microsoft Teams resources and corresponding resource paths that are currently supported:
-| **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
+
+| **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
 | Teams [channel](/graph/api/resources/channel) | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [chat](/graph/api/resources/chat) | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}` | Yes |
