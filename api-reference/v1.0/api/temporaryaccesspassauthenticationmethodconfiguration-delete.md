@@ -1,6 +1,6 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Remove changes made to a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Revert the Temporary Access Pass policy to its default configuration, represented by a default temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,7 @@ doc_type: apiPageType
 # Delete temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Remove changes made to the [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object by reverting the policy to its default configuration.
+Revert the Temporary Access Pass policy to its default configuration, represented by a default [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,9 +33,8 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 }
 -->
 ``` http
-DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
-
 
 ## Request headers
 |Name|Description|
@@ -59,14 +56,17 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass`
+```
 
 ### Response
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
