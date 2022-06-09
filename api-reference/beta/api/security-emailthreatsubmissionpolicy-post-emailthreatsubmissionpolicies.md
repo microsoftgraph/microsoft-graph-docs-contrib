@@ -44,21 +44,21 @@ In the request body, supply a JSON representation of the [emailThreatSubmissionP
 
 You can specify the following properties when creating an **emailThreatSubmissionPolicy**.
 
-|Property|Type|Description|
-|:---|:---|:---|
-| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to microsoft for analysis.                              |
-| isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
-| isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
-| isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              |
-| isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               |
-| isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              |
-| isCustomizedMessageEnabled               | Boolean | If enabled, customized message is enabled.                                                 |
-| customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 |
-| isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
-| isCustomizedNotificationSenderEnabled    | Boolean | If enabled, notificationSenderAddress is used by review notification email.                |
-| isOrganizationBrandingEnabled            | Boolean | If enabled, tenant branding logo will be used in review notification message.              |
+| Property                                 | Type    | Description                                                                                |
+|:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
 | customizedNotificationSenderEmailAddress | String  | Customized notification sender address for review notification message.                    |
+| customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 |
+| isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              |
+| isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
+| isCustomizedMessageEnabled               | Boolean | If enabled, customized message is enabled.                                                 |
+| isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              |
+| isCustomizedNotificationSenderEnabled    | Boolean | If enabled, notificationSenderAddress is used by review notification email.                |
+| isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               |
 | isReportFromQuarantineEnabled            | Boolean | If enabled, submission could be created from security portal quarantine page.              |
+| isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
+| isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to Microsoft for analysis.                              |
+| isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
+| isOrganizationBrandingEnabled            | Boolean | If enabled, tenant branding logo will be used in review notification message.              |
 
 
 
