@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schemaExtension = await graphClient.SchemaExtensions["{schemaExtension-id}"]
+var user = await graphClient.Users["{user-id}"]
 	.Request()
+	.Select("ext55gb1l09_msLearnCourses")
 	.GetAsync();
 
 ```

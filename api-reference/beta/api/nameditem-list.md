@@ -3,7 +3,7 @@ title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: workbooks-and-charts
 author: "ruoyingl"
 ---
 

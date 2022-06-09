@@ -5,7 +5,7 @@ ms.date: 09/13/2017
 title: ContentTypeOrder
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 ---
 
 # ContentTypeOrder resource type
