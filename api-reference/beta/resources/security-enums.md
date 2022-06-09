@@ -50,21 +50,35 @@ doc_type: enumTypes
 
 |Member|
 |:---|
-|pending|
-|error|
+|none|
+|inProcessing|
+|failed|
 |success|
-|notAvaliable|
+|unknownFutureValue|
 
-### retentionEventStatusType values 
+### eventStatusType values 
 
 
 
 |Member|
 |:---|
-|none|
-|inProcessing|
-|failed|
+|pending|
+|error|
 |success|
+|notAvaliable|
+|unknownFutureValue|
+
+### queryType values 
+
+
+
+|Member|
+|:---|
+|files|
+|messages|
+|unknownFutureValue|
+
+
 
 ### retentionTrigger values 
 
