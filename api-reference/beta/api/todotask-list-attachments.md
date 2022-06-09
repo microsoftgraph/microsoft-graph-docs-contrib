@@ -12,7 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.
+Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties. 
+**contentBytes** property will not be returned in the response. To view **contentBytes**, please use [Get attachment](../api/attachment-get.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -77,15 +78,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
-      "lastModifiedDateTime": "2021-04-02T03:41:29Z",
-      "name": "Q1 Planning.docx",
-      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      "size": 29068,
-      "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
-    }
-  ]
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.taskFileAttachment",
+            "id": "AAMkADliMm=",
+            "name": "flower.md",
+            "size": 2814,
+            "lastModifiedDateTime": "2022-06-09T10:40:52Z",
+            "contentType": "application/octet-stream"
+        },
+        {
+            "@odata.type": "#microsoft.graph.taskFileAttachment",
+            "id": "AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwBGAAAAAADdOMUbUmCfTKa7OC-fqjkdBwBnu3olF7NfToRyJ2f__TNcAAAAAAESAABnu3olF7NfToRyJ2f__TNcAAHmG2K0AAABEgAQAFWmGvX71MhOrjRDhWM95yY=",
+            "name": "tree.jpg",
+            "size": 8591,
+            "lastModifiedDateTime": "2022-06-09T10:40:59Z",
+            "contentType": "image/jpeg"
+        }
+    ]
 }
 ```

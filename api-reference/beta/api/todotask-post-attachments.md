@@ -75,7 +75,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.taskFileAttachment",
   "name": "smile",
-  "contentBytes": "a0b1c76de9f7="
+  "contentBytes": "a0b1c76de9f7=",
   "contentType": "image/gif",
 }
 ```
