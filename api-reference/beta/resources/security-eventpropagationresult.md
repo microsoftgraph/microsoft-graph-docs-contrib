@@ -19,9 +19,9 @@ Retrieve the status of an event and additional information about location and wo
 |Property|Type|Description|
 |:---|:---|:---|
 |location|String|Location in the workload.|
-|status|retentionEventStatusType|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
+|status|eventPropagationStatus|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
 |statusInformation|String|Additional infroamtion about the status.|
-|workload|String|Workload being targetted by the event.|
+|serviceName|String|Workload being targetted by the event.|
 
 ## Relationships
 None.
