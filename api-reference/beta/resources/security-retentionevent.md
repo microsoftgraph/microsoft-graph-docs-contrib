@@ -1,6 +1,6 @@
 ---
 title: "retentionEvent resource type"
-description: "Allows a user to manage labels where start of the retention period is based on when a specific type of event occurs"
+description: "Represents a trigger for event-based retention labels where start of the retention period is based on when a specific type of event occurs."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- When configuring a retention label, the retention period can be based on when a specific type of event occurs. For content with a label that has event-triggered retention period, 'retentionEvent' resource type is useful. To learn more about it, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
+Represents a trigger for event-based retention labels where start of the retention period is based on when a specific type of event occurs.
+To learn more about it, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
 ## Methods

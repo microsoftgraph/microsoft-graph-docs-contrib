@@ -1,6 +1,6 @@
 ---
 title: "retentionEventType resource type"
-description: "Provides infromation for event type. An event type is a generic desription for similar events that you want to associate with a label."
+description: "Provides infromation for event type. An event type is a generic desription for similar events that can be used with any label with event-based retention."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When an event is created, it is associated to a specific event type. The creation of this event then triggers all retentuon labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. For more information, read [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
+When an event is created, it is associated to a specific event type. The creation of this event then triggers all retention labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. 
+For more information, read [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
 ## Methods

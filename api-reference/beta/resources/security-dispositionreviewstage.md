@@ -1,6 +1,6 @@
 ---
 title: "dispositionReviewStage resource type"
-description: "Represents the reviewers to approve at each stage of the disposition process of a document."
+description: "Represents a multi-level review process where the reviewers approve at each stage of the disposition to delete or further retain the content item."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For content that has a label set for a disposition review at the end of a retetnion period, the 'dispositionReviewStage' resource type provides details about the reviewer and review stage. To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
+Represents a multi-level review process where the reviewers approve at each stage of the disposition to delete or further retain the content item.
+To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
 
 ## Methods
 |Method|Return type|Description|

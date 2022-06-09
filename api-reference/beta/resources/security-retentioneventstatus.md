@@ -1,6 +1,6 @@
 ---
 title: "retentionEventStatus resource type"
-description: "For event-based retention, this attribute can provide the status of event propogation after it is created."
+description: "For event-based retention, this attribute provides the status of event propogation to the targetted locations after the event has been created."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For event-based retention, this attribute can provide the status of event propogation after it is created.
+For event-based retention, this attribute provides the status of event propogation to the targetted locations after the event has been created.
 
 ## Properties
 |Property|Type|Description|

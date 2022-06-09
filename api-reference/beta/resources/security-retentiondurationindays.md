@@ -1,9 +1,9 @@
 ---
 title: "retentionDurationInDays resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Represents the number of days an item will be retained before it can be deleted"
+author: "sseth"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the number of days an item will be retained before it can be deleted.
 
 
 Inherits from [retentionDuration](../resources/security-retentionduration.md).
@@ -21,7 +21,7 @@ Inherits from [retentionDuration](../resources/security-retentionduration.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|days|Int32|**TODO: Add Description**|
+|days|Int32|Specifies the time period in days for a retention label.|
 
 ## Relationships
 None.

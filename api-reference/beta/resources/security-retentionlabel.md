@@ -36,7 +36,7 @@ Represents how customers can manage their data, whether and for how long to reta
 |descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
 |descriptionForUsers|String|This is an optional property that provides the label information for the user.|
 |displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
+|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Represents a multi stage collection of reviewers who will be notified for approval on whether a content item has to be deleted or retained further after its retention period is completed.|
 |id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
 |isInUse|Boolean|Specifies if the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
