@@ -564,15 +564,7 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call",
-  "truncated": true
-}-->
-
-```http
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
