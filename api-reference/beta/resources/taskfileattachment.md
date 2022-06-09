@@ -1,9 +1,9 @@
 ---
 title: "taskFileAttachment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "A file (such as a text file or Word document) attached to a todoTask "
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,28 +13,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A file (such as a text file or Word document) attached to a [todoTask](../resources/todotask.md),
+When creating a file attachment on task, include the following in the request body:
 
+* `"@odata.type": "#microsoft.graph.taskFileAttachment"`
+* The required properties **name** and **contentBytes**.
 
 Inherits from [attachmentBase](../resources/attachmentbase.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List taskFileAttachments](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
-|[Create taskFileAttachments](../api/todotask-post-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Create a new [taskFileAttachment](../resources/taskfileattachment.md) object.|
-|[Get taskFileAttachment](../api/taskfileattachment-get.md)|[taskFileAttachment](../resources/taskfileattachment.md)|Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.|
-|[Delete taskFileAttachment](../api/taskfileattachment-delete.md)|None|Deletes a [taskFileAttachment](../resources/taskfileattachment.md) object.|
+|[List attachments](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
+|[Upload a file to todoTask ](../api/todotask-list-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.|
+|[Upload a small file to todoTask](../api/todotask-post-attachments.md)|[taskFileAttachment](../resources/taskfileattachment.md) collection|Create a new [taskFileAttachment](../resources/taskfileattachment.md) object.|
+|[Get attachments](../api/taskfileattachment-get.md)|[taskFileAttachment](../resources/taskfileattachment.md)|Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.|
+|[Delete attachments](../api/taskfileattachment-delete.md)|None|Deletes a [taskFileAttachment](../resources/taskfileattachment.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentBytes|Binary|**TODO: Add Description**|
-|contentType|String|**TODO: Add Description** Inherited from [attachmentBase](../resources/attachmentbase.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [attachmentBase](../resources/attachmentbase.md).|
-|name|String|**TODO: Add Description** Inherited from [attachmentBase](../resources/attachmentbase.md).|
-|size|Int32|**TODO: Add Description** Inherited from [attachmentBase](../resources/attachmentbase.md).|
+|contentBytes|Binary|The base64-encoded contents of the file.|
+|contentType|String|The content type of the attachment. Inherited from [attachmentBase](../resources/attachmentbase.md).|
+|id|String|The ID of the attachment. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. Inherited from [attachmentBase](../resources/attachmentbase.md).|
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name. Inherited from [attachmentBase](../resources/attachmentbase.md).|
+|size|Int32|The size in bytes of the attachment. Inherited from [attachmentBase](../resources/attachmentbase.md).|
+
 
 ## Relationships
 None.

@@ -1,9 +1,9 @@
 ---
 title: "Get taskFileAttachment"
 description: "Read the properties and relationships of a taskFileAttachment object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.
+Read the properties, relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.
+
+### Get the raw contents of a file attachment
+You can append the path segment `/$value` to get the raw contents of a file attachment. The content type is based on its original content type of the file.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -29,8 +32,9 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
-GET /taskFileAttachment
+```http
+GET /me/todo/lists/{id}/tasks/{id}/attachments/{id}
+/users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}
 ```
 
 ## Optional query parameters
@@ -58,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/taskFileAttachment
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 
 
@@ -78,12 +82,12 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.taskFileAttachment",
-    "id": "578e1469-aa10-6dc2-554a-8ea81afcce3f",
-    "lastModifiedDateTime": "String (timestamp)",
-    "name": "String",
-    "contentType": "String",
-    "size": "Integer",
-    "contentBytes": "Binary"
+    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+    "lastModifiedDateTime": "2021-04-02T03:41:29Z",
+    "name": "Q1 Planning.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 29068,
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
   }
 }
 ```

@@ -1,27 +1,27 @@
 ---
-title: "Create attachmentBase"
-description: "Create a new attachmentBase object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "Create taskFileAttachment"
+description: "Create a new taskFileAttachment object."
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create attachmentBase
+# Create taskFileAttachment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [attachmentBase](../resources/attachmentbase.md) object.
+Create a new [taskFileAttachment](../resources/taskfileattachment.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
-POST /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
+POST /me/todo/lists/{id}/tasks/{id}/attachments
+POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments
 ```
 
 ## Request headers
@@ -41,22 +41,20 @@ POST /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [attachmentBase](../resources/attachmentbase.md) object.
+In the request body, supply a JSON representation of the [taskFileAttachment](../resources/taskfileattachment.md) object.
 
-You can specify the following properties when creating an **attachmentBase**.
+You can specify the following properties when creating an **taskFileAttachment**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|name|String|**TODO: Add Description** Optional.|
-|contentType|String|**TODO: Add Description** Optional.|
-|size|Int32|**TODO: Add Description** Required.|
-
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
+|contentType|String|The content type of the attachment. Optional.|
+|size|Int32|The size in bytes of the attachment. Required.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [attachmentBase](../resources/attachmentbase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [taskFileAttachment](../resources/taskfileattachment.md) object in the response body.
 
 ## Examples
 
@@ -64,7 +62,7 @@ If successful, this method returns a `201 Created` response code and an [attachm
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_attachmentbase_from_"
+  "name": "create_taskFileAttachment_from_"
 }
 -->
 ``` http
@@ -73,10 +71,9 @@ Content-Type: application/json
 Content-length: 127
 
 {
-  "@odata.type": "#microsoft.graph.attachmentBase",
-  "name": "String",
-  "contentType": "String",
-  "size": "Integer"
+  "@odata.type": "#microsoft.graph.taskFileAttachment",
+  "name": "smile",
+  "contentBytes": "a0b1c76de9f7="
 }
 ```
 
@@ -87,7 +84,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachmentBase"
+  "@odata.type": "microsoft.graph.taskFileAttachment"
 }
 -->
 ``` http
@@ -95,12 +92,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.attachmentBase",
-  "id": "4cd21088-df8e-c1ed-dfbb-169c445c432b",
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "String",
-  "contentType": "String",
-  "size": "Integer"
+  "@odata.type": "#microsoft.graph.taskFileAttachment",
+  "id": "AAMkADNkN2R",
+  "lastModifiedDateTime": "2017-01-26T08:48:28Z",
+  "name": "smile",
+  "contentType": "image/gif",
+  "size": 1008,
 }
+
 ```
 

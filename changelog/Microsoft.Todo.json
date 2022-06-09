@@ -2,6 +2,24 @@
   "changelog":[
     {
       "ChangeList": [
+          {
+            "Id": "0489ad7a-0a8b-4134-8cb2-81479ff85fee",
+            "ApiChange": "Property",
+            "ChangedApiName": "nextExpectedRange",
+            "ChangeType": "Change",
+            "Description": "Renamed the **nextExpectedRange** property of the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentSession?view=graph-rest-beta) resource as nextExpectedRanges",
+            "Target": "attachmentSession"
+          }
+        ],
+        "Id": "0489ad7a-0a8b-4134-8cb2-81479ff85fee",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-06-06T10:57:17.2664741Z",
+        "WorkloadArea": "To-do tasks",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "3863e409-e84b-4b70-8071-d8f028c81ac8",
           "ApiChange": "Resource",

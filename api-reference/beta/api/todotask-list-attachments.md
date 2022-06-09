@@ -1,27 +1,27 @@
 ---
-title: "List attachmentBases"
-description: "Get a list of the attachmentBase objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+title: "List taskFileAttachments"
+description: "Get a list of the taskFileAttachment objects and their properties."
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# List attachmentBases
+# List taskFileAttachments
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [attachmentBase](../resources/attachmentbase.md) objects and their properties.
+Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
-GET /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
+GET /users/{id}/todo/lists/{id}/tasks/{id}/attachments
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [attachmentBase](../resources/attachmentbase.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [taskFileAttachment](../resources/taskfileattachment.md) objects in the response body.
 
 ## Examples
 
@@ -55,11 +55,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_attachmentbase"
+  "name": "list_taskfileattachment"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/attachments
+GET https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGUzY5QKjAAA=/attachments/
 ```
 
 
@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.attachmentBase)"
+  "@odata.type": "Collection(microsoft.graph.taskFileAttachment)"
 }
 -->
 ``` http
@@ -77,16 +77,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.attachmentBase",
-      "id": "4cd21088-df8e-c1ed-dfbb-169c445c432b",
-      "lastModifiedDateTime": "String (timestamp)",
-      "name": "String",
-      "contentType": "String",
-      "size": "Integer"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.taskFileAttachment",
+    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+    "lastModifiedDateTime": "2021-04-02T03:41:29Z",
+    "name": "Q1 Planning.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 29068,
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
+  }
 }
 ```
-

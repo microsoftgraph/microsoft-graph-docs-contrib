@@ -1,9 +1,9 @@
 ---
 title: "attachmentBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "You can add related content to a todoTask in the form of an attachment"
+author: "avijityadav"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+You can add related content to a [todoTask](./todotask) in the form of an attachment.
 This is an abstract type.
+
+**attachment** is the base resource for the following derived types of attachments:
+* A file ([taskFileAttachment](../resources/fileattachment.md) resource) attached to a task.
 
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List attachmentBases](../api/todotask-list-attachments.md)|[attachmentBase](../resources/attachmentbase.md) collection|Get a list of the [attachmentBase](../resources/attachmentbase.md) objects and their properties.|
-|[Create attachmentBase](../api/todotask-post-attachments.md)|[attachmentBase](../resources/attachmentbase.md)|Create a new [attachmentBase](../resources/attachmentbase.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|contentType|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|size|Int32|**TODO: Add Description**|
+|contentType|String|The MIME type.|
+|id|String|Read-only. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|name|String|The display name of the attachment. This does not need to be the actual file name.|
+|size|Int32|The length of the attachment in bytes.|
 
 ## Relationships
 None.
