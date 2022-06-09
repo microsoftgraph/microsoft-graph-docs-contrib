@@ -11,6 +11,14 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
 ### approvalFilterByCurrentUserOptions values 
 
 |Member|
