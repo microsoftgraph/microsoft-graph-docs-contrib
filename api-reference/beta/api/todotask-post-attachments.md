@@ -71,12 +71,12 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/AAMkpsDRVK=/tasks/AAKdfjhgsjhgJ=/attachments
 Content-Type: application/json
-Content-length: 127
 
 {
   "@odata.type": "#microsoft.graph.taskFileAttachment",
   "name": "smile",
   "contentBytes": "a0b1c76de9f7="
+  "contentType": "image/gif",
 }
 ```
 

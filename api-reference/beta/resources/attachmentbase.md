@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can add related content to a [todoTask](./todotask) in the form of an attachment.
+You can add related content to a [todoTask](../resources//todotask.md) in the form of an attachment.
 This is an abstract type.
 
 **attachment** is the base resource for the following derived types of attachments:

@@ -77,14 +77,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.taskFileAttachment",
-    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
-    "lastModifiedDateTime": "2021-04-02T03:41:29Z",
-    "name": "Q1 Planning.docx",
-    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "size": 29068,
-    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
-  }
+  "value": [
+    {
+      "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+      "lastModifiedDateTime": "2021-04-02T03:41:29Z",
+      "name": "Q1 Planning.docx",
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "size": 29068,
+      "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
+    }
+  ]
 }
 ```
