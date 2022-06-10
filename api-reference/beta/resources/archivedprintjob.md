@@ -1,7 +1,7 @@
 ---
-title: "archivedPrintJob resource type"
-description: "A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job."
-author: "braedenp-msft"
+title: archivedPrintJob resource type
+description: A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job.
+author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
