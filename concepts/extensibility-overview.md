@@ -1,6 +1,6 @@
 ---
 title: "Add custom data to resources using extensions"
-description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
+description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through resources such as user and message. You can also extend Microsoft Graph with your own application data using extensions."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -32,13 +32,13 @@ Microsoft Graph offers four types of extensions for adding custom data.
 
 ### 1. Extension attributes properties
 
-Azure AD offers a set of 15 custom properties on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange but they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
+Azure AD offers a set of 15 custom properties on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
 You can use the extension attributes 1-15 to store up to 15 custom data string values on a **user** or **device** resource instance, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned using a POST operation to create an instance of the resource, or updated with a PATCH operation to the resource instance. They can also be filtered.
 
 #### Developer experience
 
-The following examples show how the custom data is presented on a resource instance.
+The following examples show how the custom data is presented resource instances.
 
 ##### Example: Extension attributes on a user object
 
@@ -96,7 +96,7 @@ For the list of resource types that can be specified as target objects for a dir
 
 Directory extensions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The custom data are managed through the same REST requests that you use to manage the resource instance.
 
-The following example shows a directory extension definition
+The following example shows a directory extension definition.
 
 ```http
 {
@@ -134,16 +134,16 @@ For the list of resource types that can be specified as target objects for a Mic
 
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 
-- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This is the preferred option.
-- If you don’t have a verified vanity domain, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`.  For example, `extkvbmkofy_mySchema`.
+- If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
+- If you don’t have a verified vanity domain, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
 
 The **id** will be the name of the complex type that will store your custom data on the extended resource instance.
 
 Once a schema extension is registered, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write custom data on any extensions defined on the target object.
 
-Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. Because schema extensions are accessible as complex types in instances of the targeted resources, you can do CRUD operations on the custom data in a schema extension in the following ways:
+Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. Because schema extensions are accessible as complex types in instances of the targeted resources, you can perform CRUD operations on the custom data in the following ways:
 
-- Use the resource `POST` method to specify custom data when creating a new resource instance. There is a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that require creating a schema extension using a `PATCH` operation.
+- Use the resource `POST` method to specify custom data when creating a new resource instance. There's a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that require creating a schema extension using a `PATCH` operation.
 - Use the resource `GET` method with a `$select` query parameter to read the custom data.
 - Use the resource `PATCH` method to add or update custom data in an existing resource instance.
 - Use the resource `PATCH` method to set the complex type to `null`, which deletes the custom data in the resource instance.
@@ -227,7 +227,7 @@ For more information about how to use open extensions to add custom data, see [o
 
 ## Choose an extension type for your application
 
-The table below contrasts and compares each options capabilities, which should help you decide which option is most appropriate for your scenario.
+The table below contrasts and compares the custom data options, which should help you decide which option is most appropriate for your scenario.
 
 | Capability | Directory extensions | Schema extensions | Open extensions | Extension attributes 1-15 |
 |:-|:-|:-|:-|:-|
@@ -239,7 +239,7 @@ The table below contrasts and compares each options capabilities, which should h
 | Create [dynamic membership rules][] using custom data in extensions | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
 | Usable for customizing token claims | [Yes][DirectoryExt-CustomClaims] | No | No | Yes |
 | Available in Azure AD B2C | [Yes][B2CDirectoryExt] | Yes | Yes | Yes |
-| Limits | 100 extension values across *all* types and *all* applications per resource instance | Maximum of 5 definitions per owner app | - | 15 predefined attributes per user or device resource instance |
+| Limits | 100 extension values across *all* types and *all* applications per resource instance | Maximum of five definitions per owner app | - | 15 predefined attributes per user or device resource instance |
 
 > **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
