@@ -22,7 +22,7 @@ Represents threat submission result after threat submission is processed by Micr
 | detail             | submissionResultDetail             | It is used to specify the additional details provided by Microsoft to substantiate their analysis result. |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | It is use to specify the files which were detected by Microsoft in the submitted emails|
 | detectedUrls       | Collection(String)                 | It is used to specify the URLs which were detected by Microsoft in the submitted email.|
-| userMailboxSetting | userMailboxSetting                | The user mailbox setting flag string which is a comma separated string from a bitfield enum. |
+| userMailboxSetting | userMailboxSetting                | It is a flag which specifies the setting for user mailbox denoted by a comma separated string. |
 
 ## Relationships
 None.
