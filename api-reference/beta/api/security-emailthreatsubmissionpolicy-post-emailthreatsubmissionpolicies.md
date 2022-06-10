@@ -47,7 +47,7 @@ You may also specify the following properties when creating an **emailThreatSubm
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
 | customizedNotificationSenderEmailAddress | String  | Customized notification sender address for review notification message.                    |
-| customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 |
+| customizedReportRecipientEmailAddress    | String  | It is used to specify the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk.   |
 | isAlwaysReportEnabledForUsers            | Boolean | It is used to specify whether end users can report a message as spam, phish or junk directly without a confirmation(popup). Its default value is true |
 | isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
 | isCustomizedMessageEnabled               | Boolean |It is used to specify whether the email notifications sent to end users to inform them whether an email is phish, spam or junk is customized or not? |
