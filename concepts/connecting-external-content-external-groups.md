@@ -1,5 +1,5 @@
 ---
-title: Manage permissions to Microsoft Graph connectors data sources
+title: Use external groups to manage permissions to Microsoft Graph connectors data sources
 description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Azure AD groups.
 author: mecampos
 doc_type: conceptualPageType
