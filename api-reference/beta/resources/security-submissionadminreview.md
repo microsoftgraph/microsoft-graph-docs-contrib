@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents admin review information for threat submission. Currently, only user reported email threat submission is supported and could be reviewed by administrator.
+Represents admin review information for threat submission. Currently, only user reported email threat submission is supported and can be reviewed by administrator.
 
 ## Properties
 | Property       | Type                     | Description                                  |
