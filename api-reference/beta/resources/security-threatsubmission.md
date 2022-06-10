@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmiss
 | category        | submissionCategory         | The category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`.|
 | clientSource    | submissionClientSource     | The client source of the submission. The possible values are: `microsoft` and `other`. |
 | contentType     | submissionContentType      | The content type of the submission. The possible values are: `email`, `url`, `file` and `app`.  |
-| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | The submitter of the threat submission.   |
+| createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | It is use to specify who submitted the email as a threat.|
 | createdDateTime | DateTimeOffset             | It is used to specify when the threat submission was created.                                          |
 | id              | String                     | The id of the threat submission. |
 | result          | [security.submissionResult](../resources/security-submissionresult.md)          | The result of the threat submission.  |
