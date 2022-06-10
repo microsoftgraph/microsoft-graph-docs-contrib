@@ -42,7 +42,7 @@ POST /security/threatSubmission/emailThreats
 ## Request body
 In the request body, either supply a JSON representation of the [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or the [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
 
-The emailContentThreatSubmission and emailUrlThreatSubmission are both emailThreatSubmission but submitted with different ways. 
+The emailContentThreatSubmission and emailUrlThreatSubmission are both subtypes of emailThreatSubmission entity and helps to make submission in different ways. 
 * The emailContentThreatSubmission is created with email content itself.
 * The emailUrlThreatSubmissino is created by email url which points to the email. 
 * After emailContentThreatSubmission and emailUrlThreatSubmision are created, threat submission service itself does not store the email content and just some metadata are stored. So, the creation results are both emailThreatSubmission entity.
