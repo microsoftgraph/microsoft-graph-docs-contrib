@@ -29,6 +29,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+          "ApiChange": "Method",
+          "ChangedApiName": "roleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added example to [Create unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta) for how to assign role with attribute set scope.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+      "Id": "3502cca7-ee24-4cbe-8d84-0210e9be406e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-09T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory Management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
