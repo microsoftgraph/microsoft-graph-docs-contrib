@@ -65,7 +65,7 @@ If successful, this method returns the `200 OK` response code with the user's re
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -106,14 +106,15 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 ---
 
 
-##### Response
+### Response
 
 The following is an example of the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.userActivity)"
+  "@odata.type": "microsoft.graph.userActivity",
+  "isCollection" true
 } -->
 
 ```http
