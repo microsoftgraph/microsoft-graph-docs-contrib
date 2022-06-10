@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant allow block list entry result. It is an entry for tenant allow block list item which could be url, attachment or senders.
+Represents result of tenant allow block list entry. It is an entry for tenant allow block list item that could be url, attachment or senders.
 
 ## Properties
 | Property           | Type                          | Description                                             |
