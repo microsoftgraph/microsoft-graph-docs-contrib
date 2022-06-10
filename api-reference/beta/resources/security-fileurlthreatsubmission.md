@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents file threat submission which is submitted by file url. It is a reserved api and not supported by now.
+Represents file threat submission object which is created when submission is made using file URL. It is a reserved api and not supported as of today.
 
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
