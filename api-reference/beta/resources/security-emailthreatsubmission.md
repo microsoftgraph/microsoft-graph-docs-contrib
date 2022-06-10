@@ -28,7 +28,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 ## Properties
 | Property                     | Type                         | Description                                                                                            |
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
-| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, the field will not be null.|
+| attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, this field will not be null.|
 | internetMessageId            | String                       | The internet message id of the submitted email.                                                       |
 | originalCategory             | submissionCategory           | The original category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`. |
 | receivedDateTime             | DateTimeOffset               | The received date time of the submitted email.                                                        | 
