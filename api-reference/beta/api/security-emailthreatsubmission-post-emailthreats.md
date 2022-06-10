@@ -40,7 +40,7 @@ POST /security/threatSubmission/emailThreats
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or the [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md).
+In the request body, either supply a JSON representation of the [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) object or the [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md) object.
 
 The emailContentThreatSubmission and emailUrlThreatSubmission are both emailThreatSubmission but submitted with different ways. 
 * The emailContentThreatSubmission is created with email content itself.
