@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|ThreatSubmissionPolicy.ReadWrite.All|
 
 ## HTTP request
-Only HTTP `PATCH` request is supported by now. HTTP `PUT` is not supported.
+Only HTTP `PATCH` request is supported as of today. HTTP `PUT` is not supported.
 
 <!-- {
   "blockType": "ignored"
