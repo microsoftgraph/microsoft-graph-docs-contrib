@@ -58,7 +58,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 | isReportFromQuarantineEnabled            | Boolean | It is used to specify whether end users can submit from the quarantine page or not?|
 | isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
 | isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to Microsoft for analysis.                              |
-| isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
+| isReviewEmailNotificationEnabled         | Boolean |It is used to specify whether an email notification be sent to the end user who reported the email when it has been reviewed by the Admin? |
 
 
 
