@@ -19,24 +19,21 @@ One way to help make sure extension names are unique is to use a reverse domain 
 
 Open extension example: [Add custom data to users using open extensions](/graph/extensibility-open-users)
 
-Open extensions are supported by the following resources in the corresponding versions - general availability (/v1.0) or preview (/beta).
+Open extensions are supported by the following resources.
 
-|Resource |Version |
-|:---------------|:-------|
-| [Administrative unit](/graph/api/resources/administrativeunit)  | GA |
-| [Calendar event](event.md) \* | GA |
-| Group [calendar event](event.md) | GA |
-| Group conversation thread [post](post.md) | GA |
-| [device](device.md) | GA |
-| [group](group.md) | GA |
-| [message](message.md) | GA |
-| [organization](organization.md) | GA |
-| [Personal contact](contact.md) | GA |
-| [user](user.md) | GA |
-| [To-do task](todotask.md)  | GA |
-| [To-do task list](todotasklist.md)  | GA |
++ [user](/graph/api/resources/user)
++ [group](/graph/api/resources/group)
++ [administrativeUnit](/graph/api/resources/administrativeunit)
++ [contact](/graph/api/resources/contact)
++ [device](/graph/api/resources/device)
++ [event](/graph/api/resources/event)* for both user and group calendars
++ [message](/graph/api/resources/message)
++ [organization](/graph/api/resources/organization)
++ [post](/graph/api/resources/post)
++ [todoTask](todotask.md) 
++ [todoTaskList](todotasklist.md)
 
->\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+> **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
 ## Outlook-specific considerations
 
@@ -75,10 +72,10 @@ Here is a JSON representation of the resource.
 
 ## Properties
 
-|Property | Type | Description |
+|Property Type Description |
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|id|StringA fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
 ## Relationships
 
@@ -86,12 +83,12 @@ None
 
 ## Methods
 
-|Method | Return Type | Description |
+|Method Return Type Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+|[Create](../api/opentypeextension-post-opentypeextension.md) [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object Create an openTypeExtension object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Update](../api/opentypeextension-update.md) [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
+|[Delete](../api/opentypeextension-delete.md) None |Delete openTypeExtension object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

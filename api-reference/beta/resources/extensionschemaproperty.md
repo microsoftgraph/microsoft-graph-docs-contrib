@@ -22,7 +22,7 @@ Use the **extensionSchemaProperty** resource to define a property's name and its
 |name|String| The name of the strongly typed property defined as part of a schema extension.|
 |type|String| The type of the property that is defined as part of a schema extension.  Allowed values are *Binary, Boolean, DateTime, Integer* or *String*.  See the table below for more details.|
 
-#### Supported property data types 
+### Supported property data types 
 The following data types are supported when defining a property in a schema extension:
 
 | Property Type | Remarks |
@@ -32,6 +32,9 @@ The following data types are supported when defining a property in a schema exte
 | DateTime | Must be specified in ISO 8601 format. Will be stored in UTC. |
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
+
+
+> **Note:** Multi-value properties are not supported.
 
 ## JSON representation
 Here is a JSON representation of the resource.

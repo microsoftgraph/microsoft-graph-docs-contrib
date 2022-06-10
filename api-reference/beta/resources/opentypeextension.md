@@ -15,34 +15,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Open extensions (formerly known as Office 365 data extensions) provide an easy way to directly add untyped properties to a resource in Microsoft Graph.
-Open extensions are represented by the **openTypeExtension** resource. Any open extension added to a resource shows up in the **extensions** navigation property,
-which is derived from the [extension](extension.md) abstract type.  Each extension has an **extensionName** property which is the only pre-defined,
-writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS)
-format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
+Represents open extensions (formerly known as Office 365 data extensions), an [extensibility option](/graph/extensibility-overview) that provides an easy way to directly add untyped properties to a resource in Microsoft Graph.
 
-Open extension example: [Add custom data to users using open extensions](/graph/extensibility-open-users)
+Any open extension added to a resource shows up in the **extensions** navigation property. Each extension has an **extensionName** property which is the only pre-defined, writable property for all extensions, along with your custom data. One way to help make sure extension names are unique is to use a reverse domain name system (DNS) format that is dependent on _your own domain_, for example, `com.contoso.ContactInfo`. **Do not use** the Microsoft domain (`com.microsoft` or `com.onmicrosoft`) in an extension name.
+
+Derives from the [extension](extension.md) abstract type. 
 
 Open extensions are supported by the following resources in the corresponding versions - general availability (/v1.0) or preview (/beta).
 
-| Resource | Version |
-|---------------|-------|
-| [Administrative unit](administrativeunit.md) | GA |
-| [Base task (deprecated)](basetask.md) | Beta |
-| [Base task list (deprecated)](basetasklist.md) | Beta |
-| [Calendar event](event.md) \* | GA |
-| Group [calendar event](event.md) | GA |
-| Group conversation thread [post](post.md) | GA |
-| [Device](device.md) | GA |
-| [Group](group.md) | GA |
-| [Message](message.md) | GA |
-| [Organization](organization.md) | GA |
-| [Personal contact](contact.md) | GA |
-| [User](user.md) | GA |
-| [To-do task](todotask.md) | GA |
-| [To-do task list](todotasklist.md) | GA |
++ [user](/graph/api/resources/user)
++ [group](/graph/api/resources/group)
++ [administrativeUnit](/graph/api/resources/administrativeunit)
++ [contact](/graph/api/resources/contact)
++ [device](/graph/api/resources/device)
++ [event](/graph/api/resources/event) for both user and group calendars
++ [message](/graph/api/resources/message)
++ [organization](/graph/api/resources/organization)
++ [post](/graph/api/resources/post)
++ [todoTask](todotask.md) 
++ [todoTaskList](todotasklist.md)
++ [baseTaskList](basetasklist.md) (deprecated)
++ [baseTask](basetask.md) (deprecated)
 
->\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+> **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+
+For more information about Microsoft Graph extensibility, see [Add custom data to resources using extensions](/graph/extensibility-overview) and [Add custom data to users using open extensions](/graph/extensibility-open-users).
 
 ## Outlook-specific considerations
 
@@ -96,6 +93,13 @@ None
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
 |[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+
+
+## See also
+
++ [Add custom data to resources using extensions](/graph/extensibility-overview)
++ [Add custom data to users using open extensions](/graph/extensibility-open-users)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

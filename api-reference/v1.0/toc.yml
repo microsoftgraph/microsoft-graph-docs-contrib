@@ -847,7 +847,7 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Extensions
+        - name: Directory extensions
           items:
           - name: Extension property
             href: resources/extensionproperty.md

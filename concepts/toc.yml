@@ -247,6 +247,14 @@ items:
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
+      - name: Extensions
+        items:
+          - name: Overview
+            href: extensibility-overview.md
+          - name: Use open extensions
+            href: extensibility-open-users.md
+          - name: Use schema extensions
+            href: extensibility-schema-groups.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -603,13 +611,7 @@ items:
                 href: delta-query-users.md
           - name: Add custom data
             displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-            items:
-              - name: Overview
-                href: extensibility-overview.md
-              - name: Use open extensions (example)
-                href: extensibility-open-users.md
-              - name: Use schema extensions (example)
-                href: extensibility-schema-groups.md
+            href: extensibility-overview.md
           - name: Use Graph Explorer
             items:
             - name: Get started
