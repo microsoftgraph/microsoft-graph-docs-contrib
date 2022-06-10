@@ -42,7 +42,7 @@ POST /security/threatSubmission/emailThreatSubmissionPolicies
 ## Request body
 In the request body, supply a JSON representation of the [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object.
 
-You can specify the following properties when creating an **emailThreatSubmissionPolicy**.
+You may also specify the following properties when creating an **emailThreatSubmissionPolicy**.
 
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
