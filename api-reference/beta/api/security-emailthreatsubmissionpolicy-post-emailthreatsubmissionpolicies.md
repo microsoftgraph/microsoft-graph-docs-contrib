@@ -48,13 +48,13 @@ You may also specify the following properties when creating an **emailThreatSubm
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
 | customizedNotificationSenderEmailAddress | String  | Customized notification sender address for review notification message.                    |
 | customizedReportRecipientEmailAddress    | String  | When customized address enabled, the message will be sent to this address.                 |
-| isAlwaysReportEnabledForUsers            | Boolean | User could use 'Always report the message' option. The default value is true.              |
+| isAlwaysReportEnabledForUsers            | Boolean | It is used to specify whether end users can report a message as spam, phish or junk directly without a confirmation(popup). Its default value is true |
 | isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
-| isCustomizedMessageEnabled               | Boolean | If enabled, customized message is enabled.                                                 |
+| isCustomizedMessageEnabled               | Boolean |It is used to specify whether the email notifications sent to end users to inform them whether an email is phish, spam or junk is customized or not? |
 | isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              |
-| isCustomizedNotificationSenderEnabled    | Boolean | If enabled, notificationSenderAddress is used by review notification email.                |
+| isCustomizedNotificationSenderEnabled    | Boolean | It is used to specify whether we should use the sender email address which we will set below using customizedNotificationSenderEmailAddress for sending email notifications to end users or not? |
 | isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               |
-| isReportFromQuarantineEnabled            | Boolean | If enabled, submission could be created from security portal quarantine page.              |
+| isReportFromQuarantineEnabled            | Boolean | It is used to specify whether end users can submit from the quarantine page or not? |
 | isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
 | isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to Microsoft for analysis.                              |
 | isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
