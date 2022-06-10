@@ -162,7 +162,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
->**Note:** When filtering on **issuerAssignedId**, you must supply both **issuer** and **issuerAssignedId**. For certain entries, the **issuer** value will be ignored. For more details on filtering on identities see [objectIdentity resource type](https://docs.microsoft.com/en-us/graph/api/resources/objectIdentity?view=graph-rest-1.0).
+>**Note:** When filtering for an **issuerAssignedId**, you must supply both **issuer** and **issuerAssignedId**. For certain entries, the **issuer** value will be ignored. For more details on filtering on identities see [objectIdentity resource type](https://docs.microsoft.com/en-us/graph/api/resources/objectIdentity?view=graph-rest-1.0).
 
 
 # [HTTP](#tab/http)
