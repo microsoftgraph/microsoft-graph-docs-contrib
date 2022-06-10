@@ -19,7 +19,7 @@ Represents tenant allow or block list action. When admin creates email threat su
 | Property           | Type                                        | Description                                                                      |
 |:-------------------|:--------------------------------------------|:---------------------------------------------------------------------------------|
 | action             | tenantAllowBlockListAction                  | The tenant allow block list action. The possible values are: `allow` and `block`.|
-| expirationDateTime | DateTimeOffset                              | The tenant allow block list auto expiration date time.                           |
+| expirationDateTime | DateTimeOffset                              | It is used to specify when the Tenant allow block list expires in date time,  |
 | note               | String                                      | It specifies the note added to the tenant allow block list entry in the format of string. |
 | results            | Collection([security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | It contains the result of the submission which lead to this Tenant allow block list entry creation |
 
