@@ -22,7 +22,7 @@ Inherits from graph.identity.
 | Property    | Type   | Description                                                                                                    |
 |:------------|:-------|:---------------------------------------------------------------------------------------------------------------|
 | displayName | String | The field inherits from graph.identity.                                                                 |
-| email       | String | The email of submission user for delegated token case.                                                         | 
+| email       | String | The email of user who is making the submission when they are logged in (delegated token case). | 
 | id          | String | The field inherits from graph.identity.  |
 
 
