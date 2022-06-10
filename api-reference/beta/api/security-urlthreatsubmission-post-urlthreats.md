@@ -42,7 +42,7 @@ POST /security/threatSubmission/urlThreats
 ## Request body
 In the request body, supply a JSON representation of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) object.
 
-You can specify the following properties when creating an **urlThreatSubmission**.
+You may also specify the following properties when creating an **urlThreatSubmission**.
 
 |Property|Type|Description|
 |:---|:---|:---|
