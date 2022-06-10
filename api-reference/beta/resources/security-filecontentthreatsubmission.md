@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents file content threat submission which is submitted by file content.
+Represents file content threat submission object which is created when submission is made using file content.
 
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
