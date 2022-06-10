@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 This is an abstract type for threat submission. 
 
-It is used to submit suspected spam emails, malware emails, phish emails, malware urls, phish urls and malware email attachments to Microsoft 365 Defender for Office (MDO), as well as to submit suspicious files to M365 Defender for Endpoint (MDE).
+It is used to submit suspected spam emails, malware emails, phish emails, malware urls, phish urls, phish email attachments and malware email attachments to Microsoft 365 Defender for Office (MDO), as well as to submit suspicious files to M365 Defender for Endpoint (MDE).
 
 It could also be used to submit false positive cases which should not have been blocked by MDO, e.g, not junk emails, safe urls and safe email attachments.
 
