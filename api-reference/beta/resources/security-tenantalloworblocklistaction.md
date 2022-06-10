@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant allow or block list action. When admin creates email threat submission, tenant allow block list operation could be provided. When tenant allow block list operation is provided, the threat submission will auto add releated items (urls/attachments/senders) into tenant allow block list.
+Represents tenant allow or block list action. When admin creates email threat submission, tenant allow block list operation can also be provided. When tenant allow block list operation is provided, the threat submission will auto add related items (urls/attachments/senders) into tenant allow block list.
 
 ## Properties
 | Property           | Type                                        | Description                                                                      |
