@@ -18,10 +18,10 @@ If an email was an attack simulation email, the email threat submission would co
 ## Properties
 | Property              | Type           | Description                          |
 |:----------------------|:---------------|:-------------------------------------|
-| attackSimDateTime     | DateTimeOffset | The attack simulation date time.     |
-| attackSimDurationTime | Duration       | The attack simulation duration time. |
-| attackSimId           | Guid           | The attack simulation activity id.   |
-| attackSimUserId       | String         | The attack simulation user id.       |
+| attackSimDateTime     | DateTimeOffset | It is used to specify the date time of the attack simulation.   |
+| attackSimDurationTime | Duration       | It is used to specify the duration (in time) for the attack simulation  |
+| attackSimId           | Guid           |It is used to specify the activity id for the attack simulation. |
+| attackSimUserId       | String         | It is used to specify the user id of the user who got the attack simulation email   |
 
 ## Relationships
 None.
