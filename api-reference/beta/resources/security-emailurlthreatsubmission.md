@@ -21,7 +21,7 @@ Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmissio
 ## Properties
 | Property   | Type   | Description                            |
 |:-----------|:-------|:---------------------------------------|
-| messageUrl | String | The graph message url to be submitted. |
+| messageUrl | String | It specifies the url of the graph message which is to be submitted. |
 
 ## Relationships
 None.

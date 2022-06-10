@@ -19,7 +19,7 @@ Represents result of tenant allow block list entry. It is an entry for tenant al
 | Property           | Type                          | Description                                             |
 |:-------------------|:------------------------------|:--------------------------------------------------------|
 | entryType          | tenantAllowBlockListEntryType | The entry type of tenant allow block list. The possible values are: `url`, `fileHash`, `sender` and `recipient`.  |
-| expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                |
+| expirationDateTime | DateTimeOffset                | It is used to specify when will this entry expire in date time? |
 | identity           | String                        | The identity.                                           |
 | status             | longRunningOperationStatus    | The tenant allow block operation status for this entry. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
 | value              | String                        | It is used to specify the value of the created Tenant allow block list entry.  |
