@@ -55,7 +55,7 @@ You may also specify the following properties when creating an **emailThreatSubm
 | isCustomizedNotificationSenderEnabled    | Boolean | It is used to specify whether we should use the sender email address which we will set below using customizedNotificationSenderEmailAddress for sending email notifications to end users or not? |
 | isNeverReportEnabledForUsers             | Boolean | It is used to specify whether end users can simply move the message from one folder to another based on the action of spam, phish or not junk without actually reporting it. Its default value is true |
 | isReportFromQuarantineEnabled            | Boolean | It is used to specify whether end users can submit from the quarantine page or not? |
-| isReportToCustomizedEmailAddressEnabled  | Boolean | If enabled, the email will be sent to customizedReportRecipientEmailAddress.               |
+| isReportToCustomizedEmailAddressEnabled  | Boolean | It is used to specify whether emails reported by end users should be send to the custom mailbox which will be configured below using customizedReportRecipientEmailAddress? | 
 | isReportToMicrosoftEnabled               | Boolean | If enabled, the email will be sent to Microsoft for analysis.                              |
 | isReviewEmailNotificationEnabled         | Boolean | If enabled, system sends email notification to reporter when admin reviews the submission. |
 | isOrganizationBrandingEnabled            | Boolean | It is used to specify whether the branding logo should be used in the email notifications or not which are being sent to end users? |
