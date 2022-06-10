@@ -40,7 +40,7 @@ POST /security/threatSubmission/fileThreats
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [fileContentThreatSubmission](../resources/security-filecontentthreatsubmission.md) object. The [fileUrlContentThreatSubmission](../resources/security-fileurlthreatsubmission.md) is reserved and not supported by now.
+In the request body, supply a JSON representation of the [fileContentThreatSubmission](../resources/security-filecontentthreatsubmission.md) object. The [fileUrlContentThreatSubmission](../resources/security-fileurlthreatsubmission.md) is reserved and not supported as of today.
 
 ## Response
 
