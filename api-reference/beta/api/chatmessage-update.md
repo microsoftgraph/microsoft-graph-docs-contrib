@@ -13,8 +13,8 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
-With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.
-Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the **policyViolation** property, all properties of a **chatMessage** can be updated in delegated permissions scenarios.
+Only the **policyViolation** property of a **chatMessage** can be updated in application permissions scenarios.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
