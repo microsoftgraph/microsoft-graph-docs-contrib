@@ -61,8 +61,8 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Members deleted | [membersDeletedEventMessageDetail](#members-deleted) | Chat, Channel, Team |
 | Members joined | [membersJoinedEventMessageDetail](#members-joined) | Chat |
 | Members left | [membersLeftEventMessageDetail](#members-left) | Chat |
-| Pin message | [messagePinnedEventMessageDetail](#pin-message) | Chat, Channel |
-| Unpin message | [messageUnpinnedEventMessageDetail](#unpin-message) | Chat, Channel |
+| Pin message | [messagePinnedEventMessageDetail](#pin-message) | Chat |
+| Unpin message | [messageUnpinnedEventMessageDetail](#unpin-message) | Chat |
 | Tab updated | [tabUpdatedEventMessageDetail](#tab-updated) | Chat, Channel |
 | Team archived | [teamArchivedEventMessageDetail](#team-archived) | Team |
 | Team created | [teamCreatedEventMessageDetail](#team-created) | Team |
