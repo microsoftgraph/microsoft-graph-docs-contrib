@@ -18,8 +18,8 @@ Represents admin review information for threat submission. Currently, only user 
 ## Properties
 | Property       | Type                     | Description                                  |
 |:---------------|:-------------------------|:---------------------------------------------|
-| reviewBy       | String                   | The reviewer email or other identity string. |
-| reviewDateTime | DateTimeOffset           | The review date time.                        |
+| reviewBy       | String                   | It specifies who reviewed the email? The identification is done using email id or other identity strings|
+| reviewDateTime | DateTimeOffset           | It is used to specify the date time of when the review occurred.|
 | reviewResult   | submissionResultCategory | The review result. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`.  |
 
 ## Relationships
