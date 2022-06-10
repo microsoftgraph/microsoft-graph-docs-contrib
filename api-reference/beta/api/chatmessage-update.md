@@ -13,8 +13,8 @@ ms.prod: "microsoft-teams"
 
 
 Update a [chatMessage](../resources/chatMessage.md) object. 
-Properties of a message except **policyViolation** can be updated in User Context.
-Only the **policyViolation** property of a **chatMessage** can be updated in Application Context.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.
+Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 
 [!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
@@ -55,26 +55,26 @@ If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-m
 | Content-Type | application/json. Required. |
 
 ## Request body
-For applications using delegated permissions:
+For applications that use delegated permissions:
 In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
-specifying the properties that needs to be changed.
+specifying the properties that need to be changed.
 
-For applications using application permissions:
+For applications that use application permissions:
 In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, 
 specifying only the **policyViolation** property.
 
 ## Response body
-For applications using delegated permissions:
+For applications that use delegated permissions:
 If successful, this method returns a `204 NoContent` response.
 
-For applications using application permissions:
+For applications that use application permissions:
 If successful, this method returns a `200 OK` response.
 
-## Example for updating policyViolation in application context
+## Example for updating policyViolation by using application permissions
 
 ### Request
 
-The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message in application context.
+The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
 
 
 # [HTTP](#tab/http)
@@ -147,11 +147,11 @@ HTTP/1.1 200 OK
 }-->
 
 
-## Example for updating any property of a message in user context
+## Example for updating any property of a message by using delegated permissions
 
 ### Request to update the content of a message
 
-The following is an example of the request to update the properties on a Microsoft Teams channel message in user context.
+The following is an example of the request to update the properties on a Microsoft Teams channel message by using delegated permissions.
 
 <!-- {
   "blockType": "request",
@@ -200,9 +200,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the mentions of a message in user context
+### Request to update the mentions of a message by using delegated permissions
 
-The following is an example of the request to update the mentions on a Microsoft Teams channel message in user context.
+The following is an example of the request to update the mentions on a Microsoft Teams channel message by using delegated permissions.
 
 <!-- {
   "blockType": "request",
@@ -281,9 +281,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the content with attachments of a message in user context
+### Request to update the content with attachments of a message by using delegated permissions
 
-The following is an example of the request to update the attachments on a Microsoft Teams channel message in user context.
+The following is an example of the request to update the attachments on a Microsoft Teams channel message by using delegated permissions.
 
 <!-- {
   "blockType": "request",
@@ -349,9 +349,9 @@ Here is an example of the response.
 HTTP/1.1 204 NoContent
 ```
 
-### Request to update the reactions in a message in user context
+### Request to update the reactions in a message by using delegated permissions
 
-The following is an example of the request to update the reactions property on a Microsoft Teams channel message in user context.
+The following is an example of the request to update the reactions property on a Microsoft Teams channel message by using delegated permissions.
 
 
 <!-- {
