@@ -46,7 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|category|String|notSpam, junk, phishing, malware. Case insensitive.|
+|category|String|The email is being reported as notSpam, junk, phishing, malware. Case insensitive.|
 
 
 
