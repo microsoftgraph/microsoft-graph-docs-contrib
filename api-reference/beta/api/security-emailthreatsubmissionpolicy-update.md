@@ -51,7 +51,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 | isAlwaysReportEnabledForUsers            | Boolean | It is used to specify whether end users can report a message as spam, phish or junk directly without a confirmation(popup). Its default value is true|
 | isAskMeEnabledForUsers                   | Boolean | User could use 'Ask me before reporting the message' option. The default value is true.    |
 | isCustomizedMessageEnabled               | Boolean | It is used to specify whether the email notifications sent to end users to inform them whether an email is phish, spam or junk is customized or not? |
-| isCustomizedMessageEnabledForPhishing    | Boolean | If enabled, customized message only shows when email is reported as phishing.              |
+| isCustomizedMessageEnabledForPhishing    | Boolean | It is used to specify whether the customized email notifications sent to end users is to be sent for phish or not? |
 | isCustomizedNotificationSenderEnabled    | Boolean | It is used to specify whether we should use the sender email address which we will set below using customizedNotificationSenderEmailAddress for sending email notifications to end users or not?|
 | isNeverReportEnabledForUsers             | Boolean | User could use 'Never report the message' option. The default value is true.               |
 | isOrganizationBrandingEnabled            | Boolean | It is used to specify whether the branding logo should be used in the email notifications or not which are being sent to end users? |
