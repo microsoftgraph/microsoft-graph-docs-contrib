@@ -22,7 +22,7 @@ Represents result of tenant allow block list entry. It is an entry for tenant al
 | expirationDateTime | DateTimeOffset                | The expiration date time for this entry.                |
 | identity           | String                        | The identity.                                           |
 | status             | longRunningOperationStatus    | The tenant allow block operation status for this entry. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
-| value              | String                        | The tenant allow block list value.                      |
+| value              | String                        | It is used to specify the value of the created Tenant allow block list entry.  |
 
 ## Relationships
 None.
