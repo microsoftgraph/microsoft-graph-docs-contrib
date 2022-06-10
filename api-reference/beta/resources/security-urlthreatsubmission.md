@@ -31,7 +31,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Properties
 | Property | Type   | Description                 |
 |:---------|:-------|:----------------------------|
-| webUrl   | String | The webUrl to be submitted. |
+| webUrl   | String | It denotes the webUrl which needs to be submitted. |
 
 ## Relationships
 None.
