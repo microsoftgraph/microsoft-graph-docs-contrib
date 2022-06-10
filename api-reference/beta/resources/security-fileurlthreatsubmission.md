@@ -21,7 +21,7 @@ Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.
 ## Properties
 | Property | Type   | Description                   |
 |:---------|:-------|:------------------------------|
-| fileUrl  | String | The file url to be submitted. |
+| fileUrl  | String | It specifies the URL of the file which needs to be submitted. |
 
 ## Relationships
 None.

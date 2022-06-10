@@ -32,7 +32,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 ## Properties
 | Property | Type   | Description                    |
 |:---------|:-------|:-------------------------------|
-| fileName | String | The file name to be submitted. |
+| fileName | String | It specifies the file name to be submitted. |
 
 ## Relationships
 None.

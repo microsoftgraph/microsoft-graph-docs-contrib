@@ -21,7 +21,7 @@ Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.
 ## Properties
 | Property    | Type   | Description                  |
 |:------------|:-------|:-----------------------------|
-| fileContent | String | Base64 encoded file content. |
+| fileContent | String | It specifies the file content in base 64 format. |
 
 ## Relationships
 None.
