@@ -385,6 +385,22 @@
           "ChangeType": "Deprecation",
           "Description": "Deprecated the [removeWatermarkAction](https://docs.microsoft.com/graph/api/resources/removewatermarkaction?view=graph-rest-beta) resource. Replaced with [removeWatermarkAction](https://docs.microsoft.com/graph/api/resources/security-removewatermarkaction?view=graph-rest-beta).",
           "Target": "removeWatermarkAction"
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionAction ",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/informationprotectionaction?view=graph-rest-beta) resource. Replaced with [informationProtectionAction ](https://docs.microsoft.com/graph/api/resources/security-informationProtectionAction?view=graph-rest-beta).",
+          "Target": "informationProtectionAction "
+        },
+        {
+          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationProtectionAction ",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [recommendlabelaction](https://docs.microsoft.com/graph/api/resources/recommendlabelaction?view=graph-rest-beta) resource. Replaced with [recommendlabelaction](https://docs.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta).",
+          "Target": "informationProtectionAction "
         }
       ],
       "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
