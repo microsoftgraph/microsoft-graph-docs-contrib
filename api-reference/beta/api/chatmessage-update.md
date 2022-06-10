@@ -1,6 +1,6 @@
 ---
 title: "Update chatMessage"
-description: "Update the properties of a chatMessage."
+description: "Update the properties of a chatMessage object."
 author: "RamjotSingh"
 doc_type: apiPageType
 ms.localizationpriority: medium
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response.
 
 ## Example for updating policyViolation by using application permissions
 
-### Request
+#### Request
 
 The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message by using application permissions.
 
@@ -125,7 +125,7 @@ Content-Type: application/json
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -149,7 +149,7 @@ HTTP/1.1 200 OK
 
 ## Example for updating any property of a message by using delegated permissions
 
-### Request to update the content of a message
+#### Request
 
 The following is an example of the request to update the properties on a Microsoft Teams channel message by using delegated permissions.
 
@@ -188,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -269,7 +269,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -337,7 +337,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -511,7 +511,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 Here is an example of the response.
 
