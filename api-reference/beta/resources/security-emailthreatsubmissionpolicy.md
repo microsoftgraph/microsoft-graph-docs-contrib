@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the guidelines of an organization to report potential threats and spam. It is used for customizing your organization's end user threat submission experience when reporting potential threats and spam in Microsoft Outlook Client and OWA.
+Represents organizational guidelines about reporting potential threats and spam messages. It is used for customizing your organization's end user threat submission experience when reporting potential threats and spam in Microsoft Outlook.
 
 
 Inherits from [entity](../resources/entity.md).
