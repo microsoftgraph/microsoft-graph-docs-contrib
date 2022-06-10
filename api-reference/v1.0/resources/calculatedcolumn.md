@@ -4,7 +4,7 @@ ms.date: 09/11/2017
 title: CalculatedColumn
 ms.localizationpriority: medium
 description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # CalculatedColumn resource type

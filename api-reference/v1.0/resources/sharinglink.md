@@ -1,20 +1,19 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharingLink
+title: sharingLink resource type
 ms.localizationpriority: medium
-description: "The SharingLink resource groups link-related data items into a single structure."
-ms.prod: ""
+description: "The sharingLink resource groups link-related data items into a single structure."
+ms.prod: files
 doc_type: resourcePageType
 ---
 
-# SharingLink resource type
+# sharingLink resource type
 
 Namespace: microsoft.graph
 
-The **SharingLink** resource groups link-related data items into a single structure.
+Groups link-related data items into a single structure.
 
-If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
+If a [**permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
 
 ## JSON representation
 
