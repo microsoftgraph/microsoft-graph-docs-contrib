@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat submission result when threat submission is processed by Microsoft.
+Represents threat submission result after threat submission is processed by Microsoft.
 
 ## Properties
 | Property           | Type                               | Description                                                             |
