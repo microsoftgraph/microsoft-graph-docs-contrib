@@ -29,14 +29,14 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 | Property                     | Type                         | Description                                                                                            |
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
 | attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, this field will not be null.|
-| internetMessageId            | String                       | The internet message id of the submitted email.                                                       |
+| internetMessageId            | String                       | It is used to specify the internet message id of the email which is being submitted. This information is present in the email header.                                                       |
 | originalCategory             | submissionCategory           | The original category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`. |
-| receivedDateTime             | DateTimeOffset               | The received date time of the submitted email.                                                        | 
-| recipientEmailAddress        | String                       | The email recipient smtp address string.                                                              |
-| sender                       | String                       | The sender of the submitted email.                                                                    | 
-| senderIP                     | String                       | The sender IP of the submitted email.                                                                 |
-| subject                      | String                       | The subject of the submitted email.                                                                   |
-| tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | Used to auto add urls, attachments and senders of the email threat submission into tenant allow block list. |
+| receivedDateTime             | DateTimeOffset               | It is used to specify the date timestamp of when the email was received?                                                        | 
+| recipientEmailAddress        | String                       | It is used to specify the email address (in smtp format) of the recipient who received the email which is being submitted?                                                              |
+| sender                       | String                       | It is used to specify the email address of the sender.                                                                    | 
+| senderIP                     | String                       | It is used to specify the IP address of the sender who send the email which is being submitted.                                                                 |
+| subject                      | String                       | It is used to specify the subject of the email being submitted.                                                                   |
+| tenantAllowOrBlockListAction | [security.tenantAllowOrBlockListAction](../resources/security-tenantalloworblocklistaction.md) | It is used to automatically add allows for the components such as URL, file, sender which are deemed bad by Microsoft so that similar messages in the future can be allowed. |
 
 ## Relationships
 None.
