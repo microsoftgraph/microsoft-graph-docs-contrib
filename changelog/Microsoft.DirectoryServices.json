@@ -42,7 +42,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-06-09T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -68,7 +68,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-02T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -448,7 +448,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-02-16T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8646,7 +8646,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8726,7 +8726,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -9072,7 +9072,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
