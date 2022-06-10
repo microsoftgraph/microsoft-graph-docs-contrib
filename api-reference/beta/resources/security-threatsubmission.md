@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmiss
 ## Properties
 | Property        | Type                       | Description                                                                      |
 |:----------------|:---------------------------|:---------------------------------------------------------------------------------|
-| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| Represents an administrative review of an threat submitted by a user. |
+| adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| It specifies the admin review property which constitutes of who it reviewed the user submission, when and what was it identified as? |
 | category        | submissionCategory         | It is used to specify what we are submitting as to Microsoft. The possible values are: `notJunk`, `spam`, `phishing` and `malware`.|
 | clientSource    | submissionClientSource     | It is used to specify what the source for this submission is. The possible values are: `microsoft` and `other`. |
 | contentType     | submissionContentType      | It is used to specify the type of content which is being submitted. The possible values are: `email`, `url`, `file` and `app`.  |
