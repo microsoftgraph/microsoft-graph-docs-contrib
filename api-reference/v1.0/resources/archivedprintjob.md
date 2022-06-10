@@ -1,9 +1,9 @@
 ---
-title: "archivedPrintJob resource type"
-description: "A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job."
-author: "nilakhan"
+title: archivedPrintJob resource type
+description: A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job."
+author: nilakhan
 ms.localizationpriority: medium
-ms.prod: "cloud-printing"
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
