@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md). Base type of [emailThreatSubmiss
 | result          | [security.submissionResult](../resources/security-submissionresult.md)          | The result of the threat submission.  |
 | source          | submissionSource           | The source of the submission. The possible values are: `administrator` and `user`.  |
 | status          | longRunningOperationStatus | The status of the submission. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
-| tenantId        | String                     | The tenant id. When creation on post, it is not necessary. Extracted from token. |
+| tenantId        | String                     | It denotes the the tenant id from which submission was done. When creation using post method, it is not required. It is extracted from the token of the post API call. |
 
 ## Relationships
 None.
