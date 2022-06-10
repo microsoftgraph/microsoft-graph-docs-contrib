@@ -62,11 +62,8 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Learn more about how to [work with users](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true).
-- Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Learn more about how to [work with users](/graph/api/resources/users).
+- Explore your own data from the **user** resource in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Authenticate with Microsoft Graph [on behalf of a user](auth-v2-user.md) or [as a daemon or service by consent of an administrator](auth-v2-service.md).
-- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0&preserve-view=true).
-- Review the [permissions](permissions-reference.md) your app will need to access user data. 
-<!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](changelog.md).
--->
+- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview).
+- Review the [permissions](permissions-reference.md) your app will need to access user data.
