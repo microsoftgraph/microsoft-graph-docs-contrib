@@ -46,7 +46,7 @@ You may also specify the following properties when creating an **urlThreatSubmis
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|submissionCategory|Inherited from [threatSubmission](../resources/security-threatsubmission.md). The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. Required.|
+|category|submissionCategory|Inherited from [threatSubmission](../resources/security-threatsubmission.md) and required field. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `unknownFutureValue`. It is use to tell what you are reporting the URL as?|
 |webUrl|String|The webUrl to be submitted. Required.|
 
 
