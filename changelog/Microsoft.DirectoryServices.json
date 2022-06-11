@@ -42,7 +42,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-06-09T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -68,7 +68,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-02T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -448,7 +448,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-02-16T00:00:00.2532422Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8646,7 +8646,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -8726,7 +8726,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-04-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -9072,7 +9072,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-07-01T00:00:00",
       "WorkloadArea": "Identity and access ",
-      "SubArea": "Directory Management"
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -10856,6 +10856,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-04-14T18:53:24.3466034Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f88cfa0c-1192-443d-bd7c-0dfa5b9f9c4b",
+          "ApiChange": "Property",
+          "ChangedApiName": "samlMetadataUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **samlMetadataUrl** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "f88cfa0c-1192-443d-bd7c-0dfa5b9f9c4b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-10T09:36:39.6244674Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },  
