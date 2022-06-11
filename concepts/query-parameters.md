@@ -18,6 +18,9 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
+> [!NOTE]
+> [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2) requires that reserved characters are percent-encoded in URLs. However, this document may not show percent-encoded characters for readability. The reserved characters, such as the comma (`,`) in a `startsWith` expression, should however be percent-encoded in your requests.
+
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
