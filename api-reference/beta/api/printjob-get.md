@@ -23,10 +23,10 @@ In addition to the following permissions, the user or app's tenant must have an 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
-For an app with delegated permissions to retrieve other users' jobs, the signed-in user must be a member of one of the following administrator roles: 
+For an app with delegated permissions to retrieve other users' jobs, the signed-in user must be a member of one of the following administrator roles:
 - Global Administrator
 - Printer Administrator
 

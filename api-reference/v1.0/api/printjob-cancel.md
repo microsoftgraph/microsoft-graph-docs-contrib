@@ -20,10 +20,10 @@ In addition to the following permissions, the user or app's tenant must have an 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not Supported. |
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Not supported. |
 
-For an app with delegated permissions to cancel other users' jobs, the signed-in user must be a member of one of the following administrator roles: 
+For an app with delegated permissions to cancel other users' jobs, the signed-in user must be a member of one of the following administrator roles:
 - Global Administrator
 - Printer Administrator
 
@@ -43,7 +43,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/cancel
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Do not supply a request body with this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -51,6 +51,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Examples
 
 ### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,6 +83,9 @@ POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobI
 
 
 ### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
