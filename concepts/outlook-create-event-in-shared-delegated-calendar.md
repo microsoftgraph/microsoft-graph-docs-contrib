@@ -1,6 +1,6 @@
 ---
 title: "Create Outlook events in a shared or delegated calendar"
-description: "In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar."
+description: "Learn how to create a meeting event in a shared or delegated Outlook calendar. You can share a calendar with other users or grant a delegate to act on your behalf."
 author: "juforan"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Create Outlook events in a shared or delegated calendar
 
-In Outlook, customers can share a calendar with other users and let them view, create, or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar.
+In Outlook, customers can share a calendar with other users and let them view, create, or modify events in that calendar. Customers can also grant a delegate to act on their behalf to receive or respond to meeting requests or create or change items in the calendar.
 
 Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
@@ -113,7 +113,7 @@ Content-type: application/json
 }
 ```
 
-> **NOTE**
+> [!NOTE]
 > Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox. 
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
