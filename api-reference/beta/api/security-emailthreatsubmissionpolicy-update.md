@@ -43,7 +43,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
+These properties are related with the user reported message settings and to know more check out this documentation - https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/user-submission?view=o365-worldwide
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
 | customizedNotificationSenderEmailAddress | String  | It is used to specify the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is `null`. Optional for creation.                   |
