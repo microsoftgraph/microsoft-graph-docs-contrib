@@ -29,6 +29,11 @@ A container for the range of Microsoft Teams functionalities that are available 
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List deletedTeams](../api/teamwork-list-deletedteams.md)|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
