@@ -74,6 +74,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "id": "Y29tLm1pY3Jvc29mdC50ZWFtcy50ZW1wbGF0ZS5NYW5hZ2VBUHJvamVjdCMjUHVibGljIyNlbi1VUw==",
@@ -90,7 +91,3 @@ Content-Type: application/json
   }
 }
 ```
-
-## See also 
-- [Get team templates](../api/teamwork-templates-list.md)
-- [Get team definition](../api/teamwork-templateteamdefinition-get.md)

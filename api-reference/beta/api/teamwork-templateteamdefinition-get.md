@@ -71,6 +71,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "id": "com.microsoft.teams.template.ManageAProject.Team",
     "createdDateTime": null,
@@ -115,7 +116,3 @@ Content-Type: application/json
     }
 }
 ```
-
-## See also 
-- [Get team templates](../api/teamwork-templates-list.md)
-- [Get team template details](../api/teamwork-templatedefinition-get.md)

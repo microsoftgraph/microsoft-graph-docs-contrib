@@ -80,6 +80,9 @@ The following is an example of the response
 }
 -->
 ``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "value": [
         {
@@ -120,6 +123,9 @@ The following is an example of the response
 -->
 
 ```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "value": [
         {
@@ -165,7 +171,3 @@ The following is an example of the response
     ]
 }
 ```
-
-## See also 
-- [Get team template details](../api/teamwork-templatedefinition-get.md)
-- [Get team definition](../api/teamwork-templateteamdefinition-get.md)
