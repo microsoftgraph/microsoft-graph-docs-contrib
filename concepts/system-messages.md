@@ -61,8 +61,8 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Members deleted | [membersDeletedEventMessageDetail](#members-deleted) | Chat, Channel, Team |
 | Members joined | [membersJoinedEventMessageDetail](#members-joined) | Chat |
 | Members left | [membersLeftEventMessageDetail](#members-left) | Chat |
-| Pin message | [messagePinnedEventMessageDetail](#pin-message) | Chat |
-| Unpin message | [messageUnpinnedEventMessageDetail](#unpin-message) | Chat |
+| Message pinned | [messagePinnedEventMessageDetail](#message-pinned) | Chat |
+| Message unpinned | [messageUnpinnedEventMessageDetail](#message-unpinned) | Chat |
 | Tab updated | [tabUpdatedEventMessageDetail](#tab-updated) | Chat, Channel |
 | Team archived | [teamArchivedEventMessageDetail](#team-archived) | Team |
 | Team created | [teamCreatedEventMessageDetail](#team-created) | Team |
@@ -945,7 +945,7 @@ The following JSON examples show the responses for each supported event type.
 }
 ```
 
-### Pin message
+### Message pinned
 
 ```json
 {
@@ -989,7 +989,7 @@ The following JSON examples show the responses for each supported event type.
 }
 ```
 
-### Unpin message
+### Message unpinned
 
 ```json
 {  
