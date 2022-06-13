@@ -1,29 +1,29 @@
 ---
-title: "Add custom data to resources using extensions"
+title: "Add custom properties to resources using extensions"
 description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through resources such as user and message. You can also extend Microsoft Graph with your own application data using extensions."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
-# Add custom data to resources using extensions
+# Add custom properties to resources using extensions
 
 Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph with your own application data by adding custom properties to store data in Microsoft Graph resources without requiring an external data store.
 
-In this article, we'll discuss how Microsoft Graph supports adding data to its resources, the options available to add custom data and when to use them.
+In this article, we'll discuss how Microsoft Graph supports adding data to its resources, the options available to add custom properties and when to use them.
 
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
-## Why add custom data to Microsoft Graph?
+## Why add custom properties to Microsoft Graph?
 
 * As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
 * Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
-* As an enterprise developer, the in-house applications that you build might rely on your organization's custom HR data. Integration within multiple applications can be simplified by storing this custom data in Microsoft Graph.
+* As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this data in custom properties in Microsoft Graph.
 
-## Custom data options in Microsoft Graph
+## Custom property options in Microsoft Graph
 
-Microsoft Graph offers four types of extensions for adding custom data.
+Microsoft Graph offers four types of extensions for adding custom properties.
 
 1. Extension attributes properties
 2. Directory (Azure AD) extensions
@@ -32,13 +32,13 @@ Microsoft Graph offers four types of extensions for adding custom data.
 
 ### 1. Extension attributes properties
 
-Azure AD offers a set of 15 custom properties on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
+Azure AD offers a set of 15 custom properties with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
-You can use the extension attributes 1-15 to store up to 15 custom data string values on a **user** or **device** resource instance, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned using a POST operation to create an instance of the resource, or updated with a PATCH operation to the resource instance. They can also be filtered.
+You can use the extension attributes 1-15 to store up to 15 string values on a **user** or **device** resource instance, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned using a POST operation to create an instance of the resource, or updated with a PATCH operation to the resource instance. They can also be filtered.
 
 #### Developer experience
 
-The following examples show how the custom data is presented resource instances.
+The following examples show how the data is presented resource instances.
 
 ##### Example: Extension attributes on a user object
 
@@ -88,13 +88,13 @@ The following examples show how the custom data is presented resource instances.
 
 [Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly typed, discoverable and filterable extension experience for directory objects.
 
-Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write custom data on any extension properties defined on an instance of the target directory object.
+Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
 
 For the list of resource types that can be specified as target objects for a directory extension, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
 #### Developer experience
 
-Directory extensions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The custom data are managed through the same REST requests that you use to manage the resource instance.
+Directory extensions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the same REST requests that you use to manage the resource instance.
 
 The following example shows a directory extension definition.
 
@@ -113,7 +113,7 @@ The following example shows a directory extension definition.
 }
 ```
 
-The following example shows how the custom data is presented on a resource instance.
+The following example shows how the custom properties and associated data are presented on a resource instance.
 
 ```http
 {
@@ -124,7 +124,7 @@ The following example shows how the custom data is presented on a resource insta
 
 ### 3. Microsoft Graph schema extensions
 
-[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly typed custom data. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
+[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
 For the list of resource types that can be specified as target objects for a Microsoft Graph schema extension, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
@@ -137,16 +137,16 @@ When creating a schema extension definition, you must provide a unique name for 
 - If you already have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, you can use the domain name along with the schema name to define a unique name, in this format *{domainName}*_*{schemaName}*. For example, if your vanity domain is `contoso.com`, you can define an **id** of `contoso_mySchema`. This option is highly recommended.
 - If you don’t have a verified vanity domain, you can set the **id** to a schema name (without a domain name prefix). For example, `mySchema`. Microsoft Graph will assign a string ID for you based on the supplied name, in this format: `ext{8-random-alphanumeric-chars}_{schema-name}`. For example, `extkvbmkofy_mySchema`.
 
-The **id** will be the name of the complex type that will store your custom data on the extended resource instance.
+The **id** will be the name of the complex type that will store your data on the extended resource instance.
 
-Once a schema extension is registered, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write custom data on any extensions defined on the target object.
+Once a schema extension is registered, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write data on any extensions defined on the target object.
 
-Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. Because schema extensions are accessible as complex types in instances of the targeted resources, you can perform CRUD operations on the custom data in the following ways:
+Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. Because schema extensions are accessible as complex types in instances of the targeted resources, you can perform CRUD operations on the data in the following ways:
 
-- Use the resource `POST` method to specify custom data when creating a new resource instance. There's a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that require creating a schema extension using a `PATCH` operation.
-- Use the resource `GET` method with a `$select` query parameter to read the custom data.
-- Use the resource `PATCH` method to add or update custom data in an existing resource instance.
-- Use the resource `PATCH` method to set the complex type to `null`, which deletes the custom data in the resource instance.
+- Use the resource `POST` method to add data to the custom property when creating a new resource instance. There's a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that require creating a schema extension using a `PATCH` operation.
+- Use the resource `GET` method with a `$select` query parameter to read the custom properties and associated data.
+- Use the resource `PATCH` method to add or update data in custom properties in an existing resource instance.
+- Use the resource `PATCH` method to set the complex type to `null`, which deletes the data in the custom property of the resource instance.
 
 The following example shows a schema extension definition.
 
@@ -177,7 +177,7 @@ The following example shows a schema extension definition.
 }
 ```
 
-The following example shows how the custom data is presented on a resource instance. You read the custom data on a resource instance only by specifying the extension name in a $select request. For example, `../users?$select=graphlearn_courses`.
+The following example shows how the custom properties and associated data is presented on a resource instance. You read the custom properties on a resource instance only by specifying the extension name in a $select request. For example, `../users?$select=graphlearn_courses`.
 
 ```http
 {
@@ -189,7 +189,7 @@ The following example shows how the custom data is presented on a resource insta
 }
 ```
 
-For more information about how to use schema extensions to add custom data, see [schemaExtension resource type](/graph/api/resources/schemextension) and [Add custom data to groups using schema extensions](extensibility-schema-groups.md).
+For more information about how to use schema extensions to add custom properties and associated data, see [schemaExtension resource type](/graph/api/resources/schemextension) and [Add custom properties to groups using schema extensions](extensibility-schema-groups.md).
 
 ### 4. Microsoft Graph open extensions
 
@@ -201,11 +201,11 @@ For the list of resource types that support Microsoft Graph open extensions, see
 
 #### Developer experience
 
-Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
+Open extensions, together with their data, are accessible through the **extensions** navigation property of the resource instance.
 
 The **extensionName** property is the only *pre-defined*, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant. One way to do this is to use a reverse domain name system (DNS) format that is dependent on *your own domain*, for example, `Com.Contoso.ContactInfo`. **Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name**.
 
-The following example shows an open type definition and how the custom data is presented on a resource instance.
+The following example shows an open type definition and how the custom properties and associated data is presented on a resource instance.
 
 ```http
 {
@@ -223,11 +223,11 @@ The following example shows an open type definition and how the custom data is p
 }
 ```
 
-For more information about how to use open extensions to add custom data, see [openTypeExtension resource type](/graph/api/resources/opentypeextension) and [Add custom data to users using open extensions](extensibility-open-users.md).
+For more information about how to use open extensions to add custom properties and associated data, see [openTypeExtension resource type](/graph/api/resources/opentypeextension) and [Add custom properties to users using open extensions](extensibility-open-users.md).
 
 ## Choose an extension type for your application
 
-The table below contrasts and compares the custom data options, which should help you decide which option is most appropriate for your scenario.
+The table below contrasts and compares the extension types, which should help you decide which option is most appropriate for your scenario.
 
 | Capability | Directory extensions | Schema extensions | Open extensions | Extension attributes 1-15 |
 |:-|:-|:-|:-|:-|
@@ -235,8 +235,8 @@ The table below contrasts and compares the custom data options, which should hel
 | Strongly typed | Yes | Yes | No | No |
 | Filterable | Yes | Yes | Yes | Yes |
 | Managed via | Microsoft Graph | Microsoft Graph | Microsoft Graph | Microsoft Graph <br/> Exchange admin center |
-| Sync custom data from on-premises using [AD connect][] | [Yes][ADConnect-YES] | No | No | Yes for Users |
-| Create [dynamic membership rules][] using custom data in extensions | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
+| Sync data from on-premises using [AD connect][] | [Yes][ADConnect-YES] | No | No | Yes for Users |
+| Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
 | Usable for customizing token claims | [Yes][DirectoryExt-CustomClaims] | No | No | Yes |
 | Available in Azure AD B2C | [Yes][B2CDirectoryExt] | Yes | Yes | Yes |
 | Limits | 100 extension values across *all* types and *all* applications per resource instance | Maximum of five definitions per owner app | - | 15 predefined attributes per user or device resource instance |
@@ -273,8 +273,8 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## See also
 
-- [Add custom data to users using open extensions](extensibility-open-users.md)
-- [Add custom data to groups using schema extensions](extensibility-schema-groups.md)
+- [Add custom properties to users using open extensions](extensibility-open-users.md)
+- [Add custom properties to groups using schema extensions](extensibility-schema-groups.md)
 - [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 
