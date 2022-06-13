@@ -32,11 +32,8 @@ originId := "b31fe1f1-3651-488f-bd9a-1711887fd4ca"
 accessPackageResourceScope.SetOriginId(&originId)
 originSystem := "AadGroup"
 accessPackageResourceScope.SetOriginSystem(&originSystem)
-options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(requestBody)
 
 
 ```

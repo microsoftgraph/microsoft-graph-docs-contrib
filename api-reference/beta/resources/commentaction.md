@@ -5,7 +5,7 @@ ms.date: 09/14/2017
 title: CommentAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: files
 ---
 
 # CommentAction resource type

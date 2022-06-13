@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.PrinterRequestBuilderGetQueryParameters{
 	Select: "id,displayName,capabilities",
 }
-options := &msgraphsdk.PrinterRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.PrinterRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Get(options)
+result, err := graphClient.Print().PrintersById(&printerId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -59,7 +59,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -123,7 +122,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

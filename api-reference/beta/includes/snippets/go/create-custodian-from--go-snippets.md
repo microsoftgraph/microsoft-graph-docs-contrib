@@ -12,11 +12,8 @@ email := "AdeleV@contoso.com"
 requestBody.SetEmail(&email)
 applyHoldToSources := "true"
 requestBody.SetApplyHoldToSources(&applyHoldToSources)
-options := &msgraphsdk.CustodiansRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Custodians().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).Custodians().Post(requestBody)
 
 
 ```

@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.MessagesRequestBuilderGetQueryParameters{
 	Filter: "MentionsPreview/IsMentioned%20eq%20true",
 	Select: "Subject,Sender,ReceivedDateTime,MentionsPreview",
 }
-options := &msgraphsdk.MessagesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MessagesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Messages().Get(options)
+result, err := graphClient.Me().Messages().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -43,10 +43,7 @@ grantControls.SetOperator(&operator)
 grantControls.SetBuiltInControls( []ConditionalAccessGrantControl {
 	"mfa",
 }
-options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
 
 
 ```

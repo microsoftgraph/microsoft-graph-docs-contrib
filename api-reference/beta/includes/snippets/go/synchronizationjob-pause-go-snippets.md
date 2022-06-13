@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Pause(servicePrincipal-id, synchronizationJob-id).Post(nil)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).Pause(servicePrincipal-id, synchronizationJob-id).Post()
 
 
 ```

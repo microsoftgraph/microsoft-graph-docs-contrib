@@ -1,15 +1,15 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: Learn how to use Microsoft Graph to access the data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility + Security. Browse API reference, sample code, tutorials, and more.
+summary: Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Use Microsoft Graph to build intelligent apps, derive insights and analytics, and extend Microsoft 365 experiences.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
-  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
+  description: Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Use Microsoft Graph to build intelligent apps, derive insights and analytics, and extend Microsoft 365 experiences.
   ms.topic: hub-page
   ms.prod: ms-graph
   author: CelesteDG
-  ms.date: 05/24/2021
+  ms.date: 05/11/2022
   featureFlags:
   - clicktale
 
@@ -19,21 +19,21 @@ highlightedContent:
     - title: What is Microsoft Graph?
       itemType: overview
       url: ./overview.md
-    - title: What can I access through Microsoft Graph?
-      itemType: concept
-      url: ./overview-major-services.md
-    - title: New and updated APIs, SDKs, and tools
-      itemType: whats-new
-      url: ./whats-new-overview.md
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0
+    - title: Microsoft Graph Data Connect
+      itemType: overview
+      url: ./data-connect-concept-overview.md
+    - title: Microsoft Graph connectors
+      itemType: overview
+      url: ./connecting-external-content-connectors-overview.md
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Working with Microsoft Graph
+  title: Services and features
   items:
-    # Card
+    # Card 
     - title: Users
       links:
         - url: ./azuread-users-concept-overview.md
@@ -44,16 +44,21 @@ conceptualContent:
         - url: ./office365-groups-concept-overview.md
           itemType: overview
           text: Enable user collaboration and integration across services.
+    - title: Identity and access management
+      links:
+        - url: ./azuread-identity-access-management-concept-overview.md
+          itemType: overview
+          text: Use Azure AD methods to manage access and authenticate users.
+    - title: Security
+      links:
+        - url: ./security-concept-overview.md
+          itemType: overview
+          text: Connect Microsoft security products, services, and partners to streamline security operations.
     - title: Microsoft Teams teamwork
       links:
         - url: ./teams-concept-overview.md
           itemType: overview
-          text: Integrate with Microsoft Teams.
-    - title: OneDrive file storage
-      links:
-        - url: ./onedrive-concept-overview.md
-          itemType: overview
-          text: Work with various types of files from OneDrive.
+          text: Explore chat-based collaboration, meetings, calling, and enterprise voice features.
     - title: Outlook calendar and mail
       links:
         - url: ./outlook-calendar-concept-overview.md
@@ -62,22 +67,16 @@ conceptualContent:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
-    - title: Excel workbooks and charts
+    - title: What's new?
       links:
-        - url: ./excel-concept-overview.md
-          itemType: overview
-          text: Read and modify Excel files.
-    - title: Identity and access management
+        - url: ./whats-new-overview.md
+          itemType: whats-new
+          text: Discover new and updated Microsoft Graph APIs. 
+    - title: All services and features
       links:
-        - url: ./azuread-identity-access-management-concept-overview.md
-          itemType: overview
-          text: Use Azure AD methods to manage access and authenticate users.
-    - title: Microsoft Graph Data Connect
-      links:
-        - url: ./data-connect-concept-overview.md
-          itemType: overview
-          text: Develop applications by extending Microsoft 365 data into Azure.
-
+        - url: ./overview-major-services.md
+          itemType: concept
+          text: Explore services for productivity, collaboration, people and workplace intelligence, education, and more.  
 tools:
   title: SDKs and tools
   items:
@@ -85,15 +84,15 @@ tools:
     - title: SDKs
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/hub/icon01-sdk.svg
-      url: /graph/sdks/sdk-installation
+      url: /graph/sdks/sdks-overview
     # Card
-    - title: Quick starts
+    - title: Quick start
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: https://developer.microsoft.com/graph/quick-start
     # Card
     - title: Graph Explorer
       imageSrc: ./images/hub/icon03-graphexplorer.svg
-      url: https://developer.microsoft.com/graph/graph-explorer/
+      url: https://developer.microsoft.com/en-us/graph/graph-explorer
     # Card
     - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
@@ -101,50 +100,35 @@ tools:
 
 additionalContent:
   sections:
-    - title: Tutorials and resources
+    - title: Resources
       items:
         # Card
-        - title: Learning paths
+        - title: Learning paths and tutorials
           links:
             - text: Microsoft Graph fundamentals
               url: /learn/paths/m365-msgraph-fundamentals/
-            - text: Build apps with Microsoft Graph – Associate
-              url: /learn/paths/m365-msgraph-associate/
-            - text: Explore Microsoft Graph scenarios for JavaScript development
-              url: /learn/paths/m365-msgraph-scenarios
-            - text: Explore Microsoft Graph scenarios for ASP.NET Core development
-              url: /learn/paths/m365-msgraph-dotnet-core-scenarios/
-            - text: Develop apps with Microsoft Graph Toolkit
-              url: /learn/paths/m365-msgraph-toolkit
-        # Card
-        - title: How-to
-          links:
-            - text: "Connectors: Build your first custom connector"
-              url: /graph/connecting-external-content-build-quickstart
-            - text: "Microsoft Search: Search content in OneDrive and Sharepoint"
-              url: /graph/search-concept-files
-            - text: "Identity: Manage access to resources"
-              url: /graph/tutorial-access-package-api
-            - text: "Outlook: Attach large files to a message or event"
-              url: /graph/outlook-large-attachments
-            - text: "Outlook: Get MIME content of a message"
-              url: /graph/outlook-get-mime-message
-            - text: "More tutorials..."
+            - text: Microsoft learning paths
+              url: /learn/browse/?products=ms-graph&resource_type=learning%20path
+            - text: Tutorials
               url: /graph/tutorials
         # Card
-        - title: Resources and community
+        - title: Community
           links:
-            - text: Changelog
-              url: ./changelog.md
-            - text: Known issues
-              url: ./known-issues.md
-            - text: Support
-              url: https://developer.microsoft.com/graph/support
-            - text: Microsoft Graph on Q&A
-              url: /answers/products/graph
             - text: Microsoft Graph blog
               url: https://developer.microsoft.com/graph/blogs/
             - text: Videos and podcasts
               url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
             - text: Monthly community calls
               url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
+
+        # Card
+        - title: Support
+          links:
+            - text: Microsoft Graph support
+              url: https://developer.microsoft.com/graph/support
+            - text: Microsoft Graph Q&A community support
+              url: /answers/products/graph
+            - text: Microsoft Graph feedback portal
+              url: https://feedbackportal.microsoft.com/feedback/forum/ebe2edae-97d1-ec11-a7b5-0022481f3c80
+            - text: Known issues
+              url: ./known-issues.md          

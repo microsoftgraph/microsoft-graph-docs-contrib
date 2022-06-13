@@ -26,11 +26,8 @@ requestBody.SetRelatedContacts( []RelatedContact {
 		"accessConsent": true,
 	}
 }
-options := &msgraphsdk.EducationUserRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 educationUserId := "educationUser-id"
-graphClient.Education().UsersById(&educationUserId).Patch(options)
+graphClient.Education().UsersById(&educationUserId).Patch(requestBody)
 
 
 ```

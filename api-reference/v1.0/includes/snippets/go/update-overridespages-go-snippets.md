@@ -12,13 +12,10 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"LocalizedStrings":  []Object {
 	}
 }
-options := &msgraphsdk.ContentRequestBuilderPutOptions{
-	Body: requestBody,
-}
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
 userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
 userFlowLanguagePageId := "userFlowLanguagePage-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(options)
+graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(requestBody)
 
 
 ```

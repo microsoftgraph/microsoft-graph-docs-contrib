@@ -113,7 +113,6 @@ Content-type: application/json
         "enforcementType": "block",
         "aaGuids": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

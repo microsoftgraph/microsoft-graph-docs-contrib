@@ -12,12 +12,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"value":  []Object {
 	}
 }
-options := &msgraphsdk.SiteRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 siteId := "site-id"
-graphClient.UsersById(&userId).FollowedSitesById(&siteId).Post(options)
+graphClient.UsersById(&userId).FollowedSitesById(&siteId).Post(requestBody)
 
 
 ```

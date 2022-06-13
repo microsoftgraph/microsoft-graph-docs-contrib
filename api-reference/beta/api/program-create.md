@@ -1,5 +1,5 @@
 ---
-title: "Create program"
+title: "Create program (deprecated)"
 description: "In the Azure AD access reviews feature, create a new program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# Create program
+# Create program (deprecated)
 
 Namespace: microsoft.graph
 
