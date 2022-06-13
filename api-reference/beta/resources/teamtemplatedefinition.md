@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|audience|teamTemplateAudience|Describes the audience the team template is available to.The possible values are: `organization`, `user`, `public`, `unknownFutureValue`.|
+|audience|teamTemplateAudience|Describes the audience the team template is available to. The possible values are: `organization`, `user`, `public`, `unknownFutureValue`.|
 |categories|String collection|The assigned categories for the team template.|
 |description|String|A brief description of the team template as it will appear to the users in Microsoft Teams.|
 |displayName|String|The user defined name of the team template.|
