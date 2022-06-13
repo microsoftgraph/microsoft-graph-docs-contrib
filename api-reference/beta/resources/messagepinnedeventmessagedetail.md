@@ -43,5 +43,5 @@ The following is a JSON representation of the resource.
 
 
 ## See also
-- [Example response for an event message about a pinned chat message](/graph/system-messages/#pin-message)
+- [Example response for an event message about a pinned chat message](/graph/system-messages/#message-pinned)
 - For more information about other types of events, see [System messages](/graph/system-messages).
