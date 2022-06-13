@@ -14736,6 +14736,12 @@ items:
           href: api/team-completemigration.md
         - name: List permission grants
           href: api/team-list-permissiongrants.md
+        - name: Team templates
+          items:
+            - name: Team template
+              href: resources/teamtemplate.md
+            - name: Team template definition
+              href: resources/teamtemplatedefinition.md
       - name: Group (team)
         href: resources/group.md
         items:
