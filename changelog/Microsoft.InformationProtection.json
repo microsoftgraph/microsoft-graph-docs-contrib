@@ -4,22 +4,6 @@
       "ChangeList": [
         {
           "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Schema",
-          "ChangedApiName": "microsoft.graph.security",
-          "ChangeType": "Addition",
-          "Description": "Added the [microsoft.graph.security](https://docs.microsoft.com/?view=graph-rest-beta) resource.",
-          "Target": "microsoft.graph.security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
-          "ApiChange": "Resource",
-          "ChangedApiName": "security",
-          "ChangeType": "Addition",
-          "Description": "Added the [security](https://docs.microsoft.com/graph/api/resources/security?view=graph-rest-beta) resource.",
-          "Target": "security"
-        },
-        {
-          "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
           "ApiChange": "Resource",
           "ChangedApiName": "addContentFooterAction",
           "ChangeType": "Addition",
@@ -389,18 +373,18 @@
         {
           "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
           "ApiChange": "Resource",
-          "ChangedApiName": "informationProtectionAction ",
+          "ChangedApiName": "informationProtectionAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/informationprotectionaction?view=graph-rest-beta) resource. Replaced with [informationProtectionAction ](https://docs.microsoft.com/graph/api/resources/security-informationProtectionAction?view=graph-rest-beta).",
-          "Target": "informationProtectionAction "
+          "Description": "Deprecated the [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/informationprotectionaction?view=graph-rest-beta) resource. Replaced with [informationProtectionAction](https://docs.microsoft.com/graph/api/resources/security-informationProtectionAction?view=graph-rest-beta).",
+          "Target": "informationProtectionAction"
         },
         {
           "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
           "ApiChange": "Resource",
-          "ChangedApiName": "informationProtectionAction ",
+          "ChangedApiName": "recommendLabelAction",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [recommendlabelaction](https://docs.microsoft.com/graph/api/resources/recommendlabelaction?view=graph-rest-beta) resource. Replaced with [recommendlabelaction](https://docs.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta).",
-          "Target": "informationProtectionAction "
+          "Description": "Deprecated the [recommendLabelAction](https://docs.microsoft.com/graph/api/resources/recommendlabelaction?view=graph-rest-beta) resource. Replaced with [recommendLabelAction](https://docs.microsoft.com/graph/api/resources/security-recommendlabelaction?view=graph-rest-beta).",
+          "Target": "recommendLabelAction"
         }
       ],
       "Id": "2e39d104-3bf2-435d-8fb7-c58e11656862",
