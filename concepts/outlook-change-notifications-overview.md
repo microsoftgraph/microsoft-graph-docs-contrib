@@ -50,7 +50,10 @@ To have resource data included in a change notification, you **must** specify th
 
 - **includeResourceData**: Set this property to `true` to explicitly request resource data.
 - **resource**: This property specifies the resource URL. Make sure to use the `$select` query parameter to explicitly specify the Outlook resource properties to include in the notification payload.
-  > **Note:** Do not include in the URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`, and `$expand` other than **singleValueExtendedProperties** or **multiValueExtendedProperties**.
+
+  > [!NOTE]
+  > Do not include in the URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`, and `$expand` other than **singleValueExtendedProperties** or **multiValueExtendedProperties**.
+
 - **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: This property is your own identifier for the certificate. Use this ID to match in each change notification which certificate to use for decryption.
 
@@ -145,7 +148,8 @@ Notifications without resource data give you enough information to make GET call
 
 The next example shows the payload of a notification that corresponds to an Outlook **message** resource. It includes the **resource** and **resourceData** properties, which represent the resource that triggered the notification. Use the **resource** and **@odata.id** properties to make calls to Microsoft Graph to get the payload of the resource.
 
-> **Note** GET calls always return the current state of the resource. If the resource is changed between the time the notification is sent and the time the resource is retrieved, the operation returns the state of the resource on retrieval.
+> [!NOTE]
+> GET calls always return the current state of the resource. If the resource is changed between the time the notification is sent and the time the resource is retrieved, the operation returns the state of the resource on retrieval.
 
 
 ```json
@@ -193,8 +197,12 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -252,8 +260,12 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -311,8 +323,12 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability.
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
