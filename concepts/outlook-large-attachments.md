@@ -189,11 +189,11 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
 - The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1.
-- The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- The **nextExpectedRanges ** specifies the next byte location to start uploading from, for example, `"nextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
@@ -215,7 +215,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### Response
 
-The following example response shows in the **NextExpectedRanges** property the start of the next byte range that the server expects.
+The following example response shows in the **nextExpectedRanges** property the start of the next byte range that the server expects.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -226,7 +226,7 @@ Content-type: application/json
 {
   "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA%3D')/AttachmentSessions/$entity",
   "ExpirationDateTime":"2019-09-25T01:09:30.7671707Z",
-  "NextExpectedRanges":["2097152"]
+  "nextExpectedRanges":["2097152"]
 }
 ```
 
@@ -248,7 +248,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### Response
 
-The following example response shows in the **NextExpectedRanges** property the start of the next byte range that the server expects.
+The following example response shows in the **nextExpectedRanges** property the start of the next byte range that the server expects.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -259,14 +259,14 @@ Content-type: application/json
 {
     "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
     "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
-    "NextExpectedRanges":["2097152"]
+    "nextExpectedRanges":["2097152"]
 }
 ```
 
 
 ## Step 3: Continue uploading byte ranges until the entire file has been uploaded
 
-Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **NextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
+Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **nextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
 Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment in the `https://outlook.office.com` domain. You can get the attachment ID from the URL and save it for later use. Depending on your scenario, you can use that ID to [get the metadata of the attachment](/graph/api/attachment-get), or [remove the attachment from the Outlook item](/graph/api/attachment-delete) using the Microsoft Graph endpoint.
 

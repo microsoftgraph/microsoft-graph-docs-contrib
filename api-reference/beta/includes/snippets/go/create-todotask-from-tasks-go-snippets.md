@@ -10,6 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTodoTask()
 title := "A new task"
 requestBody.SetTitle(&title)
+requestBody.SetCategories( []String {
+	"Important",
+}
 requestBody.SetLinkedResources( []LinkedResource {
 	msgraphsdk.NewLinkedResource(),
 	SetAdditionalData(map[string]interface{}{
