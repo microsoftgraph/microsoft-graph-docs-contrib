@@ -104,7 +104,7 @@ The following is an example of the request to get the **content** property.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-csv-csharp-snippets.md)]
@@ -170,7 +170,7 @@ The following is an example of the request to get the **content** property.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-json-csharp-snippets.md)]

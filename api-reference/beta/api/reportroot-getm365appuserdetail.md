@@ -140,7 +140,7 @@ The following is an example of the request to get the **content** property.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
@@ -206,7 +206,7 @@ The following is an example of the request to get the **content** property.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercountdetail-csharp-snippets.md)]
@@ -246,7 +246,7 @@ Content-Type: application/json
 Content-Length: 951
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json&$skiptoken=AAAAA",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json&$skiptoken=AAAAA",
   "value": [
     {
       "reportRefreshDate": "2020-06-30",
