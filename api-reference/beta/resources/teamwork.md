@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams functionalities that are available for the organization. test
+A container for the range of Microsoft Teams functionalities that are available for the organization. 
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,9 +21,6 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the teamTemplate resources from the teamTemplates navigation property.|
-|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Read the properties and relationships of a [teamwork](../resources/teamwork.md) object.|
-|[Create teamTemplate](../api/teamwork-post-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md)|Create a new teamTemplate object.|
-|[Update teamwork](../api/teamwork-update.md)|[teamwork](../resources/teamwork.md)|Update the properties of a [teamwork](../resources/teamwork.md) object.|
 
 ## Properties
 |Property|Type|Description|
