@@ -34,7 +34,7 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 | Azure AD Germany | https://portal.microsoftazure.de | `https://login.microsoftonline.de` |
 | Azure AD China operated by 21Vianet | https://portal.azure.cn | `https://login.chinacloudapi.cn` |
 
-To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
+To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](/azure/active-directory/develop/authentication-scenarios).
 
 ## Microsoft Graph and Graph Explorer service root endpoints
 
@@ -77,6 +77,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Outlook Calendar | ✔ | ✔ | ✔ |
 | Outlook Mail | ✔ | ✔ | ✔ |
 | Personal Contacts | ✔ | ✔ | ✔ |
+| Privileged identity management | ✔ | ✔ | ➖ |
 | Planner | ✔ | ✔ | ✔ |
 | Reports | ➖ | ➖ | ➖ |
 | Search (Microsoft Search) | ✔ | ➖ | ➖ |

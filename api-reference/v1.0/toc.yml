@@ -127,7 +127,7 @@ items:
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
-      - name: Install the SDK
+      - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/1.0
@@ -361,11 +361,11 @@ items:
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md
         - name: List deleted users
-          href: api/directory-deleteditems-list.md 
+          href: api/directory-deleteditems-list.md
         - name: Get deleted user
           href: api/directory-deleteditems-get.md
         - name: Permanently delete user
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted user
           href: api/directory-deleteditems-restore.md
       - name: Drive
@@ -727,13 +727,13 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md  
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
-          href: api/directory-deleteditems-get.md 
+          href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md     
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
-          href: api/directory-deleteditems-restore.md        
+          href: api/directory-deleteditems-restore.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -943,7 +943,7 @@ items:
           - name: Remove key
             href: api/serviceprincipal-removekey.md
           - name: Add token signing certificate
-            href: api/serviceprincipal-addtokensigningcertificate.md  
+            href: api/serviceprincipal-addtokensigningcertificate.md
         - name: Delegated permission grants
           items:
           - name: List
@@ -1319,7 +1319,7 @@ items:
           - name: Mute participant
             href: api/participant-mute.md
           - name: Invite participants
-            href: api/participant-invite.md          
+            href: api/participant-invite.md
           - name: Start hold music
             href: api/participant-startholdmusic.md
           - name: Stop hold music
@@ -4383,9 +4383,9 @@ items:
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
         - name: Create rubric
-          href: api/educationuser-post-rubrics.md       
+          href: api/educationuser-post-rubrics.md
         - name: List assignments
-          href: api/educationuser-list-assignments.md          
+          href: api/educationuser-list-assignments.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -4424,7 +4424,7 @@ items:
         - name: Remove rubric from assignment
           href: api/educationassignment-delete-rubric.md
         - name: Get delta
-          href: api/educationassignment-delta.md           
+          href: api/educationassignment-delta.md
       - name: Assignment settings
         href: resources/educationassignmentsettings.md
         items:
@@ -4449,7 +4449,7 @@ items:
         - name: Delete
           href: api/educationcategory-delete.md
         - name: Get delta
-          href: api/educationcategory-delta.md          
+          href: api/educationcategory-delta.md
       - name: Rubric
         href: resources/educationrubric.md
         items:
@@ -4489,11 +4489,11 @@ items:
         - name: Return submission
           href: api/educationsubmission-return.md
         - name: Reassign submission
-          href: api/educationsubmission-reassign.md          
+          href: api/educationsubmission-reassign.md
       - name: Outcome
         items:
         - name: Outcome
-          href: resources/educationoutcome.md     
+          href: resources/educationoutcome.md
         - name: Feedback outcome type
           href: resources/educationfeedbackoutcome.md
         - name: Points outcome type
@@ -4661,13 +4661,13 @@ items:
             href: api/administrativeunit-get-members.md
           - name: Remove a member
             href: api/administrativeunit-delete-members.md
-          - name: Add a scoped-role administrator
+          - name: Assign a role with scope
             href: api/administrativeunit-post-scopedrolemembers.md
-          - name: List scoped-role administrators
+          - name: List role assignments with scope
             href: api/administrativeunit-list-scopedrolemembers.md
-          - name: Get a scoped-role administrator
+          - name: Get a role assignment with scope
             href: api/administrativeunit-get-scopedrolemembers.md
-          - name: Remove a scoped-role administrator
+          - name: Remove a role assignment with scope
             href: api/administrativeunit-delete-scopedrolemembers.md
         - name: BitLocker recovery key
           href: resources/bitlockerrecoverykey.md
@@ -4725,9 +4725,9 @@ items:
             href: api/device-delete-registeredowners.md
           - name: Remove registered user
             href: api/device-delete-registeredusers.md
-          - name: List device groups
+          - name: List device memberships
             href: api/device-list-memberof.md
-          - name: List device transitive groups
+          - name: List device transitive memberships
             href: api/device-list-transitivememberof.md
           - name: List registered owners
             href: api/device-list-registeredowners.md
@@ -4963,7 +4963,7 @@ items:
                 - name: List
                   href: api/policyroot-list-rolemanagementpolicyassignments.md
                 - name: Get
-                  href: api/unifiedrolemanagementpolicyassignment-get.md              
+                  href: api/unifiedrolemanagementpolicyassignment-get.md
       - name: Identity and sign-in
         items:
         - name: Authentication methods
@@ -5002,17 +5002,28 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
-        - name: Certificate-based auth configuration
-          href: resources/certificatebasedauthconfiguration.md
-          items:
-          - name: List
-            href: api/certificatebasedauthconfiguration-list.md
-          - name: Create
-            href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-          - name: Get
-            href: api/certificatebasedauthconfiguration-get.md
-          - name: Delete
-            href: api/certificatebasedauthconfiguration-delete.md
+          - name: Temporary Access Pass
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/authentication-list-temporaryaccesspassmethods.md
+            - name: Create
+              href: api/authentication-post-temporaryaccesspassmethods.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
+          - name: Certificate-based auth configuration
+            href: resources/certificatebasedauthconfiguration.md
+            items:
+            - name: List
+              href: api/certificatebasedauthconfiguration-list.md
+            - name: Create
+              href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+            - name: Get
+              href: api/certificatebasedauthconfiguration-get.md
+            - name: Delete
+              href: api/certificatebasedauthconfiguration-delete.md
         - name: Conditional access
           items:
           - name: Policies
@@ -5251,6 +5262,15 @@ items:
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
               - name: Delete
                 href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+            - name: Temporary Access Pass policy
+              href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+              items:
+              - name: Get
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+              - name: Update
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+              - name: Delete
+                href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
             - name: Email policy
               href: resources/emailauthenticationmethodconfiguration.md
               items:
@@ -5507,7 +5527,7 @@ items:
               href: api/accessreviewset-post-historydefinitions.md
             - name: Access review history instance
               href: resources/accessreviewhistoryinstance.md
-              items: 
+              items:
               - name: List
                 href: api/accessreviewhistorydefinition-list-instances.md
               - name: Generate download URI
@@ -5575,7 +5595,7 @@ items:
             - name: Get
               href: api/approval-get.md
             - name: Filter by current user
-              href: api/approval-filterbycurrentuser.md 
+              href: api/approval-filterbycurrentuser.md
             - name: Approval stage
               items:
               - name: Approval stage
@@ -6627,6 +6647,8 @@ items:
           href: api/plannerplan-list-buckets.md
         - name: Update plan
           href: api/plannerplan-update.md
+        - name: Delete plan
+          href: api/plannerplan-delete.md
       - name: Task
         href: resources/plannertask.md
         items:
@@ -6770,11 +6792,11 @@ items:
         - name: List deleted groups
           href: api/directory-deleteditems-list.md
         - name: List deleted groups owned by user
-          href: api/directory-deleteditems-user-owned.md 
+          href: api/directory-deleteditems-user-owned.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Permanently delete group
-          href: api/directory-deleteditems-delete.md       
+          href: api/directory-deleteditems-delete.md
         - name: Restore deleted group
           href: api/directory-deleteditems-restore.md
       - name: Channel
@@ -6813,9 +6835,9 @@ items:
         - name: List message replies
           href: api/chatmessage-list-replies.md
         - name: Provision email address
-          href: api/channel-provisionemail.md  
+          href: api/channel-provisionemail.md
         - name: Remove email address
-          href: api/channel-removeemail.md  
+          href: api/channel-removeemail.md
         - name: Remove member
           href: api/channel-delete-members.md
         - name: Reply to message
@@ -7207,6 +7229,19 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Checklist item
+        href: resources/checklistitem.md
+        items:
+        - name: List
+          href: api/todotask-list-checklistitems.md
+        - name: Create
+          href: api/todotask-post-checklistitems.md
+        - name: Get
+          href: api/checklistitem-get.md
+        - name: Update
+          href: api/checklistitem-update.md
+        - name: Delete
+          href: api/checklistitem-delete.md
       - name: Linked resource
         href: resources/linkedresource.md
         items:

@@ -1,5 +1,5 @@
 ---
-title: "List businessFlowTemplates"
+title: "List businessFlowTemplates (deprecated)"
 description: "In the Azure AD access reviews feature, list all the businessFlowTemplate objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List businessFlowTemplates
+# List businessFlowTemplates (deprecated)
 
 Namespace: microsoft.graph
 

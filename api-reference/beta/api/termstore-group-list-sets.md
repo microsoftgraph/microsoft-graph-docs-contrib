@@ -3,7 +3,7 @@ title: "List sets"
 description: "Get a list of the set objects and their properties."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "Sharepoint"
+ms.prod: sites-and-lists
 doc_type: apiPageType
 ---
 

@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 POST /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
 POST /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
+POST /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps
 POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```

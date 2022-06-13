@@ -115,6 +115,7 @@ Content-type: application/json
     "optionalClaims": null,
     "addIns": [],
     "publisherDomain": "contoso.com",
+    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "verifiedPublisher": {
             "displayName": "publisher_contoso",

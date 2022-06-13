@@ -3,7 +3,7 @@ title: List allowedUsers for printerShare
 description: Retrieve a list of users who have been granted access to submit print jobs to the associated printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 

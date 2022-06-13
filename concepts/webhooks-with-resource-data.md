@@ -34,6 +34,16 @@ Available in the v1.0 and beta endpoints:
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
+- New or changed members in all Teams chats: `/chats/getAllMembers`
+- New or changed members in a specific Teams chat: `/chats/{id}/members`
+- New or changed chat across the entire tenant: `/chats`
+- Property changes in a specific chat: `/chats/{id}`
+- New or changed members in all channels under a specific team: `/teams/{id}/channels/getAllMembers`
+- New or changed members in a specific team: `/teams/{id}/members`
+- New or changed team across the entire tenant: `/teams`
+- Property changes in a specific team: `/teams/{id}`
+- New or changed channels in all Teams teams: `/teams/getAllChannels`
+- New or changed channel in a specific team: `/teams/{id}/channels`
 - User's presence information update: `/communications/presences/{id}`
 
 Available in only the beta endpoint:
