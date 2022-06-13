@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams functionalities that are available for the organization.
+A container for the range of Microsoft Teams functionalities that are available for the organization. test
 
 Inherits from [entity](../resources/entity.md).
 
