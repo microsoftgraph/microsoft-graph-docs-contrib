@@ -483,7 +483,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
+### Example 6: Create a one-on-one chat with a federated user (outside of own organization)
 
 #### Request
 
