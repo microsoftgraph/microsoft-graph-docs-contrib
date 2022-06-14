@@ -17,7 +17,7 @@ This abstract type represents details of a system event message.
 
 System messages are messages generated for events such as members added to a channel, members added to a chat, and team description updated.
 
-List of events supported
+The following table lists the supported events.
 
 | Event | Description |
 | :---- | :---------- |
