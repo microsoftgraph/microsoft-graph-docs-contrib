@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Users
 
-Get-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+Get-MgUser -UserId $userId -Property "ext55gb1l09_msLearnCourses" 
 
 ```

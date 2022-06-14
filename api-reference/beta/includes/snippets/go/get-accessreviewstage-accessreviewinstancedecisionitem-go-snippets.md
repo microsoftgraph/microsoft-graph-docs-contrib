@@ -11,7 +11,7 @@ accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
 accessReviewStageId := "accessReviewStage-id"
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).DecisionsById(&accessReviewInstanceDecisionItemId).Get(nil)
+result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).DecisionsById(&accessReviewInstanceDecisionItemId).Get()
 
 
 ```

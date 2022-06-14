@@ -16,12 +16,9 @@ requestBody.SetLabels( []LocalizedLabel {
 		"isDefault": true,
 	}
 }
-options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 setId := "set-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(options)
+result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(requestBody)
 
 
 ```

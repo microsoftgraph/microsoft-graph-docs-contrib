@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-crosstenantaccesspolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-crosstenantaccesspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-crosstenantaccesspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +106,9 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
     "displayName": "CrossTenantAccessPolicy",
-    "definition": "Cross tenant access policy..."
+    "lastModifiedDateTime": "08-23-2021Z00:00:00",
+    "definition": "Cross tenant access policy...",
+    "allowedCloudEndpoints": ["partner.microsoftonline.cn"]
   }
 }
 ```

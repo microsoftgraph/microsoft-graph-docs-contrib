@@ -1,7 +1,7 @@
 ---
 title: "List temporaryAccessPassAuthenticationMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
-author: "inbarckMS"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethods
+GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
@@ -121,18 +121,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-      "id": "String",
-      "temporaryAccessPass": "String",
-      "createdDateTime": "String (timestamp)",
-      "startDateTime": "String (timestamp)",
-      "lifetimeInMinutes": "Integer",
-      "isUsableOnce": "Boolean",
-      "isUsable": "Boolean",
-      "methodUsabilityReason": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
+    "value": [
+        {
+            "id": "de517d3d-3b92-4902-a21a-da3e60ee3962",
+            "temporaryAccessPass": null,
+            "createdDateTime": "2022-06-03T16:55:19.5684534Z",
+            "startDateTime": "2022-06-03T16:55:19.3381855Z",
+            "lifetimeInMinutes": 60,
+            "isUsableOnce": true,
+            "isUsable": true,
+            "methodUsabilityReason": "EnabledByPolicy"
+        }
+    ]
 }
 ```

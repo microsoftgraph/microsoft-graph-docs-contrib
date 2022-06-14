@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewApplication()
 displayName := "Display name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ApplicationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Applications().Post(options)
+result, err := graphClient.Applications().Post(requestBody)
 
 
 ```

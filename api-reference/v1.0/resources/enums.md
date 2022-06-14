@@ -1050,6 +1050,15 @@ Namespace: microsoft.graph
 | radio
 
 
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
+
+
 ### plannerPreviewType values
 
 | Member
@@ -2081,4 +2090,21 @@ Possible values for user account types (group membership), per Windows definitio
 |notReviewed|
 |dontKnow|
 |notNotified|
+|unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
 |unknownFutureValue|

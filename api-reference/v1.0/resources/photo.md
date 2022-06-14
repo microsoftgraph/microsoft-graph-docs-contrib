@@ -1,13 +1,13 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Photo
+title: photo
 ms.localizationpriority: medium
 description: "The photo resource provides photo and camera properties, for example, EXIF metadata, on a driveItem."
-ms.prod: ""
+ms.prod: files
 doc_type: resourcePageType
 ---
-# Photo resource type
+# photo resource type
 
 Namespace: microsoft.graph
 

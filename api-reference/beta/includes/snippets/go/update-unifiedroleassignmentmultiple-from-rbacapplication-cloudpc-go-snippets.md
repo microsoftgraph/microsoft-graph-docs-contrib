@@ -12,11 +12,8 @@ displayName := "NewName"
 requestBody.SetDisplayName(&displayName)
 description := "A new roleAssignment"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options)
+graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(requestBody)
 
 
 ```
