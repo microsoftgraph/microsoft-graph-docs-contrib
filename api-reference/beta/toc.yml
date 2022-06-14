@@ -10633,6 +10633,11 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
+        - name: My roles
+          href: resources/managedtenants-myrole.md
+          items:
+          - name: List
+            href: api/managedtenants-managedtenant-list-myroles.md 
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -14716,8 +14721,6 @@ items:
             href: api/security-ediscoverycase-post-custodians.md
           - name: Get
             href: api/security-ediscoverycustodian-get.md
-          - name: Update
-            href: api/security-ediscoverycustodian-update.md
           - name: Activate
             href: api/security-ediscoverycustodian-activate.md
           - name: Release
@@ -14832,7 +14835,7 @@ items:
             href: api/security-ediscoveryreviewset-export.md
             items:
               - name: Get download url
-                href: api/security-ediscoveryexportoperation-downloadurl.md
+                href: api/security-ediscoveryexportoperation-getdownloadurl.md
           - name: Query
             href: resources/security-ediscoveryreviewsetquery.md
             items:
@@ -14850,7 +14853,7 @@ items:
               href: api/security-ediscoveryreviewsetquery-export.md
               items:
               - name: Get download url
-                href: api/security-ediscoveryexportoperation-downloadurl.md
+                href: api/security-ediscoveryexportoperation-getdownloadurl.md
             - name: Apply tags
               href: api/security-ediscoveryreviewsetquery-applytags.md
             - name: Run
