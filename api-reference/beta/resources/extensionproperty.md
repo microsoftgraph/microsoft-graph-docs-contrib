@@ -26,7 +26,7 @@ Only 100 extension values, across *all* types and *all* applications, can be wri
 
 Use this resource and associated methods to manage the directory extension definitions. To manage the directory extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
 
-For more information about Microsoft Graph extensibility, see [Add custom data to resources using extensions](/graph/extensibility-overview).
+For more information about Microsoft Graph extensibility, see [Add custom properties to resources using extensions](/graph/extensibility-overview).
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -87,6 +87,10 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
+
+## See also
+
++ [Add custom properties to resources using extensions](/graph/extensibility-overview)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

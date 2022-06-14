@@ -126,7 +126,7 @@ The following example shows how the custom properties and associated data are pr
 
 [Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
-For the list of resource types that can be specified as target objects for a Microsoft Graph schema extension, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
+For the list of resource types that support schema extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
@@ -231,7 +231,7 @@ The table below contrasts and compares the extension types, which should help yo
 
 | Capability | Directory extensions | Schema extensions | Open extensions | Extension attributes 1-15 |
 |:-|:-|:-|:-|:-|
-| Supported resource types | [user][] <br/> [group][] <br/> [administrativeUnit][] <br/> [application][] <br/> [device][] <br/> [organization][] <br/> [servicePrincipal][] | [user][] <br/> [group][] <br/> [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][]* (for both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][]) | [user][] <br/> [group][] <br/> [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/>[device][] |
+| Supported resource types | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [application][] <br/> [device][] <br/> [organization][] <br/> [servicePrincipal][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (for both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][] <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/>[device][] |
 | Strongly typed | Yes | Yes | No | No |
 | Filterable | Yes | Yes | Yes | Yes |
 | Managed via | Microsoft Graph | Microsoft Graph | Microsoft Graph | Microsoft Graph <br/> Exchange admin center |
@@ -239,33 +239,22 @@ The table below contrasts and compares the extension types, which should help yo
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
 | Usable for customizing token claims | [Yes][DirectoryExt-CustomClaims] | No | No | Yes |
 | Available in Azure AD B2C | [Yes][B2CDirectoryExt] | Yes | Yes | Yes |
-| Limits | 100 extension values across *all* types and *all* applications per resource instance | Maximum of five definitions per owner app | - | 15 predefined attributes per user or device resource instance |
+| Limits | <li>100 extension values across *all* types and *all* applications per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance| <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> | <li>15 predefined attributes per user or device resource instance |
 
-> **Note:** \* Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 
-> [!TIP]
+> [!NOTE]
+> 
+> <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+>
+> <sup>2</sup> These limits on open extensions apply to the following directory resources: **user**, **group**, **device**, <!--**administrativeUnit**,--> and **organization**.
+>
+> <sup>3</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
+>
 > You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
 
 ## Permissions
 
 The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
-
-## Data limits
-
-### Open extension limits
-
-The following limits apply to directory resources (**user**, **group**, **device**, **administrativeUnit**, **organization**):
-
-- Each open extension can have up to 2 KB of data (including the extension definition itself).
-- An application can add up to two open extensions per resource instance.
-
-The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
-
-- Each open extension is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. For more information, see [openTypeExtension resource type](/graph/api/resources/opentypeextension).
-
-### Schema extension limits
-
-An application may create no more than **five** schema extension definitions.
 
 ## Known limitations
 
@@ -300,3 +289,4 @@ For known limitations using extensions, see the [extensions section](known-issue
 [DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
 [DirectoryExt-CustomClaims]: /azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims
 [B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
+[MAPI-named-property]: /office/client-developer/outlook/mapi/mapi-named-properties

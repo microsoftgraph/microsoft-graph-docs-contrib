@@ -29,6 +29,8 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 
 Use this resource and associated methods to manage the [schema extension definitions](/graph/api/resources/schemaextension). To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance. See the [schema extension example](/graph/extensibility-schema-groups) to learn how to add custom data to groups.
 
+For more information about Microsoft Graph extensibility including limits for schema extensions, see [Add custom properties to resources using extensions](/graph/extensibility-overview).
+
 ## Methods
 
 | Method		   | Return Type	|Description|
@@ -87,6 +89,10 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+## See also
+
++ [Add custom properties to resources using extensions](/graph/extensibility-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
