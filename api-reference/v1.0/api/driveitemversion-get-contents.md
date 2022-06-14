@@ -1,6 +1,6 @@
 ---
-title: "Download contents of a DriveItemVersion resource"
-description: "Retrieve the contents of a specific version of a DriveItem."
+title: "Download contents of a driveItemVersion resource"
+description: "Retrieve the contents of a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 author: "JeremyKelley"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the contents of a specific version of a [DriveItem](../resources/driveitem.md).
+Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
 
-**Note:** Obtaining the content of the current version is not supported. Instead, use the [DriveItem content endpoint](driveitem-get-content.md).
+>**Note:** It is not supported to obtain the content of the current version. Use the **driveItem** [content endpoint](driveitem-get-content.md) instead.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.
 
 To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
 Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
 
