@@ -73,7 +73,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | Profile (preview) | Profile | Provides a lightweight mechanism for storing and retrieving information about people within a tenant. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Profile card customization (preview) | Profile card | Provides a lightweight mechanism for an administrator to customize the content that surfaces on the Microsoft 365 profile card within an organization. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Document insights  | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md)  |
-| Analytics (preview) | MyAnalytics | Uses advanced analytics and machine-learning techniques to provide insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
+| Analytics (preview) | Viva Insights | Uses advanced analytics and machine-learning techniques to provide insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 
 
 ## Device and app management
@@ -93,7 +93,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Defender for Cloud Apps, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
-
+| eDiscovery (preview) | Microsoft Purview eDiscovery (Premium) | Provides access to eDiscovery capabilities used in the process of identifying and delivering electronic information that can be used as evidence in legal cases.|[Security in Microsoft Graph](security-concept-overview.md)|
 
 
 ## Cross-device experiences

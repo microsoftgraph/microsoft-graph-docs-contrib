@@ -23,9 +23,10 @@ The authentication method policies APIs are used to manage policy settings. For 
 
 |Authentication method policy       | Description |
 |:---------------------------|:------------|:------------|
+|[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Azure AD tenant.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Azure AD.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Azure AD tenant.|
-|[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Azure AD tenant.|
+|[temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethodconfiguration.md)|Define the configuration settings and users or groups who are enabled to use the Temporary Access Pass authentication method.|
 
 ## Policies available for authentication methods registration campaign:
 |Policy       | Description |

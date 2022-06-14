@@ -12,8 +12,6 @@ displayName := "Fourth Coffee"
 requestBody.SetDisplayName(&displayName)
 address := msgraphsdk.NewPhysicalAddress()
 requestBody.SetAddress(address)
-type := "mall"
-address.SetType(&type)
 postOfficeBox := "P.O. Box 123"
 address.SetPostOfficeBox(&postOfficeBox)
 street := "4567 Main Street"
