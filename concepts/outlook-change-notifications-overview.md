@@ -31,7 +31,7 @@ To [create a subscription](webhooks.md#creating-a-subscription), specify the Out
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-Depending on the resource, the permission specified in the following table is the least privileged required to call this API.
+Depending on the resource, use the least privileged permission specified in the following table to call this API.
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
