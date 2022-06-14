@@ -20,12 +20,22 @@ versionId := "0.1"
 publishingState.SetVersionId(&versionId)
 requestBody.SetWebParts( []WebPart {
 	msgraphsdk.NewWebPart(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "rte",
+type := "rte"
+	SetType(&type)
+data := msgraphsdk.NewSitePageData()
+	SetData(data)
+	data.SetAdditionalData(map[string]interface{}{
+		"innerHTML": "<p>Here are the team's upcoming events:</p>",
 	}
 	msgraphsdk.NewWebPart(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "d1d91016-032f-456d-98a4-721247c305e8",
+type := "d1d91016-032f-456d-98a4-721247c305e8"
+	SetType(&type)
+data := msgraphsdk.NewSitePageData()
+	SetData(data)
+	data.SetAdditionalData(map[string]interface{}{
+		"title": "Events",
+		"description": "Display upcoming events",
+		"dataVersion": "1.0",
 	}
 }
 siteId := "site-id"

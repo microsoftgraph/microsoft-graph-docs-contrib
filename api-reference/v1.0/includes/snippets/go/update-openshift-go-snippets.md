@@ -26,13 +26,16 @@ theme := "white"
 sharedOpenShift.SetTheme(&theme)
 sharedOpenShift.SetActivities( []ShiftActivity {
 	msgraphsdk.NewShiftActivity(),
-	SetAdditionalData(map[string]interface{}{
-		"isPaid": true,
-		"startDateTime": "2018-10-04T00:58:45.340Z",
-		"endDateTime": "2018-10-04T01:58:45.340Z",
-		"code": "",
-		"displayName": "Lunch",
-	}
+isPaid := true
+	SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2018-10-04T00:58:45.340Z")
+	SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2018-10-04T01:58:45.340Z")
+	SetEndDateTime(&endDateTime)
+code := ""
+	SetCode(&code)
+displayName := "Lunch"
+	SetDisplayName(&displayName)
 }
 requestBody.SetDraftOpenShift(nil)
 teamId := "team-id"
