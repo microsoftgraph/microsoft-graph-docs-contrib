@@ -1679,6 +1679,17 @@ items:
               href: api/externalmeetingregistrant-post.md
             - name: Delete
               href: api/externalmeetingregistrant-delete.md
+        - name: Virtual Appointment
+          href: resources/virtualappointment.md
+          items:
+          - name: Create
+            href: api/virtualappointment-put.md
+          - name: Get
+            href: api/virtualappointment-get.md
+          - name: Update
+            href: api/virtualappointment-update.md
+          - name: Delete
+            href: api/virtualappointment-delete.md   
       - name: Presence
         href: resources/presence.md
         items:

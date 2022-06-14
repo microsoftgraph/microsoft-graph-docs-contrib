@@ -1,9 +1,9 @@
 ---
 title: "virtualAppointment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Contains information about a virtual appointment."
+author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Virtual Appointments are designed for business to consumer online workflows and include enhanced features such as mobile browser join and client waiting room. Resource contains information about a virtual appointment, including the client join URL, settings and client information.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualAppointments](../api/onlinemeeting-list-virtualappointment.md)|[virtualAppointment](../resources/virtualappointment.md) collection|Get a list of the [virtualAppointment](../resources/virtualappointment.md) objects and their properties.|
-|[Create virtualAppointment](../api/onlinemeeting-post-virtualappointment.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Create virtualAppointment](../api/virtualappointment-put.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Get virtualAppointment](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Update virtualAppointment](../api/virtualappointment-update.md)|[virtualAppointment](../resources/virtualappointment.md)|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
-|[Delete virtualAppointment](../api/onlinemeeting-delete-virtualappointment.md)|None|Deletes a [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Delete virtualAppointment](../api/virtualappointment-delete.md)|None|Deletes a [virtualAppointment](../resources/virtualappointment.md) object.|
+
+> [!TIP]
+>
+> When creating a virtual appointment resource for the first time in a tenant, caller is returned a status resource as service is provisioned. Provisioning takes less than five minutes. 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|appointmentClientJoinWebUrl|String|**TODO: Add Description**|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md) collection|**TODO: Add Description**|
-|externalAppointmentId|String|**TODO: Add Description**|
-|externalAppointmentUrl|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|**TODO: Add Description**|
+|Property|Type|Description|Required|
+|:---|:---|:---|:---|
+|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource |Optional|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number |Optional|
+|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment |Optional|
+|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment |Optional|
+|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join |Optional|
 
 ## Relationships
 None.

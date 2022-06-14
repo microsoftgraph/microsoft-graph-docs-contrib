@@ -1,9 +1,9 @@
 ---
 title: "Create virtualAppointment"
 description: "Create a new virtualAppointment object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,11 @@ Create a new [virtualAppointment](../resources/virtualappointment.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged)                                            |
+|:---------------------------------------|:---------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite          |
+| Delegated (personal Microsoft account) | Not Supported.                                                                         |
+| Application                            | Not supported.
 
 ## HTTP request
 
@@ -30,10 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.virtualAppointment not found
+PUT /onlineMeeting/virtualAppointment 
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -44,13 +45,13 @@ In the request body, supply a JSON representation of the [virtualAppointment](..
 
 You can specify the following properties when creating a **virtualAppointment**.
 
-|Property|Type|Description|
-|:---|:---|:---|
-|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|**TODO: Add Description** Optional.|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md) collection|**TODO: Add Description** Optional.|
-|externalAppointmentId|String|**TODO: Add Description** Optional.|
-|externalAppointmentUrl|String|**TODO: Add Description** Optional.|
-|appointmentClientJoinWebUrl|String|**TODO: Add Description** Optional.|
+|Property|Type|Description|Required|
+|:---|:---|:---|:---|
+|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource |Optional|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number |Optional|
+|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment |Optional|
+|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment |Optional|
+|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join |Optional|
 
 
 
@@ -68,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.virtualAppointment not found
+PUT https://graph.microsoft.com/beta/onlineMeeting/virtualAppointment
 Content-Type: application/json
 Content-length: 379
 

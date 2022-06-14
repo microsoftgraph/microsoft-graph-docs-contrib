@@ -22,9 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite          |
 | Delegated (personal Microsoft account) | Not Supported.                                                                         |
-| Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All  |
-
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
+| Application                            | Not supported.
 
 ## HTTP request
 
@@ -49,11 +47,11 @@ PATCH /onlineMeeting/virtualAppointment
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|"Settings associated with the virtual appointment resource" Optional.|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md) collection|"Client information for the virtual appointment including name, email, and SMS phone number" Optional.|
-|externalAppointmentId|String|"Identifier of the appointment from the scheduling system, associated with the current virtual appointment" Optional.|
-|externalAppointmentUrl|String|"URL of the appointment resource from the scheduling system, associated with the current virtual appointment" Optional.|
-|appointmentClientJoinWebUrl|String|"Join WebUrl of the virtual appointment for clients with waiting room and browser join" Optional.|
+|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource |Optional|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number |Optional|
+|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment |Optional|
+|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment |Optional|
+|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join |Optional|
 
 
 

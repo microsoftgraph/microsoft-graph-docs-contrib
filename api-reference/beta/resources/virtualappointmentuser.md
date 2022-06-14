@@ -1,9 +1,9 @@
 ---
 title: "virtualAppointmentUser resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Contains information about virtual appointment users"
+author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Type to represent a client user in a virtual appointment.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|emailAddress|String|**TODO: Add Description**|
-|smsCapablePhoneNumber|String|**TODO: Add Description**|
+|Property|Type|Description|Required|
+|:---|:---|:---|:---|
+|displayName|String|Display name of the user participating in a virtual appointment|Optional|
+|emailAddress|String|Email address of the user participating in a virtual appointment|Optional|
+|smsCapablePhoneNumber|String|Phone number for sending SMS texts for user participating in a virtual appointment|Optional|
 
 ## Relationships
 None.

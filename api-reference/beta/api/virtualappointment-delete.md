@@ -22,9 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite          |
 | Delegated (personal Microsoft account) | Not Supported.                                                                         |
-| Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All  |
-
-To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user to authorize the app configured in the policy to delete online meetings on behalf of that user (with user ID specified in the request path).
+| Application                            | Not supported.
 
 ## HTTP request
 

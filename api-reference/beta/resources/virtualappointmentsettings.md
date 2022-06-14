@@ -1,9 +1,9 @@
 ---
 title: "virtualAppointmentSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "*Settings related to a virtual appointment"
+author: "benmicrosoft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings that define client's experience during the virtual appointment.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowClientToJoinUsingBrowser|Boolean|**TODO: Add Description**|
+|Property|Type|Description|Required|
+|:---|:---|:---|:---|
+|allowClientToJoinUsingBrowser|Boolean|Indicates if client can use the browser to join a virtual appointment. If set to false, client can only use Microsoft Teams to join.|Optional|
 
 ## Relationships
 None.
