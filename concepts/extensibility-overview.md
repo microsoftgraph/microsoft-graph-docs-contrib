@@ -193,7 +193,7 @@ For more information about how to use schema extensions to add custom properties
 
 ### 4. Microsoft Graph open extensions
 
-[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed or discoverable.
+[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
 
 For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
@@ -233,7 +233,7 @@ The table below contrasts and compares the extension types, which should help yo
 |:-|:-|:-|:-|:-|
 | Supported resource types | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [application][] <br/> [device][] <br/> [organization][] <br/> [servicePrincipal][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (for both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][] <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/>[device][] |
 | Strongly typed | Yes | Yes | No | No |
-| Filterable | Yes | Yes | Yes | Yes |
+| Filterable | Yes | Yes | No | Yes |
 | Managed via | Microsoft Graph | Microsoft Graph | Microsoft Graph | Microsoft Graph <br/> Exchange admin center |
 | Sync data from on-premises using [AD connect][] | [Yes][ADConnect-YES] | No | No | Yes for Users |
 | Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
