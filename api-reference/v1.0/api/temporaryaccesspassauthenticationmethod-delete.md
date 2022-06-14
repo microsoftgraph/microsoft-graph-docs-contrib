@@ -1,6 +1,6 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethod"
-description: "Deletes a user's temporaryAccessPassAuthenticationMethod object."
+description: "Delete a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

@@ -1,5 +1,5 @@
 ---
-title: "Create temporaryAccessPassAuthenticationMethod"
+title: "Create temporaryAccessPassMethod"
 description: "Create a new temporaryAccessPassAuthenticationMethod object for a user."
 author: "tilarso"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create temporaryAccessPassAuthenticationMethod
+# Create temporaryAccessPassMethod
 Namespace: microsoft.graph
 
 Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object on a user. A user can only have one Temporary Access Pass that's usable within its specified lifetime. If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.

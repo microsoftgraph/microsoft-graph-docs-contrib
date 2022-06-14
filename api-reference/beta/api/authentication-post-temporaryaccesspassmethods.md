@@ -1,26 +1,25 @@
 ---
-title: "Create temporaryAccessPassMethods"
-description: "Create a new temporaryAccessPassAuthenticationMethod object."
+title: "Create temporaryAccessPassMethod"
+description: "Create a new temporaryAccessPassAuthenticationMethod object for a user."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create temporaryAccessPassMethods
+# Create temporaryAccessPassMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object on a user. A user can only have one Temporary Access Pass. The passcode can be used between the start and end time of the Temporary Access Pass. If the user requires a new Temporary Access Pass:
-* While the current Temporary Access Pass is valid – the admin needs to delete the existing Temporary Access Pass and create a new pass on the user. Deleting a valid Temporary Access Pass will revoke the user’s sessions. 
-* After the Temporary Access Pass has expired – a new temporary access pass overrides the current temporary access pass and doesn't revoke the user’s sessions.
 
+Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) object on a user. A user can only have one Temporary Access Pass that's usable within its specified lifetime. If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
@@ -56,11 +55,9 @@ The following table describes optional properties that can be used when creating
 
 |Property|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Optional. The date and time when the temporaryAccessPass becomes available to use, if not set the Temporary Access Pass is available to use at creation time.|
-|lifetimeInMinutes|Int32|Optional. The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Minimum 10, Maximum 43200 (equivalent to 30 days).|
-|isUsableOnce|Boolean|Optional. Determines if the pass is limited to a one time use. If True – the pass can be used once, if False – the pass can be used multiple times within the temporaryAccessPass life time. A multi-use Temporary Access Pass (isUsableOnce = false), can only be created and used for sign-in if it is allowed by the Temporary Access Pass Authentication method policy.|
-
-
+|isUsableOnce|Boolean|Optional. Determines if the pass is limited to a one-time use. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within its **lifetimeInMinutes** setting. A multi-use Temporary Access Pass (`isUsableOnce = false`), can only be created and used for sign-in if it is allowed by the  [Temporary Access Pass authentication method policy](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).|
+|lifetimeInMinutes|Int32|Optional. The lifetime of the temporaryAccessPass in minutes starting at creation time or at startDateTime, if set. Must be between 10 and 43200 (equivalent to 30 days). If not specified, the **defaultLifetimeInMinutes** setting in the [Temporary Access Pass authentication method policy](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) is applied. |
+|startDateTime|DateTimeOffset|Optional. The date and time when the temporaryAccessPass becomes available to use. If not specified, the Temporary Access Pass is available to use immediately after it's created.| 
 
 ## Response
 
@@ -69,50 +66,21 @@ If successful, this method returns a `201 Created` response code and a [temporar
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_temporaryaccesspassauthenticationmethod_from_"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-  "startDateTime": "2021-01-26T00:00:00.000Z",
-  "lifetimeInMinutes": 60,
-  "isUsableOnce": false
+    "startDateTime": "2022-06-05T00:00:00.000Z",
+    "lifetimeInMinutes": 60,
+    "isUsableOnce": false
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-temporaryaccesspassauthenticationmethod-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-temporaryaccesspassauthenticationmethod-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-temporaryaccesspassauthenticationmethod-from--objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-temporaryaccesspassauthenticationmethod-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-temporaryaccesspassauthenticationmethod-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-temporaryaccesspassauthenticationmethod-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -128,14 +96,13 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-    "id": "81757535-e21e-4330-a338-33b8038ff12b",
-    "temporaryAccessPass": "nc+&G=xwDKCz",
-    "createdDateTime": "2021-01-25T23:53:35.5026721Z",
-    "startDateTime": "2021-01-26T00:00:00Z",
+    "id": "6f1967b7-15e8-4935-ac26-d50770ed07a7",
+    "temporaryAccessPass": "+drkzqAD",
+    "createdDateTime": "2022-06-02T16:21:09.765173Z",
+    "startDateTime": "2022-06-05T00:00:00Z",
     "lifetimeInMinutes": 60,
     "isUsableOnce": false,
     "isUsable": false,
     "methodUsabilityReason": "NotYetValid"
-
 }
 ```

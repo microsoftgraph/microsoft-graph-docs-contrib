@@ -1,7 +1,7 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Read the properties and relationships of a temporaryAccessPassAuthenticationMethodConfiguration object."
-author: "inbarckms"
+description: "Read the details of the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object, which represents the Temporary Access Pass [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
+Read the details of the Temporary Access Pass policy for the Azure Active Directory (Azure AD) tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ For delegated scenarios, the administrator needs one of the following [Azure AD 
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## Request headers
 |Name|Description|
@@ -49,17 +49,15 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object in the response body.
 
-
 ## Examples
 
 ### Request
-The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 
@@ -67,13 +65,14 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -86,7 +85,7 @@ Content-Type: application/json
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": true,
+    "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {

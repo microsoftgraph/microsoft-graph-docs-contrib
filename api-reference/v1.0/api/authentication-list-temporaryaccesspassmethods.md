@@ -1,5 +1,5 @@
 ---
-title: "List temporaryAccessPassAuthenticationMethods"
+title: "List temporaryAccessPassMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects for a user."
 author: "tilarso"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List temporaryAccessPassAuthenticationMethods
+# List temporaryAccessPassMethods
 Namespace: microsoft.graph
 
 Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass method.
