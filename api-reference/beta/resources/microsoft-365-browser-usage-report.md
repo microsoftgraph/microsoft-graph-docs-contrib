@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 browser usage reports"
-description: "Use the Microsoft 365 browser usage reports to get insights into the usage of browsers (Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer) in your organization."
+description: "Use the Microsoft 365 browser usage reports to get insights into the usage of browser (Microsoft Edge) in your organization."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use the Microsoft 365 browser usage reports to get insights into the usage of browsers (Microsoft Edge, Microsoft Edge Legacy, and Internet Explorer) in your organization.
+Use the Microsoft 365 browser usage reports to get insights into the usage of browser (Microsoft Edge) in your organization.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
