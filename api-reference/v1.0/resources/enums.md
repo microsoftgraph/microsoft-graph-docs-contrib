@@ -19,6 +19,14 @@ Namespace: microsoft.graph
 |rejectMfaByFederatedIdp|
 |unknownFutureValue|
 
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
 ### expirationPatternType values 
 
 |Member|
