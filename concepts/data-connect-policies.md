@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Data Connect policies and billing"
-description: "Describes what policies are supported and the Data Connect billing model."
+description: "Learn about Azure policies supported for an app built with Microsoft 365 data and the bill associated with the Azure Data Factory you are using."
 author: "fercobo-msft"
 ms.localizationpriority: high
 ms.prod: "data-connect"
