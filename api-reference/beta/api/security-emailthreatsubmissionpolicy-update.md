@@ -43,7 +43,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-These properties are related with the **user reported message settings**. To know more see [User reported message settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-submission).
+These properties are related to the **user reported message settings**. To know more see [User reported message settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-submission).
 
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
