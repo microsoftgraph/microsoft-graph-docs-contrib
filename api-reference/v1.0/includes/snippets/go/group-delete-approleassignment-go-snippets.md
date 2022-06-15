@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 groupId := "group-id"
 appRoleAssignmentId := "appRoleAssignment-id"
-result, err := graphClient.GroupsById(&groupId).AppRoleAssignmentsById(&appRoleAssignmentId).Delete(nil)
+graphClient.GroupsById(&groupId).AppRoleAssignmentsById(&appRoleAssignmentId).Delete()
 
 
 ```

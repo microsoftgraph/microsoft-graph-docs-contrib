@@ -4,7 +4,7 @@ description: "Get a collection of governanceRoleDefinitions on a resource."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # List governanceRoleDefinitions

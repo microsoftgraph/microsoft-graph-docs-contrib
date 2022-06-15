@@ -4,7 +4,7 @@ description: "Delete privilegedRoleAssignment."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # Delete privilegedRoleAssignment

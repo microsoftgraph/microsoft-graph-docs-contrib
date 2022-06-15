@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewBaseTaskList()
 displayName := "Travel Plan"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.BaseTaskListRequestBuilderPatchOptions{
-	Body: requestBody,
+requestBody.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "#microsoft.graph.taskList",
 }
 baseTaskListId := "baseTaskList-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(requestBody)
 
 
 ```

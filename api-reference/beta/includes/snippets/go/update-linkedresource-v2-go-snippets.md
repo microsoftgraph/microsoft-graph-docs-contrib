@@ -16,13 +16,10 @@ displayName := "Microsoft Web page"
 requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.LinkedResource_v2RequestBuilderPatchOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
 linkedResource_v2Id := "linkedResource_v2-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResourcesById(&linkedResource_v2Id).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).LinkedResourcesById(&linkedResource_v2Id).Patch(requestBody)
 
 
 ```

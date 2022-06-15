@@ -12,12 +12,9 @@ issuingAuthority := "International Academy of Marketing Excellence"
 requestBody.SetIssuingAuthority(&issuingAuthority)
 issuingCompany := "International Academy of Marketing Excellence"
 requestBody.SetIssuingCompany(&issuingCompany)
-options := &msgraphsdk.PersonCertificationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 personCertificationId := "personCertification-id"
-result, err := graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(options)
+graphClient.UsersById(&userId).Profile().CertificationsById(&personCertificationId).Patch(requestBody)
 
 
 ```

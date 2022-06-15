@@ -12,11 +12,8 @@ description := "Attributes for engineering team"
 requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(20)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet)
-options := &msgraphsdk.AttributeSetRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 attributeSetId := "attributeSet-id"
-result, err := graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(options)
+graphClient.Directory().AttributeSetsById(&attributeSetId).Patch(requestBody)
 
 
 ```

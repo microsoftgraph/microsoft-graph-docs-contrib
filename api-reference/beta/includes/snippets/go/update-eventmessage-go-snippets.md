@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewMessage()
 isRead := "true"
 requestBody.SetIsRead(&isRead)
-options := &msgraphsdk.MessageRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Patch(options)
+graphClient.Me().MessagesById(&messageId).Patch(requestBody)
 
 
 ```

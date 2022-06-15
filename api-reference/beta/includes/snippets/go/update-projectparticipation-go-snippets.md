@@ -16,11 +16,8 @@ department := "Corporate Marketing"
 client.SetDepartment(&department)
 webUrl := "https://www.contoso.com"
 client.SetWebUrl(&webUrl)
-options := &msgraphsdk.ProjectParticipationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 projectParticipationId := "projectParticipation-id"
-result, err := graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(options)
+graphClient.Me().Profile().ProjectsById(&projectParticipationId).Patch(requestBody)
 
 
 ```

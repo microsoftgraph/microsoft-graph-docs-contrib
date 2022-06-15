@@ -10,22 +10,17 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewRegionalAndLanguageSettings()
 requestBody.SetAuthoringLanguages( []LocaleInfo {
 	msgraphsdk.NewLocaleInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"locale": "en-US",
-	}
+locale := "en-US"
+	SetLocale(&locale)
 	msgraphsdk.NewLocaleInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"locale": "es-MX",
-	}
+locale := "es-MX"
+	SetLocale(&locale)
 }
 defaultRegionalFormat := msgraphsdk.NewLocaleInfo()
 requestBody.SetDefaultRegionalFormat(defaultRegionalFormat)
 locale := "en-US"
 defaultRegionalFormat.SetLocale(&locale)
-options := &msgraphsdk.RegionalAndLanguageSettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(options)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Patch(requestBody)
 
 
 ```

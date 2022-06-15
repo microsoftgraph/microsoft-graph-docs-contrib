@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 skillProficiencyId := "skillProficiency-id"
-result, err := graphClient.Me().Profile().SkillsById(&skillProficiencyId).Delete(nil)
+graphClient.Me().Profile().SkillsById(&skillProficiencyId).Delete()
 
 
 ```

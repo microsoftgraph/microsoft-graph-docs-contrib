@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 accessReviewId := "accessReview-id"
 accessReviewReviewerId := "accessReviewReviewer-id"
-result, err := graphClient.AccessReviewsById(&accessReviewId).ReviewersById(&accessReviewReviewerId).Delete(nil)
+graphClient.AccessReviewsById(&accessReviewId).ReviewersById(&accessReviewReviewerId).Delete()
 
 
 ```

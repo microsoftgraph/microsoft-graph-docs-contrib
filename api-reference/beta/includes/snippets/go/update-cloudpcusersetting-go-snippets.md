@@ -14,7 +14,7 @@ selfServiceEnabled := true
 requestBody.SetSelfServiceEnabled(&selfServiceEnabled)
 restorePointSetting := msgraphsdk.NewCloudPcRestorePointSetting()
 requestBody.SetRestorePointSetting(restorePointSetting)
-frequencyInHours := "16"
+frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours)
 userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
@@ -23,11 +23,8 @@ requestBody.SetLocalAdminEnabled(&localAdminEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcUserSetting",
 }
-options := &msgraphsdk.CloudPcUserSettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 cloudPcUserSettingId := "cloudPcUserSetting-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(options)
+graphClient.DeviceManagement().VirtualEndpoint().UserSettingsById(&cloudPcUserSettingId).Patch(requestBody)
 
 
 ```

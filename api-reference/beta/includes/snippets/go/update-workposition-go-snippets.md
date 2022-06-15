@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewWorkPosition()
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent)
-options := &msgraphsdk.WorkPositionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 workPositionId := "workPosition-id"
-result, err := graphClient.Me().Profile().PositionsById(&workPositionId).Patch(options)
+graphClient.Me().Profile().PositionsById(&workPositionId).Patch(requestBody)
 
 
 ```

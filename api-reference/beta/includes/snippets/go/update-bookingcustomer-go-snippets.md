@@ -12,12 +12,9 @@ displayName := "Adele"
 requestBody.SetDisplayName(&displayName)
 emailAddress := "adele@relecloud.com"
 requestBody.SetEmailAddress(&emailAddress)
-options := &msgraphsdk.BookingCustomerRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomerId := "bookingCustomer-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomersById(&bookingCustomerId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).CustomersById(&bookingCustomerId).Patch(requestBody)
 
 
 ```

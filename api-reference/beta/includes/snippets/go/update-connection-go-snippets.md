@@ -12,11 +12,8 @@ name := "Contoso HR Service Tickets"
 requestBody.SetName(&name)
 description := "Connection to index HR service tickets"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.ExternalConnectionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).Patch(requestBody)
 
 
 ```

@@ -12,11 +12,8 @@ isLanguageCustomizationEnabled := true
 requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
 defaultLanguageTag := "en"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
-options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDevice()
 accountEnabled := false
 requestBody.SetAccountEnabled(&accountEnabled)
-options := &msgraphsdk.DeviceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Patch(options)
+graphClient.DevicesById(&deviceId).Patch(requestBody)
 
 
 ```

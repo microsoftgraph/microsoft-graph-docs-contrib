@@ -15,7 +15,7 @@ MSGraphCloudPcUserSetting *cloudPcUserSetting = [[MSGraphCloudPcUserSetting allo
 [cloudPcUserSetting setDisplayName:@"Example"];
 [cloudPcUserSetting setSelfServiceEnabled: true];
 MSGraphCloudPcRestorePointSetting *restorePointSetting = [[MSGraphCloudPcRestorePointSetting alloc] init];
-[restorePointSetting setFrequencyInHours:@"16"];
+[restorePointSetting setFrequencyInHours: 16];
 [restorePointSetting setUserRestoreEnabled: true];
 [cloudPcUserSetting setRestorePointSetting:restorePointSetting];
 [cloudPcUserSetting setLocalAdminEnabled: false];

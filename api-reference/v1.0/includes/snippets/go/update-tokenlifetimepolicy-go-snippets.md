@@ -15,11 +15,8 @@ displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.TokenLifetimePolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 tokenLifetimePolicyId := "tokenLifetimePolicy-id"
-result, err := graphClient.Policies().TokenLifetimePoliciesById(&tokenLifetimePolicyId).Patch(options)
+graphClient.Policies().TokenLifetimePoliciesById(&tokenLifetimePolicyId).Patch(requestBody)
 
 
 ```

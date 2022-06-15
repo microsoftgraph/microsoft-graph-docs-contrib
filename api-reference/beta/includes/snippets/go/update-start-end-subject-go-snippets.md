@@ -14,11 +14,8 @@ endDateTime, err := time.Parse(time.RFC3339, "2020-09-09T15:03:30.8566356-07:00"
 requestBody.SetEndDateTime(&endDateTime)
 subject := "Patch Meeting Subject"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.OnlineMeetingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Patch(requestBody)
 
 
 ```

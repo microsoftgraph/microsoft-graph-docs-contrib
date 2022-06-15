@@ -20,14 +20,11 @@ requestBody.SetAdditionalData(map[string]interface{}{
 		"Add family",
 	}
 }
-options := &msgraphsdk.ExtensionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
 extensionId := "extension-id"
-result, err := graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).ExtensionsById(&extensionId).Patch(requestBody)
 
 
 ```

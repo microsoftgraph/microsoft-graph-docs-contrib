@@ -14,13 +14,10 @@ hidden := false
 requestBody.SetHidden(&hidden)
 propagateChanges := false
 requestBody.SetPropagateChanges(&propagateChanges)
-options := &msgraphsdk.ColumnDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
 columnDefinitionId := "columnDefinition-id"
-result, err := graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Patch(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).ColumnsById(&columnDefinitionId).Patch(requestBody)
 
 
 ```

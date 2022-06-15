@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
 	"allowExternalIdToUseEmailOtp": "disabled",
 }
-options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(requestBody)
 
 
 ```

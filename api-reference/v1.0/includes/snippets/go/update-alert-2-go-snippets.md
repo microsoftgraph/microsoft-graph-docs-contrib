@@ -31,12 +31,11 @@ vendorInformation.SetVendor(&vendor)
 headers := map[string]string{
 	"Prefer": "return=representation"
 }
-options := &msgraphsdk.AlertRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.AlertRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 alertId := "alert-id"
-result, err := graphClient.Security().AlertsById(&alertId).Patch(options)
+graphClient.Security().AlertsById(&alertId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

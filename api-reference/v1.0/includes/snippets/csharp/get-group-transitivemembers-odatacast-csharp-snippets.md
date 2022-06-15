@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var group = await graphClient.Groups["{group-id}"].TransitiveMembers
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.GetAsync();
 

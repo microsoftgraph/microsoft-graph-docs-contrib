@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessReviewPolicy()
 isGroupOwnerManagementEnabled := true
 requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled)
-options := &msgraphsdk.AccessReviewPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AccessReviewPolicy().Patch(options)
+graphClient.Policies().AccessReviewPolicy().Patch(requestBody)
 
 
 ```

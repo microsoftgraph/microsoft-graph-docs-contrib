@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 messageId := "message-id"
 mentionId := "mention-id"
-result, err := graphClient.Me().MessagesById(&messageId).MentionsById(&mentionId).Delete(nil)
+graphClient.Me().MessagesById(&messageId).MentionsById(&mentionId).Delete()
 
 
 ```

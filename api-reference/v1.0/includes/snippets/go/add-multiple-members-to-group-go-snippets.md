@@ -15,11 +15,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 	}
 }
-options := &msgraphsdk.GroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Patch(options)
+graphClient.GroupsById(&groupId).Patch(requestBody)
 
 
 ```

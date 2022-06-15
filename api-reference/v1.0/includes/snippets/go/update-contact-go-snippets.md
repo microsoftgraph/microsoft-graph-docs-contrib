@@ -20,11 +20,8 @@ postalCode := "98121"
 homeAddress.SetPostalCode(&postalCode)
 birthday, err := time.Parse(time.RFC3339, "1974-07-22")
 requestBody.SetBirthday(&birthday)
-options := &msgraphsdk.ContactRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 contactId := "contact-id"
-result, err := graphClient.Me().ContactsById(&contactId).Patch(options)
+graphClient.Me().ContactsById(&contactId).Patch(requestBody)
 
 
 ```

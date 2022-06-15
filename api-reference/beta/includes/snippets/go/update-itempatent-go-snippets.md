@@ -12,12 +12,9 @@ number := "USPTO-3954432633"
 requestBody.SetNumber(&number)
 webUrl := "https://patents.gov/3954432633"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.ItemPatentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 itemPatentId := "itemPatent-id"
-result, err := graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(options)
+graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Patch(requestBody)
 
 
 ```

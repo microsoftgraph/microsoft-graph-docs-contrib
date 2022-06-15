@@ -14,16 +14,17 @@ isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Dana Swope"
+	emailAddress.SetName(&name)
 }
 comment := "Dana, just want to make sure you get this."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(options)
+graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(requestBody)
 
 
 ```

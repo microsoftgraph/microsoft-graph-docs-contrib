@@ -16,11 +16,8 @@ isCompliantDeviceAccepted := true
 inboundTrust.SetIsCompliantDeviceAccepted(&isCompliantDeviceAccepted)
 isHybridAzureADJoinedDeviceAccepted := true
 inboundTrust.SetIsHybridAzureADJoinedDeviceAccepted(&isHybridAzureADJoinedDeviceAccepted)
-options := &msgraphsdk.CrossTenantAccessPolicyConfigurationPartnerRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 crossTenantAccessPolicyConfigurationPartnerTenantId := "crossTenantAccessPolicyConfigurationPartner-tenantId"
-result, err := graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(options)
+graphClient.Policies().CrossTenantAccessPolicy().PartnersById(&crossTenantAccessPolicyConfigurationPartnerTenantId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIdentityProvider()
 clientSecret := "1111111111111"
 requestBody.SetClientSecret(&clientSecret)
-options := &msgraphsdk.IdentityProviderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 identityProviderId := "identityProvider-id"
-result, err := graphClient.IdentityProvidersById(&identityProviderId).Patch(options)
+graphClient.IdentityProvidersById(&identityProviderId).Patch(requestBody)
 
 
 ```

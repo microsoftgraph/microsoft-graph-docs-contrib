@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessPackage()
 displayName := "Access Package New Name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessPackageRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).Patch(requestBody)
 
 
 ```

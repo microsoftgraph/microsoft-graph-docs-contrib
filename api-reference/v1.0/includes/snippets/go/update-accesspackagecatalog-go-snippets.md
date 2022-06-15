@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessPackageCatalog()
 displayName := "Catalog One"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessPackageCatalogRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 accessPackageCatalogId := "accessPackageCatalog-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().CatalogsById(&accessPackageCatalogId).Patch(options)
+graphClient.IdentityGovernance().EntitlementManagement().CatalogsById(&accessPackageCatalogId).Patch(requestBody)
 
 
 ```

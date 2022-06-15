@@ -14,12 +14,9 @@ dateTime := "2020-07-25T16:00:00"
 dueDateTime.SetDateTime(&dateTime)
 timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone)
-options := &msgraphsdk.TodoTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Patch(options)
+graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).Patch(requestBody)
 
 
 ```

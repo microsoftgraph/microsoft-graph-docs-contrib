@@ -32,10 +32,7 @@ requestBody.SetValues( []SettingValue {
 		"value": "[Contoso-][GroupName]",
 	}
 }
-options := &msgraphsdk.SettingsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Settings().Post(options)
+result, err := graphClient.Settings().Post(requestBody)
 
 
 ```

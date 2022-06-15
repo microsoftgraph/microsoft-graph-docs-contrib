@@ -12,12 +12,9 @@ issuingAuthority := "International Association of Branding Management"
 requestBody.SetIssuingAuthority(&issuingAuthority)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl)
-options := &msgraphsdk.PersonAwardRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 personAwardId := "personAward-id"
-result, err := graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(options)
+graphClient.UsersById(&userId).Profile().AwardsById(&personAwardId).Patch(requestBody)
 
 
 ```

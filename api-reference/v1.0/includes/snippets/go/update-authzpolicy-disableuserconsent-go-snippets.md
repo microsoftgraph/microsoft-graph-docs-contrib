@@ -12,10 +12,7 @@ defaultUserRolePermissions := msgraphsdk.NewDefaultUserRolePermissions()
 requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned( []string {
 }
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
 
 
 ```

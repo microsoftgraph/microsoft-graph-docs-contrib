@@ -18,11 +18,8 @@ content := "content-value"
 body.SetContent(&content)
 inferenceClassification := "other"
 requestBody.SetInferenceClassification(&inferenceClassification)
-options := &msgraphsdk.MessageRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Patch(options)
+graphClient.Me().MessagesById(&messageId).Patch(requestBody)
 
 
 ```

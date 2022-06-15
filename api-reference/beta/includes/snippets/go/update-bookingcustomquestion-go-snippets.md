@@ -17,12 +17,9 @@ requestBody.SetAnswerOptions( []string {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingCustomQuestion",
 }
-options := &msgraphsdk.BookingCustomQuestionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomQuestionId := "bookingCustomQuestion-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(requestBody)
 
 
 ```

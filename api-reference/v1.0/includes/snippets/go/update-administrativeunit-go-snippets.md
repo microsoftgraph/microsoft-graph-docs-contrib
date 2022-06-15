@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAdministrativeUnit()
 displayName := "Greater Seattle District Technical Schools"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AdministrativeUnitRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(options)
+graphClient.Directory().AdministrativeUnitsById(&administrativeUnitId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTiIndicator()
 description := "description-updated"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(requestBody)
 
 
 ```

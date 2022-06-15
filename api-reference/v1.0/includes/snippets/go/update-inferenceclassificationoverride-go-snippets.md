@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewInferenceClassificationOverride()
 classifyAs := "focused"
 requestBody.SetClassifyAs(&classifyAs)
-options := &msgraphsdk.InferenceClassificationOverrideRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 inferenceClassificationOverrideId := "inferenceClassificationOverride-id"
-result, err := graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Patch(options)
+graphClient.Me().InferenceClassification().OverridesById(&inferenceClassificationOverrideId).Patch(requestBody)
 
 
 ```

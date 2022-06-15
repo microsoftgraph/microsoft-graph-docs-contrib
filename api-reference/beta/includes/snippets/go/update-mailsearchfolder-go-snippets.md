@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.mailSearchFolder",
 	"filterQuery": "contains(subject, 'Analytics')",
 }
-options := &msgraphsdk.MailFolderRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).Patch(options)
+graphClient.Me().MailFoldersById(&mailFolderId).Patch(requestBody)
 
 
 ```

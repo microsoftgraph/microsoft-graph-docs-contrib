@@ -12,11 +12,8 @@ approvalState := "approvalState-value"
 requestBody.SetApprovalState(&approvalState)
 approverReason := "approverReason-value"
 requestBody.SetApproverReason(&approverReason)
-options := &msgraphsdk.PrivilegedApprovalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 privilegedApprovalId := "privilegedApproval-id"
-result, err := graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(options)
+graphClient.PrivilegedApprovalById(&privilegedApprovalId).Patch(requestBody)
 
 
 ```

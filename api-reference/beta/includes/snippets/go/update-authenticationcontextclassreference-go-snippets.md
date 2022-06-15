@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"value":  []Object {
 	}
 }
-options := &msgraphsdk.AuthenticationContextClassReferenceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 authenticationContextClassReferenceId := "authenticationContextClassReference-id"
-result, err := graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(options)
+graphClient.Identity().ConditionalAccess().AuthenticationContextClassReferencesById(&authenticationContextClassReferenceId).Patch(requestBody)
 
 
 ```

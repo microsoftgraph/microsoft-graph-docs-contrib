@@ -14,18 +14,15 @@ surname := "Bansky"
 requestBody.SetSurname(&surname)
 requestBody.SetEmailAddresses( []EmailAddress {
 	msgraphsdk.NewEmailAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"address": "pavelb@fabrikam.onmicrosoft.com",
-		"name": "Pavel Bansky",
-	}
+address := "pavelb@fabrikam.onmicrosoft.com"
+	SetAddress(&address)
+name := "Pavel Bansky"
+	SetName(&name)
 }
 requestBody.SetBusinessPhones( []String {
 	"+1 732 555 0102",
 }
-options := &msgraphsdk.ContactsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Contacts().Post(options)
+result, err := graphClient.Me().Contacts().Post(requestBody)
 
 
 ```

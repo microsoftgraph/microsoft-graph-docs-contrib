@@ -13,10 +13,7 @@ requestBody.SetMigrate(&migrate)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
 }
-options := &msgraphsdk.ContinuousAccessEvaluationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(options)
+graphClient.Identity().ContinuousAccessEvaluationPolicy().Patch(requestBody)
 
 
 ```

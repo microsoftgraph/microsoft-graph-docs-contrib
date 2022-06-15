@@ -22,12 +22,9 @@ addedStudentAction := "none"
 requestBody.SetAddedStudentAction(&addedStudentAction)
 addToCalendarAction := "studentsAndPublisher"
 requestBody.SetAddToCalendarAction(&addToCalendarAction)
-options := &msgraphsdk.EducationAssignmentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(requestBody)
 
 
 ```

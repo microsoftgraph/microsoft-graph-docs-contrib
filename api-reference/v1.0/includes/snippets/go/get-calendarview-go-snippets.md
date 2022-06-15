@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
 	StartDateTime: "2017-01-01T19:00:00-08:00",
 	EndDateTime: "2017-01-07T19:00:00-08:00",
 }
-options := &msgraphsdk.CalendarViewRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.CalendarViewRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Calendar().CalendarView().Get(options)
+result, err := graphClient.Me().Calendar().CalendarView().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

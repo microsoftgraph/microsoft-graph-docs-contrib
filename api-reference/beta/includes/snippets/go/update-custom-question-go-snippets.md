@@ -17,12 +17,9 @@ requestBody.SetAnswerOptions( []String {
 	"Data scientist",
 	"Other",
 }
-options := &msgraphsdk.MeetingRegistrationQuestionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
 meetingRegistrationQuestionId := "meetingRegistrationQuestion-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().CustomQuestionsById(&meetingRegistrationQuestionId).Patch(requestBody)
 
 
 ```

@@ -18,18 +18,16 @@ content := "Which quarter does that file cover? See my attachment."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "Another file as attachment"
+	SetName(&name)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"name": "Another file as attachment",
 		"contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu",
 	}
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).Reply(group-id, conversationThread-id).Post(requestBody)
 
 
 ```

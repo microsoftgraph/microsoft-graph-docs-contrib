@@ -17,11 +17,8 @@ requestBody.SetTermsOfUseUrl(&termsOfUseUrl)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.mobilityManagementPolicy",
 }
-options := &msgraphsdk.MobilityManagementPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-result, err := graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(options)
+graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(requestBody)
 
 
 ```

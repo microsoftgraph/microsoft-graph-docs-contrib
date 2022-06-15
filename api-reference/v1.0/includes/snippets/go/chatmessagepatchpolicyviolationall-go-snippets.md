@@ -23,13 +23,10 @@ verdictDetails := "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
 policyViolation.SetVerdictDetails(&verdictDetails)
 dlpAction := "BlockAccess"
 policyViolation.SetDlpAction(&dlpAction)
-options := &msgraphsdk.ChatMessageRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(options)
+graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(requestBody)
 
 
 ```

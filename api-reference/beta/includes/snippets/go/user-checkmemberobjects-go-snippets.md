@@ -14,10 +14,7 @@ requestBody.SetIds( []String {
 	"86a64f51-3a64-4cc6-a8c8-6b8f000c0f52",
 	"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1",
 }
-options := &msgraphsdk.CheckMemberObjectsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().CheckMemberObjects().Post(options)
+result, err := graphClient.Me().CheckMemberObjects().Post(requestBody)
 
 
 ```

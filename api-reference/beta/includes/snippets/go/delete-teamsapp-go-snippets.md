@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamsAppId := "teamsApp-id"
-result, err := graphClient.AppCatalogs().TeamsAppsById(&teamsAppId).Delete(nil)
+graphClient.AppCatalogs().TeamsAppsById(&teamsAppId).Delete()
 
 
 ```

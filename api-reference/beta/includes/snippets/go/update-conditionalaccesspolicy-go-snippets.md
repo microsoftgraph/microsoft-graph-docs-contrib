@@ -15,11 +15,8 @@ conditions.SetSignInRiskLevels( []RiskLevel {
 	"medium",
 	"low",
 }
-options := &msgraphsdk.ConditionalAccessPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 conditionalAccessPolicyId := "conditionalAccessPolicy-id"
-result, err := graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(options)
+graphClient.Identity().ConditionalAccess().PoliciesById(&conditionalAccessPolicyId).Patch(requestBody)
 
 
 ```

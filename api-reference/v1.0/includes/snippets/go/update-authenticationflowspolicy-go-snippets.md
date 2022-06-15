@@ -12,10 +12,7 @@ selfServiceSignUp := msgraphsdk.NewSelfServiceSignUpAuthenticationFlowConfigurat
 requestBody.SetSelfServiceSignUp(selfServiceSignUp)
 isEnabled := true
 selfServiceSignUp.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.AuthenticationFlowsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(options)
+graphClient.Policies().AuthenticationFlowsPolicy().Patch(requestBody)
 
 
 ```

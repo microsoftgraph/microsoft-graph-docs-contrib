@@ -17,12 +17,11 @@ requestBody.SetDescription(&description)
 headers := map[string]string{
 	"Prefer": "return=representation"
 }
-options := &msgraphsdk.TiIndicatorRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.TiIndicatorRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 tiIndicatorId := "tiIndicator-id"
-result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Patch(options)
+graphClient.Security().TiIndicatorsById(&tiIndicatorId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

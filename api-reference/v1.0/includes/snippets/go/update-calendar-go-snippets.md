@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendar()
 name := "Social events"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Calendar().Patch(options)
+graphClient.Me().Calendar().Patch(requestBody)
 
 
 ```

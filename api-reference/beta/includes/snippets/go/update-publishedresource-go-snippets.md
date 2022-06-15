@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPublishedResource()
 displayName := "Demo provisioning (updated)"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.PublishedResourceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 publishedResourceId := "publishedResource-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Patch(options)
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).PublishedResourcesById(&publishedResourceId).Patch(requestBody)
 
 
 ```

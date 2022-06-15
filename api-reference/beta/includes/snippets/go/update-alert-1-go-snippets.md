@@ -28,11 +28,8 @@ provider := "String"
 vendorInformation.SetProvider(&provider)
 vendor := "String"
 vendorInformation.SetVendor(&vendor)
-options := &msgraphsdk.AlertRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 alertId := "alert-id"
-result, err := graphClient.Security().AlertsById(&alertId).Patch(options)
+graphClient.Security().AlertsById(&alertId).Patch(requestBody)
 
 
 ```

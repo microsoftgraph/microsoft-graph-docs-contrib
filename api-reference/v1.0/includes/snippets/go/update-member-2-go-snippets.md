@@ -14,12 +14,9 @@ requestBody.SetRoles( []String {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.aadUserConversationMember",
 }
-options := &msgraphsdk.ConversationMemberRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 conversationMemberId := "conversationMember-id"
-result, err := graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(options)
+graphClient.TeamsById(&teamId).MembersById(&conversationMemberId).Patch(requestBody)
 
 
 ```

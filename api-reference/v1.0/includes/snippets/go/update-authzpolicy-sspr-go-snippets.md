@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAuthorizationPolicy()
 allowedToUseSSPR := true
 requestBody.SetAllowedToUseSSPR(&allowedToUseSSPR)
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
 
 
 ```

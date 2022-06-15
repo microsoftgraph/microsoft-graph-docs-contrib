@@ -12,12 +12,9 @@ displayName := "Contoso Marketing"
 requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.ExternalGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
 externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Patch(options)
+graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Patch(requestBody)
 
 
 ```

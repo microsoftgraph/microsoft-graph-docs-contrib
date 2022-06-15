@@ -3,7 +3,7 @@ title: Update printer
 description: Update the properties of a printer object.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -100,8 +100,6 @@ If using application permissions, if successful, this method returns `204 No con
 
 ### Request
 The following is an example of the request.
-
-# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {

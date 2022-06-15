@@ -12,12 +12,9 @@ location := msgraphsdk.NewLocation()
 requestBody.SetLocation(location)
 displayName := "Conf Room 2"
 location.SetDisplayName(&displayName)
-options := &msgraphsdk.EventRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 eventId := "event-id"
-result, err := graphClient.GroupsById(&groupId).Calendar().EventsById(&eventId).Patch(options)
+graphClient.GroupsById(&groupId).Calendar().EventsById(&eventId).Patch(requestBody)
 
 
 ```

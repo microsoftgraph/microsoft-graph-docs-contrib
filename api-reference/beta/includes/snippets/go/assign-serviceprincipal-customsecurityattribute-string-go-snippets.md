@@ -12,11 +12,8 @@ customSecurityAttributes := msgraphsdk.NewCustomSecurityAttributeValue()
 requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 customSecurityAttributes.SetAdditionalData(map[string]interface{}{
 }
-options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(requestBody)
 
 
 ```

@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAuthorizationPolicy()
 blockMsolPowerShell := true
 requestBody.SetBlockMsolPowerShell(&blockMsolPowerShell)
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
 
 
 ```

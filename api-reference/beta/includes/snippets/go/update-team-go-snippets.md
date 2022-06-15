@@ -30,11 +30,8 @@ discoverySettings := msgraphsdk.NewTeamDiscoverySettings()
 requestBody.SetDiscoverySettings(discoverySettings)
 showInTeamsSearchAndSuggestions := true
 discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions)
-options := &msgraphsdk.TeamRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Patch(options)
+graphClient.TeamsById(&teamId).Patch(requestBody)
 
 
 ```

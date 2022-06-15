@@ -13,10 +13,7 @@ requestBody.SetDefaultUserRolePermissions(defaultUserRolePermissions)
 defaultUserRolePermissions.SetPermissionGrantPoliciesAssigned( []String {
 	"managePermissionGrantsForSelf.microsoft-user-default-low",
 }
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
 
 
 ```

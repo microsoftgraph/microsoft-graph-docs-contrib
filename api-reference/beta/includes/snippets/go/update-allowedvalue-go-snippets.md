@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAllowedValue()
 isActive := "false"
 requestBody.SetIsActive(&isActive)
-options := &msgraphsdk.AllowedValueRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
 allowedValueId := "allowedValue-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValuesById(&allowedValueId).Patch(options)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).AllowedValuesById(&allowedValueId).Patch(requestBody)
 
 
 ```

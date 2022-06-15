@@ -24,11 +24,8 @@ url := "url-value"
 requestBody.SetUrl(&url)
 supports := "supports-value"
 requestBody.SetSupports(&supports)
-options := &msgraphsdk.WorkforceIntegrationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 workforceIntegrationId := "workforceIntegration-id"
-result, err := graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(options)
+graphClient.Teamwork().WorkforceIntegrationsById(&workforceIntegrationId).Patch(requestBody)
 
 
 ```

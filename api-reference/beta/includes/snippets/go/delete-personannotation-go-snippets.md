@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 personAnnotationId := "personAnnotation-id"
-result, err := graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Delete(nil)
+graphClient.UsersById(&userId).Profile().NotesById(&personAnnotationId).Delete()
 
 
 ```

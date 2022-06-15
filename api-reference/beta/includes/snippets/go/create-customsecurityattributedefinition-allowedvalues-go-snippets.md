@@ -26,25 +26,22 @@ usePreDefinedValuesOnly := true
 requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly)
 requestBody.SetAllowedValues( []AllowedValue {
 	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Alpine",
-		"isActive": true,
-	}
+id := "Alpine"
+	SetId(&id)
+isActive := true
+	SetIsActive(&isActive)
 	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Baker",
-		"isActive": true,
-	}
+id := "Baker"
+	SetId(&id)
+isActive := true
+	SetIsActive(&isActive)
 	msgraphsdk.NewAllowedValue(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Cascade",
-		"isActive": true,
-	}
+id := "Cascade"
+	SetId(&id)
+isActive := true
+	SetIsActive(&isActive)
 }
-options := &msgraphsdk.CustomSecurityAttributeDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(options)
+result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(requestBody)
 
 
 ```

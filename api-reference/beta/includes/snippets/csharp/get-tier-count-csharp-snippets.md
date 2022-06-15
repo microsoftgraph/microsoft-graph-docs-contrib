@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 };
 
 var user = await graphClient.Groups["{group-id}"].TransitiveMembers
-	.Request()
+	.Request( queryOptions )
 	.Header("ConsistencyLevel","eventual")
 	.Search("displayName:tier")
 	.Select("displayName,id")

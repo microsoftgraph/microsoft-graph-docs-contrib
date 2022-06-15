@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 languageProficiencyId := "languageProficiency-id"
-result, err := graphClient.Me().Profile().LanguagesById(&languageProficiencyId).Delete(nil)
+graphClient.Me().Profile().LanguagesById(&languageProficiencyId).Delete()
 
 
 ```

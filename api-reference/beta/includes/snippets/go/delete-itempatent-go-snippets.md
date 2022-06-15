@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 itemPatentId := "itemPatent-id"
-result, err := graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Delete(nil)
+graphClient.UsersById(&userId).Profile().PatentsById(&itemPatentId).Delete()
 
 
 ```

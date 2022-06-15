@@ -10,13 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewReviewSetQuery()
 displayName := "My Query 1 - Renamed"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ReviewSetQueryRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
 reviewSetQueryId := "reviewSetQuery-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).QueriesById(&reviewSetQueryId).Patch(requestBody)
 
 
 ```

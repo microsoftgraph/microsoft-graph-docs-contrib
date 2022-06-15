@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewDisableUserAccountsRequestBody()
 disableUserAccounts := true
 requestBody.SetDisableUserAccounts(&disableUserAccounts)
-options := &msgraphsdk.ForceDeleteRequestBuilderPostOptions{
-	Body: requestBody,
-}
 domainId := "domain-id"
-graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(options)
+graphClient.DomainsById(&domainId).ForceDelete(domain-id).Post(requestBody)
 
 
 ```

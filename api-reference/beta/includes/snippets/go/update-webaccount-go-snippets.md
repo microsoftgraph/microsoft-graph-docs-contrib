@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewWebAccount()
 webUrl := "https://github.com/innocenty.popov"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.WebAccountRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 webAccountId := "webAccount-id"
-result, err := graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(options)
+graphClient.Me().Profile().WebAccountsById(&webAccountId).Patch(requestBody)
 
 
 ```

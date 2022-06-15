@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPersonName()
 nickname := "Kesha"
 requestBody.SetNickname(&nickname)
-options := &msgraphsdk.PersonNameRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 personNameId := "personName-id"
-result, err := graphClient.Me().Profile().NamesById(&personNameId).Patch(options)
+graphClient.Me().Profile().NamesById(&personNameId).Patch(requestBody)
 
 
 ```

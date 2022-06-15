@@ -24,11 +24,8 @@ longitude := float64(2.2)
 location.SetLongitude(&longitude)
 altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters)
-options := &msgraphsdk.PrintConnectorRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 printConnectorId := "printConnector-id"
-result, err := graphClient.Print().ConnectorsById(&printConnectorId).Patch(options)
+graphClient.Print().ConnectorsById(&printConnectorId).Patch(requestBody)
 
 
 ```

@@ -15,11 +15,8 @@ displayName := "displayName-value"
 requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault)
-options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-result, err := graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(options)
+graphClient.Policies().TokenIssuancePoliciesById(&tokenIssuancePolicyId).Patch(requestBody)
 
 
 ```

@@ -12,11 +12,8 @@ displayName := "Onboarding"
 requestBody.SetDisplayName(&displayName)
 description := "Tenants that we are currently onboarding"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.TenantTagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 tenantTagId := "tenantTag-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(options)
+graphClient.TenantRelationships().ManagedTenants().TenantTagsById(&tenantTagId).Patch(requestBody)
 
 
 ```

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ContentRequestBuilderGetQueryParameters{
 	Format: "%7Bformat%7D",
 }
-options := &msgraphsdk.ContentRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ContentRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 driveItemId := "driveItem-id"
-result, err := graphClient.Drive().ItemsById(&driveItemId).Content().Get(options)
+graphClient.Drive().ItemsById(&driveItemId).Content().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewItemPhone()
 type := "other"
 requestBody.SetType(&type)
-options := &msgraphsdk.ItemPhoneRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 itemPhoneId := "itemPhone-id"
-result, err := graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(options)
+graphClient.UsersById(&userId).Profile().PhonesById(&itemPhoneId).Patch(requestBody)
 
 
 ```

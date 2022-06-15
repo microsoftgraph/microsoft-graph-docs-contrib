@@ -16,11 +16,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"capacity": ,
 	"isWheelChairAccessible": false,
 }
-options := &msgraphsdk.PlaceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 placeId := "place-id"
-result, err := graphClient.PlacesById(&placeId).Patch(options)
+graphClient.PlacesById(&placeId).Patch(requestBody)
 
 
 ```

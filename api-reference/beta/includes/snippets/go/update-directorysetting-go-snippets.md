@@ -15,11 +15,8 @@ requestBody.SetValues( []SettingValue {
 		"value": "Contoso",
 	}
 }
-options := &msgraphsdk.DirectorySettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 directorySettingId := "directorySetting-id"
-result, err := graphClient.SettingsById(&directorySettingId).Patch(options)
+graphClient.SettingsById(&directorySettingId).Patch(requestBody)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 itemEmailId := "itemEmail-id"
-result, err := graphClient.Me().Profile().EmailsById(&itemEmailId).Delete(nil)
+graphClient.Me().Profile().EmailsById(&itemEmailId).Delete()
 
 
 ```

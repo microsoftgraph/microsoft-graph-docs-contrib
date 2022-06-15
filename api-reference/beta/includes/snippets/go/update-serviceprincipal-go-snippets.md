@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewServicePrincipal()
 appRoleAssignmentRequired := true
 requestBody.SetAppRoleAssignmentRequired(&appRoleAssignmentRequired)
-options := &msgraphsdk.ServicePrincipalRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).Patch(requestBody)
 
 
 ```

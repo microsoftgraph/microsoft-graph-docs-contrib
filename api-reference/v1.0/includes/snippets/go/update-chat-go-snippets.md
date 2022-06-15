@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewChat()
 topic := "Group chat title update"
 requestBody.SetTopic(&topic)
-options := &msgraphsdk.ChatRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Patch(options)
+graphClient.ChatsById(&chatId).Patch(requestBody)
 
 
 ```

@@ -25,11 +25,8 @@ countryOrRegion := "USA"
 location.SetCountryOrRegion(&countryOrRegion)
 postalCode := "80525"
 location.SetPostalCode(&postalCode)
-options := &msgraphsdk.EducationalActivityRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 educationalActivityId := "educationalActivity-id"
-result, err := graphClient.Me().Profile().EducationalActivitiesById(&educationalActivityId).Patch(options)
+graphClient.Me().Profile().EducationalActivitiesById(&educationalActivityId).Patch(requestBody)
 
 
 ```

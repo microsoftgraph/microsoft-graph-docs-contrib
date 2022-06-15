@@ -17,13 +17,10 @@ requestBody.SetDisplayName(&displayName)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.linkedResource",
 }
-options := &msgraphsdk.LinkedResourceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
 linkedResourceId := "linkedResource-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResourcesById(&linkedResourceId).Patch(options)
+graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResourcesById(&linkedResourceId).Patch(requestBody)
 
 
 ```

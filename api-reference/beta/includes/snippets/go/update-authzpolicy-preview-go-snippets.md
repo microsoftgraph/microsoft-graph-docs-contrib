@@ -11,11 +11,8 @@ requestBody := msgraphsdk.NewAuthorizationPolicy()
 requestBody.SetEnabledPreviewFeatures( []String {
 	"assignGroupsToRoles",
 }
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 authorizationPolicyId := "authorizationPolicy-id"
-result, err := graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(options)
+graphClient.Policies().AuthorizationPolicyById(&authorizationPolicyId).Patch(requestBody)
 
 
 ```

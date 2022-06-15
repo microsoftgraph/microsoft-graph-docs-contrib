@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleEligibilityScheduleRequest"
 description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object."
-author: "carolinetempleton"
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

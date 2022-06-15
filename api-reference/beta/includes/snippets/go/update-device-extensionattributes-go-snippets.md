@@ -12,11 +12,8 @@ extensionAttributes := msgraphsdk.NewOnPremisesExtensionAttributes()
 requestBody.SetExtensionAttributes(extensionAttributes)
 extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1)
-options := &msgraphsdk.DeviceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).Patch(options)
+graphClient.DevicesById(&deviceId).Patch(requestBody)
 
 
 ```

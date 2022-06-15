@@ -18,11 +18,8 @@ longitude := float64(2.2)
 location.SetLongitude(&longitude)
 altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters)
-options := &msgraphsdk.PrinterRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 printerId := "printer-id"
-result, err := graphClient.Print().PrintersById(&printerId).Patch(options)
+graphClient.Print().PrintersById(&printerId).Patch(requestBody)
 
 
 ```

@@ -10,17 +10,17 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewProfileCardProperty()
 requestBody.SetAnnotations( []ProfileCardAnnotation {
 	msgraphsdk.NewProfileCardAnnotation(),
-	SetAdditionalData(map[string]interface{}{
-		"localizations":  []Object {
-		}
+	SetLocalizations( []DisplayNameLocalization {
+		msgraphsdk.NewDisplayNameLocalization(),
+languageTag := "no-NB"
+		SetLanguageTag(&languageTag)
+displayName := "Kostnads Senter"
+		SetDisplayName(&displayName)
 	}
-}
-options := &msgraphsdk.ProfileCardPropertyRequestBuilderPatchOptions{
-	Body: requestBody,
 }
 organizationId := "organization-id"
 profileCardPropertyId := "profileCardProperty-id"
-result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(options)
+graphClient.OrganizationById(&organizationId).Settings().ProfileCardPropertiesById(&profileCardPropertyId).Patch(requestBody)
 
 
 ```

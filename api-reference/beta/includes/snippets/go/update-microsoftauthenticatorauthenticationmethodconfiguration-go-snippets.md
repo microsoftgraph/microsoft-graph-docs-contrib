@@ -13,11 +13,8 @@ requestBody.SetState(&state)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
 }
-options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(requestBody)
 
 
 ```

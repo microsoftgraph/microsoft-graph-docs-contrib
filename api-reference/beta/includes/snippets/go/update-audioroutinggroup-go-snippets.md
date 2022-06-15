@@ -19,12 +19,9 @@ requestBody.SetReceivers( []String {
 	"550fae72-d251-43ec-868c-373732c2704f",
 	"72f988bf-86f1-41af-91ab-2d7cd011db47",
 }
-options := &msgraphsdk.AudioRoutingGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 callId := "call-id"
 audioRoutingGroupId := "audioRoutingGroup-id"
-result, err := graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(options)
+graphClient.Communications().CallsById(&callId).AudioRoutingGroupsById(&audioRoutingGroupId).Patch(requestBody)
 
 
 ```

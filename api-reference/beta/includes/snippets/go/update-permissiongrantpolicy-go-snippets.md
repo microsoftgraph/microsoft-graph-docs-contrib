@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPermissionGrantPolicy()
 displayName := "Custom permission grant policy"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.PermissionGrantPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(options)
+graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Patch(requestBody)
 
 
 ```

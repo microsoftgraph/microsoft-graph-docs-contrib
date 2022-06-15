@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewUserInsightsSettings()
 isEnabled := "false"
 requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.ItemInsightsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Settings().ItemInsights().Patch(options)
+graphClient.UsersById(&userId).Settings().ItemInsights().Patch(requestBody)
 
 
 ```

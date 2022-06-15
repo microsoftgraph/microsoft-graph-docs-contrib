@@ -16,10 +16,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
 	"clientSecret": "000000000000",
 }
-options := &msgraphsdk.IdentityProvidersRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().IdentityProviders().Post(options)
+result, err := graphClient.Identity().IdentityProviders().Post(requestBody)
 
 
 ```

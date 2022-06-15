@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAcronym()
 description := "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
 requestBody.SetDescription(&description)
-options := &msgraphsdk.AcronymRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 acronymId := "acronym-id"
-result, err := graphClient.Search().AcronymsById(&acronymId).Patch(options)
+graphClient.Search().AcronymsById(&acronymId).Patch(requestBody)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Remove educationCategory"
-description: "Remove an existing educationCategory from this educationAssignment"
+description: "Remove an existing educationCategory from this educationAssignment."
 ms.localizationpriority: medium
 author: "dipakboyed"
 ms.prod: "education"
@@ -33,17 +33,15 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -53,11 +51,8 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
-##### Response
+### Response
 The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability.
-
 
 <!-- {
   "blockType": "ignored",

@@ -36,11 +36,8 @@ geoCoordinates.SetAltitudeAccuracy(nil)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.roomList",
 }
-options := &msgraphsdk.PlaceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 placeId := "place-id"
-result, err := graphClient.PlacesById(&placeId).Patch(options)
+graphClient.PlacesById(&placeId).Patch(requestBody)
 
 
 ```

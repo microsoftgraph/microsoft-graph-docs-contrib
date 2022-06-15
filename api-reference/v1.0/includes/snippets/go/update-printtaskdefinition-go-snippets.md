@@ -14,11 +14,8 @@ createdBy := msgraphsdk.NewAppIdentity()
 requestBody.SetCreatedBy(createdBy)
 displayName := "Requesting App Display Name"
 createdBy.SetDisplayName(&displayName)
-options := &msgraphsdk.PrintTaskDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 printTaskDefinitionId := "printTaskDefinition-id"
-result, err := graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(options)
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).Patch(requestBody)
 
 
 ```

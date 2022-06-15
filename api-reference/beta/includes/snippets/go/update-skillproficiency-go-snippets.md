@@ -13,11 +13,8 @@ requestBody.SetCategories( []String {
 }
 proficiency := "advancedProfessional"
 requestBody.SetProficiency(&proficiency)
-options := &msgraphsdk.SkillProficiencyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 skillProficiencyId := "skillProficiency-id"
-result, err := graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(options)
+graphClient.Me().Profile().SkillsById(&skillProficiencyId).Patch(requestBody)
 
 
 ```

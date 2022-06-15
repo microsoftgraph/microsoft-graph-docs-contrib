@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCustodian()
 applyHoldToSources := "false"
 requestBody.SetApplyHoldToSources(&applyHoldToSources)
-options := &msgraphsdk.CustodianRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(requestBody)
 
 
 ```
