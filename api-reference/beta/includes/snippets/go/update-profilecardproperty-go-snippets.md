@@ -10,9 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewProfileCardProperty()
 requestBody.SetAnnotations( []ProfileCardAnnotation {
 	msgraphsdk.NewProfileCardAnnotation(),
-	SetAdditionalData(map[string]interface{}{
-		"localizations":  []Object {
-		}
+	SetLocalizations( []DisplayNameLocalization {
+		msgraphsdk.NewDisplayNameLocalization(),
+languageTag := "no-NB"
+		SetLanguageTag(&languageTag)
+displayName := "Kostnads Senter"
+		SetDisplayName(&displayName)
 	}
 }
 organizationId := "organization-id"

@@ -28,10 +28,10 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "approvalTaskId",
-		"value": "2020AAGGTAPP",
-	}
+name := "approvalTaskId"
+	SetName(&name)
+value := "2020AAGGTAPP"
+	SetValue(&value)
 }
 chatId := "chat-id"
 graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(requestBody)

@@ -10,21 +10,27 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewEducationUser()
 requestBody.SetRelatedContacts( []RelatedContact {
 	msgraphsdk.NewRelatedContact(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Father Time",
-		"emailAddress": "father@time.com",
-		"mobilePhone": "4251231234",
-		"relationship": "guardian",
-		"accessConsent": true,
-	}
+displayName := "Father Time"
+	SetDisplayName(&displayName)
+emailAddress := "father@time.com"
+	SetEmailAddress(&emailAddress)
+mobilePhone := "4251231234"
+	SetMobilePhone(&mobilePhone)
+relationship := "guardian"
+	SetRelationship(&relationship)
+accessConsent := true
+	SetAccessConsent(&accessConsent)
 	msgraphsdk.NewRelatedContact(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Mother Nature",
-		"emailAddress": "mother@nature.co.uk",
-		"mobilePhone": "3251231234",
-		"relationship": "parent",
-		"accessConsent": true,
-	}
+displayName := "Mother Nature"
+	SetDisplayName(&displayName)
+emailAddress := "mother@nature.co.uk"
+	SetEmailAddress(&emailAddress)
+mobilePhone := "3251231234"
+	SetMobilePhone(&mobilePhone)
+relationship := "parent"
+	SetRelationship(&relationship)
+accessConsent := true
+	SetAccessConsent(&accessConsent)
 }
 educationUserId := "educationUser-id"
 graphClient.Education().UsersById(&educationUserId).Patch(requestBody)
