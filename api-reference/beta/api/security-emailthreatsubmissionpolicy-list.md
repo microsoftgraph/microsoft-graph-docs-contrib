@@ -34,7 +34,7 @@ GET security/threatSubmission/emailThreatSubmissionPolicies
 ```
 
 ## Optional query parameters
-Not supported as of today since only one email threat submission policy is supported as of today.  It is designed for future usage.
+Not supported.
 
 ## Request headers
 |Name|Description|

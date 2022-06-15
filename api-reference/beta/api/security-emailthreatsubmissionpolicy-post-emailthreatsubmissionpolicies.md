@@ -43,7 +43,7 @@ POST /security/threatSubmission/emailThreatSubmissionPolicies
 ## Request body
 In the request body, supply a JSON representation of the [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object.
 
-You may also specify the following properties when creating an **emailThreatSubmissionPolicy**. These properties are related to the **user reported message settings**. To know more see [User reported message settings.](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-submission).
+You may also specify the following properties when creating an **emailThreatSubmissionPolicy**. These properties are related to the **user reported message settings**. For details, see [User reported message settings.](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-submission).
 
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
