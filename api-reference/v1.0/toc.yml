@@ -6,6 +6,7 @@ items:
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/1.0
+      displayName: authentication, authorization, authenticate, authorize
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/1.0
     - name: Register your app
@@ -20,42 +21,75 @@ items:
       href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
     - name: Limit mailbox access
       href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
+    - name: Resolve authorization errors
+      href: /graph/resolve-auth-errors?context=graph/api/1.0
   - name: Use the API
     items:
     - name: Overview
       href: /graph/use-the-api?context=graph/api/1.0
+      displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
+    - name: Access data and methods
+      href: /graph/traverse-the-graph?context=graph/api/1.0
     - name: Paging
       href: /graph/paging?context=graph/api/1.0
-    - name: Use query parameters
-      href: /graph/query-parameters?context=graph/api/1.0
+    - name: Query parameters
       items:
-      - name: Use the search query parameter
-        href: /graph/search-query-parameter?context=graph/api/1.0
-      - name: Advanced query capabilities
-        href: /graph/aad-advanced-queries?context=graph/api/1.0
+        - name: Use query parameters
+          href: /graph/query-parameters?context=graph/api/1.0
+          displayName: OData query parameters, OData
+        - name: Use the search query parameter
+          href: /graph/search-query-parameter?context=graph/api/1.0
+        - name: Advanced query capabilities
+          href: /graph/aad-advanced-queries?context=graph/api/1.0
+        - name: Optimize requests with query parameters
+          href: /learn/modules/optimize-data-usage
     - name: Batching
-      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
+      displayName: Batch request
     - name: Throttling
-      href: /graph/throttling?context=graph/api/1.0
+      items:
+        - name: Overview
+          href: /graph/throttling?context=graph/api/1.0
+          displayName: throttling
+        - name: Optimize network traffic
+          href: /learn/modules/optimize-network-traffic
     - name: Change notifications
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/api/resources/webhooks?context=graph/api/1.0
-      - name: Tutorial
+        displayName: change notifications, WebHooks, set up notifications for changes in resource data
+      - name: Change notifications tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
-        href: /graph/webhooks-lifecycle
+        href: /graph/webhooks-lifecycle?context=graph/api/1.0
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-      - name: Get change notifications for chat and channel messages
-        href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+      - name: Get notifications delivered different ways (preview)
+        href: /graph/change-notifications-delivery?context=graph/api/1.0
+      - name: Change notifications for cloud printing
+        href: /graph/universal-print-webhook-notifications?context=graph/api/1.0
+      - name: Change notifications for Microsoft Teams resources
+        items:
+          - name: Notification types and payloads
+            href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/1.0
+            displayName: change notifications, Teams, Microsoft Teams
+          - name: Teams and channels
+            href: /graph/teams-changenotifications-team-and-channel?context=graph/api/1.0
+          - name: Team and channel membership
+            href: /graph/teams-changenotifications-teamMembership?context=graph/api/1.0
+          - name: Chat and channel messages
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
+          - name: Chat
+            href: /graph/teams-changenotifications-chat?context=graph/api/1.0
+          - name: Chat membership
+            href: /graph/teams-changenotifications-chatMembership?context=graph/api/1.0
+      - name: Change notifications for Outlook resources
+        href: /graph/outlook-change-notifications-overview?context=graph/api/1.0
     - name: Change tracking
-      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Overview
         href: /graph/delta-query-overview?context=graph/api/1.0
+        displayName: Delta query, track changes, change tracking
       - name: Get changes to events (example)
         href: /graph/delta-query-events?context=graph/api/1.0
       - name: Get changes to groups (example)
@@ -65,10 +99,10 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Overview
         href: /graph/extensibility-overview?context=graph/api/1.0
+        displayName: add custom data, extensions, resources using extensions
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
@@ -77,6 +111,7 @@ items:
       items:
       - name: Get started
         href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+        displayName: Graph Explorer, try the API, try API
       - name: Work with Graph Explorer
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
     - name: Use Postman
@@ -84,13 +119,12 @@ items:
     - name: System messages
       href: /graph/system-messages?context=graph/api/1.0
   - name: Migrate
-    expanded: false
     items:
     - name: Azure AD Graph
-      displayname: Migration, Azure AD Graph
       items:
-      - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview
+      - name: Migrate Azure AD Graph apps
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+        displayName: Migration, Azure AD Graph, migrate
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
       - name: "1: Review differences"
@@ -119,16 +153,28 @@ items:
           href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/1.0
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
-      - name: Migration FAQ
+      - name: Azure AD Graph migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/1.0
+        displayName: migrate, frequently asked questions
       - name: Configure Azure AD Graph permissions
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/1.0
+    - name: Exchange Web Services
+      items:
+        - name: Migrate EWS apps
+          href: /graph/migrate-exchange-web-services-overview?context=graph/api/1.0
+          displayName: Migration, Exchange Web Services, EWS, migrate
+        - name: Authentication
+          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
+        - name: API mapping
+          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
   - name: Use SDKs
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
+        displayName: SDK, SDKs, Microsoft Graph SDK
       - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
+        displayName: install SDK, install SDKs, installation
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Customize a client
@@ -147,22 +193,26 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/1.0
       - name: Use PowerShell
         items:
-          - name: Installation
-            href: /graph/powershell/installation?context=graph/api/1.0
+          - name: PowerShell overview
+            href: /graph/powershell/microsoftgraph/overview?context=graph/api/1.0
+          - name: Install PowerShell SDK
+            href: /graph/powershell/microsoftgraph/installation?context=graph/api/1.0
           - name: Get started
-            href: /graph/powershell/get-started?context=graph/api/1.0
-          - name: Navigating the SDK
-            href: /graph/powershell/navigating?context=graph/api/1.0
+            href: /graph/powershell/microsoftgraph/get-started?context=graph/api/1.0
+          - name: Navigate the PowerShell SDK
+            href: /graph/powershell/microsoftgraph/navigating?context=graph/api/1.0
           - name: App-only authentication
-            href: /graph/powershell/app-only?context=graph/api/1.0
+            href: /graph/powershell/microsoftgraph/app-only?context=graph/api/1.0
   - name: Use the toolkit
     items:
-      - name: Toolkit overview
+      - name: Overview
         href: /graph/toolkit/overview?context=graph/api/1.0
+        displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
-          - name: Overview
+          - name: Get started
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+            displayName: Microsoft Graph Toolkit, toolkit
           - name: /graph/toolkit for React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
           - name: /graph/toolkit for SPFx
@@ -189,6 +239,7 @@ items:
         items:
           - name: Using the providers
             href: /graph/toolkit/providers/providers?context=graph/api/1.0
+            displayName: Microsoft Graph Toolkit providers, toolkit provider
           - name: MSAL provider
             href: /graph/toolkit/providers/msal?context=graph/api/1.0
           - name: MSAL2 provider
@@ -199,6 +250,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/1.0
           - name: Teams MSAL2 provider
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: TeamsFx provider
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/1.0
           - name: Electron provider
             href: /graph/toolkit/providers/electron?context=graph/api/1.0
           - name: Proxy provider
@@ -209,6 +262,7 @@ items:
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/1.0
+            displayName: Microsoft Graph toolkit components, toolkit component
           - name: Get
             href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Person
@@ -249,17 +303,21 @@ items:
     items:
     - name: Best practices
       href: /graph/best-practices-concept?context=graph/api/1.0
+      displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
       href: /graph/known-issues?context=graph/api/1.0
-    - name: Changelog
+      displayName: Microsoft Graph, Known issues with Microsoft Graph
+    - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/1.0
-  - name: v1.0 reference
+      displayName: Microsoft Graph error responses and error resource types
+  - name: API v1.0 reference
     expanded: true
     items:
     - name: Overview
       href: overview.md
+      displayName: Microsoft Graph REST API v1.0 reference
     - name: Users
       items:
       - name: Overview
