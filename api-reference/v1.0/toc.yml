@@ -194,15 +194,15 @@ items:
       - name: Use PowerShell
         items:
           - name: PowerShell overview
-            href: /graph/powershell/microsoftgraph/overview?context=graph/api/1.0
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
           - name: Install PowerShell SDK
-            href: /graph/powershell/microsoftgraph/installation?context=graph/api/1.0
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: Get started
-            href: /graph/powershell/microsoftgraph/get-started?context=graph/api/1.0
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
           - name: Navigate the PowerShell SDK
-            href: /graph/powershell/microsoftgraph/navigating?context=graph/api/1.0
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
-            href: /graph/powershell/microsoftgraph/app-only?context=graph/api/1.0
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
       - name: Overview
@@ -213,9 +213,9 @@ items:
           - name: Get started
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
             displayName: Microsoft Graph Toolkit, toolkit
-          - name: /graph/toolkit for React
+          - name: Toolkit for React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
-          - name: /graph/toolkit for SPFx
+          - name: Toolkit for SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
