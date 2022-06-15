@@ -19,7 +19,7 @@ Represents a logical container for all the definitions and versions of the same 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplatedefinition.md) collection| Get a list of the **teamTemplate** objects available for the tenant.|
-|[List definitions](../api/teamwork-teamtemplate-list-definitions.md)| [teamtemplatedefinition](../resources/teamtemplatedefinition.md) collection | List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a **teamTemplate**.  |
+|[List definitions](../api/teamwork-teamtemplate-list-definitions.md)| [teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection | List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a **teamTemplate**.  |
 
 ## Properties
 
@@ -30,7 +30,7 @@ Represents a logical container for all the definitions and versions of the same 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|definitions|[teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection| A generic representation of a team template definition for a team with a specific structure and configuration.|
+|definitions|[teamtemplatedefinition](../resources/teamtemplatedefinition.md) collection| A generic representation of a team template definition for a team with a specific structure and configuration.|
 
 ## JSON representation
 

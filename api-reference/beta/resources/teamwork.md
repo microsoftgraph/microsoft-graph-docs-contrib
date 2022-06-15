@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection| The Teams devices provisioned for the tenant.|
-|teamTemplates|[teamTemplate](../resources/teamtemplate.md) collection| The teams templates|
+|teamTemplates|[teamtemplate](../resources/teamtemplate.md) collection| The teams templates|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation

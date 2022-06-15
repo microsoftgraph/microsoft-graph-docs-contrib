@@ -60,12 +60,14 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
+
 > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamtemplate"
+  "@odata.type": "microsoft.graph.team"
 }
 -->
 ``` http
