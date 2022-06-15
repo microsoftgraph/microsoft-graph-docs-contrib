@@ -12,11 +12,11 @@ ms.prod: search
 
 Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource in Microsoft Graph.
 
-After you [create a connection](/graph/api/externalconnectors-external-post-connections), you can add your content. Each item from your data source must be represented as an externalItem in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the item ID or derive it from one or more fields. 
+After you [create a connection](/graph/api/externalconnectors-external-post-connections), you can add your content. Each item from your data source must be represented as an **externalItem** in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the item ID or derive it from one or more fields. 
 
 ## Key components
 
-An externalItem has three key components: access control list, properties, and content.
+An **externalItem** has three key components: access control list, properties, and content.
 
 ### Access control list
 
