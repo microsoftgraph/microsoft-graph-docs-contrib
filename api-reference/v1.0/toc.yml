@@ -6234,7 +6234,7 @@ items:
           - name: Get activation counts
             href: api/reportroot-getoffice365activationcounts.md
           - name: Get user counts
-            href: api/reportroot-getoffice365activationsusercounts.md        
+            href: api/reportroot-getoffice365activationsusercounts.md
         - name: Microsoft 365 active users
           href: resources/office-365-active-users-reports.md
           items:
