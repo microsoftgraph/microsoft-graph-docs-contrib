@@ -20,8 +20,10 @@ content := "They were <b>awesome</b>!"
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "AdeleV@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 result, err := graphClient.Me().Messages().Post(requestBody)
 
