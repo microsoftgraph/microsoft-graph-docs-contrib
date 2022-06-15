@@ -50,9 +50,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-## Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
+### Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
 
-### Request
+#### Request
 
 The following is an example of a request.
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### Response
+#### Response
 The following is an example of the response
 
 > **Note:** The response object shown here might be shortened for readability.
