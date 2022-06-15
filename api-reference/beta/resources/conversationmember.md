@@ -41,7 +41,7 @@ Represents a user in a [team](team.md) or a [channel](channel.md) or a [chat](ch
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. |
+|roles| string collection | The roles for that user. By default, every user has a `member` role in a conversation. This property only shows any additional qualifiers such as `guest` or `owner` etc.  |
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation
