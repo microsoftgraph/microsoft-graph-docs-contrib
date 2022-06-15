@@ -1,9 +1,9 @@
 ---
 title: "securityReportsRoot: getAttackSimulationSimulationUserCoverage"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "List simulation coverage for users of a tenant in attack simulation and training campaigns."
+author: "Stu-MSFT"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "reports"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,11 @@ Namespace: microsoft.graph
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Reports.Read.All                            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Reports.Read.All                            |
 
 ## HTTP request
 
@@ -57,7 +57,31 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationSimulationUserCoverage
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securityReportsRoot-getattacksimulationsimulationusercoverage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securityReportsRoot-getattacksimulationsimulationusercoverage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/securityReportsRoot-getattacksimulationsimulationusercoverage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securityReportsRoot-getattacksimulationsimulationusercoverage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securityReportsRoot-getattacksimulationsimulationusercoverage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securityReportsRoot-getattacksimulationsimulationusercoverage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response
