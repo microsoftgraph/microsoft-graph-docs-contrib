@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|ThreatSubmissionPolicy.ReadWrite.All|
 
 ## HTTP request
-Only HTTP `PATCH` request is supported as of today. HTTP `PUT` is not supported.
+Only HTTP `PATCH` request is supported today. HTTP `PUT` is not supported.
 
 <!-- {
   "blockType": "ignored"
@@ -43,7 +43,8 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-These properties are related with the user reported message settings and to know more check out this documentation - https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/user-submission?view=o365-worldwide
+These properties are related with the **user reported message settings**. To know more see [User reported message settings](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/user-submission?view=o365-worldwide).
+
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
 | customizedNotificationSenderEmailAddress | String  | It is used to specify the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is `null`. Optional for creation.                   |
@@ -64,7 +65,7 @@ These properties are related with the user reported message settings and to know
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -86,8 +87,10 @@ Content-type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
