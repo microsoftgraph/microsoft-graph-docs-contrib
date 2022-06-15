@@ -1,10 +1,10 @@
 ---
 title: "securityReportsRoot resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+description: "Container for AST reports resources."
+author: "yadavgaurav121"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
-doc_type: resourcePageType
+ms.prod: "reports"
+doc_type: apiPageType
 ---
 
 # securityReportsRoot resource type
