@@ -10,15 +10,15 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTeam()
 requestBody.SetChannels( []Channel {
 	msgraphsdk.NewChannel(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Class Announcements 📢",
-		"isFavoriteByDefault": true,
-	}
+displayName := "Class Announcements 📢"
+	SetDisplayName(&displayName)
+isFavoriteByDefault := true
+	SetIsFavoriteByDefault(&isFavoriteByDefault)
 	msgraphsdk.NewChannel(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Homework 🏋️",
-		"isFavoriteByDefault": true,
-	}
+displayName := "Homework 🏋️"
+	SetDisplayName(&displayName)
+isFavoriteByDefault := true
+	SetIsFavoriteByDefault(&isFavoriteByDefault)
 }
 memberSettings := msgraphsdk.NewTeamMemberSettings()
 requestBody.SetMemberSettings(memberSettings)

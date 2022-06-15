@@ -26,6 +26,11 @@ source.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTargets( []InvitationParticipantInfo {
 	msgraphsdk.NewInvitationParticipantInfo(),
+identity := msgraphsdk.NewIdentitySet()
+	SetIdentity(identity)
+	identity.SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.identitySet",
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.invitationParticipantInfo",
 	}

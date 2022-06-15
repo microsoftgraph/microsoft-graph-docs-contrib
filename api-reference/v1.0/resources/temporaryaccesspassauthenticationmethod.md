@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a Temporary Access Pass registered to a user. A Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.
+Represents a Temporary Access Pass registered to a user. A Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. The availability and settings that can be configured for the **temporaryAccessPassAuthenticationMethod** depends on the [Temporary Access Pass methods policy](temporaryaccesspassauthenticationmethodconfiguration.md).
 
 ## Methods
 
@@ -32,7 +32,7 @@ Represents a Temporary Access Pass registered to a user. A Temporary Access Pass
 |lifetimeInMinutes|Int32|The lifetime of the Temporary Access Pass in minutes starting at **startDateTime**. Must be between 10 and 43200 inclusive (equivalent to 30 days).|
 |methodUsabilityReason|String|Details about the usability state (**isUsable**). Reasons can include: `EnabledByPolicy`, `DisabledByPolicy`, `Expired`, `NotYetValid`, `OneTimeUsed`.|
 |startDateTime|DateTimeOffset|The date and time when the Temporary Access Pass becomes available to use and when **isUsable** is `true` is enforced.|
-|temporaryAccessPass|String|The Temporary Access Pass used to authenticate. Returned only on creation of a new temporaryAccessPass; Hidden in subsequent read operations and returned as `null` with GET.|
+|temporaryAccessPass|String|The Temporary Access Pass used to authenticate. Returned only on creation of a new **temporaryAccessPassAuthenticationMethod** object; Hidden in subsequent read operations and returned as `null` with GET.|
 
 ## Relationships
 None.

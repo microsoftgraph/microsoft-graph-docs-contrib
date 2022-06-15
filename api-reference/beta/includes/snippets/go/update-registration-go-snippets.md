@@ -16,15 +16,15 @@ endDateTime, err := time.Parse(time.RFC3339, "2021-11-02T15:45:00-08:00")
 requestBody.SetEndDateTime(&endDateTime)
 requestBody.SetSpeakers( []MeetingSpeaker {
 	msgraphsdk.NewMeetingSpeaker(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Henry Ross",
-		"bio": "Chairman and Chief Executive Officer",
-	}
+displayName := "Henry Ross"
+	SetDisplayName(&displayName)
+bio := "Chairman and Chief Executive Officer"
+	SetBio(&bio)
 	msgraphsdk.NewMeetingSpeaker(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Fred Ryan",
-		"bio": "CVP",
-	}
+displayName := "Fred Ryan"
+	SetDisplayName(&displayName)
+bio := "CVP"
+	SetBio(&bio)
 }
 onlineMeetingId := "onlineMeeting-id"
 graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Patch(requestBody)

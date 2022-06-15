@@ -10633,6 +10633,11 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
+        - name: My roles
+          href: resources/managedtenants-myrole.md
+          items:
+          - name: List
+            href: api/managedtenants-managedtenant-list-myroles.md 
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -12012,9 +12017,9 @@ items:
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
-              href: api/temporaryaccesspassauthenticationmethod-list.md
+              href: api/authentication-list-temporaryaccesspassmethods.md
             - name: Create
-              href: api/temporaryaccesspassauthenticationmethod-post.md
+              href: api/authentication-post-temporaryaccesspassmethods.md
             - name: Get
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
