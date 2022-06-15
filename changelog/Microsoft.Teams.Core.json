@@ -5222,7 +5222,7 @@
         }
       ],
       "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
-      "Cloud": "prd",
+      "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-07T09:24:30.6932815Z",
       "WorkloadArea": "Teamwork",
