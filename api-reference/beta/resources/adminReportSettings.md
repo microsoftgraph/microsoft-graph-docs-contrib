@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 Represents the report setting of a tenant.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get adminReportSettings](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Read the properties and relationships of an [adminReportSettings](../resources/adminreportsettings.md) object.|
+|[Update adminReportSettings](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update the properties of an [adminReportSettings](../resources/adminreportsettings.md) object.|
+
+
 ## Properties
 | Property       | Type           | Description                                 | Key       | Required  | ReadOnly  |
 | -------------- | -------------- | ------------------------------------------- | --------- | --------- | --------- |
