@@ -1,6 +1,6 @@
 ---
 title: "Enumerate sites"
-description: "List all available [sites][] in an organization or list the [sites][] that match provided filter criteria and query options."
+description: "List all available [sites][] in an organization or list the [sites][] that match the provided filter criteria and query options."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ In addition, you may use a **[$search][]** query against the '/sites' collection
 [$search]: site-search.md
 [sites]: ../resources/site.md
 
-For more guidance about building applications that use site discovery for scanning purposes please see https://aka.ms/scanguidance.
+For more guidance about building applications that use site discovery for scanning purposes, see https://aka.ms/scanguidance.
 
 ## Permissions
 
@@ -32,19 +32,19 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### List all site collections
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.Read.All, Sites.ReadWrite.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ### Discover the home site for each geography
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.Read.All, Sites.ReadWrite.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Sites.Read.All, Sites.ReadWrite.All         |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 ## HTTP request
 
@@ -60,7 +60,6 @@ GET /sites?$filter=siteCollection/root ne null
 #### Request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 
 ```http
