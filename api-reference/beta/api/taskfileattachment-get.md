@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties, relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.
+Read the properties and relationships of a [taskFileAttachment](../resources/taskfileattachment.md) object.
 
 ### Get the raw contents of a file attachment
-You can append the path segment `/$value` to get the raw contents of a file attachment. The content type is based on its original content type of the file.
+You can append the path segment `/$value` to get the raw contents of a file attachment. The content type is based on the original content type of the file.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET /me/todo/lists/{id}/tasks/{id}/attachments/{id}
-/users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}
+GET /users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGU
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

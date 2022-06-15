@@ -12,8 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties. 
-**contentBytes** property will not be returned in the response. To view **contentBytes**, please use [Get attachment](../api/attachment-get.md).
+Get a list of the [taskFileAttachment](../resources/taskfileattachment.md) objects and their properties. The **contentBytes** property will not be returned in the response. Use the [Get attachment](../api/attachment-get.md) API to view the **contentBytes**.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,12 +64,13 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGU
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.taskFileAttachment)"
+  "@odata.type": "microsoft.graph.taskFileAttachment",
+  "isCollection": true
 }
 -->
 ``` http

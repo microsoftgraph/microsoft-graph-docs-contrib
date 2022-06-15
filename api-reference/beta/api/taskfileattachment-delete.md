@@ -1,6 +1,6 @@
 ---
 title: "Delete taskFileAttachment"
-description: "Deletes a taskFileAttachment object."
+description: "Delete a taskFileAttachment object."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [taskFileAttachment](../resources/taskfileattachment.md) object from a [todoTask](../resources/todotask.md) resoruce.
+Delete a [taskFileAttachment](../resources/taskfileattachment.md) object from a [todoTask](../resources/todotask.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,8 +61,7 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMk
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
