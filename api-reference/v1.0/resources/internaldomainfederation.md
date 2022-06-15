@@ -19,7 +19,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create internalDomainFederation](../api/domain-post-federationconfiguration.md)|[internalDomainFederation](../resources/internaldomainfederation.md)|Create a new [internalDomainFederation](../resources/internaldomainfederation.md) object.|
+|[Create federationConfiguration](../api/domain-post-federationconfiguration.md)|[internalDomainFederation](../resources/internaldomainfederation.md)|Create a new [internalDomainFederation](../resources/internaldomainfederation.md) object.|
 |[Get internalDomainFederation](../api/internaldomainfederation-get.md)|[internalDomainFederation](../resources/internaldomainfederation.md)|Read the properties and relationships of an [internalDomainFederation](../resources/internaldomainfederation.md) object.|
 |[Update internalDomainFederation](../api/internaldomainfederation-update.md)|[internalDomainFederation](../resources/internaldomainfederation.md)|Update the properties of an [internalDomainFederation](../resources/internaldomainfederation.md) object.|
 |[Delete internalDomainFederation](../api/internaldomainfederation-delete.md)|None|Delete an [internalDomainFederation](../resources/internaldomainfederation.md) object.|

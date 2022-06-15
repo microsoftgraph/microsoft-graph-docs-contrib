@@ -1,6 +1,6 @@
 ---
 title: "Delete internalDomainFederation"
-description: "Deletes an internalDomainFederation object."
+description: "Delete an internalDomainFederation object."
 author: "akgoel23"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete internalDomainFederation
 Namespace: microsoft.graph
 
-Deletes an [internalDomainFederation](../resources/internaldomainfederation.md) object.
+Delete an [internalDomainFederation](../resources/internaldomainfederation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
