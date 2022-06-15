@@ -65,11 +65,11 @@ Do not supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) object in the response body. Report data is contained in the **content** property of the **report** object.
+If successful, this method returns a `200 OK` response code and a Edm.Stream object in the response body.
 
 ### CSV
 
-If successful, requesting the **content** property returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
@@ -117,7 +117,7 @@ The CSV file has the following headers for columns:
 
 ### JSON
 
-If successful, requesting the **content** property returns a `200 OK` response code and a JSON object in response body.
+If successful, this method returns a `200 OK` response code and a JSON object in response body.
 
 The default page size for this request is 200 items.
 
@@ -129,7 +129,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request to get the **content** property.
+The following is an example of the request.
 
 
 
@@ -195,7 +195,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request to get the **content** property.
+The following is an example of the request.
 
 
 
