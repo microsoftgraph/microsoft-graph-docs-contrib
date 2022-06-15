@@ -1,10 +1,10 @@
 ---
-title: Configure Application Proxy using Microsoft Graph APIs
-description: Configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-author: FaithOmbongi
-ms.topic: conceptual
+title: "Configure Application Proxy using the Microsoft Graph API"
+description: "Provide remote access and single sign-on to on-premises applications by configuring Application Proxy using the Microsoft Graph API."
+author: "FaithOmbongi"
+ms.topic: "conceptual"
 ms.localizationpriority: medium
-ms.prod: applications
+ms.prod: "applications"
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
@@ -14,8 +14,8 @@ In this article, you'll learn how to configure Azure Active Directory (Azure AD)
 ## Prerequisites
 
 - This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
-- This tutorial assumes that you are using Microsoft Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call the Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Microsoft Graph Explorer:
-    1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- This tutorial assumes that you are using Graph Explorer, but you can use Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role and the appropriate permissions. Complete the following steps to set permissions in Graph Explorer:
+    1. Start [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator account. After you successfully sign in, you can see the user account details in the left-hand pane.
     3. Select the settings icon to the right of the user account details, and then select **Select permissions**.
 
@@ -430,13 +430,13 @@ No Content - 204
 ## See also
 
 - [Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)
+- [applicationTemplate: instantiate](/graph/api/applicationtemplate-instantiate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [connector](/graph/api/resources/connector)
+- [connectorGroup](/graph/api/resources/connectorGroup)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
+- [on-premises publishing profiles](/graph/api/resources/onpremisespublishingprofile-root)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
+- [user](/graph/api/resources/user)
