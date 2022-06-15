@@ -1865,7 +1865,7 @@
 			"ApiChange": "method",
 			"ChangedApiName": "getM365AppUserDetail",
 			"ChangeType": "Addition",
-			"Description": "Added the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method.",
+			"Description": "Added the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-v1.0) method.",
 			"Target": "getM365AppUserDetail"
 		  },
 		  {
@@ -1873,7 +1873,7 @@
 			"ApiChange": "method",
 			"ChangedApiName": "getM365AppUserCounts",
 			"ChangeType": "Addition",
-			"Description": "Added the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method.",
+			"Description": "Added the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-v1.0) method.",
 			"Target": "getM365AppUserCounts"
 		  },
 		  {
@@ -1881,7 +1881,7 @@
 			"ApiChange": "method",
 			"ChangedApiName": "getM365AppPlatformUserCounts",
 			"ChangeType": "Addition",
-			"Description": "Added the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method.",
+			"Description": "Added the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-v1.0) method.",
 			"Target": "getM365AppPlatformUserCounts"
 		  }
 		],
