@@ -8,52 +8,23 @@ ms.prod: "microsoft-teams"
 
 # List all teams in Microsoft Teams for an organization
 
-To list all [teams](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) 
+To list all [teams](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) 
 in an organization (tenant), you find all groups that have teams, and then get information for each team.
 
 ## Get a list of groups
 
-To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) in the organization that have teams,
-get a [list of all groups](/graph/api/group-list?view=graph-rest-beta&preserve-view=true) and then in code find the ones that have
+#### Example 1: Get list of groups that contain a team
+To get a list of all [groups](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) in the organization that have teams,
+get a [list of all groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true) and then in code find the ones that have
 a **resourceProvisioningOptions** property that contains "Team".
-Since groups are large objects, use $select to only get the properties of the group you care about.
 
-```http
-GET /groups?$select=id,resourceProvisioningOptions
-```
-
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
-
-The following is an example of the response. 
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
-    "value": [
-        {
-            "id": "00e897b1-70ba-4cb9-9126-fd5f95c4bb78",
-            "resourceProvisioningOptions": []
-        },
-        {
-            "id": "00f6e045-f884-4359-a617-d459ee626862",
-            "resourceProvisioningOptions": [
-                "Team"
-            ]
-        }
-    ]
-}
-```
-
-## Get a list of groups using beta APIs
-
-Using the beta APIs, you can use $filter to return only the groups that have teams.
+Use the API with $filter to return only the groups that have teams.
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
+
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 > **Note**: Certain unused old teams will not be listed. For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).
 
@@ -66,7 +37,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
     "value": [
         {
             "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
@@ -104,10 +75,43 @@ Content-type: application/json
 }
 ```
 
+#### Example 2: Get list of groups by selecting required properties only
+Since groups are large objects, use $select to only get the properties of the group you care about.
+
+```http
+GET /groups?$select=id,resourceProvisioningOptions
+```
+
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+
+The following is an example of the response. 
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "00e897b1-70ba-4cb9-9126-fd5f95c4bb78",
+            "resourceProvisioningOptions": []
+        },
+        {
+            "id": "00f6e045-f884-4359-a617-d459ee626862",
+            "resourceProvisioningOptions": [
+                "Team"
+            ]
+        }
+    ]
+}
+
+```
+
 ## Get team information for a group
 
 To get team information for the team in a particular group, 
-call the [get team](/graph/api/team-get?view=graph-rest-beta&preserve-view=true) API and include the group ID.
+call the [get team](/graph/api/team-get?view=graph-rest-1.0&preserve-view=true) API and include the group ID.
 
 ```http
 GET /teams/{group-id}
@@ -156,5 +160,5 @@ Content-type: application/json
 
 ## See also
 
-- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta&preserve-view=true)
-- [List groups](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)
+- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)
+- [List groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)
