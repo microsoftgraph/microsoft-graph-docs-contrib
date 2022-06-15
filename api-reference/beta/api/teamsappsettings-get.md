@@ -50,8 +50,10 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
+### Example 1: Enable Resource Specific Consent for chats
+
 ### Request
-The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_teamsappsettings"
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 
 
 ### Response
-The following is an example of the response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant-wide Teams App settings.
+Represents tenant-wide settings for all [TeamsApps](teamsapp.md) in the tenant.
 
 Inherits from [entity](../resources/entity.md).
 
