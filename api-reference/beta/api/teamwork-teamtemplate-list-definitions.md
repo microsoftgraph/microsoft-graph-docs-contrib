@@ -1,18 +1,18 @@
 ---
-title: "List teamTemplates"
-description: "Get a list of the teamTemplate objects and their properties."
+title: "List definitions"
+description: "List the teamTemplateDefinition objects associated with a teamTemplate."
 author: "Charlieforce"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: apiPageType
 ---
 
-# List teamTemplates
+# List definitions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets all of the [teamsTemplate](../resources/teamstemplate.md) objects available for the tenant. 
+List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a [teamTemplate](../resources/teamtemplate.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /teamwork/teamTemplates
+GET /teamwork/teamTemplates?$expand=definitions
 ```
 
 ## Optional query parameters
@@ -46,56 +46,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamTemplate](../resources/teamtemplate.md) objects. 
-
->[!Note]
->Currently, this API only returns the **id** property of a [teamTemplate](../resources/teamtemplate.md). To get the [teamTemplateDefinition](../resources/teamtemplatedefinition.md), use the OData query parameter `$expand=definitions`.
+If successful, this method returns a `200 OK` response code and a collection of [teamTemplateDefinition](../resources/teamtemplatedefinition.md) objects. 
 
 ## Examples
 
-## Example 1: Get a list of team templates
-
-### Request
-The following is an example of a request.
-
-
-<!-- {
-  "blockType": "request",
-  "name": "list_teamtemplatedefinition"
-}
--->
-```http 
-GET https://graph.microsoft.com/beta/teamwork/teamTemplates
-```
-
-### Response
-The following is an example of the response
-
->**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.teamtemplate)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "value": [
-        {
-            "id": "com.microsoft.teams.template.ManageAProject"
-        },
-        {
-            "id": "com.microsoft.teams.template.ManageAnEvent"
-        }
-    ]
-}
-```
-
-### Example 2: Use $extend and $filter to get templateDefinitions for en-US locale
+## Example 1: Use $extend and $filter to get teamTemplateDefinitions for en-US locale
 
 ### Request
 
@@ -103,7 +58,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_teamtemplatedefinition"
+  "name": "list_teamtemplatedefinitions"
 }
 -->
 ```http
@@ -113,7 +68,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 ### Response
 The following is an example of the response
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

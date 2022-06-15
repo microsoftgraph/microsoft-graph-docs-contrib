@@ -1,13 +1,13 @@
 ---
 title: "Get teamTemplateDefinition"
-description: "Read the properties and relationships of a teamTemplate object."
+description: "Read the properties and relationships of a teamTemplateDefinition object."
 author: "Charlieforce"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
 doc_type: apiPageType
 ---
 
-# Get teamTemplate
+# Get teamTemplateDefinition
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -52,7 +52,7 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_teamtemplate"
+  "name": "get_teamtemplatedefinition"
 }
 -->
 ``` http
@@ -62,12 +62,12 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 ### Response
 The following is an example of the response
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamTemplate"
+  "@odata.type": "microsoft.graph.teamtemplatedefinition"
 }
 -->
 

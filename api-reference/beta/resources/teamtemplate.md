@@ -1,6 +1,6 @@
 ---
 title: "teamTemplate resource type"
-description: "TODO"
+description: "Represents a logical container for all the definitions and versions of the same team template."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,10 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-TO DO.
+Represents a logical container for all the definitions and versions of the same team template.
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplatedefinition.md) collection| Get a list of the **teamTemplate** objects available for the tenant.|
+|[List definitions](../api/teamwork-teamtemplate-list-definitions.md)| [teamtemplatedefinition](../resources/teamtemplatedefinition.md) collection | List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a **teamTemplate**.  |
 
 ## Properties
 
@@ -46,6 +49,3 @@ None.
 
 - [team](team.md)
 - [teamTemplateDefinition](teamtemplatedefinition.md)
-
-
-

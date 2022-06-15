@@ -1,6 +1,6 @@
 ---
 title: "Get teamDefinition"
-description: "Read the properties and relationships of a teamTemplate object."
+description: "Read the properties of the team of a teamTemplateDefinition object."
 author: "Charlieforce"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of the [team](../resources/team.md) of a [teamTemplate](../resources/teamstemplate.md) object.
+Read the properties of the [team](../resources/team.md) of a [teamTemplateDefinition](../resources/teamstemplate.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,11 +61,11 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates/com.microsoft.teams.
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamTemplate"
+  "@odata.type": "microsoft.graph.teamtemplate"
 }
 -->
 ``` http

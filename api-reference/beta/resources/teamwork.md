@@ -3,7 +3,7 @@ title: "teamwork resource type"
 description: "A container for the range of Microsoft Teams functionalities that are available for the organization."
 author: "charlieforce"
 ms.localizationpriority: medium
-ms.prod: "Teamwork"
+ms.prod: "teamwork"
 doc_type: resourcePageType
 ---
 
