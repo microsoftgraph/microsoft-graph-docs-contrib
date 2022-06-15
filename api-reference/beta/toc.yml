@@ -12017,9 +12017,9 @@ items:
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
-              href: api/temporaryaccesspassauthenticationmethod-list.md
+              href: api/authentication-list-temporaryaccesspassmethods.md
             - name: Create
-              href: api/temporaryaccesspassauthenticationmethod-post.md
+              href: api/authentication-post-temporaryaccesspassmethods.md
             - name: Get
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete

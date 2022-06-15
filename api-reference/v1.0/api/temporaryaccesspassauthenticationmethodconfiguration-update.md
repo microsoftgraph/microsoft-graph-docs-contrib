@@ -45,7 +45,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/T
 ## Request body
 In the request body, supply a JSON representation of the [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-All properties of the object can be updated. For a list of properties, see [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
+All properties and relationships of the object can be updated. For the list of properties and relationships, see [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md).
 
 > [!NOTE]
 > The **@odata.type** property with a value of `#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration` must be included in the request body.
@@ -69,6 +69,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/auth
 Content-Type: application/json
 
 {
+   "@odata.type":"#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
   "isUsableOnce": true
 }
 ```
