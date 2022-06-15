@@ -62,7 +62,6 @@ The following is an example of a request that checks whether an internal user ha
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess"
