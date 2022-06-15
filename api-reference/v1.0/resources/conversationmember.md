@@ -39,7 +39,7 @@ See also [aadUserConversationMember](aaduserconversationmember.md).
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |
-|roles| string collection | The roles for that user. By default, every user has a `member` role in a conversation. This property only shows any additional qualifiers such as `guest` or `owner` etc. |
+|roles| string collection | The roles for that user. ?By default, everyone has a `member` role. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, then the roles property would contain `owner` as one of the values. Similarly, if the member is a guest, then the roles property would contain `guest` as one of the values. A basic member should not have any values specified in the roles property. |
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
 ## JSON representation
