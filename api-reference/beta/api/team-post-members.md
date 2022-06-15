@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 Add a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md).
 
-> [!NOTE]
-> 
+> [!NOTE] 
 >?By default, everyone has a `member` role. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, then the roles property would contain `owner` as one of the values. Similarly, if the member is a guest, then the roles property would contain `guest` as one of the values. A basic member should not have any values specified in the roles property.
 
 ## Permissions
