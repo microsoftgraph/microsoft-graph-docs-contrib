@@ -1,6 +1,80 @@
 {
   "changelog": [
-   {
+    {
+      "ChangeList": [
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureCommunicationServicesUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureCommunicationServicesUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/azureCommunicationServicesUserIdentity?view=graph-rest-beta) resource type.",
+          "Target": "azureCommunicationServicesUserIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsApplicationIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsApplicationIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsApplicationIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsApplicationInstanceIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsApplicationInstanceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsApplicationInstanceIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsApplicationInstanceIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsEncryptedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsEncryptedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsEncryptedIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsEncryptedIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsGuestIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsGuestIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsGuestIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsGuestIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-beta) resource type.",
+          "Target": "communicationsIdentitySet"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsPhoneIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsPhoneIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsPhoneIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsPhoneIdentity"
+        },
+        {
+          "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsUserIdentity?view=graph-rest-beta) resource type.",
+          "Target": "communicationsUserIdentity"
+        }
+      ],
+      "Id": "0394ccca-e0d1-494b-a67d-a7328fa13f88",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-14T08:49:37.3174776Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
       "ChangeList": [
         {
           "Id": "d33a73d7-defa-4d40-99b3-7e4ef3a35098",
