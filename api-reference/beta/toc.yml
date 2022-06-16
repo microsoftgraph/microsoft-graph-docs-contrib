@@ -14740,8 +14740,20 @@ items:
           items:
             - name: Team template
               href: resources/teamtemplate.md
+            - name: List
+              href: api/teamwork-list-teamtemplates.md
+            - name: List definitions
+              href: api/teamwork-teamtemplate-list-definitions.md
+        - name: Team template definition
+          items:
             - name: Team template definition
               href: resources/teamtemplatedefinition.md
+            - name: List
+              href: api/teamwork-teamtemplate-list-definitions.md
+            - name: Get
+              href: api/teamwork-teamtemplatedefinition-get.md
+            - name: Get team definition
+              href: api/teamwork-teamtemplatedefinition-let-teamdefinition.md
       - name: Group (team)
         href: resources/group.md
         items:
