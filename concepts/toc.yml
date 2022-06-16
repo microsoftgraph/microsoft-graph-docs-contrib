@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Attach large files
             href: outlook-large-attachments.md
-          - name: Immutable ID
+          - name: Get immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
