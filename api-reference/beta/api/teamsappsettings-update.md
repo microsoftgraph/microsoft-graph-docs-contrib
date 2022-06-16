@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Enable Resource Specific Consent for chats
+### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 
 ### Request
 

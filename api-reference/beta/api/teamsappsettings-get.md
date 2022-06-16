@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
-### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
+### Example 1: Get the tenant-wide settings for all Teams apps in the tenant.
 
 ### Request
 
