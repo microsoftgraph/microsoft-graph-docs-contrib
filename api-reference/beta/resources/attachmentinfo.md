@@ -1,6 +1,6 @@
 ---
 title: "attachmentInfo resource type"
-description: "Represents attributes of an attachment"
+description: "Represents the attributes of an attachment."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents attributes of an attachment.
+Represents the attributes of an attachment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attachmentType|attachmentType|The type of attachment. The possible values are: `file`, `item`, `reference`.|
+|attachmentType|attachmentType|The type of the attachment. The possible values are: `file`, `item`, `reference`.|
 |contentType|String|The nature of the data in the attachment. Optional.|
 |name|String|The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.|
 |size|Int64|The length of the attachment in bytes. Required.|
@@ -37,9 +37,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.attachmentInfo",
   "attachmentType": "String",
+  "contentType": "String",
   "name": "String",
-  "size": "Integer",
-  "contentType": "String"
+  "size": "Int64"
 }
 ```
 

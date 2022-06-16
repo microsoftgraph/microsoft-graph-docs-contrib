@@ -52,9 +52,9 @@ The required properties name and contentBytes.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name. |
-|contentType|String|The content type of the attachment. |
 |contentBytes|Binary|The base64-encoded contents of the file.|
+|contentType|String|The content type of the attachment. |
+|name|String|The name of the text displayed under the icon that represents the embedded attachment. This does not need to be the actual file name. |
 |size|Int32|The size in bytes of the attachment. |
 
 ## Response
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
