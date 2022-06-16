@@ -30,7 +30,7 @@ Signed in as Megan, get the primary calendar that Alex has shared with Megan, di
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar
 ```
 
-On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) instance that represents Alex' shared, primary calendar, in Alex' mailbox.
+On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true) instance that represents Alex' shared, primary calendar, in Alex' mailbox.
 
 ### Megan: Get an event in the shared, primary calendar directly from Alex' mailbox
 
@@ -41,7 +41,7 @@ Signed in as Megan, your app can get a specific event in the primary calendar th
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar/events/{id}
 ```
 
-On successful completion, you'll get HTTP 200 OK and the [event](/graph/api/resources/event?view=graph-rest-1.0) instance identified by `{id}` in Alex' primary calendar, directly from Alex' mailbox.
+On successful completion, you'll get HTTP 200 OK and the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) instance identified by `{id}` in Alex' primary calendar, directly from Alex' mailbox.
 
 ### Megan: Get all the events in the shared, primary calendar from Alex' mailbox
 
@@ -52,7 +52,7 @@ Signed in as Megan, get all the events in the primary calendar that Alex has sha
 GET https://graph.microsoft.com/v1.0/users/{Alex-userId | Alex-userPrincipalName}/calendar/events
 ```
 
-On successful completion, you'll get HTTP 200 OK and a collection of [event](/graph/api/resources/event?view=graph-rest-1.0) instances in Alex' primary calendar, directly from Alex' mailbox.
+On successful completion, you'll get HTTP 200 OK and a collection of [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) instances in Alex' primary calendar, directly from Alex' mailbox.
 
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
@@ -144,4 +144,4 @@ Find out more about:
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 - [Share or delegate a calendar in Outlook (preview)](outlook-share-or-delegate-calendar.md)
 - [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) in Microsoft Graph v1.0.
+- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true) in Microsoft Graph v1.0.

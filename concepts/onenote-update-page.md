@@ -1,6 +1,6 @@
 ---
 title: "Update OneNote page content"
-description: " Enterprise notebooks on Microsoft 365"
+description: "Describes how to update OneNote page content and outlines how to construct the request URI and message body, and provides example requests."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"

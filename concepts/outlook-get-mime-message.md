@@ -42,7 +42,7 @@ creation and last modification dates.
 ## Get MIME content of an Outlook message
 
 You can get the MIME representation of a message by appending the `$value` segment when 
-[getting the message](/graph/api/message-get?view=graph-rest-1.0): 
+[getting the message](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -152,11 +152,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## Get MIME content of an Outlook message attached to an Outlook item or group post
 
-You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), [task](/graph/api/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/api/resources/post?view=graph-rest-1.0) that your app can access.
+You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true), [task](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true), or group [post](/graph/api/resources/post?view=graph-rest-1.0&preserve-view=true) that your app can access.
 
 To do that, identify the message attachment, and append the `$value` segment when 
-[getting that attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-). The following shows a few common ways to access an attachment. See [get attachment](/graph/api/attachment-get?view=graph-rest-1.0#http-request) for more information.
+[getting that attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment&preserve-view=true). The following shows a few common ways to access an attachment. See [get attachment](/graph/api/attachment-get?view=graph-rest-1.0#http-request&preserve-view=true) for more information.
 
 If the message is attached to an event in the user's default calendar:
 <!-- { "blockType": "ignored" } -->
@@ -277,6 +276,6 @@ e.</p>
 
 Find out more about:
 
-- [Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post
+- [Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment&preserve-view=true) to an event, message, Outlook task, or group post
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0
+- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases&preserve-view=true) in Microsoft Graph v1.0
