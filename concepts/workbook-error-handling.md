@@ -127,9 +127,7 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
 
 ## Examples of other second-level error codes
 
-Microsoft Graph clients might optionally handle these errors according to the following instructions, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code).
-
-The following table shows examples of other second-level error codes along with the corresponding handling instructions for each error code. The service might add new error codes at any time.
+The following table lists examples of other second-level error codes, including the corresponding handling instructions for each error code. The service might add new error codes at any time. Microsoft Graph clients might optionally handle these errors according to the following instructions, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code).
 
 | Code                      | Instructions                                                                                                                                                                                                                                                                                                                           |
 |:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
