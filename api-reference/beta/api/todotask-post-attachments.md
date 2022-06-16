@@ -46,7 +46,7 @@ POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments
 ## Request body
 In the request body, supply a JSON representation of the [taskFileAttachment](../resources/taskfileattachment.md) object.
 
-When you create a file attachment, include "@odata.type": "#microsoft.graph.taskFileAttachment"` and the required properties.
+When you create a file attachment, include `"@odata.type": "#microsoft.graph.taskFileAttachment"` and the required properties.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -76,7 +76,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.taskFileAttachment",
   "name": "smile",
   "contentBytes": "a0b1c76de9f7=",
-  "contentType": "image/gif",
+  "contentType": "image/gif"
 }
 ```
 
@@ -100,8 +100,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2017-01-26T08:48:28Z",
   "name": "smile",
   "contentType": "image/gif",
-  "size": 1008,
+  "size": 1008
 }
-
 ```
 
