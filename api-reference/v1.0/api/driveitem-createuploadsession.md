@@ -417,7 +417,7 @@ how errors are returned.
 
 ## See also
 
-[Large file upload](/graph/sdks/large-file-upload.md)
+[Large file upload](/graph/sdks/large-file-upload)
 
 <!-- {
   "type": "#page.annotation",
