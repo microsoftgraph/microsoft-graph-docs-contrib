@@ -1,13 +1,15 @@
 ---
 title: "Security enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph security namespace enumeration values."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
 doc_type: enumTypes
 ---
 
-# Security enum values for Microsoft Graph- Microsoft Purview Records management 
+# Security enum values
+
+Namespace: microsoft.graph.security
 
 ### actionAfterRetentionPeriod values 
 
