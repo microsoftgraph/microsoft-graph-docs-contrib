@@ -1,5 +1,5 @@
 ---
-title: "Enum values"
+title: "Security enum values"
 description: "Microsoft Graph enumeration values"
 author: "sseth"
 ms.localizationpriority: medium

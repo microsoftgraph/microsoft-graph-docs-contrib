@@ -19,6 +19,6 @@ The API includes the following key entities.
 
 | Name | Type       | Use case |
 |:-|:-|:-|
-| Label | [microsoft.graph.security.retentionlabel](security-retentionlabel.md) | Contains retention settings and action at the end of a period that be applied to an individual item. |
-| Retention event | [microsoft.graph.security-retentionevent](security-retentionevent.md) | Represents a trigger for event-based retention where retention period start after the event occurs. |
-| Retention event type | [microsoft.graph.security-retentioneventtype](security-retentioneventtype.md) | Represents a single group for same type of retention events . |
+| Label | [microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) | Contains retention settings and action at the end of a period that be applied to an individual item. |
+| Retention event | [microsoft.graph.security.retentionEvent](../resources/security-retentionevent.md) | Represents a trigger for event-based retention where retention period start after the event occurs. |
+| Retention event type | [microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) | Represents a single group for same type of retention events . |

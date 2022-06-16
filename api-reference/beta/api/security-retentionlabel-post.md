@@ -46,7 +46,7 @@ Specify the following properties when you create a **retentionLabel**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period.. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. |
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. |
 |behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. |
 |descriptionForAdmins|String|Provides label information for the admin. Optional. |
 |descriptionForUsers|String|Provides the label information for the user. Optional. |
