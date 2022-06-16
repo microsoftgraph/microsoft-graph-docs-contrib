@@ -103,7 +103,7 @@ The following table lists instructions for important errors that Microsoft Graph
 
 >**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
-For additional examples of other possible second-level error codes, see [Examples of other second-level error codes](#examples-of-other-second-level-error-codes). Microsoft Graph clients might optionally handle these errors according to the instructions, or choose to fall back to (#3-parse-the-top-level-error-code)[top-level error codes] or (#4-parse-the-status-code)[status codes].
+For additional examples of other possible second-level error codes, see [Examples of other second-level error codes](#examples-of-other-second-level-error-codes).
 
 ### 3. Parse the top-level error code
 
@@ -115,7 +115,7 @@ For the regular pattern, if you couldn't find any known second-level error code 
 
 ### 5. Error recovery cooldown
 
-For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any followup requests before the specified duration passes. For best practices related to `Retry-After` header and throttling, see [Best practices for working with the Excel API in Microsoft Graph](workbook-best-practice.md#throttling).
+For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any follow-up requests before the specified duration passes. For best practices related to `Retry-After` header and throttling, see [Best practices for working with the Excel API in Microsoft Graph](workbook-best-practice.md#throttling).
 
 ## Diagnostic information
 
@@ -127,7 +127,7 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
 
 ## Examples of other second-level error codes
 
-Here're some examples of other possible second-level error codes and corresponding handling instructions.
+The following table lists examples of other second-level error codes, including the corresponding handling instructions for each error code. The service might add new error codes at any time. Microsoft Graph clients might optionally handle these errors according to the following instructions, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code).
 
 | Code                      | Instructions                                                                                                                                                                                                                                                                                                                           |
 |:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
