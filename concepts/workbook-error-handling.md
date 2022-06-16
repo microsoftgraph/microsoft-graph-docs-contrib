@@ -115,7 +115,7 @@ For the regular pattern, if you couldn't find any known second-level error code 
 
 ### 5. Error recovery cooldown
 
-For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any followup requests before the specified duration passes. For best practices related to `Retry-After` header and throttling, see [Best practices for working with the Excel API in Microsoft Graph](workbook-best-practice.md#throttling).
+For some of the responses in the regular pattern, a recovery cooldown duration in seconds might be provided via a `Retry-After` header. When a recovery cooldown duration is present, the Microsoft Graph client is not expected to send any follow-up requests before the specified duration passes. For best practices related to `Retry-After` header and throttling, see [Best practices for working with the Excel API in Microsoft Graph](workbook-best-practice.md#throttling).
 
 ## Diagnostic information
 
