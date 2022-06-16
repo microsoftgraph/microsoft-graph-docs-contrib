@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |description|String|A brief description of the team template as it will appear to the users in Microsoft Teams.|
 |displayName|String|The user defined name of the team template.|
 |iconUrl|String|The icon url for the team template.|
-|id|String|Encoded64 of `templateId` + `tenant` + `locale` for the team template. Inherited from [entity](../resources/entity.md).|
+|id|String|Encoded64 of `templateId` + `audience` + `locale` for the team template. Inherited from [entity](../resources/entity.md).|
 |languageTag|String|Language the template is available in.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the user who last modified the team template.|
 |lastModifiedDateTime|DateTimeOffset|The date time of when the team template was last modified.|
