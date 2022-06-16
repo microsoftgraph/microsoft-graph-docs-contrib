@@ -1,6 +1,6 @@
 ---
 title: "Update OneNote page content"
-description: "Describes how to update OneNote page content and outlines how to construct the request URI and message body, and provides example requests."
+description: "Describes how to update OneNote page content, outlines how to construct the request URI and message body, and provides example requests."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"
