@@ -1,6 +1,6 @@
 ---
 title: "contentLabel resource type"
-description: "Describes the contentLabel object that defines Microsoft Information Protection metadata on an object."
+description: "Describes the contentLabel object that defines Microsoft Purview Information Protection metadata on an object."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the **contentLabel** object that defines Microsoft Information Protection metadata on an object. The **contentLabel** returned by the [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md) API resolve the **sensitivityLabel** that is currently applied to a file.
+Describes the **contentLabel** object that defines Microsoft Purview Information Protection metadata on an object. The **contentLabel** returned by the [extractContentLabel](../api/security-sensitivitylabel-extractcontentlabel.md) API resolve the **sensitivityLabel** that is currently applied to a file.
 
 ## Properties
 | Property         | Type           | Description                                                                                                                                                                                                                      |

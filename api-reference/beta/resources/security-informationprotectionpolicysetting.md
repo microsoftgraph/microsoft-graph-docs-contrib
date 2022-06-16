@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionPolicySetting resource type"
-description: "Represents the settings for a Microsoft Information Protection label policy."
+description: "Represents the settings for a Microsoft Purview Information Protection label policy."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the settings for a Microsoft Information Protection label policy
+Represents the settings for a Microsoft Purview Information Protection label policy
 
 ## Methods
 

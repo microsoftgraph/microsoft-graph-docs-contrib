@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types. The [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) might return a **recommendLabelAction** if the Microsoft Information Protection labeling policy is set to `recommend` a label rather than `enforce` a label. The user or application might choose to ignore or accept the recommendation. 
+Represents a label that should be recommended to the user for application to the file based on discovered sensitive information types. The [evaluateClassificationResults](../api/security-sensitivitylabel-evaluateclassificationresults.md) might return a **recommendLabelAction** if the Microsoft Purview Information Protection labeling policy is set to `recommend` a label rather than `enforce` a label. The user or application might choose to ignore or accept the recommendation. 
 
 Inherits from [informationProtectionAction](../resources/security-informationprotectionaction.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "informationProtection resource type"
-description: "Exposes methods that you can use to get Microsoft Information Protection labels and label policies."
+description: "Exposes methods that you can use to get Microsoft Purview Information Protection labels and label policies."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes methods that you can use to get Microsoft Information Protection labels and label policies.
+Exposes methods that you can use to get Microsoft Purview Information Protection labels and label policies.
 
 ## Methods
 | Method                                                                                              | Return type                                                                                                  | Description                                                                                                    |
@@ -27,8 +27,8 @@ None.
 ## Relationships
 | Relationship        | Type                                                                                              | Description                                                                                |
 | :------------------ | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
-| labelPolicySettings | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the Microsoft Information Protection policy settings for the user or organization. |
-| sensitivityLabels   | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Information Protection labels for the user or organization.          |
+| labelPolicySettings | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the Microsoft Purview Information Protection policy settings for the user or organization. |
+| sensitivityLabels   | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Purview Information Protection labels for the user or organization.          |
 
 ## JSON representation
 The following is a JSON representation of the resource.

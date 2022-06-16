@@ -20,7 +20,7 @@ Represents the current state of some information that is to be labeled. **conten
 | :------------ | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | contentFormat | String                                                                                    | The format of the content to be labeled. Possible values are: `file`, `email`.                                                                     |
 | identifier    | String                                                                                    | Identifier used for Azure Information Protection Analytics.                                                                     |
-| metadata      | [keyValuePair](../resources/security-keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key-value pairs, where the key is the `MSIP_Label_GUID_PropName`. |
+| metadata      | [keyValuePair](../resources/security-keyvaluepair.md) collection | Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the `MSIP_Label_GUID_PropName`. |
 | state         | contentState                                                                              | The usage state of the content. The possible values are: `rest`, `motion`, or `use`.                                                                                |
 
 ## Relationships

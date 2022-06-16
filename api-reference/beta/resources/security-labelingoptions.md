@@ -20,7 +20,7 @@ Represents the labeling options that can be provided to the evaluation APIs. **l
 | :--------------------- | :----------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | assignmentMethod       | String                                                       | Describes whether the label was applied by an automated (`standard`) process or a person (`privileged`). |
 | downgradeJustification | [downgradeJustification](security-downgradejustification.md) | The downgrade justification object that indicates if downgrade was justified and, if so, the reason.                                                                                       |
-| extendedProperties     | [keyValuePair](keyvaluepair.md) collection                   | Extended properties will be parsed and returned in the standard Microsoft Information Protection labeled metadata format as part of the label information.                                 |
+| extendedProperties     | [keyValuePair](keyvaluepair.md) collection                   | Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.                                 |
 | labelId                | GUID                                                         | The GUID of the label that should be applied to the information.                                                                                                                           |
 
 ## Relationships

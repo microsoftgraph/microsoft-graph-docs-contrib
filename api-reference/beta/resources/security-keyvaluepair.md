@@ -1,6 +1,6 @@
 ---
 title: "keyValuePair resource type"
-description: "Represents a key-value pair for sensitivity labels in Microsoft Information Protection."
+description: "Represents a key-value pair for sensitivity labels in Microsoft Purview Information Protection."
 author: "tommoser"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair for sensitivity labels in Microsoft Information Protection.
+Represents a key-value pair for sensitivity labels in Microsoft Purview Information Protection.
 
 ## Properties
 
