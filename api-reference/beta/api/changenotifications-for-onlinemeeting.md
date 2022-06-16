@@ -13,7 +13,7 @@ Change notifications in Microsoft Graph enable you to subscribe to call started/
 
 ### Subscribe to messages across all channels
 
-To get change notifications for a meeting's call events in an application, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for a meeting's call events in an application, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. This resource supports [including resource data](/graph/webhooks-with-resource-data) in the notification.
 
 #### Permissions
 
@@ -42,7 +42,7 @@ Content-Type: application/json
 ```
 
 ## JoinWebUrl
-The meeting join url can be found in the [onlineMeeting](/graph/api/resources/onlinemeeting) resource's JoinWebUrl property or through the teams client for an arranged meeting.
+The meeting join url can be found in the [onlineMeeting](../resources/onlinemeeting.md) resource's JoinWebUrl property or through the teams client for an arranged meeting.
 
 
 ## Notifications with encrypted resource data
@@ -73,7 +73,7 @@ The meeting join url can be found in the [onlineMeeting](/graph/api/resources/on
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
 The decrypted notification payload looks like the following.
 ```json
@@ -97,6 +97,6 @@ The following are the supported meeting events:
 **CallRosterUpdate** events will include two additional properties, **activeParticipants@delta** and **activeParticipants@remove**, to depict participants joining/leaving the meeting call in the **resourceData** property.
 
 ## See also
-- [Microsoft Graph change notifications](webhooks.md)
-- [Microsoft Teams API overview](teams-concept-overview.md)
-- [Online meeting resource](/graph/api/resources/onlinemeeting)
+- [Microsoft Graph change notifications](/graph/webhooks)
+- [Microsoft Teams API overview](/graph/teams-concept-overview)
+- [Online meeting resource](../resources/onlinemeeting.md)
