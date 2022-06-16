@@ -1,6 +1,6 @@
 ---
 title: "Manage phone numbers for bots"
-description: "This article describes how to create a bot that is reachable through a phone number."
+description: "Learn how to create a bot that is reachable through a phone number, and assign, unassign, or update a bot phone number."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -83,7 +83,8 @@ Use the following cmdlet to unassign a phone number.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber $null`
 
->**Note:** Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
+> [!NOTE]
+> Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
 
 ## Update a bot phone number
 
@@ -93,5 +94,6 @@ After unassigning the number, you can assign a different number to the bot by us
 
 ## See also
 
-- [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot). 
- - For details about how to deploy, see [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample).
+- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot)
+- [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample)
