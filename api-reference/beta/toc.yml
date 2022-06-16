@@ -14753,7 +14753,7 @@ items:
             - name: Get
               href: api/teamwork-teamtemplatedefinition-get.md
             - name: Get team definition
-              href: api/teamwork-teamtemplatedefinition-let-teamdefinition.md
+              href: api/teamwork-teamtemplatedefinition-list-teamdefinition.md
       - name: Group (team)
         href: resources/group.md
         items:
