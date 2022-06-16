@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
-### Example 1: Enable Resource Specific Consent for chats
+### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
 
 ### Request
 

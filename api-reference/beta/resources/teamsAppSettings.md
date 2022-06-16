@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant-wide settings for all [Teams apps](teamsapp.md). Organizations use Teams apps to connect with their customers, provide services, and share information. These settings include the ability to control tenant-wide functionality related to these apps such as allowing the apps to acquire [Resource-specific permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent fir chats/meetings has been enabled for the tenant. If true, allowed Teams apps that require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
+|isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
 
 ## Relationships
 None.
