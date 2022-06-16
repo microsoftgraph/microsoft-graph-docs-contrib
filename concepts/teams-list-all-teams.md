@@ -18,18 +18,18 @@ To get a list of all [groups](/graph/api/resources/group?view=graph-rest-1.0&pre
 get a [list of all groups](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true) and then in code find the ones that have
 a **resourceProvisioningOptions** property that contains "Team".
 
-Use the API with $filter to return only the groups that have teams.
+Use the API with `$filter` to return only the groups that have teams.
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> **Note**: Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 The following is an example of the response. 
 
->**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
-
+>**Note:** The response object shown might be shortened for readability. 
+>
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -74,13 +74,13 @@ Content-type: application/json
 ```
 
 #### Example 2: Get list of groups by selecting required properties only
-Since groups are large objects, use $select to only get the properties of the group you care about.
+Because groups are large objects, use `$select` to only get the properties of the group you care about.
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> **Note**: Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 The following is an example of the response. 
 
