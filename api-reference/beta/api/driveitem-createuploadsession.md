@@ -421,6 +421,10 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
 
+## See also
+
+[Large file upload](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+
 <!--
 {
   "type": "#page.annotation",
