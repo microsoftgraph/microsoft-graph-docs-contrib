@@ -10,8 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Dana Swope"
+	emailAddress.SetName(&name)
 }
 comment := "Dana, hope you can make this meeting."
 requestBody.SetComment(&comment)

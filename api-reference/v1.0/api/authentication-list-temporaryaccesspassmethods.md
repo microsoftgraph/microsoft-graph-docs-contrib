@@ -1,18 +1,16 @@
 ---
-title: "List temporaryAccessPassAuthenticationMethods"
-description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
-author: "inbarckMS"
+title: "List temporaryAccessPassMethods"
+description: "Get a list of the temporaryAccessPassAuthenticationMethod objects for a user."
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# List temporaryAccessPassAuthenticationMethods
+# List temporaryAccessPassMethods
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)  objects and their properties. This call will only return a single object as only one Temporary Access Pass method can be set on users.
+Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass method.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -71,14 +69,15 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_temporaryaccesspassauthenticationmethod"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethods
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
@@ -86,10 +85,6 @@ GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethod
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-temporaryaccesspassauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-temporaryaccesspassauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -100,16 +95,11 @@ GET https://graph.microsoft.com/beta/me/authentication/temporaryAccessPassMethod
 [!INCLUDE [sample-code](../includes/snippets/go/list-temporaryaccesspassauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-temporaryaccesspassauthenticationmethod-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,18 +111,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",
-      "id": "String",
-      "temporaryAccessPass": "String",
-      "createdDateTime": "String (timestamp)",
-      "startDateTime": "String (timestamp)",
-      "lifetimeInMinutes": "Integer",
-      "isUsableOnce": "Boolean",
-      "isUsable": "Boolean",
-      "methodUsabilityReason": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
+     "value": [
+        {
+            "id": "bdaede67-61e0-4349-9347-d2d6afd84009",
+            "temporaryAccessPass": null,
+            "createdDateTime": "2022-06-06T16:43:04.6438213Z",
+            "startDateTime": "2022-06-06T16:48:03.027Z",
+            "lifetimeInMinutes": 60,
+            "isUsableOnce": false,
+            "isUsable": false,
+            "methodUsabilityReason": "NotYetValid"
+        }
+    ]
 }
 ```

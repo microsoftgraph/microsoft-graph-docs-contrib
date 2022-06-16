@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewGovernanceRoleSetting()
 requestBody.SetAdminEligibleSettings( []GovernanceRuleSetting {
 	msgraphsdk.NewGovernanceRuleSetting(),
-	SetAdditionalData(map[string]interface{}{
-		"ruleIdentifier": "ExpirationRule",
-		"setting": "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}",
-	}
+ruleIdentifier := "ExpirationRule"
+	SetRuleIdentifier(&ruleIdentifier)
+setting := "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
+	SetSetting(&setting)
 }
 privilegedAccessId := "privilegedAccess-id"
 governanceRoleSettingId := "governanceRoleSetting-id"

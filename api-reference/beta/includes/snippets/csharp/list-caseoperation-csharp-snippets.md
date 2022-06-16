@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var operations = await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Operations
+var operations = await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Operations
 	.Request()
 	.GetAsync();
 

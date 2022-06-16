@@ -5142,6 +5142,14 @@
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the **createChannel** member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+        {
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
           "ApiChange": "Resource",
           "ChangedApiName": "associatedTeamInfo",
           "ChangeType": "Addition",
@@ -5224,7 +5232,32 @@
       "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-06-07T09:24:30.6932815Z",
+      "CreatedDateTime": "2022-06-07T09:24:30.6932815Z", "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messagePinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messagePinnedEventMessageDetail"
+        },
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageUnpinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messageUnpinnedEventMessageDetail"
+        }
+      ],
+      "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     }

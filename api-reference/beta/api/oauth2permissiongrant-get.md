@@ -17,6 +17,10 @@ Retrieve the properties of a single delegated permission grant represented by an
 
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
+> [!NOTE]
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
