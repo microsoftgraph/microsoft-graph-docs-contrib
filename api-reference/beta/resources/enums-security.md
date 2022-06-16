@@ -1,6 +1,6 @@
 ---
 title: "Security enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph security namespace enumeration values."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
