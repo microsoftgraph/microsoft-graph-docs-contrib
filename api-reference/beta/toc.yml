@@ -1686,7 +1686,7 @@ items:
           - name: Create or get
             href: api/onlinemeeting-createorget.md
           - name: Change notifications for online meetings
-            href: api/changenotifications-for-onlinemeetings.md
+            href: api/changenotifications-for-onlinemeeting.md
         - name: Attendance report
           href: resources/meetingAttendanceReport.md
           items:
