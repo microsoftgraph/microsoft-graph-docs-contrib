@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Add a new [taskFileAttachment](../resources/taskfileattachment.md) object to a [todoTask](../resources/todotask.md).
 
-This operation limits the size of the attachment you can add to under 3 MB. For larger size attachments, please upload the attachments using [createUploadSession](../api/taskfileattachment-createuploadsession.md).
+This operation limits the size of the attachment you can add to under 3 MB. If the size of the attachments is more than 3 MB, [create an upload session](../api/taskfileattachment-createuploadsession.md) to upload the attachments.
 
 
 ## Permissions
@@ -46,15 +46,13 @@ POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments
 ## Request body
 In the request body, supply a JSON representation of the [taskFileAttachment](../resources/taskfileattachment.md) object.
 
-When creating a file attachment, include the following in the request body:
-"@odata.type": "#microsoft.graph.taskFileAttachment"
-The required properties name and contentBytes.
+When you create a file attachment, include "@odata.type": "#microsoft.graph.taskFileAttachment"` and the required properties.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|contentBytes|Binary|The base64-encoded contents of the file.|
+|contentBytes|Binary|The base64-encoded contents of the file. Required.|
 |contentType|String|The content type of the attachment. |
-|name|String|The name of the text displayed under the icon that represents the embedded attachment. This does not need to be the actual file name. |
+|name|String|The name of the text displayed under the icon that represents the embedded attachment. This does not need to be the actual file name. Required. |
 |size|Int32|The size in bytes of the attachment. |
 
 ## Response

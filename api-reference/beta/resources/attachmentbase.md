@@ -1,6 +1,6 @@
 ---
 title: "attachmentBase resource type"
-description: "You can add related content to a todoTask in the form of an attachment"
+description: "Represents an abstract base type for an attachment"
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,11 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can add related content to a [todoTask](../resources/todotask.md) in the form of an attachment.
-This is an abstract type.
+Represents an abstract base type for an attachment. You can add related content to a [todoTask](../resources/todotask.md) in the form of an attachment.
 
-**attachmentBase** is the base resource for the following derived types of attachments:
-* A file ([taskFileAttachment](../resources/fileattachment.md) resource) attached to a task.
+Base type of [taskFileAttachment](../resources/taskfileattachment.md).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -27,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |contentType|String|The MIME type.|
-|id|String|Read-only. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the attachment. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |name|String|The display name of the attachment. This does not need to be the actual file name.|
 |size|Int32|The length of the attachment in bytes.|

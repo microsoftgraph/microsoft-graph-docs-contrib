@@ -22,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |content|Stream|The content streams that are uploaded.|
 |expirationDateTime|DateTimeOffset| The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.|
-|id|String|Read only. Inherited from [entity](../resources/entity.md).|
-|nextExpectedRanges|String collection|When you upload files to a **todoTask**, this property indicates a single value `{start}` which is the location in the file where the next upload should begin. |
+|id|String|Unique identifier for the attachment session. Read only. Inherited from [entity](../resources/entity.md).|
+|nextExpectedRanges|String collection|Indicates a single value `{start}` that represents the location in the file where the next upload should begin.|
 
 ## Relationships
 None.

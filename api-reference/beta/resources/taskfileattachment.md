@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a file, such as a text file or Word document, attached to a [todoTask](../resources/todotask.md).
-When creating a file attachment on task, include the following in the request body:
-
-* `"@odata.type": "#microsoft.graph.taskFileAttachment"`
-* The required properties **name** and **contentBytes**.
+When you create a file attachment on a task, include `"@odata.type": "#microsoft.graph.taskFileAttachment"` and the properties **name** and **contentBytes**.
 
 Inherits from [attachmentBase](../resources/attachmentbase.md).
 
