@@ -19,7 +19,7 @@ For event-based retention, this attribute provides the status of event propogati
 |Property|Type|Description|
 |:---|:---|:---|
 |error|[microsoft.graph.publicError](../resources/publicerror.md)|The error if the status is not successful.|
-|status|eventStatusType|The status of the distribution. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
+|status|microsoft.graph.security.eventStatusType|The status of the distribution. The possible values are: `pending`, `error`, `success`, `notAvaliable`.|
 
 ## Relationships
 None.

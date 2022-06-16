@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph Records Management API
+# Use the Microsoft Graph Records Management APIs
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -15,7 +15,21 @@ The Microsoft Purview Records Management APIs help organizations manage retentio
 
 The Records Mangement solution is a part of the Microsoft Purview compliance center.
 
-The API includes the following key entities.
+With the release of our first set of APIs, some of the basic scenarios include:
+
+a. Managing retention labels
+Record Management admins and developers need to maintain the record management systems with labels that created, updated and deleted periodically.
+
+Developers and compliance admin can use the RM Graph API to perform CRUD operations on label entity and maintain their systems.
+
+b. Triggering an event for an existing label
+When an employee leaves a company, the information is updated in the HR management system. From the date of leaving, confidential documents need to be retained for a period for 7 years. These documents already have label “Employee_departure” applied to them.
+
+The developer and compliance administrator uses RM Graph API to read label “Employee_departure” and lookup the associated event type- “Event-employee_departure”.
+
+The compliance admin uses RM Graph API to create an event for the associated event type. The retention period for the confidential documents starts post the creation of this event.
+
+The API includes the following key entities:
 
 | Name | Type       | Use case |
 |:-|:-|:-|
