@@ -20,13 +20,13 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get teamsAppSettings](../api/teamsappsettings-get.md)|[teamsAppSettings](../resources/teamsappsettings.md)|Read the properties and relationships of a [teamsAppSettings](../resources/teamsappsettings.md) object.|
-|[Update teamsAppSettings](../api/teamsappsettings-update.md)|[teamsAppSettings](../resources/teamsappsettings.md)|Update the properties of a [teamsAppSettings](../resources/teamsappsettings.md) object.|
+|[Get teamsAppSettings](../api/teamsappsettings-get.md)|[teamsAppSettings](../resources/teamsappsettings.md)|Get the tenant-wide settings for all Teams apps in the tenant.|
+|[Update teamsAppSettings](../api/teamsappsettings-update.md)|[teamsAppSettings](../resources/teamsappsettings.md)|Update the tenant-wide settings for all Teams apps in the tenant.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isChatResourceSpecificConsentEnabled|Boolean|Indicates whether Chat Resource Specific Consent has been enabled for the tenant.|
+|isChatResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent fir chats/meetings has been enabled for the tenant. If true, allowed Teams apps that require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.|
 
 ## Relationships
 None.
