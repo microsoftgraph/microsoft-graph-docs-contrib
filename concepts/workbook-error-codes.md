@@ -33,28 +33,28 @@ The following table lists the current error codes and messages. The service migh
 ## Detailed error code
 The following are important error codes that your app might encounter within the first-level of nested **innerError** objects. The service might add new error codes at any time.
 
-- accessConflict
-- badRequestUncategorized
-- conflictUncategorized
-- forbiddenUncategorized
-- gatewayTimeoutUncategorized
-- internalServerErrorUncategorized
-- invalidSessionAccessConflict
-- invalidSessionAuthentication
-- invalidSessionNotFound
-- invalidSessionReCreatable
-- invalidSessionRestricted
-- invalidSessionUnexpected
-- invalidSessionUnsupportedWorkbook
-- methodNotAllowedUncategorized
-- notFoundUncategorized
-- notImplementedUncategorized
-- payloadTooLargeUncategorized
-- serviceUnavailableUncategorized
-- tooManyRequestsUncategorized
-- transientFailure
-- unauthorizedUncategorized
-- unsupportedWorkbook
+- `accessConflict`
+- `badRequestUncategorized`
+- `conflictUncategorized`
+- `forbiddenUncategorized`
+- `gatewayTimeoutUncategorized`
+- `internalServerErrorUncategorized`
+- `invalidSessionAccessConflict`
+- `invalidSessionAuthentication`
+- `invalidSessionNotFound`
+- `invalidSessionReCreatable`
+- `invalidSessionRestricted`
+- `invalidSessionUnexpected`
+- `invalidSessionUnsupportedWorkbook`
+- `methodNotAllowedUncategorized`
+- `notFoundUncategorized`
+- `notImplementedUncategorized`
+- `payloadTooLargeUncategorized`
+- `serviceUnavailableUncategorized`
+- `tooManyRequestsUncategorized`
+- `transientFailure`
+- `unauthorizedUncategorized`
+- `unsupportedWorkbook`
 
 For additional examples of other possible error codes within the first-level of nested **innerError** objects, see [Examples of other second-level error codes](workbook-error-handling.md#examples-of-other-second-level-error-codes).
 
