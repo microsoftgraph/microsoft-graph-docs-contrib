@@ -50,4 +50,5 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
+## See also
+- [userTeamwork resource](userteamwork.md)
