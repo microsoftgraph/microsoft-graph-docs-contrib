@@ -16,7 +16,7 @@ Before  you get started, it will be helpful to familiarize yourself with the fol
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
-- The [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) and its capabilities.
+- The [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0&preserve-view=true) and its capabilities.
 
 ## Register a bot
 
