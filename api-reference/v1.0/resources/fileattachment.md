@@ -29,7 +29,7 @@ Derived from [attachment](attachment.md).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties, relationships, or raw contents of a **fileAttachment** object.|
-|[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
+|[Delete](../api/attachment-delete.md) | None |Delete a **fileAttachment** object. |
 
 ## Properties
 | Property	   | Type	|Description|
