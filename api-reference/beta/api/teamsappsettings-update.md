@@ -1,9 +1,9 @@
 ---
 title: "Update teamsAppSettings"
 description: "Update the properties of a teamsAppSettings object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "subray2014"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -82,3 +82,6 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
+## See also
+
+- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

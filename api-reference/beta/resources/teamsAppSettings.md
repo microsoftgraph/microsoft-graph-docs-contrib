@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant-wide settings for all [TeamsApps](teamsapp.md) in the tenant.
+Represents tenant-wide settings for all [Teams apps](teamsapp.md). Organizations use Teams apps to connect with their customers, provide services, and share information. These settings include the ability to control tenant-wide functionality related to these apps such as allowing the apps to acquire [Resource-specific permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -49,3 +49,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
+
+- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

@@ -86,3 +86,6 @@ Content-Type: application/json
 }
 ```
 
+## See also
+
+- [Resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
