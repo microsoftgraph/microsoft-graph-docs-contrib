@@ -7,7 +7,9 @@ ms.prod: "compliance"
 doc_type: enumTypes
 ---
 
-# Security enum values for Microsoft Graph- Microsoft Purview Records management 
+# Security enum values
+
+Namespace: microsoft.graph.security
 
 ### actionAfterRetentionPeriod values 
 
