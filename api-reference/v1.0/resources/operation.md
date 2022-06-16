@@ -14,11 +14,15 @@ Namespace: microsoft.graph
 The status of a long-running operation.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|createdDateTime| DateTimeOffset |The start time of the operation.|
-|lastActionDateTime| DateTimeOffset |The time of the last action of the operation.|
-|status|operationStatus|The current status of the operation: `notStarted`, `running`, `completed`, `failed` |
+|Property|Type|Description|
+|:---|:---|:---|
+|createdDateTime|DateTimeOffset|The date and time of when the operation was created.gi|
+|id|String||
+|lastActionDateTime|DateTimeOffset|The last date and time the operation status was updated.|
+|resourceLocation|String| URI of the resource that is the operation is performed on. |
+|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|statusDetail|String|Details on the status of the operation.|
+
 
 ## JSON representation
 
