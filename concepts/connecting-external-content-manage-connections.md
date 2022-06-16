@@ -66,14 +66,34 @@ The first step for an application to add items to the search index is to create 
 Before an application can add items to the search index, it must create and configure a connection:
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
-2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+   - For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
-> [!NOTE]
-> For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
+## Enable content experiences
+Enable content experiences to choose which experiences (search, compliance, etc.) your connection will participate in.
+
+We currently support the following content experiences. When calling the Graph API, reference this [flag enum description](../api-reference/beta/resources/enums-externalconnectors.md)
+
+| Content Experience Type Enum | Description |
+|-|-|
+| search | Enabling search allows your content to show up in Microsoft search results. These results are consistently formatted across different search canvases, like SharePoint and Microsoft Bing. |
+| compliance | Enabling compliance allows your content to show up in Electronic Discovery (eDiscovery) search. |
+
+If you already know which content experiences you want your connection to partipate in, set the `enabledContentExperiences` flag enum at the time of connection creation.
+
+Otherwise, you can make changes to the enabled content experiences like below.
+```http
+PATCH https://graph.microsoft.com/beta/external/connections/contosohelpdesk
+Content-Type: application/json
+
+{
+	"enabledContentExperiences": "search, compliance"
+}
+```
 
 ## Update a connection
 
-To change the display name or description of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
+To change the display name, description, or enabled content experiences of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
 
 ## Delete a connection
 
