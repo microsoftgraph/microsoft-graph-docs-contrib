@@ -1,6 +1,6 @@
 ---
 title: "dispositionReviewStage resource type"
-description: "Represents a multi-level review process where the reviewers approve at each stage of the disposition to delete or further retain the content item."
+description: "Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item.."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a multi-level review process where the reviewers approve at each stage of the disposition to delete or further retain the content item.
-To read more about disposition of data, see [Disposition of content](/microsoft-365/compliance/disposition).
+Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item.
+For details, see [Disposition of content](/microsoft-365/compliance/disposition).
 
 ## Methods
 |Method|Return type|Description|
@@ -26,10 +26,10 @@ To read more about disposition of data, see [Disposition of content](/microsoft-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique ID for each stage|
-|name|String|Name representing each stage within a collection|
-|reviewersEmailAddresses|String collection|A collection of reviewers at each stage|
-|stageNumber|Int32|Execution sequence number for each stage|
+|id|String|Unique ID for each stage. |
+|name|String|Name representing each stage within a collection. |
+|reviewersEmailAddresses|String collection|A collection of reviewers at each stage. |
+|stageNumber|Int32|The sequence number for each stage of the disposition review. |
 
 
 ## Relationships

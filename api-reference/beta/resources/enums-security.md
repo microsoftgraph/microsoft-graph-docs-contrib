@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: enumTypes
 ---
 
-# Enum values for Microsoft Graph M365 Records management 
+# Security enum values for Microsoft Graph- Microsoft Purview Records management 
 
 ### actionAfterRetentionPeriod values 
 
@@ -92,3 +92,10 @@ doc_type: enumTypes
 |dateOfEvent|
 |unknownFutureValue|
 
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.security"
+}
+-->

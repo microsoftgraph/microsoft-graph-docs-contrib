@@ -1885,7 +1885,7 @@ items:
             href: api/security-retentionevent-get.md
           - name: Delete
             href: api/security-retentionevent-delete.md
-        - name: Event Types
+        - name: Event types
           href: resources/security-retentioneventtype.md
           items:
           - name: List

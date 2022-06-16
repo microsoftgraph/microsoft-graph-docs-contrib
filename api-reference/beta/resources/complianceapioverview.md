@@ -31,11 +31,13 @@ Microsoft Priva Subject Rights Requests provides powerful capabilities to help y
 
 Explore the [subject rights request APIs](subjectrightsrequest-subjectrightsrequestapioverview.md).
 
-## Records Management (Preview)
+## Records management (preview)
 
-Records Management solution in M365 provides the capability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations, compliance regulations, and increases efficiency with regular disposition of items that are no longer required to be retained. Learn more about [Microsoft 365 records management](/microsoft-365/compliance/records-management)
+Records management in Microsoft Purview provides the ability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
+For more details, see [Microsoft Purview records management](/microsoft-365/compliance/records-management)
 
-Explore the [Microsoft 365 Records Management APIs](security-recordsManagement-overview.md).
+The records management API is defined in the OData subnamespace, microsoft.graph.security.
+Explore the [Microsoft Purview Records Management APIs](security-recordsManagement-overview.md).
 
 <!--
 ## Labels

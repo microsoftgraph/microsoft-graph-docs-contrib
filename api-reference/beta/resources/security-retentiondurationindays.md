@@ -21,7 +21,7 @@ Inherits from [retentionDuration](../resources/security-retentionduration.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|days|Int32|Specifies the time period in days for a retention label.|
+|days|Int32|Specifies the time period in days for which an item with the applied retention label will be retained for.|
 
 ## Relationships
 None.

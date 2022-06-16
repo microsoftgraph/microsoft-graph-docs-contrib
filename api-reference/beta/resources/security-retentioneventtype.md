@@ -13,8 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When an event is created, it is associated to a specific event type. The creation of this event then triggers all retention labels which have the same event type chosen in the label wizard. Only content with retention labels applied to it of that event type will have its retention period triggered. 
-For more information, read [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
+When a retention event is created, it is associated with a specific event type which in turn is associated with a retention label. When a retention event is created, only content with that retention label applied will be retained for the specified retention period.
+For details, see [Start retention when an event occurs](/microsoft-365/compliance/event-driven-retention).
 
 
 ## Methods
@@ -24,18 +24,18 @@ For more information, read [Start retention when an event occurs](/microsoft-365
 |[Create retentionEventType](../api/security-retentioneventtype-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Create a new [retentionEventType](../resources/security-retentioneventtype.md) object.|
 |[Get retentionEventType](../api/security-retentioneventtype-get.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Read the properties and relationships of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
 |[Update retentionEventType](../api/security-retentioneventtype-update.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.|
-|[Delete retentionEventType](../api/security-retentioneventtype-delete.md)|None|Deletes a [retentionEventType](../resources/security-retentioneventtype.md) object.|
+|[Delete retentionEventType](../api/security-retentioneventtype-delete.md)|None|Delete a [retentionEventType](../resources/security-retentioneventtype.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity.|
-|createdDateTime|DateTimeOffset|The date time when the entity was created.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the retentionEventType.|
+|createdDateTime|DateTimeOffset|The date time when the retentionEventType was created.|
 |description|String|Optional information about the event type.|
 |displayName|String|Name of the event type.|
-|id|String|Represents the user who created the [entity](/graph/api/resources/entity).|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
+|id|String|Represents the unique ID of the user who created the retentionEventType. [entity](/graph/api/resources/entity).|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEventType.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionEventType was modified.|
 
 ## Relationships
 None.

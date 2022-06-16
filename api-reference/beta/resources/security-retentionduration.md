@@ -1,6 +1,6 @@
 ---
 title: "retentionDuration resource type"
-description: "Represents how long content will be retained before it can be deleted"
+description: "Represents how long content will be retained before it can be deleted. "
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,8 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how long a item will be retained before it can be deleted. This is an abstract type. 
-[retentionDurationForever](../resources/security-retentiondurationforever.md) and [retnetionDurationInDays](../resources/security-retentiondurationindays.md) are the two resourceTypes that inherit from retentionDuration.
+Represents how long an item will be retained before it can be deleted. This is an abstract type. 
+The **retentionDuration** resource is the base type for the
+[retentionDurationForever](../resources/security-retentiondurationforever.md) and [retnetionDurationInDays](../resources/security-retentiondurationindays.md) resourceTypes.
 
 ## Properties
 None.

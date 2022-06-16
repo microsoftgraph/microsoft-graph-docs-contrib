@@ -1,6 +1,6 @@
 ---
 title: "retentionDurationForever resource type"
-description: "Represents that content will be retained permanently and not be allowed to be deleted."
+description: "Represents that content will be retained permanently and will not be deleted."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,13 +13,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents that content will be retained permanentlyand not be allowed to be deleted.
+Indicates that content will be retained permanently and will not be deleted.
 
 
 Inherits from [retentionDuration](../resources/security-retentionduration.md).
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships

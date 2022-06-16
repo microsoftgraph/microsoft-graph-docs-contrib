@@ -1,6 +1,6 @@
 ---
 title: "eventPropagationResult resource type"
-description: "Represents the success status of a created event and additional information about the targetted locations."
+description: "Represents the success status of a created event and additional information about the scoped locations."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the success status of a created event and additional information about the targetted locations.
+Represents the status of a retention event creation request and additional information about the scoped locations.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|eventPropagationStatus|Is the event completed. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
-|statusInformation|String|Additional infroamtion about the status.|
-|serviceName|String|Workload being targetted by the event.|
-|location|String|Specific location in the workload.|
+|status|eventPropagationStatus|Indicates the status of the event creation request. The possible values are: `none`, `inProcessing`, `failed`, `success`.|
+|statusInformation|String|Additional information about the status of the event creation request.|
+|serviceName|String|The name of the workload associated with the event.|
+|location|String|The name of the specific location in the workload associated with the event.|
 
 
 ## Relationships

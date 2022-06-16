@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|recordsManagement.Read.All, recordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not Supported|
-|Application|recordsManagement.Read.All, recordsManagement.ReadWrite.All|
+|Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [retentionEventType](../resources/security-retentioneventtype.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) object in the response body.
 
 ## Examples
 

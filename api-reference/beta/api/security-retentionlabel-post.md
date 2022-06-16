@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|recordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|recordsManagement.ReadWrite.All|
+|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -42,32 +42,26 @@ POST /security/labels/retentionLabels
 ## Request body
 In the request body, supply a JSON representation of the [retentionLabel](../resources/security-retentionlabel.md) object.
 
-You can specify the following properties when creating a retentionLabel.
+Specify the following properties when you create a **retentionLabel**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to be applied on a document with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
-|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the entity.|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the entity is created.|
-|descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
-|descriptionForUsers|String|This is an optional property that provides the label information for the user.|
-|displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|A multi stage collection of reviewers who will be notified for approval on whether a document has to be deleted or retained further.|
-|id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
-|isInUse|Boolean|Specifies if the label is currently being used.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
-|retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content.|
-|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
-|defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
-|labelToBeApplied|String|Specifies the replacement label to be automatically applied once the retention period of the current label is completed. |
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period.. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`. |
+|behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`. |
+|descriptionForAdmins|String|Provides label information for the admin. Optional. |
+|descriptionForUsers|String|Provides the label information for the user. Optional. |
+|displayName|String|Unique string that defines a label name. |
+|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained. |
+|retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content. |
+|retentionTrigger|retentionTrigger|Specifies whether the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`. |
+|defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`. |
+|labelToBeApplied|String|Specifies the replacement label to be applied automatically after the retention period of the current label ends. |
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [retentionLabel](../resources/security-retentionlabel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) object in the response body.
 
 ## Examples
 
@@ -104,7 +98,7 @@ Content-length: 555
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

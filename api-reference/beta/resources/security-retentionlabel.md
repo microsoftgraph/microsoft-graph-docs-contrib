@@ -29,29 +29,29 @@ Represents how customers can manage their data, whether and for how long to reta
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to be applied on a document with this label after the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
+|actionAfterRetentionPeriod|actionAfterRetentionPeriod| Specifies the action to take on a document with this label applied during the retention period. The possible values are: `none`, `delete`, `startDispositionReview`, `unknownFutureValue`.|
 |behaviorDuringRetentionPeriod|behaviorDuringRetentionPeriod|Specifies how the behavior of a document with this label should be during the retention period. The possible values are: `doNotRetain`, `retain`, `retainAsRecord`, `retainAsRegulatoryRecord`, `unknownFutureValue`.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the entity.|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the entity is created.|
-|descriptionForAdmins|String|This is an optional property that provides the label information for the admin.|
-|descriptionForUsers|String|This is an optional property that provides the label information for the user.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the retentionLabel.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the retentionLabel is created.|
+|descriptionForAdmins|String|Provides label information for the admin. Optional.|
+|descriptionForUsers|String|Provides the label information for the user. Optional.|
 |displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Represents a multi stage collection of reviewers who will be notified for approval on whether a content item has to be deleted or retained further after its retention period is completed.|
-|id|String|Id of the label Inherited from [entity](/graph/api/resources/entity).|
-|isInUse|Boolean|Specifies if the label is currently being used.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified.|
+|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained.|
+|id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
+|isInUse|Boolean|Specifies whether the label is currently being used.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionLabel was modified.|
 |retentionDuration|[microsoft.graph.security.retentionDuration](../resources/security-retentionduration.md)|Specifies the number of days to retain the content.|
-|retentionTrigger|retentionTrigger|Specifies if the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
+|retentionTrigger|retentionTrigger|Specifies whether the retention duration is calculated from the content creation date, labeled date, or last modification date. The possible values are: `dateLabeled`, `dateCreated`, `dateModified`, `dateOfEvent`, `unknownFutureValue`.|
 |defaultRecordBehavior|defaultRecordBehavior|Specifies the locked or unlocked state of a record label when it is created.The possible values are: `startLocked`, `startUnlocked`, `unknownFutureValue`.|
-|labelToBeApplied|String|Specifies the replacement label to be automatically applied once the retention period of the current label is completed. |
+|labelToBeApplied|String|Specifies the replacement label to be applied automatically after the retention period of the current label ends. |
 
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.|
-|eventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Optional value that specifies the event that will start the retention period for labels that use this event type.|
+|eventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event..|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -46,9 +46,9 @@ The Microsoft Graph APIs for subject rights request provide functionality for or
 ## Records Management (Preview)
 
 ### Overview
-Organizations of all types require a records-management solution to manage critical records across their corporate data. [Microsoft 365 records management](/microsoft-365/compliance/records-management) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
+Organizations of all types require a records-management solution to manage critical records across their corporate data. [Microsoft Purview records management](/microsoft-365/compliance/records-management) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
 
-The records management solution is used by organization in large volumes to utilize its various capabilities in pretecting, labelling, retatining or deleting their data. The Microsoft Graph APIs for records management will allow organizations to manage labels and label-associated functionalities more efficiently, automate the repetetive tasks and equip customers with flexibility in options.
+The records management solution is used by organizations in large volumes to protect, label, retain, or delete their data. The Microsoft Graph APIs for records management allow organizations to manage labels and label-associated functionalities more efficiently, automate the repetitive tasks, and equip customers with flexible options.
 
 
 ## API reference

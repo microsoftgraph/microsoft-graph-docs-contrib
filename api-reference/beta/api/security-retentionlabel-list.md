@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|recordsManagement.Read.All, recordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not Supported|
-|Application|recordsManagement.Read.All, recordsManagement.ReadWrite.All|
+|Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not Supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /security/labels/retentionLabels
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response.  For example, to retrieve the navigation property for event type, use $expand=eventtype. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the expand OData query parameters to help customize the response.  For example, to retrieve the **retentionEventType** property, you can use the `expand` parameter:`$expand=retentionEventType`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [retentionLabel](../resources/security-retentionlabel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) objects in the response body.
 
 ## Examples
 

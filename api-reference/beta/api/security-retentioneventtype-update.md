@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|recordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|recordsManagement.ReadWrite.All|
+|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -46,21 +46,19 @@ PATCH /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the event type. Optional.|
-|description|String|Optional information about the event type. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the entity. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the entity was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The latest user who modified the entity. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the entity was modified. Optional.|
+|description|String|Information about the event type. Optional.|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the retentionEventType. Optional.|
+|createdDateTime|DateTimeOffset|The date time when the retentionEventType was created. Optional.|
+|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEventType.|
+|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionEventType was modified. Optional.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [retentionEventType](../resources/security-retentioneventtype.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) object in the response body.
 
 ## Examples
 
 ### Request
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
