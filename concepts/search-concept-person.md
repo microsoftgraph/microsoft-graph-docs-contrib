@@ -14,7 +14,7 @@ Microsoft Graph applications can use the Microsoft Search API to retrieve the pe
 The people api returns the following set of properties:
 
 
-| **Response filed name** | **Data type** |
+| **Response field name** | **Data type** |
 |:--------------------------|:----------------------------------------|
 |   hitId | String |
 |   rank | Integer |
