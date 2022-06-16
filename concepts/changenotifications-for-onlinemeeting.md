@@ -40,6 +40,11 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## JoinWebUrl
+The meeting join url can be found in the [onlineMeeting](/graph/api/resources/onlinemeeting) resource's JoinWebUrl property or through the teams client for an arranged meeting.
+
+
 ## Notifications with encrypted resource data
 ```json
 {
@@ -51,9 +56,9 @@ Content-Type: application/json
     "resource": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
     "subscriptionExpirationDateTime": "2022-02-28T02:00:00-08:00",
     "resourceData": {
-      "@odata.id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-      "@odata.type": "#Microsoft.Graph.onlineMeeting",
-      "id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'"
+      "@odata.id": "{odata.id}",
+      "@odata.type": "#microsoft.graph.onlineMeeting",
+      "id": "{id}"
     },
     "organizationId": "{Organization/Tenant id}",
     "encryptedContent": {
@@ -74,15 +79,15 @@ The decrypted notification payload looks like the following.
 ```json
 {
   "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "@odata.id":"{odata.id}",
+  "id":"{id}",
   "eventType":"Microsoft.Communication.CallStarted",
   "eventDateTime":"2022-02-28T18:41:33.0553203Z",
   "state":"active"
 }
 ```
 
-You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscrpition request body.
+You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscrpition request body. Doing so will add the properties that would have been encrypted to **resourceData**.
 ## Event notifications types
 The following are the supported meeting events:
 - CallStarted - Occurs when a meeting call is started.
@@ -94,4 +99,4 @@ The following are the supported meeting events:
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)
-- [Online meeting resource](/graph/api/resources/onlinemeeting.md)
+- [Online meeting resource](/graph/api/resources/onlinemeeting)
