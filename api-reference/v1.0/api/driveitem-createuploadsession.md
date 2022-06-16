@@ -19,9 +19,6 @@ To upload a file using an upload session, there are two steps:
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
-## Examples and Additional documentation to upload large files
-In order to simplify this process, the Microsoft Graph SDKs implement a [large file upload](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java) task that manages the uploading of the slices. Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -376,7 +373,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
+>**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
 
 ### Response
 
@@ -417,6 +414,10 @@ how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+
+## See also
+
+[Large file upload](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
 
 <!-- {
   "type": "#page.annotation",
