@@ -1,5 +1,5 @@
 ---
-title: "Add includedGroups" 
+title: "Mobile App - Add includedGroups" 
 description: Describes Add includedGroups, which adds groups to be included in a mobile app management policy, and details the permissions to call this API.
 author: "ravennMSFT"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Add includedGroups
+# Mobile App - Add includedGroups
 
 Namespace: microsoft.graph
 

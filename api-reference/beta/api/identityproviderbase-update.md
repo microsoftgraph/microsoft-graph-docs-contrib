@@ -98,11 +98,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-<!-- {
+{
   "blockType": "request",
   "name": "update_socialidentityprovider"
 }
--->
+
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
@@ -156,8 +156,8 @@ HTTP/1.1 204 No Content
 The following is an example of the request.
 
 
-## [HTTP]<!--(#tab/http)-->
-<!-- {
+# [HTTP](#tab/http)
+{
   "blockType": "request",
   "name": "update_openidconnectprovider"
 }
@@ -219,12 +219,12 @@ HTTP/1.1 204 No Content
 The following is an example of the request.
 
 
-## [HTTP]<!--(#tab/http)-->
-<!-- {
+# [HTTP](#tab/http)
+{
   "blockType": "request",
   "name": "update_appleidentityprovider"
 }
--->
+
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC

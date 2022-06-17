@@ -65,12 +65,12 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 
 
-## [HTTP]<!--(#tab/http)-->
-<!-- {
+# [HTTP](#tab/http)
+{
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup"
 }
--->
+
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postFederationSignup/$ref
@@ -121,12 +121,12 @@ HTTP/1.1 204 No Content
 The following is an example of the request.
 
 
-## [HTTP]<!--(#tab/http)-->
-<!-- {
+# [HTTP](#tab/http)
+{
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection"
 }
--->
+
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
@@ -176,12 +176,12 @@ The following is an example of the request.
 
 
 
-## [HTTP]<!--(#tab/http)-->
-<!-- {
+# [HTTP](#tab/http)
+{
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
 }
--->
+
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
