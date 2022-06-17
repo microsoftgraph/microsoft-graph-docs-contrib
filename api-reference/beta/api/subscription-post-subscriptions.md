@@ -86,6 +86,7 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 ### onlineMeetings, presence
 
 Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+For more details on online meeting subscription see [Change notification for meeting call updates](./changenotifications-for-onlinemeeting.md).
 
 ## HTTP request
 

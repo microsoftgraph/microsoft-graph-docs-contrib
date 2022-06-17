@@ -604,3 +604,4 @@ decryptedPayload += decipher.final('utf8');
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
+- [Change notifications for Cloud ccommunication resources in Microsoft Graph](cloud-communications-change-notifications-overview.md)
