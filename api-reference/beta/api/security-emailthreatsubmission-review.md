@@ -1,5 +1,5 @@
 ---
-title: "ThreatSubmission: review"
+title: "emailThreatSubmission: review"
 description: "review threat submission"
 author: "caigen"
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The review action is used for reviewing threat submission by administrator. Currently, only email threat submitted from end user is supported to be reviewed by administrator.
+Review a threat submission. Only email threats submitted from end users support reviews by an administrator.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

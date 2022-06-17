@@ -1,6 +1,6 @@
 ---
 title: "emailUrlThreatSubmission resource type"
-description: "Represents email url threat submission which is submitted by email url"
+description: "Represents email url threat submission sent using the email url"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents email url threat submission object which is created when submission is made using email URL.
-
+Represents a threat submission object created when the submission is made using the email URL.
 
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
 
 ## Properties
 | Property   | Type   | Description                            |
 |:-----------|:-------|:---------------------------------------|
-| messageUrl | String | It specifies the url of the graph message which is to be submitted. |
+| messageUrl | String | Specifies the url of the message to be submitted. |
 
 ## Relationships
 None.
