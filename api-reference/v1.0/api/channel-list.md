@@ -208,7 +208,6 @@ Content-type: application/json
 The following example shows a request to list all shared channels.
 
 
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "list_shared_channels"

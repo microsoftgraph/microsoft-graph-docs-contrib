@@ -126,7 +126,6 @@ Content-type: application/json
 #### Request
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_add_member_2"

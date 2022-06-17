@@ -93,7 +93,6 @@ The following is an example of a request that uses the **tenantId** property to 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess_externaluser"
@@ -125,7 +124,6 @@ The following is an example of a request that uses the **userPrincipalName** pro
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess_usingupn"
