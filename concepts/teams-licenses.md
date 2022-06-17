@@ -66,15 +66,13 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
 
 In evaluation mode, seeded capacity is shared across all APIs. 
-When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, for example:
+When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, and subscriptions with licensing and payment requirements will not send change notifications.
 
 | Error type | Status code | Error message |
 |:-----------|:-----------|:-----------------|
 |E5 license requirement not met| 402 (Payment Required) |“User '{userId}' needs a valid license to access this API...” , “Tenant '{tenantId}' needs a valid license to access this API...”|
 |Model B is not supported for Patch API| 402 (Payment Required) |“Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...”|
 |Evaluation capacity exceeded|Status code: 402 (Payment Required)|“Evaluation mode capacity has been exceeded. Use a valid billing model...”|
-
-Subscriptions with licensing and payment requirements will not send change notifications.
 
 > **Note**: A successful API call does not mean that the proper licensing is in place. 
 > Not all license violations can be detected, and grace periods might be granted in some cases.
