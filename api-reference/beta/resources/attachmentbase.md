@@ -1,6 +1,6 @@
 ---
 title: "attachmentBase resource type"
-description: "Represents an abstract base type for an attachment"
+description: "Represents an abstract base type for an attachment."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 Represents an abstract base type for an attachment. You can add related content to a [todoTask](../resources/todotask.md) in the form of an attachment.
 
 Base type of [taskFileAttachment](../resources/taskfileattachment.md).
-
 
 Inherits from [entity](../resources/entity.md).
 

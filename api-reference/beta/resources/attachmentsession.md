@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |content|Stream|The content streams that are uploaded.|
 |expirationDateTime|DateTimeOffset| The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.|
-|id|String|Unique identifier for the attachment session. Read only. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the attachment session. Read-only. Inherited from [entity](../resources/entity.md).|
 |nextExpectedRanges|String collection|Indicates a single value `{start}` that represents the location in the file where the next upload should begin.|
 
 ## Relationships
