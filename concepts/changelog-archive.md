@@ -215,21 +215,21 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 |Addition|beta|Added the **remoteTenantId** and **remoteUserId** properties to the [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta&preserve-view=true) complex type|
 |Addition|beta|Added the **totalComanagedCount** property to the [comanagedDevicesSummary](/graph/api/resources/intune-devices-comanageddevicessummary?view=graph-rest-beta&preserve-view=true) complex type|
 |Addition|beta|Added the **batterySerialNumber**, **batteryHealthPercentage** and **batteryChargeCycles** properties to the [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta&preserve-view=true) complex type|
-|Addition|beta|Added the **bundleIdAccessControlList** property to the [iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta) complex type|
-|Addition|beta|Added the **totalMalwareCount**, **totalDistinctMalwareCount** and **malwareSeveritySummary** properties to the [windowsMalwareOverview](/graph/api/resources/intune-devices-windowsmalwareoverview?view=graph-rest-beta) complex type|
-|Addition|beta|Added the **malwareDetectionCount** and **distinctMalwareCount** properties to the [windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta) complex type|
-|Addition|beta|Added the **netMotionMobility** member to the [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta) enum type|
-|Addition|beta|Added the **cloudPC** member to the [deviceType](/graph/api/resources/intune-deviceconfig-devicetype?view=graph-rest-beta) enum type|
-|Addition|beta|Added the **mdmClientCrashed**, **timeout**, **updateError** and **updateScanFailed** members to the [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) enum type|
-|Addition|beta|Added the **iosAppStoreUpdateFailedToInstall**, **vppAppHasUpdateAvailable**, **userRejectedUpdate**, **managedAppNoLongerPresent**, **userRejectedInstall** and **userIsNotLoggedIntoAppStore** members to the [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) enum type|
+|Addition|beta|Added the **bundleIdAccessControlList** property to the [iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta&preserve-view=true) complex type|
+|Addition|beta|Added the **totalMalwareCount**, **totalDistinctMalwareCount** and **malwareSeveritySummary** properties to the [windowsMalwareOverview](/graph/api/resources/intune-devices-windowsmalwareoverview?view=graph-rest-beta&preserve-view=true) complex type|
+|Addition|beta|Added the **malwareDetectionCount** and **distinctMalwareCount** properties to the [windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta&preserve-view=true) complex type|
+|Addition|beta|Added the **netMotionMobility** member to the [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta&preserve-view=true) enum type|
+|Addition|beta|Added the **cloudPC** member to the [deviceType](/graph/api/resources/intune-deviceconfig-devicetype?view=graph-rest-beta&preserve-view=true) enum type|
+|Addition|beta|Added the **mdmClientCrashed**, **timeout**, **updateError** and **updateScanFailed** members to the [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta&preserve-view=true) enum type|
+|Addition|beta|Added the **iosAppStoreUpdateFailedToInstall**, **vppAppHasUpdateAvailable**, **userRejectedUpdate**, **managedAppNoLongerPresent**, **userRejectedInstall** and **userIsNotLoggedIntoAppStore** members to the [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta&preserve-view=true) enum type|
 
 ### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the following properties to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
-| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta)|
-| Addition | beta | Added [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) internal and external sponsors to entitlement management.  |
+| Addition | beta | Added the following properties to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFile](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)|
+| Addition | beta | Added [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) internal and external sponsors to entitlement management.  |
 | Addition | beta | Added the inheritsPermissionsFrom property to the [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. |
 | Addition | beta | Added the **connectedOrganizationState** enumeration type and the **state** property to the [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) resource.|
 | Change   | beta | Renamed **requestorSettings** allowed value from "AllExistingConnectedOrganizationSubjects" to "AllConfiguredConnectedOrganizationSubjects" |
