@@ -1,6 +1,6 @@
 ---
-title: "Overview for accessing service health and communications through Microsoft Graph"
-description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services."
+title: "Access service health and communications through Microsoft Graph"
+description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services."
 author: "payiAzure"
 ms.localizationpriority: high
 ms.prod: "service-communications"
@@ -8,6 +8,7 @@ ms.custom: scenarios:getting-started
 ---
 
 # Overview for accessing service health and communications in Microsoft Graph
+
 You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant.
 
 ## Why integrate with service health and communications data?

@@ -1,6 +1,6 @@
 ---
 title: "Software updates with the Windows Update for Business deployment service"
-description: "Software updates are the primary type of content the deployment service deploys. You can look up in a catalog to find specific updates available to deploy."
+description: "Software updates are the primary type of content the deployment service deploys. You can look up  specific updates available to deploy in a catalog."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"

@@ -1,6 +1,6 @@
 ---
-title: "Microsoft 365 Lighthouse API overview"
-description: "Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium."
+title: "Microsoft 365 Lighthouse API multi-tenant management"
+description: "Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) remotely manage devices, data, and users for customers using Microsoft 365 Business Premium."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
