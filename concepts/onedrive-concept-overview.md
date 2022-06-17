@@ -64,8 +64,8 @@ Use the [delta API][] to see what changed since the last time your app synchroni
 ## API reference
 Looking for the API reference for this service?
 
-- [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [OneDrive file storage API in Microsoft Graph v1.0](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
+- [OneDrive file storage API in Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
@@ -74,16 +74,16 @@ Find out more about [using the OneDrive API][Drive API] in Microsoft Graph v1.0.
 [SharePoint]: sharepoint-concept-overview.md
 [file picker]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [file handler]: /onedrive/developer/file-handlers
-[special folders]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[special folders]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0&preserve-view=true
 [Notes API]: integrate-with-onenote.md
-[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0
-[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[delta API]: /graph/api/driveitem-delta?view=graph-rest-1.0
-[video]: /graph/api/resources/video?view=graph-rest-1.0
-[photo]: /graph/api/resources/photo?view=graph-rest-1.0
-[audio]: /graph/api/resources/audio?view=graph-rest-1.0
-[formats]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-[thumbnails]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-[preview]: /graph/api/driveitem-preview?view=graph-rest-beta
-[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
-[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[Excel API]: /graph/api/resources/excel?view=graph-rest-1.0&preserve-view=true
+[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true
+[delta API]: /graph/api/driveitem-delta?view=graph-rest-1.0&preserve-view=true
+[video]: /graph/api/resources/video?view=graph-rest-1.0&preserve-view=true
+[photo]: /graph/api/resources/photo?view=graph-rest-1.0&preserve-view=true
+[audio]: /graph/api/resources/audio?view=graph-rest-1.0&preserve-view=true
+[formats]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0&preserve-view=true
+[thumbnails]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0&preserve-view=true
+[preview]: /graph/api/driveitem-preview?view=graph-rest-beta&preserve-view=true
+[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true
+[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true

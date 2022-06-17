@@ -83,7 +83,7 @@ After the installation finishes, the package shows up under **References** in th
 
 For more details about including and consuming NuGet packages from your UWP app, see:
 
-* [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts&preserve-view=true)
 * [Quickstart: Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 

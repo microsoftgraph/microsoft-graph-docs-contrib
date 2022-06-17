@@ -111,7 +111,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 The client-side SDK is built on top of an infrastructure called Connected Device Platform. Before any feature can be used, the platform must be initialized within your app. The initialization steps should occur in your main class **OnCreate** method, because they are required before the notification scenarios can take place.
 
-You must construct and initialize the platform by instantiating the [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) class. Before doing that, make sure to hook up event handlers, because after the platform is started, the events might begin to fire. 
+You must construct and initialize the platform by instantiating the [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest&preserve-view=true) class. Before doing that, make sure to hook up event handlers, because after the platform is started, the events might begin to fire. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);

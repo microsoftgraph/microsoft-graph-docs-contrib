@@ -52,7 +52,7 @@ Take an in-depth look at Microsoft Graph APIs to learn about the OneNote content
 
 ### Work with OneNote
 
-* [Use the OneNote REST API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+* [Use the OneNote REST API](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
 * [Best practices](onenote-best-practices.md)
 * [Branding guidelines](onenote-branding.md)
 * [Open the OneNote client](open-onenote-client.md)
@@ -87,8 +87,8 @@ Find out about a few other OneNote features that are exposed only on the OneNote
 ## API reference
 Looking for the API reference for this service?
 
-- [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
+- [OneNote API in Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [OneNote API in Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
@@ -96,4 +96,4 @@ Use the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-e
 
 To make OneNote API calls from the Graph Explorer, choose **Show more samples** in the column on the left. Use the menu to toggle OneNote **On**. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose **modify permissions**. For more information about OneNote permissions, see [Notes permissions](permissions-reference.md#notes-permissions).
 
-To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0).
+To get started with OneNote APIs in Microsoft Graph, see the [OneNote reference content](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true).
