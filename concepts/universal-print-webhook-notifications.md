@@ -1,6 +1,6 @@
 ---
-title: "Subscribe to change notifications from cloud printing APIs using Microsoft Graph"
-description: "Learn how to subscribe to change notifications for print job events by using the Microsoft Graph API."
+title: "Subscribe to change notifications from cloud printing APIs"
+description: "Learn how to subscribe to change notifications for various print job events by using the Microsoft Graph API."
 author: "jahsu"
 ms.localizationpriority: high
 ms.prod: "cloud-printing"
@@ -26,7 +26,7 @@ Before you can take advantage of change notifications via Microsoft Graph, you m
 Universal Print currently supports notifications for two scenarios related to print jobs:
 
 * PrintTask is triggered (JobStarted): An application can subscribe to receive notifications when their printTask(hook) is triggered.
-For details about how to trigger a task, see [Extending Universal Print to support pull printing](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing). Currently, a printTask can be triggered only for a JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
+For details about how to trigger a task, see [Enable pull printing](./universal-print-concept-overview.md#enable-pull-printing). Currently, a printTask can be triggered only for a JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
 
 * JobFetchable: After the job has started, third-party print applications or Universal Print might do some processing (like converting XPS payload to PDF for a PDF printer). After processing is complete and the payload is ready to be downloaded by a printer, a JobFetchable event is raised for the corresponding print job.
 
@@ -38,7 +38,7 @@ For details about how to trigger a task, see [Extending Universal Print to suppo
 For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
 
 
-### Scopes
+### Permission scopes
 
 To subscribe to notifications for print jobs, applications must have the following permission scopes approved in the customer’s Azure AD tenant: 
 
@@ -69,6 +69,8 @@ With the **printTaskDefinition** that exists for customer’s Azure AD tenant, t
 * The `expirationDateTime` field needs to be less than the [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
 
 For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
+
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -130,6 +132,8 @@ A JobFetchable notification needs to be created for each printer queue. While cr
 
 For more details, see [Subscription resource type properties](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
 
+### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -178,13 +182,13 @@ Content-Type: application/json
 ```
 
 
-## Renewing a notification subscription
+## Renew a notification subscription
 
 Microsoft Graph has a limit on the expiration time. For details, see [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). To continue receiving notifications, the subscription needs to be renewed periodically by using the [Update subscription API](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http). 
 
-## Other operations on notification subscriptions 
+## Get or delete notification subscriptions
 
-Applications can [get](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) details of the subscription or can [delete](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-v1.0).
+Applications can [get](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) details of the subscription or [delete](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-v1.0).
 
 
 ## FAQs
