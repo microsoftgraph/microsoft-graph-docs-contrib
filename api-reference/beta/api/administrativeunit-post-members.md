@@ -35,9 +35,9 @@ To add a user, group, or device to an administrative unit, the calling principal
 ### Permissions to create a new group
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 To create a new group in an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
 
