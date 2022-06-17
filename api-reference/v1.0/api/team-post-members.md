@@ -12,6 +12,9 @@ Namespace: microsoft.graph
 
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
+> [!NOTE] 
+> The **roles** property will be empty by default for all members. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the roles property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
