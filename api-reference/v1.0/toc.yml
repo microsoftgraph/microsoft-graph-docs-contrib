@@ -568,7 +568,7 @@ items:
           href: api/chat-list.md
       - name: To-do tasks
         items:
-        - name: Task
+        - name: To-do task
           href: resources/todotask.md
         - name: Create task
           href: api/todotasklist-post-tasks.md
@@ -7249,9 +7249,10 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Task list
-        href: resources/todotasklist.md
+      - name: To-do task list
         items:
+        - name: To-do task list
+          href: resources/todotasklist.md
         - name: List task lists
           href: api/todo-list-lists.md
         - name: Create task list
@@ -7268,9 +7269,10 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Task
-        href: resources/todotask.md
+      - name: To-do task
         items:
+        - name: To-do task
+          href: resources/todotask.md
         - name: List tasks
           href: api/todotasklist-list-tasks.md
         - name: Create task
