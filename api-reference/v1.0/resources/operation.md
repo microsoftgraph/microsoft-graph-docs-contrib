@@ -16,11 +16,11 @@ The status of a long-running operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time of when the operation was created.gi|
-|id|String||
-|lastActionDateTime|DateTimeOffset|The last date and time the operation status was updated.|
+|createdDateTime|DateTimeOffset|The start time of the operation.|
+|id|String|The unique identifier of the operation |
+|lastActionDateTime|DateTimeOffset|The time of the last action of the operation.|
 |resourceLocation|String| URI of the resource that is the operation is performed on. |
-|status|longRunningOperationStatus|The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|The current status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|Details on the status of the operation.|
 
 
@@ -39,7 +39,9 @@ Here is a JSON representation of the resource.
 {
   "createdDateTime": "String (timestamp)",
   "lastActionDateTime": "String (timestamp)",
-  "status": "notStarted | running | completed | failed"
+  "status": "notStarted | running | completed | failed",
+  "statusDetail": "ResetSuccess", 
+  "id": "2d497bb-57bd-47a6-8749-5ccd0869f2bd",
 }
 ```
 
