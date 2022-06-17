@@ -14,8 +14,12 @@ isDeliveryReceiptRequested := true
 message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Dana Swope"
+	emailAddress.SetName(&name)
 }
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 requestBody.SetComment(&comment)

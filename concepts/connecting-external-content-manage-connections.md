@@ -1,6 +1,6 @@
 ---
 title: "Create, update, and delete connections in Microsoft Graph"
-description: "Learn how to use Microsoft Graph to create and manage connections."
+description: "Learn how to use Microsoft Graph to create and manage connections. Includes a table of connection states and the operations available in each state."
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
@@ -10,11 +10,11 @@ ms.prod: search
 
 # Create, update, and delete connections in Microsoft Graph
 
-Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) resource in Microsoft Graph.
+Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnectors-externalconnection) resource in Microsoft Graph.
 
 The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
 
 <!-- markdownlint-disable MD036 -->
 ![Sample custom helpdesk system Tickets Connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
@@ -57,7 +57,7 @@ The following table specifies which operations are available in each state.
 | Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index. 
+A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-post-schema) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index. 
 
 The first step for an application to add items to the search index is to create a connection.
 
@@ -65,22 +65,22 @@ The first step for an application to add items to the search index is to create 
 
 Before an application can add items to the search index, it must create and configure a connection:
 
-1. [Create a connection](/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0&preserve-view=true&tabs=http) with a unique ID, display name, and description.
-2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) to define the fields that will be included in the index.
+1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
+2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
 
 > [!NOTE]
 > For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Update a connection
 
-To change the display name or description of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0&preserve-view=true&tabs=http).
+To change the display name or description of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
 
 ## Delete a connection
 
-To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0&preserve-view=true&tabs=http).
+To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete).
 
 ## Next steps
 
 - [Register the connection schema](connecting-external-content-manage-schema.md)
-- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview)
 - [Download the sample search connector from GitHub](https://github.com/microsoftgraph/msgraph-search-connector-sample)
