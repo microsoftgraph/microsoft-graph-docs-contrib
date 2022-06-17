@@ -537,6 +537,74 @@
       "CreatedDateTime": "2022-05-25T04:11:04.628237Z",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4c244887-25b5-4f10-b6e6-9dc0df931678",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "entityType"
+        },
+        {
+          "Id": "4c244887-25b5-4f10-b6e6-9dc0df931678",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "4c244887-25b5-4f10-b6e6-9dc0df931678",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "4c244887-25b5-4f10-b6e6-9dc0df931678",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-17T07:55:50.3461825Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Analytics"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a69b5139-05b1-4e68-8408-69518f46aec9",
+          "ApiChange": "Member",
+          "ChangedApiName": "acronym",
+          "ChangeType": "Addition",
+          "Description": "Added the **acronym** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "a69b5139-05b1-4e68-8408-69518f46aec9",
+          "ApiChange": "Member",
+          "ChangedApiName": "bookmark",
+          "ChangeType": "Addition",
+          "Description": "Added the **bookmark** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        },
+        {
+          "Id": "a69b5139-05b1-4e68-8408-69518f46aec9",
+          "ApiChange": "Member",
+          "ChangedApiName": "chatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **chatMessage** member to the **entityType** enumeration.",
+          "Target": "entityType"
+        }
+      ],
+      "Id": "a69b5139-05b1-4e68-8408-69518f46aec9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-17T07:55:50.3461872Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Analytics"
     }
   ]
 }
