@@ -217,6 +217,7 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/v1.0/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
 Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": [],
@@ -238,6 +239,7 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 468
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -265,6 +267,7 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/v1.0/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
 Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": [],
@@ -287,6 +290,7 @@ The following is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 468
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
