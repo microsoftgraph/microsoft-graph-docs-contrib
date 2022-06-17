@@ -1,5 +1,5 @@
 ---
-title: "Create custodian siteSource"
+title: "Create custodian siteSource (beta)"
 description: Describes Create custodian siteSource, which creates a new custodian siteSource object, and describes the permissions required to call this API.
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create custodian siteSource
+# Create custodian siteSource (beta)
 
 Namespace: microsoft.graph.ediscovery
 

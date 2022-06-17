@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
+# [HTTP]<!--(#tab/http)-->
 <!-- {
   "blockType": "request",
   "name": "put_b2xuserflows-apiconnectorconfiguration_postFederationSignup"

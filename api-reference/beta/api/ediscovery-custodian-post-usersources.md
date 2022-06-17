@@ -1,5 +1,5 @@
 ---
-title: "Create custodian userSource"
+title: "Create custodian userSource (beta)"
 description: Describes Create custodian userSource, which creates a new custodian userSource object, and describes the permissions required to call this API.
 author: "mahage-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "ediscovery"
 doc_type: apiPageType
 ---
 
-# Create custodian userSource
+# Create custodian userSource (beta)
 
 Namespace: microsoft.graph.ediscovery
 
