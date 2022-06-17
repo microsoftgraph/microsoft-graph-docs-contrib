@@ -27,7 +27,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---|:---|:---|
 |id|String|Unique identifier for the supported region. Read-only.|
 |displayName|String|The name for the supported region. Read-only.|
-|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedRegionstatus-values)|The name for the supported region. Read-only.|
+|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedRegionstatus-values)|The status of the supported region. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
