@@ -1,6 +1,6 @@
 ---
 title: "Create custodian userSource"
-description: "Create a new custodian userSource object."
+description: Describes Create custodian userSource, which creates a new custodian userSource object, and describes the permissions required to call this API.
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

@@ -1,6 +1,6 @@
 ---
 title: "Add noncustodialDataSource"
-description: "Add noncustodialSources by posting to the noncustodialSources collection."
+description: Describes Add noncustodialDataSource, which adds noncustodialSources by posting to the noncustodialSources collection.
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

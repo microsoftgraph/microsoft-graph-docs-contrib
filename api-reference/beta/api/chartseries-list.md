@@ -1,6 +1,6 @@
 ---
 title: "List ChartSeriesCollection"
-description: "Retrieve a list of chartseries objects."
+description: Describes List ChartSeriesCollection, which retrieve a list of chartseries objects, and describes the permissions required to call this API.
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"

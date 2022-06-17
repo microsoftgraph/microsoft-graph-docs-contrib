@@ -1,6 +1,6 @@
 ---
 title: "Create checklistItem"
-description: "Create a new checklistItem object."
+description: Describes how to create a new checklistItem object as a subtask in a bigger baseTask and details permissions to call the API.
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"

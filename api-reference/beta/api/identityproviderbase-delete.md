@@ -1,6 +1,6 @@
 ---
 title: "Delete identityProvider"
-description: "Delete an identityProvider."
+description: Describes Delete identityProvider, which deletes an identityProvider, and describes the permissions required to call this API.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"

@@ -1,6 +1,6 @@
 ---
 title: "Create identityProvider"
-description: "Create a new identityProvider object."
+description: Describes Create identityProvider, which creates a new identityProvider object, and describes the permissions required to call this API.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"

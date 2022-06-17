@@ -1,6 +1,6 @@
 ---
 title: "Create educationUser"
-description: "Create a new user."
+description: Describes Create educationUser, which creates a new user, and describes the permissions required to call this API.
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"

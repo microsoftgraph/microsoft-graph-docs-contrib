@@ -1,6 +1,6 @@
 ---
 title: "Configure an API connector in a user flow"
-description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
+description: Describes how to configure the userFlowApiConnectorConfiguration in a b2cIdentityUserFlow to enable or disable an API connector in a user flow.
 author: "nickgmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

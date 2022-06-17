@@ -1,6 +1,6 @@
 ---
 title: "custodian: release"
-description: "Release a custodian from a case."
+description: "Describes custodian: release, which releases a custodian from a case, and describes the permissions required to call this API."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

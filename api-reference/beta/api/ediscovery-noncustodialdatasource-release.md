@@ -1,6 +1,6 @@
 ---
 title: "noncustodialDataSource: release"
-description: "Releases the non-custodial data source from the case."
+description: "Describes the noncustodialDataSource: release, which releases the non-custodial data source from the case."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

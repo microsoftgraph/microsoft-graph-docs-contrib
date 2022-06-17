@@ -1,6 +1,6 @@
 ---
 title: "Add Named Item FormulaLocal"
-description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
+description: Describes Add Named Item FormulaLocal, which adds a new name to the collection of the given scope using the user's locale for the formula.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: workbooks-and-charts

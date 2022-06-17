@@ -1,6 +1,6 @@
 ---
 title: "List ChartCollection"
-description: "Retrieve a list of chart objects."
+description: Describes ListChartCollection, which retrieve a list of chart objects, and describes the permissions required to call this API.
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"
