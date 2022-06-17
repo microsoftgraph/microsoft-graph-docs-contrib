@@ -98,11 +98,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "update_socialidentityprovider"
 }
-
+-->
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
@@ -133,6 +133,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-socialidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+
 ---
 
 
@@ -157,7 +159,7 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
 }
@@ -220,11 +222,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "update_appleidentityprovider"
 }
-
+-->
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
@@ -254,6 +256,8 @@ Content-type: application/json
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-appleidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
 
 ---
 

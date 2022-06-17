@@ -66,11 +66,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postFederationSignup"
 }
-
+-->
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postFederationSignup/$ref
@@ -80,6 +80,7 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"   
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/put-b2cuserflows-apiconnectorconfiguration-postfederationsignup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,11 +123,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_postAttributeCollection"
 }
-
+-->
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
@@ -136,6 +137,7 @@ Content-Type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"   
 }
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/put-b2cuserflows-apiconnectorconfiguration-postattributecollection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -177,11 +179,11 @@ The following is an example of the request.
 
 
 # [HTTP](#tab/http)
-{
+<!-- {
   "blockType": "request",
   "name": "put_b2cuserflows-apiconnectorconfiguration_disable-postAttributeCollection"
 }
-
+-->
 
 ``` http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref
@@ -189,6 +191,9 @@ Content-Type: application/json
 
 { }
 ```
+
+# [C#](#tab/csharp)
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-b2cuserflows-apiconnectorconfiguration-disable-postattributecollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
