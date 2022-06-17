@@ -5139,6 +5139,13 @@
           "ChangeType": "Addition",
           "Description": "Added the **shared** member to the **channelMembershipType** enumeration.",
           "Target": "channelMembershipType"
+        },{
+          "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
+          "ApiChange": "Member",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamifyGroup** member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
