@@ -364,8 +364,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                                                                                                                                                     |
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Addition        | beta        | Added new **expirationDate** property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
-| Add             | beta        | Added new **externalSourceDetail** property to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) resources |
+| Addition        | beta        | Added new **expirationDate** property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta&preserve-view=true) resource. |
+| Add             | beta        | Added new **externalSourceDetail** property to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta&preserve-view=true), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta&preserve-view=true) resources |
 
 ### Extensions | Schema extensions
 
@@ -376,9 +376,9 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|v1.0|Added the [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.|
-| Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
-| Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
+|Addition|v1.0|Added the [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0&preserve-view=true) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0&preserve-view=true) resource.|
+| Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) entity. |
+| Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true) entity.  |
 | Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
 | Addition | v1.0 | Added the **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**, and **theme** properties to the [group](/graph/api/resources/group?view=graph-rest-v1.0) entity. |
 | Addition | beta | Added the **infoCatalogs** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity and the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
