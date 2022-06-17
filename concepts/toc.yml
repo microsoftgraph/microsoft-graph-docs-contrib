@@ -185,7 +185,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: Manage items
             href: connecting-external-content-manage-items.md
-          - name: External groups
+          - name: Use external groups
             href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
@@ -194,15 +194,15 @@ items:
           - name: Overview
             href: cross-device-concept-overview.md
             displayName: Project Rome, cross-device, cross device, cross-device experience
-          - name: Activity feed
+          - name: Use activity feed API
             href: activity-feed-concept-overview.md
             displayName: cross-device, cross device
-          - name: Device relay (preview)
+          - name: Use device relay API (preview)
             href: device-relay-concept-overview.md
             displayName: cross-device, cross device
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
-            displayName: cross device
+            displayName: cross device, Project Rome
       - name: Customer booking (preview)
         items:
           - name: Overview 
