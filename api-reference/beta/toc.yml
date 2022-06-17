@@ -13973,7 +13973,7 @@ items:
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
         - name: Sensitivity labels
-          href: resources/security-informationprotectionlabel.md
+          href: resources/security-sensitivitylabel.md
           items:
           - name: List sensitivity labels
             href: api/security-informationprotection-list-sensitivitylabels.md
