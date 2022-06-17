@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets all of the [teamsTemplate](../resources/teamstemplate.md) objects available for the tenant. 
+Get the list of [teamsTemplate](../resources/teamstemplate.md) objects available for the tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,8 +48,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [teamTemplate](../resources/teamtemplate.md) objects. 
 
->[!Note]
->Currently, this API only returns the **id** property of a [teamTemplate](../resources/teamtemplate.md). To get the [teamTemplateDefinition](../resources/teamtemplatedefinition.md), use the OData query parameter `$expand=definitions`.
+> [!Note]
+> Currently, this API only returns the **id** property of a [teamTemplate](../resources/teamtemplate.md). To get the [teamTemplateDefinition](../resources/teamtemplatedefinition.md), use the OData query parameter `$expand=definitions`.
 
 ## Examples
 
