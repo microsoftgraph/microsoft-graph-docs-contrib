@@ -119,7 +119,7 @@ For some of the responses in the regular pattern, a recovery cooldown duration i
 
 ## Diagnostic information
 
-All contents in the response that are not used in the previous steps are for diagnostics purpose only (including strings in **message** fields). It is not recommended to make a dependency on these contents as they might change without notice.
+All contents in the response that are not used in the previous steps are for diagnostics purpose only (including strings in **message** fields). We don't recommemd that you take a dependency on these contents as they might change without notice.
 
 ## Special case handling
 
