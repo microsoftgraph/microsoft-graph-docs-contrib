@@ -42,7 +42,7 @@ You can specify up to 1000 search results per page for a [search request](/graph
 [Get messages on a channel](/graph/api/channel-list-messages) and [include any replies](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) to the message.
 
 ### To-do tasks
-- Break down a complex [to-do task](/graph/api/resources/todotask) into more actionable, smaller tasks each being a [checklist item](/graph/api/resources/checklistitem).
+- Break down a complex [to-do task](/graph/api/resources/todotask) into more actionable, smaller tasks each as a [checklist item](/graph/api/resources/checklistitem).
 - Label a to-do task with a [category](/graph/api/resources/outlookcategory) that is defined by the user to group Outlook contacts, events, messages, group posts, and to-do tasks.
 
 
