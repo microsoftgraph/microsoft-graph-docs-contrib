@@ -5082,6 +5082,13 @@ items:
               href: api/certificatebasedauthconfiguration-get.md
             - name: Delete
               href: api/certificatebasedauthconfiguration-delete.md
+          - name: Password
+            href: resources/passwordauthenticationmethod.md
+            items:
+            - name: Reset
+              href: api/passwordauthenticationmethod-resetpassword.md
+            - name: Get operation status
+              href: api/authenticationoperation-get.md
         - name: Conditional access
           items:
           - name: Policies
