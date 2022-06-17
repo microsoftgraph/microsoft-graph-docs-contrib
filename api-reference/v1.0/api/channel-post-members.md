@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## Permissions
 
@@ -51,10 +51,10 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ## Examples
 
-### Example 1: Add a member to a channel
+### Example 1: Add a member to a private channel
 
 #### Request
-
+The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ Content-type: application/json
 
 
 #### Response
-
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -121,10 +121,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Add a member with the owner role to a channel
+### Example 2: Add a member with the owner role to a private channel
 
 #### Request
-
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -156,7 +156,7 @@ POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -183,7 +183,7 @@ Content-type: application/json
 ### Example 3: Add an owner to a channel using user principal name
 
 #### Request
-
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -229,7 +229,7 @@ Content-type: application/json
 
 
 #### Response
-
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -251,7 +251,101 @@ Content-type: application/json
   "email": "jacob@contoso.com"
 }
 ```
+### Example 4: Add a user who is part of the same tenant as a member to a shared channel
 
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_intra_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZGY4MWRiNTMtYzdlMi00MThhLTg4MDMtMGU2OGQ0Yjg4NjA3IyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjIzI0YjM4MTliLTRlMWQtNGYzZS04NmJkLWU0MmI1NGQwYjJiNA==",
+    "roles": [],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": null,
+    "userId": "24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
+    "email": "john_doe@contoso.com",
+    "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
+}
+```
+
+### Example 5: Add a user who is part of a different tenant as a member to a shared channel
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_x_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/bc3598dd-cce4-4742-ae15-173429951408",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "YTE4MTAzZDEtYTZlZi00ZjY2LWFjNjQtZTRlZjQyZWE4NjgxIyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjI2JjMzU5OGRkLWNjZTQtNDc0Mi1hZTE1LTE3MzQyOTk1MTQwOA==",
+    "roles": [],
+    "displayName": "Eric Solomon",
+    "visibleHistoryStartDateTime": null,
+    "userId": "bc3598dd-cce4-4742-ae15-173429951408",
+    "email": "ericsol@fabrikam.com",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+}
+```
 ## See also
 
 - [Add member to team](team-post-members.md)

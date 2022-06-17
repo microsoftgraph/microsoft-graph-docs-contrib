@@ -39,7 +39,12 @@ For more information about working with groups and members in teams, see [Use th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
+|[List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of [associatedTeamInfo](associatedteaminfo.md) objects in Microsoft Teams that a [user](user.md) is associated with. |
 |[Complete migration](../api/team-completemigration.md)|[team](team.md)| Removes migration mode from the team and makes the team available to users to post and read messages.|
+|[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in this **team** or shared with this **team** (incoming channels).|
+|[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) in a **team**.|
+|[List incoming channels](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) shared with this **team**.|
+|[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming channel.|
 |[List apps installed in team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a team.|
 |[Add app to team](../api/team-post-installedapps.md) |None | Add (install) an app to a team.|
 |[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
@@ -63,6 +68,7 @@ For more information about working with groups and members in teams, see [Use th
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 |createdDateTime|dateTimeOffset|Timestamp at which the team was created.|
+|tenantId |string | The ID of the Azure Active Directory tenant. |
 
 ### Instance attributes
 
@@ -78,6 +84,8 @@ For a POST request example, see [Request (create team in migration state)](/micr
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|allChannels|[channel](channel.md) collection|List of channels either hosted in or shared with the team (incoming channels).|
+|incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|

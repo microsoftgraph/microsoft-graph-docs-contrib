@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
  
-Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`..
 
 
 ## Permissions

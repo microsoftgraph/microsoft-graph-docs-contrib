@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body for channel with a **membershipType** value of `standard` or `private`. For channel with a **membershipType** value of `shared`, this method return `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -191,7 +191,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -361,7 +361,7 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -385,6 +385,52 @@ Content-type: application/json
     "membershipType": "private"
 }
 ```
+
+### Example 5: Create a shared channel on behalf of a user
+
+#### Request
+
+The following example shows how to create a shared channel.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
