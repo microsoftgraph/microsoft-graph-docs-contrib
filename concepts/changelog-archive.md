@@ -275,7 +275,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
 |Addition|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta&preserve-view=true), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta&preserve-view=true) resources, and CRUD operations.|
-|Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.|
+|Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta&preserve-view=true), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta&preserve-view=true), and related operations and methods.|
 
 ## July 2020
 
@@ -283,10 +283,10 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) entities. |
-| Addition | v1.0 | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) and [decline](/graph/api/event-decline?view=graph-rest-1.0) methods of **event**. |
-| Addition | v1.0 | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0), and in addition, includes the **proposedNewTime** and **responseType** properties. |
-| Addition | v1.0 | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) complex type. |
+| Addition | v1.0 | Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0&preserve-view=true) entities. |
+| Addition | v1.0 | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0&preserve-view=true) and [decline](/graph/api/event-decline?view=graph-rest-1.0&preserve-view=true) methods of **event**. |
+| Addition | v1.0 | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0&preserve-view=true) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true), and in addition, includes the **proposedNewTime** and **responseType** properties. |
+| Addition | v1.0 | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-1.0&preserve-view=true) complex type. |
 
 ### Change notifications
 
@@ -299,7 +299,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) operation for meeting updates.|
+| Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation for meeting updates.|
 | Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./webhooks.md). |
 
 ### Cloud communications | Call records
