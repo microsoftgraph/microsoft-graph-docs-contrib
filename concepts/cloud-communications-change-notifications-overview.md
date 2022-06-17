@@ -18,7 +18,7 @@ Subscription on eligible cloud communication resources are available through Mic
 The following outlines cloud communication resource types that are supported and on which Microsoft Graph API versions.
 
 | Resource           | Microsoft Graph API versions |
-| :------------------| :----------------------------|
+| :--------------------| :--------------------|
 | [callrecords](/graph/api/resources/callrecords-api-overview) | v1, beta |
 | [onlinemeeting](/graph/api/resources/onlinemeeting) | beta |
 | [presence](/graph/api/resources/presence) | v1, beta |
@@ -53,8 +53,8 @@ For more details on subscription creation, see [Create subscription](/graph/api/
 
 ## Renewing subscriptions
 
-Subscription are only maintained for a certain period of time. For details for each resource, see [maximum expiration time](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type).
-Subscriptions must be renewed periodically by using the [Update subscription API](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http) to prevent deletion upon expiry.
+Subscription are only maintained for a certain period of time. For details for each resource, see [maximum expiration time](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
+Subscriptions must be renewed periodically by using the [Update subscription API](/graph/api/subscription-update) to prevent deletion upon expiry.
 
 ## Other subscription operations
 
