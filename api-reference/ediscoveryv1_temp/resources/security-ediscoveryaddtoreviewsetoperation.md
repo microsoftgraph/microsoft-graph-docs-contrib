@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Represents an operation to add a [eDiscoverySearch](../resources/security-ediscoverysearch.md) to a [eDiscoveryReviewSet](../resources/security-ediscoveryreviewset.md).
 

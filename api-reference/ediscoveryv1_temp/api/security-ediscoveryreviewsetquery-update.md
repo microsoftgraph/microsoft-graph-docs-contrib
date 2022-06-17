@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 # Update ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Update the properties of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.
 
@@ -62,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+PATCH https://graph.microsoft.com/v1.0/ediscoveryExportOperation/reviewSetQuery
 Content-Type: application/json
 
 {

@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # List ediscoveryEstimateOperations
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/lastEstimateStatisticsOperation
+GET https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/lastEstimateStatisticsOperation
 ```
 
 
@@ -78,7 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.ediscoveryEstimateOperation",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.ediscoveryEstimateOperation",
     "createdDateTime": "2022-05-29T18:56:48.4649404Z",
     "completedDateTime": "2022-05-29T18:58:31.968065Z",
     "percentProgress": 100,

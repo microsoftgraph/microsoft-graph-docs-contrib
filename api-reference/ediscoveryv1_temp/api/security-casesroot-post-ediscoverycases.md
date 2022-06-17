@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create ediscoveryCase
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Create a new [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases
 Content-Type: application/json
 
 {
@@ -91,7 +91,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases/$entity",
     "description": "Project Bazooka",
     "lastModifiedDateTime": "2022-05-22T18:36:48.0834353Z",
     "status": "active",

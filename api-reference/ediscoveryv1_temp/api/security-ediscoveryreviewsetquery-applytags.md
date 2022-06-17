@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # ediscoveryReviewSetQuery: applyTags
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Apply tags to files in eDiscovery review set. [Learn more.](https://docs.microsoft.com/microsoft-365/compliance/tagging-documents)
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery/applyTags
+POST https://graph.microsoft.com/v1.0/ediscoveryExportOperation/reviewSetQuery/applyTags
 Content-Type: application/json
 
 {

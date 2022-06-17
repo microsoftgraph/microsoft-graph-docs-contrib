@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List ediscoveryCases
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Get a list of the [ediscoveryCase](../resources/security-ediscoverycase.md) objects and their properties.
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
+GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases
 ```
 
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases",
     "@odata.count": 22,
     "value": [
         {

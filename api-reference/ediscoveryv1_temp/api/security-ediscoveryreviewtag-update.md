@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 # Update ediscoveryReviewTag
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/062de822f17a4a2e9b833aa3f6c37108
+PATCH https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/062de822f17a4a2e9b833aa3f6c37108
 
 {
     "displayName": "My tag API 2",

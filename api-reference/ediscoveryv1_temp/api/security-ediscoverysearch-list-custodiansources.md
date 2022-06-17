@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # List custodianSources
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Get the dataSource resources from the custodianSources navigation property.
 
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/custodianSources
+GET https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/custodianSources
 ```
 
 
@@ -76,11 +76,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.security.dataSource)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.security.dataSource)",
     "value": [
         {
             "@odata.type": "#microsoft.graph.security.userSource",
-            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('c25c3914-f9f7-43ee-9cba-a25377e0cec6')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('c25c3914-f9f7-43ee-9cba-a25377e0cec6')",
             "displayName": "MOD Administrator",
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
@@ -98,7 +98,7 @@ Content-Type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.security.userSource",
-            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('43434642-3137-3138-3432-374142313639')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/userSources('43434642-3137-3138-3432-374142313639')",
             "displayName": "Alex Wilber",
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
@@ -116,7 +116,7 @@ Content-Type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.security.unifiedGroupSource",
-            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources('32e14fa4-3106-4bd2-a245-34bf0c718a7e')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/unifiedGroupSources('32e14fa4-3106-4bd2-a245-34bf0c718a7e')",
             "displayName": "Design (Mailbox)",
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
@@ -132,7 +132,7 @@ Content-Type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.security.siteSource",
-            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources('169718e3-a8df-449d-bef4-ee09fe1ddc5d')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('0053a61a3b6c42738f7606791716a22a')/siteSources('169718e3-a8df-449d-bef4-ee09fe1ddc5d')",
             "displayName": "U.S. Sales",
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",
@@ -147,7 +147,7 @@ Content-Type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.security.userSource",
-            "@odata.id": "https://graph.microsoft.com/beta/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('c25c3914f9f743ee9cbaa25377e0cec6')/userSources('45354430-3730-4232-4236-323230383438')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/security/cases/cases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/custodians('c25c3914f9f743ee9cbaa25377e0cec6')/userSources('45354430-3730-4232-4236-323230383438')",
             "displayName": "MOD Administrator",
             "createdDateTime": "0001-01-01T00:00:00Z",
             "holdStatus": "0",

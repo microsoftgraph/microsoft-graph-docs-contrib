@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Create ediscoveryCustodian
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Create a new [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.
 After the custodian object is created, you will need to create the custodian's [userSource](../resources/security-usersource.md) to reference their mailbox and OneDrive for Business site.
@@ -63,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 Content-Type: application/json
 
 {
@@ -86,7 +86,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases('4c8f8f70-7785-4bd4-b296-c98376a2c5e1')/custodians/$entity",
      "status": "active",
      "holdStatus": "applied",
      "createdDateTime": "2022-05-23T00:58:19.0702426Z",

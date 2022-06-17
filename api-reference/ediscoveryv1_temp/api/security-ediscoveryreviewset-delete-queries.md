@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Delete ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Deletes an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.
 
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+DELETE https://graph.microsoft.com/v1.0/ediscoveryExportOperation/reviewSetQuery
 ```
 
 

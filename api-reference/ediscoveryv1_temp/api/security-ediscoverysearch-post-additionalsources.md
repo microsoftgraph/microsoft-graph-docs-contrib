@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Create dataSource
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Create a new dataSource object.
 
@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
+POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
 
 {
     "@odata.type": "microsoft.graph.security.siteSource",
@@ -89,7 +89,7 @@ The following is an example of the response
 HTTP/1.1 201 Created
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
     "@odata.type": "#microsoft.graph.ediscovery.siteSource",
     "displayName": "Secret Site",
     "createdDateTime": "2021-08-11T23:35:02.33986Z",

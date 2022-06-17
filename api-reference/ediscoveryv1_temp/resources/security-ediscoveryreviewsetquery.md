@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Represents a review set query, which is used to query and cull data stored in an eDiscovery [reviewSet](security-ediscoveryreviewset.md).
 

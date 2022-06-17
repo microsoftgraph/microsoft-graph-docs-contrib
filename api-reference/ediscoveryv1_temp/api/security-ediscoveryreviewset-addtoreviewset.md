@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # ediscoveryReviewSet: addToReviewSet
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Start the process of adding a collection from Microsoft 365 services to a review set. After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers. The location provides a URL that will return a [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md).
 
@@ -70,7 +70,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/v1.0/ediscoveryExportOperation/reviewSet/addToReviewSet
 Content-Type: application/json
 
 {

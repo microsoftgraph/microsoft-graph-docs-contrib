@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Update ediscoveryCase
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 Update the properties of an [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-7554-4330-9ba9-ce20014aaae4
+PATCH https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 Content-Type: application/json
 
 {
