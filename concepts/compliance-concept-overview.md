@@ -43,7 +43,7 @@ In accordance with certain privacy regulations around the world, individuals can
 
 The Microsoft Graph APIs for subject rights request provide functionality for organizations to automate repetitive tasks and integrate with existing data subject request tools, to enable building repeatable workflows that can be incorporated to their business processes. You can use the subject rights request APIs to help you automate and scale your organization's ability to perform subject rights requests searches in Microsoft 365 and help meet industry regulations more efficiently.
 
-## Records Management (Preview)
+## Records management (preview)
 
 Organizations of all types require a records-management solution to manage critical records across their corporate data. [Microsoft Purview records management](/microsoft-365/compliance/records-management) helps an organization manage their legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required.
 
