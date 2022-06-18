@@ -14,11 +14,12 @@ monitoring := msgraphsdk.NewMonitoringSettings()
 settings.SetMonitoring(monitoring)
 monitoring.SetMonitoringRules( []MonitoringRule {
 	msgraphsdk.NewMonitoringRule(),
-	SetAdditionalData(map[string]interface{}{
-		"signal": "rollback",
-		"threshold": ,
-		"action": "pauseDeployment",
-	}
+signal := "rollback"
+	SetSignal(&signal)
+threshold := int32(5)
+	SetThreshold(&threshold)
+action := "pauseDeployment"
+	SetAction(&action)
 }
 settings.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",

@@ -12,6 +12,21 @@ author: "MSGraphDocsvTeam"
 Namespace: microsoft.graph
 
 
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
 #### authenticationProtocol values
 
 |Member|

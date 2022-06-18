@@ -93,28 +93,37 @@ priceType := "fixedPrice"
 requestBody.SetPriceType(&priceType)
 requestBody.SetReminders( []BookingReminder {
 	msgraphsdk.NewBookingReminder(),
+message := "This service is tomorrow"
+	SetMessage(&message)
+offset := "P1D"
+	SetOffset(&offset)
+recipients := "allAttendees"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "This service is tomorrow",
-		"offset": "P1D",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "allAttendees",
 	}
 	msgraphsdk.NewBookingReminder(),
+message := "Please be available to enjoy your lunch service."
+	SetMessage(&message)
+offset := "PT1H"
+	SetOffset(&offset)
+recipients := "customer"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "Please be available to enjoy your lunch service.",
-		"offset": "PT1H",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "customer",
 	}
 	msgraphsdk.NewBookingReminder(),
+message := "Please check traffic for next cater."
+	SetMessage(&message)
+offset := "PT2H"
+	SetOffset(&offset)
+recipients := "staff"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "Please check traffic for next cater.",
-		"offset": "PT2H",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "staff",
 	}
 }
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"

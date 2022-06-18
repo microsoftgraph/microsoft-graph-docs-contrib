@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: BooleanColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: sites-and-lists
 ---
 # BooleanColumn resource type
 

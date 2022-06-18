@@ -37,27 +37,67 @@ approvalMode := "SingleStage"
 requestApprovalSettings.SetApprovalMode(&approvalMode)
 requestApprovalSettings.SetApprovalStages( []ApprovalStage {
 	msgraphsdk.NewApprovalStage(),
-	SetAdditionalData(map[string]interface{}{
-		"approvalStageTimeOutInDays": ,
-		"isApproverJustificationRequired": true,
-		"isEscalationEnabled": false,
-		"escalationTimeInMinutes": ,
-		"primaryApprovers":  []Object {
+approvalStageTimeOutInDays := int32(14)
+	SetApprovalStageTimeOutInDays(&approvalStageTimeOutInDays)
+isApproverJustificationRequired := true
+	SetIsApproverJustificationRequired(&isApproverJustificationRequired)
+isEscalationEnabled := false
+	SetIsEscalationEnabled(&isEscalationEnabled)
+escalationTimeInMinutes := int32(11520)
+	SetEscalationTimeInMinutes(&escalationTimeInMinutes)
+	SetPrimaryApprovers( []UserSet {
+		msgraphsdk.NewUserSet(),
+isBackup := true
+		SetIsBackup(&isBackup)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.groupMembers",
+			"id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+			"description": "group for users from connected organizations which have no external sponsor",
+		}
+		msgraphsdk.NewUserSet(),
+isBackup := false
+		SetIsBackup(&isBackup)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.externalSponsors",
 		}
 	}
 }
 requestBody.SetQuestions( []AccessPackageQuestion {
 	msgraphsdk.NewAccessPackageQuestion(),
+isRequired := false
+	SetIsRequired(&isRequired)
+text := msgraphsdk.NewAccessPackageLocalizedContent()
+	SetText(text)
+defaultText := "what state are you from?"
+	text.SetDefaultText(&defaultText)
+	text.SetLocalizedTexts( []AccessPackageLocalizedText {
+		msgraphsdk.NewAccessPackageLocalizedText(),
+text := "¿De qué estado eres?"
+		SetText(&text)
+languageCode := "es"
+		SetLanguageCode(&languageCode)
+	}
 	SetAdditionalData(map[string]interface{}{
-		"isRequired": false,
 		"@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 		"choices":  []Object {
 		}
 		"allowsMultipleSelection": false,
 	}
 	msgraphsdk.NewAccessPackageQuestion(),
+isRequired := false
+	SetIsRequired(&isRequired)
+text := msgraphsdk.NewAccessPackageLocalizedContent()
+	SetText(text)
+defaultText := "Who is your manager?"
+	text.SetDefaultText(&defaultText)
+	text.SetLocalizedTexts( []AccessPackageLocalizedText {
+		msgraphsdk.NewAccessPackageLocalizedText(),
+text := "por qué necesita acceso a este paquete"
+		SetText(&text)
+languageCode := "es"
+		SetLanguageCode(&languageCode)
+	}
 	SetAdditionalData(map[string]interface{}{
-		"isRequired": false,
 		"@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
 		"isSingleLineQuestion": false,
 	}
