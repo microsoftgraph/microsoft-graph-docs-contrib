@@ -68,7 +68,9 @@ The following characters are OneDrive reserved characters and can't be used in O
 
 > [!NOTE]
 > - Folder names can't end with a period (`.`).
-> - OneDrive for Business file or folder names cannot begin with a tilde ('~'). For more information, see [Restrictions and limitations when you sync SharePoint libraries to your computer through OneDrive for work or school](https://support.microsoft.com/en-us/kb/2933738).
+> - OneDrive for Business file or folder names cannot begin with a tilde ('~').
+>
+> For more information, see [Restrictions and limitations when you sync SharePoint libraries to your computer through OneDrive for work or school](https://support.microsoft.com/en-us/kb/2933738).
 
 ### URI path characters
 
