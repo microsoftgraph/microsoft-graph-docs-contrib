@@ -70,12 +70,11 @@ When seeded capacity is exceeded, API calls with licensing and payment requireme
 
 | Error type | Status code | Error message |
 |:-----------|:-----------|:-----------------|
-|E5 license requirement not met| 402 (Payment Required) |“User '{userId}' needs a valid license to access this API...” , “Tenant '{tenantId}' needs a valid license to access this API...”|
-|Model B is not supported for Patch API| 402 (Payment Required) |“Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...”|
-|Evaluation capacity exceeded|402 (Payment Required)|“Evaluation mode capacity has been exceeded. Use a valid billing model...”|
+|E5 license requirement not met| 402 (Payment Required) |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
+|Model B is not supported for Patch API| 402 (Payment Required) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
+|Evaluation capacity exceeded|402 (Payment Required)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
 
-> **Note**: A successful API call does not mean that the proper licensing is in place. 
-> Not all license violations can be detected, and grace periods might be granted in some cases.
+> **Note**: A successful API call does not mean that the proper licensing is in place. Not all license violations can be detected, and grace periods might be granted in some cases.
 
 ## Required licenses for `model=A` 
 
