@@ -21,8 +21,7 @@ In the future, apps will also be required to pay for the messages they consume b
 
 - [`model=B`](#modelb-requirements) is restricted to applications that do not perform a 
 [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
-[`model=B`](#modelb-requirements) is free to use today; 
-however, in the future, apps will pay based on the number of messages they consume. 
+[`model=B`](#modelb-requirements) starting July 5, 2022, billing events will reach general availability. 
 There are no licensing requirements for `model=B`.
 
 - [Evaluation Mode (default)](#evaluation-mode-default-requirements)
@@ -39,7 +38,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
-|  [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
 
 ## `model=B` requirements
@@ -47,7 +46,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 `model=B` is restricted to applications that do not perform a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
->**Note:** [`model=B`](#modelb-requirements) is free to use today; however, in the future, apps will pay based on the number of messages they consume. 
+>**Note:** [`model=B`](#modelb-requirements) starting July 5, 2022, billing events for these APIs will reach general availability. 
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
@@ -63,15 +62,19 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | 500 messages per month per app | N/A |  Minimum charge of 1 message per API request. |
-|  [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Minimum charge of 1 message per API request. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | 500 messages per month per app | N/A |  Minimum charge of 1 message per API request. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |   N/A |  500 messages per month per app | N/A |
 
 In evaluation mode, seeded capacity is shared across all APIs. 
-When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, 
-and subscriptions with licensing and payment requirements will not send change notifications.
+When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, and subscriptions with licensing and payment requirements will not send change notifications.
 
-> **Note**: A successful API call does not mean that the proper licensing is in place. 
-> Not all license violations can be detected, and grace periods might be granted in some cases.
+| Error type | Status code | Error message |
+|:-----------|:-----------|:-----------------|
+|E5 license requirement not met| 402 (Payment Required) |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
+|Model B is not supported for Patch API| 402 (Payment Required) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
+|Evaluation capacity exceeded|402 (Payment Required)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
+
+> **Note**: A successful API call does not mean that the proper licensing is in place. Not all license violations can be detected, and grace periods might be granted in some cases.
 
 ## Required licenses for `model=A` 
 
