@@ -34,7 +34,7 @@ GET /security/triggers/retentionEvents
 ```
 
 ## Optional query parameters
-This method supports the expand OData query parameters to help customize the response. For example, to retrieve the navigation property for event type, use `$expand=retentionEventType`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the expand OData query parameters to help customize the response. For example, to get the event type, use `$expand=retentionEventType`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
