@@ -219,33 +219,33 @@
         { 
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
-          "ChangedApiName": "IsMemberManagementRestricted",
+          "ChangedApiName": "isMemberManagementRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the **IsMemberManagementRestricted** property to the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
+          "Description": "Added the **isMemberManagementRestricted** property to the [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) resource.",
           "Target": "administrativeUnit"
         },
         { 
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
-          "ChangedApiName": "IsManagementRestricted",
+          "ChangedApiName": "isManagementRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the **IsManagementRestricted** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Description": "Added the **isManagementRestricted** property to the [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         { 
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
-          "ChangedApiName": "IsManagementRestricted",
+          "ChangedApiName": "isManagementRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the **IsManagementRestricted** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the **isManagementRestricted** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         },
         { 
           "Id": "12f096a3-6bd8-49db-8753-24c9272a288b",
           "ApiChange": "Property",
-          "ChangedApiName": "IsManagementRestricted",
+          "ChangedApiName": "isManagementRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the **IsManagementRestricted** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the **isManagementRestricted** property to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         }
       ],
