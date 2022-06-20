@@ -427,7 +427,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 ### Teamwork
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta, v1.0 | Added new permissions [TeamsAppInstallation.ReadForTeam](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](./permissions-reference.md#Teams-app-installation-permissions). |
+| Addition | beta, v1.0 | Added new permissions [TeamsAppInstallation.ReadForTeam](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](./permissions-reference.md#teams-app-installation-permissions). |
 | Addition | beta | Added delegated permissions support for [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) for channel and chat messages. |
 
 ### Workbooks and charts
