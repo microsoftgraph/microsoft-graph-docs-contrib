@@ -1,6 +1,6 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
-description: "Learn how to use the access reviews API in Microsoft Graph to review access to Azure AD resources."
+description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
