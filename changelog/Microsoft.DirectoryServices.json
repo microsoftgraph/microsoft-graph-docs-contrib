@@ -10946,6 +10946,56 @@
       "CreatedDateTime": "2022-06-08T22:26:16.0457928Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    { 
+      "ChangeList": [
+        {
+          "Id": "f2832338-3657-48c2-a43d-8dc0479c14b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordAuthenticationMethod** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "898b9646-f2fd-4496-8996-deeb66090ba8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/passwordauthenticationmethod?view=graph-rest-1.0) resource.",
+          "Target": "passwordAuthenticationMethod"
+        },
+        {
+            "Id": "4153c472-a4fd-4c57-8347-7a8edd7a769f",
+            "ApiChange": "Resource",
+            "ChangedApiName": "operation",
+            "ChangeType": "Addition",
+            "Description": "Added the [operation](https://docs.microsoft.com/en-us/graph/api/resources/operation?view=graph-rest-1.0) resource.",
+            "Target": "operation"
+          },
+        {
+            "Id": "f4f3672c-f6c3-4ec3-99ee-f3a27033fac0",
+            "ApiChange": "Method",
+            "ChangedApiName": "resetPassword",
+            "ChangeType": "Addition",
+            "Description": "Added the [resetPassword](https://docs.microsoft.com/en-us/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-1.0) method to the [passwordAuthenticationMethod] resource.",
+            "Target": "resetPassword"
+          },
+         {
+            "Id": "bc5a00c9-5b24-4259-9ef3-fb84cb2d8c91",
+            "ApiChange": "Method",
+            "ChangedApiName": "getAuthenticationOperation",
+            "ChangeType": "Addition",
+            "Description": "Added the [getAuthenticationOperation](https://docs.microsoft.com/en-us/graph/api/authenticationoperation-get?view=graph-rest-1.0) method to the [passwordAuthenticationMethod] resource.",
+            "Target": "getAuthenticationOperation"
+          }
+      ],
+      "Id": "d8bcf96e-c6b5-4a26-945b-29cfdfbc0986",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-19T20:39:16.0698787Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
