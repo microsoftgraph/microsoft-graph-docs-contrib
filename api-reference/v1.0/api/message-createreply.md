@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
-| Prefer: outlook.timezone | string | Sets the timezone in the email thread to the desired format while replying to an email. Values can be any of the outlook [supportedTimeZones](https://docs.microsoft.com/en-us/graph/api/outlookuser-supportedtimezones?view=graph-rest-1.0&tabs=http). If the header is not specified, by default UTC timezone is followed. Optional.|
+| Prefer: outlook.timezone | string | Sets the timezone in the email thread to the desired format while replying to an email. Values can be any of the outlook [supportedTimeZones](../api/outlookuser-supportedtimezones). If the header is not specified, by default UTC timezone is followed. Optional.|
 
 ## Request body
 This method does not require a request body.
