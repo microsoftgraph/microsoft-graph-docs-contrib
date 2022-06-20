@@ -1857,7 +1857,7 @@ items:
             href: api/ediscovery-tag-childtags.md
           - name: List tags as hierarchy
             href: api/ediscovery-tag-ashierarchy.md
-      - name: Records Management (preview)
+      - name: Records management (preview)
         items:
         - name: Overview
           href: resources/security-recordsManagement-overview.md
