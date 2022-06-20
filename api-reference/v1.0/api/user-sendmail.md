@@ -23,6 +23,8 @@ This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
 
+To learn more about the actual steps involved in the backend before a mail is delivered to recepient, see [here](/graph/concepts/outlook-things-to-know-about-send-mail).
+
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
