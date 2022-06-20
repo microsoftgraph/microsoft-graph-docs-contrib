@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [federate
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/
+POST https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/
 Content-Type: application/json
 
 {
