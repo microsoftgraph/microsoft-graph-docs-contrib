@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete a [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -26,20 +28,25 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ### Request
+
 The following is an example of a request.
 
 <!-- {
@@ -50,7 +57,9 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### Response
-The following is an example of the response. 
+
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -73,5 +82,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

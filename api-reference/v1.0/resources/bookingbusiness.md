@@ -15,7 +15,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method  | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of **bookingBusiness** objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
@@ -37,7 +37,8 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[Unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
@@ -53,6 +54,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |webSiteUrl|String|The URL of the business web site. The **webSiteUrl** property, together with **address**, **phone**, appear in the footer of a business scheduling page.|
 
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |appointments|[bookingAppointment](bookingappointment.md) collection| All the appointments of this business. Read-only. Nullable.|
