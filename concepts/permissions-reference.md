@@ -1725,7 +1725,7 @@ _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ---
-## RecordsManagement permissions
+## Records management permissions
 
 #### Delegated permissions
 
