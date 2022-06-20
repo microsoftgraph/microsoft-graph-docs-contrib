@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents how customers can manage their data, whether and for how long to retain or delete it.
+Represents how customers can manage their data, including whether and for how long to retain or delete it.
 
 ## Methods
 |Method|Return type|Description|

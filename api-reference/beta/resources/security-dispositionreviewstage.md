@@ -19,8 +19,8 @@ For details, see [Disposition of content](/microsoft-365/compliance/disposition)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create dispositionReviewStage](../api/security-retentionlabel-post.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Create a new [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
-|[Update dispositionReviewStage](../api/security-retentionlabel-update.md)|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md)|Update the properties of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object.|
+|[Create retentionLabel](../api/security-retentionlabel-post.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|When creating a new [retentionLabel](../resources/security-retentionlabel.md) object with `actionAfterRetentionPeriod=startDispositionReview`create new [dispositionReviewStage](../resources/security-dispositionreviewstage.md) by adding required properties.|
+|[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the [retentionLabel](../resources/security-retentionlabel.md) object to update the properties of a [dispositionReviewStage](../resources/security-dispositionreviewstage.md) object by passig the required properties.|
 
 
 ## Properties
