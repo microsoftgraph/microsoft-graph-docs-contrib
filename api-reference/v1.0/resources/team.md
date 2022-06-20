@@ -85,8 +85,8 @@ For a POST request example, see [Request (create team in migration state)](/micr
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |allChannels|[channel](channel.md) collection|List of channels either hosted in or shared with the team (incoming channels).|
-|incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |channels|[channel](channel.md) collection|The collection of channels and messages associated with the team.|
+|incomingChannels|[channel](channel.md) collection|List of [channels](../resources/channel.md) shared with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
