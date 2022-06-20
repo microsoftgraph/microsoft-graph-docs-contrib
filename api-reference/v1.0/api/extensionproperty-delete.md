@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete an [extensionProperty](../resources/extensionproperty.md).
+Delete an [extensionProperty](../resources/extensionproperty.md) object. You can delete only properties that aren't synced from on-premises active directory.
 
 ## Permissions
 

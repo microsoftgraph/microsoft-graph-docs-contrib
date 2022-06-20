@@ -38,7 +38,7 @@ Inherits from [directoryObject](directoryobject.md).
 | [Create extensionProperties](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [List extensionProperties](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
 | [Get extensionProperty](../api/extensionproperty-get.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
-| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. |
+| [Delete extensionProperty](../api/extensionproperty-delete.md) | None | Delete an extension property from an application object. You can delete only properties that aren't synced from on-premises active directory. |
 
 > [!TIP]
 > 1. To set a value for the extension property to an instance of a resource that is specified in **targetObjects**, use the Update operation of the resource. For example, the [Update user](../api/user-update.md) API to set the value for a user.
