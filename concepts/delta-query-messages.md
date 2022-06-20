@@ -55,6 +55,14 @@ See the [example](#example-to-synchronize-messages-in-a-folder) below to learn h
   - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
 
+Additionally, to return only certain type of changes (created, updated or deleted) in the delta query's response, you can optionally filter based on the type of change using a custom query filter on the _changeType_. Possible values are `created`, `updated` and `deleted`.
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailfolders/{folderId}/messages/delta?changeType=created
+GET /me/mailfolders/{folderId}/messages/delta?changeType=updated
+GET /me/mailfolders/{folderId}/messages/delta?changeType=deleted
+```
+
 ### Optional request header
 
 Each delta query GET request returns a collection of one or more messages in the response. You can optionally specify
