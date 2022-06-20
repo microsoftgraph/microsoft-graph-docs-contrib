@@ -38,49 +38,42 @@ You can use the extension attributes 1-15 to store up to 15 string values on a *
 
 #### Developer experience
 
-The following examples show how the data is presented resource instances.
+The following example shows how the data in extension attributes 1-15 is presented on the user resource instance.
 
-##### Example: Extension attributes on a user object
+##### Request
 
-```http
-"onPremisesExtensionAttributes": {
-        "extensionAttribute1": "Contractor",
-        "extensionAttribute2": "50",
-        "extensionAttribute3": null,
-        "extensionAttribute4": "1478354",
-        "extensionAttribute5": "10239390",
-        "extensionAttribute6": null,
-        "extensionAttribute7": null,
-        "extensionAttribute8": null,
-        "extensionAttribute9": null,
-        "extensionAttribute10": "11",
-        "extensionAttribute11": null,
-        "extensionAttribute12": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF47SPDLT)/cn=Recipients/cn=5ee781fc7egc7aa0b9394bddb44e7f04-Adele Vance",
-        "extensionAttribute13": null,
-        "extensionAttribute14": null,
-        "extensionAttribute15": null
-    }
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExtensionAttributes
 ```
 
-##### Example: Extension attributes on a device object
+##### Response
 
 ```http
-"extensionAttributes": {
-    "extensionAttribute1": null,
-    "extensionAttribute2": null,
-    "extensionAttribute3": null,
-    "extensionAttribute4": null,
-    "extensionAttribute5": null,
-    "extensionAttribute6": null,
-    "extensionAttribute7": null,
-    "extensionAttribute8": null,
-    "extensionAttribute9": null,
-    "extensionAttribute10": null,
-    "extensionAttribute11": null,
-    "extensionAttribute12": null,
-    "extensionAttribute13": null,
-    "extensionAttribute14": null,
-    "extensionAttribute15": null
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,onPremisesExtensionAttributes)",
+    "value": [
+        {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "onPremisesExtensionAttributes": {
+                "extensionAttribute1": "Contractor",
+                "extensionAttribute2": "50",
+                "extensionAttribute3": null,
+                "extensionAttribute4": "1478354",
+                "extensionAttribute5": "10239390",
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": "11",
+                "extensionAttribute11": null,
+                "extensionAttribute12": "/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF47SPDLT)/cn=Recipients/cn=5ee781fc7egc7aa0b9394bddb44e7f04-Adele Vance",
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
 }
 ```
 
@@ -98,27 +91,49 @@ Directory extensions are managed through the [extensionProperty](/graph/api/reso
 
 The following example shows a directory extension definition.
 
+##### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
+```
+
+##### Response
+
 ```http
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties/$entity",
-    "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
-    "deletedDateTime": null,
-    "appDisplayName": "jobStatTracker",
-    "dataType": "String",
-    "isSyncedFromOnPremises": false,
-    "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup",
-    "targetObjects": [
-        "User"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties",
+    "value": [
+        {
+            "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
+            "deletedDateTime": null,
+            "appDisplayName": "jobStatTracker",
+            "dataType": "String",
+            "isSyncedFromOnPremises": false,
+            "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup",
+            "targetObjects": [
+                "User"
+            ]
+        }
     ]
 }
 ```
 
-The following example shows how the custom properties and associated data are presented on a resource instance.
+The following example shows how the custom properties and associated data are presented on a resource instance. The extension property will be returned by default through the `beta` endpoint, but only on `$select` through the `v1.0` endpoint.
 
+##### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup,extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately
+```
+
+##### Response
 ```http
 {
-    "extension_25883231668a43a780b25685c3f874bc_jobGroup": "JobGroupK",
-    "extension_25883231668a43a780b25685c3f874bc_shareReviewsPrivately": "Yes",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup,extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately)",
+    "value": [
+        {
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup": "JobGroupK",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately": "Yes"
+        }
+    ]
 }
 ```
 
@@ -150,41 +165,63 @@ Unlike open extensions, you manage the [schema extension definitions](/graph/api
 
 The following example shows a schema extension definition.
 
+##### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/schemaExtensions
+```
+
+##### Response
+
 ```http
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "device"
-    ],
-    "status": "InDevelopment",
-    "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
-    "properties": [
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions",
+    "value": [
         {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
+            "id": "ext6zw22v9e_graphLearnCourses",
+            "description": "Graph Learn training courses extensions",
+            "targetTypes": [
+                "user"
+            ],
+            "status": "Available",
+            "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
+            "properties": [
+                {
+                    "name": "courseId",
+                    "type": "Integer"
+                },
+                {
+                    "name": "courseName",
+                    "type": "String"
+                },
+                {
+                    "name": "courseType",
+                    "type": "String"
+                }
+            ]
         }
     ]
 }
 ```
 
-The following example shows how the custom properties and associated data is presented on a resource instance. You read the custom properties on a resource instance only by specifying the extension name in a $select request. For example, `../users?$select=graphlearn_courses`.
+The following example shows how the custom properties and associated data is presented on a resource instance. You read the custom properties on a resource instance only by specifying the extension name in a `$select` request.
 
+
+##### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5?$select=id,displayName,ext6zw22v9e_graphLearnCourses
+```
+
+##### Response
 ```http
 {
-	"graphlearn_courses": {
-	    "courseId":"123",
-	    "courseName":"New Managers",
-	    "courseType":"Online"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,ext6zw22v9e_graphLearnCourses)/$entity",
+    "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
+    "displayName": "MOD Administrator",
+    "ext6zw22v9e_graphLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseId": 100,
+        "courseName": "Explore Microsoft Graph",
+        "courseType": "Online"
     }
 }
 ```
@@ -207,6 +244,13 @@ The **extensionName** property is the only *pre-defined*, writable property in a
 
 The following example shows an open type definition and how the custom properties and associated data is presented on a resource instance.
 
+
+##### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
+```
+
+##### Response
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('3fbd929d-8c56-4462-851e-0eb9a7b3a2a5')/extensions",
