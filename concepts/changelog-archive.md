@@ -592,8 +592,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta, v1.0 | Added new delegated permissions [AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions), [ChatMessage.Send](./permissions-reference.md#chatmessage-permissions), [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser](./permissions-reference.md#Teams-app-installation-permissions). |
-| Addition | beta, v1.0 | Added new application permissions [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser.All](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser.All](./permissions-reference.md#Teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser.All](./permissions-reference.md#Teams-app-installation-permissions). |
+| Addition | beta, v1.0 | Added new delegated permissions [AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions), [ChatMessage.Send](./permissions-reference.md#chatmessage-permissions), [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser](./permissions-reference.md#teams-app-installation-permissions). |
+| Addition | beta, v1.0 | Added new application permissions [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser.All](./permissions-reference.md#teams-app-installation-permissions). |
 | Addition | beta, v1.0 | Added support for getting the [filesFolder](/graph/api/channel-get-filesfolder?view=graph-rest-1.0) of a [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
 |Addition | beta, v1.0 | Added [primaryChannel](/graph/api/team-get-primarychannel?view=graph-rest-1.0) navigation property to [team](/graph/api/resources/team?view=graph-rest-1.0) resource type.|
 |Addition | beta | Added [members](/graph/api/team-post-members?view=graph-rest-beta) navigation property to [team](/graph/api/resources/team?view=graph-rest-beta) resource type, enabling members to be added with increased reliability and lower latency.|
@@ -721,7 +721,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for sending [channel messages](/graph/api/resources/chatmessage?view=graph-rest-1.0) and channel message replies.|
 | Addition | beta | Added the **azureADAppId** property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta).|
-| Addition | beta | Added permissions for [resource-specific consent](./permissions-reference.md#teams-resource-specific-consent-permissions).|
+| Addition | beta | Added permissions for [resource-specific consent](./permissions-reference.md#team-resource-specific-consent-permissions).|
 
 ### Teamwork | Shifts
 
@@ -1917,7 +1917,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.|
 | Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ to get and update the [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta) resource. |
 | Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_ to get and update the [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0) resource and get the [directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) resource. |
-| Addition | Beta | Added [new application permission](./permissions-reference.md#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Addition | Beta | Added [new application permission](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Addition | Beta | Added new resource type [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) to the [directory](/graph/api/resources/directory?view=graph-rest-beta) resource. Feature rollout policy helps tenant administrators to pilot features to specific groups before enabling them for entire organization.|
 
 
@@ -2157,7 +2157,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](webhooks-outlook-authz.md).|
+| Addition | beta | Added two types of lifecycle notifications, `subscriptionRemoved` and `missed`, available for Outlook resources. Subscribing apps can take appropriate actions to mitigate notification interruptions. For more details, see [Reduce missing subscriptions and notifications for Outlook resources (preview)](/webhooks-outlook-authz.md).|
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|
@@ -2745,7 +2745,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition         | Not applicable| Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).|
+|Addition         | Not applicable| Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](/data-connect-overview.md).|
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|
