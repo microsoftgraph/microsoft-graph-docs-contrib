@@ -28,10 +28,24 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Mail.ReadBasic.All , Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
+To get all changes in messages in the specified mailFolder:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
 GET /users/{id}/mailFolders/{id}/messages/delta
+```
+
+To specifically get only created, updated or deleted messages in the specified mailFolder:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailfolders/{id}/messages/delta?changeType=created
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=created
+
+GET /me/mailfolders/{id}/messages/delta?changeType=updated
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=updated
+
+GET /me/mailfolders/{id}/messages/delta?changeType=deleted
+GET /users/{id}/mailfolders/{id}/messages/delta?changeType=deleted
 ```
 
 ## Query parameters
