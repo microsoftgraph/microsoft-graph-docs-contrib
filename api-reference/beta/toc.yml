@@ -15495,7 +15495,7 @@ items:
         - name: Delete channel
           href: api/channel-delete.md
         - name: Remove incoming channel
-          href: api/team-delete-incomingchannel.md
+          href: api/team-delete-incomingchannels.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel
