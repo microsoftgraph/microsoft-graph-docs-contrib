@@ -27,7 +27,6 @@ the [userAgent](callrecords-useragent.md) type.
 |communicationServiceId|String|Immutable resource identifier of the Azure Communication Service associated with User agents based on Communication Services APIs.|
 |azureADAppId|String|The unique identifier for the application that is assigned to an application by Azure AD.|
 
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -46,7 +45,9 @@ The following is a JSON representation of the resource.
   "applicationVersion": "String",
   "headerValue": "String",
   "platform": "String",
-  "productFamily": "String"
+  "productFamily": "String",
+  "communicationServiceId": "String",
+  "azureADAppId": "String"
 }
 ```
 
