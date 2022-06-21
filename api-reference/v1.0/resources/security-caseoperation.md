@@ -19,11 +19,9 @@ An abstract entity that represents a long-running eDiscovery process. It contain
 
 - [Index operation](../resources/security-ediscoveryindexoperation.md)
 - [Hold operation](../resources/security-ediscoveryholdoperation.md)
-- [Purge data operation](../resources/security-ediscoverypurgedataoperation.md)
 - [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
 - [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
 - [Tag operation](../resources/security-ediscoverytagoperation.md)
-- [Export operation](../resources/security-ediscoveryexportoperation.md)
 
 ## Methods
 |Method|Return type|Description|

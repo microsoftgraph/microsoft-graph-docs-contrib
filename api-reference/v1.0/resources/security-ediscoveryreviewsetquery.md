@@ -23,9 +23,7 @@ Represents a review set query, which is used to query and cull data stored in an
 |[Get ediscoveryReviewSetQuery](../api/security-ediscoveryreviewsetquery-get.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Read the properties and relationships of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
 |[Update ediscoveryReviewSetQuery](../api/security-ediscoveryreviewsetquery-update.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Update the properties of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
 |[Delete ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-delete-queries.md)|None|Deletes an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
-|[export](../api/security-ediscoveryreviewsetquery-export.md)|None|Export documents that match the specified query from a review set.|
 |[applyTags](../api/security-ediscoveryreviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
-|[run](../api/security-ediscoveryreviewsetquery-run.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Get files from the query.|
 
 ## Properties
 |Property|Type|Description|

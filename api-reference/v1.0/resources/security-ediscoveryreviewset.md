@@ -21,9 +21,7 @@ Represents static set of electronically stored information collected for use in 
 |[List ediscoveryReviewSets](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) collection|Get a list of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) objects and their properties.|
 |[Create ediscoveryReviewSet](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Create a new [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
 |[Get ediscoveryReviewSet](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Read the properties and relationships of an [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.|
-|[export](../api/security-ediscoveryreviewset-export.md)|None|Initiate an export of data from the **reviewset**.|
 |[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|None|Add data from a **eDiscovery search** to a **reviewset**.|
-|[List files](../api/security-ediscoveryreviewset-list-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Get the ediscoveryFile resources from the files navigation property.|
 |[List queries](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Get the ediscoveryReviewSetQuery resources from the queries navigation property.|
 |[Create ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Create a new ediscoveryReviewSetQuery object.|
 
@@ -38,7 +36,6 @@ Represents static set of electronically stored information collected for use in 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|files|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) collection|Represents files within the review set.|
 |queries|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) collection|Represents queries within the review set.|
 
 ## JSON representation
