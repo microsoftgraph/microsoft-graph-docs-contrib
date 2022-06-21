@@ -14,37 +14,47 @@ emailAddress := "jonis@relecloud.com"
 requestBody.SetEmailAddress(&emailAddress)
 requestBody.SetAddresses( []PhysicalAddress {
 	msgraphsdk.NewPhysicalAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"postOfficeBox": "",
-		"street": "4567 Main Street",
-		"city": "Buffalo",
-		"state": "NY",
-		"countryOrRegion": "USA",
-		"postalCode": "98052",
-		"type": "home",
-	}
+postOfficeBox := ""
+	SetPostOfficeBox(&postOfficeBox)
+street := "4567 Main Street"
+	SetStreet(&street)
+city := "Buffalo"
+	SetCity(&city)
+state := "NY"
+	SetState(&state)
+countryOrRegion := "USA"
+	SetCountryOrRegion(&countryOrRegion)
+postalCode := "98052"
+	SetPostalCode(&postalCode)
+type := "home"
+	SetType(&type)
 	msgraphsdk.NewPhysicalAddress(),
-	SetAdditionalData(map[string]interface{}{
-		"postOfficeBox": "",
-		"street": "4570 Main Street",
-		"city": "Buffalo",
-		"state": "NY",
-		"countryOrRegion": "USA",
-		"postalCode": "98054",
-		"type": "business",
-	}
+postOfficeBox := ""
+	SetPostOfficeBox(&postOfficeBox)
+street := "4570 Main Street"
+	SetStreet(&street)
+city := "Buffalo"
+	SetCity(&city)
+state := "NY"
+	SetState(&state)
+countryOrRegion := "USA"
+	SetCountryOrRegion(&countryOrRegion)
+postalCode := "98054"
+	SetPostalCode(&postalCode)
+type := "business"
+	SetType(&type)
 }
 requestBody.SetPhones( []Phone {
 	msgraphsdk.NewPhone(),
-	SetAdditionalData(map[string]interface{}{
-		"number": "206-555-0100",
-		"type": "home",
-	}
+number := "206-555-0100"
+	SetNumber(&number)
+type := "home"
+	SetType(&type)
 	msgraphsdk.NewPhone(),
-	SetAdditionalData(map[string]interface{}{
-		"number": "206-555-0200",
-		"type": "business",
-	}
+number := "206-555-0200"
+	SetNumber(&number)
+type := "business"
+	SetType(&type)
 }
 bookingBusinessId := "bookingBusiness-id"
 result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Customers().Post(requestBody)

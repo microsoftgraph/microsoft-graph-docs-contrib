@@ -46,17 +46,32 @@ locationType := "Default"
 location.SetLocationType(&locationType)
 requestBody.SetLocations( []Location {
 	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Conf Room 3",
-	}
+displayName := "Conf Room 3"
+	SetDisplayName(&displayName)
 	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Fourth Coffee",
-	}
+displayName := "Fourth Coffee"
+	SetDisplayName(&displayName)
+address := msgraphsdk.NewPhysicalAddress()
+	SetAddress(address)
+street := "4567 Main St"
+	address.SetStreet(&street)
+city := "Redmond"
+	address.SetCity(&city)
+state := "WA"
+	address.SetState(&state)
+countryOrRegion := "US"
+	address.SetCountryOrRegion(&countryOrRegion)
+postalCode := "32008"
+	address.SetPostalCode(&postalCode)
+coordinates := msgraphsdk.NewOutlookGeoCoordinates()
+	SetCoordinates(coordinates)
+latitude := float64(47.672)
+	coordinates.SetLatitude(&latitude)
+longitude := float64(-102.103)
+	coordinates.SetLongitude(&longitude)
 	msgraphsdk.NewLocation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Home Office",
-	}
+displayName := "Home Office"
+	SetDisplayName(&displayName)
 }
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)

@@ -10,9 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewGroup()
 requestBody.SetAssignedLabels( []AssignedLabel {
 	msgraphsdk.NewAssignedLabel(),
-	SetAdditionalData(map[string]interface{}{
-		"labelId": "45cd0c48-c540-4358-ad79-a3658cdc5b88",
-	}
+labelId := "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+	SetLabelId(&labelId)
 }
 groupId := "group-id"
 graphClient.GroupsById(&groupId).Patch(requestBody)
