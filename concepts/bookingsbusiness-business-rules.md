@@ -1,6 +1,6 @@
 ---
 title: "Business rules to follow when creating or updating Bookings appointments"
-description: "Follow these business rules for business level settings and service level settings when using the create or update Bookings appointments APIs in Microsoft Graph."
+description: "Follow these business rules for business-level settings and service-level settings when using the create or update Bookings appointments APIs in Microsoft Graph."
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: "bookings"
@@ -15,9 +15,9 @@ End users or apps who create or update appointments via Microsoft Graph APIs (us
 
 If you use the [create](/graph/api/bookingbusiness-post-appointments) or [update](/graph/api/bookingappointment-update) appointment APIs with application permissions, you must follow the business rules described in this article.
 
-## Business level settings
+## Business-level settings
 
-Follow these business rules for business level settings.
+Follow these business rules for business-level settings.
 
 ### Business hours
 
@@ -38,9 +38,9 @@ For details about the scheduling policy, see [bookingSchedulingPolicy](/graph/ap
 > [!NOTE]
 > This setting is called **Staff control** in the Bookings web app.
 
-## Service level settings
+## Service-level settings
 
-Follow these business rules for service level settings.
+Follow these business rules for service-level settings.
 
 ### Scheduling
 
@@ -48,11 +48,11 @@ At a service level, the scheduling policy is inherited from the business. The cu
 
 ### Main policy  
 
-If a scheduling policy exists at both the service level and the business level, the service level policy takes precedence.
+If a scheduling policy exists at both the service level and the business level, the service-level policy takes precedence.
 
 ### Partially set policies
 
-If the user doesn't set a policy for the service level, it defaults to the business level policy setting.
+If the user doesn't set a policy for the service level, it defaults to the business-level policy setting.
 
 ### Pre-buffer
 

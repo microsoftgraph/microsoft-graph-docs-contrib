@@ -15,7 +15,7 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of a document are uploaded, the binary file is linked to the **printDocument**.
 
-## Make an HTTP request
+## Request
 
 Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 
@@ -41,7 +41,7 @@ Content-Length: 72797
 
 Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document.
 
-## Get an HTTP response
+## Response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
