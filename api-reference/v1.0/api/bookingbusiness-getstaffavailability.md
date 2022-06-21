@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the availability information of [staff members](../resources/bookingstaffmember.md) of a [Microsoft Bookings calendar](../resources/bookingappointment.md).
 
 ## Permissions
@@ -29,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-Get /solutions/bookingBusinesses/{id}/getStaffAvailability
+Post /solutions/bookingBusinesses/{id}/getStaffAvailability
 ```
 
 ## Request header
@@ -50,6 +48,7 @@ If successful, this method returns a `200 OK` response code and a [staffAvailabi
 ## Example
 
 ### Request
+
 The following is an example of a request.
 
 <!-- {
@@ -59,7 +58,7 @@ The following is an example of a request.
 
 ```http
 
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
+POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/getStaffAvailability 
 Content-Type: application/json 
 { 
     "staffIds": [ 
