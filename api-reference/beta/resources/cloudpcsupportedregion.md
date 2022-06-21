@@ -1,7 +1,7 @@
 ---
 title: "cloudPcSupportedRegion resource type"
 description: "Represents a supported region to establish an Azure network connection for Cloud PCs."
-author: "RuiHou105, Meadow201317"
+author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -27,7 +27,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 |:---|:---|:---|
 |id|String|Unique identifier for the supported region. Read-only.|
 |displayName|String|The name for the supported region. Read-only.|
-|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedRegionstatus-values)|The status of the supported region. Read-only.|
+|regionStatus|[cloudPcSupportedRegionStatus](#cloudpcsupportedregionstatus-values)|The status of the supported region. Read-only.|
 
 ### cloudPcSupportedRegionStatus values
 
