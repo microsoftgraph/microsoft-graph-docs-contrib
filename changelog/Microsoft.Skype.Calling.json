@@ -2335,6 +2335,22 @@
       "CreatedDateTime": "2018-09-01T00:00:00",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
-    }
-  ]
-}
+    },
+    {
+    "ChangeList": [
+      {
+        "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
+        "ApiChange": "Resource",
+        "ChangedApiName": "virtualAppointment",
+        "ChangeType": "Addition",
+        "Description": "Added the virtualAppointment resource.",
+        "Target": "virtualAppointment"
+      }
+    ],
+      "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2022-07-13T00:00:00",
+        "WorkloadArea": "Cloud communications",
+        "SubArea": "onlineMeeting"
+},
