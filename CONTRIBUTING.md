@@ -14,7 +14,7 @@ You can contribute to [Microsoft Graph documentation](https://developer.microsof
 
 - Contribute to articles via the [public Microsoft Graph developer docs repository](https://github.com/microsoftgraph/microsoft-graph-docs).
 - Report documentation bugs by scrolling to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback that will be tracked via [GitHub Issues](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
-      :::image type="content" source="includes/images/feedback-menu.png" alt-text="Report doc bugs from the related documentation page":::
+      ![Report doc bugs from the related documentation page](includes/images/feedback-menu.png)
 - Add or vote for documentation requests at [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 
