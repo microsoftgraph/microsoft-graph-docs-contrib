@@ -1,6 +1,6 @@
 ---
 title: "Working with groups in Microsoft Graph"
-description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
+description: "Use the groups API to create and manage different types of groups such as Microsoft 365 groups, security groups, mail-enabled security groups, and distribution groups."
 author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources.
 
-Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality. 
+Microsoft Graph exposes the groups API to create and manage different types of groups and group functionality.
 
 > [!NOTE]
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
@@ -27,7 +27,7 @@ Azure Active Directory (Azure AD) supports the following types of groups.
 - Distribution groups
 
 > [!NOTE]
-> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) which cannot be managed or retrieved through Microsoft Graph.
+> Microsoft also supports [dynamic distribution groups](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) which cannot be managed or retrieved through Microsoft Graph.
 
 Only Microsoft 365 and security groups can be managed through the Microsoft Graph groups API. Mail-enabled and distribution groups are read-only through Microsoft Graph.
 

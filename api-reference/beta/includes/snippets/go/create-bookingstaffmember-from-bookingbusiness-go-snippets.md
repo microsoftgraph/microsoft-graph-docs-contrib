@@ -22,49 +22,94 @@ useBusinessHours := true
 requestBody.SetUseBusinessHours(&useBusinessHours)
 requestBody.SetWorkingHours( []BookingWorkHours {
 	msgraphsdk.NewBookingWorkHours(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.bookingWorkHours",
-		"day@odata.type": "#microsoft.graph.dayOfWeek",
-		"day": "monday",
-		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
-		"timeSlots":  []Object {
+day := "monday"
+	SetDay(&day)
+	SetTimeSlots( []BookingWorkTimeSlot {
+		msgraphsdk.NewBookingWorkTimeSlot(),
+end := "17:00:00.0000000"
+		SetEnd(&end)
+start := "08:00:00.0000000"
+		SetStart(&start)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.bookingWorkTimeSlot",
 		}
 	}
-	msgraphsdk.NewBookingWorkHours(),
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingWorkHours",
 		"day@odata.type": "#microsoft.graph.dayOfWeek",
-		"day": "tuesday",
 		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
-		"timeSlots":  []Object {
-		}
 	}
 	msgraphsdk.NewBookingWorkHours(),
-	SetAdditionalData(map[string]interface{}{
-		"@odata.type": "#microsoft.graph.bookingWorkHours",
-		"day@odata.type": "#microsoft.graph.dayOfWeek",
-		"day": "wednesday",
-		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
-		"timeSlots":  []Object {
+day := "tuesday"
+	SetDay(&day)
+	SetTimeSlots( []BookingWorkTimeSlot {
+		msgraphsdk.NewBookingWorkTimeSlot(),
+end := "17:00:00.0000000"
+		SetEnd(&end)
+start := "08:00:00.0000000"
+		SetStart(&start)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.bookingWorkTimeSlot",
 		}
 	}
-	msgraphsdk.NewBookingWorkHours(),
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingWorkHours",
 		"day@odata.type": "#microsoft.graph.dayOfWeek",
-		"day": "thursday",
 		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
-		"timeSlots":  []Object {
-		}
 	}
 	msgraphsdk.NewBookingWorkHours(),
+day := "wednesday"
+	SetDay(&day)
+	SetTimeSlots( []BookingWorkTimeSlot {
+		msgraphsdk.NewBookingWorkTimeSlot(),
+end := "17:00:00.0000000"
+		SetEnd(&end)
+start := "08:00:00.0000000"
+		SetStart(&start)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.bookingWorkTimeSlot",
+		}
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingWorkHours",
 		"day@odata.type": "#microsoft.graph.dayOfWeek",
-		"day": "friday",
 		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
-		"timeSlots":  []Object {
+	}
+	msgraphsdk.NewBookingWorkHours(),
+day := "thursday"
+	SetDay(&day)
+	SetTimeSlots( []BookingWorkTimeSlot {
+		msgraphsdk.NewBookingWorkTimeSlot(),
+end := "17:00:00.0000000"
+		SetEnd(&end)
+start := "08:00:00.0000000"
+		SetStart(&start)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.bookingWorkTimeSlot",
 		}
+	}
+	SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.bookingWorkHours",
+		"day@odata.type": "#microsoft.graph.dayOfWeek",
+		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
+	}
+	msgraphsdk.NewBookingWorkHours(),
+day := "friday"
+	SetDay(&day)
+	SetTimeSlots( []BookingWorkTimeSlot {
+		msgraphsdk.NewBookingWorkTimeSlot(),
+end := "17:00:00.0000000"
+		SetEnd(&end)
+start := "08:00:00.0000000"
+		SetStart(&start)
+		SetAdditionalData(map[string]interface{}{
+			"@odata.type": "#microsoft.graph.bookingWorkTimeSlot",
+		}
+	}
+	SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.bookingWorkHours",
+		"day@odata.type": "#microsoft.graph.dayOfWeek",
+		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
 	}
 }
 requestBody.SetAdditionalData(map[string]interface{}{

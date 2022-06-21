@@ -12,6 +12,21 @@ author: "MSGraphDocsvTeam"
 Namespace: microsoft.graph
 
 
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
 #### authenticationProtocol values
 
 |Member|
@@ -2923,6 +2938,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 

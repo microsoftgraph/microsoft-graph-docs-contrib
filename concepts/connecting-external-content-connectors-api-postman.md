@@ -1,6 +1,6 @@
 ---
 title: "Use Postman with the Microsoft Graph connectors API"
-description: "Try the Microsoft Graph connectors API with Postman."
+description: "Follow the steps in this guide to create a Microsoft Graph connectors API by using the Postman API platform."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -271,7 +271,7 @@ After the connection state changes from **draft** to **ready**, you can ingest i
 
 If your external service uses non-Azure AD access control lists (ACLs), sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
+External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 This is an example of a request.
 
