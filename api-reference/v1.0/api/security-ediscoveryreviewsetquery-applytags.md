@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Apply tags to files in eDiscovery review set. [Learn more.](https://docs.microsoft.com/microsoft-365/compliance/tagging-documents)
+Apply tags to files in eDiscovery review set. [Learn more.](/microsoft-365/compliance/tagging-documents)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

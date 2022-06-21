@@ -1,6 +1,6 @@
 ---
 title: "siteSource resource type"
-description: ""The container for a site associated with a custodian."
+description: "The container for a site associated with a custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 The container for a site associated with a custodian.
 
-IInherits from [dataSource](../resources/security-datasource.md).
+Inherits from [dataSource](../resources/security-datasource.md).
 
 
 ## Methods
