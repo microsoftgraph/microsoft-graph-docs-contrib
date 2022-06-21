@@ -1,13 +1,13 @@
 ---
-title: "Get online meeting artifacts and permissions"
-description: "Find out about online meeting artifacts, such as attendance reports and recordings, and the permissions needed to fetch them."
+title: "Online meeting artifacts and permissions"
+description: "Learn about online meeting artifacts, such as attendance reports and recordings, and the permissions needed to fetch them."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ms.date: "09/20/2021"
 ---
 
-# Get online meeting artifacts and permissions
+# Online meeting artifacts and permissions
 
 Online meeting artifacts are content produced for the duration of an online meeting or [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). You can use the [Get onlineMeeting](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) operation to get the following meeting artifacts:
 

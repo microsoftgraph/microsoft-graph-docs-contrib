@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Attach large files
             href: outlook-large-attachments.md
-          - name: Get immutable IDs
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
@@ -155,11 +155,11 @@ items:
             href: choose-online-meeting-api.md
           - name: Configure application access
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Get call records
+          - name: Obtain call records
             href: cloud-communications-callrecords.md
           - name: Manage bot phone numbers
             href: cloud-communications-phone-number.md
-          - name: Get online meeting artifacts and permissions
+          - name: Obtain online meeting artifacts and permissions
             href: cloud-communications-online-meeting-artifacts.md
           - name: Identify large gallery view participants
             href: cloud-communications-identifylargegalleryview.md
@@ -340,7 +340,7 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
-          - name: Immutable ID
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
@@ -419,7 +419,7 @@ items:
             displayName: Outlook, Outlook contacts, Outlook contact, People, personal contacts
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
-          - name: Immutable ID
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md

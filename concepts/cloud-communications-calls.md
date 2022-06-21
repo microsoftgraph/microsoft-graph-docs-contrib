@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Use supported call types
+# Supported call types
 
 This article describes the supported call types in the cloud communications API in Microsoft Graph and how they're used for the signaling process.
 
