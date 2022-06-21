@@ -32,4 +32,4 @@ Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central API
 
 Looking for the API reference for this service?
 
-Find out more about the [Dynamics 365 Business Central API in Microsoft Graph beta](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta&preserve-view=true) and the use cases supported in Microsoft Graph.
+- [Dynamics 365 Business Central API in Microsoft Graph beta](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta&preserve-view=true)
