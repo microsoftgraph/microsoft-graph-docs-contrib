@@ -233,49 +233,49 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | Addition | beta | Added the inheritsPermissionsFrom property to the [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource. |
 | Addition | beta | Added the **connectedOrganizationState** enumeration type and the **state** property to the [connectedOrganization](/graph/api/resources/connectedOrganization?view=graph-rest-beta) resource.|
 | Change   | beta | Renamed **requestorSettings** allowed value from "AllExistingConnectedOrganizationSubjects" to "AllConfiguredConnectedOrganizationSubjects" |
-| Addition | beta | Added the following properties to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type:<ul><li>**defaultUserRolePermissions**</li><li>**allowedToUseSSPR**</li><li>**allowedToSignUpEmailBasedSubscriptions**</li><li>**allowEmailVerifiedUsersToJoinOrganization**</li></ul>|
+| Addition | beta | Added the following properties to the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource type:<ul><li>**defaultUserRolePermissions**</li><li>**allowedToUseSSPR**</li><li>**allowedToSignUpEmailBasedSubscriptions**</li><li>**allowEmailVerifiedUsersToJoinOrganization**</li></ul>|
 
 ### Identity and access | Identity and sign-in
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) entity for managing user flows in an Azure Active Directory B2C tenant. |
-| Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
+| Addition | beta | Added the [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing user flows in an Azure Active Directory B2C tenant. |
+| Addition | beta | Added the [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) entity for managing self-service sign up user flows in an Azure Active Directory tenant. |
 
 ### People and workplace intelligence | Profile
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the following new relationships to the [profile](/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta)</li></ul>|
+| Addition | Beta | Added the following new relationships to the [profile](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true) API with associated entities and methods: <ul><li>[addresses](/graph/api/resources/itemAddress?view=graph-rest-beta&preserve-view=true)</li><li>[anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta&preserve-view=true)</li><li>[awards](/graph/api/resources/personAward?view=graph-rest-beta&preserve-view=true)</li><li>[certifications](/graph/api/resources/personCertification?view=graph-rest-beta&preserve-view=true)</li><li>[notes](/graph/api/resources/personAnnotation?view=graph-rest-beta&preserve-view=true)</li><li>[patents](/graph/api/resources/itemPatent?view=graph-rest-beta&preserve-view=true)</li><li>[publications](/graph/api/resources/itemPublication?view=graph-rest-beta&preserve-view=true)</li></ul>|
 
 ### Reports | Microsoft 365 usage reports
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method. |
-| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method. |
-| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta&preserve-view=true) method. |
+| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta&preserve-view=true) method. |
+| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta&preserve-view=true) method. |
 
 ### Teamwork
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added the **contentBytes** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
-|Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource.|
-|Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource.|
-|Addition|beta|Added the **isMembershipLimitedToOwners** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+|Addition|beta|Added the **contentBytes** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the **contentType** property to the [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added support for sending inline images to the [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) resource.|
+|Addition|beta|Added the **isMembershipLimitedToOwners** property to the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource.|
 |Addition|beta and v1.0|Added the **publishingState** property to the [teamsAppDefinition](/graph/api/resources/teamsappdefinition) resource.|
-|Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Delete app](/graph/api/teamsapp-delete)</li>|
-|Addition|beta and v1.0|Added support for the `requiresReview` query parameter to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta)</li><li>[Update app](/graph/api/teamsapp-update?view=graph-rest-beta)|
-|Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0) directly (without first creating a group), which also enables creating class teams.|
-|Addition | v1.0 | Added the [members](/graph/api/team-post-members?view=graph-rest-1.0) navigation property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource type, enabling members to be added with increased reliability and lower latency.|
+|Addition|beta and v1.0|Added **AppCatalog.Submit** delegated permission to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true)</li><li>[Delete app](/graph/api/teamsapp-delete)</li>|
+|Addition|beta and v1.0|Added support for the `requiresReview` query parameter to:<br><ul><li> [Publish apps](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true)</li><li>[Update app](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true)|
+|Addition|v1.0|Added support for [creating a team](/graph/api/team-post?view=graph-rest-1.0&preserve-view=true) directly (without first creating a group), which also enables creating class teams.|
+|Addition | v1.0 | Added the [members](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true) navigation property to the [team](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) resource type, enabling members to be added with increased reliability and lower latency.|
 
 ### To-do tasks
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.|
-|Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.|
+|Addition|beta|Introduced the To Do API. Added the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true), [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta&preserve-view=true), and [linkedResource](/graph/api/resources/linkedresource?view=graph-rest-beta&preserve-view=true) resources, and CRUD operations.|
+|Change|beta|Deprecated the Outlook tasks API, including [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta&preserve-view=true), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta&preserve-view=true), and related operations and methods.|
 
 ## July 2020
 
@@ -283,10 +283,10 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-1.0) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) entities. |
-| Addition | v1.0 | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0) and [decline](/graph/api/event-decline?view=graph-rest-1.0) methods of **event**. |
-| Addition | v1.0 | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0), and in addition, includes the **proposedNewTime** and **responseType** properties. |
-| Addition | v1.0 | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) complex type. |
+| Addition | v1.0 | Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0&preserve-view=true) entities. |
+| Addition | v1.0 | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-1.0&preserve-view=true) and [decline](/graph/api/event-decline?view=graph-rest-1.0&preserve-view=true) methods of **event**. |
+| Addition | v1.0 | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-1.0&preserve-view=true) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true), and in addition, includes the **proposedNewTime** and **responseType** properties. |
+| Addition | v1.0 | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-1.0&preserve-view=true) complex type. |
 
 ### Change notifications
 
@@ -299,7 +299,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) operation for meeting updates.|
+| Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation for meeting updates.|
 | Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./webhooks.md). |
 
 ### Cloud communications | Call records
@@ -308,14 +308,14 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [get a direct routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta).|
-|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta).</li>|
+|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) and [get a direct routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true).|
+|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta&preserve-view=true)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta&preserve-view=true).</li>|
 
 ### Compliance | eDiscovery
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Introduced the compliance eDiscovery API, including the [ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta), and [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta), and operations. |
+| Addition | beta | Introduced the compliance eDiscovery API, including the [ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta&preserve-view=true), [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta&preserve-view=true), and [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta&preserve-view=true), and operations. |
 
 ### Devices and apps | Cloud printing
 
@@ -323,11 +323,11 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | :-------------- | :------------ | :--------------------------------------- |
 | Change | beta | The [Update printer](/graph/api/printer-update) method now supports application permissions and IPP encoding.|
 | Addition | beta | The following permission scopes have been added:<ul><li>Printer.ReadWrite.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintJob.ReadWrite.All</li></ul>See the [permissions reference](./permissions-reference.md#universal-print-permissions) for details. |
-| Addition | beta | Added the following resources to the Universal Print API: <ul><li>[printTask](/graph/api/resources/printtask?view=graph-rest-beta)</li><li>[printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta)</li><li>[printTaskStatus](/graph/api/resources/printtaskstatus?view=graph-rest-beta)</li><li>[printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta)</li></ul> |
-| Change | beta | [Get printJob](/graph/api/printjob-get?view=graph-rest-beta) now supports application permissions, and `$expand=tasks`. |
-| Addition | beta | Added the [Redirect printJob](/graph/api/printjob-redirect?view=graph-rest-beta) method. |
-| Addition | beta | Added the following methods related to [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta): <ul><li>[List taskDefinitions](/graph/api/print-list-taskdefinitions?view=graph-rest-beta)</li><li>[Create taskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta)</li><li>[Update taskDefinition](/graph/api/print-update-taskdefinition?view=graph-rest-beta)</li><li>[Delete taskDefinition](/graph/api/print-delete-taskdefinition?view=graph-rest-beta)</li></ul> |
-| Addition | beta | Added the following methods related to [printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta): <ul><li>[List taskTriggers](/graph/api/printer-list-tasktriggers?view=graph-rest-beta)</li><li>[Get taskTrigger](/graph/api/printtasktrigger-get?view=graph-rest-beta)</li><li>[Create taskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta)</li><li>[Delete taskTrigger](/graph/api/printer-delete-tasktrigger?view=graph-rest-beta)</li></ul> |
+| Addition | beta | Added the following resources to the Universal Print API: <ul><li>[printTask](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskStatus](/graph/api/resources/printtaskstatus?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true)</li></ul> |
+| Change | beta | [Get printJob](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) now supports application permissions, and `$expand=tasks`. |
+| Addition | beta | Added the [Redirect printJob](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) method. |
+| Addition | beta | Added the following methods related to [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true): <ul><li>[List taskDefinitions](/graph/api/print-list-taskdefinitions?view=graph-rest-beta&preserve-view=true)</li><li>[Create taskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta&preserve-view=true)</li><li>[Update taskDefinition](/graph/api/print-update-taskdefinition?view=graph-rest-beta&preserve-view=true)</li><li>[Delete taskDefinition](/graph/api/print-delete-taskdefinition?view=graph-rest-beta&preserve-view=true)</li></ul> |
+| Addition | beta | Added the following methods related to [printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true): <ul><li>[List taskTriggers](/graph/api/printer-list-tasktriggers?view=graph-rest-beta&preserve-view=true)</li><li>[Get taskTrigger](/graph/api/printtasktrigger-get?view=graph-rest-beta&preserve-view=true)</li><li>[Create taskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-beta&preserve-view=true)</li><li>[Delete taskTrigger](/graph/api/printer-delete-tasktrigger?view=graph-rest-beta&preserve-view=true)</li></ul> |
 
 ### Devices and apps | Corporate management
 
