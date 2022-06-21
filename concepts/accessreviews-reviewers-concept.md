@@ -13,11 +13,9 @@ The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview)
 
 The primary reviewers are configured in the **reviewers** property of the access reviews [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource.  In addition, you can specify fallback reviewers by using the **fallbackReviewers** property. These properties are not required when you create a self-review (where users review their own access).
 
-## Configure reviewers
-
 To configure the reviewers and fallback reviewers, set the values of **query**, **queryRoot**, and **queryType** properties of **accessReviewReviewerScope**. For descriptions of these properties, see the [accessReviewReviewerScope](/graph/api/resources/accessreviewreviewerscope) resource type.
 
-### Example 1: A self-review
+## Example 1: A self-review
 
 ```http
 "reviewers": []
@@ -27,7 +25,7 @@ To configure a self-review, do not specify the **reviewers** property, or supply
 
 If the corresponding access review **scope** targets B2B direct connect users and teams with shared channels, the team owner will be assigned to review access for the B2B direct connect users.
 
-### Example 2: A specific user as the reviewer
+## Example 2: A specific user as the reviewer
 
 ```http
 "reviewers": [
@@ -38,7 +36,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ]
 ```
 
-### Example 3: Members of a group as reviewers
+## Example 3: Members of a group as reviewers
 
 ```http
 "reviewers": [
@@ -49,7 +47,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ]
 ```
 
-### Example 4: Group owners as reviewers
+## Example 4: Group owners as reviewers
 ```http
 "reviewers": [
     {
@@ -70,7 +68,7 @@ To assign only the group owners from a specific country as reviewers:
 ]
 ```
 
-### Example 5: People managers as reviewers
+## Example 5: People managers as reviewers
 
 ```http
 "reviewers": [
@@ -86,7 +84,7 @@ Because `./manager` is a relative query, specify the **queryRoot** property with
 
 If the corresponding access review **scope** targets B2B direct connect users and teams with shared channels, the team owner will be assigned to review access for the B2B direct connect users.
 
-### Example 6: Application owners as reviewers
+## Example 6: Application owners as reviewers
 
 ```http
 "reviewers": [

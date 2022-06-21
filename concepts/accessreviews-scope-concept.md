@@ -155,7 +155,7 @@ The following example scopes the review to direct members of all teams who are g
     
 Additionally, because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
 
-This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 #### Review all inactive guest users assigned to all Teams
 
@@ -298,7 +298,7 @@ In this example, the access review scope is all users who are members of a team,
 }
 ```
 
-To review B2B direct connect users and teams within shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 7](#example-7-review-all-inactive-guest-users-assigned-to-all-teams-direct-members-only), won't include B2B direct connect users and teams within shared channels.
+To review B2B direct connect users and teams within shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 6](#review-all-inactive-guest-users-assigned-to-all-teams), won't include B2B direct connect users and teams within shared channels.
 
 > [!NOTE]
 > Access review of B2B direct connect users and teams is only supported in single-stage access reviews and not in multi-stage access reviews.
