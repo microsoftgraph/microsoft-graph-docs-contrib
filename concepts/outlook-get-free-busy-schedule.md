@@ -1,12 +1,12 @@
 ---
-title: "Get free/busy schedule of users and resources"
+title: "Get free/busy schedule of Outlook calendar users and resources"
 description: "Use the getSchedule action to get the availability information of one or more users, distribution lists, or resources for a specific period of time."
 author: "tariq-sharif"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Get free/busy schedule of users and resources
+# Get free/busy schedule of Outlook calendar users and resources
 
 In a work or school setting, a common scenario is to see when a user is free for meeting, or to browse the availability of a team, room, or equipment for a time period.
 

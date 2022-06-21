@@ -1,6 +1,6 @@
 ---
 title: "Share or delegate a calendar in Outlook"
-description: "In Outlook, as a calendar owner, you can share the calendar with another user or delegate another user to manage meetings in your primary calendar."
+description: "Use the Outlook calendar API to enable a calendar owner to share the calendar with another user or delegate another user to manage meetings in that calendar."
 author: "juforan"
 ms.localizationpriority: high
 ms.prod: "outlook"
