@@ -1,6 +1,6 @@
 ---
-title: "Configure an application access policy using the cloud communications API"
-description: "Use the cloud communications API in Microsoft Graph to configure an access policy that allows applications to access online meetings on behalf of a user."
+title: "Configure an application access policy using the communications API"
+description: "Use the communications API in Microsoft Graph to configure an access policy that allows applications to access online meetings on behalf of a user."
 author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Configure application access to online meetings
 
-You can use the cloud communications API in Microsoft Graph to configure an application access policy that allows applications to access online meetings on behalf of a user.
+You can use the communications API in Microsoft Graph to configure an application access policy that allows applications to access online meetings on behalf of a user.
 
 In some cases, such as for background services or daemon apps that run on a server without the presence of a signed-in user, it is appropriate for an app to call Microsoft Graph to take actions on behalf of a user. For example, an app might need to call Microsoft Graph to schedule multiple meetings based on published schedules (such as courses) or external scheduling tools. In these cases, the user that the application acts on behalf of is identified as the meeting organizer.
 
@@ -91,4 +91,4 @@ Follow the steps in this article to create and/or grant an application access po
 - [Get-CsApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
 - [Set-CsApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
 - [Remove-CsApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Communications API overview](cloud-communications-concept-overview.md)

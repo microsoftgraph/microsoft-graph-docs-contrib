@@ -1,6 +1,6 @@
 ---
-title: "Media hosting options in the cloud communications API"
-description: "Use the cloud communications API in Microsoft Graph to enable your bots to send and receive audio- and video-related content. Choose a media hosting option."
+title: "Media hosting options in the communications API"
+description: "Use the communications API in Microsoft Graph to enable your bots to send and receive audio- and video-related content. Choose a media hosting option."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Choose a media hosting option
 
-Use the cloud communications API in Microsoft Graph to enable your bots to send and receive audio- and video-related content. By making use of media, you can create a more interactive experience between your bots and users.
+Use the communications API in Microsoft Graph to enable your bots to send and receive audio- and video-related content. By making use of media, you can create a more interactive experience between your bots and users.
 
 This article can help you determine which media hosting option is right for you based on your needs: service-hosted media or application-hosted media.
 
@@ -42,4 +42,4 @@ For an example that shows you how to create a bot that uses application-hosted m
 ## See also
 
 - [Calls permissions](./permissions-reference.md#calls-permissions)
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Communications API overview](cloud-communications-concept-overview.md)

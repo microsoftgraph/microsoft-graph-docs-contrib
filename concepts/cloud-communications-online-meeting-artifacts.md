@@ -42,4 +42,4 @@ After that date, the _OnlineMeetingArtifact.Read.All_ permissions will be requir
 
 ## See also
 
-- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Communications API overview](cloud-communications-concept-overview.md)
