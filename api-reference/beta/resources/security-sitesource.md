@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.siteSource",
-  "baseType": "microsoft.graph.ediscovery.dataSource",
+  "baseType": "microsoft.graph.security.dataSource",
   "openType": false
 }
 -->

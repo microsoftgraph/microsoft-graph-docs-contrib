@@ -44,7 +44,7 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |id|String|The ID for the custodian in the specified case. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
-|status|microsoft.graph.ediscovery.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
+|status|microsoft.graph.security.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
 |holdStatus|String|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ### custodianStatus values
