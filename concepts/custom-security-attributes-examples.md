@@ -1,5 +1,5 @@
 ---
-title: "Assign, update, or remove custom security attributes (Preview)"
+title: "Assign, update, or remove custom security attributes (preview)"
 description: "Learn how to assign, update, or remove custom security attributes for users and applications (service principals) using the Microsoft Graph API."
 author: "rolyon"
 ms.localizationpriority: medium
@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.prod: "directory-management"
 ---
 
-# Assign, update, or remove custom security attributes using the Microsoft Graph API (Preview)
+# Assign, update, or remove custom security attributes using the Microsoft Graph API (preview)
 
 > [!IMPORTANT]
-> The custom security attributes feature is currently in Preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> The custom security attributes feature is currently in preview. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 [Custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects.
 
