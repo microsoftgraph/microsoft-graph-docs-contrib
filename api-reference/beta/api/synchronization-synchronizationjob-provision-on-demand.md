@@ -204,3 +204,90 @@ Content-Type: application/json
 }
 ```
 
+### Example 3: Provision a group and two members on demand
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "synchronizationjob_provisionondemand_Group"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/4e116d82-dd59-4944-824d-93091408fd8d/synchronization/jobs/664ea562-18cd-42bb-33e0-8de1f0560581/provisionOnDemand
+Content-Type: application/json
+
+{
+  "parameters": [
+    {
+      "ruleId": "33f7c90d-bf71-41b1-bda6-aaf0ddbee5d8#V2",
+      "subjects": [
+        {
+          "objectId": "8213fd99-d6b6-417b-8e13-af6334856215",
+          "objectTypeName": "Group",
+          "links": {
+            "members": [
+              {
+                "objectId": "cbc86211-6ada-4803-b73f-8039cf56d8a2",
+                "objectTypeName": "User"
+              },
+              {
+                "objectId": "2bc86211-6ada-4803-b73f-8039cf56d8a2",
+                "objectTypeName": "User"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-ad2aad-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-ad2aad-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-ad2aad-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-ad2aad-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationjob-provisionondemand-ad2aad-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/synchronizationjob-provisionondemand-ad2aad-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
+}
+-->
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://syncfabric.windowsazure.com/api/$metadata#microsoft.synchronization.stringKeyStringValuePair",
+    "key": "{\"result\":\"Success\",\"details\":{}}",
+    "value": "{}"
+}
+```
+
