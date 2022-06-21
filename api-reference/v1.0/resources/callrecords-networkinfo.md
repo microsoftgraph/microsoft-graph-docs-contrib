@@ -44,6 +44,9 @@ Represents information about the network used in a call.
 |wifiVendorDriver|String|Name of the WiFi driver used by the media endpoint. Value may be localized based on the language used by endpoint.|
 |wifiVendorDriverVersion|String|Version of the WiFi driver used by the media endpoint.|
 
+> [!NOTE]
+> By default, **traceRouteHops** will always return an empty array. Contact Microsoft support to enable reporting of trace route data for your organization.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
