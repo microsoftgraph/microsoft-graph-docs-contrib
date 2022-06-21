@@ -54,6 +54,7 @@ $params = @{
 	InvoiceUrl = "theInvoiceUrl"
 	IsLocationOnline = $true
 	OptOutOfCustomerEmail = $false
+	AnonymousJoinWebUrl = $null
 	PostBuffer = "PT10M"
 	PreBuffer = "PT5M"
 	Price = 10

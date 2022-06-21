@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let list = await client.api('/sites/root/lists/Documents')
+let operations = await client.api('/sites/root/operations')
 	.get();
 
 ```

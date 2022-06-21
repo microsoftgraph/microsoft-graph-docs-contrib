@@ -8,17 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewMobilityManagementPolicy()
-complianceUrl := "https://portal.mg.contoso.com/?portalAction=Compliance"
+complianceUrl := "https://portal.uem.contoso.com/?portalAction=Compliance"
 requestBody.SetComplianceUrl(&complianceUrl)
-discoveryUrl := "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc"
+discoveryUrl := "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"
 requestBody.SetDiscoveryUrl(&discoveryUrl)
-termsOfUseUrl := "https://portal.mg.contoso.com/TermsofUse.aspx"
+termsOfUseUrl := "https://portal.uem.contoso.com/TermsofUse.aspx"
 requestBody.SetTermsOfUseUrl(&termsOfUseUrl)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.mobilityManagementPolicy",
 }
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Patch(requestBody)
+graphClient.Policies().MobileDeviceManagementPoliciesById(&mobilityManagementPolicyId).Patch(requestBody)
 
 
 ```

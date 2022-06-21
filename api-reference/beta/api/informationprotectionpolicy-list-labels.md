@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 [!INCLUDE [sample-code](../includes/snippets/go/get-labels-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-labels-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

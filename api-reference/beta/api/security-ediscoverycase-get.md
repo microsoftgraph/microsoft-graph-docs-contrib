@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/22aa2acd-755
 [!INCLUDE [sample-code](../includes/snippets/go/get-ediscoverycase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-ediscoverycase-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
