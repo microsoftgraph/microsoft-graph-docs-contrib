@@ -1215,6 +1215,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [complianceSettings](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-compliancesettings?view=graph-rest-beta) resource type.",
           "Target": "complianceSettings"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Property",
+          "ChangedApiName": "enabledContentExperiences",
+          "ChangeType": "Addition",
+          "Description": "Added the **enabledContentExperiences** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
+          "ApiChange": "Property",
+          "ChangedApiName": "complianceSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceSettings** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnectors-externalConnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
         }
       ],
       "Id": "6299b8bb-cb88-4b8c-9431-14fd87f7741c",
