@@ -10986,14 +10986,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "internalDomainFederation",
           "ChangeType": "Addition",
-          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-1.0) resource",
+          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-1.0) resource and associated methods. Use this resource to federate your domains with Azure AD.",
           "Target": "internalDomainFederation"
         }        
       ],
       "Id": "58b7beda-c767-4468-914b-23774fe6f181",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-04-29T09:45:26.3615214Z",
+      "CreatedDateTime": "2022-06-21T09:45:26.3615214Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
