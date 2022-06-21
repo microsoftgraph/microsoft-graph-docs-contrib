@@ -14,13 +14,13 @@ In the past, form factor drove distinct types of behavior differences among cons
 
 Microsoft is building a platform for creating experiences that transcend a single device so they can harmonize across devices&mdash;empowering you to create **human-centric** scenarios that move with the user and blur the lines between their devices, regardless of form factor or platform. Microsoft Graph provides a single unified endpoint to give you access to data from Azure Active Directory and Microsoft 365. Now through Microsoft Graph, you can also access the activities and devices that belong to your customers and enable rich human-centric experiences that cross devices and platforms.
 
-The following sections describe the benefits for investing in cross-device experiences.
+## Why invest in cross-device experiences?
 
-## Let customers pick up where they leave off with the activity feed API
+### Let customers pick up where they leave off with the activity feed API
 
 With activities, you have a way to capture the unique tasks for users of your app that flow seamlessly across any platform and device, allowing them to quickly resume working on their preferred screen. Using the activity feed, you can create a human-centric view of the tasks most important to users, helping reduce friction when switching from web to mobile to PC and beyond.
 
-## Build rich cross-device experiences by using the device relay API
+### Build rich cross-device experiences by using the device relay API
 
 In addition to Microsoft devices (PCs, Xbox, IoT, HoloLens, and more), the device relay API also exposes Android and iOS devices. This enables you to truly break down boundaries between your users' devices. You can build apps that utilize the user’s environment and create rich experiences that transcend a single device in real-time.
 
