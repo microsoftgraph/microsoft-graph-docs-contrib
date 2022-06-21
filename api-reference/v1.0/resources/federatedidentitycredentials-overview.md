@@ -28,7 +28,7 @@ You create a trust relationship between an external identity provider (IdP) and 
 
 The [federatedIdentityCredential](federatedidentitycredential.md) resource represents the configuration of a federated identity credential via Microsoft Graph. The following properties are the building blocks of federated identity credentials:
 
-+ **audiences** — Lists the audiences that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your IdP to serve as the audience of this token.
++ **audiences** — The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Azure AD. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your IdP to serve as the audience of this token.
 + **issuer** — The URL of the external identity provider. Must match the **issuer** claim of the external token being exchanged.
 + **subject** — The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each IdP uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD.
 
