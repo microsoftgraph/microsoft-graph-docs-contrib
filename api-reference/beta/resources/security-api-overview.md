@@ -56,6 +56,10 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 [Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets users in a tenant experience a realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant administrators to view launched [simulation](simulation.md) exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
 
+## eDiscovery (preview)
+
+[Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations.
+
 ## Incidents (preview)
 
 An incident is a collection of correlated [alerts](security-alert.md) and associated data that make up the story of an attack. [Incident management](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) is part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true), and is available in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)).
@@ -73,6 +77,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - All of the data associated with the attack.
 
 The [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy.
+
 
 ## Information protection
 

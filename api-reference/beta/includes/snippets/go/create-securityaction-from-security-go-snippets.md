@@ -14,10 +14,10 @@ actionReason := "Test"
 requestBody.SetActionReason(&actionReason)
 requestBody.SetParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "IP",
-		"value": "1.2.3.4",
-	}
+name := "IP"
+	SetName(&name)
+value := "1.2.3.4"
+	SetValue(&value)
 }
 vendorInformation := msgraphsdk.NewSecurityVendorInformation()
 requestBody.SetVendorInformation(vendorInformation)

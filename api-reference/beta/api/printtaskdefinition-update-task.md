@@ -3,7 +3,7 @@ title: Update task
 description: Update a print task.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 

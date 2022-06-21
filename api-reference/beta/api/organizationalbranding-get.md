@@ -45,7 +45,7 @@ This method supports only the `$select` OData query parameter to help customize 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Accept-Language|A valid ISO 639-1 locale. Required.|
+|Accept-Language|A valid ISO 639-1 locale or `0` for the default locale. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -354,6 +354,11 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 
