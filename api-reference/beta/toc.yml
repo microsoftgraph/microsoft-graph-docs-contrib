@@ -10396,19 +10396,15 @@ items:
             href: api/manageddevice-setcloudpcreviewstatus.md
           - name: Troubleshoot
             href: api/cloudpc-troubleshoot.md
-          - name: List for user 
-            href: api/user-list-cloudpcs.md
-          - name: Get for user
+          - name: Get single cloudPC for user
             href: api/user-get-cloudpc.md
-          - name: Get launch info for user
-            href: api/cloudpc-getcloudpclaunchinfo.md
-          - name: Reboot for user
+          - name: Reboot cloudPC for user
             href: api/user-reboot-cloudpc.md
-          - name: Rename for user
+          - name: Rename cloudPC for user
             href: api/user-rename-cloudpc.md
-          - name: Reprovision for user
+          - name: Reprovision cloudPC for user
             href: api/user-reprovision-cloudpc.md
-          - name: Troubleshoot for user
+          - name: Troubleshoot cloudPC for user
             href: api/user-troubleshoot-cloudpc.md
         - name: Cloud PC device image
           href: resources/cloudpcdeviceimage.md

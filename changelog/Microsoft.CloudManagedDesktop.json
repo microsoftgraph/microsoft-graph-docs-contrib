@@ -2,14 +2,46 @@
     "changelog": [
         {
             "ChangeList": [
-              {
-                "Id": "41b177c3-11d9-4b00-b39a-91f593cdfd09",
-                "ApiChange": "Method",
-                "ChangedApiName": "GET",
-                "ChangeType": "Addition",
-                "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get-cloudpc?view=graph-rest-beta) operation to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
-                "Target": "user"
-              }
+                {
+                    "Id": "41b177c3-11d9-4b00-b39a-91f593cdfd09",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "GET",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get-cloudpc?view=graph-rest-beta) operation to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "user"
+                },
+                {
+                    "Id": "dba23d86-2f27-487e-bbc1-38fc12c572ed",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reboot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reboot](https://docs.microsoft.com/en-us/graph/api/user-reboot-cloudpc?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "f2bbe63b-a21a-48ed-9c26-b53b01281e80",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "rename",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [rename](https://docs.microsoft.com/en-us/graph/api/user-rename-cloudpc?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "b0a01912-3a49-4d67-925f-7f39da65d8d5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reprovision",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reprovision](https://docs.microsoft.com/en-us/graph/api/user-reprovision-cloudpc?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "5f7c0650-0ff0-4aef-8121-069683ed351a",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "troubleshoot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [troubleshoot](https://docs.microsoft.com/en-us/graph/api/user-troubleshoot-cloudpc?view=graph-rest-beta) method to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
             ],
             "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
             "Cloud": "prd",
