@@ -34,8 +34,8 @@ Defines threat submission result detail and gives more information about submiss
 | outboundBulk                           | The reported outgoing messages has been found to be bulk and Microsoft will update its Machine Learning based Outbound Filters in the coming weeks |
 | outboundCannotMakeDecision             | At the moment Microsoft cannot reach a verdict on the outgoing reported message and so please submit again |
 | outboundNotRescanned                   | At the Moment Microsoft cannot reach a verdict as the message cannot be analyzed without taking outside the environment or due to other reasons |
-| zeroHourAutoPurgeAllowed               | The reported message was blocked as it was zapped as it was turned malicious after delivery |
-| zeroHourAutoPurgeBlocked               | The Reported message was not zapped despite turning malicious after delivery as the message was bad |
+| zeroHourAutoPurgeAllowed               | The reported message was zapped and allowed after delivery as the message was good |
+| zeroHourAutoPurgeBlocked               | The Reported message was zapped and blocked after delivery as the message was bad |
 | zeroHourAutoPurgeQuarantineReleased    | The Reported message was released from Quarantine despite being Zapped as it turned malicious after delivery |
 | onPremisesSkip                         | The reported message cannot be analyzed as this is went through a  onprem setup of exchange online protection |
 | allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the Tenant Allow block list |
