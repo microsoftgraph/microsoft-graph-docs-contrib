@@ -1,6 +1,6 @@
 ---
 title: "submissionUserIdentity resource type"
-description: "Represents threat submission user identity"
+description: "Represents the identity of the user who sends the threat submission."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,17 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat submission user identity.
+Represents the identity of the user who sends the threat submission.
 
-
-Inherits from graph.identity.
+Inherits from [identity](../resources/identity.md).
 
 ## Properties
 | Property    | Type   | Description                                                                                                    |
 |:------------|:-------|:---------------------------------------------------------------------------------------------------------------|
-| displayName | String | The field inherits from graph.identity.                                                                 |
-| email       | String | The email of user who is making the submission when they are logged in (delegated token case). | 
-| id          | String | The field inherits from graph.identity.  |
+| displayName | String | Inherited from **identity**.                                                                 |
+| email       | String | The email of user who is making the submission when logged in (delegated token case). | 
+| id          | String | Inherited from **identity**.  |
 
 
 ## Relationships

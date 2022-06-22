@@ -1,6 +1,6 @@
 ---
 title: "submissionResult resource type"
-description: "Represents threat submission result when threat submission is processed by Microsoft"
+description: "Represents the result of a review after the threat submission is processed by Microsoft"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents threat submission result after threat submission is processed by Microsoft.
+Represents the result of a review after the threat submission is processed by Microsoft.
 
 ## Properties
 | Property           | Type                               | Description                                                             |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`. |
-| detail             | [submissionResultDetail](../resources/security-submissionresultdetail.md)             | It is used to specify the additional details provided by Microsoft to substantiate their analysis result. |
-| detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | It is use to specify the files which were detected by Microsoft in the submitted emails|
-| detectedUrls       | Collection(String)                 | It is used to specify the URLs which were detected by Microsoft in the submitted email.|
-| userMailboxSetting | userMailboxSetting                | It is a flag which specifies the setting for user mailbox denoted by a comma separated string. |
+| detail             | [submissionResultDetail](../resources/security-submissionresultdetail.md)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
+| detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails|
+| detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
+| userMailboxSetting | userMailboxSetting                | Specifies the setting for user mailbox denoted by a comma separated string. |
 
 ## Relationships
 None.

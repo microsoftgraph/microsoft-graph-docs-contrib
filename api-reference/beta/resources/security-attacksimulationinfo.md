@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-If an email was an attack simulation email, the email threat submission would contain corresponding attack simulation information.
+Represents threat submission's attack simulation information. If an email was an attack simulation email, the email threat submission would contain corresponding attack simulation information.
 
 ## Properties
 | Property              | Type           | Description                          |
 |:----------------------|:---------------|:-------------------------------------|
-| attackSimDateTime     | DateTimeOffset | It is used to specify the date time of the attack simulation.   |
-| attackSimDurationTime | Duration       | It is used to specify the duration (in time) for the attack simulation  |
-| attackSimId           | Guid           |It is used to specify the activity id for the attack simulation. |
-| attackSimUserId       | String         | It is used to specify the user id of the user who got the attack simulation email   |
+| attackSimDateTime     | DateTimeOffset | Specifies the date time of the attack simulation.   |
+| attackSimDurationTime | Duration       | Specifies the duration (in time) for the attack simulation  |
+| attackSimId           | Guid           | Specifies the activity id for the attack simulation. |
+| attackSimUserId       | String         | Specifies the user id of the user who got the attack simulation email   |
 
 ## Relationships
 None.

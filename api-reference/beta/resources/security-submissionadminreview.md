@@ -18,9 +18,9 @@ Represents admin review information for threat submission. Currently, only user 
 ## Properties
 | Property       | Type                     | Description                                  |
 |:---------------|:-------------------------|:---------------------------------------------|
-| reviewBy       | String                   | It specifies who reviewed the email? The identification is done using email id or other identity strings|
-| reviewDateTime | DateTimeOffset           | It is used to specify the date time of when the review occurred.|
-| reviewResult   | submissionResultCategory | It is used to specify what the review result was? The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`.  |
+| reviewBy       | String                   | Specifies who reviewed the email. The identification is done using email id or other identity strings|
+| reviewDateTime | DateTimeOffset           | Specifies the date time of when the review occurred.|
+| reviewResult   | submissionResultCategory | Specifies what the review result was. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable` and `unknownFutureValue`.  |
 
 ## Relationships
 None.
