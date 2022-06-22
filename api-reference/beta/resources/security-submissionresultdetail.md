@@ -69,5 +69,5 @@ Defines threat submission result detail and gives more information about submiss
 | badReclassifiedAsGood                  | The reported message has already been identified as good by the system |
 | badReclassifiedAsBulk                  | The reported message has already been identified as bulk by the system |
 | badReclassifiedAsBad                   | The reported message has already been identified as bad by the system |
-| badReclassifiedAsCannotMakeDecision    |   At the moment Microsoft cannot reach a verdict on the reported message and so please submit again |
+| badReclassifiedAsCannotMakeDecision    | At the moment Microsoft cannot reach a verdict on the reported message and so please submit again |
 | unknownFutureValue                     | Any future value which is not in use now                     |
