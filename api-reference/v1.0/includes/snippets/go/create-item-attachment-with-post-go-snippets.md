@@ -18,9 +18,10 @@ content := "I attached an event."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "Holiday event"
+	SetName(&name)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.itemAttachment",
-		"name": "Holiday event",
 	}
 }
 groupId := "group-id"

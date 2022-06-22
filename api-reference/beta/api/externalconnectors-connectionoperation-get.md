@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 [!INCLUDE [sample-code](../includes/snippets/go/get-connectionoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connectionoperation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

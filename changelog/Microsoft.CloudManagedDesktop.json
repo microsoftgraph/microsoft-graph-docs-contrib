@@ -27,6 +27,24 @@
             "SubArea": "Cloud PC"
         },
         {
+          "ChangeList": [
+            {
+              "Id": "981fed74-2b07-413f-a118-ac16c4395696",
+              "ApiChange": "Property",
+              "ChangedApiName": "alternateResourceUrl",
+              "ChangeType": "Addition",
+              "Description": "Added the **alternateResourceUrl** property to the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta) resource.",
+              "Target": "cloudPcOnPremisesConnection"
+            }
+          ],
+          "Id": "981fed74-2b07-413f-a118-ac16c4395696",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2022-06-20T07:19:17.8395506Z",
+          "WorkloadArea": "Devices and apps",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "b4958140-f26b-43e9-b56a-710a962cf758",
@@ -2070,6 +2088,56 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2020-11-06T15:42:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                "ApiChange": "Property",
+                "ChangedApiName": "alternateResourceUrl",
+                "ChangeType": "Addition",
+                "Description": "Added the **alternateResourceUrl** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              },
+              {
+                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                "ApiChange": "Property",
+                "ChangedApiName": "cloudPcGroupDisplayName",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcGroupDisplayName** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              },
+              {
+                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                "ApiChange": "Property",
+                "ChangedApiName": "gracePeriodInHours",
+                "ChangeType": "Addition",
+                "Description": "Added the **gracePeriodInHours** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              },
+              {
+                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                "ApiChange": "Property",
+                "ChangedApiName": "localAdminEnabled",
+                "ChangeType": "Addition",
+                "Description": "Added the **localAdminEnabled** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              },
+              {
+                "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+                "ApiChange": "Property",
+                "ChangedApiName": "managedBy",
+                "ChangeType": "Addition",
+                "Description": "Added the **managedBy** property to the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                "Target": "cloudPcProvisioningPolicy"
+              }
+            ],
+            "Id": "04b7a9f2-66ab-4ba4-8732-8f65c5f8a966",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2022-06-20T06:40:50.582Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         }

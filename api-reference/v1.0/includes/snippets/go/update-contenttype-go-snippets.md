@@ -16,39 +16,45 @@ shouldPrefixNameToFile := true
 documentSet.SetShouldPrefixNameToFile(&shouldPrefixNameToFile)
 documentSet.SetAllowedContentTypes( []ContentTypeInfo {
 	msgraphsdk.NewContentTypeInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "0x0101",
-		"name": "Document",
-	}
+id := "0x0101"
+	SetId(&id)
+name := "Document"
+	SetName(&name)
 }
 documentSet.SetDefaultContents( []DocumentSetContent {
 	msgraphsdk.NewDocumentSetContent(),
-	SetAdditionalData(map[string]interface{}{
-		"fileName": "a.txt",
-	}
+fileName := "a.txt"
+	SetFileName(&fileName)
+contentType := msgraphsdk.NewContentTypeInfo()
+	SetContentType(contentType)
+id := "0x0101"
+	contentType.SetId(&id)
 	msgraphsdk.NewDocumentSetContent(),
-	SetAdditionalData(map[string]interface{}{
-		"fileName": "b.txt",
-	}
+fileName := "b.txt"
+	SetFileName(&fileName)
+contentType := msgraphsdk.NewContentTypeInfo()
+	SetContentType(contentType)
+id := "0x0101"
+	contentType.SetId(&id)
 }
 documentSet.SetSharedColumns( []ColumnDefinition {
 	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Description",
-		"id": "cbb92da4-fd46-4c7d-af6c-3128c2a5576e",
-	}
+name := "Description"
+	SetName(&name)
+id := "cbb92da4-fd46-4c7d-af6c-3128c2a5576e"
+	SetId(&id)
 	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Address",
-		"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
-	}
+name := "Address"
+	SetName(&name)
+id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+	SetId(&id)
 }
 documentSet.SetWelcomePageColumns( []ColumnDefinition {
 	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Address",
-		"id": "fc2e188e-ba91-48c9-9dd3-16431afddd50",
-	}
+name := "Address"
+	SetName(&name)
+id := "fc2e188e-ba91-48c9-9dd3-16431afddd50"
+	SetId(&id)
 }
 siteId := "site-id"
 contentTypeId := "contentType-id"

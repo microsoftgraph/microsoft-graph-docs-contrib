@@ -13,7 +13,7 @@ Change notifications in Microsoft Graph enable you to subscribe to call started/
 
 ### Subscribe to messages across all channels
 
-To get change notifications for a meeting's call events in an application, subscribe to `/communications/onlineMeetings/{meeting-id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for a meeting's call events in an application, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -32,7 +32,7 @@ Content-Type: application/json
 {
   "changeType": "updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/communications/onlineMeetings/{meeting-id}",
+  "resource": "/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -48,12 +48,12 @@ Content-Type: application/json
     "clientState": "{secret client state}",
     "changeType": "updated",
     "tenantId": "{Organization/Tenant id}",
-    "resource": "communications/onlineMeeting/{meeting-id}",
+    "resource": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
     "subscriptionExpirationDateTime": "2022-02-28T02:00:00-08:00",
     "resourceData": {
-      "@odata.id": "communications/onlineMeetings/{meeting-id}",
-      "@odata.type": "#microsoft.graph.onlineMeeting",
-      "id": "communications/onlineMeetings/{meeting-id}"
+      "@odata.id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+      "@odata.type": "#Microsoft.Graph.onlineMeeting",
+      "id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'"
     },
     "organizationId": "{Organization/Tenant id}",
     "encryptedContent": {
@@ -73,9 +73,9 @@ For details about how to validate tokens and decrypt the payload, see [Set up ch
 The decrypted notification payload looks like the following.
 ```json
 {
-  "@odata.type":"#microsoft.graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings/{meeting-id}",
-  "id":"communications/onlineMeetings/{meeting-id}",
+  "@odata.type":"#Microsoft.Graph.onlineMeeting",
+  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
   "eventType":"Microsoft.Communication.CallStarted",
   "eventDateTime":"2022-02-28T18:41:33.0553203Z",
   "state":"active"
