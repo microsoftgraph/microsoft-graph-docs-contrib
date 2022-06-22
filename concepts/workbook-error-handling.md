@@ -103,7 +103,7 @@ The following table lists instructions for important errors that Microsoft Graph
 
 >**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
-There are also other second-level error codes, which Microsoft Graph clients can optionally handle, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code) instead. For examples of such second-level error codes and corresponding handling instructions, see [Examples of other second-level error codes](#examples-of-other-second-level-error-codes).
+This service also has other second-level error codes, which Microsoft Graph clients can optionally handle, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code) instead. For examples of such second-level error codes and corresponding handling instructions, see [Examples of other second-level error codes](#examples-of-other-second-level-error-codes).
 
 ### 3. Parse the top-level error code
 
