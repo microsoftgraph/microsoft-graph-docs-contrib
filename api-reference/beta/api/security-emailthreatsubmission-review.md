@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Review a threat submission. Only `emailThreatSubmission` submitted from end user supports `review` action now. `review` action for `urlThreatSubmission` and `fileThreatSubmission` are reserved for future usage.
+Review a threat submission. Only `emailThreatSubmission` submitted from end user supports `review` action now. `review` actions for `urlThreatSubmission` and `fileThreatSubmission` are reserved for future usage. `urlThreatSubmission` and `fileThreatSubmission` have not been supported for end user now.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
