@@ -145,8 +145,12 @@ items:
             displayName: cloud communications
           - name: Get started
             href: cloud-communications-get-started.md
-          - name: Use supported call types
+          - name: Supported call types
             href: cloud-communications-calls.md
+          - name: Call records
+            href: cloud-communications-callrecords.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
           - name: Choose a media hosting option
             href: cloud-communications-media.md
           - name: Create or join online meetings
@@ -155,12 +159,8 @@ items:
             href: choose-online-meeting-api.md
           - name: Configure application access
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Obtain call records
-            href: cloud-communications-callrecords.md
           - name: Manage bot phone numbers
             href: cloud-communications-phone-number.md
-          - name: Obtain online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md
           - name: Identify large gallery view participants
             href: cloud-communications-identifylargegalleryview.md
       - name: Compliance

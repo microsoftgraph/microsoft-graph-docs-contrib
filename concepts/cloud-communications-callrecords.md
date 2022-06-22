@@ -1,12 +1,12 @@
 ---
-title: "Obtain call records in the communications API"
+title: "Call records in the cloud communications API"
 description: "Get insights into the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business."
 author: "williamlooney"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Obtain call records
+# Call records
 
 Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Usage and diagnostic data can be consumed to produce custom reporting for your business to help monitor adoption or to troubleshoot call quality issues.
 
@@ -30,4 +30,4 @@ Organizations that use Microsoft Teams to connect to the public switched telepho
 ## See also
 
 - [Call records permissions](./permissions-reference.md#call-records-permissions)
-- [Communications API overview](cloud-communications-concept-overview.md)
+- [Cloud communications API overview](cloud-communications-concept-overview.md)

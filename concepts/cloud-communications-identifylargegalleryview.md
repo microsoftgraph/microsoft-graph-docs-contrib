@@ -1,6 +1,6 @@
 --- 
-title: "Identify large gallery view participants by using the communications API"
-description: "Identify a large gallery view participant in a roster so that you can subscribe to their video feed by using the communications API in Microsoft Graph."
+title: "Identify large gallery view participants by using the cloud communications API"
+description: "Identify a large gallery view participant in a roster so that you can subscribe to their video feed by using the cloud communications API in Microsoft Graph."
 author: "navali-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Identify large gallery view participants in a roster
 
-The communications API in Microsoft Graph provides an endpoint for [adding the large gallery view](/graph/api/call-addlargegalleryview) to a call. After the large gallery view is successfully added to a call, you can subscribe to a participant's video feed.
+The cloud communications API in Microsoft Graph provides an endpoint for [adding the large gallery view](/graph/api/call-addlargegalleryview) to a call. After the large gallery view is successfully added to a call, you can subscribe to a participant's video feed.
 
 This article describes how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed.
 
@@ -414,4 +414,4 @@ Use the following definition to deserialize the **metadata** property and extrac
 
 ## See also
 
-- [Communications API overview](cloud-communications-concept-overview.md)
+- [Cloud communications API overview](cloud-communications-concept-overview.md)

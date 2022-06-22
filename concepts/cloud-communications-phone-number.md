@@ -1,14 +1,14 @@
 ---
-title: "Manage phone numbers for bots"
-description: "Learn how to create a bot that is reachable through a phone number, and assign, unassign, or update a bot phone number."
+title: "Manage phone numbers for bots by using the cloud communications API"
+description: "Learn how to create a bot that is reachable through a phone number, and assign, unassign, or update a bot phone number by using the Microsoft Graph cloud communications API."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ---
 
-# Manage phone numbers for bots 
+# Manage phone numbers for bots
 
-This article describes how to create a bot that is reachable through a phone number. As you create your bot, it will be helpful to be familiar with the following terms:
+This article describes how to use the cloud communications API in Microsoft Graph to create a bot that is reachable through a phone number. As you create your bot, it will be helpful to be familiar with the following terms:
 
 - **Application** – An application that is hosted on Azure, also referred to as a **bot**.
 
@@ -94,6 +94,6 @@ After unassigning the number, you can assign a different number to the bot by us
 
 ## See also
 
-- [Communications API overview](cloud-communications-concept-overview.md)
+- [Cloud communications API overview](cloud-communications-concept-overview.md)
 - [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot)
 - [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample)

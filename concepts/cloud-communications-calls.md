@@ -1,6 +1,6 @@
 ---
-title: "Supported call types in the communications API"
-description: "Learn about the supported call types in the communications API in Microsoft Graph and how they're used for the signaling process."
+title: "Supported call types in the cloud communications API"
+description: "Learn about the supported call types in the cloud communications API in Microsoft Graph and how they're used for the signaling process."
 author: "ananmishr"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -8,7 +8,7 @@ ms.prod: "cloud-communications"
 
 # Supported call types
 
-This article describes the supported call types in the communications API in Microsoft Graph and how they're used for the signaling process.
+This article describes the supported call types in the cloud communications API in Microsoft Graph and how they're used for the signaling process.
 
 ## Peer-to-peer calls
 
@@ -34,5 +34,5 @@ Currently, bots are able to:
 
 ## See also
 
-- [Communications API overview](cloud-communications-concept-overview.md)
+- [Cloud communications API overview](cloud-communications-concept-overview.md)
 - [Permissions for calls](./permissions-reference.md#calls-permissions)
