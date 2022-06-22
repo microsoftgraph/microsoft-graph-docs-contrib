@@ -128,7 +128,6 @@ Content-Type: application/json
       "bio": "CFO"
     }
   ],
-  "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/microsoft.graph.meetingRegistration/customQuestions",
   "customQuestions": [
     {
       "id": "MSNhMjVlZmUyMy01MDBhLTQwYjItYjUwZS04YWU5EG9hX3gwMDIwX2RldmU=",

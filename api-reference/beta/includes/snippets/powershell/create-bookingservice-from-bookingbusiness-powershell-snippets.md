@@ -49,6 +49,7 @@ $params = @{
 	DisplayName = "Bento"
 	IsLocationOnline = $true
 	SmsNotificationsEnabled = $true
+	LanguageTag = "en-US"
 	IsHiddenFromCustomers = $false
 	Notes = "Home-cooked special"
 	PostBuffer = "PT10M"
@@ -66,6 +67,7 @@ $params = @{
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a"
 		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
 	)
+	IsAnonymousJoinEnabled = $false
 }
 
 New-MgBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params

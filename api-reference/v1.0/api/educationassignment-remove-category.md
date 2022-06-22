@@ -1,6 +1,6 @@
 ---
 title: "Remove educationCategory"
-description: "Remove an existing educationCategory from this educationAssignment"
+description: "Remove an existing educationCategory from this educationAssignment."
 ms.localizationpriority: medium
 author: "sharad-sharma-msft"
 ms.prod: "education"
@@ -31,7 +31,6 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Don't supply a request body for this method.
@@ -71,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

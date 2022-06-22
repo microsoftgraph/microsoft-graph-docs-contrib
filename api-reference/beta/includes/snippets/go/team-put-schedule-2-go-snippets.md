@@ -19,11 +19,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"timeOffRequestsEnabled": true,
 	"timeClockEnabled": true,
 }
-options := &msgraphsdk.ScheduleRequestBuilderPutOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Put(options)
+graphClient.TeamsById(&teamId).Schedule().Put(requestBody)
 
 
 ```

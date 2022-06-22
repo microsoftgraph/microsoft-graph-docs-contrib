@@ -14,12 +14,11 @@ headers := map[string]string{
 	"Prefer": "return=representation"
 	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerPlanRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.PlannerPlanRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 plannerPlanId := "plannerPlan-id"
-graphClient.Planner().PlansById(&plannerPlanId).Patch(options)
+graphClient.Planner().PlansById(&plannerPlanId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

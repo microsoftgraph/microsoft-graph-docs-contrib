@@ -12,12 +12,9 @@ id := "e5477431-1038-484e-bf69-1dfedb97a110"
 requestBody.SetId(&id)
 type := "group"
 requestBody.SetType(&type)
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
 externalGroupId := "externalGroup-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Members().Post(options)
+result, err := graphClient.External().ConnectionsById(&externalConnectionId).GroupsById(&externalGroupId).Members().Post(requestBody)
 
 
 ```

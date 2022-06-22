@@ -23,18 +23,19 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "./manager",
-		"queryType": "MicrosoftGraph",
-		"queryRoot": "decisions",
-	}
+query := "./manager"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
+queryRoot := "decisions"
+	SetQueryRoot(&queryRoot)
 }
 requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 settings := msgraphsdk.NewAccessReviewScheduleSettings()
 requestBody.SetSettings(settings)
@@ -76,10 +77,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"backupReviewers":  []Object {
 	}
 }
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

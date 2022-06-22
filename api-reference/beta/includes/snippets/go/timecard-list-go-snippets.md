@@ -11,11 +11,11 @@ requestParameters := &msgraphsdk.TimeCardsRequestBuilderGetQueryParameters{
 	Top: 2,
 	Filter: "state%20eq%20'clockedOut'",
 }
-options := &msgraphsdk.TimeCardsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TimeCardsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().Get(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeCards().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: printerProcessingStateDetail enum type
 description: Represents the processing status detail of the printer.
 author: tomsato-ms
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: enumPageType
 ---
 

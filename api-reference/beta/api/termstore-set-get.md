@@ -3,7 +3,7 @@ title: "Get set"
 description: "Read the properties and relationships of a set object."
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: "taxonomy"
+ms.prod: sharepoint
 doc_type: apiPageType
 ---
 
@@ -145,6 +145,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitecollection-termstore-set-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitecollection-termstore-set-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

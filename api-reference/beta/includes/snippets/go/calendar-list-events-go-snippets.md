@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.EventsRequestBuilderGetQueryParameters{
 	Filter: "startsWith(subject,'All')",
 }
-options := &msgraphsdk.EventsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.EventsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Calendar().Events().Get(options)
+result, err := graphClient.Me().Calendar().Events().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

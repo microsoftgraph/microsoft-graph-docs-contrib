@@ -37,20 +37,14 @@ requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime)
 availabilityEndDateTime, err := time.Parse(time.RFC3339, "2021-12-31T20:01:37Z")
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime)
 requestBody.SetLanguageTags( []String {
-	"en-US",
+	"en-us",
 }
 requestBody.SetPlatforms( []DevicePlatformType {
 	"ios",
 }
-requestBody.SetGroupIds( []String {
-	"groupId",
-}
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.QnasRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Qnas().Post(options)
+result, err := graphClient.Search().Qnas().Post(requestBody)
 
 
 ```

@@ -32,24 +32,16 @@ requestBody.SetPlatforms( []DevicePlatformType {
 }
 requestBody.SetTargetedVariations( []AnswerVariant {
 	msgraphsdk.NewAnswerVariant(),
-	SetAdditionalData(map[string]interface{}{
-		"languageTag": "es-ES",
-		"displayName": "Sitio de instalación Contoso",
-		"description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
-	}
-}
-requestBody.SetGroupIds( []String {
-	"groupId",
-}
-requestBody.SetPowerAppIds( []String {
-	"powerAppId",
+languageTag := "es-es"
+	SetLanguageTag(&languageTag)
+displayName := "Sitio de instalación Contoso"
+	SetDisplayName(&displayName)
+description := "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+	SetDescription(&description)
 }
 state := "published"
 requestBody.SetState(&state)
-options := &msgraphsdk.BookmarksRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Search().Bookmarks().Post(options)
+result, err := graphClient.Search().Bookmarks().Post(requestBody)
 
 
 ```

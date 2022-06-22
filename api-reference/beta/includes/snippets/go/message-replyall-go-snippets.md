@@ -12,19 +12,17 @@ message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
 message.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "guidelines.txt"
+	SetName(&name)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"name": "guidelines.txt",
 		"contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
 	}
 }
 comment := "Please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyAllRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(options)
+graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(requestBody)
 
 
 ```

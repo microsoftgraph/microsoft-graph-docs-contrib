@@ -355,7 +355,6 @@ Content-type: application/json
   "contentType":null,
   "size":32005,
   "isInline":false,
-  "item@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
   "item":{
     "@odata.type":"#microsoft.graph.message",
     "id":"",
@@ -450,7 +449,6 @@ Content-type: application/json
     "contentType": null,
     "size": 465916,
     "isInline": false,
-    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
     "item": {
         "@odata.type": "#microsoft.graph.message",
         "id": "",
@@ -498,7 +496,6 @@ Content-type: application/json
         "flag": {
             "flagStatus": "notFlagged"
         },
-        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
         "attachments": [
             {
                 "@odata.type": "#microsoft.graph.fileAttachment",
