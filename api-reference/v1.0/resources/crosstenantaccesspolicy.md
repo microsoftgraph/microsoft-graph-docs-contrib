@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Represents the base policy in the directory for cross-tenant access settings.
 
-Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipaccesspolicybase.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -27,7 +25,6 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 |Property|Type|Description|
 |:---|:---|:---|
 | displayName | String | The display name of the cross-tenant access policy. Inherited from [policyBase](../resources/policybase.md).|
-| definition (deprecated) | String | The raw JSON definition of the cross-tenant access policy. **Deprecated. Do not use.**|
 
 ## Relationships
 
@@ -51,7 +48,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
-  "displayName": "String",
-  "definition": "String"
+  "displayName": "String"
 }
 ```
