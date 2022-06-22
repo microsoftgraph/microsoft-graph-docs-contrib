@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|ThreatSubmissionPolicy.ReadWrite.All|
 
 ## HTTP request
-Only HTTP `PATCH` request is supported today. HTTP `PUT` is not supported.
+
+> **Note:** Use HTTP `PATCH` request. HTTP `PUT` is not supported.
 
 <!-- {
   "blockType": "ignored"
@@ -43,7 +44,7 @@ PATCH security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmis
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-These properties are related to the **user reported message settings**. For details, see [User reported message settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-submission).
+These properties are related to the **user reported message settings**. For details, see [User reported message settings](/microsoft-365/security/office-365-security/user-submission.md).
 
 | Property                                 | Type    | Description                                                                                |
 |:-----------------------------------------|:--------|:-------------------------------------------------------------------------------------------|
