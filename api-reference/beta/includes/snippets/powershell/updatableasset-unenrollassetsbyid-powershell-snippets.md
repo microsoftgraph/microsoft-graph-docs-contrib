@@ -16,6 +16,6 @@ $params = @{
 	)
 }
 
-Invoke-MgUnenrollWindowsUpdatesUpdatableAssetById -BodyParameter $params
+Invoke-MgGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
 
 ```

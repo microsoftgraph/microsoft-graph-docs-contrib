@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mobileAppManagementPolicies = await graphClient.Policies.MobileAppManagementPolicies
+var mobileDeviceManagementPolicies = await graphClient.Policies.MobileDeviceManagementPolicies
 	.Request()
 	.GetAsync();
 

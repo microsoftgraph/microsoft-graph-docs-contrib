@@ -1,6 +1,6 @@
 ---
-title: "Overview for Windows 365 Cloud PC on Microsoft Graph"
-description: "Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users."
+title: "Windows 365 Cloud PC on Microsoft Graph (preview)"
+description: "Integrate with Windows 365 Cloud PC to create Azure network connections, provision Cloud PCs, manage device images, and create and assign provisioning policies."
 author: "cohanley"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -8,7 +8,7 @@ ms.prod: "cloud-pc"
 
 # Overview for Windows 365 Cloud PC on Microsoft Graph (preview)
 
-Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users. Administrators can easily set up, manage, and scale Windows 365 Cloud PCs to fit the organization's needs. Individual end users can securely stream their rich, personalized Windows experience - including their apps, data, content, and settings - from the Microsoft cloud to any device, any time, with their Windows 365 Cloud PC.
+Windows 365 is a cloud-based service that provisions and hosts Cloud PCs as virtual machines for end users. Administrators can easily set up, manage, and scale Windows 365 Cloud PCs to fit the organization's needs. Individual end users can securely stream their rich, personalized Windows experience&mdash;including their apps, data, content, and settings&mdash;from the Microsoft cloud to any device, any time, with their Windows 365 Cloud PC.
 
 ## Why integrate with Windows 365 Cloud PCs? 
 
@@ -16,7 +16,7 @@ By integrating with and building on top of Windows 365, you can provision, manag
 
 ### Create Azure network connections
 
-Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to give line of sight to a domain controller. Once created, if not in use, an Azure network connection can be deleted. Health checks can also be run on an Azure network connection to check its health status and, if needed, the AD domain password can be updated. 
+Create [Azure network connections](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to give line of sight to a domain controller. Once created, if not in use, an Azure network connection can be deleted. Health checks can also be run on an Azure network connection to check its health status and, if needed, the Active Directory domain password can be updated. 
 
 ### Provision Cloud PCs
 
@@ -33,8 +33,9 @@ Once provisioned, list and view end users’ [Cloud PCs](/graph/api/resources/cl
 ## API reference
 
 Looking for the API reference for the service?
+
 - [Working with Windows 365 Cloud PCs using the Microsoft Graph API](/graph/api/resources/cloudpc-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next step
 
-- Try out the Windows 365 Cloud PCs APIs by using the [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Try out the Windows 365 Cloud PC APIs by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

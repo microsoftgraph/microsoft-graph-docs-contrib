@@ -68,6 +68,8 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline)
 smsNotificationsEnabled := true
 requestBody.SetSmsNotificationsEnabled(&smsNotificationsEnabled)
+languageTag := "en-US"
+requestBody.SetLanguageTag(&languageTag)
 isHiddenFromCustomers := false
 requestBody.SetIsHiddenFromCustomers(&isHiddenFromCustomers)
 notes := "Home-cooked special"
@@ -95,6 +97,8 @@ requestBody.SetStaffMemberIds( []String {
 	"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 	"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
 }
+isAnonymousJoinEnabled := false
+requestBody.SetIsAnonymousJoinEnabled(&isAnonymousJoinEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingService",
 	"defaultPriceType@odata.type": "#microsoft.graph.bookingPriceType",

@@ -13,8 +13,8 @@ requestBody.SetSite(site)
 webUrl := "https://m365x809305.sharepoint.com/sites/Retail"
 site.SetWebUrl(&webUrl)
 ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryCustodianId := "ediscoveryCustodian-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).CustodiansById(&ediscoveryCustodianId).SiteSources().Post(requestBody)
+ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
+result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).SiteSources().Post(requestBody)
 
 
 ```

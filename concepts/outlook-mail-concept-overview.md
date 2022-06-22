@@ -1,6 +1,6 @@
 ---
 title: "Outlook mail API overview"
-description: "Outlook is a messaging communication hub in Microsoft 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,"
+description: "Use the Outlook mail API in Microsoft Graph to manage contacts, schedule meetings, initiate online conversations, share files, and collaborate in groups."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.prod: "outlook"
