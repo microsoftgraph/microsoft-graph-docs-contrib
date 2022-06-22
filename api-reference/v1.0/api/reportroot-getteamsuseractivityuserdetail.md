@@ -97,6 +97,10 @@ The CSV file has the following headers for columns:
 - Is Licensed
 - Report Period
 
+>[!NOTE] 
+>Meetings Organized Count may not be the sum of Ad Hoc Meetings Organized Count, Scheduled One-time Meetings Organized Count, and Scheduled Recurring Meetings Organized Count a user organized during the specified time period since the Unclassified meetings is not inlcuded in the output CSV file.
+See https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report for details.
+
 ## Example
 
 #### Request
