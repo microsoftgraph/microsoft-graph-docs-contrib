@@ -1,5 +1,5 @@
 ---
-title: "List emailAuthenticationMethods"
+title: "List emailMethods"
 description: "Get a list of the emailAuthenticationMethod objects for a user."
 author: "mmcla"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# List emailAuthenticationMethods
+# List emailMethods
 Namespace: microsoft.graph
 
 Retrieve a list of a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties. This API will return only a single object in the collection as only one email method can be set for a user.
