@@ -1,6 +1,6 @@
 ---
 title: "Delete federatedIdentityCredential"
-description: "Deletes a federatedIdentityCredential object."
+description: "Delete a federatedIdentityCredential object."
 author: "shahzad-khalid"
 ms.localizationpriority: medium
 ms.prod: "applications"
