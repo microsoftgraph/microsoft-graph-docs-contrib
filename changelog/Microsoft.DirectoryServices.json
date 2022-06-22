@@ -31,7 +31,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the **phoneAuthenticationMethod** navigation property to the [authentication](https://docs.microsoft.com/graph/api/resources/authentication) resource.",
+          "Description": "Added the **phoneMethods** navigation property to the [authentication](https://docs.microsoft.com/graph/api/resources/authentication) resource.",
           "Target": "authentication"
         },
         {
