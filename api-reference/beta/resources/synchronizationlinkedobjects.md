@@ -18,10 +18,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|manager|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)|Any members of the group that you would like to provision.|
 |members|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|Any managers of the user that you would like to provision.|
-|owners|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|Any owners of the group you would like to provision.|
-
 
 ## Relationships
 None.
