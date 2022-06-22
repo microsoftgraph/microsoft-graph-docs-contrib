@@ -11,6 +11,7 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+
 ### crossTenantAccessPolicyTargetConfigurationAccessType values
 
 |Member|
@@ -25,6 +26,22 @@ Namespace: microsoft.graph
 |:---|
 |user|
 |group|
+
+### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
 
 ### expirationPatternType values 
 

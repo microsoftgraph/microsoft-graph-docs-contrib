@@ -39,10 +39,10 @@ requestBody.SetRecipients( []TeamworkNotificationRecipient {
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "pendingRequestCount",
-		"value": "5",
-	}
+name := "pendingRequestCount"
+	SetName(&name)
+value := "5"
+	SetValue(&value)
 }
 graphClient.Teamwork().SendActivityNotificationToRecipients().Post(requestBody)
 

@@ -26,13 +26,11 @@ description := "Sample description"
 requestBody.SetDescription(&description)
 requestBody.SetReviewers( []AccessReviewReviewer {
 	msgraphsdk.NewAccessReviewReviewer(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "f260246a-09b1-4fd5-8d18-daed736071ec",
-	}
+id := "f260246a-09b1-4fd5-8d18-daed736071ec"
+	SetId(&id)
 	msgraphsdk.NewAccessReviewReviewer(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "5a4e184c-4ee5-4883-96e9-b371f8da88e3",
-	}
+id := "5a4e184c-4ee5-4883-96e9-b371f8da88e3"
+	SetId(&id)
 }
 settings := msgraphsdk.NewAccessReviewSettings()
 requestBody.SetSettings(settings)

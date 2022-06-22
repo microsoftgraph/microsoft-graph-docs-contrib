@@ -10,11 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewExternalItem()
 requestBody.SetAcl( []Acl {
 	msgraphsdk.NewAcl(),
-	SetAdditionalData(map[string]interface{}{
-		"type": "everyone",
-		"value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-		"accessType": "grant",
-	}
+type := "everyone"
+	SetType(&type)
+value := "67a141d8-cf4e-4528-ba07-bed21bfacd2d"
+	SetValue(&value)
+accessType := "grant"
+	SetAccessType(&accessType)
 }
 externalConnectionId := "externalConnection-id"
 externalItemId := "externalItem-id"
