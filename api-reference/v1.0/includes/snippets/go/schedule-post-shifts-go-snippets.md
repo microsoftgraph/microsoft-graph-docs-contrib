@@ -28,13 +28,16 @@ theme := "blue"
 sharedShift.SetTheme(&theme)
 sharedShift.SetActivities( []ShiftActivity {
 	msgraphsdk.NewShiftActivity(),
-	SetAdditionalData(map[string]interface{}{
-		"isPaid": true,
-		"startDateTime": "2019-03-11T15:00:00Z",
-		"endDateTime": "2019-03-11T15:15:00Z",
-		"code": "",
-		"displayName": "Lunch",
-	}
+isPaid := true
+	SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+	SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:15:00Z")
+	SetEndDateTime(&endDateTime)
+code := ""
+	SetCode(&code)
+displayName := "Lunch"
+	SetDisplayName(&displayName)
 }
 draftShift := msgraphsdk.NewShiftItem()
 requestBody.SetDraftShift(draftShift)
@@ -50,13 +53,16 @@ theme := "blue"
 draftShift.SetTheme(&theme)
 draftShift.SetActivities( []ShiftActivity {
 	msgraphsdk.NewShiftActivity(),
-	SetAdditionalData(map[string]interface{}{
-		"isPaid": true,
-		"startDateTime": "2019-03-11T15:00:00Z",
-		"endDateTime": "2019-03-11T15:30:00Z",
-		"code": "",
-		"displayName": "Lunch",
-	}
+isPaid := true
+	SetIsPaid(&isPaid)
+startDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:00:00Z")
+	SetStartDateTime(&startDateTime)
+endDateTime, err := time.Parse(time.RFC3339, "2019-03-11T15:30:00Z")
+	SetEndDateTime(&endDateTime)
+code := ""
+	SetCode(&code)
+displayName := "Lunch"
+	SetDisplayName(&displayName)
 }
 teamId := "team-id"
 result, err := graphClient.TeamsById(&teamId).Schedule().Shifts().Post(requestBody)

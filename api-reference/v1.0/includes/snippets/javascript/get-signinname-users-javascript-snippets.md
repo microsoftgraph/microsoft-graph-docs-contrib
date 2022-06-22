@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 let users = await client.api('/users')
-	.filter('identities/any(c:c/issuerAssignedId eq \'j.smith@yahoo.com\' and c/issuer eq \'contoso.onmicrosoft.com\')')
+	.filter('identities/any(c:c/issuerAssignedId eq \'j.smith@yahoo.com\' and c/issuer eq \'My B2C tenant\')')
 	.select('displayName,id')
 	.get();
 

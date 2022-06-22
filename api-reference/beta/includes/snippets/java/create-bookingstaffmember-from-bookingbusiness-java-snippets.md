@@ -72,6 +72,7 @@ timeSlotsList4.add(timeSlots4);
 workingHours4.timeSlots = timeSlotsList4;
 workingHoursList.add(workingHours4);
 bookingStaffMember.workingHours = workingHoursList;
+bookingStaffMember.isEmailNotificationEnabled = false;
 
 graphClient.bookingBusinesses("{id}").staffMembers()
 	.buildRequest()
