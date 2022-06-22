@@ -135,63 +135,61 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-	"value": [{
-		"id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
-        "category": "UserManagement",
-        "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
-        "result": "success",
-        "resultReason": "",
-        "activityDisplayName": "Update user",
-        "activityDateTime": "2022-06-21T23:25:00.1458248Z",
-        "loggedByService": "Core Directory",
-        "operationType": "Update",
-        "userAgent": null,
-        "initiatedBy": {
-            "app": null,
-            "user": {
-                "id": "2c940657-1026-4386-bcfd-3176637ba01f",
-                "displayName": "Test Admin",
-                "userPrincipalName": "tadmin@contoso.com",
-                "ipAddress": "",
-                "userType": "Member",
-                "homeTenantId": null,
-                "homeTenantName": null
-            }
-        },
-        "targetResources": [
-            {
-                "id": "2c940657-1026-4386-bcfd-3176637ba01f",
-                "displayName": "Test User",
-                "type": "User",
-                "userPrincipalName": "tuser@contoso.com",
-                "groupType": null,
-                "modifiedProperties": [
-                    {
-                        "displayName": "StrongAuthenticationMethod",
-                        "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
-                        "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
-                    },
-                    {
-                        "displayName": "Included Updated Properties",
-                        "oldValue": null,
-                        "newValue": "\"StrongAuthenticationMethod\""
-                    },
-                    {
-                        "displayName": "TargetId.UserType",
-                        "oldValue": null,
-                        "newValue": "\"Member\""
-                    }
-                ]
-            }
-        ],
-        "additionalDetails": [
-            {
-                "key": "UserType",
-                "value": "Member"
-            }
-        ]
-    }
+	"id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
