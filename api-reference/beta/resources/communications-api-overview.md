@@ -1,24 +1,24 @@
 ---
-title: "Working with the communications API in Microsoft Graph"
-description: "The Microsoft Graph communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
+title: "Working with the cloud communications API in Microsoft Graph"
+description: "The Microsoft Graph cloud communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
 author: "ananmishr"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
 ---
 
-# Working with the communications API in Microsoft Graph
+# Working with the cloud communications API in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph communications API adds a new dimension to how you or your organization can interact with other users by enabling core communication capabilities and features in your apps and services. You can use this API to create and receive calls, create and retrieve meeting coordinates, and check users' presence.
+The Microsoft Graph cloud communications API adds a new dimension to how you or your organization can interact with other users by enabling core communication capabilities and features in your apps and services. You can use this API to create and receive calls, create and retrieve meeting coordinates, and check users' presence.
 
-You can use the communications API to build service applications (bots) that act like participants in a call, and that create and retrieve meetings on behalf of users and to check their presence availability and activity.
+You can use the cloud communications API to build service applications (bots) that act like participants in a call, and that create and retrieve meetings on behalf of users and to check their presence availability and activity.
 This API provides calling functionality as well as the ability to create and retrieve online meetings. You can use service applications (bots) with this API, where the bot can act as a participant in your VoIP calls or Microsoft Teams meetings, for example.
 
 ## Authorization
 
-One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the communications API. These permissions need to be granted by the administrator
+One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the cloud communications API. These permissions need to be granted by the administrator.
 
 | Scenario                 | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -29,7 +29,7 @@ One of the following [permissions](/graph/permissions-reference#calls-permission
 
 ## Common use cases
 
-The following table lists some of the common uses for the communications API.
+The following table lists some of the common uses for the cloud communications API.
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
@@ -55,7 +55,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## See also
 
-- [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
+- [Cloud communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)
 - [Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
 
