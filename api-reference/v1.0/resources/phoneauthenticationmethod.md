@@ -23,11 +23,11 @@ An office phone can only receive voice calls, not SMS messages.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all this user's phoneAuthenticationMethod objects. |
-| [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of the phoneAuthenticationMethod object for a user. |
-|[Create](../api/authentication-post-phonemethods.md)|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Create a user's phoneAuthenticationMethod object.|
-| [Update](../api/phoneauthenticationmethod-update.md) | None | Update the phoneAuthenticationMethod object for a user. |
-| [Delete](../api/phoneauthenticationmethod-delete.md) | None | Delete the phoneAuthenticationMethod object for a user. |
+| [List phoneMethods](../api/authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all this user's phoneAuthenticationMethod objects. |
+| [Get phoneAuthenticationMethod](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of the phoneAuthenticationMethod object for a user. |
+|[Create phoneMethod](../api/authentication-post-phonemethods.md)|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Create a user's phoneAuthenticationMethod object.|
+| [Update phoneAuthenticationMethod](../api/phoneauthenticationmethod-update.md) | None | Update the phoneAuthenticationMethod object for a user. |
+| [Delete phoneAuthenticationMethod](../api/phoneauthenticationmethod-delete.md) | None | Delete the phoneAuthenticationMethod object for a user. |
 |[Disable SMS signin](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
 |[Enable SMS signin](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
 
