@@ -6,19 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ediscoveryNoncustodialDataSource = new Microsoft.Graph.Security.EdiscoveryNoncustodialDataSource
+var ediscoveryNoncustodialDataSourceReference = new ReferenceRequestBody
 {
-	DataSource = new SiteSource
-	{
-		Site = new Site
-		{
-			WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret"
-		}
-	}
+	ODataId = "https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources/39333641443238353535383731453339"
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].NoncustodialDataSources
+await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Searches["{security.ediscoverySearch-id}"].NoncustodialSources.References
 	.Request()
-	.AddAsync(ediscoveryNoncustodialDataSource);
+	.AddAsync(ediscoveryNoncustodialDataSourceReference);
 
 ```
