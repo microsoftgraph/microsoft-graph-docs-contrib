@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new partner configuration in a cross-tenant access policy.
 
 ## Permissions
@@ -71,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [crossTen
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partners
+POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {

@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a [cross-tenant access policy](../resources/crosstenantaccesspolicy.md).
 
 ## Permissions
@@ -66,7 +68,7 @@ The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object si
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
