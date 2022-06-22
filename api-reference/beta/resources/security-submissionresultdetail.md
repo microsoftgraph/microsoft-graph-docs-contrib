@@ -61,13 +61,13 @@ Defines threat submission result detail and gives more information about submiss
 | blockedByTenant                        | The reported message is blocked due to Tenant Policy or settings |
 | invalidFalsePositive                   | The reported message is already allowed                      |
 | invalidFalseNegative                   | The reported message is already blocked                      |
-| spoofBlocked                           | The reported message is spoof and blocked                    |
+| spoofBlocked                           | The reported message has been determined as spoof by our system and blocked                    |
 | goodReclassifiedAsBad                  | The reported message has already been determined bad by our system |
 | goodReclassifiedAsBulk                 | The reported message has already been determined bulk by our system |
 | goodReclassifiedAsGood                 | The reported message has already been determined good by our system |
-| goodReclassifiedAsCannotMakeDecision   | The reported message does not have a verdict at the moment   |
+| goodReclassifiedAsCannotMakeDecision   | At the moment Microsoft cannot reach a verdict on the reported message and so please submit again   |
 | badReclassifiedAsGood                  | The reported message has already been identified as good by the system |
 | badReclassifiedAsBulk                  | The reported message has already been identified as bulk by the system |
 | badReclassifiedAsBad                   | The reported message has already been identified as bad by the system |
-| badReclassifiedAsCannotMakeDecision    | The reported message does not have a decision at the moment  |
+| badReclassifiedAsCannotMakeDecision    |   At the moment Microsoft cannot reach a verdict on the reported message and so please submit again |
 | unknownFutureValue                     | Any future value which is not in use now                     |
