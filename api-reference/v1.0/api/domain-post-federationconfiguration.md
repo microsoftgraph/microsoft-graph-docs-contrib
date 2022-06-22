@@ -66,11 +66,12 @@ You can specify the following properties when creating an **internalDomainFedera
 | enforceMfaByFederatedIdp | Azure AD accepts MFA that's performed by federated identity provider. If the federated identity provider didn't perform MFA, it redirects the request to federated identity provider to perform MFA. |
 | rejectMfaByFederatedIdp | Azure AD always performs MFA and rejects MFA that's performed by the federated identity provider. |
 
-**Note:** **federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings). 
-+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
-+ Once **federatedIdpMfaBehavior** property is set, Azure AD ignores the **SupportsMfa** setting.
-+ If the **federatedIdpMfaBehavior** property is never set, Azure AD will continue to honor the **SupportsMfa** setting.
-+ If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Azure AD will default to `acceptIfMfaDoneByFederatedIdp` behavior.
+>[!NOTE]
+>**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings). 
+>+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
+>+ When **federatedIdpMfaBehavior** property is set, Azure AD ignores the **SupportsMfa** setting.
+>+ If the **federatedIdpMfaBehavior** property is never set, Azure AD will continue to honor the **SupportsMfa** setting.
+>+ If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Azure AD will default to `acceptIfMfaDoneByFederatedIdp` behavior.
 
 
 ## Response
