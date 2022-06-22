@@ -135,7 +135,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
     "category": "UserManagement",
     "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
     "result": "success",
