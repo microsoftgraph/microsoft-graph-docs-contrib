@@ -11,7 +11,7 @@
           "Target": "emailAuthenticationMethod"
         },
         {
-          "Id": "341b6090-3a47-4710-8b57-88dae99b15e1",
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
           "ApiChange": "Relationship",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "authentication"
         },
         {
-          "Id": "51cc8ef6-7798-4344-b6ee-e48543e5a50a",
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "phoneAuthenticationMethod"
         },
         {
-          "Id": "a90c59fc-d1bd-4a25-bd48-34b82956047d",
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
           "ApiChange": "Relationship",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "authentication"
         },
         {
-          "Id": "ae0b4038-ef8b-48e7-b711-c52dbde06cf8",
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethod",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "softwareOathAuthenticationMethod"
         },
         {
-          "Id": "4efee6ce-2166-43d0-8bc3-226f6bd20a8f",
+          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
           "ApiChange": "Relationship",
           "ChangedApiName": "softwareOathAuthenticationMethod",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "authentication"
         }
       ],
-      "Id": "aa87c199-7df7-43f4-b87f-dc45741a6b23",
+      "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-05-10T21:30:00.00Z",
@@ -69,7 +69,7 @@
           "Target": "emailAuthenticationMethod"
         },
         { 
-          "Id": "054cc5c5-97b0-45cd-a040-5e85b9095562",
+          "Id": "b5a1875e-c52b-44f0-be4c-7a316c68335d",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
           "ChangeType": "Addition",
@@ -77,7 +77,7 @@
           "Target": "phoneAuthenticationMethod"
         }
       ],
-      "Id": "875cef7e-9a4a-43f0-8eea-9c5765e52dde",
+      "Id": "b5a1875e-c52b-44f0-be4c-7a316c68335d",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-10T21:30:00.00Z",
