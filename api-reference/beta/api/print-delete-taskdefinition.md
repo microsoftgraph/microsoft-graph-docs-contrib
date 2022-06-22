@@ -3,7 +3,7 @@ title: Delete taskDefinition
 description: Delete a task definition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/print/taskDefinitions/4c6a0f26-8e5d-4bf6
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-taskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-taskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

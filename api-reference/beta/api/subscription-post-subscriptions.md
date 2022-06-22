@@ -13,21 +13,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+
+Some resources support the option to include encrypted resource data in change notifications. These resources include [chatMessage](../resources/chatmessage.md), [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [onlineMeetings](../resources/onlinemeeting.md) and [presence](../resources/presence.md). For more information, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data) and [Change notifications for Outlook resources in Microsoft Graph](/graph/outlook-change-notification-overview).
 
 ## Permissions
 
 Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
 
-Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
-|[channels](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[channels](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[channel](../resources/channel.md) (/teams/getAllChannels – all channels in an organization) | Not supported  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[channel](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Not supported | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) (/chats – all chats in an organization) | Not supported | Not supported | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Not supported | ChatSettings.Read.Chat*, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Not supported | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -47,18 +52,20 @@ Depending on the resource and the permission type (delegated or application) req
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
+|[online meeting](../resources/onlinemeeting.md) | Not supported | Not supported | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
 |[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
+|[team](../resources/team.md) (/teams – all teams in an organization) | Not supported | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
+|[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+We recommend that you use the permissions as documented in the previous table. Due to security restrictions, Microsoft Graph subscriptions will not support write access permissions when only read access permissions are needed.
+
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
@@ -72,17 +79,13 @@ OneDrive for Business and SharePoint support sending your application notificati
 
 ### contact, event, and message
 
-Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+You can subscribe to changes in Outlook **contact**, **event**, or **message** resources and optionally specify in the POST request payload whether to include encrypted resource data in notifications.
 
-- Delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. For example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
-- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
+[!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
-  - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
-  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders.
+### onlineMeetings, presence
 
-### presence
-
-Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+Subscriptions on **onlineMeetings** and **presence** require the **encryptionCertificate** and **encryptionCertificateId** property when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) for notifications with encrypted resource data. For more information, see [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
 
 ## HTTP request
 
@@ -156,6 +159,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
@@ -167,6 +174,7 @@ The following are valid values for the resource property.
 
 | Resource type | Examples |
 |:------ |:----- |
+|[baseTask](../resources/basetask.md) (deprecated) | `/me/tasks/lists/{Id}/tasks`
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[Channels](../resources/channel.md)|`/teams/getAllChannels`, `/teams/{id}/channels`|
 |[Chat](../resources/chat.md)|`/chats`, `/chats/{id}`|
@@ -179,13 +187,13 @@ The following are valid values for the resource property.
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[OnlineMeetings](../resources/onlinemeeting.md)|`/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
-|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.

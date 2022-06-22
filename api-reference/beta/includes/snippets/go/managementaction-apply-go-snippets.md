@@ -14,11 +14,8 @@ tenantGroupId := "String"
 requestBody.SetTenantGroupId(&tenantGroupId)
 managementTemplateId := "String"
 requestBody.SetManagementTemplateId(&managementTemplateId)
-options := &msgraphsdk.ApplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 managementActionId := "managementAction-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById(&managementActionId).Apply().Post(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().ManagementActionsById(&managementActionId).Apply(managementAction-id).Post(requestBody)
 
 
 ```

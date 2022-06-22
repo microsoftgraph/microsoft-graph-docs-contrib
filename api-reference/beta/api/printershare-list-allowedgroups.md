@@ -3,7 +3,7 @@ title: List allowedGroups for printerShare
 description: Retrieve a list of groups that have been granted access to submit print jobs to the associated printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allowedgroups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-allowedgroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -12,11 +12,8 @@ groupId := "groupId-value"
 requestBody.SetGroupId(&groupId)
 renameAs := "renameAs-value"
 requestBody.SetRenameAs(&renameAs)
-options := &msgraphsdk.CopyNotebookRequestBuilderPostOptions{
-	Body: requestBody,
-}
 notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).CopyNotebook().Post(options)
+result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).CopyNotebook(notebook-id).Post(requestBody)
 
 
 ```

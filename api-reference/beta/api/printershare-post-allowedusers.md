@@ -3,7 +3,7 @@ title: Create allowedUser for printerShare
 description: Grant the specified user access to submit print jobs to the associated printer share.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -79,6 +79,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-alloweduser-from-printers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-alloweduser-from-printers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

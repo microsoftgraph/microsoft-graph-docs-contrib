@@ -1,7 +1,7 @@
 ---
 title: "Create timeOffReason"
 description: "Create a new timeOffReason."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-post-timeoffreasons-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-post-timeoffreasons-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

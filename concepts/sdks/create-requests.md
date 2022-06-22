@@ -11,7 +11,7 @@ author: DarrelMiller
 
 The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](../powershell/get-started.md), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](../powershell/navigating.md).
+There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
@@ -73,6 +73,8 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 ## Retrieve a list of entities
 
 Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
+
+[!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
 # [C#](#tab/CS)
 

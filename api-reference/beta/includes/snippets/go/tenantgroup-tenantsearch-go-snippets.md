@@ -7,13 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewTenantIdRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId)
-options := &msgraphsdk.TenantSearchRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().TenantSearch().Post(requestBody)
 
 
 ```

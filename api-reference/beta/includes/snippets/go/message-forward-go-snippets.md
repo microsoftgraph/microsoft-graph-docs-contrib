@@ -10,18 +10,21 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
-message.SetAdditionalData(map[string]interface{}{
-	"isDeliveryReceiptRequested": true,
-	"toRecipients":  []Object {
-	}
+isDeliveryReceiptRequested := true
+message.SetIsDeliveryReceiptRequested(&isDeliveryReceiptRequested)
+message.SetToRecipients( []Recipient {
+	msgraphsdk.NewRecipient(),
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Dana Swope"
+	emailAddress.SetName(&name)
 }
 comment := "Dana, just want to make sure you get this."
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Forward().Post(options)
+graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(requestBody)
 
 
 ```

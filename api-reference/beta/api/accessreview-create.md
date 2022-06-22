@@ -1,5 +1,5 @@
 ---
-title: "Create accessReview"
+title: "Create accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Create accessReview
+# Create accessReview (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
@@ -144,6 +146,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreview-from-accessreviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

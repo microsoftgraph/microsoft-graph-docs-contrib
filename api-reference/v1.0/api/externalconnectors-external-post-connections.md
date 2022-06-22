@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not applicable|
+|Delegated (work or school account)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalConnection.ReadWrite.OwnedBy|
+|Application| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## HTTP request
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalconnection-from-connections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalconnection-from-connections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -10,12 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const aAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs = {
+const baseTaskList = {
+    '@odata.type': '#microsoft.graph.taskList',
     displayName: 'Travel Plan'
 };
 
 await client.api('/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs')
 	.version('beta')
-	.update(aAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs);
+	.update(baseTaskList);
 
 ```

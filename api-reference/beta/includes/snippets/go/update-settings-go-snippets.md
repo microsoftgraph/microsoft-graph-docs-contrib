@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewCaseSettings()
 redundancyDetection := msgraphsdk.NewRedundancyDetectionSettings()
@@ -34,11 +34,8 @@ isEnabled := true
 ocr.SetIsEnabled(&isEnabled)
 maxImageSize := int32(12000)
 ocr.SetMaxImageSize(&maxImageSize)
-options := &msgraphsdk.SettingsRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).Settings().Patch(requestBody)
 
 
 ```

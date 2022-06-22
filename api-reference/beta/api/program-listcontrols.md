@@ -1,5 +1,5 @@
 ---
-title: "List programControls of a program"
+title: "List programControls of a program (deprecated)"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,11 +7,13 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# List programControls of a program
+# List programControls of a program (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, linked to a particular program.
 ## Permissions

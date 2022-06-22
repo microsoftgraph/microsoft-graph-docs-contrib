@@ -3,7 +3,7 @@ title: List taskTriggers
 description: Retrieve a list of task triggers associated with the printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printer-tasktriggers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printer-tasktriggers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

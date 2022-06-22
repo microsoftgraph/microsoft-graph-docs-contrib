@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleAssignmentScheduleInstance"
-description: "Read the properties and relationships of an unifiedRoleAssignmentScheduleInstance object."
-author: "carolinetempleton"
+description: "Get the instance of an active role assignment."
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md) object.
+Get the instance of an active role assignment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/{unifiedRoleAssign
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentscheduleinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentscheduleinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

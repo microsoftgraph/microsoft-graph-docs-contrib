@@ -16,17 +16,25 @@ content := "Hello World <at id="0">Jane Smith</at>"
 body.SetContent(&content)
 requestBody.SetMentions( []ChatMessageMention {
 	msgraphsdk.NewChatMessageMention(),
-	SetAdditionalData(map[string]interface{}{
-		"id": ,
-		"mentionText": "Jane Smith",
+id := int32(0)
+	SetId(&id)
+mentionText := "Jane Smith"
+	SetMentionText(&mentionText)
+mentioned := msgraphsdk.NewChatMessageMentionedIdentitySet()
+	SetMentioned(mentioned)
+user := msgraphsdk.NewIdentity()
+	mentioned.SetUser(user)
+displayName := "Jane Smith"
+	user.SetDisplayName(&displayName)
+id := "ef1c916a-3135-4417-ba27-8eb7bd084193"
+	user.SetId(&id)
+	user.SetAdditionalData(map[string]interface{}{
+		"userIdentityType": "aadUser",
 	}
-}
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
 }
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
 
 
 ```

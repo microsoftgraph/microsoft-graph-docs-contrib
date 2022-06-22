@@ -1,5 +1,5 @@
 ---
-title: "Reset accessReview"
+title: "Reset accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  Previous decisions are no longer recorded, but reviewers can continue to update decisions."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,13 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Reset accessReview
+# Reset accessReview (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, reset the decisions of a currently active [accessReview](../resources/accessreview.md).  The target object can be either a one-time access review, or an instance of a recurring access review.  Previous decisions are no longer recorded, but reviewers can continue to update decisions.
 
@@ -70,6 +72,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reset-accessreview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reset-accessreview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

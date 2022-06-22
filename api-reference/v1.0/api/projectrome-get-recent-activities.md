@@ -65,7 +65,7 @@ If successful, this method returns the `200 OK` response code with the user's re
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -99,10 +99,14 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 [!INCLUDE [sample-code](../includes/snippets/go/get-recent-activities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-recent-activities-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-##### Response
+### Response
 
 The following is an example of the response.
 

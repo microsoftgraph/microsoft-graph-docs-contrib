@@ -15,13 +15,10 @@ requestBody.SetToRecipients( []Recipient {
 	SetAdditionalData(map[string]interface{}{
 	}
 }
-options := &msgraphsdk.ForwardRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward().Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Forward(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

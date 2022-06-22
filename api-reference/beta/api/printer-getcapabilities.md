@@ -3,7 +3,7 @@ title: "printer: getCapabilities"
 description: Get a list of capabilities for the printer.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -68,6 +68,14 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/printer-getcapabilities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/printer-getcapabilities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/printer-getcapabilities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,7 +3,7 @@ title: List taskDefinitions
 description: Retrieve a list of task definitions that the requesting app defined in the tenant.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/print-list-taskdefinitions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/print-list-taskdefinitions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

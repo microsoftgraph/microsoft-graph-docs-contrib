@@ -4,7 +4,7 @@ description: "Cancel a privilegedRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # Cancel privilegedRoleAssignmentRequest
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD    |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cancel-privilegedroleassignmentrequests-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cancel-privilegedroleassignmentrequests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

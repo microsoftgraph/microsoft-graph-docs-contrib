@@ -17,15 +17,19 @@ Retrieve the properties of a single delegated permission grant represented by an
 
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
+> [!NOTE]
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -87,6 +91,10 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8Q
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-oauth2permissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-oauth2permissiongrant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

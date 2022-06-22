@@ -12,11 +12,8 @@ key := "Base64-encoded-pfx-content"
 requestBody.SetKey(&key)
 password := "password-value"
 requestBody.SetPassword(&password)
-options := &msgraphsdk.UploadPkcs12RequestBuilderPostOptions{
-	Body: requestBody,
-}
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12().Post(options)
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12(trustFrameworkKeySet-id).Post(requestBody)
 
 
 ```

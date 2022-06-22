@@ -19,9 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
+
+To delete an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Privileged Role Administrator
+* Global Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-administrativeunit-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

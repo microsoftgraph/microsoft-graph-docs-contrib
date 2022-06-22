@@ -28,16 +28,13 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "pendingRequestCount",
-		"value": "5",
-	}
-}
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
+name := "pendingRequestCount"
+	SetName(&name)
+value := "5"
+	SetValue(&value)
 }
 teamId := "team-id"
-graphClient.TeamsById(&teamId).SendActivityNotification().Post(options)
+graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
 
 
 ```

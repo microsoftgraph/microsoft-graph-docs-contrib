@@ -3,7 +3,7 @@ title: Get printJob
 description: Retrieve the properties and relationships of a print job.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -18,13 +18,19 @@ Retrieve the properties and relationships of a print job.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) or [Get printerShare](printershare-get.md) access depending upon whether printer or printerShare is being used.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+
+For an app with delegated permissions to retrieve other users' jobs, the signed-in user must be a member of one of the following administrator roles:
+- Global Administrator
+- Printer Administrator
+
+For an app with application permissions to retrieve users' jobs, the app needs a permission that grants [Get printer](printer-get.md) access along with one of the application permissions described in the [Permissions](#permissions) table.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -238,7 +244,6 @@ Content-type: application/json
   "isFetchable": false,
   "configuration": {    
   },
-  "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

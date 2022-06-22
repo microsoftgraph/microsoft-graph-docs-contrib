@@ -59,7 +59,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -93,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingbusiness-from-bookingbusinesses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingbusiness-from-bookingbusinesses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
@@ -119,7 +122,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -186,6 +188,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag":"en-US",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

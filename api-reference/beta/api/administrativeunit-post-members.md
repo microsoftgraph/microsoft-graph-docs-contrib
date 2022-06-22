@@ -1,6 +1,6 @@
 ---
 title: "Add a member"
-description: "Use this API to add a member (user or group) to an administrative unit."
+description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a member (user or group) to an administrative unit or to create a new group within an administrative unit. All [group types](/graph/api/resources/groups-overview) can be created within an administrative unit.
+Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit. All [group types](/graph/api/resources/groups-overview) can be created within an administrative unit.
 
-**NOTE:** Currently it's only possible to add one member at a time to an administrative unit.`
+**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,16 +23,27 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions to add an existing user, group, or device
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
+
+To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Privileged Role Administrator
+* Global Administrator
 
 ### Permissions to create a new group
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
+
+To create a new group in an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Privileged Role Administrator
+* Global Administrator
+* Groups Administrator
 
 ## HTTP request
 
@@ -54,9 +65,8 @@ POST /administrativeUnits/{id}/members
 | Authorization  | Bearer {token}. Required. |
 | Content-type  | application/json. Required. |
 
-## Request body
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit. 
@@ -120,13 +130,18 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
-In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
+In the request body, provide the `id` of the [user](../resources/user.md), [group](../resources/group.md), or [device](../resources/device.md) object you want to add.
 
 #### Response
+
 The following is an example of the response.
  
 <!-- {

@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/go/get-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-eventmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -237,6 +241,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 [!INCLUDE [sample-code](../includes/snippets/go/get-event-based-on-eventmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-based-on-eventmessage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -343,7 +351,6 @@ Content-type: application/json
     "previousLocation":null,
     "previousStartDateTime":null,
     "previousEndDateTime":null,
-    "event@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
     "event":{
         "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
         "id":"AAMkADYAAAImVu6AAA=",

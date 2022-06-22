@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |administrativeunit | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -40,15 +40,15 @@ GET /administrativeUnits/delta
 Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
-into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
+into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response. 
 You only need to specify any query parameters once up front. 
-In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response. That URL already 
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response. That URL already 
 includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
 ### Optional query parameters
 
@@ -71,11 +71,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL. 
+If successful, this method returns `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) collection object in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL. 
 
-- If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The **administrativeUnit** continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
+- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The **administrativeUnit** continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
-- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
+- If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
 For details and an example, see [Using delta query](/graph/delta-query-overview) and [Get incremental changes for users](/graph/delta-query-users).
 
@@ -109,6 +109,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/administrativeunit-delta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/administrativeunit-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

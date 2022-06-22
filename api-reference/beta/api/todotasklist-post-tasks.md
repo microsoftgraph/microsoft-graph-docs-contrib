@@ -48,6 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique identifier for the task. By default, this value changes when the item is moved from one list to another.|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
@@ -84,6 +85,7 @@ Content-Type: application/json
 
 {
    "title":"A new task",
+   "categories": ["Important"],
    "linkedResources":[
       {
          "webUrl":"http://microsoft.com",
@@ -113,6 +115,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-todotask-from-tasks-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-todotask-from-tasks-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -137,6 +143,7 @@ Content-Type: application/json
    "title":"A new task",
    "createdDateTime":"2020-08-18T09:03:05.8339192Z",
    "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "categories": ["Important"],
    "id":"AlMKXwbQAAAJws6wcAAAA=",
    "body":{
       "content":"",

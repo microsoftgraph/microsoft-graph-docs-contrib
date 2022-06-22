@@ -20,14 +20,10 @@ requestBody.SetUserAttributeValues( []UserAttributeValuesItem {
 }
 userAttribute := msgraphsdk.NewIdentityUserFlowAttribute()
 requestBody.SetUserAttribute(userAttribute)
-userAttribute.SetAdditionalData(map[string]interface{}{
-	"id": "extension_guid_shoeSize",
-}
-options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
+id := "extension_guid_shoeSize"
+userAttribute.SetId(&id)
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().Post(options)
+result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignments().Post(requestBody)
 
 
 ```

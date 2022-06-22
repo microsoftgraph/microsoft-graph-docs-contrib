@@ -17,12 +17,11 @@ dueDateTime.SetTimeZone(&timeZone)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Eastern Standard Time""
 }
-options := &msgraphsdk.OutlookTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.OutlookTaskRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 outlookTaskId := "outlookTask-id"
-graphClient.Me().Outlook().TasksById(&outlookTaskId).Patch(options)
+graphClient.Me().Outlook().TasksById(&outlookTaskId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

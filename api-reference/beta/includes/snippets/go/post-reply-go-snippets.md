@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewPostRequestBody()
 post := msgraphsdk.NewPost()
 requestBody.SetPost(post)
 body := msgraphsdk.NewItemBody()
@@ -60,23 +60,26 @@ inReplyTo := msgraphsdk.NewPost()
 post.SetInReplyTo(inReplyTo)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+lastModifiedDateTime, err := time.Parse(time.RFC3339, "2016-10-19T10:37:00Z")
+	SetLastModifiedDateTime(&lastModifiedDateTime)
+name := "name-value"
+	SetName(&name)
+contentType := "contentType-value"
+	SetContentType(&contentType)
+size := int32(99)
+	SetSize(&size)
+isInline := true
+	SetIsInline(&isInline)
+id := "id-value"
+	SetId(&id)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"lastModifiedDateTime": "2016-10-19T10:37:00Z",
-		"name": "name-value",
-		"contentType": "contentType-value",
-		"size": ,
-		"isInline": true,
-		"id": "id-value",
 	}
-}
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
 }
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply().Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

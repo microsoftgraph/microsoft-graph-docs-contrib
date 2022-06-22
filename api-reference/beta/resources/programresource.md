@@ -1,5 +1,5 @@
 ---
-title: "programResource resource type"
+title: "programResource resource type (deprecated)"
 description: "Represents a reference to an object which is the target of the access review."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,11 +7,13 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# programResource resource type
+# programResource resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 The **programResource** object, contained within a [programControl](programcontrol.md) object, represents a reference to an object that is the target of the access review.
 

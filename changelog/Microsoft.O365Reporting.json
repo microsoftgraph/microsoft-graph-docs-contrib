@@ -1,5 +1,273 @@
 {
   "changelog": [
+	{
+	  "ChangeList": [
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created Count** column to the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserDetail"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted Count** column to the [getEmailActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserDetail"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created** column to the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted** column to the [getEmailActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivitycounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Created** column to the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserCounts"
+		},
+		{
+			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+			"ApiChange": "Column",
+			"ChangedApiName": "getEmailActivityUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Meeting Interacted** column to the [getEmailActivityUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getEmailActivityUserCounts"
+		}
+	],
+	  "Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",
+	  "Cloud": "prd",
+	  "Version": "v1.0",
+	  "CreatedDateTime": "2022-05-23T06:29:50.0042215Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, and **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Tenant Display Name**, **Shared Channel Tenant Display Names**, **Post Messages**, **Reply Messages**, **Urgent Messages**, **Meetings Organized Count**, **Meetings Attended Count**, **Ad Hoc Meetings Organized Count**, **Ad Hoc Meetings Attended Count**, **Scheduled One-time Meetings Organized Count**, **Scheduled One-time Meetings Attended Count**, **Scheduled Recurring Meetings Organized Count**, **Scheduled Recurring Meetings Attended Count**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Audio Duration In Seconds**, **Video Duration In Seconds**, **Screen Share Duration In Seconds**, and **Is Licensed** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Used Chrome OS**, **Used Linux**, and **Is Licensed** columns to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 }
+	  ],
+		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-06-06T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
+			"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsTeamActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsTeamActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityCounts?view=graph-rest-beta) method.",
+			"Target": "getTeamsTeamActivityCounts"
+		 },
+		 {
+			"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsTeamActivityDistributionCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsTeamActivityDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityDistributionCounts?view=graph-rest-beta) method.",
+			"Target": "getTeamsTeamActivityDistributionCounts"
+		 },
+		 {
+			"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsTeamActivityDetail",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsTeamActivityDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsTeamActivityDetail?view=graph-rest-beta) method.",
+			"Target": "getTeamsTeamActivityDetail"
+		 }
+	  ],
+		"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-04-18T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
+			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsUserActivityTotalCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityTotalCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsUserActivityTotalCounts"
+		  },
+		  {
+			  "Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			  "ApiChange": "Method",
+			  "ChangedApiName": "getTeamsUserActivityCounts",
+			  "ChangeType": "Addition",
+			  "Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-beta) method.",
+			  "Target": "getTeamsUserActivityCounts"
+		  },
+		  {
+			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Tenant Name**, **Host Tenant Display**, **Post Messages**, **Reply Messages**, **Urgent Messages** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityTotalDistributionCounts",
+			"ChangeType": "Addition",
+			"Description": "Added support for the [getTeamsUserActivityTotalDistributionCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta) method.",
+			"Target": "getTeamsUserActivityTotalDistributionCounts"
+		 }
+	  ],
+		"Id": "9cabd554-398b-4dd4-8a36-5fe46c7cda94",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2022-04-06T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+    {
+	  "ChangeList": [
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) method CSV response.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		},
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) method CSV response.",
+			"Target": "getTeamsUserActivityUserDetail"
+		},
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Property",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **userId** property to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-beta) method JSON response.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		},
+		{
+			"Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+			"ApiChange": "Property",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **userId** property to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-beta) method JSON response.",
+			"Target": "getTeamsUserActivityUserDetail"
+		}
+	],
+	  "Id": "8c74461e-9207-4637-851f-1ea1a4c64fc1",
+	  "Cloud": "prd",
+	  "Version": "beta",
+	  "CreatedDateTime": "2022-01-19T09:15:14.3122315Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+	  "ChangeList": [
+		{
+			"Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		},
+		{
+			"Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
+			"ApiChange": "Column",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **User Id** column to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsuseractivityuserdetail?view=graph-rest-v1.0) method CSV response.",
+			"Target": "getTeamsUserActivityUserDetail"
+		}
+	],
+	  "Id": "bc04324b-541c-46d6-b01c-5928f479cad7",
+	  "Cloud": "prd",
+	  "Version": "v1.0",
+	  "CreatedDateTime": "2022-01-19T09:15:14.3122315Z",
+	  "WorkloadArea": "Reports",
+	  "SubArea": "Microsoft 365 usage reports"
+    },
     {
 	  "ChangeList": [
 		{
@@ -1519,6 +1787,40 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-02-04T09:55:05.981Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    },
+	{
+	"ChangeList": [
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserDistributionUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserdistributionusercounts?view=graph-rest-beta) method.",
+          "Target": "getBrowserDistributionUserCounts"
+        },
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserUserCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowserusercounts?view=graph-rest-beta) method.",
+          "Target": "getBrowserUserCounts"
+        },
+        {
+          "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBrowserUserDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBrowserUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getbrowseruserdetail?view=graph-rest-beta) method.",
+          "Target": "getBrowserUserDetail"
+        }
+      ],
+      "Id": "e2eed40d-a104-44bd-9300-7e010ac589aa",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-13T03:46:16.421Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
     }

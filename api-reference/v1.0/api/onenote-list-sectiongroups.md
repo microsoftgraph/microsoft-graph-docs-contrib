@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 [!INCLUDE [sample-code](../includes/snippets/go/onenote-get-sectiongroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/onenote-get-sectiongroups-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcOnPrem
 
 ## Examples
 
-### Example 1: Get the default properties of an on-premises connection
+### Example 1: Get the default properties of an Azure network connection
 
 #### Request
 
@@ -91,6 +92,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -111,6 +116,8 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
+    "type": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
     "subscriptionName": "Subscription Name value",
@@ -124,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails
+### Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails
 
 #### Request
 
@@ -159,6 +166,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-withdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-withdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -179,6 +190,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {

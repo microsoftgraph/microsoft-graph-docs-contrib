@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-riskdetection-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -174,6 +178,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,6 +268,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=r
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-filter-riskdetections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 [!INCLUDE [sample-code](../includes/snippets/go/delete-calendarpermission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

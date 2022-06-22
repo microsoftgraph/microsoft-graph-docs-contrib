@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationassignmentsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationassignmentsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

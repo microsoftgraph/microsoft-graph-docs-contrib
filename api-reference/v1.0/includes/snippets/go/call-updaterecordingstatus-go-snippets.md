@@ -12,11 +12,8 @@ clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext)
 status := "notRecording | recording | failed"
 requestBody.SetStatus(&status)
-options := &msgraphsdk.UpdateRecordingStatusRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus().Post(options)
+result, err := graphClient.Communications().CallsById(&callId).UpdateRecordingStatus(call-id).Post(requestBody)
 
 
 ```

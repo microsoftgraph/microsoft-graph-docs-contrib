@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects. This API returns only authentication methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
+Retrieve a list of [authenticationMethod](../resources/authenticationmethod.md) objects. This API returns only authentication methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
 
 
 ## Permissions
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-methods-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -10,22 +10,17 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 requestBody.SetRecipients( []DriveRecipient {
 	msgraphsdk.NewDriveRecipient(),
-	SetAdditionalData(map[string]interface{}{
-		"email": "john@contoso.com",
-	}
+email := "john@contoso.com"
+	SetEmail(&email)
 	msgraphsdk.NewDriveRecipient(),
-	SetAdditionalData(map[string]interface{}{
-		"email": "ryan@external.com",
-	}
+email := "ryan@external.com"
+	SetEmail(&email)
 }
 requestBody.SetRoles( []String {
 	"read",
 }
-options := &msgraphsdk.GrantRequestBuilderPostOptions{
-	Body: requestBody,
-}
 sharedDriveItemId := "sharedDriveItem-id"
-result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant().Post(options)
+result, err := graphClient.SharesById(&sharedDriveItemId).Permission().Grant(sharedDriveItem-id).Post(requestBody)
 
 
 ```

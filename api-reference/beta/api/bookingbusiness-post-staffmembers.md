@@ -134,7 +134,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 # [C#](#tab/csharp)
@@ -155,6 +156,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingstaffmember-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingstaffmember-from-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

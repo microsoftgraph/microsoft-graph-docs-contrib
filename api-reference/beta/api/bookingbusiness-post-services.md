@@ -97,6 +97,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -113,7 +114,8 @@ Content-type: application/json
     "staffMemberIds":[
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-    ]
+    ],
+    "isAnonymousJoinEnabled": false
 }
 ```
 # [C#](#tab/csharp)
@@ -134,6 +136,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingservice-from-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-bookingservice-from-bookingbusiness-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

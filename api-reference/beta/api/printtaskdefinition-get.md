@@ -3,7 +3,7 @@ title: Get taskDefinition
 description: Get details about a task definition.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-85
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-taskdefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-taskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

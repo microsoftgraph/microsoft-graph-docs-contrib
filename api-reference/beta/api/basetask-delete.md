@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete baseTask
+# Delete baseTask (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Delete a [baseTask](../resources/basetask.md) object.
 
@@ -76,6 +78,10 @@ DELETE /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAu/
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-basetask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-basetask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

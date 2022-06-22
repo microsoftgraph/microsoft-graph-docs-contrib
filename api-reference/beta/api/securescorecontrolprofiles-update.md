@@ -3,7 +3,7 @@ title: "Update secureScoreControlProfiles"
 description: "Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: security
 author: "preetikr"
 ---
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securescorecontrolprofiles-update-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

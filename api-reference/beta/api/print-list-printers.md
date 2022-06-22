@@ -3,7 +3,7 @@ title: Get printers
 description: Retrieve the list of printers that are registered in the tenant.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/print/printers
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printers-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

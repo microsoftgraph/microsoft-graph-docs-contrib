@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -28,8 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
-
 ```
+> [!CAUTION]
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is the app owner, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
+
 ## Request headers
 | Name | Description|
 |:---- |:---------- |
@@ -71,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/owners/{id}/$ref
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-delete-owners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-delete-owners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

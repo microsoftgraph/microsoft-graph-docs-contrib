@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -161,6 +165,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-expand-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-expand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -270,6 +278,10 @@ GET https://graph.microsoft.com/v1.0/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-chat-expand-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-chat-expand-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

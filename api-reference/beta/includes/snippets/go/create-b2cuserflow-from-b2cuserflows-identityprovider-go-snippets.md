@@ -16,18 +16,16 @@ userFlowTypeVersion := float32(3)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion)
 requestBody.SetIdentityProviders( []IdentityProvider {
 	msgraphsdk.NewIdentityProvider(),
-	SetAdditionalData(map[string]interface{}{
-		"id": "Facebook-OAuth",
-	}
+id := "Facebook-OAuth"
+	SetId(&id)
 }
 headers := map[string]string{
 	"Location": "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')"
 }
-options := &msgraphsdk.B2cUserFlowsRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.B2cUserFlowsRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.Identity().B2cUserFlows().Post(options)
+result, err := graphClient.Identity().B2cUserFlows().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

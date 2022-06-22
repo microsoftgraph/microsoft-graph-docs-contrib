@@ -59,6 +59,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 
 The following is an example of the request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,10 +82,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-invitation-post-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,7 +90,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-invitation-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-invitation-post-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 
 ### Response
@@ -106,7 +108,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

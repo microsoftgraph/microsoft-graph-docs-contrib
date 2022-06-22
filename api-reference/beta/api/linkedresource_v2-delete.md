@@ -7,10 +7,12 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Delete linkedResource_v2
+# Delete linkedResource_v2 (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Delete a [linkedResource_v2](../resources/linkedresource_v2.md) object.
 
@@ -73,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtN
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-linkedresource-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-linkedresource-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

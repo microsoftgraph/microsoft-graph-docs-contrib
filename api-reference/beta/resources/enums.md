@@ -11,6 +11,137 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
+
+#### authenticationProtocol values
+
+|Member|
+|:---|
+|wsFed|
+|saml|
+|unknownFutureValue|
+
+#### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
+### bookingsAvailabilityStatus values
+
+|Member|
+|:-----|
+|available|
+|busy|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
+
+### accessPackageCustomExtensionHandlerStatus values 
+
+|Member|
+|:---|
+|requestSent|
+|requestReceived|
+|unknownFutureValue|
+
+### accessPackageCustomExtensionStage values 
+
+|Member|
+|:---|
+|assignmentRequestCreated|
+|assignmentRequestApproved|
+|assignmentRequestGranted|
+|assignmentRequestRemoved|
+|assignmentFourteenDaysBeforeExpiration|
+|assignmentOneDayBeforeExpiration|
+|unknownFutureValue|
+
+### accessReviewHistoryStatus values
+
+| Member|
+|:-----------------|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### accessReviewHistoryDecisionFilter values
+
+| Member|
+|:-----------------|
+|approve|
+|deny|
+|notReviewed|
+|dontKnow|
+|notNotified|
+|unknownFutureValue|
+
+
+### accessReviewHistoryStatus values
+
+|Member|
+|:---|
+|done|
+|inprogress|
+|error|
+|requested|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetConfigurationAccessType values
+
+|Member|
+|:---|
+|allowed|
+|blocked|
+|unknownFutureValue|
+
+### crossTenantAccessPolicyTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### accessPackageFilterByCurrentUserOptions values
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### userSignInRecommendationScope values 
+
+|Member|
+|:---|
+|tenant|
+|application|
+
 ### incomingTokenType values 
 
 |Member|
@@ -20,6 +151,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### protocolType values 
 
@@ -34,6 +166,13 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+
+### accessReviewStageFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
@@ -67,13 +206,14 @@ Namespace: microsoft.graph
 
 ### appCredentialRestrictionType values
 
-|Member|
-|:-----|
-|passwordAddition|
-|passwordLifetime|
-|symmetricKeyAddition|
-|symmetricKeyLifetime|
-|unknownFutureValue|
+| Member                 |
+| :--------------------- |
+| passwordAddition       |
+| passwordLifetime       |
+| symmetricKeyAddition   |
+| symmetricKeyLifetime   |
+| customPasswordAddition |
+| unknownFutureValue     |
 
 ### appKeyCredentialRestrictionType values
 
@@ -466,6 +606,37 @@ Namespace: microsoft.graph
 |mobilePhoneAndSMS|
 |unknownFutureValue|
 
+
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
+### clientCredentialType values 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificate|
+|unknownFutureValue|
+
+
 ### azureADLicenseType values
 
 |Member|
@@ -695,6 +866,8 @@ Namespace: microsoft.graph
 |hidden|
 |adminConfirmedUserCompromised|
 |unknownFutureValue|
+|adminConfirmedServicePrincipalCompromised|
+|adminDismissedAllRiskForServicePrincipal|
 
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
@@ -742,6 +915,15 @@ Namespace: microsoft.graph
 |weak|
 |unknown|
 
+### authenticationContextDetail values
+
+|Member|
+|:---|
+|required|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
 ### educationAddedStudentAction values
 
 |Member|
@@ -777,6 +959,15 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 |reassigned|
 
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -785,6 +976,19 @@ Namespace: microsoft.graph
 |enabled|
 |disabled|
 |unknownFutureValue|
+
+### expirationRequirement values
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
 
 ### replyRestriction values
 
@@ -887,6 +1091,20 @@ Namespace: microsoft.graph
 |block|
 |unknownFutureValue|
 
+### x509CertificateAuthenticationMode values
+|Member|
+|:---|
+|x509CertificateSingleFactor|
+|x509CertificateMultiFactor|
+|unknownFutureValue|
+
+### x509CertificateRuleType values
+|Member|
+|:---|
+|issuerSubject|
+|policyOID|
+|unknownFutureValue|
+
 ### anniversaryType values
 
 |Member|
@@ -985,10 +1203,10 @@ Namespace: microsoft.graph
 
 ### searchAlterationType values
 
-| Member | Description |
-|:---------------|:----------|
-|suggestion|Get search results for original user query and the suggested spelling correction information for typos in the query.|
-|modification|Get search results for corrected alterate query and the spelling correction information for typos.|
+| Member |
+|:---------------|
+|modification|
+|suggestion|
 
 ### bucketAggregationSortProperty values
 
@@ -1628,7 +1846,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [Registry Hives](/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -1886,6 +2104,9 @@ Possible values for user account types (group membership), per Windows definitio
 |ADFederationServices|
 |unknownFutureValue|
 |AzureADBackupAuth|
+|ADFederationServicesMFAAdapter|
+|NPSExtension|
+
 
 ### riskDetectionTimingType values
 
@@ -1904,6 +2125,7 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+|servicePrincipal|
 
 ### chatMessagePolicyViolationUserActionType values
 
@@ -2353,6 +2575,15 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### plannerContextState values
+
+|Member             |
+|:------------------|
+|active             |
+|delinked           |
+|unknownFutureValue |  
+
+
 ### policyScope values
 
 |Member|
@@ -2555,6 +2786,7 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### callRecordingStatus values
 
@@ -2564,23 +2796,6 @@ Possible values for user account types (group membership), per Windows definitio
 |failure|
 |initial|
 |chunkFinished|
-|unknownFutureValue|
-
-### simulationStatus values
-
-|Member|
-|:---|
-|unknown|
-|draft|
-|inProgress|
-|scheduled|
-|completed|
-|partiallyCompleted|
-|failed|
-|cancelled|
-|excluded|
-|deleted|
-|included|
 |unknownFutureValue|
 
 ### payloadDeliveryPlatform values
@@ -2619,7 +2834,6 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |or|
 |and|
-
 
 ### subjectRightsRequestStage values 
 
@@ -2724,6 +2938,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 
@@ -2732,4 +2948,137 @@ Possible values for user account types (group membership), per Windows definitio
 |allAttendees|
 |staff|
 |customer|
+|unknownFutureValue|
+
+### teamworkConnectionStatus values
+
+| Member |
+|:--------|
+|unknown|
+|connected|
+|disconnected|
+|unknownFutureValue|
+
+### teamworkDeviceActivityState values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown state.|
+|busy|1|The device is busy.|
+|idle|2|The device is idle.|
+|unavailable|3|The device is unavailable.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkDeviceOperationType values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|deviceRestart|0|Restart a device.|
+|configUpdate|1|Update the device configuration.|
+|deviceDiagnostics|2|Get the device logs.|
+|softwareUpdate|3|Update a software on the device.|
+|deviceManagementAgentConfigUpdate|4|Update the device agent configuration.|
+|remoteLogin|5|Device remote login.|
+|remoteLogout|6|Device remote logout.|
+|unknownFutureValue|7|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkSoftwareFreshness values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown value.|
+|latest|1|Indicates whether a device component runs the latest version of the software.|
+|updateAvailable|2|Indicates that a software update is available for a device component.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+
+### teamworkSoftwareType values
+
+| Member |
+|:---------------|
+|adminAgent|
+|operatingSystem|
+|teamsClient|
+|firmware|
+|partnerAgent|
+|companyPortal|
+|unknownFutureValue|
+
+### teamworkSupportedClient values
+
+| Member | Value| Description |
+|:---------------|:--------|:----------|
+|unknown|0|Unknown value.|
+|skypeDefaultAndTeams|1|Supports both `Skype` and `Teams`. Default is `Skype`.|
+|teamsDefaultAndSkype|2|Supports both `Skype` and `Teams`. Default is `Teams`.|
+|skypeOnly|3|Supports only `Skype`.|
+|teamsOnly|4|Supports only `Teams`.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
+
+### longRunningOperationStatus values
+
+| Member|
+|:-----------------|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminAccessAssignmentStatus values 
+
+|Member|
+|:---|
+|pending|
+|active|
+|deleting|
+|deleted|
+|error|
+|unknownFutureValue|
+
+### delegatedAdminAccessContainerType values 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipOperationType values 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestAction values 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipRequestStatus values 
+
+|Member|
+|:---|
+|created|
+|pending|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### delegatedAdminRelationshipStatus values 
+
+|Member|
+|:---|
+|activating|
+|active|
+|approvalPending|
+|approved|
+|created|
+|expired|
+|expiring|
+|terminated|
+|terminating|
+|terminationRequested|
 |unknownFutureValue|

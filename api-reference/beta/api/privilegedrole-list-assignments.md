@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRoleAssignment objects that are assoc
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # List assignments
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ## Permissions
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/assignments
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

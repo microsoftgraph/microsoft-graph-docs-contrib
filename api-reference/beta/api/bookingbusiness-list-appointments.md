@@ -21,19 +21,21 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments
 ```
+
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 To get the set of appointments of a Bookings business within a date range, instead of `$filter`, [get the calendarView](bookingbusiness-list-calendarview.md) for that date range.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}. Required.|
@@ -43,7 +45,9 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -72,6 +76,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appointments-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-appointments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -149,6 +157,7 @@ Content-type: application/json
             "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": "String",
             "staffMemberIds": [],
             "invoiceAmount": 10,
             "invoiceId": "1002",

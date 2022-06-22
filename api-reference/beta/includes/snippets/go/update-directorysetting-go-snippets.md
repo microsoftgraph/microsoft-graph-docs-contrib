@@ -11,15 +11,12 @@ requestBody := msgraphsdk.NewDirectorySetting()
 requestBody.SetValues( []SettingValue {
 	msgraphsdk.NewSettingValue(),
 	SetAdditionalData(map[string]interface{}{
-		"name": "name-value",
-		"value": "value-value",
+		"name": "CustomBlockedWordsList",
+		"value": "Contoso",
 	}
 }
-options := &msgraphsdk.DirectorySettingRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 directorySettingId := "directorySetting-id"
-graphClient.SettingsById(&directorySettingId).Patch(options)
+graphClient.SettingsById(&directorySettingId).Patch(requestBody)
 
 
 ```

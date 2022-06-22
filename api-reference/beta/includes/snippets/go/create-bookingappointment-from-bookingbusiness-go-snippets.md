@@ -93,28 +93,37 @@ priceType := "fixedPrice"
 requestBody.SetPriceType(&priceType)
 requestBody.SetReminders( []BookingReminder {
 	msgraphsdk.NewBookingReminder(),
+message := "This service is tomorrow"
+	SetMessage(&message)
+offset := "P1D"
+	SetOffset(&offset)
+recipients := "allAttendees"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "This service is tomorrow",
-		"offset": "P1D",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "allAttendees",
 	}
 	msgraphsdk.NewBookingReminder(),
+message := "Please be available to enjoy your lunch service."
+	SetMessage(&message)
+offset := "PT1H"
+	SetOffset(&offset)
+recipients := "customer"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "Please be available to enjoy your lunch service.",
-		"offset": "PT1H",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "customer",
 	}
 	msgraphsdk.NewBookingReminder(),
+message := "Please check traffic for next cater."
+	SetMessage(&message)
+offset := "PT2H"
+	SetOffset(&offset)
+recipients := "staff"
+	SetRecipients(&recipients)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.bookingReminder",
-		"message": "Please check traffic for next cater.",
-		"offset": "PT2H",
 		"recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
-		"recipients": "staff",
 	}
 }
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"
@@ -165,17 +174,32 @@ start.SetTimeZone(&timeZone)
 start.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.dateTimeTimeZone",
 }
+maximumAttendeesCount := int32(5)
+requestBody.SetMaximumAttendeesCount(&maximumAttendeesCount)
+filledAttendeesCount := int32(1)
+requestBody.SetFilledAttendeesCount(&filledAttendeesCount)
+requestBody.SetCustomers( []BookingCustomerInformationBase {
+	msgraphsdk.NewBookingCustomerInformationBase(),
+	SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.bookingCustomerInformation",
+		"customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+		"name": "Jordan Miller",
+		"emailAddress": "jordanm@contoso.com",
+		"phone": "213-555-0199",
+		"notes": nil,
+		"timeZone": "America/Chicago",
+		"customQuestionAnswers":  []Object {
+		}
+	}
+}
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingAppointment",
 	"invoiceStatus@odata.type": "#microsoft.graph.bookingInvoiceStatus",
 	"priceType@odata.type": "#microsoft.graph.bookingPriceType",
 	"reminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
 }
-options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(requestBody)
 
 
 ```

@@ -15,33 +15,40 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
-If successful, this method returns a `200 OK` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [bookingBusiness](../resources/bookingbusiness.md) object in the response body.
 ## Example
-##### Request
+
+### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -72,10 +79,15 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@contoso.onmicros
 [!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bookingbusiness-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,6 +108,7 @@ Content-type: application/json
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,
+    "languageTag":null,
     "address":{
         "type":"home",
         "postOfficeBox":"",
@@ -164,6 +177,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag": "String",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

@@ -78,7 +78,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 
-If the result set spans multiple pages, **calendarView** returns an **@odata.nextLink** property in the response that contains a URL to the next page of results. See [paging](/graph/concepts/paging.md) for details.
+If the result set spans multiple pages, **calendarView** returns an **@odata.nextLink** property in the response that contains a URL to the next page of results. See [paging](/graph/paging) for details.
 
 ## Example
 ### Request
@@ -110,6 +110,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

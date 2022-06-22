@@ -1,7 +1,7 @@
 ---
 title: "call: reject"
 description: "Enable a bot to reject an incoming call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -87,6 +87,10 @@ Content-Length: 24
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-reject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-reject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---	
@@ -191,6 +195,10 @@ Content-Length: 24
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-reject-none-reason-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-reject-none-reason-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -15,10 +15,7 @@ displayName := "Lyn Damer"
 requestBody.SetDisplayName(&displayName)
 webUrl := "www.lyndamer.no"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.WebsitesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Websites().Post(options)
+result, err := graphClient.Me().Profile().Websites().Post(requestBody)
 
 
 ```

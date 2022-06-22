@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not Supported.                               |
 | Delegated (personal Microsoft account) | Not Supported.                               |
-| Application                            | None. |
-
-> **Note:** The permission check happens when the application joins or tries to start the call. No additional permission check is performed when `startHoldMusic` is called.
+| Application                            | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -97,6 +95,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-startholdmusic-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

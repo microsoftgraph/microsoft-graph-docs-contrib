@@ -18,12 +18,9 @@ listItemId := "2"
 sharepointIds.SetListItemId(&listItemId)
 destinationFileName := "newname.txt"
 requestBody.SetDestinationFileName(&destinationFileName)
-options := &msgraphsdk.CopyToDefaultContentLocationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation().Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).CopyToDefaultContentLocation(site-id, contentType-id).Post(requestBody)
 
 
 ```

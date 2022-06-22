@@ -23,10 +23,10 @@ To get the replies for a message, use the [list message replies](chatmessage-lis
 
 A GET request with the delta function returns either:
 
-- A `nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
-- A `deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
+- A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
+- A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `deltaLink`).
+State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `@odata.deltaLink`).
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -40,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not Supported                                |
 |Application                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc). Permissions marked with ** are deprecated and should not be used.
+[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -53,23 +53,26 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 ## Query parameters
 
-Tracking changes in channel messages incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.
+Tracking changes in channel messages incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `@odata.nextLink` or `@odata.deltaLink` URL provided in the response.
 
 You only need to specify any query parameters once upfront.
 
-In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded parameters.
+In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL from the previous response, as that URL already includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.|
-| `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
+| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.|
+| `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 
 ### Optional OData query parameters
 
 The following [OData query parameters](/graph/query-parameters) are supported by this API:
 - `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
 - `$skip`, represents how many messages to skip at the beginning of the list.
-- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any messages created or changed after the specified date time.
+- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any **reply chain (each channel post message and associated reply messages)** created or changed after the specified date time.
+- `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel messsage contains more than 1000 replies, `replies@odata.nextLink` will be provided for pagination. 
+
+> **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
 
 ## Request headers
 | Header        | Value                     |
@@ -82,7 +85,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 ## Examples
 
@@ -133,12 +136,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Initial request response
 
-The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. The `nextLink` URL indicates there are more messages in the channel to get.
+The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. The `@odata.nextLink` URL indicates there are more messages in the channel to get.
 
 <!-- {
   "blockType": "response",
@@ -242,7 +249,7 @@ Content-type: application/json
 
 #### Second request
 
-The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.
+The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
 
 
 # [HTTP](#tab/http)
@@ -271,6 +278,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -380,7 +391,7 @@ Content-type: application/json
 
 #### Third request
 
-The third request continues to use the latest `nextLink` returned from the last sync request.
+The third request continues to use the latest `@odata.nextLink` returned from the last sync request.
 
 
 # [HTTP](#tab/http)
@@ -411,12 +422,16 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### Third request response
 
-The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `deltaLink` URL to query for any new messages starting from this point onwards.
+The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `@odata.deltaLink` URL to query for any new messages starting from this point onwards.
 
 <!-- {
   "blockType": "response",
@@ -518,7 +533,7 @@ Content-type: application/json
 
 ### Example 2: Retrieving additional changes
 
-Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:
+Using the `@odata.deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
 
@@ -549,6 +564,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-chatmessagedeltachannel-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagedeltachannel-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AccessReview|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Application|Policy.Read.All, Policy.ReadWrite.AccessReview|
 
 ## HTTP request
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accessreviewpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

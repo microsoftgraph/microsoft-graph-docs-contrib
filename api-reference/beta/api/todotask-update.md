@@ -48,6 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier of the task. Inherited from [entity](../resources/entity.md)|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
+|categories|String collection|The categories associated with the task. Each category corresponds to the **displayName** property of an [outlookCategory](../resources/outlookcategory.md) that the user has defined.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |importance|importance|The importance of the event. Possible values are: `low`, `normal`, `high`.|
@@ -109,6 +110,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-todotask-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-todotask-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -134,6 +139,7 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",
