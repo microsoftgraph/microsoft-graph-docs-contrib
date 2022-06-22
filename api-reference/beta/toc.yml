@@ -14380,7 +14380,7 @@ items:
           - name: Get url threat submission
             href: api/security-urlthreatsubmission-get.md
           - name: Create url threat submission
-            href: api/security-urlthreatsubmission-post-emailthreats.md
+            href: api/security-urlthreatsubmission-post-urlthreats.md
         - name: File threat submission
           href: resources/security-filethreatsubmission.md
           items:
@@ -14389,7 +14389,7 @@ items:
           - name: Get file threat submission
             href: api/security-filethreatsubmission-get.md
           - name: Create file threat submission
-            href: api/security-filethreatsubmission-post-emailthreats.md
+            href: api/security-filethreatsubmission-post-filethreats.md
           - name: File URL threat submission
             href: resources/security-fileurlthreatsubmission.md
           - name: File content threat submission
