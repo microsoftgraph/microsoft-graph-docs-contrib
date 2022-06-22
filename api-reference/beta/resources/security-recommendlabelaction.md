@@ -29,7 +29,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 
 | Relationship     | Type                                                          | Description                          |
 | :--------------- | :------------------------------------------------------------ | :----------------------------------- |
-| sensitivityLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that is being recommended. |
+| sensitivityLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that is being recommended. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

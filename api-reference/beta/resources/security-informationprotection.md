@@ -18,8 +18,8 @@ Exposes methods that you can use to get Microsoft Purview Information Protection
 ## Methods
 | Method                                                                                              | Return type                                                                                                  | Description                                                                                                    |
 | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------- |
-| [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) collection | Get the **informationProtectionPolicySetting** resources from the **labelPolicySettings** navigation property. |
-| [List sensitivityLabels](../api/security-informationprotection-list-sensitivitylabels.md)                                 | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection            | Get the **sensitivityLabel** resources from the **sensitivityLabels** navigation property.                             |
+| [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) collection | Get the **informationProtectionPolicySetting** resources from the **labelPolicySettings** navigation property. |
+| [List sensitivityLabels](../api/security-informationprotection-list-sensitivitylabels.md)                                 | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection            | Get the **sensitivityLabel** resources from the **sensitivityLabels** navigation property.                             |
 
 ## Properties
 None.
@@ -27,8 +27,8 @@ None.
 ## Relationships
 | Relationship        | Type                                                                                              | Description                                                                                |
 | :------------------ | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
-| labelPolicySettings | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the Microsoft Purview Information Protection policy settings for the user or organization. |
-| sensitivityLabels   | [sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Purview Information Protection labels for the user or organization.          |
+| labelPolicySettings | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the Microsoft Purview Information Protection policy settings for the user or organization. |
+| sensitivityLabels   | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) collection |Read the Microsoft Purview Information Protection labels for the user or organization.          |
 
 ## JSON representation
 The following is a JSON representation of the resource.

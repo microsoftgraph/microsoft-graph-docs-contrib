@@ -30,21 +30,21 @@ Enterprise developers use Microsoft Purview Information Protection to label and 
 
 ### Discover labels available to a user or organization
 
-With Microsoft Graph you can access the [sensitivity labels](/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users, downstream applications, and services to understand the sensitivity of the information they're handling.
+With Microsoft Graph you can access the [sensitivity labels](/graph/api/resources/security-sensitivitylabel) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users, downstream applications, and services to understand the sensitivity of the information they're handling.
 
 ### Understand how to apply labels
 
-By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions](/graph/api/resources/security-informationprotectionaction?view=graph-rest-beta) that should be taken to correctly apply the label. This includes actions such as [metadata](/graph/api/resources/security-metadataaction?view=graph-rest-beta) application, [watermark](/graph/api/resources/security-addwatermarkaction?view=graph-rest-beta) generation, [protection](/graph/api/resources/security-protectbytemplateaction?view=graph-rest-beta), and more.
+By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions](/graph/api/resources/security-informationprotectionaction) that should be taken to correctly apply the label. This includes actions such as [metadata](/graph/api/resources/security-metadataaction) application, [watermark](/graph/api/resources/security-addwatermarkaction) generation, [protection](/graph/api/resources/security-protectbytemplateaction), and more.
 
 ### Interpret labels applied to data
 
-Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/security-metadataaction?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Purview Information Protection [sensitivity label](/graph/api/resources/security-informationprotectionlabel?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
+Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/security-metadataaction) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Purview Information Protection [sensitivity label](/graph/api/resources/security-informationprotectionlabel). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-informationprotectionlabel?view=graph-rest-beta)
+- [Microsoft Purview Information Protection API in Microsoft Graph beta](/graph/api/resources/security-informationprotectionlabel)
 
 ## Next steps
 
