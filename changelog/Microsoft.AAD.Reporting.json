@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "178fcf89-d95b-4df1-ab91-98b22f646c46",
+          "ApiChange": "Property",
+          "ChangedApiName": "homeTenantName",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeTenantName** property to [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryaudit?view=graph-rest-beta) resource.",
+          "Target": "directoryAudit"
+        },
+        {
+          "Id": "178fcf89-d95b-4df1-ab91-98b22f646c46",
+          "ApiChange": "Property",
+          "ChangedApiName": "homeTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **homeTenantId** property to [directoryAudit](https://docs.microsoft.com/en-us/graph/api/resources/directoryaudit?view=graph-rest-beta) resource.",
+          "Target": "directoryAudit"
+        }
+      ],
+      "Id": "178fcf89-d95b-4df1-ab91-98b22f646c46",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-21T23:23:47.3148004Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3e4f113d-2b6b-4bb1-9cd7-24fa265f5e2a",
           "ApiChange": "Property",
           "ChangedApiName": "sessionControlsNotSatisfied",
