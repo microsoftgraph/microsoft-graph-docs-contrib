@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgUserChat -UserId $userId -ChatId $chatId -Top 2 
+Get-MgAllUserChatMessage -UserId $userId -Top 2 
 
 ```

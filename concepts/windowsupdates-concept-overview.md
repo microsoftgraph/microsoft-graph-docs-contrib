@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Windows updates API overview
 
-The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule and safeguard content delivered by Windows Update. 
+The Windows Update for Business deployment service provides control over device updates through the ability to approve, schedule, and safeguard content delivered by Windows Update.
 
 ## Why use the Windows Update for Business deployment service?
 
@@ -19,9 +19,9 @@ IT professionals and management tool vendors alike can use the deployment servic
 * Bypass pre-configured Windows Update for Business policies to immediately deploy a security update.
 * Ensure coverage of hardware and software in your organization through deployments tailored to unique device population(s).
 
-Today, the deployment service supports managing Windows 10 feature updates and expediting Windows 10 security updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
+Today, the deployment service supports managing Windows feature updates and expediting Windows security updates. To learn more about the deployment service in the context of Windows Update for Business, see [Overview of the deployment service](/windows/deployment/update/deployment-service-overview).
 
-## Prerequisites    
+## Prerequisites
 
 To use the deployment service, your organization must have one of the following subscriptions:
 * Windows 10 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
@@ -57,7 +57,7 @@ To learn more, see [Deploy an expedited security update](windowsupdates-deploy-e
 
 ## Protect devices by default
 
-Enjoy the benefit of [safeguard holds](/windows/deployment/update/safeguard-holds) which prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
+Enjoy the benefit of [safeguard holds](/windows/deployment/update/safeguard-holds) that prevent devices with a quality or compatibility issue from installing an update, resulting in failure or rollback otherwise. For deployments of Windows 11, the deployment service extends these safeguard holds to further protect devices. Microsoft uses machine learning algorithms to monitor the breadth of the Windows ecosystem as devices upgrade to Windows 11. For devices that are identified to be at a higher risk of experiencing a post-upgrade issue, the deployment service applies early safeguards to protect these devices while the issue is investigated and confirmed.
 
 To learn more, see [Manage safeguards for a deployment](windowsupdates-manage-safeguards.md).
 

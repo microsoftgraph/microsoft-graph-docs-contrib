@@ -18,20 +18,22 @@ content := "The group represents Washington."
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "AlexW@contoso.OnMicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 requestBody.SetInternetMessageHeaders( []InternetMessageHeader {
 	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-name",
-		"value": "Washington",
-	}
+name := "x-custom-header-group-name"
+	SetName(&name)
+value := "Washington"
+	SetValue(&value)
 	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-id",
-		"value": "WA001",
-	}
+name := "x-custom-header-group-id"
+	SetName(&name)
+value := "WA001"
+	SetValue(&value)
 }
 result, err := graphClient.Me().Messages().Post(requestBody)
 

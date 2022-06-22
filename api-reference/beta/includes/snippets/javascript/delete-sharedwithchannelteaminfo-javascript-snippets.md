@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/incomingChannels/19:56eb04e133944cf69e603c5dac2d292e@thread.skype/$ref')
+await client.api('/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19:56eb04e133944cf69e603c5dac2d292e@thread.skype/sharedWithTeams/ece6f0a1-5g39-498b-be79-edf6c8fc4d82')
 	.version('beta')
 	.delete();
 

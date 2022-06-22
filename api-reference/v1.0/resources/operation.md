@@ -3,7 +3,7 @@ title: "operation resource type"
 description: "The status of a long-running operation."
 ms.localizationpriority: medium
 author: "billbliss"
-ms.prod: ""
+ms.prod: teamwork
 doc_type: resourcePageType
 ---
 

@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 [!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagentgroup-from-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-onpremisesagentgroup-from-publishedresource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

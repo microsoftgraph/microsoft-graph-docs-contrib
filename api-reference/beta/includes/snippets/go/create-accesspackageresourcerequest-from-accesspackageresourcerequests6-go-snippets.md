@@ -30,10 +30,21 @@ originSystem := "AadApplication"
 accessPackageResource.SetOriginSystem(&originSystem)
 accessPackageResource.SetAttributes( []AccessPackageResourceAttribute {
 	msgraphsdk.NewAccessPackageResourceAttribute(),
-	SetAdditionalData(map[string]interface{}{
-		"attributeName": "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
-		"isEditable": true,
-		"isPersistedOnAssignmentRemoval": true,
+attributeName := "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle"
+	SetAttributeName(&attributeName)
+isEditable := true
+	SetIsEditable(&isEditable)
+isPersistedOnAssignmentRemoval := true
+	SetIsPersistedOnAssignmentRemoval(&isPersistedOnAssignmentRemoval)
+attributeSource := msgraphsdk.NewAccessPackageResourceAttributeSource()
+	SetAttributeSource(attributeSource)
+	attributeSource.SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.accessPackageResourceAttributeQuestion",
+	}
+attributeDestination := msgraphsdk.NewAccessPackageResourceAttributeDestination()
+	SetAttributeDestination(attributeDestination)
+	attributeDestination.SetAdditionalData(map[string]interface{}{
+		"@odata.type": "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
 	}
 }
 result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)

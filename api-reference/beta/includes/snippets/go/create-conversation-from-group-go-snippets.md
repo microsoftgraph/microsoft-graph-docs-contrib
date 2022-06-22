@@ -12,8 +12,18 @@ topic := "New head count"
 requestBody.SetTopic(&topic)
 requestBody.SetThreads( []ConversationThread {
 	msgraphsdk.NewConversationThread(),
-	SetAdditionalData(map[string]interface{}{
-		"posts":  []Object {
+	SetPosts( []Post {
+		msgraphsdk.NewPost(),
+body := msgraphsdk.NewItemBody()
+		SetBody(body)
+contentType := "html"
+		body.SetContentType(&contentType)
+content := "The confirmation will come by the end of the week."
+		body.SetContent(&content)
+		SetNewParticipants( []Recipient {
+			msgraphsdk.NewRecipient(),
+			SetAdditionalData(map[string]interface{}{
+			}
 		}
 	}
 }

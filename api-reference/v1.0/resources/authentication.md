@@ -32,6 +32,7 @@ None.
 |microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |
 |phoneMethods|[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) collection|The phone numbers registered to a user for authentication.|
 |softwareOathMethods|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) collection|The software OATH TOTP applications registered to a user for authentication.|
+|temporaryAccessPassMethods|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.|
 |windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|
 
 ## JSON representation
@@ -48,4 +49,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.authentication"
 }
 ```
-

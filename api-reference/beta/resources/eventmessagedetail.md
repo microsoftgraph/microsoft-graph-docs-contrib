@@ -17,7 +17,7 @@ This abstract type represents details of a system event message.
 
 System messages are messages generated for events such as members added to a channel, members added to a chat, and team description updated.
 
-List of events supported
+The following table lists the supported events.
 
 | Event | Description |
 | :---- | :---------- |
@@ -38,6 +38,8 @@ List of events supported
 | [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | Members have been removed. |
 | [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md) | Members have joined. |
 | [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | Members have left. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | A message has been pinned. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | A message has been unpinned. |
 | [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md) | A tab has been updated. |
 | [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | A team has been archived. |
 | [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | A team has been created. |

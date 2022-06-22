@@ -23,7 +23,7 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 |[List customers](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
 |[Create bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
 |[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
-|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md)	|Update a **bookingCustomer** object. |
+|[Update](../api/bookingcustomer-update.md) | None	|Update a **bookingCustomer** object. |
 |[Delete](../api/bookingcustomer-delete.md) | None |Delete a **bookingCustomer** object. |
 
 ## Properties
