@@ -101,10 +101,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 131
+Content-Length: 125
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#adminReportSettings/displayConcealedNames ",
-  "value": true
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#adminReportSettings ",
+  "displayConcealedNames": true
 }
 ```

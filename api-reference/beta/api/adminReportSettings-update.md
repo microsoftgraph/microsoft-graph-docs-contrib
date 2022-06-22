@@ -103,12 +103,5 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 131
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#adminReportSettings/displayConcealedNames ",
-  "value": true
-}
+HTTP/1.1 204 No Content
 ```
