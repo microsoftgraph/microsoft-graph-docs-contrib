@@ -1,6 +1,6 @@
 ---
 title: "Choose an API in Microsoft Graph to create and join online meetings"
-description: "Consider when to use the calendar API event resource or the communications API onlineMeeting resource for Teams and Skype meetings in Outlook calendar."
+description: "Consider when to use the calendar API event resource or the cloud communications API onlineMeeting resource for Teams and Skype meetings in Outlook calendar."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ---
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 Microsoft Graph offers two API sets that arrange and join online meetings on Microsoft Teams or Skype:
 
 - [Calendar API](outlook-calendar-online-meetings.md): use the [event](/graph/api/resources/event) resource.
-- [Communications API](cloud-communications-online-meetings.md): use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource.
+- [Cloud communications API](cloud-communications-online-meetings.md): use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource.
 
 The choice is between:
 - A convenient programmatic way to set up an online meeting in the Outlook calendar where attendees click to join the meeting, and continue their experience in Teams or Skype.
@@ -30,7 +30,7 @@ Choose the calendar API for a streamlined, built-in integration with Outlook cal
 > [!NOTE]
 > Integration with Outlook calendar assumes an administrator has set up Outlook for online meetings. [Verify](/microsoftteams/exchange-teams-interact) the support before using the API.
 
-Choose the communications API for flexibility and broader programmatic support:
+Choose the cloud communications API for flexibility and broader programmatic support:
 - Apps have more flexibility to further integrate the API results with line of business and other apps. The API is decoupled with any specific calendar, and does not create an event in any calendar.
 - Apps can provide the following capabilities for attendees:
   - Locale-based join information.
@@ -44,7 +44,7 @@ Choose the communications API for flexibility and broader programmatic support:
 The following table details the differences at the API level. 
 
 
-| Online meeting feature | Calendar API (event resource) | Communications API (onlineMeeting resource)             |
+| Online meeting feature | Calendar API (event resource) | Cloud communications API (onlineMeeting resource)             |
 |:-----------------------|:------------------------------|:-------------------------------------------------------------|
 | Main API members | [event](/graph/api/resources/event) resource: <br>- **isOnlineMeeting** property <br>- **onlineMeeting** property of the [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo) type <br>- **onlineMeetingProvider** property <br> [calendar](/graph/api/resources/calendar) resource: <br>- **allowedOnlineMeetingProviders** property <br>- **defaultOnlineMeetingProvider** property <br> | [onlineMeeting](/graph/api/resources/onlinemeeting) resource <br> [audioConferencing](/graph/api/resources/audioconferencing) resource
 | Integration with a calendar item | <br>- [Create](/graph/api/user-post-events) or [update](/graph/api/event-update) **event** API automatically sets the resultant Outlook calendar [event](/graph/api/resources/event) as an online meeting.<br>- Use the **isOnlineMeeting**, **onlineMeeting**, and **onlineMeetingProvider** properties of the returned Outlook calendar **event**.  | - [Create](/graph/api/application-post-onlinemeetings) API returns an [onlineMeeting](/graph/api/resources/onlinemeeting) resource that is independent of a particular calendar type. <br>- Does not create or update any Outlook event. <br>- Integrate the returned **onlineMeeting** resource information in an app experience appropriate for your scenario. <br>- Use [createOrGet](/graph/api/onlinemeeting-createorget) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar. |
