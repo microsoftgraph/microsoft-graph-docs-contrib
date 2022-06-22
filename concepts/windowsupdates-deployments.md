@@ -1,6 +1,6 @@
 ---
 title: "Deployments in the Windows Update for Business deployment service"
-description: "Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment you can target a set of devices to receive specific content from Windows Update, such as a software update."
+description: "Use the Windows Update for Business deployment service to create deployments, configure settings, and set lifecycle state. Assign a device to multiple deployments."
 author: "aarononeal"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -19,7 +19,6 @@ Deployments have the following key aspects:
 4. State: The current state of the deployment within its lifecycle. This is represented by the **state** property of the [deploymentState](/graph/api/resources/windowsupdates-deploymentstate) type.
 
 ## Create a deployment with content and an audience
-
 
 Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
@@ -76,7 +75,7 @@ The [deployment](/graph/api/resources/windowsupdates-deployment) resource has a 
 
 The service determines the effective **value** of the deployment state as a net result of several inputs and asynchronous processes, but you can request a particular value by setting **requestedValue** as one of these inputs. Other inputs to the effective deployment state value include rollout settings and monitoring settings.
 
-## Multiple deployments
+## Assign a device to multiple deployments
 
 You can assign a device to multiple deployments at one time. These deployments can be for content of the same update category (for example all deployments are feature updates), or for content of different update categories.
 

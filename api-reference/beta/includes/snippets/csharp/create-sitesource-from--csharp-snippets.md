@@ -14,7 +14,7 @@ var siteSource = new Microsoft.Graph.Security.SiteSource
 	}
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Custodians["{security.ediscoveryCustodian-id}"].SiteSources
+await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds["{security.ediscoveryHoldPolicy-id}"].SiteSources
 	.Request()
 	.AddAsync(siteSource);
 

@@ -122,6 +122,7 @@ Content-type: application/json
     "price": 10,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": "String",
     "staffMemberIds": [],
     "invoiceAmount": 10,
     "invoiceId": "1001",

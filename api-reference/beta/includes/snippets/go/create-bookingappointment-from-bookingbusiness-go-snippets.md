@@ -83,6 +83,7 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline)
 optOutOfCustomerEmail := false
 requestBody.SetOptOutOfCustomerEmail(&optOutOfCustomerEmail)
+requestBody.SetAnonymousJoinWebUrl(nil)
 postBuffer := "PT10M"
 requestBody.SetPostBuffer(&postBuffer)
 preBuffer := "PT5M"

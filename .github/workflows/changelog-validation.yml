@@ -2,6 +2,9 @@ name: Validate changelog JSONs
 
 on: [pull_request,push]
 
+permissions:
+  contents: read
+
 jobs:
   verify-json-validation:
     runs-on: ubuntu-latest

@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/v1.0/external/connections/contosohr/groups/31
 [!INCLUDE [sample-code](../includes/snippets/go/delete-identity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
