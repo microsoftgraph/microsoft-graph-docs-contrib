@@ -1,5 +1,5 @@
 ---
-title: "Create phoneAuthenticationMethod"
+title: "Create phoneMethod"
 description: "Add a new phone authentication method for a user."
 ms.localizationpriority: medium
 author: "mmcla"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Create phoneAuthenticationMethod
+# Create phoneMethod
 
 Namespace: microsoft.graph
 
