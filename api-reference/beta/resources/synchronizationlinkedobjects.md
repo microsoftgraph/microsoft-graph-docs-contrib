@@ -33,15 +33,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.synchronizationLinkedObjects",
-  "manager": {
-    "@odata.type": "microsoft.graph.synchronizationJobSubject"
-  },
   "members": [
-    {
-      "@odata.type": "microsoft.graph.synchronizationJobSubject"
-    }
-  ],
-  "owners": [
     {
       "@odata.type": "microsoft.graph.synchronizationJobSubject"
     }
