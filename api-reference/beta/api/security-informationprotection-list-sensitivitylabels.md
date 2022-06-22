@@ -96,44 +96,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels",
-    "value": [
-        {
-            "id": "0d39dc11-75ff-4309-8b32-ff94f0e41607",
-            "name": "Any User (No Protection)",
-            "description": "",
-            "color": "",
-            "sensitivity": 7,
-            "tooltip": "The most sensitive information stored by Milt0rCorp; product plans, customer information, and other trade secrets. Data labeled for Any User will not be protected and should be used with caution and sparingly.",
-            "isActive": true,
-            "isAppliable": true,
-            "contentFormats": [
-                "file",
-                "email",
-                "schematizeddata"
-            ],
-            "hasProtection": false,
-            "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40constoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/$entity",
-            "parent": {
-                "id": "566663c7-4d8d-4b8f-b280-784a31971dbe",
-                "name": "Highly Confidential",
-                "description": "",
-                "color": "",
-                "sensitivity": 7,
-                "tooltip": "The most sensitive information at Milt0rCorp; product plans, customer information, data not shareable even under NDA.",
-                "isActive": false,
-                "isAppliable": false,
-                "contentFormats": [
-                    "file",
-                    "email",
-                    "schematizeddata"
-                ],
-                "hasProtection": false,
-                "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/parent/$entity",
-                "parent": null
-            }
-        }
-} // Truncated
-
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels",
+  "value": [
+    {
+      "id": "0d39dc11-75ff-4309-8b32-ff94f0e41607",
+      "name": "Any User (No Protection)",
+      "description": "",
+      "color": "",
+      "sensitivity": 7,
+      "tooltip": "The most sensitive information stored by Milt0rCorp; product plans, customer information, and other trade secrets. Data labeled for Any User will not be protected and should be used with caution and sparingly.",
+      "isActive": true,
+      "isAppliable": true,
+      "contentFormats": [
+        "file",
+        "email",
+        "schematizeddata"
+      ],
+      "hasProtection": false,
+      "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40constoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/$entity",
+      "parent": {
+        "id": "566663c7-4d8d-4b8f-b280-784a31971dbe",
+        "name": "Highly Confidential",
+        "description": "",
+        "color": "",
+        "sensitivity": 7,
+        "tooltip": "The most sensitive information at Milt0rCorp; product plans, customer information, data not shareable even under NDA.",
+        "isActive": false,
+        "isAppliable": false,
+        "contentFormats": [
+          "file",
+          "email",
+          "schematizeddata"
+        ],
+        "hasProtection": false,
+        "parent@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bob%40contoso.com')/security/informationProtection/sensitivityLabels('0d39dc11-75ff-4309-8b32-ff94f0e41607')/parent/parent/$entity",
+        "parent": null
+      }
+    }
+  ]
+}
 ```
 

@@ -25,7 +25,7 @@ Describes the **contentLabel** object that defines Microsoft Purview Information
 ## Relationships
 | Relationship     | Type                                                          | Description                                                   |
 | :--------------- | :------------------------------------------------------------ | :------------------------------------------------------------ |
-| sensitivityLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The **sensitivityLabel** referred to by the content metadata. |
+| sensitivityLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The **sensitivityLabel** referred to by the content metadata. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

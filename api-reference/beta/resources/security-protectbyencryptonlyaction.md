@@ -20,7 +20,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 ## Properties
 | Property   | Type   | Description                               |
 | :--------- | :----- | :---------------------------------------- |
-| templateId | String | Returns the well-known encrypt-only GUID. |
+| templateId | String | Returns the encrypt-only GUID. |
 
 ## Relationships
 None.

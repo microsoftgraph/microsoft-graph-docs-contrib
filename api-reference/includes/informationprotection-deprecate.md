@@ -1,7 +1,6 @@
 ---
 author: tommoser
 ms.topic: include
-ms.date: 05/20/2022
 ms.localizationpriority: medium
 ---
 

@@ -19,7 +19,7 @@ Represents the settings for a Microsoft Purview Information Protection label pol
 
 | Method                                                                                              | Return type                                                                                       | Description                                                                                                                                           |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. |
+| [Get informationProtectionPolicySetting](../api/security-informationprotectionpolicysetting-get.md) | [microsoft.graph.security.informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) | Read the properties and relationships of an [informationProtectionPolicySetting](../resources/security-informationprotectionpolicysetting.md) object. |
 
 
 ## Properties
@@ -35,7 +35,7 @@ Represents the settings for a Microsoft Purview Information Protection label pol
 
 | Relationship | Type                                                          | Description                                                                                    |
 | :----------- | :------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| defaultLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | Represents the default label for an organization. If no label is selected, the default label will be applied. |
+| defaultLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | Represents the default label for an organization. If no label is selected, the default label will be applied. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -29,7 +29,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 
 | Relationship     | Type                                                          | Description                                                           |
 | :--------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------- |
-| sensitivityLabel | [sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that corresponds to the set of actions returned by the API. |
+| sensitivityLabel | [microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md) | The label that corresponds to the set of actions returned by the API. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
