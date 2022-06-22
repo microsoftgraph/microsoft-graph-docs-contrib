@@ -1,9 +1,9 @@
 ---
 title: "synchronizationLinkedObjects resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents any references to be provisioned during on-demand provisioning."
+author: "ArvindHarinder1"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
