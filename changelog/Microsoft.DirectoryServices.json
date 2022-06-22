@@ -29,6 +29,40 @@
     {
       "ChangeList": [
         {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource",
+          "Target": "federatedIdentityCredential"
+        },
+        {
+          "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federatedIdentityCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdentityCredentials** relationship to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "eaf1d043-b258-4b47-afce-9183e50aacb2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-21T22:47:12.6780409Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+    {
+      "ChangeList": [
+        {
           "Id": "a0f4e06a-44ef-4cce-89bd-d92cecc7dfe6",
           "ApiChange": "Relationship",
           "ChangedApiName": "memberOf",
