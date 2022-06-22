@@ -1,6 +1,6 @@
 ---
-title: "Overview of Microsoft Graph"
-description: "Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Microsoft 365, Enterprise Mobility + Security, and Windows."
+title: "Microsoft Graph overview"
+description: "Use Microsoft Graph data and other datasets to derive insights and analytics, extend Microsoft 365 experiences, and build unique, intelligent apps."
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -13,6 +13,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 ![Microsoft Graph, Microsoft Graph Data Connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
 ## Data and services powering the Microsoft 365 platform
+
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
 - The **Microsoft Graph API** offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios, spanning across productivity, collaboration, education, people and workplace intelligence, and more. Microsoft Graph also includes a powerful set of services that manage user and device identity, access, compliance, and security and help protect organizations from data leakage or loss.
@@ -29,7 +30,6 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 - **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**
-
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
@@ -119,7 +119,6 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 | **User consent** | Self<br>Resource types | None |
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
-
 
 ## Next steps
 

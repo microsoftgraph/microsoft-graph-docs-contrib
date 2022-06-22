@@ -1,6 +1,6 @@
 ---
 title: "Address resources in a drive on OneDrive"
-description: "How to access items within a drive on OneDrive with ID-based and path-based addressing."
+description: "Learn how to access items within a drive on OneDrive with ID-based and path-based addressing, and how to properly encode paths for Microsoft Graph."
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 author: "JeremyKelley"
@@ -8,6 +8,8 @@ doc_type: conceptualPageType
 ---
 
 # Address resources in a drive on OneDrive
+
+Learn how to access items within a drive on OneDrive with ID-based and path-based addressing, and how to properly encode paths for Microsoft Graph.
 
 ## ID-based addressing
 OneDrive supports ID-based addressing of items. Items are assigned a unique
@@ -64,10 +66,11 @@ The following characters are OneDrive reserved characters and can't be used in O
                      = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|" / "#" / "%"
 ```
 
-**Note:** Folder names can't end with a period (`.`).
-
-**Note:** OneDrive for Business file or folder names cannot begin with a tilde ('~'). 
-See [Restrictions and limitations with OneDrive for Business](https://support.microsoft.com/en-us/kb/2933738) for more information.
+> [!NOTE]
+> - Folder names can't end with a period (`.`).
+> - File or folder names cannot begin with a tilde ('~').
+>
+> For more information, see [Restrictions and limitations when you sync SharePoint libraries to your computer through OneDrive for work or school](https://support.microsoft.com/en-us/kb/2933738).
 
 ### URI path characters
 
@@ -188,3 +191,7 @@ To address each of Adele's files, you use percent encoding, as follows:
 | `\...\estimate%.docx`    | `/root:/Adele's%20Files/estimate%25s.docx` |
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
+
+## See also
+
+- [OneDrive file storage API overview](onedrive-concept-overview.md)

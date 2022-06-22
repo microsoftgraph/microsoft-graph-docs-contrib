@@ -3,7 +3,7 @@ title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: non-product-specific
 author: "abheek-das"
 ---
 

@@ -6,6 +6,7 @@ items:
     items:
     - name: Overview
       href: /graph/auth/index?context=graph/api/beta
+      displayName: authentication, authorization, authenticate, authorize
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
     - name: Register your app
@@ -20,44 +21,75 @@ items:
       href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
     - name: Limit mailbox access
       href: /graph/auth-limit-mailbox-access?context=graph/api/beta
+    - name: Resolve authorization errors
+      href: /graph/resolve-auth-errors?context=graph/api/beta
   - name: Use the API
     items:
     - name: Overview
       href: /graph/use-the-api?context=graph/api/beta
+      displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
+    - name: Access data and methods
+      href: /graph/traverse-the-graph?context=graph/api/beta
     - name: Paging
       href: /graph/paging?context=graph/api/beta
-    - name: Use query parameters
-      href: /graph/query-parameters?context=graph/api/beta
+    - name: Query parameters
       items:
-      - name: Use the search query parameter
-        href: /graph/search-query-parameter?context=graph/api/beta
-      - name: Advanced query capabilities
-        href: /graph/aad-advanced-queries?context=graph/api/beta
+        - name: Use query parameters
+          href: /graph/query-parameters?context=graph/api/beta
+          displayName: OData query parameters, OData
+        - name: Use the search query parameter
+          href: /graph/search-query-parameter?context=graph/api/beta
+        - name: Advanced query capabilities
+          href: /graph/aad-advanced-queries?context=graph/api/beta
+        - name: Optimize requests with query parameters
+          href: /learn/modules/optimize-data-usage
     - name: Batching
-      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
+      displayName: Batch request
     - name: Throttling
-      href: /graph/throttling?context=graph/api/beta
+      items:
+        - name: Overview
+          href: /graph/throttling?context=graph/api/beta
+          displayName: throttling
+        - name: Optimize network traffic
+          href: /learn/modules/optimize-network-traffic
     - name: Change notifications
       items:
       - name: Overview
-        displayName: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         href: /graph/api/resources/webhooks?context=graph/api/beta
-      - name: Tutorial
+        displayName: change notifications, WebHooks, set up notifications for changes in resource data
+      - name: Change notifications tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing change notifications
-        href: /graph/webhooks-lifecycle
+        href: /graph/webhooks-lifecycle?context=graph/api/beta
       - name: Notifications with resource data
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
       - name: Get notifications delivered different ways (preview)
         href: /graph/change-notifications-delivery?context=graph/api/beta
-      - name: Get change notifications for chat and channel messages
-        href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
+      - name: Change notifications for cloud printing
+        href: /graph/universal-print-webhook-notifications?context=graph/api/beta
+      - name: Change notifications for Microsoft Teams resources
+        items:
+          - name: Notification types and payloads
+            href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/beta
+            displayName: change notifications, Teams, Microsoft Teams
+          - name: Teams and channels
+            href: /graph/teams-changenotifications-team-and-channel?context=graph/api/beta
+          - name: Team and channel membership
+            href: /graph/teams-changenotifications-teamMembership?context=graph/api/beta
+          - name: Chat and channel messages
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
+          - name: Chat
+            href: /graph/teams-changenotifications-chat?context=graph/api/beta
+          - name: Chat membership
+            href: /graph/teams-changenotifications-chatMembership?context=graph/api/beta
+      - name: Change notifications for Outlook resources
+        href: /graph/outlook-change-notifications-overview?context=graph/api/beta
     - name: Change tracking
       items:
       - name: Overview
-        displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
         href: /graph/delta-query-overview?context=graph/api/beta
+        displayName: Delta query, track changes, change tracking
       - name: Get changes to events (example)
         href: /graph/delta-query-events?context=graph/api/beta
       - name: Get changes to groups (example)
@@ -69,8 +101,8 @@ items:
     - name: Add custom data
       items:
       - name: Overview
-        displayName: Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
         href: /graph/extensibility-overview?context=graph/api/beta
+        displayName: add custom data, extensions, resources using extensions
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
@@ -79,6 +111,7 @@ items:
       items:
       - name: Get started
         href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+        displayName: Graph Explorer, try the API, try API
       - name: Work with Graph Explorer
         href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
     - name: Use Postman
@@ -86,13 +119,12 @@ items:
     - name: System messages
       href: /graph/system-messages?context=graph/api/beta
   - name: Migrate
-    expanded: false
     items:
     - name: Azure AD Graph
       items:
-      - name: Overview
-        displayName: Azure AD Graph Migration
-        href: /graph/migrate-azure-ad-graph-overview
+      - name: Migrate Azure AD Graph apps
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+        displayName: Migration, Azure AD Graph, migrate
       - name: Checklist to migrate apps
         href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
@@ -121,16 +153,28 @@ items:
           href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
-      - name: Migration FAQ
+      - name: Azure AD Graph migration FAQ
         href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
+        displayName: migrate, frequently asked questions
       - name: Configure Azure AD Graph permissions
         href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
+    - name: Exchange Web Services
+      items:
+        - name: Migrate EWS apps
+          href: /graph/migrate-exchange-web-services-overview?context=graph/api/beta
+          displayName: Migration, Exchange Web Services, EWS, migrate
+        - name: Authentication
+          href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
+        - name: API mapping
+          href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
         href: /graph/sdks/sdks-overview?context=graph/api/beta
+        displayName: SDK, SDKs, Microsoft Graph SDK
       - name: Install an SDK
         href: /graph/sdks/sdk-installation?context=graph/api/beta
+        displayName: install SDK, install SDKs, installation
       - name: Create a client
         href: /graph/sdks/create-client?context=graph/api/beta
       - name: Customize a client
@@ -149,25 +193,29 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/beta
       - name: Use PowerShell
         items:
-          - name: Installation
-            href: /graph/powershell/installation?context=graph/api/beta
+          - name: PowerShell overview
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+          - name: Install PowerShell SDK
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: Get started
-            href: /graph/powershell/get-started?context=graph/api/beta
-          - name: Navigating the SDK
-            href: /graph/powershell/navigating?context=graph/api/beta
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+          - name: Navigate the PowerShell SDK
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
-            href: /graph/powershell/app-only?context=graph/api/beta
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Use the toolkit
     items:
-      - name: Toolkit overview
+      - name: Overview
         href: /graph/toolkit/overview?context=graph/api/beta
+        displayName: Microsoft Graph Toolkit, toolkit
       - name: Get started
         items:
-          - name: Overview
+          - name: Get started
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
-          - name: /graph/toolkit for React
+            displayName: Microsoft Graph Toolkit, toolkit
+          - name: Toolkit for React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
-          - name: /graph/toolkit for SPFx
+          - name: Toolkit for SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
       - name: Build your first app
         items:
@@ -191,6 +239,7 @@ items:
         items:
           - name: Using the providers
             href: /graph/toolkit/providers/providers?context=graph/api/beta
+            displayName: Microsoft Graph Toolkit providers, toolkit provider
           - name: MSAL provider
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: MSAL2 provider
@@ -201,6 +250,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/beta
           - name: Teams MSAL2 provider
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
+          - name: TeamsFx provider
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/beta
           - name: Electron provider
             href: /graph/toolkit/providers/electron?context=graph/api/beta
           - name: Proxy provider
@@ -211,6 +262,7 @@ items:
         items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/beta
+            displayName: Microsoft Graph toolkit components, toolkit component
           - name: Get
             href: /graph/toolkit/components/get?context=graph/api/beta
           - name: Person
@@ -251,17 +303,21 @@ items:
     items:
     - name: Best practices
       href: /graph/best-practices-concept?context=graph/api/beta
+      displayName: Microsoft Graph, Best practices for working with Microsoft Graph
     - name: Known issues
       href: /graph/known-issues?context=graph/api/beta
-    - name: Changelog
+      displayName: Microsoft Graph, Known issues with Microsoft Graph
+    - name: API changelog
       href: https://developer.microsoft.com/graph/changelog
     - name: Errors
       href: /graph/errors?context=graph/api/beta
-  - name: Beta reference
+      displayName: Microsoft Graph error responses and error resource types
+  - name: API beta reference
     expanded: true
     items:
     - name: Overview
       href: overview.md
+      displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
     - name: Users
       items:
       - name: Overview
@@ -10633,6 +10689,11 @@ items:
             href: api/managedtenants-managedtenant-list-managementtemplates.md
           - name: Get management template
             href: api/managedtenants-managementtemplate-get.md
+        - name: My roles
+          href: resources/managedtenants-myrole.md
+          items:
+          - name: List
+            href: api/managedtenants-managedtenant-list-myroles.md 
         - name: Tenant customized information
           href: resources/managedtenants-tenantcustomizedinformation.md
           items:
@@ -12012,9 +12073,9 @@ items:
             href: resources/temporaryaccesspassauthenticationmethod.md
             items:
             - name: List
-              href: api/temporaryaccesspassauthenticationmethod-list.md
+              href: api/authentication-list-temporaryaccesspassmethods.md
             - name: Create
-              href: api/temporaryaccesspassauthenticationmethod-post.md
+              href: api/authentication-post-temporaryaccesspassmethods.md
             - name: Get
               href: api/temporaryaccesspassauthenticationmethod-get.md
             - name: Delete
@@ -14646,6 +14707,235 @@ items:
               href: resources/attacksimulationtrainingusercoverage.md
             - name: Get training coverage for users
               href: api/reportroot-getattacksimulationtrainingusercoverage.md
+      - name: eDiscovery (preview)
+        items:
+        - name: Case
+          href: resources/security-ediscoverycase.md
+          items:
+          - name: List
+            href: api/security-casesroot-list-ediscoverycases.md
+          - name: Create
+            href: api/security-casesroot-post-ediscoverycases.md
+          - name: Get
+            href: api/security-ediscoverycase-get.md
+          - name: Update
+            href: api/security-ediscoverycase-update.md
+          - name: Delete
+            href: api/security-casesroot-delete-ediscoverycases.md
+          - name: Close
+            href: api/security-ediscoverycase-close.md
+          - name: Reopen
+            href: api/security-ediscoverycase-reopen.md
+          - name: List operations
+            href: api/security-ediscoverycase-list-operations.md
+          - name: List custodians
+            href: api/security-ediscoverycase-list-custodians.md
+          - name: Create custodian
+            href: api/security-ediscoverycase-post-custodians.md
+          - name: List non-custodial data sources
+            href: api/security-ediscoverycase-list-noncustodialdatasources.md
+          - name: Create non-custodial data source
+            href: api/security-ediscoverycase-post-noncustodialdatasources.md
+          - name: List legal holds
+            href: api/security-ediscoverycase-list-legalholds.md
+          - name: Create legal hold
+            href: api/security-ediscoverycase-post-legalholds.md
+          - name: List searches
+            href: api/security-ediscoverycase-list-searches.md
+          - name: Create search
+            href: api/security-ediscoverycase-post-searches.md
+          - name: List review sets
+            href: api/security-ediscoverycase-list-reviewsets.md
+          - name: Create review set
+            href: api/security-ediscoverycase-post-reviewsets.md
+          - name: List tags
+            href: api/security-ediscoverycase-list-tags.md
+          - name: Create tag
+            href: api/security-ediscoverycase-post-tags.md
+        - name: Case settings
+          href: resources/security-ediscoverycasesettings.md
+          items:
+          - name: Get settings
+            href: api/security-ediscoverycasesettings-get.md
+          - name: Update settings
+            href: api/security-ediscoverycasesettings-update.md
+          - name: Reset settings to default
+            href: api/security-ediscoverycasesettings-resettodefault.md
+        - name: Operation
+          href : resources/security-caseoperation.md
+          items:
+           - name: List case operations 
+             href: api/security-ediscoverycase-list-operations.md
+           - name: Get case opreation by id
+             href: api/security-caseoperation-get.md
+        - name: Custodian
+          href: resources/security-ediscoverycustodian.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-custodians.md
+          - name: Create
+            href: api/security-ediscoverycase-post-custodians.md
+          - name: Get
+            href: api/security-ediscoverycustodian-get.md
+          - name: Activate
+            href: api/security-ediscoverycustodian-activate.md
+          - name: Release
+            href: api/security-ediscoverycustodian-release.md
+          - name: Apply hold
+            href: api/security-ediscoverycustodian-applyhold.md
+          - name: Remove hold
+            href: api/security-ediscoverycustodian-removehold.md
+          - name: Update index
+            href: api/security-ediscoverycustodian-updateindex.md
+          - name: List user sources
+            href: api/security-ediscoverycustodian-list-usersources.md
+          - name: Create user source
+            href: api/security-ediscoverycustodian-post-usersources.md
+          - name: List site sources
+            href: api/security-ediscoverycustodian-list-sitesources.md
+          - name: Create site source
+            href: api/security-ediscoverycustodian-post-sitesources.md
+          - name: List unitifed group sources
+            href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+          - name: Create unifed group source
+            href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
+          - name: Get last index operation
+            href: api/security-ediscoverycustodian-list-lastindexoperation.md
+        - name: Non-custodial data source
+          href: resources/security-ediscoverynoncustodialdatasource.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-noncustodialdatasources.md
+          - name: Create
+            href: api/security-ediscoverycase-post-noncustodialdatasources.md
+          - name: Get
+            href: api/security-ediscoverynoncustodialdatasource-get.md
+          - name: Release
+            href: api/security-ediscoverynoncustodialdatasource-release.md
+          - name: Apply hold
+            href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+          - name: Remove hold
+            href: api/security-ediscoverynoncustodialdatasource-removehold.md
+          - name: Update index
+            href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+          - name: Get last index operation
+            href: api/security-ediscoverycustodian-list-lastindexoperation.md
+        - name: Hold policy
+          href: resources/security-ediscoveryholdpolicy.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-legalholds.md
+          - name: Create
+            href: api/security-ediscoverycase-post-legalholds.md
+          - name: Get
+            href: api/security-ediscoveryholdpolicy-get.md
+          - name: Update
+            href: api/security-ediscoveryholdpolicy-update.md
+          - name: Delete
+            href: api/security-ediscoverycase-delete-legalholds.md
+          - name: List user sources
+            href: api/security-ediscoverycustodian-list-usersources.md
+          - name: Create user source
+            href: api/security-ediscoveryholdpolicy-post-usersources.md
+          - name: List site sources
+            href: api/security-ediscoverycustodian-list-sitesources.md
+          - name: Create site source
+            href: api/security-ediscoveryholdpolicy-post-sitesources.md
+        - name: Search
+          href: resources/security-ediscoverysearch.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-searches.md
+          - name: Create
+            href: api/security-ediscoverycase-post-searches.md
+          - name: Get
+            href: api/security-ediscoverysearch-get.md
+          - name: Update
+            href: api/security-ediscoverysearch-update.md
+          - name: Delete
+            href: api/security-ediscoverycase-delete-searches.md
+          - name: Estimate statistics
+            href: api/security-ediscoverysearch-estimatestatistics.md
+          - name: Purge data
+            href: api/security-ediscoverysearch-purgedata.md
+          - name: List custodian sources
+            href: api/security-ediscoverysearch-list-custodiansources.md
+          - name: Add custodian sources
+            href: api/security-ediscoverysearch-post-custodiansources.md
+          - name: Remove custodian sources
+            href: api/security-ediscoverysearch-delete-custodiansources.md
+          - name: List non-custodial data sources
+            href: api/security-ediscoverysearch-list-noncustodialsources.md
+          - name: Add non-custodial data sources
+            href: api/security-ediscoverysearch-post-noncustodialsources.md
+          - name: Remove non-custodial data sources
+            href: api/security-ediscoverysearch-delete-noncustodialsources.md
+          - name: List additional sources
+            href: api/security-ediscoverysearch-list-additionalsources.md
+          - name: Add additional sources
+            href: api/security-ediscoverysearch-post-additionalsources.md
+          - name: Get last estimate statistics operation
+            href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+        - name: Review set
+          href: resources/security-ediscoveryreviewset.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-reviewsets.md
+          - name: Create
+            href: api/security-ediscoverycase-post-reviewsets.md
+          - name: Get
+            href: api/security-ediscoveryreviewset-get.md
+          - name: Add to review set
+            href: api/security-ediscoveryreviewset-addtoreviewset.md
+          - name: Export
+            href: api/security-ediscoveryreviewset-export.md
+            items:
+              - name: Get download url
+                href: api/security-ediscoveryexportoperation-getdownloadurl.md
+          - name: Query
+            href: resources/security-ediscoveryreviewsetquery.md
+            items:
+            - name: List
+              href: api/security-ediscoveryreviewset-list-queries.md
+            - name: Create
+              href: api/security-ediscoveryreviewset-post-queries.md
+            - name: Get
+              href: api/security-ediscoveryreviewsetquery-get.md
+            - name: Update
+              href: api/security-ediscoveryreviewsetquery-update.md
+            - name: Delete
+              href: api/security-ediscoveryreviewset-delete-queries.md
+            - name: Export
+              href: api/security-ediscoveryreviewsetquery-export.md
+              items:
+              - name: Get download url
+                href: api/security-ediscoveryexportoperation-getdownloadurl.md
+            - name: Apply tags
+              href: api/security-ediscoveryreviewsetquery-applytags.md
+            - name: Run
+              href: api/security-ediscoveryreviewsetquery-run.md
+          - name: File
+            href: resources/security-ediscoveryfile.md
+            items:
+            - name: List
+              href: api/security-ediscoveryreviewset-list-files.md
+            - name: Get
+              href: api/security-ediscoveryfile-get.md
+        - name: Tag
+          href: resources/security-ediscoveryreviewtag.md
+          items:
+          - name: List
+            href: api/security-ediscoverycase-list-tags.md
+          - name: Create
+            href: api/security-ediscoverycase-post-tags.md
+          - name: Get
+            href: api/security-ediscoveryreviewtag-get.md
+          - name: Update
+            href: api/security-ediscoveryreviewtag-update.md
+          - name: Delete
+            href: api/security-ediscoverycase-delete-tags.md
+          - name: List tags as hierarchy
+            href: api/security-ediscoveryreviewtag-ashierarchy.md
       - name: Information protection
         items:
         - name: Labels
@@ -15205,7 +15495,7 @@ items:
         - name: Delete channel
           href: api/channel-delete.md
         - name: Remove incoming channel
-          href: api/team-delete-incomingchannel.md
+          href: api/team-delete-incomingchannels.md
         - name: Add member
           href: api/channel-post-members.md
         - name: Complete migration for channel

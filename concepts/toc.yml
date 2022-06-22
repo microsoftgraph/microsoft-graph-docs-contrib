@@ -16,20 +16,27 @@ items:
         items:
           - name: What's new highlights
             href: whats-new-overview.md
+            displayName: what's new, updates
           - name: API changelog
             href: https://developer.microsoft.com/graph/changelog
+            displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
       - name: Users you can reach
         items:
           - name: Overview
             href: users-you-can-reach.md
+            displayName: users you can reach
           - name: National cloud deployments
             href: deployments.md
           - name: Hybrid deployments (deprecated)
             href: hybrid-rest-support.md
+      - name: Quick start
+        href: https://developer.microsoft.com/graph/quick-start
+        displayName: quickstart
       - name: Tutorials
         items:
           - name: Overview
             href: tutorials.md
+            displayName: tutorials
           - name: .NET
             href: /graph/tutorials/dotnet
           - name: Go
@@ -59,12 +66,14 @@ items:
         items:
           - name: Overview
             href: azuread-users-concept-overview.md
+            displayName: users
           - name: Access user data
             href: /learn/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
             href: /graph/api/resources/groups-overview?context=graph/context
+            displayName: groups
           - name: Microsoft 365 groups
             href: office365-groups-concept-overview.md
           - name: Configure group options
@@ -75,17 +84,19 @@ items:
         items:
           - name: Overview
             href: applications-concept-overview.md
+            displayName: applications, apps
           - name: Automate SAML-based SSO configuration
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
       - name: Accessing data at scale
-        displayName: Microsoft Graph Data Connect
         items:
-          - name: Overview of Data Connect
+          - name: Data Connect overview
             href: data-connect-concept-overview.md
+            displayName: Microsoft Graph Data Connect, access data, bulk data           
           - name: Build your first Data Connect application
             href: data-connect-quickstart.yml
+            displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
           - name: Policies and billing
@@ -94,13 +105,15 @@ items:
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
-          - name: Frequently asked questions
+            displayName: Privileged Access Management
+          - name: Data Connect FAQ
             href: data-connect-faq.md
+            displayName: Microsoft Graph Data Connect, frequently asked questions
       - name: Calendar
-        displayName: Outlook
         items:
           - name: Overview
             href: outlook-calendar-concept-overview.md
+            displayName: Outlook, calendar
           - name: Find meeting times
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
@@ -129,6 +142,7 @@ items:
         items:
           - name: Overview
             href: cloud-communications-concept-overview.md
+            displayName: cloud communications
           - name: Get started
             href: cloud-communications-get-started.md
           - name: Calls
@@ -152,16 +166,19 @@ items:
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
-        displayName: connectors
         items:
-          - name: Overview of Microsoft Graph connectors
+          - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
+            displayName: Microsoft Graph connectors, connect external content
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
+            displayName: Microsoft Graph connectors
           - name: Use Postman
             href: connecting-external-content-connectors-api-postman.md
+            displayName: connector, connectors
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
+            displayName: connectors, Microsoft Graph connectors
           - name: Manage connections
             href: connecting-external-content-manage-connections.md
           - name: Manage schema
@@ -173,22 +190,27 @@ items:
           - name: API limits
             href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
-        displayName: Project Rome
         items:
           - name: Overview
             href: cross-device-concept-overview.md
+            displayName: Project Rome, cross-device, cross device, cross-device experience
           - name: Activity feed
             href: activity-feed-concept-overview.md
+            displayName: cross-device, cross device
           - name: Device relay (preview)
             href: device-relay-concept-overview.md
+            displayName: cross-device, cross device
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
+            displayName: cross device
       - name: Customer booking (preview)
-        href: booking-concept-overview.md
-        displayName: Bookings, Microsoft Bookings
         items:
+          - name: Overview 
+            href: booking-concept-overview.md
+            displayName: Bookings, Microsoft Bookings, booking, customer booking
           - name: Business rules
             href: bookingsbusiness-business-rules.md
+            displayName: Bookings, Microsoft Bookings, booking
       - name: Device and app management
         expanded: true
         items:
@@ -196,7 +218,7 @@ items:
             items:
               - name: Overview
                 href: universal-print-concept-overview.md
-                displayName: Universal Print
+                displayName: Universal Print, Cloud printing, printing, device and app management
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
@@ -208,11 +230,11 @@ items:
             displayName: Intune
           - name: Cloud PC (preview)
             href: cloudpc-concept-overview.md
-          - name: Device updates (preview)
-            displayName: Windows updates
+          - name: Device updates (preview)           
             items:
               - name: Overview
                 href: windowsupdates-concept-overview.md
+                displayName: Windows updates, Windows update, device update
               - name: Software updates
                 href: windowsupdates-software-updates.md
               - name: Deployments
@@ -230,15 +252,16 @@ items:
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Multi-tenant management (preview)
-            displayName: Microsoft 365 Lighthouse
             href: managedtenants-concept-overview.md
+            displayName: Microsoft 365 Lighthouse
           - name: Service health and communications
-            display name: service communications API
             href: service-communications-concept-overview.md
+            displayName: service communications
       - name: Education
         items:
           - name: Overview
             href: education-concept-overview.md
+            displayName: education
           - name: Rubrics
             href: education-rubric-overview.md
           - name: Upload files
@@ -248,40 +271,44 @@ items:
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
       - name: Files
-        displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
           - name: Overview
             href: onedrive-concept-overview.md
+            displayName: files, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
           - name: Addressing drive items
             href: onedrive-addressing-driveitems.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform
         items:
           - name: Overview
             href: azuread-identity-access-management-concept-overview.md
+            displayName: Azure AD, Microsoft identity platform, identity, access
           - name: Directory management
             items:
               - name: Manage custom security attributes (preview)
                 href: custom-security-attributes-examples.md
+                displayName: directory, identity
               - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
+                displayName: identity, authenticate, sign-in, sign in, signin
               - name: Identify and remediate risk
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
+                displayName: governance, identity
               - name: Review access to your resources
                 items:
-                  - name: Overview of the access reviews API
+                  - name: Overview
                     href: accessreviews-overview.md
+                    displayName: identity, access reviews API, review access
                   - name: Review access to a security group
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Review access for guest users
@@ -295,10 +322,10 @@ items:
               - name: Use PIM to assign Azure AD roles
                 href: tutorial-assign-azureadroles.md
       - name: Mail
-        displayName: Outlook, Outlook mail
         items:
           - name: Overview
             href: outlook-mail-concept-overview.md
+            displayName: Outlook, Outlook mail, mail, message           
           - name: Automate messaging
             href: outlook-create-send-messages.md
           - name: Organize messages
@@ -318,10 +345,10 @@ items:
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
       - name: Notes
-        displayName: OneNote
         items:
           - name: Overview
             href: integrate-with-onenote.md
+            displayName: OneNote, notes
           - name: Get OneNote content
             href: onenote-get-content.md
           - name: Open the OneNote client
@@ -350,14 +377,13 @@ items:
               - name: Error codes
                 href: onenote-error-codes.md
       - name: Notifications (deprecated)
-        displayName: Notifications
         items:
           - name: Overview
             href: notifications-concept-overview.md
+            displayName: deprecated, notifications
           - name: Get started
-            displayName: Notifications
             items:
-              - name: Overview
+              - name: Integrate with notifications
                 href: notifications-integration-e2e-overview.md
               - name: App registration
                 href: notifications-integration-app-registration.md
@@ -375,6 +401,7 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
+            displayName: people, workplace, intelligence, people and workplace intelligence
           - name: Get information about relevant people
             href: people-example.md
           - name: Customize people insights privacy (preview)
@@ -386,10 +413,10 @@ items:
           - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
-        displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
           - name: Overview
             href: outlook-contacts-concept-overview.md
+            displayName: Outlook, Outlook contacts, Outlook contact, People, personal contacts
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
           - name: Immutable ID
@@ -400,12 +427,14 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
+            displayName: report, reports
           - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
       - name: Search
         items:
           - name: Overview
             href: search-concept-overview.md
+            displayName: search
           - name: Search messages
             href: search-concept-messages.md
           - name: Search events
@@ -434,6 +463,7 @@ items:
         items:
           - name: Overview
             href: security-concept-overview.md
+            displayName: security
           - name: Data flow
             href: security-dataflow.md
           - name: Authorization
@@ -446,22 +476,22 @@ items:
             href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
-        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
       - name: Teamwork
-        displayName: Microsoft Teams
         items:
           - name: Overview
             href: teams-concept-overview.md
+            displayName: teams, team, teamwork, Microsoft Teams
           - name: Create a group and team
             href: teams-create-group-and-team.md
           - name: List all teams
             href: teams-list-all-teams.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
-          - name: Configuring built-in tabs
+          - name: Configure built-in tabs
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
@@ -485,10 +515,10 @@ items:
         href: todo-concept-overview.md
         displayName: Microsoft To Do
       - name: Workbooks and charts
-        displayName: Excel
         items:
           - name: Overview
             href: excel-concept-overview.md
+            displayName: Excel, workbooks, charts
           - name: Manage sessions
             href: excel-manage-sessions.md
           - name: Display a chart image
@@ -512,6 +542,7 @@ items:
         items:
           - name: Overview
             href: auth/index.yml
+            displayName: authentication, authorization, authenticate, authorize
           - name: Basics
             href: auth/auth-concepts.md
           - name: Register your app
@@ -532,30 +563,38 @@ items:
         items:
           - name: Overview
             href: use-the-api.md
+            displayName: Microsoft Graph API, API, Microsoft Graph REST API, REST API
           - name: Access data and methods
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
           - name: Query parameters
-            displayName: OData query parameters
             items:
               - name: Use query parameters
                 href: query-parameters.md
+                displayName: OData query parameters, OData
               - name: Use the search query parameter
                 href: search-query-parameter.md
               - name: Advanced query capabilities
                 href: aad-advanced-queries.md
+              - name: Optimize requests with query parameters
+                href: /learn/modules/optimize-data-usage
           - name: Batching
-            displayName: Batch requests
             href: json-batching.md
+            displayName: Batch request
           - name: Throttling
-            href: throttling.md
+            items:
+              - name: Overview
+                displayName: throttling
+                href: throttling.md
+              - name: Optimize network traffic
+                href: /learn/modules/optimize-network-traffic
           - name: Change notifications
-            displayName: Webhooks, cloud printing, Universal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
-              - name: Tutorial
+                displayName: change notifications, WebHooks, set up notifications for changes in resource data
+              - name: Change notifications tutorial
                 href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing change notifications
                 href: webhooks-lifecycle.md
@@ -565,10 +604,11 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notifications for Microsoft Teams
+              - name: Change notifications for Microsoft Teams resources
                 items:
-                  - name: Overview
+                  - name: Notification types and payloads
                     href: teams-change-notification-in-microsoft-teams-overview.md
+                    displayName: change notifications, Teams, Microsoft Teams
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team and channel membership
@@ -582,10 +622,10 @@ items:
               - name: Change notifications for Outlook resources
                 href: outlook-change-notifications-overview.md
           - name: Change tracking
-            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md
+                displayName: Delta query, track changes, change tracking
               - name: Get changes to events (example)
                 href: delta-query-events.md
               - name: Get changes to groups (example)
@@ -595,10 +635,10 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            displayName: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
             items:
               - name: Overview
                 href: extensibility-overview.md
+                displayName: add custom data, extensions, resources using extensions
               - name: Use open extensions (example)
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
@@ -607,18 +647,18 @@ items:
             items:
             - name: Get started
               href: graph-explorer/graph-explorer-overview.md
+              displayName: Graph Explorer, try the API, try API
             - name: Work with Graph Explorer
               href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
-        expanded: false
         items:
           - name: Azure AD Graph
-            displayName: Migration, Azure AD Graph
             items:
-              - name: Overview
+              - name: Migrate Azure AD Graph apps
                 href: migrate-azure-ad-graph-overview.md
+                displayName: Migration, Azure AD Graph, migrate
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -647,15 +687,16 @@ items:
                     href: migrate-azure-ad-graph-client-libraries.md
               - name: "4: Deploy, test, and extend"
                 href: migrate-azure-ad-graph-deploy-test-extend.md
-              - name: Migration FAQ
+              - name: Azure AD Graph migration FAQ
                 href: migrate-azure-ad-graph-faq.md
+                displayName: migrate, frequently asked questions
               - name: Configure Azure AD Graph permissions
                 href: migrate-azure-ad-graph-configure-permissions.md
           - name: Exchange Web Services
-            displayName: Migration, Exchange Web Services, EWS
             items:
-              - name: Overview
+              - name: Migrate EWS apps
                 href: migrate-exchange-web-services-overview.md
+                displayName: Migration, Exchange Web Services, EWS, migrate
               - name: Authentication
                 href: migrate-exchange-web-services-authentication.md
               - name: API mapping
@@ -664,8 +705,10 @@ items:
         items:
           - name: Overview
             href: sdks/sdks-overview.md
+            displayName: SDK, SDKs, Microsoft Graph SDK
           - name: Install an SDK
             href: sdks/sdk-installation.md
+            displayName: install SDK, install SDKs, installation
           - name: Create a client
             href: sdks/create-client.md
           - name: Customize a client
@@ -684,24 +727,26 @@ items:
             href: sdks/use-beta.md
           - name: Use PowerShell
             items:
-              - name: Overview
+              - name: PowerShell overview
                 href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-              - name: Installation
+              - name: Install PowerShell SDK
                 href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
               - name: Get started
                 href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-              - name: Navigating the SDK
+              - name: Navigate the PowerShell SDK
                 href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
               - name: App-only authentication
                 href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
       - name: Use the toolkit
         items:
-          - name: Toolkit overview
+          - name: Overview
             href: toolkit/overview.md
+            displayName: Microsoft Graph Toolkit, toolkit
           - name: Get started
             items:
-              - name: Overview
+              - name: Get started
                 href: toolkit/get-started/overview.md
+                displayName: Microsoft Graph Toolkit, toolkit
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
               - name: Toolkit for SPFx
@@ -728,6 +773,7 @@ items:
             items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
+                displayName: Microsoft Graph Toolkit providers, toolkit provider
               - name: MSAL provider
                 href: toolkit/providers/msal.md
               - name: MSAL2 provider
@@ -750,6 +796,7 @@ items:
             items:
               - name: Login
                 href: toolkit/components/login.md
+                displayName: Microsoft Graph toolkit components, toolkit component
               - name: Get
                 href: toolkit/components/get.md
               - name: Person
@@ -791,13 +838,18 @@ items:
         items:
           - name: Best practices
             href: best-practices-concept.md
+            displayName: Microsoft Graph, Best practices for working with Microsoft Graph
           - name: Known issues
             href: known-issues.md
+            displayName: Microsoft Graph, Known issues with Microsoft Graph
           - name: API changelog
             href: changelog.md
           - name: Errors
             href: errors.md
-      - name: v1.0 reference
+            displayName: Microsoft Graph error responses and error resource types
+      - name: API v1.0 reference
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-      - name: Beta reference
+        displayName: Microsoft Graph REST API v1.0 reference
+      - name: API beta reference
         href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
+        displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta

@@ -13,6 +13,6 @@ $params = @{
 	)
 }
 
-Get-MgCommunicationPresence -BodyParameter $params
+Get-MgCommunicationPresenceByUserId -BodyParameter $params
 
 ```
