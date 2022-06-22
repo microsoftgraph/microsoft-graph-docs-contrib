@@ -1,7 +1,25 @@
 {
     "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cloudPcSupportedRegion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **regionStatus** property to the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2022-06-13T16:28:33.6983912Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
         { 
-          "ChangeList": [
+            "ChangeList": [
               {
                 "Id": "5535b19f9ca84f74b3576fe0a56c3aa5",
                 "ApiChange": "Method",
