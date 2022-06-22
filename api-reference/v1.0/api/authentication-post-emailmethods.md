@@ -1,5 +1,5 @@
 ---
-title: "Create emailAuthenticationMethod"
+title: "Create emailMethod"
 description: "Create a new emailAuthenticationMethod object for a user."
 author: "mmcla"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Create emailAuthenticationMethod
+# Create emailMethod
 Namespace: microsoft.graph
 
 Set a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object. Email authentication is a self-service password reset method. A user may only have one email authentication method.
