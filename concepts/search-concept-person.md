@@ -10,6 +10,16 @@ ms.prod: "search"
 
 Microsoft Graph applications can use the Microsoft Search API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication, collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. Along with generating this insight, search also provides fuzzy matching search support.
 
+## People APIs
+You can can use people search by calling these two APIs:
+* /search
+* /people
+
+We highly recommended that users call the /search API due to the following reasons:
+* Future investments - All future investments will only be availble in /search with /people moving to maintenance mode.
+
+
+
 ## Returned people properties
 The people api returns the following set of properties:
 
