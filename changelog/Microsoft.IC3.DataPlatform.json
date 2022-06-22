@@ -176,7 +176,7 @@
             "Version": "beta",
             "CreatedDateTime": "2022-06-06T11:36:15.7516882Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -202,7 +202,7 @@
             "Version": "beta",
             "CreatedDateTime": "2022-06-06T11:36:15.7523373Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Call"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -260,7 +260,7 @@
             "Version": "v1.0",
             "CreatedDateTime": "2022-05-19T11:36:15.7523426Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Online meeting"
+            "SubArea": "Call records"
         },
         {
             "ChangeList": [
@@ -286,7 +286,7 @@
             "Version": "v1.0",
             "CreatedDateTime": "2022-05-19T11:36:15.7523446Z",
             "WorkloadArea": "Cloud communications",
-            "SubArea": "Call"
+            "SubArea": "Call records"
         }
     ]
 }
