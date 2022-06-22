@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicy",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "crossTenantAccessPolicy"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationDefault",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "crossTenantAccessPolicyConfigurationDefault"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyConfigurationPartner",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "crossTenantAccessPolicyConfigurationPartner"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyInboundTrust",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "crossTenantAccessPolicyInboundTrust"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyB2BSetting",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "crossTenantAccessPolicyB2BSetting"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyTarget",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "crossTenantAccessPolicyTarget"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyTargetConfiguration",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "crossTenantAccessPolicyTargetConfiguration"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetConfigurationAccessType",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "crossTenantAccessPolicyTargetConfigurationAccessType"
         },
         {
-          "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+          "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
           "ApiChange": "Enum type",
           "ChangedApiName": "crossTenantAccessPolicyTargetType",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "crossTenantAccessPolicyTargetType"
         }
       ],
-      "Id": "762ccb17-76e5-41b3-b0e7-e37591f954a1",
+      "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-30T00:00:00Z",
