@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{i
 [!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
+   '@odata.type':'#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration',
   isUsableOnce: true
 };
 

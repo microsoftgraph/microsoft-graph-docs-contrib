@@ -10946,6 +10946,56 @@
       "CreatedDateTime": "2022-06-08T22:26:16.0457928Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "federatedIdpMfaBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **federatedIdpMfaBehavior** enumeration type.",
+          "Target": "federatedIdpMfaBehavior"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "promptLoginBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **promptLoginBehavior** enumeration type.",
+          "Target": "promptLoginBehavior"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signingCertificateUpdateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [signingCertificateUpdateStatus](https://docs.microsoft.com/en-us/graph/api/resources/signingCertificateUpdateStatus?view=graph-rest-1.0) resource type.",
+          "Target": "signingCertificateUpdateStatus"
+        },       
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "federationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **federationConfiguration** relationship to the [domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        },
+        {
+          "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internalDomainFederation",
+          "ChangeType": "Addition",
+          "Description": "Added the [internalDomainFederation](https://docs.microsoft.com/en-us/graph/api/resources/internalDomainFederation?view=graph-rest-1.0) resource and associated methods. Use this resource to federate your domains with Azure AD.",
+          "Target": "internalDomainFederation"
+        }        
+      ],
+      "Id": "58b7beda-c767-4468-914b-23774fe6f181",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-06-21T09:45:26.3615214Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
