@@ -19,7 +19,7 @@ Represents threat submission result after threat submission is processed by Micr
 | Property           | Type                               | Description                                                             |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown` and `noResultAvailable`. |
-| detail             | submissionResultDetail             | It is used to specify the additional details provided by Microsoft to substantiate their analysis result. |
+| detail             | [submissionResultDetail](../resources/security-submissionresultdetail.md)             | It is used to specify the additional details provided by Microsoft to substantiate their analysis result. |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | It is use to specify the files which were detected by Microsoft in the submitted emails|
 | detectedUrls       | Collection(String)                 | It is used to specify the URLs which were detected by Microsoft in the submitted email.|
 | userMailboxSetting | userMailboxSetting                | It is a flag which specifies the setting for user mailbox denoted by a comma separated string. |
