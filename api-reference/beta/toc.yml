@@ -14344,36 +14344,56 @@ items:
       - name: Threat submission
         href: resources/security-threatsubmission.md
         items:
-        - name: Get email threat submission
-          href: api/security-emailthreatsubmission-get.md
-        - name: List email threat submissions
+        - name: Email threat submission
+          href: resources/security-emailthreatsubmission.md
+          items:
+          -name: List
           href: api/security-emailthreatsubmission-list.md
-        - name: Create email threat submission
+          -name: Get
+          href: api/security-emailthreatsubmission-get.md
+          - name: Create
           href: api/security-emailthreatsubmission-post-emailthreats.md
-        - name: Review email threat submsision
+          - name: Review 
           href: api/security-emailthreatsubmission-review.md
-        - name: Get email threat submission policy
-          href: api/security-emailthreatsubmissionpolicy-get.md
-        - name: List email threat submissions policies
+          -name: Email content threat submission
+          href: resources/security-emailcontentthreatsubmission.md
+          -name: Email URL threat submission
+          href: resources/security-emailurlthreatsubmission.md
+        - name: Email threat submission policy
+          href: resources/security-emailthreatsubmissionpolicy.md
+          items:
+          - name: List email threat submissions policies
           href: api/security-emailthreatsubmissionpolicy-list.md
-        - name: Create email threat submission policy
+          - name: Get email threat submission policy
+          href: api/security-emailthreatsubmissionpolicy-get.md
+          - name: Create email threat submission policy
           href: api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
-        - name: Update email threat submission policy
+          - name: Update email threat submission policy
           href: api/security-emailthreatsubmissionpolicy-update.md
-        - name: Delete email threat submission policy
+          - name: Delete email threat submission policy
           href: api/security-emailthreatsubmissionpolicy-delete.md
-        - name: Get file threat submission
-          href: api/security-filethreatsubmission-get.md
-        - name: List file threat submissions
-          href: api/security-filethreatsubmission-list.md
-        - name: Create file threat submission
-          href: api/security-filethreatsubmission-post-emailthreats.md
-        - name: Get url threat submission
-          href: api/security-urlthreatsubmission-get.md
-        - name: List url threat submissions
+        - name: Url threat submission
+          href: resources/security-urlthreatsubmission.md
+          items:
+          - name: List url threat submissions
           href: api/security-urlthreatsubmission-list.md
-        - name: Create url threat submission
+          - name: Get url threat submission
+          href: api/security-urlthreatsubmission-get.md
+          - name: Create url threat submission
           href: api/security-urlthreatsubmission-post-emailthreats.md
+        - name: File threat submission
+          href: resources/security-filethreatsubmission.md
+          items:
+          - name: List file threat submissions
+          href: api/security-filethreatsubmission-list.md
+          - name: Get file threat submission
+          href: api/security-filethreatsubmission-get.md
+          - name: Create file threat submission
+          href: api/security-filethreatsubmission-post-emailthreats.md
+          -name: File URL threat submission
+          href: resources/security-fileurlthreatsubmission.md
+          -name: File content threat submission
+          href: resources/security-filecontentthreatsubmission.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
