@@ -15,17 +15,19 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 
 The segments of the file can be uploaded in any order and can be uploaded in parallel, with up to four concurrent requests. When all the binary segments of a document are uploaded, the binary file is linked to the **printDocument**.
 
-## Request
+## Upload a file
+
+### Request
 
 Make a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 
-### Request headers
+#### Request headers
 | Name          | Description   |
 |:--------------|:--------------|
 | Content-Range | bytes {startByteIndex}-{endByteIndex}‬/{documentSizeInBytes}. Required.|
 | Content-Length | {contentLength}‬ Required.|
 
-### Request body
+#### Request body
 The request body is a binary blob containing the bytes of the document that are specified as an **inclusive** byte range in the `Content-Range` header. 
 
 ### Example
@@ -41,7 +43,7 @@ Content-Length: 72797
 
 Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document.
 
-## Response
+### Response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
@@ -80,7 +82,7 @@ Content-Type: application/json
   You can [request upload status](#get-the-upload-session) to get a more detailed list of missing ranges.
 * Including the `Authorizatio`n header when making the `PUT` call might result in an `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when creating the upload session. It should be not be included when uploading data to the upload session.
 
-## Complete a file
+## Complete a file upload
 
 When the last byte range of a file is received, the server will respond with an `HTTP 201 Created`. The response body will also include the property set for the associated **printDocument**.
 
@@ -138,7 +140,7 @@ Content-Type: application/json
 }
 ```
 
-## Create upload session and upload documents: code examples
+## Code examples: Create upload session and upload documents
 
 # [C#](#tab/csharp)
 
