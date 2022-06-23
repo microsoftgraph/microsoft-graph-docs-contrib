@@ -19,7 +19,7 @@ Represents user mailbox setting information of threat submission result. It is a
 | Value  | Description |
 | :----------------- | :------------------------------------ |
 | none | no user mailbox setting related with this threat submission |
-| junkMailDeletion | Microsoft has no additional details on the result |
+| junkMailDeletion | the submitted email was applied with junk mail deletion |
 | isFromAddressInAddressBook | the submitted email was from address in address book |
 | isFromAddressInAddressSafeList | the submitted email was from address in address safe list |
 | isFromAddressInAddressBlockList | the submitted email was from address in address safe list |
