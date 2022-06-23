@@ -3131,27 +3131,3 @@ Possible values for user account types (group membership), per Windows definitio
 |sender|
 |recipient|
 |unknownFutureValue|
-
-### userMailboxSetting values 
-
-|Member|
-|:---|
-|none|
-|junkMailDeletion|
-|isFromAddressInAddressBook|
-|isFromAddressInAddressSafeList|
-|isFromAddressInAddressBlockList|
-|isFromAddressInAddressImplicitSafeList|
-|isFromAddressInAddressImplicitJunkList|
-|isFromDomainInDomainSafeList|
-|isFromDomainInDomainBlockList|
-|isRecipientInRecipientSafeList|
-|customRule|
-|junkMailRule|
-|senderPraPresent|
-|fromFirstTimeSender|
-|exclusive|
-|priorSeenPass|
-|senderAuthenticationSucceeded|
-|isJunkMailRuleEnabled|
-|unknownFutureValue|
