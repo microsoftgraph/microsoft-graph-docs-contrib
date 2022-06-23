@@ -90,7 +90,7 @@ Here is an example of the request to get the metadata of the team photo.
   "name": "get_team_photo_metadata"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/photo
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
 ```
 
 #### Response
@@ -108,8 +108,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ddfcd489-628b-7d04-b48b-20075df800e5')/photo/$entity",
-    "@odata.id": "https://graph.microsoft.com/beta/teams('ddfcd489-628b-7d04-b48b-20075df800e5')/photo",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
     "id": "240X240",
@@ -129,7 +129,7 @@ Here is an example of the request to get the team photo's binary data.
   "name": "get_team_photo"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/photo/$value
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
 ```
 
 #### Response

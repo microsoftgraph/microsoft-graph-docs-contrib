@@ -72,7 +72,7 @@ Here is an example of the request to update the team photo.
   "name": "update_team_photo"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/teams/{id}/photo/$value
+PUT https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
 Content-type: image/jpeg
 
 Binary data for the image
