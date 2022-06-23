@@ -23,15 +23,15 @@ This is an abstract type. Inherits from [entity](../resources/entity.md). Base t
 | Property        | Type                       | Description                                                                      |
 |:----------------|:---------------------------|:---------------------------------------------------------------------------------|
 | adminReview     | [security.submissionAdminReview](../resources/security-submissionadminreview.md)| Specifies the admin review property which constitutes of who reviewed the user submission, when and what was it identified as. |
-| category        | submissionCategory         | Specifies the category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`.|
-| clientSource    | submissionClientSource     | Specifies the source of the submission. The possible values are: `microsoft` and `other`. |
-| contentType     | submissionContentType      | Specifies the type of content being submitted. The possible values are: `email`, `url`, `file` and `app`.  |
+| category        | submissionCategory         | Specifies the category of the submission. The possible values are: `notJunk`, `spam`, `phishing`, `malware` and `unkownFutureValue`.|
+| clientSource    | submissionClientSource     | Specifies the source of the submission. The possible values are: `microsoft`,  `other` and `unkownFutureValue`. |
+| contentType     | submissionContentType      | Specifies the type of content being submitted. The possible values are: `email`, `url`, `file`, `app` and `unkownFutureValue`.  |
 | createdBy       | [security.submissionUserIdentity](../resources/security-submissionuseridentity.md)     | Specifies who submitted the email as a threat.|
 | createdDateTime | DateTimeOffset             | Specifies when the threat submission was created.                                          |
 | id              | String                     | Specifies the id of threat submission. |
 | result          | [security.submissionResult](../resources/security-submissionresult.md)          | Specifies the result of the analysis performed by Microsoft.  |
-| source          | submissionSource           | Specifies the role of the submitter. The possible values are: `administrator` and `user`.  |
-| status          | longRunningOperationStatus | Indicates whether the threat submission has been analyzed by Microsoft. The possible values are: `notStarted`, `running`, `succeeded`, `failed` and `skipped`. |
+| source          | submissionSource           | Specifies the role of the submitter. The possible values are: `administrator`,  `user` and `unkownFutureValue`.  |
+| status          | longRunningOperationStatus | Indicates whether the threat submission has been analyzed by Microsoft. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped` and `unkownFutureValue`. |
 | tenantId        | String                     | Indicates the tenant id of the submitter. Not required when created using a `POST` operation. It is extracted from the token of the post API call. |
 
 ## Relationships
