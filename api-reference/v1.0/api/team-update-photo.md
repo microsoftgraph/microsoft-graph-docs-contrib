@@ -19,12 +19,11 @@ Update the photo (picture) for a team.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | GraphPermissionConstants.TeamSettingsReadWriteAll, GraphPermissionConstants.GroupReadWriteAll, GraphPermissionConstants.DirectoryReadWriteAll |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | GraphPermissionConstants.TeamSettingsReadWriteAll, GraphPermissionConstants.GroupReadWriteAll, GraphPermissionConstants.DirectoryReadWriteAll |
-
+| Permission Type | Permissions (from least to most privileged)  |
+| --------------- | -------------------------------------------- |
+| Delegated (work or school account)        | TeamSettingsReadWriteAll |
+| Delegated (personal Microsoft account)    | Not supported.     |
+| Application                               | TeamSettingsReadWriteAll |
 
 ## HTTP request
 
