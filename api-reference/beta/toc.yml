@@ -11048,7 +11048,7 @@ items:
     - name: Extensions
       items:
       - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/beta
+        href: /graph/extensibility-overview?context=graph/api/beta&preserve-view=true
       - name: Directory extensions
         displayname: Groups, Users, Applications, Organization, Devices
         href: resources/extensionproperty.md
