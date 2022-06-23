@@ -204,12 +204,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Provision a group and two members on demand
+### Example 3: Provision a group and two of its members on demand
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand_Group"
