@@ -18,7 +18,7 @@ References that you would like to provision on-demand such as a member of a grou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|members|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|Any managers of the user that you would like to provision.|
+|members|[synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md) collection|All members gor the group that that you would like to provision.|
 
 ## Relationships
 None.
