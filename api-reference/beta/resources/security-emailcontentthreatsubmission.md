@@ -1,6 +1,6 @@
 ---
 title: "emailContentThreatSubmission resource type"
-description: "Represents email content threat submission sent using email file content"
+description: "Represents a threat submission related to the content of an email."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents email content threat submission object which is created when submission is made using email file content.
+Represents a threat submission related to the content of an email. This is created when the submission is made using email file content.
 
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
 

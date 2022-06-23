@@ -35,4 +35,4 @@ Represents user mailbox setting information of threat submission result. It is a
 | priorSeenPass | the submitted email was prior seen passed |
 | senderAuthenticationSucceeded | the sender authentication of the submitted email was succeeded |
 | isJunkMailRuleEnabled | the junk mail rule was enabled |
-| unknownFutureValue | unkown future value |
+| unknownFutureValue | unknown future value |

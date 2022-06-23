@@ -1,6 +1,6 @@
 ---
 title: "fileUrlThreatSubmission resource type"
-description: "Represents file threat submission which is submitted by file url"
+description: "Represents file threat submission object created when the submission is made using a file URL."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents file threat submission object which is created when submission is made using file URL. It is a reserved api and not supported as of today.
-
+Represents file threat submission object created when the submission is made using a file URL. It is a reserved api and not supported as of today.
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "fileContentThreatSubmission resource type"
-description: "Represents file threat submission submitted by file content"
+description: "Represents a threat submission object created when the submission is made using the content of a file."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents file content threat submission object which is created when submission is made using file content.
-
+Represents a threat submission object created when the submission is made using the content of a file.
 
 Inherits from [fileThreatSubmission](../resources/security-filethreatsubmission.md).
 

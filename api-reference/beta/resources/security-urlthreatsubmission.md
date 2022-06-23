@@ -1,6 +1,6 @@
 ---
 title: "urlThreatSubmission resource type"
-description: "Represent url threat submission"
+description: "Represent a threat submission related to a URL"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,11 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represent url threat submission.
+Represent a threat submission related to a URL.
 
 It is used to submit suspected phishing urls to Microsoft 365 Defender for Office (MDO). It could also be used to submit false positive cases which should not have been blocked by MDO, e.g, safe urls.
-
-
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md).
 

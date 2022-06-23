@@ -1,6 +1,6 @@
 ---
 title: "emailUrlThreatSubmission resource type"
-description: "Represents email url threat submission sent using the email url"
+description: "Represents a threat submission object created when the submission is made using the email URL."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"

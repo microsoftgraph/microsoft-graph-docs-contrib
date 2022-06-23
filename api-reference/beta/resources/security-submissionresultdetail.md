@@ -1,6 +1,6 @@
 ---
 title: "submissionResultDetail enum  type"
-description: "Represents threat submission result detail information"
+description: "Defines the details of the result of a threat submission"
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines threat submission result detail and gives more information about submission result.
+Defines the details of the result of a threat submission.
 
 ## Members
 | Value                                  | Description                                                  |
@@ -29,25 +29,25 @@ Defines threat submission result detail and gives more information about submiss
 | domainImpersonation                    | The reported message was allowed due to the domain impersonation policy settings |
 | userImpersonation                      | The reported message was allowed due to the user impersonation policy settings |
 | brandImpersonation                     | The reported message was allowed due to the brand impersonation policy settings |
-| outboundShouldNotBeBlocked             | The reported outgoing messages has been found clean and Microsoft will update its Machine Learning based Outbound Filters in the coming weeks |
-| outboundShouldBeBlocked                | The reported outgoing messages has been found malicious and Microsoft will update its Machine Learning based Outbound Filters in the coming weeks |
-| outboundBulk                           | The reported outgoing messages has been found to be bulk and Microsoft will update its Machine Learning based Outbound Filters in the coming weeks |
+| outboundShouldNotBeBlocked             | The reported outgoing messages has been found clean and Microsoft will update its machine learning based outbound filters in the coming weeks |
+| outboundShouldBeBlocked                | The reported outgoing messages has been found malicious and Microsoft will update its machine learning based outbound filters in the coming weeks |
+| outboundBulk                           | The reported outgoing messages has been found to be bulk and Microsoft will update its machine learning based outbound filters in the coming weeks |
 | outboundCannotMakeDecision             | At the moment Microsoft cannot reach a verdict on the outgoing reported message and so please submit again |
 | outboundNotRescanned                   | At the Moment Microsoft cannot reach a verdict as the message cannot be analyzed without taking outside the environment or due to other reasons |
 | zeroHourAutoPurgeAllowed               | The reported message was zapped and allowed after delivery as the message was good |
 | zeroHourAutoPurgeBlocked               | The Reported message was zapped and blocked after delivery as the message was bad |
-| zeroHourAutoPurgeQuarantineReleased    | The Reported message was released from Quarantine despite being Zapped as it turned malicious after delivery |
+| zeroHourAutoPurgeQuarantineReleased    | The Reported message was released from Quarantine despite being zapped as it turned malicious after delivery |
 | onPremisesSkip                         | The reported message cannot be analyzed as this is went through a  onprem setup of exchange online protection |
-| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the Tenant Allow block list |
-| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the Tenant Allow block list |
-| allowedUrlByTenantAllowBlockList       | The reported URL was allowed as URL is on the Tenant allow block list |
-| allowedFileByTenantAllowBlockList      | The reported file was allowed as File is on the Tenant allow block list |
-| allowedSenderByTenantAllowBlockList    | The reported message was allowed as sender is on the Tenant allow block list |
-| allowedRecipientByTenantAllowBlockList | The reported outgoing message was allowed as recipient is on the Tenant allow block list |
-| blockedUrlByTenantAllowBlockList       | The reported URL was blocked as URL is on the Tenant allow block list |
-| blockedFileByTenantAllowBlockList      | The reported file was blocked as file is on the Tenant allow block list |
-| blockedSenderByTenantAllowBlockList    | The reported message was blocked as sender in on the Tenant allow block list |
-| blockedRecipientByTenantAllowBlockList | The reported outgoing message was blocked as the recipient is on the Tenant allow block list |
+| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow block list |
+| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the tenant allow block list |
+| allowedUrlByTenantAllowBlockList       | The reported URL was allowed as URL is on the tenant allow block list |
+| allowedFileByTenantAllowBlockList      | The reported file was allowed as file is on the tenant allow block list |
+| allowedSenderByTenantAllowBlockList    | The reported message was allowed as sender is on the tenant allow block list |
+| allowedRecipientByTenantAllowBlockList | The reported outgoing message was allowed as recipient is on the tenant allow block list |
+| blockedUrlByTenantAllowBlockList       | The reported URL was blocked as URL is on the tenant allow block list |
+| blockedFileByTenantAllowBlockList      | The reported file was blocked as file is on the tenant allow block list |
+| blockedSenderByTenantAllowBlockList    | The reported message was blocked as sender in on the tenant allow block list |
+| blockedRecipientByTenantAllowBlockList | The reported outgoing message was blocked as the recipient is on the tenant allow block list |
 | allowedByConnection                    | The reported message was allowed as the sending IP is on the hosted connection filter policy |
 | blockedByConnection                    | The reported message was blocked as the sending IP is on the hosted connection filter policy |
 | allowedByExchangeTransportRule         | The reported message was allowed as the organization has a related exchange transport rule |
@@ -57,8 +57,8 @@ Defines threat submission result detail and gives more information about submiss
 | junkMailRuleDisabled                   | The reported message was bound to be delivered to junk, but junk folder has been disabled |
 | allowedByUserSetting                   | The reported message was allowed due to user safe or trust sender setting |
 | blockedByUserSetting                   | The reported message was blocked due to user blocked or trusted sender setting |
-| allowedByTenant                        | The reported message is allowed due to Tenant Policy or settings |
-| blockedByTenant                        | The reported message is blocked due to Tenant Policy or settings |
+| allowedByTenant                        | The reported message is allowed due to tenant policy or settings |
+| blockedByTenant                        | The reported message is blocked due to tenant policy or settings |
 | invalidFalsePositive                   | The reported message is already allowed                      |
 | invalidFalseNegative                   | The reported message is already blocked                      |
 | spoofBlocked                           | The reported message has been determined as spoof by our system and blocked                    |
