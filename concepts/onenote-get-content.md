@@ -1,16 +1,16 @@
 ---
-title: "Get OneNote content and structure with the OneNote API"
+title: "Get OneNote content and structure by using the OneNote API"
 description: "Get OneNote content and structure by sending a GET request to the target endpoint. Then use query string options to filter your queries and improve performance."
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 
-# Get OneNote content and structure with the Microsoft Graph OneNote API
+# Get OneNote content and structure
 
 **Applies to**: Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
-To get OneNote content and structure, you send a GET request to the target endpoint. For example:
+To get OneNote content and structure by using the Microsoft Graph OneNote API, you send a GET request to the target endpoint. For example:
 
 `GET ../onenote/pages/{id}`
 
