@@ -1,6 +1,6 @@
 ---
 title: "Integrate with Microsoft Graph notifications (deprecated)"
-description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation.       "
+description: "Integrate your apps with Microsoft Graph notifications with a few simple steps (deprecated)."
 ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"

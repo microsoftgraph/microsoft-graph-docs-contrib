@@ -1,6 +1,6 @@
 ---
 title: "Integrate your Windows UWP app with the client-side SDK (deprecated)"
-description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation.    "
+description: "After you register your app and onboard your cross-device experiences, integrate your client app with the client-side SDK for Windows UWP apps (deprecated)."
 ms.localizationpriority: high
 ms.prod: "notifications"
 ---

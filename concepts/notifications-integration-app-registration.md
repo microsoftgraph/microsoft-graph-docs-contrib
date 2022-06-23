@@ -1,6 +1,6 @@
 ---
 title: "Manage app registration and API permission (deprecated)"
-description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation.     "
+description: "To integrate your application service with notifications, register your app with the Microsoft identity platform and declare the required API permissions (deprecated)."
 ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
