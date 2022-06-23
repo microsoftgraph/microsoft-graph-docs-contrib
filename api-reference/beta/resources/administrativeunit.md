@@ -35,8 +35,8 @@ This resource supports:
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
 |[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Get newly created, updated, or deleted **administrativeUnits** without having to perform a full read of the entire resource collection.|
-|[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user, group, or device).|
-|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user, group, and device) members.|
+|[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user or group).|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user and group) members.|
 |[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
 |[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
 |[Add a scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign an Azure AD role with administrative unit scope.|
@@ -62,7 +62,10 @@ This resource supports:
 |description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
 |displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
 |id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
-|visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set (value is `null`), the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
+| membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). |
+| membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. If not set, the default behavior is `Paused`. |
+| membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. If not set, the default behavior is `assigned`. |
+| visibility | String | Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, the default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -73,7 +76,7 @@ This resource supports:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -89,7 +92,10 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "visibility": "String"
+  "visibility": "String",
+  "membershipType": "String",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String"
 }
 
 ```

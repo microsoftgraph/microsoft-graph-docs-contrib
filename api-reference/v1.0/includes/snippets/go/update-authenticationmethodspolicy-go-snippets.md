@@ -28,10 +28,12 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets( []AuthenticationMet
 }
 requestBody.SetAuthenticationMethodConfigurations( []AuthenticationMethodConfiguration {
 	msgraphsdk.NewAuthenticationMethodConfiguration(),
+id := "Fido2"
+	SetId(&id)
+state := "disabled"
+	SetState(&state)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-		"id": "Fido2",
-		"state": "disabled",
 		"isSelfServiceRegistrationAllowed": false,
 		"isAttestationEnforced": false,
 	}

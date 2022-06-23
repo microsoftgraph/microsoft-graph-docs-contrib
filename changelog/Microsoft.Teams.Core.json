@@ -5129,6 +5129,32 @@
       "CreatedDateTime": "2022-06-03T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messagePinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messagePinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messagePinnedEventMessageDetail"
+        },
+        {
+          "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageUnpinnedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageUnpinnedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "messageUnpinnedEventMessageDetail"
+        }
+      ],
+      "Id": "2a440a33-2393-43a7-b47e-db1d3acd7585",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-15T00:54:29.7304356Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

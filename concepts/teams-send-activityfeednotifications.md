@@ -104,7 +104,7 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 - [Send notification to user in a team](/graph/api/team-sendactivitynotification)
 - [Send notification to user](/graph/api/userteamwork-sendactivitynotification)
 
-Additionally, notifications can be sent in bulk to up 100 users at a time:
+Additionally, notifications can be sent in bulk up to 100 users at a time:
 
 * [Send notifications to multiple users in bulk](/graph/api/teamwork-sendactivitynotificationtorecipients)
 

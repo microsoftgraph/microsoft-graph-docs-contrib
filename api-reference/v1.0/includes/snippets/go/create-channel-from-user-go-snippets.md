@@ -16,12 +16,12 @@ description := "This is my first private channels"
 requestBody.SetDescription(&description)
 requestBody.SetMembers( []ConversationMember {
 	msgraphsdk.NewConversationMember(),
+	SetRoles( []String {
+		"owner",
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.aadUserConversationMember",
 		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')",
-		"roles":  []String {
-			"owner",
-		}
 	}
 }
 requestBody.SetAdditionalData(map[string]interface{}{

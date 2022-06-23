@@ -16,6 +16,8 @@ JSON batching allows you to optimize your application by combining multiple requ
 
 Combining these three individual requests into a single batch request can save the application significant network latency.
 
+Microsoft Graph implements the `$batch` OData URL path segment to support JSON batching.
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
 ## First JSON batch request
@@ -202,7 +204,7 @@ JSON batch requests are currently limited to 20 individual requests, in addition
 
 * Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 * Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
-* Batches targeting Outlook resources (such as mail abd calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
+* Batches targeting Outlook resources (such as mail and calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
 
 For more information, see [Throttling and batching][throttling-and-batching].
 

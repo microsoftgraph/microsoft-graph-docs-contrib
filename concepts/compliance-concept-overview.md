@@ -1,6 +1,6 @@
 ---
 title: "Overview of compliance and privacy APIs in Microsoft Graph"
-description: "The Microsoft Graph APIs for Compliance provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations."
+description: "Use the Microsoft Graph compliance and privacy APIs to automate repetitive tasks and integrate with your compliance tools to meet required industry regulations."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -46,9 +46,10 @@ The Microsoft Graph APIs for subject rights request provide functionality for or
 ## API reference
 
 Looking for the API reference for these services?
-- [Use the Microsoft Graph eDiscovery API](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta
-- [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview) in Microsoft Graph v1.0
-- [Use the Microsoft Graph subject rights request API](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true) in Microsoft Graph beta
+
+- [Microsoft Graph eDiscovery API beta](/graph/api/resources/ediscovery-ediscoveryapioverview?view=graph-rest-beta&preserve-view=true)
+- [Microsoft Graph subject rights request API v1.0](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview)
+- [Microsoft Graph subject rights request API beta](/graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 

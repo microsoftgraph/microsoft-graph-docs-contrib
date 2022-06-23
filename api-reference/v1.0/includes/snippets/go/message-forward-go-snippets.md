@@ -12,8 +12,12 @@ comment := "comment-value"
 requestBody.SetComment(&comment)
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+name := "name-value"
+	emailAddress.SetName(&name)
+address := "address-value"
+	emailAddress.SetAddress(&address)
 }
 messageId := "message-id"
 graphClient.Me().MessagesById(&messageId).Forward(message-id).Post(requestBody)

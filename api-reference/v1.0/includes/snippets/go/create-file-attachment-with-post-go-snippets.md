@@ -18,9 +18,10 @@ content := "Which quarter does that file cover? See my attachment."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "Another file as attachment"
+	SetName(&name)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"name": "Another file as attachment",
 		"contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu",
 	}
 }
