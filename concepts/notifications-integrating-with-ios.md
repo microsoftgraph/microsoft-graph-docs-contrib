@@ -1,6 +1,6 @@
 ---
 title: "Integrate your iOS app with the client-side SDK (deprecated)"
-description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
+description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation.   "
 ms.localizationpriority: high
 ms.prod: "notifications"
 ---

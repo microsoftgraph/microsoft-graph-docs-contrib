@@ -1,6 +1,6 @@
 ---
 title: "Onboard to cross-device experiences for notifications (deprecated)"
-description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation."
+description: "The Microsoft Graph notifications API stopped returning data in January 2022. For an alternative experience, see the Azure Notification Hubs documentation.      "
 ms.localizationpriority: high
 ms.prod: "notifications"
 author: "merzink"
