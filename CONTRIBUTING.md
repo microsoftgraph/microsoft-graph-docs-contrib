@@ -160,7 +160,7 @@ The following section shows the structure of a complete example. Line numbers ar
 ## More resources
 
 - For more information about Markdown, go to [their site][Markdown Home].
-- For more information about using Git and GitHub, first check out the [GitHub Help section] [GitHub Help] and if necessary contact the site administrators.
+- For more information about using Git and GitHub, first check out the [GitHub Help] and if necessary contact the site administrators.
 
 [GitHub Home]: https://github.com
 [GitHub Help]: https://help.github.com/
