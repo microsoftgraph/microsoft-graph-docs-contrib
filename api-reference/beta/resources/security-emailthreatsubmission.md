@@ -30,7 +30,7 @@ Inherits from [threatSubmission](../resources/security-threatsubmission.md). Bas
 |:-----------------------------|:-----------------------------|:-------------------------------------------------------------------------------------------------------|
 | attackSimulationInfo         | [security.attackSimulationInfo](../resources/security-attacksimulationinfo.md) | If the email is phishing simulation, this field will not be null.|
 | internetMessageId            | String                       | It is used to specify the internet message id of the email which is being submitted. This information is present in the email header.                                                       |
-| originalCategory             | submissionCategory           | The original category of the submission. The possible values are: `notJunk`, `spam`, `phishing` and `malware`. |
+| originalCategory             | submissionCategory           | The original category of the submission. The possible values are: `notJunk`, `spam`, `phishing`, `malware` and `unkownFutureValue`. |
 | receivedDateTime             | DateTimeOffset               | It is used to specify the date timestamp of when the email was received?                                                        | 
 | recipientEmailAddress        | String                       | It is used to specify the email address (in smtp format) of the recipient who received the email which is being submitted?                                                              |
 | sender                       | String                       | It is used to specify the email address of the sender.                                                                    | 
