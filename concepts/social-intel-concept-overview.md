@@ -40,7 +40,7 @@ All people search investments are available via _/search_ with _/people_ now in 
 1. All future investments in people search will be made available via _/search_ example, Natural language search like "John the accountant in Nairobi"
 2. Attribute search, matching on additional attributes other than name and email
 3. Better relevance, results from _/search_ give better results due to use of AI, better data models and sophisticated spell correction. 
-4. *lower COGS* when using _/search_, but specifically lower latency.  
+4. **Lower COGs** when using _/search_, but specifically lower latency.  
 
 
 There are 3 main types of application of this _relevance_ data.
