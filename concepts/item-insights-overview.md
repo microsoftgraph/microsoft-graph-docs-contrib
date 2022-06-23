@@ -1,12 +1,13 @@
 ---
-title: "Overview of item insights in Microsoft Graph"
-description: "The overview of item insights functionality and customization on the user level"
+title: "Item insights in Microsoft Graph"
+description: "Learn about item insights, user-centric recommendations for you and those you work with, based on your collaborative work in Microsoft 365."
 author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
 ms.custom: scenarios:getting-started
 ---
-# Overview of item insights
+# Item insights overview
+
 Item insights are user-centric recommendations for you and those you work with, based on your collaborative work in Microsoft 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
@@ -66,6 +67,7 @@ After disabling item insights, the following happens:
 * For a user who has disabled item insights, querying the [trending](/graph/api/resources/insights-trending) and [used](/graph/api/resources/insights-used) resources in Microsoft Graph API returns `HTTP 403 Forbidden`.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Insights API in Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)

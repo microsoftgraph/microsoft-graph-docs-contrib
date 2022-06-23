@@ -121,7 +121,7 @@ The following is an example of the payload of a notification with resource data 
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get?view=graph-rest-beta&preserve-view=true) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) and [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) follow their respective schemas. 
+The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact) and [event](/graph/api/resources/event) follow their respective schemas. 
 
 ```json
 {
