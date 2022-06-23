@@ -63,8 +63,6 @@ Here is a JSON representation of the resource.
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
   "correlationId": "Guid",
-  "homeTenantId": "Guid",
-  "homeTenantName": "String",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",
