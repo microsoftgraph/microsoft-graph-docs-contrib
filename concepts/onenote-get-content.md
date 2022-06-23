@@ -23,7 +23,7 @@ By using query string options, you can filter your queries and improve performan
 > - Backup/restore OneNote sections
 > - Backup/restore OneNote notebooks
 >
-> For backup and restore operations, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+> For backup and restore operations, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 <a name="request-uri"></a>
 
