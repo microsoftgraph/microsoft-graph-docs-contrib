@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+References that you would like to provision on-demand such as a member of a group.
 
 ## Properties
 |Property|Type|Description|
