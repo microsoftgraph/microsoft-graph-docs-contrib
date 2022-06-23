@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
+Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
