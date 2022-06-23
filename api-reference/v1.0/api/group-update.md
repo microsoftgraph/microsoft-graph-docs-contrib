@@ -64,9 +64,9 @@ The following table specifies the properties that can be updated.
 
 ### Manage extensions and associated data
 
-Use this API to manage the directory, schema, and open extensions and their data for groups, as follows:
+Use this API to manage the [directory, schema, and open extensions](/graph/extensibility-overview) and their data for groups, as follows:
 
-+ Add, update and store data in the extensions for an existing group
++ Add, update and store data in the extensions for an existing group.
 + For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
 
 ## Response

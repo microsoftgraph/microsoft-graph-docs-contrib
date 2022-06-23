@@ -56,8 +56,6 @@ The following table specifies the properties that can be updated.
 | securityEnabled         | Boolean | Specifies whether the group is a security group, including Microsoft 365 groups.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | String  | Specifies the visibility of a Microsoft 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).                                                                                                                                                                                                                                                                                                                                              |
 
-Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
-
 > [!IMPORTANT]
 >
 > - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
@@ -69,9 +67,9 @@ Because the **group** resource supports [extensions](/graph/extensibility-overvi
 
 ### Manage extensions and associated data
 
-Use this API to manage the directory, schema, and open extensions and their data for groups, as follows:
+Use this API to manage the [directory, schema, and open extensions](/graph/extensibility-overview) and their data for groups, as follows:
 
-+ Add, update and store data in the extensions for an existing group
++ Add, update and store data in the extensions for an existing group.
 + For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
 
 ## Response
