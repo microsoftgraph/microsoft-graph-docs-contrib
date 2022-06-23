@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "links",
           "ChangeType": "Addition",
-          "Description": "Added the **links** property to [synchronizationJobSubject](https://docs.microsoft.com/en-us/graph/api/resources/synchronizationJobSubject?view=graph-rest-beta) resource.",
+          "Description": "Added the **links** property to the [synchronizationJobSubject](https://docs.microsoft.com/en-us/graph/api/resources/synchronizationJobSubject?view=graph-rest-beta) resource.",
           "Target": "synchronizationJobSubject"
         },
         {
