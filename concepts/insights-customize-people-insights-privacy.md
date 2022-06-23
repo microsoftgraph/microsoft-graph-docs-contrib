@@ -21,7 +21,7 @@ An administrator with the _global administrator_ role can enable or disable peop
 
 ![People insights admin center privacy control](images/people-insights-admin-center.png)
 
-The toggle allows the administrator to disable/enable people insights for the whole tenant, but they can disable it only for a group of users following the same steps above and searching for the group. 
+The toggle allows the administrator to disable/enable people insights for the whole tenant, but they can disable it only for a group of users following the same steps above and searching for the group. Hit **Save** after selecting the group. 
 
 ![People insights admin center privacy control for a group](images/people-insights-admin-center-groupcontrol.png)
 
