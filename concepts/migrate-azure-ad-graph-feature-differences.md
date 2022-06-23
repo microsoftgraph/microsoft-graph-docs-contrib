@@ -24,7 +24,7 @@ If your app uses Azure AD Graph directory extensions, you can continue to use th
 
 - Manage directory extension definitions using the [extensionProperty](/graph/api/resources/extensionproperty) resource and associated methods.
 - Get available extension properties using the [getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) action.
-- Read extension values using GET and for users, only with a `$select` query
+- Read extension values using GET and for users, only with a `$select` query via the `v1.0` endpoint
 - Search on extension values using GET and `$filter`
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)

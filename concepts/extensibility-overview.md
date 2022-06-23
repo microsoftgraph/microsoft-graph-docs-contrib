@@ -27,8 +27,8 @@ Microsoft Graph offers four types of extensions for adding custom properties.
 
 1. Extension attributes properties
 2. Directory (Azure AD) extensions
-3. Microsoft Graph schema extensions
-4. Microsoft Graph open extensions
+3. Schema extensions
+4. Open extensions
 
 ### 1. Extension attributes properties
 
@@ -137,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extension_b7d8
 }
 ```
 
-### 3. Microsoft Graph schema extensions
+### 3. Schema extensions
 
 [Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
@@ -223,7 +223,7 @@ GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5?
 
 For more information about how to use schema extensions to add custom properties and associated data, see [schemaExtension resource type](/graph/api/resources/schemextension) and [Add custom properties to groups using schema extensions](extensibility-schema-groups.md).
 
-### 4. Microsoft Graph open extensions
+### 4. Open extensions
 
 [Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
 

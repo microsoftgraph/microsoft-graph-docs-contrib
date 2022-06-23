@@ -211,7 +211,7 @@ This resource supports:
 |userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)         |
 
 > [!TIP]
-> Directory and schema extensions and their associated data are returned only on `$select`; Open extensions and their associated data is returned only on `$expand`.
+> Directory and schema extensions and their associated data are returned only on `$select`; Open extensions and their associated data are returned only on `$expand`.
 
 ### mail and proxyAddresses properties
 **mail** and **proxyAddresses** are both email-related properties. **proxyAddresses** is a collection of addresses only relevant for Microsoft Exchange server. It's used to store a list of mail addresses for a user that are tied to a single mailbox. **mail** property is used as the user's email address for various purposes including user sign in and defines the primary proxy address.
