@@ -41,7 +41,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "federatedIdentityCredential",
           "ChangeType": "Addition",
-          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource",
+          "Description": "Added the [federatedIdentityCredential](https://docs.microsoft.com/en-us/graph/api/resources/federatedIdentityCredential?view=graph-rest-1.0) resource and associated methods. A federated identity credential is a secure method for managing an application's credentials that allows a tenant's cloud applications to access Azure AD without using secrets and certificates.",
           "Target": "federatedIdentityCredential"
         },
         {
