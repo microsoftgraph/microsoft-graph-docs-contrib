@@ -18,7 +18,7 @@ Represents the tenant allow-or-block list action. When admin creates email threa
 ## Properties
 | Property           | Type                                        | Description                                                                      |
 |:-------------------|:--------------------------------------------|:---------------------------------------------------------------------------------|
-| action             | tenantAllowBlockListAction                  | Specifies whether the tenant allow block list is an allow or block. The possible values are: `allow` and `block`.|
+| action             | tenantAllowBlockListAction                  | Specifies whether the tenant allow block list is an allow or block. The possible values are: `allow`, `block` and `unkownFutureValue`.|
 | expirationDateTime | DateTimeOffset                              | Specifies when the tenant allow-block-list expires in date time.  |
 | note               | String                                      | Specifies the note added to the tenant allow block list entry in the format of string. |
 | results            | Collection([security.tenantAllowBlockListEntryResult](../resources/security-tenantallowblocklistentryresult.md)) | It contains the result of the submission which lead to the tenant allow-block-list entry creation. |
