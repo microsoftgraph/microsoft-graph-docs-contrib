@@ -22,7 +22,7 @@ Represents the result of a review after the threat submission is processed by Mi
 | detail             | [submissionResultDetail](../resources/security-submissionresultdetail.md)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails|
 | detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
-| userMailboxSetting | userMailboxSetting                | Specifies the setting for user mailbox denoted by a comma separated string. |
+| userMailboxSetting | [userMailboxSetting](../resources/security-usermailboxsetting.md) | Specifies the setting for user mailbox denoted by a comma separated string. |
 
 ## Relationships
 None.
