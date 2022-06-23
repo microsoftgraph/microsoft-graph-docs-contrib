@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
-in a new or existing instance of a supported resource.
+Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties in a new or existing instance of a resource. You can [create an open extension](/graph/api/opentypeextension-post-opentypeextension) in a resource instance and store custom data to it all in the same operation, except for specific resources. See [known limitations of open extensions](/graph/known-issues#extensions) for more information.
 
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
@@ -41,6 +40,8 @@ Depending on the resource you're creating the extension in and the permission ty
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 | [baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [baseTaskList](../resources/basetasklist.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 

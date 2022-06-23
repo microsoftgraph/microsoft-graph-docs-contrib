@@ -847,21 +847,6 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Directory extensions
-          items:
-          - name: Extension property
-            href: resources/extensionproperty.md
-            items:
-            - name: List
-              href: api/application-list-extensionproperty.md
-            - name: Create
-              href: api/application-post-extensionproperty.md
-            - name: Get
-              href: api/extensionproperty-get.md
-            - name: Delete
-              href: api/extensionproperty-delete.md
-            - name: Get available extension properties
-              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
@@ -4504,6 +4489,22 @@ items:
           href: api/educationoutcome-update.md
     - name: Extensions
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?context=graph/api/1.0
+      - name: Directory extensions
+        displayname: Groups, Users, Applications, Organization, Devices
+        href: resources/extensionproperty.md
+        items:
+        - name: List
+          href: api/application-list-extensionproperty.md
+        - name: Create
+          href: api/application-post-extensionproperty.md
+        - name: Get
+          href: api/extensionproperty-get.md
+        - name: Delete
+          href: api/extensionproperty-delete.md
+        - name: Get available extension properties
+          href: api/directoryobject-getavailableextensionproperties.md
       - name: Open extensions
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users

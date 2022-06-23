@@ -31,7 +31,7 @@ For more information about Microsoft Graph extensibility, see [Add custom proper
 Inherits from [directoryObject](directoryobject.md).
 
 > [!NOTE]
-> Extensions created through Azure AD Graph (deprecated) and custom data sync from on-premises Active Directory using Azure AD Connect Sync are synced as directory extensions in Microsoft Graph.
+> Extensions created through Azure AD Graph (deprecated) and custom data synchronized from on-premises Active Directory using Azure AD Connect Sync are represented as directory extensions in Microsoft Graph.
 
 ## Methods
 

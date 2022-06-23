@@ -43,7 +43,7 @@ Certain properties cannot be returned within a user collection. The following pr
 
 The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
 
-### Retrieving extensions and custom data
+### Retrieve extensions and associated data
 
 | Extension type                     | Comments                                                                  |
 |------------------------------------|---------------------------------------------------------------------------|

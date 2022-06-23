@@ -23,7 +23,6 @@ Depending on the resource you're creating the extension in and the permission ty
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
@@ -35,6 +34,8 @@ Depending on the resource you're creating the extension in and the permission ty
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## HTTP request
 

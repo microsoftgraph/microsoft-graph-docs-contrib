@@ -36,9 +36,9 @@ For more information about Microsoft Graph extensibility including limits for sc
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Create](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) |Create a schema extension definition.|
-|[List](../api/schemaextension-list.md) | [schemaExtension](schemaextension.md |List the available schemaExtension definitions and their properties.|
-|[Get](../api/schemaextension-get.md) | [schemaExtension](schemaextension.md |Read the properties of a specific schemaExtension definition.|
-|[Update](../api/schemaextension-update.md) | [schemaExtension](schemaextension.md	|Update a schemaExtension definition. |
+|[List](../api/schemaextension-list.md) | [schemaExtension](schemaextension.md) |List the available schemaExtension definitions and their properties.|
+|[Get](../api/schemaextension-get.md) | [schemaExtension](schemaextension.md) |Read the properties of a specific schemaExtension definition.|
+|[Update](../api/schemaextension-update.md) | [schemaExtension](schemaextension.md)	|Update a schemaExtension definition. |
 |[Delete](../api/schemaextension-delete.md) | None |Delete a schemaExtension definition. |
 
 ## Properties
@@ -59,8 +59,8 @@ The owner app can move the extension through different states of a lifecycle, us
 
 |State |Lifecycle state behavior |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (as long as the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
-| Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
+| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>For an owner app that's multi-tenant, only the instance of the owner app that's in a different directory from the home directory can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
+| Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (if the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
 | Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 
 > **Note:** Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 

@@ -65,7 +65,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 |Property Type Description |
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|StringA fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|id|String|A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
 
 ## Relationships
 

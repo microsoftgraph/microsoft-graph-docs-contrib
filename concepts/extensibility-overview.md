@@ -156,12 +156,7 @@ The **id** will be the name of the complex type that will store your data on the
 
 Once a schema extension is registered, it's available to be used by all applications in the same tenant as the associated owner application (when in the `InDevelopment` state) or by all applications in any tenant (when in the `Available` state). Like directory extensions, authorized apps have the ability to read and write data on any extensions defined on the target object.
 
-Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. Because schema extensions are accessible as complex types in instances of the targeted resources, you can perform CRUD operations on the data in the following ways:
-
-- Use the resource `POST` method to add data to the custom property when creating a new resource instance. There's a [known issue](known-issues.md#unable-to-create-a-resource-instance-and-add-schema-extension-data-at-the-same-time) on the **contact**, **event**, **message**, and **post** resources that require creating a schema extension using a `PATCH` operation.
-- Use the resource `GET` method with a `$select` query parameter to read the custom properties and associated data.
-- Use the resource `PATCH` method to add or update data in custom properties in an existing resource instance.
-- Use the resource `PATCH` method to set the complex type to `null`, which deletes the data in the custom property of the resource instance.
+Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
 
 The following example shows a schema extension definition.
 
@@ -273,17 +268,17 @@ For more information about how to use open extensions to add custom properties a
 
 The table below contrasts and compares the extension types, which should help you decide which option is most appropriate for your scenario.
 
-| Capability | Directory extensions | Schema extensions | Open extensions | Extension attributes 1-15 |
-|:-|:-|:-|:-|:-|
-| Supported resource types | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [application][] <br/> [device][] <br/> [organization][] <br/> [servicePrincipal][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (for both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][] <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/>[device][] |
-| Strongly typed | Yes | Yes | No | No |
-| Filterable | Yes | Yes | No | Yes |
-| Managed via | Microsoft Graph | Microsoft Graph | Microsoft Graph | Microsoft Graph <br/> Exchange admin center |
-| Sync data from on-premises using [AD connect][] | [Yes][ADConnect-YES] | No | No | Yes for Users |
-| Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | No | No | [Yes][DynamicMembership-YES] |
-| Usable for customizing token claims | [Yes][DirectoryExt-CustomClaims] | No | No | Yes |
-| Available in Azure AD B2C | [Yes][B2CDirectoryExt] | Yes | Yes | Yes |
-| Limits | <li>100 extension values across *all* types and *all* applications per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance| <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> | <li>15 predefined attributes per user or device resource instance |
+| Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
+|--|--|--|--|--|
+| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] |
+| Strongly-typed | No | Yes | Yes | No |
+| Filterable | Yes | Yes | Yes | No |
+| Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
+| Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
+| Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
+| Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
+| Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
+| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
 
 
 > [!NOTE]
@@ -294,11 +289,11 @@ The table below contrasts and compares the extension types, which should help yo
 >
 > <sup>3</sup> Each [open extension](/graph/api/resources/opentypeextension) is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
 >
-> You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
+> You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
 
 ## Permissions
 
-The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to update the signed-in user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
+The same [permissions](./permissions-reference.md) that are required to read from or write to a specific resource are also required to read from or write to any extensions data on that resource. For example, for an app to update any user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* permission.
 
 ## Known limitations
 

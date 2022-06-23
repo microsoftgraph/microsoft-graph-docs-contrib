@@ -643,8 +643,8 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
+            displayName: directory extensions, schema extensions, open extensions, extension attributes
             href: extensibility-overview.md
-            displayName: add custom data, extensions, resources using extensions
           - name: Use Graph Explorer
             items:
             - name: Get started

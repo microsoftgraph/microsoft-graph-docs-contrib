@@ -51,6 +51,14 @@ The `$search` query parameter supports tokenization only on the **displayName** 
 
 For more information on OData query options, see [OData query parameters](/graph/query-parameters). For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
+### Retrieve extensions and associated data
+
+| Extension type       | Comments                      |
+|----------------------|-------------------------------|
+| Schema extensions    | Returned only with `$select`. |
+| Open extensions      | Returned only with `$expand`. |
+| Directory extensions | Returned by default.          |
+
 ## Request headers
 
 | Name             | Description                                                                                                                                                                                                                                                                     |
