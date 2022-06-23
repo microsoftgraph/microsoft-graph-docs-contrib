@@ -1,6 +1,6 @@
 ---
 title: "deletedTeam: getAllMessages"
-description: "Retrieve all messages across channels in a deleted team."
+description: "Retrieve all messages across all channels in a deleted team."
 author: agnesliu
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -12,21 +12,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [deleted team](../resources/deletedteam.md), including text, audio, and video conversations.
+Retrieve all [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [deleted team](../resources/deletedteam.md), including text, audio, and video conversations.
 
-To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
+To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|ChannelMessage.Read.All|
 
 > [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> Before you call this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -47,16 +47,15 @@ GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages
 
 You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.  
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ```http
 GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=A
 GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=B
 ```
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used. 
 
-You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
-Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) are not currently supported.
+If the `model` parameter is not specified, the [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+This method supports the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response and the [$filter](/graph/query-parameters#filter-parameter) query parameter with the **dateTime** range query on **lastModifiedDateTime**. Other [OData query parameters](/graph/query-parameters) are currently not supported.
 
 ## Request body
 Do not supply a request body for this method.
@@ -80,12 +79,13 @@ GET https://graph.microsoft.com/beta/teamwork/deletedTeams({deletedTeamId})/chan
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.chatMessage)"
+  "@odata.type": "microsoft.graph.chatMessage",
+  "isCollection": true
 }
 -->
 ``` http
@@ -138,6 +138,5 @@ HTTP/1.1 200 OK
         }
     ]
 }
-
 ```
 
