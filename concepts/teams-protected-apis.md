@@ -25,6 +25,7 @@ The following APIs are currently protected:
 * [Create subscription for new chat messages](/graph/api/subscription-post-subscriptions) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [List all hosted content](/graph/api/chatmessage-list-hostedcontents) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get hosted content](/graph/api/chatmessagehostedcontent-get) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Get messages in a deleted team](/graph/api/deletedteam-getallmessages) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 
 >[!NOTE]
 >[Send message](/graph/api/channel-post-messages) is not a protected API.

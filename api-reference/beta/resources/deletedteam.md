@@ -1,6 +1,6 @@
 ---
 title: "deletedTeam resource type"
-description: "A deleted team in Microsoft Teams is a collection of channels."
+description: "Represents a deleted team in Microsoft Teams."
 author: agnesliu
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A deleted team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a deleted team.
+Represents a deleted [team](../resources/team.md) in Microsoft Teams.
 
 Every deleted team is associated with a [Microsoft 365 group](../resources/group.md). For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 

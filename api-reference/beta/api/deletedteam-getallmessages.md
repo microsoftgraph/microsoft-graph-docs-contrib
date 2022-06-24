@@ -16,6 +16,8 @@ Retrieve [messages](../resources/chatmessage.md) across all [channels](../resour
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
+[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,7 +77,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teamwork/deletedTeams({deletedTeamId})/channels/getAllMessages
+GET https://graph.microsoft.com/beta/teamwork/deletedTeams('124e15a2-9b35-47dd-a356-95544771a7d3')/channels/getAllMessages
 ```
 
 
