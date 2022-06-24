@@ -20,7 +20,7 @@ Each decision in an access review represents a principal's access to a resource.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|membershipType|microsoft.graph.decisionItemPrincipalResourceMembershipType|Type of membership. Types include: direct and indirect.|
+|membershipType| decisionItemPrincipalResourceMembershipType | Type of membership that the principal has to the resource. Multi-valued. The possible values are: `direct`, `indirect`, `unknownFutureValue`.|
 
 ## Relationships
 None.
