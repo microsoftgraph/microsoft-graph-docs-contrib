@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get settings of the report in Graph API.
+Update settings of the report in Graph API.
 
 ## Permissions
 
@@ -61,7 +61,7 @@ The following is an example that update adminReportSettings
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "adminReportSettings-get"
+  "name": "adminReportSettings-update"
 }-->
 
 ```msgraph-interactive
@@ -92,16 +92,9 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
+  "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
