@@ -1,15 +1,15 @@
 ---
-title: "Use the people API to get information about relevant people"
-description: "Use the people API in Microsoft Graph to retrieve people most relevant to a user based on the user’s communication and collaboration patterns and business relationships."
+title: "Use the people API to get information about people relevant to you"
+description: "Use the people API in Microsoft Graph to browse or search for the people most relevant to a user based on the user’s communication and collaboration patterns."
 ms.date: 4/9/2019
 author: "anthona"
 ms.localizationpriority: high
 ms.prod: "insights"
 ---
 
-# Use the people API in Microsoft Graph to get information about the people most relevant to you
+# Use the people API to get information about the people most relevant to you
 
-Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications. 
+Microsoft Graph applications can use the people API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts or from an organization’s directory, and people from recent communications.
 
 Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 

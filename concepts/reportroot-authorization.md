@@ -1,6 +1,6 @@
 ---
 title: "Authorization for APIs to read Microsoft 365 usage reports"
-description: "Reports data accessible via the Microsoft Graph reports API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
+description: "Microsoft 365 usage reports are protected by both permissions and Azure Active Directory (Azure AD) roles. Learn how to assign a role to a user."
 author: "kszb"
 ms.localizationpriority: high
 ms.prod: "reports"
@@ -8,7 +8,7 @@ ms.prod: "reports"
 
 # Authorization for APIs to read Microsoft 365 usage reports
 
-Report data accessible via the Microsoft Graph reports API is sensitive. In particular, Microsoft 365 usage reports are protected by both permissions and Azure Active Directory (Azure AD) roles. The information in this article applies to the reports API that reads Microsoft 365 usage reports.
+Reports data that is accessible via the Microsoft Graph reports API is sensitive. In particular, Microsoft 365 usage reports are protected by both permissions and Azure Active Directory (Azure AD) roles. The information in this article applies to the reports API that reads Microsoft 365 usage reports.
 
 The APIs to read Microsoft 365 usage reports support two types of authorization:
 

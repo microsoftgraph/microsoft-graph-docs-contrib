@@ -1,6 +1,6 @@
 ---
 title: "Item insights in Microsoft Graph"
-description: "Learn about item insights, user-centric recommendations for you and those you work with, based on your collaborative work in Microsoft 365."
+description: "Learn about item insights, user-centric recommendations for you and those you work with, based on your collaborative file-based experiences in Microsoft 365."
 author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
@@ -33,7 +33,7 @@ You can discover potentially useful content that you can access but may not have
 
 ### Recent files in card-based interfaces 
 In card-based interfaces such as Delve, the persona card in Microsoft 365 apps, and the people card in Bing work results, item insights bring forward OneDrive, SharePoint, or Outlook files that you have modified recently or shared with the person looking at your profile, which has access to that content. Such personalized insights help your colleagues save time searching for the right person or information.  
-![item insights power recent files in card-based inrefaces](images/Recent-files-in-card-based-interfaces.PNG)
+![item insights power recent files in card-based interfaces](images/Recent-files-in-card-based-interfaces.PNG)
 
 ## Microsoft runs on trust
 Microsoft uses only your activities in a shared working space (activities such as sharing, modifying, commenting actions) within your organization to calculate recommendations for others. That means, if you simply glanced at or clicked on a shared document without changing or commenting on it, your colleagues will not see the document as a recommendation because you browsed the document. 

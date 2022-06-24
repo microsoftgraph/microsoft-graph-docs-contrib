@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph reports API overview"
-description: "The reports API in Microsoft Graph enables understanding of application and tenant resource activity."
+description: "Use the reports API to incorporate Microsoft 365 usage data into your organization's reporting solution so that all IT service reports are in a unified location."
 ms.localizationpriority: high
 ms.prod: "reports"
 author: "sarahwxy"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph reports API overview
 
-The reports API in Microsoft Graph enables you to understand application and resource activity in your Azure Active Directory tenant.
+The reports API in Microsoft Graph enables you to understand application and resource activity in your Azure Active Directory (Azure AD) tenant.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/P6HneRXYdx8]
 
@@ -36,11 +36,11 @@ The authentication methods usage reports help you understand how users in your o
 
 Gain a better understanding of how your users access and use Azure AD services. You can analyze the data to create custom solutions tailored to your organization's specific needs.
 
-## What data can I access by using the reports APIs?
+## What data can I access by using the reports API?
 
-You can use the reports APIs to access the data sets listed in the following table.
+You can use the reports API to access the data sets listed in the following table.
 
-| Reports APIs | Data set |
+| Reports API | Data set |
 |:------------ |:-------- |
 | Activity | [Directory audit](/graph/api/resources/directoryaudit)<br/>[Sign-in](/graph/api/resources/signin)<br/>[Provisioning](/graph/api/resources/provisioningobjectsummary) |
 | AD FS applications | [Relying part detailed summary (preview)](/graph/api/resources/relyingpartydetailedsummary) |

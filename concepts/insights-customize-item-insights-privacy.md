@@ -1,6 +1,6 @@
 ---
 title: "Customize item insights privacy in Microsoft Graph (preview)"
-description: "Learn how to configure the visibility of insights derived from Microsoft Graph by using the Microsoft admin center, PowerShell, and the REST API."
+description: "Configure the visibility of insights derived from Microsoft Graph by using the Microsoft admin center, PowerShell, or the REST API userInsightsSettings resource."
 author: "simonhult"
 ms.localizationpriority: high
 ms.prod: "insights"
@@ -20,7 +20,7 @@ These item insights reflect only content to which users have access. No user get
 
 ## Item insights privacy
 
-Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
+Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
 
 This article describes customizing item insights privacy in an organization. To customize item insights for a user, see the [userInsightsSettings](/graph/api/resources/userinsightssettings?view=graph-rest-beta&preserve-view=true) resource. These user-centric settings are exposed through a navigation property named **itemInsights** in the [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) resource.
 
@@ -34,7 +34,7 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 Item insights settings provide flexibility for administrators to use Azure AD tools. Administrators can disable item insights for an entire organization, or for only members of a specified Azure AD group. They can configure item insights in the Microsoft 365 admin center, or by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required.
 
-The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights using the REST API](#configure-item-insights-using-the-rest-api). Then refer to the [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights settings using the REST API](#configure-item-insights-settings-using-the-rest-api). Then refer to the [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### Configure item insights settings via Microsoft admin center
 
@@ -85,7 +85,7 @@ Alternatively, you can change the default and disable item insights for a specif
    Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -DisabledForGroup $GroupId
 ```
 
-### Configure item insights using the REST API
+### Configure item insights settings using the REST API
 
 As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
 
