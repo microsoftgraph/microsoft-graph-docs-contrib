@@ -31,17 +31,17 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "./owners",
-		"queryType": "MicrosoftGraph",
-	}
+query := "./owners"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 settings := msgraphsdk.NewAccessReviewScheduleSettings()
 requestBody.SetSettings(settings)
@@ -77,10 +77,7 @@ defaultDecision := "Deny"
 settings.SetDefaultDecision(&defaultDecision)
 autoApplyDecisionsEnabled := true
 settings.SetAutoApplyDecisionsEnabled(&autoApplyDecisionsEnabled)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

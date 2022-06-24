@@ -30,16 +30,16 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getCredentialUsageSummary
+GET /reports/getCredentialUsageSummary(period='{periodValue}')
 ```
 
 ## Function parameters
 
-You can use the following function parameter to adjust the response.
+You must use the following function parameter to request a timeframe for the response.
 
 | Parameter | Type | Description |
 |:--------- |:---- |:----------- |
-| period | String | Specifies the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
+| period | String | Required. Specifies the time period in days for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
 
 ## Optional query parameters
 

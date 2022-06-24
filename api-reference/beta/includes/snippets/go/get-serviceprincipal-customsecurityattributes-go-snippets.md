@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ServicePrincipalRequestBuilderGetQueryParameters{
 	Select: "customSecurityAttributes",
 }
-options := &msgraphsdk.ServicePrincipalRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ServicePrincipalRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Get(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

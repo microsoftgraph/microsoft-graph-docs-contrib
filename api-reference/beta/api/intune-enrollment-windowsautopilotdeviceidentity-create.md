@@ -73,6 +73,8 @@ The following table shows the properties that are required when you create the w
 |deviceAccountUpn|String|Surface Hub Device Account Upn|
 |deviceAccountPassword|String|Surface Hub Device Account Password|
 |deviceFriendlyName|String|Surface Hub Device Friendly Name|
+|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Device Remediation State. Possible values are: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
+|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
 
 
 
@@ -86,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1244
+Content-length: 1371
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -112,7 +114,9 @@ Content-length: 1244
   "displayName": "Display Name value",
   "deviceAccountUpn": "Device Account Upn value",
   "deviceAccountPassword": "Device Account Password value",
-  "deviceFriendlyName": "Device Friendly Name value"
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
 
@@ -121,7 +125,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1293
+Content-Length: 1420
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -148,7 +152,9 @@ Content-Length: 1293
   "displayName": "Display Name value",
   "deviceAccountUpn": "Device Account Upn value",
   "deviceAccountPassword": "Device Account Password value",
-  "deviceFriendlyName": "Device Friendly Name value"
+  "deviceFriendlyName": "Device Friendly Name value",
+  "remediationState": "noRemediationRequired",
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
 }
 ```
 

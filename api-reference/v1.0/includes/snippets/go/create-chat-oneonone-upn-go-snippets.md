@@ -12,26 +12,23 @@ chatType := "oneOnOne"
 requestBody.SetChatType(&chatType)
 requestBody.SetMembers( []ConversationMember {
 	msgraphsdk.NewConversationMember(),
+	SetRoles( []String {
+		"owner",
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"roles":  []String {
-			"owner",
-		}
 		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
 	}
 	msgraphsdk.NewConversationMember(),
+	SetRoles( []String {
+		"owner",
+	}
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"roles":  []String {
-			"owner",
-		}
 		"user@odata.bind": "https://graph.microsoft.com/v1.0/users('alex@contoso.com')",
 	}
 }
-options := &msgraphsdk.ChatsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Chats().Post(options)
+result, err := graphClient.Chats().Post(requestBody)
 
 
 ```

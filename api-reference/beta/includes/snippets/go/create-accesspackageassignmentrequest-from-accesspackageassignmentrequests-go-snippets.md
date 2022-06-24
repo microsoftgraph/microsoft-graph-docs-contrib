@@ -14,10 +14,7 @@ accessPackageAssignment := msgraphsdk.NewAccessPackageAssignment()
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 id := "a6bb6942-3ae1-4259-9908-0133aaee9377"
 accessPackageAssignment.SetId(&id)
-options := &msgraphsdk.AccessPackageAssignmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(requestBody)
 
 
 ```

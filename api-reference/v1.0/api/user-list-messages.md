@@ -89,7 +89,7 @@ If successful, this method returns a `200 OK` response code and collection of [M
 ## Examples
 ### Example 1: List all messages
 #### Request
-This example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response.
+The following shows an example that gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### Response
-Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
+The following is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
   "blockType": "response",

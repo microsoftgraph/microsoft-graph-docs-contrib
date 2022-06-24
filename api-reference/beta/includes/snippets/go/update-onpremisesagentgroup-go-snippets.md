@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOnPremisesAgentGroup()
 displayName := "Group New Name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Patch(options)
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Patch(requestBody)
 
 
 ```

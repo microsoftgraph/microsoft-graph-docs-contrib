@@ -16,10 +16,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"reviewers":  []Object {
 	}
 }
-options := &msgraphsdk.AdminConsentRequestPolicyRequestBuilderPutOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AdminConsentRequestPolicy().Put(options)
+graphClient.Policies().AdminConsentRequestPolicy().Put(requestBody)
 
 
 ```

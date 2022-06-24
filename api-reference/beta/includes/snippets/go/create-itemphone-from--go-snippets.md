@@ -12,10 +12,7 @@ displayName := "Car Phone"
 requestBody.SetDisplayName(&displayName)
 number := "+7 499 342 22 13"
 requestBody.SetNumber(&number)
-options := &msgraphsdk.PhonesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Phones().Post(options)
+result, err := graphClient.Me().Profile().Phones().Post(requestBody)
 
 
 ```

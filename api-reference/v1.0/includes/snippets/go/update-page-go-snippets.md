@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onenotePageId := "onenotePage-id"
-graphClient.Me().Onenote().PagesById(&onenotePageId).Content().Patch(nil)
+graphClient.Me().Onenote().PagesById(&onenotePageId).Content().Patch()
 
 
 ```

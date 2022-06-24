@@ -41,8 +41,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,8 +78,8 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 ---
 
-##### Response
-Here is an example of the response.
+### Response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

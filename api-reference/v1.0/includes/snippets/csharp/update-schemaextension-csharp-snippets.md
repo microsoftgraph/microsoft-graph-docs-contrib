@@ -6,36 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schemaExtension = new SchemaExtension
+var user = new User
 {
-	Owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
-	Properties = new List<ExtensionSchemaProperty>()
+	AdditionalData = new Dictionary<string, object>()
 	{
-		new ExtensionSchemaProperty
-		{
-			Name = "courseId",
-			Type = "Integer"
-		},
-		new ExtensionSchemaProperty
-		{
-			Name = "courseName",
-			Type = "String"
-		},
-		new ExtensionSchemaProperty
-		{
-			Name = "courseType",
-			Type = "String"
-		},
-		new ExtensionSchemaProperty
-		{
-			Name = "courseSupervisors",
-			Type = "String"
-		}
+		{"ext55gb1l09_msLearnCourses", "{\"courseType\":\"Admin\"}"}
 	}
 };
 
-await graphClient.SchemaExtensions["{schemaExtension-id}"]
+await graphClient.Users["{user-id}"]
 	.Request()
-	.UpdateAsync(schemaExtension);
+	.UpdateAsync(user);
 
 ```

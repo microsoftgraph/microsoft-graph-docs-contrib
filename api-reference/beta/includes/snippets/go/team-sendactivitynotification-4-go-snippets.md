@@ -24,16 +24,13 @@ content := "New deployment requires your approval"
 previewText.SetContent(&content)
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "deploymentId",
-		"value": "6788662",
-	}
-}
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
+name := "deploymentId"
+	SetName(&name)
+value := "6788662"
+	SetValue(&value)
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(options)
+graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(requestBody)
 
 
 ```

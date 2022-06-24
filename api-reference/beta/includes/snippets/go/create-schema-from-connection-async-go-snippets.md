@@ -13,11 +13,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"properties":  []Object {
 	}
 }
-options := &msgraphsdk.SchemaRequestBuilderPostOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
-graphClient.External().ConnectionsById(&externalConnectionId).Schema().Post(options)
+graphClient.External().ConnectionsById(&externalConnectionId).Schema().Post(requestBody)
 
 
 ```

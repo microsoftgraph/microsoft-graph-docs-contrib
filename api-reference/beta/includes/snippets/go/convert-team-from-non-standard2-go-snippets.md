@@ -14,15 +14,15 @@ description := "My Class Team’s Description"
 requestBody.SetDescription(&description)
 requestBody.SetChannels( []Channel {
 	msgraphsdk.NewChannel(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Class Announcements 📢",
-		"isFavoriteByDefault": true,
-	}
+displayName := "Class Announcements 📢"
+	SetDisplayName(&displayName)
+isFavoriteByDefault := true
+	SetIsFavoriteByDefault(&isFavoriteByDefault)
 	msgraphsdk.NewChannel(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Homework 🏋️",
-		"isFavoriteByDefault": true,
-	}
+displayName := "Homework 🏋️"
+	SetDisplayName(&displayName)
+isFavoriteByDefault := true
+	SetIsFavoriteByDefault(&isFavoriteByDefault)
 }
 memberSettings := msgraphsdk.NewTeamMemberSettings()
 requestBody.SetMemberSettings(memberSettings)
@@ -49,10 +49,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

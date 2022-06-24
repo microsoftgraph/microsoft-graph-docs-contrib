@@ -12,12 +12,9 @@ allowedAudiences := "me"
 requestBody.SetAllowedAudiences(&allowedAudiences)
 displayName := "Secret Hideout"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ItemAddressRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 itemAddressId := "itemAddress-id"
-graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(options)
+graphClient.UsersById(&userId).Profile().AddressesById(&itemAddressId).Patch(requestBody)
 
 
 ```

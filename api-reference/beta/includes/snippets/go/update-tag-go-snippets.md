@@ -10,12 +10,9 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTag()
 description := "This is an updated description."
 requestBody.SetDescription(&description)
-options := &msgraphsdk.TagRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 tagId := "tag-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).Patch(requestBody)
 
 
 ```

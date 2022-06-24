@@ -12,10 +12,7 @@ requestBody.SetMessageIds( []String {
 	"MC172851",
 	"MC167983",
 }
-options := &msgraphsdk.UnarchiveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(requestBody)
 
 
 ```

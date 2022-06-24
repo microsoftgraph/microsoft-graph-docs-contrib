@@ -16,11 +16,8 @@ tenantId := "2a690434-97d9-4eed-83a6-f5f13600199a"
 requestBody.SetTenantId(&tenantId)
 lastMessageReadDateTime, err := time.Parse(time.RFC3339, "2021-05-27T22:13:01.577Z")
 requestBody.SetLastMessageReadDateTime(&lastMessageReadDateTime)
-options := &msgraphsdk.MarkChatUnreadForUserRequestBuilderPostOptions{
-	Body: requestBody,
-}
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(options)
+graphClient.ChatsById(&chatId).MarkChatUnreadForUser(chat-id).Post(requestBody)
 
 
 ```

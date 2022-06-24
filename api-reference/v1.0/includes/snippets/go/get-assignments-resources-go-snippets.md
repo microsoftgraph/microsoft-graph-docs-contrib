@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AssignmentsRequestBuilderGetQueryParameters{
 	Expand: "resources",
 }
-options := &msgraphsdk.AssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

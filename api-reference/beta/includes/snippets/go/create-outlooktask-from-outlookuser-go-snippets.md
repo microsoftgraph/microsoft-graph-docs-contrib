@@ -25,11 +25,10 @@ dueDateTime.SetTimeZone(&timeZone)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.TasksRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.TasksRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.Me().Outlook().Tasks().Post(options)
+result, err := graphClient.Me().Outlook().Tasks().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

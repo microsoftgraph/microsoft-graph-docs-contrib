@@ -14,11 +14,8 @@ roleMemberInfo := msgraphsdk.NewIdentity()
 requestBody.SetRoleMemberInfo(roleMemberInfo)
 id := "id-value"
 roleMemberInfo.SetId(&id)
-options := &msgraphsdk.ScopedRoleMembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 administrativeUnitId := "administrativeUnit-id"
-result, err := graphClient.AdministrativeUnitsById(&administrativeUnitId).ScopedRoleMembers().Post(options)
+result, err := graphClient.AdministrativeUnitsById(&administrativeUnitId).ScopedRoleMembers().Post(requestBody)
 
 
 ```

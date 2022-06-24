@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetQueryParameters{
 	Expand: "userAttribute",
 }
-options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
-result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().Get(options)
+result, err := graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).UserAttributeAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

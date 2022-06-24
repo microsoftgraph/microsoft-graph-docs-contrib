@@ -14,11 +14,8 @@ forceChangePasswordNextSignIn := false
 passwordProfile.SetForceChangePasswordNextSignIn(&forceChangePasswordNextSignIn)
 password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password)
-options := &msgraphsdk.UserRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Patch(options)
+graphClient.UsersById(&userId).Patch(requestBody)
 
 
 ```

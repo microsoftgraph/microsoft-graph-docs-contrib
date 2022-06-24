@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewSynchronizationJob()
 templateId := "BoxOutDelta"
 requestBody.SetTemplateId(&templateId)
-options := &msgraphsdk.JobsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().Jobs().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().Jobs().Post(requestBody)
 
 
 ```

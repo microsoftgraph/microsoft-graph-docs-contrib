@@ -11,10 +11,7 @@ requestBody := msgraphsdk.NewUpdatableAsset()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
 }
-options := &msgraphsdk.UpdatableAssetsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(options)
+result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(requestBody)
 
 
 ```

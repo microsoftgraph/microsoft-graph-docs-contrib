@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 driveId := "drive-id"
 driveItemId := "driveItem-id"
-result, err := graphClient.DrivesById(&driveId).ItemsById(&driveItemId).Analytics().Get(nil)
+result, err := graphClient.DrivesById(&driveId).ItemsById(&driveItemId).Analytics().Get()
 
 
 ```

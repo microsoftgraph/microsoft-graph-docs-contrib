@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UsedRequestBuilderGetQueryParameters{
 	Orderby: "LastUsed/LastAccessedDateTime%20desc",
 }
-options := &msgraphsdk.UsedRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UsedRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Insights().Used().Get(options)
+result, err := graphClient.Me().Insights().Used().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

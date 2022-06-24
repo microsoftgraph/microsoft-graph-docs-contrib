@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.MessageRequestBuilderGetQueryParameters{
 	Expand: "microsoft.graph.eventMessage/event",
 }
-options := &msgraphsdk.MessageRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.MessageRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 messageId := "message-id"
-result, err := graphClient.Me().MessagesById(&messageId).Get(options)
+result, err := graphClient.Me().MessagesById(&messageId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

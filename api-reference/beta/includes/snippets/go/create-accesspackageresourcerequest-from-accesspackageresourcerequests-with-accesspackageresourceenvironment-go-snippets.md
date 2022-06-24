@@ -27,10 +27,7 @@ accessPackageResource.SetAdditionalData(map[string]interface{}{
 }
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

@@ -15,12 +15,9 @@ fields.SetAdditionalData(map[string]interface{}{
 	"Color": "Purple",
 	"Weight": ,
 }
-options := &msgraphsdk.ItemsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 listId := "list-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Post(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).Items().Post(requestBody)
 
 
 ```

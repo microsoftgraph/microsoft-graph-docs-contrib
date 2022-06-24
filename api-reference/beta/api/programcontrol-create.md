@@ -1,5 +1,5 @@
 ---
-title: "Create programControl"
+title: "Create programControl (deprecated)"
 description: "In the Azure AD access reviews feature, create a new programControl object.  This links an access review to a program."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# Create programControl
+# Create programControl (deprecated)
 
 Namespace: microsoft.graph
 

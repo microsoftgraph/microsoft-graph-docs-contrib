@@ -43,12 +43,9 @@ viewpoint.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.task",
 }
-options := &msgraphsdk.BaseTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
 baseTaskId := "baseTask-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).TasksById(&baseTaskId).Patch(requestBody)
 
 
 ```

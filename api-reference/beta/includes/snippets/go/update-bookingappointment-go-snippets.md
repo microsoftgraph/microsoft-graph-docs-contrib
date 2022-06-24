@@ -38,12 +38,9 @@ start.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingAppointment",
 }
-options := &msgraphsdk.BookingAppointmentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingAppointmentId := "bookingAppointment-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).AppointmentsById(&bookingAppointmentId).Patch(requestBody)
 
 
 ```

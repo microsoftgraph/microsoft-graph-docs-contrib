@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
 	Select: "allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount",
 }
-options := &msgraphsdk.GroupRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Get(options)
+result, err := graphClient.GroupsById(&groupId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
