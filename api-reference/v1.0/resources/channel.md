@@ -19,8 +19,8 @@ where files are shared, and where tabs are added.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List channels](../api/channel-list.md) | [channel](channel.md) collection | Get the list of channels in a team.|
-|[List incoming channels](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) shared with a **team**.|
-|[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in a **team** or shared with a **team** (incoming channels).|
+|[List incoming channels](../api/team-list-incomingchannels.md)|[channel](../resources/channel.md) collection|Get the list of incoming [channels](../resources/channel.md) (channels shared with a [team](../resources/team.md)).|
+|[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in a [team](../resources/team.md) or shared with a [team](../resources/team.md) (incoming channels).|
 |[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
@@ -45,12 +45,12 @@ where files are shared, and where tabs are added.
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
 |[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
-|[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming channel.|
-|[List teams shared with channel](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|Get the list of teams shared with the channel.|
-|[Get team shared with channel](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Get a team that is shared with the channel.|
-|[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a channel with a team.|
-|[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.|
-|[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Check whether a user has access to a shared channel or not.|
+|[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming [channel](../resources/channel.md) (a **channel** shared with a **team**) from a [team](../resources/team.md).|
+|[List teams shared with channel](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|Get the list of [teams](../resources/sharedwithchannelteaminfo.md) that has been shared a specified [channel](../resources/channel.md).|
+|[Get team shared with channel](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Get a [team](../resources/sharedwithchannelteaminfo.md) which has been shared a specified [channel](../resources/channel.md).|
+|[Unshare channel with team](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a [channel](../resources/channel.md) with a [team](../resources/team.md) by deleting the corresponding [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) resource.|
+|[List allowed members](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).|
+|[Check user access](../api/channel-doesuserhaveaccess.md)|Boolean|Determine whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md).|
 
 ## Properties
 
@@ -87,7 +87,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. |
-|sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams shared with the channel.|
+|sharedWithTeams|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|A collection of teams with which a channel is shared.|
 
 ## JSON representation
 

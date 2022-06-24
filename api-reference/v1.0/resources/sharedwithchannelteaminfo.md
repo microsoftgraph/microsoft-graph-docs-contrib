@@ -1,6 +1,6 @@
 ---
 title: "sharedWithChannelTeamInfo resource type"
-description: "Represents a team that is shared with a channel."
+description: "Represents information for a team with which a channel is shared."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a information for a [team](team.md) with which a channel is shared. A [team](team.md) can be shared multiple channels.
+Represents information for a [team](team.md) with which a channel is shared. A [team](team.md) can be shared multiple channels.
 
 
 Inherits from [teamInfo](../resources/teaminfo.md).
@@ -19,10 +19,10 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|Get a list of the [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) objects and their properties.|
-|[Get sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Read the properties and relationships of a [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) object.|
-|[Delete sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-delete.md)|None|Delete a [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) object.|
-|[List allowedMembers](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of team members who have access to the shared channel.|
+|[List sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-list.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) collection|Get the list of [teams](../resources/sharedwithchannelteaminfo.md) that has been shared a specified [channel](../resources/channel.md).|
+|[Get sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Get a [team](../resources/sharedwithchannelteaminfo.md) which has been shared a specified [channel](../resources/channel.md).|
+|[Delete sharedWithChannelTeamInfo](../api/sharedwithchannelteaminfo-delete.md)|None|Unshare a [channel](../resources/channel.md) with a [team](../resources/team.md) by deleting the corresponding [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) resource.|
+|[List allowedMembers](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|[conversationMember](../resources/conversationmember.md) collection|Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).|
 
 ## Properties
 |Property|Type|Description|

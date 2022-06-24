@@ -1,6 +1,6 @@
 ---
 title: "Get sharedWithChannelTeamInfo"
-description: "Get a team shared with a channel."
+description: "Get a team which has been shared a specified channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
@@ -53,7 +53,6 @@ If successful, this method returns a `200 OK` response code and a [sharedWithCha
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sharedwithchannelteaminfo"
@@ -82,7 +81,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharedWithChannelTeamInfo",
     "id": "2173de69-de69-2173-69de-732169de7321",
     "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
-    "displayName": "Team contosso",
+    "displayName": "Team contoso",
     "isHostTeam": true
   }
 }

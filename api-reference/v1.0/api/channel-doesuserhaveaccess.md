@@ -52,7 +52,7 @@ Do not supply a request body for this function.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a Boolean in the response body.
+If successful, this function returns a `200 OK` response code and a boolean in the response body.
 
 ## Examples
 
@@ -62,16 +62,21 @@ The following is an example of a request that checks whether an internal user ha
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581g-484b-4845-9e01-60667f8b12ae')
+GET https://graph.microsoft.com/v1.0/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581f-484b-4845-9e01-60667f8b12ae')
 ```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -93,6 +98,8 @@ The following is an example of a request that uses the **tenantId** property to 
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess_externaluser"
@@ -103,6 +110,9 @@ GET https://graph.microsoft.com/v1.0/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 ```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -124,6 +134,8 @@ The following is an example of a request that uses the **userPrincipalName** pro
 
 #### Request
 
+The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "channel_doesuserhaveaccess_usingupn"
@@ -134,6 +146,9 @@ GET https://graph.microsoft.com/v1.0/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 ```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
