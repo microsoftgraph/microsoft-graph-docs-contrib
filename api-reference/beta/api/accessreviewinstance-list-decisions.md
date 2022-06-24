@@ -359,3 +359,116 @@ Content-type: application/json
     ]
 }
 ```
+
+### Example 3: Retrieve all decisions for an instance of an access review along with insights
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_accessreviewinstancedecisionitem_expandinsights"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$expand=insights
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstancedecisionitem-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "e6cafba0-cbf0-4748-8868-0810c7f4cc06",
+            "accessReviewId": "6444d4fd-ab55-4608-8cf9-c6702d172bcc",
+            "reviewedDateTime": null,
+            "decision": "NotReviewed",
+            "justification": "",
+            "appliedDateTime": null,
+            "applyResult": "New",
+            "recommendation": "Approve",
+            "principalLink": "https://graph.microsoft.com/v1.0/users/04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+            "resourceLink": "https://graph.microsoft.com/v1.0/groups/98f41dad-68d5-42f6-a50f-ddd75c5c5539",
+            "reviewedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
+            },
+            "appliedBy": {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "displayName": "",
+                "userPrincipalName": ""
+            },
+            "resource": {
+                "id": "98f41dad-68d5-42f6-a50f-ddd75c5c5539",
+                "displayName": "poltest1_g01",
+                "type": "group"
+            },
+            "principal": {
+                "@odata.type": "#microsoft.graph.userIdentity",
+                "id": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                "displayName": "Diego Siciliani",
+                "userPrincipalName": "DiegoS@contoso.com"
+            },
+            "insights@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions('5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0')/instances('6444d4fd-ab55-4608-8cf9-c6702d172bcc')/decisions('e6cafba0-cbf0-4748-8868-0810c7f4cc06')/insights",
+            "insights": [
+                {
+                    "@odata.type": "#microsoft.graph.userSignInInsight",
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "insightCreatedDateTime": null,
+                    "lastSignInDateTime": "2022-02-11T20:00:34Z"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.membershipOutlierInsight",
+                    "id": "f8b5b125-2df6-405c-9cab-6c0e477cbf0a",
+                    "insightCreatedDateTime": "2022-08-09T08:25:00Z",
+                    "memberId": "04777c4b-4d43-4d32-a2e7-1eba5d03f8cf",
+                    "containerId": "98f41dad-68d5-42f6-a50f-ddd75c5c5539",
+                    "outlierMemberType": "user",
+                    "outlierContainerType": "group"
+                }
+            ]
+        }
+    ]
+}
+```

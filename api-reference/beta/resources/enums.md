@@ -3199,3 +3199,17 @@ Possible values for user account types (group membership), per Windows definitio
 |sender|
 |recipient|
 |unknownFutureValue|
+
+### outlierMemberType values 
+
+|Member|
+|:---|
+|user|
+|unknownFutureValue|
+
+### outlierContainerType values 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
