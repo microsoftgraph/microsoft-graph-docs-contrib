@@ -16,6 +16,8 @@ doc_type: enumTypes
 |none|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
+|granularDelegatedAdminPrivileges|
+|delegatedAndGranularDelegetedAdminPrivileges|
 
 ### managementActionStatus values
 

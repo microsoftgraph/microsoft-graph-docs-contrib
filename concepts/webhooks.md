@@ -86,14 +86,6 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the **userPrincipalName** (UPN) in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use:
-
-`/users/{guid-user-id}/messages`
-
 A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations

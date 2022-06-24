@@ -16,6 +16,8 @@ JSON batching allows you to optimize your application by combining multiple requ
 
 Combining these three individual requests into a single batch request can save the application significant network latency.
 
+Microsoft Graph implements the `$batch` OData URL path segment to support JSON batching.
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
 ## First JSON batch request

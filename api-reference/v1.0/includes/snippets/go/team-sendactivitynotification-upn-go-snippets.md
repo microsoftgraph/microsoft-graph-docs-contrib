@@ -28,15 +28,15 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "reservationId",
-		"value": "TREEE433",
-	}
+name := "reservationId"
+	SetName(&name)
+value := "TREEE433"
+	SetValue(&value)
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "currentSlot",
-		"value": "23",
-	}
+name := "currentSlot"
+	SetName(&name)
+value := "23"
+	SetValue(&value)
 }
 teamId := "team-id"
 graphClient.TeamsById(&teamId).SendActivityNotification(team-id).Post(requestBody)
