@@ -1,15 +1,15 @@
 ---
-title: "Change notifications for Cloud communication resources in Microsoft Graph"
-description: "Learn how to get notifications for changes (create, update, and delete) for resources in Cloud communications using Microsoft Graph APIs"
+title: "Change notifications for cloud communications resources in Microsoft Graph"
+description: "Learn how to get notifications for changes (create, update, and delete) for cloud communications resources by using Microsoft Graph APIs"
 author: "benlee-msft"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
 ms.custom: scenarios:getting-started
 ---
 
-# Change notifications for Cloud communication resources in Microsoft Graph
+# Change notifications for cloud communication resources in Microsoft Graph
 
-Microsoft Graph API can be used to subscribe to changes on a resource. Subscription allows users to receive notifications via [webhooks](/graph/api/resources/webhooks). This provides applications the ability to run business logic without having to make separate API calls to fetch changed resources. Fewer required API calls benefits applications in larger scale scenarios when managing resources. To subscribe to change notifications of Cloud communication resources, first create a [subscription](/graph/api/resources/subscription).
+You can use the Microsoft Graph API to subscribe to changes on a cloud communications resource. Subscription allows users to receive notifications via [webhooks](/graph/api/resources/webhooks). This provides applications the ability to run business logic without having to make separate API calls to fetch changed resources. Fewer required API calls benefits applications in larger scale scenarios when managing resources. To subscribe to change notifications of Cloud communication resources, first create a [subscription](/graph/api/resources/subscription).
 
 ## Creating subscription
 
@@ -19,7 +19,7 @@ The following outlines cloud communication resource types that are supported and
 
 | Resource           | Microsoft Graph API versions |
 | :--------------------| :--------------------|
-| [callrecords](/graph/api/resources/callrecords-api-overview) | v1, beta |
+| [callrecords](/graph/api/resources/callrecords-api-overview) | v1..01, beta |
 | [onlinemeeting](/graph/api/resources/onlinemeeting) | beta |
 | [presence](/graph/api/resources/presence) | v1, beta |
 
@@ -36,7 +36,7 @@ Content-type: application/json
    "clientState": "{client state value}",
 }
 ```
-The **resource** property in the creation payload can exist in the following forms for cloud communication resources.
+The **resource** property in the creation payload can exist in the following forms for cloud communicatiosn resources.
 
 | Resource | Examples |
 | :--------| :--------|
@@ -45,24 +45,25 @@ The **resource** property in the creation payload can exist in the following for
 | presence | `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ('{id}','{id}',…)` (multiple users) | 
 
 
-For more details on subscription creation, see [Create subscription](/graph/api/subscription-post-subscriptions).
+For more details about subscription creation, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
 ### Encrypted resource data
 
-**online meeting** and **presence** resources support encrypted resource data. See [Set up change notifications with resource data](webhooks-with-resource-data.md) for more details about this use case.
+**online meeting** and **presence** resources support encrypted resource data. For details about this use case, see [Set up change notifications with resource data](webhooks-with-resource-data.md).
 
 ## Renewing subscriptions
 
 Subscription are only maintained for a certain period of time. For details for each resource, see [maximum expiration time](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
-Subscriptions must be renewed periodically by using the [Update subscription API](/graph/api/subscription-update) to prevent deletion upon expiry.
+
+You must renew subscriptions periodically by using the [Update subscription API](/graph/api/subscription-update) to prevent deletion upon expiry.
 
 ## Other subscription operations
 
-Microsoft Graph API also supports the following actions on subscriptions to change notifications, see
+The Microsoft Graph API also supports the following actions on subscriptions to change notifications:
 - [Get](/graph/api/subscription-get) existing subscription.
 - [Delete](/graph/api/subscription-delete) existing subscription.
 
-See [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks) for details surrounding the API.
+For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
 
 ## Create an application to listen to notifications
 
