@@ -455,7 +455,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deletedTeam",
           "ChangeType": "Addition",
-          "Description": "Added the [deletedTeam](https://docs.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-beta) resource",
+          "Description": "Added the [deletedTeam](https://docs.microsoft.com/en-us/graph/api/resources/deletedTeam?view=graph-rest-beta) resource and a supported method.",
           "Target": "deletedTeam"
         },
         {
@@ -465,14 +465,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **deletedTeams** relationship to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
-        },
-        {
-          "Id": "33336873-57cc-453e-90da-9e735f550661",
-          "ApiChange": "Method",
-          "ChangedApiName": "getAllMessages",
-          "ChangeType": "Addition",
-          "Description": "Added the [getAllMessages](https://docs.microsoft.com/en-us/graph/api/deletedTeam?view=graph-rest-beta) method to the [deletedTeam](https://docs.microsoft.com/en-us/graph/api/deletedTeam?view=graph-rest-beta) resource.",
-          "Target": "deletedTeam"
         }
       ],
       "Id": "33336873-57cc-453e-90da-9e735f550661",
