@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmission: review"
-description: "review threat submission"
+description: "Review a threat submission."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Review a threat submission. Only `emailThreatSubmission` submitted from end user supports `review` action now. `review` actions for `urlThreatSubmission` and `fileThreatSubmission` are reserved for future usage. `urlThreatSubmission` and `fileThreatSubmission` have not been supported for end user now.
+Review a threat submission. Only [emailThreatSubmission](../resources/security-emailthreatsubmission.md) submitted from end user supports **review** action.
+
+**Review** actions for [urlThreatSubmission](../resources/security-urlthreatsubmission.md) and [fileThreatSubmission](../resources/security-filethreatsubmission.md) are not supported for end user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -74,8 +76,10 @@ Content-type: application/json
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

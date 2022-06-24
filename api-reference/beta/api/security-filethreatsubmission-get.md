@@ -63,8 +63,10 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/fileThreats/{file
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
