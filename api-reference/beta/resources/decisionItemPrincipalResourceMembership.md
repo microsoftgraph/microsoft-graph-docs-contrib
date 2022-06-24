@@ -1,6 +1,6 @@
 ---
 title: "decisionItemPrincipalResourceMembership resource type"
-description: "Every decision item in an access review represents a principal's access to a resource. decisionItemPrincipalResourceMembership represents the resource associated with the decision item."
+description: "Each decision in an access review represents a principal's access to a resource. A decisionItemPrincipalResourceMembership object exposes the details of the type of membership that the principal has to the resource that's associated with the accessReviewInstanceDecisionItem object."
 author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.prod: "governance"
