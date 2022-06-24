@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Team.ReadBasic.All|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Team.ReadBasic.All|
 
 ## HTTP request
@@ -63,12 +63,13 @@ GET https://graph.microsoft.com/beta/teamwork/deletedTeams
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.deletedTeam)"
+  "@odata.type": "microsoft.graph.deletedTeam",
+  "isCollection": true
 }
 -->
 ``` http
@@ -76,12 +77,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deletedTeam",
-      "id": "bac01407-8047-d8d4-2547-988daf836adf"
-    }
-  ]
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.deletedTeam",
+            "id": "bac01407-8047-d8d4-2547-988daf836adf"
+        }
+    ]
 }
 ```
 

@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 Represents a deleted [team](../resources/team.md) in Microsoft Teams.
 
-Every deleted team is associated with a [Microsoft 365 group](../resources/group.md). For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
+Every deleted team is associated with a [Microsoft 365 group](../resources/group.md). For more information about working with groups and members in teams, see [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getAllMessages](../api/deletedteam-getallmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Get all messages in the deleted team.|
+|[getAllMessages](../api/deletedteam-getallmessages.md)|[chatMessage](../resources/chatmessage.md) collection|Retrieve all messages across all channels in a deleted team.|
 
 ## Properties
 |Property|Type|Description|
@@ -46,8 +46,8 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deletedTeam",
-  "id": "String (identifier)"
+    "@odata.type": "#microsoft.graph.deletedTeam",
+    "id": "String (identifier)"
 }
 ```
 

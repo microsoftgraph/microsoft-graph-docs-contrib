@@ -25,7 +25,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| A collection of deleted teams.|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
@@ -46,10 +46,14 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamwork",
-  "id": "String (identifier)"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
 }
 ```
+
+## See Also
+
+- [userTeamwork resource](userteamwork.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -63,7 +67,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-## See Also
-
-- [userTeamwork resource](userteamwork.md)
