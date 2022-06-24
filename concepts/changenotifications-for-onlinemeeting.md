@@ -4,7 +4,7 @@ description: "Change notifications in Microsoft Graph enable you to subscribe to
 author: "benlee-msft"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
-doc_type: apiPageType
+ms.custom: scenarios:getting-started
 ---
 
 # Get change notifications for meeting call updates in Microsoft Graph
@@ -42,7 +42,7 @@ Content-Type: application/json
 ```
 
 ## JoinWebUrl
-The meeting join url can be found in the [onlineMeeting](../resources/onlinemeeting.md) resource's JoinWebUrl property or through the teams client for an arranged meeting.
+The join URL for the meeting is included in the joinWebUrl property of the [onlineMeeting](/graph/api/onlinemeeting) resource, or in the Teams client for a meeting.
 
 
 ## Notifications with encrypted resource data
@@ -54,11 +54,11 @@ The meeting join url can be found in the [onlineMeeting](../resources/onlinemeet
     "changeType": "updated",
     "tenantId": "{Organization/Tenant id}",
     "resource": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-    "subscriptionExpirationDateTime": "2022-02-28T02:00:00-08:00",
+    "subscriptionExpirationDateTime": "2022-02-28T00:00:00.0000000Z",
     "resourceData": {
-      "@odata.id": "{odata.id}",
+      "@odata.id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
       "@odata.type": "#microsoft.graph.onlineMeeting",
-      "id": "{id}"
+      "id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'"
     },
     "organizationId": "{Organization/Tenant id}",
     "encryptedContent": {
@@ -79,10 +79,10 @@ The decrypted notification payload looks like the following.
 ```json
 {
   "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"{odata.id}",
-  "id":"{id}",
+  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
   "eventType":"Microsoft.Communication.CallStarted",
-  "eventDateTime":"2022-02-28T18:41:33.0553203Z",
+  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
   "state":"active"
 }
 ```
@@ -99,4 +99,4 @@ The following are the supported meeting events:
 ## See also
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
-- [Online meeting resource](../resources/onlinemeeting.md)
+- [Online meeting resource](/graph/api/onlinemeeting)
