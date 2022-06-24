@@ -99,14 +99,8 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/beta
     - name: Add custom data
-      items:
-      - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/beta
-        displayName: add custom data, extensions, resources using extensions
-      - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?context=graph/api/beta
-      - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?context=graph/api/beta
+      displayName: directory extensions, schema extensions, open extensions, extension attributes
+      href: /graph/extensibility-overview?context=graph/api/beta
     - name: Use Graph Explorer
       items:
       - name: Get started
