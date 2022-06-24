@@ -434,7 +434,7 @@ Content-length: 468
     "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```
-### Example 6: Add a user as a member (who is part of same or different tenant) to a shared channel using user principal name
+### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
 
 #### Request
 
