@@ -668,7 +668,7 @@
       "ChangeList": [
         {
           "Id": "ef441c70-5467-4012-ba7b-e40e86069b11",
-          "ApiChange": "EnumType",
+          "ApiChange": "Enum type",
           "ChangedApiName": "decisionItemPrincipalResourceMembershipType",
           "ChangeType": "Addition",
           "Description": "Added the **decisionItemPrincipalResourceMembershipType** enumeration type.",
