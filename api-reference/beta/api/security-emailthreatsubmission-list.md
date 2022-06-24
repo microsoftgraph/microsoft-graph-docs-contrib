@@ -34,20 +34,7 @@ GET /security/threatSubmission/emailThreats
 ```
 
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-| Pattern                | Syntax                                                       | 
-| ---------------------- | ------------------------------------------------------------ |
-| Server-side pagination | `@odata.nextLink`                                            | 
-| Filter                 | `/emailThreats?$filter=emailSubject eq 'value'`              | 
-| Filter                 | `/emailThreats?$filter=sender eq 'value'`                    | 
-| Filter                 | `/emailThreats?$filter=id eq 'value'`                        | 
-| Filter                 | `/emailThreats?$filter=createdDateTime ge 'value' and createdDateTime lt 'value'` |
-| Filter                 | `/emailThreats?$filter=category eq 'value'`                  | 
-| Filter                 | `/emailThreats?$filter=createdBy eq 'value'`                 |
-| Filter                 | `/emailThreats?$filter=status eq 'value'`                    | 
-| Filter                 | `/emailThreats?$filter=source eq 'value'`                    | 
+This method supports `$filter`, `$top`, `$skipToken` and `$count` to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
