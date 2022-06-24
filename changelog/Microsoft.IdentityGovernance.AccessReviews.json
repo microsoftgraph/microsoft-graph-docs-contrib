@@ -679,7 +679,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "decisionItemPrincipalResourceMembership",
           "ChangeType": "Addition",
-          "Description": "Added the [decisionItemPrincipalResourceMembership](https://docs.microsoft.com/en-us/graph/api/resources/decisionItemPrincipalResourceMembership?view=graph-rest-beta) resource type.",
+          "Description": "Added the [decisionItemPrincipalResourceMembership](https://docs.microsoft.com/en-us/graph/api/resources/decisionItemPrincipalResourceMembership?view=graph-rest-beta) resource type. This object exposes the details of the type of membership that the principal has to the resource that's associated with the [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object.",
           "Target": "decisionItemPrincipalResourceMembership"
         },
         {
