@@ -34,17 +34,7 @@ GET /security/threatSubmission/fileThreats
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | :-------: | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=fileName eq 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=id eq 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=createdDateTime ge 'value' and createdDateTime lt 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=category eq 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=createdBy eq 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=status eq 'value'` |       |
-| Filter                 |     ✓     | `/fileThreats?$filter=source eq 'value'` |       |
+This method supports `$filter`, `$top`, `$skipToken` and `$count` to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
