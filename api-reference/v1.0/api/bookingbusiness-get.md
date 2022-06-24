@@ -68,6 +68,7 @@ Content-type: application/json
     "phone":"206-555-0100",
     "email":"manager@fabrikam.com",
     "webSiteUrl":"https://www.fabrikam.com/",
+    "languageTag": "String",
     "defaultCurrencyIso":"USD",
     "isPublished":false,
     "publicUrl":null,

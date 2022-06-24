@@ -126,7 +126,8 @@ Content-type: application/json
             "day": "sunday",
             "timeSlots": []
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 
