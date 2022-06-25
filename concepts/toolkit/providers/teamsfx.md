@@ -55,7 +55,7 @@ public render(): void {
 
 For a sample that shows you how to initialize the TeamsFx provider, see the [Contacts Exporter sample](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
 
-For a workshop that shows how to build Microsoft Teams applications by using the TeamsFx provider and Microsoft Teams Toolkit, see the [the One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx).
 
 ## See also
 * [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
+* [One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)
