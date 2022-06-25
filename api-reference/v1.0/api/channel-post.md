@@ -399,7 +399,7 @@ The following example shows how to create a shared channel.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
 Content-type: application/json
 
 {
@@ -409,7 +409,7 @@ Content-type: application/json
   "members": [
     {
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "user@odata.bind": "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')",
       "roles": [
         "owner"
       ]

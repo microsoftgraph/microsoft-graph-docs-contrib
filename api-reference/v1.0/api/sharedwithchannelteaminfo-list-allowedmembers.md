@@ -1,6 +1,6 @@
 ---
 title: "List allowedMembers"
-description: "Get the list of conversationMember resources from the allowedMembers navigation property."
+description: "Get the list of conversationMembers who can access a shared channel."
 author: "devjha-ms"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -63,7 +63,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_conversationmember"

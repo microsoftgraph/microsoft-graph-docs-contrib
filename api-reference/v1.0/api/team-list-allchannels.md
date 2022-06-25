@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all channels
 
 #### Request
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -112,9 +112,8 @@ Content-Type: application/json
 ### Example 2: List all shared channels
 
 #### Request
-The following is an example of the request.
+The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_all_shared_channel"
