@@ -13304,7 +13304,6 @@ items:
         - name: Privileged Identity Management
           items:
           - name: Privileged Identity Management
-            displayName: PIM v2
             href: resources/privilegedidentitymanagement-root.md
           - name: Azure AD (deprecated)
             items:
