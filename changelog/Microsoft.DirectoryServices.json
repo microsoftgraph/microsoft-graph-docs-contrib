@@ -3375,18 +3375,7 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "57281ce6-70f8-4348-8b99-9fd38d42b03d",
-          "ApiChange": "Property",
-          "ChangedApiName": "agreementFile",
-          "Id": "9b6a0290-80aa-11eb-8a3c-f63608ac46d5",
-          "ApiChange": "Resource",
-          "ChangedApiName": "approval",
-          "ChangeType": "Addition",
-          "Description": "Added the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource type.",
-          "Target": "approval"
-        },
-        {
+                {
           "Id": "9b6c64cb-80aa-11eb-8a3c-f63608ac46d5",
           "ApiChange": "Resource",
           "ChangedApiName": "approvalStage",
