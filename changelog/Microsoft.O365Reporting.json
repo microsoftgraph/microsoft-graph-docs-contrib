@@ -119,7 +119,7 @@
 	  ],
 		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
 		"Cloud": "prd",
-		"Version": "beta",
+		"Version": "v1.0",
 		"CreatedDateTime": "2022-06-06T09:15:14.3122315Z",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"

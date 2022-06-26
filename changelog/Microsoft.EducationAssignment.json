@@ -31,7 +31,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setUpFeedbackResourcesFolder",
           "ChangeType": "Addition",
-          "Description": "Added the [setUpFeedbackResourcesFolder](https://docs.microsoft.com/en-us/graph/api/setUpFeedbackResourcesFolder?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [setUpFeedbackResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationassignment-setUpFeedbackResourcesFolder?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
           "Target": "educationAssignment"
         }
       ],
