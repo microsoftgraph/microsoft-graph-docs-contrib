@@ -2938,6 +2938,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 

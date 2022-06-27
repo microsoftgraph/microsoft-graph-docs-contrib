@@ -1,6 +1,6 @@
 ---
-title: "Open the OneNote client"
-description: "You can use the **links** property of a page or notebook to open a OneNote application to a particular page or notebook. "
+title: "Open the OneNote client by using the OneNote API"
+description: "Use the links property of a page or notebook to open a OneNote application to a particular page or notebook. Includes iOS and Android examples."
 author: "Jewan-microsoft"
 ms.localizationpriority: medium
 ---
@@ -24,14 +24,14 @@ The **links** property is a JSON object that contains two URLs. The URLs will op
 }
 ```
 
-- **oneNoteClientUrl** 
+- **oneNoteClientUrl**
 
   - Opens the OneNote client if it is already installed on the device. This URL includes the *onenote* prefix.
   - Opens the language-specific version if one is installed on the device. Otherwise, uses the platform language setting.
 
-- **oneNoteWebUrl** 
+- **oneNoteWebUrl**
 
-  - Opens OneNote on the web if the default browser on the device supports it. 
+  - Opens OneNote on the web if the default browser on the device supports it.
   - Uses the browser language setting.
 
 

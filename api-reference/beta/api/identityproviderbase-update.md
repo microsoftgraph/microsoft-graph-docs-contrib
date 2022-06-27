@@ -97,12 +97,9 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_socialidentityprovider"
-}
--->
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-socialidentityprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH

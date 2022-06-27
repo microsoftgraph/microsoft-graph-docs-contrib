@@ -1,12 +1,12 @@
 ---
-title: "Input and output HTML in OneNote pages"
-description: "The HTML that defines the page content and structure when you create or update a OneNote page is called *input HTML*. "
+title: "Input and output HTML on OneNote pages in the OneNote API"
+description: "Learn how to use the principal elements and attributes of input and output HTML when you create or update page content or parse returned page content."
 author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.prod: "onenote"
 ---
 
-# Input and output HTML in OneNote pages
+# Input and output HTML on OneNote pages
 
 The HTML that defines the page content and structure when you [create](onenote-create-page.md) or [update](onenote-update-page.md) a OneNote page is called *input HTML*. 
 
@@ -92,7 +92,7 @@ Contains a non-contributing, nested div.
 
 #### Output HTML
 
-> **Note:**
+> [!NOTE]
 > The div's content was moved to the parent div and the nested `<div>` tags have been removed. The div would have been preserved if it defined any semantic information, such as a **data-id** (example: `<div data-id="keep-me">`).
 
 ```html
@@ -125,8 +125,8 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | style |The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
 | src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
 | width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
- 
-> **Note:** 
+
+> [!NOTE]
 > The OneNote APIs automatically detect the input image type, and return it as the **data-fullres-src-type** in the output HTML. The API also returns the image type of the optimized image in **data-src-type**.
  
 
@@ -236,7 +236,7 @@ Because users can move the images on the page, the returned indexes might be out
 
 OneNote pages can contain embedded videos represented by **iframe** elements. 
 
-> **Note:** 
+> [!NOTE]
 > You can also [attach a video file using an **object** element](onenote-images-files.md#adding-files).
 
 #### Input attributes
@@ -269,7 +269,7 @@ Output **iframe** elements contain endpoints that link to the source page and vi
 
 OneNote pages can contain file attachments represented by **object** elements. An **object** element can contain the following attributes in the input and output HTML.
 
-> **Note:** 
+> [!NOTE]
 > The OneNote APIs can also render file content as images in a page when the file is sent as an image and uses the **data-render-src** attribute.
 > Example: `<img data-render-src="name:part-name" ... />`
  
@@ -451,8 +451,8 @@ Tables can contain the following attributes in the input and output HTML. The On
 | width | Width of the table |
 | bgcolor | The background color of the table |
 
-**Note:** The use of the **border** property in the style attribute of a table is not supported in input html. 
- 
+> [!NOTE]
+> The use of the **border** property in the style attribute of a table is not supported in input html.
 
 #### Output attributes
 

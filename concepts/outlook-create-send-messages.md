@@ -1,6 +1,6 @@
 ---
-title: "Automate creating, sending, and processing messages"
-description: "Emails are represented by the message resource in Microsoft Graph."
+title: "Automate creating, sending, and processing messages using the Outlook mail API"
+description: "Emails are represented by the message resource in the Outlook mail API in Microsoft Graph. You can create and send mail, check recipient status, and more."
 author: "abheek-das"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Emails are represented by the [message](/graph/api/resources/message?view=graph-
 
 By default, messages are identified by a unique entry ID in the **id** property. When a message is initially created and saved as a draft or sent, the store provider assigns the message an entry ID. By default, that ID changes when the message is copied or moved to another folder, store, or .PST file. You reference the message by its current ID for further processing.
 
-## Creating and sending mail
+## Create and send mail
 
 In Outlook, you can create and send an email in the same [sendMail](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) action, or you can [create](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) a draft, subsequently [add content](/graph/api/message-update?view=graph-rest-1.0&preserve-view=true) and [send](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true) the draft.
 
@@ -22,20 +22,20 @@ To distinguish between a draft and a sent message programmatically, check the **
 
 By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0&preserve-view=true).
 
-### Setting the from and sender properties
+### Set the from and sender properties
 
 When a message is being composed, in most cases, Outlook sets the **from** and **sender** properties to the same signed-in user. You can update these properties in the following scenarios:
 
 - The **from** property can be changed if the Exchange administrator has assigned **sendAs** rights of the mailbox to some other users. The administrator can do this by selecting **Mailbox Permissions** of the mailbox owner in the Azure portal, or by using the Exchange Admin Center or a Windows PowerShell Add-ADPermission cmdlet. Then, you can programmatically set the **from** property to one of these users who have **sendAs** rights for that mailbox.
 - The **sender** property can be changed if the mailbox owner has delegated one or more users to be able to send messages from that mailbox. The mailbox owner can delegate in Outlook. When a delegate sends a message on behalf of the mailbox owner, Outlook sets the **sender** property to the delegate’s account, and the **from** property remains as the mailbox owner. Programmatically, you can set the **sender** property to a user who has got delegate permissions for that mailbox.
 
-## Using MailTips to check recipient status and save time (preview)
+## Use MailTips to check recipient status and save time (preview)
 
 Use [MailTips](/graph/api/resources/mailtips?view=graph-rest-beta&preserve-view=true) to make smart decisions before sending an email.
 MailTips can tell you information such as the recipient's mailbox is restricted to specific senders, or approval is required for emailing the recipient.
 
 
-## Reading messages with control over the body format returned
+## Read messages with control over the body format returned
 
 You can [read a message](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true) in a mailbox by referencing its ID:
 
@@ -81,7 +81,7 @@ To get the entire, original HTML content, include the following HTTP request hea
 Prefer: outlook.allow-unsafe-html
 ```
 
-## Integrating with '@' social gesture (preview)
+## Integrate with '@' social gesture (preview)
 
 @-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
@@ -100,8 +100,6 @@ Take advantage of the following common capabilities that are shared among Micros
 - Create [extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0&preserve-view=true) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
 
 ## Next steps
-
-Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
 - [Get MIME content (preview)](outlook-get-mime-message.md)

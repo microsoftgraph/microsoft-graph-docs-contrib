@@ -568,7 +568,7 @@ items:
           href: api/chat-list.md
       - name: To-do tasks
         items:
-        - name: Task
+        - name: To-do task
           href: resources/todotask.md
         - name: Create task
           href: api/todotasklist-post-tasks.md
@@ -5225,6 +5225,18 @@ items:
               href: api/samlorwsfedexternaldomainfederation-list-domains.md
             - name: Create externalDomainName
               href: api/samlorwsfedexternaldomainfederation-post-domains.md
+          - name: Federation with Azure AD
+            items:
+            - name: Federated domain configuration
+              href: resources/internaldomainfederation.md
+            - name: Get
+              href: api/internaldomainfederation-get.md
+            - name: Create
+              href: api/domain-post-federationconfiguration.md
+            - name: Update
+              href: api/internaldomainfederation-update.md
+            - name: Delete
+              href: api/internaldomainfederation-delete.md
         - name: Identity provider (deprecated)
           items:
           - name: Identity provider type
@@ -7249,9 +7261,10 @@ items:
       items:
       - name: Overview
         href: resources/todo-overview.md
-      - name: Task list
-        href: resources/todotasklist.md
+      - name: To-do task list
         items:
+        - name: To-do task list
+          href: resources/todotasklist.md
         - name: List task lists
           href: api/todo-list-lists.md
         - name: Create task list
@@ -7268,9 +7281,10 @@ items:
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Task
-        href: resources/todotask.md
+      - name: To-do task
         items:
+        - name: To-do task
+          href: resources/todotask.md
         - name: List tasks
           href: api/todotasklist-list-tasks.md
         - name: Create task

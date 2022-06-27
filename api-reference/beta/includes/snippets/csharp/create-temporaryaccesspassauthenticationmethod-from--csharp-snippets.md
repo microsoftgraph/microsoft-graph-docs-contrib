@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var temporaryAccessPassAuthenticationMethod = new TemporaryAccessPassAuthenticationMethod
 {
-	StartDateTime = DateTimeOffset.Parse("2021-01-26T00:00:00Z"),
+	StartDateTime = DateTimeOffset.Parse("2022-06-05T00:00:00Z"),
 	LifetimeInMinutes = 60,
 	IsUsableOnce = false
 };

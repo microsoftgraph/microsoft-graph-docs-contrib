@@ -1,6 +1,6 @@
 ---
 title: "Get shared or delegated Outlook calendar and its events"
-description: "In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account."
+description: "Read events in a shared or delegated calendar. You can get a shared calendar or events directly from a calendar owner's mailbox or from a sharee's mailbox."
 author: "juforan"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -8,9 +8,9 @@ ms.prod: "outlook"
 
 # Get shared or delegated Outlook calendar and its events
 
-In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the shared calendar can be the owner's primary calendar or a custom calendar created by the owner. The owner can also grant a delegate to their primary calendar and act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar.
+In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the shared calendar can be the owner's primary calendar or a custom calendar created by the owner. The owner can also grant a delegate to their primary calendar and act on their behalf to receive or respond to meeting requests or create or change items in the primary calendar.
 
-Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article describes reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md).
+Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article describes reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md).
 
 ## Sharee: Get a shared calendar or its events directly from calendar owner's mailbox
 
@@ -18,7 +18,7 @@ The three examples below use this scenario: in Outlook, Alex has shared his prim
 
 The three examples specify the owner's identity (Alex' user ID or user principal name) and the `calendar` shortcut. They access calendar and event IDs that correspond to only the owner's mailbox. Specifying these calendar and event IDs in the sharee's mailbox (Megan's user ID or user principal name) would return an error. To use calendar and event IDs that correspond to the sharee's mailbox, see [Sharee: Get shared, custom calendar or its events from sharee's mailbox](#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox). 
 
-> **Note**:
+> [!NOTE]
 > The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
 ### Megan: Get the shared, primary calendar directly from Alex' mailbox
@@ -135,7 +135,6 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
     ```
 
 On successful completion, you'll get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.
-
 
 ## Next steps
 
