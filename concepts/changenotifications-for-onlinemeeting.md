@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for meeting call updates in Microsoft Graph"
-description: "Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams meetings."
+title: "Get change notifications for online meetings in Microsoft Graph"
+description: "Change notifications in Microsoft Graph enable you to subscribe to online meeting started/ended and roster updates for Microsoft Teams meetings."
 author: "benlee-msft"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
@@ -42,7 +42,7 @@ Content-Type: application/json
 ```
 
 ## JoinWebUrl
-The join URL for the meeting is included in the joinWebUrl property of the [onlineMeeting](/graph/api/onlinemeeting) resource, or in the Teams client for a meeting.
+The join URL for the meeting is included in the joinWebUrl property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 
 ## Notifications with encrypted resource data
@@ -75,28 +75,45 @@ The join URL for the meeting is included in the joinWebUrl property of the [onli
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
-The decrypted notification payload looks like the following.
-```json
-{
-  "@odata.type":"#Microsoft.Graph.onlineMeeting",
-  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
-  "eventType":"Microsoft.Communication.CallStarted",
-  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
-  "state":"active"
-}
-```
-
-You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscrpition request body. Doing so will add the properties that would have been encrypted to **resourceData**.
-## Event notifications types
+### Event notifications types
 The following are the supported meeting events:
 - CallStarted - Occurs when a meeting call is started.
 - CallEnded - Occurs when a meeting call has been concluded.
 - CallRosterUpdate - Occurs when a participant joins or exits a call.
 
-**CallRosterUpdate** events will include two additional properties, **activeParticipants@delta** and **activeParticipants@remove**, to depict participants joining/leaving the meeting call in the **resourceData** property.
+### Decrypted payload examples
+
+#### CallStarted/CallEnded.
+```json
+{
+  "@odata.type":"#Microsoft.Graph.onlineMeeting",
+  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "eventType":"{Microsoft.Communication.CallStarted or Microsoft.Communication.CallEnded}",
+  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
+  "state":"active"
+}
+```
+
+#### CallRosterUpdate
+```json
+{
+  "@odata.type":"#Microsoft.Graph.onlineMeeting",
+  "@odata.id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "id":"communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
+  "eventType":"Microsoft.Communication.CallRosterUpdate",
+  "eventDateTime":"2022-02-28T00:00:00.0000000Z",
+  "state":"active",
+  "activeParticipants@delta": ["{meetingParticipantInfo list of users that joined}"],
+  "activeParticipants@remove": ["{meetingParticipantInfo list of users that left}"]
+}
+```
+**CallRosterUpdate** events will include two additional properties, **activeParticipants@delta** to depict participants added to meeting and **activeParticipants@remove**, for participants leaving the online meeting. For more information on on participant information, see [meetingParticipantInfo resource type](/graph/api/resources/meetingparticipants).
+
+You can choose to omit encryption by not including the property **includeResourceData** or setting this value to `false` in your subscrpition request body. Doing so will add the properties that would have been part of the encrypted payload to **resourceData**.
+
 
 ## See also
 - [Microsoft Graph change notifications](/graph/webhooks)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
-- [Online meeting resource](/graph/api/onlinemeeting)
+- [Online meeting resource](/graph/api/resources/onlineMeeting)
