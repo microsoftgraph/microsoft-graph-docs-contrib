@@ -76,7 +76,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teamwork/deletedTeams('124e15a2-9b35-47dd-a356-95544771a7d3')/channels/getAllMessages
+GET https://graph.microsoft.com/beta/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/getAllMessages
 ```
 
 

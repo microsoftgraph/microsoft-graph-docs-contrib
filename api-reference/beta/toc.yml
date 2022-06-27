@@ -648,6 +648,13 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
+        - name: Represents a deleted team in Microsoft Teams
+          href: recources/deletedteam.md
+          items:
+            - name: Retrieve all messages across all channels in a deleted team
+              href: api/deletedteam-getallmessages.md
+            - name: Get a list of the deletedTeam objects and their properties
+              href: api/ teamwork-list-deletedteams.md
       - name: To-do tasks
         items:
         - name: To-do task
