@@ -3,7 +3,7 @@ title: "List secureScores"
 description: "Retrieve a list of secureScore objects."
 author: "preetikr"
 ms.localizationpriority: medium
-ms.prod: ""
+ms.prod: security
 doc_type: apiPageType
 ---
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-securescores-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securescores-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

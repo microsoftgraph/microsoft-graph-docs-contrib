@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -107,9 +107,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationschool-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 

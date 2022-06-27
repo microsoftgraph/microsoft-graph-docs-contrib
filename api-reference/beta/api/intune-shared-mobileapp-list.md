@@ -1,7 +1,7 @@
 ---
 title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

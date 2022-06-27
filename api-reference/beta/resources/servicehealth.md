@@ -23,14 +23,14 @@ Represents the health information of a service subscribed by a tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The service id.|
+|id|String|The service ID.|
 |service|String|The service name. Use the [list healthOverviews](../api/serviceannouncement-list-healthoverviews.md) operation to get exact string names for services subscribed by the tenant.|
-|status|serviceHealthStatus|Show the overral service health status. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`.|
+|status|serviceHealthStatus|Show the overall service health status. Possible values are: `serviceOperational`, `investigating`, `restoringService`, `verifyingService`, `serviceRestored`, `postIncidentReviewPublished`, `serviceDegradation`, `serviceInterruption`, `extendedRecovery`, `falsePositive`, `investigationSuspended`, `resolved`, `mitigatedExternal`, `mitigated`, `resolvedExternal`, `confirmed`, `reported`, `unknownFutureValue`. For more details, see [serviceHealthStatus values](../resources/servicehealthissue.md#servicehealthstatus-values).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|A collection of issues happened on the service, with detailed information for each issue.|
+|issues|Collection([serviceHealthIssue](../resources/servicehealthissue.md))|A collection of issues that happened on the service, with detailed information for each issue.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

@@ -57,9 +57,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
 By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
-## Response
+<!--## Response
 
-If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.-->
 
 ## Examples
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printershare-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printershare-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,6 +212,10 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,di
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printershare-capabilities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printershare-capabilities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -3,7 +3,7 @@ title: "recipient resource type"
 description: "Represents information about a user in the sending or receiving end of an event, message or group post. "
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: mail
 author: "abheek-das"
 ---
 

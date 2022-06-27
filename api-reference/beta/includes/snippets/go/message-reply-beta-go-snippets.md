@@ -10,17 +10,26 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 message := msgraphsdk.NewMessage()
 requestBody.SetMessage(message)
-message.SetAdditionalData(map[string]interface{}{
-	"toRecipients":  []Object {
-	}
+message.SetToRecipients( []Recipient {
+	msgraphsdk.NewRecipient(),
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "samanthab@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Samantha Booth"
+	emailAddress.SetName(&name)
+	msgraphsdk.NewRecipient(),
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "randiw@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
+name := "Randi Welch"
+	emailAddress.SetName(&name)
 }
 comment := "Samantha, Randi, would you name the group please?"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).Reply().Post(options)
+graphClient.Me().MessagesById(&messageId).Reply(message-id).Post(requestBody)
 
 
 ```

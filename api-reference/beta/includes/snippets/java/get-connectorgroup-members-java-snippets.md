@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ConnectorCollectionPage members = graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}").members()
+ConnectorCollectionWithReferencesPage members = graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}").members()
 	.buildRequest()
 	.get();
 

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 comment := "comment-value"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.ReplyAllRequestBuilderPostOptions{
-	Body: requestBody,
-}
 messageId := "message-id"
-graphClient.Me().MessagesById(&messageId).ReplyAll().Post(options)
+graphClient.Me().MessagesById(&messageId).ReplyAll(message-id).Post(requestBody)
 
 
 ```

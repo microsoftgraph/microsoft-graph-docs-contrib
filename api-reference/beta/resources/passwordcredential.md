@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entitites is a collection of **passwordCredential** objects.
 
 > [!IMPORTANT]
-> Using POST or PATCH to set **passwordCredential** is not supported. Use the following addPassword and removePassword methods to update the password for an application or a servicePrincipal:
+> Using POST or PATCH to set **passwordCredential** is not supported. Use the following addPassword and removePassword methods to update the password or secret for an application or a servicePrincipal:
 >
 > - [application: addPassword](../api/application-addpassword.md)
 > - [application: removePassword](../api/application-removepassword.md)

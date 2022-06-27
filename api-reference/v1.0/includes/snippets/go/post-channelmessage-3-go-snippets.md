@@ -12,7 +12,14 @@ createdDateTime, err := time.Parse(time.RFC3339, "2019-02-04T19:58:15.511Z")
 requestBody.SetCreatedDateTime(&createdDateTime)
 from := msgraphsdk.NewChatMessageFromIdentitySet()
 requestBody.SetFrom(from)
-from.SetAdditionalData(map[string]interface{}{
+user := msgraphsdk.NewIdentity()
+from.SetUser(user)
+id := "id-value"
+user.SetId(&id)
+displayName := "John Doe"
+user.SetDisplayName(&displayName)
+user.SetAdditionalData(map[string]interface{}{
+	"userIdentityType": "aadUser",
 }
 body := msgraphsdk.NewItemBody()
 requestBody.SetBody(body)
@@ -35,12 +42,9 @@ requestBody.SetHostedContents( []ChatMessageHostedContent {
 		"contentType": "image/png",
 	}
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(options)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).Messages().Post(requestBody)
 
 
 ```

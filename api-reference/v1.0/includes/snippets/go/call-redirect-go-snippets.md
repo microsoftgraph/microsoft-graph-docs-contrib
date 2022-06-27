@@ -16,11 +16,8 @@ requestBody.SetTargets( []InvitationParticipantInfo {
 }
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 requestBody.SetCallbackUri(&callbackUri)
-options := &msgraphsdk.RedirectRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Redirect().Post(options)
+graphClient.Communications().CallsById(&callId).Redirect(call-id).Post(requestBody)
 
 
 ```

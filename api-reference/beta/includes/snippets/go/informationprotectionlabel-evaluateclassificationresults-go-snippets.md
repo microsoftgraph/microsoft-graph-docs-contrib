@@ -31,11 +31,10 @@ requestBody.SetClassificationResults( []ClassificationResult {
 headers := map[string]string{
 	"User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateClassificationResultsRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.EvaluateClassificationResultsRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateClassificationResults().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

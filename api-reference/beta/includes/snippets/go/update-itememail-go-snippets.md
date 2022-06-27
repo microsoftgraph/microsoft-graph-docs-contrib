@@ -12,12 +12,9 @@ displayName := "Business Email"
 requestBody.SetDisplayName(&displayName)
 type := "work"
 requestBody.SetType(&type)
-options := &msgraphsdk.ItemEmailRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 itemEmailId := "itemEmail-id"
-graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(options)
+graphClient.UsersById(&userId).Profile().EmailsById(&itemEmailId).Patch(requestBody)
 
 
 ```

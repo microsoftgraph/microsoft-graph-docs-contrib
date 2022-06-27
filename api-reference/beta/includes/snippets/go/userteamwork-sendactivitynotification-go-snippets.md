@@ -22,16 +22,13 @@ content := "New Task Created"
 previewText.SetContent(&content)
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "taskId",
-		"value": "Task 12322",
-	}
-}
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
+name := "taskId"
+	SetName(&name)
+value := "Task 12322"
+	SetValue(&value)
 }
 userId := "user-id"
-graphClient.UsersById(&userId).Teamwork().SendActivityNotification().Post(options)
+graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(requestBody)
 
 
 ```

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## Optional query parameters

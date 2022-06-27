@@ -39,10 +39,7 @@ role := "project management"
 detail.SetRole(&role)
 summary := "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
 detail.SetSummary(&summary)
-options := &msgraphsdk.ProjectsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Projects().Post(options)
+result, err := graphClient.Me().Profile().Projects().Post(requestBody)
 
 
 ```

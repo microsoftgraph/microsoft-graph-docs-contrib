@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var meetingRegistrant = new MeetingRegistrant
+var meetingRegistrantBase = new MeetingRegistrant
 {
 	FirstName = "Frederick",
 	LastName = "Cormier",
@@ -28,6 +28,6 @@ var meetingRegistrant = new MeetingRegistrant
 
 await graphClient.Users["{user-id}"].OnlineMeetings["{onlineMeeting-id}"].Registration.Registrants
 	.Request()
-	.AddAsync(meetingRegistrant);
+	.AddAsync(meetingRegistrantBase);
 
 ```

@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
 	Expand: "appDefinitions($expand=bot)",
 	Filter: "appDefinitions/any(a:a/bot%20ne%20null)",
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().Get(options)
+result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

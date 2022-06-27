@@ -28,16 +28,13 @@ recipient.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetTemplateParameters( []KeyValuePair {
 	msgraphsdk.NewKeyValuePair(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "taskId",
-		"value": "Task 12322",
-	}
-}
-options := &msgraphsdk.SendActivityNotificationRequestBuilderPostOptions{
-	Body: requestBody,
+name := "taskId"
+	SetName(&name)
+value := "Task 12322"
+	SetValue(&value)
 }
 chatId := "chat-id"
-graphClient.ChatsById(&chatId).SendActivityNotification().Post(options)
+graphClient.ChatsById(&chatId).SendActivityNotification(chat-id).Post(requestBody)
 
 
 ```

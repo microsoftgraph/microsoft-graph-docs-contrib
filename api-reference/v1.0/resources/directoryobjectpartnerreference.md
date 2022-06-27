@@ -35,11 +35,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "description": "string ",
-  "displayName": "string",
-  "externalPartnerTenantId": "string (identifier)",
-  "id": "string (identifier)",
-  "objectType": "string"
+  "description": "String ",
+  "displayName": "String",
+  "externalPartnerTenantId": "String (identifier)",
+  "id": "String (identifier)",
+  "objectType": "String"
 }
 ```
 

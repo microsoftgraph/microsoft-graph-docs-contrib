@@ -2,7 +2,7 @@
 title: "List messages in a chat"
 description: "Retrieve the list of messages in a chat. "
 ms.localizationpriority: high
-author: "RamjotSingh"
+author: RamjotSingh
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allchatmessages-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-allchatmessages-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

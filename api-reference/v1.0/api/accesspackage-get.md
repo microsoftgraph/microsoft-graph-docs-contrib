@@ -35,7 +35,9 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties and the `$expand` parameter to retrieve relationships.
+
+For example, to retrieve the access package assignment policies, add `$expand=assignmentPolicies`.
 
 ## Request headers
 
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

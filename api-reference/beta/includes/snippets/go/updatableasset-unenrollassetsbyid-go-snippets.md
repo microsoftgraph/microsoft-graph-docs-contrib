@@ -17,10 +17,7 @@ requestBody.SetIds( []String {
 	"String",
 	"String",
 }
-options := &msgraphsdk.UnenrollAssetsByIdRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Admin().Windows().Updates().UpdatableAssets().UnenrollAssetsById().Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssets().UnenrollAssetsById().Post(requestBody)
 
 
 ```

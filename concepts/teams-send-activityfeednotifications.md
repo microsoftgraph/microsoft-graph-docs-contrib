@@ -104,6 +104,10 @@ Because a Teams app can be installed for a user, in a team, or in a chat, the no
 - [Send notification to user in a team](/graph/api/team-sendactivitynotification)
 - [Send notification to user](/graph/api/userteamwork-sendactivitynotification)
 
+Additionally, notifications can be sent in bulk up to 100 users at a time:
+
+* [Send notifications to multiple users in bulk](/graph/api/teamwork-sendactivitynotificationtorecipients)
+
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
 > **Note:** The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as activity icon. In an application-only context, the Teams app icon is used as the avatar and activity icon is ommited.
@@ -382,6 +386,68 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
+### Example 7: Notify multiple users about pending finance approval requests
+
+The following example shows how to send an activity feed notification to multiple users in bulk. This example notifies multiple stakeholders about pending finance approval requests.
+
+> **Note:** The ability to send notifications to multiple users in bulk is currently only available in beta.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "teamwork_sendactivitynotificationtorecipients"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/{teamsAppId}"
+    },
+    "activityType": "pendingFinanceApprovalRequests",
+    "previewText": {
+        "content": "Internal spending team has a pending finance approval requests"
+    },
+    "recipients": [
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "ab88234e-0874-477c-9638-d144296ed04f"
+    	},
+    	{
+        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        	"userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+    	}
+    ],
+    "templateParameters": [
+        {
+            "name": "pendingRequestCount",
+            "value": "5"
+        }
+    ] 
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+
+``` http
+HTTP/1.1 202 Accepted
+```
+
 ## Customizing how the notifications alert you
 
 Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps will appear in the list for the user to choose from, as shown in the following screenshot.
@@ -416,4 +482,5 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 ## See also
 
-[Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md).
+* [Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md)
+* [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)

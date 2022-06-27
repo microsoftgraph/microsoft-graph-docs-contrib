@@ -14,7 +14,7 @@ var addLicenses = new List<AssignedLicense>()
 		{
 			Guid.Parse("11b0131d-43c8-4bbb-b2c8-e80f9a50834a")
 		},
-		SkuId = Guid.Parse("guid")
+		SkuId = Guid.Parse("45715bb8-13f9-4bf6-927f-ef96c102d394")
 	}
 };
 

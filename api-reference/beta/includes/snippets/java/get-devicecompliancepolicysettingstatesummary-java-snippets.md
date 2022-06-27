@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content response = graphClient.tenantRelationships().managedTenants().deviceCompliancePolicySettingStateSummarys().{deviceCompliancePolicySettingStateSummaryId}()
+DeviceCompliancePolicySettingStateSummary deviceCompliancePolicySettingStateSummary = graphClient.tenantRelationships().managedTenants().deviceCompliancePolicySettingStateSummaries("{deviceCompliancePolicySettingStateSummaryId}")
 	.buildRequest()
 	.get();
 

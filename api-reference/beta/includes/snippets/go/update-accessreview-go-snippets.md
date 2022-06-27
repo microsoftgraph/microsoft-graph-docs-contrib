@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAccessReview()
 displayName := "TestReview new name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.AccessReviewRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 accessReviewId := "accessReview-id"
-graphClient.AccessReviewsById(&accessReviewId).Patch(options)
+graphClient.AccessReviewsById(&accessReviewId).Patch(requestBody)
 
 
 ```

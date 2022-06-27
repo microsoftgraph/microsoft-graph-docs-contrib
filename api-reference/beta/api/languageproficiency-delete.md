@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/languages/{id}
 [!INCLUDE [sample-code](../includes/snippets/go/delete-languageproficiency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-languageproficiency-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

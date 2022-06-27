@@ -18,9 +18,15 @@ Not all files can be converted into all formats.
 
 To download the item in its original format, see [download an item's contents](driveitem-get-content.md).
 
-## Prerequisites
+## Permissions
 
-To call this API, the user must have granted the application read access to the file the app wishes to convert.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP request
 
@@ -37,7 +43,6 @@ GET /drive/root:/{path and filename}:/content?format={format}
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | Specify the format the item's content should be downloaded as. |
 
-
 ### Format options
 
 The following values are valid for the **format** parameter:
@@ -53,7 +58,6 @@ The following values are valid for the **format** parameter:
 | _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
 ## Example
-
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
