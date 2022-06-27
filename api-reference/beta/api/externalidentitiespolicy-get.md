@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ExternalIdentities|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|olicy.Read.All, Policy.ReadWrite.ExternalIdentities|
+|Application|Policy.Read.All, Policy.ReadWrite.ExternalIdentities|
 
 ## HTTP request
 
