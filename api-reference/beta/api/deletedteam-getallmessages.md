@@ -47,7 +47,7 @@ GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages
 
 ## Optional query parameters
 
-You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
+You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
 as shown in the following examples.  
 
 ```http
@@ -64,7 +64,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [chatMessage](../resources/chatmessage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [chatMessage](../resources/chatmessage.md) objects in the response body.
 
 ## Examples
 
@@ -72,7 +72,7 @@ If successful, this function returns a `200 OK` response code and a [chatMessage
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "deletedteamthis.getallmessages"
+  "name": "deletedteamthis_getallmessages"
 }
 -->
 ``` http
