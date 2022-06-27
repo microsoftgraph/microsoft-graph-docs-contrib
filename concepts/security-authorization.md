@@ -1,7 +1,6 @@
 ---
 title: "Authorization and the Microsoft Graph Security API"
-description: "Security data accessible via the Microsoft Graph Security API is sensitive and protected by both permissions and Azure Active Directory (Azure AD) roles."
-author: "preetikr"
+description: "The Microsoft Graph Security API supports both application-level and user-delegated authorization. Learn how to manage authorization, register an application, and more."
 ms.localizationpriority: high
 ms.prod: "security"
 ---
@@ -12,16 +11,20 @@ Security data accessible via the Microsoft Graph Security API is sensitive and p
 
 The Microsoft Graph Security API supports two types of authorization:
 
-- **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. 
-    >**Note:** This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
-- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Security Administrator - in addition to the application having been granted the required permissions.
+- **Application-level authorization:** There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization.
+
+   > [!NOTE]
+   > This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
+
+- **User-delegated authorization:** A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Security Administrator - in addition to the application having been granted the required permissions.
 
 If you're calling the Microsoft Graph Security API from Graph Explorer:
 
 - The Azure AD tenant admin must explicitly grant consent for the requested permissions to the Graph Explorer application.
 - The user must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator).
 
->**Note**: Graph Explorer does not support application-level authorization.
+> [!NOTE]
+> Graph Explorer does not support application-level authorization.
 
 If you're calling the Microsoft Graph Security API from a custom or your own application:
 
@@ -53,7 +56,8 @@ For example, assume that you have an application, two Azure AD tenants, **T1** a
 - When users in tenant **T1** get an Azure AD token for the application, it only contains permission **P1**. Permissions granted to an application are recorded as snapshots of what was granted - they *do not change automatically* after the application registration (permission) changes.
 - The admin of tenant **T2** grants permissions **P1** and **P2** to the application. Now, when users in tenant **T2** get an Azure AD token for the application, the token will contain permissions **P1** and **P2**.
 
->**Note**: The Azure AD tokens for the application in tenant **T1** and the application in tenant **T2** contain different permissions, because each tenant admin has granted different permissions to the application.
+> [!NOTE]
+> The Azure AD tokens for the application in tenant **T1** and the application in tenant **T2** contain different permissions, because each tenant admin has granted different permissions to the application.
 
 - To make the application work again in tenant **T1**, the admin of tenant **T1** must explicitly grant permissions **P1** and **P2** to the application.
 
@@ -75,15 +79,16 @@ To register your application:
 5. Go to the app's **API permissions** page.
 6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
 
-    >**Note:** The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
+   > [!NOTE]
+   > The Microsoft Graph Security API requires the *.Read.All scope for GET queries, and the *.ReadWrite.All scope for PATCH/POST/DELETE queries.
 
     |Permission | Entity | Supported requests |
     |:----------|:-------|:-------------------|
-    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET |
-    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (preview) | GET, POST |
-    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET |
-    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) | GET, POST, PATCH |
-    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (preview) | GET, POST, PATCH, DELETE|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction) (preview) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction) (preview) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert)</br> &bull; [secureScores](/graph/api/resources/securescores) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert)</br> &bull; [secureScores](/graph/api/resources/securescores) </br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator) (preview) | GET, POST, PATCH, DELETE|
 
 7. Choose **Add permissions**.
 
@@ -114,13 +119,15 @@ To grant the permissions:
 
 - In a web browser, go to this URL, and sign in as a tenant administrator. The dialog box shows the list of permission the application requires, as specified in the application registration portal. Choose **OK** to grant the application these permissions.
 
-> **Note:** This step grants permissions to the application - not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions - even non-admin users.
+> [!NOTE]
+> This step grants permissions to the application - not to users. This means that all users belonging to the Azure AD tenant that use this application will be granted these permissions - even non-admin users.
 
 ## Assign Azure AD roles to users
 
 After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
->**Note:** You must be a tenant admin to perform this step.
+> [!NOTE]
+> You must be a tenant admin to perform this step.
 
 To assign a role to a user:
 
@@ -156,13 +163,15 @@ For applications that don't use any of the existing libraries, see [Get access o
 
 If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
 
->**Note:** If you're requesting user delegated authentication tokens, the parameter for the library is **Requested Scopes**. Use User.Read for this parameter instead of what the registered application requires. The **Requested Scopes** parameter does NOT affect the permissions contained in the returned authentication tokens. These are determined by the permissions that the tenant admin granted the application.
+> [!NOTE]
+> If you're requesting user delegated authentication tokens, the parameter for the library is **Requested Scopes**. Use User.Read for this parameter instead of what the registered application requires. The **Requested Scopes** parameter does NOT affect the permissions contained in the returned authentication tokens. These are determined by the permissions that the tenant admin granted the application.
 
 For example, if you're using the .NET MSAL library, call the following:
 
 `var accessToken = (await client.AcquireTokenAsync(scopes)).AccessToken;`
 
->**Note:** This example should use the least privileged permission, such as User.Read. However, the returned access token can contain permissions that were granted by the tenant admin for the current user tenant, such as User.Read.All or User.ReadWrite.All.
+> [!NOTE]
+> This example should use the least privileged permission, such as User.Read. However, the returned access token can contain permissions that were granted by the tenant admin for the current user tenant, such as User.Read.All or User.ReadWrite.All.
 
 A token (string) is returned by Azure AD that contains your authentication information and the permissions required by the application. Assign this token to the HTTP header as a bearer token, as shown in the following example.
 
