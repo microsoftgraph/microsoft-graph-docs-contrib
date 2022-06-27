@@ -9,8 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 onPremisesAgentId := "onPremisesAgent-id"
-onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentsById(&onPremisesAgentId).AgentGroupsById(&onPremisesAgentGroupId).Post()
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentsById(&onPremisesAgentId).AgentGroups().$ref().Post()
 
 
 ```

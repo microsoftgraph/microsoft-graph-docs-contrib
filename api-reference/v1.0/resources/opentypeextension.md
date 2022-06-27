@@ -33,8 +33,8 @@ Open extensions are supported by the following resources in the corresponding ve
 | [organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [user](user.md) | GA |
-| [Task](todotask.md)  | GA |
-| [Task list](todotasklist.md)  | GA |
+| [To-do task](todotask.md)  | GA |
+| [To-do task list](todotasklist.md)  | GA |
 
 >\* **Note:** Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 

@@ -111,6 +111,10 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [
+       "Important",
+       "Urgent"
+            ],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",

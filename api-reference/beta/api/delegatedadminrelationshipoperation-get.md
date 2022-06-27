@@ -104,7 +104,7 @@ Content-Type: application/json
   "id": "57e4479a-aafb-4d00-ab0f-8ce6027466cf",
   "operationType": "delegatedAdminAccessAssignmentUpdate",
   "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"status\":\"active\"}",
-  "status": "complete",
+  "status": "succeeded",
   "createdDateTime": "2022-02-11T19:27:31.4047395Z",
   "lastModifiedDateTime": "2022-02-11T19:27:31.4047395Z"
 }

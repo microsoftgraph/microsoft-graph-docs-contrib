@@ -37,13 +37,10 @@ requestBody.SetAvailabilityStartDateTime(&availabilityStartDateTime)
 availabilityEndDateTime, err := time.Parse(time.RFC3339, "2021-12-31T20:01:37Z")
 requestBody.SetAvailabilityEndDateTime(&availabilityEndDateTime)
 requestBody.SetLanguageTags( []String {
-	"en-US",
+	"en-us",
 }
 requestBody.SetPlatforms( []DevicePlatformType {
 	"ios",
-}
-requestBody.SetGroupIds( []String {
-	"groupId",
 }
 state := "published"
 requestBody.SetState(&state)

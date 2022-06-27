@@ -313,6 +313,10 @@ The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might re
 
 In the future, either permission will be sufficient to call both methods.
 
+### Linux-based devices can't be updated by an app with application permissions
+
+When an app with application permissions attempts to update any properties of the device object where the **operationSystem** property is `linux`, apart from the **extensionAttributes** property, the [Update device](/graph/api/device-update) API returns a `400 Bad request` error code with the error message "Properties other than ExtendedAttribute1..15 can be modified only on windows devices.". Use delegated permissions to update the properties of Linux-based devices.
+
 ## JSON batching
 
 ### Nested batches are not supported
@@ -461,6 +465,10 @@ The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions) shoul
 ### Incomplete objects are returned when using getByIds request
 
 Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids) should return full objects. However, currently [user](/graph/api/resources/user) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+
+### showInAddressList property is out of sync with Microsoft Exchange
+
+When querying users through Microsoft Graph, the **showInAddressList** property may not indicate the same status shown in Microsoft Exchange. We recommend you manage this functionality directly with Microsoft Exchange through the Microsoft 365 admin center and not to use this property in Microsoft Graph.
 
 ## Query parameters 
 

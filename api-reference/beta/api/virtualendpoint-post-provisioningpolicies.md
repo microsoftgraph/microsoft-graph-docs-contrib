@@ -153,6 +153,7 @@ Content-Type: application/json
   "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
   "windowsSettings": {
     "language": "en-US"
-  }
+  },
+  "managedBy": "windows365"
 }
 ```

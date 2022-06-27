@@ -174,6 +174,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |workProfilePasswordPreviousPasswordCountToBlock|Int32|Indicates the length of the work profile password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
+|workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -444,7 +445,8 @@ Here is a JSON representation of the resource.
   "workProfilePasswordMinimumSymbolCharacters": 1024,
   "workProfilePasswordPreviousPasswordCountToBlock": 1024,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 1024,
-  "workProfilePasswordRequiredType": "String"
+  "workProfilePasswordRequiredType": "String",
+  "workProfilePasswordRequireUnlock": "String"
 }
 ```
 

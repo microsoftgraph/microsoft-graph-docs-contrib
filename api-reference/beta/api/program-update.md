@@ -1,5 +1,5 @@
 ---
-title: "Update program"
+title: "Update program (deprecated)"
 description: "In the Azure AD access reviews feature, update an existing program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,7 +7,7 @@ ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
-# Update program
+# Update program (deprecated)
 
 Namespace: microsoft.graph
 

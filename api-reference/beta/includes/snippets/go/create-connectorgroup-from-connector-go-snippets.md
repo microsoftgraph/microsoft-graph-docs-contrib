@@ -13,8 +13,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 connectorId := "connector-id"
-connectorGroupId := "connectorGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorsById(&connectorId).MemberOfById(&connectorGroupId).Post(requestBody)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorsById(&connectorId).MemberOf().$ref().Post(requestBody)
 
 
 ```

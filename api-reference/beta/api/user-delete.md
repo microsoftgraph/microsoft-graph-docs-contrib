@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
-The work or school account must be in one of the following roles:
+The calling user or app must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
 + Global Administrator
 + User Administrator
 

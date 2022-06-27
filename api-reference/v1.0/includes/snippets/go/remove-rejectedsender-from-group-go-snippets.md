@@ -7,15 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderDeleteQueryParameters{
+requestParameters := &msgraphsdk.RefRequestBuilderDeleteQueryParameters{
 	Id: "https://graph.microsoft.com/v1.0/users/%7Buser-id%7D",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderDeleteRequestConfiguration{
+options := &msgraphsdk.RefRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
+graphClient.GroupsById(&groupId).RejectedSenders().$ref().DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

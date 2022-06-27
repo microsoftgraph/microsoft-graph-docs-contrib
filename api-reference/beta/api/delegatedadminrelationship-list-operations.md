@@ -107,7 +107,7 @@ Content-Type: application/json
       "id": "e7de9158-df46-478e-820c-d6eff099d27b",
       "operationType": "delegatedAdminAccessAssignmentUpdate",
       "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"11cc3849-c298-455f-9a11-b7be350ef352\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"f2ef992c-3afb-46b9-b7cf-a126ee74c451\"},{\"roleDefinitionId\":\"62e90394-69f5-4237-9190-012177145e10\"}]},\"status\":\"active\"}",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-09T22:17:43.9821847Z",
       "lastModifiedDateTime": "2022-02-09T22:17:43.9821847Z"
     },
@@ -117,7 +117,7 @@ Content-Type: application/json
       "id": "f7a7dad4-8cc4-40d7-be44-dd3501b1f4e0",
       "operationType": "delegatedAdminAccessAssignmentUpdate",
       "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"8d56bce3-440f-4b4f-b5c2-cc0bcbd0199c\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"29232cdf-9323-42fd-ade2-1d097af3e4de\"},{\"roleDefinitionId\":\"88d8e3e3-8f55-4a1e-953a-9b9898b8876b\"}]},\"status\":\"active\"}",
-      "status": "complete",
+      "status": "succeeded",
       "createdDateTime": "2022-02-11T20:32:05.4659288Z",
       "lastModifiedDateTime": "2022-02-11T20:34:42.9202474Z"
     }

@@ -157,6 +157,7 @@ Content-type: application/json
             "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": "String",
             "staffMemberIds": [],
             "invoiceAmount": 10,
             "invoiceId": "1002",
