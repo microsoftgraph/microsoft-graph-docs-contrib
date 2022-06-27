@@ -45,7 +45,6 @@ PATCH /admin/reportSettings
 | -------------- | -------------- | ------------------------------------------- | --------- | --------- | --------- |
 | `displayConcealedNames` | `Boolean` | `true` represent all reports will display concealed user, group, and site names. `false` represent all reports will display real user, group and site names. The value is connected to a checkbox in the M365 Admin Center Setting. | No | Yes | No |
 
-
 ## Response
 
 If successful, this method returns a `204 NoContent` response. 
