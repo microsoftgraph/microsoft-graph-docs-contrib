@@ -18,10 +18,7 @@ number := "USPTO-3954432633"
 requestBody.SetNumber(&number)
 webUrl := "https://patents.gov/3954432633"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.PatentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Patents().Post(options)
+result, err := graphClient.Me().Profile().Patents().Post(requestBody)
 
 
 ```

@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-When you delete a connection, permissions to the service are removed from the specified Azure resources.
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-You cannot delete an on-premises connection once it passes health check, which is indicated by the `healthCheckStatus` property.
+When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 
-You cannot delete a connection when it's in use either, as indicated by the `inUse` property.
+You cannot delete an Azure network connection when it's in use, as indicated by the `inUse` property.
 
 ## Permissions
 
@@ -91,12 +91,15 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 [!INCLUDE [sample-code](../includes/snippets/go/delete-onpremisesconnections-from-virtualendpoint-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-onpremisesconnections-from-virtualendpoint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

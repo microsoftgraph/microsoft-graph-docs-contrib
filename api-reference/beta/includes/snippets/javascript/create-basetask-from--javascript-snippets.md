@@ -10,11 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const tasks = {
-  '@odata.type': '#microsoft.graph.baseTask',
-  body: {
-    '@odata.type': 'microsoft.graph.itemBody'
-  },
+const baseTask = {
+  '@odata.type': '#microsoft.graph.task',
+  textBody: 'String',
   bodyLastModifiedDateTime: 'String (timestamp)',
   completedDateTime: 'String (timestamp)',
   dueDateTime: {
@@ -29,13 +27,13 @@ const tasks = {
   },
   displayName: 'String',
   status: 'String',
-  personalProperties: {
-    '@odata.type': 'microsoft.graph.personalTaskProperties'
+  viewpoint: {
+    '@odata.type': 'microsoft.graph.taskViewpoint'
   }
 };
 
 await client.api('/me/tasks/lists/AQMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNi/tasks')
 	.version('beta')
-	.post(tasks);
+	.post(baseTask);
 
 ```

@@ -14,14 +14,16 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [bookingService](../resources/bookingservice.md) objects in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +74,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@cont
 [!INCLUDE [sample-code](../includes/snippets/go/get-services-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-services-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -98,6 +104,7 @@ Content-type: application/json
             "defaultPrice": 0,
             "defaultPriceType": "notSet",
             "description": "Not sure how to choose? Let us introduce you to our traditional family recipes.",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "This is where you can add notes about this service that only you and your staff see.",
             "preBuffer": "PT0S",
@@ -105,6 +112,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4ABB9Qgce5",
             "schedulingPolicy": null,
             "defaultLocation": {
@@ -140,6 +148,7 @@ Content-type: application/json
             "defaultPrice": 10,
             "defaultPriceType": "fixedPrice",
             "description": "Catered individual bento box lunch",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -147,6 +156,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": false,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/gpcGIq92Z0u5h6ABB9Qgrt5",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",
@@ -188,6 +198,7 @@ Content-type: application/json
             "defaultPrice": 30,
             "defaultPriceType": "fixedPrice",
             "description": "Individual kaiseki lunch delivery",
+            "languageTag": "en-US",
             "isHiddenFromCustomers": false,
             "notes": "Home-cooked special",
             "preBuffer": "PT5M",
@@ -195,6 +206,7 @@ Content-type: application/json
             "staffMemberIds": [],
             "isLocationOnline": true,
             "smsNotificationsEnabled": true,
+            "isAnonymousJoinEnabled": false,
             "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@contoso.onmicrosoft.com/bookings/s/bplGIq92Z0u5h4FWB9Qgvu7",
             "defaultLocation": {
                 "displayName": "Contoso Lunch Delivery",

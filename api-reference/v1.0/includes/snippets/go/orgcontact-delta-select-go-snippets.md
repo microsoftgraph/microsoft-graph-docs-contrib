@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.OrgContactRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
 	Select: "displayName,jobTitle,mail",
 }
-options := &msgraphsdk.OrgContactRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-orgContactId := "orgContact-id"
-result, err := graphClient.ContactsById(&orgContactId).Get(options)
+result, err := graphClient.Contacts().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -120,7 +120,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/apiConnectors/$entity",
-    "id": "guid",
+    "id": "45715bb8-13f9-4bf6-927f-ef96c102d394",
     "displayName": "My API connector",
     "targetUrl": "https://api.contoso.com/endpoint",
     "authenticationConfiguration": {

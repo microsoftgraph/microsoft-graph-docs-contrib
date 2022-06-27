@@ -1,7 +1,7 @@
 ---
 title: "Delete federatedIdentityCredential"
 description: "Deletes a federatedIdentityCredential object."
-author: "kjyam98"
+author: "shahzad-khalid"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

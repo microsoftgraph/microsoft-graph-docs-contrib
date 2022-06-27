@@ -14,11 +14,8 @@ description := "Updated description"
 requestBody.SetDescription(&description)
 externalId := "Updated externalId"
 requestBody.SetExternalId(&externalId)
-options := &msgraphsdk.CaseRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).Patch(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).Patch(requestBody)
 
 
 ```

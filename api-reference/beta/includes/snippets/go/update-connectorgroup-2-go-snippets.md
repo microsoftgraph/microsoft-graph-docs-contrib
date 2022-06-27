@@ -12,12 +12,9 @@ name := "name-value"
 requestBody.SetName(&name)
 region := "region-value"
 requestBody.SetRegion(&region)
-options := &msgraphsdk.ConnectorGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 connectorGroupId := "connectorGroup-id"
-graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(options)
+graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).ConnectorGroupsById(&connectorGroupId).Patch(requestBody)
 
 
 ```

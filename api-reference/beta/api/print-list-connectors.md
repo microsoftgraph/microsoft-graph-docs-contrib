@@ -3,7 +3,7 @@ title: List printConnectors
 description: Retrieve a list of connectors.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/print/connectors
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-connectors-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connectors-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create call"
 description: "Create a new call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Notes:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
 >
-> Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
-##### Request
+#### Request
 
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
@@ -70,7 +70,8 @@ The following example shows a request that makes a peer-to-peer call between the
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -96,6 +97,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -122,9 +127,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -214,7 +223,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -245,7 +254,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -278,18 +287,109 @@ Content-Type: application/json
 }
 ```
 
+#### Notification - content sharing started
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing updated
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Notification - content sharing ended
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 
 > **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
-##### Request
+#### Request
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted locally by the application. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -355,6 +455,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 `<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
@@ -367,7 +471,7 @@ The following is an example of an audio media session blob.
 
 >**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.
 
-##### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -447,7 +551,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -456,7 +560,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -516,7 +621,7 @@ Content-Type: application/json
 This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
-##### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -525,7 +630,8 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```json
@@ -588,9 +694,9 @@ This information can be obtained from [Get Online Meetings API](../api/onlinemee
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
 
-> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
+> **Note:** This example needs the `Calls.JoinGroupCalls.All` permission or the `Calls.JoinGroupCalls.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 
@@ -661,9 +767,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -750,7 +860,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - establishing
+#### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/callback
@@ -800,7 +910,7 @@ Content-Type: application/json
 
 ```
 
-##### Notification - established
+#### Notification - established
 
 ```http
 POST https://bot.contoso.com/callback
@@ -849,7 +959,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - roster
+#### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
@@ -950,7 +1060,7 @@ Content-Type: application/json
 ### Example 6: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media, update the media config with the [appHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown in the following example.
 
->**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](https://aka.ms/teams-rsc).
+>**Note:** This example needs the `Calls.AccessMedia.All` permission or the `Calls.AccessMedia.Chat` [resource-specific permission](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
@@ -1002,7 +1112,7 @@ The values of authorization token, callback url, application id, application nam
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "example",
@@ -1060,7 +1170,7 @@ The display name is the name you want to be displayed in the meeting for your gu
 
 > **Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.
 
-##### Request
+#### Request
 
 <!-- {
   "blockType": "example",
@@ -1125,7 +1235,7 @@ Content-Type: application/json
 
 > **Note:** The guest join depends on the tenant settings for meeting. The application might be put in lobby waiting to be admitted by a user. This is defined by the `isInLobby` property
 
-##### Notification - roster
+#### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1196,7 +1306,8 @@ The following example shows the request to make a peer-to-peer call between the 
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-2",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -1253,6 +1364,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1360,7 +1475,8 @@ The following example shows a request to make a peer-to-peer call between the bo
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-3",
-  "@odata.type": "microsoft.graph.call"
+  "@odata.type": "microsoft.graph.call",
+  "truncated": true
 }-->
 
 ```http
@@ -1418,6 +1534,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

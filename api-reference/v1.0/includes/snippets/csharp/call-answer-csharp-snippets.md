@@ -21,7 +21,7 @@ var acceptedModalities = new List<Modality>()
 var participantCapacity = 200;
 
 await graphClient.Communications.Calls["{call-id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities,participantCapacity)
+	.Answer(callbackUri,mediaConfig,acceptedModalities,participantCapacity,null)
 	.Request()
 	.PostAsync();
 

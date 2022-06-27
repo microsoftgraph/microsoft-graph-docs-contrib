@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses
+POST /solutions/bookingBusinesses
 
 ```
 ## Request headers
@@ -55,7 +55,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -93,7 +92,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

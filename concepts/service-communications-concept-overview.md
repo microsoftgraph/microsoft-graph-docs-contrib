@@ -1,13 +1,14 @@
 ---
-title: "Overview for accessing service health and communications through Microsoft Graph"
-description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about  Microsoft cloud services."
+title: "Access service health and communications in Microsoft Graph"
+description: "Use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services."
 author: "payiAzure"
 ms.localizationpriority: high
 ms.prod: "service-communications"
 ms.custom: scenarios:getting-started
 ---
 
-# Overview for accessing service health and communications in Microsoft Graph
+# Access service health and communications in Microsoft Graph
+
 You can use the service communications API in Microsoft Graph to access the health status and message center posts about Microsoft cloud services. The actual health status and posts correspond to the Microsoft 365 and Dynamics 365 services that are supported by the API and subscribed by the tenant.
 
 ## Why integrate with service health and communications data?
@@ -30,7 +31,6 @@ Create applications with customer-facing dashboards to show the health of Micros
 ## Dashboards examples in Microsoft 365 admin center
 This section shows examples in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) that uses the service communications API to build respective health dashboards. Sign in to the admin center with an admin account, then click **Health** to see the following dashboards:
 - [Service health](#service-health-dashboard)
-- [Windows release health](#windows-release-health-dashboard)
 - [Message center](#message-center-dashboard)
 
 ### Service health dashboard
@@ -39,21 +39,13 @@ From the **Service health** dashboard, you can view the health of your subscribe
 
 **Figure 1. Service health dashboard in Microsoft 365 admin center**
 
-![Screenshot of Microsoft 365 admin center service health dashboard for a user](images/service-communications-concept-overview-admin-center-serviceHealth2.png)
-
-### Windows release health dashboard
-
-From the **Windows release health** dashboard, you can view essential information about monthly quality and feature updates, and the latest features and enhancements for Windows. See an example as demarcated in figure 2.
-
-**Figure 2. Windows release health dashboard in Microsoft 365 admin center**
-
-![Screenshot of Microsoft 365 admin center Windows realease health dashboard for a user](images/service-communications-concept-overview-admin-center-windowshealth2.png)
+![Screenshot of Microsoft 365 admin center service health dashboard for a user](images/service-communications-concept-overview-admin-center-servicehealth2.png)
 
 
 ### Message center dashboard
 From the **Message center** dashboard, you can view upcoming changes, including new and changed features, planned maintenance, and other important announcements. See examples as demarcated in figure 3.
 
-**Figure 3. Message center dashboard in Microsoft 365 admin center**
+**Figure 2. Message center dashboard in Microsoft 365 admin center**
 
 ![Screenshot of Microsoft 365 admin center message center dashboard for a user](images/service-communications-concept-overview-admin-center-messagecenter2.png)
 

@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response

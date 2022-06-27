@@ -21,11 +21,8 @@ user.SetDisplayName(&displayName)
 transferTarget.SetAdditionalData(map[string]interface{}{
 	"endpointType": "default",
 }
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer().Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

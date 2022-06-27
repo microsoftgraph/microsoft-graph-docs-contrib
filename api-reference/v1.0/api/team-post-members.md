@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
+> [!NOTE] 
+> The **roles** property will be empty by default for all members. This property only contains additional qualifiers when relevant - for example, if the member has `owner` privileges, the roles property contains `owner` as one of the values. Similarly, if the member is a guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -21,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application| TeamMember.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+> [!NOTE]
+> Using application permissions to [add guest members](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide&preserve-view=true) to a team is not supported.
 
 ## HTTP request
 
@@ -89,6 +94,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversationmember-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationmember-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -159,6 +168,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversationmember-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationmember-upn-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

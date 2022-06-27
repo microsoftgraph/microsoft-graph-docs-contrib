@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 [!INCLUDE [sample-code](../includes/snippets/go/list-attendancerecord-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attendancerecord-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -118,6 +122,7 @@ Content-Type: application/json
       "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
+      "registrantId": null,
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
         "displayName": "Frederick Cormier",
@@ -135,6 +140,7 @@ Content-Type: application/json
       "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
+      "registrantId": null,
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
         "displayName": "Lisa Adkins",

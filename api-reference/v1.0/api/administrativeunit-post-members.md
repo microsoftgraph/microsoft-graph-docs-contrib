@@ -1,6 +1,6 @@
 ---
 title: "Add a member"
-description: "Use this API to add a member (user or group) to an administrative unit."
+description: "Use this API to add a member (user, group, or device) to an administrative unit."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to add a member (user or group) to an administrative unit.
-
-`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+Use this API to add a member (user, group, or device) to an administrative unit. Currently it's only possible to add one member at a time to an administrative unit.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,9 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
+
+To add a member to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Privileged Role Administrator
+* Global Administrator
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +40,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-type | application/json. Required. |
 
 ## Request body
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
 
 ## Response
 
@@ -53,7 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "post_administrativeUnits_members"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -82,9 +85,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 ### Response
 Here is an example of the response.

@@ -115,10 +115,8 @@ Content-Type: application/json
       "mail": "AlexW@contoso.com"
     }
   },
-  "approval@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
   "approval": {
     "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-    "stages@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/stages",
     "stages": [
       {
         "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

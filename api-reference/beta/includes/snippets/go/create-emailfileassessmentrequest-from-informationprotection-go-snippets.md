@@ -17,10 +17,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 	"contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....",
 }
-options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
 
 
 ```

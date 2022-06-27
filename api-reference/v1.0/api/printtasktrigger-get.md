@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers/{pr
 [!INCLUDE [sample-code](../includes/snippets/go/get-printtasktrigger-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printtasktrigger-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

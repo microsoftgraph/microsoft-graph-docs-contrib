@@ -15,6 +15,11 @@ MSGraphManagedTenantsTenantCustomizedInformation *tenantCustomizedInformation = 
 [tenantCustomizedInformation setTenantId:@"String"];
 NSMutableArray *contactsList = [[NSMutableArray alloc] init];
 MSGraphManagedTenantsTenantContactInformation *contacts = [[MSGraphManagedTenantsTenantContactInformation alloc] init];
+[contacts setName:@"String"];
+[contacts setTitle:@"String"];
+[contacts setEmail:@"String"];
+[contacts setPhone:@"String"];
+[contacts setNotes:@"String"];
 [contactsList addObject: contacts];
 [tenantCustomizedInformation setContacts:contactsList];
 [tenantCustomizedInformation setWebsite:@"String"];

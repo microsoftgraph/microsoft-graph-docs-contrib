@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies
+GET /solutions/bookingCurrencies
 ```
 ## Optional query parameters
 This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response, including $count, $filter, $select, $skip, and $top.

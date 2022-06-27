@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Create a new [application](../resources/application.md) object.
 
 > [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords for an application.
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Application.ReadWrite.All |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -81,6 +81,10 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-application-from-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-application-from-applications-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

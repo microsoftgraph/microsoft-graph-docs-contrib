@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 284
+Content-Length: 351
 
 {
   "value": {
@@ -72,7 +72,8 @@ Content-Length: 284
     "activeDevices": 13,
     "batteryCapacityGood": 3,
     "batteryCapacityFair": 3,
-    "batteryCapacityPoor": 3
+    "batteryCapacityPoor": 3,
+    "lastRefreshedDateTime": "2017-01-01T00:02:37.7100903-08:00"
   }
 }
 ```

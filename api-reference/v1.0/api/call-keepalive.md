@@ -1,7 +1,7 @@
 ---
 title: "call: keepAlive"
 description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call stays alive."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -26,7 +26,9 @@ One of the following permissions may be required to call this API. To learn more
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Application                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -78,6 +80,10 @@ POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-95
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/keep-alive-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/keep-alive-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

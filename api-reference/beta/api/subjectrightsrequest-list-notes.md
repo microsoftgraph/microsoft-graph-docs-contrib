@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -101,11 +104,17 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/privacy/subjectRightsRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
     "value": [
         {
-            "id": "String (identifier)",
-            "createdDateTime": "String (timestamp)",
-            "author": { "@odata.type": "microsoft.graph.identitySet"},
+            "id": "73A1E594-D973-4740-B1CC-42FD21727543",
+            "createdDateTime": "2022-06-20T22:42:28Z",
+            "author": {
+                "user": {
+                    "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+                    "displayName": "srradmin@contoso.com"
+                }
+            },
             "content": {
-                 "@odata.type": "microsoft.graph.itemBody"
+                "content": "Please review all the files tagged with follow up.",
+                "contentType": "text"
             }
         }
     ]

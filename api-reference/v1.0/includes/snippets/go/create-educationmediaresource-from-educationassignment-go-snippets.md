@@ -18,12 +18,9 @@ resource.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "microsoft.graph.educationMediaResource",
 	"fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF",
 }
-options := &msgraphsdk.ResourcesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(requestBody)
 
 
 ```

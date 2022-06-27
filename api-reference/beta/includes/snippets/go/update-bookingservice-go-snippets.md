@@ -13,12 +13,9 @@ requestBody.SetDefaultDuration(&defaultDuration)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingService",
 }
-options := &msgraphsdk.BookingServiceRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingServiceId := "bookingService-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(requestBody)
 
 
 ```

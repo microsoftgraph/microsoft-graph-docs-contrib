@@ -31,6 +31,7 @@ The user experience analytics battery health capacity entity contains count of d
 |batteryCapacityGood|Int32|Number of devices whose battery maximum capacity is greater than 80%. Valid values -2147483648 to 2147483647|
 |batteryCapacityFair|Int32|Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%. Valid values -2147483648 to 2147483647|
 |batteryCapacityPoor|Int32|Number of devices whose battery maximum capacity is lesser than 50%. Valid values -2147483648 to 2147483647|
+|lastRefreshedDateTime|DateTimeOffset|Recorded date time of this capacity details instance.|
 
 ## Relationships
 None
@@ -50,7 +51,8 @@ Here is a JSON representation of the resource.
   "activeDevices": 1024,
   "batteryCapacityGood": 1024,
   "batteryCapacityFair": 1024,
-  "batteryCapacityPoor": 1024
+  "batteryCapacityPoor": 1024,
+  "lastRefreshedDateTime": "String (timestamp)"
 }
 ```
 

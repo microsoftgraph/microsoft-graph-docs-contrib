@@ -3,7 +3,7 @@ title: "List secureScores"
 description: "Retrieve the properties and relationships of a secureScores object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: security
 author: "preetikr"
 ---
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securescores-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securescores-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

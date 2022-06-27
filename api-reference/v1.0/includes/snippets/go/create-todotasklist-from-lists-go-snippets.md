@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTodoTaskList()
 displayName := "Travel items"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Todo().Lists().Post(options)
+result, err := graphClient.Me().Todo().Lists().Post(requestBody)
 
 
 ```

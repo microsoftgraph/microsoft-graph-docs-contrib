@@ -10,14 +10,14 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ListItemVersionRequestBuilderGetQueryParameters{
 	Expand: "fields",
 }
-options := &msgraphsdk.ListItemVersionRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ListItemVersionRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
 listItemVersionId := "listItemVersion-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).VersionsById(&listItemVersionId).Get(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).VersionsById(&listItemVersionId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

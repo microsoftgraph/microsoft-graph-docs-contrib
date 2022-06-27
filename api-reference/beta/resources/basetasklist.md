@@ -7,13 +7,15 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# baseTaskList resource type
+# baseTaskList resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains one or more [task](./basetask.md) resources.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Contains one or more [baseTask](./basetask.md) resources.
 
 This is the base resource for the following derived types of task lists.
 * Built-in task list ([wellKnownTaskList](../resources/wellknowntasklist.md) resource)

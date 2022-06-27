@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
-To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API.	
+To retrieve the instances of the access review series, use the [list accessReviewInstance](accessreviewscheduledefinition-list-instances.md) API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

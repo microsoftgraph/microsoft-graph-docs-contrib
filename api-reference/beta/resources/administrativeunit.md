@@ -28,8 +28,8 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
-|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
+|[Create](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
+|[List](../api/directory-list-administrativeunits.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
 |[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
 |[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
@@ -38,15 +38,18 @@ This topic provides descriptions of the declared properties and navigation prope
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user and group) members.|
 |[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
 |[Remove a member](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remove a member.|
-|[Add scoped-role member](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Add a scoped-role member.|
-|[List scoped-role members](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the list of scoped-role administrators.|
-|[Get a scoped-role member](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get a specific scoped-role member.|
-|[Remove a scoped-role member](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove a scoped-role member.|
+|[Add a scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Assign an Azure AD role with administrative unit scope.|
+|[List scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List Azure AD role assignments with administrative unit scope.|
+|[Get a scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Get an Azure AD role assignment with administrative unit scope.|
+|[Remove a scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remove an Azure AD role assignment with administrative unit scope.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](/graph/extensibility-schema-groups) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+
+> [!NOTE]
+> The URL endpoint for calling the **administrativeUnits** API is `/administrativeUnits` in the `beta` endpoint but `/directory/administrativeUnits` in the `v1.0` endpoint.
 
 ## Properties
 
@@ -55,17 +58,20 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|description|string|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`).|
-|displayName|string|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
-|id|string|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
-|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
+|description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
+|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
+|id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
+| membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). |
+| membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. If not set, the default behavior is `Paused`. |
+| membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. If not set, the default behavior is `assigned`. |
+| visibility | String | Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, the default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit. |
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
-|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
+|members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. Supports `$expand`.|
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit.|
 
 ## JSON representation
 
@@ -82,10 +88,13 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "description": "string",
-  "displayName": "string",
-  "id": "string (identifier)",
-  "visibility": "string"
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "visibility": "String",
+  "membershipType": "String",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String"
 }
 
 ```

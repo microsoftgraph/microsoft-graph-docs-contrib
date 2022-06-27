@@ -12,10 +12,7 @@ displayName := "Project expenses"
 requestBody.SetDisplayName(&displayName)
 color := "preset9"
 requestBody.SetColor(&color)
-options := &msgraphsdk.MasterCategoriesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Outlook().MasterCategories().Post(options)
+result, err := graphClient.Me().Outlook().MasterCategories().Post(requestBody)
 
 
 ```

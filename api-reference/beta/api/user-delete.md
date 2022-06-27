@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
-The work or school account must be in one of the following roles:
+The calling user or app must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
 + Global Administrator
 + User Administrator
 
@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,11 +88,15 @@ DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5b
 [!INCLUDE [sample-code](../includes/snippets/go/delete-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

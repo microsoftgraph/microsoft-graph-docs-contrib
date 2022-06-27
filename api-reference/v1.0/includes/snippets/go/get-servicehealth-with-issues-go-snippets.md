@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ServiceHealthRequestBuilderGetQueryParameters{
 	Expand: "issues",
 }
-options := &msgraphsdk.ServiceHealthRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ServiceHealthRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 serviceHealthId := "serviceHealth-id"
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById(&serviceHealthId).Get(options)
+result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviewsById(&serviceHealthId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

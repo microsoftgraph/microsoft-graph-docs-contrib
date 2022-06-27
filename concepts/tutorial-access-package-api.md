@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
-description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
+title: "Tutorial: Manage access to resources in Active Directory entitlement management"
+description: "Learn how to use Microsoft Graph APIs to develop code to create a package of resources for a marketing campaign that internal users can self-service request."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,9 +10,10 @@ ms.prod: "governance"
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
-In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
->**Note:** The response objects shown in this tutorial might be shortened for readability. 
+> [!NOTE]
+> The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -277,7 +278,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "description": null,
       "originSystem": "AadGroup",
       "originId": "Member_e93e24d1-2b65-4a6c-a1dd-654a12225487",
-      "accessPackageResource@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/$entity",
       "accessPackageResource": {
         "id": "4a1e21c5-8a76-4578-acb1-641160e076e8",
         "displayName": "Marketing resources",
@@ -289,7 +289,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
         "isPendingOnboarding": false,
         "addedBy": "admin@contoso.onmicrosoft.com",
         "addedOn": "2020-06-26T17:13:23.723Z",
-        "accessPackageResourceScopes@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageCatalogs('cec5d6ab-c75d-47c0-9c1c-92e89f66e384')/accessPackageResourceRoles('00000000-0000-0000-0000-000000000000')/accessPackageResource/accessPackageResourceScopes",
         "accessPackageResourceScopes": []
       }
     }
@@ -728,15 +727,14 @@ No Content - 204
 
 ## See also
 
-In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do.
+In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
-
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
+- [accessPackage](/graph/api/resources/accesspackage)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
 - [group](/graph/api/resources/group)
-- [user](/graph/api/resources/user?)
+- [user](/graph/api/resources/user)

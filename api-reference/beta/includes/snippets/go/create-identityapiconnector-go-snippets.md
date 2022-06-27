@@ -19,10 +19,7 @@ authenticationConfiguration.SetAdditionalData(map[string]interface{}{
 	"pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
 	"password": "<password>",
 }
-options := &msgraphsdk.ApiConnectorsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().ApiConnectors().Post(options)
+result, err := graphClient.Identity().ApiConnectors().Post(requestBody)
 
 
 ```
