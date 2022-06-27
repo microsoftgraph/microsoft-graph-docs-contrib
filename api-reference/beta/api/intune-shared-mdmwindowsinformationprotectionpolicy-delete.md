@@ -1,7 +1,7 @@
 ---
 title: "Delete mdmWindowsInformationProtectionPolicy"
 description: "Deletes a mdmWindowsInformationProtectionPolicy."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
