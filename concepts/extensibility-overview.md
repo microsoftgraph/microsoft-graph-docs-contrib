@@ -1,6 +1,6 @@
 ---
 title: "Add custom properties to resources using extensions"
-description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through resources such as user and message. You can also extend Microsoft Graph with your own application data using extensions."
+description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through resources such as user and message. You can also extend Microsoft Graph by adding custom properties using extensions."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -8,9 +8,9 @@ ms.custom: graphiamtop20
 
 # Add custom properties to resources using extensions
 
-Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph with your own application data by adding custom properties to store data in Microsoft Graph resources without requiring an external data store.
+Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph by adding custom properties to resource instances without requiring an external data store.
 
-In this article, we'll discuss how Microsoft Graph supports adding data to its resources, the options available to add custom properties and when to use them.
+In this article, we'll discuss how Microsoft Graph supports extending its resources, the options available to add custom properties and when to use them.
 
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
@@ -30,15 +30,15 @@ Microsoft Graph offers four types of extensions for adding custom properties.
 3. Schema extensions
 4. Open extensions
 
-### 1. Extension attributes properties
+### 1. Extension attributes
 
 Azure AD offers a set of 15 custom properties with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
 #### Developer experience
 
-You can use the extension attributes 1-15 to store up to 15 string values on **user** or **device** resource instances, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned when creating a new resource instance or when updating an existing resource instance. They can also be filtered.
+You can use the 15 extension attributes to store String values on **user** or **device** resource instances, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned when creating a new resource instance or when updating an existing resource instance. They can also be filtered.
 
-##### Add or update data in extension attributes 1-15
+##### Add or update data in extension attributes
 
 The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
 
@@ -404,9 +404,9 @@ The request returns a `201 Created` response code and an [openTypeExtension](/gr
 
 ##### Update an existing open extension
 
-To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties will be updated to `null` and deleted from the resource instance.
+To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties will be updated to `null` and deleted from the open extension.
 
-The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties in the preceding example. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
+The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
