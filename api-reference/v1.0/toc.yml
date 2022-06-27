@@ -100,7 +100,7 @@ items:
         href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
       displayName: directory extensions, schema extensions, open extensions, extension attributes
-      href: /graph/extensibility-overview?context=graph/api/beta
+      href: /graph/extensibility-overview?context=graph/api/1.0
     - name: Use Graph Explorer
       items:
       - name: Get started
