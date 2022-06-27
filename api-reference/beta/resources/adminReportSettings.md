@@ -31,10 +31,16 @@ Represents the report setting of a tenant.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.adminReportSettings",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
 ``` json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#adminReportSettings ",
-  "displayConcealedNames": true
+  "@odata.type": "#microsoft.graph.adminReportSettings",
+  "displayConcealedNames": "Boolean"
 }
 ```
