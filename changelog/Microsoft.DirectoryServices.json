@@ -24,7 +24,7 @@
           "ChangedApiName": "tenantRelationshipAccessPolicyBase",
           "ChangeType": "Addition",
           "Description": "Added the [tenantRelationshipAccessPolicyBase](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshipaccesspolicybase?view=graph-rest-1.0) resource.",
-          "Target": "crossTenantAccessPolicy"
+          "Target": "tenantRelationshipAccessPolicyBase"
         },
         {
           "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
