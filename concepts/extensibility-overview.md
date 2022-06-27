@@ -34,19 +34,36 @@ Microsoft Graph offers four types of extensions for adding custom properties.
 
 Azure AD offers a set of 15 custom properties with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
-You can use the extension attributes 1-15 to store up to 15 string values on a **user** or **device** resource instance, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned using a POST operation to create an instance of the resource, or updated with a PATCH operation to the resource instance. They can also be filtered.
-
 #### Developer experience
 
-The following example shows how the data in extension attributes 1-15 is presented on the user resource instance.
+You can use the extension attributes 1-15 to store up to 15 string values on **user** or **device** resource instances, through the **onPremisesExtensionAttributes** and **extensionAttributes** properties respectively. The values may be assigned when creating a new resource instance or when updating an existing resource instance. They can also be filtered.
 
-##### Request
+##### Add or update data in extension attributes 1-15
+
+The following example shows how to store data in **extensionAttribute1** and delete existing data from **extensionAttribute12** through an update operation with a PATCH method.
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc0b
+
+{
+    "onPremisesExtensionAttributes": {
+        "extensionAttribute1": "skypeId.adeleVance",
+        "extensionAttribute13": null
+    }
+}
+```
+
+The request returns a `204 No Content` response object.
+
+##### Retrieve data from extension attributes 1-15
+
+###### Request
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExtensionAttributes
 ```
 
-##### Response
+###### Response
 
 ```http
 {
@@ -79,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExte
 
 ### 2. Directory (Azure AD) extensions
 
-[Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly typed, discoverable and filterable extension experience for directory objects.
+[Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly-typed, discoverable and filterable extension experience for directory objects.
 
 Directory extensions are first registered on an application through the [Create extensionProperty](/graph/api/application-post-extensionproperty) operation and must be explicitly targeted to specific directory objects. After the application has been consented to by a user or an admin, the extension properties become immediately accessible in the tenant. All authorized applications in the tenant can read and write data on any extension properties defined on an instance of the target directory object.
 
@@ -87,55 +104,115 @@ For the list of resource types that can be specified as target objects for a dir
 
 #### Developer experience
 
-Directory extensions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the same REST requests that you use to manage the resource instance.
+Directory extension definitions are managed through the [extensionProperty](/graph/api/resources/extensionproperty) resource and its associated methods. The data is managed through the same REST requests that you use to manage the resource instance.
 
-The following example shows a directory extension definition.
+##### Create a directory extension definition
+
+Before you can add a directory extension to a resource instance, you must first create a directory extension definition.
+
+###### Request
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
+
+{
+    "name": "jobGroupTracker",
+    "dataType": "String",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+###### Response
+
+A directory extension property named `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` is created with an extension name that follows the following naming convention: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties/$entity",
+    "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
+    "deletedDateTime": null,
+    "appDisplayName": "HR-sync-app",
+    "dataType": "String",
+    "isSyncedFromOnPremises": false,
+    "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker",
+    "targetObjects": [
+        "User"
+    ]
+}
+```
+
+##### Add a directory extension property to a target object
+
+After creating the directory extension definition, you can now add it to an instance of a target object type. You can store data in the directory extension property when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the directory extension property when creating a new user object.
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/users
+
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@contoso.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "JobGroupN"
+}
+```
+
+The request returns a `201 Created` response code and a [user](/graph/api/resources/user) object in the response body.
+
+##### Retrieve a directory extension property
+
+The following example shows how the directory extension properties and associated data are presented on a resource instance. The extension property will be returned by default through the `beta` endpoint, but only on `$select` through the `v1.0` endpoint.
 
 ##### Request
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69e287e7b/extensionProperties
+GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable
 ```
 
 ##### Response
 
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('30a5435a-1871-485c-8c7b-65f69e287e7b')/extensionProperties",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker,extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable)",
     "value": [
         {
-            "id": "4e3dbc8f-ca32-41b4-825a-346215d7d20f",
-            "deletedDateTime": null,
-            "appDisplayName": "jobStatTracker",
-            "dataType": "String",
-            "isSyncedFromOnPremises": false,
-            "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup",
-            "targetObjects": [
-                "User"
-            ]
+            "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+            "displayName": "Adele Vance",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4",
+            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": true
         }
     ]
 }
 ```
 
-The following example shows how the custom properties and associated data are presented on a resource instance. The extension property will be returned by default through the `beta` endpoint, but only on `$select` through the `v1.0` endpoint.
+##### Update or delete directory extension properties
 
-##### Request
+To update or delete the value of the directory extension property for a resource instance, use the PATCH method. To delete the extension property and its associated value from the resource instance, set its value to `null`.
+
+The following request updates the value of one directory extension property and deletes another extension property.
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup,extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately
-```
+PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a2
 
-##### Response
-```http
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup,extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately)",
-    "value": [
-        {
-            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroup": "JobGroupK",
-            "extension_b7d8e648520f41d3b9c0fdeb91768a0a_shareReviewsPrivately": "Yes"
-        }
-    ]
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_permanent_pensionable": null,
+    "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker": "E4"
 }
 ```
+
+The request returns a `204 No Content` response code.
 
 ### 3. Schema extensions
 
@@ -158,65 +235,134 @@ Once a schema extension is registered, it's available to be used by all applicat
 
 Unlike open extensions, you manage the [schema extension definitions](/graph/api/resources/schemaextension) and their data on the extended resource instance as separate sets of API operations. To manage the schema extension data on the extended resource instance, use the same REST request that you use to manage the resource instance.
 
-The following example shows a schema extension definition.
+##### Create a schema extension definition
 
-##### Request
+###### Request
+
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/schemaExtensions
-```
+POST https://graph.microsoft.com/v1.0/schemaExtensions
 
-##### Response
-
-```http
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions",
-    "value": [
+    "id": "graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
+    "properties": [
         {
-            "id": "ext6zw22v9e_graphLearnCourses",
-            "description": "Graph Learn training courses extensions",
-            "targetTypes": [
-                "user"
-            ],
-            "status": "Available",
-            "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
-            "properties": [
-                {
-                    "name": "courseId",
-                    "type": "Integer"
-                },
-                {
-                    "name": "courseName",
-                    "type": "String"
-                },
-                {
-                    "name": "courseType",
-                    "type": "String"
-                }
-            ]
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
         }
     ]
 }
 ```
 
-The following example shows how the custom properties and associated data is presented on a resource instance. You read the custom properties on a resource instance only by specifying the extension name in a `$select` request.
+###### Response
 
-
-##### Request
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5?$select=id,displayName,ext6zw22v9e_graphLearnCourses
-```
-
-##### Response
 ```http
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,ext6zw22v9e_graphLearnCourses)/$entity",
-    "id": "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
-    "displayName": "MOD Administrator",
-    "ext6zw22v9e_graphLearnCourses": {
-        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#schemaExtensions/$entity",
+    "id": "extkmpdyld2_graphLearnCourses",
+    "description": "Graph Learn training courses extensions",
+    "targetTypes": [
+        "user"
+    ],
+    "status": "InDevelopment",
+    "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        }
+    ]
+}
+```
+
+##### Add a schema extension to a resource instance
+
+After creating the schema extension definition, you can now add the extension property to an instance of a target object type. You can store data in the schema extension when creating a new instance of the target object or when updating an existing object. The following example shows how to store data in the schema extension property when creating a new user object.
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/users/
+
+{
+    "accountEnabled": true,
+    "displayName": "Adele Vance",
+    "mailNickname": "AdeleV",
+    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "passwordProfile": {
+        "forceChangePasswordNextSignIn": false,
+        "password": "xWwvJ]6NMw+bWH-d"
+    },
+    "extkmpdyld2_graphLearnCourses": {
         "courseId": 100,
         "courseName": "Explore Microsoft Graph",
         "courseType": "Online"
+    }
+}
+```
+
+The request returns a `201 Created` response code and an [schemaExtension](/graph/api/resources/schemaextension) object in the response body
+
+##### Update or delete a schema extension property
+
+Use the PATCH operation to update a schema extension property or delete an existing schema extension object. To delete the extension property and its associated value from the resource instance, set its value to `null`.
+
+The following example deletes the value of the **courseId** property and updates the **courseType** property. To delete the `extkmpdyld2_graphLearnCourses` extension property in its entirety, set its value to `null`.
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e
+
+{
+    "extkmpdyld2_graphLearnCourses": {
+        "courseType": "Instructor-led",
+        "courseId": null
+    }
+}
+```
+
+The request returns a `204 No Content` response object.
+
+##### Retrieve the schema extension property
+
+To read the schema extension properties on a resource instance, specify the extension name in a `$select` request.
+
+###### Request
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?$select=id,displayName,extkmpdyld2_graphLearnCourses
+```
+
+###### Response
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,displayName,extkmpdyld2_graphLearnCourses)/$entity",
+    "id": "63384f56-42d2-4aa7-b1d6-b10c78f143a2",
+    "displayName": "Adele Vance",
+    "extkmpdyld2_graphLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Instructor-led",
+        "courseName": "Explore Microsoft Graph",
+        "courseId": null
     }
 }
 ```
@@ -225,7 +371,7 @@ For more information about how to use schema extensions to add custom properties
 
 ### 4. Open extensions
 
-[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly typed, discoverable, or filterable.
+[Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly-typed, discoverable, or filterable.
 
 For the list of resource types that support Microsoft Graph open extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
@@ -233,32 +379,58 @@ For the list of resource types that support Microsoft Graph open extensions, see
 
 #### Developer experience
 
-Open extensions, together with their data, are accessible through the **extensions** navigation property of the resource instance.
+Open extensions, together with their data, are accessible through the **extensions** navigation property of the resource instance. They allow you to group related properties for easier access and management.
 
 The **extensionName** property is the only *pre-defined*, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant. One way to do this is to use a reverse domain name system (DNS) format that is dependent on *your own domain*, for example, `Com.Contoso.ContactInfo`. **Do not use the Microsoft domain (`Com.Microsoft` or `Com.OnMicrosoft`) in an extension name**.
 
-The following example shows an open type definition and how the custom properties and associated data is presented on a resource instance.
+##### Create an open extension
 
+The following example shows an open extension definition with three properties and how the custom properties and associated data is presented on a resource instance.
 
-##### Request
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
+POST https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions
+
+{
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "extensionName": "com.contoso.socialSettings",
+    "skypeId": "skypeId.AdeleV",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "xboxGamerTag": "AwesomeAdele",
+    "id": "com.contoso.socialSettings"
+}
 ```
 
-##### Response
-```http
+The request returns a `201 Created` response code and an [openTypeExtension](/graph/api/resources/opentypeextension) object in the response body.
+
+##### Update an existing open extension
+
+To update an open extension, you must specify all its properties in the request body. Otherwise, the unspecified properties will be updated to `null` and deleted from the resource instance.
+
+The following request specifies only the **linkedInProfile** and **xboxGamerTag** properties in the preceding example. The value of the **xboxGamerTag** property is being updated while the **linkedInProfile** property remains the same. This request also deletes the unspecified **skypeId** property.
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('3fbd929d-8c56-4462-851e-0eb9a7b3a2a5')/extensions",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.openTypeExtension",
-            "extensionName": "com.contoso.roamingSettings",
-            "theme": "dark",
-            "color": "purple",
-            "lang": "Japanese",
-            "id": "com.contoso.roamingSettings"
-        }
-    ]
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile"
+}
+```
+
+This request returns a `204 No Content` response code.
+
+
+##### Retrieve the open extensions
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/extensions/com.contoso.socialSettings
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('3fbd929d-8c56-4462-851e-0eb9a7b3a2a5')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "xboxGamerTag": "FierceAdele",
+    "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile",
+    "id": "com.contoso.socialSettings"
 }
 ```
 
