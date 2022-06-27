@@ -16,12 +16,9 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"breaks":  []Object {
 	}
 }
-options := &msgraphsdk.TimeCardRequestBuilderPutOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
 timeCardId := "timeCard-id"
-graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().TimeCardsById(&timeCardId).Put(requestBody)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Represents a license assigned to a user. The **assignedLicenses** 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
-author: "jpettere"
+author: "jconley76"
 ---
 
 # assignedLicense resource type

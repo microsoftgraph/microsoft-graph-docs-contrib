@@ -1,7 +1,7 @@
 ---
 title: "List schedulingGroups"
 description: "Get the list of schedulingGroup in this schedule."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

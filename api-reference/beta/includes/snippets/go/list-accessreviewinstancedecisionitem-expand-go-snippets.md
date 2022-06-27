@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetQueryParameters{
 	Expand: "instance($expand=definition)",
 }
-options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById(&accessReviewInstanceDecisionItemId).Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById(&accessReviewInstanceDecisionItemId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

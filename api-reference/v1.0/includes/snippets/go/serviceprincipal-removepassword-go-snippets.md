@@ -7,14 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := msgraphsdk.New()
+requestBody := msgraphsdk.NewKeyIdRequestBody()
 keyId := "f0b0b335-1d71-4883-8f98-567911bfdca6"
 requestBody.SetKeyId(&keyId)
-options := &msgraphsdk.RemovePasswordRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).RemovePassword().Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).RemovePassword(servicePrincipal-id).Post(requestBody)
 
 
 ```

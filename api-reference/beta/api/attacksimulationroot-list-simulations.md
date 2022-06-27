@@ -1,6 +1,6 @@
 ---
 title: "List simulations"
-description: "List attack simulations of a tenant."
+description: "Get a list of attack simulation campaigns for a tenant."
 author: "Gopal-MSFT"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List attack simulations of a tenant.
+Get a list of attack simulation campaigns for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -145,15 +145,9 @@ Content-Type: application/json
       },
       "launchDateTime": "2021-01-01T02:01:01.01Z",
       "completionDateTime": "2021-01-07T01:01:01.01Z",
-      "includeAllAccountTargets": false,
-      "enableRegionTimezoneDelivery": false,
       "isAutomated": false,
-      "cleanupArtifacts": false,
-      "payloadSource": "global",
-      "payloadDeliveryPlatform": "email",
-      "trainingAssignmentPreference": "manual",
-      "trainingContentPreference": "microsoft",
-      "trainingDueDateTime": "2021-01-31T01:01:01.01Z"
+      "automationId": "f1b13829-3829-f1b1-2938-b1f12938b1ab",
+      "payloadDeliveryPlatform": "email"
     }
   ]
 }

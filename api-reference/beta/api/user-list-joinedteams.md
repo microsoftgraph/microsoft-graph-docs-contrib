@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
+> **Note**: This API doesn't return the host team of the shared channel that the user is a direct member of.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 > [!Note]
 > Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 
 ## Example
 ### Request
@@ -119,7 +121,10 @@ Content-type: application/json
 
 ## See also
 - [List all teams](/graph/teams-list-all-teams)
+- [List associated teams](../api/associatedteaminfo-list.md)
+- [List all teams in an organization](../api/teams-list.md)
 - [Get team](../api/team-get.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

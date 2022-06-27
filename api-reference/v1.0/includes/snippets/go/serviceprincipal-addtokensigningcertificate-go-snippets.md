@@ -12,11 +12,8 @@ displayName := "CN=customDisplayName"
 requestBody.SetDisplayName(&displayName)
 endDateTime, err := time.Parse(time.RFC3339, "2024-01-25T00:00:00Z")
 requestBody.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.AddTokenSigningCertificateRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate().Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddTokenSigningCertificate(servicePrincipal-id).Post(requestBody)
 
 
 ```

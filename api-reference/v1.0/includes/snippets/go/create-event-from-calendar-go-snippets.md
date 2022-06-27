@@ -40,11 +40,8 @@ requestBody.SetAttendees( []Attendee {
 }
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId)
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 calendarId := "calendar-id"
-result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(options)
+result, err := graphClient.Me().CalendarsById(&calendarId).Events().Post(requestBody)
 
 
 ```

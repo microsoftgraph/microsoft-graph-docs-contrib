@@ -8,11 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewBaseTask()
-body := msgraphsdk.NewItemBody()
-requestBody.SetBody(body)
-body.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.itemBody",
-}
+textBody := "String"
+requestBody.SetTextBody(&textBody)
 bodyLastModifiedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetBodyLastModifiedDateTime(&bodyLastModifiedDateTime)
 completedDateTime, err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -38,19 +35,16 @@ displayName := "String"
 requestBody.SetDisplayName(&displayName)
 status := "String"
 requestBody.SetStatus(&status)
-personalProperties := msgraphsdk.NewPersonalTaskProperties()
-requestBody.SetPersonalProperties(personalProperties)
-personalProperties.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "microsoft.graph.personalTaskProperties",
+viewpoint := msgraphsdk.NewTaskViewpoint()
+requestBody.SetViewpoint(viewpoint)
+viewpoint.SetAdditionalData(map[string]interface{}{
+	"@odata.type": "microsoft.graph.taskViewpoint",
 }
 requestBody.SetAdditionalData(map[string]interface{}{
-	"@odata.type": "#microsoft.graph.baseTask",
-}
-options := &msgraphsdk.TasksRequestBuilderPostOptions{
-	Body: requestBody,
+	"@odata.type": "#microsoft.graph.task",
 }
 baseTaskListId := "baseTaskList-id"
-result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Tasks().Post(options)
+result, err := graphClient.Me().Tasks().ListsById(&baseTaskListId).Tasks().Post(requestBody)
 
 
 ```

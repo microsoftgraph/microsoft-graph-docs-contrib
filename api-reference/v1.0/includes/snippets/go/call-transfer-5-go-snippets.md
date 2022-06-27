@@ -34,11 +34,8 @@ user.SetAdditionalData(map[string]interface{}{
 }
 participantId := "909c6581-5130-43e9-88f3-fcb3582cde37"
 transferee.SetParticipantId(&participantId)
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer().Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

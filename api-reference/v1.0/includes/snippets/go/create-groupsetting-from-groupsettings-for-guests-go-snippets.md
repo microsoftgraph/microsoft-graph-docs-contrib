@@ -8,8 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewGroupSetting()
-displayName := "Group.Unified.Guest"
-requestBody.SetDisplayName(&displayName)
 templateId := "08d542b9-071f-4e16-94b0-74abb372e3d9"
 requestBody.SetTemplateId(&templateId)
 requestBody.SetValues( []SettingValue {
@@ -19,11 +17,8 @@ requestBody.SetValues( []SettingValue {
 		"value": "false",
 	}
 }
-options := &msgraphsdk.SettingsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Settings().Post(options)
+result, err := graphClient.GroupsById(&groupId).Settings().Post(requestBody)
 
 
 ```

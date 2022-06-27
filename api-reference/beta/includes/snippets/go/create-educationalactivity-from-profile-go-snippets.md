@@ -52,10 +52,7 @@ webUrl := "https://biz.colostate.edu"
 program.SetWebUrl(&webUrl)
 startMonthYear := "Date"
 requestBody.SetStartMonthYear(&startMonthYear)
-options := &msgraphsdk.EducationalActivitiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().EducationalActivities().Post(options)
+result, err := graphClient.Me().Profile().EducationalActivities().Post(requestBody)
 
 
 ```

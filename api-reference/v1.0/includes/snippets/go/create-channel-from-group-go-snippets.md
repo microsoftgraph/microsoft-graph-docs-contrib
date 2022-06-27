@@ -14,11 +14,8 @@ description := "This channel is where we debate all future architecture plans"
 requestBody.SetDescription(&description)
 membershipType := "standard"
 requestBody.SetMembershipType(&membershipType)
-options := &msgraphsdk.ChannelsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Channels().Post(options)
+result, err := graphClient.TeamsById(&teamId).Channels().Post(requestBody)
 
 
 ```

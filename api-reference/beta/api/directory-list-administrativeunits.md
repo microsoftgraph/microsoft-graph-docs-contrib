@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -97,20 +97,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits",
-    "value": [
-        {
-            "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
-            "deletedDateTime": null,
-            "displayName": "Seattle District Technical Schools",
-            "description": "Seattle district technical schools administration",
-            "isMemberManagementRestricted": null,
-            "visibility": "HiddenMembership",
-            "membershipRule": null,
-            "membershipType": null,
-            "membershipRuleProcessingState": null
-        }
-    ]
+  "value": [
+    {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
+    "deletedDateTime": null,
+    "displayName": "Seattle District Technical Schools",
+    "description": "Seattle district technical schools administration",
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
+    }
+  ]
 }
 ```
 

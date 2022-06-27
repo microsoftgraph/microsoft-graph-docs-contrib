@@ -1,7 +1,7 @@
 ---
 title: "participant: mute"
 description: "Mute a specific participant in the call."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -25,7 +25,7 @@ For more information about how to handle mute operations, see [muteParticipantOp
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
 | Delegated (personal Microsoft account) | Not Supported        |
-| Application     | None                                        |
+| Application     | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

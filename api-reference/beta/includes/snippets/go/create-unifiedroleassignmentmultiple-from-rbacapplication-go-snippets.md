@@ -23,10 +23,7 @@ requestBody.SetDirectoryScopeIds( []String {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(options)
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(requestBody)
 
 
 ```

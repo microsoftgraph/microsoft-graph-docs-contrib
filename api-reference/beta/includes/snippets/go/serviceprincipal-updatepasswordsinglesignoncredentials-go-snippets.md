@@ -24,11 +24,8 @@ requestBody.SetCredentials( []Credential {
 		"type": "password",
 	}
 }
-options := &msgraphsdk.UpdatePasswordSingleSignOnCredentialsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).UpdatePasswordSingleSignOnCredentials().Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).UpdatePasswordSingleSignOnCredentials(servicePrincipal-id).Post(requestBody)
 
 
 ```

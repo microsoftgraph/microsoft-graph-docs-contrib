@@ -14,6 +14,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphCloudPcUserSetting *cloudPcUserSetting = [[MSGraphCloudPcUserSetting alloc] init];
 [cloudPcUserSetting setDisplayName:@"Example"];
 [cloudPcUserSetting setSelfServiceEnabled: true];
+MSGraphCloudPcRestorePointSetting *restorePointSetting = [[MSGraphCloudPcRestorePointSetting alloc] init];
+[restorePointSetting setFrequencyInHours: 16];
+[restorePointSetting setUserRestoreEnabled: true];
+[cloudPcUserSetting setRestorePointSetting:restorePointSetting];
 [cloudPcUserSetting setLocalAdminEnabled: false];
 
 NSError *error;

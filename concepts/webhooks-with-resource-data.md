@@ -27,13 +27,23 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-The Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) and [presence](/graph/api/resources/presence) resources support change notifications with resource data. Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), [message](/graph/api/resources/message.md) resources have similar support _in preview_. Specifically, you can set up a subscription for the use cases listed below.
+The Microsoft Teams [chatMessage](/graph/api/resources/chatmessage), [onlineMeetings](/graph/api/resources/onlinemeeting), and [presence](/graph/api/resources/presence) resources support change notifications with resource data. Outlook [contact](/graph/api/resources/contact.md), [event](/graph/api/resources/event.md), and [message](/graph/api/resources/message.md) resources have similar support _in preview_. Specifically, you can set up a subscription for the following use cases.
 
 Available in the v1.0 and beta endpoints:
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 - New or changed messages in all Teams chats: `/chats/getAllMessages`
+- New or changed members in all Teams chats: `/chats/getAllMembers`
+- New or changed members in a specific Teams chat: `/chats/{id}/members`
+- New or changed chat across the entire tenant: `/chats`
+- Property changes in a specific chat: `/chats/{id}`
+- New or changed members in all channels under a specific team: `/teams/{id}/channels/getAllMembers`
+- New or changed members in a specific team: `/teams/{id}/members`
+- New or changed team across the entire tenant: `/teams`
+- Property changes in a specific team: `/teams/{id}`
+- New or changed channels in all Teams teams: `/teams/getAllChannels`
+- New or changed channel in a specific team: `/teams/{id}/channels`
 - User's presence information update: `/communications/presences/{id}`
 
 Available in only the beta endpoint:
@@ -42,8 +52,9 @@ Available in only the beta endpoint:
 - New or changed events in a user's mailbox: `/users/{id}/events`
 - New or changed messages in a user's mailbox: `/users/{id}/messages`
 - New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
+- Teams Meeting status information updates: `/communications/onlineMeetings/{meeting-id}`
 
-Change notifications that include **chatMessage** or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
+Change notifications that include **chatMessage**, **onlineMeeting**, or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
 
 Change notifications for **contact**, **event**, or **message** resources include only a subset of properties for the resource, which must be specified in the corresponding subscription request using a `$select` query parameter. For more information and an example for subscribing to change notifications with resource data for the **message** resource, see [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md). 
 

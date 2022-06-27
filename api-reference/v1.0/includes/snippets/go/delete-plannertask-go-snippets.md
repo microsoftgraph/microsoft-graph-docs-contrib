@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 headers := map[string]string{
 	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerTaskRequestBuilderDeleteOptions{
-	H: headers,
+options := &msgraphsdk.PlannerTaskRequestBuilderDeleteRequestConfiguration{
+	Headers: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).Delete(options)
+graphClient.Planner().TasksById(&plannerTaskId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

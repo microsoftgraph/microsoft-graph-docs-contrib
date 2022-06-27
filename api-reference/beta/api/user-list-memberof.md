@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -32,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/memberOf
-or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
@@ -236,7 +235,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_memberof_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a') 

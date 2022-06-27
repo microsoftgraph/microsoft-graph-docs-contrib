@@ -1,7 +1,7 @@
 ---
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
-author: "ananmishr"
+author: "mkhribech"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType

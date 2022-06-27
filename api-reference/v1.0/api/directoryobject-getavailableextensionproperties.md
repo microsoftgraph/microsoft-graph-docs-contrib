@@ -66,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 Content-Type: application/json
 
 {
-  "isSyncedFromOnPremises": "Boolean"
+  "isSyncedFromOnPremises": true
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -110,6 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(extensionProperty)",
   "value": [
     {
       "@odata.type": "#microsoft.graph.extensionProperty",

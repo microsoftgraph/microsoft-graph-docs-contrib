@@ -1,7 +1,7 @@
 ---
 title: "Get unifiedRoleManagementPolicy"
-description: "Read the properties and relationships of an unifiedRoleManagementPolicy object."
-author: "carolinetempleton"
+description: "Retrieve the details of a role management policy."
+author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.
+Retrieve the details of a role management policy. To read a policy that applies to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/get).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. You can also specify the wildcard value `*` to expand all supported relationships, that is, `?$expand=*`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAuthorizationPolicy()
 allowEmailVerifiedUsersToJoinOrganization := false
 requestBody.SetAllowEmailVerifiedUsersToJoinOrganization(&allowEmailVerifiedUsersToJoinOrganization)
-options := &msgraphsdk.AuthorizationPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthorizationPolicy().Patch(options)
+graphClient.Policies().AuthorizationPolicy().Patch(requestBody)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Delete tenantTag"
-description: "Deletes a tenantTag object."
+description: "Delete a tenantTag object."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "microsoft-365-lighthouse"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [tenantTag](../resources/managedtenants-tenanttag.md) object.
+Delete a [tenantTag](../resources/managedtenants-tenanttag.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,6 +49,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenan
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

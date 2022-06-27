@@ -59,6 +59,6 @@ shift.draftShift = draftShift;
 
 graphClient.teams("{teamId}").schedule().shifts("{shiftId}")
 	.buildRequest( requestOptions )
-	.patch(shift);
+	.put(shift);
 
 ```

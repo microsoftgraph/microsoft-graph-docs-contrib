@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -201,7 +201,11 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### Response
 
 The following is an example of the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -241,8 +245,8 @@ The following is an example of the request. This request requires the **Consiste
 
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_a_count"
+  "blockType": "request",
+  "name": "list_devices_startswith"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 

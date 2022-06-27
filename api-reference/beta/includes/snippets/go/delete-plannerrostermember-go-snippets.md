@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 plannerRosterId := "plannerRoster-id"
 plannerRosterMemberId := "plannerRosterMember-id"
-graphClient.Planner().RostersById(&plannerRosterId).MembersById(&plannerRosterMemberId).Delete(nil)
+graphClient.Planner().RostersById(&plannerRosterId).MembersById(&plannerRosterMemberId).Delete()
 
 
 ```

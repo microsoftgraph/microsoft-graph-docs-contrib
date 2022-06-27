@@ -233,7 +233,6 @@ Content-type: application/json
         "isHidden": false,
         "lastMessageReadDateTime": "2021-08-09T17:38:24.101Z"
     },
-    "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members",
     "members": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",

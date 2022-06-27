@@ -1,5 +1,5 @@
 ---
-title: "Get a directory setting"
+title: "Get directorySetting"
 description: "Retrieve the properties of a specific directory setting object."
 author: "adimitui"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# Get a directory setting
+# Get directorySetting
 
 Namespace: microsoft.graph
 
@@ -15,26 +15,45 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a specific directory setting object.
 
-> **Note**: The /beta version of this API only applies to groups. The /v1.0 version of this API has been renamed to *Get groupSettings*.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+
+### List tenant-wide settings
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
+### List group-specific settings
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All  |
+
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
-Get a specific tenant-wide or group setting
+
+Get a tenant-wide setting.
+
 ```http
-GET /settings/{id}
-GET /groups/{id}/settings/{id}
+GET /settings/{directorySettingId}
 ```
+
+<!-- { "blockType": "ignored" } -->
+Get a group-specific setting.
+```http
+GET /groups/{groupId}/settings/{directorySettingId}
+```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -88,7 +107,7 @@ GET https://graph.microsoft.com/beta/settings/f0b2d6f5-097d-4177-91af-a24e530b53
 ---
 
 
-##### Response
+### Response
 The following is an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

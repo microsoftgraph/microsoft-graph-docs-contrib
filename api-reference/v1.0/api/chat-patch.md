@@ -1,7 +1,7 @@
 ---
 title: "Update chat"
 description: "Update the properties of a chat object."
-author: "bhartono"
+author: "anandjo"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report will be generated for that session.
 
+> [!WARNING]
+> This method does not support channel meetings.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

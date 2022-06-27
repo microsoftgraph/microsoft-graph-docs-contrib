@@ -24,7 +24,7 @@ For applications:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -34,7 +34,7 @@ For users:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Not supported. |
 
@@ -44,7 +44,7 @@ For groups:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (work or school account) | Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 

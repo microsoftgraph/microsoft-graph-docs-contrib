@@ -33,11 +33,8 @@ status := "draft"
 requestBody.SetStatus(&status)
 allowStudentsToAddResourcesToSubmission := true
 requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission)
-options := &msgraphsdk.AssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).Assignments().Post(requestBody)
 
 
 ```

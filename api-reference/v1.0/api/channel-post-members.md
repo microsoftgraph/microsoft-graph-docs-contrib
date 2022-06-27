@@ -1,7 +1,7 @@
 ---
 title: "Add member to channel"
 description: "Add member to channel."
-author: "akjo" 
+author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -180,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Add a member to a channel using user principal name
+### Example 3: Add an owner to a channel using user principal name
 
 #### Request
 

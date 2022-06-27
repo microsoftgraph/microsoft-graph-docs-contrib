@@ -4,7 +4,7 @@ description: "Retrieve the role settings for the given role. A privilegedRoleSet
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "carolinetempleton"
+author: "rkarim-ms"
 ---
 
 # Get privilegedRoleSettings
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Retrieve the role settings for the given role. A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.
 ## Permissions

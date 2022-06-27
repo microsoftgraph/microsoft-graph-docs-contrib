@@ -12,11 +12,8 @@ softwareType := "teamsClient"
 requestBody.SetSoftwareType(&softwareType)
 softwareVersion := "1.0.96.22"
 requestBody.SetSoftwareVersion(&softwareVersion)
-options := &msgraphsdk.UpdateSoftwareRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamworkDeviceId := "teamworkDevice-id"
-graphClient.Teamwork().DevicesById(&teamworkDeviceId).UpdateSoftware().Post(options)
+graphClient.Teamwork().DevicesById(&teamworkDeviceId).UpdateSoftware(teamworkDevice-id).Post(requestBody)
 
 
 ```

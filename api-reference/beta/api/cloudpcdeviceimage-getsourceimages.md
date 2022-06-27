@@ -111,7 +111,9 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
       "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+      "subscriptionDisplayName": "Subscription Display Name value"
     }
   ]
 }

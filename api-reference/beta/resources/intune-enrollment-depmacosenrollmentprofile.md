@@ -66,6 +66,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |iCloudStorageDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 |accessibilityScreenDisabled|Boolean|Indicates if Accessibility screen is disabled|
+|autoUnlockWithWatchDisabled|Boolean|Indicates if UnlockWithWatch screen is disabled|
 
 ## Relationships
 None
@@ -114,7 +115,8 @@ Here is a JSON representation of the resource.
   "zoomDisabled": true,
   "iCloudStorageDisabled": true,
   "chooseYourLockScreenDisabled": true,
-  "accessibilityScreenDisabled": true
+  "accessibilityScreenDisabled": true,
+  "autoUnlockWithWatchDisabled": true
 }
 ```
 

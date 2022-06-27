@@ -34,7 +34,7 @@ GET /domains/{id}/domainNameReferences
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$filter` [OData Query Parameters](/graph/query-parameters) to help customize the response. You can only filter by the OData type of the objects returned, for example, `/domains/{domainId}/domainNameReferences/microsoft.graph.group` and `/domains/{domainId}/domainNameReferences/microsoft.graph.user`.
 
 ## Request headers
 

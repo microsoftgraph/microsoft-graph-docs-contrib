@@ -1,7 +1,7 @@
 ---
 title: "Delete shift"
 description: "Delete a shift from the schedule."
-author: "nkramer"
+author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

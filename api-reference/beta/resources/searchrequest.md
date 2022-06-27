@@ -34,11 +34,12 @@ The JSON blob contains the types of resources expected in the response, the unde
 |fields|String collection |Contains the fields to be returned for each resource object specified in **entityTypes**, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in **externalItem** from content that Microsoft Graph connectors bring in. <br>The fields property can be using the [semantic labels](/microsoftsearch/configure-connector#step-5-assign-property-labels) applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.<br>Optional.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
+|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Provides query alteration options formatted as a JSON blob that contains two optional flags related to spelling correction. Optional. |
+|resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
 |size|Int32|The size of the page to be retrieved. Optional.|
 |sortProperties|[sortProperty](sortProperty.md) collection|Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.|
+|trimDuplicates|Boolean|Indicates whether to trim away the duplicate SharePoint files from search results. Default value is `false`. Optional.|
 |stored_fields (deprecated)|String collection |This is now replaced by the **fields** property. |
-|resultTemplateOptions|[resultTemplateOption](resultTemplateOption.md) collection|Provides the search result templates options for rendering connectors search results.|
-|queryAlterationOptions|[searchAlterationOptions](searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags related to spelling correction. Optional. |
 
 ## JSON representation
 
@@ -55,31 +56,34 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "entityTypes": ["String"],
-  "contentSources": ["String"],
-  "query": {"@odata.type": "microsoft.graph.searchQuery"},
-  "from": 1024,
-  "size": 1024,
-  "fields": ["String"],
-  "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
-  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "aggregationFilters": ["String"],
+  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
+  "contentSources": ["String"],
   "enableTopResults": true,
+  "entityTypes": ["String"],
+  "fields": ["String"],
+  "from": 1024,
+  "query": {"@odata.type": "microsoft.graph.searchQuery"},
+  "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"},
   "resultTemplateOptions": [{"@odata.type": "microsoft.graph.resultTemplateOption"}],
-  "queryAlterationOptions": {"@odata.type": "microsoft.graph.searchAlterationOptions"}
+  "size": 1024,
+  "sortProperties": [{"@odata.type": "microsoft.graph.sortProperty"}],
+  "trimDuplicates": false
 }
 ```
 
 ## See also
-- Search [mail messages](/graph/search-concept-messages)
-- Search [calendar events](/graph/search-concept-events)
-- Search [person](/graph/search-concept-person)
-- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
-- Search [custom types imported using connectors](/graph/search-concept-custom-types) data
-- [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregation) to refine search results
-- Use [display layout](/graph/search-concept-display-layout.md)
-- Enable [spell corrections](/graph/search-concept-speller) in search results
+- [Use query templates](/graph/search-concept-query-template)
+- [Search mail messages](/graph/search-concept-messages)
+- [Search calendar events](/graph/search-concept-events)
+- [Search person](/graph/search-concept-person)
+- [Search content in SharePoint and OneDrive](/graph/search-concept-files) (files, lists, and sites)
+- [Search custom types imported using connectors](/graph/search-concept-custom-types)
+- [Sort search results](/graph/search-concept-sort)
+- [Trim duplicate search results](/graph/search-concept-trim-duplicate) 
+- [Use aggregations](/graph/search-concept-aggregation) to refine search results
+- [Use display layout](/graph/search-concept-display-layout)
+- [Enable spell corrections](/graph/search-concept-speller) in search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

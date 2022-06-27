@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ProfileRequestBuilderGetQueryParameters{
 	Expand: "names($select=first,last),skills($select=displayName)",
 }
-options := &msgraphsdk.ProfileRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.ProfileRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Me().Profile().Get(options)
+result, err := graphClient.Me().Profile().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

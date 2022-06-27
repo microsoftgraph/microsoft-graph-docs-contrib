@@ -1,6 +1,6 @@
 ---
 title: "List bookingBusinesses"
-description: "Get a collection of bookingbusiness objects that has been created for the tenant."
+description: "Get a collection of bookingBusiness objects that has been created for the tenant."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.
+Get a collection of [bookingBusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.
 
-This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
+This operation returns only the **id** and **displayName** of each Microsoft Bookings business in the collection. For performance considerations, it does not return other properties. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.
 
 You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant. See an [example](#request-2) below.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /bookingBusinesses
 ```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -114,9 +115,10 @@ Content-type: application/json
 }
 ```
 
-
 ##### Request 2
-The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.
+
+The following example shows how to use the `query` parameter to get one or more matching 
+Bookings businesses in the tenant.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -8,7 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var crossTenantAccessPolicy = new CrossTenantAccessPolicy
 {
-	DisplayName = "CrossTenantAccessPolicy"
+	AllowedCloudEndpoints = new List<String>()
+	{
+		"microsoftonline.us",
+		"partner.microsoftonline.cn"
+	}
 };
 
 await graphClient.Policies.CrossTenantAccessPolicy

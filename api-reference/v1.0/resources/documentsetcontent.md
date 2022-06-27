@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents the default content of document set in SharePoint.
 ## Properties
 
-| Property name  | Type    | Description|
+| Property  | Type    | Description|
 |:---------------|:--------|:--------------------------------------------------|
 | contentType    | microsoft.graph.contentTypeInfo | Content type information of the file. |
 | fileName      | string  | Name of the file in resource folder that should be added as a default content or a template in the document set.|

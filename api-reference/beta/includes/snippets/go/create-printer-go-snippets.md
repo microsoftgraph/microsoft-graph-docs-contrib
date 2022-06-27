@@ -24,10 +24,7 @@ certificateSigningRequest.SetContent(&content)
 transportKey := "{sampleTransportKey}"
 certificateSigningRequest.SetTransportKey(&transportKey)
 requestBody.SetConnectorId(nil)
-options := &msgraphsdk.CreateRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Print().Printers().Create().Post(options)
+graphClient.Print().Printers().Create().Post(requestBody)
 
 
 ```

@@ -15,11 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve the [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) objects created in the last 30 days, including all nested properties.
 
->[!NOTE]
->The default page size for this API is 100 **accessReviewHistoryDefinitions** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
->
->If no query parameters are provided and there are more than 100 results, Microsoft Graph will automatically paginate results at 100 results per page.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,6 +41,8 @@ GET /identityGovernance/accessReviews/historyDefinitions
 ## Optional query parameters
 
 This method supports the `$top`, `$filter`, `$expand`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). Including `?$expand=instances` will return the [accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) objects along with their associated instances.
+
+The default page size for this API is 100 **accessReviewHistoryDefinitions** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Request headers
 

@@ -23,10 +23,10 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 settings := msgraphsdk.NewAccessReviewScheduleSettings()
 requestBody.SetSettings(settings)
@@ -58,10 +58,7 @@ type := "noEnd"
 range.SetType(&type)
 startDate := "2020-09-08T12:02:30.667Z"
 range.SetStartDate(&startDate)
-options := &msgraphsdk.DefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(requestBody)
 
 
 ```

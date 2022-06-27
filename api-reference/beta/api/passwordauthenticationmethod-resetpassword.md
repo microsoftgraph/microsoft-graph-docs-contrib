@@ -17,28 +17,17 @@ Initiate a reset for the password associated with a [password authentication met
 
 This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
-This reset is a long-running operation and will return a link in the `Location` header where the caller can periodically check for the status of the reset.
+This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### Permissions acting on self
-
-The operation cannot be performed on a user's own account.
+> [!IMPORTANT]
+> The operation cannot be performed on a user's own account. Only an administrator with the appropriate permissions can perform this operation.
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
-
-Only an administrator with the appropriate permissions can perform this operation.
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|:-----------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
@@ -70,11 +59,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|newPassword|String|The new password entered by the admin. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
+|newPassword|String|The new password. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
 
 ## Response
 
-If successful, this method returns a `202 ACCEPTED` response code and a URL in the `Location` header.
+If successful, this method returns a `202 Accepted` response code and a **Location** header with a URL to check the status of the reset operation.
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
@@ -82,8 +71,8 @@ If the caller did not submit a password, a Microsoft-generated password is provi
 
 | Name        | Description     |
 |:------------|:----------------|
-|Location     | URL to call to check the status of the operation.|
-|Retry-after  | Duration in seconds.|
+|Location     | URL to call to check the status of the operation. Required.|
+|Retry-after  | Duration in seconds. Optional.|
 
 ## Examples
 
@@ -102,11 +91,11 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-type: application/json
 
 {
-  "newPassword": "newPassword-value",
+    "newPassword": "Cuyo5459"
 }
 ```
 # [C#](#tab/csharp)
@@ -132,17 +121,18 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.entity"
 } -->
 
 ```http
-HTTP/1.1 202 ACCEPTED
+HTTP/1.1 202 Accepted
 Content-type: application/json
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/88e7560c-9ebf-435c-8089-c3998ac1ec51?aadgdc=DUB02P&aadgsu=ssprprod-a
+
+{}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -170,7 +160,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
@@ -205,11 +195,12 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/authentication/operations/77bafe36-3ac0-4f89-96e4-a4a5a48da851?aadgdc=DUB02P&aadgsu=ssprprod-a
 Content-type: application/json
 
 {
-  "password": "new system generated password"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.passwordResetResponse",
+    "newPassword": "Cuyo5459"
 }
 ```
 

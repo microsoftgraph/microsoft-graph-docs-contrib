@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.RoleAssignmentsRequestBuilderGetQueryParameters
 	Filter: "roleDefinitionId%20eq%20'62e90394-69f5-4237-9190-012177145e10'",
 	Expand: "principal",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.RoleAssignmentsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignments().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
