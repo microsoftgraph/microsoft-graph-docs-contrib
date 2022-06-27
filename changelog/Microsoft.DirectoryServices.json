@@ -12,11 +12,11 @@
         },
         {
           "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
-          "ApiChange": "Resource",
-          "ChangedApiName": "policyRoot",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "crossTenantAccessPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [crossTenantAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/crosstenantaccesspolicy?view=graph-rest-1.0) relationship to policyRoot.",
-          "Target": "crossTenantAccessPolicy"
+          "Description": "Added the **crossTenantAccessPolicy** relationship to the [policyRoot](https://docs.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
         },
         {
           "Id": "5c4ea04c-ccb5-4d1b-bf09-7b29a39710ad",
