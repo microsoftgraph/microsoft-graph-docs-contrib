@@ -18,7 +18,7 @@ To allow users to request access or admin consent for applications they're unaut
 >[!NOTE]
 >The current APIs are limited to configuring the workflow and reading the list of requests. At this time, there aren’t any methods available to programmatically approve or deny a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
 
-[!INCLUDE [GDPR-related-guidance](../../includes/consentrequests-gdpr-overview-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 The consent request resource types include:
 

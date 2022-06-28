@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [GDPR-related-guidance](../../includes/consentrequests-gdpr-overview-note.md)]
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 Azure Active Directory (Azure AD) consent requests help you manage the request workflow for users attempting to access apps that require admin approval.
 
