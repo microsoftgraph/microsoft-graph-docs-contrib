@@ -72,9 +72,13 @@ Before handling an error, the first step is to determine whether the error respo
 
 ### 2. Parse second-level error code
 
-For both the long-running operation pattern and the regular pattern, you should first follow the instructions for second-level errors. The error code is case insensitive.
+For both the long-running operation pattern and the regular pattern, the client should first parse required second-level error codes and handle them according to the instructions. Optionally, the client can also handle other second-level error codes, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code).
 
-The following table lists instructions for important errors that Microsoft Graph clients are expected to handle. The service might add new error codes at any time.
+The error codes are case insensitive.
+
+#### Required second-level error codes
+
+The following table lists instructions for required second-level error codes that Microsoft Graph clients are expected to handle. The service might add new error codes at any time.
 
 | Code                               | Instructions
 |:-----------------------------------|:---------------------------------------------
@@ -103,7 +107,27 @@ The following table lists instructions for important errors that Microsoft Graph
 
 >**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
-There are also other second-level error codes, which Microsoft Graph clients can optionally handle, or choose to fall back to [top-level error codes](#3-parse-the-top-level-error-code) or [status codes](#4-parse-the-status-code) instead. For examples of such second-level error codes and corresponding handling instructions, see [Examples of other second-level error codes](#examples-of-other-second-level-error-codes).
+#### Optional second-level error code examples
+
+The following table lists examples of optional second-level error codes, including the corresponding handling instructions for each error code. The service might add new error codes at any time.
+
+| Code                      | Instructions                                                                                                                                                                                                                                                                                                                           |
+|:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `accessDenied`          | You cannot perform the requested operation (for example, performing changes to locked cells). The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                 |
+| `filteredRangeConflict` | The operation failed because it conflicts with a filtered range. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                              |
+| `generalException`      | An internal error occurred while processing the request. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                      |
+| `insertDeleteConflict`  | The insert or delete operation attempted resulted in a conflict. The Microsoft Graph client is not expected to resend the failed request. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.                                                                     |
+| `invalidArgument`       | The argument is invalid, missing or has an incorrect format. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                |
+| `invalidReference`      | This reference is not valid for the current operation. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                        |
+| `itemAlreadyExists`     | The resource being created already exists. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                                    |
+| `itemNotFound`          | The requested resource doesn't exist. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                                         |
+| `methodNotAllowed`      | The HTTP method specified in the request is not allowed on the resource. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                      |
+| `nonBlankCellOffSheet`  | Can't insert new cells because it would push non-empty cells off the end of the worksheet. The Microsoft Graph client is not expected to resend the failed request. An end user can delete rows or columns to make room for content to be inserted and then try again.                                                                 |
+| `rangeExceedsLimit`     | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size. For more information, see [Resource limits and performance optimization for Office Add-ins](/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#excel-add-ins). |
+| `requestAborted`        | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                    |
+| `unsupportedOperation`  | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                               |
+
+>**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 ### 3. Parse the top-level error code
 
@@ -124,28 +148,6 @@ All contents in the response that are not used in the previous steps are for dia
 ## Special case handling
 
 For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a known second-level error code is found, follow the corresponding instructions; otherwise, you should recreate the session directly.
-
-## Examples of other second-level error codes
-
-The following table lists examples of other second-level error codes, including the corresponding handling instructions for each error code. The service might add new error codes at any time.
-
-| Code                      | Instructions                                                                                                                                                                                                                                                                                                                           |
-|:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `accessDenied`          | You cannot perform the requested operation (for example, performing changes to locked cells). The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                 |
-| `filteredRangeConflict` | The operation failed because it conflicts with a filtered range. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                              |
-| `generalException`      | An internal error occurred while processing the request. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                      |
-| `insertDeleteConflict`  | The insert or delete operation attempted resulted in a conflict. The Microsoft Graph client is not expected to resend the failed request. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.                                                                     |
-| `invalidArgument`       | The argument is invalid, missing or has an incorrect format. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                |
-| `invalidReference`      | This reference is not valid for the current operation. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                        |
-| `itemAlreadyExists`     | The resource being created already exists. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                                    |
-| `itemNotFound`          | The requested resource doesn't exist. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                                         |
-| `methodNotAllowed`      | The HTTP method specified in the request is not allowed on the resource. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                      |
-| `nonBlankCellOffSheet`  | Can't insert new cells because it would push non-empty cells off the end of the worksheet. The Microsoft Graph client is not expected to resend the failed request. An end user can delete rows or columns to make room for content to be inserted and then try again.                                                                 |
-| `rangeExceedsLimit`     | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size. For more information, see [Resource limits and performance optimization for Office Add-ins](/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#excel-add-ins). |
-| `requestAborted`        | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                    |
-| `unsupportedOperation`  | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                               |
-
->**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

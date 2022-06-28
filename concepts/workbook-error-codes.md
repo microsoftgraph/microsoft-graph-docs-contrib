@@ -31,7 +31,7 @@ The following table lists the current error codes and messages. The service migh
 | 504         | `gatewayTimeout`      | The server, while acting as a proxy, did not receive a timely response from the upstream server in order to complete the request. |
 
 ## Detailed error code
-The following are important error codes that your app might encounter within the first-level of nested **innerError** objects. The service might add new error codes at any time.
+The following are required error codes that your app might encounter within the first-level of nested **innerError** objects. The service might add new error codes at any time.
 
 - `accessConflict`
 - `badRequestUncategorized`
@@ -56,7 +56,7 @@ The following are important error codes that your app might encounter within the
 - `unauthorizedUncategorized`
 - `unsupportedWorkbook`
 
-For additional examples of other possible error codes within the first-level of nested **innerError** objects, see [Examples of other second-level error codes](workbook-error-handling.md#examples-of-other-second-level-error-codes).
+For examples of optional error codes within the first-level of nested **innerError** objects, see [Optional second-level error code examples](workbook-error-handling.md#optional-second-level-error-code-examples).
 
 >**Note:** The **innerError** object might recursively contain more deeper **innerError** objects with additional, more specific error codes. These deeper **innerError** codes are intended for diagnostics purpose only.
 <!-- {
