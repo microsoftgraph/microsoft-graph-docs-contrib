@@ -173,7 +173,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "writebackConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **writebackConfiguration** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the **writebackConfiguration** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource. Use this object to configure write back of cloud groups to on-premise Active Directory.",
           "Target": "group"
         }
       ],
