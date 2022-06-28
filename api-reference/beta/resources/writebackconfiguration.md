@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a writeback state on Azure AD cloud groups (Microsoft 365 and Security groups).
+Represents a writeback state on Azure AD cloud groups (Microsoft 365 and security groups).
 
 ## Properties
 |Property|Type|Description|
