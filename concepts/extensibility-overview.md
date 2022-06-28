@@ -216,7 +216,7 @@ The request returns a `204 No Content` response code.
 
 ### 3. Schema extensions
 
-[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#3-schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
+[Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
 For the list of resource types that support schema extensions, see [Choose an extension type for your application](#choose-an-extension-type-for-your-application).
 
