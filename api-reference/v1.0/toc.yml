@@ -633,6 +633,10 @@ items:
           href: api/group-delta.md
         - name: Assign license
           href: api/group-assignlicense.md
+        - name: List joined teams
+          href: api/user-list-joinedteams.md
+        - name: List associated teams
+          href: api/associatedteaminfo-list.md
         - name: Group setting
           href: resources/groupsetting.md
           items:
