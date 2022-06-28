@@ -42,7 +42,7 @@ Whenever the throttling threshold is exceeded, Microsoft Graph responds with a r
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {

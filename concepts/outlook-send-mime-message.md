@@ -1,6 +1,6 @@
 ---
-title: "Sending emails with MIME content"
-description: "Email clients have the ability to send emails through Exchange in a MIME message format."
+title: "Send emails with MIME content using the Outlook mail API"
+description: "Email clients can send messages through Exchange in a MIME message format and communicate across multiple email platforms."
 author: "isvargasmsft"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -190,4 +190,7 @@ CgAAAA==
 |--------|------|----|-------|
 | MIME content malformed, missing | POST, PUT | 400 | Invalid base64 string for MIME content. |
 
+## Next steps
 
+- [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0

@@ -1,12 +1,12 @@
 ---
-title: "Use note tags in OneNote pages"
-description: " Enterprise notebooks on Microsoft 365"
+title: "Use note tags on OneNote pages by using the OneNote API"
+description: "Use the data-tag attribute to add and update built-in note tags on a OneNote page. Learn how to work with note tags on lists and how to retrieve note tags."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"
 ---
 
-# Use note tags in OneNote pages
+# Use note tags on OneNote pages
 
 **Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
@@ -263,7 +263,7 @@ A `data-tag` attribute in the output HTML always includes a shape value, and it 
 
 Note that the `data-tag` attribute defined at the list level is pushed to its list items. For more information about using note tags with lists, see [Note tags on lists](#note-tags-on-lists).
 
-> **Note:**
+> [!NOTE]
 > In the output HTML, the definition and remember-for-later note tags are both returned as `data-tag="remember-for-later"`. The `title` element doesn't return any note tag information.
 
 

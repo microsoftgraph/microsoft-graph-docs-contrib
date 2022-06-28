@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGro
 [!INCLUDE [sample-code](../includes/snippets/go/delete-allowedgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-allowedgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

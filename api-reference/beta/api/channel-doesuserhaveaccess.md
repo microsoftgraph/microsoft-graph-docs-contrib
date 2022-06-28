@@ -64,6 +64,8 @@ The following is an example of a request that checks whether an internal user ha
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,6 +96,9 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -114,6 +119,8 @@ Content-Type: application/json
 The following is an example of a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -145,6 +152,9 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -165,6 +175,8 @@ Content-Type: application/json
 The following is an example of a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
 
 #### Request
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -196,6 +208,9 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"

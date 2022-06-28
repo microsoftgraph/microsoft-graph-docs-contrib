@@ -423,7 +423,7 @@ how errors are returned.
 
 ## See also
 
-[Large file upload](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+[Large file upload](/graph/sdks/large-file-upload)
 
 <!--
 {

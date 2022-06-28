@@ -13,8 +13,8 @@ requestBody.SetEmail(&email)
 includedSources := "mailbox, site"
 requestBody.SetIncludedSources(&includedSources)
 ediscoveryCaseId := "ediscoveryCase-id"
-ediscoveryCustodianId := "ediscoveryCustodian-id"
-result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).CustodiansById(&ediscoveryCustodianId).UserSources().Post(requestBody)
+ediscoveryHoldPolicyId := "ediscoveryHoldPolicy-id"
+result, err := graphClient.Security().Cases().EdiscoveryCasesById(&ediscoveryCaseId).LegalHoldsById(&ediscoveryHoldPolicyId).UserSources().Post(requestBody)
 
 
 ```
