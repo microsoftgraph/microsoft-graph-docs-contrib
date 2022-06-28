@@ -63,7 +63,7 @@ The OneNote APIs in Microsoft Graph wrap all body content in at least one div. T
 |Output attribute|Description|
 |:------|:------|
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get?view=graph-rest-1.0&preserve-view=true) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
+| id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | style | The position and size properties of the div. |
  
 ### Non-contributing divs
