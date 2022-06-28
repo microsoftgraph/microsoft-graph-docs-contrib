@@ -53,19 +53,20 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) None |Delete openTypeExtension object. |
+|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](../resources/opentypeextension.md)(in an existing resource instance), or a new [baseTask](basetask.md), [baseTaskList](basetasklist.md)[contact](contact.md), [event](event.md), [message](message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
+|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
 
 ## Properties
 
-|Property Type Description |
+| Property | Type | Description |
 |:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type open extension. Required.|
-|id|String|A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+|extensionName|String|A unique text identifier for an open type data extension. Required.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+
 
 ## Relationships
 
