@@ -19,11 +19,10 @@ Schema extensions allow you to define a schema to extend and add strongly-typed 
 + [application](/graph/api/resources/application)
 + [contact](/graph/api/resources/contact)
 + [device](/graph/api/resources/device)
-+ [event](/graph/api/resources/event)* (for both user and group calendars)
++ [event](/graph/api/resources/event) (for both user and group calendars)
 + [message](/graph/api/resources/message)
 + [organization](/graph/api/resources/organization)
 + [post](/graph/api/resources/post)
-+ [servicePrincipal](/graph/api/resources/serviceprincipal)
 + [todoTask](/graph/api/resources/todotask)
 + [todoTaskList](/graph/api/resources/todotasklist)
 
@@ -49,7 +48,7 @@ For more information about Microsoft Graph extensibility including limits for sc
 |owner|String|The `appId` of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's `appId` will be set as the owner. In either case, the signed-in user must be the owner of the application. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed. Supports `$filter` (`eq`).| 
 |properties|[extensionSchemaProperty](extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |status|String|The lifecycle state of the schema extension. Possible states are `InDevelopment`, `Available`, and `Deprecated`. Automatically set to `InDevelopment` on creation. For more information about the possible state transitions and behaviors, see [Schema extensions lifecycle](#schema-extensions-lifecycle). Supports `$filter` (`eq`).|
-|targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, or **user**.|
+|targetTypes|String collection|Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from **administrativeUnit**, **contact**, **device**, **event**, **group**, **message**, **organization**, **post**, **todoTask**, **todoTaskList**, or **user**.|
 
 ### Schema extensions lifecycle
 
@@ -59,7 +58,7 @@ The owner app can move the extension through different states of a lifecycle, us
 
 |State |Lifecycle state behavior |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>For an owner app that's multi-tenant, only the instance of the owner app that's in a different directory from the home directory can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>Only the owner app can update the extension definition with additive changes or delete it. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
+| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>For an owner app that's multi-tenant, only the instance of the owner app that's in a different directory from the home directory can extend resource instances with this schema definition (if the app has permissions to that resource), or read the extension data. </li><li>Only the owner app can update the extension definition with additive changes. </li><li>Only the owner app can delete the extension definition. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
 | Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (if the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
 | Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 

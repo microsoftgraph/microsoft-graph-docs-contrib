@@ -67,6 +67,9 @@ This resource supports:
 | membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. If not set, the default behavior is `assigned`. |
 | visibility | String | Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, the default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit. |
 
+> [!TIP]
+> Directory extensions and associated data are returned by default while schema extensions and associated data returned only on `$select`.
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|

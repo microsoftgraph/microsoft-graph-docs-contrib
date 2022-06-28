@@ -248,7 +248,6 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
     "targetTypes": [
         "user"
     ],
-    "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
     "properties": [
         {
             "name": "courseId",
@@ -277,7 +276,6 @@ POST https://graph.microsoft.com/v1.0/schemaExtensions
         "user"
     ],
     "status": "InDevelopment",
-    "owner": "da2d15ee-30c0-4732-8f5d-84158b8cb8aa",
     "properties": [
         {
             "name": "courseId",
@@ -319,7 +317,7 @@ POST https://graph.microsoft.com/beta/users/
 }
 ```
 
-The request returns a `201 Created` response code and an [schemaExtension](/graph/api/resources/schemaextension) object in the response body
+The request returns a `201 Created` response code and a [schemaExtension](/graph/api/resources/schemaextension) object in the response body
 
 ##### Update or delete a schema extension property
 
@@ -442,7 +440,7 @@ The table below contrasts and compares the extension types, which should help yo
 
 | Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
 |--|--|--|--|--|
-| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] |
+| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] |
 | Strongly-typed | No | Yes | Yes | No |
 | Filterable | Yes | Yes | Yes | No |
 | Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
