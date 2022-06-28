@@ -87,7 +87,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.sharedWithChannelTeamInfo",
       "id": "893075dd-2487-4122-86db-022c42e20265",
-      "displayName": "Team fabricam",
+      "displayName": "Team Fabrikam",
       "isHostTeam": false,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }

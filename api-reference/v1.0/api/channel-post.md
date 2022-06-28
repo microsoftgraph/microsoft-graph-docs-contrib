@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body for channel with a **membershipType** value of `standard` or `private`. For channel with a **membershipType** value of `shared`, this method return `202 Accepted` response that contains a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body for a channel with a **membershipType** value of `standard` or `private`. For a channel with a **membershipType** value of `shared`, this method returns a `202 Accepted` response code and a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## Examples
 

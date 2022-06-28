@@ -5137,14 +5137,14 @@
           "ApiChange": "Member",
           "ChangedApiName": "shared",
           "ChangeType": "Addition",
-          "Description": "Added the **shared** member to the **channelMembershipType** enumeration.",
+          "Description": "Added the `shared` member to the **channelMembershipType** enumeration.",
           "Target": "channelMembershipType"
         },{
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
           "ApiChange": "Member",
           "ChangedApiName": "teamifyGroup",
           "ChangeType": "Addition",
-          "Description": "Added the **teamifyGroup** member to the **teamsAsyncOperationType** enumeration.",
+          "Description": "Added the `teamifyGroup` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
         },
         {
@@ -5152,7 +5152,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "createChannel",
           "ChangeType": "Addition",
-          "Description": "Added the **createChannel** member to the **teamsAsyncOperationType** enumeration.",
+          "Description": "Added the `createChannel` member to the **teamsAsyncOperationType** enumeration.",
           "Target": "teamsAsyncOperationType"
         },
         {
@@ -5160,7 +5160,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "associatedTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/associatedTeamInfo?view=graph-rest-1.0) resource",
+          "Description": "Added the [associatedTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/associatedTeamInfo?view=graph-rest-1.0) resource and a supported method.",
           "Target": "associatedTeamInfo"
         },
         {
@@ -5173,7 +5173,7 @@
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "sharedWithTeams",
           "ChangeType": "Addition",
           "Description": "Added the **sharedWithTeams** relationship to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
@@ -5184,7 +5184,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharedWithChannelTeamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/sharedWithChannelTeamInfo?view=graph-rest-1.0) resource",
+          "Description": "Added the [sharedWithChannelTeamInfo](https://docs.microsoft.com/en-us/graph/api/resources/sharedWithChannelTeamInfo?view=graph-rest-1.0) resource and supported methods.",
           "Target": "sharedWithChannelTeamInfo"
         },
         {
@@ -5197,7 +5197,7 @@
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "allChannels",
           "ChangeType": "Addition",
           "Description": "Added the **allChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
@@ -5205,7 +5205,7 @@
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "incomingChannels",
           "ChangeType": "Addition",
           "Description": "Added the **incomingChannels** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
@@ -5216,12 +5216,12 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamInfo?view=graph-rest-1.0) resource",
+          "Description": "Added the [teamInfo](https://docs.microsoft.com/en-us/graph/api/resources/teamInfo?view=graph-rest-1.0) resource type.",
           "Target": "teamInfo"
         },
         {
           "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "associatedTeams",
           "ChangeType": "Addition",
           "Description": "Added the **associatedTeams** relationship to the [userTeamwork](https://docs.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-1.0) resource.",
@@ -5239,7 +5239,8 @@
       "Id": "7136eafa-67cc-4703-8dbb-520d68ff9125",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-06-07T09:24:30.6932815Z", "WorkloadArea": "Teamwork",
+      "CreatedDateTime": "2022-06-07T09:24:30.6932815Z", 
+      "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
     {
