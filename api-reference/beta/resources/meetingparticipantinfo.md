@@ -39,6 +39,11 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 >
 > To set the **presenter** role of a meeting attendee when creating or updating an [onlineMeeting](onlinemeeting.md), the value of **allowedPresenters** must also be set to `roleIsPresenter`.
 
+
+> [!CAUTION]
+>
+> Setting **presenter** or **coorganizer** role to users who are not registered in Azure Active Directory is not supported. Currently, such request will be accepted by the [create onlineMeeting](../api/application-post-onlinemeetings.md) method, but the role will not be honored when the participant join the online meeting. The [create onlineMeeting](../api/application-post-onlinemeetings.md) method will reject such request and return `400 Bad Request` at some point.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
