@@ -31,7 +31,7 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
 * Provide appropriate titles and descriptions for your **Activity Types**. Use short titles, such as **@mention** and **Announcements**. Avoid long titles, such as **User at-mentioned activity** and **Post creation activity**.
 * Notifications should convey important information that is relevant to the user. For example, *Diego assigned a sales ticket to you* is a relevant message; *Joni left the sales team* is not.
 * Avoid sending notifications that are promotional in nature, such as *Try the new feature in the Cycling app*.
-* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [activity feed notifications or bot framework messages](#activity-feed-notifications-or-bot-framework-messages).
+* Avoid duplicate notifications from bot messages and activity feed notifications. For more information, see [choose activity feed notifications or bot framework messages](#choose-activity-feed-notifications-or-bot-framework-messages).
 * Use the **text preview** section in notifications. Provide information to help the user determine the importance of the notification and take action, if necessary.
 * Don't add a period at the end of the notification title, to be consistent with all other notification settings in Teams.
 * Make the relationship between the notification and its content clear to the user. For example, when a user receives a notification for approving a leave, the notification should redirect them to the corresponding section of the app. If the notification pertains to removal or deletion of entities, such as users and tasks, direct the recipient to the content and indicate the required action.
