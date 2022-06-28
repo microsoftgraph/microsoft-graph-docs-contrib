@@ -27,6 +27,7 @@ Inherits from [teamInfo](../resources/teaminfo.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the team. Inherited from [teamInfo](../resources/teaminfo.md).|
+|id|String|Read-only. Unique ID of the team.|
 |tenantId|String|The ID of the Azure Active Directory tenant. Inherited from [teamInfo](../resources/teaminfo.md).|
 
 

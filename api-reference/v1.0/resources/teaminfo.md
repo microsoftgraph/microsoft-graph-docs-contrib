@@ -19,6 +19,7 @@ Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelT
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the team.|
+|id|String|Read-only. Unique ID of the team.|
 |tenantId|String|The ID of the Azure Active Directory tenant.|
 
 
