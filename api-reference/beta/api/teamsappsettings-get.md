@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ### Example 1: Get the tenant-wide settings for all Teams apps in the tenant.
 
-### Request
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 ```
 
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
