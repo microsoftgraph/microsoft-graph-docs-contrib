@@ -145,7 +145,7 @@ HTTP/1.1 204 No Content
 
 You can obtain the ID of the label you want to apply to a Microsoft 365 group by using [List label](informationprotectionpolicy-list-labels.md). Then you can update the [assignedLabels](../resources/assignedlabel.md) property of the group with the label ID. 
 
->**Note:** Only apps that use delegated permissions can use this API to apply a sensitivity label to a Microsoft 365 group.
+>**Note:** Use of this API to apply sensitivity labels to Microsoft 365 groups is only supported for delegated permission scenarios.
 
 # [HTTP](#tab/http)
 
