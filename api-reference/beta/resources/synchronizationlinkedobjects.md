@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-References that you would like to provision on-demand such as a member of a group.
+Represents any references to be provisioned during on-demand provisioning.
 
 ## Properties
 |Property|Type|Description|
