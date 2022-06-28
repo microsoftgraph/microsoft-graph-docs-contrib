@@ -23,6 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 ## HTTP request
+Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
