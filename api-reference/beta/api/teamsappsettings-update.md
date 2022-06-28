@@ -81,7 +81,11 @@ Content-Type: application/json
 
 ### Response
 
-``` http
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
 HTTP/1.1 204 No Content
 ```
 
