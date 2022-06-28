@@ -1,6 +1,6 @@
 ---
 title: "writebackConfiguration resource type"
-description: "This complex type will represent a writeback state on cloud groups."
+description: "Represents a writeback state on Azure AD cloud groups (Microsoft 365 and security groups)."
 author: "psaffaie"
 ms.localizationpriority: medium
 ms.prod: "groups"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This complex type will represent a writeback state on cloud groups.
+Represents a writeback state on Azure AD cloud groups (Microsoft 365 and Security groups).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether writeback of cloud groups to on-premise Active Directory is enabled. Default value is `true` for M365 groups and `false` for security groups.|
+|isEnabled|Boolean|Indicates whether writeback of cloud groups to on-premise Active Directory is enabled. Default value is `true` for Microsoft 365 groups and `false` for security groups.|
 
 ## Relationships
 None.

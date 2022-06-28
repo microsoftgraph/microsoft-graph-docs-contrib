@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Indicates whether writeback of cloud groups to on-premise Active Directory is enabled and the target group type for the on-premise group.
 
- By default, all Azure AD security groups are not writeback enabled. For M365 groups, the default settings that are defined by the properties of this resource can be overwritten by the `NewUnifiedgroupWritebackDefault` [directory setting object](directorysetting.md).
+ By default, all Azure AD security groups are not writeback enabled. For Microsoft 365 groups, the default settings that are defined by the properties of this resource can be overwritten by the `NewUnifiedgroupWritebackDefault` [directory setting object](directorysetting.md).
 
 Inherits from [writebackConfiguration](../resources/writebackconfiguration.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether writeback of cloud groups to on-premise Active Directory is enabled. Default value is `true` for M365 groups and `false` for security groups. Inherited from [writebackConfiguration](../resources/writebackconfiguration.md).|
-|onPremisesGroupType|String|Indicates the target on-premise group type the cloud object will be written back as. Default value is { "isEnabled": true, "onPremisesGroupType" : "UniversalDistritionGroup" } for M365 gorup if NewUnifiedGroupWritebackDefault group setting set to true, is { "isEnabled": false, "onPremisesGroupType" : "UniversalDistritionGroup" } if NewUnifiedGroupWritebackDefault group setting set to false. Default value is { "isEnabled": false, "onPremisesGroupType" : "UniversalSecurityGroup" } for security group.|
+|isEnabled|Boolean|Indicates whether writeback of cloud groups to on-premise Active Directory is enabled. Nullable. Default value is `true` for Microsoft 365 groups and `false` for security groups. Inherited from [writebackConfiguration](../resources/writebackconfiguration.md).|
+|onPremisesGroupType|String|Indicates the target on-premise group type the cloud object will be written back as. Nullable. The possible values are: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`. <br>+ If the cloud group is a unified (Microsoft 365) group, this property can be one of the following: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`. <br> + Azure AD security groups can be written back as `universalSecurityGroup`. <br> + If **isEnabled** or the `NewUnifiedGroupWritebackDefault` [group setting](directorysetting.md) is `true` but this property is not explicitly configured: <br> &nbsp; &nbsp; + Microsoft 365 groups will be written back as `universalDistributionGroup` by default <br> &nbsp; &nbsp; + Security groups will be written back as `universalSecurityGroup` by default|
 
 ## Relationships
 None.
