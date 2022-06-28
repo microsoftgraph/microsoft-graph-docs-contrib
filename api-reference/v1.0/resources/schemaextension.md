@@ -90,10 +90,6 @@ Here is a JSON representation of the resource.
 ## See also
 
 + [Add custom properties to resources using extensions](/graph/extensibility-overview)
-
-## See also
-
-+ [Add custom data to resources using extensions](/graph/extensibility-overview)
 + [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
