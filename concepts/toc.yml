@@ -445,19 +445,19 @@ items:
             href: search-concept-files.md
           - name: Search connectors
             href: search-concept-custom-types.md
-          - name: Search persons (preview)
+          - name: Search people
             href: search-concept-person.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
-          - name: Manage search results layout (preview)
+          - name: Manage search results layout
             href: search-concept-display-layout.md
           - name: Refine search results
             href: search-concept-aggregation.md
-          - name: Request spelling correction (preview)
+          - name: Request spelling corrections
             href: search-concept-speller.md
-          - name: Trim duplicate search results (preview)
+          - name: Trim duplicate search results
             href: search-concept-trim-duplicate.md
-          - name: Use query templates (preview)
+          - name: Use query templates
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
