@@ -1,6 +1,6 @@
 ---
 title: "Delete virtualAppointment"
-description: "Deletes a virtualAppointment object."
+description: "Delete a virtualAppointment object."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [virtualAppointment](../resources/virtualappointment.md) object.
+Delete a [virtualAppointment](../resources/virtualappointment.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite          |
-| Delegated (personal Microsoft account) | Not Supported.                                                                         |
+| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite                                  |
+| Delegated (personal Microsoft account) | Not supported.                                                                         |
 | Application                            | Not supported.
 
 ## HTTP request
@@ -62,8 +62,7 @@ DELETE https://graph.microsoft.com/beta/onlineMeeting/virtualAppointment
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

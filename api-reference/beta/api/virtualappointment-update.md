@@ -20,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite          |
-| Delegated (personal Microsoft account) | Not Supported.                                                                         |
+| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite                                  |
+| Delegated (personal Microsoft account) | Not supported.                                                                         |
 | Application                            | Not supported.
 
 ## HTTP request
@@ -42,17 +42,16 @@ PATCH /onlineMeeting/virtualAppointment
 | Accept-Language | Language. Optional.       |
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource |Optional|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number |Optional|
-|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment |Optional|
-|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment |Optional|
-|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join |Optional|
-
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|The client information for the virtual appointment, including name, email, and SMS phone number. Optional.|
+|appointmentClientJoinWebUrl|String|The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.|
+|externalAppointmentId|String|The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.|
+|externalAppointmentUrl|String|The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.|
+|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|The settings associated with the virtual appointment resource. Optional.|
 
 
 ## Response
@@ -91,7 +90,7 @@ Content-length: 379
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
