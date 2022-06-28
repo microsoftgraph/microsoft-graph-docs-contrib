@@ -53,7 +53,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 ## Methods
 
-|Method Return Type Description |
+| Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Create](../api/opentypeextension-post-opentypeextension.md) [openTypeExtension](opentypeextension.md) (in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md), [post](post.md), [todoTask](todotask.md), or [todoTaskList](todotasklist.md) that contains an openTypeExtension object Create an openTypeExtension object in an existing or new resource instance.|
 |[Get](../api/opentypeextension-get.md) [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
