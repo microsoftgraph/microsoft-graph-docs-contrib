@@ -1,6 +1,6 @@
 ---
 title: "Best practices for using Microsoft Teams activity feed notifications"
-description: "This article provides best practices and examples for working with activity feed notifications in Microsoft Graph."
+description: "Get tips for enhancing the Microsoft Teams activity feed notification experience in Microsoft Graph and learn when to choose notifications or bot framework messages."
 author: "KirtiPereira"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -42,9 +42,9 @@ Microsoft Teams displays notifications in both activity feed and toast formats. 
     > [!NOTE]
     > The 30-day storage limit applies to all notifications. It's not specific to notifications sent through the activity feed notifications API.
 
-## Activity feed notifications or bot framework messages
+## Choose activity feed notifications or bot framework messages
 
-You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each. 
+You can use either activity feed notifications or bot framework messages, but don't use both notification types. The following sections describe the notification types and when to use each.
 
 ### Activity feed notifications
 
@@ -68,4 +68,5 @@ It is useful for the alert to be consumed as a chat or channel message; for exam
 
 ## See also
 
-[Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile) 
+- [Design activity feed notifications for Microsoft Teams](/microsoftteams/platform/concepts/design/activity-feed-notifications?tabs=mobile)
+- [Microsoft Teams API overview](teams-concept-overview.md)

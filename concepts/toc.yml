@@ -495,12 +495,12 @@ items:
             href: choose-online-meeting-api.md
           - name: Configure built-in tabs
             href: teams-configuring-builtin-tabs.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
-          - name: Licensing and payment requirements
-            href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: Protected APIs
+            href: teams-protected-apis.md
+          - name: Licensing and payment models
+            href: teams-licenses.md
           - name: Activity feed notifications
             items:
               - name: Send activity feed notifications
@@ -509,7 +509,7 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: System messages
+          - name: Get system messages
             href: system-messages.md
       - name: To-do tasks
         href: todo-concept-overview.md
