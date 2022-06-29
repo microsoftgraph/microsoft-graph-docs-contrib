@@ -14,7 +14,7 @@ The result of this set of requests is a table with three cells formatted like th
 
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-## Example 1
+## Example 1: cell 1 alignment and height
 
 This request updates the vertical alignment, row height, and column height of the first cell.
 
@@ -79,7 +79,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2
+## Example 2: cell 1 font style, size, and color
 
 This request updates the font style, size, and color of the first cell.
 
@@ -144,7 +144,7 @@ Content-type: application/json
 }
 ```
 
-## Example 3
+## Example 3: cell 1 background color
 
 This request updates the background color of the first cell.
 
@@ -202,7 +202,7 @@ Content-type: application/json
 }
 ```
 
-## Example 4
+## Example 4: cell 2 alignment and height
 
 This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
@@ -268,7 +268,7 @@ Content-type: application/json
 }
 ```
 
-## Example 5
+## Example 5: cell 2 font style and size
 
 This request updates the font style and size of the second cell.
 
@@ -332,7 +332,7 @@ Content-type: application/json
 }
 ```
 
-## Example 6
+## Example 6: cell 2 background color
 
 This request updates the background color of the second cell.
 
@@ -390,7 +390,7 @@ Content-type: application/json
 }
 ```
 
-## Example 7
+## Example 7: cell 3 alignment and height
 
 This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
 
@@ -456,7 +456,7 @@ Content-type: application/json
 }
 ```
 
-## Example 8
+## Example 8: cell 3 font style, size, and color
 
 This request updates the font style, size, and color of the third cell.
 
@@ -523,7 +523,7 @@ Content-type: application/json
 }
 ```
 
-## Example 9
+## Example 9: cell 3 background color
 
 This request updates the background color of the third cell.
 
