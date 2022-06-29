@@ -7,9 +7,9 @@ ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Change notifications for Microsoft Teams resources using Microsoft Graph
+# Change notifications for Microsoft Teams resources
 
-Change notifications enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 > [!NOTE]
 > The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access the resource.
