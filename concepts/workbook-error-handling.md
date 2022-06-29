@@ -1,14 +1,14 @@
 ---
-title: "Error handling for Excel APIs in Microsoft Graph"
-description: "Error handling instructions for Excel APIs in Microsoft Graph"
+title: "Error handling for Excel APIs"
+description: "Find general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
-# Error handling for Excel APIs in Microsoft Graph
+# Error handling for Excel APIs
 
-This article provides general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails.
+This article provides general instructions and suggestions for handling errors that are returned by the [Excel APIs](/graph/api/resources/excel) in Microsoft Graph when a request sent through the API fails.
 
 ## Types of error responses
 
@@ -37,7 +37,8 @@ Content-type: application/json
 
 For both of these error responses, the error object has the following structure.
 
->**Note:** Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
+> [!NOTE]
+> Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
 
 ```json
 {
@@ -105,17 +106,18 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size. For more information, see [resource limits and performance optimization for Office Add-ins](/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#excel-add-ins).
 | **requestAborted**         | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.
 | **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
-| **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes. For best practices to reduce throttling, see [Throttling](workbook-best-practice.md#throttling).
+| **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes. For best practices to reduce throttling, see [Reduce throttling errors](workbook-best-practice.md#reduce-throttling-errors).
 | **transientFailure**           | The request failed due to a transient error. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **unauthorizedUncategorized**         | Required authentication information for the resource is either missing or invalid. The Microsoft Graph client is not expected to resend the failed request.
 | **unsupportedOperation**         | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Microsoft Graph client is not expected to resend the failed request until the unsupported factors are removed.
 
->**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> [!NOTE]
+> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 ### 3. Parse the top-level error code
 
-If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-code) topic, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes](workbook-error-codes.md#error-code).
+If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-codes) article, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
 
 ### 4. Parse the status code
 
@@ -127,7 +129,7 @@ For some of the responses in the regular pattern, a recovery cooldown duration i
 
 ## Special case handling
 
-For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-code), parse the second-level code and follow the corresponding instructions; otherwise, we reconmmend that you recreate the session directly.
+For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-codes), parse the second-level code and follow the corresponding instructions; otherwise, we recommend that you recreate the session directly.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",
@@ -135,3 +137,7 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
   "section": "documentation",
   "tocPath": ""
 } -->
+
+## See also
+
+- [Use the Excel REST API](/graph/api/resources/excel)
