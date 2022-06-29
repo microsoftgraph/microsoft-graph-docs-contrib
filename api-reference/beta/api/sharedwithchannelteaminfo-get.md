@@ -1,6 +1,6 @@
 ---
 title: "Get sharedWithChannelTeamInfo"
-description: "Get a team shared with a channel."
+description: "Get a team that has been shared with a specified channel."
 author: "devjha-ms"
 doc_type: "apiPageType"
 ms.localizationpriority: high
