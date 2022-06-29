@@ -468,10 +468,10 @@
         },
         {
           "Id": "e04528be-94f6-4bc5-9485-9b71da7f4804",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppSettings](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
+          "Description": "Added the **teamsAppSettings** navigation property to the [teamwork](https://docs.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource",
           "Target": "teamwork"
         }
       ],
