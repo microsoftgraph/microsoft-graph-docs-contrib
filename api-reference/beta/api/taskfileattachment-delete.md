@@ -1,6 +1,6 @@
 ---
 title: "Delete taskFileAttachment"
-description: "Delete a taskFileAttachment object."
+description: "Delete a taskFileAttachment object from a todoTask resource."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
