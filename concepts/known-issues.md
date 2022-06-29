@@ -154,9 +154,9 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
-### Presenter role assigned to non-AAD participants
+### Presenter role cannot be assigned to non-Azure AD participants
 
-Assigning **presenter** or **coorganizer** role to users who are not registered in Azure Active Directory is not supported. Currently, such request will be accepted by the [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method, but the role will not be honored when the participant join the online meeting. The [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method will reject such request and return `400 Bad Request` at some point. You should update your code to avoid a breaking experience.
+Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. Such requests will be accepted by the [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method, but the role will not be applied when the participant joins the online meeting. The [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) method will reject the request and return a `400 Bad Request` error. 
 
 ## Contacts
 
