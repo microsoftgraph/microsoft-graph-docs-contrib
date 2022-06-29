@@ -52,7 +52,7 @@ Available in only the beta endpoint:
 - New or changed events in a user's mailbox: `/users/{id}/events`
 - New or changed messages in a user's mailbox: `/users/{id}/messages`
 - New or changed messages in a user's mailFolder: `/users/{id}/mailFolders/{id}/messages`
-- Teams Meeting status information updates: `/communications/onlineMeetings/{meeting-id}`
+- Teams Meeting status information updates: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
 
 Change notifications that include **chatMessage**, **onlineMeeting**, or **presence** resource data consist of all the properties of the changed instance. They do not support returning only selected properties of the instance. 
 
@@ -604,3 +604,4 @@ decryptedPayload += decipher.final('utf8');
 - [Create subscription](/graph/api/subscription-post-subscriptions)
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
+- [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md) 

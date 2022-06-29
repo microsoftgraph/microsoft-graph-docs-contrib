@@ -11,6 +11,13 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### decisionItemPrincipalResourceMembershipType values 
+
+|Member|
+|:---|
+|direct|
+|indirect|
+|unknownFutureValue|
 
 ### signInFrequencyAuthenticationType values
 
