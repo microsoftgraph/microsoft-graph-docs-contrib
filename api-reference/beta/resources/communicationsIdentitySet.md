@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A combination of user and application identities that together identify a participant in a call or meeting. Inherits from [identitySet](identityset.md).
+A combination of user and application identities that together identify a participant in a call or meeting.
+
+Inherits from [identitySet](identityset.md).
 
 ## Properties
 

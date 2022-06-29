@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an application. Inherits from [identity](identity.md).
+Represents the identity of an application.
+
+Inherits from [identity](identity.md).
 
 ## Properties
 

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a user whose underlying identity is not available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user will not have access to the identity of that user in the call roster. Inherits from [identity](identity.md).
+Represents the identity of a user whose underlying identity is not available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user will not have access to the identity of that user in the call roster.
+
+Inherits from [identity](identity.md).
 
 ## Properties
 

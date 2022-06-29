@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a participant who joined the communication via phone. Inherits from [identity](identity.md).
+Represents the identity of a participant who joined the communication via phone.
+
+Inherits from [identity](identity.md).
 
 ## Properties
 
