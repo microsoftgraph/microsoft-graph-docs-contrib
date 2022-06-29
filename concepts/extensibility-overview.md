@@ -1,6 +1,6 @@
 ---
 title: "Add custom data to resources using extensions"
-description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
+description: "You can extend Microsoft Graph with your own application data. Add custom properties to Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -17,7 +17,8 @@ Microsoft Graph offers two types of extensions. Choose the extension type that b
 - **Open extensions**: A good way for developers to get started.
 - **Schema extensions**: A more versatile mechanism for developers who care about storing typed data, making their schema discoverable and shareable, being able to filter, and in the future, being able to perform input data validation and authorization.
 
-> **Important:** You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
+> [!IMPORTANT]
+> You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 
 ## Supported resources
 
@@ -25,7 +26,7 @@ The following table lists the resources that support open and schema extensions,
 
 |Resource |Open extensions |Schema extensions |
 |:------- |:------ |:------ |
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) | Preview only | Preview only |
+| [Administrative unit](/graph/api/resources/administrativeunit) | GA | GA |
 | [Calendar event](/graph/api/resources/event) | GA | GA |
 | [Device](/graph/api/resources/device) | GA | GA |
 | [Group](/graph/api/resources/group) | GA | GA |
@@ -103,7 +104,8 @@ Depending on the current state, the owner app may be able to update or delete th
 | Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can simply add custom data to instances of those resource types specified in the extension (as long as the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
 | Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 
-> **Note:** Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
+> [!NOTE]
+> Schema extension definitions (marked as `Available`) created by other developers from other tenants are visible to all developers (by listing all schema extensions). This is different from other APIs that only return tenant-specific data. On the other hand, extension data created based on schema extension definitions, is tenant-specific and can only be accessed by apps explicitly granted permission. 
 
 ### Supported property data types
 
@@ -117,7 +119,8 @@ The following data types are supported when defining a property in a schema exte
 | Integer | 32-bit value. Not supported for messages, events and posts. |
 | String | 256 characters maximum. |
 
-> **Note:** Multi-value properties are not supported.
+> [!NOTE]
+> Multi-value properties are not supported.
 
 ### Azure AD directory schema extensions
 

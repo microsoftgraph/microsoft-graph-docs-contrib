@@ -1,6 +1,6 @@
 ---
 title: "Get incremental changes to messages in a folder"
-description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"
+description: "Use delta query to track changes of messages in a folder hierarchy by tracking each folder individually. Example shows how to synchronize messages in a folder."
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -8,10 +8,9 @@ ms.custom: graphiamtop20
 
 # Get incremental changes to messages in a folder
 
-Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of
+Delta query lets you query for additions, deletions, or updates to messages in a folder by way of a series of
 [delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
-and synchronize a local store of a user's messages,
-without having to fetch the entire set of the user's messages from the server every time.
+and synchronize a local store of a user's messages without having to fetch the entire set of the user's messages from the server every time.
 
 Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox),
 and incremental synchronization that retrieves all of the messages that have changed in that folder since
@@ -90,9 +89,9 @@ since the completion of the very first round.
 
 -->
 
-## Example to synchronize messages in a folder
+## Example: synchronize messages in a folder
 
-The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.
+The following example shows 2 rounds of synchronization of a specific folder that initially contains 5 messages.
 
 The first round involves a series of 3 requests to synchronize all 5 messages in the folder:
 
