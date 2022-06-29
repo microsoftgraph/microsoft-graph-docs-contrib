@@ -41,7 +41,7 @@ If the corresponding access review **scope** targets B2B direct connect users an
 ```http
 "reviewers": [
     {
-        "query": "/groups/{group id}}/transitiveMembers",
+        "query": "/groups/{group id}/transitiveMembers",
         "queryType": "MicrosoftGraph"
     }
 ]
