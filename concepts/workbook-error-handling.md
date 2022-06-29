@@ -107,7 +107,7 @@ The following table lists instructions for required second-level error codes tha
 | `unsupportedWorkbook`         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Microsoft Graph client is not expected to resend the failed request until the unsupported factors are removed.
 
 > [!NOTE]
-> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> For the regular pattern, the failed request is defined as the request that corresponds to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 #### Optional second-level error code examples
 
@@ -130,7 +130,7 @@ The following table lists examples of optional second-level error codes, includi
 | `unsupportedOperation`  | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                               |
 
 > [!NOTE]
-> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> For the regular pattern, the failed request is defined as the request that corresponds to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 ### 3. Parse the top-level error code
 
@@ -146,7 +146,7 @@ For some of the responses in the regular pattern, a recovery cooldown duration i
 
 ## Diagnostic information
 
-All contents in the response that are not used in the previous steps are for diagnostics purpose only (including strings in **message** fields). We don't recommemd that you take a dependency on these contents as they might change without notice.
+All contents in the response that are not used in the previous steps are for diagnostics purpose only (including strings in the **message** fields). We don't recommemd that you take a dependency on these contents as they might change without notice.
 
 ## Special case handling
 
