@@ -1,14 +1,14 @@
 ---
-title: "Error handling for Excel APIs in Microsoft Graph"
-description: "Error handling instructions for Excel APIs in Microsoft Graph"
+title: "Error handling for Excel APIs"
+description: "Find general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
-# Error handling for Excel APIs in Microsoft Graph
+# Error handling for Excel APIs
 
-This article provides general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails.
+This article provides general instructions and suggestions for handling errors that are returned by the [Excel APIs](/graph/api/resources/excel) in Microsoft Graph when a request sent through the API fails.
 
 ## Types of error responses
 
@@ -37,7 +37,8 @@ Content-type: application/json
 
 For both of these error responses, the error object has the following structure.
 
->**Note:** Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
+> [!NOTE]
+> Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
 
 ```json
 {
@@ -111,7 +112,8 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **unsupportedOperation**         | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Microsoft Graph client is not expected to resend the failed request until the unsupported factors are removed.
 
->**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> [!NOTE]
+> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 ### 3. Parse the top-level error code
 
@@ -135,3 +137,7 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
   "section": "documentation",
   "tocPath": ""
 } -->
+
+## See also
+
+- [Use the Excel REST API](/graph/api/resources/excel)
