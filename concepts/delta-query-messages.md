@@ -40,8 +40,7 @@ request to the next **delta** function call for the same folder. A `@odata.delta
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `@odata.nextLink` and
-`@odata.deltaLink` URLs.
+See the [example](#example-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
 
 ### Use query parameters in a delta query for messages
 

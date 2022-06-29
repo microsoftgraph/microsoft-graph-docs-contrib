@@ -193,7 +193,8 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
     The client should discard the validation token after providing it in the response.
 
-    > **Important:** If the client returns an encoded validation token, the validation will fail.
+    > [!IMPORTANT]
+    > If the client returns an encoded validation token, the validation fails.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 

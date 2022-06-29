@@ -24,7 +24,8 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
->**Note:** OData 4.0 supports system query options in only GET operations.
+> [!NOTE]
+> OData 4.0 supports system query options in only GET operations.
 
 Click the examples to try them in [Graph Explorer][graph-explorer].
 
@@ -191,7 +192,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 
 To negate the result of the expression inside the `any` clause, use the `not` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
 
->**Note:** For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
+> [!NOTE]
+> For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
@@ -290,8 +292,8 @@ For example, when retrieving the messages of the signed-in user, you can specify
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-
-> **Important:** In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+> [!IMPORTANT]
+> In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
 > In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
@@ -333,7 +335,7 @@ For example, the following [list messages](/graph/api/user-list-messages) reques
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-
+> [!NOTE]
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## Error handling for query parameters

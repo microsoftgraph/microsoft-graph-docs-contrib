@@ -43,8 +43,7 @@ request to the next **delta** function call for that same calendar view. A `@oda
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
 
-See the [example](#example-to-synchronize-events-in-a-calendar-view) to learn how to use these `@odata.nextLink` and 
-`@odata.deltaLink` URLs.
+See the [example](#example-synchronize-events-in-a-calendar-view) to learn how to use these `@odata.nextLink` and `@odata.deltaLink` URLs.
 
 ### Use query parameters in a delta query for calendar view
 
