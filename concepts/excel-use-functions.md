@@ -75,7 +75,7 @@ Inside a cell, the `median` function looks like this example:
 
 `=MEDIAN(A2:A6)`
 
-(See the documentation for the [MEDIAN Excel function](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
+For more information, see the documentation for the [MEDIAN Excel function](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).
 
 ### Request
 

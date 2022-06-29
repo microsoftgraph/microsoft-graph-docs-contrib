@@ -106,7 +106,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 | **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number. The Microsoft Graph client can try to send a request with smaller range size. For more information, see [resource limits and performance optimization for Office Add-ins](/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#excel-add-ins).
 | **requestAborted**         | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.
 | **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
-| **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes. For best practices to reduce throttling, see [Throttling](workbook-best-practice.md#throttling).
+| **tooManyRequestsUncategorized**             | The failed request exceeds certain frequency limitation. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes. For best practices to reduce throttling, see [Reduce throttling errors](workbook-best-practice.md#reduce-throttling-errors).
 | **transientFailure**           | The request failed due to a transient error. The Microsoft Graph client is not expected to resend the failed request until the specified cooldown duration passes.
 | **unauthorizedUncategorized**         | Required authentication information for the resource is either missing or invalid. The Microsoft Graph client is not expected to resend the failed request.
 | **unsupportedOperation**         | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.
@@ -117,7 +117,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 
 ### 3. Parse the top-level error code
 
-If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-code) topic, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes](workbook-error-codes.md#error-code).
+If you can't find the second-level error code listed in the [Detailed error codes](workbook-error-codes.md#detailed-error-codes) article, we recommend that you follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
 
 ### 4. Parse the status code
 
@@ -129,7 +129,7 @@ For some of the responses in the regular pattern, a recovery cooldown duration i
 
 ## Special case handling
 
-For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-code), parse the second-level code and follow the corresponding instructions; otherwise, we reconmmend that you recreate the session directly.
+For [sessionful requests](excel-manage-sessions.md#request-types), if you encounter a `502/badGateway` or `503/serviceUnavailable` error, when a second-level error code is listed in [Detailed error codes](workbook-error-codes.md#detailed-error-codes), parse the second-level code and follow the corresponding instructions; otherwise, we recommend that you recreate the session directly.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

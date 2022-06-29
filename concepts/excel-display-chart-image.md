@@ -8,11 +8,15 @@ ms.prod: "excel"
 
 # Display a chart image in Excel
 
-When you perform a [GET operation to retrieve a chart image](/graph/api/chart-image), the Excel API in Microsoft Graph returns the image as a base-64 string.
+When you perform a [GET operation to retrieve a chart image](/graph/api/chart-image), the Excel API in Microsoft Graph returns the image as a base-64 string. You can display the base-64 string inside an HTML image tag:
 
-You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+```html
+ <img src="data:image/png;base64,{base-64 chart image string}/>
+```
 
-For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Following is an example of a chart image returned with the default parameters.
+For default behavior, use `Image(width=0,height=0,fittingMode='fit')`.
+
+Following is an example of a chart image returned with the default parameters.
 
 ![Excel chart image with default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
