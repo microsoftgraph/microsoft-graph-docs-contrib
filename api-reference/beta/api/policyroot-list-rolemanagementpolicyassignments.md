@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) objects and their properties.
+Get the details of all role management policy assignments including the policies and rules associated with the Azure AD roles.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq 'scopeId' and s
 ```
 
 ## Optional query parameters
-This method supports all of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
