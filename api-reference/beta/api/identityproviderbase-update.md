@@ -105,7 +105,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
+PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
 
 {
@@ -114,7 +114,7 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-socialidentityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
