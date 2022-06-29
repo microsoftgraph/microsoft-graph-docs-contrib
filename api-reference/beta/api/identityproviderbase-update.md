@@ -107,6 +107,7 @@ The following is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
+
 {
   "@odata.type": "#microsoft.graph.socialIdentityProvider",
   "clientSecret": "1111111111111"
