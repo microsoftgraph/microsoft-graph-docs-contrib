@@ -1831,7 +1831,7 @@
 			"ApiChange": "Parameter",
 			"ChangedApiName": "getM365AppUserCounts",
 			"ChangeType": "Deletion",
-			"Description": "Removed the `content` parameter from [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta) method.",
+			"Description": "Removed the `content` parameter from the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta) method.",
 			"Target": "getM365AppUserCounts"
 		},
 		{
@@ -1839,7 +1839,7 @@
 			"ApiChange": "Parameter",
 			"ChangedApiName": "getM365AppPlatformUserCounts",
 			"ChangeType": "Deletion",
-			"Description": "Removed the `content` parameter from [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta) method.",
+			"Description": "Removed the `content` parameter from the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta) method.",
 			"Target": "getM365AppPlatformUserCounts"
 		},
 		{
@@ -1847,14 +1847,14 @@
 			"ApiChange": "Parameter",
 			"ChangedApiName": "getM365AppUserDetail",
 			"ChangeType": "Deletion",
-			"Description": "Removed the `content` parameter from [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appuserdetail?view=graph-rest-beta) method.",
+			"Description": "Removed the `content` parameter from the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appuserdetail?view=graph-rest-beta) method.",
 			"Target": "getM365AppUserDetail"
 		}
 		],
 		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
 		"Cloud": "prd",
 		"Version": "beta",
-		"CreatedDateTime": "2021-06-13T00:00:00",
+		"CreatedDateTime": "2021-06-29T00:00:00",
 		"WorkloadArea": "Reports",
 		"SubArea": "Microsoft 365 usage reports"
 	}
