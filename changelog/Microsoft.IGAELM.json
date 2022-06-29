@@ -3,11 +3,29 @@
     {
       "ChangeList": [
         {
+          "Id": "bb684132-f2ca-481a-9582-bd3de6f5c3e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossCloudAzureActiveDirectoryTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossCloudAzureActiveDirectoryTarget](https://docs.microsoft.com/en-us/graph/api/resources/crosscloudazureactivedirectorytarget?view=graph-rest-beta) resource. Use this in Azure AD Entitlement Management connected organizations to refer to an Azure Active Directory tenant in another cloud.",
+          "Target": "crossCloudAzureActiveDirectoryTarget"
+        }
+      ],
+      "Id": "bb684132-f2ca-481a-9582-bd3de6f5c3e6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2022-05-24T00:00:00.557Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d54d764d-2587-46f9-9fd5-1cc4df27be97",
           "ApiChange": "Method",
           "ChangedApiName": "additionalAccess",
           "ChangeType": "Addition",
-          "Description": "Added the [additionalAccess[(https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [additionalAccess](https://docs.microsoft.com/en-us/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignment?view=graph-rest-beta) resource.",
           "Target": "accessPackageAssignment"
         }
       ],
@@ -25,7 +43,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-1.0) resource.",
           "Target": "unifiedRoleAssignment"
         },
         {
@@ -33,7 +51,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read and write operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read and write operations of the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignment?view=graph-rest-1.0) resource.",
           "Target": "unifiedRoleAssignment"
         },
         {
@@ -41,7 +59,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for application permission `EntitlementManagement.Read.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-1.0) resource.",
           "Target": "unifiedRoleDefinition"
         },
         {
@@ -49,7 +67,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EntitlementManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-v1.0) resource.",
+          "Description": "Added support for application permission `EntitlementManagement.ReadWrite.All` to the read operations of the [unifiedRoleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-1.0) resource.",
           "Target": "unifiedRoleDefinition"
         }
       ],

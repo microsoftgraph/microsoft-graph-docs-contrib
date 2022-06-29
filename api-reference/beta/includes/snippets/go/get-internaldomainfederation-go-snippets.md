@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 domainId := "domain-id"
 internalDomainFederationId := "internalDomainFederation-id"
-result, err := graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Get(nil)
+result, err := graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Get()
 
 
 ```

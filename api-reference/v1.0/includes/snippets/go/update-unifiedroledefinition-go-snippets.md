@@ -20,11 +20,8 @@ requestBody.SetRolePermissions( []UnifiedRolePermission {
 		}
 	}
 }
-options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
+graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(requestBody)
 
 
 ```

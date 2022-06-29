@@ -36,11 +36,8 @@ requestBody.SetRemoveExclusions( []UpdatableAsset {
 		"id": "String (identifier)",
 	}
 }
-options := &msgraphsdk.UpdateAudienceRequestBuilderPostOptions{
-	Body: requestBody,
-}
 deploymentId := "deployment-id"
-graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudience(deployment-id).Post(options)
+graphClient.Admin().Windows().Updates().DeploymentsById(&deploymentId).Audience().UpdateAudience(deployment-id).Post(requestBody)
 
 
 ```

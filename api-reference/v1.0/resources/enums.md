@@ -11,6 +11,22 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### federatedIdpMfaBehavior values
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### promptLoginBehavior values
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|disabled|
+|unknownFutureValue|
+
 ### expirationPatternType values 
 
 |Member|
@@ -1033,6 +1049,15 @@ Namespace: microsoft.graph
 | otherFax
 | pager
 | radio
+
+
+### plannerContainerType values
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|roster|
 
 
 ### plannerPreviewType values
@@ -2067,6 +2092,13 @@ Possible values for user account types (group membership), per Windows definitio
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### authenticationProtocol values 
+
+|Member|
+|:---|
+|wsFed|
+|saml|
 
 ### longRunningOperationStatus values
 

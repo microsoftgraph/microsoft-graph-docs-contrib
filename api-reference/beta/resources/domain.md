@@ -43,6 +43,7 @@ To associate a domain with a tenant:
 |[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
 |[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
 
 ## Properties
 
@@ -58,7 +59,7 @@ To associate a domain with a tenant:
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
 |passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.|
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used. |
-|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable|
+|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
 
 ## Relationships
@@ -67,10 +68,10 @@ Relationships between a domain and other objects in the directory such as its ve
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|domainNameReferences|[directoryObject](directoryobject.md) collection| Read-only, Nullable|
-|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable |
-|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable|
-|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Azure AD.|
+|domainNameReferences|[directoryObject](directoryobject.md) collection| The objects such as users and groups that reference the domain ID. Read-only, Nullable. Supports `$expand` and `$filter` by the OData type of objects returned. For example `/domains/{domainId}/domainNameReferences/microsoft.graph.user` and `/domains/{domainId}/domainNameReferences/microsoft.graph.group`.|
+|serviceConfigurationRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services. Read-only, Nullable. Supports `$expand`. |
+|verificationDnsRecords|[domainDnsRecord](domaindnsrecord.md) collection| DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable. Supports `$expand`.|
+|federationConfiguration|[internalDomainFederation](../resources/internaldomainfederation.md)| Domain settings configured by customer when federated with Azure AD. Supports `$expand`.|
 
 ## JSON representation
 Here is a JSON representation of the resource.

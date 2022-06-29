@@ -31,10 +31,7 @@ requestBody.SetSubnetId(&subnetId)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
 }
-options := &msgraphsdk.OnPremisesConnectionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(requestBody)
 
 
 ```

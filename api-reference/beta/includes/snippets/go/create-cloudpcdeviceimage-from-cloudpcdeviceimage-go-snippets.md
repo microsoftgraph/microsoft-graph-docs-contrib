@@ -21,10 +21,7 @@ requestBody.SetSourceImageResourceId(&sourceImageResourceId)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcDeviceImage",
 }
-options := &msgraphsdk.DeviceImagesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(requestBody)
 
 
 ```

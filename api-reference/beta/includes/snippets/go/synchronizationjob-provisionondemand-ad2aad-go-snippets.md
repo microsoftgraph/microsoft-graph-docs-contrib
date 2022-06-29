@@ -10,18 +10,19 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewParametersRequestBody()
 requestBody.SetParameters( []SynchronizationJobApplicationParameters {
 	msgraphsdk.NewSynchronizationJobApplicationParameters(),
-	SetAdditionalData(map[string]interface{}{
-		"ruleId": "6c409270-f78a-4bc6-af23-7cf3ab6482fe",
-		"subjects":  []Object {
-		}
+ruleId := "6c409270-f78a-4bc6-af23-7cf3ab6482fe"
+	SetRuleId(&ruleId)
+	SetSubjects( []SynchronizationJobSubject {
+		msgraphsdk.NewSynchronizationJobSubject(),
+objectId := "CN=AdeleV,CN=Users,DC=corp,DC=chicago,DC=com"
+		SetObjectId(&objectId)
+objectTypeName := "user"
+		SetObjectTypeName(&objectTypeName)
 	}
-}
-options := &msgraphsdk.ProvisionOnDemandRequestBuilderPostOptions{
-	Body: requestBody,
 }
 servicePrincipalId := "servicePrincipal-id"
 synchronizationJobId := "synchronizationJob-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Synchronization().JobsById(&synchronizationJobId).ProvisionOnDemand(servicePrincipal-id, synchronizationJob-id).Post(requestBody)
 
 
 ```

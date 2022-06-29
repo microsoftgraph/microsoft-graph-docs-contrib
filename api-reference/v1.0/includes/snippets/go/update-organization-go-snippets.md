@@ -26,11 +26,8 @@ requestBody.SetSecurityComplianceNotificationPhones( []String {
 requestBody.SetTechnicalNotificationMails( []String {
 	"tech@contoso.com",
 }
-options := &msgraphsdk.OrganizationRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Patch(options)
+graphClient.OrganizationById(&organizationId).Patch(requestBody)
 
 
 ```

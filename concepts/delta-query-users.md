@@ -49,9 +49,9 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ### Initial response
 
-If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. Assuming the entire set of users is too large, the response will also include a `nextLink` state token in an `@odata.nextLink` parameter.
+If successful, this method returns `200 OK` response code and [user](/graph/api/resources/user) collection object in the response body. Assuming the entire set of users is too large, the response will also include a `@odata.nextLink` state token in an `@odata.nextLink` parameter.
 
-In this example, a `nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. The `$select` query parameter from the initial request is encoded into the `nextLink` URL.
+In this example, a `@odata.nextLink` URL is returned indicating there are more pages of data to be retrieved in the session. The `$select` query parameter from the initial request is encoded into the `@odata.nextLink` URL.
 
 ```http
 HTTP/1.1 200 OK
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ### nextLink response
 
-The response contains another `nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for users are available. Use the `nextLink` URL in more requests until a `deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
+The response contains another `@odata.nextLink` with a new `skipToken` value, which indicates that more changes that were tracked for users are available. Use the `@odata.nextLink` URL in more requests until a `@odata.deltaLink` URL (in an `@odata.deltaLink` parameter) is returned in the final response, even if the value is an empty array.
 
 ```http
 HTTP/1.1 200 OK
@@ -133,7 +133,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 
 ### Final nextLink response
 
-When a `deltaLink` URL is returned, there's no more data about the existing state of the user objects. For future requests, the application uses the `deltaLink` URL to learn about other changes to users. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to users.
+When a `@odata.deltaLink` URL is returned, there's no more data about the existing state of the user objects. For future requests, the application uses the `@odata.deltaLink` URL to learn about other changes to users. Save the `deltaToken` and use it in the subsequent request URL to discover more changes to users.
 
 ```http
 HTTP/1.1 200 OK
@@ -169,7 +169,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, a `deltaLink` is returned with no results - the **value** property is an empty array.
+If no changes have occurred, a `@odata.deltaLink` is returned with no results - the **value** property is an empty array.
 
 ```http
 HTTP/1.1 200 OK
@@ -182,9 +182,9 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, a collection of changed user objects is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. Implement the same pattern of following the `nextLink` and persist the final `deltaLink` for future calls.
+If changes have occurred, a collection of changed user objects is included. The response also contains either a `@odata.nextLink` - in case there are multiple pages of changes to retrieve - or a `@odata.deltaLink`. Implement the same pattern of following the `@odata.nextLink` and persist the final `@odata.deltaLink` for future calls.
 
->**Note:** This request might have replication delays for users that were recently created, updated, or deleted. Retry the `nextLink` or `deltaLink` after some time to retrieve the latest changes.
+>**Note:** This request might have replication delays for users that were recently created, updated, or deleted. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
 ```http
 HTTP/1.1 200 OK

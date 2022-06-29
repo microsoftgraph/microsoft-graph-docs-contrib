@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIsSyncedFromOnPremisesRequestBody()
 isSyncedFromOnPremises := true
 requestBody.SetIsSyncedFromOnPremises(&isSyncedFromOnPremises)
-options := &msgraphsdk.GetAvailableExtensionPropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(options)
+result, err := graphClient.DirectoryObjects().GetAvailableExtensionProperties().Post(requestBody)
 
 
 ```

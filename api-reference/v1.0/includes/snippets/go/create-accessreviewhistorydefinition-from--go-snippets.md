@@ -54,10 +54,7 @@ requestBody.SetScopes( []AccessReviewScope {
 		"queryRoot": nil,
 	}
 }
-options := &msgraphsdk.HistoryDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(requestBody)
 
 
 ```

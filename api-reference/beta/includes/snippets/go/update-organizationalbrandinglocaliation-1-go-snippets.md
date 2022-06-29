@@ -15,12 +15,11 @@ requestBody.SetUsernameHintText(&usernameHintText)
 headers := map[string]string{
 	"Accept-Language": "0"
 }
-options := &msgraphsdk.BrandingRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.BrandingRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 organizationId := "organization-id"
-graphClient.OrganizationById(&organizationId).Branding().Patch(options)
+graphClient.OrganizationById(&organizationId).Branding().PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

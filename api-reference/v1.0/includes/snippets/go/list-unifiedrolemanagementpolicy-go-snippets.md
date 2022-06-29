@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetQueryParameters{
 	Filter: "scopeId%20eq%20'/'%20and%20scopeType%20eq%20'DirectoryRole'",
 }
-options := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.RoleManagementPoliciesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Policies().RoleManagementPolicies().Get(options)
+result, err := graphClient.Policies().RoleManagementPolicies().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

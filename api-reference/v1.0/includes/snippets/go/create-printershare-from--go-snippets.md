@@ -15,10 +15,7 @@ requestBody.SetAllowAllUsers(&allowAllUsers)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"printer@odata.bind": "https://graph.microsoft.com/v1.0/print/printers/{printerId}",
 }
-options := &msgraphsdk.SharesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Print().Shares().Post(options)
+result, err := graphClient.Print().Shares().Post(requestBody)
 
 
 ```

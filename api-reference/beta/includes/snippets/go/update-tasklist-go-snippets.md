@@ -13,11 +13,8 @@ requestBody.SetDisplayName(&displayName)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.taskList",
 }
-options := &msgraphsdk.BaseTaskListRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 baseTaskListId := "baseTaskList-id"
-graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(options)
+graphClient.Me().Tasks().ListsById(&baseTaskListId).Patch(requestBody)
 
 
 ```

@@ -26,11 +26,8 @@ dateTime := "2019-12-02T19:00:00"
 end.SetDateTime(&dateTime)
 timeZone := "Pacific Standard Time"
 end.SetTimeZone(&timeZone)
-options := &msgraphsdk.DeclineRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Decline(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Decline(event-id).Post(requestBody)
 
 
 ```

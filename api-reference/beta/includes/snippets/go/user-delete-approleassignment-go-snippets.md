@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 userId := "user-id"
 appRoleAssignmentId := "appRoleAssignment-id"
-graphClient.UsersById(&userId).AppRoleAssignmentsById(&appRoleAssignmentId).Delete(nil)
+graphClient.UsersById(&userId).AppRoleAssignmentsById(&appRoleAssignmentId).Delete()
 
 
 ```

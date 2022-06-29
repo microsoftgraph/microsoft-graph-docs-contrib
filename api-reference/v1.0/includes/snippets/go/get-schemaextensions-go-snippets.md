@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SchemaExtensionsRequestBuilderGetQueryParameters{
 	Filter: "id%20eq%20'graphlearn_test'",
 }
-options := &msgraphsdk.SchemaExtensionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SchemaExtensionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.SchemaExtensions().Get(options)
+result, err := graphClient.SchemaExtensions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -15,11 +15,8 @@ requestBody.SetAssets( []UpdatableAsset {
 		"id": "String (identifier)",
 	}
 }
-options := &msgraphsdk.AddMembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 updatableAssetId := "updatableAsset-id"
-graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembers(updatableAsset-id).Post(options)
+graphClient.Admin().Windows().Updates().UpdatableAssetsById(&updatableAssetId).AddMembers(updatableAsset-id).Post(requestBody)
 
 
 ```

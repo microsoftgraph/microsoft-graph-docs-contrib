@@ -121,10 +121,7 @@ type := "hours"
 signInFrequency.SetType(&type)
 isEnabled := true
 signInFrequency.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
 
 
 ```

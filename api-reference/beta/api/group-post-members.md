@@ -18,13 +18,14 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 
-| Object type          | Member of security groups     | Member of Microsoft 365 group |
-|----------------------|-------------------------------|-------------------------------|
-| Users                | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
-| Security groups      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| Microsoft 365 groups | ![Cannot be group member][No] | ![Cannot be group member][No] |
-| devices              | ![Can be group member][Yes]   | ![Cannot be group member][No] |
-| service principals   | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Object type             | Member of security groups     | Member of Microsoft 365 group |
+|-------------------------|-------------------------------|-------------------------------|
+| Users                   | ![Can be group member][Yes]   | ![Can be group member][Yes]   |
+| Security groups         | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Microsoft 365 groups    | ![Cannot be group member][No] | ![Cannot be group member][No] |
+| Devices                 | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Service principals      | ![Can be group member][Yes]   | ![Cannot be group member][No] |
+| Organizational contacts | ![Can be group member][Yes]   | ![Cannot be group member][No] |
 
 
 ## Permissions
@@ -110,7 +111,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -16,10 +16,7 @@ directoryScopeId := "/"
 requestBody.SetDirectoryScopeId(&directoryScopeId)
 principalId := "071cc716-8147-4397-a5ba-b2105951cc0b"
 requestBody.SetPrincipalId(&principalId)
-options := &msgraphsdk.RoleEligibilityScheduleRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(requestBody)
 
 
 ```

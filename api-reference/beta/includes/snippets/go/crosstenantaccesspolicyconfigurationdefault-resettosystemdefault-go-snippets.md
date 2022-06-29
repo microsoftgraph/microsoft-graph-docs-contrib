@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-graphClient.Policies().CrossTenantAccessPolicy().Default().ResetToSystemDefault().Post(nil)
+graphClient.Policies().CrossTenantAccessPolicy().Default().ResetToSystemDefault().Post()
 
 
 ```

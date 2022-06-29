@@ -34,11 +34,8 @@ accessDetails.SetUnifiedRoles( []UnifiedRole {
 		"roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5",
 	}
 }
-options := &msgraphsdk.AccessAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignments().Post(options)
+result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignments().Post(requestBody)
 
 
 ```

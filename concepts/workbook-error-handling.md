@@ -1,14 +1,14 @@
 ---
-title: "Error handling for Excel APIs in Microsoft Graph"
-description: "Error handling instructions for Excel APIs in Microsoft Graph"
+title: "Error handling for Excel APIs"
+description: "Find general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails."
 author: "grangeryy"
 ms.localizationpriority: medium
 ms.prod: "excel"
 ---
 
-# Error handling for Excel APIs in Microsoft Graph
+# Error handling for Excel APIs
 
-This article provides general instructions and suggestions for handling errors that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails.
+This article provides general instructions and suggestions for handling errors that are returned by the [Excel APIs](/graph/api/resources/excel) in Microsoft Graph when a request sent through the API fails.
 
 ## Types of error responses
 
@@ -38,7 +38,8 @@ Content-type: application/json
 
 For both of these error responses, the error object has the following structure.
 
->**Note:** Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
+> [!NOTE]
+> Error responses follow the definition in the [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) specification for error responses.
 
 ```json
 {
@@ -105,7 +106,8 @@ The following table lists instructions for required second-level error codes tha
 | `unauthorizedUncategorized`         | Required authentication information for the resource is either missing or invalid. The Microsoft Graph client is not expected to resend the failed request.
 | `unsupportedWorkbook`         | The request failed. The workbook contains unsupported features or exceeds the size limit. The Microsoft Graph client is not expected to resend the failed request until the unsupported factors are removed.
 
->**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> [!NOTE]
+> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 #### Optional second-level error code examples
 
@@ -127,11 +129,12 @@ The following table lists examples of optional second-level error codes, includi
 | `requestAborted`        | The request was aborted during run time, which was usually caused by long time calculation from functions in the workbook. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                    |
 | `unsupportedOperation`  | The operation being attempted is not supported. The Microsoft Graph client is not expected to resend the failed request.                                                                                                                                                                                                               |
 
->**Note:** For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
+> [!NOTE]
+> For the regular pattern, the failed request is defined as the request corresponding to the response. For the long-running operation pattern, the failed request is the one that triggers the failed operation.
 
 ### 3. Parse the top-level error code
 
-If you can't find any known second-level error code, you should follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes for workbooks and charts APIs in Microsoft Graph](workbook-error-codes.md#error-code).
+If you can't find any known second-level error code, you should follow the instructions provided for top-level errors. The top-level error codes are bound to the status code and you can take action according to the corresponding status codes. For details about top-level error codes and messages, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
 
 ### 4. Parse the status code
 
@@ -155,3 +158,7 @@ For [sessionful requests](excel-manage-sessions.md#request-types), if you encoun
   "section": "documentation",
   "tocPath": ""
 } -->
+
+## See also
+
+- [Use the Excel REST API](/graph/api/resources/excel)

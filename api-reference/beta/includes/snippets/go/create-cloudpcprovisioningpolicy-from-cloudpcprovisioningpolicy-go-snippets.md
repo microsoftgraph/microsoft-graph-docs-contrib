@@ -36,10 +36,7 @@ windowsSettings.SetLanguage(&language)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
 }
-options := &msgraphsdk.ProvisioningPoliciesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(requestBody)
 
 
 ```
