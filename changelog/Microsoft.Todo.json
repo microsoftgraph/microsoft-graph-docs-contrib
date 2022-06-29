@@ -59,7 +59,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the **attachmentInfo** resource type.",
+          "Description": "Added the [attachmentInfo](https://docs.microsoft.com/en-us/graph/api/resources/attachmentinfo?view=graph-rest-beta) resource type.",
           "Target": "attachmentInfo"
         },
         {
@@ -81,25 +81,25 @@
         {
           "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
           "ApiChange": "Resource",
-          "ChangedApiName": "attachment_v2",
+          "ChangedApiName": "attachmentBase",
           "ChangeType": "Addition",
-          "Description": "Added the **attachment_v2** resource",
-          "Target": "attachment_v2"
+          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource",
+          "Target": "attachmentBase"
         },
         {
           "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
           "ApiChange": "Resource",
-          "ChangedApiName": "fileAttachment_v2",
+          "ChangedApiName": "taskFileAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the **fileAttachment_v2** resource",
-          "Target": "fileAttachment_v2"
+          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource",
+          "Target": "taskFileAttachment"
         },
         {
           "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
           "ApiChange": "Property",
           "ChangedApiName": "hasAttachments",
           "ChangeType": "Addition",
-          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **hasAttachments** property to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         },
         {
@@ -107,15 +107,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachments",
           "ChangeType": "Addition",
-          "Description": "Added the **attachments** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
-          "Target": "todoTask"
-        },
-        {
-          "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
-          "ApiChange": "Resource",
-          "ChangedApiName": "attachmentSessions",
-          "ChangeType": "Addition",
-          "Description": "Added the **attachmentSessions** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Description": "Added the **attachments** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",
           "Target": "todoTask"
         },
         {
@@ -123,8 +115,8 @@
           "ApiChange": "Method",
           "ChangedApiName": "createUploadSession",
           "ChangeType": "Addition",
-          "Description": "Added the **createUploadSession** method to the **attachment_v2** resource.",
-          "Target": "attachment_v2"
+          "Description": "Added the **createUploadSession** method to the **taskFileAttachment** resource.",
+          "Target": "taskFileAttachment"
         }
       ],
       "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",

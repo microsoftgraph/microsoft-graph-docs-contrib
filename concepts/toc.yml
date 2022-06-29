@@ -482,8 +482,11 @@ items:
           - name: System messages
             href: system-messages.md
       - name: To-do tasks
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+          - name: Overview
+            href: todo-concept-overview.md
+          - name: Attach files to a task
+            href: todo-attachments.md
       - name: Workbooks and charts
         displayName: Excel
         items:
