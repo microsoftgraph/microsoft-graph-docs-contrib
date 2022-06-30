@@ -1,6 +1,6 @@
 ---
-title: "Add custom properties to resources using extensions"
-description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through resources such as user and message. You can also extend Microsoft Graph by adding custom properties using extensions."
+title: "Add custom data to resources using extensions"
+description: "You can extend Microsoft Graph with your own application data. Add custom properties to Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -17,6 +17,8 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 ## Why add custom properties to Microsoft Graph?
 
+> [!IMPORTANT]
+> You should not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 * As an ISV developer, you might decide to keep your app lightweight and store app-specific user profile data in Microsoft Graph by extending the **user** resource.
 * Alternatively, you might want to retain your app’s existing user profile store, and add an app-specific identifier to the **user** resource.
 * As an enterprise developer, the in-house applications that you build might rely on your organization's HR-specific data. Integration within multiple applications can be simplified by storing this data in custom properties in Microsoft Graph.
@@ -25,12 +27,12 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 
 Microsoft Graph offers four types of extensions for adding custom properties.
 
-1. Extension attributes properties
-2. Directory (Azure AD) extensions
-3. Schema extensions
-4. Open extensions
+- Extension attributes properties
+- Directory (Azure AD) extensions
+- Schema extensions
+- Open extensions
 
-### 1. Extension attributes
+### Extension attributes
 
 Azure AD offers a set of 15 custom properties with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
 
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,onPremisesExte
 }
 ```
 
-### 2. Directory (Azure AD) extensions
+### Directory (Azure AD) extensions
 
 [Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly-typed, discoverable and filterable extension experience for directory objects.
 
@@ -214,7 +216,7 @@ PATCH https://graph.microsoft.com/v1.0/users/63384f56-42d2-4aa7-b1d6-b10c78f143a
 
 The request returns a `204 No Content` response code.
 
-### 3. Schema extensions
+### Schema extensions
 
 [Microsoft Graph schema extensions](/graph/api/resources/schemaextension) are conceptually similar to directory extensions. First, you create your schema extension definition. Then, use it to extend supported resource instances with strongly-typed custom properties. In addition, you can control the [status](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of your schema extension and let it be discoverable by other apps.
 
@@ -367,7 +369,7 @@ Content-type: application/json
 
 For more information about how to use schema extensions to add custom properties and associated data, see [schemaExtension resource type](/graph/api/resources/schemextension) and [Add custom properties to groups using schema extensions](extensibility-schema-groups.md).
 
-### 4. Open extensions
+### Open extensions
 
 [Microsoft Graph open extensions](/graph/api/resources/opentypeextension) are [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a simple and flexible way to add untyped data directly to a resource instance. These extensions aren't strongly-typed, discoverable, or filterable.
 
@@ -414,7 +416,6 @@ PATCH https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a
     "linkedInProfile": "www.linkedin.com/in/testlinkedinprofile"
 }
 ```
-
 This request returns a `204 No Content` response code.
 
 
