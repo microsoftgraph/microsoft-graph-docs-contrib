@@ -1,6 +1,6 @@
 ---
 title: "Use query parameters to customize responses"
-description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response."
+description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. Includes common parameters."
 author: "mumbi-o"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
@@ -24,7 +24,8 @@ Query parameters can be [OData system query options](http://docs.oasis-open.org/
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
->**Note:** OData 4.0 supports system query options in only GET operations.
+> [!NOTE]
+> OData 4.0 supports system query options in only GET operations.
 
 Click the examples to try them in [Graph Explorer][graph-explorer].
 
@@ -156,8 +157,8 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li> |
 | Functions | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>|
 
-
-> **Note:** Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
+> [!NOTE]
+> Support for these operators varies by entity and some properties support `$filter` only in [advanced queries](/graph/aad-advanced-queries). See the specific entity documentation for details.
 
 ### Filter using lambda operators
 
@@ -190,7 +191,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 ```
 
 To negate the result of the expression inside the `any` clause, use the `not` operator, not the `ne` operator. For example, the following query retrieves only users who are not assigned the **imAddress** of `admin@contoso.com`.
->**Note:** For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
+
+> [!NOTE]
+> For directory objects like users, the `not` and `ne` operators are supported only in [advanced queries](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
@@ -205,7 +208,8 @@ The `all` operator applies a Boolean expression to each member of a collection a
 
 The following table shows some examples that use the `$filter` query parameter. For more details about `$filter` syntax, see the [OData protocol][odata-filter].
 
-> **Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
+> [!NOTE]
+> Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Description | Example
 |:------------|:--------|
@@ -233,8 +237,8 @@ For example, the following request returns the users in the organization in the 
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-
-> **Note:** The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
+> [!NOTE]
+> The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
 
 ## orderby parameter
 
@@ -260,12 +264,11 @@ With some APIs, you can order results on multiple properties. For example, the f
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-> **Note:** When you specify `$filter` the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
-a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
+> [!NOTE]
+> When you specify `$filter` the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
-The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
-**receivedDateTime** properties in descending order.
+The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and **receivedDateTime** properties in descending order.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
@@ -289,8 +292,8 @@ For example, when retrieving the messages of the signed-in user, you can specify
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-
-> **Important:** In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+> [!IMPORTANT]
+> In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
 > In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
@@ -303,8 +306,8 @@ For example, the following request returns events for the user sorted by date cr
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-
-> **Note:** Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
+> [!NOTE]
+> Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs will return an `@odata:nextLink` property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 >
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
@@ -312,7 +315,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
 The `$skiptoken` parameter contains an opaque token that references the next page of results and is returned in the URL provided in the `@odata.nextLink` property in the response. To learn more, see [Paging](./paging.md).
-> **Note:** If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property is present only in the first page.
+
+> [!NOTE]
+> If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property is present only in the first page.
 >
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
@@ -330,7 +335,7 @@ For example, the following [list messages](/graph/api/user-list-messages) reques
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-
+> [!NOTE]
 > The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## Error handling for query parameters
