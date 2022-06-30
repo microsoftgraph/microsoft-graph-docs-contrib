@@ -21,11 +21,15 @@ You must use the `Prefer: include-unknown-enum-members` request header to get th
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 ### conversationMember
+**conversationMember** subscriptions can be specified to include resource data. If specified to include resource data (**includeResourceData** set to `true`), [encryption](/graph/webhooks-with-resource-data) is required. The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified.
 
 > [!NOTE]
 >`/teams/getAllMembers` and `/chats/getAllMembers` has [licensing and payment requirements](/graph/teams-licenses).
 > `/teams/getAllMembers` and `/chats/getAllMembers` support both `model=A` and `model=B` query parameters.
 > If no model is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+### team, channel, and chat
+**team**, **channel**, and **chat** subscriptions can be specified to include resource data. If specified to include resource data (**includeResourceData** set to `true`), [encryption](/graph/webhooks-with-resource-data) is required. The subscription creation fails if an [encryptionCertificate](/graph/api/resources/subscription) isn't specified.
 
 #### Request example
 
