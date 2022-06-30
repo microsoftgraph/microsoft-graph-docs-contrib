@@ -54,7 +54,16 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 By default, only a limited set of properties are returned ( _businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_ ). 
 
-To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`
+To return an alternative property set, you must specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return _displayName_, _givenName_, and _postalCode_, you would use the add the following to your query `$select=displayName,givenName,postalCode`.
+
+### Retrieve extensions and associated data
+
+| Extension type                     | Comments                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                                         |
+| Schema extensions                  | Returned only with `$select`.                                                                         |
+| Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions               | Returned only with `$select`.                                                                         |
 
 ## Request headers
 | Header       | Value|

@@ -162,6 +162,40 @@
     {
       "ChangeList": [
         {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupWritebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupWritebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "groupWritebackConfiguration"
+        },
+        {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [writebackConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/writebackConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "writebackConfiguration"
+        },
+        {
+          "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "writebackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **writebackConfiguration** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource. Use this object to configure write back of cloud groups to on-premise Active Directory.",
+          "Target": "group"
+        }
+      ],
+      "Id": "206e1f34-55b3-43fe-85db-1bc7551d9e0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-28T20:40:04.2592988Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "13a51673-7133-48f3-bdfe-e6a8309de690",
           "ApiChange": "Property",
           "ChangedApiName": "allowedCloudEndpoints",

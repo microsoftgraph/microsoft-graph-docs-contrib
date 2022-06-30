@@ -33,6 +33,13 @@ GET /directory/administrativeUnits
 ## Optional query parameters
 This method supports the `$count`, `$select`, `$search`, `$filter`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
+### Retrieve extensions and associated data
+
+| Extension type       | Comments                                                 |
+|----------------------|----------------------------------------------------------|
+| Schema extensions    | Returned only with `$select`. Supports `$filter` (`eq`). |
+| Directory extensions | Returned by default. Supports `$filter` (`eq`).          |
+
 
 ## Request headers
 | Name      |Description|
