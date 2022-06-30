@@ -1,7 +1,7 @@
 ---
 title: "Get deviceConfiguration"
 description: "Read properties and relationships of the deviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

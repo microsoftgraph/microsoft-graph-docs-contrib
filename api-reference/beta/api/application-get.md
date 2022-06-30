@@ -22,9 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy,  Application.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
+Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
