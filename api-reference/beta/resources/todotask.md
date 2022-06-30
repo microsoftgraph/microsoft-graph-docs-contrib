@@ -58,7 +58,7 @@ This resource supports the following:
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attachments|[taskFileAttachment](../resources/taskfileattachment.md) collection| A collection of file attachments for the task|
+|attachments|[taskFileAttachment](../resources/taskfileattachment.md) collection| A collection of file attachments for the task.|
 |checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of smaller subtasks linked to the more complex parent task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|

@@ -1,6 +1,6 @@
 ---
 title: "Create taskFileAttachment"
-description: "Create a new taskFileAttachment object."
+description: "Add a new taskFileAttachment object to a todoTask."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Add a new [taskFileAttachment](../resources/taskfileattachment.md) object to a [todoTask](../resources/todotask.md).
 
-This operation limits the size of the attachment you can add to under 3 MB. If the size of the attachments is more than 3 MB, [create an upload session](../api/taskfileattachment-createuploadsession.md) to upload the attachments.
+This operation limits the size of the attachment you can add to under 3 MB. If the size of the file attachments is more than 3 MB, [create an upload session](../api/taskfileattachment-createuploadsession.md) to upload the attachments.
 
 
 ## Permissions
@@ -57,7 +57,7 @@ When you create a file attachment, include `"@odata.type": "#microsoft.graph.tas
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and an [taskFileAttachment](../resources/taskfileattachment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [taskFileAttachment](../resources/taskfileattachment.md) object in the response body.
 
 ## Examples
 
