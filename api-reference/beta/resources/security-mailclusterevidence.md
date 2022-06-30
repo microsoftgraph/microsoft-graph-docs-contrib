@@ -1,5 +1,5 @@
 ---
-title: "mailboxEvidence resource type"
+title: "mailClusterEvidence resource type"
 description: "A mail cluster that is reported in the alert as evidence."
 ms.date: 09/09/2021
 author: "BenAlfasi"

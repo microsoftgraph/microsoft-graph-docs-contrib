@@ -1,5 +1,5 @@
 ---
-title: "alertEvidence resource type"
+title: "loggedOnUser resource type"
 description: "User that was loggen on the machine during the time of the alert."
 ms.date: 09/09/2021
 author: "BenAlfasi"

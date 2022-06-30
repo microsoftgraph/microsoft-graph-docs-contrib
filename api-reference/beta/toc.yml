@@ -14662,10 +14662,42 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
-      - name: Alerts (preview)
+      - name: Alerts_v2
         items:
-        - name: Alert
+        - name: Alert_v2
           href: resources/security-alert.md
+        - name: Alert Evidence
+          items: 
+          - name: Alert Evidence
+          - href: resources/security-alertevidence.md
+          - name: User Evidence
+          - href: resources/security-userEvidence.md
+          - name: File Evidence
+          - href: resources/security-fileEvidence.md
+          - name: Process Evidence
+          - href: resources/security-processEvidence.md
+          - name: Ip Evidence
+          - href: resources/security-ipEvidence.md
+          - name: Url Evidence
+          - href: resources/security-urlEvidence.md
+          - name: Registry Key Evidence
+          - href: resources/security-registryKeyEvidence.md
+          - name: Registry Value Evidence
+          - href: resources/security-registryValueEvidence.md
+          - name: Oauth Application Evidence
+          - href: resources/security-oauthApplicationEvidence.md
+          - name: Cloud Application Evidence
+          - href: resources/security-cloudApplicationEvidence.md
+          - name: Security Group Evidence
+          - href: resources/security-securityGroupEvidence.md
+          - name: Mailbox Evidence
+          - href: resources/security-mailboxEvidence.md
+          - name: Mail Cluster Evidence
+          - href: resources/security-mailClusterEvidence.md
+          - name: Analyzed Message Evidence
+          - href: resources/security-analyzedMessageEvidence.md
+          - name: Device Evidence
+          - href: resources/security-deviceEvidence.md
         - name: List alerts
           href: api/security-list-alerts.md
         - name: Get alert

@@ -26,7 +26,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |deviceDnsName|String|The FQDN (Fully Qualified Domain Name) for the device.|
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
 |healthStatus|deviceHealthStatus|The health state of the device.The possible values are: `active`, `inactive`, `impairedCommunication`, `noSensorData`, `noSensorDataImpairedCommunication`, `unknown`, `unknownFutureValue`.|
-|loggedOnUsers|[microsoft.graph.security.loggedOnUser](../resources/security-intune-loggedonuser.md) collection|Users that were loggen on the machine during the time of the alert.|
+|loggedOnUsers|[microsoft.graph.security.loggedOnUser](../resources/security-loggedonuser.md) collection|Users that were loggen on the machine during the time of the alert.|
 |mdeDeviceId|String|A unique identifier assigned to a device by Microsoft Defender for Endpoint.|
 |onboardingStatus|onboardingStatus|Status of machine onboarding to Microsoft Defender for Endpoint.The possible values are: `insufficientInfo`, `onboarded`, `canBeOnboarded`, `unsupported`, `unknownFutureValue`.|
 |osBuild|Int64|The build version for the OS the device is running.|
