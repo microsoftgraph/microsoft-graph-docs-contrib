@@ -52,6 +52,18 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Front Camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable rear camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|infraredCamera|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Infrared camera. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphone|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Microphone. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bluetooth|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Bluetooth. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wireless Wide Area Network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Near Field Communication. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wiFi|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable WiFi. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable USB Type A Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|sdCard|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable SD Card Port. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake on LAN. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Wake On Power. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -114,7 +126,19 @@ Here is a JSON representation of the resource.
   "bootFromExternalMedia": "String",
   "bootFromBuiltInNetworkAdapters": "String",
   "windowsPlatformBinaryTable": "String",
-  "simultaneousMultiThreading": "String"
+  "simultaneousMultiThreading": "String",
+  "frontCamera": "String",
+  "rearCamera": "String",
+  "infraredCamera": "String",
+  "microphone": "String",
+  "bluetooth": "String",
+  "wirelessWideAreaNetwork": "String",
+  "nearFieldCommunication": "String",
+  "wiFi": "String",
+  "usbTypeAPort": "String",
+  "sdCard": "String",
+  "wakeOnLAN": "String",
+  "wakeOnPower": "String"
 }
 ```
 

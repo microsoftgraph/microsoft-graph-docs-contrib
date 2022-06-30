@@ -14,11 +14,8 @@ dateTime := "dateTime-value"
 newReminderTime.SetDateTime(&dateTime)
 timeZone := "timeZone-value"
 newReminderTime.SetTimeZone(&timeZone)
-options := &msgraphsdk.SnoozeReminderRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).SnoozeReminder(event-id).Post(requestBody)
 
 
 ```

@@ -14,10 +14,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"children":  []Object {
 	}
 }
-options := &msgraphsdk.BundlesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Drive().Bundles().Post(options)
+graphClient.Drive().Bundles().Post(requestBody)
 
 
 ```

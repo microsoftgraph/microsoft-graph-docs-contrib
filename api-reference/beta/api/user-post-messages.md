@@ -22,13 +22,15 @@ When using JSON format, you can:
 
 When using MIME format:
 - Provide the applicable [Internet message headers](https://tools.ietf.org/html/rfc2076) and the [MIME content](https://tools.ietf.org/html/rfc2045), all encoded in **base64** format in the request body.
-- Add any attachments and S/MIME properties to the MIME content.
+- \* Add any attachments and S/MIME properties to the MIME content.
 
 By default, this operation saves the draft in the Drafts folder.
 
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
 Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft [to forward](../api/message-createforward.md), [to reply](../api/message-createreply.md) or [to reply-all](../api/message-createreplyall.md) to an existing message.
+
+>\* **Note:** S/MIME message payloads are currently limited to 4 MB. Submission attempts that exceed this limit will result in an`HTTP 413 Request Entity Too Large` error response.
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -296,7 +298,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":false
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",

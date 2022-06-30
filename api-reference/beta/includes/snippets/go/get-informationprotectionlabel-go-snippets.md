@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 informationProtectionLabelId := "informationProtectionLabel-id"
-result, err := graphClient.Me().InformationProtection().Policy().LabelsById(&informationProtectionLabelId).Get(nil)
+result, err := graphClient.Me().InformationProtection().Policy().LabelsById(&informationProtectionLabelId).Get()
 
 
 ```

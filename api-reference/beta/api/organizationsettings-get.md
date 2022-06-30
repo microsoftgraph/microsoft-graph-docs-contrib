@@ -120,7 +120,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
     "id": "",
-    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
     "profileCardProperties": [
       {
         "directoryPropertyName": "CustomAttribute1",

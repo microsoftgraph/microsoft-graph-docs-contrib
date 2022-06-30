@@ -30,11 +30,8 @@ endDateTime, err := time.Parse(time.RFC3339, "2019-03-12T07:00:00Z")
 draftTimeOff.SetEndDateTime(&endDateTime)
 theme := "pink"
 draftTimeOff.SetTheme(&theme)
-options := &msgraphsdk.TimesOffRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimesOff().Post(requestBody)
 
 
 ```

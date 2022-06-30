@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOnenoteSection()
 displayName := "Section name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.SectionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 notebookId := "notebook-id"
-result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).Sections().Post(options)
+result, err := graphClient.Me().Onenote().NotebooksById(&notebookId).Sections().Post(requestBody)
 
 
 ```

@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendarGroup()
 name := "name-value"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarGroupRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 calendarGroupId := "calendarGroup-id"
-graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(options)
+graphClient.Me().CalendarGroupsById(&calendarGroupId).Patch(requestBody)
 
 
 ```

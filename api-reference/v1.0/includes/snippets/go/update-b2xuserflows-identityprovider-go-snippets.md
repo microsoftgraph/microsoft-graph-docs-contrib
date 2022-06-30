@@ -11,12 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Facebook-OAUTH",
 }
-options := &msgraphsdk.IdentityProviderRequestBuilderPostOptions{
-	Body: requestBody,
-}
 b2xIdentityUserFlowId := "b2xIdentityUserFlow-id"
 identityProviderId := "identityProvider-id"
-graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(options)
+graphClient.Identity().B2xUserFlowsById(&b2xIdentityUserFlowId).IdentityProvidersById(&identityProviderId).Post(requestBody)
 
 
 ```

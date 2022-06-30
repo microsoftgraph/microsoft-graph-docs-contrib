@@ -24,11 +24,14 @@ monitoring := msgraphsdk.NewMonitoringSettings()
 settings.SetMonitoring(monitoring)
 monitoring.SetMonitoringRules( []MonitoringRule {
 	msgraphsdk.NewMonitoringRule(),
+signal := "rollback"
+	SetSignal(&signal)
+threshold := int32(5)
+	SetThreshold(&threshold)
+action := "pauseDeployment"
+	SetAction(&action)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
-		"signal": "rollback",
-		"threshold": ,
-		"action": "pauseDeployment",
 	}
 }
 settings.SetAdditionalData(map[string]interface{}{
@@ -37,10 +40,7 @@ settings.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.windowsUpdates.deployment",
 }
-options := &msgraphsdk.DeploymentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options)
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Delete accessReview"
+title: "Delete accessReview (deprecated)"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# Delete accessReview
+# Delete accessReview (deprecated)
 
 Namespace: microsoft.graph
 

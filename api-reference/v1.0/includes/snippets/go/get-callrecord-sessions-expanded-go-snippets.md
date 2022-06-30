@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.SessionsRequestBuilderGetQueryParameters{
 	Expand: "segments",
 }
-options := &msgraphsdk.SessionsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.SessionsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 callRecordId := "callRecord-id"
-result, err := graphClient.Communications().CallRecordsById(&callRecordId).Sessions().Get(options)
+result, err := graphClient.Communications().CallRecordsById(&callRecordId).Sessions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

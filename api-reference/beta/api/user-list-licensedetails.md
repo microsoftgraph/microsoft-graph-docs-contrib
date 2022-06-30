@@ -1,7 +1,7 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "cindycrane"
+author: "jconley76"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **licenseDetails** objects for enterprise users.
+Retrieve a list of [licenseDetails](../resources/licensedetails.md) objects for enterprise users. This API returns details for licenses that are directly assigned and those transitively assigned through memberships in licensed groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -95,21 +95,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "servicePlans": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/assignedLicenses",
+    "value": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+            "disabledPlans": [],
+            "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
         }
-      ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value",
-      "id": "id-value"
-    }
-  ]
+    ]
 }
 ```
 

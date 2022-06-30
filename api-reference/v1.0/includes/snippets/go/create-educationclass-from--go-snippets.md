@@ -39,10 +39,7 @@ term.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.educationClass",
 }
-options := &msgraphsdk.ClassesRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Classes().Post(options)
+result, err := graphClient.Education().Classes().Post(requestBody)
 
 
 ```

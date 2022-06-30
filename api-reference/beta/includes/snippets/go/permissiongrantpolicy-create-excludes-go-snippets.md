@@ -12,11 +12,8 @@ permissionType := "delegated"
 requestBody.SetPermissionType(&permissionType)
 resourceApplication := "00000003-0000-0000-c000-000000000000"
 requestBody.SetResourceApplication(&resourceApplication)
-options := &msgraphsdk.ExcludesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 permissionGrantPolicyId := "permissionGrantPolicy-id"
-result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Excludes().Post(options)
+result, err := graphClient.Policies().PermissionGrantPoliciesById(&permissionGrantPolicyId).Excludes().Post(requestBody)
 
 
 ```

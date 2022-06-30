@@ -1,5 +1,5 @@
 ---
-title: "List accessReview reviewers"
+title: "List accessReview reviewers (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
 ms.localizationpriority: medium
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# List accessReview reviewers
+# List accessReview reviewers (deprecated)
 
 Namespace: microsoft.graph
 

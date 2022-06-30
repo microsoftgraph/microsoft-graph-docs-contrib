@@ -7,19 +7,22 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# taskList resource type
+# taskList resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a list created by a user in Microsoft To Do that contains one or more [Task](./task.md) resources. 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-This resource supports
+Represents a list created by a user in Microsoft To Do that contains one or more [task](./task.md) resources. 
+
+This resource supports the following:
 * Adding your data to custom properties as [open extensions](/graph/extensibility-overview)
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
 
-Inherits from [baseTaskList](../resources/basetasklist.md).
+The **taskList** resource inherits from [baseTaskList](../resources/basetasklist.md).
+Its contents, of the **task** resource type, inherit from [baseTask](../resources/basetask.md).
 
 ## Methods
 |Method|Return type|Description|

@@ -10,12 +10,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UserConsentRequestRequestBuilderGetQueryParameters{
 	Filter: "%20(status%20eq%20'Completed')",
 }
-options := &msgraphsdk.UserConsentRequestRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UserConsentRequestRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 appConsentRequestId := "appConsentRequest-id"
 userConsentRequestId := "userConsentRequest-id"
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).UserConsentRequestsById(&userConsentRequestId).Get(options)
+result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequestsById(&appConsentRequestId).UserConsentRequestsById(&userConsentRequestId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

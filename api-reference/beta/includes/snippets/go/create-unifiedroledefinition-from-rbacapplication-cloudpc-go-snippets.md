@@ -23,10 +23,7 @@ requestBody.SetRolePermissions( []UnifiedRolePermission {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"condition": "null",
 }
-options := &msgraphsdk.RoleDefinitionsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().CloudPC().RoleDefinitions().Post(options)
+result, err := graphClient.RoleManagement().CloudPC().RoleDefinitions().Post(requestBody)
 
 
 ```

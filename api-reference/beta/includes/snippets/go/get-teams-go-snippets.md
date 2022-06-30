@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.TeamsRequestBuilderGetQueryParameters{
 	Filter: "displayName%20eq%20'A%20Contoso%20Team'",
 	Select: "id,description",
 }
-options := &msgraphsdk.TeamsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Teams().Get(options)
+result, err := graphClient.Teams().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -234,7 +234,7 @@ var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
 ### Using a client certificate
 
 ```csharp
-var scopes = new[] { "User.Read" };
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal

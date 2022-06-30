@@ -14,11 +14,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.fileAttachment",
 	"contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=",
 }
-options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(options)
+result, err := graphClient.Me().EventsById(&eventId).Attachments().Post(requestBody)
 
 
 ```

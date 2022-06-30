@@ -17,11 +17,8 @@ requestBody.SetAssignments( []CloudPcProvisioningPolicyAssignment {
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcProvisioningPolicyAssignment",
 }
-options := &msgraphsdk.AssignRequestBuilderPostOptions{
-	Body: requestBody,
-}
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign(cloudPcProvisioningPolicy-id).Post(options)
+graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Assign(cloudPcProvisioningPolicy-id).Post(requestBody)
 
 
 ```

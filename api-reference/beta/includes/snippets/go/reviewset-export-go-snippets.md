@@ -16,12 +16,9 @@ exportOptions := "originalFiles,fileInfo,tags"
 requestBody.SetExportOptions(&exportOptions)
 exportStructure := "directory"
 requestBody.SetExportStructure(&exportStructure)
-options := &msgraphsdk.ExportRequestBuilderPostOptions{
-	Body: requestBody,
-}
 caseId := "case-id"
 reviewSetId := "reviewSet-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Export(case-id, reviewSet-id).Post(options)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).ReviewSetsById(&reviewSetId).Export(case-id, reviewSet-id).Post(requestBody)
 
 
 ```

@@ -1,13 +1,13 @@
 ---
-title: "NamedItem: Range"
+title: "namedItem: range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: workbooks-and-charts
 author: "ruoyingl"
 ---
 
-# NamedItem: Range
+# namedItem: range
 
 Namespace: microsoft.graph
 
@@ -44,7 +44,7 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -74,8 +74,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/R
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

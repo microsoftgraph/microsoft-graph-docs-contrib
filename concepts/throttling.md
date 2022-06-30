@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph throttling guidance"
-description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
+description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs. Includes service-specific limits."
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -11,6 +11,12 @@ ms.custom: graphiamtop20
 Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service.
 
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
+
+> [!NOTE]
+> Solutions that need to extract a large volume of data from Microsoft Graph should use [Microsoft Graph Data Connect](data-connect-concept-overview.md) instead of the Microsoft Graph REST APIs. Microsoft Graph Data Connect allows organizations to extract Microsoft 365 data in bulk without being subject to throttling limits.
+
+<!-- markdownlint-disable MD033 -->
+<br/>
 
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
@@ -36,7 +42,7 @@ Whenever the throttling threshold is exceeded, Microsoft Graph responds with a r
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {
@@ -102,7 +108,8 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 > [!NOTE]
 > The specific limits described here are subject to change.
 
-> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
+> [!NOTE]
+> In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the one where the application was created in the case of a single-tenant application, or it can be different in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### Outlook service limits
 
@@ -126,7 +133,6 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | Social and workplace intelligence | <li>[person](/graph/api/resources/person) |
 | To-do tasks API (preview) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-
 ### Cloud communication service limits
 
 | Resource      | Limits per app    |
@@ -148,7 +154,8 @@ The preceding limits apply to the following resources:
 
 You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
 
-**Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Project Rome service limits
 
@@ -159,9 +166,8 @@ You can find additional information about best practices in [OneNote API throttl
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### Microsoft Teams service limits
 
@@ -213,7 +219,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
 | tenant | Not Applicable | 18,000 requests per 5 minutes |
 
-> **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+> [!NOTE]
+> The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 
@@ -258,7 +265,8 @@ Other factors that affect a request cost:
 - Using `$top` with a value of less than 20 decreases cost by 1
 - Creating a user in an Azure AD B2C tenant increases cost by 4
 
-> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> [!NOTE]
+> A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
 
@@ -269,7 +277,8 @@ Other factors that affect a request cost:
   - Normal - Default if no value is provided. Indicates that the request is default priority.
   - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
 
-> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
+> [!NOTE]
+> Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
 
 ##### Regular responses requests
 
@@ -304,10 +313,15 @@ The preceding limits apply to the following resources:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### Identity and access reports best practices
+Azure AD reporting APIs are throttled when Azure AD receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices above](#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+- Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
+- If you need a broad set of Azure AD reporting data, use `$filter` on the **createdDateTime** to limit the amount of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests 3 days of data and iterate with shorter timespans until your requests are no longer throttled.
+  
 ### Information protection service limits
 
 The following limits apply to any request on `/informationProtection`.
-  
+
 For email, the resource is a unique network message ID/recipient pair. For example, submitting an email with the same message ID sent to the same person multiple times in a 15 minute period will trigger the limit per resource limits lited in the following table. However, you can submit up to 150 unique emails every 15 minutes (tenant limit).
 
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
@@ -324,8 +338,8 @@ For email, the resource is a unique network message ID/recipient pair. For examp
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
-
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Insights service limits
 
@@ -338,10 +352,10 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
-
+- [people](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [trending](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 ### Microsoft Graph reports service limits
 
@@ -355,7 +369,6 @@ The following limits apply to any request on `/reports`.
 The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
 The preceding limits apply to all [usage reports](/graph/api/resources/report) resources.
-
 
 ### Invitation manager service limits
 
@@ -385,10 +398,9 @@ The following limits apply to any request on `/security`.
 The preceding limits apply to the following resources:
 [!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
 
-
 ### Files and lists service limits
 
-Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+For service limits for OneDrive, OneDrive for Business, and SharePoint Online, see [Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 The preceding information applies to the following resources:
 
@@ -410,11 +422,10 @@ The preceding information applies to the following resources:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
-> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> [!NOTE]
+> The resources listed earlier do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
@@ -423,7 +434,7 @@ The preceding limits apply to the following resources:
 
 ### Excel service limits
 
-For explanations and best practices related to Excel service throttling, see [Throttling](workbook-best-practice.md#throttling). In addition, the following are some throttling limits.
+For explanations and best practices related to Excel service throttling, see [Reduce throttling errors](workbook-best-practice.md#reduce-throttling-errors). In addition, following are some throttling limits.
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 
@@ -489,9 +500,11 @@ The following limits apply to requests on the assignment service API:
 
 The preceding limits apply to the following resources:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [trending](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
+
 
 ### Service Communications service limits
 The following limits apply to any type of requests for service communications under `/admin/serviceAnnouncement/`.
@@ -500,3 +513,4 @@ The following limits apply to any type of requests for service communications un
 | ------------ | ------------------------ |
 | Any | 240 requests per 60 seconds |
 |Any | 800 requests per hour |
+

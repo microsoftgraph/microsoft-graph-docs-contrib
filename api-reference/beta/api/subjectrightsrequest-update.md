@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+PATCH /security/subjectRightsRequests/{subjectRightsRequestId}
 PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -46,7 +49,6 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|[microsoft.graph.identity](../resources/identity.md)|The identity information for the user that the request is assigned to.|
 |description|String|Updated description for the request.|
 |displayName|String|Updated name of the request.|
 |internalDueDateTime|DateTimeOffset|Updated internal due date for the request.|
@@ -70,8 +72,8 @@ PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRig
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
-  "internalDueDateTime": "2021-08-30T00:00:00Z"
+    "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "internalDueDateTime": "2021-08-30T00:00:00Z"
 }
 ```
 # [C#](#tab/csharp)
@@ -110,36 +112,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "regulations": [
-        "String"
-    ],
-    "displayName": "String",
-    "description": "String",
-    "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
-    "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
-    },
-    "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
-    }
+    "displayName": "Updated case name for Diego Siciliani",
+    "description": "This is an updated case",
+    "internalDueDateTime": "2022-07-20T22:42:28Z"
 }
 ```
 

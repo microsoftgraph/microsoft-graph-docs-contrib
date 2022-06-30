@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 onlineMeetingId := "onlineMeeting-id"
 meetingAttendanceReportId := "meetingAttendanceReport-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).AttendanceReportsById(&meetingAttendanceReportId).AttendanceRecords().Get(nil)
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).AttendanceReportsById(&meetingAttendanceReportId).AttendanceRecords().Get()
 
 
 ```

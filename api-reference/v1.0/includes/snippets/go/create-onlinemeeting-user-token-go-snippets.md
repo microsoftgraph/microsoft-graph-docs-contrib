@@ -14,10 +14,7 @@ endDateTime, err := time.Parse(time.RFC3339, "2019-07-12T15:00:34.2464912-07:00"
 requestBody.SetEndDateTime(&endDateTime)
 subject := "User Token Meeting"
 requestBody.SetSubject(&subject)
-options := &msgraphsdk.OnlineMeetingsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().Post(options)
+result, err := graphClient.Me().OnlineMeetings().Post(requestBody)
 
 
 ```

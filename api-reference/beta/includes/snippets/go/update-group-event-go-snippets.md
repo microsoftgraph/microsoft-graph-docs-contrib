@@ -24,12 +24,9 @@ reminderMinutesBeforeStart := int32(99)
 requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isReminderOn := true
 requestBody.SetIsReminderOn(&isReminderOn)
-options := &msgraphsdk.EventRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 eventId := "event-id"
-graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(options)
+graphClient.GroupsById(&groupId).EventsById(&eventId).Patch(requestBody)
 
 
 ```

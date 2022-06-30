@@ -12,10 +12,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"authoringLanguages":  []Object {
 	}
 }
-options := &msgraphsdk.RegionalAndLanguageSettingsRequestBuilderPutOptions{
-	Body: requestBody,
-}
-graphClient.Me().Settings().RegionalAndLanguageSettings().Put(options)
+graphClient.Me().Settings().RegionalAndLanguageSettings().Put(requestBody)
 
 
 ```

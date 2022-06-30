@@ -30,13 +30,10 @@ post.SetExtensions( []Extension {
 		}
 	}
 }
-options := &msgraphsdk.ReplyRequestBuilderPostOptions{
-	Body: requestBody,
-}
 groupId := "group-id"
 conversationThreadId := "conversationThread-id"
 postId := "post-id"
-graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(options)
+graphClient.GroupsById(&groupId).ThreadsById(&conversationThreadId).PostsById(&postId).Reply(group-id, conversationThread-id, post-id).Post(requestBody)
 
 
 ```

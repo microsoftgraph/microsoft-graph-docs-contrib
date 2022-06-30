@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCommentRequestBody()
 comment := "Cancelling for this week due to all hands"
 requestBody.SetComment(&comment)
-options := &msgraphsdk.CancelRequestBuilderPostOptions{
-	Body: requestBody,
-}
 eventId := "event-id"
-graphClient.Me().EventsById(&eventId).Cancel(event-id).Post(options)
+graphClient.Me().EventsById(&eventId).Cancel(event-id).Post(requestBody)
 
 
 ```

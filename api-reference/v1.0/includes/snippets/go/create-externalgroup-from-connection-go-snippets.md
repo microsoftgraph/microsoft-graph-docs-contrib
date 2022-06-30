@@ -14,11 +14,8 @@ displayName := "Contoso Marketing"
 requestBody.SetDisplayName(&displayName)
 description := "The product marketing team"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.GroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 externalConnectionId := "externalConnection-id"
-result, err := graphClient.External().ConnectionsById(&externalConnectionId).Groups().Post(options)
+result, err := graphClient.External().ConnectionsById(&externalConnectionId).Groups().Post(requestBody)
 
 
 ```

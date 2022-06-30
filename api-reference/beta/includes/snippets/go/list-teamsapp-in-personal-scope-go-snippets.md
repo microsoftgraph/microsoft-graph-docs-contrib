@@ -11,10 +11,10 @@ requestParameters := &msgraphsdk.TeamsAppsRequestBuilderGetQueryParameters{
 	Expand: "appDefinitions($select=id,displayName,allowedInstallationScopes)",
 	Filter: "appDefinitions/any(a:a/allowedInstallationScopes%20has%20'personal')",
 }
-options := &msgraphsdk.TeamsAppsRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.TeamsAppsRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.AppCatalogs().TeamsApps().Get(options)
+result, err := graphClient.AppCatalogs().TeamsApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -20,10 +20,7 @@ thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl)
-options := &msgraphsdk.AwardsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Profile().Awards().Post(options)
+result, err := graphClient.Me().Profile().Awards().Post(requestBody)
 
 
 ```

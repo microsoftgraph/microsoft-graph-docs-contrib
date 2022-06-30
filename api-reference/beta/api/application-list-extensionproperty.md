@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
+Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /applications/{application ObjectId}/extensionProperties
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

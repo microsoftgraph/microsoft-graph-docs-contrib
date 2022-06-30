@@ -20,11 +20,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"customQuestions":  []Object {
 	}
 }
-options := &msgraphsdk.RegistrationRequestBuilderPostOptions{
-	Body: requestBody,
-}
 onlineMeetingId := "onlineMeeting-id"
-graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(options)
+graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Post(requestBody)
 
 
 ```

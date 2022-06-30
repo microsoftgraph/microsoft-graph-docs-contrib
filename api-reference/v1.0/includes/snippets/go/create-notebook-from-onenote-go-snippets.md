@@ -10,10 +10,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewNotebook()
 displayName := "My Private notebook"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.NotebooksRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Me().Onenote().Notebooks().Post(options)
+result, err := graphClient.Me().Onenote().Notebooks().Post(requestBody)
 
 
 ```
