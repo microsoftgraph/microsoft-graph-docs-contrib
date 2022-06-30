@@ -8,19 +8,19 @@ ms.prod: "outlook"
 
 # Automate creating, sending, and processing messages
 
-Emails are represented by the [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) resource in Microsoft Graph.
+Emails are represented by the [message](/graph/api/resources/message) resource in Microsoft Graph.
 
 By default, messages are identified by a unique entry ID in the **id** property. When a message is initially created and saved as a draft or sent, the store provider assigns the message an entry ID. By default, that ID changes when the message is copied or moved to another folder, store, or .PST file. You reference the message by its current ID for further processing.
 
 ## Create and send mail
 
-In Outlook, you can create and send an email in the same [sendMail](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) action, or you can [create](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) a draft, subsequently [add content](/graph/api/message-update?view=graph-rest-1.0&preserve-view=true) and [send](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true) the draft.
+In Outlook, you can create and send an email in the same [sendMail](/graph/api/user-sendmail) action, or you can [create](/graph/api/user-post-messages) a draft, subsequently [add content](/graph/api/message-update) and [send](/graph/api/message-send) the draft.
 
-Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message-reply?view=graph-rest-1.0&preserve-view=true), [reply-all](/graph/api/message-replyall?view=graph-rest-1.0&preserve-view=true), or [forward](/graph/api/message-forward?view=graph-rest-1.0&preserve-view=true)). Or, you can create a draft for the response ([reply](/graph/api/message-createreply?view=graph-rest-1.0&preserve-view=true), [reply-all](/graph/api/message-createreplyall?view=graph-rest-1.0&preserve-view=true), or [forward](/graph/api/message-createforward?view=graph-rest-1.0&preserve-view=true)), [add content](/graph/api/message-update?view=graph-rest-1.0&preserve-view=true), and then [send](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true) the draft at a later time.
+Similarly, when responding to an email, you can create and send the response in the same action ([reply](/graph/api/message-reply), [reply-all](/graph/api/message-replyall), or [forward](/graph/api/message-forward)). Or, you can create a draft for the response ([reply](/graph/api/message-createreply), [reply-all](/graph/api/message-createreplyall), or [forward](/graph/api/message-createforward)), [add content](/graph/api/message-update), and then [send](/graph/api/message-send) the draft at a later time.
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder?view=graph-rest-1.0&preserve-view=true).
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/graph/api/resources/mailfolder).
 
 ### Set the from and sender properties
 
@@ -31,13 +31,13 @@ When a message is being composed, in most cases, Outlook sets the **from** and *
 
 ## Use MailTips to check recipient status and save time (preview)
 
-Use [MailTips](/graph/api/resources/mailtips?view=graph-rest-beta&preserve-view=true) to make smart decisions before sending an email.
+Use [MailTips](/graph/api/resources/mailtips) to make smart decisions before sending an email.
 MailTips can tell you information such as the recipient's mailbox is restricted to specific senders, or approval is required for emailing the recipient.
 
 
 ## Read messages with control over the body format returned
 
-You can [read a message](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true) in a mailbox by referencing its ID:
+You can [read a message](/graph/api/message-get) in a mailbox by referencing its ID:
 
 <!-- {
   "blockType": "ignored",
@@ -47,7 +47,7 @@ You can [read a message](/graph/api/message-get?view=graph-rest-1.0&preserve-vie
 GET /me/messages/AAMkADhMGAAA=
 ```
 
-Or, you can [get the messages](/graph/api/user-list-messages?view=graph-rest-1.0&preserve-view=true) in a specific folder. For example, to read messages in the signed-in user's Drafts folder:
+Or, you can [get the messages](/graph/api/user-list-messages) in a specific folder. For example, to read messages in the signed-in user's Drafts folder:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -83,21 +83,21 @@ Prefer: outlook.allow-unsafe-html
 
 ## Integrate with '@' social gesture (preview)
 
-@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
+@-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
 
-- Create @-mentions when [creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2&preserve-view=true)
-- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages?view=graph-rest-beta#request-2&preserve-view=true)
-- [Get all the @-mention is a message](/graph/api/message-get?view=graph-rest-beta#request-2&preserve-view=true)
+- Create @-mentions when [creating a message](/graph/api/user-post-messages#request-2)
+- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages#request-2)
+- [Get all the @-mention is a message](/graph/api/message-get#request-2)
 
 ## Other shared capabilities
 
 Take advantage of the following common capabilities that are shared among Microsoft Graph entities:
 
-- Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) on messages when one or more types of changes occur, such as message creation or update.
-- [Track these incremental changes to messages in a folder](delta-query-messages.md).
-- Create [open extensions](extensibility-overview.md#open-extensions) or [schema extensions](extensibility-overview.md#schema-extensions) to add custom data to a message instance.
-- Create [extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0&preserve-view=true) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
+- Subscribe to [change notifications](/graph/api/resources/webhooks) on messages when one or more types of changes occur, such as message creation or update.
+- [Track incremental changes to messages in a folder](delta-query-messages.md).
+- Create [open extensions](extensibility-overview.md#4-open-extensions) or [schema extensions](extensibility-overview.md#3-schema-extensions) to add custom data to a message instance.
+- Create [extended properties](/graph/api/resources/extended-properties-overview) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
 
 ## Next steps
 
@@ -106,4 +106,4 @@ Take advantage of the following common capabilities that are shared among Micros
 - [Get shared messages](outlook-share-messages-folders.md)
 - [Send Outlook messages from another user](outlook-send-mail-from-other-user.md)
 - [Get immutable identifiers for Outlook resources](outlook-immutable-id.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases&preserve-view=true) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.

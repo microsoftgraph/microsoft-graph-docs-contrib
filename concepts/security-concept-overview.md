@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Security API overview"
-description: "You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple Microsoft Graph Security providers (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see Microsoft Graph Security API data flow."
+description: "Use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve response capabilities."
 author: "preetikr"
 ms.localizationpriority: high
 ms.prod: "security"
@@ -9,7 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph Security API overview
 
-You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](/graph/api/resources/securityvendorinformation) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security API data flow](security-dataflow.md).
+You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
+
+The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](/graph/api/resources/securityvendorinformation) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security API data flow](security-dataflow.md).
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -66,8 +68,9 @@ Use the Microsoft Secure Score (preview) to provide visibility into your organiz
 ### Manage your eDiscovery workflows (preview)
 
 Organizations rely on [Microsoft Purview eDiscovery](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) capabilities to meet requirements to find the truth about what happened in their organization when they need to, based on internal or external requirements such as litigation, investigation, or regulatory compliance.
-In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs will help provide a scalable way to repeat processes consistently and effectively.
-Many organizations handle a high volume of cases and eDiscovery requests and would prefer to automate some tasks. The  Microsoft Graph APIs for advanced eDiscovery provide API access to most functions available within the Microsoft Purview eDiscovery (premium) solution.
+
+In many organizations, eDiscovery workflows are frequent, critical, and high volume. In the cases where there are common repeated tasks or a high volume of activities, the APIs will help provide a scalable way to repeat processes consistently and effectively. Many organizations handle a high volume of cases and eDiscovery requests and would prefer to automate some tasks. The  Microsoft Graph APIs for advanced eDiscovery provide API access to most functions available within the Microsoft Purview eDiscovery (premium) solution.
+
 Depending on the current systems and processes in place, organizations might have various priorities for automation and integration, from upstream processes such as case creation, to downstream such as collection, review set queries, or export. Supporting workflows with APIs throughout the advanced eDiscovery workflow provides flexibility and options.
 
 #### Build custom eDiscovery workflows with Microsoft Graph
@@ -84,13 +87,14 @@ Depending on the current systems and processes in place, organizations might hav
 
 The following table lists the benefits that different security solutions can access by integrating with the Microsoft Graph Security API.  
 
-|**Area**     | **Benefits**|
-|:---------------|:---------|
+|**Area**        | **Benefits**|
+|:---------------|:------------|
 |**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools, workflows, and reporting.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Automated response to alerts by taking action on threats.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
 |**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
 |**Applications** <br>(Threat intelligence, mobile, cloud, IOT, fraud detection, identity & access, risk & compliance, firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, actions, and customer threat intelligence exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li> <li>Gain deep security insights to train other security solutions.</li> </ul>|
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Security API in Microsoft Graph v1.0](/graph/api/resources/security-api-overview)
@@ -98,6 +102,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- [Use the Microsoft Graph Security API](/graph/api/resources/security-api-overview?)
 - Explore [Microsoft Graph Security API samples](https://aka.ms/graphsecurityapicode)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

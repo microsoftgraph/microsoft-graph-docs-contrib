@@ -62,6 +62,13 @@ The following table specifies the properties that can be updated.
 >
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 
+### Manage extensions and associated data
+
+Use this API to manage the [directory, schema, and open extensions](/graph/extensibility-overview) and their data for groups, as follows:
+
++ Add, update and store data in the extensions for an existing group.
++ For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
