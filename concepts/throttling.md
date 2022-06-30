@@ -400,7 +400,7 @@ The preceding limits apply to the following resources:
 
 ### Files and lists service limits
 
-Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+For service limits for OneDrive, OneDrive for Business, and SharePoint Online, see [Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 The preceding information applies to the following resources:
 

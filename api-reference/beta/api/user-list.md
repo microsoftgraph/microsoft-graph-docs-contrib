@@ -44,6 +44,15 @@ Certain properties cannot be returned within a user collection. The following pr
 
 The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
 
+### Retrieve extensions and associated data
+
+| Extension type                     | Comments                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned by default. Supports `$filter` (`eq`).                  |
+| Schema extensions                  | Returned only with `$select`. Supports `$filter` (`eq`).                  |
+| Open extensions                    | Returned only with `$expand`, that is, `users?$expand=extensions`. |
+| Directory extensions               | Returned by default. Supports `$filter` (`eq`).                  |
+
 ## Request headers
 
 | Header | Value |
