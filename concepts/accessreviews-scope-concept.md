@@ -178,6 +178,7 @@ Additionally, because this review is applied on all teams, configure the **insta
 
 This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
+Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
 
 ---
 
@@ -266,7 +267,7 @@ The following example scopes the review to direct members of all groups who are 
 }
 ```
 
-### Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels
+### Example 11 Review all users assigned to a team, including B2B direct connect users in a team with shared channels
 
 In this example, the access review scope is all users who are members of a team, or assigned to a shared channel within the team. These members include internal users, direct and transitive users, B2B collaboration users, and B2B direct connect users.
 
