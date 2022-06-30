@@ -14702,6 +14702,8 @@ items:
           href: api/security-list-alerts.md
         - name: Get alert
           href: api/security-alert-get.md 
+        - name: Update alert
+          href: api/security-alert-update.md
       - name: Attack simulation and training (preview)
         items:
         - name: Simulations
