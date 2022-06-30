@@ -31,7 +31,7 @@ The following table lists some of the common uses for the cloud communications A
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-v1.0)| [Methods for calls](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#methods)| 
+| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)| [Methods for calls](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#methods)| 
 |IVR calls   |     | [Methods for IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0&preserve-view=true)
 | Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-v1.0&preserve-view=true)   ||
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true#methods)|
