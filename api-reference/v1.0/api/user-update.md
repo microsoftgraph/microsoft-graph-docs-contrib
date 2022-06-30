@@ -88,6 +88,13 @@ In the request body, supply the values for relevant fields that should be update
 > - The following properties cannot be updated by an app with only application permissions: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 > - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
+### Manage extensions and associated data
+
+Use this API to manage the directory, schema, and open extensions and their data for users, as follows:
+
++ Add, update and store data in the extensions for an existing user
++ For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
