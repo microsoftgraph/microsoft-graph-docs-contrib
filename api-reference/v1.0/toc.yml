@@ -99,14 +99,8 @@ items:
       - name: Get changes to users (example)
         href: /graph/delta-query-users?context=graph/api/1.0
     - name: Add custom data
-      items:
-      - name: Overview
-        href: /graph/extensibility-overview?context=graph/api/1.0
-        displayName: add custom data, extensions, resources using extensions
-      - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?context=graph/api/1.0
-      - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?context=graph/api/1.0
+      displayName: directory extensions, schema extensions, open extensions, extension attributes
+      href: /graph/extensibility-overview?context=graph/api/1.0
     - name: Use Graph Explorer
       items:
       - name: Get started
@@ -905,21 +899,6 @@ items:
             href: api/application-addkey.md
           - name: Remove key
             href: api/application-removekey.md
-        - name: Extensions
-          items:
-          - name: Extension property
-            href: resources/extensionproperty.md
-            items:
-            - name: List
-              href: api/application-list-extensionproperty.md
-            - name: Create
-              href: api/application-post-extensionproperty.md
-            - name: Get
-              href: api/extensionproperty-get.md
-            - name: Delete
-              href: api/extensionproperty-delete.md
-            - name: Get available extension properties
-              href: api/directoryobject-getavailableextensionproperties.md
         - name: Owners
           items:
           - name: List
@@ -4562,6 +4541,22 @@ items:
           href: api/educationoutcome-update.md
     - name: Extensions
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?context=graph/api/1.0&preserve-view=true
+      - name: Directory extensions
+        displayname: Groups, Users, Applications, Organization, Devices
+        href: resources/extensionproperty.md
+        items:
+        - name: List
+          href: api/application-list-extensionproperty.md
+        - name: Create
+          href: api/application-post-extensionproperty.md
+        - name: Get
+          href: api/extensionproperty-get.md
+        - name: Delete
+          href: api/extensionproperty-delete.md
+        - name: Get available extension properties
+          href: api/directoryobject-getavailableextensionproperties.md
       - name: Open extensions
         href: resources/opentypeextension.md
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
