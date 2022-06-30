@@ -9,7 +9,9 @@ author: RabebOthmani
 
 # Use Graph Explorer to try Microsoft Graph APIs
 
-[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you conveniently make Microsoft Graph REST API requests and view corresponding responses. Use Graph Explorer to try APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios. This tool includes helpful features such as code snippets (C#, Java, and JavaScript), Microsoft Graph Toolkit and adaptive cards integration, and more.
+[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) is a developer tool that lets you learn about Microsoft Graph APIs. Use Graph Explorer to try the APIs on the default sample tenant to explore capabilities, or sign in to your own tenant and use it as a prototyping tool to fulfill your app scenarios. This tool includes helpful features such as code snippets (C#, Java, JavaScript, Go and PowerShell), Microsoft Graph Toolkit and adaptive cards integration, and more.
+
+:::image type="content" source="./images/graph-explorer-screen.png" alt-text="Screenshot of the Graph Explorer user interface." border="true":::
 
 Use Graph Explorer to:
 
