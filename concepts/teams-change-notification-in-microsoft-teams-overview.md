@@ -20,8 +20,8 @@ Microsoft Teams supports two types of change notifications:
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
-## Currently supported resources
-The following lists the Microsoft Teams resources and corresponding resource paths that are currently supported:
+## Supported resources
+The following table lists the Microsoft Teams resources and corresponding resource paths that are currently supported.
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
