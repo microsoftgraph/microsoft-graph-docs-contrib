@@ -8,7 +8,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get alert
+# Get alert_v2
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "alert resource type"
+title: "alert_v2 resource type"
 description: "Represents potential security issues within a customer's tenant that Microsoft 365 Defender have identified."
 ms.date: 09/09/2021
 author: "BenAlfasi"
@@ -8,7 +8,7 @@ ms.prod: "security"
 doc_type: resourcePageType
 ---
 
-# alert resource type
+# alert_v2 resource type
 
 Namespace: microsoft.graph.security
 

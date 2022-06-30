@@ -14988,6 +14988,8 @@ items:
           href: api/security-list-incidents.md
         - name: Get incident
           href: api/security-incident-get.md   
+        - name: Update incident
+          href: api/security-incident-update.md
       - name: Information protection
         items:
         - name: Labels
