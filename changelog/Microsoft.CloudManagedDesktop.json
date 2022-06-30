@@ -4,6 +4,14 @@
             "ChangeList": [
                 {
                     "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",
+                    "ApiChange": "EnumType",
+                    "ChangedApiName": "cloudPcSupportedRegionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcSupportedRegionStatus** enumeration type.",
+                    "Target": "cloudPcSupportedRegionStatus"
+                },
+                {
+                    "Id": "c4286cb2-959d-4dd5-937f-3282ea626c61",
                     "ApiChange": "Property",
                     "ChangedApiName": "cloudPcSupportedRegion",
                     "ChangeType": "Addition",
