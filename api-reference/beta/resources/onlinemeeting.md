@@ -65,6 +65,10 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 >- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
 
+> [!TIP]
+>
+> Once `attendee` value is added to the **anonymizeIdentityForRoles** property, it cannot be removed via the Patch OnlineMeeting method.
+
 ### onlineMeetingPresenters values
 
 | Value              | Description                                                   |
