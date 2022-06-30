@@ -89,11 +89,11 @@ Because piecing the individual alerts together to gain insight into an attack ca
 
 Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see: 
 
--Where the attack started. 
--What tactics were used. 
--How far the attack has gone into your tenant. 
--The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
--All of the data associated with the attack. 
+- Where the attack started. 
+- What tactics were used. 
+- How far the attack has gone into your tenant. 
+- The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
+- All of the data associated with the attack. 
 
 The  [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related  [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy. 
 

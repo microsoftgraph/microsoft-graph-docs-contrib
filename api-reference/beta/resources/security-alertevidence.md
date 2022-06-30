@@ -58,7 +58,7 @@ Each [alert](security-alert.md). contains a list of related evidence.
 | Member                     | Description                                                                                                                                                          |
 | :--------------------------| :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | unknown                    | The evidence role is unknown.                                                                                                                                        |
-| contextual                 | An entity that arise likely benign but reported as a side effect of an attacker’s action, e.g. the benign services.exe process was used to start a malicious service.|
+| contextual                 | An entity that arise likely benign but reported as a side effect of an attacker`s action, e.g. the benign services.exe process was used to start a malicious service.|
 | scanned                    | An entity identified as a target of discovery scanning or reconnaissance actions, e.g. a port scanner was used to scan a network.                                    |
 | source                     | The entity the activity originated from, e.g. device, user, IP address, etc.                                                                                         |
 | destination                | The entity the activity was sent to, e.g. device, user, IP address, etc.                                                                                             |
@@ -67,7 +67,7 @@ Each [alert](security-alert.md). contains a list of related evidence.
 | compromised                | The entity was compromised and is under the control of an attacker, e.g. a user account was compromised and used to log into a cloud service.                        |
 | edited                     | The entity was edited or changed by an attacker, e.g. the registry key for a service was edited to point to the location of a new malicious payload.                 |
 | attacked                   | The entity was attacked, e.g. a device was targeted in a DDoS attack.                                                                                                |
-| attacker                   | The entity represents the attacker, e.g. the attacker’s IP address observed logging into a cloud service using a compromised user account.                           |
+| attacker                   | The entity represents the attacker, e.g. the attacker`s IP address observed logging into a cloud service using a compromised user account.                           |
 | commandAndControl          | The entity is being used for command and control, e.g. a C2 (command and control) domain used by malware.                                                            |
 | loaded                     | The entity was loaded by a process under the control of an attacker, e.g. a Dll was loaded into an attacker-controlled process.                                      |
 | suspicious                 | The entity is suspected of being malicious or controlled by an attacker but has not been incriminated.                                                               |
