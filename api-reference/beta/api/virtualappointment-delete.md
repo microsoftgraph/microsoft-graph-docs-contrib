@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /onlineMeeting/virtualAppointment/$ref
+DELETE /onlineMeeting/{onlineMeetingId}/virtualAppointment/$ref
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/onlineMeeting/virtualAppointment
+DELETE https://graph.microsoft.com/beta/onlineMeeting/{onlineMeetingId}/virtualAppointment
 ```
 
 

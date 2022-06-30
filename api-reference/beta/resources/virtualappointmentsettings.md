@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 Settings that define client's experience during the virtual appointment.
 
 ## Properties
-|Property|Type|Description|Required|
-|:---|:---|:---|:---|
-|allowClientToJoinUsingBrowser|Boolean|Indicates if client can use the browser to join a virtual appointment. If set to false, client can only use Microsoft Teams to join.|Optional|
+|Property|Type|Description|
+|:---|:---|:---|
+|allowClientToJoinUsingBrowser|Boolean|Indicates if client can use the browser to join a virtual appointment. If set to false, client can only use Microsoft Teams to join. Optional.
 
 ## Relationships
 None.

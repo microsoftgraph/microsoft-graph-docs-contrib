@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Virtual Appointments are designed for business to consumer online workflows and include enhanced features such as mobile browser join and client waiting room. Resource contains information about a virtual appointment, including the client join URL, settings and client information.
 
+[!NOTE]
+> We'll be providing unlimited virtual appointment graph API calls through the public preview, for customers with virtual appointment licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -25,16 +28,16 @@ Virtual Appointments are designed for business to consumer online workflows and 
 
 > [!TIP]
 >
-> When creating a virtual appointment resource for the first time in a tenant, caller is returned a status resource as service is provisioned. Provisioning takes less than five minutes. 
+> When creating a virtual appointment resource for the first time in a tenant, caller is returned an error code 503 (service unavailable) as the service provisions with a retry header indicating how long a caller should wait before making the request again. Provisioning takes less than five minutes. This steps is only required once per customer tenant.
 
 ## Properties
-|Property|Type|Description|Required|
-|:---|:---|:---|:---|
-|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource |Optional|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number |Optional|
-|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment |Optional|
-|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment |Optional|
-|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join |Optional|
+|Property|Type|Description|
+|:---|:---|:---|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|Client information for the virtual appointment including name, email, and SMS phone number. Optional.|
+|appointmentClientJoinWebUrl|String|Join WebUrl of the virtual appointment for clients with waiting room and browser join. Optional.|
+|externalAppointmentId|String|Identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.|
+|externalAppointmentUrl|String|URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.|
+|settings|[virtualAppointmentSettings](../resources/virtualappointmentsettings.md)|Settings associated with the virtual appointment resource. Optional.|
 
 ## Relationships
 None.
@@ -60,9 +63,9 @@ The following is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.virtualAppointmentUser"
     }
   ],
+  "appointmentClientJoinWebUrl": "String",
   "externalAppointmentId": "String",
-  "externalAppointmentUrl": "String",
-  "appointmentClientJoinWebUrl": "String"
+  "externalAppointmentUrl": "String"
 }
 ```
 

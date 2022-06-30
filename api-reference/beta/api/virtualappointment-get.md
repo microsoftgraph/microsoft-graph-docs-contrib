@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /onlineMeeting/virtualAppointment
+GET /onlineMeeting/{onlineMeetingId}/virtualAppointment
 ```
 
 ## Optional query parameters
@@ -61,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onlineMeeting/virtualAppointment
+GET https://graph.microsoft.com/beta/onlineMeeting/{onlineMeetingId}/virtualAppointment
 ```
 
 
@@ -81,18 +81,22 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.virtualAppointment",
-    "id": "0c7fda79-ff00-f57f-37e3-28183b6d09b5",
-    "settings": {
-      "@odata.type": "microsoft.graph.virtualAppointmentSettings"
-    },
-    "appointmentClients": [
-      {
-        "@odata.type": "microsoft.graph.virtualAppointmentUser"
-      }
-    ],
-    "externalAppointmentId": "String",
-    "externalAppointmentUrl": "String",
-    "appointmentClientJoinWebUrl": "String"
+  "id": "0c7fda79-ff00-f57f-37e3-28183b6d09b5",
+  "settings": {
+    "@odata.type": "microsoft.graph.virtualAppointmentSettings",
+    "allowClientToJoinUsingBrowser": "true"
+  },
+  "appointmentClients": [
+    {
+      "@odata.type": "microsoft.graph.virtualAppointmentUser"
+      "emailAddress": "client1@outlook.com",
+      "displayName": "Client One",
+      "smsCapablePhoneNumber": "123-456-7890"
+    }
+  ],
+  "externalAppointmentId": "AAMkADKnAAA=",
+  "externalAppointmentUrl": “https://anyschedulingsystem.com/api/appointments/MkADKnAAA=",
+  "appointmentClientJoinWebUrl": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
   }
 }
 ```

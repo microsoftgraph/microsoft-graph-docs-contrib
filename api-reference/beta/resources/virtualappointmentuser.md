@@ -16,11 +16,11 @@ Namespace: microsoft.graph
 Type to represent a client user in a virtual appointment.
 
 ## Properties
-|Property|Type|Description|Required|
-|:---|:---|:---|:---|
-|displayName|String|Display name of the user participating in a virtual appointment|Optional|
-|emailAddress|String|Email address of the user participating in a virtual appointment|Optional|
-|smsCapablePhoneNumber|String|Phone number for sending SMS texts for user participating in a virtual appointment|Optional|
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|Display name of the user participating in a virtual appointment. Optional|
+|emailAddress|String|Email address of the user participating in a virtual appointment. Optional|
+|smsCapablePhoneNumber|String|Phone number for sending SMS texts for user participating in a virtual appointment. Optional|
 
 ## Relationships
 None.
