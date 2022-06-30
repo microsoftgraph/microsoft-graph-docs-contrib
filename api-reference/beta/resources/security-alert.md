@@ -35,10 +35,12 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
 |determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The product service that created this alert. Possible values are: `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftCloudAppSecurity`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `aadIdentityProtection`, `appGovernance`, `dataLossPrevention`.|
+|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |tenantId|String|The Azure Active Directory tenant the alert was created in.|
 |title|String|Brief identifying string value describing the alert.|
 |description|String|String value describing each alert.|
+|recommendedActions|String|Recommended response and remediation actions to take in the event this alert was generated.|
 |category|String|The attack kill-chain category the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 |alertWebUrl|String|URL for the alert page in Microsoft 365 Defender portal.|
@@ -53,6 +55,7 @@ When a threat is detected, alerts are created in the system for an analyst to in
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert.|
 |lastActivityDateTime|DateTimeOffset|The oldest activity associated with the alert.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
+|evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection|Collection of evidence related to the alert.|
 
 ### alertClassification values 
 
@@ -164,39 +167,46 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-    "@odata.type": "#microsoft.graph.security.alert",
-    "id": "String (identifier)",
-    "providerAlertId": "String",
-    "incidentId": "String",
-    "status": "String",
-    "severity": "String",
-    "classification": "String",
-    "determination": "String",
-    "serviceSource": "String",
-    "detectorId": "String",
-    "tenantId": "String",
-    "title": "String",
-    "description": "String",
-    "category": "String",
-    "assignedTo": "String",
-    "alertWebUrl": "String",
-    "incidentWebUrl": "String",
-    "actorDisplayName": "String",
-    "threatDisplayName": "String",
-    "threatFamilyName": "String",
-    "mitreTechniques": [
-        "String"
-    ],
-    "createdDateTime": "String (timestamp)",
-    "lastUpdateDateTime": "String (timestamp)",
-    "resolvedDateTime": "String (timestamp)",
-    "firstActivityDateTime": "String (timestamp)",
-    "lastActivityDateTime": "String (timestamp)",
-    "comments": [
-        {
-          "@odata.type": "microsoft.graph.security.alertComment"
-        }
-    ]
+  "@odata.type": "#microsoft.graph.security.alert",
+  "id": "String (identifier)",
+  "providerAlertId": "String",
+  "incidentId": "String",
+  "status": "String",
+  "severity": "String",
+  "classification": "String",
+  "determination": "String",
+  "serviceSource": "String",
+  "detectionSource": "String",
+  "detectorId": "String",
+  "tenantId": "String",
+  "title": "String",
+  "description": "String",
+  "recommendedActions": "String",
+  "category": "String",
+  "assignedTo": "String",
+  "alertWebUrl": "String",
+  "incidentWebUrl": "String",
+  "actorDisplayName": "String",
+  "threatDisplayName": "String",
+  "threatFamilyName": "String",
+  "mitreTechniques": [
+    "String"
+  ],
+  "createdDateTime": "String (timestamp)",
+  "lastUpdateDateTime": "String (timestamp)",
+  "resolvedDateTime": "String (timestamp)",
+  "firstActivityDateTime": "String (timestamp)",
+  "lastActivityDateTime": "String (timestamp)",
+  "comments": [
+    {
+      "@odata.type": "microsoft.graph.security.alertComment"
+    }
+  ],
+  "evidence": [
+    {
+      "@odata.type": "microsoft.graph.security.alertEvidence"
+    }
+  ]
 }
 ```
 

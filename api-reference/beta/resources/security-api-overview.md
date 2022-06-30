@@ -14,6 +14,7 @@ doc_type: resourcePageType
 The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
 
 - Consolidate and correlate security alerts from multiple sources
+- Pull and investigate all incidents and alerts from Microsoft 365 Defender with incidents and alerts_v2 
 - Unlock contextual data to inform investigations
 - Automate security tasks, business processes, workflows, and reporting
 - Send threat indicators to Microsoft products for customized detections
@@ -52,6 +53,24 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 \*\*\* Microsoft Defender for Identity alerts are available via the Microsoft Defender for Cloud Apps integration. This means you will get Microsoft Defender for Identity alerts only if you have joined Unified SecOps and connected Microsoft Defender for Identity into Microsoft Defender for Cloud Apps. Learn more about [how to integrate Microsoft Defender for Identity and Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
 
+## Alerts_v2 (preview)
+
+Microsoft 365 Defender is a unified pre and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+
+Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity.
+
+Individual [alerts](security-alert.md) provide valuable clues about a completed or ongoing attack, with rich content of the impacted assets and associated [evidence](security-alertevidence.md).
+
+You can pull [alerts](security-alert.md) from each of the services that are part of the Microsoft 365 Defender suite, and in addition combine them with the Microsoft 365 Defender [incidents](security-incident.md) for a full view into the scope of the attack. 
+
+The following services are covered by the Microsoft 365 Defender [alerts](security-alert.md):
+-Microsoft 365 Defender 
+-Microsoft Defender of Endpoint 
+-Microsoft Defender for Office 365 
+-Microsoft Defender for Identity 
+-Microsoft Defender for Cloud Apps 
+-Microsoft Dala Loss Prevention 
+
 ## Attack simulation and training (preview)
 
 [Attack simulation and training](/microsoft-365/security/office-365-security/attack-simulation-training) is part of [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). This service lets users in a tenant experience a realistic benign phishing attack and learn from it. Social engineering simulation and training experiences for end users help reduce the risk of users being breached via those attack techniques. The attack simulation and training API enables tenant administrators to view launched [simulation](simulation.md) exercises and trainings, and get [reports](report-m365defender-reports-overview.md) on derived insights into online behaviors of users in the phishing simulations.
@@ -62,22 +81,21 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 ## Incidents (preview)
 
-An incident is a collection of correlated [alerts](security-alert.md) and associated data that make up the story of an attack. [Incident management](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) is part of [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true), and is available in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)).
+An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender, and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/). 
 
-Microsoft 365 services and apps create [alerts](security-alert.md) when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple [alerts](security-alert.md) for multiple entities in your tenant.
+Microsoft 365 services and apps create  alerts  when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple  alerts for multiple entities in your tenant. 
 
-Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
+Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an [incident](security-incident.md). 
 
-Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
+Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see: 
 
-- Where the attack started.
-- What tactics were used.
-- How far the attack has gone into your tenant.
-- The scope of the attack, such as how many devices, users, and mailboxes were impacted.
-- All of the data associated with the attack.
+-Where the attack started. 
+-What tactics were used. 
+-How far the attack has gone into your tenant. 
+-The scope of the attack, such as how many devices, users, and mailboxes were impacted. 
+-All of the data associated with the attack. 
 
-The [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy.
-
+The  [incident](security-incident.md) resource and its APIs allow you to sort through incidents to create an informed cyber security response. It exposes a collection of incidents, with their related  [alerts](security-alert.md), that were flagged in your network, within the time range you specified in your environment retention policy. 
 
 ## Information protection
 
