@@ -239,14 +239,30 @@
           "ChangeType": "Addition",
           "Description": "Added the `CrossTenantInformation.ReadBasic.All` delegated and application permissions to read basic tenant information through the methods exposed by the [tenantRelationshipRoot](https://docs.microsoft.com/en-us/graph/api/resources/tenantrelationshiproot?view=graph-rest-beta) resource.",
           "Target": "tenantRelationshipRoot"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByDomainName",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByDomainName](https://docs.microsoft.com/en-us/graph/api/findTenantInformationByDomainName?view=graph-rest-beta) resource",
+          "Target": "findTenantInformationByDomainName"
+        },
+        {
+          "Id": "1b2456c9-cc7e-482f-a6c5-e87bd2ecdaf9",
+          "ApiChange": "Method",
+          "ChangedApiName": "findTenantInformationByTenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the [findTenantInformationByTenantId](https://docs.microsoft.com/en-us/graph/api/findTenantInformationByTenantId?view=graph-rest-beta) resource",
+          "Target": "findTenantInformationByTenantId"
         }
       ],
       "Id": "ef87b9b4-839f-44a5-b0d7-956a9869307c",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-03-07T00:00:00.0123959Z",
-      "WorkloadArea": "Directory management",
-      "SubArea": "directory-management"
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
