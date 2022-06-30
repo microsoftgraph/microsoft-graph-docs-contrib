@@ -37,7 +37,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
-| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in meeting. Possible values are: `attendee`. |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in meeting. Possible values are: `attendee`. Once `attendee` value is added, it cannot be removed via the Patch method.|
 | attendeeReport        | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
@@ -64,10 +64,6 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 >
 >- The **autoAdmittedUsers** property is deprecated. Use the **scope** property of [lobbyBypassSettings](lobbyBypassSettings.md) instead.
 >- The **capabilities** property is deprecated. Use the **isQuestionAndAnswerEnabled** property of [broadcastMeetingSettings](broadcastMeetingSettings.md) instead.
-
-> [!TIP]
->
-> Once `attendee` value is added to the **anonymizeIdentityForRoles** property, it cannot be removed via the Patch OnlineMeeting method.
 
 ### onlineMeetingPresenters values
 
