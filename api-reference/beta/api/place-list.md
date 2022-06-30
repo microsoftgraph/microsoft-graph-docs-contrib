@@ -308,7 +308,6 @@ Content-type: application/json
       "building": "1",
       "floorNumber": 1,
       "isWheelChairAccessible": false,
-      "bookingType": "standard",
       "tags": [
         "bean bags"
       ]
@@ -335,7 +334,6 @@ Content-type: application/json
       "building": "2",
       "floorNumber": 2,
       "isWheelChairAccessible": false,
-      "bookingType": "standard",
       "tags": [
         "benches",
         "nice view"
@@ -607,7 +605,6 @@ Content-type: application/json
       "building": "2",
       "floorNumber": 2,
       "isWheelChairAccessible": false,
-      "bookingType": "standard",
       "tags": [
         "benches",
         "nice view"

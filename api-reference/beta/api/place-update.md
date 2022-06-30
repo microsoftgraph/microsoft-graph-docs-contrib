@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | The street address of the room, workspace, or roomlist. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](../resources/room.md)                            | Type of room or workspace. Possible values are `Standard` and `Reserved`. |
+| bookingType            | [bookingType](../resources/room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room or workspace is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room or workspace. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
@@ -259,7 +259,6 @@ Content-type: application/json
     "floorLabel": "1P",
     "floorNumber": 1,
     "isWheelChairAccessible": false,
-    "bookingType": "standard",
     "tags": [
       "bean bags"
     ]

@@ -222,7 +222,6 @@ Content-type: application/json
     "building": "1",
     "floorNumber": 1,
     "isWheelChairAccessible": false,
-    "bookingType": "standard",
     "tags": [
       "bean bags"
     ]

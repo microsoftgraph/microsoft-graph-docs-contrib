@@ -30,7 +30,6 @@ In Exchange Online, each workspace is associated with a workspace mailbox. Deriv
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the workspace. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of workspace. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the workspace is in. |
 | capacity               | Int32                                             | Specifies the capacity of the workspace. |
 | displayName            | String                                            | The name associated with the workspace. |
@@ -86,7 +85,6 @@ The following is a JSON representation of the resource.
   "floorNumber": "Integer",
   "label": "String",
   "capacity": "Integer",
-  "bookingType": "String",
   "isWheelChairAccessible": "Boolean",
   "tags": [
     "String"
