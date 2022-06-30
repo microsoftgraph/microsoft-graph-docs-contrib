@@ -22,10 +22,7 @@ For this scenario, this article will show you how to:
 4. Add, update, or remove custom data in an existing group based on a schema extension definition.
 5. Read back a group and the extension data.
 
->**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5).  The same methods are supported for the 
-**administrativeUnit**, **device**, **event**, **message**, **organization**, **post**, and **user** 
-resource types as well.  You can carry out operations similar to the request examples in this article on any of those resources. Note that **administrativeUnit** is 
-available only in the beta endpoint.
+>**Note:** This topic shows you how to create and read schema extension values on a **group** resource (steps 3-5). Schema extensions are also supported and can be managed for [other resource types](extensibility-overview.md).
 
 ## 1. View available schema extensions
 First, as a developer, you might want to find any other schema extension definitions that our app could reuse.  This can be done by querying the **schemaExtension** resource.  
