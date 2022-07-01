@@ -15052,6 +15052,8 @@ items:
         items:
         - name: Site
           href: resources/site.md
+        - name: List sites
+          href: api/site-list.md
         - name: Get site
           href: api/site-get.md
         - name: Get lists
@@ -15463,6 +15465,13 @@ items:
           href: api/team-completemigration.md
         - name: List permission grants
           href: api/team-list-permissiongrants.md
+        - name: Deleted team
+          href: resources/deletedteam.md
+          items:
+          - name: List
+            href: api/teamwork-list-deletedteams.md
+          - name: Get all messages
+            href: api/deletedteam-getallmessages.md
       - name: Group (team)
         href: resources/group.md
         items:
