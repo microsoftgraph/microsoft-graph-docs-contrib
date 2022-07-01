@@ -642,6 +642,12 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
+        - name: Teams app settings
+          href: resources/teamsappsettings.md
+        - name: Get Teams app settings
+          href: api/teamsappsettings-get.md
+        - name: Update Teams app settings
+          href: api/teamsappsettings-update.md
       - name: To-do tasks
         items:
         - name: To-do task
