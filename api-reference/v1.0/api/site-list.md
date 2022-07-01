@@ -1,5 +1,5 @@
 ---
-title: "Enumerate sites"
+title: "List sites"
 description: "List all available sites in an organization or list the sites that match the provided filter criteria and query options."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -7,11 +7,9 @@ doc_type: apiPageType
 author: "JeremyKelley"
 ---
 
-# Enumerate sites
+# List sites
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all available [sites][] in an organization.
 
@@ -62,38 +60,11 @@ GET /sites?$filter=siteCollection/root ne null
 ### Request
 
 
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-sites" } -->
+<!-- { "blockType": "ignored" } -->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
+```http
+GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-sites-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-sites-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-sites-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -133,10 +104,10 @@ Content-type: application/json
 
 ### Request
 
-<!-- { "blockType": "request", "name": "list-sites", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites
+GET https://graph.microsoft.com/v1.0/sites
 ```
 
 ### Response
