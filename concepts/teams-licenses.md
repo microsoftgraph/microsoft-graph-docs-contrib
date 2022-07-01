@@ -10,7 +10,13 @@ ms.prod: "microsoft-teams"
 
 This article describes the licensing and payment requirements for the Microsoft Teams API in Microsoft Graph.
 
-Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model.
+Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model.The following APIs have consumption charges:
+
+* [Export Teams content](/graph/api/export-teams-content.md)
+* [Create subscription](/graph/api/subscription-post-subscriptions.md)
+* [Update chat message](/graph/api/chatmessage-update.md)
+* [Get channel message](/graph/api/chatmessage-get)
+* [Get message in chat](/graph/api/chatmessage-get)
 
 The following licensing models are available:
 
@@ -22,7 +28,7 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
-**Note:** Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See also [recent updates](#recent-updates-and-price-for-additional-use) for more details.
+**Note:** Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. See [recent updates](#recent-updates-and-price-for-additional-use) for more details.
 
 ## `model=A` requirements
 
@@ -111,8 +117,7 @@ The seeded capacity differs by API; see [`model=A` requirements](#modela-require
 
 ## Recent updates and price for additional use
 
-In October 2021 we [announced](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) charges for the consumption of these APIs, on July 5th 2022 these prices take effect ([announcement])(https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your application(s) are or will be calling any of these APIs, we require to fill up this [form](https://aka.ms/teamsgraph/protectedApis_az) providing the Azure subscription ID under the same tenant as the application that is being registered. Once the Azure subscription ID has been provided for the registered application, no further action will be necessary. As we itirate throught requests, we will follow up via email to confirm additional details. 
+In October 2021 we [comunicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs, on July 5th 2022 these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your application(s) are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. Once the [form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing. 
 
-In the case an application has received approval to call [protected APIs](https://docs.microsoft.com/graph/teams-protected-apis) is necesssary to provide the related Azure subscription ID using the same [form](https://aka.ms/teamsgraph/protectedApis_az). In the future, applications without an Azure subcription ID may experience failures in their APIs calls. Microsoft will charge a fee for usage over the seeded capacity. 
-
-Please note that the organization that owns the app registration is responsible for the payment, which for multitenant apps may be different from the organization that runs the app.
+Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For
+multitenant apps may be different from the organization that runs the app.
