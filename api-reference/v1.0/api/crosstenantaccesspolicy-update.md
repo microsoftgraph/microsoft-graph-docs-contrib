@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a [cross-tenant access policy](../resources/crosstenantaccesspolicy.md).
 
 ## Permissions
@@ -68,35 +66,13 @@ The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object si
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
+  "displayName": "CrossTenantAccessPolicy",
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
