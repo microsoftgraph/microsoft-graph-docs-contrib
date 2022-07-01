@@ -80,7 +80,7 @@ Get the following information for a Cloud PC [provisioning policy](/graph/api/re
 Hide self-service password reset (SSPR) links in the [login page text visibility settings](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) for a tenant's sign-in page.
 
 ### Teamwork
-Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta) a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) in a [chat](/graph/api/resources/chat?view=graph-rest-beta) or [channel](/graph/api/resources/channel?view=graph-rest-beta). 
+Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) or [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
 
 ## May 2022: New and generally available
 
