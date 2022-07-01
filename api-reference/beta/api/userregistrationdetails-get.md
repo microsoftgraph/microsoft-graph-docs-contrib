@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/authenticationMethods/userRegistrationDetails/{userRegistrationDetailsId}
+GET /reports/authenticationMethods/userRegistrationDetails/{userId}
 ```
 
 ## Optional query parameters
