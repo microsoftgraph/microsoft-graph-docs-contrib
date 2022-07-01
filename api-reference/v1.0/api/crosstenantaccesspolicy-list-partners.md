@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of all partner configurations within a cross-tenant access policy.
 
 ## Permissions
@@ -61,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
+GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partners
 ```
 
 ### Response
