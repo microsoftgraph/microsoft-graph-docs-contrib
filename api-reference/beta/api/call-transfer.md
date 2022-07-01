@@ -483,8 +483,6 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -678,8 +676,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-transfer-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -866,8 +862,6 @@ Content-Length: 430
   "region": "region-value"
 }
 ```
-
-# [C#](#tab/csharp)
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-5-javascript-snippets.md)]

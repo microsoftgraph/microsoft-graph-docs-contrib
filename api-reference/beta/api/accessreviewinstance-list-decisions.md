@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 

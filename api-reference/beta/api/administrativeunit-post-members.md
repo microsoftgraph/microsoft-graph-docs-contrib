@@ -191,7 +191,6 @@ Content-length: 244
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 

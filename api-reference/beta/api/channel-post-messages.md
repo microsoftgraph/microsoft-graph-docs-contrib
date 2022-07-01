@@ -218,7 +218,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 [!INCLUDE [sample-code](../includes/snippets/go/post-channelmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 
@@ -332,7 +331,6 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 [!INCLUDE [sample-code](../includes/snippets/go/post-channelmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 

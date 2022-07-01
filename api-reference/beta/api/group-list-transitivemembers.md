@@ -177,9 +177,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-transitivemembers-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-
-# [PowerShell](#tab/powershell)
 
 ---
 
@@ -241,7 +238,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-transitivemembers-odatacast-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 
@@ -334,7 +330,6 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/go/get-tier-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
 
 ---
 

@@ -262,10 +262,6 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 [!INCLUDE [sample-code](../includes/snippets/java/get-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-
-# [PowerShell](#tab/powershell)
-
 ---
 
 
@@ -326,10 +322,6 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 [!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-
-# [Go](#tab/go)
-
-# [PowerShell](#tab/powershell)
 ---
 
 

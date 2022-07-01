@@ -758,8 +758,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/join-meeting-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1357,10 +1355,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Objective-C](#tab/objc)
-
-# [Java](#tab/java)
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1529,10 +1523,6 @@ Content-Type: application/json
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-
-# [Java](#tab/java)
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
