@@ -6,22 +6,23 @@ ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Attach large files to a todoTask
+# Attach large files to a To Do task
 
 Using the Microsoft Graph API, you can attach files up to 25 MB to a [todoTask](/graph/api/resources/todotask). 
 Depending on the file size, choose one of two ways to attach the file:
 
 - For attaching files of any size, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
-- If the file size is under 3 MB, do a single POST on the **attachments** navigation property of  **todoTask**; see how to do this [for a task](/graph/api/todotask-post-attachments). The successful `POST` response includes the ID of the file attachment.
+- If the file size is under 3 MB, do a single `POST` on the **attachments** navigation property of a **todoTask**; see how to do this [for a task](/graph/api/todotask-post-attachments). The successful `POST` response includes the ID of the file attachment.
 
 This article illustrates the first approach step by step, creating and using an upload session to add a file attachment to a task.
+
 ## Step 1: Create an upload session
 
-[Create an upload session](/graph/api/taskfileattachment-createuploadsession) to attach a file to a **todoTask**. Specify the file in the input parameter [AttachmentInfo](/graph/api/resources/attachmentinfo).
+[Create an upload session](/graph/api/taskfileattachment-createuploadsession) to attach a file to a **todoTask**. Specify the file in the input parameter [attachmentInfo](/graph/api/resources/attachmentinfo).
 
 A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file.
 
-The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
+The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates that the initial upload starting location should be byte `0`.
 
 ### Permissions
 Make sure to request `Tasks.ReadWrite` permission to create the **uploadSession** for a task.
@@ -51,7 +52,7 @@ Content-Type: application/json
 ```
 
 #### Response
-The following example response shows the **uploadSession** resource returned for the task.
+The following example shows the **uploadSession** resource returned for the task in the response body.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -78,7 +79,7 @@ Content-Type: application/json
 
 To upload the file, or a portion of the file, make a `PUT` request to the URL returned in step 1 in the **uploadUrl** property of the **uploadSession** resource. You can upload the entire file, or split the file into multiple byte ranges. Each byte range needs to be less than 4 MB.
 
-Specify request headers and request body as described below.
+Specify the request headers and the request body as described in the following sections.
 
 ### Request headers
 
@@ -95,19 +96,23 @@ Specify request headers and request body as described below.
 Specify the actual bytes of the file to be attached, that are in the location range specified by the `Content-Range` request header.
 
 ### Response
-A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
+A successful upload returns a `HTTP 200 OK` response code and an **uploadSession** object. Note the following in the response object:
 
-- The **ExpirationDateTime** property value remains the same as returned by the initial **uploadSession** in step 1.
-- The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
+- The **expirationDateTime** property value remains the same as returned by the initial **uploadSession** in step 1.
+- The **nextExpectedRanges** specifies the next byte location to start uploading from, for example, `"nextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
 <!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
   - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
 -->
-- The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
+- The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when you create the session (step 1).
 
-### Example : first upload to the todoTask
+### Example: First upload to the todoTask
+
 #### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "ignored"
 }-->
@@ -124,7 +129,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### Response
 
-The following example response shows in the **NextExpectedRanges** property the start of the next byte range that the server expects.
+The following is an example of the response that shows in the **nextExpectedRanges** property the start of the next byte range that the server expects.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -140,14 +145,18 @@ Content-type: application/json
 
 ## Step 3: Continue uploading byte ranges until the entire file has been uploaded
 
-Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **NextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
+Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **nextExpectedRanges** collection to determine where to start the next byte range to upload. You might see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment. You can get the attachment ID from the URL and save it for later use. 
+Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns a `HTTP 201 Created` response code and a `Location` header that indicates the URL to the file attachment. You can get the attachment ID from the URL and save it for later use.
 
-The following examples show uploading the last byte range of the file to the **todoTask** in the preceding steps.
+The following examples show how to upload the last byte range of the file to the **todoTask** in the preceding steps.
 
 ### Example: Final upload to the todoTask
+
 #### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "ignored"
 }-->
@@ -163,7 +172,7 @@ Content-Range: bytes 2097152-3483321/3483322
 ```
 
 #### Response
-The following example response shows a `Location` response header from which you can save the attachment ID (`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`) for later use.
+The following is an example of the response that shows a `Location` response header from which you can save the attachment ID (`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`) for later use.
 
 <!-- {
   "blockType": "ignored"
@@ -175,12 +184,15 @@ Location: https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b531285
 Content-Length: 0
 ```
 
-## Alternative Step : Cancel the upload session
-At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns HTTP 204 No Content.
+## Alternative Step: Cancel the upload session
+At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns a `HTTP 204 No Content` response code.
 
 ### Example for Alternative Step : Cancel the upload session
 
 #### Request
+
+The following is an example of a request.
+
 <!-- {
   "blockType": "ignored"
 }-->
@@ -189,6 +201,9 @@ DELETE https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f3
 ```
 
 #### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "ignored"
 }-->

@@ -12,10 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to a [todoTask](../resources/todotask.md). 
-**Use this approach to attach a file of any supported size between 0 MB to 25 MB.**
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to a [todoTask](../resources/todotask.md).
 
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. The request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 
 The following are the steps to attach a file to an Outlook item using an upload session:
 
@@ -23,7 +22,9 @@ The following are the steps to attach a file to an Outlook item using an upload 
 2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the **todoTask**.
 3. Optional: Delete the upload session.
 
-See [attach files to a todoTask](/graph/todo-attachments) for an example.
+>**Note:** Use this approach to attach a file of any supported size between 0 MB to 25 MB.
+
+For an example that describes the end-to-end attachment process, see [attach files to a todoTask](/graph/todo-attachments).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,9 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported.|
 
 
-## Step 1 : Create upload session
-
-### HTTP request
+## HTTP request
 
 <!-- {
   "blockType": "ignored"
@@ -48,30 +47,30 @@ POST /me/todo/lists/{id}/tasks/{id}/attachments/createUploadSession
 POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments/createUploadSession
 ```
 
-### Request headers
+## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
-### Request body
+## Request body
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameter that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |attachmentInfo|[attachmentInfo](../resources/attachmentinfo.md)|Represents attributes of the item to be uploaded and attached. At minimum, specify the attachment type (`file`), a name, and the size of the file.|
 
 
-### Response
+## Response
 
 If successful, this action returns a `200 OK` response code and a new [uploadSession](../resources/uploadsession.md) in the response body.
 
-### Example for Step 1: Create Upload session
+## Examples
 
-#### Request
-The following is an example of a request.
+### Request
+The following is an example of a request to create an upload session.
 <!-- {
   "blockType": "request",
   "name": "attachmentbasethis.createuploadsession"
@@ -91,8 +90,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
-The following is an example of the response
+### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
