@@ -22,7 +22,7 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
-.[!NOTE]. Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See also [recent updates](#recent-updates-and-price-for-additional-use) for more details.
+**Note:** Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See also [recent updates](#recent-updates-and-price-for-additional-use) for more details.
 
 ## `model=A` requirements
 
