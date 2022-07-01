@@ -29,7 +29,7 @@ There are no licensing requirements for `model=B`.
 `model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#recent-updates-and-price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
@@ -41,7 +41,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 `model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
+|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#recent-updates-and-price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
@@ -50,7 +50,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## Evaluation mode (default) requirements
 
-|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
+|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#recent-updates-and-price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
@@ -113,6 +113,6 @@ The seeded capacity differs by API; see [`model=A` requirements](#modela-require
 
 In October 2021 we [announced](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) charges for the consumption of these APIs, on July 5th 2022 these prices take effect ([announcement])(https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your application(s) are or will be calling any of these APIs, we require to fill up this [form](https://aka.ms/teamsgraph/protectedApis_az) providing the Azure subscription ID under the same tenant as the application that is being registered. Once the Azure subscription ID has been provided for the registered application, no further action will be necessary. As we itirate throught requests, we will follow up via email to confirm additional details. 
 
-In the case an application has received approval to call [protected APIs](https://docs.microsoft.com/en-us/graph/teams-protected-apis) is necesssary to provide the related Azure subscription ID using the same [form](https://aka.ms/teamsgraph/protectedApis_az). In the future, applications without an Azure subcription ID may experience failures in their APIs calls. Microsoft will charge a fee for usage over the seeded capacity. 
+In the case an application has received approval to call [protected APIs](https://docs.microsoft.com/graph/teams-protected-apis) is necesssary to provide the related Azure subscription ID using the same [form](https://aka.ms/teamsgraph/protectedApis_az). In the future, applications without an Azure subcription ID may experience failures in their APIs calls. Microsoft will charge a fee for usage over the seeded capacity. 
 
 Please note that the organization that owns the app registration is responsible for the payment, which for multitenant apps may be different from the organization that runs the app.
