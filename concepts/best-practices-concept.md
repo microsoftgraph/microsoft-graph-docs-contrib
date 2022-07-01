@@ -1,13 +1,13 @@
 ---
 title: "Best practices for working with Microsoft Graph"
-description: "This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users."
+description: "Apply these best practices to improve your Microsoft Graph application's performance and make your app more reliable for end users."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ---
 
 # Best practices for working with Microsoft Graph
 
-This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph - whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users.
+This article describes best practices that you can apply to help your applications get the most out of Microsoft Graph&mdash;whether that involves learning about Microsoft Graph, improving app performance, or making your application more reliable for end users.
 
 ## Use Graph Explorer to get to know the API
 
@@ -66,7 +66,8 @@ Would return a response containing an `@odata.nextLink` property, if the result 
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$skip=23"
 ```
 
->**Note:** Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
+> [!NOTE]
+> Your application should **always** handle the possibility that the responses are paged in nature, and use the `@odata.nextLink` property to obtain the next paged set of results, until all pages of the result set have been read. The final page will not contain an `@odata.nextLink` property. You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results, treating the entire URL as an opaque string.
 
 For more details, see [paging](paging.md).
 
@@ -105,7 +106,8 @@ In general, for performance and even security or privacy reasons, you should onl
 
 Choose only the properties your application really needs and no more, because this saves unnecessary network traffic and data processing in your application (and in the service).
 
->**Note:** Use the `$select` query parameter to limit the properties returned by a query to those needed by your application.
+> [!NOTE]
+> Use the `$select` query parameter to limit the properties returned by a query to those needed by your application.
 
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
@@ -117,7 +119,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a 204 No Content response for PUT and PATCH operations.
 
->**Note:** Request minimal representation responses using an HTTP request header where appropriate: *Prefer: return=minimal*. Note that for creation operations, this might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
+> [!NOTE]
+> Request minimal representation responses using an HTTP request header where appropriate: *Prefer: return=minimal*. Note that for creation operations, this might not be appropriate because your application may expect to get the service generated `id` for the newly created object in the response.
 
 ### Track changes: delta query and webhook notifications
 

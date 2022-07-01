@@ -1,31 +1,26 @@
 ---
-title: "Licensing and payment requirements"
-description: "Learn about the licensing and payment models that apply to Microsoft Teams APIs in Microsoft Graph."
+title: "Microsoft Teams API licensing and payment requirements"
+description: "Learn about the licensing and payment models that apply to the Microsoft Teams API in Microsoft Graph: model=A, model=B, and evaluation mode."
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# Licensing and payment requirements for Microsoft Teams APIs in Microsoft Graph
+# Licensing and payment requirements for the Microsoft Teams API
 
-This article describes the licensing and payment requirements for Microsoft Teams APIs.
+This article describes the licensing and payment requirements for the Microsoft Teams API in Microsoft Graph.
 
-Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; 
-others only support one model or do not support a licensing and payment model.
+Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model.
+
 The following licensing models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a 
-[security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), 
-and requires a [supported license](#required-licenses-for-modela).
-In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). In the future, apps will also be required to pay for the messages they consume beyond the [seeded capacity](#seeded-capacity).
 
 - [`model=B`](#modelb-requirements) is restricted to applications that do not perform a 
 [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 There are no licensing requirements for `model=B`.
 
-- [Evaluation Mode (default)](#evaluation-mode-default-requirements)
-enables access to APIs with limited usage per requesting application for evaluation purposes. 
-Change notifications will not be sent if the limit is exceeded.
+- [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
 [!NOTE] Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See also [recent updates](#recent-updates-and-price-for-additional-use) for more details.
 
@@ -44,8 +39,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## `model=B` requirements
 
-`model=B` is restricted to applications that do not perform a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
-of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
+`model=B` is restricted to applications that do not perform a security or compliance function. For details, see the [API Terms for Security & Compliance Applications](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) section of the product terms for Microsoft Azure Services.
 
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
@@ -56,7 +50,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 ## Evaluation mode (default) requirements
 
-|API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
+|API   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) |  N/A | 500 messages per month per app | N/A |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | 500 messages per month per app | N/A | 
@@ -111,14 +105,9 @@ in excess of the seeded capacity will fail.
 
 ## Seeded capacity
 
-Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged.
-Capacity is pooled at the tenant level -- the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant.
-Seeded capacity is per app per tenant -- 
-apps won't run out of seeded capacity if another app runs out.
+Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is added up and compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;apps won't run out of seeded capacity if another app runs out.
 
-The seeded capacity differs by API, see 
-[`model=A` requirements](#modela-requirements)
-and [`model=B` requirements](#modelb-requirements)
+The seeded capacity differs by API; see [`model=A` requirements](#modela-requirements) and [`model=B` requirements](#modelb-requirements).
 
 ## Recent updates and price for additional use
 

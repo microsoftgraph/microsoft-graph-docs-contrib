@@ -45,6 +45,8 @@ Represents an Azure AD [access review](accessreviewsv2-overview.md) decision on 
 |resourceLink|String|A link to the resource. For example, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Supports `$select`. Read-only.|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| The identifier of the reviewer. Supports `$select`. Read-only.|
 |reviewedDateTime|DateTimeOffset| The timestamp when the review decision occurred. Supports `$select`. Read-only.|
+|principalResourceMembership|[decisionItemPrincipalResourceMembership](../resources/decisionItemPrincipalResourceMembership.md)| Every decision item in an access review represents a principal's membership to a resource. This property provides the details of the membership. For example, whether the principal has direct access or indirect access to the resource. Supports `$select`. Read-only.|
+
 
 ## Relationships
 
@@ -92,6 +94,9 @@ The following is a JSON representation of the resource.
   "principalLink": "String",
   "resource": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
+  },
+  "principalResourceMembership": {
+    "@odata.type": "microsoft.graph.decisionItemPrincipalResourceMembership"
   },
   "resourceLink": "String"
 }

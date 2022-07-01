@@ -1,17 +1,18 @@
 ---
-title: "Create Calendar"
-description: "Use this API to create a new calendar for a user."
+title: "Create calendar"
+description: "Create a new calendar for a user."
 author: "harini84"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Calendar
+# Create calendar
 
 Namespace: microsoft.graph
 
-Use this API to create a new calendar for a [user](../resources/user.md).
+Create a new calendar for a [user](../resources/user.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,15 +35,15 @@ POST /users/{id | userPrincipalName}/calendars
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
+In the request body, supply a JSON representation of a [calendar](../resources/calendar.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [calendar](../resources/calendar.md) object in the response body.
 
 ## Example
 ### Request
-Here is an example of the request.
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,9 +84,9 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 ### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
