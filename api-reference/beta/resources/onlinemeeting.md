@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/webhooks). See [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting) for more details.
 
 ## Methods
 

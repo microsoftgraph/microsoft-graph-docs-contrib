@@ -18,9 +18,10 @@ content := "I attached a reference to a file on OneDrive."
 body.SetContent(&content)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+name := "Personal pictures"
+	SetName(&name)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.referenceAttachment",
-		"name": "Personal pictures",
 		"sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
 		"providerType": "oneDriveConsumer",
 		"permission": "Edit",

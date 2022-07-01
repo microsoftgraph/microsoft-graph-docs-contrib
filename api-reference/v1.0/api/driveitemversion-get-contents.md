@@ -7,13 +7,14 @@ author: "JeremyKelley"
 doc_type: apiPageType
 ---
 
-# Download contents of a DriveItemVersion resource
+# Download contents of a driveItemVersion resource
 
 Namespace: microsoft.graph
 
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
 
 >**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
+
 
 ## Permissions
 
@@ -95,7 +96,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
-When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
+When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 
 <!-- {
   "type": "#page.annotation",

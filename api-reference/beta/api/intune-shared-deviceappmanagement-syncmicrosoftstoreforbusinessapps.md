@@ -1,7 +1,7 @@
 ---
 title: "syncMicrosoftStoreForBusinessApps action"
 description: "Syncs Intune account with Microsoft Store For Business"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
