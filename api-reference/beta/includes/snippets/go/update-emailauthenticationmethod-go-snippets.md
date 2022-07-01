@@ -11,12 +11,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"emailAddress": "kim@contoso.com",
 }
-options := &msgraphsdk.EmailAuthenticationMethodRequestBuilderPutOptions{
-	Body: requestBody,
-}
 userId := "user-id"
 emailAuthenticationMethodId := "emailAuthenticationMethod-id"
-graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(options)
+graphClient.UsersById(&userId).Authentication().EmailMethodsById(&emailAuthenticationMethodId).Put(requestBody)
 
 
 ```

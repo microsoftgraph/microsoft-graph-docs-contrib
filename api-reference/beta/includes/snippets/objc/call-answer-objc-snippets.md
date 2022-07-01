@@ -24,6 +24,10 @@ NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];
 [acceptedModalitiesList addObject: @"audio"];
 payloadDictionary[@"acceptedModalities"] = acceptedModalitiesList;
 
+MSGraphIncomingCallOptions *callOptions = [[MSGraphIncomingCallOptions alloc] init];
+[callOptions setIsContentSharingNotificationEnabled: true];
+payloadDictionary[@"callOptions"] = callOptions;
+
 int32_t participantCapacity = 200;
 payloadDictionary[@"participantCapacity"] = participantCapacity;
 

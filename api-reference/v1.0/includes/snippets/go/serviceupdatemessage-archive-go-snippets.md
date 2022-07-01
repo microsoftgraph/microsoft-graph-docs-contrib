@@ -12,10 +12,7 @@ requestBody.SetMessageIds( []String {
 	"MC172851",
 	"MC167983",
 }
-options := &msgraphsdk.ArchiveRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Archive().Post(options)
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Archive().Post(requestBody)
 
 
 ```

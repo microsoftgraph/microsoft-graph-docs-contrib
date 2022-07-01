@@ -47,10 +47,7 @@ address.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.educationSchool",
 }
-options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Education().Schools().Post(options)
+result, err := graphClient.Education().Schools().Post(requestBody)
 
 
 ```

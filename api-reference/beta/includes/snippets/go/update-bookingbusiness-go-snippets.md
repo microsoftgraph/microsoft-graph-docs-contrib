@@ -22,11 +22,8 @@ sendConfirmationsToOwner := true
 schedulingPolicy.SetSendConfirmationsToOwner(&sendConfirmationsToOwner)
 allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection)
-options := &msgraphsdk.BookingBusinessRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-graphClient.BookingBusinessesById(&bookingBusinessId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).Patch(requestBody)
 
 
 ```

@@ -31,13 +31,13 @@ To [create a subscription](webhooks.md#creating-a-subscription), specify the Out
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-Depending on the resource, the permission specified in the following table is the least privileged required to call this API.
+Depending on the resource, use the least privileged permission specified in the following table to call this API.
 
 | Resource| Supported Resource Paths| Delegated (work or school account)| Delegated (personal Microsoft account)| Application|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[contact](/graph/api/resources/contact) | Changes to all personal contacts in a user's mailbox: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Changes to contacts in a user's contactFolder:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 
 ### Include resource data in notification payload (preview)
 

@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetQueryParameters{
 	Expand: "roleDefinition",
 }
-options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 unifiedRoleAssignmentId := "unifiedRoleAssignment-id"
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).Get(options)
+result, err := graphClient.RoleManagement().Directory().RoleAssignmentsById(&unifiedRoleAssignmentId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

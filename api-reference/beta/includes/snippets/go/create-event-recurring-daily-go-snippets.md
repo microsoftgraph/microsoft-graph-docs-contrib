@@ -57,11 +57,10 @@ range.SetNumberOfOccurrences(&numberOfOccurrences)
 headers := map[string]string{
 	"Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.EventsRequestBuilderPostRequestConfiguration{
+	Headers: headers,
 }
-result, err := graphClient.Me().Events().Post(options)
+result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

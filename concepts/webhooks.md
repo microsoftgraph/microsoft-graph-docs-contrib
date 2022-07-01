@@ -46,7 +46,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Teams [presence][]
 - Teams [onlineMeeting][]
 - Teams [team][]
-- [todoTask][] (preview)
+- [To Do task][]
 - [user][]
 
 ### Sample scenarios
@@ -86,14 +86,6 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the **userPrincipalName** (UPN) in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use:
-
-`/users/{guid-user-id}/messages`
-
 A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
@@ -105,6 +97,22 @@ Each Teams resource has different subscription quotas.
 
 - For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **channels**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **chats**:
+  - Per app and chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+
+- For subscriptions to **teams**:
+  - Per app and team combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
+  
+- For subscriptions to **conversationMembers**:
+  - Per app and team combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
@@ -352,7 +360,7 @@ The following table lists the latency to expect between an event happening in th
 [list]: /graph/api/resources/list
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[To Do task]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

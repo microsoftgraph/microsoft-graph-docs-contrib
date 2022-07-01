@@ -16,10 +16,7 @@ resourceId := "943603e4-e787-4fe9-93d1-e30f749aae39"
 requestBody.SetResourceId(&resourceId)
 scope := "DelegatedPermissionGrant.ReadWrite.All"
 requestBody.SetScope(&scope)
-options := &msgraphsdk.Oauth2PermissionGrantsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Oauth2PermissionGrants().Post(options)
+result, err := graphClient.Oauth2PermissionGrants().Post(requestBody)
 
 
 ```

@@ -11,25 +11,7 @@ ms.custom: graphiamtop20
 
 To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has to access the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator to access the Microsoft Graph resources it needs.
 
-This article provides an overview of access tokens, the Microsoft identity platform, and how your app can get access tokens. If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [Next Steps](#next-steps) section.
-
-## Access tokens
-
-Access tokens that are issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
-
-The following example shows a Microsoft identity platform access token:
-
-```jwt
-EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
-
-To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTTP request. For example, the following call that returns the profile information of the signed-in user (the access token has been shortened for readability):
-
-```http
-GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
-Host: graph.microsoft.com
-Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
+This article provides an overview of the Microsoft identity platform, access tokens, and how your app can get access tokens.For more information about the Microsoft identity platform, see [What is the Microsoft identity platform?](/azure/active-directory/develop/v2-overview). If you know how to integrate an app with the Microsoft identity platform to get tokens, see information and samples specific to Microsoft Graph in the [Next Steps](#next-steps) section.
 
 ## Register your app with the Microsoft identity platform
 
@@ -87,7 +69,7 @@ Microsoft Graph has two types of permissions.
 ##### Comparison of delegated and application permissions
 
 
-| <!-- No header--> | Delegated permissions | Application permissions |
+| Item | Delegated permissions | Application permissions |
 |--|--|--|
 | App type scenarios | Web / Mobile / single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on-behalf of a user](../auth-v2-user.md) | [Get access as a service](../auth-v2-service.md) |
@@ -100,7 +82,28 @@ Microsoft Graph has two types of permissions.
 
 For a complete list of delegated and application permissions for Microsoft Graph, and which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
 
-## Getting an access token
+
+## Access tokens
+
+Access tokens that are issued by the Microsoft identity platform contain information (claims) that web APIs secured by the Microsoft identity platform, such as Microsoft Graph, use to validate the caller and to ensure that the caller has the proper permissions to perform the operation they're requesting. The caller should treat access tokens as opaque strings because the contents of the token are intended for the API only. When calling Microsoft Graph, always protect access tokens by transmitting them over a secure channel that uses transport layer security (TLS).
+
+The following example shows a Microsoft identity platform access token:
+
+```jwt
+EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+To call Microsoft Graph, you attach the access token as a Bearer token to the Authorization header in an HTTP request. For example, the following call that returns the profile information of the signed-in user (the access token has been shortened for readability):
+
+```http
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
+Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+Access tokens are a kind of [security tokens](/azure/active-directory/develop/security-tokens) provided by the Microsoft identity platform. They are short-lived but with variable default lifetimes. For more information about access tokens and how clients use access tokens, see [Access tokens](/azure/active-directory/develop/access-tokens#access-token-lifetime).
+
+### Get an access token
 
 Like most developers, you'll probably use authentication libraries to manage your token interactions with the Microsoft identity platform. Authentication libraries abstract many protocol details like validation, cookie handling, token caching, and maintaining secure connections, from the developer, and let you focus your development on your app's functionality. Microsoft publishes open-source client libraries and server middleware.
 
@@ -116,12 +119,7 @@ You don't need to use an authentication library to get an access token. To learn
 
 ## Next steps
 
-- For quick steps for getting an access token for apps that call Microsoft Graph, choose the type of app that matches your scenario:
-  - [Desktop app](/azure/active-directory/develop/scenario-desktop-overview)
-  - [Mobile app](/azure/active-directory/develop/scenario-mobile-overview)
-  - [Web app](/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [Single page app](/azure/active-directory/develop/scenario-spa-overview)
-  - [Daemon / background service](/azure/active-directory/develop/scenario-daemon-overview)
+- To get started with authentication and authorizing your app to access resources, see [Getting started: choose an application scenario](/azure/active-directory/develop/v2-overview#getting-started).
 - To see the permissions that you can use with Microsoft Graph, see [Permissions](../permissions-reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](../auth-cloudsolutionprovider.md).
 

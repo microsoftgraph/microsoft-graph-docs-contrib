@@ -28,10 +28,7 @@ originId := "https://contoso-admin.sharepoint.com/"
 accessPackageResourceEnvironment.SetOriginId(&originId)
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

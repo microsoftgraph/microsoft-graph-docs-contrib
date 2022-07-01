@@ -20,25 +20,24 @@ content := "The group represents Nevada."
 body.SetContent(&content)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "AlexW@contoso.OnMicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 message.SetInternetMessageHeaders( []InternetMessageHeader {
 	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-name",
-		"value": "Nevada",
-	}
+name := "x-custom-header-group-name"
+	SetName(&name)
+value := "Nevada"
+	SetValue(&value)
 	msgraphsdk.NewInternetMessageHeader(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "x-custom-header-group-id",
-		"value": "NV001",
-	}
+name := "x-custom-header-group-id"
+	SetName(&name)
+value := "NV001"
+	SetValue(&value)
 }
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

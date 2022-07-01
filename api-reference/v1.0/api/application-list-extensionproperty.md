@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
+Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
 
 ## Permissions
 

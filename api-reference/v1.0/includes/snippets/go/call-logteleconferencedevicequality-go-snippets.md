@@ -100,10 +100,7 @@ quality.SetMediaQualityList( []TeleconferenceDeviceMediaQuality {
 quality.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.teleconferenceDeviceQuality",
 }
-options := &msgraphsdk.LogTeleconferenceDeviceQualityRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(options)
+graphClient.Communications().Calls().LogTeleconferenceDeviceQuality().Post(requestBody)
 
 
 ```

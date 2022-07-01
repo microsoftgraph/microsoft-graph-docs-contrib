@@ -4,7 +4,7 @@ ms.date: 09/12/2017
 title: ColumnLink
 ms.localizationpriority: medium
 description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 # ColumnLink resource type

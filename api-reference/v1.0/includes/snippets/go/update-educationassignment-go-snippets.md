@@ -20,12 +20,9 @@ dueDateTime, err := time.Parse(time.RFC3339, "2021-09-10T00:00:00Z")
 requestBody.SetDueDateTime(&dueDateTime)
 addedStudentAction := "none"
 requestBody.SetAddedStudentAction(&addedStudentAction)
-options := &msgraphsdk.EducationAssignmentRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(options)
+graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Patch(requestBody)
 
 
 ```

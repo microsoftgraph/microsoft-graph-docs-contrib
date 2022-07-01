@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+| Application                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## HTTP request
 
@@ -55,7 +55,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,6 +118,7 @@ Content-type: application/json
       "name": "Contoso HR",
       "description": "Connection to index Contoso HR system",
       "state": "ready",
+      "ingestedItemsCount": 700000,
       "configuration": {
         "authorizedAppIds": [
           "d310d35d-72ec-47dd-92f2-fb9c40936555"
@@ -128,6 +130,7 @@ Content-type: application/json
       "name": "Contoso Finance",
       "description": "Connection to index Contoso Finance system",
       "state": "ready",
+      "ingestedItemsCount": 700000,
       "configuration": {
         "authorizedAppIds": [
           "fbdc7d4e-07f4-4143-8258-e5a2fcebeadb"

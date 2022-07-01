@@ -24,11 +24,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 		"22770e3f-b9b4-418e-9dea-d0e3d2f275dd",
 	}
 }
-options := &msgraphsdk.SettingsRequestBuilderPutOptions{
-	Body: requestBody,
-}
 privilegedRoleId := "privilegedRole-id"
-graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(options)
+graphClient.PrivilegedRolesById(&privilegedRoleId).Settings().Put(requestBody)
 
 
 ```

@@ -14,12 +14,9 @@ state := "completed"
 status.SetState(&state)
 description := "completed"
 status.SetDescription(&description)
-options := &msgraphsdk.PrintTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 printTaskDefinitionId := "printTaskDefinition-id"
 printTaskId := "printTask-id"
-graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(options)
+graphClient.Print().TaskDefinitionsById(&printTaskDefinitionId).TasksById(&printTaskId).Patch(requestBody)
 
 
 ```

@@ -20,11 +20,8 @@ mediaConfig.SetAdditionalData(map[string]interface{}{
 	"preFetchMedia":  []Object {
 	}
 }
-options := &msgraphsdk.AnswerRequestBuilderPostOptions{
-	Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Answer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Answer(call-id).Post(requestBody)
 
 
 ```
