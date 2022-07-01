@@ -6510,6 +6510,8 @@ items:
         items:
         - name: Get site
           href: api/site-get.md
+        - name: List sites
+          href: api/site-list.md
         - name: Get lists
           href: api/list-list.md
         - name: Get item analytics
