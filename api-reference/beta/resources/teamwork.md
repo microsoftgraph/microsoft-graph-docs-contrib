@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See Also
+## See also
 
 - [userTeamwork resource](userteamwork.md)
 
