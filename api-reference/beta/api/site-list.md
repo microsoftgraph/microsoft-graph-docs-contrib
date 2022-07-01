@@ -1,6 +1,6 @@
 ---
 title: "Enumerate sites"
-description: "List all available [sites][] in an organization or list the [sites][] that match the provided filter criteria and query options."
+description: "List all available sites in an organization or list the sites that match the provided filter criteria and query options."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -21,12 +21,12 @@ Specific filter criteria and query options are also supported and described belo
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
-In addition, you may use a **[$search][]** query against the '/sites' collection to find sites matching given keywords.
+In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
 
-For more guidance about building applications that use site discovery for scanning purposes, see https://aka.ms/scanguidance.
+For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
 
 ## Permissions
 
@@ -59,7 +59,7 @@ GET /sites?$filter=siteCollection/root ne null
 
 ## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 ---
 
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -131,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-#### Request
+### Request
 
 <!-- { "blockType": "request", "name": "list-sites", "scopes": "sites.read.all" } -->
 
@@ -139,7 +139,7 @@ Content-type: application/json
 GET /sites
 ```
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
