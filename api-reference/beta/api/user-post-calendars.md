@@ -1,5 +1,5 @@
 ---
-title: "Create Calendar"
+title: "Create calendar"
 description: "Create a new calendar for a user."
 author: "harini84"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Calendar
+# Create calendar
 
 Namespace: microsoft.graph
 
