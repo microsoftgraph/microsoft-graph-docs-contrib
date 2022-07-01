@@ -62,11 +62,11 @@ Content-type: application/json
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
