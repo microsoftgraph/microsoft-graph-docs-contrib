@@ -12243,7 +12243,7 @@ items:
               href: api/authenticationcontextclassreference-get.md
             - name: Update
               href: api/authenticationcontextclassreference-update.md
-        - name: Cross-tenant access (preview)
+        - name: Cross-tenant access
           items:
           - name: Overview
             displayName: Cross-tenant access settings, XTAP

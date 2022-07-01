@@ -5138,7 +5138,6 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
-                - name: Cross-tenant access (preview)
         - name: Cross-tenant access
           items:
           - name: Overview
