@@ -1,13 +1,13 @@
 ---
-title: "Enumerate sites"
-description: "List all available [sites][] in an organization or list the [sites][] that match the provided filter criteria and query options."
+title: "List sites"
+description: "List all available sites in an organization or list the sites that match the provided filter criteria and query options."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 author: "JeremyKelley"
 ---
 
-# Enumerate sites
+# List sites
 
 Namespace: microsoft.graph
 
@@ -19,12 +19,12 @@ Specific filter criteria and query options are also supported and described belo
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
-In addition, you may use a **[$search][]** query against the '/sites' collection to find sites matching given keywords.
+In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
 
 [$search]: site-search.md
 [sites]: ../resources/site.md
 
-For more guidance about building applications that use site discovery for scanning purposes, see https://aka.ms/scanguidance.
+For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
 
 ## Permissions
 
@@ -57,7 +57,7 @@ GET /sites?$filter=siteCollection/root ne null
 
 ## Example
 
-#### Request
+### Request
 
 
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +66,7 @@ GET /sites?$filter=siteCollection/root ne null
 GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -102,7 +102,7 @@ Content-type: application/json
 }
 ```
 
-#### Request
+### Request
 
 <!-- { "blockType": "ignored" } -->
 
@@ -110,7 +110,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/sites
 ```
 
-#### Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
