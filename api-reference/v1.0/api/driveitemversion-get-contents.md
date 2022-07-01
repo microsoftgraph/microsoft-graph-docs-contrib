@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
 
+>**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +52,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 
 # [HTTP](#tab/http)
