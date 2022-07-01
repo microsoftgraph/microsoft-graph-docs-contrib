@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph connectors overview"
-description: "Microsoft Graph connectors bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 intelligent experiences."
+description: "Use Microsoft Graph connectors to bring content from external services into Microsoft Graph, enabling external data to power Microsoft 365 intelligent experiences."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType

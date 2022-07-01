@@ -853,6 +853,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+
 ## Education permissions
 
 #### Delegated permissions
@@ -978,8 +979,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups.<br/><br/>**Note:** Not all group APIs support access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user.<br/><br/>**Note:** Not all group APIs support access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
+| _Group.Read.All_ | Read all groups | Allows the app to read group properties and memberships, and read conversations for all groups, without a signed-in user. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read all group properties and memberships, update group properties and memberships, and delete groups. Also allows the app to read and write conversations. All of these operations can be performed by the app without a signed-in user.| Yes |
 | _Group.Selected_ |    Access selected groups | **Note: This permission is exposed in the Azure portal for a feature that is not  available for general use. Do not use this permission as it is subject to change.** | Yes |
 | _GroupMember.Read.All_ |    Read group memberships | Allows the app to read memberships and basic group properties for all groups without a signed-in user. | Yes |
 | _GroupMember.ReadWrite.All_ |    Read and write group memberships | Allows the app to list groups, read basic properties, read and update the membership of the groups without a signed-in user. Group properties and owners cannot be updated and groups cannot be deleted. | Yes |
@@ -1722,6 +1723,32 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 _ProgramControl.Read.All_ and _ProgramControl.ReadWrite.All_ are valid only for work or school accounts.
 
 For an app with delegated permissions to read programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write programs and program controls, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.  For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+---
+## Records management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |Read data from Microsoft Purview Records Management. |Allows the application to read any data from Microsoft Purview Records Management solution such as label names, event names and event type names on behalf of the signed-in user. |Yes | 
+|_RecordsManagement.ReadWrite.All_ | Read and write any data from Microsoft Purview Records Management. |Allow the application to create, update and delete any data from Microsoft Purview Records Management solution such as labels, events and event types on behalf of the signed-in user. |Yes |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |Read data from Microsoft Purview Records Management. |Allows the application to read any data from Microsoft Purview Records Management solution such as label names, event names and event type names on behalf of the signed-in user. |Yes | 
+|_RecordsManagement.ReadWrite.All_ | Read and write any data from Microsoft Purview Records Management. |Allow the application to create, update and delete any data from Microsoft Purview Records Management solution such as labels, events and event types on behalf of the signed-in user. |Yes |
+
+### Example usage
+
+#### Delegated
+
+* _RecordsManagement.Read.All_: Get the list of labels available to the user from Microsoft Purview Records maangement (`GET /security/labels/retentionLabels`)
+* _RecordsManagement.ReadWrite.All_: Create a label in Microsoft Purview Records managment (`POST /security/labels/retentionLabels/`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
 
