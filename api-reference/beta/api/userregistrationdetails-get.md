@@ -106,6 +106,7 @@ Content-Type: application/json
     "id": "86462606-fde0-4fc4-9e0c-a20eb73e54c6",
     "userPrincipalName": "AlexW@Contoso.com",
     "userDisplayName": "Alex Wilber",
+    "isAdmin": false,
     "isSsprRegistered": false,
     "isSsprEnabled": false,
     "isSsprCapable": false,
@@ -116,7 +117,8 @@ Content-Type: application/json
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
     ],
-    "defaultMfaMethod": "microsoftAuthenticatorPush"
+    "defaultMfaMethod": "microsoftAuthenticatorPush",
+    "userType": "member"
   }
 }
 ```
