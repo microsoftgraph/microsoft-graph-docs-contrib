@@ -19,10 +19,10 @@ Represents the result of a review after the threat submission is processed by Mi
 | Property           | Type                               | Description                                                             |
 |:-------------------|:-----------------------------------|:------------------------------------------------------------------------|
 | category           | submissionResultCategory           | The submission result category. The possible values are: `notJunk`, `spam`, `phishing`, `malware`, `allowedByPolicy`, `blockedByPolicy`, `spoof`, `unknown`, `noResultAvailable` and `unkownFutureValue`. |
-| detail             | [submissionResultDetail](#submissionresultdetail-values)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
+| detail             | [security.submissionResultDetail](#submissionresultdetail-values)             | Specifies the additional details provided by Microsoft to substantiate their analysis result. |
 | detectedFiles      | Collection([security.submissionDetectedFile](../resources/security-submissiondetectedfile.md)) | Specifies the files detected by Microsoft in the submitted emails|
 | detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
-| userMailboxSetting | [userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma separated string. |
+| userMailboxSetting | [security.userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma separated string. |
 
 ### userMailBoxSetting values
 | Member  | Description |
