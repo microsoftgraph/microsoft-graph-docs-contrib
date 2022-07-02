@@ -113,7 +113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "synchronizationLinkedObjects",
           "ChangeType": "Addition",
-          "Description": "Added the [synchronizationLinkedObjects](https://docs.microsoft.com/en-us/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta) resource type.",
+          "Description": "Added the [synchronizationLinkedObjects](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-beta) resource type.",
           "Target": "synchronizationLinkedObjects"
         }
       ],

@@ -178,7 +178,6 @@ Additionally, because this review is applied on all teams, configure the **insta
 
 This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
-
 ---
 
 ### Example 7: Review all assignment to Entitlement Management access packages
