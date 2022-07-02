@@ -49,7 +49,7 @@ Subscribe to change notifications for the following in Teams:
 ## June 2022: New in preview only
 
 ### Applications
-Specify [linked objects](graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta) that can be [provisioned during on-demand provisioning](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta), including  principals like manager, members, and owners.
+Specify [linked objects](graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true) that can be [provisioned during on-demand provisioning](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), including  principals like manager, members, and owners.
 
 ### Compliance | eDiscovery
 Access the [eDiscovery API](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) from the [security](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) namespace going forward, instead of the compliance namespace.
@@ -76,7 +76,7 @@ Get the following information for a Cloud PC [provisioning policy](/graph/api/re
 - [Create](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) a [feedback document](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) for a [submission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) in the feedback folder associated with the assignment.
 
 ### Groups
-Specify if a [group](/graph/api/resources/group?view=graph-rest-beta) is [configured to write back](/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta) group object properties to on-premise Active Directory.
+Specify if a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) is [configured to write back](/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta&preserve-view=true) group object properties to on-premise Active Directory.
 
 ### Identity and access | Directory management
 - [Promote](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) a verified subdomain to the root domain.
@@ -86,7 +86,7 @@ Specify if a [group](/graph/api/resources/group?view=graph-rest-beta) is [config
 Hide self-service password reset (SSPR) links in the [login page text visibility settings](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) for a tenant's sign-in page.
 
 ### Compliance | Records management
-Use the debut [Microsoft Purview records management API](graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta) to help organizations manage the retention and deletion of data to meet legal obligations and compliance regulations.
+Use the debut [Microsoft Purview records management API](graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true) to help organizations manage the retention and deletion of data to meet legal obligations and compliance regulations.
 
 ### Teamwork
 Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) or [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
