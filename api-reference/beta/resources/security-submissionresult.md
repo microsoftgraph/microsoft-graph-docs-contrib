@@ -24,7 +24,7 @@ Represents the result of a review after the threat submission is processed by Mi
 | detectedUrls       | Collection(String)                 | Specifes the URLs detected by Microsoft in the submitted email.|
 | userMailboxSetting | [security.userMailboxSetting](#usermailboxsetting-values) | Specifies the setting for user mailbox denoted by a comma separated string. |
 
-### userMailBoxSetting values
+### userMailboxSetting values
 | Member  | Description |
 | :----------------- | :------------------------------------ |
 | none | no user mailbox setting related with this threat submission. |
