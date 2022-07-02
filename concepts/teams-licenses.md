@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 This article describes the licensing and payment requirements for the Microsoft Teams API in Microsoft Graph.
 
-Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model.The following APIs have consumption charges:
+Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
 
 * [Export Teams content](/graph/api/export-teams-content.md)
 * [Create subscription](/graph/api/subscription-post-subscriptions.md)
@@ -28,7 +28,8 @@ There are no licensing requirements for `model=B`.
 
 - [Evaluation mode (default)](#evaluation-mode-default-requirements) enables access to APIs with limited usage per requesting application for evaluation purposes. Change notifications are not sent if the limit is exceeded.
 
-**Note:** Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. See [recent updates](#recent-updates-and-price-for-additional-use) for more details.
+> [!NOTE]
+> Starting July 5 2022, pricing events for these APIs reach general availability. We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az) to provide an active Azure subscription for billing purposes. For details, see [recent updates](#recent-updates-and-price-for-additional-use).
 
 ## `model=A` requirements
 
@@ -106,8 +107,8 @@ in excess of the seeded capacity will fail.
 |Evaluation capacity exceeded|402 (Payment Required)|`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
 
 
-> **Note**: A successful API call does not mean that the proper licensing is in place. 
-> Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity.
+> [!NOTE]
+> A successful API call does not mean that the proper licensing is in place. Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity.
 
 ## Seeded capacity
 
@@ -117,7 +118,6 @@ The seeded capacity differs by API; see [`model=A` requirements](#modela-require
 
 ## Recent updates and price for additional use
 
-In October 2021 we [comunicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs, on July 5th 2022 these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your application(s) are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. Once the [form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing. 
+In October 2021 we [communicated](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) upcoming charges for the consumption of these APIs; on July 5th 2022, these prices take effect as  [previously announced](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). If your applications are or will be calling any of these APIs, we require you to complete this [request form](https://aka.ms/teamsgraph/protectedApis_az) providing an active Azure subscription. When the [form](https://aka.ms/teamsgraph/protectedApis_az) has been submitted to register an application, you can continue using these APIs. We will follow up with next steps to onboard your application to billing. 
 
-Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For
-multitenant apps may be different from the organization that runs the app.
+Please note that the organization that owns the app registration is responsible for the payment and the Azure subscription should also be active in the same tenant. For multitenant apps, the organization might be different than the organization that runs the app.
