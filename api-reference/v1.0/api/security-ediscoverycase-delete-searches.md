@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoverySearch"
-description: "Deletes an ediscoverySearch object."
+description: "Delete an ediscoverySearch object."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
