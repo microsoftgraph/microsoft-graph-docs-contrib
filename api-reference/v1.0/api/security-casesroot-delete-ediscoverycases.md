@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 
 
-Deletes an [ediscoveryCase](../resources/security-ediscoverycase.md) object.
+Delete an [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +60,7 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/eDiscoverycases/22aa2acd-
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
