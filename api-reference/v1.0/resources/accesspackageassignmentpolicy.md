@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
   "allowedTargetScope": "String",
   "specificAllowedTargets": [
     {
-      "@odata.type": "microsoft.graph.singleUser | microsoft.graph.attributeRuleMember"
+      "@odata.type": "microsoft.graph.singleUser"
     }
   ],
   "expiration": {
