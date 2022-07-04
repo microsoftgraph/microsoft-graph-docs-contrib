@@ -1,6 +1,6 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph."
+description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 ---
@@ -17,7 +17,7 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ### Some limitations apply to the application and servicePrincipal resources
 
-Changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resources are currently in development. The following is a summary of current limitations and in-development API features.
+Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
@@ -52,7 +52,8 @@ We are working to fix this issue as soon as possible, so that pre-consent will w
 
 In the meantime, to unblock development and testing, you can use the following workaround.
 
->**Note:** This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
+> [!NOTE]
+> This is not a permanent solution and is only intended to unblock development. This workaround will not be required after the issue is fixed. This workaround does not need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your `customer` tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
