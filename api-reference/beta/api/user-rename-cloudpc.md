@@ -61,21 +61,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "rename_cloudpc"
-}
--->
-
-``` http
-POST https://graph.microsoft.com/beta/me/cloudPCs/c2bbb5dd-2574-451b-a508-bbaa6ac48ace/rename
-Content-Type: application/json
-
-{
-  displayName: "Cloud PC-HR"
-}
-```
 
 ### Response
 
