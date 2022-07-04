@@ -3,7 +3,7 @@
         {
             "ChangeList": [
                 {
-                    "Id": "41b177c3-11d9-4b00-b39a-91f593cdfd09",
+                    "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Addition",
@@ -11,7 +11,7 @@
                     "Target": "user"
                 },
                 {
-                    "Id": "dba23d86-2f27-487e-bbc1-38fc12c572ed",
+                    "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
                     "ApiChange": "Method",
                     "ChangedApiName": "reboot",
                     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
                     "Target": "cloudPC"
                 },
                 {
-                    "Id": "f2bbe63b-a21a-48ed-9c26-b53b01281e80",
+                    "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
                     "ApiChange": "Method",
                     "ChangedApiName": "rename",
                     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
                     "Target": "cloudPC"
                 },
                 {
-                    "Id": "b0a01912-3a49-4d67-925f-7f39da65d8d5",
+                    "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
                     "ApiChange": "Method",
                     "ChangedApiName": "reprovision",
                     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
                     "Target": "cloudPC"
                 },
                 {
-                    "Id": "5f7c0650-0ff0-4aef-8121-069683ed351a",
+                    "Id": "02d01ff0-4622-4e8c-b363-caa0fa50ec64",
                     "ApiChange": "Method",
                     "ChangedApiName": "troubleshoot",
                     "ChangeType": "Addition",
