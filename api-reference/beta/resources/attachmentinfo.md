@@ -18,7 +18,7 @@ Represents the attributes of an attachment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attachmentType|attachmentType|The type of the attachment. The possible values are: `file`, `item`, `reference`.|
+|attachmentType|attachmentType|The type of the attachment. The possible values are: `file`, `item`, `reference`. Required.|
 |contentType|String|The nature of the data in the attachment. Optional.|
 |name|String|The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.|
 |size|Int64|The length of the attachment in bytes. Required.|

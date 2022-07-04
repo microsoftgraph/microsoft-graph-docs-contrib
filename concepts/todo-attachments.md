@@ -1,6 +1,6 @@
 ---
 title: "Attach large files to a To Do task"
-description: "Depending on the size of the file, you can choose one of two ways to attach a file to a task"
+description: "Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task."
 author: "avijityadav"
 ms.localizationpriority: high
 ms.prod: "outlook"
@@ -8,14 +8,13 @@ ms.prod: "outlook"
 
 # Attach large files to a To Do task
 
-Using the Microsoft Graph API, you can attach files up to 25 MB to a [todoTask](/graph/api/resources/todotask). 
-Depending on the file size, choose one of two ways to attach the file:
+Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task. 
 
+Using the To Do API in Microsoft Graph, you can attach files up to 25 MB to a [todoTask](/graph/api/resources/todotask). Depending on the file size, choose one of two ways to attach the file:
 - For attaching files of any size, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
 - If the file size is under 3 MB, do a single `POST` on the **attachments** navigation property of a **todoTask**; see how to do this [for a task](/graph/api/todotask-post-attachments). The successful `POST` response includes the ID of the file attachment.
 
-This article illustrates the first approach step by step, creating and using an upload session to add a file attachment to a task.
-
+This article illustrates the first approach. You will learn step-by-step how to create and use an upload session to add a file attachment to a task.
 ## Step 1: Create an upload session
 
 [Create an upload session](/graph/api/taskfileattachment-createuploadsession) to attach a file to a **todoTask**. Specify the file in the input parameter [attachmentInfo](/graph/api/resources/attachmentinfo).
@@ -25,7 +24,13 @@ A successful operation returns `HTTP 201 Created` and a new [uploadSession](/gra
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates that the initial upload starting location should be byte `0`.
 
 ### Permissions
-Make sure to request `Tasks.ReadWrite` permission to create the **uploadSession** for a task.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported.|
 
 ### Example: create an upload session for a todoTask
 
@@ -85,7 +90,7 @@ Specify the request headers and the request body as described in the following s
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-|Authorization | Bearer {token}. | `Authorization` request header is required for this request. |
+|Authorization | String | Bearer {token}. Required. |
 | Content-Length | Int32 | The number of bytes being uploaded in this operation. The upper limit of the number of bytes for each `PUT` operation is 4 MB. The request will fail for anything higher than 4 MB. Required. |
 | Content-Range | String | The 0-based byte range of the file being uploaded in this operation, expressed in the format `bytes {start}-{end}/{total}`. Required. |
 | Content-Type | String  | The MIME type. Specify `application/octet-stream`. Required. |

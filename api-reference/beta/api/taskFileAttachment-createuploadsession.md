@@ -1,6 +1,6 @@
 ---
 title: "taskFileAttachment: createUploadSession"
-description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified todoTask."
+description: "Create an upload session to iteratively upload ranges of a file as an attachment to a Microsoft To Do task."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to a [todoTask](../resources/todotask.md).
+Create an upload session to iteratively upload ranges of a file as an attachment to a Microsoft [To Do task](../resources/todotask.md).
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. The request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed, in case the network connection is dropped during the upload.
 
-The following are the steps to attach a file to an Outlook item using an upload session:
+The following are the steps to attach a file to a Microsoft To Do task using an upload session:
 
 1. Create an upload session.
 2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the **todoTask**.
