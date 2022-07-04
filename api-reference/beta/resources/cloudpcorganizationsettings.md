@@ -28,6 +28,7 @@ Represents the Cloud PC organization settings for a tenant. A tenant has only on
 |osVersion|[cloudPcOperatingSystem](#cloudpcoperatingsystem-values)|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`.|
 |userAccountType|[cloudPcUserAccountType](#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Represents the Cloud PC organization settings for a tenant. A tenant has only one **cloudPcOrganizationSettings** object. The default language value `en-US`.|
+|enableMEMAutoEnroll|Boolean|Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is `false`.|
 
 ### cloudPcOperatingSystem values
 
@@ -65,6 +66,7 @@ The following is a JSON representation of the resource.
   "userAccountType": "String",
   "windowsSettings": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
-  }
+  },
+  "enableMEMAutoEnroll": "Boolean"
 }
 ```

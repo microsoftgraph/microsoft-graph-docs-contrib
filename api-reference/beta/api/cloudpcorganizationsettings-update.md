@@ -48,6 +48,7 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 |osVersion|cloudPcOperatingSystem|The version of the operating system (OS) to provision on Cloud PCs. The possible values are: `windows10`, `windows11`, `unknownFutureValue`. Optional.|
 |userAccountType|cloudPcUserAccountType|The account type of the user on provisioned Cloud PCs. The possible values are: `standardUser`, `administrator`, `unknownFutureValue`. Optional.|
 |windowsSettings|cloudPcWindowsSettings|The settings to apply to Windows while creating Cloud PCs for this organization. The default language value is `en-US`.|
+|enableMEMAutoEnroll|Boolean|Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is `false`. Optional.|
 
 
 ## Response
@@ -73,6 +74,7 @@ Content-length: 127
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "userAccountType": "standardUser",
   "osVersion": "windows11",
+  "enableMEMAutoEnroll": true,
   "windowsSettings": {
     "language": "en-US"
   }
