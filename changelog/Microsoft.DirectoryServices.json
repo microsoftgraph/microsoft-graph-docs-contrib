@@ -105,7 +105,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "links",
           "ChangeType": "Addition",
-          "Description": "Added the **links** property to the [synchronizationJobSubject](https://docs.microsoft.com/en-us/graph/api/resources/synchronizationJobSubject?view=graph-rest-beta) resource.",
+          "Description": "Added the **links** property to the [synchronizationJobSubject](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationjobsubject?view=graph-rest-beta) resource.",
           "Target": "synchronizationJobSubject"
         },
         {
@@ -113,7 +113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "synchronizationLinkedObjects",
           "ChangeType": "Addition",
-          "Description": "Added the [synchronizationLinkedObjects](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-beta) resource type.",
+          "Description": "Added the [synchronizationLinkedObjects](https://docs.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationlinkedobjects?view=graph-rest-beta) resource type.",
           "Target": "synchronizationLinkedObjects"
         }
       ],
