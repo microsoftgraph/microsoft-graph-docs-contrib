@@ -88,8 +88,8 @@ This resource supports:
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
 | **Groups** |||
 | [List joinedTeams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
-| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property. |
-| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
+| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
+| [List transitiveMemberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Insights** |||
 | [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Calculated insight that returns the list of items trending around the user. |
@@ -345,6 +345,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+|transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
 |transitiveReports|[directoryObject](directoryobject.md) collection | The transitive reports for a user. Read-only.|
 |usageRights|[usageRight](usageright.md) collection|Represents the usage rights a user has been granted. |
 
