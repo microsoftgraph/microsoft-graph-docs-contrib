@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentSession",
           "ChangeType": "Addition",
-          "Description": "Added the **attachmentSession** resource",
+          "Description": "Added the [attachmentSession](https://docs.microsoft.com/en-us/graph/api/resources/attachmentsession?view=graph-rest-beta) resource type.",
           "Target": "attachmentSession"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentBase",
           "ChangeType": "Addition",
-          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource",
+          "Description": "Added the [attachmentBase](https://docs.microsoft.com/en-us/graph/api/resources/attachmentbase?view=graph-rest-beta) resource type.",
           "Target": "attachmentBase"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "taskFileAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource",
+          "Description": "Added the [taskFileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/taskfileattachment?view=graph-rest-beta) resource and supported methods.",
           "Target": "taskFileAttachment"
         },
         {
@@ -44,7 +44,7 @@
         },
         {
           "Id": "3f64c8a4-e014-460e-9a90-117c9817cd06",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "attachments",
           "ChangeType": "Addition",
           "Description": "Added the **attachments** relationship to the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta) resource.",

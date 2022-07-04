@@ -1,12 +1,12 @@
 ---
-title: "Attach large files to a To Do task"
+title: "Attach files to a To Do task"
 description: "Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task."
 author: "avijityadav"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Attach large files to a To Do task
+# Attach files to a To Do task
 
 Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task. 
 
