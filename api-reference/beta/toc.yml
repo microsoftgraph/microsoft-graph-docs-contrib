@@ -384,19 +384,19 @@ items:
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
-        - name: List cloudPCs
+        - name: List CloudPCs
           href: api/user-list-cloudpcs.md
-        - name: Get
+        - name: Get a CloudPC
           href: api/user-get-cloudpc.md
         - name: Get launch info
           href: api/cloudpc-getcloudpclaunchinfo.md
-        - name: Reboot
+        - name: Reboot a CloudPC
           href: api/user-reboot-cloudpc.md
-        - name: Rename
+        - name: Rename a CloudPC
           href: api/user-rename-cloudpc.md
-        - name: Reprovision
+        - name: Reprovision a CloudPC
           href: api/user-reprovision-cloudpc.md
-        - name: Troubleshoot
+        - name: Troubleshoot a CloudPC
           href: api/user-troubleshoot-cloudpc.md
       - name: Contacts
         items:
