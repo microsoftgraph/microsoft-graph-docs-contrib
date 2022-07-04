@@ -54,6 +54,18 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "troubleshoot_cloudpc"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/me/cloudPCs/ff4eb6ab-d56a-4edf-90c1-baaec8dd6032/troubleshoot
+```
+
 ### Response
 
 <!-- {
