@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot a specific Cloud PC for user"
-description: "Troubleshoot a specific Cloud PC device attributed to the signed-in user. Use this API to check the health status of the Cloud PC and the session host."
+description: "Troubleshoot a specific Cloud PC device attributed to the signed-in user. Use this API to check the health status of the Cloud PC."
 author: "xinliu22"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
+| Delegated (work or school account)     | CloudPC.ReadWrite.All                       |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
