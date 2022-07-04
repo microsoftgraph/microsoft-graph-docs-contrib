@@ -1,6 +1,6 @@
 ---
 title: "virtualAppointmentUser resource type"
-description: "Contains information about virtual appointment users"
+description: "Represents information about a client user in a virtual appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Type to represent a client user in a virtual appointment.
+Represents information about a client user in a virtual appointment.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the user participating in a virtual appointment. Optional|
-|emailAddress|String|Email address of the user participating in a virtual appointment. Optional|
-|smsCapablePhoneNumber|String|Phone number for sending SMS texts for user participating in a virtual appointment. Optional|
+|displayName|String|The display name of the user participating in a virtual appointment. Optional|
+|emailAddress|String|The email address of the user participating in a virtual appointment. Optional|
+|smsCapablePhoneNumber|String|The phone number for sending SMS texts for the user participating in a virtual appointment. Optional|
 
 ## Relationships
 None.
