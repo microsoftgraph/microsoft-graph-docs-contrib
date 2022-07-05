@@ -85,7 +85,7 @@ Content-Type: application/json
         "user": {
           "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
           "displayName": "Joe Smith"
-        }
+        },
         "application": null
       },
       "lastModifiedDateTime": "2016-03-21T20:01:37Z",
@@ -94,7 +94,7 @@ Content-Type: application/json
         "user": {
           "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
           "displayName": "Joe Smith"
-        }
+        },
         "application": null
       },
       "publishedDateTime": "2016-03-21T20:01:37Z",

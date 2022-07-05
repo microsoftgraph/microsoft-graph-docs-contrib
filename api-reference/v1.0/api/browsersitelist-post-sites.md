@@ -77,7 +77,7 @@ Content-length: 387
     "@odata.type": "#microsoft.graph.browserSite",
     "webUrl": "www.microsoft.com",
     "targetEnvironment": "InternetExplorer11",
-    "comment": "A site that opens in InternetExplorer11"
+    "comment": "A site that opens in InternetExplorer11",
     "mergeType": "default",
     "compatibilityMode": "default",
     "allowRedirect": true

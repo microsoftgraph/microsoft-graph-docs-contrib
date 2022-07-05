@@ -89,7 +89,7 @@ Content-Type: application/json
         "user": {
             "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
             "displayName": "Joe Smith"
-        }
+        },
         "application": null
     },
     "history": [
@@ -104,7 +104,7 @@ Content-Type: application/json
                 "user": {
                     "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
                     "displayName": "Joe Smith"
-                }
+                },
                 "application": null
             },
         }
