@@ -1,23 +1,20 @@
 ---
-title: "Get system messages for Microsoft Teams using Microsoft Graph APIs"
-description: "Learn how Microsoft Teams generates system messages for events using Microsoft Graph APIs."
+title: "Get system messages for Microsoft Teams"
+description: "Microsoft Teams generates system message events using Microsoft Graph APIs. Learn about supported GET operations, change notifications, and system message events."
 author: "RamjotSingh"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get system messages for Microsoft Teams using Microsoft Graph APIs
+# Get system messages for Microsoft Teams
 
-Microsoft Teams generates system messages for events such as members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
+Microsoft Teams generates system messages for events by using the Microsoft Graph API. Events include members added to a chat, team name updated, and channel description updated. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat.
 
+Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
-Microsoft Graph exposes system messages as part of [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) GET operations and [Change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
-
-
-System messages are presented as [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) objects.
+System messages are presented as [chatMessage](/graph/api/resources/chatMessage) objects.
 In this case, the **messageType** property is set to `systemEventMessage` and the **eventDetail** property provides the event details.
-
 
 ## Supported GET operations
 
@@ -28,7 +25,7 @@ The following GET operations support system messages:
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-For details, see [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
+For details, see [chatMessage](/graph/api/resources/chatMessage).
 
 ## Supported change notifications
 
@@ -75,8 +72,8 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Teams app upgraded | [teamsAppUpgradedEventMessageDetail](#teams-app-upgraded) | Chat, Channel, Team |
 | Team unarchived | [teamUnarchivedEventMessageDetail](#team-unarchived) | Team |
 
-
-> **Note:** System messages applicable to a team are posted in the primary channel.
+> [!NOTE]
+> System messages applicable to a team are posted in the primary channel.
 
 
 ## JSON response examples
@@ -1566,3 +1563,7 @@ The following JSON examples show the responses for each supported event type.
   }
 }
 ```
+
+## See also
+
+- [Microsoft Teams API overview](/graph/teams-concept-overview)

@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Attach large files
             href: outlook-large-attachments.md
-          - name: Immutable ID
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
@@ -145,24 +145,26 @@ items:
             displayName: cloud communications
           - name: Get started
             href: cloud-communications-get-started.md
-          - name: Calls
+          - name: Supported call types
             href: cloud-communications-calls.md
-          - name: Media
+          - name: Call records
+            href: cloud-communications-callrecords.md
+          - name: Online meeting artifacts and permissions
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: Choose a media hosting option
             href: cloud-communications-media.md
-          - name: Online meetings
+          - name: Create or join online meetings
             href: cloud-communications-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
           - name: Configure application access
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Call records
-            href: cloud-communications-callrecords.md
-          - name: Manage phone numbers for bots
+          - name: Manage bot phone numbers
             href: cloud-communications-phone-number.md
-          - name: Online meeting artifacts and permissions
-            href: cloud-communications-online-meeting-artifacts.md
           - name: Identify large gallery view participants
             href: cloud-communications-identifylargegalleryview.md
+          - name: Subscribe to change notifications for online meetings
+            href: changenotifications-for-onlinemeeting.md
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
@@ -185,7 +187,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: Manage items
             href: connecting-external-content-manage-items.md
-          - name: External groups
+          - name: Use external groups
             href: connecting-external-content-external-groups.md
           - name: API limits
             href: connecting-external-content-api-limits.md
@@ -194,15 +196,15 @@ items:
           - name: Overview
             href: cross-device-concept-overview.md
             displayName: Project Rome, cross-device, cross device, cross-device experience
-          - name: Activity feed
+          - name: Use activity feed API
             href: activity-feed-concept-overview.md
             displayName: cross-device, cross device
-          - name: Device relay (preview)
+          - name: Use device relay API (preview)
             href: device-relay-concept-overview.md
             displayName: cross-device, cross device
           - name: Build cross-device apps
             href: cross-device-app-configuration.md
-            displayName: cross device
+            displayName: cross device, Project Rome
       - name: Customer booking (preview)
         items:
           - name: Overview 
@@ -270,6 +272,14 @@ items:
             href: assignments-submissions-states-transition.md
           - name: Specify the default channel for assignment notifications
             href: education-build-notificationchannelurl.md
+      - name: Extensions
+        items:
+          - name: Overview
+            href: extensibility-overview.md
+          - name: Use open extensions
+            href: extensibility-open-users.md
+          - name: Use schema extensions
+            href: extensibility-schema-groups.md
       - name: Files
         items:
           - name: Overview
@@ -340,7 +350,7 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
-          - name: Immutable ID
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
@@ -419,7 +429,7 @@ items:
             displayName: Outlook, Outlook contacts, Outlook contact, People, personal contacts
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
-          - name: Immutable ID
+          - name: Obtain immutable IDs
             href: outlook-immutable-id.md
           - name: Subscribe to change notifications
             href: outlook-change-notifications-overview.md
@@ -443,19 +453,19 @@ items:
             href: search-concept-files.md
           - name: Search connectors
             href: search-concept-custom-types.md
-          - name: Search persons (preview)
+          - name: Search people
             href: search-concept-person.md
           - name: Manage admin search answers (preview)
             href: search-concept-answers.md
-          - name: Manage search results layout (preview)
+          - name: Manage search results layout
             href: search-concept-display-layout.md
           - name: Refine search results
             href: search-concept-aggregation.md
-          - name: Request spelling correction (preview)
+          - name: Request spelling corrections
             href: search-concept-speller.md
-          - name: Trim duplicate search results (preview)
+          - name: Trim duplicate search results
             href: search-concept-trim-duplicate.md
-          - name: Use query templates (preview)
+          - name: Use query templates
             href: search-concept-query-template.md
           - name: Sort search results
             href: search-concept-sort.md
@@ -493,12 +503,12 @@ items:
             href: choose-online-meeting-api.md
           - name: Configure built-in tabs
             href: teams-configuring-builtin-tabs.md
-          - name: Protected APIs
-            href: teams-protected-apis.md
-          - name: Licensing and payment requirements
-            href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: Protected APIs
+            href: teams-protected-apis.md
+          - name: Licensing and payment models
+            href: teams-licenses.md
           - name: Activity feed notifications
             items:
               - name: Send activity feed notifications
@@ -507,9 +517,7 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Subscribe to change notifications
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Get change notifications for online meetings
-            href: changenotifications-for-onlinemeeting.md
-          - name: System messages
+          - name: Get system messages
             href: system-messages.md
       - name: To-do tasks
         href: todo-concept-overview.md
@@ -635,14 +643,8 @@ items:
               - name: Get changes to users (example)
                 href: delta-query-users.md
           - name: Add custom data
-            items:
-              - name: Overview
-                href: extensibility-overview.md
-                displayName: add custom data, extensions, resources using extensions
-              - name: Use open extensions (example)
-                href: extensibility-open-users.md
-              - name: Use schema extensions (example)
-                href: extensibility-schema-groups.md
+            displayName: directory extensions, schema extensions, open extensions, extension attributes
+            href: extensibility-overview.md
           - name: Use Graph Explorer
             items:
             - name: Get started
