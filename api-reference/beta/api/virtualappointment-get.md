@@ -61,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onlineMeeting/{onlineMeetingId}/virtualAppointment
+GET https://graph.microsoft.com/beta/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
 
 

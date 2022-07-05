@@ -69,7 +69,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/onlineMeeting/{onlineMeetingId}/virtualAppointment
+PUT https://graph.microsoft.com/beta/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 Content-Type: application/json
 Content-length: 379
 
