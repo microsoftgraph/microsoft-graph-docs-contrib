@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [browserS
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_browsersite_from_"
+  "name": "create_browsersite"
 }
 -->
 ``` http
@@ -114,7 +114,7 @@ Content-Type: application/json
         "user": {
             "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
             "displayName": "Joe Smith"
-        }
+        },
         "application": null
     },
     "history": []
