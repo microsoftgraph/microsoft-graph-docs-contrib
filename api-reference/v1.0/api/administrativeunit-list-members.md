@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 The following request will list the members of the administrative unit, returning a collection of users, groups, and devices.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_administrativeunit_members"
@@ -65,6 +67,28 @@ The following request will list the members of the administrative unit, returnin
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/c5729e7c-988e-417b-b287-14f5bd4711d8/members
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-administrativeunit-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-administrativeunit-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-administrativeunit-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-administrativeunit-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-administrativeunit-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 Here is an example of the response.
@@ -107,6 +131,8 @@ Content-type: application/json
 #### Request
 The following request will list the member references of the administrative unit, returning a collection of `@odata.id` references to the members.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_administrativeunit_member_refs"
@@ -114,6 +140,28 @@ The following request will list the member references of the administrative unit
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-administrativeunit-member-refs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-administrativeunit-member-refs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-administrativeunit-member-refs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-administrativeunit-member-refs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-administrativeunit-member-refs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 Here is an example of the response.

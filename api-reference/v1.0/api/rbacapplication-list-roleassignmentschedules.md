@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleassignmentschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedroleassignmentschedule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

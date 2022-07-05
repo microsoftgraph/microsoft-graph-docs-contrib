@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Teams API overview"
-description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "
+description: "Use the Microsoft Teams API in Microsoft Graph to automate team lifecycles, create and manage teams and channels, deploy apps, and get notified about changes."
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -9,9 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Teams API overview
 
-[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
-Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, 
-Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
+[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. Built on the strength and scale of [Microsoft 365](https://products.office.com/) with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
@@ -107,7 +105,8 @@ Microsoft Teams supports subscribing to changes (create, update, and delete) to 
 
 Looking for the API reference for this service?
 
-See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview).
+- [Teams API in Microsoft Graph v1.0](/graph/api/resources/teams-api-overview)
+- [Teams API in Microsoft Graph beta](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 

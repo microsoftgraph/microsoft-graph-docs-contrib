@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyExpirationRule resource type"
-description: "A unifiedRoleManagementPolicyExpirationRule specifies the enablement rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the maximum duration a role can be assigned to a principal (either through direct assignment or through activation of eligibility)."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,17 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A unifiedRoleManagementPolicyExpirationRule specifies the enablement rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule.
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the maximum duration a role can be assigned to a principal (either through direct assignment or through activation of eligibili
 
-Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
+## Methods
+
+None.
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|isExpirationRequired|Boolean|Indicates if expiration is required for eligibility or assignment.|
-|maximumDuration|Duration|The maximum duration allowed for eligiblity or assignment which is not permanent.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|The target for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|isExpirationRequired|Boolean|Indicates whether expiration is required or if it's a permanently active assignment or eligibility. |
+|maximumDuration|Duration| The maximum duration allowed for eligibility or assignment which is not permanent. Required when **isExpirationRequired** is `true`. |
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the expiration rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

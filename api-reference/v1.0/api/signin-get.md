@@ -39,6 +39,8 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 + Security Operator
 + Security Reader
 
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

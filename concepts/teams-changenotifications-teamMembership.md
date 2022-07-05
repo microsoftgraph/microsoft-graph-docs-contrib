@@ -17,18 +17,18 @@ To get change notifications for membership changes in a particular team, subscri
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 >**Note:** Permissions marked with * are supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -51,17 +51,17 @@ To get change notifications for membership changes in all private channels in a 
 
 ### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMember.Read.All   | beta |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | ChannelMember.Read.All   |
 
 
 ### Example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

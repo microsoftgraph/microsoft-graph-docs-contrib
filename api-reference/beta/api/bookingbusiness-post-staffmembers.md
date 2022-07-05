@@ -134,7 +134,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 # [C#](#tab/csharp)

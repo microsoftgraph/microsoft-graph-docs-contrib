@@ -43,6 +43,14 @@ You can use `$select` to get specific group properties, including those that are
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
+### Retrieve extensions and associated data
+
+| Extension type       | Comments                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Schema extensions    | Returned only with `$select`.                                                  |
+| Open extensions      | Returned through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions | Returned by default.                                                           |
+
 ## Request headers
 
 | Name          | Type   | Description               |
