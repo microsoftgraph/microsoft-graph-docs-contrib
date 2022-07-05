@@ -15713,10 +15713,11 @@ items:
             href: api/teamworkhostedcontent-get.md
         - name: App settings
           href: resources/teamsappsettings.md
-        - name: Get app settings
-          href: api/teamsappsettings-get.md
-        - name: Update app settings
-          href: api/teamsappsettings-update.md
+          items:
+          - name: Get app settings
+            href: api/teamsappsettings-get.md
+          - name: Update app settings
+            href: api/teamsappsettings-update.md
       - name: App installation
         items:
         - name: Installed app
