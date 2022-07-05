@@ -460,25 +460,17 @@
         },
         {
           "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "photo",
           "ChangeType": "Addition",
-          "Description": "Added the **photo** relationship to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the **photo** navigation property to the [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
-        },
-        {
-          "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
-          "ApiChange": "NavigationPropertyPath",
-          "ChangedApiName": "Org.OData.Capabilities.V1.ExpandRestrictions",
-          "ChangeType": "Addition",
-          "Description": "Added the [Org.OData.Capabilities.V1.ExpandRestrictions](https://docs.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "teams"
         }
       ],
       "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2851",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-06-26T18:15:55.2254479Z",
+      "CreatedDateTime": "2022-07-05T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork",
       "SubArea": "Microsoft.Teams.Shifts"
     }
