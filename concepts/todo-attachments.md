@@ -1,12 +1,12 @@
 ---
-title: "Attach large files to a To Do task"
+title: "Attach files to a To Do task"
 description: "Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task."
 author: "avijityadav"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
-# Attach large files to a To Do task
+# Attach files to a To Do task
 
 Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task. 
 
@@ -105,10 +105,10 @@ A successful upload returns a `HTTP 200 OK` response code and an **uploadSession
 
 - The **expirationDateTime** property value remains the same as returned by the initial **uploadSession** in step 1.
 - The **nextExpectedRanges** specifies the next byte location to start uploading from, for example, `"nextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when you create the session (step 1).
 
