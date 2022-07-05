@@ -44,7 +44,7 @@ In the request body, omitting both sites and shared cookies in the publishes the
 |:---|:---|:---|
 |revision|String|The revision of the site list to publish.|
 |sites|[browserSite](../resources/browsersite.md) collection|The collection of sites to publish. Only requires the site ID. All other fields are ignored.|
-|sharedCookies|[browserSharedCookies](../resources/browsersharedcookie.md) collection|The collection of shared cookies to publish. Only requires the shared cookie ID. All other fields are ignored.|
+|sharedCookies|[browserSharedCookie](../resources/browsersharedcookie.md) collection|The collection of shared cookies to publish. Only requires the shared cookie ID. All other fields are ignored.|
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this action returns a `200 OK` response code and a [browserSiteLi
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "browsersitelistthis.publish"
+  "name": "browsersitelist_publish"
 }
 -->
 ``` http
@@ -112,7 +112,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "browsersitelistthis.publish"
+  "name": "browsersitelist_publish"
 }
 -->
 ``` http

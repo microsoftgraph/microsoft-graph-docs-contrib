@@ -2125,3 +2125,12 @@ Possible values for user account types (group membership), per Windows definitio
 |succeeded|
 |failed|
 |unknownFutureValue|
+
+### browserSharedCookieSourceEnvironment values
+
+| Member|
+|:-----------------|
+|microsoftEdge|
+|internetExplorer11|
+|both|
+|unknownFutureValue|
