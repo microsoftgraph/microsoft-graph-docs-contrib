@@ -94,7 +94,8 @@ The following is an example of the response. The status is changed to
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.browserSharedCookie"
 }
 -->
 ``` http
