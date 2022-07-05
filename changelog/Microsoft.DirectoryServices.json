@@ -3,58 +3,90 @@
     {
       "ChangeList": [
         {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodSignInState",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodSignInState** enumeration type.",
+          "Target": "authenticationMethodSignInState"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationPhoneType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationPhoneType** enumeration type.",
+          "Target": "authenticationPhoneType"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **emailMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "phoneMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **phoneMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softwareOathMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **softwareOathMethods** relationship to the [authentication](https://docs.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Resource",
           "ChangedApiName": "emailAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [emailAuthenticationMethod](https://docs.microsoft.com/graph/api/resources/emailAuthenticationMethod?view=graph-rest-1.0) resource and related methods. Use this resource and associated methods to manage a user's email authentication method for self-service password reset (SSPR).",
+          "Description": "Added the [emailAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/emailAuthenticationMethod?view=graph-rest-1.0) resource",
           "Target": "emailAuthenticationMethod"
         },
         {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "emailAuthenticationMethod",
-          "ChangeType": "Addition",
-          "Description": "Added the **emailMethods** navigation property to the [authentication](https://docs.microsoft.com/graph/api/resources/authentication) resource.",
-          "Target": "authentication"
-        },
-        {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Resource",
           "ChangedApiName": "phoneAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [phoneAuthenticationMethod](https://docs.microsoft.com/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource and associated methods. Use this resource and associated methods to manage a user's phone numbers used for authentication.",
+          "Description": "Added the [phoneAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/phoneAuthenticationMethod?view=graph-rest-1.0) resource",
           "Target": "phoneAuthenticationMethod"
         },
         {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "phoneAuthenticationMethod",
-          "ChangeType": "Addition",
-          "Description": "Added the **phoneMethods** navigation property to the [authentication](https://docs.microsoft.com/graph/api/resources/authentication) resource.",
-          "Target": "authentication"
-        },
-        {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
           "ApiChange": "Resource",
           "ChangedApiName": "softwareOathAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [softwareOathAuthenticationMethod]((https://docs.microsoft.com/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-1.0) resource and associated methods. Use this resource and associated methods to manage the Software OATH token registered to a user.",
+          "Description": "Added the [softwareOathAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-1.0) resource",
           "Target": "softwareOathAuthenticationMethod"
         },
         {
-          "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "softwareOathAuthenticationMethod",
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Method",
+          "ChangedApiName": "disableSmsSignIn",
           "ChangeType": "Addition",
-          "Description": "Added the **softwareOathMethods** navigation property to the [authentication](https://docs.microsoft.com/graph/api/resources/authentication) resource.",
-          "Target": "authentication"
+          "Description": "Added the [disableSmsSignIn](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) method to the [authenticationMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethod"
+        },
+        {
+          "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
+          "ApiChange": "Method",
+          "ChangedApiName": "enableSmsSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [enableSmsSignIn](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) method to the [authenticationMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethod"
         }
       ],
-      "Id": "cf98cee8-873f-424f-9a0b-c683ea38a660",
+      "Id": "ec9a0fcb-9942-4422-8808-0a0c8c5b823e",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2022-05-10T21:30:00.00Z",
+      "CreatedDateTime": "2022-06-23T18:29:24.1309263Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
@@ -80,7 +112,7 @@
       "Id": "b5a1875e-c52b-44f0-be4c-7a316c68335d",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2022-05-10T21:30:00.00Z",
+      "CreatedDateTime": "2022-06-23T18:29:24.1309263Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
