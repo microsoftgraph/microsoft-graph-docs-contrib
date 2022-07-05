@@ -68,23 +68,28 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/onlineMeeting/{onlineMeetingId}/virtualAppointment 
+PATCH https://graph.microsoft.com/beta/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment 
 Content-Type: application/json
 Content-length: 379
 
 {
   "@odata.type": "#microsoft.graph.virtualAppointment",
+  "id": "0c7fda79-ff00-f57f-37e3-28183b6d09b5",
   "settings": {
-    "@odata.type": "microsoft.graph.virtualAppointmentSettings"
+    "@odata.type": "microsoft.graph.virtualAppointmentSettings",
+    "allowClientToJoinUsingBrowser": "true"
   },
   "appointmentClients": [
     {
       "@odata.type": "microsoft.graph.virtualAppointmentUser"
+      "emailAddress": "client1@outlook.com",
+      "displayName": "Client One",
+      "smsCapablePhoneNumber": "123-456-7890"
     }
   ],
-  "externalAppointmentId": "String",
-  "externalAppointmentUrl": "String",
-  "appointmentClientJoinWebUrl": "String"
+  "externalAppointmentId": "AAMkADKnAAA=",
+  "externalAppointmentUrl": “https://anyschedulingsystem.com/api/appointments/MkADKnAAA=",
+  "appointmentClientJoinWebUrl": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
 }
 ```
 
