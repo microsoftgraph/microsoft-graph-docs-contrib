@@ -15711,13 +15711,6 @@ items:
             href: api/teamsappicon-get.md
           - name: Get hosted content
             href: api/teamworkhostedcontent-get.md
-        - name: App settings
-          href: resources/teamsappsettings.md
-          items:
-          - name: Get app settings
-            href: api/teamsappsettings-get.md
-          - name: Update app settings
-            href: api/teamsappsettings-update.md
       - name: App installation
         items:
         - name: Installed app
@@ -15760,6 +15753,14 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: App settings
+        items:
+          - name: App settings
+            href: resources/teamsappsettings.md
+          - name: Get app settings
+            href: api/teamsappsettings-get.md
+          - name: Update app settings
+            href: api/teamsappsettings-update.md
       - name: Device
         items:
         - name: Provisioned devices
