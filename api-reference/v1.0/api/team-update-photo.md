@@ -1,12 +1,10 @@
-# Promoting change update the photo (picture) for a team from /beta to /v1.0
 ---
 title: "Update team photo"
-description: "Update the photo (picture) for a team."
+description: "Update profilePhoto"
 author: "sumitgupta"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
-
 ---
 
 # Update team photo

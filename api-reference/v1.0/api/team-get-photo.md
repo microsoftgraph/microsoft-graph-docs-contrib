@@ -1,12 +1,10 @@
-# Promoting change get the photo (picture) for a team, or metadata for the photo from /beta to /v1.0
 ---
 title: "Get team photo"
-description: "Get the photo (picture) for a team."
+description: "Get profilePhoto"
 author: "sumitgupta"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
-
 ---
 
 # Get team photo
