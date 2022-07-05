@@ -20,26 +20,29 @@ Update settings of the report in Graph API.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | ReportSettings.ReadWrite.All                            |
+|-:--------------------------------------|-:-------------------------------------------|
+| Delegated (work or school account)     | ReportSettings.ReadWrite.All                |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ReportSettings.ReadWrite.All                            |
+| Application                            | ReportSettings.ReadWrite.All                |
 
-> **Note:** For delegated permissions to allow apps to update report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to update report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } --> 
 ```http
 PATCH /admin/reportSettings
 ```
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                |
+| :------------ | :--------------------------|
+| Authorization | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.|
 
 ## Request body
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property       | Type           | Description                                 | Key       | Required  | ReadOnly  |
 | -------------- | -------------- | ------------------------------------------- | --------- | --------- | --------- |
@@ -47,15 +50,13 @@ PATCH /admin/reportSettings
 
 ## Response
 
-If successful, this method returns a `204 NoContent` response. 
+If successful, this method returns a `204 No Content` response code. 
 
 ## Examples
 
-### Example 1: Update adminReportSettings
+The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
 
-The following is an example that update adminReportSettings
-
-#### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +90,7 @@ Content-type: application/json
 
 ---
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response"
