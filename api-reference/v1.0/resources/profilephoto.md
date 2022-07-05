@@ -1,6 +1,6 @@
 ---
 title: "profilePhoto resource type"
-description: "A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64."
+description: "A profile photo of a user, group, team or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,18 +11,19 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A profile photo of a user, group or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
+A profile photo of a user, group, team or an Outlook contact accessed from Exchange Online. It's binary data not encoded in base-64.
 
 The supported sizes of HD photos on Exchange Online are as follows: '48x48', '64x64', '96x96', '120x120',
 '240x240', '360x360','432x432', '504x504', and '648x648'.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (profilePhoto properties).|
-|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, or contact. The photo should be in binary. It replaces the existing photo, if any.|
-
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
+|[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Get profilePhoto of team](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties of a profile photo of team.|
+|[Update profilePhoto of team](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo of team.|
 > [!NOTE]
 >
 > Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
