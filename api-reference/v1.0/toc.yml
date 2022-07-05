@@ -5835,7 +5835,7 @@ items:
         href: resources/browsersite.md
         items:
         - name: List sites
-          href: resources/browsersitelist-list-sites.md
+          href: api/browsersitelist-list-sites.md
         - name: Create site
           href: api/browsersitelist-post-sites.md
         - name: Update site
@@ -5848,7 +5848,7 @@ items:
         href: resources/browsersharedcookie.md
         items:
         - name: List shared cookies
-          href: resources/browsersitelist-list-sharedcookies.md
+          href: api/browsersitelist-list-sharedcookies.md
         - name: Create shared cookie
           href: api/browsersitelist-post-sharedcookies.md
         - name: Update shared cookie
