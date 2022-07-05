@@ -103,10 +103,10 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
-    "id": "8660bf17-bf17-8660-17bf-608617bfffff",
-    "userAccountType": "standardUser",
-    "osVersion": "windows11",
     "enableMEMAutoEnroll": false,
+    "id": "8660bf17-bf17-8660-17bf-608617bfffff",
+    "osVersion": "windows11",
+    "userAccountType": "standardUser",
     "windowsSettings": {
       "language": "en-US"
     }
