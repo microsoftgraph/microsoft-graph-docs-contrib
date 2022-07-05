@@ -49,10 +49,10 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Table](../resources/workbooktable.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [table](../resources/workbooktable.md) object in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,8 +88,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following is an example of the response. 
+>**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
