@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a virtual appointment, including the client join URL, settings, and the client information. Virtual appointments are designed for business to consumer online workflows and include enhanced features such as mobile browser join and client waiting room. 
+Represents information about a virtual appointment, including the client join URL, settings, and the client information. Virtual appointments are designed for business to consume online workflows and include enhanced features such as mobile browser join and client waiting room.
 
 [!NOTE]
 > We'll be providing unlimited virtual appointment graph API calls through the public preview, for customers with virtual appointment licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements.
@@ -53,19 +53,19 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualAppointment",
-  "id": "String (identifier)",
-  "settings": {
-    "@odata.type": "microsoft.graph.virtualAppointmentSettings"
-  },
-  "appointmentClients": [
-    {
-      "@odata.type": "microsoft.graph.virtualAppointmentUser"
+    "@odata.type": "#microsoft.graph.virtualAppointment",
+    "appointmentClients": [
+        {
+            "@odata.type": "microsoft.graph.virtualAppointmentUser"
+        }
+    ],
+    "appointmentClientJoinWebUrl": "String",
+    "externalAppointmentId": "String",
+    "externalAppointmentUrl": "String",
+    "id": "String (identifier)",
+    "settings": {
+        "@odata.type": "microsoft.graph.virtualAppointmentSettings"
     }
-  ],
-  "appointmentClientJoinWebUrl": "String",
-  "externalAppointmentId": "String",
-  "externalAppointmentUrl": "String"
 }
 ```
 

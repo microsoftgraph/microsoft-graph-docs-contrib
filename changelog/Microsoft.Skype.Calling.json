@@ -2343,24 +2343,24 @@
         "ApiChange": "Resource",
         "ChangedApiName": "virtualAppointment",
         "ChangeType": "Addition",
-        "Description": "Added the virtualAppointment resource.",
+        "Description": "Added the [virtualAppointment](https://docs.microsoft.com/graph/api/resources/virtualappointment?view=graph-rest-beta) resource and supported methods.",
         "Target": "virtualAppointment"
       },
       {
         "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
         "ApiChange": "Resource",
-        "ChangedApiName": "virtualAppointment",
+        "ChangedApiName": "virtualAppointmentSettings",
         "ChangeType": "Addition",
-        "Description": "Added the virtualAppointmentSettings resource.",
-        "Target": "virtualAppointment"
+        "Description": "Added the [virtualAppointmentSettings](https://docs.microsoft.com/graph/api/resources/virtualappointmentsettings?view=graph-rest-beta) resource type.",
+        "Target": "virtualAppointmentSettings"
       },
       {
         "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
         "ApiChange": "Resource",
-        "ChangedApiName": "virtualAppointment",
+        "ChangedApiName": "virtualAppointmentUser",
         "ChangeType": "Addition",
-        "Description": "Added the virtualAppointmentUser resource.",
-        "Target": "virtualAppointment"
+        "Description": "Added the [virtualAppointmentUser](https://docs.microsoft.com/graph/api/resources/virtualappointmentuser?view=graph-rest-beta) resource type.",
+        "Target": "virtualAppointmentUser"
       }
     ],
       "Id": "17959ba8-1672-403e-854a-fba92e04bdb0",
@@ -2368,5 +2368,7 @@
         "Version": "beta",
         "CreatedDateTime": "2022-07-13T00:00:00",
         "WorkloadArea": "Cloud communications",
-        "SubArea": "onlineMeeting"
-},
+        "SubArea": "Online meeting"
+  }
+]
+}
