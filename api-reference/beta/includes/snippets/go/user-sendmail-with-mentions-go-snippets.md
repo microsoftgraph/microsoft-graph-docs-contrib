@@ -14,13 +14,21 @@ subject := "Project kickoff"
 message.SetSubject(&subject)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+name := "Samantha Booth"
+	emailAddress.SetName(&name)
+address := "samanthab@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 message.SetMentions( []Mention {
 	msgraphsdk.NewMention(),
-	SetAdditionalData(map[string]interface{}{
-	}
+mentioned := msgraphsdk.NewEmailAddress()
+	SetMentioned(mentioned)
+name := "Dana Swope"
+	mentioned.SetName(&name)
+address := "danas@contoso.onmicrosoft.com"
+	mentioned.SetAddress(&address)
 }
 graphClient.Me().SendMail().Post(requestBody)
 

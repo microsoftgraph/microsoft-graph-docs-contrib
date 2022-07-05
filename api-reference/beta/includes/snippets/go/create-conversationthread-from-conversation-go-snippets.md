@@ -12,8 +12,12 @@ topic := "Take your wellness days and rest"
 requestBody.SetTopic(&topic)
 requestBody.SetPosts( []Post {
 	msgraphsdk.NewPost(),
-	SetAdditionalData(map[string]interface{}{
-	}
+body := msgraphsdk.NewItemBody()
+	SetBody(body)
+contentType := "html"
+	body.SetContentType(&contentType)
+content := "Waiting for the summer holidays."
+	body.SetContent(&content)
 }
 groupId := "group-id"
 conversationId := "conversation-id"

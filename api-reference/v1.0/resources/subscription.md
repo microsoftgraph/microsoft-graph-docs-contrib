@@ -15,13 +15,17 @@ A subscription allows a client app to receive change notifications about changes
 
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
+- A [channel](./channel.md) in Microsoft Teams.
+- A [chat](./chat.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
+- A [conversationMember](./conversationmember.md) in a team or channel in Microsoft Teams.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
+- A [team](./team.md) in Microsoft Teams.
 - A [todoTask][] of a user in Microsoft To Do.*
 - A [user][] in Azure Active Directory.
 
@@ -64,7 +68,11 @@ For the possible resource path values for each supported resource, see [Use the 
 |:--------------------|:-------------------------|
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
+| Teams **channel**    | 60 minutes (1 hour)  |
+| Teams **chat**    | 60 minutes (1 hour)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Teams **conversationMember**    | 60 minutes (1 hour)  |
+| Teams **team**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
 | SharePoint **list**    | 42300 minutes (under 30 days)    |

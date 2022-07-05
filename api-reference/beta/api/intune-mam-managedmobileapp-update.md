@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps/{managedMobileAppId}
+PATCH /deviceAppManagement/windowsManagedAppProtections/{windowsManagedAppProtectionId}/apps/{managedMobileAppId}
 PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps/{managedMobileAppId}
 PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps/{managedMobileAppId}
 ```

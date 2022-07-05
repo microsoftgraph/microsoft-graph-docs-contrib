@@ -35,14 +35,23 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
+This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.`$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
 
-By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**). 
-To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.
+By default, only a limited set of properties are returned (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname**, and **userPrincipalName**).To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter. For example, to return **displayName**, **givenName**, and **postalCode**, add the following to your query `$select=displayName,givenName,postalCode`.
 
 Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving a single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+
+### Retrieve extensions and associated data
+
+| Extension type                     | Comments                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`. Supports `$filter` (`eq`).                  |
+| Schema extensions                  | Returned only with `$select`. Supports `$filter` (`eq`).                  |
+| Open extensions                    | Returned only with `$expand`, that is, `users?$expand=extensions`. |
+| Directory extensions               | Returned only with `$select`. Supports `$filter` (`eq`).                  |
+
 
 ## Request headers
 
@@ -162,7 +171,7 @@ Content-type: application/json
 
 The following is an example of the request.
 
->**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
+> **Note:** When filtering for an **issuerAssignedId**, you must supply both **issuer** and **issuerAssignedId**. However, the **issuer** value will be ignored in certain scenarios. For more details on filtering on identities see [objectIdentity resource type](../resources/objectIdentity.md)
 
 
 # [HTTP](#tab/http)
@@ -171,7 +180,7 @@ The following is an example of the request.
   "name": "get_signinname_users"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -219,7 +228,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }

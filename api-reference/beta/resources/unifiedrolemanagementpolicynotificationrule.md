@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementPolicyNotificationRule resource type"
-description: "A unifiedRoleManagementPolicyNotificationRule specifies the notification rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
+description: "A type derived from the unifiedRoleManagementPolicyRule resource type that defines the email notification rules for role assignments, activations, and approvals."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,20 +11,20 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A unifiedRoleManagementPolicyNotificationRule specifies the notification rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule.
+A type derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) resource type that defines the email notification rules for role assignments, activations, and approvals.
 
 Inherits from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|notificationLevel|String|The level of notification. One of None, Critical, All.|
-|notificationRecipients|String collection|The list of notification recepients like email.|
-|notificationType|String|The type of notification. One of Email.|
-|recipientType|String|The type of recipient. One of Requestor, Approver, Admin.|
-|isDefaultRecipientsEnabled|Boolean|Whether default recipient is receiving the email or not.|
-|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|The target for the rule. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
+|id|String|Identifier for the rule. Inherited from [entity](../resources/entity.md).|
+|isDefaultRecipientsEnabled|Boolean|Indicates whether a default recipient will receive the notification email.|
+|notificationLevel|String|The level of notification. The possible values are `None`, `Critical`, `All`.|
+|notificationRecipients|String collection|The list of recipients of the email notifications.|
+|notificationType|String|The type of notification. Only `Email` is supported.|
+|recipientType|String|The type of recipient of the notification. The possible values are `Requestor`, `Approver`, `Admin`.|
+|target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Defines details of the scope that's targeted by the notification rule. The details can include the principal type, the role assignment type, and actions affecting a role. Inherited from [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md). Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.
@@ -49,10 +49,9 @@ The following is a JSON representation of the resource.
   "notificationType": "String",
   "recipientType": "String",
   "notificationLevel": "String",
-  "isDefaultRecipientsEnabled": true,
+  "isDefaultRecipientsEnabled": "Boolean",
   "notificationRecipients": [
     "String"
   ]
 }
 ```
-

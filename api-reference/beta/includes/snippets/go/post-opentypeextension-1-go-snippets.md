@@ -18,8 +18,10 @@ content := "You should be proud!"
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "rufus@contoso.com"
+	emailAddress.SetAddress(&address)
 }
 requestBody.SetExtensions( []Extension {
 	msgraphsdk.NewExtension(),
