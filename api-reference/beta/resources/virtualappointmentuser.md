@@ -18,9 +18,9 @@ Represents information about a client user in a virtual appointment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the user who participates in a virtual appointment. Optional|
-|emailAddress|String|The email address of the user who participates in a virtual appointment. Optional|
-|smsCapablePhoneNumber|String|The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional|
+|displayName|String|The display name of the user who participates in a virtual appointment. Optional.|
+|emailAddress|String|The email address of the user who participates in a virtual appointment. Optional.|
+|smsCapablePhoneNumber|String|The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.|
 
 ## Relationships
 None.
