@@ -1,6 +1,6 @@
 ---
 title: "Update identityProvider"
-description: Describes Update identityProvider, which updates properties of an identityProvider, and describes the permissions required to call this API.
+description: "Update properties of an identityProvider."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"

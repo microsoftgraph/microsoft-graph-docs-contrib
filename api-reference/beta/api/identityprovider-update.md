@@ -1,6 +1,6 @@
 ---
 title: "Update identityProvider"
-description: Describes Update identityProvider (deprecated), a deprecated API that was used to update the properties of an identityProvider object.
+description: "Update properties of an identityProvider."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"

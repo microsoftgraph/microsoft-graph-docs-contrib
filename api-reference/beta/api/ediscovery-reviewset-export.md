@@ -1,6 +1,6 @@
 ---
 title: "reviewSet: export"
-description: "Describes reviewSet: export, which initiates an export from a reviewSet, and describes the permissions to call this API."
+description: "Initiate an export from a reviewSet."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"

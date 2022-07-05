@@ -1,6 +1,6 @@
 ---
 title: "List NamedItemCollection"
-description: Describes List NamedItemCollection, which retrieves a list of nameditem objects, and describes the permissions required to call this API.
+description: "Retrieve a list of nameditem objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: workbooks-and-charts

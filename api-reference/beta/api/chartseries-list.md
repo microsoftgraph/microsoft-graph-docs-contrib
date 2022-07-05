@@ -1,6 +1,6 @@
 ---
 title: "List ChartSeriesCollection"
-description: Describes List ChartSeriesCollection, which retrieve a list of chartseries objects, and describes the permissions required to call this API.
+description: "Create a new custodian siteSource object."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"

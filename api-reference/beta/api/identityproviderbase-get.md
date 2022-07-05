@@ -1,6 +1,6 @@
 ---
 title: "Get identityProvider"
-description: Describes Get identityProvider, which retrieves the properties and relationships of an identityProvider object.
+description: "Retrieve the properties and relationships of an identityProvider object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "namkedia"

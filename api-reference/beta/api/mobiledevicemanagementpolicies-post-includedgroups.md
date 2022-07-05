@@ -1,6 +1,6 @@
 ---
 title: "Add includedGroups"
-description: Describes Add includedGroups for mobile devices, which adds groups to be included in a mobile app management policy.
+description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

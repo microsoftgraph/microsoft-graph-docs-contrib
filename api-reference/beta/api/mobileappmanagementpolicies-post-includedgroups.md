@@ -1,6 +1,6 @@
 ---
 title: "Add includedGroups" 
-description: Describes Add includedGroups, which adds groups to be included in a mobile app management policy, and details the permissions to call this API.
+description: "Add groups to be included in a mobile app management policy."
 author: "ravennMSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
