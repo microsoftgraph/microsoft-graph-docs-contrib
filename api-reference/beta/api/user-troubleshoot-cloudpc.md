@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Troubleshoot a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to check the health status of the Cloud PC and the session host.
+Troubleshoot a specific [cloudPC](../resources/cloudpc.md) device that is attributed to the signed-in user. Use this API to check the health status of the Cloud PC.
 
 ## Permissions
 
