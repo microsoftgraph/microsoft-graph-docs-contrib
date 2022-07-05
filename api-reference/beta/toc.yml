@@ -642,12 +642,6 @@ items:
           href: api/chat-get.md
         - name: List chats for user
           href: api/chat-list.md
-        - name: Teams app settings
-          href: resources/teamsappsettings.md
-        - name: Get Teams app settings
-          href: api/teamsappsettings-get.md
-        - name: Update Teams app settings
-          href: api/teamsappsettings-update.md
       - name: To-do tasks
         items:
         - name: To-do task
@@ -15717,6 +15711,12 @@ items:
             href: api/teamsappicon-get.md
           - name: Get hosted content
             href: api/teamworkhostedcontent-get.md
+        - name: App settings
+          href: resources/teamsappsettings.md
+        - name: Get app settings
+          href: api/teamsappsettings-get.md
+        - name: Update app settings
+          href: api/teamsappsettings-update.md
       - name: App installation
         items:
         - name: Installed app
