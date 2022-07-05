@@ -84,26 +84,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.browserSiteList",
-  "id": "36ba61eb-c492-4283-a38b-963a1dbb2f69",
-  "revision": "",
-  "displayName": "Production Site List A",
-  "description": "Production site list for team A",
-  "lastModifiedDateTime": "2022-06-28T18:05:05.9569126Z",
-  "publishedDateTime": null,
-  "status": "draft",
-  "lastModifiedBy": {
-      "user": {
-          "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-          "displayName": "Joe Smith"
-      },
-      "application": null
-  },
-  "publishedBy": null,
-}
+HTTP/1.1 204 No Content
 ```
 

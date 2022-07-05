@@ -53,7 +53,8 @@ If the shared cookie was not previously published then this method returns a `20
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_browsersharedcookie"
+  "name": "delete_browsersharedcookie",
+  "@odata.type": "microsoft.graph.browserSharedCookie"
 }
 -->
 ``` http

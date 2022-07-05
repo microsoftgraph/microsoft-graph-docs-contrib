@@ -2168,3 +2168,32 @@ Possible values for user account types (group membership), per Windows definitio
 |configurable|
 |none|
 |unknownFutureValue|
+
+### browserSiteStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSharedCookieStatus values
+
+| Member|
+|:-----------------|
+|published|
+|pendingAdd|
+|pendingEdit|
+|pendingDelete|
+|unknownFutureValue|
+
+### browserSiteListStatus values
+
+| Member|
+|:-----------------|
+|draft|
+|published|
+|pending|
+|unknownFutureValue|

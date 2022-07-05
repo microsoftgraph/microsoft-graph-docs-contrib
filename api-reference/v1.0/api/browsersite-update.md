@@ -91,45 +91,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "status": "pendingEdit",
-    "id": "a22cbc85-d5d2-4e61-8414-42e6704c36f7",
-    "webUrl": "www.microsoft.com",
-    "targetEnvironment": "microsoftEdge",
-    "mergeType": "default",
-    "compatibilityMode": "default",
-    "allowRedirect": false,
-    "comment": "Updating to Edge.",
-    "lastModifiedDateTime": "2022-06-29T15:44:27.2154899Z",
-    "createdDateTime": "2022-06-29T14:51:23.8662595Z",
-    "deletedDateTime": null,
-    "lastModifiedBy": {
-        "user": {
-            "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-            "displayName": "Joe Smith"
-        },
-        "application": null
-    },
-    "history": [
-        {
-            "publishedDateTime": "2022-06-29T14:51:23.8662592Z",
-            "allowRedirect": true,
-            "comment": "A site that opens in InternetExplorer11",
-            "compatibilityMode": "default",
-            "targetEnvironment": "internetExplorer11",
-            "mergeType": "default",
-            "lastModifiedBy": {
-                "user": {
-                    "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-                    "displayName": "Joe Smith"
-                },
-                "application": null
-            },
-        }
-    ]
-}
+HTTP/1.1 204 No Content
 ```
 

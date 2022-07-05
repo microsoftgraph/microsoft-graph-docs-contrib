@@ -91,44 +91,6 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "status": "pendingEdit",
-    "id": "07f4030f-45ff-4ad1-9277-3b8f6ee74141",
-    "hostOrDomain": "www.microsoft.com",
-    "sourceEnvironment": "microsoftEdge",
-    "displayName": "Microsoft Cookie",
-    "path": "/",
-    "hostOnly": true,
-    "comment": "A cookie for microsoft.com",
-    "lastModifiedDateTime": "2022-06-29T11:32:39.6732721-04:00",
-    "createdDateTime": "2022-06-29T11:32:39.673272-04:00",
-    "lastModifiedBy": {
-        "user": {
-            "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-            "displayName": "Joe Smith"
-        },
-        "application": null
-    },
-    "history": [
-        {
-            "publishedDateTime": "2022-06-29T14:51:23.8662592Z",
-            "hostOrDomain": "www.microsoft.com",
-            "comment": "A cookie for InternetExplorer11",
-            "displayName": "Microsoft Cookie",
-            "sourceEnvironment": "internetExplorer11",
-            "hostOnly": true,
-            "lastModifiedBy": {
-                "user": {
-                    "id": "f6ff107e-bc40-4918-a432-8d7b60030a7c",
-                    "displayName": "Joe Smith"
-                },
-                "application": null
-            },
-        }
-    ]
-}
+HTTP/1.1 204 No Content
 ```
 
