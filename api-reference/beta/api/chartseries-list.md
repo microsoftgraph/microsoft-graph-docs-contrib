@@ -1,6 +1,6 @@
 ---
 title: "List ChartSeriesCollection"
-description: "Create a new custodian siteSource object."
+description: "Retrieve a list of chartseries objects."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"
