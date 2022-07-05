@@ -1,6 +1,6 @@
 ---
 title: "Use note tags in OneNote pages"
-description: "Describes how to use note tags in OneNote pages, outlines note tag attributes, how to add, update, and retrieve note tags, and provides response information."
+description: "Use the data-tag attribute to add and update built-in note tags on a OneNote page. Learn how to work with note tags on lists and how to retrieve note tags."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"

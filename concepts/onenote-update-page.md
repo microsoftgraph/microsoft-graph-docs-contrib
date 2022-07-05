@@ -1,6 +1,6 @@
 ---
 title: "Update OneNote page content"
-description: "Describes how to update OneNote page content, outlines how to construct the request URI and message body, and provides example requests."
+description: "Update the content of a OneNote page by sending a PATCH request to the page's content endpoint. Then send a JSON change object in the message body."
 author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.prod: "onenote"
