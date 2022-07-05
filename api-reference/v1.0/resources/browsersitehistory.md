@@ -1,9 +1,9 @@
 ---
 title: "browserSiteHistory resource type"
-description: "The history for the site modifications"
+description: "Represents the history of modifications made to a browserSite."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 

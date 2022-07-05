@@ -3,7 +3,7 @@ title: "Get browserSite"
 description: "Read the properties and relationships of a browserSite object."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 

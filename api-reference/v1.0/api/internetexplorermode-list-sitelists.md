@@ -3,7 +3,7 @@ title: "List browserSiteLists"
 description: "Get a list of the browserSiteList objects and their properties."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
 

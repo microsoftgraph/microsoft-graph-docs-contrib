@@ -1,9 +1,9 @@
 ---
 title: "browserSiteList resource type"
-description: "A singleton entity which is used to specify IE mode site list metadata"
+description: "Represents an Internet Explorer Mode site list which contains one or more browserSite or browserSharedCookie resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 

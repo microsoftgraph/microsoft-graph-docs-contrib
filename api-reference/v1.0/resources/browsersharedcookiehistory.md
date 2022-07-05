@@ -1,9 +1,9 @@
 ---
 title: "browserSharedCookieHistory resource type"
-description: "**TODO: Add Description**"
+description: "Represents the history of modifications make to a browserSharedCookie"
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 

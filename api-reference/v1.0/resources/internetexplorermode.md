@@ -1,9 +1,9 @@
 ---
 title: "internetExplorerMode resource type"
-description: "**TODO: Add Description**"
+description: "A container for Internet Explorer Mode resources."
 author: "edward-day-vii"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 
