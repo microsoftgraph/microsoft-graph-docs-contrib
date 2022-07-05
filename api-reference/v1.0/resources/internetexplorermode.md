@@ -17,8 +17,8 @@ A container for Internet Explorer Mode resources.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List browserSiteLists](../api/internetexplorermode-list-sitelists.md)|[browserSiteList](../resources/browsersitelist.md) collection|Get the browserSiteList resources from the siteLists navigation property.|
-|[Add browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Add siteLists by posting to the siteLists collection.|
-|[Remove browserSiteLists](../api/internetexplorermode-delete-sitelists.md)|None|Remove a [browserSiteList](../resources/browsersitelist.md) object.|
+|[Create browserSiteList](../api/internetexplorermode-post-sitelists.md)|[browserSiteList](../resources/browsersitelist.md)|Create a siteList by posting to the siteLists collection.|
+|[Delete browserSiteList](../api/internetexplorermode-delete-sitelists.md)|None|Delete a [browserSiteList](../resources/browsersitelist.md) object.|
 
 ## Properties
 
