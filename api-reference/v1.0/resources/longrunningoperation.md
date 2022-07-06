@@ -1,13 +1,13 @@
 ---
-title: "operation resource type"
+title: "long-running operation resource type"
 description: "The status of a long-running operation."
 ms.localizationpriority: medium
-author: "billbliss"
+author: "zhvolosh"
 ms.prod: teamwork
 doc_type: resourcePageType
 ---
 
-# operation resource type
+# Long running operation resource type
 
 Namespace: microsoft.graph
 
