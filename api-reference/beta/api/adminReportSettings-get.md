@@ -17,7 +17,6 @@ Get settings of the report in Graph API.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /admin/reportSettings
@@ -50,60 +49,41 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [adminReportSettings](/resources/adminreportsettings.md) object in the response body. 
+If successful, this method returns a `200 OK` response code and an [adminReportSettings](../resources/adminreportsettings.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of a request that fetches tenant-level settings for Microsoft 365 reports.
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "adminReportSettings-get"
-}-->
-
-```msgraph-interactive
+  "name": "get_adminreportsettings"
+}
+-->
+``` http
 GET https://graph.microsoft.com/beta/admin/reportSettings
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercoundetail-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercoundetail-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercoundetail-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
-} -->
-
-```http
+  "@odata.type": "microsoft.graph.adminReportSettings"
+}
+-->
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 124
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#adminReportSettings",
-  "displayConcealedNames": true
+  "value": {
+    "@odata.type": "#microsoft.graph.adminReportSettings",
+    "id": "f2a5643f-f0c8-ecc7-d20d-18d83fc96d48",
+    "displayConcealedNames": "Boolean"
+  }
 }
 ```

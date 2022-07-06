@@ -57,38 +57,22 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
 
 ### Request
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "adminReportSettings-update"
-}-->
-
-```msgraph-interactive
+  "name": "update_adminreportsettings"
+}
+-->
+``` http
 PATCH https://graph.microsoft.com/beta/admin/reportSettings
-Content-type: application/json
+Content-Type: application/json
+Content-length: 100
 
 {
-  "displayConcealedNames": true
+  "@odata.type": "#microsoft.graph.adminReportSettings",
+  "displayConcealedNames": "Boolean"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getm365appusercoundetail-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercoundetail-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercoundetail-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
