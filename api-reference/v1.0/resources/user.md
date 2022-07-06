@@ -75,8 +75,8 @@ This resource supports:
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
 | **Groups** |  |  |
 | [List joinedTeams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
-| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups and directory roles that the user is a direct member of from the memberOf navigation property. |
-| [List transitive memberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups and directory roles that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
+| [List memberOf](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
+| [List transitiveMemberOf](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Mail** |  |  |
 | [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Create a Focused Inbox override for a sender identified by an SMTP address. |  |
 | [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new MailFolder by posting to the mailFolders collection. |
@@ -299,6 +299,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand`.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
+|transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
 
 ## JSON representation
 

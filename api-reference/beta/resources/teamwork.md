@@ -33,6 +33,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| A collection of deleted teams.|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
+|teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
 ## JSON representation

@@ -2287,6 +2287,16 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
+|anonymizedIPAddress|
+|unfamiliarFeatures|
+|nationStateIPAddress|
+|realTimeThreatIntelligence|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
 
 ### signInAccessType values 
 
