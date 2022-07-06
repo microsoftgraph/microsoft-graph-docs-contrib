@@ -112,6 +112,8 @@ start := "08:00:00.0000000"
 		"timeSlots@odata.type": "#Collection(microsoft.graph.bookingWorkTimeSlot)",
 	}
 }
+isEmailNotificationEnabled := false
+requestBody.SetIsEmailNotificationEnabled(&isEmailNotificationEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.bookingStaffMember",
 	"role@odata.type": "#microsoft.graph.bookingStaffRole",

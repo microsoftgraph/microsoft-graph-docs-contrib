@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Identify and remediate risk using Microsoft Graph APIs"
-description: "Learn how to identify and remediate risk using Microsoft Graph APIs."
+description: "Learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA)."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,8 @@ Azure AD Identity Protection provides organizations insight into identity-based 
 
 In this tutorial, you learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA). An optional section shows you how to block the user from signing in also using a conditional access policy, and dismissing the user risk.
 
->**Note:** The response objects shown in this tutorial might be shortened for readability. 
+> [!NOTE]
+> The response objects shown in this tutorial might be shortened for readability.
 
 ## Prerequisites
 
@@ -140,7 +141,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 }
 ```
 
-> **Note:** It may take a few minutes for the event to be returned.
+> [!NOTE]
+> It may take a few minutes for the event to be returned.
 
 ## Step 3: Create a conditional access policy
 
@@ -294,7 +296,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 }
 ```
 
-## Step 4 (Optional) Block the user from signing in
+## Step 4: Block the user from signing in (optional)
 
 Instead of providing the opportunity for the user to self-remediate, you can block the user from signing in. In this step, you create a new conditional access policy that blocks the user from signing in if a medium or high risk detection occurs. The difference in policies is that the **builtInControls** is set to `block`.
 

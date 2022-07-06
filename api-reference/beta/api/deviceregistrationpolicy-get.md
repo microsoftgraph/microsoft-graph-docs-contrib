@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| Policy.ReadWrite.DeviceConfiguration|
+|Delegated (work or school account)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deviceregistrationpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

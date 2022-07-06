@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Use the access reviews API to review guest access to your Microsoft 365 groups"
-description: "Use the access reviews API to review guest access to your Microsoft 365 groups"
+title: "Tutorial: Use the access reviews API to review guest access to Microsoft 365 groups"
+description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Azure AD tenant."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.prod: "governance"

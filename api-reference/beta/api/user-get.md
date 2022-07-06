@@ -54,6 +54,15 @@ GET /me
 
 This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
+### Retrieve extensions and associated data
+
+| Extension type                     | Comments                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                                         |
+| Schema extensions                  | Returned only with `$select`.                                                                         |
+| Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions               | Returned only with `$select`.                                                                         |
+
 ## Request headers
 
 | Header       | Value|

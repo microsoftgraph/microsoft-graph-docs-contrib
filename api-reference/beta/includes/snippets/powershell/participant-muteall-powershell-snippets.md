@@ -13,6 +13,6 @@ $params = @{
 	ClientContext = "clientContext-value"
 }
 
-Invoke-MgMuteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+Invoke-MgMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
 ```
