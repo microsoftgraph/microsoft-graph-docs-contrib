@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectivityEvent resource type"
-description: "Represents the details of cloud pc connectivity event."
+description: "Represents the details of Cloud PC connectivity event."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of cloud pc connectivity event.
+Represents the details of Cloud PC connectivity event.
 
 ## Properties
 |Property|Type|Description|

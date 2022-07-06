@@ -1,6 +1,6 @@
 ---
 title: "cloudPcHealthCheckItem resource type"
-description: "Represents the details of the cloud pc connectivity health check item."
+description: "Represents the details of the Cloud PC connectivity health check item."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the cloud pc connectivity health check item.
+Represents the details of the Cloud PC connectivity health check item.
 
 ## Properties
 |Property|Type|Description|

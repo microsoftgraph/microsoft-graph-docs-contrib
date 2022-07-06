@@ -1,6 +1,6 @@
 ---
 title: "cloudPcConnectivityResult resource type"
-description: "Represents the details of the cloud pc connectivity status."
+description: "Represents the details of the Cloud PC connectivity status."
 author: "yayang3"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of the cloud pc connectivity status.
+Represents the details of the Cloud PC connectivity status.
 
 ## Properties
 |Property|Type|Description|
@@ -26,10 +26,10 @@ Represents the details of the cloud pc connectivity status.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|The cloud pc connectivity status is unknown.|
-|available|1|The cloud pc is able to be connected.|
-|availableWithWarning|2|The cloud pc is able to be connected but there are warnings.|
-|unavailable|3|The cloud pc is unable to be connected.|
+|unknown|0|The Cloud PC connectivity status is unknown.|
+|available|1|The Cloud PC is able to be connected.|
+|availableWithWarning|2|The Cloud PC is able to be connected but there are warnings.|
+|unavailable|3|The Cloud PC is unable to be connected.|
 |unknownFutureValue|999|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
