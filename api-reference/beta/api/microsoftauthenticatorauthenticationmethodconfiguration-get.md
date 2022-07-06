@@ -122,11 +122,11 @@ Content-Type: application/json
             "state": "enabled",
               "includeTarget": {
                 "targetType": "group",
-                "id": "d6414fc6-7ab5-402e-9858-ff5c2a5732abf"
+                "id": "all_users"
             },
             "excludeTarget": {
                 "targetType": "group",
-                "id": "all_users"
+                "id": "d6414fc6-7ab5-402e-9858-ff5c2a5732abf"
             }
         },
         "displayAppContextRequiredState" : {
