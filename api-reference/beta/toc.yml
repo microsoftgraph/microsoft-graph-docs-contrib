@@ -15754,6 +15754,14 @@ items:
             href: api/chat-teamsappinstallation-upgrade.md
           - name: Remove app from chat
             href: api/chat-delete-installedapps.md
+      - name: App settings
+        items:
+          - name: App settings
+            href: resources/teamsappsettings.md
+          - name: Get
+            href: api/teamsappsettings-get.md
+          - name: Update
+            href: api/teamsappsettings-update.md
       - name: Device
         items:
         - name: Provisioned devices
