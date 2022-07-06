@@ -54,6 +54,10 @@ If the request contains an `Accept-Language` HTTP header, the `content` of `join
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
+> [!CAUTION]
+>
+> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported. For details, see [Known issues](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants) for more details.
+
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
