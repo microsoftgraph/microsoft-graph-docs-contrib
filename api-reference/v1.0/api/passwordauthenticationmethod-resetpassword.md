@@ -1,6 +1,6 @@
 ---
 title: "passwordAuthenticationMethod: resetPassword"
-description: "Reset a user's password"
+description: "Reset a user's password."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
