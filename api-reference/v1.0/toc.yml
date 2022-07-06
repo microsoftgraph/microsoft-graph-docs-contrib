@@ -884,6 +884,8 @@ items:
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
+        - name: Request signature verification
+          href: api/requestsignatureverification.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
