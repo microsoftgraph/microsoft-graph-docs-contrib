@@ -25,9 +25,7 @@ None.
 |createdDateTime|DateTimeOffset|The start time of the operation.|
 |id|String|The unique identifier of the operation |
 |lastActionDateTime|DateTimeOffset|The time of the last action of the operation.|
-|resourceLocation|String| URI of the resource that is the operation is performed on. |
 |status|longRunningOperationStatus|The current status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
-|statusDetail|String|Details on the status of the operation.|
 
 ## Relationships
 
