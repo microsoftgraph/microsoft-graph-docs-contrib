@@ -19,7 +19,7 @@ Represents a logical container for all the definitions and versions of the same 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplatedefinition.md) collection| Get a list of the **teamTemplate** objects available for the tenant.|
-|[List definitions](../api/teamwork-teamtemplate-list-definitions.md)| [teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection | List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a **teamTemplate**.  |
+|[List definitions](../api/teamtemplate-list-definitions.md)| [teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection | List the [teamTemplateDefinition](../resources/teamstemplate.md) objects associated with a **teamTemplate**.  |
 
 ## Properties
 
