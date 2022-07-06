@@ -14460,11 +14460,11 @@ items:
       - name: Report settings
         items:
         - name: Settings
-        - href: resources/adminreportsettings.md
+          href: resources/adminreportsettings.md
         - name: Get settings
-        - href: api/adminreportsettings-get.md
+          href: api/adminreportsettings-get.md
         - name: Update settings
-        - href: api/adminreportsettings-update.md
+          href: api/adminreportsettings-update.md
     - name: Search
       displayname: Microsoft Search API
       items:
@@ -15211,12 +15211,12 @@ items:
             href: api/tenantadmin-settings-update.md
       - name: Report settings
         items:
-        - name: Settings
-        - href: resources/adminreportsettings.md
-        - name: Get settings
-        - href: api/adminreportsettings-get.md
-        - name: Update settings
-        - href: api/adminreportsettings-update.md
+          - name: Settings
+            href: resources/adminreportsettings.md
+          - name: Get settings
+            href: api/adminreportsettings-get.md
+          - name: Update settings
+            href: api/adminreportsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
