@@ -62,7 +62,7 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
-> **Note:** You should used odata.maxpagesize greater than or equal to 10 in request header for delta function to work properly for **todoTaskList**.
+> **Note:** You should use odata.maxpagesize greater than or equal to 10 in request header for delta function to work properly for **todoTaskList**.
 
 ## Response
 
