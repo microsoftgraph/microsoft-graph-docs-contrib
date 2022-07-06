@@ -1,7 +1,7 @@
 ---
 title: "featureTarget resource type"
 description: "A complex type that defines a single group, role, or AU that is included/exc in a set of changes."
-author: "mmcla", "mjsantani"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

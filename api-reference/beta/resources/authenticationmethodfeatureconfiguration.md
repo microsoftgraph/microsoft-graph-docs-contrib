@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodFeatureConfiguration resource type"
 description: "A complex type that defines, for a given authentication method, features that are allowed for the authentication method. This type also defines which single entities are included and excluded from the feature."
-author: "mmcla", "mjsantani"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

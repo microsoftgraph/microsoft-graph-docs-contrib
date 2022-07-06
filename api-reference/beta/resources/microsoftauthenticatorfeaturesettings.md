@@ -1,7 +1,7 @@
 ---
 title: "microsoftAuthenticatorFeatureSettings resource type"
 description: "A collection that defines Microsoft Authenticator features and allows configuration of enablement state and targeted included and excluded groups."
-author: "mcmla, mjsantani"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
