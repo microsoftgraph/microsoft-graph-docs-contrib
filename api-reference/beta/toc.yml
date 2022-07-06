@@ -15757,9 +15757,9 @@ items:
         items:
           - name: App settings
             href: resources/teamsappsettings.md
-          - name: Get app settings
+          - name: Get
             href: api/teamsappsettings-get.md
-          - name: Update app settings
+          - name: Update
             href: api/teamsappsettings-update.md
       - name: Device
         items:
