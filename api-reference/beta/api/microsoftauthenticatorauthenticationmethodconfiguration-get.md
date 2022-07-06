@@ -121,34 +121,34 @@ Content-Type: application/json
         "numberMatchingRequiredState" : {
             "state": "enabled",
               "includeTarget": {
-                "targetType": "group"
-                "id": "all_users",
+                "targetType": "group",
+                "id": "d6414fc6-7ab5-402e-9858-ff5c2a5732abf"
             },
             "excludeTarget": {
-                "targetType": "group"
-                "id": "d6414fc6-7ab5-402e-9858-ff5c2a5732abf"
+                "targetType": "group",
+                "id": "all_users"
             }
         },
         "displayAppContextRequiredState" : {
             "state": "enabled",
               "includeTarget": {
-                "targetType": "group"
-                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE",
+                "targetType": "group",
+                "id": "all_users"
             },
             "excludeTarget": {
                 "targetType": "group"
-                "id": "all_users"
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
             }
         },
         "displayLocationContextRequiredState" : {
             "state": "enabled",
               "includeTarget": {
-                "targetType": "group"
-                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE",
+                "targetType": "group",
+                "id": "all_users"
             },
             "excludeTarget": {
-                "targetType": "group"
-                "id": "all_users"
+                "targetType": "group",
+                "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
             }
         }
     }
