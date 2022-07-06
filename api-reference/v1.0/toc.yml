@@ -51,8 +51,12 @@ items:
         - name: Overview
           href: /graph/throttling?context=graph/api/1.0
           displayName: throttling
+        - name: Service-specific limits
+          href: /graph/throttling-limits?context=graph/api/1.0
+          displayName: throttling
         - name: Optimize network traffic
-          href: /learn/modules/optimize-network-traffic
+          href: /learn/modules/optimize-network-traffic          
+          displayName: throttling
     - name: Change notifications
       items:
       - name: Overview
