@@ -974,6 +974,7 @@ items:
           - name: Remove key
             href: api/application-removekey.md
         - name: Federated identity credentials (preview)
+          displayName: Workload identity federation, workload identities
           items:
           - name: Overview
             href: resources/federatedidentitycredentials-overview.md
