@@ -20,9 +20,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get teamTemplateDefinition](../api/teamwork-teamtemplatedefinition-get.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Read the properties and relationships of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
-| [List teamTemplateDefinitions](../api/teamwork-teamtemplate-list-definitions.md) | [teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection | List the **teamTemplateDefinition** objects associated with a **teamTemplate**.  |
-| [Get teamDefinition](../api/teamwork-teamtemplatedefinition-list-teamdefinition.md) | [team](../resources/team.md) | Read the properties of the **team** of a **teamTemplateDefinition** object |
+|[Get teamTemplateDefinition](../api/teamtemplatedefinition-get.md)|[teamTemplateDefinition](../resources/teamtemplatedefinition.md)|Read the properties and relationships of a [teamTemplateDefinition](../resources/teamtemplatedefinition.md) object.|
+| [List teamTemplateDefinitions](../api/teamtemplate-list-definitions.md) | [teamTemplateDefinition](../resources/teamtemplatedefinition.md) collection | List the **teamTemplateDefinition** objects associated with a **teamTemplate**.  |
+| [Get teamDefinition](../api/teamtemplatedefinition-list-teamdefinition.md) | [team](../resources/team.md) | Read the properties of the **team** of a **teamTemplateDefinition** object |
 
 ## Properties
 |Property|Type|Description|
