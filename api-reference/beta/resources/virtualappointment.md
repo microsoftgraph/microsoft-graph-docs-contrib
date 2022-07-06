@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents information about a virtual appointment, including the client join URL, settings, and the client information. Virtual appointments are designed for business to consume online workflows and include enhanced features such as mobile browser join and client waiting room.
 
-[!NOTE]
+> [!NOTE]
 > Customers with virtual appointment licenses benefit from unlimited virtual appointment calls via the Microsoft Graph API through the public preview. We'll provide additional details on the licensing requirements, before the promotion period ends.
 
 ## Methods
