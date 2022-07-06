@@ -60,8 +60,9 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 **Labels** - Information protection labels provide details about how to properly apply a sensitivity label to information. The information protection label API describes the configuration of sensitivity labels that apply to a user or tenant.
 
-**Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question and the organizational policies in play before generating a result so that tenant administrators can understand the threat scanning verdict and adjust their organizational policy. They can also use it to report legitimate emails as well which are getting blocked. 
-> **NOTE:** The **Threat Assessment** will be deprecated by unified security **Threat Submission** as the new version.
+**Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question and the organizational policies in play before generating a result so that tenant administrators can understand the threat scanning verdict and adjust their organizational policy. They can also use it to report legitimate emails to prevent them from getting blocked.
+
+> **NOTE:** The **threat assessment** API set will be deprecated by the unified security [threat submission](#threat-submission) as the new version.
 
 ## Secure Score
 
@@ -85,11 +86,11 @@ Threat indicators sent via the Microsoft Graph Security API are available today 
 
 Support in other Microsoft security services will be available soon.
 
-## Threat Submission
+## Threat submission
 
-The Microsoft Graph Threat Submission API helps organizations to submit the threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question by running it through the stack again and checking the organizational policies in play and even sending it to human graders for analysis before generating a result so that tenant administrators understand the threat scanning verdict and adjust their organizational policy.  They can also use it to report legitimate emails as well which are getting blocked. 
+The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft check the sample in question by running it through the stack again and checking the organizational policies in play and even sending it to human graders for analysis before generating a result, so that tenant administrators understand the threat scanning verdict and adjust their organizational policy.  They can also use it to report legitimate emails to prevent them from getting blocked. 
 
-> **NOTE:** The new **Threat Submission** API will deprecate the Information Protection **Threat Assessment** API. This new version is a unified security threat submission which is redesigned and adds unified result support, user submission query support, tenant allow block list support, admin review support and app only mode support.
+> **NOTE:** The new **threat submission** API will deprecate the Information Protection **threat assessment** API. This new version is a unified security threat submission which is redesigned and adds unified result support, user submission query support, tenant allow block list support, admin review support and app only mode support.
 
 ## Common use cases
 

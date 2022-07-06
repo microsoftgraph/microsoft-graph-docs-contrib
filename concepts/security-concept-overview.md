@@ -29,7 +29,7 @@ The [Microsoft Graph Security API](/graph/api/resources/security-api-overview) m
 
 ### Submit threats and trigger whole automation flow
 
-Submit threats across security solutions more easily with a unified security threat submission API. This not only allows you to submit threats but also get threat submission results and trigger downstream alert flow. The new unified security threat submission API supports both delegation mode and app only mode to help you build new security solutions.
+Submit threats across security solutions more easily with a unified security threat submission API. This allows you to not only submit threats but also get threat submission results and trigger downstream alert flows. The new unified security threat submission API supports both application and delegated permissions to help you build new security solutions.
 
 ### Unify and standardize alert tracking
 
