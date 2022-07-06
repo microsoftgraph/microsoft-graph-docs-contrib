@@ -104,7 +104,7 @@ Hide self-service password reset (SSPR) links in the [login page text visibility
 - As scenarios supported to export Teams content, you can [list](/graph/api/teamwork-list-deletedteams?view=graph-rest-beta&preserve-view=true) teams that have been deleted, and [get](/graph/api/deletedteam-getallmessages?view=graph-rest-beta&preserve-view=true) 1:1 chats, group chats, meeting chats, and channel messages of a [deleted team](/graph/api/resources/deletedTeam?view=graph-rest-beta&preserve-view=true). For more information, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 ### Use SDKs
-Try the new Microsoft Graph PHP SDK 2.0.0-RC5 and take advantage of the following improvements:
+Try the new [Microsoft Graph PHP SDK 2.0.0-RC5](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-php-sdk-2-0-0-rc5-is-now-available/) and take advantage of the following improvements:
 - A new authentication provider that automatically refreshes access tokens.
 - A built-in retry handler that understands response status codes.
 - A fluent request building pattern to improve efficiency and discoverability.
