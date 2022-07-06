@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
 |Application|Not supported.|
 
-### Example: create an upload session for a todoTask
+### Example: Create an upload session for a todoTask
 
 #### Request
 
@@ -192,7 +192,7 @@ Content-Length: 0
 ## Alternative Step: Cancel the upload session
 At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns a `HTTP 204 No Content` response code.
 
-### Example for Alternative Step : Cancel the upload session
+### Example for alternative step: Cancel the upload session
 
 #### Request
 
