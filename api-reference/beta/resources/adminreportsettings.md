@@ -24,9 +24,9 @@ Represents the report setting of a tenant.
 
 ## Properties
 
-| Property       | Type           | Description                                 | Key       | Required  | ReadOnly  |
-| -------------- | -------------- | ------------------------------------------- | --------- | --------- | --------- |
-| `displayConcealedNames` | `Boolean` | `true` represent all reports will display concealed user, group, and site names. `false` represent all reports will display real user, group and site names. The value is connected to a checkbox in the M365 Admin Center Setting. | No | Yes | No |
+| Property       | Type           | Description                                 |
+| -------------- | -------------- | ------------------------------------------- |
+| `displayConcealedNames` | `Boolean` | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## JSON representation
 

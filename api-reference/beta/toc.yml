@@ -14435,14 +14435,6 @@ items:
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Microsoft Defender for Office 365 security reports
-      - name: Report settings
-        items:
-        - name: Settings
-        - href: resources/adminreportsettings.md
-        - name: Get settings
-        - href: api/adminreportsettings-get.md
-        - name: Update settings
-        - href: api/adminreportsettings-update.md
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
@@ -14465,6 +14457,14 @@ items:
             href: resources/attacksimulationtrainingusercoverage.md
           - name: Get training coverage for users
             href: api/reportroot-getattacksimulationtrainingusercoverage.md
+      - name: Report settings
+        items:
+        - name: Settings
+        - href: resources/adminreportsettings.md
+        - name: Get settings
+        - href: api/adminreportsettings-get.md
+        - name: Update settings
+        - href: api/adminreportsettings-update.md
     - name: Search
       displayname: Microsoft Search API
       items:
