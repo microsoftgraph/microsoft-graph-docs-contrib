@@ -53,11 +53,9 @@ If successful, this method returns a `200 OK` response code and an instance of [
 
 ## Examples
 
-### Example 1: List one-on-one chats between the specified user and the Teams app
+### Request
 
-#### Request
-
-The following is an example of the request.
+The following is an example of a request that lists one-on-one chats between the specified user and the Teams app.
 
 
 # [HTTP](#tab/http)
@@ -95,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.

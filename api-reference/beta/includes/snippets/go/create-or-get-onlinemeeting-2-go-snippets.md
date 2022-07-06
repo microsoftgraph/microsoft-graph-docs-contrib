@@ -22,9 +22,14 @@ participants := msgraphsdk.NewMeetingParticipants()
 requestBody.SetParticipants(participants)
 participants.SetAttendees( []MeetingParticipantInfo {
 	msgraphsdk.NewMeetingParticipantInfo(),
-	SetAdditionalData(map[string]interface{}{
-		"upn": "test1@contoso.com",
-	}
+identity := msgraphsdk.NewIdentitySet()
+	SetIdentity(identity)
+user := msgraphsdk.NewIdentity()
+	identity.SetUser(user)
+id := "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
+	user.SetId(&id)
+upn := "test1@contoso.com"
+	SetUpn(&upn)
 }
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject)

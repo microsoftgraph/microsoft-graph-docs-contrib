@@ -12,23 +12,26 @@ displayName := "John Smith"
 requestBody.SetDisplayName(&displayName)
 requestBody.SetIdentities( []ObjectIdentity {
 	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "userName",
-		"issuer": "contoso.onmicrosoft.com",
-		"issuerAssignedId": "johnsmith",
-	}
+signInType := "userName"
+	SetSignInType(&signInType)
+issuer := "contoso.onmicrosoft.com"
+	SetIssuer(&issuer)
+issuerAssignedId := "johnsmith"
+	SetIssuerAssignedId(&issuerAssignedId)
 	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "emailAddress",
-		"issuer": "contoso.onmicrosoft.com",
-		"issuerAssignedId": "jsmith@yahoo.com",
-	}
+signInType := "emailAddress"
+	SetSignInType(&signInType)
+issuer := "contoso.onmicrosoft.com"
+	SetIssuer(&issuer)
+issuerAssignedId := "jsmith@yahoo.com"
+	SetIssuerAssignedId(&issuerAssignedId)
 	msgraphsdk.NewObjectIdentity(),
-	SetAdditionalData(map[string]interface{}{
-		"signInType": "federated",
-		"issuer": "facebook.com",
-		"issuerAssignedId": "5eecb0cd",
-	}
+signInType := "federated"
+	SetSignInType(&signInType)
+issuer := "facebook.com"
+	SetIssuer(&issuer)
+issuerAssignedId := "5eecb0cd"
+	SetIssuerAssignedId(&issuerAssignedId)
 }
 passwordProfile := msgraphsdk.NewPasswordProfile()
 requestBody.SetPasswordProfile(passwordProfile)

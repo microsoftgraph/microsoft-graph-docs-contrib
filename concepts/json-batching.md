@@ -1,6 +1,6 @@
 ---
 title: "Combine multiple requests in one HTTP call using JSON batching"
-description: "JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:"
+description: "Use JSON batching to optimize your application by combining multiple requests into a single JSON object, saving the application significant network latency."
 author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -10,11 +10,13 @@ ms.custom: graphiamtop20
 
 JSON batching allows you to optimize your application by combining multiple requests (up to 20) into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
-1. An image stored in OneDrive
-2. A list of Planner tasks
-3. The calendar for a group
+- An image stored in OneDrive
+- A list of Planner tasks
+- The calendar for a group
 
 Combining these three individual requests into a single batch request can save the application significant network latency.
+
+Microsoft Graph implements the `$batch` OData URL path segment to support JSON batching.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 
@@ -196,13 +198,24 @@ If an individual request fails, any request that depends on that request fails w
 
 An additional use case for JSON batching is to bypass URL length limitations. In cases where the filter clause is complex, the URL length might surpass limitations built into browsers or other HTTP clients. You can use JSON batching as a workaround for running these requests because the lengthy URL simply becomes part of the request payload.
 
+## Batch size limitations
+
+JSON batch requests are currently limited to 20 individual requests in addition to the following limitations:
+
+* Depending on the APIs that are part of the batch request, the underlying services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+* Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a status of `429`.
+* Batches targeting Outlook resources (such as mail and calendar) can only contain four requests targeting the same mailbox. For details, see [Outlook service limits][throttling-outlook].
+
+For more information, see [Throttling and batching][throttling-and-batching].
+
 ## Known issues
 
 For a list of current limitations related to batching, see [known issues][batching-known-issues].
 
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
-
+[throttling-and-batching]: throttling.md#throttling-and-batching
+[throttling-outlook]: throttling.md#outlook-service-limits
 
 ## See also
 

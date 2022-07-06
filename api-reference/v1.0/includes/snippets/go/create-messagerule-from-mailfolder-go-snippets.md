@@ -23,8 +23,12 @@ actions := msgraphsdk.NewMessageRuleActions()
 requestBody.SetActions(actions)
 actions.SetForwardTo( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+name := "Alex Wilbur"
+	emailAddress.SetName(&name)
+address := "AlexW@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules)

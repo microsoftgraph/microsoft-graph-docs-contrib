@@ -112,6 +112,10 @@ Content-Type: application/json
          "title":"Linked entity new task 1",
          "createdDateTime":"2020-07-08T11:15:19.9359889Z",
          "lastModifiedDateTime":"2020-07-08T11:15:20.0614375Z",
+          "categories": [
+               "Important",
+               "Urgent"
+            ],
          "id":"AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD",
          "body":{
             "content":"",

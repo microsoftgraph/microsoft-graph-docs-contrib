@@ -61,6 +61,72 @@
 	{
 		"ChangeList": [
 		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Post Messages**, **Reply Messages**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Meetings Organized**, and **Meetings Attended** columns to the [getTeamsUserActivityCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsUserActivityUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Tenant Display Name**, **Shared Channel Tenant Display Names**, **Post Messages**, **Reply Messages**, **Urgent Messages**, **Meetings Organized Count**, **Meetings Attended Count**, **Ad Hoc Meetings Organized Count**, **Ad Hoc Meetings Attended Count**, **Scheduled One-time Meetings Organized Count**, **Scheduled One-time Meetings Attended Count**, **Scheduled Recurring Meetings Organized Count**, **Scheduled Recurring Meetings Attended Count**, **Audio Duration**, **Video Duration**, **Screen Share Duration**, **Audio Duration In Seconds**, **Video Duration In Seconds**, **Screen Share Duration In Seconds**, and **Is Licensed** columns to the [getTeamsUserActivityUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsUserActivityUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserDetail",
+			"ChangeType": "Addition",
+			"Description": "Added the **Used Chrome OS**, **Used Linux**, and **Is Licensed** columns to the [getTeamsDeviceUsageUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageUserDetail?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserDetail"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Addition",
+			"Description": "Added the **Chrome OS** and **Linux** columns to the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageUserCounts"
+		 },
+		 {
+			"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+			"ApiChange": "Method",
+			"ChangedApiName": "getTeamsDeviceUsageDistributionUserCounts",
+			"ChangeType": "Deprecation",
+			"Description": "Deprecated the **Windows Phone** column on the [getTeamsDeviceUsageDistributionUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts?view=graph-rest-1.0) method.",
+			"Target": "getTeamsDeviceUsageDistributionUserCounts"
+		 }
+	  ],
+		"Id": "b1d5ed13-e5db-42d0-88fe-7bae2ec7e18c",
+		"Cloud": "prd",
+		"Version": "v1.0",
+		"CreatedDateTime": "2022-06-06T09:15:14.3122315Z",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	},
+	{
+		"ChangeList": [
+		 {
 			"Id": "4f1b36d9-67b5-4622-a851-e80f4e137e4f",
 			"ApiChange": "Method",
 			"ChangedApiName": "getTeamsTeamActivityCounts",
@@ -1757,6 +1823,40 @@
       "CreatedDateTime": "2021-04-13T03:46:16.421Z",
       "WorkloadArea": "Reports",
       "SubArea": "Microsoft 365 usage reports"
-    }
+    },
+	{
+	  	"ChangeList": [
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta) method.",
+			"Target": "getM365AppUserCounts"
+		},
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppPlatformUserCounts",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppPlatformUserCounts](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta) method.",
+			"Target": "getM365AppPlatformUserCounts"
+		},
+		{
+			"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+			"ApiChange": "Parameter",
+			"ChangedApiName": "getM365AppUserDetail",
+			"ChangeType": "Deletion",
+			"Description": "Removed the `content` parameter from the [getM365AppUserDetail](https://docs.microsoft.com/en-us/graph/api/reportroot-getm365appuserdetail?view=graph-rest-beta) method.",
+			"Target": "getM365AppUserDetail"
+		}
+		],
+		"Id": "c666366b-0cc2-49eb-b433-921507a1206d",
+		"Cloud": "prd",
+		"Version": "beta",
+		"CreatedDateTime": "2021-06-29T00:00:00",
+		"WorkloadArea": "Reports",
+		"SubArea": "Microsoft 365 usage reports"
+	}
   ]
 }

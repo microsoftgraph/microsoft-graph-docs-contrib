@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10347
+Content-Length: 10397
 
 {
   "value": {
@@ -317,7 +317,8 @@ Content-Length: 10347
     "workProfilePasswordMinimumSymbolCharacters": 10,
     "workProfilePasswordPreviousPasswordCountToBlock": 15,
     "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
-    "workProfilePasswordRequiredType": "required"
+    "workProfilePasswordRequiredType": "required",
+    "workProfilePasswordRequireUnlock": "daily"
   }
 }
 ```

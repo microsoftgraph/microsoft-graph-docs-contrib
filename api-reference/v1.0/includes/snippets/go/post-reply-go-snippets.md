@@ -60,14 +60,20 @@ inReplyTo := msgraphsdk.NewPost()
 post.SetInReplyTo(inReplyTo)
 post.SetAttachments( []Attachment {
 	msgraphsdk.NewAttachment(),
+lastModifiedDateTime, err := time.Parse(time.RFC3339, "datetime-value")
+	SetLastModifiedDateTime(&lastModifiedDateTime)
+name := "name-value"
+	SetName(&name)
+contentType := "contentType-value"
+	SetContentType(&contentType)
+size := int32(99)
+	SetSize(&size)
+isInline := true
+	SetIsInline(&isInline)
+id := "id-value"
+	SetId(&id)
 	SetAdditionalData(map[string]interface{}{
 		"@odata.type": "#microsoft.graph.fileAttachment",
-		"lastModifiedDateTime": "datetime-value",
-		"name": "name-value",
-		"contentType": "contentType-value",
-		"size": ,
-		"isInline": true,
-		"id": "id-value",
 	}
 }
 groupId := "group-id"
