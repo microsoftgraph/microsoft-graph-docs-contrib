@@ -123,6 +123,24 @@
     {
       "ChangeList": [
         {
+          "Id": "22fc73d0-07a2-40a5-af62-5c9b5acff13b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "joinMeetingIdMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [joinMeetingIdMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/joinMeetingIdMeetingInfo?view=graph-rest-beta) resource type.",
+          "Target": "joinMeetingIdMeetingInfo"
+        }
+      ],
+      "Id": "22fc73d0-07a2-40a5-af62-5c9b5acff13b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-05T00:23:34.0823332Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac9d4374-002f-4be5-9c45-ae246ec65191",
           "ApiChange": "Property",
           "ChangedApiName": "registrantId",
