@@ -14439,12 +14439,12 @@ items:
         items:
         - name: Report settings
           items:
-            name: Settings
-            href: resources/adminreportsettings.md
-            name: Get settings
-            href: api/adminreportsettings-get.md
-            name: Update settings
-            href: api/adminreportsettings-update.md
+          - name: Settings
+          - href: resources/adminreportsettings.md
+          - name: Get settings
+          - href: api/adminreportsettings-get.md
+          - name: Update settings
+          - href: api/adminreportsettings-update.md
         items:
         - name: Attack simulation reports
           displayname: Attack simulation and training
@@ -15213,12 +15213,12 @@ items:
             href: api/tenantadmin-settings-update.md
       - name: Report settings
         items:
-          name: Settings
-          href: resources/adminreportsettings.md
-          name: Get settings
-          href: api/adminreportsettings-get.md
-          name: Update settings
-          href: api/adminreportsettings-update.md
+        - name: Settings
+        - href: resources/adminreportsettings.md
+        - name: Get settings
+        - href: api/adminreportsettings-get.md
+        - name: Update settings
+        - href: api/adminreportsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:
