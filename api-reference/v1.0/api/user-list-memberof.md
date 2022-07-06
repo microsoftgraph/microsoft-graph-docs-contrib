@@ -1,17 +1,17 @@
 ---
-title: "List memberOf"
-description: "Get groups and directory roles that the user is a direct member of. "
+title: "List a user's direct memberships"
+description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive."
 author: "psaffaie"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# List memberOf
+# List a user's direct memberships
 
 Namespace: microsoft.graph
 
-Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of.
+Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive. To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the [List user transitive memberOf](user-list-transitivememberof.md) API.
 
 ## Permissions
 
