@@ -30,7 +30,7 @@ Inherits from [identitySet](identityset.md).
 | applicationInstance | [communicationsApplicationInstanceIdentity](communicationsApplicationInstanceIdentity.md) | The application instance associated with this action. |
 | onPremises | [communicationsUserIdentity](communicationsUserIdentity.md) | The Skype for Business On-Premises user associated with this action. |
 | assertedIdentity | [communicationsUserIdentity](communicationsUserIdentity.md) or [communicationsPhoneIdentity](communicationsPhoneIdentity.md) | An **identity** the participant would like to present itself as to the other participants in the call. |
-| endpointType | [endpointType](endpointType.md) | Type of endpoint the participant is using. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone`. |
+| endpointType | endpointType | Type of endpoint the participant is using. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. |
 
 ## JSON representation
 
@@ -63,6 +63,6 @@ The following is a JSON representation of the resource.
   "applicationInstance": {"@odata.type": "microsoft.graph.communicationsApplicationInstanceIdentity"},
   "onPremises": {"@odata.type": "microsoft.graph.communicationsUserIdentity"},
   "assertedIdentity": {"@odata.type": "microsoft.graph.identity"},
-  "endpointType": "default | voicemail | skypeForBusiness | skypeForBusinessVoipPhone"
+  "endpointType": "String"
 }
 ```
