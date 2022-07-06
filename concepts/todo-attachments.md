@@ -8,8 +8,6 @@ ms.prod: "outlook"
 
 # Attach files to a To Do task
 
-Learn how to attach large files to a Microsoft To Do task and how to choose the right approach to attach a file to a task. 
-
 Using the To Do API in Microsoft Graph, you can attach files up to 25 MB to a [todoTask](/graph/api/resources/todotask). Depending on the file size, choose one of two ways to attach the file:
 - For attaching files of any size, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
 - If the file size is under 3 MB, do a single `POST` on the **attachments** navigation property of a **todoTask**; see how to do this [for a task](/graph/api/todotask-post-attachments). The successful `POST` response includes the ID of the file attachment.
@@ -189,10 +187,10 @@ Location: https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b531285
 Content-Length: 0
 ```
 
-## Alternative Step: Cancel the upload session
+## Alternative step: Cancel the upload session
 At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns a `HTTP 204 No Content` response code.
 
-### Example for alternative step: Cancel the upload session
+### Example: Cancel the upload session
 
 #### Request
 
