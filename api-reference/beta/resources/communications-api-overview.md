@@ -33,20 +33,20 @@ The following table lists some of the common uses for the communications API.
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-beta)| [Methods for calls](/graph/api/resources/call?view=graph-rest-beta#methods)|
-|IVR calls   |     | [Methods for IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
-| Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-beta)   ||
-|Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true)| [Methods for calls](/graph/api/resources/call?view=graph-rest-beta#methods&preserve-view=true)|
+|IVR calls   |     | [Methods for IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta&preserve-view=true)
+| Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true)   ||
+|Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods&preserve-view=true)|
 |Presence | [presence](/graph/api/resources/presence) | [Methods for presence](/graph/api/resources/presence#methods) |
-| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta) |
+| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) |
 
 ## Common properties
 
 | Resource                | Properties                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [call properties](/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| participant                         | [participant properties](/graph/api/resources/participant?view=graph-rest-beta#properties) |
-| onlineMeeting                            | [onlineMeeting properties](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| call                               | [call properties](/graph/api/resources/call?view=graph-rest-beta#properties&preserve-view=true)  |
+| participant                         | [participant properties](/graph/api/resources/participant?view=graph-rest-beta#properties&preserve-view=true) |
+| onlineMeeting                            | [onlineMeeting properties](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties&preserve-view=true)                     |
 | presence | [presence properties](/graph/api/resources/presence#properties) |
 | callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord#properties) |
 
