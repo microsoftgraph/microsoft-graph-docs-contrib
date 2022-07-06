@@ -136,7 +136,7 @@ Content-Type: application/json
                 "id": "all_users"
             },
             "excludeTarget": {
-                "targetType": "group"
+                "targetType": "group",
                 "id": "XYZ-791F-4AB5-AD91-A05D2DCFF8CE"
             }
         },
