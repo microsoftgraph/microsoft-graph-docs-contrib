@@ -79,25 +79,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.virtualAppointment",
-  "id": "0c7fda79-ff00-f57f-37e3-28183b6d09b5",
-  "settings": {
-    "@odata.type": "microsoft.graph.virtualAppointmentSettings",
-    "allowClientToJoinUsingBrowser": "true"
-  },
-  "appointmentClients": [
-    {
-      "@odata.type": "microsoft.graph.virtualAppointmentUser"
-      "emailAddress": "client1@outlook.com",
-      "displayName": "Client One",
-      "smsCapablePhoneNumber": "123-456-7890"
+    "value": {
+        "@odata.type": "#microsoft.graph.virtualAppointment",
+        "id": "0c7fda79-ff00-f57f-37e3-28183b6d09b5",
+        "settings": {
+            "@odata.type": "microsoft.graph.virtualAppointmentSettings",
+            "allowClientToJoinUsingBrowser": "true"
+        },
+        "appointmentClients": [
+            {
+                "@odata.type": "microsoft.graph.virtualAppointmentUser",
+                "emailAddress": "Grady Archie",
+                "displayName": "gradya@contoso.com",
+                "smsCapablePhoneNumber": "123-456-7890"
+            }
+        ],
+        "externalAppointmentId": "AAMkADKnAAA=",
+        "externalAppointmentUrl": "https://anyschedulingsystem.com/api/appointments/MkADKnAAA=",
+        "appointmentClientJoinWebUrl": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
     }
-  ],
-  "externalAppointmentId": "AAMkADKnAAA=",
-  "externalAppointmentUrl": “https://anyschedulingsystem.com/api/appointments/MkADKnAAA=",
-  "appointmentClientJoinWebUrl": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
-  }
 }
 ```
 
