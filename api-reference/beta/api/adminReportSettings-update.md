@@ -1,6 +1,6 @@
 ---
 title: "Update adminReportSettings"
-description: "Update an adminReportSettings object."
+description: "Update tenant-level settings for Microsoft 365 reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update settings of the report in Graph API.
+Update tenant-level settings for Microsoft 365 reports.
 
 ## Permissions
 
@@ -44,13 +44,13 @@ PATCH /admin/reportSettings
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-| Property       | Type           | Description                                 | Key       | Required  | ReadOnly  |
-| -------------- | -------------- | ------------------------------------------- | --------- | --------- | --------- |
-| `displayConcealedNames` | `Boolean` | `true` represent all reports will display concealed user, group, and site names. `false` represent all reports will display real user, group and site names. The value is connected to a checkbox in the M365 Admin Center Setting. | No | Yes | No |
+| Property       | Type           | Description                                 |
+| -------------- | -------------- | ------------------------------------------- |
+| `displayConcealedNames` | `Boolean` | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. 
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
