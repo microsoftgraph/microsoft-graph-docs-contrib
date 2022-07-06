@@ -1683,7 +1683,7 @@ items:
           href: resources/virtualappointment.md
           items:
           - name: Create
-            href: api/virtualappointment-put.md
+            href: api/onlinemeeting-virtualappointment-put.md
           - name: Get
             href: api/virtualappointment-get.md
           - name: Update
