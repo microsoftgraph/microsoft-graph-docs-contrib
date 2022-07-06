@@ -31,6 +31,9 @@ None.
 |microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |
 |temporaryAccessPassMethods|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.|
 |windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|
+|password|[password](../resources/passwordauthenticationmethod.md) collection|Represents the users password registered to a user for authentication. For security, the password itself will never be returned in the object, but action can be taken to reset a password.|
+|operation|[operation](../resources/longrunningoperation.md) collection|Represents the status of a long-running operation.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.
