@@ -11189,6 +11189,40 @@
       "CreatedDateTime": "2022-06-21T09:45:26.3615214Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae616789-7c8f-4fe6-952d-19c96aad2658",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayAppInformationRequiredState",
+          "ChangeType": "Addition",
+          "Description": "Added the [displayAppInformationRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "ae616789-7c8f-4fe6-952d-19c96aad2658",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayLocationInformationRequiredState",
+          "ChangeType": "Addition",
+          "Description": "Added the [displayLocationInformationRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        },
+        {
+          "Id": "ae616789-7c8f-4fe6-952d-19c96aad2658",
+          "ApiChange": "Property",
+          "ChangedApiName": "numberMatchingRequiredState",
+          "ChangeType": "Addition",
+          "Description": "Added the [numberMatchingRequiredState](https://docs.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorFeatureSettings?view=graph-rest-beta) resource",
+          "Target": "microsoftAuthenticatorFeatureSettings"
+        }
+      ],
+      "Id": "ae616789-7c8f-4fe6-952d-19c96aad2658",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-07-06T07:19:25.2404852Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
