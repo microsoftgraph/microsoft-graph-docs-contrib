@@ -22,12 +22,11 @@ headers := map[string]string{
 	"Prefer": "return=representation"
 	"If-Match": "W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=""
 }
-options := &msgraphsdk.PlannerTaskRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.PlannerTaskRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 plannerTaskId := "plannerTask-id"
-graphClient.Planner().TasksById(&plannerTaskId).Patch(options)
+graphClient.Planner().TasksById(&plannerTaskId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

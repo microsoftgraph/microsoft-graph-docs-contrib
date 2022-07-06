@@ -1,5 +1,5 @@
 ---
-title: "accessReview resource type"
+title: "accessReview resource type (deprecated)"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
 ms.localizationpriority: medium
 author: "markwahl-msft"

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 domainId := "domain-id"
 internalDomainFederationId := "internalDomainFederation-id"
-graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Delete(nil)
+graphClient.DomainsById(&domainId).FederationConfigurationById(&internalDomainFederationId).Delete()
 
 
 ```

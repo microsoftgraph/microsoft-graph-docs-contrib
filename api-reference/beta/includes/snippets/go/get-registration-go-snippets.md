@@ -10,11 +10,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.RegistrationRequestBuilderGetQueryParameters{
 	Expand: "microsoft.graph.meetingRegistration/customQuestions",
 }
-options := &msgraphsdk.RegistrationRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.RegistrationRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
 onlineMeetingId := "onlineMeeting-id"
-result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().Get(options)
+result, err := graphClient.Me().OnlineMeetingsById(&onlineMeetingId).Registration().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

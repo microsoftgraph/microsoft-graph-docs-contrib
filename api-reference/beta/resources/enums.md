@@ -11,9 +11,8 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
 ### teamTemplateAudience values 
-
-
 
 |Member|
 |:---|
@@ -21,6 +20,29 @@ Namespace: microsoft.graph
 |user|
 |public|
 |unknownFutureValue|
+
+### decisionItemPrincipalResourceMembershipType values 
+
+|Member|
+|:---|
+|direct|
+|indirect|
+|unknownFutureValue|
+
+### signInFrequencyAuthenticationType values
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### signInFrequencyInterval values
+
+|Member|
+|:---|
+|timeBased|
+|everyTime|
 
 #### authenticationProtocol values
 
@@ -602,6 +624,21 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
+### defaultMfaMethodType values 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
 ### clientCredentialType values 
 
 
@@ -938,6 +975,15 @@ Namespace: microsoft.graph
 |returned|
 |unknownFutureValue|
 |reassigned|
+
+### educationFeedbackResourceOutcomeStatus values
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|published|
+|failedPublish|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -2251,6 +2297,16 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
+|anonymizedIPAddress|
+|unfamiliarFeatures|
+|nationStateIPAddress|
+|realTimeThreatIntelligence|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|serviceProvider|
 
 ### signInAccessType values 
 
@@ -2909,6 +2965,8 @@ Possible values for user account types (group membership), per Windows definitio
 |viewer|
 |externalGuest|
 |unknownFutureValue|
+|scheduler|
+|member|
 
 ### bookingReminderRecipients values 
 
@@ -3011,16 +3069,6 @@ Possible values for user account types (group membership), per Windows definitio
 |securityGroup|
 |unknownFutureValue|
 
-### delegatedAdminRelationshipOperationStatus values 
-
-|Member|
-|:---|
-|notStarted|
-|running|
-|complete|
-|failed|
-|unknownFutureValue|
-
 ### delegatedAdminRelationshipOperationType values 
 
 |Member|
@@ -3042,7 +3090,7 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |created|
 |pending|
-|complete|
+|succeeded|
 |failed|
 |unknownFutureValue|
 

@@ -11,7 +11,7 @@ siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
 documentSetVersionId := "documentSetVersion-id"
-graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Delete(nil)
+graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).DocumentSetVersionsById(&documentSetVersionId).Delete()
 
 
 ```

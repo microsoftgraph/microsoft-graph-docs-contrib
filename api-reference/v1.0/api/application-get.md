@@ -20,9 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All    |
 |Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All |
-|Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## HTTP request
+Replace `{id}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
@@ -125,6 +126,13 @@ Content-type: application/json
             "displayName": "publisher_contoso",
             "verifiedPublisherId": "9999999",
              "addedDateTime": "2021-04-24T17:49:44Z"
+    },
+    "certification": {
+           "isPublisherAttested": true,
+           "isCertifiedByMicrosoft": true,
+           "lastCertificationDateTime": "2021-05-11T23:26:20Z",
+           "certificationExpirationDateTime": "2022-05-11T23:26:20Z",
+           "certificationDetailsUrl": "https://docs.microsoft.com/microsoft-365-app-certification/forward/azure/631a96bc-a705-4eda-9f99-fdaf9f54f6a2"
     },
     "tags": [],
     "tokenEncryptionKeyId": null,

@@ -10,10 +10,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.BundlesRequestBuilderGetQueryParameters{
 	Filter: "bundle/album%20ne%20null",
 }
-options := &msgraphsdk.BundlesRequestBuilderGetOptions{
-	Q: requestParameters,
+options := &msgraphsdk.BundlesRequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
 }
-result, err := graphClient.Drive().Bundles().Get(options)
+result, err := graphClient.Drive().Bundles().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -9,7 +9,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 caseId := "case-id"
 tagId := "tag-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).ChildTags().Get(nil)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).TagsById(&tagId).ChildTags().Get()
 
 
 ```

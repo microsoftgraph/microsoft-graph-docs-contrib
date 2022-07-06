@@ -5,7 +5,7 @@ ms.date: 09/17/2017
 title: BaseItemVersion
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 ---
 
 # BaseItemVersion resource type

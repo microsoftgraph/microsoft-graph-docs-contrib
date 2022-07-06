@@ -23,11 +23,8 @@ requestBody.SetEmailAddresses( []TypedEmailAddress {
 		"otherLabel": "Volunteer work",
 	}
 }
-options := &msgraphsdk.ContactRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 contactId := "contact-id"
-graphClient.Me().ContactsById(&contactId).Patch(options)
+graphClient.Me().ContactsById(&contactId).Patch(requestBody)
 
 
 ```

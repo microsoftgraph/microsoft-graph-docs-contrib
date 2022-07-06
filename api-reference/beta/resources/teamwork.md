@@ -20,6 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the teamTemplate resources from the teamTemplates navigation property.|
 
 ## Properties
@@ -28,9 +29,11 @@ Inherits from [entity](../resources/entity.md).
 |id|String| A unique identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|devices|[teamworkDevice](../resources/teamworkdevice.md) collection| The Teams devices provisioned for the tenant.|
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| A collection of deleted teams.|
+|devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
+|teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 |teamTemplates|[teamtemplate](../resources/teamtemplate.md) collection| The templates associated with a team.|
 |workforceIntegrations|[workforceIntegration](../resources/workforceintegration.md) collection| A workforce integration with shifts.|
 
@@ -44,11 +47,15 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
+
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamwork",
-  "id": "String (identifier)"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
 }
 ```
+
 ## See also
+
 - [userTeamwork resource](userteamwork.md)
+

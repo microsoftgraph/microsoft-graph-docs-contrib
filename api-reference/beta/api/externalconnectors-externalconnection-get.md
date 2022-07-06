@@ -49,14 +49,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
-
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -95,7 +94,6 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr
 ---
 
 
-
 <!-- markdownlint-disable MD024 -->
 ### Response
 <!-- markdownlint-enable MD024 -->
@@ -114,6 +112,7 @@ Content-type: application/json
 
 {
   "id": "contosohr",
+  "ingestedItemsCount": 700000,
   "name": "Contoso HR",
   "description": "Connection to index Contoso HR system",
   "state": "ready",

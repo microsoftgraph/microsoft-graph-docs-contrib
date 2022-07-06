@@ -10,18 +10,16 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewTerm()
 requestBody.SetLabels( []LocalizedLabel {
 	msgraphsdk.NewLocalizedLabel(),
-	SetAdditionalData(map[string]interface{}{
-		"languageTag": "en-US",
-		"name": "Car",
-		"isDefault": true,
-	}
-}
-options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
-	Body: requestBody,
+languageTag := "en-US"
+	SetLanguageTag(&languageTag)
+name := "Car"
+	SetName(&name)
+isDefault := true
+	SetIsDefault(&isDefault)
 }
 siteId := "site-id"
 setId := "set-id"
-result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(options)
+result, err := graphClient.SitesById(&siteId).TermStore().SetsById(&setId).Children().Post(requestBody)
 
 
 ```

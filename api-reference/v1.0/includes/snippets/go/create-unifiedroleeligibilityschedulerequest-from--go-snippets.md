@@ -28,10 +28,7 @@ type := "afterDateTime"
 expiration.SetType(&type)
 endDateTime, err := time.Parse(time.RFC3339, "2024-04-10T00:00:00Z")
 expiration.SetEndDateTime(&endDateTime)
-options := &msgraphsdk.RoleEligibilityScheduleRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(options)
+result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(requestBody)
 
 
 ```

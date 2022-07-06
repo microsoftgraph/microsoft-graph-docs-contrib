@@ -10,11 +10,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewSessionIdRequestBody()
 sessionId := "22553876-f5ab-4529-bffb-cfe50aa89f87"
 requestBody.SetSessionId(&sessionId)
-options := &msgraphsdk.ClearPresenceRequestBuilderPostOptions{
-	Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().ClearPresence(user-id).Post(options)
+graphClient.UsersById(&userId).Presence().ClearPresence(user-id).Post(requestBody)
 
 
 ```

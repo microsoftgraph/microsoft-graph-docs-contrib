@@ -20,10 +20,7 @@ requestBody.SetFiles( []AgreementFileLocalization {
 		"isDefault": true,
 	}
 }
-options := &msgraphsdk.AgreementsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(options)
+result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(requestBody)
 
 
 ```

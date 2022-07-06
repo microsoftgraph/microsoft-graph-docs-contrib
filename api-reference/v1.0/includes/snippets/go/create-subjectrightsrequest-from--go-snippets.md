@@ -35,10 +35,7 @@ dataSubject.SetAdditionalData(map[string]interface{}{
 	"phoneNumber": "String",
 	"SSN": "String",
 }
-options := &msgraphsdk.SubjectRightsRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(options)
+result, err := graphClient.Privacy().SubjectRightsRequests().Post(requestBody)
 
 
 ```

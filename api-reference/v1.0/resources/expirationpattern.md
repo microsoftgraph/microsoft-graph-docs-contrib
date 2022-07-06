@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment. An access package assignment that results from such a request also has a schedule. The expiration field of an [entitlementManagementSchedule](entitlementmanagementschedule.md) indicates when the access package assignment should expire.
 
-In PIM, use this resource to define when a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) or [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) object expires.
+In PIM, use this resource to define when a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) or [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) object expires. The settings allowed for this object are dependent on the [settings for the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md). For example, if the settings of the Azure AD role specifies that permanent eligible assignments aren't allowed, specifying `noExpiration` for the **type** property returns an error.
 
 ## Properties
 |Property|Type|Description|

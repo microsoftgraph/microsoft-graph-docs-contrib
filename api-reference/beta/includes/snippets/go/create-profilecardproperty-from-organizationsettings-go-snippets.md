@@ -12,17 +12,18 @@ directoryPropertyName := "CustomAttribute1"
 requestBody.SetDirectoryPropertyName(&directoryPropertyName)
 requestBody.SetAnnotations( []ProfileCardAnnotation {
 	msgraphsdk.NewProfileCardAnnotation(),
-	SetAdditionalData(map[string]interface{}{
-		"displayName": "Cost Center",
-		"localizations":  []Object {
-		}
+displayName := "Cost Center"
+	SetDisplayName(&displayName)
+	SetLocalizations( []DisplayNameLocalization {
+		msgraphsdk.NewDisplayNameLocalization(),
+languageTag := "ru-RU"
+		SetLanguageTag(&languageTag)
+displayName := "центр затрат"
+		SetDisplayName(&displayName)
 	}
 }
-options := &msgraphsdk.ProfileCardPropertiesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 organizationId := "organization-id"
-result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardProperties().Post(options)
+result, err := graphClient.OrganizationById(&organizationId).Settings().ProfileCardProperties().Post(requestBody)
 
 
 ```

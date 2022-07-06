@@ -14,11 +14,8 @@ requestBody.SetCredentials( []SynchronizationSecretKeyStringValuePair {
 		"@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair",
 	}
 }
-options := &msgraphsdk.AcquireAccessTokenRequestBuilderPostOptions{
-	Body: requestBody,
-}
 applicationId := "application-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(options)
+graphClient.ApplicationsById(&applicationId).Synchronization().AcquireAccessToken(application-id).Post(requestBody)
 
 
 ```

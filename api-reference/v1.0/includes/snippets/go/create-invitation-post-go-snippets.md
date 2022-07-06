@@ -12,10 +12,7 @@ invitedUserEmailAddress := "admin@fabrikam.com"
 requestBody.SetInvitedUserEmailAddress(&invitedUserEmailAddress)
 inviteRedirectUrl := "https://myapp.contoso.com"
 requestBody.SetInviteRedirectUrl(&inviteRedirectUrl)
-options := &msgraphsdk.InvitationsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.Invitations().Post(options)
+result, err := graphClient.Invitations().Post(requestBody)
 
 
 ```

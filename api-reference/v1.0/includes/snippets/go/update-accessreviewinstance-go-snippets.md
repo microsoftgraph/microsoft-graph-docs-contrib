@@ -19,29 +19,26 @@ scope.SetAdditionalData(map[string]interface{}{
 }
 requestBody.SetReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
-		"queryType": "MicrosoftGraph",
-	}
+query := "/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 	msgraphsdk.NewAccessReviewReviewerScope(),
-	SetAdditionalData(map[string]interface{}{
-		"query": "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5",
-		"queryType": "MicrosoftGraph",
-	}
-}
-options := &msgraphsdk.AccessReviewInstanceRequestBuilderPatchOptions{
-	Body: requestBody,
+query := "/users/1ed8ac56-4827-4733-8f80-86adc2e67db5"
+	SetQuery(&query)
+queryType := "MicrosoftGraph"
+	SetQueryType(&queryType)
 }
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
-graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Patch(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).Patch(requestBody)
 
 
 ```

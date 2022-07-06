@@ -13,11 +13,8 @@ requestBody.SetInternalDueDateTime(&internalDueDateTime)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.subjectRightsRequest",
 }
-options := &msgraphsdk.SubjectRightsRequestRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 subjectRightsRequestId := "subjectRightsRequest-id"
-graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Patch(options)
+graphClient.Privacy().SubjectRightsRequestsById(&subjectRightsRequestId).Patch(requestBody)
 
 
 ```

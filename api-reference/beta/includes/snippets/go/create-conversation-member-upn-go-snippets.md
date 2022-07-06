@@ -17,11 +17,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.aadUserConversationMember",
 	"user@odata.bind": "https://graph.microsoft.com/beta/users/jacob@contoso.com",
 }
-options := &msgraphsdk.MembersRequestBuilderPostOptions{
-	Body: requestBody,
-}
 chatId := "chat-id"
-result, err := graphClient.ChatsById(&chatId).Members().Post(options)
+result, err := graphClient.ChatsById(&chatId).Members().Post(requestBody)
 
 
 ```

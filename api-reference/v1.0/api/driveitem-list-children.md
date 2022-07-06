@@ -3,7 +3,7 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: high
-ms.prod: "sharepoint"
+ms.prod: sharepoint
 description: "Return a collection of DriveItems in the children relationship of a DriveItem."
 doc_type: apiPageType
 ---
@@ -110,6 +110,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-children-files-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-children-files-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

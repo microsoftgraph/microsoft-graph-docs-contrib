@@ -12,23 +12,22 @@ displayName := "Books"
 requestBody.SetDisplayName(&displayName)
 requestBody.SetColumns( []ColumnDefinition {
 	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "Author",
-	}
+name := "Author"
+	SetName(&name)
+text := msgraphsdk.NewTextColumn()
+	SetText(text)
 	msgraphsdk.NewColumnDefinition(),
-	SetAdditionalData(map[string]interface{}{
-		"name": "PageCount",
-	}
+name := "PageCount"
+	SetName(&name)
+number := msgraphsdk.NewNumberColumn()
+	SetNumber(number)
 }
 list := msgraphsdk.NewListInfo()
 requestBody.SetList(list)
 template := "genericList"
 list.SetTemplate(&template)
-options := &msgraphsdk.ListsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Lists().Post(options)
+result, err := graphClient.SitesById(&siteId).Lists().Post(requestBody)
 
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let list = await client.api('/sites/{siteId}/lists/{listId}')
+let operations = await client.api('/sites/{site-ID}/operations')
 	.version('beta')
 	.get();
 

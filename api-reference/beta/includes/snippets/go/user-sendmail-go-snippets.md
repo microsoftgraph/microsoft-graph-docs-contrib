@@ -20,20 +20,21 @@ content := "The new cafeteria is open."
 body.SetContent(&content)
 message.SetToRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "samanthab@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 message.SetCcRecipients( []Recipient {
 	msgraphsdk.NewRecipient(),
-	SetAdditionalData(map[string]interface{}{
-	}
+emailAddress := msgraphsdk.NewEmailAddress()
+	SetEmailAddress(emailAddress)
+address := "danas@contoso.onmicrosoft.com"
+	emailAddress.SetAddress(&address)
 }
 saveToSentItems := "false"
 requestBody.SetSaveToSentItems(&saveToSentItems)
-options := &msgraphsdk.SendMailRequestBuilderPostOptions{
-	Body: requestBody,
-}
-graphClient.Me().SendMail().Post(options)
+graphClient.Me().SendMail().Post(requestBody)
 
 
 ```

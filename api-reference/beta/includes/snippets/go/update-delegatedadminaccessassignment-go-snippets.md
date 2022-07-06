@@ -27,13 +27,12 @@ accessDetails.SetUnifiedRoles( []UnifiedRole {
 headers := map[string]string{
 	"If-Match": "W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==""
 }
-options := &msgraphsdk.DelegatedAdminAccessAssignmentRequestBuilderPatchOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.DelegatedAdminAccessAssignmentRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
 }
 delegatedAdminRelationshipId := "delegatedAdminRelationship-id"
 delegatedAdminAccessAssignmentId := "delegatedAdminAccessAssignment-id"
-graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignmentsById(&delegatedAdminAccessAssignmentId).Patch(options)
+graphClient.TenantRelationships().DelegatedAdminRelationshipsById(&delegatedAdminRelationshipId).AccessAssignmentsById(&delegatedAdminAccessAssignmentId).PatchWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

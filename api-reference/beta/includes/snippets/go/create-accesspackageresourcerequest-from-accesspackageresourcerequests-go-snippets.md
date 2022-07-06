@@ -28,10 +28,7 @@ originId := "https://contoso.sharepoint.com/sites/Sales"
 accessPackageResource.SetOriginId(&originId)
 originSystem := "SharePointOnline"
 accessPackageResource.SetOriginSystem(&originSystem)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

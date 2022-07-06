@@ -14,10 +14,7 @@ roleDefinitionId := "ae79f266-94d4-4dab-b730-feca7e132178"
 requestBody.SetRoleDefinitionId(&roleDefinitionId)
 appScopeId := "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 requestBody.SetAppScopeId(&appScopeId)
-options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(options)
+result, err := graphClient.RoleManagement().EntitlementManagement().RoleAssignments().Post(requestBody)
 
 
 ```

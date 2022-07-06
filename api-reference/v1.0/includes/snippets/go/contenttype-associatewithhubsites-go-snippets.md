@@ -13,12 +13,9 @@ requestBody.SetHubSiteUrls( []String {
 }
 propagateToExistingLists := false
 requestBody.SetPropagateToExistingLists(&propagateToExistingLists)
-options := &msgraphsdk.AssociateWithHubSitesRequestBuilderPostOptions{
-	Body: requestBody,
-}
 siteId := "site-id"
 contentTypeId := "contentType-id"
-graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(options)
+graphClient.SitesById(&siteId).ContentTypesById(&contentTypeId).AssociateWithHubSites(site-id, contentType-id).Post(requestBody)
 
 
 ```

@@ -11,11 +11,8 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
 	"displayName": "Section group name",
 }
-options := &msgraphsdk.SectionGroupsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 sectionGroupId := "sectionGroup-id"
-graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(options)
+graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).SectionGroups().Post(requestBody)
 
 
 ```

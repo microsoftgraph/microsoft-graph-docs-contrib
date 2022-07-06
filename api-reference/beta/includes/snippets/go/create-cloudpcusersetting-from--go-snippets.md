@@ -23,10 +23,7 @@ restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled)
 requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.cloudPcUserSetting",
 }
-options := &msgraphsdk.UserSettingsRequestBuilderPostOptions{
-	Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(requestBody)
 
 
 ```

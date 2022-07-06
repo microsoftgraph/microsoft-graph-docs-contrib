@@ -14,11 +14,8 @@ iconType := "plane"
 requestBody.SetIconType(&iconType)
 isActive := true
 requestBody.SetIsActive(&isActive)
-options := &msgraphsdk.TimeOffReasonsRequestBuilderPostOptions{
-	Body: requestBody,
-}
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).Schedule().TimeOffReasons().Post(options)
+result, err := graphClient.TeamsById(&teamId).Schedule().TimeOffReasons().Post(requestBody)
 
 
 ```

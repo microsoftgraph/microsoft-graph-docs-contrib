@@ -12,11 +12,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
 	"@odata.type": "#microsoft.graph.socialIdentityProvider",
 	"responseType": "id_token",
 }
-options := &msgraphsdk.IdentityProviderBaseRequestBuilderPatchOptions{
-	Body: requestBody,
-}
 identityProviderBaseId := "identityProviderBase-id"
-graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(options)
+graphClient.Identity().IdentityProvidersById(&identityProviderBaseId).Patch(requestBody)
 
 
 ```

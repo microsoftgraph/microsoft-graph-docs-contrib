@@ -7,13 +7,15 @@ ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
-# task resource type
+# task resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a task, such as a piece of work or personal item, that can be tracked and completed. A **Task** is always contained in a [task list](basetasklist.md). 
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Represents a task, such as a piece of work or personal item, that can be tracked and completed. A **task** is always contained in a [base task list](basetasklist.md). 
 
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
@@ -30,8 +32,8 @@ Inherits from [baseTask](../resources/basetask.md).
 |[Update task](../api/basetask-update.md)|[task](../resources/task.md)|Update the properties of a [task](../resources/task.md) object.|
 |[Delete task](../api/basetask-delete.md)|None|Deletes a [task](../resources/task.md) object.|
 |[move](../api/basetask-move.md)|[baseTask](../resources/basetask.md)|Move the message to a different list.|
-|[List checklistItems](../api/basetask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
-|[Create checklistItem](../api/basetask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
+|[List checklistItems](../api/todotask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) collection|Get the checklistItem resources from the checklistItems navigation property.|
+|[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new checklistItem object.|
 |[List linkedResources](../api/basetask-list-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md) collection|Get the linkedResource_v2 resources from the linkedResources navigation property.|
 |[Create linkedResource](../api/basetask-post-linkedresources.md)|[linkedResource_v2](../resources/linkedresource_v2.md)|Create a new linkedResource_v2 object.|
 

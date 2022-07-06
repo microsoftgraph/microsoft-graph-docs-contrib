@@ -31,7 +31,7 @@ var options = new TokenCredentialOptions
 };
 
 // Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
+// Prompt contains the generated device code that you must
 // enter during the auth process in the browser
 Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
     Console.WriteLine(code.Message);

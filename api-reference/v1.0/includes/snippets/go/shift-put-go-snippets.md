@@ -18,13 +18,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
 	"Prefer": "return=representation"
 }
-options := &msgraphsdk.ShiftRequestBuilderPutOptions{
-	Body: requestBody,
-	H: headers,
+options := &msgraphsdk.ShiftRequestBuilderPutRequestConfiguration{
+	Headers: headers,
 }
 teamId := "team-id"
 shiftId := "shift-id"
-graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).Put(options)
+graphClient.TeamsById(&teamId).Schedule().ShiftsById(&shiftId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

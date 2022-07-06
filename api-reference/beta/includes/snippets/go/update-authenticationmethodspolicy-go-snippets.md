@@ -26,10 +26,7 @@ authenticationMethodsRegistrationCampaign.SetIncludeTargets( []AuthenticationMet
 		"targetedAuthenticationMethod": "microsoftAuthenticator",
 	}
 }
-options := &msgraphsdk.AuthenticationMethodsPolicyRequestBuilderPatchOptions{
-	Body: requestBody,
-}
-graphClient.Policies().AuthenticationMethodsPolicy().Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().Patch(requestBody)
 
 
 ```
