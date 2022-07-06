@@ -121,6 +121,7 @@ Images on OneNote pages are represented by **img** elements. An **img** element 
 | alt | The supplied alt text for the image. |
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-render-src |Either **data-render-src** or **src** is required.<br/><br/>The webpage to render as a bit-mapped image on the OneNote page:<br/><br/> - `data-render-src="https://..."` for a public URL.<br/><br/> - `data-render-src="name:BlockName"` for an image part in the "Presentation" block of a [multipart request](/graph/api/section-post-pages#example).<br/><br/>This method is useful when the webpage is more complex than the OneNote page can faithfully render, or when the page requires login credentials.|
+| data-tag | A [note tag](onenote-note-tags.md) on the element. |
 | style |The position and size properties for the image: **position** (**absolute** only), **left**, **top**, **width**, and **height**.<br/><br/>Size can be set on any image.<br/><br/>Position properties are used to create an [absolute positioned](onenote-abs-pos.md) image, only if the image is a direct child of the body when the body sets `data-absolute-enabled="true"`.<br/><br/>Example: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>In the output HTML, the image size is returned separately in **width** and **height** attributes. |
 | src |Either **src** or **data-render-src** is required.<br/><br/>The image to render on the OneNote page:<br/><br/>- `src="https://..."` for a URL to a publicly available image on the Internet.<br/><br/> - `src="name:BlockName"` for a named part in a multipart request that represents the image.|
 | width, height | The width or height of the image, in pixels but without the px. Example: `width="400"` |
@@ -587,7 +588,7 @@ This is the input HTML sent in the message body to create the page.
 
 This is the output HTML that Microsoft Graph returns when you [get page content](onenote-get-content.md).
 
-> **Note:** 
+> [!NOTE]
 > When you [create a page](onenote-create-page.md) or [get page metadata](/graph/api/page-get), the API returns the *content* endpoint URL of the page in the **contentUrl** property.
 
 ```html

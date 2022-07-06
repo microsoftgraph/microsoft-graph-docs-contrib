@@ -42,7 +42,7 @@ creation and last modification dates.
 ## Get MIME content of an Outlook message
 
 You can get the MIME representation of a message by appending the `$value` segment when 
-[getting the message](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true): 
+[getting the message](/graph/api/message-get): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -278,4 +278,4 @@ Find out more about:
 
 - [Get the MIME content of an item attachment](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0
+- [Use the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0
