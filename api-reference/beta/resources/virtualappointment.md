@@ -21,7 +21,7 @@ Represents information about a virtual appointment, including the client join UR
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create virtualAppointment](../api/onlinemeeting-virtualappointment-put.md)|[virtualAppointment](../resources/onlinemeeting-virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
+|[Create virtualAppointment](../api/onlinemeeting-put-virtualappointment.md)|[virtualAppointment](../resources/virtualappointment.md)|Create a new [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Get virtualAppointment](../api/virtualappointment-get.md)|[virtualAppointment](../resources/virtualappointment.md)|Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Update virtualAppointment](../api/virtualappointment-update.md)|[virtualAppointment](../resources/virtualappointment.md)|Update the properties of a [virtualAppointment](../resources/virtualappointment.md) object.|
 |[Delete virtualAppointment](../api/virtualappointment-delete.md)|None|Delete a [virtualAppointment](../resources/virtualappointment.md) object.|
