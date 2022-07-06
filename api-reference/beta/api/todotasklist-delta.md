@@ -62,6 +62,8 @@ _id_ property is always returned.
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
+> **Note:** You should used odata.maxpagesize greater than or equal to 10 in request header for delta function to work properly for **todoTaskList**.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and [todoTaskList](../resources/todotasklist.md) collection object in the response body.
@@ -77,7 +79,7 @@ The main differences between tracking **todoTaskList** and tracking **todoTask**
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
+Prefer: odata.maxpagesize=12
 ```
 ### Response
 

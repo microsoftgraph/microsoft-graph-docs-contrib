@@ -123,6 +123,10 @@ Content-type: application/json
       "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
+          "name": "NewUnifiedGroupWritebackDefault",
+          "value": "false"
+        },
+        {
           "name": "EnableMIPLabels",
           "value": "true"
         },

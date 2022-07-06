@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceCategory"
 description: "Deletes a deviceCategory."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
