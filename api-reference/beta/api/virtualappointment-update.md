@@ -36,10 +36,11 @@ PATCH /onlineMeeting/{onlineMeetingId}/virtualAppointment
 
 ## Request headers
 
-| Name            | Description               |
-| :-------------- | :------------------------ |
-| Authorization   | Bearer {token}. Required. |
-| Accept-Language | Language. Optional.       |
+| Name            | Description                |
+| :-------------- | :--------------------------|
+| Authorization   | Bearer {token}. Required.  |
+| Accept-Language | Language. Optional.        |
+| Content-Type    | application/json. Required.|
 
 ## Request body
 
