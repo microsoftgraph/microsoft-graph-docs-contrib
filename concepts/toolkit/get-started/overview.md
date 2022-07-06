@@ -1,6 +1,6 @@
 ---
 title: "Get started with Microsoft Graph Toolkit"
-description: "Learn how to set up your Microsoft 365 tenant and development environment and use Microsoft Graph Toolkit."
+description: "Learn how to set up your Microsoft 365 tenant and development environment to use Microsoft Graph Toolkit. Install NPM packages for components and providers."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -115,9 +115,11 @@ The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePo
 
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
 
-- [Register an Azure Active Directory app](./add-aad-app-registration.md)
+- [Register an Azure Active Directory (Azure AD) app](./add-aad-app-registration.md)
 - [Build a web app (JavaScript)](./build-a-web-app.md) (vanilla JavaScript)
 - [Build a web app (React)](./use-toolkit-with-react.md)
 - [Build a web app (Angular)](./use-toolkit-with-angular.md)
 - [Build a SharePoint web part](./build-a-sharepoint-web-part.md)
 - [Build a Microsoft Teams tab](./build-a-microsoft-teams-tab.md)
+- [Build a Microsoft Teams SSO tab](./build-a-microsoft-teams-sso-tab.md)
+- [Build an Electron app](./build-an-electron-app.md)

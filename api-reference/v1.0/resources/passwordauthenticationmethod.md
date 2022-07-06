@@ -1,6 +1,6 @@
 ---
 title: "passwordAuthenticationMethod resource type"
-description: "A representation of a password registered to a user."
+description: "A representation of a user's password."
 ms.localizationpriority: medium
 author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 A representation of a user's password. For security, the password itself will never be returned in the object, but action can be taken to reset a password.
+
+Inherits from [authenticationMethod](../resources/authenticationmethod.md).
 
 ## Methods
 
