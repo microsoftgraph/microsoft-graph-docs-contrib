@@ -1,7 +1,7 @@
 ---
 title: "Get learningProvider"
 description: "Read the properties and relationships of a learningProvider object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**provider.read**|
+|Delegated (personal Microsoft account)|**Not Supported**|
+|Application|**Not Supported**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/{learningProviderId}
+GET /employeeExperience/learningProviders/{id} 
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/{learningProviderId}
+GET /employeeExperience/learningProviders/{id} 
 ```
 
 
@@ -72,20 +72,18 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+Returns 200 OK
 
-{
-  "value": {
-    "@odata.type": "#microsoft.vivaLearning.learningProvider",
-    "displayName": "String",
-    "isEnabled": "Boolean",
-    "loginWebUrl": "String",
-    "longLogoWebUrlForDarkTheme": "String",
-    "longLogoWebUrlForLightTheme": "String",
-    "squareLogoWebUrlForDarkTheme": "String",
-    "squareLogoWebUrlForLightTheme": "String"
-  }
+{    
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders/$entity",
+    "id": "13727311-e7bb-470d-8b20-6a23d9030d70",
+    "displayName": "LinkedInHub",
+    "squareLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "isEnabled": true
 }
+
 ```
 

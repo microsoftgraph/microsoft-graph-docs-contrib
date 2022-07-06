@@ -1,7 +1,7 @@
 ---
 title: "Delete learningContent"
 description: "Deletes a learningContent object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**Learningcontent.readwrite.all**|
+|Delegated (personal Microsoft account)|**Not Supported**|
+|Application|**Learningcontent.readwrite.all**|
 
 ## HTTP request
 
@@ -54,8 +54,8 @@ The following is an example of a request.
   "name": "delete_learningcontent"
 }
 -->
-``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}
+``` http 
+GET /employeeExperience/learningProviders/{registrationId}/learningContents?$skip={skip}&$top={top} 
 ```
 
 
@@ -68,6 +68,65 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+Returns
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents",
+    "value": [{
+        "externalId": "LP4771",
+        "title":  "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+        "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+        "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle",
+        "sourceName": "MSLibrary",
+        "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+        "languageTag": "en-us",
+        "numberOfPages": 10,
+        "duration": "PT20M",
+        "format": "Book",
+        "createdDateTime": "2018-01-01T00:00:00",
+        "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+        "contributor": "Scott Simpson",
+        "additionalTags": [
+            "Create private or public teams",
+            "Add members to teams"
+        ],
+        "skillTags": [
+            "Create teams",
+            "Teams channels",
+            "Teams members"
+        ],
+        "isActive": true,
+        "isPremium": false,
+        "isSearchable": true
+    },
+    {
+        "externalId": "LP4772",
+        "title":  "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
+        "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
+        "contentWebUrl": "https://docs.microsoft.com/en-us/learn/modules/manage-classes-resources-assessment-planning-beedle/",
+        "sourceName": "MSLibrary",
+        "thumbnailWebUrl": "https://syndetics.com/index.aspx?isbn=9783319672175/LC.GIF",
+        "languageTag": "en-us",
+        "numberOfPages": 10,
+        "duration": "PT20M",
+        "format": "Book",
+        "createdDateTime": "2018-01-01T00:00:00",
+        "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
+        "contributor": "Scott Simpson",
+        "additionalTags": [
+            "Create private or public teams",
+            "Add members to teams"
+        ],
+        "skillTags": [
+            "Create teams",
+            "Teams channels",
+            "Teams members"
+        ],
+        "isActive": true,
+        "isPremium": false,
+        "isSearchable": true
+    }]
+}
+
+
 ```
 

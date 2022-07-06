@@ -1,7 +1,7 @@
 ---
 title: "Delete learningProvider"
 description: "Deletes a learningProvider object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**provider.readwrite**|
+|Delegated (personal Microsoft account)|**Not Supported**|
+|Application|**Not Supported**|
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/{learningProviderId}
+DELETE /employeeExperience/learningProviders/{id} 
 ```
 
 

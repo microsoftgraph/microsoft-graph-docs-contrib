@@ -1,7 +1,7 @@
 ---
 title: "learningContent resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: resourcePageType
@@ -27,24 +27,24 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalTags|String collection|**TODO: Add Description**|
-|contentWebUrl|String|**TODO: Add Description**|
-|contributor|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|duration|Duration|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|format|String|**TODO: Add Description**|
-|isActive|Boolean|**TODO: Add Description**|
-|isPremium|Boolean|**TODO: Add Description**|
-|isSearchable|Boolean|**TODO: Add Description**|
-|languageTag|String|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|numberOfPages|Int32|**TODO: Add Description**|
-|skillTags|String collection|**TODO: Add Description**|
-|sourceName|String|**TODO: Add Description**|
-|thumbnailWebUrl|String|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|additionalTags|String collection|**Keywords, topics, other tags associated with the Learning Content**|
+|contentWebUrl|String|**Content web url for the Learning Content**|
+|contributor|String|**Author/creator/contributor of the Learning Content**|
+|createdDateTime|DateTimeOffset|**Date the Learning Content was created in 'yyyy-MM-ddThh:mm:ssZ' in UTC**|
+|description|String|**Description/summary for Learning Content**|
+|duration|Duration|**Duration of the Learning Content in seconds**|
+|externalId|String|**External Content id for the Learning Content**|
+|format|String|**Format of the Learning Content.Ex: Course,Video,Book,Book Summary,Audiobook Summary**|
+|isActive|Boolean|**Indicates whether the content is active or not. Inactive content will not show up in UI. The default value is true**|
+|isPremium|Boolean|**Indicates whether the Learning content requires user to sign-in on the Learning provider platform or not. The default value is false**|
+|isSearchable|Boolean|**Indicates whether the Learning Content is searchable or not. The default value is true**|
+|languageTag|String|**Language of the Learning Content ex: 'en-us', 'fr-fr'**|
+|lastModifiedDateTime|DateTimeOffset|**Date the Learning Content was last modified in 'yyyy-MM-ddThh:mm:ssZ' in UTC**|
+|numberOfPages|Int32|**number of pages of the Learning Content. Ex: Number of pages**|
+|skillTags|String collection|**Skills tags associated with the Learning Content**|
+|sourceName|String|**Learning content source name like LinkedIn Learning, Coursera**|
+|thumbnailWebUrl|String|**URL of Learning Content thumbnail image**|
+|title|String|**Title of the Learning Content**|
 
 ## Relationships
 None.

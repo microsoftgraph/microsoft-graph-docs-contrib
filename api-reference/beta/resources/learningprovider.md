@@ -1,7 +1,7 @@
 ---
 title: "learningProvider resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: resourcePageType
@@ -29,18 +29,18 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|isEnabled|Boolean|**TODO: Add Description**|
+|displayName|String|**Display Name to be shown in Viva Learning**|
+|isEnabled|Boolean|**State of the provider**|
 |loginWebUrl|String|**TODO: Add Description**|
-|longLogoWebUrlForDarkTheme|String|**TODO: Add Description**|
-|longLogoWebUrlForLightTheme|String|**TODO: Add Description**|
-|squareLogoWebUrlForDarkTheme|String|**TODO: Add Description**|
-|squareLogoWebUrlForLightTheme|String|**TODO: Add Description**|
+|longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
+|longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
+|squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
+|squareLogoWebUrlForLightTheme|String|**square logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app**|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|learningContents|[learningContent](../resources/learningcontent.md) collection|**TODO: Add Description**|
+|learningContents|[learningContent](../resources/learningcontent.md) collection|**Learning catalog items for the Provider**|
 
 ## JSON representation
 The following is a JSON representation of the resource.

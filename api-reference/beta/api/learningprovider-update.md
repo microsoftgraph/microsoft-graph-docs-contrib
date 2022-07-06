@@ -1,7 +1,7 @@
 ---
 title: "Update learningProvider"
 description: "Update the properties of a learningProvider object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
+author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=API/Document/Guidelines/Metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|**provider.readwrite**|
+|Delegated (personal Microsoft account)|**Not Supported**|
+|Application|**Not Supported**|
 
 ## HTTP request
 
@@ -45,13 +45,13 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|isEnabled|Boolean|**TODO: Add Description** Optional.|
+|displayName|String|**Display Name to be shown in Viva Learning** Required.|
+|isEnabled|Boolean|**TODO: State of the provider** Optional.|
 |loginWebUrl|String|**TODO: Add Description** Optional.|
-|longLogoWebUrlForDarkTheme|String|**TODO: Add Description** Required.|
-|longLogoWebUrlForLightTheme|String|**TODO: Add Description** Required.|
-|squareLogoWebUrlForDarkTheme|String|**TODO: Add Description** Required.|
-|squareLogoWebUrlForLightTheme|String|**TODO: Add Description** Required.|
+|longLogoWebUrlForDarkTheme|String|**long logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
+|longLogoWebUrlForLightTheme|String|**long logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
+|squareLogoWebUrlForDarkTheme|String|**square logo url for the dark mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
+|squareLogoWebUrlForLightTheme|String|**square logo url for the light mode. Needs to be publicly accessible image. This image would be saved to the Blob storage of Viva Learning for rendering within Viva Learning app** Required.|
 
 
 
@@ -69,20 +69,17 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/{learningProviderId}
-Content-Type: application/json
-Content-length: 319
+PATCH /employeeExperience/learningProviders/{id} HTTP/1.1 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.learningProvider",
-  "displayName": "String",
-  "isEnabled": "Boolean",
-  "loginWebUrl": "String",
-  "longLogoWebUrlForDarkTheme": "String",
-  "longLogoWebUrlForLightTheme": "String",
-  "squareLogoWebUrlForDarkTheme": "String",
-  "squareLogoWebUrlForLightTheme": "String"
+    "displayName": "Microsoft",
+    "squareLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
+    "isEnabled": false
 }
+
 ```
 
 
@@ -95,18 +92,8 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
+Returns 204 No Content
 
-{
-  "@odata.type": "#microsoft.graph.learningProvider",
-  "displayName": "String",
-  "isEnabled": "Boolean",
-  "loginWebUrl": "String",
-  "longLogoWebUrlForDarkTheme": "String",
-  "longLogoWebUrlForLightTheme": "String",
-  "squareLogoWebUrlForDarkTheme": "String",
-  "squareLogoWebUrlForLightTheme": "String"
-}
+
 ```
 
