@@ -3099,3 +3099,12 @@ Possible values for user account types (group membership), per Windows definitio
 |terminating|
 |terminationRequested|
 |unknownFutureValue|
+
+### featureTargetType values 
+
+|Member|
+|:---|
+|group|
+|administrativeUnit|
+|role|
+|unknownFutureValue|
