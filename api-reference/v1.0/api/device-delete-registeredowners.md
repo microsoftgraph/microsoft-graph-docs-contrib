@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-registeredowners-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 

@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/security/cases/eDiscoveryCases/061b9a92-8926-4b
 [!INCLUDE [sample-code](../includes/snippets/go/reopen-ediscoverycase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reopen-ediscoverycase-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

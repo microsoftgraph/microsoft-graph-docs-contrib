@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a complex type that represents the various texts that can be hidden on the sign-in page for a tenant.
+Represents the various text strings that can be hidden on the sign-in page for a tenant.
 
 ## Properties
 
