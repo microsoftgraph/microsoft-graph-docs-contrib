@@ -1,6 +1,6 @@
 ---
 title: "List teamTemplates"
-description: "Get a list of the teamTemplate objects and their properties."
+description: "Get a list of the teamTemplate objects and their properties for a tenant."
 author: "Charlieforce"
 ms.localizationpriority: medium
 ms.prod: "teamwork"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [teamsTemplate](../resources/teamstemplate.md) objects available for the tenant. 
+Get the list of [teamsTemplate](../resources/teamstemplate.md) objects that are available for the tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 ```
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
