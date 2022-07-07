@@ -188,7 +188,7 @@ Content-Length: 0
 ```
 
 ## Alternative step: Cancel the upload session
-At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns a `HTTP 204 No Content` response code.
+At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial URL to delete the upload session. A successful operation returns an HTTP `204 No Content` response code.
 
 ### Example: Cancel the upload session
 
