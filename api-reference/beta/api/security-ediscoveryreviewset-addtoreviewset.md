@@ -70,12 +70,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
 Content-Type: application/json
 
 {
     "search": {
-        "id": "7c165312-d8db-48b5-9129-1af50932df53"
+        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
     },
     "additionalDataOptions": "linkedFiles"
 }
@@ -91,5 +91,5 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
