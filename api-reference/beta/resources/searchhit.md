@@ -34,14 +34,14 @@ Represents a single result within the list of search results.
 |_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
 
 ### hitId format
-| Id Format     | Entity Type        | 
-|:-------------|:------------|
-|RestId|message|
-|EwsId|event|
-|GUID|list,listItem|
-|Host,GUID,GUID|site|
-|Encoded String|drive, driveItem, externalItem|
-|userId@tenantId|person|
+| Id Format     | Entity Type        | Description |
+|:-------------|:------------|:------------|
+|RestId|message|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgBGAAAAAADm35sgHbzESapJ8_BjBlhEBwDAYtphe7dsRbDrOT-HAHoKAACmqNsoAADAYtphe7dsRbDrOT-HAHoKAAFsBhyEAAA=|
+|EwsId|event|Sample: AAMkAGIwMDA5MmY0LWY5ZTgtNGY5YS04NzczLWNhNjc0ZGIyZDBjYgFRAAgI232z8Q+AAEYAAAAA5t+bIB28xEmqSfPgYwZYRAcAwGLaYXu3bEWw6zk/xwB6CgAAAAABDQAAwGLaYXu3bEWw6zk/xwB6CgABGnD/jwAAEA==|
+|GUID|list,listItem|-|
+|Host,GUID,GUID|site|Sample: microsoft.sharepoint.com,a5eb6988-c9ad-44be-b3b4-d334d01066c0,4c5ce7de-dbe6-4807-9909-3018f0b83266|
+|Encoded String|drive, driveItem, externalItem|-|
+|GUID@GUID|person|userId@tenantId|
 
 ## JSON representation
 
