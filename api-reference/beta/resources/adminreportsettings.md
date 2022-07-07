@@ -1,6 +1,6 @@
 ---
 title: "adminReportSettings resource type"
-description: "Represents the report setting of a tenant. "
+description: "Represents the tenant-level settings for Microsoft 365 Reports."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "reports"
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the report setting of a tenant.
+Represents the tenant-level settings for Microsoft 365 Reports.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get adminReportSettings](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Read the properties and relationships of an [adminReportSettings](../resources/adminreportsettings.md) object.|
-|[Update adminReportSettings](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update the properties of an [adminReportSettings](../resources/adminreportsettings.md) object.|
+|[Get adminReportSettings](../api/adminreportsettings-get.md)|[adminReportSettings](../resources/adminreportsettings.md)|Get the tenant-level settings for Microsoft 365 reports.|
+|[Update adminReportSettings](../api/adminreportsettings-update.md)|[adminReportSettings](../resources/adminreportsettings.md)|Update tenant-level settings for Microsoft 365 reports.|
 
 ## Properties
 
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| `displayConcealedNames` | `Boolean` | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
+| displayConcealedNames | Boolean | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## JSON representation
 
