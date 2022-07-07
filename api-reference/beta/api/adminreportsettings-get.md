@@ -1,6 +1,6 @@
 ---
 title: "Get adminReportSettings"
-description: "Get the tenant-level settings for Microsoft 365 reports."
+description: "Get the tenant-level settings for Microsoft 365 Reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the tenant-level settings for Microsoft 365 reports.
+Get the tenant-level settings for Microsoft 365 Reports.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/admin/reportSettings
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
