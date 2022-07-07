@@ -24,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
+Note: When changing the effective value for "Consent Policy Settings" **directorySetting**, the calling application requires *Policy.ReadWrite.Authorization*.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 Delete a tenant-wide setting.
