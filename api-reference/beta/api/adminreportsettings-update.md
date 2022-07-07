@@ -66,7 +66,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/reportSettings
 Content-Type: application/json
-Content-length: 100
+Content-length: 37
 
 {
   "displayConcealedNames": true
