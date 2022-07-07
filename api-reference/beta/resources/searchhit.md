@@ -33,6 +33,16 @@ Represents a single result within the list of search results.
 |_sortField (deprecated)|String|This property has been removed.|
 |_source (deprecated)|[entity](entity.md)|Renamed as **resource**. The underlying Graph representation of the search result.|
 
+### hitId format
+| Id Format     | Entity Type        | 
+|:-------------|:------------|
+|RestId|message|
+|EwsId|event|
+|GUID|list,listItem|
+|Host,GUID,GUID|site|
+|Encoded String|drive, driveItem, externalItem|
+|userId@tenantId|person|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
