@@ -1,6 +1,6 @@
 ---
 title: "Update adminReportSettings"
-description: "Update tenant-level settings for Microsoft 365 reports."
+description: "Update tenant-level settings for Microsoft 365 Reports."
 ms.localizationpriority: medium
 author: "qiwhuang"
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update tenant-level settings for Microsoft 365 reports.
+Update tenant-level settings for Microsoft 365 Reports.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ PATCH /admin/reportSettings
 
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| `displayConcealedNames` | `Boolean` | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
+| displayConcealedNames | Boolean | If set to `true`, all reports will conceal user information such as usernames, groups, and sites. If `false`, all reports will display real information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following is an example of a request that updates a tenant-level setting for Microsoft 365 reports.
+The following is an example of a request that updates a tenant-level setting for Microsoft 365 Reports.
 
 ### Request
 The following is an example of a request.
@@ -75,6 +75,8 @@ Content-length: 100
 ```
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response"
