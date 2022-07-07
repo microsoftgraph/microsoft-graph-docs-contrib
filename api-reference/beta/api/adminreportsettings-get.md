@@ -82,8 +82,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.adminReportSettings",
-    "id": "f2a5643f-f0c8-ecc7-d20d-18d83fc96d48",
-    "displayConcealedNames": "Boolean"
+    "displayConcealedNames": true
   }
 }
 ```

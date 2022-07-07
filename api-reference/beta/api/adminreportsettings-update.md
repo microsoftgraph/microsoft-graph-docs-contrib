@@ -69,8 +69,7 @@ Content-Type: application/json
 Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.adminReportSettings",
-  "displayConcealedNames": "Boolean"
+  "displayConcealedNames": true
 }
 ```
 

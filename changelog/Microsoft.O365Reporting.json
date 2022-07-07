@@ -2,14 +2,22 @@
   "changelog": [
 		{
 			"ChangeList": [
-				{
-					"Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
-					"ApiChange": "Resource",
-					"ChangedApiName": "adminReportSettings",
-					"ChangeType": "Addition",
-					"Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminReportSettings?view=graph-rest-beta) resource",
-					"Target": "adminReportSettings"
-				}
+        {
+          "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+          "ApiChange": "Schema",
+          "ChangedApiName": "microsoft.graph",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoft.graph](https://docs.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "microsoft.graph"
+        },
+        {
+          "Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminReportSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminReportSettings](https://docs.microsoft.com/en-us/graph/api/resources/adminReportSettings?view=graph-rest-beta) resource",
+          "Target": "adminReportSettings"
+        }
 			],
 			"Id": "eacb0b4f-9833-464f-b0a8-9d52872a59a2",
 			"Cloud": "Prod",
@@ -18,7 +26,7 @@
 			"WorkloadArea": "Reports",
 			"SubArea": "Microsoft 365 usage reports"
 		},
-	{
+		{
 	  "ChangeList": [
 		{
 			"Id": "cd208e44-a85f-408a-8f5e-dcec5f85c962",

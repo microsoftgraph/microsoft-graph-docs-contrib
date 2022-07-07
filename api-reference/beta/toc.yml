@@ -15208,14 +15208,6 @@ items:
             href: api/tenantadmin-settings-get.md
           - name: Update settings
             href: api/tenantadmin-settings-update.md
-      - name: Report settings
-        items:
-          - name: Settings
-            href: resources/adminreportsettings.md
-          - name: Get settings
-            href: api/adminreportsettings-get.md
-          - name: Update settings
-            href: api/adminreportsettings-update.md
     - name: Tasks and plans
       displayName: Planner
       items:

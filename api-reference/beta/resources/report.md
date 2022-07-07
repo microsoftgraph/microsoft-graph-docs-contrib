@@ -21,7 +21,7 @@ Microsoft Graph controls access to resources via permissions. You must specify t
 
 ## Settings
 
-Microsoft 365 reports show anonymous user names instead of the actual user names in some of the reports. You can use the [Microsoft Graph Admin Report settings](../resources/adminreportsettings.md) to control the display of user names in the reports.
+Reports in Microsoft 365 conceal user information such as usernames, groups, and sites, instead of displaying the actual values. You can use the [Microsoft 365 Reports settings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
 
 ## Cloud deployments
 
