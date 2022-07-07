@@ -8,13 +8,13 @@ ms.prod: "microsoft-teams"
 
 # Licensing and payment requirements for the Microsoft Teams API
 
-This article describes the licensing and payment requirements for the Microsoft Teams API in Microsoft Graph.
+This article describes the licensing and payment requirements for the Microsoft Teams APIs in Microsoft Graph.
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. The following APIs have consumption charges:
 
-* [Export Teams content](/graph/api/export-teams-content.md)
-* [Create subscription](/graph/api/subscription-post-subscriptions.md)
-* [Update chat message](/graph/api/chatmessage-update.md)
+* [Export Teams content](/microsoftteams/export-teams-content)
+* [Create subscription](/graph/api/subscription-post-subscriptions)
+* [Update chat message](/graph/api/chatmessage-update)
 * [Get channel message](/graph/api/chatmessage-get)
 * [Get message in chat](/graph/api/chatmessage-get)
 
