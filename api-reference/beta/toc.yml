@@ -14457,13 +14457,12 @@ items:
             href: resources/attacksimulationtrainingusercoverage.md
           - name: Get training coverage for users
             href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Report settings
+      - name: Settings
+        href: resources/adminreportsettings.md
         items:
-        - name: Settings
-          href: resources/adminreportsettings.md
-        - name: Get settings
+        - name: Get
           href: api/adminreportsettings-get.md
-        - name: Update settings
+        - name: Update
           href: api/adminreportsettings-update.md
     - name: Search
       displayname: Microsoft Search API
