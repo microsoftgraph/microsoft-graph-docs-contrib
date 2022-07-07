@@ -48,7 +48,7 @@ PATCH /onlineMeeting/{onlineMeetingId}/virtualAppointment
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md)|The client information for the virtual appointment, including name, email, and SMS phone number. Optional.|
+|appointmentClients|[virtualAppointmentUser](../resources/virtualappointmentuser.md) collection|The client information for the virtual appointment, including name, email, and SMS phone number. Optional.|
 |appointmentClientJoinWebUrl|String|The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.|
 |externalAppointmentId|String|The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.|
 |externalAppointmentUrl|String|The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.|
@@ -100,7 +100,8 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualAppointment"
 }
 -->
 ``` http
