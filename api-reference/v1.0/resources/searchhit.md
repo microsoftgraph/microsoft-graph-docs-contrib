@@ -24,6 +24,16 @@ Represents a single result within the list of search results.
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 |summary|String|A summary of the result, if a summary is available.|
 
+### hitId format
+| Id Format     | Entity Type        | 
+|:-------------|:------------|
+|RestId|message|
+|EwsId|event|
+|GUID|list,listItem|
+|Host,GUID,GUID|site|
+|Encoded String|drive, driveItem, externalItem|
+|userId@tenantId|person|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
