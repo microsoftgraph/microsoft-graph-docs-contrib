@@ -43,7 +43,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) object.
 
-You can specify the following properties when creating an **ediscoveryCustodian**.
+You can specify the following properties when you create an **ediscoveryCustodian**.
 
 |Property|Type|Description|
 |:---|:---|:---|

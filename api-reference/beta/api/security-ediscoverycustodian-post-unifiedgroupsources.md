@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 ## Request body
 In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object.
 
-You can specify the following properties when creating an **unifiedGroupSource**.
+You can specify the following properties when you create an **unifiedGroupSource**.
 
 >**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
 

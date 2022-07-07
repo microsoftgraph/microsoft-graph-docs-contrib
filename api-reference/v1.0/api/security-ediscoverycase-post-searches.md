@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 ## Request body
 In the request body, supply a JSON representation of the [ediscoverySearch](../resources/security-ediscoverysearch.md) object.
 
-You can specify the following properties when creating an **ediscoverySearch**.
+You can specify the following properties when you create an **ediscoverySearch**.
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## Request body
 In the request body, supply a JSON representation of the [dataSource](../resources/security-datasource.md) object.
 
-You can specify the following properties when creating a **dataSource**.
+You can specify the following properties when you create a **dataSource**.
 
 >**Note:** Either **email** or **site** are required, not both. 
 

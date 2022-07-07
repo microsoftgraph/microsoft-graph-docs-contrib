@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 ## Request body
 In the request body, supply a JSON representation of the [siteSource](../resources/security-sitesource.md) object.
 
-You can specify the following properties when creating a **siteSource**.
+You can specify the following properties when you create a **siteSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|

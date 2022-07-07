@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) object.
 
-You can specify the following properties when creating an **ediscoveryReviewSet**.
+You can specify the following properties when you create an **ediscoveryReviewSet**.
 
 |Property|Type|Description|
 |:---|:---|:---|

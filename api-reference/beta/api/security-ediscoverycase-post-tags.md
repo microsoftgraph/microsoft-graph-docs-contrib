@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
-You can specify the following properties when creating an **ediscoveryReviewTag**.
+You can specify the following properties when you create an **ediscoveryReviewTag**.
 
 |Property|Type|Description|
 |:---|:---|:---|

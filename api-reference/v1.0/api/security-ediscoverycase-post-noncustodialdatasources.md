@@ -40,7 +40,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.
 
-You can specify the following properties when creating an **ediscoveryNoncustodialDataSource**.
+You can specify the following properties when you create an **ediscoveryNoncustodialDataSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|

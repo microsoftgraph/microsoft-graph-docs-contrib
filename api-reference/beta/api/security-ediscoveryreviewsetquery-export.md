@@ -50,8 +50,8 @@ The following table shows the parameters that can be used with this action.
 |:---|:---|:---|
 |outputName|String| Name of the export. Required. |
 |description|String| Description of the export |
-|azureBlobContainer|String| When exporting to your own Azure storage account, this is the container URL. |
-|azureBlobToken|String| When exporting to your own Azure storage account, SAS token for the container URL. |
+|azureBlobContainer|String| when you export to your own Azure storage account, this is the container URL. |
+|azureBlobToken|String| when you export to your own Azure storage account, SAS token for the container URL. |
 |exportOptions|String|Specifies options that control the format of the export. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|String| Options that control file structure and packaging of the export. Possible values are: `none`, `directory`, `pst`.|
 

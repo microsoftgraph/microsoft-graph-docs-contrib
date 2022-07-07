@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 ## Request body
 In the request body, supply a JSON representation of the [userSource](../resources/security-usersource.md) object.
 
-You can specify the following properties when creating a **userSource**.
+You can specify the following properties when you create a **userSource**.
 
 |Property|Type|Description|
 |:---|:---|:---|

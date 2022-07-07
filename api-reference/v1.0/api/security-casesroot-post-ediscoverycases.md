@@ -44,7 +44,7 @@ POST /security/cases/ediscoveryCases
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
-You can specify the following properties when creating an **ediscoveryCase**.
+You can specify the following properties when you create an **ediscoveryCase**.
 
 |Property|Type|Description|
 |:---|:---|:---|

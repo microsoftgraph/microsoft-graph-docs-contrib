@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
-You can specify the following properties when creating an **ediscoveryHoldPolicy**.
+You can specify the following properties when you create an **ediscoveryHoldPolicy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
