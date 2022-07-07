@@ -6235,6 +6235,15 @@ items:
             href: api/reportroot-getteamsuseractivitycounts.md
           - name: Get user counts
             href: api/reportroot-getteamsuseractivityusercounts.md
+        - name: Microsoft 365 Apps usage
+          href: resources/microsoft-365-apps-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-getm365appuserdetail.md
+          - name: Get user counts
+            href: api/reportroot-getm365appusercounts.md
+          - name: Get platform user counts
+            href: api/reportroot-getm365appplatformusercounts.md
         - name: Outlook activity
           href: resources/email-activity-reports.md
           items:
