@@ -15483,7 +15483,7 @@ items:
             - name: Get
               href: api/teamtemplatedefinition-get.md
             - name: Get team definition
-              href: api/teamtemplatedefinition-list-teamdefinition.md
+              href: api/teamtemplatedefinition-get-teamdefinition.md
         - name: Deleted team
           href: resources/deletedteam.md
           items:
