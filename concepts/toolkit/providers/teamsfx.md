@@ -30,7 +30,7 @@ Providers.globalProvider = provider;
 Use the `teamsfx.login(scopes)` method to get the required access token.
 
 ```ts
-// Put these code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
+// Put this code in a call-to-action callback function to avoid browser blocking automatically showing up pop-ups. 
 await teamsfx.login(this.scope);
 Providers.globalProvider.setState(ProviderState.SignedIn);
 ```
@@ -58,5 +58,5 @@ For a sample that shows you how to initialize the TeamsFx provider, see the [Con
 
 ## See also
 * [Get started with Microsoft Teams and Teams Toolkit development](https://aka.ms/teamsfx-docs)
-* [TeamsFx SDK document](/microsoftteams/platform/toolkit/teamsfx-sdk)
+* [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk)
 * [One Productivity Hub workshop](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)
