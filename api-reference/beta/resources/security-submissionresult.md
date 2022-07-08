@@ -49,38 +49,39 @@ Represents the result of a review after the threat submission is processed by Mi
 ### submissionResultDetail values
 | Member                                  | Description                                                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| none                                   | Microsoft has no additional details on the result.            |
-| underInvestigation                     | Microsoft is still investigating the sample.                  |
-| simulatedThreat                        | The reported message is a phish simulated message.            |
-| allowedByThirdPartyFilters             | The reported message was allowed by Third party filters working with MDO. |
-| messageNotFound                        | The reported message could not be analyzed as it cannot be found. |
-| urlFileShouldNotBeBlocked              | The reported URL or file has been found clean and Microsoft will update their machine learning filters in the coming weeks. |
-| urlFileShouldBeBlocked                 | The reported URL or file has been found malicious and Microsoft will update their machine learning filters in the coming weeks. |
-| urlFileCannotMakeDecision              | At the moment Microsoft cannot reach a verdict on the URL or the file and so submit again. |
-| domainImpersonation                    | The reported message was allowed due to the domain impersonation policy settings. |
-| userImpersonation                      | The reported message was allowed due to the user impersonation policy settings. |
-| brandImpersonation                     | The reported message was allowed due to the brand impersonation policy settings. |
+| none                                   | Microsoft has no additional details on the result to share.            |
+| underInvestigation                     | Microsoft is still analyzing the sample and the results should be available soon.      |
+| simulatedThreat                        |  The reported message was blocked as it is a phish simulated email send to users for phish education. To configure EOP/MDO to allow it check out advanced delivery|
+| allowedBySecOps                          | The reported message was allowed due to advanced delivery flow for security operators mailbox. So, remove it from advanced delivery to block it |
+| allowedByThirdPartyFilters             | The reported message was allowed/blocked due third-party filters working in conjunction with EOP/MDO. Configure enhanced filtering so that EOP/MDO can filter accurately   |
+| messageNotFound                        | Microsoft cannot provide a verdict on the reported message as Microsoft cannot find the actual message. Please resubmit by uploading the email using submissions in security.microsoft.com |
+| urlFileShouldNotBeBlocked              | Microsoft finds the reported entity to be clean. Existing emails containing it have been released. The phish and malware filters will learn from this after a few weeks. Till then to allow it, create an allow entry in Tenant allow/block list if not done already. |
+| urlFileShouldBeBlocked                 | Microsoft finds the reported entity to be malicious. Existing emails containing it have been quarantined. The phish and malware filters will learn from this after a few weeks. Till then to block it, create a block entry in Tenant allow/block list if not done already |
+| urlFileCannotMakeDecision              | Microsoft cannot reach a verdict at this time. Resubmit it to get a verdict on it after analysis. Use Tenant allow/block list to immediately allow/block it if not already done. |
+| domainImpersonation                    | The reported message was allowed/blocked due to domain impersonation policy settings. Configure domain impersonation policy so that EOP/MDO can filter accordingly |
+| userImpersonation                      | The reported message was allowed/blocked due to user impersonation policy settings. Configure user impersonation policy so that EOP/MDO can filter accordingly |
+| brandImpersonation                     | The reported message was allowed/blocked due to brand impersonation policy settings. Configure brand impersonation policy so that EOP/MDO can filter accordingly |
 | outboundShouldNotBeBlocked             | The reported outgoing messages has been found clean and Microsoft will update its machine learning based outbound filters in the coming weeks. |
 | outboundShouldBeBlocked                | The reported outgoing messages has been found malicious and Microsoft will update its machine learning based outbound filters in the coming weeks. |
-| outboundBulk                           | The reported outgoing messages has been found to be bulk and Microsoft will update its machine learning based outbound filters in the coming weeks. |
-| outboundCannotMakeDecision             | At the moment Microsoft cannot reach a verdict on the outgoing reported message and so please submit again. |
-| outboundNotRescanned                   | At the Moment Microsoft cannot reach a verdict as the message cannot be analyzed without taking it outside the environment or due to other reasons. |
-| zeroHourAutoPurgeAllowed               | The reported message was reverse zapped as after delivery the message was found to be good. |
-| zeroHourAutoPurgeBlocked               | The Reported message was zapped as after delivery the message was found to be bad. |
-| zeroHourAutoPurgeQuarantineReleased    | The Reported message was released from Quarantine despite being zapped as it turned malicious after delivery. |
-| onPremisesSkip                         | The reported message cannot be analyzed as this is went through a  onprem setup of exchange online protection. |
-| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow block list. |
-| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the tenant allow block list. |
-| allowedUrlByTenantAllowBlockList       | The reported URL was allowed as URL is on the tenant allow block list. |
-| allowedFileByTenantAllowBlockList      | The reported file was allowed as file is on the tenant allow block list. |
-| allowedSenderByTenantAllowBlockList    | The reported message was allowed as sender is on the tenant allow block list. |
-| allowedRecipientByTenantAllowBlockList | The reported outgoing message was allowed as recipient is on the tenant allow block list. |
-| blockedUrlByTenantAllowBlockList       | The reported URL was blocked as URL is on the tenant allow block list. |
-| blockedFileByTenantAllowBlockList      | The reported file was blocked as file is on the tenant allow block list. |
-| blockedSenderByTenantAllowBlockList    | The reported message was blocked as sender in on the tenant allow block list. |
-| blockedRecipientByTenantAllowBlockList | The reported outgoing message was blocked as the recipient is on the tenant allow block list. |
-| allowedByConnection                    | The reported message was allowed as the sending IP is on the hosted connection filter policy. |
-| blockedByConnection                    | The reported message was blocked as the sending IP is on the hosted connection filter policy. |
+| outboundBulk                           | Microsoft find the reported message to be spam/junk. The outbound filters will learn after a few weeks |
+| outboundCannotMakeDecision             | Microsoft cannot reach a verdict at this time. Resubmit it to get to a verdict on it after analysis.  |
+| outboundNotRescanned                   | Microsoft cannot provide a verdict on the reported outbound message as Microsoft cannot find the actual message. Please resubmit by uploading the email using submissions in security.microsoft.com |
+| zeroHourAutoPurgeAllowed               | The reported message was zapped as organization has zero-hour auto purge on. |
+| zeroHourAutoPurgeBlocked               | The Reported message could not be zapped as organization has turned off zero-hour auto purge. Turn on zero-hour auto purge for EOP/MDO to zap messages if they turn malicious after delivery|
+| zeroHourAutoPurgeQuarantineReleased    | The reported message was released from Quarantine despite being quarantined due to zap as message turned malicious after delivery. |
+| onPremisesSkip                         | The reported message cannot be analyzed as this went through a onprem setup of exchange online protection. Configure your hybrid setup so that EOP/MDO can scan messages before delivering to exchange onprem mailboxes |
+| allowedByTenantAllowBlockList          | The reported message was allowed as one or more entities in the email are on the tenant allow/ block list. Remove allows from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| blockedByTenantAllowBlockList          | The reported message was blocked as one or more entities in the email are on the tenant allow/ block list. Remove blocks from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| allowedUrlByTenantAllowBlockList       | The reported URL was allowed as it is on the Tenant allow/block list. Remove the allow from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| allowedFileByTenantAllowBlockList      | The reported file was allowed as it is on the Tenant allow/block list. Remove the allow from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| allowedSenderByTenantAllowBlockList    | The reported message was allowed as the sender of the email is on the Tenant allow/block list. Remove allow from Tenant allow/block list so that EOP/MDO can filter accordingly|
+| allowedRecipientByTenantAllowBlockList | The reported outgoing message was allowed as recipient is on the Tenant allow/block list. Remove allow from Tenant allow/block so that EOP/MDO can filter accordingly |
+| blockedUrlByTenantAllowBlockList       | The reported URL was blocked as it is on the Tenant allow/block list. Remove the block from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| blockedFileByTenantAllowBlockList      | The reported file was blocked as it is on the Tenant allow/block list. Remove the block from Tenant allow/block list so that EOP/MDO can filter accordingly |
+| blockedSenderByTenantAllowBlockList    | The reported message was blocked as the sender of the email is on the Tenant allow/block list. Remove block from Tenant allow/block list so that EOP/MDO can filter accordingly|
+| blockedRecipientByTenantAllowBlockList | The reported outgoing message was blocked as recipient is on the Tenant allow/block list. Remove block from Tenant allow/block so that EOP/MDO can filter accordingly |
+| allowedByConnection                    | The reported message was allowed as the sending IP is on the hosted connection filter policy. Remove the IP from the hosted connection filter policy so that EOP/MDO can filter accordingly |
+| blockedByConnection                    | The reported message was blocked as the sending IP is on the hosted connection filter policy. Remove the IP from the hosted connection filter policy so that EOP/MDO can filter accordingly |
 | allowedByExchangeTransportRule         | The reported message was allowed as the organization has a related exchange transport rule. Remove the exchange transport rule so that EOP/MDO can filter accordingly. |
 | blockedByExchangeTransportRule         | The reported message was blocked as the organization has a related exchange transport rule. Remove the exchange transport rule so that EOP/MDO can filter accordingly. |
 | quarantineReleased                     | The reported message was released from Quarantine despite being quarantined by EOP/MDO |
