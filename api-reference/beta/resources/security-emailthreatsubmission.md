@@ -1,6 +1,6 @@
 ---
 title: "emailThreatSubmission resource type"
-description: "Reports suspected spam, malware or phishing emails to Microsoft 365 Defender for Office."
+description: "Reports suspected spam, malware or phishing emails to Microsoft Defender for Office 365."
 author: "caigen"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type to report suspected spam, malware or phishing emails to Microsoft 365 Defender for Office. You can also submit false positive cases, that should not have been blocked by Microsoft 365 Defender for Office, for example, emails incorrectly categorized as junk or spam.
+An abstract type to report suspected spam, malware or phishing emails to Microsoft Defender for Office 365. You can also submit false positive cases, that should not have been blocked by Microsoft Defender for Office 365, for example, emails incorrectly categorized as junk or spam.
 
 Inherits from [threatSubmission](../resources/security-threatsubmission.md). Base type of [emailContentThreatSubmission](../resources/security-emailcontentthreatsubmission.md) and [emailUrlThreatSubmission](../resources/security-emailurlthreatsubmission.md).
 
